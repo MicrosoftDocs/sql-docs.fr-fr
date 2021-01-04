@@ -8,13 +8,13 @@ author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan
 ms.custom: ''
-ms.date: 10/22/2020
-ms.openlocfilehash: e4030cac39eca0d57af3bf2bcefad293e83971c2
-ms.sourcegitcommit: a2182276ba00c48dc1475b9c7dfa45179d4416dc
+ms.date: 12/15/2020
+ms.openlocfilehash: 7b52827de249153adc54d148ead5d93a015d152d
+ms.sourcegitcommit: 866554663ca3191748b6e4eb4d8d82fa58c4e426
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94704164"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97559091"
 ---
 # <a name="sql-database-projects-extension-preview"></a>Extension des projets SQL Database (préversion)
 
@@ -61,6 +61,31 @@ Regardez cette courte vidéo (10 minutes) qui présente l’extension SQL Datab
 - Les tâches (génération/publication) ne sont pas définies par l’utilisateur.
 - Publier les cibles définies par DacFx.
 - La prise en charge de l’environnement WSL est limitée.
+
+## <a name="workspace"></a>Espace de travail
+Les projets de base de données SQL dans Azure Data Studio sont contenus dans un espace de travail logique.  Un espace de travail permet de gérer le ou les dossiers visibles dans le volet Explorateur ainsi que le ou les projets visibles dans le volet Projet. L’ajout et la suppression de projets dans un espace de travail peuvent être accomplis via l’interface Azure Data Studio dans le volet Projets. Cependant, les paramètres d’un espace de travail peuvent être modifiés manuellement dans le fichier `.code-workspace` si nécessaire.
+
+Dans l’exemple de fichier `.code-workspace` ci-dessous, le tableau `folders` liste tous les dossiers inclus dans le volet Explorateur et le tableau `dataworkspace.projects` dans `settings` liste tous les projets SQL inclus dans le volet Projets.
+
+```json
+{
+    "folders": [
+        {
+            "path": "."
+        },
+        {
+            "name": "WideWorldImportersDW",
+            "path": "..\\WideWorldImportersDW"
+        }
+    ],
+    "settings": {
+        "dataworkspace.projects": [
+            "AdventureWorksLT.sqlproj",
+            "..\\WideWorldImportersDW\\WideWorldImportersDW.sqlproj"
+        ]
+    }
+}
+```
 
 ## <a name="next-steps"></a>Étapes suivantes
 

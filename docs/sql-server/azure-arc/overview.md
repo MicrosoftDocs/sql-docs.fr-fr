@@ -5,16 +5,16 @@ description: Gérer des instances SQL Server à l’aide de SQL Server avec Azur
 author: anosov1960
 ms.author: sashan
 ms.reviewer: mikeray
-ms.date: 10/07/2020
+ms.date: 12/08/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.custom: references_regions
-ms.openlocfilehash: 59a3dab4136749f85e1f752ee823f8815080fd76
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: c1ba7f7552b5050e3c1fa7bc765acfa431f3df30
+ms.sourcegitcommit: 18e2f0706e03d0b2b6324845244fbafaa077a8dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987985"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97103144"
 ---
 # <a name="azure-arc-enabled-sql-server-preview"></a>SQL Server avec Azure Arc (préversion)
 
@@ -43,8 +43,9 @@ SQL Server avec Azure Arc prend en charge SQL Server 2012 ou une version ultéri
 
 ### <a name="required-permissions"></a>Autorisations requises
 
-Pour connecter les instances SQL Server et l’hébergement à Azure Arc, vous devez avoir un compte disposant de privilèges pour effectuer les actions suivantes :
-   * Microsoft.AzureData/*
+Pour connecter les instances SQL Server et l’ordinateur d’hébergement à Azure Arc, vous devez avoir un compte avec des privilèges permettant d’effectuer les actions suivantes :
+   * Microsoft.AzureArcData/sqlServerInstances/read
+   * Microsoft.AzureArcData/sqlServerInstances/write
    * Microsoft.HybridCompute/machines/read
    * Microsoft.HybridCompute/machines/write
    * Microsoft.GuestConfiguration/guestConfigurationAssignments/read
@@ -58,6 +59,10 @@ Avant de configurer vos instances SQL Server et machines à l’aide d’Azure A
 ### <a name="networking-configuration-and-resource-providers"></a>Configuration de la mise en réseau et fournisseurs de ressources
 
 Passez en revue la [configuration de la mise en réseau, Transport Layer Security et les fournisseurs de ressources](/azure/azure-arc/servers/agent-overview#prerequisites) requis pour l’agent Connected Machine.
+
+Le fournisseur de ressources `Microsoft.AzureArcData` est nécessaire pour connecter les instances SQL Server à Azure Arc. Consultez les instructions d’inscription du fournisseur de ressources dans la section [Prérequis](connect.md#prerequisites).
+
+Si vous avez déjà des instances SQL Server connectées à Azure Arc, effectuez ces étapes pour migrer les ressources **SQL Server – Azure Arc** existantes vers le nouvel espace de noms.
 
 ### <a name="supported-azure-regions"></a>Régions Azure prises en charge
 

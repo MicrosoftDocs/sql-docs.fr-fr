@@ -8,12 +8,12 @@ ms.reviewer: mikeray
 ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: sql
-ms.openlocfilehash: e80892bfef7ee2c8cf22aef1b491ab5ea0c0addd
-ms.sourcegitcommit: 442fbe1655d629ecef273b02fae1beb2455a762e
+ms.openlocfilehash: 5f0401081e6d437bcc0290c111bb5325e476650e
+ms.sourcegitcommit: 18e2f0706e03d0b2b6324845244fbafaa077a8dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93235563"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97103187"
 ---
 # <a name="connect-your-sql-server-to-azure-arc"></a>Connecter votre SQL Server à Azure Arc
 
@@ -22,13 +22,14 @@ Vous pouvez connecter votre instance SQL Server à Azure Arc sur site en procéd
 ## <a name="prerequisites"></a>Prérequis
 
 * Au moins une instance SQL Server doit être installée sur votre machine.
-* Pour les machines Windows, Azure PowerShell doit être installé. Pour [installer Azure Powershell](/powershell/azure/install-az-ps), suivez ces instructions.
-* Pour les machines Linux, Azure CLI doit être installé et vous devez être connecté à votre compte Azure. Pour [installer Azure CLI](/cli/azure/install-azure-cli-apt), suivez ces instructions.
-* Le fournisseur de ressources **Microsoft.AzureData** a été inscrit. Pour plus d’informations sur les fournisseurs de ressources, consultez la page sur les fournisseurs et types de ressources Azure.
-    * Dans PowerShell, exécutez `Register-AzResourceProvider -ProviderNamespace Microsoft.AzureData`.
-    * Sur Linux, exécutez `az provider register --namespace 'Microsoft.AzureData`.
-
-
+* Le fournisseur de ressources **Microsoft.AzureArcData** a été inscrit à partir d’une des méthodes ci-dessous :  
+    * Utilisation du portail Azure :
+        - Sélectionnez **Abonnements**. 
+        - Choisir votre abonnement
+        - Sous **Paramètres**, sélectionnez **Fournisseurs de ressources**
+        - Recherchez `Microsoft.AzureArcData` et sélectionnez **Inscrire**
+    * Si vous utilisez PowerShell, exécutez `Register-AzResourceProvider -ProviderNamespace Microsoft.AzureArcData`
+    * Si vous utilisez l’interface CLI, exécutez `az provider register --namespace 'Microsoft.AzureArcData`
 
 ## <a name="generate-a-registration-script-for-sql-server"></a>Générer un script d’inscription pour SQL Server
 
@@ -37,7 +38,7 @@ Au cours de cette étape, vous allez générer un script qui détecte toutes les
 1. Recherchez le type de ressource __SQL Server - Azure Arc__ et ajoutez-en un nouveau par le biais du panneau de création.
 
 ![Démarrer la création](media/join/start-creation-of-sql-server-azure-arc-resource.png)
-    
+
 2. Passez en revue les prérequis et accédez à l’onglet **Détails du serveur**.  
 
 3. Sélectionnez l’abonnement, le groupe de ressources, la région Azure et le système d’exploitation hôte. Si nécessaire, indiquez également le proxy que votre réseau utilise pour se connecter à Internet.
@@ -92,11 +93,11 @@ Accédez au [portail Azure](https://ms.portal.azure.com/#home) et ouvrez la nouv
 
 ![Valider le serveur SQL Server connecté ](media/join/validate-sql-server-azure-arc.png)
 
-## <a name="un-register-the-sql-server---azure-arc-resources"></a>Annuler l’inscription de la ressource SQL Server - Azure Arc
+## <a name="disconnect-your-sql-server-instance"></a>Déconnecter votre instance SQL Server
 
-Pour supprimer une ressource __SQL Server - Azure Arc__ , accédez au groupe de ressources qui la contient et supprimez-la de la liste des ressources du groupe.
+Pour déconnecter votre instance SQL Server d’Azure Arc, accédez au portail Azure, ouvrez la ressource __SQL Server – Azure Arc__ pour cette instance, puis cliquez sur le bouton **Annuler l’inscription**.
 
-![Annuler l’inscription de SQL Server](media/join/delete-sql-server-azure-arc.png)
+![Annuler l’inscription de SQL Server](media/join/unregister-sql-server-azure-arc.png)
 
 ## <a name="next-steps"></a>Étapes suivantes
 

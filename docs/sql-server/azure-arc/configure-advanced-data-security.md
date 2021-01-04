@@ -8,12 +8,12 @@ ms.reviewer: mikeray
 ms.date: 09/10/2020
 ms.topic: conceptual
 ms.prod: sql
-ms.openlocfilehash: 2bd589ebacd9ea35e15881eaaeb022d4f2302986
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: e0c68752d21de5945c06433af8c08f6208322f7c
+ms.sourcegitcommit: 18e2f0706e03d0b2b6324845244fbafaa077a8dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988025"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97103167"
 ---
 # <a name="configure-advanced-data-security-for-azure-arc-enabled-sql-server-instance"></a>Configurer Advanced Data Security pour votre instance de serveur SQL doté d’Azure Arc
 
@@ -50,17 +50,17 @@ La prochaine étape est nécessaire uniquement si vous n’avez pas encore confi
 
 1. Pour plus d’informations, consultez [Gestion des extensions avec Azure Arc](/azure/azure-arc/servers/manage-vm-extensions)
 
-## <a name="enable-advanced-data-security"></a>Activer Advanced Data Security
+## <a name="enable-azure-defender"></a>Activer Azure Defender
 
-Ensuite, vous devez activer Advanced Data Security pour votre instance SQL Server.
+Ensuite, vous devez activer Azure Defender pour l’instance SQL Server.
 
 1. Accédez à Security Center, puis, à partir de la barre latérale, ouvrez **Tarification et paramètres**.
 
 1. Sélectionner l’espace de travail que vous avez configuré pour l’extension MMA à l’étape précédente
 
-1. Sélectionnez **Standard**. Vérifiez que l’option **Serveurs SQL sur des machines (préversion)** est activée.
+1. Sélectionnez **Azure Defender activé**. Vérifiez que l’option **Serveurs SQL sur les machines** est activée.
 
-   ![Mettre à niveau l’espace de travail](media/configure-advanced-data-security/upgrade-log-analytics-workspace.png)
+   ![Mettre à niveau l’espace de travail](media/configure-advanced-data-security/enable-azure-defender.png)
 
  > [!NOTE]
    > La première analyse évaluant la vulnérabilité aura lieu dans les 24 heures qui suivent l’activation d’Advanced Data Security. Ensuite, des analyses automatiques sont effectuées chaque dimanche.
