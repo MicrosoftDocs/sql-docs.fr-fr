@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: alayu, sstein
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.openlocfilehash: aa1826539a6b9d2a5f649159e566d3ceda8d624d
-ms.sourcegitcommit: 63aef5a96905f0b026322abc9ccb862ee497eebe
+ms.openlocfilehash: bd86afbe288be3b92b15b6702ec46903f56a2ad5
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91364126"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97637802"
 ---
 # <a name="create-and-use-code-snippets-to-quickly-create-transact-sql-t-sql-scripts-in-azure-data-studio"></a>Créer et utiliser des extraits de code pour créer rapidement des scripts Transact-SQL (T-SQL) dans Azure Data Studio
 
@@ -89,16 +89,16 @@ Vous pouvez définir vos propres extraits de code. Pour ouvrir le fichier d’ex
        "description": "User-defined snippet example 2"
        }
        }
-       ```
+    ```
 
-4. Save the sql.json file.
+4. Enregistrez le fichier sql.json.
 
-5. Open a new query editor window by clicking **Ctrl+N**.
+5. Ouvrez une nouvelle fenêtre de l’éditeur de requête avec **Ctrl+N**.
 
-6. Type **sql**, and you see the two user snippets you just added; *sqlCreateTable2* and *sqlSelectTop5*.
+6. Saisissez **sql** et vous verrez les deux extraits de code utilisateur que vous venez d’ajouter, *sqlCreateTable2* et *sqlSelectTop5*.
 
-Select one of the new snippets and give it a test run!
+Sélectionnez un des nouveaux extraits et essayez-le !
 
-## Next steps
+## <a name="next-steps"></a>Étapes suivantes
 
-For information about the SQL editor, see [Code editor tutorial](tutorial-sql-editor.md).
+Pour plus d’informations sur l’éditeur SQL, consultez le [Didacticiel sur l’éditeur de code](tutorial-sql-editor.md).

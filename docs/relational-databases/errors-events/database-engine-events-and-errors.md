@@ -10,12 +10,12 @@ ms.topic: reference
 ms.assetid: 04ba51b6-cdc7-409c-8d7e-26ead13e614d
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: fd783c5ff6578f320e4d9d093f33ea5a10762eaf
-ms.sourcegitcommit: f87f2f0f1edc91fe400040d8e3a5810347aa8d70
+ms.openlocfilehash: 21225de8f03fc6fd5cc028ae31df37c4b90dadc3
+ms.sourcegitcommit: 4419e99d77ee2c73f9da1559c7944f7702f2de30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96857646"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97743656"
 ---
 # <a name="database-engine-errors"></a>Erreurs du moteur de base de données
 
@@ -918,7 +918,7 @@ ORDER BY message_id
 |    1779    |    16    |    Non    |    Une clé primaire est déjà définie sur la table '%.*ls'.    |
 |    1781    |    16    |    Non    |    La colonne a déjà une valeur DEFAULT associée.    |
 |    1784    |    16    |    Non    |    Impossible de créer la clé étrangère '%.*ls' car la colonne référencée '%.* ls.%.*ls' est une colonne calculée non persistante.    |
-|    1785    |    16    |    Non    |    L'introduction de la contrainte FOREIGN KEY '%.*ls' sur la table '%.* ls' peut générer des cycles ou des chemins de cascade multiples. Spécifiez ON DELETE NO ACTION ou ON UPDATE NO ACTION, ou modifiez d'autres contraintes FOREIGN KEY.    |
+|    [1785](mssqlserver-1785-database-engine-error.md)    |    16    |    Non    |    L'introduction de la contrainte FOREIGN KEY '%.*ls' sur la table '%.* ls' peut générer des cycles ou des chemins de cascade multiples. Spécifiez ON DELETE NO ACTION ou ON UPDATE NO ACTION, ou modifiez d'autres contraintes FOREIGN KEY.    |
 |    1786    |    16    |    Non    |    La colonne '%.*ls.%.* ls' ou la colonne de référencement '%.*ls.%.* ls' dans la clé étrangère '%.*ls' est une colonne d'horodatage. Ce type de données ne peut pas être utilisé avec des contraintes d'intégrité référentielle en cascade.    |
 |    1787    |    16    |    Non    |    Impossible de définir une contrainte de clé étrangère '%.*ls' avec DELETE ou UPDATE en cascade sur la table '%.* ls' car un déclencheur INSTEAD OF DELETE ou UPDATE TRIGGER est défini sur cette table.    |
 |    1788    |    16    |    Non    |    Impossible de créer la clé étrangère '%.*ls' en cascade où la colonne de référencement '%.* ls.%.*ls' est une colonne d'identité.    |
@@ -1848,8 +1848,8 @@ ORDER BY message_id
 |    3985    |    16    |    Non    |    Une erreur s'est produite lors du changement du contexte de transaction. Cet incident est généralement dû à une saturation de la mémoire du système. Essayez de libérer plus de mémoire.    |
 |    3986    |    19    |    Non    |    Épuisement des cachets temporels (timestamp) de transactions. Redémarrez le serveur.    |
 |    3987    |    10    |    Non    |    SNAPSHOT ISOLATION est toujours activée dans cette base de données.    |
-|    3988    |    16    |    Non    |    Une nouvelle transaction n'est pas autorisée parce que d'autres threads sont en cours d'exécution dans la session.    |
-|    3989    |    16    |    Non    |    Le démarrage d'une nouvelle demande n'est pas autorisé car celle-ci doit être accompagnée d'un descripteur de transaction valide.    |
+|    [3988](mssqlserver-3988-database-engine-error.md)    |    16    |    Non    |    Une nouvelle transaction n'est pas autorisée parce que d'autres threads sont en cours d'exécution dans la session.    |
+|    [3989](mssqlserver-3989-database-engine-error.md)   |    16    |    Non    |    Le démarrage d'une nouvelle demande n'est pas autorisé car celle-ci doit être accompagnée d'un descripteur de transaction valide.    |
 |    3990    |    16    |    Non    |    La validation de la transaction n'est pas autorisée dans une routine, un déclencheur ou une fonction d'agrégation définie par l'utilisateur car la transaction n'a pas démarré au niveau CLR. Modifiez la logique d'application afin d'appliquer une imbrication stricte des transactions.    |
 |    3991    |    16    |    Non    |    La transaction contextuelle qui était active avant d'entrer dans la routine, le déclencheur ou la fonction d'agrégation "%.*ls" définie par l'utilisateur s'est terminée à l'intérieur du conteneur, ce qui n'est pas autorisé. Modifiez la logique d'application afin d'appliquer une imbrication stricte des transactions.    |
 |    3992    |    16    |    Non    |    Le nombre de transactions est passé de %d à %d à l'intérieur de la routine, du déclencheur ou de la fonction d'agrégation "%.*ls" définie par l'utilisateur. Cela n'est pas autorisé, la transaction utilisateur sera restaurée. Modifiez la logique d'application afin d'appliquer une imbrication stricte des transactions.    |
@@ -2909,7 +2909,7 @@ ORDER BY message_id
 |    6519    |    16    |    Non    |    Le type '%.*ls' n'est pas encore pris en charge pour les opérations CLR.    |
 |    6520    |    16    |    Non    |    Une erreur .NET Framework s'est produite au cours de l'exécution d'une instruction.    |
 |    6521    |    16    |    Non    |    Une erreur .NET Framework s'est produite au cours de l'exécution d'une instruction : %.*ls.    |
-|    6522    |    16    |    Non    |    Une erreur .NET Framework s'est produite au cours de l'exécution de la routine ou de la fonction d'agrégation définie par l'utilisateur "%.*ls" : %ls.    |
+|    [6522](mssqlserver-6522-database-engine-error.md)    |    16    |    Non    |    Une erreur .NET Framework s'est produite au cours de l'exécution de la routine ou de la fonction d'agrégation définie par l'utilisateur "%.*ls" : %ls.    |
 |    6523    |    16    |    Non    |    La méthode, la propriété ou le champ '%ls' de la classe '%ls' dans l'assembly '%.*ls' est statique.    |
 |    6524    |    16    |    Non    |    Impossible de calculer la colonne de la table de résultats d'une fonction de lecture en continu définie par l'utilisateur (colonne '%.*ls').    |
 |    6525    |    16    |    Non    |    Impossible d'utiliser la contrainte '%s' de la table de résultats d'une fonction de lecture en continu définie par l'utilisateur.    |
@@ -2989,7 +2989,7 @@ ORDER BY message_id
 |    6599    |    16    |    Non    |    Une classe de sérialisation native vide '%.*ls' a été trouvée. Les classes de sérialisation native vides ne sont pas autorisées.    |
 |    6600    |    16    |    Non    |    Erreur XML = %.*ls    |
 |    6601    |    10    |    Non    |    L'erreur d'analyse XML 0x%x s'est produite au numéro de ligne %d, à proximité du texte XML "%.*ls".    |
-|    6602    |    16    |    Non    |    La description de l'erreur est '%.*ls'.    |
+|    [6602](mssqlserver-6602-database-engine-error.md)    |    16    |    Non    |    La description de l'erreur est '%.*ls'.    |
 |    6603    |    16    |    Non    |    Erreur d'analyse XML : %.*ls    |
 |    6605    |    16    |    Non    |    %.*ls : impossible d’obtenir une interface IPersistStream sur le texte XML.    |
 |    6607    |    16    |    Non    |    %.*ls : la valeur fournie pour le paramètre numéro %d n’est pas valide.    |
@@ -6281,7 +6281,7 @@ ORDER BY message_id
 |    15397    |    16    |    Non    |    %S_MSG non protégé par un mot de passe. Impossible d'utiliser un mot de passe de déchiffrement pour cette opération.    |
 |    15398    |    11    |    Non    |    Seuls les objets de la base de données master appartenant au propriétaire de base de données peuvent faire modifier les paramètres de démarrage.    |
 |    15399    |    11    |    Non    |    Impossible de modifier l'option de démarrage car elle est limitée aux objets qui n'ont pas de paramètres.    |
-|    15401    |    11    |    Non    |    Utilisateur ou groupe Windows NT '%s' introuvable. Vérifiez de nouveau le nom.    |
+|    [15401](mssqlserver-15401-database-engine-error.md)    |    11    |    Non    |    Utilisateur ou groupe Windows NT '%s' introuvable. Vérifiez de nouveau le nom.    |
 |    15402    |    11    |    Non    |    '%s' n'est pas un rôle serveur fixe.    |
 |    15403    |    16    |    Non    |    Le principal de serveur "%.*ls" n'existe pas, vous ne pouvez pas accéder au serveur ou vous ne disposez pas de l'autorisation requise.    |
 |    [15404](mssqlserver-15404-database-engine-error.md)    |    16    |    Non    |    Impossible d'obtenir des informations sur l'utilisateur ou le groupe Windows NT '%ls', code d'erreur %#lx.    |
@@ -6698,7 +6698,7 @@ ORDER BY message_id
 |    [17887](mssqlserver-17887-database-engine-error.md)    |    10    |    Oui    |    L’écoute d’achèvement d’E/S (0x%lx) travail 0x%p semble être improductive sur le nœud %ld. Utilisation approximative de l'UC : noyau %I64d ms, utilisateur %I64d ms, intervalle : %I64d.    |
 |    17888    |    10    |    Oui    |    Tous les planificateurs du nœud %d semblent être bloqués à cause d'un grand nombre de threads de travail en attente sur %ls. Utilisation du processus %d%%.    |
 |    17889    |    16    |    Oui    |    Une nouvelle connexion a été rejetée, car le nombre maximal de connexions pour l'ID de session %d a été atteint. Fermez une connexion existante dans cette session, puis recommencez.%.*ls    |
-|    17890    |    10    |    Oui    |    Une partie significative de la mémoire du processus sql server a été hors page. Ce problème peut entraîner une dégradation des performances. Durée : %d secondes. Plage de travail (en Ko) : %I64d, validé (en Ko) : %I64d, utilisation de la mémoire : %d%%.    |
+|    [17890](mssqlserver-17890-database-engine-error.md)    |    10    |    Oui    |    Une partie significative de la mémoire du processus sql server a été hors page. Ce problème peut entraîner une dégradation des performances. Durée : %d secondes. Plage de travail (en Ko) : %I64d, validé (en Ko) : %I64d, utilisation de la mémoire : %d%%.    |
 |    17891    |    10    |    Oui    |    Le moniteur de ressource (0x%lx) travail 0x%p semble être improductif sur le nœud %ld. Mémoire libérée : %I64d Ko. Utilisation approximative de l'UC : noyau %I64d ms, utilisateur %I64d ms, intervalle : %I64d.    |
 |    [17892](mssqlserver-17892-database-engine-error.md)    |    14    |    Oui    |    L'ouverture de session a échoué pour le nom d'ouverture de session '%.*ls' en raison de l'exécution d'un déclencheur.%.* ls    |
 |    17894    |    10    |    Oui    |    Le répartiteur (0x%lx) du pool de répartiteurs '%.*ls', travail 0x%p, semble être improductif sur le nœud %ld. Utilisation approximative de l'UC : noyau %I64d ms, utilisateur %I64d ms, intervalle : %I64d.    |
@@ -6823,8 +6823,8 @@ ORDER BY message_id
 |    18469    |    10    |    Non    |    [CLIENT : %.*hs]    |
 |    18470    |    14    |    Oui    |    Échec de l'ouverture de session pour l'utilisateur '%.*ls'. Motif : le compte est désactivé.%.* ls    |
 |    18471    |    14    |    Non    |    Échec de l'ouverture de session pour l'utilisateur "%.*ls". Échec du changement de mot de passe. L'utilisateur n'a pas l'autorisation de changer de mot de passe. %.* ls    |
-|    18482    |    16    |    Oui    |    Impossible de se connecter au serveur '%.*ls', car '%.* ls' n'est pas défini en tant que serveur distant. Vérifiez que vous avez spécifié le bon nom de serveur. %.*ls.    |
-|    18483    |    16    |    Oui    |    Impossible de se connecter au serveur '%.*ls', car '%.* ls' n'est pas défini comme ouverture de session distante sur le serveur. Vérifiez que vous avez spécifié le bon nom d'ouverture de session. %.*ls.    |
+|    [18482](mssqlserver-18482-database-engine-error.md)    |    16    |    Oui    |    Impossible de se connecter au serveur '%.*ls', car '%.* ls' n'est pas défini en tant que serveur distant. Vérifiez que vous avez spécifié le bon nom de serveur. %.*ls.    |
+|    [18483](mssqlserver-18483-database-engine-error.md)    |    16    |    Oui    |    Impossible de se connecter au serveur '%.*ls', car '%.* ls' n'est pas défini comme ouverture de session distante sur le serveur. Vérifiez que vous avez spécifié le bon nom d'ouverture de session. %.*ls.    |
 |    18485    |    16    |    Oui    |    Impossible de se connecter au serveur '%.*ls', car il n'est pas configuré de manière à accepter les ouvertures de session distantes. Utilisez l'option de configuration d'accès distant pour autoriser les ouvertures de session distantes.%.* ls    |
 |    18486    |    14    |    Oui    |    Échec de l'ouverture de session de l'utilisateur '%.*ls', car le compte est actuellement verrouillé. L'administrateur système peut le déverrouiller. %.* ls    |
 |    18487    |    14    |    Oui    |    Échec de l'ouverture de session pour l'utilisateur '%.*ls'. Motif : le mot de passe associé à ce compte a expiré.%.* ls    |

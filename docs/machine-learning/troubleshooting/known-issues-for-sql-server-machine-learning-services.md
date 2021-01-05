@@ -7,14 +7,14 @@ ms.date: 10/13/2020
 ms.topic: troubleshooting
 author: dphansen
 ms.author: davidph
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15'
-ms.openlocfilehash: 7772c0307732809cb7d5d6d0767ad7bcd29c7c89
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4c4b293b13ec59421ea5827572203ba13e526212
+ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470670"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878782"
 ---
 # <a name="known-issues-in-sql-server-machine-learning-services"></a>Problèmes connus dans SQL Server Machine Learning Services
 [!INCLUDE [SQL Server 2016 and later](../../includes/applies-to-version/sqlserver2016.md)]
@@ -718,7 +718,7 @@ sudo cp /opt/mssql/lib/libc++abi.so.1 /opt/mssql-extensibility/lib/
 
 ### <a name="9-cannot-install-tensorflow-package-using-sqlmlutils"></a>9. Impossible d’installer le package **TensorFlow** avec **sqlmlutils**
 
-Le package [sqlmlutils](../package-management/install-additional-python-packages-on-sql-server.md?view=sql-server-ver15) permet d’installer des packages Python dans SQL Server 2019. Vous devez télécharger, installer et mettre à jour [Microsoft Visual C++ 2015-2019 Redistributable (x64)](https://visualstudio.microsoft.com/downloads/). Cependant, il n’est pas possible d’installer le package **TensorFlow** à l’aide de sqlmlutils, car il dépend d’une version plus récente de numpy que la version installée dans SQL Server. Or, numpy est un package système préinstallé que sqlmlutils ne peut pas mettre à jour lorsqu’il tente d’installer TensorFlow.
+Le package [sqlmlutils](../package-management/install-additional-python-packages-on-sql-server.md) permet d’installer des packages Python dans SQL Server 2019. Vous devez télécharger, installer et mettre à jour [Microsoft Visual C++ 2015-2019 Redistributable (x64)](https://visualstudio.microsoft.com/downloads/). Cependant, il n’est pas possible d’installer le package **TensorFlow** à l’aide de sqlmlutils, car il dépend d’une version plus récente de numpy que la version installée dans SQL Server. Or, numpy est un package système préinstallé que sqlmlutils ne peut pas mettre à jour lorsqu’il tente d’installer TensorFlow.
 
 **Solution de contournement**
 

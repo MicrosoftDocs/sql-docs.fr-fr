@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 helpviewer_keywords:
 - Availability Groups [SQL Server], interoperability
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: cacce3ae-e940-4566-8298-6607c4268e74
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 4e0b08eac29037c5dcde26a955c01764e6f6f6dd
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: dcb8edfa056674bd13ca4d3cfdf5bc912ea23588
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584448"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97639515"
 ---
 # <a name="use-contained-databases-with-always-on-availability-groups"></a>Utiliser des bases de données autonomes avec les groupes de disponibilité Always On 
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

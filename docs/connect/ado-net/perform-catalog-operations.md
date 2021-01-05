@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: 85e68bd77b11fd70e4071d7ae67ebf26c643b540
-ms.sourcegitcommit: debaff72dbfae91b303f0acd42dd6d99e03135a2
+ms.openlocfilehash: 79eef694b3c6294eb12630f27c4b3688823581c7
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96428203"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771540"
 ---
 # <a name="performing-catalog-operations"></a>Exécution d'opérations du catalogue
 
@@ -37,3 +37,4 @@ L'exemple de code suivant crée une procédure stockée dans une base de donnée
 
 - [Utilisation des commandes pour modifier les données](use-commands-to-modify-data.md)
 - [Commandes et paramètres](commands-parameters.md)
+- [Microsoft ADO.NET pour SQL Server](microsoft-ado-net-sql-server.md)

@@ -2,7 +2,7 @@
 description: backupset (Transact-SQL)
 title: jeu de réperturbation (Transact-SQL) | Microsoft Docs
 ms.custom: ''
-ms.date: 06/10/2016
+ms.date: 12/24/2020
 ms.prod: sql
 ms.prod_service: database-engine, pdw
 ms.reviewer: ''
@@ -21,12 +21,12 @@ ms.assetid: 6ff79bbf-4acf-4f75-926f-38637ca8a943
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=aps-pdw-2016||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 3271963cf5a07e88b6209bd2b7316ab40f43bc05
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 7653ad7ed1d69e7de97e66d1003d6f131be45142
+ms.sourcegitcommit: d8a9ad86401bff422d506078c6200494c795e7c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461530"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97765200"
 ---
 # <a name="backupset-transact-sql"></a>backupset (Transact-SQL)
 [!INCLUDE [sql-asdbmi-pdw](../../includes/applies-to-version/sql-asdbmi-pdw.md)]
@@ -35,7 +35,6 @@ ms.locfileid: "97461530"
   
  Cette table est stockée dans la base de données **msdb** .  
 
-  
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
 |**backup_set_id**|**int**|Numéro d'identification unique du jeu de sauvegardes Identité, clé primaire.|  
@@ -102,10 +101,10 @@ ms.locfileid: "97461530"
 |**encryptor_thumbprint**|**varbinary(20)**|Empreinte numérique du chiffreur pouvant être utilisé pour rechercher un certificat ou la clé asymétrique dans la base de données. Si la sauvegarde n'est pas chiffrée, cette valeur est NULL.|  
 |**encryptor_type**|**nvarchar(32)**|Type de chiffreur utilisé : certificat ou clé asymétrique. . Si la sauvegarde n'est pas chiffrée, cette valeur est NULL.|  
   
-## <a name="remarks"></a>Remarks  
- RESTORE VERIFYONLY à partir de *backup_device* avec LoadHistory remplit la colonne de la table **backupmediaset** avec les valeurs appropriées de l’en-tête Media-Set.  
-  
- Pour réduire le nombre de lignes dans cette table et dans d’autres tables de sauvegarde et d’historique, exécutez la procédure stockée [sp_delete_backuphistory](../../relational-databases/system-stored-procedures/sp-delete-backuphistory-transact-sql.md) .  
+## <a name="remarks"></a>Remarques
+- RESTORE VERIFYONLY à partir de *backup_device* avec LoadHistory remplit la colonne de la table **backupmediaset** avec les valeurs appropriées de l’en-tête Media-Set.  
+- Pour réduire le nombre de lignes dans cette table et dans d’autres tables de sauvegarde et d’historique, exécutez la procédure stockée [sp_delete_backuphistory](../../relational-databases/system-stored-procedures/sp-delete-backuphistory-transact-sql.md) .  
+- Pour SQL Managed Instance, la table de sauvegarde n’affiche l’historique de sauvegarde que pour les [sauvegardes de copie uniquement](../../relational-databases/backup-restore/copy-only-backups-sql-server.md)effectuées par l’utilisateur. La table de sauvegarde n’affiche pas l’historique de sauvegarde pour les sauvegardes automatiques effectuées par le service. 
   
 ## <a name="see-also"></a>Voir aussi  
  [Sauvegarde et restauration de tables &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backup-and-restore-tables-transact-sql.md)   

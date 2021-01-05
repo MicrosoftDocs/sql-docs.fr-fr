@@ -1,7 +1,7 @@
 ---
 title: Initialisation instantanée des fichiers de base de données
 description: En savoir plus sur l’initialisation instantanée de fichiers et sur la manière de l’activer sur votre base de données SQL Server.
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 ms.date: 07/24/2020
 ms.prod: sql
 ms.prod_service: database-engine
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 1ad468f5-4f75-480b-aac6-0b01b048bd67
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: ed2781c82b2479087012ff6c761a0497b2d56444
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 6598dc9812aed56b170c22d0ed1b4a470c5f7209
+ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92192089"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878752"
 ---
 # <a name="database-instant-file-initialization"></a>Initialisation instantanée des fichiers de base de données
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

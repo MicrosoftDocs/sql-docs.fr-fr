@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: end-user-help
 f1_keywords:
 - sql13.swb.adddatabasewizard.connecttoreplicas.f1
@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: 850f1bc8-d7d0-425c-bd7b-03f0e9d3348e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: b5f10ac1247bca942cc7362530104dce1d97285d
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 9115e3540d0990565612575dca64e96535c31ec4
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584461"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97639390"
 ---
 # <a name="connect-to-existing-secondary-replicas-page---always-on-availability-groups"></a>Page « Se connecter à des réplicas secondaires existants » pour les groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

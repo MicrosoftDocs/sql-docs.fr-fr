@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.agdashboard.drp2joined.issues.f1
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 10817e5e-75fa-42dd-baa2-359bea3ad051
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 1c66fa7c407469ec8f52b11c8393bf7e03ddc734
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 39cbbe7a884d5e8fe45d0877b7a581016e1e95c2
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583953"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97640545"
 ---
 # <a name="secondary-database-is-not-joined"></a>La base de données secondaire n'est pas attachée
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

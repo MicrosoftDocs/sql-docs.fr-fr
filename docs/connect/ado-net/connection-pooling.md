@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: 41b139d2f22a9cb3137879d96224b02eafc24bab
-ms.sourcegitcommit: c127c0752e84cccd38a7e23ac74c0362a40f952e
+ms.openlocfilehash: 783fad79522c52685349defca93360c4ea8c80c9
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761497"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771641"
 ---
 # <a name="connection-pooling"></a>Regroupement de connexions
 
@@ -25,12 +25,12 @@ ms.locfileid: "96761497"
 
 Se connecter à une source de données peut prendre beaucoup de temps. Pour minimiser le coût de l'ouverture de connexions, ADO.NET utilise une technique d'optimisation nommée *mise en pool de connexions*, qui limite le coût des ouvertures et fermetures des connexions à répétition.
 
-## <a name="in-this-section"></a>Dans cette section  
+## <a name="in-this-section"></a>Contenu de cette section  
 
 [Regroupement de connexions SQL Server (ADO.NET)](sql-server-connection-pooling.md)  
 Fournit une vue d’ensemble du regroupement de connexions et décrit son fonctionnement dans SQL Server.
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Extraction et modification de données dans ADO.NET](retrieving-modifying-data.md)
+- [Récupération et modification de données dans ADO.NET](retrieving-modifying-data.md)
 - [Microsoft ADO.NET pour SQL Server](microsoft-ado-net-sql-server.md)

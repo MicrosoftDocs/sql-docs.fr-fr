@@ -8,14 +8,14 @@ ms.date: 08/06/2020
 ms.topic: how-to
 author: dphansen
 ms.author: davidph
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 monikerRange: =sql-server-2016
-ms.openlocfilehash: 05802b7d3a0bc9f4922cb1db68162d89a576f18c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5a4aefa522486eda1a955254d33ca7dd312c6cc6
+ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471130"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878872"
 ---
 # <a name="install-sql-server-2016-r-services"></a>Installer SQL Server 2016 R Services
 
