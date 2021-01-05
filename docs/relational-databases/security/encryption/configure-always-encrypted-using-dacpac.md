@@ -13,17 +13,17 @@ ms.assetid: 29816a41-f105-4414-8be1-070675d62e84
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: c18b6842139e5a4f5f0261761fa93cc42d3a506c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 506abf476e04ab1a40059d04031949fa80b31acf
+ms.sourcegitcommit: 866554663ca3191748b6e4eb4d8d82fa58c4e426
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97405592"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97559321"
 ---
 # <a name="configure-column-encryption-using-always-encrypted-with-a-dac-package"></a>Configurer le chiffrement de colonne en utilisant Always Encrypted avec un package DAC 
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb.md)]
 
-Un [package d’application de la couche Données (DAC)](../../data-tier-applications/data-tier-applications.md), également appelé DACPAC, est une unité portable de déploiement de base de données SQL Server qui définit tous les objets SQL Server, notamment les tables et les colonnes à l’intérieur des tables. Quand vous publiez un DACPAC sur une base de données (quand vous mettez à niveau une base de données avec un DACPAC), le schéma de la base de données cible est mis à jour pour correspondre au schéma dans le DACPAC. Vous pouvez publier un DACPAC en utilisant l’[Assistant Mise à niveau d’une application de la couche Données](../../data-tier-applications/upgrade-a-data-tier-application.md#UsingDACUpgradeWizard) dans SQL Server Management Studio, [PowerShell](../../data-tier-applications/upgrade-a-data-tier-application.md#UpgradeDACPowerShell) ou [sqlpackage](../../../tools/sqlpackage.md#publish-parameters-properties-and-sqlcmd-variables).
+Un [package d’application de la couche Données (DAC)](../../data-tier-applications/data-tier-applications.md), également appelé DACPAC, est une unité portable de déploiement de base de données SQL Server qui définit tous les objets SQL Server, notamment les tables et les colonnes à l’intérieur des tables. Quand vous publiez un DACPAC sur une base de données (quand vous mettez à niveau une base de données avec un DACPAC), le schéma de la base de données cible est mis à jour pour correspondre au schéma dans le DACPAC. Vous pouvez publier un DACPAC en utilisant l’[Assistant Mise à niveau d’une application de la couche Données](../../data-tier-applications/upgrade-a-data-tier-application.md#UsingDACUpgradeWizard) dans SQL Server Management Studio, [PowerShell](../../data-tier-applications/upgrade-a-data-tier-application.md#UpgradeDACPowerShell) ou [sqlpackage](../../../tools/sqlpackage/sqlpackage-publish.md).
 
 Cet article traite des considérations spéciales relatives à la mise à niveau d’une base de données quand le DACPAC et/ou la base de données cible contient des colonnes protégées avec [Always Encrypted](always-encrypted-database-engine.md). Si le schéma de chiffrement d’une colonne dans le DACPAC diffère du schéma de chiffrement pour une colonne existante dans la base de données cible, la publication du DACPAC entraîne le chiffrement, le déchiffrement ou le rechiffrement des données stockées dans la colonne. Consultez la table ci-dessous pour plus d’informations.
 

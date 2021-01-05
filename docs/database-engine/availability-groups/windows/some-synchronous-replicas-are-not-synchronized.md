@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.agdashboard.agp5synchronized.issues.f1
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e58ed56e-4c30-42e6-a9fc-a8c401620e02
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a8e5fc7b3aa708acc3542082ece0d980c938eb34
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 34e35a5b50067cef47d353d398c4fecdc82717f2
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583836"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97640253"
 ---
 # <a name="some-synchronous-replicas-are-not-synchronized"></a>Certains réplicas synchrones ne sont pas synchronisés
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

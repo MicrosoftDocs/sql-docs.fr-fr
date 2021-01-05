@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: alayu, maghan, sstein
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.openlocfilehash: 73f9f3a39f5a30fe611c5ec839d8d2c7172206d8
-ms.sourcegitcommit: c127c0752e84cccd38a7e23ac74c0362a40f952e
+ms.openlocfilehash: 051e3afcd5f76624a1978c5ef3ef0f6a264fe07d
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761507"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97637729"
 ---
 # <a name="azure-data-studio-extensibility"></a>Extensibilité d’Azure Data Studio
 
@@ -114,7 +114,7 @@ Pour faire référence au conteneur inscrit, spécifiez l’ID du conteneur
 
 `dashboard.insights`
 
-Vous pouvez enregistrer des insights à l’aide de dashboard.insights. Cela est similaire au [Didacticiel : Créer un widget insight personnalisé](./tutorial-build-custom-insight-sql-server.md?view=sql-server-ver15)
+Vous pouvez enregistrer des insights à l’aide de dashboard.insights. Cela est similaire au [Didacticiel : Créer un widget insight personnalisé](./tutorial-build-custom-insight-sql-server.md)
 
 ```json
 "dashboard.insights": {

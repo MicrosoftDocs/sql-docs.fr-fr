@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: alayu, maghan, sstein
 ms.custom: seodec18, sqlfreshmay19
 ms.date: 08/02/2019
-ms.openlocfilehash: f49d322e664bce35f7d9a47ab5c8f3b197468377
-ms.sourcegitcommit: 7345e4f05d6c06e1bcd73747a4a47873b3f3251f
+ms.openlocfilehash: 6a637791eac7858e905f766126ca93d9277b65c1
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88766358"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97637625"
 ---
 # <a name="quickstart-use-azure-data-studio-to-connect-and-query-sql-server"></a>Démarrage rapide : Utilisez Azure Data Studio pour vous connecter et interroger SQL Server
 
@@ -24,7 +24,7 @@ Ce guide de démarrage rapide montre comment utiliser Azure Data Studio pour se
 
 Pour suivre ce guide de démarrage rapide, vous aurez besoin d’Azure Data Studio, ainsi que d’un accès à SQL Server.
 
-- [Installez Azure Data Studio](./download-azure-data-studio.md?view=sql-server-ver15).
+- [Installez Azure Data Studio](./download-azure-data-studio.md).
 
 Si vous n’avez pas accès à un serveur SQL Server, sélectionnez votre plateforme parmi les liens suivants (pensez à mémoriser votre compte de connexion et votre mot de passe SQL) :
 

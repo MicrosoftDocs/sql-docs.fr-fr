@@ -8,13 +8,13 @@ ms.reviewer: ''
 ms.date: 05/24/2018
 ms.topic: how-to
 ms.prod: sql
-ms.technology: high-availability
-ms.openlocfilehash: c5029f8f6e2200751d193172322d7d84934271ab
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.technology: availability-groups
+ms.openlocfilehash: c7c7420be3a75ab8ba9e23246e76232c3048a71f
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584485"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97639705"
 ---
 # <a name="configure-read-scale-for-an-always-on-availability-group"></a>Configurer une échelle lecture pour un groupe de disponibilité Always On
 

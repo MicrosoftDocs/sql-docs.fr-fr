@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 02/25/2019
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 helpviewer_keywords:
 - read-only routing
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 7bd89ddd-0403-4930-a5eb-3c78718533d4
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ef1cd502809f24e15810243ee70ee7e55e6cd28f
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 8e64eb57dbcfecabaa5c6f24881206152df4d8d0
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584434"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97639781"
 ---
 # <a name="configure-read-only-routing-for-an-always-on-availability-group"></a>Configurer le routage en lecture seule pour un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

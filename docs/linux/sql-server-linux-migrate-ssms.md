@@ -8,18 +8,18 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: 2210cfc3-c23a-4025-a551-625890d6845f
-ms.openlocfilehash: f0e1d76ae7977eac4d761c76a27e10619f300ca1
-ms.sourcegitcommit: 22102f25db5ccca39aebf96bc861c92f2367c77a
+ms.openlocfilehash: f33a5a6890d12628faf3144a0ca6e8471a15c73d
+ms.sourcegitcommit: 866554663ca3191748b6e4eb4d8d82fa58c4e426
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92115686"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97559281"
 ---
 # <a name="export-and-import-a-database-on-linux-with-ssms-or-sqlpackageexe-on-windows"></a>Exporter et importer une base de données sur Linux avec SSMS ou SqlPackage.exe sur Windows
 
 [!INCLUDE [SQL Server - Linux](../includes/applies-to-version/sql-linux.md)]
 
-Cet article explique comment utiliser [SQL Server Management Studio (SSMS)](../ssms/download-sql-server-management-studio-ssms.md) et [SqlPackage.exe](../tools/sqlpackage.md) pour exporter et importer une base de données sur SQL Server sur Linux. SSMS et SqlPackage.exe sont des applications Windows. Utilisez donc cette technique quand vous disposez d’une machine Windows capable de se connecter à une instance distante sur Linux.
+Cet article explique comment utiliser [SQL Server Management Studio (SSMS)](../ssms/download-sql-server-management-studio-ssms.md) et [SqlPackage.exe](../tools/sqlpackage/sqlpackage.md) pour exporter et importer une base de données sur SQL Server sur Linux. SSMS et SqlPackage.exe sont des applications Windows. Utilisez donc cette technique quand vous disposez d’une machine Windows capable de se connecter à une instance distante sur Linux.
 
 Vous devez toujours installer et utiliser la version la plus récente de SQL Server Management Studio (SSMS), comme décrit dans [Utiliser SSMS sur Windows pour se connecter à SQL Server sur Linux](sql-server-linux-manage-ssms.md)
 
@@ -34,13 +34,13 @@ Vous devez toujours installer et utiliser la version la plus récente de SQL Ser
 
 2. Connectez-vous à votre base de données source dans l’Explorateur d’objets. La base de données source peut se trouver dans Microsoft SQL Server en local ou dans le cloud, sur Linux, Windows ou Docker, ainsi que dans Azure SQL Database ou Azure Synapse Analytics.
 
-3. Cliquez avec le bouton de droite sur la base de données source dans l'Explorateur d’objets, pointez sur **Tâches** , puis cliquez sur **Exporter une application de la couche Données...**
+3. Cliquez avec le bouton de droite sur la base de données source dans l'Explorateur d’objets, pointez sur **Tâches**, puis cliquez sur **Exporter une application de la couche Données...**
 
-4. Dans l’Assistant exportation, cliquez sur **Suivant** , puis dans l'onglet **Paramètres** , configurez l’exportation pour enregistrer le fichier BACPAC dans un emplacement de disque local ou dans un blob Azure.
+4. Dans l’Assistant exportation, cliquez sur **Suivant**, puis dans l'onglet **Paramètres**, configurez l’exportation pour enregistrer le fichier BACPAC dans un emplacement de disque local ou dans un blob Azure.
 
 5. Par défaut, tous les objets de la base de données sont exportés. Cliquez sur **l’onglet Avancé** et sélectionnez les objets de base de données que vous souhaitez exporter.
 
-6. Cliquez sur **Suivant** , puis sur **Terminer** .
+6. Cliquez sur **Suivant** , puis sur **Terminer**.
 
 Le fichier *.BACPAC a été créé avec succès à l’emplacement que vous avez choisi et vous êtes prêt à l’importer dans une base de données cible.
 
@@ -58,13 +58,13 @@ Le fichier *.BACPAC a été créé avec succès à l’emplacement que vous avez
 
 5. Fournissez un nouveau nom pour la base de données. Si vous importez une base de données sur Azure SQL Database, définissez l’édition de Microsoft Azure SQL Database (niveau de service), la taille maximale de la base de données et l’objectif de service (niveau de performance).
 
-6. Cliquez sur **Suivant** , puis sur **Terminer** pour importer le fichier BACPAC dans une nouvelle base de données sur votre serveur cible.
+6. Cliquez sur **Suivant**, puis sur **Terminer** pour importer le fichier BACPAC dans une nouvelle base de données sur votre serveur cible.
 
 Le fichier *.BACPAC est importé pour créer une nouvelle base de données dans le serveur cible que vous avez spécifié.
 
 ## <a name="sqlpackage-command-line-option"></a><a id="sqlpackage"></a> Option de ligne de commande SqlPackage
 
-Il est également possible d’utiliser l’outil en ligne de commande SQL Server Data Tools (SSDT), [SqlPackage.exe](../tools/sqlpackage.md), pour exporter et importer des fichiers BACPAC.
+Il est également possible d’utiliser l’outil en ligne de commande SQL Server Data Tools (SSDT), [SqlPackage.exe](../tools/sqlpackage/sqlpackage.md), pour exporter et importer des fichiers BACPAC.
 
 L’exemple de commande suivant exporte un fichier BACPAC :
 
@@ -80,4 +80,4 @@ SqlPackage.exe /a:Import /tsn:tcp:<your_server> /tdn:<your_database> /tu:<userna
 ```
 
 ## <a name="see-also"></a>Voir aussi
-Pour plus d’informations sur l’utilisation de SSMS, consultez [Utiliser SQL Server Management Studio](../ssms/sql-server-management-studio-ssms.md). Pour plus d’informations sur SqlPackage.exe, consultez la [documentation de référence SqlPackage](../tools/sqlpackage.md).
+Pour plus d’informations sur l’utilisation de SSMS, consultez [Utiliser SQL Server Management Studio](../ssms/sql-server-management-studio-ssms.md). Pour plus d’informations sur SqlPackage.exe, consultez la [documentation de référence SqlPackage](../tools/sqlpackage/sqlpackage.md).

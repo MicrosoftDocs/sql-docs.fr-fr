@@ -5,17 +5,17 @@ ms.custom: seo-lt-2019
 ms.date: 05/02/2018
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 ms.assetid: ''
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: fb236820958875458d391495028f04181c8ba47b
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: a616e9b8fb1ebce6edd15c6af101765963d862f8
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584643"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97640315"
 ---
 # <a name="mechanics-and-guidelines-of-lease-cluster-and-health-check-timeouts-for-always-on-availability-groups"></a>Mécanismes et recommandations liés aux délais d’attente concernant les baux, les clusters et le contrôle d’intégrité pour les groupes de disponibilité Always On 
 

@@ -10,12 +10,12 @@ ms.date: 12/13/2019
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 24fef9f2290a85a8e87e8b3b3dd2098b31a9d792
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: 868c7685c59ae1ccf43057fdd03dfbb0b5bdaf21
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489616"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97637325"
 ---
 # <a name="deploy-sql-server-big-data-cluster-with-azure-data-studio-notebook"></a>Déployer un cluster Big Data SQL Server avec un notebook Azure Data Studio
 
@@ -23,7 +23,7 @@ ms.locfileid: "97489616"
 
 [!INCLUDE[sql-server-2019](../includes/sssqlv15-md.md)] fournit une extension pour Azure Data Studio qui inclut des notebooks de déploiement. Un notebook de déploiement comprend la documentation et le code que vous pouvez utiliser dans Azure Data Studio pour créer un cluster Big Data SQL Server.
 
-Implémentés à l’origine sous forme de projet open source, les [notebooks](../azure-data-studio/notebooks/notebooks-guidance.md) ont été implémentés dans [Azure Data Studio](../azure-data-studio/download-azure-data-studio.md?view=sql-server-ver15). Vous pouvez utiliser un marquage Markdown pour le texte des cellules de texte et un des noyaux disponibles pour écrire du code dans les cellules de code.
+Implémentés à l’origine sous forme de projet open source, les [notebooks](../azure-data-studio/notebooks/notebooks-guidance.md) ont été implémentés dans [Azure Data Studio](../azure-data-studio/download-azure-data-studio.md). Vous pouvez utiliser un marquage Markdown pour le texte des cellules de texte et un des noyaux disponibles pour écrire du code dans les cellules de code.
 
 Vous pouvez utiliser des notebooks pour déployer des clusters Big Data pour [!INCLUDE[sql-server-2019](../includes/sssqlv15-md.md)].
 
