@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: a30a3d3184c411fc0b54c0e26330a8fb138ffdae
-ms.sourcegitcommit: 2add15a99df7b85d271adb261523689984dfd134
+ms.openlocfilehash: 2a00ef1ec1f2f5d8ee892289021f42cb139b5a12
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97051269"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771316"
 ---
 # <a name="transactions-and-concurrency"></a>Transactions et accès simultané
 
@@ -35,16 +35,16 @@ Les transactions impliquant différents gestionnaires de ressources, comme une t
 
 ## <a name="in-this-section"></a>Dans cette section
 
- [Transactions locales](local-transactions.md)  
- Montre comment effectuer des transactions sur une base de données.  
+[Transactions locales](local-transactions.md)  
+Montre comment effectuer des transactions sur une base de données.  
   
- [Transactions distribuées](distributed-transactions.md)  
- Décrit comment effectuer des transactions distribuées dans ADO.NET.  
+[Transactions distribuées](distributed-transactions.md)  
+Décrit comment effectuer des transactions distribuées dans ADO.NET.  
   
- [Intégration de System.Transactions à SQL Server](system-transactions-integration-with-sql-server.md)  
- Décrit l’intégration de <xref:System.Transactions> à SQL Server pour utiliser les transactions distribuées.  
+[Intégration de System.Transactions à SQL Server](system-transactions-integration-with-sql-server.md)  
+Décrit l’intégration de <xref:System.Transactions> à SQL Server pour utiliser les transactions distribuées.  
   
- [Accès concurrentiel optimiste](optimistic-concurrency.md) Explique l’accès concurrentiel optimiste et pessimiste et comment déceler les violations d’accès concurrentiel.  
+[Accès concurrentiel optimiste](optimistic-concurrency.md) Explique l’accès concurrentiel optimiste et pessimiste et comment déceler les violations d’accès concurrentiel.  
 
 ## <a name="see-also"></a>Voir aussi
 
@@ -52,4 +52,5 @@ Les transactions impliquant différents gestionnaires de ressources, comme une t
 - [Connexion à une source de données](connecting-to-data-source.md)
 - [Commandes et paramètres](commands-parameters.md)
 - [DataAdapters et DataReaders](dataadapters-datareaders.md)
+- [DbProviderFactories](dbproviderfactories.md)
 - [Microsoft ADO.NET pour SQL Server](microsoft-ado-net-sql-server.md)

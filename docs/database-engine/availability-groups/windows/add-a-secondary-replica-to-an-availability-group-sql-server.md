@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/18/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 helpviewer_keywords:
 - Availability Groups [SQL Server], availability replicas
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 6669dcce-85f9-495f-aadf-7f62cff4a9da
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 53d138f5273ef07174d1e926fe628f9e73146297
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 645fae8fc567eff8d8e4daa62d3b19fec2c2fdc1
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584871"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643807"
 ---
 # <a name="add-a-secondary-replica-to-an-always-on-availability-group"></a>Ajouter un réplica secondaire à un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

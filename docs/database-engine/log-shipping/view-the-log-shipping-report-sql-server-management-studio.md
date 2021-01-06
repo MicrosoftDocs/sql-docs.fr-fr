@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 03/04/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: log-shipping
 ms.topic: conceptual
 helpviewer_keywords:
 - viewing log shipping reports
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3b549f2f-3683-45e5-b8e8-8095276c41ab
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 4ee1de4f9d231c2fa3be91cab2010eb1aad358f8
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 87292d8c38322069e7bc5fd93802e7e3bffb1978
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96130732"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643843"
 ---
 # <a name="view-the-log-shipping-report-sql-server-management-studio"></a>Afficher le rapport de la copie des journaux de transaction (SQL Server Management Studio)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

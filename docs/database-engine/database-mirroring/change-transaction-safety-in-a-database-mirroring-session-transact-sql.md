@@ -6,19 +6,19 @@ ms.date: 03/04/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - transaction safety [SQL Server database mirroring]
 ms.assetid: 8b03bb82-8589-4558-8545-9942fe008391
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 91b7c60138db717f287af5416c7a310debc7e8fc
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 98865c826e9ee4c0cf0da05f5668feaa41fd6b44
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85763848"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643626"
 ---
 # <a name="change-transaction-safety-in-a-database-mirroring-session-transact-sql"></a>Modifier la sécurité des transactions dans une session de mise en miroir de bases de données (Transact-SQL)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], operating modes
 ms.assetid: f8a579c2-55d7-4278-8088-f1da1de5b2e6
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 505f09118b4c1b4598936e59c57ce2202a4ddd55
-ms.sourcegitcommit: 2f868a77903c1f1c4cecf4ea1c181deee12d5b15
+ms.openlocfilehash: 9e69236003f1c0ee2b13620b481dfddbaf9acd5a
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91670846"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644117"
 ---
 # <a name="database-mirroring-operating-modes"></a>Modes de fonctionnement de la mise en miroir de bases de données
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 01/09/2019
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: article
 helpviewer_keywords:
 - connection access to availability replicas
@@ -18,12 +18,12 @@ ms.assetid: ''
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15'
-ms.openlocfilehash: 05a4e96b263c2849e793ccc0056f17893cf00ba0
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8fb07363cd52de514c646cff3d482b38f76493b3
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480340"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643310"
 ---
 # <a name="secondary-to-primary-replica-readwrite-connection-redirection-always-on-availability-groups"></a>Redirection de connexion en lecture/écriture depuis un réplica secondaire vers le réplica principal (groupes de disponibilité Always On)
 

@@ -6,7 +6,7 @@ ms.date: 05/17/2016
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - certificates [SQL Server], database mirroring
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5d48bb98-61f0-4b99-8f1a-b53f831d63d0
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 8193710d3bd5e1fc132e10766c0f3440f1b7a422
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 2eb5bd6f4b8b234d8b48b32645ecd18b7734a776
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85754723"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643365"
 ---
 # <a name="database-mirroring---use-certificates-for-inbound-connections"></a>Mise en miroir de bases de données - Utiliser des certificats pour les connexions entrantes
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

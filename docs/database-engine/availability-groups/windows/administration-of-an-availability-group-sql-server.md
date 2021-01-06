@@ -5,19 +5,19 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: reference
 helpviewer_keywords:
 - Availability Groups [SQL Server], managing
 ms.assetid: 0b7542fa-235e-413d-81bf-3eff9ee07480
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f82ca3cd976a13cfc9badf17f8dac02cbec83d1a
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 414b407cc2adccf20f2f9d7dc0e01bfb171899f7
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584836"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643305"
 ---
 # <a name="administration-of-an-availability-group"></a>Administration d’un groupe de disponibilité
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

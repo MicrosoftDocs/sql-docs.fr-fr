@@ -7,12 +7,12 @@ ms.date: 10/01/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: 00e2e11f83fb282bbc674f2fdba91810986c69bd
-ms.sourcegitcommit: 32135463a8494d9ed1600a58f51819359e3c09dc
+ms.openlocfilehash: 262e2f222e6c30f3657e78c2a20862912b1aa970
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91833648"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643944"
 ---
 # <a name="release-notes-for-sql-server-2019-on-linux"></a>Notes de publication pour SQL Server 2019 sur Linux
 
@@ -21,7 +21,7 @@ ms.locfileid: "91833648"
 Les notes de publication suivantes s’appliquent à SQL Server 2019 s’exécutant sur Linux. Cet article est divisé en sections pour chaque mise en production. Chaque version a un lien vers un article de support décrivant les modifications CU, ainsi que des liens de téléchargement des packages Linux.
 
 > [!TIP]
-> Pour en savoir plus sur les nouvelles fonctionnalités de Linux dans SQL Server 2019, consultez [Nouveautés de SQL Server 2019](../sql-server/what-s-new-in-sql-server-ver15.md?view=sql-server-ver15#sql-server-on-linux).
+> Pour en savoir plus sur les nouvelles fonctionnalités de Linux dans SQL Server 2019, consultez [Nouveautés de SQL Server 2019](../sql-server/what-s-new-in-sql-server-ver15.md?view=sql-server-ver15&preserve-view=true#sql-server-on-linux).
 
 [!INCLUDE [linux-supported-platfoms-2019](../includes/linux-supported-platfoms-2019.md)]
 

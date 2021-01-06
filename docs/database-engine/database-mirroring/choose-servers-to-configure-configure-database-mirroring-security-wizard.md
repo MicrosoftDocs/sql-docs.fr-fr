@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.configdbmsecurwiz.choosesrvrs.f1
 ms.assetid: 59e23ff3-d7ee-4e32-9629-0b54d3a258f7
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 84ab26e4de120d64e398bff50cf4a5c409e4cd83
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 52df789b46ac1caf5609a3342cc2f9e7131b239c
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85763633"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643655"
 ---
 # <a name="configure-database-mirroring-wizard-choose-servers-to-configure"></a>Assistant Configurer la mise en miroir de bases de données : Choisir les serveurs à configurer 
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

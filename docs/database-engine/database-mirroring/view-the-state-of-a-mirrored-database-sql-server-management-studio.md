@@ -6,7 +6,7 @@ ms.date: 03/01/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - states [SQL Server], database mirroring
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 544f4194-253e-4c57-96ca-31c16301434f
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: bbac0c31618e419c7d67c3feba861e5e69008ee8
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: f5a1f7b47fd41d866733b844321d46a32cd677f3
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85758200"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643475"
 ---
 # <a name="view-the-state-of-a-mirrored-database-sql-server-management-studio"></a>Afficher l'état d'une base de données mise en miroir (SQL Server Management Studio)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "85758200"
   
 1.  Après vous être connecté à l'instance du serveur principal, dans l'Explorateur d'objets, cliquez sur le nom du serveur pour développer son arborescence.  
   
-2.  Développez **Bases de données**et sélectionnez la base de données à mettre en miroir.  
+2.  Développez **Bases de données** et sélectionnez la base de données à mettre en miroir.  
   
 3.  Cliquez avec le bouton droit sur la base de données, sélectionnez **Tâches**, puis cliquez sur **Miroir**. La page **Mise en miroir** de la boîte de dialogue **Propriétés de la base de données** s'affiche.  
   

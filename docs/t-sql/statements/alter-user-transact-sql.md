@@ -26,12 +26,12 @@ ms.assetid: 344fc6ce-a008-47c8-a02e-47fae66cc590
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 4f2a00a567282eb4a2d5990360b630817d1950c6
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: ff06180d1abb67239407d91c564558e4d45c2550
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489472"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644415"
 ---
 # <a name="alter-user-transact-sql"></a>ALTER USER (Transact-SQL)
 
@@ -48,13 +48,13 @@ Renomme un utilisateur de base de données ou change son schéma par défaut.
         **_\* SQL Server \*_** &nbsp;
     :::column-end:::
     :::column:::
-        [Base de données SQL](alter-user-transact-sql.md?view=azuresqldb-current)
+        [Base de données SQL](alter-user-transact-sql.md?view=azuresqldb-current&preserve-view=true)
     :::column-end:::
     :::column:::
-        [SQL Managed Instance](alter-user-transact-sql.md?view=azuresqldb-mi-current)
+        [SQL Managed Instance](alter-user-transact-sql.md?view=azuresqldb-mi-current&preserve-view=true)
     :::column-end:::
     :::column:::
-        [Azure Synapse<br />Analytics](alter-user-transact-sql.md?view=azure-sqldw-latest)
+        [Azure Synapse<br />Analytics](alter-user-transact-sql.md?view=azure-sqldw-latest&preserve-view=true)
     :::column-end:::
     :::column:::
         [Analytics Platform<br />System (PDW)](alter-user-transact-sql.md?view=aps-pdw-2016&preserve-view=true)
@@ -226,10 +226,10 @@ GO
         **_\* SQL Database \*_**
     :::column-end:::
     :::column:::
-        [SQL Managed Instance](alter-user-transact-sql.md?view=azuresqldb-mi-current)
+        [SQL Managed Instance](alter-user-transact-sql.md?view=azuresqldb-mi-current&preserve-view=true)
     :::column-end:::
     :::column:::
-        [Azure Synapse<br />Analytics](alter-user-transact-sql.md?view=azure-sqldw-latest)
+        [Azure Synapse<br />Analytics](alter-user-transact-sql.md?view=azure-sqldw-latest&preserve-view=true)
     :::column-end:::
     :::column:::
         [Analytics Platform<br />System (PDW)](alter-user-transact-sql.md?view=aps-pdw-2016&preserve-view=true)
@@ -408,13 +408,13 @@ GO
         [SQL Server](alter-user-transact-sql.md?view=sql-server-ver15&preserve-view=true)
     :::column-end:::
     :::column:::
-        [Base de données SQL](alter-user-transact-sql.md?view=azuresqldb-current)
+        [Base de données SQL](alter-user-transact-sql.md?view=azuresqldb-current&preserve-view=true)
     :::column-end:::
     :::column:::
         **_\* SQL Managed Instance \*_**
     :::column-end:::
     :::column:::
-        [Azure Synapse<br />Analytics](alter-user-transact-sql.md?view=azure-sqldw-latest)
+        [Azure Synapse<br />Analytics](alter-user-transact-sql.md?view=azure-sqldw-latest&preserve-view=true)
     :::column-end:::
     :::column:::
         [Analytics Platform<br />System (PDW)](alter-user-transact-sql.md?view=aps-pdw-2016&preserve-view=true)
@@ -676,10 +676,10 @@ ALTER USER [westus\mygroup] WITH LOGIN = mygroup
         [SQL Server](alter-user-transact-sql.md?view=sql-server-ver15&preserve-view=true)
     :::column-end:::
     :::column:::
-        [Base de données SQL](alter-user-transact-sql.md?view=azuresqldb-current)
+        [Base de données SQL](alter-user-transact-sql.md?view=azuresqldb-current&preserve-view=true)
     :::column-end:::
     :::column:::
-        [SQL Managed Instance](alter-user-transact-sql.md?view=azuresqldb-mi-current)
+        [SQL Managed Instance](alter-user-transact-sql.md?view=azuresqldb-mi-current&preserve-view=true)
     :::column-end:::
     :::column:::
         **_\* Azure Synapse<br />Analytics \*_**
@@ -801,13 +801,13 @@ GO
         [SQL Server](alter-user-transact-sql.md?view=sql-server-ver15&preserve-view=true)
     :::column-end:::
     :::column:::
-        [Base de données SQL](alter-user-transact-sql.md?view=azuresqldb-current)
+        [Base de données SQL](alter-user-transact-sql.md?view=azuresqldb-current&preserve-view=true)
     :::column-end:::
     :::column:::
-        [SQL Managed Instance](alter-user-transact-sql.md?view=azuresqldb-mi-current)
+        [SQL Managed Instance](alter-user-transact-sql.md?view=azuresqldb-mi-current&preserve-view=true)
     :::column-end:::
     :::column:::
-        [Azure Synapse<br />Analytics](alter-user-transact-sql.md?view=azure-sqldw-latest)
+        [Azure Synapse<br />Analytics](alter-user-transact-sql.md?view=azure-sqldw-latest&preserve-view=true)
     :::column-end:::
     :::column:::
         **_\* Analytics<br />Platform System (PDW) \*_**

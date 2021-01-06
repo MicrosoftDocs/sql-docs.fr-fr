@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.adddatabasewizard.selectdatabases.f1
@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: 929c5e15-d087-438d-b1f2-aa97c5f8bff8
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 1576b98f62832f5c45759afe96fd0254d3d83513
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: a6971231c42b91907ad668f5cb93c185f08c9120
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583915"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643345"
 ---
 # <a name="select-databases-page-new-availability-group-wizard-and-add-database-wizard"></a>Page Sélectionner les bases de données (Assistant Nouveau groupe de disponibilité et Assistant Ajouter une base de données)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

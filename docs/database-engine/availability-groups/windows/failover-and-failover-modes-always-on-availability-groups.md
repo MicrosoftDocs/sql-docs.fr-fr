@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], availability replicas
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 378d2d63-50b9-420b-bafb-d375543fda17
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 7cd148979886048bad16bc706d19b020d114377f
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: f6ea40fdde107aedf5a76f7419dfd096e167bd53
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584249"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644145"
 ---
 # <a name="failover-and-failover-modes-always-on-availability-groups"></a>Basculement et modes de basculement (groupes de disponibilité Always On)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: log-shipping
 ms.topic: conceptual
 helpviewer_keywords:
 - deleting secondary databases
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ebe368a4-ca1c-45d0-9a71-3ddbd5b26a8e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: d06b864f4a14b15acaf978d74d8224019dc010b1
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 3cb7354772f10be060dd541d2394f146df4eca17
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96125706"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643882"
 ---
 # <a name="remove-a-secondary-database-from-a-log-shipping-configuration-sql-server"></a>Supprimer une base de données secondaire dans une configuration de copie des journaux de transaction (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 08/30/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 helpviewer_keywords:
 - Availability Groups [SQL Server], server instance
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7c326958-5ae9-4761-9c57-905972276a8f
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 33172488fd20ed4ef2fc555026931ae8b9a10f9c
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: b44d3ffbbff0539b899abf8ffc906f6fe922f65f
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584316"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643584"
 ---
 # <a name="enable-or-disable-always-on-availability-group-feature"></a>Activer ou désactiver la fonctionnalité de groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

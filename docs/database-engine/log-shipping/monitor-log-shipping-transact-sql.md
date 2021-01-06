@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 03/06/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: log-shipping
 ms.topic: conceptual
 helpviewer_keywords:
 - log shipping [SQL Server], status
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: acf3cd99-55f7-4287-8414-0892f830f423
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c328ae66b2ec85080b6da14ff054c824405b8be2
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 5086ce48d0b1b31c81e8e1d70e613e087e91a5d6
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96130766"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643858"
 ---
 # <a name="monitor-log-shipping-transact-sql"></a>Surveiller la copie des journaux de transaction (Transact-SQL)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

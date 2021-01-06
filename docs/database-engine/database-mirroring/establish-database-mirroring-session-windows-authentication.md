@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], sessions
 ms.assetid: 7cb418d6-dce1-4a0d-830e-9c5ccfe3bd72
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 5dc5aae2308f0f2cada44175ebcef691894720f4
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: ece2afa5381b2692c3cb3b99358fc02891e75e97
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85754703"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644306"
 ---
 # <a name="establish-database-mirroring-session---windows-authentication"></a>Établir une session de mise en miroir de base de données - authentification Windows
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "85754703"
   
 1.  Après vous être connecté à l'instance du serveur principal, dans l'Explorateur d'objets, cliquez sur le nom du serveur pour développer son arborescence.  
   
-2.  Développez **Bases de données**et sélectionnez la base de données à mettre en miroir.  
+2.  Développez **Bases de données** et sélectionnez la base de données à mettre en miroir.  
   
 3.  Cliquez avec le bouton droit sur la base de données, sélectionnez **Tâches**, puis cliquez sur **Miroir**. La page **Mise en miroir** de la boîte de dialogue **Propriétés de la base de données** s'affiche.  
   
@@ -52,7 +52,7 @@ ms.locfileid: "85754703"
     > [!NOTE]  
     >  Durant une session de mise en miroir de bases de données, vous pouvez utiliser cet Assistant uniquement pour ajouter ou modifier l'instance de serveur témoin.  
   
-5.  L’Assistant Configurer la sécurité de mise en miroir de bases de données crée automatiquement le point de terminaison de mise en miroir de bases de données (s’il n’en existe aucun) sur chaque instance de serveur et il entre ses adresses réseau de serveur dans le champ correspondant au rôle de l’instance de serveur (**Principal**, **Miroir**ou **Témoin**).  
+5.  L’Assistant Configurer la sécurité de mise en miroir de bases de données crée automatiquement le point de terminaison de mise en miroir de bases de données (s’il n’en existe aucun) sur chaque instance de serveur et il entre ses adresses réseau de serveur dans le champ correspondant au rôle de l’instance de serveur (**Principal**, **Miroir** ou **Témoin**).  
   
     > [!IMPORTANT]  
     >  Lors de la création d'un point de terminaison, l'Assistant Configurer la sécurité de mise en miroir de bases de données utilise toujours l'authentification Windows. Pour que vous puissiez utiliser l'Assistant avec l'authentification basée sur certificat, le point de terminaison de mise en miroir doit déjà avoir été configuré de façon à utiliser les certificats sur chacune des instances de serveur. En outre, tous les champs de la boîte de dialogue **Comptes de service** de l'Assistant doivent rester vides. Pour plus d’informations sur la création d’un point de terminaison de mise en miroir de bases de données, consultez [CREATE ENDPOINT &#40;Transact-SQL&#41;](../../t-sql/statements/create-endpoint-transact-sql.md).  

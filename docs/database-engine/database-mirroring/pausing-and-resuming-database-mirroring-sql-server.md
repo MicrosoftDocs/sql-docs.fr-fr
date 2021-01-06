@@ -6,7 +6,7 @@ ms.date: 03/04/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - sessions [SQL Server], database mirroring
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: c67802c6-ee8c-4cbd-a6d4-f7b80413a4ab
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 8b71dd9efc29735d618e6cf7cbabab5615f31fb0
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 4163add4c04b919d0cc99da93a440383879bdb08
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85735249"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644276"
 ---
 # <a name="pausing-and-resuming-database-mirroring-sql-server"></a>Suspendre et reprendre la mise en miroir de bases de données (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

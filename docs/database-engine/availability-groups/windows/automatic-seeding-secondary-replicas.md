@@ -5,19 +5,19 @@ ms.custom: seo-lt-2019
 ms.date: 11/27/2018
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 helpviewer_keywords:
 - Automatic seeding [SQL Server], secondary replica
 ms.assetid: ''
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: b4c593a1486c7cf7d7030c7ddcbbf971533bc707
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 75aa499fff65f9b7bf6ab10b6cdc501c172fbc03
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584773"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644362"
 ---
 # <a name="use-automatic-seeding-to-initialize-a-secondary-replica-for-an-always-on-availability-group"></a>Utiliser l’amorçage automatique pour initialiser un réplica secondaire dans un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

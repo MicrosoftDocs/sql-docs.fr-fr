@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 08/08/2019
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - failover subscribers with AlwaysOn
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 0995f269-0580-43ed-b8bf-02b9ad2d7ee6
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: e15653aebc8f887aa43a95360cc5090df50605d5
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 7e566d450a19d3a488a8bc29b4459ec9daf5499a
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583943"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644170"
 ---
 # <a name="replication-subscribers-and-always-on-availability-groups-sql-server"></a>Abonnés de réplication et groupes de disponibilité Always On (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

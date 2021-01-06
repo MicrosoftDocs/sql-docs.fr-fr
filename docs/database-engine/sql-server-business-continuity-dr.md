@@ -7,14 +7,14 @@ ms.reviewer: mikeray
 ms.date: 09/14/2017
 ms.topic: conceptual
 ms.prod: sql
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.assetid: c75717c8-c677-4033-8ca6-d0ac93aee04d
-ms.openlocfilehash: 0ebc96b201b46461d5ab2586189628e3c4df3418
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 2d02d2943a83843ab7cc1996f379510d7a7105ce
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85748536"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643795"
 ---
 # <a name="business-continuity-and-database-recovery---sql-server"></a>Continuité d’activité et récupération de base de données - SQL Server
 [!INCLUDE [SQL Server 2016](../includes/applies-to-version/sqlserver2016.md)]  

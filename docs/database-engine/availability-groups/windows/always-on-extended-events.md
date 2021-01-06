@@ -5,17 +5,17 @@ ms.custom: ag-guide, seodec18
 ms.date: 06/13/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 ms.assetid: 5950f98a-3950-473d-95fd-cde3557b8fc2
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3a5b2f339f5aec4d97daaee9ac273dd73833d564
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: 28eab9dae04e0268c6dd7827aab8be71220e4218
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91115849"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643734"
 ---
 # <a name="configure-extended-events-for-always-on-availability-groups"></a>Configurer les événements étendus pour les groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

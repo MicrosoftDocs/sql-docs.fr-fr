@@ -20,12 +20,12 @@ ms.assetid: f0d5dd10-73fd-4e05-9177-07f56552bdf7
 author: rothja
 ms.author: jroth
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: d66e435bb902951f6cc1a06037ef1826560c8638
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 3303df6ac71b7a6c92d4a1c65a8b7b4b3229cd6e
+ms.sourcegitcommit: 4419e99d77ee2c73f9da1559c7944f7702f2de30
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482302"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97743676"
 ---
 # <a name="create-user-defined-functions-database-engine"></a>Créer des fonctions définies par l'utilisateur (moteur de base de données)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -208,8 +208,8 @@ Il est possible de se joindre à une fonction table à instructions multiples da
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions définies par l’utilisateur](../../relational-databases/user-defined-functions/user-defined-functions.md)     
  [CREATE FUNCTION &#40;Transact-SQL&#41;](../../t-sql/statements/create-function-transact-sql.md)    
- [ALTER FUNCTION &#40;Transact-SQL&#41;](../../tools/sql-server-profiler/start-sql-server-profiler.md)    
- [DROP FUNCTION &#40;Transact-SQL&#41;](../../tools/sql-server-profiler/start-sql-server-profiler.md)     
+ [ALTER FUNCTION &#40;Transact-SQL&#41;](../../t-sql/statements/alter-function-transact-sql.md)    
+ [DROP FUNCTION &#40;Transact-SQL&#41;](../../t-sql/statements/drop-function-transact-sql.md)     
  [DROP PARTITION FUNCTION &#40;Transact-SQL&#41;](../../t-sql/statements/drop-partition-function-transact-sql.md)    
  Plus d’exemples dans la [communauté](https://www.bing.com/search?q=user%20defined%20function%20%22sql%20server%202016%22%20examples&qs=n&form=QBRE&pq=user%20defined%20function%20%22sql%20server%202016%22%20examples&sc=0-48&sp=-1&sk=&cvid=C3AD337125A840AD9EEFA3AAC36A3712)   
   

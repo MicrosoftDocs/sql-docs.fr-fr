@@ -7,7 +7,7 @@ ms.date: 05/17/2016
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], deployment
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: f7c23cc2-48dc-4b78-b441-89ca29a0bd9e
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: c6e225e3202e0fe7cdd33bac38b86dda5283aae0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 112276ee293459418a9a0ea467c937b7f2a8d6d8
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431241"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643526"
 ---
 # <a name="use-certificates-for-a-database-mirroring-endpoint-transact-sql"></a>Utiliser des certificats pour un point de terminaison de mise en miroir de bases de données (Transact-SQL)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

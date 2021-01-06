@@ -5,19 +5,19 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 helpviewer_keywords:
 - Availability Groups [SQL Server], creating
 ms.assetid: 8b0a6301-8b79-4415-b608-b40876f30066
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: e6235f980627ad56d18330031c3bae6995eb45d2
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 7223b0d8b283caf6300e2be056d399e45e637350
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584407"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643296"
 ---
 # <a name="create-an-always-on-availability-group-using-transact-sql-t-sql"></a>Créer un groupe de disponibilité Always On à l’aide de Transact-SQL (T-SQL)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

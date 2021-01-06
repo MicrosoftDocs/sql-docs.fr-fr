@@ -6,7 +6,7 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - monitoring database mirroring [SQL Server]
@@ -18,16 +18,16 @@ helpviewer_keywords:
 ms.assetid: 8cdd1515-0bd7-4f8c-a7fc-a33b575e20f6
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: a34829894a9d4a402749ffd167b8adbfc7951ba6
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: c323c5915752e68505e7e1e512843ae03c8197e4
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85651026"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643486"
 ---
 # <a name="use-warning-thresholds-and-alerts-on-mirroring-performance-metrics-sql-server"></a>Utiliser des seuils d'avertissement et d'alertes sur des métriques de performances de mise en miroir (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique contient des informations sur les événements [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour lesquels des seuils d'avertissement peuvent être configurés et gérés pour la mise en miroir de bases de données. Vous pouvez utiliser le moniteur de mise en miroir de bases de données ou les procédures stockées **sp_dbmmonitorchangealert**, **sp_dbmmonitorhelpalert**et **sp_dbmmonitordropalert** . Cette rubrique contient également des informations sur la configuration d'alertes sur des événements de mise en miroir de bases de données.  
+  Cette rubrique contient des informations sur les événements [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour lesquels des seuils d'avertissement peuvent être configurés et gérés pour la mise en miroir de bases de données. Vous pouvez utiliser le moniteur de mise en miroir de bases de données ou les procédures stockées **sp_dbmmonitorchangealert**, **sp_dbmmonitorhelpalert** et **sp_dbmmonitordropalert** . Cette rubrique contient également des informations sur la configuration d'alertes sur des événements de mise en miroir de bases de données.  
   
  Une fois l'analyse établie pour une base de données en miroir, un administrateur système peut configurer des seuils d'avertissements sur plusieurs métriques de performances clés. Il est également possible de configurer des alertes sur ces événements de mise en miroir de bases de données et sur d'autres événements.  
   
@@ -38,7 +38,7 @@ ms.locfileid: "85651026"
 |Mesure de performance|Seuil d'avertissement|Libellé Moniteur de mise en miroir de bases de données|  
 |------------------------|-----------------------|--------------------------------------|  
 |Journal non envoyé|Spécifie la quantité de kilo-octets (Ko) de journal non envoyé qui génère un avertissement sur l'instance de serveur principal. Cet avertissement aide à mesurer le risque de perte de données en termes de Ko et concerne tout particulièrement le mode hautes performances. Toutefois, l'avertissement est également approprié en mode haute sécurité lorsque la mise en miroir est interrompue ou suspendue en raison de la déconnexion des partenaires.|**Avertir si le journal non envoyé dépasse le seuil**|  
-|Journal non restauré|Spécifie la quantité de Ko de journal non restauré qui génère un avertissement sur l'instance de serveur miroir. Cet avertissement permet de mesurer le temps de basculement. Le*temps de basculement* est principalement constitué du temps nécessaire à l'ancien serveur miroir pour restaurer par progression tout journal demeuré dans sa file d'attente de restauration par progression et d'un court laps de temps supplémentaire.<br /><br /> Remarque : pour un basculement automatique, le temps nécessaire au système pour remarquer l’erreur ne dépend pas du temps de basculement.<br /><br /> Pour en savoir plus, voir [Estimer l’interruption de service au cours d’un basculement de rôle &#40;mise en miroir de bases de données&#41;](../../database-engine/database-mirroring/estimate-the-interruption-of-service-during-role-switching-database-mirroring.md).|**Avertir si le journal non restauré dépasse le seuil**|  
+|Journal non restauré|Spécifie la quantité de Ko de journal non restauré qui génère un avertissement sur l'instance de serveur miroir. Cet avertissement permet de mesurer le temps de basculement. Le *temps de basculement* est principalement constitué du temps nécessaire à l'ancien serveur miroir pour restaurer par progression tout journal demeuré dans sa file d'attente de restauration par progression et d'un court laps de temps supplémentaire.<br /><br /> Remarque : pour un basculement automatique, le temps nécessaire au système pour remarquer l’erreur ne dépend pas du temps de basculement.<br /><br /> Pour en savoir plus, voir [Estimer l’interruption de service au cours d’un basculement de rôle &#40;mise en miroir de bases de données&#41;](../../database-engine/database-mirroring/estimate-the-interruption-of-service-during-role-switching-database-mirroring.md).|**Avertir si le journal non restauré dépasse le seuil**|  
 |Transaction non envoyée la plus ancienne|Spécifie le nombre de minutes de transactions pouvant s'accumuler dans la file d'attente d'envoi avant qu'un avertissement ne soit généré sur l'instance de serveur principal. Cet avertissement aide à mesurer le risque de perte de données en termes de temps et concerne tout particulièrement le mode hautes performances. Toutefois, l'avertissement est également approprié en mode haute sécurité lorsque la mise en miroir est interrompue ou suspendue en raison de la déconnexion des partenaires.|**Avertir si la durée de vie de la plus ancienne transaction non envoyée dépasse le seuil**|  
 |Charge de validation par le serveur miroir|Spécifie le nombre de millisecondes de délai moyen par transaction qui sont tolérés avant qu'un avertissement soit généré sur le serveur principal. Ce délai correspond au temps de traitement pendant lequel l'instance de serveur principal attend que l'instance de serveur miroir écrive l'enregistrement du journal de transaction dans la file d'attente de restauration par progression. Cette valeur est utile uniquement en mode haute sécurité.|**Avertir si le temps de traitement de validation de miroir dépasse le seuil**|  
   

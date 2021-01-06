@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 04/20/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: reference
 helpviewer_keywords:
 - Availability Groups [SQL Server], about
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: daf87f90-2623-42ca-912c-b8f07d210510
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 91a3308db77a9f8dd8e99b802b53a08298dd01ff
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: a7c1e12e2e0253f0f22df8dd5ea841671adc94ec
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584811"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643779"
 ---
 # <a name="always-on-availability-groups-interoperability-sql-server"></a>Groupes de disponibilité Always On : interopérabilité (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

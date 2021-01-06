@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: log-shipping
 ms.topic: conceptual
 helpviewer_keywords:
 - log shipping [SQL Server], role changes
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 2d7cc40a-47e8-4419-9b2b-7c69f700e806
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 633abe3dc09d61f859bec46b2f4cb7115a88e56e
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 927ea18c7644d18e4dcf2a094e9ba0f962dcbd54
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96130785"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644446"
 ---
 # <a name="change-roles-between-primary-and-secondary-log-shipping-servers-sql-server"></a>Changer des rôles entre les serveurs primaire et secondaire de copie des journaux de transaction (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

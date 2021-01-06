@@ -36,12 +36,12 @@ ms.assetid: d686cdf0-d11d-4dba-9ec8-de1a5f189f25
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>= sql-server-linux-2017  || >= sql-server-2016'
-ms.openlocfilehash: 73ebe8f968cb3cf91c909ca404c5475f983e2ca6
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 705cd4be70b642a6436bdecf58ae8c18adaff281
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97438814"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644005"
 ---
 # <a name="discontinued-database-engine-functionality-in-sql-server"></a>Fonctionnalités du moteur de base de données supprimées dans SQL Server
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]
@@ -69,13 +69,13 @@ Pour connaître les options de configuration actuelles, consultez [ALTER DATABAS
 
 - Le sous-système ActiveX n’est plus disponible. À la place, utilisez la ligne de commande ou des scripts PowerShell.
 
-- Paramètres de démarrage **-h** et **-g**. Pour plus d’informations, consultez [Options de démarrage du service moteur de base de données](/previous-versions/sql/2014/database-engine/configure-windows/database-engine-service-startup-options?view=sql-server-2014).
+- Paramètres de démarrage **-h** et **-g**. Pour plus d’informations, consultez [Options de démarrage du service moteur de base de données](/previous-versions/sql/2014/database-engine/configure-windows/database-engine-service-startup-options?view=sql-server-2014&preserve-view=true).
 
 - Le chiffrement SSL (Secure Sockets Layer) n’est plus disponible. Utilisez TLS (Transport Layer Security) à la place. Pour plus d’informations, consultez [Activer des connexions chiffrées dans le moteur de base de données](../database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine.md).
 
 ## <a name="previous-versions"></a>Versions précédentes
 
-- [Discontinued Database Engine Functionality in SQL Server 2014 (Fonctionnalités du moteur de base de données non disponibles dans SQL Server 2014)](/previous-versions/sql/2014/database-engine/discontinued-database-engine-functionality-in-sql-server-2016?view=sql-server-2014)
+- [Discontinued Database Engine Functionality in SQL Server 2014 (Fonctionnalités du moteur de base de données non disponibles dans SQL Server 2014)](/previous-versions/sql/2014/database-engine/discontinued-database-engine-functionality-in-sql-server-2016?view=sql-server-2014&preserve-view=true)
 
 ### <a name="see-also"></a>Voir aussi
 

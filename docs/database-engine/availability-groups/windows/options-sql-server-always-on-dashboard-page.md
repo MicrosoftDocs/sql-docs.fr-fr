@@ -5,19 +5,19 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Alwayson.Dashboard
 ms.assetid: 4369b588-e982-4b57-80a1-beb2e879ce0b
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 1b34fcb55625bf2283389abe129fe33e0aa5c6ef
-ms.sourcegitcommit: 0e0cd9347c029e0c7c9f3fe6d39985a6d3af967d
+ms.openlocfilehash: b465e35420035a9c6c10bd8db53a680baf57a4da
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96503533"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643567"
 ---
 # <a name="options-sql-server-always-on-dashboard-page"></a>Options (SQL Server Always On, page Tableau de bord)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

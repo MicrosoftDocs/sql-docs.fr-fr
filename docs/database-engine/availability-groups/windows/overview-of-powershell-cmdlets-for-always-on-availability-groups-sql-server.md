@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 08/30/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], PowerShell cmdlets
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: b3fef0d5-b6d7-4386-a0f0-d06c165ad4de
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 42b22919b2aeea33ba1ad0ce3229a7507f0c4ded
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: ae6462d46760f1a5f58f01a2170470e2d4ea7fac
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584131"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643491"
 ---
 # <a name="overview-of-powershell-cmdlets-for-always-on-availability-groups"></a>Vue d’ensemble des applets de commande PowerShell pour les groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

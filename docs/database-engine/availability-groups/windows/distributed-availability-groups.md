@@ -5,19 +5,19 @@ ms.custom: seodec18
 ms.date: 10/15/2019
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], distributed
 ms.assetid: ''
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 7c0ce9d5364865e2bd487cf6866f97e1d1e08a89
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: d0b6a1c97a1a5958811111915117793da8c416a0
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584342"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643619"
 ---
 # <a name="distributed-availability-groups"></a>Groupes de disponibilité distribués
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

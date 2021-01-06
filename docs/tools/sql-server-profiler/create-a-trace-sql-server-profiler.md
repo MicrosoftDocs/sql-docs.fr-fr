@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 08/01/2016
-ms.openlocfilehash: e31f01bb380c84cf3391cc3feebb432b388317ee
-ms.sourcegitcommit: a9f16d7819ed0e2b7ad8f4a7d4d2397437b2bbb2
+ms.openlocfilehash: e8c60ee409fdb391776e0265422c2b975e3c5a4f
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88713727"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643415"
 ---
 # <a name="create-a-trace-sql-server-profiler"></a>Créer une trace (SQL Server Profiler)
 
@@ -27,7 +27,7 @@ Cette rubrique décrit comment utiliser le [!INCLUDE[ssSqlProfiler](../../includ
   
 ### <a name="to-create-a-trace"></a>Pour créer une trace  
   
-1.  Dans le menu **Fichier** , cliquez sur **Nouvelle trace**et connectez-vous à une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
+1.  Dans le menu **Fichier** , cliquez sur **Nouvelle trace** et connectez-vous à une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
      La boîte de dialogue **Propriétés de la trace** s'affiche.  
   
@@ -41,11 +41,11 @@ Cette rubrique décrit comment utiliser le [!INCLUDE[ssSqlProfiler](../../includ
   
     -   Cliquez sur **Enregistrer dans le fichier** pour capturer la trace dans un fichier. Spécifiez une valeur dans **Définir la taille de fichier maximale**. La valeur par défaut est 5 mégaoctets (Mo).  
   
-         Éventuellement, sélectionnez **Activer la substitution de fichier** pour créer automatiquement de nouveaux fichiers quand la taille maximale du fichier est atteinte. Vous pouvez également éventuellement sélectionner **Le serveur traite les données de trace**pour forcer le service exécutant la trace à traiter les données de trace en lieu et place de l’application cliente. Lorsque le serveur traite les données de trace, aucun événement n'est ignoré, même dans des conditions extrêmes, mais les performances du serveur peuvent en être affectées.  
+         Éventuellement, sélectionnez **Activer la substitution de fichier** pour créer automatiquement de nouveaux fichiers quand la taille maximale du fichier est atteinte. Vous pouvez également éventuellement sélectionner **Le serveur traite les données de trace** pour forcer le service exécutant la trace à traiter les données de trace en lieu et place de l’application cliente. Lorsque le serveur traite les données de trace, aucun événement n'est ignoré, même dans des conditions extrêmes, mais les performances du serveur peuvent en être affectées.  
   
     -   Cliquez sur **Enregistrer dans la table** pour capturer la trace dans une table de base de données.  
   
-         Au besoin, cliquez sur **Définir le nombre de lignes maximal**et spécifiez une valeur.  
+         Au besoin, cliquez sur **Définir le nombre de lignes maximal** et spécifiez une valeur.  
   
     > **ATTENTION :** Lorsque vous n'enregistrez pas les résultats de la trace dans un fichier ou dans une table, vous pouvez afficher la trace lorsque le [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] est ouvert. Cependant, vous perdez les résultats de la trace après l'avoir arrêtée et fermé le [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)]. Pour éviter de perdre les résultats de la trace, cliquez sur l’option **Enregistrer** du menu **Fichier** pour les enregistrer avant de fermer [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)].  
   
@@ -59,5 +59,5 @@ Cette rubrique décrit comment utiliser le [!INCLUDE[ssSqlProfiler](../../includ
  [Autorisations nécessaires pour exécuter SQL Server Profiler](../../tools/sql-server-profiler/permissions-required-to-run-sql-server-profiler.md)   
  [Modèles et autorisations du générateur de SQL Server Profiler](../../tools/sql-server-profiler/sql-server-profiler-templates-and-permissions.md)   
  [SQL Server Profiler](../../tools/sql-server-profiler/sql-server-profiler.md)   
- [Corréler une trace aux données du journal de performances Windows &#40;SQL Server Profiler&#41;](./correlate-a-trace-with-windows-performance-log-data.md?view=sql-server-ver15)  
+ [Corréler une trace aux données du journal de performances Windows &#40;SQL Server Profiler&#41;](./correlate-a-trace-with-windows-performance-log-data.md)  
   

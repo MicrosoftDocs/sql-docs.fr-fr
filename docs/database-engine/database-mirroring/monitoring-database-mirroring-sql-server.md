@@ -6,7 +6,7 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - monitoring [SQL Server], database mirroring
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a7b1b9b0-7c19-4acc-9de3-3a7c5e70694d
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: f8479b88d100f9687469ad615d0b92c50aedb6ad
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 9b77b54ba48dc2c3820d055227411f61983b1a7c
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85771829"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644283"
 ---
 # <a name="monitoring-database-mirroring-sql-server"></a>Surveillance de la mise en miroir de bases de données (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -102,7 +102,7 @@ ms.locfileid: "85771829"
   
  La table d'état peut être mise à jour automatiquement ou manuellement par un administrateur système, lequel doit respecter un intervalle de 15 secondes au minimum entre les mises à jour. Cette valeur minimale de 15 secondes permet d'éviter que les instances du serveur ne soient surchargées de demandes d'état.  
   
- La table d'état est mise à jour automatiquement à la fois par le moniteur de mise en miroir de base de données et par le travail de surveillance de la mise en miroir de bases de données, si ce dernier est en cours d'exécution. Par défaut, le**travail du moniteur de mise en miroir de bases de données** met à jour la table une fois par minute (un administrateur système peut spécifier une fréquence de mise à jour comprise entre 1 et 120 minutes). Quant au moniteur de mise en miroir de bases de données, il met à jour la table automatiquement toutes les 30 secondes. Pour ces mises à jour, le **travail du moniteur de mise en miroir de bases de données** et le moniteur de mise en miroir de bases de données appellent **sp_dbmmonitorupdate**.  
+ La table d'état est mise à jour automatiquement à la fois par le moniteur de mise en miroir de base de données et par le travail de surveillance de la mise en miroir de bases de données, si ce dernier est en cours d'exécution. Par défaut, le **travail du moniteur de mise en miroir de bases de données** met à jour la table une fois par minute (un administrateur système peut spécifier une fréquence de mise à jour comprise entre 1 et 120 minutes). Quant au moniteur de mise en miroir de bases de données, il met à jour la table automatiquement toutes les 30 secondes. Pour ces mises à jour, le **travail du moniteur de mise en miroir de bases de données** et le moniteur de mise en miroir de bases de données appellent **sp_dbmmonitorupdate**.  
   
  À sa première exécution, **sp_dbmmonitorupdate** crée la table **d’état de la mise en miroir de bases de données** et le rôle de base de données fixe **dbm_monitor** dans la base de données **msdb** . **sp_dbmmonitorupdate** met généralement à jour l’état de la mise en miroir en insérant une nouvelle ligne dans la table d’état pour chaque base de données mise en miroir sur l’instance du serveur ; pour plus d’informations, consultez la section « Table d’état d’une mise en miroir de base de données », plus loin dans cette rubrique. Cette procédure évalue également les mesures de performances dans les nouvelles lignes, et elle tronque les lignes antérieures à la période de rétention actuelle (la valeur par défaut est de 7 jours). Pour plus d’informations, consultez [sp_dbmmonitorupdate &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dbmmonitorupdate-transact-sql.md).  
   
@@ -110,7 +110,7 @@ ms.locfileid: "85771829"
 >  Sauf si le moniteur de mise en miroir de bases de données est utilisé par un membre du rôle serveur fixe **sysadmin** , la table d’état est automatiquement mise à jour si le **travail du moniteur de mise en miroir de bases de données** existe et que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent est en cours d’exécution.  
   
 #### <a name="database-mirroring-monitor-job"></a>Travail du moniteur de mise en miroir de bases de données  
- Le travail de surveillance de la mise en miroir de bases de données, **Travail du moniteur de mise en miroir de bases de données**, fonctionne indépendamment du moniteur de mise en miroir de bases de données. Le**Travail de surveillance de la mise en miroir de bases de données** est automatiquement créé uniquement si [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] est utilisé pour démarrer une session de mise en miroir. Si les commandes ALTER DATABASE *nom_base_de_données* SET PARTNER sont systématiquement utilisées pour démarrer la mise en miroir, le travail existe uniquement si l’administrateur système exécute la procédure stockée **sp_dbmmonitoraddmonitoring** .  
+ Le travail de surveillance de la mise en miroir de bases de données, **Travail du moniteur de mise en miroir de bases de données**, fonctionne indépendamment du moniteur de mise en miroir de bases de données. Le **Travail de surveillance de la mise en miroir de bases de données** est automatiquement créé uniquement si [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] est utilisé pour démarrer une session de mise en miroir. Si les commandes ALTER DATABASE *nom_base_de_données* SET PARTNER sont systématiquement utilisées pour démarrer la mise en miroir, le travail existe uniquement si l’administrateur système exécute la procédure stockée **sp_dbmmonitoraddmonitoring** .  
   
  Une fois que le **Travail de surveillance de la mise en miroir de bases de données** a été créé, en partant du principe que l'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est en cours d'exécution, le travail est appelé une fois par minute par défaut. Le travail appelle ensuite la procédure stockée système **sp_dbmmonitorupdate** .  
   
@@ -137,7 +137,7 @@ ms.locfileid: "85771829"
  Les membres du rôle de base de données fixe **dbm_monitor** sont tributaires du **travail du moniteur de mise en miroir de bases de données** pour la mise à jour de la table d’état à des fréquences régulières. Si le travail n'existe pas ou si l'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est arrêté, l'état devient de plus en plus obsolète et ne correspondra plus forcément à la configuration de la session de mise en miroir. Par exemple, après un basculement, les partenaires peuvent sembler partager le même rôle (principal ou miroir), ou le serveur principal actuel peut être affiché comme serveur miroir, alors que le serveur miroir actuel est affiché comme principal.  
   
 #### <a name="dropping-the-database-mirroring-monitor-job"></a>Suppression du travail de surveillance de la mise en miroir de bases de données  
- Le **Travail de surveillance de la mise en miroir de bases de données**est conservé tant qu'il n'a pas été supprimé. Le travail de surveillance doit être géré par l'administrateur système. Pour supprimer le **travail du moniteur de mise en miroir de bases de données**, utilisez **sp_dbmmonitordropmonitoring**. Pour plus d’informations, consultez [sp_dbmmonitordropmonitoring &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dbmmonitordropmonitoring-transact-sql.md).  
+ Le **Travail de surveillance de la mise en miroir de bases de données** est conservé tant qu'il n'a pas été supprimé. Le travail de surveillance doit être géré par l'administrateur système. Pour supprimer le **travail du moniteur de mise en miroir de bases de données**, utilisez **sp_dbmmonitordropmonitoring**. Pour plus d’informations, consultez [sp_dbmmonitordropmonitoring &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dbmmonitordropmonitoring-transact-sql.md).  
   
 ###  <a name="status-displayed-by-the-database-mirroring-monitor"></a><a name="perf_metrics_of_dbm_monitor"></a> Mesures de performances affichées par le moniteur de mise en miroir de bases de données  
  La page **État** du moniteur de mise en miroir de bases de données décrit les partenaires ainsi que l'état de la session de mise en miroir. L'état inclut les mesures de performance telles que l'état du journal des transactions et d'autres informations destinées à estimer le temps nécessaire à l'exécution d'un basculement automatique et le risque de perte de données, si la session n'est pas synchronisée. De plus, la page **État** affiche l'état ainsi que des informations concernant la session de mise en miroir en général.  
@@ -295,11 +295,11 @@ ms.locfileid: "85771829"
   
  Les éléments suivants sont disponibles pour la mise en miroir de bases de données :  
   
--   Classe d'événements**Database Mirroring State Change**  
+-   Classe d'événements **Database Mirroring State Change**  
   
      Indique le changement de l'état de mise en miroir d'une base de données mise en miroir. Pour plus d'informations, voir [Database Mirroring State Change Event Class](../../relational-databases/event-classes/database-mirroring-state-change-event-class.md).  
   
--   Classe d'événements**Audit Database Mirroring Login**  
+-   Classe d'événements **Audit Database Mirroring Login**  
   
      Retourne les messages d'audit relatifs à la sécurité du transport de la mise en miroir de bases de données. Pour plus d’informations, consultez [Audit Database Mirroring Login Event Class](../../relational-databases/event-classes/audit-database-mirroring-login-event-class.md).  
   

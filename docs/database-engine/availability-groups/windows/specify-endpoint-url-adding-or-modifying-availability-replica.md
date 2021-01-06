@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - endpoints [SQL Server], AlwaysOn Availability Groups
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d7520c13-a8ee-4ddc-9e9a-54cd3d27ef1c
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: fc49e558305a7cd4f86f517a05653093b798846c
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 56da078fe1133461cee4ff7069f07034d3543c79
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583821"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643989"
 ---
 # <a name="specify-endpoint-url---adding-or-modifying-availability-replica"></a>Spécifier l’URL de point de terminaison - Ajout ou modification d’un réplica de disponibilité
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

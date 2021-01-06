@@ -12,12 +12,12 @@ ms.author: pelopes
 ms.reviewer: mikeray
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
 ms.custom: seo-lt-2019
-ms.openlocfilehash: f85253912eac3091423972770ac808492c1b65e2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4a2624566444f5cc3b9531d5b6767937dabb2da6
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97479470"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643988"
 ---
 # <a name="revert-word-breakers-used-by-search-to-previous-version-sql-server-search"></a>Rétablir la version précédente des analyseurs lexicaux utilisés par la recherche (Recherche SQL Server)
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -381,4 +381,4 @@ ms.locfileid: "97479470"
   
 ## <a name="see-also"></a>Voir aussi  
  [Modifier l’analyseur lexical utilisé pour l’anglais des États-Unis et l’anglais du Royaume-Uni](../../relational-databases/search/change-the-word-breaker-used-for-us-english-and-uk-english.md)   
- [Changements de comportement de la recherche en texte intégral](./full-text-search.md?view=sql-server-ver15)
+ [Changements de comportement de la recherche en texte intégral](./full-text-search.md)

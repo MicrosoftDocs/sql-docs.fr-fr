@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: f899ad41e609874cbcc22c2a3ac959c41574e0eb
-ms.sourcegitcommit: c127c0752e84cccd38a7e23ac74c0362a40f952e
+ms.openlocfilehash: 07f23aa6545636fd8cbbf1717f6c8ee81ebe9294
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761527"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771471"
 ---
 # <a name="commands-and-parameters"></a>Commandes et paramètres
 
@@ -46,5 +46,6 @@ Décrit comment utiliser le Fournisseur de données Microsoft SqlClient pour SQL
 
 ## <a name="see-also"></a>Voir aussi
 
+- [DataAdapters et DataReaders](dataadapters-datareaders.md)
 - [Connexion à une source de données](connecting-to-data-source.md)
 - [Microsoft ADO.NET pour SQL Server](microsoft-ado-net-sql-server.md)

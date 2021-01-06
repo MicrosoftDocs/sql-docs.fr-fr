@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: log-shipping
 ms.topic: conceptual
 helpviewer_keywords:
 - replication [SQL Server], log shipping and
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 132bebfd-0206-4d23-829a-b38e5ed17bc9
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 5b3518b9ffb201985c4ebef7de13c24c4345394f
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: cb1a0e9950e272a7c05024f0b12c48d5d6ae0838
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96125661"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643896"
 ---
 # <a name="log-shipping-and-replication-sql-server"></a>Copie des journaux de transaction et réplication (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

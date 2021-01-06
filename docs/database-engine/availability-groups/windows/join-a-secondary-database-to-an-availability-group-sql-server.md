@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 f1_keywords:
 - sql13.swb.availabilitygroup.joindbs.f1
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: fd7efe79-c1f9-497d-bfe7-b2a2b2321cf5
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 8f08d2a9f7b599b114a3c47305c5abfa3505c0a3
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 0ac5ab1195dcc34ebb7dcf3b30ef41a190f9a3eb
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584234"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644256"
 ---
 # <a name="join-a-secondary-database-to-an-always-on-availability-group"></a>Joindre une base de données secondaire à un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

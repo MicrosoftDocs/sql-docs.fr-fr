@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: log-shipping
 ms.topic: conceptual
 helpviewer_keywords:
 - log shipping [SQL Server], enabling
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: c42aa04a-4945-4417-b4c7-50589d727e9c
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 711f16dc52a25f03fabcd59dd63e13e5d075ba05
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 3a02f42c2fdec705894c0c583c634b756602e1b1
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96125715"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643912"
 ---
 # <a name="configure-log-shipping-sql-server"></a>Configurer la copie des journaux de transaction (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

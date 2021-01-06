@@ -5,19 +5,19 @@ ms.custom: seo-lt-2019
 ms.date: 02/01/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: log-shipping
 ms.topic: conceptual
 helpviewer_keywords:
 - log shipping [SQL Server], upgrading
 ms.assetid: b1289cc3-f5be-40bb-8801-0e3eed40336e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: cf4814ae0bcb40ddbcdb8e9d2c9e1f5c87e5cf14
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 0b3e98cc2f5ce76093f3710f6f49e1b186219c04
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96125646"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643842"
 ---
 # <a name="upgrading-log-shipping-to-sql-server-2016-transact-sql"></a>Mise à niveau de la copie des journaux de transaction vers SQL Server 2016 (Transact-SQL)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

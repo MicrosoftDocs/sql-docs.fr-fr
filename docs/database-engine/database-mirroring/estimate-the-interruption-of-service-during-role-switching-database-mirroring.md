@@ -6,7 +6,7 @@ ms.date: 03/01/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - parallel redo [SQL Server]
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 586a6f25-672b-491b-bc2f-deab2ccda6e2
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 9d83569a79980097a18ebff39b3628401a4387c3
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 4b8f2e5435f6f168a113cf78b1539e97c4935972
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85754676"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643927"
 ---
 # <a name="estimate-the-interruption-of-service-during-role-switching-database-mirroring"></a>Estimer l'interruption de service au cours d'un basculement de rôle (mise en miroir de bases de données)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

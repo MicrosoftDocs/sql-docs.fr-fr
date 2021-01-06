@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: log-shipping
 ms.topic: conceptual
 helpviewer_keywords:
 - secondary servers [SQL Server]
@@ -26,12 +26,12 @@ ms.assetid: 55da6b94-3a4b-4bae-850f-4bf7f6e918ca
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: c204e7557061bc9984b4db818e3203cd929b1453
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6ca3b4d6ce2a994f277161d481906dc4835ee48e
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460602"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643459"
 ---
 # <a name="about-log-shipping-sql-server"></a>À propos de la copie des journaux de transaction (SQL Server)
 

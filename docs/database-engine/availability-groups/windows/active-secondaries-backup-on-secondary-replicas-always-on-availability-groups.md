@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 09/01/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - backup priority
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 82afe51b-71d1-4d5b-b20a-b57afc002405
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 69311c69270a45880d6802c8b3b3a9f350eab37a
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 79972c5670370c28404b5cc93d7c3b833551f988
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584898"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644307"
 ---
 # <a name="offload-supported-backups-to-secondary-replicas-of-an-availability-group"></a>Décharger les sauvegardes prises en charge vers des réplicas secondaires d’un groupe de disponibilité
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

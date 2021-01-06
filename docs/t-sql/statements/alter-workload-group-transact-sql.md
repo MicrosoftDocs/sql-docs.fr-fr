@@ -19,12 +19,12 @@ ms.assetid: 957addce-feb0-4e54-893e-5faca3cd184c
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016||>=sql-server-linux-2017||=azure-sqldw-latest||=azuresqldb-mi-current'
-ms.openlocfilehash: d4e641516f39c738b9cab10bffc51e577598539b
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: 9640ce7612dc01700205b361b1c351d1e79c05c0
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489459"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644405"
 ---
 # <a name="alter-workload-group-transact-sql"></a>ALTER WORKLOAD GROUP (Transact-SQL)
 
@@ -37,10 +37,10 @@ ms.locfileid: "97489459"
         **_\* SQL Server \*_** &nbsp;
     :::column-end:::
     :::column:::
-        [SQL Managed Instance](alter-workload-group-transact-sql.md?view=azuresqldb-mi-current)
+        [SQL Managed Instance](alter-workload-group-transact-sql.md?view=azuresqldb-mi-current&preserve-view=true)
     :::column-end:::
     :::column:::
-        [Azure Synapse<br />Analytics](alter-workload-group-transact-sql.md?view=azure-sqldw-latest)
+        [Azure Synapse<br />Analytics](alter-workload-group-transact-sql.md?view=azure-sqldw-latest&preserve-view=true)
     :::column-end:::
 :::row-end:::
 
@@ -61,7 +61,7 @@ ms.locfileid: "97489459"
         **_\* SQL Managed Instance \*_** &nbsp;
     :::column-end:::
     :::column:::
-        [Azure Synapse<br />Analytics](alter-workload-group-transact-sql.md?view=azure-sqldw-latest)
+        [Azure Synapse<br />Analytics](alter-workload-group-transact-sql.md?view=azure-sqldw-latest&preserve-view=true)
     :::column-end:::
 :::row-end:::
 
@@ -79,7 +79,7 @@ ms.locfileid: "97489459"
         [SQL Server](alter-workload-group-transact-sql.md?view=sql-server-ver15&preserve-view=true)
     :::column-end:::
     :::column:::
-        [SQL Managed Instance](alter-workload-group-transact-sql.md?view=azuresqldb-mi-current)
+        [SQL Managed Instance](alter-workload-group-transact-sql.md?view=azuresqldb-mi-current&preserve-view=true)
     :::column-end:::
     :::column:::
         **_\* Azure Synapse<br />Analytics \*_** &nbsp;

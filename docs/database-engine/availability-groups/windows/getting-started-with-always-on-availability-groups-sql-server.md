@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: reference
 helpviewer_keywords:
 - Availability Groups [SQL Server], deploying
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 33f2f2d0-79e0-4107-9902-d67019b826aa
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 64dbc41027229f1904cf653a46c9015ca54d2c8c
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 9420d44b3291ae5dbc822f47f7aac56c3dc188de
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584276"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644105"
 ---
 # <a name="getting-started-with-always-on-availability-groups"></a>Bien démarrer avec les groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

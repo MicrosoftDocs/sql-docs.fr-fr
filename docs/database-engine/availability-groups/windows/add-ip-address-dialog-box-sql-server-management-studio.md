@@ -5,19 +5,19 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: end-user-help
 f1_keywords:
 - sql13.swb.availabilitygrouplistener.addipaddress.f1
 ms.assetid: 98c9ad3b-ff3c-4c1d-b344-59a72fca137c
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 37e219416f780f8b707fc90bcd8eb443d91a8745
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 6b6f405786daf40e1241af48ee3e442cea998a6f
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584828"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643778"
 ---
 # <a name="add-ip-address-dialog-box-sql-server-management-studio"></a>Boîte de dialogue Ajouter une adresse IP (SQL Server Management Studio)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: 0b12445989fd044a39ab88b2d840368aec206025
-ms.sourcegitcommit: debaff72dbfae91b303f0acd42dd6d99e03135a2
+ms.openlocfilehash: 3cf6d932a3f458e971d827c1ca4c493c298c2241
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419700"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771362"
 ---
 # <a name="sql-server-data-type-mappings"></a>Mappages de types de données SQL Server
 
@@ -74,4 +74,4 @@ Pour plus d’informations sur les types de données SQL Server, consultez [Type
 - [Types de données SQL Server et ADO.NET](./sql/sql-server-data-types.md)
 - [Données binaires et à valeurs élevées SQL Server](./sql/sql-server-binary-large-value-data.md)
 - [Configuration des paramètres](configure-parameters.md)
-- [Mappages de types de données dans ADO.NET](data-type-mappings-ado-net.md)
+- [Mappages des types de données dans ADO.NET](data-type-mappings-ado-net.md)

@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 f1_keywords:
 - sql13.swb.availabilitygroup.newaglistener.general.f1
@@ -16,12 +16,12 @@ ms.assetid: 2bc294f6-2312-4b6b-9478-2fb8a656e645
 author: cawrites
 ms.author: chadam
 manager: erikre
-ms.openlocfilehash: 855ed087fb8276e83db72c7ca6a12a22f0225eef
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: e8c0a889b764f81aaf8ac34cf566b52bf1e86c83
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584374"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643271"
 ---
 # <a name="configure-a-listener-for-an-always-on-availability-group"></a>Configurer un écouteur Always On pour un groupe de disponibilité
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

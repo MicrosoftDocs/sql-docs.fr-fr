@@ -6,7 +6,7 @@ ms.date: 05/16/2016
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - partners [SQL Server]
@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: a7f95ddc-5154-4ed5-8117-c9fcf2221f13
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: c1b95d55a979738f787e4814a9f40f929c521868
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 906dc46e076ce49242ecb0aa416d13cbb770147e
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85754736"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644429"
 ---
 # <a name="database-mirroring-sql-server"></a>Mise en miroir de bases de données (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "85754736"
 > [!NOTE]  
 >  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Utilisez [!INCLUDE[ssHADR](../../includes/sshadr-md.md)] à la place.  
   
- La*mise en miroir de bases de données* est une solution permettant d'accroître la disponibilité d'une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . La mise en miroir est implémentée individuellement pour chaque base de données et fonctionne uniquement avec les bases de données qui utilisent le mode de restauration complète.  
+ La *mise en miroir de bases de données* est une solution permettant d'accroître la disponibilité d'une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . La mise en miroir est implémentée individuellement pour chaque base de données et fonctionne uniquement avec les bases de données qui utilisent le mode de restauration complète.  
   
 > [!IMPORTANT]  
 >  Pour plus d’informations sur la prise en charge de la mise en miroir de bases de données, les restrictions, les conditions préalables, les recommandations relatives à la configuration des serveurs partenaires et les recommandations relatives au déploiement de la mise en miroir de bases de données, consultez [Conditions préalables, limitations et recommandations relatives à la mise en miroir de bases de données](../../database-engine/database-mirroring/prerequisites-restrictions-and-recommendations-for-database-mirroring.md).  
@@ -212,7 +212,7 @@ ms.locfileid: "85754736"
 |`SSInstance_2`|Partenaire|Témoin|Partenaire|Partenaire|  
 |`SSInstance_3`|Partenaire|Partenaire|Témoin|Témoin|  
   
- L'illustration suivante présente deux instances de serveurs qui participent en tant que partenaires à deux sessions de mise en miroir. Une session concerne une base de données appelée **Db_1**et l’autre session concerne une base de données appelée **Db_2**.  
+ L'illustration suivante présente deux instances de serveurs qui participent en tant que partenaires à deux sessions de mise en miroir. Une session concerne une base de données appelée **Db_1** et l’autre session concerne une base de données appelée **Db_2**.  
   
  ![Deux instances de serveur dans deux sessions simultanées](../../database-engine/database-mirroring/media/dbm-concurrent-sessions.gif "Deux instances de serveur dans deux sessions simultanées")  
   

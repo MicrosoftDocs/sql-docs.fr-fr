@@ -4,7 +4,7 @@ description: Étapes à suivre pour activer le basculement de base de données a
 ms.custom: seodec18
 ms.date: 06/03/2020
 ms.prod: sql
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], enhanced database failover
@@ -13,12 +13,12 @@ ms.assetid: ''
 author: cawrites
 ms.reviewer: mikeray
 ms.author: chadam
-ms.openlocfilehash: 8a0e98398868676c6b7e5c3cdcaae1172a7a785a
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: d26d584c4a644d9ff712f7bf1ac5a82e87302f83
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584275"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643553"
 ---
 # <a name="enable-enhanced-database-failover-to-a-database-in-an-always-on-availability-group"></a>Activer le basculement de base de données amélioré vers une base de données membre d’un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

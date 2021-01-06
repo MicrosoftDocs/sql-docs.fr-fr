@@ -12,12 +12,12 @@ ms.assetid: df347f9b-b950-4e3a-85f4-b9f21735eae3
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: d581d8dcf038b56a6b3df5b5ecc67a9a32b4255f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0d28550dba1a4703bab01324910436b7256597bb
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97485231"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643841"
 ---
 # <a name="sample-database-for-in-memory-oltp"></a>Exemple de base de données pour OLTP en mémoire
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "97485231"
  Cet exemple présente la fonctionnalité OLTP en mémoire. Il présente les tables à mémoire optimisée et les procédures stockées compilées nativement. De plus, il permet d’illustrer les avantages relatifs aux performances d’OLTP en mémoire.  
   
 > [!NOTE]  
->  Pour afficher cette rubrique pour [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], consultez [Extensions à AdventureWorks pour présenter l’OLTP en mémoire](./overview-and-usage-scenarios.md?view=sql-server-ver15#in-memory-oltp-overview).  
+>  Pour afficher cette rubrique pour [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], consultez [Extensions à AdventureWorks pour présenter l’OLTP en mémoire](./overview-and-usage-scenarios.md#in-memory-oltp-overview).  
   
  L’exemple permet de migrer cinq tables de la base de données AdventureWorks vers des tables à mémoire optimisée. De plus, il comporte une charge de travail de démonstration pour le traitement des commandes client. Utilisez cette charge de travail de démonstration pour voir le gain de performances obtenu en utilisant l’OLTP en mémoire sur votre serveur.  
   

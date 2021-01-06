@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 05/01/2020
-ms.openlocfilehash: 485bb37dee0c118cf313bd7b3740b56c41e20c90
-ms.sourcegitcommit: a9f16d7819ed0e2b7ad8f4a7d4d2397437b2bbb2
+ms.openlocfilehash: 3169f8fbbc86fc95a62631c0cc93d77b6a46b0a4
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88713777"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643397"
 ---
 # <a name="sql-server-profiler"></a>SQL Server Profiler
 
@@ -118,7 +118,7 @@ Un modèle définit la configuration par défaut d'une trace. Il comprend notamm
 
 ### <a name="trace"></a>Trace
 
-Une trace capture des données en fonction de classes d'événements, de colonnes de données et de filtres spécifiques. Par exemple, vous pouvez créer un modèle pour tracer les erreurs d’exception. Pour ce faire, vous sélectionnez la classe d'événements **Exception** et les colonnes de données **Error**, **State**et **Severity** . Les données de ces trois colonnes doivent être récupérées afin que les résultats de trace fournissent des données significatives. Vous pouvez ensuite exécuter une trace configurée de la sorte, et collecter les données de tout événement **Exception** se produisant dans le serveur. Les données de trace peuvent être enregistrées ou utilisées immédiatement pour une analyse. Les traces peuvent être relues ultérieurement, bien que certains événements, tels que **Exception** , ne soient jamais relus. Vous pouvez également enregistrer la trace en tant que modèle en vue de créer plus tard des traces similaires.  
+Une trace capture des données en fonction de classes d'événements, de colonnes de données et de filtres spécifiques. Par exemple, vous pouvez créer un modèle pour tracer les erreurs d’exception. Pour ce faire, vous sélectionnez la classe d'événements **Exception** et les colonnes de données **Error**, **State** et **Severity** . Les données de ces trois colonnes doivent être récupérées afin que les résultats de trace fournissent des données significatives. Vous pouvez ensuite exécuter une trace configurée de la sorte, et collecter les données de tout événement **Exception** se produisant dans le serveur. Les données de trace peuvent être enregistrées ou utilisées immédiatement pour une analyse. Les traces peuvent être relues ultérieurement, bien que certains événements, tels que **Exception** , ne soient jamais relus. Vous pouvez également enregistrer la trace en tant que modèle en vue de créer plus tard des traces similaires.  
 
 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] vous permet de tracer une instance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] de deux façons : à l'aide de [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)], ou de procédures stockées système.  
 
@@ -164,7 +164,7 @@ Si aucun filtre n’est défini, tous les événements des classes d’événeme
 |Décrit comment relire jusqu'à un curseur.|[Relire jusqu’à un curseur &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/replay-to-a-cursor-sql-server-profiler.md)|  
 |Décrit comment relire un script [!INCLUDE[tsql](../../includes/tsql-md.md)].|[Relire un script Transact-SQL &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/replay-a-transact-sql-script-sql-server-profiler.md)|  
 |Décrit comment créer un modèle de trace.|[Créer un modèle de trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/create-a-trace-template-sql-server-profiler.md)|  
-|Explique comment modifier un modèle de trace.|[Modifier un modèle de trace &#40;SQL Server Profiler&#41;](./modify-trace-templates.md?view=sql-server-ver15)|  
+|Explique comment modifier un modèle de trace.|[Modifier un modèle de trace &#40;SQL Server Profiler&#41;](./modify-trace-templates.md)|  
 |Explique comment définir les options globales de trace.|[Définir les options globales de trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/set-global-trace-options-sql-server-profiler.md)|  
 |Explique comment rechercher une valeur ou une colonne de données au cours de l'exécution d'une trace.|[Retrouver une valeur ou une colonne de données au cours de l’exécution d’une trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/find-a-value-or-data-column-while-tracing-sql-server-profiler.md)|  
 |Explique comment dériver un modèle d'une trace en cours d'exécution.|[Dériver un modèle à partir d’une trace en cours d’exécution &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/derive-a-template-from-a-running-trace-sql-server-profiler.md)|  
@@ -173,7 +173,7 @@ Si aucun filtre n’est défini, tous les événements des classes d’événeme
 |Décrit comment exporter un modèle de trace.|[Exporter un modèle de trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/export-a-trace-template-sql-server-profiler.md)|  
 |Décrit comment importer un modèle de trace.|[Importer un modèle de trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/import-a-trace-template-sql-server-profiler.md)|  
 |Décrit comment extraire un script d'une trace.|[Extraire un script d’une trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/extract-a-script-from-a-trace-sql-server-profiler.md)|  
-|Explique comment corréler une trace avec les données du journal de performances Windows.|[Corréler une trace aux données du journal de performances Windows &#40;SQL Server Profiler&#41;](./correlate-a-trace-with-windows-performance-log-data.md?view=sql-server-ver15)|  
+|Explique comment corréler une trace avec les données du journal de performances Windows.|[Corréler une trace aux données du journal de performances Windows &#40;SQL Server Profiler&#41;](./correlate-a-trace-with-windows-performance-log-data.md)|  
 |Décrit comment organiser les colonnes affichées dans une trace.|[Organiser les colonnes affichées dans une trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/organize-columns-displayed-in-a-trace-sql-server-profiler.md)|  
 |Décrit comment démarrer [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)].|[Démarrer SQL Server Profiler](../../tools/sql-server-profiler/start-sql-server-profiler.md)|  
 |Explique comment enregistrer les traces et les modèles de trace.|[Enregistrer des traces et de modèles de trace](../../tools/sql-server-profiler/save-traces-and-trace-templates.md)|  

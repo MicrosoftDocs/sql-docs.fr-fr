@@ -5,17 +5,17 @@ ms.custom: seo-lt-2019
 ms.date: 03/26/2018
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 ms.assetid: 67c6a601-677a-402b-b3d1-8c65494e9e96
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 81724be8012eea9aa1c6fcefbb7becc4a96092bf
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: a4b992ab522145959cb4e3fe4e4b978f15b11e9c
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584726"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644154"
 ---
 # <a name="use-automatic-seeding-to-initialize-an-always-on-availability-group"></a>Utiliser l’amorçage automatique pour initialiser un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

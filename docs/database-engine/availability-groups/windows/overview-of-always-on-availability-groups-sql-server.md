@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 04/29/2020
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - secondary databases [SQL Server], in availability group
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 04fd9d95-4624-420f-a3be-1794309b3a47
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 634dcdb3f3682b133e19d25b041819e22300a932
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 8fdc782ce65464c490305291b426fe82a972cd5c
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584141"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643508"
 ---
 # <a name="what-is-an-always-on-availability-group"></a>Qu’est-ce qu’un groupe de disponibilité Always On ?
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

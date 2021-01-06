@@ -11,12 +11,12 @@ ms.tgt_pltfrm: ''
 ms.topic: tutorial
 author: karinazhou
 ms.author: v-jizho2
-ms.openlocfilehash: a7a2170c14502be9ffcae478839657abc39974ae
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 59c377d5055e8eb3858e1005c50d9c4dfb8334ab
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88438671"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771529"
 ---
 # <a name="tutorial-develop-a-net-application-using-always-encrypted-with-secure-enclaves"></a>Tutoriel : Développer une application .NET en utilisant Always Encrypted avec enclaves sécurisées
 

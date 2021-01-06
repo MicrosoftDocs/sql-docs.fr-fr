@@ -5,17 +5,17 @@ ms.custom: seo-lt-2019
 ms.date: 06/13/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 ms.assetid: c1862d8a-5f82-4647-a280-3e588b82a6dc
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: bfdb3ac79186285164650387e5fa295978eb09ab
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: 72a023d4627d348421b392e8f787914edc986505
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91115808"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643709"
 ---
 # <a name="sql-server-resource-dll-health-diagnostic-logs-for-availability-groups"></a>Journaux de diagnostic d’intégrité de la DLL de ressource SQL Server pour les groupes de disponibilité
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

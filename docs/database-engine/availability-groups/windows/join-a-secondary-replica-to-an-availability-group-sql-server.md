@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 f1_keywords:
 - sql13.swb.availabilitygroup.joinreplica.f1
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e5bd2489-097a-490e-8ea1-34fe48378ad1
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: aa4ef43cd9c33fbbea2bc2bd3333ca85927d8ed5
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 9ada906d271130f0160e4bf8ce8f88d88b91b2e0
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584205"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644211"
 ---
 # <a name="join-a-secondary-replica-to-an-always-on-availability-group"></a>Joindre un réplica secondaire à un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -25,18 +25,18 @@ ms.assetid: b81edbf0-856a-498f-ba87-48ff1426d980
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 8822addbf09d03d3b38cf43666dce33f4277e24e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 05ab2a8c6f9b278fb548eb215653e0434232b2ae
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480450"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643755"
 ---
 # <a name="error_procedure-transact-sql"></a>ERROR_PROCEDURE (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]  
 
 Cette fonction retourne le nom de la procédure stockée ou du déclencheur où une erreur se produit, si cette erreur a entraîné l’exécution du bloc CATCH d’une construction TRY...CATCH. 
-- SQL Server 2017 jusqu’à [version actuelle](../../sql-server/what-s-new-in-sql-server-ver15.md?view=sql-server-ver15) retourne schema_name.stored_procedure_name
+- SQL Server 2017 jusqu’à [version actuelle](../../sql-server/what-s-new-in-sql-server-ver15.md) retourne schema_name.stored_procedure_name
 - SQL Server 2016 retourne stored_procedure_name
 
  ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  

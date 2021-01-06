@@ -6,7 +6,7 @@ ms.date: 03/07/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - witness [SQL Server], establishing
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 4b5ecffd-f025-4ab7-b69d-8958c6477127
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 4cf7d77550f96c72867ecc8133df3cb4f64b7300
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 397a7b11c5188a94186f1618ced09cf2043bec5a
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85763930"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643624"
 ---
 # <a name="add-or-replace-a-database-mirroring-witness-sql-server-management-studio"></a>Ajouter ou remplacer un témoin de mise en miroir de base de données (SQL Server Management Studio)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "85763930"
   
     -   Si toutes les instances du serveur utilisent le même compte de service, laissez les champs vides.  
   
-    -   Si l’instance du serveur témoin utilise un compte de service différent de celui des partenaires, entrez le nom du compte dans les champs **Principal**, **Miroir**et **Témoin** :  
+    -   Si l’instance du serveur témoin utilise un compte de service différent de celui des partenaires, entrez le nom du compte dans les champs **Principal**, **Miroir** et **Témoin** :  
   
          *NOM_DOMAINE* **\\** *nom_utilisateur*  
   

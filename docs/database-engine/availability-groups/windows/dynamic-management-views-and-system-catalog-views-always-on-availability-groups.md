@@ -5,17 +5,17 @@ ms.custom: seo-lt-2019
 ms.date: 06/13/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: troubleshooting
 ms.assetid: 4320a4a4-6183-462b-8bda-e7424e7cb706
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: fb5244cb547ee450a5e5a5e06e3c3f4f0f30d204
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: a2a69aa016ae258375c6095bbf38e58ddd75b981
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91116207"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643585"
 ---
 # <a name="dynamic-management-views-and-system-catalog-views-always-on-availability-groups"></a>Vues de gestion dynamique et affichages catalogue système (groupes de disponibilité Always On)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

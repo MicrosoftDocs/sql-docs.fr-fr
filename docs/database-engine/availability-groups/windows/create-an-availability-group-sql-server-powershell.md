@@ -5,19 +5,19 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 helpviewer_keywords:
 - Availability Groups [SQL Server], creating
 ms.assetid: bc69a7df-20fa-41e1-9301-11317c5270d2
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a408ff7289b117a1cdab5abb36be164535feb15c
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 12d976aa136435a494594e7dde1aeb97b5d3a565
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584409"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643355"
 ---
 # <a name="create-an-always-on-availability-group-using-powershell"></a>Créer un groupe de disponibilité Always On à l’aide de PowerShell
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

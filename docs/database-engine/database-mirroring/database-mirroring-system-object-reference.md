@@ -6,16 +6,16 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: c37c75f9824f85705f92d1fabb6519303a76fafb
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 3e5bc078ee4ee8817f8884d5c8e6f638ce432e3e
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85754717"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643708"
 ---
 # <a name="database-mirroring-system-object-reference"></a>Objet système de mise en miroir de bases de données
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

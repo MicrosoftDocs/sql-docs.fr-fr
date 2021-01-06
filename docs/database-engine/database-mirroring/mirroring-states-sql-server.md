@@ -6,7 +6,7 @@ ms.date: 03/01/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - states [SQL Server], database mirroring
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 90062917-74f9-471b-b49e-bc153ae1a468
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 9ddea06e3cfb348ef6355f95137ce93ea459dced
-ms.sourcegitcommit: f7c9e562d6048f89d203d71685ba86f127d8d241
+ms.openlocfilehash: 7b371edc49168a847c9b9b02c92f1fc1a61425c6
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042790"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643660"
 ---
 # <a name="mirroring-states-sql-server"></a>États de la mise en miroir (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

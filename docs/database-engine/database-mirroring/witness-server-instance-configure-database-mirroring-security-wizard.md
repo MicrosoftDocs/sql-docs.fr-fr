@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.configdbmsecurwiz.witnsrvr.f1
 ms.assetid: b5763663-984a-473b-93a3-6cd3322ad41c
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 1209600e4803d0d5bed5e506f4af64b782648787
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 2b75b77304b4a8f5cc450e82466882d07a1c82d8
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85650913"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643527"
 ---
 # <a name="witness-server-instance-configure-database-mirroring-security-wizard"></a>Instance de serveur témoin (Assistant Configuration de la sécurité de la mise en miroir de bases de données)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

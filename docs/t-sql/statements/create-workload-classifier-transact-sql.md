@@ -21,12 +21,12 @@ ms.assetid: ''
 author: ronortloff
 ms.author: rortloff
 monikerRange: =azure-sqldw-latest
-ms.openlocfilehash: 7c2b5d7bb93383e53a7d90f703172220a5427f3a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6a81c3164e183bb8a202e4ac537298c093e6d873
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464050"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644011"
 ---
 # <a name="create-workload-classifier-transact-sql"></a>CREATE WORKLOAD CLASSIFIER (Transact-SQL)
 
@@ -86,7 +86,7 @@ SELECT COUNT(*)
 ```
 
 *WLM_CONTEXT*  
-Spécifie la valeur du contexte de session utilisée pour classifier une requête.  Le contexte est un paramètre facultatif de type nvarchar(255).  Utilisez [sys.sp_set_session_context](../../relational-databases/system-stored-procedures/sp-set-session-context-transact-sql.md?view=azure-sqldw-latest) avec le nom de variable `wlm_context` avant d’envoyer une requête pour définir le contexte de session.
+Spécifie la valeur du contexte de session utilisée pour classifier une requête.  Le contexte est un paramètre facultatif de type nvarchar(255).  Utilisez [sys.sp_set_session_context](../../relational-databases/system-stored-procedures/sp-set-session-context-transact-sql.md?view=azure-sqldw-latest&preserve-view=true) avec le nom de variable `wlm_context` avant d’envoyer une requête pour définir le contexte de session.
 
 Exemple :
 

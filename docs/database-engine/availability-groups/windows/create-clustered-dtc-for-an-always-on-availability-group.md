@@ -5,18 +5,18 @@ ms.custom: seodec18
 ms.date: 08/30/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 ms.assetid: 0e332aa4-2c48-4bc4-a404-b65735a02cea
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 154eb707c0d59e6c72f1452a3f8a5f0544d21e2c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c976a81277f18f89486343af32c96509f8383fda
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460752"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643268"
 ---
 # <a name="create-clustered-dtc-resource-for-an-always-on-availability-group"></a>Créer une ressource DTC en cluster pour un groupe de disponibilité Always On
 

@@ -5,17 +5,17 @@ ms.custom: ag-guide, seodec18
 ms.date: 06/13/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 ms.assetid: dfd2b639-8fd4-4cb9-b134-768a3898f9e6
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 15ae1302fcff002816e8e8e7a5e37b6fbe8bd503
-ms.sourcegitcommit: 442fbe1655d629ecef273b02fae1beb2455a762e
+ms.openlocfilehash: fa6d63d665a2a81d0a112a1685b3ead1969479d1
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93235449"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643732"
 ---
 # <a name="monitor-performance-for-always-on-availability-groups"></a>Superviser les performances des groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -87,7 +87,7 @@ ms.locfileid: "93235449"
 Dans les groupes de disponibilité AlwaysOn, le RTO et le RPO sont calculés et affichés pour les bases de données hébergées sur les réplicas secondaires. Dans le tableau de bord du réplica principal, le RTO et le RPO sont regroupés par le réplica secondaire. 
 
 Pour voir le RTO et le RPO dans le tableau de bord, procédez comme suit :
-1. Dans SQL Server Management Studio, développez le nœud **Haute disponibilité Always On** , cliquez avec le bouton droit sur le nom de votre groupe de disponibilité et sélectionnez **Afficher le tableau de bord**. 
+1. Dans SQL Server Management Studio, développez le nœud **Haute disponibilité Always On**, cliquez avec le bouton droit sur le nom de votre groupe de disponibilité et sélectionnez **Afficher le tableau de bord**. 
 1. Sélectionnez **Ajouter/Supprimer des colonnes** sous l’onglet **Regrouper par**. Cochez à la fois **Temps de récupération estimé (en secondes)** [RTO] et **Perte de données estimée (temps)** [RPO]. 
 
    ![Capture d’écran montrant le tableau de bord du RPO et du RTO.](media/rto-rpo-dashboard.png)
@@ -96,7 +96,7 @@ Pour voir le RTO et le RPO dans le tableau de bord, procédez comme suit :
 Le calcul du temps de récupération détermine la durée nécessaire pour récupérer la *base de données secondaire* après un basculement.  Ce temps de basculement est généralement court et constant. Le temps de détection dépend des paramètres au niveau du cluster et non des réplicas de disponibilité individuels. 
 
 
-Pour une base de données secondaire (DB_sec), le calcul et l’affichage de son RTO sont basés sur son **redo_queue_size** et son **redo_rate**  :
+Pour une base de données secondaire (DB_sec), le calcul et l’affichage de son RTO sont basés sur son **redo_queue_size** et son **redo_rate** :
 
 ![Calcul du RTO](media/calculate-rto.png)
 
@@ -116,9 +116,9 @@ Pour la base de données primaire, le **last_commit_time** est l’heure à laqu
 
 ### <a name="performance-counters-used-in-rtorpo-formulas"></a>Compteurs de performances utilisés dans les formules RTO/RPO
 
-- **redo_queue_size** (Ko) [ *utilisé dans le RTO* ] : la taille de la file d’attente de restauration par progression est la taille des journaux de transactions entre ses **last_received_lsn** et **last_redone_lsn**. **last_received_lsn** est l’ID de bloc du journal qui identifie le point jusqu’auquel tous les blocs du journal ont été reçus par le réplica secondaire qui héberge cette base de données secondaire. **Last_redone_lsn** est le numéro séquentiel dans le journal du dernier enregistrement du journal qui a été restauré par progression sur la base de données secondaire. En fonction de ces deux valeurs, nous pouvons trouver les ID du bloc de journal de début ( **last_received_lsn** ) et du bloc de journal de fin ( **last_redone_lsn** ). L’espace entre ces deux blocs de journal peut alors représenter combien de blocs de journal de transactions n’ont pas encore été restaurés par progression. C’est mesuré en kilo-octets (Ko).
--  **redo_rate** (Ko/s) [ *utilisé dans le RTO* ] : valeur cumulative qui représente, à un moment du temps écoulé, la part du journal des transactions (Ko) qui a été restaurée par progression dans la base de données secondaire en kilo-octets par seconde (Ko/s). 
-- **last_commit_time** (Datetime) [ *utilisé dans le RPO* ] : pour la base de données primaire, **last_commit_time** est l’heure à laquelle la dernière transaction a été validée. Pour la base de données secondaire, le **last_commit_time** est l’heure de la dernière validation de la transaction sur la base de données primaire qui a également été confirmée sur la base de données secondaire. Étant donné que cette valeur sur la base de données secondaire doit être synchronisée avec la même valeur que celle sur la base de données primaire, tout écart entre ces deux valeurs est l’estimation de la perte de données (RPO).  
+- **redo_queue_size** (Ko) [*utilisé dans le RTO*] : la taille de la file d’attente de restauration par progression est la taille des journaux de transactions entre ses **last_received_lsn** et **last_redone_lsn**. **last_received_lsn** est l’ID de bloc du journal qui identifie le point jusqu’auquel tous les blocs du journal ont été reçus par le réplica secondaire qui héberge cette base de données secondaire. **Last_redone_lsn** est le numéro séquentiel dans le journal du dernier enregistrement du journal qui a été restauré par progression sur la base de données secondaire. En fonction de ces deux valeurs, nous pouvons trouver les ID du bloc de journal de début (**last_received_lsn**) et du bloc de journal de fin (**last_redone_lsn**). L’espace entre ces deux blocs de journal peut alors représenter combien de blocs de journal de transactions n’ont pas encore été restaurés par progression. C’est mesuré en kilo-octets (Ko).
+-  **redo_rate** (Ko/s) [*utilisé dans le RTO*] : valeur cumulative qui représente, à un moment du temps écoulé, la part du journal des transactions (Ko) qui a été restaurée par progression dans la base de données secondaire en kilo-octets par seconde (Ko/s). 
+- **last_commit_time** (Datetime) [*utilisé dans le RPO*] : pour la base de données primaire, **last_commit_time** est l’heure à laquelle la dernière transaction a été validée. Pour la base de données secondaire, le **last_commit_time** est l’heure de la dernière validation de la transaction sur la base de données primaire qui a également été confirmée sur la base de données secondaire. Étant donné que cette valeur sur la base de données secondaire doit être synchronisée avec la même valeur que celle sur la base de données primaire, tout écart entre ces deux valeurs est l’estimation de la perte de données (RPO).  
  
 ## <a name="estimate-rto-and-rpo-using-dmvs"></a>Estimer le RTO et le RPO à l’aide de vues DMV
 
@@ -206,7 +206,7 @@ Il est possible d’interroger les vues DMV [sys.dm_hadr_database_replica_states
   ```sql
    exec proc_calculate_RTO @secondary_database_name = N'DB_sec'
   ```
-3. La sortie affiche la valeur RTO de la base de données du réplica secondaire cible. Enregistrez les *group_id* , *replica_id* et *group_database_id* pour les utiliser avec la procédure stockée d’estimation de RPO. 
+3. La sortie affiche la valeur RTO de la base de données du réplica secondaire cible. Enregistrez les *group_id*, *replica_id* et *group_database_id* pour les utiliser avec la procédure stockée d’estimation de RPO. 
    
    Exemple de sortie :
 <br>Le RTO de la base de données DB_sec' est 0
@@ -299,7 +299,7 @@ Il est possible d’interroger les vues DMV [sys.dm_hadr_database_replica_states
       end
  ```
 
-2. Exécutez **proc_calculate_RPO** avec les *group_id* , *replica_id* et *group_database_id* de la base de données secondaire cible. 
+2. Exécutez **proc_calculate_RPO** avec les *group_id*, *replica_id* et *group_database_id* de la base de données secondaire cible. 
 
  ```sql
    exec proc_calculate_RPO @group_id= 'F176DD65-C3EE-4240-BA23-EA615F965C9B',
@@ -330,9 +330,9 @@ Pour créer les stratégies, suivez les instructions ci-dessous sur toutes les i
 
 1.  [Démarrez le service SQL Server Agent](~/ssms/agent/start-stop-or-pause-the-sql-server-agent-service.md) si cela n’est pas déjà fait.  
   
-2.  Dans SQL Server Management Studio, dans le menu **Outils** , cliquez sur **Options**.  
+2.  Dans SQL Server Management Studio, dans le menu **Outils**, cliquez sur **Options**.  
   
-3.  Sous l’onglet **SQL Server Always On** , sélectionnez **Activer la stratégie Always On définie par l’utilisateur** , puis cliquez sur **OK**.  
+3.  Sous l’onglet **SQL Server Always On**, sélectionnez **Activer la stratégie Always On définie par l’utilisateur**, puis cliquez sur **OK**.  
   
      Ce paramètre vous permet d’afficher les stratégies personnalisées correctement configurées dans le tableau de bord Always On.  
   
@@ -340,7 +340,7 @@ Pour créer les stratégies, suivez les instructions ci-dessous sur toutes les i
   
     -   **Nom** : `RTO`  
   
-    -   **Facette**  : **État du réplica de base de données**  
+    -   **Facette** : **État du réplica de base de données**  
   
     -   **Champ** : `Add(@EstimatedRecoveryTime, 60)`  
   
@@ -354,7 +354,7 @@ Pour créer les stratégies, suivez les instructions ci-dessous sur toutes les i
   
     -   **Nom** : `RPO`  
   
-    -   **Facette**  : **État du réplica de base de données**  
+    -   **Facette** : **État du réplica de base de données**  
   
     -   **Champ** : `@EstimatedDataLoss`  
   
@@ -368,7 +368,7 @@ Pour créer les stratégies, suivez les instructions ci-dessous sur toutes les i
   
     -   **Nom** : `IsPrimaryReplica`  
   
-    -   **Facette**  : **Groupe de disponibilité**  
+    -   **Facette** : **Groupe de disponibilité**  
   
     -   **Champ** : `@LocalReplicaRole`  
   
@@ -386,25 +386,25 @@ Pour créer les stratégies, suivez les instructions ci-dessous sur toutes les i
   
         -   **Vérifier la condition** : `RTO`  
   
-        -   **Par rapport aux cibles**  : **Chaque DatabaseReplicaState** dans **IsPrimaryReplica AvailabilityGroup**  
+        -   **Par rapport aux cibles** : **Chaque DatabaseReplicaState** dans **IsPrimaryReplica AvailabilityGroup**  
   
              Ce paramètre garantit que la stratégie est évaluée uniquement sur les groupes de disponibilité pour lesquels le réplica de disponibilité local est le réplica principal.  
   
-        -   **Mode d’évaluation**  : **Selon planification**  
+        -   **Mode d’évaluation** : **Selon planification**  
   
-        -   **Planification**  : **CollectorSchedule_Every_5min**  
+        -   **Planification** : **CollectorSchedule_Every_5min**  
   
         -   **Activé** : **Sélectionné**  
   
     -   Page **Description** :  
   
-        -   **Catégorie**  : **Avertissements de base de données de disponibilité**  
+        -   **Catégorie** : **Avertissements de base de données de disponibilité**  
   
              Ce paramètre permet d’afficher les résultats de l’évaluation de la stratégie dans le tableau de bord Always On.  
   
-        -   **Description**  : **Le réplica actuel a un RTO supérieur à 10 minutes, avec pour hypothèse une surcharge de 1 minute pour la détection et le basculement. Vous devez examiner immédiatement les problèmes de performances sur l’instance de serveur respective.**  
+        -   **Description** : **Le réplica actuel a un RTO supérieur à 10 minutes, avec pour hypothèse une surcharge de 1 minute pour la détection et le basculement. Vous devez examiner immédiatement les problèmes de performances sur l’instance de serveur respective.**  
   
-        -   **Texte à afficher**  : **RTO dépassé !**  
+        -   **Texte à afficher** : **RTO dépassé !**  
   
 8.  Créez une deuxième [stratégie de gestion basée sur la stratégie](~/relational-databases/policy-based-management/create-a-policy-based-management-policy.md) à l’aide des spécifications suivantes :  
   
@@ -414,21 +414,21 @@ Pour créer les stratégies, suivez les instructions ci-dessous sur toutes les i
   
         -   **Vérifier la condition** : `RPO`  
   
-        -   **Par rapport aux cibles**  : **Chaque DatabaseReplicaState** dans **IsPrimaryReplica AvailabilityGroup**  
+        -   **Par rapport aux cibles** : **Chaque DatabaseReplicaState** dans **IsPrimaryReplica AvailabilityGroup**  
   
-        -   **Mode d’évaluation**  : **Selon planification**  
+        -   **Mode d’évaluation** : **Selon planification**  
   
-        -   **Planification**  : **CollectorSchedule_Every_30min**  
+        -   **Planification** : **CollectorSchedule_Every_30min**  
   
         -   **Activé** : **Sélectionné**  
   
     -   Page **Description** :  
   
-        -   **Catégorie**  : **Avertissements de base de données de disponibilité**  
+        -   **Catégorie** : **Avertissements de base de données de disponibilité**  
   
-        -   **Description**  : **La base de données de disponibilité a dépassé votre RPO de 1 heure. Vous devez immédiatement examiner les problèmes de performances sur les réplicas de disponibilité.**  
+        -   **Description** : **La base de données de disponibilité a dépassé votre RPO de 1 heure. Vous devez immédiatement examiner les problèmes de performances sur les réplicas de disponibilité.**  
   
-        -   **Texte à afficher**  : **RPO dépassé !**  
+        -   **Texte à afficher** : **RPO dépassé !**  
   
  Quand vous avez terminé, deux travaux SQL Server Agent sont créés, un pour chaque planification d’évaluation de stratégie. Le nom de ces travaux doit commencer par **syspolicy_check_schedule**.  
   

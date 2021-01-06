@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 03/07/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: log-shipping
 ms.topic: conceptual
 helpviewer_keywords:
 - primary databases [SQL Server]
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: edfe5d59-4287-49c1-96c9-dd56212027bc
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: d4e6ec31a1f1082ae13142fe521858122f079939
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 19302cafdd7619107684d39fb7e84f0e5540a30d
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96130756"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643923"
 ---
 # <a name="fail-over-to-a-log-shipping-secondary-sql-server"></a>Basculer vers une base de données secondaire de copie des journaux de transaction (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

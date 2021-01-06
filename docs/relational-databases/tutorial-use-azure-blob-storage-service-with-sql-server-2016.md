@@ -15,12 +15,12 @@ applies_to:
 ms.assetid: e69be67d-da1c-41ae-8c9a-6b12c8c2fb61
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 5b565d7d62b1e189ec9d187c6a585449713f0df0
-ms.sourcegitcommit: 49ee3d388ddb52ed9cf78d42cff7797ad6d668f2
+ms.openlocfilehash: 31407e6d056ce8ec847f52346b8aa3ddf8e621f3
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94384612"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97644185"
 ---
 # <a name="tutorial-use-azure-blob-storage-service-with-sql-server-2016"></a>Didacticiel : Utiliser le service Stockage Blob Azure avec SQL Server 2016
 
@@ -181,7 +181,7 @@ Pour créer des informations d’identification SQL Server, procédez comme suit
 Dans cette partie, vous sauvegardez la base de données AdventureWorks2016 dans votre instance de SQL Server 2016 sur site dans le conteneur Azure que vous avez créé dans la [Partie 1](#1---create-stored-access-policy-and-shared-access-storage).
   
 > [!NOTE]  
-> Si vous souhaitez effectuer une sauvegarde d’une base de données SQL Server 2012 SP1 CU2 ou version ultérieure ou d’une base de données SQL Server 2014 dans ce conteneur Azure, vous pouvez utiliser la syntaxe déconseillée décrite [ici](/previous-versions/sql/2014/relational-databases/backup-restore/sql-server-backup-to-url?view=sql-server-2014) pour sauvegarder dans une URL à l’aide de la syntaxe WITH CREDENTIALS.  
+> Si vous souhaitez effectuer une sauvegarde d’une base de données SQL Server 2012 SP1 CU2 ou version ultérieure ou d’une base de données SQL Server 2014 dans ce conteneur Azure, vous pouvez utiliser la syntaxe déconseillée décrite [ici](/previous-versions/sql/2014/relational-databases/backup-restore/sql-server-backup-to-url?view=sql-server-2014&preserve-view=true) pour sauvegarder dans une URL à l’aide de la syntaxe WITH CREDENTIALS.  
   
 Pour sauvegarder une base de données dans un stockage Blob, procédez comme suit :  
   
