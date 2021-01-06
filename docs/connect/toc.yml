@@ -136,6 +136,25 @@
               href: ../connect/ado-net/common-schema-collections.md
             - name: Collections de schémas SQL Server
               href: ../connect/ado-net/sql-server-schema-collections.md
+        - name: DbProviderFactories
+          href: ../connect/ado-net/dbproviderfactories.md
+          items:
+            - name: Obtenir un SqlClientFactory
+              href: ../connect/ado-net/obtain-sqlclientfactory.md
+        - name: Extraction de l'identité ou de valeurs à numérotation automatique
+          href: ../connect/ado-net/retrieve-identity-or-autonumber-values.md
+        - name: Extraction de données binaires
+          href: ../connect/ado-net/retrieve-binary-data.md
+        - name: Modification de données avec des procédures stockées
+          href: ../connect/ado-net/modify-data-with-stored-procedures.md
+        - name: Suivi de données dans SqlClient
+          href: ../connect/ado-net/data-tracing.md
+        - name: Compteurs de performances dans SqlClient
+          href: ../connect/ado-net/performance-counters.md
+        - name: Programmation asynchrone
+          href: ../connect/ado-net/asynchronous-programming.md
+        - name: Prise en charge de la diffusion en continu SqlClient
+          href: ../connect/ado-net/sqlclient-streaming-support.md
     - name: SQL Server et ADO.NET
       href: ../connect/ado-net/sql/index.md
       items:
