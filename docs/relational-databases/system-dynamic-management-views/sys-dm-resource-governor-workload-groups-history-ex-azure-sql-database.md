@@ -2,7 +2,7 @@
 description: sys.dm_resource_governor_workload_groups_history_ex (Azure SQL Database)
 title: sys.dm_resource_governor_workload_groups_history_ex (Azure SQL Database) | Microsoft Docs
 ms.custom: ''
-ms.date: 05/22/2019
+ms.date: 01/05/2021
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
@@ -19,17 +19,17 @@ helpviewer_keywords:
 - sys.dm_resource_governor_workload_groups_history_ex dynamic management view
 author: joesackmsft
 ms.author: josack
-ms.openlocfilehash: d761d1ca80037e26f8757ec681929dd5356b182f
-ms.sourcegitcommit: 32135463a8494d9ed1600a58f51819359e3c09dc
+ms.openlocfilehash: 69f310b699e59845dbd62a908a6a49bfb6efb42f
+ms.sourcegitcommit: 11ca2305a8d7e420daf772eb97861706c9e08e31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91834404"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97928448"
 ---
 # <a name="sysdm_resource_governor_workload_groups_history_ex-azure-sql-database"></a>sys.dm_resource_governor_workload_groups_history_ex (Azure SQL Database)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]
 
-Retourne un instantané à un intervalle de 20 secondes pour les 32 dernières minutes (128 secondes au total) des statistiques des pools de ressources pour un Azure SQL Database.
+Chaque ligne représente un instantané périodique des statistiques des groupes de charges de travail dans Azure SQL Database. Une capture instantanée est effectuée au démarrage du moteur de base de données, puis toutes les quelques secondes. L’intervalle entre l’instantané actuel et l’instantané précédent peut varier et est fourni dans la `duration_ms` colonne. Les derniers instantanés disponibles sont retournés, jusqu’à 128 instantanés pour chaque groupe de charges de travail.
   
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  

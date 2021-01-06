@@ -2,7 +2,7 @@
 description: sys.dm_resource_governor_resource_pools_history_ex (Transact-SQL)
 title: sys.dm_resource_governor_resource_pools_history_ex (Transact-SQL) | Microsoft Docs
 ms.custom: ''
-ms.date: 03/27/2019
+ms.date: 01/05/2021
 ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
@@ -21,19 +21,19 @@ ms.assetid: ''
 author: joesackmsft
 ms.author: josack
 monikerRange: =azuresqldb-current
-ms.openlocfilehash: 8aafaca36fb5ef1d96ddbd9f369a3ba4f06a596d
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 32082b09a5e583e68f2f06794d80d1d3f21b4e76
+ms.sourcegitcommit: 11ca2305a8d7e420daf772eb97861706c9e08e31
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484581"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97928438"
 ---
 # <a name="sysdm_resource_governor_resource_pools_history_ex-transact-sql"></a>sys.dm_resource_governor_resource_pools_history_ex (Transact-SQL)
 
 [!INCLUDE[appliesto-xx-asdb-xxxx-xxx-md](../../includes/appliesto-xx-asdb-xxxx-xxx-md.md)]
 
-Retourne un instantané à un intervalle de 20 secondes pour les 32 dernières minutes (128 recs au total) des statistiques des pools de ressources pour un Azure SQL Database.  
-  
+Chaque ligne représente un instantané périodique des statistiques du pool de ressources dans Azure SQL Database. Une capture instantanée est effectuée au démarrage du moteur de base de données, puis toutes les quelques secondes. L’intervalle entre l’instantané actuel et l’instantané précédent peut varier et est fourni dans la `duration_ms` colonne. Les derniers instantanés disponibles sont retournés, jusqu’à 128 instantanés pour chaque pool de ressources.
+
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
 |**pool_id**|int|ID du pool de ressources. N'accepte pas la valeur NULL.
@@ -104,7 +104,7 @@ Retourne un instantané à un intervalle de 20 secondes pour les 32 dernières m
 
 Cette vue nécessite l’autorisation VIEW SERVER STATE.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Notes
 
 Les utilisateurs peuvent accéder à cette vue de gestion dynamique pour surveiller la consommation des ressources en temps quasi réel pour le pool de charges de travail utilisateur, ainsi que pour les pools internes du système de Azure SQL Database instance.
 
