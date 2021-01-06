@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 08/21/2018
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - change tracking [SQL Server], AlwaysOn Availability Groups
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e17a9ca9-dd96-4f84-a85d-60f590da96ad
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a38c7d3bdb94881a3fdc7c54b4a10d0e7cce406f
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: fcb67787d6f29272d2496dbfe76788d476ef8ea0
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583987"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641123"
 ---
 # <a name="replication-change-tracking--change-data-capture---always-on-availability-groups"></a>Réplication, suivi des modifications et capture de données modifiées - groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

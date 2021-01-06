@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 01/18/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], WSFC clusters
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 79d2ea5a-edd8-4b3b-9502-96202057b01a
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ac7272b1a8548f6265c9271a4f6bdb0799f02862
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 56cfc62709e24fc48704ed44b86a866b07a0b0ef
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127565"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642663"
 ---
 # <a name="windows-server-failover-clustering-with-sql-server"></a>Clustering de basculement Windows Server avec SQL Server
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

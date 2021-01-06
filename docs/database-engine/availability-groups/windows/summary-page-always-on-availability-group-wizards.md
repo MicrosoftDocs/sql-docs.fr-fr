@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.newagwizard.summary.f1
@@ -15,12 +15,12 @@ f1_keywords:
 ms.assetid: b98e2511-297f-49fd-b0e8-74652a91bc0c
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 748633e5b78ad0d27252147fb7455e961fc63d10
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 7d7b758b1d1ee8fba24a6f4e23568f8fdc6f060c
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583798"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642939"
 ---
 # <a name="summary-page-always-on-availability-group-wizards"></a>Page Résumé (Assistants Groupe de disponibilité AlwaysOn)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

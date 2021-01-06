@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 helpviewer_keywords:
 - Availability Groups [SQL Server], configuring
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e23c6e06-1cd1-4d4a-9bc2-e3e06ab2933d
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 2ed683fc46e41ace933d478cd7872f0b2e47af31
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 5475a3959bb77dcd7aba00ea409267453f69cc63
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584576"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643067"
 ---
 # <a name="modify-the-session-timeout-period-for-an-availability-group-replica"></a>Modifier la période d’expiration de session pour un réplica de groupe de disponibilité
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

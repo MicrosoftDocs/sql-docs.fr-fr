@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 helpviewer_keywords:
 - Availability Groups [SQL Server], WSFC clusters
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6cefdc18-899e-410c-9ae4-d6080f724046
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f0672cc39573904b6e09f4a117c9c8094e4db3df
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: fcdd0f1d34ed4107cbe3c90708abe286efbf0837
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96120941"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642653"
 ---
 # <a name="wsfc-disaster-recovery-through-forced-quorum-sql-server"></a>Récupération d'urgence WSFC par le quorum forcé (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -6,7 +6,7 @@ ms.date: 05/17/2016
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], deployment
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 35800769-aede-4aac-b077-0e0e487e302f
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 343b04fe9f548c8f3c1274384c731cf6b74c1f95
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 128fb94e9e99315a0a8f9d24067fc863467fb349
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85754649"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641707"
 ---
 # <a name="example-configure-database-mirroring-using-windows-authentication-transact-sql"></a>Exemple : Configurer la mise en miroir de bases de données à l’aide de l’authentification Windows (Transact-SQL)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

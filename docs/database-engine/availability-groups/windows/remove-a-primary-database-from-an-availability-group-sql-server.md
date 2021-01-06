@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.availabilitygroup.removeprimarydb.f1
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 6d4ca31e-ddf0-44bf-be5e-a5da060bf096
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c42edc276052e7558dd8224d38a56a4ab7c6f269
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 87b53d2fd1fb5da418a2585c762c6d7692b3b283
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584029"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642491"
 ---
 # <a name="remove-a-primary-database-from-an-always-on-availability-group"></a>Supprimer une base de données primaire d’un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

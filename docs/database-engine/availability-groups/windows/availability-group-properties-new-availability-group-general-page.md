@@ -6,19 +6,19 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: end-user-help
 f1_keywords:
 - sql13.swb.availabilitygroupproperties.general.f1
 ms.assetid: 9af5379f-91b8-4729-9f75-4a80242a30e9
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f7e570006908358b1cfe0cb07972113585e58a95
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 035b32b57862564039dfd12a38496d7ff323e64f
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584682"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97640997"
 ---
 # <a name="availability-group-properties-new-availability-group-general-page"></a>Propriétés d’un groupe de disponibilité : Nouveau groupe de disponibilité (page Général)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

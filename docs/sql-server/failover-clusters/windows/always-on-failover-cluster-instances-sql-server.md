@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 01/18/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: conceptual
 helpviewer_keywords:
 - clustering [SQL Server]
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 86a15b33-4d03-4549-8ea2-b45e4f1baad7
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 570380cd0a02eb1e05d6c953da112d78f25afeb1
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: ea1413b30c4706125b711493f64210c2a875ec0f
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96121107"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642810"
 ---
 # <a name="always-on-failover-cluster-instances-sql-server"></a>Instances de cluster de basculement Always On (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

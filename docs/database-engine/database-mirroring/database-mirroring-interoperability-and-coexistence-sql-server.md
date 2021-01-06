@@ -6,7 +6,7 @@ ms.date: 05/17/2016
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - high availability [SQL Server], interoperability and coexistence
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 89fef397-e0cf-4e08-b598-25b8d4170523
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: b70007c2beaa26d93107f167013a240fe0fa5864
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 9c53b98e4c355348233a4bac050a91ba7d3812f6
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85751908"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642029"
 ---
 # <a name="database-mirroring-interoperability-and-coexistence-sql-server"></a>Mise en miroir de bases de données : interopérabilité et coexistence (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

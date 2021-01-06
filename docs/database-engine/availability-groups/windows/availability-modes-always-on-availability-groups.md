@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 10/16/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], availability replicas
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 10e7bac7-4121-48c2-be01-10083a8c65af
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: bb9a9743f6a23d75d7819fb4e48e4233ed2104fd
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 0fb3e2a5bf814c4fc2ed6bb55337d82bdee0511a
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584631"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643159"
 ---
 # <a name="differences-between-availability-modes-for-an-always-on-availability-group"></a>Différences entre les modes de disponibilité pour un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

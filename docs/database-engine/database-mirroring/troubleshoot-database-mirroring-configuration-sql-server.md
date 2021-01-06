@@ -6,7 +6,7 @@ ms.date: 05/17/2016
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], deployment
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 87d3801b-dc52-419e-9316-8b1f1490946c
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 0cc1e69c0c3efddb5ac57a0041d2edb4e18fdf00
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 2b50f06d3830a8f723d9d6ecc570125ecafb136a
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85758220"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641537"
 ---
 # <a name="troubleshoot-database-mirroring-configuration-sql-server"></a>Résoudre les problèmes de configuration de mise en miroir de bases de données (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

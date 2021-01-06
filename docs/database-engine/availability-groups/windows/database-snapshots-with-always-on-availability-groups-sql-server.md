@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 helpviewer_keywords:
 - database snapshots [SQL Server], AlwaysOn Availability Groups
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 7432da1c-ce2f-4cd9-af41-54c97744166b
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 9474d3e35454729feb2d004cfd25fd224346d5e5
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 1550f73cf69a4e5011e244def5451539db388b06
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584335"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643216"
 ---
 # <a name="database-snapshots-with-always-on-availability-groups-sql-server"></a>Instantanés de base de données avec des groupes de disponibilité Always On (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

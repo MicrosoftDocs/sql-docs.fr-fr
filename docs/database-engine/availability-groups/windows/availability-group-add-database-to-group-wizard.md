@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 f1_keywords:
 - sql13.swb.adddatabasewizard.f1
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 81e5e36d-735d-4731-8017-2654673abb88
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 5823518103647ccc39958af4d309a6d171f4412c
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: e26d1dbf4b6599403beed4262eedc89eba2b0dd2
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584703"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641245"
 ---
 # <a name="add-a-database-to-an-always-on-availability-group-with-the-availability-group-wizard"></a>Ajouter une base de données à un groupe de disponibilité Always On avec « l’Assistant Groupe de disponibilité »
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

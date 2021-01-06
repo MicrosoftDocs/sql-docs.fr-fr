@@ -6,7 +6,7 @@ ms.date: 03/07/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.dbmmonitor.main.f1
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8ebbdcd6-565a-498f-b674-289c84b985eb
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 3d5dbfd56f461da431843d1788d9226a72448b57
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: a5c0a12ba95a6f0248ac6ba0c073e0d5428205f7
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85730924"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642032"
 ---
 # <a name="database-mirroring-monitor-overview"></a>Vue d'ensemble du moniteur de mise en miroir de bases de données
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

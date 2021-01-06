@@ -6,7 +6,7 @@ ms.date: 11/10/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], preparing for mirroring
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8676f9d8-c451-419b-b934-786997d46c2b
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 74cd9b60e38fb011360bbfc678ccd49509531b59
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 1fa476693286b32cb2910526bb0ea7431faa5120
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85735236"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642151"
 ---
 # <a name="prepare-a-mirror-database-for-mirroring-sql-server"></a>Préparer une base de données miroir pour la mise en miroir (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "85735236"
   
 ###  <a name="limitations-and-restrictions"></a><a name="Restrictions"></a> Limitations et restrictions  
   
--   Vous ne pouvez pas mettre en miroir les bases de données système **master**, **msdb**, **temp**ou **model** .  
+-   Vous ne pouvez pas mettre en miroir les bases de données système **master**, **msdb**, **temp** ou **model** .  
   
 -   Vous ne pouvez pas mettre en miroir une base de données qui appartient à un [groupe de disponibilité Always On](../../database-engine/availability-groups/windows/always-on-availability-groups-sql-server.md).  
   

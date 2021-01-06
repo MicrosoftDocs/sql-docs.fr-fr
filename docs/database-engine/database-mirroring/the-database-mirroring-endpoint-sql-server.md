@@ -6,7 +6,7 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], deployment
@@ -18,12 +18,12 @@ ms.assetid: 39332dc5-678e-4650-9217-6aa3cdc41635
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: d674ed580a3c4a73a3f136344b8c2c5d76d33ac4
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 81d32a7a21c8e152944b8e24002320e865372681
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481500"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641939"
 ---
 # <a name="the-database-mirroring-endpoint-sql-server"></a>Point de terminaison de mise en miroir de bases de données (SQL Server)
 

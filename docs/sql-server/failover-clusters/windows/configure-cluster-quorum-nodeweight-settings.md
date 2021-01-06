@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 helpviewer_keywords:
 - Availability Groups [SQL Server], WSFC clusters
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: cb3fd9a6-39a2-4e9c-9157-619bf3db9951
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c422c1fe6b4b0810cc6e151eda6944fc6cc45b0f
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 272ac630b76e95263e0ae62765b84b24e516abae
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96121132"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642785"
 ---
 # <a name="configure-cluster-quorum-nodeweight-settings"></a>Configurer les paramètres NodeWeight pour un quorum de cluster
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

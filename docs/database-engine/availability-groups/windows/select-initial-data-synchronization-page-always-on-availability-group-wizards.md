@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.adddatabasewizard.selectinitialdatasync.f1
@@ -14,12 +14,12 @@ f1_keywords:
 ms.assetid: 457b1140-4819-4def-8f7c-54a406e6db12
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c0cd3c7b805451701c1fb1e412750e922a554485
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: fd729c01993f06c9017a898e1e804dde844e10f2
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583914"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642153"
 ---
 # <a name="select-initial-data-synchronization-page-always-on-availability-group-wizards"></a>Page Sélectionner la synchronisation de données initiale (Assistants de groupe de disponibilité Always On)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -5,19 +5,19 @@ ms.custom: ''
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], take offline
 ms.assetid: 50f5aad8-0dff-45ef-8350-f9596d3db898
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 49d2d529a511aa41ad69dc2326aa33decf0d48ef
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 361fdb639201fe69c9f31e233dca51a910ed10a7
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583783"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641541"
 ---
 # <a name="take-an-availability-group-offline-sql-server"></a>Placer un groupe de disponibilité hors connexion (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - secondary databases [SQL Server], Availability Groups
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 31ceaebf-864b-4dd0-9112-0d047b0316ad
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ee00fcaffe88710edd4c96a03ba1386e0b47a78a
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: b45d24bf9924c9e288402133a52f95b26576b99a
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583701"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642962"
 ---
 # <a name="troubleshoot-a-failed-add-file-operation-always-on-availability-groups"></a>Résoudre une opération d’ajout de fichier ayant échoué (groupes de disponibilité Always On)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

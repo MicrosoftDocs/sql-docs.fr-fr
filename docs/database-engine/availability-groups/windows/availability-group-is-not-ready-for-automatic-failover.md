@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: end-user-help
 f1_keywords:
 - sql13.swb.agdashboard.agp3autofailover.issues.f1
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 28261014-342c-442a-bd89-6d04b8d4e8b7
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 1a5609955ca61cb1ef2df4a940e749c6cb7c038c
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 276436fb5b7ea41ace997a9c744992d4af177b00
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584729"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641217"
 ---
 # <a name="always-on-availability-group-is-not-ready-for-automatic-failover"></a>Le groupe de disponibilité Always On n’est pas prêt pour le basculement automatique
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

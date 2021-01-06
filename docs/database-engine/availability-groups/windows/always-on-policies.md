@@ -5,17 +5,17 @@ ms.custom: seo-lt-2019
 ms.date: 06/13/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 ms.assetid: 26bf8f71-c2b8-45ef-b3a3-372b96c9e6e3
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5708feb796315c2904b1ba0a178eb5589e6bb3a7
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: f2f6357e434e4a8d4d6385de10cac58c7bd6f2d0
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724536"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641430"
 ---
 # <a name="evaluate-health-of-the-always-on-availability-group-using-group-policies"></a>Évaluer l’intégrité du groupe de disponibilité Always On à l’aide de stratégies de groupe
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

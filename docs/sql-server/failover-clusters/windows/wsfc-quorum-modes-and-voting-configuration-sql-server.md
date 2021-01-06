@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 10/03/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], WSFC clusters
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: ca0d59ef-25f0-4047-9130-e2282d058283
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: d900bbc6b8183e4a903886878cf61ce68ac39573
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 51e48eeead20cce35d4e4c58d767384bab1a8a65
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127520"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642622"
 ---
 # <a name="wsfc-quorum-modes-and-voting-configuration-sql-server"></a>Modes de quorum WSFC et configuration de vote (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -5,17 +5,17 @@ ms.custom: seo-lt-2019
 ms.date: 01/10/2018
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 ms.assetid: f670af56-dbcc-4309-9119-f919dcad8a65
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 6633eae12aa231b4b4a97b1c663d6b2e15339ee2
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 785c8421a1ca689e39852401165c4b0249128e8c
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583706"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641821"
 ---
 # <a name="upgrading-always-on-availability-group-replica-instances"></a>Mise à niveau d’instances de réplica d’un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -6,7 +6,7 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - failover [SQL Server], database mirroring
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 36218d61-b5f5-4194-905a-608e0e903db4
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 34fdb80d9c1393b25a4cdbff63f0546ec6d9ddac
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: aa36232584afbdc58793cb2a4742d5d5227ddb0b
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85754601"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642285"
 ---
 # <a name="manually-fail-over-a-database-mirroring-session-transact-sql"></a>Basculer manuellement une session de mise en miroir de bases de données (Transact-SQL)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -5,19 +5,19 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server]
 ms.assetid: 61243c87-bd62-4510-863f-2a8f347caf1f
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: fea85b98f14fe3afaeb9a92a1748c9c96dc7b306
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: c8f9adc01e608ad01b768148847e01a6373cb0b1
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583469"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641676"
 ---
 # <a name="view-availability-group-properties-sql-server"></a>Afficher les propriétés d'un groupe de disponibilité (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

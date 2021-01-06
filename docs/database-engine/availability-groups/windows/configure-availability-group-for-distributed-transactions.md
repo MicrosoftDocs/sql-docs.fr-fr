@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 02/06/2019
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 helpviewer_keywords:
 - database mirroring [SQL Server], interoperability
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ee529e56acb911912177520bc46703657f1b70bb
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 93876b488d5e265bca363d213c04cb0611c185f4
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584505"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642175"
 ---
 # <a name="configure-distributed-transactions-for-an-always-on-availability-group"></a>Configurer les transactions distribuées pour un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

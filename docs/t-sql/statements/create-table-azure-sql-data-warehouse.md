@@ -12,12 +12,12 @@ ms.assetid: ea21c73c-40e8-4c54-83d4-46ca36b2cf73
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest'
-ms.openlocfilehash: fdadefa5b898a2b37c7e5a7f087c429ccc6b8d4f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: bf8ef986da54559c5928677643f6bd99c63c2266
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97438959"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643015"
 ---
 # <a name="create-table-azure-synapse-analytics"></a>CREATE TABLE (Azure Synapse Analytics)
 
@@ -172,7 +172,7 @@ Crée une ou plusieurs partitions de table. Ces partitions sont des coupes de ta
 
 ### <a name="ordered-clustered-columnstore-index-option"></a>Option Index columnstore cluster ordonné 
 
-Index columnstore en cluster (CCI) est la valeur par défaut pour la création de tables dans [!INCLUDE[ssSDW](../../includes/sssdwfull-md.md)].  Les données d’un index columnstore cluster ne sont pas triées avant d’être compressées dans des segments columnstore.  Lors de la création d’un index columnstore cluster avec ORDER, les données sont triées avant d’être ajoutées aux segments d’index et les performances des requêtes peuvent être améliorées. Pour plus d’informations, consultez [Réglage des performances avec un index columstore cluster ordonné](/azure/sql-data-warehouse/performance-tuning-ordered-cci?view=azure-sqldw-latest).  
+Index columnstore en cluster (CCI) est la valeur par défaut pour la création de tables dans [!INCLUDE[ssSDW](../../includes/sssdwfull-md.md)].  Les données d’un index columnstore cluster ne sont pas triées avant d’être compressées dans des segments columnstore.  Lors de la création d’un index columnstore cluster avec ORDER, les données sont triées avant d’être ajoutées aux segments d’index et les performances des requêtes peuvent être améliorées. Pour plus d’informations, consultez [Réglage des performances avec un index columstore cluster ordonné](/azure/sql-data-warehouse/performance-tuning-ordered-cci?view=azure-sqldw-latest&preserve-view=true).  
 
 Une CCI ordonnée peut être créée sur les colonnes de tous les types de données pris en charge dans [!INCLUDE[ssSDW](../../includes/sssdwfull-md.md)] à l’exception des colonnes de type chaîne.  
 
@@ -596,4 +596,4 @@ WITH
 [CREATE TABLE AS SELECT &#40;Azure Synapse Analytics&#41;](../../t-sql/statements/create-table-as-select-azure-sql-data-warehouse.md)   
 [DROP TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/drop-table-transact-sql.md)   
 [ALTER TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-table-transact-sql.md)   
-[sys.index_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-index-columns-transact-sql.md?view=azure-sqldw-latest) 
+[sys.index_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-index-columns-transact-sql.md) 

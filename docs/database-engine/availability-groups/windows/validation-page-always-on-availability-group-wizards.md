@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.addreplicawizard.validation.f1
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c8971556-240c-491a-bc86-9cc72f71a3dd
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f9bf3af9a3abf31f5f9d01fba68181896b73511f
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 59c65191c2d69d3ebb7b144a6b254f1695fd5b5b
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583171"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641721"
 ---
 # <a name="validation-page-always-on-availability-group-wizards"></a>Page Validation (Assistants Groupe de disponibilité Always On)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

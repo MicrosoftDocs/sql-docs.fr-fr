@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: log-shipping
 ms.topic: conceptual
 helpviewer_keywords:
 - adding secondary databases
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b02eba13-f8e6-4684-b7e4-75ea038ea473
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 2d2560564703c87f5443f5366a7066d3e2a33758
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 3864af84ee12056b29c5e3b4c27a2693b1424120
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96125673"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642607"
 ---
 # <a name="add-a-secondary-database-to-a-log-shipping-configuration-sql-server"></a>Ajouter une base de données secondaire dans une configuration de copie des journaux de transaction (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

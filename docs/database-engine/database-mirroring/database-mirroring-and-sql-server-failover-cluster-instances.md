@@ -6,7 +6,7 @@ ms.date: 05/17/2016
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - failover clustering [SQL Server], database mirroring
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f1dd6a79-698b-4e31-b923-6bfc3ea0b617
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 00434abb76721e5aecf75bdce589964c69e6903e
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 0adc43373642a0f4e79f2f7af32e96f96ef7e7de
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85789680"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642071"
 ---
 # <a name="database-mirroring-and-sql-server-failover-cluster-instances"></a>Mise en miroir de base de données et instances de cluster de basculement SQL Server
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

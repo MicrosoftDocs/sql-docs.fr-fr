@@ -6,19 +6,19 @@ ms.date: 03/07/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.dbmmonitor.databasemirroringhistory.f1
 ms.assetid: 1d6e4b10-4a23-47d7-9918-c417992f09d3
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: d2fd21c91577d2e2db1773bbbcbff942842cf043
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: eb42f9910acbc412117713b7be7d08fe4c6ee78f
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85751890"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642008"
 ---
 # <a name="database-mirroring-history"></a>Historique de la mise en miroir de bases de données
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

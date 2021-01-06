@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - log shipping [SQL Server], AlwaysOn Availability Groups
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 2738ce65-205e-4682-92d8-dc7e37c58b2b
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 90ede0e93644a87d11ef25ec1c2113076ff0bba2
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 28c847a517212d5171ca54814ed8c3963f8d2bb6
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584063"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642527"
 ---
 # <a name="prerequisites-to-convert-log-shipping-to-always-on-availability-groups"></a>Prérequis pour convertir une copie des journaux de transaction en groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

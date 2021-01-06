@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.agdashboard.agp7allconnected.issues.f1
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: aea808be-6f0f-40c2-9aa2-a2a435ec6443
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: cfa9fb0297f4ba3e9cdab859816ecfc4d8fb54bf
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: c48d324ef9437bb349922604f0149f2a468d8952
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583866"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642115"
 ---
 # <a name="some-availability-replicas-are-disconnected"></a>Certains réplicas de disponibilité sont déconnectés
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

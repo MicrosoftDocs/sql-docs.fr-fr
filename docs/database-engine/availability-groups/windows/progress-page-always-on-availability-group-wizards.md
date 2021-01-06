@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.failoverwizard.progress.f1
@@ -15,12 +15,12 @@ f1_keywords:
 ms.assetid: bd3b0306-8384-4120-a1c9-03825f0ae26a
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a019b061fb6352e00ab717e70661be260ad879fe
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 040b89181744c0f9a3ab036554987dcb1e01d3de
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584067"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642495"
 ---
 # <a name="progress-page-always-on-availability-group-wizards"></a>Page Progression (Assistants de groupe de disponibilité Always On)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

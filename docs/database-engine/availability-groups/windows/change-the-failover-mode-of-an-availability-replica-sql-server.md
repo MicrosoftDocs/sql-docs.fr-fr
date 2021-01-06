@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 06/30/2020
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 helpviewer_keywords:
 - failover modes [SQL Server]
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 619a826f-8e65-48eb-8c34-39497d238279
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ffd564df011932a0b40c0eff2426049fc3f6c315
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: e24bd2b51945f69d86fe887b2c4a4c1c5e17c773
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584553"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643112"
 ---
 # <a name="change-the-failover-mode-for-a-replica-within-an-always-on-availability-group"></a>Changer le mode de basculement d’un réplica dans un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

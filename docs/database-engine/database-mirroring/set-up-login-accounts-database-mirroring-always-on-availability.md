@@ -6,7 +6,7 @@ ms.date: 05/17/2016
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], deployment
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e9f5287b-1325-4cda-88a6-19eaaa52a652
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 6545a639b9bcdfafcc1bdfdd67930014beab00e7
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: ea62f1f934527ce40e2b5fe2f03b8b6c1b8e49bc
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85735135"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641981"
 ---
 # <a name="set-up-login-accounts---database-mirroring-always-on-availability"></a>Configurer des comptes de connexion - Disponibilité Always On de la mise en miroir de bases de données
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

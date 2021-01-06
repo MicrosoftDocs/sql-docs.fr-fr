@@ -5,19 +5,19 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - ', policies'
 ms.assetid: 14fed3c4-8ecc-4e1c-931d-a7ec1e9f9e90
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 19721696cb9f4f084582286018247ea340d20cf7
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 0e5ac7aa8e5c214c96983c694149bf234a7f0a7a
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583388"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642087"
 ---
 # <a name="view-availability-replica-properties-sql-server"></a>Afficher les propriétés d'un réplica de disponibilité (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

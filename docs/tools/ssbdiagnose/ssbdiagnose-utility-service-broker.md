@@ -26,12 +26,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 2457f180cef24b13568a6718128efa78635c3e41
-ms.sourcegitcommit: a9f16d7819ed0e2b7ad8f4a7d4d2397437b2bbb2
+ms.openlocfilehash: 8590f3677d27c367782999877cb6892251785278
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88714257"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641284"
 ---
 # <a name="ssbdiagnose-utility-service-broker"></a>Utilitaire ssbdiagnose (Service Broker)
 
@@ -310,7 +310,7 @@ WHERE database_id = DB_ID();
  Signale un problème qui empêche **ssbdiagnose** d’effectuer une analyse de la configuration ou de surveiller des conversations.  
   
 ## <a name="sqlcmd-environment-variables"></a>Variables d'environnement sqlcmd  
- L’utilitaire **ssbdiagnose** prend en charge les variables d’environnement SQLCMDSERVER, SQLCMDUSER, SQLCMDPASSWORD et SQLCMDLOGINTIMOUT, qui sont également utilisées par l’utilitaire **sqlcmd** . Vous pouvez définir les variables d’environnement soit en utilisant l’invite de commandes SET, soit en utilisant la commande **setvar** dans des scripts [!INCLUDE[tsql](../../includes/tsql-md.md)] exécutés à l’aide de **sqlcmd**. Pour plus d’informations sur la façon d’utiliser **setvar** dans **sqlcmd**, consultez [Utiliser sqlcmd avec des variables de script](../../ssms/scripting/sqlcmd-use-with-scripting-variables.md?view=sql-server-ver15).  
+ L’utilitaire **ssbdiagnose** prend en charge les variables d’environnement SQLCMDSERVER, SQLCMDUSER, SQLCMDPASSWORD et SQLCMDLOGINTIMOUT, qui sont également utilisées par l’utilitaire **sqlcmd** . Vous pouvez définir les variables d’environnement soit en utilisant l’invite de commandes SET, soit en utilisant la commande **setvar** dans des scripts [!INCLUDE[tsql](../../includes/tsql-md.md)] exécutés à l’aide de **sqlcmd**. Pour plus d’informations sur la façon d’utiliser **setvar** dans **sqlcmd**, consultez [Utiliser sqlcmd avec des variables de script](../../ssms/scripting/sqlcmd-use-with-scripting-variables.md).  
   
 ## <a name="permissions"></a>Autorisations  
  Dans chaque clause **connectionoptions** , la connexion spécifiée avec l’option **-E** ou **-U** doit être un membre du rôle serveur fixe **sysadmin** dans l’instance spécifiée dans **-S**.  

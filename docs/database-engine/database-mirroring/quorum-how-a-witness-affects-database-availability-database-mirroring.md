@@ -6,7 +6,7 @@ ms.date: 03/01/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - quorum [SQL Server], database mirroring
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: a62d9dd7-3667-4751-a294-a61fc9caae7c
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: c28e70d2f66dffc00ff2ac9138f97dc8d0e08991
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: f30f336ade4b3ab911d6ed365ddfa637230ea02e
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85789661"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641325"
 ---
 # <a name="quorum-how-a-witness-affects-database-availability-database-mirroring"></a>Quorum : effets d’un témoin sur la disponibilité de la base de données (mise en miroir de bases de données)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -99,7 +99,7 @@ ms.locfileid: "85789661"
   
  ![Coopération entre témoin et serveurs partenaires](../../database-engine/database-mirroring/media/dbm-quorum-scenarios.gif "Coopération entre témoin et serveurs partenaires")  
   
- Le scénario 1 montre comment, après que le serveur principal d’origine (**Partner_A**) a subi une défaillance, le témoin et le miroir s’accordent à considérer le principal, **Partner_A**, comme n’étant plus disponible et forment un quorum. Le miroir, **Partner_B** , assume alors le rôle de principal. Le basculement automatique intervient et **Partner_B**met sa copie de la base de données en ligne. Ensuite, **Partner_B** tombe en panne et la base de données bascule hors connexion. Plus tard, l’ancien serveur principal, **Partner_A**, se reconnecte au témoin regagnant le quorum, mais, en communiquant avec le témoin, **Partner_A** apprend qu’il ne peut pas mettre sa copie de la base de données en ligne étant donné que **Partner_B** possède maintenant le rôle de principal. Quand **Partner_B** réintègre la session, il remet la base de données en ligne.  
+ Le scénario 1 montre comment, après que le serveur principal d’origine (**Partner_A**) a subi une défaillance, le témoin et le miroir s’accordent à considérer le principal, **Partner_A**, comme n’étant plus disponible et forment un quorum. Le miroir, **Partner_B** , assume alors le rôle de principal. Le basculement automatique intervient et **Partner_B** met sa copie de la base de données en ligne. Ensuite, **Partner_B** tombe en panne et la base de données bascule hors connexion. Plus tard, l’ancien serveur principal, **Partner_A**, se reconnecte au témoin regagnant le quorum, mais, en communiquant avec le témoin, **Partner_A** apprend qu’il ne peut pas mettre sa copie de la base de données en ligne étant donné que **Partner_B** possède maintenant le rôle de principal. Quand **Partner_B** réintègre la session, il remet la base de données en ligne.  
   
  Dans le scénario 2, le témoin perd le quorum, tandis que les partenaires, **Partner_A** et **Partner_B**, le conservent, et la base de données reste en ligne. Puis, les partenaires perdent également leur quorum et la base de données bascule hors connexion. Plus tard, le serveur principal, **Partner_A**, se reconnecte au témoin regagnant le quorum. Le témoin confirme que **Partner_A** possède encore le rôle de principal et **Partner_A** remet la base de données en ligne.  
   

@@ -13,12 +13,12 @@ ms.assetid: 30f27f4d-8852-4b12-ba62-57f63e496f1d
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.openlocfilehash: 53eacd0177862b81d32b44616dc67cc0beb90f79
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: 064d7fc2d47cbd4f688d113f60be6080ca90fee1
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489149"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642589"
 ---
 # <a name="lesson-3-using-the-dta-command-prompt-utility"></a>Leçon 3 : Utilisation de l’utilitaire de ligne de commande dta
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -38,7 +38,7 @@ Au cours de cette tâche, vous allez démarrer l’utilitaire **dta** et affiche
   
 Ce tutoriel utilise l’exemple de base de données AdventureWorks2017. Pour des raisons de sécurité, les exemples de bases de données ne sont pas installés par défaut. Pour installer les exemples de bases de données, consultez [Installation des exemples SQL Server et des exemples de bases de données](../../samples/adventureworks-install-configure.md).  
   
-Les tâches suivantes sont destinées à vous guider pour ouvrir une invite de commandes, démarrer l’utilitaire en ligne de commande **dta** , afficher son aide sur la syntaxe et paramétrer la charge de travail simple, MyScript.sql, que vous avez créée dans le cadre de l’exercice : [Paramétrage d’une charge de travail](./lesson-2-using-database-engine-tuning-advisor.md?view=sql-server-ver15).  
+Les tâches suivantes sont destinées à vous guider pour ouvrir une invite de commandes, démarrer l’utilitaire en ligne de commande **dta** , afficher son aide sur la syntaxe et paramétrer la charge de travail simple, MyScript.sql, que vous avez créée dans le cadre de l’exercice : [Paramétrage d’une charge de travail](./lesson-2-using-database-engine-tuning-advisor.md).  
 
 ## <a name="prerequisites"></a>Prérequis 
 
@@ -84,7 +84,7 @@ Les instructions de restauration de bases de données dans SSMS se trouvent ici 
 
   ![utilisation de CMD avec DTA](media/dta-tutorials/dta-cmd.png)
   
-3.  Lorsque l'Assistant Paramétrage du moteur de base de données a terminé de paramétrer la charge de travail, il affiche un message signalant que votre session de paramétrage s'est terminée avec succès. Vous pouvez afficher les résultats du paramétrage. Pour cela, utilisez [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] pour ouvrir les fichiers MySession2OutputScript.sql et RMySession2Output.xml. Une autre méthode consiste à ouvrir la session de paramétrage MySession2 dans l’interface de l’Assistant Paramétrage du moteur de base de données et à afficher les recommandations et les rapports en procédant comme aux exercices [Affichage des recommandations pour le paramétrage](./lesson-2-using-database-engine-tuning-advisor.md?view=sql-server-ver15) et [Affichage des rapports de paramétrage](./lesson-2-using-database-engine-tuning-advisor.md?view=sql-server-ver15).  
+3.  Lorsque l'Assistant Paramétrage du moteur de base de données a terminé de paramétrer la charge de travail, il affiche un message signalant que votre session de paramétrage s'est terminée avec succès. Vous pouvez afficher les résultats du paramétrage. Pour cela, utilisez [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] pour ouvrir les fichiers MySession2OutputScript.sql et RMySession2Output.xml. Une autre méthode consiste à ouvrir la session de paramétrage MySession2 dans l’interface de l’Assistant Paramétrage du moteur de base de données et à afficher les recommandations et les rapports en procédant comme aux exercices [Affichage des recommandations pour le paramétrage](./lesson-2-using-database-engine-tuning-advisor.md) et [Affichage des rapports de paramétrage](./lesson-2-using-database-engine-tuning-advisor.md).  
   
  
 ## <a name="after-you-finish-this-tutorial"></a>Fin du didacticiel  

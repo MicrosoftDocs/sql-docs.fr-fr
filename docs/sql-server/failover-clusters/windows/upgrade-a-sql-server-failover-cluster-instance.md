@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 11/21/2019
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: conceptual
 helpviewer_keywords:
 - upgrading failover cluster instances
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: daac41fe-7d0b-4f14-84c2-62952ad8cbfa
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: cad44bde76e3915aeb5f99d8eeb415d89b02359e
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: aaf4e27a88bdb3e23937521f230e62dae4115129
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127584"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642747"
 ---
 # <a name="upgrade-a-failover-cluster-instance"></a>Mettre à niveau une instance de cluster de basculement 
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

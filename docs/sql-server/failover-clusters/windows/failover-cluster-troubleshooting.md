@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 10/21/2015
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 helpviewer_keywords:
 - troublshooting, failover clustering
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 84012320-5a7b-45b0-8feb-325bf0e21324
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 75090ce180ff6e71796c9363e39768f09ec3f91b
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 2891ecf2eb217691159c4afc1203faef8816a108
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96121099"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642771"
 ---
 # <a name="failover-cluster-troubleshooting"></a>Dépannage de clusters de basculement
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

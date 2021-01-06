@@ -5,18 +5,18 @@ ms.custom: seo-lt-2019
 ms.date: 08/30/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 ms.assetid: a47c5005-20e3-4880-945c-9f78d311af7a
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: a83f33ec132a2d58258ffc29f87195fe534b9080
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 981ce2dcfadf234383382103a33faf4f0ab9302e
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460772"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643047"
 ---
 # <a name="how-to-cluster-the-dtc-service-for-an-always-on-availability-group"></a>Mettre en cluster le service DTC pour un groupe de disponibilité Always On
 

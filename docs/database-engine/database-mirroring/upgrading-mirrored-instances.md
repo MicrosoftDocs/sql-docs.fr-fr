@@ -6,7 +6,7 @@ ms.date: 02/01/2016
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - upgrading SQL Server, rolling upgrade of mirrored databases
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0e73bd23-497d-42f1-9e81-8d5314bcd597
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 5cdaba96a927a711d03ad525c721f6e76eac760c
-ms.sourcegitcommit: 2f868a77903c1f1c4cecf4ea1c181deee12d5b15
+ms.openlocfilehash: 36d92a6dcbe8fa1bb2af06a042a281ef5648a5df
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91670549"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641925"
 ---
 # <a name="upgrading-mirrored-instances"></a>Mise à niveau des instances en miroir
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

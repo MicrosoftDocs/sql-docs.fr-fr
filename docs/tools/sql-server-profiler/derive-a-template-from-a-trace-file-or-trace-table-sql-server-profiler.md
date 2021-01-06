@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 02af487c0d7301ce7d5d71ff046b90fb25efc8ab
-ms.sourcegitcommit: a9f16d7819ed0e2b7ad8f4a7d4d2397437b2bbb2
+ms.openlocfilehash: 3a1f608eba9a91510258c15ccaf109e43806ef1c
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88713707"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641917"
 ---
 # <a name="derive-a-template-from-a-trace-file-or-trace-table-sql-server-profiler"></a>Dériver un modèle à partir d'un fichier de trace ou d'une table de trace (SQL Server Profiler)
 
@@ -37,7 +37,7 @@ ms.locfileid: "88713707"
   
 ## <a name="see-also"></a>Voir aussi  
  [Créer un modèle de trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/create-a-trace-template-sql-server-profiler.md)   
- [Modifier un modèle de trace &#40;SQL Server Profiler&#41;](./modify-trace-templates.md?view=sql-server-ver15)   
+ [Modifier un modèle de trace &#40;SQL Server Profiler&#41;](./modify-trace-templates.md)   
  [Dériver un modèle à partir d’une trace en cours d’exécution &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/derive-a-template-from-a-running-trace-sql-server-profiler.md)   
  [SQL Server Profiler](../../tools/sql-server-profiler/sql-server-profiler.md)  
   

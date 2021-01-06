@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.configdbmsecurwiz.mirrorsrvr.f1
 ms.assetid: 53223432-615e-440f-904d-925d33ec2144
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 99a8157c9285a7e6950e493f15c1b22f8c9d2eba
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: f2215721da618b3b6714b9c92d6d2da94f54e332
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85784106"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641611"
 ---
 # <a name="configure-database-mirrroing-security-wizard-mirror-server-instance"></a>Assistant Configurer la sécurité de la mise en miroir de bases de données : Instance de serveur miroir
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

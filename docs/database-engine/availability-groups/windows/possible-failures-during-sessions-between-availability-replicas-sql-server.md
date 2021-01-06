@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting [SQL Server], HADR
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: cd613898-82d9-482f-a255-0230a6c7d6fe
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: bd19b92c3ddd9cf6dad2cb917bbb598f4cff0438
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: e96836a85fb75cc6436530356e8f38ea1a1e1882
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584089"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642539"
 ---
 # <a name="determine-possible-reason-for-connectivity-failures-between-availability-replicas"></a>Déterminer la cause possible des problèmes de connectivité entre des réplicas de disponibilité
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

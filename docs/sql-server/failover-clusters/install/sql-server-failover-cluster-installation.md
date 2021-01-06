@@ -5,17 +5,17 @@ ms.custom: seo-lt-2019
 ms.date: 12/13/2019
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 ms.assetid: c0e75a7c-85c5-423c-a218-77247bf071aa
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 5fc6afb68622514c5ff8f2c244ff0942ae1f0e1d
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: ff4c36a139f85adc381fbf697819c743c5fde436
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96121142"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642860"
 ---
 # <a name="sql-server-failover-cluster-installation"></a>Installation d'un cluster de basculement SQL Server
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

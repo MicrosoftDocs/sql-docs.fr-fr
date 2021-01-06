@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 02/27/2020
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], listeners
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 76fb3eca-6b08-4610-8d79-64019dd56c44
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: aa84b43cbcf636facdade77040eeadf7e8449c54
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 2dc23852fc5792d29c25b151f7c6180ba32295ce
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584687"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641140"
 ---
 # <a name="what-is-an-availability-group-listener"></a>Qu’est-ce qu’un écouteur de groupe de disponibilité ?  
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 helpviewer_keywords:
 - Availability Groups [SQL Server], WSFC clusters
@@ -14,12 +14,12 @@ ms.assetid: ecd99f91-b9a2-4737-994e-507065a12f80
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: c3bf617b4d6854428470cfbfa6c61b1f89feee06
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: bce85840c2a0b2aa1cabbbbeb6d518b9c9c4acb4
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460802"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643101"
 ---
 # <a name="change-which-cluster-manages-the-metadata-for-replicas-in-an-always-on-availability-group"></a>Changer le cluster qui gère les métadonnées pour les réplicas dans un groupe de disponibilité Always On
 

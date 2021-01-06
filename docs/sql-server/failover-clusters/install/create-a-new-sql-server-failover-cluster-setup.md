@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 12/13/2019
 ms.reviewer: ''
 ms.prod: sql
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 helpviewer_keywords:
 - adding nodes
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 30e06a7d-75e9-44e2-bca3-b3b0c4a33f61
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 0f99d649dfda393c5371039976321c4bf54be684
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 841644a1429b4c143b7f2b31b5d6ec669bb0ff58
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96121236"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642851"
 ---
 # <a name="create-a-new-always-on-failover-cluster-instance-setup"></a>Créer une nouvelle instance de cluster de basculement Always On (Installation)
 

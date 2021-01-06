@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.agdashboard.agp4synchronizing.issues.f1
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 3db6a569-e942-4321-a0dd-c4ab002087c8
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 8b8de7c483e3cb01848a17f5f5762667d21c2a57
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: d1b824e4b88ff5d8b0e31abcfcb6dca0acae815a
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583845"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642090"
 ---
 # <a name="some-availability-replicas-are-not-synchronizing-data"></a>Certains réplicas de disponibilité ne synchronisent pas de données
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

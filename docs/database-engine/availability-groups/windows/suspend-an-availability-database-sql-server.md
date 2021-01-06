@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.availabilitygroup.suspenddatamove.f1
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 86858982-6af1-4e80-9a93-87451f0d7ee9
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 6550c409ee45e3287c6edf691fe9d5993e531a5a
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: f918daa031b25ba8f1110dc9f2aaeaebef0a9361
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583786"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642966"
 ---
 # <a name="suspend-an-availability-database-sql-server"></a>Interrompre une base de données de disponibilité (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

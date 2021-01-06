@@ -6,7 +6,7 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - monitoring database mirroring [SQL Server]
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 53165335-97ca-4f88-8e78-22f1839dee98
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: b72094ef1b157ed8927326f4e7d75e3f17dfb243
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 6b18394e9739ca1bc3b9936df80cf853ee62cdfc
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85789619"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641965"
 ---
 # <a name="start-database-mirroring-monitor-sql-server-management-studio"></a>Démarrer le moniteur de mise en miroir de bases de données (SQL Server Management Studio)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

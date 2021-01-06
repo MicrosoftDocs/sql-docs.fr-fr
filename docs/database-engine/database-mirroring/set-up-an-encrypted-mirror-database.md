@@ -6,7 +6,7 @@ ms.date: 03/06/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - cryptography [SQL Server], database mirroring
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 7329a575-be29-46e0-abc6-1344db37920c
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: a4711df54f96487447ed543945bd863a4bc7b598
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 6611528bd3d5b12f01ecebb48e63ee3b01d73215
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85735140"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641977"
 ---
 # <a name="set-up-an-encrypted-mirror-database"></a>Configurer une base de données miroir chiffrée
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

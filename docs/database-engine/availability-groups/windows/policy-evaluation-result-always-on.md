@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - swb.agdashboard.policyeval.f1
@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: 703e947f-d345-4506-be21-34bfbfa7bca6
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 9149767a45aec143b4850b717fc50c070c89e71a
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 735598f97a9d735d3a827e0e561fa365b7b1d6cd
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584104"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642555"
 ---
 # <a name="policy-evaluation-result-page-always-on-dashboard"></a>Page Résultat de l’évaluation de stratégie (tableau de bord Always On)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

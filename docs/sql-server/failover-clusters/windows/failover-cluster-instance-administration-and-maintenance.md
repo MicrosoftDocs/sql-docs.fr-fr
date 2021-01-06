@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 helpviewer_keywords:
 - user accounts [SQL Server], failover clustering
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 2d5c63e9-8061-45c3-94db-8dd3100b8a91
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 8a3179c26e9eb6bae777641f1a7e39744f54dba5
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: fb546ec95946e2dc534dfa16a51807b86077b322
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127626"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642705"
 ---
 # <a name="failover-cluster-instance-administration-and-maintenance"></a>Administration et maintenance de l'instance de cluster de basculement
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

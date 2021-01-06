@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.availabilitygroup.removesecondaryar.f1
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 35ddc8b6-3e7c-4417-9a0a-d4987a09ddf7
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 1095825bef135237d1341f2eb4f4c46cab9d69bc
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: b128836eafee3d3ae0e7416927f6a3a1993698cf
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583982"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642473"
 ---
 # <a name="remove-a-secondary-replica-from-an-availability-group-sql-server"></a>Supprimer un réplica secondaire d'un groupe de disponibilité (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

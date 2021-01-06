@@ -5,17 +5,17 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 ms.assetid: 01a70258-d4fd-40bc-bc44-c490b5d6c420
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: e6fb7f1bdc9e01037129be72657cd5dcdeba4f56
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 61316ca08eac7d24b1be4ef50c913aeba3358775
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584028"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642508"
 ---
 # <a name="use-remote-blob-store-rbs-with-always-on-availability-groups"></a>Utiliser le magasin d’objets blob distants (RBS) avec les groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

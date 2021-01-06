@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.agdashboard.agp6allroleshealthy.issues.f1
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7ec5b337-7201-4a66-a541-7560f8b18784
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 514de23cf905f7344f76a3597658f8a9d40d1013
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: db542dca2f4c200764e5065bff155c908fafcd25
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583883"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641412"
 ---
 # <a name="some-availability-replicas-do-not-have-a-healthy-role"></a>Certains réplicas de disponibilité n'ont pas un rôle sain
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

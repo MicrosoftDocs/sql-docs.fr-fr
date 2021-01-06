@@ -5,17 +5,17 @@ ms.custom: seo-lt-2019
 ms.date: 06/13/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 ms.assetid: c602fd39-db93-4717-8f3a-5a98b940f9cc
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 3a3dee84b2a2e6ee68d2de4630962cf592cefd51
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 8bc95e935d030c792fa4a239fa722367d1f2f1db
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583725"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641865"
 ---
 # <a name="determine-why-changes-from-primary-replica-are-not-reflected-on-secondary-replica-for-an-always-on-availability-group"></a>Déterminer pourquoi les changements apportés au réplica principal ne sont pas répercutés sur le réplica secondaire dans un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: end-user-help
 f1_keywords:
 - sql13.swb.availabilitygroupproperties.backuppreferences.f1
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 65fff22d-5963-4a8c-8b31-fe9ab247a03e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 9f81d681a0d2539d31639e59836b272a5d7127a9
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: cb1effd626bd1d3d7b62c9884ee69857ca6cc91e
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584667"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641162"
 ---
 # <a name="availability-group-properties-new-availability-group-backup-preferences-page"></a>Propriétés d’un groupe de disponibilité : Nouveau groupe de disponibilité (page Préférences de sauvegarde)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

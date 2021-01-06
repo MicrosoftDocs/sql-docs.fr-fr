@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 12/13/2019
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 helpviewer_keywords:
 - clusters [SQL Server], removing failover cluster instance
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: bf63353b-69cf-4c5c-98ea-7b151e36537f
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 3a5da3c50888975301c5d576c634381b5b2e5310
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 89e3cbbaeca927671a340e3fe4178e6eb5d807e8
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96121214"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642867"
 ---
 # <a name="remove-a-failover-cluster-instance-setup"></a>Supprimer une instance de cluster de basculement (Configuration)
 

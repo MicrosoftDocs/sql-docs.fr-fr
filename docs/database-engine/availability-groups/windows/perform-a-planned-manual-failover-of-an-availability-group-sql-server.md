@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 10/25/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.availabilitygroup.manualfailover.f1
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 419f655d-3f9a-4e7d-90b9-f0bab47b3178
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f34a3a3ce7ddf6c80127fbdfb5cdd0298466633b
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 3cf135ca98a61382e12973b93eb30ab06ad6f4dd
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584134"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642565"
 ---
 # <a name="perform-a-planned-manual-failover-of-an-always-on-availability-group-sql-server"></a>Effectuer un basculement manuel planifié d’un groupe de disponibilité Always On (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

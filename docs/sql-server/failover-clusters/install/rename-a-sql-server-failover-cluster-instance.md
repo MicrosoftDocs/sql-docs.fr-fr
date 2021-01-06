@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 12/13/2019
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 helpviewer_keywords:
 - clusters [SQL Server], virtual servers
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2a49d417-25fb-4760-8ae5-5871bfb1e6f3
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 9e49231237c7a62bb67adcbc72f0bee19d5fb26c
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: a407ab5bc7f01a91a1b20a9627a61441e62ddcc9
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127652"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642825"
 ---
 # <a name="rename-a-sql-server-failover-cluster-instance"></a>Renommer une instance de cluster de basculement SQL Server
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

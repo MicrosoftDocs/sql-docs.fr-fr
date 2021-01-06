@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: a690aec2-056b-40bc-8cab-c694bd2d6d62
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: a3dc21f30222704622f86732c11bd5f1db7b46d1
-ms.sourcegitcommit: 768f046107642f72693514f51bf2cbd00f58f58a
+ms.openlocfilehash: 6411d6f3810153614de0e60e9b20555e061836e3
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "87112019"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641598"
 ---
 # <a name="troubleshoot-reports-map-reports-report-builder-and-ssrs"></a>Dépanner les rapports : Rapports cartographiques (Générateur de rapports et SSRS)
   Vous pouvez rencontrer des problèmes quand vous ajoutez une carte ou une couche à votre rapport paginé [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] , quand vous personnalisez une carte ou une couche existante de votre rapport, quand vous affichez l’aperçu d’une carte dans un rapport ou quand vous publiez un rapport contenant une carte. Utilisez cette rubrique pour vous aider à résoudre ces problèmes.  
@@ -137,7 +137,7 @@ ms.locfileid: "87112019"
   
 -   **Transparence.** Vous pouvez spécifier indépendamment la transparence pour chaque couche. Les valeurs de transparence par défaut varient en fonction de la façon dont la couche a été ajoutée. Une transparence de 0 % signifie que la couche est opaque et qu'aucunes autres données de couches ne transparaîtront à travers celle-ci. Pour permettre à d'autres données de transparaître à travers une couche existante, définissez la valeur sur un pourcentage plus élevé qui vous donnera l'effet souhaité.  
   
--   **Visibilité.** Les valeurs de visibilité d'une couche peuvent être **Visible**, **Masquée**ou **En fonction du zoom**, selon le niveau de zoom du point de vue de la carte. Les plages maximale et minimale pour le niveau de zoom peuvent également être spécifiées. La visibilité peut être basée sur une expression qui renvoie l'une de ces valeurs.  
+-   **Visibilité.** Les valeurs de visibilité d'une couche peuvent être **Visible**, **Masquée** ou **En fonction du zoom**, selon le niveau de zoom du point de vue de la carte. Les plages maximale et minimale pour le niveau de zoom peuvent également être spécifiées. La visibilité peut être basée sur une expression qui renvoie l'une de ces valeurs.  
   
     > [!TIP]  
     >  Vous pouvez activer/désactiver la visibilité de chaque couche dans le volet Carte. Lors de la conception de chaque couche, désactivez toutes les autres couches pour déterminer si le problème est lié à une couche individuelle ou à des problèmes de transparence entre les couches.  
@@ -184,7 +184,7 @@ ms.locfileid: "87112019"
   
 -   La couche de mosaïques doit exister. Dans l'Assistant Carte ou Couche, sélectionnez **Ajouter un arrière-plan Bing Maps pour cette vue cartographique**. Cette option ajoute une couche de mosaïques pour le centre d'affichage et le niveau de zoom du point de vue de la carte actif. Vous pouvez également ajouter une couche de mosaïques à partir de la barre d'outils du volet Carte.  
   
--   Le système de coordonnées de la carte pour la fenêtre d'affichage doit être **Géographique**et non **Planaire**.  
+-   Le système de coordonnées de la carte pour la fenêtre d'affichage doit être **Géographique** et non **Planaire**.  
   
 -   La projection cartographique doit être **Mercator**.  
   
@@ -207,6 +207,6 @@ ms.locfileid: "87112019"
   
 ## <a name="see-also"></a>Voir aussi  
  [Cartes &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/maps-report-builder-and-ssrs.md)   
- [Résolution des problèmes liés au Générateur de rapports](/previous-versions/sql/2014/reporting-services/troubleshoot-report-builder?view=sql-server-2014)  
+ [Résolution des problèmes liés au Générateur de rapports](/previous-versions/sql/2014/reporting-services/troubleshoot-report-builder?view=sql-server-2014&preserve-view=true)  
   
   

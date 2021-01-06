@@ -6,7 +6,7 @@ ms.custom: seo-lt-2019
 ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 helpviewer_keywords:
 - resource dependencies [SQL Server]
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 25dbb751-139b-4c8e-ac62-3ec23110611f
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 659d9f1b2cb7e8d7d771b260cbeaf6db1a6e1c13
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: f9582167d337ed9a06f95030f4c68857a4abd389
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127606"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642839"
 ---
 # <a name="add-dependencies-to-a-sql-server-resource"></a>Ajouter des dépendances à une ressource SQL Server
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -6,19 +6,19 @@ ms.date: 03/07/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.dbmmonitor.registermirroreddb.f1
 ms.assetid: 6acd02b9-2311-49b0-a5f8-3852beecb4b0
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 23bc66a0c782005a2426ee9fc4e35a237f49cb96
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 5dfb3293071982720908c61368a475376db24dd3
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96126158"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641313"
 ---
 # <a name="register-mirrored-database"></a>Inscrire la base de données mise en miroir
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

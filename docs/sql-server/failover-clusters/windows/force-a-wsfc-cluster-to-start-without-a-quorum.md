@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 helpviewer_keywords:
 - Availability Groups [SQL Server], WSFC clusters
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 4a121375-7424-4444-b876-baefa8fe9015
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c1de5f07aa692b0d268d3e41a1b8dda554ea0280
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 908aa73d20ce939696124fee2f92eb87c9b8bec8
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96121067"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642744"
 ---
 # <a name="force-a-wsfc-cluster-to-start-without-a-quorum"></a>Forcer un cluster WSFC à démarrer sans quorum
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

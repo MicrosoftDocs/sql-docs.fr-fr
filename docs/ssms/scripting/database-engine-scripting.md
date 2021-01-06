@@ -17,12 +17,12 @@ ms.assetid: 9978a884-59a2-4e7f-a82a-335149f3a261
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 0972ef38fd5af52b1141e0b14b65b1d08e2c675b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 54297946ffc20ec7699536e5bd5c0504497d1f84
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97476930"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642389"
 ---
 # <a name="database-engine-scripting"></a>Scripts du moteur de base de données
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "97476930"
   
 |Description de la tâche|Rubrique|  
 |----------------------|-----------|  
-|Explique comment utiliser le code et les éditeurs de texte dans [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] pour développer, déboguer, et exécuter interactivement des scripts [!INCLUDE[tsql](../../includes/tsql-md.md)] .|[Éditeurs de texte et de requête &#40;SQL Server Management Studio&#41;](../f1-help/database-engine-query-editor-sql-server-management-studio.md?view=sql-server-ver15)|  
+|Explique comment utiliser le code et les éditeurs de texte dans [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] pour développer, déboguer, et exécuter interactivement des scripts [!INCLUDE[tsql](../../includes/tsql-md.md)] .|[Éditeurs de texte et de requête &#40;SQL Server Management Studio&#41;](../f1-help/database-engine-query-editor-sql-server-management-studio.md)|  
 |Explique comment utiliser l’utilitaire **sqlcmd** pour exécuter des scripts [!INCLUDE[tsql](../../includes/tsql-md.md)] à partir de l’invite de commandes, notamment la possibilité de développer interactivement des scripts.|[Rubriques de procédures liées à sqlcmd](./sqlcmd-start-the-utility.md)|  
 |Explique comment intégrer les composants SQL Server dans un environnement Windows PowerShell et générer des scripts PowerShell pour gérer des instances et des objets SQL Server.|[SQL Server PowerShell](../../powershell/sql-server-powershell.md)|  
 |Explique comment utiliser l’Assistant **Générer et publier des scripts** pour créer des scripts [!INCLUDE[tsql](../../includes/tsql-md.md)] qui recréent un ou plusieurs objets d’une base de données.|[Générer des scripts &#40;SQL Server Management Studio&#41;](./generate-scripts-sql-server-management-studio.md)|  

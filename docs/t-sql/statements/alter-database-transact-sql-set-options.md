@@ -31,12 +31,12 @@ ms.assetid: f76fbd84-df59-4404-806b-8ecb4497c9cc
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||=azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azure-sqldw-latest||=azuresqldb-mi-current
-ms.openlocfilehash: 67c728b2620205a6dfa854c8328df6ea462bd673
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: 97139ed9331853a5d84d261c69510993fb7231a2
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489929"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642261"
 ---
 # <a name="alter-database-set-options-transact-sql"></a>Options SET d’ALTER DATABASE (Transact-SQL)
 
@@ -60,13 +60,13 @@ Dans la ligne suivante, sélectionnez le nom du produit qui vous intéresse. Cec
         **_\* SQL Server \*_** &nbsp;
     :::column-end:::
     :::column:::
-        [Base de données SQL](alter-database-transact-sql-set-options.md?view=azuresqldb-current)
+        [Base de données SQL](alter-database-transact-sql-set-options.md?view=azuresqldb-current&preserve-view=true)
     :::column-end:::
     :::column:::
-        [SQL Managed Instance](alter-database-transact-sql-set-options.md?view=azuresqldb-mi-current)
+        [SQL Managed Instance](alter-database-transact-sql-set-options.md?view=azuresqldb-mi-current&preserve-view=true)
     :::column-end:::
     :::column:::
-        [Azure Synapse<br />Analytics](alter-database-transact-sql-set-options.md?view=azure-sqldw-latest)
+        [Azure Synapse<br />Analytics](alter-database-transact-sql-set-options.md?view=azure-sqldw-latest&preserve-view=true)
     :::column-end:::
 :::row-end:::
 
@@ -1493,10 +1493,10 @@ SET QUERY_STORE = ON
         **_\* SQL Database \*_** &nbsp;
     :::column-end:::
     :::column:::
-        [SQL Managed Instance](alter-database-transact-sql-set-options.md?view=azuresqldb-mi-current)
+        [SQL Managed Instance](alter-database-transact-sql-set-options.md?view=azuresqldb-mi-current&preserve-view=true)
     :::column-end:::
     :::column:::
-        [Azure Synapse<br />Analytics](alter-database-transact-sql-set-options.md?view=azure-sqldw-latest)
+        [Azure Synapse<br />Analytics](alter-database-transact-sql-set-options.md?view=azure-sqldw-latest&preserve-view=true)
     :::column-end:::
 :::row-end:::
 
@@ -2367,7 +2367,7 @@ SET QUERY_STORE = ON
 - [Niveau de compatibilité ALTER DATABASE](../../t-sql/statements/alter-database-transact-sql-compatibility-level.md)
 - [Mise en miroir de bases de données ALTER DATABASE](../../t-sql/statements/alter-database-transact-sql-database-mirroring.md)
 - [Statistiques](../../relational-databases/statistics/statistics.md)
-- [CREATE DATABASE](../../t-sql/statements/create-database-transact-sql.md?view=azuresqldb-currentls)
+- [CREATE DATABASE](../../t-sql/statements/create-database-transact-sql.md)
 - [Activer et désactiver le suivi des modifications](../../relational-databases/track-changes/enable-and-disable-change-tracking-sql-server.md)
 - [DATABASEPROPERTYEX](../../t-sql/functions/databasepropertyex-transact-sql.md)
 - [DROP DATABASE](../../t-sql/statements/drop-database-transact-sql.md)
@@ -2385,13 +2385,13 @@ SET QUERY_STORE = ON
         [SQL Server](alter-database-transact-sql-set-options.md?view=sql-server-ver15&preserve-view=true)
     :::column-end:::
     :::column:::
-        [Base de données SQL](alter-database-transact-sql-set-options.md?view=azuresqldb-current)
+        [Base de données SQL](alter-database-transact-sql-set-options.md?view=azuresqldb-current&preserve-view=true)
     :::column-end:::
     :::column:::
         **_\* SQL Managed Instance \*_** &nbsp;
     :::column-end:::
     :::column:::
-        [Azure Synapse<br />Analytics](alter-database-transact-sql-set-options.md?view=azure-sqldw-latest)
+        [Azure Synapse<br />Analytics](alter-database-transact-sql-set-options.md?view=azure-sqldw-latest&preserve-view=true)
     :::column-end:::
 :::row-end:::
 
@@ -3161,7 +3161,7 @@ SET QUERY_STORE = ON
 - [Niveau de compatibilité ALTER DATABASE](../../t-sql/statements/alter-database-transact-sql-compatibility-level.md)
 - [Mise en miroir de bases de données ALTER DATABASE](../../t-sql/statements/alter-database-transact-sql-database-mirroring.md)
 - [Statistiques](../../relational-databases/statistics/statistics.md)
-- [CREATE DATABASE](../../t-sql/statements/create-database-transact-sql.md?view=azuresqldb-mi-current)
+- [CREATE DATABASE](../../t-sql/statements/create-database-transact-sql.md?view=azuresqldb-mi-current&preserve-view=true)
 - [Activer et désactiver le suivi des modifications](../../relational-databases/track-changes/enable-and-disable-change-tracking-sql-server.md)
 - [DATABASEPROPERTYEX](../../t-sql/functions/databasepropertyex-transact-sql.md)
 - [DROP DATABASE](../../t-sql/statements/drop-database-transact-sql.md)
@@ -3179,10 +3179,10 @@ SET QUERY_STORE = ON
         [SQL Server](alter-database-transact-sql-set-options.md?view=sql-server-ver15&preserve-view=true)
     :::column-end:::
     :::column:::
-        [Base de données SQL](alter-database-transact-sql-set-options.md?view=azuresqldb-current)
+        [Base de données SQL](alter-database-transact-sql-set-options.md?view=azuresqldb-current&preserve-view=true)
     :::column-end:::
     :::column:::
-        [SQL Managed Instance](alter-database-transact-sql-set-options.md?view=azuresqldb-mi-current)
+        [SQL Managed Instance](alter-database-transact-sql-set-options.md?view=azuresqldb-mi-current&preserve-view=true)
     :::column-end:::
     :::column:::
         **_\* Azure Synapse<br />Analytics \*_** &nbsp;
@@ -3320,7 +3320,7 @@ SELECT name, is_result_set_caching_on FROM sys.databases
 WHERE name = <'Your_Database_Name'>
 ```
 
-Exécutez cette commande pour vérifier si une requête a été exécutée avec un résultat mis en cache.  La colonne result_cache_hit retourne 1 pour la correspondance dans le cache, 0 pour l’absence dans le cache et des valeurs négatives reflétant les raisons pour lesquelles la mise en cache du jeu de résultats n’a pas été utilisée.  Pour plus d’informations, consultez [sys.dm_pdw_exec_requests](../../relational-databases/system-dynamic-management-views/sys-dm-pdw-exec-requests-transact-sql.md?view=aps-pdw-2016-au7).  
+Exécutez cette commande pour vérifier si une requête a été exécutée avec un résultat mis en cache.  La colonne result_cache_hit retourne 1 pour la correspondance dans le cache, 0 pour l’absence dans le cache et des valeurs négatives reflétant les raisons pour lesquelles la mise en cache du jeu de résultats n’a pas été utilisée.  Pour plus d’informations, consultez [sys.dm_pdw_exec_requests](../../relational-databases/system-dynamic-management-views/sys-dm-pdw-exec-requests-transact-sql.md?view=aps-pdw-2016-au7&preserve-view=true).  
 
 ```sql
 SELECT request_id, command, result_cache_hit FROM sys.dm_pdw_exec_requests

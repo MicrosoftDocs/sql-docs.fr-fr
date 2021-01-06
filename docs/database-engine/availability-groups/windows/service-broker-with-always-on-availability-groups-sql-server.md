@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - Service Broker, AlwaysOn Availability Groups
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 881c20e5-1c99-44eb-b393-09fc5ea0f122
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 8b9b95e53ad920c712fe9d5da02f0f9a0b4f1095
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 521d66002a1ad3d2ead2a906dc40a87d22ae220a
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583865"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642105"
 ---
 # <a name="service-broker-with-always-on-availability-groups-sql-server"></a>Service Broker avec les groupes de disponibilité Always On (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

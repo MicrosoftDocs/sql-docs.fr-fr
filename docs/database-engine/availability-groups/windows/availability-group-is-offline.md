@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: end-user-help
 f1_keywords:
 - sql13.swb.agdashboard.agp2online.issues.f1
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 093c5208-bf7a-49f4-a546-72b48197cadf
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 92cd76bfa1c1228c9a83f98350952daeb37fc2f5
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 56d79fedca8a5cdd0d91be2728430f5edbdab9ab
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584714"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641208"
 ---
 # <a name="always-on-availability-group-is-offline"></a>Le groupe de disponibilité Always On est hors connexion
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

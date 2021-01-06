@@ -6,7 +6,7 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], interoperability
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 53e98134-e274-4dfd-8b72-0cc0fd5c800e
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: fd18ca39f11525f3fd91f759ff34f4ce6ebd0dbb
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 4f15bfe798c4fdec07be55f9dbb871c2980bc777
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85789702"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642067"
 ---
 # <a name="database-mirroring-and-log-shipping-sql-server"></a>Mise en miroir de bases de données et copie des journaux de transaction (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "85789702"
   
  Pendant une session de copie des journaux de transaction, les travaux de sauvegarde situés dans la base de données primaire entraînent la création de sauvegardes des journaux dans un dossier de sauvegarde. À partir de cet endroit, les sauvegardes sont copiées par les travaux de copie des serveurs secondaires. Pour que les travaux de sauvegarde et de copie réussissent, ils doivent avoir accès au dossier de sauvegarde de la copie des journaux de transaction. Pour optimiser la disponibilité du serveur principal, il est recommandé d'installer le dossier de sauvegarde à un emplacement de sauvegarde partagé sur un ordinateur hôte distinct. Vérifiez que tous les serveurs de copie des journaux de transaction, notamment le serveur miroir/principal, peuvent accéder à l’emplacement de sauvegarde partagé (connu sous le nom de *partage de sauvegarde*).  
   
- Pour permettre la poursuite de la copie des journaux de transaction après le basculement de la mise en miroir de base de données, vous devez également configurer le serveur miroir en tant que serveur principal, à l'aide de la même configuration que celle utilisée pour la base de données primaire ou la base de données principale. La base de données miroir est en état de restauration, ce qui empêche les travaux de sauvegarde de sauvegarder le journal dans celle-ci. De cette manière, la base de données miroir/primaire n'interfère pas avec la base de données principale/primaire dont les sauvegardes des journaux sont actuellement copiées par les serveurs secondaires. Pour empêcher les fausses alertes, quand un travail de sauvegarde s’exécute sur la base de données miroir/primaire, le travail de sauvegarde enregistre un message dans la table**log_shipping_monitor_history_detail** et le travail de l’Agent retourne un état de réussite.  
+ Pour permettre la poursuite de la copie des journaux de transaction après le basculement de la mise en miroir de base de données, vous devez également configurer le serveur miroir en tant que serveur principal, à l'aide de la même configuration que celle utilisée pour la base de données primaire ou la base de données principale. La base de données miroir est en état de restauration, ce qui empêche les travaux de sauvegarde de sauvegarder le journal dans celle-ci. De cette manière, la base de données miroir/primaire n'interfère pas avec la base de données principale/primaire dont les sauvegardes des journaux sont actuellement copiées par les serveurs secondaires. Pour empêcher les fausses alertes, quand un travail de sauvegarde s’exécute sur la base de données miroir/primaire, le travail de sauvegarde enregistre un message dans la table **log_shipping_monitor_history_detail** et le travail de l’Agent retourne un état de réussite.  
   
  La base de données miroir/primaire est inactive dans la session de copie des journaux de transaction. Cependant, si la mise en miroir bascule, la base de données miroir précédente se met en ligne en tant que base de données principale. À ce stade, cette base de données joue également le rôle de base de données primaire de copie des journaux de transaction. Les travaux de sauvegarde de la copie des journaux de transaction qui ne pouvaient pas précédemment copier de journaux sur cette base de données, commencent la copie des journaux de transaction. À l'inverse, un basculement entraîne la transformation de l'ancienne base de données principale/primaire en une nouvelle base de données miroir/primaire ainsi que son passage à l'état de restauration, tandis que les travaux de sauvegarde de cette base de données cessent de sauvegarder le journal.  
   

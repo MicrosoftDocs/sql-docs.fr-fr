@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 08/24/2016
 ms.reviewer: ''
 ms.prod: sql
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 helpviewer_keywords:
 - clusters [SQL Server], preinstallation checklist
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a655225d-8c54-4b30-95fd-31f588167899
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: fd95dd20cf72900a85c675c0e6b89689553d55f5
-ms.sourcegitcommit: 821e7039a342bf76306d66c61db247dc2caabc46
+ms.openlocfilehash: a59216090f680492bf41aec72711c2e38f62034d
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96999241"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642905"
 ---
 # <a name="before-installing-failover-clustering"></a>Avant l'installation du clustering de basculement
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

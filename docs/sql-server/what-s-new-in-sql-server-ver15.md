@@ -9,12 +9,12 @@ ms.topic: article
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-ver15'
-ms.openlocfilehash: 28b2d4cf892aa21b44d989fb56351a6ab5448bff
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b04cb475579c73a26ec5977ce52b9521ce69552a
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482285"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642642"
 ---
 # <a name="whats-new-in-sql-server-2019"></a>Nouveautés de [!INCLUDE[sql-server-2019](../includes/sssqlv15-md.md)]
 
@@ -222,8 +222,8 @@ Pour commencer à travailler avec [!INCLUDE[ssNoVersion](../includes/ssnoversion
 
 |Nouvelle fonctionnalité ou mise à jour | Détails |
 |:---|:---| 
-|Nouvelles options de configuration de la mémoire | Définit les configurations de serveur *min server memory (Mo)* et *max server memory (Mo)* au cours de l’installation. Consultez la [page de configuration du moteur de base de données - Mémoire](https://docs.microsoft.com/sql/sql-server/install/instance-configuration?view=sql-server-ver15#memory) ainsi que les paramètres `USESQLRECOMMENDEDMEMORYLIMITS`, `SQLMINMEMORY` et `SQLMAXMEMORY` dans [Installer SQL Server à partir de l’invite de commandes](../database-engine/install-windows/install-sql-server-from-the-command-prompt.md#Install). La valeur proposée s’aligne sur les lignes directrices de configuration de la mémoire dans les [options de configuration de la mémoire du serveur](../database-engine/configure-windows/server-memory-server-configuration-options.md#manually).| 
-|Nouvelles options d’installation du parallélisme | Définit la configuration du serveur de *degré maximal de parallélisme* pendant l’installation. Consultez la [page de configuration du moteur de base de données - MaxDOP](https://docs.microsoft.com/sql/sql-server/install/instance-configuration?view=sql-server-ver15#maxdop) ainsi que le paramètre `SQLMAXDOP` dans [Installer SQL Server à partir de l’invite de commandes](../database-engine/install-windows/install-sql-server-from-the-command-prompt.md#Install). La valeur par défaut s’aligne sur les lignes directrices du degré maximal de parallélisme dans [Configurer l’option de configuration du serveur de degré maximal de parallélisme](../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md#Guidelines).| 
+|Nouvelles options de configuration de la mémoire | Définit les configurations de serveur *min server memory (Mo)* et *max server memory (Mo)* au cours de l’installation. Consultez la [page de configuration du moteur de base de données - Mémoire](./install/instance-configuration.md#memory) ainsi que les paramètres `USESQLRECOMMENDEDMEMORYLIMITS`, `SQLMINMEMORY` et `SQLMAXMEMORY` dans [Installer SQL Server à partir de l’invite de commandes](../database-engine/install-windows/install-sql-server-from-the-command-prompt.md#Install). La valeur proposée s’aligne sur les lignes directrices de configuration de la mémoire dans les [options de configuration de la mémoire du serveur](../database-engine/configure-windows/server-memory-server-configuration-options.md#manually).| 
+|Nouvelles options d’installation du parallélisme | Définit la configuration du serveur de *degré maximal de parallélisme* pendant l’installation. Consultez la [page de configuration du moteur de base de données - MaxDOP](./install/instance-configuration.md#maxdop) ainsi que le paramètre `SQLMAXDOP` dans [Installer SQL Server à partir de l’invite de commandes](../database-engine/install-windows/install-sql-server-from-the-command-prompt.md#Install). La valeur par défaut s’aligne sur les lignes directrices du degré maximal de parallélisme dans [Configurer l’option de configuration du serveur de degré maximal de parallélisme](../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md#Guidelines).| 
 |Avertissement d’installation sur la clé de produit de licence serveur/CAL|Si une clé de produit de licence Enterprise Server/CAL est entrée et que l’ordinateur a plus de 20 cœurs physiques, ou 40 cœurs logiques lorsque l’hyper-threading est activé, un avertissement s’affiche lors de l’installation. Les utilisateurs peuvent toujours prendre note de la limitation et continuer l’installation, ou entrer une clé de licence qui prend en charge le nombre maximal de processeurs du système d’exploitation.|
 | &nbsp; | &nbsp; |
 

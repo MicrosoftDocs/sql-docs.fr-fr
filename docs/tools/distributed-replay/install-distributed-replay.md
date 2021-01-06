@@ -11,12 +11,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 14f3a13e566fc56332c79fd104ef584be098cda7
-ms.sourcegitcommit: a9f16d7819ed0e2b7ad8f4a7d4d2397437b2bbb2
+ms.openlocfilehash: 29c96381f9781df7cb1cbedb351cce1524f440fd
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88714187"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642624"
 ---
 # <a name="install-distributed-replay"></a>Installer Distributed Replay
 
@@ -46,7 +46,7 @@ Vous pouvez installer Distributed Replay de trois manières :
 -   Après l'installation, le service contrôleur, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Distributed Replay Controller, doit s'exécuter avant le démarrage du service Distributed Replay Client sur les clients.  
   
 > [!NOTE]  
->  Pour supprimer ou modifier des fonctionnalités Distributed Replay, utilisez la fenêtre **Programmes et fonctionnalités** du **Panneau de configuration**Windows. Sélectionnez [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] dans la fenêtre **Désinstaller ou modifier un programme** , puis cliquez sur **Supprimer** pour ouvrir l'Assistant Installation de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] . Dans la page **Sélectionner les composants** , sélectionnez les fonctionnalités Distributed Replay à supprimer.  
+>  Pour supprimer ou modifier des fonctionnalités Distributed Replay, utilisez la fenêtre **Programmes et fonctionnalités** du **Panneau de configuration** Windows. Sélectionnez [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] dans la fenêtre **Désinstaller ou modifier un programme** , puis cliquez sur **Supprimer** pour ouvrir l'Assistant Installation de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] . Dans la page **Sélectionner les composants** , sélectionnez les fonctionnalités Distributed Replay à supprimer.  
   
  **Configuration requise :**  
   
@@ -192,7 +192,7 @@ setup /q /ACTION=Install /FEATURES=DREPLAY_CLT /IAcceptSQLServerLicenseTerms /CL
   
 -   Les valeurs de la ligne de commande remplacent les valeurs du fichier de configuration.  
   
- Pour plus d’informations sur l’utilisation d’un fichier de configuration, consultez [Installer SQL Server 2016 à l’aide d’un fichier de configuration](../../database-engine/install-windows/install-sql-server-using-a-configuration-file.md?view=sql-server-ver15).  
+ Pour plus d’informations sur l’utilisation d’un fichier de configuration, consultez [Installer SQL Server 2016 à l’aide d’un fichier de configuration](../../database-engine/install-windows/install-sql-server-using-a-configuration-file.md).  
   
 > [!IMPORTANT]  
 >  Une fois que vous avez installé Distributed Replay, vous devez créer des règles de pare-feu sur le contrôleur et les ordinateurs clients, et accorder des autorisations à chaque ordinateur client sur le serveur cible. Pour plus d’informations, consultez [Suivre les étapes consécutives à l’installation](../../tools/distributed-replay/complete-the-post-installation-steps.md).  

@@ -6,7 +6,7 @@ ms.date: 05/17/2016
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], deployment
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: fdcf2251-9895-44c6-b81e-768fef32e732
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 9fcccee3820f2b7b99da3f5c1f742f17edbde68d
-ms.sourcegitcommit: 2f868a77903c1f1c4cecf4ea1c181deee12d5b15
+ms.openlocfilehash: 0aca4b4b5250232f065b02ca21be7187ab42c119
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91671122"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641483"
 ---
 # <a name="prerequisites-restrictions-and-recommendations-for-database-mirroring"></a>Conditions préalables, limitations et recommandations relatives à la mise en miroir de bases de données
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -65,7 +65,7 @@ ms.locfileid: "91671122"
   
 ##  <a name="restrictions"></a><a name="Restrictions"></a> Restrictions  
   
--   Seules les bases de données utilisateur peuvent être mises en miroir. Vous ne pouvez pas mettre en miroir les bases de données **master**, **msdb**, **tempdb**ou **model** .  
+-   Seules les bases de données utilisateur peuvent être mises en miroir. Vous ne pouvez pas mettre en miroir les bases de données **master**, **msdb**, **tempdb** ou **model** .  
   
 -   Une base de données mise en miroir ne peut pas être renommée pendant une session de mise en miroir de bases de données.  
   

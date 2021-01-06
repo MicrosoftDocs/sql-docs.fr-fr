@@ -6,19 +6,19 @@ ms.date: 05/17/2016
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.configdbmsecurwiz.serviceaccounts.f1
 ms.assetid: d58d8f93-7888-4d66-af4d-969ef6a2dbee
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 04f55c8081f6c2a6aa7cfcc1b1d9c1ac8d9d31fb
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: e3493525e67edcaf75ca6bbe7e3f3ef087ea71c0
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85735150"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641285"
 ---
 # <a name="configure-database-mirroring-security-wizard-service-accounts"></a>Assistant Configurer la sécurité de la mise en miroir de bases de données : Comptes de service
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: troubleshooting
 f1_keywords:
 - sql13.swb.agdashboard.arp1rolehealthy.issues.f1
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: ebb2c9f4-2097-4688-b4fb-8f0571047317
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 9d5257ddbdb4e5506339fa2047fe42bf7c92a668
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: e5ef8c8a912854c48489cb5860bb3813bdc6fd10
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584632"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643168"
 ---
 # <a name="availability-replica-does-not-have-a-healthy-role-for-an-always-on-availability-group"></a>Le réplica de disponibilité n’a pas un rôle sain pour un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

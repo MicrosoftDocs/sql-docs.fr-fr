@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.failoverwizard.results.f1
@@ -15,12 +15,12 @@ f1_keywords:
 ms.assetid: d80b14eb-60db-4351-90ad-6c179d235aa3
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 080b9b8b20af9abcf6fe37d0c26fc92779be4593
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 96c2ccde671737e55e4c301ab1f755a8192ed10f
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583931"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641458"
 ---
 # <a name="results-page-always-on-availability-group-wizards"></a>Page Résultats (Assistants de groupe de disponibilité Always On)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

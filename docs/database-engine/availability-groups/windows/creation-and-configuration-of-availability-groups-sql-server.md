@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: reference
 helpviewer_keywords:
 - Availability Groups [SQL Server], deploying
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7f89fab8-6ee2-4273-9de0-e594bfb9407f
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 0d61f96ada7382c32f3998230cbeba5606dba6d9
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 83919dc2d8e8ce690bb9b44585e8658f6b3bf485
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584394"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643253"
 ---
 # <a name="reference-for-the-creation-and-configuration-of-always-on-availability-groups"></a>Informations de référence sur la création et la configuration des groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

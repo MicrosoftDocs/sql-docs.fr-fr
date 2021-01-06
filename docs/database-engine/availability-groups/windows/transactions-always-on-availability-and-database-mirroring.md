@@ -6,7 +6,7 @@ ms.custom: seo-lt-2019
 ms.date: 12/11/2018
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], interoperability
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 9f7ed895-ad65-43e3-ba08-00d7bff1456d
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 10e0f4355f3415708e5783595b048f7ae3b540d0
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 79e04e64a4fc89bb3e745d67b1cdbe929850b6ec
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583738"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642964"
 ---
 # <a name="transactions---availability-groups-and-database-mirroring"></a>Transactions - Groupes de disponibilité Always On et mise en miroir de bases de données
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

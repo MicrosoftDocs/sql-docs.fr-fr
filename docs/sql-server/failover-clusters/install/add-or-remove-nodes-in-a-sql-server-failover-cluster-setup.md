@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 12/13/2019
 ms.reviewer: ''
 ms.prod: sql
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 helpviewer_keywords:
 - adding nodes
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: fe20dca9-a4c1-4d32-813d-42f1782dfdd3
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 5c65c099af7ffc6346aaf0e73a26c5ee7e16f7ce
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 5cdf48d9530040886021f37fe551f77531131c81
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96121308"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642890"
 ---
 # <a name="add-or-remove-nodes-in-a-failover-cluster-instance-setup"></a>Ajouter ou supprimer des nœuds dans une instance de cluster de basculement (installation)
 

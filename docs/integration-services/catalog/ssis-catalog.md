@@ -15,12 +15,12 @@ f1_keywords:
 ms.assetid: 24bd987e-164a-48fd-b4f2-cbe16a3cd95e
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: dd2fffbce8d2db5bb5bafbcb49b1f37ea48873c7
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: a8ed14b14198bb95db838e76ca07bffe5875ce69
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91726044"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642586"
 ---
 # <a name="ssis-catalog"></a>Catalogue SSIS
 
@@ -173,7 +173,7 @@ Pour exécuter le **travail de maintenance du serveur SSIS**, SSIS crée la conn
   
  Le tableau suivant répertorie les noms des propriétés apparaissant dans la boîte de dialogue **Propriétés du catalogue** et les propriétés correspondantes en vue de base de données.  
   
-|Nom de la propriété (boîte de dialogue**Propriétés du catalogue** )|Nom de la propriété (vue de base de données)|  
+|Nom de la propriété (boîte de dialogue **Propriétés du catalogue** )|Nom de la propriété (vue de base de données)|  
 |---------------------------------------------------------|-------------------------------------|  
 |Nom de l'algorithme de chiffrement|ENCRYPTION_ALGORITHM|  
 |Nettoyer les journaux régulièrement|OPERATION_CLEANUP_ENABLEDâ€‹|  
@@ -456,7 +456,7 @@ Pour exécuter le **travail de maintenance du serveur SSIS**, SSIS crée la conn
            FROM Executable File = 'C:\Program Files\Microsoft SQL Server\YourSQLServerDefaultCompatibilityLevel\DTS\Binn\Microsoft.SqlServer.IntegrationServices.Server.dll'  
     ```  
 
-    Vous pouvez trouver la valeur de `YourSQLServerDefaultCompatibilityLevel` dans une [liste des niveaux de compatibilité par défaut de SQL Server](../../t-sql/statements/alter-database-transact-sql-compatibility-level.md?view=sql-server-ver15#arguments).
+    Vous pouvez trouver la valeur de `YourSQLServerDefaultCompatibilityLevel` dans une [liste des niveaux de compatibilité par défaut de SQL Server](../../t-sql/statements/alter-database-transact-sql-compatibility-level.md#arguments).
   
     [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] Les procédures stockées CLR exigent l’octroi d’autorisations UNSAFE à la connexion, car cette dernière nécessite un accès supplémentaire aux ressources restreintes, par exemple l’API Win32 de Microsoft. Pour plus d’informations sur l’autorisation de code UNSAFE, consultez [Création d’un assembly](../../relational-databases/clr-integration/assemblies/creating-an-assembly.md).  
 
@@ -655,7 +655,7 @@ Si l’option **Activer la prise en charge d’Always On** du menu contextuel se
   
 2.  Supprimez la base de données SSISDB de tous les **nœuds de réplica**.  
   
-3.  Mettez à niveau la base de données SSISDB sur le **nœud primaire**. Dans**l’Explorateur d’objets** de SQL Server Management Studio, développez **Catalogues Integration Services**, cliquez avec le bouton droit sur **SSISDB**, puis sélectionnez **Mise à niveau de la base de données**. Suivez les instructions de l’ **Assistant Mise à niveau de SSISDB** pour mettre à niveau la base de données. Lancez **l’Assistant Mise à niveau de SSIDB** localement sur le **nœud principal**.  
+3.  Mettez à niveau la base de données SSISDB sur le **nœud primaire**. Dans **l’Explorateur d’objets** de SQL Server Management Studio, développez **Catalogues Integration Services**, cliquez avec le bouton droit sur **SSISDB**, puis sélectionnez **Mise à niveau de la base de données**. Suivez les instructions de l’ **Assistant Mise à niveau de SSISDB** pour mettre à niveau la base de données. Lancez **l’Assistant Mise à niveau de SSIDB** localement sur le **nœud principal**.  
   
 4.  Suivez les instructions de l’[étape 2 : Ajouter la base de données SSISDB à un groupe de disponibilité Always On](#Step2) pour rajouter la base de données SSISDB à un groupe de disponibilité.  
   

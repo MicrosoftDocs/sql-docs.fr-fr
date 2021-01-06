@@ -5,17 +5,17 @@ ms.custom: seo-lt-2019
 ms.date: 03/04/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 ms.assetid: 68074bd5-be9d-4487-a320-5b51ef8e2b2d
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 4a4d15d2a1475acfc5c4924e68a60b48f698c4ae
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 61b9788f0f8ee76979869c9775d81990435bdb5b
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127573"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642692"
 ---
 # <a name="view-and-read-failover-cluster-instance-diagnostics-log"></a>Afficher et lire le journal de diagnostic de l'instance de cluster de basculement
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

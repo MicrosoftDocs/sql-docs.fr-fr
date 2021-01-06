@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 helpviewer_keywords:
 - clusters [SQL Server], recovery from failure
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3d151d0c-e841-4325-8606-c094de37d7d1
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 7d747370e5daf2b26d9508e0ca681eae77523e6e
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 91e18137748b34012c73860071fa0be93af0277f
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127594"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642748"
 ---
 # <a name="recover-from-failover-cluster-instance-failure"></a>Récupérer à partir d’une défaillance de cluster de basculement
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

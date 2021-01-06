@@ -6,19 +6,19 @@ ms.date: 03/07/2017
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: database-mirroring
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.dbmmonitor.setwarningthreshold.f1
 ms.assetid: 17f93147-e7d9-4092-b4c2-c11b38051171
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 1d94a2c804f67657581f5ead059e6951f410e05f
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 999b5d9e1cf50a9ffc2ff349dafac73de9a1465b
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96126144"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641942"
 ---
 # <a name="set-warning-thresholds"></a>Définir les seuils d'avertissement
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: reference
 helpviewer_keywords:
 - Availability Groups [SQL Server], troubleshooting
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: afa5289c-641a-4c03-8749-44862384ec5f
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 080cd11de04984114fd5eda5f1d8b2e78dfdaca3
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: ac6918ca2bc7a89adbad0fe531e1bf94948a9090
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584768"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641434"
 ---
 # <a name="policy-based-management-for-operational-issues-with-always-on-availability-groups"></a>Gestion basée sur des stratégies pour les problèmes opérationnels avec des groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

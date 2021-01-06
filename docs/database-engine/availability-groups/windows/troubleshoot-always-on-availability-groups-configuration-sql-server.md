@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting [SQL Server], deploying
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 8c222f98-7392-4faf-b7ad-5fb60ffa237e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 4f946cb701d28100810e0c9d84483b5472e2b1d5
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 0fbdfdced5e0563e86775e75aaf187d6f26a0a38
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583741"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641515"
 ---
 # <a name="troubleshoot-always-on-availability-groups-configuration-sql-server"></a>Résoudre des problèmes de configuration des groupes de disponibilité Always On (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

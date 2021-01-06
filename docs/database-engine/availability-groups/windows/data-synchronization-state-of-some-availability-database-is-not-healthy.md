@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: end-user-help
 f1_keywords:
 - sql13.swb.agdashboard.drp3datasynchealthy.issues.f1
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 89f95d15-33c6-4768-bccd-9dbf8c4f49a9
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: b95864974db04a3ce32c2e86b48680b24955d88d
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: ab55e83942a2591a335759ae3df82b42d3d9db9b
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584389"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97643245"
 ---
 # <a name="data-synchronization-state-of-some-availability-database-is-not-healthy"></a>L'état de synchronisation des données d'une base de données de disponibilité n'est pas sain
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

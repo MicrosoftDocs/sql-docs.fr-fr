@@ -5,17 +5,17 @@ ms.custom: seodec18
 ms.date: 10/24/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 ms.assetid: ''
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 4f74254f455834a534ee9a4be9c196be2d0a8069
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 4ccfc459fb5dbbc2a607fd0eb87853a776820098
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584049"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642479"
 ---
 # <a name="use-read-scale-with-always-on-availability-groups"></a>Utiliser une échelle lecture avec des groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

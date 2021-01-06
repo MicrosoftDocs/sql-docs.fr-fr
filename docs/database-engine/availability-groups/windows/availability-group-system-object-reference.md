@@ -5,17 +5,17 @@ ms.custom: seo-lt-2019
 ms.date: 04/03/2010
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: reference
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: cf0651a7b38027d420b9e56833a225ea258f71e0
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 340fcfa12f3432a09821132f44e8d58672be8198
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480360"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97640927"
 ---
 # <a name="always-on-availability-group-system-object-reference"></a>Référence d’objet système du groupe de disponibilité Always On
 

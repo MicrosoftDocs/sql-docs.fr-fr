@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 08/09/2018
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.agdashboard.f1
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c9ba2589-139e-42bc-99e1-94546717c64d
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 80b7f3e83af181676f09a6dc38b3652ae6142c89
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: de6d20cbd6e1b185b9e06e057c0cbe91c590fb48
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583657"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641785"
 ---
 # <a name="use-the-always-on-availability-group-dashboard-sql-server-management-studio"></a>Utiliser le tableau de bord du groupe de disponibilité Always On (SQL Server Management Studio)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

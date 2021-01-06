@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: failover-cluster-instance
 ms.topic: how-to
 helpviewer_keywords:
 - modifying IP addresses
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b685f400-cbfe-4c5d-a070-227a1123dae4
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: fce7ec31d8cc3ff8e3c9b0cbbd4a25039c998419
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 96dfbacbdc162768b13a56c7a36c61eabecee79a
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127700"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642791"
 ---
 # <a name="change-the-ip-address-of-a-failover-cluster-instance"></a>Modifier l'adresse IP d'une instance de cluster de basculement
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

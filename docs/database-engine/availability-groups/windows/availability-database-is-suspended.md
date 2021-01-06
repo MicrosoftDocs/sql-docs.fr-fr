@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: end-user-help
 f1_keywords:
 - sql13.swb.agdashboard.drp1notsuspended.issues.f1
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6baee70f-848c-4e86-b20d-78875c0f82cb
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 5eb1863ae65e41f1f496333e5daa78a66b311bae
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 5843b82c3be84acf24e04ab9dac4b616bed857a6
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584712"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641227"
 ---
 # <a name="availability-database-is-suspended-for-an-availability-group"></a>Une base de données de disponibilité est suspendue dans un groupe de disponibilité
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 07/22/2020
 monikerRange: '>= sql-server-2016'
-ms.openlocfilehash: af3715492f71a9b4015f007e303c8a71e6309d38
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0a62b9bae20ec9f45d73c2a891b50dda746d568d
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472190"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642297"
 ---
 # <a name="transact-sql-debugger"></a>Débogueur Transact-SQL
 
@@ -76,4 +76,4 @@ Chaque fois que le débogueur suspend l'exécution du code à une instruction [!
 
 ## <a name="see-also"></a>Voir aussi
 
-[Éditeurs de texte et de requête &#40;SQL Server Management Studio&#41;](../f1-help/database-engine-query-editor-sql-server-management-studio.md?view=sql-server-ver15)
+[Éditeurs de texte et de requête &#40;SQL Server Management Studio&#41;](../f1-help/database-engine-query-editor-sql-server-management-studio.md)

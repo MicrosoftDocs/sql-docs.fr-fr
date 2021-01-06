@@ -5,19 +5,19 @@ ms.custom: seo-lt-2019
 ms.date: 05/17/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], databases
 ms.assetid: 498eb3fb-6a43-434d-ad95-68a754232c45
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 926dfad7107c4c5459223969c2995d141838341c
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: 262e797573690f8a648b552e782b0161f41ca7cc
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583802"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97642990"
 ---
 # <a name="start-data-movement-on-an-always-on-secondary-database-sql-server"></a>Démarrer un déplacement de données sur une base de données secondaire AlwaysOn (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

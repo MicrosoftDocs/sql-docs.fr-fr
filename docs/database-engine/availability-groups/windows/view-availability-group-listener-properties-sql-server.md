@@ -5,7 +5,7 @@ ms.custom: seo-lt-2019
 ms.date: 07/11/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: conceptual
 f1_keywords:
 - sql13.swb.availabilitygrouplistenerproperties.general.f1
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: aca0d016-3228-40b8-bdc3-285ed6d9b280
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 723fc0d84a01de8435ebb1f7c0c4248eb0b1c25a
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: b3b77706425eae89bd74b4803859e4a5c029ad17
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94583385"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97641699"
 ---
 # <a name="view-availability-group-listener-properties-sql-server"></a>Afficher les propriétés d’un écouteur de groupe de disponibilité (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
