@@ -7,14 +7,14 @@ ms.date: 10/14/2020
 ms.topic: how-to
 author: dphansen
 ms.author: davidph
-ms.custom: seo-lt-2019, contperfq4
+ms.custom: seo-lt-2019, contperf-fy20q4
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: d07154cdde04c173f1d775df9597f5ccdbc62e61
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 498021cc74f93ed216088ae1756f386604c07bb5
+ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470710"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878732"
 ---
 # <a name="grant-users-permission-to-execute-python-and-r-scripts-with-sql-server-machine-learning-services"></a>Octroi d’autorisations d’exécution de scripts Python et R aux utilisateurs avec SQL Server Machine Learning Services
 [!INCLUDE [SQL Server 2016 SQL MI](../../includes/applies-to-version/sqlserver2016-asdbmi.md)]

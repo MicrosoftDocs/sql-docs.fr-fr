@@ -7,14 +7,14 @@ ms.date: 07/14/2020
 ms.topic: conceptual
 author: garyericson
 ms.author: garye
-ms.custom: contperfq1, seo-lt-2019
+ms.custom: contperf-fy21q1, seo-lt-2019
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15'
-ms.openlocfilehash: 3704d0faa89ffbc2151f31aa6e41b320e0d33ca0
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 63138dbd9ef2acd45dfc508bac20bd6694d49d90
+ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471300"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878885"
 ---
 # <a name="security-architecture-for-the-extensibility-framework-in-sql-server-machine-learning-services"></a>Architecture de sécurité de l’infrastructure d’extensibilité dans SQL Server Machine Learning Services
 

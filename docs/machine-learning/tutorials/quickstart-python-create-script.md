@@ -8,14 +8,14 @@ ms.date: 09/28/2020
 ms.topic: quickstart
 author: dphansen
 ms.author: davidph
-ms.custom: contperfq1
+ms.custom: contperf-fy21q1
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 70fe76fb70311f2b216eeb7611aeb3553ae75d5f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b911915b612a198e405811aa0f3e5b685f0adbca
+ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470300"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878722"
 ---
 # <a name="quickstart-run-simple-python-scripts-with-sql-machine-learning"></a>Démarrage rapide : Exécution de scripts Python simples avec le Machine Learning SQL
 [!INCLUDE [SQL Server 2017 SQL MI](../../includes/applies-to-version/sqlserver2017-asdbmi.md)]

@@ -41,14 +41,14 @@ ms.assetid: 05cfae9b-96d5-4a35-a098-0bc3a548bcfc
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.custom: seo-lt-2019, contperfq1
+ms.custom: seo-lt-2019, contperf-fy21q1
 ms.date: 08/28/2020
-ms.openlocfilehash: 7450a77549d05dab5a024b39be6d2b4aef6c09de
-ms.sourcegitcommit: b3a711a673baebb2ff10d7142b209982b46973ae
+ms.openlocfilehash: 87fd12a17b86a47e6fec1b235ae9e9a21fde6e45
+ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93364834"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878951"
 ---
 # <a name="sql-server-management-studio-ssms-query-editor"></a>Éditeur de requêtes SQL Server Management Studio (SSMS)
 
@@ -70,7 +70,7 @@ Vous pouvez utiliser l’Éditeur de requête pour créer et exécuter des scrip
 
 Quand vous ouvrez l’Éditeur de requête, la barre d’outils Éditeur SQL, qui comporte les boutons suivants, s’affiche.
 
-Vous pouvez également ajouter la barre d’outils Éditeur SQL en sélectionnant le menu **Affichage** , **Barres d’outils** , puis **Éditeur SQL**. Si vous ajoutez la barre d’outils Éditeur SQL alors qu’aucune fenêtre de l’Éditeur de requête n’est ouverte, tous les boutons sont indisponibles.
+Vous pouvez également ajouter la barre d’outils Éditeur SQL en sélectionnant le menu **Affichage** , **Barres d’outils**, puis **Éditeur SQL**. Si vous ajoutez la barre d’outils Éditeur SQL alors qu’aucune fenêtre de l’Éditeur de requête n’est ouverte, tous les boutons sont indisponibles.
 
 ![Barre d’outils Éditeur](media/database-engine-query-editor-sql-server-management-studio/editor-toolbar.png)
 
@@ -158,7 +158,7 @@ Vous pouvez également retourner les résultats dans une grille en sélectionnan
 
 ### <a name="results-to-file-using-the-editor-toolbar"></a>Résultats dans un fichier à l’aide de la barre d’outils Éditeur
 
-Lors de l’exécution de la requête, la boîte de dialogue **Enregistrer les résultats** s’ouvre. Dans **Enregistrer dans** , sélectionnez le dossier dans lequel vous souhaitez enregistrer le fichier. Dans **Nom de fichier** , tapez le nom du fichier, puis sélectionnez **Enregistrer** pour enregistrer les résultats de la requête dans un fichier **Rapport** portant l’extension .rpt. Pour accéder aux options avancées, sélectionnez la flèche déroulante vers le bas qui se trouve sur le bouton **Enregistrer** , puis sélectionnez **Enregistrer avec l’encodage**.
+Lors de l’exécution de la requête, la boîte de dialogue **Enregistrer les résultats** s’ouvre. Dans **Enregistrer dans**, sélectionnez le dossier dans lequel vous souhaitez enregistrer le fichier. Dans **Nom de fichier**, tapez le nom du fichier, puis sélectionnez **Enregistrer** pour enregistrer les résultats de la requête dans un fichier **Rapport** portant l’extension .rpt. Pour accéder aux options avancées, sélectionnez la flèche déroulante vers le bas qui se trouve sur le bouton **Enregistrer**, puis sélectionnez **Enregistrer avec l’encodage**.
 
 Vous pouvez également retourner les résultats dans un fichier en sélectionnant Ctrl+Maj+F ou dans le [menu contextuel](#results-using-the-context-menu).
 
@@ -188,7 +188,7 @@ Ouvre une boîte de dialogue qui vous permet de spécifier les valeurs des param
 
 ## <a name="context-menu"></a>Menu contextuel
 
-Pour accéder au menu contextuel, *cliquez avec le bouton droit* n’importe où dans l’Éditeur de requête. Les options du menu contextuel sont similaires à celles de la barre d’outils Éditeur SQL. Le menu contextuel comporte les mêmes options que **Connexion** et **Exécution** , ainsi que d’autres options, comme **Insertion d’un extrait de code** et **Entourage avec**.
+Pour accéder au menu contextuel, *cliquez avec le bouton droit* n’importe où dans l’Éditeur de requête. Les options du menu contextuel sont similaires à celles de la barre d’outils Éditeur SQL. Le menu contextuel comporte les mêmes options que **Connexion** et **Exécution**, ainsi que d’autres options, comme **Insertion d’un extrait de code** et **Entourage avec**.
 
 ![Options](media/database-engine-query-editor-sql-server-management-studio/context-menu.png)
 
@@ -210,7 +210,7 @@ Il existe plus d’options **Connexion** dans le menu contextuel que dans la bar
 
 - **Déconnexion** : déconnecte l’Éditeur de requête actif du serveur.
 
-- **Déconnexion de toutes les requêtes**  : déconnecte toutes les connexions de requête.
+- **Déconnexion de toutes les requêtes** : déconnecte toutes les connexions de requête.
 
 - **Changement de connexion** : ouvre la boîte de dialogue Se connecter au serveur. Utilisez cette boîte de dialogue pour établir une connexion à un serveur différent.
 
@@ -264,7 +264,7 @@ Vous pouvez sélectionner l’option *Résultats* de votre choix dans le menu co
 
 - **Résultats dans une grille** : retourne les résultats de la requête sous forme d’une ou plusieurs grilles dans la fenêtre **Résultats**.
 
-- **Résultats dans un fichier** : lors de l’exécution de la requête, la boîte de dialogue **Enregistrer les résultats** s’ouvre. Dans **Enregistrer dans** , sélectionnez le dossier dans lequel vous souhaitez enregistrer le fichier. Dans **Nom de fichier** , tapez le nom du fichier, puis sélectionnez **Enregistrer** pour enregistrer les résultats de la requête dans un fichier **Rapport** avec l’extension .rpt. Pour accéder aux options avancées, sélectionnez la flèche déroulante vers le bas qui se trouve sur le bouton **Enregistrer** , puis sélectionnez **Enregistrer avec l’encodage**.
+- **Résultats dans un fichier** : lors de l’exécution de la requête, la boîte de dialogue **Enregistrer les résultats** s’ouvre. Dans **Enregistrer dans**, sélectionnez le dossier dans lequel vous souhaitez enregistrer le fichier. Dans **Nom de fichier**, tapez le nom du fichier, puis sélectionnez **Enregistrer** pour enregistrer les résultats de la requête dans un fichier **Rapport** avec l’extension .rpt. Pour accéder aux options avancées, sélectionnez la flèche déroulante vers le bas qui se trouve sur le bouton **Enregistrer**, puis sélectionnez **Enregistrer avec l’encodage**.
 
 ### <a name="properties-window-using-the-context-menu"></a>Fenêtre Propriétés à l’aide du menu contextuel
 

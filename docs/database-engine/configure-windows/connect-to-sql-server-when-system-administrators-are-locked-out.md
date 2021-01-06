@@ -1,7 +1,7 @@
 ---
 title: Se connecter à SQL Server quand les administrateurs système n’y ont plus accès | Microsoft Docs
 description: Découvrez comment accéder à nouveau à SQL Server en tant qu’administrateur système si vous avez été verrouillé par erreur.
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 ms.date: 05/20/2020
 ms.prod: sql
 ms.prod_service: high-availability
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c0c0082e-b867-480f-a54b-79f2a94ceb67
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 801602c78193f9fc3fa9cdab40b98c3dc3dd42e0
-ms.sourcegitcommit: 291ae8f6b72fd355f8f24ce5300339306293ea7e
+ms.openlocfilehash: 3b4cf5946fba4eb3c79150b29ef44bd232f9c155
+ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88512315"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878943"
 ---
 # <a name="connect-to-sql-server-when-system-administrators-are-locked-out"></a>Se connecter à SQL Server lorsque les administrateurs système n'y ont plus accès 
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -83,7 +83,7 @@ Suivez ces instructions lorsque vous êtes connecté à Windows en tant que memb
     > [!NOTE]  
     >  Certaines versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] n'ont pas d'onglet **Paramètres de démarrage** . Dans ce cas, sous l’onglet **Avancé** , double-cliquez sur **Paramètres de démarrage**. Les paramètres s'ouvrent dans une fenêtre très petite. Veillez à ne pas modifier les paramètres existants. Tout en bas, ajoutez un nouveau paramètre `;-m` , puis cliquez sur **OK**. (Il s'agit d'un point-virgule, suivi d'un trait d'union et d'un m minuscule.)  
   
-4.  Cliquez sur **OK**puis, après le message de redémarrage, cliquez avec le bouton droit sur le nom de votre serveur et cliquez sur **Redémarrer**.  
+4.  Cliquez sur **OK** puis, après le message de redémarrage, cliquez avec le bouton droit sur le nom de votre serveur et cliquez sur **Redémarrer**.  
   
 5.  Après le redémarrage de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , votre serveur passe en mode mono-utilisateur. Vérifiez que l’Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] n’est pas en cours d’exécution. S'il est démarré, il utilise votre unique connexion.  
   

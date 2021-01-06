@@ -1,6 +1,6 @@
 ---
 title: Options de configuration de la mémoire du serveur | Microsoft Docs
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 ms.date: 08/14/2019
 ms.prod: sql
 ms.prod_service: high-availability
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 29ce373e-18f8-46ff-aea6-15bbb10fb9c2
 author: pmasl
 ms.author: pelopes
-ms.openlocfilehash: 8620da6349efe012e9e0d75d6ddf5efada437832
-ms.sourcegitcommit: 039fb38c583019b3fd06894160568387a19ba04e
+ms.openlocfilehash: 71cab9c11aaa4f3dc569761fdfef407601162b1c
+ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87442813"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878904"
 ---
 # <a name="server-memory-configuration-options"></a>Options de configuration de la mémoire du serveur
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

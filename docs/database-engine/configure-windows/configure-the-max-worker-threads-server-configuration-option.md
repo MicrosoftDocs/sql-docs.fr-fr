@@ -1,7 +1,7 @@
 ---
 title: Configurer l’option de configuration de serveur max worker threads | Microsoft Docs
 description: Découvrez comment utiliser l’option max worker threads pour configurer le nombre de threads de travail disponibles pour SQL Server pour traiter certaines demandes.
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 ms.date: 04/14/2020
 ms.prod: sql
 ms.prod_service: high-availability
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: abeadfa4-a14d-469a-bacf-75812e48fac1
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: e1f2398e59fb7a0fee48f2d4c4e4a171c6044ca7
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 89da087dd829642653fee6ae8648af3c1c00c2a0
+ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96127424"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878888"
 ---
 # <a name="configure-the-max-worker-threads-server-configuration-option"></a>Configurer l'option de configuration de serveur max worker threads
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
