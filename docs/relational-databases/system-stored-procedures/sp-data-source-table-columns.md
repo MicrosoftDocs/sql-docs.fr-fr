@@ -1,25 +1,27 @@
 ---
+title: sp_data_source_table_columns
 description: sp_data_source_table_columns (Transact-SQL)
-title: sp_data_source_table_columns | Microsoft Docs
-ms.custom: ''
-ms.date: 11/10/2020
 ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
 ms.topic: conceptual
 f1_keywords:
-- sp_data_source_table_columns
+- sp_data_source_table_columns_TSQL
+dev_langs:
+- TSQL
 helpviewer_keywords:
 - PolyBase
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 4153b7546dfce226cb056b7a548efb69f5175e06
-ms.sourcegitcommit: 4c3949f620d09529658a2172d00bfe37aeb1a387
+ms.custom: ''
+ms.date: 11/10/2020
+ms.openlocfilehash: 30205befcdd9da78f4f9a3f002ddd398f49abc55
+ms.sourcegitcommit: d681796e8c012eca2d9629d3b816749e9f50f868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "96128775"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98005384"
 ---
 # <a name="sp_data_source_table_columns-transact-sql"></a>sp_data_source_table_columns (Transact-SQL)
 
@@ -30,7 +32,7 @@ Retourne la liste des colonnes dans la table de source de données externe.
 > [!NOTE]
 > Cette procédure est présentée dans [SQL 2019 CU5](../../big-data-cluster/release-notes-big-data-cluster.md#cu5).
 
-![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -69,7 +71,7 @@ La procédure stockée retourne les informations suivantes :
 
 Exige l’autorisation ALTER ANY EXTERNAL DATA SOURCE.
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
 
 La fonctionnalité  [Polybase](../../relational-databases/polybase/polybase-guide.md) doit être installée sur l’instance SQL Server.
 

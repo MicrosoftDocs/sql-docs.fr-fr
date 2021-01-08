@@ -1,8 +1,6 @@
 ---
+title: sys.database_query_store_options (Transact-SQL)
 description: sys.database_query_store_options (Transact-SQL)
-title: sys.database_query_store_options (Transact-SQL) | Microsoft Docs
-ms.custom: ''
-ms.date: 05/27/2020
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
@@ -18,18 +16,20 @@ dev_langs:
 helpviewer_keywords:
 - database_query_store_options catalog view
 - sys.database_query_store_options catalog view
-ms.assetid: 16b47d55-8019-41ff-ad34-1e0112178067
 author: markingmyname
 ms.author: maghan
+ms.custom: ''
+ms.date: 05/27/2020
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: c6b346496eb08e9121abac463b3e87f6e27362e2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: f8fce0932d546470206bbc7752429090c0212158
+ms.sourcegitcommit: d681796e8c012eca2d9629d3b816749e9f50f868
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484781"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98005411"
 ---
 # <a name="sysdatabase_query_store_options-transact-sql"></a>sys.database_query_store_options (Transact-SQL)
+
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa.md)]
 
   Retourne les options de Magasin des requêtes pour cette base de données.  
@@ -50,7 +50,7 @@ ms.locfileid: "97484781"
 |**stale_query_threshold_days**|**bigint**|Nombre de jours pendant lesquels les informations d’une requête sont conservées dans le Magasin des requêtes. La valeur par défaut est **30**. Affectez la valeur 0 pour désactiver la stratégie de rétention.<br />Pour l’édition [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] de base, la valeur par défaut est 7 jours.<br /><br /> Modifiez à l’aide de l' `ALTER DATABASE <database> SET QUERY_STORE ( CLEANUP_POLICY = ( STALE_QUERY_THRESHOLD_DAYS = <value> ) )` instruction.|  
 |**max_plans_per_query**|**bigint**|Limite le nombre maximal de plans stockés. La valeur par défaut est **200**. Si la valeur maximale est atteinte, Magasin des requêtes cesse de capturer de nouveaux plans pour cette requête. La valeur 0 supprime la limitation en ce qui concerne le nombre de plans capturés.<br /><br /> Modifiez à l’aide de l' `ALTER DATABASE<database> SET QUERY_STORE (MAX_PLANS_PER_QUERY = <n>)` instruction.|  
 |**query_capture_mode**|**smallint**|Mode de capture de requête actuellement actif :<br /><br /> **1** = toutes les requêtes sont capturées. Il s’agit de la valeur de configuration par défaut pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ( [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures).<br /><br /> 2 = capturer automatiquement les requêtes pertinentes en fonction du nombre d’exécutions et de la consommation des ressources. Il s’agit de la valeur de configuration par défaut pour [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].<br /><br /> 3 = aucun-arrêter la capture des nouvelles requêtes. Le magasin de requêtes continuera à recueillir des statistiques de compilation et d’exécution pour les requêtes qui ont déjà été capturées. Utilisez cette configuration avec précaution, car vous risquez de manquer des requêtes importantes.|  
-|**query_capture_mode_desc**|**nvarchar(60)**|Description textuelle du mode de capture réel de Magasin des requêtes :<br /><br /> ALL (valeur par défaut pour [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] )<br /><br /> **Auto** (valeur par défaut pour [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] )<br /><br /> Aucune|  
+|**query_capture_mode_desc**|**nvarchar(60)**|Description textuelle du mode de capture réel de Magasin des requêtes :<br /><br /> ALL (valeur par défaut pour [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] )<br /><br /> **Auto** (valeur par défaut pour [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] )<br /><br /> NONE|  
 |**size_based_cleanup_mode**|**smallint**|Contrôle si le nettoyage est activé automatiquement quand la quantité totale de données approche de la taille maximale :<br /><br /> 0 = le nettoyage basé sur une taille hors tension n’est pas activé automatiquement.<br /><br /> **1** = le nettoyage basé sur le format automatique est activé automatiquement lorsque la taille sur le disque atteint **90%** de *max_storage_size_mb*. Il s’agit de la valeur de configuration par défaut.<br /><br />Le nettoyage basé sur la taille supprime les requêtes les moins coûteuses et les plus anciennes en premier. Il s’arrête quand environ **80%** de *max_storage_size_mb* sont atteints.|  
 |**size_based_cleanup_mode_desc**|**nvarchar(60)**|Description textuelle du mode de nettoyage basé sur la taille réel de Magasin des requêtes :<br /><br /> OFF <br /> **Automatique** (par défaut)|  
 |**wait_stats_capture_mode**|**smallint**|Contrôle si Magasin des requêtes effectue la capture des statistiques d’attente : <br /><br /> 0 = désactivé <br /> **1** = activé<br /> **S’applique à** : [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] et versions ultérieures.|
