@@ -6,7 +6,7 @@
   href: sql-server/previous-versions-sql-server.md
 - name: Vue d’ensemble
   items:
-    - name: What's New
+    - name: Nouveautés
       items:
         - name: "SQL Server\_2019"
           href: sql-server/what-s-new-in-sql-server-ver15.md
@@ -348,7 +348,7 @@
               href: big-data-cluster/notebooks-tutorial-spark.md
             - name: Répertorier les notebooks d’opérations
               href: big-data-cluster/cluster-manage-notebooks.md
-        - name: Monitor
+        - name: Superviser
           items:
             - name: Analyser avec Azure Data Studio
               href: big-data-cluster/cluster-monitor-ads.md
@@ -2734,7 +2734,7 @@
               href: language-extensions/language-extensions-whats-new.md
         - name: Installer
           items:
-            - name: Installer les extensions de langage sur Windows
+            - name: Installation de l’extension de langage Java sur Windows
               href: language-extensions/install/windows-java.md
         - name: Tutoriels
           items:
