@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: e7a618ef92a9f4a4cc969112886a4246ad25adc6
-ms.sourcegitcommit: 866554663ca3191748b6e4eb4d8d82fa58c4e426
+ms.openlocfilehash: dfbe41fe29a3dadc69a2a428f1bf8b606a2a7050
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97559201"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771333"
 ---
 # <a name="retrieve-data-by-a-datareader"></a>Récupération de données par un DataReader
 
@@ -42,9 +42,9 @@ L’exemple de code suivant boucle dans un objet **DataReader** et retourne deux
 
 [!code-csharp[DataWorks SqlClient.HasRows#1](~/../sqlclient/doc/samples/SqlDataReader_HasRows.cs#1)]
 
-## <a name="closing-the-datareader"></a>Fermeture du DataReader  
+## <a name="close-the-datareader"></a>Fermer le DataReader  
 
-Appelez toujours la méthode **Close** quand vous avez fini d’utiliser l’objet **DataReader**.
+Appelez toujours la méthode `Close()` quand vous avez fini d’utiliser l’objet `DataReader`.
 
 > [!NOTE]
 > Si votre **Command** contient des paramètres de sortie ou des valeurs de retour, ces valeurs ne sont pas disponibles tant que le **DataReader** n’est pas fermé.  
@@ -71,4 +71,5 @@ Pendant qu’un **DataReader** est ouvert, vous pouvez extraire des informations
 
 - [DataAdapters et DataReaders](dataadapters-datareaders.md)
 - [Commandes et paramètres](commands-parameters.md)
+- [Extraction des informations de schéma de base de données](retrieving-database-schema-information.md)
 - [Microsoft ADO.NET pour SQL Server](microsoft-ado-net-sql-server.md)

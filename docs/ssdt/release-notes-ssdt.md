@@ -12,12 +12,12 @@ ms.reviewer: maghan
 ms.custom: seo-lt-2019
 ms.date: 12/15/2019
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||=azuresqldb-mi-current'
-ms.openlocfilehash: c59e142ec924a573e127d9caa0cd7d6ac9bf9e8f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a380eabba4a20a65fd291b938d270a440f66d754
+ms.sourcegitcommit: 44eebb659f9b226c08aea6c31a909b22ad4fec60
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440492"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97860607"
 ---
 # <a name="release-notes-for-sql-server-data-tools-ssdt"></a>Notes de publication pour SQL Server Data Tools (SSDT)
 
@@ -44,6 +44,35 @@ GeneMi , 2019/03/22.
 
 P.S.  there's no need to keep this large HTML comment indefinitely.
 -->
+
+## <a name="1597nbsp-ssdt-for-vs-2017"></a>15.9.7,&nbsp; SSDT pour VS 2017
+
+_Mise en production :_ &nbsp; 5 janvier 2021  
+_Numéro de build :_ &nbsp; 14.0.16228.0  
+_SSDT pour Visual Studio 2017._
+
+### <a name="whats-new"></a>Nouveautés
+
+| Nouvel élément | Détails |
+|-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Integration Services (SSIS) | Rendez la création d’une SSISDB facultative dans l’assistant Création d’Integration Services. |
+| Integration Services (SSIS) | Correction d’un problème dans lequel les éléments de Zone de liste modifiable d’abonnement Azure sont dupliqués dans l’Assistant de création IR et l’Assistant Projet pour Azure lorsque des abonnements différents portent le même nom. |
+| Integration Services (SSIS) | Correction d’un problème qui entraînait parfois l’impossibilité d’activer le bouton Connexion dans l’Assistant Création IR. |
+| Integration Services (SSIS) | Correction d’un problème dans lequel les éléments de Zone de liste modifiable d’abonnement Azure sont dupliqués dans l’Assistant de création IR et l’Assistant Projet pour Azure lorsque des abonnements différents portent le même nom. |
+| Integration Services (SSIS) | Correction d’un problème où le code généré automatiquement sous bufferwrapper.cs du composant de script ajoutait des guillemets doubles quand les paramètres régionaux actuels étaient réglés sur Allemagne. |
+| Integration Services (SSIS) | Résolution d’un problème où le bouton Télécharger WSDL ne s’affichait pas lorsque la version du serveur cible était SQL Server 2012, 2014, 2016. |
+| Integration Services (SSIS) | Résolution d’un problème à cause duquel la génération de projets volumineux pouvait échouer en raison d’une exception de mémoire insuffisante. |
+| Integration Services (SSIS) | Correction d’un problème qui indiquait que le package n’était pas rétrogradé à la version actuelle du serveur cible lorsqu’il était enregistré en tant que copie dans le système de fichiers ou dans MSDB dans le modèle de déploiement de package. |
+| Integration Services (SSIS) | Correction d’un problème dans lequel la destination de traitement de dimension ne fonctionnait pas en raison d’une erreur « Cette interface est introuvable ». |
+| Integration Services (SSIS) | Correction de certains problèmes liés à l’accessibilité et aux résolutions élevées. |
+
+### <a name="known-issues"></a>Problèmes connus
+
+| Problème connu | Détails |
+| :---------- | :------ |
+| La tâche d’exécution de package SSIS ne prend pas en charge le débogage quand ExecuteOutOfProcess a la valeur True. | Ce problème s’applique uniquement au débogage. L’enregistrement, le déploiement et l’exécution via DTExec.exe ou le catalogue SSIS ne sont pas affectés. |
+| &nbsp; | &nbsp; |
+
 
 ## <a name="1596nbsp-ssdt-for-vs-2017"></a>15.9.6,&nbsp; SSDT pour VS 2017
 

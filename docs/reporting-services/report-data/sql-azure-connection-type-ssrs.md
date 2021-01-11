@@ -9,12 +9,12 @@ ms.technology: report-data
 ms.topic: conceptual
 ms.date: 02/15/2019
 monikerRange: '>= sql-server-2016'
-ms.openlocfilehash: 1b13134166c4c17bea73d2990ceaf678fe1b4b2c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4dc1fcf4aa738a018274f65d7d707f6461b9c45c
+ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478840"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878842"
 ---
 # <a name="azure-sql-connection-type-ssrs"></a>Type de connexion Azure SQL (SSRS)
 
@@ -156,7 +156,7 @@ Pour plus d’informations sur la prise en charge des plateformes et des version
 
 ## <a name="azure-sql-database-and-aad"></a>Azure SQL Database et AAD
 
-Vous pouvez utiliser la base de données SQL Azure avec l’authentification directe Azure Active Directory (AAD).
+Vous pouvez utiliser la base de données SQL Azure avec Azure Active Directory (AAD).
 
 Ce scénario est pris en charge à condition que les éléments suivants soient correctement configurés :
 

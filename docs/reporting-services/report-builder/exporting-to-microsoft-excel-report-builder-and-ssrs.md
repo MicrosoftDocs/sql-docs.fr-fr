@@ -1,7 +1,7 @@
 ---
 title: Exportation vers Microsoft Excel (Générateur de rapports) | Microsoft Docs
 description: Dans le Générateur de rapports, l’extension de rendu Excel affiche un rapport paginé au format Office Open XML à ouvrir dans Microsoft Excel.
-ms.date: 01/09/2017
+ms.date: 12/23/2020
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
 ms.technology: report-builder
@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 74f726fc-2167-47af-9093-1644e03ef01f
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 865caa0938aa89feacbb5e330eb38f292039446c
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 4e8b43d3e9e772b06961602bf2d8bd69aa51216e
+ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "80342893"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878852"
 ---
 # <a name="exporting-to-microsoft-excel-report-builder-and-ssrs"></a>Exportation vers Microsoft Excel (Générateur de rapports et SSRS)
   L’extension de rendu Excel de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] restitue un rapport paginé [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] au format [!INCLUDE[ofprexcel](../../includes/ofprexcel-md.md)] (.xlsx). Avec l'extension de rendu Excel, la largeur des colonnes dans Excel correspond plus précisément à la largeur des colonnes dans les rapports.  
@@ -47,7 +47,7 @@ ms.locfileid: "80342893"
   
 -   Si l'élément de rapport qui contrôle si un autre élément est affiché/masqué ne se trouve pas dans la ligne ou la colonne précédente ou suivante par rapport à l'élément qui est affiché/masqué, le plan est également désactivé.  
   
- Pour plus d’informations sur les limitations d’Excel, consultez [Spécifications et limites relatives à Excel](https://support.office.com/article/Excel-specifications-and-limits-CA36E2DC-1F09-4620-B726-67C00B05040F).  
+ Pour plus d’informations sur les limitations d’Excel, consultez [Spécifications et limites relatives à Excel](https://support.microsoft.com/en-us/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3).  
   
 ### <a name="sizes-of-excel-2003-xls-files"></a>Taille des fichiers Excel 2003 (.xls)  
   
@@ -249,7 +249,7 @@ ms.locfileid: "80342893"
   
  Le plan de l'explorateur de documents est rendu sous la forme d'un plan réductible Excel. La structure du plan correspond à la structure imbriquée de l'explorateur de documents. L'état développé ou réduit du plan commence au deuxième niveau.  
   
- Le nœud racine de la carte est le nom de rapport, \<*nom_rapport*>.rdl, qui n’est pas interactif. La police des liens de l'explorateur de documents est Arial, 10pt.  
+ Le nœud racine de la carte est le nom de rapport, \<*reportname*>.rdl, qui n’est pas interactif. La police des liens de l'explorateur de documents est Arial, 10pt.  
   
 ### <a name="drillthrough-links"></a>Liens d'extraction  
  Les liens d'extraction qui s'affichent dans les zones de texte sont rendus sous forme de liens hypertexte Excel dans la cellule dans laquelle le texte est rendu. Les liens d'extraction des images et des graphiques sont rendus sous forme de liens hypertexte Excel dans l'image lors du rendu. Quand vous cliquez dessus, le lien d’extraction ouvre le navigateur par défaut du client et accède à la vue HTML de la cible.  

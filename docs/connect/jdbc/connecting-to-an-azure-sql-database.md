@@ -2,7 +2,7 @@
 title: Connexion à une base de données SQL Azure
 description: Cet article traite des problèmes liés à l’utilisation du pilote Microsoft JDBC pour SQL Server pour se connecter à une instance Azure SQL Database.
 ms.custom: ''
-ms.date: 08/12/2019
+ms.date: 12/18/2020
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 49645b1f-39b1-4757-bda1-c51ebc375c34
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: bda9c33588c8248d0aff62f555ec46451d0e9e78
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 03768a309ac10fc16fd1a743660df6fe74b088e7
+ms.sourcegitcommit: bc8474fa200ef0de7498dbb103bc76e3e3a4def4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91725490"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97709668"
 ---
 # <a name="connecting-to-an-azure-sql-database"></a>Connexion à une base de données SQL Azure
 
@@ -43,7 +43,13 @@ Lors de la connexion à une base de données [!INCLUDE[ssAzure](../../includes/s
 
 - Les connexions inactives via la passerelle Azure SQL, en cas de messages TCP **keepalive** (qui rendent la connexion non inactive du point de vue de TCP), mais sans requête active pendant 30 minutes. Dans ce scenario, la passerelle détermine que la connexion TDS est inactive à 30 minutes et l'arrête.  
   
-Pour éviter la suppression des connexions inactives par un composant réseau, les paramètres de registre suivants (ou leurs équivalents non Windows) doivent être définis sur le système d'exploitation dans lequel se trouve le pilote.  
+Pour résoudre le deuxième point et éviter que la passerelle interrompe les connexions inactives, vous pouvez :
+
+* Utiliser la [stratégie de connexion](/azure/azure-sql/database/connectivity-architecture#connection-policy) **Rediriger** lors de la configuration de votre source de données Azure SQL.
+
+* Maintenir les connexions actives via une activité légère. Cette méthode n’est pas recommandée et ne doit être utilisée que s’il n’existe aucune autre option possible.
+
+Pour répondre au premier point et éviter la suppression des connexions inactives par un composant réseau, les paramètres de registre suivants (ou leurs équivalents non Windows) doivent être définis sur le système d’exploitation dans lequel se trouve le pilote :  
   
 |Paramètre de registre|Valeur recommandée|  
 |----------------------|-----------------------|  
@@ -53,7 +59,13 @@ Pour éviter la suppression des connexions inactives par un composant réseau, l
   
 Redémarrez l’ordinateur pour appliquer les paramètres du Registre.  
 
-Pour effectuer cela lorsque vous exécutez le système dans Azure, créez une tâche de démarrage pour ajouter les clés de Registre.  Par exemple, ajoutez la tâche de démarrage suivante au fichier de définition du service :  
+Les valeurs KeepAliveTime et KeepAliveInterval sont exprimées en millisecondes. Ces paramètres ont pour effet de déconnecter une connexion qui ne répond pas dans un délai de 10 à 40 secondes. Après l’envoi d’un paquet Keep Alive, si aucune réponse n’est reçue, une nouvelle tentative est effectuée toutes les secondes jusqu’à 10 fois. Si aucune réponse n’est reçue pendant cette période, le socket côté client est déconnecté. Selon votre environnement, vous souhaiterez peut-être augmenter la valeur de KeepAliveInterval pour tenir compte des interruptions connues (telles que les migrations de machines virtuelles) susceptibles de provoquer le blocage d’un serveur pendant plus de 10 secondes.
+
+> [!NOTE]
+> TcpMaxDataRetransmissions n’est pas contrôlable sur Windows Vista ou sur Windows 2008 et versions ultérieures.
+
+Pour effectuer cette configuration lors de l’exécution dans Azure, créez une tâche de démarrage pour ajouter les clés de Registre.  Par exemple, ajoutez la tâche de démarrage suivante au fichier de définition du service :  
+
 
 ```xml
 <Startup>  
@@ -62,7 +74,7 @@ Pour effectuer cela lorsque vous exécutez le système dans Azure, créez une t�
 </Startup>  
 ```
 
-Puis ajoutez un fichier AddKeepAlive.cmd à votre projet. Définissez le paramètre « Copier dans le répertoire de sortie » sur « Toujours copier ». Voici un exemple de fichier AddKeepAlive.cmd :  
+Puis ajoutez un fichier AddKeepAlive.cmd à votre projet. Définissez le paramètre « Copier dans le répertoire de sortie » sur « Toujours copier ». Le script suivant est un exemple de fichier AddKeepAlive.cmd :  
 
 ```bat
 if exist keepalive.txt goto done  

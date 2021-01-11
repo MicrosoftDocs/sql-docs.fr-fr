@@ -5,17 +5,17 @@ ms.custom: seodec18
 ms.date: 01/28/2020
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 ms.assetid: f7c7acc5-a350-4a17-95e1-e689c78a0900
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: df4daf119464ccf90c751f97daeea0379d8e8a21
-ms.sourcegitcommit: 0e0cd9347c029e0c7c9f3fe6d39985a6d3af967d
+ms.openlocfilehash: b6335c43c179dfcdb94ecae98b829f3ff8bb50aa
+ms.sourcegitcommit: e5664d20ed507a6f1b5e8ae7429a172a427b066c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96506343"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97697101"
 ---
 # <a name="configure-an-always-on-distributed-availability-group"></a>Configurer un groupe de disponibilité distribué Always On  
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -155,6 +155,10 @@ GO
 ## <a name="create-distributed-availability-group-on-first-cluster"></a>Créer un groupe de disponibilité distribué sur le premier cluster  
  Sur le premier cluster WSFC, créez un groupe de disponibilité distribué (nommé `distributedag` dans cet exemple). Utilisez la commande **CREATE AVAILABILITY GROUP** avec l’option **DISTRIBUTED** . Le paramètre **AVAILABILITY GROUP ON** spécifie les groupes de disponibilité membres `ag1` et `ag2`.  
   
+# <a name="automatic-seeding"></a>[Amorçage automatique](#tab/automatic)
+
+Pour créer votre groupe de disponibilité distribué à l’aide de l’amorçage automatique, utilisez le code Transact-SQL suivant : 
+
 ```sql  
 CREATE AVAILABILITY GROUP [distributedag]  
    WITH (DISTRIBUTED)   
@@ -176,6 +180,35 @@ CREATE AVAILABILITY GROUP [distributedag]
 GO   
 ```  
   
+
+# <a name="manual-seeding"></a>[Amorçage manuel](#tab/manual)
+
+Pour créer votre groupe de disponibilité distribué à l’aide de l’amorçage manuel, utilisez le code Transact-SQL suivant : 
+
+```sql
+CREATE AVAILABILITY GROUP [distributedag]  
+   WITH (DISTRIBUTED)   
+   AVAILABILITY GROUP ON  
+      'ag1' WITH    
+      (   
+         LISTENER_URL = 'tcp://ag1-listener.contoso.com:5022',    
+         AVAILABILITY_MODE = ASYNCHRONOUS_COMMIT,   
+         FAILOVER_MODE = MANUAL,   
+         SEEDING_MODE = MANUAL   
+      ),   
+      'ag2' WITH    
+      (   
+         LISTENER_URL = 'tcp://ag2-listener.contoso.com:5022',   
+         AVAILABILITY_MODE = ASYNCHRONOUS_COMMIT,   
+         FAILOVER_MODE = MANUAL,   
+         SEEDING_MODE = MANUAL   
+      );    
+GO   
+
+```
+
+---
+
 > [!NOTE]  
 >  **LISTENER_URL** spécifie l’écouteur pour chaque groupe de disponibilité, ainsi que le point de terminaison de mise en miroir de bases de données du groupe de disponibilité. Dans cet exemple, il s’agit du port `5022` (et non du port `60173` qui a permis de créer l’écouteur). Si vous utilisez un équilibreur de charge, par exemple dans Azure, [ajoutez une règle d’équilibrage de charge pour le port du groupe de disponibilité distribué](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#add-load-balancing-rule-for-distributed-availability-group). Ajoutez la règle pour le port d’écoute, en plus du port de l’instance SQL Server. 
 
@@ -196,6 +229,10 @@ ALTER AVAILABILITY GROUP [distributedag]
 ## <a name="join-distributed-availability-group-on-second-cluster"></a>Joindre un groupe de disponibilité distribué sur le second cluster  
  Joignez ensuite le groupe de disponibilité distribué au deuxième cluster WSFC.  
   
+# <a name="automatic-seeding"></a>[Amorçage automatique](#tab/automatic)
+
+Pour rejoindre votre groupe de disponibilité distribué à l’aide de l’amorçage automatique, utilisez le code Transact-SQL suivant : 
+
 ```sql  
 ALTER AVAILABILITY GROUP [distributedag]   
    JOIN   
@@ -216,6 +253,61 @@ ALTER AVAILABILITY GROUP [distributedag]
       );    
 GO  
 ```  
+
+
+
+# <a name="manual-seeding"></a>[Amorçage manuel](#tab/manual)
+
+Pour rejoindre votre groupe de disponibilité distribué à l’aide de l’amorçage manuel, utilisez le code Transact-SQL suivant : 
+
+```sql
+ALTER AVAILABILITY GROUP [distributedag]   
+   JOIN   
+   AVAILABILITY GROUP ON  
+      'ag1' WITH    
+      (   
+         LISTENER_URL = 'tcp://ag1-listener.contoso.com:5022',    
+         AVAILABILITY_MODE = ASYNCHRONOUS_COMMIT,   
+         FAILOVER_MODE = MANUAL,   
+         SEEDING_MODE = MANUAL   
+      ),   
+      'ag2' WITH    
+      (   
+         LISTENER_URL = 'tcp://ag2-listener.contoso.com:5022',   
+         AVAILABILITY_MODE = ASYNCHRONOUS_COMMIT,   
+         FAILOVER_MODE = MANUAL,   
+         SEEDING_MODE = MANUAL  
+      );    
+GO  
+```
+
+Si l’amorçage manuel est utilisé pour créer la base de données sur le redirecteur, effectuez une sauvegarde complète et une sauvegarde du journal des transactions à partir du serveur principal global, puis restaurez-les sur le redirecteur avec l’option NONRECOVERY. Exemple :
+
+Pour sauvegarder sur le serveur principal global : 
+
+```sql
+BACKUP DATABASE [db1] 
+TO DISK = '<full backup location>' WITH FORMAT
+BACKUP LOG [db1] 
+TO DISK = '<log backup location>' WITH FORMAT
+```
+
+Pour effectuer une restauration sur le redirecteur : 
+
+```sql
+RESTORE DATABASE [db1] 
+FROM DISK = '<full backup location>' WITH NORECOVERY
+RESTORE LOG [db1] FROM DISK = '<log backup location>' WITH NORECOVERY
+```
+
+Après cela, exécutez la commande suivante sur le redirecteur
+
+```sql
+ALTER DATABASE [db1] SET HADR AVAILABILITY GROUP = [distributedag]
+```
+
+---
+
 
 ## <a name="join-the-database-on-the-secondary-of-the-second-availability-group"></a><a name="failover"></a>Joindre la base de données sur le réplica secondaire du deuxième groupe de disponibilité
 Quand la base de données qui se trouve sur le réplica secondaire du deuxième groupe de disponibilité est en restauration, vous devez la joindre manuellement au groupe de disponibilité.

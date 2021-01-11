@@ -23,12 +23,12 @@ ms.assetid: c963e8b4-5a85-4bd0-9d48-3f8da8f6516b
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 68268a384ab4d89944a3c26322555326948629f2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 7970166e9e9f0fa6b3c584d7c7d0ea82d81c5958
+ms.sourcegitcommit: f2a28b761022e46da850595553dfbc3e98df83a8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97408167"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97721093"
 ---
 # <a name="date-transact-sql"></a>date (Transact-SQL)
 
@@ -214,7 +214,7 @@ SELECT
 |**date**|2007-05-08|  
 |**smalldatetime**|2007-05-08 12:35:00|  
 |**datetime**|2007-05-08 12:35:29.123|  
-|**datetime2**|2007-05-08 12:35:29. 1234567|  
+|**datetime2**|2007-05-08 12:35:29.1234567|  
 |**datetimeoffset**|2007-05-08 12:35:29.1234567 +12:15|  
 
 Introduite pour la première fois dans SQL Server 2008.

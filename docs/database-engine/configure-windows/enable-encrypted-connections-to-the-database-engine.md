@@ -1,6 +1,6 @@
 ---
 title: Activation des connexions chiffrées | Microsoft Docs
-ms.custom: contperfq4
+ms.custom: contperf-fy20q4
 ms.date: 08/29/2019
 ms.prod: sql
 ms.prod_service: security
@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: e1e55519-97ec-4404-81ef-881da3b42006
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: d147177be88db5bba50955711a8585ff11d872d9
-ms.sourcegitcommit: 2f868a77903c1f1c4cecf4ea1c181deee12d5b15
+ms.openlocfilehash: b18a3131329e0485221a0ae2cdaafd0726a4f31c
+ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91670962"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878957"
 ---
 # <a name="enable-encrypted-connections-to-the-database-engine"></a>Activez les connexions chiffrées dans le moteur de base de données
 
@@ -71,7 +71,7 @@ L’activation du chiffrement TLS améliore la sécurité des données transmise
  Le client doit être en mesure de vérifier la propriété du certificat employé par le serveur. Si le client dispose du certificat de clé publique de l'autorité de certification qui a signé le certificat de serveur, aucune configuration supplémentaire n'est requise. [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows comprend les certificats de clé publique d'un grand nombre d'autorités de certification. Si le certificat de serveur a été signé par une autorité de certification publique ou privée pour laquelle le client ne dispose pas de certificat de clé publique, vous devez installer le certificat de clé publique de l'autorité de certification ayant signé le certificat de serveur.  
   
 > [!NOTE]  
-> Pour utiliser le chiffrement à l'aide d'un cluster de basculement, installez le certificat du serveur avec le nom DNS complet du serveur virtuel sur tous les nœuds du cluster de basculement. Si, par exemple, vous disposez d'un cluster à deux nœuds nommés ***test1.\*\<your company>\*.com*** et ***test2.\*\<your company>\*.com***, ainsi que d'un serveur virtuel nommé ***virtsql***, vous devez installer un certificat pour ***virtsql.\*\<your company>\*.com*** sur les deux nœuds. Vous pouvez définir la valeur de l’option **Forcer le chiffrement** dans la zone de propriété **Protocoles pour virtsql** de **Configuration du réseau SQL Server** sur **Oui**.
+> Pour utiliser le chiffrement à l'aide d'un cluster de basculement, installez le certificat du serveur avec le nom DNS complet du serveur virtuel sur tous les nœuds du cluster de basculement. Si, par exemple, vous disposez d’un cluster à deux nœuds nommés **_test1.\_\<your company>\*.com*** and **_test2.\_\<your company>\*.com***, ainsi que d’un serveur virtuel nommé **_virtsql_*_, vous devez installer un certificat pour _ *_virtsql.\_\<your company>\*.com*** sur les deux nœuds. Vous pouvez définir la valeur de l’option **Forcer le chiffrement** dans la zone de propriété **Protocoles pour virtsql** de **Configuration du réseau SQL Server** sur **Oui**.
 
 > [!NOTE]
 > Si vous créez des connexions chiffrées entre un indexeur de la Recherche Azure et [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur une machine virtuelle Azure, consultez [Configurer une connexion à partir d’un indexeur de la Recherche Azure à SQL Server sur une machine virtuelle Azure](/azure/search/search-howto-connecting-azure-sql-iaas-to-azure-search-using-indexers). 
@@ -104,7 +104,7 @@ Avec [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], la gestion des 
 
 Si vous utilisez [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], et que le Gestionnaire de configuration SQL Server pour [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] n’est pas disponible, effectuez les étapes suivantes :
 
-1. Dans le menu **Démarrer** , cliquez sur **Exécuter**puis, dans la zone **Ouvrir** , tapez **MMC** et cliquez sur **OK**.  
+1. Dans le menu **Démarrer** , cliquez sur **Exécuter** puis, dans la zone **Ouvrir** , tapez **MMC** et cliquez sur **OK**.  
   
 2. Dans la console MMC, dans le menu **Fichier** , cliquez sur **Ajouter/Supprimer un composant logiciel enfichable**.  
   
@@ -122,7 +122,7 @@ Si vous utilisez [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[
 
 9. Cliquez avec le bouton droit sur le certificat importé, pointez sur **Toutes les tâches**, puis cliquez sur **Gérer les clés privées**. Dans la boîte de dialogue **Sécurité**, ajoutez l’autorisation de lecture pour le compte d’utilisateur utilisé par le compte de service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
-10. Remplissez les informations dans l' **Assistant Importation de certificat**afin d'ajouter un certificat à l'ordinateur, puis fermez la console MMC. Pour plus d'informations sur l'ajout d'un certificat à un ordinateur, consultez la documentation Windows.  
+10. Remplissez les informations dans l' **Assistant Importation de certificat** afin d'ajouter un certificat à l'ordinateur, puis fermez la console MMC. Pour plus d'informations sur l'ajout d'un certificat à un ordinateur, consultez la documentation Windows.  
 
 > [!IMPORTANT]
 > Pour les environnements de production, nous vous recommandons de vous procurer un certificat approuvé auprès d’une autorité de certification.    
@@ -138,7 +138,7 @@ Si vous utilisez [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[
   
 1. Dans le composant logiciel enfichable **Certificats** , recherchez le certificat dans le dossier **Certificats** / **Personnel** , cliquez avec le bouton droit sur **Certificat**, pointez sur **Toutes les tâches**, puis cliquez sur **Exporter**.  
   
-2. Suivez les étapes de l' **Assistant d'exportation de certificats**en stockant le fichier de certificat à un emplacement approprié.  
+2. Suivez les étapes de l' **Assistant d'exportation de certificats** en stockant le fichier de certificat à un emplacement approprié.  
   
 ## <a name="configure-server"></a>Configuration du serveur
 

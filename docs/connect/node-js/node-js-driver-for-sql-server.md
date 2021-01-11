@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.assetid: c4cdbfa6-9b73-4b72-a1a6-e1b45d8a773d
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: cf8d7e1455e437549dc86c691b55559fce486827
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+ms.openlocfilehash: ee679df659d35817f97fb9f11471bde1c5ffdebf
+ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91808765"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97878452"
 ---
 # <a name="nodejs-driver-for-sql-server"></a>Pilote Node.js pour SQL Server
 
 ![Download-DownArrow-Circled](../../ssms/media/download-icon.png)[Pour télécharger le pilote Node.js SQL](../sql-connection-libraries.md#anchor-20-drivers-relational-access)
 
-Le module tedious est une implémentation JavaScript du protocole TDS, prise en charge par toutes les versions récentes de SQL Server. Le pilote est un projet open source, disponible sur GitHub.  
+Le module `tedious` est une implémentation JavaScript du protocole TDS, prise en charge par toutes les versions récentes de SQL Server. Le pilote est un projet open source, disponible sur GitHub.  
   
 Vous pouvez vous connecter à une base de données SQL avec Node.js sur Windows, Linux ou macOS.  
   
@@ -38,7 +38,7 @@ Vous pouvez vous connecter à une base de données SQL avec Node.js sur Windows,
 
 ## <a name="support"></a>Assistance
 
-tedious pour Node.js est un logiciel qui bénéficie du support de la communauté. Microsoft contribue à la communauté open source tedious et participe activement au dépôt sur [https://github.com/tediousjs/tedious](https://github.com/tediousjs/tedious). Toutefois, ce logiciel n’est pas fourni avec le support Microsoft.
+`Tedious` pour Node.js est un logiciel qui bénéficie du support de la communauté. Microsoft contribue à la communauté open source `tedious` et participe activement au dépôt sur [https://github.com/tediousjs/tedious](https://github.com/tediousjs/tedious). Toutefois, ce logiciel n’est pas fourni avec le support Microsoft.
 
 Pour obtenir de l’aide, signalez un [problème dans le dépôt GitHub tedious](https://github.com/tediousjs/tedious/issues) ou visitez d’autres ressources de la communauté Node.js.
 

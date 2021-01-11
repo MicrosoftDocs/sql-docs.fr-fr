@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: f61b867b70825595a012b2167d2c63b13409a8e2
-ms.sourcegitcommit: 0c0e4ab90655dde3e34ebc08487493e621f25dda
+ms.openlocfilehash: 42b1f8704be721c0b52b3c42946c9abbf7efd7db
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96442820"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771625"
 ---
 # <a name="connection-string-syntax"></a>Syntaxe de la chaîne de connexion
 
@@ -25,7 +25,7 @@ ms.locfileid: "96442820"
 
 La <xref:Microsoft.Data.SqlClient> a un objet `Connection` qui hérite de <xref:System.Data.Common.DbConnection>, ainsi qu’une propriété <xref:System.Data.Common.DbConnection.ConnectionString%2A> spécifique au fournisseur. La syntaxe de chaîne de connexion spécifique pour le fournisseur SqlClient est documentée dans sa propriété `ConnectionString`. Pour plus d'informations sur la syntaxe de chaîne de connexion, consultez <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString%2A>.
 
-## <a name="connection-string-builders"></a>Builders de chaînes de connexion
+## <a name="connection-string-builders"></a>Générateurs de chaînes de connexion
 
  Le fournisseur de données Microsoft SqlClient pour SQL Server est présenté dans le générateur de chaîne de connexion suivant.
 
@@ -84,17 +84,17 @@ Pour vous connecter à une instance nommée de SQL Server, utilisez la syntaxe d
 
 Vous pouvez également définir la propriété <xref:Microsoft.Data.SqlClient.SqlConnectionStringBuilder.DataSource%2A> du `SqlConnectionStringBuilder` sur le nom d'instance lors de la création d'une chaîne de connexion. La propriété <xref:Microsoft.Data.SqlClient.SqlConnection.DataSource%2A> d'un objet <xref:Microsoft.Data.SqlClient.SqlConnection> est en lecture seule.
 
-### <a name="type-system-version-changes"></a>Modifications de la version de système de type
+### <a name="type-system-version-changes"></a>Modifications de la version du système de type
 
 Le mot clé `Type System Version` dans une propriété <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString%2A?displayProperty=nameWithType> spécifie la représentation côté client des types SQL Server. Pour plus d'informations sur le mot clé <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString%2A?displayProperty=nameWithType>, consultez `Type System Version`.
 
-## <a name="connecting-and-attaching-to-sql-server-express-user-instances"></a>Connexion et attachement aux instances utilisateur de SQL Server Express
+## <a name="connect-and-attach-to-sql-server-express-user-instances"></a>Connexion et attachement à des instances utilisateur SQL Server Express
 
 Les instances utilisateur sont une fonctionnalité de SQL Server Express. Elles permettent à un utilisateur qui s'exécute sur un compte Windows local disposant de privilèges minimum de se connecter à une base de données SQL Server et de l'exécuter sans nécessiter de privilèges d'administrateur. Une instance utilisateur s'exécute avec les informations d'identification Windows de l'utilisateur, pas en tant que service.
 
 Pour plus d’informations sur l’utilisation des instances utilisateur, consultez [Instances utilisateur SQL Server Express](./sql/sql-server-express-user-instances.md).
 
-## <a name="using-trustservercertificate"></a>Utilisation de TrustServerCertificate
+## <a name="use-trustservercertificate"></a>Utiliser TrustServerCertificate
 
 Le mot clé `TrustServerCertificate` est valide uniquement pour se connecter à une instance SQL avec un certificat valide. Lorsque `TrustServerCertificate` a la valeur `true`, la couche transport utilise TLS/SSL pour chiffrer le canal et contourner l'exploration de la chaîne de certificat pour valider l'approbation.
 
@@ -105,7 +105,7 @@ Le mot clé `TrustServerCertificate` est valide uniquement pour se connecter à 
 > [!NOTE]
 > Si `TrustServerCertificate` a la valeur `true` et le chiffrement est activé, le niveau de chiffrement spécifié sur le serveur sera utilisé même si  `Encrypt` a la valeur `false` dans la chaîne de connexion. Sinon, la connexion échouera.
 
-### <a name="enabling-encryption"></a>Activation du chiffrement
+### <a name="enable-encryption"></a>Activer le chiffrement
 
 Pour activer le chiffrement lorsqu'un certificat n'a pas été fourni sur le serveur, les options **Forcer le chiffrement du protocole** et **Faire confiance au certificat de serveur** doivent être définies dans le Gestionnaire de configuration SQL Server. Dans ce cas, le chiffrement utilise un certificat de serveur auto-signé sans validation si aucun certificat vérifiable n'a été fourni sur le serveur.
 
@@ -129,3 +129,4 @@ Pour plus d’informations, consultez [Utilisation du chiffrement sans validatio
 
 - [Chaînes de connexion](connection-strings.md)
 - [Connexion à une source de données](connecting-to-data-source.md)
+- [Microsoft ADO.NET pour SQL Server](microsoft-ado-net-sql-server.md)

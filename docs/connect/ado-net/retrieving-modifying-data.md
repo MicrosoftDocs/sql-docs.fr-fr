@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: c3cf3766ffc6c8acf6025b58aa0adbaafafa2188
-ms.sourcegitcommit: 2add15a99df7b85d271adb261523689984dfd134
+ms.openlocfilehash: 4275b7de0f31d03aa36ef31d8801fcdc0e9ec853
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97038957"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771538"
 ---
 # <a name="retrieving-and-modifying-data-in-adonet"></a>Extraction et modification de données dans ADO.NET
 
@@ -42,9 +42,35 @@ Contient des rubriques qui décrivent comment créer des commandes et des géné
 [DataAdapters et DataReaders](dataadapters-datareaders.md)  
 Contient des rubriques qui décrivent les objets DataReader et DataAdapter, les paramètres, la gestion des événements DataAdapter et l'exécution d'opérations par lots.
 
-[Transactions et accès concurrentiel](transactions-and-concurrency.md) Contient des rubriques qui expliquent comment exécuter des transactions locales, des transactions distribuées et comment utiliser l’accès concurrentiel optimiste.
+[Transactions et accès simultané](transactions-and-concurrency.md)  
+Contient des rubriques qui décrivent comment effectuer des transactions locales, des transactions distribuées et travailler avec l’accès concurrentiel optimiste.
 
-[Extractions d’informations de schéma de base de données](retrieving-database-schema-information.md) Explique comment obtenir les bases de données ou catalogues disponibles, les tables et les vues d’une base de données, les contraintes existant pour les tables et d’autres informations de schéma à partir d’une source de données.
+[Extraction des informations de schéma de base de données](retrieving-database-schema-information.md)  
+Décrit la manière d'obtenir des bases de données ou des catalogues disponibles, des tables et des vues dans une base de données, des contraintes existantes pour des tables et d'autres informations de schéma à partir d'une source de données.
+
+[DbProviderFactories](dbproviderfactories.md)  
+Décrit le modèle fabrique de fournisseurs et illustre l'utilisation des classes de base dans l'espace de noms `System.Data.Common`.  
+
+[Extraction de l’identité ou de valeurs à numérotation automatique](retrieve-identity-or-autonumber-values.md)  
+Propose un exemple de mappage des valeurs générées pour une colonne **identity** d’une table SQL Server à une colonne d’une ligne insérée dans une table. Traite de la fusion de valeurs d'identité dans un `DataTable`.  
+  
+[Extraction de données binaires](retrieve-binary-data.md)  
+Décrit comment extraire des données binaires ou de grosses structures de données à l’aide de `CommandBehavior`.`SequentialAccess` pour modifier le comportement par défaut d’un `DataReader`.  
+  
+[Modification de données avec des procédures stockées](modify-data-with-stored-procedures.md)  
+Décrit comment utiliser des paramètres d'entrée et sortie de procédure stockée afin d'insérer une ligne dans une base de données et retourner une nouvelle valeur d'identité.  
+
+[Suivi de données dans SqlClient](data-tracing.md)  
+Décrit comment le fournisseur de données Microsoft SqlClient pour SQL Server fournit des fonctionnalités de traçage de données intégrées.  
+  
+[Compteurs de performances dans SqlClient](performance-counters.md)  
+Décrit les compteurs de performances disponibles pour le fournisseur de données Microsoft SqlClient pour SQL Server.  
+  
+[Programmation asynchrone](asynchronous-programming.md)  
+Décrit le fournisseur de données Microsoft SqlClient pour la prise en charge de la programmation asynchrone par SQL Server.  
+  
+[Prise en charge de la diffusion en continu SqlClient](sqlclient-streaming-support.md)  
+Explique comment écrire des applications qui diffusent en continu les données provenant de SQL Server sans avoir à les charger complètement en mémoire.  
 
 ## <a name="see-also"></a>Voir aussi
 

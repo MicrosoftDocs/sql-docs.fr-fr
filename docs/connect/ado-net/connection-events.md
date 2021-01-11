@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: 67b805e4ec95047b843e6b72ba10dc8fee4688d5
-ms.sourcegitcommit: debaff72dbfae91b303f0acd42dd6d99e03135a2
+ms.openlocfilehash: 8151915dc6c16c6225fec9ab90cb5a88e86b992f
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419820"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771439"
 ---
 # <a name="connection-events"></a>Événements de connexion
 
@@ -32,7 +32,7 @@ Le Fournisseur de données Microsoft SqlClient ont des objets **Connexion** à 
 |**InfoMessage**|Se produit lorsqu'un message d'information est retourné à partir d'une source de données. Les messages d'information sont des messages provenant d'une source de données qui ne se traduisent pas par la levée d'une exception.|  
 |**StateChange**|Se produit lorsque l'état de **Connexion** change.|  
 
-## <a name="working-with-the-infomessage-event"></a>Utilisation de l'événement InfoMessage
+## <a name="work-with-the-infomessage-event"></a>Utiliser l’événement InfoMessage
 
 Vous pouvez extraire des messages d'avertissement et d'information d'une source de données SQL Server à l'aide de l'événement <xref:Microsoft.Data.SqlClient.SqlConnection.InfoMessage> de l'objet <xref:Microsoft.Data.SqlClient.SqlConnection>. Les erreurs retournées par la source de données, dont le niveau de gravité est compris entre 11 et 16, lèvent une exception. L'événement <xref:Microsoft.Data.SqlClient.SqlConnection.InfoMessage> peut néanmoins être utilisé pour obtenir des messages de la source de données qui ne sont pas associés à une erreur. Dans le cas de Microsoft SQL Server, toute erreur dont le niveau de gravité est inférieur ou égal à 10 est considérée comme étant un message d'information et peut être capturée à l'aide de l'événement <xref:Microsoft.Data.SqlClient.SqlConnection.InfoMessage>. Pour plus d’informations, consultez l’article [Niveaux de gravité des erreurs du moteur de base de données](/sql/relational-databases/errors-events/database-engine-error-severities).
 
@@ -44,7 +44,7 @@ L'exemple de code suivant montre comment ajouter un gestionnaire d'événements 
 
 [!code-csharp[SqlConnection_._InfoMessage#1](~/../sqlclient/doc/samples/SqlConnection_InfoMessage_StateChange.cs#1)]
 
-## <a name="handling-errors-as-infomessages"></a>Gestion des erreurs comme des InfoMessages
+## <a name="handle-errors-as-infomessages"></a>Gérer les erreurs en tant que InfoMessages
 
 L'événement <xref:Microsoft.Data.SqlClient.SqlConnection.InfoMessage> se déclenche uniquement pour les messages d'information et d'avertissement en provenance du serveur. Toutefois, quand une erreur réelle se produit, l'exécution de la méthode **ExecuteNonQuery** ou **ExecuteReader** à l'origine de l'opération du serveur est arrêtée et une exception est levée.
 
@@ -53,7 +53,7 @@ Si vous souhaitez continuer à traiter le reste des instructions d'une commande 
 > [!NOTE]
 > Une erreur dont le niveau de gravité est égal ou supérieur à 17 qui entraîne un arrêt de traitement de la commande par le serveur doit être gérée comme une exception. Dans ce cas, une exception est levée, indépendamment de la manière dont l'erreur est gérée dans l'événement <xref:Microsoft.Data.SqlClient.SqlConnection.InfoMessage>.
 
-## <a name="working-with-the-statechange-event"></a>Utilisation de l'événement StateChange
+## <a name="work-with-the-statechange-event"></a>Utiliser l’événement StateChange
 
 L'événement **StateChange** se produit lorsque l'état de **Connexion** change. L'événement **StateChange** reçoit <xref:System.Data.StateChangeEventArgs> qui vous permet de déterminer la modification de l'état de **Connexion** à l'aide des propriétés **OriginalState** et **CurrentState**. La propriété **OriginalState** est une énumération <xref:System.Data.ConnectionState> qui indique l'état de **Connexion** avant sa modification. **CurrentState** est une énumération <xref:System.Data.ConnectionState> qui indique l'état de **Connexion** après sa modification.
 
@@ -64,3 +64,4 @@ L'exemple de code suivant utilise l'événement **StateChange** pour écrire un 
 ## <a name="see-also"></a>Voir aussi
 
 - [Connexion à une source de données](connecting-to-data-source.md)
+- [Microsoft ADO.NET pour SQL Server](microsoft-ado-net-sql-server.md)

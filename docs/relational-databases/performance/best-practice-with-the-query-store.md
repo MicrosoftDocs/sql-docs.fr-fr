@@ -2,7 +2,7 @@
 title: Bonnes pratiques relatives au Magasin des requêtes | Microsoft Docs
 description: Découvrez les bonnes pratiques relatives à l’utilisation du Magasin des requêtes SQL Server avec votre charge de travail, telles que l’utilisation des versions les plus récentes de SQL Server Management Studio et de Query Performance Insight.
 ms.custom: ''
-ms.date: 09/02/2020
+ms.date: 12/23/2020
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.technology: performance
@@ -13,12 +13,12 @@ ms.assetid: 5b13b5ac-1e4c-45e7-bda7-ebebe2784551
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: d71da2a6d0bcc0cb43529331116acdbb4a6d8136
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a973fd5ec66f101c162e35baec0269f7b6d3d601
+ms.sourcegitcommit: d8a9ad86401bff422d506078c6200494c795e7c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97418610"
+ms.lasthandoff: 12/24/2020
+ms.locfileid: "97765208"
 ---
 # <a name="best-practices-with-query-store"></a>Bonnes pratiques relatives au Magasin des requêtes
 
@@ -124,7 +124,7 @@ ALTER DATABASE [QueryStoreDB]
 SET QUERY_STORE (CLEANUP_POLICY = (STALE_QUERY_THRESHOLD_DAYS = 90));
 ```
 
-**Mode de nettoyage basé sur la taille** : indique si le nettoyage automatique des données a lieu lorsque la taille des données du Magasin des requêtes s’approche de la limite. Activez le nettoyage basée sur la taille pour vous assurer que le Magasin des requêtes s’exécutera toujours en mode lecture-écriture et collectera les données les plus récentes.
+**Mode de nettoyage basé sur la taille** : indique si le nettoyage automatique des données a lieu lorsque la taille des données du Magasin des requêtes s’approche de la limite. Activez le nettoyage basée sur la taille pour vous assurer que le Magasin des requêtes s’exécutera toujours en mode lecture-écriture et collectera les données les plus récentes.  Notez qu’il n’y a aucune garantie sous des charges de travail lourdes que le nettoyage du magasin des requêtes maintiendra constamment la taille des données dans la limite. Il est possible que le nettoyage automatique des données passe en arrière-plan et bascule (temporairement) en mode lecture seule.
 
 ```sql
 ALTER DATABASE [QueryStoreDB]

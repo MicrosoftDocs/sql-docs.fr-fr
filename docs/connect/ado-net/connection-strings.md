@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: e37d77304644d1adb50bb195dd32d4c4e1222c09
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 257ed7d43f8ab204c7c7e7575c69251be6f2efdf
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96126412"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771624"
 ---
 # <a name="connection-strings-in-adonet"></a>Chaînes de connexion dans ADO.NET
 
@@ -69,9 +69,9 @@ Toutes les chaînes de connexion partagent la même syntaxe de base décrite ci-
 
 Les erreurs de frappe peuvent entraîner des erreurs. Par exemple, `Integrated Security=true` est valide, tandis que `IntegratedSecurity=true` provoque une erreur.
 
-Les chaînes de connexion générées manuellement au moment de l'exécution à partir d'une entrée utilisateur non validée peuvent entraîner des attaques par injection de chaîne, ce qui compromet la sécurité au niveau de la source de données. Pour résoudre ces problèmes, le [générateur de chaînes de connexion](connection-string-builders.md) est créé. Ce générateur de chaînes de connexion expose les paramètres en tant que propriétés fortement typées et permet de valider la chaîne de connexion avant qu’elle ne soit envoyée à la source de données.
+Les chaînes de connexion générées manuellement au moment de l’exécution à partir d’une entrée utilisateur non validée peuvent entraîner des attaques par injection de chaîne, ce qui compromet la sécurité au niveau de la source de données. Pour résoudre ces problèmes, la classe <xref:Microsoft.Data.SqlClient.SqlConnectionStringBuilder> a été créée. Cette classe de [générateur de chaînes de connexion](connection-string-builders.md) expose les paramètres en tant que propriétés fortement typées et permet de valider la chaîne de connexion avant qu’elle ne soit envoyée à la source de données.
 
-## <a name="in-this-section"></a>Dans cette section
+## <a name="in-this-section"></a>Contenu de cette section
 
 [Générateur de chaînes de connexion](connection-string-builders.md)\
 Montre comment utiliser la classe `ConnectionStringBuilder` pour construire des chaînes de connexion valides au moment de l’exécution.
@@ -84,3 +84,7 @@ Décrit comment configurer des chaînes de connexion spécifiques au fournisseur
 
 [Protection des informations de connexion](protecting-connection-information.md)\
 Montre des techniques pour la protection des informations utilisées pour la connexion à une source de données.
+
+## <a name="see-also"></a>Voir aussi
+
+- [Microsoft ADO.NET pour SQL Server](microsoft-ado-net-sql-server.md)

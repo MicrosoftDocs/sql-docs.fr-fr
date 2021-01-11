@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: ef687114ff2ceceabc1ed87d67a4585a5846029d
-ms.sourcegitcommit: 7a3fdd3f282f634f7382790841d2c2a06c917011
+ms.openlocfilehash: a878d8250a3e402cd1043dc289eb1712af45f385
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96563076"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771526"
 ---
 # <a name="sql-server-connection-pooling-adonet"></a>Regroupement de connexions SQL Server (ADO.NET)
 
@@ -41,7 +41,7 @@ Le regroupement de connexions peut considérablement améliorer les performances
 > [!NOTE]
 > Le mécanisme « `blocking period` » ne s’applique pas à Azure SQL Server par défaut. Ce comportement peut être modifié en modifiant la propriété <xref:Microsoft.Data.SqlClient.PoolBlockingPeriod> dans <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString> à l’exception de *.NET Standard*.
 
-## <a name="pool-creation-and-assignment"></a>Création et assignation d'un pool
+## <a name="pool-creation-and-assignment"></a>Création et affectation de pool
 
 Lorsqu'une connexion est ouverte pour la première fois, un pool de connexions est créé sur la base d'un algorithme à correspondance exacte qui associe le pool à la chaîne de connexion dans la connexion. Chaque pool de connexions est associé à une chaîne de connexion distincte. Lorsqu'une nouvelle connexion est ouverte, si la chaîne de connexion ne correspond pas exactement à un pool existant, un nouveau pool est créé.
 
@@ -59,7 +59,7 @@ Dans l'exemple C# suivant, trois nouveaux objets <xref:Microsoft.Data.SqlClient.
 
 [!code-csharp[SqlConnection_Pooling#1](~/../sqlclient/doc/samples/SqlConnection_Pooling.cs#1)]
 
-## <a name="adding-connections"></a>Ajout de connexions
+## <a name="add-connections"></a>Ajouter des connexions
 
 Un pool de connexions est créé pour chaque chaîne de connexion unique. Lorsqu’un pool est créé, plusieurs objets de connexion sont créés et ajoutés au pool de sorte que l’exigence de taille minimale du pool soit remplie. Les connexions sont ajoutées au pool en fonction des besoins, jusqu’à la taille de pool maximale spécifiée (**100 est la valeur par défaut**). Les connexions sont libérées et retournées au pool en cas de fermeture ou de suppression.
 
@@ -75,7 +75,7 @@ Le dispositif de regroupement de connexions répond à ces requêtes de connexio
 
 Pour plus d’informations sur les événements associés aux connexions d’ouverture et de fermeture, consultez [Auditer la classe d'événements de connexions](/sql/relational-databases/event-classes/audit-login-event-class) et [Auditer la classe d'événements de déconnexion](/sql/relational-databases/event-classes/audit-logout-event-class) dans la documentation SQL Server.
 
-## <a name="removing-connections"></a>Suppression de connexions
+## <a name="remove-connections"></a>Supprimer les connexions
 
 La fonction de regroupement de connexions supprime une connexion du pool restée inactive pendant une période de **4 à 8** minutes environ ou si elle détecte que la connexion au serveur a été interrompue.
 
@@ -84,7 +84,7 @@ La fonction de regroupement de connexions supprime une connexion du pool restée
 
 Si une connexion existante à un serveur a disparu, il est possible de la retirer du pool même si le dispositif de regroupement de connexions n'a pas détecté d'interruption de la connexion et ne l'a pas marquée comme non valide. C'est le cas parce que la charge de vérifier que la connexion est encore valide éliminerait les avantages liés au fait de disposer d'une fonction de regroupement de connexions en entraînant un aller-retour supplémentaire vers le serveur. Lorsque cela se produit, la première tentative d'utilisation de la connexion détecte que la connexion a été interrompue et une exception est levée.
 
-## <a name="clearing-the-pool"></a>Effacement du pool
+## <a name="clear-the-pool"></a>Effacer le pool
 
 Le Fournisseur de données Microsoft SqlClient pour SQL Server introduit deux nouvelles méthodes pour effacer le pool : <xref:Microsoft.Data.SqlClient.SqlConnection.ClearAllPools%2A> et <xref:Microsoft.Data.SqlClient.SqlConnection.ClearPool%2A>. `ClearAllPools` efface les pools de connexions pour un fournisseur donné et `ClearPool` efface le pool de connexions associé à une connexion spécifique.
 
@@ -97,19 +97,19 @@ Les connexions sont retirées du pool et assignées en fonction du contexte de t
 
 Lorsqu'une connexion est fermée, elle est libérée à nouveau vers le pool et dans la sous-division appropriée en fonction de son contexte de transaction. Par conséquent, vous pouvez fermer la connexion sans générer d'erreur, même si une transaction distribuée est toujours en attente. Cela vous permet de valider ou d’abandonner ultérieurement la transaction distribuée.
 
-## <a name="controlling-connection-pooling-with-connection-string-keywords"></a>Contrôle des pools de connexions avec les mots clés des chaînes de connexion
+## <a name="control-connection-pooling-with-connection-string-keywords"></a>Contrôler le regroupement de connexions avec des mots clés de chaîne de connexion
 
 La propriété `ConnectionString` de l'objet <xref:Microsoft.Data.SqlClient.SqlConnection> prend en charge les paires clé-valeur des chaînes de connexion qui peuvent être utilisées pour ajuster le comportement de la logique de regroupement des connexions. Pour plus d’informations, consultez <xref:Microsoft.Data.SqlClient.SqlConnection.ConnectionString%2A>.
 
-## <a name="pool-fragmentation"></a>Fragmentation de pool
+## <a name="pool-fragmentation"></a>Fragmentation de regroupements
 
 La fragmentation de pool est un problème courant dans de nombreuses applications Web où l'application peut créer un grand nombre de pools qui ne sont pas libérés tant que le processus n'est pas terminé. Cela laisse un grand nombre de connexions ouvertes qui consomment de la mémoire et altèrent les performances.
 
-### <a name="pool-fragmentation-due-to-integrated-security"></a>Fragmentation de pool due à une sécurité intégrée
+### <a name="pool-fragmentation-due-to-integrated-security"></a>Fragmentation de pool due à la sécurité intégrée
 
 Les connexions sont regroupées en fonction de la chaîne de connexion et de l'identité de l'utilisateur. C’est pourquoi, si vous utilisez une authentification de base ou une authentification Windows sur le site web ainsi qu’une connexion sécurisée intégrée, vous obtenez un pool par utilisateur. Bien que cela améliore les performances des requêtes de base de données suivantes pour un utilisateur donné, ce dernier ne peut pas tirer parti des connexions établies par d'autres utilisateurs. Cela génère également au moins une connexion au serveur de base de données par utilisateur. Il s’agit d’un effet secondaire d’une architecture d’application Web particulière que les développeurs doivent soupeser par rapport aux exigences de sécurité et d’audit.
 
-### <a name="pool-fragmentation-due-to-many-databases"></a>Fragmentation de pool due à un trop grand nombre de base de données
+### <a name="pool-fragmentation-due-to-many-databases"></a>Fragmentation de pool due à la présence de nombreuses bases de données
 
 De nombreux fournisseurs de services Internet hébergent plusieurs sites web sur un seul serveur. Ils peuvent utiliser une seule base de données pour confirmer une connexion d'authentification Forms, puis ouvrir une connexion à une base de données spécifique pour cet utilisateur ou ce groupe d'utilisateurs. La connexion à la base de données d'authentification est regroupée et utilisée par tout le monde. Toutefois, il existe un pool de connexions distinct à chaque base de données, ce qui augmente le nombre de connexions au serveur.
 
@@ -119,11 +119,11 @@ Le fragment de code suivant montre comment créer une connexion initiale à la b
 
 [!code-csharp[SqlConnection_Pooling_Use_Statement#1](~/../sqlclient/doc/samples/SqlConnection_Pooling_Use_Statement.cs#1)]
 
-## <a name="application-roles-and-connection-pooling"></a>Rôles d'application et regroupement de connexions
+## <a name="application-roles-and-connection-pooling"></a>Rôles d’application et regroupement de connexions
 
 Après qu'un rôle d'application SQL Server a été activé en appelant la procédure stockée système `sp_setapprole`, le contexte de sécurité de cette connexion ne peut pas être rétabli. Toutefois, lorsque le regroupement est activé, la connexion est retournée au pool et une erreur se produit en cas de réutilisation de la connexion regroupée.
 
-### <a name="application-role-alternatives"></a>Alternatives aux rôles d'application
+### <a name="application-role-alternatives"></a>Alternatives de rôle d’application
 
 Il est recommandé de tirer parti des mécanismes de sécurité qui peuvent être employés à la place des rôles d'application.
 
@@ -131,3 +131,5 @@ Il est recommandé de tirer parti des mécanismes de sécurité qui peuvent êtr
 
 - [Regroupement de connexions](connection-pooling.md)
 - [SQL Server et ADO.NET](./sql/index.md)
+- [compteurs de performances dans SqlClient](performance-counters.md)
+- [Microsoft ADO.NET pour SQL Server](microsoft-ado-net-sql-server.md)

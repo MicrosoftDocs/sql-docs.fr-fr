@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: bdb4294fda1f26ec346f786ec29061f8d4f9ee27
-ms.sourcegitcommit: debaff72dbfae91b303f0acd42dd6d99e03135a2
+ms.openlocfilehash: 38c1ad34fb4819460c08f00da4c1dbd31749b7cb
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419778"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771431"
 ---
 # <a name="connection-string-builders"></a>Générateurs de chaînes de connexion
 
@@ -44,7 +44,7 @@ data source=(local);Integrated Security=True;
 initial catalog="AdventureWorks;NewValue=Bad"
 ```
 
-## <a name="building-connection-strings-from-configuration-files"></a>Génération de chaînes de connexion à partir de fichiers de configuration
+## <a name="build-connection-strings-from-configuration-files"></a>Créer des chaînes de connexion à partir de fichiers de configuration
 
 Si certains éléments d'une chaîne de connexion sont connus à l'avance, ils peuvent être stockés dans un fichier de configuration et récupérés au moment de l'exécution pour générer une chaîne de connexion complète. Par exemple, le nom de la base de données peut être connue à l'avance, mais pas celui du serveur. Ou bien, vous pouvez souhaiter qu'un utilisateur fournisse un nom et un mot de passe au moment de l'exécution mais sans pouvoir injecter d'autres valeurs dans la chaîne de connexion.
 
@@ -74,3 +74,4 @@ Cet exemple montre comment récupérer une chaîne de connexion partielle d'un f
 ## <a name="see-also"></a>Voir aussi
 
 - [Chaînes de connexion](connection-strings.md)
+- [Microsoft ADO.NET pour SQL Server](microsoft-ado-net-sql-server.md)

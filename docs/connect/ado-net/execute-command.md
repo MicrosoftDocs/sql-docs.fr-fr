@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: b1427fa78e52c985478996bfb41cb7a20e1ee608
-ms.sourcegitcommit: debaff72dbfae91b303f0acd42dd6d99e03135a2
+ms.openlocfilehash: 772ecef470b69a34e4bd4b0eba2ca60255657eaf
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96428202"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771421"
 ---
 # <a name="executing-a-command"></a>Exécution d’une commande
 
@@ -34,7 +34,7 @@ Le Fournisseur de données Microsoft SqlClient pour SQL Server a le projet <xref
 |`ExecuteNonQuery`|Exécute une commande qui ne retourne aucune ligne.|  
 |`ExecuteXMLReader`|Retourne un <xref:System.Xml.XmlReader>. Disponible pour un objet `SqlCommand` uniquement.|
 
- Chaque objet de commande fortement typé prend également en charge une énumération <xref:System.Data.CommandType> qui spécifie la manière dont une chaîne de commande est interprétée, comme cela est décrit dans le tableau ci-dessous.
+Chaque objet de commande fortement typé prend également en charge une énumération <xref:System.Data.CommandType> qui spécifie la manière dont une chaîne de commande est interprétée, comme cela est décrit dans le tableau ci-dessous.
 
 |CommandType|Description|
 |-----------------|-----------------|  
@@ -51,12 +51,14 @@ L'exemple de code ci-dessous montre comment créer un objet <xref:Microsoft.Data
 
 [!code-csharp[DataWorks SqlClient.StoredProcedure#1](~/../sqlclient/doc/samples/SqlCommand_StoredProcedure.cs#1)]
 
-### <a name="troubleshooting-commands"></a>Dépannage des commandes
+### <a name="troubleshooting-commands"></a>Commandes de dépannage
 
 [!INCLUDE[appliesto-netfx-xxxx-xxxx-md](../../includes/appliesto-netfx-xxxx-xxxx-md.md)]
 
-Le Fournisseur de données Microsoft SqlClient pour SQL Server ajoute des **compteurs de performances** pour vous permettre de détecter les problèmes intermittents liés aux exécutions de commandes qui ont échoué.
+Le Fournisseur de données Microsoft SqlClient pour SQL Server ajoute des **compteurs de performances** pour vous permettre de détecter les problèmes intermittents liés aux exécutions de commandes qui ont échoué. Pour plus d’informations, consultez [Compteurs de performances dans SqlClient](performance-counters.md).
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Commandes et paramètres](commands-parameters.md)
+- [DataAdapters et DataReaders](dataadapters-datareaders.md)
+- [Microsoft ADO.NET pour SQL Server](microsoft-ado-net-sql-server.md)

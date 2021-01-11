@@ -11,14 +11,14 @@ ms.topic: conceptual
 ms.assetid: de676bea-cec7-479d-891a-39ac8b85664f
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 4212c397c712351e951060032f6e7a2ece6a5c3f
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: dc7532aaead7b2257755f2db689c2cbbbd05d3c3
+ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96129035"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97639122"
 ---
-# <a name="sql-server-backup-to-url-best-practices-and-troubleshooting"></a>Bonnes pratiques et résolution des problèmes liés à la sauvegarde SQL Server vers une URL
+# <a name="sql-server-back-up-to-url-best-practices-and-troubleshooting"></a>Bonnes pratiques et résolution des problèmes liés à la sauvegarde SQL Server vers une URL
 
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
@@ -52,86 +52,118 @@ ms.locfileid: "96129035"
 -   L’utilisation de l’option `WITH COMPRESSION`, comme recommandée dans la section [Gestion des sauvegardes](#managing-backups-mb1), est très importante lors de la sauvegarde de fichiers volumineux.  
   
 ## <a name="troubleshooting-backup-to-or-restore-from-url"></a>Dépannage des problèmes de sauvegarde vers une URL ou de restauration depuis une URL  
- Voici quelques méthodes rapides qui vous aideront à résoudre les erreurs survenant lors de la sauvegarde ou de la restauration vers/depuis le service de stockage Blob Azure.  
-  
- Pour éviter les erreurs attribuables à des limitations ou à des options non prises en charge, consultez la liste des limitations, ainsi que l’aide sur les commandes BACKUP et RESTORE dans l’article [Sauvegarde et restauration SQL Server avec le service Microsoft Azure Blob Storage](../../relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service.md) .  
-  
- **Erreurs d'authentification :**  
-  
--   `WITH CREDENTIAL` est une nouvelle option nécessaire pour la sauvegarde ou la restauration vers/depuis le service de stockage Blob Azure. Les défaillances liées aux informations d'identification peuvent être les suivantes :  
-  
-     Les informations d'identification spécifiées dans la commande **BACKUP** ou **RESTORE** n'existent pas. Pour éviter ce problème, vous pouvez inclure des instructions T-SQL afin de créer les informations d'identification si elles n'existent pas dans l'instruction de sauvegarde. Voici un exemple que vous pouvez utiliser :  
-  
-    ```sql  
-    IF NOT EXISTS  
-    (SELECT * FROM sys.credentials   
-    WHERE credential_identity = 'mycredential')  
-    CREATE CREDENTIAL <credential name> WITH IDENTITY = 'mystorageaccount'  
-    , SECRET = '<storage access key>' ;  
-    ```  
-  
--   Les informations d'identification existent, mais le compte de connexion utilisé pour exécuter la commande de sauvegarde ne dispose pas des autorisations appropriées pour accéder aux informations d'identification. Utilisez un compte de connexion dans le rôle **db_backupoperator** avec des autorisations **_Modifier des informations d’identification_* _.  
-  
--   Vérifiez le nom du compte de stockage et la valeur des clés. Les informations stockées dans les informations d’identification doivent correspondre aux valeurs de propriétés du compte de stockage Azure utilisé lors des opérations de sauvegarde et de restauration.  
-  
- _ *Erreurs/Échecs de sauvegarde :* *  
-  
--   Les sauvegardes parallèles dans un même objet blob provoquent l'échec d'une des sauvegardes avec l'erreur **Échec de l’initialisation** .  
-  
--   Si vous utilisez des objets blob de page, par exemple `BACKUP... TO URL... WITH CREDENTIAL`, utilisez les journaux d'erreurs suivants pour vous aider à résoudre les erreurs de sauvegarde :  
-  
-    -   Définissez l'indicateur de trace 3051 pour activer la journalisation dans un journal des erreurs spécifique au format suivant :  
-  
-        `BackupToUrl-\<instname>-\<dbname>-action-\<PID>.log` où `\<action>` est un des éléments suivants :  
-  
-        -   **BdD**  
-        -   **FILELISTONLY**  
-        -   **LABELONLY**  
-        -   **HEADERONLY**  
-        -   **VERIFYONLY**  
-  
-    -   Vous pouvez également trouver des informations en examinant le journal des événements Windows nommé `SQLBackupToUrl` sous Journaux d’application.  
 
-    -   Envisagez d’utiliser COMPRESSION, MAXTRANSFERSIZE, BLOCKSIZE et plusieurs arguments d’URL quand vous sauvegardez de grandes bases de données.  Consultez [Sauvegarde d’une base de données très volumineuse vers Stockage Blob Azure](/archive/blogs/sqlcat/backing-up-a-vldb-to-azure-blob-storage)
+Voici quelques méthodes rapides qui vous aideront à résoudre les erreurs survenant lors de la sauvegarde ou de la restauration vers/depuis le service de stockage Blob Azure.  
   
-        ```console
-        Msg 3202, Level 16, State 1, Line 1
-        Write on "https://mystorage.blob.core.windows.net/mycontainer/TestDbBackupSetNumber2_0.bak" failed: 1117(The request could not be performed because of an I/O device error.)
-        Msg 3013, Level 16, State 1, Line 1
-        BACKUP DATABASE is terminating abnormally.
-        ```
+Pour éviter les erreurs attribuables à des limitations ou à des options non prises en charge, consultez la liste des limitations, ainsi que l’aide sur les commandes BACKUP et RESTORE dans l’article [Sauvegarde et restauration SQL Server avec le service Microsoft Azure Blob Storage](../../relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service.md) .  
 
-        ```sql  
-        BACKUP DATABASE TestDb
-        TO URL = 'https://mystorage.blob.core.windows.net/mycontainer/TestDbBackupSetNumber2_0.bak',
-        URL = 'https://mystorage.blob.core.windows.net/mycontainer/TestDbBackupSetNumber2_1.bak',
-        URL = 'https://mystorage.blob.core.windows.net/mycontainer/TestDbBackupSetNumber2_2.bak'
-        WITH COMPRESSION, MAXTRANSFERSIZE = 4194304, BLOCKSIZE = 65536;  
-        ```  
+**Échec de l’initialisation** 
 
--   En cas de restauration d'une sauvegarde compressée, vous pouvez rencontrer l'erreur suivante :  
+Les sauvegardes parallèles dans un même objet blob provoquent l'échec d'une des sauvegardes avec l'erreur **Échec de l’initialisation** . 
+
+Si vous utilisez des objets blob de page, par exemple `BACKUP... TO URL... WITH CREDENTIAL`, utilisez les journaux d'erreurs suivants pour vous aider à résoudre les erreurs de sauvegarde :  
   
-    -   `SqlException 3284 occurred. Severity: 16 State: 5  
-        Message Filemark on device 'https://mystorage.blob.core.windows.net/mycontainer/TestDbBackupSetNumber2_0.bak' is not aligned.           Reissue the Restore statement with the same block size used to create the backupset: '65536' looks like a possible value.`  
+Définissez l'indicateur de trace 3051 pour activer la journalisation dans un journal des erreurs spécifique au format suivant :  
   
-        Pour résoudre cette erreur, réexécutez l’instruction **RESTORE** en spécifiant **BLOCKSIZE = 65536**.  
+`BackupToUrl-\<instname>-\<dbname>-action-\<PID>.log` où `\<action>` est un des éléments suivants :  
   
--   Erreur lors de la sauvegarde en raison d’objets blob pour lesquels un bail est actif : L’échec d’une activité de sauvegarde peut aboutir à des objets blob avec des bails actifs.  
+-   **BdD**  
+-   **FILELISTONLY**  
+-   **LABELONLY**  
+-   **HEADERONLY**  
+-   **VERIFYONLY**  
   
-     Si une instruction de sauvegarde est retentée, l'opération de sauvegarde échoue avec une erreur semblable à celle qui suit :  
+Vous pouvez également trouver des informations en examinant le journal des événements Windows nommé `SQLBackupToUrl` sous Journaux d’application.  
+
+**La requête n'a pas pu être exécutée en raison d'une erreur de périphérique d'E/S.**
+
+Envisagez d’utiliser COMPRESSION, MAXTRANSFERSIZE, BLOCKSIZE et plusieurs arguments d’URL quand vous sauvegardez de grandes bases de données.  Consultez [Sauvegarde d’une base de données très volumineuse vers Stockage Blob Azure](/archive/blogs/sqlcat/backing-up-a-vldb-to-azure-blob-storage)
+
+L’erreur : 
+
+```console
+Msg 3202, Level 16, State 1, Line 1
+Write on "https://mystorage.blob.core.windows.net/mycontainer/TestDbBackupSetNumber2_0.bak" failed: 
+1117(The request could not be performed because of an I/O device error.)
+Msg 3013, Level 16, State 1, Line 1
+BACKUP DATABASE is terminating abnormally.
+```
+
+Un exemple de résolution : 
+
+```sql  
+BACKUP DATABASE TestDb
+TO URL = 'https://mystorage.blob.core.windows.net/mycontainer/TestDbBackupSetNumber2_0.bak',
+URL = 'https://mystorage.blob.core.windows.net/mycontainer/TestDbBackupSetNumber2_1.bak',
+URL = 'https://mystorage.blob.core.windows.net/mycontainer/TestDbBackupSetNumber2_2.bak'
+WITH COMPRESSION, MAXTRANSFERSIZE = 4194304, BLOCKSIZE = 65536;  
+```  
+
+**Message : la marque de fichier de l’appareil n’est pas alignée.**
+
+En cas de restauration d'une sauvegarde compressée, vous pouvez rencontrer l'erreur suivante :  
   
-     `Backup to URL received an exception from the remote endpoint. Exception Message: The remote server returned an error: (412) There is currently a lease on the blob and no lease ID was specified in the request.`  
+```
+SqlException 3284 occurred. Severity: 16 State: 5  
+Message Filemark on device 'https://mystorage.blob.core.windows.net/mycontainer/TestDbBackupSetNumber2_0.bak' is not aligned.
+Reissue the Restore statement with the same block size used to create the backupset: '65536' looks like a possible value.  
+```
   
-     Si une instruction de restauration est tentée sur un fichier de sauvegarde d'objet blob dont le bail est actif, l'opération de restauration échoue avec une erreur semblable à celle qui suit :  
+Pour résoudre cette erreur, réexécutez l’instruction **RESTORE** en spécifiant **BLOCKSIZE = 65536**.  
   
-     `Exception Message: The remote server returned an error: (409) Conflict..`  
+**L’échec d’une activité de sauvegarde peut aboutir à des objets blob avec des bails actifs.**
+
+Erreur lors de la sauvegarde en raison d’objets blob pour lesquels un bail est actif : `Failed backup activity can result in blobs with active leases.`  
+
+Si une instruction de sauvegarde est retentée, l'opération de sauvegarde échoue avec une erreur semblable à celle qui suit :  
+
+```
+Backup to URL received an exception from the remote endpoint. Exception Message: 
+The remote server returned an error: (412) There is currently a lease on the blob and no lease ID was specified in the request. 
+```
+
+Si une instruction de restauration est tentée sur un fichier de sauvegarde d'objet blob dont le bail est actif, l'opération de restauration échoue avec une erreur semblable à celle qui suit :  
   
-     Lorsqu'une telle erreur se produit, les fichiers d'objets blob doivent être supprimés. Pour plus d'informations sur ce scénario et la résolution du problème, consultez [Deleting Backup Blob Files with Active Leases](../../relational-databases/backup-restore/deleting-backup-blob-files-with-active-leases.md)  
+`Exception Message: The remote server returned an error: (409) Conflict..`  
+  
+Lorsqu'une telle erreur se produit, les fichiers d'objets blob doivent être supprimés. Pour plus d'informations sur ce scénario et la résolution du problème, consultez [Deleting Backup Blob Files with Active Leases](../../relational-databases/backup-restore/deleting-backup-blob-files-with-active-leases.md)  
+
+**Erreur de système d’exploitation 50: La demande n’est pas prise en charge**
+ 
+Lors de la sauvegarde d’une base de données, vous pouvez voir une erreur `Operating system error 50(The request is not supported)` pour les raisons suivantes : 
+
+   - Le compte de stockage spécifié n’est pas Usage général V1/V2.
+   - Le jeton SAS fait plus de 128 caractères.
+   - Le jeton SAS comportait un symbole `?` au début du jeton lors de la création des informations d’identification. Si c’est le cas, supprimez-le.
+   - La connexion active n’est pas en mesure de se connecter au compte de stockage à partir de la machine actuelle avec l’Explorateur Stockage ou SQL Server Management Studio (SSMS). 
+   - La stratégie attribuée au jeton SAP a expiré. Créez une nouvelle stratégie à l’aide de l’Explorateur Stockage Azure et créez un nouveau jeton SAP à l’aide de la stratégie ou modifiez les informations d’identification, puis réessayez de sauvegarder. 
+
+**Erreurs d'authentification**
+  
+`WITH CREDENTIAL` est une nouvelle option nécessaire pour la sauvegarde ou la restauration vers/depuis le service de stockage Blob Azure.
+
+Les défaillances liées aux informations d’identification peuvent être les suivantes : `The credential specified in the **BACKUP** or **RESTORE** command does not exist. `
+
+Pour éviter ce problème, vous pouvez inclure des instructions T-SQL afin de créer les informations d'identification si elles n'existent pas dans l'instruction de sauvegarde. Voici un exemple que vous pouvez utiliser :  
+
+  
+```sql  
+IF NOT EXISTS  
+(SELECT * FROM sys.credentials   
+WHERE credential_identity = 'mycredential')  
+CREATE CREDENTIAL <credential name> WITH IDENTITY = 'mystorageaccount'  
+, SECRET = '<storage access key>' ;  
+```  
+  
+Les informations d'identification existent, mais le compte de connexion utilisé pour exécuter la commande de sauvegarde ne dispose pas des autorisations appropriées pour accéder aux informations d'identification. Utilisez un compte de connexion dans le rôle **db_backupoperator** avec des autorisations **_Modifier des informations d’identification_* _.  
+  
+Vérifiez le nom du compte de stockage et la valeur des clés. Les informations stockées dans les informations d’identification doivent correspondre aux valeurs de propriétés du compte de stockage Azure utilisé lors des opérations de sauvegarde et de restauration.  
+  
   
 ## <a name="proxy-errors"></a>Erreurs de proxy  
  Si vous utilisez des serveurs proxy pour l'accès à Internet, les erreurs suivantes peuvent survenir :  
   
- **Limitation de la connexion par les serveurs proxy :**  
+ _ *Limitation de la connexion par les serveurs proxy**  
   
  Les serveurs proxy peuvent avoir des paramètres qui limitent le nombre de connexions par minute. Le processus de sauvegarde vers l'URL est un processus multithread et, par conséquent, il peut dépasser cette limite. Si cela se produit, le serveur proxy supprime la connexion. Pour résoudre ce problème, modifiez les paramètres du proxy afin que SQL Server n'utilise pas le proxy. Voici quelques exemples des types d'erreur ou des messages qui peuvent s'afficher dans le journal des erreurs :  
   

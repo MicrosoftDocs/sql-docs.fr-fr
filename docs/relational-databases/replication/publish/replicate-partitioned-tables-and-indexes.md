@@ -18,12 +18,12 @@ ms.assetid: c9fa81b1-6c81-4c11-927b-fab16301a8f5
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: 70df27b530fe6afb40f296afdc012ac2c40500a9
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 75c0f38e67fd4d02791c5d2b953f4354a5945dc2
+ms.sourcegitcommit: e5664d20ed507a6f1b5e8ae7429a172a427b066c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97468940"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97697141"
 ---
 # <a name="replicate-partitioned-tables-and-indexes"></a>Répliquer des tables et des index partitionnés
 [!INCLUDE[sql-asdbmi](../../../includes/applies-to-version/sql-asdbmi.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "97468940"
 |Fonction de partition|CREATE PARTITION FUNCTION|  
 |Schéma de partition|CREATE PARTITION SCHEME|  
   
- Le premier ensemble de propriétés en rapport avec le partitionnement correspond aux options de schéma d'article qui déterminent si le partitionnement d'objets doit être copié vers l'Abonné. Ces options de schéma peuvent être définies de plusieurs façons :  
+ Les propriétés de partitionnement sont les options de schéma d’article qui déterminent si le partitionnement d’objets doit être copié vers l’Abonné. Ces options de schéma peuvent être définies de plusieurs façons :  
   
 -   Sur la page **Propriétés de l'article** de l'Assistant Nouvelle publication ou la boîte de dialogue Propriétés de la publication. Pour copier les objets répertoriés dans le tableau précédent, spécifiez la valeur **true** pour les propriétés **Copier les schémas de partition de table** et **Copier les schémas de partition d'index**. Pour plus d’informations sur la façon d’accéder à la page **Propriétés de l’article**, consultez [Afficher et modifier des propriétés de publication](../../../relational-databases/replication/publish/view-and-modify-publication-properties.md).  
   
@@ -61,15 +61,40 @@ ms.locfileid: "97468940"
   
 -   Si l'Abonné et le serveur de publication ont des définitions différentes pour la table partitionnée, l'Agent de distribution échouera lorsqu'il tentera d'appliquer des modifications à l'Abonné.  
   
- Malgré ces problèmes potentiels, le basculement de partition peut être activé pour la réplication transactionnelle. Avant d'activer le basculement de partition, assurez-vous que toutes les tables impliquées dans cette opération existent sur le serveur de publication et sur l'Abonné, et vérifiez que la définition des tables et de la partition sont identiques.  
+Malgré ces problèmes potentiels, le basculement de partition peut être activé pour la réplication transactionnelle. Avant d'activer le basculement de partition, assurez-vous que toutes les tables impliquées dans cette opération existent sur le serveur de publication et sur l'Abonné, et vérifiez que la définition des tables et de la partition sont identiques.  
   
- Lorsque des partitions ont exactement le même schéma de partition sur les serveurs de publication et les abonnés, vous pouvez activer *allow_partition_switch* avec *replication_partition_switch* pour répliquer uniquement l'instruction de basculement de partition vers l'abonné. Vous pouvez également activer *allow_partition_switch* sans répliquer le DDL. Cela s'avère utile lorsque vous souhaitez supprimer des mois antérieurs de la partition tout en conservant la réplication de la partition pendant une autre année à des fins de sauvegarde sur l'abonné.  
+Lorsque des partitions ont exactement le même schéma de partition sur les serveurs de publication et les abonnés, vous pouvez activer *allow_partition_switch* avec *replication_partition_switch* pour répliquer uniquement l’instruction de basculement de partition vers l’abonné. Vous pouvez également activer *allow_partition_switch* sans répliquer le DDL. Cela s'avère utile lorsque vous souhaitez supprimer des mois antérieurs de la partition tout en conservant la réplication de la partition pendant une autre année à des fins de sauvegarde sur l'abonné.  
   
- Si vous activez le basculement de partition (sur SQL Server 2008 R2 jusqu’à la version actuelle), vous devrez peut-être également fractionner et fusionner des opérations dans un futur proche. Avant d’exécuter une opération de fractionnement ou de fusion sur une table répliquée, vérifiez que la partition en question n’a pas de commandes répliquées en attente. Vous devez également vous assurer qu’aucune opération DML n’est exécutée sur la partition pendant les opérations de fractionnement et de fusion. Si des transactions n’ont pas été traitées par le lecteur de journal ou que des opérations DML sont exécutées sur la partition d’une table répliquée en même temps qu’une opération de fractionnement ou de fusion (sur la même partition), il est possible que l’Agent de lecture du journal fasse l’objet d’une erreur de traitement. Pour corriger l'erreur, une réinitialisation de l'abonnement peut s'avérer nécessaire.  
-  
-> [!WARNING]  
->  Vous ne devez pas activer le basculement de partition pour les publications d'égal à égal, en raison de la colonne masquée utilisée pour détecter et résoudre le conflit.  
-  
+Si vous activez le basculement de partition (sur SQL Server 2008 R2 jusqu’à la version actuelle), vous devrez peut-être également fractionner et fusionner des opérations dans un futur proche. Avant d’exécuter une opération de fractionnement ou de fusion sur une table répliquée ou compatible CDC, vérifiez que la partition en question n’a pas de commandes répliquées en attente. Vous devez également vous assurer qu’aucune opération DML n’est exécutée sur la partition pendant les opérations de fractionnement et de fusion. Si des transactions n’ont pas été traitées par le lecteur de journal ou travail de capture CDC, ou que des opérations DML sont exécutées sur la partition d’une table répliquée ou compatible CDC en même temps qu’une opération de fractionnement ou de fusion (sur la même partition), il est possible que l’Agent de lecture du journal ou le travail de capture CDC fasse l’objet d’une erreur de traitement (erreur 608 : Aucune entrée de catalogue trouvée pour l’ID de partition). Pour corriger l’erreur, une réinitialisation de l’abonnement ou la désactivation de CDC sur cette table ou cette base de données peut s’avérer nécessaire. 
+
+### <a name="unsupported-scenarios"></a>Scénarios non pris en charge
+
+Les scénarios suivants ne sont pas pris en charge lors de l’utilisation de la réplication avec basculement de partition : 
+
+**Réplication d’égal à égal**   
+La réplication d’égal à égal n’est pas prise en charge avec le basculement de partition. 
+
+**Utilisation de variables avec le basculement de partition**   
+
+L’utilisation de variables avec le basculement de partition sur les tables publiées avec la réplication transactionnelle ou la capture des changements de données (CDC) n’est pas prise en charge pour l’instruction `ALTER TABLE ... SWITCH TO ... PARTITION ...`.
+
+Par exemple, le code de basculement de partition suivant ne fonctionne pas avec la capture des changements de données activée sur la base de données, ou avec la TableA qui participe à une publication transactionnelle : 
+
+```sql
+DECLARE @SomeVariable INT = $PARTITION.pf_test(10);
+ALTER TABLE dbo.TableA
+SWITCH TO dbo.TableB 
+PARTITION @SomeVariable;
+```
+
+Au lieu de cela, basculez votre partition directement à l’aide de la fonction de partition, comme dans l’exemple suivant : 
+
+```sql
+ALTER TABLE NonPartitionedTable 
+SWITCH TO PartitionedTable PARTITION $PARTITION.pf_test(10);
+```
+
+
 ### <a name="enabling-partition-switching"></a>Activation du basculement de partition  
  Les propriétés suivantes pour les publications transactionnelles permettent aux utilisateurs de contrôler le comportement de l'insertion de partition dans un environnement répliqué :  
   

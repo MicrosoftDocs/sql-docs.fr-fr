@@ -5,7 +5,7 @@ ms.custom: seodec18
 ms.date: 05/18/2016
 ms.prod: sql
 ms.reviewer: ''
-ms.technology: high-availability
+ms.technology: availability-groups
 ms.topic: how-to
 helpviewer_keywords:
 - Availability Groups [SQL Server], interoperability
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 55b345fe-2eb9-4b04-a900-63d858eec360
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 864fca7c1d2983bec6296f1e82304cff31f658cb
-ms.sourcegitcommit: 54cd97a33f417432aa26b948b3fc4b71a5e9162b
+ms.openlocfilehash: f07f8eaa1dc5657c2dfdb296bc9efffec9b308b2
+ms.sourcegitcommit: e5664d20ed507a6f1b5e8ae7429a172a427b066c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "94584203"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97697126"
 ---
 # <a name="manage-a-replicated-publisher-database-as-part-of-an-always-on-availability-group"></a>Gérer une base de données de serveur de publication répliquée et membre d’un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -63,7 +63,7 @@ ms.locfileid: "94584203"
   
      Ne supprimez pas le serveur distant du serveur de publication d'origine du serveur de distribution, même si le serveur n'est plus accessible. Les métadonnées du serveur du serveur de publication d'origine sont requises sur le serveur de distribution pour satisfaire les requêtes de métadonnées de publication.  
   
--   Si un groupe de disponibilité complet est supprimé, le comportement d'une base de données membre répliquée est le même que lorsqu'une base de données publiée est supprimée d'un groupe de disponibilité. La réplication peut être reprise à partir du dernier principal dès que la base de données a été restaurée et la redirection a été modifiée. Si la base de données est restaurée sur son serveur de publication d'origine, la redirection doit être supprimée. Si la base de données est restaurée sur un hôte différent, la redirection doit être explicitement dirigée vers le nouvel hôte.  
+-   Si un groupe de disponibilité complet est supprimé, le comportement d’une base de données membre répliquée est le même que lorsqu’une base de données publiée est supprimée d’un groupe de disponibilité. La réplication peut être reprise à partir du dernier principal dès que la base de données a été restaurée et la redirection a été modifiée. Si la base de données est restaurée sur son serveur de publication d'origine, la redirection doit être supprimée. Si la base de données est restaurée sur un hôte différent, la redirection doit être explicitement dirigée vers le nouvel hôte.  
   
     > [!NOTE]  
     >  Lorsqu'un groupe de disponibilité comportant des bases de données membres publiées est supprimé, ou lorsqu'une base de données publiée est est supprimée d'un groupe de disponibilité, toutes les copies des bases de données publiées sont laissées à l'état de récupération. Si elles sont restaurées, chacune apparaîtra comme une base de données publiée. Une seule copie doit être conservée avec les métadonnées de publication. Pour désactiver la réplication d'une copie de base de données publiée, commencez par supprimer tous les abonnements et toutes les publications de la base de données.  
@@ -99,6 +99,27 @@ ms.locfileid: "94584203"
     ```  
   
      À ce stade, la copie de la base de données publiée peut être conservée ou supprimée.  
+
+## <a name="remove-original-publisher"></a>Supprimer le serveur de publication d’origine
+
+Il peut y avoir des cas (remplacement d’ancien serveur, mise à niveau du système d’exploitation, etc.) dans lesquels vous souhaitez supprimer un serveur de publication d’origine d’un groupe de disponibilité Always On. Suivez les étapes de cette section pour supprimer le serveur de publication du groupe de disponibilité. 
+
+Supposons que vous avez des serveurs N1, N2 et D1, où N1 et N2 sont le réplica principal et le réplica secondaire du groupe de disponibilité AG1, N1 est le serveur de publication d’origine d’une publication transactionnelle et D1 est le serveur de distribution. Vous souhaitez remplacer le serveur de publication original N1 par le nouveau serveur de publication N3. 
+
+Pour supprimer le serveur de publication, procédez comme suit : 
+
+1. Installez et configurez SQL Server sur le nœud N3. La version de SQL Server doit être identique à celle du serveur de publication d’origine. 
+1. Sur le serveur de distribution D1, ajoutez N3 en tant que serveur de publication à l’aide de [sp_adddistpublisher](../../../relational-databases/system-stored-procedures/sp-adddistpublisher-transact-sql.md). 
+1. Configurez N3 en tant que serveur de publication avec D1 comme serveur de distribution. 
+1. Ajoutez N3 en tant que réplica au groupe de disponibilité AG1. 
+1. Sur le réplica N3, vérifiez que les abonnés de type push de la publication apparaissent en tant que serveurs liés. Utilisez [sp_addlinkedserver](../../../relational-databases/system-stored-procedures/sp-addlinkedserver-transact-sql.md) ou SQL Server Management Studio. 
+1. Une fois la synchronisation N3 terminée, faites basculer le groupe de disponibilité sur N3 comme serveur principal. 
+1. Supprimez N1 du groupe de disponibilité AG1. 
+
+Tenez compte des points suivants :
+- Ne supprimez pas le serveur distant du serveur de publication d’origine (N1 dans le cas présent) ou les métadonnées qui lui sont associées du serveur de distribution, même si le serveur n’est plus accessible. Les métadonnées du serveur du serveur de publication d’origine sont requises sur le serveur de distribution pour satisfaire les requêtes de métadonnées de publication et sans elles la réplication échouera. 
+- Pour SQL Server 2014, une fois le serveur de publication d’origine supprimé, vous ne pourrez pas utiliser le nom de l’éditeur d’origine pour administrer la réplication dans le moniteur de réplication. Si vous essayez d’enregistrer de nouveaux réplicas en tant que serveur de publication dans le moniteur de réplication, les informations ne s’affichent pas, car aucune métadonnée ne lui est associée. Pour administrer la réplication dans ce scénario, vous devez cliquer avec le bouton droit sur des publications et des abonnements individuels dans SQL Server Management Studio (SSMS).
+- Pour SQL Server 2016 SP2-CU3, SQL Server 2017 CU6 et versions ultérieures, inscrivez l’écouteur du serveur de publication du groupe de disponibilité dans le moniteur de réplication pour administrer la réplication à l’aide de SQL Server Management Studio version 17.7 ou ultérieure. 
   
 ##  <a name="related-tasks"></a><a name="RelatedTasks"></a> Tâches associées  
   

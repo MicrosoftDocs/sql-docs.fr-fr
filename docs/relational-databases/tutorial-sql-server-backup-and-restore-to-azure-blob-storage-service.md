@@ -2,27 +2,35 @@
 title: 'Démarrage rapide : Sauvegarder et restaurer avec le service Stockage Blob Azure'
 description: 'Démarrage rapide : découvrez comment écrire des sauvegardes et les restaurer à partir du service Stockage Blob Azure. Créez un conteneur d’objets Blob Azure, écrivez une sauvegarde, puis effectuez une restauration.'
 ms.custom: seo-dt-2019
-ms.date: 04/09/2018
+ms.date: 12/21/2020
 ms.prod: sql
-ms.prod_service: database-engine
+ms.technology: backup-restore
+ms.prod_service: backup-restore
 ms.reviewer: ''
-ms.technology: performance
 ms.topic: quickstart
-ms.assetid: 9e1d94ce-2c93-45d1-ae2a-2a7d1fa094c4
-author: WilliamDAssafMSFT
-ms.author: wiassaf
-ms.openlocfilehash: faf3ccecd17ece2b66371d81a68589f184fe48a0
-ms.sourcegitcommit: 0e0cd9347c029e0c7c9f3fe6d39985a6d3af967d
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: d27f53f80c8f987106f90816a4566339d777e6f6
+ms.sourcegitcommit: bb54e4c9dd8c97365b7a96dfcd557b8b86d06978
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96506405"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97736897"
 ---
 # <a name="quickstart-sql-backup-and-restore-to-azure-blob-storage-service"></a>Démarrage rapide : Sauvegarde et restauration de SQL Server avec le service de stockage Blob Azure
-[!INCLUDE[tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md.md](../includes/tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md.md)]
+
+[!INCLUDE [sqlserver2016-asdbmi](../includes/applies-to-version/sqlserver2016-asdbmi.md)]
+
 Ce guide de démarrage rapide vous aide à comprendre comment écrire des sauvegardes et les restaurer à partir du service Stockage Blob Azure.  L’article explique comment créer un conteneur d’objets blob Azure, écrire une sauvegarde dans le service blob, puis effectuer une restauration.
+
+> [!NOTE]
+> SQL Server 2012 SP1 CU2 a introduit la prise en charge de la sauvegarde dans le stockage Blob Azure. SQL Server 2014 et les versions antérieures ne prennent pas en charge la signature d’accès partagé (SAP) décrite dans cet article de démarrage rapide.
+>
+> Pour SQL Server 2014 et versions antérieures, utilisez [Didacticiel : Sauvegarde et restauration SQL Server 2014 sur le stockage Blob Microsoft Azure](/previous-versions/sql/2014/relational-databases/backup-restore/sql-server-backup-to-url).
+>
   
-## <a name="prerequisites"></a>Prérequis  
+## <a name="prerequisites"></a>Prérequis
+
 Pour suivre ce guide de démarrage rapide, vous devez connaître les concepts de sauvegarde et de restauration [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] et la syntaxe T-SQL.  Vous avez besoin d’un compte de stockage Azure, de SQL Server Management Studio (SSMS) et d’un accès à un serveur qui exécute SQL Server ou Azure SQL Managed Instance. Par ailleurs, le compte utilisé pour émettre les commandes BACKUP et RESTORE doit figurer dans le rôle de base de données **db_backupoperator** avec les autorisations **modifier les informations d’identification**. 
 
 - Obtenir gratuitement un [compte Azure](https://azure.microsoft.com/offers/ms-azr-0044p/).
@@ -214,12 +222,12 @@ Dans cette étape, restaurez la base de données à l’aide de l’interface gr
 
    ![Sélectionner Restaurer le fichier](media/tutorial-sql-server-backup-and-restore-to-azure-blob-storage-service/select-restore-file.png)
 
-1. Sélectionnez **OK** pour fermer la boîte de dialogue **Sélectionner les unités de sauvegarde**. 
-1. Sélectionnez **OK** pour restaurer votre base de données. 
+1. Sélectionnez **OK** pour fermer la boîte de dialogue **Sélectionner les unités de sauvegarde**.
+1. Sélectionnez **OK** pour restaurer votre base de données.
 
 # <a name="transact-sql"></a>[Transact-SQL](#tab/tsql)
 
-Pour restaurer votre base de données locale à partir du stockage d’objets Blob Azure, modifiez la commande Transact-SQL suivante afin d’utiliser votre propre compte de stockage, puis exécutez-la dans une nouvelle fenêtre de requête. 
+Pour restaurer votre base de données locale à partir du stockage d’objets Blob Azure, modifiez la commande Transact-SQL suivante afin d’utiliser votre propre compte de stockage, puis exécutez-la dans une nouvelle fenêtre de requête.
 
 ```sql
 USE [master]

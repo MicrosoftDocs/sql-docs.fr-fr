@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: 146063d665b89a8541c34d9cc3b0b6da3939d801
-ms.sourcegitcommit: 7a3fdd3f282f634f7382790841d2c2a06c917011
+ms.openlocfilehash: 1d170d712269bf169d069ef7b93f975de855f8ec
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96563095"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771401"
 ---
 # <a name="protecting-connection-information"></a>Protection des informations de connexion
 
@@ -27,7 +27,7 @@ La protection de l'accès à votre source de données représente l'un de vos pr
 
 Des vulnérabilités de sécurité impliquant des chaînes de connexion peuvent se produire en fonction du type d'authentification utilisé, de la manière dont les chaînes de connexion sont conservées dans la mémoire et sur le disque, et des techniques utilisées pour les construire au moment de l'exécution.
 
-## <a name="use-windows-authentication"></a>Utiliser l'authentification Windows
+## <a name="use-windows-authentication"></a>Utiliser l’authentification Windows
 
 Pour aider à limiter l'accès à votre source de données, vous devez sécuriser des informations de connexion telles que l'ID utilisateur, le mot de passe et le nom de source de données. Afin d'éviter l'exposition d'informations utilisateur, il est recommandé d'utiliser l'authentification Windows (parfois appelée *sécurité intégrée*) dès que possible. L'authentification Windows est spécifiée dans une chaîne de connexion à l'aide des mots clés `Integrated Security` ou `Trusted_Connection`, ce qui supprime le recours à un ID utilisateur et à un mot de passe. Lors de l'utilisation de l'authentification Windows, les utilisateurs sont authentifiés par Windows et l'accès aux ressources de serveur et de base de données est déterminé en octroyant des autorisations aux utilisateurs et aux groupes Windows.
 
@@ -41,15 +41,15 @@ Dans les cas où l'utilisation de l'authentification Windows n'est pas possible,
 
 Le compte d'identité fixe doit être un compte avec des privilèges faibles auquel seules les autorisations nécessaires dans la base de données ont été octroyées. En outre, vous devez chiffrer le fichier de configuration afin que le nom d'utilisateur et le mot de passe ne soient pas exposés en texte clair.
 
-## <a name="avoid-injection-attacks-with-connection-string-builders"></a>Évitez les attaques par injection à l'aide de générateurs de chaînes de connexion
+## <a name="avoid-injection-attacks-with-connection-string-builders"></a>Évitez les attaques par injection avec des générateurs de chaînes de connexion
 
 Une attaque par injection de chaîne de connexion peut se produire lorsqu'une concaténation de chaîne dynamique est utilisée pour générer des chaînes de connexion en fonction de l'entrée utilisateur. Si l'entrée utilisateur n'est pas validée et que du texte ou des caractères malveillants ne sont pas placés dans une séquence d'échappement, un attaquant peut éventuellement accéder à des données sensibles ou à d'autres ressources sur le serveur. Pour résoudre ce problème, le Fournisseur de données Microsoft SQL pour SQL Server introduit de nouvelles classes de générateur de chaîne de connexion pour valider la syntaxe de la chaîne de connexion et garantir que des paramètres supplémentaires ne sont pas introduits. Pour plus d’informations, consultez [Builders de chaînes de connexion](connection-string-builders.md).
 
-## <a name="use-persist-security-infofalse"></a>Utilisez Persist Security Info=False
+## <a name="use-persist-security-infofalse"></a>Utilisez « Persist Security Info=false »
 
 La valeur par défaut pour `Persist Security Info` est False ; nous vous recommandons d'utiliser cette valeur par défaut dans toutes les chaînes de connexion. Le paramétrage de `Persist Security Info` avec la valeur `true` ou `yes` permet d'obtenir des informations sensibles pour la sécurité, dont l'ID utilisateur et le mot de passe, à partir d'une connexion une fois celle-ci ouverte. Lorsque `Persist Security Info` possède la valeur `false` ou `no`, les informations de sécurité sont ignorées après leur utilisation pour ouvrir la connexion, ce qui garantit qu'une source qui n'est pas digne de confiance ne dispose pas d'un accès à des informations sensibles sur la sécurité.
 
-## <a name="encrypt-configuration-files"></a>Chiffrez les fichiers de configuration
+## <a name="encrypt-configuration-files"></a>Chiffrer les fichiers de configuration
 
 [!INCLUDE[appliesto-netfx-netcore-xxxx-md](../../includes/appliesto-netfx-netcore-xxxx-md.md)]
 
@@ -58,3 +58,4 @@ Vous pouvez également stocker des chaînes de connexion dans des fichiers de co
 ## <a name="see-also"></a>Voir aussi
 
 - [Chiffrement des informations de configuration à l'aide de la configuration protégée](/previous-versions/aspnet/53tyfkaw(v=vs.100))
+- [Microsoft ADO.NET pour SQL Server](microsoft-ado-net-sql-server.md)

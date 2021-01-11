@@ -15,22 +15,21 @@ helpviewer_keywords:
 ms.assetid: 7d8c4684-9eb1-4791-8c3b-0f0bb15d9634
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 55bb82e19a97a91dbe00b44b195e74a250ddf1dc
-ms.sourcegitcommit: 7f76975c29d948a9a3b51abce564b9c73d05dcf0
+ms.openlocfilehash: f90e59f3e54b69a98e7ca058da971677faaafd0d
+ms.sourcegitcommit: e5664d20ed507a6f1b5e8ae7429a172a427b066c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96900959"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "97697109"
 ---
 # <a name="about-change-data-capture-sql-server"></a>À propos de la capture de données modifiées (SQL Server)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]
 
-> [!NOTE]
-> CDC est maintenant pris en charge pour SQL Server 2017 sur Linux à partir de CU18, et pour SQL Server 2019 sur Linux.
 
-  La capture de données modifiées enregistre les activités d'insertion, de mise à jour et de suppression appliquées à une table [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Elle rend disponibles les détails des modifications dans un format relationnel simple à utiliser. Les informations sur les colonnes et les métadonnées nécessaires à l'application des modifications à un environnement cible sont capturées pour les lignes modifiées et stockées dans des tables de modification qui reflètent la structure de colonne des tables sources suivies. Des fonctions table sont fournies afin de procurer aux consommateurs un accès systématique aux données modifiées.  
+
+  La capture de données modifiées enregistre les activités d’insertion, de mise à jour et de suppression appliquées à une table [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Elle rend disponibles les détails des modifications dans un format relationnel simple à utiliser. Les informations sur les colonnes et les métadonnées nécessaires à l'application des modifications à un environnement cible sont capturées pour les lignes modifiées et stockées dans des tables de modification qui reflètent la structure de colonne des tables sources suivies. Des fonctions table sont fournies afin de procurer aux consommateurs un accès systématique aux données modifiées.  
   
- Les consommateurs de données auxquels s'adresse cette technologie sont par exemple les applications d'extraction, de transformation et de chargement (ETL). Une application ETL charge de façon incrémentielle les données modifiées à partir de tables sources [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] vers un entrepôt de données ou un mini-Data Warehouse. Même si la représentation des tables sources dans l'entrepôt de données doit refléter les modifications apportées aux tables sources, une technologie de bout en bout qui actualise un réplica de la source n'est pas appropriée. Au lieu de cela, il faut un flux de données modifiées fiable, structuré de sorte que les consommateurs puissent l'appliquer aux différentes représentations cibles des données. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] apporte cette technologie.  
+ Les consommateurs de données auxquels s’adresse cette technologie sont par exemple les applications d’extraction, de transformation et de chargement (ETL). Une application ETL charge de façon incrémentielle les données modifiées à partir de tables sources [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] vers un entrepôt de données ou un mini-Data Warehouse. Même si la représentation des tables sources dans l'entrepôt de données doit refléter les modifications apportées aux tables sources, une technologie de bout en bout qui actualise un réplica de la source n'est pas appropriée. Au lieu de cela, il faut un flux de données modifiées fiable, structuré de sorte que les consommateurs puissent l'appliquer aux différentes représentations cibles des données. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] apporte cette technologie.  
   
 ## <a name="change-data-capture-data-flow"></a>Flux de données de capture de données modifiées  
  L'illustration suivante décrit le flux de données principal pour la capture de données modifiées.  
@@ -72,7 +71,7 @@ ms.locfileid: "96900959"
   
  Pour gérer une table de modifications à structure de colonne fixe, le processus de capture responsable du remplissage de la table de modifications ignore toute nouvelle colonne qui n'a pas été identifiée pour la capture lorsque la table source a été activée pour la capture de données modifiées. Si une colonne suivie est supprimée, des valeurs NULL sont fournies pour la colonne dans les entrées de modification suivantes. Toutefois, si une colonne existante subit une modification de son type de données, la modification est propagée à la table de modifications afin de s'assurer que le mécanisme de capture n'introduit pas de perte de données dans les colonnes suivies. Le processus de capture publie également dans la table cdc.ddl_history toutes les modifications de structure de colonne détectées pour les tables faisant l'objet d'un suivi. Les consommateurs souhaitant être informés des ajustements qui peuvent se révéler nécessaires dans les applications en aval doivent utiliser la procédure stockée [sys.sp_cdc_get_ddl_history](../../relational-databases/system-stored-procedures/sys-sp-cdc-get-ddl-history-transact-sql.md).  
   
- En général, l'instance de capture actuelle conserve sa forme lorsque des modifications DDL sont appliquées à sa table source associée. Toutefois, il est possible de créer pour la table une deuxième instance de capture qui reflète la nouvelle structure de colonne. Cela permet au processus de capture d'apporter des modifications à la même table source dans deux tables de modifications distinctes qui ont deux structures de colonne différentes. Par conséquent, tandis qu'une table de modifications peut continuer à servir les programmes actuellement opérationnels, la deuxième peut être affectée à un environnement de développement qui tente d'incorporer les nouvelles données de colonnes. Le fait d'autoriser le mécanisme de capture à remplir les deux tables de modifications en tandem signifie qu'une transition de l'une à l'autre peut être accomplie sans perte de données de modifications. Cela peut arriver à tout moment où les deux chronologies de capture de données modifiées se chevauchent. Lorsque la transition est terminée, l'instance de capture obsolète peut être supprimée.  
+ En général, l'instance de capture actuelle conserve sa forme lorsque des modifications DDL sont appliquées à sa table source associée. Toutefois, il est possible de créer pour la table une deuxième instance de capture qui reflète la nouvelle structure de colonne. Cela permet au processus de capture d'apporter des modifications à la même table source dans deux tables de modifications distinctes qui ont deux structures de colonne différentes. Par conséquent, tandis qu'une table de modifications peut continuer à servir les programmes actuellement opérationnels, la deuxième peut être affectée à un environnement de développement qui tente d'incorporer les nouvelles données de colonnes. Le fait d'autoriser le mécanisme de capture à remplir les deux tables de modifications en tandem signifie qu'une transition de l'une à l'autre peut être accomplie sans perte de données de modifications. Cela peut arriver à tout moment où les deux chronologies de capture de données modifiées se chevauchent. Lorsque la transition est terminée, l’instance de capture obsolète peut être supprimée.  
   
 > [!NOTE]  
 >  La quantité maximale d'instances de capture qui peuvent être associées simultanément à une table source unique est de deux.  
@@ -138,9 +137,20 @@ CREATE TABLE T1(
      C2 NVARCHAR(10) collate Chinese_PRC_CI_AI --Unicode data type, CDC works well with this data type)
 ```
 
-## <a name="columnstore-indexes"></a>Index columnstore
+## <a name="limitations"></a>Limites
 
+La capture des changements de données présente les limitations suivantes : 
+
+**Linux**   
+CDC est maintenant pris en charge pour SQL Server 2017 sur Linux à partir de CU18, et pour SQL Server 2019 sur Linux.
+
+**Index columnstore**   
 La capture des changements de données ne peut pas être activée sur les tables avec un index columnstore cluster. À compter de SQL Server 2016, elle peut être activée sur les tables avec un index columnstore non cluster.
+
+**Basculement de partition avec des variables**   
+L’utilisation de variables avec basculement de partition sur des bases de données ou des tables avec capture des changements de données (CDC) n’est pas prise en charge pour l’instruction `ALTER TABLE ... SWITCH TO ... PARTITION ...`. Pour en savoir plus, consultez [limitations du basculement de partition](../replication/publish/replicate-partitioned-tables-and-indexes.md#replication-support-for-partition-switching). 
+
+
 
 ## <a name="see-also"></a>Voir aussi  
  [Suivi des modifications de données &#40;SQL Server&#41;](../../relational-databases/track-changes/track-data-changes-sql-server.md)   

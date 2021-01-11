@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: a24241d3ef66739a85422397426278738987bf15
-ms.sourcegitcommit: debaff72dbfae91b303f0acd42dd6d99e03135a2
+ms.openlocfilehash: 14442892bc59fc733c6a67153832b95c3f368b95
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96428223"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771452"
 ---
 # <a name="configuring-parameters"></a>Configuration des paramètres
 
@@ -31,7 +31,7 @@ Les commandes paramétrées améliorent également les performances d'exécution
 
 Un objet <xref:System.Data.Common.DbParameter> peut être créé à l'aide de son constructeur ou en l'ajoutant à la propriété <xref:System.Data.Common.DbCommand.DbParameterCollection%2A> en appelant la méthode `Add` de la collection <xref:System.Data.Common.DbParameterCollection> . La méthode `Add` prendra comme entrée des arguments de constructeur ou un objet Parameter existant, selon le fournisseur de données.
 
-## <a name="supplying-the-parameterdirection-property"></a>Approvisionnement de la propriété ParameterDirection
+## <a name="supply-the-parameterdirection-property"></a>Fournir la propriété ParameterDirection
 
 Lorsque vous ajoutez des paramètres, vous devez fournir une propriété <xref:System.Data.ParameterDirection> pour les paramètres autres que les paramètres d'entrée. Le tableau ci-dessous indique les valeurs `ParameterDirection` que vous pouvez utiliser avec l'énumération <xref:System.Data.ParameterDirection> .
 
@@ -42,11 +42,11 @@ Lorsque vous ajoutez des paramètres, vous devez fournir une propriété <xref:S
 |<xref:System.Data.ParameterDirection.Output>|Le paramètre est un paramètre de sortie.|
 |<xref:System.Data.ParameterDirection.ReturnValue>|Le paramètre représente une valeur de retour d'une opération telle qu'une procédure stockée, une fonction intégrée ou une fonction définie par l'utilisateur.|
 
-## <a name="working-with-parameter-placeholders"></a>Utilisation des espaces réservés de paramètres
+## <a name="work-with-parameter-placeholders"></a>Utiliser des espaces réservés de paramètres
 
 La syntaxe des espaces réservés des paramètres dépend de la source de données. Le Fournisseur de données Microsoft SqlClient pour SQL Server gère différemment la dénomination et la spécification des paramètres et des espaces réservés de paramètres. Le Fournisseur de données SqlClient utilise des paramètres nommés au format `@`*parametername*.
 
-## <a name="specifying-parameter-data-types"></a>Spécification des types de données de paramètre
+## <a name="specify-parameter-data-types"></a>Spécifier les types de données des paramètres
 
 Le type de données d’un paramètre est spécifique au Fournisseur de données Microsoft SqlClient pour SQL Server. La spécification du type convertit la valeur de `Parameter` en Fournisseur de données Microsoft SqlClient pour le type de SQL Server avant de passer la valeur à la source de données. Vous pouvez également spécifier le type d'un `Parameter` de façon générique en affectant à la propriété `DbType` de l'objet `Parameter` un <xref:System.Data.DbType>particulier.
 
@@ -89,7 +89,7 @@ Le type Fournisseur de données Microsoft SqlClient pour SQL Server d’un objet
 > [!NOTE]
 > Lorsque vous envoyez une valeur de paramètre Null au serveur, vous devez spécifier <xref:System.DBNull> plutôt que `null` (`Nothing` en Visual Basic). Dans le système, la valeur null désigne un objet vide qui ne possède pas de valeur. <xref:System.DBNull> est utilisé pour représenter des valeurs null.
 
-## <a name="deriving-parameter-information"></a>Dérivation des informations sur les paramètres
+## <a name="derive-parameter-information"></a>Dériver les informations de paramètre
 
 Les paramètres peuvent aussi être dérivés d'une procédure stockée à l'aide de la classe `DbCommandBuilder` . La classe `SqlCommandBuilder` fournit une méthode statique, `DeriveParameters`, qui remplit automatiquement la collection Paramètres d’un objet de commande qui utilise les informations sur les paramètres d’une procédure stockée. Notez que `DeriveParameters` remplace toutes les informations existantes sur les paramètres pour la commande.
 
@@ -123,4 +123,6 @@ Cet exemple montre comment appeler une procédure stockée SQL Server dans l'exe
 ## <a name="see-also"></a>Voir aussi
 
 - [Commandes et paramètres](commands-parameters.md)
+- [DataAdapters et DataReaders](dataadapters-datareaders.md)
 - [Mappages des types de données dans ADO.NET](data-type-mappings-ado-net.md)
+- [Microsoft ADO.NET pour SQL Server](microsoft-ado-net-sql-server.md)

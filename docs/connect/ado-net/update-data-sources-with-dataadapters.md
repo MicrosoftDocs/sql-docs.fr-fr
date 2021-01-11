@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: 0be62b3c2a63f7b25889e25f88969aa5aaa9b50e
-ms.sourcegitcommit: c127c0752e84cccd38a7e23ac74c0362a40f952e
+ms.openlocfilehash: 6f2feb876d0f232f4d7951de8ee1cc84587e6486
+ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96772236"
+ms.lasthandoff: 12/25/2020
+ms.locfileid: "97771349"
 ---
 # <a name="update-data-sources-with-dataadapters"></a>Mise à jour de sources de données avec des DataAdapter
 
@@ -75,7 +75,7 @@ Les exemples suivants montrent comment effectuer des mises à jour de lignes mod
 
 ## <a name="autoincrement-columns"></a>AutoIncrement (colonnes)
 
-Si les tables de votre source de données ont des colonnes à incrémentation automatique, vous pouvez remplir les colonnes de votre `DataSet` soit en retournant la valeur d'auto-incrémentation comme paramètre de sortie d'une procédure stockée et en la mappant à une colonne dans une table, soit en utilisant l'événement `RowUpdated` du `DataAdapter` pour exécuter une instruction SELECT supplémentaire.
+Si les tables de votre source de données ont des colonnes à incrémentation automatique, vous pouvez remplir les colonnes de votre `DataSet` soit en retournant la valeur d'auto-incrémentation comme paramètre de sortie d'une procédure stockée et en la mappant à une colonne dans une table, soit en utilisant l'événement `RowUpdated` du `DataAdapter` pour exécuter une instruction SELECT supplémentaire. Pour plus d’informations et pour obtenir un exemple, consultez [Récupérer des valeurs d’identité ou de numérotation automatique](retrieve-identity-or-autonumber-values.md).
 
 ## <a name="ordering-of-inserts-updates-and-deletes"></a>Ordre des insertions, des mises à jour et des suppressions
 
@@ -172,4 +172,5 @@ GO
 ## <a name="see-also"></a>Voir aussi
 
 - [DataAdapters et DataReaders](dataadapters-datareaders.md)
+- [Extraction de l’identité ou de valeurs à numérotation automatique](retrieve-identity-or-autonumber-values.md)
 - [Microsoft ADO.NET pour SQL Server](microsoft-ado-net-sql-server.md)
