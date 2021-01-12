@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_sql_referencing_entities dynamic management function
 ms.assetid: c16f8f0a-483f-4feb-842e-da90426045ae
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 517e6f8faaccf40091535b8a78d47d0fa8a43032
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 109791409e050201f64a7f7f9b207ccac58372b9
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484571"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093987"
 ---
 # <a name="sysdm_sql_referencing_entities-transact-sql"></a>sys.dm_sql_referencing_entities (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -95,13 +95,13 @@ sys.dm_sql_referencing_entities (
   
  Retourne une erreur lorsque l'entité référencée spécifiée est une procédure stockée numérotée.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Le tableau suivant répertorie les types des entités pour lesquelles les informations de dépendance sont créées et gérées. Les informations de dépendance ne sont pas créées ni gérées pour les règles, les valeurs par défaut, les tables temporaires, les procédures stockées temporaires ou les objets système.  
   
 |Type d'entité|Entité de référence|Entité référencée|  
 |-----------------|------------------------|-----------------------|  
 |Table de charge de travail|Oui*|Oui|  
-|Affichage|Oui|Oui|  
+|Afficher|Oui|Oui|  
 |Procédure stockée [!INCLUDE[tsql](../../includes/tsql-md.md)]**|Oui|Oui|  
 |Procédure stockée CLR|Non|Oui|  
 |Fonction [!INCLUDE[tsql](../../includes/tsql-md.md)] définie par l'utilisateur|Oui|Oui|  

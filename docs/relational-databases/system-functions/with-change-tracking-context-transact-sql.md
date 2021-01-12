@@ -17,15 +17,15 @@ helpviewer_keywords:
 - WITH CHANGE_TRACKING_CONTEXT
 - change tracking [SQL Server], WITH CHANGE_TRACKING_CONTEXT
 ms.assetid: 885e33a1-602a-4b94-8380-a63ac935a683
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 67caab48d5d859075095f8631df7f8743b8783b4
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: f35e45272c5618ecb1e4eefc5e5406bb93a5cb1c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474700"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092711"
 ---
 # <a name="with-change_tracking_context-transact-sql"></a>WITH CHANGE_TRACKING_CONTEXT (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

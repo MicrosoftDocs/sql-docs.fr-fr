@@ -1,6 +1,6 @@
 ---
 description: sys.dm_hadr_availability_replica_states (Transact-SQL)
-title: sys. dm_hadr_availability_replica_states (Transact-SQL) | Microsoft Docs
+title: sys.dm_hadr_availability_replica_states (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 10/16/2017
 ms.prod: sql
@@ -18,14 +18,14 @@ helpviewer_keywords:
 - Availability Groups [SQL Server], monitoring
 - sys.dm_hadr_availability_replica_states dynamic management view
 ms.assetid: d2e678bb-51e8-4a61-b223-5c0b8d08b8b1
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 347d05c0bfc37b1c14fddb728df5508e062cb13d
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 549c37fdcc04d16eb2163fc7cca7e2ffddf9ce3e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546557"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092779"
 ---
 # <a name="sysdm_hadr_availability_replica_states-transact-sql"></a>sys.dm_hadr_availability_replica_states (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "89546557"
   Retourne une ligne pour chaque réplica local et une ligne pour chaque réplica distant dans le même groupe de disponibilité Always On qu'un réplica local. Chaque ligne contient des informations sur l'état d'un réplica donné.  
   
 > [!IMPORTANT]  
->  Pour obtenir des informations sur chaque réplica d’un groupe de disponibilité donné, interrogez **sys. dm_hadr_availability_replica_states** sur l’instance de serveur qui héberge le réplica principal. En cas d'interrogation sur une instance de serveur qui héberge un réplica secondaire d'un groupe de disponibilité, cette vue de gestion dynamique retourne uniquement les informations locales pour le groupe de disponibilité.  
+>  Pour obtenir des informations sur chaque réplica d’un groupe de disponibilité donné, interrogez **sys.dm_hadr_availability_replica_states** sur l’instance de serveur qui héberge le réplica principal. En cas d'interrogation sur une instance de serveur qui héberge un réplica secondaire d'un groupe de disponibilité, cette vue de gestion dynamique retourne uniquement les informations locales pour le groupe de disponibilité.  
   
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
@@ -44,7 +44,7 @@ ms.locfileid: "89546557"
 |**role_desc**|**nvarchar(60)**|Description du **rôle**, parmi les suivants :<br /><br /> RESOLVING<br /><br /> PRIMARY<br /><br /> SECONDARY|  
 |**operational_state**|**tinyint**|État opérationnel actuel du réplica, parmi les suivants :<br /><br /> 0 = Basculement en attente<br /><br /> 1 = en attente<br /><br /> 2 = en ligne<br /><br /> 3 = hors connexion<br /><br /> 4 = échec<br /><br /> 5 = Échec, aucun quorum<br /><br /> NULL = Le réplica n'est pas local.<br /><br /> Pour plus d’informations, consultez [rôles et États opérationnels](#RolesAndOperationalStates), plus loin dans cette rubrique.|  
 |**Description de l' \_ état opérationnel \_**|**nvarchar(60)**|Description de **l' \_ état opérationnel**, parmi les suivants :<br /><br /> PENDING_FAILOVER<br /><br /> PENDING<br /><br /> ONLINE<br /><br /> OFFLINE<br /><br /> FAILED<br /><br /> FAILED_NO_QUORUM<br /><br /> NULL|  
-|**intégrité de la récupération \_**|**tinyint**|Cumul de la colonne d' ** \_ État** de la base de données de la vue de gestion dynamique [sys. dm_hadr_database_replica_states](../../relational-databases/system-dynamic-management-views/sys-dm-hadr-database-replica-states-transact-sql.md) . Voici les valeurs possibles et leurs descriptions.<br /><br /> 0 : en cours.  Au moins une base de données jointe a un état de base de données autre que en ligne (l'** \_ État de la base de données** n’est pas 0).<br /><br /> 1 : en ligne. Toutes les bases de données jointes ont un état de base de données en ligne (**database_state** a la valeur 0).<br /><br /> NULL : **is_local** = 0|  
+|**intégrité de la récupération \_**|**tinyint**|Cumul de la **colonne \_ État** de la base de données de la vue de gestion dynamique [sys.dm_hadr_database_replica_states](../../relational-databases/system-dynamic-management-views/sys-dm-hadr-database-replica-states-transact-sql.md) . Voici les valeurs possibles et leurs descriptions.<br /><br /> 0 : en cours.  Au moins une base de données jointe a un état de base de données autre que en ligne (l'**\_ État de la base de données** n’est pas 0).<br /><br /> 1 : en ligne. Toutes les bases de données jointes ont un état de base de données en ligne (**database_state** a la valeur 0).<br /><br /> NULL : **is_local** = 0|  
 |**recovery_health_desc**|**nvarchar(60)**|Description de **recovery_health**, parmi :<br /><br /> ONLINE_IN_PROGRESS<br /><br /> ONLINE<br /><br /> NULL|  
 |**intégrité de la synchronisation \_**|**tinyint**|Reflète un cumul de l’état de synchronisation de base de données (**synchronization_state**) de toutes les bases de données de disponibilité jointes (également appelées *réplicas*) et le mode de disponibilité du réplica (mode de validation synchrone ou asynchrone). Le cumul reflète l’État accumulé le moins sain des bases de données sur le réplica. Vous trouverez ci-dessous les valeurs possibles et leurs descriptions.<br /><br /> 0 : non intègre.   Au moins une base de données jointe est dans un état NOT SYNCHRONIZING.<br /><br /> 1 : partiellement sain. Certains réplicas ne sont pas dans l'état de synchronisation cible : les réplicas avec validation synchrone doivent être synchronisés, et les réplicas avec validation asynchrone doivent être en cours de synchronisation.<br /><br /> 2 : intègre. Tous les réplicas sont dans l'état de synchronisation cible : les réplicas avec validation synchrone sont synchronisés, et les réplicas avec validation asynchrone sont en cours de synchronisation.|  
 |**synchronization_health_desc**|**nvarchar(60)**|Description de **synchronization_health**, parmi :<br /><br /> NOT_HEALTHY<br /><br /> PARTIALLY_HEALTHY<br /><br /> HEALTHY|  

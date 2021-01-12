@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.sql_modules catalog view
 ms.assetid: 23d3ccd2-f356-4d89-a2cd-bee381243f99
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: acf5f7195a3ee997590d9625615038577779fd14
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a3b841674bd7abffada31bd2baf7e0ab39686a3e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97429343"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093077"
 ---
 # <a name="syssql_modules-transact-sql"></a>sys.sql_modules (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -51,7 +51,7 @@ ms.locfileid: "97429343"
 |**inline_type**|**bit**|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssqlv15-md.md)] et versions ultérieures.<br /><br />Indique si l’incorporation est activée pour le module actuellement. <br /><br />0 = l’incorporation est désactivée<br /><br /> 1 = l’incorporation est activée.<br /><br /> Pour les fonctions définies par l’utilisateur scalaire, la valeur est 1 si l’incorporation est activée (explicitement ou implicitement). La valeur sera toujours 1 pour Inline TVF, et 0 pour les autres types de modules.<br />|  
 
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  L’expression SQL d’une contrainte par défaut, objet de type D, se trouve dans l’affichage catalogue [sys.default_constraints](../../relational-databases/system-catalog-views/sys-default-constraints-transact-sql.md) . L’expression SQL pour une contrainte CHECK, un objet de type C, se trouve dans l’affichage catalogue [sys.CHECK_CONSTRAINTS](../../relational-databases/system-catalog-views/sys-check-constraints-transact-sql.md) .  
   
  Ces informations sont également décrites dans [sys.dm_db_uncontained_entities &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-uncontained-entities-transact-sql.md).  

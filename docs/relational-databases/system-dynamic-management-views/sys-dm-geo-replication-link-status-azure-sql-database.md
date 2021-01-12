@@ -15,16 +15,16 @@ helpviewer_keywords:
 - dm_geo_replication_link_status dynamic management view
 - sys.dm_geo_replication_link_status dynamic management view
 ms.assetid: d763d679-470a-4c21-86ab-dfe98d37e9fd
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: = azuresqldb-current
 ms.custom: seo-dt-2019
-ms.openlocfilehash: d6177d289eb46f839d8b1e742d2daf2cff73f5e3
-ms.sourcegitcommit: 86534989f7827f1c36ed1333ad9c4557dfd77f3d
+ms.openlocfilehash: 2134a7890d23a7a080a576f8337e750bee2563eb
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97515358"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092799"
 ---
 # <a name="sysdm_geo_replication_link_status-azure-sql-database"></a>sys.dm_geo_replication_link_status (Azure SQL Database)
 

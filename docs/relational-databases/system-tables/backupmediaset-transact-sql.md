@@ -1,9 +1,9 @@
 ---
 title: backupmediaset (Transact-SQL) | Microsoft Docs
+description: Référence pour backupmediaset, qui contient une ligne pour chaque support de sauvegarde.
 ms.custom: ''
 ms.date: 08/09/2016
 ms.prod: sql
-ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
 ms.topic: language-reference
@@ -15,21 +15,20 @@ dev_langs:
 helpviewer_keywords:
 - backup media [SQL Server], backupmediaset system table
 - backupmediaset system table
-ms.assetid: d9c18a93-cab9-4db8-ae09-c6bd8145ab8f
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: fded40f11cfc094e3af89295496787413e3fd4cd
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 10b4d744e7ef4e0d11a9788580ea7f8c5a67bd1f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540367"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98091575"
 ---
 # <a name="backupmediaset-transact-sql"></a>backupmediaset (Transact-SQL)
+
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Contient une ligne pour chaque support de sauvegarde. Cette table est stockée dans la base de données **msdb** .  
- 
+Contient une ligne pour chaque support de sauvegarde. Cette table est stockée dans la base de données **msdb** .  
   
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  

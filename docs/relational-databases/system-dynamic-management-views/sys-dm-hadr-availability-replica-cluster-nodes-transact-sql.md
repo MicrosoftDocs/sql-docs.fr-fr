@@ -1,6 +1,6 @@
 ---
 description: sys.dm_hadr_availability_replica_cluster_nodes (Transact-SQL)
-title: sys. dm_hadr_availability_replica_cluster_nodes (Transact-SQL) | Microsoft Docs
+title: sys.dm_hadr_availability_replica_cluster_nodes (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -19,14 +19,14 @@ helpviewer_keywords:
 - Availability Groups [SQL Server], WSFC clusters
 - sys.dm_hadr_availability_replica_cluster_nodes dynamic management view
 ms.assetid: dbd7e416-badd-4332-a45c-438aa0145a99
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 7a63fea89f2457a3b2e033b9cbfef3def46afe0e
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 7b9fac113b31d21b36b573f92b073bc0db408370
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89550249"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092800"
 ---
 # <a name="sysdm_hadr_availability_replica_cluster_nodes-transact-sql"></a>sys.dm_hadr_availability_replica_cluster_nodes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

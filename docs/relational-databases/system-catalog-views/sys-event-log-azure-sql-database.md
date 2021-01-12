@@ -18,15 +18,15 @@ helpviewer_keywords:
 - event_log
 - sys.event_log
 ms.assetid: ad5496b5-e5c7-4a18-b5a0-3f985d7c4758
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: d60c081eecf88868db4541bc79960bf1bbd8723c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c3a358e23d9428440166dd98a0f29ca8e4ea11c5
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97412910"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093097"
 ---
 # <a name="sysevent_log-azure-sql-database"></a>sys.event_log (Azure SQL Database)
 
@@ -83,13 +83,13 @@ ms.locfileid: "97412910"
 |**connectivité**|**throttling_long_transaction**|40551|**excessive_tempdb_usage**|2|*Remarque : s’applique uniquement à Azure SQL Database v11.*<br /><br /> La session a été arrêtée en raison d’une utilisation excessive de TEMPDB. Essayez de modifier votre requête afin de réduire l'utilisation de l'espace de table temporaire. Pour plus d’informations, consultez [limites des ressources](/previous-versions/azure/dn338081(v=azure.100)).|  
 |**connectivité**|**throttling_long_transaction**|40552|**excessive_log_space_usage**|2|*Remarque : s’applique uniquement à Azure SQL Database v11.*<br /><br /> La session a pris fin en raison d'une utilisation de l'espace pour le journal de transactions excessive. Essayez de modifier moins de lignes au cours d'une transaction. Pour plus d’informations, consultez [limites des ressources](/previous-versions/azure/dn338081(v=azure.100)).|  
 |**connectivité**|**throttling_long_transaction**|40553|**excessive_memory_usage**|2|*Remarque : s’applique uniquement à Azure SQL Database v11.*<br /><br /> La session a pris fin en raison d'une utilisation de mémoire excessive. Essayez de modifier votre requête afin que le nombre de lignes à traiter soit moins important. Pour plus d’informations, consultez [limites des ressources](/previous-versions/azure/dn338081(v=azure.100)).|  
-|**rotation**|**deadlock**|0|**deadlock**|2|Un blocage s'est produit.|  
+|**engine**|**deadlock**|0|**deadlock**|2|Un blocage s'est produit.|  
   
 ## <a name="permissions"></a>Autorisations
 
  Les utilisateurs autorisés à accéder à la base de données **Master** disposent d’un accès en lecture seule à cette vue.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
   
 ### <a name="event-aggregation"></a>Agrégation d'événements
 

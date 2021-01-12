@@ -14,14 +14,14 @@ helpviewer_keywords:
 - catalog views [SQL Server], partition function
 - partition function catalog views [SQL Server]
 ms.assetid: 12400676-7f6b-4437-8fcb-ba9a33f35469
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: c87ea238a3f3972d84d75ffc933c0a28f8818130
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: a39e25df03d5e315cd01518d42740cb4b8ed16c3
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91810763"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092519"
 ---
 # <a name="partition-function-catalog-views-transact-sql"></a>Affichages catalogue des fonctions de partition (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]

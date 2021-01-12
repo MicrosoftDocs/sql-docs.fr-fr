@@ -14,14 +14,14 @@ helpviewer_keywords:
 - endpoints [SQL Server], catalog views
 - catalog views [SQL Server], endpoints
 ms.assetid: 557bc2f2-135c-4e96-be5a-dfbdfd2ec932
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 22e2a4f57d8453d8c69a0594bcf6d5b16ee6b6a6
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 7593d6dfc9fcb6a9536bd43ef1573025e568f307
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91810258"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092631"
 ---
 # <a name="endpoints-catalog-views-transact-sql"></a>Affichages catalogue des points de terminaison (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]

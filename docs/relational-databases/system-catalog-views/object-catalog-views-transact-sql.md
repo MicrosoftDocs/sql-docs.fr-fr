@@ -14,14 +14,14 @@ helpviewer_keywords:
 - object catalog views [SQL Server]
 - catalog views [SQL Server], objects
 ms.assetid: e8670a6b-e15c-4126-8d2d-c9cfb968a12d
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 811ab46ce472f91aeab40c48ff11ce584f3cabb7
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: d55017490020bebba0dadc4752ceb54c179b6141
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91810145"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092520"
 ---
 # <a name="object-catalog-views-transact-sql"></a>Vues de catalogue d'objets (Transact-SQL)
 

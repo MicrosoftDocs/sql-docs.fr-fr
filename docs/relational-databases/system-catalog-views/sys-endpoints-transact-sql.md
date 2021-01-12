@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.endpoints catalog view
 ms.assetid: e6dafa4e-e47e-43ec-acfc-88c0af53c1a1
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 73555ee11e3f03c8478ca170039b7b367036fc4f
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 765e7a2029f28a543a9b0ae6a08a7f6fb6fdb775
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548755"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093121"
 ---
 # <a name="sysendpoints-transact-sql"></a>sys.endpoints (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

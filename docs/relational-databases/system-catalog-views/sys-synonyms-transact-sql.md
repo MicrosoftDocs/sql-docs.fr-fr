@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.synonyms catalog view
 ms.assetid: d6e88ca6-6e3d-4f56-bd3e-d85e26be5499
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 48d365741eb32b998a9d0b20299e328ba38f9b44
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 54edeeecb94209aa57ea8027ca0918fdef77021e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477360"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093069"
 ---
 # <a name="syssynonyms-transact-sql"></a>sys.synonyms (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

@@ -1,6 +1,6 @@
 ---
 description: sys.fn_get_sql (Transact-SQL)
-title: sys. fn_get_sql (Transact-SQL) | Microsoft Docs
+title: sys.fn_get_sql (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -22,14 +22,14 @@ helpviewer_keywords:
 - valid SQL handles [SQL Server]
 - SQL handles
 ms.assetid: d5fe49b5-0813-48f2-9efb-9187716b2fd4
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 6f5e3f4af1cd1bae33f0a340333cb6afd3268158
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 4b3e28e4c66d45f28c6239431e8e6d5440d5d4a0
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88427801"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093819"
 ---
 # <a name="sysfn_get_sql-transact-sql"></a>sys.fn_get_sql (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -37,11 +37,11 @@ ms.locfileid: "88427801"
   Renvoie le texte de l'instruction SQL pour le handle SQL spécifié.  
   
 > [!IMPORTANT]  
->  Cette fonctionnalité sera supprimée dans une prochaine version de Microsoft SQL Server. Évitez d'utiliser cette fonctionnalité dans de nouveaux travaux de développement, et prévoyez de modifier les applications qui utilisent actuellement cette fonctionnalité. Utilisez sys.dm_exec_sql_text à la place. Pour plus d’informations, consultez [sys. dm_exec_sql_text &#40;Transact-sql&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-sql-text-transact-sql.md).  
+>  Cette fonctionnalité sera supprimée dans une prochaine version de Microsoft SQL Server. Évitez d'utiliser cette fonctionnalité dans de nouveaux travaux de développement, et prévoyez de modifier les applications qui utilisent actuellement cette fonctionnalité. Utilisez sys.dm_exec_sql_text à la place. Pour plus d’informations, consultez [sys.dm_exec_sql_text &#40;Transact-sql&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-sql-text-transact-sql.md).  
   
  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -62,12 +62,12 @@ sys.fn_get_sql ( SqlHandle )
 |objectid|**int**|Identificateur de l'objet de base de données. NULL pour les instructions SQL ad hoc.|  
 |nombre|**smallint**|Indique le numéro du groupe, si les procédures sont groupées.<br /><br /> 0 = les entrées ne sont pas des procédures.<br /><br /> NULL = instructions SQL ad hoc.|  
 |encrypted|**bit**|Indique si l'objet est chiffré.<br /><br /> 0 = Non chiffrée<br /><br /> 1 = Chiffrée|  
-|text|**text**|Texte de l'instruction SQL. NULL pour les objets chiffrés.|  
+|texte|**text**|Texte de l'instruction SQL. NULL pour les objets chiffrés.|  
   
 ## <a name="remarks"></a>Notes  
- Vous pouvez obtenir un handle SQL valide à partir de la colonne sql_handle de la vue de gestion dynamique [sys. dm_exec_requests &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-requests-transact-sql.md) .  
+ Vous pouvez obtenir un handle SQL valide à partir de la colonne sql_handle de la sys.dm_exec_requests &#40;la vue de gestion dynamique [&#41;Transact-SQL ](../../relational-databases/system-dynamic-management-views/sys-dm-exec-requests-transact-sql.md) .  
   
- Si vous transmettez un handle qui n’existe plus dans le cache, fn_get_sq**l** retourne un jeu de résultats vide. Si vous passez un handle qui n'est pas valide, le lot s'arrête et un message d'erreur s'affiche.  
+ Si vous transmettez un handle qui n’existe plus dans le cache, fn_get_sq **l** retourne un jeu de résultats vide. Si vous passez un handle qui n'est pas valide, le lot s'arrête et un message d'erreur s'affiche.  
   
  Le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] ne peut pas mettre en cache certaines [!INCLUDE[tsql](../../includes/tsql-md.md)] instructions, telles que les instructions de copie en bloc et les instructions avec des littéraux de chaîne dont la taille est supérieure à 8 Ko. Les handles de ces instructions ne peuvent pas être récupérés avec fn_get_sql.  
   

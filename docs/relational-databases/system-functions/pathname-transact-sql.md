@@ -16,21 +16,21 @@ dev_langs:
 helpviewer_keywords:
 - PathName FILESTREAM [SQL Server]
 ms.assetid: 6b95ad90-6c82-4a23-9294-a2adb74934a3
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: fc5b4b67074c85aef7d5d6d0f7c889a02cbb047d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 85058a3d551a385e4d2de8aed2ea9f56dc3b19c7
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88489719"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093890"
 ---
 # <a name="pathname-transact-sql"></a>PathName (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne le chemin d'accès d'un objet blob FILESTREAM. L’API OpenSqlFilestream utilise ce chemin d’accès pour retourner un handle qu’une application peut utiliser pour travailler avec les données BLOB à l’aide des API Win32. PathName est en lecture seule.  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,7 +46,7 @@ column_name.PathName ( @option [ , use_replica_computer_name ] )
  La demande du nom de chemin d’accès d’une colonne de tout autre type de données ou d’un columnthat **varbinary (max)** n’a pas l’attribut FILESTREAM Storage entraîne une erreur de compilation de requête.  
   
  *\@option*  
- [Expression](../../t-sql/language-elements/expressions-transact-sql.md) entière qui définit comment le composant serveur du chemin d’accès doit être mis en forme. l' * \@ option* peut prendre l’une des valeurs suivantes. La valeur par défaut est 0.  
+ [Expression](../../t-sql/language-elements/expressions-transact-sql.md) entière qui définit comment le composant serveur du chemin d’accès doit être mis en forme. l' *\@ option* peut prendre l’une des valeurs suivantes. La valeur par défaut est 0.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -70,7 +70,7 @@ column_name.PathName ( @option [ , use_replica_computer_name ] )
 ## <a name="return-type"></a>Type de retour  
  **nvarchar(max)**  
   
-## <a name="return-value"></a>Valeur de retour  
+## <a name="return-value"></a>Valeur renvoyée  
  La valeur retournée est le chemin d'accès logique complet ou NETBIOS de l'objet blob. PathName ne retourne pas d'adresse IP. Une valeur NULL est retournée lorsque l'objet blob FILESTREAM n'a pas été créé.  
   
 ## <a name="remarks"></a>Notes  

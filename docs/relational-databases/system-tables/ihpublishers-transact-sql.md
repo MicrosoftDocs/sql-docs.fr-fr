@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - IHpublishers system table
 ms.assetid: 77007246-f10b-4b87-8edf-7afc3c2096af
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 03d8633b8e859df67d60e8b535cb18c01d031a1e
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 037778000e56bf49e99d46d560fd6fda8f4ce484
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551031"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092432"
 ---
 # <a name="ihpublishers-transact-sql"></a>IHpublishers (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "89551031"
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
 |**publisher_id**|**smallint**|Identifie un serveur de publication non SQL Server.|  
-|**hétérogène**|**sysname**|Nom du fournisseur de la base de données non SQL Server.|  
+|**vendor**|**sysname**|Nom du fournisseur de la base de données non SQL Server.|  
 |**publisher_guid**|**uniqueidentifier**|GUID qui identifie le serveur de publication non SQL Server.|  
 |**flush_request_time**|**datetime**|Indique les date et heure auxquelles a eu lieu la dernière modification des métadonnées d'article ayant amené l'Agent de lecture du journal à mettre à jour son cache de métadonnées.|  
 |**version**|**sysname**|Chaîne de texte qui caractérise la version du serveur de publication non SQL Server.|  

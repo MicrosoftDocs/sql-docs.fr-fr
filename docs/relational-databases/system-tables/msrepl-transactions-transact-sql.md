@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - MSrepl_transactions system table
 ms.assetid: d325288d-47ae-4488-8799-122f7ab43459
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 5abd854bb738214d94d0a6fd1036a6e4bae1b927
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 6e9ca4af77c9cab4e64a515041e68e4eb3dae3b6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89524320"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092409"
 ---
 # <a name="msrepl_transactions-transact-sql"></a>MSrepl_transactions (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

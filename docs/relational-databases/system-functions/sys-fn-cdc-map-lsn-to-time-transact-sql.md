@@ -1,6 +1,6 @@
 ---
 description: sys.fn_cdc_map_lsn_to_time (Transact-SQL)
-title: sys. fn_cdc_map_lsn_to_time (Transact-SQL) | Microsoft Docs
+title: sys.fn_cdc_map_lsn_to_time (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: sql
@@ -19,21 +19,21 @@ helpviewer_keywords:
 - sys.fn_cdc_map_lsn_to_time
 - fn_cdc_map_lsn_to_time
 ms.assetid: 405aa29c-8bd8-42d3-9f39-7494b643fc6f
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: a699f9706c8dafff6d2500a1e41c080f461df6ab
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 37f782859ee9f4a292652883a3c7770d464ffa83
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88427861"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093829"
 ---
 # <a name="sysfn_cdc_map_lsn_to_time-transact-sql"></a>sys.fn_cdc_map_lsn_to_time (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Retourne la valeur de date et d’heure de la colonne **tran_end_time** de la table système [CDC. lsn_time_mapping](../../relational-databases/system-tables/cdc-lsn-time-mapping-transact-sql.md) pour le numéro séquentiel dans le journal spécifié (LSN). Vous pouvez utiliser cette fonction pour mapper systématiquement les plages de numéros séquentiels dans le journal aux plages de dates dans une table de modifications.  
+  Retourne la valeur de date et d’heure de la colonne **tran_end_time** de la table système [CDC.lsn_time_mapping](../../relational-databases/system-tables/cdc-lsn-time-mapping-transact-sql.md) pour le numéro séquentiel dans le journal (LSN) spécifié. Vous pouvez utiliser cette fonction pour mapper systématiquement les plages de numéros séquentiels dans le journal aux plages de dates dans une table de modifications.  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -69,9 +69,9 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [CDC. lsn_time_mapping &#40;Transact-SQL&#41;](../../relational-databases/system-tables/cdc-lsn-time-mapping-transact-sql.md)   
- [sys. fn_cdc_map_time_to_lsn &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-cdc-map-time-to-lsn-transact-sql.md)   
- [CDC. fn_cdc_get_net_changes_&#60;capture_instance&#62; &#40;Transact-SQL&#41;](../../relational-databases/system-functions/cdc-fn-cdc-get-net-changes-capture-instance-transact-sql.md)   
+ [cdc.lsn_time_mapping &#40;Transact-SQL&#41;](../../relational-databases/system-tables/cdc-lsn-time-mapping-transact-sql.md)   
+ [sys.fn_cdc_map_time_to_lsn &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-cdc-map-time-to-lsn-transact-sql.md)   
+ [cdc.fn_cdc_get_net_changes_&#60;capture_instance&#62; &#40;Transact-SQL&#41;](../../relational-databases/system-functions/cdc-fn-cdc-get-net-changes-capture-instance-transact-sql.md)   
  [cdc.fn_cdc_get_all_changes_&#60;capture_instance&#62;  &#40;Transact-SQL&#41;](../../relational-databases/system-functions/cdc-fn-cdc-get-all-changes-capture-instance-transact-sql.md)  
   
   

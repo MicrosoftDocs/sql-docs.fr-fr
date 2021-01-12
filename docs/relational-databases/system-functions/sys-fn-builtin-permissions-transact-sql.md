@@ -25,15 +25,15 @@ helpviewer_keywords:
 - displaying permission hierarchy
 - sys.fn_builtin_permissions function
 ms.assetid: 704b1ad3-3534-4cf3-aff4-9fb70064b6cc
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 117c4c2e6bc3e08ea32869cd198850eb3bb29ab2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ca23195b680ca5e2e16010b04c357fa2369d7f0a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484561"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093859"
 ---
 # <a name="sysfn_builtin_permissions-transact-sql"></a>sys.fn_builtin_permissions (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -221,7 +221,7 @@ sys.fn_builtin_permissions ( [ DEFAULT | NULL ]
 |CRVW|CREATE VIEW|DATABASE|  
 |CRXS|CREATE XML SCHEMA COLLECTION|DATABASE|  
 |DABO|ADMINISTER DATABASE BULK OPERATIONS<br /> **S'applique à**: [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)].|DATABASE|  
-|DL|DELETE|DATABASE|  
+|DL|Suppression|DATABASE|  
 |DL|Suppression|OBJECT|  
 |DL|Suppression|SCHEMA|  
 |EAES|EXECUTE ANY EXTERNAL SCRIPT<br />**S'applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] via la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md)).|DATABASE|  
@@ -323,7 +323,7 @@ sys.fn_builtin_permissions ( [ DEFAULT | NULL ]
 |XA|EXTERNAL ACCESS ASSEMBLY|SERVER|  
 |XU|UNSAFE ASSEMBLY|SERVER|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  `sys.fn_builtin_permissions` est une fonction table qui émet une copie de la hiérarchie d'autorisations prédéfinies. Cette hiérarchie inclut les autorisations d'accompagnement. Le `DEFAULT` jeu de résultats décrit un graphique cyclique et orienté de la hiérarchie des autorisations, dont la racine est (Class = Server, permission = Control Server).  
   
  `sys.fn_builtin_permissions` n'accepte pas de paramètres mis en corrélation.  

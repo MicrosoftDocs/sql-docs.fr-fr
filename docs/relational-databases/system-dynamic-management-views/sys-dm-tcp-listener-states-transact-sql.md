@@ -1,6 +1,6 @@
 ---
 description: sys.dm_tcp_listener_states (Transact-SQL)
-title: sys. dm_tcp_listener_states (Transact-SQL) | Microsoft Docs
+title: sys.dm_tcp_listener_states (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -19,14 +19,14 @@ helpviewer_keywords:
 - Availability Groups [SQL Server], listeners
 - sys.dm_tcp_listener_states dynamic management view
 ms.assetid: 9997ffed-a4c1-428f-8bac-3b9e4b16d7cf
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 4da7c8a5c8cfd87ae0c1ffa4216996e1d9e0413a
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: d3b155d84f499c4dd2ba8ed9333932364c7957ea
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89550167"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093959"
 ---
 # <a name="sysdm_tcp_listener_states-transact-sql"></a>sys.dm_tcp_listener_states (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

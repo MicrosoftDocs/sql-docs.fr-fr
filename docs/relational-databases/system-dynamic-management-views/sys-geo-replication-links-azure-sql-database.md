@@ -15,15 +15,15 @@ helpviewer_keywords:
 - sys.dm_geo_replication_links dynamic management view
 - dm_geo_replication_links dynamic management view
 ms.assetid: 58911798-1d60-4f28-87ab-2def2bfc3de7
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: c69b375ae55f8d7a4d76c4c619f9c9afe1d50def
-ms.sourcegitcommit: 86534989f7827f1c36ed1333ad9c4557dfd77f3d
+ms.openlocfilehash: f10f318ebba5627957f1555b5979e8993f6f5e02
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97515367"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093898"
 ---
 # <a name="sysgeo_replication_links-azure-sql-database"></a>sys.geo_replication_links (Azure SQL Database)
 

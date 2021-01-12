@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - IHpublishercolumns system table
 ms.assetid: a5347750-224c-40d9-ae12-57e7213b7db9
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 49d4da72bc68d375b7c918768b656e025c4dc6f2
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 44704435eca9e065e7065f025b4c99accab7fa7f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89524876"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092469"
 ---
 # <a name="ihpublishercolumns-transact-sql"></a>IHpublishercolumns (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - MSrepl_errors system table
 ms.assetid: c6e023c1-2c32-4269-8d76-e442ea309e4b
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 5afa86de5a33eab4f7e77da1c825619a738381de
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 96699d296c414d18d0d4fb8d8c892151e2013582
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540265"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98090443"
 ---
 # <a name="msrepl_errors-transact-sql"></a>MSrepl_errors (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

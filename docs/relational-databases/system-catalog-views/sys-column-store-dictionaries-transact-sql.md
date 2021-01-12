@@ -1,6 +1,6 @@
 ---
 description: sys.column_store_dictionaries (Transact-SQL)
-title: sys. column_store_dictionaries (Transact-SQL) | Microsoft Docs
+title: sys.column_store_dictionaries (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.column_store_dictionaries catalog view
 ms.assetid: 56efd563-2f72-4caf-94e3-8a182385c173
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: ec0e67a4406076b73b1e064e31fba15cf7a0c70c
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 86c749ab8fdad447c477dd4f424cab3ab1d6b086
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89539680"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092501"
 ---
 # <a name="syscolumn_store_dictionaries-transact-sql"></a>sys.column_store_dictionaries (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -54,8 +54,8 @@ Nécessite l'autorisation `VIEW DEFINITION` sur la table. Les colonnes suivantes
  [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)   
  [Interrogation du SQL Server FAQ du catalogue système](../../relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.md)   
  [sys.columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-columns-transact-sql.md)   
- [sys. all_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-all-columns-transact-sql.md)   
- [sys. computed_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-computed-columns-transact-sql.md)   
+ [sys.all_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-all-columns-transact-sql.md)   
+ [sys.computed_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-computed-columns-transact-sql.md)   
  [Guide des index columnstore](~/relational-databases/indexes/columnstore-indexes-overview.md)   
  [Guide des index columnstore](~/relational-databases/indexes/columnstore-indexes-overview.md)   
  [sys.column_store_segments &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-column-store-segments-transact-sql.md)  

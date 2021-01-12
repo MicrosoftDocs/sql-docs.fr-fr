@@ -17,14 +17,14 @@ helpviewer_keywords:
 - system catalogs [SQL Server], example queries
 - catalog views [SQL Server], frequently asked questions
 ms.assetid: ca202580-c37e-4ccd-9275-77ce79481f64
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 346ae709b81c1d5f3892a7e7b5acfd98c3ff7d3b
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: a67ede3c053d3b9458e1b880a268e923226f68d1
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89539772"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093267"
 ---
 # <a name="querying-the-sql-server-system-catalog-faq"></a>Questions fréquentes sur l'interrogation des catalogues système de SQL Server
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -780,7 +780,7 @@ GO
 ###  <a name="how-do-i-find-the-views-transact-sql-functions-and-transact-sql-stored-procedures-that-depend-on-a-specified-clr-user-defined-type-or-alias-type"></a><a name="_FAQ26"></a> Comment faire Rechercher les vues, les fonctions Transact-SQL et les procédures stockées Transact-SQL qui dépendent d’un type CLR défini par l’utilisateur ou d’un type d’alias ?  
  Avant d'exécuter la requête suivante, remplacez `<database_name>` par un nom valide et `<schema_name.data_type_name>` par un type CLR défini par l'utilisateur qualifié par un schéma valide, ou un nom de type alias.  
   
- Les paramètres définis dans une fonction ou une procédure sont implicitement liés à un schéma. Par conséquent, les paramètres qui dépendent d’un type CLR défini par l’utilisateur ou d’un type d’alias peuvent être affichés à l’aide de l’affichage catalogue [sys. sql_dependencies](../../relational-databases/system-catalog-views/sys-sql-dependencies-transact-sql.md) . Les procédures et les déclencheurs ne sont pas liés au schéma. Cela signifie l'interruption des dépendances entre une expression définie dans le corps de la procédure ou du déclencheur et un type d'alias ou un type CLR défini par l'utilisateur. Les vues liées au schéma et les fonctions définies par l’utilisateur liées à un schéma qui ont des expressions qui dépendent d’un type CLR défini par l’utilisateur ou d’un type d’alias sont conservées dans l’affichage catalogue **sys. sql_dependencies** . Les dépendances entre des types et des fonctions et des procédures CLR ne sont pas maintenues.  
+ Les paramètres définis dans une fonction ou une procédure sont implicitement liés à un schéma. Par conséquent, les paramètres qui dépendent d’un type CLR défini par l’utilisateur ou d’un type d’alias peuvent être affichés à l’aide de l’affichage catalogue [sys.sql_dependencies](../../relational-databases/system-catalog-views/sys-sql-dependencies-transact-sql.md) . Les procédures et les déclencheurs ne sont pas liés au schéma. Cela signifie l'interruption des dépendances entre une expression définie dans le corps de la procédure ou du déclencheur et un type d'alias ou un type CLR défini par l'utilisateur. Les vues liées au schéma et les fonctions définies par l’utilisateur liées à un schéma qui ont des expressions qui dépendent d’un type CLR défini par l’utilisateur ou d’un type d’alias sont conservées dans l’affichage catalogue **sys.sql_dependencies** . Les dépendances entre des types et des fonctions et des procédures CLR ne sont pas maintenues.  
   
  La requête suivante retourne toutes les dépendances liées à un schéma dans des vues, des fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)] et des procédures stockées [!INCLUDE[tsql](../../includes/tsql-md.md)] pour un type CLR défini par l'utilisateur ou un type d'alias.  
   

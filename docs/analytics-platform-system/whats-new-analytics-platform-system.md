@@ -9,12 +9,12 @@ ms.date: 06/27/2018
 ms.author: murshedz
 ms.reviewer: martinle
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 590ca4149bc93fd2c22d04f22c3c47b7389245a2
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: 004550d95ca69bae45c518b8054886e635e829df
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489606"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98091782"
 ---
 # <a name="whats-new-in-analytics-platform-system-a-scale-out-mpp-data-warehouse"></a>Nouveautés d’Analytics Platform System, un entrepôt de données MPP avec montée en puissance parallèle
 Découvrez les nouveautés des dernières mises à jour d’appliance pour Microsoft Analytics Platform System (APS). APS est un appareil local avec montée en puissance parallèle qui héberge les Data Warehouses MPP SQL Server parallèles. 
@@ -142,7 +142,7 @@ La nouvelle carte de destination SSIS APS qui prend en charge SQL Server 2017 en
 Date de publication : juillet 2018
 
 ### <a name="dbcc-commands-do-not-consume-concurrency-slots-behavior-change"></a>Les commandes DBCC ne consomment pas d’emplacements de concurrence (changement de comportement)
-APS prend en charge un sous-ensemble des [commandes DBCC](../t-sql/database-console-commands/dbcc-transact-sql.md) T-SQL telles que [DBCC DROPCLEANBUFFERS](../t-sql/database-console-commands/dbcc-dropcleanbuffers-transact-sql.md). Auparavant, ces commandes consommaient un [emplacement d’accès concurrentiel](./workload-management.md?view=aps-pdw-2016-au7#concurrency-slots), réduisant ainsi le nombre de chargements/requêtes utilisateur qui pouvaient être exécutés. Les `DBCC` commandes sont maintenant exécutées dans une file d’attente locale qui ne consomme pas un emplacement d’accès concurrentiel utilisateur pour améliorer les performances globales d’exécution des requêtes.
+APS prend en charge un sous-ensemble des [commandes DBCC](../t-sql/database-console-commands/dbcc-transact-sql.md) T-SQL telles que [DBCC DROPCLEANBUFFERS](../t-sql/database-console-commands/dbcc-dropcleanbuffers-transact-sql.md). Auparavant, ces commandes consommaient un [emplacement d’accès concurrentiel](./workload-management.md?view=aps-pdw-2016-au7&preserve-view=true&#concurrency-slots), réduisant ainsi le nombre de chargements/requêtes utilisateur qui pouvaient être exécutés. Les `DBCC` commandes sont maintenant exécutées dans une file d’attente locale qui ne consomme pas un emplacement d’accès concurrentiel utilisateur pour améliorer les performances globales d’exécution des requêtes.
 
 ### <a name="replaces-some-metadata-calls-with-catalog-objects"></a>Remplace certains appels de métadonnées par des objets de catalogue
 L’utilisation d’objets de catalogue pour les appels de métadonnées au lieu d’utiliser SMO a montré l’amélioration des performances dans APS. À partir de CU 7.1, certains de ces appels de métadonnées utilisent désormais des objets de catalogue par défaut. Ce comportement peut être désactivé par le [commutateur de fonctionnalité](appliance-feature-switch.md) si les clients utilisant des requêtes de métadonnées s’exécutent en cas de problème.
@@ -150,7 +150,7 @@ L’utilisation d’objets de catalogue pour les appels de métadonnées au lieu
 ### <a name="bug-fixes"></a>Résolution des bogues
 Nous avons effectué la mise à niveau vers SQL Server 2016 SP2 CU2 avec APS CU 7.1. La mise à niveau corrige certains problèmes décrits ci-dessous.
 
-| Titre | Description |
+| Intitulé | Description |
 |:---|:---|
 | **Blocage potentiel du moteur de Tuple** |La mise à niveau résout un long risque d’interblocage dans une transaction distribuée et un thread d’arrière-plan du moteur de Tuple. Après l’installation de CU 7.1, les clients qui ont utilisé TF634 pour arrêter le moteur de tuple comme SQL Server paramètre de démarrage ou l’indicateur de trace global peuvent le supprimer en toute sécurité. | 
 | **Échec de certaines requêtes de décalage/Lead** |Certaines requêtes sur les tables ICC avec des fonctions de décalage/Lead imbriquées qui génèrent des erreurs sont désormais résolues avec cette mise à niveau. | 
@@ -275,7 +275,7 @@ The proper formats have at least two big advantages.  One big advantage is that 
 [Utilitaire bcp]:/sql/tools/bcp-utility
 [UNIQUEIDENTIFIER]:/sql/t-sql/data-types/uniqueidentifier-transact-sql
 [NUMERIC]:/sql/t-sql/data-types/decimal-and-numeric-transact-sql
-[LIGNES ou plage]:/sql/t-sql/queries/select-over-clause-transact-sql
+[ROWS ou RANGE]:/sql/t-sql/queries/select-over-clause-transact-sql
 [FIRST_VALUE]:/sql/t-sql/functions/first-value-transact-sql
 [LAST_VALUE]:/sql/t-sql/functions/last-value-transact-sql
 [CUME_DIST]:/sql/t-sql/functions/cume-dist-transact-sql

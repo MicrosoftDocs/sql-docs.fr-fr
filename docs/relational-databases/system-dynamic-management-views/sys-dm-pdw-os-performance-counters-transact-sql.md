@@ -10,15 +10,15 @@ ms.topic: language-reference
 dev_langs:
 - TSQL
 ms.assetid: 0673a8f8-8bed-41eb-8959-a9e3e9e03a65
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>= aps-pdw-2016'
-ms.openlocfilehash: 67a0bf0b52b0fc4d31400bf009476d76fdc1b1f5
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 38f15c09bc07e3ef9c74480ec6684805fc98ce08
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440761"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092688"
 ---
 # <a name="sysdm_pdw_os_performance_counters-transact-sql"></a>sys.dm_pdw_os_performance_counters (Transact-SQL)
 [!INCLUDE [pdw](../../includes/applies-to-version/pdw.md)]

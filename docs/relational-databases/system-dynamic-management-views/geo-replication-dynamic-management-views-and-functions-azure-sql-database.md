@@ -14,15 +14,15 @@ helpviewer_keywords:
 - dynamic management views
 - geo-replication [Azure SQL Database]
 ms.assetid: c98a06f6-c205-42f0-9f2a-4668c6103bc8
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 969af04592a9d957fc29c4e7d0d96d90f23e7856
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 68a2cf2cecb879cf3cc0b0db2b92a6da0bc75099
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97411386"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092959"
 ---
 # <a name="geo-replication-dynamic-management-views-and-functions-azure-sql-database"></a>Geo-Replication les fonctions et vues de gestion dynamique (Azure SQL Database)
 

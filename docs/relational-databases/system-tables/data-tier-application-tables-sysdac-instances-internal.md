@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - sysdac_instances_internal
 ms.assetid: d2d52cc4-3463-431a-b779-6fbfdeee1dfc
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 7ccda567989211074c8d151de7f2b3936ccd2b69
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: a8ac4d2cd2f70ee9ee09fc2479f6018401839cd6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89544607"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093756"
 ---
 # <a name="data-tier-application-tables---sysdac_instances_internal"></a>Tables d’applications de la couche Données - sysdac_instances_internal
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

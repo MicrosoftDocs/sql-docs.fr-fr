@@ -14,14 +14,14 @@ helpviewer_keywords:
 - linked servers [SQL Server], catalog views
 - catalog views [SQL Server], linked servers
 ms.assetid: 06d53a67-7804-4f1f-8201-3e42dc48ba79
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: afcdfdd9822af8380269e65ddb0f095dde74db67
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 40c542fc10954635e771cd76c195231180f643fd
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91807317"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092572"
 ---
 # <a name="linked-servers-catalog-views-transact-sql"></a>Affichages catalogue des serveurs liés (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]

@@ -13,14 +13,14 @@ dev_langs:
 helpviewer_keywords:
 - FileTables [SQL Server], system functions
 ms.assetid: 71f729df-d340-4cf9-9a6d-305fcb39b009
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 0ba0d5777ad63262dda102f0f7be1f2269ba0be9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: ec00ce2a9bf71a224be069e3b9ddc93b09d6075a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88481791"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093921"
 ---
 # <a name="filestream-and-filetable-functions-transact-sql"></a>Fonctions Filestream et FileTable (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - sysdbmaintplan_history system table
 ms.assetid: 02d36f08-ac93-4463-bb59-284c5cd6ed04
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 473e98da465aa9952261ae3c57d77ab9b5d2629e
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: dd830c961b7e5c5f2d4cbc47557ef90a072570dc
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89517676"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093702"
 ---
 # <a name="sysdbmaintplan_history-transact-sql"></a>sysdbmaintplan_history (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

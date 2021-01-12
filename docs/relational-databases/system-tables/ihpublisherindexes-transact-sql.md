@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - IHpublisherindexes system table
 ms.assetid: 6008ef89-eeb9-46dc-93a2-f7623298cf0f
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 5b7e4d37acf72277f88290372a1a7c29b7343473
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 03915f08ecf8aeb222f45e86af3988c64cab575b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540935"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092444"
 ---
 # <a name="ihpublisherindexes-transact-sql"></a>IHpublisherindexes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

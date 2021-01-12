@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.system_columns catalog view
 ms.assetid: 4ab1d48a-d57a-4e76-a08c-9627eeaf4588
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 13a306310fdb8a28e2613304a8fb7bba529f5f00
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 450b74ec145ed7463dbc9a95f2cad29ccc11aacf
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97479050"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093006"
 ---
 # <a name="syssystem_columns-transact-sql"></a>sys.system_columns (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

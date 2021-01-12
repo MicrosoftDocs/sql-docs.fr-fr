@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_tran_active_snapshot_database_transactions dynamic management view
 ms.assetid: 55b83f9c-da10-4e65-9846-f4ef3c0c0f36
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 8284708f43c600085baea8774a797a4688256c7e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 24259c4e5842243545b9fc02d07c6b7a33387289
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474890"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093986"
 ---
 # <a name="sysdm_tran_active_snapshot_database_transactions-transact-sql"></a>sys.dm_tran_active_snapshot_database_transactions (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -77,7 +77,7 @@ sys.dm_tran_active_snapshot_database_transactions
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] , requiert l' `VIEW SERVER STATE` autorisation.   
 Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le `Server admin` ou un `Azure Active Directory admin` compte est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.   
 
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  **sys.dm_tran_active_snapshot_database_transactions** signale les transactions auxquelles est affecté un numéro de séquence de transaction (xsn). Ce numéro de séquence est attribué lorsque la transaction accède pour la première fois à la banque des versions. Dans une base de données qui est activée pour l'isolement d'instantané ou l'isolement de lecture validée avec le contrôle de version de ligne, les exemples indiquent à quel moment un numéro de séquence est attribué à une transaction :  
   
 -   Si une transaction est exécutée avec le niveau d'isolement sérialisable, un numéro de séquence est attribué lorsque la transaction exécute pour la première fois une instruction (par exemple, une opération UPDATE) qui entraîne la création d'une version de ligne.  

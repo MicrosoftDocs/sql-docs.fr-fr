@@ -19,14 +19,14 @@ helpviewer_keywords:
 - dbo.sysdac_instances
 - sysdac_instances
 ms.assetid: 28285f3d-3889-439f-8b24-3bdef08e46b4
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 1a21fa1559bb09493ae2802254c87235ecc19efc
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: f5178fdb50b8a959471c8be973080d1416ba10f6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91809455"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092657"
 ---
 # <a name="data-tier-application-views---dbosysdac_instances"></a>Affichages des applications de la couche données-dbo.sysdac_instances
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

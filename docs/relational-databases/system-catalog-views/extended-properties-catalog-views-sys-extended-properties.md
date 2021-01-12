@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.extended_properties catalog view
 ms.assetid: 439b7299-dce3-4d26-b1c7-61be5e0df82a
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 6bbafba4036b90c99427eb4ee9bd0313ac90bfe5
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5a70bfd5e379dae4a68fa871ba7792cdf038d2ad
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475290"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092694"
 ---
 # <a name="extended-properties-catalog-views---sysextended_properties"></a>Affichages catalogue des propriétés étendues-sys.extended_properties
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -35,8 +35,8 @@ ms.locfileid: "97475290"
   
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
-|class|**tinyint**|Identifie la classe d'élément contenant la propriété. Il peut s'agir d'une des méthodes suivantes :<br /><br /> 0 = Base de données<br /><br /> 1 = Objet ou colonne<br /><br /> 2 = Paramètre<br /><br /> 3 = Schéma<br /><br /> 4 = Principal de base de données<br /><br /> 5 = Assembly<br /><br /> 6 = Type<br /><br /> 7 = index<br /><br /> 10 = Collection du schéma XML<br /><br /> 15 = Type de message<br /><br /> 16 = Contrat de service<br /><br /> 17 = Service<br /><br /> 18 = Liaison au service distant<br /><br /> 19 = Itinéraire<br /><br /> 20 = Espace de données (groupe de fichiers ou schéma de partition)<br /><br /> 21 = Fonction de partition<br /><br /> 22 = Fichier de base de données<br /><br /> 27 = Repère de plan|  
-|class_desc|**nvarchar(60)**|Description de la classe contenant la propriété étendue. Il peut s'agir d'une des méthodes suivantes :<br /><br /> DATABASE<br /><br /> OBJECT_OR_COLUMN<br /><br /> PARAMÈTRE<br /><br /> SCHEMA<br /><br /> DATABASE_PRINCIPAL<br /><br /> ASSEMBLY<br /><br /> TYPE<br /><br /> INDEX<br /><br /> XML_SCHEMA_COLLECTION<br /><br /> MESSAGE_TYPE<br /><br /> SERVICE_CONTRACT<br /><br /> SERVICE<br /><br /> REMOTE_SERVICE_BINDING<br /><br /> ROUTE<br /><br /> DATASPACE<br /><br /> PARTITION_FUNCTION<br /><br /> DATABASE_FILE<br /><br /> PLAN_GUIDE|  
+|class|**tinyint**|Identifie la classe d'élément contenant la propriété. Il peut s’agir de l’un des éléments suivants :<br /><br /> 0 = Base de données<br /><br /> 1 = Objet ou colonne<br /><br /> 2 = Paramètre<br /><br /> 3 = Schéma<br /><br /> 4 = Principal de base de données<br /><br /> 5 = Assembly<br /><br /> 6 = Type<br /><br /> 7 = index<br /><br /> 10 = Collection du schéma XML<br /><br /> 15 = Type de message<br /><br /> 16 = Contrat de service<br /><br /> 17 = Service<br /><br /> 18 = Liaison au service distant<br /><br /> 19 = Itinéraire<br /><br /> 20 = Espace de données (groupe de fichiers ou schéma de partition)<br /><br /> 21 = Fonction de partition<br /><br /> 22 = Fichier de base de données<br /><br /> 27 = Repère de plan|  
+|class_desc|**nvarchar(60)**|Description de la classe contenant la propriété étendue. Il peut s’agir de l’un des éléments suivants :<br /><br /> DATABASE<br /><br /> OBJECT_OR_COLUMN<br /><br /> PARAMÈTRE<br /><br /> SCHEMA<br /><br /> DATABASE_PRINCIPAL<br /><br /> ASSEMBLY<br /><br /> TYPE<br /><br /> INDEX<br /><br /> XML_SCHEMA_COLLECTION<br /><br /> MESSAGE_TYPE<br /><br /> SERVICE_CONTRACT<br /><br /> SERVICE<br /><br /> REMOTE_SERVICE_BINDING<br /><br /> ROUTE<br /><br /> DATASPACE<br /><br /> PARTITION_FUNCTION<br /><br /> DATABASE_FILE<br /><br /> PLAN_GUIDE|  
 |major_id|**int**|ID de l'élément contenant la propriété étendue, interprété en fonction de sa classe. Pour la plupart des éléments, il s'agit de l'ID qui s'applique à ce que représente la classe. L'interprétation des principaux ID non standard est la suivante :<br /><br /> Si la valeur de class est 0, major_id est toujours 0.<br /><br /> Si la valeur de class est 1, 2 ou 7, major_id est object_id.|  
 |minor_id|**int**|ID secondaire de l'élément contenant la propriété étendue, interprété en fonction de sa classe. Pour la plupart des éléments, la valeur est 0, sinon l'ID est le suivant :<br /><br /> Si class = 1, minor_id est column_id avec la colonne, autrement 0 avec l'objet.<br /><br /> Si class = 2, minor_id est parameter_id.<br /><br /> Si class = 7, minor_id est index_id.|  
 |name|**sysname**|Nom de propriété, unique avec class, major_id et minor_id.|  

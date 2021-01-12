@@ -1,6 +1,6 @@
 ---
 description: sys.destination_data_spaces (Transact-SQL)
-title: sys. destination_data_spaces (Transact-SQL) | Microsoft Docs
+title: sys.destination_data_spaces (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.destination_data_spaces catalog view
 ms.assetid: 92df932b-ad5c-43f8-81f4-b158823ab189
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 6a1bf415042ea6c5a4e2c1fa996961af72247a9f
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: d5f3134b70aff51b4e3d91361bb5dacb6cb14f92
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548803"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093119"
 ---
 # <a name="sysdestination_data_spaces-transact-sql"></a>sys.destination_data_spaces (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

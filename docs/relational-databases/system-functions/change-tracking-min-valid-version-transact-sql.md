@@ -17,15 +17,15 @@ helpviewer_keywords:
 - CHANGE_TRACKING_MIN_VALID_VERSION
 - change tracking [SQL Server], CHANGE_TRACKING_MIN_VALID_VERSION
 ms.assetid: 5a43d23f-adcf-4c0b-95ad-07cee03c1f9d
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: d1a3144ed51592d3014564d7d5b9690fed958fb9
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 81e386ef391283f3a3f3095b7dd321055a676332
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440600"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093897"
 ---
 # <a name="change_tracking_min_valid_version-transact-sql"></a>CHANGE_TRACKING_MIN_VALID_VERSION (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -1,6 +1,6 @@
 ---
-description: Affichages catalogue du témoin de mise en miroir de bases de données-sys. database_mirroring_witnesses
-title: sys. database_mirroring_witnesses (Transact-SQL) | Microsoft Docs
+description: Affichages catalogue du témoin de mise en miroir de bases de données-sys.database_mirroring_witnesses
+title: sys.database_mirroring_witnesses (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -20,16 +20,16 @@ helpviewer_keywords:
 - sys.database_mirroring_witnesses catalog view
 - witness [SQL Server], sys.database_mirroring_witnesses catalog view
 ms.assetid: 0dd5b794-733b-4a3c-b5a4-62f9f1f0f22d
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: a321ea1734ce63941e2ba3ebac30bb0149891d09
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 09eae37eb4eb380ad56c36d837a8454a50a58f8d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548823"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092649"
 ---
-# <a name="database-mirroring-witness-catalog-views---sysdatabase_mirroring_witnesses"></a>Affichages catalogue du témoin de mise en miroir de bases de données-sys. database_mirroring_witnesses
+# <a name="database-mirroring-witness-catalog-views---sysdatabase_mirroring_witnesses"></a>Affichages catalogue du témoin de mise en miroir de bases de données-sys.database_mirroring_witnesses
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Contient une ligne pour chaque rôle de témoin qu'un serveur utilise dans un partenariat de mise en miroir de base de données. 
@@ -57,7 +57,7 @@ ms.locfileid: "89548823"
   
 ## <a name="see-also"></a>Voir aussi  
  [Témoin de mise en miroir de base de données](../../database-engine/database-mirroring/database-mirroring-witness.md)   
- [sys. database_mirroring &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-mirroring-transact-sql.md)   
+ [sys.database_mirroring &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-mirroring-transact-sql.md)   
  [sys.database_mirroring_endpoints &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-mirroring-endpoints-transact-sql.md)   
  [Questions fréquentes sur l'interrogation des catalogues système de SQL Server](../../relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.md)  
   

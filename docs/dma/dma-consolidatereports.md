@@ -14,12 +14,12 @@ ms.assetid: ''
 author: rajeshsetlem
 ms.author: rajpo
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 03ea9cc4d6b7842739f4431fea2e9a418e0f3f9e
-ms.sourcegitcommit: 67befbf7435f256e766bbce6c1de57799e1db9ad
+ms.openlocfilehash: 4d1bcf2cdc9997ea33be87184c38447b7cd62973
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92523916"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98091605"
 ---
 # <a name="assess-an-enterprise-and-consolidate-assessment-reports-with-dma"></a>Évaluer une entreprise et consolider les rapports d’évaluation à l’aide de DMA
 
@@ -34,7 +34,7 @@ Les instructions pas à pas suivantes vous aident à utiliser le Assistant Migra
   - [.NET Framework](https://www.microsoft.com/download/details.aspx?id=30653) v 4.5 ou version ultérieure.
   - [SSMS](../ssms/download-sql-server-management-studio-ssms.md) 17,0 ou version ultérieure.
   - [Power bi Desktop](/power-bi/fundamentals/desktop-get-the-desktop).
-  - [Modules Azure PowerShell](/powershell/azure/install-az-ps?view=azps-1.0.0)
+  - [Modules Azure PowerShell](/powershell/azure/install-az-ps)
 - Télécharger et extraire :
   - Les [rapports DMA Power bi modèle](https://techcommunity.microsoft.com/gxcuf89792/attachments/gxcuf89792/MicrosoftDataMigration/161/4/PowerBI-Reports.zip).
   - [Script LoadWarehouse](https://techcommunity.microsoft.com/gxcuf89792/attachments/gxcuf89792/MicrosoftDataMigration/161/3/LoadWarehouse1.zip).
@@ -80,7 +80,7 @@ Cet inventaire peut être de l’une des deux formes suivantes :
 >
 > Pour les instances par défaut, définissez le nom de l’instance sur MSSQLServer.
 
-Lorsque vous utilisez un fichier CSV pour importer les données, assurez-vous qu’il n’y a que deux colonnes de **nom d’instance** de données et **de nom de base de**données, et que les colonnes n’ont pas de lignes d’en-tête.
+Lorsque vous utilisez un fichier CSV pour importer les données, assurez-vous qu’il n’y a que deux colonnes de **nom d’instance** de données et **de nom de base de** données, et que les colonnes n’ont pas de lignes d’en-tête.
 
  ![contenu du fichier CSV](../dma/media//dma-consolidatereports/dma-csv-file-contents.png)
 
@@ -131,8 +131,8 @@ Les paramètres associés à la fonction dmaDataCollector sont décrits dans le 
 |**databaseName** | Base de données hébergeant la table d’inventaire. |
 |**useInstancesOnly** | Indicateur binaire pour spécifier s’il faut utiliser une liste d’instances à des fins d’évaluation.  Si la valeur est 0, la table DatabaseInventory sera utilisée pour générer la liste des cibles d’évaluation. |
 |**AssessmentName** | Nom de l’évaluation DMA. |
-|**TargetPlatform** | Type de cible d’évaluation que vous souhaitez effectuer.  Les valeurs possibles sont **AzureSQLDatabase**, **ManagedSqlServer**, **SQLServer2012**, **SQLServer2014**, **SQLServer2016**, **SQLServerLinux2017**, **SQLServerWindows2017**,  **SqlServerWindows2019**et **SqlServerLinux2019**.  |
-|**AuthenticationMethod** | La méthode d’authentification pour la connexion aux cibles de SQL Server que vous souhaitez évaluer. Les valeurs possibles **SQLAuth** sont SQLAuth **et l'** interversion. |
+|**TargetPlatform** | Type de cible d’évaluation que vous souhaitez effectuer.  Les valeurs possibles sont **AzureSQLDatabase**, **ManagedSqlServer**, **SQLServer2012**, **SQLServer2014**, **SQLServer2016**, **SQLServerLinux2017**, **SQLServerWindows2017**,  **SqlServerWindows2019** et **SqlServerLinux2019**.  |
+|**AuthenticationMethod** | La méthode d’authentification pour la connexion aux cibles de SQL Server que vous souhaitez évaluer. Les valeurs possibles  sont SQLAuth **et l'** interversion. |
 |**OutputLocation** | Répertoire dans lequel stocker le fichier de sortie de l’évaluation JSON. En fonction du nombre de bases de données en cours d’évaluation et du nombre d’objets dans les bases de données, les évaluations peuvent prendre beaucoup de temps. Le fichier sera écrit une fois toutes les évaluations terminées. |
 
 S’il y a une erreur inattendue, la fenêtre de commande qui est lancée par ce processus va être arrêtée.  Examinez le journal des erreurs pour déterminer la raison de l’échec.

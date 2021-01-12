@@ -16,21 +16,21 @@ dev_langs:
 helpviewer_keywords:
 - fn_syscollector_get_execution_details function
 ms.assetid: d59ddf0c-72c0-4c57-bc83-aef260e4e105
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 615dd195f9553242b92b8830462036ab6384b665
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 40201cb1fed3938da075b3fd5e97380eb0dddfc5
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88474654"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093845"
 ---
 # <a name="fn_syscollector_get_execution_details-transact-sql"></a>fn_syscollector_get_execution_details (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne une partie du journal [!INCLUDE[ssIS](../../includes/ssis-md.md)] (sysssislog) qui correspond au package_execution_id pour le package donné. La table contient une ligne pour chaque entrée du journal générée par les packages ou par leurs tâches et conteneurs lors de l'exécution.  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,7 +48,7 @@ fn_syscollector_get_execution_details ( log_id )
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
 |id|**int**|Identificateur unique de l'entrée d'enregistrement.|  
-|event|**sysname**|Nom de l'événement qui a généré l'entrée d'enregistrement.|  
+|événement|**sysname**|Nom de l'événement qui a généré l'entrée d'enregistrement.|  
 |computer|**nvarchar**|Ordinateur sur lequel le package s'exécutait lors de la création de l'entrée d'enregistrement.|  
 |operator|**nvarchar**|Nom d'utilisateur de la personne ou de l'agent qui exécutait le package qui a généré l'entrée du journal.|  
 |source|**nvarchar**|Nom de l'exécutable qui a généré l'entrée du journal.|  

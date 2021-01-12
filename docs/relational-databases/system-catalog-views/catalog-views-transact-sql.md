@@ -21,15 +21,15 @@ helpviewer_keywords:
 - Database Engine [SQL Server], metadata
 - catalog views [SQL Server], about catalog views
 ms.assetid: 13bccc2f-ed3c-4b58-abd0-ca8bf34a66b8
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: e06b77b5ff994d64bcc5c8acc65464f530fe27c9
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6763194c3a7d12df95caa6e4696c37befe8f6ca8
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475230"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093223"
 ---
 # <a name="system-catalog-views-transact-sql"></a>Affichages catalogue système (Transact-SQL)
 

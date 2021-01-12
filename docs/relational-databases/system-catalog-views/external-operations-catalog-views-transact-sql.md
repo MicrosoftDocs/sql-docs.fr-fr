@@ -11,14 +11,14 @@ ms.topic: language-reference
 dev_langs:
 - TSQL
 ms.assetid: 9abc595c-346d-42dc-a227-a73cd0a356eb
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 14383dc1a4f3deb0f53cb2ed63f7d8ecb6776225
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: ca4753f59881f7410c31a2b7a2389f7ad68b0f38
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89545075"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092617"
 ---
 # <a name="external-operations-catalog-views-transact-sql"></a>Affichages catalogue des opérations externes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
