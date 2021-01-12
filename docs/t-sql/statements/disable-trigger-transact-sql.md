@@ -22,14 +22,14 @@ helpviewer_keywords:
 - triggers [SQL Server], disabling
 - disabling triggers
 ms.assetid: e6529f06-e442-437e-a7bf-41790bc092c5
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: bfd3e379dc6be57c5d56abb7ae1a7a662d151cf1
-ms.sourcegitcommit: 197a6ffb643f93592edf9e90b04810a18be61133
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 41976059d1deb47fcbfc1c939240db415ee8cf64
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91380244"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98081459"
 ---
 # <a name="disable-trigger-transact-sql"></a>DISABLE TRIGGER (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -22,14 +22,14 @@ helpviewer_keywords:
 - STATISTICS PROFILE option
 - statistical information [SQL Server], profiles
 ms.assetid: c635e262-35fa-421a-aa6f-a1c30f351647
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 1596dc3d6c191ea823c8382aa93a520e784be115
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 87b6bf68704f65319faebd2c0cdf947329b6118d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89541223"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98079534"
 ---
 # <a name="set-statistics-profile-transact-sql"></a>SET STATISTICS PROFILE (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

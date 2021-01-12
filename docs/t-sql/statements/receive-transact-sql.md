@@ -20,14 +20,14 @@ helpviewer_keywords:
 - receiving messages
 - retrieving messages
 ms.assetid: 878c6c14-37ab-4b87-9854-7f8f42bac7dd
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: b299ace817088af33732d9e4a9984d7978709f6c
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 840f023e1a906350f34d0709459842a3fe3c796a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91498183"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98080883"
 ---
 # <a name="receive-transact-sql"></a>RECEIVE (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

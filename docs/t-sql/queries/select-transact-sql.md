@@ -1,8 +1,6 @@
 ---
+title: SELECT (Transact-SQL)
 description: SELECT (Transact-SQL)
-title: SELECT (Transact-SQL) | Microsoft Docs
-ms.custom: ''
-ms.date: 10/24/2017
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
@@ -22,16 +20,17 @@ helpviewer_keywords:
 - data manipulation language [SQL Server], SELECT statement
 - row retrieval [SQL Server]
 - queries [SQL Server], results
-ms.assetid: dc85caea-54d1-49af-b166-f3aa2f3a93d0
 author: VanMSFT
 ms.author: vanto
+ms.custom: ''
+ms.date: 10/24/2017
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: e67547c75424708ca0e934175cc0183afb0bd37d
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: dff1dc7f969435e4a4f112e995fe092e8b4da8be
+ms.sourcegitcommit: d681796e8c012eca2d9629d3b816749e9f50f868
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97439076"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98005370"
 ---
 # <a name="select-transact-sql"></a>SELECT (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

@@ -11,12 +11,12 @@ ms.assetid: 5e57a427-2e88-4ef6-b142-4ccad97bcecc
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 0fd911cd7ce60068c0d28ecd5a386a344c5ebea7
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c36d6718455f85314f98219b860a801984804d9d
+ms.sourcegitcommit: 3ec49252e82590de0fe559a8574606ae213f6f3b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481460"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975449"
 ---
 # <a name="choose-a-database-engine-upgrade-method"></a>Choisir une méthode de mise à niveau du moteur de base de données
 [!INCLUDE [SQL Server -Windows Only](../../includes/applies-to-version/sql-windows-only.md)]
@@ -38,7 +38,7 @@ Si vous planifiez une mise à niveau du [!INCLUDE[ssDE](../../includes/ssde-md.m
 >   - [Sélection d’une option SQL Server dans Azure](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview).  
   
 ## <a name="upgrade-in-place"></a>Mettre à niveau sur place  
- Avec cette approche, le programme d’installation de SQL Server met à niveau l’installation [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] existante en remplaçant [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] par le nouveau [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], puis met à niveau les bases de données système et utilisateur.  La mise à niveau sur place est l’approche la plus simple. Toutefois, elle implique un temps mort, exige plus de temps si un rétablissement s’avère nécessaire, et n’est pas prise en charge dans tous les cas de figure. Pour plus d’informations sur les scénarios de mise à niveau sur place pris en charge et non pris en charge, consultez [Mises à niveau de la version et de l’édition prises en charge](../../database-engine/install-windows/supported-version-and-edition-upgrades-2017.md).  
+ Avec cette approche, le programme d’installation de SQL Server met à niveau l’installation [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] existante en remplaçant [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] par le nouveau [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], puis met à niveau les bases de données système et utilisateur.  La mise à niveau sur place est l’approche la plus simple. Toutefois, elle implique un temps mort, exige plus de temps si un rétablissement s’avère nécessaire, et n’est pas prise en charge dans tous les cas de figure. Pour plus d’informations sur les scénarios de mise à niveau sur place pris en charge et non pris en charge, consultez [Mises à niveau de la version et de l’édition prises en charge](../../database-engine/install-windows/supported-version-and-edition-upgrades-version-15.md).  
   
  Cette approche est souvent utilisée dans les cas suivants :  
   

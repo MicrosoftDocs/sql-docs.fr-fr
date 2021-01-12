@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: a3447987-5507-4630-ac35-58821b72354d
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: bf329c6537df49ace1ae78bba64e146641e1e664
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 87c3b10b95a37c74ea1595dca15341aeffe5c261
+ms.sourcegitcommit: 4a813a0741502c56c0cd5ecaafafad2e857a9d7f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195036"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031098"
 ---
 # <a name="database-properties-options-page"></a>Propriétés de la base de données (page Options)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -162,10 +162,10 @@ Active cette fonctionnalité.
  **Optimisation des corrélations de dates activée**  
  Quand la valeur est **True**, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] conserve les statistiques de corrélation entre deux tables quelconques de la base de données qui sont liées par une contrainte FOREIGN KEY et qui possèdent des colonnes **datetime** .  
   
- Si la valeur **False**est définie, les statistiques de corrélation ne sont pas conservées.  
+ Si la valeur **False** est définie, les statistiques de corrélation ne sont pas conservées.  
  
  **Durabilité différée**  
- Active cette fonctionnalité.  
+ Active cette fonctionnalité. Pour plus d’informations, consultez [Contrôler la durabilité d’une transaction](../logs/control-transaction-durability.md).
  
  **Est un instantané Read Committed**  
  Active cette fonctionnalité.  
@@ -174,7 +174,7 @@ Active cette fonctionnalité.
  Spécifiez comment la base de données gère les erreurs d'arrondi. Les valeurs possibles sont **True** et **False**. Lorsque la valeur est **True**, une erreur est générée en cas de perte de précision dans une expression. Lorsque la valeur est **False**, les pertes de précision ne génèrent pas de messages d'erreur, et le résultat est arrondi selon la précision spécifiée pour la colonne ou la variable contenant le résultat. Pour plus d’informations, consultez [SET NUMERIC_ROUNDABORT &#40;Transact-SQL&#41;](../../t-sql/statements/set-numeric-roundabort-transact-sql.md).  
   
  **Paramétrage**  
- Si **SIMPLE**est spécifié, les requêtes sont paramétrables en fonction du comportement par défaut de la base de données. Si **FORCED**est spécifié, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] paramètre toutes les requêtes de la base de données.  
+ Si **SIMPLE** est spécifié, les requêtes sont paramétrables en fonction du comportement par défaut de la base de données. Si **FORCED** est spécifié, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] paramètre toutes les requêtes de la base de données.  
   
  **Identificateurs entre guillemets activés**  
  Spécifiez si les mots clés [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peuvent servir d'identificateurs (nom d'objet ou de variable) s'ils sont entre guillemets. Les valeurs possibles sont **True** et **False**. Pour plus d’informations, consultez [SET QUOTED_IDENTIFIER &#40;Transact-SQL&#41;](../../t-sql/statements/set-quoted-identifier-transact-sql.md).  
@@ -187,9 +187,9 @@ Active cette fonctionnalité.
   
  Pour profiter de l'accès, le propriétaire de la base de données doit également bénéficier de l'autorisation AUTHENTICATE SERVER au niveau du serveur.  
   
- Cette propriété autorise également la création et l'exécution d'assemblys d'accès non sécurisés et externes dans la base de données. Il ne suffit pas d'affecter la valeur **True**à cette propriété ; le propriétaire de la base de données doit également avoir l'autorisation EXTERNAL ACCESS ASSEMBLY ou UNSAFE ASSEMBLY au niveau du serveur.  
+ Cette propriété autorise également la création et l'exécution d'assemblys d'accès non sécurisés et externes dans la base de données. Il ne suffit pas d'affecter la valeur **True** à cette propriété ; le propriétaire de la base de données doit également avoir l'autorisation EXTERNAL ACCESS ASSEMBLY ou UNSAFE ASSEMBLY au niveau du serveur.  
   
- Dans toutes les bases de données utilisateur et système (à l’exception de **MSDB**), cette propriété a la valeur **False**par défaut. La valeur ne peut pas être modifiée pour les bases de données **model** et **tempdb** .  
+ Dans toutes les bases de données utilisateur et système (à l’exception de **MSDB**), cette propriété a la valeur **False** par défaut. La valeur ne peut pas être modifiée pour les bases de données **model** et **tempdb** .  
   
  TRUSTWORTHY a la valeur **False** dès qu'une base de données est attachée au serveur.  
   
@@ -202,7 +202,7 @@ Active cette fonctionnalité.
   
 ## <a name="recovery"></a>Récupération  
  **Vérification de page**  
- Spécifiez l'option utilisée pour détecter et signaler les transactions d'E/S incomplètes à cause d'erreurs d'E/S de disque. Les valeurs possibles sont **None**, **TornPageDetection**et **Checksum**. Pour plus d’informations, consultez [Gérer la table suspect_pages &#40;SQL Server&#41;](../../relational-databases/backup-restore/manage-the-suspect-pages-table-sql-server.md).  
+ Spécifiez l'option utilisée pour détecter et signaler les transactions d'E/S incomplètes à cause d'erreurs d'E/S de disque. Les valeurs possibles sont **None**, **TornPageDetection** et **Checksum**. Pour plus d’informations, consultez [Gérer la table suspect_pages &#40;SQL Server&#41;](../../relational-databases/backup-restore/manage-the-suspect-pages-table-sql-server.md).  
   
  **Temps de récupération cible (en secondes)**  
  Spécifie la durée maximale (en secondes) de la récupération de la base de données spécifiée en cas d'incident. Pour plus d’informations, consultez [Points de contrôle de base de données &#40;SQL Server&#41;](../../relational-databases/logs/database-checkpoints-sql-server.md).  

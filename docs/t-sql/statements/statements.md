@@ -1,25 +1,26 @@
 ---
+title: instructions Transact-SQL
 description: instructions Transact-SQL
-title: Instructions | Microsoft Docs
-ms.custom: ''
-ms.date: 04/17/2020
 ms.prod: sql
 ms.prod_service: sql-data-warehouse, database-engine, pdw, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
 ms.topic: language-reference
+f1_keywords:
+- Alter_TSQL
 dev_langs:
 - TSQL
-ms.assetid: d8d6f62a-e815-425c-a80e-a63fd34ec275
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.custom: ''
+ms.date: 04/17/2020
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: a3ce83d95f98102c087affc91581082857f21250
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 65f48884fff2fc5ce9fc018f8d79b3c2da5a4770
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481750"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98079558"
 ---
 # <a name="transact-sql-statements"></a>instructions Transact-SQL
 
