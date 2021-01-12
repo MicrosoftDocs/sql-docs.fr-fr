@@ -20,15 +20,15 @@ helpviewer_keywords:
 - sys.dm_exec_external_operations management view
 - dm_exec_external_operations management view
 ms.assetid: d268217a-85b8-4b7f-9cd1-87865eba2be1
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: abf383a1dddac7ac6cf3b347b19edd5023b21154
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 013a6c0ff6110bc8dcf051195e3f7c1ab5fe4798
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464520"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098969"
 ---
 # <a name="sysdm_exec_external_operations-transact-sql"></a>sys.dm_exec_external_operations (Transact-SQL)
 [!INCLUDE [sqlserver2016-asa-pdw](../../includes/applies-to-version/sqlserver2016-asa-pdw.md)]

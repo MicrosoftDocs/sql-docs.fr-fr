@@ -20,15 +20,15 @@ helpviewer_keywords:
 - PolyBase,views
 - PolyBase
 ms.assetid: 7597d97b-1fde-4135-ac35-4af12968f300
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 6d373e5900cfebca38c6305bbe9e8cac3d36cb22
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 32a0949cfbc06d9fb801681c6ecfa56abc9f811e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477290"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098962"
 ---
 # <a name="sysdm_exec_external_work-transact-sql"></a>sys.dm_exec_external_work (Transact-SQL)
 [!INCLUDE [sqlserver2016-asa-pdw](../../includes/applies-to-version/sqlserver2016-asa-pdw.md)]

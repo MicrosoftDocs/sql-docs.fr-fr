@@ -20,15 +20,15 @@ helpviewer_keywords:
 - dm_exec_dms_services management view
 - sys.dm_exec_dms_services management view
 ms.assetid: 6ac47eef-4293-46b8-8555-07a614837504
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 6eb6b91b09ea23bb0e89dc0cdc42e17b3d78bbfa
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: d9376dcef8a436a387f1a1b37e636d1719a43f46
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464580"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098947"
 ---
 # <a name="sysdm_exec_dms_services-transact-sql"></a>sys.dm_exec_dms_services (Transact-SQL)
 [!INCLUDE [sqlserver2016-asa-pdw](../../includes/applies-to-version/sqlserver2016-asa-pdw.md)]

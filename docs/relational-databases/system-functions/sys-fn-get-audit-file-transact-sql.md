@@ -19,15 +19,15 @@ helpviewer_keywords:
 - sys.fn_get_audit_file function
 - fn_get_audit_file function
 ms.assetid: d6a78d14-bb1f-4987-b7b6-579ddd4167f5
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current||=azure-sqldw-latest
-ms.openlocfilehash: 1ab5c24dadbe3e8d0ad333cd67452c752cb2937b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 1210ec1da44d68aaf778145da8a02bf3f3092e2c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478990"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093839"
 ---
 # <a name="sysfn_get_audit_file-transact-sql"></a>sys.fn_get_audit_file (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]    
@@ -103,8 +103,8 @@ fn_get_audit_file ( file_pattern,
 | event_time | **datetime2** | Date et heure auxquelles l'action pouvant être auditée est déclenchée. N'accepte pas la valeur NULL. |  
 | file_name | **varchar(260)** | Chemin d'accès et nom du fichier journal d'audit d'où provenait l'enregistrement. N'accepte pas la valeur NULL. |
 | is_column_permission | **bit** | Indicateur précisant s’il s’agit d’une autorisation au niveau de la colonne. N'accepte pas la valeur NULL. Retourne 0 lorsque le permission_bitmask = 0.<br /> 1 = vrai<br /> 0 = faux |
-| object_id | **int** | ID de l’entité sur laquelle l’audit s’est produit. Notamment :<br /> Objets de serveur<br /> Bases de données<br /> Objets de base de données<br /> Objets de schéma<br /> N'accepte pas la valeur NULL. Retourne 0 si l'entité est le serveur lui-même ou si l'audit n'est pas effectué à un niveau objet. Par exemple, Authentification. |  
-| object_name | **sysname** | Nom de l’entité sur laquelle l’audit s’est produit. Notamment :<br /> Objets de serveur<br /> Bases de données<br /> Objets de base de données<br /> Objets de schéma<br /> Autorise la valeur NULL. Retourne NULL si l'entité est le serveur lui-même ou si l'audit n'est pas effectué à un niveau objet. Par exemple, Authentification. |
+| object_id | **int** | ID de l’entité sur laquelle l’audit s’est produit. Ce dernier est détaillé ci-après :<br /> Objets de serveur<br /> Bases de données<br /> Objets de base de données<br /> Objets de schéma<br /> N'accepte pas la valeur NULL. Retourne 0 si l'entité est le serveur lui-même ou si l'audit n'est pas effectué à un niveau objet. Par exemple, Authentification. |  
+| object_name | **sysname** | Nom de l’entité sur laquelle l’audit s’est produit. Ce dernier est détaillé ci-après :<br /> Objets de serveur<br /> Bases de données<br /> Objets de base de données<br /> Objets de schéma<br /> Autorise la valeur NULL. Retourne NULL si l'entité est le serveur lui-même ou si l'audit n'est pas effectué à un niveau objet. Par exemple, Authentification. |
 | permission_bitmask | **varbinary(16)** | Dans certaines actions, il s'agit des autorisations qui ont été accordées, refusées ou révoquées. |
 | response_rows | **bigint** | **S’applique à**: Azure SQL Database et SQL Managed instance<br /><br /> Nombre de lignes retournées dans le jeu de résultats. |  
 | schema_name | **sysname** | Contexte du schéma dans lequel l’action s’est produite. Autorise la valeur NULL. Retourne NULL pour les audits qui se produisent en dehors d’un schéma. |  
@@ -128,7 +128,7 @@ fn_get_audit_file ( file_pattern,
 | user_defined_information | **nvarchar(4000)** | **S’applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] et versions ultérieures, Azure SQL Database et SQL Managed instance<br /><br /> Utilisé pour enregistrer les informations supplémentaires que l’utilisateur souhaite enregistrer dans le journal d’audit à l’aide de la procédure stockée **sp_audit_write** . |  
 
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Si l’argument *file_pattern* passé à **fn_get_audit_file** fait référence à un chemin d’accès ou à un fichier qui n’existe pas, ou si le fichier n’est pas un fichier d’audit, le message d’erreur **MSG_INVALID_AUDIT_FILE** est retourné.  
   
 ## <a name="permissions"></a>Autorisations

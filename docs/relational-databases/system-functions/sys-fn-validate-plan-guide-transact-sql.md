@@ -1,6 +1,6 @@
 ---
 description: sys.fn_validate_plan_guide (Transact-SQL)
-title: sys. fn_validate_plan_guide (Transact-SQL) | Microsoft Docs
+title: sys.fn_validate_plan_guide (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -19,14 +19,14 @@ helpviewer_keywords:
 - fn_validate_plan_guide function
 - sys.fn_validate_plan_guide function
 ms.assetid: 3af8b47a-936d-4411-91d1-d2d16dda5623
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: b19a3cd2f2ee449780127682555f1ae77fabd5d0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 7c9290f1d638f1eb2cf55c19d70d4e32a773bafe
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88396895"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093789"
 ---
 # <a name="sysfn_validate_plan_guide-transact-sql"></a>sys.fn_validate_plan_guide (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "88396895"
   
  En validant un repère de plan, vous pouvez déterminer si le repère peut être utilisé par l'optimiseur sans modification. Selon les résultats de la fonction, vous pouvez décider de supprimer le repère de plan et paramétrer à nouveau la requête, ou de modifier la conception de base de données, par exemple, en recréant l'index spécifié dans le repère de plan.  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,7 +45,7 @@ sys.fn_validate_plan_guide ( plan_guide_id )
   
 ## <a name="arguments"></a>Arguments  
  *plan_guide_id*  
- ID du repère de plan tel qu’indiqué dans l’affichage catalogue [sys. plan_guides](../../relational-databases/system-catalog-views/sys-plan-guides-transact-sql.md) . *plan_guide_id* est de **type int** sans valeur par défaut.  
+ ID du repère de plan tel qu’indiqué dans l’affichage catalogue [sys.plan_guides](../../relational-databases/system-catalog-views/sys-plan-guides-transact-sql.md) . *plan_guide_id* est de **type int** sans valeur par défaut.  
   
 ## <a name="table-returned"></a>Table retournée  
   

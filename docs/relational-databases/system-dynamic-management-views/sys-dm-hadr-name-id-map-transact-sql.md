@@ -1,6 +1,6 @@
 ---
 description: sys.dm_hadr_name_id_map (Transact-SQL)
-title: sys. dm_hadr_name_id_map (Transact-SQL) | Microsoft Docs
+title: sys.dm_hadr_name_id_map (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ helpviewer_keywords:
 - Availability Groups [SQL Server], monitoring
 - sys.dm_hadr_name_id_map dynamic management view
 ms.assetid: e07bb8a9-37de-4a39-a257-950d7c3ae8fb
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: cdd98f7eaa120814a8f615738cc0cee284b60269
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 7cf7f8aa5f87db5cb572ce6b643b5c70c9d273ac
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89533051"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098906"
 ---
 # <a name="sysdm_hadr_name_id_map-transact-sql"></a>sys.dm_hadr_name_id_map (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -1,6 +1,6 @@
 ---
 description: sys.fn_cdc_has_column_changed (Transact-SQL)
-title: sys. fn_cdc_has_column_changed (Transact-SQL) | Microsoft Docs
+title: sys.fn_cdc_has_column_changed (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: sql
@@ -19,21 +19,21 @@ helpviewer_keywords:
 - sys.fn_cdc_has_column_changed
 - fn_cdc_has_column_changed
 ms.assetid: 2b9e6278-050d-4ffc-8d1a-09606180facc
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: b89b4a42df7e0f1481d55fb7d011e947d3e12cf3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 8e835647f387b4980a50a0f49e5c6bd967fe553f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88322015"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099666"
 ---
 # <a name="sysfn_cdc_has_column_changed-transact-sql"></a>sys.fn_cdc_has_column_changed (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Identifie si le masque de mise à jour spécifié indique que la colonne spécifiée a été mise à jour dans la ligne de modification associée.  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -58,7 +58,7 @@ sys.fn_cdc_has_column_changed ( 'capture_instance','column_name' , update_mask )
 ## <a name="remarks"></a>Notes  
  Vous pouvez utiliser cette fonction pour extraire les informations d'un masque de mise à jour retournées dans une requête pour les données de modifications. Elle est particulièrement utile lors du post-traitement du masque de mise à jour lorsque vous devez savoir si une colonne particulière dans la ligne de modification associée a été modifiée. Pour plus d’informations, consultez [À propos de la capture de données modifiées &#40;SQL Server&#41;](../../relational-databases/track-changes/about-change-data-capture-sql-server.md).  
   
- Lorsque ces informations sont renvoyées dans le cadre d’une requête de données modifiées, nous vous recommandons d’utiliser les fonctions [sys. fn_cdc_get_column_ordinal](../../relational-databases/system-functions/sys-fn-cdc-get-column-ordinal-transact-sql.md) et [sys. fn_cdc_is_bit_set](../../relational-databases/system-functions/sys-fn-cdc-is-bit-set-transact-sql.md) au lieu de cette fonction. Utilisez la fonction fn_cdc_get_column_ordinal avant d'interroger la modification de données de sorte que l'ordinal de colonne souhaité ne soit calculé qu'une seule fois. Utilisez fn_cdc_is_bit_set dans la requête afin d'extraire les informations du masque de mise à jour pour chaque ligne retournée.  
+ Lorsque ces informations sont renvoyées dans le cadre d’une requête de données modifiées, nous vous recommandons d’utiliser les fonctions [sys.fn_cdc_get_column_ordinal](../../relational-databases/system-functions/sys-fn-cdc-get-column-ordinal-transact-sql.md) et [sys.fn_cdc_is_bit_set](../../relational-databases/system-functions/sys-fn-cdc-is-bit-set-transact-sql.md) au lieu de cette fonction. Utilisez la fonction fn_cdc_get_column_ordinal avant d'interroger la modification de données de sorte que l'ordinal de colonne souhaité ne soit calculé qu'une seule fois. Utilisez fn_cdc_is_bit_set dans la requête afin d'extraire les informations du masque de mise à jour pour chaque ligne retournée.  
   
 ## <a name="permissions"></a>Autorisations  
  Requiert l'appartenance au rôle serveur fixe sysadmin ou au rôle de base de données fixe db_owner. Pour tous les autres utilisateurs, requiert l'autorisation SELECT sur toutes les colonnes capturées dans la table source et, si un rôle de régulation pour l'instance de capture a été défini, l'appartenance à ce rôle de base de données.  

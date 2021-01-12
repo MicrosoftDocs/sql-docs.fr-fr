@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_exec_sql_text dynamic management function
 ms.assetid: 61b8ad6a-bf80-490c-92db-58dfdff22a24
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 0f15f149cadf6f1fd98526bd4eb27606fc929561
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ae67ee26b6b44951ae0c798de4461dc846b29352
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482750"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098919"
 ---
 # <a name="sysdm_exec_sql_text-transact-sql"></a>sys.dm_exec_sql_text (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -86,7 +86,7 @@ Le *plan_handle* peut être obtenu à partir des objets de gestion dynamique sui
 ## <a name="permissions"></a>Autorisations  
  Nécessite l'autorisation `VIEW SERVER STATE` sur le serveur.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
 Pour les requêtes ad hoc, les handles SQL sont des valeurs de hachage basées sur le texte SQL qui est envoyé au serveur et peuvent provenir de n’importe quelle base de données. 
 
 Pour des objets de base de données tels que des procédures stockées, des déclencheurs ou des fonctions, les handles SQL sont dérivés de l'ID de la base de données, de l'ID de l'objet et du numéro de l'objet. 

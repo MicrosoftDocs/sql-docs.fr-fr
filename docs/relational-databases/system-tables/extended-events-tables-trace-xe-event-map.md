@@ -17,14 +17,14 @@ helpviewer_keywords:
 - trace_xe_event_map
 - extended events [SQL Server], tables
 ms.assetid: 537aa292-3540-47e8-be28-56dc01abc343
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 2e5a00eee3eb03b469f53fef18bb0512b8e2f32d
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: e1cbee9046bb00b504288779748a1befb4e3d2b8
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89545766"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093721"
 ---
 # <a name="extended-events-tables---trace_xe_event_map"></a>Tables d’événements étendus - trace_xe_event_map
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
