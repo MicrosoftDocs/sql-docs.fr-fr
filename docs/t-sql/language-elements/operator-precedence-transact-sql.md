@@ -16,14 +16,14 @@ helpviewer_keywords:
 - order of operator execution [Transact-SQL]
 - precedence [SQL Server], operators
 ms.assetid: f04d2439-6fff-4e4c-801f-cc62faef510a
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: eab9aaf31173a9aaa40b6cfb32c27dbaf6474428
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 66cb4af95ca6c0167570a1edd1fea4dea0a8e838
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92187311"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98100969"
 ---
 # <a name="operator-precedence-transact-sql"></a>Priorités des opérateurs (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

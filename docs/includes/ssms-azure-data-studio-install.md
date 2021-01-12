@@ -7,14 +7,14 @@ ms.topic: include
 author: markingmyname
 ms.author: maghan
 ms.date: 10/20/2020
-ms.openlocfilehash: 276ff77dc4c8126accacc5404a78a50df915df49
-ms.sourcegitcommit: ae474d21db4f724523e419622ce79f611e956a22
+ms.openlocfilehash: b16d4b92f34aa7da885d908d6a20214736fa1cfd
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257362"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102660"
 ---
 > [!Important]
 > À partir de SQL Server Management Studio (SSMS) 18.7, Azure Data Studio est installé automatiquement avec SSMS. Les utilisateurs de SQL Server Management Studio peuvent maintenant bénéficier des innovations et des fonctionnalités d’Azure Data Studio. Azure Data Studio est un outil de bureau open source multiplateforme pour vos environnements cloud, locaux ou hybrides.
 >
-> Pour en savoir plus sur Azure Data Studio, consultez [Qu’est-ce qu’Azure Data Studio](../azure-data-studio/what-is.md) ou les [Questions fréquentes (FAQ)](../azure-data-studio/faq.md).
+> Pour en savoir plus sur Azure Data Studio, consultez [Qu’est-ce qu’Azure Data Studio](../azure-data-studio/what-is-azure-data-studio.md) ou les [Questions fréquentes (FAQ)](../azure-data-studio/faq.md).

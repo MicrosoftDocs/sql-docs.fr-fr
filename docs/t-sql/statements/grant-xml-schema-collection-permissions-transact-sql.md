@@ -17,14 +17,14 @@ helpviewer_keywords:
 - granting permissions [SQL Server], XML schema collections
 - schema collections [SQL Server], permissions
 ms.assetid: 57e24465-cd43-45cf-bb52-eea0b49867f9
-author: MightyPen
-ms.author: genemi
-ms.openlocfilehash: 550b947a910da66e87c5efdddc5ec13fdc9d761c
-ms.sourcegitcommit: bc10ec0be5ddfc5f0bc220a9ac36c77dd6b80f1d
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 5708ddc71349be212e043b865f74da15dec8d9aa
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87544332"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102281"
 ---
 # <a name="grant-xml-schema-collection-permissions-transact-sql"></a>GRANT – octroi d'autorisations de collection de schémas XML (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

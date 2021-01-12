@@ -20,14 +20,14 @@ helpviewer_keywords:
 - "TRUE"
 - single-column set of values [SQL Server]
 ms.assetid: ddadefd7-49ad-4be1-b34d-dcf155558d34
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 0814e6a45952e1603cc217b82374bcaf7fd895c5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: afa3985a27c47b7345ce0e164fc1add90dba7fdb
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88479467"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98101010"
 ---
 # <a name="any-transact-sql"></a>ANY (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

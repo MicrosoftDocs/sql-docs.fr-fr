@@ -21,12 +21,12 @@ ms.assetid: 07f8f594-75b4-4591-8c29-d63811e7753e
 author: pmasl
 ms.author: pelopes
 manager: amitban
-ms.openlocfilehash: 31cdd59e519437f679cd738ef1dc959919b86667
-ms.sourcegitcommit: 0e0cd9347c029e0c7c9f3fe6d39985a6d3af967d
+ms.openlocfilehash: 08e105eac49b8377e128aa1cc746de1eebdee389
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96504933"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102214"
 ---
 # <a name="upgrading-databases-by-using-the-query-tuning-assistant"></a>Mise à niveau des bases de données à l’aide de l’Assistant Paramétrage de requête
 
@@ -231,4 +231,4 @@ Nécessite l’appartenance au rôle **db_owner**.
 - [USE HINT query hints](../../t-sql/queries/hints-transact-sql-query.md#use_hint)
 - [Estimateur de cardinalité](../../relational-databases/performance/cardinality-estimation-sql-server.md)
 - [Paramétrage automatique](../../relational-databases/automatic-tuning/automatic-tuning.md)   
-- [Utiliser l’Assistant Paramétrage de requêtes SQL Server](https://docs.microsoft.com/learn/modules/use-sql-server-query-tuning-assistant/)
+- [Utiliser l’Assistant Paramétrage de requêtes SQL Server](/learn/modules/use-sql-server-query-tuning-assistant/)

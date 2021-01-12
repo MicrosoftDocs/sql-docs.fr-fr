@@ -21,15 +21,15 @@ helpviewer_keywords:
 - lowercase characters
 - converting uppercase to lowercase characters
 ms.assetid: 1783352b-6852-4658-9d94-51963c59b9bf
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 52dcd7ee72f37db48d12e61f9fa53dd56de7c5a3
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ccae39daa228950f4ad3a511ac3f7c1129853b77
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478620"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102592"
 ---
 # <a name="lower-transact-sql"></a>LOWER (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

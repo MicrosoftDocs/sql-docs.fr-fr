@@ -21,14 +21,14 @@ helpviewer_keywords:
 - event sessions [SQL Server]
 - CREATE EVENT SESSION statement
 ms.assetid: 67683027-2b0f-47aa-b223-604731af8b4d
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 793db1e49becc3ea8b16076adae308c2b6c7f237
-ms.sourcegitcommit: bd3a135f061e4a49183bbebc7add41ab11872bae
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 006ef49a390045d5c6d7d8c8c174da90e37f4f91
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92300198"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98100844"
 ---
 # <a name="create-event-session-transact-sql"></a>CREATE EVENT SESSION (Transact-SQL)
 
@@ -112,7 +112,7 @@ ON { SERVER | DATABASE }
 
 *event_session_name* Nom défini par l'utilisateur de la session d'événements. *event_session_name* est alphanumérique, peut contenir jusqu’à 128 caractères, doit être unique dans une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et doit respecter les règles applicables aux [identificateurs](../../relational-databases/databases/database-identifiers.md).
 
-ADD EVENT [ *event_module_guid* ]. *event_package_name* . *event_name* Événement à associer à la session d'événements, où :
+ADD EVENT [ *event_module_guid* ].*event_package_name*.*event_name* Événement à associer à la session d'événements, où :
 
 - *event_module_guid* est le GUID du module qui contient l’événement.
 - *event_package_name* est le package qui contient l’objet d’action.
@@ -120,9 +120,9 @@ ADD EVENT [ *event_module_guid* ]. *event_package_name* . *event_name* Événeme
 
 Les événements apparaissent dans la vue sys.dm_xe_objects en tant qu'object_type « événement ».
 
-SET { *event_customizable_attribute*= \<value> [ ,... *n* ] } Autorise les attributs personnalisables pour l'événement à définir. Les attributs personnalisables s’affichent dans la vue sys.dm_xe_object_columns sous la forme column_type 'customizable' et object_name =  *event_name* .
+SET { *event_customizable_attribute*= \<value> [ ,...*n*] } Autorise les attributs personnalisables pour l'événement à définir. Les attributs personnalisables s’affichent dans la vue sys.dm_xe_object_columns sous la forme column_type 'customizable' et object_name = *event_name*.
 
-ACTION ( { [ *event_module_guid* ]. *event_package_name* . *action_name* [ **,** ... *n* ] }) Action à associer à la session d'événements, où :
+ACTION ( { [*event_module_guid*].*event_package_name*.*action_name* [ **,** ...*n*] }) Action à associer à la session d'événements, où :
 
 - *event_module_guid* est le GUID du module qui contient l’événement.
 - *event_package_name* est le package qui contient l’objet d’action.
@@ -134,36 +134,36 @@ WHERE \<predicate_expression> Spécifie l'expression de prédicat utilisée pour
 
 *event_field_name* Nom du champ d'événement qui identifie la source de prédicat.
 
-[ *event_module_guid* ]. *event_package_name* . *predicate_source_name* Nom de la source de prédicat globale, où :
+[*event_module_guid*].*event_package_name*.*predicate_source_name* Nom de la source de prédicat globale, où :
 
 - *event_module_guid* est le GUID du module qui contient l’événement.
 - *event_package_name* est le package qui contient l’objet de prédicat.
 - *predicate_source_name* est défini dans la vue sys.dm_xe_objects comme object_type 'pred_source'.
 
-[ *event_module_guid* ]. *event_package_name* . *predicate_compare_name* Nom de l'objet de prédicat à associer à l'événement, où :
+[*event_module_guid*].*event_package_name*.*predicate_compare_name* Nom de l'objet de prédicat à associer à l'événement, où :
 
 - *event_module_guid* est le GUID du module qui contient l’événement.
 - *event_package_name* est le package qui contient l’objet de prédicat.
 - *predicate_compare_name* est une source globale définie dans la vue sys.dm_xe_objects comme object_type 'pred_compare'.
 
-*number* Tout type numérique, dont **decimal** . Le manque de mémoire physique ou un nombre trop grand pour être représenté sous forme d'entier 64 bits sont les seules limitations.
+*number* Tout type numérique, dont **decimal**. Le manque de mémoire physique ou un nombre trop grand pour être représenté sous forme d'entier 64 bits sont les seules limitations.
 
-' *string* ' Chaîne ANSI ou Unicode, comme requis par la comparaison de prédicat. Aucune conversion implicite de type chaîne n'est effectuée pour les fonctions de comparaison de prédicat. La transmission d'un type incorrect provoque une erreur.
+'*string*' Chaîne ANSI ou Unicode, comme requis par la comparaison de prédicat. Aucune conversion implicite de type chaîne n'est effectuée pour les fonctions de comparaison de prédicat. La transmission d'un type incorrect provoque une erreur.
 
-ADD TARGET [ *event_module_guid* ]. *event_package_name* . *target_name* Cible à associer à la session d'événements, où :
+ADD TARGET [*event_module_guid*].*event_package_name*.*target_name* Cible à associer à la session d'événements, où :
 
 - *event_module_guid* est le GUID du module qui contient l’événement.
 - *event_package_name* est le package qui contient l’objet d’action.
 - *target_name* est la cible. Les cibles apparaissent dans la vue sys.dm_xe_en tant qu'object_type « cible ».
 
-SET { *target_parameter_name*= \<value> [, ... *n* ] } Définit un paramètre cible. Les paramètres cibles apparaissent dans la vue sys.dm_xe_object_columns sous la forme column_type 'customizable' et object_name =  *target_name* .
+SET { *target_parameter_name*= \<value> [, ...*n*] } Définit un paramètre cible. Les paramètres cibles apparaissent dans la vue sys.dm_xe_object_columns sous la forme column_type 'customizable' et object_name = *target_name*.
 
 > [!IMPORTANT]
 > Si vous utilisez la cible de mémoire tampon en anneau, il est préférable de configurer le paramètre cible max_memory avec 2 048 kilo-octets (Ko) pour éviter les éventuelles données tronquées dans le résultat XML. Pour plus d’informations sur le moment où les différents types de cibles doivent être utilisés, consultez [Cibles des événements étendus SQL Server](/previous-versions/sql/sql-server-2016/bb630339(v=sql.130)).
 
-WITH ( \<event_session_options> [ ,... *n* ] ) Spécifie les options à utiliser avec la session d'événements.
+WITH ( \<event_session_options> [ ,...*n*] ) Spécifie les options à utiliser avec la session d'événements.
 
-MAX_MEMORY = *size* [ KB | **MB** ] Spécifie la quantité de mémoire maximale à allouer à la session pour la mise en mémoire tampon d'événement. La valeur par défaut est 4 Mo. *size* est un nombre entier qui peut s’exprimer en kilo-octets (Ko) ou en mégaoctets (Mo). La valeur maximale ne peut pas dépasser 2 Go (moins de 2 048 Mo). Toutefois, il est déconseillé d’utiliser des plages de valeurs de mémoire exprimées en Go.
+MAX_MEMORY =*size* [ KB | **MB** ] Spécifie la quantité de mémoire maximale à allouer à la session pour la mise en mémoire tampon d'événement. La valeur par défaut est 4 Mo. *size* est un nombre entier qui peut s’exprimer en kilo-octets (Ko) ou en mégaoctets (Mo). La valeur maximale ne peut pas dépasser 2 Go (moins de 2 048 Mo). Toutefois, il est déconseillé d’utiliser des plages de valeurs de mémoire exprimées en Go.
 
 EVENT_RETENTION_MODE = { **ALLOW_SINGLE_EVENT_LOSS** | ALLOW_MULTIPLE_EVENT_LOSS | NO_EVENT_LOSS } Spécifie le mode de rétention des événements à utiliser pour gérer la perte d'événements.
 
@@ -182,7 +182,7 @@ MAX_DISPATCH_LATENCY = { *seconds* SECONDS | **INFINITE** } Spécifie la durée 
 > [!NOTE]
 > MAX_DISPATCH_LATENCY = 0 SECONDS est équivalent à MAX_DISPATCH_LATENCY = INFINITE.
 
-MAX_EVENT_SIZE = *size* [ KB | **MB** ] Spécifie la taille maximale autorisée pour les événements. MAX_EVENT_SIZE doit être défini uniquement pour autoriser les événements uniques supérieurs à MAX_MEMORY. Si vous lui affectez une valeur inférieure à MAX_MEMORY, une erreur est générée. *size* est un nombre entier qui peut s’exprimer en kilo-octets (Ko) ou en mégaoctets (Mo). Si *size* est spécifié en kilo-octets, la taille minimale autorisée est 64 Ko. Quand MAX_EVENT_SIZE est défini, deux mémoires tampons de *size* sont créées en plus de MAX_MEMORY. Cela signifie que la mémoire totale utilisée pour la mise en mémoire tampon d'événements est MAX_MEMORY + 2 * MAX_EVENT_SIZE.
+MAX_EVENT_SIZE =*size* [ KB | **MB** ] Spécifie la taille maximale autorisée pour les événements. MAX_EVENT_SIZE doit être défini uniquement pour autoriser les événements uniques supérieurs à MAX_MEMORY. Si vous lui affectez une valeur inférieure à MAX_MEMORY, une erreur est générée. *size* est un nombre entier qui peut s’exprimer en kilo-octets (Ko) ou en mégaoctets (Mo). Si *size* est spécifié en kilo-octets, la taille minimale autorisée est 64 Ko. Quand MAX_EVENT_SIZE est défini, deux mémoires tampons de *size* sont créées en plus de MAX_MEMORY. Cela signifie que la mémoire totale utilisée pour la mise en mémoire tampon d'événements est MAX_MEMORY + 2 * MAX_EVENT_SIZE.
 
 MEMORY_PARTITION_MODE = { **NONE** | PER_NODE | PER_CPU } Spécifie l'emplacement où les mémoires tampons d'événements sont créées.
 

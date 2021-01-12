@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: rpsqrd
 ms.author: ryanpu
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 1774e2b2a27b2b1f0c36b298f98c916318fd1543
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5d1b2a7209de25b1ce5c988ec9a46b77369dcf70
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477650"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98101825"
 ---
 # <a name="register-computer-with-host-guardian-service"></a>Inscrire un ordinateur auprès du Service Guardian hôte
 
@@ -243,7 +243,7 @@ Répétez l’étape 4B pour chaque ordinateur [!INCLUDE [ssnoversion-md](../..
 
 Une fois que vous avez inscrit l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] auprès de SGH ([étape 4A](#step-4a-register-a-computer-in-tpm-mode) pour le mode TPM, [étape 4B](#step-4b-register-a-computer-in-host-key-mode) pour le mode clé d’hôte), vous devez confirmer qu’il peut effectuer une attestation.
 
-Vous pouvez vérifier la configuration du client d’attestation SGH et effectuer une tentative d’attestation à tout moment avec [Get-HgsClientConfiguration](/powershell/module/hgsclient/get-hgsclientconfiguration?view=win10-ps).
+Vous pouvez vérifier la configuration du client d’attestation SGH et effectuer une tentative d’attestation à tout moment avec [Get-HgsClientConfiguration](/powershell/module/hgsclient/get-hgsclientconfiguration).
 La sortie de la commande doit ressembler à ce qui suit :
 
 ```

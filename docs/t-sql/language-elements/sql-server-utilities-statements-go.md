@@ -18,14 +18,14 @@ helpviewer_keywords:
 - ending batches [SQL Server]
 - GO command
 ms.assetid: b2ca6791-3a07-4209-ba8e-2248a92dd738
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 6b342052d848597a7422adf5594e25a2b799c7b3
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: f09f2dcdd59b0e0431dbdd92a4023a2e3296149f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92193268"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98100919"
 ---
 # <a name="sql-server-utilities-statements---go"></a>Instructions d’utilitaires SQL Server - GO
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

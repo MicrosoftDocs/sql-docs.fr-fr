@@ -17,15 +17,15 @@ helpviewer_keywords:
 - DEGREES function
 - number of degrees
 ms.assetid: 5208de3c-90a3-4f59-a7e3-10b01bf285bb
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 56a095cf5e45823d85713a5b8557eb8d16cdf5ef
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ee6a72a4f0da2c2bebeb07ceed1e9520cec642e9
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472100"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102638"
 ---
 # <a name="degrees-transact-sql"></a>DEGREES (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

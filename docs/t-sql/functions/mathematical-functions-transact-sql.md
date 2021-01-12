@@ -15,14 +15,14 @@ helpviewer_keywords:
 - mathematical functions [SQL Server]
 - functions [SQL Server], mathematical
 ms.assetid: 46495a2e-81d0-4677-9d72-9db083cd1023
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 7d3f3d6cc5bbd7730e229df06724635f707034b2
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 2fa744343341f8076c59d626218ef29cdcbbb3bc
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88422703"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102559"
 ---
 # <a name="mathematical-functions-transact-sql"></a>Fonctions mathématiques (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -44,13 +44,13 @@ Les fonctions scalaires suivantes effectuent un calcul, généralement basé sur
 - [LOG10](../../t-sql/functions/log10-transact-sql.md)
 - [PI](../../t-sql/functions/pi-transact-sql.md)
 - [POWER](../../t-sql/functions/power-transact-sql.md)
-- [RADIANS](../../t-sql/functions/radians-transact-sql.md)  
-- [RAND](../../t-sql/functions/rand-transact-sql.md)  
-- [ROUND](../../t-sql/functions/round-transact-sql.md)  
-- [SIGN](../../t-sql/functions/sign-transact-sql.md)  
-- [SIN](../../t-sql/functions/sin-transact-sql.md)  
-- [SQRT](../../t-sql/functions/sqrt-transact-sql.md)  
-- [SQUARE](../../t-sql/functions/square-transact-sql.md)  
+- [RADIANS](../../t-sql/functions/radians-transact-sql.md)  
+- [RAND](../../t-sql/functions/rand-transact-sql.md)  
+- [ROUND](../../t-sql/functions/round-transact-sql.md)  
+- [SIGN](../../t-sql/functions/sign-transact-sql.md)  
+- [SIN](../../t-sql/functions/sin-transact-sql.md)  
+- [SQRT](../../t-sql/functions/sqrt-transact-sql.md)  
+- [SQUARE](../../t-sql/functions/square-transact-sql.md)  
 - [TAN](../../t-sql/functions/tan-transact-sql.md)
   
 > [!NOTE]  

@@ -55,13 +55,13 @@ helpviewer_keywords:
 - QUERY_PLAN_PROFILE query hint
 ms.assetid: 66fb1520-dcdf-4aab-9ff1-7de8f79e5b2d
 author: pmasl
-ms.author: vanto
-ms.openlocfilehash: effad55b1fd1eec856aa412700a751e36e588b37
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.author: pelopes
+ms.openlocfilehash: eda240576ebb819e387e3fb93d55a06b6a1c1d9e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92035842"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102375"
 ---
 # <a name="hints-transact-sql---query"></a>Indicateurs (Transact-SQL) - Requête
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

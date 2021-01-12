@@ -19,14 +19,14 @@ helpviewer_keywords:
 - column testing [SQL Server]
 - updated columns
 ms.assetid: 765fde44-1f95-4015-80a4-45388f18a42c
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: bc2c16fb026bb64a304c1582b59ee7ffa09f35d6
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: c927fbad08c222aad4e284a66d3b3e61061e82e9
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124868"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98101278"
 ---
 # <a name="columns_updated-transact-sql"></a>COLUMNS_UPDATED (Transact-SQL)
 

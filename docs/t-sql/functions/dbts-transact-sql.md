@@ -17,14 +17,14 @@ helpviewer_keywords:
 - '@@DBTS function'
 - timestamp data type
 ms.assetid: 91842ddd-91c0-4445-a03f-116f6bc991d0
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 1f11adca5f8a3fe72a0365e84a746cdec2d5e049
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 86b50a1dc5aa704e9d6aa6bbc7677fa056f875be
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88417405"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98101169"
 ---
 # <a name="x40x40dbts-transact-sql"></a>&#x40;&#x40;DBTS (Transact-SQL)
 
