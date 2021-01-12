@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.function_order_columns catalog view
 ms.assetid: 29287973-3125-4d35-8ca9-92cb45828854
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: ad217286e8d9f0e3fc6b6a7cc8441cee6787f76c
-ms.sourcegitcommit: a81823f20262227454c0b5ce9c8ac607aaf537e2
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 8a3408d1f4e7a32aafed3318d32f0a9ed7a97d3f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97684191"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102750"
 ---
 # <a name="sysfunction_order_columns-transact-sql"></a>sys.function_order_columns (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

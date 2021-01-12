@@ -1,6 +1,6 @@
 ---
 description: Fonctions et vues de gestion dynamique relatives au serveur (Transact-SQL)
-title: Fonctions et vues de gestion dynamique liées au serveur (Transact-SQL) | Microsoft Docs
+title: Server-Related les fonctions et vues de gestion dynamique (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/06/2017
 ms.prod: sql
@@ -10,14 +10,14 @@ ms.topic: language-reference
 dev_langs:
 - TSQL
 ms.assetid: d8f4e155-c2fb-4a1f-aa0d-e9790bdab925
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: b3ad603576842161511d6171cc4acbb095ca4399
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 4ea381372714a8c44981386e9a7fcdb074f1d6b5
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89542387"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98100018"
 ---
 # <a name="server-related-dynamic-management-views-and-functions-transact-sql"></a>Fonctions et vues de gestion dynamique relatives au serveur (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

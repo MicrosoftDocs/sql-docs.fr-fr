@@ -1,6 +1,6 @@
 ---
 description: sys.dm_db_persisted_sku_features (Transact-SQL)
-title: sys. dm_db_persisted_sku_features (Transact-SQL) | Microsoft Docs
+title: sys.dm_db_persisted_sku_features (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 08/23/2017
 ms.prod: sql
@@ -18,19 +18,19 @@ helpviewer_keywords:
 - editions [SQL Server]
 - sys.dm_db_persisted_sku_features dynamic management view
 ms.assetid: b4b29e97-b523-41b9-9528-6d4e84b89e09
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 552bb8927c8609a2cfa406243be102372b855c0c
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 9221515e0c8a6c0704f0a036d851241d849d5f3d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548644"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98101661"
 ---
 # <a name="sysdm_db_persisted_sku_features-transact-sql"></a>sys.dm_db_persisted_sku_features (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Certaines fonctionnalités du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] modifient la façon dont les [!INCLUDE[ssDE](../../includes/ssde-md.md)] informations sont stockées dans les fichiers de la base de données. Ces fonctionnalités sont limitées à des éditions spécifiques de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Une base de données qui contient ces fonctionnalités ne peut pas être déplacée vers une édition de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui ne les prend pas en charge. Utilisez la vue de gestion dynamique sys. dm_db_persisted_sku_features pour répertorier les fonctionnalités spécifiques à l’édition de qui sont activées dans la base de données actuelle.
+  Certaines fonctionnalités du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] modifient la façon dont les [!INCLUDE[ssDE](../../includes/ssde-md.md)] informations sont stockées dans les fichiers de la base de données. Ces fonctionnalités sont limitées à des éditions spécifiques de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Une base de données qui contient ces fonctionnalités ne peut pas être déplacée vers une édition de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui ne les prend pas en charge. Utilisez la sys.dm_db_persisted_sku_features vue de gestion dynamique pour répertorier les fonctionnalités spécifiques à l’édition qui sont activées dans la base de données actuelle.
   
 **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] et versions ultérieures).
   
@@ -45,19 +45,19 @@ ms.locfileid: "89548644"
 ## <a name="remarks"></a>Notes  
  Si aucune fonctionnalité pouvant être restreinte par une édition spécifique n’est utilisée par la base de données, la vue ne retourne aucune ligne.  
   
- sys. dm_db_persisted_sku_features peut répertorier les fonctionnalités de modification de base de données suivantes, limitées à des [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] éditions spécifiques :  
+ sys.dm_db_persisted_sku_features pouvez répertorier les fonctionnalités de modification de base de données suivantes, limitées à des [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] éditions spécifiques :  
   
--   **ChangeCapture**: indique qu’une capture de données modifiées est activée pour une base de données. Pour supprimer la capture de données modifiées, utilisez la procédure stockée [sys. sp_cdc_disable_db](../../relational-databases/system-stored-procedures/sys-sp-cdc-disable-db-transact-sql.md) . Pour plus d’informations, consultez [À propos de la capture de données modifiées &#40;SQL Server&#41;](../../relational-databases/track-changes/about-change-data-capture-sql-server.md).  
+-   **ChangeCapture**: indique qu’une capture de données modifiées est activée pour une base de données. Pour supprimer la capture de données modifiées, utilisez la procédure stockée [sys.sp_cdc_disable_db](../../relational-databases/system-stored-procedures/sys-sp-cdc-disable-db-transact-sql.md) . Pour plus d’informations, consultez [À propos de la capture de données modifiées &#40;SQL Server&#41;](../../relational-databases/track-changes/about-change-data-capture-sql-server.md).  
   
 -   **ColumnStoreIndex**: indique qu’au moins une table a un index ColumnStore. Pour permettre le déplacement d’une base de données vers une édition de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui ne prend pas en charge cette fonctionnalité, utilisez l’instruction [Drop index](../../t-sql/statements/drop-index-transact-sql.md) ou [ALTER index](../../t-sql/statements/alter-index-transact-sql.md) pour supprimer l’index ColumnStore. Pour plus d’informations, consultez [index ColumnStore](../../relational-databases/indexes/columnstore-indexes-overview.md).  
   
-    **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] et versions ultérieures).  
+    **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] et versions ultérieures).  
   
--   **Compression**: indique qu’au moins une table ou un index utilise la compression de données ou le format de stockage vardecimal. Pour permettre le déplacement d’une base de données vers une édition de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui ne prend pas en charge cette fonctionnalité, utilisez l’instruction [ALTER TABLE](../../t-sql/statements/alter-table-transact-sql.md) ou [ALTER index](../../t-sql/statements/alter-index-transact-sql.md) pour supprimer la compression de données. Pour supprimer le format de stockage Vardecimal, exécutez l'instruction sp_tableoption. Pour plus d’informations, consultez [Compression de données](../../relational-databases/data-compression/data-compression.md).  
+-   **Compression**: indique qu’au moins une table ou un index utilise la compression de données ou le format de stockage vardecimal. Pour permettre le déplacement d’une base de données vers une édition de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui ne prend pas en charge cette fonctionnalité, utilisez l’instruction [ALTER TABLE](../../t-sql/statements/alter-table-transact-sql.md) ou [ALTER index](../../t-sql/statements/alter-index-transact-sql.md) pour supprimer la compression de données. Pour supprimer le format de stockage Vardecimal, exécutez l'instruction sp_tableoption. Pour plus d’informations, consultez [Compression de données](../../relational-databases/data-compression/data-compression.md).  
   
--   **MultipleFSContainers**: indique que la base de données utilise plusieurs conteneurs FileStream. La base de données a un groupe de fichiers FILESTREAM avec plusieurs conteneurs (fichiers). Pour plus d’informations, consultez [FILESTREAM &#40;SQL Server&#41;](../../relational-databases/blob/filestream-sql-server.md).  
+-   **MultipleFSContainers**: indique que la base de données utilise plusieurs conteneurs FileStream. La base de données a un groupe de fichiers FILESTREAM avec plusieurs conteneurs (fichiers). Pour plus d’informations, consultez [FILESTREAM &#40;SQL Server&#41;](../../relational-databases/blob/filestream-sql-server.md).  
   
--   **InMemoryOLTP**: indique que la base de données utilise l’OLTP en mémoire. La base de données a un groupe de fichiers MEMORY_OPTIMIZED_DATA. Pour plus d’informations, consultez [OLTP en mémoire &#40;optimisation en mémoire&#41;](../../relational-databases/in-memory-oltp/in-memory-oltp-in-memory-optimization.md).  
+-   **InMemoryOLTP**: indique que la base de données utilise In-Memory OLTP. La base de données a un groupe de fichiers MEMORY_OPTIMIZED_DATA. Pour plus d’informations, consultez [OLTP en mémoire &#40;optimisation en mémoire&#41;](../../relational-databases/in-memory-oltp/in-memory-oltp-in-memory-optimization.md).  
   
   **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures). 
   

@@ -1,6 +1,6 @@
 ---
 description: sys.backup_devices (Transact-SQL)
-title: sys. backup_devices (Transact-SQL) | Microsoft Docs
+title: sys.backup_devices (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: sql
@@ -19,14 +19,14 @@ helpviewer_keywords:
 - backup devices [SQL Server], viewing information
 - sys.backup_devices catalog view
 ms.assetid: 457edaa4-aca1-4bd3-bf8d-734490b80fcd
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: b58bfc803d66b8782631ec4fd3d9223041dbce73
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: cddc056b4e83c6bb3e01d901eb4106318b7cd71b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551484"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099255"
 ---
 # <a name="sysbackup_devices-transact-sql"></a>sys.backup_devices (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

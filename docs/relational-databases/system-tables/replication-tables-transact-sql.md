@@ -14,14 +14,14 @@ helpviewer_keywords:
 - system tables [SQL Server], replication
 - replication [SQL Server], system tables
 ms.assetid: 5696ee73-5d7c-4f26-b7ee-6831c9c3edf7
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 016d1c2b16d2901870589e0ae21db00a9701d0f2
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 975f8160b5f9a737c4681894ee281e7e997f8c3b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89544438"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099637"
 ---
 # <a name="replication-tables-transact-sql"></a>Tables de réplication (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

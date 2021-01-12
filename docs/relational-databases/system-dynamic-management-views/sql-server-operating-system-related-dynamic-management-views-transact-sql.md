@@ -15,14 +15,14 @@ helpviewer_keywords:
 - SQL OS dynamic management objects [SQL Server]
 - dynamic management objects [SQL Server], SQL OS
 ms.assetid: 3030c86a-0a74-4fed-ac0f-392e244cb965
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 6ca14e58a777603fc0bbfed73834597641fddf08
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 06a04e6b6deecddf722a80f9bcf736d7bc57387a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548914"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98100009"
 ---
 # <a name="sql-server-operating-system-related-dynamic-management-views-transact-sql"></a>Vues de gestion dynamique SQL Server liées au système d'exploitation (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

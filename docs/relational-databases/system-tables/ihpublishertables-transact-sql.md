@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - IHpublishertables system table
 ms.assetid: 7d16ac39-633a-4fe2-8f22-1d9afc191ee9
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 3e1a7f5485768a0d8c80211dd3a33d992419f104
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 604f5ddba7eb007833adcab0a4a026cd1fe3a124
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540905"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98100570"
 ---
 # <a name="ihpublishertables-transact-sql"></a>IHpublishertables (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "89540905"
 |**table_id**|**int**|Identifie une table publiée.|  
 |**publisher_id**|**smallint**|Identifie le serveur de publication non-SQL Server à partir duquel la table est publiée.|  
 |**name**|**sysname**|Nom de la table publiée.|  
-|**du**|**sysname**|Propriétaire de la table.|  
+|**propriétaire**|**sysname**|Propriétaire de la table.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Réplication de base de données hétérogène](../../relational-databases/replication/non-sql/heterogeneous-database-replication.md)   

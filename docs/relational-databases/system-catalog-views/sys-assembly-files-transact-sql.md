@@ -1,6 +1,6 @@
 ---
 description: sys.assembly_files (Transact-SQL)
-title: sys. assembly_files (Transact-SQL) | Microsoft Docs
+title: sys.assembly_files (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.assembly_files catalog view
 ms.assetid: 1a384a2c-5556-4d12-a2ba-4da781363143
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: f1e0a3b19a23cfd999ec2b4c1fc5468f53b746ee
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: b8613a3f35a7cb7f4d0ca49167583abcf837c852
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89542676"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102858"
 ---
 # <a name="sysassembly_files-transact-sql"></a>sys.assembly_files (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.configurations catalog view
 ms.assetid: c4709ed1-bf88-4458-9e98-8e9b78150441
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: d470cda4e0c5cf54bcce0827fff4e5f9b9d1acb7
-ms.sourcegitcommit: 7f76975c29d948a9a3b51abce564b9c73d05dcf0
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 10956e1c3738c64829ec18d92a05b9f427b1833d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96901052"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98100675"
 ---
 # <a name="sysconfigurations-transact-sql"></a>sys.configurations (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "96901052"
 |**is_dynamic**|**bit**|1 = Variable qui prend effet lorsque l'instruction RECONFIGURE est exécutée.|  
 |**is_advanced**|**bit**|1 = la variable s’affiche uniquement lorsque l' **affichage advancedoption** est défini.|  
   
- ## <a name="remarks"></a>Remarques
+ ## <a name="remarks"></a>Notes
   Pour obtenir la liste de toutes les options de configuration du serveur, consultez [options de configuration du serveur &#40;SQL Server&#41;](../../database-engine/configure-windows/server-configuration-options-sql-server.md).  
   
 > [!NOTE]  

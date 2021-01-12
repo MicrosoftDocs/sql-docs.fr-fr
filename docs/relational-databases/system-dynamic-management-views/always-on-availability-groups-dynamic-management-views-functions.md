@@ -12,14 +12,14 @@ dev_langs:
 helpviewer_keywords:
 - dynamic management views [SQL Server], AlwaysOn Availability Groups
 ms.assetid: 17a77e24-d8b8-4f8a-8a7c-05d6c5d32d96
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 844ccfb7ee96f5d4d869162aa64f3ededb0cd792
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 3ddbe057c2320d68aaff77738a11cce3cc8913ed
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551336"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98101685"
 ---
 # <a name="always-on-availability-groups-dynamic-management-views---functions"></a>Vues de gestion dynamique de groupes de disponibilité Always On-fonctions
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

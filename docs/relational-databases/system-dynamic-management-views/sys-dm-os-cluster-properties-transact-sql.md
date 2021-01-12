@@ -1,6 +1,6 @@
 ---
 description: sys.dm_os_cluster_properties (Transact-SQL)
-title: sys. dm_os_cluster_properties (Transact-SQL) | Microsoft Docs
+title: sys.dm_os_cluster_properties (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 08/09/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ helpviewer_keywords:
 - dm_os_cluster_properties
 - sys.dm_os_cluster_properties
 ms.assetid: 6d82e770-fba7-49e0-9a0c-3b34b393e4a7
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: f90e54197387bf0bd64bf5c890ab3a044883bbd9
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 98e5e9b90449836a4370771c35e12ea82007aed6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89550237"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099749"
 ---
 # <a name="sysdm_os_cluster_properties-transact-sql"></a>sys.dm_os_cluster_properties (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

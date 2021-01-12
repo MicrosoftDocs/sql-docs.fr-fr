@@ -1,6 +1,6 @@
 ---
 description: sys.dm_cryptographic_provider_keys (Transact-SQL)
-title: sys. dm_cryptographic_provider_keys (Transact-SQL) | Microsoft Docs
+title: sys.dm_cryptographic_provider_keys (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -17,14 +17,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_cryptographic_provider_keys dynamic management function
 ms.assetid: 5a8c1421-c56b-44b5-96e5-4f01782a0c7c
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 1f2ee5bd2a0aecd1cd56d4efd041caf920f19e61
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 668f98d9b15fd38792f7a6a48a92c955d17ca94d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89542318"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099929"
 ---
 # <a name="sysdm_cryptographic_provider_keys-transact-sql"></a>sys.dm_cryptographic_provider_keys (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

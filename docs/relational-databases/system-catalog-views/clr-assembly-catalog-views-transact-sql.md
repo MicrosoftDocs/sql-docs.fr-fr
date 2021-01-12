@@ -15,14 +15,14 @@ helpviewer_keywords:
 - assemblies [CLR integration], catalog views
 - CLR assembly catalog views
 ms.assetid: b2e71480-92b2-4610-a4ff-dafb121087d9
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 1d27ee8c9460b8b14b451479cd061af08b9dfdce
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 48070929c9e811736b5eb04b7e942cbb8000c094
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91810259"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98101848"
 ---
 # <a name="clr-assembly-catalog-views-transact-sql"></a>Vues de catalogue d'assemblys CLR (Transact-SQL)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

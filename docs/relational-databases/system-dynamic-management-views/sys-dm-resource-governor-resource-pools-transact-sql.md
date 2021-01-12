@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_resource_governor_resource_pools dynamic management view
 ms.assetid: 9bfc926e-d8bc-40f8-9229-ab1f8a1e69c5
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 3d99aec61bb33b989a162d63c51f10465a3c9bf0
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 2ac359e1b73d963e7c2d7f880be7443118f8bd2c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472790"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98101452"
 ---
 # <a name="sysdm_resource_governor_resource_pools-transact-sql"></a>sys.dm_resource_governor_resource_pools (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "97472790"
 |io_issue_delay_total_ms|**bigint**|**S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.<br /><br /> Durée totale (en millisecondes) entre l'émission planifiée et l'émission réelle des E/S. Autorise la valeur NULL. Null si le pool de ressources n'est pas régi pour les E/S. Autrement dit, les paramètres du pool de ressources MIN_IOPS_PER_VOLUME et MAX_IOPS_PER_VOLUME sont 0.|  
 |pdw_node_id|**int**|**S’applique à**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] , [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]<br /><br /> Identificateur du nœud sur lequel cette distribution se trouve.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Les groupes de charges de travail et les pools de ressources du gouverneur de ressources respectent un mappage de type plusieurs-à-un. De nombreuses statistiques de pool de ressources sont donc dérivées des statistiques de groupe de charges de travail.  
   
  Cette vue de gestion dynamique montre la configuration en mémoire. Pour afficher les métadonnées de configuration stockées, utilisez l’affichage catalogue sys.resource_governor_resource_pools.  

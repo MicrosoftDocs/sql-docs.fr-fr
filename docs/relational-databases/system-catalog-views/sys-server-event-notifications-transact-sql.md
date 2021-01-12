@@ -1,6 +1,6 @@
 ---
 description: sys.server_event_notifications (Transact-SQL)
-title: sys. server_event_notifications (Transact-SQL) | Microsoft Docs
+title: sys.server_event_notifications (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.server_event_notifications catalog view
 ms.assetid: 1a83a044-3130-4551-95ca-162525846ff5
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: c9d10906885eefeb6be66d8f353fd7a553c57288
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 60f8d8e0470a62e9679eab8af97173228b3a2375
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551418"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98101736"
 ---
 # <a name="sysserver_event_notifications-transact-sql"></a>sys.server_event_notifications (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

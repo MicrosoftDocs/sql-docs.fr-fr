@@ -17,15 +17,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.all_objects catalog view
 ms.assetid: 547e4be4-a8e4-48ce-9d8d-37b169985081
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 9f6900467bd593afd2a6ece290e8ad35611b2720
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 39395b18422259219f43ddc34ac96af389490b84
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484801"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102187"
 ---
 # <a name="sysall_objects-transact-sql"></a>sys.all_objects (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

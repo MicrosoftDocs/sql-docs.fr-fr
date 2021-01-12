@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - sysmergepartitioninfo system table
 ms.assetid: 7429ad2c-dd33-4f7d-89cc-700e083af518
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 2b9505763400dbb6bc0cfd98844ee73740353ca5
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 8a94f14212f2603639c1d272da4d35e9bea9fb29
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540805"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98100491"
 ---
 # <a name="sysmergepartitioninfo-transact-sql"></a>sysmergepartitioninfo (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

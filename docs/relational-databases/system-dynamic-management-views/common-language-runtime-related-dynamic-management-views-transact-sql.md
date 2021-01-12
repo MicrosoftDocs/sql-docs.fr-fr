@@ -13,14 +13,14 @@ helpviewer_keywords:
 - common language runtime [SQL Server], dynamic management views
 - dynamic management objects [SQL Server], common language runtime
 ms.assetid: 57e79c45-ff47-4885-bdf5-aecf29891ab3
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: ef135990c7cb99f312b237c10dc950b4822247f5
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: f8c84684df5e535e4928eb62dc56bfbd2f5165c9
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89537706"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98100094"
 ---
 # <a name="common-language-runtime-related-dynamic-management-views-transact-sql"></a>Vues de gestion dynamique CLR (Common Language Runtime) (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

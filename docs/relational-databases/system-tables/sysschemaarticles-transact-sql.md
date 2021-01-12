@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - sysschemaarticles system table
 ms.assetid: 67a1c039-c283-4a9c-bacc-b9b3973590c3
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 10ad8eddd1d71b05f3c350d43f2205372685bcd4
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: ecefc7fe927f5013d5647c276cf4dc1e687c0ff0
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89545314"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102700"
 ---
 # <a name="sysschemaarticles-transact-sql"></a>sysschemaarticles (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

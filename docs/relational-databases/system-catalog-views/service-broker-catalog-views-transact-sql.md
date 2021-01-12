@@ -14,14 +14,14 @@ helpviewer_keywords:
 - Service Broker, catalog views
 - catalog views [SQL Server], Service Broker
 ms.assetid: 00682b5e-4720-422e-a5ec-4a96f26e1300
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 22ffb476d993dc7883acdf188b1edf709fd4ad77
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: e68fee7bf39caf0e2732170ef401a5f53fac1711
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91810405"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102196"
 ---
 # <a name="service-broker-catalog-views-transact-sql"></a>Affichages catalogue relatifs à Service Broker (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]

@@ -14,14 +14,14 @@ helpviewer_keywords:
 - catalog views [SQL Server], server-wide configuration
 - server-wide configuration catalog views [SQL Server]
 ms.assetid: fa039662-6eb6-47d9-952c-229a4dffa81d
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: be3767ed7423f6601a0796f120064d96feec78b7
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: eb5d83d0705633f6a21fde67e34301fc98db8e66
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91807318"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102919"
 ---
 # <a name="server-wide-configuration-catalog-views-transact-sql"></a>Vues de catalogue pour la configuration de niveau serveur (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]

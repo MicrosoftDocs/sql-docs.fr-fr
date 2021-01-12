@@ -1,6 +1,6 @@
 ---
 description: sys.dm_broker_queue_monitors (Transact-SQL)
-title: sys. dm_broker_queue_monitors (Transact-SQL) | Microsoft Docs
+title: sys.dm_broker_queue_monitors (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -17,14 +17,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_broker_queue_monitors dynamic management view
 ms.assetid: 401207dc-ef4a-4a3f-879c-76dcbb52d6bc
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 15090a3b52be40dba3735bb0b10ef185efe5de2b
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: a553a293d5423b4731f0f2547a6b5d9d4d5c60ac
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551298"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099956"
 ---
 # <a name="sysdm_broker_queue_monitors-transact-sql"></a>sys.dm_broker_queue_monitors (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

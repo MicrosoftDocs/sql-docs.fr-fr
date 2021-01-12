@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_os_stacks dynamic management view
 ms.assetid: a69b06c4-28f0-4535-8fa1-9f132db4d916
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 4539400253aecb4efc68500fea616bac23bfc2af
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6e5c42d0a82ce7726883e46f2e633aacc624e4db
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482700"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099719"
 ---
 # <a name="sysdm_os_stacks-transact-sql"></a>sys.dm_os_stacks (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "97482700"
 |**frame_index**|**int**|Chaque ligne représente un appel de fonction qui, lorsqu’il est trié par ordre croissant d’index de frames pour une **stack_address** particulière, retourne la pile des appels complète. N'accepte pas la valeur NULL.|  
 |**frame_address**|**varbinary (8)**|Adresse de l'appel de la fonction. N'accepte pas la valeur NULL.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  **sys.dm_os_stacks** nécessite que les symboles du serveur et des autres composants soient présents sur le serveur pour afficher correctement les informations.  
   
 ## <a name="permissions"></a>Autorisations

@@ -1,6 +1,6 @@
 ---
 description: sys.dm_broker_connections (Transact-SQL)
-title: sys. dm_broker_connections (Transact-SQL) | Microsoft Docs
+title: sys.dm_broker_connections (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/08/2016
 ms.prod: sql
@@ -17,14 +17,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_broker_connections dynamic management view
 ms.assetid: d9e20433-67fe-4fcc-80e3-b94335b2daef
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 8ce810ed6014710b6d4a9a3cb61da9fe4e0605cd
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: e95fce78ca6b416de83f9cf5ec991a131b054839
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89537677"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099986"
 ---
 # <a name="sysdm_broker_connections-transact-sql"></a>sys.dm_broker_connections (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -69,7 +69,7 @@ ms.locfileid: "89537677"
   
 ## <a name="relationship-cardinalities"></a>Cardinalités de la relation  
   
-|Du|À|Relation|  
+|Du|À|Relationship|  
 |----------|--------|------------------|  
 |**dm_broker_connections.connection_id**|**dm_exec_connections.connection_id**|Un-à-un|  
   

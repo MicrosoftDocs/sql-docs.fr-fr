@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - log_shipping_primary_databases system table
 ms.assetid: 56888756-a798-42be-9b5e-0f9aa05a2cc6
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: ae5bde1d9d9abde1d1bbf6ddabc0b29e378414e0
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 8dd97d1baa37b71fec2e1ceb113e4b0a3614a2e4
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540927"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102137"
 ---
 # <a name="log_shipping_primary_databases-transact-sql"></a>log_shipping_primary_databases (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "89540927"
 |**monitor_server_security_mode**|**bit**|Mode de sécurité utilisé pour la connexion au serveur moniteur.<br /><br /> 1 = Authentification Windows.<br /><br /> 0 = [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] authentification.|  
 |**last_backup_file**|**nvarchar (500)**|Chemin d'accès absolu de la sauvegarde la plus récente des journaux de transactions.|  
 |**last_backup_date**|**datetime**|Date et heure de la dernière opération de sauvegarde des journaux.|  
-|**user_specified_monitor**|**bit**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]<br /><br /> **sp_help_log_shipping_primary_database** et **sp_help_log_shipping_secondary_primary** Utilisez cette colonne pour contrôler l’affichage des paramètres d’analyse dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] .<br /><br /> 0 = lors de l’appel de l’une de ces deux procédures stockées, l’utilisateur n’a pas spécifié de valeur explicite pour le paramètre ** \@ monitor_server** .<br /><br /> 1 = Une valeur explicite a été spécifiée par l'utilisateur.|  
+|**user_specified_monitor**|**bit**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]<br /><br /> **sp_help_log_shipping_primary_database** et **sp_help_log_shipping_secondary_primary** Utilisez cette colonne pour contrôler l’affichage des paramètres d’analyse dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] .<br /><br /> 0 = lors de l’appel de l’une de ces deux procédures stockées, l’utilisateur n’a pas spécifié de valeur explicite pour le paramètre **\@ monitor_server** .<br /><br /> 1 = Une valeur explicite a été spécifiée par l'utilisateur.|  
 |**backup_compression**|**tinyint**|Indique si la configuration de la copie des journaux de transaction substitue le comportement de compression de la sauvegarde au niveau du serveur.<br /><br /> 0 = Désactivées. Les sauvegardes de fichiers journaux ne sont jamais compressés, quels que soient les paramètres de compression de sauvegarde configurés par serveur.<br /><br /> 1 = Activé. Les sauvegardes de fichiers journaux sont toujours compressés, quels que soient les paramètres de compression de sauvegarde configurés par serveur.<br /><br /> 2 = utilise la configuration du serveur pour l’affichage ou configurer l’option de configuration de serveur [compression de la sauvegarde par défaut](../../database-engine/configure-windows/view-or-configure-the-backup-compression-default-server-configuration-option.md) de l’option de configuration de serveur. Il s’agit de la valeur par défaut.<br /><br /> La compression de la sauvegarde est prise en charge uniquement dans l'édition Enterprise de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
   
 ## <a name="see-also"></a>Voir aussi  

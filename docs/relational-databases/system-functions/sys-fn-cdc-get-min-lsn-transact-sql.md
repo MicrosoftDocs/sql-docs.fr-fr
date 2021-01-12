@@ -1,6 +1,6 @@
 ---
 description: sys.fn_cdc_get_min_lsn (Transact-SQL)
-title: sys. fn_cdc_get_min_lsn (Transact-SQL) | Microsoft Docs
+title: sys.fn_cdc_get_min_lsn (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: sql
@@ -19,21 +19,21 @@ helpviewer_keywords:
 - fn_cdc_get_min_lsn
 - sys.fn_cdc_get_min_lsn
 ms.assetid: bd49e28a-128b-4f6b-8545-6a2ec3f4afb3
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 642a4e846e6da836ff296f8d271d21603ff84865
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 34f941c959d56e4526a73bd186e18cafeda43660
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88321685"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099664"
 ---
 # <a name="sysfn_cdc_get_min_lsn-transact-sql"></a>sys.fn_cdc_get_min_lsn (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Retourne la valeur de colonne start_lsn pour l’instance de capture spécifiée à partir de la table système [CDC. change_tables](../../relational-databases/system-tables/cdc-change-tables-transact-sql.md) . Cette valeur représente le point de terminaison inférieur de l'intervalle de validité pour l'instance de capture.  
+  Retourne la start_lsn valeur de colonne pour l’instance de capture spécifiée à partir de la table système [CDC.change_tables](../../relational-databases/system-tables/cdc-change-tables-transact-sql.md) . Cette valeur représente le point de terminaison inférieur de l'intervalle de validité pour l'instance de capture.  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -96,7 +96,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [sys. fn_cdc_get_max_lsn &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-cdc-get-max-lsn-transact-sql.md)   
+ [sys.fn_cdc_get_max_lsn &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-cdc-get-max-lsn-transact-sql.md)   
  [Journal des transactions &#40;SQL Server&#41;](../../relational-databases/logs/the-transaction-log-sql-server.md)  
   
   

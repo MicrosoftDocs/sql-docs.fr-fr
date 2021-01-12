@@ -1,6 +1,6 @@
 ---
 description: sys.availability_read_only_routing_lists (Transact-SQL)
-title: sys. availability_read_only_routing_lists (Transact-SQL) | Microsoft Docs
+title: sys.availability_read_only_routing_lists (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -23,14 +23,14 @@ helpviewer_keywords:
 - readable secondary replicas
 - sys.availability_read_only_routing_lists dynamic management view
 ms.assetid: 0686bc5a-c206-41ef-b40a-79a8259d51d2
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 88d9f7757489e929f9e7981600f66a34ef79e920
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: de371ea74a42675e2f3ce4f9501d6aedba1dc421
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89537476"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98101778"
 ---
 # <a name="sysavailability_read_only_routing_lists-transact-sql"></a>sys.availability_read_only_routing_lists (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

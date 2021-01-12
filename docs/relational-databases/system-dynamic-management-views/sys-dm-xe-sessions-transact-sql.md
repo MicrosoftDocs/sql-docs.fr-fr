@@ -1,6 +1,6 @@
 ---
 description: sys.dm_xe_sessions (Transact-SQL)
-title: sys. dm_xe_sessions (Transact-SQL) | Microsoft Docs
+title: sys.dm_xe_sessions (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ helpviewer_keywords:
 - sys.dm_xe_sessions dynamic management view
 - extended events [SQL Server], views
 ms.assetid: defd6efb-9507-4247-a91f-dc6ff5841e17
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 16e1b53b91e5c1dca0bfd1b9bab49ad5e129e9c2
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 3acce4d01f26c3fcc818201e05c33ab9a46116a8
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543796"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099704"
 ---
 # <a name="sysdm_xe_sessions-transact-sql"></a>sys.dm_xe_sessions (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

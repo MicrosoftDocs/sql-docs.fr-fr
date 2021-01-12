@@ -21,14 +21,14 @@ helpviewer_keywords:
 - sys.dm_os_spinlock_stats dynamic management view
 author: bluefooted
 ms.author: pamela
-ms.reviewer: maghan
+ms.reviewer: wiassaf
 manager: amitban
-ms.openlocfilehash: 05e8698484f9445de7a5fb3265d1e0e294dc65d7
-ms.sourcegitcommit: 2991ad5324601c8618739915aec9b184a8a49c74
+ms.openlocfilehash: 396c52a6d687c554b277e6f26c290978f035ae01
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97332079"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099765"
 ---
 # <a name="sysdm_os_spinlock_stats-transact-sql"></a>sys.dm_os_spinlock_stats (Transact-SQL)
 

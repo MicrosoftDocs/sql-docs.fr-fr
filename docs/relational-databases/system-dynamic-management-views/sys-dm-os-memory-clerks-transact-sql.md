@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_os_memory_clerks dynamic management view
 ms.assetid: 1d556c67-5c12-46d5-aa8c-7ec1bb858df7
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 256d01bcd3b33e96adb576a59ad917df4b04585b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8f6942f95ff8d0f229d52921a692ae7ec74c18f2
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477270"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98101535"
 ---
 # <a name="sysdm_os_memory_clerks-transact-sql"></a>sys.dm_os_memory_clerks (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "97477270"
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] , requiert l' `VIEW SERVER STATE` autorisation.   
 Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le `Server admin` ou un `Azure Active Directory admin` compte est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.   
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Le gestionnaire de mémoire de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] se compose d'une hiérarchie à trois niveaux. La base de la hiérarchie est constituée par les nœuds de mémoire. Le niveau intermédiaire est constitué de régisseurs de mémoire, de caches mémoire et de pools de mémoires. Le niveau supérieur comprend les objets de mémoire. Ces objets sont généralement utilisés pour allouer de la mémoire dans une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
  Les nœuds de mémoire fournissent l'interface et assurent l'implémentation des allocateurs de niveau inférieur. Au sein de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], seuls les régisseurs de mémoire ont accès aux nœuds de mémoire. Les régisseurs de mémoire accèdent aux interfaces des nœuds de mémoire pour allouer de la mémoire. Les nœuds de mémoire assurent également le suivi de la mémoire allouée en utilisant le Clerk pour les diagnostics. Chaque composant allouant une quantité importante de mémoire doit créer son propre régisseur de mémoire et allouer toute sa mémoire à l'aide des interfaces du régisseur de mémoire. Souvent, les composants créent leurs régisseurs de mémoire lors du démarrage de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  

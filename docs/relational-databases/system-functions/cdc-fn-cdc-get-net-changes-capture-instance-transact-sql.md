@@ -1,6 +1,6 @@
 ---
 description: cdc.fn_cdc_get_net_changes_&lt;capture_instance&gt; (Transact-SQL)
-title: CDC. fn_cdc_get_net_changes_ &lt; capture_instance &gt; (Transact-SQL) | Microsoft Docs
+title: cdc.fn_cdc_get_net_changes_ &lt; capture_instance &gt; (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/06/2017
 ms.prod: sql
@@ -15,14 +15,14 @@ helpviewer_keywords:
 - change data capture [SQL Server], querying metadata
 - cdc.fn_cdc_get_net_changes_<capture_instance>
 ms.assetid: 43ab0d1b-ead4-471c-85f3-f6c4b9372aab
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 731effd8310521308f9097323d10fcc57bcb9921
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 7dee462b6b4a66b61d790bb06673d36f0907ef73
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88498205"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099690"
 ---
 # <a name="cdcfn_cdc_get_net_changes_ltcapture_instancegt-transact-sql"></a>cdc.fn_cdc_get_net_changes_&lt;capture_instance&gt; (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "88498205"
   
  Lorsqu’une ligne source a plusieurs modifications au cours de la plage du LSN, une seule ligne qui reflète le contenu final de la ligne est retournée par la fonction d’énumération décrite ci-dessous. Par exemple, si une transaction insère une ligne dans la table source et qu’une transaction ultérieure dans la plage LSN met à jour une ou plusieurs colonnes de cette ligne, la fonction ne retourne qu' **une** seule ligne, qui comprend les valeurs de colonne mises à jour.  
   
- Cette fonction d'énumération est créée lorsqu'une table source est activée pour la capture des données modifiées et que le suivi net est spécifié. Pour activer le suivi net, la table source doit avoir une clé primaire ou un index unique. Le nom de fonction est dérivé et utilise le format CDC. fn_cdc_get_net_changes_*capture_instance*, où *capture_instance* est la valeur spécifiée pour l’instance de capture lorsque la table source a été activée pour la capture de données modifiées. Pour plus d’informations, consultez [sys. sp_cdc_enable_table &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-enable-table-transact-sql.md).  
+ Cette fonction d'énumération est créée lorsqu'une table source est activée pour la capture des données modifiées et que le suivi net est spécifié. Pour activer le suivi net, la table source doit avoir une clé primaire ou un index unique. Le nom de fonction est dérivé et utilise le format cdc.fn_cdc_get_net_changes_ *capture_instance*, où *capture_instance* est la valeur spécifiée pour l’instance de capture lorsque la table source a été activée pour la capture de données modifiées. Pour plus d’informations, consultez [sys.sp_cdc_enable_table &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-enable-table-transact-sql.md).  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -97,7 +97,7 @@ cdc.fn_cdc_get_net_changes_capture_instance ( from_lsn , to_lsn , '<row_filter_o
 ## <a name="examples"></a>Exemples  
  L’exemple suivant utilise la fonction `cdc.fn_cdc_get_net_changes_HR_Department` pour signaler les modifications nettes apportées à la table source `HumanResources.Department` pendant un intervalle de temps spécifique.  
   
- En premier lieu, la fonction `GETDATE` est utilisée pour marquer le début de l'intervalle de temps. Après avoir appliqué à la table source plusieurs instructions DML, la fonction `GETDATE` est rappelée pour identifier la fin de l'intervalle de temps. La fonction [sys. fn_cdc_map_time_to_lsn](../../relational-databases/system-functions/sys-fn-cdc-map-time-to-lsn-transact-sql.md) est ensuite utilisée pour mapper l’intervalle de temps à une plage de requêtes de capture de données modifiées délimitée par des valeurs LSN. Enfin, la fonction `cdc.fn_cdc_get_net_changes_HR_Department` est interrogée pour obtenir les modifications nettes apportées à la table source pendant l'intervalle de temps. Remarquez que la ligne qui est insérée, puis supprimée n'apparaît pas dans le jeu de résultats retourné par la fonction. En effet, une ligne qui est d'abord ajoutée, puis supprimée dans une fenêtre de requête ne produit aucune modification nette dans la table source pendant l'intervalle. Avant d’exécuter cet exemple, vous devez d’abord exécuter l’exemple B dans [sys. sp_cdc_enable_table &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-enable-table-transact-sql.md).  
+ En premier lieu, la fonction `GETDATE` est utilisée pour marquer le début de l'intervalle de temps. Après avoir appliqué à la table source plusieurs instructions DML, la fonction `GETDATE` est rappelée pour identifier la fin de l'intervalle de temps. La fonction [sys.fn_cdc_map_time_to_lsn](../../relational-databases/system-functions/sys-fn-cdc-map-time-to-lsn-transact-sql.md) est ensuite utilisée pour mapper l’intervalle de temps à une plage de requêtes de capture de données modifiées délimitée par des valeurs LSN. Enfin, la fonction `cdc.fn_cdc_get_net_changes_HR_Department` est interrogée pour obtenir les modifications nettes apportées à la table source pendant l'intervalle de temps. Remarquez que la ligne qui est insérée, puis supprimée n'apparaît pas dans le jeu de résultats retourné par la fonction. En effet, une ligne qui est d'abord ajoutée, puis supprimée dans une fenêtre de requête ne produit aucune modification nette dans la table source pendant l'intervalle. Avant d’exécuter cet exemple, vous devez d’abord exécuter l’exemple B dans [sys.sp_cdc_enable_table &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-enable-table-transact-sql.md).  
   
 ```  
 USE AdventureWorks2012;  
@@ -127,10 +127,10 @@ SELECT * FROM cdc.fn_cdc_get_net_changes_HR_Department(@from_lsn, @to_lsn, 'all'
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [CDC. fn_cdc_get_all_changes_&#60;capture_instance&#62;  &#40;Transact-SQL&#41;](../../relational-databases/system-functions/cdc-fn-cdc-get-all-changes-capture-instance-transact-sql.md)   
- [sys. fn_cdc_map_time_to_lsn &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-cdc-map-time-to-lsn-transact-sql.md)   
- [sys. sp_cdc_enable_table &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-enable-table-transact-sql.md)   
- [sys. sp_cdc_help_change_data_capture &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-help-change-data-capture-transact-sql.md)   
+ [cdc.fn_cdc_get_all_changes_&#60;capture_instance&#62;  &#40;Transact-SQL&#41;](../../relational-databases/system-functions/cdc-fn-cdc-get-all-changes-capture-instance-transact-sql.md)   
+ [sys.fn_cdc_map_time_to_lsn &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-cdc-map-time-to-lsn-transact-sql.md)   
+ [sys.sp_cdc_enable_table &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-enable-table-transact-sql.md)   
+ [sys.sp_cdc_help_change_data_capture &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-help-change-data-capture-transact-sql.md)   
  [À propos de la capture de données modifiées &#40;SQL Server&#41;](../../relational-databases/track-changes/about-change-data-capture-sql-server.md)  
   
   
