@@ -1,6 +1,6 @@
 ---
 description: sys.dm_server_registry (Transact-SQL)
-title: sys. dm_server_registry (Transact-SQL) | Microsoft Docs
+title: sys.dm_server_registry (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -17,14 +17,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_server_registry dynamic management view
 ms.assetid: 9b3e0c74-2e99-4996-a383-104d51831e97
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 48fc4cbb0967e757308d876a68d3580bcf72c4c6
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 909aaa820947285da692e43a178e7580a76adf58
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89530465"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096445"
 ---
 # <a name="sysdm_server_registry-transact-sql"></a>sys.dm_server_registry (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -90,6 +90,6 @@ WHERE registry_key LIKE N'%SuperSocketNetLib%';
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [sys. dm_server_services &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-server-services-transact-sql.md)  
+ [sys.dm_server_services &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-server-services-transact-sql.md)  
   
   

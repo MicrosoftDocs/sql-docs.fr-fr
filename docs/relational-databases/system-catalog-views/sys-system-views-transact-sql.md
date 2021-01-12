@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.system_views catalog view
 ms.assetid: a526c410-e7b5-4075-8103-e1f3c6837c3c
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 45f2b39e809ac5df7ff2bb84d60d60d2cfec30dd
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 44a4c687d934e9bd633650be73aabe6a06e5eaf4
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89544998"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094444"
 ---
 # <a name="syssystem_views-transact-sql"></a>sys.system_views (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

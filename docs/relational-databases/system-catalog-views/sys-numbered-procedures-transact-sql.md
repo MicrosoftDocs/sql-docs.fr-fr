@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.numbered_procedures catalog view
 ms.assetid: 5b6d6498-bac6-4266-94b9-d16ef5089cf0
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 410c7b9a04463aeed0a777bb8c3bfcb75dfc9e32
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 34d67487512792261397d80e9353edecf4775b82
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97405109"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095499"
 ---
 # <a name="sysnumbered_procedures-transact-sql"></a>sys.numbered_procedures (Transact-SQL)
 [!INCLUDE [sql-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdbmi-asa-pdw.md)]

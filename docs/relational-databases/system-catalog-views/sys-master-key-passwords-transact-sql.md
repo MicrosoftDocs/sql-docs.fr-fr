@@ -1,6 +1,6 @@
 ---
 description: sys.master_key_passwords (Transact-SQL)
-title: sys. master_key_passwords (Transact-SQL) | Microsoft Docs
+title: sys.master_key_passwords (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 04/06/2020
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.master_key_passwords catalog view
 ms.assetid: b8e18cff-a9e6-4386-98ce-1cd855506e03
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: c928b85aed482e774b8b180c6f97c2138f7ad0d0
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 1552e621ba2b0d16e8a9e505a460b682bf33accd
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89539686"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095562"
 ---
 # <a name="sysmaster_key_passwords-transact-sql"></a>sys.master_key_passwords (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

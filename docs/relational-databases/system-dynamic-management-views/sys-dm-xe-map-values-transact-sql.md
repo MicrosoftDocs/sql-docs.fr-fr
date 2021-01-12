@@ -1,6 +1,6 @@
 ---
 description: sys.dm_xe_map_values (Transact-SQL)
-title: sys. dm_xe_map_values (Transact-SQL) | Microsoft Docs
+title: sys.dm_xe_map_values (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ helpviewer_keywords:
 - sys.dm_xe_map_values dynamic management view
 - xe
 ms.assetid: c0c5dd7e-9cee-47e2-b65a-88194c00aa1f
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 235f6d9bf0d84985d9749f9cae5ee2b93460feae
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 6b7aee22e48449dbec0f5eb3d795169a3f2ad4e6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546355"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095036"
 ---
 # <a name="sysdm_xe_map_values-transact-sql"></a>sys.dm_xe_map_values (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "89546355"
   
 ### <a name="relationship-cardinalities"></a>Cardinalités de la relation  
   
-|Du|À|Relation|  
+|Du|À|Relationship|  
 |----------|--------|------------------|  
 |dm_xe_map_values.object_package_guid<br /><br /> dm_xe_map_values.name|sys.dm_xe_objects.package_guid<br /><br /> sys.dm_xe_objects.name|Plusieurs-à-un| 
   

@@ -17,14 +17,14 @@ helpviewer_keywords:
 - suspect_pages system table
 - suspect pages [SQL Server]
 ms.assetid: 119c8d62-eea8-44fb-bf72-de469c838c50
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 0c601496075c71d70af89b0413e5bcbf3a6ba8b2
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: c2b5952f12c857a7bf58c066744e1c366279b1e4
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89544476"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096126"
 ---
 # <a name="suspect_pages-transact-sql"></a>suspect_pages (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

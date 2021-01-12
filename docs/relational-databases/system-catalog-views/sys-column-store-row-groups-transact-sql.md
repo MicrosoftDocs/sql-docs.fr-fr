@@ -19,14 +19,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.column_store_row_groups catalog view
 ms.assetid: 76e7fef2-d1a4-4272-a2bb-5f5dcd84aedc
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 95d7d35ad00eb1e134f7eec2165c2c59dea933e2
-ms.sourcegitcommit: 9c6130d498f1cfe11cde9f2e65c306af2fa8378d
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: c6e99ae69d27bbaebbd0fa8bd720820f14064d9b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93036075"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095619"
 ---
 # <a name="syscolumn_store_row_groups-transact-sql"></a>sys.column_store_row_groups (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]
@@ -40,20 +40,20 @@ ms.locfileid: "93036075"
 |**partition_number**|int|ID de la partition de table qui contient le row_group_id de groupe de lignes. Utilisez partition_number pour joindre cette vue DMV à sys.partitions.|  
 |**row_group_id**|int|Numéro de groupe de lignes associé à ce groupe de lignes. Cet ID est unique dans la partition.<br /><br /> -1 = fin d’une table en mémoire.|  
 |* * delta_store_hobt_id|bigint * *|Hobt_id pour le groupe de lignes ouvert dans le magasin Delta.<br /><br /> NULL si le groupe de lignes n’est pas dans le magasin Delta.<br /><br /> Valeur NULL pour la fin d’une table en mémoire.|  
-|**state**|tinyint|Numéro d'ID associé à state_description.<br /><br /> 0 = INVISIBLE<br /><br /> 1 = OPEN<br /><br /> 2 = CLOSED<br /><br /> 3 = COMPRESSED <br /><br /> 4 = OBJET TOMBSTONE|  
+|**state**|TINYINT|Numéro d'ID associé à state_description.<br /><br /> 0 = INVISIBLE<br /><br /> 1 = OPEN<br /><br /> 2 = CLOSED<br /><br /> 3 = COMPRESSED <br /><br /> 4 = OBJET TOMBSTONE|  
 |**state_description**|nvarchar(60)|Description de l'état permanent du groupe de lignes :<br /><br /> INVISIBLE : segment compressé masqué dans le processus de génération à partir des données d’un magasin Delta. Les actions de lecture utiliseront la banque delta jusqu'à ce que le segment compressé masqué soit terminé. Ensuite, le nouveau le segment est rendu visible, et la banque delta source est supprimée.<br /><br /> OUVRIR : groupe de lignes en lecture/écriture qui accepte les nouveaux enregistrements. Un groupe de lignes ouvert est toujours au format rowstore et n'a pas été compressé au format columnstore.<br /><br /> CLOSEd : groupe de lignes qui a été rempli, mais pas encore compressé par le processus du moteur de Tuple.<br /><br /> Compressed : groupe de lignes qui a été rempli et compressé.|  
 |**total_rows**|bigint|Nombre total de lignes stockées physiquement dans le groupe de lignes. Certaines peuvent avoir été supprimées, mais elles sont toujours stockées. Le nombre maximal de lignes d'un groupe de lignes est 1 048 576 (hexadécimal FFFFF).|  
 |**deleted_rows**|bigint|Nombre total de lignes marquées comme étant supprimées dans le groupe de lignes. Cette valeur est toujours 0 pour les groupes de lignes DELTA.|  
 |**size_in_bytes**|bigint|Taille en octets de toutes les données dans ce groupe de lignes (sans les métadonnées ou les dictionnaires partagés), pour les rowgroups DELTA et COLUMNSTORE.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Retourne une ligne pour chaque groupe de lignes columnstore pour chaque table ayant un index columnstore cluster ou non cluster.  
   
  Utilisez **sys.column_store_row_groups** pour déterminer le nombre de lignes incluses dans le groupe de lignes et la taille du groupe de lignes.  
   
  Lorsque le nombre de lignes supprimées dans un groupe de lignes atteint un fort pourcentage du nombre total de lignes, la table est moins efficace. Reconstruisez l'index columnstore pour réduire la taille de la table, ce qui réduit les E/S disque nécessaires pour lire la table. Pour reconstruire l’index ColumnStore, utilisez l’option **Rebuild** de l’instruction **ALTER index** .  
   
- Le ColumnStore pouvant être mis à jour insère d’abord de nouvelles données dans un rowgroup **ouvert** , qui est au format rowstore, et est également parfois appelé table Delta.  Une fois qu’un rowgroup ouvert est plein, son état passe à **fermé** . Un rowgroup fermé est compressé au format ColumnStore par le moteur de tuple et l’état passe à **compressé** .  Le moteur de tuple est un processus en arrière-plan qui se réveille régulièrement et vérifie s'il existe des rowgroups fermés prêts à être compressés dans un rowgroup columnstore.  Le moteur de tuple libère également les rowgroups dans lesquels chaque ligne a été supprimée. Les RowGroups désalloués sont marqués comme **Tombstone** . Pour exécuter immédiatement le moteur de tuple, utilisez l’option **REorganize** de l’instruction **ALTER index** .  
+ Le ColumnStore pouvant être mis à jour insère d’abord de nouvelles données dans un rowgroup **ouvert** , qui est au format rowstore, et est également parfois appelé table Delta.  Une fois qu’un rowgroup ouvert est plein, son état passe à **fermé**. Un rowgroup fermé est compressé au format ColumnStore par le moteur de tuple et l’état passe à **compressé**.  Le moteur de tuple est un processus en arrière-plan qui se réveille régulièrement et vérifie s'il existe des rowgroups fermés prêts à être compressés dans un rowgroup columnstore.  Le moteur de tuple libère également les rowgroups dans lesquels chaque ligne a été supprimée. Les RowGroups désalloués sont marqués comme **Tombstone**. Pour exécuter immédiatement le moteur de tuple, utilisez l’option **REorganize** de l’instruction **ALTER index** .  
   
  Lorsqu'un groupe de lignes columnstore est rempli, il est compressé, et cesse de recevoir de nouvelles lignes. Lorsque vous supprimez des lignes d'un groupe compressé, elles sont conservées mais sont marquées comme étant supprimées. Les mises à jour dans un groupe compressé sont implémentées comme une suppression du groupe compressé, et une insertion dans un groupe ouvert.  
   

@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sys.syslogins compatibility view
 - syslogins system table
 ms.assetid: 4cb34f17-a4bb-469f-a218-71f074e6308f
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 3464788f8aee81d5bc03b43c5fd2963868029af5
-ms.sourcegitcommit: 32135463a8494d9ed1600a58f51819359e3c09dc
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: acf9e8ff2592927c8107b1b6bacd02a6de9d3a48
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91834008"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094148"
 ---
 # <a name="syssyslogins-transact-sql"></a>sys.syslogins (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "91834008"
 |**sid**|**varbinary(85)**|Identificateur de sécurité.|  
 |**statut**|**smallint**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
 |**création**|**datetime**|Date d'ajout de la connexion.|  
-|**updateDate**|**datetime**|Date de mise à jour de la connexion.|  
+|**updatedate**|**datetime**|Date de mise à jour de la connexion.|  
 |**accdate**|**datetime**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
 |**totcpu**|**int**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
 |**totio**|**int**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  

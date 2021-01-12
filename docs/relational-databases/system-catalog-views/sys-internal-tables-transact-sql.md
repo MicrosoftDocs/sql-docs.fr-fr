@@ -1,6 +1,6 @@
 ---
 description: sys.internal_tables (Transact-SQL)
-title: sys. internal_tables (Transact-SQL) | Microsoft Docs
+title: sys.internal_tables (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2019
 ms.prod: sql
@@ -19,14 +19,14 @@ helpviewer_keywords:
 - internal tables
 - sys.internal_tables catalog view
 ms.assetid: a5821c70-f150-4676-8476-3a31f7403dca
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: c46f6a7f66ff9dfba0ebf9a7b4dfe4e39eef7033
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: ecc601c3eec509258cdac61a9c9216077f36f712
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548727"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094510"
 ---
 # <a name="sysinternal_tables-transact-sql"></a>sys.internal_tables (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -41,8 +41,8 @@ ms.locfileid: "89548727"
 |**\<Columns inherited from sys.objects>**||Pour obtenir la liste des colonnes héritées par cette vue, consultez [sys. objects &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-objects-transact-sql.md).|  
 |**internal_type**|**tinyint**|Type de la table interne :<br /><br /> 3 = **query_disk_store_query_hints**<br /><br /> 4 = **query_disk_store_query_template_parameterization**<br /><br /> 6 = **query_disk_store_wait_stats**<br /><br /> 201 = **queue_messages**<br /><br /> 202 = **xml_index_nodes**<br /><br /> 203 = **fulltext_catalog_freelist**<br /><br /> 205 = **query_notification**<br /><br /> 206 = **service_broker_map**<br /><br /> 207 = **extended_indexes** (par exemple, un index spatial)<br /><br /> 208 = **filestream_tombstone**<br /><br /> 209 = **CHANGE_TRACKING**<br /><br /> 210 = **tracked_committed_transactions**<br /><br /> 220 = **contained_features**<br /><br /> 225 = **filetable_updates**<br /><br /> 236 = **selective_xml_index_node_table**<br /><br /> 240 = **query_disk_store_query_text**<br /><br /> 241 = **query_disk_store_query**<br /><br /> 242 = **query_disk_store_plan**<br /><br /> 243 = **query_disk_store_runtime_stats**<br /><br /> 244 = **query_disk_store_runtime_stats_interval**<br /><br /> 245 = **query_context_settings**|  
 |**internal_type_desc**|**nvarchar(60)**|Description du type de table interne :<br /><br /> QUERY_DISK_STORE_QUERY_HINTS<br /><br /> QUERY_DISK_STORE_QUERY_TEMPLATE_PARAMETERIZATION<br /><br /> QUERY_DISK_STORE_WAIT_STATS<br /><br /> QUEUE_MESSAGES<br /><br /> XML_INDEX_NODES<br /><br /> FULLTEXT_CATALOG_FREELIST<br /><br /> FULLTEXT_CATALOG_MAP<br /><br /> QUERY_NOTIFICATION<br /><br /> SERVICE_BROKER_MAP<br /><br /> EXTENDED_INDEXES<br /><br /> FILESTREAM_TOMBSTONE<br /><br /> CHANGE_TRACKING<br /><br /> TRACKED_COMMITTED_TRANSACTIONS<br /><br /> CONTAINED_FEATURES<br /><br /> FILETABLE_UPDATES<br /><br /> SELECTIVE_XML_INDEX_NODE_TABLE<br /><br /> QUERY_DISK_STORE_QUERY_TEXT<br /><br /> QUERY_DISK_STORE_QUERY<br /><br /> QUERY_DISK_STORE_PLAN<br /><br /> QUERY_DISK_STORE_RUNTIME_STATS<br /><br /> QUERY_DISK_STORE_RUNTIME_STATS_INTERVAL<br /><br /> QUERY_CONTEXT_SETTINGS|  
-|**parent_id**|**int**|ID du parent, qu'il soit ou non de portée de schéma. En l'absence de parent, a pour valeur 0.<br /><br /> **queue_messages**  =  **object_id** de la file d’attente<br /><br /> **xml_index_nodes**  =  **object_id** de l’index XML<br /><br /> **fulltext_catalog_freelist**  =  **fulltext_catalog_id** du catalogue de texte intégral<br /><br /> **fulltext_index_map**  =  **object_id** de l’index de recherche en texte intégral<br /><br /> **query_notification**ou **service_broker_map** = 0<br /><br /> **extended_indexes**  =  **object_id** d’un index étendu, tel qu’un index spatial<br /><br /> **object_id** de la table pour laquelle le suivi de table est activé = **CHANGE_TRACKING**|  
-|**parent_minor_id**|**int**|ID mineur du parent.<br /><br /> **xml_index_nodes**  =  **index_id** de l’index XML<br /><br /> **extended_indexes**  =  **index_id** d’un index étendu, tel qu’un index spatial<br /><br /> 0 = **queue_messages**, **fulltext_catalog_freelist**, **fulltext_index_map**, **query_notification**, **service_broker_map**ou **CHANGE_TRACKING**|  
+|**parent_id**|**int**|ID du parent, qu'il soit ou non de portée de schéma. En l'absence de parent, a pour valeur 0.<br /><br /> **queue_messages**  =  **object_id** de la file d’attente<br /><br /> **xml_index_nodes**  =  **object_id** de l’index XML<br /><br /> **fulltext_catalog_freelist**  =  **fulltext_catalog_id** du catalogue de texte intégral<br /><br /> **fulltext_index_map**  =  **object_id** de l’index de recherche en texte intégral<br /><br /> **query_notification** ou **service_broker_map** = 0<br /><br /> **extended_indexes**  =  **object_id** d’un index étendu, tel qu’un index spatial<br /><br /> **object_id** de la table pour laquelle le suivi de table est activé = **CHANGE_TRACKING**|  
+|**parent_minor_id**|**int**|ID mineur du parent.<br /><br /> **xml_index_nodes**  =  **index_id** de l’index XML<br /><br /> **extended_indexes**  =  **index_id** d’un index étendu, tel qu’un index spatial<br /><br /> 0 = **queue_messages**, **fulltext_catalog_freelist**, **fulltext_index_map**, **query_notification**, **service_broker_map** ou **CHANGE_TRACKING**|  
 |**lob_data_space_id**|**int**|Une valeur différente de zéro représente l'ID d'espace de données (groupe de fichiers ou schéma de partition) qui contient les données LOB de cette table.|  
 |**filestream_data_space_id**|**int**|Réservé à un usage ultérieur.|  
   

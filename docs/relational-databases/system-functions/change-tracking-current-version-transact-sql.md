@@ -17,15 +17,15 @@ helpviewer_keywords:
 - change tracking [SQL Server], CHANGE_TRACKING_CURRENT_VERSION
 - CHANGE_TRACKING_CURRENT_VERSION
 ms.assetid: 3027c4f7-6b4d-4089-a369-5926e8a8da1c
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 874cf3c72400cc4885ec2515e005bb01ea42d473
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 23dfe50fa73e0221ba272070675fa1905e85a118
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440630"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095048"
 ---
 # <a name="change_tracking_current_version-transact-sql"></a>CHANGE_TRACKING_CURRENT_VERSION (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

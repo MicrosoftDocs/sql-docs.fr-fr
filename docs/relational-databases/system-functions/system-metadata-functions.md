@@ -11,14 +11,14 @@ ms.topic: language-reference
 dev_langs:
 - TSQL
 ms.assetid: a6fb85b2-b010-4ca9-b65f-4402917076ea
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 999d82dfa2ce6cd4a91949ddd60c90cf306ab338
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 05c4fca131d0ee44f772f8cdae0a6f97374f2e24
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88427721"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096308"
 ---
 # <a name="system-metadata-functions"></a>Fonctions de métadonnées système
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

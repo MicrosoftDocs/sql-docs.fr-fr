@@ -1,6 +1,6 @@
 ---
 description: cdc.fn_cdc_get_all_changes_&lt;capture_instance&gt;  (Transact-SQL)
-title: CDC. fn_cdc_get_all_changes_ &lt; capture_instance &gt;  (Transact-SQL) | Microsoft Docs
+title: cdc.fn_cdc_get_all_changes_ &lt; capture_instance &gt;  (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: sql
@@ -15,21 +15,21 @@ helpviewer_keywords:
 - change data capture [SQL Server], querying metadata
 - cdc.fn_cdc_get_all_changes_<capture_instance>
 ms.assetid: c6bad147-1449-4e20-a42e-b51aed76963c
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: aa461859dcc7d2adc359139e4740ea9272161bf8
-ms.sourcegitcommit: c74bb5944994e34b102615b592fdaabe54713047
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 8bb04e74ab2dd613173bf194fe4ca5412d79ac7e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90989939"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095029"
 ---
 # <a name="cdcfn_cdc_get_all_changes_ltcapture_instancegt--transact-sql"></a>cdc.fn_cdc_get_all_changes_&lt;capture_instance&gt;  (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne une ligne pour chaque modification appliquée à la table source dans la plage spécifiée de numéros séquentiels dans le journal. Si une ligne source est modifiée à plusieurs reprises pendant l'intervalle, chaque modification est représentée dans le jeu de résultats retourné. En plus de retourner les données de modification, quatre colonnes de métadonnées fournissent les informations nécessaires pour appliquer les modifications à une autre source de données. Les options de filtrage de lignes régissent le contenu des colonnes de métadonnées aussi bien que les lignes retournées dans le jeu de résultats. Lorsque l'option de filtrage de lignes 'all' est spécifiée, chaque modification a exactement une ligne pour identifier la modification. Lorsque l'option 'all update old' est spécifiée, les opérations de mise à jour sont représentées sous la forme de deux lignes : une qui contient les valeurs des colonnes capturées avant la mise à jour et une autre qui contient les valeurs des colonnes capturées après la mise à jour.  
   
- Cette fonction d'énumération est créée lorsqu'une table source est activée pour la capture des données modifiées. Le nom de fonction est dérivé et utilise le format **CDC. fn_cdc_get_all_changes_**_capture_instance_ où *capture_instance* est la valeur spécifiée pour l’instance de capture lorsque la table source est activée pour la capture de données modifiées.  
+ Cette fonction d'énumération est créée lorsqu'une table source est activée pour la capture des données modifiées. Le nom de fonction est dérivé et utilise le format **cdc.fn_cdc_get_all_changes_**_capture_instance_ où *capture_instance* est la valeur spécifiée pour l’instance de capture lorsque la table source est activée pour la capture de données modifiées.  
   
  ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -83,7 +83,7 @@ cdc.fn_cdc_get_all_changes_capture_instance ( from_lsn , to_lsn , '<row_filter_o
 ## <a name="remarks"></a>Notes  
  Si la plage de numéros séquentiels dans le journal spécifiée n'est pas située dans la chronologie de suivi des modifications pour l'instance de capture, la fonction retourne l'erreur 208 (« Un nombre insuffisant d'arguments a été fourni pour la procédure ou fonction cdc.fn_cdc_get_all_changes. »).  
   
- Les colonnes de type de données **image**, **Text**et **ntext** reçoivent toujours une valeur NULL lorsque **_ _ $ Operation** = 1 ou **_ _ $ Operation** = 3. Une valeur NULL est assignée aux colonnes de type de données **varbinary (max)**, **varchar (max)** ou **nvarchar (max)** quand **_ _ $ Operation** = 3, sauf si la colonne a été modifiée au cours de la mise à jour. Lorsque **_ _ $ Operation** = 1, ces colonnes sont affectées de leur valeur au moment de la suppression. Les colonnes calculées incluses dans une instance de capture ont toujours une valeur NULL.  
+ Les colonnes de type de données **image**, **Text** et **ntext** reçoivent toujours une valeur NULL lorsque **_ _ $ Operation** = 1 ou **_ _ $ Operation** = 3. Une valeur NULL est assignée aux colonnes de type de données **varbinary (max)**, **varchar (max)** ou **nvarchar (max)** quand **_ _ $ Operation** = 3, sauf si la colonne a été modifiée au cours de la mise à jour. Lorsque **_ _ $ Operation** = 1, ces colonnes sont affectées de leur valeur au moment de la suppression. Les colonnes calculées incluses dans une instance de capture ont toujours une valeur NULL.  
   
 ## <a name="examples"></a>Exemples  
  Plusieurs [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] modèles qui montrent comment utiliser les fonctions de requête de capture de données modifiées sont disponibles. Ces modèles sont disponibles dans le menu **affichage** de [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] . Pour plus d’informations, consultez [Explorateur de modèles](../../ssms/template/template-explorer.md).  
@@ -106,11 +106,11 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [CDC. fn_cdc_get_net_changes_&#60;capture_instance&#62; &#40;Transact-SQL&#41;](../../relational-databases/system-functions/cdc-fn-cdc-get-net-changes-capture-instance-transact-sql.md)   
- [sys. fn_cdc_map_time_to_lsn &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-cdc-map-time-to-lsn-transact-sql.md)   
- [sys. sp_cdc_get_ddl_history &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-get-ddl-history-transact-sql.md)   
- [sys. sp_cdc_get_captured_columns &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-get-captured-columns-transact-sql.md)   
- [sys. sp_cdc_help_change_data_capture &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-help-change-data-capture-transact-sql.md)   
+ [cdc.fn_cdc_get_net_changes_&#60;capture_instance&#62; &#40;Transact-SQL&#41;](../../relational-databases/system-functions/cdc-fn-cdc-get-net-changes-capture-instance-transact-sql.md)   
+ [sys.fn_cdc_map_time_to_lsn &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-cdc-map-time-to-lsn-transact-sql.md)   
+ [sys.sp_cdc_get_ddl_history &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-get-ddl-history-transact-sql.md)   
+ [sys.sp_cdc_get_captured_columns &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-get-captured-columns-transact-sql.md)   
+ [sys.sp_cdc_help_change_data_capture &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-help-change-data-capture-transact-sql.md)   
  [À propos de la capture de données modifiées &#40;SQL Server&#41;](../../relational-databases/track-changes/about-change-data-capture-sql-server.md)  
   
   

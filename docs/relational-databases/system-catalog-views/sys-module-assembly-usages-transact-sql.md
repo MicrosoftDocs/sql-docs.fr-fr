@@ -1,6 +1,6 @@
 ---
 description: sys.module_assembly_usages (Transact-SQL)
-title: sys. module_assembly_usages (Transact-SQL) | Microsoft Docs
+title: sys.module_assembly_usages (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/15/2017
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.module_assembly_usages catalog view
 ms.assetid: b0f9ffab-6ac7-49d5-8369-477fa6b1c02b
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: a69f3d46502dbc116b15b56ebfa8b8074ef58ae8
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: cb321d2882de1bcf059eb44db5a800df3ba5f8c0
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89537338"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095498"
 ---
 # <a name="sysmodule_assembly_usages-transact-sql"></a>sys.module_assembly_usages (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

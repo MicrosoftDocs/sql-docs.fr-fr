@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sys.sysprocesses compatibility view
 - sysprocesses system table
 ms.assetid: 60a36d36-54b3-4bd6-9cac-702205a21b16
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 89e9bf9ab596e24148851f68ffa30515079fb51f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: d8272d6759508697512506bcab8df81d65b90b83
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88482072"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095382"
 ---
 # <a name="syssysprocesses-transact-sql"></a>sys.sysprocesses (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "88482072"
 |last_batch|**datetime**|Dernière exécution par un processus client d'un appel de procédure stockée distante ou d'une instruction EXECUTE.|  
 |ecid|**smallint**|ID du contexte d'exécution utilisé pour identifier de façon unique les sous-threads exécutés pour le compte d'un seul et même processus.|  
 |open_tran|**smallint**|Nombre de transactions en cours pour le processus.|  
-|status|**nchar(30)**|État de l'ID processus. Les valeurs possibles sont les suivantes :<br /><br /> **dormant**  =  dormant [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] réinitialisation de la session.<br /><br /> **Running** = la session exécute un ou plusieurs lots. Lorsque la fonctionnalité MARS (Multiple Active Result Sets) est activée, une session peut exécuter plusieurs traitements. Pour plus d’informations, consultez [Utilisation de MARS &#40;Multiple Active Result Sets&#41;](../../relational-databases/native-client/features/using-multiple-active-result-sets-mars.md).<br /><br /> **Background** = la session exécute une tâche en arrière-plan, telle qu’une détection de blocage.<br /><br /> **Rollback** = la session a une restauration de transaction en cours.<br /><br /> **Pending** = la session attend qu’un thread de travail soit disponible.<br /><br /> **Runnable** = la tâche de la session est dans la file d’attente exécutable d’un planificateur en attendant d’obtenir un quantum de temps.<br /><br /> **Spinloop** = la tâche de la session attend qu’un SpinLock soit libéré.<br /><br /> **Suspended** = la session attend la fin d’un événement, tel que des e/s.|  
+|status|**nchar(30)**|État de l'ID processus. Les valeurs possibles sont les suivantes :<br /><br />   =  dormant [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] réinitialisation de la session.<br /><br /> **Running** = la session exécute un ou plusieurs lots. Lorsque la fonctionnalité MARS (Multiple Active Result Sets) est activée, une session peut exécuter plusieurs traitements. Pour plus d’informations, consultez [Utilisation de MARS &#40;Multiple Active Result Sets&#41;](../../relational-databases/native-client/features/using-multiple-active-result-sets-mars.md).<br /><br /> **Background** = la session exécute une tâche en arrière-plan, telle qu’une détection de blocage.<br /><br /> **Rollback** = la session a une restauration de transaction en cours.<br /><br /> **Pending** = la session attend qu’un thread de travail soit disponible.<br /><br /> **Runnable** = la tâche de la session est dans la file d’attente exécutable d’un planificateur en attendant d’obtenir un quantum de temps.<br /><br /> **Spinloop** = la tâche de la session attend qu’un SpinLock soit libéré.<br /><br /> **Suspended** = la session attend la fin d’un événement, tel que des e/s.|  
 |sid|**binary(86)**|GUID (Globally Unique Identifier) de l'utilisateur.|  
 |hostname|**nchar(128)**|Nom de la station de travail.|  
 |program_name|**nchar(128)**|Nom du logiciel d'application.|  

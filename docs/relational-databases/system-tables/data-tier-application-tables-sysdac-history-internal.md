@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - sysdac_history_internal
 ms.assetid: 774a1678-0b27-42be-8adc-a6d7a4a56510
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 7f89db526d638a6e934e8db7ac791875b467e487
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: eaea0060136a928e6fab1184c9fd0c08d88df09f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89544635"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094891"
 ---
 # <a name="data-tier-application-tables---sysdac_history_internal"></a>Tables d’applications de la couche Données - sysdac_history_internal
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -57,9 +57,9 @@ ms.locfileid: "89544635"
   
 | action_id | sequence_id | action_type_name | dac_object_type_name |
 | --------- | ----------- | ---------------- | -------------------- |
-|12|0|create|dacpac|  
-|12|1|create|login|  
-|12|2|create|database|  
+|12|0|créer|dacpac|  
+|12|1|créer|login|  
+|12|2|créer|database|  
 |12|3|renommer|database|  
   
  Les opérations DAC, telles que Delete, ne suppriment pas les lignes de **sysdac_history_internal**. Vous pouvez utiliser la requête suivante pour supprimer manuellement les lignes de DAC qui ne sont plus déployées sur une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] :  

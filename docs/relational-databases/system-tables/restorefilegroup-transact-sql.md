@@ -17,14 +17,14 @@ helpviewer_keywords:
 - filegroups [SQL Server], restorefilegroup system table
 - restorefilegroup system table
 ms.assetid: 3aa15c55-6b72-4f76-97d7-bd88391d105c
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 52d1fb66f32d17521343c979493766f2d1ff086a
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: b4be126afb404fcff25dfa5ce036a70189d7b640
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89545322"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096169"
 ---
 # <a name="restorefilegroup-transact-sql"></a>restorefilegroup (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

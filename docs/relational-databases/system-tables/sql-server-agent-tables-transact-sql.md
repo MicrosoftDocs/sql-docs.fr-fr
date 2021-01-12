@@ -14,14 +14,14 @@ helpviewer_keywords:
 - SQL Server Agent, system tables
 - system tables [SQL Server], SQL Server Agent
 ms.assetid: 6cb39bfd-079e-4be4-9c42-2fa234c65ce1
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: b6fe3bef09926e430ef05121b202934f0b66d5a6
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 3cf53dd13bd94c9632c4f3c2464bda38d50e3742
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89544437"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096143"
 ---
 # <a name="sql-server-agent-tables-transact-sql"></a>Tables Agent SQL Server (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

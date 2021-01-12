@@ -17,15 +17,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_cluster_endpoints dynamic management view
 ms.assetid: ''
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-2017'
-ms.openlocfilehash: 93ffc0861302b5ffbae6d8383f852480d1b80f3f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9f9d78015c5413c7e0ec4e827240e7465969d189
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478960"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095249"
 ---
 # <a name="sysdm_cluster_endpoints-transact-sql"></a>sys.dm_cluster_endpoints (Transact-SQL)
 [!INCLUDE[sqlserver2019](../../includes/applies-to-version/sqlserver2019.md)]

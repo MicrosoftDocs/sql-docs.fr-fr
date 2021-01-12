@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.xml_schema_attributes catalog view
 ms.assetid: dd0c98aa-5e72-4df6-96d9-482786c8dbb1
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: a64481a5e3ab55a489d173dfd88f295a09aa9dfd
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: cedfdf992f1dbec8eeff1ff7fa74a489b179d943
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546706"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095405"
 ---
 # <a name="sysxml_schema_attributes-transact-sql"></a>sys.xml_schema_attributes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

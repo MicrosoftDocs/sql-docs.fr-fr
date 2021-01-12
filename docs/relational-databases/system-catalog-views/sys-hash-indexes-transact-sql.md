@@ -1,6 +1,6 @@
 ---
 description: sys.hash_indexes (Transact-SQL)
-title: sys. hash_indexes (Transact-SQL) | Microsoft Docs
+title: sys.hash_indexes (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,21 +18,21 @@ dev_langs:
 helpviewer_keywords:
 - sys.hash_indexes catalog view
 ms.assetid: d9e230fb-d3ff-486f-86ef-44898f0a703e
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 64008b6fe537c611c0c7204692dbef9461b79b8b
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: b422523074806b6cac30fc56859006561fc0c828
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89539628"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095527"
 ---
 # <a name="syshash_indexes-transact-sql"></a>sys.hash_indexes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Indique les index de hachage actuels et leurs propriétés. Les index de hachage sont pris en charge uniquement sur [l’OLTP en mémoire &#40;&#41;d’optimisation en mémoire ](../../relational-databases/in-memory-oltp/in-memory-oltp-in-memory-optimization.md).  
+  Indique les index de hachage actuels et leurs propriétés. Les index de hachage sont pris en charge uniquement sur [l’OLTP en mémoire &#40;In-Memory optimisation&#41;](../../relational-databases/in-memory-oltp/in-memory-oltp-in-memory-optimization.md).  
   
- La vue sys. hash_indexes contient les mêmes colonnes que la vue sys. indexes et une colonne supplémentaire nommée **bucket_count**. Pour plus d’informations sur les autres colonnes de la vue sys. hash_indexes, consultez [sys. indexes &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-indexes-transact-sql.md).  
+ La vue sys.hash_indexes contient les mêmes colonnes que la vue sys. indexes et une colonne supplémentaire nommée **bucket_count**. Pour plus d’informations sur les autres colonnes de la vue sys.hash_indexes, consultez [sys. indexes &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-indexes-transact-sql.md).  
   
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  

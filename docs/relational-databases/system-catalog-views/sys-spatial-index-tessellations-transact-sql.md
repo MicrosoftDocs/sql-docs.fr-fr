@@ -1,6 +1,6 @@
 ---
 description: sys.spatial_index_tessellations (Transact-SQL)
-title: sys. spatial_index_tessellations (Transact-SQL) | Microsoft Docs
+title: sys.spatial_index_tessellations (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.spatial_index_tessellations catalog view
 ms.assetid: 8b17a9a4-b57f-4220-8138-fc73581b1670
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 783c73ba514e348cd515929ae988c4097225ec5b
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: ddf7b9cd75999da6cc48f6e7a83bab7a733f822b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89539489"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095415"
 ---
 # <a name="sysspatial_index_tessellations-transact-sql"></a>sys.spatial_index_tessellations (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "89539489"
 
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
-|object_id|**int**|ID de l'objet sur lequel l'index est défini. Chaque paire (object_id, index_id) a une entrée correspondante dans [sys. spatial_indexes](../../relational-databases/system-catalog-views/sys-spatial-indexes-transact-sql.md).|  
+|object_id|**int**|ID de l'objet sur lequel l'index est défini. Chaque paire (object_id, index_id) a une entrée correspondante dans [sys.spatial_indexes](../../relational-databases/system-catalog-views/sys-spatial-indexes-transact-sql.md).|  
 |index_id|**int**|ID de l'index spatial où la colonne indexée est définie.|  
 |tessellation_scheme|**sysname**|Nom du schéma de pavage, l’un des éléments suivants : GEOMETRY_GRID, GEOGRAPHY_GRID|  
 |bounding_box_xmin|**float(53)**|Coordonnée x de l’angle inférieur gauche du cadre englobant, l’une des valeurs suivantes : NULL = non applicable pour un schéma de pavage donné (par exemple GEOGRAPHY_GRID) *n* = Si tessellation_scheme est GEOMETRY_GRID, la valeur de la coordonnée x-min.                     **Remarque :** Les coordonnées définies par les paramètres du cadre englobant sont interprétées pour chaque objet en fonction de son [identificateur de référence spatiale (SRID)](../../relational-databases/spatial/spatial-reference-identifiers-srids.md).|  

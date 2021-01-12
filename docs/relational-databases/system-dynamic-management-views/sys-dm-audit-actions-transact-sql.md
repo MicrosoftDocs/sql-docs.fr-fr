@@ -1,6 +1,6 @@
 ---
 description: sys.dm_audit_actions (Transact-SQL)
-title: sys. dm_audit_actions (Transact-SQL) | Microsoft Docs
+title: sys.dm_audit_actions (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -17,14 +17,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_audit_actions dynamic management view
 ms.assetid: b987c2b9-998a-4a5f-a82d-280dc6963cbe
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 897d83dcf6c85606ac513d9075cca9ebc316a6cf
-ms.sourcegitcommit: 27f95e50f11a98164e9e7a5130a3e00ac06b4cea
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 7f880fa229e64990b729d193c6e39bfb05523788
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/28/2020
-ms.locfileid: "91412810"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095296"
 ---
 # <a name="sysdm_audit_actions-transact-sql"></a>sys.dm_audit_actions (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

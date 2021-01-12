@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.events catalog view
 ms.assetid: f245a97a-80fc-43fb-a6e4-139420c9a47a
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 3383217a22167b5255f748792952949396138fe4
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 7a37d4fea0cd3718a825ad3ea10d8ce3e9687e74
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97413050"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095569"
 ---
 # <a name="sysevents-transact-sql"></a>sys.events (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

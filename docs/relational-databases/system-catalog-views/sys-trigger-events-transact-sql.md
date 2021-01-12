@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.trigger_events catalog view
 ms.assetid: 92540447-131c-491c-b033-c064c7d950e1
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 18f9453079f7a11da4c1d073cda4dd750a3c91c1
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 2caa1b4e7c140228dd870250ad1cd55f83fc3483
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482870"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094340"
 ---
 # <a name="systrigger_events-transact-sql"></a>sys.trigger_events (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

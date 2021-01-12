@@ -19,15 +19,15 @@ helpviewer_keywords:
 - sys.query_store_runtime_stats_interval catalog view
 - query_store_runtime_stats_interval catalog view
 ms.assetid: 2be83785-0569-41a3-88c8-59bfa0932e6e
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 49c45098a319a3a9577fe5911ac1f5f0accc6990
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b043219b8b425130440958e1ff076b8f36cd37f6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97404305"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095436"
 ---
 # <a name="sysquery_store_runtime_stats_interval-transact-sql"></a>sys.query_store_runtime_stats_interval (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa.md)]

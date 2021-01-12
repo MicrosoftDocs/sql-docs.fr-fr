@@ -19,15 +19,15 @@ helpviewer_keywords:
 - sys.dm_db_index_physical_stats dynamic management function
 - fragmentation [SQL Server]
 ms.assetid: d294dd8e-82d5-4628-aa2d-e57702230613
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 1e4d175fe42497d2a75c23d3ae49d60821952ccf
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 603ad99e126f1175cce21a48933362e4ad6d7aaa
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97458480"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094163"
 ---
 # <a name="sysdm_db_index_physical_stats-transact-sql"></a>sys.dm_db_index_physical_stats (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -121,7 +121,7 @@ sys.dm_db_index_physical_stats (
 |offrow_regular_version_record_count|**bigint**|Nombre d’enregistrements de version conservés en dehors de la ligne de données d’origine. <br /><br /> [!INCLUDE[SQL2019](../../includes/applies-to-version/sqlserver2019.md)], [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]|  
 |offrow_long_term_version_record_count|**bigint**|Nombre d’enregistrements de version considérés à long terme. <br /><br /> [!INCLUDE[SQL2019](../../includes/applies-to-version/sqlserver2019.md)], [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] |  
 
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  La fonction de gestion dynamique sys.dm_db_index_physical_stats remplace l'instruction DBCC SHOWCONTIG.  
   
 ## <a name="scanning-modes"></a>Modes d'analyse  

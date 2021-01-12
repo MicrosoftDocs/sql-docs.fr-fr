@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_db_index_operational_stats dynamic management function
 ms.assetid: 13adf2e5-2150-40a6-b346-e74a33ce29c6
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: b1f177d09dd741eadc967a2b32a87a905e04dfb6
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a6eb4083361d07fee44557d20dd4be4625cbdb12
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475070"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095169"
 ---
 # <a name="sysdm_db_index_operational_stats-transact-sql"></a>sys.dm_db_index_operational_stats (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -133,7 +133,7 @@ sys.dm_db_index_operational_stats (
 |**page_compression_attempt_count**|**bigint**|Nombre de pages évaluées pour la compression de niveau PAGE pour des partitions spécifiques d'une table, d'un index ou d'une vue indexée. Inclut des pages qui n'ont pas été compressées car des économies significatives n'ont pas pu être obtenues. Toujours 0 pour un index columnstore.|    
 |**page_compression_success_count**|**bigint**|Nombre de pages de données compressées à l'aide de la compression PAGE pour des partitions spécifiques d'une table, d'un index ou d'une vue indexée. Toujours 0 pour un index columnstore.|    
     
-## <a name="remarks"></a>Remarks    
+## <a name="remarks"></a>Notes    
  Cet objet de gestion dynamique n’accepte pas les paramètres corrélés de `CROSS APPLY` et `OUTER APPLY` .    
     
  Vous pouvez utiliser **sys.dm_db_index_operational_stats** pour effectuer le suivi du temps d'attente des utilisateurs lors des opérations de lecture ou d'écriture dans une table, un index ou une partition ; cette fonction permet également d'identifier les tables ou les index qui connaissent une activité d'E/S importante ou des points sensibles.    

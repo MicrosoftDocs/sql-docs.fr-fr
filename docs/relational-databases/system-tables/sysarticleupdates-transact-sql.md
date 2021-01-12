@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - sysarticleupdates system table
 ms.assetid: 11a53bcd-a215-4d0b-9db8-233981d3ef5d
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 9ca984460c74628f919e16c77c3a3a97fa732b52
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: a54ffa1056efb88336a776cf2a243c4e495a2d8d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89518098"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096080"
 ---
 # <a name="sysarticleupdates-transact-sql"></a>sysarticleupdates (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

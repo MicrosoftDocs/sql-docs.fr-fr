@@ -1,6 +1,6 @@
 ---
 description: sys.column_store_segments (Transact-SQL)
-title: sys. column_store_segments (Transact-SQL) | Microsoft Docs
+title: sys.column_store_segments (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 09/24/2020
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.column_store_segments catalog view
 ms.assetid: 1253448c-2ec9-4900-ae9f-461d6b51b2ea
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 3957a13e4d3e7f5eff32b0417e65d33a573e5510
-ms.sourcegitcommit: 63aef5a96905f0b026322abc9ccb862ee497eebe
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 189a5cca5cfac0cce6437ccc256d461140f3c40b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91364176"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095604"
 ---
 # <a name="syscolumn_store_segments-transact-sql"></a>sys.column_store_segments (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]
@@ -81,8 +81,8 @@ GO
  [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)   
  [Interrogation du SQL Server FAQ du catalogue système](../../relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.md)   
  [sys.columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-columns-transact-sql.md)   
- [sys. all_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-all-columns-transact-sql.md)   
- [sys. computed_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-computed-columns-transact-sql.md)   
+ [sys.all_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-all-columns-transact-sql.md)   
+ [sys.computed_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-computed-columns-transact-sql.md)   
  [Guide des index columnstore](~/relational-databases/indexes/columnstore-indexes-overview.md)    
  [sys.column_store_dictionaries &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-column-store-dictionaries-transact-sql.md)  
   

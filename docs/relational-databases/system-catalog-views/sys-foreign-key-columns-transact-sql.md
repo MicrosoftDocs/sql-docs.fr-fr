@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.foreign_key_columns catalog view
 ms.assetid: 7247f065-5441-4bcf-9f25-c84a03290dc6
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 6cc20df728d29a92f003ab16436b79d9e9b5c0fd
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 60c8b632be18b81758dd458923a7b38c83297e07
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477440"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094591"
 ---
 # <a name="sysforeign_key_columns-transact-sql"></a>sys.foreign_key_columns (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

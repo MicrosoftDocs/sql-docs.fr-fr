@@ -1,6 +1,6 @@
 ---
 description: sys.fn_net_changes_&lt;capture_instance&gt; (Transact-SQL)
-title: sys. fn_net_changes_ &lt; capture_instance &gt; (Transact-SQL) | Microsoft Docs
+title: sys.fn_net_changes_ &lt; capture_instance &gt; (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: sql
@@ -19,21 +19,21 @@ helpviewer_keywords:
 - fn_net_changes_<capture_instance>
 - sys.fn_net_changes_<capture_instance>
 ms.assetid: 342fa030-9fd9-4b74-ae4d-49f6038a5073
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 59d8214083046510d9c4d71724d1aab1c96b1e1d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: eb0c58b3544afd5fa529db0c95af7c2f6ba3e6d3
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88427761"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096343"
 ---
 # <a name="sysfn_net_changes_ltcapture_instancegt-transact-sql"></a>sys.fn_net_changes_&lt;capture_instance&gt; (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Les wrappers pour les fonctions de requête des **modifications nettes** . Les scripts requis pour créer ces fonctions sont générés par la procédure stockée sys.sp_cdc_generate_wrapper_function.  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -60,7 +60,7 @@ fn_net_changes_<capture_instance> ('start_time', 'end_time', '<row_filter_option
  *heure-fin*  
  Valeur **DateTime** qui représente le point de terminaison supérieur de la plage des entrées de table de modifications à inclure dans le jeu de résultats.  
   
- Ce paramètre peut prendre l’une des deux significations, selon la valeur choisie pour @closed_high_end_point lorsque sys. sp_cdc_generate_wrapper_function est appelé pour générer le script pour créer la fonction wrapper :  
+ Ce paramètre peut prendre l’une des deux significations, selon la valeur choisie pour @closed_high_end_point lorsque sys.sp_cdc_generate_wrapper_function est appelé pour générer le script pour créer la fonction wrapper :  
   
 -   @closed_high_end_point = 1  
   
@@ -96,12 +96,12 @@ fn_net_changes_<capture_instance> ('start_time', 'end_time', '<row_filter_option
   
 |Nom de la colonne|Type de colonne|Description|  
 |-----------------|-----------------|-----------------|  
-|\<columns from @column_list>|**varie**|Colonnes identifiées dans l’argument **column_list** de la sp_cdc_generate_wrapper_function quand elle est appelée pour générer le script pour créer le wrapper. Si *column_list* a la valeur null, toutes les colonnes sources suivies s’affichent dans le jeu de résultats.|  
+|\<columns from @column_list>|**diffère**|Colonnes identifiées dans l’argument **column_list** de la sp_cdc_generate_wrapper_function quand elle est appelée pour générer le script pour créer le wrapper. Si *column_list* a la valeur null, toutes les colonnes sources suivies s’affichent dans le jeu de résultats.|  
 |__CDC_OPERATION|**nvarchar (2)**|Code d'opération qui indique quelle opération est requise pour appliquer la ligne à l'environnement cible. L’opération varie en fonction de la valeur de l’argument *row_filter_option* fourni dans l’appel suivant :<br /><br /> *row_filter_option* = « All », « all with mask »<br /><br /> 'D' - opération de suppression<br /><br /> 'I' - opération d'insertion<br /><br /> 'UN' - opération de mise à jour<br /><br /> *row_filter_option* = 'all with Merge'<br /><br /> 'D' - opération de suppression<br /><br /> 'M' – opération d'insertion ou de mise à jour|  
 |\<columns from @update_flag_list>|**bit**|Indicateur de bit nommé en ajoutant _uflag au nom de colonne. L’indicateur prend une valeur non NULL uniquement lorsque *row_filter_option* **= « all with mask »** et \_ _CDC_OPERATION **= « un »**. Il est défini à 1 si la colonne correspondante a été modifiée dans la fenêtre de requête. Sinon, il prend la valeur 0.|  
   
 ## <a name="remarks"></a>Notes  
- La fonction fn_net_changes_<capture_instance> sert de wrapper pour la fonction de requête de capture de données modifiées. fn_cdc_get_net_changes_<capture_instance>. La procédure stockée sys. sp_cdc_generate_wrapper est utilisée pour créer le script du wrapper.  
+ La fonction fn_net_changes_<capture_instance> sert de wrapper pour la fonction de requête cdc.fn_cdc_get_net_changes_<capture_instance>. La procédure stockée sys.sp_cdc_generate_wrapper est utilisée pour créer le script du wrapper.  
   
  Les fonctions wrapper ne sont pas créées automatiquement. Vous devez effectuer deux opérations pour créer des fonctions wrapper :  
   
@@ -120,7 +120,7 @@ fn_net_changes_<capture_instance> ('start_time', 'end_time', '<row_filter_option
  Le modèle de configuration de capture de données modifiées « instanciation CDC Wrapper TVF pour le schéma » montre comment utiliser la procédure stockée sp_cdc_generate_wrapper_function pour obtenir des scripts de création pour toutes les fonctions wrapper pour les fonctions de requête définies d’un schéma. Le modèle crée ensuite ces scripts. Pour plus d’informations sur les modèles, consultez [Explorateur](../../ssms/template/template-explorer.md)de modèles.  
   
 ## <a name="see-also"></a>Voir aussi  
- [sys. sp_cdc_generate_wrapper_function &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-generate-wrapper-function-transact-sql.md)   
+ [sys.sp_cdc_generate_wrapper_function &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-generate-wrapper-function-transact-sql.md)   
  [cdc.fn_cdc_get_net_changes_&#60;capture_instance&#62; &#40;Transact-SQL&#41;](../../relational-databases/system-functions/cdc-fn-cdc-get-net-changes-capture-instance-transact-sql.md)  
   
   

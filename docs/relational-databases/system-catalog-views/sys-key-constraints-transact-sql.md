@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.key_constraints catalog view
 ms.assetid: 0f782d2f-7126-46ab-85b7-bcba44862231
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 042ea783c1633e08b929f29b2c44783911b6b17d
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 2464dab4bfc754b6ef293ecc185858090430b56b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461660"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094537"
 ---
 # <a name="syskey_constraints-transact-sql"></a>sys.key_constraints (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

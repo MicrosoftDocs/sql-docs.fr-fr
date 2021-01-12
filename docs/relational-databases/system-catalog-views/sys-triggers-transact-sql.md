@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.triggers catalog view
 ms.assetid: cefa4fc4-b8b9-4cd7-b124-eed5283acbfc
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 6f39b3bff2073475c9bd0d969efa3901ff055edb
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b9fbf3f59de6e7508fd8ee1fac13a98bb36170b1
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97428768"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094314"
 ---
 # <a name="systriggers-transact-sql"></a>sys.triggers (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

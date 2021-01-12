@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_db_file_space_usage dynamic management view
 ms.assetid: 148a5276-a8d5-49d2-8146-3c63d24c2144
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: ba0897c1cf9a4a2ebb7a48f4a00fcdee3d316dcf
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: bca14dfbb84763a15791aa4bdefc8b857df9e87e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475170"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095166"
 ---
 # <a name="sysdm_db_file_space_usage-transact-sql"></a>sys.dm_db_file_space_usage (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "97475170"
 |pdw_node_id|**int**|**S’applique à**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] , [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]<br /><br /> Identificateur du nœud sur lequel cette distribution se trouve.|  
 |distribution_id|**int**|**S’applique à**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] , [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]<br /><br /> ID numérique unique associé à la distribution.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Le nombre de pages se situe toujours au niveau des étendues. Les nombres de pages sont donc toujours des multiples de huit. Les étendues qui contiennent des pages d'allocation GAM (Global Allocation Map) et SGAM (Shared Global Allocation Map) sont des étendues uniformes allouées. Elles ne sont pas incluses dans les nombres de pages décrits précédemment. Pour plus d’informations sur les pages et les étendues, consultez le [Guide d’architecture des pages et des extensions](../../relational-databases/pages-and-extents-architecture-guide.md). 
   
  Le contenu de la Banque des versions actuelle se trouve dans [sys.dm_tran_version_store](../../relational-databases/system-dynamic-management-views/sys-dm-tran-version-store-transact-sql.md). Le suivi des pages du magasin de versions n'est pas effectué au niveau des sessions et des tâches, mais au niveau des fichiers. En effet, il s'agit de ressources globales. Une session peut générer des versions, mais ces dernières ne peuvent pas être supprimées lorsque la session se termine. Le nettoyage du magasin de versions doit considérer la transaction la plus longue ayant besoin d'accéder à une version particulière. La transaction la plus longue relative au nettoyage de la Banque des versions peut être détectée en affichant la colonne elapsed_time_seconds dans [sys.dm_tran_active_snapshot_database_transactions](../../relational-databases/system-dynamic-management-views/sys-dm-tran-active-snapshot-database-transactions-transact-sql.md).  

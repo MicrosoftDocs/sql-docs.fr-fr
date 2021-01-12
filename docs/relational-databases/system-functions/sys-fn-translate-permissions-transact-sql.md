@@ -1,6 +1,6 @@
 ---
 description: sys.fn_translate_permissions (Transact-SQL)
-title: sys. fn_translate_permissions (Transact-SQL) | Microsoft Docs
+title: sys.fn_translate_permissions (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/15/2017
 ms.prod: sql
@@ -20,21 +20,21 @@ helpviewer_keywords:
 - sys.fn_translate_permissions function
 - fn_translate_permissions function
 ms.assetid: ac97121f-2bd0-4f71-8e45-42c8584edbc5
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 1069d5b76d6ee404ddd2e671eb6a7b63396424ee
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: e4d00e0b945012cb8a1b583921328009d12a34ad
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88481762"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094935"
 ---
 # <a name="sysfn_translate_permissions-transact-sql"></a>sys.fn_translate_permissions (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Convertit le masque de bits des autorisations retourné par la trace SQL en une table de noms d'autorisations.  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -54,7 +54,7 @@ sys.fn_translate_permissions ( level , perms )
  **table**  
   
 ## <a name="remarks"></a>Notes  
- La valeur retournée dans la colonne **permissions** d’une trace SQL est une représentation d’entier d’un masque de réutilisation utilisé par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour calculer les autorisations effectives. Chacun des 25 types d'éléments sécurisables possède son propre jeu d'autorisations avec des valeurs numériques correspondantes. **sys. fn_translate_permissions** convertit ce masque de masque en une table de noms d’autorisations.  
+ La valeur retournée dans la colonne **permissions** d’une trace SQL est une représentation d’entier d’un masque de réutilisation utilisé par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour calculer les autorisations effectives. Chacun des 25 types d'éléments sécurisables possède son propre jeu d'autorisations avec des valeurs numériques correspondantes. **sys.fn_translate_permissions** convertit ce masque de masque en une table de noms d’autorisations.  
   
 ## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle **public** .  

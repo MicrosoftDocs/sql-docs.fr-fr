@@ -17,14 +17,14 @@ helpviewer_keywords:
 - backup media [SQL Server], sysopentapes system table
 - sysopentapes system table
 ms.assetid: c066ca9b-9cfd-46b1-90a3-5c8dc9e7b6ae
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 5a64ea925775daacdbd44a71a945e86fe0f2c9aa
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 0cb05c0ac88f7f362651b872fa84598a656ff25d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89537891"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096056"
 ---
 # <a name="sysopentapes-transact-sql"></a>sysopentapes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "89537891"
   Contient une ligne pour chaque unité de bande actuellement ouverte. Cette vue est stockée dans la base de données **Master** .  
   
 > [!IMPORTANT]  
->  Cette table système est incluse en tant que vue pour la compatibilité descendante. Utilisez plutôt la vue de gestion dynamique [sys. dm_io_backup_tapes &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-io-backup-tapes-transact-sql.md) .  
+>  Cette table système est incluse en tant que vue pour la compatibilité descendante. Au lieu de cela, utilisez l' [sys.dm_io_backup_tapes &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-io-backup-tapes-transact-sql.md) vue de gestion dynamique.  
   
 > [!NOTE]  
 >  Vous ne pouvez pas supprimer la vue **sysopentapes** .  

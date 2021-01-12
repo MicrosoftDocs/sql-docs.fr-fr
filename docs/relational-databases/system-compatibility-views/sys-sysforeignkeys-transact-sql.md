@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sysforeignkeys system table
 - sys.sysforeignkeys compatibility view
 ms.assetid: 41544236-1c46-4501-be88-18c06963b6e8
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 15a02ec0dc5b6b1e5b376876b18e36863468e59e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 265284479a511cd74bc3724bed8b0724aa1570e0
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88455093"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094209"
 ---
 # <a name="syssysforeignkeys-transact-sql"></a>sys.sysforeignkeys (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

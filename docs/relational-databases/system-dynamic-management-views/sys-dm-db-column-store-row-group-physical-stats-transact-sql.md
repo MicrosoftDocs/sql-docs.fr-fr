@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - dm_db_column_store_row_group_physical_stats
 - sys.dm_db_column_store_row_group_physical_stats dynamic management view
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: ddbed928d4d7ef379b7d4c164ffcc150f035b8d4
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0c1b5bd85e22c4876004b000c5cc41f9f120d681
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475040"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095183"
 ---
 # <a name="sysdm_db_column_store_row_group_physical_stats-transact-sql"></a>sys.dm_db_column_store_row_group_physical_stats (Transact-SQL)
 

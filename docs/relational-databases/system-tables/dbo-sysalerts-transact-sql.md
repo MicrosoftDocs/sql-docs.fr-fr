@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sysalerts system table
 ms.assetid: a2c2f50d-61f3-4951-996a-add5ad092cc2
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 9b0c2fec2d053f80cd9baa9d9bd4d0bfc971e2ec
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: ff1e70701882c1740ae91212c8d33ae5e7e3040b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538394"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094869"
 ---
 # <a name="dbosysalerts-transact-sql"></a>dbo.sysalerts (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

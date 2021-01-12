@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.http_endpoints catalog view
 ms.assetid: 16f59695-ecd9-457e-8874-055af63f8ea7
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: a9d4627c0a5914b4ff62b36fd9357f7919c2e490
-ms.sourcegitcommit: afb02c275b7c79fbd90fac4bfcfd92b00a399019
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: d70ec845e99b691ae6527b509e807dacb52e4685
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91956410"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094583"
 ---
 # <a name="syshttp_endpoints-transact-sql"></a>sys.http_endpoints (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

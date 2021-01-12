@@ -1,6 +1,6 @@
 ---
 description: sys.tcp_endpoints (Transact-SQL)
-title: sys. tcp_endpoints (Transact-SQL) | Microsoft Docs
+title: sys.tcp_endpoints (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,19 +18,19 @@ dev_langs:
 helpviewer_keywords:
 - sys.tcp_endpoints catalog view
 ms.assetid: 43cc3afa-cced-4463-8e97-fbfdaf2e4fa8
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 0b6a262bad2d897725d625df592f5a6a8b712a6c
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: f5717389606bb3b73dc95c6a7eaedd6e03312cfd
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89545005"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094422"
 ---
 # <a name="systcp_endpoints-transact-sql"></a>sys.tcp_endpoints (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Contient une ligne pour chaque point de terminaison TCP dans le système. Les points de terminaison décrits par **sys. tcp_endpoints** fournissent un objet pour accorder et révoquer le privilège de connexion. Les informations affichées concernant les ports et les adresses IP ne sont pas utilisées pour configurer les protocoles, et il est possible qu'elles ne correspondent pas à la configuration réelle des protocoles. Pour afficher les protocoles et les configurer, utilisez le Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
+  Contient une ligne pour chaque point de terminaison TCP dans le système. Les points de terminaison décrits par **sys.tcp_endpoints** fournissent un objet pour accorder et révoquer le privilège de connexion. Les informations affichées concernant les ports et les adresses IP ne sont pas utilisées pour configurer les protocoles, et il est possible qu'elles ne correspondent pas à la configuration réelle des protocoles. Pour afficher les protocoles et les configurer, utilisez le Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
   
 |Nom de la colonne|Type de données|Description|  
@@ -41,7 +41,7 @@ ms.locfileid: "89545005"
 |**ip_address**|**nvarchar (45)**|Adresse IP du port d'écoute, telle qu'elle est stipulée par la clause LISTENER_IP. Autorise la valeur NULL.|  
   
 ## <a name="remarks"></a>Notes  
- Pour recueillir des informations sur les points de terminaison et les connexions, exécutez la requête suivante. Les points de terminaison sans connexion active ou sans connexion TCP s'affichent avec des valeurs NULL. Ajoutez la **WHERE** clause WHERE `WHERE des.session_id = @@SPID` pour renvoyer des informations sur la connexion actuelle.  
+ Pour recueillir des informations sur les points de terminaison et les connexions, exécutez la requête suivante. Les points de terminaison sans connexion active ou sans connexion TCP s'affichent avec des valeurs NULL. Ajoutez la  clause WHERE `WHERE des.session_id = @@SPID` pour renvoyer des informations sur la connexion actuelle.  
   
 ```  
 SELECT des.login_name, des.host_name, program_name,  dec.net_transport, des.login_time,   

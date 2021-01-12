@@ -19,15 +19,15 @@ helpviewer_keywords:
 - sys.systypes compatibility view
 - systypes system table
 ms.assetid: 1b0b1d0c-5f7b-470b-bd52-8bfa922d7889
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 9bd2a68f151a136a5bb9de7efd170c7178d8001e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b00fc15f26b54acf7de52684949473c0bbd6ed19
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464670"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095349"
 ---
 # <a name="syssystypes-transact-sql"></a>sys.systypes (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

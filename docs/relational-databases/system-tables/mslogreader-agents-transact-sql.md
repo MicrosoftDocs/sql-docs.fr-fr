@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - MSlogreader_agents system table
 ms.assetid: 8baa3c5a-cb40-42d0-b966-00e6d55368e8
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: fc52c520b1759839ee75d066895ba9ac19c1c6c2
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 58b93b15fc6f8b99d507004b33bbb371ac211663
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547100"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096216"
 ---
 # <a name="mslogreader_agents-transact-sql"></a>MSlogreader_agents (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

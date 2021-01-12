@@ -1,6 +1,6 @@
 ---
 description: sys.dm_broker_forwarded_messages (Transact-SQL)
-title: sys. dm_broker_forwarded_messages (Transact-SQL) | Microsoft Docs
+title: sys.dm_broker_forwarded_messages (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -17,14 +17,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_broker_forwarded_messages dynamic management view
 ms.assetid: 5576376d-6364-417a-8475-aa770e060845
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 1b167baced0acda08234b4240bc362c602f327f9
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 089fb1aaf7cca8f3d8d3d57c49e11cf803f3329e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89544781"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095298"
 ---
 # <a name="sysdm_broker_forwarded_messages-transact-sql"></a>sys.dm_broker_forwarded_messages (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

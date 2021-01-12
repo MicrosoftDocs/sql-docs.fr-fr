@@ -15,14 +15,14 @@ helpviewer_keywords:
 - maintenance plans [SQL Server], system tables
 - system tables [SQL Server], database maintenance plans
 ms.assetid: f264554c-5514-4df2-aadb-6dcdc2dfcfea
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 5abffa4b260d63d203dce9510c599d2187901620
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: d6c2a075f14246da9eacf847a47f2a7170ce1279
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547216"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094879"
 ---
 # <a name="database-maintenance-plan-tables-transact-sql"></a>Tables de plan de maintenance de base de données (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

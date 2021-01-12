@@ -11,14 +11,14 @@ ms.topic: language-reference
 dev_langs:
 - TSQL
 ms.assetid: 25e66ed3-2270-4c5c-9f5a-2c0f165a57ca
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: c091649234826080054de942ed96272055a1b595
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 3f932c00e569c57c951f2a708c810ff3dba8c08d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91810316"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094473"
 ---
 # <a name="sysperiods-transact-sql"></a>sys. periods (Transact-SQL)
 [!INCLUDE [sqlserver2016](../../includes/applies-to-version/sqlserver2016.md)]

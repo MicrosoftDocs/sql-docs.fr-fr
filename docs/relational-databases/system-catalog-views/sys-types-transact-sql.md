@@ -19,15 +19,15 @@ helpviewer_keywords:
 - sys.types catalog view
 - table-valued parameters,sys.types
 ms.assetid: a5dbc842-71a0-4f62-b5e0-f560a99b7f8c
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 09a7add1433bc9eb8184843f24d113e3706a4c36
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 586c115a7223a7c01cbafa334dc07ca450a1c640
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475090"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094311"
 ---
 # <a name="systypes-transact-sql"></a>sys.types (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

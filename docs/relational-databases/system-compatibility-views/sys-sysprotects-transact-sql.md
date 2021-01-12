@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sys.sysprotects compatibility view
 - sysprotects system table
 ms.assetid: 49c9658d-fb51-4c77-94a0-fba699b0102d
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 811bdae3c05bbb934a6f135269147c8678fa7654
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 417ef61ac045151c4ea2399d1192fdbff0519736
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88482052"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095369"
 ---
 # <a name="syssysprotects-transact-sql"></a>sys.sysprotects (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

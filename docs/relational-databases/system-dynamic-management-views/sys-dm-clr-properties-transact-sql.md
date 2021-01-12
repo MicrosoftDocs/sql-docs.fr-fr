@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_clr_properties dynamic management view
 ms.assetid: 220d062f-d117-46e7-a448-06fe48db8163
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 81f9cde748697d9c69bdcfd67b3e2a4db7907ab7
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 34dfbfbecf82df79520fc5a530bcb8c18c544c77
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466890"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095270"
 ---
 # <a name="sysdm_clr_properties-transact-sql"></a>sys.dm_clr_properties (Transact-SQL)
 [!INCLUDE [sql-asdbmi-pdw](../../includes/applies-to-version/sql-asdbmi-pdw.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "97466890"
   
  La propriété **version** indique la version du .NET Framework et du CLR hébergé sur le serveur.  
   
- La **sys.dm_clr_properties** vue managée dynamique peut retourner six valeurs différentes pour la propriété **State** , qui reflète l’état du [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] CLR hébergé. Il s'agit des éléments suivants :  
+ La **sys.dm_clr_properties** vue managée dynamique peut retourner six valeurs différentes pour la propriété **State** , qui reflète l’état du [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] CLR hébergé. Il s'agit de :  
   
 -   Mscoree is not loaded.  
   
@@ -69,7 +69,7 @@ ms.locfileid: "97466890"
   
  L' **État du CLR arrêté** est uniquement visible lorsque [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est en cours d’arrêt.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Les propriétés et les valeurs de cette vue peuvent changer dans une future version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en raison des améliorations apportées à la fonctionnalité d’intégration du CLR.  
   
 ## <a name="permissions"></a>Autorisations  

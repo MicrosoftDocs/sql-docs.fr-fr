@@ -17,15 +17,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_db_log_stats dynamic management function
 ms.assetid: ''
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=sql-server-2017||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 5a5ea85a212e33a3e26ef295cc4d38c84967560a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ddfd608b3f2d5bb5c4c259dfb0ec822f245f72b3
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472830"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096560"
 ---
 # <a name="sysdm_db_log_stats-transact-sql"></a>sys.dm_db_log_stats (Transact-SQL)   
 [!INCLUDE[tsql-appliesto-2016sp2-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-2016sp2-asdb-xxxx-xxx-md.md)]
@@ -44,7 +44,7 @@ Retourne des informations et des attributs de niveau récapitulatif sur les fich
 
 *database_id* | NULL | **Par défaut**
 
-ID de la base de données. `database_id` a la valeur `int`. Les entrées valides sont le numéro d’identification d’une base de données, `NULL` ou `DEFAULT` . Par défaut, il s’agit de `NULL`. `NULL` et `DEFAULT` sont des valeurs équivalentes dans le contexte de la base de données active.  
+ID de la base de données. `database_id` a la valeur `int`. Les entrées valides sont le numéro d’identification d’une base de données, `NULL` ou `DEFAULT` . La valeur par défaut est `NULL`. `NULL` et `DEFAULT` sont des valeurs équivalentes dans le contexte de la base de données active.  
 Vous pouvez spécifier la fonction intégrée [DB_ID](../../t-sql/functions/db-id-transact-sql.md). Lorsque vous utilisez `DB_ID` sans spécifier de nom de base de données, le niveau de compatibilité de la base de données actuelle doit être supérieur ou égal à 90.
 
   
@@ -73,7 +73,7 @@ Vous pouvez spécifier la fonction intégrée [DB_ID](../../t-sql/functions/db-i
 |recovery_vlf_count |**bigint** |   Nombre total de [fichiers journaux virtuels (fichiers journaux virtuels)](../../relational-databases/sql-server-transaction-log-architecture-and-management-guide.md#physical_arch) à récupérer, en cas de basculement ou de redémarrage du serveur. |  
 
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Notes
 En cas d’exécution `sys.dm_db_log_stats` sur une base de données qui participe à un groupe de disponibilité en tant que réplica secondaire, seul un sous-ensemble des champs décrits ci-dessus est renvoyé.  Actuellement, seuls `database_id` , `recovery_model` et `log_backup_time` sont retournés lorsqu’ils sont exécutés sur une base de données secondaire.   
 
 ## <a name="permissions"></a>Autorisations  

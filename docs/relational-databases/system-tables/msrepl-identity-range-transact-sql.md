@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - MSrepl_identity_range system table
 ms.assetid: 6e92a8e8-7667-4c98-b1c4-46735bac50d8
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 8099f50052fdb41d2e5136b6644e6f016d05ab71
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 825deebf0fed39364b244549901a78bc17b8accd
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540247"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094805"
 ---
 # <a name="msrepl_identity_range-transact-sql"></a>MSrepl_identity_range (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

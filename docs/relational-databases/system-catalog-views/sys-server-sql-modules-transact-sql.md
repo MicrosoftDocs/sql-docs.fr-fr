@@ -1,6 +1,6 @@
 ---
 description: sys.server_sql_modules (Transact-SQL)
-title: sys. server_sql_modules (Transact-SQL) | Microsoft Docs
+title: sys.server_sql_modules (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.server_sql_modules catalog view
 ms.assetid: 9ef9a8b9-c470-4a61-b0c4-ee24ad871d63
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 7f74b41384c2aa42c26623fa69ef35c74f49eab3
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 7ffae9eb88425f849b30d7b2b8fc8e63cb840870
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89539578"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094492"
 ---
 # <a name="sysserver_sql_modules-transact-sql"></a>sys.server_sql_modules (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

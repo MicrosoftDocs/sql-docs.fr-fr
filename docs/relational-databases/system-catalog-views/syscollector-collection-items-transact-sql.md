@@ -17,14 +17,14 @@ helpviewer_keywords:
 - syscollector_collection_items view
 - add data collector view
 ms.assetid: a279ecd1-a59c-4315-9f08-bf221f00a465
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: dd2655b1d2c53af8443f0c35a09a221ef5d87724
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 79b0c876d8c42cd23f02e91dead3fde841d84f07
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89539482"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094280"
 ---
 # <a name="syscollector_collection_items-transact-sql"></a>syscollector_collection_items (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

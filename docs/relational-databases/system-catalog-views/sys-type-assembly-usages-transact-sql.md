@@ -1,6 +1,6 @@
 ---
 description: sys.type_assembly_usages (Transact-SQL)
-title: sys. type_assembly_usages (Transact-SQL) | Microsoft Docs
+title: sys.type_assembly_usages (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.type_assembly_usages catalog view
 ms.assetid: 79b8bf25-6e4e-4a07-ae93-7a4e44f65171
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: c6e1bd7aba0b16af1fa59b1064a519f7879207ab
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 53884fd9c27b3ab016bd3e1a67c2e4b2beb2285d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89542422"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094299"
 ---
 # <a name="systype_assembly_usages-transact-sql"></a>sys.type_assembly_usages (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

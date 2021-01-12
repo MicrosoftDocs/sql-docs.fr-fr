@@ -8,16 +8,16 @@ ms.prod_service: sql-database
 ms.reviewer: ''
 ms.topic: language-reference
 ms.assetid: 7f353e2a-f8fc-4366-97e4-aa1c49eadaf4
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: = azuresqldb-current
 ms.custom: seo-dt-2019
-ms.openlocfilehash: b65d705e6b6f961629d64d08408c4e3dece9d377
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 34933a5460e69be11bb67e6ee1769af21c732378
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474770"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095078"
 ---
 # <a name="sysdm_xe_database_session_targets-azure-sql-database"></a>sys.dm_xe_database_session_targets (Azure SQL Database)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]

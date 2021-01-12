@@ -20,15 +20,15 @@ helpviewer_keywords:
 - time [SQL Server], instance started
 - starting time
 ms.assetid: 20f6bc9c-839a-4fa4-b3f3-a6c47d1b69af
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: d93732b1341aad5fcd2a346b720d1ab7328a3734
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: eede187e90a838ae0e0a2c0051a5b4d496c7b4b6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480800"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096530"
 ---
 # <a name="sysdm_os_sys_info-transact-sql"></a>sys.dm_os_sys_info (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

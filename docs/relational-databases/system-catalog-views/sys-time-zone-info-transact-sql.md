@@ -16,15 +16,15 @@ f1_keywords:
 helpviewer_keywords:
 - sys.time_zone_info system table
 ms.assetid: 3f51a9a4-75f8-4a11-9552-8bf6118b68da
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: d88603b0f7da691633f14211a14204bf14b32aac
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 56d3bd8f387d0ed9b75e9073dba9c60f39267fe5
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466950"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094415"
 ---
 # <a name="systime_zone_info-transact-sql"></a>sys.time_zone_info (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa.md)]

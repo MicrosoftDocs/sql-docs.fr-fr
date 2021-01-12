@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sysindexes system table
 - sys.sysindexes compatibility view
 ms.assetid: f483d89c-35c4-4a08-8f8b-737fd80d13f5
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 4b78a272e9fa2ec3a0cc3d4418986078ff02f457
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: cf8982115b1a4399c327aefc66a5e99a1d46c575
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88399405"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094191"
 ---
 # <a name="syssysindexes-transact-sql"></a>sys.sysindexes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -66,12 +66,12 @@ ms.locfileid: "88399405"
 |**name**|**sysname**|Nom de l'index ou de la statistique. Retourne NULL lorsque **indid** = 0. Modifiez votre application pour rechercher le nom d'un segment de mémoire de valeur NULL.|  
 |**statblob**|**image**|Statistiques sur les objets binaires volumineux (BLOB).<br /><br /> Renvoie NULL.|  
 |**maxlen**|**int**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
-|**lignes**|**int**|Nombre de lignes de niveau données basé sur **indid** = 0 et **indid** = 1, et la valeur est répétée pour **indid** >1.|  
+|**rows**|**int**|Nombre de lignes de niveau données basé sur **indid** = 0 et **indid** = 1, et la valeur est répétée pour **indid** >1.|  
   
 ## <a name="remarks"></a>Notes  
  Les colonnes définies comme réservées ne doivent pas être utilisées.  
   
- Les colonnes **dpages**, **reserved**et **used** ne retournent pas de résultats précis si la table ou l’index contient des données dans l’unité d’allocation ROW_OVERFLOW. De plus, les nombres de pages de chaque index sont suivis séparément et ne sont pas agrégés pour la table de base. Pour afficher les nombres de pages, utilisez les affichages catalogue [sys. allocation_units](../../relational-databases/system-catalog-views/sys-allocation-units-transact-sql.md) ou [sys. partitions](../../relational-databases/system-catalog-views/sys-partitions-transact-sql.md) , ou la vue de gestion dynamique [sys. dm_db_partition_stats](../../relational-databases/system-dynamic-management-views/sys-dm-db-partition-stats-transact-sql.md) .  
+ Les colonnes **dpages**, **reserved** et **used** ne retournent pas de résultats précis si la table ou l’index contient des données dans l’unité d’allocation ROW_OVERFLOW. De plus, les nombres de pages de chaque index sont suivis séparément et ne sont pas agrégés pour la table de base. Pour afficher les nombres de pages, utilisez les affichages catalogue [sys.allocation_units](../../relational-databases/system-catalog-views/sys-allocation-units-transact-sql.md) ou [sys. partitions](../../relational-databases/system-catalog-views/sys-partitions-transact-sql.md) , ou la vue de gestion dynamique [sys.dm_db_partition_stats](../../relational-databases/system-dynamic-management-views/sys-dm-db-partition-stats-transact-sql.md) .  
   
  Dans SQL Server 2000 et versions antérieures, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] conservait les compteurs de modifications de niveau ligne. De tels compteurs sont maintenant gérés au niveau colonne. Par conséquent, la colonne **rowmodctr** est calculée et produit des résultats similaires à ceux des versions antérieures, mais elles ne sont pas exactes.  
   

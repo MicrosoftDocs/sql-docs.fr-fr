@@ -18,14 +18,14 @@ helpviewer_keywords:
 - extended events [SQL Server], views
 - sys.dm_os_dispatcher_pools DMV
 ms.assetid: b9edbc83-c6bc-4753-9bb5-a454cfe7d6bf
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 352fe048404c452cc7f6012a166e395f4731f38a
-ms.sourcegitcommit: 2991ad5324601c8618739915aec9b184a8a49c74
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 04dbc2fcedb889b54d8a95fa5357b23857cd062a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97321906"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095115"
 ---
 # <a name="sysdm_os_dispatcher_pools-transact-sql"></a>sys.dm_os_dispatcher_pools (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

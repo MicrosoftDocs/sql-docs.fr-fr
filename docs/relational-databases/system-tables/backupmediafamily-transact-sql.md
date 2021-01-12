@@ -1,5 +1,6 @@
 ---
 title: backupmediafamily (Transact-SQL) | Microsoft Docs
+description: Référence pour backupmediafamily, qui contient une ligne pour chaque famille de supports.
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -15,20 +16,20 @@ dev_langs:
 helpviewer_keywords:
 - backupmediafamily system table
 - backup media [SQL Server], backupmediafamily system table
-ms.assetid: ee16de24-3d95-4b2e-a094-78df2514d18a
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: c2499bbc91fb09f943e5a093851bd5aef810b5b9
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 6adacacdb3e075e3eb058005d3b11fc8fc219cbe
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547205"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096286"
 ---
 # <a name="backupmediafamily-transact-sql"></a>backupmediafamily (Transact-SQL)
+
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Cette table contient une ligne pour chaque famille de supports de sauvegardes. Si une famille de supports réside dans un support de sauvegarde miroir, elle a une ligne distincte pour chaque miroir du support de sauvegarde. Cette table est stockée dans la base de données **msdb** .  
+Cette table contient une ligne pour chaque famille de supports de sauvegardes. Si une famille de supports réside dans un support de sauvegarde miroir, elle a une ligne distincte pour chaque miroir du support de sauvegarde. Cette table est stockée dans la base de données **msdb** .  
     
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
@@ -36,9 +37,9 @@ ms.locfileid: "89547205"
 |**family_sequence_number**|**tinyint**|Position de la famille de supports dans le support de sauvegarde.|  
 |**media_family_id**|**uniqueidentifier**|Numéro d'identification unique de la famille de supports de sauvegarde. Sa valeur peut être NULL.|  
 |**media_count**|**int**|Nombre de supports de sauvegarde dans la famille de supports. Sa valeur peut être NULL.|  
-|**logical_device_name**|**nvarchar(128)**|Nom de cette unité de sauvegarde dans **sys. backup_devices. Name**. S’il s’agit d’une unité de sauvegarde temporaire (par opposition à une unité de sauvegarde permanente qui existe dans **sys. backup_devices**), la valeur de **logical_device_name** est null.|  
+|**logical_device_name**|**nvarchar(128)**|Nom de cette unité de sauvegarde dans **sys.backup_devices. Name**. S’il s’agit d’une unité de sauvegarde temporaire (par opposition à une unité de sauvegarde permanente qui existe dans **sys.backup_devices**), la valeur de **logical_device_name** est null.|  
 |**physical_device_name**|**nvarchar(260)**|Nom physique de l'unité de sauvegarde Sa valeur peut être NULL. Ce champ est partagé entre le processus de sauvegarde et de restauration. Il peut contenir le chemin d’accès de destination de la sauvegarde d’origine ou le chemin source d’origine de la restauration. Selon que la sauvegarde ou la restauration s’est produite en premier sur un serveur pour une base de données. Notez que les restaurations consécutives à partir du même fichier de sauvegarde ne mettent pas à jour le chemin d’accès, quel que soit son emplacement au moment de la restauration. Pour cette raison, **physical_device_name** champ ne peut pas être utilisé pour voir le chemin d’accès de restauration utilisé.|  
-|**device_type**|**tinyint**|Type de l'unité de sauvegarde :<br /><br /> 2 = Disque<br /><br /> 5 = Bande<br /><br /> 7 = Unité virtuelle<br /><br /> 9 = stockage Azure<br /><br /> 105 = Unité de sauvegarde constante.<br /><br /> Sa valeur peut être NULL.<br /><br /> Tous les noms et numéros de périphérique permanents sont disponibles dans **sys. backup_devices**.|  
+|**device_type**|**tinyint**|Type de l'unité de sauvegarde :<br /><br /> 2 = Disque<br /><br /> 5 = Bande<br /><br /> 7 = Unité virtuelle<br /><br /> 9 = stockage Azure<br /><br /> 105 = Unité de sauvegarde constante.<br /><br /> Sa valeur peut être NULL.<br /><br /> Tous les noms et numéros de périphérique permanents sont disponibles dans **sys.backup_devices**.|  
 |**physical_block_size**|**int**|Taille du bloc physique réservé à l'écriture de la famille de supports de sauvegarde. Sa valeur peut être NULL.|  
 |**mirror**|**tinyint**|Nombre de miroirs (0-3).|  
   

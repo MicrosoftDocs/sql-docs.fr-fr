@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - sysmergearticles system table
 ms.assetid: e9b1648e-4660-4688-9f56-18b2baf7228c
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 40701192048b83cae153b06bb5b4a3fdeeac2abf
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 50d2129741447444b1da2adc82521966a7045530
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538213"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096108"
 ---
 # <a name="sysmergearticles-transact-sql"></a>sysmergearticles (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "89538213"
 |**description**|**nvarchar(255)**|Brève description de l'article.|  
 |**pre_creation_command**|**tinyint**|Action par défaut à effectuer lors de la création de l’article dans la base de données d’abonnement :<br /><br /> **0 =** Aucun : si la table existe déjà sur l’abonné, aucune action n’est effectuée.<br /><br /> **1** = drop-supprime la table avant de la recréer.<br /><br /> **2** = DELETE : émet une suppression basée sur la clause WHERE dans le filtre de sous-ensemble.<br /><br /> **3** = tronquer-identique à **2**, mais supprime les pages au lieu des lignes. Toutefois, n'accepte pas la clause WHERE.|  
 |**pubid**|**uniqueidentifier**|ID de la publication à laquelle appartient l'article actif.|  
-|**nickname**|**int**|Le mappage de surnom pour l'identification de l'article.|  
+|**mon**|**int**|Le mappage de surnom pour l'identification de l'article.|  
 |**column_tracking**|**int**|Indique si le suivi des colonnes est implémenté pour l’article.|  
 |**statut**|**tinyint**|Indique l'état de l'article, qui peut être l'un des suivants :<br /><br /> **1** = non synchronisé : le script de traitement initial permettant de publier la table sera exécuté lors de la prochaine exécution du agent d’instantané.<br /><br /> **2** = actif : le script de traitement initial pour la publication de la table a été exécuté.<br /><br /> **5** = New_inactive à ajouter.<br /><br /> **6** = New_active à ajouter.|  
 |**conflict_table**|**sysname**|Nom de la table locale qui contient les enregistrements en conflit pour l'article actif. Cette table est fournie à titre d'information uniquement et son contenu peut être modifié ou supprimé à l'aide des routines personnalisées de résolution de conflits ou directement par l'administrateur.|  
@@ -70,8 +70,8 @@ ms.locfileid: "89538213"
 |**gen_cur**|**int**|Numéro de génération des modifications locales apportées à la table de base d'un article.|  
 |**vertical_partition**|**int**|Indique si le filtrage de colonne est activé sur un article de table. **0** indique qu’il n’y a pas de filtrage vertical et publie toutes les colonnes.|  
 |**identity_support**|**int**|Spécifie si la gestion automatique de plages d'identités est activée. **1** signifie que la gestion des plages d’identité est activée, et **0** signifie qu’il n’y a aucune prise en charge de plage d’identité.|  
-|**before_image_objid**|**int**|ID d'objet de la table de suivi. La table de suivi contient certaines valeurs de colonnes clés lorsqu’une publication est créée avec * \@ keep_partition_changes*  =  **true**.|  
-|**before_view_objid**|**int**|ID d'objet d'une table de vue. La vue est associée à une table qui détermine si une ligne appartenait à un Abonné particulier avant sa suppression ou sa mise à jour. S’applique uniquement lorsqu’une publication est créée avec * \@ keep_partition_changes*  =  **true.**|  
+|**before_image_objid**|**int**|ID d'objet de la table de suivi. La table de suivi contient certaines valeurs de colonnes clés lorsqu’une publication est créée avec *\@ keep_partition_changes*  =  **true**.|  
+|**before_view_objid**|**int**|ID d'objet d'une table de vue. La vue est associée à une table qui détermine si une ligne appartenait à un Abonné particulier avant sa suppression ou sa mise à jour. S’applique uniquement lorsqu’une publication est créée avec *\@ keep_partition_changes*  =  **true.**|  
 |**verify_resolver_signature**|**int**|Spécifie si une signature numérique est vérifiée avant d'utiliser un résolveur dans une réplication de fusion :<br /><br /> **0** = la signature n’est pas vérifiée.<br /><br /> **1** = la signature est vérifiée pour déterminer si elle provient d’une source approuvée.|  
 |**allow_interactive_resolver**|**bit**|Spécifie si l'utilisation du composant résolveur interactif sur un article est activée. **1** indique que le programme de résolution interactif est utilisé sur l’article.|  
 |**fast_multicol_updateproc**|**bit**|Spécifie si l'Agent de fusion est activé pour appliquer des modifications à plusieurs colonnes d'une même ligne à partir d'une seule instruction UPDATE.<br /><br /> **0** = émet une mise à jour distincte pour chaque colonne modifiée.<br /><br /> **1** = émet une instruction UPDATE qui provoque la mise à jour de plusieurs colonnes dans une instruction.|  

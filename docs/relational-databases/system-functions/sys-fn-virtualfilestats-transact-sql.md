@@ -19,15 +19,15 @@ helpviewer_keywords:
 - sys.fn_virtualfilestats function
 - statistical information [SQL Server], I/O
 ms.assetid: 96b28abb-b059-48db-be2b-d60fe127f6aa
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 5cb40699cf7c4ba8c2391ea12d0c060f2c388986
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 21ebb356139cf33f87a4e3da84a5004bd7405ae9
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474740"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096371"
 ---
 # <a name="sysfn_virtualfilestats-transact-sql"></a>sys.fn_virtualfilestats (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -67,7 +67,7 @@ fn_virtualfilestats ( { database_id | NULL } , { file_id | NULL } )
 |**FileHandle**|**bigint**|Valeur du handle de fichier.|  
 |**BytesOnDisk**|**bigint**|Taille physique du fichier sur le disque (en octets).<br /><br /> Pour les fichiers de base de données, il s’agit de la même valeur que la **taille** dans **sys.database_files**, mais elle est exprimée en octets plutôt que en pages.<br /><br /> Dans le cas des fichiers partiellement alloués d'instantané de base de données, il s'agit de l'espace qu'utilise le système d'exploitation pour ceux-ci.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  **fn_virtualfilestats** est une fonction table système qui fournit des informations statistiques, telles que le nombre total d’e/s effectuées sur un fichier. Cette fonction vous permet d'enregistrer et de suivre la durée d'attente de l'utilisateur avant de pouvoir lire ou écrire dans un fichier. Cette fonction permet également d'identifier les fichiers dont l'activité est intense au niveau des entrées/sorties (E/S).  
   
 ## <a name="permissions"></a>Autorisations  

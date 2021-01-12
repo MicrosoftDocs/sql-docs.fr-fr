@@ -20,15 +20,15 @@ helpviewer_keywords:
 - dm_exec_compute_node_errors
 - sys.dm_exec_compute_node_errors management view
 ms.assetid: 9a03c039-70e4-4974-95d8-d3fa45984ffb
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 8259a8a2f80bc96c52f0059cedef3036ce29cde9
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6f2de93073776522947a227f60ef9aa3fd894323
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97428151"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094089"
 ---
 # <a name="sysdm_exec_compute_node_errors-transact-sql"></a>sys.dm_exec_compute_node_errors (Transact-SQL)
 

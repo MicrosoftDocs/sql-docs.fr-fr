@@ -21,15 +21,15 @@ helpviewer_keywords:
 - sys.table_types
 - UDTT
 ms.assetid: c05fd873-aff2-4a89-9936-a54c2ea09996
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 0e55d33dbc18c8a06100a2ffab4b9ea3691aabc1
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c920317b40f0fbcd922c1fe0c440c1a210e0a984
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482880"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094441"
 ---
 # <a name="systable_types-transact-sql"></a>sys.table_types (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sysservers system table
 - sys.sysservers compatibility view
 ms.assetid: d02f186f-c00f-44a6-b38d-dc78a3d2145b
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: ea79d90f7ccb75243246cc64713c746e05c8996c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 1cf2a9649745eeeb5fbf10667b9849c0c1de5dec
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88475098"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095326"
 ---
 # <a name="syssysservers-transact-sql"></a>sys.sysservers (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - MSarticles system table
 ms.assetid: 1acd79a5-b3e2-4161-9592-7acc2a41ba38
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 3123834712540681748ab39edbfa6ee39d78ea14
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: c4f9badc2350511763ff41501887dc38a1a6c193
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89545715"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094785"
 ---
 # <a name="msarticles-transact-sql"></a>MSarticles (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

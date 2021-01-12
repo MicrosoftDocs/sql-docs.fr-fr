@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sys.sysperfinfo compatibility view
 - sysperfinfo system table
 ms.assetid: e22a81cd-27de-4690-9443-6aad6393bd3c
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 1122c224e21fa633c2c04cd156a49878fefc7daa
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 477121d623733b5bafcf4385d8069715a333175e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88482102"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095400"
 ---
 # <a name="syssysperfinfo-transact-sql"></a>sys.sysperfinfo (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

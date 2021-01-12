@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - MSagent_profiles system table
 ms.assetid: 4ab1b2ae-b6d9-42b7-9b31-98547dbb7f99
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 2f9b44e872ef5175d07a679c330b7662ff9e5bf6
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 237ecf85225d5c16160ee4b04f6e0ccdc41f2e31
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540900"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094799"
 ---
 # <a name="msagent_profiles-transact-sql"></a>MSagent_profiles (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "89540900"
 |**profile_id**|**int**|ID de profil.|  
 |**profile_name**|**sysname**|Nom de profil unique pour le type d'agent.|  
 |**agent_type**|**int**|Type d'Agent:<br /><br /> **1** = agent d’instantané<br /><br /> **2** = agent de lecture du journal<br /><br /> **3** = agent de distribution<br /><br /> **4** = agent de fusion<br /><br /> **9** = agent de lecture de la file d’attente|  
-|**type**|**int**|Type de profil :<br /><br /> **0** = système**1** = personnalisé|  
+|**type**|**int**|Type de profil :<br /><br /> **0** = système **1** = personnalisé|  
 |**description**|**nvarchar (3000)**|Description du profil.|  
 |**def_profile**|**bit**|Indique si ce profil représente le profil par défaut pour ce type d'agent.|  
   

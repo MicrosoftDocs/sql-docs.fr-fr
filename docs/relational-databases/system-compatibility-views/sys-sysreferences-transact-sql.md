@@ -19,15 +19,15 @@ helpviewer_keywords:
 - sys.sysreferences compatibility view
 - sysreferences system table
 ms.assetid: 81276f13-202e-4e74-962d-46eb98c98d2e
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 2911993e51f7404b0b1b49fe8bf43af722623e28
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 16d1cdff10581925afd703ddd5b76260964dd225
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482850"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095378"
 ---
 # <a name="syssysreferences-transact-sql"></a>sys.sysreferences (Transact-SQL)
 [!INCLUDE [sql-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdbmi-asa-pdw.md)]

@@ -17,14 +17,14 @@ helpviewer_keywords:
 - file backups [SQL Server], backupfile system table
 - backupfile system table
 ms.assetid: f1a7fc0a-f4b4-47eb-9138-eebf930dc9ac
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: e59789c2d4de9174a43b34881e7b45a914cfd2c3
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 8c9086ca4c3c97b9a10cd9d460eaf69408373551
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89525428"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096304"
 ---
 # <a name="backupfile-transact-sql"></a>backupfile (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "89525428"
 |**first_media_number**|**smallint**|Numéro de support du premier support contenant ce fichier de sauvegarde. Sa valeur peut être NULL.|  
 |**filegroup_name**|**nvarchar(128)**|Nom du groupe de fichiers contenant un fichier de base de données sauvegardée. Sa valeur peut être NULL.|  
 |**page_size**|**int**|Taille de la page en octets.|  
-|**file_number**|**numérique (10, 0)**|Numéro d’identification de fichier unique au sein d’une base de données (correspond à **sys. database_files**.** file_id**).|  
+|**file_number**|**numérique (10, 0)**|Numéro d’identification de fichier unique au sein d’une base de données (correspond à **sys.database_files**.**file_id**).|  
 |**backed_up_page_count**|**numérique (10, 0)**|Nombre de pages sauvegardées. Sa valeur peut être NULL.|  
 |**file_type**|**char(1)**|Fichier sauvegardé, avec une des valeurs suivantes :<br /><br /> D = Fichier de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].<br /><br /> L = Journal [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].<br /><br /> F = Catalogue de texte intégral.<br /><br /> Sa valeur peut être NULL.|  
 |**source_file_block_size**|**numérique (10, 0)**|Unité sur laquelle le fichier de données ou le fichier journal d'origine se trouvaient au moment de la sauvegarde. Sa valeur peut être NULL.|  

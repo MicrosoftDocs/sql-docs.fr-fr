@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sysoperators system table
 ms.assetid: c2afa20c-b15f-46ca-ae74-2eb65909409e
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: a5784e4084fa8481f8293d68b81d4ab8c52f626a
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 124ba525abf1bc9e96b065d9ef824ec35ef37b50
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540357"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096274"
 ---
 # <a name="dbosysoperators-transact-sql"></a>dbo.sysoperators (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

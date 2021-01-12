@@ -14,15 +14,15 @@ helpviewer_keywords:
 - functions [SQL Server], change tracking
 - change tracking [SQL Server], functions
 ms.assetid: 04eb53c4-8b69-414e-9696-185d227fea35
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: b76a5bbe0a201c70b0b25475e3da43bfb2e02475
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5fe7ea18e564c177e2d9b113be29ac62c8193508
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440614"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095019"
 ---
 # <a name="change-tracking-functions-transact-sql"></a>Fonctions de suivi des modifications (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
