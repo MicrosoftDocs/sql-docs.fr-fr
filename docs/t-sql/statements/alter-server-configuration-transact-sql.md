@@ -19,14 +19,14 @@ helpviewer_keywords:
 - ALTER SERVER CONFIGURATION statement
 - setting process affinity
 ms.assetid: f3059e42-5f6f-4a64-903c-86dca212a4b4
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: d3381300671d2303f8766351e19018d8122c861f
-ms.sourcegitcommit: bd3a135f061e4a49183bbebc7add41ab11872bae
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 5fc18fa93e47267d299c3b568011de5645f943da
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92300930"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092030"
 ---
 # <a name="alter-server-configuration-transact-sql"></a>ALTER SERVER CONFIGURATION (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -131,7 +131,7 @@ Spécifie qu'aucun thread n'est associé à une unité centrale. Le système d'e
 Spécifie l'unité centrale ou la plage d'unités centrales à laquelle affecter des threads.  
   
 { CPU_ID | CPU_ID  TO  CPU_ID } [ ,...n ]  
-Liste d'une ou de plusieurs unités centrales. Les ID d’unités centrales commencent à 0 et sont des valeurs de type **entier** .  
+Liste d'une ou de plusieurs unités centrales. Les ID d’unités centrales commencent à 0 et sont des valeurs de type **entier**.  
   
 NUMANODE = \<NUMA_node_range_spec>  
 Attribue des threads à toutes les unités centrales qui appartiennent au nœud NUMA spécifié ou à la page de nœuds.  
@@ -140,7 +140,7 @@ Attribue des threads à toutes les unités centrales qui appartiennent au nœud 
 Spécifie le nœud NUMA ou la plage de nœuds NUMA.  
   
 { NUMA_node_ID | NUMA_node_ID  TO NUMA_node_ID } [ ,...n ]  
-Liste d'un ou de plusieurs nœuds NUMA. Les ID de nœud NUMA commencent par 0 et sont des valeurs de type **entier** .  
+Liste d'un ou de plusieurs nœuds NUMA. Les ID de nœud NUMA commencent par 0 et sont des valeurs de type **entier**.  
   
 **\<diagnostic_log> ::=**  
   

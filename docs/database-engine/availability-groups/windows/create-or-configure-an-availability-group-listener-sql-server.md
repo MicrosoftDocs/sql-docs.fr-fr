@@ -16,12 +16,12 @@ ms.assetid: 2bc294f6-2312-4b6b-9478-2fb8a656e645
 author: cawrites
 ms.author: chadam
 manager: erikre
-ms.openlocfilehash: e8c0a889b764f81aaf8ac34cf566b52bf1e86c83
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 6e6b362f9e121f10515753d46ee098387348f272
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643271"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98091733"
 ---
 # <a name="configure-a-listener-for-an-always-on-availability-group"></a>Configurer un écouteur Always On pour un groupe de disponibilité
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -310,7 +310,7 @@ Start-Clustergroup yourListenerGroupName
   
     -   **Utilisation de Windows PowerShell pour les clusters de basculement :**  
   
-        1.  Utilisez [Add-ClusterResource](https://technet.microsoft.com/library/ee460983.aspx) pour créer les ressources de nom réseau et d’adresse IP.  
+        1.  Utilisez [Add-ClusterResource](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee460983(v=technet.10)) pour créer les ressources de nom réseau et d’adresse IP.  
   
         2.  Utilisez [Start-ClusterResource](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee461056(v=technet.10)) pour démarrer la ressource de nom réseau.  
   
@@ -328,4 +328,4 @@ Start-Clustergroup yourListenerGroupName
 
 Maintenant que vous avez créé l’écouteur, configurez votre application pour la [connecter à l’écouteur](listeners-client-connectivity-application-failover.md). Vous pouvez également examiner différentes [stratégies de supervision des groupes de disponibilité](monitoring-of-availability-groups-sql-server.md) pour garantir l’intégrité de votre groupe de disponibilité.
 
-Vous pouvez aussi [afficher les propriétés d’un écouteur](view-availability-group-listener-properties-sql-server.md) ou découvrir comment [supprimer l’écouteur](remove-an-availability-group-listener-sql-server.md), si nécessaire. 
+Vous pouvez aussi [afficher les propriétés d’un écouteur](view-availability-group-listener-properties-sql-server.md) ou découvrir comment [supprimer l’écouteur](remove-an-availability-group-listener-sql-server.md), si nécessaire.

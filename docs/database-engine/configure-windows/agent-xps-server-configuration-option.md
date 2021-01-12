@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 2e1c6c64-5ce7-4357-98c7-ac7763a9f9de
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 24af2c500ddd9a14dd5d8b1c68f7ecdefda6bc33
-ms.sourcegitcommit: 2f868a77903c1f1c4cecf4ea1c181deee12d5b15
+ms.openlocfilehash: 83182354415b7dd442acee73e91ca7e11c20ce74
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91670830"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98091732"
 ---
 # <a name="agent-xps-server-configuration-option"></a>Agent XPs (option de configuration de serveur)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -61,5 +61,4 @@ GO
   
 ## <a name="see-also"></a>Voir aussi  
  [Tâches d’administration automatisée &#40;SQL Server Agent&#41;](../../ssms/agent/automated-administration-tasks-sql-server-agent.md)   
- [Démarrer, arrêter ou suspendre le service SQL Server Agent](https://msdn.microsoft.com/library/c95a9759-dd30-4ab6-9ab0-087bb3bfb97c)  
-  
+ [Démarrer, arrêter ou suspendre le service SQL Server Agent](../../ssms/agent/start-stop-or-pause-the-sql-server-agent-service.md)  

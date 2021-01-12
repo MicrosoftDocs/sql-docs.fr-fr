@@ -9,20 +9,20 @@ ms.custom: ''
 ms.technology: integration-services
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 597792aa200edf6dcb9cfe49c95ab5e1befa0c55
-ms.sourcegitcommit: 5f3e0eca9840db20038f0362e5d88a84ff3424af
+ms.openlocfilehash: ce752b03e085ab70b033876d5c30ae3ff96d777c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92343651"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98091536"
 ---
 # <a name="sql-server-integration-services-ssis-devops-tools-azure-devops-extension"></a>Extension Azure DevOps SQL Server Integration Services (SSIS) DevOps Tools
 
-L’extension [SSIS DevOps Tools](https://marketplace.visualstudio.com/items?itemName=SSIS.ssis-devops-tools) est disponible dans la Place de Marché **Azure DevOps** .
+L’extension [SSIS DevOps Tools](https://marketplace.visualstudio.com/items?itemName=SSIS.ssis-devops-tools) est disponible dans la Place de Marché **Azure DevOps**.
 
-Si vous n’avez pas d’organisation **Azure DevOps** , vous devez tout d’abord vous inscrire à [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-sign-up?view=azure-devops), puis ajouter l’extension **SSIS DevOps Tools** en suivant [ces étapes](/azure/devops/marketplace/overview?tabs=browser&view=azure-devops#add-an-extension).
+Si vous n’avez pas d’organisation **Azure DevOps**, vous devez tout d’abord vous inscrire à [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-sign-up?view=azure-devops&preserve-view=true), puis ajouter l’extension **SSIS DevOps Tools** en suivant [ces étapes](/azure/devops/marketplace/overview?tabs=browser&view=azure-devops&preserve-view=true#add-an-extension).
 
-**SSIS DevOps Tools** inclut la tâche de **génération SSIS** , la tâche de fin de **déploiement SSIS** et la tâche de **configuration du catalogue SSIS** .
+**SSIS DevOps Tools** inclut la tâche de **génération SSIS**, la tâche de fin de **déploiement SSIS** et la tâche de **configuration du catalogue SSIS**.
 
 - La tâche de **[génération SSIS](#ssis-build-task)** prend en charge la génération de fichiers dtproj dans un modèle de déploiement de projet ou de package.
 
@@ -50,7 +50,7 @@ Si vous n’avez pas d’organisation **Azure DevOps** , vous devez tout d’abo
 
 Chemin du fichier ou dossier de projet à générer. Si un chemin de dossier est spécifié, la tâche de génération SSIS recherchera tous les fichiers dtproj de manière récursive dans ce dossier et les générera tous.
 
-Le chemin du projet ne peut pas être *vide* , défini comme **.** pour effectuer une génération à partir du dossier racine du référentiel.
+Le chemin du projet ne peut pas être *vide*, défini comme **.** pour effectuer une génération à partir du dossier racine du référentiel.
 
 #### <a name="project-configuration"></a>Configuration du projet
 
@@ -58,13 +58,13 @@ Nom de la configuration de projet à utiliser pour la génération. S’il n’e
 
 #### <a name="output-path"></a>Chemin de sortie
 
-Chemin d’un dossier distinct où seront enregistrés les résultats de la génération. Ceux-ci peuvent être publiés comme artefact de build à l’aide de la [tâche de publication d’artefacts de build](/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops).
+Chemin d’un dossier distinct où seront enregistrés les résultats de la génération. Ceux-ci peuvent être publiés comme artefact de build à l’aide de la [tâche de publication d’artefacts de build](/azure/devops/pipelines/tasks/utility/publish-build-artifacts?view=azure-devops&preserve-view=true).
 
 ### <a name="limitations-and-known-issues"></a>Limitations et problèmes connus
 
 - La tâche de génération SSIS s’appuie sur Visual Studio et le concepteur SSIS (obligatoire avec les agents de build). Ainsi, pour exécuter la tâche de génération SSIS dans le pipeline, vous devez choisir **vs2017-win2016** pour les agents hébergés par Microsoft ou installer Visual Studio et le concepteur SSIS (VS2017 + SSDT2017 ou VS2019 + extension de projets SSIS) sur les agents autohébergés.
 
-- Pour générer des projets SSIS à l’aide de composants prêts à l’emploi (quels qu’ils soient, y compris le Feature Pack SSIS Azure ou d’autres composants tiers), veillez à ce que ces composants soient installés sur l’ordinateur sur lequel s’exécute l’agent de pipeline.  Pour l’agent hébergé par Microsoft, l’utilisateur peut ajouter une [tâche de script PowerShell](/azure/devops/pipelines/tasks/utility/powershell?view=azure-devops) ou une [tâche de script de ligne de commande](/azure/devops/pipelines/tasks/utility/command-line?view=azure-devops) pour télécharger et installer les composants avant l’exécution de la tâche de génération SSIS. Voici l’exemple de script PowerShell permettant d’installer Azure Feature Pack : 
+- Pour générer des projets SSIS à l’aide de composants prêts à l’emploi (quels qu’ils soient, y compris le Feature Pack SSIS Azure ou d’autres composants tiers), veillez à ce que ces composants soient installés sur l’ordinateur sur lequel s’exécute l’agent de pipeline.  Pour l’agent hébergé par Microsoft, l’utilisateur peut ajouter une [tâche de script PowerShell](/azure/devops/pipelines/tasks/utility/powershell?view=azure-devops&preserve-view=true) ou une [tâche de script de ligne de commande](/azure/devops/pipelines/tasks/utility/command-line?view=azure-devops&preserve-view=true) pour télécharger et installer les composants avant l’exécution de la tâche de génération SSIS. Voici l’exemple de script PowerShell permettant d’installer Azure Feature Pack : 
 
 ```powershell
 wget -Uri https://download.microsoft.com/download/E/E/0/EE0CB6A0-4105-466D-A7CA-5E39FA9AB128/SsisAzureFeaturePack_2017_x86.msi -OutFile AFP.msi
@@ -90,8 +90,8 @@ Chemin des fichiers ISPAC ou SSISDeploymentManifest sources que vous souhaitez d
 
 Type de la destination. Actuellement, la tâche de déploiement SSIS prend en charge deux types :
 
-- *Système de fichiers*  : les fichiers SSISDeploymentManifest et les fichiers associés sont déployés dans un système de fichiers spécifié. Les partages de fichiers locaux et Azure sont pris en charge.
-- *SSISDB*  : les fichiers ISPAC sont déployés dans un catalogue SSIS spécifié, qui peut être hébergé sur un serveur SQL Server local ou un runtime d’intégration Azure-SSIS.
+- *Système de fichiers* : les fichiers SSISDeploymentManifest et les fichiers associés sont déployés dans un système de fichiers spécifié. Les partages de fichiers locaux et Azure sont pris en charge.
+- *SSISDB* : les fichiers ISPAC sont déployés dans un catalogue SSIS spécifié, qui peut être hébergé sur un serveur SQL Server local ou un runtime d’intégration Azure-SSIS.
 
 #### <a name="destination-server"></a>Serveur de destination
 
@@ -172,7 +172,7 @@ Pour plus de détails, consultez la section [Définir le schéma JSON de configu
 
 Chemin du fichier JSON utilisé pour la configuration du catalogue SSIS. Cette propriété est visible uniquement si vous sélectionnez « Chemin fichier » comme source du fichier de configuration.
 
-Pour utiliser des [variables de pipeline](/azure/devops/pipelines/process/variables) dans le fichier JSON de configuration, vous devez ajouter une [tâche de transformation de fichier](/azure/devops/pipelines/tasks/utility/file-transform?view=azure-devops) avant cette tâche, ce qui a pour effet de remplacer les valeurs de configuration par les variables de pipeline. Pour plus d’informations, consultez la section [Substitution de variables JSON](/azure/devops/pipelines/tasks/transforms-variable-substitution?tabs=Classic&view=azure-devops#json-variable-substitution).
+Pour utiliser des [variables de pipeline](/azure/devops/pipelines/process/variables) dans le fichier JSON de configuration, vous devez ajouter une [tâche de transformation de fichier](/azure/devops/pipelines/tasks/utility/file-transform?view=azure-devops&preserve-view=true) avant cette tâche, ce qui a pour effet de remplacer les valeurs de configuration par les variables de pipeline. Pour plus d’informations, consultez la section [Substitution de variables JSON](/azure/devops/pipelines/tasks/transforms-variable-substitution?tabs=Classic&view=azure-devops&preserve-view=true#json-variable-substitution).
 
 #### <a name="inline-configuration-json"></a>Fichier JSON inline de configuration
 
@@ -314,8 +314,8 @@ Le schéma JSON de configuration comporte trois couches :
 |Property  |Description  |Notes  |
 |---------|---------|---------|
 |name|Nom du paramètre.|<li>Le paramètre peut être un paramètre de projet ou un paramètre de package. <li>Le paramètre est ignoré s’il n’existe pas. <li>Si le paramètre est une propriété du gestionnaire de connexions, le nom doit être au format suivant : **CM.\<Connection Manager Name>.\<Property Name>** . |
-|conteneur|Conteneur du paramètre.|<li>Si le paramètre est un paramètre de projet, le *conteneur* doit être le nom du projet. <li>S’il s’agit d’un paramètre de package, le *conteneur* doit être le nom du package avec l’extension **.dtsx** .|
-|value|Valeur du paramètre.|<li>Quand *valueType* est *referenced*  : la valeur est une référence à une variable d’environnement avec le type *string* . <li> Quand *valueType* est *literal*  : cet attribut prend en charge toutes les valeurs JSON de type *boolean* , *number* ou *string* valides. <li> La valeur est convertie au type du paramètre cible. Une erreur se produit si la valeur ne peut pas être convertie.<li> La valeur *Null* n’est pas valide. La tâche ignore cet objet paramètre et génère un avertissement.|
+|conteneur|Conteneur du paramètre.|<li>Si le paramètre est un paramètre de projet, le *conteneur* doit être le nom du projet. <li>S’il s’agit d’un paramètre de package, le *conteneur* doit être le nom du package avec l’extension **.dtsx**.|
+|value|Valeur du paramètre.|<li>Quand *valueType* est *referenced* : la valeur est une référence à une variable d’environnement avec le type *string*. <li> Quand *valueType* est *literal* : cet attribut prend en charge toutes les valeurs JSON de type *boolean*, *number* ou *string* valides. <li> La valeur est convertie au type du paramètre cible. Une erreur se produit si la valeur ne peut pas être convertie.<li> La valeur *Null* n’est pas valide. La tâche ignore cet objet paramètre et génère un avertissement.|
 |valueType|Type de la valeur du paramètre.|Les types valides sont : <br> *literal* (littéral) : l’attribut *value* représente une valeur littérale. <br> *referenced* (référencé) : l’attribut *value* représente une référence à une variable d’environnement.|
 
 ##### <a name="reference-attributes"></a>Attributs de référence
@@ -340,7 +340,7 @@ Le schéma JSON de configuration comporte trois couches :
 |name|Nom de la variable d’environnement.|La variable d’environnement est créée si elle n’existe pas.|
 |type|Type de données de la variable d’environnement.|Les types valides sont : <br> *boolean* <br> *byte* <br> *datetime* <br> Décimal <br> *double* <br> *int16* <br> *int32* <br> *int64* <br> *sbyte* <br> *single* <br> *string* <br> *uint32* <br> *uint64*|
 |description|Description de la variable d’environnement.|La valeur *Null* est ignorée.|
-|value|Valeur de la variable d’environnement.|Cet attribut prend en charge toutes les valeurs JSON de type boolean, number ou string valides.<br> La valeur est convertie au type spécifié par l’attribut **type** . Une erreur se produit en cas d’échec de la conversion.<br>La valeur *Null* n’est pas valide. La tâche ignore cet objet variable d’environnement et génère un avertissement.|
+|value|Valeur de la variable d’environnement.|Cet attribut prend en charge toutes les valeurs JSON de type boolean, number ou string valides.<br> La valeur est convertie au type spécifié par l’attribut **type**. Une erreur se produit en cas d’échec de la conversion.<br>La valeur *Null* n’est pas valide. La tâche ignore cet objet variable d’environnement et génère un avertissement.|
 |sensible|Détermine si la valeur de la variable d’environnement est sensible.|Les entrées valides sont : <br> *true* <br> *false*|
 
 ## <a name="release-notes"></a>Notes de publication

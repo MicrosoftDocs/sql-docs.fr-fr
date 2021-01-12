@@ -14,12 +14,12 @@ f1_keywords:
 ms.assetid: 31de555f-ae62-4f2f-a6a6-77fea1fa8189
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 63e40e66003737798c444f220058feceab69411a
-ms.sourcegitcommit: 22e97435c8b692f7612c4a6d3fe9e9baeaecbb94
+ms.openlocfilehash: b22910f0a794925d07358fa73f3bd6d7a7c6e15a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92678922"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98091659"
 ---
 # <a name="azure-feature-pack-for-integration-services-ssis"></a>Le Feature Pack SQL Server Integration Services (SSIS) pour Azure
 
@@ -28,7 +28,7 @@ ms.locfileid: "92678922"
 
 Le Feature Pack SQL Server Integration Services (SSIS) pour Azure est une extension qui fournit les composants répertoriés dans cette page afin de permettre à SSIS de se connecter aux services Azure, de transférer des données entre des sources de données Azure et locales, et de traiter des données stockées dans Azure.
 
-[![Télécharger le Feature Pack SSIS pour Azure](https://docs.microsoft.com/analysis-services/analysis-services/media/download.png)](https://www.microsoft.com/download/details.aspx?id=100430) **Télécharger**
+[![Télécharger le Feature Pack SSIS pour Azure](/analysis-services/analysis-services/media/download.png)](https://www.microsoft.com/download/details.aspx?id=100430) **Télécharger**
 
 - Pour SQL Server 2019 : [Feature Pack Microsoft SQL Server 2019 Integration Services pour Azure](https://www.microsoft.com/download/details.aspx?id=100430)
 - Pour SQL Server 2017 : [Feature Pack Microsoft SQL Server 2017 Integration Services pour Azure](https://www.microsoft.com/download/details.aspx?id=54798)
@@ -112,17 +112,17 @@ Les builds Java suivantes ont été testées.
 
 1. Téléchargez et extrayez le package compressé d’installation.
 2. À partir de l’invite de commandes, exécutez `sysdm.cpl`.
-3. Sous l’onglet **Avancé** , sélectionnez **Variables d’environnement**.
-4. Sous la section **Variables système** , sélectionnez **Nouveau**.
+3. Sous l’onglet **Avancé**, sélectionnez **Variables d’environnement**.
+4. Sous la section **Variables système**, sélectionnez **Nouveau**.
 5. Entrez `JAVA_HOME` pour le **Nom de la variable**.
-6. Sélectionnez **Parcourir les répertoires** , accédez au dossier extrait et sélectionnez le sous-dossier `jre`.
+6. Sélectionnez **Parcourir les répertoires**, accédez au dossier extrait et sélectionnez le sous-dossier `jre`.
    Sélectionnez ensuite **OK** et la **valeur de la variable** est automatiquement renseignée.
 7. Sélectionnez **OK** pour fermer la boîte de dialogue **Nouvelle Variable système**.
 8. Sélectionnez **OK** pour fermer la boîte de dialogue **Variables d’environnement**.
 9. Sélectionnez **OK** pour fermer la boîte de dialogue **Propriétés du système**.
 
 > [!TIP]
-> Si, en utilisant le format Parquet, vous obtenez une erreur indiquant « An error occurred when invoking java, message: **java.lang.OutOfMemoryError:Java heap space**  », vous pouvez ajouter une variable d'environnement *`_JAVA_OPTIONS`* afin d’ajuster la taille de segment de mémoire minimale/maximale nécessaire pour la machine virtuelle Java.
+> Si, en utilisant le format Parquet, vous obtenez une erreur indiquant « An error occurred when invoking java, message: **java.lang.OutOfMemoryError:Java heap space** », vous pouvez ajouter une variable d'environnement *`_JAVA_OPTIONS`* afin d’ajuster la taille de segment de mémoire minimale/maximale nécessaire pour la machine virtuelle Java.
 >
 >![jvm heap](media/azure-feature-pack-jvm-heap-size.png)
 >
@@ -149,7 +149,7 @@ powershell.exe -file install_openjdk.ps1
 ~~~
 
 > [!TIP]
-> Si, en utilisant le format Parquet, vous obtenez une erreur indiquant « An error occurred when invoking java, message: **java.lang.OutOfMemoryError:Java heap space**  », vous pouvez ajouter une commande *`main.cmd`* afin d’ajuster la taille de segment de mémoire minimale/maximale nécessaire pour la machine virtuelle Java. Exemple :
+> Si, en utilisant le format Parquet, vous obtenez une erreur indiquant « An error occurred when invoking java, message: **java.lang.OutOfMemoryError:Java heap space** », vous pouvez ajouter une commande *`main.cmd`* afin d’ajuster la taille de segment de mémoire minimale/maximale nécessaire pour la machine virtuelle Java. Exemple :
 > ~~~
 > setx /M _JAVA_OPTIONS "-Xms256m -Xmx16g"
 > ~~~

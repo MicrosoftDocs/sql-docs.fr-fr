@@ -23,14 +23,14 @@ helpviewer_keywords:
 - messages [Service Broker], sending
 - sending messages
 ms.assetid: b6e66aeb-1714-4c2b-b7c2-d386d77b0d46
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: a7e4c9c6b58b8dd6853aa545ca457e8ae1ced74c
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 25ef934ae04ca8ba9cc9c4dee9f488341a1eb352
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "89538022"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98091829"
 ---
 # <a name="send-transact-sql"></a>SEND (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

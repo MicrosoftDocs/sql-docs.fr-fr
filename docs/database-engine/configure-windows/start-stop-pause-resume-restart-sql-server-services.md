@@ -41,12 +41,12 @@ ms.assetid: 32660a02-e5a1-411a-9e57-7066ca459df6
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.openlocfilehash: e971592b20dd2321e4265752cb8b01c38387b639
-ms.sourcegitcommit: 2f868a77903c1f1c4cecf4ea1c181deee12d5b15
+ms.openlocfilehash: 697cf043c4582796015b061c857145c214d105fb
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91670752"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98091752"
 ---
 # <a name="start-stop-pause-resume-restart-sql-server-services"></a>Démarrer, arrêter, suspendre, reprendre, redémarrer les services SQL Server
 
@@ -130,7 +130,7 @@ Dans le menu **Démarrer** , pointez sur **Tous les programmes**, sur **Microsof
 
 3. Dans le Gestionnaire de configuration SQL Server, dans le volet gauche, cliquez sur **Services SQL Server**.
 
-4. Dans le volet de résultats, cliquez avec le bouton droit sur **SQL Server (MSSQLServer)** ou sur une instance nommée, puis cliquez sur **Démarrer**, **Arrêter**, **Suspendre**, **Reprendre**ou **Redémarrer**.
+4. Dans le volet de résultats, cliquez avec le bouton droit sur **SQL Server (MSSQLServer)** ou sur une instance nommée, puis cliquez sur **Démarrer**, **Arrêter**, **Suspendre**, **Reprendre** ou **Redémarrer**.
 
 5. Cliquez sur **OK** pour fermer le Gestionnaire de configuration SQL Server.
 
@@ -342,7 +342,7 @@ Pour plus d’informations sur l’instruction **SHUTDOWN**, consultez [SHUTDOWN
   
 ##  <a name="using-service-controller-class"></a><a name="ServiceController"></a> Utilisation de la classe ServiceController
 
-Vous pouvez utiliser la classe ServiceController pour contrôler le service SQL Server ou tout autre service Windows. Pour obtenir un exemple sur la façon de procéder, consultez [ServiceController, classe](/dotnet/api/system.serviceprocess.servicecontroller?view=netframework-4.8).
+Vous pouvez utiliser la classe ServiceController pour contrôler le service SQL Server ou tout autre service Windows. Pour obtenir un exemple sur la façon de procéder, consultez [ServiceController, classe](/dotnet/api/system.serviceprocess.servicecontroller).
 
 ## <a name="manage-the-sql-server-service-on-linux"></a>Gérer le service SQL Server sur Linux
 

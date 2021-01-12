@@ -28,14 +28,14 @@ helpviewer_keywords:
 - binding rules [SQL Server]
 - rules [SQL Server], creating
 ms.assetid: b016a289-3a74-46b1-befc-a13183be51e4
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: e0b6c3ae3d269b8617d3d032c8aa2d947c211834
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 9fc137ea5a6c2b48a523f758619c129133b6a4eb
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124019"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98091981"
 ---
 # <a name="create-rule-transact-sql"></a>CREATE RULE (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
