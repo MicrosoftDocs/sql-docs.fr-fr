@@ -15,12 +15,12 @@ ms.assetid: e1d03d74-2572-4a55-afd6-7edf0bc28bdb
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 9f462f256c98c4482af67527401cc6d30f3f0776
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 281fe018c5c2d5e0717fb2c35dfcc8c3c9e8c3fc
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465380"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98100230"
 ---
 # <a name="in-memory-oltp-and-memory-optimization"></a>OLTP en mémoire et optimisation de la mémoire
 
@@ -56,7 +56,7 @@ Pour une présentation plus détaillée de l’OLTP en mémoire et un examen des
 |[Exemples de code OLTP en mémoire](./sample-database-for-in-memory-oltp.md)|Contient des exemples de code qui montrent comment créer et utiliser une table optimisée en mémoire.|  
 |[Tables à mémoire optimisée](./sample-database-for-in-memory-oltp.md)|Présente les tables optimisées en mémoire.|  
 |[Variables de table optimisée en mémoire](./faster-temp-table-and-table-variable-by-using-memory-optimization.md)|L'exemple de code illustre comment utiliser une variable de table optimisée en mémoire plutôt qu'une variable de table traditionnelle pour réduire l'utilisation de tempdb.|  
-|[Index sur des tables optimisées en mémoire](/sql/relational-databases/in-memory-oltp/indexes-for-memory-optimized-tables)|Présente les index optimisés en mémoire.|  
+|[Index sur des tables optimisées en mémoire](./indexes-for-memory-optimized-tables.md)|Présente les index optimisés en mémoire.|  
 |[Procédures stockées compilées en mode natif](./a-guide-to-query-processing-for-memory-optimized-tables.md)|Présente les procédures stockées compilées en mode natif.|  
 |[Gestion de la mémoire pour l’OLTP en mémoire](/previous-versions/sql/sql-server-2016/dn465872(v=sql.130))|Comprendre et gérer l'utilisation de la mémoire sur votre système.|  
 |[Création et gestion du stockage des objets à mémoire optimisée](../../relational-databases/in-memory-oltp/creating-and-managing-storage-for-memory-optimized-objects.md)|Traite des fichiers de données et delta, qui stockent les informations sur les transactions dans les tables optimisées en mémoire.|  
@@ -136,4 +136,3 @@ Les étapes générales présentées dans la vidéo sont les suivantes :
 
 ## <a name="see-also"></a>Voir aussi  
  [Fonctionnalités de base de données](../databases/databases.md)  
-  

@@ -19,14 +19,14 @@ helpviewer_keywords:
 - ALTER SERVICE statement
 - services [Service Broker], modifying
 ms.assetid: 2b4608f7-bb2e-4246-aa29-b52c55995b3a
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: c6a9ed30e92358d269fa4d6c0e270bd4a16e3bdb
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 746e1aa7215acd584e6512c3e39fb79014b7821b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96126251"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98100256"
 ---
 # <a name="alter-service-transact-sql"></a>ALTER SERVICE (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

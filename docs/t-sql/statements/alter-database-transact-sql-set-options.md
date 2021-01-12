@@ -28,15 +28,15 @@ helpviewer_keywords:
 - auto_update_statistics
 - Query Store options
 ms.assetid: f76fbd84-df59-4404-806b-8ecb4497c9cc
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||=azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azure-sqldw-latest||=azuresqldb-mi-current
-ms.openlocfilehash: 97139ed9331853a5d84d261c69510993fb7231a2
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 652a4b13db3fdd98b774a5c884e68848a3b0b847
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642261"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099566"
 ---
 # <a name="alter-database-set-options-transact-sql"></a>Options SET d’ALTER DATABASE (Transact-SQL)
 
@@ -2005,10 +2005,6 @@ Vous ne pouvez pas modifier l’état de ALLOW_SNAPSHOT_ISOLATION si la base de 
 
 Si vous configurez ALLOW_SNAPSHOT_ISOLATION dans une base de données en lecture seule (READ_ONLY), le paramètre est conservé si la base de données devient par la suite accessible en lecture et en écriture (READ_WRITE).
 
-Vous pouvez modifier les paramètres de ALLOW_SNAPSHOT_ISOLATION pour les bases de données master, model, msdb et tempdb. Le paramètre est conservé à chaque arrêt et redémarrage de l’instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] si vous changez le paramètre pour la base de données tempdb. Si vous modifiez le paramètre pour la base de données model, il devient le paramètre par défaut pour toutes les nouvelles bases de données créées à l'exception de tempdb.
-
-Cette option a la valeur ON par défaut pour les bases de données master et msdb.
-
 La valeur actuelle de cette option peut être déterminée en examinant la colonne `snapshot_isolation_state` dans la vue de catalogue [sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md).
 
 READ_COMMITTED_SNAPSHOT { ON | OFF }     
@@ -2809,7 +2805,7 @@ Définit le temps UC de compilation écoulé total utilisé par une requête pen
 TOTAL_EXECUTION_CPU_TIME_MS     
 Définit le temps UC d’exécution écoulé total utilisé par une requête pendant la période d’évaluation. La valeur par défaut est 100 ; ainsi, pour la durée de validité par défaut de la stratégie de capture, une requête doit avoir un total d’au moins 100 ms de temps processeur écoulé pendant l’exécution dans une même journée pour devenir persistante dans le Magasin des requêtes. TOTAL_EXECUTION_CPU_TIME_MS est de type **int**.
 
-**\<snapshot_option> ::=**
+**\<snapshot_option>**
 
 Détermine le niveau d'isolation de la transaction.
 

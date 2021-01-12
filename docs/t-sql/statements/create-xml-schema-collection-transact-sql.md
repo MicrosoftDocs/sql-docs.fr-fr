@@ -24,14 +24,14 @@ helpviewer_keywords:
 - multiple schema namespaces
 - XML schema collections [SQL Server], creating
 ms.assetid: 350684e8-b3f6-4b58-9dbc-0f05cc776ebb
-author: MightyPen
-ms.author: genemi
-ms.openlocfilehash: cb9a8dbb4b67a514d56febaed13a33d7f7eb2a8a
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 44cfb98daf253a1229d8fd4510b22e8d765c5db4
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96131379"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099452"
 ---
 # <a name="create-xml-schema-collection-transact-sql"></a>CREATE XML SCHEMA COLLECTION (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

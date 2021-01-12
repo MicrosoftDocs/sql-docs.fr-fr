@@ -20,14 +20,14 @@ helpviewer_keywords:
 - contracts [Service Broker], creating
 - message types [Service Broker], contracts
 ms.assetid: 494cbfa6-8e93-4161-a64d-90d681915211
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 63c809cdc5b676e87b50e13b7ba67a9577e66e6a
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 3541197e5c74ebf5c5bc2ad38c43770028fbd43b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124106"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099527"
 ---
 # <a name="create-contract-transact-sql"></a>CREATE CONTRACT (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

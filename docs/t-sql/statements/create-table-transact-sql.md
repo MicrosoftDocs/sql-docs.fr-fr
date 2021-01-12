@@ -46,14 +46,14 @@ helpviewer_keywords:
 - maximum number of bytes per row
 - data retention policy
 ms.assetid: 1e068443-b9ea-486a-804f-ce7b6e048e8b
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 9fb4195047df5e996cbef4a3fbceb1367172df6b
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 6a16e0db4d25dabd0d364eb4d6ec1efd22386f92
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97490079"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099526"
 ---
 # <a name="create-table-transact-sql"></a>CREATE TABLE (Transact-SQL)
 

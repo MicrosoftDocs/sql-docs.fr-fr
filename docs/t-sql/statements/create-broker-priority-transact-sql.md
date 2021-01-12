@@ -24,14 +24,14 @@ dev_langs:
 helpviewer_keywords:
 - CREATE BROKER PRIORITY statement
 ms.assetid: e0bbebfa-b7c3-4825-8169-7281f7e6de98
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 9c50ce97995322a025feb1e201682717d7d2234d
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: b027d1e0472a2154eaff8540e5dcc4b93f7be930
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96126169"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98100207"
 ---
 # <a name="create-broker-priority-transact-sql"></a>CREATE BROKER PRIORITY (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

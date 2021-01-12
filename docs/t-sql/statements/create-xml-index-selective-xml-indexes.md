@@ -11,14 +11,14 @@ ms.topic: language-reference
 dev_langs:
 - TSQL
 ms.assetid: 1f510151-41d5-45c2-9cd0-b1ca0246fffe
-author: MightyPen
-ms.author: genemi
-ms.openlocfilehash: e9d6b7434c8daf3e1236e5a16368f175ded765f1
-ms.sourcegitcommit: ac9feb0b10847b369b77f3c03f8200c86ee4f4e0
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: f6f0033a1fb5944fa61460fa3945b0ebdaf0bce3
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90688062"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099467"
 ---
 # <a name="create-xml-index-selective-xml-indexes"></a>CREATE XML INDEX (index XML sélectifs)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

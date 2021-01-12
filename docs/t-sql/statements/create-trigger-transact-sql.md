@@ -25,15 +25,15 @@ helpviewer_keywords:
 - triggers [SQL Server], creating
 - database-scoped triggers [SQL Server]
 ms.assetid: edeced03-decd-44c3-8c74-2c02f801d3e7
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 ms.reviewer: mathoma
-ms.openlocfilehash: dd33ad9e7cb64f11dfc70314ea7e72c1b8cbc067
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: c7bdee119d34181a59d8717957c228e6d24facdc
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89541346"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099524"
 ---
 # <a name="create-trigger-transact-sql"></a>CREATE TRIGGER (Transact-SQL)
 
@@ -262,7 +262,7 @@ Les déclencheurs DDL et de connexion capturent des informations sur l’événe
 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] autorise la mise à jour des colonnes **text**, **ntext**, ou **image** via le déclencheur INSTEAD OF sur des tables ou des vues.  
   
 > [!IMPORTANT]
->  Les types de données**ntext**, **text** et **image** seront supprimés dans une version ultérieure de [!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Évitez d'utiliser ces types de données dans un nouveau développement. Prévoyez de modifier les applications qui les utilisent actuellement. Utilisez plutôt les types de données [nvarchar(max)](../../t-sql/data-types/nchar-and-nvarchar-transact-sql.md), [varchar(max)](../../t-sql/data-types/char-and-varchar-transact-sql.md)et [varbinary(max)](../../t-sql/data-types/binary-and-varbinary-transact-sql.md) . Les déclencheurs AFTER et INSTEAD OF prennent tous les deux en charge les données **varchar(MAX)** , **nvarchar(MAX)** et **varbinary(MAX)** dans les tables inserted et deleted.  
+>  Les types de données **ntext**, **text** et **image** seront supprimés dans une version ultérieure de [!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Évitez d'utiliser ces types de données dans un nouveau développement. Prévoyez de modifier les applications qui les utilisent actuellement. Utilisez plutôt les types de données [nvarchar(max)](../../t-sql/data-types/nchar-and-nvarchar-transact-sql.md), [varchar(max)](../../t-sql/data-types/char-and-varchar-transact-sql.md)et [varbinary(max)](../../t-sql/data-types/binary-and-varbinary-transact-sql.md) . Les déclencheurs AFTER et INSTEAD OF prennent tous les deux en charge les données **varchar(MAX)** , **nvarchar(MAX)** et **varbinary(MAX)** dans les tables inserted et deleted.  
   
 Pour les déclencheurs sur les tables optimisées en mémoire, la seule instruction *sql_statement* autorisée au niveau supérieur est un bloc ATOMIC. Le code T-SQL autorisé dans le bloc ATOMIC est limité par le code T-SQL autorisé dans les procédures natives.  
   
