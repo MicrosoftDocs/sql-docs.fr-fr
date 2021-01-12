@@ -18,19 +18,19 @@ dev_langs:
 helpviewer_keywords:
 - sys.xml_schema_wildcards catalog view
 ms.assetid: 7cedfe9a-e99e-4777-8a28-98674b6e5cff
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 706db88cdc82c7b67105826091f826c62e7f3311
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 2cc2f255b528e07d075b29a3aabc0a110e2ba867
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548624"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097817"
 ---
 # <a name="sysxml_schema_wildcards-transact-sql"></a>sys.xml_schema_wildcards (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Retourne une ligne par composant de schéma XML qui est un attribut-caractère générique (**genre** of **V**) ou élément-caractère générique (**type** of **W**), avec **symbol_space** de **N**.  
+  Retourne une ligne par composant de schéma XML qui est un Attribute-Wildcard (**genre** de **V**) ou Element-Wildcard **(genre** de **W**), avec **symbol_space** de **N**.  
   
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  

@@ -12,14 +12,14 @@ dev_langs:
 helpviewer_keywords:
 - FileTables [SQL Server], dynamic management views
 ms.assetid: e50a135d-6644-42a4-a0df-1c7a2b722051
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 268499cff0d6d967134cd8d28a6842df04fba0cd
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 3af7a4d72a93d2c44f470f83f6a0010737d3adcc
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89544844"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099029"
 ---
 # <a name="filestream-and-filetable-dynamic-management-views-transact-sql"></a>Vues de gestion dynamique liées à Filestream et FileTable (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

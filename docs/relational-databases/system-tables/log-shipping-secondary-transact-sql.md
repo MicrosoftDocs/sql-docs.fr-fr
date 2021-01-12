@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - log_shipping_secondary system table
 ms.assetid: 69723419-4544-49c6-a517-adb30ffa5741
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 9df385c0d17040aec67fd4032eda16672f6081a8
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: c4a19cbdd26e1c93e0f132c419e3fb2b2e4294a8
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89544544"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097438"
 ---
 # <a name="log_shipping_secondary-transact-sql"></a>log_shipping_secondary (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

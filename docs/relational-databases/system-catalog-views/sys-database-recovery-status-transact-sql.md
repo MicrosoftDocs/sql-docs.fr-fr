@@ -1,6 +1,6 @@
 ---
 description: sys.database_recovery_status (Transact-SQL)
-title: sys. database_recovery_status (Transact-SQL) | Microsoft Docs
+title: sys.database_recovery_status (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 08/12/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.database_recovery_status catalog view
 ms.assetid: 46fab234-1542-49be-8edf-aa101e728acf
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 9246b77c26e3e926f907266e08dc141e78d195a9
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 5e9c968ff33c47f81eb84b2f5cd73e2483b7af56
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89542559"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098037"
 ---
 # <a name="sysdatabase_recovery_status-transact-sql"></a>sys.database_recovery_status (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

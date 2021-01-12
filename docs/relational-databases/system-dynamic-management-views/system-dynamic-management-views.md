@@ -22,15 +22,15 @@ helpviewer_keywords:
 - server scoped dynamic management objects [SQL Server]
 - dynamic management objects [SQL Server]
 ms.assetid: cf893ecb-0bf6-4cbf-ac00-8a1099e405b1
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 689bdf52034b23b69676b6c0007981e47cb9389e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 422984471491d402102942304c06f37ef1a14727
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440640"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098864"
 ---
 # <a name="system-dynamic-management-views"></a>Vues de gestion dynamique système
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

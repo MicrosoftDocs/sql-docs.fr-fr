@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - MSpublications system table
 ms.assetid: 7a0b3457-7265-4f24-a255-7f055d908f20
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 0d11bb73f18dc750f32c6f7ba2ee02487324e946
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 089270c4c95b35e25f44339a7f001b5ac194ec01
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89524332"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098172"
 ---
 # <a name="mspublications-transact-sql"></a>MSpublications (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.partition_range_values catalog view
 ms.assetid: 9aee483e-61f3-4613-bec6-f084161f45ac
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 0617f01056af48341e616f10fca1cadabdf98299
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 1859396f6b071bdc7ee8c252398eae6f0434721d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97458499"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096769"
 ---
 # <a name="syspartition_range_values-transact-sql"></a>sys.partition_range_values (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

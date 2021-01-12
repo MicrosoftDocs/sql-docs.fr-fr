@@ -9,15 +9,15 @@ ms.topic: language-reference
 dev_langs:
 - TSQL
 ms.assetid: fac4720c-b679-4ab2-864b-ff7810a9b559
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 5ff3ffe4c6afbf00cad2bb543acaf800e7040b11
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 443086b2deb37b8c1cce1170e2869fe09db81560
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477490"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098347"
 ---
 # <a name="sysexternal_tables-transact-sql"></a>sys.external_tables (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa-pdw.md)]

@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - MStracer_tokens system table
 ms.assetid: b273aa48-8188-4213-8e2c-311543c3236f
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 5c004c7a578e1fd2a21cd44f8149d2f850dec8d1
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: cf6c1736531f926fa5871e56fdcefb7322289897
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547038"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098094"
 ---
 # <a name="mstracer_tokens-transact-sql"></a>MStracer_tokens (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

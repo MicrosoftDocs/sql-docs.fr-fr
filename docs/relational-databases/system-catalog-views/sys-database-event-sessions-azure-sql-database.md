@@ -7,15 +7,15 @@ ms.service: sql-database
 ms.reviewer: ''
 ms.topic: language-reference
 ms.assetid: 02c2cd71-d35e-4d4c-b844-92b240f768f4
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: b5307138766f1c05aa084e38deeaf07feff2c635
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 194b8e87700980c6af64985dc2b53b0d916bc01e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97458527"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098364"
 ---
 # <a name="sysdatabase_event_sessions-azure-sql-database"></a>sys.database_event_sessions (Azure SQL Database)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]

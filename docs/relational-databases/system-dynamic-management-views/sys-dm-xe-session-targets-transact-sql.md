@@ -1,6 +1,6 @@
 ---
 description: sys.dm_xe_session_targets (Transact-SQL)
-title: sys. dm_xe_session_targets (Transact-SQL) | Microsoft Docs
+title: sys.dm_xe_session_targets (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ helpviewer_keywords:
 - sys.dm_xe_session_targets dynamic management view
 - extended events [SQL Server], views
 ms.assetid: 76fbc3e1-ad88-4a47-8bf1-471c3bee5ad8
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: cd4c7cfee0fc50412bb1d36f0209a8cbad35345d
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 041cf14bcefff0d294cd7c4f4f037870d1513552
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89536863"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098867"
 ---
 # <a name="sysdm_xe_session_targets-transact-sql"></a>sys.dm_xe_session_targets (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "89536863"
   
 ### <a name="relationship-cardinalities"></a>Cardinalités de la relation  
   
-|Du|À|Relation|  
+|Du|À|Relationship|  
 |----------|--------|------------------|  
 |sys.dm_xe_session_targets.event_session_address|sys.dm_xe_sessions.address|Plusieurs-à-un|  
   

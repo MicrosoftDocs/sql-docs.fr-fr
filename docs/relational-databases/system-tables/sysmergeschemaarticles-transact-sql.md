@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - sysmergeschemaarticles system table
 ms.assetid: b5085979-2f76-48e1-bf3b-765a84003dd9
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 690ffd7f583c008ff68138211f3181b607a1687b
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 98dc783b78d26d040789cc3dc46f2f53aaa4dc7c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547056"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097378"
 ---
 # <a name="sysmergeschemaarticles-transact-sql"></a>sysmergeschemaarticles (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

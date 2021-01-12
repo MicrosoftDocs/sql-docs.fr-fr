@@ -1,6 +1,6 @@
 ---
 description: sys.dm_xe_objects (Transact-SQL)
-title: sys. dm_xe_objects (Transact-SQL) | Microsoft Docs
+title: sys.dm_xe_objects (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ helpviewer_keywords:
 - sys.dm_xe_objects dynamic management view
 - extended events [SQL Server], views
 ms.assetid: 5d944b99-b097-491b-8cbd-b0e42b459ec0
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: a0df750dd3f582e712c41a01ce1406586b2cecf6
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 6e54e02ec730fae0f57a8be8976d7fa694824bd0
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89536886"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098869"
 ---
 # <a name="sysdm_xe_objects-transact-sql"></a>sys.dm_xe_objects (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "89536886"
  |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
 |name|**nvarchar(60)**|Nom de l'objet. le nom est unique au sein d’un package pour un type d’objet spécifique. N'accepte pas la valeur NULL.|  
-|object_type|**nvarchar(60)**|Type de l'objet. object_type est l’un des éléments suivants :<br /><br /> event<br /><br /> action<br /><br /> target<br /><br /> pred_source<br /><br /> pred_compare<br /><br /> type<br /><br /> N'accepte pas la valeur NULL.|  
+|object_type|**nvarchar(60)**|Type de l'objet. object_type est l’un des éléments suivants :<br /><br /> événement<br /><br /> action<br /><br /> target<br /><br /> pred_source<br /><br /> pred_compare<br /><br /> type<br /><br /> N'accepte pas la valeur NULL.|  
 |package_guid|**uniqueidentifier**|GUID pour le package qui expose cette action. Il y a une relation plusieurs-à-un avec sys.dm_xe_packages.package_id. N'accepte pas la valeur NULL.|  
 |description|**nvarchar (256)**|Description de l'action la description est définie par l’auteur du package. N'accepte pas la valeur NULL.|  
 |capabilities|**int**|Bitmap qui décrit les fonctionnalités de l'objet. Autorise la valeur NULL.|  
@@ -59,7 +59,7 @@ ms.locfileid: "89536886"
   
 ### <a name="relationship-cardinalities"></a>Cardinalités de la relation  
   
-|Du|À|Relation|  
+|Du|À|Relationship|  
 |----------|--------|------------------|  
 |sys.dm_xe_objects.package_guid|sys.dm_xe_packages.guid|Plusieurs-à-un|  
   

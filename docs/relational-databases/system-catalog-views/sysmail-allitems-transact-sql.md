@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - sysmail_allitems database mail view
 ms.assetid: 21fb8432-7677-4435-902f-64a58bba4cbb
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 9eb8d8b48203b047df830670eb88b0956d04c4dc
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 6bc9b58549bbc20fe66caaf2adc61edd4345acd7
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89537955"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096654"
 ---
 # <a name="sysmail_allitems-transact-sql"></a>sysmail_allitems (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

@@ -21,15 +21,15 @@ helpviewer_keywords:
 - user-defined table types [SQL Server]
 - table types [SQL Server]
 ms.assetid: f8d6163a-2474-410c-a794-997639f31b3b
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: fc2a9d5ef268d806a9e7a0f6b78df58539d69a4b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 450832d26a75b119424ee63fcc5fa56d23b95e2d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461680"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096815"
 ---
 # <a name="sysobjects-transact-sql"></a>sys.objects (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "97461680"
 |is_published|**bit**|L'objet est publié.|  
 |is_schema_published|**bit**|Seul le schéma de l'objet est publié.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Vous pouvez appliquer les fonctions intégrées [object_id](../../t-sql/functions/object-id-transact-sql.md), [object_name](../../t-sql/functions/object-name-transact-sql.md)et [OBJECTPROPERTY](../../t-sql/functions/objectproperty-transact-sql.md)() aux objets affichés dans sys. Objects.  
   
  Il existe une version de cette vue avec le même schéma, appelé [sys.system_objects](../../relational-databases/system-catalog-views/sys-system-objects-transact-sql.md), qui affiche des objets système. Il existe une autre vue appelée [sys.ALL_OBJECTS](../../relational-databases/system-catalog-views/sys-all-objects-transact-sql.md) qui affiche les objets système et utilisateur. Ces trois affichages catalogue ont la même structure.  

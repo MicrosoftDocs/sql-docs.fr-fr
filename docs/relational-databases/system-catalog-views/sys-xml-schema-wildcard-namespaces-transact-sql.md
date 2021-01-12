@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.xml_schema_wildcard_namespaces catalog view
 ms.assetid: a3caa932-41c7-48a9-9b2d-ff090afbb66b
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: ea04c90be9d3fb597c912e74de8c97ad12100e4f
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: e7b0638674e0a84d293d5389efb17de1832c664d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89519058"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097829"
 ---
 # <a name="sysxml_schema_wildcard_namespaces-transact-sql"></a>sys.xml_schema_wildcard_namespaces (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

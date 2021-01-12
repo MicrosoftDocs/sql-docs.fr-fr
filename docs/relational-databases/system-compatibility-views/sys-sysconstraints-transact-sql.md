@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sys.sysconstraints compatibility view
 - sysconstraints system table
 ms.assetid: f2b2e2ad-ba24-48a1-913c-8ee4e0895dc4
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 8a50f67470a91af617ae76baadf1a029bfa56b59
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 3014430aad20c74d22a72e1756503baadbe7cb68
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88423333"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099129"
 ---
 # <a name="syssysconstraints-transact-sql"></a>sys.sysconstraints (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - MSrepl_backup_Isns system table
 ms.assetid: de06c349-82a8-48c6-b602-b5d6938514f6
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 743657bad9cf4c0bd1611e7f00f1d410753583ce
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: eb1f556b5b7a1373664f44aaaa1ff4608b96d2d8
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540249"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098218"
 ---
 # <a name="msrepl_backup_lsns-transact-sql"></a>MSrepl_backup_lsns (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

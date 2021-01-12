@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - sysmail_event_log database mail view
 ms.assetid: 440bc409-1188-4175-afc4-c68e31e44fed
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 0a28f2c0f250dcb1ab1f9d5d26866400a43891af
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 58c8e734ed9acdef41b22772c8d3955b825a46de
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89544901"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096634"
 ---
 # <a name="sysmail_event_log-transact-sql"></a>sysmail_event_log (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

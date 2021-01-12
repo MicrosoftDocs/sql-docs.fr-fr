@@ -1,6 +1,6 @@
 ---
 description: sys.dm_resource_governor_configuration (Transact-SQL)
-title: sys. dm_resource_governor_configuration (Transact-SQL) | Microsoft Docs
+title: sys.dm_resource_governor_configuration (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -17,14 +17,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_resource_governor_configuration dynamic management view
 ms.assetid: c89aab6a-0434-4ce6-af8c-f8a1a3284e38
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 10afeea81e957b4a87eaa5466c6211adff40775e
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 8e49c5a5c5fde8bcbb75393146420323b6bf1c8d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546503"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098818"
 ---
 # <a name="sysdm_resource_governor_configuration-transact-sql"></a>sys.dm_resource_governor_configuration (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -67,7 +67,7 @@ go
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [sys. resource_governor_configuration &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-resource-governor-configuration-transact-sql.md)   
+ [sys.resource_governor_configuration &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-resource-governor-configuration-transact-sql.md)   
  [gouverneur de ressources](../../relational-databases/resource-governor/resource-governor.md)  
   
   

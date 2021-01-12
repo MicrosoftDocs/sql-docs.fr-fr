@@ -17,14 +17,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_clr_appdomains dynamic management dynamic management view
 ms.assetid: 9fe0d4fd-950a-4274-a493-85e776278045
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 7f1357535d22306f09f8378e8e71aef6801975ae
-ms.sourcegitcommit: 32135463a8494d9ed1600a58f51819359e3c09dc
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: ae934fc3b9d8f7664e2542450ee1456298548c85
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91834099"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097763"
 ---
 # <a name="sysdm_clr_appdomains-transact-sql"></a>sys.dm_clr_appdomains (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -59,13 +59,13 @@ ms.locfileid: "91834099"
   
 ## <a name="appdomain-initialization"></a>Initialisation du domaine d'application AppDomain  
   
-|State|Description|  
+|État|Description|  
 |-----------|-----------------|  
 |E_APPDOMAIN_CREATING|**AppDomain** est en cours de création.|  
   
 ## <a name="appdomain-usage"></a>Utilisation du domaine d'application AppDomain  
   
-|State|Description|  
+|État|Description|  
 |-----------|-----------------|  
 |E_APPDOMAIN_SHARED|L' **AppDomain** du runtime est prêt à être utilisé par plusieurs utilisateurs.|  
 |E_APPDOMAIN_SINGLEUSER|L' **AppDomain** est prêt à être utilisé dans les opérations DDL. Ceux-ci diffèrent d'E_APPDOMAIN_SHARED en ceci que les domaines d'application AppDomains partagés sont utilisés pour les exécutions d'intégration du CLR par opposition aux opérations DDL. Ces domaines d'application AppDomains sont isolés d'autres opérations simultanées.|  
@@ -73,10 +73,10 @@ ms.locfileid: "91834099"
   
 ## <a name="appdomain-cleanup"></a>Suppression du domaine d'application AppDomain  
   
-|State|Description|  
+|État|Description|  
 |-----------|-----------------|  
-|E_APPDOMAIN_UNLOADING|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] a demandé que le CLR décharge le **domaine**d’application AppDomain, généralement parce que l’assembly qui contient les objets de base de données managés a été modifié ou supprimé.|  
-|E_APPDOMAIN_UNLOADED|Le CLR a déchargé l' **AppDomain**. C’est généralement le résultat d’une procédure de remontée en raison de **ThreadAbort**, **OutOfMemory**ou d’une exception non gérée dans le code utilisateur.|  
+|E_APPDOMAIN_UNLOADING|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] a demandé que le CLR décharge le **domaine** d’application AppDomain, généralement parce que l’assembly qui contient les objets de base de données managés a été modifié ou supprimé.|  
+|E_APPDOMAIN_UNLOADED|Le CLR a déchargé l' **AppDomain**. C’est généralement le résultat d’une procédure de remontée en raison de **ThreadAbort**, **OutOfMemory** ou d’une exception non gérée dans le code utilisateur.|  
 |E_APPDOMAIN_ENQUEUE_DESTROY|**AppDomain** a été déchargé dans CLR et a été défini pour être détruit par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .|  
 |E_APPDOMAIN_DESTROY|Le **domaine** d’application AppDomain est en cours de destruction par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .|  
 |E_APPDOMAIN_ZOMBIE|L' **AppDomain** a été détruit par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ; Toutefois, toutes les références à **AppDomain** n’ont pas été nettoyées.|  
@@ -96,7 +96,7 @@ where appdomain_address =
    where assembly_id = 500);  
 ```  
   
- L’exemple suivant montre comment afficher tous les assemblys d’un **AppDomain**donné :  
+ L’exemple suivant montre comment afficher tous les assemblys d’un **AppDomain** donné :  
   
 ```  
 select a.name, a.assembly_id, a.permission_set_desc, a.is_visible, a.create_date, l.load_time   

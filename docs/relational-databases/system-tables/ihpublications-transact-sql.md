@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - IHpublications system table
 ms.assetid: b519a101-fa53-44be-bd55-6ea79245b5d1
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 61a1845ac54b42148b468462835cf041844007bc
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: a97462b4224244633a945f2108370b8c4f549f63
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540953"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098238"
 ---
 # <a name="ihpublications-transact-sql"></a>IHpublications (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "89540953"
 |**conflict_retention**|**int**|Spécifie la durée de rétention des conflits en jours. *Non pris en charge pour les serveurs de publication non SQL.*|  
 |**conflict_policy**|**int**|Spécifie la stratégie de résolution de conflits à suivre lorsque l'option d'abonné avec mise à jour en attente est utilisée. Peut prendre l'une des valeurs suivantes :<br /><br /> **1** = le serveur de publication gagne le conflit.<br /><br /> **2** = l’abonné gagne le conflit.<br /><br /> **3** = l’abonnement est réinitialisé.<br /><br /> *Non pris en charge pour les serveurs de publication non SQL.*|  
 |**queue_type**|**int**|Spécifie le type de file d'attente utilisé. Peut prendre l'une des valeurs suivantes :<br /><br /> **1** = MSMQ, qui utilise [!INCLUDE[msCoName](../../includes/msconame-md.md)] Message Queuing pour stocker les transactions.<br /><br /> **2** = SQL, qui utilise [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour stocker les transactions.<br /><br /> Cette colonne n’est pas utilisée par les serveurs de publication non- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .<br /><br /> Remarque : l’utilisation [!INCLUDE[msCoName](../../includes/msconame-md.md)] de Message Queuing est dépréciée et n’est plus prise en charge.<br /><br /> *Cette colonne n’est pas prise en charge pour les serveurs de publication non-SQL.*|  
-|**ad_guidname**|**sysname**|Spécifie si la publication est publiée dans l'annuaire [!INCLUDE[msCoName](../../includes/msconame-md.md)] Active Directory. Un identificateur global unique (GUID) valide spécifie que la publication est publiée dans le [!INCLUDE[msCoName](../../includes/msconame-md.md)] Active Directory, et le GUID correspond à l' **objectGUID**d’objet de publication Active Directory correspondante. Si la valeur est NULL, la publication n'est pas publiée dans l'annuaire [!INCLUDE[msCoName](../../includes/msconame-md.md)] Active Directory. *Non pris en charge pour les serveurs de publication non SQL.*|  
+|**ad_guidname**|**sysname**|Spécifie si la publication est publiée dans l'annuaire [!INCLUDE[msCoName](../../includes/msconame-md.md)] Active Directory. Un identificateur global unique (GUID) valide spécifie que la publication est publiée dans le [!INCLUDE[msCoName](../../includes/msconame-md.md)] Active Directory, et le GUID correspond à l' **objectGUID** d’objet de publication Active Directory correspondante. Si la valeur est NULL, la publication n'est pas publiée dans l'annuaire [!INCLUDE[msCoName](../../includes/msconame-md.md)] Active Directory. *Non pris en charge pour les serveurs de publication non SQL.*|  
 |**backward_comp_level**|**int**|Le niveau de compatibilité des bases de données peut avoir une des valeurs suivantes :<br /><br /> **90**  =  [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] .<br /><br /> **100**  =  [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] .<br /><br /> *Non pris en charge pour les serveurs de publication non SQL.*|  
 |**description**|**nvarchar(255)**|Entrée décrivant la publication.|  
 |**independent_agent**|**bit**|Spécifie s’il existe un Agent de distribution autonome pour cette publication.<br /><br /> **0** = la publication utilise un agent de distribution partagé, et chaque paire base de données du serveur de publication/base de données de l’abonné possède un seul agent partagé.<br /><br /> **1** = il existe un agent de distribution autonome pour cette publication.|  

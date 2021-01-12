@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - MSmerge_tombstone system table
 ms.assetid: 8b3fc7bf-729b-40f2-8a26-e7dfbe8ddb38
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: dc137583386c4b098960d762484ef526f2f95f14
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 2b8f54ce66145ddc298bb44594c48f74ddd62be0
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89545549"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098592"
 ---
 # <a name="msmerge_tombstone-transact-sql"></a>MSmerge_tombstone (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

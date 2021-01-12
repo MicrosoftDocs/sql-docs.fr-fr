@@ -19,15 +19,15 @@ helpviewer_keywords:
 - sys.sysdatabases compatibility view
 - sysdatabases system table
 ms.assetid: 60a93880-62f1-4eda-a886-f046706ba90c
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: ebee2c9eba8870dbb3b95712d69eaa1e09e2a563
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 2a5ed7033605db917f972e83bcf6c014c49f52bd
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477340"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099141"
 ---
 # <a name="syssysdatabases-transact-sql"></a>sys.sysdatabases (Transact-SQL)
 [!INCLUDE [sql-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdbmi-asa-pdw.md)]

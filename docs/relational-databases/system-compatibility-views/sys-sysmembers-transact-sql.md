@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sysmembers system table
 - sys.sysmembers compatibility view
 ms.assetid: ceb18341-f985-4849-ac83-21d67ab7b980
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 9d528e9479b5a193baccf6ccf26c327f53016fd6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 5f49eb7408d1740ee36c2dad925cb66511eb4011
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88399325"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099039"
 ---
 # <a name="syssysmembers-transact-sql"></a>sys.sysmembers (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

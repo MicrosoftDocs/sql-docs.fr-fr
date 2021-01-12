@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sysfiles system table
 - sys.sysfiles compatibility view
 ms.assetid: 3b47f38d-1cff-404d-89d3-9342c451c802
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: dfc6430023a4123e029ebdec4f2fca56491b3632
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 862ffbdd0967068ef1b8345176edb4551e542196
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88455103"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099065"
 ---
 # <a name="syssysfiles-transact-sql"></a>sys.sysfiles (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

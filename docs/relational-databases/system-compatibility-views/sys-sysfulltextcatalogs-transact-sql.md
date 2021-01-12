@@ -19,15 +19,15 @@ helpviewer_keywords:
 - sys.sysfulltextcatalogs compatibility view
 - sysfulltextcatalogs system table
 ms.assetid: 18ac6ad5-01e8-428f-8422-a9ca29626977
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 466fa0bd2bb88477a1b539a935b6ce14ebcfbd9c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 55cff7bda96f39e91d95ae80564f48226e2e89fc
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97479020"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099068"
 ---
 # <a name="syssysfulltextcatalogs-transact-sql"></a>sys.sysfulltextcatalogs (Transact-SQL)
 [!INCLUDE [sql-asdbmi-pdw](../../includes/applies-to-version/sql-asdbmi-pdw.md)]

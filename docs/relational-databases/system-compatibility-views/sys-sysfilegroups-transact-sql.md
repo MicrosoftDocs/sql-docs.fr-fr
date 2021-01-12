@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sysfilegroups system table
 - sys.sysfilegroups compatibility view
 ms.assetid: e567fa07-31cd-43cc-b8c7-ba6108baca80
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: de9252c9a63b419a28f61aad2401471fa5f5c778
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 609563f4998215367649a33cfc5136b8edd0e26b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88427901"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099104"
 ---
 # <a name="syssysfilegroups-transact-sql"></a>sys.sysfilegroups (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

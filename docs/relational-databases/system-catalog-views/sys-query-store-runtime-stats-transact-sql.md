@@ -19,15 +19,15 @@ helpviewer_keywords:
 - query_store_runtime_stats catalog view
 - sys.query_store_runtime_stats catalog view
 ms.assetid: ccf7a57c-314b-450c-bd34-70749a02784a
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: ebcb684b424bf7ca3de384ad57b82c0c48b538f2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8a6f0f21100ca68575c8db8dcde8e70f688d0ef5
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97404421"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098009"
 ---
 # <a name="sysquery_store_runtime_stats-transact-sql"></a>sys.query_store_runtime_stats (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa.md)]

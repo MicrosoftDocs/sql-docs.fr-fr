@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - fn_syscollector_get_execution_stats function
 ms.assetid: 793ad72c-a992-4a8d-8584-bcb6b3b476f1
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: d9d6bb073cc237fff2a859c37316a981e4b5d88f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 47a90958d7de27e087df3768949a5defa148c8f4
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88447511"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097486"
 ---
 # <a name="fn_syscollector_get_execution_stats-transact-sql"></a>fn_syscollector_get_execution_stats (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "88447511"
   
  Les statistiques sont calculées à partir des entrées de la vue syscollector_execution_stats.  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

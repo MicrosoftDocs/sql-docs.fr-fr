@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - sysmergepublications system table
 ms.assetid: 7f82c6c3-22d1-47c0-a92b-4d64b98cc455
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 4f079b7ea36d55f978db4c802efb3c8c4283eab3
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 0b2a7e7783ffb67688041a6da39ea99f945a607f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540221"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097335"
 ---
 # <a name="sysmergepublications-transact-sql"></a>sysmergepublications (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -66,7 +66,7 @@ ms.locfileid: "89540221"
 |**allow_synctoalternate**|**bit**|Spécifie si un partenaire de synchronisation différent est autorisé pour se synchroniser avec le serveur de publication. **0** signifie qu’un partenaire de synchronisation n’est pas autorisé.|  
 |**validate_subscriber_info**|**nvarchar (500)**|Donne la liste des fonctions utilisées pour extraire les informations d'Abonné et valider les critères de filtre de lignes paramétrable sur l'Abonné.|  
 |**ad_guidname**|**sysname**|Spécifie si la publication est publiée dans l'annuaire [!INCLUDE[msCoName](../../includes/msconame-md.md)] Active Directory. Un GUID valide spécifie que la publication est publiée dans le Active Directory et que le GUID correspond à l’objet de publication Active Directory **objectGUID**. Si la valeur est NULL, la publication n'est pas publiée dans l'annuaire Active Directory.|  
-|**backward_comp_level**|**int**|Niveau de compatibilité de la base de données. Il peut s'agir de l'une des valeurs suivantes :<br /><br /> **90**  =  [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] .<br /><br /> **100**  =  [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] .|  
+|**backward_comp_level**|**int**|Niveau de compatibilité de la base de données. Peut avoir l’une des valeurs suivantes :<br /><br /> **90**  =  [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] .<br /><br /> **100**  =  [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] .|  
 |**max_concurrent_merge**|**int**|Nombre maximal de processus de fusion simultanés autorisés. La valeur **0** pour cette propriété signifie qu’il n’y a aucune limite au nombre de processus de fusion simultanés en cours d’exécution à un moment donné. Cette propriété définit une limite sur le nombre de processus de fusion simultanés qui peuvent être exécutés sur une publication de fusion à un moment donné. Si, au même moment, le nombre de processus d'instantané planifiés dépasse le nombre maximal autorisé, les travaux en excès sont placés dans une file d'attente jusqu'à achèvement d'un processus de fusion en cours.|  
 |**max_concurrent_dynamic_snapshots**|**int**|Nombre maximal de sessions d'instantanés de données filtrées simultanées autorisées exécutables sur la publication de fusion. Si la **valeur est 0**, le nombre maximal de sessions d’instantanés de données filtrées simultanées pouvant être exécutées simultanément sur la publication n’est pas limité à un moment donné. Cette propriété permet de définir un nombre maximal de processus d'instantané simultanés exécutables sur une publication de fusion à un moment donné. Si, au même moment, le nombre de processus d'instantané planifiés dépasse le nombre maximal autorisé, les travaux en excès sont placés dans une file d'attente jusqu'à achèvement d'un processus de fusion en cours.|  
 |**use_partition_groups**|**smallint**|Spécifie si la publication utilise des partitions précalculées.|  

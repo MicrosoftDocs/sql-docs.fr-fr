@@ -17,14 +17,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_os_memory_brokers dynamic management view
 ms.assetid: 48dd6ad9-0d36-4370-8a12-4921d0df4b86
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: fdf1b7c25f6bad8947433106d789a04583f2c722
-ms.sourcegitcommit: 2991ad5324601c8618739915aec9b184a8a49c74
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 63944b66dc5b36d5fcdd09dba293aeaf6eab989e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97321674"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097605"
 ---
 # <a name="sysdm_os_memory_brokers-transact-sql"></a>sys.dm_os_memory_brokers (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

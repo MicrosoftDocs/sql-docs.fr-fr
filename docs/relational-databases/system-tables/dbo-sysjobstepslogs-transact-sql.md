@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sysjobstepslogs system table
 ms.assetid: 128c25db-0b71-449d-bfb2-38b8abcf24a0
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 067edf1d3c58df81eac4e49a6ea8d73385d7e21c
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 815133f093a108d7f1e4b9841ffbd3310b3dd758
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89544569"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097417"
 ---
 # <a name="dbosysjobstepslogs-transact-sql"></a>dbo.sysjobstepslogs (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

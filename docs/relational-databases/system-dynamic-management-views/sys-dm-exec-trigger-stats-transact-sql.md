@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_exec_trigger_stats dynamic management function
 ms.assetid: 863498b4-849c-434d-b748-837411458738
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 1977e0310074842cdd1af8f1bc7b1888e8443966
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 04a931ffe95e58f0db20de619df48f16464f1e01
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482720"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097685"
 ---
 # <a name="sysdm_exec_trigger_stats-transact-sql"></a>sys.dm_exec_trigger_stats (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "97482720"
 |**max_page_server_reads**|**bigint**|Nombre maximal de lectures de serveur de pages effectuées par ce déclencheur lors d’une seule exécution.<br /><br /> **S’applique à**: Azure SQL Database hyperscale|  
 
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Dans [!INCLUDE[ssSDS](../../includes/sssds-md.md)], les vues de gestion dynamique ne peuvent pas exposer des informations qui ont un impact sur la relation contenant-contenu de la base de données, ou exposer des informations concernant d'autres bases de données auxquelles l'utilisateur a accès. Pour éviter d’exposer ces informations, chaque ligne qui contient des données qui n’appartiennent pas au locataire connecté est filtrée.  
 
 Les statistiques de la vue sont actualisées lorsqu'une requête est terminée.  

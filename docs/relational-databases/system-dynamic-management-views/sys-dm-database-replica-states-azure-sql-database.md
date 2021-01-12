@@ -1,6 +1,6 @@
 ---
 description: sys.dm_database_replica_states (Azure SQL Database)
-title: sys. dm_database_replica_states (Azure SQL Database) | Microsoft Docs
+title: sys.dm_database_replica_states (Azure SQL Database) | Microsoft Docs
 ms.custom: ''
 ms.date: 05/22/2019
 ms.prod: sql
@@ -17,14 +17,14 @@ dev_langs:
 helpviewer_keywords:
 - Availability Groups [SQL Server], monitoring
 - sys.dm_database_replica_states dynamic management view
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 217f9e691ceb0da86834eb452d6b608fdbb8f091
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 4ce500e9a149844ee6516aac82975e0bbe1b6e7c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89537668"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097768"
 ---
 # <a name="sysdm_database_replica_states-azure-sql-database"></a>sys.dm_database_replica_states (Azure SQL Database)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]

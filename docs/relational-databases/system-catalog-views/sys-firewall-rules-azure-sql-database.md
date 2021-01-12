@@ -16,15 +16,15 @@ helpviewer_keywords:
 - firewall_rules
 - sys.firewall_rules
 ms.assetid: 140d2cd8-9aa1-4cc5-870d-e1dbc873b3fe
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: b7e08498a9f3867c03c2198957af0ac35f9a0a01
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 351ca530c49051b61b6f44b8dc2fbff83623cf8f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477430"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097989"
 ---
 # <a name="sysfirewall_rules-azure-sql-database"></a>sys_firewall_rules (Azure SQL Database)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "97477430"
 |create_date|**Date/heure**|Date et heure UTC auxquelles le paramètre de pare-feu au niveau serveur a été créé.<br /><br /> Remarque : l’heure UTC est un acronyme de temps universel coordonné.|  
 |modify_date|**Date/heure**|Date et heure UTC auxquelles le paramètre de pare-feu au niveau serveur a été modifié la dernière fois.|  
   
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Notes
 
  Pour renvoyer des informations sur les paramètres de pare-feu au niveau de la base de données associés à votre Microsoft Azure SQL Database, utilisez [sys.database_firewall_rules &#40;Azure SQL Database&#41;](../../relational-databases/system-catalog-views/sys-database-firewall-rules-azure-sql-database.md).  
   

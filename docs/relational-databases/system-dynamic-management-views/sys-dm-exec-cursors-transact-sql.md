@@ -1,6 +1,6 @@
 ---
 description: sys.dm_exec_cursors (Transact-SQL)
-title: sys. dm_exec_cursors (Transact-SQL) | Microsoft Docs
+title: sys.dm_exec_cursors (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 08/09/2016
 ms.prod: sql
@@ -17,14 +17,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_exec_cursors dynamic management function
 ms.assetid: f520b63c-36af-40f1-bf71-6901d6331d3d
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 351f97ed08d1a6a79f8611d19842dc93138277ce
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 8ab1ed9e722f2363c0568932e7eb337bc09dbe41
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543926"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098998"
 ---
 # <a name="sysdm_exec_cursors-transact-sql"></a>sys.dm_exec_cursors (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -53,8 +53,8 @@ dm_exec_cursors (session_id | 0 )
 |**name**|**nvarchar (256)**|Nom du curseur, défini par l'utilisateur.|  
 |**properties**|**nvarchar (256)**|Spécifie les propriétés du curseur. Les valeurs des propriétés suivantes sont concaténées pour former la valeur de cette colonne :<br />Interface déclaration<br />Type de curseur <br />Accès simultané au curseur<br />Étendue du curseur<br />Niveau d'imbrication du curseur<br /><br /> Par exemple, la valeur retournée dans cette colonne peut être « TSQL &#124; Dynamic &#124; OPTIMISTIC &#124; global (0) ».|  
 |**sql_handle**|**varbinary(64)**|Descripteur du texte du traitement qui a déclaré le curseur.|  
-|**statement_start_offset**|**int**|Nombre de caractères dans le traitement ou la procédure stockée en cours d'exécution où les instructions en cours d'exécution commencent. Peut être utilisé avec l' **sql_handle**, le **statement_end_offset**et la fonction de gestion dynamique [sys. dm_exec_sql_text](../../relational-databases/system-dynamic-management-views/sys-dm-exec-sql-text-transact-sql.md) pour récupérer l’instruction en cours d’exécution pour la demande.|  
-|**statement_end_offset**|**int**|Nombre de caractères dans le traitement ou la procédure stockée en cours d'exécution où les instructions en cours d'exécution se terminent. Peut être utilisé avec l' **sql_handle**, le **statement_start_offset**et la fonction de gestion dynamique **sys. dm_exec_sql_text** pour récupérer l’instruction en cours d’exécution pour la demande.|  
+|**statement_start_offset**|**int**|Nombre de caractères dans le traitement ou la procédure stockée en cours d'exécution où les instructions en cours d'exécution commencent. Peut être utilisé avec l' **sql_handle**, le **statement_end_offset** et la fonction de gestion dynamique [sys.dm_exec_sql_text](../../relational-databases/system-dynamic-management-views/sys-dm-exec-sql-text-transact-sql.md) pour récupérer l’instruction en cours d’exécution pour la demande.|  
+|**statement_end_offset**|**int**|Nombre de caractères dans le traitement ou la procédure stockée en cours d'exécution où les instructions en cours d'exécution se terminent. Peut être utilisé avec l' **sql_handle**, le **statement_start_offset** et la fonction de gestion dynamique **sys.dm_exec_sql_text** pour récupérer l’instruction en cours d’exécution pour la demande.|  
 |**plan_generation_num**|**bigint**|Numéro de séquence permettant de distinguer les instances de plans après une recompilation.|  
 |**creation_time**|**datetime**|Heure de création du curseur.|  
 |**is_open**|**bit**|Indique si le curseur est ouvert.|  
@@ -102,7 +102,7 @@ dm_exec_cursors (session_id | 0 )
 |Étendue|Description|  
 |-----------|-----------------|  
 |Local|Spécifie que l'étendue du curseur est locale pour le traitement d'instructions, la procédure stockée ou le déclencheur dans lequel il a été créé.|  
-|Global|Spécifie que l'étendue du curseur est globale pour la connexion.|  
+|Globale|Spécifie que l'étendue du curseur est globale pour la connexion.|  
   
 ## <a name="examples"></a>Exemples  
   

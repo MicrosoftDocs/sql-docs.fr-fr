@@ -1,6 +1,6 @@
 ---
 description: sys.server_event_session_targets (Transact-SQL)
-title: sys. server_event_session_targets (Transact-SQL) | Microsoft Docs
+title: sys.server_event_session_targets (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: sql
@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sys.server_event_session_targets catalog view
 - xe
 ms.assetid: dda4879d-57ae-4267-b410-1ef5c37404c7
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 931941d6d660f90030211c9baa47907cf7531007
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: a3b36cfd632ec01ab483021f7ee9705d7871540d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551396"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097893"
 ---
 # <a name="sysserver_event_session_targets-transact-sql"></a>sys.server_event_session_targets (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]
@@ -47,9 +47,9 @@ ms.locfileid: "89551396"
 ## <a name="remarks"></a>Notes  
  Cette vue a les cardinalités de relation suivantes.  
   
-| Du | À | Relation |
+| Du | À | Relationship |
 | ---- | -- | ------------ |
-|sys.server_event_session_targets.event_session_id|sys. server_event_sessions. event_session_id|Plusieurs-à-un|  
+|sys.server_event_session_targets.event_session_id|sys.server_event_sessions sys.server_event_sessions.event_session_id|Plusieurs-à-un|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)   

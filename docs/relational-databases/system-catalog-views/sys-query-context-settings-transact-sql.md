@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.query_context_settings catalog view
 ms.assetid: 3c1887df-6bd8-491e-82fc-d25ad9589faf
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: c9a75482de33f2366963ed6ba6977dbb57d991de
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 510f508b8d0048b1e13aa544a3c07f20f3a1d44c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97404288"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098339"
 ---
 # <a name="sysquery_context_settings-transact-sql"></a>sys.query_context_settings (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa.md)]

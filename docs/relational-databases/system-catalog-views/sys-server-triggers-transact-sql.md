@@ -1,6 +1,6 @@
 ---
 description: sys.server_triggers (Transact-SQL)
-title: sys. server_triggers (Transact-SQL) | Microsoft Docs
+title: sys.server_triggers (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.server_triggers catalog view
 ms.assetid: 25926ff4-9271-45bf-bc32-d5d3344bd47a
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 6850c9d406dd461f967d8297dcd5a49fdb5c3993
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 2c7d1187c7182b185b2780d237ea52bd725e2601
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89545033"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099209"
 ---
 # <a name="sysserver_triggers-transact-sql"></a>sys.server_triggers (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

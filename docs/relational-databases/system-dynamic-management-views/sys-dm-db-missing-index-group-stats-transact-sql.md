@@ -19,15 +19,15 @@ helpviewer_keywords:
 - sys.dm_db_missing_index_group_stats dynamic management view
 - missing indexes feature [SQL Server], sys.dm_db_missing_index_group_stats dynamic management view
 ms.assetid: c2886986-9e07-44ea-a350-feeac05ee4f4
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: f91bc4e1698fe6a0b96f7b92931d84769d4d7351
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a1c1e0236316970d953d5267d22e5598b0cbb215
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97462770"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097742"
 ---
 # <a name="sysdm_db_missing_index_group_stats-transact-sql"></a>sys.dm_db_missing_index_group_stats (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "97462770"
 |**avg_total_system_cost**|**float**|Coût moyen des requêtes système qui pourrait être réduit grâce à l'index du groupe.|  
 |**avg_system_impact**|**float**|Bénéfice moyen (en pourcentage) dont les requêtes système pourraient tirer parti si ce groupe d'index manquants était implémenté. Cela signifie que le coût des requêtes diminuerait, en moyenne, de la valeur de ce pourcentage si ce groupe d'index manquants était implémenté.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Les informations retournées par **sys.dm_db_missing_index_group_stats** sont mises à jour par chaque exécution de requête, et non par chaque compilation ou recompilation de requête. Les statistiques d'utilisation ne sont pas conservées de manière permanente ; elles sont simplement conservées jusqu'au redémarrage de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les administrateurs de base de données doivent effectuer régulièrement des copies de sauvegarde des informations sur les index manquants s'ils souhaitent conserver les statistiques d'utilisation après le recyclage du serveur.  
 
   >[!NOTE]

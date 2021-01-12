@@ -16,15 +16,15 @@ dev_langs:
 helpviewer_keywords:
 - MSpeer_topologyresponse
 ms.assetid: 1bc5c0c6-c432-405c-89fd-e953d173a247
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 82f44d74f896ee1d7b394d7e5dc8102aa7726856
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 7ed1924b2e9708b39c4c47081f6f1296b50736b3
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464570"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098629"
 ---
 # <a name="mspeer_topologyresponse-transact-sql"></a>MSpeer_topologyresponse (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

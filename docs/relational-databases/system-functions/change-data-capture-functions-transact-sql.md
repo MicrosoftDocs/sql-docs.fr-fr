@@ -13,14 +13,14 @@ dev_langs:
 helpviewer_keywords:
 - change data capture [SQL Server], functions
 ms.assetid: e5270557-aca3-44ab-8715-daccd498b88d
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 466ee70540b93e50e1dea62be5beab6599d5bfb5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: de8544cec3cb1dd3ee5e3c78eff73c4bfe3b0fd3
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88498180"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098777"
 ---
 # <a name="change-data-capture-functions-transact-sql"></a>Fonctions de capture de données modifiées (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

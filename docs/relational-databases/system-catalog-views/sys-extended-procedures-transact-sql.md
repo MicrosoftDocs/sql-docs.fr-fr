@@ -1,6 +1,6 @@
 ---
 description: sys.extended_procedures (Transact-SQL)
-title: sys. extended_procedures (Transact-SQL) | Microsoft Docs
+title: sys.extended_procedures (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,19 +18,19 @@ dev_langs:
 helpviewer_keywords:
 - sys.extended_procedures catalog view
 ms.assetid: 310e0f87-0044-4fdf-bd12-51a723a74ce6
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 1edc9a52c610c3a72660fb899d6f74470c1c00c4
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 39bc02ba64b2f88b35b335b23125e0ad636d17fa
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551444"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096797"
 ---
 # <a name="sysextended_procedures-transact-sql"></a>sys.extended_procedures (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Contient une ligne pour chaque objet qui est une procédure stockée étendue, avec **sys. Objects. type** = X. Étant donné que les procédures stockées étendues sont installées dans la base de données **Master** , elles sont uniquement visibles à partir de ce contexte de base de données. La sélection de la vue **sys. extended_procedures** dans tout autre contexte de base de données renverra un jeu de résultats vide.  
+  Contient une ligne pour chaque objet qui est une procédure stockée étendue, avec **sys. Objects. type** = X. Étant donné que les procédures stockées étendues sont installées dans la base de données **Master** , elles sont uniquement visibles à partir de ce contexte de base de données. La sélection de la vue **sys.extended_procedures** dans tout autre contexte de base de données renvoie un jeu de résultats vide.  
 
   
 |Nom de la colonne|Type de données|Description|  

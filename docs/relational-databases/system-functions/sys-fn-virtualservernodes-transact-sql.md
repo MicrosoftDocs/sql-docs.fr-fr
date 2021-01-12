@@ -21,15 +21,15 @@ helpviewer_keywords:
 - fn_virtualservernodes function
 - sys.fn_virtualservernodes function
 ms.assetid: 257f3b8d-93c0-4444-87f1-ea211bd8cad0
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 3b1f721eeb58fbb2d1b072a4156511bf24b191cb
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 2096c3d2c7a73ef76598037a24780b9fe577760f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482493"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098732"
 ---
 # <a name="sysfn_virtualservernodes-transact-sql"></a>sys.fn_virtualservernodes (Transact-SQL)
 [!INCLUDE [sql-asdbmi-pdw](../../includes/applies-to-version/sql-asdbmi-pdw.md)]

@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.filegroups catalog view
 ms.assetid: 9e851f72-1f8e-4515-a25d-152ebc12ed56
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: d5e55e91e0a2ad031236f3d5fc7a255e9752f2a2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 205103ac734d4c5fe0028b85ad7e24c10cd9adea
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97473020"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098394"
 ---
 # <a name="sysfilegroups-transact-sql"></a>sys.filegroups (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

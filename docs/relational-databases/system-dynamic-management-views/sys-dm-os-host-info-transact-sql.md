@@ -17,15 +17,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_os_host_info dynamic management view
 ms.assetid: 9bb6ef86-957b-4ca1-ad20-ca2f8460a86d
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=sql-server-2017||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: ee91975b31d16845c56f27e872998809fb252838
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 41462fd558a30639342dc75be5bb68a44fcedf67
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97468390"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097559"
 ---
 # <a name="sysdm_os_host_info-transact-sql"></a>sys.dm_os_host_info (Transact-SQL)
 [!INCLUDE[SQL Server 2017](../../includes/applies-to-version/sqlserver2017.md)]
@@ -41,7 +41,7 @@ Retourne une ligne qui affiche les informations sur la version du système d’e
 |**host_sku**|**int**|ID de référence (SKU) Windows. Pour obtenir la liste des ID et des descriptions des références SKU, consultez [fonction GetProductInfo](/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo). Autorise la valeur NULL. <br> Pour Linux, retourne la valeur NULL. |  
 |**os_language_version**|**int**|Identificateur des paramètres régionaux (LCID) du système d'exploitation. Pour obtenir la liste des valeurs et des descriptions des LCID, consultez [ID de paramètres régionaux attribués par Microsoft](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c). Ne peut pas être null.|  
 
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
 Cette vue est similaire à [sys.dm_os_windows_info](../../relational-databases/system-dynamic-management-views/sys-dm-os-windows-info-transact-sql.md), à ajouter des colonnes pour différencier Windows et Linux.
   
 ## <a name="security"></a>Sécurité  

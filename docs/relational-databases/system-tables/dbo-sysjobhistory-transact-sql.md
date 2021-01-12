@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sysjobhistory system table
 ms.assetid: 1b1fcdbb-2af2-45e6-bf3f-e8279432ce13
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 5b24fc8ef4511e6519cb715e1ba261f4444fd200
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 6fa83e3df6cf6f05420341c497c8b3bfd2a481df
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89544597"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098710"
 ---
 # <a name="dbosysjobhistory-transact-sql"></a>dbo.sysjobhistory (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

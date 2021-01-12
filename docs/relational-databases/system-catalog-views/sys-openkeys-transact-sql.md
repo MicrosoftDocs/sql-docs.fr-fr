@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.openkeys catalog view
 ms.assetid: 719a1259-2398-4fcb-ba05-aeabba7aec21
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 7da45ef149fdd32cb16602bbd2aa3151e53ca4b2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9a9770b2982bde2237a0a5d5c4d44e154f8ce609
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97404985"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096810"
 ---
 # <a name="sysopenkeys-transact-sql"></a>sys.openkeys (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

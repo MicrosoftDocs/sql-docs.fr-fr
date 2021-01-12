@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.xml_indexes catalog view
 ms.assetid: 3408de72-b067-4fda-b5d5-8e856dfd9db3
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 1ceda15c69bd989172ad3fbb05e8c696fd9750aa
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 4e83cc5aa28c8d657237893a036da84ec1f4c944
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546708"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097917"
 ---
 # <a name="sysxml_indexes-transact-sql"></a>sys.xml_indexes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

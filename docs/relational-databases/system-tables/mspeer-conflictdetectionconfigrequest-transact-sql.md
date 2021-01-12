@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - MSpeer_conflictdetectionconfigurerequest
 ms.assetid: 83afa0ca-707e-4468-a888-228268ed4e10
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 2ad027934c2ff0a0009512334c0d7d1a89a7bcb7
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: a8e6d22946599946dda10afcd1d5c46318c0342a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540325"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098564"
 ---
 # <a name="mspeer_conflictdetectionconfigrequest-transact-sql"></a>MSpeer_conflictdetectionconfigrequest (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sysproxies system table
 ms.assetid: a73da875-be22-45fc-b5e2-ea7ebd48e2d6
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: d806ed58647b8c22edd28be44e85790b1962e32a
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 3d04cd1822a9c7e0edc309a3500e800b2df58fd0
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540407"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098313"
 ---
 # <a name="dbosysproxies-transact-sql"></a>dbo.sysproxies (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -1,6 +1,6 @@
 ---
 description: sys.dm_hadr_database_replica_cluster_states (Transact-SQL)
-title: sys. dm_hadr_database_replica_cluster_states (Transact-SQL) | Microsoft Docs
+title: sys.dm_hadr_database_replica_cluster_states (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -19,19 +19,19 @@ helpviewer_keywords:
 - Availability Groups [SQL Server], WSFC clusters
 - sys.dm_hadr_database_replica_cluster_states dynamic management view
 ms.assetid: 6f719071-ebce-470d-aebd-1f55ee8cd70a
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 11f2e6ddb0a51170ebf9da0ed4f5f9d673359e03
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: f97172a1f417b237a8e1ee4d16fc573cd94f571d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543867"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097664"
 ---
 # <a name="sysdm_hadr_database_replica_cluster_states-transact-sql"></a>sys.dm_hadr_database_replica_cluster_states (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Retourne une ligne contenant les informations destinées à vous fournir l'analyse de l'intégrité des bases de données de disponibilité dans chaque groupe de disponibilité Always On sur le cluster de basculement Windows Server (WSFC). Interrogez **sys. dm_hadr_database_replica_states** pour répondre aux questions suivantes :  
+  Retourne une ligne contenant les informations destinées à vous fournir l'analyse de l'intégrité des bases de données de disponibilité dans chaque groupe de disponibilité Always On sur le cluster de basculement Windows Server (WSFC). **Sys.dm_hadr_database_replica_states** de requête pour répondre aux questions suivantes :  
   
 -   Toutes les bases de données d'un groupe de service sont-elles prêtes pour un basculement ?  
   

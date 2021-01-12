@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sysindexkeys system table
 - sys.sysindexkeys compatibility view
 ms.assetid: 53a33c8d-e5f0-430d-a712-b65f43d64318
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 8934f884ba5a0841ab54a2a06bafbe3d654e6bcb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: fd333ea7ea5761732eefb96db902b7dbb1840834
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88469888"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099050"
 ---
 # <a name="syssysindexkeys-transact-sql"></a>sys.sysindexkeys (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

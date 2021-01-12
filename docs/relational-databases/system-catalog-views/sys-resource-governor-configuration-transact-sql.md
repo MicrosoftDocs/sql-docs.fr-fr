@@ -1,6 +1,6 @@
 ---
 description: sys.resource_governor_configuration (Transact-SQL)
-title: sys. resource_governor_configuration (Transact-SQL) | Microsoft Docs
+title: sys.resource_governor_configuration (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.resource_governor_configuration catalog view
 ms.assetid: 89099668-1dc6-4b07-9d8b-49bc95c7bfc0
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 9d5cc74d9f551c0c5da2fbaf7c5629e3e0487da9
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 34e8a269a2c8e7fafd0ba0e6645e2363eefa5d77
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89550463"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097968"
 ---
 # <a name="sysresource_governor_configuration-transact-sql"></a>sys.resource_governor_configuration (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -69,7 +69,7 @@ GO
 ## <a name="see-also"></a>Voir aussi  
  [Affichages catalogue Resource Governor &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/resource-governor-catalog-views-transact-sql.md)   
  [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)   
- [sys. dm_resource_governor_configuration &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-resource-governor-configuration-transact-sql.md)   
+ [sys.dm_resource_governor_configuration &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-resource-governor-configuration-transact-sql.md)   
  [gouverneur de ressources](../../relational-databases/resource-governor/resource-governor.md)  
   
   

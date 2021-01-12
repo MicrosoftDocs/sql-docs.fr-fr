@@ -19,15 +19,15 @@ helpviewer_keywords:
 - sys.dm_db_missing_index_groups dynamic management view
 - missing indexes feature [SQL Server], sys.dm_db_missing_index_groups dynamic management view
 ms.assetid: 9cc00acd-d83d-49f8-be72-5b2aebed246b
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: fec8a59796a51b05556af606f1ef48c634d7cb5b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: e5b131a14ace8281fc7201a3b01ac5f12c3c6baf
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97462750"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097734"
 ---
 # <a name="sysdm_db_missing_index_groups-transact-sql"></a>sys.dm_db_missing_index_groups (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "97462750"
 |**index_group_handle**|**int**|Identifie un groupe d'index manquants.|  
 |**index_handle**|**int**|Identifie un index manquant qui appartient au groupe spécifié par **index_group_handle**.<br /><br /> Un groupe d'index ne contient qu'un seul index.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Les informations retournées par **sys.dm_db_missing_index_groups** sont mises à jour lorsqu'une requête est optimisée par l'optimiseur de requête, et elles ne sont pas conservées de manière permanente. Les informations sur les index manquants sont simplement conservées jusqu'au redémarrage de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les administrateurs de base de données doivent effectuer régulièrement des copies de sauvegarde des informations sur les index manquants s'ils souhaitent les conserver après le recyclage du serveur.  
   
  Aucune des deux colonnes de l'ensemble de résultats de sortie n'est une clé, mais ensemble, les colonnes constituent une clé d'index.  

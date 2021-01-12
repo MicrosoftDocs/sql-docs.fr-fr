@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_tran_commit_table dynamic management view
 ms.assetid: 732d23c5-1f6c-4e96-bc85-8f29b520cf0e
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 8f74f5fb4bc69b559f2544a9a7fbffa95a1aa404
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9dd6d1868fe70577aa31247bf58488596a23ce81
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97428163"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096631"
 ---
 # <a name="change-tracking---sysdm_tran_commit_table"></a>Change Tracking-sys.dm_tran_commit_table
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

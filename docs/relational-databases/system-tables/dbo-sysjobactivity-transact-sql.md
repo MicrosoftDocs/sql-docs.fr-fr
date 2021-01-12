@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sysjobactivity system table
 ms.assetid: fd17cac9-5d1f-4b44-b2dc-ee9346d8bf1e
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: dd0fb9ae28d2101b02feb17bc5b2eacbfcb476a7
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 091f3052a568fa5c1c0e7f521333c67947716cdf
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551116"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098356"
 ---
 # <a name="dbosysjobactivity-transact-sql"></a>dbo.sysjobactivity (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

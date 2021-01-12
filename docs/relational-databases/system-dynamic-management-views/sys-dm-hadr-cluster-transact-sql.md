@@ -1,6 +1,6 @@
 ---
 description: sys.dm_hadr_cluster (Transact-SQL)
-title: sys. dm_hadr_cluster (Transact-SQL) | Microsoft Docs
+title: sys.dm_hadr_cluster (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/31/2019
 ms.prod: sql
@@ -19,19 +19,19 @@ helpviewer_keywords:
 - sys.dm_hadr_cluster catalog view
 - Availability Groups [SQL Server], WSFC clusters
 ms.assetid: 13ce70e4-9d43-4a80-a826-099e6213bf85
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: b8bc19f3e73c00c2148cba2fb0381d73a36d6eb2
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: aa289a58047e1108e94a6b70f86eb366807f5af1
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89533009"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097647"
 ---
 # <a name="sysdm_hadr_cluster-transact-sql"></a>sys.dm_hadr_cluster (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Si le nœud de clustering de basculement Windows Server (WSFC) qui héberge une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] activée pour [!INCLUDE[ssHADR](../../includes/sshadr-md.md)] possède un quorum WSFC, **sys. dm_hadr_cluster** retourne une ligne qui expose le nom du cluster et des informations sur le quorum. Si le nœud WSFC n’a aucun quorum, aucune ligne n’est retournée.  
+  Si le nœud de clustering de basculement Windows Server (WSFC) qui héberge une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] activée pour [!INCLUDE[ssHADR](../../includes/sshadr-md.md)] possède un quorum WSFC, **sys.dm_hadr_cluster** retourne une ligne qui expose le nom du cluster et des informations sur le quorum. Si le nœud WSFC n’a aucun quorum, aucune ligne n’est retournée.  
  > [!TIP]
  > À compter de [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] , cette vue de gestion dynamique prend en charge les instances de cluster de basculement Always on en plus des groupes de disponibilité Always on.
 

@@ -1,6 +1,6 @@
 ---
 description: sys.soap_endpoints (Transact-SQL)
-title: sys. soap_endpoints (Transact-SQL) | Microsoft Docs
+title: sys.soap_endpoints (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,21 +18,21 @@ dev_langs:
 helpviewer_keywords:
 - sys.soap_endpoints catalog view
 ms.assetid: f50dcbfc-02ed-4a19-9c07-c78a5a1b3224
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: daba746b3bbaf198160855e6caa85fb3d7b4fd1d
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: a0a41f08d7600ae25541924953c407ef12a2ab20
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89539495"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096713"
 ---
 # <a name="syssoap_endpoints-transact-sql"></a>sys.soap_endpoints (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)]  
   
- Contient une ligne pour chaque point de terminaison du serveur qui supporte une charge utile de type SOAP. Pour chaque ligne de cette vue, il existe une ligne correspondante avec le même **endpoint_id** dans l’affichage catalogue **sys. http_endpoints** qui contient les métadonnées de configuration http.  
+ Contient une ligne pour chaque point de terminaison du serveur qui supporte une charge utile de type SOAP. Pour chaque ligne de cette vue, il existe une ligne correspondante avec le même **endpoint_id** dans l’affichage catalogue **sys.http_endpoints** qui contient les métadonnées de configuration http.  
   
  
 |Nom de la colonne|Type de données|Description|  
@@ -43,7 +43,7 @@ ms.locfileid: "89539495"
 |**default_database**|**sysname**|Nom de la base de données par défaut indiqué dans l'option DATABASE =.<br /><br /> NULL = DEFAULT a été spécifié.|  
 |**default_namespace**|**nvarchar(384**|Espace de noms par défaut spécifié dans l’option espace de noms = ou `https://tempuri.org` si la valeur par défaut a été spécifiée à la place.|  
 |**default_result_schema**|**tinyint**|Valeur par défaut de l'option SCHEMA =.<br /><br /> 0 = AUCUN<br /><br /> 1 = STANDARD|  
-|**default_result_schema_desc**|**nvarchar(60)**|Description de la valeur par défaut de l'option SCHEMA =.<br /><br /> Aucune<br /><br /> STANDARD|  
+|**default_result_schema_desc**|**nvarchar(60)**|Description de la valeur par défaut de l'option SCHEMA =.<br /><br /> NONE<br /><br /> STANDARD|  
 |**is_xml_charset_enforced**|**bit**|0 = CHARACTER_SET = L'option SQL a été spécifiée.<br /><br /> 1 = CHARACTER_SET = L'option XML a été spécifiée.|  
 |**is_session_enabled**|**bit**|0 = SESSION = L'option DISABLE a été spécifiée.<br /><br /> 1 = SESSION = L'option ENABLED a été spécifiée.|  
 |**session_timeout**|**int**|Valeur spécifiée dans l'option SESSION_TIMEOUT =.|  

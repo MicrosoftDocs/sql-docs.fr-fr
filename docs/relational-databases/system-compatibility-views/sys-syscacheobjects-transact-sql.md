@@ -19,14 +19,14 @@ helpviewer_keywords:
 - syscacheobjects system table
 - sys.syscacheobjects compatibility view
 ms.assetid: 9b14f37c-b7f5-4f71-b070-cce89a83f69e
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 25160eb8e7a25e2a4ec6d2f8b318fc78e7af61ef
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 4b33b97a5b3753d63e1df4759d26970cf6359ee2
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88399675"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097803"
 ---
 # <a name="syssyscacheobjects-transact-sql"></a>sys.syscacheobjects (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "88399675"
 |-----------------|---------------|-----------------|  
 |**bucketid**|**int**|ID du compartiment. La valeur est comprise entre 0 et (taille du répertoire -1). La taille du répertoire est la taille de la table de hachage.|  
 |**cacheobjtype**|**nvarchar(17)**|Type de l'objet dans le cache :<br /><br /> Plan compilé<br /><br /> Plan exécutable<br /><br /> Arborescence d'analyse<br /><br /> Curseur<br /><br /> Procédure stockée étendue|  
-|**déclaré**|**nvarchar(8)**|Type d’objet :<br /><br /> Procédure stockée<br /><br /> Instruction préparée<br /><br /> Requête ad hoc ( [!INCLUDE[tsql](../../includes/tsql-md.md)] soumise en tant qu’événements de langage à partir des utilitaires **sqlcmd** ou **osql** , au lieu d’appels de procédure distante)<br /><br /> ReplProc (procédure de réplication)<br /><br /> Déclencheur<br /><br /> Vue<br /><br /> Default<br /><br /> Table utilisateur<br /><br /> Table système<br /><br /> Vérification<br /><br /> Règle|  
+|**déclaré**|**nvarchar(8)**|Type d’objet :<br /><br /> Procédure stockée<br /><br /> Instruction préparée<br /><br /> Requête ad hoc ( [!INCLUDE[tsql](../../includes/tsql-md.md)] soumise en tant qu’événements de langage à partir des utilitaires **sqlcmd** ou **osql** , au lieu d’appels de procédure distante)<br /><br /> ReplProc (procédure de réplication)<br /><br /> Déclencheur<br /><br /> Afficher<br /><br /> Valeur par défaut<br /><br /> Table utilisateur<br /><br /> Table système<br /><br /> Vérification<br /><br /> Règle|  
 |**objid**|**int**|Une des clés principales servant à rechercher un objet dans le cache. Il s’agit de l’ID d’objet stocké dans **sysobjects** pour les objets de base de données (procédures, vues, déclencheurs, etc.). Pour les objets de cache tels que le SQL ad hoc ou préparé, **objID** est une valeur générée en interne.|  
 |**dbid**|**smallint**|ID de la base de données dans laquelle a été compilé l'objet contenu dans le cache|  
 |**dbidexec**|**smallint**|ID de la base de données à partir de laquelle la requête est exécutée.<br /><br /> Pour la plupart des objets, **dbidexec** a la même valeur que **dbid**.<br /><br /> Pour les vues système, **dbidexec** est l’ID de base de données à partir duquel la requête est exécutée.<br /><br /> Pour les requêtes ad hoc, **dbidexec** est égal à 0. Cela signifie que **dbidexec** a la même valeur que **dbid**.|  
@@ -58,7 +58,7 @@ ms.locfileid: "88399675"
 |**lastreads**|**bigint**|Pour compatibilité descendante uniquement. Retourne toujours 0.|  
 |**lastwrites**|**bigint**|Pour compatibilité descendante uniquement. Retourne toujours 0.|  
 |**sqlbytes**|**int**|Longueur en octets de la définition de procédure ou du traitement soumis.|  
-|**Server**|**nvarchar(3900)**|Définition du module ou les 3 900 premiers caractères du traitement soumis.|  
+|**sql**|**nvarchar(3900)**|Définition du module ou les 3 900 premiers caractères du traitement soumis.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Affichages de compatibilité &#40;Transact-SQL&#41;](~/relational-databases/system-compatibility-views/system-compatibility-views-transact-sql.md)  

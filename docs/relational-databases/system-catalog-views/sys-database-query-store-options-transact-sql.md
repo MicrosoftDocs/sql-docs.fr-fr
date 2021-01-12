@@ -14,19 +14,18 @@ f1_keywords:
 dev_langs:
 - TSQL
 helpviewer_keywords:
-- database_query_store_options catalog view
 - sys.database_query_store_options catalog view
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 ms.custom: ''
-ms.date: 05/27/2020
+ms.date: 1/8/2021
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: f8fce0932d546470206bbc7752429090c0212158
-ms.sourcegitcommit: d681796e8c012eca2d9629d3b816749e9f50f868
+ms.openlocfilehash: 273e5c4446853c3f44d0c99535880c9c9da2aa5f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98005411"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098056"
 ---
 # <a name="sysdatabase_query_store_options-transact-sql"></a>sys.database_query_store_options (Transact-SQL)
 
@@ -49,12 +48,17 @@ ms.locfileid: "98005411"
 |**max_storage_size_mb**|**bigint**|Taille de disque maximale en mégaoctets (Mo) pour le Magasin des requêtes. La valeur par défaut est de **100** Mo jusqu’à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] , et **1 Go** à partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] .<br />Pour l' [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] édition Premium, la valeur par défaut est 1 Go et pour l' [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] édition de base, la valeur par défaut est 10 Mo.<br /><br /> Modifiez à l’aide de l' `ALTER DATABASE <database> SET QUERY_STORE (MAX_STORAGE_SIZE_MB = <size>)` instruction.|  
 |**stale_query_threshold_days**|**bigint**|Nombre de jours pendant lesquels les informations d’une requête sont conservées dans le Magasin des requêtes. La valeur par défaut est **30**. Affectez la valeur 0 pour désactiver la stratégie de rétention.<br />Pour l’édition [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] de base, la valeur par défaut est 7 jours.<br /><br /> Modifiez à l’aide de l' `ALTER DATABASE <database> SET QUERY_STORE ( CLEANUP_POLICY = ( STALE_QUERY_THRESHOLD_DAYS = <value> ) )` instruction.|  
 |**max_plans_per_query**|**bigint**|Limite le nombre maximal de plans stockés. La valeur par défaut est **200**. Si la valeur maximale est atteinte, Magasin des requêtes cesse de capturer de nouveaux plans pour cette requête. La valeur 0 supprime la limitation en ce qui concerne le nombre de plans capturés.<br /><br /> Modifiez à l’aide de l' `ALTER DATABASE<database> SET QUERY_STORE (MAX_PLANS_PER_QUERY = <n>)` instruction.|  
-|**query_capture_mode**|**smallint**|Mode de capture de requête actuellement actif :<br /><br /> **1** = toutes les requêtes sont capturées. Il s’agit de la valeur de configuration par défaut pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ( [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures).<br /><br /> 2 = capturer automatiquement les requêtes pertinentes en fonction du nombre d’exécutions et de la consommation des ressources. Il s’agit de la valeur de configuration par défaut pour [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].<br /><br /> 3 = aucun-arrêter la capture des nouvelles requêtes. Le magasin de requêtes continuera à recueillir des statistiques de compilation et d’exécution pour les requêtes qui ont déjà été capturées. Utilisez cette configuration avec précaution, car vous risquez de manquer des requêtes importantes.|  
-|**query_capture_mode_desc**|**nvarchar(60)**|Description textuelle du mode de capture réel de Magasin des requêtes :<br /><br /> ALL (valeur par défaut pour [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] )<br /><br /> **Auto** (valeur par défaut pour [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] )<br /><br /> NONE|  
+|**query_capture_mode**|**smallint**|Mode de capture de requête actuellement actif :<br /><br /> **1** = toutes les requêtes sont capturées. Il s’agit de la valeur de configuration par défaut pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ( [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures).<br /><br /> 2 = capturer automatiquement les requêtes pertinentes en fonction du nombre d’exécutions et de la consommation des ressources. Il s’agit de la valeur de configuration par défaut pour [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].<br /><br /> 3 = aucun-arrêter la capture des nouvelles requêtes. Le magasin de requêtes continuera à recueillir des statistiques de compilation et d’exécution pour les requêtes qui ont déjà été capturées. Utilisez cette configuration avec précaution, car vous risquez de manquer des requêtes importantes. <br /><br /> 4 = personnalisé : permet un contrôle supplémentaire sur la stratégie de capture de requêtes à l’aide des [options de QUERY_CAPTURE_POLICY](../../t-sql/statements/alter-database-transact-sql-set-options.md#SettingOptions).<br /> **S’applique à** : [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)] et versions ultérieures.|  
+|**query_capture_mode_desc**|**nvarchar(60)**|Description textuelle du mode de capture réel de Magasin des requêtes :<br /><br /> ALL (valeur par défaut pour [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] )<br /><br /> **Auto** (valeur par défaut pour [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] )<br /><br /> NONE <br /><br /> CUSTOM|  
+|**capture_policy_execution_count**|**int**|Option de stratégie personnalisée du mode de capture de requête. Définit le nombre d’exécutions d’une requête pendant la période d’évaluation. La valeur par défaut est 30.<br />**S’applique à** : [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)] et versions ultérieures.| 
+|**capture_policy_total_compile_cpu_time_ms**|**bigint**|Option de stratégie personnalisée du mode de capture de requête. Définit le temps UC de compilation écoulé total utilisé par une requête pendant la période d’évaluation. La valeur par défaut est 1000.<br /> **S’applique à** : [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)] et versions ultérieures.|
+|**capture_policy_total_execution_cpu_time_ms**|**bigint**|Option de stratégie personnalisée du mode de capture de requête. Définit le temps UC d’exécution écoulé total utilisé par une requête pendant la période d’évaluation. La valeur par défaut est 100.<br /> **S’applique à** : [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)] et versions ultérieures.|
+|**capture_policy_stale_threshold_hours**|**int**|Option de stratégie personnalisée du mode de capture de requête. Définit la période d’évaluation pour déterminer si une requête doit être capturée. La valeur par défaut est 24 heures.<br /> **S’applique à** : [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)] et versions ultérieures.|
 |**size_based_cleanup_mode**|**smallint**|Contrôle si le nettoyage est activé automatiquement quand la quantité totale de données approche de la taille maximale :<br /><br /> 0 = le nettoyage basé sur une taille hors tension n’est pas activé automatiquement.<br /><br /> **1** = le nettoyage basé sur le format automatique est activé automatiquement lorsque la taille sur le disque atteint **90%** de *max_storage_size_mb*. Il s’agit de la valeur de configuration par défaut.<br /><br />Le nettoyage basé sur la taille supprime les requêtes les moins coûteuses et les plus anciennes en premier. Il s’arrête quand environ **80%** de *max_storage_size_mb* sont atteints.|  
 |**size_based_cleanup_mode_desc**|**nvarchar(60)**|Description textuelle du mode de nettoyage basé sur la taille réel de Magasin des requêtes :<br /><br /> OFF <br /> **Automatique** (par défaut)|  
 |**wait_stats_capture_mode**|**smallint**|Contrôle si Magasin des requêtes effectue la capture des statistiques d’attente : <br /><br /> 0 = désactivé <br /> **1** = activé<br /> **S’applique à** : [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] et versions ultérieures.|
-|**wait_stats_capture_mode_desc**|**nvarchar(60)**|Description textuelle du mode réel de capture des statistiques d’attente : <br /><br /> OFF <br /> **Activé** (par défaut)<br /> **S’applique à** : [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] et versions ultérieures.| 
+|**wait_stats_capture_mode_desc**|**nvarchar(60)**|Description textuelle du mode réel de capture des statistiques d’attente : <br /><br /> OFF <br /> **Activé** (par défaut)<br /> **S’applique à** : [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] et versions ultérieures.|
+|**actual_state_additional_info**|**nvarchar (8000)**|Actuellement inutilisé. Peut être implémentée à l’avenir.|
   
 ## <a name="permissions"></a>Autorisations  
  Nécessite l’autorisation `VIEW DATABASE STATE`.  
@@ -71,5 +75,3 @@ ms.locfileid: "98005411"
  [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)   
  [sys.fn_stmt_sql_handle_from_sql_stmt &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-stmt-sql-handle-from-sql-stmt-transact-sql.md)   
  [Procédures stockées du Magasin des requêtes &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/query-store-stored-procedures-transact-sql.md)  
-  
-  

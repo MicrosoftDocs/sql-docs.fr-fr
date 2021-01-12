@@ -1,6 +1,6 @@
 ---
 description: sys.dm_resource_governor_resource_pool_affinity (Transact-SQL)
-title: sys. dm_resource_governor_resource_pool_affinity (Transact-SQL) | Microsoft Docs
+title: sys.dm_resource_governor_resource_pool_affinity (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 08/09/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ helpviewer_keywords:
 - dm_resource_governor_resource_pool_affinity
 - sys.dm_resource_governor_resource_pool_affinity
 ms.assetid: a197ec19-a2ba-44f5-a4f2-3eee33ebd77d
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: c304b552dfbf09786af4c7d61edc64c99b004adc
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: d5fa2993e4ae716f72ad93bc388c466e69f00da3
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546530"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097540"
 ---
 # <a name="sysdm_resource_governor_resource_pool_affinity-transact-sql"></a>sys.dm_resource_governor_resource_pool_affinity (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

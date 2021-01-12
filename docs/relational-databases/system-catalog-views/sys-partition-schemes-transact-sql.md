@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.partition_schemes catalog view
 ms.assetid: ed557fd5-12b0-4cef-9e4f-440b02e99d1f
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: c63cdd13ccb9aeb8e39ed26ed3d3942ef412b554
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ce355e37b9a4fa5fcc4f8b2accd024a59ab2e5f1
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97412985"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096778"
 ---
 # <a name="syspartition_schemes-transact-sql"></a>sys.partition_schemes (Transact-SQL)
 [!INCLUDE [sql-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdbmi-asa-pdw.md)]

@@ -1,6 +1,6 @@
 ---
 description: sys.server_audit_specification_details (Transact-SQL)
-title: sys. server_audit_specification_details (Transact-SQL) | Microsoft Docs
+title: sys.server_audit_specification_details (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 04/05/2016
 ms.prod: sql
@@ -18,19 +18,19 @@ dev_langs:
 helpviewer_keywords:
 - sys.server_audit_specification_details catalog view
 ms.assetid: 792724dc-402e-4b17-9f2c-029d910bf88e
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 20f119f3db641ebffd61ba4465abeea3c99515e5
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 714a6804a75342b732d88bd0442997fc8be362f1
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89550416"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097942"
 ---
 # <a name="sysserver_audit_specification_details-transact-sql"></a>sys.server_audit_specification_details (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Contient des informations sur les détails (actions) d’une spécification de l’audit du serveur dans un audit [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur une instance de serveur. Pour plus d’informations, consultez [SQL Server Audit &#40;moteur de base de données&#41;](../../relational-databases/security/auditing/sql-server-audit-database-engine.md). Pour obtenir la liste de tous les audit_action_id et leurs noms, interrogez [sys. dm_audit_actions &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-audit-actions-transact-sql.md).  
+  Contient des informations sur les détails (actions) d’une spécification de l’audit du serveur dans un audit [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur une instance de serveur. Pour plus d’informations, consultez [SQL Server Audit &#40;moteur de base de données&#41;](../../relational-databases/security/auditing/sql-server-audit-database-engine.md). Pour obtenir la liste de tous les audit_action_id et leurs noms, interrogez [sys.dm_audit_actions &#40;&#41;Transact-SQL ](../../relational-databases/system-dynamic-management-views/sys-dm-audit-actions-transact-sql.md).  
   
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  

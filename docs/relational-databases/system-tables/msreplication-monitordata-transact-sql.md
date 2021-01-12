@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - MSreplication_monitordata system table
 ms.assetid: 843d3ffd-a1ef-4fd5-a744-c2252199793e
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: dde16569f96619778a3a3cd6a246f58482b9947d
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: bbe408296895f593de0af1da852b807082e8e7cf
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540878"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098159"
 ---
 # <a name="msreplication_monitordata-transact-sql"></a>MSreplication_monitordata (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

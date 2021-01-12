@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.servers catalog view
 ms.assetid: 4e774ed9-4e83-4726-9f1d-8efde8f9feff
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016||>=sql-server-linux-2017
-ms.openlocfilehash: 7ab227e9df241914cba5f242eed6a38cf35815b3
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 542db6b144471e2942bb160f1b91d7e2628ace69
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472930"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097891"
 ---
 # <a name="sysservers-transact-sql"></a>sys.servers (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

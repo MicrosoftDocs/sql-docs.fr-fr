@@ -1,6 +1,6 @@
 ---
 description: sys.service_queues (Transact-SQL)
-title: sys. service_queues (Transact-SQL) | Microsoft Docs
+title: sys.service_queues (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/15/2017
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.service_queues catalog view
 ms.assetid: 9fd9fa76-6128-410c-896f-741e6050143a
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: d21cabd202252bdd5c0b28bbfaf13fafb38efbcf
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 55a1037bc944c0ad27d60c02b39d26f0d7aa73b6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548689"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096671"
 ---
 # <a name="sysservice_queues-transact-sql"></a>sys.service_queues (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

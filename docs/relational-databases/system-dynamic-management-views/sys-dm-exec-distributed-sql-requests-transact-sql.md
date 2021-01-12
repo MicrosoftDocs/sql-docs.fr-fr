@@ -20,15 +20,15 @@ helpviewer_keywords:
 - sys.dm_exec_distributed_requests management view
 - dm_exec_distributed_requests management view
 ms.assetid: d065dc01-35d4-472f-9554-53ac41e7d104
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 57f0c150c6c332a7215ef1631c0402488ad7982b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 1b03ee4a4c974be2b035074f03b8397df580f75d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472820"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099002"
 ---
 # <a name="sysdm_exec_distributed_sql_requests-transact-sql"></a>sys.dm_exec_distributed_sql_requests (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdbmi-asa-pdw](../../includes/applies-to-version/sqlserver2016-asdbmi-asa-pdw.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "97472820"
 |total_elapsed_time|**int**|Durée totale d’exécution de l’étape de la requête, en millisecondes|Entre 0 et la différence entre end_time et start_time. 0 pour les étapes en file d’attente.|  
 |row_count|**bigint**|Nombre total de lignes modifiées ou retournées par cette demande|0 pour les étapes qui ne sont pas modifiées ou qui renvoient des données, nombre de lignes affectées dans le cas contraire. Défini sur-1 pour les étapes DMS.|  
 |spid|**int**|ID de session sur l’instance de SQL Server exécutant la distribution des requêtes||  
-|command|nvarchar(4000)|Contient le texte complet de la commande de cette étape.|Toute chaîne de demande valide pour une étape. Tronqué si plus de 4000 caractères.|  
+|.|nvarchar(4000)|Contient le texte complet de la commande de cette étape.|Toute chaîne de demande valide pour une étape. Tronqué si plus de 4000 caractères.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Résolution des problèmes de Polybase avec les vues de gestion dynamique](/previous-versions/sql/sql-server-2016/mt146389(v=sql.130))   

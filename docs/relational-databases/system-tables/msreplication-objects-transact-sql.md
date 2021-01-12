@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - MSreplication_objects system table
 ms.assetid: 08f9710d-976d-448e-bead-ac9835e87bc5
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: d3c582b495702a46c51519f56dee1e977980840f
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 5989c75e30e866f4ff9083a7a9e6fdef49207019
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538259"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098145"
 ---
 # <a name="msreplication_objects-transact-sql"></a>MSreplication_objects (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

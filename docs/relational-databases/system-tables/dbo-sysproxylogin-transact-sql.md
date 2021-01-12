@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sysproxylogin system table
 ms.assetid: 433d33cb-bdf2-47bb-af78-2a40b7c8dfce
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 03668240a673e1e5a79fb6f9fb47b23523422c1f
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 7e1115caf380e82ee004a460f29a7b486a70affc
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547199"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098299"
 ---
 # <a name="dbosysproxylogin-transact-sql"></a>dbo.sysproxylogin (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

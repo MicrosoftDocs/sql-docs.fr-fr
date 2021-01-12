@@ -17,14 +17,14 @@ dev_langs:
 helpviewer_keywords:
 - syssessions system table
 ms.assetid: 187819b6-c7f4-4a26-b74c-0a89e96695cf
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 9f8a5cd825aba164796ec394709c8188367572cf
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 67e34792baf2dbcb49677ea13746dd9cd53034a6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540995"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098289"
 ---
 # <a name="dbosyssessions-transact-sql"></a>dbo.syssessions (Transact-SQL)
 

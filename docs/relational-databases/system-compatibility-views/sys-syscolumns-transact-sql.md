@@ -19,15 +19,15 @@ helpviewer_keywords:
 - syscolumns system table
 - sys.syscolumns compatibility view
 ms.assetid: 863fd87b-ff33-4ac5-9aa9-df21140681da
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: ae2c5a8353b896e418f15744e7b4e527183a9e79
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a9ecd4982135135fbf23c700a30318d86026d266
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466960"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099194"
 ---
 # <a name="syssyscolumns-transact-sql"></a>sys.syscolumns (Transact-SQL)
 [!INCLUDE [sql-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdbmi-asa-pdw.md)]

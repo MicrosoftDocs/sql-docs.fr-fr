@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sys.sysconfigures compatibility view
 - sysconfigures system table
 ms.assetid: 146bf10a-c898-4676-a2a1-673fb1cee7a2
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: f67d5742c5de1f806194090ebe366693cc8c9457
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 09f1991287bb1b3b2341de6fef1d7492d56e835c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88482174"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099140"
 ---
 # <a name="syssysconfigures-transact-sql"></a>sys.sysconfigures (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

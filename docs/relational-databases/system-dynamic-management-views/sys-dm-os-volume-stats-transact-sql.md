@@ -1,6 +1,6 @@
 ---
 description: sys.dm_os_volume_stats (Transact-SQL)
-title: sys. dm_os_volume_stats (Transact-SQL) | Microsoft Docs
+title: sys.dm_os_volume_stats (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 09/03/2020
 ms.prod: sql
@@ -17,14 +17,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_os_volume_stats dynamic management function
 ms.assetid: fa1c58ad-8487-42ad-956c-983f2229025f
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: d6e6eb3ccf2823af437fc37cdddfa2b0b640ae12
-ms.sourcegitcommit: 71a334c5120a1bc3809d7657294fe44f6c909282
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 32deca4f06709806d90ee7d25e25105f191ad23e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89614597"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098819"
 ---
 # <a name="sysdm_os_volume_stats-transact-sql"></a>sys.dm_os_volume_stats (Transact-SQL)
 [!INCLUDE[tsql-appliesto-2008R2SP1-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-2008R2sp1-xxxx-xxxx-xxx-md.md)]
@@ -92,7 +92,7 @@ CROSS APPLY sys.dm_os_volume_stats(DB_ID(f.name), f.file_id);
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [sys. master_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-master-files-transact-sql.md)   
+ [sys.master_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-master-files-transact-sql.md)   
  [sys.database_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-files-transact-sql.md)  
   
   

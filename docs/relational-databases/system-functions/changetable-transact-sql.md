@@ -17,15 +17,15 @@ helpviewer_keywords:
 - CHANGETABLE
 - change tracking [SQL Server], CHANGETABLE
 ms.assetid: d405fb8d-3b02-4327-8d45-f643df7f501a
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: f1c547cee24397cc9cc1c0b139bd728aef92c2b3
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6ffbd16a2a62b9adcc5ff4e2f31dcee9f133538a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472780"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098724"
 ---
 # <a name="changetable-transact-sql"></a>CHANGETABLE (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -113,7 +113,7 @@ CHANGETABLE (
 |SYS_CHANGE_CONTEXT|**varbinary(128)**|Modifiez les informations de contexte que vous pouvez éventuellement spécifier à l'aide de la clause WITH dans le cadre d'une instruction INSERT, UPDATE ou DELETE.|  
 |\<primary key column value>|Identique aux colonnes de table utilisateur|Valeurs de clés primaires pour la table faisant l'objet d'un suivi. Ces valeurs identifient de manière unique chaque ligne dans la table utilisateur.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  La fonction CHANGETABLE est utilisée en général dans la clause FROM d'une requête comme s'il s'agissait d'une table.  
   
 ## <a name="changetablechanges"></a>CHANGETABLE(CHANGES...)  

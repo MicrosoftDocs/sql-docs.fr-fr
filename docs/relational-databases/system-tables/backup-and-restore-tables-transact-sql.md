@@ -16,14 +16,14 @@ helpviewer_keywords:
 - system tables [SQL Server], restore tables
 - restore system tables [SQL Server]
 ms.assetid: aa615add-54e6-40f5-8b55-3728b26884ee
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: abb69d6cefa270330a41d90bea0352981dd7ee8a
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 1f82c8cbfcf2871912a2a83a02f3f29be294a7ba
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540978"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098749"
 ---
 # <a name="backup-and-restore-tables-transact-sql"></a>Sauvegarder et restaurer des tables (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

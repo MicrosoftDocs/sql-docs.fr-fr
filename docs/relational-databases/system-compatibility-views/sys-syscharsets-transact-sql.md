@@ -19,15 +19,15 @@ helpviewer_keywords:
 - syscharsets system table
 - sys.syscharsets compatibility view
 ms.assetid: f16d987c-bd19-4668-9ef7-785b8fb9ff5b
-author: rothja
-ms.author: jroth
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: bd065f5e1b4fbdf7df341e81c29ace25a39db5c2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 081ab46f57f78ed4e41f3a25050e9ba428c37507
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466970"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097787"
 ---
 # <a name="syssyscharsets-transact-sql"></a>sys.syscharsets (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

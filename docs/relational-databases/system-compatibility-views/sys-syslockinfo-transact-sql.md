@@ -19,14 +19,14 @@ helpviewer_keywords:
 - syslockinfo system table
 - sys.syslockinfo compatibility view
 ms.assetid: d8cae434-807a-473e-b94f-f7a0e1b2daf0
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 9714fab678f8466daf76d5963e1383b5e7d2dc52
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: d552fdbb75c4aa1cb786025a8d1c866b89135e12
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88490055"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099062"
 ---
 # <a name="syssyslockinfo-transact-sql"></a>sys.syslockinfo (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

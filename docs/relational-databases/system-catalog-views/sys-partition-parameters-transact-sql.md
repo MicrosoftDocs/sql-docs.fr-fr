@@ -18,15 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.partition_parameters catalog view
 ms.assetid: 2012ed9d-3ea3-4c29-9b78-dfa54a392dce
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 50aac8964e9b18922f88e33dce2c2b99c14b0348
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ec24418a893f488e67249222bfbf75bc1096813c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97462850"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096829"
 ---
 # <a name="syspartition_parameters-transact-sql"></a>sys.partition_parameters (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

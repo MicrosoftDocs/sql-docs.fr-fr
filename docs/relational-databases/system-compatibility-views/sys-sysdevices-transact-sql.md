@@ -19,14 +19,14 @@ helpviewer_keywords:
 - sys.sysdevices compatibility view
 - sysdevices system table
 ms.assetid: ac5bcaf4-8fb6-4855-8856-d7643f469361
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 6bcc481e595dc2c061d736a6bee12da6d918b7e8
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 0d672ec8b722322ff47841530e419e09ca7e2874
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88419793"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099114"
 ---
 # <a name="syssysdevices-transact-sql"></a>sys.sysdevices (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

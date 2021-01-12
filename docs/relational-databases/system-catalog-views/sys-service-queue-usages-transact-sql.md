@@ -1,6 +1,6 @@
 ---
 description: sys.service_queue_usages (Transact-SQL)
-title: sys. service_queue_usages (Transact-SQL) | Microsoft Docs
+title: sys.service_queue_usages (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,14 +18,14 @@ dev_langs:
 helpviewer_keywords:
 - sys.service_queue_usages catalog view
 ms.assetid: d58dcdaf-f82d-43d9-941b-f520581442bf
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: e036cd7ca2517657a0c6f6a3012d0e1a89fc0fdc
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: b6f73962c19600dd5874f5933f2126feedd6e374
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89539523"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099182"
 ---
 # <a name="sysservice_queue_usages-transact-sql"></a>sys.service_queue_usages (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

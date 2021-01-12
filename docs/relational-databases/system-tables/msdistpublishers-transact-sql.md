@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - MSdistpublishers system table
 ms.assetid: 31844099-4b33-4dc9-84b4-bac70aa82598
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: aa3f8872775f9d82a23d9ba2eb33a892696ca792
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 296bedcc14194dbba3a8f91cb8ebbc6553b6481c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89550980"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098195"
 ---
 # <a name="msdistpublishers-transact-sql"></a>MSdistpublishers (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -39,8 +39,8 @@ ms.locfileid: "89550980"
 |**mot de passe**|**nvarchar (524)**|Mot de passe (chiffré) pour l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
 |**active**|**bit**|Indique si le serveur de distribution local est utilisé par le serveur de publication distant.|  
 |**trusted**|**bit**|Indique si le serveur de publication distant utilise le même mot de passe que le serveur de distribution local :<br /><br /> **0** = un mot de passe est requis sur le serveur de publication distant pour se connecter au serveur de distribution.<br /><br /> **1** = aucun mot de passe n’est nécessaire.|  
-|**third_party**|**bit**|Spécifie si le serveur de publication est une installation de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] :<br /><br /> **0**  =  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] installation.** 1** = source de données hétérogènes.|  
-|**publisher_type**|**sysname**|Type du serveur de publication :<br /><br /> **MSSQLSERVER**  =  MSSQLSERVER [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Publication.<br /><br /> **Oracle** = serveur de publication Oracle standard.<br /><br /> **Passerelle Oracle** = serveur de publication de passerelle Oracle.|  
+|**third_party**|**bit**|Spécifie si le serveur de publication est une installation de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] :<br /><br /> **0**  =  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] installation.**1** = source de données hétérogènes.|  
+|**publisher_type**|**sysname**|Type du serveur de publication :<br /><br />   =  MSSQLSERVER [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Publication.<br /><br /> **Oracle** = serveur de publication Oracle standard.<br /><br /> **Passerelle Oracle** = serveur de publication de passerelle Oracle.|  
 |**storage_connection_string**|**nvarchar (779)**|Valeur de Azure SQL Database chaîne de connexion de stockage.|  
 
   

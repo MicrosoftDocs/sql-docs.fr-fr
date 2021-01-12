@@ -1,6 +1,6 @@
 ---
 description: sys.dm_hadr_database_replica_states (Transact-SQL)
-title: sys. dm_hadr_database_replica_states (Transact-SQL) | Microsoft Docs
+title: sys.dm_hadr_database_replica_states (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/26/2018
 ms.prod: sql
@@ -18,14 +18,14 @@ helpviewer_keywords:
 - Availability Groups [SQL Server], monitoring
 - sys.dm_hadr_database_replica_states dynamic management view
 ms.assetid: 1a17b0c9-2535-4f3d-8013-cd0a6d08f773
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 31d6534b055b9bc82052445202d35ff5a63bcb19
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 18642535521a50c7beb005c0ae8181f04ac3c6d5
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89533288"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097579"
 ---
 # <a name="sysdm_hadr_database_replica_states-transact-sql"></a>sys.dm_hadr_database_replica_states (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -75,11 +75,11 @@ ms.locfileid: "89533288"
 |**secondary_lag_seconds**|**bigint**|Nombre de secondes pendant lesquelles le réplica secondaire est derrière le réplica principal au cours de la synchronisation.<br /><br />**S’applique à :** [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures|  
   
 ##  <a name="understanding-the-lsn-column-values"></a><a name="LSNcolumns"></a> Fonctionnement des valeurs de colonne LSN  
- Les valeurs des colonnes **end_of_log_lsn**, **last_hardened_lsn**, **last_received_lsn**, **last_sent_lsn**, **recovery_lsn**et **truncation_lsn** ne sont pas des numéros séquentiels dans le journal (LSN) réels. Chacune de ces valeurs reflète plutôt un ID de bloc de journal complété avec des zéros.  
+ Les valeurs des colonnes **end_of_log_lsn**, **last_hardened_lsn**, **last_received_lsn**, **last_sent_lsn**, **recovery_lsn** et **truncation_lsn** ne sont pas des numéros séquentiels dans le journal (LSN) réels. Chacune de ces valeurs reflète plutôt un ID de bloc de journal complété avec des zéros.  
   
- **end_of_log_lsn**, **last_hardened_lsn**et **recovery_lsn** sont LSN. Par exemple, **last_hardened_lsn** indique le début du bloc suivant après les blocs qui sont déjà sur le disque.  Par conséquent, tout LSN < la valeur de **last_hardened_lsn** se trouve sur le disque.  Le LSN >= à cette valeur n’est pas vidé.  
+ **end_of_log_lsn**, **last_hardened_lsn** et **recovery_lsn** sont LSN. Par exemple, **last_hardened_lsn** indique le début du bloc suivant après les blocs qui sont déjà sur le disque.  Par conséquent, tout LSN < la valeur de **last_hardened_lsn** se trouve sur le disque.  Le LSN >= à cette valeur n’est pas vidé.  
   
- Parmi les valeurs LSN retournées par **sys. dm_hadr_database_replica_states**, seul **LAST_REDONE_LSN** est un LSN réel.  
+ Parmi les valeurs LSN retournées par **sys.dm_hadr_database_replica_states**, seul **LAST_REDONE_LSN** est un LSN réel.  
   
 ## <a name="security"></a>Sécurité  
   
