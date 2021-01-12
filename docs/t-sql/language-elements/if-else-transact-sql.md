@@ -18,15 +18,15 @@ helpviewer_keywords:
 - ELSE keyword
 - IF keyword
 ms.assetid: 676c881f-dee1-417a-bc51-55da62398e81
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: eaabc5a42f3abd71fac270e7fda97367cbd82ebb
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c8e21beb67e0ed283f463fff629776f33c1b07a0
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97439139"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98085302"
 ---
 # <a name="ifelse-transact-sql"></a>IF...ELSE (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

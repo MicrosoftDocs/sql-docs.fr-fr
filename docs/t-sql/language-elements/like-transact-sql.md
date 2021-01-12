@@ -29,15 +29,15 @@ helpviewer_keywords:
 - matching patterns [SQL Server]
 - NOT LIKE keyword
 ms.assetid: 581fb289-29f9-412b-869c-18d33a9e93d5
-author: juliemsft
+author: julieMSFT
 ms.author: jrasnick
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 5e1a1b319bf9a93f41f4160f563686a02bbf91d6
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: fd3f8c22b0087342b5d6b72ac492a3d542537c97
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461012"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98084356"
 ---
 # <a name="like-transact-sql"></a>LIKE (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

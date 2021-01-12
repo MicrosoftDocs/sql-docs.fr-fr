@@ -19,14 +19,14 @@ helpviewer_keywords:
 - viewing filegroup properties
 - displaying filegroup properties
 ms.assetid: b3a930e6-df05-4034-929c-f681f5f6fc6e
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 369a9e1b4914fe4c3de1d7fc86596067d67867ef
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 05e92cdfb95110701fd41d4d02462b35477d8c61
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96128484"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98087790"
 ---
 # <a name="filegroupproperty-transact-sql"></a>FILEGROUPPROPERTY (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

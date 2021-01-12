@@ -16,14 +16,14 @@ helpviewer_keywords:
 ms.assetid: 233d0877-046b-4dcc-b5da-adeb22f78531
 author: jovanpop-msft
 ms.author: jovanpop
-ms.reviewer: jroth
+ms.reviewer: chadam
 monikerRange: = azuresqldb-current||= azure-sqldw-latest||>= sql-server-2016||>= sql-server-linux-2017
-ms.openlocfilehash: b3f0ea1a5a1260699fa4bbc0a2fbf84930b1c07e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 1c7b948b1f883d1de6c6bb6556aee25c0e859695
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472010"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98085821"
 ---
 # <a name="openjson-transact-sql"></a>OPENJSON (Transact-SQL)
 

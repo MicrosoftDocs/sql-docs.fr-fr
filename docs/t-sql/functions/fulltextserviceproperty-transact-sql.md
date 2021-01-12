@@ -19,14 +19,14 @@ helpviewer_keywords:
 - services [SQL Server], full-text search properties
 - test
 ms.assetid: b7dcacb0-af83-4807-9d1e-49148b56b59c
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: b47a991aa2500236aec9d80d2ae4c51144619f90
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: b5d14ac6097fb6b1199124046c5780139e644949
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91116043"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98087183"
 ---
 # <a name="fulltextserviceproperty-transact-sql"></a>FULLTEXTSERVICEPROPERTY (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

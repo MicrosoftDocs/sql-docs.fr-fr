@@ -17,14 +17,14 @@ helpviewer_keywords:
 - polybase, alter external data source statement
 - ALTER EXTERNAL DATA SOURCE statement
 ms.assetid: a34b9e90-199d-46d0-817a-a7e69387bf5f
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: b66c95d7818144abd41b7a5b9fbedb93ba81aded
-ms.sourcegitcommit: bd3a135f061e4a49183bbebc7add41ab11872bae
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: c168be7ae24c23c24920e3d5a1d844cb84a2bb2c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92300459"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98082728"
 ---
 # <a name="alter-external-data-source-transact-sql"></a>ALTER EXTERNAL DATA SOURCE (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdbmi-asa-pdw](../../includes/applies-to-version/sqlserver2016-asdbmi-asa-pdw.md)]

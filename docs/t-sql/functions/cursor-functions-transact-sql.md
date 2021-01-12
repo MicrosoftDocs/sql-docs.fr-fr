@@ -14,14 +14,14 @@ helpviewer_keywords:
 - functions [SQL Server], cursors
 - cursor functions
 ms.assetid: 7d9daa10-4c50-4212-9400-42120222b2b8
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: feed3d608cf3031d03467b19494dabc7844460fe
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 3433a39caeb0a1e951eba18ccdd3d1658c108252
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88468072"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98087691"
 ---
 # <a name="cursor-functions-transact-sql"></a>Fonctions de curseur (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

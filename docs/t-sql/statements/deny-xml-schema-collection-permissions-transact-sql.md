@@ -17,14 +17,14 @@ helpviewer_keywords:
 - DENY statement, XML schema collections
 - schema collections [SQL Server], permissions
 ms.assetid: 159969a7-8313-41bc-bb19-c55af76597e6
-author: MightyPen
-ms.author: genemi
-ms.openlocfilehash: 22656e0f60bcfd19b977b080ffa5f7a8c2558f4c
-ms.sourcegitcommit: 197a6ffb643f93592edf9e90b04810a18be61133
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 4e52584f3fe4bcd1528557dc04e602a3f11ca37c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91380230"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98081772"
 ---
 # <a name="deny-xml-schema-collection-permissions-transact-sql"></a>DENY – refus d'autorisations de collection de schémas XML (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

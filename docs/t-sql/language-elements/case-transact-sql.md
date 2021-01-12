@@ -18,15 +18,15 @@ helpviewer_keywords:
 - comparing expressions
 - searched CASE expression
 ms.assetid: 658039ec-8dc2-4251-bc82-30ea23708cee
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 16477e0e469ef67b0dbbceb04d5760b7edc6730a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0b845dd7b9ca9fcd78ccef5f9ebe55ac2bae7749
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97468090"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98085864"
 ---
 # <a name="case-transact-sql"></a>CASE (Transact-SQL)
 

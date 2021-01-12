@@ -18,14 +18,14 @@ helpviewer_keywords:
 - FULLTEXTCATALOGPROPERTY function
 - status information [SQL Server], full-text catalogs
 ms.assetid: f841dc79-2044-4863-aff0-56b8bb61f250
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 83213da53228a39b3642f9563aecd5d365d02355
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 57e53c26b7f1797daf6a1ccc53f7578eabda734a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91116048"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98087303"
 ---
 # <a name="fulltextcatalogproperty-transact-sql"></a>FULLTEXTCATALOGPROPERTY (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

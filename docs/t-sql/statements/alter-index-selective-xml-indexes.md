@@ -11,14 +11,14 @@ ms.topic: language-reference
 dev_langs:
 - TSQL
 ms.assetid: cca96a8f-7737-42d2-bbcc-03d5f858dcc1
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 75d33f9f8962e29ef0d059370df72fb7ffcabc0c
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 47a934c2e8c89562e3aea7971df72da1b95dba3a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549449"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98082212"
 ---
 # <a name="alter-index-selective-xml-indexes"></a>ALTER INDEX (index XML sélectifs)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

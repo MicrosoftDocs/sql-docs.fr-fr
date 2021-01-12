@@ -23,15 +23,15 @@ helpviewer_keywords:
 - modulo operator (%)
 - modulus operator (%)
 ms.assetid: f93c662e-f405-486e-bf23-a2d03907b5bd
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 4cad8634c4a7a142d44d4c6ab1b36e4816ea034f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 34b80f69ef53e5cfa3c6c52edbdf3a78c8058e3c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460992"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98083701"
 ---
 # <a name="-modulus-transact-sql"></a>% (Reste) (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

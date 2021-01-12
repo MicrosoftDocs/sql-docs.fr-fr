@@ -20,14 +20,14 @@ helpviewer_keywords:
 - subscriptions [SQL Server query notifications], stopping
 - query notifications [SQL Server], subscriptions
 ms.assetid: 8aeadf51-286c-4748-bef2-d25858b250bf
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 0434642595fb334c138e1c3d1764384760a38407
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: f9ba5c75e44fcedd0f99e051b94812dbd3d94e5e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92193369"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98084774"
 ---
 # <a name="kill-query-notification-subscription-transact-sql"></a>KILL QUERY NOTIFICATION SUBSCRIPTION (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

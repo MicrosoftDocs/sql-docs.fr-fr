@@ -21,14 +21,14 @@ helpviewer_keywords:
 - RECONFIGURE
 - RECONFIGURE, WITH OVERRIDE statement
 ms.assetid: 2e6e4eeb-b70b-4f45-a253-28ac4e595d75
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 26c8d6f53ef87fa2d9e6ab5dcfee6b39be01834f
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 2fa09a4ac7fb59ec39524a709387ee4ff91aed63
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "92196790"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98082994"
 ---
 # <a name="reconfigure-transact-sql"></a>RECONFIGURE (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

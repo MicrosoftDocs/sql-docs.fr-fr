@@ -22,15 +22,15 @@ helpviewer_keywords:
 - plus sign (+)
 - add operator (+)
 ms.assetid: 4ba8baac-5f07-432c-87c5-d23e7011da55
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 8e80d9da49c844bef15a2bef2e331b4abc51833a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 930c27eab2a9005c3b3328c9a2e739bcddd22018
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481900"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98086061"
 ---
 # <a name="-addition-transact-sql"></a>+ (Addition) (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

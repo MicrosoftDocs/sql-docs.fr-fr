@@ -21,15 +21,15 @@ helpviewer_keywords:
 - IN keyword
 - 8632 (Database Engine error)
 ms.assetid: 4419de73-96b1-4dfe-8500-f4507915db04
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 16c3b2aafab7c85860ac98b25f403393f4dc100c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 1a2be93be39ac3af00895a9260958b512652fc3d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466160"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98085139"
 ---
 # <a name="in-transact-sql"></a>IN (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

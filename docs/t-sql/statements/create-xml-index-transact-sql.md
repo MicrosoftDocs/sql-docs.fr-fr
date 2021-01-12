@@ -21,17 +21,17 @@ helpviewer_keywords:
 - index creation [SQL Server], XML indexes
 - XML indexes [SQL Server], creating
 ms.assetid: c510cfbc-68be-4736-b3cc-dc5b7aa51f14
-author: MightyPen
-ms.author: genemi
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 08/10/2017
-ms.openlocfilehash: bd8f6e580290a0b10c833f9ee94158c69eb09229
-ms.sourcegitcommit: 2bf83972036bdbe6a039fb2d1fc7b5f9ca9589d3
+ms.openlocfilehash: 03295249061e1ed6210c8dfbc086d0326137ad26
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94674217"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98082233"
 ---
 # <a name="create-xml-index-transact-sql"></a>CREATE XML INDEX (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

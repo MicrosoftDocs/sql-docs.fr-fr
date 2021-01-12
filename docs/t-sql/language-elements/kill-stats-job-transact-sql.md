@@ -21,14 +21,14 @@ helpviewer_keywords:
 - KILL STATS JOB statement
 - statistics update jobs [SQL Server]
 ms.assetid: 55a8f9f1-3259-45c0-8ab9-60b9c088b4b4
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: a3d76f64539df36751f87cf3a9c3586b138ddbbb
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: c862b3f53654278aeb1a6e69cd30ebb52dca3732
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92193354"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98084476"
 ---
 # <a name="kill-stats-job-transact-sql"></a>KILL STATS JOB (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

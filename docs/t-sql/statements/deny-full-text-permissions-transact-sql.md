@@ -17,14 +17,14 @@ helpviewer_keywords:
 - full-text stoplist [SQL Server], permissions
 - DENY statement, full-text permissions
 ms.assetid: d86e9a1d-0938-4ec2-a169-2d0564f3642e
-author: MightyPen
-ms.author: genemi
-ms.openlocfilehash: 226ee1104f6be9bb50bfbcc87c774f05170abbd5
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: fffa797dbe182b9b8111795c5ffbc670bc2b61b1
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96131236"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98081773"
 ---
 # <a name="deny-full-text-permissions-transact-sql"></a>DENY - Autorisations relatives au texte intégral (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

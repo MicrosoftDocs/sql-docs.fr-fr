@@ -17,15 +17,15 @@ helpviewer_keywords:
 - LAG function
 - analytic functions, LAG
 ms.assetid: a9a90bdb-3f80-4c97-baca-b7407bcdc7f0
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 283ac02626363bddfba5ada4e41349b0010b3815
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 1390066fbbef2cf772c8410e9ae1b237e6ad5491
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461320"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98086868"
 ---
 # <a name="lag-transact-sql"></a>LAG (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

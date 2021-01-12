@@ -16,14 +16,14 @@ helpviewer_keywords:
 ms.assetid: cd016e14-11eb-4eaf-bf05-c7cfcc820a10
 author: jovanpop-msft
 ms.author: jovanpop
-ms.reviewer: jroth
+ms.reviewer: chadam
 monikerRange: = azuresqldb-current||= azure-sqldw-latest||>= sql-server-2016||>= sql-server-linux-2017
-ms.openlocfilehash: 567395526bdf514153d21645da5dc5a5454c00ce
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9c6571a5938c503b99378003323168a695de58a9
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472070"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98086827"
 ---
 # <a name="json_value-transact-sql"></a>JSON_VALUE (Transact-SQL)
 

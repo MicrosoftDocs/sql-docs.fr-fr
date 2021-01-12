@@ -20,15 +20,15 @@ helpviewer_keywords:
 - assignment operators, %=
 - augmented operators, %=
 ms.assetid: 45e35516-1f4c-406b-a580-70a14b087847
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 05c1019ede7fe2f4a18b28fe7bf5194f4cc68a3c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: d0ee3065c408ade6c825b0d6bf3f00ecd830b06f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461002"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98083874"
 ---
 # <a name="-modulus-assignment-transact-sql"></a>%= (Affectation du reste) (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

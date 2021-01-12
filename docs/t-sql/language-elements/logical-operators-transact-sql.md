@@ -18,14 +18,14 @@ helpviewer_keywords:
 - "FALSE"
 - logical operators [SQL Server], Transact-SQL
 ms.assetid: edd92f08-76fb-4fd7-a4b6-8520d6a81df1
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 1fe06931370c3c97598ed2b9789b1e692a3980ac
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: d30bc8ac77518a3568567214bccd8c4788fa88ba
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88445456"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98083647"
 ---
 # <a name="logical-operators-transact-sql"></a>Opérateurs logiques (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

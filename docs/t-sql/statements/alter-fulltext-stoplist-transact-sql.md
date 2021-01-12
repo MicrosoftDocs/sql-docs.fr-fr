@@ -20,14 +20,14 @@ helpviewer_keywords:
 - full-text search [SQL Server], stopwords
 - stopwords [full-text search]
 ms.assetid: f6ad87d5-6a34-435a-8456-8244947c5c83
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: a314867515ecbde34702761e7c9ee8904523d0a3
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 12e90f8d8b2d0b35ecd406af54f55b6ea96cb4c6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96128096"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98082383"
 ---
 # <a name="alter-fulltext-stoplist-transact-sql"></a>ALTER FULLTEXT STOPLIST (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

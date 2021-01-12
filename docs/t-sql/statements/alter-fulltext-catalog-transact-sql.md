@@ -21,14 +21,14 @@ helpviewer_keywords:
 - full-text catalogs [SQL Server], modifying
 - full-text catalogs [SQL Server], reorganizing
 ms.assetid: 31a47aaf-6c7f-48a4-a86a-d57aec66c9cb
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: dd983f16907332414cc6f726fb41583f8b928069
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: a694ce465b53f74e3139a017548e7bfecd52b88c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96128108"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98082772"
 ---
 # <a name="alter-fulltext-catalog-transact-sql"></a>ALTER FULLTEXT CATALOG (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
