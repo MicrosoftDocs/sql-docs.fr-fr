@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 4a3857e9e98bfbe7fcc86ee07272698f0fcac763
-ms.sourcegitcommit: ead0b8c334d487a07e41256ce5d6acafa2d23c9d
+ms.openlocfilehash: 3228a21b43fd5b5ed2a23c5e13b47353e55cd028
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92418709"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093270"
 ---
 # <a name="mssqlserver_3859"></a>MSSQLSERVER_3859
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -52,19 +52,19 @@ Cette erreur indique qu’un utilisateur a apporté des modifications dans les t
 
     Le message d’avertissement suivant est retourné lorsque vous exécutez la commande `DBCC_CHECKDB` après la mise à jour manuelle d’une table système :
 
-    > Résultats DBCC pour «  **nom_base_de_données**  ».  
+    > Résultats DBCC pour « **nom_base_de_données** ».  
     Msg 8992, Niveau 16, État 1, Ligne 1  
-    Consultez le message du catalogue Msg 3859, État 1 : Avertissement : Le catalogue système a été mis à jour directement dans la base de données avec l’ID \%d, le plus récemment à **date_heure** .  
-    CHECKDB a trouvé 0 erreur d’allocation et 0 erreur de cohérence dans la base de données «  **nom_base_de_données**  ».  
+    Consultez le message du catalogue Msg 3859, État 1 : Avertissement : Le catalogue système a été mis à jour directement dans la base de données avec l’ID \%d, le plus récemment à **date_heure**.  
+    CHECKDB a trouvé 0 erreur d’allocation et 0 erreur de cohérence dans la base de données « **nom_base_de_données** ».  
     Exécution de DBCC terminée. Si DBCC a affiché des messages d'erreur, contactez l'administrateur système.
 
 ## <a name="user-action"></a>Action requise
 
-Pour résoudre ce problème, utilisez l’une des méthodes suivantes :
+Pour résoudre ce problème, utilisez l’une des méthodes suivantes.
 
 - Méthode 1
 
-    Si vous disposez d’une sauvegarde propre de la base de données, restaurez la base de données à partir de cette sauvegarde.  
+    Si vous disposez d’une sauvegarde saine de la base de données, restaurez la base de données à partir de cette sauvegarde.  
     > [!NOTE]
     > Cette méthode fonctionne uniquement s’il n’y a pas d’incohérences dans les métadonnées de la sauvegarde.  
 
@@ -77,4 +77,4 @@ Pour résoudre ce problème, utilisez l’une des méthodes suivantes :
 
 ## <a name="more-information"></a>Informations complémentaires
 
-Pour plus d’informations, consultez : [Tables de base système](/sql/relational-databases/system-tables/system-base-tables).
+Pour plus d’informations, consultez : [Tables de base système](../system-tables/system-base-tables.md).

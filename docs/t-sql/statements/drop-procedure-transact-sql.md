@@ -23,15 +23,15 @@ helpviewer_keywords:
 - stored procedures [SQL Server], removing
 - removing procedure groups
 ms.assetid: 1c2d7235-7b9b-4336-8f17-429e7d82c2c3
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: eb93ec13efd70e48bd8f11eaf1b101eb49745c12
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: f9de2be24c9841de30ee40b82cc9271406d58f44
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465950"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096978"
 ---
 # <a name="drop-procedure-transact-sql"></a>DROP PROCEDURE (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

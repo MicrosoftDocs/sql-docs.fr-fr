@@ -20,15 +20,15 @@ helpviewer_keywords:
 - augmented operators, |=
 - '|= (bitwise OR equals)'
 ms.assetid: bd746a4f-6498-4196-bf2e-b6f457a15d44
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 42d163191418c34a1438528252d83396bd86fb39
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b7b92792076ff050beb158af53bd6318c7d79fe0
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464340"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092218"
 ---
 # <a name="-bitwise-or-assignment-transact-sql"></a>|= (Affectation après OR au niveau du bit) (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

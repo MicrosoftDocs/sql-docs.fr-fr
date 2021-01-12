@@ -19,15 +19,15 @@ helpviewer_keywords:
 - positive operator (+)
 - positive values [SQL Server]
 ms.assetid: 0f31c5cc-3078-4f6a-9870-7eb1a98053fb
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: ec7815d623208c5e2860fd233ba5a290e2e8762b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 70dae64868be97cf243a788075a1b84c37872b31
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460902"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095901"
 ---
 # <a name="unary-operators---positive"></a>Opérateurs unaires - Positif
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

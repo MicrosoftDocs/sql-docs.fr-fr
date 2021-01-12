@@ -22,14 +22,14 @@ helpviewer_keywords:
 - query optimizer [SQL Server], optimizing process
 - overriding query optimizer process
 ms.assetid: b6c0b08f-2060-4696-9e12-50cb7e674321
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: c04f734da57a20c576759e5db082c6021ad89e8a
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 35fee4ee42f2b401b584e752e1a834c991b03483
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547649"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093374"
 ---
 # <a name="set-forceplan-transact-sql"></a>SET FORCEPLAN (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

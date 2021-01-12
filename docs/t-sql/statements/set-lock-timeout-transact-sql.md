@@ -23,15 +23,15 @@ helpviewer_keywords:
 - locking [SQL Server], time-outs
 - wait time for lock releases [SQL Server]
 ms.assetid: dd0c389e-956d-435e-bf71-e16624a0a215
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 0ef7e4b6af5a8cbadd39831be3e2744f766a845f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a006850f731e78628275f3558975c95e12c64dc6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481760"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093373"
 ---
 # <a name="set-lock_timeout-transact-sql"></a>SET LOCK_TIMEOUT (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

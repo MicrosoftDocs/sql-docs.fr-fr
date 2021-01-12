@@ -16,14 +16,14 @@ helpviewer_keywords:
 - ALTER DATABASE statement, database mirroring
 - database mirroring [SQL Server], Transact-SQL
 ms.assetid: 27a032ef-1cf6-4959-8e67-03d28c4b3465
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 3d7fae3f87700a97faa898d839288a8392ef5364
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 60dcccf63cb8ca8116f5fdbfcfe7482e0a1560a4
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489429"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094680"
 ---
 # <a name="alter-database-transact-sql-database-mirroring"></a>Mise en miroir de bases de données ALTER DATABASE (Transact-SQL)
 

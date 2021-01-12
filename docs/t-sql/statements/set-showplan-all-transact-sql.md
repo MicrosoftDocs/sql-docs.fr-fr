@@ -25,14 +25,14 @@ helpviewer_keywords:
 - stopping statement execution
 - estimated execution information [SQL Server]
 ms.assetid: a500b682-bae4-470f-9e00-47de905b851b
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 34fc7107c1285dbed43a5303984edd2b32d1714d
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 6a8cef73df3a6ced1cac91c997848cf28b966042
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540537"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093329"
 ---
 # <a name="set-showplan_all-transact-sql"></a>SET SHOWPLAN_ALL (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

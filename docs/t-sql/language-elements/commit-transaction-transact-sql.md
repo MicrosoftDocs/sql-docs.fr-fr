@@ -27,15 +27,15 @@ helpviewer_keywords:
 - COMMIT TRANSACTION statement
 - rolling back transactions, COMMIT TRANSACTION
 ms.assetid: f8fe26a9-7911-497e-b348-4e69c7435dc1
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 431808195f55f2cc7d04621fcdc9ac63ab4a2a1d
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a322d2c707c819bb1d209965fef1aa5f747d0fac
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474190"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092203"
 ---
 # <a name="commit-transaction-transact-sql"></a>COMMIT TRANSACTION (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

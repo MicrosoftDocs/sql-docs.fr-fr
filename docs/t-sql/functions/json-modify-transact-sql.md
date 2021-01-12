@@ -9,14 +9,14 @@ ms.topic: language-reference
 ms.assetid: 96bc8255-a037-4907-aec4-1a9c30814651
 author: jovanpop-msft
 ms.author: jovanpop
-ms.reviewer: jroth
+ms.reviewer: chadam
 monikerRange: = azuresqldb-current||= azure-sqldw-latest||>= sql-server-2016||>= sql-server-linux-2017
-ms.openlocfilehash: 517aad9dec56520b2f0b86b81ba6bb1b2e4761cb
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 547a304b4f5a9b6069d023a751f73d99e8456bbc
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461330"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092227"
 ---
 # <a name="json_modify-transact-sql"></a>JSON_MODIFY (Transact-SQL)
 

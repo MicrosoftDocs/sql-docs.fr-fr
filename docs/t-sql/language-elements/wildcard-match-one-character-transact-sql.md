@@ -20,14 +20,14 @@ helpviewer_keywords:
 - wildcard characters [SQL Server]
 - _ (wildcard - match one character)
 ms.assetid: 11a2ed36-9e21-4bdf-ae20-a31db1434b97
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 3699c5d71de477cca95b1ec8bacaa3b56b9e438d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 38398adeb20a6a9f70ab225d4ead8b8504635323
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88417075"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095859"
 ---
 # <a name="_-wildcard---match-one-character-transact-sql"></a>_ (Caractère générique - recherche de correspondance d'un seul caractère) (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -14,14 +14,14 @@ helpviewer_keywords:
 - compound operators
 - compound operators, described
 ms.assetid: 5072fe91-02d3-42a7-831f-756eff714a17
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: f2daa8d7b168266ac56d1047eca2aa9408ebfe25
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 2666168b9123d5656c2e9822cb8c5bfc328e9a0f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92196663"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092189"
 ---
 # <a name="compound-operators-transact-sql"></a>Opérateurs composés (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

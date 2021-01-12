@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - CHOOSE function
 ms.assetid: 1c382c83-7500-4bae-bbdc-c1dbebd3d83f
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 68ad50b69fefd541e083ecab096732d549d171d1
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 7aa84b297980683468779828b8ce215f27793516
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124647"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092202"
 ---
 # <a name="logical-functions---choose-transact-sql"></a>Fonctions logiques - CHOOSE (Transact-SQL)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

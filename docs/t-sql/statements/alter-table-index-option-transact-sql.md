@@ -13,14 +13,14 @@ dev_langs:
 helpviewer_keywords:
 - index_option
 ms.assetid: 8a14f12d-2fbf-4036-b8b2-8db3354e0eb7
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 2d3aedcafe6917084474d5cc7f33d35f651aa39f
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 6089ef60d4f0c4fc6338404084140f72fa3a3a19
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89541443"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094681"
 ---
 # <a name="alter-table-index_option-transact-sql"></a>ALTER TABLE index_option (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -260,7 +260,7 @@ DATA_COMPRESSION = COLUMNSTORE_ARCHIVE ON PARTITIONS (2, 4, 6 TO 8)
  Un **SWITCH** ou une reconstruction d’index en ligne se termine dès qu’il n’y a aucune opération bloquante pour cette table. *WAIT_AT_LOW_PRIORITY* indique que si l’opération **SWITCH** ou l’opération de reconstruction d’index en ligne ne peut pas être fermée immédiatement, elle attend. L’opération contient des verrous de faible priorité, ce qui permet à d’autres opérations qui contiennent des verrous en conflit avec les instructions DDL de continuer. L’omission de l’option **WAIT AT LOW PRIORITY** équivaut à `WAIT_AT_LOW_PRIORITY ( MAX_DURATION = 0 minutes, ABORT_AFTER_WAIT = NONE)`.  
   
 MAX_DURATION = *time* [**MINUTES** ]  
- Temps d’attente (valeur entière spécifiée en minutes) que le**SWITCH** ou le verrou de reconstruction d’index en ligne qui doit être acquis attend lors de l’exécution de la commande DDL. Le SWITCH ou l'opération de reconstruction de l'index en ligne tente de terminer immédiatement. Si l’opération est bloquée pendant la durée **MAX_DURATION**, l’une des actions **ABORT_AFTER_WAIT** est exécutée. La durée **MAX_DURATION** est toujours spécifiée en minutes, et le mot **MINUTES** peut être omis.  
+ Temps d’attente (valeur entière spécifiée en minutes) que le **SWITCH** ou le verrou de reconstruction d’index en ligne qui doit être acquis attend lors de l’exécution de la commande DDL. Le SWITCH ou l'opération de reconstruction de l'index en ligne tente de terminer immédiatement. Si l’opération est bloquée pendant la durée **MAX_DURATION**, l’une des actions **ABORT_AFTER_WAIT** est exécutée. La durée **MAX_DURATION** est toujours spécifiée en minutes, et le mot **MINUTES** peut être omis.  
   
 ABORT_AFTER_WAIT = [**NONE** | **SELF** | **BLOCKERS** } ]  
  Aucune  

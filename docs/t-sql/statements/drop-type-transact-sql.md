@@ -19,14 +19,14 @@ helpviewer_keywords:
 - alias data types [SQL Server], removing
 - DROP TYPE statement
 ms.assetid: 11bf83f9-0718-4238-a835-83d2eb14ae7b
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 26fb837dc28b0ac7b2845a64eab800512e508b7b
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: f7dc3dcd3f1fa87330bda0865160341eec462a86
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96131064"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093432"
 ---
 # <a name="drop-type-transact-sql"></a>DROP TYPE (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

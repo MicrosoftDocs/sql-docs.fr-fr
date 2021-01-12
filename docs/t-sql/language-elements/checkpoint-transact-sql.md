@@ -25,14 +25,14 @@ helpviewer_keywords:
 - manual checkpoints [SQL Server]
 - pages [SQL Server], checkpoints
 ms.assetid: ccdfc689-ad4e-44c0-83f7-0f2cfcfb6406
-author: juliemsft
+author: julieMSFT
 ms.author: jrasnick
-ms.openlocfilehash: 3f2d5761829c38aba06f36b4d473c8ea9dc36214
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 257bdc81d1f5f2ab6a5599cb155f71453ac27c34
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124489"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097145"
 ---
 # <a name="checkpoint-transact-sql"></a>CHECKPOINT (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

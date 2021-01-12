@@ -18,15 +18,15 @@ helpviewer_keywords:
 - displaying database properties
 - database properties [SQL Server]
 ms.assetid: 8a9e0ffb-28b5-4640-95b2-a54e3e5ad941
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: f269a6bc94c1685d9d91f280614348bf0a203020
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 62ee92cdbe0b086b167f31e7eb67685b6d7061e4
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478740"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093706"
 ---
 # <a name="databasepropertyex-transact-sql"></a>DATABASEPROPERTYEX (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

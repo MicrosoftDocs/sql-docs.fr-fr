@@ -20,14 +20,14 @@ helpviewer_keywords:
 - '!< (not less than)'
 - not less than operator (!<)
 ms.assetid: ecbb598e-58a2-4b6c-90b4-3ad5bdfcae39
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 328c7feba7e11a6ef59e12ac499ef8522cb9a7de
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 117ead88282d37a655eb51bfb696c3e41770a350
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92196792"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097085"
 ---
 # <a name="lt-not-less-than-transact-sql"></a>!&lt; (Non inférieur à) (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

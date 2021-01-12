@@ -20,15 +20,15 @@ helpviewer_keywords:
 - dropping schemas
 - removing schemas
 ms.assetid: 874aa29e-c8ad-41e4-a672-900fdc58f1f6
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: d953e19d178e0f88e2ef4689659e8a4ce74134ad
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: fbc8acbad052475eae152010b55d4b667f589de6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465930"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093475"
 ---
 # <a name="drop-schema-transact-sql"></a>DROP SCHEMA (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

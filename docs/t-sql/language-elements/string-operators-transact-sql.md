@@ -16,14 +16,14 @@ helpviewer_keywords:
 - string concatenation operators
 - + (string concatenation)
 ms.assetid: ee4e715d-d8f1-4d0e-81b3-04573ec9f13c
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: fe780c6250f5e93292d3e54af66d5f01ebcf6bdf
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: f321dba6b534bed555d9c490a6909e8ae49941ca
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88445346"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097017"
 ---
 # <a name="string-operators-transact-sql"></a>Opérateurs d'enchaînement (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - CUME_DIST function
 - analytic functions, CUME_DIST
 ms.assetid: 491b07f3-9ffd-4cdd-93e5-5abb636fc5ef
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 491d0833c8c0a8a730adf696a42fb251fe394780
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4252c237e234fdc380ca0f4b18cfcf55f6bf9ae4
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97462530"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093722"
 ---
 # <a name="cume_dist-transact-sql"></a>CUME_DIST (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

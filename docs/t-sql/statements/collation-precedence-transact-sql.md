@@ -24,15 +24,15 @@ helpviewer_keywords:
 - collation coercion rules
 - rules [SQL Server], collations
 ms.assetid: 58c4e64b-5634-4c29-aa22-33193282dd27
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: b7e779221a2b234d2bebb718f3a7ef955465f284
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c06bf7aa0ec45150f657e5822d1d5b1387ef18df
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97476660"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098463"
 ---
 # <a name="collation-precedence"></a>Priorité de classement
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

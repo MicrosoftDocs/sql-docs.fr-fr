@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 38ffd9c2-18a5-43d2-b674-e425addec4e4
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 23b04ae0e205a70b195b7da39a666256463bfa1c
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 85d9e42b9c0ac537d6f33bd884b898374119972d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92192849"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099326"
 ---
 # <a name="sql-server-data-files-in-microsoft-azure"></a>Fichiers de données SQL Server dans Microsoft Azure
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -126,7 +126,7 @@ Pour plus d'informations, consultez [Gérer l'accès aux ressources Azure Storag
   
 - Quand vous utilisez la fonctionnalité Fichiers de données SQL Server dans Azure, SQL Server effectue toutes les comparaisons d’URL ou de chemin de fichier à l’aide du classement défini dans la base de données **MASTER**.  
   
-- Les**groupes de disponibilité AlwaysOn** sont pris en charge tant que vous n’ajoutez pas de nouveaux fichiers de base de données à la base de données primaire. Si une opération de base de données nécessite la création d’un fichier dans la base de données primaire, désactivez d’abord les groupes de disponibilité dans le nœud secondaire. Puis, effectuez l'opération de base de données dans la base de données primaire et sauvegardez la base de données dans le nœud principal. Restaurez ensuite la base de données sur le nœud secondaire. Une fois que vous avez fini, réactivez les groupes de disponibilité Always On dans le nœud secondaire. 
+- Les **groupes de disponibilité AlwaysOn** sont pris en charge tant que vous n’ajoutez pas de nouveaux fichiers de base de données à la base de données primaire. Si une opération de base de données nécessite la création d’un fichier dans la base de données primaire, désactivez d’abord les groupes de disponibilité dans le nœud secondaire. Puis, effectuez l'opération de base de données dans la base de données primaire et sauvegardez la base de données dans le nœud principal. Restaurez ensuite la base de données sur le nœud secondaire. Une fois que vous avez fini, réactivez les groupes de disponibilité Always On dans le nœud secondaire. 
 
    >[!NOTE]
    >Les instances de cluster de basculement Always On ne sont pas prises en charge en cas d’utilisation de la fonctionnalité Fichiers de données SQL Server dans Azure.
@@ -177,7 +177,7 @@ Pour plus d'informations, consultez [Gérer l'accès aux ressources Azure Storag
   
  **Erreurs de base de données**  
   
-Résolution des **erreurs liées à la création d’une base de données** : Consultez les instructions fournies dans la leçon 4 du [Didacticiel : Utiliser le service Stockage Microsoft Azure Blob avec SQL Server 2016](../lesson-4-restore-database-to-virtual-machine-from-url.md).  
+Résolution des **erreurs liées à la création d’une base de données** : Consultez les instructions fournies dans la leçon 4 du [Didacticiel : Utiliser le service Stockage Microsoft Azure Blob avec SQL Server 2016](../tutorial-use-azure-blob-storage-service-with-sql-server-2016.md#4----restore-database-to-virtual-machine-from-url).  
   
 **Erreurs lors de l'exécution de l'instruction Alter** Résolution : veillez à exécuter l'instruction Alter Database lorsque la base de données est en ligne. Lors de la copie des fichiers de données vers le stockage Azure, créez toujours un objet blob de pages, et non un objet blob de blocs. Sinon, la modification de la base de données avec l'instruction ALTER échouera. Consultez les instructions fournies dans la leçon 7 du [Didacticiel : Utiliser le service Stockage Microsoft Azure Blob avec SQL Server 2016](../tutorial-use-azure-blob-storage-service-with-sql-server-2016.md).  
   

@@ -12,12 +12,12 @@ ms.assetid: df347f9b-b950-4e3a-85f4-b9f21735eae3
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 0d28550dba1a4703bab01324910436b7256597bb
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: b4cf02b18cdaef035cd27b568d5f8d84f0a25619
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643841"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094600"
 ---
 # <a name="sample-database-for-in-memory-oltp"></a>Exemple de base de données pour OLTP en mémoire
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -183,10 +183,10 @@ ms.locfileid: "97643841"
   
  Les index HASH peuvent être utilisés pour optimiser davantage la charge de travail. Ils sont particulièrement optimisés pour les recherches de point et les insertions de ligne. Toutefois, il faut considérer qu'ils ne prennent pas en charge les analyses de plage, les analyses triées, ou la recherche sur les colonnes clés d'index. Par conséquent, leur utilisation est plus délicate. En outre, il est nécessaire de spécifier le bucket_count lors de la création. Celui-ci doit généralement correspondre à une valeur comprise entre le nombre de valeurs de clé d'index et son double, mais il peut généralement être surestimé.  
   
-Pour plus d’informations, consultez les [instructions d’index](/sql/relational-databases/indexes/guidelines-for-online-index-operations) et les recommandations sur le [choix du bucket_count approprié](https://sqlserver-help.com/tag/bucket_count/) dans la documentation en ligne.  
+Pour plus d’informations, consultez les [instructions d’index](../indexes/guidelines-for-online-index-operations.md) et les recommandations sur le [choix du bucket_count approprié](https://sqlserver-help.com/tag/bucket_count/) dans la documentation en ligne.  
 
 La documentation en ligne fournit des informations supplémentaires sur les sujets suivants :
-- [Recommandations relatives à l’index](/sql/relational-databases/in-memory-oltp/indexes-for-memory-optimized-tables) <!-- On MSDN-TechNet was version sql.120 (2014), library/dn133166 -->
+- [Recommandations relatives à l’index](./indexes-for-memory-optimized-tables.md) <!-- On MSDN-TechNet was version sql.120 (2014), library/dn133166 -->
 
  Les index des tables migrées ont été paramétrés pour la charge de travail de traitement des commandes de démonstration. La charge de travail repose sur les insertions et les recherches de point dans les tables Sales.SalesOrderHeader_inmem et Sales.SalesOrderDetail_inmem, elle porte également sur les recherches de point sur les colonnes clés primaires dans les tables Production.Product_inmem et Sales.SpecialOffer_inmem.  
   

@@ -20,14 +20,14 @@ helpviewer_keywords:
 - remote service bindings [Service Broker], dropping
 - DROP REMOTE SERVICE BINDING statement
 ms.assetid: 377789b4-bf94-488f-8c20-687d0bae447a
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: b7ab90d0f74170b37af4c546474828e047cc73db
-ms.sourcegitcommit: 197a6ffb643f93592edf9e90b04810a18be61133
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 407a87486d185c93f9abfd5c5d4a6be2b5c3a436
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91380309"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096913"
 ---
 # <a name="drop-remote-service-binding-transact-sql"></a>DROP REMOTE SERVICE BINDING (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

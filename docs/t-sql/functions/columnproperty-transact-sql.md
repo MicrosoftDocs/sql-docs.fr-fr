@@ -18,14 +18,14 @@ helpviewer_keywords:
 - parameters [SQL Server], properties
 - COLUMNPROPERTY function
 ms.assetid: 2408c264-6eca-4120-bb71-df043c7c2792
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: a6cd108efb12e459c8114c6b65e344d06f403367
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 287b8ff6085658b863601fcc11a3e8c37cd50faa
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96128528"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097265"
 ---
 # <a name="columnproperty-transact-sql"></a>COLUMNPROPERTY (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

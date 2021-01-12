@@ -20,14 +20,14 @@ helpviewer_keywords:
 - '!> (not greater than)'
 - not greater than operator (!>)
 ms.assetid: 71a413ed-64f1-4ab9-9c52-c5959a77d00f
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 7fe221134875dc0cfc8d5518ff6a2843b43ceaa6
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 337603c6b9f510c041681335b4a92f832aaf6234
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92187314"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097045"
 ---
 # <a name="gt-not-greater-than-transact-sql"></a>!&gt; (Non supérieur à) (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

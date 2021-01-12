@@ -23,14 +23,14 @@ helpviewer_keywords:
 - conversations [Service Broker], ending
 - ending conversations [SQL Server]
 ms.assetid: 4415a126-cd22-4a5e-b84a-d8c68515c83b
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 94fcbdfe06b99e0fb66cb6d462512c7d2a283914
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 16dd2a5201d001a54103408386036cee39040523
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96131042"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093433"
 ---
 # <a name="end-conversation-transact-sql"></a>END CONVERSATION (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

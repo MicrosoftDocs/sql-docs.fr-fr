@@ -23,15 +23,15 @@ helpviewer_keywords:
 - weekdays [SQL Server]
 - options [SQL Server], date
 ms.assetid: 6b0d0e52-8ac1-4f88-b091-f98d6fb8574a
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 03903318e254bee9962e7cc37d55161c15a07351
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 447f679f5cb57fceabf3831c8f62a4a6a19059fa
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465860"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093409"
 ---
 # <a name="set-datefirst-transact-sql"></a>SET DATEFIRST (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

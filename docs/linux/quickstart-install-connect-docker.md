@@ -13,12 +13,12 @@ ms.prod_service: linux
 ms.assetid: 82737f18-f5d6-4dce-a255-688889fdde69
 monikerRange: '>= sql-server-linux-2017 || >= sql-server-2017'
 zone_pivot_groups: cs1-command-shell
-ms.openlocfilehash: 615e3d2ec9c64be70535c9a45a9f31e94d34b139
-ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
+ms.openlocfilehash: f3bf3cff9f7497c5f880cbd75aef26b387c7415e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878770"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093282"
 ---
 # <a name="quickstart-run-sql-server-container-images-with-docker"></a>Démarrage rapide : Exécuter des images de conteneur SQL Server avec Docker
 [!INCLUDE [SQL Server - Linux](../includes/applies-to-version/sql-linux.md)]
@@ -502,7 +502,7 @@ Voici d’autres outils courants pour vous connecter à SQL Server :
 
 - [Visual Studio Code](../tools/visual-studio-code/sql-server-develop-use-vscode.md)
 - [SQL Server Management Studio (SSMS) sur Windows](sql-server-linux-manage-ssms.md)
-- [Azure Data Studio](../azure-data-studio/what-is.md)
+- [Azure Data Studio](../azure-data-studio/what-is-azure-data-studio.md)
 - [mssql-cli (préversion)](https://github.com/dbcli/mssql-cli/blob/master/doc/usage_guide.md)
 - [PowerShell Core](sql-server-linux-manage-powershell-core.md)
 

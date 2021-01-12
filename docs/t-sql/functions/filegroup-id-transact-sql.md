@@ -20,14 +20,14 @@ helpviewer_keywords:
 - IDs [SQL Server], filegroups
 - names [SQL Server], filegroups
 ms.assetid: 852a76d8-9e61-4a31-84ee-c7edb84a061c
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: ff8932e241349836f34dad60c805d4396ca84575
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: ac5ca26044fb7b6e0af151443cf7eed482ebb851
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96128473"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092232"
 ---
 # <a name="filegroup_id-transact-sql"></a>FILEGROUP_ID (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

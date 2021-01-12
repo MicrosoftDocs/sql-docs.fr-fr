@@ -20,15 +20,15 @@ helpviewer_keywords:
 - SET FMTONLY statement
 - FMTONLY option
 ms.assetid: 02a1d9ac-2e58-433c-9a07-2c5a4a2214e1
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 224611c3af21b85c82b76777b2df54d797eab0e2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6bb9fb1cf9b10f27bcf90b9d4deb56bcd6484044
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465760"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093299"
 ---
 # <a name="set-fmtonly-transact-sql"></a>SET FMTONLY (Transact-SQL)
 

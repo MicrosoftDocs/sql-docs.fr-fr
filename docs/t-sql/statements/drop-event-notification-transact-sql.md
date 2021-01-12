@@ -20,14 +20,14 @@ helpviewer_keywords:
 - DROP EVENT NOTIFICATION statement
 - removing event notifications
 ms.assetid: 0ffd8f47-4ea3-4238-9e73-c318df710cf7
-author: MightyPen
-ms.author: genemi
-ms.openlocfilehash: 9c3faeeac400e02f9cb01fcfc4af66c2ee5fe09d
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 9fb977f1f6f9627b56707f037a4524e98a7e3c0a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96131293"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095705"
 ---
 # <a name="drop-event-notification-transact-sql"></a>DROP EVENT NOTIFICATION (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

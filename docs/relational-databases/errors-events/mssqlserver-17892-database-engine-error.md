@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 59cf1ed10d71bf9813f2ce814d88e7f7d64b6b2e
-ms.sourcegitcommit: ead0b8c334d487a07e41256ce5d6acafa2d23c9d
+ms.openlocfilehash: 905b961e2fbf882f59b050a3acb7ba0f9c2f9046
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92418716"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099325"
 ---
 # <a name="mssqlserver_17892"></a>MSSQLSERVER_17892
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "92418716"
 
 ## <a name="explanation"></a>Explication
 
-L’erreur 17892 est générée lorsque le code d’un déclencheur LOGON ne peut pas s’exécuter correctement. Les [déclencheurs LOGON](/sql/relational-databases/triggers/logon-triggers) lancent des procédures stockées en réponse à un événement LOGON. Cet événement est déclenché lorsqu'une session utilisateur est établie avec une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Un message d’erreur semblable au suivant s’affiche :
+L’erreur 17892 est générée lorsque le code d’un déclencheur LOGON ne peut pas s’exécuter correctement. Les [déclencheurs LOGON](../triggers/logon-triggers.md) lancent des procédures stockées en réponse à un événement LOGON. Cet événement est déclenché lorsqu'une session utilisateur est établie avec une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Un message d’erreur semblable au suivant s’affiche :
 
 > Msg 17892, Niveau 14, État 1, Serveur \<Server Name>, Ligne 1  
 L’ouverture de session a échoué pour le nom d’ouverture de session \<Login Name> en raison de l’exécution d’un déclencheur.
@@ -52,7 +52,7 @@ Le problème peut se produire en cas d’erreur lors de l’exécution du code d
 
 Vous pouvez utiliser l’une des solutions ci-dessous en fonction de votre scénario.
 
-- **Scenario 1**  : Vous avez actuellement accès à une session ouverte dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sous un compte d’administrateur.
+- **Scenario 1** : Vous avez actuellement accès à une session ouverte dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sous un compte d’administrateur.
 
   Dans ce cas, vous pouvez apporter la correction nécessaire pour corriger le code de votre déclencheur.
 
@@ -62,9 +62,9 @@ Vous pouvez utiliser l’une des solutions ci-dessous en fonction de votre scén
   
   Vous pouvez également supprimer ou désactiver le déclencheur LOGIN afin que les utilisateurs puissent continuer à se connecter à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
 
-- **Scénario 2**  : Aucune session active n’est ouverte avec des privilèges d’administrateur, mais une connexion administrateur dédiée (DAC) est activée dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].
+- **Scénario 2** : Aucune session active n’est ouverte avec des privilèges d’administrateur, mais une connexion administrateur dédiée (DAC) est activée dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].
 
-    Dans ce cas, vous pouvez utiliser la connexion DAC pour effectuer les mêmes étapes que celles décrites dans le cas 1, car les connexions DAC ne sont pas affectées par les déclencheurs LOGIN. Pour plus d’informations sur les connexions DAC, consultez : [Connexion de diagnostic pour les administrateurs de base de données](/sql/database-engine/configure-windows/diagnostic-connection-for-database-administrators).
+    Dans ce cas, vous pouvez utiliser la connexion DAC pour effectuer les mêmes étapes que celles décrites dans le cas 1, car les connexions DAC ne sont pas affectées par les déclencheurs LOGIN. Pour plus d’informations sur les connexions DAC, consultez : [Connexion de diagnostic pour les administrateurs de base de données](../../database-engine/configure-windows/diagnostic-connection-for-database-administrators.md).
 
     Pour vérifier si la connexion DAC est activée dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], vous pouvez rechercher dans le journal des erreurs [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] un message similaire à celui-ci :
 
@@ -80,7 +80,7 @@ Vous pouvez utiliser l’une des solutions ci-dessous en fonction de votre scén
         > [!NOTE]
         > La procédure ci-dessus nécessite un compte *Administrateur système* ou un compte Administrateur équivalent.
   
-         Pour plus d’informations sur ces comptes et sur les autres options de démarrage, consultez : [Options de démarrage du service moteur de base de données](/sql/database-engine/configure-windows/database-engine-service-startup-options).
+         Pour plus d’informations sur ces comptes et sur les autres options de démarrage, consultez : [Options de démarrage du service moteur de base de données](../../database-engine/configure-windows/database-engine-service-startup-options.md).
 
 ## <a name="more-information"></a>Informations complémentaires
 
@@ -109,4 +109,4 @@ L’utilisateur n’a pas respecté la casse lorsqu’il a copié ce script à p
  SELECT EVENTDATA ().value ( '(/event_instance/clienthost)[1]' , 'NVARCHAR(15)' ));  
 ```
 
-Par conséquent, `EVENTDATA` a toujours retourné **NULL** , et toutes ses connexions d’administrateur système équivalentes se sont vu refuser l’accès. Dans ce cas, la connexion DAC n’a pas été activée. Nous avons donc été obligés de redémarrer le serveur avec les paramètres de démarrage listés ci-dessus afin de supprimer le déclencheur.
+Par conséquent, `EVENTDATA` a toujours retourné **NULL**, et toutes ses connexions d’administrateur système équivalentes se sont vu refuser l’accès. Dans ce cas, la connexion DAC n’a pas été activée. Nous avons donc été obligés de redémarrer le serveur avec les paramètres de démarrage listés ci-dessus afin de supprimer le déclencheur.

@@ -22,15 +22,15 @@ helpviewer_keywords:
 - messages [SQL Server], stored procedure where occurred
 - errors [SQL Server], trigger where occurred
 ms.assetid: b81edbf0-856a-498f-ba87-48ff1426d980
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 05ab2a8c6f9b278fb548eb215653e0434232b2ae
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: f4fa95d1f4c7f77be0dc19ec4c4aa066201936b3
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643755"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096049"
 ---
 # <a name="error_procedure-transact-sql"></a>ERROR_PROCEDURE (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]  

@@ -27,14 +27,14 @@ helpviewer_keywords:
 - schema collections [SQL Server], modifying
 - multiple schema namespaces
 ms.assetid: e311c425-742a-4b0d-b847-8b974bf66d53
-author: MightyPen
-ms.author: genemi
-ms.openlocfilehash: 615a18de5c90bec08d79579a038cb106f2a6d3fc
-ms.sourcegitcommit: ac9feb0b10847b369b77f3c03f8200c86ee4f4e0
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: f10572e2ceec916d930d8efd9cd2f2402294c926
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90688548"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098489"
 ---
 # <a name="alter-xml-schema-collection-transact-sql"></a>ALTER XML SCHEMA COLLECTION (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

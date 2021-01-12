@@ -18,14 +18,14 @@ helpviewer_keywords:
 - CURSOR_STATUS function
 - cursors [SQL Server], status information
 ms.assetid: 3a4a840e-04f8-43bd-aada-35d78c3cb6b0
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 24d7cea4d5e04c92379961bea5f2b6cc6abac07d
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 853cae9252c43a176d208b7208f2ca595366a151
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96118179"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093689"
 ---
 # <a name="cursor_status-transact-sql"></a>CURSOR_STATUS (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

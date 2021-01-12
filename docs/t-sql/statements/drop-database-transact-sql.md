@@ -23,15 +23,15 @@ helpviewer_keywords:
 - DROP DATABASE statement
 - database removal [SQL Server], DROP DATABASE statement
 ms.assetid: 477396a9-92dc-43c9-9b97-42c8728ede8e
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 03e98844f190e579201a73fa56d62157d0fc9e8d
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: 25fb14a69ee138195ae163f9ee90a82b0e90e3dd
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489511"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095792"
 ---
 # <a name="drop-database-transact-sql"></a>DROP DATABASE (Transact-SQL)
 

@@ -21,15 +21,15 @@ helpviewer_keywords:
 - views [SQL Server], removing
 - removing views
 ms.assetid: 03cea355-e39c-46e1-b7db-8832038669dd
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: b19f8a8a3f4a1f739d6db9a7e2f365d20b6df981
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 18e5a02f5a1a54437962e7417128f43fd29ebaa6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465940"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099408"
 ---
 # <a name="drop-view-transact-sql"></a>DROP VIEW (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

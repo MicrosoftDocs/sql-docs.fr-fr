@@ -58,15 +58,15 @@ helpviewer_keywords:
 - data retention policy
 - table changes [SQL Server]
 ms.assetid: f1745145-182d-4301-a334-18f799d361d1
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: aff544048da8bb09a2fd488d26a7bd1f69cf8f56
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: 22ac2d69eaba62d6cde697c2299ee432d837987c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489586"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098529"
 ---
 # <a name="alter-table-transact-sql"></a>ALTER TABLE (Transact-SQL)
 

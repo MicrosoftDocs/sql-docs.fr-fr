@@ -19,15 +19,15 @@ helpviewer_keywords:
 - base-10 logarithms
 - logarithm of expression
 ms.assetid: 1eb7fb34-1937-4a39-a936-f5c0c7c7e06f
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 5f78bf83bb364737b2a8f91db97a2140a60fb823
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6ecbf9ec2296123ae873627dd2958cd35e76cec0
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97468180"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097169"
 ---
 # <a name="log10-transact-sql"></a>LOG10 (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

@@ -20,15 +20,15 @@ helpviewer_keywords:
 - -= (subtract equals)
 - -= (subtraction assignment)
 ms.assetid: 2a2056b5-1dfa-4ea8-8cfc-6331a2f94da9
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 89009f02f07f6d22d8599f1918f110894a8c997e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0271cadfc24ec5fdeeea0e3aaa8e6f67c4f83ae3
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464240"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093501"
 ---
 # <a name="--subtraction-assignment-transact-sql"></a>-= (Affectation après soustraction) (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

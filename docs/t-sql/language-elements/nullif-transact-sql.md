@@ -19,15 +19,15 @@ helpviewer_keywords:
 - NULLIF function
 - equivalent expressions [SQL Server]
 ms.assetid: 44c7b67e-74c7-4bb9-93a4-7a3016bd2feb
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: a50f501ac2aef6011e94ea50f171f3894319d285
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0bcf87ce6ab8dae4bcf509a204d486e9a809eedd
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464270"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093539"
 ---
 # <a name="nullif-transact-sql"></a>NULLIF (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

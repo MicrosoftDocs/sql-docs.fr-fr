@@ -22,15 +22,15 @@ helpviewer_keywords:
 - not equal to operator (<>)
 - <> (not equal to operator)
 ms.assetid: 34cf9b38-d589-4be9-925a-116e224609a0
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 7c7c0c04e88a06eb9cfac4f92dddaa08523fba0e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6f078043c21f8cfc7c2c84b7d98ae8652394cd11
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460952"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097063"
 ---
 # <a name="not-equal-to-transact-sql---traditional"></a>Différent de (Transact SQL) - traditionnel
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

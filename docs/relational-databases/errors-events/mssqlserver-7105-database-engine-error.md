@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: rgward
 ms.author: ramakoni
-ms.openlocfilehash: bfcd8763c649f83bb9e72881c6facda29917f7b8
-ms.sourcegitcommit: ead0b8c334d487a07e41256ce5d6acafa2d23c9d
+ms.openlocfilehash: 7aa3b39996f8dc282e11d92706743a7ba42998da
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92418769"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099265"
 ---
 # <a name="mssqlserver_7105"></a>MSSQLSERVER_7105
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -55,7 +55,7 @@ Consultez les sections Résolution et [Informations complémentaires](#more-info
 1. Comme indiqué dans le message, la première étape consiste à exécuter `DBCC CHECKDB` sur la base de données ou `DBCC CHECKTABLE` sur la table où le problème s’est posé.
 
     - L’ID de base de données est fourni dans le message.
-    - Pour connaître la table exacte affectée sans exécuter `DBCC CHECKDB`, vous devez déterminer quelles tables ont été consultées par la requête qui a rencontré l’erreur. Une méthode consiste à utiliser le Générateur de profils SQL pour suivre la requête. Toutefois, dans [!INCLUDE[sskatmai](../../includes/sskatmai-md.md)] et [!INCLUDE[sskatmai](../../includes/sskatmai-md.md)] R2, vous pourrez peut-être trouver la requête à l’aide de la session des événements étendus system_health. Pour plus d’informations sur l’utilisation de la session system_health, consultez le lien suivant : [Utiliser la session system_health](/sql/relational-databases/extended-events/use-the-system-health-session).
+    - Pour connaître la table exacte affectée sans exécuter `DBCC CHECKDB`, vous devez déterminer quelles tables ont été consultées par la requête qui a rencontré l’erreur. Une méthode consiste à utiliser le Générateur de profils SQL pour suivre la requête. Toutefois, dans [!INCLUDE[sskatmai](../../includes/sskatmai-md.md)] et [!INCLUDE[sskatmai](../../includes/sskatmai-md.md)] R2, vous pourrez peut-être trouver la requête à l’aide de la session des événements étendus system_health. Pour plus d’informations sur l’utilisation de la session system_health, consultez le lien suivant : [Utiliser la session system_health](../extended-events/use-the-system-health-session.md).
 
     - Comme avec tout problème de cohérence de base de données, vous pouvez résoudre ces erreurs en procédant à une restauration à partir d’une sauvegarde reconnue fiable qui ne contient pas ce problème.
 

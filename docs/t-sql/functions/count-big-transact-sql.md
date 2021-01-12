@@ -20,15 +20,15 @@ helpviewer_keywords:
 - number of group items
 - COUNT_BIG function
 ms.assetid: f2e3601f-487e-4917-bb01-47b1047908cd
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 83a90f19316b80951cb7f4584ac34e4c2f69dbb6
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 123e1147809a7fcde2ac5b189ad32b0417242f70
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474180"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096069"
 ---
 # <a name="count_big-transact-sql"></a>COUNT_BIG (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

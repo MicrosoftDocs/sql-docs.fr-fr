@@ -31,14 +31,14 @@ helpviewer_keywords:
 - starting timers [Service Broker]
 - https://schemas.microsoft.com/SQL/ServiceBroker/DialogTimer message
 ms.assetid: 98e49b3f-a38f-4180-8171-fa9cb30db4cb
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: dc2b02a96911dc0ff6e7be86c5cbd36708ddf348
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 6c30351f5fe448b967d874f3ef0a9eb5dc94faa5
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124169"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098447"
 ---
 # <a name="begin-conversation-timer-transact-sql"></a>BEGIN CONVERSATION TIMER (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

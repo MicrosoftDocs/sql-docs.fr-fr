@@ -16,14 +16,14 @@ f1_keywords:
 helpviewer_keywords:
 - CURRENT_TRANSACTION_ID function
 ms.assetid: 82cd9f92-d935-45a0-a433-620d6e15b467
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 80ef65ccfbd26b74c31ed36adc95730315d2943a
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: bfb36aa43af3f67124d30b262f8fd6f3ca9f5215
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88645960"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093655"
 ---
 # <a name="current_transaction_id-transact-sql"></a>CURRENT_TRANSACTION_ID (Transact-SQL)
 

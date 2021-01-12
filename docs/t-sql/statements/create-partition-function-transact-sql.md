@@ -26,14 +26,14 @@ helpviewer_keywords:
 - partitioned tables [SQL Server], functions
 - CREATE PARTITION FUNCTION statement
 ms.assetid: 9dfe8b76-721e-42fd-81ae-14e22258c4f2
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 571da08ba525e2d6dcf143fc6e207266cd1a816d
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: d1bb72ca6736a49874050043b84a961928aed370
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96127995"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093483"
 ---
 # <a name="create-partition-function-transact-sql"></a>CREATE PARTITION FUNCTION (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

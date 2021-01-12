@@ -13,12 +13,12 @@ ms.assetid: 5b13b5ac-1e4c-45e7-bda7-ebebe2784551
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: a973fd5ec66f101c162e35baec0269f7b6d3d601
-ms.sourcegitcommit: d8a9ad86401bff422d506078c6200494c795e7c0
+ms.openlocfilehash: cccb47e059938745aa6166902402c8b94b674722
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97765208"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099328"
 ---
 # <a name="best-practices-with-query-store"></a>Bonnes pratiques relatives au Magasin des requêtes
 
@@ -34,7 +34,7 @@ Pour obtenir une description rapide de la manière d’utiliser le Magasin des r
 
 ## <a name="use-query-performance-insight-in-azure-sql-database"></a><a name="Insight"></a> Utiliser Query Performance Insight dans Azure SQL Database
 
-Si vous exécutez le Magasin des requêtes dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], vous pouvez utiliser [Query Performance Insight](/azure/sql-database/sql-database-query-performance) pour analyser la consommation de ressources dans le temps. Même si vous pouvez utiliser [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] et [Azure Data Studio](../../azure-data-studio/what-is.md) pour obtenir des détails sur la consommation en ressources de toutes vos requêtes (par exemple, processeur, mémoire et E/S), Query Performance Insight vous offre un moyen rapide et efficace de déterminer leur impact sur la consommation DTU globale de votre base de données. Pour plus d’informations, consultez [Query Performance Insight pour base de données SQL Azure](/azure/azure-sql/database/query-performance-insight-use).
+Si vous exécutez le Magasin des requêtes dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], vous pouvez utiliser [Query Performance Insight](/azure/sql-database/sql-database-query-performance) pour analyser la consommation de ressources dans le temps. Même si vous pouvez utiliser [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] et [Azure Data Studio](../../azure-data-studio/what-is-azure-data-studio.md) pour obtenir des détails sur la consommation en ressources de toutes vos requêtes (par exemple, processeur, mémoire et E/S), Query Performance Insight vous offre un moyen rapide et efficace de déterminer leur impact sur la consommation DTU globale de votre base de données. Pour plus d’informations, consultez [Query Performance Insight pour base de données SQL Azure](/azure/azure-sql/database/query-performance-insight-use).
 
 Cette section décrit les paramètres optimaux de configuration par défaut, conçus pour garantir un fonctionnement fiable du Magasin des requêtes et des fonctionnalités dépendantes. La configuration par défaut est optimisée pour la collecte des données en continu, c’est-à-dire pour passer le moins de temps possible aux états OFF/READ_ONLY. Pour plus d’informations sur toutes les options de Magasin des requêtes disponibles, consultez [Options ALTER DATABASE SET (Transact-SQL)](../../t-sql/statements/alter-database-transact-sql-set-options.md#query-store).
 

@@ -23,15 +23,15 @@ helpviewer_keywords:
 - roll back transactions [SQL Server]
 - savepoints [SQL Server]
 ms.assetid: 6882c5bc-ff74-476a-984b-164aeb036c66
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 4be6dff010365e0a0d094b36d1d476db6f1c3d62
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c785699c469ca1337eaa1a6b27fbab9aed149a5e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466110"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097040"
 ---
 # <a name="rollback-transaction-transact-sql"></a>ROLLBACK TRANSACTION (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

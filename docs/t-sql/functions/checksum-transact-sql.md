@@ -18,15 +18,15 @@ helpviewer_keywords:
 - CHECKSUM function
 - checksum values
 ms.assetid: e26d3339-845c-49c2-9d89-243376874c13
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 2ce4294a01a87029679e75b93f3dc6e35c16e938
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 3534f5011275035b11adc1984604f8795f4208f2
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480490"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092379"
 ---
 # <a name="checksum-transact-sql"></a>CHECKSUM (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

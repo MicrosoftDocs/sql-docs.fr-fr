@@ -41,15 +41,15 @@ helpviewer_keywords:
 - files [SQL Server], adding
 - databases [SQL Server], moving
 ms.assetid: 1f635762-f7aa-4241-9b7a-b51b22292b07
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016||>=sql-server-linux-2017
-ms.openlocfilehash: 271c2362f4b4313fe50a1de680937111e56f6711
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: b32b17c2909b22068daf4090f0cac7bb6575706a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643900"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094659"
 ---
 # <a name="alter-database-transact-sql-file-and-filegroup-options"></a>Options de fichiers et de groupes de fichiers ALTER DATABASE (Transact-SQL)
 

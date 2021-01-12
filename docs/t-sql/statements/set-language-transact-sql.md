@@ -20,15 +20,15 @@ helpviewer_keywords:
 - options [SQL Server], date
 - default languages
 ms.assetid: 0ec0e5cf-e115-4be9-a0db-e65837d6fa45
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: cb4128e5eb962956dbfa0ecab28e943eedeff5b7
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0f4d0449b0945f833711297dd6e6bcb14a139acd
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478510"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093362"
 ---
 # <a name="set-language-transact-sql"></a>SET LANGUAGE (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

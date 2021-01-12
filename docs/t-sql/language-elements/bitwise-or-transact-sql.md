@@ -21,15 +21,15 @@ helpviewer_keywords:
 - bitwise OR (|)
 - '| (bitwise OR operator)'
 ms.assetid: 86a3b87f-9688-4eaf-a552-29f1b01d880a
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: de97567faaff6f4af88fbace4ea2e1815e7caeed
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9d25034bf1089464ed80a7b924875baec1bb9a8b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484111"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095979"
 ---
 # <a name="-bitwise-or-transact-sql"></a>| (OR au niveau du bit) (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

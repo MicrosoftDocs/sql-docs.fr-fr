@@ -21,14 +21,14 @@ helpviewer_keywords:
 - identification numbers [SQL Server], files
 - file names [SQL Server], FILE_IDEX
 ms.assetid: 7532fea5-ee5e-4edd-b98b-111a7ba56c8e
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 3ca433b6e802ce492b0ff464fc300d9f7e569964
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 0f7739a422e82e496c772454bb596980497adef3
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96128450"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092299"
 ---
 # <a name="file_idex-transact-sql"></a>FILE_IDEX (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

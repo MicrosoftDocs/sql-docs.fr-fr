@@ -17,15 +17,15 @@ helpviewer_keywords:
 - negative operator (-)
 - negative values
 ms.assetid: d6c14d14-d379-403b-82db-c197ad58c896
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 77604125d1f69c09283148b59f2dfbdda7f62546
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 2aa9a8d25fcd33534f8d269983ead2e381541760
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97462320"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095938"
 ---
 # <a name="unary-operators---negative"></a>Opérateurs unaires - Négatif
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

@@ -19,15 +19,15 @@ helpviewer_keywords:
 - context changes [SQL Server]
 - modifying database context
 ms.assetid: c05acac8-c063-4770-8e36-d7f71d500b10
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 27e6f62e7b867fcae8d97a080ead87daf5536b7f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: f31381a2c43d02af5b3c19478fcf03e7bcc608d6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464200"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095889"
 ---
 # <a name="use-transact-sql"></a>USE (Transact-SQL)
 [!INCLUDE [sql-asdbmi-pdw](../../includes/applies-to-version/sql-asdbmi-pdw.md)]

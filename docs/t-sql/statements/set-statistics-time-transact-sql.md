@@ -23,14 +23,14 @@ helpviewer_keywords:
 - compile times [SQL Server]
 - execution processing time [SQL Server]
 ms.assetid: eec2e1cd-a29d-4cf3-a271-be9d61506f15
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: abde67780d0eff93a791a2b48654ba712dea6859
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 36db16f45f3f73742c89b6269fedc5c4603e648f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "89539805"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096897"
 ---
 # <a name="set-statistics-time-transact-sql"></a>SET STATISTICS TIME (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

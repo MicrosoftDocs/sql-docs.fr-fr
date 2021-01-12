@@ -16,14 +16,14 @@ dev_langs:
 helpviewer_keywords:
 - DROP BROKER PRIORITY statement
 ms.assetid: 09ee6c5b-af94-4a4b-a0e2-f9eac50e43aa
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 4b1ecefa12702aade36144df55600f696e2042e2
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: f5645014442ddeda800fdb5570ff76a96e943f62
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96127457"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095749"
 ---
 # <a name="drop-broker-priority-transact-sql"></a>DROP BROKER PRIORITY (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

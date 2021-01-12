@@ -14,14 +14,14 @@ f1_keywords:
 helpviewer_keywords:
 - COMPRESS function
 ms.assetid: c2bfe9b8-57a4-48b4-b028-e1a3ed5ece88
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: ce9659824a46615da6056928c81e6a8cc4b98b36
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 9cad44793e95f48ee60ddef3d767967011b1248a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96128551"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092347"
 ---
 # <a name="compress-transact-sql"></a>COMPRESS (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa.md)]

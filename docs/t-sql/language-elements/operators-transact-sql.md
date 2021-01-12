@@ -14,14 +14,14 @@ helpviewer_keywords:
 - operators [Transact-SQL], about operators
 - operators [Transact-SQL]
 ms.assetid: 1fc2de8b-e7e0-4c61-9a02-4776a7d93ab7
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 198d6b6e12bc48420da80cde62492dad27e708cc
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: db52698b5a75455f047c65e8f980d3dbb7da15b4
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88360835"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092159"
 ---
 # <a name="operators-transact-sql"></a>Opérateurs (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

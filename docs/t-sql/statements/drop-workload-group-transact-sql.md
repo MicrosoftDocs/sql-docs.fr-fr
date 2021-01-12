@@ -15,15 +15,15 @@ dev_langs:
 - TSQL
 helpviewer_keywords:
 - DROP WORKLOAD GROUP statement
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=sql-server-2016||>=sql-server-linux-2017||=azure-sqldw-latest||=azuresqldb-mi-current'
-ms.openlocfilehash: c1a0f0af9421cbdb769f3120ee87d898de9597f1
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: f3dd9c4a9b1fde5306846d6008e05d7b6b3d8782
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642240"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099315"
 ---
 # <a name="drop-workload-group-transact-sql"></a>DROP WORKLOAD GROUP (Transact-SQL)
 

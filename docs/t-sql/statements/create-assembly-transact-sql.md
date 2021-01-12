@@ -21,15 +21,15 @@ helpviewer_keywords:
 - CREATE ASSEMBLY statement
 - assemblies [CLR integration], creating
 ms.assetid: d8d1d245-c2c3-4325-be52-4fc1122c2079
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016||>=sql-server-linux-2017
-ms.openlocfilehash: 4ae266962891a52ae9e2b201f7817365e71f8a74
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 13b639ace60f98ce9ab55cc0280130131f6851ca
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460792"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098405"
 ---
 # <a name="create-assembly-transact-sql"></a>CREATE ASSEMBLY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md.md )]

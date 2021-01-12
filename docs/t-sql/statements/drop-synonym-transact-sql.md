@@ -20,14 +20,14 @@ helpviewer_keywords:
 - DROP SYNONYM statement
 - dropping synonyms
 ms.assetid: 23578932-e4de-4c39-a5a0-ce45139c4269
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: af16b7921358a12b87e9ab2ddbd6acaefee47d13
-ms.sourcegitcommit: 197a6ffb643f93592edf9e90b04810a18be61133
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: cb3e1a7c66aba0234145ba840f36643c6ca49d9c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91379654"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099404"
 ---
 # <a name="drop-synonym-transact-sql"></a>DROP SYNONYM (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

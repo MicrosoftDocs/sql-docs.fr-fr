@@ -20,14 +20,14 @@ helpviewer_keywords:
 - aggregate functions [SQL Server], user-defined
 - user-defined functions [CLR integration]
 ms.assetid: 62eebc19-9f15-4245-94fa-b3fcd64a9d42
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: ff8efe5476597a85a26034cc278730c2d867ddae
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 773c2010cdefa2455e0800ed0370cbc118c2dab9
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96126210"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098429"
 ---
 # <a name="create-aggregate-transact-sql"></a>CREATE AGGREGATE (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -39,14 +39,14 @@ helpviewer_keywords:
 - TVF
 - functions [SQL Server], invoking
 ms.assetid: 864b393f-225f-4895-8c8d-4db59ea60032
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 37904c7f99fc766913521bf9fd598941ec8407ef
-ms.sourcegitcommit: bd3a135f061e4a49183bbebc7add41ab11872bae
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: cb4c79d1f4c8c7b8103ff9d34b8f32fd497b8c6a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92300829"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095794"
 ---
 # <a name="create-function-transact-sql"></a>CREATE FUNCTION (Transact-SQL)
 
@@ -271,7 +271,7 @@ RETURNS return_data_type
 ## <a name="arguments"></a>Arguments
 
 *OR ALTER*
-**S’applique à**  : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP1 et versions ultérieures) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP1 et versions ultérieures) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]
 
 Modifie, de manière conditionnelle, la fonction uniquement si elle existe déjà.
 
@@ -294,7 +294,7 @@ Spécifiez un nom de paramètre en plaçant le signe @ comme premier caractère.
 > [!NOTE]
 > ANSI_WARNINGS n'est pas honoré lorsque vous transmettez des paramètres dans une procédure stockée, dans une fonction définie par l'utilisateur ou lorsque vous déclarez et définissez des variables dans une instruction par lot. Par exemple, si une variable est définie comme **char(3)** et qu’une valeur de plus de trois caractères lui est attribuée, les données sont tronquées en fonction de la taille définie, et l’instruction `INSERT` ou `UPDATE` réussit.
 
-[ *type_schema_name* . ] *parameter_data_type* Type de données du paramètre et, éventuellement, schéma auquel il appartient. Dans le cas des fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)], tous les types de données, notamment les types CLR définis par l’utilisateur et les types de tables définis par l’utilisateur, sont autorisés à l’exception du type de données **timestamp** . Dans le cas des fonctions CLR, tous les types de données, notamment les types CLR définis par l’utilisateur, sont autorisés à l’exception des types de tables définis par l’utilisateur **text** , **ntext** et **image** , et des types de données **timestamp** . Les types non scalaires **cursor** et **table** ne peuvent pas être spécifiés comme type de données de paramètre dans les fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)] ou CLR.
+[ *type_schema_name*. ] *parameter_data_type* Type de données du paramètre et, éventuellement, schéma auquel il appartient. Dans le cas des fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)], tous les types de données, notamment les types CLR définis par l’utilisateur et les types de tables définis par l’utilisateur, sont autorisés à l’exception du type de données **timestamp**. Dans le cas des fonctions CLR, tous les types de données, notamment les types CLR définis par l’utilisateur, sont autorisés à l’exception des types de tables définis par l’utilisateur **text**, **ntext** et **image**, et des types de données **timestamp**. Les types non scalaires **cursor** et **table** ne peuvent pas être spécifiés comme type de données de paramètre dans les fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)] ou CLR.
 
 Si *type_schema_name* n’est pas spécifié, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] recherche *scalar_parameter_data_type* dans l’ordre suivant :
 
@@ -302,7 +302,7 @@ Si *type_schema_name* n’est pas spécifié, le [!INCLUDE[ssDE](../../includes/
 - Le schéma par défaut de l'utilisateur actuel dans la base de données active
 - Schéma **dbo** dans la base de données active.
 
-[ = *default* ] Valeur par défaut pour le paramètre. Si une valeur *default* est définie, la fonction peut être exécutée sans spécifier de valeur pour ce paramètre.
+[ =*default* ] Valeur par défaut pour le paramètre. Si une valeur *default* est définie, la fonction peut être exécutée sans spécifier de valeur pour ce paramètre.
 
 > [!NOTE]
 > Des valeurs de paramètre par défaut peuvent être spécifiées pour les fonctions CLR, à l’exception des types de données **varchar(max)** et **varbinary(max)** .
@@ -311,7 +311,7 @@ Lorsque l'un des paramètres de la fonction possède une valeur par défaut, le 
 
 READONLY Indique que le paramètre ne peut pas être mis à jour ni modifié dans la définition de la fonction. READONLY est obligatoire pour les paramètres de type table définis par l’utilisateur et il ne peut être utilisé pour aucun autre type de paramètre.
 
-*return_data_type* Valeur de retour d’une fonction scalaire définie par l’utilisateur. Dans le cas des fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)], tous les types de données, notamment les types CLR définis par l’utilisateur, sont autorisés, à l’exception du type de données **timestamp** . Dans le cas des fonctions CLR, tous les types de données, notamment les types CLR définis par l’utilisateur, sont autorisés, à l’exception des types de données **text** , **ntext** , **image** et **timestamp** . Les types non scalaires **cursor** et **table** ne peuvent pas être spécifiés comme type de données de retour dans les fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)] ou CLR.
+*return_data_type* Valeur de retour d’une fonction scalaire définie par l’utilisateur. Dans le cas des fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)], tous les types de données, notamment les types CLR définis par l’utilisateur, sont autorisés, à l’exception du type de données **timestamp**. Dans le cas des fonctions CLR, tous les types de données, notamment les types CLR définis par l’utilisateur, sont autorisés, à l’exception des types de données **text**, **ntext**, **image** et **timestamp**. Les types non scalaires **cursor** et **table** ne peuvent pas être spécifiés comme type de données de retour dans les fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)] ou CLR.
 
 *function_body* Spécifie qu’une série d’instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] qui ne produisent pas ensemble un effet secondaire, tel que la modification d’une table, définissent la valeur de la fonction. *function_body* est utilisé seulement dans les fonctions scalaires et dans les fonctions table à instructions multiples.
 
@@ -321,7 +321,7 @@ Dans les fonctions table à instructions multiples, *function_body* est une sér
 
 *scalar_expression* Indique la valeur scalaire retournée par la fonction scalaire.
 
-TABLE Indique que la valeur de retour de la fonction table est une table. Seules des constantes et des @ *local_variables* peuvent être passés aux fonctions table.
+TABLE Indique que la valeur de retour de la fonction table est une table. Seules des constantes et des @*local_variables* peuvent être passés aux fonctions table.
 
 Dans les fonctions table en ligne, la valeur de retour TABLE est définie via une instruction SELECT unique. Aucune variable retournée n'est associée à une fonction en ligne.
 
@@ -331,20 +331,20 @@ Dans les fonctions table en ligne, la valeur de retour TABLE est définie via un
 
 ORDER (\<order_clause>) spécifie l’ordre dans lequel les résultats sont retournés à partir de la fonction table. Pour plus d’informations, consultez la section « [Utilisation de l'ordre de tri dans les fonctions table CLR](#using-sort-order-in-clr-table-valued-functions) » plus loin dans cette rubrique.
 
-EXTERNAL NAME \<method_specifier> *nom_assembly* . *nom_classe* . *nom_méthode*
-**S’applique à**  : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] SP1 et versions ultérieures)
+EXTERNAL NAME \<method_specifier> *nom_assembly*.*nom_classe*.*nom_méthode*
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] SP1 et versions ultérieures)
 
 Spécifie l'assembly et la méthode auxquels doit se référer le nom de la fonction créée.
 
-- *assembly_name*  : doit correspondre à une valeur de la colonne `name` de `SELECT * FROM sys.assemblies;`.
+- *assembly_name* : doit correspondre à une valeur de la colonne `name` de `SELECT * FROM sys.assemblies;`.
 
   Il s'agit du nom qui a été utilisé dans l'instruction `CREATE ASSEMBLY`.
 
-- *class_name*  : doit correspondre à une valeur de la colonne `assembly_name` de `SELECT * FROM sys.assembly_modules;`.
+- *class_name* : doit correspondre à une valeur de la colonne `assembly_name` de `SELECT * FROM sys.assembly_modules;`.
 
   La valeur contient souvent un point incorporé. Dans ce cas, la syntaxe Transact-SQL exige que la valeur soit délimitée par une paire de crochets droits [] ou par une paire de guillemets doubles "".
 
-- *method_name*  : doit correspondre à une valeur de la colonne `method_name` de `SELECT * FROM sys.assembly_modules;`.
+- *method_name* : doit correspondre à une valeur de la colonne `method_name` de `SELECT * FROM sys.assembly_modules;`.
 
   La méthode doit être statique.
 
@@ -355,9 +355,9 @@ Dans un exemple classique, pour MyFood.DLL, dans lequel tous les types sont dans
 > - Par défaut, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne peut pas exécuter du code CLR. Vous pouvez créer, modifier et supprimer des objets d’une base de données qui font référence à des modules CLR (Common Language Runtime) ; cependant, vous ne pouvez pas exécuter ces références dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tant que vous n’avez pas activé l’[option CLR enabled](../../database-engine/configure-windows/clr-enabled-server-configuration-option.md). Pour activer cette option, utilisez [sp_configure](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md).
 > - Cette option n'est pas disponible dans une base de données autonome.
 
-*\<*table_type_definition*>* ( { \<column_definition> \<column_constraint>| \<computed_column_definition> } [ \<table_constraint> ] [ ,... *n* ] ) définit le type de données de table pour une fonction [!INCLUDE[tsql](../../includes/tsql-md.md)]. La déclaration de table comprend des définitions de colonne et des contraintes de colonne ou de table. La table est toujours placée dans le groupe de fichiers primaire.
+*\<*table_type_definition*>* ( { \<column_definition> \<column_constraint>| \<computed_column_definition> } [ \<table_constraint> ] [ ,...*n* ] ) définit le type de données de table pour une fonction [!INCLUDE[tsql](../../includes/tsql-md.md)]. La déclaration de table comprend des définitions de colonne et des contraintes de colonne ou de table. La table est toujours placée dans le groupe de fichiers primaire.
 
-*\< clr_table_type_definition >* ( { *nom_colonne**type_données* } [ ,... *n* ] ) **S’applique à**  : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] SP1 et versions ultérieures) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] ( [préversion dans certaines régions](/azure/azure-sql/database/features-comparison?WT.mc_id=TSQL_GetItTag)).
+*\< clr_table_type_definition >* ( { *nom_colonne**type_données* } [ ,...*n* ] ) **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] SP1 et versions ultérieures) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] ([préversion dans certaines régions](/azure/azure-sql/database/features-comparison?WT.mc_id=TSQL_GetItTag)).
 
 Définit les types de données de table pour une fonction CLR. La déclaration de table ne comprend que des types de données et des noms de colonne. La table est toujours placée dans le groupe de fichiers primaire.
 
@@ -375,7 +375,7 @@ EXECUTE AS EXECUTE AS est obligatoire pour les fonctions scalaires définies par
 
 Spécifie que la fonction aura une ou plusieurs des options ci-dessous.
 
-ENCRYPTION **S’applique à**  : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] SP1 et versions ultérieures)
+ENCRYPTION **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] SP1 et versions ultérieures)
 
 Indique que le [!INCLUDE[ssDE](../../includes/ssde-md.md)] se charge de convertir le texte d'origine provenant de l'instruction CREATE FUNCTION dans un format obscurci. La sortie générée par l'obfuscation n'est pas visible directement dans les affichages catalogue. Les utilisateurs n'ayant pas accès aux tables système ou aux fichiers de base de données ne peuvent pas récupérer le texte d'obfuscation. Le texte est cependant à la disposition des utilisateurs disposant de privilèges et qui peuvent accéder aux tables système par le biais du [port DAC](../../database-engine/configure-windows/diagnostic-connection-for-database-administrators.md) ou qui accèdent directement aux fichiers de bases de données. Les utilisateurs qui peuvent associer un débogueur au processus serveur peuvent également récupérer la procédure d'origine de la mémoire au moment de l'exécution. Pour plus d’informations sur l’accès aux métadonnées système, consultez [Configuration de la visibilité des métadonnées](../../relational-databases/security/metadata-visibility-configuration.md).
 
@@ -407,7 +407,7 @@ Clause EXECUTE AS Spécifie le contexte de sécurité dans lequel la fonction d�
 
 Pour plus d’informations, consultez [Clause EXECUTE AS &#40;Transact-SQL&#41;](../../t-sql/statements/execute-as-clause-transact-sql.md).
 
-INLINE = { ON | OFF } **S’APPLIQUE À**  : SQL Server 2019 et versions ultérieures.
+INLINE = { ON | OFF } **S’APPLIQUE À** : SQL Server 2019 et versions ultérieures.
 
 Spécifie si cette fonction UDF scalaire doit être inline ou non. Cette clause s’applique uniquement aux fonctions scalaires définies par l’utilisateur. La clause `INLINE` n’est pas obligatoire. Si la clause `INLINE` n’est pas spécifiée, elle est automatiquement définie sur ON/OFF selon que la fonction UDF peut ou non être inline. Si `INLINE=ON` est spécifié alors que la fonction UDF ne peut pas être inline, une erreur est levée. Pour plus d’informations, consultez [Incorporation des fonctions UDF scalaires](../../relational-databases/user-defined-functions/scalar-udf-inlining.md).
 
@@ -417,22 +417,22 @@ Définit le type de données de la table. La déclaration de table comprend des 
 
 *column_name* Nom d’une colonne de la table. Les noms de colonnes doivent respecter les règles des identificateurs et doivent être uniques au sein de la table. *column_name* peut être composé de 1 à 128 caractères.
 
-*data_type* Indique le type de données de la colonne. Dans le cas des fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)], tous les types de données, notamment les types CLR définis par l’utilisateur, sont autorisés, à l’exception du type de données **timestamp** . Dans le cas des fonctions CLR, tous les types de données, notamment les types CLR définis par l’utilisateur, sont autorisés, à l’exception des types de données **text** , **ntext** , **image** , **char** , **varchar** , **varchar(max)** et **timestamp** . Le type non scalaire **cursor** ne peut pas être spécifié comme type de données de colonne dans les fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)] ou CLR.
+*data_type* Indique le type de données de la colonne. Dans le cas des fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)], tous les types de données, notamment les types CLR définis par l’utilisateur, sont autorisés, à l’exception du type de données **timestamp**. Dans le cas des fonctions CLR, tous les types de données, notamment les types CLR définis par l’utilisateur, sont autorisés, à l’exception des types de données **text**, **ntext**, **image**, **char**, **varchar**, **varchar(max)** et **timestamp**. Le type non scalaire **cursor** ne peut pas être spécifié comme type de données de colonne dans les fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)] ou CLR.
 
 DEFAULT *constant_expression* Spécifie la valeur fournie pour la colonne lorsque vous n’avez pas indiqué explicitement de valeur lors d’une insertion. *constant_expression* est une constante, NULL ou une valeur de fonction système. Les définitions DEFAULT peuvent être appliquées à n'importe quelle colonne, sauf à celles qui possèdent la propriété IDENTITY. L'argument DEFAULT ne peut pas être spécifié pour les fonctions table CLR.
 
 COLLATE *collation_name* spécifie le classement de la colonne. Si l'argument n'est pas spécifié, c'est le classement par défaut de la base de données qui est affecté à la colonne. Le nom du classement peut être un nom de classement Windows ou SQL. Pour obtenir la liste des classements et des informations supplémentaires, consultez [Nom de classement Windows &#40;Transact-SQL&#41;](../../t-sql/statements/windows-collation-name-transact-sql.md) et [Nom du classement SQL Server &#40;Transact-SQL&#41;](../../t-sql/statements/sql-server-collation-name-transact-sql.md).
 
-Vous pouvez utiliser la clause COLLATE pour changer seulement les classements des colonnes ayant les types de données **char** , **varchar** , **nchar** et **nvarchar** .
+Vous pouvez utiliser la clause COLLATE pour changer seulement les classements des colonnes ayant les types de données **char**, **varchar**, **nchar** et **nvarchar**.
 
 > [!NOTE]
 > `COLLATE` ne peut pas être spécifié pour les fonctions table CLR.
 
-ROWGUIDCOL Indique que la nouvelle colonne est une colonne d’identificateur unique global de ligne. Une seule colonne **uniqueidentifier** par table peut être désignée comme colonne ROWGUIDCOL. La propriété ROWGUIDCOL ne peut être affectée qu’à une colonne **uniqueidentifier** .
+ROWGUIDCOL Indique que la nouvelle colonne est une colonne d’identificateur unique global de ligne. Une seule colonne **uniqueidentifier** par table peut être désignée comme colonne ROWGUIDCOL. La propriété ROWGUIDCOL ne peut être affectée qu’à une colonne **uniqueidentifier**.
 
 La propriété ROWGUIDCOL n'assure pas l'unicité des valeurs stockées dans la colonne. Elle ne peut de plus générer automatiquement de valeurs pour les nouvelles lignes insérées dans la table. Pour générer des valeurs uniques pour chaque colonne, utilisez la fonction NEWID dans des instructions INSERT. Une valeur par défaut peut être spécifiée, mais ce ne peut pas être NEWID.
 
-IDENTITY indique que la nouvelle colonne est une colonne d’identité. Lorsqu'une ligne est ajoutée à la table, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] affecte une valeur incrémentée unique à la colonne. Les colonnes d'identité sont généralement utilisées avec les contraintes PRIMARY KEY comme identificateur unique de ligne pour la table. La propriété IDENTITY peut être affectée à des colonnes **tinyint** , **smallint** , **int** , **bigint** , **decimal(p,0)** ou **numeric(p,0)** . Une seule colonne d'identité peut être créée par table. Il n'est pas possible d'utiliser des valeurs par défaut liées et des contraintes DEFAULT avec une colonne d'identité. Vous devez spécifier à la fois *seed* et *increment* , ou bien aucun des deux. Si vous n'en spécifiez aucun, la valeur par défaut est (1,1).
+IDENTITY indique que la nouvelle colonne est une colonne d’identité. Lorsqu'une ligne est ajoutée à la table, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] affecte une valeur incrémentée unique à la colonne. Les colonnes d'identité sont généralement utilisées avec les contraintes PRIMARY KEY comme identificateur unique de ligne pour la table. La propriété IDENTITY peut être affectée à des colonnes **tinyint**, **smallint**, **int**, **bigint**, **decimal(p,0)** ou **numeric(p,0)** . Une seule colonne d'identité peut être créée par table. Il n'est pas possible d'utiliser des valeurs par défaut liées et des contraintes DEFAULT avec une colonne d'identité. Vous devez spécifier à la fois *seed* et *increment*, ou bien aucun des deux. Si vous n'en spécifiez aucun, la valeur par défaut est (1,1).
 
 L'argument IDENTITY ne peut pas être spécifié pour les fonctions table CLR.
 
@@ -496,15 +496,15 @@ Si une fonction définie par l’utilisateur n’est pas créée avec la clause 
 
 ## <a name="data-types"></a>Types de données
 
-Si des paramètres sont spécifiés dans une fonction CLR, ils doivent être de types [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tels que préalablement définis pour *scalar_parameter_data_type* . Pour obtenir des informations sur la comparaison des types de données système [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] avec les types de données d’intégration CLR ou les types de données CLR (Common Language Runtime) [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)], consultez [Mappage des données de paramètres CLR](../../relational-databases/clr-integration-database-objects-types-net-framework/mapping-clr-parameter-data.md).
+Si des paramètres sont spécifiés dans une fonction CLR, ils doivent être de types [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tels que préalablement définis pour *scalar_parameter_data_type*. Pour obtenir des informations sur la comparaison des types de données système [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] avec les types de données d’intégration CLR ou les types de données CLR (Common Language Runtime) [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)], consultez [Mappage des données de paramètres CLR](../../relational-databases/clr-integration-database-objects-types-net-framework/mapping-clr-parameter-data.md).
 
 Pour que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] référence la méthode appropriée en cas de surcharge dans une classe, la méthode indiquée dans \<method_specifier> doit présenter les caractéristiques suivantes :
 
-- Recevoir le même nombre de paramètres que ceux spécifiés dans [ ,... *n* ].
+- Recevoir le même nombre de paramètres que ceux spécifiés dans [ ,...*n* ].
 - Recevoir tous les paramètres par valeur, non par référence.
 - Utiliser des types de paramètre compatibles avec ceux spécifiés dans la fonction [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].
 
-Si le type de données de retour de la fonction CLR spécifie un type de table (RETURNS TABLE), le type de données de retour de la méthode dans \<method_specifier> doit être de type **IEnumerator** ou **IEnumerable** , et le système considère que l’interface est implémentée par le créateur de la fonction. À la différence des fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)], les fonctions CLR ne peuvent pas inclure de contraintes PRIMARY KEY, UNIQUE ou CHECK dans \<table_type_definition>. Les types de données des colonnes spécifiés dans \<table_type_definition> doivent correspondre aux types des colonnes correspondantes du jeu de résultats retourné par la méthode dans \<method_specifier> au moment de l’exécution. Cette vérification de type n'est pas réalisée à la création de la fonction.
+Si le type de données de retour de la fonction CLR spécifie un type de table (RETURNS TABLE), le type de données de retour de la méthode dans \<method_specifier> doit être de type **IEnumerator** ou **IEnumerable**, et le système considère que l’interface est implémentée par le créateur de la fonction. À la différence des fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)], les fonctions CLR ne peuvent pas inclure de contraintes PRIMARY KEY, UNIQUE ou CHECK dans \<table_type_definition>. Les types de données des colonnes spécifiés dans \<table_type_definition> doivent correspondre aux types des colonnes correspondantes du jeu de résultats retourné par la méthode dans \<method_specifier> au moment de l’exécution. Cette vérification de type n'est pas réalisée à la création de la fonction.
 
 Pour plus d’informations sur la façon de programmer des fonctions CLR, consultez [Fonctions CLR définies par l’utilisateur](../../relational-databases/clr-integration-database-objects-user-defined-functions/clr-user-defined-functions.md).
 
@@ -617,7 +617,7 @@ Nécessite l’autorisation `CREATE FUNCTION` dans la base de données et l’au
 
 L'exemple suivant crée la fonction définie par l'utilisateur `ISOweek`. Cette fonction prend un argument date et calcule le numéro de semaine ISO. Pour que ce calcul puisse être correctement réalisé, `SET DATEFIRST 1` doit être appelée avant la fonction.
 
-L’exemple illustre également l’utilisation de la clause [EXECUTE AS](../../t-sql/statements/execute-as-clause-transact-sql.md) pour indiquer le contexte de sécurité dans lequel une procédure stockée peut être exécutée. Dans l'exemple, l'option `CALLER` spécifie que la procédure sera exécutée dans le contexte de l'utilisateur qui l'appelle. Les autres options que vous pouvez spécifier sont `SELF`, `OWNER` et *user_name* .
+L’exemple illustre également l’utilisation de la clause [EXECUTE AS](../../t-sql/statements/execute-as-clause-transact-sql.md) pour indiquer le contexte de sécurité dans lequel une procédure stockée peut être exécutée. Dans l'exemple, l'option `CALLER` spécifie que la procédure sera exécutée dans le contexte de l'utilisateur qui l'appelle. Les autres options que vous pouvez spécifier sont `SELF`, `OWNER` et *user_name*.
 
 Voici l'appel de la fonction. Notez que `DATEFIRST` a la valeur `1`.
 
@@ -733,7 +733,7 @@ GO
 
 L’exemple crée la fonction CLR`len_s`. Avant que la fonction ne soit créée, l'assembly `SurrogateStringFunction.dll` est inscrit dans la base de données locale.
 
-**S’applique à**  : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] SP1 et versions ultérieures)
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] SP1 et versions ultérieures)
 
 ```sql
 DECLARE @SamplesPath nvarchar(1024);

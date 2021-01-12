@@ -20,15 +20,15 @@ helpviewer_keywords:
 - dropping user-defined functions
 - deleting user-defined functions
 ms.assetid: ee5ad283-9e44-4109-902f-0ce12669ee11
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 80ef7be0190bb11a474769d95613d642468d2714
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 655cf93adfd1fbc84d6ab6333fb42e88a66826dd
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465980"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096942"
 ---
 # <a name="drop-function-transact-sql"></a>DROP FUNCTION (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

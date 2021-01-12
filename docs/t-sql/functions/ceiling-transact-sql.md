@@ -18,15 +18,15 @@ helpviewer_keywords:
 - integers [SQL Server]
 - CEILING function [Transact-SQL]
 ms.assetid: e736b43a-9457-4781-95a4-4bcf9d4fc46a
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 44ba5d0c43c3dc93303db52cea2c1e5228a860b9
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 7271d69f74e23db44762005adfff3a8fda7ba5dd
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484221"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097297"
 ---
 # <a name="ceiling-transact-sql"></a>CEILING (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

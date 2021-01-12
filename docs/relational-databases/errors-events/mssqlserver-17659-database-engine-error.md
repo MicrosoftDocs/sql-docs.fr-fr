@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 5e4656c437e1b1a19382222107add8392e0c47e4
-ms.sourcegitcommit: ead0b8c334d487a07e41256ce5d6acafa2d23c9d
+ms.openlocfilehash: b906310eb23bd1f9416cd792d95adfa79f72302c
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92418717"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099355"
 ---
 # <a name="mssqlserver_17659"></a>MSSQLSERVER_17659
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -62,4 +62,4 @@ Pour résoudre ce problème, utilisez l’une des méthodes suivantes.
 
 ## <a name="more-information"></a>Informations complémentaires
 
-Pour plus d’informations, consultez : [Tables de base système](/sql/relational-databases/system-tables/system-base-tables).
+Pour plus d’informations, consultez : [Tables de base système](../system-tables/system-base-tables.md).

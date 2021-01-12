@@ -23,14 +23,14 @@ helpviewer_keywords:
 - status information [SQL Server], events
 - DDL triggers, returning event data
 ms.assetid: 03a80e63-6f37-4b49-bf13-dc35cfe46c44
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: e37bcd2decf37bffa96a726e4b964cc05bcaffa0
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: ab94e98f7a7a3dadacca109e64fa8c5cc2f5e1b6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96128466"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093597"
 ---
 # <a name="eventdata-transact-sql"></a>EVENTDATA (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -20,14 +20,14 @@ helpviewer_keywords:
 - remarks [SQL Server]
 - comments [SQL Server]
 ms.assetid: 4d9ab1b2-4bbb-4c16-beb1-cafc1af7417c
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 161c90803b636ff8aacd67f773c739b0d0153150
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 00dbdd9a6fb7641c00b57eff996bf94b9b683aa3
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "92195430"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096970"
 ---
 # <a name="slash-star-block-comment-transact-sql"></a>Barre oblique étoile (bloc de commentaire) (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx_md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

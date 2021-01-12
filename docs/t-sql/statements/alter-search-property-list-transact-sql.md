@@ -22,14 +22,14 @@ helpviewer_keywords:
 - search property lists [SQL Server], altering
 - ALTER SEARCH PROPERTY LIST statement
 ms.assetid: 0436e4a8-ca26-4d23-93f1-e31e2a1c8bfb
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 5cf5d6bcda6670c6cfc9a142be0569bc4bfeaf8e
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 510bd7abb561fca8a425b843a1647290054b425a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96128057"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094712"
 ---
 # <a name="alter-search-property-list-transact-sql"></a>ALTER SEARCH PROPERTY LIST (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

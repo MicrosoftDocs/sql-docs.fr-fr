@@ -19,14 +19,14 @@ helpviewer_keywords:
 - comparing expressions
 - comparison operators [SQL Server]
 ms.assetid: b0cc68ef-3029-484c-a917-0c15dcbc230d
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 34df520dcb0f193e2b548a909ea10cd4113995fc
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 51d1afb08dc3ea9bd40a968aa76c2b64e06989f1
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124476"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092174"
 ---
 # <a name="comparison-operators-transact-sql"></a>Opérateurs de comparaison (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

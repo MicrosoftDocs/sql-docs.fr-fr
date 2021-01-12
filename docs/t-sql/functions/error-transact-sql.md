@@ -18,15 +18,15 @@ helpviewer_keywords:
 - errors [SQL Server], Transact-SQL
 - error numbers [SQL Server]
 ms.assetid: c8b43477-b6c0-49bf-a608-394a0b6cc7a2
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 90970163ac7e688bc77c90fc5f685b5371ba224c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: f05c9fe20766bec9f0308a608b340b400718505b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482010"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093609"
 ---
 # <a name="x40x40error-transact-sql"></a>&#x40;&#x40;ERROR (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

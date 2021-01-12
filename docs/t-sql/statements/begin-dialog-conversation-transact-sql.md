@@ -29,14 +29,14 @@ helpviewer_keywords:
 - encryption [SQL Server], conversations
 - starting conversations
 ms.assetid: 8e814f9d-77c1-4906-b8e4-668a86fc94ba
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 60eca69999f7e21164eac2ce35add549d767dc26
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: f1c32ad7e6a970b9ebb50dc29e7dda767f5e4f40
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96126184"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098498"
 ---
 # <a name="begin-dialog-conversation-transact-sql"></a>BEGIN DIALOG CONVERSATION (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

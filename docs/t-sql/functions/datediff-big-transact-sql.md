@@ -19,14 +19,14 @@ helpviewer_keywords:
 - functions [SQL Server], date and time
 - time [SQL Server], functions
 ms.assetid: 19ac1693-3cfa-400d-bf83-20a9cb46599a
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: e5a4e30f949a08ef358c777af61972bcfd59c2ef
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: ea087da6532c43493fd10f647788297d98f35f72
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91116457"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093652"
 ---
 # <a name="datediff_big-transact-sql"></a>DATEDIFF_BIG (Transact-SQL)
 
@@ -127,7 +127,7 @@ Utilisez `DATEDIFF_BIG` dans les clauses `SELECT <list>`, `WHERE`, `HAVING`, `GR
   
 La spécification de `SET DATEFIRST` n’a pas d’effet sur `DATEDIFF_BIG`. `DATEDIFF_BIG` utilise toujours Dimanche comme premier jour de la semaine pour que la fonction soit déterministe.
 
-`DATEDIFF_BIG` peut dépasser la capacité avec une précision d’une **nanoseconde** ou plus si la différence entre *enddate* et *startdate* retourne une valeur qui est hors limites pour **bigint **.
+`DATEDIFF_BIG` peut dépasser la capacité avec une précision d’une **nanoseconde** ou plus si la différence entre *enddate* et *startdate* retourne une valeur qui est hors limites pour **bigint**.
   
 ## <a name="examples"></a>Exemples 
   

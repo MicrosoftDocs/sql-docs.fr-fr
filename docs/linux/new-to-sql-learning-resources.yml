@@ -9,12 +9,12 @@ metadata:
   author: MashaMSFT
   ms.author: mathoma
   ms.date: 07/25/2020
-  ms.openlocfilehash: 95d3e201267055a68bb3b07fbd2ecca61dc2d9ff
-  ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+  ms.openlocfilehash: 605a22e6f82b40fe88efa6ea41bbd8c1d6b0df81
+  ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 08/20/2020
-  ms.locfileid: "88646779"
+  ms.lasthandoff: 01/11/2021
+  ms.locfileid: "98099282"
 landingContent:
 - title: 'Module 1 : Notions de base de SQL Server'
   linkLists:
@@ -55,7 +55,7 @@ landingContent:
     - text: Vue d’ensemble des outils
       url: ../tools/overview-sql-tools.md
     - text: Azure Data Studio (outil)
-      url: ../azure-data-studio/what-is.md
+      url: ../azure-data-studio/what-is-azure-data-studio.md
     - text: Écrire du Transact-SQL (T-SQL) de base
       url: ../t-sql/tutorial-writing-transact-sql-statements.md
     - text: Channel 9 – Outils SQL multiplateformes (facultatif)

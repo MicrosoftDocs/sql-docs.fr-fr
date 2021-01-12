@@ -20,14 +20,14 @@ helpviewer_keywords:
 - FIPS 127-2 standard
 - FIPS_FLAGGER option
 ms.assetid: e82f6bee-6cf6-4061-be22-9ad2e8e9d3d6
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: baec8662d21347340eede171bb8dcf3966f54a7f
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 6e0fc2dedf045d08f077f7417bd70a8eaf926fcd
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540588"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093346"
 ---
 # <a name="set-fips_flagger-transact-sql"></a>SET FIPS_FLAGGER (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

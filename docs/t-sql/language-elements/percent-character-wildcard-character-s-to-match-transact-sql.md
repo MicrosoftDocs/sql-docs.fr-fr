@@ -21,14 +21,14 @@ helpviewer_keywords:
 - wildcard characters [SQL Server]
 - characters [SQL Server], wildcard
 ms.assetid: d4cbc1a9-37e1-4101-97fb-e6ac30c1223e
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 3b9a47ebd388c5720a8016763d36eac3b913ce14
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 0674902870a21db2a51d178a88c677128d16aea9
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92191137"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092143"
 ---
 # <a name="percent-character-wildcard---characters-to-match-transact-sql"></a>Caractère de pourcentage (caractères génériques à ne pas faire correspondre - Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

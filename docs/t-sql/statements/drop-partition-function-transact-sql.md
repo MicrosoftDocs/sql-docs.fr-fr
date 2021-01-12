@@ -20,14 +20,14 @@ helpviewer_keywords:
 - dropping partition functions
 - removing partition functions
 ms.assetid: a4bb055a-a538-4db9-a6fb-550d1eabfa18
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 4491f35570a4f60d2a3deb9e4c3271c34f699369
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 748c1832acb1f6dee86086f15ea21b23603f38f8
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96131172"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096946"
 ---
 # <a name="drop-partition-function-transact-sql"></a>DROP PARTITION FUNCTION (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

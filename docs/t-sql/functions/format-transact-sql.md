@@ -15,15 +15,15 @@ dev_langs:
 helpviewer_keywords:
 - FORMAT function
 ms.assetid: dad6f24c-b8d9-4dbe-a561-9b167b8f20c8
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: = azuresqldb-current||>= sql-server-2016||>= sql-server-linux-2017||=azure-sqldw-latest
-ms.openlocfilehash: 41044fb94489fe85cc024379422f953cb9e78ddc
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: bfd9a1079dded6f6ffa466e8161aa98eb20c0106
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472090"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093574"
 ---
 # <a name="format-transact-sql"></a>FORMAT (Transact-SQL)
 

@@ -21,15 +21,15 @@ helpviewer_keywords:
 - SET ANSI_WARNINGS statement
 - ANSI_WARNINGS option
 ms.assetid: f82aaab0-334f-427b-89b0-de4af596b4fa
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 147e06628873a8cd26138306ac7d0b82e3b5e080
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 796f94538e2ec8ba3a89db014824b135e5be9e6d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97476560"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096890"
 ---
 # <a name="set-ansi_warnings-transact-sql"></a>SET ANSI_WARNINGS (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

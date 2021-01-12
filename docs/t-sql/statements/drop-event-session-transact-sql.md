@@ -17,14 +17,14 @@ helpviewer_keywords:
 - event sessions [SQL Server]
 - DROP EVENT SESSION statement
 ms.assetid: 92eabe4b-24e2-43b1-978c-31a199964b90
-author: MightyPen
-ms.author: genemi
-ms.openlocfilehash: 9f26a89ed0da4a6521a339cd837e81b6c5b3369a
-ms.sourcegitcommit: 197a6ffb643f93592edf9e90b04810a18be61133
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 4fcfc24b3eadeff79e04a40dfa17b5a7b0239431
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91378814"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095697"
 ---
 # <a name="drop-event-session-transact-sql"></a>DROP EVENT SESSION (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

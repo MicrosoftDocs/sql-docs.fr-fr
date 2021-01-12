@@ -21,14 +21,14 @@ helpviewer_keywords:
 - identification numbers [SQL Server], files
 - file names [SQL Server], FILE_ID
 ms.assetid: 6a7382cf-a360-4d62-b9d2-5d747f56f076
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 9cdd99caf69ce254e1a42d345526515d2fb0472f
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 780ca2746f1370a84c72334b6676c6d32e71d577
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124692"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092309"
 ---
 # <a name="file_id-transact-sql"></a>FILE_ID (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

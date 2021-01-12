@@ -19,15 +19,15 @@ helpviewer_keywords:
 - ANSI_DEFAULTS option
 - SET ANSI_DEFAULTS statement
 ms.assetid: bd721d97-6e23-488b-8c8c-c0453d5b3b86
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 5f0abfe01c3a5c5a72874d1e7659f2c3ae694edc
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b0e9bbbc3a8f5ae996eb55e80896c532c2507dab
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97483891"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095665"
 ---
 # <a name="set-ansi_defaults-transact-sql"></a>SET ANSI_DEFAULTS (Transact-SQL)
 [!INCLUDE [sql-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdbmi-asa-pdw.md)]

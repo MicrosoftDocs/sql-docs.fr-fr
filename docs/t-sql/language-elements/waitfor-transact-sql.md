@@ -25,14 +25,14 @@ helpviewer_keywords:
 - WAITFOR statement
 - timing executions
 ms.assetid: 8e896e73-af27-4cae-a725-7a156733f3bd
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: dec4eb37c00e524c019b07de3943efd4137e7ab9
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 0933c90f711f5c86425c7e2c6b4b350c47612ddc
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92194951"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095869"
 ---
 # <a name="waitfor-transact-sql"></a>WAITFOR (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

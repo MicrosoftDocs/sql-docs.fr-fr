@@ -23,15 +23,15 @@ helpviewer_keywords:
 - verifying syntax
 - SET PARSEONLY statement
 ms.assetid: 514ab042-c53e-4d96-be71-fb08fcc6ef3c
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 96ea796df3ce144ce745ef6e10f08354e61d3367
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a7c71513d824a8eba42e1b44901329cdbfde4a47
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471900"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099379"
 ---
 # <a name="set-parseonly-transact-sql"></a>SET PARSEONLY (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

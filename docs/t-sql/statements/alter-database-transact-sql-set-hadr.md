@@ -22,14 +22,14 @@ helpviewer_keywords:
 - Availability Groups [SQL Server], Transact-SQL statements
 - Availability Groups [SQL Server], databases
 ms.assetid: 20e6e803-d6d5-48d5-b626-d1e0a73d174c
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 513b7850956ad0bd639edec3c8ec3b4aa876a03a
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 93fed90647a3a6e86e3f2cfa2fe2016727b481e2
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124272"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094740"
 ---
 # <a name="alter-database-transact-sql-set-hadr"></a>ALTER DATABASE (Transact-SQL) SET HADR 
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

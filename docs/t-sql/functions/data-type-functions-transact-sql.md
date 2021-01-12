@@ -11,14 +11,14 @@ ms.topic: language-reference
 dev_langs:
 - TSQL
 ms.assetid: 0a6e4985-9601-4877-942a-cf53f6932958
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 0c260e732041a22e3b00d6c2c7bf962b770a263f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 9d1ce4b4702ad719f12ae609dbaa5af824eb2b1a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88479721"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097184"
 ---
 # <a name="data-type-functions-transact-sql"></a>Fonctions de types de données (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

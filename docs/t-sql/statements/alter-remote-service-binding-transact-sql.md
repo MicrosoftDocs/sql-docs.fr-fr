@@ -18,14 +18,14 @@ helpviewer_keywords:
 - ALTER REMOTE SERVICE BINDING statement
 - modifying remote service bindings
 ms.assetid: ee620b4a-9375-4eaa-a016-69916c9e1e68
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 47c4e18c28a5377fa487e0d4d4e8b9be4cf58acc
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: c671b412d5d9ce34c34fdc49e16215dafc8ec83e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96128058"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092110"
 ---
 # <a name="alter-remote-service-binding-transact-sql"></a>ALTER REMOTE SERVICE BINDING (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

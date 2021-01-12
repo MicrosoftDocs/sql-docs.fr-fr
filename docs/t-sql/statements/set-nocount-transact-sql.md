@@ -22,15 +22,15 @@ helpviewer_keywords:
 - counting rows
 - SET NOCOUNT statement
 ms.assetid: eb3e6727-cb26-4bc2-84c7-171cbac02029
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 361afab78b3822c8c4aa5ed7bc3c520acb1e8b43
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: dd5968962f90694662b6bbfeee1dba81da53d83a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471870"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093339"
 ---
 # <a name="set-nocount-transact-sql"></a>SET NOCOUNT (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

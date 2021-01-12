@@ -18,15 +18,15 @@ helpviewer_keywords:
 - logarithm of expression
 - LOG function
 ms.assetid: f7c39511-cd84-4362-93ba-0d93655217ee
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: fd18836c0f4b2de1dec38892bc6e44c5a0b32f5e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 23e3d0f7674d42f172c05f67869f6814817457f2
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440280"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092248"
 ---
 # <a name="log-transact-sql"></a>LOG (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

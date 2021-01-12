@@ -15,14 +15,14 @@ helpviewer_keywords:
 - full-text catalogs [SQL Server], permissions
 - full-text stoplist [SQL Server], permissions
 ms.assetid: ef617436-1e86-4573-900a-702e27a202b9
-author: MightyPen
-ms.author: genemi
-ms.openlocfilehash: a4f331b478aeb81ef7ceed5777928b4f82898b0f
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 88d7f3bec164521b0f63604cc4cfd23080100a87
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88496582"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095699"
 ---
 # <a name="revoke-full-text-permissions-transact-sql"></a>REVOKE - Autorisations relatives au texte intégral (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

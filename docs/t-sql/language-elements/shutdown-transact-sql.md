@@ -20,14 +20,14 @@ helpviewer_keywords:
 - stopping SQL Server
 - immediately stopping SQL Server
 ms.assetid: c8b03ff9-688c-4fe8-86e8-bd6bd401c9a4
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 0b2d327df39cb0c3a891fc5f4bc624619e7964e8
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 680652ceacfe82ca4f2372d082b790e066f2692f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "92195451"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097029"
 ---
 # <a name="shutdown-transact-sql"></a>SHUTDOWN (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

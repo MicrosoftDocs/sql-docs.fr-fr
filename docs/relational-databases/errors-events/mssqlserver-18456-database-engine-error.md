@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: c417631d-be1f-42e0-8844-9f92c77e11f7
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 409e87d937641386747ccf5210551aadb3f5b761
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 9eec7ad0a11116b1eb9e8bf1c33b57ff3bd2b419
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195555"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099291"
 ---
 # <a name="mssqlserver_18456"></a>MSSQLSERVER_18456
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -70,7 +70,7 @@ Pour des raisons de sécurité, le message d'erreur retourné au client masque d
 |7|La connexion est désactivée et le mot de passe est incorrect.|  
 |8|Le mot de passe est incorrect.|  
 |9|Mot de passe non valide.|  
-|11|La connexion est valide mais l'accès au serveur a échoué. Cette erreur peut se produire lorsque l'utilisateur Windows a accès à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en tant que membre du groupe des administrateurs locaux, mais que Windows ne fournit pas d'informations d'identification d'administrateur. Pour vous connecter, démarrez le programme de connexion à l’aide de l’option **Exécuter en tant qu’administrateur** , puis ajoutez l’utilisateur Windows à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en tant que connexion spécifique.|  
+|11|La connexion est valide mais l'accès au serveur a échoué. Cette erreur peut se produire lorsque l'utilisateur Windows a accès à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en tant que membre du groupe des administrateurs locaux, mais que Windows ne fournit pas d'informations d'identification d'administrateur. Pour vous connecter, démarrez le programme de connexion à l’aide de l’option **Exécuter en tant qu’administrateur**, puis ajoutez l’utilisateur Windows à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en tant que connexion spécifique.|  
 |12|La connexion est valide mais l'accès au serveur a échoué.|  
 |18|Le mot de passe doit être modifié.|  
 |38, 46|La base de données demandée par l’utilisateur est introuvable.|
@@ -101,10 +101,10 @@ Dans cet exemple, l'état d'erreur d'authentification est 8. Cela indique que le
 |2007-12-05 20:12:56.34|Connexion|Échec de la connexion pour l'utilisateur '<nom_utilisateur>'. [CLIENT : <ip address>]|  
   
 > [!NOTE]  
-> Quand [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est installé avec le mode d’authentification Windows et modifié ultérieurement pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] avec le mode d’authentification Windows, la connexion **sa** est initialement désactivée. Cela provoque l’erreur d’état 7 : « Échec de la connexion de l’utilisateur 'sa'. » Pour activer la connexion **sa** , consultez [Modifier le mode d’authentification du serveur](~/database-engine/configure-windows/change-server-authentication-mode.md).  
+> Quand [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est installé avec le mode d’authentification Windows et modifié ultérieurement pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] avec le mode d’authentification Windows, la connexion **sa** est initialement désactivée. Cela provoque l’erreur d’état 7 : « Échec de la connexion de l’utilisateur 'sa'. » Pour activer la connexion **sa**, consultez [Modifier le mode d’authentification du serveur](~/database-engine/configure-windows/change-server-authentication-mode.md).  
   
 ## <a name="user-action"></a>Action de l'utilisateur  
-Si vous essayez de vous connecter à l'aide de l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], vérifiez que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est configuré en mode Authentification mixte. Pour plus d’informations sur la modification du mode d’authentification SQL Server, consultez [Changement de mode d’authentification serveur](https://docs.microsoft.com/sql/database-engine/configure-windows/change-server-authentication-mode).
+Si vous essayez de vous connecter à l'aide de l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], vérifiez que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est configuré en mode Authentification mixte. Pour plus d’informations sur la modification du mode d’authentification SQL Server, consultez [Changement de mode d’authentification serveur](../../database-engine/configure-windows/change-server-authentication-mode.md).
   
 Si vous essayez de vous connecter à l'aide de l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], vérifiez que la connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] existe et que vous l'avez orthographiée correctement.  
   
@@ -112,8 +112,8 @@ Si vous essayez de vous connecter à l'aide de l'authentification Windows, véri
   
 Si votre erreur indique l'état 1, contactez votre administrateur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
-Si vous essayez de vous connecter avec vos informations d’identification d’administrateur, démarrez votre application à l’aide de l’option **Exécuter en tant qu’administrateur** . Une fois connecté, ajoutez votre utilisateur Windows en tant que connexion individuelle.  
+Si vous essayez de vous connecter avec vos informations d’identification d’administrateur, démarrez votre application à l’aide de l’option **Exécuter en tant qu’administrateur**. Une fois connecté, ajoutez votre utilisateur Windows en tant que connexion individuelle.  
   
 Si le [!INCLUDE[ssDE](../../includes/ssde-md.md)] prend en charge les bases de données autonomes, vérifiez que la connexion n’a pas été supprimée suite à la migration vers un utilisateur de base de données autonome.  
   
-Lors de la connexion locale à une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], les connexions d’autres services qui s’exécutent également sous **NT AUTHORITY\NETWORK SERVICE** doivent s’authentifier à l’aide du nom de domaine complet des ordinateurs. Pour plus d’informations, consultez [Guide pratique pour Utiliser le compte de service réseau pour accéder à des ressources dans ASP.NET](/previous-versions/msp-n-p/ff647402(v=pandp.10))  
+Lors de la connexion locale à une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], les connexions d’autres services qui s’exécutent également sous **NT AUTHORITY\NETWORK SERVICE** doivent s’authentifier à l’aide du nom de domaine complet des ordinateurs. Pour plus d’informations, consultez [Guide pratique pour Utiliser le compte de service réseau pour accéder à des ressources dans ASP.NET](/previous-versions/msp-n-p/ff647402(v=pandp.10))

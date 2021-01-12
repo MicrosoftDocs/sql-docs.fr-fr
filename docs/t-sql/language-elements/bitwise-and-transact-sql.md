@@ -19,15 +19,15 @@ helpviewer_keywords:
 - '& (bitwise AND)'
 - bitwise AND (&)
 ms.assetid: 20275755-4fa7-47b1-a9be-ac85606d63b0
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 06b82d0789044206003c69bd2a6399b43e4718bf
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a6d75027d1ccd171a8b860bfa536da0b51fb457b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97439204"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095977"
 ---
 # <a name="amp-bitwise-and-transact-sql"></a>&amp; (AND au niveau du bit) (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

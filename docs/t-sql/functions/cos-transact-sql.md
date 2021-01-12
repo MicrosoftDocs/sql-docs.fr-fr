@@ -17,15 +17,15 @@ helpviewer_keywords:
 - cosine
 - COS function
 ms.assetid: c9fa8ae1-3373-4f3e-9b97-fa05077c1040
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 7f38e99beb7f57fa0b9e63e0bac8f5e86f0cf525
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 96e0eb9dd3806ae10502a66b9738b589a721d110
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97468270"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097254"
 ---
 # <a name="cos-transact-sql"></a>COS (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

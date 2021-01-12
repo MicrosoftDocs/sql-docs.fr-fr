@@ -16,15 +16,15 @@ helpviewer_keywords:
 - collations [SQL Server], Windows collations
 - Collation Designator
 ms.assetid: acceef84-2c68-46e2-a021-be019b7ab14e
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 6ab5ce1732b8f96a51e5a8b58d0efde8a620d79b
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: e89cac604654a1793a65bdd43dcd38cf77484b06
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489949"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099378"
 ---
 # <a name="windows-collation-name-transact-sql"></a>Nom de classement Windows (Transact-SQL)
 

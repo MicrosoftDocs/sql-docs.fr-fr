@@ -19,14 +19,14 @@ helpviewer_keywords:
 - modifying views
 - ALTER VIEW statement
 ms.assetid: 03eba220-13e2-49e3-bd9d-ea9df84dc28c
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 36ba589c82621460bae9dc6b7772944c061c748a
-ms.sourcegitcommit: 0c0e4ab90655dde3e34ebc08487493e621f25dda
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 76a16ec32341e54c66b7ba72edc50f4d9944b900
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96442987"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098461"
 ---
 # <a name="alter-view-transact-sql"></a>ALTER VIEW (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

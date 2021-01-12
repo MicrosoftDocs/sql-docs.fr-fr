@@ -27,14 +27,14 @@ helpviewer_keywords:
 - binary [SQL Server], message types
 - CREATE MESSAGE TYPE statement
 ms.assetid: 98fe0fff-1a2e-4ca2-b37f-83a06fdf098e
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 3ad277a8538eee95404be124068635bc4d9ea5fa
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: b32fe2417a7a9d9d290b72cf3de2dfc325fc0eaf
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124047"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093445"
 ---
 # <a name="create-message-type-transact-sql"></a>CREATE MESSAGE TYPE (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

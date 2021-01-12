@@ -29,15 +29,15 @@ helpviewer_keywords:
 - CURRENT_TIMESTAMP function [SQL Server]
 - time [SQL Server], system
 ms.assetid: c724d9cc-7b1f-4c71-bdf5-08bc52b33afc
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 75cb9104b167373ea2657c796a238a7a087bfbd6
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8725fa782ef5918ac952e927097721d2cbf14afa
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97408166"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093720"
 ---
 # <a name="current_timestamp-transact-sql"></a>CURRENT_TIMESTAMP (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

@@ -20,14 +20,14 @@ helpviewer_keywords:
 - SOME | ANY keyword
 - single-column set of values [SQL Server]
 ms.assetid: 1f717ad6-f67b-4980-9397-577ecb0e5789
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: db6bf2a03ee0b187345de9b9c406b9c2ca86cc29
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 42df6fc94ca0ca62b98156db73f3394d1850219f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195471"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095934"
 ---
 # <a name="some--any-transact-sql"></a>SOME | ANY (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

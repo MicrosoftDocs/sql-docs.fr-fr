@@ -22,15 +22,15 @@ helpviewer_keywords:
 - priority deadlock settings [SQL Server]
 - SET DEADLOCK_PRIORITY statement
 ms.assetid: 810a3a8e-3da3-4bf9-bb15-7b069685a1b6
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: d515065546607dc5acece79c57bf5199038c9fee
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 7a8ac9ab20159651d80279eeb319a42705344e4a
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465830"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093397"
 ---
 # <a name="set-deadlock_priority-transact-sql"></a>SET DEADLOCK_PRIORITY (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

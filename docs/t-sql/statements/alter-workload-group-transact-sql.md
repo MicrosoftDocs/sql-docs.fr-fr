@@ -16,15 +16,15 @@ dev_langs:
 helpviewer_keywords:
 - ALTER WORKLOAD GROUP statement
 ms.assetid: 957addce-feb0-4e54-893e-5faca3cd184c
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=sql-server-2016||>=sql-server-linux-2017||=azure-sqldw-latest||=azuresqldb-mi-current'
-ms.openlocfilehash: 9640ce7612dc01700205b361b1c351d1e79c05c0
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 2c9c90cb1107d33f6ecbb42e0974371555d9b9aa
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644405"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098419"
 ---
 # <a name="alter-workload-group-transact-sql"></a>ALTER WORKLOAD GROUP (Transact-SQL)
 

@@ -20,14 +20,14 @@ helpviewer_keywords:
 - deleting cursor references
 - removing cursor references
 ms.assetid: c75cf73d-0268-4c57-973d-b8a84ff801fa
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: b29ee9539e8b6d4da64dfcc0da7c2ef9f4296a87
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: af7031fbcfaf4efacbe4f3692547635030049c64
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124456"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093518"
 ---
 # <a name="deallocate-transact-sql"></a>DEALLOCATE (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -15,14 +15,14 @@ helpviewer_keywords:
 ms.assetid: c836f3d3-3e17-44ae-92bf-f341918896c3
 author: jovanpop-msft
 ms.author: jovanpop
-ms.reviewer: jroth
+ms.reviewer: chadam
 monikerRange: = azuresqldb-current||= azure-sqldw-latest||>= sql-server-2016||>= sql-server-linux-2017
-ms.openlocfilehash: 49d1bcd94ed12e0b9bb22e63018b0867f680dd41
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5fcad8c84a89361be869d535db04303cc91de16f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464300"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097157"
 ---
 # <a name="isjson-transact-sql"></a>ISJSON (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa.md)]

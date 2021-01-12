@@ -20,14 +20,14 @@ helpviewer_keywords:
 - column names [SQL Server]
 - names [SQL Server], columns
 ms.assetid: 4db1fb3b-e46f-43fb-b269-a5b6e8b39ed0
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: e84cc199c94775a38268ab486712c5f5982bdb26
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 4e1b37288462aea0eaeaab0a8299c5cfe6886723
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91115450"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093559"
 ---
 # <a name="index_col-transact-sql"></a>INDEX_COL (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

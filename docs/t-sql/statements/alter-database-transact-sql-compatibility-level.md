@@ -22,15 +22,15 @@ helpviewer_keywords:
 - db compatibility level
 - db compat level
 ms.assetid: ca5fd220-d5ea-4182-8950-55d4101a86f6
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 8abc71070ffc8993e08a5f0ae27da0978709edb7
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 168f902453d2897e50186cc513977b2eb10e8627
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471990"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094735"
 ---
 # <a name="alter-database-transact-sql-compatibility-level"></a>Niveau de compatibilité ALTER DATABASE (Transact-SQL)
 

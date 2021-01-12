@@ -26,18 +26,18 @@ helpviewer_keywords:
 - time [SQL Server], validate
 - ISDATE function [SQL Server]
 ms.assetid: 8e2c9ee7-388a-432f-b2c9-7b398f26bf85
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 03/14/2017
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: ffb074adf1c9af9ac48fad0f0762349190a5c254
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5345bbdc161730ba0d08c79e0d52b7e2ec901498
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480460"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097216"
 ---
 # <a name="isdate-transact-sql"></a>ISDATE (Transact-SQL)
 

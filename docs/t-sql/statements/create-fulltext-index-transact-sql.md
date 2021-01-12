@@ -20,14 +20,14 @@ helpviewer_keywords:
 - index creation [SQL Server], CREATE FULLTEXT INDEX statement
 - CREATE FULLTEXT INDEX statement
 ms.assetid: 8b80390f-5f8b-4e66-9bcc-cabd653c19fd
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: eac401156014952142c39851b1e703605997c245
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 758a8447197a5fcbb3794a7abfb152c4a430779d
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96128002"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095814"
 ---
 # <a name="create-fulltext-index-transact-sql"></a>CREATE FULLTEXT INDEX (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

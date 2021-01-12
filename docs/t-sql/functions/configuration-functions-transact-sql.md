@@ -16,14 +16,14 @@ helpviewer_keywords:
 - current configuration information
 - configuration functions [SQL Server]
 ms.assetid: 066f15e7-3406-437e-93c4-3f247c529169
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 904e63d757f71c442e829e68e42d111cc3452186
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 03ba01887e6d26dfe7b88f340ceffdc80e5c05f9
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88459822"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092341"
 ---
 # <a name="configuration-functions-transact-sql"></a>Fonctions de configuration (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

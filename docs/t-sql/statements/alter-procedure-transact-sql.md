@@ -21,15 +21,15 @@ helpviewer_keywords:
 - modifying stored procedures
 - stored procedures [SQL Server], modifying
 ms.assetid: ed9b2f76-11ec-498d-a95e-75b490a75733
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: d094e85bd6b927e09ebb92f5ed40eb64206cdea7
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 46d43653b505f679d326ad86c866ee6997f037f7
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97462230"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092134"
 ---
 # <a name="alter-procedure-transact-sql"></a>ALTER PROCEDURE (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

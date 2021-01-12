@@ -25,14 +25,14 @@ helpviewer_keywords:
 - remote servers [SQL Server], distributed transactions
 - starting transactions
 ms.assetid: c3bc2716-39d3-4061-8c6a-8734899231ac
-author: rothja
-ms.author: jroth
-ms.openlocfilehash: 757e838efe95130f745cf8966789cab4432bc0d5
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: 15f3221d2e7848a64f3ba22d618bdc54927afeba
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124526"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095989"
 ---
 # <a name="begin-distributed-transaction-transact-sql"></a>BEGIN DISTRIBUTED TRANSACTION (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

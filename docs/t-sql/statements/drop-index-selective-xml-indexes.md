@@ -13,14 +13,14 @@ f1_keywords:
 dev_langs:
 - TSQL
 ms.assetid: 4779ae84-e5f4-4d04-8fc1-e24a6631b428
-author: MightyPen
-ms.author: genemi
-ms.openlocfilehash: 0520dab52c67d0b4c48abcffc1dd87ad18e222cc
-ms.sourcegitcommit: 197a6ffb643f93592edf9e90b04810a18be61133
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 10a8dce89cff5a8201c583b9479a774d44a72ade
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91380384"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096956"
 ---
 # <a name="drop-index-selective-xml-indexes"></a>DROP INDEX (Selective XML Indexes)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

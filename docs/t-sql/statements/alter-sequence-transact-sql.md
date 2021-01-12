@@ -17,14 +17,14 @@ helpviewer_keywords:
 - sequence number object, altering
 - ALTER SEQUENCE statement
 ms.assetid: decc0760-029e-4baf-96c9-4a64073df1c2
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: ae8e04d348f6a3146030d4f0bf8856b2d343b682
-ms.sourcegitcommit: ac9feb0b10847b369b77f3c03f8200c86ee4f4e0
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: c32f4e9a6a020df9f7be879eb6e4327bbb9d51f2
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90688173"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094673"
 ---
 # <a name="alter-sequence-transact-sql"></a>ALTER SEQUENCE (Transact-SQL)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]
@@ -90,7 +90,7 @@ ALTER SEQUENCE [schema_name. ] sequence_name
 ## <a name="security"></a>Sécurité  
   
 ### <a name="permissions"></a>Autorisations  
- Exige l’autorisation **ALTER** sur la séquence ou l’autorisation **ALTER** sur le schéma. Pour accorder l’autorisation**ALTER** sur la séquence, utilisez **ALTER ON OBJECT** dans le format suivant :  
+ Exige l’autorisation **ALTER** sur la séquence ou l’autorisation **ALTER** sur le schéma. Pour accorder l’autorisation **ALTER** sur la séquence, utilisez **ALTER ON OBJECT** dans le format suivant :  
   
 ```sql  
 GRANT ALTER ON OBJECT::Test.TinySeq TO [AdventureWorks\Larry]  

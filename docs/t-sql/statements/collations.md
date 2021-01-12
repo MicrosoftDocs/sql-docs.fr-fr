@@ -17,15 +17,15 @@ helpviewer_keywords:
 - collations [SQL Server], COLLATE clause
 - COLLATE clause
 ms.assetid: 76763ac8-3e0d-4bbb-aa53-f5e7da021daa
-author: markingmyname
-ms.author: maghan
+author: WilliamDAssafMSFT
+ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: dc115153671a4cd8aed490205b19f4a21c9e8949
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: d456379700ba48513105569a8486cf6f7a615ce3
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489489"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098448"
 ---
 # <a name="collate-transact-sql"></a>COLLATE (Transact-SQL)
 

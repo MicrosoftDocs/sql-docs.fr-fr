@@ -17,14 +17,14 @@ helpviewer_keywords:
 - DROP DEFAULT statement
 - defaults [SQL Server], removing
 ms.assetid: d2d3af25-8877-46ba-95d9-1844961d97ee
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 2bb618bfc53e481e2ea7d86749aaf093d3ec2542
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 43c75b4462f8a725e5ce06d4d5eb545000bc8bb7
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96131305"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095774"
 ---
 # <a name="drop-default-transact-sql"></a>DROP DEFAULT (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

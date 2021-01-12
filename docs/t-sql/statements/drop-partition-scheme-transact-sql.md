@@ -20,14 +20,14 @@ helpviewer_keywords:
 - removing partition schemes
 - partition schemes [SQL Server], removing
 ms.assetid: 6efbc87c-1c92-4e43-96a7-e0f30f1db185
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 02aa1e5d8bae0949c58bd94af07589260e55af1d
-ms.sourcegitcommit: 197a6ffb643f93592edf9e90b04810a18be61133
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 65a64c6488afe5ca5598f68d13d4f5a41e7d2e03
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91380327"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096906"
 ---
 # <a name="drop-partition-scheme-transact-sql"></a>DROP PARTITION SCHEME (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/applies-to-version/sqlserver.md)]

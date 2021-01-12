@@ -18,15 +18,15 @@ helpviewer_keywords:
 - combining query results
 - UNION operator [SQL Server]
 ms.assetid: 607c296f-8a6a-49bc-975a-b8d0c0914df7
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: eee4538e96bdc4452091daf1a78302d56aedc09d
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 980dfe20df5c3909e8b35a6e5b460db2568b0fe3
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466070"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097084"
 ---
 # <a name="set-operators---union-transact-sql"></a>Opérateurs de jeu - UNION (Transact-SQL)
 

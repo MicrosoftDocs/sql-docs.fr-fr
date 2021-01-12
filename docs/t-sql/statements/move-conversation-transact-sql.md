@@ -22,14 +22,14 @@ helpviewer_keywords:
 - conversations [Service Broker], groups
 - conversations [Service Broker], moving
 ms.assetid: 1da4d2c9-e767-434e-b49b-615711a7f626
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 221c16ac567c7dfffa86d2c2259bd86d62cc1d8a
-ms.sourcegitcommit: b93beb4f03aee2c1971909cb1d15f79cd479a35c
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: a789534b4ff40a7d9f6f360c941bd920ce23c44e
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498106"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095664"
 ---
 # <a name="move-conversation-transact-sql"></a>MOVE CONVERSATION (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

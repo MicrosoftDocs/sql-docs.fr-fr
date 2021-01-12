@@ -20,14 +20,14 @@ helpviewer_keywords:
 - DROP SERVICE statement
 - removing services
 ms.assetid: 2351bba7-0f2a-4cda-b3b2-6a88b8747c53
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: c996ceed0048602d177be0fc909082c8438c52bd
-ms.sourcegitcommit: 197a6ffb643f93592edf9e90b04810a18be61133
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 0aa5475984945592d968b237c1129a4f5b55d6b6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91379703"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98099423"
 ---
 # <a name="drop-service-transact-sql"></a>DROP SERVICE (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

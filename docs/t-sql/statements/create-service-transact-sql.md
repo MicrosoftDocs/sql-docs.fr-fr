@@ -20,14 +20,14 @@ helpviewer_keywords:
 - CREATE SERVICE statement
 - contracts [Service Broker], service creation
 ms.assetid: fb804fa2-48eb-4878-a12f-4e0d5f4bc9e3
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: cf0a57dd61d3679f5d1d2888299b3759c1feca54
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: f4c3d54c74d21994974ea1cdf47dbea07d8171ca
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96131266"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096991"
 ---
 # <a name="create-service-transact-sql"></a>CREATE SERVICE (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

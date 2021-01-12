@@ -20,15 +20,15 @@ helpviewer_keywords:
 - ERROR_NUMBER function
 - CATCH block
 ms.assetid: 1de85fff-1ca2-4b31-841b-926e571cb150
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: e152dd6e87a62a6ea11e256f832640f312ddfff4
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 07f9d4783cb864601d6eb53ebbe9e35094d9ac89
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482030"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093626"
 ---
 # <a name="error_number-transact-sql"></a>ERROR_NUMBER (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

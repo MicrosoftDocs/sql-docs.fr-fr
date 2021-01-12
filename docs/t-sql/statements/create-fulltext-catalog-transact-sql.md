@@ -25,14 +25,14 @@ helpviewer_keywords:
 - full-text catalogs [SQL Server], creating
 - CREATE FULLTEXT CATALOG statement
 ms.assetid: d7a8bd93-e2d7-4a40-82ef-39069e65523b
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: cf2427b873fdaea461681689057ff11c98fc20e7
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: WilliamDAssafMSFT
+ms.author: wiassaf
+ms.openlocfilehash: 4d3520d2a9d8c1c90507bb52742bd888eb1925cd
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124086"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98095836"
 ---
 # <a name="create-fulltext-catalog-transact-sql"></a>CREATE FULLTEXT CATALOG (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

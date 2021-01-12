@@ -20,14 +20,14 @@ helpviewer_keywords:
 - MARS [SQL Server]
 - session context information [SQL Server]
 ms.assetid: 571320f5-7228-4b0e-9d01-ab732d2d1eab
-author: markingmyname
-ms.author: maghan
-ms.openlocfilehash: 0a6ff9b888601403029ef8c830dd8dd674aa1f10
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+author: cawrites
+ms.author: chadam
+ms.openlocfilehash: a85309296fd5424d650fc23fa37a9baa8c2ee34f
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96128524"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092330"
 ---
 # <a name="context_info--transact-sql"></a>CONTEXT_INFO  (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -23,15 +23,15 @@ helpviewer_keywords:
 - exclusive OR mathematical operations
 - bitwise exclusive OR (^)
 ms.assetid: f38f0ad4-46d0-40ea-9851-0f928fda5293
-author: rothja
-ms.author: jroth
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 274f54de1fe1c73f311348ac20bc2d946d7907fd
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6d26cc856791bf46ec8a7f77fe2261ab41b635f2
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97439194"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98093549"
 ---
 # <a name="-bitwise-exclusive-or-transact-sql"></a>^ (OR exclusif au niveau du bit) (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

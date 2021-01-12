@@ -32,15 +32,15 @@ helpviewer_keywords:
 - time zones [SQL Server]
 - roundtrip conversions
 ms.assetid: a87d0850-c670-4720-9ad5-6f5a22343ea8
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: c54cdea7db9d713f4a82f9628f497e5b37f1d544
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 24091fa04d0db4499f03e4722977a34cf70ae5ac
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484251"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98097322"
 ---
 # <a name="cast-and-convert-transact-sql"></a>CAST et CONVERT (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

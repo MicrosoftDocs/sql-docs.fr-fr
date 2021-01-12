@@ -19,15 +19,15 @@ helpviewer_keywords:
 - current language in use
 - names [SQL Server], language in use
 ms.assetid: 3e13b477-7dfa-4da6-9948-da2050d42527
-author: markingmyname
-ms.author: maghan
+author: cawrites
+ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: a4fd53af4140c1b14f90bf03c71ba1165d7f6c6b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b8f1669b13b7fc9f50c8fc94ba7b6b8e3576f876
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461310"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98092262"
 ---
 # <a name="x40x40language-transact-sql"></a>&#x40;&#x40;LANGUAGE (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
