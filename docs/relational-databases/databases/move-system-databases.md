@@ -28,12 +28,12 @@ helpviewer_keywords:
 ms.assetid: 72bb62ee-9602-4f71-be51-c466c1670878
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: a72ccacd9401a8b7955eae10751c5ac67ca211ac
-ms.sourcegitcommit: eeb30d9ac19d3ede8d07bfdb5d47f33c6c80a28f
+ms.openlocfilehash: c24a98684e87eb94a3cd9e100f203509789b7a0f
+ms.sourcegitcommit: 4a813a0741502c56c0cd5ecaafafad2e857a9d7f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96523058"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031105"
 ---
 # <a name="move-system-databases"></a>Déplacer des bases de données système
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "96523058"
   
 2.  Arrêtez l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou éteignez le système pour que la maintenance ait lieu. Pour plus d'informations, consultez [Démarrer, arrêter, suspendre, reprendre, redémarrer les services SQL Server](../../database-engine/configure-windows/start-stop-pause-resume-restart-sql-server-services.md).  
   
-3.  Déplacez le ou les fichiers vers le nouvel emplacement.  
+3.  Déplacez le ou les fichiers vers le nouvel emplacement et vérifiez que le compte de service [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] est toujours autorisé à y accéder.
 
 4.  Redémarrez l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou le serveur. Pour plus d'informations, consultez [Démarrer, arrêter, suspendre, reprendre, redémarrer les services SQL Server](../../database-engine/configure-windows/start-stop-pause-resume-restart-sql-server-services.md).  
   
@@ -151,14 +151,10 @@ ms.locfileid: "96523058"
   
 3.  Dans la boîte de dialogue **Propriétés de SQL Server (** _nom_instance_ **)** , cliquez sur l’onglet **Paramètres de démarrage** .  
   
-4.  Dans la zone **Paramètres existants**, sélectionnez le paramètre -d pour déplacer le fichier de données MASTER. Cliquez sur **Mettre à jour** pour enregistrer les modifications.  
+4.  Dans la zone **Paramètres existants**, sélectionnez le paramètre -d. Dans la zone **Spécifiez un paramètre de démarrage**, remplacez le paramètre par le nouveau chemin du fichier de *données* master. Cliquez sur **Mettre à jour** pour enregistrer les modifications.
   
-     Dans la zone **Spécifiez un paramètre de démarrage** , modifiez le paramètre par le nouveau chemin d’accès de la base de données MASTER.  
-  
-5.  Dans la zone **Paramètres existants**, sélectionnez le paramètre -l pour déplacer le fichier journal MASTER. Cliquez sur **Mettre à jour** pour enregistrer les modifications.  
-  
-     Dans la zone **Spécifiez un paramètre de démarrage** , modifiez le paramètre par le nouveau chemin d’accès de la base de données MASTER.  
-  
+5.  Dans la zone **Paramètres existants**, sélectionnez le paramètre -l. Dans la zone **Spécifiez un paramètre de démarrage**, remplacez le paramètre par le nouveau chemin du fichier *journal* master. Cliquez sur **Mettre à jour** pour enregistrer les modifications.
+
      La valeur du paramètre pour le fichier de données doit suivre le paramètre `-d` et la valeur pour le fichier journal doit suivre le paramètre `-l` . L’exemple suivant montre les valeurs des paramètres pour l’emplacement par défaut des fichiers de données de la base de données MASTER.  
   
      `-dC:\Program Files\Microsoft SQL Server\MSSQL<version>.MSSQLSERVER\MSSQL\DATA\master.mdf`  
@@ -170,14 +166,16 @@ ms.locfileid: "96523058"
      `-dE:\SQLData\master.mdf`  
   
      `-lE:\SQLData\mastlog.ldf`  
+
+6.  Cliquez sur **OK** pour enregistrer les changements de façon définitive et fermez la boîte de dialogue **Propriétés SQL Server (** **_instance_name_)** .
+
+7.  Arrêtez l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en cliquant avec le bouton droit sur le nom d’instance et en choisissant **Arrêter**.  
   
-6.  Arrêtez l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en cliquant avec le bouton droit sur le nom d’instance et en choisissant **Arrêter**.  
+8.  Déplacez les fichiers master.mdf et mastlog.ldf vers le nouvel emplacement.  
   
-7.  Déplacez les fichiers master.mdf et mastlog.ldf vers le nouvel emplacement.  
+9.  Redémarrez l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
-8.  Redémarrez l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
-  
-9. Vérifiez que la modification des fichiers a bien eu lieu pour la base de données master en exécutant la requête ci-dessous.  
+10. Vérifiez que la modification des fichiers a bien eu lieu pour la base de données master en exécutant la requête ci-dessous.  
   
     ```  
     SELECT name, physical_name AS CurrentLocation, state_desc  
@@ -186,7 +184,7 @@ ms.locfileid: "96523058"
     GO  
     ```  
 
-10. À ce stade, SQL Server doit fonctionner normalement. Toutefois Microsoft recommande d’ajuster également l’entrée de registre sur `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\instance_ID\Setup`, où *instance_ID* est similaire à `MSSQL13.MSSQLSERVER`. Dans cette ruche, modifiez la valeur `SQLDataRoot` en indiquant le nouveau chemin d’accès. L’échec de la mise à jour du registre peut entraîner l’échec de la mise à jour corrective et de la mise à niveau.
+11. À ce stade, SQL Server doit fonctionner normalement. Toutefois Microsoft recommande d’ajuster également l’entrée de registre sur `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\instance_ID\Setup`, où *instance_ID* est similaire à `MSSQL13.MSSQLSERVER`. Dans cette ruche, modifiez la valeur `SQLDataRoot` en indiquant le nouveau chemin d’accès. L’échec de la mise à jour du registre peut entraîner l’échec de la mise à jour corrective et de la mise à niveau.
 
   
 ##  <a name="moving-the-resource-database"></a><a name="Resource"></a> Déplacement de la base de données Resources  
