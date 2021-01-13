@@ -2,11 +2,13 @@
 title: Statistiques
 description: L'optimiseur de requête utilise des statistiques dans l'optique de créer des plans de requête qui améliorent les performances des requêtes. Découvrez les concepts et les recommandations sur l’utilisation de l’optimisation des requêtes.
 ms.custom: ''
-ms.date: 11/23/2020
+ms.date: 1/7/2021
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: performance
 ms.topic: conceptual
+dev_langs:
+- TSQL
 helpviewer_keywords:
 - statistical information [SQL Server], query optimization
 - query performance [SQL Server], statistics
@@ -20,21 +22,20 @@ helpviewer_keywords:
 - index statistics [SQL Server]
 - query optimizer [SQL Server], statistics
 - statistics [SQL Server]
-ms.assetid: b86a88ba-4f7c-4e19-9fbd-2f8bcd3be14a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: d88b24a6602ece47194997a829c4f2824d4a6c71
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 77bd2f1cb2cd3e028bccbc5185f2336812f3f891
+ms.sourcegitcommit: d681796e8c012eca2d9629d3b816749e9f50f868
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475350"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98005424"
 ---
 # <a name="statistics"></a>Statistiques
 
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
-  L'optimiseur de requête utilise des statistiques dans l'optique de créer des plans de requête qui améliorent les performances des requêtes. Pour la plupart des requêtes, l'optimiseur de requête génère déjà les statistiques utiles à un plan de requête de haute qualité ; dans certains cas, vous devez créer des statistiques supplémentaires ou modifier la conception des requêtes pour obtenir des résultats optimaux. Cette rubrique traite des concepts de statistiques et fournit des instructions pour vous permettre d'utiliser efficacement les statistiques d'optimisation de requête.  
+  L'optimiseur de requête utilise des statistiques dans l'optique de créer des plans de requête qui améliorent les performances des requêtes. Pour la plupart des requêtes, l'optimiseur de requête génère déjà les statistiques utiles à un plan de requête de haute qualité ; dans certains cas, vous devez créer des statistiques supplémentaires ou modifier la conception des requêtes pour obtenir des résultats optimaux. Cet article traite des concepts de statistiques et fournit des instructions pour vous permettre d'utiliser efficacement les statistiques d'optimisation de requête.  
   
 ##  <a name="components-and-concepts"></a><a name="DefinitionQOStatistics"></a> Composants et concepts  
 ### <a name="statistics"></a>Statistiques  
@@ -48,13 +49,13 @@ Un **histogramme** mesure la fréquence des occurrences de chaque valeur distinc
 > [!NOTE]
 > <a name="frequency"></a> Les histogrammes dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont créés pour une seule colonne, en l’occurrence, la première colonne du jeu de colonnes clés de l’objet de statistiques.
   
-Pour créer l'histogramme, l'optimiseur de requête trie les valeurs de colonnes, calcule le nombre de valeurs qui correspondent à chaque valeur de colonne distincte, puis regroupe les valeurs de colonnes dans 200 étapes d'histogramme contiguës au maximum. Chaque étape de l’histogramme inclut une plage de valeurs de colonnes, suivie d’une valeur de colonne de limite supérieure. La plage comprend toutes les valeurs de colonnes possibles entre des valeurs limites, à l'exception des valeurs limites elles-mêmes. La plus basse des valeurs de colonnes triées est la valeur de limite supérieure pour la première étape d'histogramme.
+Pour créer l’histogramme, l’optimiseur de requête trie les valeurs de colonnes, calcule le nombre de valeurs qui correspondent à chaque valeur de colonne distincte, puis regroupe les valeurs de colonnes dans 200 étapes d’histogramme contiguës au maximum. Chaque étape de l’histogramme inclut une plage de valeurs de colonnes, suivie d’une valeur de colonne de limite supérieure. La plage comprend toutes les valeurs de colonnes possibles entre des valeurs limites, à l'exception des valeurs limites elles-mêmes. La plus basse des valeurs de colonnes triées est la valeur de limite supérieure pour la première étape d'histogramme.
 
 Plus précisément, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] crée **l’histogramme** à partir du jeu de valeurs de colonnes trié, en trois étapes :
 
 - **Initialisation de l’histogramme** : Dans la première étape, une suite de valeurs situées au début du jeu trié est traitée, et jusqu’à 200 valeurs de *range_high_key*, *equal_rows*, *range_rows* et *distinct_range_rows* sont collectées (*range_rows* et *distinct_range_rows* ont toujours une valeur égale à zéro lors de cette étape). La première étape se termine quand toutes les entrées ont été traitées ou quand 200 valeurs ont été trouvées. 
 - **Analyse avec fusion des compartiments** : Chaque valeur supplémentaire issue de la première colonne de la clé de statistiques est traitée selon l’ordre de tri à la deuxième étape. Chaque valeur suivante est ajoutée à la dernière plage ou une nouvelle plage est créée à la fin (ceci est possible, car les valeurs d’entrée sont triées). Si une plage est créée, une paire de plages voisines existantes est réduite en une plage unique. Cette paire de plages est sélectionnée pour minimiser la perte d’informations. Cette méthode utilise un algorithme de *différence maximale* pour réduire le nombre d’étapes dans l’histogramme, tout en augmentant la différence entre les valeurs limites. Le nombre d’étapes après réduction des plages reste à 200 pendant toute la durée de cette étape.
-- **Consolidation de l’histogramme** : Dans la troisième étape, d’autres plages peuvent être réduites s’il n’y a pas de perte importante d’informations. Le nombre d'étapes d'histogramme peut être inférieur au nombre de valeurs distinctes, même pour les colonnes comportant moins de 200 points de limite. Par conséquent, même si la colonne contient plus de 200 valeurs uniques, l’histogramme peut comporter moins de 200 étapes. Pour une colonne comprenant uniquement des valeurs uniques, l’histogramme consolidé comporte un minimum de trois étapes.
+- **Consolidation de l’histogramme** : Dans la troisième étape, d’autres plages peuvent être réduites s’il n’y a pas de perte importante d’informations. Le nombre d'étapes d'histogramme peut être inférieur au nombre de valeurs distinctes, même pour les colonnes comportant moins de 200 points de limite. Par conséquent, même si la colonne contient plus de 200 valeurs uniques, l’histogramme peut comporter moins de 200 étapes. Pour une colonne comprenant uniquement des valeurs uniques, l’histogramme consolidé comporte un minimum de trois étapes.
 
 > [!NOTE]
 > Si l’histogramme a été créé à l’aide de l’option SAMPLE plutôt qu’avec l’option FULLSCAN, les valeurs de *equal_rows*, *range_rows*, *distinct_range_rows* et  *average_range_rows* sont estimées, et n’ont donc pas besoin d’être des entiers.
@@ -85,10 +86,10 @@ Le vecteur de densité contient une densité pour chaque préfixe des colonnes d
 |(CustomerId, ItemId, Price)|Lignes avec des valeurs correspondantes pour CustomerId, ItemId et Price| 
 
 ### <a name="filtered-statistics"></a>Statistiques filtrées  
- Les statistiques filtrées peuvent améliorer les performances des requêtes qui effectuent des sélections dans des sous-ensembles bien définis de données. Les statistiques filtrées utilisent un prédicat de filtre pour sélectionner le sous-ensemble de données qui est inclus dans les statistiques. Les statistiques filtrées correctement conçues peuvent améliorer le plan d'exécution de requête par rapport aux statistiques de table complète. Pour plus d’informations sur le prédicat de filtre, consultez [CREATE STATISTICS &#40;Transact-SQL&#41;](../../t-sql/statements/create-statistics-transact-sql.md). Pour plus d'informations sur l'opportunité de créer des statistiques filtrées, consultez la section [Quand créer des statistiques](#CreateStatistics) .  
+ Les statistiques filtrées peuvent améliorer les performances des requêtes qui effectuent des sélections dans des sous-ensembles bien définis de données. Les statistiques filtrées utilisent un prédicat de filtre pour sélectionner le sous-ensemble de données qui est inclus dans les statistiques. Les statistiques filtrées correctement conçues peuvent améliorer le plan d'exécution de requête par rapport aux statistiques de table complète. Pour plus d’informations sur le prédicat de filtre, consultez [CREATE STATISTICS &#40;Transact-SQL&#41;](../../t-sql/statements/create-statistics-transact-sql.md). Pour plus d’informations sur l’opportunité de créer des statistiques filtrées, consultez la section [Quand créer des statistiques](#CreateStatistics) dans cet article.  
  
 ### <a name="statistics-options"></a>Options de statisques  
- Il existe trois options que vous pouvez définir qui affectent quand et comment les statistiques sont créées et mises à jour. Ces options sont définies au niveau de la base de données uniquement.  
+ Il existe trois options qui affectent quand et comment les statistiques sont créées et mises à jour. Ces options sont configurables au niveau de la base de données uniquement.  
   
 #### <a name="auto_create_statistics-option"></a><a name="AutoUpdateStats"></a>Option AUTO_CREATE_STATISTICS  
  Quand l’option de création automatique de statistiques [AUTO_CREATE_STATISTICS](../../t-sql/statements/alter-database-transact-sql-set-options.md#auto_create_statistics) est activée, l’optimiseur de requête crée les statistiques nécessaires sur les colonnes individuelles du prédicat de requête pour améliorer les estimations de cardinalité pour le plan de requête. Ces statistiques propres à une colonne sont créées sur les colonnes où ne figure pas déjà un [histogramme](#histogram) dans un objet de statistiques existant. L'option AUTO_CREATE_STATISTICS ne détermine pas si les statistiques sont créées pour des index. De même, cette option ne génère pas de statistiques filtrées. Elle s'applique exclusivement aux statistiques de colonne unique pour la table entière.  
@@ -113,7 +114,7 @@ ORDER BY s.name;
     * Si la cardinalité de la table affichait une valeur de 500 ou moins au moment de l’évaluation des statistiques, une mise à jour est effectuée toutes les 500 modifications.
     * Si la cardinalité de la table affichait une valeur supérieure à 500 au moment de l’évaluation des statistiques, une mise à jour est effectuée toutes les 500 modifications + 20 %.
 
-* À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et avec un [niveau de compatibilité de base de données](../../relational-databases/databases/view-or-change-the-compatibility-level-of-a-database.md) de 130, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise un seuil dynamique décroissant de mise à jour des statistiques qui s’ajuste en fonction du nombre de lignes contenues de la table. Il est obtenu en calculant la racine carrée du produit de 1 000 et de la cardinalité de la table actuelle. Par exemple, si votre table contient 2 millions de lignes, le calcul est le suivant : sqrt(1000 * 2000000) = 44721.359. Du fait de cette modification, les statistiques sur des tables volumineuses sont mises à jour plus fréquemment. Toutefois, si une base de données affiche un niveau de compatibilité inférieur à 130, le seuil [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] s’applique. ?
+* À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et avec un [niveau de compatibilité de base de données](../../relational-databases/databases/view-or-change-the-compatibility-level-of-a-database.md) de 130, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise un seuil dynamique décroissant de mise à jour des statistiques qui s’ajuste en fonction du nombre de lignes contenues de la table. Il est obtenu en calculant la racine carrée du produit de 1 000 et de la cardinalité de la table actuelle. Par exemple, si votre table contient 2 millions de lignes, le calcul est le suivant : sqrt(1000 * 2000000) = 44721.359. Du fait de cette modification, les statistiques sur des tables volumineuses sont mises à jour plus fréquemment. Toutefois, si une base de données affiche un niveau de compatibilité inférieur à 130, le seuil [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] s’applique. 
 
 > [!IMPORTANT]
 > Dans [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] à [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], ou dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures sous le [niveau de compatibilité de la base de données](../../relational-databases/databases/view-or-change-the-compatibility-level-of-a-database.md) 120 et inférieur, activez [trace flag 2371](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) pour que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise un seuil de mise à jour des statistiques décroissant et dynamique.
@@ -139,9 +140,13 @@ L’option de mise à jour asynchrone des statistiques [AUTO_UPDATE_STATISTICS_A
 > [!NOTE]
 > Pour définir une option de mise à jour des statistiques de manière asynchrone dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], sur la page *Options* de la fenêtre *Propriétés de la base de données*, les deux options *Mise à jour automatique des statistiques* et *Mise à jour automatique des statistiques de manière asynchrone* doivent être définies sur **True**.
   
-La mise à jour des statistiques peut être synchrone (par défaut) ou asynchrone. Dans le cas de la mise à jour synchrone des statistiques, les requêtes sont systématiquement compilées et exécutées avec des statistiques à jour ; si les statistiques sont obsolètes, l'optimiseur de requête attend que les statistiques soient mises à jour avant de compiler et d'exécuter les requêtes. Dans le cas de la mise à jour asynchrone des statistiques, les requêtes sont compilées avec les statistiques existantes, même si celles-ci sont obsolètes ; l'optimiseur de requête peut très bien choisir un plan de requête non optimal si les statistiques sont obsolètes au moment où les requêtes sont compilées. Les requêtes compilées à l'issue d'une mise à jour asynchrone ont l'avantage d'utiliser des statistiques mises à jour.  
-  
-Envisagez d'utiliser des statistiques synchrones lorsque vous effectuez des opérations qui modifient la distribution des données, telles que la troncation d'une table ou une mise à jour en bloc d'un fort pourcentage de lignes. Si vous ne mettez pas à jour les statistiques à l'issue de l'opération, l'utilisation de statistiques synchrones vous garantira que les statistiques sont à jour avant d'exécuter des requêtes sur les données modifiées.  
+La mise à jour des statistiques peut être synchrone (par défaut) ou asynchrone. 
+
+* Avec les mises à jour synchrones des statistiques, les requêtes sont toujours compilées et exécutées avec des statistiques à jour. Lorsque les statistiques sont obsolètes, l’optimiseur de requête attend les statistiques mises à jour avant de compiler et d’exécuter la requête. 
+
+* Avec les mises à jour asynchrones des statistiques, les requêtes sont compilées avec les statistiques existantes, même si celles-ci sont obsolètes. L’optimiseur de requête peut choisir un plan de requête non optimal si les statistiques sont obsolètes lors de la compilation de la requête. Les statistiques sont généralement mises à jour peu de temps après. Les requêtes compilées à l’issue des mises à jour des statistiques ont l’avantage d’utiliser les statistiques mises à jour, comme d’habitude.   
+
+Envisagez d'utiliser des statistiques synchrones lorsque vous effectuez des opérations qui modifient la distribution des données, telles que la troncation d'une table ou une mise à jour en bloc d'un fort pourcentage de lignes. Si vous ne mettez pas à jour manuellement les statistiques à l’issue de l’opération, l’utilisation de statistiques synchrones vous garantit que les statistiques sont à jour avant d’exécuter des requêtes sur les données modifiées.  
   
 Envisagez d'utiliser des statistiques asynchrones pour obtenir des temps de réponse des requêtes plus prévisibles pour les scénarios suivants :  
   
@@ -154,10 +159,13 @@ Envisagez d'utiliser des statistiques asynchrones pour obtenir des temps de rép
 
 La mise à jour asynchrone des statistiques est effectuée par une requête en arrière-plan. Lorsque la requête est prête à écrire des statistiques mises à jour dans la base de données, elle tente d’acquérir un verrou de modification de schéma sur l’objet de métadonnées des statistiques. Si une autre session détient déjà un verrou sur le même objet, la mise à jour asynchrone des statistiques est bloquée jusqu’à ce que le verrou de modification de schéma puisse être acquis. De même, les sessions qui doivent acquérir un verrou de stabilité de schéma sur l’objet de métadonnées des statistiques pour compiler une requête peuvent être bloquées par la session d’arrière-plan de mise à jour asynchrone des statistiques, qui détient déjà ou attend l’acquisition du verrou de modification de schéma. Par conséquent, pour les charges de travail avec des compilations de requêtes très fréquentes et des mises à jour fréquentes de statistiques, l’utilisation de statistiques asynchrones peut augmenter la probabilité de problèmes d’accès concurrentiel dus à un blocage des verrous.
 
-Dans Azure SQL Database, vous pouvez éviter les éventuels problèmes d’accès concurrentiel à l’aide de la mise à jour asynchrone des statistiques si vous activez la [configuration à l’échelle de la base de données](../../t-sql/statements/alter-database-scoped-configuration-transact-sql.md) ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY. Lorsque cette configuration est activée, la requête en arrière-plan attend d’acquérir le verrou de modification de schéma sur une file d’attente basse priorité distincte, ce qui permet à d’autres requêtes de continuer à compiler des requêtes avec des statistiques existantes. Une fois qu’aucune autre session ne détient un verrou sur l’objet de métadonnées des statistiques, la requête en arrière-plan acquiert le verrou de modification de schéma et met à jour les statistiques. Dans le cas improbable où la requête en arrière-plan ne peut pas acquérir le verrou dans un délai de plusieurs minutes, la mise à jour des statistiques asynchrones est abandonnée et les statistiques ne sont pas mises à jour tant qu’une autre mise à jour automatique des statistiques n’est pas déclenchée, ou jusqu’à ce que les statistiques soient [mises à jour manuellement](update-statistics.md).
+Dans Azure SQL Database et Azure SQL Managed Instance, vous pouvez éviter les éventuels problèmes d’accès concurrentiel à l’aide de la mise à jour asynchrone des statistiques si vous activez la [configuration à l’échelle de la base de données](../../t-sql/statements/alter-database-scoped-configuration-transact-sql.md) ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY. Lorsque cette configuration est activée, la requête en arrière-plan attend d’acquérir le verrou de modification de schéma (Sch-M) sur une file d’attente basse priorité distincte, ce qui permet à d’autres requêtes de continuer à compiler des requêtes avec des statistiques existantes. Une fois qu’aucune autre session ne détient un verrou sur l’objet de métadonnées des statistiques, la requête en arrière-plan acquiert le verrou de modification de schéma et met à jour les statistiques. Dans le cas improbable où la requête en arrière-plan ne peut pas acquérir le verrou dans un délai de plusieurs minutes, la mise à jour des statistiques asynchrones est abandonnée et les statistiques ne sont pas mises à jour tant qu’une autre mise à jour automatique des statistiques n’est pas déclenchée, ou jusqu’à ce que les statistiques soient [mises à jour manuellement](update-statistics.md).
+
+> [!Note]
+> L’option de configuration délimitée aux bases de données ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY est maintenant disponible dans Azure SQL Database et Azure SQL Managed Instance. Il est prévu qu’elle le soit dans SQL Server vNext. 
 
 #### <a name="incremental"></a>INCREMENTAL  
- Quand l’option INCREMENTAL de CREATE STATISTICS est définie sur ON, les statistiques sont créées pour chaque partition. Si la valeur est OFF, l'arborescence des statistiques est supprimée et [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] recalcule les statistiques. La valeur par défaut est OFF. Ce paramètre remplace la propriété INCREMENTAL de niveau base de données. Pour plus d’informations sur la création de statistiques incrémentielles, consultez [CREATE STATISTICS &#40;Transact-SQL&#41;](../../t-sql/statements/create-statistics-transact-sql.md). Pour plus d’informations sur la création automatique de statistiques par partition, consultez [Propriétés de la base de données &#40;page Options&#41;](../../relational-databases/databases/database-properties-options-page.md#automatic) et [Options ALTER DATABASE SET &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md). 
+ Quand l’option INCREMENTAL de CREATE STATISTICS est définie sur ON, les statistiques sont créées pour chaque partition. Si la valeur est OFF, l’arborescence des statistiques est supprimée et [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] recalcule les statistiques. La valeur par défaut est OFF. Ce paramètre remplace la propriété INCREMENTAL de niveau base de données. Pour plus d’informations sur la création de statistiques incrémentielles, consultez [CREATE STATISTICS &#40;Transact-SQL&#41;](../../t-sql/statements/create-statistics-transact-sql.md). Pour plus d’informations sur la création automatique de statistiques par partition, consultez [Propriétés de la base de données &#40;page Options&#41;](../../relational-databases/databases/database-properties-options-page.md#automatic) et [Options ALTER DATABASE SET &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md). 
   
  Lorsque de nouvelles partitions sont ajoutées à une table volumineuse, les statistiques doivent être mises à jour afin d'inclure les nouvelles partitions. Cependant, la durée nécessaire pour analyser la table entière (option FULLSCAN ou SAMPLE) peut être assez longue. En outre, l'analyse la table entière n'est pas nécessaire car seules les statistiques sur les nouvelles partitions peuvent être requises. L'option incrémentielle crée et stocke des statistiques par partition, et une fois la mise à jour terminée, seules sont actualisées les statistiques sur les partitions qui ont besoin de nouvelles statistiques  
   
@@ -201,7 +209,7 @@ Si les colonnes figurent déjà dans le même index, l'objet de statistiques mul
   
 Lors de la création de statistiques multicolonnes, l'ordre des colonnes dans la définition de l'objet de statistiques a une incidence sur l'efficacité des densités lorsqu'il s'agit de réaliser des estimations de cardinalité. L'objet de statistiques stocke des densités pour chaque préfixe de colonnes de clés contenu dans la définition de l'objet de statistiques. Pour plus d’informations sur les densités, consultez la section [Densité](#density) dans cette page.  
   
-Pour créer des densités utiles aux estimations de cardinalité, les colonnes du prédicat de requête doivent correspondre à l'un des préfixes de colonnes contenus dans la définition de l'objet de statistiques. Par exemple, le code suivant crée un objet de statistiques multicolonnes sur les colonnes `LastName`, `MiddleName`et `FirstName`.  
+Pour créer des densités utiles aux estimations de cardinalité, les colonnes du prédicat de requête doivent correspondre à l'un des préfixes de colonnes contenus dans la définition de l'objet de statistiques. L’exemple suivant crée un objet de statistiques multicolonnes sur les colonnes `LastName`, `MiddleName` et `FirstName`.  
   
 ```sql  
 USE AdventureWorks2012;  
@@ -390,7 +398,7 @@ GO
 ```  
   
 ### <a name="improving-cardinality-estimates-with-plan-guides"></a>Amélioration des estimations de cardinalité au moyen de repères de plan  
- Pour certaines applications, les recommandations en matière de conception de requêtes peuvent ne pas s'appliquer, soit parce que vous ne pouvez pas modifier la requête, soit parce que l'utilisation de l'indicateur de requête RECOMPILE peut entraîner un nombre trop important de recompilations. Vous pouvez utiliser des repères de plan pour spécifier d'autres indicateurs, tels que USE PLAN, dans le but de contrôler le comportement de la requête, en attendant de trouver une solution avec l'éditeur de l'application. Pour plus d'informations sur les repères de plan, consultez [Plan Guides](../../relational-databases/performance/plan-guides.md).  
+ Pour certaines applications, les recommandations en conception de requêtes peuvent ne pas s'appliquer, soit parce que vous ne pouvez pas modifier la requête, soit parce que l’indicateur de requête RECOMPILE risque d’entraîner un nombre trop important de recompilations. Vous pouvez utiliser des repères de plan pour spécifier d'autres indicateurs, tels que USE PLAN, dans le but de contrôler le comportement de la requête, en attendant de trouver une solution avec l'éditeur de l'application. Pour plus d'informations sur les repères de plan, consultez [Plan Guides](../../relational-databases/performance/plan-guides.md).  
   
   
 ## <a name="see-also"></a>Voir aussi  

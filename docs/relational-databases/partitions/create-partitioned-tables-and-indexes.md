@@ -2,7 +2,7 @@
 description: Créer des tables et des index partitionnés
 title: Créer des tables et des index partitionnés | Microsoft Docs
 ms.custom: ''
-ms.date: 03/14/2017
+ms.date: 1/5/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
@@ -30,12 +30,12 @@ ms.assetid: 7641df10-1921-42a7-ba6e-4cb03b3ba9c8
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 791c2fa9d0ea4aad3c59f0edbafb2a28a2585d25
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 387a2f88afd22004f7146384ce29ddc2ba2f2da7
+ms.sourcegitcommit: 629229a7c33a3ed99db63b89127bb016449f7d3d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464850"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97952048"
 ---
 # <a name="create-partitioned-tables-and-indexes"></a>Créer des tables et des index partitionnés
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -50,6 +50,9 @@ ms.locfileid: "97464850"
 3.  Créez un schéma de partition qui mappe les partitions d'une table ou d'un index partitionné(e) avec les nouveaux groupes de fichiers.  
   
 4.  Créez ou modifiez une table ou un index et spécifiez le schéma de partition comme emplacement de stockage.  
+ 
+> [!NOTE]
+> Dans Azure [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)], seuls les groupes de fichiers primaires sont pris en charge.  
   
  **Dans cette rubrique**  
   
@@ -96,7 +99,7 @@ ms.locfileid: "97464850"
 3.  Sous **Lignes**, cliquez sur **Ajouter**. Dans la nouvelle ligne, entrez le nom du groupe de fichiers.  
   
     > [!WARNING]  
-    >  Vous devez toujours avoir un groupe de fichiers supplémentaire en plus du nombre de groupes de fichiers spécifié pour les valeurs limites lorsque vous créez des partitions.  
+    >  Quand vous spécifiez plusieurs groupes de fichiers, vous devez toujours avoir un groupe de fichiers supplémentaire en plus du nombre de groupes de fichiers spécifié pour les valeurs limites lorsque vous créez des partitions.  
   
 4.  Continuez à ajouter des lignes jusqu'à ce que vous ayez créé tous les groupes de fichiers pour la table partitionnée.  
   
@@ -138,7 +141,7 @@ ms.locfileid: "97464850"
   
      Après avoir complété cette page, cliquez sur **Suivant**.  
   
-6.  Sur la page **Associer les partitions** , sous **Plage**, sélectionnez **Limite gauche** ou **Limite droite** pour spécifier s'il faut inclure la valeur limite la plus élevée ou la plus basse dans chaque groupe de fichiers que vous créez. Vous devez toujours entrer un groupe de fichiers supplémentaire en plus du nombre de groupes de fichiers spécifié pour les valeurs limites lorsque vous créez des partitions.  
+6.  Sur la page **Associer les partitions** , sous **Plage**, sélectionnez **Limite gauche** ou **Limite droite** pour spécifier s'il faut inclure la valeur limite la plus élevée ou la plus basse dans chaque groupe de fichiers que vous créez. Quand vous spécifiez plusieurs groupes de fichiers, vous devez toujours entrer un groupe de fichiers supplémentaire en plus du nombre de groupes de fichiers spécifié pour les valeurs limites lorsque vous créez des partitions.  
   
      Dans la grille **Sélectionnez les groupes de fichiers et spécifiez les valeurs limites** , sous **Groupe de fichiers**, sélectionnez le groupe de fichiers dans lequel vous souhaitez partitionner vos données. Sous **Limite**, entrez la valeur limite pour chaque groupe de fichiers. Si la valeur limite reste vide, la fonction de partition mappe la totalité de la table ou de l'index en une seule partition en utilisant le nom de la fonction de partition.  
   
@@ -345,6 +348,34 @@ ms.locfileid: "97464850"
         ON myRangePS1 (col1) ;  
     GO  
     ```  
+
+
+#### <a name="to-create-a-partitioned-table-in-azure-sqldbesa"></a>Pour créer une table partitionnée dans Azure [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)]
+
+Dans Azure [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)], l’ajout de fichiers et de groupes de fichiers n’est pas pris en charge, mais le partitionnement de table est pris en charge en partitionnant dans le groupe de fichiers PRIMARY uniquement.
+  
+1.  Dans l' **Explorateur d'objets**, connectez-vous à une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)].  
+  
+1.  Dans la barre d'outils standard, cliquez sur **Nouvelle requête**.  
+  
+1.  Copiez et collez l'exemple suivant dans la fenêtre de requête, puis cliquez sur **Exécuter**. Cet exemple crée une fonction de partition et un schéma de partition. Une nouvelle table est créée avec le schéma de partition spécifié comme emplacement de stockage. 
+
+    ```
+    -- Creates a partition function called myRangePF1 that will partition a table into four partitions  
+    CREATE PARTITION FUNCTION myRangePF1 (int)  
+        AS RANGE LEFT FOR VALUES (1, 100, 1000) ;  
+    GO  
+    -- Creates a partition scheme called myRangePS1 that applies myRangePF1 to the PRIMARY filegroup 
+    CREATE PARTITION SCHEME myRangePS1  
+        AS PARTITION myRangePF1  
+        ALL TO ('PRIMARY') ;  
+    GO  
+    -- Creates a partitioned table called PartitionTable that uses myRangePS1 to partition col1  
+    CREATE TABLE PartitionTable (col1 int PRIMARY KEY, col2 char(10))  
+        ON myRangePS1 (col1) ;  
+    GO
+    ```  
+
   
 #### <a name="to-determine-if-a-table-is-partitioned"></a>Pour déterminer si une table est partitionnée  
   

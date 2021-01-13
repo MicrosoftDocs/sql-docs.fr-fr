@@ -11,12 +11,12 @@ ms.assetid: 3f08087e-e532-416c-8caa-e0ec88c57596
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: be6c23f2943a437565ead1512922408e609c0300
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c309c86f4f6609f1bd5383d311e1ce5781350fd9
+ms.sourcegitcommit: 3ec49252e82590de0fe559a8574606ae213f6f3b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97438818"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975434"
 ---
 # <a name="complete-the-database-engine-upgrade"></a>Mise à niveau du moteur de base de données
 
@@ -28,7 +28,7 @@ Après la mise à niveau du [!INCLUDE[ssDE](../../includes/ssde-md.md)], effectu
   
 - **Sauvegardez vos bases de données :** effectuez une sauvegarde complète de chaque base de données.  
 
-- **Activez les nouvelles fonctionnalités :** dans SQL Server 2016 et SQL Server 2017, certaines modifications sont activées uniquement une fois que le niveau DATABASE_COMPATIBILITY d’une base de données a été changé à 130 ou plus.  Pour obtenir plus d’informations et accéder au flux de travail recommandé, consultez [Modifier le mode de compatibilité de base de données et utiliser le magasin des requêtes](../../database-engine/install-windows/change-the-database-compatibility-mode-and-use-the-query-store.md). Si votre base de données comporte des tables à mémoire optimisée créées dans SQL Server 2014, passez en revue les [Statistiques pour les tables optimisées en mémoire](../../relational-databases/in-memory-oltp/statistics-for-memory-optimized-tables.md).
+- **Activez les nouvelles fonctionnalités :** dans SQL Server 2016, 2017 et 2019, certaines modifications sont activées uniquement une fois que le niveau DATABASE_COMPATIBILITY d’une base de données est passé à 130 ou plus.  Pour obtenir plus d’informations et accéder au flux de travail recommandé, consultez [Modifier le mode de compatibilité de base de données et utiliser le magasin des requêtes](../../database-engine/install-windows/change-the-database-compatibility-mode-and-use-the-query-store.md). Si votre base de données comporte des tables à mémoire optimisée créées dans SQL Server 2014, passez en revue les [Statistiques pour les tables optimisées en mémoire](../../relational-databases/in-memory-oltp/statistics-for-memory-optimized-tables.md).
   
 - **Integration Services :**  
   
@@ -36,7 +36,7 @@ Après la mise à niveau du [!INCLUDE[ssDE](../../includes/ssde-md.md)], effectu
   
 - **Reporting Services :** pour la mise à niveau d’une nouvelle installation, restaurez les clés de chiffrement de Reporting Services. Pour plus d’informations, consultez [Back Up and Restore Reporting Services Encryption Keys](../../reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys.md).  
   
-- **Master Data Services :**  mettez à niveau le schéma de la base de données MDS et créez l’application web de SQL Server 2017. Pour plus d’informations, consultez [Upgrade Master Data Services](../../database-engine/install-windows/upgrade-master-data-services.md).  
+- **Master Data Services :**  mettez à niveau le schéma de la base de données MDS et créez l’application web de SQL Server 2019. Pour plus d’informations, consultez [Upgrade Master Data Services](../../database-engine/install-windows/upgrade-master-data-services.md).  
   
 - **Data Quality Services :** mettez à niveau le schéma de bases de données DQS et vérifiez la mise à niveau du schéma de bases de données DQS. Pour plus d’informations, consultez [Upgrade Data Quality Services](../../database-engine/install-windows/upgrade-data-quality-services.md).  
   

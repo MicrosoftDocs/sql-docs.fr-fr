@@ -17,12 +17,12 @@ ms.assetid: 36af59d7-ce96-4a02-8598-ffdd78cdc948
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: cc6e5734edbf7203f98d1b7fc7a685e699aaa635
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: bbad843d482945a29cb03fde9545b1c19fb354f9
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481430"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98098391"
 ---
 # <a name="contained-databases"></a>Bases de données autonomes
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -128,15 +128,13 @@ ms.locfileid: "97481430"
 ##  <a name="limitations"></a><a name="Limitations"></a> Limitations  
  Les bases de données partiellement autonomes n'autorisent pas les fonctionnalités suivantes.  
   
--   Les bases de données partiellement autonomes ne peuvent pas utiliser de réplication, de capture des données modifiées ou de suivi des modifications.  
+-   Réplication, capture des changements de données ou suivi des modifications.  
   
 -   Procédures numérotées  
   
 -   les objets liés par schéma qui dépendent de fonctions intégrées avec des modifications de classement ;  
   
--   la modification de liaison résultant des modifications de classement, notamment les références aux objets, les colonnes, les symboles ou les types.  
-  
--   la réplication, la capture de données modifiées et le suivi des modifications.  
+-   la modification de liaison résultant des modifications de classement, notamment les références aux objets, les colonnes, les symboles ou les types.
   
 > [!WARNING]  
 >  Les procédures stockées temporaires sont actuellement autorisées. Étant donné que les procédures stockées temporaires violent l’autonomie, il ne faut pas s'attendre à leur prise en charge dans les futures versions d'une base de données autonome.  

@@ -11,12 +11,12 @@ ms.assetid: e1792eeb-2874-4653-b20e-3063f4eb4e5d
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: b394c18d1db40bec24bfa0d676bb74b66d3b1faa
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 127d1a0bcac97d2b802460549b38c79012f71329
+ms.sourcegitcommit: 3ec49252e82590de0fe559a8574606ae213f6f3b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460722"
+ms.lasthandoff: 01/07/2021
+ms.locfileid: "97975421"
 ---
 # <a name="considerations-for-installing-sql-server-using-sysprep"></a>Considérations relatives à l'installation de SQL Server à l'aide de SysPrep
 
@@ -69,7 +69,7 @@ Vous pouvez préparer plusieurs instances pour des installations côte à côte 
   
 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et Writer [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont préparés automatiquement lorsque vous préparez une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Ils sont finalisés lorsque vous finalisez l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à l'aide de l'étape Finaliser l'image.  
   
-Pour plus d’informations sur les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prises en charge, consultez [Éditions et fonctionnalités prises en charge de SQL Server 2017](../../sql-server/editions-and-components-of-sql-server-2017.md).  
+Pour plus d’informations sur les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prises en charge, consultez [Éditions et fonctionnalités prises en charge de SQL Server 2017](../../sql-server/editions-and-components-of-sql-server-2017.md) et [SQL Server 2019](../../sql-server/editions-and-components-of-sql-server-version-15.md).  
   
 Vous pouvez effectuer une mise à niveau d'édition lors de la configuration d'une instance préparée de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Cette option n'est pas prise en charge pour les éditions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Express.  
   

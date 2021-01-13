@@ -1,8 +1,6 @@
 ---
+title: Clause FROM plus JOIN, APPLY, PIVOT (T-SQL)
 description: Clause FROM plus JOIN, APPLY, PIVOT (Transact-SQL)
-title: 'FROM : JOIN, APPLY, PIVOT (T-SQL) | Microsoft Docs'
-ms.custom: ''
-ms.date: 06/01/2019
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
@@ -13,6 +11,8 @@ f1_keywords:
 - FROM_TSQL
 - FROM
 - JOIN_TSQL
+- OUTER_JOIN_TSQL
+- INNER_JOIN_TSQL
 - CROSS_TSQL
 - CROSS_APPLY_TSQL
 - APPLY_TSQL
@@ -34,13 +34,15 @@ helpviewer_keywords:
 ms.assetid: 36b19e68-94f6-4539-aeb1-79f5312e4263
 author: VanMSFT
 ms.author: vanto
+ms.custom: ''
+ms.date: 06/01/2019
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 188610b1f6eef0835bf20f7b86e99647df699539
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 70cda7e45f17bb1dbeeaa69178e0538296572ae7
+ms.sourcegitcommit: b652ff2f0f7edbb5bd2f8fdeac56348e4d84f8fc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464220"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98112671"
 ---
 # <a name="from-clause-plus-join-apply-pivot-transact-sql"></a>Clause FROM plus JOIN, APPLY, PIVOT (Transact-SQL)
 
@@ -56,9 +58,9 @@ La clause FROM est généralement obligatoire sur l’instruction SELECT. L’ex
 
 Cet article aborde également les mots clés suivants qui peuvent être utilisés sur la clause FROM :
 
-- JOIN
+- [JOIN](../../relational-databases/performance/joins.md)
 - APPLY
-- PIVOT
+- [PIVOT](from-using-pivot-and-unpivot.md)
 
 ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
 
@@ -199,20 +201,14 @@ FROM { <table_source> [ ,...n ] }
  WITH (\<table_hint> )  
  Spécifie que l'optimiseur de requête utilise une stratégie d'optimisation ou de verrouillage avec cette table et pour cette instruction. Pour plus d’informations, consultez [Indicateurs de table &#40;Transact-SQL&#41;](../../t-sql/queries/hints-transact-sql-table.md).  
   
- *rowset_function*  
-
+*rowset_function*  
 **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] et versions ultérieures et [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
-
-  
- Spécifie l'une des fonctions d'ensemble de lignes, par exemple OPENROWSET, qui retourne un objet pouvant être utilisé à la place d'une référence de table. Pour plus d’informations sur une liste de fonctions d’ensemble de lignes, consultez [Fonctions d’ensemble de lignes &#40;Transact-SQL&#41;](../functions/opendatasource-transact-sql.md).  
+Spécifie l'une des fonctions d'ensemble de lignes, par exemple OPENROWSET, qui retourne un objet pouvant être utilisé à la place d'une référence de table. Pour plus d’informations sur une liste de fonctions d’ensemble de lignes, consultez [Fonctions d’ensemble de lignes &#40;Transact-SQL&#41;](../functions/opendatasource-transact-sql.md).  
   
  L'utilisation des fonctions OPENROWSET et OPENQUERY pour spécifier un objet distant dépend des fonctionnalités du fournisseur OLE DB qui accède à l'objet.  
   
  *bulk_column_alias*  
-
 **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] et versions ultérieures et [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
-
-  
  Alias facultatif qui peut remplacer un nom de colonne dans le jeu de résultats. Les alias de colonne sont autorisés uniquement dans les instructions SELECT qui utilisent la fonction OPENROWSET avec l'option BULK. Quand vous utilisez *bulk_column_alias*, spécifiez un alias pour chaque colonne de table dans le même ordre que les colonnes du fichier.  
   
 > [!NOTE]  
@@ -221,12 +217,9 @@ FROM { <table_source> [ ,...n ] }
  *user_defined_function*  
  Spécifie une fonction table.  
   
- OPENXML \<openxml_clause>  
-
+OPENXML \<openxml_clause>  
 **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] et versions ultérieures et [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
-
-  
- Fournit une vue de l'ensemble de lignes d'un document XML. Pour plus d’informations, consultez [OPENXML &#40;Transact-SQL&#41;](../../t-sql/functions/openxml-transact-sql.md).  
+Fournit une vue de l'ensemble de lignes d'un document XML. Pour plus d’informations, consultez [OPENXML &#40;Transact-SQL&#41;](../../t-sql/functions/openxml-transact-sql.md).  
   
  *derived_table*  
  Sous-requête qui récupère les lignes de la base de données. *derived_table* est utilisé comme entrée de la requête externe.  
@@ -236,17 +229,12 @@ FROM { <table_source> [ ,...n ] }
  *column_alias*  
  Alias facultatif qui peut remplacer un nom de colonne dans le jeu de résultats de la table dérivée. Utilisez un alias de colonne pour chaque colonne de la liste de sélection et placez l'intégralité de la liste d'alias de colonnes entre parenthèses.  
   
- *table_or_view_name* FOR SYSTEM_TIME \<system_time>  
-
-**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures et [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
-
-  
- Spécifie qu’une version spécifique des données est retournée à partir de la table temporelle spécifiée et de la table d’historique associée avec versions gérées par le système  
+ *table_or_view_name* FOR SYSTEM_TIME \<system_time>
+**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et ultérieur et [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
+Spécifie qu’une version spécifique des données est retournée à partir de la table temporelle spécifiée et de la table d’historique associée avec versions gérées par le système  
   
 ### <a name="tablesample-clause"></a>Clause Tablesample
-**S’applique à :** SQL Server, SQL Database 
- 
- Spécifie qu'un exemple de données est retourné à partir de la table. L'exemple peut être approximatif. Cette clause peut être utilisée sur toute table primaire ou jointe dans une instruction SELECT ou UPDATE. TABLESAMPLE ne peut pas être spécifié avec des vues.  
+**S’applique à :** SQL Server, SQL Database Spécifie qu'un exemple de données est retourné à partir de la table. L'exemple peut être approximatif. Cette clause peut être utilisée sur toute table primaire ou jointe dans une instruction SELECT ou UPDATE. TABLESAMPLE ne peut pas être spécifié avec des vues.  
   
 > [!NOTE]  
 >  Lorsque vous utilisez TABLESAMPLE sur des bases de données mises à niveau vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], le niveau de compatibilité de la base de données est défini à 110 ou plus, PIVOT n'est pas autorisé dans une requête d'expression de table commune récursive (CTE). Pour plus d’informations, consultez [Niveau de compatibilité ALTER DATABASE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-compatibility-level.md).  
@@ -381,35 +369,24 @@ ON (p.ProductID = v.ProductID);
  UNPIVOT \<unpivot_clause>  
  Spécifie que la table d’entrée est réduite de plusieurs colonnes dans *column_list* à une seule colonne appelée *pivot_column*. Pour plus d’informations sur les opérateurs PIVOT et UNPIVOT, consultez [Utilisation des opérateurs PIVOT et UNPIVOT](../../t-sql/queries/from-using-pivot-and-unpivot.md).  
   
- AS OF \<date_time>  
-
+AS OF \<date_time>  
 **S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures et [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
-
+Renvoie une table avec un seul enregistrement par ligne contenant les valeurs qui étaient réelles (actuelles) au moment dans le passé spécifié. En interne, une union est effectuée entre la table temporelle et sa table d’historique. Les résultats sont filtrés de manière à retourner les valeurs de la ligne qui étaient valides au moment spécifié par le paramètre *\<date_time>* . La valeur d’une ligne est considérée comme valide si *system_start_time_column_name* a une valeur inférieure ou égale à celle du paramètre *\<date_time>* , et si *system_end_time_column_name* a une valeur supérieure à celle du paramètre *\<date_time>* .   
   
- Renvoie une table avec un seul enregistrement par ligne contenant les valeurs qui étaient réelles (actuelles) au moment dans le passé spécifié. En interne, une union est effectuée entre la table temporelle et sa table d’historique. Les résultats sont filtrés de manière à retourner les valeurs de la ligne qui étaient valides au moment spécifié par le paramètre *\<date_time>* . La valeur d’une ligne est considérée comme valide si *system_start_time_column_name* a une valeur inférieure ou égale à celle du paramètre *\<date_time>* , et si *system_end_time_column_name* a une valeur supérieure à celle du paramètre *\<date_time>* .   
+FROM \<start_date_time> TO \<end_date_time>
+**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et ultérieur et [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].
+Retourne une table avec les valeurs de toutes les versions d’enregistrement qui étaient actives pendant l’intervalle de temps spécifié, sans tenir compte du fait qu’elles soient devenues actives avant la valeur du paramètre *\<start_date_time>* pour l’argument FROM ou qu’elles aient cessé d’être actives après la valeur du paramètre *\<end_date_time>* pour l’argument TO. En interne, une union est effectuée entre la table temporelle et sa table d’historique. Les résultats sont filtrés de manière à renvoyer les valeurs de toutes les versions de ligne qui étaient actives à tout moment de l’intervalle spécifié. Les lignes qui sont devenues actives exactement sur la limite inférieure définie par le point de terminaison FROM sont incluses. Celles qui sont devenus actives exactement sur la limite supérieure définie par le point de terminaison TO ne sont pas incluses.  
   
- FROM \<start_date_time> TO \<end_date_time>
-
-**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures et [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].
-
-  
- Retourne une table avec les valeurs de toutes les versions d’enregistrement qui étaient actives pendant l’intervalle de temps spécifié, sans tenir compte du fait qu’elles soient devenues actives avant la valeur du paramètre *\<start_date_time>* pour l’argument FROM ou qu’elles aient cessé d’être actives après la valeur du paramètre *\<end_date_time>* pour l’argument TO. En interne, une union est effectuée entre la table temporelle et sa table d’historique. Les résultats sont filtrés de manière à renvoyer les valeurs de toutes les versions de ligne qui étaient actives à tout moment de l’intervalle spécifié. Les lignes qui sont devenues actives exactement sur la limite inférieure définie par le point de terminaison FROM sont incluses. Celles qui sont devenus actives exactement sur la limite supérieure définie par le point de terminaison TO ne sont pas incluses.  
-  
- BETWEEN \<start_date_time> AND \<end_date_time>  
-
+BETWEEN \<start_date_time> AND \<end_date_time>  
 **S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures et [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
+Identique à la description de **FROM \<start_date_time> TO \<end_date_time>** ci-dessus, sauf que les lignes qui sont devenues actives au niveau de la limite supérieure définie par le point de terminaison \<end_date_time> sont incluses.  
   
- Identique à la description de **FROM \<start_date_time> TO \<end_date_time>** ci-dessus, sauf que les lignes qui sont devenues actives au niveau de la limite supérieure définie par le point de terminaison \<end_date_time> sont incluses.  
-  
- CONTAINED IN (\<start_date_time> , \<end_date_time>)  
-
+CONTAINED IN (\<start_date_time> , \<end_date_time>)  
 **S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures et [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
-
+Renvoie une table avec les valeurs de toutes les versions d’enregistrement qui ont été ouvertes et fermées dans l’intervalle de temps spécifié défini par les deux valeurs datetime de l’argument CONTAINED IN. Les lignes qui sont devenues actives exactement sur la limite inférieure ou qui ont cessé d’être actives exactement sur la limite supérieure sont incluses.  
   
- Renvoie une table avec les valeurs de toutes les versions d’enregistrement qui ont été ouvertes et fermées dans l’intervalle de temps spécifié défini par les deux valeurs datetime de l’argument CONTAINED IN. Les lignes qui sont devenues actives exactement sur la limite inférieure ou qui ont cessé d’être actives exactement sur la limite supérieure sont incluses.  
-  
- ALL  
- Retourne une table contenant les valeurs de toutes les lignes de la table actuelle et la table d’historique.  
+ALL  
+Retourne une table contenant les valeurs de toutes les lignes de la table actuelle et la table d’historique.  
   
 ## <a name="remarks"></a>Notes  
  La clause FROM prend en charge la syntaxe SQL-92 pour les tables jointes et les tables dérivées. La syntaxe SQL-92 fournit les opérateurs de jointure INNER, LEFT OUTER, RIGHT OUTER, FULL OUTER et CROSS.  
@@ -635,8 +612,7 @@ GO
 ### <a name="m-using-for-system_time"></a>M. Utilisation de FOR SYSTEM_TIME  
   
 **S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures et [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
-  
- L’exemple suivant utilise l’argument FOR SYSTEM_TIME AS OF date_time_literal_or_variable pour retourner les lignes de la table qui étaient actives à la date du 1er janvier 2014.  
+L’exemple suivant utilise l’argument FOR SYSTEM_TIME AS OF date_time_literal_or_variable pour retourner les lignes de la table qui étaient actives à la date du 1er janvier 2014.  
   
 ```sql
 SELECT DepartmentNumber,   
@@ -648,7 +624,7 @@ FOR SYSTEM_TIME AS OF '2014-01-01'
 WHERE ManagerID = 5;
 ```  
   
- L’exemple suivant utilise l’argument FOR SYSTEM_TIME FROM date_time_literal_or_variable TO date_time_literal_or_variable pour retourner toutes les lignes qui étaient actives pendant la période entre le 1er janvier 2013 et le 1er janvier 2014, limite supérieure exclue.  
+L’exemple suivant utilise l’argument FOR SYSTEM_TIME FROM date_time_literal_or_variable TO date_time_literal_or_variable pour retourner toutes les lignes qui étaient actives pendant la période entre le 1er janvier 2013 et le 1er janvier 2014, limite supérieure exclue.  
   
 ```sql
 SELECT DepartmentNumber,   

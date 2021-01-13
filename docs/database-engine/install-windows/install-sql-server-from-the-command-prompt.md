@@ -83,14 +83,14 @@ author: cawrites
 ms.author: chadam
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 07/26/2019
+ms.date: 01/07/2020
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 6d815a88b9ac185871ed12b8192f6a5a7741f23a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: f3d0be0d607a8f6a810e9d1f24fbbbff1dc11a69
+ms.sourcegitcommit: d681796e8c012eca2d9629d3b816749e9f50f868
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440240"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98005366"
 ---
 # <a name="install-sql-server-from-the-command-prompt"></a>Installer SQL Server à partir de l'invite de commandes
 
@@ -832,7 +832,7 @@ setup.exe /q /ACTION=RemoveNode /INSTANCENAME="<Insert Instance Name>" [/INDICAT
 
 
 ##  <a name="feature-parameters"></a><a name="Feature"></a> Paramètres de fonctionnalités  
- Pour installer des fonctionnalités spécifiques, utilisez le paramètre /FEATURES et spécifiez la fonctionnalité parent ou les valeurs de fonctionnalités répertoriées dans le tableau suivant. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de SQL Server, consultez [Éditions et fonctionnalités prises en charge pour [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]](../../sql-server/editions-and-supported-features-for-sql-server-2016.md). 
+ Pour installer des fonctionnalités spécifiques, utilisez le paramètre /FEATURES et spécifiez la fonctionnalité parent ou les valeurs de fonctionnalités répertoriées dans le tableau suivant. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de SQL Server, consultez [Éditions et fonctionnalités prises en charge pour [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]](../../sql-server/editions-and-components-of-sql-server-2016.md), [Éditions et fonctionnalités prises en charge pour [!INCLUDE[ssSQLv14](../../includes/sssqlv14-md.md)]](../../sql-server/editions-and-components-of-sql-server-2017.md) ou [Éditions et fonctionnalités prises en charge pour [!INCLUDE[ssSQLv15](../../includes/sssqlv15-md.md)]](../../sql-server/editions-and-components-of-sql-server-version-15.md).
   
 |Paramètre de fonctionnalité parent|Paramètre de fonctionnalité|Description|  
 |:---|:---|:---|  
@@ -845,9 +845,9 @@ setup.exe /q /ACTION=RemoveNode /INSTANCENAME="<Insert Instance Name>" [/INDICAT
 ||PolyBaseCore | À compter de SQL Server 2019, associez à **PolyBase** pour installer la technologie Polybase qui permet d’effectuer des requêtes véritablement intégrées sur Oracle, Teradata, SQL Server, et d’autres données relationnelles et non relationnelles, en utilisant des instructions T-SQL standard. |
 || PolyBaseJava | À compter de SQL Server 2019, associez à **PolyBase** pour installer le connecteur PolyBase Java qui permet des requêtes véritablement intégrées sur des données HDFS en utilisant des instructions T-SQL standard.
 ||AdvancedAnalytics |Installe [SQL Server Machine Learning Services](../../machine-learning/install/sql-machine-learning-services-windows-install.md) ou [SQL Server 2016 R Services (dans la base de données)](../../machine-learning/install/sql-r-services-windows-install.md).|  
-||SQL_INST_MR |S’applique à [SQL Server Machine Learning Services](../../machine-learning/install/sql-machine-learning-services-windows-install.md). Appairez avec **AdvancedAnalytics** pour installer R Open et des packages R propriétaires.|  
-||SQL_INST_MPY|S’applique à [SQL Server Machine Learning Services](../../machine-learning/install/sql-machine-learning-services-windows-install.md). Appairez avec **AdvancedAnalytics** pour installer Anaconda et des packages Python propriétaires.|  
-||SQL_INST_JAVA |S’applique à [SQL Server Machine Learning Services](../../machine-learning/install/sql-machine-learning-services-windows-install.md). Associez à **AdvancedAnalytics** pour installer des extensions qui permettent l’intégration à Java en utilisant des instructions T-SQL standard.|  
+||SQL_INST_MR |S’applique à [SQL Server Machine Learning Services](../../machine-learning/install/sql-machine-learning-services-windows-install.md) (2017 ou ultérieur) et [SQL Server 2016 R Services (In-Database)](../../machine-learning/install/sql-r-services-windows-install.md). Appairez avec **AdvancedAnalytics** pour installer R Open et des packages R propriétaires.|  
+||SQL_INST_MPY|S’applique à [SQL Server Machine Learning Services](../../machine-learning/install/sql-machine-learning-services-windows-install.md) (2017 ou ultérieur). Appairez avec **AdvancedAnalytics** pour installer Anaconda et des packages Python propriétaires.|  
+||SQL_INST_JAVA |S’applique à l’[extension de langage Java SQL Server](../../language-extensions/install/windows-java.md) (2019 et ultérieur). Associez à **AdvancedAnalytics** pour installer des extensions qui permettent l’intégration à Java en utilisant des instructions T-SQL standard.|  
 |AS||Installe tous les composants [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] .|  
 |RS||Installe tous les composants [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] . Suppression à compter de SQL Server 2017. |  
 |RS_SHP||Installe des composants [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] pour SharePoint. Suppression à compter de SQL Server 2017.|  

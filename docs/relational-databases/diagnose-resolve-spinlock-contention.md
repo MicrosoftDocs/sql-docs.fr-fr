@@ -9,12 +9,12 @@ ms.topic: how-to
 author: bluefooted
 ms.author: pamela
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: a25835dd5fbac5f95434d46ac152d44ea6974496
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 00b4856ab0c057b7f63aae44834884bc775d8e92
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440130"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102167"
 ---
 # <a name="diagnose-and-resolve-spinlock-contention-on-sql-server"></a>Diagnostiquer et résoudre la contention de verrouillage tournant dans SQL Server
 
@@ -137,7 +137,7 @@ Le processus technique généralement employé pour diagnostiquer une contention
 
 2. **Étape 2** : Capturez les statistiques de *sys.dm\_ os_spinlock_stats* pour trouver le type de verrouillage tournant avec la plus forte contention.
 
-3. **Étape 3** : Obtenez les symboles de débogage pour sqlservr.exe (sqlservr.pdb) et placez-les dans le même répertoire que le fichier .exe du service SQL Server (sqlservr.exe) pour l’instance de SQL Server. Pour voir les piles d’appels des événements de backoff, vous devez disposer de symboles pour la version particulière de SQL Server que vous exécutez. Les symboles pour SQL Server sont disponibles sur le serveur de symboles Microsoft. Pour plus d’informations sur le téléchargement de symboles à partir du serveur de symboles Microsoft, consultez [Débogage avec des symboles](https://docs.microsoft.com/windows/win32/dxtecharts/debugging-with-symbols).
+3. **Étape 3** : Obtenez les symboles de débogage pour sqlservr.exe (sqlservr.pdb) et placez-les dans le même répertoire que le fichier .exe du service SQL Server (sqlservr.exe) pour l’instance de SQL Server. Pour voir les piles d’appels des événements de backoff, vous devez disposer de symboles pour la version particulière de SQL Server que vous exécutez. Les symboles pour SQL Server sont disponibles sur le serveur de symboles Microsoft. Pour plus d’informations sur le téléchargement de symboles à partir du serveur de symboles Microsoft, consultez [Débogage avec des symboles](/windows/win32/dxtecharts/debugging-with-symbols).
 
 4. **Étape 4** : Utilisez les événements étendus SQL Server pour suivre les événements de backoff pour les types de verrouillage tournant présentant un intérêt.
 
@@ -237,7 +237,7 @@ drop event session spin_lock_backoff on server
 En analysant la sortie, nous pouvons voir les piles d’appels pour les chemins de code les plus courants pour les spins SOS_CACHESTORE. Le script a été exécuté plusieurs fois pendant la période de forte utilisation du processeur pour vérifier la cohérence dans les piles d’appels retournées. Notez que les piles d’appels avec le nombre de compartiments d’emplacement le plus élevé sont courantes entre les deux sorties (35 668 et 8 506). Ces piles d’appels ont un nombre d’emplacements (« slot count ») deux fois supérieur à l’entrée suivante. Cette condition indique un chemin de code digne d’intérêt.
 
 > [!NOTE]
-> Il n’est pas rare de voir les piles d’appels retournées par le script précédent. En exécutant le script pendant 1 minute, nous observons que les piles avec un nombre d’emplacements \>1 000 et \>10 000 sont susceptibles de poser problème.
+> Il n’est pas rare de voir les piles d’appels retournées par le script précédent. Lorsque le script s’est exécuté pendant 1 minute, nous avons observé que les piles d’appels avec un nombre d’emplacements > 1 000 étaient problématiques, mais que le nombre d’emplacements > 10 000 était plus susceptible d’être problématique car il a un nombre d’emplacements supérieur.
 
 > [!NOTE]
 > La mise en forme de la sortie suivante a été nettoyée pour la rendre plus lisible.
