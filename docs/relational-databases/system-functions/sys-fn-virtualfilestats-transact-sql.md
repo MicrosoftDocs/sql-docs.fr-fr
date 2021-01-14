@@ -22,12 +22,12 @@ ms.assetid: 96b28abb-b059-48db-be2b-d60fe127f6aa
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 21ebb356139cf33f87a4e3da84a5004bd7405ae9
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 4c49575ef666cf35c26dd4e924cbb75b17cb9c4e
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096371"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170141"
 ---
 # <a name="sysfn_virtualfilestats-transact-sql"></a>sys.fn_virtualfilestats (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -56,7 +56,7 @@ fn_virtualfilestats ( { database_id | NULL } , { file_id | NULL } )
 |-----------------|---------------|-----------------|  
 |**DbId**|**smallint**|ID de la base de données.|  
 |**FileId**|**smallint**|ID de fichier.|  
-|**Confirmé**|**bigint**|Horodateur de prélèvement des données de base de données **int** dans les versions antérieures à [!INCLUDE[ssSQL15_md](../../includes/sssql15-md.md)] . |  
+|**Confirmé**|**bigint**|Horodateur de prélèvement des données de base de données **int** dans les versions antérieures à [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] . |  
 |**NumberReads**|**bigint**|Nombre de lectures effectuées sur le fichier.|  
 |**BytesRead**|**bigint**|Nombre d'octets lus sur le fichier|  
 |**IoStallReadMS**|**bigint**|Durée totale (en millisecondes) d'exécution des E/S de lecture sur le fichier|  

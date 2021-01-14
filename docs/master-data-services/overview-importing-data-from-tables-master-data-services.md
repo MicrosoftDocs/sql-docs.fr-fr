@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 181d1e22-379c-45d1-b03c-e1e22ff14164
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 232900f14580db1e09fe0b54c4dfcd77e5310283
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 6374bdcc748ab528c4cb70c2db6387d3b55f6cb6
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "92257551"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171531"
 ---
 # <a name="overview-importing-data-from-tables-master-data-services"></a>Présentation : Importation de données à partir de tables (Master Data Services)
 
@@ -50,7 +50,7 @@ ms.locfileid: "92257551"
      Vous utilisez des procédures stockées intermédiaires ou [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] pour charger les données.  
   
 > [!NOTE]  
->  Dans [!INCLUDE[ssSQL15](../includes/sssql15-md.md)], la prise en charge des processus de mise en lots [!INCLUDE[ssKilimanjaro](../includes/sskilimanjaro-md.md)] est déconseillée.  
+>  Dans [!INCLUDE[ssSQL15](../includes/sssql16-md.md)], la prise en charge des processus de mise en lots [!INCLUDE[ssKilimanjaro](../includes/sskilimanjaro-md.md)] est déconseillée.  
   
 ## <a name="deactivating-and-deleting-members-mds"></a>Désactivation et suppression de membres (MDS)  
  La désactivation signifie que le membre peut être réactivé. La réactivation d'un membre permet de restaurer ses attributs et son appartenance aux hiérarchies et collections. Toutes les transactions précédentes sont intactes. Les transactions de désactivation sont visibles par les administrateurs dans la zone fonctionnelle **Gestion des versions** de Master Data Manager.  

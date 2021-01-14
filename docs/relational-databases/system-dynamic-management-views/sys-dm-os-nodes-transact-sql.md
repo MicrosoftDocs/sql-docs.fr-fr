@@ -21,12 +21,12 @@ ms.assetid: c768b67c-82a4-47f5-850b-0ea282358d50
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: b4cbcefbe3249a06e0f49fff5f0abe43010e9a54
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 4409ba73ba7231f674ac60f3ed63b06b6c454fa7
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101479"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170641"
 ---
 # <a name="sysdm_os_nodes-transact-sql"></a>sys.dm_os_nodes (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "98101479"
 Un composant interne nommé SQLOS crée des structures de nœuds qui simulent la localité du processeur du matériel. Ces structures peuvent être modifiées à l’aide de [soft-NUMA](../../database-engine/configure-windows/soft-numa-sql-server.md) pour créer des dispositions de nœud personnalisées.  
 
 > [!NOTE]
-> À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] , le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] utilise automatiquement le NUMA soft pour certaines configurations matérielles. Pour plus d’informations, consultez [Automatic soft-NUMA](../../database-engine/configure-windows/soft-numa-sql-server.md#automatic-soft-numa).
+> À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] , le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] utilise automatiquement le NUMA soft pour certaines configurations matérielles. Pour plus d’informations, consultez [Automatic soft-NUMA](../../database-engine/configure-windows/soft-numa-sql-server.md#automatic-soft-numa).
   
 Le tableau suivant fournit des informations sur ces nœuds.  
   

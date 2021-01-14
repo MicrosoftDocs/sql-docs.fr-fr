@@ -18,12 +18,12 @@ ms.assetid: ''
 author: jovanpop-msft
 ms.author: jovanpop
 monikerRange: =azuresqldb-current||>=sql-server-2017||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 57a595a2bcb78d86c3a770db6b584974c229a0df
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9c01a9e02576d666c39df13dc6e7e01f6d622a7d
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97483651"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98169871"
 ---
 # <a name="automatic-tuning"></a>Réglage automatique
 [!INCLUDE[sqlserver2017-asdb](../../includes/applies-to-version/sqlserver2017-asdb.md)]
@@ -99,7 +99,7 @@ Sans réglage automatique, les utilisateurs doivent régulièrement surveiller l
 
 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit toutes les vues et procédures nécessaires pour analyser les performances et résoudre les problèmes dans Magasin des requêtes.
 
-Dans [!INCLUDE[sssql15-md](../../includes/sssql15-md.md)] , vous pouvez rechercher des régressions de choix de plan à l’aide d’magasin des requêtes vues système. À compter de [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)] , le [!INCLUDE[ssde_md](../../includes/ssde_md.md)] détecte et affiche les régressions de choix de plan potentielles et les actions recommandées qui doivent être appliquées dans le [sys.dm_db_tuning_recommendations &#40;DMV Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-tuning-recommendations-transact-sql.md) . La DMV affiche des informations sur le problème, l’importance du problème et des détails tels que la requête identifiée, l’ID du plan régressé, l’ID du plan utilisé comme ligne de base pour la comparaison et l' [!INCLUDE[tsql_md](../../includes/tsql-md.md)] instruction qui peut être exécutée pour résoudre le problème.
+Dans [!INCLUDE[sssql15-md](../../includes/sssql16-md.md)] , vous pouvez rechercher des régressions de choix de plan à l’aide d’magasin des requêtes vues système. À compter de [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)] , le [!INCLUDE[ssde_md](../../includes/ssde_md.md)] détecte et affiche les régressions de choix de plan potentielles et les actions recommandées qui doivent être appliquées dans le [sys.dm_db_tuning_recommendations &#40;DMV Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-tuning-recommendations-transact-sql.md) . La DMV affiche des informations sur le problème, l’importance du problème et des détails tels que la requête identifiée, l’ID du plan régressé, l’ID du plan utilisé comme ligne de base pour la comparaison et l' [!INCLUDE[tsql_md](../../includes/tsql-md.md)] instruction qui peut être exécutée pour résoudre le problème.
 
 | type | description | DATETIME | score | details | ... |
 | --- | --- | --- | --- | --- | --- |

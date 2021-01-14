@@ -12,18 +12,18 @@ ms.assetid: 45823fc8-723a-49f2-9a11-94d241245cfd
 author: lrtoyou1223
 ms.author: lle
 manager: erikre
-ms.openlocfilehash: eda1a559e9936deae31a5511dacd695e8ec6f24e
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: b67ff423ecfe90090c734f370e2d1df0c9958605
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195034"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172441"
 ---
 # <a name="tracing-master-data-services"></a>Suivi (Master Data Services)
 
 [!INCLUDE [SQL Server - Windows only ASDBMI  ](../includes/applies-to-version/sql-windows-only-asdbmi.md)]
 
-  Le fichier Web.config contient une section de suivi, comme indiqué ci-dessous. Cette section est une nouveauté dans [!INCLUDE[ssSQL15](../includes/sssql15-md.md)][!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)]  
+  Le fichier Web.config contient une section de suivi, comme indiqué ci-dessous. Cette section est une nouveauté dans [!INCLUDE[ssSQL15](../includes/sssql16-md.md)][!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)]  
   
 ```  
 <sources>  

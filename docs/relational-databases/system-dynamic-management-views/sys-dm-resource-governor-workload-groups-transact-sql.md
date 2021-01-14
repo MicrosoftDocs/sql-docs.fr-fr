@@ -21,12 +21,12 @@ ms.assetid: f63c4914-1272-43ef-b135-fe1aabd953e0
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 3b38844c891edaf9a7592a2dd573c86cc5fa1fcb
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2db4a28a9199cc090f18cc1f79d8e755c621c7fd
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097544"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172141"
 ---
 # <a name="sysdm_resource_governor_workload_groups-transact-sql"></a>sys.dm_resource_governor_workload_groups (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "98097544"
 |group_id|**int**|ID du groupe de charges de travail. N'accepte pas la valeur NULL.|  
 |name|**sysname**|Nom du groupe de charges de travail. N'accepte pas la valeur NULL.|  
 |pool_id|**int**|ID du pool de ressources. N'accepte pas la valeur NULL.|  
-|external_pool_id|**int**|**S’applique à : à** partir de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] .<br /><br /> ID du pool de ressources externes. N'accepte pas la valeur NULL.|  
+|external_pool_id|**int**|**S’applique à : à** partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] .<br /><br /> ID du pool de ressources externes. N'accepte pas la valeur NULL.|  
 |statistics_start_time|**datetime**|Heure à laquelle la collection de statistiques a été réinitialisée pour le groupe de charges de travail. N'accepte pas la valeur NULL.|  
 |total_request_count|**bigint**|Nombre cumulatif de demandes traitées dans le groupe de charges de travail. N'accepte pas la valeur NULL.|  
 |total_queued_request_count|**bigint**|Nombre cumulatif de demandes mises en file d'attente une fois la limite GROUP_MAX_REQUESTS atteinte. N'accepte pas la valeur NULL.|  
@@ -65,7 +65,7 @@ ms.locfileid: "98097544"
 |group_max_requests|**int**|Paramètre actuel du nombre maximal de demandes simultanées. N'accepte pas la valeur NULL.|  
 |max_dop|**int**|Degré maximal de parallélisme configuré pour le groupe de charge de travail. La valeur par défaut 0 utilise des paramètres globaux. N'accepte pas la valeur NULL.| 
 |effective_max_dop|**int**|**S’applique à : à** partir de [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] .<br /><br />Degré maximal de parallélisme effectif pour le groupe de charge de travail. N'accepte pas la valeur NULL.| 
-|total_cpu_usage_preemptive_ms|**bigint**|**S’applique à : à** partir de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] .<br /><br />Temps processeur total utilisé lors de la planification en mode préemptif pour le groupe de charge de travail, mesuré en ms. N'accepte pas la valeur NULL.<br /><br />Pour exécuter du code externe à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (par exemple, des procédures stockées étendues et des requêtes distribuées), un thread doit s'exécuter en dehors du contrôle du planificateur non préemptif. Pour ce faire, un processus de travail passe en mode préemptif.| 
+|total_cpu_usage_preemptive_ms|**bigint**|**S’applique à : à** partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] .<br /><br />Temps processeur total utilisé lors de la planification en mode préemptif pour le groupe de charge de travail, mesuré en ms. N'accepte pas la valeur NULL.<br /><br />Pour exécuter du code externe à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (par exemple, des procédures stockées étendues et des requêtes distribuées), un thread doit s'exécuter en dehors du contrôle du planificateur non préemptif. Pour ce faire, un processus de travail passe en mode préemptif.| 
 |request_max_memory_grant_percent_numeric|**float**|**S’applique à : à** partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] .<br /><br />Paramètre actuel de l'allocation de mémoire maximale, en pourcentage, pour une demande unique. N'accepte pas la valeur NULL.| 
 |pdw_node_id|**int**|**S’applique à**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] , [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]<br /><br /> Identificateur du nœud sur lequel cette distribution se trouve.|  
   

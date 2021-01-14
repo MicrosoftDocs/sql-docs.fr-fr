@@ -19,12 +19,12 @@ helpviewer_keywords:
 - sys.dm_database_replica_states dynamic management view
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 4ce500e9a149844ee6516aac82975e0bbe1b6e7c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c4e27058097feb472f936696d225e5be978bb597
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097768"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172161"
 ---
 # <a name="sysdm_database_replica_states-azure-sql-database"></a>sys.dm_database_replica_states (Azure SQL Database)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]
@@ -71,7 +71,7 @@ ms.locfileid: "98097768"
 |**last_commit_lsn**|**numeric(25,0)**|Numéro séquentiel réel dans le journal correspondant au dernier enregistrement de validation dans le journal des transactions.<br /><br /> Sur la base de données primaire, cet argument correspond au dernier enregistrement de validation traité. Les lignes des bases de données secondaires indiquent le numéro séquentiel dans le journal que le réplica secondaire a envoyé au réplica principal.<br /><br /> Sur le réplica secondaire, il s'agit du dernier enregistrement de validation qui a été restauré.|  
 |**last_commit_time**|**datetime**|Heure correspondant au dernier enregistrement de validation.<br /><br /> Sur la base de données secondaire, cette heure est la même que dans la base de données primaire.<br /><br /> Sur le réplica principal, chaque ligne de base de données secondaire indique l'heure que le réplica secondaire qui héberge la base de données secondaire a signalé au réplica principal. La différence de temps entre la ligne de base de données primaire et une ligne de base de données secondaire donnée représente approximativement l’objectif de point de récupération (RPO), en supposant que le processus de restauration par progression est pris en compte et que la progression a été signalée au réplica principal par le réplica secondaire.|  
 |**low_water_mark_for_ghosts**|**bigint**|Nombre à croissance monotone pour la base de données, qui indique une limite inférieure utilisée par la tâche de nettoyage des enregistrements fantômes sur la base de données primaire. Si ce nombre n'augmente pas avec le temps, cela implique que le nettoyage des enregistrements fantômes ne se produit pas. Pour déterminer quelles lignes fantômes nettoyer, le réplica principal utilise la valeur minimale de cette colonne pour cette base de données sur tous les réplicas de disponibilité (y compris le réplica principal).|  
-|**secondary_lag_seconds**|**bigint**|Nombre de secondes pendant lesquelles le réplica secondaire est derrière le réplica principal au cours de la synchronisation.<br /><br />**S’applique à :** [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures|  
+|**secondary_lag_seconds**|**bigint**|Nombre de secondes pendant lesquelles le réplica secondaire est derrière le réplica principal au cours de la synchronisation.<br /><br />**S’applique à :** [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures|  
 |**quorum_commit_lsn**|**numeric(25,0)**|Identifié à titre d'information uniquement. Non pris en charge. La compatibilité future n'est pas garantie.|
 |**quorum_commit_time**|**datetime**|Identifié à titre d'information uniquement. Non pris en charge. La compatibilité future n'est pas garantie.|
 

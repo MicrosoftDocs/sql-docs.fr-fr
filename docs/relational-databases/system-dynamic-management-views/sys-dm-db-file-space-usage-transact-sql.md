@@ -21,12 +21,12 @@ ms.assetid: 148a5276-a8d5-49d2-8146-3c63d24c2144
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: bca14dfbb84763a15791aa4bdefc8b857df9e87e
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 93bbb10cd8274b79aca1b40217f15b1ea19f65f4
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095166"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172131"
 ---
 # <a name="sysdm_db_file_space_usage-transact-sql"></a>sys.dm_db_file_space_usage (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "98095166"
 |user_object_reserved_page_count|**bigint**|Nombre total de pages allouées à partir d'étendues uniformes pour les objets utilisateur de la base de données. Ce nombre inclut les pages non utilisées provenant d'une étendue allouée.<br /><br /> Les pages IAM ne sont pas incluses parce qu'elles sont toujours allouées à partir d'étendues mixtes. Les pages PFS sont incluses si elles sont allouées à partir d'une étendue uniforme.<br /><br /> Vous pouvez utiliser la total_pages colonne dans l’affichage catalogue [sys.allocation_units](../../relational-databases/system-catalog-views/sys-allocation-units-transact-sql.md) pour retourner le nombre de pages réservées de chaque unité d’allocation dans l’objet utilisateur. Notez toutefois que la colonne total_pages inclut les pages IAM.|  
 |internal_object_reserved_page_count|**bigint**|Nombre total de pages d'étendues uniformes allouées pour des objets internes dans le fichier. Ce nombre inclut les pages non utilisées provenant d'une étendue allouée.<br /><br /> Les pages IAM ne sont pas incluses parce qu'elles sont toujours allouées à partir d'étendues mixtes. Les pages PFS sont incluses si elles sont allouées à partir d'une étendue uniforme.<br /><br /> Il n'existe pas d'affichage catalogue ni d'objet de gestion dynamique qui retourne le nombre de pages de chaque objet interne.|  
 |mixed_extent_page_count|**bigint**|Nombre total de pages allouées et non allouées dans les étendues mixtes allouées du fichier. Les étendues mixtes contiennent des pages allouées à différents objets. Ce nombre comprend toutes les pages IAM du fichier.|
-|modified_extent_page_count|**bigint**|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 et versions ultérieures.<br /><br />Nombre total de pages modifiées dans les étendues allouées du fichier depuis la dernière sauvegarde complète de la base de données. Le nombre de pages modifiées peut être utilisé pour effectuer le suivi de la quantité de modifications différentielles dans la base de données depuis la dernière sauvegarde complète, afin de déterminer si une sauvegarde différentielle est nécessaire.|
+|modified_extent_page_count|**bigint**|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 et versions ultérieures.<br /><br />Nombre total de pages modifiées dans les étendues allouées du fichier depuis la dernière sauvegarde complète de la base de données. Le nombre de pages modifiées peut être utilisé pour effectuer le suivi de la quantité de modifications différentielles dans la base de données depuis la dernière sauvegarde complète, afin de déterminer si une sauvegarde différentielle est nécessaire.|
 |pdw_node_id|**int**|**S’applique à**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] , [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]<br /><br /> Identificateur du nœud sur lequel cette distribution se trouve.|  
 |distribution_id|**int**|**S’applique à**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] , [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]<br /><br /> ID numérique unique associé à la distribution.|  
   

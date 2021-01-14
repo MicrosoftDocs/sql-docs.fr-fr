@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: ad530f60-d480-4457-ba7a-93a10c8a1695
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 1aa72c49e5862621da193d4e4a400813c7cd0d91
-ms.sourcegitcommit: 827ad02375793090fa8fee63cc372d130f11393f
+ms.openlocfilehash: 7e731d14967d808aa57f3fa0e001e5e593238ffd
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89480578"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170431"
 ---
 # <a name="what39s-new-in-master-data-services-mds"></a>Nouveautés de Master Data Services (MDS)
 
@@ -30,7 +30,7 @@ ms.locfileid: "89480578"
   
  **Télécharger**  
   
--   Pour télécharger [!INCLUDE[ssSQL15](../includes/sssql15-md.md)], accédez au  **[Centre d’évaluation](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016)** .  
+-   Pour télécharger [!INCLUDE[ssSQL15](../includes/sssql16-md.md)], accédez au  **[Centre d’évaluation](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016)** .  
   
 -   Vous avez un compte Azure ?  Cliquez **[ici](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftsqlserver.sql2019-ws2019?tab=Overview)** pour lancer une machine virtuelle déjà équipée de [!INCLUDE[ssCurrent](../includes/sscurrent-md.md)] .  
   
@@ -81,7 +81,7 @@ ms.locfileid: "89480578"
   
  Dans cette version de [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)], nous proposons d’autres niveaux d’autorisations en introduisant de nouvelles autorisations (lecture, création, mise à jour et suppression). Par exemple, un utilisateur qui dispose seulement de l’autorisation de mise à jour peut désormais mettre à jour les données de référence sans créer ni supprimer les données. Quand vous attribuez à un utilisateur l’autorisation de création, de mise à jour ou de suppression, il bénéficie automatiquement de l’autorisation de lecture. Vous pouvez aussi combiner les autorisations de lecture, de création, de mise à jour et de suppression.  
   
- Quand vous procédez à une mise à niveau vers [!INCLUDE[ssSQL15](../includes/sssql15-md.md)][!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)], les anciennes autorisations sont transformées en nouvelles autorisations, comme indiqué dans le tableau suivant.  
+ Quand vous procédez à une mise à niveau vers [!INCLUDE[ssSQL15](../includes/sssql16-md.md)][!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)], les anciennes autorisations sont transformées en nouvelles autorisations, comme indiqué dans le tableau suivant.  
   
 |Autorisation dans la version précédente|Nouvelle autorisation|  
 |------------------------------------|--------------------|  
@@ -113,7 +113,7 @@ ms.locfileid: "89480578"
   
 ## <a name="improved-troubleshooting"></a>Résolution des problèmes améliorée  
   
- Des fonctionnalités ont été ajoutées à [!INCLUDE[ssSQL15](../includes/sssql15-md.md)][!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)]pour améliorer le débogage et faciliter la résolution des problèmes. Pour plus d’informations, consultez l’article [Suivi (Master Data Services)](../master-data-services/tracing-master-data-services.md).  
+ Des fonctionnalités ont été ajoutées à [!INCLUDE[ssSQL15](../includes/sssql16-md.md)][!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)]pour améliorer le débogage et faciliter la résolution des problèmes. Pour plus d’informations, consultez l’article [Suivi (Master Data Services)](../master-data-services/tracing-master-data-services.md).  
   
 ## <a name="improved-manageability"></a>Facilité de gestion accrue  
   

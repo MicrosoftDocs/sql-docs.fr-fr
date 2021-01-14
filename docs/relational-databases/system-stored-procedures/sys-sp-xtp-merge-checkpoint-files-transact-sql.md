@@ -1,6 +1,6 @@
 ---
 description: sys.sp_xtp_merge_checkpoint_files (Transact-SQL)
-title: sys. sp_xtp_merge_checkpoint_files (Transact-SQL) | Microsoft Docs
+title: sys.sp_xtp_merge_checkpoint_files (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/28/2016
 ms.prod: sql
@@ -18,25 +18,25 @@ helpviewer_keywords:
 ms.assetid: da04df2a-f7a1-41e7-a1ef-2d5d68919892
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 9bd8cf3735ecc240a0d99929fc0ef1c40d931887
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 16cf2326ad9b732d2d01f75a14ccb9026111803f
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89541048"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98167993"
 ---
 # <a name="syssp_xtp_merge_checkpoint_files-transact-sql"></a>sys.sp_xtp_merge_checkpoint_files (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]
 
-  **sys. sp_xtp_merge_checkpoint_files** fusionne tous les fichiers de données et delta dans la plage de transactions spécifiée.  
+  **sys.sp_xtp_merge_checkpoint_files** fusionne tous les fichiers de données et delta dans la plage de transactions spécifiée.  
   
- Pour plus d’informations, consultez [création et gestion du stockage pour les objets optimisés en mémoire](../../relational-databases/in-memory-oltp/creating-and-managing-storage-for-memory-optimized-objects.md).  
+ Pour plus d’informations, consultez [création et gestion du stockage pour les objets Memory-Optimized](../../relational-databases/in-memory-oltp/creating-and-managing-storage-for-memory-optimized-objects.md).  
   
  ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ||  
 |-|  
-|**Remarque**: cette procédure stockée est déconseillée dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] . Il n’est plus nécessaire et ne peut pas être utilisé, à partir de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] .|  
+|**Remarque**: cette procédure stockée est déconseillée dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] . Il n’est plus nécessaire et ne peut pas être utilisé, à partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] .|  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -51,13 +51,13 @@ sys.sp_xtp_merge_checkpoint_files database_name, @transaction_lower_bound, @tran
  Nom de la base de données dans laquelle la fusion doit être appelée. Si la base de données ne contient pas de tables en mémoire, cette procédure retourne une erreur utilisateur. Si la base de données est hors connexion, retourne une erreur.  
   
  *lower_bound_Tid*  
- Limite inférieure (bigint) des transactions pour un fichier de données, comme indiqué dans [sys. dm_db_xtp_checkpoint_files &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-xtp-checkpoint-files-transact-sql.md) correspondant au fichier de point de contrôle de démarrage de la fusion. Une erreur est générée pour une valeur transactionId non valide.  
+ La limite inférieure (bigint) des transactions pour un fichier de données, comme indiqué dans [sys.dm_db_xtp_checkpoint_files &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-xtp-checkpoint-files-transact-sql.md) correspondant au fichier de point de contrôle de démarrage de la fusion. Une erreur est générée pour une valeur transactionId non valide.  
   
  *upper_bound_Tid*  
- Limite supérieure (bigint) des transactions pour un fichier de données, comme indiqué dans [sys. dm_db_xtp_checkpoint_files &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-xtp-checkpoint-files-transact-sql.md). Une erreur est générée pour une valeur transactionId non valide.  
+ Limite supérieure (bigint) des transactions pour un fichier de données, comme indiqué dans [sys.dm_db_xtp_checkpoint_files &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-xtp-checkpoint-files-transact-sql.md). Une erreur est générée pour une valeur transactionId non valide.  
   
 ## <a name="return-code-values"></a>Codet de retour  
- Aucun  
+ None  
   
 ## <a name="cursors-returned"></a>Curseurs retournés  
  None  

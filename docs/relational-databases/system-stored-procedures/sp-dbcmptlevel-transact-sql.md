@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 508c686d-2bd4-41ba-8602-48ebca266659
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 2c03d436a85e174e1af17e47c8dc27d3ad2d6976
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: fbf4875ec03cc961e696ae5f39bd0e29abccb4e9
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89541896"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98168335"
 ---
 # <a name="sp_dbcmptlevel-transact-sql"></a>sp_dbcmptlevel (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -56,7 +56,7 @@ sp_dbcmptlevel [ [ @dbname = ] name ]
   
  **120** = [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]  
   
- **130** = [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]  
+ **130** = [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]  
   
 ## <a name="return-code-values"></a>Codet de retour  
  0 (réussite) ou 1 (échec)  

@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 01f4590f-427a-4280-a1c3-18de9f7d86c1
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 937524b89d199ee3ae0bd5d1d722bf3a14ec8ce4
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 457896a5c845bc42e446f1a115ee47863f7fced3
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461000"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171851"
 ---
 # <a name="sqlgetenvattr-function"></a>SQLGetEnvAttr, fonction
 **Conformité**  
@@ -60,10 +60,10 @@ SQLRETURN SQLGetEnvAttr(
  Si *ValuePtr* a la valeur null, *StringLengthPtr* retourne toujours le nombre total d’octets (à l’exception du caractère de fin null pour les données de type caractère) disponibles pour retourner dans la mémoire tampon vers laquelle pointe *ValuePtr*.  
   
  *BufferLength*  
- Entrée Si *ValuePtr* pointe vers une chaîne de caractères, cet argument doit être la longueur de \* *ValuePtr*. Si \* *ValuePtr* est un entier, *BufferLength* est ignoré. Si * \* ValuePtr* est une chaîne Unicode (lors de l’appel de **SQLGetEnvAttrW**), l’argument *BufferLength* doit être un nombre pair. Si la valeur de l’attribut n’est pas une chaîne de caractères, *BufferLength* est inutilisé.  
+ Entrée Si *ValuePtr* pointe vers une chaîne de caractères, cet argument doit être la longueur de \* *ValuePtr*. Si \* *ValuePtr* est un entier, *BufferLength* est ignoré. Si *\* ValuePtr* est une chaîne Unicode (lors de l’appel de **SQLGetEnvAttrW**), l’argument *BufferLength* doit être un nombre pair. Si la valeur de l’attribut n’est pas une chaîne de caractères, *BufferLength* est inutilisé.  
   
  *StringLengthPtr*  
- Sortie Pointeur vers une mémoire tampon dans laquelle retourner le nombre total d’octets (à l’exclusion du caractère de fin null) pouvant être retourné dans * \* ValuePtr*. Si *ValuePtr* est un pointeur null, aucune longueur n’est retournée. Si la valeur de l’attribut est une chaîne de caractères et que le nombre d’octets disponibles à retourner est supérieur ou égal à *BufferLength*, les données de \* *ValuePtr* sont tronquées à *BufferLength* moins la longueur d’un caractère de fin null et le pilote se termine par un caractère null.  
+ Sortie Pointeur vers une mémoire tampon dans laquelle retourner le nombre total d’octets (à l’exclusion du caractère de fin null) pouvant être retourné dans *\* ValuePtr*. Si la valeur de l’attribut est une chaîne de caractères et que le nombre d’octets disponibles à retourner est supérieur ou égal à *BufferLength*, les données de \* *ValuePtr* sont tronquées à *BufferLength* moins la longueur d’un caractère de fin null et le pilote se termine par un caractère null.  
   
 ## <a name="returns"></a>Retours  
  SQL_SUCCESS, SQL_SUCCESS_WITH_INFO, SQL_NO_DATA, SQL_ERROR ou SQL_INVALID_HANDLE.  
@@ -71,11 +71,11 @@ SQLRETURN SQLGetEnvAttr(
 ## <a name="diagnostics"></a>Diagnostics  
  Quand **SQLGetEnvAttr** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *comme HandleType* de SQL_HANDLE_ENV et un *handle* de *EnvironmentHandle*. Le tableau suivant répertorie les valeurs SQLSTATE couramment retournées par **SQLGetEnvAttr** et les explique dans le contexte de cette fonction. la notation « (DM) » précède les descriptions des SQLSTATEs retournées par le gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur|Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information spécifique au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |01004|Données de chaîne, tronquées à droite|Les données retournées dans \* *ValuePtr* ont été tronquées pour être *BufferLength* moins le caractère de fin null. La longueur de la valeur de chaîne non tronquée est retournée dans **StringLengthPtr*. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
-|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon * \* MessageText* décrit l’erreur et sa cause.|  
+|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon *\* MessageText* décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|Le pilote n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou l’achèvement de la fonction.|  
 |HY010|Erreur de séquence de fonction|(DM) **SQL_ATTR_ODBC_VERSION** n’a pas encore été défini via **SQLSetEnvAttr**. Vous n’avez pas besoin de définir **SQL_ATTR_ODBC_VERSION** explicitement si vous utilisez **SQLAllocHandleStd**.|  
 |HY013|Erreur de gestion de la mémoire|Impossible de traiter l’appel de fonction, car les objets mémoire sous-jacents sont inaccessibles, probablement en raison de conditions de mémoire insuffisante.|  

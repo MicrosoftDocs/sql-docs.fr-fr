@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9812b71a-52ec-48a0-92f3-016a93660229
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5ebd9c4d2bae1c491d2bd7a23e52c83457942fb6
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 6ac32119090ba7973ad628c35f6b5b994eb03561
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85775470"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172351"
 ---
 # <a name="xqueries-handling-relational-data"></a>Requêtes XQuery pour la gestion des données relationnelles
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -41,8 +41,8 @@ ms.locfileid: "85775470"
  Pour plus d’informations, consultez [SQL : Column (), fonction (XQuery)](../xquery/xquery-extension-functions-sql-column.md) et [fonction SQL : variable () (XQuery)](../xquery/xquery-extension-functions-sql-variable.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [SQL Server de &#40;de données XML&#41;](../relational-databases/xml/xml-data-sql-server.md)   
- [Référence du langage XQuery &#40;SQL Server&#41;](../xquery/xquery-language-reference-sql-server.md)   
+ [Données XML &#40;SQL Server&#41;](../relational-databases/xml/xml-data-sql-server.md)   
+ [Références relatives au langage Xquery &#40;SQL Server&#41;](../xquery/xquery-language-reference-sql-server.md)   
  [Construction XML &#40;XQuery&#41;](../xquery/xml-construction-xquery.md)  
   
   

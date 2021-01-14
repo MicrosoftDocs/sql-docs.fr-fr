@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: fe731839-c5c4-4884-bb6a-644eca28bb30
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: f3e21ddbcf4d3599548a827e169f2c0d63f114e8
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 21224e52ae9109f5404fc6a6ee11ad59e525995b
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92194421"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171171"
 ---
 # <a name="database-requirements-master-data-services"></a>Configuration requise pour la base de données (Master Data Services)
 
@@ -29,16 +29,16 @@ ms.locfileid: "92194421"
 > [!NOTE]  
 >  Tout ordinateur sur lequel vous installez les composants de [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)] doit disposer d'une licence. Pour plus d'informations, reportez-vous au Contrat de Licence Utilisateur Final (CLUF).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  Avant de créer une base de données [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)] , assurez -vous que les conditions suivantes sont remplies.  
   
 ### <a name="sql-server-edition"></a>Édition SQL Server  
  La base de données [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)] peut être hébergée sur les éditions suivantes de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]:  
   
  
--   [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] Entreprise (64 bits) x64  
+-   [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] Entreprise (64 bits) x64  
   
--   [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] Developer (64 bits) x64  
+-   [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] Developer (64 bits) x64  
   
 -   [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] Business Intelligence (64 bits) x64  
   
@@ -58,7 +58,7 @@ ms.locfileid: "92194421"
   
  Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prise en charge par les éditions de SQL Server 2016](../../sql-server/editions-and-components-of-sql-server-2016.md). 
   
-### <a name="operating-system"></a>Système d'exploitation  
+### <a name="operating-system"></a>Système d’exploitation  
  Pour plus d’informations sur les systèmes d’exploitation Windows pris en charge et la configuration requise pour le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssDE](../../includes/ssde-md.md)], consultez [Configurations matérielle et logicielle requises pour l’installation de SQL Server 2016](../../sql-server/install/hardware-and-software-requirements-for-installing-sql-server.md).  
   
 ### <a name="accounts-and-permissions"></a>Comptes et autorisations  

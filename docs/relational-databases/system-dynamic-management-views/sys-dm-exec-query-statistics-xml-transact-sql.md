@@ -1,6 +1,6 @@
 ---
-description: sys. dm_exec_query_statistics_xml (Transact-SQL)
-title: sys. dm_exec_query_statistics_xml (Transact-SQL) | Microsoft Docs
+description: sys.dm_exec_query_statistics_xml (Transact-SQL)
+title: sys.dm_exec_query_statistics_xml (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 11/16/2016
 ms.prod: sql
@@ -17,14 +17,14 @@ helpviewer_keywords:
 ms.assetid: fdc7659e-df41-488e-b2b5-0d79734dfecb
 author: pmasl
 ms.author: pelopes
-ms.openlocfilehash: 1d5ad6877a834bf8295d57b6be264edf6681f174
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+ms.openlocfilehash: 9bfce6f56bdf39597def73884f12ca06f6eb56b7
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88645899"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170271"
 ---
-# <a name="sysdm_exec_query_statistics_xml-transact-sql"></a>sys. dm_exec_query_statistics_xml (Transact-SQL)
+# <a name="sysdm_exec_query_statistics_xml-transact-sql"></a>sys.dm_exec_query_statistics_xml (Transact-SQL)
 
 [!INCLUDE [sqlserver2016-asdb-asdbmi](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi.md)]
 
@@ -57,15 +57,15 @@ sys.dm_exec_query_statistics_xml(session_id)
 |query_plan|**xml**|Contient la représentation Showplan du runtime du plan d’exécution de requête spécifié avec *plan_handle* contenant des statistiques partielles. Le plan d'exécution de requêtes est au format XML. Un plan est généré pour chaque traitement contenant par exemple des instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] ad hoc, des appels de procédures stockées et des appels de fonctions définies par l'utilisateur. Autorise la valeur Null.|
 
 ## <a name="remarks"></a>Notes
-Cette fonction système est disponible à partir de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP1. Voir KB [3190871](https://support.microsoft.com/help/3190871)
+Cette fonction système est disponible à partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1. Voir KB [3190871](https://support.microsoft.com/help/3190871)
 
 Cette fonction système fonctionne à la fois dans l’infrastructure de profilage des statistiques d’exécution de requête **standard** et **légère** . Pour plus d’informations, consultez [Infrastructure du profilage de requête](../../relational-databases/performance/query-profiling-infrastructure.md).  
 
-Dans les conditions suivantes, aucune sortie Showplan n’est retournée dans la colonne **query_plan** de la table retournée pour **sys. dm_exec_query_statistics_xml**:  
+Dans les conditions suivantes, aucune sortie Showplan n’est retournée dans la colonne **query_plan** de la table retournée pour **sys.dm_exec_query_statistics_xml**:  
   
--   Si le plan de requête qui correspond au *session_id* spécifié n’est plus en cours d’exécution, la colonne **query_plan** de la table retournée est null. Par exemple, cette condition peut se produire s’il existe un délai entre le moment où le descripteur de plan a été capturé et celui où il a été utilisé avec **sys. dm_exec_query_statistics_xml**.  
+-   Si le plan de requête qui correspond au *session_id* spécifié n’est plus en cours d’exécution, la colonne **query_plan** de la table retournée est null. Par exemple, cette condition peut se produire s’il existe un délai entre le moment où le descripteur de plan a été capturé et celui où il a été utilisé avec **sys.dm_exec_query_statistics_xml**.  
     
-En raison d’une limitation du nombre de niveaux imbriqués autorisés dans le type de données **XML** , **sys. dm_exec_query_statistics_xml** ne peut pas retourner des plans de requête qui remplissent ou dépassent 128 niveaux d’éléments imbriqués. Dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], cette condition empêchait les retours par le plan de requête et générait l'erreur 6335. Dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] Service Pack 2 et versions ultérieures, la colonne **query_plan** retourne la valeur null.   
+En raison d’une limitation du nombre de niveaux imbriqués autorisés dans le type de données **XML** , **sys.dm_exec_query_statistics_xml** ne peut pas retourner des plans de requête qui remplissent ou dépassent 128 niveaux d’éléments imbriqués. Dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], cette condition empêchait les retours par le plan de requête et générait l'erreur 6335. Dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] Service Pack 2 et versions ultérieures, la colonne **query_plan** retourne la valeur null.   
 
 ## <a name="permissions"></a>Autorisations  
 Sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , nécessite `VIEW SERVER STATE` l’autorisation sur le serveur.  
@@ -74,14 +74,14 @@ Sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] les niveaux Premium, requiert 
 ## <a name="examples"></a>Exemples  
   
 ### <a name="a-looking-at-live-query-plan-and-execution-statistics-for-a-running-batch"></a>R. Examen du plan de requête en direct et des statistiques d’exécution d’un lot en cours d’exécution  
- L’exemple suivant interroge **sys. dm_exec_requests** pour trouver la requête intéressante et copier son `session_id` à partir de la sortie.  
+ L’exemple suivant interroge **sys.dm_exec_requests** pour trouver la requête intéressante et copier son `session_id` à partir de la sortie.  
   
 ```sql  
 SELECT * FROM sys.dm_exec_requests;  
 GO  
 ```  
   
- Ensuite, pour obtenir le plan de requête en direct et les statistiques d’exécution, utilisez le copié `session_id` avec la fonction système **sys. dm_exec_query_statistics_xml**.  
+ Ensuite, pour obtenir le plan de requête en direct et les statistiques d’exécution, utilisez le `session_id` **sys.dm_exec_query_statistics_xml** copié avec la fonction système.  
   
 ```sql  
 --Run this in a different session than the session in which your query is running.

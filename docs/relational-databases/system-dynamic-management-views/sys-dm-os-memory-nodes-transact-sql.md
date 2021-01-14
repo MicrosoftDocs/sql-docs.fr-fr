@@ -21,12 +21,12 @@ ms.assetid: bf4032fe-7db1-40e9-a62e-d69cebff4b44
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 02d875cc2ee069c43ca04c16f374c5cb8afe2b31
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 37cdb1198817ab9f51f0b64a48aa074ac632180b
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097603"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170371"
 ---
 # <a name="sysdm_os_memory_nodes-transact-sql"></a>sys.dm_os_memory_nodes (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "98097603"
 |**online_scheduler_mask**|**bigint**|**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] et versions ultérieures.<br /><br /> À usage interne uniquement N'accepte pas la valeur NULL.|  
 |**processor_group**|**smallint**|**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] et versions ultérieures.<br /><br /> À usage interne uniquement N'accepte pas la valeur NULL.|  
 |**foreign_committed_kb**|**bigint**|**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] et versions ultérieures.<br /><br /> Spécifie la quantité de mémoire validée, en Ko, d'autres nœuds de mémoire. N'accepte pas la valeur NULL.|  
-|**target_kb** |**bigint** |**S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql15-md.md)] et versions ultérieures, [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)].<br /><br /> Spécifie l’objectif de mémoire pour le nœud de mémoire, en Ko. |   
+|**target_kb** |**bigint** |**S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures, [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)].<br /><br /> Spécifie l’objectif de mémoire pour le nœud de mémoire, en Ko. |   
 |**pdw_node_id**|**int**|**S’applique à**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] , [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]<br /><br /> Identificateur du nœud sur lequel cette distribution se trouve.|  
   
 ## <a name="permissions"></a>Autorisations

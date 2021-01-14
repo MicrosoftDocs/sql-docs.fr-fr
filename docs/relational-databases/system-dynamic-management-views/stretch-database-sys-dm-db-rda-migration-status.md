@@ -1,6 +1,6 @@
 ---
-title: sys. dm_db_rda_migration_status (Transact-SQL) | Microsoft Docs
-description: Découvrez comment sys. dm_db_rda_migration_status contient une ligne pour chaque lot de données migrées à partir de chaque table prenant en charge Stretch sur l’instance locale de SQL Server.
+title: sys.dm_db_rda_migration_status (Transact-SQL) | Microsoft Docs
+description: Découvrez comment sys.dm_db_rda_migration_status contient une ligne pour chaque lot de données migrées à partir de chaque table prenant en charge Stretch sur l’instance locale de SQL Server.
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -19,21 +19,21 @@ helpviewer_keywords:
 ms.assetid: faf3901c-a0e0-4e0c-8b1b-86d9f15f34dd
 author: pmasl
 ms.author: pelopes
-ms.openlocfilehash: 87e69284a4fdcac90420ec8a091fd1bd66933bb0
-ms.sourcegitcommit: 216f377451e53874718ae1645a2611cdb198808a
+ms.openlocfilehash: eac014075edd5663b490791f6c49fc0b865afd2a
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87238799"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171631"
 ---
-# <a name="stretch-database---sysdm_db_rda_migration_status"></a>Stretch Database-sys. dm_db_rda_migration_status
+# <a name="stretch-database---sysdm_db_rda_migration_status"></a>Stretch Database-sys.dm_db_rda_migration_status
 [!INCLUDE [sqlserver2016](../../includes/applies-to-version/sqlserver2016.md)]
 
   Contient une ligne pour chaque lot de données migrées à partir de chaque table prenant en charge Stretch sur l’instance locale de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Les lots sont identifiés par l’heure de début et l’heure de fin.  
   
- **sys. dm_db_rda_migration_status** est limité au contexte de la base de données actuelle. Assurez-vous que vous êtes dans le contexte de la base de données des tables d’activation Stretch pour lesquelles vous souhaitez afficher l’état de la migration.  
+ **sys.dm_db_rda_migration_status** est limitée au contexte de la base de données actuelle. Assurez-vous que vous êtes dans le contexte de la base de données des tables d’activation Stretch pour lesquelles vous souhaitez afficher l’état de la migration.  
   
- Dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] , la sortie de **sys. dm_db_rda_migration_status** est limitée à 200 lignes.  
+ Dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] , la sortie de **sys.dm_db_rda_migration_status** est limitée à 200 lignes.  
   
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  

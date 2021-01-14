@@ -21,12 +21,12 @@ ms.assetid: 3a09d81b-55d5-416f-9cda-1a3a5492abe0
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: a6ac7202b637b6760d88756aef60a722f99f5b7b
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 6a2d8ed3f8eb3aa5a89ee7176863165a2a0a0b74
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099821"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171721"
 ---
 # <a name="sysdm_os_schedulers-transact-sql"></a>sys.dm_os_schedulers (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -62,9 +62,9 @@ ms.locfileid: "98099821"
 |memory_object_address|**varbinary (8)**|Adresse mémoire de l'objet mémoire du planificateur. Cette colonne n'accepte pas la valeur NULL.|  
 |task_memory_object_address|**varbinary (8)**|Adresse mémoire de l'objet mémoire de la tâche. N'accepte pas la valeur NULL. Pour plus d’informations, consultez [sys.dm_os_memory_objects &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-os-memory-objects-transact-sql.md).|  
 |quantum_length_us|**bigint**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)] Expose le quantum de planificateur utilisé par SQLOS.|  
-| total_cpu_usage_ms |**bigint**|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et ultérieur <br><br> PROCESSEUR total consommé par ce planificateur comme indiqué par les Workers non préemptif. N'accepte pas la valeur NULL.|
+| total_cpu_usage_ms |**bigint**|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et ultérieur <br><br> PROCESSEUR total consommé par ce planificateur comme indiqué par les Workers non préemptif. N'accepte pas la valeur NULL.|
 |total_cpu_idle_capped_ms|**bigint**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)] Indique que la limitation basée sur l' [objectif de niveau de service](/azure/sql-data-warehouse/what-is-a-data-warehouse-unit-dwu-cdwu#service-level-objective)est toujours 0 pour les versions non-Azure de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Autorise la valeur NULL.|
-|total_scheduler_delay_ms|**bigint**|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et ultérieur <br><br> Le délai entre un thread de travail qui bascule et un autre qui bascule. Peut être dû au fait que les Workers préemptif retardent la planification du travail non préemptif suivant, ou en raison des threads de planification du système d’exploitation provenant d’autres processus. N'accepte pas la valeur NULL.|
+|total_scheduler_delay_ms|**bigint**|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et ultérieur <br><br> Le délai entre un thread de travail qui bascule et un autre qui bascule. Peut être dû au fait que les Workers préemptif retardent la planification du travail non préemptif suivant, ou en raison des threads de planification du système d’exploitation provenant d’autres processus. N'accepte pas la valeur NULL.|
 |ideal_workers_limit|**int**|**S’applique à** : [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et ultérieur <br><br> Le nombre de Workers doit idéalement être sur le planificateur. Si les threads de travail actuels dépassent la limite en raison d’une charge de tâche déséquilibrée, une fois qu’ils sont inactifs, ils sont tronqués. N'accepte pas la valeur NULL.|
 |pdw_node_id|**int**|**S’applique à**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] , [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]<br /><br /> Identificateur du nœud sur lequel cette distribution se trouve.|  
   

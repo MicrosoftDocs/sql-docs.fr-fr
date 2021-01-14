@@ -21,12 +21,12 @@ ms.assetid: 4e774ed9-4e83-4726-9f1d-8efde8f9feff
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016||>=sql-server-linux-2017
-ms.openlocfilehash: 542db6b144471e2942bb160f1b91d7e2628ace69
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 5324370d1635914fbf6436e97cfaaee7d062329b
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097891"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171661"
 ---
 # <a name="sysservers-transact-sql"></a>sys.servers (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "98097891"
 |**is_nonsql_subscriber**|**bit**|Le serveur est un abonné de réplication non-SQL Server.|  
 |**is_remote_proc_transaction_promotion_enabled**|**bit**|Si la valeur est 1, l'appel d'une procédure stockée distante démarre une transaction distribuée et enregistre la transaction dans MS DTC. Pour plus d’informations, consultez [sp_serveroption &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-serveroption-transact-sql.md).|  
 |**modify_date**|**datetime**|Date de la dernière modification des informations de serveur.|  
-|**is_rda_server**|**bit**|**S’applique à :** À partir de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] .<br /><br />Le serveur est activé pour l’archivage des données à distance (étendu). Pour plus d’informations, consultez [activer la Stretch Database sur le serveur](../../sql-server/stretch-database/enable-stretch-database-for-a-database.md#EnableTSQLServer).|
+|**is_rda_server**|**bit**|**S’applique à :** À partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] .<br /><br />Le serveur est activé pour l’archivage des données à distance (étendu). Pour plus d’informations, consultez [activer la Stretch Database sur le serveur](../../sql-server/stretch-database/enable-stretch-database-for-a-database.md#EnableTSQLServer).|
   
 ## <a name="permissions"></a>Autorisations  
  La valeur de **provider_string** est toujours null, sauf si l’appelant dispose de l’autorisation ALTER ANY Linked Server.  

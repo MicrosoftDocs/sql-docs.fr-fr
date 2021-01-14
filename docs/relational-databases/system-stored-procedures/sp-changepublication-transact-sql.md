@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c36e5865-25d5-42b7-b045-dc5036225081
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 86a86eec0b939a579d01c36d8c9739f8d9251636
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 6e29fade73adba6cb82b6d4ac22cae122d4c60cd
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543721"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98169442"
 ---
 # <a name="sp_changepublication-transact-sql"></a>sp_changepublication (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -95,7 +95,7 @@ sp_changepublication [ [ @publication = ] 'publication' ]
 |**pre_snapshot_script**||Spécifie l'emplacement d'un fichier de script [!INCLUDE[tsql](../../includes/tsql-md.md)] que l'Agent de distribution exécute avant l'application de tous les autres scripts et données d'objet répliqués au cours d'une synchronisation initiale.|  
 |**publish_to_ActiveDirectory**|**true**|Ce paramètre est déconseillé et il n'est pris en charge que pour la compatibilité descendante des scripts. Vous ne pouvez plus ajouter d'informations de publication à [!INCLUDE[msCoName](../../includes/msconame-md.md)] Active Directory.|  
 ||**false**|Supprime les informations de publication d'Active Directory.|  
-|**queue_type**|**Server**|Utilise [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour stocker les transactions. Cette propriété ne peut être modifiée qu'en l'absence d'abonnements actifs.<br /><br /> Remarque : la prise en charge de l’utilisation de [!INCLUDE[msCoName](../../includes/msconame-md.md)] Message Queuing a été interrompue. Si vous spécifiez la valeur **MSMQ** pour la *valeur* , une erreur est générée.|  
+|**queue_type**|**sql**|Utilise [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour stocker les transactions. Cette propriété ne peut être modifiée qu'en l'absence d'abonnements actifs.<br /><br /> Remarque : la prise en charge de l’utilisation de [!INCLUDE[msCoName](../../includes/msconame-md.md)] Message Queuing a été interrompue. Si vous spécifiez la valeur **MSMQ** pour la *valeur* , une erreur est générée.|  
 |**repl_freq**|**propositions**|Publie la sortie de toutes les transactions enregistrées dans le journal.|  
 ||**instantané**|Publie uniquement les événements de synchronisation planifiés.|  
 |**replicate_ddl**|**1**|Les instructions DDL (Data Definition Language) exécutées sur le serveur de publication sont répliquées. Cette propriété ne peut pas être modifiée pour les publications non-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
@@ -103,7 +103,7 @@ sp_changepublication [ [ @publication = ] 'publication' ]
 |**replicate_partition_switch**|**true**|ALTER TABLE... Les instructions SWITCH exécutées sur la base de données publiée doivent être répliquées sur les abonnés. Cette option est valide uniquement si *allow_partition_switch* a la valeur true. Pour plus d’informations, consultez [Répliquer des tables et des index partitionnés](../../relational-databases/replication/publish/replicate-partitioned-tables-and-indexes.md).|  
 ||**false**|ALTER TABLE... Les instructions SWITCH ne doivent pas être répliquées sur les abonnés.|  
 |**fixation**||**entier** représentant la période de rétention, en heures, pour l’activité d’abonnement. Si un abonnement n'est pas actif durant la période de rétention, il est supprimé.|  
-|**snapshot_in_defaultfolder**|**true**|Les fichiers d'instantané sont stockés dans le dossier d'instantané par défaut. Si *alt_snapshot_folder*est également spécifié, les fichiers d’instantané sont stockés à la fois dans les emplacements par défaut et dans d’autres emplacements.|  
+|**snapshot_in_defaultfolder**|**true**|Les fichiers d'instantané sont stockés dans le dossier d'instantané par défaut. Si *alt_snapshot_folder* est également spécifié, les fichiers d’instantané sont stockés à la fois dans les emplacements par défaut et dans d’autres emplacements.|  
 ||**false**|Les fichiers d’instantané sont stockés à l’emplacement secondaire spécifié par *alt_snapshot_folder*.|  
 |**statut**|**active**|Les données de publication sont disponibles immédiatement pour les Abonnés lors de la création de la publication. Non pris en charge pour les serveurs de publication Oracle.|  
 ||**inactive**|Les données de publication ne sont pas disponibles pour les Abonnés lors de la création de la publication. Non pris en charge pour les serveurs de publication Oracle.|  
@@ -112,17 +112,17 @@ sp_changepublication [ [ @publication = ] 'publication' ]
 ||**concurrence**|Utilise la copie en bloc en mode natif de toutes les tables, mais ne verrouille pas les tables au cours de l'instantané. Non valide pour la réplication d'instantané.|  
 ||**concurrent_c**|Utilise la copie en bloc en mode caractère de toutes les tables, mais ne verrouille pas les tables au cours du processus de génération de l'instantané. Non valide pour la réplication d'instantané.|  
 |**TaskID**||Cette propriété est déconseillée et n'est plus prise en charge.|  
-|**allow_drop**|**true**|Active `DROP TABLE` la prise en charge des dll pour les articles qui font partie de la réplication transactionnelle. Version minimale prise en charge : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] Service Pack 2 ou version ultérieure et [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] Service Pack 1 ou version ultérieure. Référence supplémentaire : [KB 3170123](https://support.microsoft.com/help/3170123/supports-drop-table-ddl-for-articles-that-are-included-in-transactional-replication-in-sql-server-2014-or-in-sql-server-2016-sp1)|
+|**allow_drop**|**true**|Active `DROP TABLE` la prise en charge des dll pour les articles qui font partie de la réplication transactionnelle. Version minimale prise en charge : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] Service Pack 2 ou version ultérieure et [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] Service Pack 1 ou version ultérieure. Référence supplémentaire : [KB 3170123](https://support.microsoft.com/help/3170123/supports-drop-table-ddl-for-articles-that-are-included-in-transactional-replication-in-sql-server-2014-or-in-sql-server-2016-sp1)|
 ||**false**|Désactive `DROP TABLE` la prise en charge des dll pour les articles qui font partie de la réplication transactionnelle. Il s’agit de la valeur **par défaut** de cette propriété.|
 |**Null** (valeur par défaut)||Retourne la liste des valeurs prises en charge pour la *propriété*.|  
   
-`[ @force_invalidate_snapshot = ] force_invalidate_snapshot` Confirme que l’action entreprise par cette procédure stockée peut invalider un instantané existant. *force_invalidate_snapshot* est un **bit**, avec **0**comme valeur par défaut.  
+`[ @force_invalidate_snapshot = ] force_invalidate_snapshot` Confirme que l’action entreprise par cette procédure stockée peut invalider un instantané existant. *force_invalidate_snapshot* est un **bit**, avec **0** comme valeur par défaut.  
   - **0** indique que les modifications apportées à l’article n’entraînent pas la non-validité de l’instantané. Si la procédure stockée détecte que la modification requiert un nouvel instantané, une erreur se produit et aucune modification n'est effectuée.  
   - **1** indique que les modifications apportées à l’article peuvent entraîner la non-validité de l’instantané. Si certains abonnements existants nécessitent un nouvel instantané, cette valeur autorise le marquage de l'instantané existant comme obsolète, et la génération d'un nouvel instantané.   
 Consultez la section Remarques pour connaître les propriétés dont la modification nécessite la génération d'un nouvel instantané.  
   
-[** @force_reinit_subscription =** ] *force_reinit_subscription*  
- Confirme que l’action entreprise par cette procédure stockée peut nécessiter la réinitialisation des abonnements existants. *force_reinit_subscription* est un **bit** avec **0**comme valeur par défaut.  
+[**@force_reinit_subscription =** ] *force_reinit_subscription*  
+ Confirme que l’action entreprise par cette procédure stockée peut nécessiter la réinitialisation des abonnements existants. *force_reinit_subscription* est un **bit** avec **0** comme valeur par défaut.  
   - **0** indique que les modifications apportées à l’article n’entraînent pas la réinitialisation de l’abonnement. Si la procédure stockée détecte que la modification nécessite la réinitialisation des abonnements existants, une erreur se produit et aucune modification n'est effectuée.  
   - **1** indique que les modifications apportées à l’article entraînent la réinitialisation de l’abonnement existant et accorde l’autorisation de réinitialisation de l’abonnement.  
   

@@ -21,12 +21,12 @@ ms.assetid: 54efc6cb-eea8-4f6d-a4d0-aa05eeb54081
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 80c59436a83795f4111dfae2997b8678b94e617e
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 461898cf3bf9e694e8d8272608861fdbfa0aff79
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096592"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170251"
 ---
 # <a name="sysdm_exec_query_profiles-transact-sql"></a>sys.dm_exec_query_profiles (Transact-SQL)
 [!INCLUDE[sql-asdb-asdbmi](../../includes/applies-to-version/sql-asdb-asdbmi.md)]
@@ -73,7 +73,7 @@ Les compteurs retournés sont par opérateur par thread. Les résultats sont dyn
 |segment_read_count|**int**|Nombre de lectures anticipées de segment jusqu'à présent.|  
 |segment_skip_count|**int**|Nombre de segments ignorés jusqu'à présent.| 
 |actual_read_row_count|**bigint**|Nombre de lignes lues par un opérateur avant l’application du prédicat résiduel.| 
-|estimated_read_row_count|**bigint**|**S’applique à :** À partir de [!INCLUDE[ssSQL15_md](../../includes/sssql15-md.md)] SP1. <br/>Nombre de lignes dont la lecture est estimée par un opérateur avant l’application du prédicat résiduel.|  
+|estimated_read_row_count|**bigint**|**S’applique à :** À partir de [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] SP1. <br/>Nombre de lignes dont la lecture est estimée par un opérateur avant l’application du prédicat résiduel.|  
   
 ## <a name="general-remarks"></a>Remarques d'ordre général  
  Si le nœud de plan de requête n’a pas d’e/s, tous les compteurs d’e/s sont définis sur NULL.  
@@ -84,7 +84,7 @@ Les compteurs retournés sont par opérateur par thread. Les résultats sont dyn
   
 -   En cas d'analyse parallèle, cette vue de gestion dynamique indique des compteurs pour chaque threads parallèles de l'analyse.
  
-À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP1, l' *infrastructure de profilage des statistiques d’exécution de requête standard* existe côte à côte avec une infrastructure de *profilage des statistiques d’exécution de requête légère*. `SET STATISTICS XML ON` et `SET STATISTICS PROFILE ON` utilisent toujours l' *infrastructure de profilage des statistiques d’exécution de requête standard*. Pour `sys.dm_exec_query_profiles` que soit rempli, l’une des infrastructures de profilage de requête doit être activée. Pour plus d’informations, consultez [Infrastructure du profilage de requête](../../relational-databases/performance/query-profiling-infrastructure.md).    
+À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1, l' *infrastructure de profilage des statistiques d’exécution de requête standard* existe côte à côte avec une infrastructure de *profilage des statistiques d’exécution de requête légère*. `SET STATISTICS XML ON` et `SET STATISTICS PROFILE ON` utilisent toujours l' *infrastructure de profilage des statistiques d’exécution de requête standard*. Pour `sys.dm_exec_query_profiles` que soit rempli, l’une des infrastructures de profilage de requête doit être activée. Pour plus d’informations, consultez [Infrastructure du profilage de requête](../../relational-databases/performance/query-profiling-infrastructure.md).    
 
 >[!NOTE]
 > La requête en cours d’investigation doit démarrer **après** l’activation de l’infrastructure de profilage de la requête. l’activation de la requête après le démarrage de la requête ne produira pas de résultats dans `sys.dm_exec_query_profiles` . Pour plus d’informations sur la façon d’activer les infrastructures de profilage de requête, consultez [interroger l’infrastructure de profilage](../../relational-databases/performance/query-profiling-infrastructure.md).
