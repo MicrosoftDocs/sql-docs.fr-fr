@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: maghan
 ms.custom: seodec18
 ms.date: 12/11/2020
-ms.openlocfilehash: a37431580c6ba2afa314d6b0596f4d319e729cf0
-ms.sourcegitcommit: e120899c5e72ce3108d1e459703ccd2ea6a84a5b
+ms.openlocfilehash: 9bc14ac4a0a1e5f51249ae4a39dfa1a392ac36e8
+ms.sourcegitcommit: e40e75055c1435c5e3f9b6e3246be55526807b4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97353651"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98151255"
 ---
 # <a name="download-and-install-azure-data-studio"></a>Télécharger et installer Azure Data Studio
 
@@ -150,6 +150,7 @@ Azure Data Studio s’exécute sur Windows, macOS et Linux, et est pris en charg
 - macOS 10.14 Mojave
 - macOS 10.13 High Sierra
 - macOS 10.12 Sierra
+- macOS 11.1 Big Sur
 
 ### <a name="linux"></a>Linux
 
