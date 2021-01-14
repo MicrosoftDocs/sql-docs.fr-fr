@@ -10,12 +10,12 @@ ms.author: anmunde
 ms.reviewer: dphansen
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15'
-ms.openlocfilehash: 4cce378546ef8c6fa9405f24fb9157dc6a249969
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 49d62ab967f972d777a02659b5a87b9e11740604
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471250"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98094566"
 ---
 # <a name="loopback-connection-to-sql-server-from-a-python-or-r-script"></a>Connexion de bouclage à SQL Server à partir d’un script Python ou R
 [!INCLUDE [SQL Server 2019 and later](../../includes/applies-to-version/sqlserver2019.md)]
@@ -48,7 +48,7 @@ Voici un exemple de chaîne de connexion de bouclage sur Linux :
 
 L’adresse du serveur, l’emplacement du fichier de certificat client et l’emplacement du fichier de clé client sont uniques à chaque `sp_execute_external_script` et peuvent être obtenus à l’aide de l’API **rx_get_sql_loopback_connection_string ()** pour Python ou **rxGetSqlLoopbackConnectionString ()** pour R.
 
-Pour plus d’informations sur les attributs de chaîne de connexion, consultez [Attributs et mots clés de chaîne de connexion et DSN](../../connect/odbc/dsn-connection-string-attribute.md?view=sql-server-linux-ver15#new-connection-string-keywords-and-connection-attributes) pour Microsoft ODBC Driver for SQL Server.
+Pour plus d’informations sur les attributs de chaîne de connexion, consultez [Attributs et mots clés de chaîne de connexion et DSN](../../connect/odbc/dsn-connection-string-attribute.md#new-connection-string-keywords-and-connection-attributes) pour Microsoft ODBC Driver for SQL Server.
 
 ## <a name="generate-connection-string-with-revoscalepy-for-python"></a>Générer une chaîne de connexion avec revoscalepy pour Python
 

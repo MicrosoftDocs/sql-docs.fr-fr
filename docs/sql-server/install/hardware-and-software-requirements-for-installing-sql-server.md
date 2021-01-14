@@ -45,12 +45,12 @@ helpviewer_keywords:
 ms.assetid: 09bcf20b-0a40-4131-907f-b61479d5e4d8
 ms.author: chadam
 author: cawrites
-ms.openlocfilehash: a2fb4a36b5ef11a67f9896584ed7fb101d4a042e
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 8583c629fc43656e082d32ec00b1e942d2e92b3d
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127531"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170611"
 ---
 # <a name="sql-server-2016-and-2017-hardware-and-software-requirements"></a>SQL Server 2016 et 2017 : Configuration matérielle et logicielle requise
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
@@ -89,7 +89,7 @@ Les exigences logicielles suivantes s’appliquent à toutes les installations 
   
 |Composant|Condition requise|  
 |---------------|-----------------|  
-|.NET Framework|[!INCLUDE[sql2016](../../includes/sssql15-md.md)] et les versions ultérieures nécessitent [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 4.6 pour la prise en charge du moteur de base de données, de Master Data Services et de la réplication. Le programme d’installation de SQL Server installe automatiquement [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]. Vous pouvez également installer manuellement [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] à partir de [Microsoft .NET Framework 4.6 (programme d’installation Web) pour Windows](https://support.microsoft.com/kb/3045560).<br/><br/> Pour obtenir davantage d’informations ainsi que des recommandations et des conseils sur [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 4.6, consultez le [Guide de déploiement du .NET Framework pour les développeurs](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>[!INCLUDE[winblue_client_2](../../includes/winblue-client-2-md.md)]et [!INCLUDE[winblue_server_2](../../includes/winblue-server-2-md.md)] nécessitent une mise à niveau ( [KB2919355](https://support.microsoft.com/kb/2919355) ) avant l’installation du [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 4.6.|  
+|.NET Framework|[!INCLUDE[sql2016](../../includes/sssql16-md.md)] et les versions ultérieures nécessitent [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 4.6 pour la prise en charge du moteur de base de données, de Master Data Services et de la réplication. Le programme d’installation de SQL Server installe automatiquement [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]. Vous pouvez également installer manuellement [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] à partir de [Microsoft .NET Framework 4.6 (programme d’installation Web) pour Windows](https://support.microsoft.com/kb/3045560).<br/><br/> Pour obtenir davantage d’informations ainsi que des recommandations et des conseils sur [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 4.6, consultez le [Guide de déploiement du .NET Framework pour les développeurs](https://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).<br/><br/>[!INCLUDE[winblue_client_2](../../includes/winblue-client-2-md.md)]et [!INCLUDE[winblue_server_2](../../includes/winblue-server-2-md.md)] nécessitent une mise à niveau ( [KB2919355](https://support.microsoft.com/kb/2919355) ) avant l’installation du [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 4.6.|  
 |Logiciel réseau|Les systèmes d'exploitation pris en charge pour [!INCLUDE[ssCurrent](../../includes/ssnoversion-md.md)] possèdent un logiciel réseau intégré. Les instances par défaut et les instances nommées d’une installation autonome prennent en charge les protocoles réseau suivants : protocoles de mémoire partagée, canaux nommés, TCP/IP et VIA.<br/><br/> **Remarque :** Le protocole VIA n’est pas pris en charge sur les clusters de basculement. Les clients ou les applications exécutés sur le même nœud du cluster de basculement en tant que l’instance SQL Server peuvent utiliser le protocole de mémoire partagée pour se connecter à SQL Server à l’aide de leur adresse de canal local. Toutefois, ce type de connexion n’est pas adaptée aux clusters et échoue après un basculement de l’instance. Il n’est donc pas recommandé et ne doit être utilisé que dans des scénarios très spécifiques.<br/><br/> **Important :** Le protocole VIA est déconseillé. [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)]<br/><br/> Pour plus d'informations sur les protocoles et les bibliothèques réseau, consultez [Network Protocols and Network Libraries](../../sql-server/install/network-protocols-and-network-libraries.md).|  
 
 Le programme d'installation de[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] installe les composants logiciels suivants requis par le produit :  

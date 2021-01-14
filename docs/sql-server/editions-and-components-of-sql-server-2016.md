@@ -37,12 +37,12 @@ helpviewer_keywords:
 ms.assetid: e5186f02-dd91-47d0-8fa4-de3f41c76903
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 8e1544a46e84b77ce290dded936f86b75a251f13
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 80b93a4a55b6d12ee5177230b78447c21fc0cae8
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642919"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172531"
 ---
 # <a name="editions-and-supported-features-of-sql-server-2016"></a>Éditions et fonctionnalités prises en charge de SQL Server 2016
 [!INCLUDE [SQL Server 2016](../includes/applies-to-version/sqlserver2016.md)]  
@@ -67,7 +67,7 @@ Pour obtenir les notes de publication les plus récentes et des informations sur
 
 ### <a name="try-sql-server"></a>Essayez SQL Server !    
     
-> [![Télécharger à partir du Centre d’évaluation](https://docs.microsoft.com/analysis-services/analysis-services/media/download.png)](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016) **[Télécharger SQL Server 2016 à partir du Centre d’évaluation](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016)**    
+> [![Télécharger à partir du Centre d’évaluation](/analysis-services/analysis-services/media/download.png)](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016) **[Télécharger SQL Server 2016 à partir du Centre d’évaluation](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016)**    
 > 
 > ![Petite machine virtuelle Azure](/analysis-services/analysis-services/media/azure-virtual-machine-small.png) **[Faites tourner une machine virtuelle sur laquelle SQL Server 2016 est déjà installé](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftsqlserver.sql2017-ws2019?tab=Overview)**   
   
@@ -142,7 +142,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
   
 <sup>1</sup> L’édition Enterprise avec serveur + licences d’accès client (CAL) (non disponibles pour les nouveaux contrats) est limitée à un maximum de 20 cœurs par instance SQL Server. Il n'existe aucune limite dans le mode de licence Serveur selon le nombre de cœurs. Pour plus d’informations, voir [Compute Capacity Limits by Edition of SQL Server](../sql-server/compute-capacity-limits-by-edition-of-sql-server.md).  
   
-<sup>2</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql15-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune (CPSA, Common Programmability Surface Area) entre différentes éditions. 
+<sup>2</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune (CPSA, Common Programmability Surface Area) entre différentes éditions. 
 
 ##  <a name="rdbms-high-availability"></a><a name="RDBMSHA"></a> RDBMS High Availability  
   
@@ -195,7 +195,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
 
 <sup>1</sup> La taille des données OLTP en mémoire et le cache de segments columnstore sont limités à la quantité de mémoire spécifiée par l’édition dans la section Limites d’échelle. Le Nombre maximal de degrés de parallélisme est limité. Le nombre de degrés de parallélisme maximal pour la création d’un index est limité à 2 pour l’Édition Standard et à 1 pour les éditions Web et Express. Ceci fait référence aux index columnstore créés sur des tables basées sur des disques et des tables à mémoire optimisée.
 
-<sup>2</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql15-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune entre différentes éditions. Pushdown d’agrégats, pushdown de prédicats de chaîne et optimisations SIMD sont des améliorations de l’évolutivité de l’Édition Entreprise [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Pour plus d’informations, consultez [Index columnstore - Nouveautés](../relational-databases/indexes/columnstore-indexes-what-s-new.md). 
+<sup>2</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune entre différentes éditions. Pushdown d’agrégats, pushdown de prédicats de chaîne et optimisations SIMD sont des améliorations de l’évolutivité de l’Édition Entreprise [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Pour plus d’informations, consultez [Index columnstore - Nouveautés](../relational-databases/indexes/columnstore-indexes-what-s-new.md). 
 
 <sup>3</sup> Cette fonctionnalité n’est pas incluse dans l’option d’installation LocalDB.
 
@@ -215,7 +215,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
 |Bases de données autonomes|Oui|Oui|Oui|Oui|Oui| 
 |Chiffrement des sauvegardes|Oui|Oui|Non|Non|Non|  
 
-<sup>1</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql15-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune entre différentes éditions.      
+<sup>1</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune entre différentes éditions.      
 
 ##  <a name="replication"></a>Réplication<a name="Replication"></a>  
   
@@ -276,7 +276,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
   
  <sup>1</sup> Pour plus d’informations, consultez [Considérations relatives à l’installation de SQL Server à l’aide de SysPrep](../database-engine/install-windows/considerations-for-installing-sql-server-using-sysprep.md).  
  
-<sup>2</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql15-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune (CPSA, Common Programmability Surface Area) entre différentes éditions.      
+<sup>2</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune (CPSA, Common Programmability Surface Area) entre différentes éditions.      
   
 ##  <a name="development-tools"></a><a name="DevTools"></a> Development Tools  
   
@@ -314,7 +314,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
 
 <sup>1</sup> Le scale-out avec plusieurs nœuds de calcul nécessite un nœud principal.
 
-<sup>2</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql15-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune (CPSA, Common Programmability Surface Area) entre différentes éditions.     
+<sup>2</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune (CPSA, Common Programmability Surface Area) entre différentes éditions.     
   
 ## <a name="integration-services"></a><a name="IS"></a> Integration Services
 
@@ -336,7 +336,7 @@ Pour plus d’informations sur les fonctionnalités Integration Services (SSIS) 
 |Traitement des requêtes parallèles sur les tables et les index partitionnés|Oui|Non|Non|Non|Non|   
 |Agrégation globale des traitements|Oui|Non|Non|Non|Non| 
 
-<sup>1</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql15-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune entre différentes éditions.     
+<sup>1</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune entre différentes éditions.     
 
 ##  <a name="analysis-services"></a><a name="SSAS"></a> Analysis Services  
   
@@ -389,9 +389,8 @@ Pour plus d’informations sur les fonctionnalités de client Business Intellige
 |StreamInsight|StreamInsight Premium Edition|StreamInsight Standard Edition|StreamInsight Standard Edition|Non|Non| 
 |StreamInsight HA|StreamInsight Premium Edition|Non|Non|Non|Non|   
   
-> [![Télécharger SSMS](https://docs.microsoft.com/analysis-services/analysis-services/media/download.png)](../ssms/download-sql-server-management-studio-ssms.md) **[Télécharger la dernière version de SQL Server Management Studio](../ssms/download-sql-server-management-studio-ssms.md)**      
+> [![Télécharger SSMS](/analysis-services/analysis-services/media/download.png)](../ssms/download-sql-server-management-studio-ssms.md) **[Télécharger la dernière version de SQL Server Management Studio](../ssms/download-sql-server-management-studio-ssms.md)**      
   
 ## <a name="see-also"></a>Voir aussi  
  [Installer SQL Server](../database-engine/install-windows/install-sql-server.md)  
  
-  

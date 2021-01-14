@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: dda91d4f-77cc-4898-ad03-810ece5f8e74
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: c87da88bcec8d1fcc29c282a1e012121a81f6f45
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 38985454ae83a73fd27dac886fd0f4ee10e5ad55
+ms.sourcegitcommit: 1f826eb3f73bd4d94bc9638b9cdd60991a2e2fa0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91986703"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98125583"
 ---
 # <a name="register-a-service-principal-name-spn-for-a-report-server"></a>Inscrire un nom de principal du service (SPN) pour un serveur de rapports
   Si vous déployez [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] dans un réseau qui utilise le protocole Kerberos pour l'authentification mutuelle, vous devez créer un nom de principal du service (SPN) pour le service Report Server, si vous le configurez pour s'exécuter en tant que compte d'utilisateur de domaine.  
@@ -66,7 +66,7 @@ Setspn -s http/<computer-name>.<domain-name> <domain-user-account>
   
 6.  Ouvrez le fichier **RsReportServer.config** et recherchez la section `<AuthenticationTypes>` .  
   
-7.  Ajoutez `<RSWindowsNegotiate/>` comme première entrée de cette section pour activer Kerberos.  
+7.  Ajoutez `<RSWindowsNegotiate />` comme première entrée de cette section pour activer Kerberos.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Configurer un compte de service &#40;Gestionnaire de configuration du serveur de rapports&#41;](../install-windows/configure-the-report-server-service-account-ssrs-configuration-manager.md)   

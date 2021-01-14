@@ -12,12 +12,12 @@ ms.assetid: 069ac476-6336-44a9-a0e7-db1c4888948f
 author: maggiesMSFT
 ms.author: maggies
 monikerRange: '>=sql-server-2016 <=sql-server-2016'
-ms.openlocfilehash: b7516d42e7b4ce804061f977ed530ecb03eba572
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c088a6cf0779c5c37c92d7ecd2ff93b2cda4ae46
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472420"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172151"
 ---
 # <a name="where-to-find-the-reporting-services-add-in-for-sharepoint-products"></a>Où trouver le complément Reporting Services pour les produits SharePoint
 
@@ -26,12 +26,12 @@ Le complément [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssN
 > [!IMPORTANT]  
 >  Pour obtenir la liste des combinaisons du complément [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], du serveur de rapports et de SharePoint prises en charge, consultez [Combinaisons de serveur et complément SharePoint et Reporting Services prises en charge &#40;SQL Server 2016&#41;](../../reporting-services/install-windows/supported-combinations-of-sharepoint-and-reporting-services-server.md).  
   
-##  <a name="sssql15-reporting-services-add-in-for-sharepoint-products"></a><a name="bkmk_sql16"></a> [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] Complément Reporting Services pour les produits SharePoint  
+##  <a name="sssql15-reporting-services-add-in-for-sharepoint-products"></a><a name="bkmk_sql16"></a> [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] Complément Reporting Services pour les produits SharePoint  
  Pour télécharger et installer le complément, consultez le centre de téléchargement de [!INCLUDE[msCoName](../../includes/msconame-md.md)] :  
   
 -   [Complément Microsoft® SQL Server 2016 Reporting Services pour Microsoft SharePoint](https://www.microsoft.com/download/details.aspx?id=52682)  
   
- La version [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] du complément est également disponible dans l'Assistant Installation de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] .  
+ La version [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] du complément est également disponible dans l'Assistant Installation de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] .  
   
 -   Dans la page **Sélection de fonctionnalités** de l’Assistant Installation, sélectionnez **Complément Reporting Services pour les produits SharePoint**.  
   

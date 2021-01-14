@@ -10,12 +10,12 @@ ms.date: 09/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: d258ac514cd998fd121c87a8d6da4a2694878c3e
-ms.sourcegitcommit: 29a2be59c56f8a4b630af47760ef38d2bf56a3eb
+ms.openlocfilehash: ee0ceb3a9f86fc2a7fabe44e9279b7e63dabfb8b
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92378362"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98091684"
 ---
 # <a name="monitor-cluster-with-azdata-and-grafana-dashboard"></a>Analyser le cluster avec azdata et le tableau de bord Grafana
 
@@ -24,11 +24,11 @@ Cet article explique comment surveiller une application à l’intérieur d’un
 ## <a name="prerequisites"></a>Prérequis
 
 - [Cluster Big Data SQL Server 2019](deployment-guidance.md)
-- [Utilitaire de ligne de commande azdata](deploy-install-azdata.md)
+- [Utilitaire de ligne de commande azdata](../azdata/install/deploy-install-azdata.md)
 
 ## <a name="capabilities"></a>Fonctionnalités
 
-Dans SQL Server 2019, vous pouvez créer, supprimer, décrire, initialiser, exécuter et mettre à jour votre application. Le tableau suivant décrit les commandes de déploiement d’application que vous pouvez utiliser avec **azdata** .
+Dans SQL Server 2019, vous pouvez créer, supprimer, décrire, initialiser, exécuter et mettre à jour votre application. Le tableau suivant décrit les commandes de déploiement d’application que vous pouvez utiliser avec **azdata**.
 
 |Commande |Description |
 |:---|:---|

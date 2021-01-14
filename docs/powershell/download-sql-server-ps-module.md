@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: matteot, drskwier
 ms.custom: ''
 ms.date: 10/14/2020
-ms.openlocfilehash: 21730bf32e66c5954b2447037286dfdc10717e9c
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: 960f146d7cd6943d27a0ecce2c1edaedc41de472
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081538"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102897"
 ---
 # <a name="install-the-sql-server-powershell-module"></a>Installer le module SQL Server PowerShell
 
@@ -165,11 +165,11 @@ Visitez [Gérer SQL Server sur Linux avec PowerShell Core](../linux/sql-server-l
 
 ## <a name="cmdlet-reference"></a>Référence des applets de commande
 
-- [Applets de commande SqlServer](https://docs.microsoft.com/powershell/module/sqlserver)
-- [Applets de commande SQLPS](https://docs.microsoft.com/powershell/module/sqlps)
+- [Applets de commande SqlServer](/powershell/module/sqlserver)
+- [Applets de commande SQLPS](/powershell/module/sqlps)
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 - [SQL Server PowerShell](sql-server-powershell.md)
-- [Applets de commande SQL Server PowerShell](https://docs.microsoft.com/powershell/module/sqlserver)
+- [Applets de commande SQL Server PowerShell](/powershell/module/sqlserver)
 - [Utiliser PowerShell avec Azure Data Studio](../azure-data-studio/extensions/powershell-extension.md)

@@ -10,22 +10,22 @@ ms.date: 09/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 80535a9baefe60301927723511a5bf1afeb805a8
-ms.sourcegitcommit: 29a2be59c56f8a4b630af47760ef38d2bf56a3eb
+ms.openlocfilehash: be07fa7f00f38f4f7ff3782593b19a584627e2f7
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92378417"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98091697"
 ---
 # <a name="monitor-cluster-with-azdata-and-kubectl"></a>Analyser le cluster avec azdata et kubectl
 
 ## <a name="use-azdata"></a>Utiliser azdata
 
-Vous pouvez également utiliser les commandes [azdata](deploy-install-azdata.md) pour afficher les points de terminaison et l’état du cluster.
+Vous pouvez également utiliser les commandes [azdata](../azdata/install/deploy-install-azdata.md) pour afficher les points de terminaison et l’état du cluster.
 
 ### <a name="service-endpoints"></a>Points de terminaison de service
 
-1. Connectez-vous au cluster Big Data avec [azdata login](reference-azdata.md). Affectez au paramètre **--controller-endpoint** l’adresse IP externe du point de terminaison du contrôleur.
+1. Connectez-vous au cluster Big Data avec [azdata login](../azdata/reference/reference-azdata.md). Affectez au paramètre **--controller-endpoint** l’adresse IP externe du point de terminaison du contrôleur.
 
    ```bash
    azdata login --endpoint https://<ip-address-of-controller-svc-external>:30080 --username <user-name>
@@ -39,7 +39,7 @@ Vous pouvez également utiliser les commandes [azdata](deploy-install-azdata.md)
    azdata login --endpoint https://<control_domain_name>:30080 --auth ad
    ```
 
-1. Exécutez [`azdata bdc endpoint list`](reference-azdata-bdc-endpoint.md) pour obtenir une liste comprenant la description de chaque point de terminaison ainsi que les adresses IP et valeurs de port correspondantes. 
+1. Exécutez [`azdata bdc endpoint list`](../azdata/reference/reference-azdata-bdc-endpoint.md) pour obtenir une liste comprenant la description de chaque point de terminaison ainsi que les adresses IP et valeurs de port correspondantes. 
 
    ```bash
    azdata bdc endpoint list -o table
@@ -65,7 +65,7 @@ Vous pouvez également utiliser les commandes [azdata](deploy-install-azdata.md)
 
 ### <a name="view-cluster-status"></a>Afficher l’état du cluster
 
-Vous pouvez afficher l’état du cluster à l’aide de la commande [`azdata bdc status show`](reference-azdata-bdc-status.md).
+Vous pouvez afficher l’état du cluster à l’aide de la commande [`azdata bdc status show`](../azdata/reference/reference-azdata-bdc-status.md).
 
 ```bash
 azdata bdc status show
@@ -150,7 +150,7 @@ Voici un exemple de sortie de cette commande :
 
 ### <a name="view-specific-resource-status"></a>Afficher l’état d’une ressource spécifique
 
-Vous pouvez afficher l’état d’une ressource spécifique au sein du cluster à l’aide de la commande [azdata bdc status show](reference-azdata-bdc-status.md). Lorsque vous utilisez cette commande, vous pouvez filtrer à l’aide du paramètre `--resource`. Voici quelques exemples d’entrées pour le paramètre `--resource` :
+Vous pouvez afficher l’état d’une ressource spécifique au sein du cluster à l’aide de la commande [azdata bdc status show](../azdata/reference/reference-azdata-bdc-status.md). Lorsque vous utilisez cette commande, vous pouvez filtrer à l’aide du paramètre `--resource`. Voici quelques exemples d’entrées pour le paramètre `--resource` :
 
 - master
 - contrôle
@@ -242,7 +242,7 @@ Voici un exemple de sortie :
 
 ### <a name="view-controller-status"></a>Afficher l’état du contrôleur
 
-Vous pouvez afficher l’état du contrôleur avec la commande [`azdata bdc control status show`](reference-azdata-bdc-control-status.md). Celle-ci fournit des liens similaires vers les tableaux de bord de supervision associés aux composants de contrôleur du cluster Big Data.
+Vous pouvez afficher l’état du contrôleur avec la commande [`azdata bdc control status show`](../azdata/reference/reference-azdata-bdc-control-status.md). Celle-ci fournit des liens similaires vers les tableaux de bord de supervision associés aux composants de contrôleur du cluster Big Data.
 
 
 ## <a name="next-steps"></a>Étapes suivantes

@@ -12,12 +12,12 @@ helpviewer_keywords:
 - failover clustering [SQL Server], upgrading
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 90ab761cdc9a84008803ebb4bc5493eb87778f20
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 4d9e3116902ae96eaa97e9624ea33ba3fa8952d3
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642675"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171581"
 ---
 # <a name="upgrade-sql-server-instances-running-on-windows-server-20082008-r22012-clusters"></a>Mettre à niveau les instances de SQL Server s’exécutant sur des clusters Windows Server 2008/2008 R2/2012
 
@@ -30,7 +30,7 @@ ms.locfileid: "97642675"
 
 -   Aucun [!INCLUDE[sshadrc-md](../../../includes/sshadrc-md.md)] ne doit être installé sur le cluster parallèle avant la migration.
 
--   Le temps d’arrêt lors de la migration d’un cluster qui utilise strictement des groupes de disponibilité (avec ou sans instances de cluster de basculement SQL) peut être considérablement limité à l’aide de groupes de disponibilité distribués, mais cela nécessite que toutes les instances exécutent la version [!INCLUDE[sssql15-md](../../../includes/sssql15-md.md)] RTM (ou ultérieure).
+-   Le temps d’arrêt lors de la migration d’un cluster qui utilise strictement des groupes de disponibilité (avec ou sans instances de cluster de basculement SQL) peut être considérablement limité à l’aide de groupes de disponibilité distribués, mais cela nécessite que toutes les instances exécutent la version [!INCLUDE[sssql15-md](../../../includes/sssql16-md.md)] RTM (ou ultérieure).
 
 -   Toutes les stratégies de migration requièrent le rôle sysadmin [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Tous les utilisateurs Windows employés par des services [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] (c’est-à-dire un compte Windows exécutant des agents de réplication) doivent disposer d’autorisations au niveau du système d’exploitation sur chaque ordinateur dans le nouvel environnement.
 
@@ -54,11 +54,11 @@ La stratégie de migration appropriée dépend de certains paramètres de la top
 \* À l’exception des noms des écouteurs de groupe de disponibilité
 
 ## <a name="scenario-1-windows-cluster-with-sql-server-availability-groups-and-no-failover-cluster-instances-fcis"></a>Scénario 1 : Cluster Windows avec des groupes de disponibilité SQL Server et aucune instance de cluster de basculement
-Si vous avez un programme d’installation [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] qui utilise des groupes de disponibilité mais pas d’instance de cluster de basculement, vous pouvez migrer vers un nouveau cluster en créant un déploiement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] parallèle sur un autre cluster Windows avec Windows Server 2016/2012 R2. Après cela, vous pouvez créer un groupe de disponibilité distribué où le cluster cible est le groupe secondaire pour le cluster de production actuel. Cela nécessite que l’utilisateur effectue la mise à niveau vers [!INCLUDE[sssql15-md](../../../includes/sssql15-md.md)] ou version ultérieure.
+Si vous avez un programme d’installation [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] qui utilise des groupes de disponibilité mais pas d’instance de cluster de basculement, vous pouvez migrer vers un nouveau cluster en créant un déploiement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] parallèle sur un autre cluster Windows avec Windows Server 2016/2012 R2. Après cela, vous pouvez créer un groupe de disponibilité distribué où le cluster cible est le groupe secondaire pour le cluster de production actuel. Cela nécessite que l’utilisateur effectue la mise à niveau vers [!INCLUDE[sssql15-md](../../../includes/sssql16-md.md)] ou version ultérieure.
 
 ###  <a name="to-perform-the-upgrade"></a>Pour effectuer la mise à niveau
 
-1.  Si nécessaire, mettez à niveau toutes les instances vers [!INCLUDE[sssql15-md](../../../includes/sssql15-md.md)] ou version ultérieure. Les instances parallèles doivent exécuter la même version de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].
+1.  Si nécessaire, mettez à niveau toutes les instances vers [!INCLUDE[sssql15-md](../../../includes/sssql16-md.md)] ou version ultérieure. Les instances parallèles doivent exécuter la même version de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].
 
 2.  Créez un groupe de disponibilité pour le cluster cible. Si le nœud principal du cluster cible n’est pas une instance de cluster de basculement, créez un écouteur.
 

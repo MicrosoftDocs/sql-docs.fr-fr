@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 463c570e-9f75-4653-b3b8-4d61753b0013
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 2165dccef242e1c813f83a64a598262be7f260c2
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: e109b68dbf9b2e2b1d119f2f676896f5fe682aaf
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127554"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172701"
 ---
 # <a name="file-locations-for-default-and-named-instances-of-sql-server"></a>Emplacements des fichiers pour les instances par défaut et les instances nommées de SQL Server
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "96127554"
 |-----|-----|--------|
 |[!INCLUDE[ssqlv15](../../includes/sssqlv15-md.md)]| 150| 15| 
 |[!INCLUDE[ssqlv14](../../includes/sssqlv14-md.md)]| 140| 14| 
-|[!INCLUDE[ssqlv13](../../includes/sssql15-md.md)]| 130| 13 | 
+|[!INCLUDE[ssqlv13](../../includes/sssql16-md.md)]| 130| 13 | 
 |[!INCLUDE[ssqlv12](../../includes/sssql14-md.md)]  | 120|12 | 
 |[!INCLUDE[sssql11](../../includes/sssql11-md.md)] | 110|11 | 
   

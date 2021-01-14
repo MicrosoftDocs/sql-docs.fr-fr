@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.prod: sql
 ms.technology: machine-learning
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||=azuresqldb-mi-current||=azuresqldb-current'
-ms.openlocfilehash: cc182838cbe519ea42235f40648e1eb2567b8954
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9a8b30cc1fa5af3e22ce0294e8eff21cf413e2c6
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471260"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98102044"
 ---
 # <a name="insert-python-dataframe-into-sql-table"></a>Insertion d’une trame de données Python dans une table SQL
 [!INCLUDE[SQL Server SQL DB SQL MI](../../includes/applies-to-version/sql-asdb-asdbmi.md)]
@@ -37,7 +37,7 @@ Cet article explique comment insérer une trame de données [Pandas](https://pan
 * [SQL Server Management Studio](../../ssms/download-sql-server-management-studio-ssms.md) pour restaurer l’exemple de base de données sur Azure SQL Managed Instance.
 ::: moniker-end
 
-* Azure Data Studio. Pour l’installer, consultez [Azure Data Studio](../../azure-data-studio/what-is.md).
+* Azure Data Studio. Pour l’installer, consultez [Azure Data Studio](../../azure-data-studio/what-is-azure-data-studio.md).
 
 * [Exemple de restauration de base de données](../../samples/adventureworks-install-configure.md) pour obtenir les exemples de données utilisés dans cet article.
 

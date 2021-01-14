@@ -9,12 +9,12 @@ ms.date: 08/20/2020
 ms.topic: how-to
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: e23d45f9083e8acf1f8e889cda845b36eef087ee
-ms.sourcegitcommit: b3a711a673baebb2ff10d7142b209982b46973ae
+ms.openlocfilehash: ded5030adeff1b9ccccf3f6683d5dfb04e7b8a07
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93364501"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98091672"
 ---
 # <a name="ad-mode-deployment-hangs---unhealthy-sparkhead-pods"></a>Blocage du déploiement en mode AD - Pods `sparkhead` défectueux
 
@@ -221,4 +221,4 @@ Ajoutez l’entrée DNS inversée manquante (enregistrement PTR) pour la zone r�
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Vérifier l’entrée de DNS inversé (enregistrement PTR) pour le contrôleur de domaine](deploy-active-directory.md#verify-reverse-dns-entry-for-domain-controller).
+[Vérifier l’entrée de DNS inversé (enregistrement PTR) pour le contrôleur de domaine](active-directory-deploy.md#verify-reverse-dns-entry-for-domain-controller).

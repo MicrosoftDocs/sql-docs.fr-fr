@@ -10,12 +10,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15||>=azuresqldb-mi-current'
-ms.openlocfilehash: 0b32d12a694062e56611abaff18dc4f1e2f23061
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 026090f3eb61e2bd2ffe2b96eb09751cc3543dbf
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470110"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98101861"
 ---
 # <a name="r-tutorial-run-predictions-in-sql-stored-procedures"></a>Didacticiel R : Exécuter des prédictions dans les procédures stockées SQL
 [!INCLUDE [SQL Server 2016 SQL MI](../../includes/applies-to-version/sqlserver2016-asdbmi.md)]
@@ -70,7 +70,7 @@ GO
 
 + L’instruction SELECT obtient le modèle sérialisé à partir de la base de données et stocke le modèle dans la variable R `mod` pour un traitement ultérieur en utilisant R.
 
-+ Les nouveaux cas de scoring sont obtenus à partir de la requête [!INCLUDE[tsql](../../includes/tsql-md.md)] spécifiée dans `@inquery`, premier paramètre de la procédure stockée. Lors de la lecture des données de requête, les lignes sont enregistrées dans la trame de données par défaut, `InputDataSet`. Ce dataframe est passé à la fonction [PREDICT](/sql/t-sql/queries/predict-transact-sql) qui génère les scores.
++ Les nouveaux cas de scoring sont obtenus à partir de la requête [!INCLUDE[tsql](../../includes/tsql-md.md)] spécifiée dans `@inquery`, premier paramètre de la procédure stockée. Lors de la lecture des données de requête, les lignes sont enregistrées dans la trame de données par défaut, `InputDataSet`. Ce dataframe est passé à la fonction [PREDICT](../../t-sql/queries/predict-transact-sql.md) qui génère les scores.
   
   `OutputDataSet <- data.frame(predict(mod, InputDataSet, type = "response"));`
   

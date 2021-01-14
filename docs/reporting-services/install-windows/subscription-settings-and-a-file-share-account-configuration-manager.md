@@ -11,19 +11,19 @@ f1_keywords:
 ms.assetid: fefa7bdb-b5f2-4db7-b91c-b58869279f3c
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 05441d59b725a172fddfb83ae116cda2d3ca5596
-ms.sourcegitcommit: fe59f8dc27fd633f5dfce54519d6f5dcea577f56
+ms.openlocfilehash: 90e585e887e9415a8cf1f9d0104595547f2d1c87
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91935548"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171981"
 ---
 # <a name="subscription-settings-and-a-file-share-account-report-server-configuration-manager"></a>Paramètres d’abonnement et compte de partage de fichiers (Gestionnaire de configuration du serveur de rapports)
   Utilisez la page **Paramètres d'abonnement** du Gestionnaire de configuration [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] afin de configurer un compte de partage de fichiers pour les serveurs de rapports en mode natif et les abonnements de partage de fichiers. Le compte de partage de fichiers vous permet d'utiliser un jeu unique d'informations d'identification dans plusieurs abonnements qui fournissent des rapports à un partage de fichiers. Au moment de modifier les informations d'identification, vous configurez la modification pour le compte de partage de fichiers et vous n'avez pas besoin de mettre à jour chaque abonnement individuel.  
   
  Les abonnements de partage de fichiers [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] incluent deux flux de travail :  
   
--   (Nouveauté de la version [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] ) Votre administrateur [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] peut configurer un compte de partage de fichiers unique, utilisé pour un ou plusieurs abonnements. Une fois l’option **Spécifier un compte de partage de fichiers**configurée, les utilisateurs sélectionnent l’option **Utiliser le compte Partage de fichiers**sur les pages de configuration de chaque abonnement.  
+-   (Nouveauté de la version [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] ) Votre administrateur [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] peut configurer un compte de partage de fichiers unique, utilisé pour un ou plusieurs abonnements. Une fois l’option **Spécifier un compte de partage de fichiers** configurée, les utilisateurs sélectionnent l’option **Utiliser le compte Partage de fichiers** sur les pages de configuration de chaque abonnement.  
   
 -   Configurez les abonnements individuels avec des informations d'identification spécifiques pour le partage de fichiers de destination.  
   

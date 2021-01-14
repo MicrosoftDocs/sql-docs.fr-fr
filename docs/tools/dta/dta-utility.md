@@ -21,12 +21,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 01/09/2017
-ms.openlocfilehash: ebeb72707e1dd65344b30ffe88c0ae5b4425f796
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: a80c3fc49962ad4a67430163f81d00b37c05329b
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85786018"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98169217"
 ---
 # <a name="dta-utility"></a>dta (utilitaire)
 
@@ -164,7 +164,7 @@ dta -d AdventureWorks2012 ...
 >  L’utilitaire **dta** ne supprime pas le contenu des tables du journal de paramétrage définies par l’utilisateur si la session est supprimée. Il est recommandé de spécifier une table pour le journal de paramétrage quand vous réglez des charges de travail très importantes. Le paramétrage de charges de travail importantes pouvant engendrer des journaux de paramétrage volumineux, il est plus rapide d'effacer les sessions lorsqu'une table est utilisée.  
   
  **-F**  
- Permet à **dta** de remplacer un fichier de sortie existant. Si un fichier de sortie de même nom existe déjà et si **-F** n’est pas spécifié, **dta**retourne une erreur. Vous pouvez utiliser **-F** avec **-of**, **-or**ou **-ox**.  
+ Permet à **dta** de remplacer un fichier de sortie existant. Si un fichier de sortie de même nom existe déjà et si **-F** n’est pas spécifié, **dta** retourne une erreur. Vous pouvez utiliser **-F** avec **-of**, **-or** ou **-ox**.  
   
  **-fa** _physical_design_structures_to_add_  
  Spécifie les types de PDS (Physical Design Structures) que **dta** doit inclure dans la recommandation. Le tableau suivant répertorie et décrit les valeurs pouvant être spécifiées pour cet argument. Si aucune valeur n’est spécifiée, **dta** utilise la valeur par défaut **-fa IDX**.  
@@ -184,7 +184,7 @@ dta -d AdventureWorks2012 ...
 [Recommandations relatives aux index columnstore dans l’Assistant Paramétrage du moteur de base de données](../../relational-databases/performance/columnstore-index-recommendations-in-database-engine-tuning-advisor-dta.md).
  ||  
 |-|  
-|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures.|  
+|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.|  
 
   
  **-fk** _keep_existing_option_  
@@ -210,7 +210,7 @@ dta -d AdventureWorks2012 ...
  ALIGNED signifie que dans la recommandation générée par **dta** , chaque index proposé est partitionné exactement de la même manière que la table sous-jacente pour laquelle l'index est défini. Les index non-cluster sur une vue indexée sont alignés avec la vue indexée. Une seule valeur peut être spécifiée pour cet argument. La valeur par défaut est **-fp NONE**.  
   
  **-fx** _drop_only_mode_  
- Spécifie que **dta** considère uniquement la suppression des PDS (Physical Design Structures) existantes. Aucune nouvelle PDS n'est considérée. Lorsque cette option est spécifiée, **dta** évalue l'utilité des PDS (Physical Design Structures) existantes et recommande la suppression des structures rarement utilisées. Cet argument ne prend aucune valeur. Il ne peut pas être utilisé avec les arguments **-fa**, **-fp**ou **-fk ALL** .  
+ Spécifie que **dta** considère uniquement la suppression des PDS (Physical Design Structures) existantes. Aucune nouvelle PDS n'est considérée. Lorsque cette option est spécifiée, **dta** évalue l'utilité des PDS (Physical Design Structures) existantes et recommande la suppression des structures rarement utilisées. Cet argument ne prend aucune valeur. Il ne peut pas être utilisé avec les arguments **-fa**, **-fp** ou **-fk ALL** .  
   
  **-ID** _session_ID_  
  Spécifie un identificateur numérique pour la session de réglage. Si ce paramètre n'est pas spécifié, **dta** génère un numéro d'identification. Vous pouvez utiliser cet identificateur pour afficher des informations pour des sessions de réglage existantes. Si vous ne spécifiez pas de valeur pour **-ID**, un nom de session doit être spécifié avec **-s**.  
@@ -222,7 +222,7 @@ dta -d AdventureWorks2012 ...
  Spécifie que le Magasin des requêtes est utilisé comme charge de travail. Les 1 000 premiers événements du Magasin des requêtes pour les bases de données explicitement sélectionnées sont analysés. Cette valeur peut être modifiée à l'aide de l'option **-n**.  Pour plus d’informations, consultez [Magasin de requêtes](../../relational-databases/performance/how-query-store-collects-data.md) et [Paramétrage de base de données à l’aide des charges de travail du Magasin de requêtes](../../relational-databases/performance/tuning-database-using-workload-from-query-store.md).
  ||  
 |-|  
-|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures.|  
+|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.|  
      
  **-if** _workload_file_  
  Spécifie le chemin d'accès et le nom du fichier de charge de travail à utiliser comme entrée pour le réglage. Le fichier doit être dans l'un de ces formats : .trc (fichier trace SQL Server Profiler), .sql (fichier SQL) ou .log (fichier de trace [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]). Un fichier de charge de travail ou une table de charge travail doit être spécifié.  
@@ -281,7 +281,7 @@ dta -iq -I 48
 Dans ce cas, DTA utilise le Magasin des requêtes comme source de la charge de travail et ne tient compte que des requêtes qui ont été exécutées au cours des 48 dernières heures.  
   ||  
 |-|  
-|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures.|  
+|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.|  
 
 
   
@@ -409,7 +409,7 @@ AdventureWorks2012.Production.Product  2000000
 
 Le contenu de table_list.txt spécifie que :  
 
-- Seules les tables **Customer**, **Store**et **Product** dans la base de données doivent être réglées.  
+- Seules les tables **Customer**, **Store** et **Product** dans la base de données doivent être réglées.  
   
 - Le nombre de lignes dans les tables **Customer** et **Product** sont par défaut de 100 000 et de 2 000 000, respectivement.  
   

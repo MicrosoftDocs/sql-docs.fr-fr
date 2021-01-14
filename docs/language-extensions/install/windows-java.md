@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.prod: sql
 ms.technology: language-extensions
 monikerRange: '>=sql-server-ver15'
-ms.openlocfilehash: 94b54ce983679f790a560dc1971a36f9fb3c8551
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6974a44210f008807de5498d70083530d9b40757
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471790"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98096859"
 ---
 # <a name="install-sql-server-java-language-extension-on-windows"></a>Installation de l’extension de langage Java SQL Server sur Windows
 
