@@ -19,12 +19,12 @@ ms.assetid: ''
 author: jovanpop-msft
 ms.author: jovanpop
 monikerRange: =azuresqldb-current
-ms.openlocfilehash: 142269f7c3cd8a5a1e764e2e48cf41f83490bd76
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8a913c3bf4f01828fcf75df1e3c69dca9149e2de
+ms.sourcegitcommit: 23649428528346930d7d5b8be7da3dcf1a2b3190
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464600"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98241820"
 ---
 # <a name="sysserver_resource_stats-azure-sql-database"></a>sys.server_resource_stats (Azure SQL Database)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]
@@ -59,22 +59,21 @@ La vue **sys.server_resource_stats** a des définitions différentes selon la ve
 ## <a name="permissions"></a>Autorisations  
  Cette vue est disponible pour tous les rôles d’utilisateur disposant d’autorisations pour se connecter à la base de données **Master** .  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Remarques  
  Les données retournées par **sys.server_resource_stats** sont exprimées sous la forme du total utilisé en octets ou en mégaoctets (exprimés dans les noms de colonnes) autres que avg_cpu, exprimé sous la forme d’un pourcentage des limites maximales autorisées pour le niveau de service/niveau de performances que vous exécutez.  
  
 ## <a name="examples"></a>Exemples  
- L'exemple suivant retourne toutes les bases de données dont la moyenne s'établit à au moins 80 % de l'utilisation du calcul au cours de la dernière semaine.  
+L’exemple suivant retourne l’utilisation moyenne du processeur au cours des sept derniers jours.  
   
 ```sql  
 DECLARE @s datetime;  
 DECLARE @e datetime;  
 SET @s= DateAdd(d,-7,GetUTCDate());  
 SET @e= GETUTCDATE();  
-SELECT resource_name, AVG(avg_cpu_percent) AS Average_Compute_Utilization   
+SELECT AVG(avg_cpu_percent) AS Average_Compute_Utilization   
 FROM sys.server_resource_stats   
 WHERE start_time BETWEEN @s AND @e  
-GROUP BY resource_name  
-HAVING AVG(avg_cpu_percent) >= 80  
+GO;
 ```  
     
 ## <a name="see-also"></a>Voir aussi  
