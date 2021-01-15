@@ -8681,9 +8681,6 @@
                       href: ssms/scripting/generate-and-publish-scripts-wizard.md
                     - name: Objets pris en charge par l'Assistant Génération de scripts
                       href: ssms/scripting/objects-supported-by-the-generate-scripts-wizard.md
-                - name: Éditeurs de texte et de requête
-                  href: ./ssms/f1-help/database-engine-query-editor-sql-server-management-studio.md?view=sql-server-ver15
-                  items:
                     - name: Éditeur XML
                       href: ssms/scripting/xml-editor-sql-server-management-studio.md
                     - name: Codage en couleurs dans les éditeurs de requête
@@ -9103,8 +9100,6 @@
               items:
                 - name: Éditeurs de texte et de requête
                   href: /previous-versions/sql/sql-server-2012/ms173477(v=sql.110)?redirectedfrom=MSDN
-                - name: Éditeur de requête du moteur de base de données
-                  href: ./ssms/f1-help/database-engine-query-editor-sql-server-management-studio.md
                 - name: Éditeur XML
                   href: ssms/scripting/xml-editor-sql-server-management-studio.md
                 - name: Configurer les éditeurs
@@ -9223,6 +9218,8 @@
                   href: ssms/menu-help/options-environment-fonts-and-colors-page.md
                 - name: Options (Environnement - Aide - Page Général)
                   href: ssms/menu-help/options-environment-help-general-page.md
+                - name: Options (Exécution de la requête - Aide - Page Général)
+                  href: ssms/menu-help/options-query-execution.md
                 - name: Outils externes
                   href: ssms/menu-help/external-tools.md
                 - name: Personnaliser (page Commandes)
