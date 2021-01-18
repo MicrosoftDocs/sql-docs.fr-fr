@@ -28,12 +28,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 09/11/2020
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017'
-ms.openlocfilehash: fcd184e195ce8c81e16ca4ceaaab03a1f156a812
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0c822321323eb5f74fda34df2d540b7c5c79c382
+ms.sourcegitcommit: e40e75055c1435c5e3f9b6e3246be55526807b4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471830"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98151304"
 ---
 # <a name="sqlcmd-utility"></a>Utilitaire sqlcmd
 
@@ -917,13 +917,21 @@ Utilisez les méthodes suivantes pour optimiser la sécurité et l'efficacité.
 
 - Utilisez la sécurité intégrée.  
 
-- Utilisez **-X** dans des environnements automatisés.  
+- Utilisez **-X[1]** dans des environnements automatisés.
 
 - Protégez les fichiers d'entrée et de sortie à l'aide des autorisations appropriées du système de fichiers NTFS.
 
 - Pour accroître les performances, effectuez autant d’opérations que possible au sein d’une session **sqlcmd** au lieu de recourir à une série de sessions.
 
 - Pour l'exécution de requête ou de traitement, définissez des valeurs de délai supérieures à la durée que vous prévoyez pour l'exécution du traitement ou de la requête.
+
+Utilisez les méthodes suivantes pour améliorer l’exactitude :
+
+- Utilisez **-V16** pour consigner les [messages de gravité de niveau 16](../relational-databases/errors-events/database-engine-error-severities.md#levels-of-severity).  Les messages de gravité 16 indiquent des erreurs générales qui peuvent être corrigées par l'utilisateur.
+
+- Une fois le processus terminé, vérifiez le code de sortie et la variable DOS ERRORLEVEL.  **sqlcmd** retourne normalement la valeur 0 ; sinon, il définit la variable ERRORLEVEL comme configurée par **-V**.  En d’autres termes, ERRORLEVEL ne doit pas afficher la même valeur que le numéro d’erreur renvoyé par SQL Server. Le numéro d’erreur est une valeur spécifique à SQL Server et correspondant à la fonction système [ **@@ERROR** ](../t-sql/functions/error-transact-sql.md).  ERRORLEVEL est une valeur spécifique à SQLCMD pour indiquer la raison pour laquelle SQLCMD s’est terminé, et sa valeur est conditionnée par l’argument de ligne de commande **-b**.
+
+L’utilisation de **-V16** conjointement avec la vérification du code de sortie et de la variable DOS ERRORLEVEL peut aider à détecter les erreurs dans les environnements automatisés, en particulier les contrôles de qualité avant une version de production.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

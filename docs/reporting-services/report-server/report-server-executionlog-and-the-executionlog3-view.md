@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: a7ead67d-1404-4e67-97e7-4c7b0d942070
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 15e8b648603952226af45d485d5678f5d0d3bbd6
-ms.sourcegitcommit: f0772f614482e0b3cde3609e178689ce62ca3a19
+ms.openlocfilehash: 28d083e053e31c1fcce26e233ba22211e211a993
+ms.sourcegitcommit: 1f826eb3f73bd4d94bc9638b9cdd60991a2e2fa0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84548011"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98125584"
 ---
 # <a name="report-server-executionlog-and-the-executionlog3-view"></a>Journal des exécutions du serveur de rapports et vue ExecutionLog3
   Le journal des exécutions du serveur de rapports [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]contient des informations sur les rapports qui sont exécutés sur le serveur ou sur plusieurs serveurs dans le cadre d’un déploiement évolutif en mode natif ou sur une batterie de serveurs SharePoint. Vous pouvez l'utiliser pour connaître la fréquence de demande d'un rapport, les formats de sortie les plus utilisés et le nombre de millisecondes de traitement consacré à chaque phrase du traitement. Le journal contient des informations sur le temps passé pour l'exécution d'une requête de dataset dans un rapport et le temps passé pour le traitement des données. Si vous êtes administrateur de serveur de rapports, vous pouvez passer en revue les informations du journal, identifier les tâches longues et faire des suggestions aux auteurs de rapports pour améliorer des zones du rapport (dataset ou traitement).  
@@ -27,7 +27,7 @@ ms.locfileid: "84548011"
 ##  <a name="viewing-log-information"></a><a name="bkmk_top"></a> Affichage des informations des journaux  
  Le serveur de rapports consigne les données sur l'exécution des rapports dans une table de base de données interne. Les informations de la table sont fournies par les vues de SQL Server.  
   
- Le journal d'exécution des rapports est stocké dans la base de données du serveur de rapports nommée par défaut **ReportServer**. Les vues SQL fournissent les informations associées au journal d'exécution. Les vues « 2 » et « 3 » ont été ajoutées dans les dernières versions et contiennent de nouveaux champs ou des champs avec des noms plus conviviaux que dans les versions précédentes. Les anciennes vues sont toujours présentes dans le produit de sorte que les applications personnalisées qui dépendent d'elles ne sont pas impactées. Si vous n'avez pas de dépendance sur une vue plus ancienne, par exemple ExecutionLog, il est recommandé d'utiliser la vue la plus récente, soit ExecutionLog**3**.  
+ Le journal d'exécution des rapports est stocké dans la base de données du serveur de rapports nommée par défaut **ReportServer**. Les vues SQL fournissent les informations associées au journal d'exécution. Les vues « 2 » et « 3 » ont été ajoutées dans les dernières versions et contiennent de nouveaux champs ou des champs avec des noms plus conviviaux que dans les versions précédentes. Les anciennes vues sont toujours présentes dans le produit de sorte que les applications personnalisées qui dépendent d'elles ne sont pas impactées. Si vous n'avez pas de dépendance sur une vue plus ancienne, par exemple ExecutionLog, il est recommandé d'utiliser la vue la plus récente, soit ExecutionLog **3**.  
   
  Dans cette rubrique :  
   
@@ -328,11 +328,11 @@ select * from ExecutionLog2 order by TimeStart DESC
 |Format|Format de rendu.|  
 |Paramètres|Valeurs des paramètres utilisées pour une exécution de rapport.|  
 |ReportAction|Valeurs possibles : Render, Sort, BookMarkNavigation, DocumentNavigation, GetDocumentMap, Findstring|  
-|TimeStart|Heures de début et de fin qui indiquent la durée d'un traitement de rapport.|  
-|TimeEnd||  
-|TimeDataRetrieval|Nombre de millisecondes consacré à la récupération des données, au traitement du rapport et au rendu du rapport.|  
-|TimeProcessing||  
-|TimeRendering||  
+|TimeStart|Heure de début qui indique la durée d'un traitement de rapport.|
+|TimeEnd|Heure de fin qui indique la durée d'un traitement de rapport.|
+|TimeDataRetrieval|Nombre de millisecondes passées pour la récupération des données.|
+|TimeProcessing|Nombre de millisecondes passées pour le traitement du rapport.|
+|TimeRendering|Nombre de millisecondes passées pour le rendu du rapport.|
 |Source|Source de l'exécution du rapport (1=Direct, 2=Cache, 3=Instantané, 4=Historique).|  
 |Statut|État (soit rsSuccess, soit un code d'erreur. En cas de plusieurs erreurs, seule la première est enregistrée).|  
 |ByteCount|Taille en octets des rapports rendus.|  

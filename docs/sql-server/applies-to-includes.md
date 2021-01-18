@@ -9,12 +9,12 @@ author: MashaMSFT
 ms.author: mathoma
 ms.topic: conceptual
 monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || >= sql-server-linux-2017'
-ms.openlocfilehash: 97ff19bf81a574c4b6eb89a7c65e39ddfb4c74cc
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0d0c41534759b91f8dd11ddd4b0a85bab9e2774a
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97410513"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170981"
 ---
 # <a name="sql-server-include-files-for-versioning-and-applies-to"></a>Fichiers include SQL Server pour la gestion des versions et applies-to
 
@@ -34,7 +34,7 @@ Les rédacteurs de contenu SQL ont souvent besoin d’inclure le nom du produit 
 | SQL 2012 | sssql11-md.md | `[!INCLUDE[ssSQL11](../includes/sssql11-md.md)]` | SQL Server 2012 (11.x) |
 | SQL 2012 SP1 | sssql11sp1-md.md | `[!INCLUDE[ssSQL11SP1](../includes/sssql11sp1-md.md)]` | SQL Server 2012 SP1 (11.0.3x) |
 | SQL 2014 | sssql14-md.md | `[!INCLUDE[ssSQL14](../includes/sssql14-md.md)]` | SQL Server 2014 (12.x) |
-| SQL 2016 | sssql15-md.md | `[!INCLUDE[sssql15-md](../includes/sssql15-md.md)]` | SQL Server 2016 (13.x) |
+| SQL 2016 | sssql16-md.md | `[!INCLUDE[sssql15-md](../includes/sssql16-md.md)]` | SQL Server 2016 (13.x) |
 | SQL 2017 | sssql17-md.md | `[!INCLUDE[sssql17-md](../includes/sssql17-md.md)]` | SQL Server 2017 (14.x) |
 | SQL 2017 | sssqlv14-md.md | `[!INCLUDE[sssqlv14](../includes/sssqlv14-md.md)]` | SQL Server 2017 (14.x) |
 | SQL vNext | sssqlv15-md.md | `[!INCLUDE[sssqlv15-md](../includes/sssqlv15-md.md)]` | SQL Server vNext |
