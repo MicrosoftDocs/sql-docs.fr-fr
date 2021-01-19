@@ -11,12 +11,12 @@ ms.date: 10/02/2019
 ms.prod: sql
 ms.prod_service: polybase, sql-data-warehouse, pdw
 monikerRange: '>= sql-server-2016'
-ms.openlocfilehash: edf0b261b6046d63e037e601ab9e92dd13d8728e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 24a228fb504f53c1afe88b0955500e811f1073b6
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464780"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171491"
 ---
 # <a name="troubleshoot-polybase-kerberos-connectivity"></a>Résoudre les problèmes de connectivité de PolyBase Kerberos
 
@@ -33,7 +33,7 @@ Cet article sert de guide tout le long du processus de débogage de tels problè
 
 ## <a name="prerequisites"></a>Prérequis
 
-1. [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] RTM CU6 / [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP1 CU3 / [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] ou version ultérieure avec PolyBase installé
+1. [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] RTM CU6 / [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1 CU3 / [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] ou version ultérieure avec PolyBase installé
 1. Un cluster Hadoop (Cloudera ou Hortonworks) sécurisé avec Kerberos (Active Directory ou MIT)
 
 ## <a name="introduction"></a>Introduction
@@ -71,7 +71,7 @@ Ces fichiers se trouvent sous :
 
 `\[System Drive\]:{install path}\{MSSQL##.INSTANCENAME}\MSSQL\Binn\PolyBase\Hadoop\conf`
 
-Par exemple, la valeur par défaut pour [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] est `C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\Binn\PolyBase\Hadoop\conf`.
+Par exemple, la valeur par défaut pour [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] est `C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\Binn\PolyBase\Hadoop\conf`.
 
 Mettez à jour **core-site.xml** en ajoutant les trois propriétés ci-dessous. Définissez les valeurs en fonction de l’environnement :
 

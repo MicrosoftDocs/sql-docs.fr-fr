@@ -18,12 +18,12 @@ ms.assetid: cba476df-d4ea-44c9-bb86-81488971e328
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: 41525854d161d029beae6e0956bc11e536ab813b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: bd6886f7ad5569d4eba40e9e603c9fccead17f71
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460302"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171221"
 ---
 # <a name="replication-agent-executables-concepts"></a>Concepts des exécutables de l'agent de réplication
 [!INCLUDE[sql-asdbmi](../../../includes/applies-to-version/sql-asdbmi.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "97460302"
 >  Les sauts de ligne figurant dans ces exemples ont été ajoutés afin d'améliorer la lisibilité. Dans un fichier de commandes, les commandes doivent figurer sur une seule ligne.  
   
 ### <a name="running-the-snapshot-agent"></a>Exécution de l'Agent d'instantané  
- Cet exemple de fichier de commandes appelle l’Agent d’instantané à partir de l’invite de commandes afin de générer un instantané pour la publication **AdvWorksSalesOrdersMerge**. (Les scripts ci-dessous utilisent le chemin d’accès aux fichiers [!INCLUDE[ssSQL15_md](../../../includes/sssql15-md.md)] (version 130). Vous devez modifier les scripts pour pointer vers les fichiers pour votre version de [!INCLUDE[ssNoVersion_md](../../../includes/ssnoversion-md.md)].)  
+ Cet exemple de fichier de commandes appelle l’Agent d’instantané à partir de l’invite de commandes afin de générer un instantané pour la publication **AdvWorksSalesOrdersMerge**. (Les scripts ci-dessous utilisent le chemin d’accès aux fichiers [!INCLUDE[ssSQL15_md](../../../includes/sssql16-md.md)] (version 130). Vous devez modifier les scripts pour pointer vers les fichiers pour votre version de [!INCLUDE[ssNoVersion_md](../../../includes/ssnoversion-md.md)].)  
   
 ```  
 REM -- Declare variables  

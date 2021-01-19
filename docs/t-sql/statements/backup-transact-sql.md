@@ -47,12 +47,12 @@ ms.assetid: 89a4658a-62f1-4289-8982-f072229720a1
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current||>=aps-pdw-2016'
-ms.openlocfilehash: 4f0529b6b6a60c2c4997c9f9d49ad9e76efa8455
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 55b1a81a5cbb5078f331df0fb7f1f93048555337
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644428"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170561"
 ---
 # <a name="backup-transact-sql"></a>BACKUP (Transact-SQL)
 
@@ -250,7 +250,7 @@ Spécifie un fichier sur disque ou support à bandes, ou un service de stockage 
 > [!NOTE]
 > L’unité de disque NUL supprime toutes les informations qui lui sont envoyées et ne devrait être utilisée qu’à des fins de test. À ne pas utiliser en production.
 > [!IMPORTANT]
-> De [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] SP1 CU2 jusqu’à [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], vous ne pouvez sauvegarder que sur une seule unité de disque lorsque vous effectuez une sauvegarde vers une URL. Pour effectuer une sauvegarde sur plusieurs unités lorsque vous sauvegardez vers une URL, vous devez utiliser [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures, ainsi que des jetons de signature d’accès partagé. Pour obtenir des exemples de signatures d’accès partagé, consultez [Sauvegarde SQL Server vers une URL](../../relational-databases/backup-restore/sql-server-backup-to-url.md) et [Simplifying creation of SQL Credentials with Shared Access Signature (SAS) tokens on Azure Storage with PowerShell](/archive/blogs/sqlcat/simplifying-creation-of-sql-credentials-with-shared-access-signature-sas-tokens-on-azure-storage-with-powershell).
+> De [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] SP1 CU2 jusqu’à [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], vous ne pouvez sauvegarder que sur une seule unité de disque lorsque vous effectuez une sauvegarde vers une URL. Pour effectuer une sauvegarde sur plusieurs unités lorsque vous sauvegardez vers une URL, vous devez utiliser [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures, ainsi que des jetons de signature d’accès partagé. Pour obtenir des exemples de signatures d’accès partagé, consultez [Sauvegarde SQL Server vers une URL](../../relational-databases/backup-restore/sql-server-backup-to-url.md) et [Simplifying creation of SQL Credentials with Shared Access Signature (SAS) tokens on Azure Storage with PowerShell](/archive/blogs/sqlcat/simplifying-creation-of-sql-credentials-with-shared-access-signature-sas-tokens-on-azure-storage-with-powershell).
 
 **URL s’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] SP1 CU2 et versions ultérieures).
 
@@ -288,7 +288,7 @@ Spécifie les options à utiliser avec une opération de sauvegarde.
 CREDENTIAL **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] SP1 CU2 et versions ultérieures).
 S’utilise uniquement lors de la création d’une sauvegarde dans le service de stockage Blob Microsoft Azure.
 
-FILE_SNAPSHOT **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ( [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures).
+FILE_SNAPSHOT **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ( [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures).
 
 Utilisé pour créer un instantané Azure des fichiers de base de données lorsque tous les fichiers de base de données SQL Server sont stockés à l’aide du service Azure Blob Storage. Pour plus d’informations, consultez [Fichiers de données SQL Server dans Microsoft Azure](../../relational-databases/databases/sql-server-data-files-in-microsoft-azure.md). La sauvegarde d’instantanés [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] crée des instantanés Azure des fichiers de base de données (données et fichiers journaux) dont l’état est cohérent. Un ensemble cohérent d’instantanés Azure constitue une sauvegarde, qui est enregistrée dans le fichier de sauvegarde. La seule différence entre `BACKUP DATABASE TO URL WITH FILE_SNAPSHOT` et `BACKUP LOG TO URL WITH FILE_SNAPSHOT` est que ce dernier tronque le journal des transactions. Avec la sauvegarde d’instantanés [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], une fois effectuée la sauvegarde complète initiale dont a besoin [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour établir la chaîne de sauvegarde, seule une sauvegarde de fichier journal est nécessaire pour restaurer une base de données vers le point dans le temps correspondant à la sauvegarde de fichier journal. En outre, seules deux sauvegardes de fichier journal sont nécessaires pour restaurer une base de données vers un point dans le temps situé entre les deux sauvegardes de fichier journal.
 
@@ -696,7 +696,7 @@ L'instruction BACKUP n'est pas autorisée dans une transaction explicite ou impl
 
 Les opérations de sauvegarde inter-plateformes, impliquant éventuellement des types de processeurs différents, peuvent être réalisées tant que le classement de la base de données est pris en charge par le système d'exploitation.
 
-Avec [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures, définir `MAXTRANSFERSIZE` **sur une valeur supérieure à 65536 (64 Ko)** permet d’utiliser un algorithme de compression optimisé pour les bases de données chiffrées avec [Transparent Data Encryption (TDE)](../../relational-databases/security/encryption/transparent-data-encryption.md), qui chiffre d’abord une page, la compresse, puis la chiffre de nouveau. Si `MAXTRANSFERSIZE` n’est pas spécifiée, ou si `MAXTRANSFERSIZE = 65536` (64 Ko) est utilisé, la compression de sauvegarde pour les bases de données chiffrées avec TDE compresse directement les pages chiffrées et peut ne pas fournir de bons taux de compression. Pour plus d’informations, consultez [Backup Compression for TDE-enabled Databases](/archive/blogs/sqlcat/sqlsweet16-episode-1-backup-compression-for-tde-enabled-databases).
+Avec [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures, définir `MAXTRANSFERSIZE` **sur une valeur supérieure à 65536 (64 Ko)** permet d’utiliser un algorithme de compression optimisé pour les bases de données chiffrées avec [Transparent Data Encryption (TDE)](../../relational-databases/security/encryption/transparent-data-encryption.md), qui chiffre d’abord une page, la compresse, puis la chiffre de nouveau. Si `MAXTRANSFERSIZE` n’est pas spécifiée, ou si `MAXTRANSFERSIZE = 65536` (64 Ko) est utilisé, la compression de sauvegarde pour les bases de données chiffrées avec TDE compresse directement les pages chiffrées et peut ne pas fournir de bons taux de compression. Pour plus d’informations, consultez [Backup Compression for TDE-enabled Databases](/archive/blogs/sqlcat/sqlsweet16-episode-1-backup-compression-for-tde-enabled-databases).
 
 À partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU5, la définition de `MAXTRANSFERSIZE` n’est plus nécessaire pour activer cet algorithme de compression optimisé avec TDE. Si la commande de sauvegarde est spécifiée `WITH COMPRESSION` ou que la configuration serveur de *compression par défaut des sauvegardes* est définie sur 1, `MAXTRANSFERSIZE` sera automatiquement augmentée à 128 K pour activer l’algorithme optimisé. Si `MAXTRANSFERSIZE` est spécifiée dans la commande Backup avec une valeur > 64 Ko, la valeur fournie est respectée. En d’autres termes, SQL Server ne diminue jamais automatiquement la valeur, elle l’augmente uniquement. Si vous avez besoin de sauvegarder une base de données chiffrée TDE avec `MAXTRANSFERSIZE = 65536`, vous devez spécifier `WITH NO_COMPRESSION` ou vous assurer que la configuration serveur de *compression par défaut des sauvegardes* est définie sur 0.
 

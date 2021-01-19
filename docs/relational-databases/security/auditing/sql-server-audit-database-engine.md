@@ -17,12 +17,12 @@ ms.assetid: 0c1fca2e-f22b-4fe8-806f-c87806664f00
 author: davidtrigano
 ms.author: datrigan
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016||>=sql-server-linux-2017
-ms.openlocfilehash: e978c269a17f42bc75729303a860c61d4868f3fb
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 45b22073dd0ac7e4c87d8fb838e9e55e346b5b5d
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97468610"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171461"
 ---
 # <a name="sql-server-audit-database-engine"></a>SQL Server Audit (moteur de base de données)
 [!INCLUDE[sql-asdbmi](../../../includes/applies-to-version/sql-asdbmi.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "97468610"
   
  Vous pouvez enregistrer des groupes d'actions d'audit du serveur par instance, et des groupes d'actions d'audit de base de données ou des actions d'audit de base de données par base de données. L'événement d'audit se produit chaque fois que l'action pouvant être auditée est rencontrée.  
   
- Toutes les éditions de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] prennent en charge les audits de niveau serveur. Toutes les éditions prennent en charge les audits de niveau base de données à partir de la version [!INCLUDE[ssSQL15_md](../../../includes/sssql15-md.md)] SP1. Avant cette version, les audits de niveau base de données sont limités aux éditions Enterprise, Developer et Evaluation. Pour plus d’informations, consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2016](~/sql-server/editions-and-supported-features-for-sql-server-2016.md).  
+ Toutes les éditions de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] prennent en charge les audits de niveau serveur. Toutes les éditions prennent en charge les audits de niveau base de données à partir de la version [!INCLUDE[ssSQL15_md](../../../includes/sssql16-md.md)] SP1. Avant cette version, les audits de niveau base de données sont limités aux éditions Enterprise, Developer et Evaluation. Pour plus d’informations, consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2016](~/sql-server/editions-and-supported-features-for-sql-server-2016.md).  
   
 > [!NOTE]  
 >  Cette rubrique s’applique à [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].  Pour [!INCLUDE[ssSDS](../../../includes/sssds-md.md)], voir [Prise en main de l’audit de base de données SQL](/azure/azure-sql/database/auditing-overview).  

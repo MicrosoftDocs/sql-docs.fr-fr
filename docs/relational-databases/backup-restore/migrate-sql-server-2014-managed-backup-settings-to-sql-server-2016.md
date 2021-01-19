@@ -11,23 +11,23 @@ ms.topic: conceptual
 ms.assetid: ae937ebb-24ff-4a33-be3c-8f85328dfc75
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 03a496f72b42b8367d546712e1e7d3c7f7c35fe9
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 046dc7c2c03e8ce45d8663cc5812c8b3a931d59b
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96130364"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170761"
 ---
 # <a name="migrate-managed-backup-settings"></a>Migrer les paramètres de gestion de sauvegarde
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique décrit les considérations relatives à la migration de [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] dans le cadre d’une mise à niveau de [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] vers [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)].  
+  Cette rubrique décrit les considérations relatives à la migration de [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] dans le cadre d’une mise à niveau de [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] vers [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)].  
   
- Les procédures et le comportement sous-jacent de [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] ont changé dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]. Les sections suivantes décrivent les modifications fonctionnelles et leurs implications.  
+ Les procédures et le comportement sous-jacent de [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] ont changé dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]. Les sections suivantes décrivent les modifications fonctionnelles et leurs implications.  
   
 ## <a name="overview"></a>Vue d’ensemble  
- Le tableau suivant décrit quelques-unes des principales différences fonctionnelles de [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] entre les versions [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)].  
+ Le tableau suivant décrit quelques-unes des principales différences fonctionnelles de [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] entre les versions [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)].  
   
-|Domaine|[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|[!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]|  
+|Domaine|[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|[!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]|  
 |----------|---------------------------|---------------------------|  
 |**Espace de noms :**|smart_admin|managed_backup|  
 |**Procédures stockées système :**|sp_set_db_backup<br /><br /> sp_set_instance_backup|[managed_backup.sp_backup_config_basic (Transact-SQL)](../../relational-databases/system-stored-procedures/managed-backup-sp-backup-config-basic-transact-sql.md)<br /><br /> [sp_backup_config_advanced](../../relational-databases/system-stored-procedures/managed-backup-sp-backup-config-advanced-transact-sql.md)<br /><br /> [sp_backup_config_schedule](../../relational-databases/system-stored-procedures/managed-backup-sp-backup-config-schedule-transact-sql.md)|  
@@ -35,7 +35,7 @@ ms.locfileid: "96130364"
 |**Stockage sous-jacent :**|Microsoft Azure Storage avec objets blob de pages.|Microsoft Azure Storage avec objets blob de blocs.|  
   
 ## <a name="benefits"></a>Avantages  
- L’utilisation des nouvelles fonctionnalités de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]présente plusieurs avantages.  
+ L’utilisation des nouvelles fonctionnalités de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]présente plusieurs avantages.  
   
 -   Les objets blob de blocs peuvent être stockés à moindres coûts.  
   
@@ -43,14 +43,14 @@ ms.locfileid: "96130364"
   
 -   L’agrégation par bandes permet également d’améliorer le temps de restauration pour les bases de données volumineuses  
   
--   Pour connaître les autres améliorations apportées à la [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], consultez [Sauvegarde managée SQL Server sur Microsoft Azure](../../relational-databases/backup-restore/sql-server-managed-backup-to-microsoft-azure.md).  
+-   Pour connaître les autres améliorations apportées à la [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], consultez [Sauvegarde managée SQL Server sur Microsoft Azure](../../relational-databases/backup-restore/sql-server-managed-backup-to-microsoft-azure.md).  
   
 ## <a name="considerations"></a>Considérations  
  Après une mise à niveau à partir de [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], tenez compte des remarques suivantes relatives à [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] :  
   
--   Les bases de données configurées précédemment pour la [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] sur [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] continueront d’utiliser les procédures système et le comportement sous-jacent de **smart_admin** sur [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)].  
+-   Les bases de données configurées précédemment pour la [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] sur [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] continueront d’utiliser les procédures système et le comportement sous-jacent de **smart_admin** sur [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)].  
   
--   Les procédures **smart_admin** ne sont pas prises en charge par les nouvelles configurations de la [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] sur [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]. Vous devez utiliser les nouvelles procédures et fonctionnalités **managed_backup** .  
+-   Les procédures **smart_admin** ne sont pas prises en charge par les nouvelles configurations de la [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] sur [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]. Vous devez utiliser les nouvelles procédures et fonctionnalités **managed_backup** .  
   
 ## <a name="see-also"></a> Voir aussi  
  [Sauvegarde managée de SQL Server vers Microsoft Azure](../../relational-databases/backup-restore/sql-server-managed-backup-to-microsoft-azure.md)  

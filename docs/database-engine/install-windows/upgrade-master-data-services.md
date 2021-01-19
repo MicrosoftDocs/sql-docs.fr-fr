@@ -11,12 +11,12 @@ ms.assetid: 9c3543f3-3eb9-455d-a9bf-f17e9506ad21
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 1bd6c09d395ac201c5130d5253bef50ea9d126be
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: f5040c96272eb3345b02077faf1302c9ac88a357
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460682"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172251"
 ---
 # <a name="upgrade-master-data-services"></a>Mettre à niveau Master Data Services
 
@@ -36,14 +36,14 @@ ms.locfileid: "97460682"
 > -   La mise à niveau de la version [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] CTP1 vers la version CTP2 n'est pas prise en charge.  
 > -   Enregistrez votre base de données avant d'effectuer toute mise à niveau.  
 > -   La mise à niveau recrée les procédures stockées et met à niveau les tables utilisées par [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)]. Les personnalisations appliquées à l'un ou l'autre de ces composants peuvent être perdues.  
-> -   Les packages de déploiement de modèle peuvent être utilisés uniquement dans l'édition de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilisée pour les créer. Vous ne pouvez pas déployer des packages de déploiement de modèle créés dans [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] sur [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)].  
-> -   Après avoir effectué la mise à niveau de Data Quality Services et Master Data Services vers [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], toutes les versions antérieures du complément Master Data Services pour Excel cesseront de fonctionner. Vous pouvez télécharger le complément Master Data Services pour Excel [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] depuis [Complément Master Data Services pour Microsoft Excel](../../master-data-services/microsoft-excel-add-in/master-data-services-add-in-for-microsoft-excel.md) .  
+> -   Les packages de déploiement de modèle peuvent être utilisés uniquement dans l'édition de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilisée pour les créer. Vous ne pouvez pas déployer des packages de déploiement de modèle créés dans [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] sur [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)].  
+> -   Après avoir effectué la mise à niveau de Data Quality Services et Master Data Services vers [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], toutes les versions antérieures du complément Master Data Services pour Excel cesseront de fonctionner. Vous pouvez télécharger le complément Master Data Services pour Excel [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] depuis [Complément Master Data Services pour Microsoft Excel](../../master-data-services/microsoft-excel-add-in/master-data-services-add-in-for-microsoft-excel.md) .  
   
 ##  <a name="file-location"></a><a name="fileLocation"></a> Emplacement du fichier  
   
 -   Dans [!INCLUDE[ss2017](../../includes/sssqlv14-md.md)], les fichiers sont installés par défaut à l’emplacement suivant : *lecteur* :\Program Files\Microsoft SQL Server\140\Master Data Services.  
 
--   Dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], les fichiers sont installés par défaut à l’emplacement suivant : *lecteur* :\Program Files\Microsoft SQL Server\130\Master Data Services.  
+-   Dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], les fichiers sont installés par défaut à l’emplacement suivant : *lecteur* :\Program Files\Microsoft SQL Server\130\Master Data Services.  
   
 -   Dans [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], par défaut, les fichiers sont installés à l’emplacement suivant : *lecteur*:\Program Files\Microsoft SQL Server\120\Master Data Services.  
   
@@ -52,7 +52,7 @@ ms.locfileid: "97460682"
 -   Dans [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], par défaut, les fichiers sont installés à l’emplacement suivant : *lecteur*:\Program Files\Microsoft SQL Server\Master Data Services.  
   
 ##  <a name="upgrade-without-database-engine-upgrade"></a><a name="noengine"></a> Mise à niveau sans mise à niveau du moteur de base de données  
- Dans ce scénario, vous continuez à utiliser [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] ou [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] pour héberger votre base de données MDS. Cependant, vous devez mettre à niveau le schéma de la base de données MDS, puis créer une application web de la version actuelle de [!INCLUDE[ssNoversion](../../includes/ssnoversion-md.md)] pour accéder à la base de données MDS. Après la mise à niveau, la base de données MDS n’est plus accessible par l’application web antérieure.  
+ Dans ce scénario, vous continuez à utiliser [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] ou [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] pour héberger votre base de données MDS. Cependant, vous devez mettre à niveau le schéma de la base de données MDS, puis créer une application web de la version actuelle de [!INCLUDE[ssNoversion](../../includes/ssnoversion-md.md)] pour accéder à la base de données MDS. Après la mise à niveau, la base de données MDS n’est plus accessible par l’application web antérieure.  
   
  Vous pouvez installer la version actuelle de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] et une version antérieure de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] sur le même ordinateur. Les fichiers sont installés à différents emplacements, comme indiqué dans [Emplacement du fichier](#fileLocation).  
   
@@ -79,7 +79,7 @@ ms.locfileid: "97460682"
   
     2.  Dans le volet gauche, cliquez sur **Configuration de la base de données**.  
   
-    3.  Dans le volet droit, cliquez sur **Sélectionner une base de données** et spécifiez les informations de votre instance de base de données [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] ou [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)].  
+    3.  Dans le volet droit, cliquez sur **Sélectionner une base de données** et spécifiez les informations de votre instance de base de données [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] ou [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)].  
   
     4.  Cliquez sur **Mettre à niveau la base de données** pour démarrer l' **Assistant Mise à niveau de base de données**. Pour plus d’informations, consultez [Assistant Mise à niveau de base de données &#40;Gestionnaire de configuration Master Data Services&#41;](../../master-data-services/upgrade-database-wizard-master-data-services-configuration-manager.md).  
   
@@ -96,9 +96,9 @@ ms.locfileid: "97460682"
         -   **Créer un nouveau site**. Lorsque vous créez un site web, une application web est automatiquement créée.  
   
         > [!IMPORTANT]  
-        >  Votre application web MDS existante issue d’une version précédente de SQL Server ([!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] ou [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]) est disponible à la sélection dans la version [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] du Gestionnaire de configuration Master Data Services. Vous ne devez pas sélectionner l'application Web existante, mais plutôt créer une application Web [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] pour MDS. Sinon, vous allez recevoir une erreur lorsque vous tenterez d'associer l'application Web à la base de données MDS mise à niveau, indiquant que la page demandée n'est pas accessible, car les données de configuration de la page sont erronées.  
+        >  Votre application web MDS existante issue d’une version précédente de SQL Server ([!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] ou [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]) est disponible à la sélection dans la version [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] du Gestionnaire de configuration Master Data Services. Vous ne devez pas sélectionner l'application Web existante, mais plutôt créer une application Web [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] pour MDS. Sinon, vous allez recevoir une erreur lorsque vous tenterez d'associer l'application Web à la base de données MDS mise à niveau, indiquant que la page demandée n'est pas accessible, car les données de configuration de la page sont erronées.  
         >   
-        >  Si vous voulez utiliser le même nom (alias) pour l’application web MDS que le nom de votre application web existante ([!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] ou [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]), vous devez d’abord supprimer l’application web et le pool d’applications associé d’IIS, puis créer une application web avec le même nom en utilisant la version [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] du Gestionnaire de configuration Master Data Services. Pour plus d’informations sur la suppression d’une application web et de pools d’applications d’IIS, consultez [Supprimer une application (IIS)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771205(v=ws.10)) et [Supprimer un pool d’applications (IIS)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772406(v=ws.10)).  
+        >  Si vous voulez utiliser le même nom (alias) pour l’application web MDS que le nom de votre application web existante ([!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] ou [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]), vous devez d’abord supprimer l’application web et le pool d’applications associé d’IIS, puis créer une application web avec le même nom en utilisant la version [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] du Gestionnaire de configuration Master Data Services. Pour plus d’informations sur la suppression d’une application web et de pools d’applications d’IIS, consultez [Supprimer une application (IIS)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771205(v=ws.10)) et [Supprimer un pool d’applications (IIS)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772406(v=ws.10)).  
   
 4.  Associez la nouvelle application Web à la base de données MDS mise à niveau.  
   
@@ -109,27 +109,27 @@ ms.locfileid: "97460682"
     3.  Cliquez sur **Appliquer**.  
   
 ##  <a name="upgrade-with-database-engine-upgrade"></a><a name="engine"></a> Mise à niveau avec mise à niveau du moteur de base de données  
- Dans ce scénario, vous mettez à niveau le moteur de base de données et l’application [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)] provenant d’une version antérieure de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] ou [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)].  
+ Dans ce scénario, vous mettez à niveau le moteur de base de données et l’application [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)] provenant d’une version antérieure de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] ou [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)].  
   
  **Pour effectuer la mise à niveau avec mise à niveau du moteur de base de données**  
   
 1.  **Pour [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] uniquement** : ouvrez **Panneau de configuration** > **Programmes et fonctionnalités** et désinstallez Microsoft [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)][!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)].  
   
-2.  Mettez à niveau le moteur de base de données vers [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] ou [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)]. Pour plus d’informations, consultez [Choose a Database Engine Upgrade Method](../../database-engine/install-windows/choose-a-database-engine-upgrade-method.md).  
+2.  Mettez à niveau le moteur de base de données vers [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] ou [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)]. Pour plus d’informations, consultez [Choose a Database Engine Upgrade Method](../../database-engine/install-windows/choose-a-database-engine-upgrade-method.md).  
   
 3.  Effectuez toutes les étapes présentées dans [Mise à niveau sans mise à niveau du moteur de base de données](#noengine) .  
   
 ##  <a name="upgrade-in-two-computer-scenario"></a><a name="twocomputer"></a> Effectuer une mise à niveau dans un scénario basé sur deux ordinateurs  
- Dans ce scénario, vous mettez à niveau un système où SQL Server est installé sur deux ordinateurs : un avec [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] ou [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)], et l’autre avec une version antérieure de [!INCLUDE[ssNoversion](../../includes/ssnoversion-md.md)].  
+ Dans ce scénario, vous mettez à niveau un système où SQL Server est installé sur deux ordinateurs : un avec [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] ou [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)], et l’autre avec une version antérieure de [!INCLUDE[ssNoversion](../../includes/ssnoversion-md.md)].  
   
- Si une version antérieure de [!INCLUDE[ssNoversion](../../includes/ssnoversion-md.md)] est installée, vous continuez à utiliser la version antérieure pour héberger votre base de données MDS sur un ordinateur. Cependant, vous devez mettre à niveau le schéma de la base de données MDS, puis utiliser l’application web [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] ou [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)] respectivement, pour accéder à la base de données MDS. La base de données MDS n’est plus accessible par l’application web de la version antérieure.  
+ Si une version antérieure de [!INCLUDE[ssNoversion](../../includes/ssnoversion-md.md)] est installée, vous continuez à utiliser la version antérieure pour héberger votre base de données MDS sur un ordinateur. Cependant, vous devez mettre à niveau le schéma de la base de données MDS, puis utiliser l’application web [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] ou [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)] respectivement, pour accéder à la base de données MDS. La base de données MDS n’est plus accessible par l’application web de la version antérieure.  
   
  **Pour effectuer une mise à niveau dans un scénario basé sur deux ordinateurs**  
   
 -   Effectuez toutes les étapes présentées dans [Mise à niveau sans mise à niveau du moteur de base de données](#noengine).  
   
 ##  <a name="upgrade-with-restoring-a-database-from-backup"></a><a name="restore"></a> Effectuer une mise à niveau par restauration d'une base de données à partir d'une sauvegarde  
- Dans ce scénario, [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] ou [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)] est installé avec une version antérieure sur le même ordinateur ou sur deux ordinateurs différents. Une base de données a été sauvegardée sur une version antérieure à la version [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] ou [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)] avant la mise à niveau, et la base de données doit être restaurée.  
+ Dans ce scénario, [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] ou [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)] est installé avec une version antérieure sur le même ordinateur ou sur deux ordinateurs différents. Une base de données a été sauvegardée sur une version antérieure à la version [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] ou [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)] avant la mise à niveau, et la base de données doit être restaurée.  
   
  **Pour effectuer une mise à niveau par restauration d’une base de données à partir d’une sauvegarde**  
   
@@ -150,9 +150,9 @@ ms.locfileid: "97460682"
 3.  Procédez à la mise à niveau du schéma de base de données MDS, créez une application Web et associez la nouvelle application Web à la base de données MDS mise à niveau. Pour obtenir des instructions, consultez les étapes 2 à 4 dans [Mise à niveau sans mise à niveau du moteur de base de données](#noengine)  
   
 ## <a name="troubleshooting"></a>Dépannage  
- **Problème :** quand vous ouvrez l’application web [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] ou [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], un message d’erreur s’affiche, indiquant que la version du client n’est pas compatible avec la version de la base de données.  
+ **Problème :** quand vous ouvrez l’application web [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] ou [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], un message d’erreur s’affiche, indiquant que la version du client n’est pas compatible avec la version de la base de données.  
   
- **Solution :** ce problème se produit quand une application web Master Data Manager [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] ou [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] tente d’accéder à une base de données qui a été mise à niveau vers [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)] Master Data Services. Vous devez utiliser une application web [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)] à la place.  
+ **Solution :** ce problème se produit quand une application web Master Data Manager [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] ou [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] tente d’accéder à une base de données qui a été mise à niveau vers [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)] Master Data Services. Vous devez utiliser une application web [!INCLUDE[ssSQL16](../../includes/sssqlv14-md.md)] à la place.  
   
  Ce problème peut également se produire si vous n'avez pas arrêté puis redémarré le **pool d'applications MDS** dans IIS lors de la mise à niveau du schéma de la base de données MDS. Redémarrez le **pool d'applications MDS** pour corriger le problème.  
   

@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 05bc9c4f-3947-4dd4-b823-db77519bd4d2
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 278ee9ecf44a90574d212e761089127342b2c9be
-ms.sourcegitcommit: 7a3fdd3f282f634f7382790841d2c2a06c917011
+ms.openlocfilehash: a98aaaea7d243853f31d19c0e7c3aa824ee2cc4e
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96563125"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171471"
 ---
 # <a name="backup-compression-sql-server"></a>Compression de sauvegardes (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -94,7 +94,7 @@ SELECT backup_size/compressed_backup_size FROM msdb..backupset;
 
 ## <a name="backup-compression-with-tde"></a>Compression des sauvegardes avec TDE
 
-Avec [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures, définir `MAXTRANSFERSIZE` **sur une valeur supérieure à 65536 (64 Ko)** permet d’utiliser un algorithme de compression optimisé pour les bases de données chiffrées avec [Transparent Data Encryption (TDE)](../../relational-databases/security/encryption/transparent-data-encryption.md), qui chiffre d’abord une page, la compresse, puis la chiffre de nouveau. Si `MAXTRANSFERSIZE` n’est pas spécifiée, ou si `MAXTRANSFERSIZE = 65536` (64 Ko) est utilisé, la compression de sauvegarde pour les bases de données chiffrées avec TDE compresse directement les pages chiffrées et peut ne pas fournir de bons taux de compression. Pour plus d’informations, consultez [Backup Compression for TDE-enabled Databases](/archive/blogs/sqlcat/sqlsweet16-episode-1-backup-compression-for-tde-enabled-databases).
+Avec [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures, définir `MAXTRANSFERSIZE` **sur une valeur supérieure à 65536 (64 Ko)** permet d’utiliser un algorithme de compression optimisé pour les bases de données chiffrées avec [Transparent Data Encryption (TDE)](../../relational-databases/security/encryption/transparent-data-encryption.md), qui chiffre d’abord une page, la compresse, puis la chiffre de nouveau. Si `MAXTRANSFERSIZE` n’est pas spécifiée, ou si `MAXTRANSFERSIZE = 65536` (64 Ko) est utilisé, la compression de sauvegarde pour les bases de données chiffrées avec TDE compresse directement les pages chiffrées et peut ne pas fournir de bons taux de compression. Pour plus d’informations, consultez [Backup Compression for TDE-enabled Databases](/archive/blogs/sqlcat/sqlsweet16-episode-1-backup-compression-for-tde-enabled-databases).
 
 À partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU5, la définition de `MAXTRANSFERSIZE` n’est plus nécessaire pour activer cet algorithme de compression optimisé avec TDE. Si la commande de sauvegarde est spécifiée `WITH COMPRESSION` ou que la configuration serveur de *compression par défaut des sauvegardes* est définie sur 1, `MAXTRANSFERSIZE` sera automatiquement augmentée à 128 K pour activer l’algorithme optimisé. Si `MAXTRANSFERSIZE` est spécifiée dans la commande Backup avec une valeur > 64 Ko, la valeur fournie est respectée. En d’autres termes, SQL Server ne diminue jamais automatiquement la valeur, elle l’augmente uniquement. Si vous avez besoin de sauvegarder une base de données chiffrée TDE avec `MAXTRANSFERSIZE = 65536`, vous devez spécifier `WITH NO_COMPRESSION` ou vous assurer que la configuration serveur de *compression par défaut des sauvegardes* est définie sur 0.
 

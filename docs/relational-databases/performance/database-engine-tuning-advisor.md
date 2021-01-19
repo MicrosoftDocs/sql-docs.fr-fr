@@ -12,12 +12,12 @@ f1_keywords:
 ms.assetid: 50dd0a0b-a407-4aeb-bc8b-b02a793aa30a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 0fd814ec47548406eef0b8436751a034c97f4717
-ms.sourcegitcommit: 0e0cd9347c029e0c7c9f3fe6d39985a6d3af967d
+ms.openlocfilehash: f3b5176bb0b9ac123090f032e0908d57155ff592
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96505297"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172181"
 ---
 # <a name="database-engine-tuning-advisor"></a>Database Engine Tuning Advisor
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -73,7 +73,7 @@ L'Assistant Paramétrage du moteur de base de données est conçu pour gérer le
  Version d'invite de commandes de l'Assistant Paramétrage du moteur de base de données. L'utilitaire **dta** est conçu pour permettre l'utilisation de l'Assistant Paramétrage du moteur de base de données dans des applications et des scripts.  
   
  **charge de travail**  
- Fichier de script Transact-SQL, fichier de trace ou table de trace qui contient une charge de travail représentative pour les bases de données à paramétrer. À compter de [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], vous pouvez spécifier le cache du plan comme charge de travail.  À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], vous pouvez [spécifier le magasin de requêtes comme charge de travail](../../relational-databases/performance/tuning-database-using-workload-from-query-store.md). 
+ Fichier de script Transact-SQL, fichier de trace ou table de trace qui contient une charge de travail représentative pour les bases de données à paramétrer. À compter de [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], vous pouvez spécifier le cache du plan comme charge de travail.  À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], vous pouvez [spécifier le magasin de requêtes comme charge de travail](../../relational-databases/performance/tuning-database-using-workload-from-query-store.md). 
   
  **Fichier d'entrée XML**  
  Fichier au format XML que l'Assistant Paramétrage du moteur de base de données peut utiliser pour paramétrer les charges de travail. Le fichier d’entrée XML prend en charge les options avancées de paramétrage disponibles dans l’interface utilisateur graphique ou l’utilitaire **dta** .  

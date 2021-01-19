@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 306b6278-e54f-42e6-b746-95a9315e0cbe
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: d7de8dcd6291330e2e18136e2c16e16b36f3ef71
-ms.sourcegitcommit: 0e0cd9347c029e0c7c9f3fe6d39985a6d3af967d
+ms.openlocfilehash: 4028f19dc9d7ac319b083b5e6077021da59e7a9b
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96506563"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172311"
 ---
 # <a name="resource-governor-resource-pool"></a>Pool de ressources du gouverneur de ressources
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -105,7 +105,7 @@ Le pool interne représente les ressources consommées par [!INCLUDE[ssNoVersion
   
 **Pool par défaut**  
   
-Le pool par défaut est le premier pool d'utilisateur prédéfini. Avant toute configuration, le pool par défaut contient seulement le groupe par défaut. Le pool par défaut ne peut pas être créé ni supprimé, mais il peut être modifié. Il peut contenir des groupes définis par l'utilisateur en plus du groupe par défaut. À partir de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] , il existe un pool de ressources par défaut pour les opérations [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] courantes et un pool de ressources externes par défaut pour les processus externes, tels que l’exécution de scripts R.  
+Le pool par défaut est le premier pool d'utilisateur prédéfini. Avant toute configuration, le pool par défaut contient seulement le groupe par défaut. Le pool par défaut ne peut pas être créé ni supprimé, mais il peut être modifié. Il peut contenir des groupes définis par l'utilisateur en plus du groupe par défaut. À partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] , il existe un pool de ressources par défaut pour les opérations [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] courantes et un pool de ressources externes par défaut pour les processus externes, tels que l’exécution de scripts R.  
   
 > [!NOTE]  
 >  Le groupe par défaut est modifiable, mais il ne peut pas être déplacé hors du pool par défaut.  

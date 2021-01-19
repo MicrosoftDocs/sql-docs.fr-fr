@@ -12,12 +12,12 @@ ms.assetid: 21fd153b-116d-47fc-a926-f1528299a391
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 702d2adcfda0f75937b9629467f14ca66f4acdad
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0ca8263c5d75fca3bc59164d8d3ff7acaa9c5f2e
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97407467"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172731"
 ---
 # <a name="columnstore-indexes---data-warehouse"></a>Index columnstore - Entrepôt de données
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "97407467"
   Les index columnstore, conjointement avec le partitionnement, sont essentiels pour générer un entrepôt de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
   
 ## <a name="whats-new"></a>Nouveautés  
- [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] présente ces fonctionnalités pour les améliorations des performances de columnstore :  
+ [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] présente ces fonctionnalités pour les améliorations des performances de columnstore :  
   
 -   Always On prend en charge l’interrogation d’un index columnstore sur un réplica secondaire lisible.  
 -   MARS (Multiple Active Result Sets) prend en charge les index columnstore.  
@@ -39,7 +39,7 @@ ms.locfileid: "97407467"
 -   Isolation d’instantané pour les niveaux de compatibilité de base de données 130 et supérieurs.  
   
 ## <a name="improve-performance-by-combining-nonclustered-and-columnstore-indexes"></a>Amélioration des performances grâce à l’association d’index non cluster et columnstore  
- À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], vous pouvez définir des index non cluster sur un index columnstore en cluster.   
+ À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], vous pouvez définir des index non cluster sur un index columnstore en cluster.   
   
 ### <a name="example-improve-efficiency-of-table-seeks-with-a-nonclustered-index"></a>Exemple : Améliorer l’efficacité des recherches dans la table avec un index non cluster  
  Pour améliorer l’efficacité des recherches dans la table dans un entrepôt de données, vous pouvez créer un non cluster conçu pour exécuter des requêtes plus efficaces avec les recherches dans la table. Par exemple, les requêtes pour rechercher des valeurs correspondantes ou retourner une petite plage de valeurs sont plus performantes avec un index B-tree qu’avec un index columnstore. Elles ne nécessitent pas une analyse complète de la table via l’index columnstore et elles retournent le résultat correct plus rapidement en effectuant une recherche binaire à l’aide d’un index B-tree.  
@@ -101,7 +101,7 @@ WITH CHECK ADD FOREIGN KEY([AccountKey]) REFERENCES my_dimension(Accountkey);
 ```  
   
 ### <a name="improve-performance-by-enabling-row-level-and-row-group-level-locking"></a>Amélioration des performances avec l’activation du verrouillage au niveau de la ligne et au niveau du groupe de lignes  
- Pour compléter l’index non cluster sur une fonctionnalité d’index columnstore, [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] offre une fonctionnalité de verrouillage granulaire pour les opérations de sélection, de mise à jour et de suppression. Les requêtes peuvent être exécutées avec le verrouillage au niveau de la ligne sur les recherches d’index avec un index non cluster et avec le verrouillage au niveau du groupe de lignes sur les analyses de tables complètes avec l’index columnstore. Cela permet d’obtenir une concurrence en lecture/écriture plus élevée avec le verrouillage au niveau de la ligne et au niveau du groupe de ligne utilisé de façon appropriée.  
+ Pour compléter l’index non cluster sur une fonctionnalité d’index columnstore, [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] offre une fonctionnalité de verrouillage granulaire pour les opérations de sélection, de mise à jour et de suppression. Les requêtes peuvent être exécutées avec le verrouillage au niveau de la ligne sur les recherches d’index avec un index non cluster et avec le verrouillage au niveau du groupe de lignes sur les analyses de tables complètes avec l’index columnstore. Cela permet d’obtenir une concurrence en lecture/écriture plus élevée avec le verrouillage au niveau de la ligne et au niveau du groupe de ligne utilisé de façon appropriée.  
   
 ```sql  
 --Granular locking example  

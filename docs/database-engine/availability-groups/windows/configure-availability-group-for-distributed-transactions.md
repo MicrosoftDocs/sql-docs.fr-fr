@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 93876b488d5e265bca363d213c04cb0611c185f4
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 5587622f0f61b7b7063b246d0599d46cc8c16f0c
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642175"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170781"
 ---
 # <a name="configure-distributed-transactions-for-an-always-on-availability-group"></a>Configurer les transactions distribuées pour un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -31,9 +31,9 @@ ms.locfileid: "97642175"
 Afin de garantir des transactions distribuées, le groupe de disponibilité doit être configuré pour inscrire les bases de données en tant que gestionnaires de ressources de transactions distribuées.  
 
 >[!NOTE]
->[!INCLUDE[SQL2016](../../../includes/sssql15-md.md)]Service Pack 2 et versions ultérieures fournissent une prise en charge complète des transactions distribuées dans les groupes de disponibilité. Dans les versions de [!INCLUDE[SQL2016](../../../includes/sssql15-md.md)] antérieures au Service Pack 2, les transactions distribuées entre bases de données (autrement dit, les transactions qui utilisent des bases de données sur la même instance de SQL Server) impliquant une base de données dans un groupe de disponibilité ne sont pas prises en charge. [!INCLUDE[SQL2017](../../../includes/sssqlv14-md.md)] n’a pas cette limitation. 
+>[!INCLUDE[SQL2016](../../../includes/sssql16-md.md)]Service Pack 2 et versions ultérieures fournissent une prise en charge complète des transactions distribuées dans les groupes de disponibilité. Dans les versions de [!INCLUDE[SQL2016](../../../includes/sssql16-md.md)] antérieures au Service Pack 2, les transactions distribuées entre bases de données (autrement dit, les transactions qui utilisent des bases de données sur la même instance de SQL Server) impliquant une base de données dans un groupe de disponibilité ne sont pas prises en charge. [!INCLUDE[SQL2017](../../../includes/sssqlv14-md.md)] n’a pas cette limitation. 
 >
->Dans [!INCLUDE[SQL2016](../../../includes/sssql15-md.md)], les étapes de configuration sont les mêmes que dans [!INCLUDE[SQL2017](../../../includes/sssqlv14-md.md)].
+>Dans [!INCLUDE[SQL2016](../../../includes/sssql16-md.md)], les étapes de configuration sont les mêmes que dans [!INCLUDE[SQL2017](../../../includes/sssqlv14-md.md)].
 
 Dans une transaction distribuée, les applications clientes utilisent Microsoft Distributed Transaction Coordinator (MS DTC ou DTC) afin de garantir la cohérence transactionnelle entre plusieurs sources de données. DTC est un service disponible sur les systèmes d’exploitation Windows Server pris en charge. Pour une transaction distribuée, DTC est le *coordinateur de la transaction*. Normalement, une instance de SQL Server est le *gestionnaire de ressources*. Quand une base de données est dans un groupe de disponibilité, chaque base de données doit être son propre gestionnaire de ressources. 
 
@@ -45,7 +45,7 @@ DTC n’est pas impliqué dans le traitement d’un groupe de disponibilité sau
 
 Avant de configurer un groupe de disponibilité pour prendre en charge les transactions distribuées, vous devez respecter les prérequis suivants :
 
-* Toutes les instances de [!INCLUDE[SQLServer](../../../includes/ssnoversion-md.md)] qui participent à la transaction distribuée doivent être [!INCLUDE[SQL2016](../../../includes/sssql15-md.md)] ou ultérieur.
+* Toutes les instances de [!INCLUDE[SQLServer](../../../includes/ssnoversion-md.md)] qui participent à la transaction distribuée doivent être [!INCLUDE[SQL2016](../../../includes/sssql16-md.md)] ou ultérieur.
 
 * Les groupes de disponibilité doivent s’exécuter sur Windows Server 2016 ou Windows Server 2012 R2. Pour Windows Server 2012 R2, vous devez installer la mise à jour KB3090973 disponible à l’adresse [https://support.microsoft.com/kb/3090973](https://support.microsoft.com/kb/3090973).  
 
@@ -55,7 +55,7 @@ Configurez un groupe de disponibilité pour prendre en charge les transactions d
 
 
 
-Vous pouvez créer un groupe de disponibilité pour les transactions distribuées sur [!INCLUDE[SQL2016](../../../includes/sssql15-md.md)] ou ultérieur. Pour créer un groupe de disponibilité pour des transactions distribuées, incluez `DTC_SUPPORT = PER_DB` dans la définition du groupe de disponibilité. Le script suivant crée un groupe de disponibilité pour des transactions distribuées. 
+Vous pouvez créer un groupe de disponibilité pour les transactions distribuées sur [!INCLUDE[SQL2016](../../../includes/sssql16-md.md)] ou ultérieur. Pour créer un groupe de disponibilité pour des transactions distribuées, incluez `DTC_SUPPORT = PER_DB` dans la définition du groupe de disponibilité. Le script suivant crée un groupe de disponibilité pour des transactions distribuées. 
 
 ```sql
 CREATE AVAILABILITY GROUP MyAG
@@ -91,7 +91,7 @@ ALTER AVAILABILITY GROUP MyaAG
 ```
 
 >[!NOTE]
->Depuis [!INCLUDE[SQL2016](../../../includes/sssql15-md.md)] Service Pack 2, vous pouvez modifier un groupe de disponibilité pour les transactions distribuées. Pour les versions de [!INCLUDE[SQL2016](../../../includes/sssql15-md.md)] antérieures au Service Pack 2, vous devez supprimer et recréer le groupe de disponibilité avec le paramètre `DTC_SUPPORT = PER_DB`. 
+>Depuis [!INCLUDE[SQL2016](../../../includes/sssql16-md.md)] Service Pack 2, vous pouvez modifier un groupe de disponibilité pour les transactions distribuées. Pour les versions de [!INCLUDE[SQL2016](../../../includes/sssql16-md.md)] antérieures au Service Pack 2, vous devez supprimer et recréer le groupe de disponibilité avec le paramètre `DTC_SUPPORT = PER_DB`. 
 
 Pour désactiver les transactions distribuées, utilisez la commande Transact-SQL suivante :
 

@@ -32,12 +32,12 @@ helpviewer_keywords:
 ms.assetid: 6405e7ec-0b5b-4afd-9792-1bfa5a2491f6
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: d731a2b41fb98d5ccf5ac9890e9c6de5ee94eacf
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c787027e1cebf844339a8cdc70bd23a6d8c974bd
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100870"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171651"
 ---
 # <a name="create-endpoint-transact-sql"></a>CREATE ENDPOINT (Transact-SQL)
 
@@ -201,7 +201,7 @@ FOR DATABASE_MIRRORING (
  Vous pouvez éventuellement utiliser l'argument ALGORITHM pour spécifier le type de chiffrement utilisé par le point de terminaison, comme suit :  
   
  **AES**  
- Indique que le point de terminaison doit utiliser l'algorithme AES. Cette option est utilisée par défaut dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures.  
+ Indique que le point de terminaison doit utiliser l'algorithme AES. Cette option est utilisée par défaut dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.  
   
  RC4  
  Indique que le point de terminaison doit utiliser l'algorithme RC4. Il s’agit de l’option par défaut jusqu’à [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)].  

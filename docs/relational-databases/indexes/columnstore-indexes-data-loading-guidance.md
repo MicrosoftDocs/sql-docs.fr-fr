@@ -12,12 +12,12 @@ ms.assetid: b29850b5-5530-498d-8298-c4d4a741cdaf
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 3dd7431a208db3f0da1e2ee53522920319b40af0
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b6a0b60d8b690490074187d977d9bd636d88aea3
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97407470"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172681"
 ---
 # <a name="columnstore-indexes---data-loading-guidance"></a>Index columnstore - Conseils en matière de chargement de données
 
@@ -89,7 +89,7 @@ INSERT INTO <columnstore index>
 SELECT <list of columns> FROM <Staging Table>  
 ```  
   
- Cette commande charge les données dans l’index columnstore de manière similaire à BCP ou à une insertion en bloc, mais dans un lot unique. Si le nombre de lignes de la table de mise en lots est inférieur à 102 400, les lignes sont chargées dans un rowgroup delta. Dans le cas contraire, elles sont chargées directement dans un rowgroup compressé. Limitation importante : cette opération `INSERT` était à thread unique. Pour charger des données en parallèle, vous pouviez créer plusieurs tables de mise en lots ou envoyer des instructions `INSERT`/`SELECT` sans chevauchement des plages de lignes de la table de mise en lots. Cette limitation disparaît avec [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]. La commande suivante charge les données de la table de mise en lots en parallèle, mais vous devez spécifier l’option `TABLOCK`. Cela peut sembler contradictoire avec ce qui a été dit précédemment concernant le chargement en masse, mais la principale différence réside dans le fait que la charge de données en parallèle de la table de mise en lots est exécutée dans le cadre de la même transaction.
+ Cette commande charge les données dans l’index columnstore de manière similaire à BCP ou à une insertion en bloc, mais dans un lot unique. Si le nombre de lignes de la table de mise en lots est inférieur à 102 400, les lignes sont chargées dans un rowgroup delta. Dans le cas contraire, elles sont chargées directement dans un rowgroup compressé. Limitation importante : cette opération `INSERT` était à thread unique. Pour charger des données en parallèle, vous pouviez créer plusieurs tables de mise en lots ou envoyer des instructions `INSERT`/`SELECT` sans chevauchement des plages de lignes de la table de mise en lots. Cette limitation disparaît avec [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]. La commande suivante charge les données de la table de mise en lots en parallèle, mais vous devez spécifier l’option `TABLOCK`. Cela peut sembler contradictoire avec ce qui a été dit précédemment concernant le chargement en masse, mais la principale différence réside dans le fait que la charge de données en parallèle de la table de mise en lots est exécutée dans le cadre de la même transaction.
   
 ```sql  
 INSERT INTO <columnstore index> WITH (TABLOCK) 

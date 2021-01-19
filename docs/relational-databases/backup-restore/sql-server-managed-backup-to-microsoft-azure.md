@@ -11,19 +11,19 @@ ms.topic: conceptual
 ms.assetid: afa01165-39e0-4efe-ac0e-664edb8599fd
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 32a48093f40d048532ff58a1f91f450e52d6019b
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: ce723dfbf0171d3c1885c1574bf681fbb2c8e714
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96129012"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172561"
 ---
 # <a name="sql-server-managed-backup-to-microsoft-azure"></a>Gestion de sauvegarde de SQL Server sur Microsoft Azure
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] gère et automatise les sauvegardes SQL Server dans le stockage d’objets blob Microsoft Azure. Vous pouvez choisir d’autoriser SQL Server à déterminer la planification de sauvegarde en fonction de la charge de travail des transactions de votre base de données. Ou vous pouvez utiliser les options avancées pour définir une planification. Les paramètres de rétention déterminent la durée pendant laquelle les sauvegardes sont stockées dans le stockage d’objets blob Azure. [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] prend en charge la restauration limitée dans le temps pour la période de rétention spécifiée.  
   
- À partir de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], les procédures et le comportement sous-jacent de [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] ont changé. Pour plus d’informations, consultez [Migrer les paramètres de gestion de sauvegarde de SQL Server 2014 vers SQL Server 2016](../../relational-databases/backup-restore/migrate-sql-server-2014-managed-backup-settings-to-sql-server-2016.md).  
+ À partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], les procédures et le comportement sous-jacent de [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] ont changé. Pour plus d’informations, consultez [Migrer les paramètres de gestion de sauvegarde de SQL Server 2014 vers SQL Server 2016](../../relational-databases/backup-restore/migrate-sql-server-2014-managed-backup-settings-to-sql-server-2016.md).  
   
 > [!TIP]  
 >  [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] est recommandée pour les instances de SQL Server exécutées sur des machines virtuelles Microsoft Azure.  

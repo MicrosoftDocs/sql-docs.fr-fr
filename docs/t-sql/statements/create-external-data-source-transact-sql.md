@@ -20,12 +20,12 @@ helpviewer_keywords:
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 23f9507c0db019383aa1cef148a169d83e4a53be
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 74a6b4985ab31d69813e305c92ee80ae8bca75d2
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100808"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171641"
 ---
 # <a name="create-external-data-source-transact-sql"></a>CREATE EXTERNAL DATA SOURCE (Transact-SQL)
 
@@ -63,7 +63,7 @@ Crée une source de données externe pour des requêtes PolyBase. Des sources de
 - Virtualisation des données et chargement des données à l’aide de [PolyBase][intro_pb]
 - Les opérations de chargement en bloc à l’aide de `BULK INSERT` ou `OPENROWSET`
 
-**S’applique à** : À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]
+**S’applique à** : À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -91,8 +91,8 @@ Fournit le protocole de connectivité et le chemin d’accès à la source de do
 
 | Source de données externe    | Préfixe de l’emplacement | Chemin d’emplacement                                         | Emplacements pris en charge par produit / service |
 | ----------------------- | --------------- | ----------------------------------------------------- | ---------------------------------------- |
-| Cloudera ou Hortonworks | `hdfs`          | `<Namenode>[:port]`                                   | À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]                       |
-| Compte de stockage Azure (V2) | `wasb[s]`       | `<container>@<storage_account>.blob.core.windows.net` | À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]         espace de noms hiérarchique **pas** pris en charge |
+| Cloudera ou Hortonworks | `hdfs`          | `<Namenode>[:port]`                                   | À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]                       |
+| Compte de stockage Azure (V2) | `wasb[s]`       | `<container>@<storage_account>.blob.core.windows.net` | À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]         espace de noms hiérarchique **pas** pris en charge |
 | [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]              | `sqlserver`     | `<server_name>[\<instance_name>][:port]`              | À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]                       |
 | Oracle                  | `oracle`        | `<server_name>[:port]`                                | À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]                       |
 | Teradata                | `teradata`      | `<server_name>[:port]`                                | À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]                       |
@@ -212,7 +212,7 @@ Actuellement un jeton SAP avec le type `HADOOP` n’est pas pris en charge. Il e
 
 `Msg 105019, Level 16, State 1 - EXTERNAL TABLE access failed due to internal error: 'Java exception raised on call to HdfsBridge_Connect. Java exception message: Parameters provided to connect to the Azure storage account are not valid.: Error [Parameters provided to connect to the Azure storage account are not valid.] occurred while accessing external file.'`
 
-## <a name="examples-starting-with-sssql15"></a>Exemples (à partir de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)])
+## <a name="examples-starting-with-sssql15"></a>Exemples (à partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)])
 
 > [!IMPORTANT]
 > Pour plus d’informations sur l’installation et l’activation de PolyBase, consultez [Installer PolyBase sur Windows](../../relational-databases/polybase/polybase-installation.md)

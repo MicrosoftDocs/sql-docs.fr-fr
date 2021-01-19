@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: d304c94d-3ab4-47b0-905d-3c8c2aba9db6
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 3a268de26245955dd6be838e822f1cb84b693324
-ms.sourcegitcommit: d35d0901296580bfceda6e0ab2e14cf2b7e99a0f
+ms.openlocfilehash: f612518baa1d933cfe174af58426db99e01f61d7
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92497024"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171211"
 ---
 # <a name="durability-for-memory-optimized-tables"></a>Durabilité pour les tables optimisées en mémoire
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "92497024"
   
  Lorsqu'une ligne est supprimée ou mise à jour, elle n'est pas supprimée ou modifiée sur place dans le fichier de données, mais les lignes supprimées sont suivies dans un autre type de fichier : le fichier delta. Les opérations de mise à jour sont traitées comme un tuple d'opérations de suppression et d'insertion pour chaque ligne. Cela supprime les E/S aléatoires dans le fichier de données.  
  
-   Taille : Chaque fichier de données a une taille d'environ 128 Mo pour les ordinateurs avec une capacité de mémoire supérieure à 16 Go, et à 16 Mo pour les ordinateurs avec une capacité de mémoire inférieure ou égale à 16 Go. Dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] , SQL Server peut utiliser le mode de point de contrôle de grande taille s’il juge le sous-système de stockage assez rapide. En mode de point de contrôle de grande taille, les fichiers de données sont dimensionnés à 1 Go. Cela permet une plus grande efficacité du sous-système de stockage pour les charges de travail à débit élevé.  
+   Taille : Chaque fichier de données a une taille d'environ 128 Mo pour les ordinateurs avec une capacité de mémoire supérieure à 16 Go, et à 16 Mo pour les ordinateurs avec une capacité de mémoire inférieure ou égale à 16 Go. Dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] , SQL Server peut utiliser le mode de point de contrôle de grande taille s’il juge le sous-système de stockage assez rapide. En mode de point de contrôle de grande taille, les fichiers de données sont dimensionnés à 1 Go. Cela permet une plus grande efficacité du sous-système de stockage pour les charges de travail à débit élevé.  
    
 ### <a name="the-delta-file"></a>Fichier delta  
  Chaque fichier de données est couplé à un fichier delta ayant la même plage de transactions et effectue le suivi des lignes supprimées insérées par les transactions dans cette plage. Ces données et ce fichier delta sont appelés « paire de fichiers de point de contrôle » (CFP, Checkpoint File Pair). Il s'agit de l'unité d'allocation et de désallocation, ainsi que de l'unité pour les opérations de fusion. Par exemple, un fichier delta correspondant à la plage de transaction (100, 200) enregistre les lignes supprimées qui avaient été insérées par les transactions de la plage (100, 200). Comme pour les fichiers de données, le fichier delta est accessible de manière séquentielle.  
@@ -50,7 +50,7 @@ ms.locfileid: "92497024"
  Lorsqu'une ligne est supprimée, elle n'est pas supprimée du fichier de données mais une référence à la ligne est ajoutée au fichier delta associé à la plage de transaction où la ligne de données a été insérée. Étant donné que la ligne à supprimer existe déjà dans le fichier de données, le fichier delta stocke uniquement les informations de référence sur `{inserting_tx_id, row_id, deleting_tx_id }` et suit l'ordre des opérations de suppression ou de mise à jour d'origine du journal des transactions.  
   
 
- Taille : chaque fichier delta a une taille d’environ 16 Mo pour les ordinateurs avec une capacité de mémoire supérieure à 16 Go, et à 1 Mo pour les ordinateurs avec une capacité de mémoire inférieure ou égale à 16 Go. À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] , SQL Server peut utiliser le mode de point de contrôle volumineux s’il juge le sous-système de stockage est assez rapide. En mode de point de contrôle de grande taille, les fichiers delta sont dimensionnés à 128 Mo.  
+ Taille : chaque fichier delta a une taille d’environ 16 Mo pour les ordinateurs avec une capacité de mémoire supérieure à 16 Go, et à 1 Mo pour les ordinateurs avec une capacité de mémoire inférieure ou égale à 16 Go. À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] , SQL Server peut utiliser le mode de point de contrôle volumineux s’il juge le sous-système de stockage est assez rapide. En mode de point de contrôle de grande taille, les fichiers delta sont dimensionnés à 128 Mo.  
  
 ## <a name="populating-data-and-delta-files"></a>Remplissage des fichiers de données et des fichiers delta  
  Les fichiers de données et delta sont remplis en fonction des enregistrements du journal des transactions générés par les transactions validées sur les tables optimisées en mémoire ; des informations concernant les lignes insérées et supprimées sont ajoutées dans les fichiers de données et delta appropriés. Contrairement aux tables sur disque où les pages de données/index sont vidées avec des E/S aléatoires lorsque le point de contrôle est effectué, la persistance de la table optimisée en mémoire est une opération en arrière-plan continue. Plusieurs fichiers delta sont accédés car une transaction peut supprimer ou mettre à jour toute ligne ayant été insérée par une transaction précédente. Les informations de suppression sont toujours ajoutées à la fin du fichier delta. Par exemple, une transaction avec un horodateur de validation de 600 insère une nouvelle ligne et supprime les lignes insérées par les transactions ayant un horodateur de validation de 150, 250 et 450, comme le montre l'illustration ci-après. Les quatre opérations d'E/S de fichier (trois pour les lignes supprimées et une pour les nouvelles lignes insérées) sont des opérations Append-Only sur les fichiers de données et delta correspondants.  
@@ -61,7 +61,7 @@ ms.locfileid: "92497024"
  Les paires de fichiers de données et delta sont accessibles dans les cas suivants.  
   
  Processus de point de contrôle hors connexion  
- Ce thread applique les modifications apportées aux lignes de données optimisées en mémoire (insertions et suppressions) dans les paires de fichiers de données et delta correspondantes. Dans [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] , il y a un seul processus de point de contrôle hors connexion ; à compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] , il en existe plusieurs.  
+ Ce thread applique les modifications apportées aux lignes de données optimisées en mémoire (insertions et suppressions) dans les paires de fichiers de données et delta correspondantes. Dans [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] , il y a un seul processus de point de contrôle hors connexion ; à compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] , il en existe plusieurs.  
   
  Opération de fusion  
  L'opération fusionne une ou plusieurs paires de fichiers de données et delta afin de créer une nouvelle paire de fichiers de données et delta.  

@@ -12,25 +12,25 @@ ms.assetid: a4891c57-56bb-49f4-9bb5-f11b745279e5
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 251af732e6c55ee2b5567bb181859b1fdec1360a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 3e72e67bf033ecef94b318d69b31f33604572cf8
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97485221"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172061"
 ---
 # <a name="scalability"></a>Extensibilité
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
-[!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] comprend plusieurs améliorations concernant la scalabilité au niveau du stockage sur disque pour les tables à mémoire optimisée. 
+[!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] comprend plusieurs améliorations concernant la scalabilité au niveau du stockage sur disque pour les tables à mémoire optimisée. 
 
 ## <a name="multiple-threads-to-persist-memory-optimized-tables"></a>Conservation des tables mémoire optimisées à l’aide de plusieurs threads  
   
 [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] comprenait un seul thread de point de contrôle hors connexion qui recherchait dans le journal des transactions les modifications des tables à mémoire optimisée et qui les conservait dans des fichiers de point de contrôle (tels que des fichiers de données et des fichiers delta). Dans des ordinateurs avec un nombre de cœurs plus élevé, ce thread de point de contrôle hors connexion unique risquait de prendre du retard.  
   
-À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], plusieurs threads simultanés sont responsables de la conservation des modifications apportées aux tables à mémoire optimisée.  
+À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], plusieurs threads simultanés sont responsables de la conservation des modifications apportées aux tables à mémoire optimisée.  
   
 ## <a name="multi-threaded-recovery"></a>Récupération multithread
-Dans la version précédente de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], la demande de journalisation dans le cadre de l’opération de récupération était monothread. À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], cette demande de journalisation est multithread.  
+Dans la version précédente de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], la demande de journalisation dans le cadre de l’opération de récupération était monothread. À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], cette demande de journalisation est multithread.  
   
 ## <a name="merge-operation"></a>Opération de fusion  
 L’opération de fusion est désormais multithread.  

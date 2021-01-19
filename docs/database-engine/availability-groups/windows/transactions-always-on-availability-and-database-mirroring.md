@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 9f7ed895-ad65-43e3-ba08-00d7bff1456d
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 79e04e64a4fc89bb3e745d67b1cdbe929850b6ec
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: f2295f8694a9573b0e9c541ea817e9e03e70f83e
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642964"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171081"
 ---
 # <a name="transactions---availability-groups-and-database-mirroring"></a>Transactions - Groupes de disponibilité Always On et mise en miroir de bases de données
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -34,9 +34,9 @@ Cet article décrit la prise en charge des transactions entre bases de données 
 SQL Server 2017 prend en charge les transactions distribuées pour les bases de données des groupes de disponibilité. Cette prise en charge comprend les bases de données sur la même instance de SQL Server ou les bases de données sur différentes instances de SQL Server. Les transactions distribuées ne sont pas prises en charge pour les bases de données configurées pour la mise en miroir de bases de données.
 
 > [!NOTE]
-> [!INCLUDE[SQL Server 2016](../../../includes/sssql15-md.md)]Service Pack 2 et versions ultérieures fournissent une prise en charge complète des transactions distribuées dans les groupes de disponibilité. 
+> [!INCLUDE[SQL Server 2016](../../../includes/sssql16-md.md)]Service Pack 2 et versions ultérieures fournissent une prise en charge complète des transactions distribuées dans les groupes de disponibilité. 
 > 
-> Dans les versions de [!INCLUDE[SQL Server 2016](../../../includes/sssql15-md.md)] antérieures au Service Pack 2, les transactions distribuées entre bases de données (autrement dit, les transactions qui utilisent des bases de données sur la même instance de SQL Server) impliquant une base de données dans un groupe de disponibilité ne sont pas prises en charge.
+> Dans les versions de [!INCLUDE[SQL Server 2016](../../../includes/sssql16-md.md)] antérieures au Service Pack 2, les transactions distribuées entre bases de données (autrement dit, les transactions qui utilisent des bases de données sur la même instance de SQL Server) impliquant une base de données dans un groupe de disponibilité ne sont pas prises en charge.
 
 Pour configurer un groupe de disponibilité pour les transactions distribuées, consultez [Configurer de groupe de disponibilité pour les transactions distribuées](configure-availability-group-for-distributed-transactions.md).
 

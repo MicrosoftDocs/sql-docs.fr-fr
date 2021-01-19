@@ -17,12 +17,12 @@ ms.assetid: ''
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-2017||>=sql-server-linux-2017'
-ms.openlocfilehash: 16f81a4ac6265d37cb9e5d50a6500ca68740e394
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5d9f07f96f83767a84f7ee0128d674f4ab955eed
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97438842"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170851"
 ---
 # <a name="deprecated-database-engine-features-in-sql-server-2017"></a>Fonctionnalités du moteur de base de données dépréciées dans SQL Server 2017
 
@@ -46,7 +46,7 @@ WHERE object_name = 'SQLServer:Deprecated Features';
 ```
 
 > [!NOTE]
-> Cette liste est identique à la liste [!INCLUDE[sssql15-md](../includes/sssql15-md.md)]. Aucune nouvelle fonctionnalité du moteur de base de données supprimée ou dépréciée n’a été annoncée pour [!INCLUDE[sssqlv14-md](../includes/sssqlv14-md.md)].
+> Cette liste est identique à la liste [!INCLUDE[sssql15-md](../includes/sssql16-md.md)]. Aucune nouvelle fonctionnalité du moteur de base de données supprimée ou dépréciée n’a été annoncée pour [!INCLUDE[sssqlv14-md](../includes/sssqlv14-md.md)].
 
 ## <a name="features-deprecated-in-the-next-version-of-sql-server"></a>Fonctionnalités dépréciées dans la prochaine version de SQL Server
 

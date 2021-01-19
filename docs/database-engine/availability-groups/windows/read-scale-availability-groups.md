@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: ''
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 4ccfc459fb5dbbc2a607fd0eb87853a776820098
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: c8f5f050598129e674a74e8b924c6b2ba274cb34
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642479"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171121"
 ---
 # <a name="use-read-scale-with-always-on-availability-groups"></a>Utiliser une échelle lecture avec des groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -30,7 +30,7 @@ Les applications clientes qui exécutent des charges de travail de reporting et 
 
 ## <a name="read-scale-availability-groups-without-cluster"></a>Groupes de disponibilité avec échelle lecture sans cluster
 
-Dans [!INCLUDE[sssql15-md](../../../includes/sssql15-md.md)] et antérieur, tous les groupes de disponibilité nécessitaient un cluster. Ce cluster assurait la continuité de l’activité avec la haute disponibilité et la récupération d’urgence (HADR). De plus, les réplicas secondaires étaient configurés pour des opérations de lecture. Même si la haute disponibilité n’était pas la finalité, une charge opérationnelle considérable était utilisée pour configurer et exécuter un cluster. SQL Server 2017 introduit les groupes de disponibilité avec échelle lecture sans aucun cluster. 
+Dans [!INCLUDE[sssql15-md](../../../includes/sssql16-md.md)] et antérieur, tous les groupes de disponibilité nécessitaient un cluster. Ce cluster assurait la continuité de l’activité avec la haute disponibilité et la récupération d’urgence (HADR). De plus, les réplicas secondaires étaient configurés pour des opérations de lecture. Même si la haute disponibilité n’était pas la finalité, une charge opérationnelle considérable était utilisée pour configurer et exécuter un cluster. SQL Server 2017 introduit les groupes de disponibilité avec échelle lecture sans aucun cluster. 
 
 Si l’impératif de votre entreprise est de préserver les ressources pour les charges de travail critiques qui s’exécutent sur le réplica principal, vous pouvez désormais utiliser le routage en lecture seule ou vous connecter directement à des réplicas secondaires lisibles. Vous n’avez pas besoin de dépendre de l’intégration à une technologie de clustering. Ces nouvelles fonctionnalités sont disponibles pour SQL Server 2017 exécuté sur les plateformes Windows et Linux.
 

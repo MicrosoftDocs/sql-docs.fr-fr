@@ -12,17 +12,17 @@ ms.assetid: d2546e40-fdfc-414b-8196-76ed1f124bf5
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: f5fcb9975c3ccdbc1691d749a91e59e46bbe5980
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9fd391acc854c4ae337789149955c331ac9543eb
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97485211"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172031"
 ---
 # <a name="scalar-user-defined-functions-for-in-memory-oltp"></a>Fonctions scalaires définies par l’utilisateur pour l’OLTP en mémoire
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
-  Dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], vous pouvez créer et supprimer des fonctions scalaires définies par l’utilisateur compilées en mode natif. Vous pouvez également modifier ces fonctions définies par l'utilisateur : La compilation native améliore les performances de l’évaluation de fonctions définies par l’utilisateur dans une instruction Transact-SQL.  
+  Dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], vous pouvez créer et supprimer des fonctions scalaires définies par l’utilisateur compilées en mode natif. Vous pouvez également modifier ces fonctions définies par l'utilisateur : La compilation native améliore les performances de l’évaluation de fonctions définies par l’utilisateur dans une instruction Transact-SQL.  
   
  Lorsque vous modifiez une fonction scalaire définie par l’utilisateur compilées en mode natif, l’application reste disponible pendant que l’opération est en cours d’exécution et que la nouvelle version de la fonction est en cours de compilation.  
   

@@ -14,12 +14,12 @@ ms.author: jovanpop
 ms.reviewer: jroth
 ms.custom: seo-dt-2019
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 22b71bd246cd18b4f34701da0fffff5bf3fde358
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4bd5911552144084550abdadb3d432ab08f3bf9a
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97485071"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172501"
 ---
 # <a name="use-for-json-output-in-sql-server-and-in-client-apps-sql-server"></a>Utiliser la sortie de FOR JSON dans SQL Server et les applications clientes (SQL Server)
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sqlserver2016-asdb.md)]
@@ -93,20 +93,24 @@ SET Details =
   
 ```csharp  
 var queryWithForJson = "SELECT ... FOR JSON";
-var conn = new SqlConnection("<connection string>");
-var cmd = new SqlCommand(queryWithForJson, conn);
-conn.Open();
-var jsonResult = new StringBuilder();
-var reader = cmd.ExecuteReader();
-if (!reader.HasRows)
+using(var conn = new SqlConnection("<connection string>"))
 {
-    jsonResult.Append("[]");
-}
-else
-{
-    while (reader.Read())
+    using(var cmd = new SqlCommand(queryWithForJson, conn))
     {
-        jsonResult.Append(reader.GetValue(0).ToString());
+        conn.Open();
+        var jsonResult = new StringBuilder();
+        var reader = cmd.ExecuteReader();
+        if (!reader.HasRows)
+        {
+            jsonResult.Append("[]");
+        }
+        else
+        {
+            while (reader.Read())
+            {
+                jsonResult.Append(reader.GetValue(0).ToString());
+            }
+        }
     }
 }
 ```  

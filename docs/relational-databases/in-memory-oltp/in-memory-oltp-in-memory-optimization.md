@@ -15,12 +15,12 @@ ms.assetid: e1d03d74-2572-4a55-afd6-7edf0bc28bdb
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 281fe018c5c2d5e0717fb2c35dfcc8c3c9e8c3fc
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 7af10ecc4753034948cc616cc85301afd7a7046d
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100230"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172071"
 ---
 # <a name="in-memory-oltp-and-memory-optimization"></a>OLTP en mémoire et optimisation de la mémoire
 
@@ -37,7 +37,7 @@ Pour une présentation plus détaillée de l’OLTP en mémoire et un examen des
  
  Notez que [!INCLUDE[hek_2](../../includes/hek-2-md.md)] est la technologie [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] permettant d’améliorer les performances du traitement des transactions. Pour découvrir la technologie [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui améliore les performances des requêtes de création de rapports et analytiques, consultez le [Guide des index columnstore](../../relational-databases/indexes/columnstore-indexes-overview.md).
   
- Plusieurs améliorations ont récemment été apportées à la fonction OLTP en mémoire dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], ainsi que dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]. La surface d’exposition Transact-SQL a été augmentée pour simplifier la migration des applications de base de données. Les opérations ALTER sur les tables optimisées en mémoire et les procédures stockées compilées en mode natif sont désormais prises en charge afin de simplifier la gestion des applications.
+ Plusieurs améliorations ont récemment été apportées à la fonction OLTP en mémoire dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], ainsi que dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]. La surface d’exposition Transact-SQL a été augmentée pour simplifier la migration des applications de base de données. Les opérations ALTER sur les tables optimisées en mémoire et les procédures stockées compilées en mode natif sont désormais prises en charge afin de simplifier la gestion des applications.
   
 > [!NOTE]  
 >  **Faites un essai**  

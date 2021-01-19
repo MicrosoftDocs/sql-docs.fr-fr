@@ -11,12 +11,12 @@ ms.assetid: 5e57a427-2e88-4ef6-b142-4ccad97bcecc
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: c36d6718455f85314f98219b860a801984804d9d
-ms.sourcegitcommit: 3ec49252e82590de0fe559a8574606ae213f6f3b
+ms.openlocfilehash: 4acdd7f1d8b6a39af4054f30381665d1504bcb71
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975449"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171831"
 ---
 # <a name="choose-a-database-engine-upgrade-method"></a>Choisir une méthode de mise à niveau du moteur de base de données
 [!INCLUDE [SQL Server -Windows Only](../../includes/applies-to-version/sql-windows-only.md)]
@@ -86,10 +86,10 @@ Si vous planifiez une mise à niveau du [!INCLUDE[ssDE](../../includes/ssde-md.m
  Par exemple, vous pouvez utiliser cette approche pour mettre à niveau :  
   
 -   Une installation de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur un système d’exploitation non pris en charge.    
--   Une installation x86 de SQL Server en tant que [!INCLUDE[ss2016](../../includes/sssql15-md.md)] et ultérieur ne prend pas en charge les installations x86.   
+-   Une installation x86 de SQL Server en tant que [!INCLUDE[ss2016](../../includes/sssql16-md.md)] et ultérieur ne prend pas en charge les installations x86.   
 -   [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] vers un nouveau matériel ou une nouvelle version du système d’exploitation.    
 -   [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] avec la consolidation des serveurs.   
--   Comme [!INCLUDE[ss2016](../../includes/sssql15-md.md)] et ultérieur, SQL Server 2005 ne prend pas en charge la mise à niveau sur place de SQL Server 2005. Pour plus d’informations, consultez [Effectuez-vous une mise à niveau à partir de SQL Server 2005 ?](../../sql-server/end-of-support/sql-server-end-of-life-overview.md).
+-   Comme [!INCLUDE[ss2016](../../includes/sssql16-md.md)] et ultérieur, SQL Server 2005 ne prend pas en charge la mise à niveau sur place de SQL Server 2005. Pour plus d’informations, consultez [Effectuez-vous une mise à niveau à partir de SQL Server 2005 ?](../../sql-server/end-of-support/sql-server-end-of-life-overview.md).
 
   
 Les étapes requises pour une nouvelle mise à niveau d’installation varient légèrement selon que vous utilisez un stockage SAN ou un stockage connecté.  

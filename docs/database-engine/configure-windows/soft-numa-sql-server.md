@@ -18,23 +18,23 @@ helpviewer_keywords:
 ms.assetid: 1af22188-e08b-4c80-a27e-4ae6ed9ff969
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: e2674f1453242e6f9b580ff41524254a10896f76
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: df2d323f8978ea5ce9cdaf23c2acf177517ff1ff
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538034"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170931"
 ---
 # <a name="soft-numa-sql-server"></a>Soft-NUMA (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-Les processeurs modernes ont plusieurs cœurs par socket. Chaque socket est généralement représenté sous forme de nœud NUMA unique. Le moteur de base de données SQL Server partitionne plusieurs structures internes et threads de service de partitionnement par nœud NUMA.  Pour les processeurs contenant 10 noyaux par socket ou plus, l’utilisation du NUMA logiciel pour fractionner les nœuds NUMA matériels augmente généralement l’évolutivité et les performances. Avant [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] SP2, le NUMA logiciel (soft-NUMA) nécessitait la modification du Registre pour ajouter un masque d’affinité de configuration des nœuds et était configuré au niveau de l’hôte plutôt que par instance. À partir de [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] SP2 et [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], le soft-NUMA est configuré automatiquement au niveau de l’instance de base de données au démarrage du service [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)].  
+Les processeurs modernes ont plusieurs cœurs par socket. Chaque socket est généralement représenté sous forme de nœud NUMA unique. Le moteur de base de données SQL Server partitionne plusieurs structures internes et threads de service de partitionnement par nœud NUMA.  Pour les processeurs contenant 10 noyaux par socket ou plus, l’utilisation du NUMA logiciel pour fractionner les nœuds NUMA matériels augmente généralement l’évolutivité et les performances. Avant [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] SP2, le NUMA logiciel (soft-NUMA) nécessitait la modification du Registre pour ajouter un masque d’affinité de configuration des nœuds et était configuré au niveau de l’hôte plutôt que par instance. À partir de [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] SP2 et [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], le soft-NUMA est configuré automatiquement au niveau de l’instance de base de données au démarrage du service [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)].  
   
 > [!NOTE]  
 > Les processeurs ajoutés à chaud ne sont pas pris en charge par le soft-NUMA.  
   
 ## <a name="automatic-soft-numa"></a>Soft-NUMA automatique  
-Avec [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], chaque fois que le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] détecte plus de huit cœurs physiques par socket ou nœud NUMA au démarrage, des nœuds soft-NUMA sont créés automatiquement par défaut. Les cœurs des processeurs multithreads ne sont pas différenciés lors du décompte des cœurs physiques dans un nœud.  Quand le nombre de cœurs physiques détectés est supérieur à huit par socket, le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] crée des nœuds soft-NUMA contenant idéalement huit cœurs, ce chiffre pouvant varier de cinq à neuf cœurs logiques par nœud. La taille du nœud matériel peut être limitée par un masque d'affinité de l’UC. Le nombre de nœuds NUMA ne dépasse jamais le nombre maximal de nœuds NUMA pris en charge.  
+Avec [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], chaque fois que le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] détecte plus de huit cœurs physiques par socket ou nœud NUMA au démarrage, des nœuds soft-NUMA sont créés automatiquement par défaut. Les cœurs des processeurs multithreads ne sont pas différenciés lors du décompte des cœurs physiques dans un nœud.  Quand le nombre de cœurs physiques détectés est supérieur à huit par socket, le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] crée des nœuds soft-NUMA contenant idéalement huit cœurs, ce chiffre pouvant varier de cinq à neuf cœurs logiques par nœud. La taille du nœud matériel peut être limitée par un masque d'affinité de l’UC. Le nombre de nœuds NUMA ne dépasse jamais le nombre maximal de nœuds NUMA pris en charge.  
   
 Vous pouvez désactiver ou réactiver le soft-NUMA avec l’instruction [ALTER SERVER CONFIGURATION &#40;Transact-SQL&#41;](../../t-sql/statements/alter-server-configuration-transact-sql.md) et l’argument `SET SOFTNUMA`. La modification de ce paramètre requiert le redémarrage du moteur de base de données pour s’appliquer.  
   
@@ -51,7 +51,7 @@ La figure ci-dessous montre le type d’informations concernant le soft-NUMA que
 ```   
 
 > [!NOTE]
-> À compter de [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] SP2, utilisez l’indicateur de trace 8079 pour autoriser [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à utiliser le NUMA logiciel automatique. À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], ce comportement est contrôlé par le moteur. L’indicateur de trace 8079 n’a aucun effet. Pour plus d’informations, consultez [DBCC TRACEON - Indicateurs de trace](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md).
+> À compter de [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] SP2, utilisez l’indicateur de trace 8079 pour autoriser [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à utiliser le NUMA logiciel automatique. À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], ce comportement est contrôlé par le moteur. L’indicateur de trace 8079 n’a aucun effet. Pour plus d’informations, consultez [DBCC TRACEON - Indicateurs de trace](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md).
 
 ## <a name="manual-soft-numa"></a>Soft-NUMA manuel  
 Pour configurer manuellement [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] afin d’utiliser le soft-NUMA, désactivez le soft-NUMA automatique et modifiez le Registre pour ajouter un masque d’affinité de configuration des nœuds. Lorsque cette méthode est utilisée, le masque soft-NUMA peut être établi comme entrée de Registre binaire, DWORD (hexadécimal ou décimal) ou QWORD (hexadécimal ou décimal). Pour configurer davantage que les 32 premiers processeurs, utilisez les valeurs de Registre QWORD ou BINARY (les valeurs QWORD ne peuvent pas être utilisées avant [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]). Après avoir modifié le Registre, vous devez redémarrer le [!INCLUDE[ssDE](../../includes/ssde-md.md)] pour que la configuration du soft-NUMA prenne effet.  
@@ -101,7 +101,7 @@ SET PROCESS AFFINITY CPU=4 TO 7;
   
  Dans l’exemple suivant, supposons que vous avez un serveur DL580 G9 avec 18 cœurs par socket (et quatre sockets), chaque socket se trouvant dans son propre groupe de noyaux (« K-Group »). Vous pouvez créer une configuration soft-NUMA du type suivant : six cœurs par nœud, trois nœuds par groupe, quatre groupes.  
   
-|Exemple pour un serveur [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] avec plusieurs « K-Groups »|Type|Nom de la valeur|Données de valeur|  
+|Exemple pour un serveur [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] avec plusieurs « K-Groups »|Type|Nom de la valeur|Données de valeur|  
 |-----------------------------------------------------------------------------------------------------------------|----------|----------------|----------------|  
 |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\130\NodeConfiguration\Node0|DWORD|CPUMask|0x3F|  
 |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\130\NodeConfiguration\Node0|DWORD|Groupe|0|  

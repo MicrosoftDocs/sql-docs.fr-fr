@@ -17,18 +17,18 @@ helpviewer_keywords:
 ms.assetid: 7bd89ddd-0403-4930-a5eb-3c78718533d4
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 8e64eb57dbcfecabaa5c6f24881206152df4d8d0
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: f7e96df4eba36bbcb3da18a1423b5162aef557a7
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97639781"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170801"
 ---
 # <a name="configure-read-only-routing-for-an-always-on-availability-group"></a>Configurer le routage en lecture seule pour un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
   Pour configurer un groupe de disponibilité Always On et prendre en charge le routage en lecture seule dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)], vous pouvez utiliser [!INCLUDE[tsql](../../../includes/tsql-md.md)] ou PowerShell. Le *routage en lecture seule* fait référence à la capacité de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] d’acheminer les demandes de connexion en lecture seule applicables à un [réplica secondaire lisible](../../../database-engine/availability-groups/windows/active-secondaries-readable-secondary-replicas-always-on-availability-groups.md) Always On disponible (autrement dit, un réplica configuré pour autoriser des charges de travail en lecture seule lorsqu’il s’exécute sous le rôle secondaire). Pour prendre en charge le routage en lecture seule, le groupe de disponibilité doit posséder un [écouteur de groupe de disponibilité](../../../database-engine/availability-groups/windows/listeners-client-connectivity-application-failover.md). Les clients en lecture seule doivent diriger leurs demandes de connexion à cet écouteur, et les chaînes de connexion du client doivent spécifier l'intention d'application « en lecture seule ». Autrement dit, il doit s’agir de *demandes de connexion d’intention de lecture*.  
 
-Le routage en lecture seule est disponible dans [!INCLUDE[sssql15](../../../includes/sssql15-md.md)] et versions ultérieures.
+Le routage en lecture seule est disponible dans [!INCLUDE[sssql15](../../../includes/sssql16-md.md)] et versions ultérieures.
 
 > [!NOTE]  
 >  Pour plus d’informations sur la configuration d’un réplica secondaire lisible, consultez [Configurer l’accès en lecture seule sur un réplica de disponibilité &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/configure-read-only-access-on-an-availability-replica-sql-server.md).  
@@ -104,7 +104,7 @@ Le routage en lecture seule est disponible dans [!INCLUDE[sssql15](../../../incl
         >  Vous devez définir le routage en lecture seule avant de configurer la liste de routage en lecture seule.  
   
 ###  <a name="configure-load-balancing-across-read-only-replicas"></a><a name="loadbalancing"></a> Configurer l’équilibrage de charge entre des réplicas en lecture seule  
- Depuis [!INCLUDE[ssSQL15](../../../includes/sssql15-md.md)], vous pouvez configurer l’équilibrage de charge sur un ensemble de réplicas en lecture seule. Auparavant, le routage en lecture seule dirigeait toujours le trafic vers le premier réplica disponible dans la liste de routage. Pour tirer parti de cette fonctionnalité, utilisez un seul niveau de parenthèses imbriquées autour des instances de serveur **READ_ONLY_ROUTING_LIST** dans les commandes **CREATE AVAILABILITY GROUP** ou **ALTER AVAILABILITY GROUP** .  
+ Depuis [!INCLUDE[ssSQL15](../../../includes/sssql16-md.md)], vous pouvez configurer l’équilibrage de charge sur un ensemble de réplicas en lecture seule. Auparavant, le routage en lecture seule dirigeait toujours le trafic vers le premier réplica disponible dans la liste de routage. Pour tirer parti de cette fonctionnalité, utilisez un seul niveau de parenthèses imbriquées autour des instances de serveur **READ_ONLY_ROUTING_LIST** dans les commandes **CREATE AVAILABILITY GROUP** ou **ALTER AVAILABILITY GROUP** .  
   
  Par exemple, la liste de routage suivante équilibre la charge de la demande de connexion d’intention de lecture entre deux réplicas en lecture seule : `Server1` et `Server2`. Les parenthèses imbriquées autour de ces serveurs identifient l’ensemble dont la charge est équilibrée. Si aucun réplica n’est disponible dans cet ensemble, la fonctionnalité tente de se connecter séquentiellement aux autres réplicas, `Server3` et `Server4`, dans la liste de routage en lecture seule.  
   

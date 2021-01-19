@@ -23,12 +23,12 @@ ms.assetid: 11f8017e-5bc3-4bab-8060-c16282cfbac1
 author: rothja
 ms.author: jroth
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: fe0c23f3cd5b087b4e5a14d50d681b983aeac496
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9d7e51afb97a5ff698ef9a504375783b93ef9640
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97459970"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170661"
 ---
 # <a name="sql-server-index-architecture-and-design-guide"></a>Guide de conception et d’architecture d’index SQL Server
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -799,15 +799,15 @@ Chaque partition peut posséder plusieurs rowgroups delta. Quand l’index colum
 #### <a name="you-can-combine-columnstore-and-rowstore-indexes-on-the-same-table"></a>Vous pouvez combiner des index columnstore et rowstore sur la même table
 Un index non cluster contient une copie de tout ou partie des lignes et colonnes de la table sous-jacente. L’index est défini comme une ou plusieurs colonnes de la table et a une condition facultative qui filtre les lignes. 
 
-À partir de [!INCLUDE[ssSQL15](../includes/sssql15-md.md)], vous pouvez créer un **index columnstore non-cluster pouvant être mis à jour sur une table rowstore**. L’index columnstore stocke une copie des données, afin que vous n’ayez pas besoin de stockage supplémentaire. Toutefois, les données de l’index columnstore sont compressées à une taille plus petite que ce que nécessite la table rowstore.  Ce faisant, vous pouvez exécuter l’analytique sur l’index columnstore et les transactions sur l’index rowstore en même temps. La banque des colonnes (columnstore) est mise à jour lors de la modification des données de la table rowstore. Les deux index utilisent donc les mêmes données.  
+À partir de [!INCLUDE[ssSQL15](../includes/sssql16-md.md)], vous pouvez créer un **index columnstore non-cluster pouvant être mis à jour sur une table rowstore**. L’index columnstore stocke une copie des données, afin que vous n’ayez pas besoin de stockage supplémentaire. Toutefois, les données de l’index columnstore sont compressées à une taille plus petite que ce que nécessite la table rowstore.  Ce faisant, vous pouvez exécuter l’analytique sur l’index columnstore et les transactions sur l’index rowstore en même temps. La banque des colonnes (columnstore) est mise à jour lors de la modification des données de la table rowstore. Les deux index utilisent donc les mêmes données.  
   
-À partir de [!INCLUDE[ssSQL15](../includes/sssql15-md.md)], vous pouvez avoir **un ou plusieurs index rowstore non-cluster sur un index columnstore**. Ce faisant, vous pouvez effectuer des recherches de tables efficaces sur le columnstore sous-jacent. D’autres options sont également disponibles. Par exemple, vous pouvez appliquer une contrainte de clé primaire à l’aide d’une contrainte UNIQUE sur la table rowstore. Dans la mesure où une valeur non unique ne peut pas être insérée dans la table rowstore, SQL Server ne peut pas insérer la valeur dans le columnstore.  
+À partir de [!INCLUDE[ssSQL15](../includes/sssql16-md.md)], vous pouvez avoir **un ou plusieurs index rowstore non-cluster sur un index columnstore**. Ce faisant, vous pouvez effectuer des recherches de tables efficaces sur le columnstore sous-jacent. D’autres options sont également disponibles. Par exemple, vous pouvez appliquer une contrainte de clé primaire à l’aide d’une contrainte UNIQUE sur la table rowstore. Dans la mesure où une valeur non unique ne peut pas être insérée dans la table rowstore, SQL Server ne peut pas insérer la valeur dans le columnstore.  
  
 ### <a name="performance-considerations"></a>Considérations relatives aux performances 
 
 -   La définition d’index columnstore non cluster prend en charge l’utilisation d’une condition filtrée. Pour minimiser l’impact sur les performances de l’ajout d’un index columnstore sur une table OLTP, utilisez une condition filtrée pour créer un index columnstore non cluster uniquement sur les données brutes de votre charge de travail opérationnelle. 
   
--   Une table en mémoire peut avoir un index columnstore. Vous pouvez le créer lors de la création de la table ou l’ajouter ultérieurement avec [ALTER TABLE &#40;Transact-SQL&#41;](../t-sql/statements/alter-table-transact-sql.md). Avant [!INCLUDE[ssSQL15](../includes/sssql15-md.md)], seule une table sur disque pouvait avoir un index columnstore. 
+-   Une table en mémoire peut avoir un index columnstore. Vous pouvez le créer lors de la création de la table ou l’ajouter ultérieurement avec [ALTER TABLE &#40;Transact-SQL&#41;](../t-sql/statements/alter-table-transact-sql.md). Avant [!INCLUDE[ssSQL15](../includes/sssql16-md.md)], seule une table sur disque pouvait avoir un index columnstore. 
 
 Pour plus d’informations, consultez [Index columnstore - Performances des requêtes](../relational-databases/indexes/columnstore-indexes-query-performance.md).
 

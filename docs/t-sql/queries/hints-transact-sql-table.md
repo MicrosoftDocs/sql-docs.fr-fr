@@ -37,12 +37,12 @@ helpviewer_keywords:
 ms.assetid: 8bf1316f-c0ef-49d0-90a7-3946bc8e7a89
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 830b03042589ac1e9f03e94b134a48d510a37c31
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 2043bf4c60a1154b719d81b583d055b60b85c6ec
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92035832"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172331"
 ---
 # <a name="hints-transact-sql---table"></a>Indicateurs (Transact-SQL) - Table
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -398,7 +398,7 @@ GO
 L'optimiseur de requête ne prendra pas en compte un indicateur d'index si les options SET n'ont pas les valeurs requises pour les index filtrés. Pour plus d’informations, consultez [CREATE INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-index-transact-sql.md).  
   
 ## <a name="using-noexpand"></a>Utilisation de NOEXPAND  
-NOEXPAND s’applique uniquement aux *vues indexées*. Une vue indexée comporte un index cluster unique, créé sur cette dernière. Si une requête contient des références à des colonnes présentes à la fois dans une vue indexée et dans des tables de base, et que l'optimiseur de requête préconise l'utilisation de la vue indexée comme méthode d'exécution de la requête, il utilise alors l'index sur la vue. Cette fonctionnalité est appelée *correspondance de vue indexée*. Dans les versions antérieures à [!INCLUDE[ssSQL15_md](../../includes/sssql15-md.md)] SP1, l’utilisation automatique d’une vue indexée par l’optimiseur de requête est prise en charge uniquement dans certaines éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2016](../../sql-server/editions-and-components-of-sql-server-2016.md), [Fonctionnalités prises en charge par les éditions de SQL Server 2017](../../SQL-server/editions-and-components-of-SQL-server-2017.md) et [Fonctionnalités prises en charge par les éditions de SQL Server 2019](../../sql-server/editions-and-components-of-sql-server-version-15.md).  
+NOEXPAND s’applique uniquement aux *vues indexées*. Une vue indexée comporte un index cluster unique, créé sur cette dernière. Si une requête contient des références à des colonnes présentes à la fois dans une vue indexée et dans des tables de base, et que l'optimiseur de requête préconise l'utilisation de la vue indexée comme méthode d'exécution de la requête, il utilise alors l'index sur la vue. Cette fonctionnalité est appelée *correspondance de vue indexée*. Dans les versions antérieures à [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] SP1, l’utilisation automatique d’une vue indexée par l’optimiseur de requête est prise en charge uniquement dans certaines éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2016](../../sql-server/editions-and-components-of-sql-server-2016.md), [Fonctionnalités prises en charge par les éditions de SQL Server 2017](../../SQL-server/editions-and-components-of-SQL-server-2017.md) et [Fonctionnalités prises en charge par les éditions de SQL Server 2019](../../sql-server/editions-and-components-of-sql-server-version-15.md).  
   
 Toutefois, pour que l'optimiseur de requête prenne en considération les vues indexées pour la mise en correspondance ou utilise une vue indexée référencée avec l'indicateur NOEXPAND, les options SET suivantes doivent avoir pour valeur ON.  
 

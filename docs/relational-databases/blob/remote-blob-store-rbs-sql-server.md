@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 31c947cf-53e9-4ff4-939b-4c1d034ea5b1
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 83abd087cab67c0b048ed6333e912ac1edc76f7c
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+ms.openlocfilehash: bfd234025664e7508d7d9cf942ff81a216b447a2
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91810155"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171751"
 ---
 # <a name="remote-blob-store-rbs-sql-server"></a>Magasin d'objets blob distants (RBS) (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "91810155"
 
 | Version [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] | Emplacement de téléchargement de RBS |
 |:---|:---|
-| [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] | [[!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833) |
+| [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] | [[!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833) |
 | [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] | [[!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] Feature Pack](https://www.microsoft.com/download/details.aspx?id=55992) |
 | [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] | [Page de téléchargement [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] RBS](https://go.microsoft.com/fwlink/?linkid=2109005) |
 | &nbsp; | &nbsp; |
@@ -59,7 +59,7 @@ ms.locfileid: "91810155"
  Certains fournisseurs de solutions de stockage tiers ont développé des fournisseurs RBS qui sont conformes à ces API standard et qui prennent en charge le stockage d'objets blob sur différentes plateformes de stockage.  
   
 ## <a name="rbs-requirements"></a>Conditions requises du magasin d'objets blob distants (RBS)  
- - Le magasin d'objets blob distants nécessite [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Enterprise pour le serveur de base de données principal sur lequel les métadonnées d'objets blob sont stockées.  Cependant, si vous utilisez le fournisseur FILESTREAM fourni, vous pouvez stocker les objets blob sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Standard. Pour vous connecter à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], RBS nécessite au moins la version 11 du pilote ODBC pour [!INCLUDE[ssSQL14_md](../../includes/sssql14-md.md)] et la version 13 du pilote ODBC pour [!INCLUDE[ssSQL15_md](../../includes/sssql15-md.md)]. Les pilotes sont disponibles à la page [Download ODBC Driver for SQL Server (Télécharger le pilote ODBC pour SQL Server)](../../connect/odbc/download-odbc-driver-for-sql-server.md).    
+ - Le magasin d'objets blob distants nécessite [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Enterprise pour le serveur de base de données principal sur lequel les métadonnées d'objets blob sont stockées.  Cependant, si vous utilisez le fournisseur FILESTREAM fourni, vous pouvez stocker les objets blob sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Standard. Pour vous connecter à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], RBS nécessite au moins la version 11 du pilote ODBC pour [!INCLUDE[ssSQL14_md](../../includes/sssql14-md.md)] et la version 13 du pilote ODBC pour [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)]. Les pilotes sont disponibles à la page [Download ODBC Driver for SQL Server (Télécharger le pilote ODBC pour SQL Server)](../../connect/odbc/download-odbc-driver-for-sql-server.md).    
   
  Le magasin d'objets blob distants comprend un fournisseur FILESTREAM qui vous permet de stocker les objets blob sur une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Si vous souhaitez utiliser le magasin d'objets blob distants pour stocker des objets blob dans une solution de stockage différente, vous devez utiliser un fournisseur RBS tiers, qui aura été développé pour cette solution de stockage particulière, ou bien développer un fournisseur RBS personnalisé à l'aide de l'API RBS. Un exemple de fournisseur stockant des objets blob sur un système de fichiers NTFS est disponible parmi les ressources pédagogiques du site [CodePlex](https://go.microsoft.com/fwlink/?LinkId=210190).  
   
@@ -72,7 +72,7 @@ ms.locfileid: "91810155"
 ### <a name="credential-store-symmetric-key"></a>Clé symétrique du magasin d'informations d'identification  
  Si un fournisseur demande l’installation et l’utilisation d’un secret stocké dans le magasin d’informations d’identification, RBS utilise une clé symétrique pour chiffrer les secrets du fournisseur qu’un client peut utiliser pour obtenir l’autorisation d’accès au magasin d’objets blob du fournisseur.  
   
--   RBS 2016 utilise une clé symétrique **AES_128** . [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] n’autorise pas la création de nouvelles clés **TRIPLE_DES** , sauf pour des raisons de compatibilité descendante. Pour plus d’informations, consultez [CREATE SYMMETRIC KEY &#40;Transact-SQL&#41;](../../t-sql/statements/create-symmetric-key-transact-sql.md).  
+-   RBS 2016 utilise une clé symétrique **AES_128** . [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] n’autorise pas la création de nouvelles clés **TRIPLE_DES** , sauf pour des raisons de compatibilité descendante. Pour plus d’informations, consultez [CREATE SYMMETRIC KEY &#40;Transact-SQL&#41;](../../t-sql/statements/create-symmetric-key-transact-sql.md).  
   
 -   RBS 2014 et les versions antérieures utilisent un magasin d’informations d’identification qui maintient le chiffrement des clés secrètes à l’aide de l’algorithme de clé symétrique **TRIPLE_DES** , obsolète. Si vous utilisez **TRIPLE_DES**[!INCLUDE[msCoName](../../includes/msconame-md.md)] , nous vous recommandons d’améliorer votre sécurité en suivant les étapes décrites dans cette rubrique pour permuter votre clé vers une méthode de chiffrement plus forte.  
   

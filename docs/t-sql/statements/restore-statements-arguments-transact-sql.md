@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4bfe5734-3003-4165-afd4-b1131ea26e2b
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 49394aa04c726d015bbff3ea31a06ec47ffd64d4
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 35ed1cf50f1d39af97ac636c8aba3ca36f90e7d7
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88478771"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171671"
 ---
 # <a name="restore-statements---arguments-transact-sql"></a>Instructions RESTORE – Arguments (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -255,7 +255,7 @@ CREDENTIAL
  Utilisé uniquement pour la restauration d’une sauvegarde à partir du service de stockage Microsoft Blob Azure.  
   
 > [!NOTE]  
->  Avec [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] SP1 CU2 jusqu’à [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], vous ne pouvez restaurer qu’à partir d’une seule unité quand l’opération s’effectue depuis une URL. Pour restaurer à partir de plusieurs unités quand l’opération s’effectue depuis une URL, vous devez utiliser [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à la [version actuelle](https://go.microsoft.com/fwlink/p/?LinkId=299658), ainsi que des jetons de signature d’accès partagé (SAP). Pour plus d’informations, consultez [Activer la sauvegarde managée SQL Server sur Microsoft Azure](../../relational-databases/backup-restore/enable-sql-server-managed-backup-to-microsoft-azure.md) et [Simplification de la création d’informations d’identification SQL avec des jetons de signature d’accès partagé (SAP) sur le stockage Azure avec Powershell](https://docs.microsoft.com/archive/blogs/sqlcat/simplifying-creation-of-sql-credentials-with-shared-access-signature-sas-tokens-on-azure-storage-with-powershell).  
+>  Avec [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] SP1 CU2 jusqu’à [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], vous ne pouvez restaurer qu’à partir d’une seule unité quand l’opération s’effectue depuis une URL. Pour restaurer à partir de plusieurs unités quand l’opération s’effectue depuis une URL, vous devez utiliser [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] jusqu’à la [version actuelle](https://go.microsoft.com/fwlink/p/?LinkId=299658), ainsi que des jetons de signature d’accès partagé (SAP). Pour plus d’informations, consultez [Activer la sauvegarde managée SQL Server sur Microsoft Azure](../../relational-databases/backup-restore/enable-sql-server-managed-backup-to-microsoft-azure.md) et [Simplification de la création d’informations d’identification SQL avec des jetons de signature d’accès partagé (SAP) sur le stockage Azure avec Powershell](https://docs.microsoft.com/archive/blogs/sqlcat/simplifying-creation-of-sql-credentials-with-shared-access-signature-sas-tokens-on-azure-storage-with-powershell).  
   
  REPLACE  
  **Pris en charge par :**  [RESTORE](../../t-sql/statements/restore-statements-transact-sql.md)  

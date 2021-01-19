@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: ec5ccb69-61c9-4576-8843-014b976fd46e
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 4b63c205a6953a751507abdd67abb229b5f15387
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 3b5f15490744ccfe8bfd47a69892f7033ddae361
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85772497"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171001"
 ---
 # <a name="enable-or-disable-a-server-network-protocol"></a>Activer ou désactiver un protocole réseau de serveur
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "85772497"
 >  Lors de l'installation de [!INCLUDE[ssExpress](../../includes/ssexpress-md.md)] une connexion est ajoutée pour le groupe BUILTIN\Users. Cela permet à tous les utilisateurs authentifiés sur l'ordinateur d'accéder à l'instance de [!INCLUDE[ssExpress](../../includes/ssexpress-md.md)] en tant que membres du rôle public. La connexion BUILTIN\Users peut être supprimée sans risque pour restreindre l'accès au [!INCLUDE[ssDE](../../includes/ssde-md.md)] aux utilisateurs de l'ordinateur qui disposent de connexions ou qui sont membres d'autres groupes Windows avec des connexions.  
   
 > [!WARNING]  
->  Les fournisseurs de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et [!INCLUDE[msCoName](../../includes/msconame-md.md)] uniquement pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à [!INCLUDE[sssql14](../../includes/sssql14-md.md)] prennent en charge TLS 1.0 et SSL 3.0 par défaut. Si vous appliquez un autre protocole (comme TLS 1.1 ou TLS 1.2) en apportant des modifications dans la couche SChannel du système d’exploitation, vos connexions à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] risquent d’échouer, sauf si vous avez installé la mise à jour appropriée permettant de prendre en charge TLS 1.1 et 1.2 sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], qui se trouve <a href="https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server">ici</a>. À partir de [!INCLUDE[sssql15](../../includes/sssql15-md.md)], toutes les versions de SQL Server incluent la prise en charge de TLS 1.2 sans aucune mise à jour supplémentaire nécessaire.
+>  Les fournisseurs de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et [!INCLUDE[msCoName](../../includes/msconame-md.md)] uniquement pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à [!INCLUDE[sssql14](../../includes/sssql14-md.md)] prennent en charge TLS 1.0 et SSL 3.0 par défaut. Si vous appliquez un autre protocole (comme TLS 1.1 ou TLS 1.2) en apportant des modifications dans la couche SChannel du système d’exploitation, vos connexions à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] risquent d’échouer, sauf si vous avez installé la mise à jour appropriée permettant de prendre en charge TLS 1.1 et 1.2 sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], qui se trouve <a href="https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server">ici</a>. À partir de [!INCLUDE[sssql15](../../includes/sssql16-md.md)], toutes les versions de SQL Server incluent la prise en charge de TLS 1.2 sans aucune mise à jour supplémentaire nécessaire.
   
  **Dans cette rubrique**  
   
@@ -50,7 +50,7 @@ ms.locfileid: "85772497"
   
 #### <a name="to-enable-a-server-network-protocol"></a>Pour activer un protocole réseau de serveur  
   
-1.  Dans le Gestionnaire de configuration du [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , développez **Configuration du réseau SQL Server**dans le volet de la console.  
+1.  Dans le Gestionnaire de configuration du [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , développez **Configuration du réseau SQL Server** dans le volet de la console.  
   
 2.  Dans le volet de console, cliquez sur **Protocoles pour** _\<instance name>_ .  
   

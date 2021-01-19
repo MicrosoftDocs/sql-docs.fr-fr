@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 224fc025-c21f-4d43-aa9d-5ffac337f9b0
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 01ccacdadefac0943e721c27d11287f28d66382b
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 97e0ea80dcc5cffefc99cbbc928eace94ade942a
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92196073"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172591"
 ---
 # <a name="validate-xml-with-the-xml-task"></a>Validate XML with the XML Task
 
@@ -37,7 +37,7 @@ ms.locfileid: "92196073"
  La fonctionnalité de validation XML s’adapte aisément aux documents XML volumineux et aux nombres d’erreurs élevés. Étant donné que le fichier de sortie proprement dit présente le format XML, vous pouvez exécuter des requêtes sur la sortie et analyser cette dernière. Par exemple, si la sortie contient un grand nombre d’erreurs, vous pouvez regrouper les erreurs en exécutant une requête [!INCLUDE[tsql](../../includes/tsql-md.md)] , comme décrit dans cette rubrique.  
   
 > [!NOTE]
->  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] ( [!INCLUDE[ssIS](../../includes/ssis-md.md)]) a introduit la propriété **ValidationDetails** dans [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] Service Pack 2. Cette propriété est également disponible dans [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)].  
+>  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] ( [!INCLUDE[ssIS](../../includes/ssis-md.md)]) a introduit la propriété **ValidationDetails** dans [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] Service Pack 2. Cette propriété est également disponible dans [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)].  
   
 ## <a name="sample-output-for-xml-thats-valid"></a>Exemple de sortie pour XML valide  
  Voici un exemple de fichier de sortie présentant les résultats de validation d’un fichier XML valide.  

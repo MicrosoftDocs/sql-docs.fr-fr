@@ -31,12 +31,12 @@ ms.assetid: a28c684a-c4e9-4b24-a7ae-e248808b31e9
 author: pmasl
 ms.author: mikeray
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: eca1dbef6ff7d519200e46cff7879d7cb0a9b128
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 991a30108d0683d89d8bece48eb0d2de1c1e0d37
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478250"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171881"
 ---
 # <a name="resolve-index-fragmentation-by-reorganizing-or-rebuilding-indexes"></a>Remédiez à la fragmentation des index en les réorganisant ou en les regénérant
 
@@ -110,7 +110,7 @@ Une fois le degré de fragmentation d’index connu, utilisez le tableau suivant
 |**fragmentation calculée en pourcentage**|S’applique à cette version|Instruction corrective|
 |-----------------------------------------------|--------------------------|--------------------------|
 |> = 20 %|[!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] et [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|ALTER INDEX REBUILD|
-|> = 20 %|À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]|ALTER INDEX REORGANIZE|
+|> = 20 %|À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]|ALTER INDEX REORGANIZE|
 
 ### <a name="to-check-the-fragmentation-of-a-rowstore-index-using-tsql"></a>Pour vérifier la fragmentation d’un index rowstore avec [!INCLUDE[tsql](../../includes/tsql-md.md)]
 
@@ -234,7 +234,7 @@ La reconstruction d'un index entraîne sa suppression puis sa recréation. En fo
 - Pour les [index columnstore](columnstore-indexes-overview.md), la regénération permet d’éviter toute fragmentation, de déplacer toutes les lignes dans le columnstore et de libérer de l’espace disque en supprimant physiquement les lignes qui ont été logiquement supprimées de la table. 
   
   > [!TIP]
-  > À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], la régénération de l’index columnstore n’est généralement pas nécessaire, car `REORGANIZE` effectue l’essentiel de la régénération en arrière-plan sous la forme d’une opération en ligne. 
+  > À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], la régénération de l’index columnstore n’est généralement pas nécessaire, car `REORGANIZE` effectue l’essentiel de la régénération en arrière-plan sous la forme d’une opération en ligne. 
   
   Pour obtenir des exemples de syntaxe, consultez [Exemples : régénérer ColumnStore](../../t-sql/statements/alter-index-transact-sql.md#examples-columnstore-indexes).
 
@@ -382,7 +382,7 @@ La regénération d’une partition après le chargement des données garantit q
 
 ## <a name="considerations-specific-to-reorganizing-a-columnstore-index"></a>Considérations spécifiques à la réorganisation d’un index columnstore
 
-Lors de la réorganisation des index columnstore, [!INCLUDE[ssde_md](../../includes/ssde_md.md)] compresse chaque rowgroup delta CLOSED dans le columnstore en tant que rowgroup compressé. À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], la commande `REORGANIZE` effectue les optimisations de défragmentation supplémentaires suivantes en ligne :
+Lors de la réorganisation des index columnstore, [!INCLUDE[ssde_md](../../includes/ssde_md.md)] compresse chaque rowgroup delta CLOSED dans le columnstore en tant que rowgroup compressé. À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], la commande `REORGANIZE` effectue les optimisations de défragmentation supplémentaires suivantes en ligne :
 
 - Supprime physiquement les lignes d’un rowgroup quand au moins 10 % des lignes ont été supprimées de façon logique. Les octets supprimés sont récupérés sur le support physique. Par exemple, si un rowgroup compressé de 1 million de lignes a 100 000 lignes supprimées, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] efface les lignes supprimées et recompresse le rowgroup avec 900 000 lignes. Il économise du stockage en effaçant les lignes supprimées.
 

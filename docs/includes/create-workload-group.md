@@ -64,32 +64,32 @@ Spécifie la quantité maximale de temps processeur, en secondes, qu'une demande
 > [!NOTE]
 > Par défaut, Resource Governor n’empêche pas une demande de continuer si le temps maximal est dépassé. Toutefois, un événement sera généré. Pour plus d’informations, consultez [Classe d’événements CPU Threshold Exceeded](../relational-databases/event-classes/cpu-threshold-exceeded-event-class.md).
 > [!IMPORTANT]
-> À compter de [!INCLUDE[ssSQL15](sssql15-md.md)]SP2 et de [!INCLUDE[ssSQL17](sssql17-md.md)] CU3, quand [l’indicateur de trace 2422](../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) est utilisé, Resource Governor abandonne une demande en cas de dépassement de la durée maximale.
+> À compter de [!INCLUDE[ssSQL15](sssql16-md.md)]SP2 et de [!INCLUDE[ssSQL17](sssql17-md.md)] CU3, quand [l’indicateur de trace 2422](../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) est utilisé, Resource Governor abandonne une demande en cas de dépassement de la durée maximale.
 
 REQUEST_MEMORY_GRANT_TIMEOUT_SEC = *value*</br>
-Spécifie la durée maximale, en secondes, pendant laquelle une requête peut attendre qu’une allocation de mémoire (mémoire tampon de travail) devienne disponible. *value* doit être égal à 0 ou un entier positif. La valeur par défaut de *value* , 0, utilise un calcul interne basé sur le coût de requête pour déterminer le délai maximal.
+Spécifie la durée maximale, en secondes, pendant laquelle une requête peut attendre qu’une allocation de mémoire (mémoire tampon de travail) devienne disponible. *value* doit être égal à 0 ou un entier positif. La valeur par défaut de *value*, 0, utilise un calcul interne basé sur le coût de requête pour déterminer le délai maximal.
 
 > [!NOTE]
 > Une requête n'échoue pas toujours lorsque le délai d'expiration d'allocation mémoire est atteint. Une requête échoue seulement si le nombre de requêtes exécutées simultanément est trop élevé. Autrement, la requête risque d'obtenir uniquement l'allocation mémoire minimale, d'où une dégradation des performances.
 
 MAX_DOP = *value*</br>
-Spécifie le **degré maximal de parallélisme (MAXDOP)** pour l’exécution de demandes parallèles. *value* doit être égal à 0 ou un entier positif. La plage autorisée pour *value* est comprise entre 0 et 64. Le paramètre par défaut de *value* , 0, utilise le paramètre global. MAX_DOP est géré comme suit :
+Spécifie le **degré maximal de parallélisme (MAXDOP)** pour l’exécution de demandes parallèles. *value* doit être égal à 0 ou un entier positif. La plage autorisée pour *value* est comprise entre 0 et 64. Le paramètre par défaut de *value*, 0, utilise le paramètre global. MAX_DOP est géré comme suit :
 
 > [!NOTE]
-> Le groupe de charge de travail MAX_DOP remplace la [configuration du serveur pour le degré maximal de parallélisme](../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md) et la [configuration étendue à la base de données](../t-sql/statements/alter-database-scoped-configuration-transact-sql.md) **MAXDOP** .
+> Le groupe de charge de travail MAX_DOP remplace la [configuration du serveur pour le degré maximal de parallélisme](../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md) et la [configuration étendue à la base de données](../t-sql/statements/alter-database-scoped-configuration-transact-sql.md) **MAXDOP**.
 
 > [!TIP]
-> Pour définir cette option au niveau de la requête, utilisez l’ [indicateur de requête](../t-sql/queries/hints-transact-sql-query.md) **MAXDOP** . Définir le degré maximal de parallélisme en tant qu'indicateur de requête est efficace tant qu'il ne dépasse pas le groupe de charges de travail MAX_DOP. Si la valeur d'indicateur de requête MAXDOP dépasse la valeur configurée avec Resource Governor, le [!INCLUDE[ssDEnoversion](ssdenoversion-md.md)] utilise la valeur de `MAX_DOP` Resource Governor. L’[indicateur de requête](../t-sql/queries/hints-transact-sql-query.md) MAXDOP remplace toujours la [configuration du serveur pour le degré maximal de parallélisme](../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md).
+> Pour définir cette option au niveau de la requête, utilisez l’[indicateur de requête](../t-sql/queries/hints-transact-sql-query.md) **MAXDOP**. Définir le degré maximal de parallélisme en tant qu'indicateur de requête est efficace tant qu'il ne dépasse pas le groupe de charges de travail MAX_DOP. Si la valeur d'indicateur de requête MAXDOP dépasse la valeur configurée avec Resource Governor, le [!INCLUDE[ssDEnoversion](ssdenoversion-md.md)] utilise la valeur de `MAX_DOP` Resource Governor. L’[indicateur de requête](../t-sql/queries/hints-transact-sql-query.md) MAXDOP remplace toujours la [configuration du serveur pour le degré maximal de parallélisme](../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md).
 >
-> Pour le faire au niveau de la base de données, utilisez la [configuration étendue à la base de données](../t-sql/statements/alter-database-scoped-configuration-transact-sql.md) **MAXDOP** .
+> Pour le faire au niveau de la base de données, utilisez la [configuration étendue à la base de données](../t-sql/statements/alter-database-scoped-configuration-transact-sql.md) **MAXDOP**.
 >
-> Pour ce faire au niveau du serveur, utilisez l’ [option de configuration serveur](../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md) du **degré maximal de parallélisme (MAXDOP)** .
+> Pour ce faire au niveau du serveur, utilisez l’[option de configuration serveur](../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md) du **degré maximal de parallélisme (MAXDOP)** .
 
 GROUP_MAX_REQUESTS = *value*</br>
 Spécifie le nombre maximal de demandes simultanées autorisées à s'exécuter dans le groupe de charges de travail. *value* doit être égal à 0 ou un entier positif. La valeur par défaut de *value* est 0, qui autorise un nombre illimité de demandes. Lorsque le nombre maximal de requêtes est atteint, un utilisateur de ce groupe peut se connecter, mais est placé dans un état d'attente jusqu'à ce que le nombre de requêtes simultanées soit inférieur à la valeur spécifiée.
 
 USING { *pool_name* |  **"default"** }</br>
-Associe le groupe de charge de travail au pool de ressources défini par l’utilisateur identifié par *pool_name* . Cette opération revient en fait à placer le groupe de charges de travail dans le pool de ressources. Si *pool_name* n’est pas fourni ou si l’argument USING n’est pas utilisé, le groupe de charge de travail est placé dans le pool par défaut Resource Governor prédéfini.
+Associe le groupe de charge de travail au pool de ressources défini par l’utilisateur identifié par *pool_name*. Cette opération revient en fait à placer le groupe de charges de travail dans le pool de ressources. Si *pool_name* n’est pas fourni ou si l’argument USING n’est pas utilisé, le groupe de charge de travail est placé dans le pool par défaut Resource Governor prédéfini.
 
 "default" est un mot réservé et doit être placé entre des guillemets doubles ("") ou des crochets ([]) lorsqu'il est utilisé avec l'argument USING.
 
@@ -97,7 +97,7 @@ Associe le groupe de charge de travail au pool de ressources défini par l’uti
 > Les groupes de charges de travail et les pools de ressources prédéfinis utilisent tous des noms minuscules, tels que "default". Ce facteur doit être pris en considération pour les serveurs qui utilisent un classement qui respecte la casse. Les serveurs avec un classement qui ne respecte pas la casse, tel que SQL_Latin1_General_CP1_CI_AS, traitent "default" et "Default" comme identiques.
 
 EXTERNAL external_pool_name | "default"</br>
-**S’applique à :** [!INCLUDE[ssNoVersion](ssnoversion-md.md)] (à compter de [!INCLUDE[ssSQL15](sssql15-md.md)]).
+**S’applique à :** [!INCLUDE[ssNoVersion](ssnoversion-md.md)] (à compter de [!INCLUDE[ssSQL15](sssql16-md.md)]).
 
 Le groupe de charge de travail peut spécifier un pool de ressources externes. Vous pouvez définir un groupe de charge de travail et l’associer à deux pools :
 

@@ -11,12 +11,12 @@ ms.assetid: e466419a-d8a4-48f7-8d97-13a903ad6b15
 author: MashaMSFT
 ms.author: mathoma
 ms.custom: seo-lt-2019
-ms.openlocfilehash: cbc9d56a0c084fe912ad9af0136166cdcf804ebf
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 00c7778583545c56b886bfc30c4763bacd1404b3
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85734972"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171561"
 ---
 # <a name="change-the-target-recovery-time-of-a-database-sql-server"></a>Modifier la durée de récupération cible d'une base de données (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -62,7 +62,7 @@ ms.locfileid: "85734972"
      TARGET_RECOVERY_TIME **=** _target_recovery_time_ { SECONDS | MINUTES }  
   
      *target_recovery_time*  
-     À partir de [!INCLUDE[ssSQL15_md](../../includes/sssql15-md.md)], la valeur par défaut est de 1 minute. Lorsque la valeur est supérieure à 0 (valeur par défaut pour les versions antérieures), spécifie la limite supérieure du temps de récupération de la base de données spécifiée en cas de sinistre.  
+     À partir de [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)], la valeur par défaut est de 1 minute. Lorsque la valeur est supérieure à 0 (valeur par défaut pour les versions antérieures), spécifie la limite supérieure du temps de récupération de la base de données spécifiée en cas de sinistre.  
   
      SECONDS  
      Indique que *target_recovery_time* correspond au nombre de secondes.  

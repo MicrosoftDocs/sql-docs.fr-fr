@@ -25,12 +25,12 @@ ms.assetid: 782798d3-9552-4514-9f58-e87be4b264e4
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: c06db04136d3e38ad62fe71313490c0a54670c46
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5088cb94c4c4387cd77835bbe02502764d3c2384
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97479430"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171701"
 ---
 # <a name="create-a-database-user"></a>Créer un utilisateur de base de données
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "97479430"
   
  Si vous ne connaissez pas encore [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], il peut être difficile de déterminer quel type d'utilisateur vous souhaitez créer. Tout d'abord, posez-vous la question suivante : la personne ou le groupe qui doit accéder à la base de données dispose-t-elle d’une connexion ? Dans la base de données MASTER, les connexions sont courantes pour les personnes qui gèrent le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] et celles qui doivent accéder à plusieurs ou l'ensemble des bases de données sur l'instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Dans ce cas, vous allez créer un **utilisateur SQL avec connexion**. L'utilisateur de base de données est l'identité du compte de connexion lorsqu'il est connecté à la base de données. Il peut utiliser le même nom que celui du compte de connexion, mais cela n'est pas obligatoire. Cette rubrique part du principe qu'il existe déjà un compte de connexion dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Pour plus d’informations sur la création d’un compte de connexion, consultez [Créer un compte de connexion](../../../relational-databases/security/authentication-access/create-a-login.md).  
   
- Si la personne ou le groupe qui doit accéder à la base de données ne dispose pas d'une connexion et n’a besoin d’accéder qu’à une ou un petit nombre de bases de données, créez un **utilisateur Windows** ou un **utilisateur SQL avec mot de passe**. Également appelé utilisateur de base de données autonome, il n'est pas associé à une connexion dans la base de données MASTER. Cela constitue un excellent choix lorsque vous souhaitez pouvoir déplacer facilement votre base de données entre des instances de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Pour utiliser cette option sur [!INCLUDE[ssSQL15](../../../includes/sssql15-md.md)], un administrateur doit d’abord activer les bases de données autonomes pour le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]et activer l’autonomie pour la base de données. Pour plus d’informations, voir [Utilisateurs de base de données autonome - Rendre votre base de données portable](../../../relational-databases/security/contained-database-users-making-your-database-portable.md).  
+ Si la personne ou le groupe qui doit accéder à la base de données ne dispose pas d'une connexion et n’a besoin d’accéder qu’à une ou un petit nombre de bases de données, créez un **utilisateur Windows** ou un **utilisateur SQL avec mot de passe**. Également appelé utilisateur de base de données autonome, il n'est pas associé à une connexion dans la base de données MASTER. Cela constitue un excellent choix lorsque vous souhaitez pouvoir déplacer facilement votre base de données entre des instances de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Pour utiliser cette option sur [!INCLUDE[ssSQL15](../../../includes/sssql16-md.md)], un administrateur doit d’abord activer les bases de données autonomes pour le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]et activer l’autonomie pour la base de données. Pour plus d’informations, voir [Utilisateurs de base de données autonome - Rendre votre base de données portable](../../../relational-databases/security/contained-database-users-making-your-database-portable.md).  
   
 > **IMPORTANT !** Lorsque vous vous connectez en tant qu'utilisateur de base de données autonome, vous devez fournir le nom de la base de données dans la chaîne de connexion. Pour spécifier la base de données dans [!INCLUDE[ssManStudio](../../../includes/ssmanstudio-md.md)], dans la boîte de dialogue **Se connecter à** , cliquez sur **Options**, puis sur l'onglet **Propriétés de connexion** .  
   

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 47d9a7e8-c597-4b95-a58a-dcf66df8e572
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 796a0423da44917251fa87828c71d0e47092d028
-ms.sourcegitcommit: 4d370399f6f142e25075b3714e5c2ce056b1bfd0
+ms.openlocfilehash: 0cbe2b75a46e63b5e388b91ace3d74c0db3be49b
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91867060"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170731"
 ---
 # <a name="requirements-for-using-memory-optimized-tables"></a>Conditions requises pour l'utilisation des tables optimisées en mémoire
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "91867060"
   
  En plus des [configurations matérielle et logicielle exigées pour l’installation de SQL Server](../../sql-server/install/hardware-and-software-requirements-for-installing-sql-server.md), les conditions d’utilisation de l’OLTP en mémoire sont les suivantes :  
   
--   [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP1 (ou ultérieur), n’importe quelle édition. Pour [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] RTM (antérieur à SP1), vous avez besoin de l’édition Enterprise, Developer ou Evaluation.
+-   [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1 (ou ultérieur), n’importe quelle édition. Pour [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] RTM (antérieur à SP1), vous avez besoin de l’édition Enterprise, Developer ou Evaluation.
     
     > [!NOTE]
     > L’OLTP en mémoire nécessite la version 64 bits de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
@@ -46,12 +46,12 @@ ms.locfileid: "91867060"
   
 ## <a name="important-notes-on-using-hek_2"></a>Notes importantes concernant l’utilisation de l’[!INCLUDE[hek_2](../../includes/hek-2-md.md)]  
   
--   À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], il n’existe aucune limite de la taille des tables à mémoire optimisée, autre que la mémoire disponible. 
+-   À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], il n’existe aucune limite de la taille des tables à mémoire optimisée, autre que la mémoire disponible. 
 
 -   Dans [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], la taille totale en mémoire de toutes les tables durables dans une base de données ne doit pas dépasser 250 Go. Pour plus d’informations, consultez [Estimer les besoins en mémoire des tables mémoire optimisées](../../relational-databases/in-memory-oltp/estimate-memory-requirements-for-memory-optimized-tables.md).  
 
 > [!NOTE]
-> À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP1, les éditions Standard et Express prennent en charge l’OLTP en mémoire, mais elles imposent des quotas sur la quantité de mémoire que vous pouvez utiliser pour les tables à mémoire optimisée dans une base de données. Dans l’édition Standard, ce quota est de 32 Go par base de données ; dans l’édition Express, il est de 352 Mo par base de données. 
+> À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1, les éditions Standard et Express prennent en charge l’OLTP en mémoire, mais elles imposent des quotas sur la quantité de mémoire que vous pouvez utiliser pour les tables à mémoire optimisée dans une base de données. Dans l’édition Standard, ce quota est de 32 Go par base de données ; dans l’édition Express, il est de 352 Mo par base de données. 
   
 -   Si vous créez une ou plusieurs bases de données avec des tables à mémoire optimisée, vous devez activer l’initialisation instantanée de fichiers (IFI) en accordant au compte de démarrage du service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] le droit d’utilisateur *SE_MANAGE_VOLUME_NAME*. Sans IFI, les fichiers de stockage à mémoire optimisée (fichiers de données et delta) sont initialisés à la création, ce qui peut avoir un impact négatif sur les performances de votre charge de travail. Pour plus d’informations sur IFI, consultez [Initialisation instantanée des fichiers de base de données](../../relational-databases/databases/database-instant-file-initialization.md).
   

@@ -72,7 +72,7 @@ ALTER WORKLOAD GROUP { group_name | "default" }
 > Par défaut, Resource Governor n’empêche pas une demande de continuer si le temps maximal est dépassé. Toutefois, un événement sera généré. Pour plus d’informations, consultez [Classe d’événements CPU Threshold Exceeded](../relational-databases/event-classes/cpu-threshold-exceeded-event-class.md). 
 
 > [!IMPORTANT]
-> À compter de [!INCLUDE[ssSQL15](sssql15-md.md)]SP2 et de [!INCLUDE[ssSQL17](sssql17-md.md)] CU3, quand [l’indicateur de trace 2422](../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) est utilisé, Resource Governor abandonne une demande en cas de dépassement de la durée maximale.
+> À compter de [!INCLUDE[ssSQL15](sssql16-md.md)]SP2 et de [!INCLUDE[ssSQL17](sssql17-md.md)] CU3, quand [l’indicateur de trace 2422](../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) est utilisé, Resource Governor abandonne une demande en cas de dépassement de la durée maximale.
   
  REQUEST_MEMORY_GRANT_TIMEOUT_SEC =*value*  
  Spécifie la durée maximale, en secondes, pendant laquelle une requête peut attendre que l'allocation de mémoire (mémoire tampon de travail) devienne disponible.  

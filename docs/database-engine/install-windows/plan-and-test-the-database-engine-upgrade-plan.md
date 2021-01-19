@@ -11,12 +11,12 @@ ms.assetid: 19c5b725-7400-4881-af8f-fd232ca28234
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 73c70e347de00a18f4c4ec5ce3228d6d000d16f0
-ms.sourcegitcommit: 3ec49252e82590de0fe559a8574606ae213f6f3b
+ms.openlocfilehash: 45b0ba2a207be68b0faaea0af0ba7592ae1f0f94
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975454"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172271"
 ---
 # <a name="plan-and-test-the-database-engine-upgrade-plan"></a>Planifier et tester le plan de mise à niveau du moteur de base de données
 
@@ -39,7 +39,7 @@ ms.locfileid: "97975454"
   
 -   **Environnement actuel :** examinez votre environnement actuel pour déterminer les composants [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilisés et les clients qui se connectent à votre environnement.  
   
-    -   **Fournisseurs de clients :** bien que la mise à niveau ne nécessite pas de mise à jour du fournisseur pour chacun de vos clients, vous pouvez choisir de la faire. Si vous effectuez la mise à niveau de [!INCLUDE[sql14](../../includes/sssql14-md.md)] ou version antérieure, les fonctionnalités [!INCLUDE[sql15](../../includes/sssql15-md.md)] suivantes nécessitent un fournisseur mis à jour pour chaque client ou qu’un fournisseur mis à jour apporte des fonctionnalités supplémentaires :  
+    -   **Fournisseurs de clients :** bien que la mise à niveau ne nécessite pas de mise à jour du fournisseur pour chacun de vos clients, vous pouvez choisir de la faire. Si vous effectuez la mise à niveau de [!INCLUDE[sql14](../../includes/sssql14-md.md)] ou version antérieure, les fonctionnalités [!INCLUDE[sql15](../../includes/sssql16-md.md)] suivantes nécessitent un fournisseur mis à jour pour chaque client ou qu’un fournisseur mis à jour apporte des fonctionnalités supplémentaires :  
   
        -   [Always Encrypted &#40;moteur de base de données&#41;](../../relational-databases/security/encryption/always-encrypted-database-engine.md)  
   
