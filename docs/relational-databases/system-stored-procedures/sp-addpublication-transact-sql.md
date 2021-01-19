@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c7167ed1-2b7e-4824-b82b-65f4667c4407
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 02b97900b86eac3c4fb5ffc61b7cf6922d4800e2
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 9aa65ff9b5b9c14441ac555d40788e92082f01c5
+ms.sourcegitcommit: 7791bd2ba339edc5cd2078a6537c8f6bfe72a19b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546316"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98564452"
 ---
 # <a name="sp_addpublication-transact-sql"></a>sp_addpublication (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -143,23 +143,23 @@ sp_addpublication [ @publication = ] 'publication'
 |NULL (par défaut)|La valeur par défaut est **true** lorsque la mise à jour des abonnements est activée et la **valeur false** lorsque la mise à jour des abonnements n’est pas activée.|  
   
 > [!NOTE]  
->  La valeur fournie par l’utilisateur pour *autogen_sync_procs*est remplacée en fonction des valeurs spécifiées pour *allow_queued_tran* et *allow_sync_tran*.  
+>  La valeur fournie par l’utilisateur pour *autogen_sync_procs* est remplacée en fonction des valeurs spécifiées pour *allow_queued_tran* et *allow_sync_tran*.  
   
 `[ \@retention = ] retention` Période de rétention, en heures, pour l’activité d’abonnement. la *rétention* est de **type int**, avec une valeur par défaut de 336 heures. Si un abonnement reste inactif durant la période de rétention, il arrive à expiration et est supprimé. La valeur peut être supérieure à la période de rétention maximale de la base de données de distribution utilisée par le serveur de publication. Si la **valeur est 0**, les abonnements bien connus à la publication n’expirent jamais et sont supprimés par l’agent de nettoyage de l’abonnement expiré.  
   
 `[ \@allow_queued_tran = ] 'allow_queued_updating'` Active ou désactive la mise en file d’attente des modifications sur l’abonné jusqu’à ce qu’elles puissent être appliquées sur le serveur de publication. *allow_queued_updating* est de type **nvarchar (5),** avec false comme valeur par défaut. Si la **valeur est false**, les modifications au niveau de l’abonné ne sont pas mises en file d’attente. la **valeur true** n’est *pas prise en charge pour les serveurs de publication Oracle*.  
   
-`[ \@snapshot_in_defaultfolder = ] 'snapshot_in_default_folder'` Spécifie si les fichiers d’instantanés sont stockés dans le dossier par défaut. *snapshot_in_default_folder* est de type **nvarchar (5)** et sa valeur par défaut est true. Si la **valeur est true**, les fichiers d’instantanés se trouvent dans le dossier par défaut. Si la **valeur est false**, les fichiers d’instantanés ont été stockés à l’emplacement secondaire spécifié par *alternate_snapshot_folder*. Les emplacements de remplacement peuvent se trouver sur un autre serveur, un lecteur réseau ou un support amovible (tel qu'un CD-ROM ou des disques amovibles). Vous pouvez également enregistrer les fichiers d'instantané sur un site FTP, pour qu'ils soient récupérés ultérieurement par l'Abonné. Notez que ce paramètre peut avoir la valeur true et qu’il a toujours un emplacement dans le paramètre ** \@ alt_snapshot_folder** . Cette combinaison indique que les fichiers d'instantané sont stockés dans les emplacements par défaut et secondaires.  
+`[ \@snapshot_in_defaultfolder = ] 'snapshot_in_default_folder'` Spécifie si les fichiers d’instantanés sont stockés dans le dossier par défaut. *snapshot_in_default_folder* est de type **nvarchar (5)** et sa valeur par défaut est true. Si la **valeur est true**, les fichiers d’instantanés se trouvent dans le dossier par défaut. Si la **valeur est false**, les fichiers d’instantanés ont été stockés à l’emplacement secondaire spécifié par *alternate_snapshot_folder*. Les emplacements de remplacement peuvent se trouver sur un autre serveur, un lecteur réseau ou un support amovible (tel qu'un CD-ROM ou des disques amovibles). Vous pouvez également enregistrer les fichiers d'instantané sur un site FTP, pour qu'ils soient récupérés ultérieurement par l'Abonné. Notez que ce paramètre peut avoir la valeur true et qu’il a toujours un emplacement dans le paramètre **\@ alt_snapshot_folder** . Cette combinaison indique que les fichiers d'instantané sont stockés dans les emplacements par défaut et secondaires.  
   
 `[ \@alt_snapshot_folder = ] 'alternate_snapshot_folder'` Spécifie l’emplacement du dossier de remplacement pour l’instantané. *alternate_snapshot_folder* est de type **nvarchar (255),** avec NULL comme valeur par défaut.  
   
-`[ \@pre_snapshot_script = ] 'pre_snapshot_script'` Spécifie un pointeur vers un emplacement de fichier **. SQL** . *pre_snapshot_script* est de type **nvarchar (255),** avec NULL comme valeur par défaut. L'Agent de distribution exécute le script de pré-instantané avant l'exécution des scripts d'objet répliqué, lors de l'application d'un instantané sur un Abonné. Le script est exécuté dans le contexte de sécurité utilisé par l'Agent de distribution lors de sa connexion à la base de données d'abonnement.  
+`[ \@pre_snapshot_script = ] 'pre_snapshot_script'` Spécifie un pointeur vers un emplacement de fichier **. SQL** . *pre_snapshot_script* est de type **nvarchar (255)**, avec NULL comme valeur par défaut. L'Agent de distribution exécute le script de pré-instantané avant l'exécution des scripts d'objet répliqué, lors de l'application d'un instantané sur un Abonné. Le script est exécuté dans le contexte de sécurité utilisé par l'Agent de distribution lors de sa connexion à la base de données d'abonnement.  
   
 `[ \@post_snapshot_script = ] 'post_snapshot_script'` Spécifie un pointeur vers un emplacement de fichier **. SQL** . *post_snapshot_script* est de type **nvarchar (255)**, avec NULL comme valeur par défaut. L'Agent de distribution exécute le script de post-instantané après que tous les autres scripts et données d'objet répliqué ont été appliqués lors d'une synchronisation initiale. Le script est exécuté dans le contexte de sécurité utilisé par l'Agent de distribution lors de sa connexion à la base de données d'abonnement.  
   
-`[ \@compress_snapshot = ] 'compress_snapshot'`Spécifie que l’instantané écrit dans l’emplacement de ** \@ alt_snapshot_folder** doit être compressé au [!INCLUDE[msCoName](../../includes/msconame-md.md)] format cab. *compress_snapshot* est de type **nvarchar (5)**, avec false comme valeur par défaut. **false** spécifie que l’instantané ne sera pas compressé ; **true** spécifie que l’instantané sera compressé. Les fichiers d'instantané de plus de 2 Go (gigaoctets) ne peuvent pas être compressés. Les fichiers d'instantané compressés sont décompressés là où s'exécute l'Agent de distribution ; les abonnements par extraction de données (pull) sont en général utilisés avec des instantanés compressés et les fichiers sont décompressés sur l'Abonné. L'instantané se trouvant dans le dossier par défaut ne peut pas être compressé.  
+`[ \@compress_snapshot = ] 'compress_snapshot'`Spécifie que l’instantané écrit dans l’emplacement de **\@ alt_snapshot_folder** doit être compressé au [!INCLUDE[msCoName](../../includes/msconame-md.md)] format cab. *compress_snapshot* est de type **nvarchar (5)**, avec false comme valeur par défaut. **false** spécifie que l’instantané ne sera pas compressé ; **true** spécifie que l’instantané sera compressé. Les fichiers d'instantané de plus de 2 Go (gigaoctets) ne peuvent pas être compressés. Les fichiers d'instantané compressés sont décompressés là où s'exécute l'Agent de distribution ; les abonnements par extraction de données (pull) sont en général utilisés avec des instantanés compressés et les fichiers sont décompressés sur l'Abonné. L'instantané se trouvant dans le dossier par défaut ne peut pas être compressé.  
   
-`[ \@ftp_address = ] 'ftp_address'` Adresse réseau du service FTP du serveur de distribution. *ftp_address* est de **type sysname**, avec NULL comme valeur par défaut. Indique l'emplacement à partir duquel l'Agent de distribution ou l'Agent de fusion d'un abonné peut extraire les fichiers d'instantané de la publication. Étant donné que cette propriété est stockée pour chaque publication, chaque publication peut avoir une *ftp_address*différente. La publication doit prendre en charge la propagation des instantanés à l'aide du protocole FTP.  
+`[ \@ftp_address = ] 'ftp_address'` Adresse réseau du service FTP du serveur de distribution. *ftp_address* est de **type sysname**, avec NULL comme valeur par défaut. Indique l'emplacement à partir duquel l'Agent de distribution ou l'Agent de fusion d'un abonné peut extraire les fichiers d'instantané de la publication. Étant donné que cette propriété est stockée pour chaque publication, chaque publication peut avoir une *ftp_address* différente. La publication doit prendre en charge la propagation des instantanés à l'aide du protocole FTP.  
   
 `[ \@ftp_port = ] ftp_port` Numéro de port du service FTP du serveur de distribution. *ftp_port* est de **type int**, avec 21 comme valeur par défaut. Spécifie l'emplacement à partir duquel l'Agent de distribution ou l'Agent de fusion d'un Abonné peut extraire les fichiers d'instantané de la publication. Étant donné que cette propriété est stockée pour chaque publication, chaque publication peut avoir sa propre *ftp_port*.  
   
@@ -173,7 +173,7 @@ sp_addpublication [ @publication = ] 'publication'
   
  la **valeur true** n’est *pas prise en charge pour les serveurs de publication Oracle*.  
   
-`[ \@allow_subscription_copy = ] 'allow_subscription_copy'` Active ou désactive la possibilité de copier les bases de données d’abonnement qui s’abonnent à cette publication. *allow_subscription_copy* est de type**nvarchar (5)**, avec false comme valeur par défaut.  
+`[ \@allow_subscription_copy = ] 'allow_subscription_copy'` Active ou désactive la possibilité de copier les bases de données d’abonnement qui s’abonnent à cette publication. *allow_subscription_copy* est de type **nvarchar (5)**, avec false comme valeur par défaut.  
   
 `[ \@conflict_policy = ] 'conflict_policy'` Spécifie la stratégie de résolution des conflits suivie lorsque l’option d’abonné avec mise à jour en attente est utilisée. *conflict_policy* est de type **nvarchar (100)** avec NULL comme valeur par défaut et peut prendre l’une des valeurs suivantes.  
   
@@ -194,7 +194,7 @@ sp_addpublication [ @publication = ] 'publication'
   
 |Valeur|Description|  
 |-----------|-----------------|  
-|**Server**|Utilise [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour stocker les transactions.|  
+|**sql**|Utilise [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour stocker les transactions.|  
 |NULL (par défaut)|La valeur par défaut est **SQL**, qui spécifie d’utiliser [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour stocker des transactions.|  
   
 > [!NOTE]  
@@ -228,15 +228,15 @@ sp_addpublication [ @publication = ] 'publication'
   
 `[ \@replicate_ddl = ] replicate_ddl` Indique si la réplication de schéma est prise en charge pour la publication. *replicate_ddl* est de **type int**, avec **1** comme valeur par défaut pour les serveurs de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] publication et **0** pour les serveurs de publication non- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . **1** indique que les instructions DDL (Data Definition Language) exécutées sur le serveur de publication sont répliquées, et **0** indique que les instructions DDL ne sont pas répliquées. *La réplication de schéma n'est pas prise en charge pour les serveurs de publication Oracle.* Pour plus d’informations, consultez [Modifier le schéma dans les bases de données de publication](../../relational-databases/replication/publish/make-schema-changes-on-publication-databases.md).  
   
- Le paramètre * \@ replicate_ddl* est respecté lorsqu’une instruction DDL ajoute une colonne. Le paramètre * \@ replicate_ddl* est ignoré lorsqu’une instruction DDL modifie ou supprime une colonne pour les raisons suivantes.  
+ Le paramètre *\@ replicate_ddl* est respecté lorsqu’une instruction DDL ajoute une colonne. Le paramètre *\@ replicate_ddl* est ignoré lorsqu’une instruction DDL modifie ou supprime une colonne pour les raisons suivantes.  
   
--   Lorsqu'une colonne est supprimée, sysarticlecolumns doit être mis à jour pour empêcher de nouvelles instructions DML d'inclure la colonne supprimée, ce qui provoquerait l'échec de l'agent de distribution. Le paramètre * \@ replicate_ddl* est ignoré, car la réplication doit toujours répliquer la modification de schéma.  
+-   Lorsqu'une colonne est supprimée, sysarticlecolumns doit être mis à jour pour empêcher de nouvelles instructions DML d'inclure la colonne supprimée, ce qui provoquerait l'échec de l'agent de distribution. Le paramètre *\@ replicate_ddl* est ignoré, car la réplication doit toujours répliquer la modification de schéma.  
   
--   Lorsqu'une colonne est modifiée, le type de données source ou la possibilité d'une valeur NULL peuvent avoir changé et les instructions DML peuvent contenir une valeur non compatible avec la table sur l'abonné. Ces instructions DML peuvent entraîner l'échec de l'agent de distribution. Le paramètre * \@ replicate_ddl* est ignoré, car la réplication doit toujours répliquer la modification de schéma.  
+-   Lorsqu'une colonne est modifiée, le type de données source ou la possibilité d'une valeur NULL peuvent avoir changé et les instructions DML peuvent contenir une valeur non compatible avec la table sur l'abonné. Ces instructions DML peuvent entraîner l'échec de l'agent de distribution. Le paramètre *\@ replicate_ddl* est ignoré, car la réplication doit toujours répliquer la modification de schéma.  
   
 -   Lorsqu'une instruction DDL ajoute une nouvelle colonne, sysarticlecolumns n'inclut pas la nouvelle colonne. Les instructions DML n'essayeront pas de répliquer les données pour la nouvelle colonne. Le paramètre est respecté parce que la réplication ou la réplication DDL est acceptable.  
   
-`[ \@enabled_for_p2p = ] 'enabled_for_p2p'` Permet d’utiliser la publication dans une topologie de réplication d’égal à égal. *enabled_for_p2p* est de type **nvarchar (5)**, avec false comme valeur par défaut. la **valeur true** indique que la publication prend en charge la réplication d’égal à égal. Lorsque vous affectez la **valeur true**à *enabled_for_p2p* , les restrictions suivantes s’appliquent :  
+`[ \@enabled_for_p2p = ] 'enabled_for_p2p'` Permet d’utiliser la publication dans une topologie de réplication d’égal à égal. *enabled_for_p2p* est de type **nvarchar (5)**, avec false comme valeur par défaut. la **valeur true** indique que la publication prend en charge la réplication d’égal à égal. Lorsque vous affectez la **valeur true** à *enabled_for_p2p* , les restrictions suivantes s’appliquent :  
   
 -   *allow_anonymous* doit avoir la **valeur false**.  
   
@@ -317,7 +317,7 @@ sp_addpublication [ @publication = ] 'publication'
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  **sp_addpublication** est utilisé dans la réplication d’instantané et la réplication transactionnelle.  
   
  S’il existe plusieurs publications qui publient le même objet de base de données, seules les publications dont la valeur de *replicate_ddl* est **1** RÉPLIQUENT les instructions ALTER TABLE, ALTER VIEW, ALTER PROCEDURE, ALTER FUNCTION et ALTER TRIGGER DDL. Cependant, une instruction ALTER TABLE DROP COLUMN DDL sera répliquée par toutes les publications publiant la colonne supprimée.  
