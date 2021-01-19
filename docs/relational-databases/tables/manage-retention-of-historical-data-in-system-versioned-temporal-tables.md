@@ -12,12 +12,12 @@ ms.assetid: 7925ebef-cdb1-4cfe-b660-a8604b9d2153
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: f742ece496377a224a67b12223b09d198327812a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c0dac2b5d344969f96016a86622ee4e07ab8c23d
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484491"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98168067"
 ---
 # <a name="manage-retention-of-historical-data-in-system-versioned-temporal-tables"></a>Gérer la conservation des données d’historique dans les tables temporelles versionnées par le système
 
@@ -70,7 +70,7 @@ Vous pouvez configurer une table d’historique temporelle pour Stretch à l’a
 
 ### <a name="using-the-stretch-wizard-to-stretch-the-entire-history-table"></a>Étendre l’ensemble de la table d’historique à l’aide de l’Assistant Stretch
 
-Pour les débutants, la méthode la plus simple consiste à utiliser l’Assistant Stretch pour activer Stretch pour la base de données entière, puis à sélectionner la table d’historique temporelle dans l’Assistant Stretch (cet exemple part du principe que vous avez configuré la table Department en tant que table temporelle avec versions gérées par le système dans une base de données autrement vide). Dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], vous ne pouvez pas cliquer avec le bouton droit sur la table d’historique temporelle proprement dite et cliquer sur Stretch.
+Pour les débutants, la méthode la plus simple consiste à utiliser l’Assistant Stretch pour activer Stretch pour la base de données entière, puis à sélectionner la table d’historique temporelle dans l’Assistant Stretch (cet exemple part du principe que vous avez configuré la table Department en tant que table temporelle avec versions gérées par le système dans une base de données autrement vide). Dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], vous ne pouvez pas cliquer avec le bouton droit sur la table d’historique temporelle proprement dite et cliquer sur Stretch.
 
 1. Cliquez avec le bouton droit sur votre base de données et pointez sur **Tâches**, sur **Stretch**, puis cliquez sur **Activer** pour lancer l’Assistant.
 2. Dans la fenêtre **Sélectionner des tables** , cochez la case de la table d’historique temporelle et cliquez sur Suivant.

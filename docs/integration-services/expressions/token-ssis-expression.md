@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 9fdd06bf-5bc9-445c-95bf-709e0ca5989b
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 2490c95bf099e586de9692b6057f59fc6a6ce2fc
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cc99e599596658019c073b67dbf39b6dd7e573ce
+ms.sourcegitcommit: 1f826eb3f73bd4d94bc9638b9cdd60991a2e2fa0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88425351"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98125600"
 ---
 # <a name="token--ssis-expression"></a>TOKEN  (expression SSIS)
 
@@ -95,7 +95,7 @@ TOKEN("        a little white dog", " ", 1)
  Dans l'exemple suivant, la fonction TOKEN retourne l'année spécifiée dans une chaîne de date.  
   
 ```  
-TOKEN("2009/01/01", "/"), 1  
+TOKEN("2009/01/01", "/", 1)
 ```  
   
  Dans l'exemple suivant, la fonction TOKEN retourne le nom de fichier figurant dans le chemin d'accès spécifié. Par exemple, si la valeur de User::Path est « c:\program files\data\myfile.txt », la fonction TOKEN retourne « myfile.txt ». La fonction TOKENCOUNT retourne 4 et la fonction TOKEN retourne le 4ème jeton, « myfile.txt ».  

@@ -16,12 +16,12 @@ ms.assetid: ce4053fb-e37a-4851-b711-8e504059a780
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 345c02a175643967a509900ab415b90708a3d9e7
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 910db0887a50e12163ddeda927159f5e6c97b74b
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478300"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98169277"
 ---
 # <a name="tempdb-database"></a>base de données tempdb
 
@@ -213,7 +213,7 @@ Placez la base de données `tempdb` sur un sous-système d’E/S rapide. Si plus
 Placez la base de données `tempdb` sur des disques différents de ceux que les bases de données utilisateur emploient.
 
 ## <a name="performance-improvements-in-tempdb-for-sql-server"></a>Amélioration des performances dans tempdb pour SQL Server
-À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], les performances de `tempdb` sont optimisées de la façon suivante :  
+À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], les performances de `tempdb` sont optimisées de la façon suivante :  
   
 - Les tables temporaires et les variables de table sont mises en cache. La mise en cache permet aux opérations de création et de suppression des objets temporaires de s'exécuter très rapidement. La mise en cache réduit également l’allocation de pages et les conflits de métadonnées.  
 - Le protocole de verrouillage des pages d’allocation a été amélioré pour réduire le nombre de verrous `UP` (update) utilisés.  

@@ -26,12 +26,12 @@ ms.assetid: f47eda43-33aa-454d-840a-bb15a031ca17
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016||>=sql-server-linux-2017
-ms.openlocfilehash: d81ecf6b555022aeac47e810041d96a57f61b00b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 43f3bbae327731f6522b71c0fdaafbc9441fe9ca
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97468210"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98169748"
 ---
 # <a name="openrowset-transact-sql"></a>OPENROWSET (Transact-SQL)
 
@@ -249,7 +249,7 @@ SELECT *
 |ACP|Convertit les colonnes de type de données **char**, **varchar** ou **text** de la page de codes ANSI/[!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows (ISO 1252) à la page de codes [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|
 |OEM (valeur par défaut)|Convertit les colonnes de type de données **char**, **varchar** ou **text** de la page de codes du système OEM à la page de codes [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|
 |RAW|Aucune conversion n'a lieu d'une page de codes à une autre. Il s'agit de l'option la plus rapide.|
-|*code_page*|Indique la page de codes source sur laquelle est basé l'encodage des données caractères du fichier de données, par exemple 850.<br /><br /> **Important** Les versions antérieures à la version [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] ne prennent pas en charge la page de codes 65001 (encodage UTF-8).|
+|*code_page*|Indique la page de codes source sur laquelle est basé l'encodage des données caractères du fichier de données, par exemple 850.<br /><br /> **Important** Les versions antérieures à la version [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] ne prennent pas en charge la page de codes 65001 (encodage UTF-8).|
 
 ##### <a name="format"></a>FORMAT
 `FORMAT` **=** 'CSV' **S’applique à :** [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] CTP 1.1.

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 6e005de0-3a77-4b91-b497-14cc0f9f6605
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: a88af1af1e814ee6340f72553d74fdba1247c51e
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: ebedb1071dc5953bc78918f928f0f53a7145e282
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89542890"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98167811"
 ---
 # <a name="configuring-storage-for-memory-optimized-tables"></a>Configuration du stockage des tables optimisées en mémoire
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -44,7 +44,7 @@ Un bon point de départ pour le dimensionnement du stockage pour cette zone cons
 -   Les fichiers de point de contrôle sont généralement distribués uniformément entre tous les conteneurs, si l’espace disponible le permet. Avec SQL Server 2014, vous devez provisionner un nombre impair de conteneurs pour obtenir une distribution uniforme ; à partir de la version 2016, les nombres de conteneurs impairs comme pairs assurent une distribution uniforme.
   
 ## <a name="encryption"></a>Chiffrement  
- Dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures, le stockage des tables à mémoire optimisée est chiffré au repos dans le cadre de l’activation de Transparent Data Encryption (TDE) sur la base de données. Pour plus d’informations, consultez [Transparent Data Encryption](../../relational-databases/security/encryption/transparent-data-encryption.md). Dans [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], les fichiers de point de contrôle ne sont pas chiffrés, même si TDE est activé sur la base de données.
+ Dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures, le stockage des tables à mémoire optimisée est chiffré au repos dans le cadre de l’activation de Transparent Data Encryption (TDE) sur la base de données. Pour plus d’informations, consultez [Transparent Data Encryption](../../relational-databases/security/encryption/transparent-data-encryption.md). Dans [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], les fichiers de point de contrôle ne sont pas chiffrés, même si TDE est activé sur la base de données.
 
  Les données contenues dans les tables à mémoire optimisée [non durables](../../relational-databases/in-memory-oltp/defining-durability-for-memory-optimized-objects.md) (SCHEMA_ONLY) ne sont pas écrites sur disque à tout moment. Par conséquent, TDE ne s’applique pas à ces tables.
   

@@ -10,12 +10,12 @@ ms.assetid: 5c59f723-9707-4407-80ae-f05f483cf65f
 author: chugugrace
 ms.author: chugu
 ms.reviewer: ''
-ms.openlocfilehash: 4ab6f98a868dc504cf13fa770cd0d5ad5ceb1788
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: dbfe5a2fd1472ce67edddeb2eff8a223352dccce
+ms.sourcegitcommit: 1f826eb3f73bd4d94bc9638b9cdd60991a2e2fa0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88462032"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98125611"
 ---
 # <a name="lesson-1-6-add-and-configure-the-lookup-transformations"></a>Leçon 1-6 : Ajouter et configurer les transformations de recherche
 
@@ -59,8 +59,8 @@ Dans les deux cas, la transformation de recherche utilise le gestionnaire de con
     2.  Sélectionnez **Utiliser les résultats d’une requête SQL**, puis entrez ou collez l’instruction SQL suivante :  
   
         ```sql
-        SELECT * FROM [dbo].[DimCurrency]
-        WHERE [CurrencyAlternateKey]
+        SELECT * FROM [Sales].[Currency]
+        WHERE [CurrencyCode]
         IN ('ARS', 'AUD', 'BRL', 'CAD', 'CNY',
             'DEM', 'EUR', 'FRF', 'GBP', 'JPY',
             'MXN', 'SAR', 'USD', 'VEB')
