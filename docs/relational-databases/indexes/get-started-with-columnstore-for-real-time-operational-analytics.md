@@ -12,17 +12,17 @@ ms.assetid: e1328615-6b59-4473-8a8d-4f360f73187d
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: e89b5ab77b4b77d5cca83f6b3691027122444fe1
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4e62692402f33bfc42957363794bad9a698b18bb
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465340"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98172761"
 ---
 # <a name="get-started-with-columnstore-for-real-time-operational-analytics"></a>Bien commencer avec columnstore pour l’analytique opérationnelle en temps réel
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
-  [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] introduit l’analytique opérationnelle en temps réel, la possibilité d’exécuter à la fois des charges de travail analytiques et OLTP sur les mêmes tables de base de données en même temps. Outre l’exécution de l’analytique en temps réel, vous pouvez également éliminer le besoin d’opérations d’extraction, de transformation et de chargement ainsi que le besoin d’un entrepôt de données.  
+  [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] introduit l’analytique opérationnelle en temps réel, la possibilité d’exécuter à la fois des charges de travail analytiques et OLTP sur les mêmes tables de base de données en même temps. Outre l’exécution de l’analytique en temps réel, vous pouvez également éliminer le besoin d’opérations d’extraction, de transformation et de chargement ainsi que le besoin d’un entrepôt de données.  
   
 ## <a name="real-time-operational-analytics-explained"></a>Description de l’analytique opérationnelle en temps réel  
  En règle générale, les entreprises ont des systèmes séparés pour les charges de travail opérationnelles (autrement dit, OLTP) et analytiques. Pour ces systèmes, les tâches d’extraction, de transformation et de chargement (ETL) déplacent régulièrement les données du magasin opérationnel vers un magasin d’analytiques. Les données analytiques sont généralement stockées dans un entrepôt de données ou un mini-Data Warehouse dédié à l’exécution de requêtes analytiques. Même si cette solution constitue la norme, elle présente les trois principaux inconvénients suivants :  

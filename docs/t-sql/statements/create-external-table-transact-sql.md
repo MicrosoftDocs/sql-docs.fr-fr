@@ -22,12 +22,12 @@ ms.assetid: 6a6fd8fe-73f5-4639-9908-2279031abdec
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 2595db017ce9572f6ceb7a4c7eca16f9db9e5abc
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: be0e9f5298430dc1abb6ca6b0c2c59c84d601ba2
+ms.sourcegitcommit: 23649428528346930d7d5b8be7da3dcf1a2b3190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095793"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98241784"
 ---
 # <a name="create-external-table-transact-sql"></a>CREATE EXTERNAL TABLE (Transact-SQL)
 
@@ -849,8 +849,6 @@ Si vous spécifiez LOCATION comme étant un dossier, une requête PolyBase qui s
 Dans cet exemple, si LOCATION='/webdata/', une requête PolyBase retourne des lignes à partir de mydata.txt et mydata2.txt. Il ne retourne pas les données de mydata3.txt, car il se trouve dans un sous-dossier d’un dossier masqué. Il ne retourne pas non plus _hidden.txt car il s’agit d’un fichier masqué.
 
 ![Données récursives pour les tables externes](../../t-sql/statements/media/aps-polybase-folder-traversal.png "Données récursives pour les tables externes")
-
-Pour modifier la valeur par défaut et uniquement lire les données du dossier racine, définissez l’attribut \<polybase.recursive.traversal>sur 'false' dans le fichier de configuration core-site.xml. Ce fichier se trouve sous `<SqlBinRoot>\PolyBase\Hadoop\Conf with SqlBinRoot the bin root of SQl Server`. Par exemple : `C:\\Program Files\\Microsoft SQL Server\\MSSQL13.XD14\\MSSQL\\Binn`.
 
 DATA_SOURCE = *external_data_source_name* Spécifie le nom de la source de données externe qui contient l’emplacement des données externes. Cet emplacement figure dans Azure Data Lake. Pour créer une source de données externe, utilisez [CREATE EXTERNAL DATA SOURCE](../../t-sql/statements/create-external-data-source-transact-sql.md).
 

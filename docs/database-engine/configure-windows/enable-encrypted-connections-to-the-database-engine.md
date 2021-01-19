@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: e1e55519-97ec-4404-81ef-881da3b42006
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: b18a3131329e0485221a0ae2cdaafd0726a4f31c
-ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
+ms.openlocfilehash: 1b5726aad103012b0ed7619749c1f6f669baa234
+ms.sourcegitcommit: 23649428528346930d7d5b8be7da3dcf1a2b3190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878957"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98241831"
 ---
 # <a name="enable-encrypted-connections-to-the-database-engine"></a>Activez les connexions chiffrées dans le moteur de base de données
 
@@ -40,7 +40,7 @@ ms.locfileid: "97878957"
  L’ordinateur serveur doit disposer d’un certificat alloué. Pour allouer le certificat sur l’ordinateur serveur, vous [l’importez dans Windows](#single-server). L’ordinateur client doit être configuré pour [approuver l’autorité racine du certificat](#about).  
   
 > [!IMPORTANT]
-> À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], le protocole SSL (Secure Sockets Layer) n’est plus disponible. Utilisez TLS (Transport Layer Security) à la place.
+> À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], le protocole SSL (Secure Sockets Layer) n’est plus disponible. Utilisez TLS (Transport Layer Security) à la place.
 
 ## <a name="transport-layer-security-tls"></a>TLS (Transport Layer Security)
 
@@ -92,7 +92,7 @@ Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], pour charger un 
 
 - La propriété **Subject** du certificat doit indiquer que le nom courant (CN) est le même que le nom de domaine ou le nom de domaine complet (FQDN, Fully Qualified Domain Name) de l'ordinateur serveur. Quand vous utilisez le nom d’hôte, le suffixe DNS doit être spécifié dans le certificat. Si [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] s’exécute sur un cluster de basculement, le nom courant doit correspondre au nom d’hôte (ou FQDN) du serveur virtuel, et les certificats doivent être provisionnés sur tous les nœuds dans le cluster de basculement.
 
-- [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] et [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] Native Client (SNAC) prennent en charge les certificats génériques. SNAC a depuis été déprécié et remplacé par [Microsoft OLE DB Driver pour SQL Server](../../connect/oledb/oledb-driver-for-sql-server.md) et [Microsoft ODBC Driver for SQL Server](../../connect/odbc/microsoft-odbc-driver-for-sql-server.md). Les autres clients ne prennent pas toujours en charge les certificats génériques. Pour plus d’informations, consultez la documentation du client et [KB 258858](https://support.microsoft.com/kb/258858).       
+- [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] et [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] Native Client (SNAC) prennent en charge les certificats génériques. SNAC a depuis été déprécié et remplacé par [Microsoft OLE DB Driver pour SQL Server](../../connect/oledb/oledb-driver-for-sql-server.md) et [Microsoft ODBC Driver for SQL Server](../../connect/odbc/microsoft-odbc-driver-for-sql-server.md). Les autres clients ne prennent pas toujours en charge les certificats génériques.      
   Vous ne pouvez pas sélectionner un certificat générique à l’aide du Gestionnaire de configuration SQL Server. Pour utiliser un certificat générique, modifiez le Registre de clé `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQLServer\SuperSocketNetLib`, puis entrez l’empreinte numérique du certificat, sans espaces, comme valeur **Certificat**.  
 
   > [!WARNING]  
