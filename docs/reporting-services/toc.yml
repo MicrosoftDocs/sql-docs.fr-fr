@@ -415,8 +415,6 @@
       href: ../reporting-services/report-server-sharepoint/high-availability-reporting-services.md
     - name: Activer et désactiver RDL Sandboxing
       href: ../reporting-services/report-server-sharepoint/enable-and-disable-rdl-sandboxing.md
-    - name: Configurer Reporting Services pour utiliser un autre nom d’objet
-      href: ../reporting-services/report-server-sharepoint/configure-reporting-services-to-use-a-subject-alternative-name.md
 - name: Composant WebPart Visionneuse de rapports sur un site SharePoint
   href: ../reporting-services/report-server-sharepoint/report-viewer-web-part-sharepoint-site.md
   items:
@@ -1267,6 +1265,8 @@
               href: ../reporting-services/security/set-permissions-for-report-server-items-on-a-sharepoint-site.md
     - name: Configurer des connexions SSL sur un serveur de rapports en mode natif
       href: ../reporting-services/security/configure-ssl-connections-on-a-native-mode-report-server.md
+    - name: Configurer Reporting Services pour utiliser un autre nom d’objet
+      href: ../reporting-services/report-server-sharepoint/configure-reporting-services-to-use-a-subject-alternative-name.md
 - name: Abonnements aux rapports
   items:
     - name: Vue d’ensemble des planifications SSRS

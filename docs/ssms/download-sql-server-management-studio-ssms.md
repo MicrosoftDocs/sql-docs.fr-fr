@@ -24,12 +24,12 @@ ms.author: drskwier
 ms.reviewer: maghan
 ms.custom: seo-lt-2019
 ms.date: 12/17/2020
-ms.openlocfilehash: e1af0f83181e6fbd479d2727b7da893b8bc20b59
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: a4798fbc01e015b85e31d9768fd8135af6d202f4
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97639159"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596873"
 ---
 # <a name="download-sql-server-management-studio-ssms"></a>Télécharger SQL Server Management Studio (SSMS)
 
@@ -58,7 +58,7 @@ L’installation de SSMS 18.x ne met pas à niveau ni ne remplace les versions�
 Si un ordinateur contient des installations côte à côte de SSMS, vérifiez que vous démarrez la version correcte adaptée à vos besoins spécifiques. La version la plus récente s’intitule **Microsoft SQL Server Management Studio 18**
 
 > [!Note]
-> Si vous accédez à cette page à partir d’une version autre que l’anglais et que vous souhaitez voir le contenu le plus à jour, consultez la [version anglaise (États-Unis) du site](https://aka.ms/downloadssmsusenglish). Vous pouvez télécharger différentes langues à partir du site en version anglaise (États-Unis) en sélectionnant [Langues disponibles](#available-languages).
+> Si vous accédez à cette page à partir d’une version autre que l’anglais et que vous souhaitez voir le contenu le plus à jour, consultez la [version anglaise (États-Unis) du site](). Vous pouvez télécharger différentes langues à partir du site en version anglaise (États-Unis) en sélectionnant [Langues disponibles](#available-languages).
 
 ## <a name="available-languages"></a>Langues disponibles
 
@@ -68,7 +68,7 @@ SQL Server Management Studio 18.8 :
 [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2151644&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2151644&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2151644&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2151644&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2151644&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2151644&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2151644&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2151644&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2151644&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2151644&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2151644&clcid=0x40a)
 
 > [!NOTE]
-> Le module SQL Server PowerShell est une installation distincte que vous pouvez effectuer via PowerShell Gallery. Pour plus d'informations, consultez la page [Télécharger le module SQL Server PowerShell](download-sql-server-ps-module.md).
+> Le module SQL Server PowerShell est une installation distincte que vous pouvez effectuer via PowerShell Gallery. Pour plus d'informations, consultez la page [Télécharger le module SQL Server PowerShell](../powershell/download-sql-server-ps-module.md).
 
 ## <a name="whats-new"></a>Nouveautés
 
@@ -158,7 +158,7 @@ Matériel pris en charge :
 - Espace disque dur nécessaire : Au moins 2 Go jusqu’à 10 Go d’espace disponible
 
 > [!NOTE]
-> SSMS est disponible uniquement comme application 32 bits pour Windows. Si vous avez besoin d’un outil qui s’exécute sur d’autres systèmes d’exploitation que Windows, nous recommandons Azure Data Studio. Azure Data Studio est un outil multiplateforme qui s’exécute sur macOS, Linux, ainsi que Windows. Pour plus d’informations, consultez [Azure Data Studio](../azure-data-studio/what-is.md).
+> SSMS est disponible uniquement comme application 32 bits pour Windows. Si vous avez besoin d’un outil qui s’exécute sur d’autres systèmes d’exploitation que Windows, nous recommandons Azure Data Studio. Azure Data Studio est un outil multiplateforme qui s’exécute sur macOS, Linux, ainsi que Windows. Pour plus d’informations, consultez [Azure Data Studio](../azure-data-studio/what-is-azure-data-studio.md).
 
 [!INCLUDE[get-help-sql-tools](../includes/paragraph-content/get-help-sql-tools.md)]
 
@@ -166,10 +166,10 @@ Matériel pris en charge :
 
 - [Outils SQL](../tools/overview-sql-tools.md)
 - [Documentation de SQL Server Management Studio](sql-server-management-studio-ssms.md)
-- [Azure Data Studio](../azure-data-studio/what-is.md)
+- [Azure Data Studio](../azure-data-studio/what-is-azure-data-studio.md)
 - [Télécharger la dernière version de SQL Server Data Tools](../ssdt/download-sql-server-data-tools-ssdt.md)
 - [Dernières mises à jour](../database-engine/install-windows/latest-updates-for-microsoft-sql-server.md)
-- [Guide d’architecture des données Azure](https://docs.microsoft.com/azure/architecture/data-guide/)
+- [Guide d’architecture des données Azure](/azure/architecture/data-guide/)
 - [Blog SQL Server](https://cloudblogs.microsoft.com/sqlserver/)
 
 [!INCLUDE[contribute-to-content](../includes/paragraph-content/contribute-to-content.md)]
