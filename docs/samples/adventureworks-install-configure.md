@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 1b275826c20944d11fb7e88266a882b3834fbfac
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: ec38d7eeed89d03bab4ebd92446517542e2e51a0
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97490089"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597002"
 ---
 # <a name="adventureworks-sample-databases"></a>Exemples de bases de données AdventureWorks
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -63,7 +63,7 @@ Vous pouvez utiliser le `.bak` fichier pour restaurer votre exemple de base de d
 
 # <a name="sql-server-management-studio-ssms"></a>[SQL Server Management Studio (SSMS)](#tab/ssms)
 
-Si vous n’êtes pas familiarisé avec l’utilisation de SQL Server Management Studio (SSMS), vous pouvez voir [connexion & requête](../ssms/quickstarts/connect-query-sql-server.md) pour commencer. 
+Si vous n’êtes pas familiarisé avec l’utilisation de SQL Server Management Studio (SSMS), vous pouvez voir [connexion & requête](../ssms/quickstarts/ssms-connect-query-sql-server.md) pour commencer. 
 
 Pour restaurer votre base de données dans SQL Server Management Studio, procédez comme suit :
 
@@ -208,5 +208,5 @@ Une fois que vous avez restauré votre base de données exemple, à l’aide des
 
 
 [Didacticiels pour le moteur de base de données SQL Server](../relational-databases/database-engine-tutorials.md)   
-[Se connecter et interroger avec SQL Server Management Studio (SSMS)](../ssms/quickstarts/connect-query-sql-server.md)   
-[Se connecter et interroger avec Azure Data Studio](../ssms/quickstarts/connect-query-sql-server.md)
+[Se connecter et interroger avec SQL Server Management Studio (SSMS)](../ssms/quickstarts/ssms-connect-query-sql-server.md)   
+[Se connecter et interroger avec Azure Data Studio](../ssms/quickstarts/ssms-connect-query-sql-server.md)

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 9d485fd0-ab5d-402a-a59a-e9982a61b7de
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: cef31b2968ea0241b3c999e0dbd781d70974b360
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c590a76696f2729bf5d1c6c5d4ca5b0242a63df6
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88426971"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596735"
 ---
 # <a name="connect-to-db2-db2tosql"></a>Se connecter à DB2 (DB2ToSQL)
 Utilisez la boîte de dialogue **se connecter à DB2** pour vous connecter à la base de données DB2 que vous souhaitez migrer.  
@@ -56,7 +56,7 @@ Entrez le SID pour la base de données. Le SID est un identificateur qui disting
   
 Il s’agit d’une option de mode standard.  
   
-**Nom d’utilisateur**  
+**Nom d'utilisateur**  
 Entrez le nom d’utilisateur que SSMA utilisera pour se connecter à la base de données DB2.  
   
 **Mot de passe**  
@@ -70,7 +70,6 @@ Si vous utilisez le mode de chaîne de connexion, entrez la chaîne de connexion
   
 Les chaînes de connexion se composent de paires nom de paramètre/valeur.  
   
--   Pour OLE DB d’informations sur les chaînes de connexion, consultez [fournisseur OLE DB Microsoft pour DB2](https://go.microsoft.com/fwlink/?LinkId=85640) article sur MSDN Library.  
+-   Pour OLE DB d’informations sur les chaînes de connexion, consultez [fournisseur OLE DB Microsoft pour DB2](../../ado/guide/appendixes/microsoft-ole-db-provider-for-oracle.md) article sur MSDN Library.  
   
 Pour les chaînes de connexion SSMA, incluez toujours le paramètre provider. En outre, assurez-vous d’inclure le paramètre de port lorsque vous vous connectez à DB2.  
-  

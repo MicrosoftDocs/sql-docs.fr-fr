@@ -10,12 +10,12 @@ ms.technology: ssma
 ms.topic: conceptual
 ms.assetid: 23a48cb6-ff30-49bb-b4a7-603ebcab336f
 ms.author: alexiva
-ms.openlocfilehash: 497c3df711c2cfacbb2774edf791e4c36837bb87
-ms.sourcegitcommit: e572f1642f588b8c4c75bc9ea6adf4ccd48a353b
+ms.openlocfilehash: 8e13b9ea8bcd264d1668cf0979dc2956bd11bef7
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84779041"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596718"
 ---
 # <a name="connect-to-oracle-oracletosql"></a>Se connecter à Oracle (OracleToSQL)
 
@@ -70,7 +70,7 @@ Si vous utilisez le mode de chaîne de connexion, entrez la chaîne de connexion
 
 Les chaînes de connexion se composent de paires nom de paramètre/valeur.
 
-- Pour OLE DB d’informations sur les chaînes de connexion, consultez [fournisseur Microsoft OLE DB pour Oracle](https://go.microsoft.com/fwlink/?LinkId=85640) article sur MSDN Library.
+- Pour OLE DB d’informations sur les chaînes de connexion, consultez [fournisseur Microsoft OLE DB pour Oracle](../../ado/guide/appendixes/microsoft-ole-db-provider-for-oracle.md) article sur MSDN Library.
 
 Pour les chaînes de connexion SSMA, incluez toujours le paramètre provider. En outre, assurez-vous d’inclure le paramètre port quand vous vous connectez à Oracle.
 
