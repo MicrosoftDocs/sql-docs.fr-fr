@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 3ebcf2f1-980f-4543-a84b-fbaeea54eeac
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 5fc10c705564c88fe157860d00a61fa5ea682cc0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 81a5c562ddade5c60458ad491a401dab916c59d4
+ms.sourcegitcommit: fc24f7ecc155d97e789676fffe55e45840fcb088
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88486275"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98620293"
 ---
 # <a name="sp_change_log_shipping_secondary_database-transact-sql"></a>sp_change_log_shipping_secondary_database (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Modifie les paramètres de la base de données secondaire.  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -74,9 +74,9 @@ sp_change_log_shipping_secondary_database
   
 `[ @restore_threshold = ] 'restore_threshold'` Nombre de minutes autorisées à s’écouler entre les opérations de restauration avant la génération d’une alerte. *restore_threshold* est de **type int** et ne peut pas avoir la valeur null.  
   
-`[ @threshold_alert = ] 'threshold_alert'` Alerte à déclencher lorsque le seuil de restauration est dépassé. *threshold_alert* est de **type int**, avec 14420 comme valeur par défaut.  
+`[ @threshold_alert = ] 'threshold_alert'` Alerte à déclencher lorsque le seuil de restauration est dépassé. *threshold_alert* est de **type int**, avec 14421 comme valeur par défaut.  
   
-`[ @threshold_alert_enabled = ] 'threshold_alert_enabled'` Spécifie si une alerte sera déclenchée lorsque *restore_threshold*est dépassé. 1 = activées ; 0 = désactivées. *threshold_alert_enabled* est de type **bit** et ne peut pas être null.  
+`[ @threshold_alert_enabled = ] 'threshold_alert_enabled'` Spécifie si une alerte sera déclenchée lorsque *restore_threshold* est dépassé. 1 = activées ; 0 = désactivées. *threshold_alert_enabled* est de type **bit** et ne peut pas être null.  
   
 `[ @history_retention_period = ] 'history_retention_period'` Durée en minutes pendant laquelle l’historique est conservé. *history_retention_period* est de **type int**. La valeur 1440 est utilisée si aucun n’est spécifié.  
   
