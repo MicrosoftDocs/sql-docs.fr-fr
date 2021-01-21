@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 86a15b33-4d03-4549-8ea2-b45e4f1baad7
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ea1413b30c4706125b711493f64210c2a875ec0f
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: a27efd6cb20a90bc1b3ce72a6e4cee74f74c3b61
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642810"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98595232"
 ---
 # <a name="always-on-failover-cluster-instances-sql-server"></a>Instances de cluster de basculement Always On (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "97642810"
  Une instance FCI peut tirer parti des [groupes de disponibilité](../../../database-engine/availability-groups/windows/always-on-availability-groups-sql-server.md) pour permettre la récupération d’urgence à distance au niveau de la base de données. Pour plus d’informations, consultez [Clustering de basculement et groupes de disponibilité &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server.md).  
  
  > [!NOTE]  
- > Windows Server 2016 Datacenter introduit la prise en charge des espaces de stockage direct (S2D). Les instances de cluster de basculement SQL Server prennent en charge S2D pour les ressources de stockage en cluster. Pour plus d’informations, consultez [Espaces de stockage direct dans Windows Server 2016](https://technet.microsoft.com/windows-server-docs/storage/storage-spaces/storage-spaces-direct-overview).
+ > Windows Server 2016 Datacenter introduit la prise en charge des espaces de stockage direct (S2D). Les instances de cluster de basculement SQL Server prennent en charge S2D pour les ressources de stockage en cluster. Pour plus d’informations, consultez [Espaces de stockage direct dans Windows Server 2016](/windows-server/storage/storage-spaces/storage-spaces-direct-overview).
  > 
- >Les instances de cluster de basculement prennent également en charge les volumes partagés de cluster. Pour plus d’informations, consultez [Présentation des volumes partagés de cluster dans un cluster de basculement](https://technet.microsoft.com/library/dd759255.aspx). 
+ >Les instances de cluster de basculement prennent également en charge les volumes partagés de cluster. Pour plus d’informations, consultez [Présentation des volumes partagés de cluster dans un cluster de basculement](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd759255(v=ws.11)). 
    
  **Dans cette rubrique :**  
   
@@ -157,7 +157,6 @@ ms.locfileid: "97642810"
 |----------------------------|---------------|  
 |Décrit comment installer une nouvelle instance FCI [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] .|[Créer un cluster de basculement SQL Server &#40;programme d’installation&#41;](../../../sql-server/failover-clusters/install/create-a-new-sql-server-failover-cluster-setup.md)|  
 |Explique comment effectuer une mise à niveau vers un cluster de basculement [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] .|[Mettre à niveau une instance de cluster de basculement SQL Server](../../../sql-server/failover-clusters/windows/upgrade-a-sql-server-failover-cluster-instance.md)|  
-|Décrit les concepts de clustering de basculement Windows et fournit des liens vers les tâches liées au clustering de basculement Windows.|[!INCLUDE[nextref_longhorn](../../../includes/nextref-longhorn-md.md)]: [Présentation des clusters de basculement](https://go.microsoft.com/fwlink/?LinkId=177878)<br /><br /> [!INCLUDE[nextref_longhorn](../../../includes/nextref-longhorn-md.md)] R2 : [Présentation des clusters de basculement](https://go.microsoft.com/fwlink/?LinkId=177879)|  
+|Décrit les concepts de clustering de basculement Windows et fournit des liens vers les tâches liées au clustering de basculement Windows.|[!INCLUDE[nextref_longhorn](../../../includes/nextref-longhorn-md.md)]: [Présentation des clusters de basculement](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730692(v=ws.10))<br /><br /> [!INCLUDE[nextref_longhorn](../../../includes/nextref-longhorn-md.md)] R2 : [Présentation des clusters de basculement](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754482(v=ws.11))|  
 |Décrit les différences de concepts entre les nœuds dans une instance FCI et les réplicas au sein d'un groupe de disponibilité, ainsi que les éléments à prendre en compte pour utiliser une instance FCI pour héberger un réplica pour un groupe de disponibilité.|[Clustering de basculement et groupes de disponibilité &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server.md)|  
-  
   

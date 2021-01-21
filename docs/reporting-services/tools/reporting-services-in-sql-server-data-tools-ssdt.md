@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: 0903c7b2-ac59-45f1-b7d0-922ecd9d76f8
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 30e7824d1519fb09a7947dde1cfdc2b818ebc144
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 9ed7c7d204fe315280e379206d56f122606d1f03
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86916585"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597297"
 ---
 # <a name="reporting-services-in-sql-server-data-tools-ssdt"></a>Reporting Services dans les outils de données SQL Server (SSDT)
 
-  [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] est un environnement [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pour créer des solutions d’aide à la décision. SSDT comprend l’environnement de création Concepteur de rapports, où vous pouvez ouvrir, modifier, afficher un aperçu, enregistrer et déployer des définitions de rapport paginés [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] , des sources de données partagées, des datasets partagés et des parties de rapports. [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] n’est pas fourni avec SQL Server. Téléchargez [SQL Server Data Tools](https://go.microsoft.com/fwlink/?LinkID=616714). 
+  [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] est un environnement [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pour créer des solutions d’aide à la décision. SSDT comprend l’environnement de création Concepteur de rapports, où vous pouvez ouvrir, modifier, afficher un aperçu, enregistrer et déployer des définitions de rapport paginés [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] , des sources de données partagées, des datasets partagés et des parties de rapports. [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] n’est pas fourni avec SQL Server. Téléchargez [SQL Server Data Tools](../../ssdt/download-sql-server-data-tools-ssdt.md). 
   
  Cette rubrique décrit les solutions, les projets, les modèles de projet, et les configurations de [!INCLUDE[ssBIDevStudio](../../includes/ssbidevstudio-md.md)] utilisés pour [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], ainsi que les vues, les menus, les barres d'outils et les raccourcis que vous pouvez utiliser dans le Concepteur de rapports.  
   
@@ -40,7 +40,7 @@ ms.locfileid: "86916585"
   
 -   **Assistant Projet Report Server.** Lorsque vous sélectionnez l'Assistant Projet Report Server, un projet de serveur de rapports est automatiquement créé et l'Assistant Rapport s'ouvre. Dans l'Assistant, pour créer un rapport, suivez les instructions de chaque page pour créer une chaîne de connexion dans une source de données, définir les informations d'identification de la source de données, créer une requête, ajouter une région de données de table ou de matrice, spécifier des données de rapport et des groupes, choisir une police et un style de couleur, publier le rapport sur un serveur de rapports et afficher un aperçu local du rapport. Après avoir créé un rapport au moyen de l'Assistant, vous pouvez modifier les données du rapport et le Concepteur de rapports à l'aide de l'outil Concepteur de rapports dans le projet Report Server.  
   
- ![Modèles Nouveau projet dans SSDT](https://docs.microsoft.com/analysis-services/analysis-services/media/ssdt-biprojects.png "Modèles Nouveau projet dans SSDT")  
+ ![Modèles Nouveau projet dans SSDT](/analysis-services/analysis-services/media/ssdt-biprojects.png "Modèles Nouveau projet dans SSDT")  
   
   
 ##  <a name="report-designer-windows-and-panes"></a><a name="bkmk_ReportDesignerWindowsandPanes"></a> Fenêtres et volets du Concepteur de rapports  
@@ -94,7 +94,7 @@ ms.locfileid: "86916585"
   
  Utilisez le volet Propriétés pour :  
   
--   définir les propriétés pour l'élément actuellement sélectionné dans l'aire de conception. Certaines propriétés affichent une liste déroulante de valeurs. Vous pouvez aussi taper la valeur directement dans la cellule. Certaines propriétés contiennent une collection de valeurs désignée par la valeur **(Collection)** . La plupart des propriétés peuvent accepter une expression. Les expressions complexes sont signalées par la valeur **\<Expression>** . Cliquez sur **\<Expression>** pour ouvrir la boîte de dialogue **Expression**. Pour plus d'informations, consultez [Expression Dialog Box](https://msdn.microsoft.com/library/e6c74ccb-4594-4d4f-b958-618d710e34eb).  
+-   définir les propriétés pour l'élément actuellement sélectionné dans l'aire de conception. Certaines propriétés affichent une liste déroulante de valeurs. Vous pouvez aussi taper la valeur directement dans la cellule. Certaines propriétés contiennent une collection de valeurs désignée par la valeur **(Collection)** . La plupart des propriétés peuvent accepter une expression. Les expressions complexes sont signalées par la valeur **\<Expression>** . Cliquez sur **\<Expression>** pour ouvrir la boîte de dialogue **Expression**. Pour plus d'informations, consultez [Expression Dialog Box](/previous-versions/sql/).  
   
 -   Utilisez les boutons de la barre d'outils du volet Propriétés pour modifier la grille et la faire basculer de l'affichage des catégories vers un affichage alphabétique. En affichage des catégories, vous devrez peut-être développer une catégorie pour afficher toutes ses propriétés en dessous. Pour ouvrir la boîte de dialogue Propriétés d’un élément, cliquez sur le bouton **Pages de propriétés** de la barre d’outils, ou cliquez avec le bouton droit sur l’élément, puis cliquez sur **Propriétés**.  
   
@@ -136,7 +136,7 @@ ms.locfileid: "86916585"
   
  Lorsque vous affichez l'aperçu d'un rapport, le Concepteur de rapports se connecte aux sources de données du rapport, exécute des requêtes de dataset, met en cache les données sur l'ordinateur local, traite le rapport pour fusionner les données et la mise en page, puis restitue le rapport. Vous pouvez afficher le rapport dans l'onglet Aperçu ou bien définir les propriétés du projet afin de visualiser le rapport en mode débogage et le consulter directement dans un navigateur.  
   
--   **Aperçu des rapports paramétrables.** Lors de l'aperçu d'un rapport, ce dernier est automatiquement traité si l'ensemble de ses paramètres possèdent des valeurs valides par défaut. Si un ou plusieurs paramètres du rapport ne sont pas dotés de valeurs valides par défaut, vous devez choisir une valeur pour chaque paramètre non attribué, puis cliquer sur **Afficher le rapport**dans la barre d'outils du rapport.  
+-   **Aperçu des rapports paramétrables.** Lors de l'aperçu d'un rapport, ce dernier est automatiquement traité si l'ensemble de ses paramètres possèdent des valeurs valides par défaut. Si un ou plusieurs paramètres du rapport ne sont pas dotés de valeurs valides par défaut, vous devez choisir une valeur pour chaque paramètre non attribué, puis cliquer sur **Afficher le rapport** dans la barre d'outils du rapport.  
   
 -   **Présentation du cache de données local** Lors de l’aperçu d’un rapport, le processeur de rapports exécute toutes les requêtes pour les datasets dans le rapport à l’aide des paramètres par défaut actuels, puis enregistre les résultats dans un fichier de cache de données local (.rdl.data). Vous pouvez toujours concevoir votre rapport sans avoir à récupérer de nouveau ces données si vous n'apportez aucune modification aux requêtes de dataset du rapport ou à ses paramètres.  
   
@@ -306,7 +306,7 @@ ms.locfileid: "86916585"
   
 ## <a name="next-steps"></a>Étapes suivantes
 
-[Télécharger SQL Server Data Tools](https://go.microsoft.com/fwlink/?LinkID=616714)
+[Télécharger SQL Server Data Tools](../../ssdt/download-sql-server-data-tools-ssdt.md)
 [Explorateur de solutions](../../ssms/solution/solution-explorer.md)   
 [Rapports Reporting Services](../../reporting-services/reports/reporting-services-reports-ssrs.md)   
 [Langage de définition des rapports](../../reporting-services/reports/report-definition-language-ssrs.md)   

@@ -19,12 +19,12 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: sstein
 ms.date: 03/13/2018
-ms.openlocfilehash: 9d8d86fbe427b232831fa3713b94f067e0089a4b
-ms.sourcegitcommit: 544706f6725ec6cdca59da3a0ead12b99accb2cc
+ms.openlocfilehash: 2607b029389d0a0d3f4b59e55e031b768baf4aac
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638935"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597251"
 ---
 # <a name="script-objects-in-sql-server-management-studio"></a>Générer des scripts d’objet dans SQL Server Management Studio
 
@@ -37,7 +37,7 @@ Ce tutoriel explique comment générer des scripts T-SQL (Transact-SQL) pour dif
 > * Procédures stockées
 > * Événements étendus
 
-Pour générer un script d’objet dans l’ **Explorateur d’objets** , cliquez avec le bouton droit sur l’objet et sélectionnez l’option **Scripter l’objet comme** . Ce tutoriel illustre le processus.
+Pour générer un script d’objet dans l’**Explorateur d’objets**, cliquez avec le bouton droit sur l’objet et sélectionnez l’option **Scripter l’objet comme**. Ce tutoriel illustre le processus.
 
 ## <a name="prerequisites"></a>Conditions préalables requises
 
@@ -59,13 +59,13 @@ Vous pouvez générer le code T-SQL associé pour une tâche chaque fois que vou
 
 2. Développez le nœud **Bases de données** .
 
-3. Cliquez avec le bouton droit sur la base de données **Adventureworks2016** > **Tâches** > **Sauvegarder**  :
+3. Cliquez avec le bouton droit sur la base de données **Adventureworks2016** > **Tâches** > **Sauvegarder** :
 
     ![Sauvegarder une base de données](media/scripting-ssms/backupdb.png)
 
 4. Configurez la sauvegarde comme vous le souhaitez. Dans ce tutoriel, tous les éléments conservent les valeurs par défaut. Toutefois, toutes les modifications apportées dans la fenêtre sont également répercutées dans le script. 
 
-5. Sélectionnez **Script** > **Action de script dans une nouvelle fenêtre de requête**  :
+5. Sélectionnez **Script** > **Action de script dans une nouvelle fenêtre de requête** :
 
     ![Générer un script de sauvegarde de base de données : action de script](media/scripting-ssms/scriptdbbackup.PNG)
 6. Passez en revue le script T-SQL renseigné dans la fenêtre de requête.
@@ -75,19 +75,19 @@ Vous pouvez générer le code T-SQL associé pour une tâche chaque fois que vou
 
 ### <a name="script-t-sql-when-you-shrink-the-transaction-log"></a>Script T-SQL quand vous réduisez le journal des transactions
 
-1. Cliquez avec le bouton droit sur la base de données **Adventureworks2016** > **Tâches** > **Réduire** > **Fichiers**  :
+1. Cliquez avec le bouton droit sur la base de données **Adventureworks2016** > **Tâches** > **Réduire** > **Fichiers** :
 
      ![Réduire les fichiers](media/scripting-ssms/shrinkfiles.png)
 
-2. Sélectionnez **Journal** dans la zone de liste déroulante **Type de fichier**  :
+2. Sélectionnez **Journal** dans la zone de liste déroulante **Type de fichier** :
 
     ![Réduire le journal des transactions](media/scripting-ssms/shrinktlog.png)
 
-3. Sélectionnez **Script** et **Action de script dans le Presse-papiers**  :
+3. Sélectionnez **Script** et **Action de script dans le Presse-papiers** :
 
     ![Générer un script dans le Presse-papiers](media/scripting-ssms/scriptactiontoclipboard.png)
 
-4. Ouvrez une fenêtre **Nouvelle requête** et collez le contenu du Presse-papiers. (Cliquez avec le bouton droit dans la fenêtre, puis sélectionnez **Coller** .)
+4. Ouvrez une fenêtre **Nouvelle requête** et collez le contenu du Presse-papiers. (Cliquez avec le bouton droit dans la fenêtre, puis sélectionnez **Coller**.)
 
     ![Coller le script](media/scripting-ssms/paste.png)
 
@@ -95,7 +95,7 @@ Vous pouvez générer le code T-SQL associé pour une tâche chaque fois que vou
 
 ## <a name="script-databases"></a>Générer des scripts pour les bases de données
 
-La section suivante décrit comment générer le script de la base de données à l’aide des options **Script comme** et **Générer des scripts** . L’option **Script comme** recrée la base de données et ses options de configuration. Vous pouvez générer un script pour le schéma et pour les données à l’aide de l’option **Générer des scripts** . Dans cette section, vous allez créer deux nouvelles bases de données. Vous utiliserez l’option **Script comme** pour créer *AdventureWorks2016a* . Vous utiliserez l’option **Générer des scripts** pour créer *AdventureWorks2016b* .
+La section suivante décrit comment générer le script de la base de données à l’aide des options **Script comme** et **Générer des scripts**. L’option **Script comme** recrée la base de données et ses options de configuration. Vous pouvez générer un script pour le schéma et pour les données à l’aide de l’option **Générer des scripts**. Dans cette section, vous allez créer deux nouvelles bases de données. Vous utiliserez l’option **Script comme** pour créer *AdventureWorks2016a*. Vous utiliserez l’option **Générer des scripts** pour créer *AdventureWorks2016b*.
 
 ### <a name="script-a-database-by-using-the-script-option"></a>Générer un script de base de données à l’aide de l’option Script
 
@@ -103,7 +103,7 @@ La section suivante décrit comment générer le script de la base de données �
 
 2. Développez le nœud **Bases de données** .
 
-3. Cliquez avec le bouton droit sur la base de données **AdventureWorks2016** > **Générer un script de la base de données en tant que** > **Créer dans** > **Nouvelle fenêtre d’éditeur de requête**  :
+3. Cliquez avec le bouton droit sur la base de données **AdventureWorks2016** > **Générer un script de la base de données en tant que** > **Créer dans** > **Nouvelle fenêtre d’éditeur de requête** :
 
     ![Générer un script de base de données](media/scripting-ssms/scriptdb.png)
 
@@ -111,9 +111,9 @@ La section suivante décrit comment générer le script de la base de données �
 
     ![Base de données hors script](media/scripting-ssms/scriptedoutdb.png) Cette option génère un script uniquement pour les options de configuration de base de données.
 
-5. Sur votre clavier, sélectionnez Ctrl+F pour ouvrir la boîte de dialogue **Rechercher** . Sélectionnez la flèche vers le bas pour ouvrir l’option **Remplacer** . Sur la ligne **Rechercher** en haut, tapez AdventureWorks2016, et sur la ligne **Remplacer** en bas, tapez AdventureWorks2016a.
+5. Sur votre clavier, sélectionnez Ctrl+F pour ouvrir la boîte de dialogue **Rechercher**. Sélectionnez la flèche vers le bas pour ouvrir l’option **Remplacer**. Sur la ligne **Rechercher** en haut, tapez AdventureWorks2016, et sur la ligne **Remplacer** en bas, tapez AdventureWorks2016a.
 
-6. Sélectionnez **Remplacer tout** pour remplacer toutes les instances de *AdventureWorks2016* par *AdventureWorks2016a* . 
+6. Sélectionnez **Remplacer tout** pour remplacer toutes les instances de *AdventureWorks2016* par *AdventureWorks2016a*. 
 
     ![Rechercher et remplacer](media/scripting-ssms/findandreplace.png)
 
@@ -125,36 +125,36 @@ La section suivante décrit comment générer le script de la base de données �
 
 2. Développez le nœud **Bases de données** .
 
-3. Cliquez avec le bouton droit sur **AdventureWorks2016** > **Tâches** > **Générer des scripts** :
+3. Cliquez avec le bouton droit sur **AdventureWorks2016** > **Tâches** > **Générer des scripts**:
 
     ![Générer des scripts pour des bases de données](media/scripting-ssms/generatescriptsfordb.png)
 
-4. La page **Introduction** s’ouvre. Sélectionnez **Suivant** pour ouvrir la page **Sélectionner les objets** . Vous pouvez sélectionner la base de données entière ou des objets spécifiques de la base de données. Sélectionnez **Générer un script de la base de données entière et de tous les objets de base de données** .
+4. La page **Introduction** s’ouvre. Sélectionnez **Suivant** pour ouvrir la page **Sélectionner les objets**. Vous pouvez sélectionner la base de données entière ou des objets spécifiques de la base de données. Sélectionnez **Générer un script de la base de données entière et de tous les objets de base de données**.
 
     ![Générer des scripts pour des objets](media/scripting-ssms/scriptobjects.png)
 
-5. Sélectionnez **Suivant** pour ouvrir la page **Définir les options de script** . Ici, vous pouvez configurer où enregistrer le script et certaines options avancées supplémentaires. 
+5. Sélectionnez **Suivant** pour ouvrir la page **Définir les options de script**. Ici, vous pouvez configurer où enregistrer le script et certaines options avancées supplémentaires. 
 
-    a. Sélectionnez **Enregistrer dans une nouvelle fenêtre de requête** .
+    a. Sélectionnez **Enregistrer dans une nouvelle fenêtre de requête**.
 
     b. Sélectionnez **Avancé** et vérifiez que ces options sont définies :
 
-      * **Générer un script des statistiques** défini sur *Générer un script des statistiques* .
-      * **Types de données à inclure dans le script** défini sur *Schéma uniquement* .
-      * **Générer un script pour les index** défini sur *True* .
+      * **Générer un script des statistiques** défini sur *Générer un script des statistiques*.
+      * **Types de données à inclure dans le script** défini sur *Schéma uniquement*.
+      * **Générer un script pour les index** défini sur *True*.
 
    ![Scripter des objets](media/scripting-ssms/advancedscripts.png)
 
    > [!NOTE]
-   > Vous pouvez scripter les données de la base de données quand vous sélectionnez *Schéma et données* pour l’option **Types de données à inclure dans le script** . Toutefois, cette action n’est pas idéale avec les grandes bases de données, car elle peut prendre plus de mémoire que SSMS ne peut en allouer. Cette limitation n’est pas un problème pour les petites bases de données. Si vous souhaitez déplacer les données d’une base de données plus grande, utilisez l’[Assistant Importation et exportation](../../integration-services/import-export-data/import-and-export-data-with-the-sql-server-import-and-export-wizard.md).
+   > Vous pouvez scripter les données de la base de données quand vous sélectionnez *Schéma et données* pour l’option **Types de données à inclure dans le script**. Toutefois, cette action n’est pas idéale avec les grandes bases de données, car elle peut prendre plus de mémoire que SSMS ne peut en allouer. Cette limitation n’est pas un problème pour les petites bases de données. Si vous souhaitez déplacer les données d’une base de données plus grande, utilisez l’[Assistant Importation et exportation](../../integration-services/import-export-data/import-and-export-data-with-the-sql-server-import-and-export-wizard.md).
 
-6. Sélectionnez **OK** , puis **Suivant** .
+6. Sélectionnez **OK**, puis **Suivant**.
 
-7. Sélectionnez **Suivant** dans le **Récapitulatif** . Ensuite, sélectionnez **Suivant** pour générer le script dans une fenêtre **Nouvelle requête** .
+7. Sélectionnez **Suivant** dans le **Récapitulatif**. Ensuite, sélectionnez **Suivant** pour générer le script dans une fenêtre **Nouvelle requête**.
 
-8. Sur votre clavier, ouvrez la boîte de dialogue **Rechercher** (Ctrl+F). Sélectionnez la flèche vers le bas pour ouvrir l’option **Remplacer** . Sur la ligne **Rechercher** en haut, entrez *AdventureWorks2016* . Sur la ligne **Remplacer** en bas, entrez *AdventureWorks2016b* .
+8. Sur votre clavier, ouvrez la boîte de dialogue **Rechercher** (Ctrl+F). Sélectionnez la flèche vers le bas pour ouvrir l’option **Remplacer**. Sur la ligne **Rechercher** en haut, entrez *AdventureWorks2016*. Sur la ligne **Remplacer** en bas, entrez *AdventureWorks2016b*.
 
-9. Sélectionnez **Remplacer tout** pour remplacer toutes les instances de *AdventureWorks2016* par *AdventureWorks2016b* .
+9. Sélectionnez **Remplacer tout** pour remplacer toutes les instances de *AdventureWorks2016* par *AdventureWorks2016b*.
 
     ![AdventureWorks 2016](media/scripting-ssms/adventureworks2016b.png)
 
@@ -166,13 +166,13 @@ Cette section explique comment scripter les tables de votre base de données. Ut
 
 1. Connectez-vous à un serveur qui exécute SQL Server.
 
-2. Développez le nœud **Bases de données** .
+2. Développez le nœud **Bases de données**.
 
-3. Développez le nœud de base de données **AdventureWorks2016** . 
+3. Développez le nœud de base de données **AdventureWorks2016**. 
 
-4. Développez le nœud **Tables** .
+4. Développez le nœud **Tables**.
 
-5. Cliquez avec le bouton droit sur **dbo.ErrorLog** > **Générer un script de la table en tant que** > **DROP et CREATE To** > **Nouvelle fenêtre d’éditeur de requête**  :
+5. Cliquez avec le bouton droit sur **dbo.ErrorLog** > **Générer un script de la table en tant que** > **DROP et CREATE To** > **Nouvelle fenêtre d’éditeur de requête** :
 
     ![Scripter la table](media/scripting-ssms/scripttable.png)
 
@@ -187,13 +187,13 @@ Dans cette section, vous allez découvrir comment supprimer et créer une procé
 
 1. Connectez-vous à un serveur qui exécute SQL Server.
 
-2. Développez le nœud **Bases de données** .
+2. Développez le nœud **Bases de données**.
 
-3. Développez le nœud **Programmabilité** . 
+3. Développez le nœud **Programmabilité**. 
 
-4. Développez le nœud **Procédure stockée** .
+4. Développez le nœud **Procédure stockée**.
 
-5. Cliquez avec le bouton droit sur la procédure stockée **dbo.uspGetBillOfMaterials** > **Générer un script de la procédure stockée en tant que** > **DROP et CREATE To** > **Nouvelle fenêtre d’éditeur de requête**  :
+5. Cliquez avec le bouton droit sur la procédure stockée **dbo.uspGetBillOfMaterials** > **Générer un script de la procédure stockée en tant que** > **DROP et CREATE To** > **Nouvelle fenêtre d’éditeur de requête** :
 
     ![Scripter des procédures stockées](media/scripting-ssms/script-stored-procedure.png)
 
@@ -203,30 +203,30 @@ Cette section explique comment scripter des [événements étendus](../../relati
 
 1. Connectez-vous à un serveur qui exécute SQL Server.
 
-2. Développez le nœud **Gestion** .
+2. Développez le nœud **Gestion**.
 
-3. Développez le nœud **Événements étendus** .
+3. Développez le nœud **Événements étendus**.
 
-4. Développez le nœud **Sessions** .
+4. Développez le nœud **Sessions**.
 
-5. Cliquez avec le bouton droit sur la session étendue qui vous intéresse dans > **Générer un script de la session en tant que** > **CREATE To** > **Nouvelle fenêtre d’éditeur de requête**  :
+5. Cliquez avec le bouton droit sur la session étendue qui vous intéresse dans > **Générer un script de la session en tant que** > **CREATE To** > **Nouvelle fenêtre d’éditeur de requête** :
 
     ![Session étendue de nouvelle fenêtre d’éditeur de requête](media/scripting-ssms/scriptxevents.png)
 
-6. Dans la **Nouvelle fenêtre d’éditeur de requête** , remplacez le nouveau nom de la session *system_health* par *system_health2* . Sélectionnez **Exécuter** pour exécuter la requête.
+6. Dans la **Nouvelle fenêtre d’éditeur de requête**, remplacez le nouveau nom de la session *system_health* par *system_health2*. Sélectionnez **Exécuter** pour exécuter la requête.
 
-7. Cliquez avec le bouton droit sur **Sessions** dans l’ **Explorateur d’objets** . Sélectionnez **Actualiser** pour voir votre nouvelle session d’événements étendus. L’icône verte en regard de la session indique que celle-ci est en cours d’exécution. L’icône rouge indique que la session est arrêtée.
+7. Cliquez avec le bouton droit sur **Sessions** dans l’**Explorateur d’objets**. Sélectionnez **Actualiser** pour voir votre nouvelle session d’événements étendus. L’icône verte en regard de la session indique que celle-ci est en cours d’exécution. L’icône rouge indique que la session est arrêtée.
 
     ![Nouvelle session d’événements étendus](media/scripting-ssms/newxevent.png)
 
     >[!NOTE]
-    > Vous pouvez démarrer la session en cliquant avec le bouton droit et en sélectionnant **Démarrer** . Toutefois, puisqu’il s’agit d’une copie de la session **system_health** déjà en cours, vous pouvez ignorer cette étape. Vous pouvez supprimer la copie de la session d’événements étendus en cliquant avec le bouton droit et en sélectionnant **Supprimer** .
+    > Vous pouvez démarrer la session en cliquant avec le bouton droit et en sélectionnant **Démarrer**. Toutefois, puisqu’il s’agit d’une copie de la session **system_health** déjà en cours, vous pouvez ignorer cette étape. Vous pouvez supprimer la copie de la session d’événements étendus en cliquant avec le bouton droit et en sélectionnant **Supprimer**.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 La meilleure façon de se familiariser avec SSMS est d’effectuer des exercices pratiques. Ces articles *Tutoriel* et *Procédure* vous aident à vous familiariser avec les différentes fonctionnalités disponibles dans SSMS. Ces articles vous apprennent à gérer les composants de SSMS et à trouver les fonctionnalités utilisées régulièrement.
 
-* [Se connecter à une instance et l’interroger](../quickstarts/connect-query-sql-server.md)
+* [Se connecter à une instance et l’interroger](../quickstarts/ssms-connect-query-sql-server.md)
 * [Utilisation de modèles dans SSMS](../template/templates-ssms.md)
 * [Configuration de SSMS](ssms-configuration.md)
 * [Conseils et astuces supplémentaires pour utiliser SSMS](ssms-tricks.md)

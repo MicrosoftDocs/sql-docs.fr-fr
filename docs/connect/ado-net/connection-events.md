@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: 8151915dc6c16c6225fec9ab90cb5a88e86b992f
-ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
+ms.openlocfilehash: 3fb13f3cc163bb157f418d3bda99e0173d81b842
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2020
-ms.locfileid: "97771439"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596013"
 ---
 # <a name="connection-events"></a>Événements de connexion
 
@@ -34,7 +34,7 @@ Le Fournisseur de données Microsoft SqlClient ont des objets **Connexion** à 
 
 ## <a name="work-with-the-infomessage-event"></a>Utiliser l’événement InfoMessage
 
-Vous pouvez extraire des messages d'avertissement et d'information d'une source de données SQL Server à l'aide de l'événement <xref:Microsoft.Data.SqlClient.SqlConnection.InfoMessage> de l'objet <xref:Microsoft.Data.SqlClient.SqlConnection>. Les erreurs retournées par la source de données, dont le niveau de gravité est compris entre 11 et 16, lèvent une exception. L'événement <xref:Microsoft.Data.SqlClient.SqlConnection.InfoMessage> peut néanmoins être utilisé pour obtenir des messages de la source de données qui ne sont pas associés à une erreur. Dans le cas de Microsoft SQL Server, toute erreur dont le niveau de gravité est inférieur ou égal à 10 est considérée comme étant un message d'information et peut être capturée à l'aide de l'événement <xref:Microsoft.Data.SqlClient.SqlConnection.InfoMessage>. Pour plus d’informations, consultez l’article [Niveaux de gravité des erreurs du moteur de base de données](/sql/relational-databases/errors-events/database-engine-error-severities).
+Vous pouvez extraire des messages d'avertissement et d'information d'une source de données SQL Server à l'aide de l'événement <xref:Microsoft.Data.SqlClient.SqlConnection.InfoMessage> de l'objet <xref:Microsoft.Data.SqlClient.SqlConnection>. Les erreurs retournées par la source de données, dont le niveau de gravité est compris entre 11 et 16, lèvent une exception. L'événement <xref:Microsoft.Data.SqlClient.SqlConnection.InfoMessage> peut néanmoins être utilisé pour obtenir des messages de la source de données qui ne sont pas associés à une erreur. Dans le cas de Microsoft SQL Server, toute erreur dont le niveau de gravité est inférieur ou égal à 10 est considérée comme étant un message d'information et peut être capturée à l'aide de l'événement <xref:Microsoft.Data.SqlClient.SqlConnection.InfoMessage>. Pour plus d’informations, consultez l’article [Niveaux de gravité des erreurs du moteur de base de données](../../relational-databases/errors-events/database-engine-error-severities.md).
 
 L’événement <xref:Microsoft.Data.SqlClient.SqlConnection.InfoMessage> reçoit un objet <xref:Microsoft.Data.SqlClient.SqlInfoMessageEventArgs> contenant, dans sa propriété **Erreurs**, une collection des messages de la source de données. Vous pouvez interroger les objets **Erreur** dans cette collection pour obtenir le numéro d’erreur et le texte du message, ainsi que la source de l’erreur. Le Fournisseur de données Microsoft SqlClient pour SQL Server comprend également des détails sur la base de données, la procédure stockée et le numéro de ligne d’où provient le message.
 

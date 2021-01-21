@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-jizho2
-ms.openlocfilehash: f522b856e759ec9821b5cc549ce3f801951b7283
-ms.sourcegitcommit: 4c3949f620d09529658a2172d00bfe37aeb1a387
+ms.openlocfilehash: e966e4f2f43ebe546d6baa0b757f682f3eca205b
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95011831"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596361"
 ---
 # <a name="introduction-to-microsoftdatasqlclient-namespace"></a>Présentation de l’espace de noms Microsoft.Data.SqlClient
 
@@ -43,7 +43,7 @@ Microsoft.Data.SqlClient v2.1 étend le support d’Always Encrypted sur les pla
 
 ### <a name="azure-active-directory-device-code-flow-authentication"></a>Authentification du flux de code de l’appareil Azure Active Directory
 Microsoft.Data.SqlClient v2.1 fournit le support de l’authentification « Flux de code d’appareil » avec MSAL.NET.
-Documentation de référence : [Flux de l’octroi de l’autorisation d’appareil OAuth2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-device-code)
+Documentation de référence : [Flux de l’octroi de l’autorisation d’appareil OAuth2.0](/azure/active-directory/develop/v2-oauth2-device-code)
 
 Exemple de chaîne de connexion :
 
@@ -60,7 +60,7 @@ public class ActiveDirectoryAuthenticationProvider
 ```
 
 ### <a name="azure-active-directory-managed-identity-authentication"></a>Authentification Managed Identity Azure Active Directory
-Microsoft.Data.SqlClient v2.1 introduit le support de l’authentification Azure Active Directory à l’aide des [identités managées](https://docs.microsoft.com/azure/active-directory/managed-identities-azure-resources/overview).
+Microsoft.Data.SqlClient v2.1 introduit le support de l’authentification Azure Active Directory à l’aide des [identités managées](/azure/active-directory/managed-identities-azure-resources/overview).
 
 Les mots clé d’authentification suivants sont pris en charge :
 - Identité managée Active Directory

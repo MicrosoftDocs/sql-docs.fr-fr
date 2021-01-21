@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 1c1e265e-52a2-4de3-96fd-ca4abae01c02
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: cdaaaa55756860e4b62f90cb7e01c88c63ad4b61
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ec946e008990e9cc4f75fc6a6eb0882756d25b8b
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477060"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596565"
 ---
 # <a name="plan-for-report-design-and-report-deployment--reporting-services"></a>Planifier la conception de rapports et le déploiement de rapports | Reporting Services
 [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] offre plusieurs approches pour créer et déployer des rapports paginés. Découvrez comment planifier un outil de création de rapports et un environnement de serveur de rapports qui fonctionnent ensemble.
@@ -38,11 +38,11 @@ Cette rubrique offre une vue d'ensemble de la prise en charge de la définition 
   
 -   [Schémas XML SQL Server](https://go.microsoft.com/fwlink/?LinkId=31850)  
   
--   [Spécifications RDL (Report Language Definition)](https://go.microsoft.com/fwlink/?linkid=116865)  
+-   [Spécifications RDL (Report Language Definition)](/openspecs/sql_server_protocols/ms-rdl/53287204-7cd0-4bc9-a5cd-d42a5925dca1)  
   
 -   [RDL (Report Definition Language) &#40;SSRS&#41;](../reporting-services/reports/report-definition-language-ssrs.md)  
   
- Pour plus d’informations sur les contrôles ReportViewer, consultez [Contrôles ReportViewer (Visual Studio)](https://msdn.microsoft.com/library/ms251671.aspx).  
+ Pour plus d’informations sur les contrôles ReportViewer, consultez [Contrôles ReportViewer (Visual Studio)](/previous-versions/ms251671(v=vs.140)).  
   
 ##  <a name="report-server-and-rdl-schema-support"></a><a name="bkmk_report_server_rdl_schema_support"></a> Prise en charge du serveur de rapports et du schéma RDL  
  Un fichier de définition de rapport peut être déployé sur un serveur de rapports [!INCLUDE[ssRSCurrent](../includes/ssrscurrent-md.md)] des manières suivantes :  
@@ -112,15 +112,14 @@ Dans un déploiement en mode SharePoint, accédez à la bibliothèque de documen
   
  Pour plus d’informations, consultez les rubriques suivantes :  
   
--   [Conversion de fichiers RDLC en fichiers RDL](https://msdn.microsoft.com/library/ms252109.aspx)  
+-   [Conversion de fichiers RDLC en fichiers RDL](/previous-versions/ms252109(v=vs.140))  
   
--   [Contrôles ReportViewer (Visual Studio)](https://msdn.microsoft.com/library/ms251671.aspx)  
+-   [Contrôles ReportViewer (Visual Studio)](/previous-versions/ms251671(v=vs.140))  
   
--   [Ajout et configuration de contrôles ReportViewer](https://msdn.microsoft.com/library/ms252104.aspx)  
+-   [Ajout et configuration de contrôles ReportViewer](/previous-versions/ms252104(v=vs.140))  
   
 ## <a name="see-also"></a>Voir aussi  
  [Rapports, parties de rapports et définitions de rapports &#40;Générateur de rapports et SSRS&#41;](../reporting-services/report-design/reports-report-parts-and-report-definitions-report-builder-and-ssrs.md)   
  [Outils de Reporting Services](../reporting-services/tools/reporting-services-tools.md)   
  [RDL (Report Definition Language) &#40;SSRS&#41;](../reporting-services/reports/report-definition-language-ssrs.md)  
-  
   

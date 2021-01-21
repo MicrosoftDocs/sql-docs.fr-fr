@@ -8,12 +8,12 @@ ms.topic: how-to
 author: dphansen
 ms.author: davidph
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15'
-ms.openlocfilehash: 53c3e7f55fa21d033bfda3f2e660bd1b9a92991f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 511a0d73bbc0e8df5c19ee563dca9c7eef8e53eb
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470740"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597044"
 ---
 # <a name="use-r-code-profiling-functions-to-improve-performance"></a>Utiliser les fonctions de profilage de code R pour améliorer les performances
 [!INCLUDE [SQL Server 2016 and later](../../includes/applies-to-version/sqlserver2016.md)]
@@ -64,6 +64,6 @@ Dans la documentation de Microsoft R Open, qui est installée par défaut, vous 
 ## <a name="next-steps"></a>Étapes suivantes
 
 + Pour plus d’informations sur l’optimisation des scripts R dans SQL Server, consultez [Réglage du niveau de performance et optimisation des données pour R](r-and-data-optimization-r-services.md).
-+ Pour plus d’informations sur le réglage du niveau de performance dans SQL Server, consultez [Centre de performances pour le Moteur de base de données SQL Server et Azure SQL Database](/sql/relational-databases/performance/performance-center-for-sql-server-database-engine-and-azure-sql-database).
++ Pour plus d’informations sur le réglage du niveau de performance dans SQL Server, consultez [Centre de performances pour le Moteur de base de données SQL Server et Azure SQL Database](../../relational-databases/performance/performance-center-for-sql-server-database-engine-and-azure-sql-database.md).
 + Pour plus d’informations sur le package utils, consultez [Package R.utils](https://www.rdocumentation.org/packages/utils/versions/3.5.1).
 + Pour des explications approfondies sur la programmation R, consultez [« Advanced R » de Hadley Wickham](http://adv-r.had.co.nz).

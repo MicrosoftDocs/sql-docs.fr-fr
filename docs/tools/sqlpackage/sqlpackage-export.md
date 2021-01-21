@@ -10,12 +10,12 @@ author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
 ms.date: 12/11/2020
-ms.openlocfilehash: c0c3b1462fe165678e3826585f5ce82d5945de56
-ms.sourcegitcommit: 866554663ca3191748b6e4eb4d8d82fa58c4e426
+ms.openlocfilehash: 8b6293359306006d7ed6402bf630919a947c6e53
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97577852"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596391"
 ---
 # <a name="sqlpackage-export-parameters-and-properties"></a>Paramètres et propriétés de l’action Export de SqlPackage
 L’action Export de SqlPackage.exe exporte une base de données active de SQL Server ou Azure SQL vers un package BACPAC (fichier .bacpac). Par défaut, les données de toutes les tables sont incluses dans le fichier .bacpac. Si vous le souhaitez, vous pouvez spécifier uniquement un sous-ensemble de tables pour lequel exporter des données. La validation de l'action d'exportation garantit la compatibilité avec Azure SQL Database pour la base de données ciblée complète même si un sous-ensemble de tables est spécifié pour l'exportation. 
@@ -61,8 +61,8 @@ SqlPackage {parameters}{properties}{SQLCMD Variables}
 |**/p:**|LongRunningCommandTimeout=(INT32)| Spécifie le délai d'expiration (en secondes) de la commande longue lors de l'exécution de requêtes dans SQL Server. Utilisez 0 pour attendre indéfiniment.|
 |**/p:**|Storage=({File&#124;Memory} 'File')|Spécifie le type de stockage de sauvegarde pour le modèle de schéma utilisé lors de l'extraction.|
 |**/p:**|TableData=(STRING)|Indique la table à partir de laquelle les données sont extraites. Spécifiez les parties du nom de la table avec ou sans crochets sous le format suivant : nom_schéma.identificateur_table. Cette option peut être spécifiée plusieurs fois.|
-|**/p:**|TempDirectoryForTableData=(STRING)|Spécifie le répertoire temporaire utilisé pour la mise en mémoire tampon des données de table avant leur écriture dans le fichier de package.|
 |**/p:**|TargetEngineVersion=({Default&#124;Latest&#124;V11&#124;V12} 'Latest')|Spécifie la version de moteur cible attendue. Ce paramètre permet d’autoriser ou non les objets pris en charge par les serveurs Azure SQL Database avec les fonctionnalités V12, comme les tables à mémoire optimisée, dans le fichier BACPAC généré.|
+|**/p:**|TempDirectoryForTableData=(STRING)|Spécifie le répertoire temporaire utilisé pour la mise en mémoire tampon des données de table avant leur écriture dans le fichier de package.|
 |**/p:**|VerifyFullTextDocumentTypesSupported=(BOOLEAN)|Indique si les types de document de texte intégral pris en charge pour Microsoft Azure SQL Database v12 doivent être vérifiés.|
 
 ## <a name="next-steps"></a>Étapes suivantes

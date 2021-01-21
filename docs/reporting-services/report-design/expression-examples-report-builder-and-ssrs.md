@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: 87ddb651-a1d0-4a42-8ea9-04dea3f6afa4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: f37521692b7b30cc8db1e56b81222c3e8bad38de
-ms.sourcegitcommit: 02b22274da4a103760a376c4ddf26c4829018454
+ms.openlocfilehash: 40a05ec1ed6b7ffa05132e0cefbd5157b7d3ce92
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84681338"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596335"
 ---
 # <a name="expression-examples-report-builder-and-ssrs"></a>Exemples d'expressions (Générateur de rapports et SSRS)
 Les expressions sont fréquemment utilisées dans les rapports paginés [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] pour en contrôler le contenu et l’apparence. Les expressions sont écrites en [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], et peuvent utiliser des fonctions intégrées, du code personnalisé, des variables de rapport et de groupe, et des variables définies par l’utilisateur. Les expressions commencent par un signe égal (=). Pour plus d’informations sur l’éditeur d’expressions et les types de références que vous pouvez inclure, consultez [Utilisation d’expressions dans les rapports &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs.md), et [Ajouter une expression &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/add-an-expression-report-builder-and-ssrs.md).  
@@ -70,9 +70,9 @@ Pour apprendre à écrire des expressions qui utilisent plusieurs fonctions et o
  Dans un rapport, beaucoup d'expressions contiennent des fonctions. Vous pouvez mettre en forme des données, appliquer une logique et accéder aux métadonnées du rapport en utilisant ces fonctions. Vous pouvez écrire des expressions qui utilisent des fonctions de la bibliothèque runtime [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] et des fonctions des espaces de noms <xref:System.Convert> et <xref:System.Math>. Vous pouvez ajouter des références à des fonctions issues d'autres assemblys ou du code personnalisé. Vous pouvez également utiliser des classes à partir de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)], y compris <xref:System.Text.RegularExpressions>.  
   
 ##  <a name="visual-basic-functions"></a><a name="VisualBasicFunctions"></a> Fonctions Visual Basic  
- Vous pouvez utiliser des fonctions [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] pour manipuler les données affichées dans des zones de texte ou utilisées pour des paramètres, des propriétés et d'autres zones du rapport. Cette section fournit des exemples décrivant certaines de ces fonctions. Pour plus d'informations, consultez [Membres de la bibliothèque runtime Visual Basic](https://go.microsoft.com/fwlink/?LinkId=198941) sur MSDN.  
+ Vous pouvez utiliser des fonctions [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] pour manipuler les données affichées dans des zones de texte ou utilisées pour des paramètres, des propriétés et d'autres zones du rapport. Cette section fournit des exemples décrivant certaines de ces fonctions. Pour plus d'informations, consultez [Membres de la bibliothèque runtime Visual Basic](/dotnet/visual-basic/language-reference/runtime-library-members) sur MSDN.  
   
- Le [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] offre de nombreuses options de formats personnalisés, par exemple pour des formats de date spécifiques. Pour plus d'informations, consultez [Mise en forme des types](https://go.microsoft.com/fwlink/?LinkId=112024) sur MSDN.  
+ Le [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] offre de nombreuses options de formats personnalisés, par exemple pour des formats de date spécifiques. Pour plus d'informations, consultez [Mise en forme des types](/previous-versions/) sur MSDN.  
   
 ### <a name="math-functions"></a>Fonctions mathématiques  
   
@@ -209,7 +209,7 @@ Pour apprendre à écrire des expressions qui utilisent plusieurs fonctions et o
   
      Si la zone de texte contient uniquement une date ou un nombre, utilisez plutôt la propriété Format de la zone de texte pour appliquer la mise en forme, plutôt que la fonction **Format** dans la zone de texte.  
   
--   Les fonctions **Right**, **Len**et **InStr** sont utiles pour renvoyer une sous-chaîne, par exemple en réduisant *DOMAINE*\\*nom d’utilisateur* au seul nom d’utilisateur. L’expression suivante retourne la partie de la chaîne à droite de la barre oblique inverse (\\) à partir d’un paramètre nommé *User*:  
+-   Les fonctions **Right**, **Len** et **InStr** sont utiles pour renvoyer une sous-chaîne, par exemple en réduisant *DOMAINE*\\*nom d’utilisateur* au seul nom d’utilisateur. L’expression suivante retourne la partie de la chaîne à droite de la barre oblique inverse (\\) à partir d’un paramètre nommé *User*:  
   
     ```  
     =Right(Parameters!User.Value, Len(Parameters!User.Value) - InStr(Parameters!User.Value, "\"))  
@@ -515,7 +515,7 @@ Pour apprendre à écrire des expressions qui utilisent plusieurs fonctions et o
  L'usage de code personnalisé au sein d'un rapport est possible. Le code personnalisé est soit incorporé au rapport, soit stocké dans un assembly personnalisé utilisé au sein du rapport. Pour plus d’informations sur le code personnalisé, consultez [Code personnalisé et références d’assembly dans les expressions du Concepteur de rapports &#40;SSRS&#41;](../../reporting-services/report-design/custom-code-and-assembly-references-in-expressions-in-report-designer-ssrs.md).  
   
 ### <a name="using-group-variables-for-custom-aggregation"></a>Utilisation de variables de groupe pour une agrégation personnalisée  
- Vous pouvez initialiser la valeur pour une variable de groupe qui est locale à une étendue de groupe particulière, puis inclure une référence à cette variable dans les expressions. L'une des façons d'utiliser une variable de groupe avec du code personnalisé consiste à implémenter un agrégat personnalisé. Pour plus d'informations, consultez [Using Group Variables in Reporting Services 2008 for Custom Aggregation](https://go.microsoft.com/fwlink/?LinkId=128714)(en anglais).  
+ Vous pouvez initialiser la valeur pour une variable de groupe qui est locale à une étendue de groupe particulière, puis inclure une référence à cette variable dans les expressions. L'une des façons d'utiliser une variable de groupe avec du code personnalisé consiste à implémenter un agrégat personnalisé. Pour plus d'informations, consultez [Using Group Variables in Reporting Services 2008 for Custom Aggregation](/archive/blogs/robertbruckner/)(en anglais).  
   
  Pour plus d’informations sur les variables, consultez [Références à des collections de variables de rapport et de groupe &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/built-in-collections-report-and-group-variables-references-report-builder.md).  
   
@@ -558,5 +558,4 @@ Pour apprendre à écrire des expressions qui utilisent plusieurs fonctions et o
  [Utilisation d’expressions dans les rapports &#40;Générateur de rapport et SSRS&#41;](../../reporting-services/report-design/expression-uses-in-reports-report-builder-and-ssrs.md)   
  [Expressions &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/expressions-report-builder-and-ssrs.md)   
  [Filtres couramment utilisés &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/commonly-used-filters-report-builder-and-ssrs.md)  
-  
   

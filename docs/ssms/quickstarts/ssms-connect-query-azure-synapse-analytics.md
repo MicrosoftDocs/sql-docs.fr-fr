@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: sstein, mikeray
 ms.custom: contperf-fy21q2
 ms.date: 12/15/2020
-ms.openlocfilehash: 102eaff45b6cdfb89a159e3de77039c8735395e2
-ms.sourcegitcommit: 8a8c89b0ff6d6dfb8554b92187aca1bf0f8bcc07
+ms.openlocfilehash: e3584fe72ada1cff1d3b35324c5c5563bf97d050
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97619123"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596854"
 ---
 # <a name="quickstart-connect-and-query-a-dedicated-sql-pool-in-azure-synapse-analytics-with-sql-server-management-studio-ssms"></a>Démarrage rapide : Se connecter à un pool SQL dédié dans Azure Synapse Analytics et l’interroger avec SQL Server Management Studio (SSMS)
 
@@ -71,9 +71,9 @@ Pour effectuer les étapes de cet article, vous avez besoin de SQL Server Manage
 
 ## <a name="troubleshoot-connectivity-issues"></a>Résoudre les problèmes de connectivité
 
-Vous pouvez rencontrer des problèmes de connexion avec Azure Synapse Analytics. Pour plus d’informations sur la résolution des problèmes de connexion, consultez [Résolution des problèmes de connectivité](https://docs.microsoft.com/azure/azure-sql/database/troubleshoot-common-errors-issues).
+Vous pouvez rencontrer des problèmes de connexion avec Azure Synapse Analytics. Pour plus d’informations sur la résolution des problèmes de connexion, consultez [Résolution des problèmes de connectivité](/azure/azure-sql/database/troubleshoot-common-errors-issues).
 
-Vous pouvez prévenir, résoudre, diagnostiquer et limiter les erreurs de connexion et les erreurs temporaires que vous rencontrez pendant vos interactions avec Azure SQL Database ou Azure SQL Managed Instance. Pour plus d’informations, consultez [Résoudre les erreurs de connexion temporaires](https://docs.microsoft.com/azure/azure-sql/database/troubleshoot-common-connectivity-issues).
+Vous pouvez prévenir, résoudre, diagnostiquer et limiter les erreurs de connexion et les erreurs temporaires que vous rencontrez pendant vos interactions avec Azure SQL Database ou Azure SQL Managed Instance. Pour plus d’informations, consultez [Résoudre les erreurs de connexion temporaires](/azure/azure-sql/database/troubleshoot-common-connectivity-issues).
 
 ## <a name="create-a-database"></a>Création d'une base de données
 

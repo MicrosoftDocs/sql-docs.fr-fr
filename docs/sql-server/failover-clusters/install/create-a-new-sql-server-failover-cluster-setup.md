@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 30e06a7d-75e9-44e2-bca3-b3b0c4a33f61
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 841644a1429b4c143b7f2b31b5d6ec669bb0ff58
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: c987fdf269db9787392caa5f228f97155cf673a8
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642851"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597147"
 ---
 # <a name="create-a-new-always-on-failover-cluster-instance-setup"></a>Créer une nouvelle instance de cluster de basculement Always On (Installation)
 
@@ -52,7 +52,7 @@ ms.locfileid: "97642851"
   
  [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] L’installation avancée/entreprise de cluster de basculement comprend les étapes suivantes :  
   
--   Sur chaque nœud potentiellement propriétaire du nouveau cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] que vous créez, suivez les étapes de préparation de l’installation du cluster de basculement dans la [section Préparer](#prepare). Après avoir effectué la préparation du cluster de basculement sur un nœud, le programme d'installation crée le fichier Configuration.ini qui répertorie tous les paramètres que vous spécifiez. Sur les autres nœuds à préparer, au lieu de suivre ces étapes, vous pouvez fournir le fichier Configuration.ini généré automatiquement à partir du premier nœud comme entrée pour la ligne de commande de la Configuration. Pour plus d’informations, consultez [Installer SQL Server 2016 à l’aide d’un fichier de configuration](../../../database-engine/install-windows/install-sql-server-2016-using-a-configuration-file.md). Cette étape prépare les nœuds pour le clustering ; toutefois, aucune instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] n'est opérationnelle à la fin de cette étape.  
+-   Sur chaque nœud potentiellement propriétaire du nouveau cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] que vous créez, suivez les étapes de préparation de l’installation du cluster de basculement dans la [section Préparer](#prepare). Après avoir effectué la préparation du cluster de basculement sur un nœud, le programme d'installation crée le fichier Configuration.ini qui répertorie tous les paramètres que vous spécifiez. Sur les autres nœuds à préparer, au lieu de suivre ces étapes, vous pouvez fournir le fichier Configuration.ini généré automatiquement à partir du premier nœud comme entrée pour la ligne de commande de la Configuration. Pour plus d’informations, consultez [Installer SQL Server 2016 à l’aide d’un fichier de configuration](../../../database-engine/install-windows/install-sql-server-using-a-configuration-file.md). Cette étape prépare les nœuds pour le clustering ; toutefois, aucune instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] n'est opérationnelle à la fin de cette étape.  
   
 -   Une fois les nœuds préparés pour le clustering, exécutez l'installation sur l'un de ces nœuds. Cette étape permet de configurer et de finaliser l'instance de cluster de basculement. À la fin de cette étape, vous disposerez d'une instance de cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] opérationnelle et tous les nœuds préparés précédemment pour cette instance seront des propriétaires potentiels de l’instance de cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] nouvellement créée.  
   
@@ -69,7 +69,7 @@ ms.locfileid: "97642851"
   
  Pour plus d’informations sur une installation distante, consultez [Mises à niveau de la version et de l’édition prises en charge](../../../database-engine/install-windows/supported-version-and-edition-upgrades.md).  
   
- Pour plus d’informations sur l’installation de[!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] dans un WSFC, consultez [Comment mettre en cluster SQL Server Analysis Services](https://go.microsoft.com/fwlink/p/?LinkId=396548).  
+ Pour plus d’informations sur l’installation de[!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] dans un WSFC, consultez [Comment mettre en cluster SQL Server Analysis Services](/previous-versions/sql/sql-server-2012/dn736073(v=msdn.10)).  
   
 ## <a name="prerequisites"></a>Prérequis  
  Avant de commencer, consultez les rubriques suivantes dans la documentation en ligne de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] :  
@@ -103,7 +103,7 @@ ms.locfileid: "97642851"
   
 8.  Dans la page Termes du contrat de licence, prenez connaissance du contrat de licence, puis activez la case à cocher indiquant que vous en acceptez les termes et conditions. Pour aider à améliorer [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], vous pouvez également activer l'option d'utilisation des fonctionnalités et envoyer des rapports à [!INCLUDE[msCoName](../../../includes/msconame-md.md)]. Cliquez sur **Suivant** pour continuer. Pour mettre fin au programme d'installation, cliquez sur **Annuler**.  
   
-9. Dans la page Sélection de fonctionnalités, sélectionnez les composants que vous voulez installer. Une description de chaque groupe de composants apparaît dans le volet droit après que vous avez sélectionné le nom de la fonctionnalité. Vous pouvez choisir n'importe quelle combinaison de cases à cocher, mais seuls le [!INCLUDE[ssDE](../../../includes/ssde-md.md)], [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] en mode tabulaire et [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] en mode multidimensionnel prennent en charge le clustering de basculement. Les autres composants sélectionnés s'exécuteront sous la forme d'une fonctionnalité autonome sans basculement sur le nœud actuel sur lequel vous exécutez le programme d'installation. Pour plus d’informations sur les modes [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] , consultez [Déterminer le mode serveur d’une instance Analysis Services](https://docs.microsoft.com/analysis-services/instances/determine-the-server-mode-of-an-analysis-services-instance).  
+9. Dans la page Sélection de fonctionnalités, sélectionnez les composants que vous voulez installer. Une description de chaque groupe de composants apparaît dans le volet droit après que vous avez sélectionné le nom de la fonctionnalité. Vous pouvez choisir n'importe quelle combinaison de cases à cocher, mais seuls le [!INCLUDE[ssDE](../../../includes/ssde-md.md)], [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] en mode tabulaire et [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] en mode multidimensionnel prennent en charge le clustering de basculement. Les autres composants sélectionnés s'exécuteront sous la forme d'une fonctionnalité autonome sans basculement sur le nœud actuel sur lequel vous exécutez le programme d'installation. Pour plus d’informations sur les modes [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] , consultez [Déterminer le mode serveur d’une instance Analysis Services](/analysis-services/instances/determine-the-server-mode-of-an-analysis-services-instance).  
   
      Les composants requis pour les fonctionnalités sélectionnées sont affichés dans le volet droit. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] installe les composants requis qui n'ont pas déjà été installés lors de l'étape d'installation décrite plus loin dans cette procédure.  
   
@@ -171,7 +171,7 @@ ms.locfileid: "97642851"
   
 17. Dans la page Configuration du serveur - Comptes de service, spécifiez les comptes de connexion des services [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Les services réels configurés dans cette page dépendent des fonctionnalités que vous avez choisi d'installer.  
   
-     Vous pouvez attribuer le même compte de connexion à tous les services [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ou configurer chaque compte de service individuellement. Le type de démarrage est défini sur manuel pour tous les services prenant en charge les clusters, notamment la recherche en texte intégral et l'Agent [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] , et ne peut pas être modifié pendant l'installation. [!INCLUDE[msCoName](../../../includes/msconame-md.md)] vous recommande de configurer les comptes de service individuellement afin de fournir des privilèges moindres pour chaque service, sachant que les services [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] disposent des autorisations minimales requises pour effectuer leurs tâches. Pour plus d’informations, consultez [Configuration du serveur - Comptes de service](https://msdn.microsoft.com/library/c283702d-ab20-4bfa-9272-f0c53c31cb9f) et [Configurer les comptes de service Windows et les autorisations](../../../database-engine/configure-windows/configure-windows-service-accounts-and-permissions.md).  
+     Vous pouvez attribuer le même compte de connexion à tous les services [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ou configurer chaque compte de service individuellement. Le type de démarrage est défini sur manuel pour tous les services prenant en charge les clusters, notamment la recherche en texte intégral et l'Agent [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] , et ne peut pas être modifié pendant l'installation. [!INCLUDE[msCoName](../../../includes/msconame-md.md)] vous recommande de configurer les comptes de service individuellement afin de fournir des privilèges moindres pour chaque service, sachant que les services [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] disposent des autorisations minimales requises pour effectuer leurs tâches. Pour plus d’informations, consultez [Configuration du serveur - Comptes de service](../../../database-engine/install-windows/install-sql-server.md) et [Configurer les comptes de service Windows et les autorisations](../../../database-engine/configure-windows/configure-windows-service-accounts-and-permissions.md).  
   
      Pour spécifier le même compte d'ouverture de session pour tous les comptes de service dans cette instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], fournissez les informations d'identification dans les champs en bas de page.  
   
@@ -226,7 +226,7 @@ ms.locfileid: "97642851"
 30. Pour ajouter des nœuds au cluster de basculement à un seul nœud que vous venez de créer, exécutez le programme d'installation sur chacun des nœuds supplémentaires et suivez les étapes pour l'opération AddNode. Pour plus d’informations, consultez [Ajouter ou supprimer des nœuds dans une instance de cluster de basculement ](../../../sql-server/failover-clusters/install/add-or-remove-nodes-in-a-sql-server-failover-cluster-setup.md) &#40;Configuration&#41; Always On.  
   
     > [!NOTE]  
-    >  Si vous ajoutez plusieurs nœuds, vous pouvez utiliser le fichier de configuration pour déployer les installations. Pour plus d’informations, consultez [Installer SQL Server 2016 à l’aide d’un fichier de configuration](../../../database-engine/install-windows/install-sql-server-2016-using-a-configuration-file.md).  
+    >  Si vous ajoutez plusieurs nœuds, vous pouvez utiliser le fichier de configuration pour déployer les installations. Pour plus d’informations, consultez [Installer SQL Server 2016 à l’aide d’un fichier de configuration](../../../database-engine/install-windows/install-sql-server-using-a-configuration-file.md).  
     >   
     >  L'édition [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] que vous installez doit être la même sur tous les nœuds d'une instance de cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Lorsque vous ajoutez un nouveau nœud à une instance de cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] existante, vous devez être certain de spécifier que l'édition est identique à celle de l’instance de cluster de basculement existante.  
   
@@ -257,7 +257,7 @@ ms.locfileid: "97642851"
   
 9. Dans la page Termes du contrat de licence, prenez connaissance du contrat de licence, puis activez la case à cocher indiquant que vous en acceptez les termes et conditions. Pour aider à améliorer [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], vous pouvez également activer l'option d'utilisation des fonctionnalités et envoyer des rapports à [!INCLUDE[msCoName](../../../includes/msconame-md.md)]. Cliquez sur **Suivant** pour continuer. Pour mettre fin au programme d'installation, cliquez sur **Annuler**.  
   
-10. Dans la page Sélection de fonctionnalités, sélectionnez les composants que vous voulez installer. Une description de chaque groupe de composants apparaît dans le volet droit après que vous avez sélectionné le nom de la fonctionnalité. Vous pouvez choisir n'importe quelle combinaison de cases à cocher, mais seuls le [!INCLUDE[ssDE](../../../includes/ssde-md.md)], [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] en mode tabulaire et [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] en mode multidimensionnel prennent en charge le clustering de basculement. Les autres composants sélectionnés s'exécuteront sous la forme d'une fonctionnalité autonome sans basculement sur le nœud actuel sur lequel vous exécutez le programme d'installation. Pour plus d’informations sur les modes [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] , consultez [Déterminer le mode serveur d’une instance Analysis Services](https://docs.microsoft.com/analysis-services/instances/determine-the-server-mode-of-an-analysis-services-instance).  
+10. Dans la page Sélection de fonctionnalités, sélectionnez les composants que vous voulez installer. Une description de chaque groupe de composants apparaît dans le volet droit après que vous avez sélectionné le nom de la fonctionnalité. Vous pouvez choisir n'importe quelle combinaison de cases à cocher, mais seuls le [!INCLUDE[ssDE](../../../includes/ssde-md.md)], [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] en mode tabulaire et [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] en mode multidimensionnel prennent en charge le clustering de basculement. Les autres composants sélectionnés s'exécuteront sous la forme d'une fonctionnalité autonome sans basculement sur le nœud actuel sur lequel vous exécutez le programme d'installation. Pour plus d’informations sur les modes [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] , consultez [Déterminer le mode serveur d’une instance Analysis Services](/analysis-services/instances/determine-the-server-mode-of-an-analysis-services-instance).  
   
      Les composants requis pour les fonctionnalités sélectionnées sont affichés dans le volet droit. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] installe les composants requis qui n'ont pas déjà été installés lors de l'étape d'installation décrite plus loin dans cette procédure.  
   
@@ -320,7 +320,7 @@ ms.locfileid: "97642851"
   
 23. Redémarrez l'ordinateur si vous êtes invité à le faire. Il est important de lire le message affiché par l'Assistant Installation à la fin de l'installation. Pour plus d’informations sur les fichiers journaux d’installation, consultez [Afficher et lire les fichiers journaux d’installation de SQL Server](../../../database-engine/install-windows/view-and-read-sql-server-setup-log-files.md).  
   
-24. Répétez les étapes précédentes pour préparer les autres nœuds pour l’instance de cluster de basculement. Vous pouvez également utiliser le fichier de configuration généré automatiquement pour exécuter la préparation sur les autres nœuds. Pour plus d’informations, consultez [Installer SQL Server 2016 à l’aide d’un fichier de configuration](../../../database-engine/install-windows/install-sql-server-2016-using-a-configuration-file.md).  
+24. Répétez les étapes précédentes pour préparer les autres nœuds pour l’instance de cluster de basculement. Vous pouvez également utiliser le fichier de configuration généré automatiquement pour exécuter la préparation sur les autres nœuds. Pour plus d’informations, consultez [Installer SQL Server 2016 à l’aide d’un fichier de configuration](../../../database-engine/install-windows/install-sql-server-using-a-configuration-file.md).  
   
 ## <a name="complete"></a>Terminé  
   
@@ -404,6 +404,5 @@ ms.locfileid: "97642851"
  Pour plus d’informations sur l’emplacement des fichiers journaux, consultez [Afficher et lire les fichiers journaux d’installation de SQL Server](../../../database-engine/install-windows/view-and-read-sql-server-setup-log-files.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Installer SQL Server 2016 à partir de l’invite de commandes](../../../database-engine/install-windows/install-sql-server-2016-from-the-command-prompt.md)  
-  
+ [Installer SQL Server 2016 à partir de l’invite de commandes](../../../database-engine/install-windows/install-sql-server-from-the-command-prompt.md)  
   

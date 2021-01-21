@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 4de9c3dd-0ee7-49b3-88bb-209465ca9d86
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: b41e35d48f6add25f4ff8c535fb7e96ed7afe67f
-ms.sourcegitcommit: fe59f8dc27fd633f5dfce54519d6f5dcea577f56
+ms.openlocfilehash: 53e005fcd5c4a11270a5bc2f7c307f521311c548
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91935420"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596651"
 ---
 # <a name="configure-windows-authentication-on-the-report-server"></a>Configurer une authentification Windows sur le serveur de rapports
   Par défaut, [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] accepte les demandes qui spécifient l'authentification Negotiate ou NTLM. Si votre déploiement inclut des applications clientes et des navigateurs clients qui utilisent ces fournisseurs de sécurité, vous pouvez utiliser les valeurs par défaut sans configuration supplémentaire. Si vous voulez utiliser un fournisseur de sécurité différent pour la sécurité intégrée de Windows (par exemple, si vous voulez utiliser Kerberos directement), ou si vous avez modifié les valeurs par défaut et que vous voulez restaurer les paramètres d'origine, vous pouvez utiliser les informations de cette rubrique pour spécifier des paramètres d'authentification sur le serveur de rapports.  
@@ -54,7 +54,7 @@ ms.locfileid: "91935420"
   
 2.  Recherchez \<**Authentication**>.  
   
-3.  Copiez, parmi les structures XML suivantes, celle qui répond le mieux à vos besoins. Vous pouvez spécifier **RSWindowsNegotiate**, **RSWindowsNTLM**et **RSWindowsKerberos** dans n'importe quel ordre. Vous devez activer la permanence de l'authentification si vous voulez authentifier la connexion plutôt que chaque demande individuelle. En cas de permanence de l'authentification, toutes les demandes qui requièrent une authentification seront autorisées pendant la durée de la connexion.  
+3.  Copiez, parmi les structures XML suivantes, celle qui répond le mieux à vos besoins. Vous pouvez spécifier **RSWindowsNegotiate**, **RSWindowsNTLM** et **RSWindowsKerberos** dans n'importe quel ordre. Vous devez activer la permanence de l'authentification si vous voulez authentifier la connexion plutôt que chaque demande individuelle. En cas de permanence de l'authentification, toutes les demandes qui requièrent une authentification seront autorisées pendant la durée de la connexion.  
   
      La première structure XML est la configuration par défaut lorsque le compte de service Report Server est NetworkService ou LocalSystem :  
   
@@ -149,7 +149,7 @@ ms.locfileid: "91935420"
   
 -   Une option de conversion de la valeur décimale au format hexadécimal est pour nous la Calculatrice de [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows. La Calculatrice de Windows prend en charge plusieurs modes qui affichent les options 'Dec' et 'Hex'. Sélectionnez l'option 'Dec', collez ou tapez la valeur décimale trouvée dans le fichier journal, puis sélectionnez l'option 'Hex'.  
   
--   Reportez-vous ensuite à la rubrique [User-Account-Control Attribute](https://go.microsoft.com/fwlink/?LinkId=183366) (Attribut User-Account-Control) pour dériver l’attribut pour le compte de service.  
+-   Reportez-vous ensuite à la rubrique [User-Account-Control Attribute](/windows/win32/adschema/a-useraccountcontrol) (Attribut User-Account-Control) pour dériver l’attribut pour le compte de service.  
   
 ##### <a name="spns-configured-in-active-directory-for-the-reporting-services-service-account"></a>Noms de principaux du service configurés dans Active Directory pour le compte de service Reporting Services.  
  Pour enregistrer les noms de principaux du service dans le fichier journal de trace du service [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] , vous pouvez activer temporairement la fonctionnalité de protection étendue [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] .  
@@ -206,5 +206,4 @@ ms.locfileid: "91935420"
  [Configurer une authentification de base sur le serveur de rapports](../../reporting-services/security/configure-basic-authentication-on-the-report-server.md)   
  [Configurer l’authentification personnalisée ou par formulaire sur le serveur de rapports](../../reporting-services/security/configure-custom-or-forms-authentication-on-the-report-server.md)   
  [Protection étendue de l'authentification avec Reporting Services](../../reporting-services/security/extended-protection-for-authentication-with-reporting-services.md)  
-  
   

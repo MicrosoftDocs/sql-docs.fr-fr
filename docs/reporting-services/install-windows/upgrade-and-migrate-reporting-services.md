@@ -12,12 +12,12 @@ author: maggiesMSFT
 ms.author: maggies
 ms.topic: conceptual
 ms.date: 05/01/2020
-ms.openlocfilehash: f473590243956cd2fcba1961d3580fa052d6f4c1
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 2515a93b025392735135cd13cbd734975f8ed221
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91934630"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596829"
 ---
 # <a name="upgrade-and-migrate-reporting-services"></a>Upgrade and Migrate Reporting Services
 
@@ -43,7 +43,7 @@ ms.locfileid: "91934630"
  Pour obtenir la liste des éditions et versions prises en charge que vous pouvez mettre à niveau, consultez [Supported Version and Edition Upgrades](../../database-engine/install-windows/supported-version-and-edition-upgrades.md).  
   
 > [!TIP]  
->  Pour obtenir les dernières informations concernant les problèmes relatifs à SQL Server, consultez les [notes de publication de SQL Server 2016](https://go.microsoft.com/fwlink/?LinkID=398124).  
+>  Pour obtenir les dernières informations concernant les problèmes relatifs à SQL Server, consultez les [notes de publication de SQL Server 2016](../../sql-server/sql-server-2016-release-notes.md).  
   
   
 ##  <a name="side-by-side-installations"></a><a name="bkmk_side_by_side"></a> Installations côte à côte  
@@ -69,7 +69,7 @@ ms.locfileid: "91934630"
 
 * [Mettre à niveau vers SQL Server 2016](../../database-engine/install-windows/upgrade-sql-server.md)
 * [Effectuer une mise à niveau vers SQL Server 2016 à l’aide de l’Assistant Installation &#40;programme d’installation&#41;](../../database-engine/install-windows/upgrade-sql-server-using-the-installation-wizard-setup.md)
-* [Installer SQL Server 2016 à partir de l’invite de commandes](../../database-engine/install-windows/install-sql-server-2016-from-the-command-prompt.md)
+* [Installer SQL Server 2016 à partir de l’invite de commandes](../../database-engine/install-windows/install-sql-server-from-the-command-prompt.md)
   
   
 ##  <a name="pre-upgrade-checklist"></a><a name="bkmk_upgrade_checklist"></a> Liste de contrôle préalable à la mise à niveau  
@@ -123,9 +123,9 @@ ms.locfileid: "91934630"
   
     2.  Les outils de configuration et utilitaires du serveur de rapports mis à niveau vers la nouvelle version incluent l'outil de configuration de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] en mode natif, les utilitaires en ligne de commande, tels que RS.exe et le Générateur de rapports.  
   
-    3.  Les autres outils clients tels que [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] font l’objet d’un téléchargement distinct et doivent être mis à niveau. Pour plus d’informations, consultez la page [Télécharger SQL Server Management Studio (SSMS)](https://msdn.microsoft.com/library/mt238290.aspx).
+    3.  Les autres outils clients tels que [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] font l’objet d’un téléchargement distinct et doivent être mis à niveau. Pour plus d’informations, consultez la page [Télécharger SQL Server Management Studio (SSMS)](../../ssms/download-sql-server-management-studio-ssms.md).
   
-    4.  [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] est disponible en téléchargement séparé. Pour plus d’informations, consultez [SQL Server Data Tools dans Visual Studio 2015](https://msdn.microsoft.com/mt186501).  
+    4.  [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] est disponible en téléchargement séparé. Pour plus d’informations, consultez [SQL Server Data Tools dans Visual Studio 2015](/previous-versions/mt186501(v=msdn.10)).  
   
 6.  Le programme d’installation réutilise l’entrée de service du Gestionnaire de services de contrôle pour le service Report Server de SQL Server Reporting Services. Cette entrée de service inclut le compte de service Windows Report Server.  
   
@@ -236,13 +236,13 @@ ms.locfileid: "91934630"
   
 -   [Présentation de la procédure de mise à niveau vers SharePoint 2016](https://technet.microsoft.com/library/cc262483\(v=office.16\)).
 
--   [Présentation de la procédure de mise à niveau vers SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=256688).
+-   [Présentation de la procédure de mise à niveau vers SharePoint 2013](/SharePoint/upgrade-and-update/overview-of-the-upgrade-process-from-sharepoint-2010-to-sharepoint-2013).
   
--   [Nettoyer les préparations avant la mise à niveau vers SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=256689).  
+-   [Nettoyer les préparations avant la mise à niveau vers SharePoint 2013](/SharePoint/upgrade-and-update/clean-up-an-environment-before-an-upgrade-to-sharepoint-2013).  
   
 -   [Mettre à niveau les bases de données de SharePoint 2013 vers SharePoint 2016](https://technet.microsoft.com/library/cc303436\(v=office.16\)).
 
--   [Mettre à niveau les bases de données de SharePoint 2010 vers SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=256690).  
+-   [Mettre à niveau les bases de données de SharePoint 2010 vers SharePoint 2013](/SharePoint/upgrade-and-update/upgrade-content-databases-from-sharepoint-2010-to-sharepoint-2013).  
 
 ## <a name="next-steps"></a>Étapes suivantes
 

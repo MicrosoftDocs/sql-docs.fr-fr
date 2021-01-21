@@ -10,18 +10,18 @@ ms.prod_service: reporting-services-native
 ms.technology: application-integration
 ms.topic: reference
 ms.date: 06/03/2020
-ms.openlocfilehash: 22f693824c244e02f313e488a067a0b732b2fa10
-ms.sourcegitcommit: dc6ea6665cd2fb58a940c722e86299396b329fec
+ms.openlocfilehash: 685b1004cea15c5e1c1708204e75b9c8ce7a40af
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84423397"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596572"
 ---
 # <a name="integrate-reporting-services-using-reportviewer-controls---data-collection"></a>Intégrer Reporting Services à l’aide de contrôles ReportViewer - Collecte des données
 
 Des données d’utilisation anonymes sont collectées par le contrôle pour vous permettre de mieux comprendre comment les clients utilisent le produit. Les données d’utilisation permettent de concentrer le développement futur sur les améliorations les plus pertinentes pour les clients.
 
-Une explication des pratiques de collecte et d’utilisation des données de Microsoft SQL Server et de la visionneuse de rapports est disponible dans la [déclaration de confidentialité](https://go.microsoft.com/fwlink/?LinkID=868444).
+Une explication des pratiques de collecte et d’utilisation des données de Microsoft SQL Server et de la visionneuse de rapports est disponible dans la [déclaration de confidentialité](../../sql-server/sql-server-privacy.md).
 
 ## <a name="opting-out-of-data-collection"></a>Désactivation de la collecte de données
 
@@ -43,7 +43,4 @@ protected void Page_Load(object sender, EventArgs e)
 ## <a name="see-also"></a>Voir aussi
 
 [Utilisation du contrôle WebForms Visionneuse de rapports](../../reporting-services/application-integration/using-the-webforms-reportviewer-control.md)  
-[Intégration de Reporting Services à l’aide des contrôles Visionneuse de rapports](../../reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls.md) 
-
-
-
+[Intégration de Reporting Services à l’aide des contrôles Visionneuse de rapports](../../reporting-services/application-integration/integrating-reporting-services-using-reportviewer-controls.md)

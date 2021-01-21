@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: ae8a0166-2ccc-45f4-8d28-c150da7b73de
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 603207390785ff684167b3b553b31c3b956842c6
-ms.sourcegitcommit: 5c7634b007f6808c87094174b80376cb20545d5f
+ms.openlocfilehash: 31e92b49186e79c78cbaa2d13859d8dd3abe5c5d
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84880764"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596338"
 ---
 # <a name="custom-code-and-assembly-references-in-expressions-in-report-designer-ssrs"></a>Code personnalisé et références d'assembly dans les expressions du Concepteur de rapports (SSRS)
   Vous pouvez ajouter des références à du code personnalisé incorporé dans un rapport ou à des assemblys personnalisés que vous générez et enregistrez sur votre ordinateur et déployez sur le serveur de rapports. L'incorporation de code convient dans le cas de constantes personnalisées, de fonctions complexes ou de fonctions utilisées plusieurs fois dans un même rapport. Quant aux assemblys personnalisés, il est préférable de les utiliser si vous voulez centraliser du code en un emplacement unique et le partager en vue de son utilisation par plusieurs rapports. Le code personnalisé peut inclure de nouvelles constantes personnalisées, variables, fonctions ou sous-routines. Vous pouvez inclure des références en lecture seule à des collections intégrées, telles que la collection de paramètres. Cependant, les fonctions personnalisées ne peuvent pas recevoir des ensembles de valeurs de données de rapport : les agrégations personnalisées ne sont notamment pas prises en charge.  
@@ -53,12 +53,12 @@ ms.locfileid: "84880764"
   
  Pour utiliser une fonction intégrée, double-cliquez sur son nom dans le volet Élément. Une description de la fonction s'affiche dans le volet Description et un exemple de l'appel de la fonction apparaît dans le volet d'exemple. Dans le volet du code, quand vous tapez le nom de la fonction suivi d’une parenthèse ouvrante **(** , l’aide d’IntelliSense affiche chaque syntaxe valide pour l’appel de la fonction. Par exemple, pour calculer la valeur maximale pour un champ nommé `Quantity` dans une table, ajoutez l'expression simple `=Max(` au volet du code, puis utilisez les balises actives pour consulter toutes les syntaxes valides possibles pour l'appel de la fonction. Pour compléter cet exemple, tapez `=Max(Fields!Quantity.Value)`.  
   
- Pour plus d’informations sur chaque fonction, consultez <xref:System.Math>, <xref:System.Convert>et [Membres de la bibliothèque runtime Visual Basic](https://go.microsoft.com/fwlink/?LinkId=198941) sur MSDN.  
+ Pour plus d’informations sur chaque fonction, consultez <xref:System.Math>, <xref:System.Convert>et [Membres de la bibliothèque runtime Visual Basic](/dotnet/visual-basic/language-reference/runtime-library-members) sur MSDN.  
   
 ##  <a name="including-references-to-less-commonly-used-functions"></a><a name="NotCommon"></a> Intégration de références aux fonctions moins couramment utilisées  
  Pour inclure une référence à d’autres espaces de noms CLR moins couramment utilisés, vous devez utiliser une référence complète, par exemple <xref:System.Text.StringBuilder>. IntelliSense n'est pas pris en charge dans le volet du code de la boîte de dialogue **Expression** pour ces fonctions moins couramment utilisées.  
   
- Pour plus d'informations, consultez [Membres de la bibliothèque runtime Visual Basic](https://go.microsoft.com/fwlink/?LinkId=198941) sur MSDN.  
+ Pour plus d'informations, consultez [Membres de la bibliothèque runtime Visual Basic](/dotnet/visual-basic/language-reference/runtime-library-members) sur MSDN.  
   
 ##  <a name="including-references-to-external-assemblies"></a><a name="External"></a> Intégration de références aux assemblys externes  
  Pour inclure une référence à une classe dans un assembly externe, vous devez identifier l'assembly pour le processeur de rapports. Utilisez la page **Références** de la boîte de dialogue **Propriétés du rapport** pour spécifier le nom complet de l'assembly à ajouter au rapport. Dans votre expression, vous devez utiliser le nom complet de la classe dans l'assembly. Les classes dans un assembly externe n'apparaissent pas dans la boîte de dialogue **Expression** ; vous devez fournir le nom correct de la classe. Un nom complet comprend l'espace de noms, le nom de la classe et le nom du membre.  
@@ -196,5 +196,4 @@ End Function
  [Didacticiels sur Reporting Services &#40;SSRS&#41;](../../reporting-services/reporting-services-tutorials-ssrs.md)   
  [Exemples d’expressions &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/expression-examples-report-builder-and-ssrs.md)   
  [Exemples de rapports (Générateur de rapports et SSRS)](https://go.microsoft.com/fwlink/?LinkId=198283)  
-  
   

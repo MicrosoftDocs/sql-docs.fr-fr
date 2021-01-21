@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c5275a9f-c95b-46d7-bc62-633879a8a291
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 9b263aa61d02c20f55933744449151fa7676bad1
-ms.sourcegitcommit: f0772f614482e0b3cde3609e178689ce62ca3a19
+ms.openlocfilehash: 022751a3ec4b47a8e7a3a5f5295306265f659512
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84544511"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98594983"
 ---
 # <a name="process-large-reports"></a>Traiter les rapports volumineux
   Les rapports volumineux présentent certains problèmes de traitement. Ils nécessitent un certain nombre de configurations pour garantir leur fonctionnement correct. Ils ne doivent pas être exécutés à la demande, à moins d'être configurés pour prendre en charge la pagination.  
@@ -32,7 +32,7 @@ ms.locfileid: "84544511"
   
  La taille des rapports contenant des données volatiles peut changer considérablement d'une exécution à l'autre. Dans ce cas, vous devez analyser la source des données pour déterminer de quelle façon la volatilité des données agit sur ces rapports, afin de savoir si vous devez suivre les recommandations prodiguées dans la présente rubrique.  
   
- Pour plus d’informations et de conseils sur le diagnostic des erreurs de délai d’attente et des erreurs d’insuffisance de mémoire, consultez l’article [Comment diagnostiquer des problèmes lors de l'exécution de rapports sur le serveur de rapports](https://go.microsoft.com/fwlink/?LinkId=85634) sur blogs.msdn.microsoft.com.  
+ Pour plus d’informations et de conseils sur le diagnostic des erreurs de délai d’attente et des erreurs d’insuffisance de mémoire, consultez l’article [Comment diagnostiquer des problèmes lors de l'exécution de rapports sur le serveur de rapports](/archive/blogs/lukaszp/) sur blogs.msdn.microsoft.com.  
   
 ## <a name="configuration-recommendations"></a>Recommandations relatives à la configuration  
  Les recommandations concernant l'accès, l'exécution et le rendu des rapports sont les suivantes :  
@@ -72,4 +72,4 @@ ms.locfileid: "84544511"
  [Définir les propriétés de traitement d’un rapport](../../reporting-services/report-server/set-report-processing-properties.md)   
  [Spécifier des informations d'identification et de connexion pour les sources de données de rapport](../../reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources.md)   
  [Gestion du contenu du serveur de rapports &#40;SSRS en mode natif&#41;](../../reporting-services/report-server/report-server-content-management-ssrs-native-mode.md)   
- [Précharger le cache (SSRS)](../../reporting-services/report-server/preload-the-cache-report-manager.md)  
+ [Précharger le cache (SSRS)](../../reporting-services/report-server/preload-the-cache-report-manager.md)

@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: 14442892bc59fc733c6a67153832b95c3f368b95
-ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
+ms.openlocfilehash: 12dfcb26484b468bed9f9262403806ea88829385
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2020
-ms.locfileid: "97771452"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98595770"
 ---
 # <a name="configuring-parameters"></a>Configuration des paramètres
 
@@ -27,7 +27,7 @@ ms.locfileid: "97771452"
 
 Les objets de commande utilisent des paramètres pour passer des valeurs à des instructions SQL ou à des procédures stockées, en fournissant la vérification et la validation des types. Contrairement au texte de la commande, l'entrée de paramètre est traitée comme une valeur littérale et non pas comme du code exécutable. Cela vous permet de vous protéger des attaques « par injection de code SQL », dans lesquelles un attaquant insère une commande qui compromet la sécurité sur le serveur dans une instruction SQL.
 
-Les commandes paramétrées améliorent également les performances d'exécution des requêtes car elles permettent au serveur de base de données de faire correspondre la commande entrante avec un plan de requête mis en cache approprié. Pour plus d’informations, consultez [Mise en cache et réutilisation du plan d'exécution](/sql/relational-databases/query-processing-architecture-guide#execution-plan-caching-and-reuse) et [Réutilisation des paramètres et du plan d'exécution](/sql/relational-databases/query-processing-architecture-guide#PlanReuse). Outre les avantages relatifs à la sécurité et aux performances, les commandes paramétrées fournissent une méthode pratique d'organisation des valeurs passées à une source de données.
+Les commandes paramétrées améliorent également les performances d'exécution des requêtes car elles permettent au serveur de base de données de faire correspondre la commande entrante avec un plan de requête mis en cache approprié. Pour plus d’informations, consultez [Mise en cache et réutilisation du plan d'exécution](../../relational-databases/query-processing-architecture-guide.md#execution-plan-caching-and-reuse) et [Réutilisation des paramètres et du plan d'exécution](../../relational-databases/query-processing-architecture-guide.md#PlanReuse). Outre les avantages relatifs à la sécurité et aux performances, les commandes paramétrées fournissent une méthode pratique d'organisation des valeurs passées à une source de données.
 
 Un objet <xref:System.Data.Common.DbParameter> peut être créé à l'aide de son constructeur ou en l'ajoutant à la propriété <xref:System.Data.Common.DbCommand.DbParameterCollection%2A> en appelant la méthode `Add` de la collection <xref:System.Data.Common.DbParameterCollection> . La méthode `Add` prendra comme entrée des arguments de constructeur ou un objet Parameter existant, selon le fournisseur de données.
 
@@ -103,7 +103,7 @@ Pour plus d’informations, consultez [Génération de commandes avec CommandBui
 Les procédures stockées offrent de nombreux avantages dans les applications pilotées par des données. En utilisant les procédures stockées, les opérations de base de données peuvent être encapsulées dans une commande unique, optimisées pour de meilleures performances et améliorées grâce à une sécurité supplémentaire. Bien qu’une procédure stockée puisse être appelée en passant son nom suivi des arguments de paramètre comme instruction SQL, l’utilisation de la collection <xref:System.Data.Common.DbCommand.Parameters%2A> de l’objet ADO.NET <xref:System.Data.Common.DbCommand> vous permet de définir plus explicitement les paramètres de procédure stockée et d’accéder aux paramètres de sortie et aux valeurs de retour.
 
 > [!NOTE]
-> Les instructions paramétrées sont exécutées sur le serveur à l'aide de `sp_executesql,` , ce qui permet la réutilisation des plans de requête. Les curseurs ou variables locaux dans le lot `sp_executesql` ne sont pas visibles pour le lot qui appelle `sp_executesql`. Les modifications dans le contexte de la base de données durent uniquement jusqu'à la fin de l'instruction `sp_executesql` . Pour plus d’informations, consultez [sp_executesql (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-executesql-transact-sql).
+> Les instructions paramétrées sont exécutées sur le serveur à l'aide de `sp_executesql,` , ce qui permet la réutilisation des plans de requête. Les curseurs ou variables locaux dans le lot `sp_executesql` ne sont pas visibles pour le lot qui appelle `sp_executesql`. Les modifications dans le contexte de la base de données durent uniquement jusqu'à la fin de l'instruction `sp_executesql` . Pour plus d’informations, consultez [sp_executesql (Transact-SQL)](../../relational-databases/system-stored-procedures/sp-executesql-transact-sql.md).
 
 Lorsque vous utilisez des paramètres avec un objet <xref:Microsoft.Data.SqlClient.SqlCommand> pour exécuter une procédure stockée SQL Server, les noms des paramètres ajoutés à la collection <xref:Microsoft.Data.SqlClient.SqlCommand.Parameters%2A> doivent correspondre à ceux des marqueurs de paramètres dans la procédure stockée. Le Fournisseur de données Microsoft SqlClient pour SQL Server ne prend pas en charge l’espace réservé du point d’interrogation ( ?) pour le passage de paramètres à une instruction SQL ou à une procédure stockée. Il traite les paramètres de la procédure stockée comme des paramètres nommés et recherche les marqueurs de paramètres correspondants. Par exemple, la procédure stockée `CustOrderHist` est définie à l'aide d'un paramètre nommé `@CustomerID`. Lorsque votre code exécute la procédure stockée, il doit également utiliser un paramètre nommé `@CustomerID`.
 

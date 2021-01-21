@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1e3be259-d453-4802-b2f5-6b81ef607edf
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: a4fa74909490cf7596faa1e38c83a83b6329bd28
-ms.sourcegitcommit: f0772f614482e0b3cde3609e178689ce62ca3a19
+ms.openlocfilehash: 5b5e8dbaee71c53f8f9491f8a1abcd15559e4800
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84547991"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596842"
 ---
 # <a name="report-and-snapshot-size-limits"></a>Limites de taille des instantanés et des rapports
   Les administrateurs qui gèrent un déploiement de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] peuvent utiliser les informations figurant dans cette rubrique pour comprendre les limites de taille lorsque le rapport est publié sur un serveur de rapports, rendu lors de l'exécution et enregistré dans le système de fichiers. Cette rubrique fournit également des conseils pratiques expliquant comment mesurer la taille d'une base de données de serveur de rapports, et elle décrit l'incidence de la taille des instantanés sur les performances des serveurs.  
@@ -51,7 +51,7 @@ ms.locfileid: "84547991"
  La seule limite physique sur la taille du rapport s'applique lors du rendu au format Excel. Les feuilles de calcul ne peuvent pas contenir plus de 65 536 lignes ou 256 colonnes. D'autres formats de rendu ne sont pas soumis à ces limites, par conséquent, la taille est limitée uniquement par la quantité de ressources sur votre serveur.  
   
 > [!NOTE]  
->  Le traitement et le rendu d'un rapport sont opérés en mémoire. Si vous possédez des rapports volumineux ou un grand nombre d'utilisateurs, veillez à réaliser une planification de capacité pour vous assurer que vos utilisateurs sont satisfaits des performances de votre déploiement de serveur de rapports. Pour plus d'informations sur les outils et instructions disponibles, consultez les publications suivantes sur MSDN : [Planning for Scalability and Performance with Reporting Services](/previous-versions/sql/sql-server-2005/administrator/cc966418(v=technet.10)) et [Using Visual Studio 2005 to Perform Load Testing on a SQL Server 2005 Reporting Services Report Server](https://go.microsoft.com/fwlink/?LinkID=77519)(en anglais).  
+>  Le traitement et le rendu d'un rapport sont opérés en mémoire. Si vous possédez des rapports volumineux ou un grand nombre d'utilisateurs, veillez à réaliser une planification de capacité pour vous assurer que vos utilisateurs sont satisfaits des performances de votre déploiement de serveur de rapports. Pour plus d'informations sur les outils et instructions disponibles, consultez les publications suivantes sur MSDN : [Planning for Scalability and Performance with Reporting Services](/previous-versions/sql/sql-server-2005/administrator/cc966418(v=technet.10)) et [Using Visual Studio 2005 to Perform Load Testing on a SQL Server 2005 Reporting Services Report Server](/previous-versions/sql/sql-server-2005/administrator/aa964139(v=sql.90))(en anglais).  
   
 ## <a name="measuring-snapshot-storage"></a>Mesure du stockage des instantanés  
  La taille d'un instantané est directement proportionnelle à la quantité de données dans le rapport. Les instantanés sont généralement bien plus volumineux que les autres éléments stockés sur un serveur de rapports. Leur taille oscille généralement entre quelques mégaoctets et des dizaines de mégaoctets. Si vos rapports sont extrêmement volumineux, il est probable que les instantanés le seront encore plus. En fonction de la fréquence d'utilisation des instantanés et de la configuration de l'historique des rapports, la quantité d'espace disque nécessaire par la base de données du serveur de rapports peut augmenter rapidement en peu de temps.  
@@ -82,5 +82,4 @@ EXEC sp_spaceused
  [Définir les propriétés de traitement d’un rapport](../../reporting-services/report-server/set-report-processing-properties.md)   
  [Base de données du serveur de rapports &#40;SSRS en mode natif&#41;](../../reporting-services/report-server/report-server-database-ssrs-native-mode.md)   
  [Traiter les rapports volumineux](../../reporting-services/report-server/process-large-reports.md)  
-  
   

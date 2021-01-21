@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 94fdf921-270c-4c12-87b3-46b1cc98fae5
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 74a15489c057490ddf358860f8cd0f78eb79ba20
-ms.sourcegitcommit: 93e4fd75e8fe0cc85e7949c9adf23b0e1c275465
+ms.openlocfilehash: 0202703dec933871d6b6a611ff1139a68ee2c938
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "84255282"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98595363"
 ---
 # <a name="data-types-in-expressions-report-builder-and-ssrs"></a>Types de données dans les expressions (Générateur de rapports et SSRS)
   Les données sont représentées par différents types de données permettant de les stocker et de les traiter de manière efficace. Les types de données typiques incluent du texte (également appelé chaînes), des numéros avec et sans décimales, des dates, des heures et des images. Les valeurs dans un rapport doivent être un type de données RDL (Report Definition Language). Vous pouvez mettre en forme une valeur selon votre préférence lorsque vous l'affichez dans un rapport. Par exemple, un champ qui représente une devise est stocké dans la définition de rapport sous la forme d'un nombre à virgule flottante, mais peut être affiché sous divers formats en fonction de la propriété de format choisie.  
@@ -88,7 +88,7 @@ ms.locfileid: "84255282"
 |Uniquement la partie DateTime d'une valeur DateTimeOffset|`=Fields!MyDatetimeOffset.Value.DateTime`|  
 |Uniquement la partie Offset d'une valeur DateTimeOffset|`=Fields!MyDatetimeOffset.Value.Offset`|  
   
- Vous pouvez également utiliser la fonction Format pour contrôler le format d'affichage de la valeur. Pour plus d’informations, consultez [Fonctions (Visual Basic)](https://go.microsoft.com/fwlink/?linkid=111483).  
+ Vous pouvez également utiliser la fonction Format pour contrôler le format d'affichage de la valeur. Pour plus d’informations, consultez [Fonctions (Visual Basic)](/dotnet/visual-basic/language-reference/functions/).  
   
 ## <a name="advanced-examples"></a>Exemples avancés  
  Lorsque vous vous connectez à une source de données par le biais d'un fournisseur de données qui ne prend pas en charge la conversion de tous les types de données de la source, le type de données par défaut utilisé pour les types de source de données non pris en charge est Chaîne. Les exemples suivants proposent des solutions pour les types de données spécifiques retournés en tant que chaîne.  
@@ -117,7 +117,7 @@ ms.locfileid: "84255282"
   
          Si la chaîne `MyDateTime.Value` utilise un décalage UTC, la fonction `DateTime.Parse` ajuste tout d'abord le décalage UTC (7 A.M. - [`+08:00`] de manière à afficher l'heure UTC 11 P.M. la nuit précédente). La fonction `DateTime.Parse` applique ensuite le décalage UTC du serveur de rapports local et, si nécessaire, ajuste à nouveau l'heure pour tenir compte de l'heure d'été. Par exemple, à Redmond, dans l'état de Washington, le décalage horaire local ajusté pour tenir compte de l'heure d'été est `[-07:00]`, ou 7 heures avant 11 PM. Le résultat correspond à la valeur **DateTime** suivante : `2007-07-06 04:07:07 PM` (6 juillet 2007 à 4:07 P.M).  
   
- Pour plus d’informations sur la conversion de chaînes en types de données **DateTime** , consultez les rubriques [Analyse des chaînes de date/heure](https://go.microsoft.com/fwlink/?LinkId=89703), [Mise en forme de la date et de l’heure pour une culture spécifique](https://go.microsoft.com/fwlink/?LinkId=89704)et [Choosing Between DateTime, DateTimeOffsetet TimeZoneInfo](https://go.microsoft.com/fwlink/?linkid=110652) dans la bibliothèque MSDN.  
+ Pour plus d’informations sur la conversion de chaînes en types de données **DateTime** , consultez les rubriques [Analyse des chaînes de date/heure](https://go.microsoft.com/fwlink/?LinkId=89703), [Mise en forme de la date et de l’heure pour une culture spécifique](https://go.microsoft.com/fwlink/?LinkId=89704)et [Choosing Between DateTime, DateTimeOffsetet TimeZoneInfo](/dotnet/standard/datetime/choosing-between-datetime) dans la bibliothèque MSDN.  
   
 -   Ajoutez un nouveau champ calculé au dataset du rapport qui utilise une expression pour extraire certaines parties de la chaîne. Pour plus d’informations, consultez [Ajouter, modifier ou actualiser des champs dans le volet des données de rapport &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-data/add-edit-refresh-fields-in-the-report-data-pane-report-builder-and-ssrs.md).  
   
@@ -139,9 +139,8 @@ ms.locfileid: "84255282"
   
  Pour plus d’informations sur les types de base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Types de données &#40;Transact-SQL&#41;](../../t-sql/data-types/data-types-transact-sql.md) et [Types de données et fonctions de date et d’heure &#40;Transact-SQL&#41;](../../t-sql/functions/date-and-time-data-types-and-functions-transact-sql.md).  
   
- Pour plus d’informations sur les types de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], consultez [Types de données dans Analysis Services](https://docs.microsoft.com/analysis-services/multidimensional-models/olap-physical/data-types-in-analysis-services).  
+ Pour plus d’informations sur les types de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], consultez [Types de données dans Analysis Services](/analysis-services/multidimensional-models/olap-physical/data-types-in-analysis-services).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Mise en forme des éléments de rapport &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/formatting-report-items-report-builder-and-ssrs.md)  
-  
   

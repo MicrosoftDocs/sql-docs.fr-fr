@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: 42b1f8704be721c0b52b3c42946c9abbf7efd7db
-ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
+ms.openlocfilehash: 6daf0dc719b284f753c6f089709ed6f0f51dfe2a
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2020
-ms.locfileid: "97771625"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596398"
 ---
 # <a name="connection-string-syntax"></a>Syntaxe de la chaîne de connexion
 
@@ -123,7 +123,7 @@ Le tableau ci-dessous décrit tous les cas.
 |Oui|Oui|Oui|Non (par défaut)|Le chiffrement se produit uniquement s'il existe un certificat de serveur vérifiable ; sinon, la tentative de connexion échoue.|  
 |Oui|Oui|Oui|Oui|Le chiffrement se produit toujours, mais peut utiliser un certificat de serveur auto-signé.|  
 
-Pour plus d’informations, consultez [Utilisation du chiffrement sans validation](/sql/relational-databases/native-client/features/using-encryption-without-validation).
+Pour plus d’informations, consultez [Utilisation du chiffrement sans validation](../../relational-databases/native-client/features/using-encryption-without-validation.md).
 
 ## <a name="see-also"></a>Voir aussi
 

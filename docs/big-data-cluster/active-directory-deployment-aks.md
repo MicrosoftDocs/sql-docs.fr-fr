@@ -9,16 +9,16 @@ ms.date: 11/12/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 3f6b3ce5f6a594e5be385ee1f7ea7d1c03c1f92a
-ms.sourcegitcommit: 0f484f32709a414f05562bbaafeca9a9fc57c9ed
+ms.openlocfilehash: 4b11cef91203a9c7939d4d044220283db378e296
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94632950"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98595632"
 ---
 # <a name="deploy-sql-server-big-data-clusters-in-ad-mode-on-azure-kubernetes-services-aks"></a>Déployer des clusters Big Data SQL Server en mode AD sur Azure Kubernetes Service (AKS)
 
-Les clusters Big Data SQL Server prennent en charge le [mode de déploiement Active Directory (AD)](deploy-active-directory.md) pour la **gestion des identités et des accès (IAM)** . La création de la gestion des identités et des accès (IAM) pour **Azure Kubernetes Service (AKS)** s’est révélée difficile, car les protocoles standard comme OAuth 2.0 et OpenID Connect, qui sont très bien pris en charge par la Plateforme d’identité Microsoft, ne le sont pas par SQL Server.  
+Les clusters Big Data SQL Server prennent en charge le [mode de déploiement Active Directory (AD)](./active-directory-prerequisites.md) pour la **gestion des identités et des accès (IAM)** . La création de la gestion des identités et des accès (IAM) pour **Azure Kubernetes Service (AKS)** s’est révélée difficile, car les protocoles standard comme OAuth 2.0 et OpenID Connect, qui sont très bien pris en charge par la Plateforme d’identité Microsoft, ne le sont pas par SQL Server.  
 
 Cet article explique comment déployer un cluster Big Data en mode AD dans [Azure Kubernetes Service (AKS)](/azure/aks/intro-kubernetes). 
 

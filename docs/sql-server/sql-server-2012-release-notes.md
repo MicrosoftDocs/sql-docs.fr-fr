@@ -13,18 +13,18 @@ ms.assetid: 9ccb390a-67a9-4593-85ea-2b4c41c4620f
 author: rothja
 ms.author: jroth
 monikerRange: = sql-server-2016
-ms.openlocfilehash: dc92ae7c943729e7c95529b948caca95404dec3a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: f183c3d44525d85c26a6ba36345eb347ba1c38d3
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474530"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98594839"
 ---
 # <a name="sql-server-2012-release-notes"></a>Notes de publication de SQL Server 2012
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
 Ce document Notes de publication décrit les problèmes connus dont vous devez prendre connaissance avant d’installer ou de dépanner [Microsoft SQL Server 2012](https://go.microsoft.com/fwlink/?LinkId=238647)). Ce document Notes de publication, uniquement disponible en ligne (absent du support d'installation), est régulièrement mis à jour.  
   
-Pour plus d'informations sur le démarrage et l'installation de SQL Server 2012, consultez le fichier Lisez-moi de SQL Server 2012. Le document Lisez-moi est disponible sur le support d'installation et sur la page de téléchargement du fichier [Lisez-moi](https://download.microsoft.com/download/3/B/D/3BD9DD65-D3E3-43C3-BB50-0ED850A82AD5/ENU/Readme.htm) . Vous pouvez également trouver des informations supplémentaires dans la [documentation en ligne de SQL Server](https://go.microsoft.com/fwlink/?LinkId=190948) et sur les [forums SQL Server](https://go.microsoft.com/fwlink/?LinkId=213599).  
+Pour plus d'informations sur le démarrage et l'installation de SQL Server 2012, consultez le fichier Lisez-moi de SQL Server 2012. Le document Lisez-moi est disponible sur le support d'installation et sur la page de téléchargement du fichier [Lisez-moi](https://download.microsoft.com/download/3/B/D/3BD9DD65-D3E3-43C3-BB50-0ED850A82AD5/ENU/Readme.htm) . Vous pouvez également trouver des informations supplémentaires dans la [documentation en ligne de SQL Server](/previous-versions/sql/sql-server-2012/ms130214(v=sql.110)) et sur les [forums SQL Server](https://go.microsoft.com/fwlink/?LinkId=213599).  
   
 ## <a name="10-before-you-install"></a><a name="Install"></a>1.0 Avant l’installation  
 Lisez les informations répertoriées ci-dessous avant d'installer [!INCLUDE[ssCurrent](../includes/sscurrent-md.md)].  
@@ -92,7 +92,7 @@ Vous pouvez installer SQL Server sur Windows Server 2008 R2 Server Core SP1, ave
   
 -   Microsoft SQL Server 2012 ne peut pas être installé côte à côte avec des versions antérieures de SQL Server sur un ordinateur qui exécute Windows Server 2008 R2 Server Core SP1.  
   
--   Toutes les fonctionnalités de SQL Server 2012 ne sont pas prises en charge sur le système d'exploitation Server Core. Pour plus d'informations sur les fonctionnalités prises en charge et sur l'installation de SQL Server 2012 sur Server Core, consultez [Installer SQL Server 2012 sur Server Core](https://msdn.microsoft.com/library/hh231669(SQL.110).aspx).  
+-   Toutes les fonctionnalités de SQL Server 2012 ne sont pas prises en charge sur le système d'exploitation Server Core. Pour plus d'informations sur les fonctionnalités prises en charge et sur l'installation de SQL Server 2012 sur Server Core, consultez [Installer SQL Server 2012 sur Server Core](/previous-versions/sql/sql-server-2012/hh231669(v=sql.110)).  
   
 ### <a name="16-semantic-search-requires-you-to-install-an-additional-dependency"></a>1.6 La recherche sémantique exige l'installation d'une dépendance supplémentaire  
 **Problème :** la recherche sémantique statistique présente une condition préalable supplémentaire, à savoir la base de données des statistiques linguistiques de sémantique, qui n'est pas installée par le programme d'installation SQL Server.  
@@ -162,7 +162,7 @@ Les points suivants décrivent le comportement d'installation des composants req
   
         **Utilisez Deployment Image Servicing and Management (DISM.exe) pour activer .NET Framework 3.5 SP1 :**  
   
-        Vous pouvez également activer .NET Framework 3.5 SP1 à l'aide de Deployment Image Servicing and Management (DISM.exe). Pour plus d'informations sur l'activation des fonctionnalités Windows en ligne, consultez [Activer ou désactiver les fonctionnalités Windows en ligne](https://technet.microsoft.com/library/dd744582(WS.10).aspx). Voici les instructions permettant d'activer .NET Framework 3.5 SP1 :  
+        Vous pouvez également activer .NET Framework 3.5 SP1 à l'aide de Deployment Image Servicing and Management (DISM.exe). Pour plus d'informations sur l'activation des fonctionnalités Windows en ligne, consultez [Activer ou désactiver les fonctionnalités Windows en ligne](/previous-versions/windows/it-pro/windows-7/dd744582(v=ws.10)). Voici les instructions permettant d'activer .NET Framework 3.5 SP1 :  
   
         1.  À l'invite de commandes, tapez la commande suivante pour répertorier l'ensemble des fonctionnalités disponibles dans le système d'exploitation.  
   
@@ -334,7 +334,7 @@ Il existe un certain nombre de problèmes avec la tâche de traitement AS lorsqu
 ### <a name="42-to-reinstall-data-quality-server-delete-the-dqs-objects-after-uninstalling-data-quality-server"></a>4.2 Pour réinstaller Data Quality Server, supprimez les objets DQS après avoir désinstallé Data Quality Server  
 **Problème :** si vous désinstallez Data Quality Server, les objets DQS (bases de données DQS, connexions DQS et une procédure stockée DQS) ne sont pas supprimés de l’instance SQL Server.  
   
-**Solution de contournement :** pour réinstaller Data Quality Server sur le même ordinateur et dans la même instance SQL Server, vous devez supprimer manuellement les objets DQS de l’instance SQL Server. Par ailleurs, vous devez également supprimer les fichiers de bases de données DQS (DQS_MAIN, DQS_PROJECTS et DQS_STAGING_DATA) du dossier C:\Program Files\Microsoft SQL Server\MSSQL11.<SQL_Server_Instance>\MSSQL\DATA de votre ordinateur avant de réinstaller Data Quality Server. Sinon, l'installation de Data Quality Server échoue. Déplacez les fichiers de base de données au lieu de les supprimer si vous souhaitez conserver des données, telles que les bases de connaissances ou les projets de qualité des données. Pour plus d'informations sur la suppression des objets DQS une fois la désinstallation terminée, consultez [Supprimer les objets serveur DQS](https://msdn.microsoft.com/library/hh231667.aspx).  
+**Solution de contournement :** pour réinstaller Data Quality Server sur le même ordinateur et dans la même instance SQL Server, vous devez supprimer manuellement les objets DQS de l’instance SQL Server. Par ailleurs, vous devez également supprimer les fichiers de bases de données DQS (DQS_MAIN, DQS_PROJECTS et DQS_STAGING_DATA) du dossier C:\Program Files\Microsoft SQL Server\MSSQL11.<SQL_Server_Instance>\MSSQL\DATA de votre ordinateur avant de réinstaller Data Quality Server. Sinon, l'installation de Data Quality Server échoue. Déplacez les fichiers de base de données au lieu de les supprimer si vous souhaitez conserver des données, telles que les bases de connaissances ou les projets de qualité des données. Pour plus d'informations sur la suppression des objets DQS une fois la désinstallation terminée, consultez [Supprimer les objets serveur DQS](./install/remove-data-quality-server-objects.md).  
   
 ### <a name="43-indication-of-a-terminated-knowledge-discovery-or-interactive-cleansing-activity-is-delayed"></a>4.3 Indication d'une découverte de connaissances terminée ou retard d'une activité de nettoyage interactif  
 **Problème :** si un administrateur met fin à une activité dans l’écran Analyse des activités, un utilisateur interactif exécutant la découverte des connaissances, la gestion de domaine ou une activité de nettoyage interactif ne reçoit aucune indication selon laquelle son activité est terminée tant qu’il n’a pas effectué l’opération suivante.  
@@ -578,10 +578,10 @@ Il s'agit d'une limitation de la version CTP3. Les versions ultérieures ne comp
 **Solution de contournement :** utilisez 'multisubnetfailover = true' dans la chaîne de connexion.  
   
 #### <a name="576-failure-to-create-new-availability-group-listeners-because-of-active-directory-quotas"></a>5.7.6 Échec de création des écouteurs de groupe de disponibilité en raison de quotas Active Directory  
-**Problème :** La création d'un nouvel écouteur de groupe de disponibilité peut échouer parce que vous avez atteint un quota Active Directory pour le compte d'ordinateur participant du nœud de cluster. Pour plus d'informations, consultez [Comment faire pour dépanner le compte de service de cluster lorsqu'il modifie des objets ordinateur](https://support.microsoft.com/kb/307532) et [Quotas Active Directory](https://technet.microsoft.com/library/cc904295(WS.10).aspx).  
+**Problème :** La création d'un nouvel écouteur de groupe de disponibilité peut échouer parce que vous avez atteint un quota Active Directory pour le compte d'ordinateur participant du nœud de cluster. Pour plus d'informations, consultez [Comment faire pour dépanner le compte de service de cluster lorsqu'il modifie des objets ordinateur](https://support.microsoft.com/kb/307532) et [Quotas Active Directory](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc904295(v=ws.10)).  
   
 #### <a name="577-netbios-conflicts-because-availability-group-listener-names-use-an-identical-15-character-prefix"></a>5.7.7 Conflit avec NetBIOS du fait que les noms d'écouteur de groupe de disponibilité utilisent un préfixe de 15 caractères identique  
-Si vous avez deux clusters WSFC qui sont contrôlés par le même annuaire Active Directory et que vous tentez de créer des écouteurs de groupe de disponibilité dans les deux clusters à l'aide de noms contenant plus de 15 caractères et un préfixe identique de 15 caractères, vous obtenez une erreur signalant que la ressource de nom de réseau virtuel ne peut pas être mise en ligne. Pour plus d'informations sur les règles de préfixe des noms DNS, consultez [Attribution de noms de domaine](https://technet.microsoft.com/library/cc731265(WS.10).aspx).  
+Si vous avez deux clusters WSFC qui sont contrôlés par le même annuaire Active Directory et que vous tentez de créer des écouteurs de groupe de disponibilité dans les deux clusters à l'aide de noms contenant plus de 15 caractères et un préfixe identique de 15 caractères, vous obtenez une erreur signalant que la ressource de nom de réseau virtuel ne peut pas être mise en ligne. Pour plus d'informations sur les règles de préfixe des noms DNS, consultez [Attribution de noms de domaine](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731265(v=ws.10)).  
   
 ![horizontal_bar](media/horizontal-bar.png "horizontal_bar")  
   
@@ -641,4 +641,4 @@ Problème : Quand vous essayez d’installer le Conseiller de mise à niveau sur
   
 **Solution de contournement** : Recherchez le fichier **SQLUA.msi** sur votre support SQL Server 2012 dans `\1028_CHT_LP\x64\redist\Upgrade Advisor` ou `\1028_CHT_LP\x86\redist\Upgrade Advisor`, selon l’architecture de votre système d’exploitation.  
   
-![horizontal_bar](media/horizontal-bar.png "horizontal_bar")  
+![horizontal_bar](media/horizontal-bar.png "horizontal_bar")

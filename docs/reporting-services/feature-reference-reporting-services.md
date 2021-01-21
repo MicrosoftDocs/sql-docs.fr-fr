@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 01daf21c-19c6-448d-ac30-accb54ad83da
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: ec66d95c2d9be3fde855d5b312fb1ac3882259e4
-ms.sourcegitcommit: 49ee3d388ddb52ed9cf78d42cff7797ad6d668f2
+ms.openlocfilehash: bdfab6a0dea0d1c098b5057d897f65ac88b6a748
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94384708"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596177"
 ---
 # <a name="feature-reference-reporting-services"></a>Références relatives aux fonctionnalités (Reporting Services)
   [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] contient plusieurs outils et applications qui permettent de créer, gérer et afficher des rapports. Cette section répertorie les rubriques spécifiques qui décrivent les boîtes de dialogue, les pages Web et les Assistants de ces outils et applications.  
@@ -41,6 +41,5 @@ ms.locfileid: "94384708"
  [Rapports Reporting Services &#40;SSRS&#41;](../reporting-services/reports/reporting-services-reports-ssrs.md)   
  [Jeux de données du rapport &#40;SSRS&#41;](../reporting-services/report-data/report-datasets-ssrs.md)   
  [Bien démarrer avec le Générateur de rapports](https://www.databasejournal.com/features/mssql/sql-server-report-builder-3.0.html)   
- [Conception et implémentation de rapports à l’aide du Générateur de rapports version 1.0](https://go.microsoft.com/fwlink/?LinkId=142601)  
-  
+ [Conception et implémentation de rapports à l’aide du Générateur de rapports version 1.0](/previous-versions/sql/sql-server-2008/ms159750(v=sql.100))  
   

@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 51ad69d8-fe92-4662-a7cd-d235692f0c03
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 22f5064c4d861c3f10f88ce4ff1a5727f545fb72
-ms.sourcegitcommit: fe59f8dc27fd633f5dfce54519d6f5dcea577f56
+ms.openlocfilehash: 60d621e9bb833615aaed5e6f622afb9591916037
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91934963"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597062"
 ---
 # <a name="tutorial-how-to-locate-and-start-reporting-services-tools-ssrs"></a>Tutoriel : Comment localiser et démarrer les outils Reporting Services (SSRS)
 
@@ -89,7 +89,7 @@ Avant de pouvoir ouvrir le portail web, vous devez avoir les autorisations suffi
 
 ## <a name="management-studio"></a><a name="bkmk_managements_studio"></a> Management Studio
 
-Les administrateurs du serveur de rapports peuvent utiliser [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] pour gérer le serveur de rapports en même temps que d'autres composants serveur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Pour plus d’informations, consultez le tutoriel de [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/tutorials/tutorial-sql-server-management-studio).
+Les administrateurs du serveur de rapports peuvent utiliser [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] pour gérer le serveur de rapports en même temps que d'autres composants serveur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Pour plus d’informations, consultez le tutoriel de [SQL Server Management Studio](../../ssms/quickstarts/ssms-connect-query-sql-server.md).
 
 ### <a name="to-start-sql-server-management-studio"></a>Pour démarrer SQL Server Management Studio
 
@@ -115,7 +115,7 @@ Pour créer des rapports paginés [!INCLUDE[ssNoVersion](../../includes/ssnovers
 
 Le Concepteur de rapports est disponible dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] -Visual Studio. L’aire de conception du Concepteur de rapports inclut des fenêtres avec onglets, des Assistants et des menus permettant d’accéder aux fonctionnalités de création de rapports. L’outil Concepteur de rapports devient disponible lorsque vous choisissez un projet Report Server ou un modèle de l’Assistant Report Server dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]. Pour en savoir plus, consultez [Reporting Services dans les outils de données SQL Server &#40;SSDT&#41;](../../reporting-services/tools/reporting-services-in-sql-server-data-tools-ssdt.md).
 
-Téléchargez [SQL Server Data Tools](https://go.microsoft.com/fwlink/?LinkID=616714).
+Téléchargez [SQL Server Data Tools](../../ssdt/download-sql-server-data-tools-ssdt.md).
 
 ### <a name="to-start-report-designer"></a>Pour démarrer le Concepteur de rapports
 
@@ -139,7 +139,7 @@ Pour commencer votre premier rapport, consultez [Créer un rapport de table de b
 
 Le[Générateur de rapports de SQL Server](../../reporting-services/report-builder/report-builder-in-sql-server-2016.md) est une application autonome que vous pouvez utiliser pour créer des rapports paginés en dehors de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Vous pouvez personnaliser et mettre à jour tous les rapports existants, qu’ils aient été créés dans le Concepteur de rapports ou dans des versions précédentes du [!INCLUDE[ssRBnoversion](../../includes/ssrbnoversion.md)]. Installez-le à partir du portail web de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou à partir du Centre de téléchargement Microsoft.
 
-Quand votre rapport paginé est prêt, publiez-le sur un serveur de rapports ou [enregistrez-le dans le service Power BI](https://docs.microsoft.com/power-bi/paginated-reports-save-to-power-bi-service).\
+Quand votre rapport paginé est prêt, publiez-le sur un serveur de rapports ou [enregistrez-le dans le service Power BI](/power-bi/paginated-reports-save-to-power-bi-service).\
 [Téléchargez le Générateur de rapports](https://go.microsoft.com/fwlink/?LinkID=219138) depuis le Centre de téléchargement Microsoft.
 
 ### <a name="to-start-ssrbnoversion"></a>Pour démarrer le [!INCLUDE[ssRBnoversion](../../includes/ssrbnoversion.md)]
@@ -181,7 +181,7 @@ Vous pouvez l’installer depuis le portail web de [!INCLUDE[ssNoVersion](../../
 
 [Téléchargez l’Éditeur de rapports mobiles SQL Server](https://go.microsoft.com/fwlink/?LinkID=733527)  
 [Téléchargez le Générateur de rapports](https://go.microsoft.com/fwlink/?LinkID=219138)  
-[Télécharger SQL Server Data Tools](https://go.microsoft.com/fwlink/?LinkID=616714)  
+[Télécharger SQL Server Data Tools](../../ssdt/download-sql-server-data-tools-ssdt.md)  
 [Installer le mode SharePoint de Reporting Services](../../reporting-services/install-windows/install-reporting-services-sharepoint-mode.md)  
 [Serveur de rapports Reporting Services](../../reporting-services/report-server-sharepoint/reporting-services-report-server.md)  
 [Outils de création de requêtes](../../reporting-services/report-data/query-design-tools-ssrs.md)  

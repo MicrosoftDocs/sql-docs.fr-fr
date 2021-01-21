@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: b18b025e-f4bd-4744-8f86-0ac9fb967548
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 04c220383ef14fe6bd05b690e5c27ae73b4289a4
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 3fd91a74fe64d055860c2382efeb16523685c2a3
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "79510080"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596698"
 ---
 # <a name="report-definition-language-ssrs"></a>Langage de définition de rapport (SSRS, Report Definition Language)
   Report Definition Language (RDL) est une représentation XML d’une définition de rapport [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]. Une définition de rapport contient les informations d'extraction de données et de mise en page d'un rapport. La spécification RDL est composée d’éléments XML qui sont conformes à une grammaire XML créée pour [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]. Vous pouvez ajouter vos propres fonctions personnalisées pour contrôler les valeurs, les styles et la mise en forme des éléments de rapport en accédant à des assemblys de code dans les fichiers de définition de rapport.  
@@ -37,7 +37,7 @@ ms.locfileid: "79510080"
 -   Schéma extensible et ouvert qui prend en charge des éléments personnalisés et des espaces de noms supplémentaires.  
   
 ##  <a name="rdl-specifications"></a><a name="bkmk_RDL_Specifications"></a> Spécifications RDL  
- Pour télécharger les spécifications des versions de schéma spécifiques, consultez [Report Definition Language Specification](https://go.microsoft.com/fwlink/?linkid=116865)[Spécification RDL (Report Definition Language)].  
+ Pour télécharger les spécifications des versions de schéma spécifiques, consultez [Report Definition Language Specification](/openspecs/sql_server_protocols/ms-rdl/53287204-7cd0-4bc9-a5cd-d42a5925dca1)[Spécification RDL (Report Definition Language)].  
   
 ##  <a name="rdl-xml-schema-definition"></a><a name="bkmk_RDL_XML_Schema_Definition"></a> Définition de schéma XML RDL  
  Un fichier RDL (Report Definition Language) [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] est validé à l’aide d’un fichier XSD (XML Schema Definition). Le schéma définit les règles indiquant où des éléments RDL peuvent se trouver dans un fichier .rdl. Un élément inclut son type de données et sa cardinalité, c’est-à-dire le nombre d’occurrences autorisées. Un élément peut être simple ou complexe. Un élément simple n'a pas d'éléments enfants ni d'attributs. Un élément complexe a des enfants et éventuellement des attributs.  
@@ -51,7 +51,7 @@ ms.locfileid: "79510080"
   
  [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] fournit plusieurs outils pour créer les fichiers RDL. Pour plus d’informations, consultez [Outils de Reporting Services](../../reporting-services/tools/reporting-services-tools.md).  
   
- Pour générer le langage RDL à partir d’une application, l’une des méthodes les plus simples consiste à utiliser les classes [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] de l’espace de noms <xref:System.Xml> et de l’espace de noms <xref:System.Linq>. Une classe en particulier, la classe **XmlTextWriter** , peut être utilisée pour l’écriture du langage RDL. Cette classe **XmlTextWriter**vous permet de générer intégralement une définition de rapport complète dans une application [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] . Les développeurs peuvent également étendre le langage RDL en ajoutant des éléments de rapport personnalisés avec des propriétés personnalisées. Pour plus d’informations sur la classe **XmlTextWriter** et l’espace de noms <xref:System.Xml>, consultez le Guide du développeur [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]. Pour plus d'informations sur LINQ (Language-Integrated Query), recherchez les termes « LINQ to XML » sur MSDN.  
+ Pour générer le langage RDL à partir d’une application, l’une des méthodes les plus simples consiste à utiliser les classes [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] de l’espace de noms <xref:System.Xml> et de l’espace de noms <xref:System.Linq>. Une classe en particulier, la classe **XmlTextWriter** , peut être utilisée pour l’écriture du langage RDL. Cette classe **XmlTextWriter** vous permet de générer intégralement une définition de rapport complète dans une application [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] . Les développeurs peuvent également étendre le langage RDL en ajoutant des éléments de rapport personnalisés avec des propriétés personnalisées. Pour plus d’informations sur la classe **XmlTextWriter** et l’espace de noms <xref:System.Xml>, consultez le Guide du développeur [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]. Pour plus d'informations sur LINQ (Language-Integrated Query), recherchez les termes « LINQ to XML » sur MSDN.  
   
  L'extension de fichier standard pour les fichiers de définition de rapport est .rdl. Vous pouvez également développer des fichiers de définition de rapport client, lesquels portent l'extension .rdlc. Le type MIME pour les deux extensions est text/xml. Pour plus d’informations sur les rapports, consultez [Rapports Reporting Services &#40;SSRS&#41;](../../reporting-services/reports/reporting-services-reports-ssrs.md).  
   
@@ -89,5 +89,4 @@ ms.locfileid: "79510080"
  [Rechercher la version du schéma de définition de rapport &#40;SSRS&#41;](../../reporting-services/reports/find-the-report-definition-schema-version-ssrs.md)   
  [Utilisation d'assemblys personnalisés avec des rapports](../../reporting-services/custom-assemblies/using-custom-assemblies-with-reports.md)   
  [Éléments de rapports personnalisés](../../reporting-services/custom-report-items/custom-report-items.md)  
-  
   

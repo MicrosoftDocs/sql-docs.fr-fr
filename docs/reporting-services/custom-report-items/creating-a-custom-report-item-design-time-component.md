@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 323fd58a-a462-4c48-b188-77ebc0b4212e
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 46be46e47b7e5a5028b639ecb0e74cbe19c8446a
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 237d056f8b42570fcab375330a9eb3172eb11758
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "80217005"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596963"
 ---
 # <a name="creating-a-custom-report-item-design-time-component"></a>Création d'un composant au moment de la conception d'élément de rapport personnalisé
   Un composant au moment de la conception d'élément de rapport personnalisé est un contrôle qui peut être utilisé dans l'environnement du Concepteur de rapports Visual Studio. Le composant au moment de la conception d'élément de rapport personnalisé fournit une aire de conception activée qui prend en charge les opérations de glisser-déplacer et l'intégration avec l'Explorateur de propriétés [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], tout en fournissant des éditeurs de propriété personnalisée.  
@@ -183,7 +183,7 @@ private void OnProportionalScaling(object sender, EventArgs e)
 ```  
   
 ### <a name="using-adornments"></a>Utilisation d'ornements  
- Les classes d’éléments de rapports personnalisés peuvent également implémenter une classe **Microsoft.ReportDesigner.Design.Adornment**. Un ornement permet au contrôle d'élément de rapport personnalisé de fournir des zones à l'extérieur du rectangle principal de l'aire de conception. Ces zones permettent de gérer les événements de l'interface utilisateur, tels que les clics de souris et les opérations de glisser-déplacer. La classe **Adornment** définie dans l’espace de noms [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] **Microsoft.ReportDesigner** est une implémentation directe de la classe <xref:System.Windows.Forms.Design.Behavior.Adorner> dans Windows Forms. Pour obtenir la documentation complète de la classe **Adorner**, consultez [Vue d’ensemble du service de comportement](https://go.microsoft.com/fwlink/?LinkId=116673) dans MSDN Library. Pour un exemple de code qui implémente une classe **Microsoft.ReportDesigner.Design.Adornment**, consultez [SQL Server Reporting Services Product Samples](https://go.microsoft.com/fwlink/?LinkId=177889) (Exemples Reporting Services pour le produit SQL Server).  
+ Les classes d’éléments de rapports personnalisés peuvent également implémenter une classe **Microsoft.ReportDesigner.Design.Adornment**. Un ornement permet au contrôle d'élément de rapport personnalisé de fournir des zones à l'extérieur du rectangle principal de l'aire de conception. Ces zones permettent de gérer les événements de l'interface utilisateur, tels que les clics de souris et les opérations de glisser-déplacer. La classe **Adornment** définie dans l’espace de noms [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] **Microsoft.ReportDesigner** est une implémentation directe de la classe <xref:System.Windows.Forms.Design.Behavior.Adorner> dans Windows Forms. Pour obtenir la documentation complète de la classe **Adorner**, consultez [Vue d’ensemble du service de comportement](/previous-versions/ms171826(v=vs.140)) dans MSDN Library. Pour un exemple de code qui implémente une classe **Microsoft.ReportDesigner.Design.Adornment**, consultez [SQL Server Reporting Services Product Samples](https://go.microsoft.com/fwlink/?LinkId=177889) (Exemples Reporting Services pour le produit SQL Server).  
   
  Pour plus d'informations sur la programmation et l'utilisation de Windows Forms dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], consultez les rubriques suivantes dans MSDN Library :  
   
@@ -198,5 +198,4 @@ private void OnProportionalScaling(object sender, EventArgs e)
  [Création d’un composant d’exécution d’éléments de rapport personnalisé](../../reporting-services/custom-report-items/creating-a-custom-report-item-run-time-component.md)   
  [Bibliothèques de classes d’éléments de rapports personnalisés](../../reporting-services/custom-report-items/custom-report-item-class-libraries.md)   
  [Procédure : déployer un élément de rapport personnalisé](../../reporting-services/custom-report-items/how-to-deploy-a-custom-report-item.md)  
-  
   

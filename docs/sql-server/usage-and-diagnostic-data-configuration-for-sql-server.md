@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.custom: ''
 ms.technology: configuration
-ms.openlocfilehash: 76ffe524200c2f8df136074bc089b13e7404d6bd
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 6580e33a824807312fb7f2d37d5cab893dbab2a9
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86901985"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596519"
 ---
 # <a name="configure-usage-and-diagnostic-data-collection-for-sql-server-ceip"></a>Configurer les données d’utilisation et de diagnostic pour SQL Server (CEIP)
 
@@ -50,7 +50,7 @@ Sachez que ce processus se concentre sur les mécanismes nécessaires pour offri
 - avec l’application de rapports d’erreurs et d’utilisation ;
 - en définissant des sous-clés de Registre sur le serveur.
 
-Pour SQL Server sur Linux, consultez la page [Commentaires client pour SQL Server sur Linux](https://docs.microsoft.com/sql/linux/sql-server-linux-customer-feedback).
+Pour SQL Server sur Linux, consultez la page [Commentaires client pour SQL Server sur Linux](../linux/usage-and-diagnostic-data-configuration-for-sql-server-linux.md).
 
 > [!NOTE]
 > Vous ne pouvez désactiver l’envoi d’informations à Microsoft que dans les versions payantes de SQL Server.
@@ -66,7 +66,7 @@ Pour refuser la collecte de données, consultez [Activation ou désactivation de
 Après l’installation, le paramètre de collecte de données d’utilisation et de diagnostic des instances et composants de SQL Server peut être modifié au moyen de l’application de rapports d’erreurs et d’utilisation. Cette application est disponible dans le cadre de l’installation de SQL Server. Cet outil permet à chaque instance de SQL Server de configurer son propre paramètre de rapports d’utilisation.
 
 > [!NOTE]
-> L’application de rapports d’erreurs et d’utilisation est listée sous les outils de configuration de SQL Server. Vous pouvez utiliser cet outil pour gérer votre préférence en matière de rapports d’erreurs et de collecte de données d’utilisation et de diagnostic de la même manière que dans SQL Server 2017. Les rapports d’erreurs sont distincts de la collecte de données d’utilisation et de diagnostic ; par conséquent, ils peuvent être activés ou désactivés indépendamment de la collecte de données d’utilisation et de diagnostic sur l’utilisation. Les rapports d’erreurs recueillent les vidages sur incident envoyés à Microsoft, susceptibles de contenir des informations sensibles selon la [déclaration de confidentialité](https://go.microsoft.com/fwlink/?LinkID=868444).
+> L’application de rapports d’erreurs et d’utilisation est listée sous les outils de configuration de SQL Server. Vous pouvez utiliser cet outil pour gérer votre préférence en matière de rapports d’erreurs et de collecte de données d’utilisation et de diagnostic de la même manière que dans SQL Server 2017. Les rapports d’erreurs sont distincts de la collecte de données d’utilisation et de diagnostic ; par conséquent, ils peuvent être activés ou désactivés indépendamment de la collecte de données d’utilisation et de diagnostic sur l’utilisation. Les rapports d’erreurs recueillent les vidages sur incident envoyés à Microsoft, susceptibles de contenir des informations sensibles selon la [déclaration de confidentialité](./sql-server-privacy.md).
 
 Pour lancer la création de rapports d’erreurs et d’utilisation de SQL Server, cliquez ou appuyez sur **Démarrer**, puis recherchez « Erreur » dans la zone de recherche. L’élément Rapports d’erreurs et d’utilisation de SQL Server s’affiche. Quand vous aurez lancé l’outil, vous pourrez gérer les données d’utilisation et de diagnostic ainsi que les erreurs graves collectés pour des instances et des composants installés sur cet ordinateur.
 
@@ -144,7 +144,7 @@ La procédure pour activer ou désactiver cette fonctionnalité dépend de la ve
  
 - Windows Server 2016 et Windows 10
 
-    [Configurer les données de diagnostic Windows dans votre organisation](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
+    [Configurer les données de diagnostic Windows dans votre organisation](/windows/privacy/configure-windows-diagnostic-data-in-your-organization)
 - Windows Server 2008 R2 et Windows 7
 
     [Paramètres des Rapports d’erreurs Windows](/windows/desktop/wer/wer-settings)

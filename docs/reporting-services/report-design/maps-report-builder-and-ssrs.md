@@ -16,12 +16,12 @@ f1_keywords:
 ms.assetid: b5e9ef21-11b7-4ed2-838e-d8eecdb5c5f0
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 9e6dde5a520b845cac47fbfd3c4820d35958c9ba
-ms.sourcegitcommit: ea0bf89617e11afe85ad85309e0ec731ed265583
+ms.openlocfilehash: a88bd03c8dd4b545fdadf3bd809f9ce64191db79
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92907257"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596793"
 ---
 # <a name="maps-report-builder-and-ssrs"></a>Cartes (Générateur de rapports et SSRS)
   Pour visualiser des données métier sur un arrière-plan géographique, vous pouvez ajouter une carte à votre rapport paginé [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] . Le type de carte que vous sélectionnez dépend des informations que vous souhaitez communiquer dans votre rapport. Vous pouvez ajouter une carte qui affiche uniquement des emplacements géographiques, ou une carte à bulles dans laquelle la taille des bulles varie en fonction du nombre de ménages habitant dans une zone, ou une carte à marqueurs faisant varier le style de marqueur en fonction du produit ayant le plus gros chiffre d'affaires pour chaque magasin, ou encore une carte linéaire pour afficher des itinéraires entre des magasins.  
@@ -58,7 +58,7 @@ ms.locfileid: "92907257"
  Pour visualiser des données sur une carte, les données analytiques et les données spatiales doivent être en relation. Lorsque les données spatiales et les données analytiques proviennent de la même source, la relation est connue. Lorsqu'elles proviennent de sources différentes, vous devez spécifier des champs de correspondance pour les mettre en relation.  
   
 ### <a name="spatial-data"></a>Données spatiales  
- Les données spatiales consistent en des jeux de coordonnées. Les données spatiales d'une source de données peuvent être un point unique, plusieurs points, une ligne unique, plusieurs lignes ou un jeu de polygones. Chaque jeu de coordonnées définit un *élément cartographique* , par exemple un polygone représentant la carte d'un district, une ligne représentant une route ou un point représentant l'emplacement d'une ville.  
+ Les données spatiales consistent en des jeux de coordonnées. Les données spatiales d'une source de données peuvent être un point unique, plusieurs points, une ligne unique, plusieurs lignes ou un jeu de polygones. Chaque jeu de coordonnées définit un *élément cartographique*, par exemple un polygone représentant la carte d'un district, une ligne représentant une route ou un point représentant l'emplacement d'une ville.  
   
  Les données spatiales sont basées sur l'un des systèmes de coordonnées suivants :  
   
@@ -89,9 +89,9 @@ ms.locfileid: "92907257"
   
 -   **Données incorporées.** Les exemples de données sont récupérés d'éléments cartographiques incorporés dans les couches de votre rapport.  
   
--   **Lien à un fichier de forme ESRI.** Si le fichier de forme ESRI (.shp) et le fichier de support (.dbf) sont disponibles, les exemples de données sont chargés à partir du fichier de forme. Dans le cas contraire, le processeur de rapports génère les exemples de données et affiche le message **Absence de données spatiales disponibles** .  
+-   **Lien à un fichier de forme ESRI.** Si le fichier de forme ESRI (.shp) et le fichier de support (.dbf) sont disponibles, les exemples de données sont chargés à partir du fichier de forme. Dans le cas contraire, le processeur de rapports génère les exemples de données et affiche le message **Absence de données spatiales disponibles**.  
   
--   **Données spatiales SQL Server.** Si la source de données est disponible et que les informations d'identification sont valides, les exemples de données sont chargés à partir des données spatiales dans la base de données. Dans le cas contraire, le processeur de rapports génère les exemples de données et affiche le message **Absence de données spatiales disponibles** .  
+-   **Données spatiales SQL Server.** Si la source de données est disponible et que les informations d'identification sont valides, les exemples de données sont chargés à partir des données spatiales dans la base de données. Dans le cas contraire, le processeur de rapports génère les exemples de données et affiche le message **Absence de données spatiales disponibles**.  
   
 #### <a name="embedding-spatial-data-in-the-report-definition"></a>Données spatiales incorporées dans la définition de rapport  
  Contrairement aux données analytiques, vous avez l'option d'incorporer des données spatiales pour une couche dans la définition de rapport. Lorsque vous incorporez des données spatiales, vous incorporez des éléments cartographiques utilisés dans la couche.  
@@ -115,7 +115,7 @@ ms.locfileid: "92907257"
  Quand vous spécifiez des règles pour une couche et que vous sélectionnez le champ de données analytiques, si le type de données est numérique, le processeur de rapports utilise automatiquement la fonction par défaut Sum pour calculer des valeurs agrégées pour l’élément cartographique. Si le champ n’est pas numérique, aucune fonction d’agrégation n’est spécifiée et la fonction d’agrégation First implicite est utilisée. Pour modifier l'expression par défaut, modifiez les options des règles de cette couche. Pour plus d’informations, consultez [Modifier l’affichage des polygones, des lignes et des points à l’aide de règles et de données analytiques &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data.md).  
   
 ### <a name="match-fields"></a>Champs de correspondance  
- Pour mettre en relation des données analytiques avec des éléments cartographiques d'une couche, vous devez spécifier des *champs de correspondance* . Les champs de correspondance sont utilisés pour générer une relation entre les éléments cartographiques et les données analytiques. Vous pouvez utiliser un ou plusieurs champs pour la correspondance, à condition qu'ils spécifient une valeur analytique unique pour chaque emplacement spatial.  
+ Pour mettre en relation des données analytiques avec des éléments cartographiques d'une couche, vous devez spécifier des *champs de correspondance*. Les champs de correspondance sont utilisés pour générer une relation entre les éléments cartographiques et les données analytiques. Vous pouvez utiliser un ou plusieurs champs pour la correspondance, à condition qu'ils spécifient une valeur analytique unique pour chaque emplacement spatial.  
   
  Par exemple, les données suivantes sont requises pour une carte à bulles qui fait varier la taille des bulles en fonction de la population des villes :  
   
@@ -143,7 +143,7 @@ ms.locfileid: "92907257"
  ![rs_MapViewport](../../reporting-services/report-design/media/rs-mapviewport.gif "rs_MapViewport")  
   
 ##  <a name="adding-a-bing-map-tiles-layer"></a><a name="TileLayer"></a> Ajout d'une couche de mosaïques Bing  
- Vous pouvez ajouter une couche de mosaïques Bing offrant un arrière-plan géographique à la vue cartographique active telle que définie par la fenêtre d'affichage. Pour ajouter une couche de mosaïques, vous devez spécifier le système de coordonnées **Géographique** et le type de projection **Mercator** . Les mosaïques qui correspondent au centre de la fenêtre d'affichage et au niveau de zoom que vous sélectionnez sont récupérées automatiquement des services Web Bing Maps.  
+ Vous pouvez ajouter une couche de mosaïques Bing offrant un arrière-plan géographique à la vue cartographique active telle que définie par la fenêtre d'affichage. Pour ajouter une couche de mosaïques, vous devez spécifier le système de coordonnées **Géographique** et le type de projection **Mercator**. Les mosaïques qui correspondent au centre de la fenêtre d'affichage et au niveau de zoom que vous sélectionnez sont récupérées automatiquement des services Web Bing Maps.  
   
  Vous pouvez personnaliser la couche en spécifiant les options suivantes :  
   
@@ -161,7 +161,7 @@ ms.locfileid: "92907257"
   
  Pour obtenir des instructions détaillées, consultez [Ajouter, modifier ou supprimer une carte ou une couche &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/add-change-or-delete-a-map-or-map-layer-report-builder-and-ssrs.md).  
   
- Pour plus d'informations sur les mosaïques, consultez [Système de mosaïques Bing Maps](https://go.microsoft.com/fwlink/?linkid=147315)(éventuellement en anglais). Pour plus d'informations sur l'utilisation de mosaïques Bing dans votre rapport, consultez [Conditions supplémentaires d'utilisation](https://go.microsoft.com/fwlink/?LinkId=151371).  
+ Pour plus d'informations sur les mosaïques, consultez [Système de mosaïques Bing Maps](/bingmaps/articles/bing-maps-tile-system)(éventuellement en anglais). Pour plus d'informations sur l'utilisation de mosaïques Bing dans votre rapport, consultez [Conditions supplémentaires d'utilisation](https://go.microsoft.com/fwlink/?LinkId=151371).  
   
 ##  <a name="understanding-map-layers-and-map-elements"></a><a name="MapLayers"></a> Fonctionnement des couches et des éléments cartographiques  
  Une carte peut avoir plusieurs couches. Il existe trois types de couches. Chaque couche affiche un type de données spatiales :  
@@ -195,7 +195,7 @@ ms.locfileid: "92907257"
   
 3.  **Règles de couleur, règles de taille, règles de largeur et règles de type de marqueur.** Les règles appliquent des propriétés à une couche lorsque la couche contient des éléments cartographiques en relation avec des données analytiques. Le type de règle varie selon le type de couche. Par exemple, utilisez des règles de taille de point pour faire varier la taille des bulles en fonction de la population.  
   
-4.  **Option de remplacement pour les propriétés des polygones, lignes ou points incorporés** . Pour les éléments cartographiques incorporés, vous pouvez sélectionner l'option de remplacement et modifier une propriété ou une valeur de données. Toute modification effectuée pour remplacer des règles pour des éléments individuels est irréversible. Par exemple, vous pouvez mettre en évidence un magasin spécifique à l'aide d'un marqueur de punaise.  
+4.  **Option de remplacement pour les propriétés des polygones, lignes ou points incorporés**. Pour les éléments cartographiques incorporés, vous pouvez sélectionner l'option de remplacement et modifier une propriété ou une valeur de données. Toute modification effectuée pour remplacer des règles pour des éléments individuels est irréversible. Par exemple, vous pouvez mettre en évidence un magasin spécifique à l'aide d'un marqueur de punaise.  
   
  Pour plus d’informations, consultez [Modifier l’affichage des polygones, des lignes et des points à l’aide de règles et de données analytiques &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/vary-polygon-line-and-point-display-by-rules-and-analytical-data.md).  
   
@@ -252,5 +252,4 @@ ms.locfileid: "92907257"
  [Ajouter des emplacements personnalisés à une carte &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/add-custom-locations-to-a-map-report-builder-and-ssrs.md)  
   
  [Résoudre les problèmes liés aux rapports : rapports cartographiques &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/troubleshoot-reports-map-reports-report-builder-and-ssrs.md)  
-  
   

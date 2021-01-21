@@ -9,12 +9,12 @@ author: garyericson
 ms.author: garye
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 9db282708c8f2e9bbd4ee44d45bac0b0d25dc5b9
-ms.sourcegitcommit: 8a8c89b0ff6d6dfb8554b92187aca1bf0f8bcc07
+ms.openlocfilehash: bdd8189559bc3de1659e4874f80f8862dc341b1d
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97617558"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596282"
 ---
 # <a name="install-r-packages-with-sqlmlutils"></a>Installer des packages R avec sqlmlutils
 
@@ -45,7 +45,7 @@ Cet article explique comment utiliser les fonctions du package [**sqlmlutils**](
    , @script = N'print(R.version)'
   ```
 
-- Installez [Azure Data Studio](../../azure-data-studio/what-is.md) sur l’ordinateur client que vous utilisez pour vous connecter à SQL Server. Vous pouvez utiliser d’autres outils de gestion de base de données ou de requête, mais cet article part du principe que vous utilisez Azure Data Studio.
+- Installez [Azure Data Studio](../../azure-data-studio/what-is-azure-data-studio.md) sur l’ordinateur client que vous utilisez pour vous connecter à SQL Server. Vous pouvez utiliser d’autres outils de gestion de base de données ou de requête, mais cet article part du principe que vous utilisez Azure Data Studio.
 
 ### <a name="other-considerations"></a>Autres considérations
 

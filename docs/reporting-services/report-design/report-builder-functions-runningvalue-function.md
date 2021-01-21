@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 6bee2f15-0e69-49c8-9689-b04544063b1d
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 053efc8ddd1f9f00c528c626aa204d612cb82369
-ms.sourcegitcommit: 02b22274da4a103760a376c4ddf26c4829018454
+ms.openlocfilehash: 75b25a7cb08a7473e6a725a841e53011c6967756
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "84681278"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596023"
 ---
 # <a name="report-builder-functions---runningvalue-function"></a>Fonctions du Générateur de rapports - RunningValue
   Retourne un agrégat cumulé de toutes les valeurs numériques non Null spécifiées par l'expression, évaluée pour l'étendue donnée.  
@@ -34,7 +34,7 @@ RunningValue(expression, function, scope)
  Expression sur laquelle effectuer l’agrégation, par exemple `[Quantity]`.  
   
  *function*  
- (**Enum**) Nom de la fonction d’agrégation à appliquer à l’expression, par exemple **Sum**. Cette fonction ne peut pas être de type **RunningValue**, **RowNumber**ou **Aggregate**.  
+ (**Enum**) Nom de la fonction d’agrégation à appliquer à l’expression, par exemple **Sum**. Cette fonction ne peut pas être de type **RunningValue**, **RowNumber** ou **Aggregate**.  
   
  *scope*  
  (**String**) Constante de chaîne qui représente le nom d’un dataset, d’une région de données ou d’un groupe, ou Null (**Nothing** en [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]), qui spécifie le contexte dans lequel évaluer l’agrégation. **Nothing** spécifie le contexte le plus à l'extérieur, habituellement le dataset du rapport.  
@@ -47,7 +47,7 @@ RunningValue(expression, function, scope)
   
  **RunningValue** ne peut pas être utilisé dans une expression de filtre ou de tri.  
   
- Le jeu des données pour lequel la valeur d'exécution est calculée doit avoir le même type de données. Pour convertir des données qui ont plusieurs types de données numériques en un même type de données, utilisez des fonctions de conversion telles que **CInt**, **CDbl** ou **CDec**. Pour plus d'informations, consultez [Fonctions de conversion de types de données](https://go.microsoft.com/fwlink/?LinkId=96142).  
+ Le jeu des données pour lequel la valeur d'exécution est calculée doit avoir le même type de données. Pour convertir des données qui ont plusieurs types de données numériques en un même type de données, utilisez des fonctions de conversion telles que **CInt**, **CDbl** ou **CDec**. Pour plus d'informations, consultez [Fonctions de conversion de types de données](/dotnet/visual-basic/language-reference/functions/type-conversion-functions).  
   
  *Scope* ne peut pas être une expression.  
   
@@ -57,7 +57,7 @@ RunningValue(expression, function, scope)
   
 -   Le paramètre Scope des agrégats imbriqués ne peut pas être le nom d'un dataset.  
   
--   *Expression* ne doit pas contenir les fonctions **First**, **Last**, **Previous**ou **RunningValue** .  
+-   *Expression* ne doit pas contenir les fonctions **First**, **Last**, **Previous** ou **RunningValue** .  
   
 -   *Expression* ne doit pas contenir les agrégats imbriqués qui spécifient *recursive*.  
   
@@ -91,5 +91,4 @@ RunningValue(expression, function, scope)
  [Exemples d’expressions &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/expression-examples-report-builder-and-ssrs.md)   
  [Types de données dans les expressions &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs.md)   
  [Étendue des expressions pour les totaux, les agrégats et les collections intégrées &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/expression-scope-for-totals-aggregates-and-built-in-collections.md)  
-  
   

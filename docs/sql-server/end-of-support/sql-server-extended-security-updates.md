@@ -10,12 +10,12 @@ author: cawrites
 ms.author: chadam
 ms.reviewer: pmasl
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 94939adb2934e16ed7d1c81c33ebab4631c4b114
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: aa8d71f36b4dbb0c8ddaaac3c47571d29c3896c0
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172511"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98595473"
 ---
 # <a name="what-are-extended-security-updates-for-sql-server"></a>Que sont les correctifs de sécurité étendus pour SQL Server ?
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
@@ -353,7 +353,7 @@ Pour obtenir des conseils sur la façon d’optimiser les performances de [!INCL
 ## <a name="see-also"></a>Voir aussi
 
 - [Page de cycle de vie de SQL Server 2008 / 2008 R2](https://support.microsoft.com/lifecycle/search?alpha=sql%20server%202008)
-- [Page de fin du support SQL Server 2008 / 2008 R2 ](https://aka.ms/sqleos)
+- [Page de fin du support SQL Server 2008 / 2008 R2 ](./sql-server-end-of-life-overview.md?WT.mc_id=akamseos)
 - [Forum aux questions (FAQ) sur les correctifs de sécurité étendus](https://aka.ms/sqleosfaq)
 - [Centre de réponse aux problèmes de sécurité Microsoft (MSRC)](https://portal.msrc.microsoft.com/security-guidance/summary)
 - [Gérer les mises à jour Windows à l’aide d’Azure Automation](/azure/automation/update-management/overview)
@@ -362,4 +362,3 @@ Pour obtenir des conseils sur la façon d’optimiser les performances de [!INCL
 - [Migration Azure : options lift-and-shift pour déplacer votre SQL Server 2008 / 2008 R2 actuel vers une machine virtuelle Azure](https://azure.microsoft.com/services/azure-migrate/)
 - [Infrastructure d’adoption du cloud pour la migration SQL](/azure/cloud-adoption-framework/migrate/expanded-scope/sql-migration)
 - [Scripts relatifs aux ESU sur GitHub](https://github.com/microsoft/sql-server-samples/tree/master/samples/manage/sql-server-extended-security-updates/scripts)
-

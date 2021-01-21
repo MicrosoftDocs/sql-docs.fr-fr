@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a655225d-8c54-4b30-95fd-31f588167899
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a59216090f680492bf41aec72711c2e38f62034d
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: a2ed61eb89deb29b22f82f39de4091f65be43cea
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642905"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98595323"
 ---
 # <a name="before-installing-failover-clustering"></a>Avant l'installation du clustering de basculement
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -34,19 +34,19 @@ ms.locfileid: "97642905"
 |Décrit les concepts de clustering de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] et fournit des liens vers les contenus et tâches associés.|[Instances de cluster de basculement Always On &#40;SQL Server&#41;](../../../sql-server/failover-clusters/windows/always-on-failover-cluster-instances-sql-server.md)|  
 |Décrit les concepts de stratégie de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] et fournit des liens pour la configuration de la stratégie de basculement selon les besoins de votre organisation.|[Failover Policy for Failover Cluster Instances](../../../sql-server/failover-clusters/windows/failover-policy-for-failover-cluster-instances.md)|  
 |Décrit comment gérer votre cluster de basculement existant [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] .|[Administration et maintenance de l'instance de cluster de basculement](../../../sql-server/failover-clusters/windows/failover-cluster-instance-administration-and-maintenance.md)|  
-|Explique comment installer [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] sur un cluster de basculement Windows Server (WSFC).|[Procédure : mettre en cluster SQL Server Analysis Services](https://go.microsoft.com/fwlink/p/?LinkId=396548)|  
+|Explique comment installer [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] sur un cluster de basculement Windows Server (WSFC).|[Procédure : mettre en cluster SQL Server Analysis Services](/previous-versions/sql/sql-server-2012/dn736073(v=msdn.10))|  
   
  
   
 ##  <a name="best-practices"></a><a name="BestPractices"></a> Bonnes pratiques  
   
--   Passez en revue les [Notes de publication](https://go.microsoft.com/fwlink/?LinkId=296445) de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]  
+-   Passez en revue les [Notes de publication](/previous-versions/sql/sql-server-15/dn169381(v=sql.15)) de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]  
   
 -   Installez les logiciels requis. Avant d'exécuter l'installation ou la mise à niveau vers [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)], installez les composants requis suivants pour réduire la durée d'installation. Vous pouvez installer les logiciels requis sur chaque nœud de cluster de basculement, puis redémarrer les nœuds une fois avant d'exécuter le programme d'installation.  
   
     -   Windows PowerShell n'est plus installé par le programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Windows PowerShell est un composant requis pour l’installation des composants du [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)][!INCLUDE[ssDE](../../../includes/ssde-md.md)] et de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)]. Si Windows PowerShell n’est pas présent sur votre ordinateur, vous pouvez l’activer en suivant les instructions de la page [Windows Management Framework](https://go.microsoft.com/fwlink/?LinkId=186214) .  
   
-    -   Le .NET Framework 3.5 SP1 n'est plus installé par le programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], mais il peut être requis lors de l'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sur des systèmes d'exploitation Windows plus anciens. Pour plus d’informations, consultez les [notes de publication](https://go.microsoft.com/fwlink/?LinkId=296445) de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+    -   Le .NET Framework 3.5 SP1 n'est plus installé par le programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], mais il peut être requis lors de l'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sur des systèmes d'exploitation Windows plus anciens. Pour plus d’informations, consultez les [notes de publication](/previous-versions/sql/sql-server-15/dn169381(v=sql.15)) de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
   
     -   **Mise à jour [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Update :** Pour éviter le redémarrage de l'ordinateur suite à l'installation de .NET Framework 4 pendant l'installation, le programme d'installation [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] requiert l'installation de [!INCLUDE[msCoName](../../../includes/msconame-md.md)] sur l'ordinateur.  Si vous installez [!INCLUDE[ssSQL14](../../../includes/sssql14-md.md)] sur Windows 7 SP1 ou [!INCLUDE[firstref_longhorn](../../../includes/firstref-longhorn-md.md)] SP2, cette mise à jour est incluse. Si vous installez sur un système d'exploitation Windows plus ancien, vous pouvez la télécharger à partir de la [Mise à niveau Microsoft pour le .NET Framework 4.0 sur Windows Vista et Windows Server 2008](https://go.microsoft.com/fwlink/?LinkId=198093).  
   
@@ -54,7 +54,7 @@ ms.locfileid: "97642905"
   
     -   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Vous pouvez installer ces fichiers en exécutant SqlSupport.msi qui se trouve sur le support d'installation de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] .  
   
--   Vérifiez qu'aucun logiciel antivirus n'est installé sur votre cluster WSFC. Pour plus d’informations, consultez l’article [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Le logiciel antivirus peut être à l’origine de problèmes avec les services de cluster [de la Base de connaissances](https://go.microsoft.com/fwlink/?LinkId=116986).  
+-   Vérifiez qu'aucun logiciel antivirus n'est installé sur votre cluster WSFC. Pour plus d’informations, consultez l’article [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Le logiciel antivirus peut être à l’origine de problèmes avec les services de cluster [de la Base de connaissances](/troubleshoot/windows-server/high-availability/not-cluster-aware-antivirus-software-cause-issue).  
   
 -   Lorsque vous nommez un groupe de clusters pour votre installation de clusters de basculement, vous ne devez pas utiliser les caractères suivants dans le nom du groupe de clusters :  
   
@@ -86,7 +86,7 @@ ms.locfileid: "97642905"
   
 -   Si la solution de cluster inclut des nœuds de cluster dispersés géographiquement, il est important de vérifier d'autres éléments, tels que la prise en charge de disques partagés et le temps de réponse du réseau.  
   
-    -   Pour plus d'informations sur [!INCLUDE[firstref_longhorn](../../../includes/firstref-longhorn-md.md)] et [!INCLUDE[winserver2008r2](../../../includes/winserver2008r2-md.md)], consultez [Validation matérielle d’un cluster de basculement](https://go.microsoft.com/fwlink/?LinkId=196817) et [Politique de prise en charge pour les clusters de basculement Windows](https://go.microsoft.com/fwlink/?LinkId=196818).  
+    -   Pour plus d'informations sur [!INCLUDE[firstref_longhorn](../../../includes/firstref-longhorn-md.md)] et [!INCLUDE[winserver2008r2](../../../includes/winserver2008r2-md.md)], consultez [Validation matérielle d’un cluster de basculement](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732035(v=ws.10)) et [Politique de prise en charge pour les clusters de basculement Windows](https://go.microsoft.com/fwlink/?LinkId=196818).  
   
 -   Vérifiez que le disque sur lequel [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] doit être installé n'est pas compressé ni chiffré. Si vous tentez d'installer [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sur un lecteur compressé ou chiffré, l'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] échoue.  
   
@@ -116,13 +116,13 @@ ms.locfileid: "97642905"
   
     -   Le formatage d'un lecteur après montage de lecteurs supplémentaires n'est pas pris en charge.  
   
--   L'installation du cluster de basculement[!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] prend en charge uniquement le disque local pour l'installation des fichiers tempdb. Assurez-vous que le chemin d'accès spécifié pour les données tempdb et les fichiers journaux sont valides sur tous les nœuds du cluster. Pendant le basculement, si les répertoires tempdb ne sont pas disponibles sur le nœud de basculement cible, la ressource [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ne sera pas en ligne. Pour plus d’informations, consultez [Types de stockage pour les fichiers de données](../../../sql-server/install/hardware-and-software-requirements-for-installing-sql-server.md#StorageTypes) et [Configuration du moteur de base de données – Répertoires de données](https://msdn.microsoft.com/library/9b1fa0fc-623b-479a-afc3-4f13bd850487).  
+-   L'installation du cluster de basculement[!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] prend en charge uniquement le disque local pour l'installation des fichiers tempdb. Assurez-vous que le chemin d'accès spécifié pour les données tempdb et les fichiers journaux sont valides sur tous les nœuds du cluster. Pendant le basculement, si les répertoires tempdb ne sont pas disponibles sur le nœud de basculement cible, la ressource [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ne sera pas en ligne. Pour plus d’informations, consultez [Types de stockage pour les fichiers de données](../../../sql-server/install/hardware-and-software-requirements-for-installing-sql-server.md#StorageTypes) et [Configuration du moteur de base de données – Répertoires de données](../../../database-engine/install-windows/install-sql-server.md).  
   
--   Si vous déployez un cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sur des composants de la technologie iSCSI, nous vous recommandons de prendre les précautions qui s'imposent. Pour plus d'informations, consultez [Prise en charge de SQL Server sur des composants de la technologie iSCSI](https://go.microsoft.com/fwlink/?LinkId=116960).  
+-   Si vous déployez un cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sur des composants de la technologie iSCSI, nous vous recommandons de prendre les précautions qui s'imposent. Pour plus d'informations, consultez [Prise en charge de SQL Server sur des composants de la technologie iSCSI](/troubleshoot/sql/admin/support-iscsi-technology-components).  
   
--   Pour plus d'informations, consultez [Politique de prise en charge SQL Server pour le clustering Microsoft](https://go.microsoft.com/fwlink/?LinkId=116958).  
+-   Pour plus d'informations, consultez [Politique de prise en charge SQL Server pour le clustering Microsoft](/troubleshoot/sql/failover-clusters/support-policy-clustered-configurations).  
   
--   Pour plus d'informations sur la configuration appropriée d'un lecteur quorum, consultez [Informations concernant la configuration d'un lecteur quorum](https://go.microsoft.com/fwlink/?LinkId=196816).  
+-   Pour plus d'informations sur la configuration appropriée d'un lecteur quorum, consultez [Informations concernant la configuration d'un lecteur quorum](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770620(v=ws.10)).  
   
 -   Pour installer un cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] lorsque les fichiers d'installation [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sources et le cluster se trouvent dans des domaines différents, copiez les fichiers d'installation sur le domaine actuellement disponible sur le cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] .  
   
@@ -224,7 +224,7 @@ ms.locfileid: "97642905"
      Si vous décidez d'utiliser plusieurs adresses IP configurées pour le même sous-réseau, vous pouvez rencontrer des échecs de connexion client au démarrage de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] .  
   
 #### <a name="related-content"></a>Contenu associé  
- Pour plus d’informations sur le basculement multisite [!INCLUDE[winserver2008r2](../../../includes/winserver2008r2-md.md)] , consultez [Site de clustering de basculement Windows Server 2008 R2](https://technet.microsoft.com/library/ff182338\(v=WS.10\).aspx) et [Concevoir un service ou une application en cluster dans un clustering de basculement multisite](https://go.microsoft.com/fwlink/?LinkId=177873).  
+ Pour plus d’informations sur le basculement multisite [!INCLUDE[winserver2008r2](../../../includes/winserver2008r2-md.md)] , consultez [Site de clustering de basculement Windows Server 2008 R2](https://technet.microsoft.com/library/ff182338\(v=WS.10\).aspx) et [Concevoir un service ou une application en cluster dans un clustering de basculement multisite](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd197430(v=ws.10)).  
   
 ##  <a name="configure-windows-server-failover-cluster"></a><a name="WSFC"></a> Configurer le cluster de basculement Windows Server  
   
@@ -262,5 +262,3 @@ ms.locfileid: "97642905"
  [Paramètres de l'outil d'analyse de configuration système](../../../database-engine/install-windows/check-parameters-for-the-system-configuration-checker.md)   
  [Administration et maintenance de l'instance de cluster de basculement](../../../sql-server/failover-clusters/windows/failover-cluster-instance-administration-and-maintenance.md)  
   
-  
-

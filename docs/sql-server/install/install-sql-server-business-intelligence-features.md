@@ -11,12 +11,12 @@ ms.assetid: 67399b24-e48a-49f3-9dd4-32d78c6a2ece
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.openlocfilehash: e901d6dd36709994c056eaa5ef159303d49c00f1
-ms.sourcegitcommit: 3ec49252e82590de0fe559a8574606ae213f6f3b
+ms.openlocfilehash: 80cc5f0c7500d5308388f440ede0e6171e9fd840
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975499"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597360"
 ---
 # <a name="install-sql-server-business-intelligence-features"></a>Installer les fonctionnalités Business Intelligence de SQL Server
 
@@ -29,9 +29,9 @@ ms.locfileid: "97975499"
 ## <a name="sql-server-bi-features"></a>Fonctionnalités BI de SQL Server  
  Toutes les fonctionnalités de SQL Server sont installées par le programme d’installation de SQL Server, notamment les composants BI. Les liens suivants fournissent des informations supplémentaires spécifiques à chaque fonctionnalité BI.  
   
--   [Installer Analysis Services](https://docs.microsoft.com/analysis-services/instances/install-windows/install-analysis-services)  
+-   [Installer Analysis Services](/analysis-services/instances/install-windows/install-analysis-services)  
   
--   [Installation d’Analysis Services en mode Power Pivot](https://docs.microsoft.com/analysis-services/instances/install-windows/install-analysis-services-in-power-pivot-mode)  
+-   [Installation d’Analysis Services en mode Power Pivot](/analysis-services/instances/install-windows/install-analysis-services-in-power-pivot-mode)  
   
 -   [Installer Data Quality Services](../../data-quality-services/install-windows/install-data-quality-services.md)  
   
@@ -44,14 +44,13 @@ ms.locfileid: "97975499"
 -   [Installer le mode SharePoint de Reporting Services](../../reporting-services/install-windows/install-reporting-services-sharepoint-mode.md)  
 
 > [!NOTE]
-> SQL Server Data Tools (SSDT) n’est pas inclus avec SQL Server 2016. [Téléchargez SQL Server Data Tools](https://go.microsoft.com/fwlink/?LinkID=616714).
+> SQL Server Data Tools (SSDT) n’est pas inclus avec SQL Server 2016. [Téléchargez SQL Server Data Tools](../../ssdt/download-sql-server-data-tools-ssdt.md).
   
 ## <a name="see-also"></a>Voir aussi  
- [Nouveautés de Reporting Services &#40;SSRS&#41;](https://msdn.microsoft.com/bc909063-6b84-4b3a-80d2-e93fc04b4b9d)   
- [Nouveautés d’Analysis Services](https://docs.microsoft.com/analysis-services/what-s-new-in-analysis-services)   
+ [Nouveautés de Reporting Services &#40;SSRS&#41;](../../reporting-services/what-s-new-in-sql-server-reporting-services-ssrs.md)   
+ [Nouveautés d’Analysis Services](/analysis-services/what-s-new-in-analysis-services)   
  [Nouveautés d’Integration Services](../../integration-services/what-s-new-in-integration-services-in-sql-server-2016.md)   
  [Nouveautés de Master Data Services &#40;MDS&#41;](../../master-data-services/what-s-new-in-master-data-services-mds.md)   
  [Installer SQL Server](../../database-engine/install-windows/install-sql-server.md)   
  [Mise à niveau vers SQL Server](../../database-engine/install-windows/upgrade-sql-server.md)  
-  
   

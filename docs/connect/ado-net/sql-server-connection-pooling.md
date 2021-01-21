@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: a878d8250a3e402cd1043dc289eb1712af45f385
-ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
+ms.openlocfilehash: 9538368cdcc39d3a037c609fc79f65d5d3cb8e45
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2020
-ms.locfileid: "97771526"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596384"
 ---
 # <a name="sql-server-connection-pooling-adonet"></a>Regroupement de connexions SQL Server (ADO.NET)
 
@@ -73,7 +73,7 @@ Le dispositif de regroupement de connexions répond à ces requêtes de connexio
 > [!NOTE]
 > N'appelez pas une commande `Close` ou `Dispose` sur une `Connection`, un `DataReader` ou tout autre objet managé dans la méthode `Finalize` de votre classe. Dans un finaliseur, libérez seulement les ressources non managées que votre classe possède directement. Si votre classe ne possède pas de ressource non managée, n'incluez pas une méthode `Finalize` dans la définition de classe. Pour plus d’informations, consultez [Nettoyage de la mémoire](/dotnet/standard/garbage-collection/index).
 
-Pour plus d’informations sur les événements associés aux connexions d’ouverture et de fermeture, consultez [Auditer la classe d'événements de connexions](/sql/relational-databases/event-classes/audit-login-event-class) et [Auditer la classe d'événements de déconnexion](/sql/relational-databases/event-classes/audit-logout-event-class) dans la documentation SQL Server.
+Pour plus d’informations sur les événements associés aux connexions d’ouverture et de fermeture, consultez [Auditer la classe d'événements de connexions](../../relational-databases/event-classes/audit-login-event-class.md) et [Auditer la classe d'événements de déconnexion](../../relational-databases/event-classes/audit-logout-event-class.md) dans la documentation SQL Server.
 
 ## <a name="remove-connections"></a>Supprimer les connexions
 

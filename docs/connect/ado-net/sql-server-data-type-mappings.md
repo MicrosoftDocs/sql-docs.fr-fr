@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-chmalh
-ms.openlocfilehash: 3cf6d932a3f458e971d827c1ca4c493c298c2241
-ms.sourcegitcommit: c938c12cf157962a5541347fcfae57588b90d929
+ms.openlocfilehash: 3530dbd4601092018185d9556a86d1081324feaa
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/25/2020
-ms.locfileid: "97771362"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98595643"
 ---
 # <a name="sql-server-data-type-mappings"></a>Mappages de types de données SQL Server
 
@@ -67,7 +67,7 @@ La table suivante indique le type de .NET Framework déduit, les énumérations 
 
 ## <a name="sql-server-documentation"></a>documentation SQL Server
 
-Pour plus d’informations sur les types de données SQL Server, consultez [Types de données (Transact-SQL)](/sql/t-sql/data-types/data-types-transact-sql).
+Pour plus d’informations sur les types de données SQL Server, consultez [Types de données (Transact-SQL)](../../t-sql/data-types/data-types-transact-sql.md).
 
 ## <a name="see-also"></a>Voir aussi
 

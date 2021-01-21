@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d92add64-e93c-4598-8508-55d1bc46acf6
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: b50cd7f19db42111e22b26007e7bb1ca9ee48ff3
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 6539c9552206893f5799fbeb30ff628355dd137d
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85812124"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596941"
 ---
 # <a name="register-a-standard-net-framework-data-provider-ssrs"></a>Inscrire un fournisseur de données .NET Framework standard (SSRS)
   Pour utiliser un fournisseur de données [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] tiers afin d’extraire des données pour un dataset de rapport [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] , vous devez déployer et inscrire l’assembly de fournisseur de données [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] à deux emplacements : sur le client de création de rapports et sur le serveur de rapports. Sur le client de création de rapports, vous devez inscrire le fournisseur de données comme type de source des données et l'associer à un concepteur de requêtes. Vous pouvez ensuite sélectionner ce fournisseur de données comme type de source des données lorsque vous créez un dataset de rapport. Le concepteur de requêtes associé s'ouvre pour vous permettre de créer des requêtes pour ce type de source de données. Sur le serveur de rapports, vous devez inscrire le fournisseur de données comme type de source de données. Vous pouvez ensuite traiter les rapports publiés qui extraient les données d'une source de données à l'aide de ce fournisseur de données.  
@@ -37,7 +37,7 @@ ms.locfileid: "85812124"
   
 1.  Accédez à l’emplacement par défaut du répertoire bin sur le serveur de rapports sur lequel vous souhaitez utiliser le fournisseur de données [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] . L’emplacement par défaut du répertoire bin du serveur de rapports est *\<drive>* :\Program Files\Microsoft SQL Server\MSRS10_50.MSSQLSERVER\Reporting Services\ReportServer\bin.  
   
-2.  Copiez votre assembly à partir de votre emplacement sur le répertoire bin du serveur de rapports. Une autre solution consiste à charger votre assembly dans le Global Assembly Cache (GAC). Pour plus d’informations, consultez [Utilisation d’assemblys et du Global Assembly Cache](https://go.microsoft.com/fwlink/?linkid=63912) dans la documentation du SDK [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] sur MSDN.  
+2.  Copiez votre assembly à partir de votre emplacement sur le répertoire bin du serveur de rapports. Une autre solution consiste à charger votre assembly dans le Global Assembly Cache (GAC). Pour plus d’informations, consultez [Utilisation d’assemblys et du Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac) dans la documentation du SDK [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] sur MSDN.  
   
 #### <a name="to-register-a-net-data-provider-on-the-report-server"></a>Pour inscrire un fournisseur de données .NET sur le serveur de rapports  
   
@@ -110,7 +110,7 @@ ms.locfileid: "85812124"
   
 1.  Accédez à l’emplacement par défaut du répertoire PrivateAssemblies sur le client du Concepteur de rapports sur lequel vous souhaitez utiliser le fournisseur de données [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] . L’emplacement par défaut du répertoire PrivateAssemblies est *\<drive>* :\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies.  
   
-2.  Copiez votre assembly à partir de votre emplacement sur le répertoire PrivateAssemblies du client du Concepteur de rapports. Une autre solution consiste à charger votre assembly dans le Global Assembly Cache (GAC). Pour plus d’informations, consultez [Utilisation d’assemblys et du Global Assembly Cache](https://go.microsoft.com/fwlink/?linkid=63912) dans la documentation du SDK [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] sur MSDN.  
+2.  Copiez votre assembly à partir de votre emplacement sur le répertoire PrivateAssemblies du client du Concepteur de rapports. Une autre solution consiste à charger votre assembly dans le Global Assembly Cache (GAC). Pour plus d’informations, consultez [Utilisation d’assemblys et du Global Assembly Cache](/dotnet/framework/app-domains/working-with-assemblies-and-the-gac) dans la documentation du SDK [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] sur MSDN.  
   
 #### <a name="to-register-a-net-data-provider-on-the-report-designer-client"></a>Pour inscrire un fournisseur de données .NET sur le client du Concepteur de rapports  
   
@@ -204,5 +204,4 @@ ms.locfileid: "85812124"
  [Implémentation d’une extension pour le traitement des données](../../reporting-services/extensions/data-processing/implementing-a-data-processing-extension.md)   
  [Fichiers de configuration de Reporting Services](../../reporting-services/report-server/reporting-services-configuration-files.md)   
  [Sécurité d'accès du code dans Reporting Services](../../reporting-services/extensions/secure-development/code-access-security-in-reporting-services.md)  
-  
   

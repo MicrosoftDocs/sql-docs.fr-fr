@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || >= sql-server-linux-2017'
-ms.openlocfilehash: 98fd46528437cd9a82ec7d47539db230b8be8eb8
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4c8852c9b2ce3f7bce027632b741511a008cb646
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97409395"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98595884"
 ---
 # <a name="sql-server-docs-navigation-guide"></a>Guide de navigation dans la documentation de SQL Server
 
@@ -23,7 +23,7 @@ Cette rubrique fournit des conseils et des astuces pour naviguer dans l’espace
 
 ## <a name="hub-page"></a>Page hub
 
-La page hub de SQL Server, qui se trouve sur [https://aka.ms/sqldocs](https://aka.ms/sqldocs), constitue le point d’entrée pour toute recherche de contenu sur SQL Server.
+La page hub de SQL Server, qui se trouve sur [https://aka.ms/sqldocs](../index.yml?WT.mc_id=akams), constitue le point d’entrée pour toute recherche de contenu sur SQL Server.
 
 Vous pouvez revenir à cette page à tout moment en sélectionnant **Documentation SQL** dans l’en-tête situé en haut de chaque page de la documentation technique de SQL Server : 
 
@@ -31,7 +31,7 @@ Vous pouvez revenir à cette page à tout moment en sélectionnant **Documentati
 
 ## <a name="offline-documentation"></a>Documentation hors connexion
 
-Si vous souhaitez afficher la documentation SQL Server sur un système hors ligne, vous disposez de deux options. Vous pouvez créer un fichier PDF à n’importe quel endroit de la documentation technique SQL Server, ou vous pouvez télécharger le contenu hors connexion à l’aide de la [visionneuse d’aide hors connexion SQL Server](sql-server-help-installation.md). 
+Si vous souhaitez afficher la documentation SQL Server sur un système hors ligne, vous disposez de deux options. Vous pouvez créer un fichier PDF à n’importe quel endroit de la documentation technique SQL Server, ou vous pouvez télécharger le contenu hors connexion à l’aide de la [visionneuse d’aide hors connexion SQL Server](./sql-server-offline-documentation.md). 
 
 Si vous souhaitez créer un fichier PDF, cliquez sur le lien **Télécharger le PDF** situé au bas de chaque table des matières.
 

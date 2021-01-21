@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 4df1c5680f44d7585200e4db199b8e099d8fd355
-ms.sourcegitcommit: 216f377451e53874718ae1645a2611cdb198808a
+ms.openlocfilehash: 7916bf0cf6b80df1bddcf25223c97593129d5dfc
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87246466"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597109"
 ---
 # <a name="keyboard-shortcuts-for-sql-server-unit-test-designer"></a>Raccourcis clavier du Concepteur de test unitaire SQL Server
 
@@ -30,7 +30,6 @@ Utilisez les raccourcis clavier suivants pour naviguer dans le Concepteur de tes
   
 ## <a name="see-also"></a>Voir aussi  
 [Création et définition de tests unitaires SQL Server](../ssdt/creating-and-defining-sql-server-unit-tests.md)  
-[Raccourcis clavier pour l'éditeur Transact-SQL (Visual Studio 2010)](https://go.microsoft.com/fwlink/?LinkId=160735)  
-[Fonctionnalités d'accessibilité de Visual Studio (Visual Studio 2010)](https://msdn.microsoft.com/library/y4b5z3y3(VS.90).aspx)  
-[Fonctionnalités d'accessibilité de Visual Studio (Visual Studio 2012)](https://msdn.microsoft.com/library/y4b5z3y3.aspx)  
-  
+[Raccourcis clavier pour l'éditeur Transact-SQL (Visual Studio 2010)](/previous-versions/visualstudio/visual-studio-2010/aa833225(v=vs.100))  
+[Fonctionnalités d'accessibilité de Visual Studio (Visual Studio 2010)](/previous-versions/visualstudio/visual-studio-2008/y4b5z3y3(v=vs.90))  
+[Fonctionnalités d'accessibilité de Visual Studio (Visual Studio 2012)](/previous-versions/visualstudio/visual-studio-2015/ide/reference/accessibility-features-of-visual-studio)  

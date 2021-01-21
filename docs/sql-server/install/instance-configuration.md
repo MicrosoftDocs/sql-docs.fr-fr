@@ -16,12 +16,12 @@ ms.assetid: 5bf822fc-6dec-4806-a153-e200af28e9a5
 author: cawrites
 ms.author: chadam
 robots: noindex,nofollow
-ms.openlocfilehash: 8a136b1158f31cf6369bb29f404f4f6f58d6901c
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 08b7d5d8c1680be42902fe287c14418b2732f7f9
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172411"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98595442"
 ---
 # <a name="installation-wizard-help"></a>Aide de l’assistant d’installation
 
@@ -119,11 +119,11 @@ Si vous installez [!INCLUDE[ssGeminiShort](../../includes/ssgeminishort-md.md)],
 **Spécifiez les administrateurs** : Vous devez spécifier au moins un administrateur du serveur pour l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les utilisateurs ou groupes que vous spécifiez deviendront membres du rôle Administrateurs du serveur de l'instance [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] que vous installez. Ces membres doivent avoir des comptes d'utilisateur de domaine Windows dans le même domaine que l'ordinateur sur lequel vous installez le logiciel.  
   
 > [!NOTE]  
-> Le contrôle de compte d'utilisateur (UAC) est une fonctionnalité de sécurité Windows qui requiert qu'un administrateur approuve de façon spécifique les actions ou applications administratives avant qu'elles soient autorisées à s'exécuter. Dans la mesure où le contrôle de compte d'utilisateur est activé par défaut, vous serez invité à autoriser des opérations spécifiques qui requièrent des privilèges élevés. Vous pouvez configurer le contrôle de compte d'utilisateur de manière à modifier son comportement par défaut ou à le personnaliser pour des programmes spécifiques. Pour plus d’informations sur la configuration des contrôles de compte d’utilisateur, consultez le [Guide pas à pas du contrôle de compte d’utilisateur](https://go.microsoft.com/fwlink/?linkid=196350) et [Contrôle de compte d’utilisateur (Wikipédia)](https://go.microsoft.com/fwlink/?linkid=196351).  
+> Le contrôle de compte d'utilisateur (UAC) est une fonctionnalité de sécurité Windows qui requiert qu'un administrateur approuve de façon spécifique les actions ou applications administratives avant qu'elles soient autorisées à s'exécuter. Dans la mesure où le contrôle de compte d'utilisateur est activé par défaut, vous serez invité à autoriser des opérations spécifiques qui requièrent des privilèges élevés. Vous pouvez configurer le contrôle de compte d'utilisateur de manière à modifier son comportement par défaut ou à le personnaliser pour des programmes spécifiques. Pour plus d’informations sur la configuration des contrôles de compte d’utilisateur, consultez le [Guide pas à pas du contrôle de compte d’utilisateur](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc709691(v=ws.10)) et [Contrôle de compte d’utilisateur (Wikipédia)](https://go.microsoft.com/fwlink/?linkid=196351).  
   
 ### <a name="see-also"></a>Voir aussi
   
-* [Configurer les comptes de service &#40;Analysis Services&#41;](https://docs.microsoft.com/analysis-services/instances/configure-service-accounts-analysis-services)
+* [Configurer les comptes de service &#40;Analysis Services&#41;](/analysis-services/instances/configure-service-accounts-analysis-services)
 * [Configurer les comptes de service Windows et les autorisations](../../database-engine/configure-windows/configure-windows-service-accounts-and-permissions.md)  
 
 ## <a name="analysis-services-configuration---data-directories-page"></a>Page Configuration de Analysis Services - Répertoires de données
@@ -191,7 +191,7 @@ Les répertoires par défaut indiqués dans le tableau suivant sont configurable
 #### <a name="see-also"></a>Voir aussi
 
 * Pour plus d’informations sur les répertoires, les emplacements de fichiers et l’affectation de noms aux ID d’instance, consultez [Emplacements des fichiers pour les instances par défaut et les instances nommées de SQL Server](file-locations-for-default-and-named-instances-of-sql-server.md)  
-* [Autorisations de partage et NTFS sur un serveur de fichiers](https://docs.microsoft.com/iis/web-hosting/configuring-servers-in-the-windows-web-platform/configuring-share-and-ntfs-permissions)
+* [Autorisations de partage et NTFS sur un serveur de fichiers](/iis/web-hosting/configuring-servers-in-the-windows-web-platform/configuring-share-and-ntfs-permissions)
 
 ## <a name="database-engine-configuration---server-configuration-page"></a>Page <a name="serverconfig"></a> Configuration du moteur de base de données - Configuration du serveur
 
@@ -410,7 +410,7 @@ Les recommandations suivantes s'appliquent au serveur de fichiers SMB :
 ### <a name="see-also"></a>Voir aussi
 
 * [Configurer les comptes de service Windows et les autorisations](../../database-engine/configure-windows/configure-windows-service-accounts-and-permissions.md)
-* [Autorisations de partage et NTFS sur un serveur de fichiers](https://docs.microsoft.com/iis/web-hosting/configuring-servers-in-the-windows-web-platform/configuring-share-and-ntfs-permissions)  
+* [Autorisations de partage et NTFS sur un serveur de fichiers](/iis/web-hosting/configuring-servers-in-the-windows-web-platform/configuring-share-and-ntfs-permissions)  
 
 <!--
 The MaxDOP setting applies only to SQL Server 2019 and later.

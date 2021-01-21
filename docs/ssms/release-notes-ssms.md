@@ -11,12 +11,12 @@ ms.author: drskwier
 ms.reviewer: maghan
 ms.custom: seo-lt-2019
 ms.date: 12/17/2020
-ms.openlocfilehash: 98211695d60592c8178c4b60e45f2105c3b86db4
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2e1d3faf6d17417ea1f4a134778ddd9342441231
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102666"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596858"
 ---
 # <a name="release-notes-for-sql-server-management-studio-ssms"></a>Notes de publication de SQL Server Management Studio (SSMS)
 
@@ -46,7 +46,7 @@ SSMS 18.8 est la dernière version en disponibilité générale de SSMS. Si vou
 |----------|---------|
 | Intégration de l’installation Azure Data Studio | L’installation de SSMS installe Azure Data Studio 1.25.1. |
 | Analysis Services | Ajout de la prise en charge des espaces de travail Power BI Premium Gen2. |
-| Audit | Ajout de la prise en charge d’EXTERNAL_MONITOR et de l’« audit d’opérateur ».  Pour plus d’informations, consultez la [documentation](https://docs.microsoft.com/azure/azure-sql/managed-instance/auditing-configure) relative à la configuration. |
+| Audit | Ajout de la prise en charge d’EXTERNAL_MONITOR et de l’« audit d’opérateur ».  Pour plus d’informations, consultez la [documentation](/azure/azure-sql/managed-instance/auditing-configure) relative à la configuration. |
 | Integration Services | Amélioration de l’Assistant Création de runtime d’intégration. Désormais, la création de SSISDB est facultative lors de la création du runtime d’intégration SSIS |
 
 #### <a name="bug-fixes-in-188"></a>Correctifs de bogues dans la version 18.8
@@ -142,7 +142,7 @@ SSMS 18.7 est la dernière version en disponibilité générale de SSMS. Si vou
 | Assistant Générer des scripts | L’Assistant échoue lors de la tentative d’énumération des objets de base de données sur SQL Server 2014 et versions antérieures. Voir [Commentaires des utilisateurs sur SQL Server](https://feedback.azure.com/forums/908035-sql-server/suggestions/41885587). | Utilisez SSMS 18.6 pour sélectionner des objets dans l’Assistant Génération de scripts pour SQL 2014 et versions antérieures. |
 | Integration Services | Lorsque vous importez ou exportez des packages dans Integration Services ou exportez des packages dans Azure-SSIS Integration Runtime, des scripts sont perdus pour les packages contenant des tâches/composants de script. | Supprimer le dossier « C:\Program Files (x86)\Microsoft SQL Server Management Studio 18\Common7\IDE\CommonExtensions\MSBuild ». |
 | Integration Services | Les connexions à distance à Integration Services peuvent échouer avec le message « Le service spécifié n’existe pas en tant que service installé. » sur les systèmes d’exploitation récents. | Identifiez l’emplacement du Registre associé aux services d'intégration sous Computer\HKEY_CLASSES_ROOT\AppID et Computer\HKEY_CLASSES_ROOT\ WOW6432Node\AppID et dans ces ruches, renommez la clé de Registre « LocalService » en « LocalService_A » pour la version spécifique des services d’intégration que vous essayez de connecter |
-| Explorateur d’objets | Les versions de SSMS antérieures à 18.7 ont un changement cassant dans l’Explorateur d’objets en raison des modifications du moteur relatives au [pool SQL serverless Azure Synapse Analytics](https://docs.microsoft.com/azure/synapse-analytics/sql/on-demand-workspace-overview). | Pour continuer à utiliser l’Explorateur d’objets dans SSMS avec le pool SQL serverless Azure Synapse Analytics, vous avez besoin de SSMS 18.7 ou version ultérieure. |
+| Explorateur d’objets | Les versions de SSMS antérieures à 18.7 ont un changement cassant dans l’Explorateur d’objets en raison des modifications du moteur relatives au [pool SQL serverless Azure Synapse Analytics](/azure/synapse-analytics/sql/on-demand-workspace-overview). | Pour continuer à utiliser l’Explorateur d’objets dans SSMS avec le pool SQL serverless Azure Synapse Analytics, vous avez besoin de SSMS 18.7 ou version ultérieure. |
 
 ### <a name="187"></a>18,7
 

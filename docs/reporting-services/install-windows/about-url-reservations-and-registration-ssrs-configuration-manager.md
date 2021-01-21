@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: c2c460c3-e749-4efd-aa02-0f8a98ddbc76
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: c705c0ea22b7fcd4a92c94493035764864d1a3f6
-ms.sourcegitcommit: fe59f8dc27fd633f5dfce54519d6f5dcea577f56
+ms.openlocfilehash: 1203c1190b0c14a4d5d9c3f7218adc8d6ab5d57a
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91935181"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98595295"
 ---
 # <a name="about-url-reservations-and-registration--report-server-configuration-manager"></a>À propos des réservations et de l’inscription d’URL (Gestionnaire de configuration du serveur de rapports)
   Les URL pour les applications Reporting Services sont définies en tant que réservations d'URL dans HTTP.SYS. Une réservation d'URL définit la syntaxe d'un point de terminaison URL à une application Web. Les réservations d'URL sont définies pour le service Web Report Server et pour le portail web lorsque vous configurez les applications sur le serveur de rapports. Les réservations d'URL sont créées automatiquement pour vous lors de la configuration d'URL par le biais du programme d'installation ou de l'outil de configuration [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] :  
@@ -30,7 +30,7 @@ ms.locfileid: "91935181"
  Le programme d'installation et l'outil assignent également des autorisations sur l'URL au service Report Server, vérifient s'il existe des instances en double et ajoutent la réservation d'URL à HTTP.SYS. Vous ne devez jamais créer ou modifier une réservation d'URL Reporting Services directement à l'aide de HttpCfg.exe ou d'un autre outil. Si vous ignorez une étape ou si vous avez défini une valeur non valide, vous rencontrerez des problèmes qui pourront être difficiles à diagnostiquer ou à résoudre.  
   
 > [!NOTE]  
-> HTTP.SYS est un composant du système d'exploitation qui écoute les demandes réseau et les transfère vers une file d'attente de demandes. Dans cette version de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], HTTP.SYS établit et maintient la file d'attente de demandes pour le service Web Report Server et le portail web. Les services Internet (IIS) ne sont plus utilisés pour héberger ou accéder aux applications [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] . Pour plus d'informations sur la fonctionnalité HTTP.SYS, consultez [HTTP Server API](https://go.microsoft.com/fwlink/?LinkId=92652).  
+> HTTP.SYS est un composant du système d'exploitation qui écoute les demandes réseau et les transfère vers une file d'attente de demandes. Dans cette version de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], HTTP.SYS établit et maintient la file d'attente de demandes pour le service Web Report Server et le portail web. Les services Internet (IIS) ne sont plus utilisés pour héberger ou accéder aux applications [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] . Pour plus d'informations sur la fonctionnalité HTTP.SYS, consultez [HTTP Server API](/windows/win32/http/http-api-start-page).  
   
 ##  <a name="urls-in-reporting-services"></a><a name="ReportingServicesURLs"></a> URL dans Reporting Services  
  Dans une installation [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] , vous pouvez accéder aux outils, applications et éléments suivants au moyen d'URL :  
@@ -47,9 +47,9 @@ ms.locfileid: "91935181"
 > Cet article ne décrit pas l’accès par le biais d’URL à des rapports spécifiques stockés sur le serveur de rapports. Pour plus d’informations sur l’accès à ces éléments par le biais d’URL, consultez [Accéder à des éléments de serveur de rapports à l’aide de l’accès URL](../../reporting-services/access-report-server-items-using-url-access.md).  
   
 ##  <a name="url-reservation-and-registration"></a><a name="URLreservation"></a> Réservation et inscription d'URL  
- Une réservation d'URL définit les URL pouvant être utilisées pour accéder à une application [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] . [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] réserve une ou plusieurs URL pour le service Web Report Server et le [!INCLUDE[ssRSWebPortal](../../includes/ssrswebportal.md)] dans HTTP.SYS, puis les inscrit au démarrage du service. En ajoutant des paramètres à l’URL, vous pouvez ouvrir les rapports par le biais du service web. Les réservations et l'inscription sont fournies par HTTP.SYS. Pour plus d'informations, consultez [Namespace Reservations, Registration, and Routing](https://go.microsoft.com/fwlink/?LinkId=92653).  
+ Une réservation d'URL définit les URL pouvant être utilisées pour accéder à une application [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] . [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] réserve une ou plusieurs URL pour le service Web Report Server et le [!INCLUDE[ssRSWebPortal](../../includes/ssrswebportal.md)] dans HTTP.SYS, puis les inscrit au démarrage du service. En ajoutant des paramètres à l’URL, vous pouvez ouvrir les rapports par le biais du service web. Les réservations et l'inscription sont fournies par HTTP.SYS. Pour plus d'informations, consultez [Namespace Reservations, Registration, and Routing](/windows/win32/http/namespace-reservations-registrations-and-routing).  
   
- La*réservation d'URL* est un processus par lequel un point de terminaison URL à une application Web est créé et stocké dans HTTP.SYS. HTTP.SYS est la base de données de référentiel commune de toutes les réservations d'URL qui sont définies sur un ordinateur ; elle définit un jeu de règles communes qui garantissent des réservations d'URL uniques.  
+ La *réservation d'URL* est un processus par lequel un point de terminaison URL à une application Web est créé et stocké dans HTTP.SYS. HTTP.SYS est la base de données de référentiel commune de toutes les réservations d'URL qui sont définies sur un ordinateur ; elle définit un jeu de règles communes qui garantissent des réservations d'URL uniques.  
   
  L'*inscription d'URL* se produit lorsque le service démarre. La file d'attente des demandes est créée et HTTP.SYS commence à transférer les demandes vers cette file d'attente. Un point de terminaison URL doit être inscrit pour que les demandes dirigées vers ce point de terminaison soient ajoutées à la file d'attente. Lorsque le service Report Server démarre, il enregistre toutes les URL qu'il a réservées pour toutes les applications actives. Cela signifie que le service Web doit être activé pour que l'inscription ait lieu. Si vous affectez à la propriété **WebServiceAndHTTPAccessEnabled** la valeur **False** dans la facette Configuration de la surface d’exposition pour Reporting Services de la gestion basée sur une stratégie, l’URL du service web n’est pas inscrite au démarrage du service.  
   
@@ -108,4 +108,3 @@ ms.locfileid: "91935181"
  [Configurer une URL &#40;Gestionnaire de configuration du serveur de rapports&#41;](../../reporting-services/install-windows/configure-a-url-ssrs-configuration-manager.md)   
  [Syntaxe de réservation d’URL &#40;Gestionnaire de configuration du serveur de rapports&#41;](../../reporting-services/install-windows/url-reservation-syntax-ssrs-configuration-manager.md)  
 
-  

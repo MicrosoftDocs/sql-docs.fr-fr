@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: b3884576-1f7e-4d40-bb7d-168312333bb3
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 7d19ea6df08431db42e700cabccd7a05167dd89c
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 6ad6853715963c9a29ee4db2e73199fecd50801a
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85808569"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597321"
 ---
 # <a name="dataset-fields-collection-report-builder-and-ssrs"></a>Collection de champs de dataset (Générateur de rapports et SSRS)
   Les champs de dataset représentent les données d'une connexion de données. Un champ peut représenter des données numériques ou non numériques. À titre d'exemples, citons des chiffres d'affaires, des totaux de ventes, des noms de client, des identificateurs de base de données, des URL, des images, des données spatiales et des adresses de messagerie. Sur l'aire de conception, les champs s'affichent sous la forme d'expressions dans les éléments de rapport tels que les zones de texte, les tables et les graphiques.  
@@ -57,7 +57,7 @@ ms.locfileid: "85808569"
  Les sources de données qui prennent en charge des requêtes multidimensionnelles, comme [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], prennent en charge les propriétés de champ sur les champs. Les propriétés de champ apparaissent dans le jeu de résultats d'une requête, mais ne sont pas visibles dans le volet **Données du rapport** . Elles sont néanmoins disponibles pour les utiliser dans votre rapport. Pour vous référer à la propriété d'un champ, faites glisser le champ dans le rapport et remplacez la propriété par défaut **Value** par le nom de champ de la propriété souhaitée. Dans un cube [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] par exemple, vous pouvez définir des formats pour les valeurs dans les cellules de cube. La valeur mise en forme est disponible à l'aide de la propriété de champ **FormattedValue**. Pour utiliser directement la valeur au lieu d'utiliser une valeur, puis de définir la propriété de format de la zone de texte, faites glisser le champ vers la zone de texte et remplacez l'expression par défaut `=Fields!FieldName.Value` par `=Fields!FieldName.FormattedValue`.  
   
 > [!NOTE]
->  Certaines propriétés **Field** ne peuvent pas être utilisées pour toutes les sources de données. Les propriétés **Value** et **IsMissing** sont définies pour toutes les sources de données. D’autres propriétés prédéfinies (comme **Key**, **UniqueName**et **ParentUniqueName** pour les sources de données multidimensionnelles) sont prises en charge uniquement si la source de données les fournit. Certains fournisseurs de données prennent en charge les propriétés personnalisées. Pour plus d’informations, consultez les rubriques spécifiques relatives aux propriétés de champ étendues correspondant à votre type de source de données dans [Datasets incorporés dans le rapport et datasets partagés &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs.md). Pour obtenir un exemple relatif à une source de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)][!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], consultez [Propriétés de champ étendues pour une base de données Analysis Services &#40;SSRS&#41;](../../reporting-services/report-data/extended-field-properties-for-an-analysis-services-database-ssrs.md).  
+>  Certaines propriétés **Field** ne peuvent pas être utilisées pour toutes les sources de données. Les propriétés **Value** et **IsMissing** sont définies pour toutes les sources de données. D’autres propriétés prédéfinies (comme **Key**, **UniqueName** et **ParentUniqueName** pour les sources de données multidimensionnelles) sont prises en charge uniquement si la source de données les fournit. Certains fournisseurs de données prennent en charge les propriétés personnalisées. Pour plus d’informations, consultez les rubriques spécifiques relatives aux propriétés de champ étendues correspondant à votre type de source de données dans [Datasets incorporés dans le rapport et datasets partagés &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs.md). Pour obtenir un exemple relatif à une source de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)][!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], consultez [Propriétés de champ étendues pour une base de données Analysis Services &#40;SSRS&#41;](../../reporting-services/report-data/extended-field-properties-for-an-analysis-services-database-ssrs.md).  
   
   
 ##  <a name="understanding-default-expressions-for-fields"></a><a name="Defaults"></a> Présentation des expressions par défaut pour les champs  
@@ -77,9 +77,9 @@ ms.locfileid: "85808569"
   
 -   **Source de données** Il s'agit des types de données pris en charge par la version du type de source de données à laquelle vous vous connectez.  
   
-     Par exemple, les types de données classiques pour une source de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] incluent **int**, **datetime**et **varchar**. [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] a introduit la prise en charge des types de données **date**, **time**, **datetimetz**et **datetime2**. Pour plus d’informations, consultez [Types de données (Transact-SQL)](https://go.microsoft.com/fwlink/?linkid=98362).  
+     Par exemple, les types de données classiques pour une source de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] incluent **int**, **datetime** et **varchar**. [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] a introduit la prise en charge des types de données **date**, **time**, **datetimetz** et **datetime2**. Pour plus d’informations, consultez [Types de données (Transact-SQL)](/previous-versions/sql/sql-server-2008/ms187752(v=sql.100)).  
   
--   **Fournisseur de données ou extension pour le traitement des données** Il s'agit des types de données pris en charge par la version du fournisseur de données ou de l'extension pour le traitement des données que vous sélectionnez lorsque vous vous connectez à la source de données. Les fournisseurs de données se basant sur le [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] utilisent des types de données pris en charge par le CLR. Pour plus d’informations sur les types de données des fournisseurs de données [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] , consultez [Mappages de types de données (ADO.NET)](https://go.microsoft.com/fwlink/?LinkId=112178) et [Utilisation des types de base](https://go.microsoft.com/fwlink/?LinkId=112177) sur MSDN.  
+-   **Fournisseur de données ou extension pour le traitement des données** Il s'agit des types de données pris en charge par la version du fournisseur de données ou de l'extension pour le traitement des données que vous sélectionnez lorsque vous vous connectez à la source de données. Les fournisseurs de données se basant sur le [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] utilisent des types de données pris en charge par le CLR. Pour plus d’informations sur les types de données des fournisseurs de données [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] , consultez [Mappages de types de données (ADO.NET)](/dotnet/framework/data/adonet/data-type-mappings-in-ado-net) et [Utilisation des types de base](/dotnet/standard/base-types/common-type-system) sur MSDN.  
   
      Les types de données classiques pris en charge par le [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] sont **Int32** et **String**, par exemple. Les dates et heures de calendrier sont prises en charge par la structure **DateTime** . [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] 2.0 Service Pack 1 a introduit la prise en charge de la structure **DateTimeOffset** pour les dates avec un décalage de fuseau horaire.  
   
@@ -97,7 +97,7 @@ ms.locfileid: "85808569"
     |**DateTimeTZ**|**DateTimeOffset**|Date et heure avec décalage de fuseau horaire|  
     |**DateTime2**|**DateTime**|Date et heure avec fractions de milliseconde|  
   
- Pour plus d’informations sur les types de bases de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , consultez [Types de données (moteur de base de données)](https://go.microsoft.com/fwlink/?linkid=98362) et [Types de données et fonctions de date et d’heure (Transact-SQL)](https://go.microsoft.com/fwlink/?linkid=98360).  
+ Pour plus d’informations sur les types de bases de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , consultez [Types de données (moteur de base de données)](/previous-versions/sql/sql-server-2008/ms187752(v=sql.100)) et [Types de données et fonctions de date et d’heure (Transact-SQL)](/previous-versions/sql/sql-server-2008/ms186724(v=sql.100)).  
   
  Pour plus d’informations sur l’ajout de références dans un champ de dataset à partir d’une expression, consultez [Types de données dans les expressions &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/data-types-in-expressions-report-builder-and-ssrs.md).  
   
@@ -107,8 +107,7 @@ ms.locfileid: "85808569"
   
   
 ## <a name="see-also"></a>Voir aussi  
- [Boîte de dialogue Propriétés du dataset, Champs &#40;Générateur de rapports&#41;](https://msdn.microsoft.com/library/75c7e54a-3d20-4c9a-88da-ab36dce2ce42)   
+ [Boîte de dialogue Propriétés du dataset, Champs &#40;Générateur de rapports&#41;]()   
  [Parties de rapports et datasets dans le Générateur de rapports](../../reporting-services/report-data/report-parts-and-datasets-in-report-builder.md)   
  [Datasets incorporés dans le rapport et datasets partagés &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-data/report-embedded-datasets-and-shared-datasets-report-builder-and-ssrs.md)  
-  
   

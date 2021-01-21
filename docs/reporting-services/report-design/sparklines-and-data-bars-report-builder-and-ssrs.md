@@ -12,12 +12,12 @@ f1_keywords:
 ms.assetid: b287436b-fa48-4970-a1a7-1dbcb86e7411
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 6c7721b8b5002c104ff5076b3b0d1c9bc8219fba
-ms.sourcegitcommit: 5c7634b007f6808c87094174b80376cb20545d5f
+ms.openlocfilehash: b8eb3019b347427b2b24a8fb48083a77935f75f8
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "84880724"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98595150"
 ---
 # <a name="sparklines-and-data-bars-report-builder-and-ssrs"></a>Graphiques sparkline et barres de données (Générateur de rapports et SSRS)
   Les graphiques sparkline et les barres de données sont des graphiques simples de petite taille qui communiquent beaucoup d'informations dans un petit espace, souvent intégré au texte.   
@@ -26,7 +26,7 @@ ms.locfileid: "84880724"
   
  ![rs_SparklineExample](../../reporting-services/report-design/media/rs-sparklineexample.gif "rs_SparklineExample")  
   
- Pour une prise en main rapide des graphiques sparkline, consultez [Didacticiel : ajouter un graphique sparkline à un rapport &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/tutorial-add-a-sparkline-to-your-report-report-builder.md) , ainsi que les vidéos [Procédure : créer un graphique sparkline dans une table](https://go.microsoft.com/fwlink/?LinkId=197092) et [Graphiques sparkline, graphiques à barres et indicateurs dans le Générateur de rapports](https://technet.microsoft.com/bi/video/ff877165) .  
+ Pour une prise en main rapide des graphiques sparkline, consultez [Didacticiel : ajouter un graphique sparkline à un rapport &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/tutorial-add-a-sparkline-to-your-report-report-builder.md) , ainsi que les vidéos [Procédure : créer un graphique sparkline dans une table](/SharePoint/sharepoint-server) et [Graphiques sparkline, graphiques à barres et indicateurs dans le Générateur de rapports](/previous-versions/dn912438(v=msdn.10)) .  
   
 > [!NOTE]  
 >  Vous pouvez publier des graphiques sparkline et des barres de données avec leur table, matrice ou liste parente indépendamment d'un rapport en tant que partie de rapport. En savoir plus sur les [Parties de rapports](../../reporting-services/report-design/report-parts-report-builder-and-ssrs.md).  
@@ -104,5 +104,4 @@ ms.locfileid: "84880724"
 ## <a name="see-also"></a>Voir aussi  
  [Graphiques &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/charts-report-builder-and-ssrs.md)   
  [Tutoriel : Ajouter un graphique sparkline à un rapport &#40;Générateur de rapports&#41;](../../reporting-services/tutorial-add-a-sparkline-to-your-report-report-builder.md)   
-  
   

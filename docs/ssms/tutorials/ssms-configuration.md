@@ -10,12 +10,12 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: sstein
 ms.date: 03/16/2018
-ms.openlocfilehash: 238df1200d88023abec54fdf3fa2c37df758f0f8
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 1688998d5a3f6b9033808701c33ff141cf8cc8c3
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92038944"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597192"
 ---
 # <a name="sql-server-management-studio-components-and-configuration"></a>Composants et configuration de SQL Server Management Studio
 
@@ -138,7 +138,7 @@ Cette section décrit comment changer certains paramètres de base dans SSMS à 
 
 La meilleure façon de se familiariser avec SSMS est d’effectuer des exercices pratiques. Ces articles *Tutoriel* et *Procédure* vous aident à vous familiariser avec les différentes fonctionnalités disponibles dans SSMS.  Ces articles vous apprennent à gérer les composants de SSMS et à trouver les fonctionnalités utilisées régulièrement.
 
-* [Se connecter à une instance et l’interroger](../quickstarts/connect-query-sql-server.md)
+* [Se connecter à une instance et l’interroger](../quickstarts/ssms-connect-query-sql-server.md)
 * [Création de scripts](scripting-ssms.md)
 * [Utilisation de modèles dans SSMS](../template/templates-ssms.md)
 * [Conseils et astuces supplémentaires pour utiliser SSMS](ssms-tricks.md)

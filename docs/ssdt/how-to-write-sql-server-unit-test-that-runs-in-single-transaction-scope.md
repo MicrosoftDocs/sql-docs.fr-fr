@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 13df7080dc1c313279a65eb3457128e43927c9e0
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 95b91ffe542b4085dcdeca9f3e0dcfc4928b6564
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85893018"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597014"
 ---
 # <a name="how-to-write-a-sql-server-unit-test-that-runs-within-the-scope-of-a-single-transaction"></a>Procédure : Écrire un test unitaire SQL Server qui s'exécute dans l'étendue d'une seule transaction
 
@@ -54,10 +54,10 @@ Pour certaines procédures de cette rubrique, le service Distributed Transaction
     > [!NOTE]  
     > Vous ne pouvez pas restaurer une transaction après l'exécution d'une instruction COMMIT TRANSACTION.  
   
-    Pour plus d'informations sur le fonctionnement de l'instruction ROLLBACK TRANSACTION avec les procédures stockées et les déclencheurs, consultez cette page sur le site Web Microsoft : [ROLLBACK TRANSACTION (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkID=115927).  
+    Pour plus d'informations sur le fonctionnement de l'instruction ROLLBACK TRANSACTION avec les procédures stockées et les déclencheurs, consultez cette page sur le site Web Microsoft : [ROLLBACK TRANSACTION (Transact-SQL)](../t-sql/language-elements/rollback-transaction-transact-sql.md).  
   
 ## <a name="to-create-a-transaction-for-a-single-test-method"></a>Pour créer une transaction pour une seule méthode de test  
-Dans cet exemple, vous utilisez une transaction ambiante lorsque vous utilisez le type [System.Transactions.TransactionScope](https://docs.microsoft.com/dotnet/api/system.transactions.transactionscope). Par défaut, les connexions d'exécution et privilégiées n'utilisent pas la transaction ambiante, car les connexions ont été créées avant que la méthode ne soit exécutée. SqlConnection possède une méthode [System.Data.SqlClient.SqlConnection.EnlistTransaction](https://docs.microsoft.com/dotnet/api/system.data.sqlclient.sqlconnection.enlisttransaction), qui associe une connexion active à une transaction. Lorsqu'une transaction ambiante est créée, elle est inscrite en tant que transaction active, et la propriété [System.Transactions.Transaction.Current](https://docs.microsoft.com/dotnet/api/system.transactions.transaction.current) vous permet d'y accéder. Dans cet exemple, la transaction est restaurée lorsque la transaction ambiante est supprimée. Si vous souhaitez valider toutes les modifications apportées lorsque vous avez exécuté le test unitaire, vous devez appeler la méthode [System.Transactions.TransactionScope.Complete](https://docs.microsoft.com/dotnet/api/system.transactions.transactionscope.complete).  
+Dans cet exemple, vous utilisez une transaction ambiante lorsque vous utilisez le type [System.Transactions.TransactionScope](/dotnet/api/system.transactions.transactionscope). Par défaut, les connexions d'exécution et privilégiées n'utilisent pas la transaction ambiante, car les connexions ont été créées avant que la méthode ne soit exécutée. SqlConnection possède une méthode [System.Data.SqlClient.SqlConnection.EnlistTransaction](/dotnet/api/system.data.sqlclient.sqlconnection.enlisttransaction), qui associe une connexion active à une transaction. Lorsqu'une transaction ambiante est créée, elle est inscrite en tant que transaction active, et la propriété [System.Transactions.Transaction.Current](/dotnet/api/system.transactions.transaction.current) vous permet d'y accéder. Dans cet exemple, la transaction est restaurée lorsque la transaction ambiante est supprimée. Si vous souhaitez valider toutes les modifications apportées lorsque vous avez exécuté le test unitaire, vous devez appeler la méthode [System.Transactions.TransactionScope.Complete](/dotnet/api/system.transactions.transactionscope.complete).  
   
 #### <a name="to-create-a-transaction-for-a-single-test-method"></a>Pour créer une transaction pour une seule méthode de test  
   
@@ -171,8 +171,7 @@ Certaines procédures de cette rubrique utilisent des types dans l'assembly Syst
     L'état du service doit être mis à jour vers **Démarré**. Vous devez maintenant être en mesure d'exécuter les tests unitaires qui utilisent System.Transactions.  
   
 > [!IMPORTANT]  
-> L'erreur suivante peut apparaître, même si vous avez démarré le service Distributed Transaction Controller : `System.Transactions.TransactionManagerCommunicationException: Network access for Distributed Transaction Manager (MSDTC) has been disabled. Please enable DTC for network access in the security configuration for MSDTC using the Component Services Administrative tool. ---> System.Runtime.InteropServices.COMException: The transaction manager has disabled its support for remote/network transactions. (Exception from HRESULT: 0x8004D024)`. Si cette erreur se produit, vous devez configurer le service Distributed Transaction Controller pour l'accès réseau. Pour plus d'informations, consultez [Activation de l’accès DTC réseau](https://go.microsoft.com/fwlink/?LinkId=193916).  
+> L'erreur suivante peut apparaître, même si vous avez démarré le service Distributed Transaction Controller : `System.Transactions.TransactionManagerCommunicationException: Network access for Distributed Transaction Manager (MSDTC) has been disabled. Please enable DTC for network access in the security configuration for MSDTC using the Component Services Administrative tool. ---> System.Runtime.InteropServices.COMException: The transaction manager has disabled its support for remote/network transactions. (Exception from HRESULT: 0x8004D024)`. Si cette erreur se produit, vous devez configurer le service Distributed Transaction Controller pour l'accès réseau. Pour plus d'informations, consultez [Activation de l’accès DTC réseau](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753510(v=ws.10)).  
   
 ## <a name="see-also"></a>Voir aussi  
 [Création et définition de tests unitaires SQL Server](../ssdt/creating-and-defining-sql-server-unit-tests.md)  
-  

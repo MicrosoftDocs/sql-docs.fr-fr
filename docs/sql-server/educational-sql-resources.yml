@@ -9,12 +9,12 @@ metadata:
   author: MashaMSFT
   ms.author: mathoma
   ms.date: 01/07/2020
-  ms.openlocfilehash: d365573f99f0462a26d3c144476c32b4dc47773b
-  ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+  ms.openlocfilehash: 91cde4512c515e69e349d2c56326c820fed1d3cb
+  ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 10/13/2020
-  ms.locfileid: "91988545"
+  ms.lasthandoff: 01/20/2021
+  ms.locfileid: "98597029"
 landingContent:
 - title: Apprendre SQL
   linkLists:
@@ -49,7 +49,7 @@ landingContent:
     - text: Connexion et requête avec Azure Data Studio
       url: ../azure-data-studio/quickstart-sql-server.md
     - text: Connexion et requête avec SSMS
-      url: ../ssms/quickstarts/connect-query-sql-server.md
+      url: ../ssms/quickstarts/ssms-connect-query-sql-server.md
     - text: Écriture de Transact-SQL (T-SQL)
       url: ../t-sql/tutorial-writing-transact-sql-statements.md
     - text: Événements étendus
