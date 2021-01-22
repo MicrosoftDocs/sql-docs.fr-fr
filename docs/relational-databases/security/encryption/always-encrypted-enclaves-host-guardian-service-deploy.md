@@ -2,7 +2,7 @@
 title: Déployer le Service Guardian hôte
 description: Déployez le Service Guardian hôte pour Always Encrypted avec enclaves sécurisées.
 ms.custom: ''
-ms.date: 11/15/2019
+ms.date: 01/15/2021
 ms.prod: sql
 ms.reviewer: vanto
 ms.technology: security
@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: rpsqrd
 ms.author: ryanpu
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 9ce744de4f70e30a10fad36eef6c1f28f4d8e8d4
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 88e79166a8b44139f58192feece211bc3b3d2db3
+ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477680"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98534788"
 ---
 # <a name="deploy-the-host-guardian-service-for-ssnoversion-md"></a>Déployer le Service Guardian hôte pour [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)]
 
@@ -24,7 +24,10 @@ ms.locfileid: "97477680"
 Cet article décrit comment déployer le Service Guardian hôte (SGH) en tant que service d’attestation pour [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)].
 Avant de commencer, lisez l’article [Planifier l’attestation avec le Service Guardian hôte](./always-encrypted-enclaves-host-guardian-service-plan.md) pour accéder à la liste complète des prérequis et à de l’aide en matière d’architecture.
 
-## <a name="step-1-set-up-the-first-hgs-computer"></a>Étape 1 : Configurer le premier ordinateur SGH
+> [!NOTE]
+> L’administrateur SGH est responsable de l’exécution de toutes les étapes décrites dans cet article. Consultez [Rôles et responsabilités lors de la configuration de l’attestation avec SGH](always-encrypted-enclaves-host-guardian-service-plan.md#roles-and-responsibilities-when-configuring-attestation-with-hgs).
+
+## <a name="step-1-set-up-the-first-hgs-computer"></a>Étape 1 : Configurer le premier ordinateur SGH
 
 Le Service Guardian hôte (SGH) s’exécute en tant que service en cluster sur un ou plusieurs ordinateurs.
 Dans cette étape, vous allez configurer un nouveau cluster SGH sur le premier ordinateur.
@@ -113,7 +116,7 @@ Comme pour le premier ordinateur SGH, vérifiez que l’ordinateur que vous joig
 
 5. Répétez l’étape 2 pour chaque ordinateur que vous souhaitez ajouter à votre cluster SGH.
 
-## <a name="step-3-configure-a-dns-forwarder-to-your-hgs-cluster"></a>Étape 3 : Configurer un redirecteur DNS vers votre cluster SGH
+## <a name="step-3-configure-a-dns-forwarder-to-your-hgs-cluster"></a>Étape 3 : Configurer un redirecteur DNS vers votre cluster SGH
 
 SGH exécute son propre serveur DNS qui contient les enregistrements de noms nécessaires pour résoudre le service d’attestation.
 Pour que vos ordinateurs SQL Server puissent résoudre ces enregistrements, vous devez configurer le serveur DNS de votre réseau pour transférer les demandes aux serveurs DNS SGH.
@@ -210,7 +213,7 @@ Set-HgsServer -TrustHostKey
 
 Tous les ordinateurs SGH de votre cluster utilisent désormais le mode clé d’hôte quand un ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] tente une attestation.
 
-## <a name="step-5-configure-the-hgs-https-binding"></a>Étape 5 : Configurer la liaison HTTPS SGH
+## <a name="step-5-configure-the-hgs-https-binding"></a>Étape 5 : Configurer la liaison HTTPS SGH
 
 Dans une installation par défaut, SGH expose uniquement une liaison HTTP (port 80).
 Vous pouvez configurer une liaison HTTPS (port 443) pour chiffrer toutes les communications entre les ordinateurs [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] et SGH.
@@ -233,6 +236,27 @@ Il est recommandé que toutes les instances de production de SGH utilisent une l
     ```
 
 3. Répétez les étapes 1 et 2 pour chaque ordinateur SGH du cluster. Les certificats TLS ne sont pas automatiquement répliqués entre les nœuds SGH. Par ailleurs, chaque ordinateur SGH peut avoir son propre certificat TLS unique tant que l’objet correspond au nom du service SGH.
+
+## <a name="step-6-determine-and-share-the-hgs-attestation-url"></a>Étape 6 : Déterminer et partager l’URL d’attestation SGH
+
+En tant qu’administrateur SGH, vous devez partager l’URL d’attestation de SGH avec les administrateurs d’ordinateurs SQL Server et les administrateurs d’applications de votre organisation. Les administrateurs d’ordinateurs SQL Server ont besoin de l’URL d’attestation pour vérifier que ces ordinateurs peuvent effectuer une attestation avec SGH. Les administrateurs d’applications ont besoin de l’URL d’attestation pour configurer le mode de connexion de leurs applications à SQL Server.
+
+Pour déterminer l’URL d’attestation, exécutez l’applet de commande suivante.
+
+```powershell
+Get-HGSServer
+```
+La sortie de la commande doit ressembler à ce qui suit :
+
+```
+Name                           Value                                                                         
+----                           -----                                                                         
+AttestationOperationMode       HostKey                                                                       
+AttestationUrl                 {http://hgs.bastion.local/Attestation}                                        
+KeyProtectionUrl               {}         
+```
+
+L’URL d’attestation pour votre SGH est la valeur de la propriété AttestationUrl.
 
 ## <a name="next-steps"></a>Étapes suivantes
 

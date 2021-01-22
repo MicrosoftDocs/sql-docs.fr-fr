@@ -13,12 +13,12 @@ ms.assetid: b1ae7b78-182a-459e-ab28-f743e43f8293
 author: MladjoA
 ms.author: mlandzic
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: b9d004ce88bba442dc17ff17c3d8a26e75bffd1a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: bedf575888445fb0e14684d4e325b60eb8547a79
+ms.sourcegitcommit: 7791bd2ba339edc5cd2078a6537c8f6bfe72a19b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97473140"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98564461"
 ---
 # <a name="spatial-indexes-overview"></a>Vue d'ensemble des index spatiaux
 [!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/sql-asdb-asdbmi.md)]
@@ -101,7 +101,7 @@ ms.locfileid: "97473140"
   
  Par exemple, considérez l'illustration précédente, qui montre un octogone qui s'adapte parfaitement à la cellule 15 de la grille de niveau 1. Dans l'illustration, la cellule 15 a été pavée, l'octogone ayant été disséqué en neuf cellules de niveau 2. Cette illustration suppose que la limite de cellules par objet est supérieure ou égale à 9. Si la limite de cellules par objet était inférieure ou égale à 8, la cellule 15 ne serait pas pavée et seule cette cellule 15 serait comptée pour l'objet.  
   
- Par défaut, la limite de cellules par objet est de 16, ce qui constitue un compromis satisfaisant entre l'espace et la précision pour la plupart des index spatiaux. Cependant, l’instruction [CREATE SPATIAL INDEX](../../t-sql/statements/create-spatial-index-transact-sql.md)[!INCLUDE[tsql](../../includes/tsql-md.md)] prend en charge une clause CELLS_PER_OBJECT **=** _n_ qui vous permet de spécifier une limite de cellules par objet comprise entre 1 et 8192 (inclus).  
+ Par défaut, la limite de cellules par objet est de 16, ce qui constitue un compromis satisfaisant entre l'espace et la précision pour la plupart des index spatiaux. Cependant, l’instruction [CREATE SPATIAL INDEX](../../t-sql/statements/create-spatial-index-transact-sql.md)[!INCLUDE[tsql](../../includes/tsql-md.md)] prend en charge une clause CELLS_PER_OBJECT **=** _n_ qui vous permet de spécifier une limite de cellules par objet comprise entre 1 et 8192 (inclusivement).  
   
 > [!NOTE]  
 >  Le paramètre **cells_per_object** d’un index spatial est visible dans l’affichage catalogue [sys.spatial_index_tessellations](../../relational-databases/system-catalog-views/sys-spatial-index-tessellations-transact-sql.md) .  

@@ -12,12 +12,12 @@ ms.assetid: 23274522-e5cf-4095-bed8-bf986d6342e0
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: b93b419e4678b84684c524011ed4df4feb6fcb14
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 05ed5ec0d34d2a1a612b76c0117d0bf66675ad7a
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474570"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171891"
 ---
 # <a name="system-versioned-temporal-tables-with-memory-optimized-tables"></a>Tables temporelles avec version gérée par le système avec tables optimisées en mémoire
 
@@ -70,7 +70,7 @@ La tâche de vidage de données est activée régulièrement selon une planifica
 
 Le vidage de données supprime tous les enregistrements de la mémoire tampon interne en mémoire antérieurs à la plus ancienne des transactions en cours d’exécution et les déplace vers la table d’historique sur disque.
 
-Vous pouvez appliquer un vidage des données en appelant [sp_xtp_flush_temporal_history](../../relational-databases/system-stored-procedures/temporal-table-sp-xtp-flush-temporal-history.md) et en spécifiant le schéma et le nom de la table : **sys.sp_xtp_flush_temporal_history @schema_name, @object_name** . Cette commande exécutée par l’utilisateur fait appel au même processus de déplacement de données que lorsque la tâche de vidage de données est appelée par le système selon la planification interne.
+Vous pouvez appliquer un vidage des données en appelant [sp_xtp_flush_temporal_history](../../relational-databases/system-stored-procedures/temporal-table-sp-xtp-flush-temporal-history.md) et en spécifiant le nom du schéma et de la table : **sys.sp_xtp_flush_temporal_history \@schema_name, \@object_name**. Cette commande exécutée par l’utilisateur fait appel au même processus de déplacement de données que lorsque la tâche de vidage de données est appelée par le système selon la planification interne.
 
 ## <a name="see-also"></a>Voir aussi
 

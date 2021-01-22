@@ -2,7 +2,7 @@
 title: Inscrire un ordinateur auprès du Service Guardian hôte
 description: Inscrivez l’ordinateur SQL Server auprès du Service Guardian hôte pour Always Encrypted avec enclaves sécurisées.
 ms.custom: ''
-ms.date: 11/15/2019
+ms.date: 01/15/2021
 ms.prod: sql
 ms.reviewer: vanto
 ms.technology: security
@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: rpsqrd
 ms.author: ryanpu
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 5d1b2a7209de25b1ce5c988ec9a46b77369dcf70
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 5864ec2b5bda5febc27bbb15606452befe7e293f
+ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101825"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98534778"
 ---
 # <a name="register-computer-with-host-guardian-service"></a>Inscrire un ordinateur auprès du Service Guardian hôte
 
@@ -23,10 +23,16 @@ ms.locfileid: "98101825"
 
 Cet article décrit comment inscrire des ordinateurs [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] auprès du Service Guardian hôte (SGH) à des fins d’attestation.
 
-Avant de commencer, veillez à déployer au moins un ordinateur SGH et à configurer le service d’attestation.
+> [!NOTE]
+> Le processus d’inscription d’une instance [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] auprès de SGH nécessite la collaboration de l’administrateur SGH et de l’administrateur de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)]. Consultez [Rôles et responsabilités lors de la configuration de l’attestation avec SGH](always-encrypted-enclaves-host-guardian-service-plan.md#roles-and-responsibilities-when-configuring-attestation-with-hgs).
+
+Avant de commencer, veillez à déployer au moins un ordinateur SGH et à configurer le service d’attestation SGH.
 Pour plus d’informations, consultez [Déployer le Service Guardian hôte pour [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)]](./always-encrypted-enclaves-host-guardian-service-deploy.md).
 
-## <a name="step-1-install-the-attestation-client-components"></a>Étape 1 : Installer les composants du client d’attestation
+## <a name="step-1-install-the-attestation-client-components"></a>Étape 1 : Installer les composants du client d’attestation
+
+> [!NOTE]
+> Cette étape doit être effectuée par l’administrateur de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)].
 
 Pour qu’un client SQL puisse vérifier qu’il communique avec un ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] digne de confiance, le Service Guardian hôte doit attester l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)].
 Le processus d’attestation est géré par un composant Windows facultatif appelé « client SGH ».
@@ -43,6 +49,9 @@ Les étapes ci-dessous vous aideront à installer ce composant et à commencer l
 3. Redémarrez pour terminer l’installation.
 
 ## <a name="step-2-verify-virtualization-based-security-is-running"></a>Étape 2 : Vérifier que la sécurité basée sur la virtualisation est en cours d’exécution
+
+> [!NOTE]
+> Cette étape doit être effectuée par l’administrateur de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)].
 
 Quand vous installez la fonctionnalité Prise en charge d’Hyper-V Guardian hôte, la sécurité basée sur la virtualisation (VBS) est automatiquement configurée et activée.
 Les enclaves pour [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] Always Encrypted s’exécutent dans l’environnement VBS qui assure leur protection.
@@ -66,7 +75,7 @@ Dans le contexte de l’attestation d’enclaves [!INCLUDE [ssnoversion-md](../.
 - La propriété `Secure Boot` est recommandée, mais elle n’est pas obligatoire pour [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] Always Encrypted. Le démarrage sécurisé assure une protection contre les rootkits, car il exige l’exécution d’un chargeur de démarrage signé par Microsoft immédiatement après l’initialisation de l’UEFI. Si vous utilisez l’attestation du module de plateforme sécurisée (TPM), l’activation du démarrage sécurisé est mesurée et appliquée, que VBS soit configuré ou non pour exiger un démarrage sécurisé.
 - La propriété `DMA Protection` est recommandée, mais elle n’est pas obligatoire pour [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] Always Encrypted. La protection DMA utilise une unité IOMMU pour protéger la mémoire de VBS et de l’enclave contre les attaques d’accès direct à la mémoire. Dans un environnement de production, vous devez toujours utiliser des ordinateurs avec une protection DMA. Dans un environnement de développement/test, vous pouvez supprimer l’obligation d’utiliser une protection DMA. Si l’instance [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] est virtualisée, la protection DMA n’est probablement pas disponible et vous devrez supprimer l’obligation d’exécuter VBS. Pour plus d’informations sur la réduction des garanties de sécurité en cas d’exécution dans une machine virtuelle, passez en revue le [modèle d’approbation](./always-encrypted-enclaves-host-guardian-service-plan.md#trust-model).
 
-Avant de réduire les fonctionnalités de sécurité exigées pour VBS, contactez votre fabricant d’ordinateurs OEM ou votre fournisseur de services cloud afin de vérifier s’il existe un moyen d’activer les spécifications de plateforme manquantes dans l’UEFI ou le BIOS (par exemple, en activant le démarrage sécurisé, Intel VT-d ou AMD IOV).
+Avant d’abaisser le niveau de sécurité exigé par VBS, contactez votre fabricant d’ordinateurs OEM ou votre fournisseur de services cloud afin de voir s’il existe un moyen d’activer les spécifications de plateforme manquantes dans l’UEFI ou le BIOS (par exemple, en activant le démarrage sécurisé, Intel VT-d ou AMD IOV).
 
 Pour changer les fonctionnalités de sécurité de la plateforme obligatoires pour VBS, exécutez la commande suivante dans une console PowerShell avec élévation de privilèges :
 
@@ -83,9 +92,12 @@ Après avoir modifié le Registre, redémarrez l’ordinateur [!INCLUDE [ssnover
 Si l’ordinateur est géré par votre entreprise, une stratégie de groupe ou le Gestionnaire de points de terminaison de Microsoft peut remplacer toute modification apportée à ces clés de Registre après le redémarrage.
 Contactez votre support technique pour savoir si des stratégies gérant votre configuration VBS sont déployées.
 
-## <a name="step-3-configure-the-attestation-url"></a>Étape 3 : Configurer l’URL d’attestation
+## <a name="step-3-configure-the-attestation-url"></a>Étape 3 : Configurer l’URL d’attestation
 
-Vous allez à présent configurer l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] avec l’URL du service d’attestation SGH.
+> [!NOTE]
+> Cette étape doit être effectuée par l’administrateur de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)].
+
+Ensuite, vous allez configurer l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] avec l’URL du service d’attestation SGH, que vous avez obtenue auprès de l’administrateur SGH.
 
 Dans une console PowerShell avec élévation de privilèges, mettez à jour et exécutez la commande suivante pour configurer l’URL d’attestation.
 
@@ -105,6 +117,14 @@ Le champ `AttestationMode` dans la sortie de l’applet de commande indique le m
 Passez à l’[étape 4A](#step-4a-register-a-computer-in-tpm-mode) pour inscrire l’ordinateur en mode TPM ou à [l’étape 4B](#step-4b-register-a-computer-in-host-key-mode) pour l’inscrire en mode clé d’hôte.
 
 ## <a name="step-4a-register-a-computer-in-tpm-mode"></a>Étape 4A : Inscrire un ordinateur en mode TPM
+
+> [!NOTE]
+> Cette étape est effectuée conjointement par l’administrateur de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] et par l’administrateur SGH. Pour plus d’informations, consultez les notes ci-dessous.
+
+### <a name="prepare"></a>Préparation
+
+> [!NOTE]
+> Cette action doit être effectuée par l’administrateur de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)].
 
 Dans cette étape, vous collectez des informations sur l’état du TPM de l’ordinateur et l’inscrivez auprès de SGH.
 
@@ -128,10 +148,13 @@ Par exemple, si vous avez trois bases de référence TPM inscrites sur SGH, il s
 
 ### <a name="configure-a-code-integrity-policy"></a>Configurer une stratégie d’intégrité du code
 
+> [!NOTE]
+> Les étapes ci-dessous doivent être effectuées par l’administrateur de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)].
+
 SGH exige qu’une stratégie de contrôle d’application Windows Defender (WDAC) soit appliquée à chaque ordinateur en attente d’attestation en mode TPM.
 Les stratégies d’intégrité du code WDAC restreignent les logiciels qui peuvent s’exécuter sur un ordinateur. Pour cela, elles vérifient chaque processus qui tente d’exécuter du code par rapport à une liste d’éditeurs et de hachages de fichiers approuvés.
 Pour le cas d’usage [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)], les enclaves sont protégées par la sécurité basée sur la virtualisation et ne peuvent pas être modifiées à partir du système d’exploitation hôte. La rigueur de la stratégie WDAC n’affecte donc pas la sécurité des requêtes chiffrées.
-Par conséquent, nous vous recommandons de déployer une stratégie de mode d’audit simple sur les ordinateurs [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] pour respecter les exigences d’attestation sans imposer de restrictions supplémentaires au système.
+Par conséquent, nous vous recommandons de déployer une stratégie de mode d’audit sur les ordinateurs [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] afin de respecter les exigences d’attestation sans imposer de restrictions supplémentaires au système.
 
 Si vous utilisez déjà une stratégie d’intégrité du code WDAC personnalisée sur les ordinateurs pour renforcer la configuration du système d’exploitation, vous pouvez passer à [Collecter les informations d’attestation du TPM](#collect-tpm-attestation-information).
 
@@ -153,6 +176,9 @@ Si vous utilisez déjà une stratégie d’intégrité du code WDAC personnalis�
 
 ### <a name="collect-tpm-attestation-information"></a>Collecter les informations d’attestation du TPM
 
+> [!NOTE]
+> Les étapes ci-dessous doivent être effectuées par l’administrateur de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)].
+
 Répétez les étapes suivantes pour chaque ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] à attester avec SGH :
 
 1. L’ordinateur étant dans un état valide connu, exécutez les commandes suivantes dans PowerShell pour collecter les informations d’attestation du TPM :
@@ -170,9 +196,17 @@ Répétez les étapes suivantes pour chaque ordinateur [!INCLUDE [ssnoversion-md
     Copy-Item -Path "$env:SystemRoot\System32\CodeIntegrity\SIPolicy.p7b" -Destination "$path\$name-CIpolicy.bin"
     ```
 
-2. Copiez les trois fichiers d’attestation sur le serveur SGH.
+2. Partagez les trois fichiers d’attestation avec l’administrateur SGH. 
 
-3. Sur le serveur SGH, exécutez les commandes suivantes dans une console PowerShell avec élévation de privilèges pour inscrire l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] :
+### <a name="register-the-sql-server-computer-with-hgs"></a>Inscrire l’ordinateur SQL Server auprès de SGH
+
+> [!NOTE]
+> Les étapes ci-dessous doivent être effectuées par l’administrateur SGH.
+
+Répétez les étapes suivantes pour chaque ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] à attester avec SGH :
+
+1. Copiez les fichiers d’attestation que vous avez obtenus de l’administrateur de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] sur le serveur SGH. 
+2. Sur le serveur SGH, exécutez les commandes suivantes dans une console PowerShell avec élévation de privilèges pour inscrire l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] :
 
     ```powershell
     # TIP: REMEMBER TO CHANGE THE FILENAMES
@@ -212,38 +246,61 @@ Get-HgsAttestationTpmPolicy
 
 ## <a name="step-4b-register-a-computer-in-host-key-mode"></a>Étape 4B : Inscrire un ordinateur en mode clé d’hôte
 
+> [!NOTE]
+> Cette étape est effectuée conjointement par l’administrateur de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] et par l’administrateur SGH. Pour plus d’informations, consultez les notes ci-dessous.
+
 Cette étape vous guide tout au long du processus de génération d’une clé unique pour l’hôte et de son inscription auprès de SGH.
 Si le service d’attestation SGH est configuré pour utiliser le mode TPM, suivez plutôt les instructions de l’[étape 4A](#step-4a-register-a-computer-in-tpm-mode).
 
+### <a name="generate-a-key-for-a-ssnoversion-md-computer"></a>Générer une clé pour un ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)]
+
+> [!NOTE]
+> Cette étape doit être effectuée en collaboration avec l’administrateur de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)].
+
 L’attestation de clé d’hôte génère une paire de clés asymétriques sur l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] et fournit à SGH la moitié publique de cette clé.
-Pour générer la paire de clés, exécutez la commande suivante dans une console PowerShell avec élévation de privilèges :
 
-```powershell
-Set-HgsClientHostKey
-Get-HgsClientHostKey -Path "$HOME\Desktop\$env:computername-key.cer"
-```
+Répétez les étapes suivantes pour chaque ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] à attester avec SGH :
 
-Si vous avez déjà créé une clé d’hôte et que vous souhaitez générer une nouvelle paire de clés, utilisez les commandes suivantes à la place :
+1. Pour générer la paire de clés, exécutez la commande suivante dans une console PowerShell avec élévation de privilèges :
 
-```powershell
-Remove-HgsClientHostKey
-Set-HgsClientHostKey
-Get-HgsClientHostKey -Path "$HOME\Desktop\$env:computername-key.cer"
-```
+    ```powershell
+    Set-HgsClientHostKey
+    Get-HgsClientHostKey -Path "$HOME\Desktop\$env:computername-key.cer"
+    ```
 
-Une fois que vous avez généré la clé d’hôte, copiez le fichier de certificat sur un serveur SGH et exécutez la commande suivante dans une console PowerShell avec élévation de privilèges pour inscrire l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] :
+    Si vous avez déjà créé une clé d’hôte et que vous souhaitez générer une nouvelle paire de clés, utilisez les commandes suivantes à la place :
 
-```powershell
-Add-HgsAttestationHostKey -Name "YourComputerName" -Path "C:\temp\yourcomputername.cer"
-```
+    ```powershell
+    Remove-HgsClientHostKey
+    Set-HgsClientHostKey
+    Get-HgsClientHostKey -Path "$HOME\Desktop\$env:computername-key.cer"
+    ```
 
-Répétez l’étape 4B pour chaque ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] à attester avec SGH.
+2. Partagez le fichier de certificat avec l’administrateur SGH.
 
-## <a name="step-5-confirm-the-host-can-attest-successfully"></a>Étape 5 : Confirmer que l’hôte peut effectuer correctement une attestation
+### <a name="register-the-sql-server-computer-with-hgs"></a>Inscrire l’ordinateur SQL Server auprès de SGH
+
+> [!NOTE]
+> Les étapes ci-dessous doivent être effectuées par l’administrateur SGH.
+
+Répétez les étapes suivantes pour chaque ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] à attester avec SGH :
+
+1. Copiez le fichier de certificat que vous avez obtenu de l’administrateur de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] sur un serveur SGH.
+2. Pour inscrire l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)], exécutez les commandes suivantes dans une console PowerShell avec élévation de privilèges :
+
+    ```powershell
+    Add-HgsAttestationHostKey -Name "YourComputerName" -Path "C:\temp\yourcomputername.cer"
+   ```
+
+## <a name="step-5-confirm-the-host-can-attest-successfully"></a>Étape 5 : Confirmer que l’hôte peut effectuer correctement une attestation
+
+> [!NOTE]
+> Cette étape doit être effectuée par l’administrateur de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)].
 
 Une fois que vous avez inscrit l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] auprès de SGH ([étape 4A](#step-4a-register-a-computer-in-tpm-mode) pour le mode TPM, [étape 4B](#step-4b-register-a-computer-in-host-key-mode) pour le mode clé d’hôte), vous devez confirmer qu’il peut effectuer une attestation.
 
-Vous pouvez vérifier la configuration du client d’attestation SGH et effectuer une tentative d’attestation à tout moment avec [Get-HgsClientConfiguration](/powershell/module/hgsclient/get-hgsclientconfiguration).
+Vous pouvez vérifier la configuration du client d’attestation SGH et effectuer une tentative d’attestation à tout moment avec [Get-HgsClientConfiguration](/powershell/module/hgsclient/get-hgsclientconfiguration?view=win10-ps&preserve-view=true).
+
 La sortie de la commande doit ressembler à ce qui suit :
 
 ```
@@ -270,7 +327,7 @@ Les valeurs les plus courantes pouvant apparaître dans `AttestationStatus` sont
 | ----------------- | ----------- |
 | Expiré | L’hôte a déjà obtenu l’attestation, mais le certificat d’intégrité qu’il a reçu a expiré. Vérifiez que l’heure de l’hôte et celle du SGH sont synchronisées. |
 | `InsecureHostConfiguration` | L’ordinateur ne respecte pas une ou plusieurs des stratégies d’attestation configurées sur le serveur SGH. Pour plus d’informations, consultez `AttestationSubStatus`. |
-| NotConfigured | L’ordinateur n’est pas configuré avec une URL d’attestation. [Configurez l’URL d’attestation](#step-3-configure-the-attestation-url). |
+| NotConfigured | L’ordinateur n’est pas configuré avec une URL d’attestation. [Configurer l’URL d’attestation](#step-3-configure-the-attestation-url) |
 | Passed | L’ordinateur a obtenu l’attestation et est autorisé à exécuter des enclaves [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)]. |
 | `TransientError` | La tentative d’attestation a échoué en raison d’une erreur temporaire. Cette erreur signifie généralement qu’un problème s’est produit au moment de contacter SGH sur le réseau. Examinez la connexion réseau et vérifiez que l’ordinateur peut résoudre et acheminer le nom du service SGH. |
 | `TpmError` | L’appareil TPM de l’ordinateur a signalé une erreur durant la tentative d’attestation. Consultez les journaux TPM pour plus d’informations. L’effacement du TPM peut résoudre le problème, mais veillez à suspendre BitLocker et d’autres services qui reposent sur le TPM avant de l’effacer. |
@@ -289,3 +346,7 @@ Le tableau ci-dessous liste les valeurs les plus courantes et explique comment c
 | Iommu | Aucune appareil IOMMU n’est activé sur cet ordinateur. S’il s’agit d’un ordinateur physique, activez l’unité IOMMU dans le menu Configuration UEFI. S’il s’agit d’une machine virtuelle et qu’aucune unité IOMMU n’est disponible, exécutez `Disable-HgsAttestationPolicy Hgs_IommuEnabled` sur le serveur SGH. |
 | SecureBoot | Le démarrage sécurisé n’est pas activé sur cet ordinateur. Activez le démarrage sécurisé dans le menu de configuration UEFI pour résoudre cette erreur. |
 | VirtualSecureMode | La sécurité basée sur la virtualisation n’est pas en cours d’exécution sur cet ordinateur. Suivez les instructions de l’[Étape 2 : Vérifier que VBS est en cours d’exécution sur l’ordinateur](#step-2-verify-virtualization-based-security-is-running). |
+
+## <a name="next-steps"></a>Étapes suivantes
+
+- [Configurer l’enclave sécurisée dans SQL Server](always-encrypted-enclaves-configure-enclave-type.md)

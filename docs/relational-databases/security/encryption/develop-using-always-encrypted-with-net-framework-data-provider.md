@@ -2,7 +2,7 @@
 title: Always Encrypted avec le fournisseur de données .NET Framework
 description: Découvrez comment développer des applications .NET à l’aide de la fonctionnalité Always Encrypted pour SQL Server.
 ms.custom: seo-lt-2019
-ms.date: 10/31/2019
+ms.date: 01/15/2021
 ms.prod: sql
 ms.prod_service: security, sql-database
 ms.reviewer: vanto
@@ -12,23 +12,24 @@ ms.assetid: 827e509e-3c4f-4820-aa37-cebf0f7bbf80
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 4e3bd7a6481f677de9355a892eb78b3b5aeaaa15
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 02c99d9cee2eb257c0254c15bd92a0e2812ccc54
+ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477580"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98534768"
 ---
 # <a name="using-always-encrypted-with-the-net-framework-data-provider-for-sql-server"></a>Utilisation d’Always Encrypted avec le fournisseur de données .NET Framework pour SQL Server
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb.md)]
 
 Cet article fournit des informations sur le développement d’applications .NET à l’aide d’[Always Encrypted](always-encrypted-database-engine.md) ou [Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves.md) et du [fournisseur de données .NET Framework pour SQL Server](/dotnet/framework/data/adonet/sql/).
 
-Always Encrypted permet aux applications clientes de chiffrer des données sensibles et de ne jamais révéler les données ou les clés de chiffrement à SQL Server ou Azure SQL Database. À cette fin, un pilote avec Always Encrypted, tel que le fournisseur de données .NET Framework, chiffre et déchiffre de manière transparente les données sensibles dans l’application cliente. Le pilote détermine automatiquement les paramètres de requêtes qui correspondent aux colonnes de base de données sensibles (protégées avec Always Encrypted) et chiffre les valeurs de ces paramètres avant de transmettre les données à SQL Server ou Azure SQL Database. De même, il déchiffre de manière transparente les données récupérées dans les colonnes de base de données chiffrées, qui figurent dans les résultats de la requête. Pour plus d’informations, consultez [Développer des applications à l’aide d’Always Encrypted](always-encrypted-client-development.md) et [Développer des applications à l’aide d’Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-client-development.md).
+Always Encrypted permet aux applications clientes de chiffrer des données sensibles et de ne jamais révéler les données ou les clés de chiffrement à SQL Server ou Azure SQL Database. À cette fin, un pilote avec Always Encrypted, tel que le fournisseur de données .NET Framework, chiffre et déchiffre de manière transparente les données sensibles dans l’application cliente. Le pilote détermine automatiquement les paramètres de requêtes qui correspondent aux colonnes de base de données sensibles (protégées avec Always Encrypted) et chiffre les valeurs de ces paramètres avant de transmettre les données à SQL Server ou Azure SQL Database. De même, il déchiffre de manière transparente les données récupérées dans les colonnes de base de données chiffrées, qui figurent dans les résultats de la requête. Pour plus d’informations, consultez [Développer des applications en utilisant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-client-development.md).
 
 ## <a name="prerequisites"></a>Prérequis
 
-- Configurez Always Encrypted dans votre base de données. Pour cela, vous devez mettre en service des clés Always Encrypted et configurer le chiffrement pour les colonnes de base de données sélectionnées. Si vous n’avez pas déjà une base de données configurée avec Always Encrypted, suivez les instructions de [Bien démarrer avec Always Encrypted](always-encrypted-database-engine.md#getting-started-with-always-encrypted).
+- Configurez Always Encrypted dans votre base de données. Pour cela, vous devez mettre en service des clés Always Encrypted et configurer le chiffrement pour les colonnes de base de données sélectionnées. Si vous n’avez pas déjà une base de données configurée avec Always Encrypted, suivez les instructions de [Bien démarrer avec Always Encrypted](../../../relational-databases/security/encryption/always-encrypted-database-engine.md#getting-started-with-always-encrypted).
+- Si vous utilisez Always Encrypted avec enclaves sécurisées, consultez [Développer des applications en utilisant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-client-development.md) pour connaître les prérequis supplémentaires.
 - Vérifiez que .NET Framework version 4.6.1 ou ultérieure est installé sur votre machine de développement. Pour plus d’informations, consultez [.NET Framework 4.6](/dotnet/framework/). Vous devez également vérifier que .NET Framework version 4.6 ou ultérieure est configuré comme version cible de .NET Framework dans votre environnement de développement. Si vous utilisez Visual Studio, consultez [Guide pratique pour cibler une version de .NET Framework](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework). 
 
 > [!NOTE]
@@ -64,15 +65,21 @@ L’activation d’Always Encrypted ne suffit pas à la réussite du chiffrement
 
 À partir de .NET Framework version 4.7.2, le pilote prend en charge [Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves.md). 
 
-Pour activer l’utilisation de l’enclave pendant la connexion à [!INCLUDE [sssqlv15-md](../../../includes/sssqlv15-md.md)] ou version ultérieure, vous devez configurer votre application et le fournisseur de données .NET Framework pour SQL Server afin d’activer les calculs d’enclave et l’attestation d’enclave. 
-
 Pour obtenir des informations générales sur le rôle du pilote client dans les calculs d’enclave et l’attestation d’enclave, consultez [Développer des applications à l’aide d’Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-client-development.md). 
 
 Pour configurer votre application :
 
-1. Intégrez le package NuGet [Microsoft.SqlServer.Management.AlwaysEncrypted.EnclaveProviders](https://www.nuget.org/packages/Microsoft.SqlServer.Management.AlwaysEncrypted.EnclaveProviders) à votre application. NuGet est une bibliothèque de fournisseurs d’enclave qui implémente la logique côté client pour des protocoles d’attestation et pour établir un canal sécurisé avec une enclave sécurisée au sein de SQL Server.  
-2. Mettez à jour la configuration de votre application (par exemple, dans web.config ou app.config) pour définir le mappage au type d’enclave avec lequel votre instance [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] a été configurée (consultez [Configurer le type d’enclave pour l’option de configuration de serveur Always Encrypted](../../../database-engine/configure-windows/configure-column-encryption-enclave-type.md)). [!INCLUDE [sssqlv15-md](../../../includes/sssqlv15-md.md)] prend en charge les enclaves VBS et le service Guardian hôte pour l’attestation. Par conséquent, vous devez mapper le type d’enclave VBS à la classe Microsoft.SqlServer.Management.AlwaysEncrypted.EnclaveProviders.HostGuardianServiceEnclaveProvider à partir du package NuGet. 
-3. Activez les calculs d’enclave pour connecter votre application à la base de données en définissant le mot clé de l’URL d’attestation d’enclave dans la chaîne de connexion sur un point de terminaison d’attestation. La valeur du mot clé doit être définie sur le point de terminaison d’attestation du serveur SGH configuré dans votre environnement. 
+1. Activez Always Encrypted pour les requêtes de votre application, comme expliqué dans la section précédente.
+2. Intégrez le package NuGet [Microsoft.SqlServer.Management.AlwaysEncrypted.EnclaveProviders](https://www.nuget.org/packages/Microsoft.SqlServer.Management.AlwaysEncrypted.EnclaveProviders) à votre application. NuGet est une bibliothèque de fournisseurs d’enclave qui implémente la logique côté client pour des protocoles d’attestation et pour établir un canal sécurisé avec une enclave sécurisée.  
+3. Mettez à jour la configuration de votre application (par exemple, dans web.config ou app.config) de manière à définir le mappage entre un type d’enclave configuré pour votre base de données et un fournisseur d’enclave. 
+    1. Si vous utilisez [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] et le service Guardian hôte (SGH), vous devrez mapper le type d’enclave VBS à la classe Microsoft.SqlServer.Management.AlwaysEncrypted.EnclaveProviders.HostGuardianServiceEnclaveProvider du package NuGet.
+    2. Si vous utilisez [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] et Microsoft Azure Attestation, vous devrez mapper le type d’enclave SGX à la classe Microsoft.SqlServer.Management.AlwaysEncrypted.EnclaveProviders.HostGuardianServiceEnclaveProvider du package NuGet.
+
+    Pour obtenir des instructions détaillées expliquant comment modifier la configuration de votre application, consultez [Tutoriel : Développer des applications à l’aide d’Always Encrypted et d’enclaves sécurisées](../tutorial-always-encrypted-enclaves-develop-net-framework-apps.md).
+
+4. Configurez le mot clé `Enclave Attestation URL` de votre chaîne de connexion de base de données sur une URL d’attestation (point de terminaison de service d’attestation). Vous devez obtenir une URL d’attestation pour votre environnement auprès de votre administrateur de service d’attestation.
+   1. Si vous utilisez [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] et le service Guardian hôte (SGH), consultez [Déterminer et partager l’URL d’attestation SGH](always-encrypted-enclaves-host-guardian-service-deploy.md#step-6-determine-and-share-the-hgs-attestation-url).
+   2. Si vous utilisez [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] et Microsoft Azure Attestation, consultez [Déterminer l’URL d’attestation de votre de stratégie d’attestation](/azure-sql/database/always-encrypted-enclaves-configure-attestation#determine-the-attestation-url-for-your-attestation-policy).
 
 Pour obtenir un tutoriel pas à pas, consultez [Tutoriel : Développer une application .NET Framework avec Always Encrypted avec enclaves sécurisées](../tutorial-always-encrypted-enclaves-develop-net-framework-apps.md)
 
@@ -308,7 +315,7 @@ Vous n’avez pas besoin d’apporter des modifications au code de l’applicati
 
 ### <a name="using-azure-key-vault-provider"></a>Utilisation du fournisseur Azure Key Vault
 
-Azure Key Vault est un outil est très pratique qui permet de stocker et de gérer des clés principales de colonne Always Encrypted, en particulier si vos applications sont hébergées dans Azure. Le fournisseur de données .NET Framework pour SQL Server ne comprend pas de fournisseur de magasin de clés principales de colonne intégré pour Azure Key Vault. Toutefois, celui-ci est disponible sous la forme d’un package Nuget que vous pouvez facilement intégrer à votre application. Pour plus d’informations, consultez [Always Encrypted - Protéger les données sensibles de la base de données SQL à l’aide du chiffrement de base de données et stocker vos clés de chiffrement dans Azure Key Vault](/azure/azure-sql/database/always-encrypted-azure-key-vault-configure).
+Azure Key Vault est un outil est très pratique qui permet de stocker et de gérer des clés principales de colonne Always Encrypted, en particulier si vos applications sont hébergées dans Azure. Le fournisseur de données .NET Framework pour SQL Server ne comprend pas de fournisseur de magasin de clés principales de colonne intégré pour Azure Key Vault. Toutefois, celui-ci est disponible sous la forme d’un package NuGet que vous pouvez facilement intégrer à votre application. Pour plus d’informations, consultez [Always Encrypted - Protéger les données sensibles de la base de données SQL à l’aide du chiffrement de base de données et stocker vos clés de chiffrement dans Azure Key Vault](/azure/azure-sql/database/always-encrypted-azure-key-vault-configure).
 
 ### <a name="implementing-a-custom-column-master-key-store-provider"></a>Implémentation d’un fournisseur de magasin de clés principales de colonne personnalisé
 
@@ -527,7 +534,7 @@ Grâce à SqlBulkCopy, les données qui sont déjà chiffrées et stockées dans
 
 - Vérifiez que la configuration du chiffrement de la table cible est identique à celle de la table source. Les deux tables doivent avoir les mêmes colonnes chiffrées, et ces colonnes doivent être chiffrées à l’aide des mêmes types et des mêmes clés de chiffrement. Remarque : Si les colonnes cibles sont chiffrées différemment de la colonne source correspondante, vous ne pourrez pas déchiffrer les données de la table cible après les avoir copiées. Les données seront endommagées.
 - Configurez les deux connexions de base de données, c’est-à-dire, celle vers la table source et celle vers la table cible, sans activer Always Encrypted. 
-- Définissez l’option AllowEncryptedValueModifications (voir [SqlBulkCopyOptions](/dotnet/api/system.data.sqlclient.sqlbulkcopyoptions)). Remarque : Faites attention lorsque vous spécifiez AllowEncryptedValueModifications, car cela peut endommager la base de données. En effet, le fournisseur de données .NET Framework pour SQL Server ne vérifie pas si les données sont chiffrées, ou si elles sont correctement chiffrées à l’aide du même type de chiffrement, du même algorithme et de la même clé que la colonne cible.
+- Définissez l’option AllowEncryptedValueModifications (voir [SqlBulkCopyOptions](/dotnet/api/system.data.sqlclient.sqlbulkcopyoptions)). Remarque : Faites attention lorsque vous spécifiez AllowEncryptedValueModifications, car cela peut endommager la base de données. En effet, le fournisseur de données .NET Framework pour SQL Server ne vérifie pas si les données sont chiffrées, ou si elles sont correctement chiffrées à l’aide du même type de chiffrement, du même algorithme et de la même clé que la colonne cible.
 
 L’option AllowEncryptedValueModifications est disponible dans .NET Framework 4.6.1 et versions ultérieures.
 
@@ -560,27 +567,27 @@ static public void CopyTablesUsingBulk(string sourceTable, string targetTable)
 
 **Espace de noms :** [System.Data.SqlClient](/dotnet/api/system.data.sqlclient)
 
-**Assembly :** System.Data (dans System.Data.dll)
+**Assembly :** System.Data (dans System.Data.dll)
 
 
 
 
 |Nom|Description|Introduit avec .NET
 |:---|:---|:---
-|[Classe SqlColumnEncryptionCertificateStoreProvider](/dotnet/api/system.data.sqlclient.sqlcolumnencryptioncertificatestoreprovider)|Fournisseur de magasin de clés pour le magasin de certificats Windows.|  4.6
-|[Classe SqlColumnEncryptionCngProvider](/dotnet/api/system.data.sqlclient.sqlcolumnencryptioncngprovider)|Fournisseur de magasin de clés pour l’API de chiffrement Microsoft de la prochaine génération (CNG).|  4.6.1
+|[Classe SqlColumnEncryptionCertificateStoreProvider](/dotnet/api/system.data.sqlclient.sqlcolumnencryptioncertificatestoreprovider)|Fournisseur de magasin de clés pour le magasin de certificats Windows.|  4,6
+|[Classe SqlColumnEncryptionCngProvider](/dotnet/api/system.data.sqlclient.sqlcolumnencryptioncngprovider)|Fournisseur de magasin de clés pour l’API de chiffrement Microsoft de nouvelle génération (CNG).|  4.6.1
 |[Classe SqlColumnEncryptionCspProvider](/dotnet/api/system.data.sqlclient.sqlcolumnencryptioncspprovider)|Fournisseur de magasin de clés pour les fournisseurs de services de chiffrement (CSP) basés sur la CAPI Microsoft.|4.6.1  
-|[classe SqlColumnEncryptionKeyStoreProvider](/dotnet/api/system.data.sqlclient.sqlcolumnencryptionkeystoreprovider)|Classe de base des fournisseurs de magasins de clés.|  4.6
-|[Énumération SqlCommandColumnEncryptionSetting](/dotnet/api/system.data.sqlclient.sqlcommandcolumnencryptionsetting)|Paramètres pour activer le chiffrement et le déchiffrement d’une connexion de base de données.|4.6  
-|[Énumération SqlConnectionColumnEncryptionSetting](/dotnet/api/system.data.sqlclient.sqlconnectioncolumnencryptionsetting)|Paramètres pour contrôler le comportement d’Always Encrypted pour des requêtes individuelles.|4.6  
-| [Propriété SqlConnectionStringBuilder.ColumnEncryptionSetting](/dotnet/api/system.data.sqlclient.sqlconnectionstringbuilder.columnencryptionsetting)|Obtient et définit Always Encrypted dans la chaîne de connexion.|4.6|
+|[classe SqlColumnEncryptionKeyStoreProvider](/dotnet/api/system.data.sqlclient.sqlcolumnencryptionkeystoreprovider)|Classe de base des fournisseurs de magasins de clés.|  4,6
+|[Énumération SqlCommandColumnEncryptionSetting](/dotnet/api/system.data.sqlclient.sqlcommandcolumnencryptionsetting)|Paramètres pour activer le chiffrement et le déchiffrement d’une connexion de base de données.|4,6  
+|[Énumération SqlConnectionColumnEncryptionSetting](/dotnet/api/system.data.sqlclient.sqlconnectioncolumnencryptionsetting)|Paramètres pour contrôler le comportement d’Always Encrypted pour des requêtes individuelles.|4,6  
+| [Propriété SqlConnectionStringBuilder.ColumnEncryptionSetting](/dotnet/api/system.data.sqlclient.sqlconnectionstringbuilder.columnencryptionsetting)|Obtient et définit Always Encrypted dans la chaîne de connexion.|4,6|
 | [propriété SqlConnection.ColumnEncryptionQueryMetadataCacheEnabled](/dotnet/api/system.data.sqlclient.sqlconnection.columnencryptionquerymetadatacacheenabled) | Active et désactive la mise en cache des métadonnées de requête de chiffrement. | 4.6.2
 | [SqlConnection.ColumnEncryptionKeyCacheTtl](/dotnet/api/system.data.sqlclient.sqlconnection.columnencryptionkeycachettl) | Obtient et définit la durée de vie des entrées du cache de clé de chiffrement de colonne. | 4.6.2
-|[SqlConnection.ColumnEncryptionTrustedMasterKeyPaths](/dotnet/api/system.data.sqlclient.sqlconnection.columnencryptiontrustedmasterkeypaths)|Vous permet de définir une liste de chemins d’accès de clés approuvés pour un serveur de bases de données. Si, pendant le traitement d’une requête d’application, le pilote reçoit un chemin d’accès de clé qui ne figure pas dans la liste, la requête échoue. Cette propriété fournit une protection supplémentaire contre les attaques de sécurité durant lesquelles un ordinateur SQL Server compromis fournit des chemins d’accès de clés factices, qui peuvent entraîner une fuite des informations d’identification du magasin de clés.|  4.6
-|[Méthode SqlConnection.RegisterColumnEncryptionKeyStoreProviders](/dotnet/api/system.data.sqlclient.sqlconnection.registercolumnencryptionkeystoreproviders)|Vous permet d’inscrire des fournisseurs de magasins de clés personnalisés. Il s’agit d’un dictionnaire qui mappe des noms de fournisseurs de magasins de clés à des implémentations de fournisseurs de magasins de clés.|  4.6
-|[Constructeur SqlCommand (String, SqlConnection, SqlTransaction, SqlCommandColumnEncryptionSetting)](https://msdn.microsoft.com/library/dn956511\(v=vs.110\).aspx)|Permet de contrôler le comportement d’Always Encrypted pour des requêtes individuelles.|  4.6
-|[SqlParameter.ForceColumnEncryption](/dotnet/api/system.data.sqlclient.sqlparameter.forcecolumnencryption)|Applique le chiffrement d’un paramètre. Si SQL Server informe le pilote que le paramètre ne nécessite pas de chiffrement, la requête utilisant le paramètre échoue. Cette propriété fournit une protection supplémentaire contre les attaques au niveau de la sécurité qui impliquent un serveur SQL Server compromis fournissant des métadonnées de chiffrement incorrectes au client, ce qui peut entraîner la divulgation de données.|4.6  
-|Nouveau mot clé de [chaîne de connexion](/dotnet/api/system.data.sqlclient.sqlconnection.connectionstring) : `Column Encryption Setting=enabled`|Active ou désactive la fonctionnalité Always Encrypted pour la connexion.| 4.6 
+|[SqlConnection.ColumnEncryptionTrustedMasterKeyPaths](/dotnet/api/system.data.sqlclient.sqlconnection.columnencryptiontrustedmasterkeypaths)|Vous permet de définir une liste de chemins d’accès de clés approuvés pour un serveur de bases de données. Si le pilote reçoit un chemin de clé qui ne figure pas dans la liste pendant le traitement d’une requête d’application, celle-ci échouera. Cette propriété fournit une protection supplémentaire contre les attaques de sécurité durant lesquelles un ordinateur SQL Server compromis fournit des chemins d’accès de clés factices, qui peuvent entraîner une fuite des informations d’identification du magasin de clés.|  4.6
+|[Méthode SqlConnection.RegisterColumnEncryptionKeyStoreProviders](/dotnet/api/system.data.sqlclient.sqlconnection.registercolumnencryptionkeystoreproviders)|Vous permet d’inscrire des fournisseurs de magasins de clés personnalisés. Il s’agit d’un dictionnaire qui mappe des noms de fournisseurs de magasins de clés à des implémentations de fournisseurs de magasins de clés.|  4,6
+|[Constructeur SqlCommand (String, SqlConnection, SqlTransaction, SqlCommandColumnEncryptionSetting)](https://msdn.microsoft.com/library/dn956511\(v=vs.110\).aspx)|Permet de contrôler le comportement d’Always Encrypted pour des requêtes individuelles.|  4,6
+|[SqlParameter.ForceColumnEncryption](/dotnet/api/system.data.sqlclient.sqlparameter.forcecolumnencryption)|Applique le chiffrement d’un paramètre. Si SQL Server informe le pilote que le paramètre ne nécessite pas de chiffrement, la requête utilisant le paramètre échoue. Cette propriété fournit une protection supplémentaire contre les attaques au niveau de la sécurité qui impliquent un serveur SQL Server compromis fournissant des métadonnées de chiffrement incorrectes au client, ce qui peut entraîner la divulgation de données.|4,6  
+|Nouveau mot clé de [chaîne de connexion](/dotnet/api/system.data.sqlclient.sqlconnection.connectionstring) : `Column Encryption Setting=enabled`|Active ou désactive la fonctionnalité Always Encrypted pour la connexion.| 4,6 
   
 
 ## <a name="see-also"></a>Voir aussi

@@ -2,7 +2,7 @@
 title: SQL Server, réplica de base de données | Microsoft Docs
 description: Découvrez l’objet de performance SQLServer:Database Replica, qui contient des compteurs de performances sur les bases de données secondaires d’un groupe de disponibilité Always On.
 ms.custom: ''
-ms.date: 08/24/2016
+ms.date: 01/13/2021
 ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a5f6bdce-2b13-4924-aaeb-b50b57d624d8
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 176f7b9ba860e6ca7f72e35f6c6a87622948fc70
-ms.sourcegitcommit: 0e0cd9347c029e0c7c9f3fe6d39985a6d3af967d
+ms.openlocfilehash: 3dff6cb9b3a65ea5f38a97786e10701bc1f31749
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96505753"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98170301"
 ---
 # <a name="sql-server-database-replica"></a>SQL Server, réplica de base de données
 
@@ -42,7 +42,7 @@ ms.locfileid: "96505753"
 |**Octets restants de restauration par progression**|Taille de journal restante, en kilo-octets, avant la fin de la phase de restauration.|Réplica secondaire|  
 |**Octets réexécutés/s**|Quantité d'enregistrements du journal réexécutée sur la base de données secondaire au cours de la dernière seconde.|Réplica secondaire|  
 |**Taille totale de journal nécessitant une annulation**|Nombre total de kilo-octets du journal qui doivent être annulés.|Réplica secondaire|  
-|**Délai de transaction**|Délai d’attente d’accusé de réception de validation non terminée pour toutes les transactions en cours, en millisecondes. Divisez cette valeur par *Transactions d’écriture en miroir/s* pour obtenir le *délai de transaction moyen*. Pour plus d’informations, consultez [SQL Server 2012 AlwaysOn – Part 12 – Performance Aspects and Performance Monitoring II](/archive/blogs/saponsqlserver/sql-server-2012-alwayson-part-12-performance-aspects-and-performance-monitoring-ii).|Réplica principal|  
+|**Délai de transaction**|Délai total d’attente d’accusé de réception de validation non terminée pour toutes les transactions actuelles, en millisecondes. Divisez cette valeur par *Transactions d’écriture en miroir/s* pour obtenir le *délai de transaction moyen*. Pour plus d’informations, consultez [SQL Server 2012 AlwaysOn – Part 12 – Performance Aspects and Performance Monitoring II](/archive/blogs/saponsqlserver/sql-server-2012-alwayson-part-12-performance-aspects-and-performance-monitoring-ii).|Réplica principal|  
   
 ## <a name="see-also"></a>Voir aussi
   

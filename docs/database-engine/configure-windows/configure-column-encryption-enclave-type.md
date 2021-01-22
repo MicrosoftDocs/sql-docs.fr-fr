@@ -2,7 +2,7 @@
 title: Configurer le type d’enclave pour l’option de configuration de serveur Always Encrypted | Microsoft Docs
 description: Découvrez comment activer ou désactiver une enclave sécurisée pour Always Encrypted. Découvrez comment vérifier si une enclave a été correctement initialisée.
 ms.custom: ''
-ms.date: 09/24/2018
+ms.date: 01/15/2021
 ms.prod: sql
 ms.prod_service: security
 ms.reviewer: ''
@@ -11,18 +11,18 @@ ms.topic: conceptual
 author: jaszymas
 ms.author: jaszymas
 monikerRange: '>= sql-server-ver15'
-ms.openlocfilehash: 45f6bdca2602a9a85cf9fc193269b445599c78ad
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 19e7349c3b8bb9ef104f95ef0963b6d7982a3669
+ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480330"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98534748"
 ---
 # <a name="configure-the-enclave-type-for-always-encrypted-server-configuration-option"></a>Configurer le type d’enclave pour l’option de configuration de serveur Always Encrypted
 
 [!INCLUDE [sqlserver2019-windows-only](../../includes/applies-to-version/sqlserver2019-windows-only.md)]
 
-Cet article explique comment activer ou désactiver une enclave sécurisée pour Always Encrypted avec enclaves sécurisées. Pour plus d’informations, consultez [Always Encrypted avec enclaves sécurisées](../../relational-databases/security/encryption/always-encrypted-enclaves.md).
+Cet article explique comment activer ou désactiver une enclave sécurisée pour Always Encrypted avec enclaves sécurisées. Pour plus d’informations, consultez [Always Encrypted avec enclaves sécurisées](../../relational-databases/security/encryption/always-encrypted-enclaves.md) et [Configurer l’enclave sécurisée dans SQL Server](../../relational-databases/security/encryption/always-encrypted-enclaves-configure-enclave-type.md).
 
 L’option de configuration de serveur **column encryption enclave type** contrôle le type d’une enclave sécurisée utilisée pour Always Encrypted. Vous pouvez affecter l’une des valeurs suivantes à cette option :  
   

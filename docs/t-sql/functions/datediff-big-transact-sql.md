@@ -1,11 +1,8 @@
 ---
+title: DATEDIFF_BIG (Transact-SQL)
 description: DATEDIFF_BIG (Transact-SQL)
-title: DATEDIFF_BIG (Transact-SQL) | Microsoft Docs
-ms.custom: ''
-ms.date: 07/18/2019
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.reviewer: ''
 ms.technology: t-sql
 ms.topic: language-reference
 f1_keywords:
@@ -21,12 +18,15 @@ helpviewer_keywords:
 ms.assetid: 19ac1693-3cfa-400d-bf83-20a9cb46599a
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ea087da6532c43493fd10f647788297d98f35f72
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.reviewer: ''
+ms.custom: ''
+ms.date: 01/12/2021
+ms.openlocfilehash: 8f6078aebab5456b8867aca1b7f6987d8a1eb6fd
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093652"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98168151"
 ---
 # <a name="datediff_big-transact-sql"></a>DATEDIFF_BIG (Transact-SQL)
 
@@ -92,9 +92,9 @@ Consultez *startdate*.
 ## <a name="return-value"></a>Valeur de retour  
 Retourne la différence **bigint** entre *startdate* et *enddate*, exprimée dans le jeu de limites par *datepart*.
   
-Si une valeur de retour est hors limites pour **bigint** (-9 223 372 036 854 775 808 à +9 223 372 036 854 775 807), `DATEDIFF_BIG` retourne une erreur. Contrairement à `DATEDIFF`, qui retourne un **int** et qui par conséquent, peut dépasser la capacité avec une précision d’une **minute** ou plus, `DATEDIFF_BIG` peut dépasser la capacité seulement si vous utilisez une précision d’une **nanoseconde**, où la différence entre *enddate* et *startdate* est supérieure à 292 années, 3 mois, 10 jours, 23 heures, 47 minutes et 16,8547758 secondes.
+Si une valeur de retour est hors limites pour **bigint** (-9 223 372 036 854 775 808 à +9 223 372 036 854 775 807), `DATEDIFF_BIG` retourne une erreur. Contrairement à DATEDIFF, qui retourne un **int** et qui par conséquent, peut dépasser la capacité d’une **minute** ou plus, `DATEDIFF_BIG` peut dépasser la capacité seulement si vous utilisez une précision d’une **nanoseconde**, où la différence entre *enddate* et *startdate* est supérieure à 292 années, 3 mois, 10 jours, 23 heures, 47 minutes et 16,8547758 secondes.
   
-Si *startdate* et *enddate* se voient tous les deux assigner uniquement une valeur d’heure et que *datepart* n’est pas un *datepart* d’heure, `DATEDIFF_BIG` retourne 0.
+Si *startdate* et *enddate* se voient tous les deux assigner uniquement une valeur d’heure et que *datepart* n’est pas un *datepart* d’heure, `DATEDIFF_BIG` retourne 0.
   
 `DATEDIFF_BIG` n’utilise pas un composant de décalage de fuseau horaire de *startdate* ou *enddate* pour calculer la valeur de retour.
   
@@ -123,11 +123,11 @@ SELECT DATEDIFF_BIG(millisecond, '2005-12-31 23:59:59.9999999', '2006-01-01 00:0
 ## <a name="remarks"></a>Notes  
 Utilisez `DATEDIFF_BIG` dans les clauses `SELECT <list>`, `WHERE`, `HAVING`, `GROUP BY` et `ORDER BY`.
   
-`DATEDIFF_BIG` caste implicitement les littéraux de chaîne en type **datetime2**. Cela signifie que `DATEDIFF_BIG` ne prend pas en charge le format YDM quand la date est passée comme chaîne. Vous devez caster explicitement la chaîne en type **datetime** ou **smalldatetime** pour utiliser le format AJM.
+`DATEDIFF_BIG` caste implicitement les littéraux de chaîne en type **datetime2**. Cela signifie que `DATEDIFF_BIG` ne prend pas en charge le format YDM lorsque la date est passée comme une chaîne. Vous devez caster explicitement la chaîne en type **datetime** ou **smalldatetime** pour utiliser le format AJM.
   
 La spécification de `SET DATEFIRST` n’a pas d’effet sur `DATEDIFF_BIG`. `DATEDIFF_BIG` utilise toujours Dimanche comme premier jour de la semaine pour que la fonction soit déterministe.
 
-`DATEDIFF_BIG` peut dépasser la capacité avec une précision d’une **nanoseconde** ou plus si la différence entre *enddate* et *startdate* retourne une valeur qui est hors limites pour **bigint**.
+`DATEDIFF_BIG` peut dépasser la capacité d’une **nanoseconde** ou plus si la différence entre *enddate* et *startdate* retourne une valeur qui est hors limites pour **bigint**.
   
 ## <a name="examples"></a>Exemples 
   

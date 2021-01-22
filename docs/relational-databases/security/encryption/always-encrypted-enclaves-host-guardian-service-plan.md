@@ -2,7 +2,7 @@
 title: Planifier l’attestation du Service Guardian hôte
 description: Planifiez l’attestation à l’aide du Service Guardian hôte pour Always Encrypted avec enclaves sécurisées dans SQL Server.
 ms.custom: ''
-ms.date: 10/12/2019
+ms.date: 01/15/2021
 ms.prod: sql
 ms.reviewer: vanto
 ms.technology: security
@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: rpsqrd
 ms.author: ryanpu
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: ed376fd4fe0f3c38d9996157c30722c24b27e8aa
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c4c80a51370de62410367b1225fd85e3ffe7f261
+ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477640"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98534798"
 ---
 # <a name="plan-for-host-guardian-service-attestation"></a>Planifier l’attestation du Service Guardian hôte
 
@@ -129,6 +129,17 @@ Ces conditions requises incluent :
     - Sur VMware vSphere 6.7 ou ultérieur, activez la prise en charge de la sécurité basée sur la virtualisation pour la machine virtuelle, comme le décrit la [documentation VMware](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-C2E78F3E-9DE2-44DB-9B0A-11440800AADD.html).
     - D’autres hyperviseurs et clouds publics peuvent prendre en charge les fonctionnalités de virtualisation imbriquées qui permettent aussi l’utilisation d’Always Encrypted avec enclaves VBS. Consultez les instructions relatives à la compatibilité et à la configuration dans la documentation de votre solution de virtualisation.
 - Si vous envisagez d’utiliser l’attestation de module TPM, vous aurez besoin d’une puce TPM 2.0 révision 1.16 prêt à être utilisée sur le serveur. À ce stade, l’attestation de Service Guardian hôte ne fonctionne pas avec les puces TPM 2.0 révision 1.38. De plus, le module TPM doit avoir un certificat de paire de clés de type EK (Endorsement Key) valide.
+
+## <a name="roles-and-responsibilities-when-configuring-attestation-with-hgs"></a>Rôles et responsabilités lors de la configuration de l’attestation avec SGH
+
+La configuration de l’attestation avec SGH implique la configuration de composants de différents types : SGH, des ordinateurs [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)], des instances [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] et des applications qui déclenchent l’attestation des enclaves. La configuration des composants de chacun de ces types est effectuée par les utilisateurs qui disposent de l’un des rôles suivants :
+
+- Administrateur SGH : déploie SGH, inscrit les ordinateurs [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] auprès de SGH et partage l’URL d’attestation SGH avec les administrateurs de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] et les administrateurs de l’application cliente.
+- Administrateur de l’ordinateur [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] : installe les composants du client d’attestation, active VBS sur les ordinateurs [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)], fournit à l’administrateur SGH les informations nécessaires à l’inscription des ordinateurs [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] auprès de SGH, configure l’URL d’attestation sur les ordinateurs [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] et vérifie que les ordinateurs [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] peuvent attester correctement avec SGH.
+- Administrateur de la base de données : configure les enclaves sécurisées dans les instances [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)].
+- Administrateur d’application : configure l’application avec l’URL d’attestation obtenue auprès de l’administrateur SGH.
+
+Dans les environnements de production (qui gèrent des données sensibles réelles), il est important que votre organisation adhère à la séparation des rôles lors de la configuration de l’attestation, selon laquelle chaque rôle est assumé par une personne différente. En effet, si l’objectif de déploiement d’Always Encrypted au sein de votre organisation est de réduire la surface d’attaque en veillant à ce que les administrateurs d’ordinateurs [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] et les administrateurs de bases de données ne puissent pas accéder à des données sensibles, les administrateurs [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] et les administrateurs de bases de données ne doivent pas contrôler les serveurs SGH.
 
 ## <a name="devtest-environment-considerations"></a>Considérations relatives aux environnements de développement/test
 

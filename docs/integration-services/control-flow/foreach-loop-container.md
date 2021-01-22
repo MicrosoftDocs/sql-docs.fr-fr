@@ -31,12 +31,12 @@ helpviewer_keywords:
 ms.assetid: dd6cc2ba-631f-4adf-89dc-29ef449c6933
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 3265871cc1ddf221b3fb4090936d146f555dd3b5
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 7ae64e777b08cdf4df6f7e8fdd05ff8c3822a06b
+ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92194291"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98171521"
 ---
 # <a name="foreach-loop-container"></a>Conteneur de boucles Foreach
 
@@ -55,7 +55,7 @@ ms.locfileid: "92194291"
   
 -   Énumérateur de fichier Foreach, pour l'énumération des fichiers d'un dossier. L'énumérateur peut parcourir les sous-dossiers. Par exemple, vous pouvez lire tous les fichiers portant l'extension de nom de fichier *.log stockés dans le dossier Windows et ses sous-dossiers. Notez que l’ordre dans lequel les fichiers sont récupérés ne peut pas être spécifié.  
   
--   Foreach From Variable Enumerator, pour l'énumération de l'objet énumérable contenu dans une variable spécifiée. L’objet énumérable peut être un tableau, un **DataTable**ADO.NET, un énumérateur [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] , etc. Par exemple, vous pouvez énumérer les valeurs d'un tableau qui contient des noms de serveurs.  
+-   Foreach From Variable Enumerator, pour l'énumération de l'objet énumérable contenu dans une variable spécifiée. L’objet énumérable peut être un tableau, un **DataTable** ADO.NET, un énumérateur [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] , etc. Par exemple, vous pouvez énumérer les valeurs d'un tableau qui contient des noms de serveurs.  
   
 -   Énumérateur d'élément Foreach, pour l'énumération des éléments qui sont des collections. Par exemple, vous pouvez énumérer les noms d'exécutables et de répertoires de travail qu'une tâche d'exécution de processus utilise.  
   
@@ -134,7 +134,7 @@ Cette procédure décrit comment configurer un conteneur de boucles Foreach, not
   
     -   Pour utiliser l’énumérateur Foreach File, indiquez le dossier contenant les fichiers à énumérer, spécifiez un filtre pour le nom et le type de fichier et indiquez si le nom de fichier complet doit être renvoyé. Indiquez enfin si les fichiers des sous-dossiers doivent également être énumérés.  
   
-    -   Pour utiliser l’énumérateur Foreach Item, cliquez sur **Colonnes**et, dans la boîte de dialogue **Colonnes For Each Item** , cliquez sur **Ajouter** pour ajouter des colonnes. Sélectionnez un type de données dans la liste **Type de données** pour chaque colonne, puis cliquez sur **OK**.  
+    -   Pour utiliser l’énumérateur Foreach Item, cliquez sur **Colonnes** et, dans la boîte de dialogue **Colonnes For Each Item** , cliquez sur **Ajouter** pour ajouter des colonnes. Sélectionnez un type de données dans la liste **Type de données** pour chaque colonne, puis cliquez sur **OK**.  
   
          Tapez des valeurs dans les colonnes ou sélectionnez des valeurs dans les listes.  
   
@@ -461,7 +461,7 @@ Utilisez la page **Général** de la boîte de dialogue **Éditeur de boucle For
 ####  <a name="enumerator--foreach-azure-blob-enumerator"></a><a name="ForeachAzureBlob"></a> Enumerator = Foreach Azure Blob Enumerator  
  L’  **Énumérateur d’objets blob Azure** permet à un package SSIS d’énumérer les fichiers d’objets blob à l’emplacement d’objets blob spécifié. Vous pouvez stocker le nom du fichier d’objets blob énuméré dans une variable et l’utiliser dans des tâches au sein du conteneur de boucles Foreach.  
   
- **L’Énumérateur d’objets Blob Azure** est un composant de SQL Server Integration Services (SSIS) Feature Pack pour Azure pour [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]. Le Feature Pack est disponible en téléchargement [ici](https://go.microsoft.com/fwlink/?LinkID=626967).  
+ **L’Énumérateur d’objets Blob Azure** est un composant de SQL Server Integration Services (SSIS) Feature Pack pour Azure pour [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]. Le Feature Pack est disponible en téléchargement [ici](https://go.microsoft.com/fwlink/?LinkID=626967).  
   
  **Gestionnaire de connexions de stockage Azure**  
  Sélectionnez un gestionnaire de connexions Azure Storage existant ou créez-en un nouveau qui fait référence à un compte Azure Storage.  
@@ -510,7 +510,7 @@ Spécifie le chemin du dossier dont il faut énumérer les fichiers.
 **SearchRecursively**  
 Spécifie si la recherche doit être récursive au sein du dossier spécifié.
 
-***Remarques sur la configuration des autorisations du principal de service***
+**_Remarques sur la configuration des autorisations du principal de service_* _
 
 L’autorisation pour Data Lake Storage Gen2 est déterminée à la fois par [RBAC](/azure/storage/common/storage-auth-aad-rbac-portal#assign-rbac-roles-using-the-azure-portal) et par des [listes des contrôles d’accès (ACL)](/azure/storage/blobs/data-lake-storage-how-to-set-permissions-storage-explorer).
 Faites attention à ce que les listes de contrôle d’accès soient configurées à l’aide de l’ID d’objet (OID) du principal de service pour l’inscription d’application, comme indiqué [ici](/azure/storage/blobs/data-lake-storage-access-control#how-do-i-set-acls-correctly-for-a-service-principal).
@@ -518,7 +518,7 @@ Cet ID diffère de l’ID d’application (client) utilisé avec la configuratio
 Quand un principal de sécurité reçoit des autorisations sur les données RBAC par le biais d’un rôle intégré ou personnalisé, ces autorisations sont évaluées en premier lors de l’autorisation d’une demande.
 Si l’opération demandée est autorisée par les attributions RBAC du principal de sécurité, l’autorisation est immédiatement résolue et aucune vérification de liste de contrôle d’accès supplémentaire n’est effectuée.
 Sinon, si le principal de sécurité n’a pas d’attribution RBAC ou si l’opération de la demande ne correspond pas à l’autorisation affectée, les vérifications de liste de contrôle d’accès sont effectuées pour déterminer si le principal de sécurité est autorisé à effectuer l’opération demandée.
-Pour que l’énumérateur fonctionne, accordez au moins l’autorisation d’**Exécution** à partir du système de fichiers racine, ainsi que l’autorisation de **Lecture** pour le dossier cible.
+Pour que l’énumérateur fonctionne, accordez au moins l’autorisation _ *Exécution** à partir du système de fichiers racine, ainsi que l’autorisation **Lecture** pour le dossier cible.
 Vous pouvez également accorder au moins le rôle **Lecteur des données Blob du stockage** avec RBAC.
 Pour plus d’informations, consultez [cet](/azure/storage/blobs/data-lake-storage-access-control) article.
 

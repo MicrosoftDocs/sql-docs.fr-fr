@@ -2,7 +2,7 @@
 description: Interroger des colonnes en utilisant Always Encrypted avec Azure Data Studio
 title: Interroger des colonnes en utilisant Always Encrypted avec Azure Data Studio | Microsoft Docs
 ms.custom: ''
-ms.date: 5/19/2020
+ms.date: 01/15/2021
 ms.prod: sql
 ms.reviewer: vanto
 ms.technology: security
@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 0a61514ff76bbae9e403683529d017f6fcb1c079
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 93bb5c30eeb9cdc6f10c3b71d0e4f70f3f8c6477
+ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101857"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98534418"
 ---
 # <a name="query-columns-using-always-encrypted-with-azure-data-studio"></a>Interroger des colonnes en utilisant Always Encrypted avec Azure Data Studio
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb.md)]
@@ -85,6 +85,7 @@ Outre les autorisations ci-dessus, pour déchiffrer des résultats de requête o
 Pour plus d’informations, consultez [Créer et stocker des clés principales de colonne (Always Encrypted)](../../../relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted.md).
 
 ## <a name="enabling-and-disabling-always-encrypted-for-a-database-connection"></a>Activation et désactivation d’Always Encrypted pour une connexion de base de données   
+
 Quand vous vous connectez à une base de données dans Azure Data Studio, vous pouvez activer ou désactiver Always Encrypted pour la connexion de base de données. Par défaut, Always Encrypted est désactivé. 
 
 L’activation d’Always Encrypted pour une connexion de base de données indique au fournisseur de données [Microsoft.NET pour SQL Server](../../../connect/ado-net/sql/sqlclient-support-always-encrypted.md), utilisé par Azure Data Studio, de tenter d’effectuer ces actions de manière transparente :   
@@ -100,10 +101,11 @@ Vous pouvez activer ou désactiver Always Encrypted lorsque vous vous connectez 
 Pour activer (désactiver) Always Encrypted :
 1. Dans la boîte de dialogue **Connexion**, cliquez sur **Avancé...** .
 2. Pour activer Always Encrypted pour la connexion, définissez le champ **Always Encrypted** sur **Activé**. Pour désactiver Always Encrypted, laissez la valeur du champ **Always Encrypted** vide ou définissez-la sur **Désactivé**.
-3. Si vous utilisez [!INCLUDE [sssqlv15-md](../../../includes/sssqlv15-md.md)] et que votre instance SQL Server est configurée avec une enclave sécurisée, vous pouvez spécifier une URL d’attestation d’enclave. Si votre instance SQL Server n’utilise pas d’enclave sécurisée, veillez à laisser vide les zones de texte **Protocole d’attestation** et **URL d’attestation d’enclave**. Pour plus d’informations, consultez [Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves.md).
-4. Cliquez sur **OK** pour fermer les **Propriétés avancées**.
+3. Cliquez sur **OK** pour fermer les **Propriétés avancées**.
 
 ![Brève vidéo présentant les étapes permettant d’activer Always Encrypted pour la connexion.](../../../relational-databases/security/encryption/media/always-encrypted-ads-connect.gif)
+
+Pour exécuter des instructions qui tirent parti d’une enclave sécurisée côté serveur quand vous utilisez [Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves.md), vous devez, en plus d’activer Always Encrypted pour la connexion, spécifier un protocole et une URL d’attestation d’enclave. Pour plus d’informations, consultez les [prérequis pour l’exécution d’instructions T-SQL utilisant des enclaves dans Azure Data Studio](always-encrypted-enclaves-query-columns.md#prerequisites-for-running-t-sql-statements-using-enclaves-in-azure-data-studio).
 
 > [!TIP]
 > Pour activer ou désactiver l’option Always Encrypted pour une fenêtre de requête existante, cliquez sur **Déconnecter** puis sur **Connecter** et suivez les étapes ci-dessus pour vous reconnecter à votre base de données avec les valeurs souhaitées du champ **Always Encrypted**. 

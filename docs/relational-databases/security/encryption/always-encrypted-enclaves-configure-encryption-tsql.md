@@ -2,7 +2,7 @@
 description: Configurer le chiffrement de colonne sur place avec Transact-SQL
 title: Configurer le chiffrement de colonne sur place avec Transact-SQL | Microsoft Docs
 ms.custom: ''
-ms.date: 10/10/2019
+ms.date: 01/15/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: vanto
@@ -11,15 +11,16 @@ ms.topic: conceptual
 author: jaszymas
 ms.author: jaszymas
 monikerRange: '>= sql-server-ver15'
-ms.openlocfilehash: e1e72a9e06c2012390a88243c3ef865ac222564b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ab59eec637bd5afc127227b09445417ffa1fe4eb
+ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477690"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98534848"
 ---
 # <a name="configure-column-encryption-in-place-with-transact-sql"></a>Configurer le chiffrement de colonne sur place avec Transact-SQL
-[!INCLUDE [sqlserver2019-windows-only](../../../includes/applies-to-version/sqlserver2019-windows-only.md)]
+
+[!INCLUDE [sqlserver2019-windows-only-asdb](../../../includes/applies-to-version/sqlserver2019-windows-only-asdb.md)]
 
 Cet article explique comment effectuer des opérations de chiffrement sur place sur des colonnes en utilisant Always Encrypted avec enclaves sécurisées, avec l’instruction [ALTER TABLE](../../../odbc/microsoft/alter-table-statement.md)/`ALTER COLUMN`. Pour obtenir des informations de base sur le chiffrement sur place et les prérequis généraux, consultez [Configurer le chiffrement de colonne sur place en utilisant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-configure-encryption.md).
 
@@ -33,19 +34,20 @@ Avec l’instruction `ALTER TABLE` ou `ALTER COLUMN`, vous pouvez définir la co
 
 Comme toute requête utilisant une enclave sécurisée côté serveur, une instruction `ALTER TABLE`/`ALTER COLUMN` qui déclenche un chiffrement sur place doit être envoyée sur une connexion avec Always Encrypted et les calculs d’enclave activés. 
 
-Le reste de cet article décrit comment déclencher un chiffrement sur place avec l’instruction `ALTER TABLE`/`ALTER COLUMN` depuis SQL Server Management Studio. Vous pouvez aussi émettre l’instruction `ALTER TABLE`/`ALTER COLUMN` depuis votre application. 
+Le reste de cet article décrit comment déclencher un chiffrement sur place avec l’instruction `ALTER TABLE`/`ALTER COLUMN` depuis SQL Server Management Studio. Vous pouvez également émettre l’instruction `ALTER TABLE`/`ALTER COLUMN` à partir d’Azure Data Studio ou de votre application. 
 
 > [!NOTE]
-> Actuellement, les outils autres que SSMS, notamment l’applet de commande [Invoke-Sqlcmd](/powershell/module/sqlserver/invoke-sqlcmd) du module SqlServer PowerShell et [sqlcmd](../../../tools/sqlcmd-utility.md), ne prennent pas en charge l’utilisation de `ALTER TABLE`/`ALTER COLUMN` pour les opérations de chiffrement sur place.
+> L’applet de commande [Invoke-Sqlcmd](/powershell/module/sqlserver/invoke-sqlcmd) du module SqlServer PowerShell et [sqlcmd](../../../tools/sqlcmd-utility.md) ne prennent pas en charge l’utilisation de `ALTER TABLE`/`ALTER COLUMN` pour les opérations de chiffrement sur place.
 
 ## <a name="perform-in-place-encryption-with-transact-sql-in-ssms"></a>Effectuer un chiffrement sur place avec Transact-SQL dans SSMS
 ### <a name="pre-requisites"></a>Conditions préalables
 - Les prérequis décrits dans [Configurer le chiffrement de colonne sur place en utilisant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-configure-encryption.md).
-- SQL Server Management Studio 18.3 ou ultérieur.
+- SQL Server Management Studio 18.3 ou ultérieur si vous utilisez [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].
+- SQL Server Management Studio 18.8 ou ultérieur si vous utilisez [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)].
 
 ### <a name="steps"></a>Étapes
 1. Ouvrez une fenêtre de requête avec Always Encrypted et les calculs d’enclave activés dans la connexion de base de données. Pour plus d’informations, consultez [Activation et désactivation d’Always Encrypted pour une connexion de base de données](always-encrypted-query-columns-ssms.md#en-dis).
-2. Dans la fenêtre de requête, émettez l’instruction `ALTER TABLE`/`ALTER COLUMN`, en spécifiant une clé de chiffrement de colonne activée pour les enclaves dans la clause `ENCRYPTED WITH`. Si votre colonne est de type chaîne (par exemple `char`, `varchar`, `nchar`, `nvarchar`), il peut également être nécessaire de changer le classement en BIN2. 
+2. Dans la fenêtre de requête, émettez l’instruction `ALTER TABLE`/`ALTER COLUMN`, en spécifiant la configuration de chiffrement cible pour la colonne que vous souhaitez chiffrer, déchiffrer ou rechiffrer. Si vous chiffrez ou rechiffrez la colonne à l’aide de la clause `ENCRYPTED WITH`. Si votre colonne est de type chaîne (par exemple `char`, `varchar`, `nchar`, `nvarchar`), il peut également être nécessaire de changer le classement en BIN2. 
     
     > [!NOTE]
     > Si votre clé principale de colonne est stockée dans Azure Key Vault, vous serez peut-être invité à vous connecter à Azure.
@@ -67,7 +69,7 @@ Le reste de cet article décrit comment déclencher un chiffrement sur place ave
 #### <a name="encrypting-a-column-in-place"></a>Chiffrement d’une colonne sur place
 L’exemple ci-dessous suppose que :
 - `CEK1` est une clé de chiffrement de colonne activée pour les enclaves.
-- La colonne `SSN` est en texte clair et elle utilise actuellement le classement de base de données par défaut Latin1 non-BIN2 (par exemple `Latin1_General_CI_AI_KS_WS`).
+- La colonne `SSN` est en texte clair et elle utilise le classement de base de données par défaut Latin1 non-BIN2 (par exemple `Latin1_General_CI_AI_KS_WS`).
 
 L’instruction chiffre la colonne `SSN` en utilisant un chiffrement aléatoire et la clé de chiffrement de colonne activée pour les enclaves sur place. Elle remplace également le classement de base de données par défaut avec le classement BIN2 correspondant (dans la même page de codes).
 
@@ -125,7 +127,7 @@ L’exemple ci-dessous suppose que :
 - La colonne `SSN` est chiffrée avec une clé de chiffrement de colonne activée pour les enclaves.
 - Le classement actuel, défini au niveau de la colonne, est `Latin1_General_BIN2`.
 
-L’instruction ci-dessous déchiffre la colonne (et conserve le classement ; vous pouvez aussi choisir de changer le classement, par exemple en classement non-BIN2, dans la même instruction).
+L’instruction ci-dessous déchiffre la colonne et laisse le classement inchangé. Vous pouvez également choisir de changer le classement. Par exemple, remplacez le classement par un classement non BIN2 dans la même instruction.
 
 ```sql
 ALTER TABLE [dbo].[Employees]
@@ -137,11 +139,13 @@ GO
 ```
 
 ## <a name="next-steps"></a>Étapes suivantes
-- [Interroger des colonnes en utilisant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-query-columns.md)
+- [Exécuter des instructions Transact-SQL à l’aide d’enclaves sécurisées](always-encrypted-enclaves-query-columns.md)
 - [Créer et utiliser des index sur des colonnes à l’aide d’Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-create-use-indexes.md)
 - [Développer des applications en utilisant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-client-development.md)
 
 ## <a name="see-also"></a>Voir aussi  
+- [Résoudre les problèmes courants concernant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-troubleshooting.md)
 - [Configurer le chiffrement de colonne sur place en utilisant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-configure-encryption.md)
 - [Activer Always Encrypted avec enclaves sécurisées pour les colonnes chiffrées existantes](always-encrypted-enclaves-enable-for-encrypted-columns.md)
-- [Tutoriel : Bien démarrer avec Always Encrypted avec enclaves sécurisées en utilisant SSMS](../tutorial-getting-started-with-always-encrypted-enclaves.md)
+- [Tutoriel : Bien démarrer avec Always Encrypted avec enclaves sécurisées dans SQL Server](../tutorial-getting-started-with-always-encrypted-enclaves.md)
+- [Tutoriel : Bien démarrer avec Always Encrypted avec enclaves sécurisées dans Azure SQL Database](/azure/azure-sql/database/always-encrypted-enclaves-getting-started)

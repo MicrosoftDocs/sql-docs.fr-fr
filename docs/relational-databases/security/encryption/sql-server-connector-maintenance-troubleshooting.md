@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 7f5b73fc-e699-49ac-a22d-f4adcfae62b1
 author: jaszymas
 ms.author: jaszymas
-ms.openlocfilehash: 4c8a74d33e75ab19b283f3b9d1bfdaf47dc69240
-ms.sourcegitcommit: 4d370399f6f142e25075b3714e5c2ce056b1bfd0
+ms.openlocfilehash: fa78eb8ef2da01514e161c58b05146b1699c93f7
+ms.sourcegitcommit: e40e75055c1435c5e3f9b6e3246be55526807b4c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91869260"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98151265"
 ---
 # <a name="sql-server-connector-maintenance--troubleshooting"></a>Résolution des problèmes et maintenance du connecteur SQL Server
 
@@ -139,7 +139,7 @@ Liens ciblés vers les versions antérieures du connecteur SQL Server
 
 ### <a name="rolling-the-ssnoversion-service-principal"></a>Modification du principal du service [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]
 
- [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] utilise des principaux du service créés dans Azure Active Directory comme informations d’identification pour accéder au coffre de clés. Le principal du service a un ID client et une clé d’authentification. Des informations d’identification [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sont configurées avec le **nom du coffre**, l’ **ID client**et la **clé d’authentification**. La **clé d’authentification** est valide un certain temps (un ou deux ans). Avant l’expiration de cette période, une nouvelle clé doit être générée pour le principal du service dans Azure AD. Ensuite, les informations d’identification doivent être modifiées dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. [!INCLUDE[ssManStudio](../../../includes/ssmanstudio-md.md)] gère un cache pour les informations d’identification de la session en cours ; ainsi, si des informations d’identification sont modifiées, [!INCLUDE[ssManStudio](../../../includes/ssmanstudio-md.md)] doit être redémarré.  
+ [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] utilise des principaux du service créés dans Azure Active Directory comme informations d’identification pour accéder au coffre de clés. Le principal du service a un ID client et une clé d’authentification. Des informations d’identification [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sont configurées avec le **nom du coffre**, l’ **ID client** et la **clé d’authentification**. La **clé d’authentification** est valide un certain temps (un ou deux ans). Avant l’expiration de cette période, une nouvelle clé doit être générée pour le principal du service dans Azure AD. Ensuite, les informations d’identification doivent être modifiées dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. [!INCLUDE[ssManStudio](../../../includes/ssmanstudio-md.md)] gère un cache pour les informations d’identification de la session en cours ; ainsi, si des informations d’identification sont modifiées, [!INCLUDE[ssManStudio](../../../includes/ssmanstudio-md.md)] doit être redémarré.  
   
 ### <a name="key-backup-and-recovery"></a>Sauvegarde et récupération des clés
 
@@ -227,6 +227,7 @@ Code d'erreur  |Symbole  |Description
 2051 | scp_err_OutOfMemory | Le moteur SQL ne dispose pas de suffisamment de mémoire et n’a pas pu allouer de mémoire pour le fournisseur EKM.
 2052 | scp_err_ConvertKeyNameToThumbprint | Impossible de convertir le nom de la clé en empreinte numérique.
 2053 | scp_err_ConvertThumbprintToKeyName|  Impossible de convertir l’empreinte numérique en nom de clé.
+2058 | scp_err_FailureInRegistry|  Impossible d’effectuer l’opération dans le Registre. Le compte de service SQL Server n’a pas l’autorisation de créer la clé de Registre.
 3000 | ErrorSuccess | L’opération AKV a réussi.
 3001 | ErrorUnknown | L’opération AKV a échoué avec une erreur non spécifiée.
 3002 | ErrorHttpCreateHttpClientOutOfMemory | Impossible de créer une opération HttpClient pour AKV en raison d’une insuffisance de mémoire.

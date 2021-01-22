@@ -2,7 +2,7 @@
 description: Approvisionner des clés prenant en charge les enclaves
 title: Provisionner des clés activées pour les enclaves | Microsoft Docs
 ms.custom: ''
-ms.date: 10/01/2019
+ms.date: 01/15/2021
 ms.prod: sql
 ms.reviewer: vanto
 ms.prod_service: database-engine, sql-database
@@ -11,15 +11,16 @@ ms.topic: conceptual
 author: jaszymas
 ms.author: jaszymas
 monikerRange: '>= sql-server-ver15'
-ms.openlocfilehash: 02d4b833b45393c6d830048c3e761cd7abac99e7
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: e28b6d18b5fe466aa239164b18ebdfe5fef0895c
+ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477620"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98534758"
 ---
 # <a name="provision-enclave-enabled-keys"></a>Approvisionner des clés prenant en charge les enclaves
-[!INCLUDE [sqlserver2019-windows-only](../../../includes/applies-to-version/sqlserver2019-windows-only.md)]
+
+[!INCLUDE [sqlserver2019-windows-only-asdb](../../../includes/applies-to-version/sqlserver2019-windows-only-asdb.md)]
 
 Cet article explique comment provisionner des clés activées pour les enclaves qui prennent en charge les calculs à l’intérieur des enclaves sécurisées côté serveur utilisées pour [Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves.md). 
 
@@ -39,12 +40,17 @@ Pour créer une clé de chiffrement de colonne activée pour les enclaves, vous 
 Les sections suivantes fournissent plus de détails sur le provisionnement des clés activées pour les enclaves avec SSMS et PowerShell.
 
 ## <a name="provision-enclave-enabled-keys-using-sql-server-management-studio"></a>Provisionner des clés activées pour les enclaves avec SQL Server Management Studio
-Dans SQL Server Management Studio 18.3 ou ultérieur, vous pouvez provisionner :
+Dans SQL Server Management Studio, vous pouvez provisionner :
 - Une clé principale de colonne activée pour les enclaves en utilisant la boîte de dialogue **Nouvelle clé principale de colonne**.
 - Une clé principale de colonne activée pour les enclaves en utilisant la boîte de dialogue **Nouvelle clé de chiffrement de colonne**.
 
 > [!NOTE]
 > Actuellement, l’[Assistant Always Encrypted](always-encrypted-wizard.md) ne prend pas en charge la génération de clés activées pour les enclaves. Vous pouvez cependant créer des clés activées pour les enclaves en utilisant les boîtes de dialogue ci-dessus puis, quand vous exécutez l’Assistant, sélectionner un chiffrement de colonne activée pour les enclaves déjà existant pour les colonnes que vous voulez chiffrer.
+
+Version minimale requise de SSMS :
+
+- SSMS 18.3 avec [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].
+- SSMS 18.8 avec [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)].
 
 ### <a name="provision-enclave-enabled-column-master-keys-with-the-new-column-master-key-dialog"></a>Provisionner des clés principales de colonne activées pour les enclaves en utilisant la boîte de dialogue Nouvelle clé principale de colonne
 Pour provisionner une clé principale de colonne activée pour les enclaves, suivez les étapes décrites dans [Provisionner des clés principales de colonne avec la boîte de dialogue Nouvelle clé principale de colonne](configure-always-encrypted-keys-using-ssms.md#provision-column-master-keys-with-the-new-column-master-key-dialog). Veillez à sélectionner **Autoriser les calculs d’enclave**. Consultez la capture d’écran ci-dessous :
@@ -52,7 +58,7 @@ Pour provisionner une clé principale de colonne activée pour les enclaves, sui
 ![Autoriser les calculs d’enclave](./media/always-encrypted-enclaves/allow-enclave-computations.png)
 
 > [!NOTE]
-> La case à cocher **Autoriser les calculs d’enclave** apparaît seulement si l’instance [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] contient une enclave sécurisée correctement initialisée. Pour plus d’informations, consultez [Configurer le type d’enclave pour Always Encrypted](../../../database-engine/configure-windows/configure-column-encryption-enclave-type.md).
+> La case à cocher **Autoriser les calculs d’enclave** apparaît uniquement si une enclave sécurisée est configurée pour votre base de données. Si vous utilisez [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], consultez [Configurer l’enclave sécurisée dans SQL Server](always-encrypted-enclaves-configure-enclave-type.md). Si vous utilisez [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)], consultez [Activer Intel SGX pour votre base de données Azure SQL](/azure/azure-sql/database/always-encrypted-enclaves-enable-sgx).
 
 > [!TIP]
 > Pour vérifier si une clé principale de colonne est activée pour les enclaves, cliquez sur celle-ci avec le bouton droit dans l’Explorateur d’objets, puis sélectionnez **Propriétés**. Si la clé est activée pour les enclaves, **Calculs d’enclave : Autorisés** apparaît dans la fenêtre montrant les propriétés de la clé. Vous pouvez aussi utiliser la vue [sys.column_master_keys (Transact-SQL)](../../system-catalog-views/sys-column-master-keys-transact-sql.md).
@@ -64,7 +70,7 @@ Pour provisionner une clé de chiffrement de colonne activée pour les enclaves,
 > Pour vérifier si une clé de chiffrement de colonne est activée pour les enclaves, cliquez sur celle-ci avec le bouton droit dans l’Explorateur d’objets, puis sélectionnez **Propriétés**. Si la clé est activée pour les enclaves, **Calculs d’enclave : Autorisés** apparaît dans la fenêtre montrant les propriétés de la clé.
 
 ## <a name="provision-enclave-enabled-keys-using-powershell"></a>Approvisionner des clés prenant en charge les enclaves avec PowerShell
-Pour provisionner des clés activées pour les enclaves avec PowerShell, vous avez besoin du module SqlServer PowerShell version 21.1.18179 ou ultérieure.
+Pour provisionner des clés prenant en charge les enclaves avec PowerShell, vous avez besoin du module PowerShell SqlServer version 21.1.18179 ou ultérieure.
 
 En général, les workflows de provisionnement de clés PowerShell (avec et sans séparation des rôles) pour Always Encrypted, décrits dans [Provisionner des clés Always Encrypted en utilisant PowerShell](configure-always-encrypted-keys-using-powershell.md) s’appliquent également aux clés activées pour les enclaves. Cette section décrit les détails spécifiques aux clés activées pour les enclaves.
 
@@ -148,12 +154,13 @@ New-SqlColumnEncryptionKey -Name $cekName -InputObject $database -ColumnMasterKe
 ```
 
 ## <a name="next-steps"></a>Étapes suivantes
-- [Interroger des colonnes en utilisant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-query-columns.md)
+- [Exécuter des instructions Transact-SQL à l’aide d’enclaves sécurisées](always-encrypted-enclaves-query-columns.md)
 - [Configurer le chiffrement de colonne sur place en utilisant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-configure-encryption.md)
 - [Activer Always Encrypted avec enclaves sécurisées pour les colonnes chiffrées existantes](always-encrypted-enclaves-enable-for-encrypted-columns.md)
 - [Développer des applications en utilisant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-client-development.md) 
 
 ## <a name="see-also"></a>Voir aussi  
-- [Tutoriel : Bien démarrer avec Always Encrypted avec enclaves sécurisées en utilisant SSMS](../tutorial-getting-started-with-always-encrypted-enclaves.md)
+- [Tutoriel : Bien démarrer avec Always Encrypted avec enclaves sécurisées dans SQL Server](../tutorial-getting-started-with-always-encrypted-enclaves.md)
+- [Tutoriel : Bien démarrer avec Always Encrypted avec enclaves sécurisées dans Azure SQL Database](/azure/azure-sql/database/always-encrypted-enclaves-getting-started)
 - [Gérer des clés pour Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-manage-keys.md)
 - [CREATE COLUMN MASTER KEY (Transact-SQL)](../../../t-sql/statements/create-column-master-key-transact-sql.md)

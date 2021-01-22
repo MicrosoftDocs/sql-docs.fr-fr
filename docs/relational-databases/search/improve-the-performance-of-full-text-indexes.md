@@ -18,12 +18,12 @@ author: pmasl
 ms.author: pelopes
 ms.reviewer: mikeray
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 79368864ef41860d725772ee9136bb1e66e82790
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 2ec5532f22f50258334f815d12202eb4645b4b17
+ms.sourcegitcommit: 23649428528346930d7d5b8be7da3dcf1a2b3190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97479500"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98241843"
 ---
 # <a name="improve-the-performance-of-full-text-indexes"></a>Améliorer les performances des index de recherche en texte intégral
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -42,7 +42,7 @@ La cause principale d’une baisse des performances de l’indexation de texte i
 -   **Disque**. Si la longueur moyenne de la file d'attente du disque est plus de deux fois supérieure au nombre de têtes de disque, le disque est engorgé. La première solution consiste à créer des catalogues de texte intégral distincts des fichiers et des journaux de la base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Placez les journaux, les fichiers de base de données et les catalogues de texte intégral sur des disques distincts. L’installation de disques plus rapides et l’utilisation de RAID peuvent également contribuer à améliorer les performances d’indexation.  
   
     > [!NOTE]  
-    >  À partir de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], le moteur d’indexation et de recherche en texte intégral peut utiliser la mémoire AWE parce qu’il fait partie du processus sqlservr.exe.  
+    > À partir de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], le moteur d’indexation et de recherche en texte intégral peut utiliser la mémoire AWE parce qu’il fait partie du processus sqlservr.exe. Pour plus d’informations, consultez [Architecture de la recherche en texte intégral](../../relational-databases/search/full-text-search.md#architecture).  
 
 ### <a name="full-text-batching-issues"></a>Problèmes liés au traitement par lot de recherche en texte intégral
  Si le système ne rencontre aucun goulet d'étranglement matériel, les performances d'indexation de la recherche en texte intégral dépendent essentiellement des éléments suivants :  
@@ -67,7 +67,7 @@ Pour optimiser les performances de vos index de recherche en texte intégral, ap
   
 -   Mettez à jour les statistiques de la table de base à l'aide de l'instruction [UPDATE STATISTICS](../../t-sql/statements/update-statistics-transact-sql.md) . Le plus important est de mettre à jour les statistiques sur l'index cluster ou la clé de texte intégral pour un remplissage complet. De cette manière, un remplissage sur plusieurs plages peut générer les partitions adéquates sur la table.  
   
--   Avant d’effectuer une alimentation complète sur un ordinateur multiprocesseur de grande capacité, nous vous recommandons de limiter temporairement la taille du pool de mémoires tampons en définissant la valeur **mémoire maximum du serveur** de manière à laisser suffisamment de mémoire au processus fdhost.exe et au système d’exploitation. Pour plus d'informations, consultez « Estimation des besoins en mémoire du processus hôte de démon de filtre (fdhost.exe) », plus loin dans cette rubrique.
+-   Avant d’effectuer une alimentation complète sur un ordinateur multiprocesseur de grande capacité, nous vous recommandons de limiter temporairement la taille du pool de mémoires tampons en définissant la valeur **mémoire maximum du serveur** de manière à laisser suffisamment de mémoire au processus fdhost.exe et au système d’exploitation. Pour plus d’informations, consultez [Estimation des besoins en mémoire du processus hôte de démon de filtre (fdhost.exe)](#estimate), plus loin dans cette rubrique.
 
 -   Si vous utilisez une alimentation incrémentielle basée sur une colonne timestamp, créez un index secondaire sur la colonne **timestamp** afin d’améliorer les performances de l’alimentation incrémentielle.  
   
@@ -89,24 +89,24 @@ Les parties variables du nom de fichier du journal d’analyse sont les suivante
  Par exemple, `SQLFT0000500008.2` est le fichier journal d’analyse pour une base de données ayant un ID de base de données = 5 et un ID de catalogue de texte intégral = 8. Le 2 à la fin du nom de fichier indique qu'il existe deux fichiers journaux d'analyse pour cette combinaison base de données/catalogue.  
 
 ### <a name="check-physical-memory-usage"></a>Vérifier l’utilisation de la mémoire physique  
- Durant une alimentation de texte intégral, fdhost.exe ou sqlservr.exe peuvent manquer partiellement ou complètement de mémoire.
--   Si le journal d'analyse de texte intégral indique que fdhost.exe est souvent redémarré ou que le code d'erreur 8007008 est retourné, cela signifie que l'un de ces processus manque de mémoire.
--   Si fdhost.exe produit des vidages, en particulier sur des ordinateurs multiprocesseurs de grande capacité, cela peut signifier qu'il manque de mémoire.  
+ Durant une alimentation de texte intégral, `fdhost.exe` ou `sqlservr.exe` peuvent manquer partiellement ou complètement de mémoire.
+-   Si le journal d’analyse de texte intégral indique que `fdhost.exe` est souvent redémarré ou que le code d’erreur 8007008 est retourné, cela signifie que l’un de ces processus manque de mémoire.
+-   Si `fdhost.exe` produit des images mémoire, en particulier sur des ordinateurs multiprocesseurs de grande capacité, cela peut signifier qu’il manque de mémoire.  
 -   Pour obtenir des informations sur les mémoires tampons utilisées par une analyse de texte intégral, consultez [sys.dm_fts_memory_buffers &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-memory-buffers-transact-sql.md).  
   
  Les causes possibles de problèmes de mémoire basse ou insuffisante sont les suivantes :  
   
 -   **Mémoire insuffisante**. Si la quantité de mémoire physique disponible pendant une alimentation complète est égale à zéro, le pool de mémoires tampons [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] consomme peut-être la plus grande part de la mémoire physique du système.  
   
-     Le processus sqlservr.exe essaie de récupérer toute la mémoire disponible pour le pool de mémoires tampons, en fonction de la limite maximale de mémoire configurée pour le serveur. Si l’allocation de **mémoire maximum du serveur** est trop importante, des insuffisances de mémoire et des échecs d’allocation de la mémoire partagée peuvent se produire pour le processus fdhost.exe.  
+     Le processus `sqlservr.exe` essaie de récupérer toute la mémoire disponible pour le pool de mémoires tampons, jusqu’à la limite maximale de mémoire configurée pour le serveur. Si l’allocation de **mémoire maximum du serveur** est trop importante, des insuffisances de mémoire et des échecs d’allocation de la mémoire partagée peuvent se produire pour le processus fdhost.exe.  
   
-     Vous pouvez résoudre ce problème en définissant de façon appropriée la valeur **mémoire maximum du serveur** du pool de mémoires tampons [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Pour plus d'informations, consultez « Estimation des besoins en mémoire du processus hôte de démon de filtre (fdhost.exe) », plus loin dans cette rubrique. La réduction de la taille de lot utilisée pour l'indexation de texte intégral peut également s'avérer utile.  
+     Vous pouvez résoudre ce problème en définissant de façon appropriée la valeur **mémoire maximum du serveur** du pool de mémoires tampons [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Pour plus d’informations, consultez [Estimation des besoins en mémoire du processus hôte de démon de filtre (fdhost.exe)](#estimate), plus loin dans cette rubrique. La réduction de la taille de lot utilisée pour l'indexation de texte intégral peut également s'avérer utile.  
 
 -   **Contention de mémoire**. Durant une alimentation de texte intégral sur un ordinateur multiprocesseur, il peut se produire un conflit de mémoire au niveau du pool de mémoires tampons pour fdhost.exe ou sqlservr.exe. Le manque de mémoire partagée qui en résulte provoque des nouvelles tentatives d'exécution de lots, des surexploitations de la mémoire et des vidages par le processus fdhost.exe.  
 
 -   **Problème de pagination**. Si la taille du fichier d'échange est insuffisante, comme cela peut se produire sur un système qui dispose d'un petit fichier d'échange avec une croissance limitée, fdhost.exe ou sqlservr.exe risquent de manquer de mémoire. Si les journaux d'analyse n'indiquent pas de défaillances relatives à la mémoire, il est probable que les performances sont dégradées par une pagination excessive.  
   
-### <a name="estimate-the-memory-requirements-of-the-filter-daemon-host-process-fdhostexe"></a>Estimer les besoins en mémoire du processus hôte de démon de filtre (fdhost.exe)  
+### <a name="estimate-the-memory-requirements-of-the-filter-daemon-host-process-fdhostexe"></a><a name="estimate"></a> Estimer les besoins en mémoire du processus hôte de démon de filtre (fdhost.exe)  
  La quantité de mémoire requise par le processus fdhost.exe pour une alimentation dépend principalement du nombre de plages d'analyses de texte intégral utilisées, de la taille de la mémoire partagée entrante et du nombre maximal d'instances relatives à la mémoire partagée entrante.  
   
  La quantité de mémoire consommée (en octets) par l'hôte de démon de filtre peut être estimée approximativement à l'aide de la formule suivante :  
@@ -143,19 +143,19 @@ Pour obtenir des informations essentielles sur les formules suivantes, consultez
   
  #### <a name="example-estimate-the-memory-requirements-of-fdhostexe"></a>Exemple : estimation des besoins en mémoire de fdhost.exe  
   
- Cet exemple se rapporte à un ordinateur 64 bits avec 8 Go de mémoire vive (RAM) et 4 processeurs double cœur. Les premières estimations de calcul de la mémoire requise par fdhost.exe : *F*. Le nombre de plages d'analyse est `8`.  
+ Cet exemple se rapporte à un ordinateur 64 bits avec 8 Go de RAM et 4 processeurs double cœur. Les premières estimations de calcul de la mémoire requise par fdhost.exe : *F*. Le nombre de plages d'analyse est `8`.  
   
- `F = 8*10*8=640`  
+ `F = 8*10*8 = 640`  
   
- Le calcul suivant obtient la valeur optimale de **mémoire maximum du serveur**-*M*. La mémoire physique totale disponible sur ce système en Mo -*T*- est `8192`.  
+ Le calcul suivant obtient la valeur optimale de **mémoire maximum du serveur** -*M*. La mémoire physique totale disponible sur ce système en Mo -*T*- est `8192`.  
   
- `M = 8192-640-500=7052`  
+ `M = 8192-640-500 = 7052`  
   
  #### <a name="example-setting-max-server-memory"></a>Exemple : configuration de la mémoire maximum du serveur  
   
  Cet exemple utilise les instructions [sp_configure](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md) et [RECONFIGURE](../../t-sql/language-elements/reconfigure-transact-sql.md) [!INCLUDE[tsql](../../includes/tsql-md.md)] pour définir la **mémoire maximale du serveur** sur la valeur calculée pour *M* dans l’exemple précédent, `7052` :  
   
-```  
+```sql  
 USE master;  
 GO  
 EXEC sp_configure 'max server memory', 7052;  
@@ -173,7 +173,7 @@ Les performances des alimentations complètes ne sont pas optimales lorsque la c
   
      Pour déterminer si le temps d’attente d’une page est élevé, exécutez l’instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] suivante :  
   
-    ```  
+    ```sql  
     SELECT TOP 10 * FROM sys.dm_os_wait_stats ORDER BY wait_time_ms DESC;  
     ```  
   
@@ -217,4 +217,4 @@ Pour contourner ce problème, marquez le filtre du document conteneur (le docume
  [sys.dm_fts_memory_buffers &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-memory-buffers-transact-sql.md)   
  [sys.dm_fts_memory_pools &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-memory-pools-transact-sql.md)   
  [Résoudre l'indexation de recherche en texte intégral](../../relational-databases/search/troubleshoot-full-text-indexing.md)  
-  
+ [Architecture de la recherche en texte intégral](../../relational-databases/search/full-text-search.md#architecture) 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 45298179-4ac1-4723-8b3c-56f5926be40a
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: e8e1fd0c8e43000573d030a80ce52145bd0c8669
-ms.sourcegitcommit: 49ee3d388ddb52ed9cf78d42cff7797ad6d668f2
+ms.openlocfilehash: ac65acde470d75c616e77d21f6e62ab8d1f5e4e4
+ms.sourcegitcommit: 23649428528346930d7d5b8be7da3dcf1a2b3190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94384878"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98241844"
 ---
 # <a name="the-cdc-designer-console-introduction"></a>Présentation de la console du concepteur de capture de données modifiées
 
@@ -43,9 +43,11 @@ ms.locfileid: "94384878"
   
 ### <a name="source-oracle-database"></a>Base de données Oracle source
   
--   Oracle Database 10g version 2
--   Oracle Database 11g version 1 et version 2
--   Oracle Database 12c en installation classique. (L’installation multi-locataire n’est pas prise en charge.)  
+- Oracle Database 10g version 2
+- Oracle Database 11g version 1 et version 2
+- Oracle Database 12c en installation classique (L’installation multilocataire n’est pas prise en charge.)  
+- Oracle Database 18c en installation classique (L’installation multilocataire n’est pas prise en charge.)
+- Oracle Database 19c en installation classique (L’installation multilocataire n’est pas prise en charge.)
 
 ### <a name="target-sql-server-database"></a>Base de données SQL Server cible
   
@@ -64,6 +66,6 @@ ms.locfileid: "94384878"
  Double-cliquez sur le kit d'installation de la console du concepteur CDC et suivez les instructions de l'Assistant Installation.  
   
 ## <a name="uninstalling-the-cdc-designer-console"></a>Désinstallation de la console du concepteur CDC  
- Désinstallez la console du concepteur CDC à l'aide du composant Programmes et fonctionnalités du Panneau de configuration.  
+ Désinstallez la console du concepteur CDC Designer par le biais de « Programmes et fonctionnalités » dans le Panneau de configuration.  
   
   

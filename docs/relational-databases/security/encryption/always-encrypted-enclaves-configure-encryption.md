@@ -2,7 +2,7 @@
 description: Configurer le chiffrement de colonne sur place en utilisant Always Encrypted avec enclaves sécurisées
 title: Configurer le chiffrement de colonne sur place en utilisant Always Encrypted avec enclaves sécurisées | Microsoft Docs
 ms.custom: ''
-ms.date: 10/10/2019
+ms.date: 01/15/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: vanto
@@ -11,17 +11,17 @@ ms.topic: conceptual
 author: jaszymas
 ms.author: jaszymas
 monikerRange: '>= sql-server-ver15'
-ms.openlocfilehash: de9860fdf161d9ed43a1ae2c63e1210dd2079e42
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 67b74e36ff5b2872e619a4b26fabdd05428e6a16
+ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477710"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98534838"
 ---
 # <a name="configure-column-encryption-in-place-using-always-encrypted-with-secure-enclaves"></a>Configurer le chiffrement de colonne sur place en utilisant Always Encrypted avec enclaves sécurisées 
-[!INCLUDE [sqlserver2019-windows-only](../../../includes/applies-to-version/sqlserver2019-windows-only.md)]
+[!INCLUDE [sqlserver2019-windows-only-asdb](../../../includes/applies-to-version/sqlserver2019-windows-only-asdb.md)]
 
-[Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves.md) prend en charge les opérations de chiffrement sur les colonnes de base de données sur place, à l’intérieur d’une enclave sécurisée dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Le chiffrement sur place élimine la nécessité de déplacer les données pour ces opérations en dehors de la base de données, ce qui rend les opérations de chiffrement plus rapides et plus fiables. 
+[Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves.md) prend en charge les opérations de chiffrement sur les colonnes de base de données sur place, à l’intérieur d’une enclave sécurisée dans le [!INCLUDE[ssde-md](../../../includes/ssde-md.md)]. Le chiffrement sur place élimine la nécessité de déplacer les données pour ces opérations en dehors de la base de données, ce qui rend les opérations de chiffrement plus rapides et plus fiables. 
 
 > [!NOTE]
 > En dépit des avantages en matière de performances du chiffrement sur place, les opérations de chiffrement sur des grandes tables peuvent prendre beaucoup de temps et consommer des ressources importantes, ce qui peut affecter et dégrader les performances et la disponibilité de vos applications.
@@ -36,7 +36,7 @@ Les opérations de chiffrement prises en charge et les exigences pour la ou les 
 
 Pour plus d’informations sur la façon de garantir que vos clés de chiffrement de colonne sont activées pour les enclaves, consultez [Gérer les clés pour Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-manage-keys.md).
 
-Le chiffrement sur place nécessite également une instance SQL Server qui a une enclave sécurisée correctement initialisée. Consultez [Configurer le type d’enclave pour l’option de configuration de serveur Always Encrypted](../../../database-engine/configure-windows/configure-column-encryption-enclave-type.md).
+Vous devez également vérifier que votre environnement répond aux [prérequis généraux pour l’exécution d’instructions utilisant des enclaves sécurisées](always-encrypted-enclaves-query-columns.md#prerequisites-for-running-statements-using-secure-enclaves).
 
 Un utilisateur ou une application déclenchant des opérations de chiffrement doit avoir les autorisations nécessaires pour apporter des modifications de schéma à la table contenant les colonnes impactées et pour accéder aux clés principales de colonne impliquées dans les opérations, de même que les métadonnées de clé pertinentes dans la base de données.
 
@@ -49,3 +49,6 @@ Vous pouvez déclencher le chiffrement sur place seulement avec [ALTER TABLE ALT
 - [Configurer le chiffrement de colonne sur place avec Transact-SQL](always-encrypted-enclaves-configure-encryption-tsql.md)
 - [Créer et utiliser des index sur des colonnes en utilisant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-create-use-indexes.md)
 - [Développer des applications en utilisant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-client-development.md)
+
+## <a name="see-also"></a>Voir aussi  
+- [Résoudre les problèmes courants concernant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-troubleshooting.md)

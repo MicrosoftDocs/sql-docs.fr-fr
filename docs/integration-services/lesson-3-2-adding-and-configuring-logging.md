@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.assetid: 56105f3f-e500-4669-8c8e-acf434527727
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 6e2e66d27fd8658cc0e060da036cca147817d5cb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 32daaf012159bd42a6f73330bc8371157e459609
+ms.sourcegitcommit: 1f826eb3f73bd4d94bc9638b9cdd60991a2e2fa0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88422213"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98125612"
 ---
 # <a name="lesson-3-2-add-and-configure-logging"></a>Leçon 3-2 : Ajouter et configurer la journalisation
 
@@ -29,6 +29,7 @@ Au cours de cette tâche, vous allez activer la journalisation du flux de donné
 ## <a name="add-logging-to-the-package"></a>Ajouter la journalisation au package  
   
 1.  Dans le menu **SSIS**, sélectionnez **Journalisation**.  
+    Dans Visual Studio 2019, le menu **SSIS** se trouve sous Extensions -> SSIS. Assurez-vous que l’onglet **Flux de données** est sélectionné à la place de **Flux de contrôle**
   
 2.  Dans la boîte de dialogue **Configurer les journaux SSIS**, dans le volet **Conteneurs**, vérifiez que l’objet le plus élevé est sélectionné. Cet objet représente le package de la leçon 3.
   

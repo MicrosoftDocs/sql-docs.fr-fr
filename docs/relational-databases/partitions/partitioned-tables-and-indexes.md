@@ -17,19 +17,19 @@ ms.assetid: cc5bf181-18a0-44d5-8bd7-8060d227c927
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: dcc5d8e3602261c975f5517ea859e19fc7902936
-ms.sourcegitcommit: 629229a7c33a3ed99db63b89127bb016449f7d3d
+ms.openlocfilehash: 8471695cfde49d36ba107264fa23654757d8c2ab
+ms.sourcegitcommit: 23649428528346930d7d5b8be7da3dcf1a2b3190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97952052"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98241873"
 ---
 # <a name="partitioned-tables-and-indexes"></a>Partitioned Tables and Indexes
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
-  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge le partitionnement des tables et des index. Les données des tables et des index partitionnés sont divisées en unités potentiellement réparties sur plusieurs groupes de fichiers d'une base de données. Les données sont partitionnées horizontalement, de sorte que les groupes de lignes sont mappés à des partitions individuelles. Toutes les partitions d'un index ou d'une table unique doivent résider dans la même base de données. La table ou l'index est traité en tant qu'entité logique unique lorsque des requêtes ou des mises à jour sont effectuées sur les données. Dans les versions antérieures à [!INCLUDE[ssSQL15_md](../../includes/sssql15-md.md)]SP1, les tables et les index partitionnés n’étaient pas disponibles dans toutes les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2016](../../sql-server/editions-and-components-of-sql-server-2016.md).  
+  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge le partitionnement des tables et des index. Les données des tables et des index partitionnés sont divisées en unités potentiellement réparties sur plusieurs groupes de fichiers d'une base de données. Les données sont partitionnées horizontalement, de sorte que les groupes de lignes sont mappés à des partitions individuelles. Toutes les partitions d'un index ou d'une table unique doivent résider dans la même base de données. La table ou l'index est traité en tant qu'entité logique unique lorsque des requêtes ou des mises à jour sont effectuées sur les données. Dans les versions antérieures à [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)]SP1, les tables et les index partitionnés n’étaient pas disponibles dans toutes les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2016](../../sql-server/editions-and-components-of-sql-server-2016.md).  
   
 > [!IMPORTANT]  
-> [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] prend en charge jusqu'à 15 000 partitions par défaut. Dans les versions antérieures à [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], le nombre de partitions était limité à 1 000 par défaut. Sur les systèmes x86, la création d’une table ou d’un index avec plus de 1 000 partitions est possible, mais n’est pas prise en charge.  
+> [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] prend en charge jusqu'à 15 000 partitions par défaut. Dans les versions antérieures à [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], le nombre de partitions était limité à 1 000 par défaut.  
   
 ## <a name="benefits-of-partitioning"></a>Avantages du partitionnement  
  Le partitionnement des tables ou des index peut offrir les avantages suivants en matière de gestion et de performances.  
@@ -69,10 +69,10 @@ Index créé sur le même schéma de partition que la table qui lui correspond. 
  3. Ils définissent les mêmes valeurs limites pour les partitions.  
 
 #### <a name="partitioning-clustered-indexes"></a>Partitionnement des index cluster
-Lors du partitionnement d'un index cluster, la clé de clustering doit contenir la colonne de partitionnement. Lors du partitionnement d'un index cluster non unique, alors que la colonne de partitionnement n'est pas spécifiée explicitement dans la clé de clustering, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ajoute cette colonne par défaut à la liste des clés d'index cluster. Si l'index cluster est unique, vous devez spécifier explicitement que la clé d'index cluster contient la colonne de partitionnement.        
+Lors du partitionnement d'un index cluster, la clé de clustering doit contenir la colonne de partitionnement. Lors du partitionnement d'un index cluster non unique, alors que la colonne de partitionnement n'est pas spécifiée explicitement dans la clé de clustering, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ajoute cette colonne par défaut à la liste des clés d'index cluster. Si l'index cluster est unique, vous devez spécifier explicitement que la clé d'index cluster contient la colonne de partitionnement. Pour plus d’informations sur les index cluster et l’architecture des index, consultez [Instructions de conception d’index cluster](../../relational-databases/sql-server-index-design-guide.md#Clustered).       
 
 #### <a name="partitioning-nonclustered-indexes"></a>Partitionnement d'index non-cluster
-Lors du partitionnement d'un index non-cluster unique, la clé d'index doit contenir la colonne de partitionnement. Lors du partitionnement d’un index non-cluster non unique, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ajoute la colonne de partitionnement par défaut comme colonne non-clé (incluse) de l’index pour garantir que l’index est aligné avec la table de base. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] n’ajoute pas la colonne de partitionnement à l’index si elle y figure déjà. 
+Lors du partitionnement d'un index non-cluster unique, la clé d'index doit contenir la colonne de partitionnement. Lors du partitionnement d’un index non-cluster non unique, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ajoute la colonne de partitionnement par défaut comme colonne non-clé (incluse) de l’index pour garantir que l’index est aligné avec la table de base. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] n’ajoute pas la colonne de partitionnement à l’index si elle y figure déjà. Pour plus d’informations sur les index non cluster et l’architecture des index, consultez [Instructions de conception d’index non cluster](../../relational-databases/sql-server-index-design-guide.md#Nonclustered).
 
 ### <a name="non-aligned-index"></a>Index non aligné  
 Index partitionné indépendamment de la table correspondante. Autrement dit, l'index a un schéma de partition différent ou il est placé dans un groupe de fichiers différent de la table de base. La conception d’un index partitionné non aligné peut être utile dans les cas suivants :  

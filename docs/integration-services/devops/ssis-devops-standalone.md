@@ -9,12 +9,12 @@ ms.custom: ''
 ms.technology: integration-services
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 52578422cc9f68c728c901cf39bf05425576133b
-ms.sourcegitcommit: 36fe62a3ccf34979bfde3e192cfa778505add465
+ms.openlocfilehash: 65712139819c65c2fe8804cc8e0f6768025b322a
+ms.sourcegitcommit: e3ab17fe9822629eda4df5fb4550df5d495f3134
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94521093"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98207858"
 ---
 # <a name="standalone-sql-server-integration-service-ssis-devops-tools-preview"></a>SQL Server Integration Services (SSIS) DevOps Tools standalone (préversion)
 
@@ -128,6 +128,13 @@ SSISDeploy.exe -source|-s:<source path> -destination|-d:<type>;<path>[;server] [
     ```
 
 ## <a name="release-notes"></a>Notes de publication
+
+### <a name="version-012-preview"></a>Version 0.1.2 - préversion
+
+Date de publication : 14 janvier 2021
+
+- Correction d’un problème qui provoquait l’échec de la génération du projet par SSISBuild.exe, avec l’exception NullReference, lorsque les métadonnées de paramètre du package dans le fichier projet SSIS et le package SSIS ne correspondaient pas.
+- Correction d’un problème qui faisait échouer l’exécution du package avec l’erreur « Impossible de déchiffrer le nœud XML protégé », même si le package était correctement déployé sur SSISDB avec SSISDeploy.exe, lorsque le projet SSIS contenant le package était chiffré avec EncryptSensitiveWithUserKey et que le package contenait un CM avec des données sensibles.
 
 ### <a name="version-011-preview"></a>Version 0.1.1 - préversion
 

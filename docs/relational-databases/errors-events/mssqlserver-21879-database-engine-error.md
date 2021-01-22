@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: fcfab735-05ca-423a-89f1-fdee7e2ed8c0
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: d543c3bd25fb8a4eec99c4c5cd3e1b11fbae5a90
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0c6b6b15e6a9224306bea073e38b9ef808edfddc
+ms.sourcegitcommit: 7791bd2ba339edc5cd2078a6537c8f6bfe72a19b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88332475"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98564440"
 ---
 # <a name="mssqlserver_21879"></a>MSSQLSERVER_21879
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -42,9 +42,9 @@ Le serveur lié utilisé pour interroger le serveur de publication redirigé uti
   
 -   Si l'authentification Windows a été utilisée (mode de sécurité 1) une connexion approuvée est utilisée pour la connexion.  
   
-    -   Si **sp_validate_redirected_publisher**est appelé explicitement par un utilisateur, la connexion Windows sous laquelle l’utilisateur s’exécute est utilisée pour la connexion.  
+    -   Si **sp_validate_redirected_publisher** est appelé explicitement par un utilisateur, la connexion Windows sous laquelle l’utilisateur s’exécute est utilisée pour la connexion.  
   
-    -   Si le serveur de publication **sp_validate_redirected_** est appelé par un agent de réplication à partir de **sp_get_redirected_publisher**, la connexion Windows associée à l’agent est utilisée.  
+    -   Si **sp_validate_redirected_publisher** est appelé par un agent de réplication à partir de **sp_get_redirected_publisher**, la connexion Windows associée à l’agent est utilisée.  
   
 L’erreur 21879 peut indiquer que **sp_validate_redirected_publisher** a été appelé à l’aide d’une connexion qui n’est pas connue sur le serveur de publication cible redirigé.  
   

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: 1314744f-fcaf-46db-800e-2918fa7e1b6c
-ms.openlocfilehash: a585314a26e90b76d18117be2eafe6f78e399dc3
-ms.sourcegitcommit: 2991ad5324601c8618739915aec9b184a8a49c74
+ms.openlocfilehash: 369c52eeb66a3d8ca5042f54d71ea9001d30b194
+ms.sourcegitcommit: af64e2b8d498af26b973e86db5c00f8d72991295
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97322099"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98193036"
 ---
 # <a name="release-notes-for-sql-server-2017-on-linux"></a>Notes de publication pour SQL Server 2017 sur Linux
 
@@ -46,6 +46,7 @@ La table suivante énumère l’historique des mises en production pour [!INCLUD
 
 | Libérer               | Version       | Date de publication |
 |-----------------------|---------------|--------------|
+| [CU22-GDR](#CU22)         | 14.0.3370.1  | 2021-01-12 |
 | [CU22](#CU22)         | 14.0.3356.20  | 2020-09-10   |
 | [CU21](#CU21)         | 14.0.3335.7   | 2020-07-01   |
 | [CU20](#CU20)         | 14.0.3294.2   | 2020-04-10   |
@@ -83,6 +84,27 @@ Si vous mettez à jour des packages [!INCLUDE[ssNoVersion](../includes/ssnoversi
 - [Installer un package de recherche en texte intégral](sql-server-linux-setup-full-text-search.md)
 - [Installer SQL Server Integration Services](sql-server-linux-setup-ssis.md)
 - [Activer SQL Server Agent](sql-server-linux-setup-sql-agent.md)
+
+## <a name="cu22-gdr-january-2021"></a><a id="CU22-GDR"></a> CU22-GDR (janvier 2021)
+
+Il s’agit de la mise en production de la mise à jour cumulative 22-GDR (CU22-GDR) de [!INCLUDE[ssSQL17](../includes/sssql17-md.md)]. La version [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] de cette mise en production est 14.0.3370.1. Pour plus d’informations sur les correctifs et les améliorations de cette version, consultez <https://support.microsoft.com/help/4577467>.
+
+### <a name="package-details"></a>Détails du package
+
+Pour les installations du package manuelles ou hors connexion, vous pouvez télécharger les packages RPM et Debian avec les informations figurant dans la table suivante :
+
+> [!NOTE]
+> **Ubuntu 18.04** et **RHEL 8** sont maintenant pris en charge sur SQL Server 2017 à compter de CU20.
+>
+> Les liens d’installation du package hors connexion pour Ubuntu pointent vers les packages Ubuntu 18.04, à l’exception du package SSIS (qui n’est pas disponible pour Ubuntu 18.04). Si vous recherchez les packages Ubuntu 16.04, reportez-vous au chemin de téléchargement <https://packages.microsoft.com/ubuntu/16.04/mssql-server-2017/pool/main/m/>.
+>
+> Les liens d’installation de package hors connexion pour Red Hat pointent vers des packages RHEL 8, à l’exception du package SSIS (qui n’est pas disponible pour RHEL 8). Si vous recherchez les packages RHEL 7, reportez-vous au chemin de téléchargement <https://packages.microsoft.com/rhel/7/mssql-server-2017/>.
+
+| Package | Version du package | Téléchargements |
+|-----|-----|-----|
+| Package Red Hat RPM | 14.0.3370.1-23-18 | [Package RPM du moteur](https://packages.microsoft.com/rhel/8/mssql-server-2017/mssql-server-14.0.3370.1-18.x86_64.rpm)</br>[Package RPM haute disponibilité](https://packages.microsoft.com/rhel/8/mssql-server-2017/mssql-server-ha-14.0.3370.1-18.x86_64.rpm)</br>[Package RPM de recherche en texte intégral](https://packages.microsoft.com/rhel/8/mssql-server-2017/mssql-server-fts-14.0.3370.1-18.x86_64.rpm)</br>[Package SSIS](https://packages.microsoft.com/rhel/7/mssql-server-2017/mssql-server-is-14.0.1000.169-1.x86_64.rpm) |
+| Package SLES RPM | 14.0.3370.1-18 | [Package RPM du moteur mssql-server](https://packages.microsoft.com/sles/12/mssql-server-2017/mssql-server-14.0.3370.1-18.x86_64.rpm)</br>[Package RPM haute disponibilité](https://packages.microsoft.com/sles/12/mssql-server-2017/mssql-server-ha-14.0.3370.1-18.x86_64.rpm)</br>[Package RPM de recherche en texte intégral](https://packages.microsoft.com/sles/12/mssql-server-2017/mssql-server-fts-14.0.3370.1-18.x86_64.rpm) | 
+| Package Ubuntu 18.04 Debian | 14.0.3370.1-18 | [Package Debian du moteur](https://packages.microsoft.com/ubuntu/18.04/mssql-server-2017/pool/main/m/mssql-server/mssql-server_14.0.3370.1-18_amd64.deb)</br>[Package Debian haute disponibilité](https://packages.microsoft.com/ubuntu/18.04/mssql-server-2017/pool/main/m/mssql-server-ha/mssql-server-ha_14.0.3370.1-18_amd64.deb)</br>[Package Debian de recherche en texte intégral](https://packages.microsoft.com/ubuntu/18.04/mssql-server-2017/pool/main/m/mssql-server-fts/mssql-server-fts_14.0.3370.1-18_amd64.deb)<br/>[Package SSIS](https://packages.microsoft.com/ubuntu/16.04/mssql-server-2017/pool/main/m/mssql-server-is/mssql-server-is_14.0.1000.169-1_amd64.deb) |
 
 ## <a name="cu22-september-2020"></a><a id="CU22"></a> CU22 (septembre 2020)
 
@@ -582,7 +604,7 @@ Les sections suivantes décrivent les problèmes connus avec la mise en producti
          sudo systemctl restart mssql-server
          ```
 
-- Les bases de données [!INCLUDE[ssSQL14](../includes/sssql14-md.md)] sur Windows qui utilisent l’OLTP en mémoire ne peuvent pas être restaurées sur [!INCLUDE[ssSQL17](../includes/sssql17-md.md)] sur Linux. Pour restaurer une base de données [!INCLUDE[ssSQL14](../includes/sssql14-md.md)] qui utilise l’OLTP en mémoire, commencez par mettre à niveau les bases de données vers [!INCLUDE[ssSQL15](../includes/sssql15-md.md)] ou [!INCLUDE[ssSQL17](../includes/sssql17-md.md)] sur Windows avant de les déplacer vers [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] sur Linux via la sauvegarde/restauration ou le détachement/attachement.
+- Les bases de données [!INCLUDE[ssSQL14](../includes/sssql14-md.md)] sur Windows qui utilisent l’OLTP en mémoire ne peuvent pas être restaurées sur [!INCLUDE[ssSQL17](../includes/sssql17-md.md)] sur Linux. Pour restaurer une base de données [!INCLUDE[ssSQL14](../includes/sssql14-md.md)] qui utilise l’OLTP en mémoire, commencez par mettre à niveau les bases de données vers [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] ou [!INCLUDE[ssSQL17](../includes/sssql17-md.md)] sur Windows avant de les déplacer vers [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] sur Linux via la sauvegarde/restauration ou le détachement/attachement.
 
 - L’autorisation utilisateur **ADMINISTER BULK OPERATIONS** n’est pas prise en charge sur Linux pour l’instant.
 
