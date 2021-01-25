@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 73a11047ecfe6b797cb2c79fd2c48e3c7386882f
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: f7b6eaf18166bd546e8eb3e89ee2176c39dfb49a
+ms.sourcegitcommit: 7791bd2ba339edc5cd2078a6537c8f6bfe72a19b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987745"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98564417"
 ---
 # <a name="using-transact-sql-assertions-in-sql-server-unit-tests"></a>Utilisation d'assertions Transact-SQL dans les tests unitaires SQL Server
 
@@ -66,7 +66,7 @@ Pour obtenir un exemple montrant comment utiliser les exceptions attendues et un
   
 Utilisez directement des assertions Transact\-SQL sur le serveur à l'aide de l'instruction RAISERROR dans le script Transact\-SQL. Sa syntaxe est la suivante :  
   
-**RAISERROR (@ErrorMessage, @ErrorSeverity, @ErrorState)**  
+**RAISERROR (\@ErrorMessage, \@ErrorSeverity, \@ErrorState)**  
   
 où :  
   

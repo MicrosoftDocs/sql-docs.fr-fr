@@ -1,6 +1,6 @@
 ---
-title: Page Options de SQL Server - Exécution des requêtes
-description: Options (Exécution des requêtes)
+title: Page Options SSMS - Exécution des requêtes
+description: Options SSMS (Exécution des requêtes)
 ms.prod: sql
 ms.prod_service: sql-tools
 ms.technology: ssms
@@ -12,16 +12,16 @@ dev_langs:
 author: markingmyname
 ms.author: maghan
 ms.date: 01/13/2021
-ms.openlocfilehash: 25ac37cdb9095151c90fdf81314d4c32044e6159
-ms.sourcegitcommit: af64e2b8d498af26b973e86db5c00f8d72991295
+ms.openlocfilehash: 29ee1a365031eedae80abcffdb1147053d56f069
+ms.sourcegitcommit: 23649428528346930d7d5b8be7da3dcf1a2b3190
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98193129"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98241770"
 ---
-# <a name="query-options-execution-general-page"></a>Options de requête – Exécution (page Général)
+# <a name="options-query-execution---general"></a>Options (Exécution des requêtes - Général)
 
-Cette page vous permet de spécifier les options d’exécution des requêtes Microsoft SQL Server. Pour accéder à cette boîte de dialogue, cliquez avec le bouton droit sur le corps d'une fenêtre de l'éditeur de requête, puis cliquez sur Options de requête.
+Cette page vous permet de spécifier les options d’exécution des requêtes Microsoft SQL Server. Pour accéder à cette boîte de dialogue, cliquez avec le bouton de droite sur le corps d’une fenêtre de l’éditeur de requête, puis sélectionnez **Options de requête** ou accédez à **Outils > Options > Exécution des requêtes** dans la barre de menus supérieure.
 
 - **SET ROWCOUNT** La valeur par défaut 0 indique que SQL Server attend les résultats, tant que tous les résultats ne sont pas reçus. Spécifiez une valeur supérieure à 0 pour que SQL Server arrête la requête après avoir obtenu le nombre de lignes spécifié. Pour désactiver cette option, de manière à renvoyer toutes les lignes, spécifiez SET ROWCOUNT 0.
 
@@ -39,6 +39,6 @@ Cette page vous permet de spécifier les options d’exécution des requêtes Mi
 
     - L'Éditeur de requête ne s'exécutant pas à partir de la ligne de commande, vous ne pouvez pas passer de paramètres de ligne de commande tels que des variables.
 
-    - L'Éditeur de requête étant incapable de répondre aux invites de système d'exploitation, vous devez prendre soin de ne pas exécuter d'instructions interactives.
+    - L'Éditeur de requête étant incapable de répondre aux invites du système d'exploitation, vous devez prendre garde de ne pas exécuter d'instructions interactives.
 
 - **Rétablir les valeurs par défaut** Rétablit toutes les valeurs par défaut initiales des options de cette page.

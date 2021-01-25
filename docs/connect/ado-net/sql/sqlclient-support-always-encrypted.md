@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: cheenamalhotra
 ms.author: v-chmalh
 ms.reviewer: v-kaywon
-ms.openlocfilehash: bb971ed9fdc24491babf1ce9fe777210778037de
-ms.sourcegitcommit: 4c3949f620d09529658a2172d00bfe37aeb1a387
+ms.openlocfilehash: 12b25a6e8d7b9a5ac77a198ab047150c94b745df
+ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "96123907"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98534498"
 ---
 # <a name="using-always-encrypted-with-the-microsoft-net-data-provider-for-sql-server"></a>Utilisation d’Always Encrypted avec le Fournisseur de données Microsoft .NET pour SQL Server
 
@@ -28,6 +28,7 @@ Always Encrypted permet aux applications clientes de chiffrer des données sensi
 ## <a name="prerequisites"></a>Prérequis
 
 - Configurez Always Encrypted dans votre base de données. Pour cela, vous devez mettre en service des clés Always Encrypted et configurer le chiffrement pour les colonnes de base de données sélectionnées. Si vous n’avez pas déjà une base de données configurée avec Always Encrypted, suivez les instructions de [Bien démarrer avec Always Encrypted](../../../relational-databases/security/encryption/always-encrypted-database-engine.md#getting-started-with-always-encrypted).
+- Si vous utilisez Always Encrypted avec enclaves sécurisées, consultez [Développer des applications en utilisant Always Encrypted avec enclaves sécurisées](../../../relational-databases/security/encryption/always-encrypted-enclaves-client-development.md) pour connaître les prérequis supplémentaires.
 - Vérifiez que la plateforme .NET requise est installée sur votre ordinateur de développement. Avec [Microsoft. Data. SqlClient](../microsoft-ado-net-sql-server.md), la fonctionnalité Always Encrypted est prise en charge pour .NET Framework et .NET Core. Assurez-vous que [.NET Framework 4.6](/dotnet/framework/) ou version ultérieure ou [.NET Core 2.1](/dotnet/core/) ou version ultérieure est configurée comme version cible de la plateforme .NET dans votre environnement de développement. À partir de Microsoft.Data.SqlClient version 2.1.0, la fonctionnalité Always Encrypted est également prise en charge pour [.NET Standard 2.0](/dotnet/standard/net-standard). Pour utiliser Always Encrypted avec enclaves sécurisés, [.NET Standard 2.1](/dotnet/standard/net-standard) est requis. Si vous utilisez Visual Studio, veuillez vous reporter à la [Vue d’ensemble ciblant l’infrastructure](/visualstudio/ide/visual-studio-multi-targeting-overview).
 
 La table suivante récapitule les plateformes .NET requises pour utiliser Always Encrypted avec **Microsoft.Data.SqlClient**.
@@ -75,18 +76,20 @@ L’activation d’Always Encrypted ne suffit pas à la réussite du chiffrement
 
 À partir de la version 1.1.0 de Microsoft.Data.SqlClient, le pilote prend en charge [Always Encrypted avec enclaves sécurisées](../../../relational-databases/security/encryption/always-encrypted-enclaves.md).
 
-Pour activer l’utilisation de l’enclave pendant la connexion à [!INCLUDE [sssqlv15-md](../../../includes/sssqlv15-md.md)] ou version ultérieure, vous devez configurer votre application afin d’activer les calculs d’enclave et l’attestation d’enclave.
+Pour obtenir des informations d’ordre général, consultez [Développer des applications à l’aide d’Always Encrypted avec enclaves sécurisées](../../../relational-databases/security/encryption/always-encrypted-enclaves-client-development.md).
 
-Pour obtenir des informations générales sur le rôle du pilote client dans les calculs d’enclave et l’attestation d’enclave, consultez [Développer des applications à l’aide d’Always Encrypted avec enclaves sécurisées](../../../relational-databases/security/encryption/always-encrypted-enclaves-client-development.md).
+Pour activer les calculs d’enclave pour une connexion de base de données, vous devez définir les mots clés de chaînes de connexion suivants, en plus de l’activation d’Always Encrypted (comme expliqué dans la section précédente) :
 
-Pour configurer votre application :
+- `Attestation Protocol` : spécifie un protocole d’attestation. 
+  - Si vous utilisez [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] et le service Guardian hôte (SGH), la valeur de ces mots clés doit être `HGS`.
+  - Si vous utilisez [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] et Microsoft Azure attestation, la valeur de ces mots clés doit être `AAS`.
 
-1. Vérifiez que votre instance [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] a été configurée avec un type d’enclave (consultez [Configurer le type d’enclave pour l’option de configuration Always Encrypted](../../../database-engine/configure-windows/configure-column-encryption-enclave-type.md)). [!INCLUDE [sssqlv15-md](../../../includes/sssqlv15-md.md)] prend en charge le type d’enclave VBS et le [Service Guardian hôte](/windows-server/security/guarded-fabric-shielded-vm/guarded-fabric-setting-up-the-host-guardian-service-hgs) pour l’attestation.
-2. Activez les calculs d’enclave pour connecter votre application à la base de données en définissant le mot clé `Enclave Attestation URL` dans la chaîne de connexion sur un point de terminaison d’attestation. La valeur du mot clé doit être définie sur le point de terminaison d’attestation du serveur SGH configuré dans votre environnement.
-3. Fournissez le protocole d’attestation à utiliser en définissant le mot clé `Attestation Protocol` dans la chaîne de connexion. La valeur de ce mot clé doit être définie sur « SGH ».
+- `Enclave Attestation URL` : spécifie une URL d’attestation (un point de terminaison de service d’attestation). Vous devez obtenir une URL d’attestation pour votre environnement auprès de votre administrateur de services fédérés d’attestation.
+
+  - Si vous utilisez [!INCLUDE[ssnoversion-md](../../../includes/ssnoversion-md.md)] et le service Guardian hôte (SGH), consultez [Déterminer et partager l’URL d’attestation SGH](../../../relational-databases/security/encryption/always-encrypted-enclaves-host-guardian-service-deploy.md#step-6-determine-and-share-the-hgs-attestation-url).
+  - Si vous utilisez [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] et Microsoft Azure Attestation, consultez [Déterminer l’URL d’attestation de votre stratégie d’attestation](/azure-sql/database/always-encrypted-enclaves-configure-attestation#determine-the-attestation-url-for-your-attestation-policy).
 
 Pour obtenir un tutoriel pas à pas, consultez [Tutoriel : Développer une application .NET en utilisant Always Encrypted avec enclaves sécurisées](tutorial-always-encrypted-enclaves-develop-net-apps.md).
-
 
 ## <a name="retrieving-and-modifying-data-in-encrypted-columns"></a>Récupération et modification des données dans des colonnes chiffrées
 

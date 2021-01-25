@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 073f3b9e-8edd-4815-88ea-de0655d0325e
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: aa20ac9d4118e5fec4dbaf225d27c9db8257a88f
-ms.sourcegitcommit: cb620c77fe6bdefb975968837706750c31048d46
+ms.openlocfilehash: 62cf191ec41e71084dbe3ca85230108f9fc712b0
+ms.sourcegitcommit: 0576ce6d7c9c5514306a90e27fa621ef25825186
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86393117"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98575711"
 ---
 # <a name="understanding-encryption-support"></a>Présentation de la prise en charge du chiffrement
 
@@ -79,7 +79,7 @@ Pendant la négociation TLS, le serveur envoie son certificat de clé publique a
   
 - Le nom CN (Nom commun) du sujet ou le nom DNS du nom SAN (Autre nom du sujet) du certificat correspond exactement à la valeur **serverName** de la chaîne de connexion ou, si elle est spécifiée, à la valeur de la propriété **hostNameInCertificate**.  
   
-- Un nom DNS peut comprendre des caractères génériques. En revanche, le [!INCLUDE[jdbcNoVersion](../../includes/jdbcnoversion_md.md)] ne prend pas en charge la correspondance générique. Par exemple, abc.com ne correspondra pas à \*.com, mais \*.com correspondra à \*.com.  
+- Un nom DNS peut comprendre des caractères génériques. Avant la version 7.2, le [!INCLUDE[jdbcNoVersion](../../includes/jdbcnoversion_md.md)] ne prend pas en charge la correspondance des caractères génériques. Par exemple, abc.com ne correspondra pas à \*.com, mais \*.com correspondra à \*.com. Avec la version 7.2 et les versions récentes, la correspondance de caractères génériques de certificat standard est prise en charge.  
   
 ## <a name="see-also"></a>Voir aussi
 

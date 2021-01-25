@@ -9,12 +9,12 @@ ms.assetid: 61290949-690a-4e19-b078-57c99b6b30fa
 author: maggiesMSFT
 ms.author: maggies
 monikerRange: = sql-server-2016
-ms.openlocfilehash: 894dfe8b6b3c4832a687cd10b2ed21644d1f7227
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9281c38d56b85cda96b9a5f9888ff707bc4e139a
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97439344"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596210"
 ---
 # <a name="migrate-a-reporting-services-installation-sharepoint-mode"></a>Migrer une installation Reporting Services (mode SharePoint)
 
@@ -30,17 +30,17 @@ ms.locfileid: "97439344"
 
 -   [Présentation de la procédure de mise à niveau vers SharePoint 2016](https://technet.microsoft.com/library/cc262483\(v=office.16\)).
 
--   [Présentation de la procédure de mise à niveau vers SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=256688).
+-   [Présentation de la procédure de mise à niveau vers SharePoint 2013](/SharePoint/upgrade-and-update/overview-of-the-upgrade-process-from-sharepoint-2010-to-sharepoint-2013).
   
--   [Nettoyer les préparations avant la mise à niveau vers SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=256689).  
+-   [Nettoyer les préparations avant la mise à niveau vers SharePoint 2013](/SharePoint/upgrade-and-update/clean-up-an-environment-before-an-upgrade-to-sharepoint-2013).  
   
 -   [Mettre à niveau les bases de données de SharePoint 2013 vers SharePoint 2016](https://technet.microsoft.com/library/cc303436\(v=office.16\)).
 
--   [Mettre à niveau les bases de données de SharePoint 2010 vers SharePoint 2013](https://go.microsoft.com/fwlink/p/?LinkId=256690).
+-   [Mettre à niveau les bases de données de SharePoint 2010 vers SharePoint 2013](/SharePoint/upgrade-and-update/upgrade-content-databases-from-sharepoint-2010-to-sharepoint-2013).
   
 -   [Déplacer des bases de données de contenu dans SharePoint 2016](https://technet.microsoft.com/library/cc262792\(v=office.16\).aspx).
 
--   [Déplacer des bases de données de contenu dans SharePoint 2013](https://technet.microsoft.com/library/cc262792.aspx).
+-   [Déplacer des bases de données de contenu dans SharePoint 2013](/SharePoint/administration/move-content-databases).
   
 ##  <a name="migrate-from-reporting-services-sharepoint-mode-versions-prior-to-sql-server-2012"></a><a name="bkmk_prior_versions"></a> Migrer à partir de versions de Reporting Services en mode SharePoint antérieures à SQL Server 2012  
  L'architecture en mode SharePoint de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] a été modifiée dans [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], y compris le schéma de base de données d'application de service. Si vous souhaitez migrer vers le mode SharePoint de [!INCLUDE[ssRSCurrent](../../includes/ssrscurrent-md.md)] une version antérieure à [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], commencez par créer le nouvel environnement SharePoint en installant SharePoint et le mode SharePoint de SQL Server 2016 Reporting Services. Pour plus d’informations, consultez [Installer le mode SharePoint de Reporting Services](../../reporting-services/install-windows/install-reporting-services-sharepoint-mode.md).  
@@ -76,7 +76,7 @@ ms.locfileid: "97439344"
 |Élément|Objets|Méthode|Notes|  
 |-|-------------|------------|-----------|  
 |**1**|[!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] .|**Rskeymgmt.exe** ou Gestionnaire de configuration [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] . Consultez [Sauvegarder et restaurer les clés de chiffrement Reporting Services](../../reporting-services/install-windows/ssrs-encryption-keys-back-up-and-restore-encryption-keys.md).|Les outils indiqués peuvent être utilisés pour la sauvegarde, mais pour l'opération de restauration vous devez utiliser les pages de gestion de l'application de service [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] ou PowerShell.|  
-|**2**|Bases de données de contenu SharePoint.||Sauvegardez la base de données et détachez-la.<br /><br /> Consultez la section « Mise à niveau avec liaison de base de données » de l’article [Déterminer l’approche de mise à niveau (SharePoint Server 2010) (https://technet.microsoft.com/library/cc263447.aspx)](https://technet.microsoft.com/library/cc263447.aspx).|  
+|**2**|Bases de données de contenu SharePoint.||Sauvegardez la base de données et détachez-la.<br /><br /> Consultez la section « Mise à niveau avec liaison de base de données » dans [Déterminer l’approche de mise à niveau (SharePoint Server 2010) (/SharePoint/upgrade-and-update/determine-strategy-for-upgrade-to-sharepoint-2013)](/SharePoint/upgrade-and-update/determine-strategy-for-upgrade-to-sharepoint-2013).|  
 |**3**|Base de données SQL Server, qui joue le rôle de base de données du catalogue de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)].|Sauvegarde et restauration de la base de données SQL Server<br /><br /> or<br /><br /> Liez et détachez une base de données SQL Server.||  
 |**4**|[!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] .|Simple copie du fichier.|Vous devez seulement copier rsreportserver.config si vous avez personnalisé le fichier. Exemple de l’emplacement par défaut des fichiers : C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\WebServices\Reporting\\*:<br /><br /> <br /><br /> RSReportServer.config<br /><br /> Rssvrpolicy.config<br /><br /> Web.config pour l'application ASP.NET de serveur de rapports.<br /><br /> Machine.config pour ASP.NET.|  
   
@@ -87,7 +87,7 @@ ms.locfileid: "97439344"
   
 |Élément|Objets|Méthode|Notes|  
 |-|-------------|------------|-----------|  
-|**1**|Restaurez les bases de données de contenu SharePoint sur la nouvelle batterie.|Méthode « Mise à niveau avec liaison de base de données » SharePoint.|Étapes de base :<br /><br /> 1) Restaurez la base de données sur le nouveau serveur.<br /><br /> 2) Attachez la base de données de contenu à une application web en indiquant l’URL.<br /><br /> 3) La commande Get-SPWebapplication répertorie toutes les applications web et les URL.<br /><br /> <br /><br /> Consultez la section « Mise à niveau avec liaison de base de données » dans [Déterminer l’approche de mise à niveau (SharePoint Server 2010) (https://technet.microsoft.com/library/cc263447.aspx)](https://technet.microsoft.com/library/cc263447.aspx)et [Attacher des bases de données et mettre à niveau avec SharePoint Server 2010 (https://technet.microsoft.com/library/cc263299.aspx)](https://technet.microsoft.com/library/cc263299.aspx).|  
+|**1**|Restaurez les bases de données de contenu SharePoint sur la nouvelle batterie.|Méthode « Mise à niveau avec liaison de base de données » SharePoint.|Étapes de base :<br /><br /> 1) Restaurez la base de données sur le nouveau serveur.<br /><br /> 2) Attachez la base de données de contenu à une application web en indiquant l’URL.<br /><br /> 3) La commande Get-SPWebapplication répertorie toutes les applications web et les URL.<br /><br /> <br /><br /> Consultez la section « mise à niveau de l’attachement de base de données » dans [Déterminer l’approche de mise à niveau (SharePoint Server 2010) (/SharePoint/upgrade-and-update/determine-strategy-for-upgrade-to-sharepoint-2013)](/SharePoint/upgrade-and-update/determine-strategy-for-upgrade-to-sharepoint-2013)et [Joindre des bases de données et effectuer une mise à niveau vers SharePoint Server 2010 (/SharePoint/upgrade-and-update/upgrade-content-databases)](/SharePoint/upgrade-and-update/upgrade-content-databases).|  
 |**2**|Restaurez la base de données SQL Server qui joue le rôle de base de données de catalogue [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] (ReportServer).|Sauvegardez et restaurez les bases de données SQL.<br /><br /> **or**<br /><br /> Liez et détachez la base de données SQL Server.|Lors de la première utilisation de la base de données, [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] met à jour le schéma de la base de données selon les besoins pour qu’elle fonctionne avec l’environnement SQL Server 2016.|  
 |**3**|Créez une nouvelle application de service de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] .|Créez une nouvelle application de service de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] .|Lorsque vous créez une application de service, configurez-la pour utiliser la base de données du serveur de rapports que vous avez copiée.<br /><br /> Pour plus d’informations sur l’utilisation de l’Administration centrale de SharePoint, consultez la section « Étape 3 : créer une application de service Reporting Services » dans [Installer le premier serveur de rapports en mode SharePoint](../../reporting-services/install-windows/install-the-first-report-server-in-sharepoint-mode.md).<br /><br /> Pour voir des exemples d’utilisation de PowerShell, consultez la section « Pour créer une application de service Reporting Services à l’aide de PowerShell » dans [Service et applications de service Reporting Services SharePoint](../../reporting-services/report-server-sharepoint/reporting-services-sharepoint-service-and-service-applications.md).|  
 |**4**|Restaurez les fichiers de configuration de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] .|Simple copie du fichier.|Exemple de l'emplacement par défaut des fichiers : C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\15\WebServices\Reporting.|  
@@ -104,7 +104,7 @@ ms.locfileid: "97439344"
   
 3.  Si vous avez un compte d'exécution sans assistance (UEA) et que vous utilisez l'authentification Windows, prenez note des informations d'identification pour que vous puissiez les utiliser pour le processus de restauration.  
   
-4.  Pour plus d'informations, consultez [Sauvegarder les applications de service dans SharePoint 2013](https://technet.microsoft.com/library/ee428318.aspx).  
+4.  Pour plus d'informations, consultez [Sauvegarder les applications de service dans SharePoint 2013](/SharePoint/administration/back-up-a-service-application).  
   
 ### <a name="restore-operations"></a>Opérations de restauration  
   
@@ -116,13 +116,13 @@ ms.locfileid: "97439344"
   
 3.  Configurez le compte UEA et les informations d'identification Windows dans l'application de service.  
   
-4.  Pour plus d'informations, consultez [Restaurer les applications de service dans SharePoint 2013](https://technet.microsoft.com/library/ee428305.aspx).  
+4.  Pour plus d'informations, consultez [Restaurer les applications de service dans SharePoint 2013](/SharePoint/administration/restore-a-service-application).  
   
 ##  <a name="additional-resources"></a><a name="bkmk_additional_resources"></a> Ressources supplémentaires  
   
--   [Prendre en main les mises à niveau vers SharePoint 2013 (https://technet.microsoft.com/library/ee833948.aspx)](https://technet.microsoft.com/library/ee833948.aspx).  
+-   [Démarrage des mises à niveau vers SharePoint 2013 (/SharePoint/upgrade-and-update/get-started-with-upgrade)](/SharePoint/upgrade-and-update/get-started-with-upgrade).  
   
--   [Présentation de la procédure de mise à niveau vers SharePoint 2013 (https://technet.microsoft.com/library/cc262483.aspx)](https://technet.microsoft.com/library/cc262483.aspx).  
+-   [Vue d’ensemble du processus de mise à niveau vers SharePoint 2013 (/SharePoint/upgrade-and-update/overview-of-the-upgrade-process)](/SharePoint/upgrade-and-update/overview-of-the-upgrade-process).  
 
 ## <a name="next-steps"></a>Étapes suivantes
 
