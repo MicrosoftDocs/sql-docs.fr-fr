@@ -14,18 +14,18 @@ ms.assetid: 731a4576-09c1-47f0-a8f6-edd0b55679f4
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: f126e20170cb0309d287f57590416d9af5235ca5
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: fb4b3f8a0efb8f62a94177c5a4546e3a30697ccb
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97462570"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766064"
 ---
 # <a name="specify-computed-columns-in-a-table"></a>Spécifier les colonnes calculées dans une table
 
 [!INCLUDE[tsql-appliesto-ss-asdb-xxxx-xxx-md](../../includes/applies-to-version/sql-asdb.md)]
 
-Une colonne calculée est une colonne virtuelle qui n'est pas stockée physiquement dans la table, à moins que la colonne ne soit indiquée comme PERSISTED. Une expression de colonne calculée peut utiliser des données d'autres colonnes afin de calculer une valeur pour la colonne à laquelle elle appartient. Vous pouvez spécifier une expression pour une colonne calculée dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].
+Une colonne calculée est une colonne virtuelle qui n'est pas stockée physiquement dans la table, à moins que la colonne ne soit indiquée comme PERSISTED. Une expression de colonne calculée peut utiliser des données d'autres colonnes afin de calculer une valeur pour la colonne à laquelle elle appartient. Vous pouvez spécifier une expression pour une colonne calculée dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].
 
 **Dans cette rubrique**
 

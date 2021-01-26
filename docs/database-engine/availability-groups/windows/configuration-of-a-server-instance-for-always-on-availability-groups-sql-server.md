@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: fad8db32-593e-49d5-989c-39eb8399c416
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c4203e1fa72562dbf0598a74b2c0804b92bae326
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 0fb9bcf6414b9c3fcc717cd219829f6f8fa14f7c
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643034"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765975"
 ---
 # <a name="enable-the-always-on-availability-group-feature-for-a-sql-server-instance"></a>Activer la fonctionnalité de groupe de disponibilité Always On pour une instance de SQL Server
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique contient des informations sur les conditions requises pour configurer une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] pour la prise en charge de [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+  Cette rubrique contient des informations sur les conditions requises pour configurer une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] pour la prise en charge de [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)].  
   
 > [!IMPORTANT]  
 >  Pour obtenir des informations de base sur la configuration requise pour [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] et les restrictions pour les nœuds de clustering de basculement Windows Server (WSFC) et pour les instances de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], consultez [Conditions préalables, restrictions et recommandations pour les groupes de disponibilité Always On &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability.md).  

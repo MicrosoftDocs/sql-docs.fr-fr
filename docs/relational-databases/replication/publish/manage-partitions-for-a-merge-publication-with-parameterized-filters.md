@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: fb5566fe-58c5-48f7-8464-814ea78e6221
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 4793260717225b731f6675098a8fa187884de206
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 0b24e2e404dbea75d77cdfc8acdfa50189db2286
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85882180"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765728"
 ---
 # <a name="manage-partitions-for-a-merge-publication-with-parameterized-filters"></a>Gérer les partitions d'une publication de fusion avec des filtres paramétrables
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment gérer des partitions pour une publication de fusion avec des filtres paramétrables dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou d'objets RMO (Replication Management Objects). Les filtres de lignes paramétrables peuvent être utilisés pour générer des partitions qui ne se chevauchent pas. Ces partitions peuvent être restreintes afin qu'un seul abonnement puisse recevoir une partition donnée. Dans ces cas, un grand nombre d'abonnés se traduit par un nombre élevé de partitions, ce qui requiert ensuite un nombre égal d'instantanés partitionnés. Pour plus d'informations, voir [Parameterized Row Filters](../../../relational-databases/replication/merge/parameterized-filters-parameterized-row-filters.md).  
+  Cette rubrique explique comment gérer des partitions pour une publication de fusion avec des filtres paramétrables dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou d'objets RMO (Replication Management Objects). Les filtres de lignes paramétrables peuvent être utilisés pour générer des partitions qui ne se chevauchent pas. Ces partitions peuvent être restreintes afin qu'un seul abonnement puisse recevoir une partition donnée. Dans ces cas, un grand nombre d'abonnés se traduit par un nombre élevé de partitions, ce qui requiert ensuite un nombre égal d'instantanés partitionnés. Pour plus d'informations, voir [Parameterized Row Filters](../../../relational-databases/replication/merge/parameterized-filters-parameterized-row-filters.md).  
   
  **Dans cette rubrique**  
   

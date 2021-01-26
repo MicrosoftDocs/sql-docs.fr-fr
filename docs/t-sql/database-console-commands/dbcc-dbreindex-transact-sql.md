@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 6e929d09-ccb5-4855-a6af-b616022bc8f6
 author: pmasl
 ms.author: umajay
-ms.openlocfilehash: fc18c47d87ada5b60cb57aba79e1063ce1f38c3a
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: ed6617453805361b5e8c1ddb888495c0cc5d1cb0
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96119642"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596669"
 ---
 # <a name="dbcc-dbreindex-transact-sql"></a>DBCC DBREINDEX (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -37,7 +37,7 @@ Reconstruit un ou plusieurs index pour une table d'une base de données spécifi
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)] Utilisez à la place [ALTER INDEX](../../t-sql/statements/alter-index-transact-sql.md).  
   
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à la [version actuelle](https://go.microsoft.com/fwlink/p/?LinkId=299658)).
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md)).
   
 ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
   
@@ -123,5 +123,3 @@ GO
 [sys.dm_db_index_physical_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-index-physical-stats-transact-sql.md)  
 [ALTER INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/alter-index-transact-sql.md)  
   
-  
-

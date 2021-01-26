@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: f3059e42-5f6f-4a64-903c-86dca212a4b4
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: bab0801b0193d9f675ef69e566eef375f0930e5b
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: ce637e88679747faf40ec7f262ceaea3c0f01f5f
+ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170861"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98688848"
 ---
 # <a name="alter-server-configuration-transact-sql"></a>ALTER SERVER CONFIGURATION (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -184,13 +184,13 @@ Définit le niveau de journalisation pour le clustering de basculement SQL Serve
 Dans les scénarios de basculement de ressources, la DLL de ressource SQL Server peut obtenir un fichier dump avant le basculement. Cela s’applique à la fois aux technologies d’instance de cluster de basculement et de groupe de disponibilité. Lorsque la DLL de ressource SQL Server détermine qu’une ressource SQL Server a échoué, elle utilise l’utilitaire Sqldumper.exe pour obtenir un fichier dump du processus SQL Server. Pour vous assurer que l’utilitaire Sqldumper.exe génère correctement le fichier dump lors du basculement de ressources, vous devez définir les trois propriétés suivantes comme prérequis : SqlDumperDumpTimeOut, SqlDumperDumpPath, SqlDumperDumpFlags.
 
 SQLDUMPEREDUMPFLAGS  
-Détermine le type de fichiers dump généré par l'utilitaire SQL Server SQLDumper. Le paramètre par défaut est 0. Des valeurs décimales et non hexadécimales sont utilisées pour ce paramètre. Pour un minidump, utilisez 288 ; pour un minidump avec mémoire indirecte, utilisez 296 ; pour un dump filtré, utilisez 33024. Pour plus d’informations, consultez [l’article de la base de connaissances consacré à l’utilitaire SQL Server Dumper](https://go.microsoft.com/fwlink/?LinkId=206173).  
+Détermine le type de fichiers dump généré par l'utilitaire SQL Server SQLDumper. Le paramètre par défaut est 0. Des valeurs décimales et non hexadécimales sont utilisées pour ce paramètre. Pour un minidump, utilisez 288 ; pour un minidump avec mémoire indirecte, utilisez 296 ; pour un dump filtré, utilisez 33024. Pour plus d’informations, consultez [l’article de la base de connaissances consacré à l’utilitaire SQL Server Dumper](/troubleshoot/sql/tools/use-sqldumper-generate-dump-file).  
   
 SQLDUMPERDUMPPATH = { 'os_file_path' | DEFAULT }  
-Emplacement de stockage des fichiers dump par l'utilitaire SQLDumper. Pour plus d’informations, consultez [l’article de la base de connaissances consacré à l’utilitaire SQL Server Dumper](https://go.microsoft.com/fwlink/?LinkId=206173).  
+Emplacement de stockage des fichiers dump par l'utilitaire SQLDumper. Pour plus d’informations, consultez [l’article de la base de connaissances consacré à l’utilitaire SQL Server Dumper](/troubleshoot/sql/tools/use-sqldumper-generate-dump-file).  
   
 SQLDUMPERDUMPTIMEOUT = { 'dump_time-out' | DEFAULT }  
-Valeur du délai d'attente, en millisecondes, de l'utilitaire SQLDumper pour générer un vidage en cas d'échec de SQL Server. La valeur par défaut est 0, ce qui signifie qu'il n'existe aucune limite de temps pour procéder au vidage. Pour plus d’informations, consultez [l’article de la base de connaissances consacré à l’utilitaire SQL Server Dumper](https://go.microsoft.com/fwlink/?LinkId=206173).  
+Valeur du délai d'attente, en millisecondes, de l'utilitaire SQLDumper pour générer un vidage en cas d'échec de SQL Server. La valeur par défaut est 0, ce qui signifie qu'il n'existe aucune limite de temps pour procéder au vidage. Pour plus d’informations, consultez [l’article de la base de connaissances consacré à l’utilitaire SQL Server Dumper](/troubleshoot/sql/tools/use-sqldumper-generate-dump-file).  
   
  FAILURECONDITIONLEVEL = { 'failure_condition_level' | DEFAULT }  
  Conditions dans lesquelles l’instance de cluster de basculement SQL Server doit basculer ou redémarrer. La valeur par défaut est 3, ce qui signifie que la ressource SQL Server procèdera au basculement ou au redémarrage lors d'erreurs de serveur critiques. Pour plus d’informations sur ce niveau de condition d’échec et sur d’autres niveaux, consultez [Configurer les paramètres de propriété FailureConditionLevel](../../sql-server/failover-clusters/windows/configure-failureconditionlevel-property-settings.md).  
@@ -484,4 +484,3 @@ GO
 [sys.dm_os_memory_nodes &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-os-memory-nodes-transact-sql.md)   
 [sys.dm_os_buffer_pool_extension_configuration &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-os-buffer-pool-extension-configuration-transact-sql.md)   
 [Extension du pool de mémoires tampons](../../database-engine/configure-windows/buffer-pool-extension.md)  
-  

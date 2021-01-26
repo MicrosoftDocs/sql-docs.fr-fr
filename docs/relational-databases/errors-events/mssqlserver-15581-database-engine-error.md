@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: f1221474d86d95400ca955d64b4a0812cffe1c0d
-ms.sourcegitcommit: f87f2f0f1edc91fe400040d8e3a5810347aa8d70
+ms.openlocfilehash: 018252ff40ebf2ea7bd52b34f03ed25ef124a8d7
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96868895"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596313"
 ---
 # <a name="mssqlserver_15581"></a>MSSQLSERVER_15581
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -51,7 +51,7 @@ go
 alter master key drop encryption by service master key
 ```
 
-La clé principale du service est utilisée pour chiffrer le certificat utilisé par la clé principale de base de données. Toute tentative d’utilisation de la base de données pour laquelle le chiffrement transparent des données (TDE) est activé nécessite l’accès à la clé principale de base de données dans la base de données Master. Une clé principale qui n’est pas chiffrée par la clé principale du service doit être ouverte à l’aide de l’instruction [OPEN MASTER KEY (Transact-SQL)](/sql/t-sql/statements/open-master-key-transact-sql) avec un mot de passe pour chaque session nécessitant l’accès à la clé principale. Comme cette commande ne peut pas être exécutée sur des sessions système, la récupération ne peut pas être effectuée sur des bases de données sur lesquelles TDE est activé.
+La clé principale du service est utilisée pour chiffrer le certificat utilisé par la clé principale de base de données. Toute tentative d’utilisation de la base de données pour laquelle le chiffrement transparent des données (TDE) est activé nécessite l’accès à la clé principale de base de données dans la base de données Master. Une clé principale qui n’est pas chiffrée par la clé principale du service doit être ouverte à l’aide de l’instruction [OPEN MASTER KEY (Transact-SQL)](../../t-sql/statements/open-master-key-transact-sql.md) avec un mot de passe pour chaque session nécessitant l’accès à la clé principale. Comme cette commande ne peut pas être exécutée sur des sessions système, la récupération ne peut pas être effectuée sur des bases de données sur lesquelles TDE est activé.
 
 ## <a name="user-action"></a>Action requise
 

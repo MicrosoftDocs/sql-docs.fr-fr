@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 28261014-342c-442a-bd89-6d04b8d4e8b7
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 276436fb5b7ea41ace997a9c744992d4af177b00
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: b19e7f11a60ac21b191c524c0444414f1c5231e8
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641217"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766034"
 ---
 # <a name="always-on-availability-group-is-not-ready-for-automatic-failover"></a>Le groupe de disponibilité Always On n’est pas prêt pour le basculement automatique
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -36,10 +36,7 @@ ms.locfileid: "97641217"
 ## <a name="description"></a>Description  
  Cette stratégie vérifie que le groupe de disponibilité a au moins un réplica secondaire prêt pour le basculement. La stratégie se trouve dans un état non sain et une alerte est déclenchée lorsque le mode de basculement du réplica principal est automatique, mais qu'aucun des réplicas secondaires dans le groupe de disponibilité n'est prêt pour le basculement.  
   
- La stratégie se trouve dans un état sain lorsqu'au moins un réplica secondaire est prêt pour le basculement automatique.  
-  
-> [!NOTE]  
->  Pour cette version de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)], les informations sur les causes et les solutions possibles figurent sous [Le groupe de disponibilité n’est pas prêt pour le basculement automatique](https://go.microsoft.com/fwlink/p/?LinkId=220851) sur le Wiki TechNet.  
+ La stratégie se trouve dans un état sain lorsqu'au moins un réplica secondaire est prêt pour le basculement automatique.
   
 ## <a name="possible-causes"></a>Causes possibles  
  Le groupe de disponibilité n'est pas prêt pour le basculement automatique. Le réplica principal est configuré pour le basculement automatique ; toutefois, le réplica secondaire n'est pas prêt pour le basculement automatique. Le réplica secondaire configuré pour le basculement automatique est peut-être indisponible ou son état de synchronisation des données n'est pas SYNCHRONIZED pour le moment.  

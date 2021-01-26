@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 6197bbe7-67d4-446d-ba5f-cabfa5df77f1
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: b9b1be7e6cbfead5bf0fa14bf60f294ad852d9ad
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 13c05e5b6d4d4f863bc1a4889358ec4ef13e629a
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643233"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765683"
 ---
 # <a name="create-a-database-mirroring-endpoint-for-an-availability-group-using-powershell"></a>Créer un point de terminaison de mise en miroir de bases de données pour un groupe de disponibilité à l’aide de PowerShell
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique explique comment créer un point de terminaison de mise en miroir de bases de données à utiliser par [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l'aide de PowerShell.  
+  Cette rubrique explique comment créer un point de terminaison de mise en miroir de bases de données à utiliser par [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] à l'aide de PowerShell.  
   
 
   

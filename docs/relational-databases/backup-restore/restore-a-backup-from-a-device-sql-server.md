@@ -16,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: 6e139de7-7de2-4d18-9df0-beac31ba7ff1
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 1c2125a470390f1b7343e4e0f978eb957bd3695e
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 3a4a7c2b8125e5e63efd1b72170b87360395756e
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96130303"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765216"
 ---
 # <a name="restore-a-backup-from-a-device-sql-server"></a>Restaurer une sauvegarde à partir d'une unité (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment restaurer une sauvegarde à partir d'une unité dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
+  Cette rubrique explique comment restaurer une sauvegarde à partir d'une unité dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   
 > [!NOTE]  
 >  Pour obtenir des informations sur la sauvegarde SQL Server dans le service de stockage d’objets blob Azure, consultez [Sauvegarde et restauration SQL Server avec le service de stockage d’objets blob Microsoft Azure](../../relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service.md).  

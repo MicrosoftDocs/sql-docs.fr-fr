@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 1a2162d3-54fb-4356-b349-effbdc15a5a4
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 14050bd328086daabb6fe0ca1c6b570e800f929e
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 0f62cc4bb263701fc71fceb663a1391a7012f514
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643157"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766024"
 ---
 # <a name="availability-replica-is-disconnected-within-an-always-on-availability-group"></a>Le réplica de disponibilité est déconnecté dans un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -35,9 +35,6 @@ ms.locfileid: "97643157"
   
 ## <a name="description"></a>Description  
  Cette stratégie vérifie l'état de la connexion entre les réplicas de disponibilité. La stratégie se trouve dans un état non sain lorsque l'état de la connexion du réplica de disponibilité est DISCONNECTED. Autrement, l'état de la stratégie est sain.  
-  
-> [!NOTE]  
->  Pour cette version de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)], les informations sur les causes et les solutions possibles sont situées sous [Le réplica de disponibilité est déconnecté](https://go.microsoft.com/fwlink/p/?LinkId=220857) sur le Wiki TechNet.  
   
 ## <a name="possible-causes"></a>Causes possibles  
  Le réplica secondaire n'est pas connecté au réplica principal. L'état de la connexion est DISCONNECTED. Ce problème peut avoir les causes suivantes :  

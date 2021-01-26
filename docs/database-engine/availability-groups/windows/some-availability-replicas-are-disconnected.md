@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: aea808be-6f0f-40c2-9aa2-a2a435ec6443
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c48d324ef9437bb349922604f0149f2a468d8952
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: f4641417055b4a237dbed4459f165dc66f7febc8
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642115"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765882"
 ---
 # <a name="some-availability-replicas-are-disconnected"></a>Certains réplicas de disponibilité sont déconnectés
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -35,10 +35,7 @@ ms.locfileid: "97642115"
   
 ## <a name="description"></a>Description  
  Cette stratégie détermine l'état de la connexion de tous les réplicas de disponibilité et recherche les réplicas de disponibilité dont l'état est DISCONNECTED. La stratégie se trouve dans un état non sain lorsque l'état d'un réplica de disponibilité est DISCONNECTED. Autrement, l'état de la stratégie est sain.  
-  
-> [!NOTE]  
->  Pour cette version de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)], les informations sur les causes et les solutions possibles sont situées sous [Certains réplicas de disponibilité sont déconnectés](https://go.microsoft.com/fwlink/p/?LinkId=220855) sur TechNet Wiki.  
-  
+ 
 ## <a name="possible-causes"></a>Causes possibles  
  Dans ce groupe de disponibilité, au moins un réplica secondaire n'est pas connecté au réplica principal. L'état de la connexion est DISCONNECTED.  
   

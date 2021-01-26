@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: a0227cd8-6944-4547-87e8-7b2507e26442
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: f2e7bc60bcfd7578d70528d92ef025370c28134e
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 6e980e075f23d3a943870fc6dd02aa420797f8a4
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "92194735"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596477"
 ---
 # <a name="sql-server-destination"></a>Destination SQL Server
 
@@ -117,7 +117,7 @@ ms.locfileid: "92194735"
   
 ## <a name="related-content"></a>Contenu associé  
   
--   Article technique, [You may get "Unable to prepare the SSIS bulk insert for data insertion" error on UAC enabled systems](https://go.microsoft.com/fwlink/?LinkId=199482), sur support.microsoft.com.  
+-   Article technique, [You may get "Unable to prepare the SSIS bulk insert for data insertion" error on UAC enabled systems](/troubleshoot/sql/integration-services/error-you-run-ssis-package), sur support.microsoft.com.  
   
 -   Article technique, [Guide des performances de chargement des données](/previous-versions/sql/sql-server-2008/dd425070(v=sql.100)), sur le site msdn.microsoft.com.  
   
@@ -206,4 +206,3 @@ ms.locfileid: "92194735"
   
 ## <a name="see-also"></a>Voir aussi  
  [Flux de données](../../integration-services/data-flow/data-flow.md)  
-  

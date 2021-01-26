@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: 1df2123a-1197-4fff-91a3-25e3d8848aaa
 author: pmasl
 ms.author: umajay
-ms.openlocfilehash: baa64e35a39d1f61f2e5b5cda6ce64e2fc72c455
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: ed1ba4d3fb6114a74dbf972ff0a04f84a463af06
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91114973"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597085"
 ---
 # <a name="dbcc-showcontig-transact-sql"></a>DBCC SHOWCONTIG (Transact-SQL)
 
@@ -40,9 +40,9 @@ Affiche les informations de fragmentation pour les données et les index de la t
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)] Utilisez [sys.dm_db_index_physical_stats](../../relational-databases/system-dynamic-management-views/sys-dm-db-index-physical-stats-transact-sql.md) à la place.  
   
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à la [version actuelle](https://go.microsoft.com/fwlink/p/?LinkId=299658)).
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md)).
   
-![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
+![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -100,7 +100,7 @@ Le tableau suivant décrit les informations du jeu de résultats.
 |**Commutateurs d’extension**|Nombre de fois où l'instruction DBCC est passée d'une extension à l'autre en parcourant les pages de l'index ou de la table.|  
 |**Durée Moyenne des pages par extension**|Nombre de pages par extension dans la chaîne de pages.|  
 |**Densité d’analyse [Meilleur nombre: Nombre réel]**|Il s'agit d'un pourcentage. Il représente le ratio **Meilleur nombre** sur **Nombre réel**. Cette valeur est de 100 si tout est contigu et elle est inférieure à 100 si certaines fragmentations existent.<br /><br /> **Meilleur nombre** correspond au nombre idéal de modifications d’extension si tout est lié en contigu. **Nombre réel** est le nombre effectif de modifications d’extension.|  
-|**Fragmentation d’analyse logique**|Pourcentage de pages hors service renvoyées après l'analyse des pages de feuilles d'un index. Cette valeur n'est pas pertinente pour les segments. Une page non ordonnée est une page pour laquelle la page physique suivante allouée à l’index n’est pas la page désignée par le pointeur de pag*e* suivante dans la page feuille actuelle.|  
+|**Fragmentation d’analyse logique**|Pourcentage de pages hors service renvoyées après l'analyse des pages de feuilles d'un index. Cette valeur n'est pas pertinente pour les segments. Une page non ordonnée est une page pour laquelle la page physique suivante allouée à l’index n’est pas la page désignée par le pointeur de pag *e* suivante dans la page feuille actuelle.|  
 |**Fragmentation d’analyse d’extension**|Pourcentage d'extensions déclassées lors de l'analyse des pages feuilles d'un index. Cette valeur n'est pas pertinente pour les segments. Une extension hors service est une extension qui contient la page active pour un index, mais n'est pas physiquement l'extension qui suit celle contenant la page précédente pour un index.<br /><br /> Remarque : Ce nombre n’a aucune signification lorsque l’index s’étend sur plusieurs fichiers.|  
 |**Durée Moyenne d’octets libres par page**|Nombre moyen d'octets libres sur les pages analysées. Plus le nombre est élevé et moins les pages sont remplies. Les faibles valeurs sont préférables si l'index ne doit pas recevoir beaucoup d'insertions aléatoires. Ce nombre est également affecté par la taille des lignes : plus elle sera élevée, plus le nombre le sera également.|  
 |**Durée Densité de page moyenne (complète)**|Densité de page moyenne (pourcentage). Cette valeur prend en compte la taille des lignes. C'est donc une indication plus précise sur le remplissage de vos pages. Plus le pourcentage est élevé et mieux c'est.|  
@@ -134,7 +134,7 @@ Lorsque TABLERESULTS est spécifié, DBCC SHOWCONTIG renvoie les colonnes suivan
 |**ScanDensity**|Il s'agit d'un pourcentage. Il représente le ratio **BestCount** sur **ActualCount**. Cette valeur est de 100 si tout est contigu et elle est inférieure à 100 si certaines fragmentations existent.|  
 |**BestCount**|Il s'agit du nombre idéal de modifications d'extension si tout est lié en contigu.|  
 |**ActualCount**|C'est le nombre effectif de modifications d'extension.|  
-|**LogicalFragmentation**|Pourcentage de pages hors service renvoyées après l'analyse des pages de feuilles d'un index. Cette valeur n'est pas pertinente pour les segments. Une page non ordonnée est une page pour laquelle la page physique suivante allouée à l’index n’est pas la page désignée par le pointeur de pag*e* suivante dans la page feuille actuelle.|  
+|**LogicalFragmentation**|Pourcentage de pages hors service renvoyées après l'analyse des pages de feuilles d'un index. Cette valeur n'est pas pertinente pour les segments. Une page non ordonnée est une page pour laquelle la page physique suivante allouée à l’index n’est pas la page désignée par le pointeur de pag *e* suivante dans la page feuille actuelle.|  
 |**ExtentFragmentation**|Pourcentage d'extensions déclassées lors de l'analyse des pages feuilles d'un index. Cette valeur n'est pas pertinente pour les segments. Une extension hors service est une extension qui contient la page active pour un index, mais n'est pas physiquement l'extension qui suit celle contenant la page précédente pour un index.<br /><br /> Remarque : Ce nombre n’a aucune signification lorsque l’index s’étend sur plusieurs fichiers.|  
   
 Lorsque WITH TABLERESULTS et FAST sont spécifiés, l'ensemble de résultats est le même que lorsque WITH TABLERESULTS est spécifié, excepté que les colonnes suivantes auront des valeurs NULL :
@@ -354,5 +354,3 @@ GO
 [OBJECT_ID &#40;Transact-SQL&#41;](../../t-sql/functions/object-id-transact-sql.md)  
 [sys.indexes &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-indexes-transact-sql.md)
   
-  
-

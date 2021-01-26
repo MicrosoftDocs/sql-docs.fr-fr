@@ -14,19 +14,19 @@ ms.assetid: 867a54b8-5be4-46e6-9702-49ae6dabf67c
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 933532a516f18aab01e1a32584590d65940c75b6
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 230a1a00d66f1839be7a8135ff9c45022f0a2511
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170201"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765656"
 ---
 # <a name="create-foreign-key-relationships"></a>Créer des relations de clé étrangère
 
 
 [!INCLUDE [sqlserver2016-asdb-asdbmi](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi.md)]
 
-Cet article explique comment créer des relations de clé étrangère dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Vous créez une relation entre deux tables lorsque vous voulez associer des lignes d'une table à des lignes appartenant à une autre table.
+Cet article explique comment créer des relations de clé étrangère dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Vous créez une relation entre deux tables lorsque vous voulez associer des lignes d'une table à des lignes appartenant à une autre table.
 
 ## <a name="permissions"></a>Autorisations
 

@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 9f2feb3c-ea9b-4992-8202-2aeed4f9a6dd
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 5a23a2b4e5af84f74010d00c0d9e24c23d02146c
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 3a87c7b4dc37a7b1a70b31b9d7b9191a3570db98
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644195"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98764758"
 ---
 # <a name="prepare-a-secondary-database-for-an-always-on-availability-group"></a>Préparer une base de données secondaire pour un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -180,7 +180,7 @@ Cette rubrique explique comment préparer une base de données pour un groupe de
         > [!IMPORTANT]  
         >  Si les chemins d'accès des bases de données primaire et secondaire diffèrent, vous ne pouvez pas ajouter de fichier. La raison tient à la réception du journal pour l'opération d'ajout de fichier, puisque l'instance de serveur du réplica secondaire tente de placer le nouveau fichier dans le même chemin d'accès que celui utilisé par la base de données primaire.  
   
-         Par exemple, la commande ci-dessous restaure une sauvegarde d'une base de données primaire qui réside dans le répertoire de données de l'instance par défaut de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)], C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA. L’opération de restauration de la base de données doit déplacer la base de données dans le répertoire de données d’une instance distante de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] nommée (*Always On1*), qui héberge le réplica secondaire sur un autre nœud de cluster. Là, les données et les fichiers journaux sont restaurés dans le répertoire *C:\Program Files\Microsoft SQL Server\MSSQL13.Always On1\MSSQL\DATA* . L'opération de restauration utilise WITH NORECOVERY, afin de laisser la base de données secondaire dans la base de données de restauration.  
+         Par exemple, la commande ci-dessous restaure une sauvegarde d'une base de données primaire qui réside dans le répertoire de données de l'instance par défaut de [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)], C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA. L’opération de restauration de la base de données doit déplacer la base de données dans le répertoire de données d’une instance distante de [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] nommée (*Always On1*), qui héberge le réplica secondaire sur un autre nœud de cluster. Là, les données et les fichiers journaux sont restaurés dans le répertoire *C:\Program Files\Microsoft SQL Server\MSSQL13.Always On1\MSSQL\DATA* . L'opération de restauration utilise WITH NORECOVERY, afin de laisser la base de données secondaire dans la base de données de restauration.  
   
         ```  
         RESTORE DATABASE MyDB1  

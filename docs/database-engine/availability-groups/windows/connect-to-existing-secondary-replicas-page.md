@@ -13,16 +13,16 @@ f1_keywords:
 ms.assetid: 850f1bc8-d7d0-425c-bd7b-03f0e9d3348e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 9115e3540d0990565612575dca64e96535c31ec4
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 5276c8b0eca7c84fd042a0cbc67e648996da702c
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97639390"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765943"
 ---
 # <a name="connect-to-existing-secondary-replicas-page---always-on-availability-groups"></a>Page « Se connecter à des réplicas secondaires existants » pour les groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique d’aide décrit les options de la page **Se connecter à des réplicas secondaires existants** . Cette rubrique est utilisée par l' [!INCLUDE[ssAoAddRepWiz](../../../includes/ssaoaddrepwiz-md.md)] et par l' [!INCLUDE[ssAoAddDbWiz](../../../includes/ssaoadddbwiz-md.md)] de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+  Cette rubrique d’aide décrit les options de la page **Se connecter à des réplicas secondaires existants** . Cette rubrique est utilisée par l' [!INCLUDE[ssAoAddRepWiz](../../../includes/ssaoaddrepwiz-md.md)] et par l' [!INCLUDE[ssAoAddDbWiz](../../../includes/ssaoadddbwiz-md.md)] de [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)].  
   
  **Colonnes de la grille :**  
  **Instance de serveur**  

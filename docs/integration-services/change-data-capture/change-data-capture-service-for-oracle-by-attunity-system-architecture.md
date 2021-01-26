@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 1db6c737-3c60-4066-a0a3-3611e1c83e4e
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: d5fa150f7477449c644c554b68c7703be8e44df1
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a8d184639991b7e7a0d5e837fabe95535fdc08fa
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88351545"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765671"
 ---
 # <a name="change-data-capture-service-for-oracle-by-attunity-system-architecture"></a>Architecture système du service de capture de données modifiées pour Oracle par Attunity
 
@@ -33,7 +33,7 @@ ms.locfileid: "88351545"
   
 -   Base de données Oracle : cela peut être n'importe quel ordinateur où une version prise en charge de la base de données Oracle s'exécute. Cela inclut tous les ordinateurs Windows, Linux ou exécutant tout autre système d'exploitation pris en charge par la version de la base de données Oracle installée. Notez que le diagramme affiche cette plateforme au pluriel parce qu'un seul service de capture de données modifiées Oracle peut capturer des modifications de plusieurs bases de données Oracle sources.  
   
--   Serveur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]: cela peut être n’importe quel ordinateur sur lequel la base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] cible (une référence SKU prise en charge de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]) s’exécute. Un service de capture de données modifiées Oracle prend en charge une cible [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] où il stocke les tables de modifications et la configuration du service. La plateforme [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut également représenter une instance en cluster de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] ou une instance en miroir de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l’aide de la fonctionnalité **Always On** .  
+-   Serveur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]: cela peut être n’importe quel ordinateur sur lequel la base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] cible (une référence SKU prise en charge de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]) s’exécute. Un service de capture de données modifiées Oracle prend en charge une cible [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] où il stocke les tables de modifications et la configuration du service. La plateforme [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut également représenter une instance en cluster de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] ou une instance en miroir de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l’aide de la fonctionnalité **Always On** .  
   
 -   Concepteur de capture de données modifiées Oracle : cela peut être n'importe quel ordinateur Windows pris en charge qui a accès à la base de données Oracle source et à la base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] cible.  
   
@@ -45,7 +45,7 @@ ms.locfileid: "88351545"
 ||Agent de lecture du journal Oracle : lit les journaux des transactions Oracle à l'aide du client Oracle.|  
 ||Client Oracle : client instantané Oracle utilisé pour la communication avec Oracle. Il s'agit d'un composant requis qui doit être obtenu auprès d'Oracle et installé avant d'installer le service de capture de données modifiées Oracle.|  
 ||[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Enregistreur de changement : écrit les modifications validées apportées à la table Oracle capturée dans les tables de modifications [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Ce composant conserve également cet état de capture dans la base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] cible.|  
-||[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Client ODBC : Microsoft Native Client pour [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Il s'agit d'un composant requis qui doit être obtenu auprès de Microsoft et installé avant d'installer le service de capture de données modifiées Oracle.|  
+||[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Client ODBC : Microsoft Native Client pour [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. Il s'agit d'un composant requis qui doit être obtenu auprès de Microsoft et installé avant d'installer le service de capture de données modifiées Oracle.|  
 |Configuration du service de capture de données modifiées Oracle : il s'agit d'un composant logiciel enfichable MMC (Microsoft Management Console) qui crée le service Windows et installe sa configuration.|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] : client SQL ADO.NET fourni avec la version 4 du .NET Framework.|  
 |Base de données Oracle : base de données Oracle source à partir de laquelle les modifications apportées aux tables sélectionnées sont capturées.|Log Miner : composant Oracle par l'intermédiaire duquel les journaux des transactions Oracle sont lus.|  
 ||Journaux des transactions : journaux de restauration par progression Oracle en ligne et archivés utilisés par Oracle pour garantir que la base de données peut restaurer des transactions et effectuer une récupération suite à des défaillances (dans ce cas, la base de données Oracle doit s'exécuter en mode ARCHIVELOG).|  

@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 836ad79e049d7c5613755e64ca441f9ed5d73048
-ms.sourcegitcommit: d819173fb91af6f20ca6ee59686c35c71b060fbc
+ms.openlocfilehash: f48534e104139ee7cbd4eb7602fce2a8e51eeb73
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "97797801"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597137"
 ---
 # <a name="mssqlserver_6522"></a>MSSQLSERVER_6522
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -205,7 +205,7 @@ Supposons que le type de données MyDateTime occupe 9 octets dans le stockage.
 ## <a name="references"></a>Références
 
 - Pour plus d’informations sur la version de l’assembly, consultez la [Documentation de Visual Studio 2005 retirée](https://www.microsoft.com/download/details.aspx?id=55984).
-- Pour plus d’informations sur la mise à jour d’un assembly, consultez [ALTER ASSEMBLY (Transact-SQL)](/sql/t-sql/statements/alter-assembly-transact-sql).
-- Pour plus d’informations sur la suppression d’un assembly, consultez [DROP ASSEMBLY (Transact-SQL)](/sql/t-sql/statements/drop-assembly-transact-sql).
-- Pour plus d’informations sur l’inscription d’un assembly dans une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [CREATE ASSEMBLY (Transact-SQL)](/sql/t-sql/statements/create-assembly-transact-sql).
-- Pour plus d’informations sur l’utilitaire bcp.exe, consultez [https://msdn2.microsoft.com/library/ms162802.aspx](/sql/tools/bcp-utility).
+- Pour plus d’informations sur la mise à jour d’un assembly, consultez [ALTER ASSEMBLY (Transact-SQL)](../../t-sql/statements/alter-assembly-transact-sql.md).
+- Pour plus d’informations sur la suppression d’un assembly, consultez [DROP ASSEMBLY (Transact-SQL)](../../t-sql/statements/drop-assembly-transact-sql.md).
+- Pour plus d’informations sur l’inscription d’un assembly dans une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [CREATE ASSEMBLY (Transact-SQL)](../../t-sql/statements/create-assembly-transact-sql.md).
+- Pour plus d’informations sur l’utilitaire bcp.exe, consultez [https://msdn2.microsoft.com/library/ms162802.aspx](../../tools/bcp-utility.md).

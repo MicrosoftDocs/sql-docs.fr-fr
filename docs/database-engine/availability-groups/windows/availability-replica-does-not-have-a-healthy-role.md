@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: ebb2c9f4-2097-4688-b4fb-8f0571047317
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: e5ef8c8a912854c48489cb5860bb3813bdc6fd10
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 4b250e48ae43c2a8ed65febec86ca9c4571dce68
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643168"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766076"
 ---
 # <a name="availability-replica-does-not-have-a-healthy-role-for-an-always-on-availability-group"></a>Le réplica de disponibilité n’a pas un rôle sain pour un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -35,9 +35,6 @@ ms.locfileid: "97643168"
   
 ## <a name="description"></a>Description  
  Cette stratégie vérifie l'état du rôle du réplica de disponibilité. La stratégie se trouve dans un état non sain lorsque le rôle du réplica de disponibilité n'est ni principal ni secondaire. Autrement, l'état de la stratégie est sain.  
-  
-> [!NOTE]  
->  Pour cette version de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)], des informations sur les causes et les solutions possibles se trouvent dans [Le réplica de disponibilité n’a pas un rôle sain](https://go.microsoft.com/fwlink/p/?LinkId=220856) sur Wiki TechNet.  
   
 ## <a name="possible-causes"></a>Causes possibles  
  Le rôle de ce réplica de disponibilité n'est pas sain. Le réplica n'a pas le rôle principal ou secondaire.  

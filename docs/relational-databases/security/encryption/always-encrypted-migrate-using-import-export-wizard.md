@@ -8,8 +8,6 @@ ms.reviewer: vanto
 ms.technology: security
 ms.topic: conceptual
 f1_keywords:
-- SQL13.SWB.COLUMNMASTERKEY.PAGE.F1
-- SQL13.SWB.COLUMNENCRYPTIONKEY.PAGE.F1
 - SQL13.SWB.COLUMNMASTERKEY.ROTATION.F1
 helpviewer_keywords:
 - Always Encrypted, configure with SSMS
@@ -17,12 +15,12 @@ ms.assetid: 29816a41-f105-4414-8be1-070675d62e84
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: f8b20f6e001051863a4cf4c4f052021a53e46e7e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 680c1101ebd3ff9744c8e8dbe44d927d843acc0b
+ms.sourcegitcommit: fc24f7ecc155d97e789676fffe55e45840fcb088
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480900"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98620302"
 ---
 # <a name="migrate-data-to-or-from-columns-using-always-encrypted-with-sql-server-import-and-export-wizard"></a>Migrer des données à partir ou à destination de colonnes à l’aide d’Always Encrypted avec l’Assistant Importation et exportation SQL Server 
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb.md)]

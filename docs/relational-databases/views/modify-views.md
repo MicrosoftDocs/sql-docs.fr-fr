@@ -17,16 +17,16 @@ ms.assetid: 2d3c14dc-43e5-4324-b8fb-f2692d330b16
 author: stevestein
 ms.author: sstein
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: e4b1abd239fd8d9ce1ddb7442ca26edbb815e30e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0a6402e6a194b94b33038d459a3a37d49f641a19
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484411"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766270"
 ---
 # <a name="modify-views"></a>Modifier des vues
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
-  Après avoir défini une vue, vous pouvez modifier sa définition dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] sans la supprimer ni être obligé de la recréer à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
+  Après avoir défini une vue, vous pouvez modifier sa définition dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] sans la supprimer ni être obligé de la recréer à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   
  **Dans cette rubrique**  
   

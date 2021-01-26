@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 3056cf64-621d-4996-9162-3913f6bc6d5b
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 8248e04f0e69519e4d1d78d39831f40775a8a38c
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 29287fab7f3f0922ad4f44d76bd621b5285c003a
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86917949"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765561"
 ---
 # <a name="configure-the-max-text-repl-size-server-configuration-option"></a>Configurer l'option de configuration de serveur max text repl size
  [!INCLUDE[sql-asdbmi](../../includes/applies-to-version/sql-asdbmi.md)]
 
-  Cette rubrique explique comment configurer l'option de configuration de serveur **max text repl size** dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L’option **max text repl size** spécifie la taille maximale (en octets) des données **text**, **ntext**, **varchar(max)** , **nvarchar(max)** , **varbinary(max)** , **xml**et **image** susceptibles d’être ajoutées à une colonne répliquée ou capturée dans une instruction INSERT, UPDATE, WRITETEXT ou UPDATETEXT. La valeur par défaut est 65536 octets. La valeur -1 indique l'absence de limite autre que celle imposée par le type de données.  
+  Cette rubrique explique comment configurer l'option de configuration de serveur **max text repl size** dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L’option **max text repl size** spécifie la taille maximale (en octets) des données **text**, **ntext**, **varchar(max)** , **nvarchar(max)** , **varbinary(max)** , **xml** et **image** susceptibles d’être ajoutées à une colonne répliquée ou capturée dans une instruction INSERT, UPDATE, WRITETEXT ou UPDATETEXT. La valeur par défaut est 65536 octets. La valeur -1 indique l'absence de limite autre que celle imposée par le type de données.  
   
  **Dans cette rubrique**  
   

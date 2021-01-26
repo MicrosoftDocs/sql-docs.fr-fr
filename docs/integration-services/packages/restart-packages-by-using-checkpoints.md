@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 48f2fbb7-8964-484a-8311-5126cf594bfb
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 090e89467a7916295abdc31305cbe993872ade60
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 5dbdccf96c35c7c7f66badb49d6566ac6009d6c0
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88425241"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596371"
 ---
 # <a name="restart-packages-by-using-checkpoints"></a>Redémarrer des packages à l'aide de points de contrôle
 
@@ -47,7 +47,7 @@ ms.locfileid: "88425241"
 > [!NOTE]  
 >  L'utilisation de points de contrôle et de transactions dans le même package peut entraîner des résultats inattendus. Par exemple, lorsqu'un package échoue et redémarre à partir d'un point de contrôle, il peut répéter une transaction qui a déjà été correctement validée.  
   
- Les données de point de contrôle ne sont pas enregistrées pour les conteneurs de boucles For et Foreach. Lorsqu'un package est redémarré, les conteneurs de boucles For et Foreach et les conteneurs enfants sont exécutés à nouveau. Si un conteneur enfant de la boucle est exécuté correctement, il n'est pas enregistré dans le fichier de point de contrôle et il est exécuté à nouveau. Pour plus d'informations et pour obtenir une solution de contournement, consultez [Les points de contrôle SSIS ne sont pas respectés pour les éléments de conteneur de boucles For ou Foreach](https://go.microsoft.com/fwlink/?LinkId=241633).  
+ Les données de point de contrôle ne sont pas enregistrées pour les conteneurs de boucles For et Foreach. Lorsqu'un package est redémarré, les conteneurs de boucles For et Foreach et les conteneurs enfants sont exécutés à nouveau. Si un conteneur enfant de la boucle est exécuté correctement, il n'est pas enregistré dans le fichier de point de contrôle et il est exécuté à nouveau. Pour plus d'informations et pour obtenir une solution de contournement, consultez [Les points de contrôle SSIS ne sont pas respectés pour les éléments de conteneur de boucles For ou Foreach](/troubleshoot/sql/integration-services/ssis-checkpoints-not-honored-for-loop).  
   
  Si le package est redémarré, les configurations du package ne sont pas rechargées, mais le package utilise les informations de configuration écrites dans le fichier de point de contrôle. Cette procédure assure que le package utilise les mêmes configurations lorsqu'il est exécuté à nouveau qu'au moment où il a échoué.  
   
@@ -119,4 +119,4 @@ ms.locfileid: "88425241"
   
 -   Article technique, [Redémarrage automatique des packages SSIS après un basculement ou un échec](https://go.microsoft.com/fwlink/?LinkId=200407), sur social.technet.microsoft.com  
   
--   Article du Support technique Microsoft, [Les points de contrôle SSIS ne sont pas respectés pour les éléments de conteneur de boucles For ou Foreach](https://go.microsoft.com/fwlink/?LinkId=241633), sur le site support.microsoft.com.  
+-   Article du Support technique Microsoft, [Les points de contrôle SSIS ne sont pas respectés pour les éléments de conteneur de boucles For ou Foreach](/troubleshoot/sql/integration-services/ssis-checkpoints-not-honored-for-loop), sur le site support.microsoft.com.

@@ -41,12 +41,12 @@ ms.assetid: 877ecd57-3f2e-4237-890a-08f16e944ef1
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current||>=aps-pdw-2016'
-ms.openlocfilehash: 80e415f7f5029e96c6093b5cd72695201fa336d6
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: b3a8b853913581092424101c24b951cd0584c3b7
+ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644357"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98688868"
 ---
 # <a name="restore-statements-transact-sql"></a>Instructions RESTORE (Transact-SQL)
 
@@ -378,7 +378,7 @@ Les données de texte intégral sont restaurées avec d'autres données de base 
 L'instruction RESTORE permet également d'effectuer des restaurations dans d'autres emplacements, des restaurations différentielles, des restaurations de fichiers et de groupes de fichiers, ainsi que des restaurations de fichiers et groupes de fichiers différentielles de données de texte intégral. En outre, cette instruction permet de restaurer des fichiers de texte intégral uniquement, ainsi que des données de base de données.
 
 > [!NOTE]
-> Les catalogues de texte intégral importés à partir de [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] sont toujours traités en tant que fichiers de base de données. Pour ceux-ci, la procédure [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] de sauvegarde des catalogues de texte intégral reste applicable, mais la suspension et la reprise en cours de sauvegarde ne sont plus nécessaires. Pour plus d’informations, consultez [Sauvegarde et restauration de catalogues de texte intégral](https://go.microsoft.com/fwlink/?LinkId=107381).
+> Les catalogues de texte intégral importés à partir de [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] sont toujours traités en tant que fichiers de base de données. Pour ceux-ci, la procédure [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] de sauvegarde des catalogues de texte intégral reste applicable, mais la suspension et la reprise en cours de sauvegarde ne sont plus nécessaires. Pour plus d’informations, consultez [Sauvegarde et restauration de catalogues de texte intégral](../../relational-databases/search/back-up-and-restore-full-text-catalogs-and-indexes.md).
 
 ### [!INCLUDE [ssbigdataclusters-ss-nover](../../includes/ssbigdataclusters-ss-nover.md)]
 
@@ -761,7 +761,7 @@ Pour afficher d’autres commandes RESTORE prises en charge, consultez :
 - [RESTORE VERIFYONLY (Transact-SQL)](../../t-sql/statements/restore-statements-verifyonly-transact-sql.md)
 
 > [!IMPORTANT]
-> Pour effectuer une restauration à partir de sauvegardes automatiques SQL Managed Instance, consultez [Restauration de base de données SQL](https://docs.microsoft.com/azure/sql-database/sql-database-recovery-using-backups).
+> Pour effectuer une restauration à partir de sauvegardes automatiques SQL Managed Instance, consultez [Restauration de base de données SQL](/azure/sql-database/sql-database-recovery-using-backups).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -784,7 +784,7 @@ FROM URL
 Spécifie une ou plusieurs unités de sauvegarde placées sur les URL qui seront utilisées pour l’opération de restauration. Le format d’URL est utilisé pour la restauration des sauvegardes à partir du service de stockage Microsoft Azure.
 
 > [!IMPORTANT]
-> Pour restaurer à partir de plusieurs unités quand l’opération s’effectue depuis une URL, vous devez utiliser des jetons de signature d’accès partagé (SAP). Pour obtenir des exemples de signatures d’accès partagé, consultez [Sauvegarde SQL Server vers une URL](../../relational-databases/backup-restore/sql-server-backup-to-url.md) et [Simplifying creation of SQL Credentials with Shared Access Signature (SAS) tokens on Azure Storage with PowerShell](https://docs.microsoft.com/archive/blogs/sqlcat/simplifying-creation-of-sql-credentials-with-shared-access-signature-sas-tokens-on-azure-storage-with-powershell).
+> Pour restaurer à partir de plusieurs unités quand l’opération s’effectue depuis une URL, vous devez utiliser des jetons de signature d’accès partagé (SAP). Pour obtenir des exemples de signatures d’accès partagé, consultez [Sauvegarde SQL Server vers une URL](../../relational-databases/backup-restore/sql-server-backup-to-url.md) et [Simplifying creation of SQL Credentials with Shared Access Signature (SAS) tokens on Azure Storage with PowerShell](/archive/blogs/sqlcat/simplifying-creation-of-sql-credentials-with-shared-access-signature-sas-tokens-on-azure-storage-with-powershell).
 
 *n* Correspond à un espace réservé indiquant qu’il est possible de spécifier jusqu’à 64 unités de sauvegarde dans une liste séparée par des virgules.
 

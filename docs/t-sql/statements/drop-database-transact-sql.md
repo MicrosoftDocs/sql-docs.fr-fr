@@ -26,12 +26,12 @@ ms.assetid: 477396a9-92dc-43c9-9b97-42c8728ede8e
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: cef57db413b9035926e8c05446cd761cb937d538
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: fa18ed40692767751703f72f9e48e91180bf797f
+ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172111"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98688831"
 ---
 # <a name="drop-database-transact-sql"></a>DROP DATABASE (Transact-SQL)
 
@@ -58,7 +58,7 @@ DROP DATABASE database_name [;]
 ## <a name="arguments"></a>Arguments
 
 *IF EXISTS*
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à la [version actuelle](https://go.microsoft.com/fwlink/p/?LinkId=299658)).
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md)).
 
 Supprime, de manière conditionnelle, la base de données uniquement si elle existe déjà.
 
@@ -80,7 +80,7 @@ Quand vous supprimez une base de données, vous devez effectuer une sauvegarde d
 Si vous supprimez une base de données, celle-ci l'est également d'une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Il en est de même pour les fichiers disque physiques utilisés par la base de données. Si la base de données ou l'un de ses fichiers est hors connexion lors de la suppression, les fichiers disque ne sont pas supprimés. Ces fichiers peuvent être supprimés manuellement à l'aide de l'Explorateur Windows. Pour supprimer une base de données du serveur actif sans supprimer les fichiers du système de fichiers, utilisez [sp_detach_db](../../relational-databases/system-stored-procedures/sp-detach-db-transact-sql.md).
 
 > [!WARNING]
-> Vous pouvez supprimer une base de données qui est associée à des sauvegardes FILE_SNAPSHOT, mais les fichiers de base de données qui sont associés à des instantanés ne sont pas supprimés pour éviter l’invalidation des sauvegardes qui font référence à ces fichiers. Le fichier est tronqué, mais il n’est pas supprimé physiquement afin de conserver les sauvegardes FILE_SNAPSHOT. Pour plus d’informations, voir [SQL Server Backup and Restore with Microsoft Azure Blob Storage Service](../../relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service.md)(en anglais). **S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] jusqu’à la [version actuelle](https://go.microsoft.com/fwlink/p/?LinkId=299658).
+> Vous pouvez supprimer une base de données qui est associée à des sauvegardes FILE_SNAPSHOT, mais les fichiers de base de données qui sont associés à des instantanés ne sont pas supprimés pour éviter l’invalidation des sauvegardes qui font référence à ces fichiers. Le fichier est tronqué, mais il n’est pas supprimé physiquement afin de conserver les sauvegardes FILE_SNAPSHOT. Pour plus d’informations, voir [SQL Server Backup and Restore with Microsoft Azure Blob Storage Service](../../relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service.md)(en anglais). **S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] jusqu’à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md).
 
 ### [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]
 

@@ -11,16 +11,16 @@ ms.assetid: ae5bfc09-f27a-4ea9-9518-485278b11674
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 8174cdaae012631ff834392d7bb664c82971ca3d
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b200814dedac25809d1295146ff71d8908bce4da
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464840"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766111"
 ---
 # <a name="modify-a-partition-function"></a>Modifier une fonction de partition
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
-  Vous pouvez modifier le partitionnement d'une table ou d'un index dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] en ajoutant ou supprimant le nombre de partitions spécifié (par incréments de 1) dans la fonction de partition de la table ou de l'index à l'aide de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Lorsque vous ajoutez une partition, vous fractionnez une partition existante en deux partitions dont vous redéfinissez les limites. Lorsque vous supprimez une partition, vous fusionnez les limites de deux partitions pour n'en définir qu'une. Cette action a pour effet de remplir à nouveau une partition et de laisser l'autre non affectée.  
+  Vous pouvez modifier le partitionnement d'une table ou d'un index dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] en ajoutant ou supprimant le nombre de partitions spécifié (par incréments de 1) dans la fonction de partition de la table ou de l'index à l'aide de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Lorsque vous ajoutez une partition, vous fractionnez une partition existante en deux partitions dont vous redéfinissez les limites. Lorsque vous supprimez une partition, vous fusionnez les limites de deux partitions pour n'en définir qu'une. Cette action a pour effet de remplir à nouveau une partition et de laisser l'autre non affectée.  
   
 > [!CAUTION]  
 >  Une même fonction de partition peut être utilisée par plusieurs tables ou index. Lorsque vous modifiez une fonction de partition, vous affectez toutes les fonctions dans une transaction unique. Vérifiez les dépendances de la fonction de partition avant de la modifier.  

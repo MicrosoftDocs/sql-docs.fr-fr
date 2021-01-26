@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 5bd3393d-2fa5-4db0-a69a-a1a72d638e9d
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: cbce18def0654c88e2d8a575c78068be7b6cb49e
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 73a9d42c089100ad490d824c8e8a88a886f7a2a6
+ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171681"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98689061"
 ---
 # <a name="drop-security-policy-transact-sql"></a>DROP SECURITY POLICY (Transact-SQL)
 
@@ -44,7 +44,7 @@ DROP SECURITY POLICY [ IF EXISTS ] [schema_name. ] security_policy_name
 
 ## <a name="arguments"></a>Arguments
  *IF EXISTS*  
- **S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à la [version actuelle](https://go.microsoft.com/fwlink/p/?LinkId=299658)).  
+ **S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md)).  
   
  Supprime, de manière conditionnelle, la stratégie de sécurité uniquement si elle existe déjà.  
   
@@ -54,7 +54,7 @@ DROP SECURITY POLICY [ IF EXISTS ] [schema_name. ] security_policy_name
  *security_policy_name*  
  Nom de la stratégie de sécurité. Les noms de stratégie de sécurité doivent respecter les règles applicables aux identificateurs et doivent être uniques dans la base de données et pour son schéma.  
   
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
   
 ## <a name="permissions"></a>Autorisations  
  Nécessite l'autorisation ALTER ANY SECURITY POLICY et l'autorisation ALTER sur le schéma.  
@@ -71,5 +71,3 @@ DROP SECURITY POLICY secPolicy;
  [ALTER SECURITY POLICY &#40;Transact-SQL&#41;](../../t-sql/statements/alter-security-policy-transact-sql.md)   
  [sys.security_policies &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-security-policies-transact-sql.md)   
  [sys.security_predicates &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-security-predicates-transact-sql.md)  
-  
-  

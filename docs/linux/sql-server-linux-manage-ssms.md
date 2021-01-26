@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: b2fcf858-21c3-462a-8d49-50c85647d092
-ms.openlocfilehash: 0b118b1daa1b8b825d4b68ff1e436fd2f0b624f2
-ms.sourcegitcommit: 22102f25db5ccca39aebf96bc861c92f2367c77a
+ms.openlocfilehash: f5ba3ea9260da9e278273ef39d0f5893b67c120e
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92115615"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596427"
 ---
 # <a name="use-sql-server-management-studio-on-windows-to-manage-sql-server-on-linux"></a>Utiliser SQL Server Management Studio sur Windows pour gérer SQL Server sur Linux
 
@@ -53,32 +53,32 @@ Utilisez les étapes de base suivantes pour vous connecter :
 
     ![SQL Server Management Studio](./media/sql-server-linux-manage-ssms/ssms.png)
 
-1. Dans la fenêtre **Se connecter au serveur** , entrez les informations suivantes (si SSMS est déjà en cours d’exécution, cliquez sur **Se connecter > Moteur de base de données** pour ouvrir la fenêtre **Se connecter au serveur** ) :
+1. Dans la fenêtre **Se connecter au serveur**, entrez les informations suivantes (si SSMS est déjà en cours d’exécution, cliquez sur **Se connecter > Moteur de base de données** pour ouvrir la fenêtre **Se connecter au serveur**) :
 
    | Paramètre | Description |
    |-----|-----|
    | **Type de serveur** | La valeur par défaut est moteur de base de données ; ne modifiez pas cette valeur. |
    | **Nom du serveur** | Entrez le nom de l’ordinateur SQL Server Linux cible, ou son adresse IP et son port au format `IP,port`. |
-   | **Authentification** | Pour SQL Server sur Linux, utilisez l’ **authentification SQL Server** . |
+   | **Authentification** | Pour SQL Server sur Linux, utilisez l’**authentification SQL Server**. |
    | **Connexion** | Entrez le nom d’un utilisateur ayant accès à une base de données sur le serveur (par exemple, le compte **SA** par défaut créé lors de l’installation). |
-   | **Mot de passe** | Entrez le mot de passe de l’utilisateur spécifié (pour le compte **SA** , vous l’avez créé lors de l’installation). |
+   | **Mot de passe** | Entrez le mot de passe de l’utilisateur spécifié (pour le compte **SA**, vous l’avez créé lors de l’installation). |
 
     ![SQL Server Management Studio : Se connecter au serveur SQL Database](./media/sql-server-linux-manage-ssms/connect.png)
 
-1. Cliquez sur **Connecter** .
+1. Cliquez sur **Connecter**.
 
     > [!TIP]
     > Si un échec de connexion s’affiche, tentez tout d’abord de diagnostiquer le problème à partir du message d’erreur. Examinez ensuite les [recommandations en matière de résolution des problèmes de connexion](sql-server-linux-troubleshooting-guide.md#connection).
  
-1. Une fois connecté à votre SQL Server, l’ **Explorateur d’objets** s’ouvre et vous pouvez maintenant accéder à votre base de données pour effectuer des tâches administratives ou interroger les données.
+1. Une fois connecté à votre SQL Server, l’**Explorateur d’objets** s’ouvre et vous pouvez maintenant accéder à votre base de données pour effectuer des tâches administratives ou interroger les données.
 
 ## <a name="run-transact-sql-queries"></a>Exécuter les requêtes Transact-SQL
 
 Après vous être connecté à votre serveur, vous pouvez vous connecter à une base de données et exécuter des requêtes Transact-SQL. Les requêtes Transact-SQL peuvent être utilisées pour la plupart des tâches de base de données.
 
-1. Dans l’ **Explorateur d’objets** , naviguez jusqu’à la base de données cible sur le serveur. Par exemple, développez **Bases de données système** pour utiliser la base de données **MASTER** .
+1. Dans l’**Explorateur d’objets**, naviguez jusqu’à la base de données cible sur le serveur. Par exemple, développez **Bases de données système** pour utiliser la base de données **MASTER**.
 
-1. Cliquez avec le bouton de droite sur la base de données et sélectionnez **Nouvelle requête** .
+1. Cliquez avec le bouton de droite sur la base de données et sélectionnez **Nouvelle requête**.
 
 1. Dans la fenêtre de requête, écrivez une requête Transact-SQL pour sélectionner le retour des noms de toutes les bases de données sur votre serveur.
 
@@ -97,7 +97,7 @@ Bien qu’il soit possible d’effectuer quasiment n’importe quelle tâche de 
 
 ## <a name="create-and-manage-databases"></a>Créer et gérer des bases de données
 
-Lorsque vous êtes connecté à la base de données *MASTER* , vous pouvez créer des bases de données sur le serveur et modifier ou déposer des bases de données existantes. Les étapes suivantes décrivent comment accomplir plusieurs tâches de gestion de bases de données courantes par le biais de Management Studio. Pour effectuer ces tâches, assurez-vous que vous êtes connecté à la base de données *MASTER* avec la connexion du principal au niveau du serveur que vous avez créée lors de la configuration de SQL Server sur Linux.
+Lorsque vous êtes connecté à la base de données *MASTER*, vous pouvez créer des bases de données sur le serveur et modifier ou déposer des bases de données existantes. Les étapes suivantes décrivent comment accomplir plusieurs tâches de gestion de bases de données courantes par le biais de Management Studio. Pour effectuer ces tâches, assurez-vous que vous êtes connecté à la base de données *MASTER* avec la connexion du principal au niveau du serveur que vous avez créée lors de la configuration de SQL Server sur Linux.
 
 ### <a name="create-a-new-database"></a>Créer une base de données
 
@@ -105,7 +105,7 @@ Lorsque vous êtes connecté à la base de données *MASTER* , vous pouvez crée
 
 2. Dans l’Explorateur d’objets, cliquez avec le bouton de droite sur le dossier *Bases de données* puis cliquez sur *Nouvelle base de données... »
 
-3. Dans la boîte de dialogue *Nouvelle base de données* , entrez un nom pour votre nouvelle base de données, puis cliquez sur *OK*
+3. Dans la boîte de dialogue *Nouvelle base de données*, entrez un nom pour votre nouvelle base de données, puis cliquez sur *OK*
 
 La nouvelle base de données a été créée avec succès sur votre serveur. Si vous préférez créer une nouvelle base de données à l’aide de T-SQL, consultez [CREATE DATABASE (SQL Server Transact-SQL)](../t-sql/statements/create-database-transact-sql.md).
 
@@ -117,7 +117,7 @@ La nouvelle base de données a été créée avec succès sur votre serveur. Si 
 
 3. Dans l’Explorateur d’objets, cliquez avec le bouton de droite sur la base de données à déposer, puis cliquez sur *Supprimer*
 
-4. Dans la boîte de dialogue *Supprimer l'objet* , cochez la case *Fermer les connexions existantes* , puis cliquez sur *OK*
+4. Dans la boîte de dialogue *Supprimer l'objet*, cochez la case *Fermer les connexions existantes*, puis cliquez sur *OK*
 
 La base de données a été déposée avec succès depuis votre serveur. Si vous préférez déposer une base de données à l’aide de T-SQL, consultez [DROP DATABASE (SQL Server Transact-SQL)](../t-sql/statements/drop-database-transact-sql.md).
 
@@ -127,7 +127,7 @@ L'outil [Moniteur d’activité](../relational-databases/performance-monitor/act
 
 1. Démarrer SSMS et se connecter à votre serveur dans SQL Server sur Linux
 
-1. Dans l’Explorateur d’objets, cliquez avec le bouton de droite sur le nœud *serveur* , puis cliquez sur *Moniteur d’activité*
+1. Dans l’Explorateur d’objets, cliquez avec le bouton de droite sur le nœud *serveur*, puis cliquez sur *Moniteur d’activité*
 
 Le moniteur d’activité affiche des volets extensibles et réductibles avec les informations suivantes :
 
@@ -143,6 +143,6 @@ Lorsqu'un volet est développé, le Moniteur d'activité interroge l'instance po
 ## <a name="see-also"></a>Voir aussi
 - [Qu’est-ce que SSMS ?](../ssms/sql-server-management-studio-ssms.md)
 - [Exporter et importer une base de données avec SSMS](sql-server-linux-migrate-ssms.md)
-- [Tutoriel : SQL Server Management Studio](../ssms/quickstarts/connect-query-sql-server.md)
+- [Tutoriel : SQL Server Management Studio](../ssms/quickstarts/ssms-connect-query-sql-server.md)
 - [Tutoriel : Écriture d’instructions Transact-SQL](../t-sql/tutorial-writing-transact-sql-statements.md)
 - [Analyse des performances et surveillance de l'activité du serveur](../relational-databases/performance/server-performance-and-activity-monitoring.md)

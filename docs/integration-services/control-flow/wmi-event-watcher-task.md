@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: b5bb52e9-a77e-41e1-93f9-d4c3bc6b2c9a
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: d40281b9c233b55b41cfc8fc18040fb3e6c4d927
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 8b4e04871bf0264c9e9c723365f2a29d95265ffa
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195969"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98594934"
 ---
 # <a name="wmi-event-watcher-task"></a>Tâche Observateur d'événement WMI
 
@@ -45,7 +45,7 @@ ms.locfileid: "92195969"
 -   [Tâche Lecteur de données WMI](../../integration-services/control-flow/wmi-data-reader-task.md)  
   
 ## <a name="wql-queries"></a>Requêtes WQL  
- WQL est un dialecte de SQL avec des extensions qui permettent de prendre en charge la notification d'événement WMI et d'autres fonctionnalités spécifiques à WMI. Pour plus d'informations sur WQL, consultez la documentation Windows Management Instrumentation dans [MSDN Library](https://go.microsoft.com/fwlink/?linkid=62553).  
+ WQL est un dialecte de SQL avec des extensions qui permettent de prendre en charge la notification d'événement WMI et d'autres fonctionnalités spécifiques à WMI. Pour plus d'informations sur WQL, consultez la documentation Windows Management Instrumentation dans [MSDN Library](/documentation/).  
   
 > [!NOTE]  
 >  Les classes WMI varient d'une version de Windows à l'autre.  
@@ -178,4 +178,4 @@ SELECT * FROM __InstanceCreationEvent WITHIN 10 WHERE TargetInstance ISA "CIM_Di
  **WQLQuerySource**  
  Sélectionnez une variable dans la liste, ou cliquez sur \<**New variable...**> pour en créer une.  
   
- **Rubriques connexes :** [Variables Integration Services &#40;SSIS&#41;](../../integration-services/integration-services-ssis-variables.md), [Ajouter une variable](../integration-services-ssis-variables.md)  
+ **Rubriques connexes :** [Variables Integration Services &#40;SSIS&#41;](../../integration-services/integration-services-ssis-variables.md), [Ajouter une variable](../integration-services-ssis-variables.md)

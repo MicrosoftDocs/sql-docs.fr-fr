@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: f0001b33-9078-4432-8460-496736fb325a
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 62fff3bda286f50b2220dbb1ea4732547e98829f
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 9cbb4d0a3c8583eabe2c2020356b268494179032
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96127862"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765781"
 ---
 # <a name="export-a-policy-based-management-policy"></a>Exporter une stratégie de gestion basée sur des stratégies
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment exporter une stratégie de gestion basée sur des stratégies dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)].  
+  Cette rubrique explique comment exporter une stratégie de gestion basée sur des stratégies dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)].  
   
  **Dans cette rubrique**  
   

@@ -53,19 +53,19 @@ ms.assetid: a0df1ac2-6699-4ac0-8f79-f362f23496f1
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 6510f4310126667ac8d48382c6ff3a856b37da00
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0fbc4c09e7d00c8836f7c3efd17dbfe660cd669a
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97402271"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597117"
 ---
 # <a name="odbc-scalar-functions-transact-sql"></a>Fonctions scalaires ODBC (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-  Vous pouvez utiliser les [fonctions scalaires ODBC](https://go.microsoft.com/fwlink/?LinkID=88579) dans les instructions [!INCLUDE[tsql](../../includes/tsql-md.md)]. Ces instructions sont interprétées par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Elles peuvent être utilisées dans les procédures stockées et les fonctions définies par l'utilisateur. Celles-ci incluent les fonctions de chaîne, numériques, d'heure, de date, d'intervalle et système.  
+  Vous pouvez utiliser les [fonctions scalaires ODBC](../../odbc/reference/appendixes/appendix-e-scalar-functions.md) dans les instructions [!INCLUDE[tsql](../../includes/tsql-md.md)]. Ces instructions sont interprétées par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Elles peuvent être utilisées dans les procédures stockées et les fonctions définies par l'utilisateur. Celles-ci incluent les fonctions de chaîne, numériques, d'heure, de date, d'intervalle et système.  
   
-## <a name="usage"></a>Usage  
+## <a name="usage"></a>Utilisation  
  ```syntaxsql
  SELECT {fn <function_name> [ (<argument>,....n) ] }
  ```
@@ -251,4 +251,4 @@ SELECT {fn WEEK( @date_exp )};
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions intégrées &#40;Transact-SQL&#41;](~/t-sql/functions/functions.md)  
+ [Fonctions intégrées &#40;Transact-SQL&#41;](~/t-sql/functions/functions.md)

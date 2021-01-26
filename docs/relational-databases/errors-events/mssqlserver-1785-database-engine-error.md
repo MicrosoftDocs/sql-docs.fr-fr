@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 0ee5aedf0d0f893552559540e25e18b11b19beac
-ms.sourcegitcommit: d819173fb91af6f20ca6ee59686c35c71b060fbc
+ms.openlocfilehash: 7f300583da4c034da2963590c81e0aedbed86beb
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "97797788"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596261"
 ---
 # <a name="mssqlserver_1785"></a>MSSQLSERVER_1785
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -81,4 +81,4 @@ GO
 
 ### <a name="see-also"></a>Voir aussi
 
-[Intégrité référentielle en cascade](/sql/relational-databases/tables/primary-and-foreign-key-constraints#referential-integrity)
+[Intégrité référentielle en cascade](../tables/primary-and-foreign-key-constraints.md#referential-integrity)

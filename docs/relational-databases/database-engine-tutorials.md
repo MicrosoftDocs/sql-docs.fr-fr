@@ -12,12 +12,12 @@ ms.assetid: 32bd8af8-a832-4dc8-afff-01668e6b2b51
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 1fa0db66c75fd0fc45f02dd768f69659c96d739b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 891abb94a3f9ac00edf910d5e8a830c7adee0b0f
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440200"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597233"
 ---
 # <a name="database-engine-tutorials"></a>Didacticiels sur le moteur de base de données
 [!INCLUDE [SQL Server Azure SQL Database](../includes/applies-to-version/sql-asdb.md)]
@@ -26,7 +26,7 @@ Cette section contient les didacticiels pour [!INCLUDE[ssDECurrent](../includes/
 [Tutoriel : Bien démarrer avec le moteur de base de données](../relational-databases/tutorial-getting-started-with-the-database-engine.md)  
 Ce didacticiel vous apprend à vous connecter à une instance du [!INCLUDE[ssDE](../includes/ssde-md.md)].  
   
-[Tutoriel : SQL Server Management Studio](../ssms/quickstarts/connect-query-sql-server.md)  
+[Tutoriel : SQL Server Management Studio](../ssms/quickstarts/ssms-connect-query-sql-server.md)  
 Ce didacticiel vous présente l'environnement intégré pour la gestion de votre infrastructure [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] . [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] présente une interface graphique pour configurer, surveiller et administrer les instances de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Il vous permet également de déployer, de surveiller et de mettre à niveau les composants de la couche Données utilisés par vos applications, comme les bases de données et les entrepôts de données. [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] fournit également des éditeurs de langage [!INCLUDE[tsql](../includes/tsql-md.md)], MDX, DMX et XML pour modifier et déboguer des scripts.  
   
 [Tutoriel : Écriture d’instructions Transact-SQL](../t-sql/tutorial-writing-transact-sql-statements.md)  
@@ -56,5 +56,4 @@ Ce tutoriel explique comment stocker directement des fichiers de données SQL Se
 ## <a name="see-also"></a>Voir aussi  
 [Didacticiels pour SQL Server 2016](../sql-server/tutorials-for-sql-server-2016.md)  
 [Wiki TechNet : Exemples de SQL Server 2012](https://go.microsoft.com/fwlink/?linkID=220734)  
-  
   

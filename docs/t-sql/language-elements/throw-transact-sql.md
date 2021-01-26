@@ -19,17 +19,17 @@ ms.assetid: 43661b89-8f13-4480-ad53-70306cbb14c5
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: a1ad3ea0844911d5059cc2445c2978c3866f2916
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: d91c59aced8b4b649474fdac0b89c3df6e77b4a8
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100290"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765535"
 ---
 # <a name="throw-transact-sql"></a>THROW (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-  Lève une exception et transfère l’exécution à un bloc CATCH d’une construction TRY...CATCH dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+  Lève une exception et transfère l’exécution à un bloc CATCH d’une construction TRY...CATCH dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
   
  ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   

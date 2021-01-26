@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 76fb3eca-6b08-4610-8d79-64019dd56c44
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c0578d5522ca998e7243fd20b77daf8d3705bd85
-ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
+ms.openlocfilehash: 145f061ff1926bc9a93244226dbd36b6ffaf9de8
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878911"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765913"
 ---
 # <a name="connect-to-an-always-on-availability-group-listener"></a>Se connecter à un écouteur de groupe de disponibilité Always On 
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -121,7 +121,7 @@ Autrement, lors d'une migration depuis une mise en miroir de bases de données v
 > [!NOTE]  
 >  Nous vous recommandons de définir ce paramètre à la fois pour les connexions à un seul ou à plusieurs sous-réseaux aux écouteurs de groupes de disponibilité et aux noms d'instance de cluster de basculement SQL Server.  L'activation de cette option ajoute des optimisations supplémentaires, même pour les scénarios de sous-réseau unique.  
   
- L’option de connexion **MultiSubnetFailover** fonctionne uniquement avec le protocole réseau TCP et elle est prise en charge uniquement lors de la connexion à un écouteur de groupe de disponibilité et pour n’importe quel nom de réseau virtuel se connectant à [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+ L’option de connexion **MultiSubnetFailover** fonctionne uniquement avec le protocole réseau TCP et elle est prise en charge uniquement lors de la connexion à un écouteur de groupe de disponibilité et pour n’importe quel nom de réseau virtuel se connectant à [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)].  
   
  Voici un exemple de chaîne de connexion du fournisseur ADO.NET (System.Data.SqlClient) qui permet le basculement de plusieurs sous-réseaux :  
   

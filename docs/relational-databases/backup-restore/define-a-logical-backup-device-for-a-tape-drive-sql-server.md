@@ -17,16 +17,16 @@ helpviewer_keywords:
 ms.assetid: 66f36e1d-0287-4fac-8a51-71f9f0d7ad5b
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ddb39f0d488becdcb7711ef05030bad4aff08aa5
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 50cf45ac7558ba6d737b1ef286179411d9ff17b7
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127013"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98764920"
 ---
 # <a name="define-a-logical-backup-device-for-a-tape-drive-sql-server"></a>Définir une unité de sauvegarde logique pour un lecteur de bande (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment définir une unité de sauvegarde logique pour un lecteur de bande dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Une unité logique est un nom défini par l'utilisateur qui désigne une unité de sauvegarde physique spécifique (un fichier de disque ou un lecteur de bande).  L'initialisation de l'unité physique se produit ultérieurement, lorsqu'une sauvegarde est écrite sur l'unité de sauvegarde.  
+  Cette rubrique explique comment définir une unité de sauvegarde logique pour un lecteur de bande dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Une unité logique est un nom défini par l'utilisateur qui désigne une unité de sauvegarde physique spécifique (un fichier de disque ou un lecteur de bande).  L'initialisation de l'unité physique se produit ultérieurement, lorsqu'une sauvegarde est écrite sur l'unité de sauvegarde.  
   
 > [!NOTE]  
 >  La prise en charge des unités de sauvegarde sur bande sera supprimée dans une prochaine version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Évitez d'utiliser cette fonctionnalité dans de nouveaux travaux de développement, et prévoyez de modifier les applications qui utilisent actuellement cette fonctionnalité.  

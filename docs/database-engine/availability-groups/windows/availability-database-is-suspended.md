@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6baee70f-848c-4e86-b20d-78875c0f82cb
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 5843b82c3be84acf24e04ab9dac4b616bed857a6
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 9336a99169c0656d290898e3474254d9bb423030
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641227"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765808"
 ---
 # <a name="availability-database-is-suspended-for-an-availability-group"></a>Une base de données de disponibilité est suspendue dans un groupe de disponibilité
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -35,9 +35,6 @@ ms.locfileid: "97641227"
   
 ## <a name="description"></a>Description  
  Cette stratégie vérifie l'état du déplacement des données de la base de données secondaire (également appelée « réplica de base de données secondaire »). La stratégie se trouve dans un état non sain lorsque le déplacement des données est suspendu. Autrement, l'état de la stratégie est sain.  
-  
-> [!NOTE]  
->  Pour cette version de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)], les informations sur les causes et les solutions possibles sont situées sous [La base de données de disponibilité est suspendue](https://go.microsoft.com/fwlink/p/?LinkId=220860) sur TechNet Wiki.  
   
 ## <a name="possible-causes"></a>Causes possibles  
  La synchronisation des données sur cette base de données de disponibilité peut avoir été suspendue pour les motifs suivants :  

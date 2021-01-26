@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 8893ea9d-634c-4309-b52c-6337222dcb39
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: eba3e72558433acab3ba1a0edc3cd921b15281bd
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 905c5988860aef1a2e495bb17d98a48eaf91c5ce
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88457345"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98594835"
 ---
 # <a name="parsing-data"></a>Analyse de données
 
@@ -205,5 +205,4 @@ La propriété d'analyse rapide doit être définie pour chaque colonne de la so
 ## <a name="standard-parse"></a>Analyse standard
 L'analyse standard est un ensemble de routines d'analyse spécifique à un pays qui prend en charge toutes les conversions de type de données fournies par les API de conversion de type de données Automation disponibles dans Oleaut32.dll et Ole2dsip.dll. Elle est équivalente aux API d'analyse OLE DB.  
   
- L'analyse standard assure la prise en charge de la conversion de type de données pour les données internationales et doit être utilisée si le format de données n'est pas pris en charge par l'analyse rapide. Pour plus d'informations sur l'API de conversion de type de données Automation, consultez « API de conversion de type de données » dans [MSDN Library](https://go.microsoft.com/fwlink/?LinkId=79427). 
- 
+ L'analyse standard assure la prise en charge de la conversion de type de données pour les données internationales et doit être utilisée si le format de données n'est pas pris en charge par l'analyse rapide. Pour plus d'informations sur l'API de conversion de type de données Automation, consultez « API de conversion de type de données » dans [MSDN Library](/documentation/). 

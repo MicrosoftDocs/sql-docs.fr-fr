@@ -9,12 +9,12 @@ ms.technology: security
 ms.topic: how-to
 author: rupp29
 ms.author: arupp
-ms.openlocfilehash: 85be425e0e352961841f5317c7db219153a6c008
-ms.sourcegitcommit: 9122251ab8bbd46ea3c699e741d6842c995195fa
+ms.openlocfilehash: 8d3f89803711e96cb1e37adc9792c54bceb259c4
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91847772"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596497"
 ---
 # <a name="sql-server-connector-error-and-information-logging"></a>Journalisation des erreurs et des informations du connecteur SQL Server
 
@@ -24,7 +24,7 @@ Cet article explique comment modifier les entrées du Registre pour activer la j
 
 Le [connecteur SQL Server pour Microsoft Azure Key Vault](https://www.microsoft.com/download/details.aspx?id=45344) permet au chiffrement SQL Server d’utiliser Microsoft Azure Key Vault en tant que fournisseur de gestion de clés extensible (EKM) pour protéger ses clés de chiffrement.
 
-Le [téléchargement](https://www.microsoft.com/download/details.aspx?id=45344) comprend le connecteur SQL Server ainsi que des exemples de scripts permettant à un administrateur SQL Server d’apprendre à configurer le connecteur SQL Server et à activer les scénarios de chiffrement SQL Server. Pour plus d’informations, consultez [Gestion de clés extensible à l’aide de Key Vault (SQL Server)](https://go.microsoft.com/fwlink/p/?LinkId=521690).
+Le [téléchargement](https://www.microsoft.com/download/details.aspx?id=45344) comprend le connecteur SQL Server ainsi que des exemples de scripts permettant à un administrateur SQL Server d’apprendre à configurer le connecteur SQL Server et à activer les scénarios de chiffrement SQL Server. Pour plus d’informations, consultez [Gestion de clés extensible à l’aide de Key Vault (SQL Server)](./extensible-key-management-using-azure-key-vault-sql-server.md).
 
 Utilisez le [forum Azure Key Vault](https://social.msdn.microsoft.com/Forums/AzureKeyVault) pour poser des questions, partager des insights et discuter du connecteur SQL Server.
 

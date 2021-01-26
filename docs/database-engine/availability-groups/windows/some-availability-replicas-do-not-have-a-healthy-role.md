@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7ec5b337-7201-4a66-a541-7560f8b18784
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: db542dca2f4c200764e5065bff155c908fafcd25
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: ce3cb14ae7e45cfa076a10f5617525b882e3ba14
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641412"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766109"
 ---
 # <a name="some-availability-replicas-do-not-have-a-healthy-role"></a>Certains réplicas de disponibilité n'ont pas un rôle sain
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -35,9 +35,6 @@ ms.locfileid: "97641412"
   
 ## <a name="description"></a>Description  
  Cette stratégie détermine l'état de connexion de tous les réplicas de disponibilité et vérifie s'il existe des réplicas de disponibilité qui n'ont pas un rôle sain. La stratégie se trouve dans un état non sain lorsqu'un réplica de disponibilité n'est ni principal ni secondaire. Autrement, l'état de la stratégie est sain.  
-  
-> [!NOTE]  
->  Pour cette version de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)], les informations sur les causes et les solutions possibles sont situées sous [Certains réplicas de disponibilité n’ont pas un rôle sain](https://go.microsoft.com/fwlink/p/?LinkId=220854) sur TechNet Wiki.  
   
 ## <a name="possible-causes"></a>Causes possibles  
  Dans ce groupe de disponibilité, au moins un réplica de disponibilité n'a pas de rôle principal ou secondaire pour le moment.  

@@ -26,12 +26,12 @@ ms.assetid: 11855b56-c554-495d-aad4-ba446990153b
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 021c8e18b0767fcd844a92f598b4fbcb434740a4
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f9279883c9f032574e32056b2360a5947ffba022
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097260"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766205"
 ---
 # <a name="datename-transact-sql"></a>DATENAME (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -135,7 +135,7 @@ Utilisez `DATENAME` dans les clauses suivantes :
 + SELECT \<list>
 + WHERE
   
-Dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], DATENAME convertit des littéraux de chaîne implicitement en type **datetime2**. En d’autres termes, `DATENAME` ne prend pas en charge le format YDM quand la date est passée sous forme de chaîne. Vous devez caster explicitement la chaîne en type **datetime** ou **smalldatetime** pour utiliser le format AJM.
+Dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], DATENAME convertit des littéraux de chaîne implicitement en type **datetime2**. En d’autres termes, `DATENAME` ne prend pas en charge le format YDM quand la date est passée sous forme de chaîne. Vous devez caster explicitement la chaîne en type **datetime** ou **smalldatetime** pour utiliser le format AJM.
   
 ## <a name="examples"></a>Exemples  
 L’exemple suivant retourne les parties de la date spécifiée. Remplacez une valeur *datepart* de la table pour l’argument `datepart` dans l’instruction SELECT :

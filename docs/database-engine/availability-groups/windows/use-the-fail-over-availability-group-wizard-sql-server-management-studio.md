@@ -20,16 +20,16 @@ helpviewer_keywords:
 ms.assetid: 4a602584-63e4-4322-aafc-5d715b82b834
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 9da271a07fbce3e730e1eb5594dc7c1f2114ad24
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 6e0d0975bf9663f630ca7494d173ff852a3f7b4e
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641765"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765555"
 ---
 # <a name="use-the-fail-over-availability-group-wizard-sql-server-management-studio"></a>Utiliser l’Assistant Basculement d’un groupe de disponibilité (SQL Server Management Studio)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment effectuer un basculement manuel planifié ou forcé (basculement forcé) sur un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]. Un groupe de disponibilité bascule au niveau d'un réplica de disponibilité. Si vous basculez vers un réplica secondaire à l'état SYNCHRONIZED, l'Assistant exécute un basculement manuel planifié (sans perte de données). Si vous basculez vers un réplica secondaire à l’état UNSYNCHRONIZED ou NOT SYNCHRONIZING, l’Assistant effectue un basculement manuel forcé, également appelé *basculement forcé* (avec perte de données possible). Les deux formes de basculement manuel transfèrent le réplica secondaire auquel vous êtes connecté au rôle principal. Un basculement manuel planifié transfère actuellement l'ancien réplica principal sur le rôle secondaire. Après un basculement forcé, lorsque l'ancien réplica principal passe en ligne, il est transféré au rôle secondaire.  
+  Cette rubrique explique comment effectuer un basculement manuel planifié ou forcé (basculement forcé) sur un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou PowerShell dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)]. Un groupe de disponibilité bascule au niveau d'un réplica de disponibilité. Si vous basculez vers un réplica secondaire à l'état SYNCHRONIZED, l'Assistant exécute un basculement manuel planifié (sans perte de données). Si vous basculez vers un réplica secondaire à l’état UNSYNCHRONIZED ou NOT SYNCHRONIZING, l’Assistant effectue un basculement manuel forcé, également appelé *basculement forcé* (avec perte de données possible). Les deux formes de basculement manuel transfèrent le réplica secondaire auquel vous êtes connecté au rôle principal. Un basculement manuel planifié transfère actuellement l'ancien réplica principal sur le rôle secondaire. Après un basculement forcé, lorsque l'ancien réplica principal passe en ligne, il est transféré au rôle secondaire.  
 
 ##  <a name="before-you-begin"></a><a name="BeforeYouBegin"></a> Avant de commencer  
  Avant votre premier basculement manuel planifié, consultez la section « Avant de commencer » dans [Effectuer un basculement manuel planifié d’un groupe de disponibilité &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/perform-a-planned-manual-failover-of-an-availability-group-sql-server.md).  

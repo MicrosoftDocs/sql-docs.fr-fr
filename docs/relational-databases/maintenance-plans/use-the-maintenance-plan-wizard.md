@@ -35,16 +35,16 @@ helpviewer_keywords:
 ms.assetid: db65c726-9892-480c-873b-3af29afcee44
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 7d2ec2dd6935d535bcef0ebb566bf0d0f8f09d6a
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 68c3ff265fbf1bf56fb2d7f0ba42aa6f76dd72b2
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85758984"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766244"
 ---
 # <a name="use-the-maintenance-plan-wizard"></a>Utiliser l'Assistant Plan de maintenance
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment créer un plan de maintenance pour un ou plusieurs serveurs à l’aide de l’Assistant Plan de maintenance dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. L’Assistant Plan de maintenance crée un plan de maintenance que [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent peut exécuter régulièrement. Vous pouvez ainsi réaliser, en fonction d'intervalles spécifiés, diverses tâches d'administration de base de données, notamment des sauvegardes, l'exécution de contrôles d'intégrité de la base de données ou les mises à jour des statistiques de la base de données.  
+  Cette rubrique explique comment créer un plan de maintenance pour un ou plusieurs serveurs à l’aide de l’Assistant Plan de maintenance dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. L’Assistant Plan de maintenance crée un plan de maintenance que [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent peut exécuter régulièrement. Vous pouvez ainsi réaliser, en fonction d'intervalles spécifiés, diverses tâches d'administration de base de données, notamment des sauvegardes, l'exécution de contrôles d'intégrité de la base de données ou les mises à jour des statistiques de la base de données.  
     
  
 ##  <a name="limitations-and-restrictions"></a><a name="Restrictions"></a> Limitations et restrictions  
@@ -87,7 +87,7 @@ Vous devez activer [Agent XPs (option de configuration de serveur)](../../databa
   
         > **REMARQUE :** Si vous sélectionnez **Planification distincte pour chaque tâche**, vous devez suivre les étapes de la section **e.** ci-dessous pour chaque tâche de votre plan de maintenance.  
   
-    5.  Si vous avez sélectionné **Planification unique pour la totalité du plan ou pas de planification**sous **Planification**, cliquez sur **Modifier**.  
+    5.  Si vous avez sélectionné **Planification unique pour la totalité du plan ou pas de planification** sous **Planification**, cliquez sur **Modifier**.  
   
         1.  Dans la boîte de dialogue **Nouvelle planification du travail**, dans la zone **Nom**, entrez le nom de la planification du travail.  
   
@@ -115,7 +115,7 @@ Vous devez activer [Agent XPs (option de configuration de serveur)](../../databa
   
                     -   Si vous sélectionnez **Jour**, entrez la date du mois à laquelle vous souhaitez que la planification du travail s'exécute, ainsi que la fréquence de répétition de la planification du travail en mois. Par exemple, si vous souhaitez que la planification du travail s’exécute le 15 du mois un mois sur deux, sélectionnez **Jour**, puis entrez « 15 » dans la première zone et « 2 » dans la deuxième zone. Notez que le nombre maximum autorisé dans la deuxième zone est « 99 ».  
   
-                    -   Si vous sélectionnez **Le**, sélectionnez le jour spécifique de la semaine et du mois pendant lequel vous voulez que la planification du travail s'exécute et la fréquence à laquelle la planification du travail doit se répéter en mois. Par exemple, si vous souhaitez que la planification du travail s’exécute le dernier jour de la semaine un mois sur deux, sélectionnez **Jour**, puis **dernier** dans la première liste, **jour ouvrable** dans la deuxième liste et « 2 » dans la dernière zone. Vous pouvez également sélectionner **premier**, **deuxième**, **troisième**ou **quatrième**, ainsi que des jours de la semaine spécifiques (par exemple, dimanche ou mercredi) dans les deux premières listes. Notez que le nombre maximum autorisé dans la dernière zone est « 99 ».  
+                    -   Si vous sélectionnez **Le**, sélectionnez le jour spécifique de la semaine et du mois pendant lequel vous voulez que la planification du travail s'exécute et la fréquence à laquelle la planification du travail doit se répéter en mois. Par exemple, si vous souhaitez que la planification du travail s’exécute le dernier jour de la semaine un mois sur deux, sélectionnez **Jour**, puis **dernier** dans la première liste, **jour ouvrable** dans la deuxième liste et « 2 » dans la dernière zone. Vous pouvez également sélectionner **premier**, **deuxième**, **troisième** ou **quatrième**, ainsi que des jours de la semaine spécifiques (par exemple, dimanche ou mercredi) dans les deux premières listes. Notez que le nombre maximum autorisé dans la dernière zone est « 99 ».  
   
             2.  Sous **Fréquence quotidienne**, spécifiez la fréquence à laquelle la planification du travail se répète le jour de son exécution :  
   
@@ -127,7 +127,7 @@ Vous devez activer [Agent XPs (option de configuration de serveur)](../../databa
   
             3.  Sous **Durée**, dans la zone **Date de début**, entrez la date à laquelle vous souhaitez que l'exécution de la planification du travail commence. Sélectionnez **Date de fin** ou **Aucune date de fin** pour indiquer à quel moment l'exécution de la planification du travail doit s'arrêter. Si vous sélectionnez **Date de fin**, entrez la date à laquelle l'exécution de la planification du travail doit s'arrêter.  
   
-        5.  Si vous sélectionnez **Une fois**sous **Une seule occurrence**, dans la zone **Date** , entrez la date à laquelle la planification du travail est exécutée. Dans la zone **Heure** , entrez l'heure à laquelle la planification du travail sera exécutée. Entrez l'heure, les minutes et les secondes du jour, ainsi que AM ou PM.  
+        5.  Si vous sélectionnez **Une fois** sous **Une seule occurrence**, dans la zone **Date** , entrez la date à laquelle la planification du travail est exécutée. Dans la zone **Heure** , entrez l'heure à laquelle la planification du travail sera exécutée. Entrez l'heure, les minutes et les secondes du jour, ainsi que AM ou PM.  
   
         6.  Sous **Résumé**, dans **Description**, vérifiez que tous les paramètres de planification du travail sont corrects.  
   
@@ -153,7 +153,7 @@ Vous devez activer [Agent XPs (option de configuration de serveur)](../../databa
   
 Les options supplémentaires suivantes sont disponibles sur cette page.  
   
- Liste**Bases de données**  
+ Liste **Bases de données**  
  Spécifie les bases de données faisant l'objet de cette tâche.  
   
  -  **Toutes les bases de données**  
@@ -172,7 +172,7 @@ Génère un plan de maintenance qui exécute cette tâche sur toutes les bases d
   
   - Génère un plan de maintenance qui exécute cette tâche uniquement sur les bases de données sélectionnées. Si vous choisissez cette option, sélectionnez au moins une base de données.  
   
-Case à cocher**Inclure les index**  
+Case à cocher **Inclure les index**  
  - Vérifie l'intégrité de toutes les pages d'index ainsi que des pages de données des tables.  
   
 **Physique uniquement**  
@@ -189,13 +189,13 @@ Case à cocher**Inclure les index**
   
      Les options supplémentaires suivantes sont disponibles sur cette page.  
   
-     Liste**Bases de données**  
+     Liste **Bases de données**  
      Spécifie les bases de données faisant l'objet de cette tâche. Reportez-vous à l'étape 9 ci-dessus pour plus d'informations sur les options disponibles dans cette liste.  
   
-     Zone**Réduire la base de données quand elle excède**  
+     Zone **Réduire la base de données quand elle excède**  
      Indiquez la taille de base de données (en mégaoctets) qui doit être atteinte pour que l'exécution de la tâche soit déclenchée.  
   
-     Zone**Quantité d’espace disponible restant après réduction**  
+     Zone **Quantité d’espace disponible restant après réduction**  
      Arrête la réduction lorsque les fichiers de base de données présentent un espace libre équivalant à la taille spécifiée (en pourcentage).  
   
      **Conserver l'espace libéré dans les fichiers de base de données**  
@@ -210,57 +210,57 @@ Case à cocher**Inclure les index**
   
      Les options supplémentaires suivantes sont disponibles sur cette page.  
   
-     Liste**Bases de données**  
+     Liste **Bases de données**  
      Spécifie les bases de données faisant l'objet de cette tâche. Reportez-vous à l'étape 9 ci-dessus pour plus d'informations sur les options disponibles dans cette liste.  
   
-     Liste**Objet**  
+     Liste **Objet**  
      Limite la liste **Sélection** pour afficher des tables, des vues, ou les deux. Cette liste est disponible uniquement si une seule base de données est sélectionnée dans la liste **Bases de données** ci-dessus.  
   
-     Liste**Sélection**  
+     Liste **Sélection**  
      Spécifie les tables ou les index faisant l'objet de cette tâche. Non disponible quand **Tables et vues** est sélectionné dans la zone Objet.  
   
-     Case à cocher**Compacter les objets importants**  
+     Case à cocher **Compacter les objets importants**  
      Annule l'allocation de l'espace pour les tables et les vues si possible. Cette option utilise `ALTER INDEX ... LOB_COMPACTION = ON`.  
   
 2.  Dans la page **Définir la tâche Reconstruire l’index** , sélectionnez chaque base de données où vous allez recréer plusieurs index. La tâche utilise l'instruction `ALTER INDEX ... REBUILD PARTITION`. Pour plus d’informations, consultez [ALTER INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/alter-index-transact-sql.md).) Quand vous avez terminé, cliquez sur **Suivant**.  
   
      Les options supplémentaires suivantes sont disponibles sur cette page.  
   
-     Liste**Bases de données**  
+     Liste **Bases de données**  
      Spécifie les bases de données faisant l'objet de cette tâche. Reportez-vous à l'étape 9 ci-dessus pour plus d'informations sur les options disponibles dans cette liste.  
   
-     Liste**Objet**  
+     Liste **Objet**  
      Limite la liste **Sélection** pour afficher des tables, des vues, ou les deux. Cette liste est disponible uniquement si une seule base de données est sélectionnée dans la liste **Bases de données** ci-dessus.  
   
-     Liste**Sélection**  
+     Liste **Sélection**  
      Spécifie les tables ou les index faisant l'objet de cette tâche. Non disponible quand **Tables et vues** est sélectionné dans la zone Objet.  
   
-     Zone**Options relatives à l’espace libre**  
+     Zone **Options relatives à l’espace libre**  
      Présente les options permettant d'appliquer le facteur de remplissage des index et des tables.  
   
      **Espace disponible par page par défaut**  
      Réorganise les pages avec la quantité d'espace disponible par défaut. Cela supprime les index sur les tables de la base de données et les recrée avec le facteur de remplissage spécifié lors de la création des index. Il s'agit de l'option par défaut.  
   
-     Zone**Modifier l’espace disponible par page de**  
+     Zone **Modifier l’espace disponible par page de**  
      Provoque la suppression des index des tables de la base de données et leur recréation avec un nouveau facteur de remplissage calculé automatiquement, la quantité d'espace libre spécifiée étant réservée dans les pages d'index. Plus le pourcentage est élevé, plus il y a d'espace libre réservé dans les pages d'index et plus l'index croît. Les valeurs valides sont comprises entre 0 et 100. Utilise l'option `FILLFACTOR` .  
   
-     Zone**Options avancées**  
+     Zone **Options avancées**  
      Présente les options supplémentaires pour trier les index et pour la réindexation.  
   
-     Case à cocher**Trier les résultats dans tempdb**  
+     Case à cocher **Trier les résultats dans tempdb**  
      Utilise l'option `SORT_IN_TEMPDB` , qui détermine l'emplacement où les résultats de tri intermédiaires, générés lors de la création de l'index, sont temporairement stockés. Si aucune opération de tri n'est requise ou si le tri peut être effectué dans la mémoire, l'option `SORT_IN_TEMPDB` est ignorée.  
   
-     Case à cocher**Index de remplissage**  
+     Case à cocher **Index de remplissage**  
      Utilise l'option `PAD_INDEX` .  
   
-     Case à cocher**Conserver l’index en ligne lors de la réindexation**  
+     Case à cocher **Conserver l’index en ligne lors de la réindexation**  
      Utilise l'option `ONLINE` qui permet aux utilisateurs d'accéder à la table sous-jacente ou aux données d'index cluster, ainsi qu'à tous les index non cluster associés au cours des opérations d'index. La sélection de cette option active les options supplémentaires pour reconstruire les index qui n’autorisent pas les reconstructions en ligne : **Ne pas reconstruire les index** et **Reconstruire des index en mode hors connexion**.  
   
      Cette option active également la faible priorité utilisée, qui utilise l’option `WAIT_AT_LOW_PRIORITY` . Les opérations de reconstruction de l’index en ligne doivent attendre les verrous de faible priorité pendant `MAX_DURATION` minutes, pour laissant les autres opérations se poursuivre pendant la mise en attente de l’opération de construction de l’index en ligne.  
   
-    > **REMARQUE :** Les opérations d'index en ligne ne sont pas disponibles dans toutes les éditions de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Pour plus d’informations, consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2016](~/sql-server/editions-and-supported-features-for-sql-server-2016.md).  
+    > **REMARQUE :** Les opérations d'index en ligne ne sont pas disponibles dans toutes les éditions de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. Pour plus d’informations, consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2016](~/sql-server/editions-and-supported-features-for-sql-server-2016.md).  
   
-     Case à cocher**MAXDOP**  
+     Case à cocher **MAXDOP**  
      Remplace l’option de configuration Degré maximal de parallélisme de sp_configure pour DBCC CHECKDB. Pour plus d’informations, consultez [DBCC CHECKIDENT &#40;Transact-SQL&#41;](../../t-sql/database-console-commands/dbcc-checkdb-transact-sql.md)  
   
 #### <a name="define-the-update-statistics-task"></a>Définir la tâche de mise à jour des statistiques  
@@ -269,13 +269,13 @@ Case à cocher**Inclure les index**
   
      Les options supplémentaires suivantes sont disponibles sur cette page.  
   
-     Liste**Bases de données**  
+     Liste **Bases de données**  
      Spécifie les bases de données faisant l'objet de cette tâche. Reportez-vous à l'étape 9 ci-dessus pour plus d'informations sur les options disponibles dans cette liste.  
   
-     Liste**Objet**  
+     Liste **Objet**  
      Limite la liste **Sélection** pour afficher des tables, des vues, ou les deux. Cette liste est disponible uniquement si une seule base de données est sélectionnée dans la liste **Bases de données** ci-dessus.  
   
-     Liste**Sélection**  
+     Liste **Sélection**  
      Spécifie les tables ou les index faisant l'objet de cette tâche. Non disponible quand **Tables et vues** est sélectionné dans la zone Objet.  
   
      **Toutes les statistiques existantes**  
@@ -315,7 +315,7 @@ Case à cocher**Inclure les index**
      Cet historique vous permet de résoudre les problèmes des travaux de plan de maintenance ayant échoué ou de déterminer la raison pour laquelle des actions se sont produites.  
   
      **Supprimer les données d'historique antérieures à**  
-     Permet de spécifier l'ancienneté des éléments à supprimer. Vous pouvez spécifier **Heure(s)** , **Jour(s)** , **Semaine(s)** (valeur par défaut), **Mois**ou **Année(s)** .  
+     Permet de spécifier l'ancienneté des éléments à supprimer. Vous pouvez spécifier **Heure(s)** , **Jour(s)** , **Semaine(s)** (valeur par défaut), **Mois** ou **Année(s)** .  
   
 #### <a name="define-the-execute-agent-job-task"></a>Définir la tâche Exécuter le travail de l'agent  
   
@@ -327,20 +327,20 @@ Case à cocher**Inclure les index**
   
      Les options supplémentaires suivantes sont disponibles sur cette page.  
   
-     Liste**Type de sauvegarde**  
+     Liste **Type de sauvegarde**  
      Affiche le type de sauvegarde à effectuer. En lecture seule.  
   
-     Liste**Bases de données**  
+     Liste **Bases de données**  
      Spécifie les bases de données faisant l'objet de cette tâche. Reportez-vous à l'étape 9 ci-dessus pour plus d'informations sur les options disponibles dans cette liste.  
   
      **Composant de sauvegarde**  
      Sélectionnez **Base de données** pour sauvegarder la totalité de la base de données. Sélectionnez **Fichier et groupes de fichiers** pour sauvegarder seulement une partie de la base de données. Spécifiez ensuite le nom du fichier ou du groupe de fichiers. Si vous avez sélectionné plusieurs bases de données dans la zone **Base de données** , ne spécifiez que **Bases de données** pour **Composant de sauvegarde**. Pour exécuter des sauvegardes de fichiers ou de groupes de fichiers, créez une tâche pour chaque base de données. Ces options sont disponibles uniquement si une seule base de données est sélectionnée dans la liste **Bases de données** ci-dessus.  
   
-     Case à cocher**Expiration du jeu de sauvegarde**  
+     Case à cocher **Expiration du jeu de sauvegarde**  
      Spécifie la date à laquelle le jeu de sauvegarde de cette sauvegarde peut être écrasé. Sélectionnez **Après** et entrez le nombre de jours avant l'expiration ou sélectionnez **Le** et entrez une date d'expiration. Cette option est désactivée si **URL** est sélectionné en tant que destination de sauvegarde.  
   
      **Sauvegarde sur**  
-     Spécifie le support sur lequel enregistrer la base de données. Sélectionnez **Disque**, **Bande**ou **URL**. Seuls les périphériques à bande connectés à l'ordinateur sur lequel figure la base de données sont disponibles.  
+     Spécifie le support sur lequel enregistrer la base de données. Sélectionnez **Disque**, **Bande** ou **URL**. Seuls les périphériques à bande connectés à l'ordinateur sur lequel figure la base de données sont disponibles.  
   
      **Sauvegarder les bases de données sur un ou plusieurs fichiers**  
      Cliquez sur **Ajouter** pour ouvrir la boîte de dialogue **Sélectionner la destination de la sauvegarde** . Cette option est désactivée si URL est sélectionné en tant que destination de sauvegarde.  
@@ -349,21 +349,21 @@ Case à cocher**Inclure les index**
   
      Cliquez sur **Contenu** pour lire l'en-tête de fichier et afficher le contenu de sauvegarde actuel du fichier.  
   
-     Boîte de dialogue**Sélectionner la destination de la sauvegarde**  
+     Boîte de dialogue **Sélectionner la destination de la sauvegarde**  
      Sélectionnez le fichier, le lecteur de bande ou l'unité de sauvegarde de destination de la sauvegarde. Cette option est désactivée si URL est sélectionné en tant que destination de sauvegarde.  
   
-     Liste**Si des fichiers de sauvegarde existent**  
+     Liste **Si des fichiers de sauvegarde existent**  
      Spécifiez la manière dont seront traitées les sauvegardes existantes. Sélectionnez **Ajouter** pour ajouter les nouvelles sauvegardes à la suite de celles déjà présentes dans le fichier ou sur la bande. Sélectionnez **Remplacer** pour supprimer l'ancien contenu du fichier ou de la bande en le remplaçant par la nouvelle sauvegarde.  
   
      **Créer un fichier de sauvegarde pour chaque base de données**  
      Crée un fichier de sauvegarde à l'emplacement spécifié dans la zone Dossier. Un fichier unique est créé pour chaque base de données sélectionnée. Cette option est désactivée si URL est sélectionné en tant que destination de sauvegarde.  
   
-     Case à cocher**Créer un sous-répertoire pour chaque base de données**  
+     Case à cocher **Créer un sous-répertoire pour chaque base de données**  
      Crée un sous-répertoire pour chaque base de données sauvegardée dans le cadre du plan de maintenance, dans le répertoire de disque spécifié contenant la sauvegarde de la base de données.  
   
     > **IMPORTANT !** Le sous-répertoire hérite les autorisations du répertoire parent. Limitez les autorisations pour éviter les accès non autorisés.  
   
-     Zone**Dossier**  
+     Zone **Dossier**  
      Spécifiez le dossier dans lequel seront placés les fichiers de base de données créés automatiquement. Cette option est désactivée si URL est sélectionné en tant que destination de sauvegarde.  
   
      **Informations d'identification SQL**  
@@ -377,16 +377,16 @@ Case à cocher**Inclure les index**
      **Préfixe d'URL**  
      Est généré automatiquement à partir des informations du compte de stockage contenues dans les informations d'identification SQL, et du nom du conteneur de stockage Windows Azure que vous avez spécifié. Nous vous recommandons de ne pas modifier les informations de ce champ, sauf si vous utilisez un domaine qui utilise un format autre que **\<storage account>.blob.core.windows.net**.  
   
-     Zone**Extension du fichier de sauvegarde**  
+     Zone **Extension du fichier de sauvegarde**  
      Spécifiez l'extension à utiliser pour les fichiers de sauvegarde. La valeur par défaut est .bak.  
   
-     Case à cocher**Vérifier l’intégrité de la sauvegarde**  
+     Case à cocher **Vérifier l’intégrité de la sauvegarde**  
      Vérifie si le jeu de sauvegarde est complet et que tous les volumes sont lisibles.  
   
-     Case à cocher**Effectuer une somme de contrôle**  
+     Case à cocher **Effectuer une somme de contrôle**  
      Vérifie dans chaque page les informations de somme de contrôle et de page endommagée, si elles sont activées et disponibles, et génère une somme de contrôle pour l’ensemble de la sauvegarde.  
   
-     Case à cocher**Continuer en cas d'erreur**  
+     Case à cocher **Continuer en cas d'erreur**  
      Ordonne à BACKUP de continuer en dépit des erreurs rencontrées, telles que des sommes de contrôle de page non valides ou des pages endommagées.  
   
      **Chiffrement de sauvegarde**  
@@ -406,15 +406,15 @@ Case à cocher**Inclure les index**
   
      Seules les clés résidant dans la gestion de clés extensible (EKM) sont prises en charge.  
   
-     Case à cocher, liste**Taille de bloc**  
+     Case à cocher, liste **Taille de bloc**  
   
      Indique, en octets, la taille physique du bloc. En règle générale, cette option affecte les performances si les données sont écrites sur des périphériques à bandes, des modules RAID ou un SAN.  
   
-     Case à cocher, liste**Taille de transfert max.**  
+     Case à cocher, liste **Taille de transfert max.**  
   
      Spécifie, en octets, la plus grande unité de transfert à utiliser entre SQL Server et le support de sauvegarde.  
   
-     Liste**Définir la compression de la sauvegarde**  
+     Liste **Définir la compression de la sauvegarde**  
      Dans [!INCLUDE[ssEnterpriseEd10](../../includes/ssenterpriseed10-md.md)] (ou les versions ultérieures), sélectionnez l’une des valeurs de [compression de la sauvegarde](../../relational-databases/backup-restore/backup-compression-sql-server.md) suivantes :  
   
     |||  
@@ -453,20 +453,20 @@ Case à cocher**Inclure les index**
      **Rechercher dans le dossier et supprimer les fichiers en fonction de l'extension**  
      Supprimez tous les fichiers contenant l'extension spécifiée dans le dossier spécifié. Utilisez cette option pour supprimer plusieurs fichiers à la fois, par exemple tous les fichiers de sauvegarde possédant l'extension .bak dans le dossier Mardi.  
   
-     Zone**Dossier**  
+     Zone **Dossier**  
      Chemin d'accès et nom du dossier contenant les fichiers à supprimer.  
   
-     Zone**Extension de fichier**  
+     Zone **Extension de fichier**  
      Spécifiez l'extension de fichier des fichiers à supprimer. Pour supprimer plusieurs fichiers à la fois, par exemple tous les fichiers de sauvegarde possédant l'extension .bak dans le dossier Mardi, spécifiez .bak.  
   
-     Case à cocher**Inclure les sous-dossiers de premier niveau**  
+     Case à cocher **Inclure les sous-dossiers de premier niveau**  
      Supprimez les fichiers portant l’extension spécifiée par l’option **Extension de fichier** dans les sous-dossiers de premier niveau situés dans le dossier défini par l’option **Dossier**.  
   
-     Case à cocher**Supprimer les fichiers en fonction de l’ancienneté du fichier au moment de l’exécution de la tâche**  
+     Case à cocher **Supprimer les fichiers en fonction de l’ancienneté du fichier au moment de l’exécution de la tâche**  
      Spécifiez l’ancienneté minimale des fichiers à supprimer en entrant un chiffre et une unité de temps dans la zone **Supprimer les fichiers antérieurs à** .  
   
      **Supprimer les fichiers antérieurs à**  
-     Spécifiez l’ancienneté minimale des fichiers à supprimer en entrant un chiffre et une unité de temps (**Heure**, **Jour**, **Semaine**, **Mois**ou **Année**). Les fichiers antérieurs au délai spécifié seront supprimés.  
+     Spécifiez l’ancienneté minimale des fichiers à supprimer en entrant un chiffre et une unité de temps (**Heure**, **Jour**, **Semaine**, **Mois** ou **Année**). Les fichiers antérieurs au délai spécifié seront supprimés.  
   
 #### <a name="select-report-options"></a>Sélectionner des options de rapport  
   
@@ -474,13 +474,13 @@ Case à cocher**Inclure les index**
   
      Les options supplémentaires suivantes sont disponibles sur cette page.  
   
-     Case à cocher**Enregistrer un rapport dans un fichier texte**  
+     Case à cocher **Enregistrer un rapport dans un fichier texte**  
      Enregistre le rapport dans un fichier.  
   
-     Zone**Emplacement du dossier**  
+     Zone **Emplacement du dossier**  
      Spécifiez l'emplacement du fichier qui contiendra le rapport.  
   
-     Case à cocher**Envoyer le rapport par courrier électronique**  
+     Case à cocher **Envoyer le rapport par courrier électronique**  
      Envoie un courrier électronique lorsqu'une tâche échoue. Pour utiliser cette tâche, l’option Messagerie de base de données doit être activée et configurée correctement avec MSDB comme Base de données hôte de messagerie, et vous devez avoir un opérateur [!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent avec une adresse e-mail valide.  
   
      **Opérateur d'agent**  
@@ -510,7 +510,7 @@ Case à cocher**Inclure les index**
      Indique les messages d'erreur ou d'avertissement retournés par le processus.  
   
      **Report**  
-     Crée un rapport qui contient les résultats de l'Assistant Création de partition. Les options sont **Afficher le rapport**, **Enregistrer le rapport dans un fichier**, **Copier le rapport dans le Presse-papiers**et **Envoyer le rapport sous forme de courrier électronique**.  
+     Crée un rapport qui contient les résultats de l'Assistant Création de partition. Les options sont **Afficher le rapport**, **Enregistrer le rapport dans un fichier**, **Copier le rapport dans le Presse-papiers** et **Envoyer le rapport sous forme de courrier électronique**.  
   
      **Afficher le rapport**  
      Ouvre la boîte de dialogue **Afficher le rapport** , qui contient un rapport au format texte de la progression de l’Assistant Création de partition.  

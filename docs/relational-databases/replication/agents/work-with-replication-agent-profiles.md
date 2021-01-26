@@ -17,16 +17,16 @@ ms.assetid: 9c290a88-4e9f-4a7e-aab5-4442137a9918
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: b21d42777d4561685e714eeb72c07bb1e6fd405b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 613d3be8703563967241dda54725eda4c777a712
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475870"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765595"
 ---
 # <a name="work-with-replication-agent-profiles"></a>Utiliser des profils d'agent de réplication
 [!INCLUDE[sql-asdbmi](../../../includes/applies-to-version/sql-asdbmi.md)]
-  Cette rubrique explique comment utiliser les profils de l'Agent de réplication dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou d'objets RMO (Replication Management Objects). Le comportement de chaque agent de réplication est contrôlé par un jeu de paramètres que vous pouvez configurer dans un profil de l'Agent. Chaque agent possède un profil par défaut et certains possèdent d'autres profils prédéfinis ; un Agent ne peut avoir qu'un profil actif à tout moment.  
+  Cette rubrique explique comment utiliser les profils de l'Agent de réplication dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou d'objets RMO (Replication Management Objects). Le comportement de chaque agent de réplication est contrôlé par un jeu de paramètres que vous pouvez configurer dans un profil de l'Agent. Chaque agent possède un profil par défaut et certains possèdent d'autres profils prédéfinis ; un Agent ne peut avoir qu'un profil actif à tout moment.  
   
  **Dans cette rubrique**  
   

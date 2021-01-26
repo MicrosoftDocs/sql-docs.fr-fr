@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: d2d3af25-8877-46ba-95d9-1844961d97ee
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: ea4130d49d35f1bdb9a5c74b74fff32052db9bc5
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 2762305952b7c2e189a9c399f614974e1fc32e11
+ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172051"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98688778"
 ---
 # <a name="drop-default-transact-sql"></a>DROP DEFAULT (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -46,7 +46,7 @@ DROP DEFAULT [ IF EXISTS ] { [ schema_name . ] default_name } [ ,...n ] [ ; ]
 
 ## <a name="arguments"></a>Arguments
  *IF EXISTS*  
- **S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à la [version actuelle](https://go.microsoft.com/fwlink/p/?LinkId=299658)).  
+ **S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md)).  
   
  Supprime, de manière conditionnelle, la valeur par défaut uniquement si elle existe déjà.  
   
@@ -104,5 +104,3 @@ GO
  [sp_helptext &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helptext-transact-sql.md)   
  [sp_help &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-transact-sql.md)   
  [sp_unbindefault &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-unbindefault-transact-sql.md)  
-  
-  

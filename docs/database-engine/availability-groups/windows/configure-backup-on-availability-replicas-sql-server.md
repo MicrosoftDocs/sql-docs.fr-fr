@@ -18,16 +18,16 @@ helpviewer_keywords:
 ms.assetid: 74bc40bb-9f57-44e4-8988-1d69c0585eb6
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f274f22e2ba9e9bdffa2c2446b527250ea175807
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 4d8a599046ce41d10932048483b1404b58dd3dbe
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643059"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765953"
 ---
 # <a name="configure-backups-on-secondary-replicas-of-an-always-on-availability-group"></a>Configurer des sauvegardes sur des réplicas secondaires d’un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment configurer la sauvegarde sur des réplicas secondaires pour un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou de PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+  Cette rubrique explique comment configurer la sauvegarde sur des réplicas secondaires pour un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou de PowerShell dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)].  
   
 > [!NOTE]  
 >  Pour une introduction à la sauvegarde sur les réplicas secondaires, consultez [Secondaires actifs : sauvegarde sur les réplicas secondaires &#40;groupes de disponibilité Always On&#41;](../../../database-engine/availability-groups/windows/active-secondaries-backup-on-secondary-replicas-always-on-availability-groups.md).  

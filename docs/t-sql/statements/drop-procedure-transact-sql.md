@@ -26,12 +26,12 @@ ms.assetid: 1c2d7235-7b9b-4336-8f17-429e7d82c2c3
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: c810d1e57b3e2cfb092e1091da0d95b082eb8c2d
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 3915bf9f19396c8cc55179861e23052f25886b20
+ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172471"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98689046"
 ---
 # <a name="drop-procedure-transact-sql"></a>DROP PROCEDURE (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -58,7 +58,7 @@ DROP { PROC | PROCEDURE } { [ schema_name. ] procedure_name }
 
 ## <a name="arguments"></a>Arguments
  *IF EXISTS*  
- **S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à la [version actuelle](https://go.microsoft.com/fwlink/p/?LinkId=299658)).  
+ **S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md)).  
   
  Supprime, de manière conditionnelle, la procédure uniquement si elle existe déjà.  
   
@@ -107,7 +107,3 @@ GO
  [sys.objects &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-objects-transact-sql.md)   
  [sys.sql_modules &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-sql-modules-transact-sql.md)   
  [Supprimer une procédure stockée](../../relational-databases/stored-procedures/delete-a-stored-procedure.md)  
-  
-  
-
-

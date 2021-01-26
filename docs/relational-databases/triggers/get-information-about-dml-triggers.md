@@ -18,16 +18,16 @@ ms.assetid: 37574aac-181d-4aca-a2cc-8abff64237dc
 author: rothja
 ms.author: jroth
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 39a4d0a6136990cdb583a432757503099f61cfb6
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 7a5e8f14728e5239ab4e0b1d71c78b713f2c27c2
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97403410"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765586"
 ---
 # <a name="get-information-about-dml-triggers"></a>Obtenir des informations sur les déclencheurs DML
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
-  Cette rubrique explique comment obtenir des informations sur les déclencheurs DML dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Ces informations peuvent inclure les types de déclencheurs existant sur une table, ainsi que leur nom, leur propriétaire et la date de leur création ou modification. Si le déclencheur n'a pas été chiffré lors de sa création, vous obtenez la définition du déclencheur. Vous pouvez utiliser la définition pour vous aider à comprendre comment un déclencheur affecte la table sur laquelle il est défini. En outre, vous pouvez déterminer les objets qu'un déclencheur spécifique utilise. Avec ces informations, vous pouvez identifier les objets dont l'éventuelle suppression ou modification aurait une répercussion sur le déclencheur.  
+  Cette rubrique explique comment obtenir des informations sur les déclencheurs DML dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Ces informations peuvent inclure les types de déclencheurs existant sur une table, ainsi que leur nom, leur propriétaire et la date de leur création ou modification. Si le déclencheur n'a pas été chiffré lors de sa création, vous obtenez la définition du déclencheur. Vous pouvez utiliser la définition pour vous aider à comprendre comment un déclencheur affecte la table sur laquelle il est défini. En outre, vous pouvez déterminer les objets qu'un déclencheur spécifique utilise. Avec ces informations, vous pouvez identifier les objets dont l'éventuelle suppression ou modification aurait une répercussion sur le déclencheur.  
   
  **Dans cette rubrique**  
   

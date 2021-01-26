@@ -12,16 +12,16 @@ f1_keywords:
 ms.assetid: e69207a0-c5c4-44e4-ae9a-4afbb67251d1
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 632082f11b386fde86a9e89595cf13302cd1bc25
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: c9d1cfdb0437972ef5f1115c0e9ba6e667038932
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643538"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765541"
 ---
 # <a name="enter-passwords-page-add-replica-wizard-for-always-on-availability-groups"></a>Page Entrer les mots de passe (Assistant Ajouter un réplica) pour les groupes de disponibilités Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique d’aide décrit les options de la page **Entrer les mots de passe** . Cette rubrique s’applique à [!INCLUDE[ssAoAddRepWiz](../../../includes/ssaoaddrepwiz-md.md)] de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+  Cette rubrique d’aide décrit les options de la page **Entrer les mots de passe** . Cette rubrique s’applique à [!INCLUDE[ssAoAddRepWiz](../../../includes/ssaoaddrepwiz-md.md)] de [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)].  
   
  Si les réplicas que vous avez sélectionnés sur la page **Spécifier les réplicas** contiennent des bases de données comportant une clé principale de base de données, la page Entrer les mots de passe s’affiche.  
   

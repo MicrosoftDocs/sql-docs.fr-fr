@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: c4da8f25-fb1b-45a4-8bf2-195df6df634c
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 295600860742757e5498a7cbf1fd18394282e87d
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 72ee8486291574631a8683334664e97a927b93e2
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643125"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766012"
 ---
 # <a name="change-availability-mode-of-a-replica-within-an-always-on-availability-group"></a>Changer le mode de disponibilité d’un réplica dans un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment modifier le mode de disponibilité d’un réplica de disponibilité dans un groupe de disponibilité Always On dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou PowerShell. Le mode de disponibilité est une propriété de réplica qui contrôle si le réplica effectue la validation de façon synchrone ou asynchrone. Le *mode de validation asynchrone* optimise les performances au détriment d’une haute disponibilité et prend en charge uniquement le basculement forcé manuel (avec une possible perte de données), qu’on appelle généralement *basculement forcé*. Le *mode de validation synchrone* privilégie la haute disponibilité plutôt que les performances et, une fois que le réplica secondaire est synchronisé, prend en charge le basculement manuel et, éventuellement, le basculement automatique.  
+  Cette rubrique explique comment modifier le mode de disponibilité d’un réplica de disponibilité dans un groupe de disponibilité Always On dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou PowerShell. Le mode de disponibilité est une propriété de réplica qui contrôle si le réplica effectue la validation de façon synchrone ou asynchrone. Le *mode de validation asynchrone* optimise les performances au détriment d’une haute disponibilité et prend en charge uniquement le basculement forcé manuel (avec une possible perte de données), qu’on appelle généralement *basculement forcé*. Le *mode de validation synchrone* privilégie la haute disponibilité plutôt que les performances et, une fois que le réplica secondaire est synchronisé, prend en charge le basculement manuel et, éventuellement, le basculement automatique.  
     
 ##  <a name="prerequisites"></a><a name="Prerequisites"></a> Conditions préalables  
   

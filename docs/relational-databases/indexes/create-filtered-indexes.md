@@ -18,17 +18,17 @@ ms.assetid: 25e1fcc5-45d7-4c53-8c79-5493dfaa1c74
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 3f67ff91e6f5270c3bec207223eb3f72a070eea3
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 546ec1476ecae0da0fd119c7b45d06c2cc4406f6
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460372"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98764903"
 ---
 # <a name="create-filtered-indexes"></a>Créer des index filtrés
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
-  Cette rubrique explique comment créer un index filtré dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Un index filtré est un index non cluster optimisé convenant tout particulièrement aux requêtes qui effectuent des sélections dans un sous-ensemble de données bien défini. Il utilise un prédicat de filtre pour indexer une partie des lignes de la table. Un index filtré bien conçu peut améliorer les performances des requêtes et réduire les coûts de maintenance et de stockage des index par rapport aux index de table entière.  
+  Cette rubrique explique comment créer un index filtré dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Un index filtré est un index non cluster optimisé convenant tout particulièrement aux requêtes qui effectuent des sélections dans un sous-ensemble de données bien défini. Il utilise un prédicat de filtre pour indexer une partie des lignes de la table. Un index filtré bien conçu peut améliorer les performances des requêtes et réduire les coûts de maintenance et de stockage des index par rapport aux index de table entière.  
   
  Les index filtrés peuvent présenter les avantages suivants par rapport aux index de table entière :  
   

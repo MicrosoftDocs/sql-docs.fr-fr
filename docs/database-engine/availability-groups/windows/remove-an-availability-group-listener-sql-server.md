@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: fd9bba9a-d29f-4c23-8ecd-aaa049ed5f1b
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: be53c8d3eed2c7124169c965e2977c7018988c3d
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 3e2c826818f7b1fd35b3ef86ad0b7245a56b6af8
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642452"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766168"
 ---
 # <a name="remove-an-availability-group-listener-sql-server"></a>Supprimer un écouteur de groupe de disponibilité (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment supprimer un écouteur de groupe de disponibilité d’un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+  Cette rubrique explique comment supprimer un écouteur de groupe de disponibilité d’un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou PowerShell dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)].  
   
   
 ##  <a name="prerequisites"></a><a name="Prerequisites"></a> Conditions préalables  

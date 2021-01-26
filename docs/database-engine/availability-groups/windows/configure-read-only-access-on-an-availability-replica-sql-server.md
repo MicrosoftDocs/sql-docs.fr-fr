@@ -16,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: 22387419-22c4-43fa-851c-5fecec4b049b
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 9c2b804263539bb195ab8270a57dd8258811d2d4
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: b8ee6cba92f54fd6070abb079769d4386d29bc47
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644338"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765965"
 ---
 # <a name="configure-read-only-access-to-a-secondary-replica-of-an-always-on-availability-group"></a>Configurer l’accès en lecture seule à un réplica secondaire d’un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Par défaut l’accès en lecture/écriture et l’intention de lecture sont autorisés sur le réplica principal et aucune connexion directe n’est autorisée sur les réplicas secondaires d’un groupe de disponibilité Always On. Cette rubrique explique comment configurer l’accès à la connexion sur un réplica de disponibilité d’un groupe de disponibilité Always On dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou PowerShell.  
+  Par défaut l’accès en lecture/écriture et l’intention de lecture sont autorisés sur le réplica principal et aucune connexion directe n’est autorisée sur les réplicas secondaires d’un groupe de disponibilité Always On. Cette rubrique explique comment configurer l’accès à la connexion sur un réplica de disponibilité d’un groupe de disponibilité Always On dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou PowerShell.  
   
  Pour obtenir plus d’informations sur les conséquences de l’activation de l’accès en lecture seule sur un réplica secondaire ainsi qu’une présentation de l’accès de la connexion, consultez [À propos de l’accès de la connexion cliente aux réplicas de disponibilité &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/about-client-connection-access-to-availability-replicas-sql-server.md) et [Secondaires actifs : Réplicas secondaires accessibles en lecture &#40;groupes de disponibilité AlwaysOn&#41;](../../../database-engine/availability-groups/windows/active-secondaries-readable-secondary-replicas-always-on-availability-groups.md).  
   
@@ -155,7 +155,7 @@ GO
          Toutes les connexions aux bases de données sont autorisées dans le réplica principal. Il s'agit du paramètre par défaut.  
   
     > [!NOTE]  
-    >  Pour voir la syntaxe d’une applet de commande, utilisez l’applet de commande **Get-Help** dans l’environnement [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] PowerShell. Pour en savoir plus, voir [Get Help SQL Server PowerShell](../../../powershell/sql-server-powershell.md).  
+    >  Pour voir la syntaxe d’une applet de commande, utilisez l’applet de commande **Get-Help** dans l’environnement [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] PowerShell. Pour en savoir plus, voir [Get Help SQL Server PowerShell](../../../powershell/sql-server-powershell.md).  
   
  **Pour configurer et utiliser le fournisseur SQL Server PowerShell**  
   

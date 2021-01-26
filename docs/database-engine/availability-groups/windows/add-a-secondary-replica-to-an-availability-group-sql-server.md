@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 6669dcce-85f9-495f-aadf-7f62cff4a9da
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 645fae8fc567eff8d8e4daa62d3b19fec2c2fdc1
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: d5be1ee9057711414850e35d4226ad5c3f3346fd
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643807"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765504"
 ---
 # <a name="add-a-secondary-replica-to-an-always-on-availability-group"></a>Ajouter un réplica secondaire à un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment ajouter un réplica secondaire à un groupe de disponibilité Always On existant à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou de PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+  Cette rubrique explique comment ajouter un réplica secondaire à un groupe de disponibilité Always On existant à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou de PowerShell dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)].  
 
   
 ##  <a name="prerequisites-and-restrictions"></a><a name="PrerequisitesRestrictions"></a> Conditions préalables requises et restrictions  

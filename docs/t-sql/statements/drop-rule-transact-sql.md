@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 8370b730-7fd5-43fe-a7f6-8300b3caa16d
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 81dd188416fd57274dbfd2ba587ddd9fdde1f51c
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 125589a9de78d8fdc462caaeac12b6d6c2e2239e
+ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172601"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98689123"
 ---
 # <a name="drop-rule-transact-sql"></a>DROP RULE (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -49,7 +49,7 @@ DROP RULE [ IF EXISTS ] { [ schema_name . ] rule_name } [ ,...n ] [ ; ]
 
 ## <a name="arguments"></a>Arguments
  *IF EXISTS*  
- **S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à la [version actuelle](https://go.microsoft.com/fwlink/p/?LinkId=299658)).  
+ **S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md)).  
   
  Supprime, de manière conditionnelle, la règle uniquement si elle existe déjà.  
   
@@ -84,5 +84,4 @@ GO
  [sp_help &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-transact-sql.md)   
  [sp_helptext &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helptext-transact-sql.md)   
  [sp_unbindrule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-unbindrule-transact-sql.md)   
- [USE &#40;Transact-SQL&#41;](../../t-sql/language-elements/use-transact-sql.md)  
-
+ [USE &#40;Transact-SQL&#41;](../../t-sql/language-elements/use-transact-sql.md)

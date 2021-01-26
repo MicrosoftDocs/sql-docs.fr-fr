@@ -25,12 +25,12 @@ ms.assetid: ca5fd220-d5ea-4182-8950-55d4101a86f6
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 0f62ced8657ee943a947e26c5a2a2ed65a9d78b9
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: d16763f2bd009b411952c20cfb1115cf1c977d85
+ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171911"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98689188"
 ---
 # <a name="alter-database-transact-sql-compatibility-level"></a>Niveau de compatibilité ALTER DATABASE (Transact-SQL)
 
@@ -142,7 +142,7 @@ Pour plus d’informations, notamment sur le workflow recommandé pour la mise �
 > Les fonctionnalités **obsolètes** obtenues précédemment via une version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne sont **pas** protégées par le niveau de compatibilité. Il s’agit des fonctionnalités qui ont été supprimées du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)].
 > Par exemple, l’indicateur `FASTFIRSTROW` a été abandonné dans [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], et remplacé par l’indicateur `OPTION (FAST n )`. Le fait de définir le niveau de compatibilité de la base de données sur 110 ne permet pas de restaurer l’indicateur obsolète.  
 >  
-> Pour plus d’informations sur les fonctionnalités qui ne sont plus disponibles, consultez [Fonctionnalités du moteur de base de données qui ne sont plus disponibles dans SQL Server](../../database-engine/discontinued-database-engine-functionality-in-sql-server.md) et [Fonctionnalités du moteur de base de données qui ne sont plus disponibles dans SQL Server 2014](https://docs.microsoft.com/previous-versions/sql/2014/database-engine/discontinued-database-engine-functionality-in-sql-server-2016?view=sql-server-2014&preserve-view=true).
+> Pour plus d’informations sur les fonctionnalités qui ne sont plus disponibles, consultez [Fonctionnalités du moteur de base de données qui ne sont plus disponibles dans SQL Server](../../database-engine/discontinued-database-engine-functionality-in-sql-server.md) et [Fonctionnalités du moteur de base de données qui ne sont plus disponibles dans SQL Server 2014](/previous-versions/sql/2014/database-engine/discontinued-database-engine-functionality-in-sql-server-2016?preserve-view=true&view=sql-server-2014).
 
 > [!IMPORTANT]
 > Les **changements importants** introduits par une version donnée de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peuvent ne **pas** être protégés par le niveau de compatibilité. Il s’agit des changements de comportement entre les versions du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)]. Le comportement [!INCLUDE[tsql](../../includes/tsql-md.md)] est généralement protégé par le niveau de compatibilité. Toutefois, les objets système modifiés ou supprimés **ne sont pas** protégés par le niveau de compatibilité.
@@ -154,7 +154,7 @@ Pour plus d’informations, notamment sur le workflow recommandé pour la mise �
 > - Les noms de colonne modifiés dans les objets système. Dans [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], la colonne *single_pages_kb* de sys.dm_os_sys_info a été renommée *pages_kb*. Quel que soit le niveau de compatibilité, la requête `SELECT single_pages_kb FROM sys.dm_os_sys_info` génère l’erreur 207 (nom de colonne non valide).
 > - Les objets système supprimés. Dans [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], `sp_dboption` a été supprimé. Quel que soit le niveau de compatibilité, l’instruction `EXEC sp_dboption 'AdventureWorks2016', 'autoshrink', 'FALSE';` génère l’erreur 2812 (procédure stockée ’sp_dboption’ introuvable).
 >
-> Pour plus d’informations sur les changements cassants, consultez [Changements cassants dans les fonctionnalités du moteur de base de données de SQL Server 2019](../../database-engine/breaking-changes-to-database-engine-features-in-sql-server-version-15.md), [Changements cassants dans les fonctionnalités du moteur de base de données de SQL Server 2017](../../database-engine/breaking-changes-to-database-engine-features-in-sql-server-2017.md), [Changements cassants dans les fonctionnalités du moteur de base de données de SQL Server 2016](../../database-engine/breaking-changes-to-database-engine-features-in-sql-server-2016.md) et [Changements cassants dans les fonctionnalités du moteur de base de données de SQL Server 2014](https://docs.microsoft.com/previous-versions/sql/2014/database-engine/breaking-changes-to-database-engine-features-in-sql-server-2016?view=sql-server-2014&preserve-view=true).
+> Pour plus d’informations sur les changements cassants, consultez [Changements cassants dans les fonctionnalités du moteur de base de données de SQL Server 2019](../../database-engine/breaking-changes-to-database-engine-features-in-sql-server-version-15.md), [Changements cassants dans les fonctionnalités du moteur de base de données de SQL Server 2017](../../database-engine/breaking-changes-to-database-engine-features-in-sql-server-2017.md), [Changements cassants dans les fonctionnalités du moteur de base de données de SQL Server 2016](../../database-engine/breaking-changes-to-database-engine-features-in-sql-server-2016.md) et [Changements cassants dans les fonctionnalités du moteur de base de données de SQL Server 2014](/previous-versions/sql/2014/database-engine/breaking-changes-to-database-engine-features-in-sql-server-2016?preserve-view=true&view=sql-server-2014).
 
 ## <a name="differences-between-compatibility-levels"></a>Comparaison des différents niveaux de compatibilité
 Pour toutes les installations de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], le niveau de compatibilité par défaut est associé à la version du [!INCLUDE[ssDE](../../includes/ssde-md.md)], comme vous pouvez le voir dans [ce tableau](#supported-dbcompats). Pour chaque nouvelle tâche de développement, prévoyez toujours de certifier les applications avec le niveau de compatibilité de base de données le plus récent.

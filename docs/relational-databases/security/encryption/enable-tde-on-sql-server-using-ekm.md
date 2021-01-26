@@ -16,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: b892e7a7-95bd-4903-bf54-55ce08e225af
 author: jaszymas
 ms.author: jaszymas
-ms.openlocfilehash: 74c27195e3adbb39714a2df23ef041615262ffc2
-ms.sourcegitcommit: 4d370399f6f142e25075b3714e5c2ce056b1bfd0
+ms.openlocfilehash: e455b8b27537a3f7fedd7ca0c9cad356b9d49df4
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91867851"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98764893"
 ---
 # <a name="enable-tde-on-sql-server-using-ekm"></a>Activer le chiffrement transparent des données à l’aide de la gestion de clés extensible (EKM)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment activer Transparent Data Encryption (TDE) dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] pour protéger une clé de chiffrement de base de données à l’aide d’une clé asymétrique stockée dans un module de gestion de clés extensible (EKM) avec [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
+  Cette rubrique explique comment activer Transparent Data Encryption (TDE) dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] pour protéger une clé de chiffrement de base de données à l’aide d’une clé asymétrique stockée dans un module de gestion de clés extensible (EKM) avec [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
   
  Le chiffrement transparent des données chiffre le stockage d’une base de données entière à l’aide d’une clé symétrique appelée clé de chiffrement de base de données. La clé de chiffrement de base de données peut aussi être protégée à l’aide d’un certificat qui est lui-même protégé par la clé principale de base de données de la base de données MASTER. Pour plus d’informations sur la protection de la clé de chiffrement de base de données à l’aide de la clé principale de base de données, consultez [Transparent Data Encryption &#40;TDE&#41;](../../../relational-databases/security/encryption/transparent-data-encryption.md). Pour plus d’informations sur la configuration de TDE lorsque [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] est exécuté sur une machine virtuelle Azure, consultez [Gestion de clés extensible à l’aide d’Azure Key Vault &#40;SQL Server&#41;](../../../relational-databases/security/encryption/extensible-key-management-using-azure-key-vault-sql-server.md). Pour plus d’informations sur la configuration de TDE à l’aide d’une clé dans Azure Key Vault, consultez [Utiliser le connecteur SQL Server avec les fonctionnalités de chiffrement SQL](../../../relational-databases/security/encryption/use-sql-server-connector-with-sql-encryption-features.md). 
 

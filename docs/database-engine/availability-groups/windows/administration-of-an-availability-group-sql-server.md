@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 0b7542fa-235e-413d-81bf-3eff9ee07480
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 414b407cc2adccf20f2f9d7dc0e01bfb171899f7
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: bb048bf64f7fddea90eb4b1e5990b716c6685cb3
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643305"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765399"
 ---
 # <a name="administration-of-an-availability-group"></a>Administration d’un groupe de disponibilité
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
- La gestion d’un groupe de disponibilité Always On existant dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] implique une ou plusieurs des tâches suivantes :  
+ La gestion d’un groupe de disponibilité Always On existant dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] implique une ou plusieurs des tâches suivantes :  
   
 -   Modification des propriétés d'un réplica de disponibilité existant, par exemple pour modifier l'accès de connexion du client (pour configurer les réplicas secondaires lisibles), modification de son mode de basculement, mode de disponibilité ou paramètre de délai d'expiration de session.    
 -   Ajout ou suppression de réplicas secondaires.    

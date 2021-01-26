@@ -14,12 +14,12 @@ ms.assetid: 051af34e-bb5b-403e-bd33-007dc02eef7b
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 41b69dfc9cc5564025fd7b28d14094389ff52450
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: cc483082fe25fbed8a8e989544e189ccdc81bb73
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171691"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596244"
 ---
 # <a name="getting-started-with-database-engine-permissions"></a>Prise en main des autorisations du moteur de base de données
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -231,7 +231,7 @@ JOIN sys.database_principals AS dRole
 
 -   [Création d’une base de données &#40;Didacticiel&#41;](../../../t-sql/lesson-1-creating-database-objects.md)  
   
--   [Tutoriel : SQL Server Management Studio](../../../ssms/quickstarts/connect-query-sql-server.md)  
+-   [Tutoriel : SQL Server Management Studio](../../../ssms/quickstarts/ssms-connect-query-sql-server.md)  
   
 -   [Tutoriel : Écriture d’instructions Transact-SQL](../../../t-sql/tutorial-writing-transact-sql-statements.md)  
   
@@ -242,4 +242,3 @@ JOIN sys.database_principals AS dRole
  [Affichages catalogue de sécurité &#40;Transact-SQL&#41;](../../../relational-databases/system-catalog-views/security-catalog-views-transact-sql.md)   
  [sys.fn_builtin_permissions &#40;Transact-SQL&#41;](../../../relational-databases/system-functions/sys-fn-builtin-permissions-transact-sql.md)   
  [Détermination des autorisations de moteur de base de données effectives](../../../relational-databases/security/authentication-access/determining-effective-database-engine-permissions.md)
-  

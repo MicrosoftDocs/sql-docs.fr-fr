@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: cfbc6158-ab96-44b4-87eb-ea278c1b0c6b
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 466e0106b93196fd260d36c31f6f8d0a94e7bea9
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 87948f1d693d8668b8fe36831069c89e9e132cc7
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85785720"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98764914"
 ---
 # <a name="configure-the-remote-proc-trans-server-configuration-option"></a>Configurer l'option de configuration de serveur remote proc trans
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique explique comment configurer l'option de configuration de serveur **remote proc trans** dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L’option **remote proc trans** contribue à protéger les actions d’une procédure de serveur à serveur via une transaction MS DTC ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Distributed Transaction Coordinator).  
+  Cette rubrique explique comment configurer l'option de configuration de serveur **remote proc trans** dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L’option **remote proc trans** contribue à protéger les actions d’une procédure de serveur à serveur via une transaction MS DTC ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Distributed Transaction Coordinator).  
   
  Attribuez la valeur 1 à l’option **remote proc trans** pour obtenir une transaction distribuée coordonnée par MS DTC qui protège les propriétés ACID (Atomicité, Cohérence, Isolation et Durabilité) des transactions. Les sessions qui commencent après l'attribution de la valeur 1 à cette option héritent par défaut des options de configuration.  
   

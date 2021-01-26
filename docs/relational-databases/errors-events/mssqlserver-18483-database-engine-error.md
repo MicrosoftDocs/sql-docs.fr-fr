@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 40a75d8ad0bd6237b594f38bbb5cb83be8cca788
-ms.sourcegitcommit: d819173fb91af6f20ca6ee59686c35c71b060fbc
+ms.openlocfilehash: 9ec3453277430ba71b9764ad69861f157c153699
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "97797825"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596273"
 ---
 # <a name="mssqlserver_18483"></a>MSSQLSERVER_18483
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -104,7 +104,7 @@ Sur l’ordinateur où vous avez déployé [!INCLUDE[ssNoVersion](../../includes
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Renommer un ordinateur qui héberge une instance autonome de SQL Server](/sql/database-engine/install-windows/rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server)
-- [@@SERVERNAME (Transact-SQL)](/sql/t-sql/functions/servername-transact-sql)
-- [SERVERPROPERTY (Transact-SQL)](/sql/t-sql/functions/serverproperty-transact-sql)
-- [sp_addserver (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-addserver-transact-sql)
+- [Renommer un ordinateur qui héberge une instance autonome de SQL Server](../../database-engine/install-windows/rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server.md)
+- [@@SERVERNAME (Transact-SQL)](../../t-sql/functions/servername-transact-sql.md)
+- [SERVERPROPERTY (Transact-SQL)](../../t-sql/functions/serverproperty-transact-sql.md)
+- [sp_addserver (Transact-SQL)](../system-stored-procedures/sp-addserver-transact-sql.md)

@@ -16,16 +16,16 @@ ms.assetid: 2bc294f6-2312-4b6b-9478-2fb8a656e645
 author: cawrites
 ms.author: chadam
 manager: erikre
-ms.openlocfilehash: 6e6b362f9e121f10515753d46ee098387348f272
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c58d2479bfc1c7e33431c4da514154a9c06f2dd5
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091733"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98764789"
 ---
 # <a name="configure-a-listener-for-an-always-on-availability-group"></a>Configurer un écouteur Always On pour un groupe de disponibilité
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment créer ou configurer un *écouteur de groupe de disponibilité* unique pour un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou de PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+  Cette rubrique explique comment créer ou configurer un *écouteur de groupe de disponibilité* unique pour un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou de PowerShell dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)].  
   
 > [!IMPORTANT]  
 >  Pour créer le premier écouteur d’un groupe de disponibilité, nous vous recommandons vivement d’utiliser [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], [!INCLUDE[tsql](../../../includes/tsql-md.md)] ou [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] PowerShell. Évitez de créer un écouteur directement dans le cluster WSFC, sauf si cela s'avère nécessaire, par exemple, pour créer un écouteur supplémentaire.  

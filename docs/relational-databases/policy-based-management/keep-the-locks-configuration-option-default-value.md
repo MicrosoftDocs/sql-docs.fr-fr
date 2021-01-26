@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: f214f05b-5f0b-4786-b2ad-b8b4b6e58d72
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 657700eeaf04ec49aec410fc5d183a828e514963
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ab27552c473419efd942cdd1c37f7dca4b64c5b6
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88490616"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597292"
 ---
 # <a name="keep-the-locks-configuration-option-default-value"></a>Conserver la valeur par défaut de l'option de configuration locks
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -40,9 +40,8 @@ EXEC sp_configure 'locks', 0;
   
  [sys.dm_os_wait_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-os-wait-stats-transact-sql.md)  
   
- [Article 271509 de la Base de connaissances Microsoft](https://go.microsoft.com/fwlink/?linkid=117788)  
+ [Article 271509 de la Base de connaissances Microsoft](/troubleshoot/sql/performance/understand-resolve-blocking)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôler et appliquer les bonnes pratiques à l’aide de la gestion basée sur des stratégies](../../relational-databases/policy-based-management/monitor-and-enforce-best-practices-by-using-policy-based-management.md)  
-  
   

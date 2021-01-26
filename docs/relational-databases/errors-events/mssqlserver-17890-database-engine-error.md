@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 6a854486d1867e84bcd9b13cb148d3026a41d51f
-ms.sourcegitcommit: d819173fb91af6f20ca6ee59686c35c71b060fbc
+ms.openlocfilehash: c6611fcc392d37545f50e12fa8007923d8bc5846
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "97797763"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98596353"
 ---
 # <a name="mssqlserver_17890"></a>MSSQLSERVER_17890
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -154,7 +154,7 @@ Avant d’attribuer le droit utilisateur Verrouiller les pages en mémoire, assu
 
 - Avant de configurer l’option max server memory et l’option min server memory pour plusieurs instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], prenez en compte les besoins en mémoire du pool hors mémoire tampon pour chaque instance de SQL Server. Configurez ensuite ces options pour chaque instance de SQL Server.
 
-Dans l’idéal, vous collectez ces informations de référence pendant les pics de charge. Par conséquent, vous pouvez déterminer les besoins en mémoire pour divers composants et applications afin de pouvoir soutenir la charge maximale. Les besoins en mémoire varient d’un système à un autre, et selon les activités et applications qui s’exécutent sur le système. Vous pouvez interroger les informations fournies dans la vue de gestion dynamique sys.dm_os_process_memory pour savoir si le système rencontre des conditions de mémoire insuffisante. Pour plus d’informations, consultez [sys.dm_os_process_memory (Transact-SQL)](/sql/relational-databases/system-dynamic-management-views/sys-dm-os-process-memory-transact-sql).
+Dans l’idéal, vous collectez ces informations de référence pendant les pics de charge. Par conséquent, vous pouvez déterminer les besoins en mémoire pour divers composants et applications afin de pouvoir soutenir la charge maximale. Les besoins en mémoire varient d’un système à un autre, et selon les activités et applications qui s’exécutent sur le système. Vous pouvez interroger les informations fournies dans la vue de gestion dynamique sys.dm_os_process_memory pour savoir si le système rencontre des conditions de mémoire insuffisante. Pour plus d’informations, consultez [sys.dm_os_process_memory (Transact-SQL)](../system-dynamic-management-views/sys-dm-os-process-memory-transact-sql.md).
 
 ## <a name="improvements-added-in-windows-server-2008-and-r2-version"></a>Améliorations apportées à Windows Server 2008 et à la version R2
 

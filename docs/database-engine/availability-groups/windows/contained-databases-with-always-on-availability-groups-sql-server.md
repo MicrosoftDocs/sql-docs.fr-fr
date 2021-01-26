@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: cacce3ae-e940-4566-8298-6607c4268e74
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: dcb8edfa056674bd13ca4d3cfdf5bc912ea23588
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 45b8d52881813336420f92a96b5df4e149f0b579
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97639515"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765926"
 ---
 # <a name="use-contained-databases-with-always-on-availability-groups"></a>Utiliser des bases de données autonomes avec les groupes de disponibilité Always On 
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique contient des informations sur l'utilisation d'une base de données autonome avec [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+  Cette rubrique contient des informations sur l'utilisation d'une base de données autonome avec [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)].  
   
 ##  <a name="prerequisites"></a><a name="Prerequisites"></a> Conditions préalables  
   

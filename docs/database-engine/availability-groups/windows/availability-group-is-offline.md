@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 093c5208-bf7a-49f4-a546-72b48197cadf
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 56d79fedca8a5cdd0d91be2728430f5edbdab9ab
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: a0c27e56044476217de8be84181115336a6ff015
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641208"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766047"
 ---
 # <a name="always-on-availability-group-is-offline"></a>Le groupe de disponibilité Always On est hors connexion
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -36,10 +36,7 @@ ms.locfileid: "97641208"
 ## <a name="description"></a>Description  
  Cette stratégie vérifie l'état (en ligne ou hors connexion) du groupe de disponibilité. La stratégie se trouve dans un état non sain et une alerte est générée lorsque la ressource de cluster du groupe de disponibilité est hors connexion ou que le groupe de disponibilité n'a pas de réplica principal.  
   
- L'état de la stratégie est sain lorsque la ressource de cluster du groupe de disponibilité est en ligne et que le groupe de disponibilité a un réplica principal.  
-  
-> [!NOTE]  
->  Pour cette version de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)], les informations sur les causes et les solutions possibles sont situées sous [Le groupe de disponibilité est hors connexion](https://go.microsoft.com/fwlink/p/?LinkId=220850) sur le Wiki TechNet.  
+ L'état de la stratégie est sain lorsque la ressource de cluster du groupe de disponibilité est en ligne et que le groupe de disponibilité a un réplica principal.
   
 ## <a name="possible-causes"></a>Causes possibles  
  Ce problème peut être dû à un échec de l'instance de serveur qui héberge le réplica principal ou à la mise hors connexion de la ressource de groupe de disponibilité du cluster de basculement Windows Server (WSFC). Voici les causes possibles de mise hors connexion du groupe de disponibilité :  
