@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 2dc2c262-3cfa-4a84-8127-3632ba583543
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 5936e83d902926ad1cab22c7046693aab47cd97e
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: b8460daf65826290942f28fe65af6e5fa9f9b416
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547468"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765770"
 ---
 # <a name="sp_server_info-transact-sql"></a>sp_server_info (Transact-SQL)
 
@@ -54,12 +54,12 @@ sp_server_info [[@attribute_id = ] 'attribute_id']
 |**ATTRIBUTE_NAME**|**varchar (** 60 **)**|Nom de l'attribut.|  
 |**ATTRIBUTE_VALUE**|**varchar (** 255 **)**|Valeur actuelle de l'attribut.|  
   
- Le tableau suivant décrit ces attributs. [!INCLUDE[msCoName](../../includes/msconame-md.md)] Les bibliothèques clientes ODBC utilisent actuellement les attributs **1**, **2**, **18**, **22**et **500** au moment de la connexion.  
+ Le tableau suivant décrit ces attributs. [!INCLUDE[msCoName](../../includes/msconame-md.md)] Les bibliothèques clientes ODBC utilisent actuellement les attributs **1**, **2**, **18**, **22** et **500** au moment de la connexion.  
   
 |ATTRIBUTE_ID|Description de ATTRIBUTE_NAME|ATTRIBUTE_VALUE|  
 |-------------------|---------------------------------|----------------------|  
 |**1**|DBMS_NAME|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|  
-|**2**|DBMS_VER|[!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] - *x. xx. xxxx*|  
+|**2**|DBMS_VER|Microsoft [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] *xxxx*  -  *x. xx. xxxx*<br/><br> Par exemple : `Microsoft SQL Server 2017 - 14.0.3257.3`|  
 |**10**|OWNER_TERM|propriétaire|  
 |**11**|TABLE_TERM|table|  
 |**12**|MAX_OWNER_NAME_LENGTH|128|  

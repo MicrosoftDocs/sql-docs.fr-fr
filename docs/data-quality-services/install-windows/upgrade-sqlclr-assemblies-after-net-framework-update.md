@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.assetid: b1a008cc-7e6b-4655-a869-bd429f986400
 author: swinarko
 ms.author: sawinark
-ms.openlocfilehash: f466f699872af9b37447d766c951e5c843af2bd9
-ms.sourcegitcommit: 2e6c4104dca8680064eb64a7a79a3e15e1b4365f
+ms.openlocfilehash: 4b835c60da2d2848b33dd453605290a1fb056180
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85942838"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765487"
 ---
 # <a name="upgrade-sqlclr-assemblies-after-net-framework-update"></a>Mettre à niveau des assemblys SQLCLR après la mise à jour du .NET Framework
 
 [!INCLUDE [SQL Server - Windows only ](../../includes/applies-to-version/sql-windows-only.md)]
 
-  [!INCLUDE[ssDQSnoversion](../../includes/ssdqsnoversion-md.md)] (DQS) est un ensemble de routines Common Language Runtime SQL (SQLCR) qui font référence à des assemblys Microsoft .NET Framework 4. Lorsque vous installez sur votre ordinateur toutes les mises à jour.NET framework qui affectent un tel assembly. NET Framework référencé, cela entraîne une modification dans l'ID de version du module (MVID) de l'assembly dans Global Assembly Cache (GAC). Cela provoque une discordance entre les MVID de l'assembly référencé dans le GAC et de l'assembly dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+  [!INCLUDE[ssDQSnoversion](../../includes/ssdqsnoversion-md.md)] (DQS) est un ensemble de routines Common Language Runtime SQL (SQLCR) qui font référence à des assemblys Microsoft .NET Framework 4. Lorsque vous installez sur votre ordinateur toutes les mises à jour.NET framework qui affectent un tel assembly. NET Framework référencé, cela entraîne une modification dans l'ID de version du module (MVID) de l'assembly dans Global Assembly Cache (GAC). Cela provoque une discordance entre les MVID de l'assembly référencé dans le GAC et de l'assembly dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
   
  Si la mise à jour .NET Framework nécessite de redémarrer le [!INCLUDE[ssDQSServer](../../includes/ssdqsserver-md.md)] , les assemblys SQLCLR affectés sont mis à niveau automatiquement pour résoudre le problème d'incompatibilité de MVID au redémarrage du [!INCLUDE[ssDQSServer](../../includes/ssdqsserver-md.md)] . Toutefois, pour les mises à jour .NET Framework qui ne nécessitent pas de redémarrage de votre [!INCLUDE[ssDQSServer](../../includes/ssdqsserver-md.md)] , une erreur se produit en raison d'une incohérence dans les MVID des assemblys lorsque vous essayez de vous connecter à un [!INCLUDE[ssDQSServer](../../includes/ssdqsserver-md.md)] à l'aide d'un [!INCLUDE[ssDQSClient](../../includes/ssdqsclient-md.md)]:  
   
@@ -30,7 +30,7 @@ ms.locfileid: "85942838"
 A new version of .NET was installed on this machine. In order to continue to work with DQS please run dqsinstaller.exe -upgradedlls.  
 ```  
   
- Pour résoudre ce problème, les assemblys SQLCLR affectés dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] doivent être mis à niveau. Pour ce faire, vous pouvez exécuter le fichier DQSInstaller.exe avec le paramètre de ligne de commande **upgradedlls** pour ignorer la recréation des bases de données DQS et mettre à niveau uniquement les assemblys concernés. Cela garantit que vos bases de connaissances, projets de qualité des données et toutes autres données dans DQS sont conservés.  
+ Pour résoudre ce problème, les assemblys SQLCLR affectés dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] doivent être mis à niveau. Pour ce faire, vous pouvez exécuter le fichier DQSInstaller.exe avec le paramètre de ligne de commande **upgradedlls** pour ignorer la recréation des bases de données DQS et mettre à niveau uniquement les assemblys concernés. Cela garantit que vos bases de connaissances, projets de qualité des données et toutes autres données dans DQS sont conservés.  
   
 ## <a name="prerequisites"></a>Prérequis  
   

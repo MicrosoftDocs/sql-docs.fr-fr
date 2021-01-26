@@ -13,12 +13,12 @@ dev_langs:
 ms.assetid: 45010ff2-219f-4086-9ea4-016a6c17cddd
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 4976e0ae436fe1c9c59742b6580ae083b3e3c5c4
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: da0df555ee8eed32bc42faf035c29d0dc867dfb3
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094934"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765715"
 ---
 # <a name="sysfn_db_backup_file_snapshots-transact-sql"></a>sys.fn_db_backup_file_snapshots (Transact-SQL)
 [!INCLUDE [sqlserver2016](../../includes/applies-to-version/sqlserver2016.md)]
