@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 1b0a6421-fbd4-4bb4-87ca-657f4782c433
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: abab816f9248d1981d62bfeb313130a8b71c4256
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 6f29575ba7d133ddbfb30ef470238b5991162a7d
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641755"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783342"
 ---
 # <a name="use-the-new-availability-group-dialog-box-sql-server-management-studio"></a>Utiliser la boîte de dialogue Nouveau groupe de disponibilité (SQL Server Management Studio)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique contient des informations sur l’utilisation de la boîte de dialogue **Nouveau groupe de disponibilité** de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] pour créer un groupe de disponibilité Always On sur les instances [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] activées pour [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)]. Un *groupe de disponibilité* définit un jeu de bases de données utilisateur qui basculent en tant qu'unité unique et un jeu de partenaires de basculement, appelés *réplicas de disponibilité*, qui prennent en charge le basculement.  
+  Cette rubrique contient des informations sur l’utilisation de la boîte de dialogue **Nouveau groupe de disponibilité** de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] pour créer un groupe de disponibilité Always On sur les instances [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] activées pour [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)]. Un *groupe de disponibilité* définit un jeu de bases de données utilisateur qui basculent en tant qu'unité unique et un jeu de partenaires de basculement, appelés *réplicas de disponibilité*, qui prennent en charge le basculement.  
   
 > [!NOTE]  
 >  Pour obtenir une présentation des groupes de disponibilité, consultez [Vue d’ensemble des groupes de disponibilité Always On &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server.md).  

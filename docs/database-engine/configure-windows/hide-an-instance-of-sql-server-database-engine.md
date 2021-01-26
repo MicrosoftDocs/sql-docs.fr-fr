@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: 392de21a-57fa-4a69-8237-ced8ca86ed1d
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 39999b1b705c2e32dc421af4a6a7ffc9686b2ea7
-ms.sourcegitcommit: 827ad02375793090fa8fee63cc372d130f11393f
+ms.openlocfilehash: f3f275d1f2c5ce4142bb357a1c1b314b694ef589
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89480711"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783022"
 ---
 # <a name="hide-an-instance-of-sql-server-database-engine"></a>Masquer une instance du moteur de base de données SQL Server
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment masquer une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide du Gestionnaire de configuration SQL Server. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise le service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser pour énumérer les instances du [!INCLUDE[ssDE](../../includes/ssde-md.md)] installées sur l'ordinateur. Cela permet aux applications clientes de rechercher un serveur et aide les clients à effectuer la distinction entre plusieurs instances du [!INCLUDE[ssDE](../../includes/ssde-md.md)] sur le même ordinateur. Vous pouvez utiliser la procédure suivante pour empêcher le service SQL Server Browser d'exposer une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] aux ordinateurs clients dont les utilisateurs tentent de localiser l'instance à l'aide du bouton **Parcourir** .  
+  Cette rubrique explique comment masquer une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide du Gestionnaire de configuration SQL Server. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise le service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser pour énumérer les instances du [!INCLUDE[ssDE](../../includes/ssde-md.md)] installées sur l'ordinateur. Cela permet aux applications clientes de rechercher un serveur et aide les clients à effectuer la distinction entre plusieurs instances du [!INCLUDE[ssDE](../../includes/ssde-md.md)] sur le même ordinateur. Vous pouvez utiliser la procédure suivante pour empêcher le service SQL Server Browser d'exposer une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] aux ordinateurs clients dont les utilisateurs tentent de localiser l'instance à l'aide du bouton **Parcourir** .  
   
 ##  <a name="using-sql-server-configuration-manager"></a><a name="SSMSProcedure"></a> Utilisation du Gestionnaire de configuration SQL Server  
   

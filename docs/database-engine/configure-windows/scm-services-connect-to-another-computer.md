@@ -13,18 +13,18 @@ helpviewer_keywords:
 ms.assetid: c4c1e94f-4f5f-431e-8b5b-d5ff97baf723
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: e4a2ca1eea0ec4b42bba65b62525bb6d86e52c88
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: b178e38f6e59499ddf74e9a8aaec037bbaa4d442
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85651345"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783432"
 ---
 # <a name="scm-services---connect-to-another-computer"></a>Services SCM - Se connecter à un autre ordinateur
 
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-Cet article explique comment se connecter à un autre ordinateur dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Suivez la première procédure pour ouvrir la Console de gestion [!INCLUDE[msCoName](../../includes/msconame-md.md)] (mmc) de Gestion de l'ordinateur Windows, connectez-vous à l'ordinateur et développez l'arborescence Services et Applications. Suivez la deuxième procédure pour créer un fichier avec un lien vers le Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur un ordinateur distant.
+Cet article explique comment se connecter à un autre ordinateur dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. Suivez la première procédure pour ouvrir la Console de gestion [!INCLUDE[msCoName](../../includes/msconame-md.md)] (mmc) de Gestion de l'ordinateur Windows, connectez-vous à l'ordinateur et développez l'arborescence Services et Applications. Suivez la deuxième procédure pour créer un fichier avec un lien vers le Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur un ordinateur distant.
 
 > [!NOTE]
 > Certaines actions ne peuvent pas être effectuées par le Gestionnaire de configuration lors de la connexion à distance.

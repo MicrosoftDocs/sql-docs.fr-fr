@@ -14,24 +14,24 @@ ms.assetid: edeb5c75-fb13-467e-873a-ab3aad88ab72
 author: cawrites
 ms.author: chadam
 manager: erikre
-ms.openlocfilehash: 306a200cadc535ea9da3d5d21dcd74fb15cf278c
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: cf6d3f8e77591e9791fe2e8dc57175f1393716ff
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641514"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783260"
 ---
 # <a name="reporting-services-with-always-on-availability-groups-sql-server"></a>Reporting Services avec les groupes de disponibilité Always On (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique contient des informations sur la configuration de [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] en vue d'une utilisation avec [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] (groupes de disponibilité) dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]. Les trois possibilités d'utilisation de [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] et de [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] sont les bases de données pour les sources de données de rapport, les bases de données de serveur de rapports et la conception de rapports. Les fonctionnalités prises en charge et la configuration requise diffèrent dans les trois cas.  
+  Cette rubrique contient des informations sur la configuration de [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] en vue d'une utilisation avec [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] (groupes de disponibilité) dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)]. Les trois possibilités d'utilisation de [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] et de [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] sont les bases de données pour les sources de données de rapport, les bases de données de serveur de rapports et la conception de rapports. Les fonctionnalités prises en charge et la configuration requise diffèrent dans les trois cas.  
   
  L'un des principaux avantages d'utiliser [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] avec des sources de données [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] réside dans l'exploitation de réplicas secondaires accessibles en lecture en tant que source de données de rapports tandis que, dans le même temps, les réplicas secondaires permettent le basculement vers une base de données principale.  
   
  Pour obtenir des informations générales sur [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)], consultez le [Forum aux questions sur Always On pour SQL Server 2012 (../../../sql-server/index.yml)](../../../sql-server/index.yml).  
 
 ##  <a name="requirements-for-using-reporting-services-and-always-on-availability-groups"></a><a name="bkmk_requirements"></a> Conditions préalables requises pour l’utilisation de Reporting Services et des groupes de disponibilité Always On  
- [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] et Power BI Report Server utilisent le composant .Net Framework 4.0 et prennent en charge les propriétés de chaîne de connexion [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] pour les utiliser avec des sources de données.  
+ [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] et Power BI Report Server utilisent le composant .Net Framework 4.0 et prennent en charge les propriétés de chaîne de connexion [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] pour les utiliser avec des sources de données.  
   
  Pour utiliser [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] avec  [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] 2014 et les versions antérieures, vous devez télécharger et installer un correctif logiciel pour .Net 3.5 SP1. Ce correctif ajoute une prise en charge au client SQL concernant les fonctionnalités de groupes de disponibilité et la prise en charge des propriétés de chaîne de connexion **ApplicationIntent** et **MultiSubnetFailover**. Si ce correctif n'est pas installé sur chaque ordinateur qui héberge un serveur de rapports, les utilisateurs qui essaient d'afficher un aperçu des rapports recevront un message d'erreur similaire à celui ci-dessous et ce message sera enregistré dans le fichier journal de traces du serveur de rapports :  
   

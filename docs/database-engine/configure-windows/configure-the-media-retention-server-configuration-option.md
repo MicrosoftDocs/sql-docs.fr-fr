@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 12e9fe6a-20a5-4c6e-9cc9-d500c003b70a
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: c7e699d9af02a8d24e01d1e7461aa9ee22c956bb
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 5f2d67ee55cf43b607aeb91d23fd42980b3438a1
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85696960"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783658"
 ---
 # <a name="configure-the-media-retention-server-configuration-option"></a>Configurer l'option de configuration de serveur media retention
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique explique comment configurer l'option de configuration de serveur **media retention** dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L'option **media retention** spécifie la durée de rétention de chaque jeu de sauvegarde. Cette option permet d'éviter l'écrasement des sauvegardes pendant le nombre de jours spécifié. Après avoir configuré l'option **media retention**, il est inutile de spécifier la durée de rétention des sauvegardes système à chaque sauvegarde. La valeur par défaut est de 0 jour et la valeur maximum de 365 jours.  
+  Cette rubrique explique comment configurer l'option de configuration de serveur **media retention** dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L'option **media retention** spécifie la durée de rétention de chaque jeu de sauvegarde. Cette option permet d'éviter l'écrasement des sauvegardes pendant le nombre de jours spécifié. Après avoir configuré l'option **media retention**, il est inutile de spécifier la durée de rétention des sauvegardes système à chaque sauvegarde. La valeur par défaut est de 0 jour et la valeur maximum de 365 jours.  
   
  **Dans cette rubrique**  
   

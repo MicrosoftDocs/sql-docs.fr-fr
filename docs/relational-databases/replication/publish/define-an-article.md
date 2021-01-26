@@ -19,16 +19,16 @@ helpviewer_keywords:
 ms.assetid: 220584d8-b291-43ae-b036-fbba3cc07a2e
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 7703c4ebe7c05dd266866170bf499f3d370ee6c9
-ms.sourcegitcommit: 4d370399f6f142e25075b3714e5c2ce056b1bfd0
+ms.openlocfilehash: b93fbfea46931eb460b842a3a34ae13853726792
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91867125"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766363"
 ---
 # <a name="define-an-article"></a>Définir un article
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment définir un article dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)], ou des objets RMO (Replication Management Objects).  
+  Cette rubrique explique comment définir un article dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)], ou des objets RMO (Replication Management Objects).  
   
  **Dans cette rubrique**  
   
@@ -133,7 +133,7 @@ ms.locfileid: "91867125"
   
  [!code-sql[HowTo#sp_AddTranArticle](../../../relational-databases/replication/codesnippet/tsql/define-an-article_1.sql)]  
   
- Cet exemple définit des articles pour une publication de fusion, où l'article `SalesOrderHeader` est filtré statiquement sur **SalesPersonID**et où l'article `SalesOrderDetail` est filtré avec un filtre de jointure sur `SalesOrderHeader`.  
+ Cet exemple définit des articles pour une publication de fusion, où l'article `SalesOrderHeader` est filtré statiquement sur **SalesPersonID** et où l'article `SalesOrderDetail` est filtré avec un filtre de jointure sur `SalesOrderHeader`.  
   
  [!code-sql[HowTo#sp_AddMergeArticle](../../../relational-databases/replication/codesnippet/tsql/define-an-article_2.sql)]  
   

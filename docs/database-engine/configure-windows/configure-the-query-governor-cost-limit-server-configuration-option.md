@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: e7b8f084-1052-4133-959b-cebf4add790f
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 02b34ab8d3c0a3efd79d7d136bf26401ba92fdf4
-ms.sourcegitcommit: bf8cf755896a8c964774a438f2bd461a2a648c22
+ms.openlocfilehash: 7004a0a7b7322fc939b5df21d40c389dc4a3dc6a
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88216732"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783654"
 ---
 # <a name="configure-the-query-governor-cost-limit-server-configuration-option"></a>Configurer l'option de configuration de serveur query governor cost limit
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-Cette rubrique explique comment configurer l'option de configuration de serveur **query governor cost limit** dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L’option de limite de coût spécifie la limite supérieure du coût estimé autorisé pour l’exécution d’une requête donnée. Le coût de la requête est une valeur abstraite déterminée par l’optimiseur de requête en fonction des exigences d’exécution estimées, par exemple le temps processeur, la mémoire et le débit d’E/S des disques. Elle correspond à la durée estimée, en secondes, nécessaire à l'exécution complète d'une requête dans une configuration matérielle donnée. Cette valeur abstraite n'équivaut pas au temps nécessaire pour effectuer une requête sur l'instance en cours. Elle doit être traitée comme une mesure relative. La valeur par défaut de cette option est 0, laquelle désactive l'Administrateur de requêtes. La définition de cette valeur sur 0 permet l'exécution de toutes les requêtes sans limitation de temps. Si vous spécifiez une valeur positive et différente de zéro, l'Administrateur de requêtes n'autorise pas l'exécution de requêtes dont le coût estimé excède cette valeur.   
+Cette rubrique explique comment configurer l'option de configuration de serveur **query governor cost limit** dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L’option de limite de coût spécifie la limite supérieure du coût estimé autorisé pour l’exécution d’une requête donnée. Le coût de la requête est une valeur abstraite déterminée par l’optimiseur de requête en fonction des exigences d’exécution estimées, par exemple le temps processeur, la mémoire et le débit d’E/S des disques. Elle correspond à la durée estimée, en secondes, nécessaire à l'exécution complète d'une requête dans une configuration matérielle donnée. Cette valeur abstraite n'équivaut pas au temps nécessaire pour effectuer une requête sur l'instance en cours. Elle doit être traitée comme une mesure relative. La valeur par défaut de cette option est 0, laquelle désactive l'Administrateur de requêtes. La définition de cette valeur sur 0 permet l'exécution de toutes les requêtes sans limitation de temps. Si vous spécifiez une valeur positive et différente de zéro, l'Administrateur de requêtes n'autorise pas l'exécution de requêtes dont le coût estimé excède cette valeur.   
   
  **Dans cette rubrique**  
   

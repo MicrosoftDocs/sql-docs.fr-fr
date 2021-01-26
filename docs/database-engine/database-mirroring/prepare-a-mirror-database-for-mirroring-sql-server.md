@@ -15,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 8676f9d8-c451-419b-b934-786997d46c2b
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 1fa476693286b32cb2910526bb0ea7431faa5120
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 1996d9610067e7db52c538b20df0680fbc741548
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642151"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766384"
 ---
 # <a name="prepare-a-mirror-database-for-mirroring-sql-server"></a>Préparer une base de données miroir pour la mise en miroir (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
   Avant qu'une session de mise en miroir de bases de données puisse commencer, le propriétaire de la base de données ou l'administrateur système doit s'assurer que la base de données miroir a été créée et qu'elle est prête pour la mise en miroir. La création d'une nouvelle base de données miroir requiert au minimum la réalisation d'une sauvegarde complète de la base de données principale puis d'une sauvegarde du journal, ainsi que la restauration de ces deux sauvegardes sur l'instance du serveur miroir, en utilisant WITH NORECOVERY.  
   
- Cette rubrique explique comment préparer une base de données miroir dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
+ Cette rubrique explique comment préparer une base de données miroir dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   
 -   **Avant de commencer :**  
   
@@ -52,7 +52,7 @@ ms.locfileid: "97642151"
   
 -   Les instances du serveur miroir et du serveur principal doivent exécuter la même version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Bien qu'il soit possible que le serveur miroir possède une version ultérieure de SQL Server, cette configuration est recommandée uniquement lors d'une mise à niveau planifiée avec soin. Dans une telle configuration, vous courez le risque d'un basculement automatique, dans lequel le déplacement des données est automatiquement interrompu, car les données n'ont pas accès à une version antérieure de SQL Server. Pour plus d’informations, consultez [Mise à niveau des instances en miroir](../../database-engine/database-mirroring/upgrading-mirrored-instances.md).  
   
--   Les instances du serveur miroir et du serveur principal doivent exécuter la même édition de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour plus d’informations sur la prise en charge de la mise en miroir de bases de données dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], consultez [Éditions et fonctionnalités prises en charge de SQL Server 2017](~/sql-server/editions-and-components-of-sql-server-2017.md).  
+-   Les instances du serveur miroir et du serveur principal doivent exécuter la même édition de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour plus d’informations sur la prise en charge de la mise en miroir de bases de données dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], consultez [Éditions et fonctionnalités prises en charge de SQL Server 2017](~/sql-server/editions-and-components-of-sql-server-2017.md).  
   
 -   La base de données doit utiliser le mode de récupération complète.  
   

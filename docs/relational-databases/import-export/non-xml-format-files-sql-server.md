@@ -16,16 +16,16 @@ ms.assetid: f566db3e-0a3b-4a61-9c84-49f8d42f5760
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 0af2901e62c6b447cff52197792b1d91b2e92b19
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0deb74fc48407c27048a1818d7ecabc7eddf2c2e
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97407937"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766377"
 ---
 # <a name="non-xml-format-files-sql-server"></a>Fichiers de format non-XML (SQL Server)
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
-  Dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], deux types de fichiers de format sont pris en charge pour l’exportation et l’importation en bloc : les *fichiers de format non XML* et les *fichiers de format XML*.  
+  Dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], deux types de fichiers de format sont pris en charge pour l’exportation et l’importation en bloc : les *fichiers de format non XML* et les *fichiers de format XML*.  
   
  **Dans cette rubrique :**  
   

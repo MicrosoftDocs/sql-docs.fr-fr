@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 23029395-3e93-4c29-b7d6-e5a47a3526ff
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: bf58edccfbf4c0b663caadf29ffc364d9fd8bcb1
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: ae3f7070ade723af31ed191d76dd274c4137a115
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85680642"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783566"
 ---
 # <a name="view-or-configure-the-backup-compression-default-server-configuration-option"></a>Afficher ou configurer l'option de configuration de serveur backup compression default
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique explique comment afficher ou configurer l’option de configuration de serveur **backup compression default** dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L’option **valeur par défaut de compression de la sauvegarde** détermine si l’instance de serveur crée des sauvegardes compressées par défaut. Lorsque [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est installé, l’option **valeur par défaut de compression de la sauvegarde** est désactivée.  
+  Cette rubrique explique comment afficher ou configurer l’option de configuration de serveur **backup compression default** dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L’option **valeur par défaut de compression de la sauvegarde** détermine si l’instance de serveur crée des sauvegardes compressées par défaut. Lorsque [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est installé, l’option **valeur par défaut de compression de la sauvegarde** est désactivée.  
   
  **Dans cette rubrique**  
   

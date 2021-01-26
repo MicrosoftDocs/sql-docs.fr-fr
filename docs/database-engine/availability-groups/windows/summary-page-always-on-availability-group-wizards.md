@@ -15,19 +15,19 @@ f1_keywords:
 ms.assetid: b98e2511-297f-49fd-b0e8-74652a91bc0c
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 7d7b758b1d1ee8fba24a6f4e23568f8fdc6f060c
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 48a70988539ee9a35cd8dbd933ee7c6f6f752609
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642939"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783736"
 ---
 # <a name="summary-page-always-on-availability-group-wizards"></a>Page Résumé (Assistants Groupe de disponibilité AlwaysOn)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
 
 <a name="Top"></a>  
   
-  Cette rubrique d'aide décrit les options de la page **Résumé** . Cette rubrique s'applique à l' [!INCLUDE[ssAoNewAgWiz](../../../includes/ssaonewagwiz-md.md)], à l' [!INCLUDE[ssAoAddRepWiz](../../../includes/ssaoaddrepwiz-md.md)], à l' [!INCLUDE[ssAoAddDbWiz](../../../includes/ssaoadddbwiz-md.md)] et à l' [!INCLUDE[ssAoFoAgWiz](../../../includes/ssaofoagwiz-md.md)] de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]. Utilisez la grille de cette page pour passer vos choix en revue pour le nouveau groupe de disponibilité. Pour effectuer une ou plusieurs modifications, cliquez sur **Précédent** pour revenir à la page ou aux pages appropriées. Lorsque vous êtes prêt, cliquez sur **Suivant** pour revenir à la page **Résumé** . Lorsque vous êtes satisfait de vos choix, cliquez sur **Terminer**.  
+  Cette rubrique d'aide décrit les options de la page **Résumé** . Cette rubrique s'applique à l' [!INCLUDE[ssAoNewAgWiz](../../../includes/ssaonewagwiz-md.md)], à l' [!INCLUDE[ssAoAddRepWiz](../../../includes/ssaoaddrepwiz-md.md)], à l' [!INCLUDE[ssAoAddDbWiz](../../../includes/ssaoadddbwiz-md.md)] et à l' [!INCLUDE[ssAoFoAgWiz](../../../includes/ssaofoagwiz-md.md)] de [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)]. Utilisez la grille de cette page pour passer vos choix en revue pour le nouveau groupe de disponibilité. Pour effectuer une ou plusieurs modifications, cliquez sur **Précédent** pour revenir à la page ou aux pages appropriées. Lorsque vous êtes prêt, cliquez sur **Suivant** pour revenir à la page **Résumé** . Lorsque vous êtes satisfait de vos choix, cliquez sur **Terminer**.  
   
 ##  <a name="summary-page-options"></a><a name="PageOptions"></a> Options de la page Résumé  
  **Script**  

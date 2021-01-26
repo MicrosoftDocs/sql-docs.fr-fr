@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: cfed8f86-6bcf-4b90-88eb-9656e22d5dc5
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: fe7a4f5bc7fb043533656041d5f10d5be1880273
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 71dcf7e52b1c58c7df868f502bc8de5da9892c6b
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85659767"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783428"
 ---
 # <a name="configure-the-user-options-server-configuration-option"></a>Configurer l'option de configuration de serveur user options
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique explique comment configurer l'option de configuration de serveur **user options** dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L'option **user options** spécifie des valeurs par défaut globales pour tous les utilisateurs. Une liste d'options de traitement des requêtes par défaut est générée pour la durée d'une session de travail d'un utilisateur. L’option **user options** permet de modifier les valeurs par défaut des options SET (si les paramètres par défaut du serveur ne sont pas appropriés).  
+  Cette rubrique explique comment configurer l'option de configuration de serveur **user options** dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L'option **user options** spécifie des valeurs par défaut globales pour tous les utilisateurs. Une liste d'options de traitement des requêtes par défaut est générée pour la durée d'une session de travail d'un utilisateur. L’option **user options** permet de modifier les valeurs par défaut des options SET (si les paramètres par défaut du serveur ne sont pas appropriés).  
   
- L'utilisateur peut remplacer ces valeurs par défaut à l'aide de l'instruction SET. Pour les nouvelles connexions, vous pouvez configurer dynamiquement l'option **user options** . Une fois la valeur de l'option **user options**modifiée, les nouvelles sessions de connexion utilisent le nouveau paramètre (les sessions de connexion en cours ne sont pas concernées par cette modification).  
+ L'utilisateur peut remplacer ces valeurs par défaut à l'aide de l'instruction SET. Pour les nouvelles connexions, vous pouvez configurer dynamiquement l'option **user options** . Une fois la valeur de l'option **user options** modifiée, les nouvelles sessions de connexion utilisent le nouveau paramètre (les sessions de connexion en cours ne sont pas concernées par cette modification).  
   
  **Dans cette rubrique**  
   

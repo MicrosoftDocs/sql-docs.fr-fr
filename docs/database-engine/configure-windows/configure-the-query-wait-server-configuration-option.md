@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: 0fc4aa01-65a3-4a33-9ef4-caca41add238
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: cdf9a2f14547eeda95b49a3f7705823e62f8b538
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 15844802836883d80c4bf50d0df58e7ddbe633d0
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85785854"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783156"
 ---
 # <a name="configure-the-query-wait-server-configuration-option"></a>Configurer l'option de configuration de serveur query wait
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique explique comment configurer l'option de configuration de serveur **query wait** dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Les requêtes utilisant beaucoup de mémoire (par exemple les requêtes incluant des opérations de tri et de hachage) sont mises en attente si la quantité de mémoire est insuffisante pour leur exécution. L’option **query wait** spécifie le délai (exprimé en secondes, de 0 à 2147483647) pendant lequel une requête peut attendre des ressources avant d’expirer. La valeur par défaut de cette option est -1. Cela signifie que le délai d'attente est calculé comme étant 25 fois le coût estimé de la requête.  
+  Cette rubrique explique comment configurer l'option de configuration de serveur **query wait** dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Les requêtes utilisant beaucoup de mémoire (par exemple les requêtes incluant des opérations de tri et de hachage) sont mises en attente si la quantité de mémoire est insuffisante pour leur exécution. L’option **query wait** spécifie le délai (exprimé en secondes, de 0 à 2147483647) pendant lequel une requête peut attendre des ressources avant d’expirer. La valeur par défaut de cette option est -1. Cela signifie que le délai d'attente est calculé comme étant 25 fois le coût estimé de la requête.  
   
 > [!IMPORTANT]  
 >  Une transaction contenant la requête en attente peut contenir des verrous en attendant une quantité supplémentaire de mémoire. Dans de rares situations, il est possible qu'un blocage indétectable se produise. En réduisant la durée d’attente de la requête, vous réduisez également la probabilité de déclenchement de ces verrous. À la fin de celle-ci, une requête en attente est arrêtée et les verrous de la transaction sont libérés. Cependant, l'augmentation de la durée d'attente maximale risque d'augmenter la durée nécessaire pour l'achèvement de la requête. Il est déconseillé de modifier cette option.  

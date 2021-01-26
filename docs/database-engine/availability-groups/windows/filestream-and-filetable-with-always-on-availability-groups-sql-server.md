@@ -15,18 +15,18 @@ ms.assetid: fdceda9a-a9db-4d1d-8745-345992164a98
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 566c50867511e9e9d02996247c3efecf634b93aa
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 42a36a01313636c072a8ba4b104f6f366fb13e86
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644120"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766437"
 ---
 # <a name="use-filestream-and-filetable-with-always-on-availability-groups"></a>Utiliser FILESTREAM et FileTable avec les groupes de disponibilité Always On
 
 [!INCLUDE[sql windows only](../../../includes/applies-to-version/sql-windows-only.md)]
 
-  Cette rubrique contient des informations sur l'utilisation des fonctionnalités FILESTREAM et FileTable avec [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+  Cette rubrique contient des informations sur l'utilisation des fonctionnalités FILESTREAM et FileTable avec [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)].  
   
  L'intégralité des fonctionnalités FILESTREAM est prise en charge. Après un basculement, les données FILESTREAM sont accessibles à la fois sur les réplicas secondaires avec accès en lecture et sur le nouveau réplica principal.  
   

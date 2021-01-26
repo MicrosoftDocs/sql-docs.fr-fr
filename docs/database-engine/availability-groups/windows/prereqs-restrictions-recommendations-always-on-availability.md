@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: edbab896-42bb-4d17-8d75-e92ca11f7abb
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ec3a84dc54dcaf373f8fd817c259602c7901410d
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: e1a2fe365ff2cf40e1dd7e08e113a586e7c2b666
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642521"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783516"
 ---
 # <a name="prerequisites-restrictions-and-recommendations-for-always-on-availability-groups"></a>Prérequis, restrictions et recommandations pour les groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "97642521"
 >  Avant de déployer [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)], nous vous recommandons de lire les sections de cette rubrique.  
     
 ##  <a name="net-hotfixes-that-support-availability-groups"></a><a name="DotNetHotfixes"></a> Correctifs logiciels .NET prenant en charge les groupes de disponibilité  
- Selon les composants et les fonctionnalités [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] que vous allez utiliser avec [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)], vous pourrez éventuellement avoir besoin d'installer des correctifs logiciels .NET supplémentaires identifiés dans le tableau suivant. Ces derniers peuvent être installés dans n'importe quel ordre.  
+ Selon les composants et les fonctionnalités [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] que vous allez utiliser avec [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)], vous pourrez éventuellement avoir besoin d'installer des correctifs logiciels .NET supplémentaires identifiés dans le tableau suivant. Ces derniers peuvent être installés dans n'importe quel ordre.  
   
 |Fonctionnalité dépendante|Correctif logiciel|Lien|  
 |-----------------------|------------|----------|  

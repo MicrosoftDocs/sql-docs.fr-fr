@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 765f1e83-dd52-44fb-b0c8-1078f213607b
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 2d2793ad9a8b92efd65cba0be745fc3ad77f715e
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: c8889fd32fc0d494260bf73e790cdb3a428201d4
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85785884"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783622"
 ---
 # <a name="configure-the-priority-boost-server-configuration-option"></a>Configurer l'option de configuration de serveur priority boost
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique explique comment configurer l'option de configuration **priority boost** dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Utilisez l’option **priority boost** pour spécifier si [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] doit être exécuté avec un degré plus élevé de priorité de planification [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows 2008 ou Windows 2008 R2 que pour d’autres processus exécutés sur le même ordinateur. Si la valeur de cette option est égale à 1, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] bénéficie d'une base de priorité de 13 dans le planificateur de Windows 2008 ou Windows Server 2008 R2. La valeur par défaut est 0, ce qui représente une base de priorité de 7.  
+  Cette rubrique explique comment configurer l'option de configuration **priority boost** dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Utilisez l’option **priority boost** pour spécifier si [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] doit être exécuté avec un degré plus élevé de priorité de planification [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows 2008 ou Windows 2008 R2 que pour d’autres processus exécutés sur le même ordinateur. Si la valeur de cette option est égale à 1, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] bénéficie d'une base de priorité de 13 dans le planificateur de Windows 2008 ou Windows Server 2008 R2. La valeur par défaut est 0, ce qui représente une base de priorité de 7.  
   
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)]  

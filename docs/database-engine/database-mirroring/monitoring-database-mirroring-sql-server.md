@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a7b1b9b0-7c19-4acc-9de3-3a7c5e70694d
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 9b77b54ba48dc2c3820d055227411f61983b1a7c
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: ece89606626172d50ba656a6545237af2ec761fe
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644283"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783403"
 ---
 # <a name="monitoring-database-mirroring-sql-server"></a>Surveillance de la mise en miroir de bases de données (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -250,7 +250,7 @@ ms.locfileid: "97644283"
     -   Haute sécurité avec basculement automatique (synchrone)  
   
 ##  <a name="additional-sources-of-information-about-a-mirrored-database"></a><a name="AdditionalSources"></a> Sources d'informations supplémentaires concernant une base de données mise en miroir  
- En plus d'utiliser le moniteur de mise en miroir de bases de données et les procédures stockées dbmmonitor pour surveiller une base de données mise en miroir et pour configurer des alertes sur des variables de performances analysées, [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] met à disposition des affichages catalogue, des compteurs de performance et des notifications d'événements de mise en miroir de bases de données.  
+ En plus d'utiliser le moniteur de mise en miroir de bases de données et les procédures stockées dbmmonitor pour surveiller une base de données mise en miroir et pour configurer des alertes sur des variables de performances analysées, [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] met à disposition des affichages catalogue, des compteurs de performance et des notifications d'événements de mise en miroir de bases de données.  
   
  **Dans cette section :**  
   

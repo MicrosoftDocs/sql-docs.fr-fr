@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: aca0d016-3228-40b8-bdc3-285ed6d9b280
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: b3b77706425eae89bd74b4803859e4a5c029ad17
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: ab176c19f0d6a6434dd4184c15dda7b64ff9e4df
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641699"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783027"
 ---
 # <a name="view-availability-group-listener-properties-sql-server"></a>Afficher les propriétés d’un écouteur de groupe de disponibilité (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment afficher les propriétés d’un *écouteur de groupe de disponibilité* Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../../includes/tsql-md.md)] dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+  Cette rubrique explique comment afficher les propriétés d’un *écouteur de groupe de disponibilité* Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../../includes/tsql-md.md)] dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)].  
   
 ##  <a name="using-sql-server-management-studio"></a><a name="SSMSProcedure"></a> Utilisation de SQL Server Management Studio  
  **Pour afficher les propriétés d'un écouteur, procédez comme suit :**  

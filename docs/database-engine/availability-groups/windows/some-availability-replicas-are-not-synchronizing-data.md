@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 3db6a569-e942-4321-a0dd-c4ab002087c8
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: d1b824e4b88ff5d8b0e31abcfcb6dca0acae815a
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: ea07cb123c2e5ef077644a86a9e195422a07ac22
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642090"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783133"
 ---
 # <a name="some-availability-replicas-are-not-synchronizing-data"></a>Certains réplicas de disponibilité ne synchronisent pas de données
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -37,10 +37,7 @@ ms.locfileid: "97642090"
  Cette stratégie détermine l'état de synchronisation des données de tous les réplicas de disponibilité du groupe de disponibilité et vérifie si la synchronisation d'un réplica de disponibilité n'est pas opérationnelle. La stratégie se trouve dans un état non sain si l'un des états de synchronisation des données du réplica de disponibilité est NOT SYNCHRONIZING.  
   
  Cette stratégie se trouve dans un état sain si aucun des états de synchronisation des données du réplica de disponibilité n'est NOT SYNCHRONIZING.  
-  
-> [!NOTE]  
->  Pour cette version de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)], les informations sur les causes et les solutions possibles sont situées sous [Certains réplicas de disponibilité ne synchronisent pas de données](https://go.microsoft.com/fwlink/p/?LinkId=220852) sur TechNet Wiki.  
-  
+ 
 ## <a name="possible-causes"></a>Causes possibles  
  Dans ce groupe de disponibilité, au moins un réplica secondaire affiche l'état de synchronisation NOT SYNCHRONIZING et n'accepte pas les données du réplica principal.  
   

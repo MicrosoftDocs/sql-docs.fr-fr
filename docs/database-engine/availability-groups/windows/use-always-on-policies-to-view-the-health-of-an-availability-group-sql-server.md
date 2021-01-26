@@ -12,17 +12,17 @@ helpviewer_keywords:
 ms.assetid: 6f1bcbc3-1220-4071-8e53-4b957f5d3089
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 3054b4136a0a8758e99b530e8cb5a2fbeed29619
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: c1459c830f3879e10b97c88b2ff9ce64ff7901c7
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641848"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783577"
 ---
 # <a name="use-always-on-policies-to-view-the-health-of-an-availability-group-sql-server"></a>Utiliser les stratégies Always On pour afficher l’intégrité d’un groupe de disponibilité (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique explique comment déterminer l’état opérationnel d’un groupe de disponibilité Always On à l’aide d’une stratégie Always On dans [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]. Pour plus d’informations sur la gestion basée sur les stratégies Always On, consultez [Stratégies Always On pour les problèmes opérationnels avec des groupes de disponibilité Always On &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/always-on-policies-for-operational-issues-always-on-availability.md).  
+  Cette rubrique explique comment déterminer l’état opérationnel d’un groupe de disponibilité Always On à l’aide d’une stratégie Always On dans [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou PowerShell dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)]. Pour plus d’informations sur la gestion basée sur les stratégies Always On, consultez [Stratégies Always On pour les problèmes opérationnels avec des groupes de disponibilité Always On &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/always-on-policies-for-operational-issues-always-on-availability.md).  
   
 > [!IMPORTANT]  
 >  Pour les stratégies Always On, les noms de catégorie sont utilisés comme identificateurs. Modifier le nom d’une catégorie Always On compromettrait sa fonctionnalité d’évaluation de l’intégrité. Par conséquent, les noms de catégorie Always On ne doivent jamais être modifiés.  

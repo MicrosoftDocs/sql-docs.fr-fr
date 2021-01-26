@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 222288fe-ffc0-4567-b624-5d91485d70f0
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: fadd4b3978466775a44ace25a12bb9cfac08a8e7
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 9b029efb566fef24aed4748b51bfc15050d495c0
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642575"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783497"
 ---
 # <a name="perform-a-forced-manual-failover-of-an-always-on-availability-group-sql-server"></a>Effectuer un basculement manuel forcé d’un groupe de disponibilité Always On (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment effectuer un basculement forcé (avec perte de données potentielle) sur un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou de PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]. Un basculement forcé est une forme du basculement manuel qui est destiné exclusivement à la récupération d'urgence, lorsqu'un [basculement manuel planifié](../../../database-engine/availability-groups/windows/perform-a-planned-manual-failover-of-an-availability-group-sql-server.md) n'est pas possible. Si vous forcez le basculement vers un réplica secondaire qui n'est pas synchronisé, une perte de données est possible. Par conséquent, nous vous recommandons fortement de forcer le basculement uniquement si vous devez restaurer immédiatement un service dans le groupe de disponibilité et si vous êtes prêt à prendre le risque de perdre des données.  
+  Cette rubrique explique comment effectuer un basculement forcé (avec perte de données potentielle) sur un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou de PowerShell dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)]. Un basculement forcé est une forme du basculement manuel qui est destiné exclusivement à la récupération d'urgence, lorsqu'un [basculement manuel planifié](../../../database-engine/availability-groups/windows/perform-a-planned-manual-failover-of-an-availability-group-sql-server.md) n'est pas possible. Si vous forcez le basculement vers un réplica secondaire qui n'est pas synchronisé, une perte de données est possible. Par conséquent, nous vous recommandons fortement de forcer le basculement uniquement si vous devez restaurer immédiatement un service dans le groupe de disponibilité et si vous êtes prêt à prendre le risque de perdre des données.  
   
  Après un basculement forcé, la cible de basculement vers laquelle le groupe de disponibilité a basculé devient le nouveau réplica principal. Les bases de données secondaires dans les réplicas secondaires restants sont suspendues et vous devez les reprendre manuellement. Lorsque l'ancien réplica principal devient disponible, il adopte le rôle secondaire, et les anciennes bases de données primaires deviennent les bases de données secondaires et passent à l'état SUSPENDED. Avant de reprendre une base de données secondaire donnée, vous pouvez récupérer les données perdues de celle-ci. Toutefois, notez que la troncation du journal des transactions est retardée sur une base de données primaire donnée, lorsque l'une de ses bases de données secondaires est interrompue.  
   

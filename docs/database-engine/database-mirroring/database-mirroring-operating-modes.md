@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: f8a579c2-55d7-4278-8088-f1da1de5b2e6
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 9e69236003f1c0ee2b13620b481dfddbaf9acd5a
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 1efefbb0b0a99f03d4ffa46e7d02fec05e8a8e60
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644117"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783556"
 ---
 # <a name="database-mirroring-operating-modes"></a>Modes de fonctionnement de la mise en miroir de bases de données
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "97644117"
  Cette section décrit le fonctionnement asynchrone de la mise en miroir de bases de données, lorsqu'il convient d'utiliser le mode hautes performances, et explique comment réagir en cas de défaillance du serveur principal.  
   
 > [!NOTE]  
->  La plupart des éditions de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] prennent uniquement en charge la mise en miroir de bases de données synchrone (« niveau complet sécurité uniquement »). Pour plus d’informations sur les éditions qui prennent en charge la mise en miroir de bases de données, consultez « Haute disponibilité (Always On) » dans [Éditions et fonctionnalités prises en charge de SQL Server 2016](../../sql-server/editions-and-components-of-sql-server-2016.md).
+>  La plupart des éditions de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] prennent uniquement en charge la mise en miroir de bases de données synchrone (« niveau complet sécurité uniquement »). Pour plus d’informations sur les éditions qui prennent en charge la mise en miroir de bases de données, consultez « Haute disponibilité (Always On) » dans [Éditions et fonctionnalités prises en charge de SQL Server 2016](../../sql-server/editions-and-components-of-sql-server-2016.md).
   
  Si la sécurité des transactions est désactivée (OFF), la session de mise en miroir de bases de données fonctionne de manière asynchrone. Le fonctionnement asynchrone ne prend en charge qu’un seul mode d’opération : le mode hautes performances. Ce mode améliore les performances au détriment de la haute disponibilité. Le mode hautes performances utilise uniquement le serveur principal et le serveur miroir. Les problèmes survenant sur le serveur miroir n'ont jamais d'impact sur le serveur principal. En cas de perte du serveur principal, la base de données miroir est marquée comme DISCONNECTED, mais est disponible en état de secours semi-automatique.  
   

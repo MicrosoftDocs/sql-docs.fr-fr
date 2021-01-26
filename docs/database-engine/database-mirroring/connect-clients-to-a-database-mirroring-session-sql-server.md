@@ -16,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: 0d5d2742-2614-43de-9ab9-864addb6299b
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 680273a6bab1283be56d130c84b4c156d8fcd280
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: c34c9359534b3ec59aba824dccb649a9168fe725
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644330"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783601"
 ---
 # <a name="connect-clients-to-a-database-mirroring-session-sql-server"></a>Connecter des clients à une session de mise en miroir de bases de données (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Pour établir une connexion avec une session de mise en miroir de bases de données, un client peut soit utiliser [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Native Client, soit le fournisseur de données .NET Framework pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. S'ils sont configurés pour une base de données [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] , ces deux fournisseurs d'accès aux données prennent pleinement en charge la mise en miroir de bases de données. Pour plus d'informations sur les éléments de programmation à prendre en compte pour l'utilisation d'une base de données mise en miroir, consultez [Using Database Mirroring](../../relational-databases/native-client/features/using-database-mirroring.md). Qui plus est, l'instance de serveur principal actuelle doit être disponible et la connexion du client doit avoir été créée dans l'instance de serveur. Pour plus d’informations, consultez [Dépanner des utilisateurs orphelins &#40;SQL Server&#41;](../../sql-server/failover-clusters/troubleshoot-orphaned-users-sql-server.md). Les connexions clientes à une session de mise en miroir de base de données n'exigent pas l'intervention de l'instance de serveur témoin (le cas échéant).  
+  Pour établir une connexion avec une session de mise en miroir de bases de données, un client peut soit utiliser [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Native Client, soit le fournisseur de données .NET Framework pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. S'ils sont configurés pour une base de données [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] , ces deux fournisseurs d'accès aux données prennent pleinement en charge la mise en miroir de bases de données. Pour plus d'informations sur les éléments de programmation à prendre en compte pour l'utilisation d'une base de données mise en miroir, consultez [Using Database Mirroring](../../relational-databases/native-client/features/using-database-mirroring.md). Qui plus est, l'instance de serveur principal actuelle doit être disponible et la connexion du client doit avoir été créée dans l'instance de serveur. Pour plus d’informations, consultez [Dépanner des utilisateurs orphelins &#40;SQL Server&#41;](../../sql-server/failover-clusters/troubleshoot-orphaned-users-sql-server.md). Les connexions clientes à une session de mise en miroir de base de données n'exigent pas l'intervention de l'instance de serveur témoin (le cas échéant).  
   
   
 ##  <a name="making-the-initial-connection-to-a-database-mirroring-session"></a><a name="InitialConnection"></a> Établissement de la connexion initiale à une session de mise en miroir de bases de données  

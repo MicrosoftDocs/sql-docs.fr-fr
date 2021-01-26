@@ -19,16 +19,16 @@ helpviewer_keywords:
 ms.assetid: 8e955033-06ef-403f-b813-3d8241b62f1f
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: dc92b34d57f2406c1b5aa59cce67840af4c21918
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 28c73233d8a7b38ec2d14fa92c40f69d9ae0af05
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85697761"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783278"
 ---
 # <a name="configure-the-database-engine-to-listen-on-multiple-tcp-ports"></a>Configurer le moteur de base de données de manière à écouter sur plusieurs ports TCP
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment configurer le [!INCLUDE[ssDE](../../includes/ssde-md.md)] pour écouter sur plusieurs ports TCP dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide du Gestionnaire de configuration SQL Server. Lorsque TCP/IP est activé pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], le [!INCLUDE[ssDE](../../includes/ssde-md.md)] écoute les connexions entrantes sur un point de connexion composé d'une adresse IP et d'un numéro de port TCP. Les procédures suivantes créent un point de terminaison TDS (Tabular Data Stream, flux de données tabulaires), afin que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] écoute sur un port TCP supplémentaire.  
+  Cette rubrique explique comment configurer le [!INCLUDE[ssDE](../../includes/ssde-md.md)] pour écouter sur plusieurs ports TCP dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide du Gestionnaire de configuration SQL Server. Lorsque TCP/IP est activé pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], le [!INCLUDE[ssDE](../../includes/ssde-md.md)] écoute les connexions entrantes sur un point de connexion composé d'une adresse IP et d'un numéro de port TCP. Les procédures suivantes créent un point de terminaison TDS (Tabular Data Stream, flux de données tabulaires), afin que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] écoute sur un port TCP supplémentaire.  
   
  Les raisons pouvant conduire à créer un second point de terminaison TDS sont les suivantes :  
   
@@ -87,7 +87,7 @@ ms.locfileid: "85697761"
 5.  Dans la zone **Port TCP** , tapez les ports sur lesquels le [!INCLUDE[ssDE](../../includes/ssde-md.md)] doit écouter, en les séparant par des virgules. Dans notre exemple, si le port par défaut 1433 est répertorié, tapez **,1500** afin que la zone affiche **1433,1500**, puis cliquez sur **OK**.  
   
     > [!NOTE]  
-    >  Si vous n'activez pas le port sur toutes les adresses IP, configurez le port supplémentaire dans la zone des propriétés pour uniquement l'adresse de votre choix. Ensuite, dans le volet de la console, cliquez avec le bouton droit sur **TCP/IP**, cliquez sur **Propriétés**puis, dans la zone **Écouter tout** , sélectionnez **Non**.  
+    >  Si vous n'activez pas le port sur toutes les adresses IP, configurez le port supplémentaire dans la zone des propriétés pour uniquement l'adresse de votre choix. Ensuite, dans le volet de la console, cliquez avec le bouton droit sur **TCP/IP**, cliquez sur **Propriétés** puis, dans la zone **Écouter tout** , sélectionnez **Non**.  
   
 6.  Dans le volet gauche, cliquez sur **Services SQL Server**.  
   

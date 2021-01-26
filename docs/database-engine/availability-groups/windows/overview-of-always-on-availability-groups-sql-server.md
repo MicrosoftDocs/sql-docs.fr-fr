@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 04fd9d95-4624-420f-a3be-1794309b3a47
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 8fdc782ce65464c490305291b426fe82a972cd5c
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: b30a3004ccf0d5bafa94ae9c601db287a5eef288
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643508"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783316"
 ---
 # <a name="what-is-an-always-on-availability-group"></a>Qu’est-ce qu’un groupe de disponibilité Always On ?
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
 
- Cette rubrique présente les concepts [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] essentiels pour configurer et gérer un ou plusieurs groupes de disponibilité dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]. Pour obtenir un résumé des avantages offerts par les groupes de disponibilité et une vue d’ensemble de la terminologie [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)], consultez [Groupes de disponibilité Always On &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/always-on-availability-groups-sql-server.md).  
+ Cette rubrique présente les concepts [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] essentiels pour configurer et gérer un ou plusieurs groupes de disponibilité dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)]. Pour obtenir un résumé des avantages offerts par les groupes de disponibilité et une vue d’ensemble de la terminologie [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)], consultez [Groupes de disponibilité Always On &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/always-on-availability-groups-sql-server.md).  
   
  Un *groupe de disponibilité* prend en charge un environnement répliqué pour un ensemble discret de bases de données utilisateur, appelées *bases de données de disponibilité*. Vous pouvez créer un groupe de disponibilité pour avoir un haut niveau de disponibilité ou pour une échelle lecture. Un groupe de disponibilité avec un haut niveau de disponibilité est un groupe de bases de données qui basculent en même temps. Un groupe de disponibilité avec échelle lecture est un groupe de bases de données copiées dans d’autres instances de SQL Server pour une charge de travail en lecture seule. Un groupe de disponibilité prend en charge un ensemble de bases de données principales et de un à huit ensembles de bases de données secondaires correspondantes. Les bases de données secondaires ne sont *pas* des sauvegardes. Continuez à sauvegarder vos bases de données et leurs journaux des transactions de manière régulière.  
   

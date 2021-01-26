@@ -17,16 +17,16 @@ helpviewer_keywords:
 ms.assetid: e1f1dccc-9e65-471d-8fd1-b45085c9484a
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 59b0e82558e14e29e4fad69ddc86b76d982a634a
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 44571469d7b684437dbcbd836080e2cc9a80ef56
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171101"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783048"
 ---
 # <a name="use-the-availability-group-wizard-sql-server-management-studio"></a>Utiliser l'Assistant Groupe de disponibilité (SQL Server Management Studio)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment utiliser l’**Assistant Nouveau groupe de disponibilité** dans [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] pour créer et configurer un groupe de disponibilité Always On dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]. Un *groupe de disponibilité* définit un jeu de bases de données utilisateur qui basculent en tant qu'unité unique et un jeu de partenaires de basculement, appelés *réplicas de disponibilité*, qui prennent en charge le basculement.  
+  Cette rubrique explique comment utiliser l’**Assistant Nouveau groupe de disponibilité** dans [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] pour créer et configurer un groupe de disponibilité Always On dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)]. Un *groupe de disponibilité* définit un jeu de bases de données utilisateur qui basculent en tant qu'unité unique et un jeu de partenaires de basculement, appelés *réplicas de disponibilité*, qui prennent en charge le basculement.  
   
 > [!NOTE]  
 >  Pour obtenir une présentation des groupes de disponibilité, consultez [Vue d’ensemble des groupes de disponibilité Always On &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server.md).  

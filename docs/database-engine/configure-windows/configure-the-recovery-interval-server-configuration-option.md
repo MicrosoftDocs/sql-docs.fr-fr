@@ -20,17 +20,17 @@ helpviewer_keywords:
 ms.assetid: e4734b3b-8fbe-4b65-9c48-91b5a3dd18e1
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: a9e1311433aab88efd6e1efbbe4a260c62075a99
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: ac6d7f368a42e8a6c81fadbf151760b5bdfc8b53
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85785818"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783146"
 ---
 # <a name="configure-the-recovery-interval-server-configuration-option"></a>Configurer l'option de configuration de serveur recovery interval
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique explique comment configurer l'option de configuration de serveur **recovery interval** dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L'option **recovery interval** définit une limite supérieure de durée de récupération pour une base de données. Le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] utilise la valeur spécifiée pour cette option afin de déterminer approximativement la fréquence des [points de contrôle automatiques](../../relational-databases/logs/database-checkpoints-sql-server.md) sur une base de données spécifiée.  
+  Cette rubrique explique comment configurer l'option de configuration de serveur **recovery interval** dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L'option **recovery interval** définit une limite supérieure de durée de récupération pour une base de données. Le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] utilise la valeur spécifiée pour cette option afin de déterminer approximativement la fréquence des [points de contrôle automatiques](../../relational-databases/logs/database-checkpoints-sql-server.md) sur une base de données spécifiée.  
   
  La valeur par défaut pour l'intervalle de récupération est 0, ce qui permet au [!INCLUDE[ssDE](../../includes/ssde-md.md)] de configurer automatiquement l'intervalle de récupération. En général, avec l'intervalle de récupération par défaut, les points de contrôle automatique sont générés environ une fois par minute pour les bases de données actives et la durée de récupération est inférieure à une minute. Des valeurs supérieures indiquent la durée de récupération maximale approximative, en minutes. Par exemple, si vous affectez à l'intervalle de récupération la valeur « 3 », cela indique que la durée de récupération maximale est d'environ trois minutes.  
   

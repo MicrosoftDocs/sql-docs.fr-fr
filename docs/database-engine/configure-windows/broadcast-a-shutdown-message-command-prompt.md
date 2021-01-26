@@ -19,16 +19,16 @@ helpviewer_keywords:
 ms.assetid: 9f20ccd5-d952-431d-ba12-339911af9430
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 85d2bac016287afd060cdf727eeea47a6b78d725
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 44a2ecf5405ceda7e85b0f7b0831759dc2313b63
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85759209"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783373"
 ---
 # <a name="broadcast-a-shutdown-message-command-prompt"></a>Diffuser un message d'arrêt (invite de commandes)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique décrit comment diffuser un message d’arrêt dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l’aide de la commande **net send** . Dans ce message, incluez l'heure d'arrêt de l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour permettre aux utilisateurs de terminer leurs tâches.  
+  Cette rubrique décrit comment diffuser un message d’arrêt dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l’aide de la commande **net send** . Dans ce message, incluez l'heure d'arrêt de l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour permettre aux utilisateurs de terminer leurs tâches.  
   
 ##  <a name="SSMSProcedure"></a>  
   

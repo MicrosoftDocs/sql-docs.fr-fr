@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: b0cf0f86-7652-4574-a9fb-908e10d03973
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 98c7ad618b3691912b183d19a9a62dea1548071e
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: a30c2cb2955ef82380bde00714098afec153ed95
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85697132"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783686"
 ---
 # <a name="configure-the-locks-server-configuration-option"></a>Configurer l'option de configuration de serveur locks
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique explique comment configurer l'option de configuration de serveur **locks** dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L'option **locks** définit le nombre maximum de verrous disponibles, limitant ainsi la quantité de mémoire utilisée pour eux par le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] . La valeur par défaut est 0 ; elle permet au [!INCLUDE[ssDE](../../includes/ssde-md.md)] d'allouer et de libérer des structures de verrous de manière dynamique en fonction des modifications de la configuration requise.  
+  Cette rubrique explique comment configurer l'option de configuration de serveur **locks** dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L'option **locks** définit le nombre maximum de verrous disponibles, limitant ainsi la quantité de mémoire utilisée pour eux par le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] . La valeur par défaut est 0 ; elle permet au [!INCLUDE[ssDE](../../includes/ssde-md.md)] d'allouer et de libérer des structures de verrous de manière dynamique en fonction des modifications de la configuration requise.  
   
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)]  

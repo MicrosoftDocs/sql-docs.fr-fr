@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 29d7372b-d406-4a5b-80c6-a2d231d25211
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 9b236dc0cb810a6ba8d63ef7c68367eab2252b8b
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 5c5330bad05b0949c4df32f5593aa3fe39e2ad50
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85758256"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783639"
 ---
 # <a name="configure-the-nested-triggers-server-configuration-option"></a>Configurer l'option de configuration de serveur nested triggers
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique explique comment configurer l'option de configuration de serveur **nested triggers** dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L'option **Déclencheurs imbriqués** contrôle si un déclencheur AFTER peut s'exécuter en cascade, autrement dit, effectuer une action qui active un autre déclencheur, qui active un autre déclencheur, et ainsi de suite. Lorsque l'option **nested triggers** a la valeur 0, les déclencheurs AFTER ne peuvent pas s'exécuter en cascade. Quand l’option **nested triggers** a la valeur 1 (valeur par défaut), les déclencheurs AFTER peuvent s’exécuter en cascade sur un maximum de 32 niveaux. Les déclencheurs INSTEAD OF peuvent être imbriqués quel que soit le paramétrage de cette option.  
+  Cette rubrique explique comment configurer l'option de configuration de serveur **nested triggers** dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L'option **Déclencheurs imbriqués** contrôle si un déclencheur AFTER peut s'exécuter en cascade, autrement dit, effectuer une action qui active un autre déclencheur, qui active un autre déclencheur, et ainsi de suite. Lorsque l'option **nested triggers** a la valeur 0, les déclencheurs AFTER ne peuvent pas s'exécuter en cascade. Quand l’option **nested triggers** a la valeur 1 (valeur par défaut), les déclencheurs AFTER peuvent s’exécuter en cascade sur un maximum de 32 niveaux. Les déclencheurs INSTEAD OF peuvent être imbriqués quel que soit le paramétrage de cette option.  
   
  **Dans cette rubrique**  
   

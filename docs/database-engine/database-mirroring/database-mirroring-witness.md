@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 05606de8-90c3-451a-938d-1ed34211dad7
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: b2fe841ef1b914f275878fa61ad40fe2a016a4a5
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: d3585a187d11ee97e409d196c81ddb00643bb3ac
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644065"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98782966"
 ---
 # <a name="database-mirroring-witness"></a>Témoin de mise en miroir de base de données
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "97644065"
   
  ![Instance de serveur témoin pour 2 bases de données](../../database-engine/database-mirroring/media/dbm-witness-in-2-sessions.gif "Instance de serveur témoin pour 2 bases de données")  
   
- Une même instance de serveur peut également fonctionner simultanément en tant que témoin au sein de certaines sessions et en tant que partenaire au sein d'autres sessions. En pratique, cependant, une instance de serveur fonctionne typiquement soit en tant que témoin, soit en tant que partenaire. La raison en est que les serveurs partenaires nécessitent des ordinateurs sophistiqués disposant d'un niveau de matériel suffisant pour prendre en charge une base de données de production, alors que le serveur témoin peut s'exécuter sur tout système Windows disponible prenant en charge [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+ Une même instance de serveur peut également fonctionner simultanément en tant que témoin au sein de certaines sessions et en tant que partenaire au sein d'autres sessions. En pratique, cependant, une instance de serveur fonctionne typiquement soit en tant que témoin, soit en tant que partenaire. La raison en est que les serveurs partenaires nécessitent des ordinateurs sophistiqués disposant d'un niveau de matériel suffisant pour prendre en charge une base de données de production, alors que le serveur témoin peut s'exécuter sur tout système Windows disponible prenant en charge [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
   
 ##  <a name="software-and-hardware-recommendations"></a><a name="SwHwRecommendations"></a> Recommandations logicielles et matérielles  
  Nous vous recommandons vivement de placer le témoin sur un ordinateur distinct de celui des partenaires. Les serveurs partenaires de mise en miroir de bases de données sont pris en charge uniquement par l'édition [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Standard et l'édition [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Enterprise. Les témoins, en revanche, sont également pris en charge dans l'édition [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Workgroup et l'édition [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Express. À l'exception d'une mise à niveau depuis une version antérieure de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], les instances de serveur dans une session de mise en miroir doivent toutes exécuter la même version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Par exemple, un témoin [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] est pris en charge lorsque vous effectuez une mise à niveau depuis une configuration de mise en miroir [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] , mais ne peut pas être ajouté à une configuration de mise en miroir [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] ou ultérieure.  

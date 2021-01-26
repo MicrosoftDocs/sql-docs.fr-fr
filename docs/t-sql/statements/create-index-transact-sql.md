@@ -55,12 +55,12 @@ ms.assetid: d2297805-412b-47b5-aeeb-53388349a5b9
 author: pmasl
 ms.author: pelopes
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: c472b3996683512fb6ac7cd3f001d53ca1fd73ae
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 3f1322f21ed7ad3f09f30a0f5a5e71e5614a8d47
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170681"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766236"
 ---
 # <a name="create-index-transact-sql"></a>CREATE INDEX (Transact-SQL)
 
@@ -642,7 +642,7 @@ Lorsque vous partitionnez un index cluster non unique, le [!INCLUDE[ssDE](../../
 
 Vous pouvez créer des vues indexées sur des tables partitionnées, en appliquant la même procédure que celle utilisée pour les index sur des tables. Pour plus d’informations sur les index cluster, consultez [Tables et index partitionnés](../../relational-databases/partitions/partitioned-tables-and-indexes.md) et le [Guide de conception et d’architecture d’Index SQL Server](../../relational-databases/sql-server-index-design-guide.md).
 
-Dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], les statistiques ne sont pas créées en analysant toutes les lignes de la table quand un index partitionné est créé ou reconstruit. Au lieu de cela, l'optimiseur de requête utilise l'algorithme d'échantillonnage par défaut pour générer des statistiques. Pour obtenir des statistiques sur les index partitionnés en analysant toutes les lignes de la table, utilisez `CREATE STATISTICS` ou `UPDATE STATISTICS` avec la clause `FULLSCAN`.
+Dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], les statistiques ne sont pas créées en analysant toutes les lignes de la table quand un index partitionné est créé ou reconstruit. Au lieu de cela, l'optimiseur de requête utilise l'algorithme d'échantillonnage par défaut pour générer des statistiques. Pour obtenir des statistiques sur les index partitionnés en analysant toutes les lignes de la table, utilisez `CREATE STATISTICS` ou `UPDATE STATISTICS` avec la clause `FULLSCAN`.
 
 ## <a name="filtered-indexes"></a>Index filtrés
 Un index filtré est un index non cluster optimisé, approprié pour les requêtes qui sélectionnent un faible pourcentage de lignes d'une table. Il utilise un prédicat de filtre pour indexer une partie des données de la table. Un index filtré bien conçu peut améliorer les performances des requêtes, réduire les coûts de stockage et réduire les coûts de maintenance.

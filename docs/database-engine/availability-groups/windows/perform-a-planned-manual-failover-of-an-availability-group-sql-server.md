@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 419f655d-3f9a-4e7d-90b9-f0bab47b3178
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 3cf135ca98a61382e12973b93eb30ab06ad6f4dd
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 663861d552b619b199e6279353f5bbdcf6658f24
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642565"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783364"
 ---
 # <a name="perform-a-planned-manual-failover-of-an-always-on-availability-group-sql-server"></a>Effectuer un basculement manuel planifié d’un groupe de disponibilité Always On (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-Cette rubrique explique comment effectuer un basculement manuel sans perte de données ( *basculement manuel planifié*) sur un groupe de disponibilité AlwaysOn à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou de PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]. Un groupe de disponibilité bascule au niveau d'un réplica de disponibilité. Un basculement manuel planifié, comme un basculement de groupe de disponibilité AlwaysOn, transfère le rôle principal à un réplica secondaire. En même temps, le basculement transfère l’ancien réplica principal sur le rôle secondaire.  
+Cette rubrique explique comment effectuer un basculement manuel sans perte de données ( *basculement manuel planifié*) sur un groupe de disponibilité AlwaysOn à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou de PowerShell dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)]. Un groupe de disponibilité bascule au niveau d'un réplica de disponibilité. Un basculement manuel planifié, comme un basculement de groupe de disponibilité AlwaysOn, transfère le rôle principal à un réplica secondaire. En même temps, le basculement transfère l’ancien réplica principal sur le rôle secondaire.  
   
 Un basculement manuel planifié est pris en charge seulement quand le réplica principal et le réplica secondaire cible s’exécutent en mode de validation synchrone et sont synchronisés. Il conserve toutes les données dans les bases de données secondaires qui sont jointes au groupe de disponibilité sur le réplica secondaire cible. Une fois que le réplica principal précédent transfère le rôle secondaire, ses bases de données deviennent des bases de données secondaires. Puis, elles commencent à se synchroniser avec les nouvelles bases de données primaires. Une fois que toutes ont passé à l'état SYNCHRONIZED, le nouveau réplica secondaire devient éligible pour servir de cible d'un futur basculement manuel planifié.  
   
@@ -94,7 +94,7 @@ Un basculement manuel planifié est pris en charge seulement quand le réplica p
 2. Utilisez l’applet de commande **Switch-SqlAvailabilityGroup** . 
   
     > [!NOTE] 
-    >  Pour voir la syntaxe d’une applet de commande, utilisez l’applet de commande **Get-Help** dans l’environnement [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] PowerShell. Pour plus d’informations, consultez [Obtenir de l’aide pour SQL Server PowerShell](../../../powershell/sql-server-powershell.md). 
+    >  Pour voir la syntaxe d’une applet de commande, utilisez l’applet de commande **Get-Help** dans l’environnement [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] PowerShell. Pour plus d’informations, consultez [Obtenir de l’aide pour SQL Server PowerShell](../../../powershell/sql-server-powershell.md). 
   
      L’exemple suivant montre un basculement manuel du groupe de disponibilité *MyAg* vers le réplica secondaire dont le chemin est spécifié : 
   

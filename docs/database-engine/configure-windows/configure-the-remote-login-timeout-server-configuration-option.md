@@ -13,17 +13,17 @@ helpviewer_keywords:
 ms.assetid: 077adebe-0e3f-42a5-a75e-5e6d04847e2b
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: ad4989bc64fa9460a97a0e4363deddb74605e9e1
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: ffc46323f8f3fb783b4a06836f66c535e145a04e
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85785688"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783116"
 ---
 # <a name="configure-the-remote-login-timeout-server-configuration-option"></a>Configurer l'option de configuration de serveur remote login timeout
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique explique comment configurer l'option de configuration de serveur **remote login timeout** dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L'option **Délai d'attente de la connexion distante** spécifie le nombre de secondes d'attente avant le renvoi d'une tentative de connexion à un serveur distant qui a échoué. Par exemple, si vous tentez de vous connecter à un serveur distant et que ce serveur est arrêté, l'option **remote login timeout** vous assure de ne pas attendre indéfiniment que votre ordinateur cesse ses tentatives de connexion. La valeur par défaut de cette option est de 10 secondes. Une valeur égale à 0 entraîne une attente infinie.  
+  Cette rubrique explique comment configurer l'option de configuration de serveur **remote login timeout** dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. L'option **Délai d'attente de la connexion distante** spécifie le nombre de secondes d'attente avant le renvoi d'une tentative de connexion à un serveur distant qui a échoué. Par exemple, si vous tentez de vous connecter à un serveur distant et que ce serveur est arrêté, l'option **remote login timeout** vous assure de ne pas attendre indéfiniment que votre ordinateur cesse ses tentatives de connexion. La valeur par défaut de cette option est de 10 secondes. Une valeur égale à 0 entraîne une attente infinie.  
   
 > [!NOTE]  
 >  La valeur par défaut de cette option est de 20 secondes dans [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)].  
