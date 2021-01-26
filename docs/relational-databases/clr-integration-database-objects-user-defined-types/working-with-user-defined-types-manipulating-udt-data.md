@@ -29,12 +29,12 @@ helpviewer_keywords:
 ms.assetid: 51b1a5f2-7591-4e11-bfe2-d88e0836403f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 17913dab743f1aaaa7672ce855aa85ce8434f3c0
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: d23880a7ea6a1e8f4c1beccc5ec82f40303b9b76
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85727751"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783627"
 ---
 # <a name="working-with-user-defined-types---manipulating-udt-data"></a>Utilisation de types définis par l’utilisateur - Manipulation de données UDT
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -130,7 +130,7 @@ SELECT @PointValue.ToString() AS PointValue;
  La différence entre SELECT et SET pour l'attribution de la variable réside dans le fait que SELECT vous permet d'attribuer plusieurs variables dans une instruction SELECT, tandis que la syntaxe SET nécessite que chaque attribution de variable possède sa propre instruction SET.  
   
 ## <a name="comparing-data"></a>Comparaison de données  
- Vous pouvez utiliser des opérateurs de comparaison pour comparer des valeurs dans votre UDT si vous avez affecté la **valeur true** à la propriété **IsByteOrdered** lors de la définition de la classe. Pour plus d’informations, consultez [création d’un type défini par l’utilisateur](../../relational-databases/clr-integration-database-objects-user-defined-types/creating-user-defined-types.md).  
+ Vous pouvez utiliser des opérateurs de comparaison pour comparer des valeurs dans votre UDT si vous avez affecté la **valeur true** à la propriété **IsByteOrdered** lors de la définition de la classe. Pour plus d’informations, consultez [création d’un type de User-Defined](../../relational-databases/clr-integration-database-objects-user-defined-types/creating-user-defined-types.md).  
   
 ```sql  
 SELECT ID, PointValue.ToString() AS Points   
@@ -157,7 +157,7 @@ WHERE PointValue = @ComparePoint;
 ```  
   
 ## <a name="invoking-udt-methods"></a>Appel de méthodes UDT  
- Vous pouvez également appeler des méthodes qui sont définies dans votre type UDT dans [!INCLUDE[tsql](../../includes/tsql-md.md)]. La classe **point** contient trois méthodes : **distance**, **DistanceFrom**et **DistanceFromXY**. Pour obtenir les listes de code qui définissent ces trois méthodes, consultez [codage de types définis par l’utilisateur](../../relational-databases/clr-integration-database-objects-user-defined-types/creating-user-defined-types-coding.md).  
+ Vous pouvez également appeler des méthodes qui sont définies dans votre type UDT dans [!INCLUDE[tsql](../../includes/tsql-md.md)]. La classe **point** contient trois méthodes : **distance**, **DistanceFrom** et **DistanceFromXY**. Pour obtenir les listes de code qui définissent ces trois méthodes, consultez [codage des types de User-Defined](../../relational-databases/clr-integration-database-objects-user-defined-types/creating-user-defined-types-coding.md).  
   
  L' [!INCLUDE[tsql](../../includes/tsql-md.md)] instruction suivante appelle la méthode **PointValue. distance** :  
   
@@ -223,7 +223,7 @@ SET PointValue.Y = 99
 WHERE ID = 3  
 ```  
   
- Si le type défini par l’utilisateur a été défini avec la valeur **true**pour l’ordonnancement des octets, [!INCLUDE[tsql](../../includes/tsql-md.md)] peut évaluer la colonne UDT dans une clause WHERE.  
+ Si le type défini par l’utilisateur a été défini avec la valeur **true** pour l’ordonnancement des octets, [!INCLUDE[tsql](../../includes/tsql-md.md)] peut évaluer la colonne UDT dans une clause WHERE.  
   
 ```sql  
 UPDATE dbo.Points  
@@ -232,7 +232,7 @@ WHERE PointValue = '3,4';
 ```  
   
 ### <a name="updating-limitations"></a>Mise à jour de limitations  
- Vous ne pouvez pas mettre à jour plusieurs propriétés à la fois à l'aide de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Par exemple, l'instruction UPDATE suivante échoue avec une erreur parce que vous ne pouvez pas utiliser le même nom de colonne à deux reprises dans une instruction UDATE.  
+ Vous ne pouvez pas mettre à jour plusieurs propriétés à la fois à l'aide de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Par exemple, l’instruction UPDATE suivante échoue avec une erreur, car vous ne pouvez pas utiliser le même nom de colonne à deux reprises dans une instruction UPDATE.  
   
 ```sql  
 UPDATE dbo.Points  
@@ -265,6 +265,6 @@ WHERE ID = 2
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation de types définis par l'utilisateur dans SQL Server](../../relational-databases/clr-integration-database-objects-user-defined-types/working-with-user-defined-types-in-sql-server.md)  
+ [Utilisation de types définis par l’utilisateur dans SQL Server](../../relational-databases/clr-integration-database-objects-user-defined-types/working-with-user-defined-types-in-sql-server.md)  
   
   
