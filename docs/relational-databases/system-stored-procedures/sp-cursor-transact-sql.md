@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 41ade0ca-5f11-469d-bd4d-c8302ccd93b3
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 62a4904a608ccfd5ed02cbf21c3342619ea32e8f
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+ms.openlocfilehash: 07dcf9bfc42705f2ad49e3ce476ffcd8ad70f052
+ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91810162"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98813282"
 ---
 # <a name="sp_cursor-transact-sql"></a>sp_cursor (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "91810162"
   
 ||  
 |-|  
-|**S’applique à**: SQL Server ( [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md)).|  
+|**S’applique à**: SQL Server ( [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à la [version actuelle](/troubleshoot/sql/general/determine-version-edition-update-level)).|  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -54,7 +54,7 @@ sp_cursor  cursor, optype, rownum, table
 |Valeur|Nom|Description|  
 |-----------|----------|-----------------|  
 |0X0001|UPDATE|Utilisée pour mettre à jour une ou plusieurs lignes dans le tampon d'extraction.  Les lignes spécifiées dans *rowNum* sont à nouveau accessibles et mises à jour.|  
-|0x0002|Suppression|Utilisée pour supprimer une ou plusieurs lignes dans le tampon d'extraction. Les lignes spécifiées dans *rowNum* sont réutilisées et supprimées.|  
+|0x0002|DELETE|Utilisée pour supprimer une ou plusieurs lignes dans le tampon d'extraction. Les lignes spécifiées dans *rowNum* sont réutilisées et supprimées.|  
 |0X0004|INSERT|Insère des données sans générer d’instruction SQL **Insert** .|  
 |0X0008|REFRESH|Utilisée pour remplir la mémoire tampon à partir de tables sous-jacentes et peut être utilisée pour actualiser la ligne si une mise à jour ou une suppression échoue en raison d'un contrôle d'accès concurrentiel optimiste, ou après une opération UPDATE.|  
 |0X10|LOCK|Provoque l’acquisition d’une SQL Server U-Lock sur la page contenant la ligne spécifiée. Ce verrou est compatible avec les verrous S-Lock mais pas avec les verrous X-Lock ou autres verrous U-Lock. Permet d'implémenter le verrouillage à court terme.|  

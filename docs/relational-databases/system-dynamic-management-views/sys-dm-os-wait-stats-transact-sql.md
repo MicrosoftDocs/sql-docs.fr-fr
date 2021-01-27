@@ -1,8 +1,8 @@
 ---
 description: sys.dm_os_wait_stats (Transact-SQL)
-title: sys.dm_os_wait_stats (Transact-SQL) | Microsoft Docs
+title: sys.dm_os_wait_stats (Transact-SQL)
 ms.custom: ''
-ms.date: 08/19/2020
+ms.date: 01/25/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
@@ -17,16 +17,15 @@ dev_langs:
 - TSQL
 helpviewer_keywords:
 - sys.dm_os_wait_stats dynamic management view
-ms.assetid: 568d89ed-2c96-4795-8a0c-2f3e375081da
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 1dccbed2d872b2cd2973e644f9f02149f88b11d4
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: da16b2c28c55952e609b98637802c940ff5a6a54
+ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172751"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98813070"
 ---
 # <a name="sysdm_os_wait_stats-transact-sql"></a>sys.dm_os_wait_stats (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -51,7 +50,7 @@ Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] , requiert l' `
 Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le `Server admin` ou un `Azure Active Directory admin` compte est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.   
 
 ##  <a name="types-of-waits"></a><a name="WaitTypes"></a> Types d’attente  
- Les **attentes de ressource** se produisent lorsqu’un Worker demande l’accès à une ressource qui n’est pas disponible parce que la ressource est utilisée par un autre travail ou qu’elle n’est pas encore disponible. Ces attentes sont par exemple des attentes de verrous, de verrous internes, de réseau et d'E/S de disque. Les attentes de verrous et de verrous internes sont des attentes sur des objets de synchronisation.  
+ Les **attentes de ressource** se produisent lorsqu’un Worker demande l’accès à une ressource qui n’est pas disponible parce que la ressource est utilisée par un autre travail ou qu’elle n’est pas encore disponible. Les verrous, les verrous, le réseau et les attentes d’e/s de disque sont des exemples d’attentes de ressources. Les attentes de verrous et de verrous internes sont des attentes sur des objets de synchronisation.  
   
 Les **attentes de file d’attente** se produisent lorsqu’un thread de travail est inactif, en attente d’une affectation de travail. Ces attentes se produisent le plus souvent avec des tâches système en arrière-plan, telles que la surveillance des interblocages et le nettoyage des enregistrements supprimés. Ces tâches attendent que les demandes de travail soient placées dans une file d'attente. Les attentes de file d'attente peuvent aussi devenir actives même si aucun nouveau paquet n'a été placé dans la file d'attente.  
   
@@ -297,7 +296,7 @@ Cette commande remet tous les compteurs à 0.
 |HADR_AR_UNLOAD_COMPLETED |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |HADR_ARCONTROLLER_NOTIFICATIONS_SUBSCRIBER_LIST |Le serveur de publication d'un événement de réplica de disponibilité (comme un changement d'état ou de configuration) attend l'accès exclusif en lecture/écriture à la liste des abonnés à un événement. À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |HADR_BACKUP_BULK_LOCK |La Always On base de données primaire a reçu une demande de sauvegarde d’une base de données secondaire et attend que le thread d’arrière-plan termine le traitement de la requête lors de l’acquisition ou de la libération du verrou BulkOp. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
-|HADR_BACKUP_QUEUE |Le thread d’arrière-plan de sauvegarde de la base de données primaire Always On attend une nouvelle demande de travail de la base de données secondaire. (En général, cela se produit lorsque la base de données primaire détient le journal BulkOp et attend que la base de données secondaire indique que la base de données primaire peut libérer le verrou.) <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
+|HADR_BACKUP_QUEUE |Le thread d’arrière-plan de sauvegarde de la base de données primaire Always On attend une nouvelle demande de travail de la base de données secondaire. (En général, cela se produit lorsque la base de données primaire contient le journal BulkOp et attend que la base de données secondaire indique que la base de données primaire peut libérer le verrou). <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |HADR_CLUSAPI_CALL |Un [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] thread attend de passer du mode non préemptif (planifié par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ) au mode préemptif (planifié par le système d’exploitation) afin d’appeler les API de clustering de basculement Windows Server. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |HADR_COMPRESSED_CACHE_SYNC |En attente de l'accès au cache des blocs de journal compressés qui est utilisé pour éviter une compression redondante des blocs de journal envoyés à plusieurs bases de données secondaires. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |HADR_CONNECTIVITY_INFO |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
@@ -333,7 +332,7 @@ Cette commande remet tous les compteurs à 0.
 |HADR_PARTNER_SYNC |Attente de contrôle de concurrence sur la liste des serveurs partenaires. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |HADR_READ_ALL_NETWORKS |En attente de l'obtention de l'accès en lecture ou en écriture à la liste des réseaux WSFC. À usage interne uniquement Remarque : le moteur conserve une liste de réseaux WSFC utilisés dans les vues de gestion dynamique (par exemple sys.dm_hadr_cluster_networks) ou pour valider Always On instructions Transact-SQL qui font référence à des informations réseau WSFC. Cette liste est mise à jour lors du démarrage du moteur, des notifications liées à WSFC et du redémarrage interne du Always On (par exemple, la perte et la réobtention du quorum WSFC). Les tâches sont généralement bloquées lorsqu'une mise à jour est en cours dans cette liste. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |HADR_RECOVERY_WAIT_FOR_CONNECTION |En attente de la connexion de la base de données secondaire à la base de données primaire avant d'effectuer la récupération. Il s'agit d'une attente prévue, qui peut se prolonger si la connexion à la base de données primaire est lente à établir. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
-|HADR_RECOVERY_WAIT_FOR_UNDO |La récupération de base de données attend que la base de données secondaire termine la phase de rétablissement et d'initialisation afin de la ramener au point de journal commun avec la base de données primaire. Il s'agit d'une attente prévue à la suite d'un basculement. La progression de l'annulation peut faire l'objet d'un suivi au moyen du Moniteur système Windows (perfmon.exe) et des vues de gestion dynamique. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
+|HADR_RECOVERY_WAIT_FOR_UNDO |La récupération de base de données attend que la base de données secondaire termine la phase de rétablissement et d'initialisation afin de la ramener au point de journal commun avec la base de données primaire. Il s’agit d’une attente attendue après les basculements. La progression de l’annulation peut être suivie par le biais du moniteur système Windows (perfmon.exe) et des vues de gestion dynamique. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |HADR_REPLICAINFO_SYNC |En attente d'un contrôle de concurrence pour mettre à jour l'état de réplica actuel. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |HADR_SEEDING_CANCELLATION |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |HADR_SEEDING_FILE_LIST |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
@@ -494,11 +493,11 @@ Cette commande remet tous les compteurs à 0.
 |PAGEIOLATCH_SH |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui est une demande d'E/S. La demande de verrou interne est en mode partagé. De longues attentes peuvent indiquer l'existence de problèmes au niveau du sous-système de disque.| 
 |PAGEIOLATCH_UP |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui est une demande d'E/S. La demande de verrou interne est en mode de mise à jour. De longues attentes peuvent indiquer l'existence de problèmes au niveau du sous-système de disque.| 
 |PAGELATCH_DT |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode de destruction.| 
-|PAGELATCH_EX |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode exclusif.| 
+|PAGELATCH_EX |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode exclusif. </br> L’un des scénarios courants qui conduisent à ce verrou est la contention de verrouillage de la mémoire tampon « insertion de dernière page ». Pour comprendre et résoudre ce cas, utilisez [résoudre les conflits d’insertion PAGELATCH_EX de dernière page](/troubleshoot/sql/performance/resolve-pagelatch-ex-contention) et [diagnostiquer et résoudre les contentions de verrous de dernière page et d’insertion sur SQL Server](../diagnose-resolve-latch-contention.md#last-pagetrailing-page-insert-contention). Un autre scénario consiste [en une contention de verrous sur des tables de petite taille avec un index non cluster et des insertions aléatoires (table de file d’attente)](../diagnose-resolve-latch-contention.md#latch-contention-on-small-tables-with-a-non-clustered-index-and-random-inserts-queue-table).| 
 |PAGELATCH_KP |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode de conservation.| 
 |PAGELATCH_NL |Identifié à titre d'information uniquement. Non pris en charge. La compatibilité future n'est pas garantie.| 
 |PAGELATCH_SH |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode partagé.| 
-|PAGELATCH_UP |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode de mise à jour.| 
+|PAGELATCH_UP |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode de mise à jour. Ce type d’attente peut être observé lorsqu’une page système (tampon) comme PFS, GAM, SGAM est verrouillée. Pour résoudre les problèmes liés à un scénario courant, reportez-vous à [réduire la contention d’allocation dans SQL Server base de données tempdb](/troubleshoot/sql/performance/recommendations-reduce-allocation-contention).| 
 |PARALLEL_BACKUP_QUEUE |Se produit lors de la sérialisation de la sortie générée par RESTORE HEADERONLY, RESTORE FILELISTONLY ou RESTORE LABELONLY.| 
 |PARALLEL_REDO_DRAIN_WORKER |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |PARALLEL_REDO_FLOW_CONTROL |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
