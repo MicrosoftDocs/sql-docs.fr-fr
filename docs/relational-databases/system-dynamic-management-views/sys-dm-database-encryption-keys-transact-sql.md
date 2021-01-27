@@ -21,12 +21,12 @@ ms.assetid: 56fee8f3-06eb-4fff-969e-abeaa0c4b8e4
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 9eb56a2c7f2708a46cc0316e1c2600e2f15f0f8e
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c1ce6abac2c138b68831fd9ad1bd44817a789abd
+ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092909"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98812931"
 ---
 # <a name="sysdm_database_encryption_keys-transact-sql"></a>sys.dm_database_encryption_keys (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -45,11 +45,11 @@ ms.locfileid: "98092909"
 |key_algorithm|**nvarchar(32)**|Affiche l'algorithme utilisé pour la clé.|  
 |key_length|**int**|Affiche la longueur de la clé.|  
 |encryptor_thumbprint|**varbinary(20)**|Affiche l'empreinte numérique du chiffreur.|  
-|encryptor_type|**nvarchar(32)**|**S'applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] via la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md)).<br /><br /> Décrit le chiffreur.|  
+|encryptor_type|**nvarchar(32)**|**S'applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] via la [version actuelle](/troubleshoot/sql/general/determine-version-edition-update-level)).<br /><br /> Décrit le chiffreur.|  
 |percent_complete|**real**|Pourcentage accompli de la modification de l'état de chiffrement de la base de données. La valeur 0 indique aucune modification d'état.|
-|encryption_state_desc|**nvarchar(32)**|**S’applique à** : [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et versions ultérieures.<br><br> Chaîne qui indique si la base de données est chiffrée ou non chiffrée.<br><br>NONE<br><br>NON chiffrés<br><br>COMMUNICATIONS<br><br>DECRYPTION_IN_PROGRESS<br><br>ENCRYPTION_IN_PROGRESS<br><br>KEY_CHANGE_IN_PROGRESS<br><br>PROTECTION_CHANGE_IN_PROGRESS|
+|encryption_state_desc|**nvarchar(32)**|**S’applique à** : [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et versions ultérieures.<br><br> Chaîne qui indique si la base de données est chiffrée ou non chiffrée.<br><br>Aucune<br><br>NON chiffrés<br><br>COMMUNICATIONS<br><br>DECRYPTION_IN_PROGRESS<br><br>ENCRYPTION_IN_PROGRESS<br><br>KEY_CHANGE_IN_PROGRESS<br><br>PROTECTION_CHANGE_IN_PROGRESS|
 |encryption_scan_state|**int**|**S’applique à** : [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et versions ultérieures.<br><br>Indique l’état actuel de l’analyse de chiffrement. <br><br>0 = aucune analyse n’a été lancée, TDE n’est pas activé<br><br>1 = analyse en cours.<br><br>2 = l’analyse est en cours mais a été suspendue, l’utilisateur peut la reprendre.<br><br>3 = l’analyse a été abandonnée pour une raison quelconque, une intervention manuelle est nécessaire. Pour obtenir de l’aide, contactez Support Microsoft.<br><br>4 = l’analyse a été effectuée avec succès, TDE est activé et le chiffrement est terminé.|
-|encryption_scan_state_desc|**nvarchar(32)**|**S’applique à** : [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et versions ultérieures.<br><br>Chaîne qui indique l’état actuel de l’analyse de chiffrement.<br><br> NONE<br><br>RUNNING<br><br>SUSPENDED<br><br>ABORTED<br><br>Remplissez|
+|encryption_scan_state_desc|**nvarchar(32)**|**S’applique à** : [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et versions ultérieures.<br><br>Chaîne qui indique l’état actuel de l’analyse de chiffrement.<br><br> Aucune<br><br>RUNNING<br><br>SUSPENDED<br><br>ABORTED<br><br>Remplissez|
 |encryption_scan_modify_date|**datetime**|**S’applique à** : [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et versions ultérieures.<br><br> Affiche la date (au format UTC) de la dernière modification de l’état de l’analyse de chiffrement.|
   
 ## <a name="permissions"></a>Autorisations

@@ -9,12 +9,12 @@ ms.topic: reference
 ms.author: owend
 ms.reviewer: owend
 author: minewiskan
-ms.openlocfilehash: 3a779e16b06b00cb925f28e8da34ce3959d7dc7e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d802cb37a972eb498b485d7253a82b8445f4566d
+ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88352885"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98813476"
 ---
 # <a name="identifiers-dmx"></a>Identificateurs (DMX)
 [!INCLUDE[ssas](../includes/applies-to-version/ssas.md)]
@@ -76,7 +76,7 @@ SELECT * FROM [Targeted Mailing].CONTENT;
   
 -   Lorsque vous utilisez des mots réservés pour des noms d'objet ou des parties de noms d'objet.  
   
-     Il est conseillé de ne pas utiliser de mots clés réservés en tant que noms d'objet. Les bases de données que vous mettez à niveau à partir de versions antérieures de [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] peuvent contenir des identificateurs qui incluent des mots qui n’étaient pas réservés dans la version antérieure de, [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] mais qui sont des mots réservés pour [!INCLUDE[ssCurrent](../includes/sscurrent-md.md)] [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] . Vous pouvez utiliser un identificateur délimité pour faire référence à ce type d'objet jusqu'à ce que vous puissiez renommer l'objet.  
+     Il est conseillé de ne pas utiliser de mots clés réservés en tant que noms d'objet. Les bases de données que vous mettez à niveau à partir de versions antérieures de [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] peuvent contenir des identificateurs qui incluent des mots qui n’étaient pas réservés dans la version antérieure de, [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] mais qui sont des mots réservés pour [!INCLUDE[ssnoversion](../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] . Vous pouvez utiliser un identificateur délimité pour faire référence à ce type d'objet jusqu'à ce que vous puissiez renommer l'objet.  
   
 -   Lorsque vous utilisez des caractères non répertoriés comme identificateurs qualifiés.  
   
@@ -105,6 +105,6 @@ SELECT * FROM [Targeted Mailing].CONTENT;
  [Conventions de syntaxe du&#41; DMX &#40;Data Mining Extensions](../dmx/data-mining-extensions-dmx-syntax-conventions.md)   
  [Fonctions de prédiction générales &#40;&#41;DMX ](../dmx/general-prediction-functions-dmx.md)   
  [Structure et utilisation des requêtes de prédiction DMX](../dmx/structure-and-usage-of-dmx-prediction-queries.md)   
- [Présentation de l’instruction DMX Select](../dmx/understanding-the-dmx-select-statement.md)  
+ [Présentation de l'instruction DMX Select](../dmx/understanding-the-dmx-select-statement.md)  
   
   
