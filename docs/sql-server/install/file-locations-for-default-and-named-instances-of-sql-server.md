@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 463c570e-9f75-4653-b3b8-4d61753b0013
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: e109b68dbf9b2e2b1d119f2f676896f5fe682aaf
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: b542b33ee1dc4bf849131f90be0316c32b386879
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172701"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765877"
 ---
 # <a name="file-locations-for-default-and-named-instances-of-sql-server"></a>Emplacements des fichiers pour les instances par défaut et les instances nommées de SQL Server
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
@@ -59,14 +59,14 @@ ms.locfileid: "98172701"
   
  Voici quelques exemples d'ID d'instance par défaut dans cette version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] :  
   
--   MSSQL\{nn}.MSSQLSERVER pour une instance par défaut de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+-   MSSQL\{nn}.MSSQLSERVER pour une instance par défaut de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
   
 -   MSAS\{nn}.MSSQLSERVER pour une instance par défaut de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Analysis Services.  
   
--   MSSQL\{nn}.MyInstance pour une instance nommée de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] dont le nom est « MyInstance ».  
+-   MSSQL\{nn}.MyInstance pour une instance nommée de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] dont le nom est « MyInstance ».  
   
 
- La structure de répertoire pour une instance nommée de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] incluant le [!INCLUDE[ssDE](../../includes/ssde-md.md)] et [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], intitulée « MyInstance » et installée sur les répertoires par défaut, se présenterait de la façon suivante :  
+ La structure de répertoire pour une instance nommée de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] incluant le [!INCLUDE[ssDE](../../includes/ssde-md.md)] et [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], intitulée « MyInstance » et installée sur les répertoires par défaut, se présenterait de la façon suivante :  
   
 -   C:\Program Files\Microsoft SQL Server\MSSQL\{nn}.MyInstance\  
   

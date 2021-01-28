@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 944fc1a9b5769c797ed9fa372e45c17931814983
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 41ee66ff1a5dc6abd746a1344d03e3cabacf9cd2
+ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85681542"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98813091"
 ---
 # <a name="distributed-replay-security"></a>Sécurité Distributed Replay
 
@@ -54,7 +54,7 @@ Avant d’installer et d’utiliser la fonctionnalité [!INCLUDE[msCoName](../..
   
     -   Cliquez sur **Démarrer**, tapez **services.msc** dans la zone **Rechercher** , puis appuyez sur Entrée.  
   
-    -   Cliquez sur **Démarrer**, puis sur **Exécuter**, tapez **services.msc**et appuyez sur Entrée.  
+    -   Cliquez sur **Démarrer**, puis sur **Exécuter**, tapez **services.msc** et appuyez sur Entrée.  
   
 2.  Dans la boîte de dialogue **Services** , cliquez avec le bouton droit sur le service à configurer, puis cliquez sur **Propriétés**.  
   
@@ -83,9 +83,9 @@ Avant d’installer et d’utiliser la fonctionnalité [!INCLUDE[msCoName](../..
   
     3.  Appuyez sur Entrée.  
   
-2.  **Configurez les autorisations DCOM au niveau de l’ordinateur** : accordez les autorisations DCOM au niveau de l’ordinateur pour chaque compte répertorié dans le tableau suivant. Pour plus d’informations sur la définition des autorisations au niveau de l’ordinateur, consultez [Liste de vérification : gérer des applications DCOM](https://go.microsoft.com/fwlink/?LinkId=185842).  
+2.  **Configurez les autorisations DCOM au niveau de l’ordinateur** : accordez les autorisations DCOM au niveau de l’ordinateur pour chaque compte répertorié dans le tableau suivant. Pour plus d’informations sur la définition des autorisations au niveau de l’ordinateur, consultez [Liste de vérification : gérer des applications DCOM](/windows/win32/com/setting-machine-wide-security-using-dcomcnfg).  
   
-3.  **Configurer les autorisations DCOM spécifiques à l’application** : accordez les autorisations DCOM au spécifiques à l’application pour chaque compte répertorié dans le tableau suivant. Le nom d'application DCOM pour le service du contrôleur est **DReplayController**. Pour plus d’informations sur la définition des autorisations spécifiques à l’application, consultez [Liste de vérification : gérer des applications DCOM](https://go.microsoft.com/fwlink/?LinkId=185842).  
+3.  **Configurer les autorisations DCOM spécifiques à l’application** : accordez les autorisations DCOM au spécifiques à l’application pour chaque compte répertorié dans le tableau suivant. Le nom d'application DCOM pour le service du contrôleur est **DReplayController**. Pour plus d’informations sur la définition des autorisations spécifiques à l’application, consultez [Liste de vérification : gérer des applications DCOM](/windows/win32/com/setting-processwide-security-using-dcomcnfg).  
   
  Le tableau suivant décrit les autorisations DCOM requises pour le compte d'utilisateur interactif de l'outil d'administration et les comptes de service du client :  
   
@@ -136,5 +136,4 @@ Avant d’installer et d’utiliser la fonctionnalité [!INCLUDE[msCoName](../..
 ## <a name="see-also"></a>Voir aussi  
  [SQL Server Distributed Replay](../../tools/distributed-replay/sql-server-distributed-replay.md)   
  [Install Distributed Replay - Présentation](../../tools/distributed-replay/install-distributed-replay-overview.md)  
-  
   

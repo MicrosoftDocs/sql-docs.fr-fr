@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 93acefa8-bb41-4ccc-b763-7801f51134e0
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: eea074af5270046bae6bb153cfb6fe79053335a4
-ms.sourcegitcommit: 3ec49252e82590de0fe559a8574606ae213f6f3b
+ms.openlocfilehash: ce7c337ccd2899afedbc28781c1ed822f04b8202
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975496"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765660"
 ---
 # <a name="work-with-multiple-versions-and-instances-of-sql-server"></a>Utiliser plusieurs versions et instances de SQL Server
 
@@ -108,7 +108,7 @@ Pour plus d’informations, consultez [Utilisation de SQL Server sur Windows 8 e
 
   
 > [!CAUTION]  
-> [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] SysPrep ne prend pas en charge une installation côte à côte d’instances préparées de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] avec des versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur le même ordinateur. Par exemple, vous ne pouvez pas préparer d'instance [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] côte à côte avec une instance préparée de [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]. Toutefois, vous pouvez installer plusieurs instances préparées de la même version principale de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] côte à côte sur le même ordinateur. Pour plus d'informations, consultez [Considerations for Installing SQL Server Using SysPrep](../../database-engine/install-windows/considerations-for-installing-sql-server-using-sysprep.md).  
+> [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] SysPrep ne prend pas en charge une installation côte à côte d’instances préparées de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] avec des versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur le même ordinateur. Toutefois, vous pouvez installer plusieurs instances préparées de la même version principale de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] côte à côte sur le même ordinateur. Pour plus d'informations, consultez [Considerations for Installing SQL Server Using SysPrep](../../database-engine/install-windows/considerations-for-installing-sql-server-using-sysprep.md).  
 >
 > SQL Server 2016 (ou version ultérieure) ne peut pas être installé côte à côte avec des versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur un ordinateur qui exécute Windows Server 2008 R2 Server Core SP1. Pour plus d’informations sur les installations Server Core, consultez [Installer SQL Server 2016 sur Server Core](../../database-engine/install-windows/install-sql-server-on-server-core.md).  
   

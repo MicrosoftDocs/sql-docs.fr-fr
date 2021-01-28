@@ -12,16 +12,16 @@ ms.assetid: d8630923-a600-4f1c-aca1-027453a3ec82
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: d623bd63cfb9d2d72f41bf498259b1d13fe651b8
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8890ede78dbc42a885e1d994fe3aee42100085dd
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478420"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766441"
 ---
 # <a name="sql-server-properties-always-on-high-availability-tab"></a>Propriétés de SQL Server (onglet Haute disponibilité AlwaysOn)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
-  Utilisez l’onglet **Haute disponibilité AlwaysOn** de la boîte de dialogue **Propriétés de SQL Server** du Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour activer ou désactiver la fonctionnalité Groupes de disponibilité AlwaysOn de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. L’activation de Groupes de disponibilité AlwaysOn est nécessaire pour qu’une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise les groupes de disponibilité comme solution de haute disponibilité et de récupération d’urgence.  
+  Utilisez l’onglet **Haute disponibilité AlwaysOn** de la boîte de dialogue **Propriétés de SQL Server** du Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour activer ou désactiver la fonctionnalité Groupes de disponibilité AlwaysOn de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. L’activation de Groupes de disponibilité AlwaysOn est nécessaire pour qu’une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise les groupes de disponibilité comme solution de haute disponibilité et de récupération d’urgence.  
   
 ##  <a name="prerequisites"></a><a name="Prerequisites"></a> Conditions préalables  
  Pour être activée pour Groupes de disponibilité AlwaysOn, une instance de serveur doit remplir les conditions suivantes :  
@@ -35,7 +35,7 @@ ms.locfileid: "97478420"
 -   Activez Groupes de disponibilité AlwaysOn pour une seule instance de serveur à la fois. Après avoir activé Groupes de disponibilité AlwaysOn, attendez le redémarrage du service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] avant d’activer l’instance de serveur suivante.  
   
 > [!NOTE]  
->  Pour plus d’informations sur la prise en charge des fonctionnalités et sur les conditions préalables, restrictions et recommandations supplémentaires pour [!INCLUDE[ssHADR](../../includes/sshadr-md.md)], consultez la documentation en ligne de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] .  
+>  Pour plus d’informations sur la prise en charge des fonctionnalités et sur les conditions préalables, restrictions et recommandations supplémentaires pour [!INCLUDE[ssHADR](../../includes/sshadr-md.md)], consultez la documentation en ligne de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] .  
   
 ## <a name="dialog-options"></a>Options de boîte de dialogue  
  **Nom du cluster de basculement Windows**  
@@ -54,6 +54,6 @@ ms.locfileid: "97478420"
 ## <a name="ui-element-list"></a>Liste d’éléments d’interface utilisateur  
   
 > [!NOTE]  
->  Pour plus d’informations sur le suivi après la désactivation de Groupes de disponibilité AlwaysOn et la procédure à suivre pour créer et configurer des groupes de disponibilité, consultez la documentation en ligne de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] .  
+>  Pour plus d’informations sur le suivi après la désactivation de Groupes de disponibilité AlwaysOn et la procédure à suivre pour créer et configurer des groupes de disponibilité, consultez la documentation en ligne de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] .  
   
   

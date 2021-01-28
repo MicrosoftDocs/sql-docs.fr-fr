@@ -24,12 +24,12 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 monikerRange: = azuresqldb-mi-current || >= sql-server-2016
-ms.openlocfilehash: 60ade9965f92b1c9ff5e459f1af109bd37c6a9c5
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 33c877592ead8895c6c087f5d0b80563e03d61ef
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482268"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766263"
 ---
 # <a name="change-an-operator39s-availability"></a>Modifier la disponibilité d’un opérateur
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "97482268"
 > [!IMPORTANT]  
 > Dans [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance), la plupart, mais pas toutes les fonctionnalités SQL Server Agent sont actuellement prises en charge. Pour plus d’informations, consultez [Différences T-SQL entre Azure SQL Managed Instance et SQL Server](/azure/sql-database/sql-database-managed-instance-transact-sql-information#sql-server-agent).
 
-Cette rubrique explique comment modifier la disponibilité d'un opérateur pour la réception des notifications d'alertes dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
+Cette rubrique explique comment modifier la disponibilité d'un opérateur pour la réception des notifications d'alertes dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   
 ## <a name="before-you-begin"></a><a name="BeforeYouBegin"></a>Avant de commencer  
   

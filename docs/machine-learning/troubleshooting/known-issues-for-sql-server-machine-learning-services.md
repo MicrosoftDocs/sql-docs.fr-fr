@@ -9,12 +9,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: contperf-fy20q4
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15'
-ms.openlocfilehash: 4c4b293b13ec59421ea5827572203ba13e526212
-ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
+ms.openlocfilehash: 51d729bcdb25900af855e7429e953ee44dc1388b
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878782"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766301"
 ---
 # <a name="known-issues-in-sql-server-machine-learning-services"></a>Problèmes connus dans SQL Server Machine Learning Services
 [!INCLUDE [SQL Server 2016 and later](../../includes/applies-to-version/sqlserver2016.md)]
@@ -168,7 +168,7 @@ Recherchez Launchpad dans le dossier `Binn` de l’instance. Par exemple, dans u
 
 ### <a name="9-remote-compute-contexts-are-blocked-by-a-firewall-in-sql-server-instances-that-are-running-on-azure-virtual-machines"></a>9. Les contextes de calcul à distance sont bloqués par un pare-feu dans les instances SQL Server qui s’exécutant sur des machines virtuelles Azure
 
-Si vous avez installé [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] sur une machine virtuelle Azure, vous risquez de ne pas pouvoir utiliser les contextes de calcul qui nécessite l’utilisation de l’espace de travail de la machine virtuelle. Cela est dû au fait que, par défaut, le pare-feu de la machine virtuelle Azure comporte une règle qui bloque l’accès réseau pour les comptes d’utilisateurs R locaux.
+Si vous avez installé [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] sur une machine virtuelle Azure, vous risquez de ne pas pouvoir utiliser les contextes de calcul qui nécessite l’utilisation de l’espace de travail de la machine virtuelle. Cela est dû au fait que, par défaut, le pare-feu de la machine virtuelle Azure comporte une règle qui bloque l’accès réseau pour les comptes d’utilisateurs R locaux.
 
 Pour contourner ce problème, sur la machine virtuelle Azure, ouvrez **Pare-feu Windows avec sécurité avancée**, sélectionnez **Règles de trafic sortant**, puis désactivez la règle suivante : **Bloquer l’accès réseau pour les comptes d’utilisateurs locaux R dans l’instance SQL Server MSSQLSERVER**. Vous pouvez laisser la règle activée, mais faites passer la propriété de sécurité à **Autoriser si sécurisé**.
 
@@ -734,7 +734,7 @@ Dans une invite de commandes en mode administrateur, exécutez la commande suiva
 
 ## <a name="revolution-r-enterprise-and-microsoft-r-open"></a>Revolution R Enterprise et Microsoft R Open
 
-Cette section liste des problèmes propres aux outils de connectivité, de développement et de performances R fournis par Revolution Analytics. Ces outils ont été fournis dans des préversions antérieures de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].
+Cette section liste des problèmes propres aux outils de connectivité, de développement et de performances R fournis par Revolution Analytics. Ces outils ont été fournis dans des préversions antérieures de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].
 
 En général, nous recommandons de désinstaller ces versions précédentes et d’installer la dernière version de SQL Server ou Microsoft R Server.
 
