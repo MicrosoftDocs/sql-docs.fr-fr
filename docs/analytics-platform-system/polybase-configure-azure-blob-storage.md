@@ -9,16 +9,16 @@ ms.date: 04/17/2018
 ms.author: murshedz
 ms.reviewer: martinle
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 52ad8a4e8c335eea412264b69d87453a5ce84104
-ms.sourcegitcommit: 36fe62a3ccf34979bfde3e192cfa778505add465
+ms.openlocfilehash: 59f9e29940947c1afcf3321fe138030a3fb0d5f1
+ms.sourcegitcommit: 76c5e10704e3624b538b653cf0352e606b6346d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94520972"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98924707"
 ---
-# <a name="configure-polybase-to-access-external-data-in-azure-blob-storage"></a>Configurer Polybase pour accéder à des données externes dans le stockage d’objets BLOB Azure
+# <a name="configure-polybase-to-access-external-data-in-azure-blob-storage"></a>Configurer PolyBase pour accéder à des données externes dans Stockage Blob Azure
 
-L’article explique comment utiliser Polybase sur une instance de SQL Server pour interroger des données externes dans le stockage d’objets BLOB Azure.
+L’article explique comment utiliser PolyBase sur une instance SQL Server pour interroger des données externes dans Stockage Blob Azure.
 
 > [!NOTE]
 > Actuellement, les APS prennent uniquement en charge le stockage d’objets BLOB Azure à usage général v1 localement redondant (LRS).
@@ -32,12 +32,12 @@ L’article explique comment utiliser Polybase sur une instance de SQL Server po
 
 Tout d’abord, configurez les points d’accès pour utiliser le stockage d’objets BLOB Azure.
 
-1. Exécutez [sp_configure](../relational-databases/system-stored-procedures/sp-configure-transact-sql.md) avec la valeur « connectivité Hadoop » définie sur un fournisseur de stockage d’objets BLOB Azure. Pour trouver la valeur pour les fournisseurs, consultez [Configuration de la connectivité PolyBase](../database-engine/configure-windows/polybase-connectivity-configuration-transact-sql.md).
+1. Exécutez [sp_configure](../relational-databases/system-stored-procedures/sp-configure-transact-sql.md) avec 'hadoop connectivity' défini sur un fournisseur Stockage Blob Azure. Pour trouver la valeur pour les fournisseurs, consultez [Configuration de la connectivité PolyBase](../database-engine/configure-windows/polybase-connectivity-configuration-transact-sql.md).
 
    ```sql  
    -- Values map to various external data sources.  
    -- Example: value 7 stands for Hortonworks HDP 2.1 to 2.6 on Linux,
-   -- 2.1 to 2.3 on Windows Server, and Azure Blob storage  
+   -- 2.1 to 2.3 on Windows Server, and Azure Blob Storage  
    sp_configure @configname = 'hadoop connectivity', @configvalue = 7;
    GO
 
@@ -66,7 +66,7 @@ Pour interroger les données dans votre stockage d’objets BLOB Azure, vous dev
    WITH IDENTITY = 'user', Secret = '<azure_storage_account_key>';
    ```
 
-1. Créer une source de données externe avec [Create external data source](../t-sql/statements/create-external-data-source-transact-sql.md).
+1. Créez une source de données externe avec [CREATE EXTERNAL DATA SOURCE](../t-sql/statements/create-external-data-source-transact-sql.md).
 
    ```sql
    -- LOCATION:  Azure account storage account name and blob container name.  
@@ -81,7 +81,7 @@ Pour interroger les données dans votre stockage d’objets BLOB Azure, vous dev
 1. Créez un format de fichier externe avec [CREATE EXTERNAL FILE FORMAT](../t-sql/statements/create-external-file-format-transact-sql.md).
 
    ```sql
-   -- FORMAT TYPE: Type of format in Azure Blob storage (DELIMITEDTEXT,  RCFILE, ORC, PARQUET).
+   -- FORMAT TYPE: Type of format in Azure Blob Storage (DELIMITEDTEXT,  RCFILE, ORC, PARQUET).
    -- In this example, the files are pipe (|) delimited
    CREATE EXTERNAL FILE FORMAT TextFileFormat WITH (  
          FORMAT_TYPE = DELIMITEDTEXT,
@@ -116,7 +116,7 @@ Pour interroger les données dans votre stockage d’objets BLOB Azure, vous dev
 
 PolyBase est approprié pour trois fonctions :  
   
-- Requêtes ad hoc sur des tables externes.  
+- Requêtes ad hoc sur des tables externes.  
 - Importation de données.  
 - Exportation de données.  
 
@@ -158,7 +158,7 @@ ON Insured_Customers.CustomerKey = SensorD.CustomerKey
 La requête suivante exporte des données à partir de points d’accès vers le stockage d’objets BLOB Azure. Il peut être utilisé pour archiver des données relationnelles dans le stockage d’objets BLOB Azure tout en étant en mesure de les interroger.
 
 ```sql
--- Export data: Move old data to Azure Blob storage while keeping it query-able via an external table.  
+-- Export data: Move old data to Azure Blob Storage while keeping it query-able via an external table.  
 CREATE EXTERNAL TABLE [dbo].[FastCustomers2009] 
 WITH (  
       LOCATION='/archive/customer/2009',  

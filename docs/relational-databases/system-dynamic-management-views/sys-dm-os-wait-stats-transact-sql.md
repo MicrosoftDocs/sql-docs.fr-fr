@@ -2,7 +2,7 @@
 description: sys.dm_os_wait_stats (Transact-SQL)
 title: sys.dm_os_wait_stats (Transact-SQL)
 ms.custom: ''
-ms.date: 01/25/2021
+ms.date: 01/27/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
@@ -20,12 +20,12 @@ helpviewer_keywords:
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: da16b2c28c55952e609b98637802c940ff5a6a54
-ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
+ms.openlocfilehash: 15f49e670fad327da52fe340a1f9b7601d22ef80
+ms.sourcegitcommit: 76c5e10704e3624b538b653cf0352e606b6346d3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98813070"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98924748"
 ---
 # <a name="sysdm_os_wait_stats-transact-sql"></a>sys.dm_os_wait_stats (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -487,17 +487,17 @@ Cette commande remet tous les compteurs à 0.
 |OLEDB |Se produit lorsque [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] appelle le fournisseur SNAC OLE DB (SQLNCLI) ou le pilote de OLE DB Microsoft pour SQL Server (MSOLEDBSQL). Ce type d'attente n'est pas utilisé pour la synchronisation. Par contre, il indique la durée des appels émis vers le fournisseur OLE DB.| 
 |ONDEMAND_TASK_QUEUE |Se produit lorsqu'une tâche en arrière-plan attend des demandes de tâches système à priorité élevée. De longues attentes indiquent qu'il n'existe aucune demande à priorité élevée à traiter, et elles ne révèlent pas l'existence d'un problème.| 
 |PAGEIOLATCH_DT |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui est une demande d'E/S. La demande de verrou interne est en mode de destruction. De longues attentes peuvent indiquer l'existence de problèmes au niveau du sous-système de disque.| 
-|PAGEIOLATCH_EX |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui est une demande d'E/S. La demande de verrou interne est en mode exclusif. De longues attentes peuvent indiquer l'existence de problèmes au niveau du sous-système de disque.| 
+|PAGEIOLATCH_EX |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui est une demande d'E/S. La demande de verrou interne est en mode exclusif (mode utilisé lorsque la mémoire tampon est écrite sur le disque). De longues attentes peuvent indiquer l'existence de problèmes au niveau du sous-système de disque.| 
 |PAGEIOLATCH_KP |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui est une demande d'E/S. La demande de verrou interne est en mode de conservation. De longues attentes peuvent indiquer l'existence de problèmes au niveau du sous-système de disque.| 
 |PAGEIOLATCH_NL |Identifié à titre d'information uniquement. Non pris en charge. La compatibilité future n'est pas garantie.| 
-|PAGEIOLATCH_SH |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui est une demande d'E/S. La demande de verrou interne est en mode partagé. De longues attentes peuvent indiquer l'existence de problèmes au niveau du sous-système de disque.| 
+|PAGEIOLATCH_SH |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui est une demande d'E/S. La demande de verrou interne est en mode partagé (mode utilisé lorsque la mémoire tampon est lue à partir du disque). De longues attentes peuvent indiquer l'existence de problèmes au niveau du sous-système de disque.| 
 |PAGEIOLATCH_UP |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui est une demande d'E/S. La demande de verrou interne est en mode de mise à jour. De longues attentes peuvent indiquer l'existence de problèmes au niveau du sous-système de disque.| 
-|PAGELATCH_DT |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode de destruction.| 
-|PAGELATCH_EX |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode exclusif. </br> L’un des scénarios courants qui conduisent à ce verrou est la contention de verrouillage de la mémoire tampon « insertion de dernière page ». Pour comprendre et résoudre ce cas, utilisez [résoudre les conflits d’insertion PAGELATCH_EX de dernière page](/troubleshoot/sql/performance/resolve-pagelatch-ex-contention) et [diagnostiquer et résoudre les contentions de verrous de dernière page et d’insertion sur SQL Server](../diagnose-resolve-latch-contention.md#last-pagetrailing-page-insert-contention). Un autre scénario consiste [en une contention de verrous sur des tables de petite taille avec un index non cluster et des insertions aléatoires (table de file d’attente)](../diagnose-resolve-latch-contention.md#latch-contention-on-small-tables-with-a-non-clustered-index-and-random-inserts-queue-table).| 
-|PAGELATCH_KP |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode de conservation.| 
+|PAGELATCH_DT |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode de destruction. Le mode de destruction doit être acquis avant de supprimer le contenu d’une page. Pour plus d’informations, consultez [modes de verrouillage](../diagnose-resolve-latch-contention.md#sql-server-latch-modes-and-compatibility) .| 
+|PAGELATCH_EX |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode exclusif. elle empêche d’autres threads d’écrire ou de lire à partir de la page (mémoire tampon). </br></br> L’un des scénarios courants qui conduisent à ce verrou est la contention de verrouillage de la mémoire tampon « insertion de dernière page ». Pour comprendre et résoudre ce cas, utilisez [résoudre les conflits d’insertion PAGELATCH_EX de dernière page](/troubleshoot/sql/performance/resolve-pagelatch-ex-contention) et [diagnostiquer et résoudre les contentions de verrous de dernière page et d’insertion sur SQL Server](../diagnose-resolve-latch-contention.md#last-pagetrailing-page-insert-contention). Un autre scénario consiste [en une contention de verrous sur des tables de petite taille avec un index non cluster et des insertions aléatoires (table de file d’attente)](../diagnose-resolve-latch-contention.md#latch-contention-on-small-tables-with-a-non-clustered-index-and-random-inserts-queue-table).| 
+|PAGELATCH_KP |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode conserver, ce qui empêche la page d’être détruite par un autre thread. Pour plus d’informations, consultez [modes de verrouillage](../diagnose-resolve-latch-contention.md#sql-server-latch-modes-and-compatibility) .| 
 |PAGELATCH_NL |Identifié à titre d'information uniquement. Non pris en charge. La compatibilité future n'est pas garantie.| 
-|PAGELATCH_SH |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode partagé.| 
-|PAGELATCH_UP |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode de mise à jour. Ce type d’attente peut être observé lorsqu’une page système (tampon) comme PFS, GAM, SGAM est verrouillée. Pour résoudre les problèmes liés à un scénario courant, reportez-vous à [réduire la contention d’allocation dans SQL Server base de données tempdb](/troubleshoot/sql/performance/recommendations-reduce-allocation-contention).| 
+|PAGELATCH_SH |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode partagé, ce qui permet à plusieurs threads de lire, mais pas de modifier, une mémoire tampon (page). Pour plus d’informations, consultez [modes de verrouillage](../diagnose-resolve-latch-contention.md#sql-server-latch-modes-and-compatibility) .| 
+|PAGELATCH_UP |Se produit lorsqu'une tâche attend sur un verrou interne un tampon qui n'est pas une demande d'E/S. La demande de verrou interne est en mode de mise à jour. Ce type d’attente peut être observé lorsqu’une page système (tampon) comme PFS, GAM, SGAM est verrouillée. Pour plus d’informations, consultez [modes de verrouillage](../diagnose-resolve-latch-contention.md#sql-server-latch-modes-and-compatibility) . </br></br> Pour résoudre les problèmes liés à un scénario courant avec ce verrou, reportez-vous à [réduire la contention d’allocation dans SQL Server base de données tempdb](/troubleshoot/sql/performance/recommendations-reduce-allocation-contention).| 
 |PARALLEL_BACKUP_QUEUE |Se produit lors de la sérialisation de la sortie générée par RESTORE HEADERONLY, RESTORE FILELISTONLY ou RESTORE LABELONLY.| 
 |PARALLEL_REDO_DRAIN_WORKER |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |PARALLEL_REDO_FLOW_CONTROL |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
