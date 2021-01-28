@@ -22,12 +22,12 @@ ms.assetid: da983c0a-06c5-4cf8-a6a4-7f9d66f34f2c
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 295e21500b51bed644807c2cbbab03515fb7e7d9
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: eb6024d0ad3ef6f34d170201c0fbacc3447dab26
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484001"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783585"
 ---
 # <a name="top-transact-sql"></a>TOP (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -80,7 +80,7 @@ Utilisez TOP (ou OFFSET et FETCH) au lieu de SET ROWCOUNT pour limiter le nombre
 -   Dans le cadre d'une instruction SELECT, l'optimiseur de requête peut considérer la valeur *d’expression* dans les clauses TOP ou FETCH pendant l'optimisation des requêtes. Comme vous utilisez SET ROWCOUNT hors d’une instruction qui exécute une requête, sa valeur ne peut pas être prise en compte dans un plan de requête.  
   
 ## <a name="compatibility-support"></a>Prise en charge de la compatibilité  
-Pour des raisons de compatibilité descendante, les parenthèses sont facultatives dans les instructions SELECT. Nous vous recommandons de toujours placer TOP entre parenthèses dans les instructions SELECT. Cela garantit sa cohérence de son utilisation requise dans les instructions INSERT, UPDATE, MERGE et DELETE. 
+Pour des raisons de compatibilité descendante, les parenthèses sont facultatives dans les instructions SELECT si l’expression est une constante entière. Nous vous recommandons de toujours placer TOP entre parenthèses dans les instructions SELECT. Cela garantit sa cohérence de son utilisation requise dans les instructions INSERT, UPDATE, MERGE et DELETE. 
   
 ## <a name="interoperability"></a>Interopérabilité  
 L’expression TOP n’affecte pas les instructions qu’un déclencheur pourrait exécuter. Les tables **inserted** et **deleted** dans les déclencheurs retournent seulement les lignes réellement affectées par les instructions INSERT, UPDATE, MERGE ou DELETE. Par exemple, si une instruction INSERT TRIGGER se déclenche suite à une instruction INSERT qui a utilisé une clause TOP.  

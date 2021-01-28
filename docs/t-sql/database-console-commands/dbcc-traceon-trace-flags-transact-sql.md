@@ -2,7 +2,7 @@
 description: DBCC TRACEON - Indicateurs de trace (Transact-SQL)
 title: Indicateurs de trace (Transact-SQL) | Microsoft Docs
 ms.custom: ''
-ms.date: 03/27/2020
+ms.date: 01/19/2021
 ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: b971b540-1ac2-435b-b191-24399eb88265
 author: pmasl
 ms.author: pelopes
-ms.openlocfilehash: 0332cd817851ff1152d6dc476bd757d971e41bc2
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 2cc8cbcc737c1f77c11aee6826ab39bd8b1ec4f1
+ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170211"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597242"
 ---
 # <a name="dbcc-traceon---trace-flags-transact-sql"></a>DBCC TRACEON - Indicateurs de trace (Transact-SQL)
 
@@ -193,6 +193,7 @@ Le tableau ci-dessous répertorie et décrit les indicateurs de trace disponible
 |**9929**|Réduit les fichiers de point de contrôle en mémoire à 1 Mo chacun. Pour plus d’informations, consultez cet [article du support technique Microsoft](https://support.microsoft.com/kb/3147012).<br /><br />**Étendue** : globale uniquement|  
 |**9939**|Active les plans parallèles et l’analyse parallèle des tables à mémoire optimisée et des variables de table dans les opérations DML qui référencent des tables à mémoire optimisée ou des variables de table, tant qu’ils ne sont pas la cible de l’opération DML dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]. Pour plus d’informations, consultez cet [article du support technique Microsoft](https://support.microsoft.com/kb/4013877).<br /><br />**Remarque :** L’indicateur de trace 9939 n’est pas nécessaire si l’indicateur de trace 4199 est également activé explicitement.<br /><br />**Étendue** : globale, de session ou de requête (QUERYTRACEON)|   
 |**9944**|Active un correctif non défini par défaut pour ralentir la durée de récupération de base de données lorsqu’elle contient un grand nombre de tables optimisées en mémoire ou de types de tables optimisées en mémoire, et que le blocage avec les types d’attente PREMPTIVE_OS_FINDFILE ou PREEMPTIVE_OS_CREATEDIRECTORY peut être observé. Pour plus d’informations, consultez cet [article du support technique Microsoft](https://support.microsoft.com/kb/4090789) et cet [article du support technique Microsoft](https://support.microsoft.com/kb/4052338).<br /><br />**Étendue** : globale uniquement|  
+|**10054**|Désactive la règle de l’optimiseur de requête [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui décorrèle les sous-requêtes des prédicats OR en jointures externes.<br /><br />**Remarque :** Cet indicateur de trace s’applique à [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et aux builds ultérieures.<br /><br />**Remarque :** Veillez à tester soigneusement cette option avant de la déployer dans un environnement de production.<br /><br />**Étendue** : globale, de session ou de requête (QUERYTRACEON)| 
 |**10204**|Désactive la fusion/recompression au cours de la réorganisation d’index columnstore. Dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], quand un index columnstore est réorganisé, il existe une nouvelle fonctionnalité pour fusionner automatiquement les petits rowgroups compressés dans des rowgroups compressés plus importants, ainsi que pour recompresser les rowgroups avec un grand nombre de lignes supprimées.<br /><br />**Remarque :** L’indicateur de trace 10204 ne s’applique pas aux index columnstore qui sont créés sur des tables à mémoire optimisée.<br /><br />**Étendue** : globale ou de session|   
 |**10207**|Autorise les analyses de l’index Columnstore en cluster (CCI) pour ignorer les segments ou les métadonnées endommagés, ce qui permet l’extraction des données à partir d’une CCI endommagée. Pour plus d’informations, consultez cet [article du support technique Microsoft](https://support.microsoft.com/kb/3067257).<br /><br />**Étendue** : globale ou de session| 
 |**10316**|Permet de créer des index supplémentaires sur une [table temporelle de mise en lots à mémoire optimisée interne](../../relational-databases/tables/system-versioned-temporal-tables-with-memory-optimized-tables.md) à côté de l’index par défaut. Si vous avez un modèle de requête spécifique avec des colonnes qui ne sont pas couvertes par l’index par défaut, vous pouvez envisager d’en ajouter d’autres.<br /><br />**Remarque :** Les tables temporelles avec contrôle de version du système pour les tables à mémoire optimisée sont conçues pour fournir un débit transactionnel élevé. Sachez que la création d’index supplémentaires peut introduire une charge pour les opérations DML qui mettent à jour ou suppriment des lignes dans la table actuelle. Avec les index supplémentaires, vous devez trouver le juste équilibre entre les performances des requêtes temporelles et une charge DML supplémentaire.<br /><br />**Étendue** : globale ou de session|

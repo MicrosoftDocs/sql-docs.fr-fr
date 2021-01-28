@@ -4,16 +4,16 @@ description: Cet article présente les bonnes pratiques en matière de performan
 author: tejasaks
 ms.author: tejasaks
 ms.reviewer: vanto
-ms.date: 12/11/2020
+ms.date: 01/19/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: 89b8a7c087fb87ed911be640126ec81021b045a7
-ms.sourcegitcommit: 2991ad5324601c8618739915aec9b184a8a49c74
+ms.openlocfilehash: 9a73013e7d49523f8aba418a2961336998190fc5
+ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97323373"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98689108"
 ---
 # <a name="performance-best-practices-and-configuration-guidelines-for-sql-server-on-linux"></a>Meilleures pratiques en matière de performances et lignes directrices de configuration pour SQL Server sur Linux
 
@@ -33,7 +33,7 @@ Envisagez d’utiliser les paramètres de configuration suivants du système d�
 
 Le sous-système de stockage qui héberge des données, des journaux de transactions et d’autres fichiers associés (tels que les fichiers de point de contrôle pour OLTP en mémoire) doit être capable de gérer de manière appropriée des charges de travail moyennes et maximales. Normalement, dans des environnements locaux, le fournisseur de stockage prend en charge la configuration RAID matérielle appropriée avec agrégation par bandes sur plusieurs disques pour garantir des E/S par seconde, un débit et une redondance appropriés. Toutefois, cela peut varier selon les fournisseurs de stockage et les offres de stockage aux architectures variées.
 
-Pour un déploiement de SQL Server sur Linux sur des machines virtuelles Azure, envisagez d’utiliser un RAID logiciel pour répondre aux besoins d’E/S par seconde et de débit. Reportez-vous à l’article suivant lors de la configuration de SQL Server sur des machines virtuelles Azure pour des considérations de stockage similaires : [Configuration du stockage pour les machines virtuelles SQL Server](https://docs.microsoft.com/azure/azure-sql/virtual-machines/windows/storage-configuration)
+Pour un déploiement de SQL Server sur Linux sur des machines virtuelles Azure, envisagez d’utiliser un RAID logiciel pour répondre aux besoins d’E/S par seconde et de débit. Reportez-vous à l’article suivant lors de la configuration de SQL Server sur des machines virtuelles Azure pour des considérations de stockage similaires : [Configuration du stockage pour les machines virtuelles SQL Server](/azure/azure-sql/virtual-machines/windows/storage-configuration)
 
 Un exemple de création d’un RAID logiciel dans Linux sur des machines virtuelles Azure est présenté ci-dessous. Toutefois, vous devez utiliser le nombre approprié de disques de données pour le débit et les E/S par seconde requis pour les volumes, selon les exigences relatives aux données, aux journaux de transactions et aux E/S de tempdb. Dans cet exemple, huit disques de données ont été attachés à la machine virtuelle Azure : 4 pour héberger les fichiers de données, 2 pour les journaux des transactions et 2 pour la charge de travail tempdb.
 
@@ -48,6 +48,31 @@ mdadm --create --verbose /dev/md1 --level=raid10 --chunk=64K --raid-devices=2 /d
 # For tempdb volume, using 2 devices in RAID 0 configuration with 64KB stripes
 mdadm --create --verbose /dev/md2 --level=raid0 --chunk=64K --raid-devices=2 /dev/sdi /dev/sdj
 ```
+
+#### <a name="disk-partitioning-and-configuration-recommendations"></a>Recommandations relatives à la configuration et au partitionnement de disque
+
+Pour SQL Server, il est recommandé d’utiliser des configurations RAID. L’unité de bande (sunit) et la largeur de bande du système de fichiers déployé doivent correspondre à la géométrie RAID. Voici un exemple basé sur le système de fichiers XFS pour un volume de journal. 
+
+```bash
+# Creating a log volume, using 6 devices, in RAID 10 configuration with 64KB stripes
+mdadm --create --verbose /dev/md3 --level=raid10 --chunk=64K --raid-devices=6 /dev/sda /dev/sdb /dev/sdc /dev/sdd /dev/sde /dev/sdf
+
+mkfs.xfs /dev/sda1 -f -L log 
+meta-data=/dev/sda1              isize=512    agcount=32, agsize=18287648 blks 
+         =                       sectsz=4096  attr=2, projid32bit=1 
+         =                       crc=1        finobt=1, sparse=1, rmapbt=0 
+         =                       reflink=1 
+data     =                       bsize=4096   blocks=585204384, imaxpct=5 
+         =                       sunit=16     swidth=48 blks 
+naming   =version 2              bsize=4096   ascii-ci=0, ftype=1 
+log      =internal log           bsize=4096   blocks=285744, version=2 
+         =                       sectsz=4096  sunit=1 blks, lazy-count=1 
+realtime =none                   extsz=4096   blocks=0, rtextents=0 
+```
+
+Le tableau de journaux est une configuration RAID-10 à 6 lecteurs avec une bande de 64 Ko. Comme vous pouvez le voir :
+   1. « sunit=16 blks », 16*4096 (taille de bloc) = 64 Ko, ce qui correspond à la taille de bande. 
+   2. « swidth = 48 blks », swidth/sunit = 3, ce qui correspond au nombre de lecteurs de données dans le tableau, à l’exception des lecteurs de parité. 
 
 #### <a name="file-system-configuration-recommendation"></a>Configuration recommandée du système de fichiers
 
@@ -195,7 +220,8 @@ La table suivante fournit des suggestions pour les paramètres du disque :
 
 **Description :**
 
-- **vm.swappiness** : Ce paramètre contrôle le poids relatif octroyé à la permutation de la mémoire du runtime en limitant le noyau à permuter les pages de mémoire du processus SQL Server.
+- **vm.swappiness** : Ce paramètre contrôle le poids relatif donné à l’échange de la mémoire du processus de runtime par rapport au cache du système de fichiers. La valeur par défaut de ce paramètre est 60, ce qui signifie que le ratio de l’échange des pages de mémoire du processus de runtime par rapport à la suppression des pages de cache du système de fichiers est de 60:140. La définition de la valeur 1 indique une préférence forte pour la conservation de la mémoire du processus de runtime dans la mémoire physique au détriment du cache du système de fichiers. Étant donné que SQL Server utilise un pool de mémoires tampons comme cache de pages de données et qu’il préfère fortement écrire sur du matériel physique, contournant ainsi le cache du système de fichiers pour garantir une récupération fiable, une configuration d’échange agressive peut être bénéfique pour un serveur SQL Server dédié et hautement performant.
+Vous trouverez des informations supplémentaires dans [Documentation pour /proc/sys/vm/ - #swappiness](https://www.kernel.org/doc/html/latest/admin-guide/sysctl/vm.html#swappiness)
 
 - **vm.dirty_\** _ : Les accès en écriture aux fichiers SQL Server ne sont pas mis en cache pour répondre aux exigences d’intégrité des données. Ces paramètres permettent de bonnes performances d’écriture asynchrone et réduisent l’impact des E/S de stockage des écritures de mise en cache Linux en permettant une mise en cache suffisamment importante pendant la limitation du vidage.
 
@@ -245,6 +271,114 @@ tuned-adm profile mssql
 ```
 
 L’utilisation du profil **mssql** **_Tuned_ *_ configure l’option _* transparent_hugepage**.
+
+#### <a name="network-setting-recommendations"></a>Recommandations relatives aux paramètres réseau
+
+À l’instar des recommandations en matière de stockage et de processeur, il existe des recommandations spécifiques liées au réseau. Celles-ci sont listées ci-dessous pour référence. Les paramètres mentionnés ci-dessous ne sont pas disponibles sur toutes les cartes réseau. Pour obtenir des conseils sur chacune de ces options, contactez les fournisseurs de cartes réseau. Testez et configurez ces paramètres sur des environnements de développement avant de les appliquer à des environnements de production. Les options mentionnées ci-dessous sont expliquées avec des exemples, et les commandes utilisées sont propres à un type et à un fournisseur de carte réseau. 
+
+1. Configuration de la taille de la mémoire tampon du port réseau : Dans l’exemple ci-dessous, la carte d’interface réseau est nommée « eth0 » (carte réseau Intel). Pour les cartes réseau Intel, la taille de la mémoire tampon recommandée est de 4 Ko (4096). Vérifiez les valeurs maximales prédéfinies, puis effectuez la configuration à l’aide des exemples de commandes ci-dessous :
+
+ ```bash
+         #To check the pre-set maximums please run the command, example NIC name used here is:"eth0"
+         ethtool -g eth0
+         #command to set both the rx(recieve) and tx (transmit) buffer size to 4 KB. 
+         ethtool -G eth0 rx 4096 tx 4096
+         #command to check the value is properly configured is:
+         ethtool -g eth0
+  ```
+
+2. Activer les trames Jumbo : Avant d’activer les trames Jumbo, vérifiez que tous les commutateurs réseau, routeurs et autres éléments essentiels dans le chemin du paquet réseau entre les clients et SQL Server prennent en charge les trames Jumbo. Ce n’est que dans ce cas que l’activation des trames Jumbo peut améliorer les performances. Une fois les trames Jumbo activées, connectez-vous à SQL Server et remplacez la taille du paquet réseau par 8060 à l’aide de `sp_configure`, comme indiqué ci-dessous :
+
+```bash
+         #command to set jumbo frame to 9014 for a Intel NIC named eth0 is
+         ifconfig eth0 mtu 9014
+         #verify the setting using the command:
+         ip addr | grep 9014
+```
+
+```sql
+         sp_configure 'network packet size' , '8060'
+         go
+         reconfigure with override
+         go
+```
+
+3. Par défaut, nous vous recommandons de définir le port pour la fusion des IRQ RX/TX adaptatives, ce qui signifie que la remise des interruptions sera ajustée pour améliorer la latence quand le taux de paquets est faible et améliorer le débit quand le taux de paquets est élevé. Notez que ce paramètre peut ne pas être disponible dans l’ensemble de l’infrastructure réseau. Vérifiez donc l’infrastructure réseau existante et confirmez qu’elle est prise en charge. L’exemple ci-dessous concerne la carte d’interface réseau nommée « eth0 » (carte réseau Intel) :
+
+```bash
+         #command to set the port for adaptive RX/TX IRQ coalescing
+         echtool -C eth0 adaptive-rx on
+         echtool -C eth0 adaptive-tx on
+         #confirm the setting using the command:
+         ethtool -c eth0
+```
+
+> [!NOTE]
+> Pour obtenir un comportement prévisible dans les environnements hautes performances, comme ceux utilisés comme points de référence, désactivez la fusion des IRQ RX/TX adaptatives, puis définissez spécifiquement la fusion des interruptions RX/TX. Consultez les exemples de commandes pour désactiver la fusion des IRQ RX/TX, puis définissez spécifiquement les valeurs :
+
+```bash
+         #commands to disable adaptive RX/TX IRQ coalescing
+         echtool -C eth0 adaptive-rx off
+         echtool -C eth0 adaptive-tx off
+         #confirm the setting using the command:
+         ethtool -c eth0
+         #Let us set the rx-usecs parameter which specify how many microseconds after at least 1 packet is received before generating an interrupt, and the [irq] parameters are the corresponding delays in updating the #status when the interrupt is disabled. For Intel bases NICs below are good values to start with:
+         ethtool -C eth0 rx-usecs 100 tx-frames-irq 512
+         #confirm the setting using the command:
+         ethtool -c eth0
+```
+
+4. Nous vous recommandons également d’activer RSS (Receive-Side Scaling) et, par défaut, de combiner les côtés RX et TX des files d’attente RSS. Dans certains scénarios spécifiques impliquant le Support Microsoft, la désactivation de RSS a également permis d’améliorer les performances. Testez ce paramètre dans les environnements de test avant de l’appliquer à des environnements de production. L’exemple de commande illustré concerne les cartes réseau Intel.
+
+```bash
+         #command to get pre-set maximums
+         ethtool -l eth0 
+         #note the pre-set "Combined" maximum value. let's consider for this example, it is 8.
+         #command to combine the queues with the value reported in the pre-set "Combined" maximum value:
+         ethtool -L eth0 combined 8
+         #you can verify the setting using the command below
+         ethtool -l eth0
+```
+
+5. Utilisation de l’affinité d’IRQ des ports de la carte réseau. Pour obtenir les performances attendues en modifiant l’affinité d’IRQ, vous devez tenir compte de quelques paramètres importants tels que la gestion par Linux de la topologie du serveur, la pile de pilotes de la carte réseau, les paramètres par défaut et le paramètre irqbalance. Pour optimiser les paramètres d’affinité d’IRQ des ports de la carte réseau, vous devez connaître la topologie du serveur, désactiver irqbalance et utiliser des paramètres spécifiques au fournisseur de la carte réseau. Voici un exemple d’infrastructure réseau spécifique à Mellanox pour vous aider à comprendre la configuration. Notez que les commandes varient en fonction de l’environnement. Pour plus d’informations, contactez le fournisseur de la carte réseau :
+
+```bash
+         #disable irqbalance or get a snapshot of the IRQ settings and force the daemon to exit
+         systemctl disable irqbalance.service
+         #or
+         irqbalance --oneshot
+
+         #download the Mellanox mlnx_tuning_scripts tarball, https://www.mellanox.com/sites/default/files/downloads/tools/mlnx_tuning_scripts.tar.gz and extract it
+         tar -xvf mlnx_tuning_scripts.tar.gz
+         # be sure, common_irq_affinity.sh is executable. if not, 
+         # chmod +x common_irq_affinity.sh       
+
+         #display IRQ affinity for Mellanox NIC port; e.g eth0
+         ./show_irq_affinity.sh eth0
+
+         #optimize for best throughput performance
+         ./mlnx_tune -p HIGH_THROUGHPUT
+
+         #set hardware affinity to the NUMA node hosting physically the NIC and its port
+         ./set_irq_affinity_bynode.sh `\cat /sys/class/net/eth0/device/numa_node` eth0
+
+         #verify IRQ affinity
+         ./show_irq_affinity.sh eth0
+
+         #add IRQ coalescing optimizations
+         ethtool -C eth0 adaptive-rx off
+         ethtool -C eth0 adaptive-tx off
+         ethtool -C eth0  rx-usecs 750 tx-frames-irq 2048
+
+         #verify the settings
+         ethtool -c eth0
+```
+
+6. Une fois les modifications ci-dessus effectuées, vérifiez que la vitesse de la carte réseau correspond aux attentes à l’aide de la commande suivante :
+
+```bash
+         ethtool eth0 | grep -i Speed
+```
 
 #### <a name="additional-advanced-kernelos-configuration"></a>Configuration avancée supplémentaire du noyau/système d’exploitation
 

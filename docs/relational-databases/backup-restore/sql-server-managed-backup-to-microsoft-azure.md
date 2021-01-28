@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: afa01165-39e0-4efe-ac0e-664edb8599fd
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ce723dfbf0171d3c1885c1574bf681fbb2c8e714
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: fa041d70aa80d44194859c92ad58f518cfa14c45
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172561"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783354"
 ---
 # <a name="sql-server-managed-backup-to-microsoft-azure"></a>Gestion de sauvegarde de SQL Server sur Microsoft Azure
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -121,7 +121,7 @@ ms.locfileid: "98172561"
   
 -   [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] prend uniquement en charge les sauvegardes complètes de base de données et les sauvegardes de fichier journal. La sauvegarde automatique de fichier n'est pas prise en charge.  
   
--   Le service de stockage d’objets blob Microsoft Azure est la seule option de stockage de sauvegarde prise en charge. Les sauvegardes sur disque ou sur bande ne sont pas prises en charge.  
+-   Le service Stockage Blob Microsoft Azure est la seule option de stockage de sauvegarde prise en charge. Les sauvegardes sur disque ou sur bande ne sont pas prises en charge.  
   
 -   [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] utilise la fonctionnalité Sauvegarde vers l’objet blob de blocs. La taille maximale d’un objet blob de blocs est de 200 Go. Mais en utilisant l’agrégation, la taille maximale d’une sauvegarde individuelle peut atteindre 12 To. Si vos besoins en matière de sauvegarde sont supérieurs, envisagez d’utiliser la compression et testez la taille du fichier de sauvegarde avant de configurer la [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)]. Pour le test, effectuez une sauvegarde sur un disque local ou une sauvegarde manuelle dans Microsoft Azure Storage à l’aide de l’instruction Transact-SQL **BACKUP TO URL** . Pour plus d’informations, consultez [SQL Server Backup to URL](../../relational-databases/backup-restore/sql-server-backup-to-url.md).  
   

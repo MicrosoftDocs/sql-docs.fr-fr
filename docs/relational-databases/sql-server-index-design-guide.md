@@ -23,12 +23,12 @@ ms.assetid: 11f8017e-5bc3-4bab-8060-c16282cfbac1
 author: rothja
 ms.author: jroth
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 9d7e51afb97a5ff698ef9a504375783b93ef9640
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: d8e1c8af9fbd147c7a20ae773dc1797026240293
+ms.sourcegitcommit: 0576ce6d7c9c5514306a90e27fa621ef25825186
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170661"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98575728"
 ---
 # <a name="sql-server-index-architecture-and-design-guide"></a>Guide de conception et d’architecture d’index SQL Server
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -69,7 +69,7 @@ Pour plus d’informations sur les index de recherche en texte intégral, consul
  <sup>1</sup> Rowstore est la méthode standard de stockage des données de table relationnelles. Dans [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)], un rowstore fait référence à une table dans laquelle le format de stockage de données sous-jacent est un segment de mémoire, un arbre B-tree ([index cluster](#Clustered)) ou une table à mémoire optimisée.
 
 ### <a name="index-design-tasks"></a>Tâches de conception d'index  
- La stratégie de conception d'index que nous recommandons est constituée des tâches suivantes :  
+ La stratégie de conception d’index que nous recommandons est constituée des tâches suivantes :  
   
 1.  Comprendre les caractéristiques de la base de données elle-même. 
     * Par exemple, s’agit-il d’une base de données de traitement transactionnel en ligne (OLTP) dont les données sont souvent modifiées et devant garantir un débit élevé. À partir de [!INCLUDE[ssSQL14](../includes/sssql14-md.md)], les index et tables à mémoire optimisée sont particulièrement bien adaptés pour ce scénario, car ils offrent une structure sans verrous. Pour plus d’informations, consultez [Index pour les tables à mémoire optimisée](../relational-databases/in-memory-oltp/indexes-for-memory-optimized-tables.md), ou [Indications pour la conception d’index non-cluster pour les tables à mémoire optimisée](#inmem_nonclustered_index) et [Indications pour la conception d’index de hachage pour les tables à mémoire optimisée](#hash_index) dans ce guide.

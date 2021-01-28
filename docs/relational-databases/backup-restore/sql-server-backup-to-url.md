@@ -1,6 +1,6 @@
 ---
 title: Sauvegarde SQL Server vers une URL | Microsoft Docs
-description: Découvrez les concepts, les exigences, ainsi que les composants nécessaires à SQL Server pour utiliser le stockage Blob Microsoft Azure comme une destination de sauvegarde.
+description: Découvrez les concepts, les exigences et les composants nécessaires à SQL Server pour utiliser le service Stockage Blob Microsoft Azure comme destination de sauvegarde.
 ms.custom: ''
 ms.date: 03/25/2019
 ms.prod: sql
@@ -11,28 +11,28 @@ ms.topic: conceptual
 ms.assetid: 11be89e9-ff2a-4a94-ab5d-27d8edf9167d
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 5d548262cf26f763c14b4f8ac693491ba3d58a85
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 75f74fcfca0e039b6f11bc36fd6cf694dfb756b3
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96125442"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98765574"
 ---
 # <a name="sql-server-backup-to-url"></a>Sauvegarde SQL Server sur URL
 
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
-Cette rubrique présente les concepts, les conditions et les composants nécessaires pour utiliser le service de stockage d’objets blob Microsoft Azure comme destination de sauvegarde. Les fonctionnalités de sauvegarde et de restauration sont identiques ou similaires à l'utilisation de l'option DISK ou TAPE, à quelques différences près. Ces différences et quelques exemples de code sont inclus dans cette rubrique.  
+Cette rubrique présente les concepts, les exigences et les composants nécessaires pour utiliser le service Stockage Blob Microsoft Azure comme destination de sauvegarde. Les fonctionnalités de sauvegarde et de restauration sont identiques ou similaires à l'utilisation de l'option DISK ou TAPE, à quelques différences près. Ces différences et quelques exemples de code sont inclus dans cette rubrique.  
   
 ## <a name="overview"></a>Vue d’ensemble
 
-Il est important de comprendre les composants et leur interaction pour effectuer une sauvegarde ou une restauration à l’aide du service de stockage d’objets blob Microsoft Azure.  
+Il est important de comprendre les composants et leur interaction pour effectuer une sauvegarde ou une restauration à l’aide du service Stockage Blob Microsoft Azure.  
   
- La création d’un compte de stockage Azure dans votre abonnement Azure est la première étape de ce processus. Ce compte de stockage est un compte d’administrateur disposant des autorisations administratives complètes sur tous les conteneurs et objets créés avec le compte de stockage. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut soit utiliser le nom du compte de stockage Azure et la valeur de sa clé d’accès pour s’authentifier, ainsi qu’écrire et lire des objets blob dans le service de stockage Blob Microsoft Azure, soit utiliser un jeton de signature d’accès partagé généré sur des conteneurs spécifiques lui octroyant des droits de lecture et d’écriture. Pour plus d’informations sur les comptes de stockage Azure, consultez [À propos des comptes de stockage Azure](/azure/storage/common/storage-account-create) et, pour plus d’informations sur les signatures d’accès partagé, consultez [Signatures d’accès partagé, partie 1 : présentation du modèle SAP](/azure/storage/common/storage-sas-overview). Les informations d'identification de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] stockent ces informations et sont utilisées lors des opérations de sauvegarde ou de restauration.  
+ La création d’un compte de stockage Azure dans votre abonnement Azure est la première étape de ce processus. Ce compte de stockage est un compte d’administrateur disposant des autorisations administratives complètes sur tous les conteneurs et objets créés avec le compte de stockage. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut soit utiliser le nom du compte de stockage Azure et la valeur de sa clé d’accès pour s’authentifier et écrire/lire des objets blob dans le service Stockage Blob Microsoft Azure, soit utiliser un jeton de signature d’accès partagé généré sur des conteneurs spécifiques lui octroyant des droits de lecture et d’écriture. Pour plus d’informations sur les comptes de stockage Azure, consultez [À propos des comptes de stockage Azure](/azure/storage/common/storage-account-create) et, pour plus d’informations sur les signatures d’accès partagé, consultez [Signatures d’accès partagé, partie 1 : présentation du modèle SAP](/azure/storage/common/storage-sas-overview). Les informations d'identification de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] stockent ces informations et sont utilisées lors des opérations de sauvegarde ou de restauration.  
   
 ###  <a name="backup-to-block-blob-vs-page-blob"></a><a name="blockbloborpageblob"></a> Sauvegarde sur un objet blob de blocs vs un objet blob de pages
 
-Deux types d’objets blob peuvent être stockés dans le service de stockage d’objets blob Microsoft Azure : les objets blob de blocs et les objets blob de pages. Pour la version 2016 et les versions ultérieures de SQL Server, l’objet blob de blocs est préféré.
+Deux types d’objets blob peuvent être stockés dans le service Stockage Blob Microsoft Azure : les objets blob de blocs et les objets blob de pages. Pour la version 2016 et les versions ultérieures de SQL Server, l’objet blob de blocs est préféré.
 
 si la clé de stockage est utilisée dans les informations d’identification, l’objet blob de pages sera utilisé ; si la signature d’accès partagé est utilisée, l’objet blob de blocs sera utilisé.
 
@@ -63,17 +63,17 @@ Si l’instance SQL Server est hébergée sur Linux, notamment :
 
 Le seul modèle de sauvegarde sur URL pris en charge est celle qui s’effectue dans des objets blob de blocs, à l’aide de la Signature d’accès partagé.
 
-###  <a name="microsoft-azure-blob-storage-service"></a><a name="Blob"></a> Service de stockage d’objets blob Microsoft Azure  
+###  <a name="microsoft-azure-blob-storage-service"></a><a name="Blob"></a> Service Stockage Blob Microsoft Azure  
 
-**Compte de stockage :** Le compte de stockage constitue le point de départ de tous les services de stockage. Pour accéder au service de stockage Blob Microsoft Azure, commencez par créer un compte de stockage Azure. Pour plus d’informations, voir [Créez un compte de stockage](/azure/storage/common/storage-account-create).  
+**Compte de stockage :** Le compte de stockage constitue le point de départ de tous les services de stockage. Pour accéder au service Stockage Blob Microsoft Azure, commencez par créer un compte de stockage Azure. Pour plus d’informations, voir [Créez un compte de stockage](/azure/storage/common/storage-account-create).  
   
-**Conteneur :** un conteneur permet de regrouper un ensemble d’objets blob, et peut stocker un nombre illimité d’objets blob. Pour pouvoir écrire une sauvegarde [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans le service de stockage d’objets blob Microsoft Azure, vous devez avoir créé au moins le conteneur racine. Vous pouvez générer un jeton de signature d’accès partagé sur un conteneur, et accorder l’accès aux objets uniquement sur un conteneur spécifique.  
+**Conteneur :** un conteneur permet de regrouper un ensemble d’objets blob, et peut stocker un nombre illimité d’objets blob. Pour écrire une sauvegarde [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans le service Stockage Blob Microsoft Azure, au moins le conteneur racine doit être créé. Vous pouvez générer un jeton de signature d’accès partagé sur un conteneur, et accorder l’accès aux objets uniquement sur un conteneur spécifique.  
   
-**Objet blob :** Fichier de tout type et de toute taille. Deux types d’objets blob peuvent être stockés dans le service de stockage d’objets blob Microsoft Azure : les objets blob de blocs et les objets blob de pages. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] La sauvegarde peut utiliser les deux types d’objets blob en fonction de la syntaxe Transact-SQL utilisée. Les objets blob sont adressables à l’aide du format d’URL suivant : https://\<storage account>.blob.core.windows.net/\<container>/\<blob>. Pour plus d’informations sur le service de stockage d’objets blob Microsoft Azure, voir [Prise en main du stockage d’objets blob Azure à l’aide de .NET](https://www.windowsazure.com/develop/net/how-to-guides/blob-storage/). Pour plus d’informations sur les objets blob de pages et de blocs, voir [Présentation des objets blob de blocs, des objets blob d’ajout et des objets blob de pages](/rest/api/storageservices/Understanding-Block-Blobs--Append-Blobs--and-Page-Blobs).  
+**Objet blob :** Fichier de tout type et de toute taille. Deux types d’objets blob peuvent être stockés dans le service Stockage Blob Microsoft Azure : les objets blob de blocs et les objets blob de pages. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] La sauvegarde peut utiliser les deux types d’objets blob en fonction de la syntaxe Transact-SQL utilisée. Les objets blob sont adressables à l’aide du format d’URL suivant : https://\<storage account>.blob.core.windows.net/\<container>/\<blob>. Pour plus d’informations sur le service Stockage Blob Microsoft Azure, consultez le [guide pratique pour utiliser le Stockage Blob à l’aide de .NET](https://www.windowsazure.com/develop/net/how-to-guides/blob-storage/). Pour plus d’informations sur les objets blob de pages et de blocs, voir [Présentation des objets blob de blocs, des objets blob d’ajout et des objets blob de pages](/rest/api/storageservices/Understanding-Block-Blobs--Append-Blobs--and-Page-Blobs).  
   
 ![Stockage Blob Azure](../../relational-databases/backup-restore/media/backuptocloud-blobarchitecture.gif "Stockage Blob Azure")  
   
-**Capture instantanée Azure :** capture instantanée d’objet blob Azure effectuée à un point dans le temps. Pour plus d’informations, consultez [Création d’un instantané d’objet blob](/rest/api/storageservices/Creating-a-Snapshot-of-a-Blob). [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend désormais en charge les sauvegardes de captures instantanées Azure de fichiers de base de données stockés dans le service de stockage d’objets blob Microsoft Azure. Pour plus d’informations, consultez [Sauvegarde d’instantanés de fichiers pour les fichiers de base de données dans Azure](../../relational-databases/backup-restore/file-snapshot-backups-for-database-files-in-azure.md).  
+**Capture instantanée Azure :** capture instantanée d’objet blob Azure effectuée à un point dans le temps. Pour plus d’informations, consultez [Création d’un instantané d’objet blob](/rest/api/storageservices/Creating-a-Snapshot-of-a-Blob). La sauvegarde [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend désormais en charge les sauvegardes de captures instantanées Azure de fichiers de base de données stockés dans le service Stockage Blob Microsoft Azure. Pour plus d’informations, consultez [Sauvegarde d’instantanés de fichiers pour les fichiers de base de données dans Azure](../../relational-databases/backup-restore/file-snapshot-backups-for-database-files-in-azure.md).  
   
 ###  <a name="ssnoversion-components"></a><a name="sqlserver"></a> [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Composants  
 
@@ -81,7 +81,7 @@ Le seul modèle de sauvegarde sur URL pris en charge est celle qui s’effectue 
   
  Voici un exemple de valeur d’URL : http[s]://ACCOUNTNAME.blob.core.windows.net/\<CONTAINER>/\<FILENAME.bak>. HTTPS n'est pas obligatoire, mais est recommandé.  
   
-**Informations d’identification :** Les informations d'identification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont des objets utilisés pour stocker les informations d'authentification requises pour la connexion à une ressource en dehors de SQL Server. Ici, les processus de sauvegarde et de restauration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilisent des informations d’identification pour s’authentifier auprès du service de stockage d’objets blob Microsoft Azure ainsi que de son conteneur et de ses objets blob. Les informations d’identification contiennent soit le nom du compte de stockage et les valeurs de **clé d’accès** de celui-ci, soit l’URL du conteneur et son jeton de signature d’accès partagé. Une fois les informations d’identification créées, la syntaxe des instructions BACKUP/RESTORE détermine le type d’objet blob et les informations d’identification requises.  
+**Informations d’identification :** Les informations d'identification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont des objets utilisés pour stocker les informations d'authentification requises pour la connexion à une ressource en dehors de SQL Server. Ici, les processus de sauvegarde et de restauration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilisent des informations d’identification pour s’authentifier auprès du service Stockage Blob Microsoft Azure, de son conteneur et de ses objets blob. Les informations d’identification contiennent soit le nom du compte de stockage et les valeurs de **clé d’accès** de celui-ci, soit l’URL du conteneur et son jeton de signature d’accès partagé. Une fois les informations d’identification créées, la syntaxe des instructions BACKUP/RESTORE détermine le type d’objet blob et les informations d’identification requises.  
   
 Pour savoir comment créer une signature d’accès partagé, consultez les exemples [Création d’une signature d’accès partagé](../../relational-databases/backup-restore/sql-server-backup-to-url.md#SAS) plus loin dans cette rubrique. Pour savoir comment créer des informations d’identification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez les exemples [Création d’informations d’identification](../../relational-databases/backup-restore/sql-server-backup-to-url.md#credential) plus loin dans cette rubrique.  
   
@@ -91,9 +91,9 @@ Pour des informations sur d’autres exemples d’utilisation des informations d
   
 ##  <a name="security"></a><a name="security"></a> Sécurité  
 
-Vous trouverez ci-dessous les considérations de sécurité et conditions requises pour la sauvegarde et la restauration à l’aide du service de stockage d’objets blob Microsoft Azure.  
+Vous trouverez ci-dessous les considérations de sécurité et conditions requises pour la sauvegarde et la restauration à l’aide du service Stockage Blob Microsoft Azure.  
   
-- Lorsque vous créez un conteneur pour le service de stockage d’objets blob Microsoft Azure, nous vous recommandons de définir l’accès sur **Privé**. La définition d’un accès privé limite l’accès aux seuls utilisateurs ou comptes capables de fournir les informations nécessaires pour s’authentifier auprès du compte Azure.  
+- Quand vous créez un conteneur pour le service Stockage Blob Microsoft Azure, nous vous recommandons de définir un accès **privé**. La définition d’un accès privé limite l’accès aux seuls utilisateurs ou comptes capables de fournir les informations nécessaires pour s’authentifier auprès du compte Azure.  
   
     > [!IMPORTANT]  
     >  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] requiert que, soit un nom de compte Azure et une authentification par clé d’accès, soit une signature d’accès partagé (SAP) et un jeton d’accès soient stockés dans les informations d’identification de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Ces informations sont utilisées pour l’authentification auprès du compte Azure lors de l’exécution d’opérations de sauvegarde ou de restauration.  
@@ -127,7 +127,7 @@ Vous trouverez ci-dessous les considérations de sécurité et conditions requis
    - L’utilitaire [proxycfg.exe](/windows/win32/winhttp/proxycfg-exe--a-proxy-configuration-tool) sur Windows XP ou Windows Server 2003 et versions antérieures. 
    - L’utilitaire [netsh.exe](/windows/win32/winsock/netsh-exe) sur Windows Vista et Windows Server 2008 ou versions ultérieures. 
 
-- Le [stockage immuable pour le Stockage Blob Azure](/azure/storage/blobs/storage-blob-immutable-storage) n’est pas pris en charge. Affectez la valeur false à la stratégie **Stockage immuable**. 
+- Le [stockage immuable pour Stockage Blob Azure](/azure/storage/blobs/storage-blob-immutable-storage) n’est pas pris en charge. Affectez la valeur false à la stratégie **Stockage immuable**. 
   
 ## <a name="supported-arguments--statements"></a>Instructions et arguments pris en charge
 
@@ -157,7 +157,7 @@ Vous trouverez ci-dessous les considérations de sécurité et conditions requis
 |TO (URL)|O|Contrairement à DISK et TAPE, URL ne prend pas en charge la spécification ou la création d'un nom logique.|Cet argument est utilisé pour spécifier le chemin d'accès de l'URL du fichier de sauvegarde.|  
 |MIRROR TO|O|||  
 |**WITH OPTIONS :**||||  
-|CREDENTIAL|O||L’argument WITH CREDENTIAL est pris en charge uniquement en cas d’utilisation de l’option BACKUP TO URL pour sauvegarder vers le service de stockage d’objets blob Microsoft Azure, et uniquement si les informations d’identification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont définies en utilisant la clé du compte de stockage comme clé secrète.|  
+|CREDENTIAL|O||L’argument WITH CREDENTIAL est pris en charge uniquement en cas d’utilisation de l’option BACKUP TO URL pour sauvegarder dans le service Stockage Blob Microsoft Azure, et uniquement si les informations d’identification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont définies avec comme secret la clé du compte de stockage.|  
 |FILE_SNAPSHOT|O|||  
 |ENCRYPTION|O||Quand l’argument **WITH ENCRYPTION** est spécifié, la sauvegarde de capture instantanée de fichier [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] vérifie que la base de données entière a été chiffrée par TDE (Transparent Data Encryption) avant d’effectuer la sauvegarde et, dans ce cas, chiffre le fichier de sauvegarde de capture instantanée de fichier en utilisant l’algorithme spécifié pour TDE sur la base de données. Si des données de la base de données ne sont pas chiffrées (par exemple, si le processus de chiffrement n’est pas encore terminé), la sauvegarde échoue.|  
 |DIFFERENTIAL|O|||  
@@ -192,7 +192,7 @@ Vous trouverez ci-dessous les considérations de sécurité et conditions requis
 |LOG|O|||  
 |FROM (URL)|O||L'argument FROM URL est utilisé pour spécifier le chemin d'accès de l'URL du fichier de sauvegarde.|  
 |**WITH Options:**||||  
-|CREDENTIAL|O||L’argument WITH CREDENTIAL est pris en charge uniquement en cas d’utilisation de l’option RESTORE FROM URL pour restaurer à partir du service de stockage d’objets blob Microsoft Azure.|  
+|CREDENTIAL|O||L’argument WITH CREDENTIAL est pris en charge uniquement en cas d’utilisation de l’option RESTORE FROM URL pour une restauration à partir du service Stockage Blob Microsoft Azure.|  
 |PARTIAL|O|||  
 |RECOVERY &#124; NORECOVERY &#124; STANDBY|O|||  
 |LOADHISTORY|O|||  
@@ -261,7 +261,7 @@ Quand vous sélectionnez **URL** comme destination, certaines options de la page
 >  Pour créer un jeu de sauvegarde distribué, une sauvegarde de capture instantanée de fichier [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou des informations d’identification SQL utilisant un jeton d’accès partagé, vous devez utiliser Transact-SQL, Powershell ou C# plutôt que la tâche Sauvegarder dans l’Assistant Plan de Maintenance.  
   
 ##  <a name="restore-with-ssms"></a><a name="RestoreSSMS"></a> Restauration avec SSMS 
-La tâche Restaurer la base de données propose **URL** comme unité à partir de laquelle effectuer la restauration.  Les étapes suivantes décrivent l’utilisation de la tâche Restaurer pour restaurer à partir du service de stockage d’objets blob Microsoft Azure : 
+La tâche Restaurer la base de données propose **URL** comme unité à partir de laquelle effectuer la restauration.  Les étapes suivantes décrivent l’utilisation de la tâche Restaurer pour une restauration à partir du service Stockage Blob Microsoft Azure : 
   
 1. Cliquez avec le bouton droit sur **Bases de données** et sélectionnez **Restaurer la base de données**. 
   
@@ -358,7 +358,7 @@ Après avoir exécuté le script, copiez la commande `CREATE CREDENTIAL` dans un
 
 ###  <a name="create-a-credential"></a><a name="credential"></a> Création d’informations d’identification
 
-Les exemples suivants créent des informations d’identification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour l’authentification auprès du service de stockage d’objets blob Microsoft Azure. Procédez de l'une des manières suivantes :
+Les exemples suivants créent des informations d’identification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour l’authentification auprès du service Stockage Blob Microsoft Azure. Procédez de l'une des manières suivantes :
   
 1. **Utilisation d’une signature d’accès partagé**  
 
@@ -387,7 +387,7 @@ Les exemples suivants créent des informations d’identification [!INCLUDE[ssNo
   
 ### <a name="perform-a-full-database-backup"></a><a name="complete"></a> Effectuer une sauvegarde complète de la base de données  
 
-Les exemples suivants effectuent une sauvegarde complète de la base de données AdventureWorks2016 vers le service de stockage d’objets blob Microsoft Azure. Effectuez l’une des actions suivantes :
+Les exemples suivants effectuent une sauvegarde complète de la base de données AdventureWorks2016 dans le service Stockage Blob Microsoft Azure. Effectuez l’une des actions suivantes :
   
 1. **Vers une URL en utilisant une signature d’accès partagé**  
   

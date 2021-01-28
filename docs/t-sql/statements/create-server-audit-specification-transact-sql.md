@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: db77fa77-fedb-40ac-83e6-06343063e518
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: ddd4bb610c9ed7d9a5da70c9633c31a86cc5b034
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 66dd3b3b036bdbebcbd19dd52a65d2bf4ac45d1e
+ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96131282"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98783540"
 ---
 # <a name="create-server-audit-specification-transact-sql"></a>CREATE SERVER AUDIT SPECIFICATION (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -66,7 +66,7 @@ FOR SERVER AUDIT audit_name
 ## <a name="permissions"></a>Autorisations  
  Les utilisateurs disposant de l'autorisation ALTER ANY SERVER AUDIT peuvent créer des spécifications d'audit du serveur et les lier à un audit quelconque.  
   
- Une fois qu’une spécification d’audit du serveur est créée, elle est consultable par des principaux disposant des autorisations CONTROL SERVER ou ALTER ANY SERVER AUDIT, le compte sysadmin ou des principaux ayant un accès explicite à l’audit.  
+ Une fois qu’une spécification d’audit du serveur est créée, elle peut être consultée par des utilisateurs disposant de l’autorisation CONTROL SERVER, le compte sysadmin ou des principaux ayant un accès explicite à l’audit.  
   
 ## <a name="examples"></a>Exemples  
  L'exemple suivant crée une spécification de l'audit du serveur nommée `HIPAA_Audit_Specification` qui audite les échecs de connexion, pour un audit [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] nommé `HIPAA_Audit`.  

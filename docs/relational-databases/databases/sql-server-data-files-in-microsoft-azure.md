@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 38ffd9c2-18a5-43d2-b674-e425addec4e4
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 85d9e42b9c0ac537d6f33bd884b898374119972d
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 22413b2fff8a3b243e4723ecc66862980f8d8abf
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099326"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766255"
 ---
 # <a name="sql-server-data-files-in-microsoft-azure"></a>Fichiers de données SQL Server dans Microsoft Azure
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "98099326"
 Les fichiers de données SQL Server dans Microsoft Azure permettent une prise en charge native des fichiers de base de données SQL Server stockés en tant qu’objets blob. Cela vous permet de créer une base de données dans SQL Server s’exécutant localement ou sur une machine virtuelle dans Microsoft Azure, avec un emplacement de stockage dédié pour vos données dans le service Stockage Blob Azure de Microsoft. Cela simplifie également le processus de déplacement des bases de données entre les machines. Vous pouvez détacher des bases de données d’une machine pour les attacher à une autre machine. En outre, elle fournit un autre emplacement de stockage pour les fichiers de sauvegarde de base de données, ce qui permet de restaurer ces fichiers depuis ou vers le service Microsoft Azure Storage. Par conséquent, elle permet plusieurs solutions hybrides en offrant différents avantages en matière de virtualisation des données, de déplacement des données, de sécurité et de disponibilité, le tout à des coûts et une maintenance réduits pour une mise à l'échelle élastique et une haute disponibilité.
  
 > [!IMPORTANT]  
->  Le stockage des bases de données système dans le stockage d’objets blob Azure n’est pas recommandé et n’est pas pris en charge. 
+>  Le stockage de bases de données système dans Stockage Blob Azure n’est pas recommandé et n’est pas pris en charge. 
 
  Cette rubrique présente les concepts et les considérations essentiels au stockage des fichiers de données SQL Server dans le service de Stockage Microsoft Azure.  
   

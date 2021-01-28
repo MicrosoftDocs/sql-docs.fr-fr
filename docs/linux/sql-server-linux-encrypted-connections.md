@@ -10,12 +10,12 @@ ms.prod: sql
 ms.technology: linux
 helpviewer_keywords:
 - Linux, encrypted connections
-ms.openlocfilehash: 44903475ed2202ba3cc40de388ccc00511075dac
-ms.sourcegitcommit: 3ea082c778f6771b17d90fb597680ed334d3e0ec
+ms.openlocfilehash: 2d4848a8fa3661abd94ef63f3289261142998409
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "88088909"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766324"
 ---
 # <a name="encrypting-connections-to-sql-server-on-linux"></a>Chiffrement des connexions à SQL Server sur Linux
 
@@ -42,13 +42,16 @@ Le protocole TLS est utilisé pour chiffrer des connexions d'une application cli
 - **Gérer un certificat** (/CN doit correspondre au nom de domaine complet de votre hôte SQL Server)
 
 > [!NOTE]
-> Pour cet exemple, nous utilisons un certificat autosigné, ce qui ne doit pas être le cas pour les scénarios de production. Vous devez utiliser des certificats d’autorité de certification. 
+> Pour cet exemple, nous utilisons un certificat autosigné, ce qui ne doit pas être le cas pour les scénarios de production. Vous devez utiliser des certificats d’autorité de certification.<br>
+> Vérifiez que le ou les dossiers dans lesquels vous enregistrez vos certificats et vos clés privées sont accessibles au groupe ou à l’utilisateur MSSQL et que l’autorisation est définie avec la valeur 700 (drwx-----). Vous pouvez créer des dossiers manuellement avec une autorisation égale à 700 (drwx------) et détenue par le groupe ou l’utilisateur MSSQL. Vous pouvez également définir une autorisation égale à 755 (drwxr-xr-x) et détenue par un autre utilisateur, mais elle doit être accessible au groupe/utilisateur MSSQL. Par exemple, vous pouvez créer un dossier nommé « sslcert » sous le chemin « /var/opt/mssql/ », puis enregistrer le certificat et la clé privée avec une autorisation égale à 600 sur les fichiers, comme indiqué ci-dessous. 
 
 ```bash
 openssl req -x509 -nodes -newkey rsa:2048 -subj '/CN=mssql.contoso.com' -keyout mssql.key -out mssql.pem -days 365 
 sudo chown mssql:mssql mssql.pem mssql.key 
-sudo chmod 600 mssql.pem mssql.key   
-sudo mv mssql.pem /etc/ssl/certs/ 
+sudo chmod 600 mssql.pem mssql.key 
+# in this case we are saving the certificate to the certs folder under /etc/ssl/ which has the following permission 755(drwxr-xr-x)
+sudo mv mssql.pem /etc/ssl/certs/ drwxr-xr-x 
+# in this case we are saving the private key to the private folder under /etc/ssl/ with permissions set to 755(drwxr-xr-x)
 sudo mv mssql.key /etc/ssl/private/ 
 ```
 

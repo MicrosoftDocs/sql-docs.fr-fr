@@ -8,17 +8,25 @@ author: yualan
 ms.author: alayu
 ms.reviewer: maghan
 ms.custom: seodec18
-ms.date: 12/9/2020
-ms.openlocfilehash: 796499f38c9af2d7b2f6af8f860bb945d14bdac2
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.date: 1/22/2020
+ms.openlocfilehash: b0455de16e6808f4d2e67113976ae754830881ee
+ms.sourcegitcommit: 2bdf1f1ee88f4fe3e872227d025e965e95d1b2b4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596515"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98711945"
 ---
 # <a name="release-notes-for-azure-data-studio"></a>Notes de publication pour Azure Data Studio
 
 **[Téléchargez et installez la dernière version !](./download-azure-data-studio.md)**
+
+## <a name="december-2020-hotfix"></a>Décembre 2020 (correctif logiciel)
+
+22 janvier 2020 &nbsp; / &nbsp; version : 1.25.2
+
+| Modifier | Détails |
+| ------ | ------- |
+| Correction du bogue [13899](https://github.com/microsoft/azuredatastudio/issues/13899)| Défilement vers les liens de renvoi appropriés dans Notebooks |
 
 ## <a name="december-2020"></a>Décembre 2020
 
