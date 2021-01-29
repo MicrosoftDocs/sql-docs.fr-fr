@@ -8,13 +8,13 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 11/04/2019
-ms.openlocfilehash: a778fd92a44a229ae6806cef31a10b728f241865
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.date: 1/25/2021
+ms.openlocfilehash: 39c48fc84047deea9c2bf49751c9bc3a491023b7
+ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87987669"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98766391"
 ---
 # <a name="sql-assessment-api"></a>API d’évaluation SQL
 
@@ -22,17 +22,39 @@ L’API SQL Assessment fournit un mécanisme permettant de déterminer si votre 
 
 L’API SQL Assessment est utile pour vérifier si votre configuration de SQL Server est conforme aux bonnes pratiques recommandées. Après une évaluation initiale, vous pouvez suivre la stabilité de la configuration au moyen d’évaluations planifiées à intervalles réguliers.
 
-Vous pouvez utiliser l’API pour évaluer Azure SQL Managed Instance et SQL Server versions 2012 et ultérieures. SQL sur Linux est pris en charge.
+L’API peut être utilisée pour évaluer :
+ 
+* Azure SQL Database Managed Instance et SQL Server versions 2012 et ultérieures.
+
+* SQL sur les systèmes basés sur Linux.
+
+L’API est également utilisée par l’Extension d’évaluation SQL Server pour Azure Data Studio (ADS).
 
 ## <a name="rules"></a>Règles
 
-Les règles, parfois appelées « vérifications », sont définies dans des fichiers au format JSON. Ce format nécessite la spécification du nom et de la version d’un ensemble de règles. Ainsi, quand vous utilisez des ensembles de règles personnalisés, vous pouvez facilement savoir quelles recommandations proviennent de quel ensemble de règles.
+Les règles (parfois appelées « vérifications ») sont définies dans des fichiers au format JSON. Le format nécessite la spécification du nom et de la version d’un ensemble de règles. Quand vous utilisez des ensembles de règles personnalisés, vous pouvez facilement savoir quelles recommandations proviennent de quel ensemble de règles.
 
 L’ensemble de règles fourni par Microsoft est disponible sur GitHub. Pour plus d’informations, consultez le [dépôt d’exemples](https://aka.ms/sql-assessment-api).
 
-## <a name="sql-assessment-cmdlets-and-smo-extension"></a>Applets de commande SQL Assessment et extension SMO
+## <a name="sql-assessment-cmdlets-and-associated-extensions"></a>Applets de commande SQL Assessment et extensions associées
 
-L’API SQL Assessment fait partie de [SQL Server Management Objects (SMO)](../../relational-databases/server-management-objects-smo/installing-smo.md) et du [module SQL Server PowerShell](../../powershell/download-sql-server-ps-module.md), versions datées de juillet 2019 et ultérieures.
+L’API SQL Assessment fait partie de :
+
+* [Azure Data Studio (ADS)](../../azure-data-studio/what-is-azure-data-studio.md)
+
+    Version publiée à compter de juin 2020 et ultérieur.
+
+* [SMO (SQL Server Management Objects)](../../relational-databases/server-management-objects-smo/installing-smo.md)
+
+    Version publiée à compter de juillet 2019 et ultérieur.
+
+* [Module SQL Server PowerShell](../../powershell/download-sql-server-ps-module.md)
+
+    Version publiée à compter de juillet 2019 et ultérieur.
+
+Avant de commencer à utiliser l’API SQL Assessment, veillez à :
+
+* [Installer ADS](https://techcommunity.microsoft.com/t5/sql-server/released-sql-server-assessment-extension-for-azure-data-studio/ba-p/1470603)
 
 * [Installer SMO](../../relational-databases/server-management-objects-smo/installing-smo.md)
 
@@ -46,11 +68,11 @@ Le module SqlServer obtient deux nouvelles applets de commande pour utiliser l�
 
 SMO Framework est complété par l’extension d’API SQL Assessment qui fournit les méthodes suivantes :
 
-* **GetAssessmentItems**  : retourne les vérifications disponibles pour un objet SQL spécifique (IEnumerable<…>)
+* **GetAssessmentItems** : retourne les vérifications disponibles pour un objet SQL spécifique (IEnumerable<…>)
 
-* **GetAssessmentResults**  : évalue de manière synchrone l’évaluation et retourne les résultats et les erreurs éventuelles (IEnumerable<…>)
+* **GetAssessmentResults** : évalue de manière synchrone l’évaluation et retourne les résultats et les erreurs éventuelles (IEnumerable<…>)
 
-* **GetAssessmentResultsList**  : évalue de manière synchrone l’évaluation et retourne les résultats et les erreurs éventuelles (Task<…>)
+* **GetAssessmentResultsList** : évalue de manière synchrone l’évaluation et retourne les résultats et les erreurs éventuelles (Task<…>)
 
 ## <a name="get-started-using-sql-assessment-cmdlets"></a>Commencer à utiliser les applets de commande SQL Assessment
 
