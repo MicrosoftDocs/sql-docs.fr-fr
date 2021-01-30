@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset15::PageCount
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b601b56c-0ac4-44ee-bc91-c3d2d104f00a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 335f28c570ef240db6d65b66ef33f907d0202816
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 07eb8ef6a51b67b70b1a0bd4b8fecba116df58a4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990200"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166928"
 ---
 # <a name="pagecount-property-ado"></a>PageCount, propriété (ADO)
 Indique le nombre de pages de données que contient l’objet [Recordset](./recordset-object-ado.md) .  

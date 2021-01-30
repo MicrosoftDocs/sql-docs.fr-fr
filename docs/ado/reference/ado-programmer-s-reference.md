@@ -7,18 +7,18 @@ ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
 ms.technology: ado
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ADO, reference
 ms.assetid: 6dc27c85-84e1-472a-b057-d1854b8c98a3
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3a0e303111f396fe3905f251ca246bc5d861aeab
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 9b2c42c01eb19ae2ffabf709b7f33cd1cfaa8554
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641200"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164384"
 ---
 # <a name="ado-programmer39s-reference"></a>Guide de référence du programmeur ADO&#39;
 Cette section contient les rubriques suivantes :  

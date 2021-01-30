@@ -7,19 +7,19 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - Reset method [ADO]
 ms.assetid: 3957197a-f543-4d6b-9e11-67a77c2063b7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: fcebd112b389fe98b69b25852ef0504e88890261
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: b4d1fa7427fd4c55ea8c53702ef4ac6a4a68b9b8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724258"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166142"
 ---
 # <a name="reset-method-rds"></a>Reset, méthode (RDS)
 Exécute le tri ou le filtre sur un **jeu d’enregistrements** côté client en fonction des propriétés de tri et de filtre spécifiées.  
@@ -42,9 +42,9 @@ DataControl.Reset(value)
  Facultatif. Valeur **booléenne** qui est **true** (valeur par défaut) si vous souhaitez filtrer sur l’ensemble de lignes « filtré » actuel. **False** indique que vous filtrez sur l’ensemble de lignes d’origine, en supprimant toutes les options de filtre précédentes.  
   
 ## <a name="remarks"></a>Notes  
- Les propriétés [SortColumn](./sortcolumn-property-rds.md), [SortDirection](./sortdirection-property-rds.md), [FilterValue](./filtervalue-property-rds.md), [FilterCriterion](./filtercriterion-property-rds.md)et [FilterColumn](./filtercolumn-property-rds.md) fournissent des fonctionnalités de tri et de filtrage sur le cache côté client. La fonctionnalité de tri commande les enregistrements par valeurs d’une colonne. La fonctionnalité de filtrage affiche un sous-ensemble d’enregistrements basés sur des critères de recherche, tandis que le [jeu d’enregistrements](../ado-api/recordset-object-ado.md) complet est conservé dans le cache. La méthode de **réinitialisation** exécute les critères et remplace le **jeu d’enregistrements** actuel par un **jeu d’enregistrements**pouvant être mis à jour.  
+ Les propriétés [SortColumn](./sortcolumn-property-rds.md), [SortDirection](./sortdirection-property-rds.md), [FilterValue](./filtervalue-property-rds.md), [FilterCriterion](./filtercriterion-property-rds.md)et [FilterColumn](./filtercolumn-property-rds.md) fournissent des fonctionnalités de tri et de filtrage sur le cache côté client. La fonctionnalité de tri commande les enregistrements par valeurs d’une colonne. La fonctionnalité de filtrage affiche un sous-ensemble d’enregistrements basés sur des critères de recherche, tandis que le [jeu d’enregistrements](../ado-api/recordset-object-ado.md) complet est conservé dans le cache. La méthode de **réinitialisation** exécute les critères et remplace le **jeu d’enregistrements** actuel par un **jeu d’enregistrements** pouvant être mis à jour.  
   
- Si des modifications ont été apportées aux données d’origine qui n’ont pas été envoyées, la méthode de **réinitialisation** échoue. Tout d’abord, utilisez la méthode [SubmitChanges](./submitchanges-method-rds.md) pour enregistrer les modifications apportées à un **jeu d’enregistrements**en lecture/écriture, puis utilisez la méthode **Reset** pour trier ou filtrer les enregistrements.  
+ Si des modifications ont été apportées aux données d’origine qui n’ont pas été envoyées, la méthode de **réinitialisation** échoue. Tout d’abord, utilisez la méthode [SubmitChanges](./submitchanges-method-rds.md) pour enregistrer les modifications apportées à un **jeu d’enregistrements** en lecture/écriture, puis utilisez la méthode **Reset** pour trier ou filtrer les enregistrements.  
   
  Si vous souhaitez exécuter plusieurs filtres sur votre ensemble de lignes, vous pouvez utiliser l’argument *booléen* facultatif avec la méthode de **réinitialisation** . L’exemple suivant vous montre comment procéder :  
   

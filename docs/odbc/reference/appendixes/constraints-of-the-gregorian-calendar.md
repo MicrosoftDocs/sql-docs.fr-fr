@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - data types [ODBC], Gregorian calendar
 - Gregorian calendar [ODBC]
 ms.assetid: 70667410-c582-4369-8e06-9d98e21cd2bf
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e473c090a889d54de5ca63bd10b07b410936223f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: dbab6e1ef26843807c67e3d3daba9a66e054d8f1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88339365"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165404"
 ---
 # <a name="constraints-of-the-gregorian-calendar"></a>Contraintes du calendrier grégorien
 Les types de données date et DateTime, et les champs de fin des types de données Interval, doivent être conformes aux contraintes du calendrier grégorien. Ces contraintes sont les suivantes :  

@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ADO, methods
 - methods [ADO]
 ms.assetid: a38c5670-ba28-44f3-bd5b-fcb46880e904
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 13e126f070f188e47582227fabf4a1e37d6901a3
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: dd98478cad7c13b2f4e6950586c1317c1d5d37dd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976370"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164911"
 ---
 # <a name="ado-methods"></a>Méthodes ADO
 
@@ -27,13 +27,13 @@ ms.locfileid: "88976370"
 |-|-|  
 |[AddNew](./addnew-method-ado.md)|Crée un nouvel enregistrement pour un objet **Recordset** pouvant être mis à jour.|  
 |[Append](./append-method-ado.md)|Ajoute un objet à une collection. Si la collection est de **champs**, un nouvel objet de **champ** peut être créé avant d’être ajouté à la collection.|  
-|[AppendChunk](./appendchunk-method-ado.md)|Ajoute des données à un **champ**de données de texte ou binaires volumineux, ou à un objet de **paramètre** .|  
+|[AppendChunk](./appendchunk-method-ado.md)|Ajoute des données à un **champ** de données de texte ou binaires volumineux, ou à un objet de **paramètre** .|  
 |[BeginTrans, CommitTrans et RollbackTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md)|Gère le traitement des transactions dans un objet de **connexion** comme suit :<br /><br /> **BeginTrans** -commence une nouvelle transaction.<br /><br /> **CommitTrans** : enregistre les modifications et met fin à la transaction en cours. Elle peut également démarrer une nouvelle transaction.<br /><br /> **RollbackTrans** -annule toutes les modifications et met fin à la transaction en cours. Elle peut également démarrer une nouvelle transaction.|  
 |[Annuler](./cancel-method-ado.md)|Annule l’exécution d’un appel de méthode asynchrone en attente.|  
 |[CancelBatch](./cancelbatch-method-ado.md)|Annule une mise à jour par lot en attente.|  
 |[CancelUpdate](./cancelupdate-method-ado.md)|Annule toutes les modifications apportées à la ligne actuelle ou nouvelle d’un objet **Recordset** , ou à la collection **Fields** d’un objet **Record** , avant d’appeler la méthode **Update** .|  
-|[Clear](./clear-method-ado.md)|Supprime tous les objets **Error** de la collection **Errors** .|  
-|[Clone](./clone-method-ado.md)|Crée un objet **Recordset** dupliqué à partir d’un objet **Recordset** existant. Spécifie éventuellement que le clone doit être en lecture seule.|  
+|[Effacer](./clear-method-ado.md)|Supprime tous les objets **Error** de la collection **Errors** .|  
+|[Répliqué](./clone-method-ado.md)|Crée un objet **Recordset** dupliqué à partir d’un objet **Recordset** existant. Spécifie éventuellement que le clone doit être en lecture seule.|  
 |[Close](./close-method-ado.md)|Ferme un objet ouvert et tous les objets dépendants.|  
 |[CompareBookmarks,](./comparebookmarks-method-ado.md)|Compare deux signets et retourne une indication de leurs valeurs relatives.|  
 |[CopyRecord](./copyrecord-method-ado.md)|Copie un fichier ou un répertoire, ainsi que son contenu, vers un autre emplacement.|  

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Column
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6e772783-1bc8-4ea7-94b2-7d7a52ea5c47
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b6cc15e82091da2161a01c1c0a468e86095dd0d6
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 7501381174ddf522b60a596cd5846f012d59d88e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88985100"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164261"
 ---
 # <a name="column-object-adox"></a>Column, objet (ADOX)
 Représente une colonne d’une table, d’un index ou d’une clé.  

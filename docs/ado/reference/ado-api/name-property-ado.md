@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Parameter::Name
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: cfd0e29c-8310-44ab-85c3-5761184b865d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0636b77959a003248ee798684fc74c6309145737
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 384c1e96eb735d8cf9569039f45c2d420679ce0e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990480"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167065"
 ---
 # <a name="name-property-ado"></a>Name, propriété (ADO)
 Indique le nom d’un objet.  
@@ -31,7 +31,7 @@ Indique le nom d’un objet.
  Définit ou retourne une valeur de **chaîne** qui indique le nom d’un objet.  
   
 ## <a name="remarks"></a>Notes  
- Utilisez la propriété **Name** pour attribuer un nom à une **commande**, une **propriété**, un **champ**ou un objet **Parameter** ou pour en récupérer le nom.  
+ Utilisez la propriété **Name** pour attribuer un nom à une **commande**, une **propriété**, un **champ** ou un objet **Parameter** ou pour en récupérer le nom.  
   
  La valeur est en lecture/écriture sur un objet **Command** et en lecture seule sur un objet **Property** .  
   

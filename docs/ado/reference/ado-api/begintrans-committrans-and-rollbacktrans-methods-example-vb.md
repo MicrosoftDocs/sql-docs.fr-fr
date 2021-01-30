@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: aa7de324-cd71-4bd0-8043-24229f4a785e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ac6978aba505110066229bc13f359e9215a25611
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 02b1296a81bed339071995d66bc9c1454ae86aa8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88975920"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164793"
 ---
 # <a name="begintrans-committrans-and-rollbacktrans-methods-example-vb"></a>BeginTrans, CommitTrans et RollbackTrans, exemples de méthodes (VB)
-Cet exemple modifie le type de livre de tous les livres de psychologie dans la table ***titles*** de la base de données. Une fois que la méthode [BeginTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) a démarré une transaction qui isole toutes les modifications apportées à la table ***titles*** , la méthode [CommitTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) enregistre les modifications. Vous pouvez utiliser la méthode [RollbackTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) pour annuler les modifications que vous avez enregistrées à l’aide de la méthode [Update](./update-method.md) .  
+Cet exemple modifie le type de livre de tous les livres de psychologie dans la table ***titles** _ de la base de données. Une fois que la méthode [BeginTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) a démarré une transaction qui isole toutes les modifications apportées à la table _ *_titles_**, la méthode [CommitTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) enregistre les modifications. Vous pouvez utiliser la méthode [RollbackTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) pour annuler les modifications que vous avez enregistrées à l’aide de la méthode [Update](./update-method.md) .  
   
 ```  
 'BeginBeginTransVB  

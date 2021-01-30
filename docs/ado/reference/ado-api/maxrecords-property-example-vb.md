@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 630a3be4-7a87-41cf-997e-8bb50d89db1e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1873c6a3d887ddfbcccf9f51f86a94f882047e77
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 8e484eb17d263cf94cb4e270c8f31f5b04144f5e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990620"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167127"
 ---
 # <a name="maxrecords-property-example-vb"></a>MaxRecords, exemple de propriété (VB)
 Cet exemple utilise la propriété [maxRecords](./maxrecords-property-ado.md) pour ouvrir un [jeu d’enregistrements](./recordset-object-ado.md) contenant les 10 titres les plus chers dans la table ***titles*** .  

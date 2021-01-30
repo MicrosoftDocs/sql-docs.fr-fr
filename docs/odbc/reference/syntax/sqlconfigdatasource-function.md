@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLConfigDataSource
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: f8d6e342-c010-434e-b1cd-f5371fb50a14
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8849ce5528380e4164a420227395bce5aa436eaa
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ddcfac8f1f211884aa3f46db3f56a2762778ed92
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88448742"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165336"
 ---
 # <a name="sqlconfigdatasource-function"></a>Fonction SQLConfigDataSource
 **Conformité**  
@@ -78,9 +78,9 @@ BOOL SQLConfigDataSource(
  La fonction retourne TRUE si elle réussit, FALSe en cas d’échec. Si aucune entrée n’existe dans les informations système lorsque cette fonction est appelée, la fonction retourne FALSe.  
   
 ## <a name="diagnostics"></a>Diagnostics  
- Lorsque **SQLConfigDataSource** retourne false, une valeur * \* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs * \* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
+ Lorsque **SQLConfigDataSource** retourne false, une valeur *\* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs *\* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur|Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur générale du programme d’installation|Une erreur s’est produite pour laquelle aucune erreur d’installation spécifique n’a été rencontrée.|  
 |ODBC_ERROR_INVALID_HWND|Handle de fenêtre non valide|L’argument *hwndParent* n’est pas valide ou a la valeur null.|  
@@ -96,7 +96,7 @@ BOOL SQLConfigDataSource(
   
  **SQLConfigDataSource** retourne false s’il ne parvient pas à trouver ou à charger la dll d’installation ou si l’utilisateur annule la boîte de dialogue. Dans le cas contraire, elle retourne l’État qu’elle a reçu de **ConfigDSN**.  
   
- **SQLConfigDataSource** mappe les *FRequest*DSN du système aux *fRequest*de DSN utilisateur (ODBC_ADD_SYS_DSN à ODBC_ADD_DSN, ODBC_CONFIG_SYS_DSN à ODBC_CONFIG_DSN et ODBC_REMOVE_SYS_DSN à ODBC_REMOVE_DSN). Pour distinguer les DSN utilisateur et système, **SQLConfigDataSource** définit le mode de configuration du programme d’installation conformément au tableau suivant. Avant de retourner, **SQLConfigDataSource** réinitialise le mode de configuration sur BOTHDSN. **ConfigDSN** (implémenté par les pilotes) doit appeler **SQLWriteDSNToIni** et **SQLWritePrivateProfileString** pour prendre en charge un DSN système. Pour plus d’informations, consultez [fonction ConfigDSN](../../../odbc/reference/syntax/configdsn-function.md).  
+ **SQLConfigDataSource** mappe les *FRequest* DSN du système aux *fRequest* de DSN utilisateur (ODBC_ADD_SYS_DSN à ODBC_ADD_DSN, ODBC_CONFIG_SYS_DSN à ODBC_CONFIG_DSN et ODBC_REMOVE_SYS_DSN à ODBC_REMOVE_DSN). Pour distinguer les DSN utilisateur et système, **SQLConfigDataSource** définit le mode de configuration du programme d’installation conformément au tableau suivant. Avant de retourner, **SQLConfigDataSource** réinitialise le mode de configuration sur BOTHDSN. **ConfigDSN** (implémenté par les pilotes) doit appeler **SQLWriteDSNToIni** et **SQLWritePrivateProfileString** pour prendre en charge un DSN système. Pour plus d’informations, consultez [fonction ConfigDSN](../../../odbc/reference/syntax/configdsn-function.md).  
   
 |*fRequest*|Mode de configuration|  
 |----------------|------------------------|  

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ede1415f-c3df-4cc5-a05b-2576b2b84b60
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ff23c57ae3ecf25e7328d304f9716ad24f2aba7e
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: ecf73bd3708fc33d8ada106dcaa4fb6e1f0b5503
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989739"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166694"
 ---
 # <a name="recordset-object-ado"></a>Recordset, objet (ADO)
 Représente l’ensemble des enregistrements d’une table de base ou les résultats d’une commande exécutée. À tout moment, l’objet **Recordset** fait référence à un seul enregistrement dans le jeu en tant qu’enregistrement actif.  
@@ -39,7 +39,7 @@ Représente l’ensemble des enregistrements d’une table de base ou les résul
   
 -   **Curseur statique** Fournit une copie statique d’un ensemble d’enregistrements que vous pouvez utiliser pour rechercher des données ou générer des rapports. autorise toujours les signets et, par conséquent, autorise tous les types de déplacement via le **Recordset**. Les ajouts, modifications ou suppressions effectués par d’autres utilisateurs ne sont pas visibles. Il s’agit du seul type de curseur autorisé lorsque vous ouvrez un objet **Recordset** côté client.  
   
--   **Curseur avant uniquement** Vous permet de faire défiler le **Recordset**uniquement vers l’avant. Les ajouts, modifications ou suppressions effectués par d’autres utilisateurs ne sont pas visibles. Cela améliore les performances dans les situations où vous devez effectuer une seule passe dans un **jeu d’enregistrements**.  
+-   **Curseur avant uniquement** Vous permet de faire défiler le **Recordset** uniquement vers l’avant. Les ajouts, modifications ou suppressions effectués par d’autres utilisateurs ne sont pas visibles. Cela améliore les performances dans les situations où vous devez effectuer une seule passe dans un **jeu d’enregistrements**.  
   
  Définissez la propriété [CursorType](./cursortype-property-ado.md) avant d’ouvrir le **jeu d’enregistrements** pour choisir le type de curseur, ou transmettez un argument *CursorType* avec la méthode [Open](./open-method-ado-recordset.md) . Certains fournisseurs ne prennent pas en charge tous les types de curseurs. Consultez la documentation du fournisseur. Si vous ne spécifiez pas de type de curseur, ADO ouvre un curseur avant uniquement par défaut.  
   
@@ -49,13 +49,13 @@ Représente l’ensemble des enregistrements d’une table de base ou les résul
   
  Lorsque vous ouvrez un **jeu d’enregistrements**, l’enregistrement actif est positionné sur le premier enregistrement (le cas échéant) et les propriétés [BOF](./bof-eof-properties-ado.md) et [EOF](./bof-eof-properties-ado.md) ont la valeur **false**. S’il n’y a aucun enregistrement, les paramètres de propriété **BOF** et **EOF** ont la **valeur true**.  
   
- Vous pouvez utiliser les méthodes [MoveFirst](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md), **MoveLast**, **MoveNext**et **MovePrevious** . méthode [Move](./move-method-ado.md) ; et les propriétés [AbsolutePosition](./absoluteposition-property-ado.md), [AbsolutePage](./absolutepage-property-ado.md)et [Filter](./filter-property.md) pour repositionner l’enregistrement actif, en supposant que le fournisseur prend en charge les fonctionnalités pertinentes. Les objets **Recordset** avant uniquement prennent uniquement en charge la méthode [MoveNext](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md) . Lorsque vous utilisez les méthodes **Move** pour visiter chaque enregistrement (ou énumérer le **Recordset**), vous pouvez utiliser les propriétés **BOF** et **EOF** pour déterminer si vous avez dépassé le début ou la fin du **Recordset**.  
+ Vous pouvez utiliser les méthodes [MoveFirst](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md), **MoveLast**, **MoveNext** et **MovePrevious** . méthode [Move](./move-method-ado.md) ; et les propriétés [AbsolutePosition](./absoluteposition-property-ado.md), [AbsolutePage](./absolutepage-property-ado.md)et [Filter](./filter-property.md) pour repositionner l’enregistrement actif, en supposant que le fournisseur prend en charge les fonctionnalités pertinentes. Les objets **Recordset** avant uniquement prennent uniquement en charge la méthode [MoveNext](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md) . Lorsque vous utilisez les méthodes **Move** pour visiter chaque enregistrement (ou énumérer le **Recordset**), vous pouvez utiliser les propriétés **BOF** et **EOF** pour déterminer si vous avez dépassé le début ou la fin du **Recordset**.  
   
  Avant d’utiliser une fonctionnalité d’un objet **Recordset** , vous devez appeler la méthode **supports** sur l’objet pour vérifier que la fonctionnalité est prise en charge ou disponible. Vous ne devez pas utiliser la fonctionnalité quand la méthode **prend en charge** retourne la valeur false. Par exemple, vous pouvez utiliser la méthode **MovePrevious** uniquement si `Recordset.Supports(adMovePrevious)` retourne la **valeur true**. Dans le cas contraire, vous obtiendrez une erreur, car l’objet **Recordset** a peut-être été fermé et les fonctionnalités rendues indisponibles sur l’instance. Si une fonctionnalité qui vous intéresse n’est pas prise en charge, **prend** également la valeur false. Dans ce cas, vous devez éviter d’appeler la propriété ou la méthode correspondante sur l’objet **Recordset** .  
   
  Les objets **Recordset** peuvent prendre en charge deux types de mise à jour : immédiat et par lot. Dans la mise à jour immédiate, toutes les modifications apportées aux données sont écrites immédiatement dans la source de données sous-jacente une fois que vous avez appelé la méthode [Update](./update-method.md) . Vous pouvez également passer des tableaux de valeurs en tant que paramètres avec les méthodes [AddNew](./addnew-method-ado.md) et **Update** et mettre à jour plusieurs champs simultanément dans un enregistrement.  
   
- Si un fournisseur prend en charge la mise à jour par lot, vous pouvez faire en sorte que le cache du fournisseur soit modifié en plusieurs enregistrements, puis les transmette en un seul appel à la base de données avec la méthode [UpdateBatch](./updatebatch-method.md) . Cela s’applique aux modifications apportées avec les méthodes **AddNew**, **Update**et [Delete](./delete-method-ado-recordset.md) . Après avoir appelé la méthode **UpdateBatch** , vous pouvez utiliser la propriété [Status](./status-property-ado-recordset.md) pour rechercher les éventuels conflits de données afin de les résoudre.  
+ Si un fournisseur prend en charge la mise à jour par lot, vous pouvez faire en sorte que le cache du fournisseur soit modifié en plusieurs enregistrements, puis les transmette en un seul appel à la base de données avec la méthode [UpdateBatch](./updatebatch-method.md) . Cela s’applique aux modifications apportées avec les méthodes **AddNew**, **Update** et [Delete](./delete-method-ado-recordset.md) . Après avoir appelé la méthode **UpdateBatch** , vous pouvez utiliser la propriété [Status](./status-property-ado-recordset.md) pour rechercher les éventuels conflits de données afin de les résoudre.  
   
 > [!NOTE]
 >  Pour exécuter une requête sans utiliser d’objet [Command](./command-object-ado.md) , transmettez une chaîne de requête à la méthode **Open** d’un objet **Recordset** . Toutefois, un objet **Command** est requis lorsque vous souhaitez conserver le texte de la commande et le réexécuter, ou utiliser des paramètres de requête.  

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Recordset::Save
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: ed3d9678-5c28-4e61-8bb3-7dfb66d99cf5
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a32419db6e4dd04cc57b31b1d9267e80a30db41d
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 54e75b3ed86a1522c7334f6948b2a5a105971c9f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97638129"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166598"
 ---
 # <a name="save-method"></a>Save, méthode
 Enregistre le [Recordset](./recordset-object-ado.md) dans un objet de fichier ou de [flux](./stream-object-ado.md) .  
@@ -41,7 +41,7 @@ recordset.Save Destination, PersistFormat
  *PersistFormat*  
  Facultatif. Valeur [PersistFormatEnum](./persistformatenum.md) qui spécifie le format dans lequel l' **objet Recordset** doit être enregistré (XML ou ADTG). La valeur par défaut est **adPersistADTG**.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La méthode **Save Method** ne peut être appelée que sur un **Recordset** ouvert. Utilisez la méthode [Open (ADO Recordset)](./open-method-ado-recordset.md) pour restaurer ultérieurement le **Recordset** de la *destination*.  
   
  Si la propriété Filter de la [propriété](./filter-property.md) est appliquée à l' **objet Recordset**, seules les lignes accessibles sous le filtre sont enregistrées. Si le **jeu d’enregistrements** est hiérarchique, le **jeu d’enregistrements** enfant actuel et ses enfants sont enregistrés, y compris le **Recordset** parent. Si la méthode Save d’un **jeu d’enregistrements** enfant est appelée, l’enfant et tous ses enfants sont enregistrés, mais le parent n’est pas.  

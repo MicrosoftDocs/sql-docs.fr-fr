@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - properties [ADO]
 - ADO properties
 ms.assetid: 0ac0d1a7-6c7a-4f4c-b115-428935e0f98b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a8a53f4b901209a1ef59be6ca2eb8b531bc52d7c
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: bdacd558161c09d1d43f590f9f355e14da262b14
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976280"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164891"
 ---
 # <a name="ado-properties"></a>Propriétés ADO
 
@@ -28,7 +28,7 @@ ms.locfileid: "88976280"
 |[AbsolutePage](./absolutepage-property-ado.md)|Indique sur quelle page se trouve l’enregistrement en cours.|  
 |[AbsolutePosition](./absoluteposition-property-ado.md)|Indique la position ordinale de l’enregistrement actif d’un objet **Recordset** .|  
 |[ActiveCommand](./activecommand-property-ado.md)|Indique l’objet de **commande** qui a créé l’objet **Recordset** associé.|  
-|[ActiveConnection](./activeconnection-property-ado.md)|Indique à quel objet de **connexion** la **commande**, le **jeu d’enregistrements**ou l’objet d' **enregistrement** spécifiés appartiennent actuellement.|  
+|[ActiveConnection](./activeconnection-property-ado.md)|Indique à quel objet de **connexion** la **commande**, le **jeu d’enregistrements** ou l’objet d' **enregistrement** spécifiés appartiennent actuellement.|  
 |[ActualSize](./actualsize-property-ado.md)|Indique la longueur réelle de la valeur d’un champ.|  
 |[Attributs](./attributes-property-ado.md)|Indique une ou plusieurs caractéristiques d’un objet.|  
 |[BOF et EOF](./bof-eof-properties-ado.md)|**BOF** indique que la position actuelle de l’enregistrement est antérieure au premier enregistrement d’un objet Recordset.<br /><br /> **EOF** indique que la position actuelle de l’enregistrement est après le dernier enregistrement d’un objet Recordset.|  
@@ -63,7 +63,7 @@ ms.locfileid: "88976280"
 |[Verrou](./locktype-property-ado.md)|Indique le type de verrou placé sur les enregistrements lors de la modification.|  
 |[MarshalOptions](./marshaloptions-property-ado.md)|Indique les enregistrements qui doivent être remarshalés sur le serveur.|  
 |[MaxRecords](./maxrecords-property-ado.md)|Indique le nombre maximal d’enregistrements à retourner à un **jeu d’enregistrements** à partir d’une requête.|  
-|[Mode](./mode-property-ado.md)|Indique les autorisations disponibles pour la modification des données dans une **connexion**, un **enregistrement**ou un objet de **flux** .|  
+|[Mode](./mode-property-ado.md)|Indique les autorisations disponibles pour la modification des données dans une **connexion**, un **enregistrement** ou un objet de **flux** .|  
 |[Nom](./name-property-ado.md)|Indique le nom d’un objet.|  
 |[NativeError](./nativeerror-property-ado.md)|Indique le code d’erreur spécifique au fournisseur pour un objet d' **erreur** particulier.|  
 |[Nombre](./number-property-ado.md)|Indique le nombre qui identifie de façon unique un objet d' **erreur** .|  
@@ -79,7 +79,7 @@ ms.locfileid: "88976280"
 |[Fournisseur](./provider-property-ado.md)|Indique le nom du fournisseur pour un objet de **connexion** .|  
 |[RecordCount](./recordcount-property-ado.md)|Indique le nombre d’enregistrements dans un objet **Recordset** .|  
 |[RecordType](./recordtype-property-ado.md)|Indique le type d’objet d' **enregistrement** .|  
-|[Haut](./row-property-ado.md)|Obtient ou définit un objet OLE DB **ligne** à partir de/sur un objet **ADORecordConstruction** .|  
+|[Ligne](./row-property-ado.md)|Obtient ou définit un objet OLE DB **ligne** à partir de/sur un objet **ADORecordConstruction** .|  
 |[RowPosition](./rowposition-property-ado.md)|Obtient ou définit un objet **RowPosition** OLE DB à partir de/sur un objet **ADORecordsetConstruction** .|  
 |[Ensemble de lignes](./rowset-property-ado.md)|Obtient ou définit un objet d' **ensemble de lignes** OLE DB à partir de/sur un objet **ADORecordsetConstruction** .|  
 |[Source (erreur ADO)](./source-property-ado-error.md)|Indique le nom de l’objet ou de l’application qui a généré à l’origine une erreur.|  
@@ -91,10 +91,10 @@ ms.locfileid: "88976280"
 |[Status (Recordset ADO)](./status-property-ado-recordset.md)|Indique l’état de l’enregistrement en cours concernant les mises à jour par lots ou d’autres opérations en bloc.|  
 |[StayInSync](./stayinsync-property.md)|Indique, dans un objet **Recordset** hiérarchique, si la référence aux enregistrements enfants sous-jacents (autrement dit, le *chapitre*) change lorsque la position de la ligne parente change.|  
 |[Stream, propriété](./stream-property.md)|Obtient ou définit un objet de **flux** OLE DB à partir de/sur un objet **ADOStreamConstruction** .|  
-|[Type](./type-property-ado.md)|Indique le type opérationnel ou le type de données d’un **paramètre**, d’un **champ**ou d’un objet de **propriété** .|  
+|[Type](./type-property-ado.md)|Indique le type opérationnel ou le type de données d’un **paramètre**, d’un **champ** ou d’un objet de **propriété** .|  
 |[Type (ADO Stream)](./type-property-ado-stream.md)|Indique le type des données contenues dans le **flux** (binaire ou texte).|  
 |[UnderlyingValue,](./underlyingvalue-property.md)|Indique la valeur actuelle dans la base de données d’un objet de **champ** .|  
-|[Valeur](./value-property-ado.md)|Indique la valeur assignée à un **champ**, un **paramètre**ou un objet de **propriété** .|  
+|[Valeur](./value-property-ado.md)|Indique la valeur assignée à un **champ**, un **paramètre** ou un objet de **propriété** .|  
 |[Version](./version-property-ado.md)|Indique le numéro de version ADO.|  
   
 ## <a name="see-also"></a>Voir aussi  

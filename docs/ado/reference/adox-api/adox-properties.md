@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - properties [ADOX]
 - ADOX, properties
 ms.assetid: 2ddf19e4-312e-4d21-8053-a6fc4b738ad4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: cbc72515c3ba8bcee52bff213ba11bd0b4bc2140
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 85f6cb74b25d7664bdf7b87c4290edd19a49dcd3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641148"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164327"
 ---
 # <a name="adox-properties"></a>Propriétés ADOX
 
@@ -27,7 +27,7 @@ ms.locfileid: "97641148"
 |-|-|  
 |[ActiveConnection](./activeconnection-property-adox.md)|Indique l’objet de **connexion** ADO auquel le catalogue appartient.|  
 |[Attributs](./attributes-property-adox.md)|Décrit les caractéristiques de colonne.|  
-|[Cluster](./clustered-property-adox.md)|Indique si l’index est ordonné en clusters.|  
+|[En cluster](./clustered-property-adox.md)|Indique si l’index est ordonné en clusters.|  
 |[Commande](./command-property-adox.md)|Spécifie un objet de **commande** ADO qui peut être utilisé pour créer ou exécuter la procédure.|  
 |[Count](../ado-api/count-property-ado.md)|Indique le nombre d’objets dans une collection.|  
 |[DateCreated](./datecreated-property-adox.md)|Indique la date à laquelle l’objet a été créé.|  

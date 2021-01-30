@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - IsolationLevelEnum
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8e17a7bc-b8a3-4ae2-b6c9-ce088ad31fdf
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d56051369218f8700ef516526c3f1baf07c7469b
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 780e61f5aabea993f3af4d36b9547cca75377d99
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990760"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167193"
 ---
 # <a name="isolationlevelenum"></a>IsolationLevelEnum
 Spécifie le niveau d’isolation des transactions pour un objet de [connexion](./connection-object-ado.md) .  

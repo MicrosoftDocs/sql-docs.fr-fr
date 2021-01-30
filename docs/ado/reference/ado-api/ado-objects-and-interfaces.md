@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ADO, objects and interfaces
 - objects [ADO]
 ms.assetid: d0b7e254-c89f-4406-b846-a060ef038c30
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 80391605a0480d8967afb1e0240168a393f09363
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: c694a5051729a6ce9b925014ae93b5dbde11f5d9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976310"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164898"
 ---
 # <a name="ado-objects-and-interfaces"></a>Objets et interfaces ADO
 Les relations entre ces objets sont représentées dans le [modèle objet ADO](./ado-object-model.md).  
@@ -41,7 +41,7 @@ Les relations entre ces objets sont représentées dans le [modèle objet ADO](.
 |[Propriété](./property-object-ado.md)|Représente une caractéristique dynamique d’un objet ADO qui est défini par le fournisseur.|  
 |[Enregistrement](./record-object-ado.md)|Représente une ligne d’un **jeu d’enregistrements**, ou un répertoire ou un fichier dans un système de fichiers. L’objet **Record** est sécurisé pour l’écriture de scripts.|  
 |[Recordset](./recordset-object-ado.md)|Représente le jeu d’enregistrements d’une table de base ou les résultats d’une commande exécutée. À tout moment, l’objet **Recordset** fait référence à un seul enregistrement dans le jeu en tant qu’enregistrement actif.<br /><br /> L’objet **Recordset** est sécurisé pour l’écriture de scripts.|  
-|[Flux](./stream-object-ado.md)|Représente un flux de données binaire.<br /><br /> L’objet de **flux** est sécurisé pour l’écriture de scripts.|  
+|[STREAM](./stream-object-ado.md)|Représente un flux de données binaire.<br /><br /> L’objet de **flux** est sécurisé pour l’écriture de scripts.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Informations de référence sur l’API ADO](./ado-api-reference.md)   

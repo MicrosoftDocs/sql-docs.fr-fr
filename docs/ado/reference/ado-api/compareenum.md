@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - CompareEnum
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bc8f710d-0621-4673-8d8e-0361e44abed0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a5a983f1808d71404279c5332aedfcfb1f1501d5
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: e5769c9f01fdf7ed79a442cd6edacbecc5547089
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88975020"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164631"
 ---
 # <a name="compareenum"></a>CompareEnum
 Spécifie la position relative de deux enregistrements représentés par leurs signets.  

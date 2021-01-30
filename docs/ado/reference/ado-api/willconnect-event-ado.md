@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - WillConnect
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: da561d58-eb58-446c-a4fd-1838c76073c0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 259ef55060d7968d9ec557c831412ad58609a6df
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: a57b99597bea639eddb5e73b2d6e4c7137333bc2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88987780"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166268"
 ---
 # <a name="willconnect-event-ado"></a>WillConnect, événement (ADO)
 L’événement **WillConnect** est appelé avant le démarrage d’une connexion.  
@@ -60,7 +60,7 @@ WillConnect ConnectionString, UserID, Password, Options, adStatus, pConnection
  Objet de [connexion](./connection-object-ado.md) pour lequel cette notification d’événement s’applique. Les modifications apportées aux paramètres de la **connexion** par le gestionnaire d’événements **WillConnect** n’auront aucun effet sur la **connexion**.  
   
 ## <a name="remarks"></a>Notes  
- Lorsque l’option **WillConnect** est appelée, les paramètres *ConnectionString*, *userid*, *Password*et *options* sont définis sur les valeurs établies par l’opération qui a provoqué cet événement (la connexion en attente) et peuvent être modifiées avant le retour de l’événement. Le **WillConnect** peut retourner une demande indiquant que la connexion en attente doit être annulée.  
+ Lorsque l’option **WillConnect** est appelée, les paramètres *ConnectionString*, *userid*, *Password* et *options* sont définis sur les valeurs établies par l’opération qui a provoqué cet événement (la connexion en attente) et peuvent être modifiées avant le retour de l’événement. Le **WillConnect** peut retourner une demande indiquant que la connexion en attente doit être annulée.  
   
  Lorsque cet événement est annulé, **ConnectComplete** est appelé avec le paramètre *adStatus* défini sur **adStatusErrorsOccurred**.  
   

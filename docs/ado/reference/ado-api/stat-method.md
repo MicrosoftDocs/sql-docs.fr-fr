@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Stream::Stat
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 99a2b2d4-e6b1-4205-b011-72d024ea7240
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: db386d8e39c57883c7e456962d57e884383d62ff
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 18571c88e604b21856195c9675e10b2c86dad35e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988850"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166485"
 ---
 # <a name="stat-method"></a>Stat, méthode
 Récupère des informations sur un objet de [flux](./stream-object-ado.md) .  

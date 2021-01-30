@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d34dfd26-9ca7-4c9c-a918-396f05fecca9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ace4d981f4b777f9d495c8f257df6473b5636cdd
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 25a04fc923ea633706616cb771160d59f1b2e3ca
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989470"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166638"
 ---
 # <a name="resync-method-example-vc"></a>Resync, exemple de méthode (VC++)
 Cet exemple illustre l’utilisation de la méthode [Resync](./resync-method.md) pour actualiser des données dans un Recordset statique.  

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset15::UpdateBatch
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 23f9314c-b027-4a51-aeae-50caa2977740
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 648e6f8e64d4001851afb3838c901ab2b1172108
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 8bc846e849df5980efca8f5e28982c964276f8bb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988000"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166319"
 ---
 # <a name="updatebatch-method"></a>UpdateBatch, méthode
 Écrit toutes les mises à jour par lots en attente sur le disque.  
@@ -36,10 +36,10 @@ recordset.UpdateBatch AffectRecords, PreserveStatus
   
 #### <a name="parameters"></a>Paramètres  
  *AffectRecords*  
- facultatif. Valeur [AffectEnum](./affectenum.md) qui indique le nombre d’enregistrements affectés par la méthode **UpdateBatch** .  
+ Facultatif. Valeur [AffectEnum](./affectenum.md) qui indique le nombre d’enregistrements affectés par la méthode **UpdateBatch** .  
   
  *PreserveStatus*  
- facultatif. Valeur **booléenne** qui spécifie si les modifications locales, comme indiqué par la propriété [Status](./status-property-ado-recordset.md) , doivent être validées. Si cette valeur est définie sur **true**, la propriété **Status** de chaque enregistrement reste inchangée une fois la mise à jour terminée.  
+ Facultatif. Valeur **booléenne** qui spécifie si les modifications locales, comme indiqué par la propriété [Status](./status-property-ado-recordset.md) , doivent être validées. Si cette valeur est définie sur **true**, la propriété **Status** de chaque enregistrement reste inchangée une fois la mise à jour terminée.  
   
 ## <a name="remarks"></a>Notes  
  Utilisez la méthode **UpdateBatch** lors de la modification d’un objet **Recordset** en mode de mise à jour par lot pour transmettre toutes les modifications apportées à un objet **Recordset** à la base de données sous-jacente.  
@@ -55,7 +55,7 @@ recordset.UpdateBatch AffectRecords, PreserveStatus
   
  Si les propriétés dynamiques [table unique](./unique-table-unique-schema-unique-catalog-properties-dynamic-ado.md) et [Update Resync](./update-resync-property-dynamic-ado.md) sont définies et que le **jeu d’enregistrements** est le résultat de l’exécution d’une opération de jointure sur plusieurs tables, l’exécution de la méthode **UpdateBatch** est implicitement suivie par la méthode [Resync](./resync-method.md) , selon les paramètres de la propriété [Update Resync](./update-resync-property-dynamic-ado.md) .  
   
- L’ordre dans lequel les mises à jour individuelles d’un lot sont effectuées sur la source de données n’est pas nécessairement le même que l’ordre dans lequel elles ont été exécutées sur le **jeu d’enregistrements**local. L’ordre des mises à jour dépend du fournisseur. Prenez cela en compte lors du codage des mises à jour liées les unes aux autres, telles que les contraintes de clé étrangère sur une insertion ou une mise à jour.  
+ L’ordre dans lequel les mises à jour individuelles d’un lot sont effectuées sur la source de données n’est pas nécessairement le même que l’ordre dans lequel elles ont été exécutées sur le **jeu d’enregistrements** local. L’ordre des mises à jour dépend du fournisseur. Prenez cela en compte lors du codage des mises à jour liées les unes aux autres, telles que les contraintes de clé étrangère sur une insertion ou une mise à jour.  
   
 ## <a name="applies-to"></a>S'applique à  
  [Recordset, objet (ADO)](./recordset-object-ado.md)  

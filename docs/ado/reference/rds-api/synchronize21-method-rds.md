@@ -7,19 +7,19 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - Synchronize21 method [ADO]
 ms.assetid: 6b35f136-9d9a-4bdd-8144-67decfd3c4e9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 46d0d13fa6e735b7763a35186beff59f293cc278
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: fb782b8c61f3ae80c3e37d5ff28b040651eb5669
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724697"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166084"
 ---
 # <a name="synchronize21-method-rds"></a>Synchronize21, méthode (RDS)
 Synchronisez le Recordset donné avec la base de données spécifiée par la chaîne de connexion pour l’utiliser avec ADO 2,1.  
@@ -44,7 +44,7 @@ object.Synchronize21(ConnectionString As String, HandlerString As String, lSynch
  *lSynchronizeOptions*  
  Masque de bits des options de synchronisation.  
   
- 1 = les mises à jour*UpdateTransact* de la base de données sont encapsulées dans une transaction. La transaction est abandonnée en cas d’échec de l’une des mises à jour.  
+ 1 = les mises à jour *UpdateTransact* de la base de données sont encapsulées dans une transaction. La transaction est abandonnée en cas d’échec de l’une des mises à jour.  
   
  2 =*RefreshWithUpdate* provoque le renvoi des États de ligne lorsque ni *Refresh* , ni *RefreshConflicts* ne sont définis.  
   

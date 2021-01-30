@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addremotelogin_TSQL
 - sp_addremotelogin
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 71b7cd36-a17d-4b12-b102-10aeb0f9268b
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: de4f54972fb4a749e6466a81fef88ae8630be698
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 13b935d91772d70d58b38f9f995341d81e04388f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88464612"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165183"
 ---
 # <a name="sp_addremotelogin-transact-sql"></a>sp_addremotelogin (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -49,7 +49,7 @@ sp_addremotelogin [ @remoteserver = ] 'remoteserver'
  Nom du serveur distant auquel s'applique la connexion d'accès à distance. *serveur_distant* est de **type sysname**, sans valeur par défaut. Si seul *serveur_distant* est spécifié, tous les utilisateurs sur *serveur_distant* sont mappés à des connexions existantes du même nom sur le serveur local. Le serveur doit être connu du serveur local. Il est ajouté avec sp_addserver. Lorsque les utilisateurs du *serveur_distant* se connectent au serveur local qui exécute [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour exécuter une procédure stockée distante, ils se connectent en tant que connexion locale qui correspond à leur propre connexion sur le *serveur_distant*. *serveur_distant* est le serveur qui lance l’appel de procédure distante.  
   
  [ @loginame **=** ] **«**_connexion_**»**  
- ID de connexion de l'utilisateur sur l'instance locale de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *login* est de type **sysname**, avec NULL comme valeur par défaut. la *connexion*doit déjà exister sur l’instance locale de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Si la *connexion* est spécifiée, tous les utilisateurs sur *serveur_distant* sont mappés à cette connexion locale spécifique. Lorsque les utilisateurs du *serveur_distant* se connectent à l’instance locale de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour exécuter une procédure stockée distante, ils se connectent en tant que *connexion*.  
+ ID de connexion de l'utilisateur sur l'instance locale de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *login* est de type **sysname**, avec NULL comme valeur par défaut. la *connexion* doit déjà exister sur l’instance locale de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Si la *connexion* est spécifiée, tous les utilisateurs sur *serveur_distant* sont mappés à cette connexion locale spécifique. Lorsque les utilisateurs du *serveur_distant* se connectent à l’instance locale de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour exécuter une procédure stockée distante, ils se connectent en tant que *connexion*.  
   
  [ @remotename **=** ] **'**_remote_name_**'**  
  ID de connexion de l'utilisateur sur le serveur distant. *remote_name* est de **type sysname**, avec NULL comme valeur par défaut. *remote_name* doit exister sur *serveur_distant*. Si *remote_name* est spécifié, l’utilisateur *remote_name* spécifique est mappé à la *connexion* sur le serveur local. Lorsque *remote_name* sur *serveur_distant* se connecte à l’instance locale de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour exécuter une procédure stockée distante, il se connecte en tant que *connexion*. L’ID de connexion de *remote_name* peut être différent de l’ID de connexion sur le serveur distant, *login*.  

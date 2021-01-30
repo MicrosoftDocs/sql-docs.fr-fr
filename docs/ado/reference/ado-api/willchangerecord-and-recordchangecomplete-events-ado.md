@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - RecordChangeComplete
 - Recordset::WillChangeRecord
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: cbc369fd-63af-4a7d-96ae-efa91b78ca69
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e22e922a240643d499408dda3941fdf638a529ff
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 0a713c39746db1d6a5317a4884ac0a2c5cbb23fc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88987860"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166278"
 ---
 # <a name="willchangerecord-and-recordchangecomplete-events-ado"></a>WillChangeRecord et RecordChangeComplete, événements (ADO)
 L’événement **WillChangeRecord** est appelé avant qu’un ou plusieurs enregistrements (lignes) du [Recordset](./recordset-object-ado.md) soient modifiés. L’événement **RecordChangeComplete** est appelé après la modification d’un ou de plusieurs enregistrements.  
@@ -39,7 +39,7 @@ RecordChangeCompleteadReason, cRecords, pError, adStatus, pRecordset
   
 #### <a name="parameters"></a>Paramètres  
  *Reason*  
- Valeur [EventReasonEnum](./eventreasonenum.md) qui spécifie la raison de cet événement. Sa valeur peut être **adRsnAddNew**, **adRsnDelete**, **adRsnUpdate**, **adRsnUndoUpdate**, **adRsnUndoAddNew**, **adRsnUndoDelete**ou **adRsnFirstChange**.  
+ Valeur [EventReasonEnum](./eventreasonenum.md) qui spécifie la raison de cet événement. Sa valeur peut être **adRsnAddNew**, **adRsnDelete**, **adRsnUpdate**, **adRsnUndoUpdate**, **adRsnUndoAddNew**, **adRsnUndoDelete** ou **adRsnFirstChange**.  
   
  *cRecords*  
  Valeur de **type long** qui indique le nombre d’enregistrements en modification (affectés).  

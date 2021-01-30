@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Error::get_Source
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 4044ba15-f013-4c4c-9fe1-b4410fe9a778
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 117e6e1f16800daaf94cba6e4a7643d5aa1c8c1f
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 360457f3056ee27e213ba60adcef776a3c0aee02
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988980"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166514"
 ---
 # <a name="source-property-ado-error"></a>Source, propriété (objet Error ADO)
 Indique le nom de l’objet ou de l’application qui a généré à l’origine une erreur.  
@@ -39,7 +39,7 @@ Indique le nom de l’objet ou de l’application qui a généré à l’origine
  La propriété **source** est en lecture seule pour les objets d' **erreur** .  
   
 ## <a name="applies-to"></a>S'applique à  
- [Objet Error](./error-object.md)  
+ [Error, objet](./error-object.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Description, HelpContext, HelpFile, NativeError, Number, source et SQLState, exemples de propriétés (VB)](./description-helpcontext-helpfile-nativeerror-number-source-example-vb.md)   

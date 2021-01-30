@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 911aa1dd-2786-4f34-992c-bb2fbdabcbdf
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7d6d1fdb55ca18fcbb06fb3cbb9e32f603af4d26
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: b9695c1a7d2c24ca01b06c46be78afbf7a5c4029
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990530"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167089"
 ---
 # <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vbscript"></a>MoveFirst, MoveLast, MoveNext et MovePrevious, exemple de méthode (VBScript)
 Cet exemple utilise les méthodes [MoveFirst](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md)et [MovePrevious](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md) pour déplacer le pointeur d’enregistrement d’un [jeu d’enregistrements](./recordset-object-ado.md) en fonction de la commande fournie.  

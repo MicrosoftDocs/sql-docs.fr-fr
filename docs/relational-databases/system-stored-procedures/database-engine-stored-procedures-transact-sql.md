@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 2ce018e9-1a3b-4530-a87d-842456a555ad
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: d6e679c8d76e2166953bb89636344c5bedbc05e1
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: e2aab93de373c4353c7f4fe824e5050332aaa60c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89542076"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165285"
 ---
 # <a name="database-engine-stored-procedures-transact-sql"></a>Procédures stockées du moteur de base de données (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

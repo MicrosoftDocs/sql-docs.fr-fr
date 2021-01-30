@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset15::Move
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 13fe9381-d00b-4f4a-9162-83c3f21b3837
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6b394d64a9d1b1f403137e9875db83fdd82c2ac1
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: f870db346e384f4c131ec24bf6c15a5d15a009c1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990590"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167115"
 ---
 # <a name="move-method-ado"></a>Move, méthode (ADO)
 Déplace la position de l’enregistrement actuel dans un objet [Recordset](./recordset-object-ado.md) .  
@@ -39,7 +39,7 @@ recordset.Move NumRecords, Start
  Expression **longue** signée qui spécifie le nombre d’enregistrements déplacés par la position actuelle de l’enregistrement.  
   
  *Start*  
- facultatif. Valeur de **chaîne** ou **Variant** qui prend la valeur d’un signet. Vous pouvez également utiliser une valeur [BookmarkEnum](./bookmarkenum.md) .  
+ Facultatif. Valeur de **chaîne** ou **Variant** qui prend la valeur d’un signet. Vous pouvez également utiliser une valeur [BookmarkEnum](./bookmarkenum.md) .  
   
 ## <a name="remarks"></a>Notes  
  La méthode **Move** est prise en charge sur tous les objets **Recordset** .  

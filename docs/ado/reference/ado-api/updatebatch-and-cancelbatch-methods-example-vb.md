@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 41625f6f-e12d-4d8d-9f60-0729ce64c31e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: fe9d475ac047dc137c74a4ac75ce33c526db15bc
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 9438335db21ee4ec36b6f815384102edd7869d5b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988070"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166328"
 ---
 # <a name="updatebatch-and-cancelbatch-methods-example-vb"></a>UpdateBatch et CancelBatch, exemples de méthodes (VB)
 Cet exemple illustre la méthode [UpdateBatch](./updatebatch-method.md) conjointement à la méthode [CancelBatch](./cancelbatch-method-ado.md) .  

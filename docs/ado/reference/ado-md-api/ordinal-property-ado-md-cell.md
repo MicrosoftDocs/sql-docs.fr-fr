@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Cell::Ordinal
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: a6001168-b954-47f0-ba0d-c05c4cc40c58
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b4d14b2cdfc61fd76221a2071f15593807b5f1ba
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: caadd690a43683b4e31ae73b99a7f24217fb8529
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88986220"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164459"
 ---
 # <a name="ordinal-property-ado-md-cell"></a>Ordinal, propriété (objet Cell d’ADO MD)
 Identifie de façon unique une [cellule](./cell-object-ado-md.md) en fonction de sa position dans un CellSet.  

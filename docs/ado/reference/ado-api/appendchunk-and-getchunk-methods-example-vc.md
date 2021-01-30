@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 51aa99be-d5ca-46ac-8b3f-1b03ce4f0b2a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 131495e63913907e03b6d559018290a39c2dbe88
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 54e851bdba8add7b468c487732478c078908ce92
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976060"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164830"
 ---
 # <a name="appendchunk-and-getchunk-methods-example-vc"></a>AppendChunk et GetChunk, exemple de méthodes (VC++)
 Cet exemple utilise les méthodes [AppendChunk](./appendchunk-method-ado.md) et [GetChunk](./getchunk-method-ado.md) pour remplir un champ d’image avec les données d’un autre enregistrement.  

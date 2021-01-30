@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Stream::LineSeparator
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0b20fbb8-6b83-48ec-b442-f96c8a4bafbb
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7bd1e14d5c7ebc84ea4736da08296eca0e02ea38
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 629d2948bbbf62987f1352712df02521cf002189
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990720"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167178"
 ---
 # <a name="lineseparator-property-ado"></a>LineSeparator, propriété (ADO)
 Indique le caractère binaire à utiliser comme séparateur de lignes dans les objets de [flux](./stream-object-ado.md) de texte.  
@@ -30,9 +30,9 @@ Indique le caractère binaire à utiliser comme séparateur de lignes dans les o
  Définit ou retourne une valeur [LineSeparatorsEnum](./lineseparatorsenum.md) qui indique le caractère de séparation de ligne utilisé dans le **flux**. La valeur par défaut est **adCRLF**.  
   
 ## <a name="remarks"></a>Notes  
- **LineSeparator** est utilisé pour interpréter les lignes lors de la lecture du contenu d’un **flux**de texte. Les lignes peuvent être ignorées à l’aide de la méthode [SkipLine](./skipline-method.md) .  
+ **LineSeparator** est utilisé pour interpréter les lignes lors de la lecture du contenu d’un **flux** de texte. Les lignes peuvent être ignorées à l’aide de la méthode [SkipLine](./skipline-method.md) .  
   
- **LineSeparator** est utilisé uniquement avec des objets de **flux** de texte (le[type](./type-property-ado-stream.md) est **adTypeText**). Cette propriété est ignorée si le **type** est **adTypeBinary**.  
+ **LineSeparator** est utilisé uniquement avec des objets de **flux** de texte (le [type](./type-property-ado-stream.md) est **adTypeText**). Cette propriété est ignorée si le **type** est **adTypeBinary**.  
   
 ## <a name="applies-to"></a>S'applique à  
  [Stream, objet (ADO)](./stream-object-ado.md)  

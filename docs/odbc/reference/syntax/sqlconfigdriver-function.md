@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLConfigDriver
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 4f681961-ac9f-4d88-b065-5258ba112642
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 04ee54bba13730504ed08cfc1307858edea56282
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: abe28e8d870216cf090e57a93e0c75766db08231
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88476155"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165326"
 ---
 # <a name="sqlconfigdriver-function"></a>SQLConfigDriver, fonction
 **Conformité**  
@@ -69,7 +69,7 @@ BOOL SQLConfigDriver(
  Entrée Nom du pilote enregistré dans les informations système.  
   
  *lpszArgs*  
- Entrée Chaîne terminée par le caractère null qui contient des arguments pour un *fRequest*spécifique au pilote.  
+ Entrée Chaîne terminée par le caractère null qui contient des arguments pour un *fRequest* spécifique au pilote.  
   
  *lpszMsg*  
  Sortie Chaîne terminée par le caractère null qui contient un message de sortie de la configuration du pilote.  
@@ -84,9 +84,9 @@ BOOL SQLConfigDriver(
  La fonction retourne TRUE si elle réussit, FALSe en cas d’échec.  
   
 ## <a name="diagnostics"></a>Diagnostics  
- Quand **SQLConfigDriver** retourne false, une valeur * \* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs * \* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
+ Quand **SQLConfigDriver** retourne false, une valeur *\* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs *\* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur|Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur générale du programme d’installation|Une erreur s’est produite pour laquelle aucune erreur d’installation spécifique n’a été rencontrée.|  
 |ODBC_ERROR_INVALID_BUFF_LEN|Longueur de la mémoire tampon non valide|L’argument *lpszMsg* n’était pas valide.|  
@@ -101,7 +101,7 @@ BOOL SQLConfigDriver(
 ## <a name="comments"></a>Commentaires  
  **SQLConfigDriver** permet à une application d’appeler la routine **ConfigDriver** d’un pilote sans avoir à connaître le nom et charger la dll d’installation propre au pilote. Un programme d’installation appelle cette fonction une fois la DLL d’installation du pilote installée. Le programme appelant doit savoir que cette fonction peut ne pas être disponible pour tous les pilotes. Dans ce cas, le programme appelant doit continuer sans erreur.  
   
-## <a name="driver-specific-options"></a>Options spécifiques au pilote  
+## <a name="driver-specific-options"></a>Options de Driver-Specific  
  Une application peut demander des fonctionnalités spécifiques au pilote exposées par le pilote à l’aide de l’argument *fRequest* . Le *fRequest* pour la première option est ODBC_CONFIG_DRIVER_MAX + 1, et les options supplémentaires sont incrémentées de 1 à partir de cette valeur. Les arguments requis par le pilote pour cette fonction doivent être fournis dans une chaîne terminée par le caractère null passée dans l’argument *lpszArgs* . Les pilotes fournissant ces fonctionnalités doivent tenir à jour un tableau d’options spécifiques au pilote. Les options doivent être entièrement documentées dans la documentation du pilote. Les créateurs d’applications qui utilisent des options spécifiques au pilote doivent savoir que cette utilisation rend l’application moins interopérable.  
   
 ## <a name="setting-connection-pooling-timeout"></a>Définition du délai d’attente du regroupement de connexions  

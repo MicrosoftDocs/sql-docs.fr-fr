@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - RecordTypeEnum
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f557e537-015d-4ba7-8a41-a6f00b366a91
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ded4106b770ff62edd4b79401885ee5ce3101798
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 8ef671384a552f240930e24a073f979f6e84da8d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989660"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166679"
 ---
 # <a name="recordtypeenum"></a>RecordTypeEnum
 Spécifie le type d’objet d' [enregistrement](./record-object-ado.md) .  

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Connection15::ConnectionTimeout
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8904a403-1383-4b4b-b53d-5c01d6f5deac
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: bd8fd11c017583ef49981021688210245589e971
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 266d57defde6abaae34e558496092ec2df7caebb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88974740"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164589"
 ---
 # <a name="connectiontimeout-property-ado"></a>ConnectionTimeout, propriété (ADO)
 Indique le délai d’attente lors de l’établissement d’une connexion avant que la tentative ne soit abandonnée et qu’une erreur ne soit générée.  

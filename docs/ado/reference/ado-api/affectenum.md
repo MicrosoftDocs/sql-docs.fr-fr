@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - AffectEnum
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1ab921a0-6c57-43b4-9291-701b2599f3e8
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9673567c17cda79c93fba4e74b104bd0cb42edd7
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 0a4f722e1ac4557ff5e2fb89d63c3d40f490c5b7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976140"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164856"
 ---
 # <a name="affectenum"></a>AffectEnum
 Spécifie les enregistrements qui sont affectés par une opération.  

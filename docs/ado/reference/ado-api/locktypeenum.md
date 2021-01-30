@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - LockTypeEnum
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d2894eaf-4450-4ace-aa51-c8b875fd3010
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 26cbe4b13e855949b617804311bd283cf44f2ef3
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 4ad4c3b690592621fbbb243be6fcb06ce4f362be
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990680"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167161"
 ---
 # <a name="locktypeenum"></a>LockTypeEnum
 Spécifie le type de verrou placé sur les enregistrements lors de la modification.  

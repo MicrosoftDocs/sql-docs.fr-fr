@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Command15::CommandText
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4dd7e82a-8da5-4a4e-b439-11a29286fa0e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c0e7f2e9e346a5379051b101236df186b815aa85
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: a387746928ac92dfa6c31fbe33dab66abba05eeb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88975190"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164647"
 ---
 # <a name="commandtext-property-ado"></a>CommandText, propriété (ADO)
 Indique le texte d’une commande à délivrer à un fournisseur.  

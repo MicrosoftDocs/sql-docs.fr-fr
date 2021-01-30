@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6e174179-9d95-41b9-b72b-6cdbdca6e255
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 639beb1e3fe5728ced23e9496b74947b3dfb0428
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 041fedecbadcd0bd47e3f0d852f1e759b6efc734
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988350"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166389"
 ---
 # <a name="supports-method-example-vc"></a>Supports, exemple de méthode (VC++)
 Cet exemple utilise la méthode [supports](./supports-method.md) pour afficher les options prises en charge par un jeu d’enregistrements ouvert avec différents types de curseurs. La fonction DisplaySupport est requise pour que cet exemple s’exécute.  

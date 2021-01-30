@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ODBC cursor library [ODBC], examples
 - cursor library [ODBC], examples
 ms.assetid: 958a179c-97d9-4717-8d06-d33b715a9773
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8301cf0b608874075c7bc8c66bba25d00f07668d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f4e52e505753c78ef360d13ce8377a2447c5de02
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88429681"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165358"
 ---
 # <a name="cursor-library-code-example"></a>Exemple de code de la bibliothèque de curseurs
 > [!IMPORTANT]  

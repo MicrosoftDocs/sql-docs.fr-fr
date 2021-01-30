@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ADO MD, methods
 - methods [ADO MD]
 ms.assetid: 78bfa2f0-358b-40bb-be2e-16262752d676
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2effdf660a0b8a32c0b932b3a7843d0f5ee8944f
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 8e81ff6f91f3c9e854d2c17b26eafb89cec191bf
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97637903"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166201"
 ---
 # <a name="ado-md-methods"></a>Méthodes ADO MD
 

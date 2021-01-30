@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Stream::raw_SaveToFile
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 8a8594f2-422b-4d2e-94f8-7fe337445900
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6aa3269e73f9823eb47dddeb039b62e3affdd3c6
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: e52fe6b3b26a8bc4832952940c7e84c736f2da5e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989290"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166591"
 ---
 # <a name="savetofile-method"></a>SaveToFile, méthode
 Enregistre le contenu binaire d’un [flux](./stream-object-ado.md) dans un fichier.  

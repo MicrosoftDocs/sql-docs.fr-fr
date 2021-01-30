@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Field20::raw_GetChunk
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: fc268e22-205b-44a3-9038-ffed51e23e10
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 196f41f7828be16c7c38b281edb85774569580a1
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 7d9e47713f3bd4d86f35cff2acac0255ed4ab5c7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88972910"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164577"
 ---
 # <a name="getchunk-method-ado"></a>GetChunk, méthode (ADO)
 Retourne la totalité ou une partie du contenu d’un objet de texte ou de [champ](./field-object.md) de données binaire volumineux.  
