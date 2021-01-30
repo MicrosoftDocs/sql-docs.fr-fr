@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - data conversions from C to SQL types [ODBC], timestamp
 - timestamp data type [ODBC]
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0e08bfff-68f9-4648-9558-09b57fea08ad
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e51d82e8acd59c8b4e6f5a8385720b0bd38eba4c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 54632816fb7013639e1cdb761fbc8df53c461a0d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88449031"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158583"
 ---
 # <a name="c-to-sql-timestamp"></a>C en SQL : Timestamp
 L’identificateur pour le type de données ODBC C d’horodatage est :  
@@ -41,6 +41,6 @@ L’identificateur pour le type de données ODBC C d’horodatage est :
   
  Pour plus d’informations sur les valeurs qui sont valides dans une structure SQL_C_TIMESTAMP, consultez [types de données C](../../../odbc/reference/appendixes/c-data-types.md), plus haut dans cette annexe.  
   
- Lorsque les données timestamp C sont converties en données SQL de type caractère, les données de type caractère obtenues sont au format «*yyyy* - *mm* - *DD* *hh*:*mm*:*SS*[.* f...*]» format.  
+ Lorsque les données timestamp C sont converties en données SQL de type caractère, les données de type caractère obtenues sont au format «*yyyy* - *mm* - *DD* *hh*:*mm*:*SS*[.*f...*]».  
   
  Le pilote ignore la valeur de longueur/indicateur lors de la conversion des données du type de données timestamp C et suppose que la taille de la mémoire tampon de données est égale à la taille du type de données timestamp C. La valeur de longueur/indicateur est passée dans l’argument *StrLen_Or_Ind* dans **SQLPutData** et dans la mémoire tampon spécifiée avec l’argument *StrLen_or_IndPtr* dans **SQLBindParameter**. La mémoire tampon de données est spécifiée avec l’argument *DataPtr* dans **SQLPutData** et l’argument *ParameterValuePtr* dans **SQLBindParameter**.

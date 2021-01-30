@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_exec_input_buffer
 - sys.dm_exec_input_buffer _tsql
@@ -21,12 +21,12 @@ ms.assetid: fb34a560-bde9-4ad9-aa96-0d4baa4fc104
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: e6b15da477c8fb5a4eb8cdc7ef302ebd8a41fae6
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 1560c1147df8373cf75fa5640ca8ee6c6ce97bdc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099736"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159866"
 ---
 # <a name="sysdm_exec_input_buffer-transact-sql"></a>sys.dm_exec_input_buffer (Transact-SQL)
 

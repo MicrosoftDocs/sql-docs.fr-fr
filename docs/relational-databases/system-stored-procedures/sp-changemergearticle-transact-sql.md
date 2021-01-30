@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_changemergearticle_TSQL
 - sp_changemergearticle
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 0dc3da5c-4af6-45be-b5f0-074da182def2
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 994efc8752017757bbced6df16fed2b6a4955eb1
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: b504644f5b96cc631a6352d71f2b387e8040b5a0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89541892"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159888"
 ---
 # <a name="sp_changemergearticle-transact-sql"></a>sp_changemergearticle (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Modifie les propriétés d'un article de fusion. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,7 +45,7 @@ sp_changemergearticle [ @publication = ] 'publication'
 ## <a name="arguments"></a>Arguments  
 `[ @publication = ] 'publication'` Nom de la publication dans laquelle l’article existe. *publication* est de **type sysname**, sans valeur par défaut.  
   
-`[ @article = ] 'article'` Nom de l’article à modifier. *article* est de **type sysname**et n’a pas de valeur par défaut.  
+`[ @article = ] 'article'` Nom de l’article à modifier. *article* est de **type sysname** et n’a pas de valeur par défaut.  
   
 `[ @property = ] 'property'` Propriété à modifier pour l’article et la publication donnés. la *propriété* est de type **nvarchar (30)** et peut prendre l’une des valeurs indiquées dans le tableau.  
   
@@ -65,10 +65,10 @@ sp_changemergearticle [ @publication = ] 'publication'
 |**column_tracking**|**true**|Active le suivi au niveau de la colonne. S’applique uniquement à un article de table.<br /><br /> Remarque : le suivi au niveau des colonnes ne peut pas être utilisé lors de la publication de tables contenant plus de 246 colonnes.|  
 ||**false**|Désactive le suivi au niveau de la colonne et conserve la détection des conflits au niveau de la ligne. S’applique uniquement à un article de table.|  
 |**compensate_for_errors**|**true**|Des actions de compensation sont effectuées lorsque des erreurs se produisent au cours de la synchronisation. Pour plus d’informations, consultez [sp_addmergearticle](../../relational-databases/system-stored-procedures/sp-addmergearticle-transact-sql.md).|  
-||**false**|Les actions de compensation ne sont pas effectuées, ce qui est le comportement par défaut. Pour plus d’informations, consultez [sp_addmergearticle](../../relational-databases/system-stored-procedures/sp-addmergearticle-transact-sql.md).<br /><br /> Important bien que les données des lignes affectées puissent sembler non conformes, dès que vous résolvez les erreurs, les modifications peuvent être appliquées et les données convergent. ** \* \* \* \* ** Si la table source d’un article est déjà publiée dans une autre publication, la valeur de *compensate_for_errors* doit être la même pour les deux articles.|  
+||**false**|Les actions de compensation ne sont pas effectuées, ce qui est le comportement par défaut. Pour plus d’informations, consultez [sp_addmergearticle](../../relational-databases/system-stored-procedures/sp-addmergearticle-transact-sql.md).<br /><br /> Important bien que les données des lignes affectées puissent sembler non conformes, dès que vous résolvez les erreurs, les modifications peuvent être appliquées et les données convergent. **\* \* \* \*** Si la table source d’un article est déjà publiée dans une autre publication, la valeur de *compensate_for_errors* doit être la même pour les deux articles.|  
 |**creation_script**||Chemin d'accès et nom d'un script de schéma d'article facultatif utilisé pour créer l'article dans la base de données d'abonnement.|  
 |**delete_tracking**|**true**|Les instructions DELETE sont répliquées, ce qui est le comportement par défaut.|  
-||**false**|Les instructions DELETE ne sont pas répliquées.<br /><br /> Un paramètre ** \* \* \* important \* ** **delete_tracking** la **valeur false** entraîne une non-convergence et les lignes supprimées doivent être supprimées manuellement.|  
+||**false**|Les instructions DELETE ne sont pas répliquées.<br /><br /> Un paramètre **\* \* \* important \*** **delete_tracking** la **valeur false** entraîne une non-convergence et les lignes supprimées doivent être supprimées manuellement.|  
 |**description**||Entrée descriptive de l'article|  
 |**destination_owner**||Nom du propriétaire de l’objet dans la base de données d’abonnement, si ce n’est pas **dbo**.|  
 |**identity_range**||**bigint** qui spécifie la taille de plage à utiliser lors de l’affectation de nouvelles valeurs d’identité si l’article a **identityrangemanagementoption** défini sur **auto** ou **auto_identity_range** défini sur **true**. S'applique à un article de table uniquement. Pour plus d’informations, consultez la section « réplication de fusion » de l’article [répliquer des colonnes d’identité](../../relational-databases/replication/publish/replicate-identity-columns.md).|  
@@ -84,7 +84,7 @@ sp_changemergearticle [ @publication = ] 'publication'
 ||**3**|Le filtrage de l'article produit des partitions qui ne se chevauchent pas et qui sont uniques pour chaque abonnement.<br /><br /> Remarque : Si vous spécifiez une valeur de **3** pour **partition_options**, il ne peut y avoir qu’un seul abonnement pour chaque partition de données de cet article. Si un deuxième abonnement est créé dans lequel le critère de filtrage du nouvel abonnement produit la même partition que l'abonnement existant, ce dernier est supprimé.|  
 |**pre_creation_command**|**Aucune**|Si la table existe déjà côté abonné, aucune action n'est effectuée.|  
 ||**delete**|Entraîne une suppression basée sur la clause WHERE dans le filtre de sous-ensemble.|  
-||**Déplacez**|Supprime la table avant de la recréer.|  
+||**drop**|Supprime la table avant de la recréer.|  
 ||**truncate**|Tronque la table de destination.|  
 |**processing_order**||**entier** qui indique l’ordre de traitement des articles dans une publication de fusion.|  
 |**pub_identity_range**||**bigint** qui spécifie la taille de plage allouée à un abonné avec un abonnement serveur si l’article a **identityrangemanagementoption** défini sur **auto** ou **auto_identity_range** défini sur **true**. Cette plage d'identité est réservée à un Abonné de republication qui peut l'allouer à ses propres Abonnés. S'applique à un article de table uniquement. Pour plus d’informations, consultez la section « réplication de fusion » de l’article [répliquer des colonnes d’identité](../../relational-databases/replication/publish/replicate-identity-columns.md).|  
@@ -123,7 +123,7 @@ sp_changemergearticle [ @publication = ] 'publication'
 ||**0x40000000**|Réplique les autorisations.|  
 ||**0x80000000**|Tente de supprimer les dépendances envers tous les objets qui ne font pas partie de la publication.|  
 ||**0x100000000**|Utilisez cette option pour répliquer l’attribut FILESTREAM s’il est spécifié sur des colonnes **varbinary (max)** . Ne spécifiez pas cette option si vous répliquez des tables sur des Abonnés [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]. La réplication de tables qui possèdent des colonnes FILESTREAM sur [!INCLUDE[ssVersion2000](../../includes/ssversion2000-md.md)] des abonnés n’est pas prise en charge, quelle que soit la façon dont cette option de schéma est définie. Consultez l’option associée **0x800000000**.|  
-||**0x200000000**|Convertit les types de données de date et d’heure (**Date**, **Time**, **DateTimeOffset**et **datetime2**) introduits dans en [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] types de données pris en charge dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .|  
+||**0x200000000**|Convertit les types de données de date et d’heure (**Date**, **Time**, **DateTimeOffset** et **datetime2**) introduits dans en [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] types de données pris en charge dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .|  
 ||**0x400000000**|Réplique l'option de compression pour les données et les index. Pour plus d’informations, consultez [Compression de données](../../relational-databases/data-compression/data-compression.md).|  
 ||**0x800000000**|Définissez cette option pour stocker les données FILESTREAM dans leur propre groupe de fichiers sur l'Abonné. Si cette option n'est pas définie, les données FILESTREAM sont stockées dans le groupe de fichiers par défaut. La réplication ne crée pas de groupes de fichiers ; par conséquent, si vous définissez cette option, vous devez créer le groupe de fichiers avant d'appliquer l'instantané à l'Abonné. Pour plus d’informations sur la création d’objets avant l’application de l’instantané, consultez [exécuter des scripts avant et après l’application de l’instantané](../../relational-databases/replication/snapshot-options.md#execute-scripts-before-and-after-snapshot-is-applied).<br /><br /> Consultez l’option associée **0x100000000**.|  
 ||**0x1000000000**|Convertit les types définis par l’utilisateur (UDT) common language runtime (CLR) en **varbinary (max)** afin que les colonnes de type UDT puissent être répliquées sur les abonnés qui exécutent [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] .|  
@@ -134,18 +134,18 @@ sp_changemergearticle [ @publication = ] 'publication'
 ||NULL|Le système génère automatiquement une option de schéma valide pour l'article.|  
 |**statut**|**active**|Exécution du script de traitement initial pour publier la table.|  
 ||**unsynced**|Le script de traitement initial servant à publier la table sera exécuté lors de la prochaine exécution de l'Agent d'instantané.|  
-|**stream_blob_columns**|**true**|Une optimisation de flux de données est utilisée lors de la réplication de colonnes d'objets binaires volumineux (BLOB). Toutefois, certaines fonctionnalités de réplication de fusion, telles que les enregistrements logiques, peuvent tout de même empêcher d'utiliser l'optimisation de flux. *stream_blob_columns* a la valeur true lorsque FileStream est activé. Cela permet la réplication des données FILESTREAM dans le but d'optimiser et de réduire l'utilisation de la mémoire. Pour forcer les Articles de la table FILESTREAM à ne pas utiliser le streaming d’objets BLOB, affectez à *stream_blob_columns* la valeur false.<br /><br /> Important l’activation de cette optimisation de mémoire peut nuire aux performances de la agent de fusion lors de la synchronisation. ** \* \* \* \* ** Cette option ne doit être utilisée que lors de la réplication de colonnes contenant des mégaoctets de données.|  
+|**stream_blob_columns**|**true**|Une optimisation de flux de données est utilisée lors de la réplication de colonnes d'objets binaires volumineux (BLOB). Toutefois, certaines fonctionnalités de réplication de fusion, telles que les enregistrements logiques, peuvent tout de même empêcher d'utiliser l'optimisation de flux. *stream_blob_columns* a la valeur true lorsque FileStream est activé. Cela permet la réplication des données FILESTREAM dans le but d'optimiser et de réduire l'utilisation de la mémoire. Pour forcer les Articles de la table FILESTREAM à ne pas utiliser le streaming d’objets BLOB, affectez à *stream_blob_columns* la valeur false.<br /><br /> Important l’activation de cette optimisation de mémoire peut nuire aux performances de la agent de fusion lors de la synchronisation. **\* \* \* \*** Cette option ne doit être utilisée que lors de la réplication de colonnes contenant des mégaoctets de données.|  
 ||**false**|L'optimisation n'est pas utilisée lors de la réplication de colonnes BLOB.|  
 |**subscriber_upload_options**|**0**|Aucune restriction sur les mises à jour effectuées sur un Abonné disposant d'un abonnement client ; les modifications sont téléchargées sur le serveur de publication. La modification de cette propriété peut exiger la réinitialisation des Abonnés existants.|  
 ||**1**|Les modifications sont autorisées sur un Abonné disposant d'un abonnement client, mais elles ne sont pas téléchargées sur le serveur de publication.|  
 ||**2**|Les modifications ne sont pas autorisées sur un Abonné disposant d'un abonnement client.|  
-|**subset_filterclause**||Clause WHERE spécifiant le filtrage horizontal. S’applique uniquement à un article de table.<br /><br /> Important pour des raisons de performances, nous vous recommandons de ne pas appliquer de fonctions aux noms de colonnes dans les clauses de filtre de lignes paramétrable, telles que. ** \* \* \* \* ** `LEFT([MyColumn]) = SUSER_SNAME()` Si vous utilisez [HOST_NAME](../../t-sql/functions/host-name-transact-sql.md) dans une clause de filtre et que vous remplacez la valeur de HOST_NAME, vous devrez peut-être convertir les types de données à l’aide de [Convert](../../t-sql/functions/cast-and-convert-transact-sql.md). Pour plus d’informations sur les meilleures pratiques pour ce cas, consultez la section « substitution de la valeur HOST_NAME () » dans [filtres de lignes paramétrables](../../relational-databases/replication/merge/parameterized-filters-parameterized-row-filters.md).|  
+|**subset_filterclause**||Clause WHERE spécifiant le filtrage horizontal. S’applique uniquement à un article de table.<br /><br /> Important pour des raisons de performances, nous vous recommandons de ne pas appliquer de fonctions aux noms de colonnes dans les clauses de filtre de lignes paramétrable, telles que. **\* \* \* \*** `LEFT([MyColumn]) = SUSER_SNAME()` Si vous utilisez [HOST_NAME](../../t-sql/functions/host-name-transact-sql.md) dans une clause de filtre et que vous remplacez la valeur de HOST_NAME, vous devrez peut-être convertir les types de données à l’aide de [Convert](../../t-sql/functions/cast-and-convert-transact-sql.md). Pour plus d’informations sur les meilleures pratiques pour ce cas, consultez la section « substitution de la valeur HOST_NAME () » dans [filtres de lignes paramétrables](../../relational-databases/replication/merge/parameterized-filters-parameterized-row-filters.md).|  
 |**threshold**||Valeur de pourcentage utilisée pour les abonnés exécutant [!INCLUDE[ssEW](../../includes/ssew-md.md)] ou des versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . le **seuil** contrôle le moment où l’agent de fusion affecte une nouvelle plage d’identité. Lorsque le pourcentage de valeurs spécifié dans le seuil est utilisé, l'Agent de fusion crée une nouvelle plage d'identité. Utilisé lorsque **identityrangemanagementoption** a la valeur **auto** ou **auto_identity_range** a la valeur **true**. S'applique à un article de table uniquement. Pour plus d’informations, consultez la section « réplication de fusion » de l’article [répliquer des colonnes d’identité](../../relational-databases/replication/publish/replicate-identity-columns.md).|  
 |**verify_resolver_signature**|**1**|La signature numérique d'un outil de résolution personnalisé est vérifiée pour déterminer s'il provient d'une source approuvée.|  
 ||**0**|La signature numérique d'un outil de résolution personnalisé n'est pas vérifiée pour déterminer s'il provient d'une source approuvée.|  
 |NULL (par défaut)||Retourne la liste des valeurs prises en charge pour la *propriété*.|  
   
-`[ @force_invalidate_snapshot = ] force_invalidate_snapshot` Confirme que l’action entreprise par cette procédure stockée peut invalider un instantané existant. *force_invalidate_snapshot* est un **bit**, avec **0**comme valeur par défaut.  
+`[ @force_invalidate_snapshot = ] force_invalidate_snapshot` Confirme que l’action entreprise par cette procédure stockée peut invalider un instantané existant. *force_invalidate_snapshot* est un **bit**, avec **0** comme valeur par défaut.  
   
  **0** indique que les modifications apportées à l’article de fusion n’entraînent pas la non-validité de l’instantané. Si la procédure stockée détecte que la modification requiert un nouvel instantané, une erreur se produit et aucune modification n'est effectuée.  
   
@@ -153,7 +153,7 @@ sp_changemergearticle [ @publication = ] 'publication'
   
  Consultez la section Remarques pour connaître les propriétés dont la modification nécessite la génération d'un nouvel instantané.  
   
-`[ @force_reinit_subscription = ] force_reinit_subscription` Confirme que l’action entreprise par cette procédure stockée peut nécessiter la réinitialisation des abonnements existants. *force_reinit_subscription* est un **bit**, avec **0**comme valeur par défaut.  
+`[ @force_reinit_subscription = ] force_reinit_subscription` Confirme que l’action entreprise par cette procédure stockée peut nécessiter la réinitialisation des abonnements existants. *force_reinit_subscription* est un **bit**, avec **0** comme valeur par défaut.  
   
  **0** indique que les modifications apportées à l’article de fusion n’entraînent pas la réinitialisation de l’abonnement. Si la procédure stockée détecte que la modification nécessite la réinitialisation des abonnements existants, une erreur se produit et aucune modification n'est effectuée.  
   
@@ -221,15 +221,15 @@ sp_changemergearticle [ @publication = ] 'publication'
 >  Lorsque vous avez plusieurs articles d’une publication (peut-être des centaines) et que vous exécutez **sp_changemergearticle** pour l’un des articles, l’exécution peut prendre beaucoup de temps.  
   
 ## <a name="valid-schema-option-table"></a>Tableau des options de schéma valides  
- Le tableau suivant décrit les valeurs *schema_option*autorisées, en fonction du type de l’article.  
+ Le tableau suivant décrit les valeurs *schema_option* autorisées, en fonction du type de l’article.  
   
 |Type de l'article|Valeurs de l'option de schéma|  
 |------------------|--------------------------|  
 |**func schema only**|**0x01** et **0x2000**|  
-|**indexed view schema only**|**0x01**, **0x040**, **0x0100**, **0x2000**, **0x40000**, **0x1000000**et **0x200000**|  
+|**indexed view schema only**|**0x01**, **0x040**, **0x0100**, **0x2000**, **0x40000**, **0x1000000** et **0x200000**|  
 |**proc schema only**|**0x01** et **0x2000**|  
 |**table**|Toutes les options.|  
-|**view schema only**|**0x01**, **0x040**, **0x0100**, **0x2000**, **0x40000**, **0x1000000**et **0x200000**|  
+|**view schema only**|**0x01**, **0x040**, **0x0100**, **0x2000**, **0x40000**, **0x1000000** et **0x200000**|  
   
 ## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_changemergearticle](../../relational-databases/replication/codesnippet/tsql/sp-changemergearticle-tr_1.sql)]  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysremotelogins
 - sysremotelogins_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: b7ffcfa6-aed8-41d4-8b70-845439ab813d
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: d22ef924002c422bf74844e35a4177e91b34ec50
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: e0eef79e4e104e7c6c089bc798f5da60f2ea8a8c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095359"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160653"
 ---
 # <a name="syssysremotelogins-transact-sql"></a>sys.sysremotelogins (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

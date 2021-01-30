@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d439e097-65f3-471d-8799-5a1263beb3c1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 574bea63894ac304f1b382c5b70b40554c8e5540
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 270f25ff83aa299844e6ba0c7d8c861e9dd8ab30
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976720"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161715"
 ---
 # <a name="addnew-method-example-vb"></a>AddNew, exemple de méthode (VB)
 Cet exemple utilise la méthode [AddNew](./addnew-method-ado.md) pour créer un nouvel enregistrement avec le nom spécifié.  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpmergepublication
 - sp_helpmergepublication_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: dfe1e1e1-9a65-406a-aced-6385a078e135
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 1042543ba82dcbd4bc7376acf6943a838506b6fa
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 8001e98b207ca9493ff71b1f874b12b0d5227306
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549591"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160611"
 ---
 # <a name="sp_helpmergepublication-transact-sql"></a>sp_helpmergepublication (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Renvoie des informations sur une publication de fusion. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,21 +44,21 @@ sp_helpmergepublication [ [ @publication = ] 'publication' ]
   
 ## <a name="arguments"></a>Arguments  
  [ @publication **=** ] **«**_publication_**»**  
- Nom de la publication. *publication*est de **type sysname**, avec la valeur par défaut **%** , qui retourne des informations sur toutes les publications de fusion dans la base de données active.  
+ Nom de la publication. *publication* est de **type sysname**, avec la valeur par défaut **%** , qui retourne des informations sur toutes les publications de fusion dans la base de données active.  
   
- sortie de [ @found **=** ] *****trouvée*****  
- Indicateur qui signale le retour de lignes. *valeur*de **type int** et paramètre de sortie, avec NULL comme valeur par défaut. **1** indique que la publication est trouvée. **0** indique que la publication est introuvable.  
+ sortie de [ @found **=** ] _trouvée_**  
+ Indicateur qui signale le retour de lignes. *valeur* de **type int** et paramètre de sortie, avec NULL comme valeur par défaut. **1** indique que la publication est trouvée. **0** indique que la publication est introuvable.  
   
- sortie de [ @publication_id **=** ] **'***publication_id***'**  
+ sortie de [ @publication_id **=** ] **'**_publication_id_*_'_*  
  Numéro d'identification de la publication. *publication_id* est de type **uniqueidentifier** et un paramètre OUTPUT, avec NULL comme valeur par défaut.  
   
- [ @reserved **=** ] **'***reserved***'**  
+ [ @reserved **=** ] **'**_reserved_*_'_*  
  [!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]*reserved* est de type **nvarchar (20)**, avec NULL comme valeur par défaut.  
   
- [ @publisher **=** ] **« serveur de***publication***»**  
+ [ @publisher **=** ] **«** serveur de _publication_*_»_*  
  Nom du serveur de publication. *Publisher* est de **type sysname**, avec NULL comme valeur par défaut.  
   
- [ @publisher_db **=** ] **'***publisher_db***'**  
+ [ @publisher_db **=** ] **'**_publisher_db_*_'_*  
  Nom de la base de données de publication. *publisher_db* est de **type sysname**, avec NULL comme valeur par défaut.  
   
 ## <a name="result-sets"></a>Jeux de résultats  
@@ -70,7 +70,7 @@ sp_helpmergepublication [ [ @publication = ] 'publication' ]
 |description|**nvarchar(255)**|Description de la publication.|  
 |status|**tinyint**|Indique quand les données de publication sont disponibles.|  
 |retention|**int**|Temps nécessaire pour enregistrer les métadonnées relatives aux modifications des articles dans la publication. Les unités utilisées pour cette période peuvent être des jours, des semaines, des mois ou des années. Pour plus d'informations sur ces unités, consultez la colonne retention_period_unit.|  
-|sync_mode|**tinyint**|Mode de synchronisation de cette publication :<br /><br /> **0** = programme de copie en bloc natif (utilitaire**BCP** )<br /><br /> **1** = copie en bloc de caractères|  
+|sync_mode|**tinyint**|Mode de synchronisation de cette publication :<br /><br /> **0** = programme de copie en bloc natif (utilitaire **BCP** )<br /><br /> **1** = copie en bloc de caractères|  
 |allow_push|**int**|Détermine si des abonnements par envoi de données (push) peuvent être créés pour la publication concernée. **0** signifie qu’un abonnement par envoi de notification n’est pas autorisé.|  
 |allow_pull|**int**|Détermine si des abonnements par extraction de données (pull) peuvent être créés pour la publication concernée. **0** signifie qu’un abonnement par extraction n’est pas autorisé.|  
 |allow_anonymous|**int**|Détermine si des abonnements anonymes peuvent être créés pour la publication concernée. **0** signifie qu’un abonnement anonyme n’est pas autorisé.|  
@@ -124,7 +124,7 @@ sp_helpmergepublication [ [ @publication = ] 'publication' ]
 ## <a name="permissions"></a>Autorisations  
  Les membres de la liste d'accès à la publication d'une publication peuvent exécuter sp_helpmergepublication pour cette publication. Les membres du rôle de base de données fixe db_owner de la base de données de publication peuvent exécuter sp_helpmergepublication pour obtenir des informations sur toutes les publications.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_helpmergepublication](../../relational-databases/replication/codesnippet/tsql/sp-helpmergepublication-_1.sql)]  
   
 ## <a name="see-also"></a>Voir aussi  

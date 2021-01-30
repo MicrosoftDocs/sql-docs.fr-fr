@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLManageDataSources
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: ac6d186f-b394-406c-94c4-c6331d1ca468
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 81f4616cb04d5d17cca687843d28efa1027ff65f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4fbb34d2daafc4a135cbf51c2b0382d3965f9dfc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88460972"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160808"
 ---
 # <a name="sqlmanagedatasources"></a>SQLManageDataSources
 **Conformité**  
@@ -39,7 +39,7 @@ ms.locfileid: "88460972"
 ```cpp  
   
 BOOL SQLManageDataSources(  
-     HWND     hwnd);  
+     HWND     hwnd);  
 ```  
   
 ## <a name="arguments"></a>Arguments  
@@ -50,9 +50,9 @@ BOOL SQLManageDataSources(
  **SQLManageDataSources** retourne la valeur false si *HWND* n’est pas un handle de fenêtre valide. Sinon, elle retourne TRUE.  
   
 ## <a name="diagnostics"></a>Diagnostics  
- Quand **SQLManageDataSources** retourne false, une valeur * \* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs * \* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
+ Quand **SQLManageDataSources** retourne false, une valeur *\* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs *\* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur|Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur générale du programme d’installation|Une erreur s’est produite pour laquelle aucune erreur d’installation spécifique n’a été rencontrée.|  
 |ODBC_ERROR_REQUEST_FAILED|Échec de la *requête*|L’appel à **ConfigDSN** a échoué.|  
@@ -64,7 +64,7 @@ BOOL SQLManageDataSources(
   
  ![Boîte de dialogue Administrateur de sources de données ODBC](../../../odbc/reference/syntax/media/ch23e.gif "CH23E")  
   
- La boîte de dialogue affiche les sources de données listées dans les informations système sous trois onglets : nom de source de données **utilisateur**, **nom de source**de données système et **fichier DSN**. Si l’utilisateur double-clique sur une source de données ou sélectionne une source de données et clique sur **configurer**, **SQLManageDataSources** appelle **ConfigDSN** dans la DLL d’installation avec l’option ODBC_CONFIG_DSN.  
+ La boîte de dialogue affiche les sources de données listées dans les informations système sous trois onglets : nom de source de données **utilisateur**, **nom de source** de données système et **fichier DSN**. Si l’utilisateur double-clique sur une source de données ou sélectionne une source de données et clique sur **configurer**, **SQLManageDataSources** appelle **ConfigDSN** dans la DLL d’installation avec l’option ODBC_CONFIG_DSN.  
   
  Si l’utilisateur clique sur **Ajouter**, **SQLManageDataSources** affiche la boîte de dialogue **créer une nouvelle source de données** , comme indiqué dans l’illustration suivante.  
   

@@ -6,7 +6,7 @@ ms.date: 03/16/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f876d32b-c07f-4ccc-a691-5e580bc50c40
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 2d7267d13a11783cd06a0c8ed57106e2479c1fa3
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 518eb65cbb263505dc5287273754720271d2539a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100077"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158456"
 ---
 # <a name="io-related-dynamic-management-views-and-functions-transact-sql"></a>Fonctions et vues de gestion dynamique liées aux E/S (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

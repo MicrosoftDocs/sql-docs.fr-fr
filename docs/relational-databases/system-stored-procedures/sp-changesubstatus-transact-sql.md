@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_changesubstatus
 - sp_changesubstatus_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 9370e47a-d128-4f15-9224-1c3642770c39
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: faee6b09f682c5d13a3c005d95b1d513d9206026
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 89de8f8a4c5f1abb3a07551bcca6eac53e0b2e2a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89539117"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158964"
 ---
 # <a name="sp_changesubstatus-transact-sql"></a>sp_changesubstatus (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Modifie l'état d'un abonné existant. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -87,7 +87,7 @@ sp_changesubstatus [ [ @publication = ] 'publication' ]
   
 `[ @frequency_interval = ] frequency_interval` Valeur à appliquer à la fréquence définie par *frequency_type*. *frequency_interval* est de **type int**, avec NULL comme valeur par défaut.  
   
-`[ @frequency_relative_interval = ] frequency_relative_interval` Date de la tâche de distribution. Ce paramètre est utilisé lorsque *frequency_type* a la valeur 32 (mensuelle relative). *frequency_relative_interval* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_relative_interval = ] frequency_relative_interval` Date de la tâche de distribution. Ce paramètre est utilisé lorsque *frequency_type* a la valeur 32 (mensuelle relative). *frequency_relative_interval* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -100,7 +100,7 @@ sp_changesubstatus [ [ @publication = ] 'publication' ]
   
 `[ @frequency_recurrence_factor = ] frequency_recurrence_factor` Facteur de récurrence utilisé par *frequency_type*. *frequency_recurrence_factor* est de **type int**, avec NULL comme valeur par défaut.  
   
-`[ @frequency_subday = ] frequency_subday` Indique, en minutes, la fréquence de replanification au cours de la période définie. *frequency_subday* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_subday = ] frequency_subday` Indique, en minutes, la fréquence de replanification au cours de la période définie. *frequency_subday* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -143,7 +143,7 @@ sp_changesubstatus [ [ @publication = ] 'publication' ]
 > [!NOTE]  
 >  Un package DTS doit avoir un mot de passe.  
   
-`[ @dts_package_location = ] dts_package_location` Spécifie l’emplacement du package. *dts_package_location* est de **type int**, avec **0**comme valeur par défaut. Si la **valeur est 0**, l’emplacement du package est sur le serveur de distribution. Si **1**, l’emplacement du package est sur l’abonné. L’emplacement du package peut être **Distributor** ou **Subscriber**.  
+`[ @dts_package_location = ] dts_package_location` Spécifie l’emplacement du package. *dts_package_location* est de **type int**, avec **0** comme valeur par défaut. Si la **valeur est 0**, l’emplacement du package est sur le serveur de distribution. Si **1**, l’emplacement du package est sur l’abonné. L’emplacement du package peut être **Distributor** ou **Subscriber**.  
   
 `[ @skipobjectactivation = ] skipobjectactivation` [!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]  
   

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - JScript
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: eabdd278-6576-4be7-9315-fb79cb8ef678
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0fddb6ba43923692fd8811d2648460a243dc8354
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 3d485b2306b654c4f98911e0a994c246a474f424
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976730"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161724"
 ---
 # <a name="addnew-method-example-jscript"></a>AddNew, exemple de méthode (JScript)
 Cet exemple utilise la méthode [AddNew](./addnew-method-ado.md) pour créer un nouvel enregistrement avec le nom spécifié. Coupez et collez le code suivant dans le bloc-notes ou dans un autre éditeur de texte, puis enregistrez-le en tant que **AddNewJS. asp**.  

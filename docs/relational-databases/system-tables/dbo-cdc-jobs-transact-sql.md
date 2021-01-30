@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - cdc_jobs
 - cdc_jobs_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 85e2d580-1c54-4b81-b7e6-2e12997199fd
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c100dfdaad26065946ccba76907ceb0ac6069d2c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 9981deacd56a3cdea220daada3cd1cdff0b998e7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094887"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158378"
 ---
 # <a name="dbocdc_jobs-transact-sql"></a>dbo.cdc_jobs (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

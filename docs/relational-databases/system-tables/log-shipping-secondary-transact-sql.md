@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - log_shipping_secondary
 - log_shipping_secondary_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 69723419-4544-49c6-a517-adb30ffa5741
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c4a19cbdd26e1c93e0f132c419e3fb2b2e4294a8
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0b04537e3559828764eac63f4cea3d46afd6f49e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097438"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160578"
 ---
 # <a name="log_shipping_secondary-transact-sql"></a>log_shipping_secondary (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

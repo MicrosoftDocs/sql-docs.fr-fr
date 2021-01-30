@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysdtslog90_TSQL
 - sysdtslog90
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 7fa288a1-81e3-42a0-82f6-8a59019693d0
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 9aef51cb3297cd83b68fa42c71dcd993fb418830
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 58ce8d5a4784f34e83e2b09edda63dd49833a5ab
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88473098"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159479"
 ---
 # <a name="sysssislog-transact-sql"></a>sysssislog (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "88473098"
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
 |id|**int**|Identificateur unique de l'entrée d'enregistrement.|  
-|event|**sysname**|Nom de l'événement qui a généré l'entrée d'enregistrement.|  
+|événement|**sysname**|Nom de l'événement qui a généré l'entrée d'enregistrement.|  
 |computer|**nvarchar**|Ordinateur sur lequel le package s'exécutait lors de la création de l'entrée d'enregistrement.|  
 |operator|**nvarchar**|Nom de l'utilisateur qui a exécuté le package ayant créé l'entrée du journal.|  
 |source|**nvarchar**|Nom de l'exécutable dans le package qui a généré l'entrée du journal.|  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_changemergepullsubscription
 - sp_changemergepullsubscription_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 5e0d04f2-6175-44a2-ad96-a8e2986ce4c9
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 39cb33678b853feadbbb20a88669f0b48a3d444a
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: f8590cd397f41ca4c4db8776f614f47b2b05c921
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546211"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159840"
 ---
 # <a name="sp_changemergepullsubscription-transact-sql"></a>sp_changemergepullsubscription (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Modifie les propriétés de l'abonnement de fusion extrait. Cette procédure stockée est exécutée sur la base de données d'abonnement de l'Abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,13 +44,13 @@ sp_changemergepullsubscription [ [ @publication= ] 'publication' ]
 ## <a name="arguments"></a>Arguments  
 `[ @publication = ] 'publication'` Nom de la publication. *publication* est de **type sysname**, avec% comme valeur par défaut.  
   
-`[ @publisher = ] 'publisher'` Nom du serveur de publication. *Publisher*est de **type sysname**, avec% comme valeur par défaut.  
+`[ @publisher = ] 'publisher'` Nom du serveur de publication. *Publisher* est de **type sysname**, avec% comme valeur par défaut.  
   
-`[ @publisher_db = ] 'publisher_db'` Nom de la base de données du serveur de publication. *publisher_db*est de **type sysname**, avec% comme valeur par défaut.  
+`[ @publisher_db = ] 'publisher_db'` Nom de la base de données du serveur de publication. *publisher_db* est de **type sysname**, avec% comme valeur par défaut.  
   
-`[ @property = ] 'property'` Nom de la propriété à modifier. *Property* est de **type sysname**et peut prendre l’une des valeurs de la table.  
+`[ @property = ] 'property'` Nom de la propriété à modifier. *Property* est de **type sysname** et peut prendre l’une des valeurs de la table.  
   
-`[ @value = ] 'value'` Nouvelle valeur de la propriété spécifiée. la *valeur*est de type **nvarchar (255)** et peut prendre l’une des valeurs de la table.  
+`[ @value = ] 'value'` Nouvelle valeur de la propriété spécifiée. la *valeur* est de type **nvarchar (255)** et peut prendre l’une des valeurs de la table.  
   
 |Propriété|Valeur|Description|  
 |--------------|-----------|-----------------|  

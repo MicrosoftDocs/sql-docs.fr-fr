@@ -6,7 +6,7 @@ ms.date: 08/20/2015
 ms.service: sql-database
 ms.reviewer: ''
 ms.prod_service: sql-database
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.assetid: 6ea26833-718b-4588-82f0-2511a76d3554
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: 37b0be5000f656193eff66b321b61afaecc2a6f6
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 32c025b4fd8f0cf5db13889b26afc2f198fa41e4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100626"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160159"
 ---
 # <a name="azure-sql-database-catalog-views"></a>Affichages catalogue Azure SQL Database
 [!INCLUDE[tsql-appliesto-xxxxxx-asdb-xxxx-xxx_md](../../includes/tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md.md)]

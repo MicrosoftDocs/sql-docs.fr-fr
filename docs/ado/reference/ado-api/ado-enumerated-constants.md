@@ -7,40 +7,40 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - enumerated constants [ADO]
 ms.assetid: c97ed131-1a93-463c-9e61-22f029b0c474
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c3c19b98cbb000abc93755c3de43ac5420db164d
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 5882488e36fb420ad808974d18b34acb8ccbc00c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976480"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161643"
 ---
 # <a name="ado-enumerated-constants"></a>Constantes énumérées ADO
 Pour faciliter le débogage, les énumérations ADO répertorient une valeur pour chaque constante. Toutefois, cette valeur est purement indicative et peut passer d’une version d’ADO à une autre. Votre code ne doit dépendre que du nom, et non de la valeur réelle, de chaque constante énumérée.  
   
-|Constant|Description|  
+|Constante|Description|  
 |-|-|  
 |[ADCPROP_ASYNCTHREADPRIORITY_ENUM](./adcprop-asyncthreadpriority-enum.md)|Pour un objet **Recordset** RDS, spécifie la priorité d’exécution du thread asynchrone qui récupère les données.|  
-|[ADCPROP_AUTORECALC_ENUM](./adcprop-autorecalc-enum.md)|Spécifie quand le fournisseur **MSDataShape** recalcule les colonnes agrégées et calculées dans un **jeu d’enregistrements**hiérarchique.|  
+|[ADCPROP_AUTORECALC_ENUM](./adcprop-autorecalc-enum.md)|Spécifie quand le fournisseur **MSDataShape** recalcule les colonnes agrégées et calculées dans un **jeu d’enregistrements** hiérarchique.|  
 |[ADCPROP_UPDATECRITERIA_ENUM](./adcprop-updatecriteria-enum.md)|Spécifie les champs qui peuvent être utilisés pour détecter les conflits pendant une mise à jour optimiste d’une ligne de la source de données avec un objet **Recordset** .|  
 |[ADCPROP_UPDATERESYNC_ENUM](./adcprop-updateresync-enum.md)|Spécifie si la méthode **UpdateBatch** est suivie d’une opération de méthode de **resynchronisation** implicite et, le cas échéant, de l’étendue de cette opération.|  
 |[AffectEnum](./affectenum.md)|Spécifie les enregistrements qui sont affectés par une opération.|  
 |[BookmarkEnum](./bookmarkenum.md)|Spécifie un signet qui indique où l’opération doit commencer.|  
 |[CommandTypeEnum](./commandtypeenum.md)|Spécifie comment un argument de commande doit être interprété.|  
 |[CompareEnum](./compareenum.md)|Spécifie la position relative de deux enregistrements représentés par leurs signets.|  
-|[ConnectModeEnum](./connectmodeenum.md)|Spécifie les autorisations disponibles pour la modification des données dans une **connexion**, l’ouverture d’un **enregistrement**ou la spécification de valeurs pour la propriété **mode** des objets **Record** et **Stream** .|  
+|[ConnectModeEnum](./connectmodeenum.md)|Spécifie les autorisations disponibles pour la modification des données dans une **connexion**, l’ouverture d’un **enregistrement** ou la spécification de valeurs pour la propriété **mode** des objets **Record** et **Stream** .|  
 |[ConnectOptionEnum](./connectoptionenum.md)|Spécifie si la méthode **Open** d’un objet **Connection** doit être retournée après (de façon synchrone) ou avant (de façon asynchrone) la connexion est établie.|  
 |[ConnectPromptEnum](./connectpromptenum.md)|Spécifie si une boîte de dialogue doit être affichée pour demander des paramètres manquants lors de l’ouverture d’une connexion à une source de données ODBC.|  
 |[CopyRecordOptionsEnum](./copyrecordoptionsenum.md)|Spécifie le comportement de la méthode **CopyRecord** .|  
 |[CursorLocationEnum](./cursorlocationenum.md)|Spécifie l’emplacement du moteur de curseur.|  
 |[CursorOptionEnum](./cursoroptionenum.md)|Spécifie les fonctionnalités que la méthode de **prise en charge** doit tester.|  
 |[CursorTypeEnum](./cursortypeenum.md)|Spécifie le type de curseur utilisé dans un objet **Recordset** .|  
-|[DataTypeEnum](./datatypeenum.md)|Spécifie le type de données d’un **champ**, d’un **paramètre**ou d’une **propriété**.|  
+|[DataTypeEnum](./datatypeenum.md)|Spécifie le type de données d’un **champ**, d’un **paramètre** ou d’une **propriété**.|  
 |[EditModeEnum](./editmodeenum.md)|Spécifie l’état de modification d’un enregistrement.|  
 |[ErrorValueEnum](./errorvalueenum.md)|Spécifie le type d’erreur d’exécution ADO.|  
 |[EventReasonEnum](./eventreasonenum.md)|Spécifie la raison pour laquelle un événement a eu lieu.|  

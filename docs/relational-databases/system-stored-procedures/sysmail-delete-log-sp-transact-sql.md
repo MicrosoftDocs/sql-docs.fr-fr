@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysmail_delete_log_sp_TSQL
 - sysmail_delete_log_sp
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: e94b37a1-70ad-46a5-86c0-721892156f7c
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 7cc01563da03abda4ea8eef8b639ba5704549f55
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 1f3921d220f367d15849eab080369db986d8f53e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538433"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160017"
 ---
 # <a name="sysmail_delete_log_sp-transact-sql"></a>sysmail_delete_log_sp (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Supprime des événements du journal de la messagerie de base de données. Supprime tous les événements du journal ou uniquement les événements correspondant à des critères de date ou de type spécifiés.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,7 +44,7 @@ sysmail_delete_log_sp  [ [ @logged_before = ] 'logged_before' ]
 ## <a name="arguments"></a>Arguments  
 `[ @logged_before = ] 'logged_before'` Supprime les entrées jusqu’à la date et l’heure spécifiées par l’argument *logged_before* . *logged_before* est de **type DateTime** avec NULL comme valeur par défaut. La valeur NULL correspond à toutes les dates.  
   
-`[ @event_type = ] 'event_type'` Supprime les entrées de journal du type spécifié en tant que *event_type*. *event_type* est de type **varchar (15)** et n’a pas de valeur par défaut. Les entrées valides sont **réussite**, **Avertissement**, **erreur**et **information**. La valeur NULL correspond à tous les types d'événements.  
+`[ @event_type = ] 'event_type'` Supprime les entrées de journal du type spécifié en tant que *event_type*. *event_type* est de type **varchar (15)** et n’a pas de valeur par défaut. Les entrées valides sont **réussite**, **Avertissement**, **erreur** et **information**. La valeur NULL correspond à tous les types d'événements.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

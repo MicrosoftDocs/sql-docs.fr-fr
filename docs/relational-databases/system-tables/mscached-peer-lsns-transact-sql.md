@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MScached_peer_lsns_TSQL
 - MScached_peer_lsns
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: f8b6089a-0230-45f9-8c34-9fe0d2a3a74e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f1b9c527f1411f84afeef72d60c266ef1f3a91ea
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 974f15aa4e1c971f6f3ca6abe6d9a31129611dfd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092419"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160485"
 ---
 # <a name="mscached_peer_lsns-transact-sql"></a>MScached_peer_lsns (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

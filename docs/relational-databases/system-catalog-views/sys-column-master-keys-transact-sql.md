@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - column_master_key_definitions_TSQL
 - column_master_key_definitions
@@ -26,12 +26,12 @@ ms.assetid: fbec2efa-5fe9-4121-9b34-60497b0b2aca
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 9b62a54ec2ab17d76f5f726dbd26f28a60d79afc
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 33682106df449dbdd1dd1c4244dffe89118a2964
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97429581"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161418"
 ---
 # <a name="syscolumn_master_keys-transact-sql"></a>sys.column_master_keys (Transact-SQL)
 
@@ -46,7 +46,7 @@ ms.locfileid: "97429581"
 |**create_date**|**datetime**|Date de création de la clé principale de colonne.|  
 |**modify_date**|**datetime**|Date de la dernière modification de la clé principale de colonne.|  
 |**key_store_provider_name**|**sysname**|Nom du fournisseur pour le magasin de clés principales de colonne qui contient CMK. Les valeurs autorisées sont les suivantes :<br /><br /> MSSQL_CERTIFICATE_STORE-si le magasin de clés principales de colonne est un magasin de certificats.<br /><br /> Valeur définie par l’utilisateur, si le magasin de clés principales de colonne est d’un type personnalisé.|  
-|**key_path**|**nvarchar(4000)**|Chemin d’accès spécifique au magasin de clés principales de colonne pour la clé. Le format du chemin d’accès dépend du type de magasin de clés principales de colonne. Exemple :<br /><br /> `'CurrentUser/Personal/'<thumbprint>`<br /><br /> Pour un magasin de clés principales de colonne personnalisé, le développeur est chargé de définir ce qu’est un chemin d’accès de clé pour le magasin de clés principales de colonne personnalisé.|  
+|**key_path**|**nvarchar(4000)**|Chemin d’accès spécifique au magasin de clés principales de colonne pour la clé. Le format du chemin d’accès dépend du type de magasin de clés principales de colonne. Exemple :<br /><br /> `'CurrentUser/Personal/'<thumbprint>`<br /><br /> Pour un magasin de clés principales de colonne personnalisé, le développeur est chargé de définir ce qu’est un chemin d’accès de clé pour le magasin de clés principales de colonne personnalisé.|  
 |**allow_enclave_computations**|**bit**|Indique si la clé principale de colonne est activée pour l’enclave, (si les clés de chiffrement de colonne, chiffrées avec cette clé principale, peuvent être utilisées pour les calculs dans les enclaves sécurisées côté serveur). Pour plus d’informations, consultez [Always Encrypted avec enclaves sécurisées](../../relational-databases/security/encryption/always-encrypted-enclaves.md).|  
 |**signature**|**varbinary(max)**|Une signature numérique de **key_path** et **allow_enclave_computations** produite à l’aide de la clé principale de colonne, référencée par **key_path**.|
 

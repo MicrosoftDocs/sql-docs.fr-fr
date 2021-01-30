@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLSetDescRec
 apilocation:
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: bf55256c-7eb7-4e3f-97ef-b0fee09ba829
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e8f0e423de06acf82e6c883531514c57c29d9407
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 65e0a789f38ad9f0d1d4b624caca896d01356ce2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88421123"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160190"
 ---
 # <a name="sqlsetdescrec-function"></a>SQLSetDescRec, fonction
 **Conformité**  
@@ -65,13 +65,13 @@ SQLRETURN SQLSetDescRec(
  *Sous-type*  
  Entrée Pour les enregistrements dont le type est SQL_DATETIME ou SQL_INTERVAL, il s’agit de la valeur à laquelle définir le champ SQL_DESC_DATETIME_INTERVAL_CODE.  
   
- *Longueur*  
+ *Durée*  
  Entrée Valeur sur laquelle définir le champ SQL_DESC_OCTET_LENGTH pour l’enregistrement du descripteur.  
   
  *Précision*  
  Entrée Valeur sur laquelle définir le champ SQL_DESC_PRECISION pour l’enregistrement du descripteur.  
   
- *Mise à l’échelle*  
+ *Mettre à l’échelle*  
  Entrée Valeur sur laquelle définir le champ SQL_DESC_SCALE pour l’enregistrement du descripteur.  
   
  *DataPtr*  
@@ -91,14 +91,14 @@ SQLRETURN SQLSetDescRec(
 ## <a name="diagnostics"></a>Diagnostics  
  Quand **SQLSetDescRec** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *comme HandleType* de SQL_HANDLE_DESC et un *handle* de *DescriptorHandle*. Le tableau suivant répertorie les valeurs SQLSTATE couramment retournées par **SQLSetDescRec** et les explique dans le contexte de cette fonction. la notation « (DM) » précède les descriptions des SQLSTATEs retournées par le gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur|Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information spécifique au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |07009|Index de descripteur non valide|L’argument *recnumber* a été défini sur 0, et le *DescriptorHandle* a référencé un handle IPD.<br /><br /> L’argument *recnumber* est inférieur à 0.<br /><br /> L’argument *recnumber* a une valeur supérieure au nombre maximal de colonnes ou de paramètres que la source de données peut prendre en charge, et l’argument *DESCRIPTORHANDLE* était un APD, un IPD ou un ARD.<br /><br /> L’argument *recnumber* était égal à 0, et l’argument *DescriptorHandle* faisait appel à un APD alloué de manière implicite. (Cette erreur ne se produit pas avec un descripteur d’application explicitement alloué, car il n’est pas connu qu’un descripteur d’application explicitement alloué est un APD ou un ARD jusqu’à l’exécution.)|  
 |08S01|Échec de la liaison de communication|Le lien de communication entre le pilote et la source de données à laquelle le pilote a été connecté a échoué avant la fin du traitement de la fonction.|  
-|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon * \* MessageText* décrit l’erreur et sa cause.|  
+|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon *\* MessageText* décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|Le pilote n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou l’achèvement de la fonction.|  
-|HY010|Erreur de séquence de fonction|(DM) le *DescriptorHandle* a été associé à un *StatementHandle* pour lequel une fonction d’exécution asynchrone (pas celui-ci) a été appelée et était toujours en cours d’exécution quand cette fonction a été appelée.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations**ou **SQLSetPos** a été appelé pour le *StatementHandle* avec lequel le *DescriptorHandle* a été associé et retourné SQL_NEED_DATA. Cette fonction a été appelée avant l’envoi des données pour l’ensemble des paramètres ou des colonnes de données en cours d’exécution.<br /><br /> (DM) une fonction d’exécution asynchrone a été appelée pour le handle de connexion associé à *DescriptorHandle*. Cette fonction aynchronous était toujours en cours d’exécution lors de l’appel de la fonction **SQLSetDescRec** .<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**ou **SQLMoreResults** a été appelé pour l’un des handles d’instruction associés à *DescriptorHandle* et retournés SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.|  
+|HY010|Erreur de séquence de fonction|(DM) le *DescriptorHandle* a été associé à un *StatementHandle* pour lequel une fonction d’exécution asynchrone (pas celui-ci) a été appelée et était toujours en cours d’exécution quand cette fonction a été appelée.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations** ou **SQLSetPos** a été appelé pour le *StatementHandle* avec lequel le *DescriptorHandle* a été associé et retourné SQL_NEED_DATA. Cette fonction a été appelée avant l’envoi des données pour l’ensemble des paramètres ou des colonnes de données en cours d’exécution.<br /><br /> (DM) une fonction d’exécution asynchrone a été appelée pour le handle de connexion associé à *DescriptorHandle*. Cette fonction aynchronous était toujours en cours d’exécution lors de l’appel de la fonction **SQLSetDescRec** .<br /><br /> (DM) **SQLExecute**, **SQLExecDirect** ou **SQLMoreResults** a été appelé pour l’un des handles d’instruction associés à *DescriptorHandle* et retournés SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.|  
 |HY013|Erreur de gestion de la mémoire|Impossible de traiter l’appel de fonction, car les objets mémoire sous-jacents sont inaccessibles, probablement en raison de conditions de mémoire insuffisante.|  
 |HY016|Impossible de modifier un descripteur de ligne d’implémentation|L’argument *DescriptorHandle* a été associé à un IRD.|  
 |HY021|Informations de descripteur incohérentes|Le champ de *type* , ou tout autre champ associé au champ SQL_DESC_TYPE dans le descripteur, n’était pas valide ou est cohérent.<br /><br /> Les informations de descripteur vérifiées pendant une vérification de cohérence ne sont pas cohérentes. (Consultez « vérifications de cohérence », plus loin dans cette section.)|  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_changedistributiondb_TSQL
 - sp_changedistributiondb
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 66f73185-ea9e-43f9-86ed-9dd933cee2f6
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 35a090a0dc82f09ccceb1a4d56c09f8ab9d8191f
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 958b76e23e52a6f36d54acf9d596cec92aadefba
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89536717"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159013"
 ---
 # <a name="sp_changedistributiondb-transact-sql"></a>sp_changedistributiondb (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Modifie les propriétés de la base de données de distribution. Cette procédure stockée est exécutée sur n’importe quelle base de données du serveur de distribution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,7 +42,7 @@ sp_changedistributiondb [ @database= ] 'database'
 ## <a name="arguments"></a>Arguments  
 `[ @database = ] 'database'` Nom de la base de données de distribution. *Database est de* **type sysname**, sans valeur par défaut.  
   
-`[ @property = ] 'property'` Propriété à modifier pour la base de données spécifiée. *Property* est de **type sysname**et peut prendre l’une des valeurs suivantes.  
+`[ @property = ] 'property'` Propriété à modifier pour la base de données spécifiée. *Property* est de **type sysname** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

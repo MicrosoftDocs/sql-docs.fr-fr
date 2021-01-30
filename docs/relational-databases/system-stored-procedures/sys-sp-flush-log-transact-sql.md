@@ -1,13 +1,13 @@
 ---
 description: sys.sp_flush_log (Transact-SQL)
-title: sys. sp_flush_log (Transact-SQL) | Microsoft Docs
+title: sys.sp_flush_log (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_flush_log_TSQL
 - sys.sp_flush_log
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 75cc9f52-3b1f-4754-b1e7-ce0dd3323bc9
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 99d804cc8df3a25853abc11b2ea4403b00fec503
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a165695005300627db18f28b41b944c97f5fe61f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88489029"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159697"
 ---
 # <a name="syssp_flush_log-transact-sql"></a>sys.sp_flush_log (Transact-SQL)
 [!INCLUDE [sqlserver2016](../../includes/applies-to-version/sqlserver2016.md)]

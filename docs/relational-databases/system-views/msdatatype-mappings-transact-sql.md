@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSdatatype_mappings
 - MSdatatype_mappings_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 13cdabb3-6e07-4e8d-ae80-4235022ccc7f
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: f67f313d177b5ef22e6cb97b9ab25d5281c860e2
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: bbafdd41f1c1c3c10425a3d5f63af103a23dc9a6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88463833"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160411"
 ---
 # <a name="msdatatype_mappings-transact-sql"></a>MSdatatype_mappings (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

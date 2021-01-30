@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DM_EXEC_EXTERNAL_OPERATIONS_TSQL
 - DM_EXEC_EXTERNAL_OPERATIONS
@@ -23,12 +23,12 @@ ms.assetid: d268217a-85b8-4b7f-9cd1-87865eba2be1
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 013a6c0ff6110bc8dcf051195e3f7c1ab5fe4798
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: df5787d25b8b5c7a1aac176e7ec7eb6e2a6fbc00
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098969"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160006"
 ---
 # <a name="sysdm_exec_external_operations-transact-sql"></a>sys.dm_exec_external_operations (Transact-SQL)
 [!INCLUDE [sqlserver2016-asa-pdw](../../includes/applies-to-version/sqlserver2016-asa-pdw.md)]

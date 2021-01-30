@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysperfinfo_TSQL
 - sys.sysperfinfo_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: e22a81cd-27de-4690-9443-6aad6393bd3c
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 477121d623733b5bafcf4385d8069715a333175e
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f19c8f9f9115ca52746812d7df9891eb6338ad82
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095400"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160675"
 ---
 # <a name="syssysperfinfo-transact-sql"></a>sys.sysperfinfo (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

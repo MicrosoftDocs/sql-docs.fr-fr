@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_syspolicy_update_policy_category_TSQL
 - sp_syspolicy_update_policy_category
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 6b6413c2-7a3b-4eff-91d9-5db2011869d6
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 911dfde6ac3cb10ec67e788f7d8937e44ca6727e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8825e94add7ceb74f6adcc0d52fda768d5e777bc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492954"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161275"
 ---
 # <a name="sp_syspolicy_update_policy_category-transact-sql"></a>sp_syspolicy_update_policy_category (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -41,9 +41,9 @@ sp_syspolicy_update_policy_category { [ @name = ] 'name' | [ @policy_category_id
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @name = ] 'name'` Nom de la catégorie de stratégie. *Name* est de **type sysname**et doit être spécifié si *policy_category_id* a la valeur null.  
+`[ @name = ] 'name'` Nom de la catégorie de stratégie. *Name* est de **type sysname** et doit être spécifié si *policy_category_id* a la valeur null.  
   
-`[ @policy_category_id = ] policy_category_id` Identificateur de la catégorie de stratégie. *policy_category_id* est de **type int**et doit être spécifié si *Name* a la valeur null.  
+`[ @policy_category_id = ] policy_category_id` Identificateur de la catégorie de stratégie. *policy_category_id* est de **type int** et doit être spécifié si *Name* a la valeur null.  
   
 `[ @mandate_database_subscriptions = ] mandate_database_subscriptions` Détermine si l’abonnement à la base de données est autorisé pour la catégorie de stratégie. *mandate_database_subscriptions* est une valeur de **bit** , avec NULL comme valeur par défaut. Vous pouvez utiliser l'une des valeurs suivantes :  
   

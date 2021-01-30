@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_changedistpublisher_TSQL
 - sp_changedistpublisher
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 7ef5c89d-faaa-4f8e-aef7-00649ebc8bc9
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: ca2b3369a75d2e2b80624d99d2fe11459b8ff749
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: d48757f7404ba4f915e7b92609c9077ab702adb4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548262"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159038"
 ---
 # <a name="sp_changedistpublisher-transact-sql"></a>sp_changedistpublisher (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Modifie les propriétés du serveur de publication de distribution. Cette procédure stockée est exécutée sur n’importe quelle base de données du serveur de distribution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -59,7 +59,7 @@ sp_changedistpublisher [ @publisher = ] 'publisher'
 |**active**|**true**|Active le serveur de publication.|  
 ||**false**|Désactive le serveur de publication.|  
 |**bd_distribution**||Nom de la base de données de distribution.|  
-|**connexion**||Nom de connexion.|  
+|**login**||Nom de connexion.|  
 |**mot de passe**||Mot de passe fort pour le nom de connexion fourni.|  
 |**security_mode**|**1**|Utiliser l'authentification Windows pour la connexion au serveur de publication. *Cela ne peut pas être modifié pour un non-* [!INCLUDE[msCoName](../../includes/msconame-md.md)] serveur de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] *publication.*|  
 ||**0**|Utiliser l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour la connexion au serveur de publication. *Cela ne peut pas être modifié pour un non-* [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] serveur de *publication.*|  

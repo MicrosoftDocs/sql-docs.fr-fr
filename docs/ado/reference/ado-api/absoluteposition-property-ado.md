@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset15::AbsolutePosition
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 79f8ee5e-fc70-46d8-8c29-ebf943c66592
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0ecb3290d73032568af7e0a92baf0c9d1b2628f4
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: b394ab30d4ee8d73e879abe2687e1208ba3188ad
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88977157"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161016"
 ---
 # <a name="absoluteposition-property-ado"></a>AbsolutePosition, propriété (ADO)
 Indique la position ordinale de l’enregistrement actif d’un objet [Recordset](./recordset-object-ado.md) .  

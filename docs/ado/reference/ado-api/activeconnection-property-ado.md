@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Command15::ActiveConnection
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 52d0a96c-14fb-4ad9-b004-4d821bc0a6db
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: bc1a54d70639e4e3ff78748b4e04483fcfefafdb
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: efcb376c9ad27dff5a0c85d73f70ae4000385e3d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976960"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159238"
 ---
 # <a name="activeconnection-property-ado"></a>ActiveConnection, propriété (ADO)
 Indique à quel objet de [connexion](./connection-object-ado.md) la [commande](./command-object-ado.md), le [jeu d’enregistrements](./recordset-object-ado.md)ou l’objet d' [enregistrement](./record-object-ado.md) spécifiés appartiennent actuellement.  
@@ -42,7 +42,7 @@ Indique à quel objet de [connexion](./connection-object-ado.md) la [commande](.
  Si un objet de **connexion** est affecté à la propriété **ActiveConnection** , l’objet doit être ouvert. L’attribution d’un objet de connexion fermé provoque une erreur.  
   
 ### <a name="note"></a>Notes  
- **Visual Basic Microsoft** L’affectation de la valeur *Nothing* à la propriété **ActiveConnection** dissocie l’objet **Command** de la **connexion** actuelle et oblige le fournisseur à libérer toutes les ressources associées sur la source de données. Vous pouvez ensuite associer l’objet de **commande** à la même ou à un autre objet de **connexion** . Certains fournisseurs vous permettent de modifier le paramètre de propriété d’une **connexion** à une autre, sans devoir d’abord affecter la valeur *Nothing*à la propriété.  
+ **Visual Basic Microsoft** L’affectation de la valeur *Nothing* à la propriété **ActiveConnection** dissocie l’objet **Command** de la **connexion** actuelle et oblige le fournisseur à libérer toutes les ressources associées sur la source de données. Vous pouvez ensuite associer l’objet de **commande** à la même ou à un autre objet de **connexion** . Certains fournisseurs vous permettent de modifier le paramètre de propriété d’une **connexion** à une autre, sans devoir d’abord affecter la valeur *Nothing* à la propriété.  
   
  Si la collection [Parameters](./parameters-collection-ado.md) de l’objet **Command** contient des paramètres fournis par le fournisseur, la collection est effacée si vous définissez la propriété **ActiveConnection** sur *Nothing* ou sur un autre objet **Connection** . Si vous créez manuellement des objets de [paramètre](./parameter-object.md) et que vous les utilisez pour remplir la collection de **paramètres** de l’objet de **commande** , la définition de la propriété **ActiveConnection** sur *Nothing* ou sur un autre objet de **connexion** laisse la collection **Parameters** intacte.  
   
@@ -60,7 +60,7 @@ Indique à quel objet de [connexion](./connection-object-ado.md) la [commande](.
 > [!NOTE]
 >  **Utilisation des services de données distants** Lorsqu’elle est utilisée sur un objet **Recordset** côté client, cette propriété ne peut être définie qu’à une chaîne de connexion ou (dans Microsoft Visual Basic ou Visual Basic, édition de scripts) à *Nothing*.  
   
-## <a name="record"></a>Enregistrement  
+## <a name="record"></a>Enregistrer  
  Cette propriété est en lecture/écriture lorsque l’objet **enregistrement** est fermé et peut contenir une chaîne de connexion ou une référence à un objet de **connexion** ouvert. Cette propriété est en lecture seule lorsque l’objet **enregistrement** est ouvert et contient une référence à un objet de **connexion** ouvert.  
   
  Un objet de **connexion** est créé implicitement lorsque l’objet **enregistrement** est ouvert à partir d’une URL. Ouvrez l' **enregistrement** avec un objet de **connexion** ouvert existant en affectant l’objet de **connexion** à cette propriété, ou en utilisant l’objet de **connexion** en tant que paramètre dans l’appel de la méthode [Open](./open-method-ado-record.md) . Si l' **enregistrement** est ouvert à partir d' **un enregistrement** ou [d’un jeu d’enregistrements](./recordset-object-ado.md)existant, il est automatiquement associé à cet **enregistrement** ou à l’objet de **connexion** de l’objet **Recordset** .  

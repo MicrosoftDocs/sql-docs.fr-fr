@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SYS.DM_EXEC_DISTRIBUTED_REQUEST_STEPS_TSQL
 - DM_EXEC_DISTRIBUTED_REQUEST_STEPS_TSQL
@@ -23,12 +23,12 @@ ms.assetid: 1954541d-b716-4e03-8fcc-7022f428e01d
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 57ea8cc29caae50f91c8351bf72af494b000b178
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 23992d8ed0c2974c78f3fcd5db3686683b9d6ee3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094077"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160059"
 ---
 # <a name="sysdm_exec_distributed_request_steps-transact-sql"></a>sys.dm_exec_distributed_request_steps (Transact-SQL)
 [!INCLUDE [sqlserver2016-asa-pdw](../../includes/applies-to-version/sqlserver2016-asa-pdw.md)]

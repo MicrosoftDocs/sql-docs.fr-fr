@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - cursor library [ODBC], functions
 - functions [ODBC], cursor library
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f2941522-75eb-4db9-9468-4800b884dac2
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e9855bcf92373af085ac7ba8eb10f63afef6c5c9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e1e9dc26730d9bdc5b10ba9f4c35c46f6500f6bc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88466101"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160869"
 ---
 # <a name="odbc-functions-not-executed-by-the-cursor-library"></a>Fonctions ODBC non exécutées par la bibliothèque de curseurs
 > [!IMPORTANT]  

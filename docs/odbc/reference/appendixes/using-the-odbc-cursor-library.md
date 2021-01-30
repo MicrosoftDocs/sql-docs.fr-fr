@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ODBC cursor library [ODBC], using cursor library
 - cursor library [ODBC], using cursor library
 ms.assetid: 9653f2f8-ccfc-4220-99ef-601dc0fa641c
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: be42c95692537c0479afb7ed492756b8a54ab030
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1658d3c628506f1b5c53a5c9271a10f96fa2ef44
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88386195"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158184"
 ---
 # <a name="using-the-odbc-cursor-library"></a>Utilisation de la bibliothèque de curseurs ODBC
 > [!IMPORTANT]  
@@ -29,7 +29,7 @@ ms.locfileid: "88386195"
   
 1.  Appelle **SQLSetConnectAttr** avec un *attribut* de SQL_ATTR_ODBC_CURSORS pour spécifier comment la bibliothèque de curseurs doit être utilisée avec une connexion particulière. La bibliothèque de curseurs peut être toujours utilisée (SQL_CUR_USE_ODBC), utilisée uniquement si le pilote ne prend pas en charge les curseurs à défilement (SQL_CUR_USE_IF_NEEDED) ou n’est jamais utilisé (SQL_CUR_USE_DRIVER).  
   
-2.  Appelle **SQLConnect**, **SQLDriverConnect**ou **SQLBrowseConnect** pour se connecter à la source de données.  
+2.  Appelle **SQLConnect**, **SQLDriverConnect** ou **SQLBrowseConnect** pour se connecter à la source de données.  
   
 3.  Appelle **SQLSetStmtAttr** pour spécifier le type de curseur (SQL_ATTR_CURSOR_TYPE), la concurrence (SQL_ATTR_CONCURRENCY) et la taille de l’ensemble de lignes (SQL_ATTR_ROW_ARRAY_SIZE). La bibliothèque de curseurs prend en charge les curseurs avant uniquement et statiques. Les curseurs avant uniquement doivent être en lecture seule, tandis que les curseurs statiques peuvent être en lecture seule ou peuvent utiliser le contrôle d’accès concurrentiel optimiste en comparant les valeurs.  
   

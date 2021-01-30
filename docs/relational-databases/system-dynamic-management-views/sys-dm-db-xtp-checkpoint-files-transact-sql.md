@@ -7,7 +7,7 @@ ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.custom: ''
 ms.technology: in-memory-oltp
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_db_xtp_checkpoint_files
 - sys.dm_db_xtp_checkpoint_files_TSQL
@@ -21,12 +21,12 @@ ms.assetid: ac8e6333-7a9f-478a-b446-5602283e81c9
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: d94ff0799552f1d6c89e30e3b2712942ed0d4177
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 44c8b94a441e276561f3eb8fff165fede678e952
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171411"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160179"
 ---
 # <a name="sysdm_db_xtp_checkpoint_files-transact-sql"></a>sys.dm_db_xtp_checkpoint_files (Transact-SQL)
 [!INCLUDE[sql-asdb-asdbmi](../../includes/applies-to-version/sql-asdb-asdbmi.md)]
@@ -98,7 +98,7 @@ ms.locfileid: "98171411"
 ## <a name="permissions"></a>Autorisations  
  Nécessite l'autorisation `VIEW DATABASE STATE` sur le serveur.  
   
-## <a name="use-cases"></a>Scénarios d’utilisation  
+## <a name="use-cases"></a>Cas d’usage  
  Vous pouvez estimer le stockage utilisé par In-Memory OLTP comme suit :  
   
 ```  

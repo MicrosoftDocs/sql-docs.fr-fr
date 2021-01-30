@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: f264554c-5514-4df2-aadb-6dcdc2dfcfea
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: d6c2a075f14246da9eacf847a47f2a7170ce1279
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 1b2d50b3711cc045a43c905404580582fbb2291b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094879"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158409"
 ---
 # <a name="database-maintenance-plan-tables-transact-sql"></a>Tables de plan de maintenance de base de données (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

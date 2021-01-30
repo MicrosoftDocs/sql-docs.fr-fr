@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysfilegroups_TSQL
 - sys.sysfilegroups
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: e567fa07-31cd-43cc-b8c7-ba6108baca80
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 609563f4998215367649a33cfc5136b8edd0e26b
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 9d0a11ac6a62ee7f2936e3c31f8e99389b2bd10c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099104"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160720"
 ---
 # <a name="syssysfilegroups-transact-sql"></a>sys.sysfilegroups (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

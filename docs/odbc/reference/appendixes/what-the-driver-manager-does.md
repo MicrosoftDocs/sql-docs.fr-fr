@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - driver manager [ODBC], backward compatibility
 - compatibility [ODBC], driver manager
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 57f65c38-d9ee-46c8-9051-128224a582c6
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 399dec39e18c9e31ce4a93172d0597c333fb40cb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d210d5c202f11151cf22a64362b652958422f513
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88386165"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158165"
 ---
 # <a name="what-the-driver-manager-does"></a>Ce que fait le gestionnaire de pilotes
 Le tableau suivant résume la façon dont le gestionnaire de pilotes ODBC *3. x* mappe les appels aux pilotes ODBC *2. x* et ODBC *3. x* .  
@@ -29,7 +29,7 @@ Le tableau suivant résume la façon dont le gestionnaire de pilotes ODBC *3. x*
 |Function ou<br /><br /> attribut d'instruction|Commentaires|  
 |-----------------------------------------|--------------|  
 |SQL_ATTR_FETCH_BOOKMARK_PTR|Pointe vers le signet à utiliser avec **SQLFetchScroll**. Voici les détails de l’implémentation :<br /><br /> -Quand une application définit cela dans un pilote ODBC *2. x* , le gestionnaire de pilotes ODBC *3. x* le met en cache. Elle déréférence le pointeur et transmet la valeur au pilote ODBC *2. x* dans l’argument *FetchOffset* de **SQLExtendedFetch** lorsque **SQLFetchScroll** est appelé par la suite par l’application.<br />-Quand une application définit cette valeur dans un pilote ODBC *3. x* , le gestionnaire de pilotes ODBC *3. x* passe l’appel au pilote.|  
-|SQL_ATTR_ROW_STATUS_PTR|Pointe vers le tableau d’état de ligne rempli par **SQLFetch**, **SQLFetchScroll**, **SQLBulkOperations**et **SQLSetPos**. Voici les détails de l’implémentation :<br /><br /> -Quand une application définit cela dans un pilote ODBC *2. x* , le gestionnaire de pilotes ODBC *3. x* met en cache sa valeur. Elle transmet cette valeur au pilote ODBC *2. x* dans l’argument *RowStatusArray* de **SQLExtendedFetch** lorsque **SQLFetchScroll** ou **SQLFetch** est appelé.<br />-Quand une application définit cette valeur dans un pilote ODBC *3. x* , le gestionnaire de pilotes ODBC *3. x* passe l’appel au pilote.<br />-Dans l’État S6, si une application définit SQL_ATTR_ROW_STATUS_PTR puis appelle **SQLBulkOperations** (avec une *opération* de SQL_ADD) ou **SQLSetPos** sans appeler d’abord **SQLFetch** ou **SQLFetchScroll**, SQLSTATE HY011 (l’attribut ne peut pas être défini maintenant) est retourné.|  
+|SQL_ATTR_ROW_STATUS_PTR|Pointe vers le tableau d’état de ligne rempli par **SQLFetch**, **SQLFetchScroll**, **SQLBulkOperations** et **SQLSetPos**. Voici les détails de l’implémentation :<br /><br /> -Quand une application définit cela dans un pilote ODBC *2. x* , le gestionnaire de pilotes ODBC *3. x* met en cache sa valeur. Elle transmet cette valeur au pilote ODBC *2. x* dans l’argument *RowStatusArray* de **SQLExtendedFetch** lorsque **SQLFetchScroll** ou **SQLFetch** est appelé.<br />-Quand une application définit cette valeur dans un pilote ODBC *3. x* , le gestionnaire de pilotes ODBC *3. x* passe l’appel au pilote.<br />-Dans l’État S6, si une application définit SQL_ATTR_ROW_STATUS_PTR puis appelle **SQLBulkOperations** (avec une *opération* de SQL_ADD) ou **SQLSetPos** sans appeler d’abord **SQLFetch** ou **SQLFetchScroll**, SQLSTATE HY011 (l’attribut ne peut pas être défini maintenant) est retourné.|  
 |SQL_ATTR_ROWS_FETCHED_PTR|Pointe vers la mémoire tampon dans laquelle **SQLFetch** et **SQLFetchScroll** retournent le nombre de lignes extraites. Voici les détails de l’implémentation :<br /><br /> -Quand une application définit cela dans un pilote ODBC *2. x* , le gestionnaire de pilotes ODBC *3. x* met en cache sa valeur. Elle transmet cette valeur au pilote ODBC *2. x* dans l’argument *RowCountPtr* de **SQLExtendedFetch** lorsque **SQLFetch** ou **SQLFetchScroll** est appelé par l’application.<br />-Quand une application définit cette valeur dans un pilote ODBC *3. x* , le gestionnaire de pilotes ODBC *3. x* passe l’appel au pilote.|  
 |SQL_ATTR_ROW_ARRAY_SIZE|Définit la taille de l’ensemble de lignes. Voici les détails de l’implémentation :<br /><br /> -Quand une application définit cette valeur dans un pilote ODBC *2. x* , le gestionnaire de pilotes ODBC *3. x* le mappe à l’attribut d’instruction SQL_ROWSET_SIZE.<br />-Quand une application définit cette valeur dans un pilote ODBC *3. x* , le gestionnaire de pilotes ODBC *3. x* passe l’appel au pilote.<br />-Lorsqu’une application qui utilise un pilote ODBC *3. x* appelle **SQLSetScrollOptions**, SQL_ROWSET_SIZE est défini sur la valeur de l’argument *RowsetSize* si le pilote sous-jacent ne prend pas en charge **SQLSetScrollOptions**.|  
 |SQL_ROWSET_SIZE|Définit la taille de l’ensemble de lignes utilisée par **SQLExtendedFetch** quand **SQLExtendedFetch** est appelé par une application ODBC *2. x* . Voici les détails de l’implémentation :<br /><br /> -Quand une application définit cela, le gestionnaire de pilotes ODBC *3. x* passe l’appel au pilote, quelle que soit la version du pilote.<br />-Lorsqu’une application qui utilise un pilote ODBC *2. x* appelle **SQLSetScrollOptions**, SQL_ROWSET_SIZE est défini sur la valeur dans l’argument **RowsetSize** .|  

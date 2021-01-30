@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSdistribution_status_TSQL
 - MSdistribution_status
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 90d447de-3a4a-4f3e-aeab-e8fff6348361
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: 07acca59b78290d1cab5d0c528604a8a9616ece8
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0f1b28e357588e039e78ccf862d7f04aac6e024a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88473092"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160368"
 ---
 # <a name="msdistribution_status-transact-sql"></a>MSdistribution_status (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

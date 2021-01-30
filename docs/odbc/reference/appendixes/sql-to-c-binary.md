@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - converting data from SQL to c types [ODBC], binary
 - binary data type [ODBC]
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8c519072-ae4c-4d32-9d4e-775e3d3d6389
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 229611308c2dba83a8d793810eb5a5443cbd7062
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 30fbabde654f69af7a0cb68e2606c0f2d93697c1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456552"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160815"
 ---
 # <a name="sql-to-c-binary"></a>SQL à C : Binary
 Les identificateurs des types de données SQL ODBC binaires sont les suivants :  

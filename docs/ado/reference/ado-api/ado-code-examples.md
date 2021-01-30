@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ADO code examples
 - ADO, code examples
 ms.assetid: eb16724f-6fca-4873-b005-68626a8999b2
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f9bfdb0b9251ef30335b7d502ae23c8a2331b745
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 67cc05250fd2f847cd275192f958f5b0a3dd3a16
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976580"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161665"
 ---
 # <a name="ado-code-examples"></a>Exemples de code ADO
 Utilisez les exemples de code suivants pour apprendre à utiliser les objets, les méthodes, les propriétés et les événements ADO.  

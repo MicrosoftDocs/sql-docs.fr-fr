@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 01/19/2017
 ms.prod: sql
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - data types [ODBC], parameters
 - parameter data type [ODBC]
@@ -15,12 +15,12 @@ ms.assetid: fd7e99d8-d26a-408c-9733-6ffccde99f75
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: ''
-ms.openlocfilehash: 0114f0cff269d35ddf1e93c653c46bcc8d863a29
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: fbc01ee7f6c4e7cd3ca7dbe4deb6e78e5ff78449
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88483242"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160827"
 ---
 # <a name="parameter-data-types"></a>Types de données de paramètre
 Même si chaque paramètre spécifié avec **SQLBindParameter** est défini à l’aide d’un type de données SQL, les paramètres d’une instruction SQL n’ont pas de type de données intrinsèque. Par conséquent, les marqueurs de paramètres peuvent être inclus dans une instruction SQL uniquement si leurs types de données peuvent être déduits à partir d’un autre opérande dans l’instruction. Par exemple, dans une expression arithmétique telle que ? + COLONNE1, le type de données du paramètre peut être déduit à partir du type de données de la colonne nommée représentée par COLONNE1. Une application ne peut pas utiliser un marqueur de paramètre si le type de données ne peut pas être déterminé.  

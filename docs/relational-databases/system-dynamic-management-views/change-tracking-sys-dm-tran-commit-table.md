@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_tran_commit_table
 - dm_tran_commit_table_TSQL
@@ -21,12 +21,12 @@ ms.assetid: 732d23c5-1f6c-4e96-bc85-8f29b520cf0e
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 9dd6d1868fe70577aa31247bf58488596a23ce81
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 272304e9d359d3d9569e4d68733d44fc424ce6e9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096631"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158483"
 ---
 # <a name="change-tracking---sysdm_tran_commit_table"></a>Change Tracking-sys.dm_tran_commit_table
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

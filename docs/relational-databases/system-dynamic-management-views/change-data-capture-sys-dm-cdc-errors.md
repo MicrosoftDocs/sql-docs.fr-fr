@@ -6,7 +6,7 @@ ms.date: 06/10/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_cdc_errors_TSQL
 - dm_cdc_errors
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 898f2d76-9e63-45ef-94da-8034e86004ab
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: ce058600c4a912e13695817a533f8e9ec4c8f856
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 4ab244d911ffbdf590da7640001ab743ac09a60e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100118"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160627"
 ---
 # <a name="change-data-capture---sysdm_cdc_errors"></a>Capture de données modifiées-sys.dm_cdc_errors
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

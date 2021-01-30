@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpmergepullsubscription
 - sp_helpmergepullsubscription_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 6f3125f3-0dfa-40bd-b725-8aa1591234f6
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: b74d9846d672a59adbde9eada760af1d60fc725e
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 91266e8d825fd669979e925753804230fd62027c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543273"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160598"
 ---
 # <a name="sp_helpmergepullsubscription-transact-sql"></a>sp_helpmergepullsubscription (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Renvoie des informations sur des abonnements par extraction de données (pull) existant sur l'Abonné. Cette procédure stockée est exécutée sur la base de données d'abonnement de l'Abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,11 +43,11 @@ sp_helpmergepullsubscription [ [ @publication=] 'publication']
 ## <a name="argument"></a>Argument  
 `[ @publication = ] 'publication'` Nom de la publication. *publication* est de **type sysname**, avec la valeur par défaut **%** . Si la *publication* est **%** , les informations sur toutes les publications de fusion et tous les abonnements de la base de données actuelle sont retournées.  
   
-`[ @publisher = ] 'publisher'` Nom du serveur de publication. *Publisher*est de **type sysname**, avec la valeur par défaut **%** .  
+`[ @publisher = ] 'publisher'` Nom du serveur de publication. *Publisher* est de **type sysname**, avec la valeur par défaut **%** .  
   
-`[ @publisher_db = ] 'publisher_db'` Nom de la base de données du serveur de publication. *publisher_db*est de **type sysname**, avec la valeur par défaut **%** .  
+`[ @publisher_db = ] 'publisher_db'` Nom de la base de données du serveur de publication. *publisher_db* est de **type sysname**, avec la valeur par défaut **%** .  
   
-`[ @subscription_type = ] 'subscription_type'` Indique s’il faut afficher les abonnements par extraction. *subscription_type*est de type **nvarchar (10)**, avec **« pull »** comme valeur par défaut. Les valeurs valides sont **'push'**, **'pull'** ou **'both'**.  
+`[ @subscription_type = ] 'subscription_type'` Indique s’il faut afficher les abonnements par extraction. *subscription_type* est de type **nvarchar (10)**, avec **« pull »** comme valeur par défaut. Les valeurs valides sont **'push'**, **'pull'** ou **'both'**.  
   
 ## <a name="result-sets"></a>Jeux de résultats  
   

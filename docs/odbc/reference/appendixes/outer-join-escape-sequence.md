@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - outer join escape sequence [ODBC]
 - escape sequences [ODBC], outer join
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2cfd1525-6677-4d36-9b9e-730496853750
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 22517e676f9f8ac80622d368edcdb5a0ce1b283f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e25cde1a4da326d06efe23bc2f7c642e61589ff3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88466091"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160854"
 ---
 # <a name="outer-join-escape-sequence"></a>Séquence d’échappement pour les jointures externes
 ODBC utilise des séquences d’échappement pour les jointures externes. La syntaxe de cette séquence d’échappement est la suivante :  
@@ -50,4 +50,4 @@ ODBC utilise des séquences d’échappement pour les jointures externes. La syn
   
  *ODBC-ESC-terminateur* :: =}  
   
- Pour déterminer quelles parties de cette instruction sont prises en charge, une application appelle **SQLGetInfo** avec le type d’informations SQL_OJ_CAPABILITIES. Pour les jointures externes, la *condition de recherche* doit contenir uniquement la condition de jointure entre les *noms de table*spécifiés.
+ Pour déterminer quelles parties de cette instruction sont prises en charge, une application appelle **SQLGetInfo** avec le type d’informations SQL_OJ_CAPABILITIES. Pour les jointures externes, la *condition de recherche* doit contenir uniquement la condition de jointure entre les *noms de table* spécifiés.

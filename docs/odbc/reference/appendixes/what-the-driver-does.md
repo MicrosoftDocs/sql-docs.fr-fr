@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - scrollable cursors [ODBC]
 - cursors [ODBC], backward compatibility
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 75dcdea6-ff6b-4ac8-aa11-a1f9edbeb8e6
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 4f15473d1eb0e6344fbd5772f2b28233c07aa7a3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 37c6c84b74e6b89dc9b31a342e9c47c8a63eb030
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88386225"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158178"
 ---
 # <a name="what-the-driver-does"></a>Ce que fait le pilote
 Le tableau suivant récapitule les fonctions et les attributs d’instruction qu’un pilote ODBC *3. x* doit implémenter pour les curseurs de bloc et de défilement.  
@@ -33,7 +33,7 @@ Le tableau suivant récapitule les fonctions et les attributs d’instruction qu
 |SQL_ATTR_ROWS_FETCHED_PTR|Définit l’adresse de la mémoire tampon dans laquelle **SQLFetch** et **SQLFetchScroll** retournent le nombre de lignes extraites. Si **SQLExtendedFetch** est appelé, cette mémoire tampon n’est pas remplie, mais l’argument *RowCountPtr* pointe vers le nombre de lignes extraites.|  
 |SQL_ATTR_ROW_ARRAY_SIZE|Définit la taille de l’ensemble de lignes utilisée par **SQLFetch** et **SQLFetchScroll**.|  
 |SQL_ROWSET_SIZE|Définit la taille de l’ensemble de lignes utilisée par **SQLExtendedFetch**. Les pilotes ODBC *3. x* implémentent cela s’ils souhaitent travailler avec des applications ODBC *2. x* qui appellent **SQLExtendedFetch** ou **SQLSetPos**.|  
-|**SQLBulkOperations**|Si un pilote *ODBC 3. x* doit fonctionner avec des applications ODBC *2. x* qui utilisent **sqlsetpos** avec une *opération* de SQL_ADD, le pilote doit prendre en charge **SQLSetPos** avec une opération de SQL_ADD en plus de **SQLBulkOperations** avec une *opération* de SQL_ADD. *Operation*|  
+|**SQLBulkOperations**|Si un pilote *ODBC 3. x* doit fonctionner avec des applications ODBC *2. x* qui utilisent **sqlsetpos** avec une *opération* de SQL_ADD, le pilote doit prendre en charge **SQLSetPos** avec une opération de SQL_ADD en plus de **SQLBulkOperations** avec une *opération* de SQL_ADD. |  
 |**SQLExtendedFetch**|Retourne l’ensemble de lignes spécifié. Les pilotes ODBC *3. x* implémentent cela s’ils souhaitent travailler avec des applications ODBC *2. x* qui appellent **SQLExtendedFetch** ou **SQLSetPos**. Voici les détails de l’implémentation :<br /><br /> -Le pilote récupère la taille de l’ensemble de lignes à partir de la valeur de l’attribut d’instruction SQL_ROWSET_SIZE.<br />-Le pilote récupère l’adresse du tableau d’état de ligne à partir de l’argument *RowStatusArray* , et non de l’attribut d’instruction SQL_ATTR_ROW_STATUS_PTR. L’argument *RowStatusArray* dans un appel à **SQLExtendedFetch** ne doit pas être un pointeur null. (Notez que dans ODBC *3. x*, l’attribut d’instruction SQL_ATTR_ROW_STATUS_PTR peut être un pointeur null.)<br />-Le pilote récupère l’adresse du tampon de lignes extraites à partir de l’argument *RowCountPtr* , et non de l’attribut d’instruction SQL_ATTR_ROWS_FETCHED_PTR.<br />-Le pilote retourne SQLSTATE 01S01 (erreur dans la ligne) pour indiquer qu’une erreur s’est produite lors de l’extraction des lignes par un appel à **SQLExtendedFetch**. Un pilote ODBC *3. x* doit retourner SQLSTATE 01S01 (erreur dans la ligne) uniquement quand **SQLExtendedFetch** est appelé, et non quand **SQLFetch** ou **SQLFetchScroll** est appelé. Pour préserver la compatibilité descendante, lorsque SQLSTATE 01S01 (erreur dans la ligne) est retourné par **SQLExtendedFetch**, le gestionnaire de pilotes ne commande pas les enregistrements d’État dans la file d’attente d’erreurs conformément aux règles indiquées dans la section « séquence d’enregistrements d’état » de [SQLGetDiagField](../../../odbc/reference/syntax/sqlgetdiagfield-function.md).|  
 |**SQLFetch**|Retourne l’ensemble de lignes suivant. Voici les détails de l’implémentation :<br /><br /> -Le pilote récupère la taille de l’ensemble de lignes à partir de la valeur de l’attribut d’instruction SQL_ATTR_ROW_ARRAY_SIZE.<br />-Le pilote récupère l’adresse du tableau d’état de ligne à partir de l’attribut d’instruction SQL_ATTR_ROW_STATUS_PTR.<br />-Le pilote récupère l’adresse du tampon de lignes extraites à partir de l’attribut d’instruction SQL_ATTR_ROWS_FETCHED_PTR.<br />-L’application peut mélanger les appels entre **SQLFetchScroll** et **SQLFetch**.<br />-   **SQLFetch** retourne des signets si la colonne 0 est liée.<br />-   **SQLFetch** peut être appelée pour retourner plusieurs lignes.<br />-Le pilote ne retourne pas SQLSTATE 01S01 (erreur de ligne) pour indiquer qu’une erreur s’est produite lors de l’extraction de lignes par un appel à **SQLFetch**.|  
 |**SQLFetchScroll**|Retourne l’ensemble de lignes spécifié. Voici les détails de l’implémentation :<br /><br /> -Le pilote récupère la taille de l’ensemble de lignes à partir de l’attribut d’instruction SQL_ATTR_ROW_ARRAY_SIZE.<br />-Le pilote récupère l’adresse du tableau d’état de ligne à partir de l’attribut d’instruction SQL_ATTR_ROW_STATUS_PTR.<br />-Le pilote récupère l’adresse du tampon de lignes extraites à partir de l’attribut d’instruction SQL_ATTR_ROWS_FETCHED_PTR.<br />-L’application peut mélanger les appels entre **SQLFetchScroll** et **SQLFetch**.<br />-Le pilote ne retourne pas SQLSTATE 01S01 (erreur de ligne) pour indiquer qu’une erreur s’est produite lors de l’extraction de lignes par un appel à **SQLFetchScroll**.|  
