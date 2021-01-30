@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_help_operator
 - sp_help_operator_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: caedc43d-44b8-415a-897e-92923f6de3b8
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 2cbf7c84c22998b5ee7e43fadad6a42cf02d17b8
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 03346efcec8571ed6bf586a09a6da3631da28dc4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89535361"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199664"
 ---
 # <a name="sp_help_operator-transact-sql"></a>sp_help_operator (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "89535361"
   Fournit des informations sur les opérateurs définis pour le serveur.  
   
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,7 +45,7 @@ sp_help_operator
 ## <a name="arguments"></a>Arguments  
 `[ @operator_name = ] 'operator_name'` Nom de l’opérateur. *operator_name* est de **type sysname**. Si *operator_name* n’est pas spécifié, des informations sur tous les opérateurs sont retournées.  
   
-`[ @operator_id = ] operator_id` Numéro d’identification de l’opérateur pour lequel des informations sont demandées. *operator_id*est de **type int**, avec NULL comme valeur par défaut.  
+`[ @operator_id = ] operator_id` Numéro d’identification de l’opérateur pour lequel des informations sont demandées. *operator_id* est de **type int**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
 >  *Operator_id* ou *operator_name* doivent être spécifiés, mais ne peuvent pas être spécifiés.  

@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - converting data from c to SQL types [ODBC], examples
 - data conversions from C to SQL types [ODBC], examples
 ms.assetid: 9f390afc-d8b8-4286-b559-98b3b8781f3d
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 65b0dd229139de060dd79132ee3ca7215906442a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ebd11e85864619f8e5a98e2d8d288653bdc892ad
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88500012"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199276"
 ---
 # <a name="c-to-sql-data-conversion-examples"></a>Exemples de conversion de données C en SQL
 Les exemples suivants illustrent la façon dont le pilote convertit les données C en données SQL :  

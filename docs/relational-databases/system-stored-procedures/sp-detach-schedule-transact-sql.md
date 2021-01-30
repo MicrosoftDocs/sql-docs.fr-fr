@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_detach_schedule
 - sp_detach_schedule_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 9a1fc335-1bef-4638-a33a-771c54a5dd19
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 38b63370a0bf4cbfff2206cf5043f71dc9f1667f
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 513287fadf671cc645ffa210e96f56615e237983
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549829"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200744"
 ---
 # <a name="sp_detach_schedule-transact-sql"></a>sp_detach_schedule (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Supprime l'association entre une planification et un travail.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -57,7 +57,7 @@ sp_detach_schedule
 > [!NOTE]  
 >  *Schedule_id* ou *schedule_name* doivent être spécifiés, mais ne peuvent pas être spécifiés.  
   
-`[ @delete_unused_schedule = ] delete_unused_schedule` Spécifie s’il faut supprimer les planifications de travaux non utilisés. *delete_unused_schedule* est de **bit**, avec **0**comme valeur par défaut, ce qui signifie que toutes les planifications sont conservées, même si aucun travail ne les référence. Si la valeur est **1**, les planifications de travail inutilisées sont supprimées si aucun travail ne les référence.  
+`[ @delete_unused_schedule = ] delete_unused_schedule` Spécifie s’il faut supprimer les planifications de travaux non utilisés. *delete_unused_schedule* est de **bit**, avec **0** comme valeur par défaut, ce qui signifie que toutes les planifications sont conservées, même si aucun travail ne les référence. Si la valeur est **1**, les planifications de travail inutilisées sont supprimées si aucun travail ne les référence.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

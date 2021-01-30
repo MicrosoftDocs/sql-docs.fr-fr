@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_help_jobstep_TSQL
 - sp_help_jobstep
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 4a13b804-45f2-4f82-987f-42d9a57dd6db
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 24ec19dc231ce2fedf3a3562312ddc0bf7311e39
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: c6a4a59a69612c37a6b6d9208e121b11ea448a35
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89535236"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200105"
 ---
 # <a name="sp_help_jobstep-transact-sql"></a>sp_help_jobstep (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Renvoie des informations sur les étapes d'un travail utilisé par le service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent pour procéder à des actions automatisées.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -54,7 +54,7 @@ sp_help_jobstep { [ @job_id = ] 'job_id' | [ @job_name = ] 'job_name' }
   
 `[ @step_name = ] 'step_name'` Nom de l’étape du travail. *step_name* est de **type sysname**, avec NULL comme valeur par défaut.  
   
-`[ @suffix = ] suffix` Indicateur spécifiant si une description de texte est ajoutée à la colonne **Flags** dans la sortie. le *suffixe*est de **bit**, avec **0**comme valeur par défaut. Si le *suffixe* est **1**, une description est ajoutée.  
+`[ @suffix = ] suffix` Indicateur spécifiant si une description de texte est ajoutée à la colonne **Flags** dans la sortie. le *suffixe* est de **bit**, avec **0** comme valeur par défaut. Si le *suffixe* est **1**, une description est ajoutée.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  
@@ -79,7 +79,7 @@ sp_help_jobstep { [ @job_id = ] 'job_id' | [ @job_name = ] 'job_name' }
 |**retry_attempts**|**int**|Nombre maximum de tentatives de la commande (en cas d'échecs).|  
 |**retry_interval**|**int**|Intervalle (en minutes) entre les tentatives.|  
 |**os_run_priority**|**int**|Réservé.|  
-|**output_file_name**|**nvarchar(200)**|Fichier dans lequel la sortie de la commande doit être écrite ( [!INCLUDE[tsql](../../includes/tsql-md.md)] , **CmdExec**et les étapes **PowerShell** uniquement).|  
+|**output_file_name**|**nvarchar(200)**|Fichier dans lequel la sortie de la commande doit être écrite ( [!INCLUDE[tsql](../../includes/tsql-md.md)] , **CmdExec** et les étapes **PowerShell** uniquement).|  
 |**last_run_outcome**|**int**|Résultat de l'étape lors de sa dernière exécution.<br /><br /> **0** = échec<br /><br /> **1** = réussite<br /><br /> **2** = nouvelle tentative<br /><br /> **3** = annulé<br /><br /> **5** = inconnu|  
 |**last_run_duration**|**int**|Durée (hhmmss) de l'étape lors de sa dernière exécution.|  
 |**last_run_retries**|**int**|Nombre de tentatives de la commande lors de la dernière exécution de l'étape.|  

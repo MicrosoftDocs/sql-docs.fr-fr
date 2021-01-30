@@ -6,7 +6,7 @@ ms.date: 03/03/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_filestream_file_io_handles
 - sys.dm_filestream_file_io_handles
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: e59632f4-3292-419f-9217-ca375749f1a5
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 4c92c42554123c96013b8d17721b3d0861154a35
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 869d9ffbc532e5b819a11c19a387d7b83faae56f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097665"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198414"
 ---
 # <a name="sysdm_filestream_file_io_handles-transact-sql"></a>sys.dm_filestream_file_io_handles (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addtype
 - sp_addtype_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: ed72cd8e-5ff7-4084-8458-2d8ed279d817
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: b9950580719ecc68f69d09a0fbe481741dbc4a46
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: ece3c9bb2d8952738f1f66c59b9cd49563ad00a6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89529188"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198390"
 ---
 # <a name="sp_addtype-transact-sql"></a>sp_addtype (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "89529188"
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Utilisez à la place [Create type](../../t-sql/statements/create-type-transact-sql.md) .  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,7 +47,7 @@ sp_addtype [ @typename = ] type,
 ## <a name="arguments"></a>Arguments  
 `[ @typename = ] type` Nom du type de données de l’alias. Les noms des types de données alias doivent respecter les règles applicables aux [identificateurs](../../relational-databases/databases/database-identifiers.md) et doivent être uniques dans chaque base de données. *type* **sysname**, sans valeur par défaut.  
   
-`[ @phystype = ] system_data_type`[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Type de données physique ou fourni, sur lequel est basé le type de données de l’alias.* system_data_type* est de **type sysname**, sans valeur par défaut et peut prendre l’une des valeurs suivantes :  
+`[ @phystype = ] system_data_type`[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Type de données physique ou fourni, sur lequel est basé le type de données de l’alias.*system_data_type* est de **type sysname**, sans valeur par défaut et peut prendre l’une des valeurs suivantes :  
   
 ||||  
 |-|-|-|  
@@ -68,10 +68,10 @@ sp_addtype [ @typename = ] type,
  *P*  
  Entier non négatif qui indique le nombre total maximal de chiffres d'un nombre décimal pouvant figurer à gauche et à droite de la virgule décimale. Pour plus d’informations, consultez [decimal et numeric &#40;Transact-SQL&#41;](../../t-sql/data-types/decimal-and-numeric-transact-sql.md).  
   
- *x*  
+ *s*  
  Entier non négatif qui indique le nombre maximal de décimales qui peuvent figurer à droite d'une virgule décimale ; il doit être inférieur ou égal à la précision. Pour plus d’informations, consultez [decimal et numeric &#40;Transact-SQL&#41;](../../t-sql/data-types/decimal-and-numeric-transact-sql.md).  
   
-`[ @nulltype = ] 'null_type'` Indique la façon dont le type de données de l’alias gère les valeurs NULL. *null_type* est de type **varchar (** 8 **)**, avec NULL comme valeur par défaut et doit être placé entre guillemets simples ('null', 'not null’ou’NONULL'). Si *null_type* n’est pas définie explicitement par **sp_addtype**, elle est définie avec la valeur NULL par défaut actuelle. Utilisez la fonction système GETANSINULL pour déterminer la possibilité de valeurs NULL actuellement définie. Il est possible d'ajuster cette valeur au moyen de l'instruction SET ou ALTER DATABASE. La possibilité de valeurs NULL doit être définie explicitement. Si ** \@ phystype** est de type **bit**et ** \@ NULLtype** n’est pas spécifié, la valeur par défaut n’est pas null.  
+`[ @nulltype = ] 'null_type'` Indique la façon dont le type de données de l’alias gère les valeurs NULL. *null_type* est de type **varchar (** 8 **)**, avec NULL comme valeur par défaut et doit être placé entre guillemets simples ('null', 'not null’ou’NONULL'). Si *null_type* n’est pas définie explicitement par **sp_addtype**, elle est définie avec la valeur NULL par défaut actuelle. Utilisez la fonction système GETANSINULL pour déterminer la possibilité de valeurs NULL actuellement définie. Il est possible d'ajuster cette valeur au moyen de l'instruction SET ou ALTER DATABASE. La possibilité de valeurs NULL doit être définie explicitement. Si **\@ phystype** est de type **bit** et **\@ NULLtype** n’est pas spécifié, la valeur par défaut n’est pas null.  
   
 > [!NOTE]  
 >  Le paramètre *null_type* définit uniquement la possibilité de valeur NULL par défaut pour ce type de données. Si la possibilité d'utiliser des valeurs NULL est explicitement définie quand le type de données alias est utilisé lors de la création de la table, elle est prioritaire sur la possibilité de valeurs NULL actuellement définie. Pour plus d’informations, consultez [ALTER TABLE &#40;Transact-sql&#41;](../../t-sql/statements/alter-table-transact-sql.md) et [Create table &#40;transact-SQL&#41;](../../t-sql/statements/create-table-transact-sql.md).  

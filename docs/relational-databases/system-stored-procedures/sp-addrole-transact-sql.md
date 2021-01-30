@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addrole
 - sp_addrole_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: e8a21642-8440-419a-8585-93d3d9d44f00
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 245e617a9756e276bc06907a6f1592ec5383e69e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c6217f78d47e193c8583caca0925f2d4b587c439
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88489565"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200169"
 ---
 # <a name="sp_addrole-transact-sql"></a>sp_addrole (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -43,9 +43,9 @@ sp_addrole [ @rolename = ] 'role' [ , [ @ownername = ] 'owner' ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @rolename = ] 'role'` Nom du nouveau rôle de base de données. *role* est de **type sysname**et n’a pas de valeur par défaut. le *rôle* doit être un identificateur valide (ID) et ne doit pas déjà exister dans la base de données actuelle.  
+`[ @rolename = ] 'role'` Nom du nouveau rôle de base de données. *role* est de **type sysname** et n’a pas de valeur par défaut. le *rôle* doit être un identificateur valide (ID) et ne doit pas déjà exister dans la base de données actuelle.  
   
-`[ @ownername = ] 'owner'` Propriétaire du nouveau rôle de base de données. *owner* est de **type sysname**et sa valeur par défaut est l’utilisateur actuel. le *propriétaire* doit être un rôle de base de données ou un utilisateur de base de données dans la base de données actuelle.  
+`[ @ownername = ] 'owner'` Propriétaire du nouveau rôle de base de données. *owner* est de **type sysname** et sa valeur par défaut est l’utilisateur actuel. le *propriétaire* doit être un rôle de base de données ou un utilisateur de base de données dans la base de données actuelle.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  0 (réussite) ou 1 (échec)  
@@ -71,8 +71,8 @@ EXEC sp_addrole 'Managers';
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédures stockées système &#40;&#41;Transact-SQL ](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
- [Procédures stockées de sécurité &#40;&#41;Transact-SQL ](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
+ [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
+ [Procédures stockées de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
  [CREATE ROLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-role-transact-sql.md)  
   
   

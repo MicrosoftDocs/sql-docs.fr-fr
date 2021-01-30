@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: c609d0fb-787a-4b39-9673-332d411b3d63
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 6aa156a1fe4a6ebecb33b0c0401ae116226a80e9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8a13e3d8e74b777d55f40859b706750ea9395c4a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88466124"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199258"
 ---
 # <a name="odbc-functions-and-the-cursor-library"></a>Fonctions ODBC et la bibliothèque de curseurs
 > [!IMPORTANT]  

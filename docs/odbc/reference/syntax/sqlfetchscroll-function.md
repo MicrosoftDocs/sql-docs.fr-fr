@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLFetchScroll
 apilocation:
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: c0243667-428c-4dda-ae91-3c307616a1ac
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e3c725e11c889765c18c2ff14625b6bde4705051
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5cfa442ab1ada0b17e06137257b4d17bf37f854c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88476084"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198533"
 ---
 # <a name="sqlfetchscroll-function"></a>Fonction SQLFetchScroll
 **Conformité**  
@@ -85,7 +85,7 @@ SQLRETURN SQLFetchScroll(
   
  Pour tous les SQLSTATEs qui peuvent retourner des SQL_SUCCESS_WITH_INFO ou des SQL_ERROR (à l’exception de 01xxx SQLSTATEs), SQL_SUCCESS_WITH_INFO est retourné si une erreur se produit sur une ou plusieurs lignes, mais pas toutes, sur les lignes d’une opération multiligne, et SQL_ERROR est retournée si une erreur se produit sur une opération à une seule ligne.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur|Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information spécifique au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |01004|Données de chaîne, tronquées à droite|Les données binaires ou de chaîne retournées pour une colonne ont entraîné la troncation d’un caractère non vide ou de données binaires non NULL. S’il s’agit d’une valeur de chaîne, elle a été tronquée à droite.|  
@@ -93,7 +93,7 @@ SQLRETURN SQLFetchScroll(
 |01S06|Tentative de récupération avant que le jeu de résultats ait retourné le premier ensemble de lignes|L’ensemble de lignes demandé chevauche le début du jeu de résultats lorsque FetchOrientation a été SQL_FETCH_PRIOR, que la position actuelle se situe au-delà de la première ligne et que le numéro de la ligne actuelle est inférieur ou égal à la taille de l’ensemble de lignes.<br /><br /> L’ensemble de lignes demandé chevauche le début du jeu de résultats lorsque FetchOrientation a été SQL_FETCH_PRIOR, que la position actuelle se situe au-delà de la fin du jeu de résultats et que la taille de l’ensemble de lignes est supérieure à la taille du jeu de résultats.<br /><br /> L’ensemble de lignes demandé chevauche le début du jeu de résultats lorsque FetchOrientation a été SQL_FETCH_RELATIVE, FetchOffset était négatif et la valeur absolue de FetchOffset était inférieure ou égale à la taille de l’ensemble de lignes.<br /><br /> L’ensemble de lignes demandé chevauche le début du jeu de résultats lorsque FetchOrientation a été SQL_FETCH_ABSOLUTE, FetchOffset était négatif et la valeur absolue de FetchOffset était supérieure à la taille du jeu de résultats, mais inférieure ou égale à la taille de l’ensemble de lignes.<br /><br /> (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |01S07|Troncation fractionnaire|Les données retournées pour une colonne ont été tronquées. Pour les types de données numériques, la partie fractionnaire du nombre a été tronquée. Pour les types de données time, timestamp et Interval contenant un composant heure, la partie fractionnaire de l’heure a été tronquée.<br /><br /> (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |07006|Violation d’attribut de type de données restreint|La valeur des données d’une colonne du jeu de résultats n’a pas pu être convertie dans le type de données spécifié par *TargetType* dans **SQLBindCol**.<br /><br /> La colonne 0 a été liée avec un type de données de SQL_C_BOOKMARK, et l’attribut d’instruction SQL_ATTR_USE_BOOKMARKS a été défini sur SQL_UB_VARIABLE.<br /><br /> La colonne 0 a été liée avec un type de données de SQL_C_VARBOOKMARK, et l’attribut d’instruction SQL_ATTR_USE_BOOKMARKS n’a pas la valeur SQL_UB_VARIABLE.|  
-|07009|Index de descripteur non valide|Le pilote était un pilote ODBC 2 *. x* qui ne prend pas en charge **SQLExtendedFetch**et un numéro de colonne spécifié dans la liaison d’une colonne était 0.<br /><br /> La colonne 0 a été liée et l’attribut d’instruction SQL_ATTR_USE_BOOKMARKS a été défini sur SQL_UB_OFF.|  
+|07009|Index de descripteur non valide|Le pilote était un pilote ODBC 2 *. x* qui ne prend pas en charge **SQLExtendedFetch** et un numéro de colonne spécifié dans la liaison d’une colonne était 0.<br /><br /> La colonne 0 a été liée et l’attribut d’instruction SQL_ATTR_USE_BOOKMARKS a été défini sur SQL_UB_OFF.|  
 |08S01|Échec de la liaison de communication|Le lien de communication entre le pilote et la source de données à laquelle le pilote a été connecté a échoué avant la fin du traitement de la fonction.|  
 |22001|Données de chaîne, tronquées à droite|Un signet de longueur variable retourné pour une colonne a été tronqué.|  
 |22002|Variable d’indicateur requise mais non fournie|Les données NULL ont été extraites dans une colonne dont la *StrLen_or_IndPtr* définie par **SQLBindCol** (ou SQL_DESC_INDICATOR_PTR définie par **SQLSetDescField** ou **SQLSetDescRec**) était un pointeur null.|  
@@ -105,12 +105,12 @@ SQLRETURN SQLFetchScroll(
 |24 000|État de curseur non valide|*StatementHandle* était dans un état d’exécution, mais aucun jeu de résultats n’a été associé à *StatementHandle*.|  
 |40001|Échec de la sérialisation|La transaction dans laquelle l’extraction a été exécutée a été interrompue pour empêcher un blocage.|  
 |40003|Saisie semi-automatique des instructions inconnue|La connexion associée a échoué pendant l’exécution de cette fonction et l’état de la transaction ne peut pas être déterminé.|  
-|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon * \* MessageText* décrit l’erreur et sa cause.|  
+|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon *\* MessageText* décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|Le pilote n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou l’achèvement de la fonction.|  
 |HY008|Opération annulée|Le traitement asynchrone a été activé pour *StatementHandle*. La fonction a été appelée, et avant la fin de l’exécution, **SQLCancel** ou **SQLCancelHandle** a été appelé sur le *StatementHandle*. Ensuite, la fonction a été appelée à nouveau sur le *StatementHandle*.<br /><br /> La fonction a été appelée et avant la fin de l’exécution, **SQLCancel** ou **SQLCancelHandle** a été appelé sur le *StatementHandle* à partir d’un thread différent dans une application multithread.|  
-|HY010|Erreur de séquence de fonction|(DM) une fonction d’exécution asynchrone a été appelée pour le handle de connexion associé à *StatementHandle*. Cette fonction asynchrone était toujours en cours d’exécution lors de l’appel de la fonction **SQLFetchScroll** .<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**ou **SQLMoreResults** a été appelé pour *StatementHandle* et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.<br /><br /> (DM) le *StatementHandle* spécifié n’était pas dans un état d’exécution. La fonction a été appelée sans appeler d’abord **SQLExecDirect**, **SQLExecute** ou une fonction de catalogue.<br /><br /> (DM) une fonction d’exécution asynchrone (pas celle-ci) a été appelée pour le *StatementHandle* et était toujours en cours d’exécution quand cette fonction a été appelée.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations**ou **SQLSetPos** a été appelé pour *StatementHandle* et retourné SQL_NEED_DATA. Cette fonction a été appelée avant l’envoi des données pour l’ensemble des paramètres ou des colonnes de données en cours d’exécution.<br /><br /> (DM) **SQLFetch** a été appelée pour *StatementHandle* après l’appel de **SQLExtendedFetch** et avant l’appel de **SQLFreeStmt** avec l’option SQL_CLOSE.|  
+|HY010|Erreur de séquence de fonction|(DM) une fonction d’exécution asynchrone a été appelée pour le handle de connexion associé à *StatementHandle*. Cette fonction asynchrone était toujours en cours d’exécution lors de l’appel de la fonction **SQLFetchScroll** .<br /><br /> (DM) **SQLExecute**, **SQLExecDirect** ou **SQLMoreResults** a été appelé pour *StatementHandle* et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.<br /><br /> (DM) le *StatementHandle* spécifié n’était pas dans un état d’exécution. La fonction a été appelée sans appeler d’abord **SQLExecDirect**, **SQLExecute** ou une fonction de catalogue.<br /><br /> (DM) une fonction d’exécution asynchrone (pas celle-ci) a été appelée pour le *StatementHandle* et était toujours en cours d’exécution quand cette fonction a été appelée.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations** ou **SQLSetPos** a été appelé pour *StatementHandle* et retourné SQL_NEED_DATA. Cette fonction a été appelée avant l’envoi des données pour l’ensemble des paramètres ou des colonnes de données en cours d’exécution.<br /><br /> (DM) **SQLFetch** a été appelée pour *StatementHandle* après l’appel de **SQLExtendedFetch** et avant l’appel de **SQLFreeStmt** avec l’option SQL_CLOSE.|  
 |HY013|Erreur de gestion de la mémoire|Impossible de traiter l’appel de fonction, car les objets mémoire sous-jacents sont inaccessibles, probablement en raison de conditions de mémoire insuffisante.|  
-|HY090|Longueur de chaîne ou de mémoire tampon non valide|L’attribut d’instruction SQL_ATTR_USE_BOOKMARK a été défini sur SQL_UB_VARIABLE et la colonne 0 était liée à une mémoire tampon dont la longueur n’était pas égale à la longueur maximale du signet pour ce jeu de résultats. (Cette longueur est disponible dans le champ SQL_DESC_OCTET_LENGTH de la IRD et peut être obtenue en appelant **SQLDescribeCol**, **SQLColAttribute**ou **SQLGetDescField**.)|  
+|HY090|Longueur de chaîne ou de mémoire tampon non valide|L’attribut d’instruction SQL_ATTR_USE_BOOKMARK a été défini sur SQL_UB_VARIABLE et la colonne 0 était liée à une mémoire tampon dont la longueur n’était pas égale à la longueur maximale du signet pour ce jeu de résultats. (Cette longueur est disponible dans le champ SQL_DESC_OCTET_LENGTH de la IRD et peut être obtenue en appelant **SQLDescribeCol**, **SQLColAttribute** ou **SQLGetDescField**.)|  
 |HY106|Type d’extraction hors limites|DM) la valeur spécifiée pour l’argument FetchOrientation n’était pas valide.<br /><br /> (DM) l’argument FetchOrientation a été SQL_FETCH_BOOKMARK et l’attribut d’instruction SQL_ATTR_USE_BOOKMARKS a été défini sur SQL_UB_OFF.<br /><br /> La valeur de l’attribut d’instruction SQL_ATTR_CURSOR_TYPE a été SQL_CURSOR_FORWARD_ONLY et la valeur de l’argument FetchOrientation n’a pas été SQL_FETCH_NEXT.<br /><br /> La valeur de l’attribut d’instruction SQL_ATTR_CURSOR_SCROLLABLE a été SQL_NONSCROLLABLE et la valeur de l’argument FetchOrientation n’a pas été SQL_FETCH_NEXT.|  
 |HY107|Valeur de ligne hors limites|La valeur spécifiée avec l’attribut d’instruction SQL_ATTR_CURSOR_TYPE était SQL_CURSOR_KEYSET_DRIVEN, mais la valeur spécifiée avec l’attribut d’instruction SQL_ATTR_KEYSET_SIZE était supérieure à 0 et inférieure à la valeur spécifiée avec l’attribut d’instruction SQL_ATTR_ROW_ARRAY_SIZE.|  
 |HY111|Valeur de signet non valide|L’argument FetchOrientation a été SQL_FETCH_BOOKMARK, et le signet vers lequel pointe la valeur dans l’attribut d’instruction SQL_ATTR_FETCH_BOOKMARK_PTR n’était pas valide ou était un pointeur null.|  
@@ -165,7 +165,7 @@ SQLRETURN SQLFetchScroll(
 |Condition|Première ligne du nouvel ensemble de lignes|  
 |---------------|-----------------------------|  
 |*Avant le début*|1|  
-|*CurrRowsetStart + RowsetSize*[1] * \< = LastResultRow*|*CurrRowsetStart + RowsetSize*[1]|  
+|*CurrRowsetStart + RowsetSize*[1] *\< = LastResultRow*|*CurrRowsetStart + RowsetSize*[1]|  
 |*CurrRowsetStart + RowsetSize*[1]*> LastResultRow*|*Après la fin*|  
 |*Après la fin*|*Après la fin*|  
   
@@ -201,9 +201,9 @@ SQLRETURN SQLFetchScroll(
 |*CurrRowsetStart + FetchOffset > LastResultRow*|*Après la fin*|  
 |*Après end et FetchOffset >= 0*|*Après la fin*|  
   
- [1]   ***SQLFetchScroll*** retourne le même ensemble de lignes que s’il a été appelé avec FetchOrientation défini sur SQL_FETCH_ABSOLUTE. Pour plus d’informations, consultez la section « SQL_FETCH_ABSOLUTE ».  
+ [1] ***SQLFetchScroll** _ retourne le même ensemble de lignes que s’il a été appelé avec FetchOrientation défini sur SQL_FETCH_ABSOLUTE. Pour plus d’informations, consultez la section « SQL_FETCH_ABSOLUTE ».  
   
- [2]   **SQLFetchScroll** retourne SQLState 01S06 (tentative d’extraction avant que le jeu de résultats ait retourné le premier ensemble de lignes) et SQL_SUCCESS_WITH_INFO.  
+ [2] _ *SQLFetchScroll** retourne SQLState 01S06 (tentative d’extraction avant que le jeu de résultats ait retourné le premier ensemble de lignes) et SQL_SUCCESS_WITH_INFO.  
   
  [3] si la taille de l’ensemble de lignes a été modifiée depuis l’appel précédent à FETCH Rows, il s’agit de la nouvelle taille de l’ensemble de lignes.  
   

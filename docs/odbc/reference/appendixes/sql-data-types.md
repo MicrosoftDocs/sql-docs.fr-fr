@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQL data types [ODBC]
 - SQL data types [ODBC], about SQL data types
@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 1b22f985-f5e4-4779-87eb-e43329a442b1
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8209463c3c316a5bd2e45a2d7b08eb65b3cb113d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e15771f52af0830f07f135453d08f4355a3fae8f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88483152"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199866"
 ---
 # <a name="sql-data-types"></a>Types de données SQL
-Chaque SGBD définit ses propres types SQL. Chaque pilote ODBC expose uniquement les types de données SQL que le SGBD associé définit. Informations sur la façon dont un pilote mappe les types SQL SGBD aux identificateurs de type SQL définis par ODBC et comment un pilote mappe les types SQL SGBD à ses propres identificateurs de type SQL propres au pilote, par le biais d’un appel à **SQLGetTypeInfo**. Un pilote retourne également les types de données SQL lors de la description des types de données des colonnes et des paramètres par le biais d’appels à **SQLColAttribute**, **SQLColumns**, **SQLDescribeCol**, **SQLDescribeParam**, **SQLProcedureColumns**et **SQLSpecialColumns**.  
+Chaque SGBD définit ses propres types SQL. Chaque pilote ODBC expose uniquement les types de données SQL que le SGBD associé définit. Informations sur la façon dont un pilote mappe les types SQL SGBD aux identificateurs de type SQL définis par ODBC et comment un pilote mappe les types SQL SGBD à ses propres identificateurs de type SQL propres au pilote, par le biais d’un appel à **SQLGetTypeInfo**. Un pilote retourne également les types de données SQL lors de la description des types de données des colonnes et des paramètres par le biais d’appels à **SQLColAttribute**, **SQLColumns**, **SQLDescribeCol**, **SQLDescribeParam**, **SQLProcedureColumns** et **SQLSpecialColumns**.  
   
 > [!NOTE]  
 >  Les types de données SQL sont contenus dans les champs SQL_DESC_ CONCISE_TYPE, SQL_DESC_TYPE et SQL_DESC_DATETIME_INTERVAL_CODE des descripteurs d’implémentation. Les caractéristiques des types de données SQL sont contenues dans les champs SQL_DESC_PRECISION, SQL_DESC_SCALE, SQL_DESC_LENGTH et SQL_DESC_OCTET_LENGTH des descripteurs d’implémentation. Pour plus d’informations, consultez [identificateurs et descripteurs des types de données](../../../odbc/reference/appendixes/data-type-identifiers-and-descriptors.md) plus loin dans cette annexe.  

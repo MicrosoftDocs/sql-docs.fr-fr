@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLSetDescField
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 8c544388-fe9d-4f94-a0ac-fa0b9c9c88a5
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2c21d3a21e863d62a3cc8d685e81c6e3265c1551
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: bd48da2caec1acba5cfe775a2baa1efaaf886aab
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88421133"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200965"
 ---
 # <a name="sqlsetdescfield-function"></a>SQLSetDescField, fonction
 
@@ -54,7 +54,7 @@ SQLRETURN SQLSetDescField(
  Entrée Indique l’enregistrement du descripteur contenant le champ que l’application cherche à définir. Les enregistrements de descripteur sont numérotés à partir de 0, le numéro d’enregistrement 0 étant l’enregistrement du signet. L’argument *recnumber* est ignoré pour les champs d’en-tête.  
   
  *FieldIdentifier*  
- Entrée Indique le champ du descripteur dont la valeur doit être définie. Pour plus d’informations, consultez « argument*FieldIdentifier* » dans la section « commentaires ».  
+ Entrée Indique le champ du descripteur dont la valeur doit être définie. Pour plus d’informations, consultez « argument *FieldIdentifier* » dans la section « commentaires ».  
   
  *ValuePtr*  
  Entrée Pointeur vers une mémoire tampon qui contient les informations du descripteur, ou une valeur entière. Le type de données dépend de la valeur de *FieldIdentifier*. Si *ValuePtr* est une valeur entière, elle peut être considérée comme étant de 8 octets (sqllen), de 4 octets (SQLINTEGER destinée) ou de 2 octets (SQLSMALLINT), en fonction de la valeur de l’argument *FieldIdentifier* .  
@@ -80,23 +80,23 @@ SQLRETURN SQLSetDescField(
 ## <a name="diagnostics"></a>Diagnostics  
  Quand **SQLSetDescField** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *comme HandleType* de SQL_HANDLE_DESC et un *handle* de *DescriptorHandle*. Le tableau suivant répertorie les valeurs SQLSTATE couramment retournées par **SQLSetDescField** et les explique dans le contexte de cette fonction. la notation « (DM) » précède les descriptions des SQLSTATEs retournées par le gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur|Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information spécifique au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
-|01S02 ne|Valeur d’option modifiée|Le pilote ne prenait pas en charge la valeur spécifiée dans * \* ValuePtr* (si *ValuePtr* était un pointeur) ou la valeur dans *ValuePtr* (si *ValuePtr* était une valeur entière) ou * \* ValuePtr* n’était pas valide en raison des conditions de travail de l’implémentation, donc le pilote remplaçait une valeur similaire. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
-|07009|Index de descripteur non valide|L’argument *FieldIdentifier* était un champ d’enregistrement, l’argument *recnumber* était 0 et l’argument *DescriptorHandle* est référencé par un handle IPD.<br /><br /> L’argument *recnumber* est inférieur à 0 et l’argument *DescriptorHandle* est référencé à un ARD ou un APD.<br /><br /> L’argument *recnumber* est supérieur au nombre maximal de colonnes ou de paramètres pris en charge par la source de données, et l’argument *DescriptorHandle* est référencé à un APD ou ARD.<br /><br /> (DM) l’argument *FieldIdentifier* a été SQL_DESC_COUNT, et l’argument * \* ValuePtr* était inférieur à 0.<br /><br /> L’argument *recnumber* était égal à 0, et l’argument *DescriptorHandle* faisait appel à un APD alloué de manière implicite. (Cette erreur ne se produit pas avec un descripteur d’application explicitement alloué, car il n’est pas connu qu’un descripteur d’application explicitement alloué est un APD ou un ARD jusqu’à l’exécution.)|  
+|01S02 ne|Valeur d’option modifiée|Le pilote ne prenait pas en charge la valeur spécifiée dans *\* ValuePtr* (si *ValuePtr* était un pointeur) ou la valeur dans *ValuePtr* (si *ValuePtr* était une valeur entière) ou *\* ValuePtr* n’était pas valide en raison des conditions de travail de l’implémentation, donc le pilote remplaçait une valeur similaire. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
+|07009|Index de descripteur non valide|L’argument *FieldIdentifier* était un champ d’enregistrement, l’argument *recnumber* était 0 et l’argument *DescriptorHandle* est référencé par un handle IPD.<br /><br /> L’argument *recnumber* est inférieur à 0 et l’argument *DescriptorHandle* est référencé à un ARD ou un APD.<br /><br /> L’argument *recnumber* est supérieur au nombre maximal de colonnes ou de paramètres pris en charge par la source de données, et l’argument *DescriptorHandle* est référencé à un APD ou ARD.<br /><br /> (DM) l’argument *FieldIdentifier* a été SQL_DESC_COUNT, et l’argument *\* ValuePtr* était inférieur à 0.<br /><br /> L’argument *recnumber* était égal à 0, et l’argument *DescriptorHandle* faisait appel à un APD alloué de manière implicite. (Cette erreur ne se produit pas avec un descripteur d’application explicitement alloué, car il n’est pas connu qu’un descripteur d’application explicitement alloué est un APD ou un ARD jusqu’à l’exécution.)|  
 |08S01|Échec de la liaison de communication|Le lien de communication entre le pilote et la source de données à laquelle le pilote a été connecté a échoué avant la fin du traitement de la fonction.|  
 |22001|Données de chaîne, tronquées à droite|L’argument *FieldIdentifier* a été SQL_DESC_NAME, et l’argument *BufferLength* était une valeur supérieure à SQL_MAX_IDENTIFIER_LEN.|  
-|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon * \* MessageText* décrit l’erreur et sa cause.|  
+|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon *\* MessageText* décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|Le pilote n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou l’achèvement de la fonction.|  
-|HY010|Erreur de séquence de fonction|(DM) le *DescriptorHandle* a été associé à un *StatementHandle* pour lequel une fonction d’exécution asynchrone (pas celui-ci) a été appelée et était toujours en cours d’exécution quand cette fonction a été appelée.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations**ou **SQLSetPos** a été appelé pour le *StatementHandle* avec lequel le *DescriptorHandle* a été associé et retourné SQL_NEED_DATA. Cette fonction a été appelée avant l’envoi des données pour l’ensemble des paramètres ou des colonnes de données en cours d’exécution.<br /><br /> (DM) une fonction d’exécution asynchrone a été appelée pour le handle de connexion associé à *DescriptorHandle*. Cette fonction asynchrone était toujours en cours d’exécution lors de l’appel de la fonction **SQLSetDescField** .<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**ou **SQLMoreResults** a été appelé pour l’un des handles d’instruction associés à *DescriptorHandle* et retournés SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.|  
+|HY010|Erreur de séquence de fonction|(DM) le *DescriptorHandle* a été associé à un *StatementHandle* pour lequel une fonction d’exécution asynchrone (pas celui-ci) a été appelée et était toujours en cours d’exécution quand cette fonction a été appelée.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations** ou **SQLSetPos** a été appelé pour le *StatementHandle* avec lequel le *DescriptorHandle* a été associé et retourné SQL_NEED_DATA. Cette fonction a été appelée avant l’envoi des données pour l’ensemble des paramètres ou des colonnes de données en cours d’exécution.<br /><br /> (DM) une fonction d’exécution asynchrone a été appelée pour le handle de connexion associé à *DescriptorHandle*. Cette fonction asynchrone était toujours en cours d’exécution lors de l’appel de la fonction **SQLSetDescField** .<br /><br /> (DM) **SQLExecute**, **SQLExecDirect** ou **SQLMoreResults** a été appelé pour l’un des handles d’instruction associés à *DescriptorHandle* et retournés SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.|  
 |HY013|Erreur de gestion de la mémoire|Impossible de traiter l’appel de fonction, car les objets mémoire sous-jacents sont inaccessibles, probablement en raison de conditions de mémoire insuffisante.|  
 |HY016|Impossible de modifier un descripteur de ligne d’implémentation|L’argument *DescriptorHandle* a été associé à un IRD, et l’argument *FieldIdentifier* n’a pas été SQL_DESC_ARRAY_STATUS_PTR ou SQL_DESC_ROWS_PROCESSED_PTR.|  
 |HY021|Informations de descripteur incohérentes|Les champs SQL_DESC_TYPE et SQL_DESC_DATETIME_INTERVAL_CODE ne forment pas un type SQL ODBC valide ou un type SQL spécifique au pilote valide (pour IPD) ou un type C ODBC valide (pour APD ou ARDs).<br /><br /> Les informations de descripteur vérifiées pendant une vérification de cohérence ne sont pas cohérentes. (Consultez « vérification de cohérence » dans **SQLSetDescRec**.)|  
-|HY090|Longueur de chaîne ou de mémoire tampon non valide|(DM) * \* ValuePtr* est une chaîne de caractères et *BufferLength* est inférieur à zéro, mais n’est pas égal à SQL_NTS.<br /><br /> (DM) le pilote était un pilote ODBC 2 *. x* , le descripteur était un ARD, l’argument *ColumnNumber* était défini sur 0, et la valeur spécifiée pour l’argument *BufferLength* n’était pas égale à 4.|  
+|HY090|Longueur de chaîne ou de mémoire tampon non valide|(DM) *\* ValuePtr* est une chaîne de caractères et *BufferLength* est inférieur à zéro, mais n’est pas égal à SQL_NTS.<br /><br /> (DM) le pilote était un pilote ODBC 2 *. x* , le descripteur était un ARD, l’argument *ColumnNumber* était défini sur 0, et la valeur spécifiée pour l’argument *BufferLength* n’était pas égale à 4.|  
 |HY091|Identificateur de champ de descripteur non valide|La valeur spécifiée pour l’argument *FieldIdentifier* n’est pas un champ défini par ODBC et n’est pas une valeur définie par l’implémentation.<br /><br /> L’argument *FieldIdentifier* n’était pas valide pour l’argument *DescriptorHandle* .<br /><br /> L’argument *FieldIdentifier* était un champ en lecture seule, défini par ODBC.|  
-|HY092|Identificateur d’attribut/option non valide|La valeur de * \* ValuePtr* n’est pas valide pour l’argument *FieldIdentifier* .<br /><br /> L’argument *FieldIdentifier* a été SQL_DESC_UNNAMED et *ValuePtr* a été SQL_NAMED.|  
-|HY105|Type de paramètre non valide|(DM) la valeur spécifiée pour le champ SQL_DESC_PARAMETER_TYPE n’était pas valide. (Pour plus d’informations, consultez la section « argument*InputOutputType* » dans **SQLBindParameter**.)|  
+|HY092|Identificateur d’attribut/option non valide|La valeur de *\* ValuePtr* n’est pas valide pour l’argument *FieldIdentifier* .<br /><br /> L’argument *FieldIdentifier* a été SQL_DESC_UNNAMED et *ValuePtr* a été SQL_NAMED.|  
+|HY105|Type de paramètre non valide|(DM) la valeur spécifiée pour le champ SQL_DESC_PARAMETER_TYPE n’était pas valide. (Pour plus d’informations, consultez la section « argument *InputOutputType* » dans **SQLBindParameter**.)|  
 |HY117|La connexion est interrompue en raison d’un état de transaction inconnu. Seules les fonctions de déconnexion et de lecture seule sont autorisées.|(DM) pour plus d’informations sur l’état suspendu, consultez [Nouveautés dans ODBC 3,8](../../../odbc/reference/what-s-new-in-odbc-3-8.md).|  
 |HYT01|Délai d’attente de connexion expiré|Le délai d’attente de connexion a expiré avant que la source de données ait répondu à la demande. Le délai d’expiration de la connexion est défini par le biais de **SQLSetConnectAttr**, SQL_ATTR_CONNECTION_TIMEOUT.|  
 |IM001|Le pilote ne prend pas en charge cette fonction|(DM) le pilote associé au *DescriptorHandle* ne prend pas en charge la fonction.|  
@@ -113,7 +113,7 @@ SQLRETURN SQLSetDescField(
   
  Si une application appelle **SQLSetDescField** pour définir un champ autre que SQL_DESC_COUNT ou les champs différés SQL_DESC_DATA_PTR, SQL_DESC_OCTET_LENGTH_PTR ou SQL_DESC_INDICATOR_PTR, l’enregistrement devient indépendant.  
   
- Les champs d’en-tête de descripteur sont définis en appelant **SQLSetDescField** avec le *FieldIdentifier*approprié. De nombreux champs d’en-tête sont également des attributs d’instruction, donc ils peuvent également être définis par un appel à **SQLSetStmtAttr**. Cela permet aux applications de définir un champ de descripteur sans obtenir au préalable un handle de descripteur. Quand **SQLSetDescField** est appelé pour définir un champ d’en-tête, l’argument *recnumber* est ignoré.  
+ Les champs d’en-tête de descripteur sont définis en appelant **SQLSetDescField** avec le *FieldIdentifier* approprié. De nombreux champs d’en-tête sont également des attributs d’instruction, donc ils peuvent également être définis par un appel à **SQLSetStmtAttr**. Cela permet aux applications de définir un champ de descripteur sans obtenir au préalable un handle de descripteur. Quand **SQLSetDescField** est appelé pour définir un champ d’en-tête, l’argument *recnumber* est ignoré.  
   
  Un *recnumber* de 0 est utilisé pour définir les champs de signet.  
   
@@ -216,12 +216,12 @@ SQLRETURN SQLSetDescField(
  **SQL_DESC_ARRAY_STATUS_PTR [All]**  
  Pour chaque type de descripteur, ce champ d’en-tête SQLUSMALLINT * pointe vers un tableau de valeurs SQLUSMALLINT. Ces tableaux sont nommés comme suit : tableau d’état de ligne (IRD), paramètre de tableau d’état des paramètres (IPD), table d’opération de ligne (ARD) et tableau d’opérations de paramètres (APD).  
   
- Dans IRD, ce champ d’en-tête pointe vers un tableau d’état de ligne contenant les valeurs d’État après un appel à **SQLBulkOperations**, **SQLFetch**, **SQLFetchScroll**ou **SQLSetPos**. Le tableau contient autant d’éléments qu’il y a de lignes dans l’ensemble de lignes. L’application doit allouer un tableau de SQLUSMALLINTs et définir ce champ pour qu’il pointe vers le tableau. Par défaut, le champ est défini sur un pointeur null. Le pilote remplit le tableau, sauf si le champ SQL_DESC_ARRAY_STATUS_PTR est défini sur un pointeur null, auquel cas aucune valeur d’État n’est générée et le tableau n’est pas rempli.  
+ Dans IRD, ce champ d’en-tête pointe vers un tableau d’état de ligne contenant les valeurs d’État après un appel à **SQLBulkOperations**, **SQLFetch**, **SQLFetchScroll** ou **SQLSetPos**. Le tableau contient autant d’éléments qu’il y a de lignes dans l’ensemble de lignes. L’application doit allouer un tableau de SQLUSMALLINTs et définir ce champ pour qu’il pointe vers le tableau. Par défaut, le champ est défini sur un pointeur null. Le pilote remplit le tableau, sauf si le champ SQL_DESC_ARRAY_STATUS_PTR est défini sur un pointeur null, auquel cas aucune valeur d’État n’est générée et le tableau n’est pas rempli.  
   
 > [!CAUTION]  
 >  Le comportement du pilote n’est pas défini si l’application définit les éléments du tableau d’état de ligne désigné par le champ SQL_DESC_ARRAY_STATUS_PTR de l’IRD.  
   
- Le tableau est initialement rempli par un appel à **SQLBulkOperations**, **SQLFetch**, **SQLFetchScroll**ou **SQLSetPos**. Si l’appel n’a pas retourné SQL_SUCCESS ou SQL_SUCCESS_WITH_INFO, le contenu du tableau pointé par ce champ n’est pas défini. Les éléments du tableau peuvent contenir les valeurs suivantes :  
+ Le tableau est initialement rempli par un appel à **SQLBulkOperations**, **SQLFetch**, **SQLFetchScroll** ou **SQLSetPos**. Si l’appel n’a pas retourné SQL_SUCCESS ou SQL_SUCCESS_WITH_INFO, le contenu du tableau pointé par ce champ n’est pas défini. Les éléments du tableau peuvent contenir les valeurs suivantes :  
   
 -   SQL_ROW_SUCCESS : la ligne a été extraite et n’a pas été modifiée depuis sa dernière extraction.  
   
@@ -293,13 +293,13 @@ SQLRETURN SQLSetDescField(
   
  Pour sélectionner une liaison selon les colonnes pour les colonnes, ce champ est défini sur SQL_BIND_BY_COLUMN (valeur par défaut).  
   
- Ce champ dans le ARD peut également être défini en appelant **SQLSetStmtAttr** avec l' *attribut*SQL_ATTR_ROW_BIND_TYPE.  
+ Ce champ dans le ARD peut également être défini en appelant **SQLSetStmtAttr** avec l' *attribut* SQL_ATTR_ROW_BIND_TYPE.  
   
  Dans APD, ce champ spécifie l’orientation de liaison à utiliser pour les paramètres dynamiques.  
   
  Pour sélectionner une liaison selon les colonnes pour les paramètres, ce champ est défini sur SQL_BIND_BY_COLUMN (valeur par défaut).  
   
- Ce champ dans le APD peut également être défini en appelant **SQLSetStmtAttr** avec l' *attribut*SQL_ATTR_PARAM_BIND_TYPE.  
+ Ce champ dans le APD peut également être défini en appelant **SQLSetStmtAttr** avec l' *attribut* SQL_ATTR_PARAM_BIND_TYPE.  
   
  **SQL_DESC_COUNT [All]**  
  Ce champ d’en-tête SQLSMALLINT spécifie l’index de base 1 de l’enregistrement numéroté le plus élevé qui contient des données. Lorsque le pilote définit la structure de données pour le descripteur, il doit également définir le champ SQL_DESC_COUNT pour afficher le nombre d’enregistrements significatifs. Quand une application alloue une instance de cette structure de données, elle n’a pas besoin de spécifier le nombre d’enregistrements pour lesquels elle doit être réservée. Étant donné que l’application spécifie le contenu des enregistrements, le pilote prend toutes les mesures nécessaires pour s’assurer que le handle de descripteur se réfère à une structure de données de la taille appropriée.  
@@ -315,7 +315,7 @@ SQLRETURN SQLSetDescField(
   
  Dans une IPD, ce champ d’en-tête SQLUINTEGER * pointe vers une mémoire tampon contenant le nombre de jeux de paramètres qui ont été traités, y compris les ensembles d’erreurs. Aucun nombre n’est retourné s’il s’agit d’un pointeur null.  
   
- SQL_DESC_ROWS_PROCESSED_PTR est valide uniquement après SQL_SUCCESS ou SQL_SUCCESS_WITH_INFO a été retourné après un appel à **SQLFetch** ou **SQLFetchScroll** (pour un champ IRD) ou **SQLExecute**, **SQLEXECDIRECT**ou **SQLParamData** (pour un champ IPD). Si l’appel qui remplit la mémoire tampon pointée par ce champ ne retourne pas SQL_SUCCESS ou SQL_SUCCESS_WITH_INFO, le contenu de la mémoire tampon n’est pas défini, à moins qu’il ne retourne SQL_NO_DATA, auquel cas la valeur de la mémoire tampon est définie sur 0.  
+ SQL_DESC_ROWS_PROCESSED_PTR est valide uniquement après SQL_SUCCESS ou SQL_SUCCESS_WITH_INFO a été retourné après un appel à **SQLFetch** ou **SQLFetchScroll** (pour un champ IRD) ou **SQLExecute**, **SQLEXECDIRECT** ou **SQLParamData** (pour un champ IPD). Si l’appel qui remplit la mémoire tampon pointée par ce champ ne retourne pas SQL_SUCCESS ou SQL_SUCCESS_WITH_INFO, le contenu de la mémoire tampon n’est pas défini, à moins qu’il ne retourne SQL_NO_DATA, auquel cas la valeur de la mémoire tampon est définie sur 0.  
   
  Ce champ dans le ARD peut également être défini en appelant **SQLSetStmtAttr** avec l’attribut SQL_ATTR_ROWS_FETCHED_PTR. Ce champ dans le APD peut également être défini en appelant **SQLSetStmtAttr** avec l’attribut SQL_ATTR_PARAMS_PROCESSED_PTR.  
   
@@ -500,7 +500,7 @@ SQLRETURN SQLSetDescField(
   
  Si SQL_DESC_TYPE est défini sur le type de données DateTime ou Interval détaillé (SQL_DATETIME ou SQL_INTERVAL) et si le champ SQL_DESC_DATETIME_INTERVAL_CODE est défini sur le sous-code approprié, le champ de TYPE SQL_DESC_CONCISE est défini sur le type concis correspondant. Si vous tentez de définir SQL_DESC_TYPE sur l’un des types DateTime ou Interval concis, vous retournerez SQLSTATE HY021 (informations de descripteur incohérentes).  
   
- Lorsque le champ SQL_DESC_TYPE est défini par un appel à **SQLBindCol**, **SQLBindParameter**ou **SQLSetDescField**, les champs suivants sont définis sur les valeurs par défaut suivantes, comme indiqué dans le tableau ci-dessous. Les valeurs des champs restants du même enregistrement ne sont pas définies.  
+ Lorsque le champ SQL_DESC_TYPE est défini par un appel à **SQLBindCol**, **SQLBindParameter** ou **SQLSetDescField**, les champs suivants sont définis sur les valeurs par défaut suivantes, comme indiqué dans le tableau ci-dessous. Les valeurs des champs restants du même enregistrement ne sont pas définies.  
   
 |Valeur de SQL_DESC_TYPE|Autres champs définis implicitement|  
 |------------------------------|---------------------------------|  

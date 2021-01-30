@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_help_notification
 - sp_help_notification_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 0273457f-9d2a-4a6f-9a16-6a6bf281cba0
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: cce6fd1c7645857019399dae9934c8b730e14f77
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: d37d091fdb380f0a08f3f0064f2ce408f439eee8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89536125"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199987"
 ---
 # <a name="sp_help_notification-transact-sql"></a>sp_help_notification (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Fournit une liste d'alertes pour un opérateur donné ou une liste d'opérateurs pour une alerte donnée.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,19 +45,19 @@ sp_help_notification
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @object_type = ] 'object_type'` Type d’informations à retourner. *object_type*est de **type char (9)**, sans valeur par défaut. *object_type* peut être Alerts, qui répertorie les alertes assignées au nom d’opérateur fourni *,* ou Operators, qui répertorie les opérateurs responsables du nom d’alerte fourni *.*  
+`[ @object_type = ] 'object_type'` Type d’informations à retourner. *object_type* est de **type char (9)**, sans valeur par défaut. *object_type* peut être Alerts, qui répertorie les alertes assignées au nom d’opérateur fourni *,* ou Operators, qui répertorie les opérateurs responsables du nom d’alerte fourni *.*  
   
 `[ @name = ] 'name'` Un nom d’opérateur (si *object_type* est Operators) ou un nom d’alerte (si *object_type* est alertes). *Name* est de **type sysname**, sans valeur par défaut.  
   
-`[ @enum_type = ] 'enum_type'` Informations de *object_type*retournées. *enum_type* est réel dans la plupart des cas. *enum_type*est de **type char (10)**, sans valeur par défaut, et peut prendre l’une des valeurs suivantes.  
+`[ @enum_type = ] 'enum_type'` Informations de *object_type* retournées. *enum_type* est réel dans la plupart des cas. *enum_type* est de **type char (10)**, sans valeur par défaut, et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
 |ACTUAL|Répertorie uniquement les *object_types* associées au *nom*.|  
-|ALL|Répertorie tous les*object_types* y compris ceux qui ne sont pas associés au *nom*.|  
-|TARGET|Répertorie uniquement les *object_types* correspondant à la *target_name*fournie, quelle que soit l’association avec le*nom*.|  
+|ALL|Répertorie tous les *object_types* y compris ceux qui ne sont pas associés au *nom*.|  
+|TARGET|Répertorie uniquement les *object_types* correspondant à la *target_name* fournie, quelle que soit l’association avec le *nom*.|  
   
-`[ @notification_method = ] notification_method` Valeur numérique qui détermine les colonnes de méthode de notification à retourner. *notification_method* est de **type tinyint**et peut prendre l’une des valeurs suivantes.  
+`[ @notification_method = ] notification_method` Valeur numérique qui détermine les colonnes de méthode de notification à retourner. *notification_method* est de **type tinyint** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

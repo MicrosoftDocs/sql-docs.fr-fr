@@ -6,7 +6,7 @@ ms.date: 12/30/2019
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dbo.syssessions_TSQL
 - dbo.syssessions
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 187819b6-c7f4-4a26-b74c-0a89e96695cf
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 67e34792baf2dbcb49677ea13746dd9cd53034a6
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: beabcc2aaeb02422139f4012e36507bad9b6f8ca
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098289"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198491"
 ---
 # <a name="dbosyssessions-transact-sql"></a>dbo.syssessions (Transact-SQL)
 

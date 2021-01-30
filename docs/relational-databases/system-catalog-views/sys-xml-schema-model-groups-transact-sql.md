@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.xml_schema_model_groups
 - xml_schema_model_groups
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 566556dc-a8c8-465c-9196-c7e0ae092a8a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 14e7c097f94687176b889ce0416682d88f6d3027
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0d2cd070f8e293fc764a996faafab42e8c21a437
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097856"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199835"
 ---
 # <a name="sysxml_schema_model_groups-transact-sql"></a>sys.xml_schema_model_groups (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

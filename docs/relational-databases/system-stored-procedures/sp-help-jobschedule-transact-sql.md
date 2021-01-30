@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_help_jobschedule
 - sp_help_jobschedule_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 2cded902-9272-4667-ac4b-a4f95a9f008e
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 5d74890ab154700159fcf6ca086f88cd2ac57409
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 9765feaa9e3237f1ccd8d3a6dcc203c88758aefa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538821"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200130"
 ---
 # <a name="sp_help_jobschedule-transact-sql"></a>sp_help_jobschedule (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "89538821"
   Retourne des informations sur la planification des travaux utilisés par [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] pour effectuer des opérations automatisées.  
  
  
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,18 +44,18 @@ sp_help_jobschedule { [ @job_id = ] job_id | [ @job_name = ] 'job_name' }
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @job_id = ] job_id` Numéro d’identification du travail. *job_id*est de type **uniqueidentifier**, avec NULL comme valeur par défaut.  
+`[ @job_id = ] job_id` Numéro d’identification du travail. *job_id* est de type **uniqueidentifier**, avec NULL comme valeur par défaut.  
   
-`[ @job_name = ] 'job_name'` Nom du travail. *job_name*est de **type sysname**, avec NULL comme valeur par défaut.  
+`[ @job_name = ] 'job_name'` Nom du travail. *job_name* est de **type sysname**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]
 > *Job_id* ou *job_name* doivent être spécifiés, mais ne peuvent pas être spécifiés.
 
-`[ @schedule_name = ] 'schedule_name'` Nom de l’élément de planification pour le travail. *schedule_name*est de **type sysname**, avec NULL comme valeur par défaut.  
+`[ @schedule_name = ] 'schedule_name'` Nom de l’élément de planification pour le travail. *schedule_name* est de **type sysname**, avec NULL comme valeur par défaut.  
   
-`[ @schedule_id = ] schedule_id` Numéro d’identification de l’élément de planification pour le travail. *schedule_id*est de **type int**, avec NULL comme valeur par défaut.  
+`[ @schedule_id = ] schedule_id` Numéro d’identification de l’élément de planification pour le travail. *schedule_id* est de **type int**, avec NULL comme valeur par défaut.  
   
-`[ @include_description = ] include_description` Spécifie s’il faut inclure la description de la planification dans le jeu de résultats. *include_description* est de **bit**, avec **0**comme valeur par défaut. Lorsque *include_description* a la **valeur 0**, la description de la planification n’est pas incluse dans le jeu de résultats. Lorsque *include_description* a la valeur **1**, la description de la planification est incluse dans le jeu de résultats.  
+`[ @include_description = ] include_description` Spécifie s’il faut inclure la description de la planification dans le jeu de résultats. *include_description* est de **bit**, avec **0** comme valeur par défaut. Lorsque *include_description* a la **valeur 0**, la description de la planification n’est pas incluse dans le jeu de résultats. Lorsque *include_description* a la valeur **1**, la description de la planification est incluse dans le jeu de résultats.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  0 (réussite) ou 1 (échec)  
@@ -78,7 +78,7 @@ sp_help_jobschedule { [ @job_id = ] job_id | [ @job_name = ] 'job_name' }
 |**active_start_time**|**int**|Heure de début de la planification.|  
 |**active_end_time**|**int**|Heure de fin de la planification.|  
 |**date_created**|**datetime**|Date de création de la planification.|  
-|**schedule_description**|**nvarchar(4000)**|Description en anglais de la planification qui est dérivée des valeurs dans les ** planifications demsdb.dbo.sys**. Lorsque *include_description* a la **valeur 0**, cette colonne contient du texte indiquant que la description n’a pas été demandée.|  
+|**schedule_description**|**nvarchar(4000)**|Description en anglais de la planification qui est dérivée des valeurs dans les **planifications demsdb.dbo.sys**. Lorsque *include_description* a la **valeur 0**, cette colonne contient du texte indiquant que la description n’a pas été demandée.|  
 |**next_run_date**|**int**|Date à laquelle la planification va lancer l'exécution du travail.|  
 |**next_run_time**|**int**|Heure à laquelle la planification va lancer l'exécution du travail.|  
 |**schedule_uid**|**uniqueidentifier**|Identificateur de la planification.|  

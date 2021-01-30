@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_primarykeys_TSQL
 - sp_primarykeys
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 0f76dd31-5b7b-4209-9e2e-b9ed5cac164d
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: c5b967d8ac3d30147e583ffa6268cdd8d2a8d282
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 23117c882ee0c2c55e8d29089327e9dd84643878
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89534986"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199586"
 ---
 # <a name="sp_primarykeys-transact-sql"></a>sp_primarykeys (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne les colonnes de clés primaires, une ligne par colonne clé, pour la table distante spécifiée.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,7 +45,7 @@ sp_primarykeys [ @table_server = ] 'table_server'
 ## <a name="arguments"></a>Arguments  
 `[ @table_server = ] 'table_server'_` Nom du serveur lié à partir duquel les informations de clé primaire doivent être retournées. *table_server* est de **type sysname**, sans valeur par défaut.  
   
-`[ @table_name = ] 'table_name'` Nom de la table pour laquelle les informations de clé primaire sont fournies. *table_name*est de **type sysname**, avec NULL comme valeur par défaut.  
+`[ @table_name = ] 'table_name'` Nom de la table pour laquelle les informations de clé primaire sont fournies. *table_name* est de **type sysname**, avec NULL comme valeur par défaut.  
   
 `[ @table_schema = ] 'table_schema'` Est le schéma de la table. *TABLE_SCHEMA* est de **type sysname**, avec NULL comme valeur par défaut. Dans l'environnement [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], ceci correspond au propriétaire de la table.  
   
@@ -66,7 +66,7 @@ sp_primarykeys [ @table_server = ] 'table_server'
 |**PK_NAME**|**sysname**|Identificateur de clé primaire. Retourne NULL s'il n'est pas applicable à la source de données.|  
   
 ## <a name="remarks"></a>Notes  
- **sp_primarykeys** est exécuté en interrogeant l’ensemble de lignes PRIMARY_KEYS de l’interface **IDBSchemaRowset** du fournisseur OLE DB correspondant à *table_server*. Les paramètres *table_name*, *TABLE_SCHEMA*, *TABLE_CATALOG*et *Column* sont passés à cette interface pour limiter les lignes retournées.  
+ **sp_primarykeys** est exécuté en interrogeant l’ensemble de lignes PRIMARY_KEYS de l’interface **IDBSchemaRowset** du fournisseur OLE DB correspondant à *table_server*. Les paramètres *table_name*, *TABLE_SCHEMA*, *TABLE_CATALOG* et *Column* sont passés à cette interface pour limiter les lignes retournées.  
   
  **sp_primarykeys** retourne un jeu de résultats vide si le fournisseur de OLE DB du serveur lié spécifié ne prend pas en charge l’ensemble de lignes PRIMARY_KEYS de l’interface **IDBSchemaRowset** .  
   

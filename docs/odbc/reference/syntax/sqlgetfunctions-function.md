@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLGetFunctions
 apilocation:
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 0451d2f9-0f4f-46ba-b252-670956a52183
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 396c677c6052176240afaa86e02c5f52ba4739b8
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a5ae807638c25b0e01129d1dfbdc6238fd3001f8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88460982"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201008"
 ---
 # <a name="sqlgetfunctions-function"></a>Fonction SQLGetFunctions
 **Conformité**  
@@ -69,20 +69,20 @@ SQLRETURN SQLGetFunctions(
 ## <a name="diagnostics"></a>Diagnostics  
  Quand **SQLGetFunctions** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *comme HandleType* de SQL_HANDLE_DBC et un *handle* de *ConnectionHandle*. Le tableau suivant répertorie les valeurs SQLSTATE couramment retournées par **SQLGetFunctions** et les explique dans le contexte de cette fonction. la notation « (DM) » précède les descriptions des SQLSTATEs retournées par le gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur|Description|  
 |--------|-----|-----------|  
 |01000|Avertissement général|Message d’information spécifique au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |08S01|Échec de la liaison de communication|Le lien de communication entre le pilote et la source de données à laquelle le pilote a été connecté a échoué avant la fin du traitement de la fonction.|  
-|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon * \* MessageText* décrit l’erreur et sa cause.|  
+|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon *\* MessageText* décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|Le pilote n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou l’achèvement de la fonction.|  
-|HY010|Erreur de séquence de fonction|(DM) **SQLGetFunctions** a été appelé avant **SQLConnect**, **SQLBrowseConnect**ou **SQLDriverConnect**.<br /><br /> (DM) **SQLBrowseConnect** a été appelé pour *ConnectionHandle* et a retourné SQL_NEED_DATA. Cette fonction a été appelée avant que **SQLBrowseConnect** retourne SQL_SUCCESS_WITH_INFO ou SQL_SUCCESS.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**ou **SQLMoreResults** a été appelé pour *ConnectionHandle* et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.|  
+|HY010|Erreur de séquence de fonction|(DM) **SQLGetFunctions** a été appelé avant **SQLConnect**, **SQLBrowseConnect** ou **SQLDriverConnect**.<br /><br /> (DM) **SQLBrowseConnect** a été appelé pour *ConnectionHandle* et a retourné SQL_NEED_DATA. Cette fonction a été appelée avant que **SQLBrowseConnect** retourne SQL_SUCCESS_WITH_INFO ou SQL_SUCCESS.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect** ou **SQLMoreResults** a été appelé pour *ConnectionHandle* et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.|  
 |HY013|Erreur de gestion de la mémoire|Impossible de traiter l’appel de fonction, car les objets mémoire sous-jacents sont inaccessibles, probablement en raison de conditions de mémoire insuffisante.|  
 |HY095|Type de fonction hors limites|(DM) une valeur *FunctionId* non valide a été spécifiée.|  
 |HY117|La connexion est interrompue en raison d’un état de transaction inconnu. Seules les fonctions de déconnexion et de lecture seule sont autorisées.|(DM) pour plus d’informations sur l’état suspendu, consultez [fonction SQLEndTran](../../../odbc/reference/syntax/sqlendtran-function.md).|  
 |HYT01|Délai d’attente de connexion expiré|Le délai d’attente de connexion a expiré avant que la source de données ait répondu à la demande. Le délai d’expiration de la connexion est défini par le biais de **SQLSetConnectAttr**, SQL_ATTR_CONNECTION_TIMEOUT.|  
   
 ## <a name="comments"></a>Commentaires  
- **SQLGetFunctions** retourne toujours que **SQLGetFunctions**, **SQLDataSources**et **SQLDrivers** sont pris en charge. Cela est dû au fait que ces fonctions sont implémentées dans le gestionnaire de pilotes. Le gestionnaire de pilotes mappe une fonction ANSI à la fonction Unicode correspondante si la fonction Unicode existe et mappe une fonction Unicode à la fonction ANSI correspondante si la fonction ANSI existe. Pour plus d’informations sur la façon dont les applications utilisent **SQLGetFunctions**, consultez [niveaux de conformité](../../../odbc/reference/develop-app/interface-conformance-levels.md)de l’interface.  
+ **SQLGetFunctions** retourne toujours que **SQLGetFunctions**, **SQLDataSources** et **SQLDrivers** sont pris en charge. Cela est dû au fait que ces fonctions sont implémentées dans le gestionnaire de pilotes. Le gestionnaire de pilotes mappe une fonction ANSI à la fonction Unicode correspondante si la fonction Unicode existe et mappe une fonction Unicode à la fonction ANSI correspondante si la fonction ANSI existe. Pour plus d’informations sur la façon dont les applications utilisent **SQLGetFunctions**, consultez [niveaux de conformité](../../../odbc/reference/develop-app/interface-conformance-levels.md)de l’interface.  
   
  La liste suivante répertorie les valeurs valides pour *FunctionId* pour les fonctions conformes au niveau de conformité ISO 92 conforme aux normes :  
   
@@ -144,10 +144,10 @@ SQLRETURN SQLGetFunctions(
  La macro SQL_FUNC_EXISTS (*SupportedPtr*, *FunctionID*) est utilisée pour déterminer la prise en charge de ODBC 3 *. x* ou des fonctions antérieures après l’appel de **SQLGetFunctions** avec un argument *FunctionID* de SQL_API_ODBC3_ALL_FUNCTIONS. L’application appelle SQL_FUNC_EXISTS avec l’argument *SupportedPtr* défini sur le *SupportedPtr* passé dans *SQLGetFunctions*, et avec l’argument *FunctionID* défini sur la **#define** pour la fonction. SQL_FUNC_EXISTS retourne SQL_TRUE si la fonction est prise en charge, et SQL_FALSE dans le cas contraire.  
   
 > [!NOTE]
->  Lorsque vous utilisez un pilote ODBC 2 *. x* , le gestionnaire de pilotes ODBC 3 *. x* retourne SQL_TRUE pour **SQLAllocHandle** et **SQLFreeHandle** , **car SQLAllocHandle** est mappé à **SQLAllocEnv**, **SQLAllocConnect**ou **SQLAllocStmt,**, et parce que **SQLFreeHandle** est mappé à **sqlfreeenv,**, **sqlfreeconnect,** ou **SQLFreeStmt**. **SQLAllocHandle** ou **SQLFreeHandle** avec un argument *comme HandleType* de SQL_HANDLE_DESC n’est pas pris en charge, bien que SQL_TRUE soit retourné pour les fonctions, car il n’existe aucune fonction ODBC 2 *. x* à mapper dans ce cas.  
+>  Lorsque vous utilisez un pilote ODBC 2 *. x* , le gestionnaire de pilotes ODBC 3 *. x* retourne SQL_TRUE pour **SQLAllocHandle** et **SQLFreeHandle** , **car SQLAllocHandle** est mappé à **SQLAllocEnv**, **SQLAllocConnect** ou **SQLAllocStmt,**, et parce que **SQLFreeHandle** est mappé à **sqlfreeenv,**, **sqlfreeconnect,** ou **SQLFreeStmt**. **SQLAllocHandle** ou **SQLFreeHandle** avec un argument *comme HandleType* de SQL_HANDLE_DESC n’est pas pris en charge, bien que SQL_TRUE soit retourné pour les fonctions, car il n’existe aucune fonction ODBC 2 *. x* à mapper dans ce cas.  
   
 ## <a name="code-example"></a>Exemple de code  
- Les trois exemples suivants montrent comment une application utilise **SQLGetFunctions** pour déterminer si un pilote prend en charge **SQLTables**, **SQLColumns**et **SQLStatistics**. Si le pilote ne prend pas en charge ces fonctions, l’application se déconnecte du pilote. Le premier exemple appelle **SQLGetFunctions** une fois pour chaque fonction.  
+ Les trois exemples suivants montrent comment une application utilise **SQLGetFunctions** pour déterminer si un pilote prend en charge **SQLTables**, **SQLColumns** et **SQLStatistics**. Si le pilote ne prend pas en charge ces fonctions, l’application se déconnecte du pilote. Le premier exemple appelle **SQLGetFunctions** une fois pour chaque fonction.  
   
 ```cpp  
 SQLUSMALLINT TablesExists, ColumnsExists, StatisticsExists;  

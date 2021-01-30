@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLGetEnvAttr
 apilocation:
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 01f4590f-427a-4280-a1c3-18de9f7d86c1
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 457896a5c845bc42e446f1a115ee47863f7fced3
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 35df579ce679b8375574a16eea16a2f5d84c3043
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171851"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199847"
 ---
 # <a name="sqlgetenvattr-function"></a>SQLGetEnvAttr, fonction
 **Conformité**  

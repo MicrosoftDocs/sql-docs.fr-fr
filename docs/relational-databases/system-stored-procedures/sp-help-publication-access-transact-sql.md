@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_help_publication_access
 - sp_help_publication_access_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 9408fa13-54a0-4cb1-8fb0-845e5536ef50
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 38ef2fe7710d4716d9b544086f29333c96384bf6
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: b33b79c6e632eef28feaa5fa8b3f605018b09953
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89535232"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199594"
 ---
 # <a name="sp_help_publication_access-transact-sql"></a>sp_help_publication_access (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Retourne la liste de toutes les connexions accordées pour une publication. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,7 +47,7 @@ sp_help_publication_access [ @publication = ] 'publication'
   
 `[ @login = ] 'login'` ID de connexion de sécurité standard. *login* est de **type sysname**, avec la valeur par défaut **%** .  
   
-`[ @initial_list = ] initial_list` Spécifie s’il faut retourner tous les membres avec un accès à la publication ou uniquement ceux qui ont accès avant l’ajout de nouveaux membres à la liste. *initial_list* est de bit, avec **0**comme valeur par défaut.  
+`[ @initial_list = ] initial_list` Spécifie s’il faut retourner tous les membres avec un accès à la publication ou uniquement ceux qui ont accès avant l’ajout de nouveaux membres à la liste. *initial_list* est de bit, avec **0** comme valeur par défaut.  
   
  **1** retourne des informations pour tous les membres du rôle serveur fixe **sysadmin** avec des connexions valides sur le serveur de distribution qui existaient lors de la création de la publication, ainsi que la connexion actuelle.  
   

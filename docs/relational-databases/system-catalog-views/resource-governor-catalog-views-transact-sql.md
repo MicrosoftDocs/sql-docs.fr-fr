@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bb0a38e0-4eb2-49bf-bba8-750fb706d06e
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 2abf0eec1fe859153476738050b1cd32c66e322a
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 191bae4b96819db77d9a46434e508eb99b7ff48f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092507"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200929"
 ---
 # <a name="resource-governor-catalog-views-transact-sql"></a>Affichages catalogue du gouverneur de ressources (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]

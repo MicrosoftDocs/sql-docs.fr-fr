@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - backupmediafamily
 - backupmediafamily_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 - backup media [SQL Server], backupmediafamily system table
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 6adacacdb3e075e3eb058005d3b11fc8fc219cbe
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: df687040bf73fb1d78f15d7cca18cc0fc092ee1f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096286"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198680"
 ---
 # <a name="backupmediafamily-transact-sql"></a>backupmediafamily (Transact-SQL)
 

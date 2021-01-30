@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - xml_schema_wildcard_namespaces_TSQL
 - xml_schema_wildcard_namespaces
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: a3caa932-41c7-48a9-9b2d-ff090afbb66b
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: e7b0638674e0a84d293d5389efb17de1832c664d
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0cfc70cf32e186afe3d08dc1a2edbf5802a614f6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097829"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199798"
 ---
 # <a name="sysxml_schema_wildcard_namespaces-transact-sql"></a>sys.xml_schema_wildcard_namespaces (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

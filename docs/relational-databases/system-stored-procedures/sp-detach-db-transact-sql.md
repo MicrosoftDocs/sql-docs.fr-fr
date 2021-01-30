@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_detach_db
 - sp_detach_db_TSQL
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: abcb1407-ff78-4c76-b02e-509c86574462
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 6829fff1f535a0e0d55b8dd849c67b0b197c4e48
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+ms.openlocfilehash: 1d4b484cd6d440b14b7639b513fba7e53f615443
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91810839"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200760"
 ---
 # <a name="sp_detach_db-transact-sql"></a>sp_detach_db (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -52,10 +52,10 @@ sp_detach_db [ @dbname= ] 'database_name'
   
  Par défaut, UPDATE STATISTICS est exécuté pour mettre à jour les informations relatives aux données des tables et des index. L'exécution de UPDATE STATISTICS est utile pour les bases de données qui doivent être placées sur des supports en lecture seule.  
   
-`[ @keepfulltextindexfile = ] 'KeepFulltextIndexFile'` Spécifie que le fichier d’index de recherche en texte intégral associé à la base de données en cours de détachement ne sera pas supprimé pendant l’opération de détachement de la base de données. *Keepfulltextindexfile* est une valeur **nvarchar (10)** avec **true**comme valeur par défaut. Si *keepfulltextindexfile* a la **valeur false**, tous les fichiers d’index de recherche en texte intégral associés à la base de données et les métadonnées de l’index de recherche en texte intégral sont supprimés, sauf si la base de données est en lecture seule. Si la valeur est NULL ou **true**, les métadonnées associées au texte intégral sont conservées.  
+`[ @keepfulltextindexfile = ] 'KeepFulltextIndexFile'` Spécifie que le fichier d’index de recherche en texte intégral associé à la base de données en cours de détachement ne sera pas supprimé pendant l’opération de détachement de la base de données. *Keepfulltextindexfile* est une valeur **nvarchar (10)** avec **true** comme valeur par défaut. Si *keepfulltextindexfile* a la **valeur false**, tous les fichiers d’index de recherche en texte intégral associés à la base de données et les métadonnées de l’index de recherche en texte intégral sont supprimés, sauf si la base de données est en lecture seule. Si la valeur est NULL ou **true**, les métadonnées associées au texte intégral sont conservées.  
   
 > [!IMPORTANT]
->  Le paramètre ** \@ keepfulltextindexfile** sera supprimé dans une future version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Évitez d'utiliser ce paramètre dans de nouveaux travaux de développement, et modifiez dès que possible les applications qui utilisent actuellement ce paramètre.  
+>  Le paramètre **\@ keepfulltextindexfile** sera supprimé dans une future version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Évitez d'utiliser ce paramètre dans de nouveaux travaux de développement, et modifiez dès que possible les applications qui utilisent actuellement ce paramètre.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  0 (réussite) ou 1 (échec)  

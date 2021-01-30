@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_help_job_TSQL
 - sp_help_job
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 8a8b6104-e0e4-4d07-a2c3-f4243ee0d6fa
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 5c0b2f0845c98f4b5fa403bd98b87718afd0fb26
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 32ffb85143cf448742831071bee7d4b94a25ec57
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549686"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200159"
 ---
 # <a name="sp_help_job-transact-sql"></a>sp_help_job (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "89549686"
   Retourne des informations sur les travaux utilisés par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent pour effectuer des opérations automatisées dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
  
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -94,7 +94,7 @@ sp_help_job { [ @job_id = ] job_id
   
 `[ @date_comparator = ] 'date_comparison'` Opérateur de comparaison à utiliser dans les comparaisons de *Date_Created* et *Date_Modified*. *date_comparison* est de **type char (1)** et peut être =, \<, or > .  
   
-`[ @date_created = ] date_created` Date à laquelle le travail a été créé. *Date_Created*est de **type DateTime**, avec NULL comme valeur par défaut.  
+`[ @date_created = ] date_created` Date à laquelle le travail a été créé. *Date_Created* est de **type DateTime**, avec NULL comme valeur par défaut.  
   
 `[ @date_last_modified = ] date_modified` Date de la dernière modification du travail. *Date_Modified* est de **type DateTime**, avec NULL comme valeur par défaut.  
   
@@ -115,7 +115,7 @@ sp_help_job { [ @job_id = ] job_id
 |**description**|**nvarchar(512)**|Description du travail.|  
 |**start_step_id**|**int**|Identificateur de l'étape du travail à partir de laquelle l'exécution doit débuter.|  
 |**category**|**sysname**|Catégorie de travail.|  
-|**du**|**sysname**|Propriétaire du travail.|  
+|**propriétaire**|**sysname**|Propriétaire du travail.|  
 |**notify_level_eventlog**|**int**|**Masque binaire** indiquant les circonstances entraînant la consignation d’un événement de notification dans le journal des applications Microsoft Windows. Peut prendre l'une des valeurs suivantes :<br /><br /> **0** = jamais<br /><br /> **1** = lors de la tentative d’exécution d’un travail<br /><br /> **2** = en cas d’échec du travail<br /><br /> **3** = à chaque achèvement du travail (quel que soit le résultat du travail)|  
 |**notify_level_email**|**int**|**Masque binaire** indiquant les circonstances entraînant l’envoi d’un message électronique de notification lorsqu’un travail est terminé. Les valeurs possibles sont les mêmes que pour **notify_level_eventlog**.|  
 |**notify_level_netsend**|**int**|**Masque binaire** indiquant les circonstances entraînant l’envoi d’un message réseau lorsqu’un travail est terminé. Les valeurs possibles sont les mêmes que pour **notify_level_eventlog**.|  
@@ -220,7 +220,7 @@ sp_help_job { [ @job_id = ] job_id
   
  Pour en savoir plus sur les autorisations de ces rôles, consultez [Rôles de base de données fixes de l'Agent SQL Server](../../ssms/agent/sql-server-agent-fixed-database-roles.md).  
   
- Les membres de **SQLAgentUserRole** peuvent uniquement afficher les travaux dont ils sont propriétaires. Les membres de **sysadmin**, **SQLAgentReaderRole**et **SQLAgentOperatorRole** peuvent afficher tous les travaux locaux et multiserveurs.  
+ Les membres de **SQLAgentUserRole** peuvent uniquement afficher les travaux dont ils sont propriétaires. Les membres de **sysadmin**, **SQLAgentReaderRole** et **SQLAgentOperatorRole** peuvent afficher tous les travaux locaux et multiserveurs.  
   
 ## <a name="examples"></a>Exemples  
   
