@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Error::GetSQLState
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: f9e25967-54b0-444d-af2a-0d2c75365d3e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: bbc849f19c91f7b2387df5e0e71b3455efa0db09
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 8ebacade44d53ddf142f22f9e30bce140e375592
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988860"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170214"
 ---
 # <a name="sqlstate-property"></a>SQLState, propriété
 Indique l’état SQL d’un objet d' [erreur](./error-object.md) donné.  
@@ -35,7 +35,7 @@ Indique l’état SQL d’un objet d' [erreur](./error-object.md) donné.
  Utilisez la propriété **SQLSTATE** pour lire le code d’erreur à cinq caractères que le fournisseur retourne lorsqu’une erreur se produit pendant le traitement d’une instruction SQL. Par exemple, lorsque vous utilisez le fournisseur Microsoft OLE DB pour ODBC avec une base de données Microsoft SQL Server, les codes d’erreur d’état SQL proviennent d’ODBC, en fonction des erreurs spécifiques à ODBC ou des erreurs qui proviennent de Microsoft SQL Server, et sont ensuite mappées à des erreurs ODBC. Ces codes d’erreur sont documentés dans la norme ANSI SQL, mais peuvent être implémentés différemment selon les différentes sources de données.  
   
 ## <a name="applies-to"></a>S'applique à  
- [Objet Error](./error-object.md)  
+ [Error, objet](./error-object.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Description, HelpContext, HelpFile, NativeError, Number, source et SQLState, exemples de propriétés (VB)](./description-helpcontext-helpfile-nativeerror-number-source-example-vb.md)   

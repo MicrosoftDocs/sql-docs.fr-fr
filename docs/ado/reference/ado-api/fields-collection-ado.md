@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Fields
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 7c371474-b88f-4730-afa5-44163a0488d5
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6f16fd27e7bee9d3f9e922de4db625b897266a61
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 2e16bf602bd0c54b425587fcf1a50d2cc60b2aa7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88973120"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167360"
 ---
 # <a name="fields-collection-ado"></a>Fields, collection (ADO)
 Contient tous les objets [Field](./field-object.md) d’un objet [Recordset](./recordset-object-ado.md) ou [Record](./record-object-ado.md) .  

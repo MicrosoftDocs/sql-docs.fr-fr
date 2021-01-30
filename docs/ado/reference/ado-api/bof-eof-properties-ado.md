@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset15::BOF
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 36c31ab2-f3b6-4281-89b6-db7e04e38fd2
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 710a116e28a102eeac8a7a062a9f66cd8dcbe79c
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 71424db7a06dc8b1d5d47a3505e90ffaf175cc3b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88975780"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167823"
 ---
 # <a name="bof-eof-properties-ado"></a>BOF, EOF, propriétés (ADO)
 -   **BOF** Indique que la position actuelle de l’enregistrement est antérieure au premier enregistrement d’un objet [Recordset](./recordset-object-ado.md) .  

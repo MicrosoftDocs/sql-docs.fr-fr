@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e37b4d46-380d-4615-b4bb-e1a7b0851771
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0c8e417b86578500529820905beb3b16b0dc3a0f
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 013b5c9b73abebedd31a995c60da1b0bffdba5d2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988696"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170178"
 ---
 # <a name="status-property-example-recordset-vb"></a>Status, exemple de propriété (objet Recordset) (VB)
 Cet exemple utilise la propriété [Status](./status-property-ado-recordset.md) pour afficher les enregistrements qui ont été modifiés dans une opération de traitement par lot avant qu’une mise à jour par lot ait eu lieu.  

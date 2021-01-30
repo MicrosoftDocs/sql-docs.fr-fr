@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - DataControl
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: d85ea4fc-451c-436e-97b8-58f92b149dd0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 81f7d1a3ca15eaf2ebc2bb6dbaff20ba7762d89c
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 5c65d8f639ec1747e7085f8d88c266ed6b6299d4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91721100"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169009"
 ---
 # <a name="datacontrol-object-rds"></a>DataControl, objet (RDS)
 Lie un [jeu d’enregistrements](../ado-api/recordset-object-ado.md) de requêtes de données à un ou plusieurs contrôles (par exemple, une zone de texte, un contrôle de grille ou une zone de liste déroulante) pour afficher les données du **Recordset** sur une page Web.  
@@ -42,12 +42,12 @@ Lie un [jeu d’enregistrements](../ado-api/recordset-object-ado.md) de requête
 ```  
   
 ## <a name="remarks"></a>Notes  
- ID de classe pour le **RDS. ** L’objet DataControl est BD96C556-65A3-11D0-983A-00C04FC29E33.  
+ ID de classe pour le **RDS.** L’objet DataControl est BD96C556-65A3-11D0-983A-00C04FC29E33.  
   
 > [!NOTE]
->  Si vous recevez une erreur indiquant qu’un [objet RDS. DataSpace](./dataspace-object-rds.md) ou **RDS. ** L’objet DataControl ne se charge pas, assurez-vous que vous utilisez l’ID de classe correct. Les ID de classe de ces objets ont été modifiés par rapport à la version 1,0 et 1,1. Sachez également que même les colonnes Nullable doivent être définies lorsque vous utilisez l’objet **RDS DataControl** .  
+>  Si vous recevez une erreur indiquant qu’un [objet RDS. DataSpace](./dataspace-object-rds.md) ou **RDS.** L’objet DataControl ne se charge pas, assurez-vous que vous utilisez l’ID de classe correct. Les ID de classe de ces objets ont été modifiés par rapport à la version 1,0 et 1,1. Sachez également que même les colonnes Nullable doivent être définies lorsque vous utilisez l’objet **RDS DataControl** .  
   
- Pour un scénario de base, vous devez définir uniquement les propriétés **SQL**, **Connect**et **Server** de l' **objet RDS. DataControl** , qui appellera automatiquement l’objet métier par défaut, [RDSServer. DataFactory](./datafactory-object-rdsserver.md).  
+ Pour un scénario de base, vous devez définir uniquement les propriétés **SQL**, **Connect** et **Server** de l' **objet RDS. DataControl** , qui appellera automatiquement l’objet métier par défaut, [RDSServer. DataFactory](./datafactory-object-rdsserver.md).  
   
  Toutes les propriétés de l' **objet RDS. DataControl** est facultatif, car les objets métier personnalisés peuvent remplacer leurs fonctionnalités.  
   
@@ -60,7 +60,7 @@ Lie un [jeu d’enregistrements](../ado-api/recordset-object-ado.md) de requête
   
 -   Obtention des informations sur les paramètres ou les colonnes avant d’appeler la méthode **Execute** .  
   
--   Affectation de la **valeur true**à l' **instruction Transact updates** .  
+-   Affectation de la **valeur true** à l' **instruction Transact updates** .  
   
 -   Obtention de l’état de la ligne.  
   
@@ -72,7 +72,7 @@ Lie un [jeu d’enregistrements](../ado-api/recordset-object-ado.md) de requête
   
 -   Utilisation de **adCmdTableDirect**.  
   
- **RDS. **L’objet DataControl s’exécute en mode asynchrone par défaut. Si vous avez besoin d’une exécution synchrone pour votre application, affectez au paramètre [ExecuteOptions](./executeoptions-property-rds.md) la valeur **adcExecSync** et au paramètre [FetchOptions](./fetchoptions-property-rds.md) la valeur **adcFetchUpFront**, comme indiqué dans l’exemple suivant.  
+ **RDS.** L’objet DataControl s’exécute en mode asynchrone par défaut. Si vous avez besoin d’une exécution synchrone pour votre application, affectez au paramètre [ExecuteOptions](./executeoptions-property-rds.md) la valeur **adcExecSync** et au paramètre [FetchOptions](./fetchoptions-property-rds.md) la valeur **adcFetchUpFront**, comme indiqué dans l’exemple suivant.  
   
 ```  
 <OBJECT CLASSID="clsid:BD96C556-65A3-11D0-983A-00C04FC29E33"   
@@ -94,11 +94,11 @@ Lie un [jeu d’enregistrements](../ado-api/recordset-object-ado.md) de requête
   
 -   Dans les balises d’objet de chaque contrôle lié, spécifiez la valeur DATAFLD pour définir les valeurs des données que vous souhaitez afficher dans chaque contrôle visuel.  
   
- Il n’existe aucune restriction de nombre sur le nombre de **RDS. ** Les objets DataControl que vous pouvez incorporer à l’aide de balises d’objet sur une page Web unique.  
+ Il n’existe aucune restriction de nombre sur le nombre de **RDS.** Les objets DataControl que vous pouvez incorporer à l’aide de balises d’objet sur une page Web unique.  
   
  Lorsque vous définissez le **RDS. DataControl** sur une page Web, utilisez des valeurs de **hauteur** et de **largeur** non nulles telles que 1 (pour éviter l’inclusion d’espace supplémentaire).  
   
- Les composants du client Remote Data Service sont déjà inclus dans le cadre d’Internet Explorer 4,0 ; par conséquent, vous n’avez pas besoin d’inclure un paramètre CODEBASE dans votre **objet RDS. ** Balise d’objet DataControl.  
+ Les composants du client Remote Data Service sont déjà inclus dans le cadre d’Internet Explorer 4,0 ; par conséquent, vous n’avez pas besoin d’inclure un paramètre CODEBASE dans votre **objet RDS.** Balise d’objet DataControl.  
   
  Avec Internet Explorer 4,0 ou une version ultérieure, vous pouvez lier des données à l’aide de contrôles HTML et de contrôles® ActiveX uniquement s’ils sont marqués comme des contrôles de modèle Apartment.  
   

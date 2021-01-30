@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ADOX, collections
 - collections [ADOX]
 ms.assetid: c0c90ba9-0471-4381-96f1-376de22fa2ee
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d256e9a650359a9fdc961a04ddb3c32216961094
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 9b88f431f1ffa80105c60314acefd71420325039
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641362"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169618"
 ---
 # <a name="adox-collections"></a>Collections ADOX
 

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Key
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 55f116fe-4d56-4892-bffe-0cdd6fc727c9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d8b2f37dd12f7243f2c5fcb8e577dc35e350c6a9
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 51c694c39004330dd780a2deea632eee186ad9c3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88984050"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169337"
 ---
 # <a name="key-object-adox"></a>Key, objet (ADOX)
 Représente un champ clé primaire, étrangère ou unique d’une table de base de données.  

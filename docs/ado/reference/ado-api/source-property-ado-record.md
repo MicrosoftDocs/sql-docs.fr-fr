@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Record::Source
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 2c18279e-6f35-4af0-b12e-8f1543d9ed20
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b9c551e52864caca8834350d5107b76aed88700d
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 232bebc8eabf96584a4513c3197f329ecf70fe87
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988940"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170239"
 ---
 # <a name="source-property-ado-record"></a>Source, propriété (objet Record ADO)
 Indique la source de données ou l’objet représenté par l' [enregistrement](./record-object-ado.md).  
@@ -37,7 +37,7 @@ Indique la source de données ou l’objet représenté par l' [enregistrement](
 ## <a name="remarks"></a>Notes  
  La propriété **source** retourne l’argument *source* de la méthode d' [ouverture](./open-method-ado-record.md) de l’objet **Record** . Elle peut contenir une chaîne d’URL absolue ou relative. Une URL absolue peut être utilisée sans définir la propriété [ActiveConnection](./activeconnection-property-ado.md) pour ouvrir directement l’objet **Record** . Dans ce cas, un objet de **connexion** implicite est créé.  
   
- La propriété **source** peut également contenir une référence à un **Recordset**déjà ouvert, ce qui ouvre un objet **Record** représentant la ligne actuelle dans le **Recordset**.  
+ La propriété **source** peut également contenir une référence à un **Recordset** déjà ouvert, ce qui ouvre un objet **Record** représentant la ligne actuelle dans le **Recordset**.  
   
  La propriété **source** peut également contenir une référence à un objet de [commande](./command-object-ado.md) qui retourne une ligne unique de données du fournisseur.  
   

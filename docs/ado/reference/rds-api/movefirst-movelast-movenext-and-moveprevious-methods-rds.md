@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - MoveLast method [RDS]
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 45c80bb5-136f-4204-9df2-78740fa55574
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e0e2b53967017ca093b04b5449ebd7a47a983f29
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 80a0a2b5fae2339718089903060c512595957be3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724470"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168915"
 ---
 # <a name="movefirst-movelast-movenext-and-moveprevious-methods-rds"></a>MoveFirst, MoveLast, MoveNext et MovePrevious, méthodes (RDS)
 Passe au premier enregistrement, dernier, suivant ou précédent dans un objet [Recordset](../ado-api/recordset-object-ado.md) spécifié.  
@@ -42,7 +42,7 @@ DataControl.Recordset.{MoveFirst | MoveLast | MoveNext | MovePrevious}
  Variable objet qui représente un objet [RDS. DataControl](./datacontrol-object-rds.md) .  
   
 ## <a name="remarks"></a>Notes  
- Vous pouvez utiliser les méthodes **Move** avec le **RDS. DataControl** pour parcourir les enregistrements de données dans les contrôles liés aux données sur une page Web. Supposons, par exemple, que vous affichez un **jeu d’enregistrements** dans une grille en le liant à un **objet RDS. DataControl** . Vous pouvez ensuite inclure les boutons premier, dernier, suivant et précédent sur lesquels les utilisateurs peuvent cliquer pour passer au premier enregistrement, dernier, suivant ou précédent dans le **jeu d’enregistrements**affiché. Pour ce faire, appelez les méthodes **MoveFirst**, **MoveLast**, **MoveNext**et **MovePrevious** de l' **objet RDS. DataControl** dans les procédures OnClick pour les boutons First, Last, Next et Previous, respectivement. L' [exemple de carnet d’adresses](../../guide/remote-data-service/address-book-navigation-buttons.md) montre comment procéder.  
+ Vous pouvez utiliser les méthodes **Move** avec le **RDS. DataControl** pour parcourir les enregistrements de données dans les contrôles liés aux données sur une page Web. Supposons, par exemple, que vous affichez un **jeu d’enregistrements** dans une grille en le liant à un **objet RDS. DataControl** . Vous pouvez ensuite inclure les boutons premier, dernier, suivant et précédent sur lesquels les utilisateurs peuvent cliquer pour passer au premier enregistrement, dernier, suivant ou précédent dans le **jeu d’enregistrements** affiché. Pour ce faire, appelez les méthodes **MoveFirst**, **MoveLast**, **MoveNext** et **MovePrevious** de l' **objet RDS. DataControl** dans les procédures OnClick pour les boutons First, Last, Next et Previous, respectivement. L' [exemple de carnet d’adresses](../../guide/remote-data-service/address-book-navigation-buttons.md) montre comment procéder.  
   
 ## <a name="applies-to"></a>S'applique à  
  [DataControl, objet (RDS)](./datacontrol-object-rds.md)  

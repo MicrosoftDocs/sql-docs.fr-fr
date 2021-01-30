@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - InvokeService [RDS]
 ms.assetid: ad45c676-ec7e-4a3a-9a6b-a54f75eb3012
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8d3dc0ca3744f715f080e5e34a9d4cd5e88bc8b6
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 4d162b0291a19a80ec0133307c785ad3af588aee
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724490"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168891"
 ---
 # <a name="invokeservice-rds"></a>InvokeService (RDS)
 Retourne un pointeur vers l’interface demandée sur une version plus puissante de l’objet.  

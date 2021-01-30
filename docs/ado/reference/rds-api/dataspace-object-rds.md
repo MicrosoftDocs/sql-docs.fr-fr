@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - DataSpace object [RDS]
 ms.assetid: 9194bffa-5bdf-4dff-af86-f7158c23bfa7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e30697dd8b751ec3122683a792a242e6faa0fff0
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: d9ca4337b26a52c28619f703456693a0c715a86a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91720850"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168971"
 ---
 # <a name="dataspace-object-rds"></a>DataSpace, objet (RDS)
 > [!IMPORTANT]
@@ -29,10 +29,10 @@ ms.locfileid: "91720850"
   
  Le service de données distant nécessite des proxies d’objets métier afin que les composants côté client puissent communiquer avec les objets métier situés sur la couche intermédiaire. Les proxies facilitent l’empaquetage, le désassemblage et le transport (marshaling) des données de l’ensemble d' [enregistrements](../ado-api/recordset-object-ado.md) de l’application au-delà des limites des processus ou des ordinateurs.  
   
- Remote Data Service utilise le **RDS. ** Méthode [CreateObject](./createobject-method-rds.md) de l’objet DataSpace pour créer des proxys d’objets métier. Le proxy d’objet métier est créé dynamiquement chaque fois qu’une instance de son équivalent d’objet métier de couche intermédiaire est créée. Remote Data Service prend en charge les protocoles suivants : HTTP, HTTPs (HTTP Secure Sockets), DCOM et in-process (les composants clients et l’objet métier résident sur le même ordinateur).  
+ Remote Data Service utilise le **RDS.** Méthode [CreateObject](./createobject-method-rds.md) de l’objet DataSpace pour créer des proxys d’objets métier. Le proxy d’objet métier est créé dynamiquement chaque fois qu’une instance de son équivalent d’objet métier de couche intermédiaire est créée. Remote Data Service prend en charge les protocoles suivants : HTTP, HTTPs (HTTP Secure Sockets), DCOM et in-process (les composants clients et l’objet métier résident sur le même ordinateur).  
   
 > [!NOTE]
->  RDS se comporte de manière « sans état » lorsque le **RDS. ** L’objet DataSpace utilise les protocoles HTTP ou HTTPS. Autrement dit, toutes les informations internes relatives à une demande du client sont supprimées une fois que le serveur a renvoyé une réponse.  
+>  RDS se comporte de manière « sans état » lorsque le **RDS.** L’objet DataSpace utilise les protocoles HTTP ou HTTPS. Autrement dit, toutes les informations internes relatives à une demande du client sont supprimées une fois que le serveur a renvoyé une réponse.  
   
 > [!NOTE]
 >  Bien que l’objet métier semble exister pendant la durée de vie du proxy de l’objet métier, l’objet métier existe réellement uniquement jusqu’à ce qu’une réponse soit envoyée à une demande. Lorsqu’une demande est émise (autrement dit, une méthode est appelée sur l’objet métier), le proxy ouvre une nouvelle connexion au serveur et le serveur crée une nouvelle instance de l’objet métier. Une fois que l’objet métier a répondu à la demande, le serveur détruit l’objet métier et ferme la connexion.  
@@ -40,7 +40,7 @@ ms.locfileid: "91720850"
 > [!NOTE]
 >  Ce comportement signifie que vous ne pouvez pas transmettre des données d’une requête à une autre à l’aide d’une variable ou d’une propriété d’objet métier. Vous devez utiliser un autre mécanisme, tel qu’un fichier ou un argument de méthode, pour conserver les données d’État.  
   
- ID de classe pour le **RDS. ** L’objet DataSpace est BD96C556-65A3-11D0-983A-00C04FC29E36.  
+ ID de classe pour le **RDS.** L’objet DataSpace est BD96C556-65A3-11D0-983A-00C04FC29E36.  
   
  L’objet **DataSpace** est sécurisé pour l’écriture de scripts.  
   

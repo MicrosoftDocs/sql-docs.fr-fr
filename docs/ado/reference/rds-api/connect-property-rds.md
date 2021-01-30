@@ -7,24 +7,24 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - Connect property [ADO]
 ms.assetid: dbad5e77-b213-4eb8-aecf-d60f203fdb59
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5387745648b4aafa1db9964a8b82d8aa403e8473
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 0307cc8b32eca807225356314f31d0aada5354bc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91722510"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169050"
 ---
 # <a name="connect-property-rds"></a>Connect, propriété (RDS)
 Indique le nom de la base de données à partir de laquelle les opérations de requête et de mise à jour sont exécutées.  
   
- Vous pouvez définir la propriété de **connexion** au moment du design dans le [RDS. ](./datacontrol-object-rds.md) Les balises d’objet de l’objet DataControl, ou au moment de l’exécution dans le code de script (par exemple, VBScript).  
+ Vous pouvez définir la propriété de **connexion** au moment du design dans le [RDS.](./datacontrol-object-rds.md) Les balises d’objet de l’objet DataControl, ou au moment de l’exécution dans le code de script (par exemple, VBScript).  
   
 > [!IMPORTANT]
 >  À compter de Windows 8 et de Windows Server 2012, les composants serveur RDS ne sont plus inclus dans le système d’exploitation Windows (pour plus d’informations, consultez le livre de recettes sur la compatibilité avec Windows 8 et [Windows server 2012](https://www.microsoft.com/download/details.aspx?id=27416) ). Les composants clients RDS seront supprimés dans une prochaine version de Windows. Évitez d'utiliser cette fonctionnalité dans de nouveaux travaux de développement, et prévoyez de modifier les applications qui utilisent actuellement cette fonctionnalité. Les applications qui utilisent RDS doivent migrer vers le [service de données WCF](/dotnet/framework/wcf/).  

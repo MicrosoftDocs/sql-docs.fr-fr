@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4d72a912-ef53-4989-9fca-214937574116
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e9119d48c6e19dcf94e3bac3105b2cad65f55f64
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 43a085931bfbb1d74a954f60430386c63acf9494
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88987040"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169925"
 ---
 # <a name="cubedef-example-vbscript"></a>Exemple avec CubeDef (VBScript)
 Cet exemple affiche les métadonnées d’un cube sur une page Web.  
@@ -42,8 +42,8 @@ Server.ScriptTimeout=360
 Dim cat,cdf,di,hi,le,mem,strServer,strSource,strCubeName  
   
 '************************************************************************  
-'*** Set Session Variables  
-'************************************************************************  
+'**_ Set Session Variables  
+'_***********************************************************************  
 Session("CubeName") = Request.Form("strCubeName")  
 Session("CatalogName") = Request.Form("strCatalogName")  
 Session("ServerName") = Request.Form("strServerName")  
@@ -52,17 +52,17 @@ Session("chkHier") =  Request.Form("chkHierarchy")
 Session("chkLev") =  Request.Form("chkLevel")  
   
 '************************************************************************  
-'*** Create Catalog Object  
-'************************************************************************************  
+'**_ Create Catalog Object  
+'_***********************************************************************************  
 Set cat = Server.CreateObject("ADOMD.Catalog")  
   
 If Len(Session("ServerName")) > 0 Then  
    cat.ActiveConnection = "Data Source=" & Session("ServerName") & ";Initial Catalog=" & Session("CatalogName") & ";Provider=msolap;"  
 Else  
 '************************************************************************************  
-'*** Must set OLAPServerName to OLAP Server that is  
-'*** present on network  
-'************************************************************************  
+'**_ Must set OLAPServerName to OLAP Server that is  
+'_*_ present on network  
+'_***********************************************************************  
 OLAPServerName = "Please set to present OLAP Server"  
    cat.ActiveConnection = "Data Source=" & OLAPServerName & _  
       ";Initial Catalog=FoodMart;Provider=msolap;"  
@@ -78,8 +78,8 @@ Else
 End if  
   
 '************************************************************************  
-'*** Collect Information in HTML Form  
-'************************************************************************  
+'**_ Collect Information in HTML Form  
+'_***********************************************************************  
 %>  
 <form action="ASPADOCubeDoc.asp" method="post" id="form1" name="form1">  
 <table>  
@@ -106,14 +106,14 @@ End if
 <%  
   
 '************************************************************************  
-'*** Start of Report  
-'************************************************************************  
+'**_ Start of Report  
+'_***********************************************************************  
 Response.Write "<H3>Report for " & Session("CubeName") & " Cube</H3>"  
 Response.Write "<OL TYPE='i'>"  
   
 '************************************************************************  
-'*** Show properties of Cube  
-'************************************************************************  
+'**_ Show properties of Cube  
+'_***********************************************************************  
             For i = 0 To cdf.Properties.Count - 1  
                Response.Write "<LI>"  
                Response.Write "<FONT size=-2>" & cdf.Properties(i).Name & ": " & cdf.Properties(i).Value & "</FONT>"  
@@ -121,9 +121,9 @@ Response.Write "<OL TYPE='i'>"
             Response.Write "</OL>"  
             Response.Write "<UL TYPE='SQUARE'>"     
  '************************************************************************  
-'*** Loop to display Dimension Name and Properties if Check box is   
-'*** Checked  
-'************************************************************************  
+'**_ Loop to display Dimension Name and Properties if Check box is   
+'_*_ Checked  
+'_***********************************************************************  
       For di = 0 To cdf.Dimensions.Count - 1  
          Response.Write "<LI>"  
          Response.Write "<FONT size=4><B>Dimension: " & _  
@@ -140,9 +140,9 @@ Response.Write "<OL TYPE='i'>"
          End If  
          Response.Write "<UL TYPE= 'Circle'>"  
 '************************************************************************  
-'*** Loop to display Hierarchy Name and Properties if Check box is   
-'*** Checked  
-'************************************************************************  
+'**_ Loop to display Hierarchy Name and Properties if Check box is   
+'_*_ Checked  
+'_***********************************************************************  
          For hi = 0 To cdf.Dimensions(di).Hierarchies.Count - 1  
             Response.Write "<LI>"  
             Response.Write "<FONT size=3><B>Hierarchy: " & _  
@@ -162,8 +162,8 @@ Response.Write "<OL TYPE='i'>"
             End If  
             Response.Write "<UL TYPE='Disc'>"  
 '************************************************************************  
-'*** Loop to display Level Name and Properties if Check box is Checked  
-'************************************************************************  
+'**_ Loop to display Level Name and Properties if Check box is Checked  
+'_***********************************************************************  
       For le = 0 To cdf.Dimensions(di).Hierarchies(hi).Levels.Count - 1  
                Response.Write "<LI>"  
                Response.Write "<FONT size=2><B>Level: " & _  

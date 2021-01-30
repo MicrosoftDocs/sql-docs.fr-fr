@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Stream::raw_SetEOS
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 707c18ca-6a56-4970-bbd6-ae1fb86a0b8a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3ebf47bdae6a879a3afe699be36081eb136b700e
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 0b9685f0ca0b5e9bdd1b484c7d424308619307d9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989130"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170281"
 ---
 # <a name="seteos-method"></a>SetEOS, méthode
 Définit la position qui correspond à la fin du flux.  

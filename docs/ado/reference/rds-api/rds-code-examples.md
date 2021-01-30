@@ -7,18 +7,18 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - RDS samples [ADO]
 ms.assetid: 59030e99-de9c-4506-a450-67dfcb6f7c00
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0379aeb7f26025f942ba1e303dfeaa4170f7319d
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: b5d517dfc1f6053f721372d47f7162be033b6ba1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724381"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168844"
 ---
 # <a name="rds-code-examples"></a>Exemples de code RDS
 > [!IMPORTANT]

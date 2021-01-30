@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _DynaCollection::Append
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f8a9bbed-ba9c-4698-945d-317ad22d2e92
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 84969b95751726579bdc7d4a61aee311b95b6108
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 03e454407c1b01b34ea918f81a404d579f8a3809
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976080"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167885"
 ---
 # <a name="append-method-ado"></a>Append, méthode (ADO)
 Ajoute un objet à une collection. Si la collection est de [champs](./fields-collection-ado.md), un nouvel objet de [champ](./field-object.md) peut être créé avant d’être ajouté à la collection.  
@@ -35,7 +35,7 @@ fields.Append Name, Type, DefinedSize, Attrib, FieldValue
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *collecte*  
+ *collection*  
  Objet de collection.  
   
  *fields*  
@@ -51,13 +51,13 @@ fields.Append Name, Type, DefinedSize, Attrib, FieldValue
  Valeur [DataTypeEnum](./datatypeenum.md) , dont la valeur par défaut est **adEmpty**, qui spécifie le type de données du nouveau champ. Les types de données suivants ne sont pas pris en charge par ADO et ne doivent pas être utilisés lors de l’ajout de nouveaux champs à un [objet Recordset (ADO)](./recordset-object-ado.md): **adIDispatch**, **adIUnknown**, **adVariant**.  
   
  *DefinedSize*  
- facultatif. Valeur de **type long** qui représente la taille définie, en caractères ou en octets, du nouveau champ. La valeur par défaut de ce paramètre est dérivée du *type*. Les champs qui ont une valeur *DefinedSize* supérieure à 255 octets sont traités comme des colonnes de longueur variable. La valeur par défaut de *DefinedSize* n’est pas spécifiée.  
+ Facultatif. Valeur de **type long** qui représente la taille définie, en caractères ou en octets, du nouveau champ. La valeur par défaut de ce paramètre est dérivée du *type*. Les champs qui ont une valeur *DefinedSize* supérieure à 255 octets sont traités comme des colonnes de longueur variable. La valeur par défaut de *DefinedSize* n’est pas spécifiée.  
   
  *Attrib*  
- facultatif. Valeur [FieldAttributeEnum](./fieldattributeenum.md) , dont la valeur par défaut est **adFldDefault**, qui spécifie les attributs du nouveau champ. Si vous ne spécifiez pas cette valeur, le champ contient des attributs dérivés du *type*.  
+ Facultatif. Valeur [FieldAttributeEnum](./fieldattributeenum.md) , dont la valeur par défaut est **adFldDefault**, qui spécifie les attributs du nouveau champ. Si vous ne spécifiez pas cette valeur, le champ contient des attributs dérivés du *type*.  
   
  *FieldValue*  
- facultatif. **Variant** qui représente la valeur du nouveau champ. S’il n’est pas spécifié, le champ est ajouté avec une valeur null.  
+ Facultatif. **Variant** qui représente la valeur du nouveau champ. S’il n’est pas spécifié, le champ est ajouté avec une valeur null.  
   
 ## <a name="remarks"></a>Notes  
   
@@ -72,15 +72,15 @@ fields.Append Name, Type, DefinedSize, Attrib, FieldValue
  Le paramètre *FieldValue* est valide uniquement lors de l’ajout d’un objet **champ** à un objet [Record](./record-object-ado.md) et non à un objet **Recordset** . Avec un objet **Record** , vous pouvez ajouter des champs et fournir des valeurs en même temps. Avec un objet **Recordset** , vous devez créer des champs lors de la fermeture du **Recordset** , puis ouvrir le **jeu d’enregistrements** et affecter des valeurs aux champs.  
   
 > [!NOTE]
->  Pour les nouveaux objets **Field** qui ont été ajoutés à la collection **Fields** d’un objet **Record** , la propriété [value](./value-property-ado.md) doit être définie avant que toutes les autres propriétés de **champ** puissent être spécifiées. Tout d’abord, une valeur spécifique pour la propriété **value** doit avoir été assignée et [mise à jour](./update-method.md) sur la collection **Fields** appelée. Ensuite, d’autres propriétés telles que le [type](./type-property-ado.md) ou les [attributs](./attributes-property-ado.md) sont accessibles. Les objets de **champ** des types de données suivants (**DataTypeEnum**) ne peuvent pas être ajoutés à la collection de **champs** et provoquent une erreur : **adArray**, **adChapter**, **adEmpty**, **adPropVariant**et **adUserDefined**. En outre, les types de données suivants ne sont pas pris en charge par ADO : **adIDispatch**, **adIUnknown**et **adIVariant**. Pour ces types, aucune erreur ne se produit lorsqu’il est ajouté, mais l’utilisation peut produire des résultats imprévisibles, notamment des fuites de mémoire.  
+>  Pour les nouveaux objets **Field** qui ont été ajoutés à la collection **Fields** d’un objet **Record** , la propriété [value](./value-property-ado.md) doit être définie avant que toutes les autres propriétés de **champ** puissent être spécifiées. Tout d’abord, une valeur spécifique pour la propriété **value** doit avoir été assignée et [mise à jour](./update-method.md) sur la collection **Fields** appelée. Ensuite, d’autres propriétés telles que le [type](./type-property-ado.md) ou les [attributs](./attributes-property-ado.md) sont accessibles. Les objets de **champ** des types de données suivants (**DataTypeEnum**) ne peuvent pas être ajoutés à la collection de **champs** et provoquent une erreur : **adArray**, **adChapter**, **adEmpty**, **adPropVariant** et **adUserDefined**. En outre, les types de données suivants ne sont pas pris en charge par ADO : **adIDispatch**, **adIUnknown** et **adIVariant**. Pour ces types, aucune erreur ne se produit lorsqu’il est ajouté, mais l’utilisation peut produire des résultats imprévisibles, notamment des fuites de mémoire.  
   
 ## <a name="recordset"></a>Ensemble d'enregistrements  
  Si vous ne définissez pas la [propriété CursorLocation](./cursorlocation-property-ado.md) avant d’appeler la méthode **Append** , **CursorLocation** prend automatiquement la **valeur adUseClient** (une valeur [CursorLocationEnum](./cursorlocationenum.md) ) lorsque la méthode [Open](./open-method-ado-recordset.md) de l’objet [Recordset](./recordset-object-ado.md) est appelée.  
   
- Une erreur d’exécution se produit si la méthode **Append** est appelée sur la collection **Fields** d’un **Recordset**ouvert ou sur un **Recordset** dans lequel la propriété [ActiveConnection](./activeconnection-property-ado.md) a été définie. Vous pouvez uniquement ajouter des champs à un **jeu d’enregistrements** qui n’est pas ouvert et qui n’a pas encore été connecté à une source de données. C’est généralement le cas lorsqu’un objet **Recordset** est fabriqué avec la méthode [CreateRecordset](../rds-api/createrecordset-method-rds.md) ou assigné à une variable objet.  
+ Une erreur d’exécution se produit si la méthode **Append** est appelée sur la collection **Fields** d’un **Recordset** ouvert ou sur un **Recordset** dans lequel la propriété [ActiveConnection](./activeconnection-property-ado.md) a été définie. Vous pouvez uniquement ajouter des champs à un **jeu d’enregistrements** qui n’est pas ouvert et qui n’a pas encore été connecté à une source de données. C’est généralement le cas lorsqu’un objet **Recordset** est fabriqué avec la méthode [CreateRecordset](../rds-api/createrecordset-method-rds.md) ou assigné à une variable objet.  
   
-## <a name="record"></a>Enregistrement  
- Une erreur au moment de l’exécution ne se produit pas si la méthode **Append** est appelée sur la collection **Fields** d’un **enregistrement**ouvert. Le nouveau champ est ajouté à la collection **Fields** de l’objet **Record** . Si l' **enregistrement** est dérivé d’un **Recordset**, le nouveau champ n’apparaît pas dans la collection de **champs** de l’objet **Recordset** .  
+## <a name="record"></a>Enregistrer  
+ Une erreur au moment de l’exécution ne se produit pas si la méthode **Append** est appelée sur la collection **Fields** d’un **enregistrement** ouvert. Le nouveau champ est ajouté à la collection **Fields** de l’objet **Record** . Si l' **enregistrement** est dérivé d’un **Recordset**, le nouveau champ n’apparaît pas dans la collection de **champs** de l’objet **Recordset** .  
   
  Un champ inexistant peut être créé et ajouté à la collection de **champs** en affectant une valeur à l’objet de champ comme s’il existait déjà dans la collection. L’assignation déclenchera la création et l’ajout automatiques de l’objet **Field** , puis l’affectation sera terminée.  
   

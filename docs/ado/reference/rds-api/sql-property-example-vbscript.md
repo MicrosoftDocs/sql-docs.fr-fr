@@ -7,7 +7,7 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 32c33bcf-3320-4836-9e2e-99c8978ce581
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d201fab02450bb5972d45edaba71d413ded47c26
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 62495442c20e4205e9fad2e5c650e09a87777328
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724206"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168771"
 ---
 # <a name="sql-property-example-vbscript"></a>SQL, exemple de propriété (VBScript)
 > [!IMPORTANT]
 >  À compter de Windows 8 et de Windows Server 2012, les composants serveur RDS ne sont plus inclus dans le système d’exploitation Windows (pour plus d’informations, consultez le livre de recettes sur la compatibilité avec Windows 8 et [Windows server 2012](https://www.microsoft.com/download/details.aspx?id=27416) ). Les composants clients RDS seront supprimés dans une prochaine version de Windows. Évitez d'utiliser cette fonctionnalité dans de nouveaux travaux de développement, et prévoyez de modifier les applications qui utilisent actuellement cette fonctionnalité. Les applications qui utilisent RDS doivent migrer vers le [service de données WCF](/dotnet/framework/wcf/).  
   
- Le code suivant montre comment définir le [RDS. ](./datacontrol-object-rds.md) Paramètre SQL de DataControl au moment du design et liez-le à un contrôle prenant en charge les données à l’aide de la base de données nommée *pubs*, qui est fournie avec Microsoft SQL Server. Pour tester l’exemple, copiez le code suivant dans un document ASP normal nommé **SQLDesignVBS. asp** sur votre serveur Web.  
+ Le code suivant montre comment définir le [RDS.](./datacontrol-object-rds.md) Paramètre SQL de DataControl au moment du design et liez-le à un contrôle prenant en charge les données à l’aide de la base de données nommée *pubs*, qui est fournie avec Microsoft SQL Server. Pour tester l’exemple, copiez le code suivant dans un document ASP normal nommé **SQLDesignVBS. asp** sur votre serveur Web.  
   
 ```  
 <!-- BeginSQLDesignVBS -->  

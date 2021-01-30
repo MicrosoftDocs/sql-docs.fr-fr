@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 440dbdb1-16fc-4cfe-9451-59a153852537
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 64493bab591d4f7a34a5e189a88189664156b63d
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: d3f433434833ee07e4ebbf999e2ef2ca122f44fc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988250"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170069"
 ---
 # <a name="type-property-example-field-vc"></a>Type, exemple de propriété (objet Field) (VC++)
-Cet exemple illustre la propriété [type](./type-property-ado.md) en affichant le nom de la constante qui correspond à la valeur de la propriété **type** de tous les objets [Field](./field-object.md) de la table ***Employees*** . La fonction FieldType est requise pour l’exécution de cette procédure.  
+Cet exemple illustre la propriété [type](./type-property-ado.md) en affichant le nom de la constante qui correspond à la valeur de la propriété **type** de tous les objets [Field](./field-object.md) de la table **_Employees_* _. La fonction FieldType est requise pour l’exécution de cette procédure.  
   
 ## <a name="example"></a>Exemple  
   
@@ -154,7 +154,7 @@ void PrintComError(_com_error &e) {
 }  
 ```  
   
- **Champs de la table Employee :**  
+ _ *Champs de la table Employee :**  
  **Nom : emp_id**  
  **Type : adChar**  
  **Nom : fname**  

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Stream
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0514531f-009d-4519-abc3-d727014a39f1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 619d9d307e26829ffa74a24c6904fa84889f476f
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 6d18917bdcc0a08c5fbddcc1ff908c5aed8ca1f9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988590"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170172"
 ---
 # <a name="stream-object-ado"></a>Stream, objet (ADO)
 Représente un flux de données binaires ou de texte.  

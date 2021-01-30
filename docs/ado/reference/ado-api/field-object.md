@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Field
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b10a72fc-3c4b-4186-a70b-993dc9f7a092
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4768281228e39ed8eeb6ffc003e463bf8a53450d
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 6042032018ea75eb7b2b13bb677ad48dca56290b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88973230"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167380"
 ---
 # <a name="field-object"></a>Objet Field
 Représente une colonne de données avec un type de données commun.  
@@ -47,7 +47,7 @@ Représente une colonne de données avec un type de données commun.
   
 -   Si le fournisseur prend en charge les mises à jour par lot, résolvez les incohérences dans les valeurs de champ lors de la mise à jour par lot avec les propriétés [OriginalValue](../../../ado/reference/ado-api/originalvalue-property-ado.md) et [UnderlyingValue](../../../ado/reference/ado-api/underlyingvalue-property.md) .  
   
- Toutes les propriétés de métadonnées (**Name**, **type**, **DefinedSize**, **PRECISION**et **NumericScale**) sont disponibles avant l’ouverture du **Recordset**de l’objet **Field** . Leur définition à ce moment est utile pour la construction dynamique de formulaires.  
+ Toutes les propriétés de métadonnées (**Name**, **type**, **DefinedSize**, **PRECISION** et **NumericScale**) sont disponibles avant l’ouverture du **Recordset** de l’objet **Field** . Leur définition à ce moment est utile pour la construction dynamique de formulaires.  
   
  Cette section contient la rubrique suivante.  
   

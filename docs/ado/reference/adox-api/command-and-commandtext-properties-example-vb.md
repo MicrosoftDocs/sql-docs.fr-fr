@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 413263a8-05c0-4404-929d-69f82b987ba3
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d9c7e2e07397935d871f4e7891a470d5fa97d0ba
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 56f38d75c5ab05333e1f78e3b77b16b1f4c3be03
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88984990"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169463"
 ---
 # <a name="command-and-commandtext-properties-example-vb"></a>Command et CommandText, exemples de propriétés (VB)
 Le code suivant montre comment utiliser la propriété [Command](./command-property-adox.md) pour mettre à jour le texte d’une procédure.  

@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ADO MD, properties
 - properties [ADO MD]
 ms.assetid: 11ca7e42-ab6a-47da-ab32-55abab663069
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1ffc556d5c4138f35b1831a8aebeb15622328d4c
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: ed3add4b0920c493e7f83ccad14032a1ff227166
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97637859"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170011"
 ---
 # <a name="ado-md-properties"></a>Propriétés ADO MD
 

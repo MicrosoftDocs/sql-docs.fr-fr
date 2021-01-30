@@ -7,18 +7,18 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ADO MD, object model
 ms.assetid: 6242b374-091b-406f-827a-c0dcd3e1967a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ed7b8c7dec95183dc66204ca63cc3bf6951d4bf3
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 7863e32f6da1a7dbb6e8e3befaa8569c17b5709f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97639742"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170040"
 ---
 # <a name="ado-md-object-model"></a>Modèle objet ADO MD
 Cette rubrique décrit comment les objets sont représentés et associés dans ADO MD.  

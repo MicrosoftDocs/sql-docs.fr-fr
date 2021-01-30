@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - GetSchemaObject
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 36b754b4-6b17-4dd1-a925-bca46938b7c4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4031b9dbe100df7e73c64354888ffa97cf38c30c
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 047455edb47650cedeae8ffbd5965e4cc82be940
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88986690"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169835"
 ---
 # <a name="getschemaobject-method-ado-md"></a>GetSchemaObject, méthode (ADO MD)
 Récupère un objet de schéma ADO MD ([dimension](./dimension-object-ado-md.md), [hiérarchie](./hierarchy-object-ado-md.md), [niveau](./level-object-ado-md.md)ou [membre](./member-object-ado-md.md)) par son [UniqueName](./uniquename-property-ado-md.md).  

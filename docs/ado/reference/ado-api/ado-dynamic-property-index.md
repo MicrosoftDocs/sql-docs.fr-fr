@@ -6,18 +6,18 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - dynamic properties [ADO], index
 ms.assetid: 80d389dd-46ef-459f-b0d4-6f712fc4f32d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: bbf4cdae12da71f5fc4d3b8fbc11b7ca64c46c5b
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 4d3d765cbeba49a5c34bbc5529d833cefc5bb1ab
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976490"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167906"
 ---
 # <a name="ado-dynamic-property-index"></a>Index des propriétés dynamiques ADO
 Les fournisseurs de données, les fournisseurs de services et les composants de service peuvent ajouter des propriétés dynamiques aux collections de **Propriétés** de la [connexion](./connection-object-ado.md) et des objets [Recordset](./recordset-object-ado.md) inouverts. Un fournisseur donné peut également insérer des propriétés supplémentaires quand ces objets sont ouverts. Certaines de ces propriétés sont répertoriées dans la section [propriétés dynamiques ADO](./ado-dynamic-properties.md) . D’autres sont répertoriés sous les fournisseurs spécifiques dans la section [annexe A : fournisseurs](../../guide/appendixes/appendix-a-providers.md) .  
@@ -48,7 +48,7 @@ Les fournisseurs de données, les fournisseurs de services et les composants de 
 |Prise en charge de GROUP BY|DBPROP_GROUPBY|  
 |Prise en charge des tables hétérogènes|DBPROP_HETEROGENEOUSTABLES|  
 |Respect de la casse des identificateurs|DBPROP_IDENTIFIERCASE|  
-|Catalogue initial|DBPROP_INIT_CATALOG|  
+|Initial Catalog|DBPROP_INIT_CATALOG|  
 |Niveaux d’isolation|DBPROP_SUPPORTEDTXNISOLEVELS|  
 |Rétention de l’isolation|DBPROP_SUPPORTEDTXNISORETAIN|  
 |Identificateur de paramètres régionaux|DBPROP_INIT_LCID|  
@@ -77,11 +77,11 @@ Les fournisseurs de données, les fournisseurs de services et les composants de 
 |Comportement de préparation d’abandon|DBPROP_PREPAREABORTBEHAVIOR|  
 |Préparer le comportement de validation|DBPROP_PREPARECOMMITBEHAVIOR|  
 |Terme de procédure|DBPROP_PROCEDURETERM|  
-|Prompt|DBPROP_INIT_PROMPT|  
+|Invite|DBPROP_INIT_PROMPT|  
 |Nom convivial du fournisseur|DBPROP_PROVIDERFRIENDLYNAME|  
 |Nom du fournisseur|DBPROP_PROVIDERFILENAME|  
 |Version du fournisseur|DBPROP_PROVIDERVER|  
-|Source de données en lecture seule|DBPROP_DATASOURCEREADONLY|  
+|Read-Only source de données|DBPROP_DATASOURCEREADONLY|  
 |Conversions d’ensemble de lignes sur la commande|DBPROP_ROWSETCONVERSIONSONCOMMAND|  
 |Terme de schéma|DBPROP_SCHEMATERM|  
 |Utilisation du schéma|DBPROP_SCHEMAUSAGE|  
@@ -126,7 +126,7 @@ Les fournisseurs de données, les fournisseurs de services et les composants de 
 |IStream|DBPROP_ISTREAM|  
 |ISupportErrorInfo|DBPROP_ISUPPORTERRORINFO|  
 |Ordre d’accès|DBPROP_ACCESSORDER|  
-|Ensemble de lignes Append uniquement|DBPROP_APPENDONLY|  
+|Ensemble de lignes Append-Only|DBPROP_APPENDONLY|  
 |Traitement de l’ensemble de lignes asynchrone|DBPROP_ROWSET_ASYNCH|  
 |Recalcul automatique|DBPROP_ADC_AUTORECALC|  
 |Taille de l’extraction en arrière-plan|DBPROP_ASYNCHFETCHSIZE|  

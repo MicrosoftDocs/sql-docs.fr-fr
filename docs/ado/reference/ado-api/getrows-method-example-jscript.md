@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - JScript
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d33467a5-5a56-450d-98c1-c3ce6f9f103c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 33918b473c2c1c556a29dfcfd7f8cfde4cc8e5a3
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 992255020a1188507fc64cccb12f9d19061c56fa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990900"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167268"
 ---
 # <a name="getrows-method-example-jscript"></a>GetRows, exemple de méthode (JScript)
 Cet exemple utilise la méthode [GetRows](./getrows-method-ado.md) pour récupérer toutes les lignes de la table *Custiomers* à partir d’un [jeu d’enregistrements](./recordset-object-ado.md) et pour remplir un tableau avec les données résultantes. La méthode **GetRows** retourne moins de lignes que le nombre souhaité dans deux cas : si [EOF](./bof-eof-properties-ado.md) a été atteint ou si **GetRows** a tenté de récupérer un enregistrement qui a été supprimé par un autre utilisateur. La fonction retourne **false** uniquement si le second cas se produit. Coupez et collez le code suivant dans le bloc-notes ou dans un autre éditeur de texte, puis enregistrez-le en tant que **GetRowsJS. asp**.  

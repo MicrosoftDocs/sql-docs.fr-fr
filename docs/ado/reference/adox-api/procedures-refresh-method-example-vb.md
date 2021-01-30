@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 499679bd-287b-487d-bdfb-3803abffec1c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 757c410982f43258f25729f5e88a5705c1ca814d
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: ebe7301fe71d90033aeee5ec72b9a23bcaa922be
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88983490"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169239"
 ---
 # <a name="procedures-refresh-method-example-vb"></a>Procedures, exemple de méthode Refresh (VB)
 Le code suivant montre comment actualiser la collection [procedures](./procedures-collection-adox.md) d’un [catalogue](./catalog-object-adox.md). Cela est nécessaire avant d’accéder aux objets de [procédure](./procedure-object-adox.md) du **catalogue** .  

@@ -6,7 +6,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 619bc7fd-ad0a-44ea-9678-ad40a662c258
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 86a57e675d9ba53334bea806d8c787c21f85b5d1
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: faea3ba69a0a1f0f5a1aedc6bd48dca137ff391c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724185"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168759"
 ---
 # <a name="submitchanges-method-example-vbscript"></a>SubmitChanges, exemple de méthode (VBScript)
 > [!IMPORTANT]

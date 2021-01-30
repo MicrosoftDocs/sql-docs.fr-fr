@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset15::CancelUpdate
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: eaa856cc-c786-462e-890c-c896261b1741
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2355d2a0b2ff0bbe14eb9b7d2a9a373164a4f5e5
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 12ec3d30de9fc938d51ea342c468b522674b0086
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88975560"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167794"
 ---
 # <a name="cancelupdate-method-ado"></a>CancelUpdate, méthode (ADO)
 Annule toutes les modifications apportées à la ligne actuelle ou nouvelle d’un objet [Recordset](./recordset-object-ado.md) , ou à la collection [Fields](./fields-collection-ado.md) d’un objet [Record](./record-object-ado.md) , avant d’appeler la méthode [Update](./update-method.md) .  
@@ -42,7 +42,7 @@ recordset.CancelUpdaterecord.Fields.CancelUpdate
   
  Si vous êtes en mode édition et que vous souhaitez quitter l’enregistrement actif (par exemple, à l’aide des méthodes [Move](./move-method-ado.md), [NextRecordset](./nextrecordset-method-ado.md)ou [Close](./close-method-ado.md) ), vous pouvez utiliser **CancelUpdate** pour annuler les modifications en attente. Vous devrez peut-être effectuer cette opération si la mise à jour ne peut pas être publiée avec succès dans la source de données. Par exemple, une tentative de suppression qui échoue en raison de violations d’intégrité référentielle laisse le **Recordset** en mode édition après un appel à [Delete](./delete-method-ado-recordset.md).  
   
-## <a name="record"></a>Enregistrement  
+## <a name="record"></a>Enregistrer  
  La méthode **CancelUpdate** annule les insertions ou les suppressions en attente des objets [Field](./field-object.md) , et annule les mises à jour en attente des champs existants et les restaure à leurs valeurs d’origine. La propriété [Status](./status-property-ado-recordset.md) de tous les champs de la collection **Fields** a la valeur **adFieldOK**.  
   
 ## <a name="applies-to"></a>S'applique à  

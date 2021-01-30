@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - Handler property [ADO]
 ms.assetid: fdc34362-6d47-4727-b171-8d033159408e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5dc5a8cfc455d27a2bb17b40585e3e38cdd581cf
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 7562c5ddc3a8360f2c8672e7526c86b7f77af04d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91722048"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168904"
 ---
 # <a name="handler-property-rds"></a>Handler, propriété (RDS)
 Indique le nom d’un programme de personnalisation côté serveur (gestionnaire) qui étend les fonctionnalités de [RDSServer. DataFactory](./datafactory-object-rdsserver.md)et de tous les paramètres utilisés par le *Gestionnaire*.  
@@ -48,7 +48,7 @@ DataControl.Handler = String
   
  Le nom du gestionnaire et ses paramètres, le cas échéant, sont séparés par des virgules (","). Un comportement imprévisible se produira si un point-virgule (« ; ») apparaît n’importe où dans la *chaîne*. Vous pouvez écrire votre propre gestionnaire, à condition qu’il prenne en charge l’interface **IDataFactoryHandler** .  
   
- Le nom du gestionnaire par défaut est **msdfmap. Et son**paramètre par défaut est un fichier de personnalisation nommé **MSDFMAP.INI**. Utilisez cette propriété pour appeler d’autres fichiers de personnalisation créés par l’administrateur du serveur.  
+ Le nom du gestionnaire par défaut est **msdfmap. Et son** paramètre par défaut est un fichier de personnalisation nommé **MSDFMAP.INI**. Utilisez cette propriété pour appeler d’autres fichiers de personnalisation créés par l’administrateur du serveur.  
   
  L’alternative à la définition de la propriété de **Gestionnaire** consiste à spécifier un gestionnaire et des paramètres dans la propriété [ConnectionString](../ado-api/connectionstring-property-ado.md) . autrement dit, «**handler =**_HandlerName, paramètre1, paramètre2,...;_».  
   

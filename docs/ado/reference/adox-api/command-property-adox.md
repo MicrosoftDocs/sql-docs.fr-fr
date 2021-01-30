@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Procedure::Command
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: bcc9146f-586f-4e69-9c10-863440c9cffa
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 73224966d9cab18253c18dd4f8bb183cd3381f76
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 639df02036554d9c0276a8040a4bdbde183ced53
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88984910"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169461"
 ---
 # <a name="command-property-adox"></a>Command, propriété (ADOX)
 Spécifie un objet de [commande](../ado-api/command-object-ado.md) ADO qui peut être utilisé pour créer ou exécuter la procédure.  

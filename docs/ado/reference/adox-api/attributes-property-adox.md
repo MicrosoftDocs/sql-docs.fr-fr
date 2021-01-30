@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Column::put_Attributes
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: e3abb359-79a3-4c22-b3a8-2900817e0d23
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3f4843dd8ad51f79a178df422ff1a3a3e58a8e94
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: fd868bc3b2fba2f59a4fa75abc2b2865fe1dd41d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88985320"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169557"
 ---
 # <a name="attributes-property-adox"></a>Attributes, propriété (ADOX)
 Décrit les caractéristiques de colonne.  

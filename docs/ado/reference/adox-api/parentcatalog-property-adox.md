@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _User::get_ParentCatalog
@@ -41,12 +41,12 @@ helpviewer_keywords:
 ms.assetid: a0bb2ed8-d4cb-4f92-8de7-769bbe0e6273
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 07e4cdabe09b2bc4af8e849ef367df65c23711ca
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 720d3f5a04d17664b7fa486d084a9d443bd5f2e4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88983770"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169293"
 ---
 # <a name="parentcatalog-property-adox"></a>ParentCatalog, propriété (ADOX)
 Spécifie le catalogue parent d’un objet table, User ou Column pour permettre l’accès aux propriétés spécifiques au fournisseur.  

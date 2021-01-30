@@ -7,18 +7,18 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 11/09/2018
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - RDS API reference [ADO]
 ms.assetid: ca9fa99e-1a9f-4deb-80d4-6942555fb22a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: eb25bfb3a6536c5af5fb9801f617f0e9d4a653f1
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 5df64003a33f98ca1dd92fff62cb47e598cb6c0e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724425"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168867"
 ---
 # <a name="rds-api-reference"></a>Référence sur l’API RDS
 > [!IMPORTANT]

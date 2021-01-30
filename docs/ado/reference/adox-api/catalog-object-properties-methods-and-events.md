@@ -7,18 +7,18 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Catalog object [ADOX], members
 ms.assetid: 90a05168-87d0-45e8-8b32-0b64fec74ad2
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4fea808a9565f93f97a6e149936383f60a95c977
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 3173dc9623c10bf24e80ebee98810a04c199d9e8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88985299"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169531"
 ---
 # <a name="catalog-object-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet Catalog
 ## <a name="propertiescollections"></a>Propriétés/collections  

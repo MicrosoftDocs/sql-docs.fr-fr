@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 02/15/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - Field collection [ADO], ADO/WFC syntax
 ms.assetid: 7e01cb24-2338-4f92-ad46-8d97248e1a4d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b9b35f89911c0b016c52eed00f8165b767968180
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 2bfcf230d897274c45621dd404c9ed2816946812
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88973250"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167389"
 ---
 # <a name="field-ado---wfc-syntax"></a>Field (ADO - syntaxe WFC)
 ## <a name="package-commswfcdata"></a>package com. ms. wfc. Data  
@@ -69,7 +69,7 @@ public AdoProperties getProperties()
   
  ADO/WFC implémente la propriété **value** avec la méthode **GetValue** , qui retourne un objet variant ; et la méthode **SetValue** , qui prend une variante comme argument. Les VARIANTEs sont très efficaces dans certains langages, tels que Microsoft Visual Basic.  
   
- En plus de la propriété **value** , ADO/WFC fournit des méthodes d' *accesseur* qui utilisent des types de données Java pour récupérer et définir le contenu des objets **Field** . La plupart de ces méthodes ont des noms au format **obtenir**le_type de données_ ou **définir**le type de_données_.  
+ En plus de la propriété **value** , ADO/WFC fournit des méthodes d' *accesseur* qui utilisent des types de données Java pour récupérer et définir le contenu des objets **Field** . La plupart de ces méthodes ont des noms au format **obtenir** le _type de données_ ou **définir** le type de _données_.  
   
  Il existe deux exceptions intéressantes : l’une des méthodes **GetObject** retourne un objet forcé dans une classe spécifiée. Il n’existe aucune propriété **getNull** ; au lieu de cela, il existe une propriété **IsNull** qui retourne une valeur booléenne indiquant si le champ est null.  
   

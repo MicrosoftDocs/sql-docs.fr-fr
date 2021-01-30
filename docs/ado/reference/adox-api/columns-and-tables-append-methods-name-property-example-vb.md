@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 678e5546-df5d-4cd0-bfe9-6cf13cb385c0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ef7ac3ff021f31123c1ecaf550f174f69af4b0b7
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: bcc0e222e420a8e7f324292ab893cad5b2e80767
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88985040"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169483"
 ---
 # <a name="columns-and-tables-append-methods-name-property-example-vb"></a>Append, méthode des collections Columns et Tables, Name (exemple de propriété) (VB)
 Le code suivant montre comment créer une nouvelle table.  

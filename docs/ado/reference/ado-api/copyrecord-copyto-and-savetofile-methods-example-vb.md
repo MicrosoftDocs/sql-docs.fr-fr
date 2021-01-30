@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 61a51b74-93cd-439c-877f-f3055499d39f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1db7959c2a36f0595e8861926adce079b8864544
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 9082a8f6f32db01913437607dc12bb8758f7b93f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88974640"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167676"
 ---
 # <a name="copyrecord-copyto-and-savetofile-methods-example-vb"></a>CopyRecord, CopyTo et SaveToFile, exemple de méthodes (VB)
 Cet exemple montre comment créer des copies d’un fichier à l’aide d’objets [Stream](./stream-object-ado.md) ou [Record](./record-object-ado.md) . Une copie est effectuée dans un dossier Web pour la publication Internet. Les autres propriétés et méthodes présentées incluent [Stream type](./type-property-ado-stream.md), **Open**, [LoadFromFile](./loadfromfile-method-ado.md)et [Record Open](./open-method-ado-record.md).  

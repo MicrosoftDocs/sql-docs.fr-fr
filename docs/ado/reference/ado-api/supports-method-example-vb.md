@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 135aab26-ff5c-4fd9-910f-65cdead0b47e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 749137891e00e52f0ed2e321c689e8f4ae923f73
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: ebd897f7c3de447afe13dea57c9e41e5b6b494fe
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988360"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170097"
 ---
 # <a name="supports-method-example-vb"></a>Supports, exemple de méthode (VB)
 Cet exemple utilise la méthode [supports](./supports-method.md) pour afficher les options prises en charge par un jeu d’enregistrements ouvert avec différents types de curseurs. La procédure DisplaySupport est requise pour l’exécution de cette procédure.  

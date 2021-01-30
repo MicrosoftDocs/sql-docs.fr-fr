@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -20,18 +20,18 @@ helpviewer_keywords:
 ms.assetid: 8a74802f-34d6-4676-bf94-07df5f8bff66
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 822a75b3f487b72e8b35cc1589271fe89496e0e6
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: d0008772cf116385ca5ccedb5fb5d5bad694ce45
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91722300"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168947"
 ---
 # <a name="filtercolumn-filtercriterion-filtervalue-sortcolumn-and-sortdirection-properties-and-reset-method-example-vbscript"></a>FilterColumn, FilterCriterion, FilterValue, SortColumn et SortDirection propriétés et Reset, exemple de méthode (VBScript)
 > [!IMPORTANT]
 >  À compter de Windows 8 et de Windows Server 2012, les composants serveur RDS ne sont plus inclus dans le système d’exploitation Windows (pour plus d’informations, consultez le livre de recettes sur la compatibilité avec Windows 8 et [Windows server 2012](https://www.microsoft.com/download/details.aspx?id=27416) ). Les composants clients RDS seront supprimés dans une prochaine version de Windows. Évitez d'utiliser cette fonctionnalité dans de nouveaux travaux de développement, et prévoyez de modifier les applications qui utilisent actuellement cette fonctionnalité. Les applications qui utilisent RDS doivent migrer vers le [service de données WCF](/dotnet/framework/wcf/).  
   
- Le code suivant montre comment définir le [RDS. ](./datacontrol-object-rds.md)Le paramètre de **serveur** DataControl sur designtime et le lie à une table HTML qui prend en charge les données à l’aide d’une source de données. Coupez et collez le code suivant dans le bloc-notes ou un autre éditeur de texte, puis enregistrez-le en tant que **FilterColumnVBS. asp**.  
+ Le code suivant montre comment définir le [RDS.](./datacontrol-object-rds.md)Le paramètre de **serveur** DataControl sur designtime et le lie à une table HTML qui prend en charge les données à l’aide d’une source de données. Coupez et collez le code suivant dans le bloc-notes ou un autre éditeur de texte, puis enregistrez-le en tant que **FilterColumnVBS. asp**.  
   
 ```  
 <!-- BeginFilterColumnVBS -->  
@@ -91,7 +91,7 @@ Filter Criterion: <SELECT NAME="cboCriterion">
               <br>  
 Filter Value: <INPUT NAME="txtFilterValue">  
 <HR WIDTH="25%">  
-<INPUT TYPE=BUTTON NAME=Clear VALUE="CLEAR ALL">    
+<INPUT TYPE=BUTTON NAME=Clear VALUE="CLEAR ALL">    
 <INPUT TYPE=BUTTON NAME=SortFilter VALUE="APPLY">  
   
 <HR>  

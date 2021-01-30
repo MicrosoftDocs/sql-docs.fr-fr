@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset15::raw_Find
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 55c9810a-d8ca-46c2-a9dc-80e7ee7aa188
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 18b4dc88dfedbb5a9a06968ebb5b02300439ed1b
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 8f581b2c4b4861c852a9e5a24aec5a219ee098f4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88972950"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167317"
 ---
 # <a name="find-method-ado"></a>Find, méthode (ADO)
 Recherche dans un [Recordset](./recordset-object-ado.md) la ligne qui répond aux critères spécifiés. Éventuellement, la direction de la recherche, la ligne de départ et le décalage à partir de la ligne de départ peuvent être spécifiés. Si les critères sont satisfaits, la position de ligne actuelle est définie sur l’enregistrement trouvé ; dans le cas contraire, la position est définie à la fin (ou au début) du **Recordset**.  
@@ -39,13 +39,13 @@ Find (Criteria, SkipRows, SearchDirection, Start)
  Valeur de **chaîne** qui contient une instruction spécifiant le nom de colonne, l’opérateur de comparaison et la valeur à utiliser dans la recherche.  
   
  *SkipRows*  
- facultatif. Valeur de **type long** , dont la valeur par défaut est zéro, qui spécifie l’offset de ligne à partir de la ligne actuelle ou du signet de *début* pour commencer la recherche. Par défaut, la recherche commence sur la ligne actuelle.  
+ Facultatif. Valeur de **type long** , dont la valeur par défaut est zéro, qui spécifie l’offset de ligne à partir de la ligne actuelle ou du signet de *début* pour commencer la recherche. Par défaut, la recherche commence sur la ligne actuelle.  
   
  *SearchDirection*  
- facultatif. Valeur de [SearchDirectionEnum](./searchdirectionenum.md) qui spécifie si la recherche doit commencer sur la ligne actuelle ou sur la ligne suivante disponible dans le sens de la recherche. Une recherche ayant échoué s’arrête à la fin de l’ensemble d' **enregistrements** si la valeur est **adSearchForward**. Une recherche ayant échoué s’arrête au début de l’ensemble d' **enregistrements** si la valeur est **adSearchBackward**.  
+ Facultatif. Valeur de [SearchDirectionEnum](./searchdirectionenum.md) qui spécifie si la recherche doit commencer sur la ligne actuelle ou sur la ligne suivante disponible dans le sens de la recherche. Une recherche ayant échoué s’arrête à la fin de l’ensemble d' **enregistrements** si la valeur est **adSearchForward**. Une recherche ayant échoué s’arrête au début de l’ensemble d' **enregistrements** si la valeur est **adSearchBackward**.  
   
  *Start*  
- facultatif. Signet de **variante** qui fonctionne comme position de départ pour la recherche.  
+ Facultatif. Signet de **variante** qui fonctionne comme position de départ pour la recherche.  
   
 ## <a name="remarks"></a>Notes  
  Seul un nom de colonne unique peut être spécifié dans *critères*. Cette méthode ne prend pas en charge les recherches sur plusieurs colonnes.  
@@ -70,5 +70,5 @@ Find (Criteria, SkipRows, SearchDirection, Start)
 ## <a name="see-also"></a>Voir aussi  
  [Find, exemple de méthode (VB)](./find-method-example-vb.md)   
  [Propriété d’index](./index-property.md)   
- [Optimize, propriété dynamique (ADO)](./optimize-property-dynamic-ado.md)   
+ [Property-Dynamic d’optimisation (ADO)](./optimize-property-dynamic-ado.md)   
  [Seek, méthode](./seek-method.md)

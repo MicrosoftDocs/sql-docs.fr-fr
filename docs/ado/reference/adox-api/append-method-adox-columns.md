@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Columns::raw_Append
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 7a46d23c-efef-4ec7-815d-cd3ac86787dd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1c959f6d822724ee6e7480cf00941aaa1fc8012a
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 40abf0ae298b469d0814e8dd3da85a8c8865be78
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88985500"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169602"
 ---
 # <a name="append-method-adox-columns"></a>Append, méthode (colonnes ADOX)
 Ajoute un nouvel objet [Column](./column-object-adox.md) à la collection [Columns](./columns-collection-adox.md) .  
@@ -39,10 +39,10 @@ Columns.Append Column [,Type] [,DefinedSize]
  Objet de **colonne** à ajouter ou nom de la colonne à créer et à ajouter.  
   
  *Type*  
- facultatif. Valeur de type **long** qui spécifie le type de données de la colonne. Le paramètre de *type* correspond à la propriété de [type](./type-property-column-adox.md) d’un objet de **colonne** .  
+ Facultatif. Valeur de type **long** qui spécifie le type de données de la colonne. Le paramètre de *type* correspond à la propriété de [type](./type-property-column-adox.md) d’un objet de **colonne** .  
   
  *DefinedSize*  
- facultatif. Valeur de **type long** qui spécifie la taille de la colonne. Le paramètre *DefinedSize* correspond à la propriété [DefinedSize](./definedsize-property-adox.md) d’un objet **Column** .  
+ Facultatif. Valeur de **type long** qui spécifie la taille de la colonne. Le paramètre *DefinedSize* correspond à la propriété [DefinedSize](./definedsize-property-adox.md) d’un objet **Column** .  
   
 > [!NOTE]
 >  Une erreur se produit lors de l’ajout d’une **colonne** à la collection **Columns** d’un [index](./index-object-adox.md) si la **colonne** n’existe pas dans une [table](./table-object-adox.md) qui est déjà ajoutée à la collection [tables](./tables-collection-adox.md) .  

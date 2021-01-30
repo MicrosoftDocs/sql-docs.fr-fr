@@ -7,7 +7,7 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0fe57af9-a4d0-4986-a2e3-beaa4d26ed58
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e078fcd743094e3b0f469f4e0d82dd1eb021bb76
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 6439899c60a5dee7c1276a094e6c41c09a35f543
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724248"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168783"
 ---
 # <a name="server-property-example-vbscript"></a>Server, exemple de propriété (VBScript)
 > [!IMPORTANT]

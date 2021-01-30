@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Key::GetType
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 8ca2f1fd-eb1e-490c-a28b-67eda92e0fc7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ced8d2083fe4c6d34c752cc77d54f9f1a5e2569e
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: f87e422c42a0421fbdf12eb9b51ade82e9cfe9c2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88983110"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169160"
 ---
 # <a name="type-property-key-adox"></a>Type, propriété (clé) (ADOX)
 Indique le type de la clé.  

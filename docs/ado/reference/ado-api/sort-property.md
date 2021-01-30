@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset15::get_Sort
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 3683ffa0-6f93-4906-9533-ef6942f24f39
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9397d99d2d020fcf2c703bd96420ee4af4b1a610
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 57f46248dc23d92752a6354a557285daeaf0a0f8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988990"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170243"
 ---
 # <a name="sort-property"></a>Sort, propriété
 Indique un ou plusieurs noms de champs sur lesquels le [Recordset](./recordset-object-ado.md) est trié, et indique si chaque champ est trié par ordre croissant ou décroissant.  
@@ -46,7 +46,7 @@ Indique un ou plusieurs noms de champs sur lesquels le [Recordset](./recordset-o
   
  Si vous affectez une chaîne vide à la propriété de **Tri** , les lignes sont réinitialisées dans leur ordre d’origine et les index temporaires sont supprimés. Les index existants ne seront pas supprimés.  
   
- Supposons qu’un **Recordset** contienne trois champs nommés *FirstName*, *MiddleInitial*et *LastName*. Affectez à la propriété **sort** la chaîne « `lastName DESC, firstName ASC` », qui ordonne le **jeu d’enregistrements** par nom de famille dans l’ordre décroissant, puis par le prénom dans l’ordre croissant. L’initiale du deuxième prénom est ignorée.  
+ Supposons qu’un **Recordset** contienne trois champs nommés *FirstName*, *MiddleInitial* et *LastName*. Affectez à la propriété **sort** la chaîne « `lastName DESC, firstName ASC` », qui ordonne le **jeu d’enregistrements** par nom de famille dans l’ordre décroissant, puis par le prénom dans l’ordre croissant. L’initiale du deuxième prénom est ignorée.  
   
  Aucun champ ne peut être nommé « ASC » ou « DESC », car ces noms sont en conflit avec les mots clés **ASC** et **desc**. Vous pouvez créer un alias pour un champ avec un nom en conflit en utilisant le mot clé **As** dans la requête qui retourne le **Recordset**.  
   
@@ -56,6 +56,6 @@ Indique un ou plusieurs noms de champs sur lesquels le [Recordset](./recordset-o
 ## <a name="see-also"></a>Voir aussi  
  [Sort, exemple de propriété (VB)](./sort-property-example-vb.md)   
  [Sort, exemple de propriété (VC + +)](./sort-property-example-vc.md)   
- [Optimize, propriété dynamique (ADO)](./optimize-property-dynamic-ado.md)   
+ [Property-Dynamic d’optimisation (ADO)](./optimize-property-dynamic-ado.md)   
  [SortColumn, propriété (RDS)](../rds-api/sortcolumn-property-rds.md)   
  [SortDirection, propriété (RDS)](../rds-api/sortdirection-property-rds.md)

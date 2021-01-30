@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Connection
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ef6b1824-5b12-43db-89d7-8f3d13896d4d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 38a28bf434998943b07ef6463970c26510195299
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 1a4cb18c49513ff5f80e5be22f5480e4f6464cb4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88974900"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167740"
 ---
 # <a name="connection-object-ado"></a>Connection, objet (ADO)
 Représente une connexion ouverte à une source de données.  
@@ -64,7 +64,7 @@ Représente une connexion ouverte à une source de données.
 >  N’utilisez pas cette fonctionnalité (en appelant une commande nommée ou une procédure stockée comme s’il s’agissait d’une méthode native sur l’objet de **connexion** ) dans une application de .NET Framework Microsoft®, car l’implémentation sous-jacente de la fonctionnalité est en conflit avec la façon dont le .NET Framework interagit avec com.  
   
 ## <a name="execute-a-command-as-a-native-method-of-a-connection-object"></a>Exécuter une commande en tant que méthode native d’un objet Connection  
- Pour exécuter une commande, attribuez un nom à la commande à l’aide de la propriété [nom](./name-property-ado.md) de l’objet de **commande** . Affectez à la propriété **ActiveConnection** de l’objet **Command** la connexion. Ensuite, émettez une instruction dans laquelle le nom de la commande est utilisé comme s’il s’agissait d’une méthode sur l’objet de **connexion** , suivi de tous les paramètres et d’un objet **Recordset** si des lignes sont retournées. Définissez les propriétés du **Recordset** pour personnaliser le **jeu d’enregistrements**résultant. Par exemple :  
+ Pour exécuter une commande, attribuez un nom à la commande à l’aide de la propriété [nom](./name-property-ado.md) de l’objet de **commande** . Affectez à la propriété **ActiveConnection** de l’objet **Command** la connexion. Ensuite, émettez une instruction dans laquelle le nom de la commande est utilisé comme s’il s’agissait d’une méthode sur l’objet de **connexion** , suivi de tous les paramètres et d’un objet **Recordset** si des lignes sont retournées. Définissez les propriétés du **Recordset** pour personnaliser le **jeu d’enregistrements** résultant. Par exemple :  
   
 ```  
 Dim cnn As New ADODB.Connection  

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: e8bc63c7-8967-438a-9a49-512478a87a15
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7cee9fa6460366dd727c2eb1c6ce26c43286ea51
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: eadbd94d0dca864b3d6e9c0a172e60845e7c584e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88973040"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167337"
 ---
 # <a name="filter-and-recordcount-properties-example-vb"></a>Filter et RecordCount, exemple de propriétés (VB)
-Cet exemple ouvre un [jeu d’enregistrements](./recordset-object-ado.md) sur la table Publishers dans la base de données ***pubs*** . Il utilise ensuite la propriété [Filter](./filter-property.md) pour limiter le nombre d’enregistrements visibles à ces serveurs de publication dans un pays ou une région spécifique. La propriété **RecordCount** est utilisée pour afficher la différence entre les recordsets filtrés et non filtrés.  
+Cet exemple ouvre un [jeu d’enregistrements](./recordset-object-ado.md) sur la table Publishers dans la base de données ***pubs** _. Il utilise ensuite la propriété [Filter](./filter-property.md) pour limiter le nombre d’enregistrements visibles à ces serveurs de publication dans un pays ou une région spécifique. La propriété _ *RecordCount** est utilisée pour afficher la différence entre les recordsets filtrés et non filtrés.  
   
 ```  
 'BeginFilterVB  

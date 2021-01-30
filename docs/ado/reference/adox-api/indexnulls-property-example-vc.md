@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: ee407e03-4889-4a22-b031-ca542d637c96
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 01ec70af18c70faec253aa7f1d0cbb2c6a1579b6
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: eea25b680f578035ae4ca1f4c2dcdf8b1bbe6fdf
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88984090"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169349"
 ---
 # <a name="indexnulls-property-example-vc"></a>IndexNulls, exemple de propriété (VC++)
-Cet exemple illustre la propriété [IndexNulls](./indexnulls-property-adox.md) d’un [index](./index-object-adox.md). Le code crée un nouvel index et définit la valeur de **IndexNulls** en fonction de l’entrée de l’utilisateur. Ensuite, l' **index** est ajouté à la table **Employees** [Table](./table-object-adox.md) dans le *Northwind* [catalogue](./catalog-object-adox.md)Northwind. Le nouvel **index** est appliqué à un [jeu d’enregistrements](../ado-api/recordset-object-ado.md) basé sur la table **Employees** et le **Recordset** est ouvert. Un nouvel enregistrement est ajouté à la table **Employees** , avec une valeur **null** dans le champ indexé. Le fait que ce nouvel enregistrement s’affiche dépend du paramètre de la propriété **IndexNulls** .  
+Cet exemple illustre la propriété [IndexNulls](./indexnulls-property-adox.md) d’un [index](./index-object-adox.md). Le code crée un nouvel index et définit la valeur de **IndexNulls** en fonction de l’entrée de l’utilisateur. Ensuite, l' **index** est ajouté à la table **Employees** [](./table-object-adox.md) dans le  [catalogue](./catalog-object-adox.md)Northwind. Le nouvel **index** est appliqué à un [jeu d’enregistrements](../ado-api/recordset-object-ado.md) basé sur la table **Employees** et le **Recordset** est ouvert. Un nouvel enregistrement est ajouté à la table **Employees** , avec une valeur **null** dans le champ indexé. Le fait que ce nouvel enregistrement s’affiche dépend du paramètre de la propriété **IndexNulls** .  
   
 ```  
 // BeignIndexNullCpp.cpp  

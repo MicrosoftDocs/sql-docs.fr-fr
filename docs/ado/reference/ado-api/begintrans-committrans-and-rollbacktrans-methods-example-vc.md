@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -17,17 +17,17 @@ helpviewer_keywords:
 ms.assetid: 4ac19647-73e7-4edf-9913-25c8fd927e36
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 67cce0063dd0c41dbba173e246b4c3884fb3c8f1
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: fab3def044f0e8b250be717d63e9ed716db52ca0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88975880"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167848"
 ---
 # <a name="begintrans-committrans-and-rollbacktrans-methods-example-vc"></a>BeginTrans, CommitTrans et RollbackTrans, exemples de méthodes (VC + +)
-Cet exemple modifie le type de livre de tous les livres de psychologie dans la table ***titles*** de la base de données. Une fois que la méthode [BeginTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) a démarré une transaction qui isole toutes les modifications apportées à la table ***titles*** , la méthode [CommitTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) enregistre les modifications. Vous pouvez utiliser la méthode [Rollback](./begintrans-committrans-and-rollbacktrans-methods-ado.md) pour annuler les modifications que vous avez enregistrées à l’aide de la méthode [Update](./update-method.md) .  
+Cet exemple modifie le type de livre de tous les livres de psychologie dans la table ***titles** _ de la base de données. Une fois que la méthode [BeginTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) a démarré une transaction qui isole toutes les modifications apportées à la table _*_titles_*_ , la méthode [CommitTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) enregistre les modifications. Vous pouvez utiliser la méthode [Rollback](./begintrans-committrans-and-rollbacktrans-methods-ado.md) pour annuler les modifications que vous avez enregistrées à l’aide de la méthode [Update](./update-method.md) .  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
   
 ```  
 // BeginBeginTransCpp.cpp  
@@ -76,7 +76,7 @@ void BeginTransX() {
    // Define ADO object pointers, initialize pointers on define.  These are in the ADODB::  namespace.  
    _RecordsetPtr rstTitles = NULL;  
    _ConnectionPtr pConnection = NULL;  
-   char * token1, * token2;  
+   char _ token1, * token2;  
   
    // Define Other Variables  
    HRESULT hr = S_OK;    

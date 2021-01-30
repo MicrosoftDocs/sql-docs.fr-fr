@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - RightsEnum
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 55ee67c7-a583-42aa-849a-78264b4cb614
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: be2bd513cf41247fd6ce5c8f1172353557287144
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: d89daeb8d85e9e59e60f6a1aa6b918364ab915fd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88983410"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169215"
 ---
 # <a name="rightsenum"></a>RightsEnum
 Spécifie les droits ou les autorisations pour un groupe ou un utilisateur sur un objet.  

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Connection15::DefaultDatabase
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 41e8a8dd-e69c-4a09-8736-93502e01961c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 86a8b283880f0765100c5a36eb63954f232c565a
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 8cff37ae3bc0940a62e2acc9af3ac6c25d1379a4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88974190"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167591"
 ---
 # <a name="defaultdatabase-property"></a>DefaultDatabase, propriété
 Indique la base de données par défaut pour un objet de [connexion](../../../ado/reference/ado-api/connection-object-ado.md) .  

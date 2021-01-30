@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - objects [ADOX]
 - ADOX, objects
 ms.assetid: 3f5287e9-f62c-40c4-bb59-985102be956e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1dfc4a2c44b6ea8c23b9cb56b3a2e6d844e9ca77
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: ff34689eac4f9aff1729b316c4aff25b02191c83
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641331"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169636"
 ---
 # <a name="adox-objects"></a>Objets ADOX
 ## <a name="adox-object-summary"></a>Résumé de l’objet ADOX  

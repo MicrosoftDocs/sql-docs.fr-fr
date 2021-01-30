@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 518905a9-6044-4194-af6c-84952d95939d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 48ac8c3a7a30976578d668bfa1d66b0f6856115f
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: bf9251e5aa48b830f98962a39001731de0fda009
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88985230"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169538"
 ---
 # <a name="catalog-activeconnection-property-example-vc"></a>Exemple de propriété ActiveConnection de l’objet Catalog (VC++)
 La définition de la propriété [ActiveConnection](./activeconnection-property-adox.md) sur une connexion ouverte valide « ouvre » le catalogue. À partir d’un catalogue ouvert, vous pouvez accéder aux objets de schéma contenus dans ce catalogue.  

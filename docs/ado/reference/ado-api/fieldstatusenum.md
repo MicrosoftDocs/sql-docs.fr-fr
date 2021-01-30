@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - FieldStatusEnum
@@ -16,21 +16,21 @@ helpviewer_keywords:
 ms.assetid: e06da1e2-303f-41b2-a3b0-61e233da152c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d30c0bc3508c364b7a0d52f23ccb52d11e06f8d5
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 968a4205a12e9f6ff36c3bff512cf41ae60ca469
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88973090"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167347"
 ---
 # <a name="fieldstatusenum"></a>FieldStatusEnum
 Spécifie l' [État](./status-property-ado-field.md) d’un [objet de champ](./field-object.md).  
   
- Les **valeurs \* adFieldPending** indiquent l’opération qui a provoqué la définition de l’État et peuvent être combinées avec d’autres valeurs d’État.  
+ Les valeurs ** \* adFieldPending* _ indiquent l’opération qui a provoqué la définition de l’État et peuvent être combinées avec d’autres valeurs d’État.  
   
 |Constante|Valeur|Description|  
 |--------------|-----------|-----------------|  
-|**adFieldAlreadyExists**|26|Indique que le champ spécifié existe déjà.|  
+|_ *adFieldAlreadyExists**|26|Indique que le champ spécifié existe déjà.|  
 |**adFieldBadStatus**|12|Indique qu’une valeur d’État non valide a été envoyée à partir d’ADO au fournisseur OLE DB. Les causes possibles incluent un fournisseur OLE DB 1,0 ou 1,1, ou une combinaison incorrecte de [valeur](./value-property-ado.md) et d' [État](./status-property-ado-field.md).|  
 |**adFieldCannotComplete**|20|Indique que le serveur de l’URL spécifiée par la [source](./source-property-ado-record.md) n’a pas pu terminer l’opération.|  
 |**adFieldCannotDeleteSource**|23|Indique qu’au cours d’une opération de déplacement, une arborescence ou une sous-arborescence a été déplacée vers un nouvel emplacement, mais la source n’a pas pu être supprimée.|  

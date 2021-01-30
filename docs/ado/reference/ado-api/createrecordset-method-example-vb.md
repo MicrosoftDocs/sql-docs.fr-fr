@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2de8fd02-0f49-4d47-8bd3-397726d1c644
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5abd786b445df3afe6cbaf8ab76e132ea912b42f
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 9dc5925a68b977e8beda03a0cb105739e323ebb1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88974490"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167647"
 ---
 # <a name="createrecordset-method-example-vb"></a>CreateRecordset, exemple de méthode (VB)
 Vous pouvez créer un objet [Recordset](./recordset-object-ado.md) et spécifier les informations de colonne. Vous pouvez ensuite insérer des données dans l’objet **Recordset** . l’ensemble de lignes sous-jacent met en mémoire tampon les insertions.  

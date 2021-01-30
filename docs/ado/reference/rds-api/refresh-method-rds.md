@@ -7,7 +7,7 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Refresh
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: c90a8050-0ff4-4c83-9925-261f2f2ccfe9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5e6fb32744d64f99beac6c414f1b82581b9fadcb
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: f35574b0e9623560ddfafe123340e302a9fc5220
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724271"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168795"
 ---
 # <a name="refresh-method-rds"></a>Refresh, méthode (RDS)
 Interroge à jour la source de données spécifiée dans la propriété [Connect](./connect-property-rds.md) et met à jour les résultats de la requête.  

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - DrilledDown
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: bf39dd36-fc7a-4f6e-86c0-fa71430c0d86
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3e20e911eefabdf086c805d8b6cbaa87ea7b76b5
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 2e25d23cfdbf7f33f024203e25814b16d4ec6da4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88986730"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169862"
 ---
 # <a name="drilleddown-property-ado-md"></a>DrilledDown, propriété (ADO MD)
 Indique si les enfants suivent immédiatement le [membre](./member-object-ado-md.md) sur l’axe.  

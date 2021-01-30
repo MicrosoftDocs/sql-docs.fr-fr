@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 43ae202e-1972-4aab-9cc1-3b6612bad363
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 41f11d786652f3ccd2a4c308cb8711e483160ad6
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 1dccda70312958267647a7c868c52750f6af250e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88983750"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169287"
 ---
 # <a name="parentcatalog-property-example-vc"></a>ParentCatalog, exemple de propriété (VC++)
 Le code suivant montre comment utiliser la propriété [ParentCatalog](./parentcatalog-property-adox.md) pour accéder à une propriété spécifique au fournisseur avant d’ajouter une table à un catalogue. La propriété est **AutoIncrement**, ce qui crée un champ AUTOINCREMENT dans une base de données Microsoft Jet.  

@@ -7,7 +7,7 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d9cb84a1-4ec2-4d41-8f92-dec2e17cde67
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 17a10e367f5e33990b201083fd75be0d6383b959
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: badc0385bc1400b4c3d1039c8fbc67865fcff29d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724403"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168858"
 ---
 # <a name="rds-code-examples-in-visual-basic"></a>Exemples de code RDS dans Visual Basic
 > [!IMPORTANT]

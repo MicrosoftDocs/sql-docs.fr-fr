@@ -7,18 +7,18 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Cellset object [ADO MD], members
 ms.assetid: fb303e33-5a85-4e4e-81db-acaaa6f53799
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 72f51e61185269633cc3a218d48379060698342b
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: ffc1a3e6a96a3910d02bf7d94b2a655cad5b1381
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88987140"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169941"
 ---
 # <a name="cellset-object-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet Cellset
 ## <a name="propertiescollections"></a>Propriétés/collections  

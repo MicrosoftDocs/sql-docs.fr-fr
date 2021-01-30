@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Caption
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: d90763b8-ba3f-48f8-95b2-e6a0e52296e1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 11d2fbcd6e883b81dc25f4e61a7ee18923769a6f
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: df2199275a5a1e5067b29133d3b61ac82cbc7340
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88987330"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169976"
 ---
 # <a name="caption-property-ado-md"></a>Caption, propriété (ADO MD)
 Indique la légende de texte à utiliser lors de l’affichage d’un objet de [niveau](./level-object-ado-md.md) ou de [membre](./member-object-ado-md.md) .  

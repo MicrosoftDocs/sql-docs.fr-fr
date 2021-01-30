@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b682bcc3-04b3-42b0-86f4-c17e0cd29baf
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7a8a6eb8fb9d6be9433e11f641c6b29367680ba5
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 4bb438c114c80f5cd062c1be810dd85988611dbb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988640"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170153"
 ---
 # <a name="stayinsync-property-example-vb"></a>StayInSync, exemple de propriété (VB)
 Cet exemple montre comment la propriété [StayInSync](./stayinsync-property.md) facilite l’accès aux lignes d’un [jeu d’enregistrements](./recordset-object-ado.md)hiérarchique.  

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4f306a51-d5a4-4785-b426-487639cda164
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: dd908cf997a2bdc006067ea7d0422e33bd8cee91
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 685cb61f5f64dc879a01a7fc2a7a6160d0858604
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91721130"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169027"
 ---
 # <a name="datacontrol-object-example-vbscript"></a>DataControl, exemple d’objet (VBScript)
 > [!IMPORTANT]
