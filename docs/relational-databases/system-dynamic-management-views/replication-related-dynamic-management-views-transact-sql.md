@@ -6,7 +6,7 @@ ms.date: 03/15/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2bf5e145-3c4c-4fb6-afa0-197342dba038
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 78a2d33c921846b4736953fd995aa41b81e7f892
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f04d2f0073db01c049f6afc63a1013af8256f41c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095321"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99144557"
 ---
 # <a name="replication-related-dynamic-management-views-transact-sql"></a>Vues de gestion dynamique liées à la réplication (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
