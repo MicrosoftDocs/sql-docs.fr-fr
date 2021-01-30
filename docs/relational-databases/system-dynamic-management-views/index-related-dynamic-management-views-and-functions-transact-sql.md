@@ -6,7 +6,7 @@ ms.date: 03/20/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ad9ad40f-b018-4bae-b003-691f08dcefdf
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 45049fb7dcb0bb1da875604150fc3e64bb69632b
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: ae5e669e827de427c2b3e16962763c3c577e970b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099017"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99145447"
 ---
 # <a name="index-related-dynamic-management-views-and-functions-transact-sql"></a>Fonctions et vues de gestion dynamique relatives aux index (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
