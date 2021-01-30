@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSrepl_originators_TSQL
 - MSrepl_originators
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: a3ac20a6-73f6-4fdc-ad5f-5f72746c9871
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ecf4c63563d765021ede201a4f646d0266e0bcb3
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: b9c5a5690f6349975a2edafd7715d81c769ce31c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099620"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210706"
 ---
 # <a name="msrepl_originators-transact-sql"></a>MSrepl_originators (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

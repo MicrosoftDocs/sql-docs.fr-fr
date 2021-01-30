@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_link_publication_TSQL
 - sp_link_publication
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1945ed24-f9f1-4af6-94ca-16d8e864706e
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: b80c28d86ae4d7022ad8784adfa7ab9023e3ebd0
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: b6a6e0b057f0d01c838aa5ac7b57143221fec13c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543221"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210776"
 ---
 # <a name="sp_link_publication-transact-sql"></a>sp_link_publication (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "89543221"
 > [!IMPORTANT]
 >  Dans certaines conditions, cette procédure stockée peut échouer si l’abonné exécute [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] Service Pack 1 ou version ultérieure, et que le serveur de publication exécute une version antérieure. Si la procédure stockée échoue dans ce scénario, mettez à niveau l'Éditeur vers [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] Service Pack 1 ou version ultérieure.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -56,7 +56,7 @@ sp_link_publication [ @publisher = ] 'publisher'
   
 `[ @publication = ] 'publication'` Nom de la publication à lier. *publication* est de **type sysname**, sans valeur par défaut.  
   
-`[ @security_mode = ] security_mode` Mode de sécurité utilisé par l’abonné pour se connecter à un serveur de publication distant pour la mise à jour immédiate. *security_mode* est de **type int**et peut prendre l’une des valeurs suivantes. [!INCLUDE[ssNoteWinAuthentication](../../includes/ssnotewinauthentication-md.md)]  
+`[ @security_mode = ] security_mode` Mode de sécurité utilisé par l’abonné pour se connecter à un serveur de publication distant pour la mise à jour immédiate. *security_mode* est de **type int** et peut prendre l’une des valeurs suivantes. [!INCLUDE[ssNoteWinAuthentication](../../includes/ssnotewinauthentication-md.md)]  
   
 |Valeur|Description|  
 |-----------|-----------------|  

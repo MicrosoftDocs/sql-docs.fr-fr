@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_fts_index_population
 - dm_fts_index_population
@@ -21,12 +21,12 @@ ms.assetid: 82d1c102-efcc-4b60-9a5e-3eee299bcb2b
 author: pmasl
 ms.author: pelopes
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 06e804011443a4486c8ffbfd18d5ed639a3a3ec9
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0da9010acff84b43fa66f44b6185706c756f96e2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484681"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211215"
 ---
 # <a name="sysdm_fts_index_population-transact-sql"></a>sys.dm_fts_index_population (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "97484681"
 |**heure-début**|**datetime**|Heure de début du remplissage.|  
 |**incremental_timestamp**|**timestamp**|Représente le cachet temporel de départ d'un remplissage complet. Pour tous les autres types de remplissage, cette valeur est le dernier point de contrôle validé représentant la progression des remplissages.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Lorsque l'indexation sémantique statistique est activée en plus de l'indexation de texte intégral, l'extraction et le remplissage sémantique d'expressions clés et l'extraction de données de ressemblance du document se produisent simultanément avec l'indexation de texte intégral. Le remplissage de l'index de ressemblance du document se produit ultérieurement dans une deuxième phase. Pour plus d’informations, consultez [gérer et surveiller la recherche sémantique](../../relational-databases/search/manage-and-monitor-semantic-search.md).  
   
 ## <a name="permissions"></a>Autorisations  
@@ -68,7 +68,7 @@ Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de do
   
 ## <a name="relationship-cardinalities"></a>Cardinalités de la relation  
   
-|Du|À|Relationship|  
+|Du|À|Relation|  
 |----------|--------|------------------|  
 |dm_fts_active_catalogs.database_id|dm_fts_index_population.database_id|Un-à-un|  
 |dm_fts_active_catalogs.catalog_id|dm_fts_index_population.catalog_id|Un-à-un|  

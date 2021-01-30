@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_cursorprepexec_TSQL
 - sp_cursorprepexec
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 8094fa90-35b5-4cf4-8012-0570cb2ba1e6
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: c77a02d7232acdd9dd2f109c6e7ae2d56121382e
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: b59597048ba7edc1102c3151d720e9bc6ff36942
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549916"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209693"
 ---
 # <a name="sp_cursorprepexec-transact-sql"></a>sp_cursorprepexec (Transact-SQL)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md.md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -49,13 +49,13 @@ sp_cursorprepexec prepared handle OUTPUT, cursor OUTPUT, params , statement , op
  Identificateur de curseur généré par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *Cursor* est un paramètre obligatoire qui doit être fourni pour toutes les procédures suivantes qui agissent sur ce curseur, par exemple, sp_cursorfetch.  
   
  *params*  
- Identifie des instructions paramétrables. La définition *params* des variables est substituée aux marqueurs de paramètres dans l’instruction. *params* est un paramètre obligatoire qui requiert une valeur d’entrée **ntext**, **nchar**ou **nvarchar** .  
+ Identifie des instructions paramétrables. La définition *params* des variables est substituée aux marqueurs de paramètres dans l’instruction. *params* est un paramètre obligatoire qui requiert une valeur d’entrée **ntext**, **nchar** ou **nvarchar** .  
   
 > [!NOTE]  
 >  Utilisez une chaîne **ntext** comme valeur d’entrée lorsque *stmt* est paramétré et que la valeur de PARAMETERIZED_STMT *scrollopt* est on.  
   
  *instruction*  
- Définit le jeu de résultats de curseur. Le paramètre d' *instruction* est obligatoire et appelle une valeur d’entrée **ntext**, **nchar**ou **nvarchar** .  
+ Définit le jeu de résultats de curseur. Le paramètre d' *instruction* est obligatoire et appelle une valeur d’entrée **ntext**, **nchar** ou **nvarchar** .  
   
 > [!NOTE]  
 >  Les règles de spécification de la valeur stmt sont les mêmes que celles de sp_cursoropen, à l’exception près que le type de données chaîne *stmt* doit être **ntext**.  

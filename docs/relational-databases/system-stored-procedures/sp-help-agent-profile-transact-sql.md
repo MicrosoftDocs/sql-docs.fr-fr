@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_help_agent_profile
 - sp_help_agent_profile_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 5637b671-4aa3-497e-9a1c-c99798a1afb4
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 7bcb9de7480bf0aea92f585cfece47cf09545195
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 8c335753621a90bbf9872a7786a6619cbd090249
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538852"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208950"
 ---
 # <a name="sp_help_agent_profile-transact-sql"></a>sp_help_agent_profile (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Affiche le profil de l'Agent indiqué. Cette procédure stockée est exécutée sur n’importe quelle base de données du serveur de distribution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,7 +39,7 @@ sp_help_agent_profile [ [ @agent_type = ] agent_type ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @agent_type = ] agent_type` Type d’agent. *agent_type* est de **type int**, avec **0**comme valeur par défaut et peut prendre l’une des valeurs suivantes.  
+`[ @agent_type = ] agent_type` Type d’agent. *agent_type* est de **type int**, avec **0** comme valeur par défaut et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -49,7 +49,7 @@ sp_help_agent_profile [ [ @agent_type = ] agent_type ]
 |**4**|Agent de fusion|  
 |**9**|Agent de lecture de la file d'attente|  
   
-`[ @profile_id = ] profile_id` ID du profil à afficher. *profile_id* est de **type int**, avec **-1**comme valeur par défaut, qui retourne tous les profils de la table **MSagent_profiles** .  
+`[ @profile_id = ] profile_id` ID du profil à afficher. *profile_id* est de **type int**, avec **-1** comme valeur par défaut, qui retourne tous les profils de la table **MSagent_profiles** .  
   
 ## <a name="result-sets"></a>Jeux de résultats  
   

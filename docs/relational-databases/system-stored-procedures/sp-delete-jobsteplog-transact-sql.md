@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_delete_jobsteplog
 - sp_delete_jobsteplog_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: e9ef4c99-abde-4038-b6a3-a25dcbaf0958
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 0c656c5ff3a4a1c0798c881cd026fc7153acfae1
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 17cdcb1ba86e214ce707ff084a0d921b3817cbe0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89528184"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211146"
 ---
 # <a name="sp_delete_jobsteplog-transact-sql"></a>sp_delete_jobsteplog (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "89528184"
   Supprime tous les journaux d'étapes de travail de l'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui sont spécifiés via les arguments. Utilisez cette procédure stockée pour tenir à jour la table **sysjobstepslogs** dans la base de données **msdb** .  
   
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,15 +50,15 @@ sp_delete_jobsteplog { [ @job_id = ] 'job_id' | [ @job_name = ] 'job_name' }
   
 > **Remarque :** *Job_id* ou *job_name* doivent être spécifiés, mais ne peuvent pas être spécifiés.  
   
-`[ @step_id = ] step_id` Numéro d’identification de l’étape du travail pour laquelle le journal d’étapes de travail doit être supprimé. Si ce n’est pas le cas, tous les journaux d’étapes de travail du travail sont supprimés, sauf si ** \@ older_than** ou ** \@ larger_than** sont spécifiés. *step_id* est de **type int**, avec NULL comme valeur par défaut.  
+`[ @step_id = ] step_id` Numéro d’identification de l’étape du travail pour laquelle le journal d’étapes de travail doit être supprimé. Si ce n’est pas le cas, tous les journaux d’étapes de travail du travail sont supprimés, sauf si **\@ older_than** ou **\@ larger_than** sont spécifiés. *step_id* est de **type int**, avec NULL comme valeur par défaut.  
   
 `[ @step_name = ] 'step_name'` Nom de l’étape du travail pour laquelle le journal d’étapes de travail doit être supprimé. *step_name* est de **type sysname**, avec NULL comme valeur par défaut.  
   
 > **Remarque :** *Step_id* ou *step_name* peuvent être spécifiés, mais ils ne peuvent pas être spécifiés.  
   
-`[ @older_than = ] 'date'` Date et heure du journal d’étapes de travail le plus ancien que vous souhaitez conserver. Tous les journaux d'étapes de travail antérieurs à cette date/heure sont supprimés. *Date* est de **type DateTime**, avec NULL comme valeur par défaut. ** \@ Older_than** et ** \@ larger_than** peuvent être spécifiés.  
+`[ @older_than = ] 'date'` Date et heure du journal d’étapes de travail le plus ancien que vous souhaitez conserver. Tous les journaux d'étapes de travail antérieurs à cette date/heure sont supprimés. *Date* est de **type DateTime**, avec NULL comme valeur par défaut. **\@ Older_than** et **\@ larger_than** peuvent être spécifiés.  
   
-`[ @larger_than = ] 'size_in_bytes'` Taille en octets du journal d’étapes de travail le plus volumineux que vous souhaitez conserver. Tous les journaux d'étapes de travail dont la taille est supérieure à celle spécifiée sont supprimés. ** \@ Larger_than** et ** \@ older_than** peuvent être spécifiés.  
+`[ @larger_than = ] 'size_in_bytes'` Taille en octets du journal d’étapes de travail le plus volumineux que vous souhaitez conserver. Tous les journaux d'étapes de travail dont la taille est supérieure à celle spécifiée sont supprimés. **\@ Larger_than** et **\@ older_than** peuvent être spécifiés.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  
@@ -69,7 +69,7 @@ sp_delete_jobsteplog { [ @job_id = ] 'job_id' | [ @job_name = ] 'job_name' }
 ## <a name="remarks"></a>Notes  
  **sp_delete_jobsteplog** se trouve dans la base de données **msdb** .  
   
- Si aucun argument n’est spécifié, à l’exception de ** \@ job_id** ou ** \@ job_name** , tous les journaux d’étapes de travail du travail spécifié sont supprimés.  
+ Si aucun argument n’est spécifié, à l’exception de **\@ job_id** ou **\@ job_name** , tous les journaux d’étapes de travail du travail spécifié sont supprimés.  
   
 ## <a name="permissions"></a>Autorisations  
  Par défaut, les membres du rôle serveur fixe **sysadmin** peuvent exécuter cette procédure stockée. Les autres utilisateurs doivent disposer de l'un des rôles de base de données fixes suivants de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent dans la base de données **msdb** :  

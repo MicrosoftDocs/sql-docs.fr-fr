@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSmerge_genhistory_TSQL
 - MSmerge_genhistory
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 475d08ae-eb8b-49de-afd6-33c96ab8004d
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 7ccd9f9b6cc2780681f1f76c0764aaf423c2af36
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: a56a77aebc8b7643a178d23b7f5b444270091106
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100563"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209619"
 ---
 # <a name="msmerge_genhistory-transact-sql"></a>MSmerge_genhistory (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_add_maintenance_plan_db_TSQL
 - sp_add_maintenance_plan_db
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 76f4fefa-5b99-4deb-beed-e198987a45a9
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 5d8369e3cdd8ad7d7c943e715361cbd26d99bb00
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e8cc84a2afd70a4e5bd89a581b0fb1ac1dcc229f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88474616"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209015"
 ---
 # <a name="sp_add_maintenance_plan_db-transact-sql"></a>sp_add_maintenance_plan_db (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -46,7 +46,7 @@ sp_add_maintenance_plan_db [ @plan_id = ] 'plan_id' ,
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @plan_id = ] 'plan_id'` Spécifie l’ID de plan du plan de maintenance. *plan_id* est de type **uniqueidentifier**et doit être un ID valide.  
+`[ @plan_id = ] 'plan_id'` Spécifie l’ID de plan du plan de maintenance. *plan_id* est de type **uniqueidentifier** et doit être un ID valide.  
   
 `[ @db_name = ] 'database_name'` Spécifie le nom de la base de données à ajouter au plan de maintenance. La base de données doit être créée ou exister au préalable, avant d'être ajoutée au plan. *database_name* est de type **sysname**.  
   

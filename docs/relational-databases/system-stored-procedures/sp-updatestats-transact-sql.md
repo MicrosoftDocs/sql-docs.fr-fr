@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_updatestats_TSQL
 - sp_updatestats
@@ -19,12 +19,12 @@ ms.assetid: 01184651-6e61-45d9-a502-366fecca0ee4
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: f976f9be51d688833a09e5faaae42b8864ecc274
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0cfaffcf1df13da39a093043d84e28f4433d3a71
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482383"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209268"
 ---
 # <a name="sp_updatestats-transact-sql"></a>sp_updatestats (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -33,7 +33,7 @@ S’exécute `UPDATE STATISTICS` sur toutes les tables définies par l’utilisa
   
 Pour plus d’informations sur `UPDATE STATISTICS` , consultez [update statistics &#40;Transact-SQL&#41;](../../t-sql/statements/update-statistics-transact-sql.md). Pour plus d’informations sur les statistiques, consultez [Statistiques](../../relational-databases/statistics/statistics.md).  
     
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,7 +47,7 @@ sp_updatestats [ [ @resample = ] 'resample']
 ## <a name="arguments"></a>Arguments  
 `[ @resample = ] 'resample'` Spécifie que **sp_updatestats** utilisera l’option reéchantillonner de l’instruction [Update Statistics](../../t-sql/statements/update-statistics-transact-sql.md) . Si **'resample'** n’est pas spécifié, **sp_updatestats** met à jour les statistiques à l’aide de l’échantillonnage par défaut. **resample** est de type **varchar (8)** avec la valeur non par défaut.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  **sp_updatestats** s’exécute `UPDATE STATISTICS` en spécifiant le `ALL` mot clé, sur toutes les tables définies par l’utilisateur et les tables internes de la base de données. sp_updatestats affiche des messages indiquant sa progression. Une fois la mise à jour terminée, cette procédure signale que les statistiques ont été mises à jour pour toutes les tables.  
   
 **sp_updatestats** met à jour les statistiques sur les index non cluster désactivés et ne met pas à jour les statistiques sur les index cluster désactivés.  

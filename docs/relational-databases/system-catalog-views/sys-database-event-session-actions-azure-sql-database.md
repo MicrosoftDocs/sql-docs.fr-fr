@@ -7,17 +7,17 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 ms.assetid: 32494df1-7ab7-4b88-a858-6b1021d67433
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: d6b142c7a0a6d63fb6e0c2dcc59a5f2f701c2cfd
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2613739822160969f070413f2d87a661878ae3ff
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102804"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210350"
 ---
 # <a name="sysdatabase_event_session_actions-azure-sql-database"></a>sys.database_event_session_actions (Azure SQL Database)
 [!INCLUDE [sqlserver2016-asdb-asdbmi](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "98102804"
 ## <a name="remarks"></a>Notes  
  Cette vue a les cardinalités de relation suivantes.  
   
-| Du | À | Relationship |
+| Du | À | Relation |
 | ---- | -- | ------------ |
 |sys.database_event_session_actions sys.database_event_session_actions.event_session_id|sys.sys. database_event_sessions. event_session_id|Plusieurs-à-un|  
 |sys.database_event_session_actions sys.database_event_session_actions.event_id<br /><br /> sys.database_event_session_actions sys.database_event_session_actions.event_session_id|sys.database_event_session_events sys.database_event_session_events.event_session_id<br /><br /> sys.database_event_session_events sys.database_event_session_events.event_id|Plusieurs-à-un|  

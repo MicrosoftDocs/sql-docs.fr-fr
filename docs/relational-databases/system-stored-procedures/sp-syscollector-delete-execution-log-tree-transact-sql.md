@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_syscollector_delete_execution_log_tree_TSQL
 - sp_syscollector_delete_execution_log_tree
@@ -19,19 +19,19 @@ helpviewer_keywords:
 ms.assetid: 0a9a7c5b-c3cc-40ca-b524-e948a8cce4e4
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: a2a4a1496bf7b46d3d816aad49cf402aef3ac4d4
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: a25ff22212d08172d9fd34b6340329ba93cc6fd8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547381"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210228"
 ---
 # <a name="sp_syscollector_delete_execution_log_tree-transact-sql"></a>sp_syscollector_delete_execution_log_tree (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Supprime toutes les entrées du journal pour l'exécution d'un seul jeu d'éléments de collection. Il supprime également les entrées du journal des tables [!INCLUDE[ssIS](../../includes/ssis-md.md)] pour cette exécution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

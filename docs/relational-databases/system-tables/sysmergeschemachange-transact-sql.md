@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysmergeschemachange_TSQL
 - sysmergeschemachange
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: ae9ce16e-6ee9-4c7c-8210-a9bf2c7efdf0
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 2a0315c49710ac324234710d30c223dfb9b27b12
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: e4fcb1360495a72ca5650abc1c76e7c7dd224f2e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102002"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209203"
 ---
 # <a name="sysmergeschemachange-transact-sql"></a>sysmergeschemachange (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

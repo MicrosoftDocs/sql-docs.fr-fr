@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - set collate command [ODBC]
 ms.assetid: 00efbcd4-fea8-4061-86a5-82de413cb753
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5ca796da60adf0c432b5bbd80065e58563664bc5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f6158f79c589e446c2b3c106a1d14fd58715714f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88466381"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208644"
 ---
 # <a name="set-collate-command"></a>SET COLLATE, commande
 Spécifie une séquence de classement pour les champs caractère dans les opérations de tri et d’indexation ultérieures.  

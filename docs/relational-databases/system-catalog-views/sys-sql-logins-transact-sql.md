@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.sql_logins_TSQL
 - sql_logins_TSQL
@@ -21,12 +21,12 @@ ms.assetid: 0d9c5b09-86fe-40ff-baab-00b7c051402f
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: bb0fc659d82024dbbc52dc777b9f6ae5da3062ac
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: da35c043189954e8e4534ff640c3a9cdc9fc8078
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477330"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210276"
 ---
 # <a name="syssql_logins-transact-sql"></a>sys.sql_logins (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-pdw-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-pdw-md.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "97477330"
   
  Pour obtenir la liste des colonnes héritées par cette vue, consultez [sys.server_principals &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-server-principals-transact-sql.md). Les colonnes `owning_principal_id` et ne `is_fixed_role` sont pas héritées de sys.server_principals.
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Pour afficher à la fois les connexions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] d’authentification et les connexions d’authentification Windows, consultez [sys.server_principals &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-server-principals-transact-sql.md).  
   
  Quand les utilisateurs de base de données à relation contenant-contenu sont activés, les connexions peuvent être établies sans connexions. Pour identifier ces comptes, consultez  [sys.database_principals &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-principals-transact-sql.md).  

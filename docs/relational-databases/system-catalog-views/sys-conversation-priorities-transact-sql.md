@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - conversation_priorities_TSQL
 - conversation_priorities
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 7cbb9171-3310-4aae-8458-755c882d6462
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 76972ee7aac973ef6d7ce4276f95a99454c872c1
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 5933f5f67b4c05859273f687136b7e38ed70e0fa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102839"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211355"
 ---
 # <a name="sysconversation_priorities-transact-sql"></a>sys.conversation_priorities (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

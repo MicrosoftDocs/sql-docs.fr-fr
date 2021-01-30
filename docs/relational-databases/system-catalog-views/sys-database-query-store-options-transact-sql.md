@@ -5,7 +5,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DATABASE_QUERY_STORE_OPTIONS_TSQL
 - DATABASE_QUERY_STORE_OPTIONS
@@ -20,12 +20,12 @@ ms.author: wiassaf
 ms.custom: ''
 ms.date: 1/8/2021
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 7735f03de4231cc46871a3470535a53ca9d3f942
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: d7bf0de864d97fffd5c06bb716ef4cae9dece4de
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171921"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209457"
 ---
 # <a name="sysdatabase_query_store_options-transact-sql"></a>sys.database_query_store_options (Transact-SQL)
 

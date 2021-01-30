@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_help_category
 - sp_help_category_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 8cad1dcc-b43e-43bd-bea0-cb0055c84169
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: d500bad167bda9085d4caf40bdaa9e442cb26efb
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 68c8d1fcf243de008f889d4037bbd38a590c6403
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549697"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208927"
 ---
 # <a name="sp_help_category-transact-sql"></a>sp_help_category (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Fournit des informations sur les classes de travaux, d'alertes ou d'opérateurs spécifiées.  
    
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,7 +43,7 @@ sp_help_category [ [ @class = ] 'class' ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @class = ] 'class'` Classe sur laquelle des informations sont demandées. la classe est de *type* **varchar (8)**, avec **Job**comme valeur par défaut. la *classe* peut prendre l’une des valeurs suivantes.  
+`[ @class = ] 'class'` Classe sur laquelle des informations sont demandées. la classe est de *type* **varchar (8)**, avec **Job** comme valeur par défaut. la *classe* peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -61,13 +61,13 @@ sp_help_category [ [ @class = ] 'class' ]
   
 `[ @name = ] 'name'` Nom de la catégorie pour laquelle les informations sont demandées. *Name* est de **type sysname**, avec NULL comme valeur par défaut.  
   
-`[ @suffix = ] suffix` Spécifie si la colonne **category_type** dans le jeu de résultats est un ID ou un nom. le *suffixe* est de **bit**, avec **0**comme valeur par défaut. **1** affiche la **category_type** sous la forme d’un nom et **0** l’affiche comme ID.  
+`[ @suffix = ] suffix` Spécifie si la colonne **category_type** dans le jeu de résultats est un ID ou un nom. le *suffixe* est de **bit**, avec **0** comme valeur par défaut. **1** affiche la **category_type** sous la forme d’un nom et **0** l’affiche comme ID.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  
   
 ## <a name="result-sets"></a>Jeux de résultats  
- Lorsque le ** \@ suffixe** est **0**, **sp_help_category** retourne le jeu de résultats suivant :  
+ Lorsque le **\@ suffixe** est **0**, **sp_help_category** retourne le jeu de résultats suivant :  
   
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
@@ -75,12 +75,12 @@ sp_help_category [ [ @class = ] 'class' ]
 |**category_type**|**tinyint**|Type de catégorie :<br /><br /> **1** = local<br /><br /> **2** = multiserveur<br /><br /> **3** = aucun|  
 |**name**|**sysname**|Nom de la catégorie|  
   
- Lorsque le ** \@ suffixe** est **1**, **sp_help_category** retourne le jeu de résultats suivant :  
+ Lorsque le **\@ suffixe** est **1**, **sp_help_category** retourne le jeu de résultats suivant :  
   
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
 |**category_id**|**int**|ID de la catégorie|  
-|**category_type**|**sysname**|Type de catégorie : Un serveur **local**, **plusieurs serveurs**ou **aucun**|  
+|**category_type**|**sysname**|Type de catégorie : Un serveur **local**, **plusieurs serveurs** ou **aucun**|  
 |**name**|**sysname**|Nom de la catégorie|  
   
 ## <a name="remarks"></a>Notes  

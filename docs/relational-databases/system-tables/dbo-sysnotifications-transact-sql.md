@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dbo.sysnotifications_TSQL
 - sysnotifications
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: c5150d18-e8b7-48a7-ada7-77c583af6e41
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 59d02308629621e36044eb7272dcfe1ba40116b6
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0a1cd54f7f2cafb73bba1c74674810e2a1362327
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096306"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209624"
 ---
 # <a name="dbosysnotifications-transact-sql"></a>dbo.sysnotifications (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

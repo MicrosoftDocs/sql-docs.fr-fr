@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addmessage
 - sp_addmessage_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 54746d30-f944-40e5-a707-f2d9be0fb9eb
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 306fc9b2316d599380b3a6e781d4f8a1ef646626
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: f9bdbbac913643bd0d44ba7e45b07c8bc3e09789
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89529134"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209377"
 ---
 # <a name="sp_addmessage-transact-sql"></a>sp_addmessage (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Stocke un nouveau message d’erreur défini par l’utilisateur dans une instance du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] . Les messages stockés à l’aide de **sp_addmessage** peuvent être affichés à l’aide de l’affichage catalogue **sys. messages** .  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -51,7 +51,7 @@ sp_addmessage [ @msgnum= ] msg_id , [ @severity= ] severity , [ @msgtext= ] 'msg
   
 `[ @lang = ] 'language'` Langue de ce message. *Language* est de **type sysname** , avec NULL comme valeur par défaut. Étant donné que plusieurs langues peuvent être installées sur le même serveur, *Language* spécifie la langue dans laquelle chaque message est écrit. Lorsque la *langue* est omise, la langue est la langue par défaut de la session.  
   
-`[ @with_log = ] { 'TRUE' | 'FALSE' }` Indique si le message doit être écrit dans le journal des applications Windows lorsqu’il se produit. ** \@ WITH_LOG** est de type **varchar (5),** avec false comme valeur par défaut. Si sa valeur est TRUE, l'erreur est automatiquement écrite dans le journal des applications Windows. Si sa valeur est FALSE, l'erreur n'est pas automatiquement écrite dans le journal des applications Windows ; c'est la façon dont elle a été déclenchée qui détermine si l'erreur sera ou non écrite dans le journal. Seuls les membres du rôle de serveur **sysadmin** peuvent utiliser cette option.  
+`[ @with_log = ] { 'TRUE' | 'FALSE' }` Indique si le message doit être écrit dans le journal des applications Windows lorsqu’il se produit. **\@ WITH_LOG** est de type **varchar (5),** avec false comme valeur par défaut. Si sa valeur est TRUE, l'erreur est automatiquement écrite dans le journal des applications Windows. Si sa valeur est FALSE, l'erreur n'est pas automatiquement écrite dans le journal des applications Windows ; c'est la façon dont elle a été déclenchée qui détermine si l'erreur sera ou non écrite dans le journal. Seuls les membres du rôle de serveur **sysadmin** peuvent utiliser cette option.  
   
 > [!NOTE]  
 >  Si un message est écrit dans le journal des applications Windows, il est également écrit dans le [!INCLUDE[ssDE](../../includes/ssde-md.md)] fichier journal des erreurs.  

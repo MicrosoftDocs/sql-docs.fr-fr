@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.availability_groups_TSQL
 - availability_groups_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: da7fa55f-c008-45d9-bcfc-3513b02d9e71
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: c912d3cb46d4545bf0501281cec23c8f9ce4fb97
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2808ab7ce8d64ed5615a2bf2d2b6500a68d6e88f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101810"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210055"
 ---
 # <a name="sysavailability_groups-transact-sql"></a>sys.availability_groups (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "98101810"
 |**failure_condition_level**|**int**|Niveau de condition d’échec défini par l’utilisateur sous lequel un basculement automatique doit être déclenché, l’une des valeurs entières indiquées dans le tableau situé immédiatement en dessous de cette table.<br /><br /> Les niveaux de condition d’échec (1-5) s’étendent du moins restrictif, le niveau 1, au plus restrictif, le niveau 5. Un niveau de condition donné comprend tous les niveaux moins restrictifs. Par conséquent, le niveau de condition le plus strict, le niveau 5, inclut les quatre niveaux de condition moins restrictifs (1 à 4), le niveau 4 inclut les niveaux 1 à 3, et ainsi de suite.<br /><br /> Pour modifier cette valeur, utilisez l’option FAILURE_CONDITION_LEVEL de l’instruction [ALTER Availability Group](../../t-sql/statements/alter-availability-group-transact-sql.md) [!INCLUDE[tsql](../../includes/tsql-md.md)] .|  
 |**health_check_timeout**|**int**|Délai d’attente (en millisecondes) pour la procédure stockée système [sp_server_diagnostics](../../relational-databases/system-stored-procedures/sp-server-diagnostics-transact-sql.md) pour retourner les informations sur l’intégrité du serveur, avant que l’instance de serveur soit considérée comme lente ou ne répond pas. La valeur par défaut est 30 000 millisecondes (ou 30 secondes).<br /><br /> Pour modifier cette valeur, utilisez l’option HEALTH_CHECK_TIMEOUT de l’instruction [ALTER Availability Group](../../t-sql/statements/alter-availability-group-transact-sql.md) [!INCLUDE[tsql](../../includes/tsql-md.md)] .|  
 |**automated_backup_preference**|**tinyint**|Emplacement par défaut des sauvegardes effectuées sur des bases de données de disponibilité dans ce groupe de disponibilité. Voici les valeurs possibles et leurs descriptions.<br /><br /> <br /><br /> 0 : principal. Les sauvegardes doivent toujours avoir lieu sur le réplica principal.<br /><br /> 1 : secondaire uniquement. Les sauvegardes sur un réplica secondaire sont préférables.<br /><br /> 2 : préférer le réplica secondaire. Les sauvegardes sur un réplica secondaire sont préférables, mais celles sur le réplica principal sont acceptables si aucun réplica secondaire n'est disponible pour les opérations de sauvegarde. Il s'agit du comportement par défaut.<br /><br /> 3 : tout réplica. Aucune préférence : les sauvegardes sont effectuées sur le réplica principal ou sur un réplica secondaire.<br /><br /> <br /><br /> Pour plus d’informations, consultez [Secondaires actifs : Sauvegarde sur des réplicas secondaires &#40;groupes de disponibilité Always On&#41;](../../database-engine/availability-groups/windows/active-secondaries-backup-on-secondary-replicas-always-on-availability-groups.md).|  
-|**automated_backup_preference_desc**|**nvarchar(60)**|Description de **automated_backup_preference**, parmi :<br /><br /> PRIMARY<br /><br /> SECONDARY_ONLY<br /><br /> SECONDARY<br /><br /> NONE|  
+|**automated_backup_preference_desc**|**nvarchar(60)**|Description de **automated_backup_preference**, parmi :<br /><br /> PRIMARY<br /><br /> SECONDARY_ONLY<br /><br /> SECONDARY<br /><br /> Aucune|  
 |**version**|**smallint**|Version des métadonnées du groupe de disponibilité stockées dans le cluster de basculement Windows. Ce numéro de version est incrémenté lors de l’ajout de nouvelles fonctionnalités.|  
 |**basic_features**|**bit**|Spécifie s’il s’agit d’un groupe de disponibilité de base. Pour plus d’informations, consultez [Groupes de disponibilité de base &#40;groupes de disponibilité Always On&#41;](../../database-engine/availability-groups/windows/basic-availability-groups-always-on-availability-groups.md).|  
 |**dtc_support**|**bit**|Spécifie si la prise en charge de DTC a été activée pour ce groupe de disponibilité. L’option **DTC_SUPPORT** de **Create Availability Group** contrôle ce paramètre.|  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysmergearticles
 - sysmergearticles_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: e9b1648e-4660-4688-9f56-18b2baf7228c
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 50d2129741447444b1da2adc82521966a7045530
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 07c85b8560894b8c09060ca08720b521470d1c71
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096108"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211514"
 ---
 # <a name="sysmergearticles-transact-sql"></a>sysmergearticles (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

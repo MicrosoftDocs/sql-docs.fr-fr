@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ODBC SQL grammar, INSERT statement limitations
 - INSERT statement limitations [ODBC]
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: dea05698-527a-41ab-8729-bbed85556185
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 71364b7972fa9d6a0ae6a48909f7c840830ff3eb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c8decef6ed2a17a2aca4b107d46b856b6ba828a4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88449481"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211188"
 ---
 # <a name="insert-statement-limitations"></a>INSERT, instruction - limitations
 Les données insérées sont tronquées à droite sans avertissement si elles sont trop longues pour tenir dans la colonne.  

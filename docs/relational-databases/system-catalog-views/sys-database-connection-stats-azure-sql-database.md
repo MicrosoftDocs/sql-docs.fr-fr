@@ -5,7 +5,7 @@ titleSuffix: Azure SQL Database
 ms.date: 01/28/2019
 ms.service: sql-database
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.database_connection_stats
 - database_connection_stats
@@ -21,12 +21,12 @@ author: WilliamDAssafMSFT
 ms.author: wiassaf
 ms.custom: seo-dt-2019
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: b5d01ec490009c2c3b26dd888bd6050b0638e952
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 948a45e2f9d2dca95bca1c3afbaed419030f47df
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102817"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210354"
 ---
 # <a name="sysdatabase_connection_stats-azure-sql-database"></a>sys.database_connection_stats (Azure SQL Database)
 

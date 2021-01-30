@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ODBC cursor library [ODBC], batches
 - ODBC cursor library [ODBC], statement processing
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 04b93ef9-11de-47a3-8bd8-ba963c42f182
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 7f00d728f8a8b716d27834f82b770d25d8333a56
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d2c70dc742b170f608246eff1bbb12234a26414b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88483212"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209484"
 ---
 # <a name="processing-batches-of-sql-statements"></a>Traitement des lots d’instructions SQL
 > [!IMPORTANT]  

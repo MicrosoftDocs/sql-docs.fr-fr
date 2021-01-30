@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpremotelogin_TSQL
 - sp_helpremotelogin
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 93f50869-2627-4642-899f-8f626f8833f4
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 4b35458a0c99eb14db60a058ef72e98df529c217
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: ff291542fee3d10fe94e9ccd628e05c8f9e77f7b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547974"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210819"
 ---
 # <a name="sp_helpremotelogin-transact-sql"></a>sp_helpremotelogin (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "89547974"
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteDepNextDontUse](../../includes/ssnotedepnextdontuse-md.md)] Utilisez des serveurs liés et des procédures stockées de serveur lié à la place.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,10 +44,10 @@ sp_helpremotelogin [ [ @remoteserver = ] 'remoteserver' ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ @remoteserver **=** ] **'***serveur_distant***'**  
+ [ @remoteserver **=** ] **'**_serveur_distant_*_'_*  
  Nom du serveur distant sur lequel les informations relatives à la connexion distante sont retournées. *serveur_distant* est de **type sysname**, avec NULL comme valeur par défaut. Si *serveur_distant* n’est pas spécifié, des informations sur tous les serveurs distants définis sur le serveur local sont renvoyées.  
   
- [ @remotename **=** ] **'***remote_name***'**  
+ [ @remotename **=** ] **'**_remote_name_*_'_*  
  Connexion distante spécifique du serveur distant. *remote_name* est de **type sysname**, avec NULL comme valeur par défaut. Si *remote_name* n’est pas spécifié, des informations sur tous les utilisateurs distants définis pour *serveur_distant* sont retournées.  
   
 ## <a name="return-code-values"></a>Codet de retour  

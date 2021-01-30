@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addmergepullsubscription_agent
 - sp_addmergepullsubscription_agent_TSQL
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a2f4b086-078d-49b5-8971-8a1e3f6a6feb
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 7ad9425df176a7f822b18ab793d0eada4362c551
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 4ecc9b2fded678671bc608235fa3080f2ed31573
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89530051"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209423"
 ---
 # <a name="sp_addmergepullsubscription_agent-transact-sql"></a>sp_addmergepullsubscription_agent (Transact-SQL)
 
@@ -29,7 +29,7 @@ ms.locfileid: "89530051"
 
   Ajoute un nouveau travail d'Agent permettant de planifier la synchronisation d'un abonnement par extraction de données (pull) à une publication de fusion. Cette procédure stockée est exécutée sur la base de données d'abonnement de l'Abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -132,7 +132,7 @@ sp_addmergepullsubscription_agent [ [ @name = ] 'name' ]
 > [!NOTE]  
 >  Ce paramètre est déconseillé et n'est maintenu que dans un but de compatibilité ascendante avec les scripts déjà établis. Si une valeur est spécifiée pour ce paramètre, un message d'avertissement est retourné, mais la valeur est ignorée.  
   
-`[ @distributor = ] 'distributor'` Nom du serveur de distribution. *Distributor* est de **type sysname**, avec *Publisher*comme valeur par défaut. autrement dit, le serveur de publication est également le serveur de distribution.  
+`[ @distributor = ] 'distributor'` Nom du serveur de distribution. *Distributor* est de **type sysname**, avec *Publisher* comme valeur par défaut. autrement dit, le serveur de publication est également le serveur de distribution.  
   
 `[ @distributor_security_mode = ] distributor_security_mode` Mode de sécurité à utiliser lors de la connexion à un serveur de distribution lors de la synchronisation. *distributor_security_mode* est de **type int**, avec 0 comme valeur par défaut. **0** spécifie [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification. **1** spécifie l’authentification Windows.  
   
@@ -148,7 +148,7 @@ sp_addmergepullsubscription_agent [ [ @name = ] 'name' ]
   
 `[ @encrypted_password = ] encrypted_password` La définition de *encrypted_password* n’est plus prise en charge. Si vous tentez de définir ce paramètre de **bit** sur **1** , une erreur se produit.  
   
-`[ @frequency_type = ] frequency_type` Fréquence de planification de l’Agent de fusion. *frequency_type* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_type = ] frequency_type` Fréquence de planification de l’Agent de fusion. *frequency_type* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -165,7 +165,7 @@ sp_addmergepullsubscription_agent [ [ @name = ] 'name' ]
 > [!NOTE]  
 >  Si vous spécifiez la valeur **64** , le agent de fusion s’exécute en mode continu. Cela correspond à la définition du paramètre **-Continuous** pour l’agent. Pour plus d’informations, voir [Replication Merge Agent](../../relational-databases/replication/agents/replication-merge-agent.md).  
   
-`[ @frequency_interval = ] frequency_interval` Jour ou jours d’exécution de l’Agent de fusion. *frequency_interval* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_interval = ] frequency_interval` Jour ou jours d’exécution de l’Agent de fusion. *frequency_interval* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -181,7 +181,7 @@ sp_addmergepullsubscription_agent [ [ @name = ] 'name' ]
 |**10**|Jours de week-end|  
 |NULL (par défaut)||  
   
-`[ @frequency_relative_interval = ] frequency_relative_interval` Date de la Agent de fusion. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuelle relative). *frequency_relative_interval* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_relative_interval = ] frequency_relative_interval` Date de la Agent de fusion. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuelle relative). *frequency_relative_interval* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -194,7 +194,7 @@ sp_addmergepullsubscription_agent [ [ @name = ] 'name' ]
   
 `[ @frequency_recurrence_factor = ] frequency_recurrence_factor` Facteur de récurrence utilisé par *frequency_type*. *frequency_recurrence_factor* est de **type int**, avec NULL comme valeur par défaut.  
   
-`[ @frequency_subday = ] frequency_subday` Fréquence de replanification au cours de la période définie. *frequency_subday* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_subday = ] frequency_subday` Fréquence de replanification au cours de la période définie. *frequency_subday* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

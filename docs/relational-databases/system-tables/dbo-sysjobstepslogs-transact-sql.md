@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dbo.sysjobstepslogs_TSQL
 - sysjobstepslogs_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 128c25db-0b71-449d-bfb2-38b8abcf24a0
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 815133f093a108d7f1e4b9841ffbd3310b3dd758
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: dbfde8afd7cb387b284ccf0d53a593045c159bec
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097417"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211089"
 ---
 # <a name="dbosysjobstepslogs-transact-sql"></a>dbo.sysjobstepslogs (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

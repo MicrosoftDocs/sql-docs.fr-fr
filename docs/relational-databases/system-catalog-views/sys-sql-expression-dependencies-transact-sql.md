@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.sql_expression_dependencies
 - sql_expression_dependencies_TSQL
@@ -21,12 +21,12 @@ ms.assetid: 78a218e4-bf99-4a6a-acbf-ff82425a5946
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: fb846962b3790d171cd2eea7ee5cdcfebba3f89b
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 34c88c909239e7f9d9fcb12e5b30677708d9cfbc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101777"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210323"
 ---
 # <a name="syssql_expression_dependencies-transact-sql"></a>sys.sql_expression_dependencies (Transact-SQL)
 [!INCLUDE [sql-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdbmi-asa-pdw.md)]
@@ -74,7 +74,7 @@ ms.locfileid: "98101777"
 |Type d'entité|Entité de référence|Entité référencée|  
 |-----------------|------------------------|-----------------------|  
 |Table de charge de travail|Oui*|Oui|  
-|Afficher|Oui|Oui|  
+|Affichage|Oui|Oui|  
 |Index filtré|Oui**|Non|  
 |Statistiques filtrées|Oui**|Non|  
 |[!INCLUDE[tsql](../../includes/tsql-md.md)] procédure stockée * * _|Oui|Oui|  
@@ -86,7 +86,7 @@ ms.locfileid: "98101777"
 |Déclencheur DDL au niveau de la base de données [!INCLUDE[tsql](../../includes/tsql-md.md)]|Oui|Non|  
 |Déclencheur DDL au niveau du serveur [!INCLUDE[tsql](../../includes/tsql-md.md)]|Oui|Non|  
 |Procédures stockées étendues|Non|Oui|  
-|File d'attente|Non|Oui|  
+|File d’attente|Non|Oui|  
 |Synonyme|Non|Oui|  
 |Type (alias et type CLR défini par l'utilisateur)|Non|Oui|  
 |Collection de schémas XML|Non|Oui|  

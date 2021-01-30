@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_refreshsqlmodule_TSQL
 - sp_refreshsqlmodule
@@ -27,19 +27,19 @@ ms.assetid: f0022a05-50dd-4620-961d-361b1681d375
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: dc3be80416180b8e87cacc848a4322e013ce368a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: aee058df3a328c6e580f2a90f4bca5cc243e9a67
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97410500"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210483"
 ---
 # <a name="sp_refreshsqlmodule-transact-sql"></a>sp_refreshsqlmodule (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
 
   Met à jour les métadonnées pour les procédure stockée non liée au schéma, fonction définie par l'utilisateur, vue, déclencheur DML, déclencheur DDL au niveau de la base de données ou déclencheur DDL au niveau du serveur spécifiés dans la base de données actuelle. Les métadonnées persistantes pour ces objets, des types de données des paramètres par exemple, peuvent devenir obsolètes en raison des modifications apportées à leurs objets sous-jacents.
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -68,7 +68,7 @@ sys.sp_refreshsqlmodule [ @name = ] 'module_name'
 ## <a name="return-code-values"></a>Codet de retour  
  0 (réussite) ou un nombre différent de zéro (échec)  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  **sp_refreshsqlmodule** doit être exécutée lorsque des modifications sont apportées aux objets sous-jacents du module qui affectent sa définition. Sinon, le module risque de produire des résultats inattendus en cas d'interrogation ou d'appel. Pour actualiser une vue, vous pouvez utiliser **sp_refreshsqlmodule** ou **sp_refreshview** avec les mêmes résultats.  
   
  **sp_refreshsqlmodule** n’affecte pas les autorisations, les propriétés étendues ou les options SET associées à l’objet.  

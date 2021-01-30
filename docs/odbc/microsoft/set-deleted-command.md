@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SET DELETED command [ODBC]
 ms.assetid: 6b5e0086-156d-471d-8e7f-6c5fa9686cd5
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 60e00af582e0440957c8a4e743624e00f0ba3e58
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6447e2d0c77e1a161df58ca070fae8c624c196a8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88466371"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208639"
 ---
 # <a name="set-deleted-command"></a>SET DELETED, commande
 Spécifie si les enregistrements marqués pour la suppression sont traités et s’ils peuvent être utilisés dans d’autres commandes.  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MStracer_tokens_TSQL
 - MStracer_tokens
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: b273aa48-8188-4213-8e2c-311543c3236f
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: cf6c1736531f926fa5871e56fdcefb7322289897
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2bbd85ea937aee3445d216c35cefe3f61fb494fb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098094"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211557"
 ---
 # <a name="mstracer_tokens-transact-sql"></a>MStracer_tokens (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

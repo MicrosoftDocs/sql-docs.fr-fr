@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_validate_redirected_publisher
 - sp_validate_redirected_publisher_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 2b7fdbad-17e4-4442-b0b2-9b5e8f84b91d
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 42184546069fb5358fbdc8863998b7bda74f89a4
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: dd0e7a98d9f9a5886d829c5567d91795ca388b6a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89534753"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211313"
 ---
 # <a name="sp_validate_redirected_publisher-transact-sql"></a>sp_validate_redirected_publisher (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Vérifie que l'hôte actuel de la base de données de publication peut prendre en charge la réplication. Doit être exécutée à partir d'une base de données de distribution. Cette procédure est appelée par **sp_get_redirected_publisher**.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -54,7 +54,7 @@ ms.locfileid: "89534753"
  Aucun.  
   
 ## <a name="remarks"></a>Notes  
- Si aucune entrée n’existe pour le serveur de publication et la base de données de publication, **sp_validate_redirected_publisher** retourne la valeur null dans le paramètre de sortie * \@ redirected_publisher*. Si une entrée existe, elle est retournée dans le paramètre de sortie dans les deux cas (réussite et échec).  
+ Si aucune entrée n’existe pour le serveur de publication et la base de données de publication, **sp_validate_redirected_publisher** retourne la valeur null dans le paramètre de sortie *\@ redirected_publisher*. Si une entrée existe, elle est retournée dans le paramètre de sortie dans les deux cas (réussite et échec).  
   
  Si la validation réussit, **sp_validate_redirected_publisher** retourne une indication de réussite.  
   

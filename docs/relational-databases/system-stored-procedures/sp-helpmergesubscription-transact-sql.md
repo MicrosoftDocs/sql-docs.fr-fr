@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpmergesubscription
 - sp_helpmergesubscription_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: da564112-f769-4e67-9251-5699823e8c86
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 48d40b3209311968443a6c6d2b713b4aa1e3d43a
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 274048dcfcd76e815d3f4ec159dded0571f66e43
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89535192"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210891"
 ---
 # <a name="sp_helpmergesubscription-transact-sql"></a>sp_helpmergesubscription (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Renvoie des informations sur un abonnement à une publication de fusion, par envoi (push) et par extraction (pull) de données. Cette procédure stockée est exécutée sur la base de données de publication du serveur de publication ou sur la base de données d'abonnement d'un Abonné de republication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,13 +48,13 @@ sp_helpmergesubscription [ [ @publication=] 'publication']
   
 `[ @subscriber = ] 'subscriber'` Nom de l’abonné. *Subscriber* est de **type sysname**, avec la valeur par défaut **%** . Si le paramètre a la valeur NULL ou %, des informations sur tous les abonnements à la publication donnée sont renvoyées.  
   
-`[ @subscriber_db = ] 'subscriber_db'` Nom de la base de données d’abonnement. *subscriber_db*est de **type sysname**, avec la valeur par défaut **%** , qui retourne des informations sur toutes les bases de données d’abonnement.  
+`[ @subscriber_db = ] 'subscriber_db'` Nom de la base de données d’abonnement. *subscriber_db* est de **type sysname**, avec la valeur par défaut **%** , qui retourne des informations sur toutes les bases de données d’abonnement.  
   
-`[ @publisher = ] 'publisher'` Nom du serveur de publication. Le serveur de publication doit être un serveur valide. *Publisher*est de **type sysname**, avec la valeur par défaut **%** , qui retourne des informations sur tous les serveurs de publication.  
+`[ @publisher = ] 'publisher'` Nom du serveur de publication. Le serveur de publication doit être un serveur valide. *Publisher* est de **type sysname**, avec la valeur par défaut **%** , qui retourne des informations sur tous les serveurs de publication.  
   
-`[ @publisher_db = ] 'publisher_db'` Nom de la base de données du serveur de publication. *publisher_db*est de **type sysname**, avec la valeur par défaut **%** , qui retourne des informations sur toutes les bases de données du serveur de publication.  
+`[ @publisher_db = ] 'publisher_db'` Nom de la base de données du serveur de publication. *publisher_db* est de **type sysname**, avec la valeur par défaut **%** , qui retourne des informations sur toutes les bases de données du serveur de publication.  
   
-`[ @subscription_type = ] 'subscription_type'` Type d’abonnement. *subscription_type*est de type **nvarchar (15)** et peut prendre l’une des valeurs suivantes.  
+`[ @subscription_type = ] 'subscription_type'` Type d’abonnement. *subscription_type* est de type **nvarchar (15)** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -62,7 +62,7 @@ sp_helpmergesubscription [ [ @publication=] 'publication']
 |**collecter**|Abonnement par extraction de données (pull)|  
 |**versions**|Abonnement par envoi (push) et par extraction (pull) de données|  
   
-`[ @found = ] 'found'OUTPUT` Indicateur qui signale le retour de lignes. *valeur*de **type int** et paramètre de sortie, avec NULL comme valeur par défaut. **1** indique que la publication est trouvée. **0** indique que la publication est introuvable.  
+`[ @found = ] 'found'OUTPUT` Indicateur qui signale le retour de lignes. *valeur* de **type int** et paramètre de sortie, avec NULL comme valeur par défaut. **1** indique que la publication est trouvée. **0** indique que la publication est introuvable.  
   
 ## <a name="result-sets"></a>Jeux de résultats  
   
@@ -96,7 +96,7 @@ sp_helpmergesubscription [ [ @publication=] 'publication']
 ## <a name="remarks"></a>Notes  
  **sp_helpmergesubscription** est utilisé dans la réplication de fusion pour retourner les informations d’abonnement stockées sur le serveur de publication ou sur l’abonné de republication.  
   
- Pour les abonnements anonymes, la valeur *subscription_type*est toujours **1** (extraction). Toutefois, vous devez exécuter [sp_helpmergepullsubscription](../../relational-databases/system-stored-procedures/sp-helpmergepullsubscription-transact-sql.md) sur l’abonné pour obtenir des informations sur les abonnements anonymes.  
+ Pour les abonnements anonymes, la valeur *subscription_type* est toujours **1** (extraction). Toutefois, vous devez exécuter [sp_helpmergepullsubscription](../../relational-databases/system-stored-procedures/sp-helpmergepullsubscription-transact-sql.md) sur l’abonné pour obtenir des informations sur les abonnements anonymes.  
   
 ## <a name="permissions"></a>Autorisations  
  Seuls les membres du rôle serveur fixe **sysadmin** , le rôle de base de données fixe **db_owner** ou la liste d’accès à la publication pour la publication à laquelle appartient l’abonnement peuvent exécuter **sp_helpmergesubscription**.  

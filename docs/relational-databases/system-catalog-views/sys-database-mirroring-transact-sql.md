@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.database_mirroring
 - database_mirroring
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 480de2b0-2c16-497d-a6a3-bf7f52a7c9a0
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 7ecce00c7981f59cfa1d145336e757b3d443379b
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 6e6d3eb98654d2fd5cf539b3052e9b96f877fa37
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093136"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209500"
 ---
 # <a name="sysdatabase_mirroring-transact-sql"></a>sys.database_mirroring (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

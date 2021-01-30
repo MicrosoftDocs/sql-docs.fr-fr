@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - service_contract_usages
 - sys.service_contract_usages
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 20af425e-1152-4a46-b1ac-94cff5fc9f02
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 0a45631f2abc9db25428cd095e50aa1add456b08
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 235f3439f31284756d008a4eff1ae47ec115cb81
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096739"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211237"
 ---
 # <a name="sysservice_contract_usages-transact-sql"></a>sys.service_contract_usages (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_trace_setfilter
 - sp_trace_setfilter_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 11e7c7ac-a581-4a64-bb15-9272d5c1f7ac
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 8edccbecb7d5a44b2fc8a5eed2297498c0f94bae
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: b068b4659b3c3205aa52d6ebffc0daf680c3cd9d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547835"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209713"
 ---
 # <a name="sp_trace_setfilter-transact-sql"></a>sp_trace_setfilter (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "89547835"
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Utilisez plutôt des événements étendus.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -93,7 +93,7 @@ sp_trace_setfilter [ @traceid = ] trace_id
 |16|La fonction n'est pas valide pour cette trace.|  
   
 ## <a name="remarks"></a>Notes  
- **sp_trace_setfilter** est une [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] procédure stockée qui effectue un grand nombre des actions précédemment exécutées par les procédures stockées étendues disponibles dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Utilisez **sp_trace_setfilter** au lieu des procédures stockées étendues du ** \* filtre xp_trace_set** pour créer, appliquer, supprimer ou manipuler des filtres sur des traces. Pour plus d’informations, consultez [Filtrer une trace](../../relational-databases/sql-trace/filter-a-trace.md).  
+ **sp_trace_setfilter** est une [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] procédure stockée qui effectue un grand nombre des actions précédemment exécutées par les procédures stockées étendues disponibles dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Utilisez **sp_trace_setfilter** au lieu des procédures stockées étendues du **\* filtre xp_trace_set** pour créer, appliquer, supprimer ou manipuler des filtres sur des traces. Pour plus d’informations, consultez [Filtrer une trace](../../relational-databases/sql-trace/filter-a-trace.md).  
   
  Tous les filtres d’une colonne particulière doivent être activés ensemble au cours d’une exécution de **sp_trace_setfilter**. Par exemple, si un utilisateur décide d'appliquer deux filtres sur la colonne Nom d'application et un filtre sur la colonne Nom d'utilisateur, il doit spécifier les filtres sur le nom d'application de manière séquentielle. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] retourne une erreur si l'utilisateur tente de spécifier un filtre sur le nom d'application dans un appel de procédure stockée, suivi d'un filtre sur le nom d'utilisateur, puis d'un autre filtre sur le nom d'application.  
   

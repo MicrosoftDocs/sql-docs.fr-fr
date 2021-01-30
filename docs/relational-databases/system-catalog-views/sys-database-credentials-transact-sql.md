@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.database_credentials
 - sys.database_credentials_TSQL
@@ -19,12 +19,12 @@ ms.assetid: 796322df-e62a-45bf-b519-89e1d521abce
 author: VanMSFT
 ms.author: vanto
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 6da257b97cecdba1dd6e4f485803e5833f3ed9ee
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 34cce7cfe00a3c944d87ce522a52132e7aba532f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482890"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210368"
 ---
 # <a name="sysdatabase_credentials-transact-sql"></a>sys.database_credentials (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_cursorunprepare_TSQL
 - sp_cursorunprepare
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: b46d4813-c4a9-4f9d-9979-2b5082ecf06a
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: a34376a8c7c6f88c89ffc2934abc3324141b2405
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 2b15e39aa20c9ced1fa289eff2223a11505665b3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549927"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209741"
 ---
 # <a name="sp_cursorunprepare-transact-sql"></a>sp_cursorunprepare (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Ignore le plan d’exécution développé dans la procédure stockée sp_cursorprepare. sp_cursorunprepare est appelée en spécifiant ID = 6 dans un paquet tabular data stream (TDS).  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

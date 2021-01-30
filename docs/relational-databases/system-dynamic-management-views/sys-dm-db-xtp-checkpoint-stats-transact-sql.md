@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: in-memory-oltp
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_db_xtp_checkpoint_stats
 - dm_db_xtp_checkpoint_stats_TSQL
@@ -21,12 +21,12 @@ ms.assetid: 8d0b18ca-db4d-4376-9905-3e4457727c46
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 2fa75ed45028187c4855aaf80f25f9a30c6000c7
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: b6211155c51a2751e3f4625a4c838bec29695905
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171451"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210896"
 ---
 # <a name="sysdm_db_xtp_checkpoint_stats-transact-sql"></a>sys.dm_db_xtp_checkpoint_stats (Transact-SQL)
 [!INCLUDE[sql-asdb-asdbmi](../../includes/applies-to-version/sql-asdb-asdbmi.md)]

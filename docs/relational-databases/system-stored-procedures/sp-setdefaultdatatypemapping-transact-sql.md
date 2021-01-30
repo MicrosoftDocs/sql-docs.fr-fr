@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_setdefaultdatatypemapping
 - sp_setdefaultdatatypemapping_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 7394e8ca-4ce1-4e99-a784-205007c2c248
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 6a712ecb629090947b0612844ce6049540b7359a
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 46b17720b7d57110dc334a425976bf621a1395bb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89534950"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209248"
 ---
 # <a name="sp_setdefaultdatatypemapping-transact-sql"></a>sp_setdefaultdatatypemapping (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Marque un mappage de type de données existant entre [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et un [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] système de gestion de base de données (SGBD) non défini comme valeur par défaut. Cette procédure stockée est exécutée sur n’importe quelle base de données du serveur de distribution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -57,7 +57,7 @@ sp_setdefaultdatatypemapping [ [ @mapping_id = ] mapping_id ]
 ## <a name="arguments"></a>Arguments  
 `[ @mapping_id = ] mapping_id` Identifie un mappage de type de données existant.  *mapping_id* est de **type int**, avec NULL comme valeur par défaut. Si vous spécifiez *mapping_id*, les autres paramètres ne sont pas requis.  
   
-`[ @source_dbms = ] 'source_dbms'` Nom du SGBD à partir duquel les types de données sont mappés. *source_dbms* est de **type sysname**et peut prendre l’une des valeurs suivantes.  
+`[ @source_dbms = ] 'source_dbms'` Nom du SGBD à partir duquel les types de données sont mappés. *source_dbms* est de **type sysname** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -85,7 +85,7 @@ sp_setdefaultdatatypemapping [ [ @mapping_id = ] mapping_id ]
   
 `[ @source_nullable = ] source_nullable` Indique si le type de données du SGBD source prend en charge la valeur NULL. *source_nullable* est de type **bit**, avec NULL comme valeur par défaut. **1** signifie que les valeurs NULL sont prises en charge.  
   
-`[ @destination_dbms = ] 'destination_dbms'` Nom du SGBD de destination. *destination_dbms* est de **type sysname**et peut prendre l’une des valeurs suivantes.  
+`[ @destination_dbms = ] 'destination_dbms'` Nom du SGBD de destination. *destination_dbms* est de **type sysname** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

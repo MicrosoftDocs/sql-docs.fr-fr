@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_publisherproperty
 - sp_publisherproperty_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 0ed1ebc1-a1bd-4aed-9f46-615c5cf07827
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 459e5c7c702f01cbae74843e4ed8b3152d25626f
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 80e2e9eda3d6a4f900c4ab9f8e48dc783d23cd2d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89534968"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210048"
 ---
 # <a name="sp_publisherproperty-transact-sql"></a>sp_publisherproperty (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Affiche ou modifie les propriétés du serveur de publication qui ne sont pas des serveurs de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] publication. Cette procédure stockée est exécutée sur le serveur de distribution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,7 +42,7 @@ sp_publisherproperty [ @publisher = ] 'publisher'
 ## <a name="arguments"></a>Arguments  
 `[ @publisher = ] 'publisher'` Nom du serveur de publication hétérogène. *Publisher* est de **type sysname**, sans valeur par défaut.  
   
-`[ @propertyname = ] 'propertyname'` Nom de la propriété en cours de définition. *PropertyName* est de **type sysname**et peut prendre l’une des valeurs suivantes.  
+`[ @propertyname = ] 'propertyname'` Nom de la propriété en cours de définition. *PropertyName* est de **type sysname** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

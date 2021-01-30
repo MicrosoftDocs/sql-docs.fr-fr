@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MStracer_history
 - MStracer_history_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 97237a0c-d574-4b17-8a94-1a8730b31d98
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 28870d4ac04cbe6e3481e974320f5b00d06e7753
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c419865662e3a88bf327035376ddc8a383dbd591
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098108"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211570"
 ---
 # <a name="mstracer_history-transact-sql"></a>MStracer_history (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

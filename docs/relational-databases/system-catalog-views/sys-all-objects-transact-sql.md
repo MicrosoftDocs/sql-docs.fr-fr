@@ -6,7 +6,7 @@ ms.date: 05/20/2020
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.all_objects
 - all_objects_TSQL
@@ -20,12 +20,12 @@ ms.assetid: 547e4be4-a8e4-48ce-9d8d-37b169985081
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 39395b18422259219f43ddc34ac96af389490b84
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 3d6d4656dc6db736c319b15e8b02cfbc859741a6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102187"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209051"
 ---
 # <a name="sysall_objects-transact-sql"></a>sys.all_objects (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

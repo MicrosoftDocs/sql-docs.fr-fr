@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.assembly_files
 - assembly_files_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 1a384a2c-5556-4d12-a2ba-4da781363143
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: b8613a3f35a7cb7f4d0ca49167583abcf837c852
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 9af5957393c7a253d65abdab7c560696921a0d5a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102858"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210078"
 ---
 # <a name="sysassembly_files-transact-sql"></a>sys.assembly_files (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

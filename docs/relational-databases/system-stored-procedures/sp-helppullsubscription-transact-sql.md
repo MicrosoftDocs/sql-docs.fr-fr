@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helppullsubscription_TSQL
 - sp_helppullsubscription
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: a0d9c3f1-1fe9-497c-8e2f-5b74f47a7346
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: abad011197d58876915ce242c4c38198b13105ab
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 3e7711e7034190f5862d512c3da02df685c3aaf5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89535174"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210851"
 ---
 # <a name="sp_helppullsubscription-transact-sql"></a>sp_helppullsubscription (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Affiche des informations relatives à un ou plusieurs abonnements de l'Abonné. Cette procédure stockée est exécutée sur la base de données d'abonnement de l'Abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,7 +47,7 @@ sp_helppullsubscription [ [ @publisher = ] 'publisher' ]
   
 `[ @publication = ] 'publication'` Nom de la publication. *publication* est de **type sysname**, avec la valeur par défaut **%** , qui retourne toutes les publications. Si ce paramètre est égal à ALL, seuls les abonnements par extraction avec independent_agent = **0** sont retournés.  
   
-`[ @show_push = ] 'show_push'` Indique si tous les abonnements par envoi de notification doivent être retournés. *show_push*est de type **nvarchar (5)**, avec false comme valeur par défaut, qui ne retourne pas d’abonnements par envoi de notification.  
+`[ @show_push = ] 'show_push'` Indique si tous les abonnements par envoi de notification doivent être retournés. *show_push* est de type **nvarchar (5)**, avec false comme valeur par défaut, qui ne retourne pas d’abonnements par envoi de notification.  
   
 ## <a name="result-sets"></a>Jeux de résultats  
   

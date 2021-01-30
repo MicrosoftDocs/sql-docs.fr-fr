@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLFetch
 apilocation:
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 6c6611d2-bc6a-4390-87c9-1c5dd9cfe07c
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f13aabcf19968873683bf12bcde5bb006422e260
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 095a1ca4a67122344926d9ca363dd9f05205c48b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88476097"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209798"
 ---
 # <a name="sqlfetch-function"></a>SQLFetch, fonction
 **Conformité**  
@@ -40,7 +40,7 @@ ms.locfileid: "88476097"
 ```cpp  
   
 SQLRETURN SQLFetch(  
-     SQLHSTMT     StatementHandle);  
+     SQLHSTMT     StatementHandle);  
 ```  
   
 ## <a name="arguments"></a>Arguments  
@@ -55,14 +55,14 @@ SQLRETURN SQLFetch(
   
  Pour tous les SQLSTATEs qui peuvent retourner des SQL_SUCCESS_WITH_INFO ou des SQL_ERROR (à l’exception de 01xxx SQLSTATEs), SQL_SUCCESS_WITH_INFO est retourné si une erreur se produit sur une ou plusieurs lignes, mais pas toutes, sur les lignes d’une opération multiligne, et SQL_ERROR est retournée si une erreur se produit sur une opération à une seule ligne.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur|Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information spécifique au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |01004|Données de chaîne, tronquées à droite|Les données binaires ou de chaîne retournées pour une colonne ont entraîné la troncation d’un caractère non vide ou de données binaires non NULL. S’il s’agit d’une valeur de chaîne, elle a été tronquée à droite.|  
 |01S01|Erreur dans la ligne|Une erreur s’est produite lors de l’extraction d’une ou plusieurs lignes.<br /><br /> (Si ce SQLSTATE est retourné lorsqu’une application ODBC 3 *. x* utilise un pilote ODBC 2 *. x* , elle peut être ignorée.)|  
 |01S07|Troncation fractionnaire|Les données retournées pour une colonne ont été tronquées. Pour les types de données numériques, la partie fractionnaire du nombre a été tronquée. Pour les types de données time, timestamp et Interval qui contiennent un composant heure, la partie fractionnaire de l’heure a été tronquée.<br /><br /> (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |07006|Violation d’attribut de type de données restreint|La valeur des données d’une colonne du jeu de résultats n’a pas pu être convertie dans le type de données spécifié par *TargetType* dans **SQLBindCol**.<br /><br /> La colonne 0 a été liée avec un type de données de SQL_C_BOOKMARK, et l’attribut d’instruction SQL_ATTR_USE_BOOKMARKS a été défini sur SQL_UB_VARIABLE.<br /><br /> La colonne 0 a été liée avec un type de données de SQL_C_VARBOOKMARK, et l’attribut d’instruction SQL_ATTR_USE_BOOKMARKS n’a pas la valeur SQL_UB_VARIABLE.|  
-|07009|Index de descripteur non valide|Le pilote était un pilote ODBC 2 *. x* qui ne prend pas en charge **SQLExtendedFetch**et un numéro de colonne spécifié dans la liaison d’une colonne était 0.<br /><br /> La colonne 0 a été liée et l’attribut d’instruction SQL_ATTR_USE_BOOKMARKS a été défini sur SQL_UB_OFF.|  
+|07009|Index de descripteur non valide|Le pilote était un pilote ODBC 2 *. x* qui ne prend pas en charge **SQLExtendedFetch** et un numéro de colonne spécifié dans la liaison d’une colonne était 0.<br /><br /> La colonne 0 a été liée et l’attribut d’instruction SQL_ATTR_USE_BOOKMARKS a été défini sur SQL_UB_OFF.|  
 |08S01|Échec de la liaison de communication|Le lien de communication entre le pilote et la source de données à laquelle le pilote a été connecté a échoué avant la fin du traitement de la fonction.|  
 |22001|Données de chaîne, tronquées à droite|Un signet de longueur variable retourné pour une colonne a été tronqué.|  
 |22002|Variable d’indicateur requise mais non fournie|Les données NULL ont été extraites dans une colonne dont la *StrLen_or_IndPtr* définie par **SQLBindCol** (ou SQL_DESC_INDICATOR_PTR définie par **SQLSetDescField** ou **SQLSetDescRec**) était un pointeur null.|  
@@ -74,12 +74,12 @@ SQLRETURN SQLFetch(
 |24 000|État de curseur non valide|*StatementHandle* était dans un état d’exécution, mais aucun jeu de résultats n’a été associé à *StatementHandle*.|  
 |40001|Échec de la sérialisation|La transaction dans laquelle l’extraction a été exécutée a été interrompue pour empêcher un blocage.|  
 |40003|Saisie semi-automatique des instructions inconnue|La connexion associée a échoué pendant l’exécution de cette fonction et l’état de la transaction ne peut pas être déterminé.|  
-|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon * \* MessageText* décrit l’erreur et sa cause.|  
+|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon *\* MessageText* décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|Le pilote n’a pas pu allouer de la mémoire requise pour prendre en charge l’exécution ou l’achèvement de la fonction.|  
 |HY008|Opération annulée|Le traitement asynchrone a été activé pour *StatementHandle*. La fonction **SQLFetch** a été appelée, et avant la fin de l’exécution, **SQLCancel** ou **SQLCancelHandle** a été appelé sur le *StatementHandle*. La fonction **SQLFetch** a ensuite été appelée à nouveau sur le *StatementHandle*.<br /><br /> Ou bien, la fonction  **SQLFetch** a été appelée et avant la fin de l’exécution, **SQLCancel** ou **SQLCancelHandle** a été appelé sur le *StatementHandle* à partir d’un thread différent dans une application multithread.|  
-|HY010|Erreur de séquence de fonction|(DM) une fonction d’exécution asynchrone a été appelée pour le handle de connexion associé à *StatementHandle*. Cette fonction asynchrone était toujours en cours d’exécution lors de l’appel de la fonction **SQLFetch** .<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**ou **SQLMoreResults** a été appelé pour *StatementHandle* et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.<br /><br /> (DM) le *StatementHandle* spécifié n’était pas dans un état d’exécution. La fonction a été appelée sans appeler d’abord **SQLExecDirect**, **SQLExecute** ou une fonction de catalogue.<br /><br /> (DM) une fonction d’exécution asynchrone (pas celle-ci) a été appelée pour le *StatementHandle* et était toujours en cours d’exécution quand cette fonction a été appelée.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations**ou **SQLSetPos** a été appelé pour *StatementHandle* et retourné SQL_NEED_DATA. Cette fonction a été appelée avant l’envoi des données pour l’ensemble des paramètres ou des colonnes de données en cours d’exécution.<br /><br /> (DM) **SQLFetch** a été appelée pour *StatementHandle* après l’appel de **SQLExtendedFetch** et avant l’appel de **SQLFreeStmt** avec l’option SQL_CLOSE.|  
+|HY010|Erreur de séquence de fonction|(DM) une fonction d’exécution asynchrone a été appelée pour le handle de connexion associé à *StatementHandle*. Cette fonction asynchrone était toujours en cours d’exécution lors de l’appel de la fonction **SQLFetch** .<br /><br /> (DM) **SQLExecute**, **SQLExecDirect** ou **SQLMoreResults** a été appelé pour *StatementHandle* et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.<br /><br /> (DM) le *StatementHandle* spécifié n’était pas dans un état d’exécution. La fonction a été appelée sans appeler d’abord **SQLExecDirect**, **SQLExecute** ou une fonction de catalogue.<br /><br /> (DM) une fonction d’exécution asynchrone (pas celle-ci) a été appelée pour le *StatementHandle* et était toujours en cours d’exécution quand cette fonction a été appelée.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations** ou **SQLSetPos** a été appelé pour *StatementHandle* et retourné SQL_NEED_DATA. Cette fonction a été appelée avant l’envoi des données pour l’ensemble des paramètres ou des colonnes de données en cours d’exécution.<br /><br /> (DM) **SQLFetch** a été appelée pour *StatementHandle* après l’appel de **SQLExtendedFetch** et avant l’appel de **SQLFreeStmt** avec l’option SQL_CLOSE.|  
 |HY013|Erreur de gestion de la mémoire|Impossible de traiter l’appel de fonction, car les objets mémoire sous-jacents sont inaccessibles, probablement en raison de conditions de mémoire insuffisante.|  
-|HY090|Longueur de chaîne ou de mémoire tampon non valide|L’attribut d’instruction SQL_ATTR_USE_BOOKMARK a été défini sur SQL_UB_VARIABLE et la colonne 0 était liée à une mémoire tampon dont la longueur n’était pas égale à la longueur maximale du signet pour ce jeu de résultats. (Cette longueur est disponible dans le champ SQL_DESC_OCTET_LENGTH de la IRD et peut être obtenue en appelant **SQLDescribeCol**, **SQLColAttribute**ou **SQLGetDescField**.)|  
+|HY090|Longueur de chaîne ou de mémoire tampon non valide|L’attribut d’instruction SQL_ATTR_USE_BOOKMARK a été défini sur SQL_UB_VARIABLE et la colonne 0 était liée à une mémoire tampon dont la longueur n’était pas égale à la longueur maximale du signet pour ce jeu de résultats. (Cette longueur est disponible dans le champ SQL_DESC_OCTET_LENGTH de la IRD et peut être obtenue en appelant **SQLDescribeCol**, **SQLColAttribute** ou **SQLGetDescField**.)|  
 |HY107|Valeur de ligne hors limites|La valeur spécifiée avec l’attribut d’instruction SQL_ATTR_CURSOR_TYPE était SQL_CURSOR_KEYSET_DRIVEN, mais la valeur spécifiée avec l’attribut d’instruction SQL_ATTR_KEYSET_SIZE était supérieure à 0 et inférieure à la valeur spécifiée avec l’attribut d’instruction SQL_ATTR_ROW_ARRAY_SIZE.|  
 |HY117|La connexion est interrompue en raison d’un état de transaction inconnu. Seules les fonctions de déconnexion et de lecture seule sont autorisées.|(DM) pour plus d’informations sur l’état suspendu, consultez [fonction SQLEndTran](../../../odbc/reference/syntax/sqlendtran-function.md).|  
 |HYC00|Fonctionnalité facultative non implémentée|Le pilote ou la source de données ne prend pas en charge la conversion spécifiée par la combinaison du *TargetType* dans **SQLBindCol** et du type de données SQL de la colonne correspondante.|  
@@ -92,7 +92,7 @@ SQLRETURN SQLFetch(
 ## <a name="comments"></a>Commentaires  
  **SQLFetch** retourne l’ensemble de lignes suivant dans le jeu de résultats. Elle peut être appelée uniquement lorsqu’un jeu de résultats existe : autrement dit, après un appel qui crée un jeu de résultats et avant la fermeture du curseur sur ce jeu de résultats. Si des colonnes sont liées, elles retournent les données dans ces colonnes. Si l’application a spécifié un pointeur vers un tableau d’état de ligne ou une mémoire tampon dans laquelle retourner le nombre de lignes extraites, **SQLFetch** retourne également ces informations. Les appels à **SQLFetch** peuvent être mélangés avec des appels à **SQLFetchScroll** , mais ne peuvent pas être mélangés avec des appels à **SQLExtendedFetch**. Pour plus d’informations, consultez [extraction d’une ligne de données](../../../odbc/reference/develop-app/fetching-a-row-of-data.md).  
   
- Si une application ODBC*3. x* fonctionne avec un pilote ODBC 2 *. x* , le gestionnaire de pilotes mappe les appels **SQLFetch** à **SQLExtendedFetch** pour un pilote ODBC 2 *. x* qui prend en charge **SQLExtendedFetch**. Si le pilote ODBC 2 *. x* ne prend pas en charge **SQLExtendedFetch**, le gestionnaire de pilotes mappe les appels **SQLFetch** à **SQLFetch** dans le pilote ODBC 2 *. x* , qui ne peut extraire qu’une seule ligne.  
+ Si une application ODBC *3. x* fonctionne avec un pilote ODBC 2 *. x* , le gestionnaire de pilotes mappe les appels **SQLFetch** à **SQLExtendedFetch** pour un pilote ODBC 2 *. x* qui prend en charge **SQLExtendedFetch**. Si le pilote ODBC 2 *. x* ne prend pas en charge **SQLExtendedFetch**, le gestionnaire de pilotes mappe les appels **SQLFetch** à **SQLFetch** dans le pilote ODBC 2 *. x* , qui ne peut extraire qu’une seule ligne.  
   
  Pour plus d’informations, consultez [curseurs de bloc, curseurs avec défilement et compatibilité descendante](../../../odbc/reference/appendixes/block-cursors-scrollable-cursors-and-backward-compatibility.md) dans l’annexe G : instructions relatives aux pilotes pour la compatibilité descendante.  
   
@@ -108,7 +108,7 @@ SQLRETURN SQLFetch(
 |Condition|Première ligne du nouvel ensemble de lignes|  
 |---------------|-----------------------------|  
 |Avant le début|1|  
-|*CurrRowsetStart* \< CurrRowsetStart =  *LastResultRow-RowsetSize*[1]|*CurrRowsetStart*  +  *RowsetSize*[2]|  
+| \< CurrRowsetStart =  *LastResultRow-RowsetSize*[1]|*CurrRowsetStart*  +  *RowsetSize*[2]|  
 |*CurrRowsetStart*  >  *LastResultRow-RowsetSize*[1]|Après la fin|  
 |Après la fin|Après la fin|  
   
@@ -172,7 +172,7 @@ SQLRETURN SQLFetch(
  Le contenu de la mémoire tampon de données liée et de la mémoire tampon de longueur/d’indicateur n’est pas défini si **SQLFetch** ou **SQLFetchScroll** ne retourne pas SQL_SUCCESS ou SQL_SUCCESS_WITH_INFO.  
   
 ## <a name="row-status-array"></a>Tableau d’état des lignes  
- Le tableau d’état de ligne est utilisé pour retourner l’état de chaque ligne de l’ensemble de lignes. L’adresse de ce tableau est spécifiée avec l’attribut d’instruction SQL_ATTR_ROW_STATUS_PTR. Le tableau est alloué par l’application et doit avoir autant d’éléments que spécifiés par l’attribut d’instruction SQL_ATTR_ROW_ARRAY_SIZE. Ses valeurs sont définies par **SQLFetch**, **SQLFetchScroll**et **SQLBulkOperations** ou **SQLSetPos** (sauf si elles ont été appelées après que le curseur a été positionné par **SQLExtendedFetch**). Si la valeur de l’attribut d’instruction SQL_ATTR_ROW_STATUS_PTR est un pointeur null, ces fonctions ne retournent pas l’état de la ligne.  
+ Le tableau d’état de ligne est utilisé pour retourner l’état de chaque ligne de l’ensemble de lignes. L’adresse de ce tableau est spécifiée avec l’attribut d’instruction SQL_ATTR_ROW_STATUS_PTR. Le tableau est alloué par l’application et doit avoir autant d’éléments que spécifiés par l’attribut d’instruction SQL_ATTR_ROW_ARRAY_SIZE. Ses valeurs sont définies par **SQLFetch**, **SQLFetchScroll** et **SQLBulkOperations** ou **SQLSetPos** (sauf si elles ont été appelées après que le curseur a été positionné par **SQLExtendedFetch**). Si la valeur de l’attribut d’instruction SQL_ATTR_ROW_STATUS_PTR est un pointeur null, ces fonctions ne retournent pas l’état de la ligne.  
   
  Le contenu de la mémoire tampon du tableau d’état des lignes n’est pas défini si **SQLFetch** ou **SQLFetchScroll** ne retourne pas SQL_SUCCESS ou SQL_SUCCESS_WITH_INFO.  
   
@@ -210,7 +210,7 @@ SQLRETURN SQLFetch(
  Si un avertissement s’applique à la fonction entière, **SQLFetch** retourne SQL_SUCCESS_WITH_INFO et le SQLSTATE applicable. Les enregistrements d’État pour les avertissements qui s’appliquent à la fonction entière sont retournés avant les enregistrements d’État qui s’appliquent à des lignes individuelles.  
   
 #### <a name="errors-and-warnings-in-individual-rows"></a>Erreurs et avertissements dans des lignes individuelles  
- Si une erreur (telle que SQLSTATE 22012 (division par zéro)) ou un avertissement (tel que SQLSTATE 01004 (données tronquées)) s’applique à une seule ligne, **SQLFetch**effectue les opérations suivantes :  
+ Si une erreur (telle que SQLSTATE 22012 (division par zéro)) ou un avertissement (tel que SQLSTATE 01004 (données tronquées)) s’applique à une seule ligne, **SQLFetch** effectue les opérations suivantes :  
   
 -   Définit l’élément correspondant du tableau d’état de ligne à SQL_ROW_ERROR pour les erreurs ou les SQL_ROW_SUCCESS_WITH_INFO pour les avertissements.  
   

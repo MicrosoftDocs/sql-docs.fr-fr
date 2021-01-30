@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 31f2df90-651f-4699-8067-19f59b60904f
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c5805fd84eb9bce1092cdfae59a9711c2d63edb8
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: e01c89ef3903e78b8ba312914c97eed61bd8757e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102062"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208900"
 ---
 # <a name="system-base-tables"></a>Tables de base système
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

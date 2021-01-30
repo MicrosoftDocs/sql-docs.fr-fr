@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - log_shipping_monitor_primary
 - log_shipping_monitor_primary_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 5f629a29-1a62-40e6-ae33-6f6b7dd09a36
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 076398da53bf4886a0b8e3f387df949d29cb8b03
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 8511681e673429cbe45ef3885e72fb6c5e8009e1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098690"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209642"
 ---
 # <a name="log_shipping_monitor_primary-transact-sql"></a>log_shipping_monitor_primary (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

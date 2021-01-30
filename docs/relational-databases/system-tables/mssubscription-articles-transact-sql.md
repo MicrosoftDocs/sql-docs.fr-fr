@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSsubscription_articles
 - MSsubscription_articles_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: dbc1737f-261e-4017-b9cd-703b9fc4ac78
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c8ae84063723c76745776a4e530f7fb8d63b008a
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 16d9d91b7c3948f18d90b235c4f853d1220c5380
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098510"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211600"
 ---
 # <a name="mssubscription_articles-transact-sql"></a>MSsubscription_articles (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

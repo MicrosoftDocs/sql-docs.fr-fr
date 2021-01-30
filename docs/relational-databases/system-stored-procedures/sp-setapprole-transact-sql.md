@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_setapprole
 - sp_setapprole_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: cf0901c0-5f90-42d4-9d5b-8772c904062d
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 0513878f65513e57a6e26bb52d8101ba6c5d672c
-ms.sourcegitcommit: 2144a22ad4380182133e87664a907fe6f06b5f95
+ms.openlocfilehash: f34be78bc4d3f47ff2a11d0a6ed09c22c3670dca
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94570956"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209275"
 ---
 # <a name="sp_setapprole-transact-sql"></a>sp_setapprole (Transact-SQL)
 
@@ -46,9 +46,9 @@ sp_setapprole [ @rolename = ] 'role',
 
 ## <a name="arguments"></a>Arguments
 
-`[ @rolename = ] 'role'` Nom du rôle d’application défini dans la base de données active. *role* est de **type sysname** , sans valeur par défaut. le *rôle* doit exister dans la base de données actuelle.  
+`[ @rolename = ] 'role'` Nom du rôle d’application défini dans la base de données active. *role* est de **type sysname**, sans valeur par défaut. le *rôle* doit exister dans la base de données actuelle.  
   
-`[ @password = ] { encrypt N'password' }` Mot de passe requis pour activer le rôle d’application. *Password* est de **type sysname** , sans valeur par défaut. le *mot de passe* peut être obscurci à l’aide de la fonction ODBC **Encrypt** . Lorsque vous utilisez la fonction **Encrypt** , le mot de passe doit être converti en chaîne Unicode en plaçant **N** avant le premier guillemet.  
+`[ @password = ] { encrypt N'password' }` Mot de passe requis pour activer le rôle d’application. *Password* est de **type sysname**, sans valeur par défaut. le *mot de passe* peut être obscurci à l’aide de la fonction ODBC **Encrypt** . Lorsque vous utilisez la fonction **Encrypt** , le mot de passe doit être converti en chaîne Unicode en plaçant **N** avant le premier guillemet.  
   
  L’option encrypt n’est pas prise en charge sur les connexions qui utilisent **SqlClient**.  
   
@@ -72,9 +72,9 @@ sp_setapprole [ @rolename = ] 'role',
 
  0 (succès) et 1 (échec)  
   
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
- Une fois qu’un rôle d’application est activé à l’aide de **sp_setapprole** , le rôle reste actif jusqu’à ce que l’utilisateur se déconnecte du serveur ou exécute **sp_unsetapprole**. **sp_setapprole** peut être exécutée uniquement par [!INCLUDE[tsql](../../includes/tsql-md.md)] les instructions directes, au niveau ad hoc et non dans une autre procédure stockée, déclencheur ou dans une transaction définie par l’utilisateur.  
+ Une fois qu’un rôle d’application est activé à l’aide de **sp_setapprole**, le rôle reste actif jusqu’à ce que l’utilisateur se déconnecte du serveur ou exécute **sp_unsetapprole**. **sp_setapprole** peut être exécutée uniquement par [!INCLUDE[tsql](../../includes/tsql-md.md)] les instructions directes, au niveau ad hoc et non dans une autre procédure stockée, déclencheur ou dans une transaction définie par l’utilisateur.  
   
  Pour obtenir une vue d’ensemble des rôles d’application, consultez [rôles d’application](../../relational-databases/security/authentication-access/application-roles.md).  
   

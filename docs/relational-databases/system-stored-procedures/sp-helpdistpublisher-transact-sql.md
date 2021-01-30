@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpdistpublisher_TSQL
 - sp_helpdistpublisher
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: f207c22d-8fb2-4756-8a9d-6c51d6cd3470
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 129192de74a83232334437035599cffe24a910d8
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 461a186656cbef0d1a83eecb2a3e58d63ab896ac
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543336"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209311"
 ---
 # <a name="sp_helpdistpublisher-transact-sql"></a>sp_helpdistpublisher (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Renvoie les propriétés des serveurs de publication qui utilisent un serveur de distribution. Cette procédure stockée est exécutée sur n’importe quelle base de données du serveur de distribution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,13 +50,13 @@ sp_helpdistpublisher [ [ @publisher=] 'publisher']
 |**name**|**sysname**|Nom du serveur de publication.|  
 |**bd_distribution**|**sysname**|Base de données de distribution pour le serveur de publication spécifié.|  
 |**security_mode**|**int**|Mode de sécurité utilisé par les Agents de réplication pour se connecter au serveur de publication des abonnements avec mise à jour en attente ou à un serveur de publication non-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].<br /><br /> **0**  =  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] authentification<br /><br /> **1** = authentification Windows|  
-|**connexion**|**sysname**|Nom de connexion utilisé par les Agents de réplication pour se connecter au serveur de publication des abonnements avec mise à jour en attente ou à un serveur de publication non-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
+|**login**|**sysname**|Nom de connexion utilisé par les Agents de réplication pour se connecter au serveur de publication des abonnements avec mise à jour en attente ou à un serveur de publication non-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
 |**mot de passe**|**nvarchar (524)**|Mot de passe renvoyé (sous forme chiffrée simple). Le mot de passe est NULL pour les utilisateurs autres que **sysadmin**.|  
 |**active**|**bit**|Indique si un serveur de publication distant utilise le serveur local comme serveur de distribution.<br /><br /> **0** = Non<br /><br /> **1** = Oui|  
 |**working_directory**|**nvarchar(255)**|Nom du répertoire de travail.|  
 |**trusted**|**bit**|si le mot de passe est requis lorsqu'un serveur de publication se connecte au serveur de distribution. Pour [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] et les versions ultérieures, cette valeur doit toujours retourner **0**, ce qui signifie que le mot de passe est requis.|  
 |**thirdparty_flag**|**bit**|Indique si la publication est activée par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou par une application tierce :<br /><br /> **0**  =  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , Oracle ou serveur de publication Oracle Gateway.<br /><br /> **1** = le serveur de publication a été intégré à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’aide d’une application tierce.|  
-|**publisher_type**|**sysname**|Type de serveur de publication ; il peut s'agir d'une des valeurs suivantes :<br /><br /> **MSSQLSERVER**<br /><br /> **ORACLE**<br /><br /> **ORACLE GATEWAY**|  
+|**publisher_type**|**sysname**|Type de serveur de publication ; il peut s'agir d'une des valeurs suivantes :<br /><br /> **MSSQLSERVER**<br /><br /> **SOLUTION**<br /><br /> **ORACLE GATEWAY**|  
 |**publisher_data_source**|**nvarchar(4000)**|Nom de la source de données OLE DB sur le serveur de publication.|  
 |**storage_connection_string**|**nvarchar(4000)**|Clé d’accès de stockage pour le répertoire de travail lorsque le serveur de distribution ou le serveur de publication Azure SQL Database.|  
   

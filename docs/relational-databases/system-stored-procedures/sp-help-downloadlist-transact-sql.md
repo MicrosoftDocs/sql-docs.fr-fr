@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_help_downloadlist_TSQL
 - sp_help_downloadlist
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 745b265b-86e8-4399-b928-c6969ca1a2c8
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 2196e6fbbbd0089c7e65592bfc4ebfd17bb14239
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 6f60b3da9c05d38b60573aa272c33a7cb6915116
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549727"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208917"
 ---
 # <a name="sp_help_downloadlist-transact-sql"></a>sp_help_downloadlist (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Répertorie toutes les lignes de la table système **sysdownloadlist** pour le travail fourni, ou toutes les lignes si aucun travail n’est spécifié.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -63,14 +63,14 @@ sp_help_downloadlist { [ @job_id = ] job_id | [ @job_name = ] 'job_name' }
 |**INSERT**|Opération qui insère un travail ou actualise un travail existant. Cette opération comporte toutes les étapes et planifications du travail, le cas échéant.|  
 |**RE-ENLIST**|Opération serveur qui fait renvoyer les informations d'inscription par le serveur cible, y compris la fréquence d'interrogation et le fuseau horaire, au domaine multiserveur. Le serveur cible télécharge également les détails de l' **opérateur MSXOperator** .|  
 |**SET-POLL**|Opération de serveur qui définit l'intervalle, en secondes, que doivent respecter les serveurs cibles pour l'interrogation du domaine multiserveur. S’il est spécifié, la *valeur* est interprétée comme la valeur de l’intervalle requis et peut être comprise entre **10** et **28 800**.|  
-|**ÉCRAN D’ACCUEIL**|Opération de travail qui requiert le début de l'exécution d'un travail.|  
+|**ACTIVER**|Opération de travail qui requiert le début de l'exécution d'un travail.|  
 |**ERREUR**|Opération de travail qui nécessite l'interruption de l'exécution d'un travail.|  
 |**SYNC-TIME**|Opération de serveur qui commande au serveur cible de synchroniser son horloge système avec le domaine multiserveur. Cette opération étant coûteuse, il est préférable de l'exécuter le plus rarement possible.|  
 |**UPDATE**|Opération de travail qui met à jour uniquement les informations **sysjobs** pour un travail, pas les étapes de travail ou les planifications. Est appelé automatiquement par **sp_update_job**.|  
   
-`[ @object_type = ] 'object_type'` Type de l’objet pour le travail spécifié. *object_type* est de type **varchar (64)**, avec NULL comme valeur par défaut. *object_type* peut être un travail ou un serveur. Pour plus d’informations sur les valeurs de *object_type*valides, consultez [sp_add_category &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-add-category-transact-sql.md).  
+`[ @object_type = ] 'object_type'` Type de l’objet pour le travail spécifié. *object_type* est de type **varchar (64)**, avec NULL comme valeur par défaut. *object_type* peut être un travail ou un serveur. Pour plus d’informations sur les valeurs de *object_type* valides, consultez [sp_add_category &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-add-category-transact-sql.md).  
   
-`[ @object_name = ] 'object_name'` Nom de l’objet. *object_name* est de **type sysname**, avec NULL comme valeur par défaut. Si *object_type* est job, *object_name*est le nom du travail. Si *object_type*est serveur, *object_name*est le nom du serveur.  
+`[ @object_name = ] 'object_name'` Nom de l’objet. *object_name* est de **type sysname**, avec NULL comme valeur par défaut. Si *object_type* est job, *object_name* est le nom du travail. Si *object_type* est serveur, *object_name* est le nom du serveur.  
   
 `[ @target_server = ] 'target_server'` Nom du serveur cible. *target_server* est de type **nvarchar (128)**, avec NULL comme valeur par défaut.  
   
@@ -99,7 +99,7 @@ sp_help_downloadlist { [ @job_id = ] job_id | [ @job_name = ] 'job_name' }
 |**statut**|**tinyint**|État du travail :<br /><br /> **0** = pas encore téléchargé<br /><br /> **1** = téléchargé avec succès.|  
   
 ## <a name="permissions"></a>Autorisations  
- Les autorisations d’exécution de cette procédure sont octroyées par défaut aux membres du rôle serveur fixe **sysadmin** .  
+ Les autorisations d'exécution de cette procédure sont accordées par défaut aux membres du rôle de serveur fixe **sysadmin** .  
   
 ## <a name="examples"></a>Exemples  
  L'exemple suivant répertorie des lignes dans `sysdownloadlist` pour le travail `NightlyBackups`.  

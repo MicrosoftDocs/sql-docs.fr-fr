@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysmergepartitioninfo_TSQL
 - sysmergepartitioninfo
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 7429ad2c-dd33-4f7d-89cc-700e083af518
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 8a94f14212f2603639c1d272da4d35e9bea9fb29
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: a2bf6023bff729ad468d68762639b59a81dd87de
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100491"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211523"
 ---
 # <a name="sysmergepartitioninfo-transact-sql"></a>sysmergepartitioninfo (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
