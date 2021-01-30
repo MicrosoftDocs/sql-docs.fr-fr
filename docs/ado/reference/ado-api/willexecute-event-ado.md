@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - WillExecute
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: dd755e46-f589-48a3-93a9-51ff998d44b5
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f56e864efd37b927ae657edc2ef2e8307d839104
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: cffc2e0a79ff4bffd83eadac20cf522df6d0c9cc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88987770"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172364"
 ---
 # <a name="willexecute-event-ado"></a>WillExecute, événement (ADO)
 L’événement **WillExecute** est appelé juste avant qu’une commande en attente ne s’exécute sur une connexion.  
@@ -65,7 +65,7 @@ WillExecute Source, CursorType, LockType, Options, adStatus, pCommand, pRecordse
  **WillExecute** vous permet d’examiner et de modifier les paramètres d’exécution en attente. Cet événement peut retourner une demande indiquant que la commande en attente doit être annulée.  
   
 > [!NOTE]
->  Si la source d’origine d’une **commande** est un flux spécifié par la propriété CommandStream de la [propriété (ADO)](./commandstream-property-ado.md) , l’affectation d’une nouvelle chaîne au paramètre_source_ **WillExecute**modifie la source de la **commande**. La propriété **CommandStream** sera effacée et la propriété [CommandText (ADO)](./commandtext-property-ado.md) sera mise à jour avec la nouvelle source. Le flux d’origine spécifié par **CommandStream** sera libéré et ne sera pas accessible.  
+>  Si la source d’origine d’une **commande** est un flux spécifié par la propriété CommandStream de la [propriété (ADO)](./commandstream-property-ado.md) , l’affectation d’une nouvelle chaîne au paramètre _source_ **WillExecute** modifie la source de la **commande**. La propriété **CommandStream** sera effacée et la propriété [CommandText (ADO)](./commandtext-property-ado.md) sera mise à jour avec la nouvelle source. Le flux d’origine spécifié par **CommandStream** sera libéré et ne sera pas accessible.  
   
  Si le dialecte de la nouvelle chaîne source diffère du paramètre d’origine de la propriété de la [propriété dialecte](./dialect-property.md) (qui correspond à **CommandStream**), le dialecte approprié doit être spécifié en définissant la propriété **Dialect** de l’objet Command référencé par *pCommand*.  
   

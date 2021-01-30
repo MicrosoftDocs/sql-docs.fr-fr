@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7df1089e-69b7-476e-9244-19947c087351
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a1cc5fd7560fc62475b3cd8a45451791b2dfeac9
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: b54af4688c81f524d0c2cd785225b76b8b5cc535
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88983830"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171977"
 ---
 # <a name="parameters-collection-command-property-example-vb"></a>Parameters (collection), Command (exemple de propriété) (VB)
 L’exemple de code suivant montre comment utiliser la propriété [Command](./command-property-adox.md) avec l’objet [Command](../ado-api/command-object-ado.md) pour récupérer des informations sur les paramètres de la procédure.  

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Index
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6b9578c0-bc94-46b9-b801-c18e14b04b31
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 58b9e80dc57ddfdbd95bcb9523e428031fcebff0
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: a11389324337d4e5a9deea347dda8ecd5cea3016
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88984290"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172036"
 ---
 # <a name="index-object-adox"></a>Index, objet (ADOX)
 Représente un index à partir d’une table de base de données.  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSrepl_version
 - MSrepl_version_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: c1330f03-940b-4564-ac42-6030c6e21173
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 2705f8bba91c26bebf886064b795f0f27a78ec2b
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 64807d5ce91979afd411c840b24df5977e1d7ef2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100557"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171671"
 ---
 # <a name="msrepl_version-transact-sql"></a>MSrepl_version (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Connection15::raw_Open
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 663defab-5545-4973-9036-24d5882c9737
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c3691f6b7b86d7f48ea570a542f85af75c53d017
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: a3bca1379c776f6fad1f4ab2aa7368b424ff9e7f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990330"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170703"
 ---
 # <a name="open-method-ado-connection"></a>Open, méthode (objet Connection ADO)
 Ouvre une connexion à une source de données.  
@@ -37,16 +37,16 @@ connection.Open ConnectionString, UserID, Password, Options
   
 #### <a name="parameters"></a>Paramètres  
  *ConnectionString*  
- facultatif. Valeur de **chaîne** qui contient les informations de connexion. Pour plus d’informations sur les paramètres valides, consultez la propriété [ConnectionString](./connectionstring-property-ado.md) .  
+ Facultatif. Valeur de **chaîne** qui contient les informations de connexion. Pour plus d’informations sur les paramètres valides, consultez la propriété [ConnectionString](./connectionstring-property-ado.md) .  
   
  *l'UserId*  
- facultatif. Valeur de **chaîne** qui contient un nom d’utilisateur à utiliser lors de l’établissement de la connexion.  
+ Facultatif. Valeur de **chaîne** qui contient un nom d’utilisateur à utiliser lors de l’établissement de la connexion.  
   
  *Mot de passe*  
- facultatif. Valeur de **chaîne** qui contient un mot de passe à utiliser lors de l’établissement de la connexion.  
+ Facultatif. Valeur de **chaîne** qui contient un mot de passe à utiliser lors de l’établissement de la connexion.  
   
  *Options*  
- facultatif. Valeur [ConnectOptionEnum](./connectoptionenum.md) qui détermine si cette méthode doit retourner après (de façon synchrone) ou avant (de façon asynchrone) la connexion est établie.  
+ Facultatif. Valeur [ConnectOptionEnum](./connectoptionenum.md) qui détermine si cette méthode doit retourner après (de façon synchrone) ou avant (de façon asynchrone) la connexion est établie.  
   
 ## <a name="remarks"></a>Notes  
  L’utilisation de la méthode **Open** sur un objet [Connection](./connection-object-ado.md) établit la connexion physique à une source de données. Une fois que cette méthode s’est terminée avec succès, la connexion est active et vous pouvez émettre des commandes sur celle-ci et traiter les résultats.  
@@ -55,7 +55,7 @@ connection.Open ConnectionString, UserID, Password, Options
   
  Si vous transmettez des informations sur l’utilisateur et le mot de passe à la fois dans l’argument *ConnectionString* et dans les arguments facultatifs *userid* et *Password* , les arguments *userid* *et Password* remplacent les valeurs spécifiées dans *ConnectionString*.  
   
- Une fois que vous avez terminé vos opérations sur une **connexion**ouverte, utilisez la méthode [Close](./close-method-ado.md) pour libérer toutes les ressources système associées. La fermeture d’un objet ne le supprime pas de la mémoire ; vous pouvez modifier ses paramètres de propriété et utiliser la méthode **Open** pour l’ouvrir à nouveau ultérieurement. Pour éliminer complètement un objet de la mémoire, affectez à la variable objet la valeur *Nothing*.  
+ Une fois que vous avez terminé vos opérations sur une **connexion** ouverte, utilisez la méthode [Close](./close-method-ado.md) pour libérer toutes les ressources système associées. La fermeture d’un objet ne le supprime pas de la mémoire ; vous pouvez modifier ses paramètres de propriété et utiliser la méthode **Open** pour l’ouvrir à nouveau ultérieurement. Pour éliminer complètement un objet de la mémoire, affectez à la variable objet la valeur *Nothing*.  
   
 > [!NOTE]
 >  **Utilisation des services de données distants** Lorsqu’elle est utilisée sur un objet de **connexion** côté client, la méthode **Open** n’établit pas en fait de connexion au serveur tant qu’un [jeu d’enregistrements](./recordset-object-ado.md) n’est pas ouvert sur l’objet de **connexion** .  

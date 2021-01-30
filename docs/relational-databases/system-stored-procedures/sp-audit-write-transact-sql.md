@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_audit_write
 - sp_audit_write_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 4c523848-1ce6-49ad-92b3-e0e90f24f1c2
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 56795d7ed3da83dff9f50d70f639300dae0da3a1
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 0ac793b35f5e72b93a27369bf00327a969059b0d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89536704"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171758"
 ---
 # <a name="sp_audit_write-transact-sql"></a>sp_audit_write (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Ajoute un événement d’audit défini par l’utilisateur au **USER_DEFINED_AUDIT_GROUP**. Si **USER_DEFINED_AUDIT_GROUP** n’est pas activé, **sp_audit_write** est ignoré.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,7 +43,7 @@ sp_audit_write [ @user_defined_event_id = ] user_defined_event_id
   
 ## <a name="arguments"></a>Arguments  
  `[ @user_defined_event_id = ] user_defined_event_id`  
- Paramètre défini par l’utilisateur et enregistré dans la colonne **user_defined_event_id** du journal d’audit. * \@ user_defined_event_id* est de type **smallint**.  
+ Paramètre défini par l’utilisateur et enregistré dans la colonne **user_defined_event_id** du journal d’audit. *\@ user_defined_event_id* est de type **smallint**.  
   
  `[ @succeeded = ] succeeded`  
  Paramètre passé par l'utilisateur pour indiquer si l'événement a ou non réussi. Il apparaît dans la colonne succeeded du journal d'audit. `@succeeded` est de **bits**.  

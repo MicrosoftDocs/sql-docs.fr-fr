@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2b6dfef9-bcdf-483d-a164-2fa3ec81a43f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 25b7ee7aa9b206cec5fc144dd024d3b1fa0847d1
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: f5ee45e4bccfc82e5a4e1017aa2ebe24f80520d9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88985010"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172243"
 ---
 # <a name="columns-and-tables-append-methods-name-property-example-vc"></a>Append, méthode des collections Columns et Tables, Name (exemple de propriété) (VC++)
 Le code suivant montre comment créer une nouvelle table.  

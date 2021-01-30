@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset21::Index
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1c79e271-21ec-41a8-8163-c5e89f0001a7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 44dab27756e71142b59ae27b2d8499e1dd2f639a
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 9e8c346ac48092d7a5dcaf09068bb64d63316a38
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990810"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170955"
 ---
 # <a name="index-property"></a>Index, propriété
 Indique le nom de l’index actuellement en vigueur pour un objet [Recordset](./recordset-object-ado.md) .  
@@ -44,7 +44,7 @@ Indique le nom de l’index actuellement en vigueur pour un objet [Recordset](./
   
  Si l’index peut être défini, la position de la ligne actuelle peut changer. Cela entraînera une mise à jour de la propriété [AbsolutePosition](./absoluteposition-property-ado.md) et déclenchera les événements **WillChangeRecordset**, **RecordsetChangeComplete**, [WillMove](./willmove-and-movecomplete-events-ado.md)et [MoveComplete](./willmove-and-movecomplete-events-ado.md) .  
   
- Si l’index peut être défini et si la propriété [LockType](./locktype-property-ado.md) est **adLockPessimistic** ou **adLockOptimistic**, une opération [UpdateBatch](./updatebatch-method.md) implicite est effectuée. Cela libère les groupes actuels et affectés. Tout filtre existant est libéré, et la position de ligne actuelle est remplacée par la première ligne de l’ensemble d' **enregistrements**réorganisé.  
+ Si l’index peut être défini et si la propriété [LockType](./locktype-property-ado.md) est **adLockPessimistic** ou **adLockOptimistic**, une opération [UpdateBatch](./updatebatch-method.md) implicite est effectuée. Cela libère les groupes actuels et affectés. Tout filtre existant est libéré, et la position de ligne actuelle est remplacée par la première ligne de l’ensemble d' **enregistrements** réorganisé.  
   
  La propriété **index** est utilisée conjointement avec la méthode [Seek](./seek-method.md) . Si le fournisseur sous-jacent ne prend pas en charge la propriété d' **index** , et donc la méthode **Seek** , envisagez d’utiliser la méthode [Find](./find-method-ado.md) à la place. Déterminez si l’objet **Recordset** prend en charge les index avec la méthode [prend en charge](./supports-method.md)**(adIndex)** .  
   

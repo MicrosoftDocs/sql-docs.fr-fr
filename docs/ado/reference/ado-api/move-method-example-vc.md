@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0e08af60-f668-4092-8b6a-9e8b6db90448
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 32f9ab33c3beac21ae82e2a5e4cf5dd9447d6844
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 5ba12e7b85dd0434686fdd682818a0a227f7a2ca
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990560"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170814"
 ---
 # <a name="move-method-example-vc"></a>Move, exemple de méthode (VC++)
 Cet exemple utilise la méthode [Move](./move-method-ado.md) pour positionner le pointeur d’enregistrement en fonction de l’entrée utilisateur.  

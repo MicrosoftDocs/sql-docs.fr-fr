@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - XactAttributeEnum
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e7dcecd3-7dc7-445c-b922-f700c3067fbc
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: bb2a1391e813fd80c394bd685eff07e06015dd5b
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: abdb50494f859d6cc16e3e9ab0b13257a156601f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88987690"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172339"
 ---
 # <a name="xactattributeenum"></a>XactAttributeEnum
 Spécifie les attributs de transaction d’un objet de [connexion](./connection-object-ado.md) .  

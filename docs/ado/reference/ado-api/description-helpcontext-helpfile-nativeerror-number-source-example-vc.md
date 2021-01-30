@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 5321fc0f-cd0c-4e2a-a5bc-0008fba86b59
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 29f9c1b3b8b886bf7e89bf14f167e474c9e853f1
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 78bafcdac03072c82314b45f0744299d3ab6e300
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88973940"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171259"
 ---
 # <a name="description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vc"></a>Description, HelpContext, HelpFile, NativeError, Number, source et SQLState, exemples de propriétés (VC + +)
 Cet exemple déclenche une erreur, l’intercepte et affiche les propriétés [Description](../../../ado/reference/ado-api/description-property.md), [HelpContext](../../../ado/reference/ado-api/helpcontext-helpfile-properties.md), [HelpFile](../../../ado/reference/ado-api/helpcontext-helpfile-properties.md), [NativeError](../../../ado/reference/ado-api/nativeerror-property-ado.md), [Number](../../../ado/reference/ado-api/number-property-ado.md), [source](../../../ado/reference/ado-api/source-property-ado-error.md)et [SQLSTATE](../../../ado/reference/ado-api/sqlstate-property.md) de l’objet d' [erreur](../../../ado/reference/ado-api/error-object.md) résultant.  

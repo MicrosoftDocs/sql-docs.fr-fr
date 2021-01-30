@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0c80e71b-9e3f-4d05-ab2a-9e78798dad88
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 36dd8f9b603e3a918dd968318d83fa12c7580e67
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: b0d4f0c7ee1b3d8422936de28feaac7b17c89e53
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88974080"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171289"
 ---
 # <a name="delete-method-example-vb"></a>Delete, exemple de méthode (VB)
 Cet exemple utilise la méthode [Delete](../../../ado/reference/ado-api/delete-method-ado-recordset.md) pour supprimer un enregistrement spécifié d’un [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md).  

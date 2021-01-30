@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset20::DataSource
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 300a702a-3544-48c5-b759-83b511fe97e0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 48c5969df864364cd87d131fce2740a5a0e043f7
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 67a57da52bd73bd90d630ac84e4afeca6a0b16c7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88974260"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171341"
 ---
 # <a name="datasource-property-ado"></a>DataSource, propriété (ADO)
 Indique un objet qui contient les données à représenter sous la forme d’un objet [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) .  

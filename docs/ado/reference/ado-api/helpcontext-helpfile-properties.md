@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Error::GetHelpContext
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 2b9ef441-993c-44d4-8f87-fac0979dac1d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d9ac9c7f712514f50ab8d40704700924ac344d23
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 355f3047a31e82d034cfe23b2d1c069d07a7bbab
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990840"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170946"
 ---
 # <a name="helpcontext-helpfile-properties"></a>HelpContext, HelpFile, propriétés
 Indique le fichier d’aide et la rubrique associés à un objet d' [erreur](./error-object.md) .  
@@ -42,7 +42,7 @@ Indique le fichier d’aide et la rubrique associés à un objet d' [erreur](./e
  Si un fichier d’aide est spécifié dans la propriété **HelpFile** , la propriété **HelpContext** est utilisée pour afficher automatiquement la rubrique d’aide qu’il identifie. Si aucune rubrique d’aide pertinente n’est disponible, la propriété **HelpContext** retourne la valeur zéro et la propriété **HelpFile** retourne une chaîne de longueur nulle ("").  
   
 ## <a name="applies-to"></a>S'applique à  
- [Objet Error](./error-object.md)  
+ [Error, objet](./error-object.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Description, HelpContext, HelpFile, NativeError, Number, source et SQLState, exemples de propriétés (VB)](./description-helpcontext-helpfile-nativeerror-number-source-example-vb.md)   

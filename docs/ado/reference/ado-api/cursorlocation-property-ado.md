@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Connection15::CursorLocation
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 39c8d86e-7ee9-4182-be5e-aad5ce952f84
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 121aeef137946152a82808c8a439f2e5d03a2c94
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 8c1b9d4e30c63ff996f7931284bc9ca399b5dfe1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88974460"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171366"
 ---
 # <a name="cursorlocation-property-ado"></a>CursorLocation, propriété (ADO)
 Indique l’emplacement du service de curseur.  
@@ -37,7 +37,7 @@ Indique l’emplacement du service de curseur.
   
  Les curseurs retournés par la méthode [Execute](./execute-method-ado-connection.md) héritent de ce paramètre. Les objets **Recordset** héritent automatiquement de ce paramètre de leurs connexions associées.  
   
- Cette propriété est en lecture/écriture sur une [connexion](./connection-object-ado.md) ou un [Recordset](./recordset-object-ado.md)fermé, et en lecture seule sur un **Recordset**ouvert.  
+ Cette propriété est en lecture/écriture sur une [connexion](./connection-object-ado.md) ou un [Recordset](./recordset-object-ado.md)fermé, et en lecture seule sur un **Recordset** ouvert.  
   
 > [!NOTE]
 >  **Utilisation des services de données distants** Lorsqu’elle est utilisée sur un objet **Recordset** ou **Connection** côté client, la propriété **CursorLocation** ne peut avoir que la valeur **adUseClient**.  

@@ -6,7 +6,7 @@ ms.date: 01/31/2019
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_hadr_cluster
 - dm_hadr_cluster_HADR
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 13ce70e4-9d43-4a80-a826-099e6213bf85
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: aa289a58047e1108e94a6b70f86eb366807f5af1
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0648f9c281c59789f3ae9d4f97cc3d277303abd1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097647"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171795"
 ---
 # <a name="sysdm_hadr_cluster-transact-sql"></a>sys.dm_hadr_cluster (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

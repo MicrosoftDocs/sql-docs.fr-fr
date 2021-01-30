@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - Recordset collection [ADO], ADO/WFX syntax
 ms.assetid: bd1f571e-007f-432e-ada1-5c3e436c1a22
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c84996f1676e5ebe9e3e844cf1cf137dc1add3a8
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 16ab80d0ea30669a4545785b9c48450e30f078d4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989770"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170433"
 ---
 # <a name="recordset-ado---wfc-syntax"></a>Recordset (ADO - syntaxe WFC)
 ## <a name="package-commswfcdata"></a>package com. ms. wfc. Data  

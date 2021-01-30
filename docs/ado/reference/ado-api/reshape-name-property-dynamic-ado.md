@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - Reshape Name property [ADO]
 ms.assetid: 690229d1-46cc-42e6-a57d-4438251fe248
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1678bcbae00c7d1022bfeffbb72a3e9b1ee63401
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 14e7b8ab97c59b566356ddeec10a6fbbd212840c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97637976"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170376"
 ---
 # <a name="reshape-name-property-dynamic-ado"></a>Reshape Name, propriété dynamique (ADO)
 Spécifie un nom pour l’objet [Recordset](./recordset-object-ado.md) .  
@@ -27,7 +27,7 @@ Spécifie un nom pour l’objet [Recordset](./recordset-object-ado.md) .
 ## <a name="return-values"></a>Valeurs de retour  
  Retourne une valeur de **chaîne** qui est le nom de l’ensemble d' **enregistrements**.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les noms sont conservés pendant la durée de la connexion ou jusqu’à la fermeture du **Recordset** .  
   
  La propriété **Remodel Name** est principalement destinée à être utilisée avec la nouvelle fonctionnalité de mise en forme de [Microsoft Data shaping service pour OLE DB](../../guide/appendixes/microsoft-data-shaping-service-for-ole-db-ado-service-provider.md) fournisseur de services. Les noms doivent être uniques pour participer à la remise en forme.  

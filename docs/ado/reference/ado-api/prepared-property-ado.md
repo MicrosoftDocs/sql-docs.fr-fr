@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Command15::Prepared
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 11ca8825-765e-4bb4-a6ce-3f6564ad8755
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7352d21467061a38bd7e2443ecb52fdb59bd7696
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: f20fb9b9f4050ebb0f382b2e36e2f7d5b6231fa9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990040"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170553"
 ---
 # <a name="prepared-property-ado"></a>Prepared, propriété (ADO)
 Indique s’il faut enregistrer une version compilée d’une [commande](./command-object-ado.md) avant l’exécution.  
@@ -34,7 +34,7 @@ Indique s’il faut enregistrer une version compilée d’une [commande](./comma
   
  Si la propriété a la **valeur false**, le fournisseur exécutera directement l’objet de **commande** sans créer une version compilée.  
   
- Si le fournisseur ne prend pas en charge la préparation de la commande, il peut retourner une erreur lorsque cette propriété a la valeur **true**. Si le fournisseur ne retourne pas d’erreur, il ignore simplement la demande de préparation de la commande et affecte la **valeur false**à la propriété **Prepared** .  
+ Si le fournisseur ne prend pas en charge la préparation de la commande, il peut retourner une erreur lorsque cette propriété a la valeur **true**. Si le fournisseur ne retourne pas d’erreur, il ignore simplement la demande de préparation de la commande et affecte la **valeur false** à la propriété **Prepared** .  
   
 ## <a name="applies-to"></a>S'applique à  
  [Command, objet (ADO)](./command-object-ado.md)  

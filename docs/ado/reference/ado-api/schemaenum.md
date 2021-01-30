@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - SchemaEnum
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 21c97651-297f-469f-b5b5-c48af72b62a8
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2bcbe9bd3c3f4408be7d228c9edae4da20929f69
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 55a55d39117f2367b1b13c1a25b3785fe2d9cacc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989260"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170304"
 ---
 # <a name="schemaenum"></a>SchemaEnum
 Spécifie le type de **jeu d’enregistrements** de schéma que la méthode [OpenSchema](./openschema-method.md) récupère.  
@@ -73,7 +73,7 @@ Spécifie le type de **jeu d’enregistrements** de schéma que la méthode [Ope
 |**adSchemaTablePrivileges**|14|Retourne les privilèges sur les tables définies dans le catalogue qui sont mis à la disposition d'un utilisateur ou accordés par celui-ci.<br /><br /> (Ensemble de lignes TABLE_PRIVILEGES)|TABLE_CATALOG TABLE_SCHEMA TABLE_NAME GRANTOR GRANTEE|  
 |**adSchemaTables**|20|Retourne les tables (vues comprises) définies dans le catalogue qui sont accessibles à un utilisateur donné.<br /><br /> (Ensemble de lignes de TABLES)|TABLE_CATALOG TABLE_SCHEMA TABLE_NAME TABLE_TYPE|  
 |**adSchemaTranslations**|21|Retourne les traductions de caractères définies dans le catalogue qui sont accessibles à un utilisateur donné.<br /><br /> (Ensemble de lignes TRANSLATIONs)|TRANSLATION_CATALOG TRANSLATION_SCHEMA TRANSLATION_NAME|  
-|**adSchemaTrustees**|39|Réservé à un usage ultérieur.||  
+|**adSchemaTrustees**|39|Réservé pour un usage futur.||  
 |**adSchemaUsagePrivileges**|15|Retourne les privilèges d’utilisation sur les objets définis dans le catalogue qui sont accessibles à un utilisateur donné ou accordés par celui-ci.<br /><br /> (Ensemble de lignes USAGE_PRIVILEGES)|OBJECT_CATALOG OBJECT_SCHEMA OBJECT_NAME OBJECT_TYPE BÉNÉFICIAIRE DU GRANTATEUR|  
 |**adSchemaViewColumnUsage**|24|Retourne les colonnes sur lesquelles les tables affichées, définies dans le catalogue et détenues par un utilisateur donné, sont dépendantes.<br /><br /> (Ensemble de lignes VIEW_COLUMN_USAGE)|VIEW_CATALOG VIEW_SCHEMA VIEW_NAME|  
 |**adSchemaViews**|23|Retourne les vues définies dans le catalogue qui sont accessibles à un utilisateur donné.<br /><br /> (Ensemble de lignes VIEWS)|TABLE_CATALOG TABLE_SCHEMA TABLE_NAME|  

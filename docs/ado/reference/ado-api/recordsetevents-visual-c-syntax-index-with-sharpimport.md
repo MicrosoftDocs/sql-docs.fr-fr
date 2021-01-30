@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 dev_langs:
 - C++
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b7021f11-8242-4e9f-92e9-1a4472673fb1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e90428c7ab2440f6ca4dcb6107b24d49de297e8f
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 8086814a0baf03d9329b79bd04a698cd5ee64cf2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989720"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170422"
 ---
 # <a name="recordsetevents-visual-c-syntax-index-with-import"></a>RecordsetEvents (index de la syntaxe Visual C++ avec #import)
 ## <a name="events"></a>Événements  

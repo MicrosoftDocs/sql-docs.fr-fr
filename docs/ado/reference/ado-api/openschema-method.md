@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Connection15::OpenSchema
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 850cf3ce-f18f-4e7c-8597-96c1dc504866
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ce524119367b53cac86c4bd29e3dc6927671c871
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 9b5ca92e42a68639f6b9e3044894ec779109fff5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990280"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170678"
 ---
 # <a name="openschema-method"></a>OpenSchema, méthode
 Obtient des informations de schéma de base de données à partir du fournisseur.  
@@ -42,7 +42,7 @@ Set recordset = connection.OpenSchema(QueryType, Criteria, SchemaID)
  Toute valeur [SchemaEnum](./schemaenum.md) qui représente le type de requête de schéma à exécuter.  
   
  *Critères*  
- facultatif. Tableau de contraintes de requête pour chaque option *QueryType* , comme indiqué dans [SchemaEnum](./schemaenum.md).  
+ Facultatif. Tableau de contraintes de requête pour chaque option *QueryType* , comme indiqué dans [SchemaEnum](./schemaenum.md).  
   
  *SchemaID*  
  GUID d’une requête de schéma de fournisseur non définie par la spécification OLE DB. Ce paramètre est obligatoire si *QueryType* est défini sur **adSchemaProviderSpecific**; dans le cas contraire, il n’est pas utilisé.  
@@ -52,11 +52,11 @@ Set recordset = connection.OpenSchema(QueryType, Criteria, SchemaID)
   
  L’argument *QueryType* est un GUID qui indique que les colonnes (schémas) sont retournées. La spécification de OLE DB a une liste complète de schémas.  
   
- L’argument *Criteria* limite les résultats d’une requête de schéma. *Critères* spécifie un tableau de valeurs qui doivent se produire dans un sous-ensemble correspondant de colonnes, appelées colonnes de contrainte, dans le **jeu d’enregistrements**résultant.  
+ L’argument *Criteria* limite les résultats d’une requête de schéma. *Critères* spécifie un tableau de valeurs qui doivent se produire dans un sous-ensemble correspondant de colonnes, appelées colonnes de contrainte, dans le **jeu d’enregistrements** résultant.  
   
  La constante **adSchemaProviderSpecific** est utilisée pour l’argument *QueryType* si le fournisseur définit ses propres requêtes de schéma non standard en dehors de celles listées précédemment. Lorsque cette constante est utilisée, l’argument *SchemaID* est requis pour transmettre le GUID de la requête de schéma à exécuter. Si *QueryType* est défini sur **AdSchemaProviderSpecific** mais que *SchemaID* n’est pas fourni, une erreur se produit.  
   
- Les fournisseurs ne sont pas tenus de prendre en charge toutes les requêtes de schéma standard OLE DB. Plus précisément, seuls **adSchemaTables**, **adSchemaColumns**et **adSchemaProviderTypes** sont requis par la spécification OLE DB. Toutefois, le fournisseur n’est pas tenu de prendre en charge les contraintes de *critères* répertoriées précédemment pour ces requêtes de schéma.  
+ Les fournisseurs ne sont pas tenus de prendre en charge toutes les requêtes de schéma standard OLE DB. Plus précisément, seuls **adSchemaTables**, **adSchemaColumns** et **adSchemaProviderTypes** sont requis par la spécification OLE DB. Toutefois, le fournisseur n’est pas tenu de prendre en charge les contraintes de *critères* répertoriées précédemment pour ces requêtes de schéma.  
   
 > [!NOTE]
 >  **Utilisation des services de données distants** La méthode **OpenSchema** n’est pas disponible sur un objet de [connexion](./connection-object-ado.md) côté client.  

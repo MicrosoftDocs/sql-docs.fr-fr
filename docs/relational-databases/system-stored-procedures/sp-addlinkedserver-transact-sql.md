@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addlinkedserver_TSQL
 - sp_addlinkedserver
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: fed3adb0-4c15-4a1a-8acd-1b184aff558f
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 81cc7901dd6e9bfab24e0fb3d926173353978f40
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: c894bbf5bdb3e523901fc4f1200d146d0a569449
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548367"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171786"
 ---
 # <a name="sp_addlinkedserver-transact-sql"></a>sp_addlinkedserver (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Crée un serveur lié. Un serveur lié autorise l'accès à des sources de données OLE DB par l'intermédiaire de requêtes distribuées et hétérogènes. Une fois qu’un serveur lié a été créé à l’aide de **sp_addlinkedserver**, des requêtes distribuées peuvent être exécutées sur ce serveur. Si le serveur lié est défini comme une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], les procédures stockées distantes peuvent être exécutées.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,13 +44,13 @@ sp_addlinkedserver [ @server= ] 'server' [ , [ @srvproduct= ] 'product_name' ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
-[ @server =] * \' serveur \' *          
-Nom du serveur lié à créer. *server* est de type **sysname**et n'a pas de valeur par défaut.  
+[ @server =] *\' serveur \'*          
+Nom du serveur lié à créer. *server* est de type **sysname** et n'a pas de valeur par défaut.  
   
-[ @srvproduct =] * \' product_name \' *          
-Nom de produit de la source de données OLE DB à ajouter comme serveur lié. *product_name* est de type **nvarchar (** 128 **)**, avec NULL comme valeur par défaut. Si **SQL Server**, *provider_name*, *data_source*, *location*, *provider_string*et *Catalog* n’ont pas besoin d’être spécifiés.  
+[ @srvproduct =] *\' product_name \'*          
+Nom de produit de la source de données OLE DB à ajouter comme serveur lié. *product_name* est de type **nvarchar (** 128 **)**, avec NULL comme valeur par défaut. Si **SQL Server**, *provider_name*, *data_source*, *location*, *provider_string* et *Catalog* n’ont pas besoin d’être spécifiés.  
   
-[ @provider =] * \' provider_name \' *          
+[ @provider =] *\' provider_name \'*          
 ID de programme unique (PROGID) du fournisseur OLE DB correspondant à la source de données. *provider_name* doit être unique pour le fournisseur de OLE DB spécifié installé sur l’ordinateur actuel. *provider_name* est de type **nvarchar (128)**, avec NULL comme valeur par défaut. Toutefois, si *provider_name* est omis, SQLNCLI est utilisé. 
 
 > [!NOTE]
@@ -59,21 +59,21 @@ ID de programme unique (PROGID) du fournisseur OLE DB correspondant à la sourc
 > [!IMPORTANT] 
 > Le fournisseur Microsoft OLE DB pour SQL Server (SQLOLEDB) et le fournisseur SQL Server Native Client (SQLNCLI) précédents restent dépréciés, et nous vous déconseillons d’utiliser l’un ou l’autre dans de nouveaux développements. Au lieu de cela, utilisez le nouveau [Microsoft OLE DB Driver pour SQL Server](../../connect/oledb/oledb-driver-for-sql-server.md) (MSOLEDBSQL), qui sera mis à jour avec les fonctionnalités serveur les plus récentes.
   
-[ @datasrc =] * \' data_source \' *          
+[ @datasrc =] *\' data_source \'*          
  Nom de la source de données, tel qu'il est interprété par le fournisseur OLE DB. *data_source* est **de type nvarchar (** 4000 **)**. *data_source* est passé comme DBPROP_INIT_DATASOURCE propriété pour initialiser le fournisseur de OLE DB.  
   
-[ @location =] * \' emplacement \' *          
+[ @location =] *\' emplacement \'*          
  Emplacement de la base de données, tel qu'il est interprété par le fournisseur OLE DB. *location* est de type **nvarchar (** 4000 **)**, avec NULL comme valeur par défaut. l' *emplacement* est passé en tant que propriété DBPROP_INIT_LOCATION pour initialiser le fournisseur OLE DB.  
   
-[ @provstr =] * \' provider_string \' *          
+[ @provstr =] *\' provider_string \'*          
  Chaîne de connexion spécifique au fournisseur OLE DB identifiant une source de données unique. *provider_string* est de type **nvarchar (** 4000 **)**, avec NULL comme valeur par défaut. *provstr* est passé à IDataInitialize ou défini en tant que propriété DBPROP_INIT_PROVIDERSTRING pour initialiser le fournisseur OLE DB.  
   
  Lorsque le serveur lié est créé sur le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournisseur Native Client OLE DB, l’instance peut être spécifiée à l’aide du mot clé Server en tant que Server =*ServerName* \\ *InstanceName* pour spécifier une instance spécifique de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . *ServerName* est le nom de l’ordinateur sur lequel [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] s’exécute, et *nom_instance* est le nom de l’instance spécifique de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à laquelle l’utilisateur est connecté.  
   
 > [!NOTE]
-> Pour accéder à une base de données miroir, une chaîne de connexion doit contenir le nom de la base de données. Ce nom est nécessaire pour permettre au fournisseur d'accès aux données d'effectuer des tentatives de basculement. La base de données peut être spécifiée dans le paramètre ** \@ provstr** ou ** \@ Catalog** . Le cas échéant, la chaîne de connexion peut également fournir un nom de partenaire de basculement.  
+> Pour accéder à une base de données miroir, une chaîne de connexion doit contenir le nom de la base de données. Ce nom est nécessaire pour permettre au fournisseur d'accès aux données d'effectuer des tentatives de basculement. La base de données peut être spécifiée dans le paramètre **\@ provstr** ou **\@ Catalog** . Le cas échéant, la chaîne de connexion peut également fournir un nom de partenaire de basculement.  
   
-[ @catalog =] * \' catalogue \' *       
+[ @catalog =] *\' catalogue \'*       
  Catalogue à utiliser lors de l'établissement d'une connexion au fournisseur OLE DB. *Catalog* est de **type sysname**, avec NULL comme valeur par défaut. le *catalogue* est passé en tant que propriété DBPROP_INIT_CATALOG pour initialiser le fournisseur OLE DB. Lorsque le serveur lié est défini sur une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], le catalogue fait référence à la base de données par défaut sur laquelle le serveur lié est mappé.  
   
 ## <a name="return-code-values"></a>Codet de retour  
@@ -87,7 +87,7 @@ ID de programme unique (PROGID) du fournisseur OLE DB correspondant à la sourc
   
 |Source de données OLE DB distante|Fournisseur OLE DB|product_name|provider_name|data_source|location|provider_string|catalogue|  
 |-------------------------------|---------------------|-------------------|--------------------|------------------|--------------|----------------------|-------------|  
-|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|[!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Fournisseur OLE DB Native Client|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] <sup>1</sup> (par défaut)||||||  
+|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|[!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Fournisseur OLE DB Native Client|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]<sup>1</sup> (par défaut)||||||  
 |[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|[!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Fournisseur OLE DB Native Client||**SQLNCLI**|Nom réseau de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (pour l'instance par défaut)|||Nom de base de données (facultatif)|  
 |[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|[!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Fournisseur OLE DB Native Client||**SQLNCLI**|*nom du serveur* \\ *InstanceName* (pour une instance spécifique)|||Nom de base de données (facultatif)|  
 |Oracle, version 8 et ultérieure|Fournisseur Oracle pour OLE DB|Quelconque|**OraOLEDB.Oracle**|Alias de la base de données Oracle||||  
@@ -104,7 +104,7 @@ ID de programme unique (PROGID) du fournisseur OLE DB correspondant à la sourc
   
  Le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournisseur OLE DB Native Client est le fournisseur utilisé avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] si aucun nom de fournisseur n’est spécifié ou si [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est spécifié comme nom de produit. Même si vous spécifiez l'ancien nom du fournisseur, SQLOLEDB, il est remplacé par SQLNCLI lorsqu'il est persistant pour le catalogue.  
   
- Les paramètres *data_source*, *location*, *provider_string*et *Catalog* identifient la ou les bases de données vers lesquelles pointe le serveur lié. Si un de ces paramètres a la valeur NULL, la propriété d'initialisation OLE DB correspondante n'est pas définie.  
+ Les paramètres *data_source*, *location*, *provider_string* et *Catalog* identifient la ou les bases de données vers lesquelles pointe le serveur lié. Si un de ces paramètres a la valeur NULL, la propriété d'initialisation OLE DB correspondante n'est pas définie.  
   
  Dans un environnement ordonné en clusters, lorsque vous spécifiez des noms de fichiers qui pointent vers des sources de données OLE DB, utilisez le nom UNC (Universal Naming Convention) ou un lecteur partagé pour spécifier l'emplacement.  
   

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - PersistFormatEnum
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ebe1a2ab-e9f1-43a2-8f94-b190c9613d70
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c8c4f917b9c2874e945a3ff523c0d6593386a619
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 25214603d009cfa8203aabe482ffdd7b511dd169
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990080"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170578"
 ---
 # <a name="persistformatenum"></a>PersistFormatEnum
 Spécifie le format d’enregistrement d’un [jeu d’enregistrements](./recordset-object-ado.md).  

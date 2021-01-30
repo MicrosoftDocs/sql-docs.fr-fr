@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 7f8aea7b-9183-4b29-8ac0-a393ed2e8bd5
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e763e4d1d69a4f0cfbabd92e20bc60e80fabf67d
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 0d8bf94e7a5b01df108310d5102ad91aca94a7cc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990520"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170793"
 ---
 # <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vc"></a>MoveFirst, MoveLast, MoveNext et MovePrevious, exemple de méthodes (VC + +)
 Cet exemple utilise les méthodes [MoveFirst](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md)et [MovePrevious](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md) pour déplacer le pointeur d’enregistrement d’un [jeu d’enregistrements](./recordset-object-ado.md) en fonction de la commande fournie. La fonction MoveAny est requise pour que cet exemple s’exécute.  

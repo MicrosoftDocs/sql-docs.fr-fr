@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 02/15/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - Parameter collection [ADO], ADO/WFC syntax
 ms.assetid: d00d1e1e-14b1-41a2-a00f-2a3cb7396f15
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 365e843693def4f8a050dbc5f12c4a23768923f1
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: be74f3405a3b8ade04f2598a125efde759cf4195
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990180"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170633"
 ---
 # <a name="parameter-ado---wfc-syntax"></a>Paramètre (ADO - syntaxe WFC)
 ## <a name="package-commswfcdata"></a>package com. ms. wfc. Data  
@@ -70,7 +70,7 @@ public AdoProperties getProperties()
   
  ADO/WFC implémente la propriété **value** avec la méthode **GetValue** , qui retourne un objet variant ; et la méthode **SetValue** , qui prend une variante comme argument. Les VARIANTEs sont très efficaces dans certains langages, tels que Microsoft Visual Basic.  
   
- En plus de la propriété **value** , ADO/WFC fournit des méthodes d' *accesseur* qui utilisent des types de données Java pour récupérer et définir le contenu des objets **Parameter** . La plupart de ces méthodes ont des noms au format **obtenir**le_type de données_ ou **définir**le type de_données_.  
+ En plus de la propriété **value** , ADO/WFC fournit des méthodes d' *accesseur* qui utilisent des types de données Java pour récupérer et définir le contenu des objets **Parameter** . La plupart de ces méthodes ont des noms au format **obtenir** le _type de données_ ou **définir** le type de _données_.  
   
  Il y a une exception notable : il n’existe aucune propriété **getNull** ; au lieu de cela, il existe une propriété **IsNull** qui retourne une valeur booléenne indiquant si le champ est null.  
   

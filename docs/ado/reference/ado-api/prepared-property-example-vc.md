@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f697ac1a-f125-42b5-bbf6-762a7fa30ae3
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: fb8f0b2b269e872f8a40cbdce11388895ec5f927
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 8dbdff171e7c1052e84e080aa5a11d37ef9055e6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990020"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170536"
 ---
 # <a name="prepared-property-example-vc"></a>Prepared, exemple de propriété (VC++)
 Cet exemple illustre la propriété [préparée](./prepared-property-ado.md) en ouvrant deux objets de [commande](./command-object-ado.md) : l’un préparé et l’autre non préparé.  

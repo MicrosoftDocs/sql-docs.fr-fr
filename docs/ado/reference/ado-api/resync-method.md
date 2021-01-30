@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset20::raw_Resync
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 73b355d4-a4c0-434b-bfc4-039b1c76b32e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 79a43a36fb68063c2f0c880f0d8d086714dcfffe
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: b1c4156c56a3c6722fb856511ccb3be1b14c7f5e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989480"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170359"
 ---
 # <a name="resync-method"></a>Resync, méthode
 Actualise les données de la base de données sous-jacente de l’objet [Recordset](./recordset-object-ado.md) actuel ou de la collection [Fields](./fields-collection-ado.md) d’un objet [Record](./record-object-ado.md) .  
@@ -38,10 +38,10 @@ Recordset.Resync AffectRecords, ResyncValues Record.Fields.Resync ResyncValues
   
 #### <a name="parameters"></a>Paramètres  
  *AffectRecords*  
- facultatif. Valeur [AffectEnum](./affectenum.md) qui détermine le nombre d’enregistrements affectés par la méthode **Resync** . La valeur par défaut est **adAffectAll**. Cette valeur n’est pas disponible avec la méthode **Resync** de la collection **Fields** d’un objet **Record** .  
+ Facultatif. Valeur [AffectEnum](./affectenum.md) qui détermine le nombre d’enregistrements affectés par la méthode **Resync** . La valeur par défaut est **adAffectAll**. Cette valeur n’est pas disponible avec la méthode **Resync** de la collection **Fields** d’un objet **Record** .  
   
  *ResyncValues*  
- facultatif. Valeur de [ResyncEnum](./resyncenum.md) qui spécifie si les valeurs sous-jacentes sont remplacées. La valeur par défaut est **adResyncAllValues**.  
+ Facultatif. Valeur de [ResyncEnum](./resyncenum.md) qui spécifie si les valeurs sous-jacentes sont remplacées. La valeur par défaut est **adResyncAllValues**.  
   
 ## <a name="remarks"></a>Notes  
   

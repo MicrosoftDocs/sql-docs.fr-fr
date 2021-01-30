@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Table::get_DateCreated
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 2bf4b00d-045c-444e-8af7-8af6297ed418
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 46b94255726bde107e52b6ca9c3546b9744b4a9f
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 2a47ca11af6b3874a6408bfecc67e3ac96afe0d6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88984750"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172150"
 ---
 # <a name="datecreated-property-adox"></a>DateCreated, propriété (ADOX)
 Indique la date à laquelle l’objet a été créé.  

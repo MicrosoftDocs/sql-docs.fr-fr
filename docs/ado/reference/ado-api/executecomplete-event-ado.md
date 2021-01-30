@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Connection::ExecuteComplete
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 62470d42-e511-494c-bec4-ad4591734b7b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 36e27f8a86fce348dbf2061a1c7be91f43be9adc
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: c64856ccbd3cdada037ffd77a9ac3b0e74add570
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88973390"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171127"
 ---
 # <a name="executecomplete-event-ado"></a>ExecuteComplete, événement (ADO)
 L’événement **ExecuteComplete** est appelé à la fin de l’exécution d’une commande.  

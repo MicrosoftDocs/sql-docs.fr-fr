@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - ADORecordConstruction
@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 52a5429e-5829-455e-be3b-31f05cbecf2d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4e56c1ed6339c7b0baf50abfc6308a2dc2be741a
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 45cf9d5bc72178e5ab56264e9f5ec3475f00eef1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976230"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171596"
 ---
 # <a name="adorecordconstruction-interface"></a>ADORecordConstruction, interface
-L’interface **ADORecordConstruction**est utilisée pour construire un objet **enregistrement** ADO à partir d’un objet OLE DB **Row** dans une application C/C++.  
+L’interface **ADORecordConstruction** est utilisée pour construire un objet **enregistrement** ADO à partir d’un objet OLE DB **Row** dans une application C/C++.  
   
  Cette interface prend en charge les propriétés suivantes :  
   
@@ -33,7 +33,7 @@ L’interface **ADORecordConstruction**est utilisée pour construire un objet **
 |Propriété|Description|  
 |-|-|  
 |[ParentRow](./parentrow-property-ado.md)|En écriture seule.<br />Définit le conteneur d’un objet OLE DB **Row** sur cet objet ADO **Record** .|  
-|[Haut](./row-property-ado.md)|Lecture/écriture.<br />Obtient/définit un objet de **ligne** OLE DB à partir de cet objet **enregistrement** ADO.|  
+|[Ligne](./row-property-ado.md)|Lecture/écriture.<br />Obtient/définit un objet de **ligne** OLE DB à partir de cet objet **enregistrement** ADO.|  
   
 ## <a name="methods"></a>Méthodes  
  Aucun.  
@@ -71,7 +71,7 @@ L’interface **ADORecordConstruction**est utilisée pour construire un objet **
   
  Un objet **Record** ADO peut également être construit à partir du conteneur d’un objet OLE DB **Row** .  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Conditions requises  
  **Version :** ADO 2,0 et versions ultérieures  
   
  **Bibliothèque :** msado15.dll  

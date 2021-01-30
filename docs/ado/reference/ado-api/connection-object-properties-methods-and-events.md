@@ -7,18 +7,18 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Connection object [ADO], members
 ms.assetid: f571b74d-b796-4009-9c66-6a36ab995a2a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e6650847d3db9d07b7c09d41af7895f604ab105d
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: efbf7d9c27b7ba9c4be39e81bf0c7ea3296c0bf4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88974890"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171449"
 ---
 # <a name="connection-object-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet Connection
 ## <a name="propertiescollections"></a>Propriétés/collections  

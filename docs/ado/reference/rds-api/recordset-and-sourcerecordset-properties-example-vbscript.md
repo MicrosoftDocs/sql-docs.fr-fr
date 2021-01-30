@@ -7,7 +7,7 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 95175316-cd10-4cf7-96ba-2a226fd97701
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a6784ba51ce7b57a9682cb573bd035f7bd102e3a
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: d7829b4063733da73a28c0ea46e5e804b536c9a8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724306"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171961"
 ---
 # <a name="recordset-and-sourcerecordset-properties-example-vbscript"></a>Recordset et SourceRecordset, exemples de propriétés (VBScript)
 > [!IMPORTANT]

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Views::raw_Append
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 6070fd58-3237-4c77-a966-5b39ce5d57e4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 77682d479d65c7ccc0dd01fd1fd86627a580d8c5
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 757778961d7b66dd147b8b013b48062dae0cbd91
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88985390"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172278"
 ---
 # <a name="append-method-adox-views"></a>Append, méthode (vues ADOX)
 Crée un objet de [vue](./view-object-adox.md) et l’ajoute à la collection [views](./views-collection-adox.md) .  

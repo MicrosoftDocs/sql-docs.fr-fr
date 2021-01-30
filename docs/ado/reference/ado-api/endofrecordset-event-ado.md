@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - EndOfRecordset
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 475de5e2-f634-4954-9edf-0027a6ba38d6
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1c0bd91666040a87d104ff4a9c0036596b711a51
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 9369b22c012773627c17da55a336aac116dc4e06
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88973796"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171226"
 ---
 # <a name="endofrecordset-event-ado"></a>EndOfRecordset, événement (ADO)
 L’événement **EndOfRecordset** est appelé en cas de tentative de déplacement vers une ligne située au-delà de la fin du [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md).  

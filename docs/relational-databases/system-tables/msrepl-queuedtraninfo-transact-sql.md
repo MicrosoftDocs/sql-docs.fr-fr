@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSrepl_queuedtraninfo_TSQL
 - MSrepl_queuedtraninfo
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: af7a5baf-32ea-475f-b6b9-68c557b4980c
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 957314a333b26cec5e73758a4d4c2826770420a9
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: b491844ad429ea07efd7e866f790c02ab7a55c6a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102719"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171657"
 ---
 # <a name="msrepl_queuedtraninfo-transact-sql"></a>MSrepl_queuedtraninfo (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

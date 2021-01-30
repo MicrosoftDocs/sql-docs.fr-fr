@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 50f87e27-1bf9-427c-9b1d-704a672434d2
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d87c05fc89d614881ab8114c02f7bf7a0564aabc
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: e6687c8f857e069090605870af7e4a10e77b18b9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88984240"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172028"
 ---
 # <a name="indexes-append-method-example-vb"></a>Indexes, exemple de méthode Append (VB)
 Le code suivant montre comment créer un nouvel index. L’index se trouve sur deux colonnes de la table.  

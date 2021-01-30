@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5a007b9a-be11-4fba-96db-6252993f97b8
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8a726c8156d8ed9dcfa2b10e53190b099f67af98
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 7e5a47bd7bd19be7685308b20225188cc58a4832
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88984940"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172232"
 ---
 # <a name="command-and-commandtext-properties-example-vc"></a>Command et CommandText, exemples de propriétés (VC++)
 Le code suivant montre comment utiliser la propriété [Command](./command-property-adox.md) pour mettre à jour le texte d’une procédure.  

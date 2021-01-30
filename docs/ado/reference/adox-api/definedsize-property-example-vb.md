@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4dda2239-7ab5-4729-9c63-eb530803f7d9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e5c3010ce4e320ef0fd8a8bb1fbe09a5ebafad6b
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 582fdd28528569b26cc7cb396523eccb5f7d6000
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88984650"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172113"
 ---
 # <a name="definedsize-property-example-vb"></a>DefinedSize, exemple de propriété (VB)
 Cet exemple illustre la propriété [DefinedSize](./definedsize-property-adox.md) d’une [colonne](./column-object-adox.md). Le code redéfinit la taille de la colonne FirstName de la table **Employees** de la base de données *Northwind* . Ensuite, la modification des valeurs du [champ](../ado-api/field-object.md) FirstName d’un [jeu d’enregistrements](../ado-api/recordset-object-ado.md) basé sur la table **Employees** s’affiche. Notez que, par défaut, le champ FirstName est complété par des espaces après avoir redéfini la propriété **DefinedSize** .  

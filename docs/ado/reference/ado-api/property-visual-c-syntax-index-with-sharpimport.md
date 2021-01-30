@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 dev_langs:
 - C++
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 80988ca7-f514-438d-bf6f-9390dfe93fc3
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 22cfcbb45615c991721b0ae3d6f3380975bc58ab
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 8629005fd4aa046fbcd4d860ed5fc87ad645d456
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989970"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170503"
 ---
 # <a name="property-visual-c-syntax-index-with-import"></a>Property (Visual C++ index de syntaxe avec #import)
 ## <a name="properties"></a>Propriétés  

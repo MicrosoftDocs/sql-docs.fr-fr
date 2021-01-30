@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Parameters::GetItem
@@ -46,12 +46,12 @@ helpviewer_keywords:
 ms.assetid: e11484bb-c5c7-42d8-9bb8-21572125d727
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3f54ba0276affc1b098b3e499c31769f4cf9f927
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 0ae6b59ffe896180f5977288bbee16925b7d33b4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990750"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170922"
 ---
 # <a name="item-property-ado"></a>Item, propriété (ADO)
 Indique un membre spécifique d’une collection, par nom ou numéro ordinal.  

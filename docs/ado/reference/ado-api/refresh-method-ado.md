@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Collection::Refresh
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 089b7ca7-684f-4259-8032-5bd1ecc54426
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 66324860f931a919cccc36d3de9464d2ad2e48d0
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: f72f41f58ed43665acd3838a5f8e2228c736fd78
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989610"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170399"
 ---
 # <a name="refresh-method-ado"></a>Refresh, méthode (ADO)
 Met à jour les objets d’une collection pour refléter les objets disponibles et spécifiques au fournisseur.  

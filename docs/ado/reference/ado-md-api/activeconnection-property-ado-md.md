@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - ActiveConnection
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 2509b32c-a995-4364-9152-d8c83129bdd8
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 541f6800a440019d210bdf427ab8dafd58acc3b5
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 71aa79f359989b1e0ab77d0247b0f1082f3ce1c6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88987640"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172324"
 ---
 # <a name="activeconnection-property-ado-md"></a>ActiveConnection, propriété (ADO MD)
 Indique à quel objet de [connexion](../ado-api/connection-object-ado.md) ADO appartient actuellement le catalogue ou l’CellSet actuel.  
@@ -36,7 +36,7 @@ Indique à quel objet de [connexion](../ado-api/connection-object-ado.md) ADO ap
   
  Si vous utilisez l’argument *ActiveConnection* de la méthode [Open](./open-method-ado-md.md) pour ouvrir un objet [Cellset](./cellset-object-ado-md.md) , la propriété **ActiveConnection** héritera de la valeur de l’argument.  
   
- L’affectation de la valeur **Nothing** à la propriété **ActiveConnection** d’un objet [catalogue](./catalog-object-ado-md.md) libère les données associées, y compris les données de la collection [CubeDefs](./cubedefs-collection-ado-md.md) et les objets [dimension](./dimension-object-ado-md.md), [hiérarchie](./hierarchy-object-ado-md.md), [niveau](./level-object-ado-md.md)et [membre](./member-object-ado-md.md) associés. La fermeture d’un objet de **connexion** qui a été utilisé pour ouvrir un **catalogue** a le même effet que l’affectation de la valeur **Nothing**à la propriété **ActiveConnection** .  
+ L’affectation de la valeur **Nothing** à la propriété **ActiveConnection** d’un objet [catalogue](./catalog-object-ado-md.md) libère les données associées, y compris les données de la collection [CubeDefs](./cubedefs-collection-ado-md.md) et les objets [dimension](./dimension-object-ado-md.md), [hiérarchie](./hierarchy-object-ado-md.md), [niveau](./level-object-ado-md.md)et [membre](./member-object-ado-md.md) associés. La fermeture d’un objet de **connexion** qui a été utilisé pour ouvrir un **catalogue** a le même effet que l’affectation de la valeur **Nothing** à la propriété **ActiveConnection** .  
   
  La modification de la base de données par défaut de la connexion référencée par la propriété **ActiveConnection** d’un objet **catalogue** invalide le contenu du **catalogue**.  
   

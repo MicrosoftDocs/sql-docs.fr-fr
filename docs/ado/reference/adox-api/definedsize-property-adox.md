@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Column::DefinedSize
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 762b8937-c31c-4e90-bb85-506d991e8280
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: fa8da838f47be7aa9af4827481a59982a081449d
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 7d2b6b22204026b2cf8f70718f6b451ec3fe6dcc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88984660"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172125"
 ---
 # <a name="definedsize-property-adox"></a>DefinedSize, propriété (ADOX)
 Indique la taille maximale indiquée de la colonne.  

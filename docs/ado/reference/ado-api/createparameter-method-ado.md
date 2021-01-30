@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Command15::raw_CreateParameter
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 9666fdcc-0544-4ed7-a97b-c415f2a56d7e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8fd075dff5ae67c7965082a9b7d0f75f5c4d47eb
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 61793ca158cee6d4143128eae7fdecf3722ae61e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88974480"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171377"
 ---
 # <a name="createparameter-method-ado"></a>CreateParameter, méthode (ADO)
 Crée un nouvel objet de [paramètre](./parameter-object.md) avec les propriétés spécifiées.  
@@ -39,19 +39,19 @@ Set parameter = command.CreateParameter (Name, Type, Direction, Size, Value)
   
 #### <a name="parameters"></a>Paramètres  
  *Nom*  
- facultatif. Valeur de **chaîne** qui contient le nom de l’objet de **paramètre** .  
+ Facultatif. Valeur de **chaîne** qui contient le nom de l’objet de **paramètre** .  
   
  *Type*  
- facultatif. Valeur [DataTypeEnum](./datatypeenum.md) qui spécifie le type de données de l’objet de **paramètre** .  
+ Facultatif. Valeur [DataTypeEnum](./datatypeenum.md) qui spécifie le type de données de l’objet de **paramètre** .  
   
  *Sens*  
- facultatif. Valeur [ParameterDirectionEnum](./parameterdirectionenum.md) qui spécifie le type d’objet de **paramètre** .  
+ Facultatif. Valeur [ParameterDirectionEnum](./parameterdirectionenum.md) qui spécifie le type d’objet de **paramètre** .  
   
  *Taille*  
- facultatif. Valeur de **type long** qui spécifie la longueur maximale de la valeur de paramètre en caractères ou en octets.  
+ Facultatif. Valeur de **type long** qui spécifie la longueur maximale de la valeur de paramètre en caractères ou en octets.  
   
  *Valeur*  
- facultatif. **Variant** qui spécifie la valeur de l’objet **Parameter** .  
+ Facultatif. **Variant** qui spécifie la valeur de l’objet **Parameter** .  
   
 ## <a name="remarks"></a>Notes  
  Utilisez la méthode **CreateParameter** pour créer un nouvel objet de **paramètre** avec un nom, un type, une direction, une taille et une valeur spécifiés. Toutes les valeurs que vous transmettez dans les arguments sont écrites dans les propriétés de **paramètre** correspondantes.  

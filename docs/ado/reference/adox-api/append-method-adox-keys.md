@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Keys::Append
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 215a5391-f422-42ec-99ea-4e6fbb5d3d64
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2531031808c16db4892fb0b759a8a8d819a2222d
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: c4690fba27f42da95eb354b5074f9eb9954902a6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88985480"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172296"
 ---
 # <a name="append-method-adox-keys"></a>Append, méthode (clés ADOX)
 Ajoute un nouvel objet [clé](./key-object-adox.md) à la collection de [clés](./keys-collection-adox.md) .  
@@ -39,16 +39,16 @@ Keys.Append Key [,KeyType] [,Column] [,RelatedTable] [,RelatedColumn]
  Objet **clé** à ajouter ou nom de la clé à créer et à ajouter.  
   
  *KeyType*  
- facultatif. Valeur de type **long** qui spécifie le type de clé. Le paramètre de *clé* correspond à la propriété de [type](./type-property-key-adox.md) d’un objet **clé** .  
+ Facultatif. Valeur de type **long** qui spécifie le type de clé. Le paramètre de *clé* correspond à la propriété de [type](./type-property-key-adox.md) d’un objet **clé** .  
   
  *Colonne*  
- facultatif. Valeur de **chaîne** qui spécifie le nom de la colonne à indexer. Le paramètre *Columns* correspond à la valeur de la propriété [Name](./name-property-adox.md) d’un objet [Column](./column-object-adox.md) .  
+ Facultatif. Valeur de **chaîne** qui spécifie le nom de la colonne à indexer. Le paramètre *Columns* correspond à la valeur de la propriété [Name](./name-property-adox.md) d’un objet [Column](./column-object-adox.md) .  
   
  *RelatedTable*  
- facultatif. Valeur de **chaîne** qui spécifie le nom de la table associée. Le paramètre *RelatedTable* correspond à la valeur de la propriété **Name** d’un objet [table](./table-object-adox.md) .  
+ Facultatif. Valeur de **chaîne** qui spécifie le nom de la table associée. Le paramètre *RelatedTable* correspond à la valeur de la propriété **Name** d’un objet [table](./table-object-adox.md) .  
   
  *; RelatedColumn*  
- facultatif. Valeur de **chaîne** qui spécifie le nom de la colonne associée pour une clé étrangère. Le paramètre *RelatedColumn* correspond à la valeur de la propriété **Name** d’un objet [Column](./column-object-adox.md) .  
+ Facultatif. Valeur de **chaîne** qui spécifie le nom de la colonne associée pour une clé étrangère. Le paramètre *RelatedColumn* correspond à la valeur de la propriété **Name** d’un objet [Column](./column-object-adox.md) .  
   
 ## <a name="remarks"></a>Notes  
  Le paramètre *Columns* peut prendre soit le nom d’une colonne, soit un tableau de noms de colonnes.  

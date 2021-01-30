@@ -7,18 +7,18 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ADO, object model
 ms.assetid: 4aca9838-1ec6-4084-bd63-dc2d17d8ab7d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8611017e2c53bc89efd3ab5ea98a35a8b3a764e6
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: b4bc0cd6ff23f0f778c72d54f3778cf2fa476a94
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976380"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171611"
 ---
 # <a name="ado-object-model"></a>Modèle objet ADO
 Les figures suivantes présentent les objets ADO et leurs collections.  

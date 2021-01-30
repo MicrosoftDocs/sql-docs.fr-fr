@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_update_proxy
 - sp_update_proxy_TSQL
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 864fd0e6-9d61-4f07-92ef-145318d2f881
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 052f78652c02b7486d930dbb7071a6b2a981074b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f12d4666ed97033b19d7a0d4e39b17806e4d0953
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88473492"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171714"
 ---
 # <a name="sp_update_proxy-transact-sql"></a>sp_update_proxy (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -66,9 +66,9 @@ sp_update_proxy
  **0** (succès) ou **1** (échec)  
   
 ## <a name="remarks"></a>Notes  
- ** \@ Proxy_name** ou ** \@ proxy_id** doivent être spécifiés. Si ces deux arguments sont spécifiés, ils doivent tous les deux référencer le même proxy, sinon la procédure stockée échoue.  
+ **\@ Proxy_name** ou **\@ proxy_id** doivent être spécifiés. Si ces deux arguments sont spécifiés, ils doivent tous les deux référencer le même proxy, sinon la procédure stockée échoue.  
   
- ** \@ Credential_name** ou ** \@ credential_id** doivent être spécifiés pour modifier les informations d’identification du proxy. Si ces deux arguments sont spécifiés, ils doivent tous les deux référencer les mêmes informations d'identification, sinon la procédure stockée échoue.  
+ **\@ Credential_name** ou **\@ credential_id** doivent être spécifiés pour modifier les informations d’identification du proxy. Si ces deux arguments sont spécifiés, ils doivent tous les deux référencer les mêmes informations d'identification, sinon la procédure stockée échoue.  
   
  Cette procédure modifie le proxy sans modifier son accès. Pour modifier l’accès à un proxy, utilisez **sp_grant_login_to_proxy** et **sp_revoke_login_from_proxy**.  
   

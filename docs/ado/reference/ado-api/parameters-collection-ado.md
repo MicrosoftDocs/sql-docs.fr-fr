@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Command15::get_Parameters
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 497cae10-3913-422a-9753-dcbb0a639b1b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: bad2570c368e469afeb7c69e4f283bdbdfe04674
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 4cd94745a6ec2d4f34245b53f509752c13688d45
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990120"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170597"
 ---
 # <a name="parameters-collection-ado"></a>Parameters, collection (ADO)
 Contient tous les objets [Parameter](./parameter-object.md) d’un objet [Command](./command-object-ado.md) .  
@@ -43,7 +43,7 @@ Contient tous les objets [Parameter](./parameter-object.md) d’un objet [Comman
   
 1.  Lors de l’appel d’une procédure stockée qui n’a pas de paramètres, la méthode **Refresh** de la collection **Parameters** doit être appelée avant d’appeler la méthode **Execute** sur l’objet **Command** .  
   
-2.  Lors de l’appel d’une procédure stockée avec des paramètres et de l’ajout explicite d’un paramètre à la collection **Parameters** avec **Append**, le paramètre de sortie/valeur de retour doit être ajouté à la collection **Parameters** . La valeur de retour doit d’abord être ajoutée à la collection de **paramètres** . Utilisez **Append** pour ajouter les autres paramètres dans la collection **Parameters** dans l’ordre de définition. Par exemple, la procédure stockée SPWithParam a deux paramètres. Le premier *paramètre,, est*un paramètre d’entrée défini comme adVarChar (20), tandis que le second paramètre, *subparast*, est un paramètre de sortie défini comme adVarChar (20). Vous pouvez récupérer le paramètre de sortie/valeur de retour avec le code suivant.  
+2.  Lors de l’appel d’une procédure stockée avec des paramètres et de l’ajout explicite d’un paramètre à la collection **Parameters** avec **Append**, le paramètre de sortie/valeur de retour doit être ajouté à la collection **Parameters** . La valeur de retour doit d’abord être ajoutée à la collection de **paramètres** . Utilisez **Append** pour ajouter les autres paramètres dans la collection **Parameters** dans l’ordre de définition. Par exemple, la procédure stockée SPWithParam a deux paramètres. Le premier *paramètre,, est* un paramètre d’entrée défini comme adVarChar (20), tandis que le second paramètre, *subparast*, est un paramètre de sortie défini comme adVarChar (20). Vous pouvez récupérer le paramètre de sortie/valeur de retour avec le code suivant.  
   
     ```vb
     ' Open Connection Conn  
@@ -64,7 +64,7 @@ Contient tous les objets [Parameter](./parameter-object.md) d’un objet [Comman
   
     ```  
   
-3.  Lorsque vous appelez une procédure stockée avec des paramètres et configurez les paramètres en appelant la méthode **Item** sur la collection **Parameters** , vous pouvez récupérer la valeur de retour/le paramètre de sortie de la procédure stockée à partir de la collection **Parameters** . Par exemple, la procédure stockée SPWithParam a deux paramètres. Le premier *paramètre,, est*un paramètre d’entrée défini comme adVarChar (20), tandis que le second paramètre, *subparast*, est un paramètre de sortie défini comme adVarChar (20). Vous pouvez récupérer le paramètre de sortie/valeur de retour avec le code suivant.  
+3.  Lorsque vous appelez une procédure stockée avec des paramètres et configurez les paramètres en appelant la méthode **Item** sur la collection **Parameters** , vous pouvez récupérer la valeur de retour/le paramètre de sortie de la procédure stockée à partir de la collection **Parameters** . Par exemple, la procédure stockée SPWithParam a deux paramètres. Le premier *paramètre,, est* un paramètre d’entrée défini comme adVarChar (20), tandis que le second paramètre, *subparast*, est un paramètre de sortie défini comme adVarChar (20). Vous pouvez récupérer le paramètre de sortie/valeur de retour avec le code suivant.  
   
     ```vb
     ' Open Connection Conn  

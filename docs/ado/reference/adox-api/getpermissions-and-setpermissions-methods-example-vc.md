@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8c75d547-d3d7-44c4-b7de-eead5d11b92e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a6aa56ac29a2360098284de57831638f04bcb47e
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: e0fea6bc28e857b9d61d7aa429206fad6a2bb48c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88984440"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172069"
 ---
 # <a name="getpermissions-and-setpermissions-methods-example-vc"></a>GetPermissions et SetPermissions, exemples de méthodes (VC++)
 Cet exemple illustre les méthodes [GetPermissions](./getpermissions-method-adox.md) et [SetPermissions](./setpermissions-method-adox.md) . Le code suivant donne un accès complet à la table Orders à l’utilisateur admin.  

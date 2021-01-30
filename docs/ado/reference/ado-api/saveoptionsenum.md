@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - SaveOptionsEnum
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 59339100-6e29-48d1-aea3-6873796d186b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 56e16ff6ca93dde78531394dc474a2e5cc817348
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: e80e94e4ccc98faa7cf825facc62df01395855a2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989310"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170317"
 ---
 # <a name="saveoptionsenum"></a>SaveOptionsEnum
 Spécifie si un fichier doit être créé ou remplacé lors de l’enregistrement à partir d’un objet de [flux](./stream-object-ado.md) . Les valeurs peuvent être **adSaveCreateNotExist** ou **adSaveCreateOverWrite**.  

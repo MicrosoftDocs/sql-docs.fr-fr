@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Connection15::IsolationLevel
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ea84e4b2-fbf2-4eef-b9ce-796b22e21800
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 91945d36801005fb7f7c4dbcc9df5a464c6e4fa4
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: dc9f116c565321051184d16fa0cdf963cc4bfe0e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990770"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170924"
 ---
 # <a name="isolationlevel-property"></a>IsolationLevel, propriété
 Indique le niveau d’isolation d’un objet de [connexion](./connection-object-ado.md) .  

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Field20::OriginalValue
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6e33c6ec-14d9-4b1d-ba9b-cb99862e7bac
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ab73e79f86ac1e504322a0606ee3839997ce5811
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: dd53935335a4f5df694a5a5175f2bd7d3505a108
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990210"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170650"
 ---
 # <a name="originalvalue-property-ado"></a>OriginalValue, propriété (ADO)
 Indique la valeur d’un [champ](./field-object.md) qui existait dans l’enregistrement avant toute modification.  
@@ -36,7 +36,7 @@ Indique la valeur d’un [champ](./field-object.md) qui existait dans l’enregi
   
  En *mode de mise à jour par lot* (dans lequel le fournisseur met en cache plusieurs modifications et les écrit dans la source de données sous-jacente uniquement lorsque vous appelez la méthode [UpdateBatch](./updatebatch-method.md) ), la propriété **OriginalValue** retourne la valeur de champ qui existait avant toute modification (autrement dit, depuis le dernier appel de la méthode **UpdateBatch** ). Il s’agit de la même valeur que celle utilisée par la méthode [CancelBatch](./cancelbatch-method-ado.md) pour remplacer la propriété **value** . Lorsque vous utilisez cette propriété avec la propriété [UnderlyingValue](./underlyingvalue-property.md) , vous pouvez résoudre les conflits qui résultent des mises à jour par lots.  
   
-## <a name="record"></a>Enregistrement  
+## <a name="record"></a>Enregistrer  
  Pour les objets [Record](./record-object-ado.md) , la propriété **OriginalValue** est vide pour les champs ajoutés avant l’appel de la méthode [Update](./update-method.md) .  
   
 ## <a name="applies-to"></a>S'applique à  

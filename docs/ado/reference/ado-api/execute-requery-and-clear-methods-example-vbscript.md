@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 3a7bbf07-2fca-4892-95f4-eec93f2d5e91
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3a584d2c0c0187425cc5796fa8c7a0070f358b31
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: d592835b148c6307e49583fac3e4a9cbffbfbf23
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88973410"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171134"
 ---
 # <a name="execute-requery-and-clear-methods-example-vbscript"></a>Execute, Requery et Clear, exemple de méthode (VBScript)
 Cet exemple illustre la méthode **Execute** lorsqu’elle est exécutée à la fois à partir d’un objet de [commande](../../../ado/reference/ado-api/command-object-ado.md) et d’un objet de [connexion](../../../ado/reference/ado-api/connection-object-ado.md) . Elle utilise également la méthode [Requery](../../../ado/reference/ado-api/requery-method.md) pour récupérer les données actuelles dans un [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md)et la méthode [Clear](../../../ado/reference/ado-api/clear-method-ado.md) pour effacer le contenu de la collection [Errors](../../../ado/reference/ado-api/errors-collection-ado.md) . Les procédures ExecuteCommand et PrintOutput sont requises pour exécuter cette procédure.  

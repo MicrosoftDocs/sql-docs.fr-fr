@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_attach_db_TSQL
 - sp_attach_db
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 59bc993e-7913-4091-89cb-d2871cffda95
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 79c3d518798c53342e67bfa42ce430d9ffe8e07a
-ms.sourcegitcommit: 968969b62bc158b9843aba5034c9d913519bc4a7
+ms.openlocfilehash: cb1d6447fb73174817fe8105c3dea1866d09b789
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91753471"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171781"
 ---
 # <a name="sp_attach_db-transact-sql"></a>sp_attach_db (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -50,7 +50,7 @@ sp_attach_db [ @dbname= ] 'dbname'
 ## <a name="arguments"></a>Arguments  
 `[ @dbname = ] 'dbnam_ '` Nom de la base de données à attacher au serveur. Le nom doit être unique. *dbname* est de **type sysname**, avec NULL comme valeur par défaut.  
   
-`[ @filename1 = ] 'filename_n'` Nom physique, y compris le chemin d’accès, d’un fichier de base de données. *filename_n* est de type **nvarchar (260)**, avec NULL comme valeur par défaut. Jusqu'à 16 noms de fichier peuvent être spécifiés. Les noms de paramètres commencent à ** \@ NomFichier1** et sont incrémentés à ** \@ filename16**. La liste des noms de fichiers doit comprendre au moins le fichier primaire. Le fichier primaire contient les tables système pointant vers d'autres fichiers dans la base de données. Elle doit aussi comprendre tous les fichiers qui ont été déplacés après que la base de données fut détachée.  
+`[ @filename1 = ] 'filename_n'` Nom physique, y compris le chemin d’accès, d’un fichier de base de données. *filename_n* est de type **nvarchar (260)**, avec NULL comme valeur par défaut. Jusqu'à 16 noms de fichier peuvent être spécifiés. Les noms de paramètres commencent à **\@ NomFichier1** et sont incrémentés à **\@ filename16**. La liste des noms de fichiers doit comprendre au moins le fichier primaire. Le fichier primaire contient les tables système pointant vers d'autres fichiers dans la base de données. Elle doit aussi comprendre tous les fichiers qui ont été déplacés après que la base de données fut détachée.  
   
 > [!NOTE]  
 >  Cet argument crée un mappage vers le paramètre FILENAME de l'instruction CREATE DATABASE. Pour plus d’informations, consultez [CREATE DATABASE &#40;SQL Server Transact-SQL&#41;](../../t-sql/statements/create-database-transact-sql.md).  

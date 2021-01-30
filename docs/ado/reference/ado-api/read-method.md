@@ -6,7 +6,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Stream::raw_Read
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 838502de-80f1-4eeb-8838-dd3d9403e567
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6d4b0ab7c3cc77c1f83eac4c3a30e9f637d950ba
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 0adf12bc63745f739aaf8b71a92c660c1c1ad2fd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989900"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170492"
 ---
 # <a name="read-method"></a>Read, méthode
 Lit un nombre spécifié d’octets à partir d’un objet de [flux](./stream-object-ado.md) binaire.  
@@ -35,7 +35,7 @@ Variant = Stream.Read ( NumBytes)
   
 #### <a name="parameters"></a>Paramètres  
  *NumBytes*  
- facultatif. Valeur de **type long** qui spécifie le nombre d’octets à lire dans le fichier ou la valeur [StreamReadEnum](./streamreadenum.md) **adReadAll**, qui est la valeur par défaut.  
+ Facultatif. Valeur de **type long** qui spécifie le nombre d’octets à lire dans le fichier ou la valeur [StreamReadEnum](./streamreadenum.md) **adReadAll**, qui est la valeur par défaut.  
   
 ## <a name="return-value"></a>Valeur renvoyée  
  La méthode **Read** lit un nombre spécifié d’octets ou le flux entier à partir d’un objet de **flux** et retourne les données résultantes sous la forme d’un **Variant**.  

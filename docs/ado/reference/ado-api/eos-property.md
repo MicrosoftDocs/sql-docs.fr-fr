@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - EOS
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 57e08c5f-f3ed-4ecd-8c66-50b83b1031d1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f7df00678197a4b9d16298e5f680263673fd10e8
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 68b95970715bbcd009f8ae4fce7befd280f894eb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88973780"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171215"
 ---
 # <a name="eos-property"></a>EOS, propriété
 Indique si la position actuelle est à la fin du [flux](../../../ado/reference/ado-api/stream-object-ado.md).  

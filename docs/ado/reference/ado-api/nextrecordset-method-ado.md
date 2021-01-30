@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 03/20/2018
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - NextRecordset
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: ab1fa449-a695-4987-b1ee-bc68f89418dd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b73779dbca82df1d672a57aae667bc5a666a4945
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: acf9105b6d28e34de0351002063251d49196829a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990460"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170764"
 ---
 # <a name="nextrecordset-method-ado"></a>NextRecordset, méthode (ADO)
 Efface l’objet [Recordset](./recordset-object-ado.md) actuel et retourne le **jeu d’enregistrements** suivant en progressant dans une série de commandes.  
@@ -40,7 +40,7 @@ Set recordset2 = recordset1.NextRecordset(RecordsAffected )
   
 #### <a name="parameters"></a>Paramètres  
  *RecordsAffected*  
- facultatif. Variable de **type long** à laquelle le fournisseur retourne le nombre d’enregistrements affectés par l’opération en cours.  
+ Facultatif. Variable de **type long** à laquelle le fournisseur retourne le nombre d’enregistrements affectés par l’opération en cours.  
   
 > [!NOTE]
 >  Ce paramètre retourne uniquement le nombre d’enregistrements affectés par une opération. elle ne retourne pas un nombre d’enregistrements à partir d’une instruction SELECT utilisée pour générer le **Recordset**.  

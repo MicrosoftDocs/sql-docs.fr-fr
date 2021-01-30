@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 31731e4f-3c0c-451e-8cbc-c9df28fabf6c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2998027f3c32da89f97124671a6c30385d79c64b
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 18a44348584ec0f7894910300073b9c221566098
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88974670"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171415"
 ---
 # <a name="converttostring-method-example-vb"></a>ConvertToString, exemple de méthode (VB)
 ```  

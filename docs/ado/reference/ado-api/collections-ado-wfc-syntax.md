@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - syntax indexes [ADO], ADO/WFC
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 073f9a0e-c755-42dd-9f71-4647d68e331a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a6afa603b169949673544791849ecbbc5d312cfb
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: d8fca0d29736fb9a57d9a8f72703d3870db15087
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88975340"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171506"
 ---
 # <a name="collections-ado---wfc-syntax"></a>Collections (ADO - syntaxe WFC)
 **package com. ms. wfc. Data**  

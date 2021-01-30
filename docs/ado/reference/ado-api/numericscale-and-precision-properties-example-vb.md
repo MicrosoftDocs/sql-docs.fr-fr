@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9c1e2322-c225-49d1-a120-a343f23cea73
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ed3e4337c38ac11966e261b993beaef0f7f3113f
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 9e8e0d8013df4ec6d58aeeb059baa655e1980005
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990420"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99170747"
 ---
 # <a name="numericscale-and-precision-properties-example-vb"></a>NumericScale et Precision, exemple de propriétés (VB)
-Cet exemple utilise les propriétés [NumericScale](./numericscale-property-ado.md) et [PRECISION](./precision-property-ado.md) pour afficher l’échelle numérique et la précision des champs dans la table ***discounts*** de la base de données ***pubs*** .  
+Cet exemple utilise les propriétés [NumericScale](./numericscale-property-ado.md) et [PRECISION](./precision-property-ado.md) pour afficher l’échelle numérique et la précision des champs dans la table ***discounts** _ de la base de données _ *_pubs_**.  
   
 ```  
 'BeginNumericScaleVB  

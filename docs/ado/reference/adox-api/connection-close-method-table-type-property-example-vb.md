@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f88e7a3b-19ed-46e2-b2ce-3b611d9b8166
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: acd8183389276b47502b7ef14978eac855c74743
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: d5049e6d1e60a2a54633c1fa0fe7adacb0685690
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88984883"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172219"
 ---
 # <a name="connection-close-method-table-type-property-example-vb"></a>Close, méthode de l’objet Connection, Type (exemple de propriété de l’objet Table) (VB)
 L’affectation de la valeur **Nothing** à la propriété [ActiveConnection](./activeconnection-property-adox.md) doit fermer la connexion au catalogue. Les regroupements associés seront vides. Tous les objets qui ont été créés à partir d’objets de schéma dans le catalogue sont orphelins. Toutes les propriétés de ces objets qui ont été mises en cache seront toujours disponibles, mais une tentative de lecture des propriétés nécessitant un appel au fournisseur échouera.  
@@ -67,7 +67,7 @@ End Sub
 ' EndCloseConnectionVB  
 ```  
   
- La fermeture d’un objet de [connexion](../ado-api/connection-object-ado.md) qui a été utilisé pour ouvrir le catalogue doit avoir le même effet que l’affectation de la valeur **Nothing**à la propriété **ActiveConnection** .  
+ La fermeture d’un objet de [connexion](../ado-api/connection-object-ado.md) qui a été utilisé pour ouvrir le catalogue doit avoir le même effet que l’affectation de la valeur **Nothing** à la propriété **ActiveConnection** .  
   
 ```  
 Attribute VB_Name = "Connection"  
