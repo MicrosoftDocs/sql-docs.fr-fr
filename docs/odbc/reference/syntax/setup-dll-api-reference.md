@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ODBC drivers [ODBC], driver setup DLL
 - driver setup DLL [ODBC]
 ms.assetid: f9d03f17-1c0d-4e7c-9c04-8c316e07ef25
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5cb3e20a1c25d206a1dd27367bbe4a128af0818f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d80d6315227013d2de149d6847eb0ed5b8fa223a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88487332"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174609"
 ---
 # <a name="setup-dll-api-reference"></a>Informations de référence sur l’API de la DLL de configuration
 Cette section décrit la syntaxe de l’API DLL d’installation du pilote, qui se compose de deux fonctions (**ConfigDriver** et **ConfigDSN**). **ConfigDriver** et **ConfigDSN** peuvent être dans la dll du pilote ou dans une DLL d’installation distincte.  

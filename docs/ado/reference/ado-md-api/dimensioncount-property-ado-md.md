@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Axis::DimensionCount
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 87929cbc-9c38-491a-8616-62d45c51e299
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 45fabecbd6efa54fc7bf3dbde9a5a0fe10e253b9
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 18fe05337955eaa271c7c4c2b08606a1b08c4797
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88986850"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174271"
 ---
 # <a name="dimensioncount-property-ado-md"></a>DimensionCount, propriété (ADO MD)
 Indique le nombre de dimensions sur un [axe](./axis-object-ado-md.md).  

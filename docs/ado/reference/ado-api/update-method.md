@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset15::Update
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6b2a9c31-1a7e-40db-8a53-30720d0f6cc1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: bb673de86d48143a8869460eeab3377f3c0ec0d2
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 279d0e82bff4d71a2c3b18bbdc7ff88f0b9581a9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988100"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172423"
 ---
 # <a name="update-method"></a>Update, méthode
 Enregistre les modifications apportées à la ligne actuelle d’un objet [Recordset](./recordset-object-ado.md) ou à la collection [Fields](./fields-collection-ado.md) d’un objet [Record](./record-object-ado.md) .  
@@ -36,10 +36,10 @@ record.Fields.Update
   
 #### <a name="parameters"></a>Paramètres  
  *Fields*  
- facultatif. Valeur de **type Variant** qui représente un nom unique ou un tableau de **variants** qui représente des noms ou des positions ordinales du ou des champs que vous souhaitez modifier.  
+ Facultatif. Valeur de **type Variant** qui représente un nom unique ou un tableau de **variants** qui représente des noms ou des positions ordinales du ou des champs que vous souhaitez modifier.  
   
  *Valeurs*  
- facultatif. **Variant** qui représente une valeur unique ou un tableau de **variants** qui représente des valeurs pour le ou les champs dans le nouvel enregistrement.  
+ Facultatif. **Variant** qui représente une valeur unique ou un tableau de **variants** qui représente des valeurs pour le ou les champs dans le nouvel enregistrement.  
   
 ## <a name="remarks"></a>Notes  
   
@@ -62,7 +62,7 @@ record.Fields.Update
   
  L’enregistrement actif reste actif après l’appel de la méthode **Update** .  
   
-## <a name="record"></a>Enregistrement  
+## <a name="record"></a>Enregistrer  
  La méthode **Update** finalise les ajouts, les suppressions et les mises à jour des champs de la collection [Fields](./fields-collection-ado.md) d’un objet **Record** .  
   
  Par exemple, les champs supprimés à l’aide de la méthode **Delete** sont marqués pour suppression immédiatement, mais restent dans la collection. La méthode **Update** doit être appelée pour supprimer réellement ces champs de la collection du fournisseur.  

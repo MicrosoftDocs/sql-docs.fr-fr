@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Level::Depth
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: e41f2644-617d-4c09-80a4-feb5cf736186
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: cff8d4426630495c7adf73921d8210f1710f3315
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 5289293ff0704f19cd793532b165e51b1526ce45
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88986910"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174285"
 ---
 # <a name="depth-property-ado-md"></a>Depth, propriété (ADO MD)
 Indique le nombre de niveaux entre le [niveau](./level-object-ado-md.md) et la racine de la hiérarchie.  

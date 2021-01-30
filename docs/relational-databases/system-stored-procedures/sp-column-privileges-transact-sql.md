@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_column_privileges_TSQL
 - sp_column_privileges
@@ -19,19 +19,19 @@ ms.assetid: a3784301-2517-4b1d-bbd9-47404483fad0
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 279789c40dbc79dd3d7b2d421d757a936b0e6126
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: db99cb2e9acb8ede62a066291cce68d209e495c3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482404"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174523"
 ---
 # <a name="sp_column_privileges-transact-sql"></a>sp_column_privileges (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
   Fournit des informations sur les privilèges relatifs aux colonnes d'une table dans l'environnement actuel.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -72,7 +72,7 @@ sp_column_privileges [ @table_name = ] 'table_name'
 |PRIVILEGE|**varchar (** 32 **)**|L'une des autorisations sur les colonnes disponibles. Les autorisations relatives aux colonnes peuvent prendre l'une des valeurs suivantes (ou d'autres valeurs prises en charge par la source des données si leur implémentation est définie) :<br /><br /> SELECT = GRANTEE permet de récupérer des données pour les colonnes.<br /><br /> INSERT = GRANTEE peut fournir des données pour cette colonne lorsque de nouvelles lignes sont ajoutées à la table par le GRANTEE.<br /><br /> UPDATE = GRANTEE peut modifier des données existantes dans la colonne.<br /><br /> REFERENCES = GRANTEE peut faire référence à une colonne d'une table étrangère dans une relation clé primaire/clé étrangère. Les relations de clé primaire/clé étrangère sont définies à l’aide de contraintes de table.|  
 |IS_GRANTABLE|**varchar (** 3 **)**|Indique si le GRANTEE (bénéficiaire) est autorisé à accorder des autorisations à d'autres utilisateurs. Il y est souvent fait référence sous le terme de « droit d'accorder ». Les valeurs possibles sont YES, NO ou NULL. Une valeur inconnue, ou NULL, fait référence à une source de données où la « transmission des droits » ne s'applique pas.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], les autorisations sont accordées par l'instruction GRANT et révoquées par l'instruction REVOKE.  
   
 ## <a name="permissions"></a>Autorisations  

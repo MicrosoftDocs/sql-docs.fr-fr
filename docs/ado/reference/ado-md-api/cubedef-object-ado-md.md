@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - CubeDef
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: feb2581c-fc41-471c-bb69-29f8a55fda70
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: de22ce013d94b1830ba220c318c06bbe716423bd
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: bae255b0de860a1caee016d5e8867c7fb9b3ffee
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88987020"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174310"
 ---
 # <a name="cubedef-object-ado-md"></a>CubeDef, objet (ADO MD)
 Représente un cube à partir d’un schéma multidimensionnel, contenant un ensemble de dimensions associées.  
@@ -42,7 +42,7 @@ Représente un cube à partir d’un schéma multidimensionnel, contenant un ens
 |Nom|Description|  
 |----------|-----------------|  
 |CatalogName|Nom du catalogue auquel appartient ce cube.|  
-|Created|Date et heure de création du cube.|  
+|CreatedOn|Date et heure de création du cube.|  
 |CubeGUID|GUID du cube.|  
 |CubeName|Nom du cube.|  
 |CubeType|Type du cube.|  

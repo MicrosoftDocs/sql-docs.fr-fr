@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Close
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: a3aa594d-f9d4-4654-8625-ec20153ff5d9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3f4f0c1613b1ca0e33a4f325dbe3e326d56f76e6
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: b90dab9bc42bb9aef0de5300c38f238b8ff67b34
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88987110"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174336"
 ---
 # <a name="close-method-ado-md"></a>Close, méthode (ADO MD)
 Ferme un CellSet ouvert.  

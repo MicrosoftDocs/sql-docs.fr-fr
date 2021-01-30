@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - CubeDefs
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: c79a5e36-71fd-44c4-948d-d6a7a89bb3b5
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8dcb5bde1aead1bc5b88b35d212f029b937bb965
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: f031945ed84560cbd63413b262330354e3f1c80f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88986970"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174296"
 ---
 # <a name="cubedefs-collection-ado-md"></a>CubeDefs, collection (ADO MD)
 Contient les objets [CubeDef](./cubedef-object-ado-md.md) qui représentent un cube à partir d’un catalogue multidimensionnel.  

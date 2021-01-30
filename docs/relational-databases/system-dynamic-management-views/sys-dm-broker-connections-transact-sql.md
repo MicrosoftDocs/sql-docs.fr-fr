@@ -6,7 +6,7 @@ ms.date: 01/08/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_broker_connections
 - dm_broker_connections
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: d9e20433-67fe-4fcc-80e3-b94335b2daef
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: e95fce78ca6b416de83f9cf5ec991a131b054839
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 9da190e779d70581ea7b5b6d5fc8552b7bda9991
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099986"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174553"
 ---
 # <a name="sysdm_broker_connections-transact-sql"></a>sys.dm_broker_connections (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -69,7 +69,7 @@ ms.locfileid: "98099986"
   
 ## <a name="relationship-cardinalities"></a>Cardinalités de la relation  
   
-|Du|À|Relationship|  
+|Du|À|Relation|  
 |----------|--------|------------------|  
 |**dm_broker_connections.connection_id**|**dm_exec_connections.connection_id**|Un-à-un|  
   

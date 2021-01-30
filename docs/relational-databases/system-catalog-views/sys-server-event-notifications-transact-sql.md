@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - server_event_notifications
 - sys.server_event_notifications
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 1a83a044-3130-4551-95ca-162525846ff5
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 60f8d8e0470a62e9679eab8af97173228b3a2375
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0fa3a705df518fa57917da989540a8b97f849a9c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101736"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172675"
 ---
 # <a name="sysserver_event_notifications-transact-sql"></a>sys.server_event_notifications (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - server_audit_specifications_TSQL
 - sys.server_audit_specifications_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: fa496c6c-2a54-4fda-a238-db490c6b3afd
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: bb9a5ccce39364cad6083b1fd9ca317dc4ba6aa0
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: b4e13d7c1c6f0ba6461560166171cb9bf7d11037
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097943"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172685"
 ---
 # <a name="sysserver_audit_specifications-transact-sql"></a>sys.server_audit_specifications (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

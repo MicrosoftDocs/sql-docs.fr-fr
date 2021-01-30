@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_OAGetProperty_TSQL
 - sp_OAGetProperty
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 240eeeb9-6d8b-4930-b912-1d273ca0ab38
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: ad769910b74dafd2727719980c6070d9487094da
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 0542ae7cf67fb5b05c63a4c8cdb9ef9fb31c62e2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89545984"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174404"
 ---
 # <a name="sp_oagetproperty-transact-sql"></a>sp_OAGetProperty (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Donne une valeur de propriété d'un objet OLE.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,7 +48,7 @@ sp_OAGetProperty objecttoken , propertyname
  *propertyname*  
  Nom de la propriété de l'objet OLE à renvoyer.  
   
- *propertyvalue* **sortie** PropertyValue  
+  **sortie** PropertyValue  
  Valeur de la propriété renvoyée. Si elle est spécifiée, il doit s'agir d'une variable locale du type de données approprié.  
   
  Si la propriété retourne un objet OLE, *PropertyValue* doit être une variable locale de type de données **int**. Un jeton d’objet est stocké dans la variable locale, et ce jeton d’objet peut être utilisé avec d’autres procédures stockées OLE Automation.  

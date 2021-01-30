@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - ChildCount
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 5463be22-ca50-43ea-9c92-468fc8eda280
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a5c3668a115de8137cd96f489f3e11483cb50045
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 4f8147a6fdba9101c846b58f83e7ac8d25aa79ef
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88987130"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174326"
 ---
 # <a name="childcount-property-ado-md"></a>ChildCount, propriété (ADO MD)
 Indique le nombre de membres pour lesquels l’objet [membre](./member-object-ado-md.md) actuel est le parent dans une hiérarchie.  

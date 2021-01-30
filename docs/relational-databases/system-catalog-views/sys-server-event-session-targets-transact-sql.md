@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - server_event_session_targets_TSQL
 - sys.server_event_session_targets_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: dda4879d-57ae-4267-b410-1ef5c37404c7
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: a3b36cfd632ec01ab483021f7ee9705d7871540d
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: d69b9273cbcf67484568300793ece0cb8f0c05e9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097893"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172641"
 ---
 # <a name="sysserver_event_session_targets-transact-sql"></a>sys.server_event_session_targets (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "98097893"
 ## <a name="remarks"></a>Notes  
  Cette vue a les cardinalités de relation suivantes.  
   
-| Du | À | Relationship |
+| Du | À | Relation |
 | ---- | -- | ------------ |
 |sys.server_event_session_targets.event_session_id|sys.server_event_sessions sys.server_event_sessions.event_session_id|Plusieurs-à-un|  
   

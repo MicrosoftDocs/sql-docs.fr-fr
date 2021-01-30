@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.server_sql_modules
 - sys.server_sql_modules_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 9ef9a8b9-c470-4a61-b0c4-ee24ad871d63
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 7ffae9eb88425f849b30d7b2b8fc8e63cb840870
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 4113ba2be9e77d964d9b9bbfa9ae35f71e6adf8f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094492"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172606"
 ---
 # <a name="sysserver_sql_modules-transact-sql"></a>sys.server_sql_modules (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
