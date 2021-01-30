@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Column::put_Precision
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 0e0ecbbf-d7de-49d4-a128-5a519ecd54ba
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4f0126da4e68ee84d9a8f155ee1dc50a89ab4646
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 4ecb674380de526f729246a249e2369f0cf90e4b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88983710"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164116"
 ---
 # <a name="precision-property-adox"></a>Precision, propriété (ADOX)
 Indique la précision maximale des valeurs de données dans la [colonne](./column-object-adox.md).  

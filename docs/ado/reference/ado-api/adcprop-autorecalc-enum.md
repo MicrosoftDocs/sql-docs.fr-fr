@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - ADCPROP_AUTORECALC_ENUM
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ded4f087-87b9-4efa-8026-bde53d3e9e8a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 571d3eb0d8d836a96b2f3f7a79807bd2d2c16fdf
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 2937158876b3cbc275e354531f350e283d378a36
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976840"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161769"
 ---
 # <a name="adcprop_autorecalc_enum"></a>ADCPROP_AUTORECALC_ENUM
 Spécifie quand le fournisseur [MSDataShape](../../guide/appendixes/microsoft-data-shaping-service-for-ole-db-ado-service-provider.md) recalcule les colonnes agrégées et calculées dans un jeu d’enregistrements hiérarchique.  
@@ -31,7 +31,7 @@ Spécifie quand le fournisseur [MSDataShape](../../guide/appendixes/microsoft-da
 |Constante|Valeur|Description|  
 |--------------|-----------|-----------------|  
 |**adRecalcAlways**|1|Par défaut. Recalcule chaque fois que le fournisseur **MSDataShape** détermine les valeurs dont dépendent les colonnes calculées.|  
-|**adRecalcUpFront**|0|Calcule uniquement lors de la création initiale du **Recordset**hiérarchique.|  
+|**adRecalcUpFront**|0|Calcule uniquement lors de la création initiale du **Recordset** hiérarchique.|  
   
 ## <a name="adowfc-equivalent"></a>Équivalent ADO/WFC  
  Ces constantes n’ont pas d’équivalents ADO/WFC.

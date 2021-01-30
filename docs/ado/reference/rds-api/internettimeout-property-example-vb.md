@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b35d2f4a-449c-4170-aab6-9ff88c890043
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3c4ab5e939c9979f281f1b50f392778cc8b216a6
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 477026088458c71f964eadac23b9cf38d1f65307
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91721974"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163747"
 ---
 # <a name="internettimeout-property-example-vb"></a>InternetTimeout, exemple de propriété (VB)
 > [!IMPORTANT]

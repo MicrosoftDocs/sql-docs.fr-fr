@@ -7,19 +7,19 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - events [ADO], RDS
 - RDS events [ADO]
 ms.assetid: e03739e0-8169-46d6-9956-556b644a7645
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: be38e4897e942e30af61937c326cd2efa16a1fd8
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: afe3cf7e2d3b036e99af01c54b51bdb8f53a871d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724370"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163677"
 ---
 # <a name="rds-events"></a>Événements RDS
 > [!IMPORTANT]

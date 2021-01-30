@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_syscollector_update_collection_item
 - sp_syscollector_update_collection_item_TSQL
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 7a0d36c8-c6e9-431d-a5a4-6c1802bce846
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 2dc7d6967f4bfa7aa1c22f4cfa5c55e06127455b
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: f21ca6f68eed789756a7dbf57f79afe194d40dab
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89534857"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161918"
 ---
 # <a name="sp_syscollector_update_collection_item-transact-sql"></a>sp_syscollector_update_collection_item (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "89534857"
   Permet de modifier les propriétés d'un élément de collecte défini par l'utilisateur ou de le renommer.  
   
  
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -54,7 +54,7 @@ sp_syscollector_update_collection_item
  Nom de l'élément de collecte. *Name* est de **type sysname** avec NULL comme valeur par défaut. le *nom* doit avoir une valeur si *collection_item_id* a la valeur null.  
   
  [ @new_name =] '*new_name*'  
- Nouveau nom pour l'élément de collecte. *new_name* est de **type sysname**et, s’il est utilisé, ne peut pas être une chaîne vide.  
+ Nouveau nom pour l'élément de collecte. *new_name* est de **type sysname** et, s’il est utilisé, ne peut pas être une chaîne vide.  
   
  *new_name* doit être unique. Pour obtenir une liste de noms d'élément de collecte actuels, interrogez la vue système syscollector_collection_items.  
   

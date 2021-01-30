@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4ade106d-063d-486e-bc4d-a1a6b6e0bea9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 99f1bec688dccb73e48f9a76a1d5d42e6251e058
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: ccdd34512ba797aa5de8da14ac03011da00bf54e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91722710"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163920"
 ---
 # <a name="cancel-method-example-vbscript"></a>Cancel, exemple de méthode (VBScript)
 > [!IMPORTANT]

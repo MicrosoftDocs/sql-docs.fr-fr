@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - User25::SetPermissions
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: b7f925d7-b05c-4376-bb49-f8d2c17b8b24
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1333fc42f98ba787cfcc139b40932038307e5592
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 3c5db51dc0af4f8e86fbaa68b20dbd82a327c038
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88983290"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164037"
 ---
 # <a name="setpermissions-method-adox"></a>SetPermissions, méthode (ADOX)
 Spécifie les autorisations pour un [groupe](./group-object-adox.md) ou un [utilisateur](./user-object-adox.md) sur un objet.  
@@ -50,10 +50,10 @@ GroupOrUser.SetPermissions Name, ObjectType, Action, Rights [, Inherit] [, Objec
  Valeur de **type long** qui peut être un masque de caractères d’une ou plusieurs des constantes [RightsEnum](./rightsenum.md) , qui indique les droits à définir.  
   
  *Être*  
- facultatif. Valeur de **type long** qui peut être l’une des constantes [InheritTypeEnum](./inherittypeenum.md) , qui spécifie comment les objets hériteront de ces autorisations. La valeur par défaut est **adInheritNone**.  
+ Facultatif. Valeur de **type long** qui peut être l’une des constantes [InheritTypeEnum](./inherittypeenum.md) , qui spécifie comment les objets hériteront de ces autorisations. La valeur par défaut est **adInheritNone**.  
   
  *ObjectTypeId*  
- facultatif. Valeur de **type Variant** qui spécifie le GUID pour un type d’objet fournisseur qui n’est pas défini par la spécification OLE DB. Ce paramètre est obligatoire si *ObjectType* a la valeur **adPermObjProviderSpecific**; dans le cas contraire, il n’est pas utilisé.  
+ Facultatif. Valeur de **type Variant** qui spécifie le GUID pour un type d’objet fournisseur qui n’est pas défini par la spécification OLE DB. Ce paramètre est obligatoire si *ObjectType* a la valeur **adPermObjProviderSpecific**; dans le cas contraire, il n’est pas utilisé.  
   
 ## <a name="remarks"></a>Notes  
  Une erreur se produit si le fournisseur ne prend pas en charge la définition des droits d’accès pour les groupes ou les utilisateurs.  

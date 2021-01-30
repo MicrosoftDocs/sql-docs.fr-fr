@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - service_contract_message_usages_TSQL
 - sys.service_contract_message_usages
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: f783e662-126c-4595-8e22-f9d05191f5d0
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 59c8ca70580c06e85857fd0392717804cec6e4fa
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 33677382cd6dcf71bc6da8525747712fe8b83721
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096697"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161373"
 ---
 # <a name="sysservice_contract_message_usages-transact-sql"></a>sys.service_contract_message_usages (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

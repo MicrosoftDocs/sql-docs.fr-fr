@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - DataControl::CreateRecordset
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 6840b1e5-c04d-4d3e-9dcc-42128c83492f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ad1c9b0f36922f29ce015fd459a1be3e788e07f5
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 4a88898c884cbaf0a9c82a882b15ef48c1e3e3a8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91721200"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163860"
 ---
 # <a name="createrecordset-method-rds"></a>CreateRecordset, méthode (RDS)
 Crée un [jeu d’enregistrements](../ado-api/recordset-object-ado.md)vide et déconnecté.  

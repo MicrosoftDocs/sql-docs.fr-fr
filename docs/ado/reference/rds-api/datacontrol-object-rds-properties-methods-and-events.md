@@ -7,18 +7,18 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - DataControl object [ADO], members
 ms.assetid: 9a8f9b0c-8452-4e95-a561-cfc4b7165c5e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e06e79a750c962355f8b0374a8e33c61cd6ae5a4
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 5b1433924be05693a51083360d8df85870d5dfc3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91721120"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163849"
 ---
 # <a name="datacontrol-object-rds-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet DataControl (RDS)
 > [!IMPORTANT]

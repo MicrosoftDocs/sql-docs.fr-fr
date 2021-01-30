@@ -7,18 +7,18 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Users collection [ADOX], members
 ms.assetid: 1b89a12f-96bc-48b3-a88d-4da74780ea40
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7e211214f1b269b47b7a981d2648e35e0c3a5ac2
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 7e4e4de97e28981ff11fd9ba6e2626d758b6ae19
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88983020"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163954"
 ---
 # <a name="users-collection-properties-methods-and-events"></a>Propriétés, méthodes et événements de la collection Users
 ## <a name="properties"></a>Propriétés  

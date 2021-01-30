@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - DataFactory object [ADO]
 ms.assetid: e75240c2-b749-471e-b6ea-98cae232efbe
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1e31d39f0820a485d4954d789fe2dfb398d8490b
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 75c727e8c857dcb5c5922f52e56a37e99f223293
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91720980"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163834"
 ---
 # <a name="datafactory-object-rdsserver"></a>DataFactory, objet (RDSServer)
 > [!IMPORTANT]
@@ -29,7 +29,7 @@ ms.locfileid: "91720980"
   
  L’objet **RDSServer. DataFactory** est conçu comme un objet Automation côté serveur qui reçoit les demandes des clients. Dans une implémentation Internet, elle réside sur un serveur Web et est instanciée par le composant ADISAPI. L’objet **RDSServer. DataFactory** fournit un accès en lecture et en écriture aux sources de données spécifiées, mais ne contient pas de logique de validation ou de règle d’entreprise.  
   
- Si vous utilisez une méthode disponible à la fois dans **RDSServer. DataFactory** et dans [RDS. DataControl](./datacontrol-object-rds.md) , le service de données distant utilise le **RDS. ** Version de DataControl par défaut. La valeur par défaut est basée sur un scénario de programmation de base, où l’objet **RDSServer. DataFactory** sert d’objet métier générique côté serveur.  
+ Si vous utilisez une méthode disponible à la fois dans **RDSServer. DataFactory** et dans [RDS. DataControl](./datacontrol-object-rds.md) , le service de données distant utilise le **RDS.** Version de DataControl par défaut. La valeur par défaut est basée sur un scénario de programmation de base, où l’objet **RDSServer. DataFactory** sert d’objet métier générique côté serveur.  
   
  Si vous souhaitez que votre application Web gère le traitement côté serveur spécifique aux tâches, vous pouvez remplacer **RDSServer. DataFactory** par un objet métier personnalisé.  
   

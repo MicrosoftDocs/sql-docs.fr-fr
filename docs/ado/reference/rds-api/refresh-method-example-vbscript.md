@@ -7,7 +7,7 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f2926578-bc60-464b-916e-ddfdb8014253
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0e8d73b1c0a07ea127e0d4bad880b82c08ca24a5
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 3e057d11a2284b5b4a605497b5819de7b89c3c2f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724283"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163629"
 ---
 # <a name="refresh-method-example-vbscript"></a>Refresh, exemple de méthode (VBScript)
 > [!IMPORTANT]
@@ -104,7 +104,7 @@ SQL: <Input Size=70 Name="txtSQL" Value="Select * from Employees">
    <TD>Asynchronously: <BR>  
       <Input Type="Radio" Name="optExecuteOptions"  OnClick="SetExO('adcExecAsync')">  
    </TD>  
-   <TD> </TD>  
+   <TD> </TD>  
 </TR>  
 <TR>  
    <TD COLSPAN=3 BGCOLOR=silver>  

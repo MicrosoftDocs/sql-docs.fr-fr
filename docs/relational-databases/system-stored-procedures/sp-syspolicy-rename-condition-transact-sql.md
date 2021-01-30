@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_syspolicy_rename_condition
 - sp_syspolicy_rename_condition_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: d9f3f9b1-701b-4fce-9b42-c282656caf84
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 1df9ab11c50340b75d51481822f4a8925df34a51
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2fce41b3ac9252f3fc1d4648656310baad12e388
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88485623"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161350"
 ---
 # <a name="sp_syspolicy_rename_condition-transact-sql"></a>sp_syspolicy_rename_condition (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -41,11 +41,11 @@ sp_syspolicy_rename_condition { [ @name = ] 'name' | [ @condition_id = ] conditi
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @name = ] 'name'` Nom de la condition que vous souhaitez renommer. *Name* est de **type sysname**et doit être spécifié si *condition_id* a la valeur null.  
+`[ @name = ] 'name'` Nom de la condition que vous souhaitez renommer. *Name* est de **type sysname** et doit être spécifié si *condition_id* a la valeur null.  
   
-`[ @condition_id = ] condition_id` Est l’identificateur de la condition que vous souhaitez renommer. *condition_id* est de **type int**et doit être spécifié si *Name* a la valeur null.  
+`[ @condition_id = ] condition_id` Est l’identificateur de la condition que vous souhaitez renommer. *condition_id* est de **type int** et doit être spécifié si *Name* a la valeur null.  
   
-`[ @new_name = ] 'new_name'` Nouveau nom de la condition. *new_name* est de **type sysname**et est obligatoire. Ne peut pas avoir la valeur NULL ou être une chaîne vide.  
+`[ @new_name = ] 'new_name'` Nouveau nom de la condition. *new_name* est de **type sysname** et est obligatoire. Ne peut pas avoir la valeur NULL ou être une chaîne vide.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

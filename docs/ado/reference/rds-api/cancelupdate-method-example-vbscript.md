@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c23912f0-1288-4727-8fb4-f643b8811cf7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1e99fd3242e0070cabb69cb67ceb7e60f44f5b88
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: b59e6aaccdc93c7c375acc8c3437302d6941474d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91722630"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163883"
 ---
 # <a name="cancelupdate-method-example-vbscript"></a>CancelUpdate, exemple de méthode (VBScript)
 > [!IMPORTANT]

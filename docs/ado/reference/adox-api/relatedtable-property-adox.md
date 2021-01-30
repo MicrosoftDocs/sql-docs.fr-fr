@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Key::RelatedTable
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: cb54c6bc-2be2-40b1-bc11-90c10651b878
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f7fdbe6977ee2ddfc586e152b02b4994697a39db
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: dc2eb95c9ae35d2abe697a6f5e0231633ded8fec
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88983450"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164057"
 ---
 # <a name="relatedtable-property-adox"></a>RelatedTable, propriété (ADOX)
 Indique le nom de la table associée.  

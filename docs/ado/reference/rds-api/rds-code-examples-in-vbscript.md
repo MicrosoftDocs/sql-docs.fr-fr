@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 22f23c30-7c21-4fe3-8e76-36cea6448819
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2d05c390c8b54cf07a588c343ca244e93e847808
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 622994e3bc0fc199ef1b63440cb94e7ba115739d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724414"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163695"
 ---
 # <a name="rds-code-examples-in-vbscript"></a>Exemples de code RDS dans VBScript
 > [!IMPORTANT]

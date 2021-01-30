@@ -7,7 +7,7 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 380264da-e6bb-418c-b4af-3c22d35644b8
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e366bfaaa75085113275e7958cec949520263149
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 57205b70ac90ac1004ddbec0a2e67dee2328f961
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724393"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163686"
 ---
 # <a name="rds-code-examples-in-visual-c"></a>Exemples de code RDS dans Visual C++
 Utilisez les exemples de code suivants pour apprendre à utiliser les propriétés RDS lors de l’écriture dans Microsoft Visual C++.  

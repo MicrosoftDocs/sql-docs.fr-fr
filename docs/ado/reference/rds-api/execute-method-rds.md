@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - Execute method [ADO]
 ms.assetid: 2d9c30e9-ab5b-4920-91b8-48454c2fb5d8
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: dcb81dbe0fc719b2bb31c08a0799e4bc5084519a
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 2e5ad157ffccc07ba0b64064122f7f0e55ccd422
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91720785"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163804"
 ---
 # <a name="execute-method-rds"></a>Execute, méthode (RDS)
 Exécute la demande et crée un jeu d’enregistrements ADO à utiliser dans ADO 2,5 et versions ultérieures.  
@@ -63,7 +63,7 @@ object.Execute(ConnectionString As String, HandlerString As String, QueryString 
   
  4 =*AllParamInfoSupplied* l’appelant garantit que les informations de paramètre pour tous les paramètres sont fournies dans *pParameters*.  
   
- 8 = les informations de paramètres de*GetInfo* pour la requête seront obtenues à partir du fournisseur OLE DB et retournées dans le paramètre *pParameters* . La requête n’est pas exécutée et aucun Recordset n’est retourné.  
+ 8 = les informations de paramètres de *GetInfo* pour la requête seront obtenues à partir du fournisseur OLE DB et retournées dans le paramètre *pParameters* . La requête n’est pas exécutée et aucun Recordset n’est retourné.  
   
  16 =*GetHiddenColumns* l’objet Recordset est ouvert à l’aide de **adLockBatchOptimistic** et toutes les colonnes masquées sont incluses dans le Recordset.  
   

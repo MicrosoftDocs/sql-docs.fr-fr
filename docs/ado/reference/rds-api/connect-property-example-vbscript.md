@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 06297993-fe72-4446-aa76-3b8bc25444f6
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: da513d9e8659faee766e0f1390facd59fc9c051c
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 02ca24ae541a3de32eff253cd5602ac0072d6665
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91722570"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163892"
 ---
 # <a name="connect-property-example-vbscript"></a>Connect, exemple de méthode (VBScript)
 > [!IMPORTANT]

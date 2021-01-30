@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Column::Type
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 5c6718b6-f728-478a-8afb-5d17b0a91d1f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: dffb08de42e3c38a9c0a28e8cad33af95f0d8926
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 77d7bcf4ddc6beb29dc04513952050c8ba042c55
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88983170"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163993"
 ---
 # <a name="type-property-column-adox"></a>Type, propriété (colonne) (ADOX)
 Indique le type de données d’une colonne.  

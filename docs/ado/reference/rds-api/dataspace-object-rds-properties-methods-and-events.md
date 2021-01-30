@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - DataSpace object [RDS], members
 ms.assetid: c4a1f2e7-19ff-465e-9d9a-275ac0f4dc6a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4ad561c6819854839c47444588c851c387481139
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 42ddd9a8b49de373dd6c0fcfd363573be4e29e7c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91720910"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163818"
 ---
 # <a name="dataspace-object-rds-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet DataSpace (RDS)
 > [!IMPORTANT]

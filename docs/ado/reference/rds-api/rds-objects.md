@@ -7,19 +7,19 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - objects [ADO], RDS
 - RDS objects [ADO]
 ms.assetid: f2ac8b3b-f968-41c4-a504-7aee3538b7c7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: fa9329b1da84643f75a83ee1487f8c1be47601b1
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 03b62e520c7e2124d3e6a2fb9c22c510e916dbe0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724340"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163669"
 ---
 # <a name="rds-objects"></a>Objets RDS
 > [!IMPORTANT]

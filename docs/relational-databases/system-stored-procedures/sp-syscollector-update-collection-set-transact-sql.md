@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_syscollector_update_collection_set_TSQL
 - sp_syscollector_update_collection_set
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 2dccc3cd-0e93-4e3e-a4e5-8fe89b31bd63
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: fd55d65173d190d1c28708bfae46b10eaa0030a4
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 207d5b2f02bce0a3c9a9e89cdccdb5fe80790f20
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89534837"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161883"
 ---
 # <a name="sp_syscollector_update_collection_set-transact-sql"></a>sp_syscollector_update_collection_set (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "89534837"
 > [!WARNING]  
 >  Dans les cas où le compte Windows configuré en tant que proxy est non interactif ou correspond à un utilisateur interactif qui ne s'est pas encore connecté, le répertoire de profils n'existera pas et la création du répertoire intermédiaire échouera. Par conséquent, si vous utilisez un compte proxy sur un contrôleur de domaine, vous devez spécifier un compte interactif qui a été utilisé au moins une fois afin de garantir que le répertoire de profils a été créé.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -60,7 +60,7 @@ sp_syscollector_update_collection_set
   
 `[ @name = ] 'name'` Nom du jeu d’entités de collecte. *Name* est de **type sysname** et doit avoir une valeur si *collection_set_id* a la valeur null.  
   
-`[ @new_name = ] 'new_name'` Nouveau nom du jeu d’entités de collecte. *new_name* est de **type sysname**et, s’il est utilisé, ne peut pas être une chaîne vide. *new_name* doit être unique. Pour obtenir une liste de noms de jeux d'éléments de collecte actuels, interrogez la vue système syscollector_collection_sets.  
+`[ @new_name = ] 'new_name'` Nouveau nom du jeu d’entités de collecte. *new_name* est de **type sysname** et, s’il est utilisé, ne peut pas être une chaîne vide. *new_name* doit être unique. Pour obtenir une liste de noms de jeux d'éléments de collecte actuels, interrogez la vue système syscollector_collection_sets.  
   
 `[ @target = ] 'target'` Réservé pour une utilisation ultérieure.  
   

@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - InternetTimeout property [ADO]
 ms.assetid: 4d1c8892-4bbc-4e71-bf4b-ba52c0ea9549
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 43ab46eefcb897511a2990655362ecb10527be19
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 7eab888961a49b257d0dd408362545332454554e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724500"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163725"
 ---
 # <a name="internettimeout-property-rds"></a>InternetTimeout, propriété (RDS)
 Indique le nombre de millisecondes à attendre avant l’expiration d’une demande.  
