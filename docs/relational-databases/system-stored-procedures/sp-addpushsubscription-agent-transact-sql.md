@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addpushsubscription_agent_TSQL
 - sp_addpushsubscription_agent
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1fdd2052-50d8-4318-8aa7-fc635d5cad18
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 6102d0721f00713c797c1e78b830d6804dc3dd4d
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 396e90bb76296270bf25d236a7fd20cd34a063dc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546243"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206672"
 ---
 # <a name="sp_addpushsubscription_agent-transact-sql"></a>sp_addpushsubscription_agent (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "89546243"
 > [!IMPORTANT]  
 >  Lors de la configuration d'un serveur de publication avec un serveur de distribution distant, les valeurs fournies pour tous les paramètres, y compris *job_login* et *job_password*, sont envoyées en texte brut au serveur de distribution. Vous devez chiffrer la connexion entre le serveur de publication et son serveur de distribution distant avant d'exécuter cette procédure stockée. Pour plus d’informations, consultez [Activer des connexions chiffrées dans le moteur de base de données &#40;Gestionnaire de configuration SQL Server&#41;](../../database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine.md).  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -100,7 +100,7 @@ sp_addpushsubscription_agent [ @publication= ] 'publication'
   
 `[ @job_name = ] 'job_name'` Nom d’un travail d’agent existant. *job_name* est de **type sysname**, avec NULL comme valeur par défaut. Ce paramètre n'est indiqué que lorsque l'abonnement est synchronisé grâce à un travail existant plutôt qu'un nouveau travail (étant le comportement par défaut). Si vous n’êtes pas membre du rôle serveur fixe **sysadmin** , vous devez spécifier *job_login* et *job_password* lorsque vous spécifiez *job_name*.  
   
-`[ @frequency_type = ] frequency_type` Fréquence de planification de l’Agent de distribution. *frequency_type* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_type = ] frequency_type` Fréquence de planification de l’Agent de distribution. *frequency_type* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -118,7 +118,7 @@ sp_addpushsubscription_agent [ @publication= ] 'publication'
   
 `[ @frequency_interval = ] frequency_interval` Valeur à appliquer à la fréquence définie par *frequency_type*. *frequency_interval* est de **type int**, avec 1 comme valeur par défaut.  
   
-`[ @frequency_relative_interval = ] frequency_relative_interval` Date de la Agent de distribution. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuelle relative). *frequency_relative_interval* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_relative_interval = ] frequency_relative_interval` Date de la Agent de distribution. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuelle relative). *frequency_relative_interval* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -130,7 +130,7 @@ sp_addpushsubscription_agent [ @publication= ] 'publication'
   
 `[ @frequency_recurrence_factor = ] frequency_recurrence_factor` Facteur de récurrence utilisé par *frequency_type*. *frequency_recurrence_factor* est de **type int**, avec 0 comme valeur par défaut.  
   
-`[ @frequency_subday = ] frequency_subday` Fréquence de replanification au cours de la période définie. *frequency_subday* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_subday = ] frequency_subday` Fréquence de replanification au cours de la période définie. *frequency_subday* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - FREETEXTTABLE_TSQL
 - FREETEXTTABLE
@@ -23,12 +23,12 @@ ms.assetid: 4523ae15-4260-40a7-a53c-8df15e1fee79
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 83aa956f8a9a9421cdbc411856be78af272f1fa6
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0b4fdaa1e9f583c27d2aca3657d7a5b1a86ef8a6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482515"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207486"
 ---
 # <a name="freetexttable-transact-sql"></a>FREETEXTTABLE (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "97482515"
   
 (https://azure.microsoft.com/documentation/articles/sql-database-preview-whats-new/?WT.mc_id=TSQL_GetItTag)).|  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -92,7 +92,7 @@ FREETEXTTABLE (table , { column_name | (column_list) | * }
  *top_n_by_rank*  
  Spécifie que seules les *n* correspondances de rang le plus élevé, dans l’ordre décroissant, sont retournées. S’applique uniquement lorsqu’une valeur entière, *n*, est spécifiée. Si *top_n_by_rank* est associé à d’autres paramètres, la requête peut retourner moins de lignes que le nombre de lignes correspondant effectivement à tous les prédicats. *top_n_by_rank* vous permet d’augmenter les performances des requêtes en rappelant uniquement les accès les plus pertinents.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Les prédicats et les fonctions de texte intégral s'appliquent à une table unique, ce qui est implicite dans le prédicat FROM. Pour effectuer des recherches sur plusieurs tables, utilisez une table jointe dans votre clause FROM afin de baser votre recherche sur un jeu de résultats qui est le produit de deux tables ou plus.  
   
  FREETEXTTABLE utilise les mêmes conditions de recherche que le prédicat FREETEXT.  

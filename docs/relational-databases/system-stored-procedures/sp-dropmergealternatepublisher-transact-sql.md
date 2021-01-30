@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_dropmergealternatepublisher
 - sp_dropmergealternatepublisher_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: a7dee4e2-2a60-41da-9d1d-6f991d7e2c5e
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: c808c4326736a190dace9e6dd839306ec65c7307
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 5d787648f197c54623ba305503ddd878a3a7061d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89536508"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208273"
 ---
 # <a name="sp_dropmergealternatepublisher-transact-sql"></a>sp_dropmergealternatepublisher (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Supprime un serveur de publication de substitution d'une publication de fusion. Cette procédure stockée est exécutée sur la base de données d'abonnement de l'Abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,17 +38,17 @@ sp_dropmergealaternatepublisher [ @publisher = ] 'publisher'    , [ @publisher_d
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @publisher = ] 'publisher'` Nom du serveur de publication actuel. *Publisher*est de **type sysname**, sans valeur par défaut.  
+`[ @publisher = ] 'publisher'` Nom du serveur de publication actuel. *Publisher* est de **type sysname**, sans valeur par défaut.  
   
-`[ @publisher_db = ] 'publisher_db'` Nom de la base de données de publication actuelle. *publisher_db*est de **type sysname**, sans valeur par défaut.  
+`[ @publisher_db = ] 'publisher_db'` Nom de la base de données de publication actuelle. *publisher_db* est de **type sysname**, sans valeur par défaut.  
   
 `[ @publication = ] 'publication'` Nom de la publication actuelle. *publication* est de **type sysname**, sans valeur par défaut.  
   
-`[ @alternate_publisher = ] 'alternate_publisher'` Nom du serveur de publication de remplacement à supprimer en tant que partenaire de synchronisation de substitution. *alternate_publisher*est de **type sysname**, sans valeur par défaut.  
+`[ @alternate_publisher = ] 'alternate_publisher'` Nom du serveur de publication de remplacement à supprimer en tant que partenaire de synchronisation de substitution. *alternate_publisher* est de **type sysname**, sans valeur par défaut.  
   
-`[ @alternate_publisher_db = ] 'alternate_publisher_db'` Nom de la base de données de publication à supprimer en tant que base de données de publication du partenaire de synchronisation de substitution. *alternate_publisher_db*est de **type sysname**, sans valeur par défaut.  
+`[ @alternate_publisher_db = ] 'alternate_publisher_db'` Nom de la base de données de publication à supprimer en tant que base de données de publication du partenaire de synchronisation de substitution. *alternate_publisher_db* est de **type sysname**, sans valeur par défaut.  
   
-`[ @alternate_publication = ] 'alternate_publication'` Nom de la publication à supprimer en tant que publication du partenaire de synchronisation de substitution. *alternate_publication*est de **type sysname**, sans valeur par défaut.  
+`[ @alternate_publication = ] 'alternate_publication'` Nom de la publication à supprimer en tant que publication du partenaire de synchronisation de substitution. *alternate_publication* est de **type sysname**, sans valeur par défaut.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

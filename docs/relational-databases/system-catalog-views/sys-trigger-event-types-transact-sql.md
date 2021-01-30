@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - trigger_event_types_TSQL
 - sys.trigger_event_types_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 054aed54-7151-4760-934a-149fa434f1ae
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 2491afa8b4a29da3d3079c848c2249551fd5e0ac
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 57a1051371c79d924d1a518155dca1fd3f9a57ec
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094331"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208307"
 ---
 # <a name="systrigger_event_types-transact-sql"></a>sys.trigger_event_types (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - semanticsimilaritydetailstable
 - semanticsimilaritydetailstable_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 038d751a-fca5-4b4c-9129-cba741a4e173
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: fa94a6c16eaaf2548b3c0375d43848d5e03a7f12
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f26754f935338d586ebe958df9f49f99c189c414
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88474577"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207330"
 ---
 # <a name="semanticsimilaritydetailstable-transact-sql"></a>semanticsimilaritydetailstable (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -75,7 +75,7 @@ SEMANTICSIMILARITYDETAILSTABLE
 |Column_name|Type|Description|  
 |------------------|----------|-----------------|  
 |**keyphrase**|**NVARCHAR**|Expression clé qui contribue à la similarité entre le document source et le document correspondant.|  
-|**enjeu**|**NON**|Valeur relative de cette expression clé dans sa relation à toutes les autres expressions clés qui sont semblables dans les deux documents.<br /><br /> La valeur est une valeur décimale fractionnaire comprise dans la plage de [0.0, 1.0] dans laquelle un score élevé représente une pondération plus élevée, 1.0 étant le score parfait.|  
+|**score**|**REAL**|Valeur relative de cette expression clé dans sa relation à toutes les autres expressions clés qui sont semblables dans les deux documents.<br /><br /> La valeur est une valeur décimale fractionnaire comprise dans la plage de [0.0, 1.0] dans laquelle un score élevé représente une pondération plus élevée, 1.0 étant le score parfait.|  
   
 ## <a name="general-remarks"></a>Remarques d'ordre général  
  Pour plus d’informations, consultez [Rechercher des documents similaires et connexes avec la recherche sémantique](../../relational-databases/search/find-similar-and-related-documents-with-semantic-search.md).  

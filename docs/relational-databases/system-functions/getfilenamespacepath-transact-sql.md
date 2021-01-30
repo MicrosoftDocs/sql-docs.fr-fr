@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - GetFileNamespacePath
 - GetFileNamespacePath_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: b393ecef-baa8-4d05-a268-b2f309fce89a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 9ecda7d44603636ff12eef955dd83e7659cb9dc7
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 36dc3a717a7ab67ad4db0aa730884597038a0a02
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097482"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207445"
 ---
 # <a name="getfilenamespacepath-transact-sql"></a>GetFileNamespacePath (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_showpendingchanges
 - sp_showpendingchanges_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 8013a792-639d-4550-b262-e65d30f9d291
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 78b4901fc70299373044ce0720403031992e37a4
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: ac2c44e836a56c6fa503b6144e99761294ab473a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547387"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207303"
 ---
 # <a name="sp_showpendingchanges-transact-sql"></a>sp_showpendingchanges (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne un jeu de résultats affichant les modifications en attente de réplication. Cette procédure stockée est exécutée sur la base de données de publication du serveur de publication et sur la base de données d'abonnement de l'Abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 > [!NOTE]  
 >  Cette procédure fournit un nombre approximatif des modifications apportées ainsi que les lignes concernées par ces modifications. Par exemple, la procédure récupère les informations du serveur de publication ou de l'abonné, mais pas à la fois en même temps. Les informations stockées à l'autre nœud peuvent engendrer un plus petit jeu de modifications à synchroniser que les estimations de procédure.  
@@ -50,7 +50,7 @@ sp_showpendingchanges [ [ @destination_server = ] 'destination_server' ]
   
 `[ @article = ] 'article'` Nom de l’article. *article* est de **type sysname**, avec NULL comme valeur par défaut. Lorsque *l’article* est spécifié, les résultats sont limités uniquement à l’article spécifié.  
   
-`[ @show_rows = ] 'show_rows'` Spécifie si le jeu de résultats contient des informations plus spécifiques sur les modifications en attente, avec **0**comme valeur par défaut. Si la valeur **1** est spécifiée, le jeu de résultats contient les colonnes is_delete et rowguid.  
+`[ @show_rows = ] 'show_rows'` Spécifie si le jeu de résultats contient des informations plus spécifiques sur les modifications en attente, avec **0** comme valeur par défaut. Si la valeur **1** est spécifiée, le jeu de résultats contient les colonnes is_delete et rowguid.  
   
 ## <a name="result-set"></a>Jeu de résultats  
   

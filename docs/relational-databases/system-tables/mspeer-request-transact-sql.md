@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSpeer_request
 - MSpeer_request_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: ed048c46-7a2f-4ad0-bc7c-c2d65e83b4fb
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 6bf63b8473efd3fd64b1ef19a0883c2cdb8e3f6c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 09b9608bc7dcaa188a97aa2520cd3713883db3d7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098551"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205844"
 ---
 # <a name="mspeer_request-transact-sql"></a>MSpeer_request (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

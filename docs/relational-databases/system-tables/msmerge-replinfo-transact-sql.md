@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSmerge_replinfo_TSQL
 - MSmerge_replinfo
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: b0924094-c0cc-49c1-869a-65be0d0465a0
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 6d7ba27eb3b01fcc34e5f53d954b12d120542116
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 57e1f5f193a4861dba284ed8b11adb6fa394531f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098614"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205927"
 ---
 # <a name="msmerge_replinfo-transact-sql"></a>MSmerge_replinfo (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

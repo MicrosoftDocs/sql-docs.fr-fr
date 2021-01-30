@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_cleanup_log_shipping_history_TSQL
 - sp_cleanup_log_shipping_history
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 96d236a9-1d0e-4f83-a4d3-f825b7381e46
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 987f9ff64b26bbc40ca4c93e20175014ba09e031
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 456a083257452e180c7fae90b7f5f79a67924011
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543612"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206514"
 ---
 # <a name="sp_cleanup_log_shipping_history-transact-sql"></a>sp_cleanup_log_shipping_history (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Cette procédure stockée nettoie l'historique localement et sur le serveur moniteur en fonction de la période de rétention.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

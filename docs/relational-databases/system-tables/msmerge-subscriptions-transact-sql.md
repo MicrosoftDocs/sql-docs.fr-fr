@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSmerge_subscriptions
 - MSmerge_subscriptions_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: cafd954a-92f8-44cb-a5d0-dce9aafa5ee1
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: be426f69b1566aa3565396cb53dbb78c17fdbcc5
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 077018a78d1e2223463f609a68b7f013886750ca
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098606"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205903"
 ---
 # <a name="msmerge_subscriptions-transact-sql"></a>MSmerge_subscriptions (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

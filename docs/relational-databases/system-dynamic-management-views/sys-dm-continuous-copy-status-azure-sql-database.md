@@ -5,7 +5,7 @@ titleSuffix: Azure SQL Database
 ms.date: 03/03/2017
 ms.service: sql-database
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_continuous_copy_status_TSQL
 - dm_continuous_copy_status_TSQL
@@ -21,12 +21,12 @@ author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: = azuresqldb-current
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 94370b562160315e53feb46a83cbb68a848e064f
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 7e0dc3ec69f4c35b1361cf12f501f4b23abf29c7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099962"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207799"
 ---
 # <a name="sysdm_continuous_copy_status-azure-sql-database"></a>sys.dm_continuous_copy_status (Azure SQL Database)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]

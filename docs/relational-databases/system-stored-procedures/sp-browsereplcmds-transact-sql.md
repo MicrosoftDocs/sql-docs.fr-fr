@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_browsereplcmds_TSQL
 - sp_browsereplcmds
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 30abcb41-1d18-4f43-a692-4c80914c0450
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 39fafe6f0e36d0c88ebb74285e8c8206977f73bd
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: f798dcb9689221d9a8ef1964d4237a1fe649a4c5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548229"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206630"
 ---
 # <a name="sp_browsereplcmds-transact-sql"></a>sp_browsereplcmds (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Retourne un jeu de résultats, dans une version lisible, des commandes répliquées et stockées dans la base de données de distribution. Également utilisé en tant qu'outil de diagnostic. Cette procédure stockée est exécutée au niveau du serveur de distribution sur la base de données de distribution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -55,7 +55,7 @@ sp_browsereplcmds [ [ @xact_seqno_start = ] 'xact_seqno_start' ]
   
 `[ @article_id = ] 'article_id'` Spécifie si les commandes avec les *article_id* spécifiées sont retournées. *article_id* est de **type int**, avec NULL comme valeur par défaut.  
   
-`[ @command_id = ] command_id` Est l’emplacement de la commande dans [MSrepl_commands &#40;&#41;Transact-SQL ](../../relational-databases/system-tables/msrepl-commands-transact-sql.md) à décoder. *command_id* est de **type int**, avec NULL comme valeur par défaut. Si ce paramètre est spécifié, tous les autres paramètres doivent également être spécifiés, et *xact_seqno_start*doit être identique à *xact_seqno_end*.  
+`[ @command_id = ] command_id` Est l’emplacement de la commande dans [MSrepl_commands &#40;&#41;Transact-SQL ](../../relational-databases/system-tables/msrepl-commands-transact-sql.md) à décoder. *command_id* est de **type int**, avec NULL comme valeur par défaut. Si ce paramètre est spécifié, tous les autres paramètres doivent également être spécifiés, et *xact_seqno_start* doit être identique à *xact_seqno_end*.  
   
 `[ @agent_id = ] agent_id` Spécifie que seules les commandes d’un agent de réplication spécifique sont renvoyées. *agent_id* est de **type int**, avec NULL comme valeur par défaut.  
   

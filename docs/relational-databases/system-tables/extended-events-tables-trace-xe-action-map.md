@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - trace_xe_action_map_TSQL
 - trace_xe_action_map
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 208a1413-ce7f-4521-b765-d74723627302
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 5eeb22a3617ffb2510c4d9d768cf2cde5e281ee0
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: fe0e58d21752106b8273772bac6642e8b166f0d9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100597"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207226"
 ---
 # <a name="extended-events-tables---trace_xe_action_map"></a>Tables d’événements étendus - trace_xe_action_map
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

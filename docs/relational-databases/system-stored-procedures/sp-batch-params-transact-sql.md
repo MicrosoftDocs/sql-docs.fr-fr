@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_batch_params
 - sp_batch_params_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 7b92fe9e-e755-4b7a-8a15-822c58a813d3
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 201541b36ff441fc6b2942b546105f256cb457dd
-ms.sourcegitcommit: 968969b62bc158b9843aba5034c9d913519bc4a7
+ms.openlocfilehash: e7ba37a2e9559cd48da23c5ed7cb7758b0405e09
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91753498"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206619"
 ---
 # <a name="sp_batch_params-transact-sql"></a>sp_batch_params (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLCopyDesc
 apilocation:
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: d5450895-3824-44c4-8aa4-d4f9752a9602
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: ede6d52614c1c35cdc28f6d85e8b3be61235b4ca
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ab2ef18e777d433daf4ab93b73d249e62507ea3c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461191"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206306"
 ---
 # <a name="sqlcopydesc-function"></a>SQLCopyDesc, fonction
 **Conformité**  
@@ -40,8 +40,8 @@ ms.locfileid: "88461191"
 ```cpp  
   
 SQLRETURN SQLCopyDesc(  
-     SQLHDESC     SourceDescHandle,  
-     SQLHDESC     TargetDescHandle);  
+     SQLHDESC     SourceDescHandle,  
+     SQLHDESC     TargetDescHandle);  
 ```  
   
 ## <a name="arguments"></a>Arguments  
@@ -61,18 +61,18 @@ SQLRETURN SQLCopyDesc(
   
  Étant donné que **SQLCopyDesc** peut être implémenté en appelant **SQLGetDescField** et **SQLSetDescField**, **SQLCopyDesc** peut retourner des sqlstates retournés par **SQLGetDescField** ou **SQLSetDescField**.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur|Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information spécifique au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |08S01|Échec de la liaison de communication|Le lien de communication entre le pilote et la source de données à laquelle le pilote a été connecté a échoué avant la fin du traitement de la fonction.|  
-|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon * \* MessageText* décrit l’erreur et sa cause.|  
+|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon *\* MessageText* décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|Le pilote n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou l’achèvement de la fonction.|  
 |HY007|L’instruction associée n’est pas préparée|*SourceDescHandle* a été associé à un IRD et le descripteur d’instruction associé n’était pas dans l’État prepared ou Executed.|  
-|HY010|Erreur de séquence de fonction|(DM) le handle de descripteur dans *SourceDescHandle* ou *TargetDescHandle* a été associé à un *StatementHandle* pour lequel une fonction d’exécution asynchrone (pas celui-ci) a été appelée et était toujours en cours d’exécution quand cette fonction a été appelée.<br /><br /> (DM) le handle de descripteur dans *SourceDescHandle* ou *TargetDescHandle* a été associé à un *StatementHandle* pour lequel **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations**ou **SQLSetPos** a été appelé et retourné SQL_NEED_DATA. Cette fonction a été appelée avant l’envoi des données pour l’ensemble des paramètres ou des colonnes de données en cours d’exécution.<br /><br /> (DM) une fonction d’exécution asynchrone a été appelée pour le handle de connexion associé à *SourceDescHandle* ou *TargetDescHandle*. Cette fonction asynchrone était toujours en cours d’exécution lors de l’appel de la fonction **SQLCopyDesc** .<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**ou **SQLMoreResults** a été appelé pour l’un des descripteurs d’instruction associés à *SourceDescHandle* ou *TargetDescHandle* et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.|  
+|HY010|Erreur de séquence de fonction|(DM) le handle de descripteur dans *SourceDescHandle* ou *TargetDescHandle* a été associé à un *StatementHandle* pour lequel une fonction d’exécution asynchrone (pas celui-ci) a été appelée et était toujours en cours d’exécution quand cette fonction a été appelée.<br /><br /> (DM) le handle de descripteur dans *SourceDescHandle* ou *TargetDescHandle* a été associé à un *StatementHandle* pour lequel **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations** ou **SQLSetPos** a été appelé et retourné SQL_NEED_DATA. Cette fonction a été appelée avant l’envoi des données pour l’ensemble des paramètres ou des colonnes de données en cours d’exécution.<br /><br /> (DM) une fonction d’exécution asynchrone a été appelée pour le handle de connexion associé à *SourceDescHandle* ou *TargetDescHandle*. Cette fonction asynchrone était toujours en cours d’exécution lors de l’appel de la fonction **SQLCopyDesc** .<br /><br /> (DM) **SQLExecute**, **SQLExecDirect** ou **SQLMoreResults** a été appelé pour l’un des descripteurs d’instruction associés à *SourceDescHandle* ou *TargetDescHandle* et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.|  
 |HY013|Erreur de gestion de la mémoire|Impossible de traiter l’appel de fonction, car les objets mémoire sous-jacents sont inaccessibles, probablement en raison de conditions de mémoire insuffisante.|  
 |HY016|Impossible de modifier un descripteur de ligne d’implémentation|*TargetDescHandle* a été associé à un IRD.|  
 |HY021|Informations de descripteur incohérentes|Les informations de descripteur vérifiées pendant une vérification de cohérence n’étaient pas cohérentes. Pour plus d’informations, consultez « vérifications de cohérence » dans **SQLSetDescField**.|  
-|HY092|Identificateur d’attribut/option non valide|L’appel à **SQLCopyDesc** invite un appel à **SQLSetDescField**, mais * \* ValuePtr* n’était pas valide pour l’argument *FieldIdentifier* sur *TargetDescHandle*.|  
+|HY092|Identificateur d’attribut/option non valide|L’appel à **SQLCopyDesc** invite un appel à **SQLSetDescField**, mais *\* ValuePtr* n’était pas valide pour l’argument *FieldIdentifier* sur *TargetDescHandle*.|  
 |HY117|La connexion est interrompue en raison d’un état de transaction inconnu. Seules les fonctions de déconnexion et de lecture seule sont autorisées.|(DM) pour plus d’informations sur l’état suspendu, consultez [fonction SQLEndTran](../../../odbc/reference/syntax/sqlendtran-function.md).|  
 |HYT01|Délai d’attente de connexion expiré|Le délai d’attente de connexion a expiré avant que la source de données ait répondu à la demande. Le délai d’expiration de la connexion est défini par le biais de **SQLSetConnectAttr**, SQL_ATTR_CONNECTION_TIMEOUT.|  
 |IM001|Le pilote ne prend pas en charge cette fonction|(DM) le pilote associé à *SourceDescHandle* ou *TargetDescHandle* ne prend pas en charge la fonction.|  
@@ -105,7 +105,7 @@ SQLRETURN SQLCopyDesc(
  Une application peut copier des données d’une table vers une autre sans copier les données au niveau de l’application. Pour ce faire, l’application lie les mêmes mémoires tampons de données et informations de descripteur à une instruction qui extrait les données et l’instruction qui insère les données dans une copie. Pour ce faire, vous pouvez partager un descripteur d’application (en liant un descripteur explicitement alloué comme ARD à une instruction et APD dans un autre) ou en utilisant **SQLCopyDesc** pour copier les liaisons entre les ARD et les APD des deux instructions. Si les instructions se trouvent sur des connexions différentes, **SQLCopyDesc** doit être utilisé. En outre, **SQLCopyDesc** doit être appelé pour copier les liaisons entre les IRD et la IPD des deux instructions. Lors de la copie à travers des instructions sur la même connexion, le type d’informations SQL_ACTIVE_STATEMENTS retourné par le pilote pour un appel à **SQLGetInfo** doit être supérieur à 1 pour que cette opération aboutisse. (Ce n’est pas le cas lors de la copie sur des connexions.)  
   
 ### <a name="code-example"></a>Exemple de code  
- Dans l’exemple suivant, les opérations de descripteur sont utilisées pour copier les champs de la table PartsSource dans la table PartsCopy. Le contenu de la table PartsSource est extrait dans les tampons d’ensemble de lignes dans *hstmt0*. Ces valeurs sont utilisées comme paramètres d’une instruction INSERT sur *hstmt1* pour remplir les colonnes de la table PartsCopy. Pour ce faire, les champs de la IRD de *hstmt0* sont copiés dans les champs de l’IPD de *hstmt1*et les champs de la ARD de *hstmt0* sont copiés dans les champs de la APD de *hstmt1*. Utilisez **SQLSetDescField** pour définir l’attribut SQL_DESC_PARAMETER_TYPE de l’IPD sur SQL_PARAM_INPUT lorsque vous copiez des champs IRD à partir d’une instruction avec des paramètres de sortie vers des champs IPD qui doivent être des paramètres d’entrée.  
+ Dans l’exemple suivant, les opérations de descripteur sont utilisées pour copier les champs de la table PartsSource dans la table PartsCopy. Le contenu de la table PartsSource est extrait dans les tampons d’ensemble de lignes dans *hstmt0*. Ces valeurs sont utilisées comme paramètres d’une instruction INSERT sur *hstmt1* pour remplir les colonnes de la table PartsCopy. Pour ce faire, les champs de la IRD de *hstmt0* sont copiés dans les champs de l’IPD de *hstmt1* et les champs de la ARD de *hstmt0* sont copiés dans les champs de la APD de *hstmt1*. Utilisez **SQLSetDescField** pour définir l’attribut SQL_DESC_PARAMETER_TYPE de l’IPD sur SQL_PARAM_INPUT lorsque vous copiez des champs IRD à partir d’une instruction avec des paramètres de sortie vers des champs IPD qui doivent être des paramètres d’entrée.  
   
 ```cpp  
 #define ROWS 100  

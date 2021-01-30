@@ -6,7 +6,7 @@ ms.date: 06/26/2020
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: machine-learning
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_external_script_requests
 - sys.dm_external_script_requests_TSQL
@@ -21,12 +21,12 @@ author: dphansen
 ms.author: davidph
 manager: cgronlun
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 972e9527db2eaa546210ccc54528d0ce60197b4c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ca4cfdd348d04ab0332653fa6851107ffa5f16d1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482680"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207117"
 ---
 # <a name="sysdm_external_script_requests"></a>Sys.dm_external_script_requests
 [!INCLUDE [SQL Server 2016 SQL MI](../../includes/applies-to-version/sqlserver2016-asdbmi.md)]
@@ -50,7 +50,7 @@ Renvoie une ligne pour chaque compte de travail actif qui exécute un script ext
 > [!NOTE]
 > Les utilisateurs qui exécutent des scripts externes doivent avoir l’autorisation supplémentaire `EXECUTE ANY EXTERNAL SCRIPT` , mais cette vue de gestion dynamique (DMV) peut être utilisée par les administrateurs sans cette autorisation. 
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
 
 Cette vue peut être filtrée à l’aide de l’identificateur de langage de script.
 

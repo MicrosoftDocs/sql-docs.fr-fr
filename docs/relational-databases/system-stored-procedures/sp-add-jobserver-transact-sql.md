@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_add_jobserver
 - sp_add_jobserver_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 485252cc-0081-490a-9bd1-cbbd68eea286
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 2a99fedcccc076fd12cbc64a4500b39ca7b6d5d3
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 015e8c1cc727b14d58d49be16643f0d6324bf0dd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89539164"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206747"
 ---
 # <a name="sp_add_jobserver-transact-sql"></a>sp_add_jobserver (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Transmet le travail spécifié au serveur spécifié.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -57,7 +57,7 @@ sp_add_jobserver [ @job_id = ] job_id | [ @job_name = ] 'job_name'
  None  
   
 ## <a name="remarks"></a>Notes  
- ** \@ automatic_post** existe dans **sp_add_jobserver**, mais n’est pas listé sous arguments. ** \@ automatic_post** est réservé à un usage interne.  
+ **\@ automatic_post** existe dans **sp_add_jobserver**, mais n’est pas listé sous arguments. **\@ automatic_post** est réservé à un usage interne.  
   
  [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] est un outil dont l'interface graphique permet de gérer facilement les travaux. Son utilisation est recommandée pour créer et gérer l'infrastructure des travaux.  
   

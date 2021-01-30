@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_startpublication_snapshot
 - sp_startpublication_snapshot_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 2cf568ee-0679-4d19-a394-27210bff61e5
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 6c43d44067e92a9ec606d08d9a458392d04c4e66
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 2052e1d0a41abe96f6525db94e9f4dae16fa6cb2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551216"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207274"
 ---
 # <a name="sp_startpublication_snapshot-transact-sql"></a>sp_startpublication_snapshot (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Utilisé pour lancer le travail de l'Agent d'instantané qui crée l'instantané initial pour une publication. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

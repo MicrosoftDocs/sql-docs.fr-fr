@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addqueued_artinfo
 - sp_addqueued_artinfo_TSQL
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: decdb6eb-3dcd-4053-a21d-fd367c3fbafb
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 16709ac2b02acf8641661831c4aee831ef95bc19
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: c0899ff490b553471fc766413fdf0cca27955fa0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548320"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206655"
 ---
 # <a name="sp_addqueued_artinfo-transact-sql"></a>sp_addqueued_artinfo (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "89548320"
   
  Crée la table [MSsubscription_articles](../../relational-databases/system-tables/mssubscription-articles-transact-sql.md) sur l’abonné utilisé pour suivre les informations d’abonnement de l’article (mise à jour en attente et mise à jour immédiate avec mise à jour en file d’attente comme basculement). Cette procédure stockée est exécutée sur la base de données d'abonnement de l'Abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,7 +52,7 @@ sp_addqueued_artinfo [ @artid= ] 'artid'
 ## <a name="arguments"></a>Arguments  
 `[ @artid = ] 'artid'` Nom de l’ID de l’article. *artid* est de **type int**, sans valeur par défaut  
   
-`[ @article = ] 'article'` Nom de l’article pour lequel générer un script. *article* est de **type sysname**et n’a pas de valeur par défaut  
+`[ @article = ] 'article'` Nom de l’article pour lequel générer un script. *article* est de **type sysname** et n’a pas de valeur par défaut  
   
 `[ @publisher = ] 'publisher'` Est le nom du serveur de publication. *Publisher* est de **type sysname**, sans valeur par défaut.  
   
@@ -62,10 +62,10 @@ sp_addqueued_artinfo [ @artid= ] 'artid'
   
 `[ @dest_table = ] _'dest_table'` Nom de la table de destination. *dest_table* est de **type sysname**, sans valeur par défaut.  
   
- [** @owner =** ] **'**_propriétaire_**'**  
+ [**@owner =** ] **'**_propriétaire_**'**  
  Propriétaire de l’abonnement. *owner* est de **type sysname**, sans valeur par défaut.  
   
-`[ @cft_table = ] 'cft_table'` Nom de la table de conflits de mise à jour en attente pour cet article. *cft_table*est de **type sysname**, sans valeur par défaut.  
+`[ @cft_table = ] 'cft_table'` Nom de la table de conflits de mise à jour en attente pour cet article. *cft_table* est de **type sysname**, sans valeur par défaut.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dbo.sysjobactivity_TSQL
 - dbo.sysjobactivity
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: fd17cac9-5d1f-4b44-b2dc-ee9346d8bf1e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 091f3052a568fa5c1c0e7f521333c67947716cdf
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c375367cdca6b7005d0c74f90654b7a6911070ee
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098356"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207023"
 ---
 # <a name="dbosysjobactivity-transact-sql"></a>dbo.sysjobactivity (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

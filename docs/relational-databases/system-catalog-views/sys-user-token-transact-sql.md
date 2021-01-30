@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.user_token
 - user_token
@@ -25,12 +25,12 @@ ms.assetid: be018103-5e57-43a4-9160-9bf420892aa7
 author: VanMSFT
 ms.author: vanto
 monikerRange: = azuresqldb-current||>= sql-server-2016||>= sql-server-linux-2017|| = azure-sqldw-latest
-ms.openlocfilehash: c7c6b660a4ac28257dc67ac9ca84b072ca9ce290
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 05dcc6f926834170ce5541ae146f2f24e66a6333
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482840"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206812"
 ---
 # <a name="sysuser_token-transact-sql"></a>sys.user_token (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-asdw-xxx-md.md](../../includes/tsql-appliesto-ss2008-asdb-asdw-xxx-md.md)]

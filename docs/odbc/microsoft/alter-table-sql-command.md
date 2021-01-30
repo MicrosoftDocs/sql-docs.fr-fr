@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - alter table [ODBC]
 ms.assetid: 3a01a291-f4d9-43bc-a725-5a95546ff364
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: c72d03abff792ff103bf009cd12b718c74bd497d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 186647c40517c5ecf77a55e6bbc08155c98ffed9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88483702"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205761"
 ---
 # <a name="alter-table---sql-command"></a>ALTER TABLE, commande SQL
 Modifie par programmation la structure d’une table.  
@@ -151,7 +151,7 @@ CREATE TABLE mytable (char1 C(10), char2 C(10) NOCPTRANS,;
  DÉPOSER LA VÉRIFICATION  
  Supprime la règle de validation de la table.  
   
- Ajouter une balise *eExpression3*de clé primaire *TagName2*  
+ Ajouter une balise *eExpression3* de clé primaire *TagName2*  
  Ajoute un index primaire à la table. *eExpression3* spécifie l’expression de clé d’index primaire et *TagName2* spécifie le nom de la balise d’index primaire. Les noms de balises d’index peuvent contenir jusqu’à 10 caractères. Si la BALIse *TagName2* est omise et que *eExpression3* est un champ unique, la balise d’index primaire porte le même nom que le champ spécifié dans *eExpression3*.  
   
  SUPPRIMER LA CLÉ PRIMAIRE  
@@ -172,7 +172,7 @@ CREATE TABLE mytable (char1 C(10), char2 C(10) NOCPTRANS,;
  SUPPRIMER la BALIse de clé étrangère *TagName6*[Enregistrer]  
  Supprime une clé étrangère dont la balise d’index est *TagName6*. Si vous omettez SAVE, la balise d’index est supprimée de l’index structurel. Incluez enregistrer pour empêcher la suppression de la balise d’index de l’index structurel.  
   
- Renommer la colonne *FieldName4*en *FieldName5*  
+ Renommer la colonne *FieldName4* en *FieldName5*  
  Vous permet de modifier le nom d’un champ dans la table. *FieldName4* spécifie le nom du champ qui est renommé. *FieldName5* spécifie le nouveau nom du champ.  
   
 > [!CAUTION]  

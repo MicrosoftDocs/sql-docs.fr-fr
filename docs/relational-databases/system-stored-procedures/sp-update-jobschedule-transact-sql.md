@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_update_jobschedule_TSQL
 - sp_update_jobschedule
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 4df02594-4cd1-49a9-8d97-37c44e4d5423
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: cf9a58d3be772fc9fa65cdf61ee6a326410314a1
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: d75398c9caa77430947248472f0a6c625def901f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89534778"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207970"
 ---
 # <a name="sp_update_jobschedule-transact-sql"></a>sp_update_jobschedule (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

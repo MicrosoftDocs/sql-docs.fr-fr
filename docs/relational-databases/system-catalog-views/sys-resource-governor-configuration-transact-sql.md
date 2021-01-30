@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.resource_governor_configuration_TSQL
 - sys.resource_governor_configuration
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 89099668-1dc6-4b07-9d8b-49bc95c7bfc0
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 34e8a269a2c8e7fafd0ba0e6645e2363eefa5d77
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c36375450d680d85bd551124f2eb9bfb03d895d6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097968"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206836"
 ---
 # <a name="sysresource_governor_configuration-transact-sql"></a>sys.resource_governor_configuration (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

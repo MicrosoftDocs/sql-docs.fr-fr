@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - availability_group_listener_ip_addresses
 - sys.availability_group_listener_ip_addresses
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: e515fa6b-1354-4110-9b70-ab2e6164c992
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: f8cb764514edcc626feb41f798d0125f75095034
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 8036caae71fb58956bd8a4b50d6908fa644ef40c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100700"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207510"
 ---
 # <a name="sysavailability_group_listener_ip_addresses-transact-sql"></a>sys.availability_group_listener_ip_addresses (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

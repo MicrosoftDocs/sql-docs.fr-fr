@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - trace_xe_event_map_TSQL
 - trace_xe_event_map
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 537aa292-3540-47e8-be28-56dc01abc343
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: e1cbee9046bb00b504288779748a1befb4e3d2b8
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 72394c7ec68c6abd2815edec6ec3ddabe135e09b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093721"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207218"
 ---
 # <a name="extended-events-tables---trace_xe_event_map"></a>Tables d’événements étendus - trace_xe_event_map
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

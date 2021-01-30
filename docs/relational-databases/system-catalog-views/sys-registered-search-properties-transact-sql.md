@@ -6,7 +6,7 @@ ms.date: 06/10/2016
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.registered_search_properties
 - registered_search_properties
@@ -25,12 +25,12 @@ author: pmasl
 ms.author: pelopes
 ms.reviewer: mikeray
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: f68ed9961972c78af6101735998d6498b2f2c909
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: fb13042972d23742398f38476262cf92b8a4a3f1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477420"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206869"
 ---
 # <a name="sysregistered_search_properties-transact-sql"></a>sys.registered_search_properties (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "97477420"
 |**property_description**|**nvarchar(512)**|Description de la propriété.|  
 |**property_id**|**int**|ID de propriété interne de la propriété de recherche dans la liste de propriétés de recherche identifiée par la valeur **property_list_id** .<br /><br /> Lorsqu'une propriété donnée est ajoutée à une liste de propriétés de recherche donnée, le moteur d'indexation et de recherche en texte intégral inscrit la propriété et lui affecte un ID de propriété interne qui est spécifique à cette liste de propriétés. L'ID de propriété interne, qui est un entier, est unique à une liste de propriétés de recherche donnée. Si une propriété donnée est enregistrée pour plusieurs listes de propriétés de recherche, un ID de propriété interne différent peut être affecté pour chaque liste de propriétés de recherche.<br /><br /> Remarque : l’ID de propriété interne est différent de l’identificateur entier de propriété qui est spécifié lors de l’ajout de la propriété à la liste de propriétés de recherche. Pour plus d’informations, consultez [Rechercher les propriétés du document à l’aide des listes de propriétés de recherche](../../relational-databases/search/search-document-properties-with-search-property-lists.md).<br /><br /> Pour afficher tout le contenu lié à la propriété dans l’index de recherche en texte intégral : <br />                  [sys.dm_fts_index_keywords_by_property &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-keywords-by-property-transact-sql.md)|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Pour plus d’informations sur les listes de propriétés de recherche, consultez [Rechercher les propriétés du document à l’aide des listes de propriétés de recherche](../../relational-databases/search/search-document-properties-with-search-property-lists.md).  
   
 ## <a name="permissions"></a>Autorisations  

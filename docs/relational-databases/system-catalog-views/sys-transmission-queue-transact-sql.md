@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - transmission_queue
 - sys.transmission_queue_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: f3515d1a-be8f-4a27-8058-8865f0919838
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 8d3b3b9662feefbc14c4ee12fbdd17f4e10ba25c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: cdba44109df8d1e4322dda59bedca35350fd33d2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094338"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208316"
 ---
 # <a name="systransmission_queue-transact-sql"></a>sys.transmission_queue (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

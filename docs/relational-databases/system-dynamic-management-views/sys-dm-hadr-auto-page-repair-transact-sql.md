@@ -6,7 +6,7 @@ ms.date: 02/05/2019
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_hadr_auto_page_repair_TSQL
 - sys.dm_hadr_auto_page_repair
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: d7840adf-4a1b-41ac-bc94-102c07ad1c79
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: d620d976e7b86ccf15cbf489175ebdf1cbc34f5f
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 255350fdb2a2de80950575350b5082c6b7bcc6ee
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092819"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206780"
 ---
 # <a name="sysdm_hadr_auto_page_repair-transact-sql"></a>sys.dm_hadr_auto_page_repair (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

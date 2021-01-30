@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ff16a833-01fe-4877-8aa6-55b72603ec2e
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: ae6119639e67cd073e90baec7db430ab3451af7d
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: a143a27fdd38de676359bd49ccfba6d6049fa387
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548436"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205268"
 ---
 # <a name="ole-automation-stored-procedures-transact-sql"></a>Procédures stockées OLE Automation (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_add_log_shipping_alert_job_TSQL
 - sp_add_log_shipping_alert_job
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: dd95d96e-8963-4aa9-bdcc-3e4b1bc002d3
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: b5c872f0346cce50ff27e442991efa5e5f4e4391
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 461a5902c03cc71fd4fce608aa20c2ac8eb5579d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88464701"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206731"
 ---
 # <a name="sp_add_log_shipping_alert_job-transact-sql"></a>sp_add_log_shipping_alert_job (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

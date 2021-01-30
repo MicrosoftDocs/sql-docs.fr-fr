@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.trace_subclass_values
 - trace_subclass_values_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 542b19ca-61c8-41ca-aa2e-0aba8906cc24
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 8c39219bef217ba65797d9163a6b16ed6db15eff
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f56994ed647544da390687c9e229b6657d63c815
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094353"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208340"
 ---
 # <a name="systrace_subclass_values-transact-sql"></a>sys.trace_subclass_values (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

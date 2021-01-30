@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_bindsession
 - sp_bindsession_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 1436fe21-ad00-4a98-aca1-1451a5e571d2
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 900f6383a4a285cac36262096a66e64603467c79
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 64f6b6b4134c5f29dea38d87e7d75e43910ca530
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548221"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206607"
 ---
 # <a name="sp_bindsession-transact-sql"></a>sp_bindsession (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "89548221"
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Utilisez plutôt MARS (Multiple Active Results Sets) ou des transactions distribuées. Pour plus d’informations, consultez [Utilisation de MARS &#40;Multiple Active Result Sets&#41;](../../relational-databases/native-client/features/using-multiple-active-result-sets-mars.md).  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,7 +44,7 @@ sp_bindsession { 'bind_token' | NULL }
   
 ## <a name="arguments"></a>Arguments  
  **'** *bind_token* **'**  
- Jeton qui identifie la transaction obtenue à l’origine à l’aide de **sp_getbindtoken** ou de la fonction **srv_getbindtoken** Open Data Services. *bind_token*est **de type varchar (255)**.  
+ Jeton qui identifie la transaction obtenue à l’origine à l’aide de **sp_getbindtoken** ou de la fonction **srv_getbindtoken** Open Data Services. *bind_token* est **de type varchar (255)**.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  0 (réussite) ou 1 (échec)  

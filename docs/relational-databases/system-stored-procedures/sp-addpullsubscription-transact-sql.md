@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addpullsubscription
 - sp_addpullsubscription_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 0f4bbedc-0c1c-414a-b82a-6fd47f0a6a7f
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 8e5c15e1892f6640e8fddbcc0b89898ffce4f6b2
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: c119173ba184ef8fe3a03c59e90965650bb9c35c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549955"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206680"
 ---
 # <a name="sp_addpullsubscription-transact-sql"></a>sp_addpullsubscription (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Ajoute un abonnement par extraction de données à une publication transactionnelle ou d'instantané. Cette procédure stockée est exécutée sur la base de données de l'Abonné dans laquelle l'abonnement extrait doit être créé.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -56,7 +56,7 @@ sp_addpullsubscription [ @publisher= ] 'publisher'
   
 `[ @independent_agent = ] 'independent_agent'` Spécifie s’il existe un Agent de distribution autonome pour cette publication. *independent_agent* est de type **nvarchar (5)**, avec true comme valeur par défaut. Si la **valeur est true**, il existe un agent de distribution autonome pour cette publication. Si la **valeur est false**, il existe un agent de distribution pour chaque paire base de données de la base de données du serveur de publication/abonné. *independent_agent* est une propriété de la publication et doit avoir la même valeur ici que sur le serveur de publication.  
   
-`[ @subscription_type = ] 'subscription_type'` Type d’abonnement. *subscription_type* est de type **nvarchar (9)**, avec **anonymous**comme valeur par défaut. Vous devez spécifier la valeur **pull** pour *subscription_type*, sauf si vous souhaitez créer un abonnement sans enregistrer l’abonnement sur le serveur de publication. Dans ce cas, vous devez spécifier une valeur **anonyme**. Cela s'avère nécessaire lorsque vous ne pouvez pas établir de connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] avec le serveur de publication pendant la configuration de l'abonnement.  
+`[ @subscription_type = ] 'subscription_type'` Type d’abonnement. *subscription_type* est de type **nvarchar (9)**, avec **anonymous** comme valeur par défaut. Vous devez spécifier la valeur **pull** pour *subscription_type*, sauf si vous souhaitez créer un abonnement sans enregistrer l’abonnement sur le serveur de publication. Dans ce cas, vous devez spécifier une valeur **anonyme**. Cela s'avère nécessaire lorsque vous ne pouvez pas établir de connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] avec le serveur de publication pendant la configuration de l'abonnement.  
   
 `[ @description = ] 'description'` Description de la publication. *Description* est de type **nvarchar (100)**, avec NULL comme valeur par défaut.  
   

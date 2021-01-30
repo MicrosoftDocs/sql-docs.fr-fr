@@ -7,18 +7,18 @@ ms.prod: sql
 ms.technology: system-objects
 ms.prod_service: sql-data-warehouse
 ms.reviewer: jrasnick
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 author: ronortloff
 ms.author: rortloff
 monikerRange: =azure-sqldw-latest
-ms.openlocfilehash: cdab5a27c505d6024b85b0c4ec2ed15595b23863
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b758ec142d3627c545b2e4f98c7787b1dd195685
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482830"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207147"
 ---
 # <a name="sysworkload_management_workload_classifier_details-transact-sql"></a>sys.workload_management_workload_classifier_details (Transact-SQL)
 

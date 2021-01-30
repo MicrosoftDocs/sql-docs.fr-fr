@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_procoption
 - sp_procoption_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 6f0221bd-70b4-4b04-b15d-722235aceb3c
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 155600ed4a41d4ad8ee7f404426bf5eed0d77ba8
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: ed9d1056a751633f208a38cbb03f6a0d50057c88
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89535034"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205117"
 ---
 # <a name="sp_procoption-transact-sql"></a>sp_procoption (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Définit ou désactive l'exécution automatique d'une procédure stockée. Une procédure stockée qui a la valeur exécution automatique s’exécute chaque fois qu’une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est démarrée.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

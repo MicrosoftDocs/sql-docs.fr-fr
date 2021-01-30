@@ -1,13 +1,13 @@
 ---
-description: managed_backup. fn_backup_instance_config (Transact-SQL)
-title: managed_backup. fn_backup_instance_config (Transact-SQL) | Microsoft Docs
+description: managed_backup.fn_backup_instance_config managed_backup (Transact-SQL)
+title: managed_backup managed_backup.fn_backup_instance_config (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - fn_backup_instance_config
 - smart_admin.fn_backup_instance_config_TSQL
@@ -21,14 +21,14 @@ helpviewer_keywords:
 ms.assetid: 2382a547-c0c9-4e1d-87c9-d8526192eb5a
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: a65649b7b565475eebd69bcadf4ac28bef707d7b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 534b1417536b233cafd0c7f3499e6ff801f0fa42
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88419563"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207415"
 ---
-# <a name="managed_backupfn_backup_instance_config-transact-sql"></a>managed_backup. fn_backup_instance_config (Transact-SQL)
+# <a name="managed_backupfn_backup_instance_config-transact-sql"></a>managed_backup.fn_backup_instance_config managed_backup (Transact-SQL)
 [!INCLUDE [sqlserver2016](../../includes/applies-to-version/sqlserver2016.md)]
 
   Retourne une ligne avec les paramètres de configuration par défaut de la [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] pour l'instance de SQL Server.  
@@ -45,7 +45,7 @@ managed_backup.fn_backup_db_config ()
 ```  
   
 ##  <a name="arguments"></a><a name="Arguments"></a> Arguments  
- None  
+ Aucun  
   
 ## <a name="table-returned"></a>Table retournée  
   

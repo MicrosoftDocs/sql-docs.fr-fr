@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-data-warehouse
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_exec_xml_handles
 - dm_exec_xml_handles_TSQL
@@ -21,12 +21,12 @@ ms.assetid: a873ce0f-6955-417a-96a1-b2ef11a83633
 author: pmasl
 ms.author: pelopes
 monikerRange: =azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 0433126f43a14aa12521c0a65cd1b4aca8441ac6
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 3e8529f7626ffa25d86cbb73c704198082e32bcf
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482660"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208058"
 ---
 # <a name="sysdm_exec_xml_handles-transact-sql"></a>sys.dm_exec_xml_handles (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-asdw-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-asdw-xxx-md.md)]
@@ -63,7 +63,7 @@ dm_exec_xml_handles (session_id | 0 )
 |**row_count**|**bigint**|Nombre de lignes retournées par tous les appels OPENXML précédents pour ce handle de document.|  
 |**dormant_duration_ms**|**bigint**|Nombre de millisecondes depuis le dernier appel OPENXML. Si OPENXML n’a pas été appelé, retourne des millisecondes depuis l’appel de **sp_xml_preparedocumen** t.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  La durée de vie des **sql_handles** utilisées pour récupérer le texte SQL qui a exécuté un appel à **sp_xml_preparedocument** met en avant le plan mis en cache utilisé pour exécuter la requête. Si le texte de la requête n'est pas disponible dans le cache, les données ne peuvent pas être récupérées à l'aide des informations fournies dans le résultat de fonction. Cela peut se produire si vous exécutez de nombreux traitements de grande taille.  
   
 ## <a name="permissions"></a>Autorisations  

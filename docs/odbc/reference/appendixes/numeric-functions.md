@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - functions [ODBC], numeric functions
 - numeric functions [ODBC]
 ms.assetid: 4fa548dc-e8b0-4179-92ff-81d6a79d10c3
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 7575d55ad6632ffa511da32a7155ab8c4d0edf3d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: bef4a075eefffd0f9ec4b918189d40ae71ea78ec
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88425021"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207126"
 ---
 # <a name="numeric-functions"></a>Fonctions numériques
 Le tableau suivant décrit les fonctions numériques incluses dans le jeu de fonctions scalaires ODBC. En appelant **SQLGetInfo** avec un *type d’informations* SQL_NUMERIC_FUNCTIONS, une application peut déterminer quelles fonctions numériques sont prises en charge par un pilote.  

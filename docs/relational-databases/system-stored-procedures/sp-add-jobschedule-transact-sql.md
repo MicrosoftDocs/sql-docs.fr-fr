@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_add_jobschedule
 - sp_add_jobschedule_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: ffce19d9-d1d6-45b4-89fd-ad0f60822ba0
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 910ee3433bfa4298412a10a58405fb27dad0b157
-ms.sourcegitcommit: 7f76975c29d948a9a3b51abce564b9c73d05dcf0
+ms.openlocfilehash: 6c44f473d71f67718e9444ab2994fcfc17258411
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96900977"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206463"
 ---
 # <a name="sp_add_jobschedule-transact-sql"></a>sp_add_jobschedule (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Crée une planification pour un travail de l’agent SQL.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
   > [!IMPORTANT]  
   > Dans [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance), la plupart, mais pas toutes les fonctionnalités SQL Server Agent sont actuellement prises en charge. Pour plus d’informations, consultez [Différences T-SQL entre Azure SQL Managed Instance et SQL Server](/azure/sql-database/sql-database-managed-instance-transact-sql-information#sql-server-agent).
@@ -138,7 +138,7 @@ sp_add_jobschedule [ @job_id = ] job_id, | [ @job_name = ] 'job_name', [ @name =
 ## <a name="result-sets"></a>Jeux de résultats  
  None  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Il est désormais possible de gérer la planification des travaux indépendamment des travaux. Pour ajouter une planification à un travail, utilisez **sp_add_schedule** pour créer la planification et **sp_attach_schedule** pour joindre la planification à un travail.  
   
 ## <a name="permissions"></a>Autorisations  

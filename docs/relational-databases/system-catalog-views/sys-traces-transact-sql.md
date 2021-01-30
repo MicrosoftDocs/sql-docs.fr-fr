@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - traces
 - sys.traces_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 4a03be22-b7da-4e2a-97ff-94bed890a620
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 523589a6840581bf96c436eea7393f9fa03beca7
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 9a7c5c6efdb054332c90338f74a895413578e0f6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094374"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208329"
 ---
 # <a name="systraces-transact-sql"></a>sys.traces (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

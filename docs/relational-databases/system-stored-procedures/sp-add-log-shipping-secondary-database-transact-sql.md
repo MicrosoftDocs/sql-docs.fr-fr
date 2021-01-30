@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_add_log_shipping_secondary_database
 - sp_add_log_shipping_secondary_database_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: d29e1c24-3a3c-47a4-a726-4584afa6038a
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 384884e2b2b076b20cb9c679c3494a7c292f77a1
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d13a58428c4fefe2cc19668de22e604f721d0a96
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88464658"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206710"
 ---
 # <a name="sp_add_log_shipping_secondary_database-transact-sql"></a>sp_add_log_shipping_secondary_database (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

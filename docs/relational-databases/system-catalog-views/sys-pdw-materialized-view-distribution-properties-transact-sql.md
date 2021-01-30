@@ -6,19 +6,19 @@ ms.date: 07/03/2019
 ms.prod: sql
 ms.technology: data-warehouse
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: d62b0e25-3226-4f87-a10a-b3a0d9555e19
 author: XiaoyuMSFT
 ms.author: xiaoyul
 monikerRange: = azure-sqldw-latest
-ms.openlocfilehash: aa0ab1c18baf169199f054a19f04c0687b340ba7
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: df1e216f735acf5cc9cbe8ea685e3ef5c2f90482
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97638505"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208352"
 ---
 # <a name="syspdw_materialized_view_distribution_properties-transact-sql-preview"></a>sys.pdw_materialized_view_distribution_properties (Transact-SQL) (version préliminaire)
 

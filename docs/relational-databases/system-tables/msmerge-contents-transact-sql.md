@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSmerge_contents
 - MSmerge_contents_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 8d68a61a-683f-4b20-92f9-c0a8d9ba0ad1
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 52edaacaa839beeedb60b706803d268528d98492
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 78d7fb9732013970956554e932b3d4804d461df9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091427"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205061"
 ---
 # <a name="msmerge_contents-transact-sql"></a>MSmerge_contents (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

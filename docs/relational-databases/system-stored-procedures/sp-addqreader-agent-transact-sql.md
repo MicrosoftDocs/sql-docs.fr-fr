@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addqreader_agent_TSQL
 - sp_addqreader_agent
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: dc9f591a-e67e-4ba8-bf47-defd5eda0822
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: dae183ab0f04ac343e7836b852a881341f188325
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: f148297e264a0ca097671234655f9854b7e79aba
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549957"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206649"
 ---
 # <a name="sp_addqreader_agent-transact-sql"></a>sp_addqreader_agent (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Ajoute un Agent de lecture de la file d'attente à un serveur de distribution. Cette procédure stockée est exécutée sur la base de données de distribution du serveur de distribution ou sur la base de publication du serveur de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,7 +50,7 @@ sp_addqreader_agent [ @job_login = ] 'job_login'
   
 `[ @job_name = ] 'job_name'` Nom d’un travail d’agent existant. *job_name* est de **type sysname**, avec NULL comme valeur par défaut. Ce paramètre n'est spécifié que lorsque l'Agent est créé avec un travail existant au lieu d'un nouveau travail (valeur par défaut).  
   
-`[ @frompublisher = ] frompublisher` Spécifie si la procédure est exécutée sur le serveur de publication. *frompublisher* est de bits, avec **0**comme valeur par défaut. La valeur **1** signifie que la procédure est exécutée à partir du serveur de publication sur la base de données de publication.  
+`[ @frompublisher = ] frompublisher` Spécifie si la procédure est exécutée sur le serveur de publication. *frompublisher* est de bits, avec **0** comme valeur par défaut. La valeur **1** signifie que la procédure est exécutée à partir du serveur de publication sur la base de données de publication.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  0 (réussite) ou 1 (échec)  

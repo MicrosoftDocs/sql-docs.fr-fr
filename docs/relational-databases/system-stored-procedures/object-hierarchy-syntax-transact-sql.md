@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7ed8df86-9fd2-4e09-96bc-5381fec85f65
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 81db44bae57dec8bb0298e872221998ac45e0a3a
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 6ebfc2afdcbaa3ca5eddd5d311262ba19780e332
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89542059"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205259"
 ---
 # <a name="object-hierarchy-syntax-transact-sql"></a>Syntaxe de hiérarchie des objets (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

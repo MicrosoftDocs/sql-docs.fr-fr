@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.column_store_row_groups_TSQL
 - column_store_row_groups
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 76e7fef2-d1a4-4272-a2bb-5f5dcd84aedc
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: bb30e3c829dcdabde66fd1a330ec617eea7e5b34
-ms.sourcegitcommit: 7791bd2ba339edc5cd2078a6537c8f6bfe72a19b
+ms.openlocfilehash: e2b9faf192f19df1cf402d6fc1850fb4acd855c0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98564467"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205354"
 ---
 # <a name="syscolumn_store_row_groups-transact-sql"></a>sys.column_store_row_groups (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "98564467"
 |**deleted_rows**|bigint|Nombre total de lignes marquées comme étant supprimées dans le groupe de lignes. Cette valeur est toujours 0 pour les groupes de lignes DELTA.|  
 |**size_in_bytes**|bigint|Taille en octets de toutes les données dans ce groupe de lignes (sans les métadonnées ou les dictionnaires partagés), pour les rowgroups DELTA et COLUMNSTORE.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Retourne une ligne pour chaque groupe de lignes columnstore pour chaque table ayant un index columnstore cluster ou non cluster.  
   
  Utilisez **sys.column_store_row_groups** pour déterminer le nombre de lignes incluses dans le groupe de lignes et la taille du groupe de lignes.  

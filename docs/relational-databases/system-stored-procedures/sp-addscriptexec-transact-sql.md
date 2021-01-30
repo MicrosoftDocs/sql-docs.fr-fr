@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addscriptexec
 - sp_addscriptexec_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 1627db41-6a80-45b6-b0b9-c0b7f9a1c886
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 81d3b8ac9e8eda12ed27099fed5623d0fd3da489
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 6349479d4f3ce3097771516640b0eec258e32f5b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89536759"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207157"
 ---
 # <a name="sp_addscriptexec-transact-sql"></a>sp_addscriptexec (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Publie un script SQL (fichier .sql) sur tous les Abonnés d'une publication. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

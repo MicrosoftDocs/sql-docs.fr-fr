@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: a6fb85b2-b010-4ca9-b65f-4402917076ea
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 05c4fca131d0ee44f772f8cdae0a6f97374f2e24
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: d670b71f972e700af90ee70b38538466fbd26a33
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096308"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208044"
 ---
 # <a name="system-metadata-functions"></a>Fonctions de métadonnées système
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

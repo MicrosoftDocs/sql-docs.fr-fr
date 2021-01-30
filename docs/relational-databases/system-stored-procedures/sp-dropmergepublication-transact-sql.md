@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_dropmergepublication
 - sp_dropmergepublication_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 9e1cb96e-5889-4f97-88cd-f60cf313ce68
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 0c787c7c2503f9182b704e83a04664d7d377cef4
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 35024724255eea714de42f8fb3a974188730fcef
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538965"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208216"
 ---
 # <a name="sp_dropmergepublication-transact-sql"></a>sp_dropmergepublication (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Supprime une publication de fusion et l'Agent d'instantané qui lui est associé. Tous les abonnements doivent être supprimés avant de supprimer une publication de fusion. Les articles de la publication sont supprimés automatiquement. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,11 +41,11 @@ sp_dropmergepublication [ @publication= ] 'publication'
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @publication = ] 'publication'` Nom de la publication à supprimer. *publication* est de **type sysname**, sans valeur par défaut. Si **tout**est le cas, toutes les publications de fusion existantes sont supprimées, ainsi que le travail agent d’instantané qui leur est associé. Si vous spécifiez une valeur particulière pour la *publication*, seule la publication et le travail de agent d’instantané associé sont supprimés.  
+`[ @publication = ] 'publication'` Nom de la publication à supprimer. *publication* est de **type sysname**, sans valeur par défaut. Si **tout** est le cas, toutes les publications de fusion existantes sont supprimées, ainsi que le travail agent d’instantané qui leur est associé. Si vous spécifiez une valeur particulière pour la *publication*, seule la publication et le travail de agent d’instantané associé sont supprimés.  
   
-`[ @ignore_distributor = ] ignore_distributor` Permet de supprimer une publication sans effectuer de tâches de nettoyage sur le serveur de distribution. *ignore_distributor* est de **bit**, avec **0**comme valeur par défaut. Ce paramètre est également utilisé lors de la réinstallation du serveur de distribution.  
+`[ @ignore_distributor = ] ignore_distributor` Permet de supprimer une publication sans effectuer de tâches de nettoyage sur le serveur de distribution. *ignore_distributor* est de **bit**, avec **0** comme valeur par défaut. Ce paramètre est également utilisé lors de la réinstallation du serveur de distribution.  
   
-`[ @reserved = ] reserved` Est réservé pour une utilisation ultérieure. la valeur *réservée* est de **bit**, avec **0**comme valeur par défaut.  
+`[ @reserved = ] reserved` Est réservé pour une utilisation ultérieure. la valeur *réservée* est de **bit**, avec **0** comme valeur par défaut.  
   
 `[ @ignore_merge_metadata = ] ignore_merge_metadata` À usage interne uniquement.  
   

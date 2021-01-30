@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_add_log_shipping_primary_database
 - sp_add_log_shipping_primary_database_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 69531611-113f-46b5-81a6-7bf496d0353c
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 0ed823f2b6564593388893db74866931bc1c0c93
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4c967127366c935b42ac33158982c6734114b2d8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88464656"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206720"
 ---
 # <a name="sp_add_log_shipping_primary_database-transact-sql"></a>sp_add_log_shipping_primary_database (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -96,7 +96,7 @@ sp_add_log_shipping_primary_database [ @database = ] 'database',
   
  1 = Activé. Toujours compresser des sauvegardes de journal.  
   
- 2 = utiliser le paramètre de la [vue ou configurer l’option de configuration de serveur compression de la sauvegarde par défaut](../../database-engine/configure-windows/view-or-configure-the-backup-compression-default-server-configuration-option.md). Valeur par défaut.  
+ 2 = utiliser le paramètre de la [vue ou configurer l’option de configuration de serveur compression de la sauvegarde par défaut](../../database-engine/configure-windows/view-or-configure-the-backup-compression-default-server-configuration-option.md). Il s’agit de la valeur par défaut.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  0 (réussite) ou 1 (échec)  

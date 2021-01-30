@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addpullsubscription_agent
 - sp_addpullsubscription_agent_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: b9c2eaed-6d2d-4b78-ae9b-73633133180b
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 3987a0eb98c1eea64b47388bdf4dfa630f4e8c6f
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 031911ae4e9f6f81e82ec9d0b4fb20c73d94a2cd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546271"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206689"
 ---
 # <a name="sp_addpullsubscription_agent-transact-sql"></a>sp_addpullsubscription_agent (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
  
   Ajoute un nouveau travail de l'Agent planifié, utilisé pour synchroniser un abonnement par extraction de données (pull) avec une publication transactionnelle. Cette procédure stockée est exécutée sur la base de données d'abonnement de l'Abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -118,7 +118,7 @@ sp_addpullsubscription_agent [ @publisher = ] 'publisher'
   
 `[ @distribution_db = ] 'distribution_db'` Nom de la base de données de distribution. *distribution_db* est de **type sysname**, avec NULL comme valeur par défaut.  
   
-`[ @distributor_security_mode = ] distributor_security_mode` Mode de sécurité à utiliser lors de la connexion à un serveur de distribution lors de la synchronisation. *distributor_security_mode* est de **type int**, avec **1**comme valeur par défaut. **0** spécifie [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification. **1** spécifie l’authentification Windows.  
+`[ @distributor_security_mode = ] distributor_security_mode` Mode de sécurité à utiliser lors de la connexion à un serveur de distribution lors de la synchronisation. *distributor_security_mode* est de **type int**, avec **1** comme valeur par défaut. **0** spécifie [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification. **1** spécifie l’authentification Windows.  
   
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteWinAuthentication](../../includes/ssnotewinauthentication-md.md)]  
@@ -132,7 +132,7 @@ sp_addpullsubscription_agent [ @publisher = ] 'publisher'
   
 `[ @optional_command_line = ] 'optional_command_line'` Est une invite de commandes facultative fournie au Agent de distribution. Par exemple, **-DefinitionFile** C:\Distdef.txt ou **-CommitBatchSize** 10. *optional_command_line* est de type **nvarchar (4000)**, avec une chaîne vide comme valeur par défaut.  
   
-`[ @frequency_type = ] frequency_type` Fréquence de planification de l’Agent de distribution. *frequency_type* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_type = ] frequency_type` Fréquence de planification de l’Agent de distribution. *frequency_type* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -150,7 +150,7 @@ sp_addpullsubscription_agent [ @publisher = ] 'publisher'
   
 `[ @frequency_interval = ] frequency_interval` Valeur à appliquer à la fréquence définie par *frequency_type*. *frequency_interval* est de **type int**, avec 1 comme valeur par défaut.  
   
-`[ @frequency_relative_interval = ] frequency_relative_interval` Date de la Agent de distribution. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuelle relative). *frequency_relative_interval* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_relative_interval = ] frequency_relative_interval` Date de la Agent de distribution. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuelle relative). *frequency_relative_interval* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -160,9 +160,9 @@ sp_addpullsubscription_agent [ @publisher = ] 'publisher'
 |**8**|Quatrième|  
 |**16**|Dernier|  
   
-`[ @frequency_recurrence_factor = ] frequency_recurrence_factor` Facteur de récurrence utilisé par *frequency_type*. *frequency_recurrence_factor* est de **type int**, avec **1**comme valeur par défaut.  
+`[ @frequency_recurrence_factor = ] frequency_recurrence_factor` Facteur de récurrence utilisé par *frequency_type*. *frequency_recurrence_factor* est de **type int**, avec **1** comme valeur par défaut.  
   
-`[ @frequency_subday = ] frequency_subday` Fréquence de replanification au cours de la période définie. *frequency_subday* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_subday = ] frequency_subday` Fréquence de replanification au cours de la période définie. *frequency_subday* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -171,15 +171,15 @@ sp_addpullsubscription_agent [ @publisher = ] 'publisher'
 |**4**|Minute|  
 |**8**|Heure|  
   
-`[ @frequency_subday_interval = ] frequency_subday_interval` Intervalle de *frequency_subday*. *frequency_subday_interval* est de **type int**, avec **1**comme valeur par défaut.  
+`[ @frequency_subday_interval = ] frequency_subday_interval` Intervalle de *frequency_subday*. *frequency_subday_interval* est de **type int**, avec **1** comme valeur par défaut.  
   
-`[ @active_start_time_of_day = ] active_start_time_of_day` Heure de la journée à laquelle le Agent de distribution est planifié pour la première fois, au format HHMMSS. *active_start_time_of_day* est de **type int**, avec **0**comme valeur par défaut.  
+`[ @active_start_time_of_day = ] active_start_time_of_day` Heure de la journée à laquelle le Agent de distribution est planifié pour la première fois, au format HHMMSS. *active_start_time_of_day* est de **type int**, avec **0** comme valeur par défaut.  
   
-`[ @active_end_time_of_day = ] active_end_time_of_day` Heure de la journée à laquelle le Agent de distribution cesse d’être planifié, au format HHMMSS. *active_end_time_of_day* est de **type int**, avec **0**comme valeur par défaut.  
+`[ @active_end_time_of_day = ] active_end_time_of_day` Heure de la journée à laquelle le Agent de distribution cesse d’être planifié, au format HHMMSS. *active_end_time_of_day* est de **type int**, avec **0** comme valeur par défaut.  
   
-`[ @active_start_date = ] active_start_date` Date à laquelle le Agent de distribution est planifié pour la première fois, au format AAAAMMJJ. *active_start_date* est de **type int**, avec **0**comme valeur par défaut.  
+`[ @active_start_date = ] active_start_date` Date à laquelle le Agent de distribution est planifié pour la première fois, au format AAAAMMJJ. *active_start_date* est de **type int**, avec **0** comme valeur par défaut.  
   
-`[ @active_end_date = ] active_end_date` Date à laquelle le Agent de distribution cesse d’être planifié, au format AAAAMMJJ. *active_end_date* est de **type int**, avec **0**comme valeur par défaut.  
+`[ @active_end_date = ] active_end_date` Date à laquelle le Agent de distribution cesse d’être planifié, au format AAAAMMJJ. *active_end_date* est de **type int**, avec **0** comme valeur par défaut.  
   
 `[ @distribution_jobid = ] _distribution_jobidOUTPUT` ID de la Agent de distribution pour ce travail. *distribution_jobid* est de **type Binary (16)**, avec NULL comme valeur par défaut, et il s’agit d’un paramètre de sortie.  
   
@@ -201,7 +201,7 @@ sp_addpullsubscription_agent [ @publisher = ] 'publisher'
   
 `[ @use_ftp = ] 'use_ftp'` Spécifie l’utilisation de FTP au lieu du protocole normal pour récupérer des instantanés. *use_ftp* est de type **nvarchar (5)**, avec false comme valeur par défaut.  
   
-`[ @publication_type = ] publication_type` Spécifie le type de réplication de la publication. *publication_type* est de **type tinyint** , avec **0**comme valeur par défaut. Si la **valeur est 0**, la publication est un type de transaction. Si la variable est **1**, la publication est de type instantané. Si la condition est **2**, la publication est de type fusion.  
+`[ @publication_type = ] publication_type` Spécifie le type de réplication de la publication. *publication_type* est de **type tinyint** , avec **0** comme valeur par défaut. Si la **valeur est 0**, la publication est un type de transaction. Si la variable est **1**, la publication est de type instantané. Si la condition est **2**, la publication est de type fusion.  
   
 `[ @dts_package_name = ] 'dts_package_name'` Spécifie le nom du package DTS. *dts_package_name* est de **type sysname** , avec NULL comme valeur par défaut. Par exemple, pour spécifier un package nommé `DTSPub_Package`, le paramètre est le suivant : `@dts_package_name = N'DTSPub_Package'`.  
   
@@ -210,7 +210,7 @@ sp_addpullsubscription_agent [ @publisher = ] 'publisher'
 > [!NOTE]  
 >  Vous devez spécifier un mot de passe si *dts_package_name* est spécifié.  
   
-`[ @dts_package_location = ] 'dts_package_location'` Spécifie l’emplacement du package. *dts_package_location* est de type **nvarchar (12)**, avec l' **abonné**comme valeur par défaut. L’emplacement du package peut être **Distributor** ou **Subscriber**.  
+`[ @dts_package_location = ] 'dts_package_location'` Spécifie l’emplacement du package. *dts_package_location* est de type **nvarchar (12)**, avec l' **abonné** comme valeur par défaut. L’emplacement du package peut être **Distributor** ou **Subscriber**.  
   
 `[ @reserved = ] 'reserved'` [!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]  
   

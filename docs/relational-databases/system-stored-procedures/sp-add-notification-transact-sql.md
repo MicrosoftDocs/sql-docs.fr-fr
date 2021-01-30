@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_add_notification_TSQL
 - sp_add_notification
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 0525e0a2-ed0b-4e69-8a4c-a9e3e3622fbd
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 0c009cd32cf3fdd92fbb638a00d5f1f4a024a1b8
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f09a5638e55ee6bd8e0dfd6e07defc92b0ed365d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88493532"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208006"
 ---
 # <a name="sp_add_notification-transact-sql"></a>sp_add_notification (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -43,7 +43,7 @@ sp_add_notification [ @alert_name = ] 'alert' ,
 ## <a name="arguments"></a>Arguments  
 `[ @alert_name = ] 'alert'` Alerte pour cette notification. *alerte* est de **type sysname**, sans valeur par défaut.  
   
-`[ @operator_name = ] 'operator'` Opérateur à notifier lorsque l’alerte se produit. l' *opérateur* est de **type sysname**et n’a pas de valeur par défaut.  
+`[ @operator_name = ] 'operator'` Opérateur à notifier lorsque l’alerte se produit. l' *opérateur* est de **type sysname** et n’a pas de valeur par défaut.  
   
 `[ @notification_method = ] notification_method` Méthode par laquelle l’opérateur est notifié. *notification_method* est de **type tinyint**, sans valeur par défaut. *notification_method* peut être une ou plusieurs de ces valeurs associées à un opérateur logique **or** .  
   

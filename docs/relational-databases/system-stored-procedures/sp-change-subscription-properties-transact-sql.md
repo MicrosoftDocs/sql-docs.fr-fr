@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_change_subscription_properties_TSQL
 - sp_change_subscription_properties
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: cf8137f9-f346-4aa1-ae35-91a2d3c16f17
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: ad4761fdbac615ad453741a0b01d410ca3b5d572
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: ed6615b10487744ae5ac5c0775627bea97e29c66
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89528705"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208298"
 ---
 # <a name="sp_change_subscription_properties-transact-sql"></a>sp_change_subscription_properties (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Met à jour les informations pour les abonnements par extraction de données (pull). Cette procédure stockée est exécutée sur la base de données d'abonnement de l'Abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -53,13 +53,13 @@ sp_change_subscription_properties [ @publisher = ] 'publisher'
   
 `[ @value = ] 'value'` Nouvelle valeur de la propriété. la *valeur* est de type **nvarchar (1000)**, sans valeur par défaut.  
   
-`[ @publication_type = ] publication_type` Spécifie le type de réplication de la publication. *publication_type* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @publication_type = ] publication_type` Spécifie le type de réplication de la publication. *publication_type* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Type de publication|  
 |-----------|----------------------|  
 |**0**|Transactionnelle|  
 |**1**|Instantané|  
-|**2**|Fusionner (Merge)|  
+|**2**|Fusionner|  
 |NULL (par défaut)|La réplication détermine le type de publication. La procédure stockée devant consulter plusieurs tables, cette option est plus lente que lorsque le type de publication exact est fourni.|  
   
  Le tableau ci-dessous décrit les propriétés des articles et les valeurs de ces propriétés.  

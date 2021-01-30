@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLColAttribute
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 8c45c598-cb01-4789-a571-e93619a18ed9
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 43980caf7a592284aba87d57725c30ae9fe8e949
-ms.sourcegitcommit: e40e75055c1435c5e3f9b6e3246be55526807b4c
+ms.openlocfilehash: ce0bd87f2a4e2a9306bb5fa94add7fb1ee583dfa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98151244"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208506"
 ---
 # <a name="sqlcolattribute-function"></a>Fonction SQLColAttribute
 **Conformité**  

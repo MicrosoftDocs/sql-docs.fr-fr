@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - fn_get_sql
 - sys.fn_get_sql_TSQL
@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: d5fe49b5-0813-48f2-9efb-9187716b2fd4
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 4b3e28e4c66d45f28c6239431e8e6d5440d5d4a0
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: aee9ac3d8d75081ad3474f215d6bc289580e2da0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093819"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206054"
 ---
 # <a name="sysfn_get_sql-transact-sql"></a>sys.fn_get_sql (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "98093819"
   
  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addsubscriber_schedule_TSQL
 - sp_addsubscriber_schedule
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: a6225033-5c3b-452f-ae52-79890a3590ed
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 9f62a88f7bc1bd3cf60c2d15fe71c3d1b6e571ff
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: e95e55157e4ab8f96fd1b715b08c2c2e377cf8e3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89536786"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207069"
 ---
 # <a name="sp_addsubscriber_schedule-transact-sql"></a>sp_addsubscriber_schedule (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Ajoute une planification de l'Agent de distribution et de l'Agent de fusion. Cette procédure stockée est exécutée sur n'importe quelle base de données du serveur de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -59,7 +59,7 @@ sp_addsubscriber_schedule [ @subscriber = ] 'subscriber'
 |**0** (valeur par défaut)|Agent de distribution|  
 |**1**|Agent de fusion|  
   
-`[ @frequency_type = ] frequency_type` Fréquence de planification de l’Agent de distribution. *frequency_type* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_type = ] frequency_type` Fréquence de planification de l’Agent de distribution. *frequency_type* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -72,9 +72,9 @@ sp_addsubscriber_schedule [ @subscriber = ] 'subscriber'
 |**64** (valeur par défaut)|Démarrage automatique|  
 |**128**|Périodique|  
   
-`[ @frequency_interval = ] frequency_interval` Valeur à appliquer à la fréquence définie par *frequency_type*. *frequency_interval* est de **type int**, avec **1**comme valeur par défaut.  
+`[ @frequency_interval = ] frequency_interval` Valeur à appliquer à la fréquence définie par *frequency_type*. *frequency_interval* est de **type int**, avec **1** comme valeur par défaut.  
   
-`[ @frequency_relative_interval = ] frequency_relative_interval` Date de la Agent de distribution. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuelle relative). *frequency_relative_interval* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_relative_interval = ] frequency_relative_interval` Date de la Agent de distribution. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuelle relative). *frequency_relative_interval* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -84,9 +84,9 @@ sp_addsubscriber_schedule [ @subscriber = ] 'subscriber'
 |**8**|Quatrième|  
 |**16**|Dernier|  
   
-`[ @frequency_recurrence_factor = ] frequency_recurrence_factor` Facteur de récurrence utilisé par *frequency_type*. *frequency_recurrence_factor* est de **type int**, avec **0**comme valeur par défaut.  
+`[ @frequency_recurrence_factor = ] frequency_recurrence_factor` Facteur de récurrence utilisé par *frequency_type*. *frequency_recurrence_factor* est de **type int**, avec **0** comme valeur par défaut.  
   
-`[ @frequency_subday = ] frequency_subday` Fréquence de replanification au cours de la période définie. *frequency_subday* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_subday = ] frequency_subday` Fréquence de replanification au cours de la période définie. *frequency_subday* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -95,13 +95,13 @@ sp_addsubscriber_schedule [ @subscriber = ] 'subscriber'
 |**4** (par défaut)|Minute|  
 |**8**|Heure|  
   
-`[ @frequency_subday_interval = ] frequency_subday_interval` Intervalle de *frequency_subday*. *frequency_subday_interval* est de **type int**, avec **5**comme valeur par défaut.  
+`[ @frequency_subday_interval = ] frequency_subday_interval` Intervalle de *frequency_subday*. *frequency_subday_interval* est de **type int**, avec **5** comme valeur par défaut.  
   
-`[ @active_start_time_of_day = ] active_start_time_of_day` Heure de la journée à laquelle le Agent de distribution est planifié pour la première fois, au format HHMMSS. *active_start_time_of_day* est de **type int**, avec **0**comme valeur par défaut.  
+`[ @active_start_time_of_day = ] active_start_time_of_day` Heure de la journée à laquelle le Agent de distribution est planifié pour la première fois, au format HHMMSS. *active_start_time_of_day* est de **type int**, avec **0** comme valeur par défaut.  
   
-`[ @active_end_time_of_day = ] active_end_time_of_day` Heure de la journée à laquelle le Agent de distribution cesse d’être planifié, au format HHMMSS. *active_end_time_of_day*est de **type int**, avec 235959 comme valeur par défaut, ce qui signifie 11:59:59 P.M. mesurée sur une horloge de 24 heures.  
+`[ @active_end_time_of_day = ] active_end_time_of_day` Heure de la journée à laquelle le Agent de distribution cesse d’être planifié, au format HHMMSS. *active_end_time_of_day* est de **type int**, avec 235959 comme valeur par défaut, ce qui signifie 11:59:59 P.M. mesurée sur une horloge de 24 heures.  
   
-`[ @active_start_date = ] active_start_date` Date à laquelle le Agent de distribution est planifié pour la première fois, au format AAAAMMJJ. *active_start_date* est de **type int**, avec **0**comme valeur par défaut.  
+`[ @active_start_date = ] active_start_date` Date à laquelle le Agent de distribution est planifié pour la première fois, au format AAAAMMJJ. *active_start_date* est de **type int**, avec **0** comme valeur par défaut.  
   
 `[ @active_end_date = ] active_end_date` Date à laquelle le Agent de distribution cesse d’être planifié, au format AAAAMMJJ. *active_end_date* est de **type int**, avec 99991231 comme valeur par défaut, ce qui correspond au 31 décembre 9999.  
   

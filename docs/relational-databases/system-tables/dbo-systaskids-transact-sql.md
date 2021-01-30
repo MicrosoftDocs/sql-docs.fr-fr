@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - systaskids_TSQL
 - dbo.systaskids
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 45c56d89-4160-4d84-80bf-a7a05488792d
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 1e98a4a8a7e41b584fa9a397aa2aa98906d45bd1
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 56e60ac3644eb9523b082a0f0665fbefbe99da60
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093760"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207248"
 ---
 # <a name="dbosystaskids-transact-sql"></a>dbo.systaskids (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

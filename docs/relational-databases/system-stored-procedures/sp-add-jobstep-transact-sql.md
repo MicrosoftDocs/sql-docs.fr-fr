@@ -5,7 +5,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_add_jobstep_TSQL
 - sp_add_jobstep
@@ -16,12 +16,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: ''
 ms.date: 03/15/2017
-ms.openlocfilehash: 8e4b24e5fcab13083c06f53868f462c3b45cc497
-ms.sourcegitcommit: 968969b62bc158b9843aba5034c9d913519bc4a7
+ms.openlocfilehash: 93d4818a1cffc14452bdf25bab8be6e1fc9a1a50
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91753801"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206753"
 ---
 # <a name="sp_add_jobstep-transact-sql"></a>sp_add_jobstep (Transact-SQL)
 
@@ -106,9 +106,9 @@ Pour plus d’informations sur ces jetons et la mise à jour de vos étapes de t
 
 `[ @additional_parameters = ] 'parameters'`[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)] *Parameters* est de type **ntext**, avec NULL comme valeur par défaut.
 
-`[ @cmdexec_success_code = ] code` La valeur retournée par une commande de sous-système **CmdExec** pour indiquer que la *commande* a été exécutée avec succès. *code* est de **type int**, avec **0**comme valeur par défaut.
+`[ @cmdexec_success_code = ] code` La valeur retournée par une commande de sous-système **CmdExec** pour indiquer que la *commande* a été exécutée avec succès. *code* est de **type int**, avec **0** comme valeur par défaut.
 
-`[ @on_success_action = ] success_action` Action à exécuter si l’étape se déroule correctement. *success_action* est de **type tinyint**et peut prendre l’une des valeurs suivantes.
+`[ @on_success_action = ] success_action` Action à exécuter si l’étape se déroule correctement. *success_action* est de **type tinyint** et peut prendre l’une des valeurs suivantes.
   
 |Valeur|Description (action)|  
 |-----------|----------------------------|  
@@ -117,9 +117,9 @@ Pour plus d’informations sur ces jetons et la mise à jour de vos étapes de t
 |**3**|Passez à l'étape suivante|  
 |**4**|Aller à l’étape *on_success_step_id*|  
 
-`[ @on_success_step_id = ] success_step_id` ID de l’étape du travail à exécuter si l’étape se déroule correctement et que *success_action* a la valeur **4**. *success_step_id* est de **type int**, avec **0**comme valeur par défaut.
+`[ @on_success_step_id = ] success_step_id` ID de l’étape du travail à exécuter si l’étape se déroule correctement et que *success_action* a la valeur **4**. *success_step_id* est de **type int**, avec **0** comme valeur par défaut.
 
-`[ @on_fail_action = ] fail_action` Action à exécuter si l’étape échoue. *fail_action* est de **type tinyint**et peut prendre l’une des valeurs suivantes.
+`[ @on_fail_action = ] fail_action` Action à exécuter si l’étape échoue. *fail_action* est de **type tinyint** et peut prendre l’une des valeurs suivantes.
 
 |Valeur|Description (action)|  
 |-----------|----------------------------|  
@@ -128,7 +128,7 @@ Pour plus d’informations sur ces jetons et la mise à jour de vos étapes de t
 |**3**|Passez à l'étape suivante|  
 |**4**|Aller à l’étape *on_fail_step_id*|  
 
-`[ @on_fail_step_id = ] fail_step_id` ID de l’étape de ce travail à exécuter si l’étape échoue et *fail_action* a la valeur **4**. *fail_step_id* est de **type int**, avec **0**comme valeur par défaut.  
+`[ @on_fail_step_id = ] fail_step_id` ID de l’étape de ce travail à exécuter si l’étape échoue et *fail_action* a la valeur **4**. *fail_step_id* est de **type int**, avec **0** comme valeur par défaut.  
 
 `[ @server = ] 'server'`[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)] *Server* est de type **nvarchar (30)**, avec NULL comme valeur par défaut.  
 
@@ -136,15 +136,15 @@ Pour plus d’informations sur ces jetons et la mise à jour de vos étapes de t
 
 `[ @database_user_name = ] 'user'` Nom du compte d’utilisateur à utiliser lors de l’exécution d’une [!INCLUDE[tsql](../../includes/tsql-md.md)] étape. *User* est de **type sysname**, avec NULL comme valeur par défaut. Lorsque *User* a la valeur null, l’étape s’exécute dans le contexte utilisateur du propriétaire de la tâche sur la *base de données*.  L'Agent SQL Server inclut ce paramètre uniquement si le propriétaire du travail est un sysadmin SQL Server. Dans ce cas, l'étape Transact-SQL donnée est exécutée dans le contexte du nom d'utilisateur SQL Server spécifié. Si le propriétaire du travail n’est pas un SQL Server sysadmin, l’étape Transact-SQL est toujours exécutée dans le contexte de la connexion qui détient ce travail, et le @database_user_name paramètre est ignoré.  
 
-`[ @retry_attempts = ] retry_attempts` Nombre de nouvelles tentatives à utiliser en cas d’échec de cette étape. *retry_attempts* est de **type int**, avec **0**comme valeur par défaut, qui n’indique aucune nouvelle tentative.  
+`[ @retry_attempts = ] retry_attempts` Nombre de nouvelles tentatives à utiliser en cas d’échec de cette étape. *retry_attempts* est de **type int**, avec **0** comme valeur par défaut, qui n’indique aucune nouvelle tentative.  
 
-`[ @retry_interval = ] retry_interval` Durée, en minutes, entre chaque tentative. *retry_interval* est de **type int**, avec **0**comme valeur par défaut, qui indique un intervalle de **0**minute.  
+`[ @retry_interval = ] retry_interval` Durée, en minutes, entre chaque tentative. *retry_interval* est de **type int**, avec **0** comme valeur par défaut, qui indique un intervalle de **0** minute.  
 
 `[ @os_run_priority = ] run_priority` Réservé.
 
 `[ @output_file_name = ] 'file_name'` Nom du fichier dans lequel la sortie de cette étape est enregistrée. *file_name* est de type **nvarchar (200)**, avec NULL comme valeur par défaut. *file_name* pouvez inclure un ou plusieurs des jetons listés sous *Command*. Ce paramètre est valide uniquement avec les commandes qui s’exécutent sur les sous [!INCLUDE[tsql](../../includes/tsql-md.md)] -systèmes, **CmdExec**, **PowerShell**, [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] ou [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] .  
 
-`[ @flags = ] flags` Est une option qui contrôle le comportement. *Flags* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @flags = ] flags` Est une option qui contrôle le comportement. *Flags* est de **type int** et peut prendre l’une des valeurs suivantes.  
 
 |Valeur|Description|  
 |-----------|-----------------|  

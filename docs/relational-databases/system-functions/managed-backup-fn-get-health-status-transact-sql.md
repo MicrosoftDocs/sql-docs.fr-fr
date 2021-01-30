@@ -1,13 +1,13 @@
 ---
-description: managed_backup. fn_get_health_status (Transact-SQL)
-title: managed_backup. fn_get_health_status (Transact-SQL) | Microsoft Docs
+description: managed_backup.fn_get_health_status managed_backup (Transact-SQL)
+title: managed_backup managed_backup.fn_get_health_status (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - fn_get_health_status_TSQL
 - smart_admin.fn_get_health_status_TSQL
@@ -21,14 +21,14 @@ helpviewer_keywords:
 ms.assetid: b376711d-444a-4b5e-b483-8df323b4e31f
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 4aa10efc95af42c7793fb37b49a72061353b0ee0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b139114cb7be4094c652f1fbf69313d4f7f1f2db
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88419553"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207398"
 ---
-# <a name="managed_backupfn_get_health_status-transact-sql"></a>managed_backup. fn_get_health_status (Transact-SQL)
+# <a name="managed_backupfn_get_health_status-transact-sql"></a>managed_backup.fn_get_health_status managed_backup (Transact-SQL)
 [!INCLUDE [sqlserver2016](../../includes/applies-to-version/sqlserver2016.md)]
 
   Retourne une table de 0, d'une ou plusieurs lignes de nombre agrégé des erreurs signalées par des Événements étendus pour une période donnée.  
@@ -63,7 +63,7 @@ managed_backup.fn_get_health_status([@begin_time = ] 'time_1' , [ @end_time = ] 
 |number_of_backup_loops|int|Nombre de fois où l'agent de sauvegarde analyse toutes les bases de données configurées avec la [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)].|  
 |number_of_retention_loops|int|Nombre de fois où les bases de données sont analysées pour évaluer la période de rétention définie.|  
   
-## <a name="best-practices"></a>Meilleures pratiques  
+## <a name="best-practices"></a>Bonnes pratiques  
  Ces nombres agrégés peuvent servir à surveiller l'intégrité du système. Par exemple, si la colonne number_ of_retention_loops indique 0 pour 30 minutes, il est possible que la gestion de la rétention soit trop longue, ou ne fonctionne pas correctement. Les colonnes d’erreur non null peuvent indiquer des problèmes et les journaux des événements étendus doivent être vérifiés pour en savoir plus sur les problèmes éventuels. Vous pouvez également utiliser la procédure stockée **managed_backup. sp_get_backup_diagnostics** pour obtenir la liste des événements étendus afin de trouver les détails de l’erreur.  
   
 ## <a name="security"></a>Sécurité  

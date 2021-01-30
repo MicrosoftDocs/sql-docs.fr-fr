@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: 166426e1-555d-4ce4-bae3-248dcac56883
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 546b524bced8719422ec94825094f268fcfa1d36
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: d27b090559a96e43afd038eae06bfa0c7462b3c1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092759"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208041"
 ---
 # <a name="system-trace-functions"></a>Fonctions de suivi système
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

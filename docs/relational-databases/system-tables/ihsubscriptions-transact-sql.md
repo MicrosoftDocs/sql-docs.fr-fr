@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - IHsubscriptions_TSQL
 - IHsubscriptions
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 9ec21119-35f1-4e39-abaa-b2c790c485b1
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 163bf870e26fefc58181a5d3abcd28960195e2e5
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: ec5a436f6d8f07a3ab32c8d6a1f2015c026296ee
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097420"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205511"
 ---
 # <a name="ihsubscriptions-transact-sql"></a>IHsubscriptions (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

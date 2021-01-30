@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLCreateDataSource
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 76ee851a-dca9-40cc-8e9e-eb3f74e560ee
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: eb65e0906e7b69666dd04824f9c4d0819837d2b2
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: feca3e6c135e4dba441a20b1fa458f990b437fde
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461211"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206103"
 ---
 # <a name="sqlcreatedatasource-function"></a>SQLCreateDataSource, fonction
 **Conformité**  
@@ -54,9 +54,9 @@ BOOL SQLCreateDataSource(
  **SQLCreateDataSource** retourne la valeur true si la source de données est créée. Sinon, elle retourne FALSe.  
   
 ## <a name="diagnostics"></a>Diagnostics  
- Quand **SQLCreateDataSource** retourne false, une valeur * \* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs * \* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
+ Quand **SQLCreateDataSource** retourne false, une valeur *\* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs *\* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur|Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur générale du programme d’installation|Une erreur s’est produite pour laquelle aucune erreur d’installation spécifique n’a été rencontrée.|  
 |ODBC_ERROR_INVALID_HWND|Handle de fenêtre non valide|L’argument *HWND* n’était pas valide ou a la valeur null.|  
@@ -92,7 +92,7 @@ BOOL SQLCreateDataSource(
   
  La valeur par défaut de l’option **vérifier cette connexion** est true. Cette valeur par défaut s’applique si cette page de l’Assistant est activée ou non. Si l’utilisateur clique sur **OK** , la chaîne spécifiée dans la zone de texte et la valeur de l’option **vérifier cette connexion** sont mises en cache. (Si l’utilisateur clique sur le bouton **Fermer** ou sur **Annuler** , toutes les informations propres au pilote qui viennent d’être entrées sont perdues, car la chaîne spécifiée dans la zone de texte et la valeur de l’option **vérifier cette connexion** ne sont pas mises en cache.)  
   
- Si la **source de données fichier** a été sélectionnée dans la première page de l’Assistant, après qu’un pilote a été sélectionné et que les valeurs de mot clé ont été entrées dans la page avancé de l’Assistant, l’utilisateur est invité à entrer un nom de fichier. Cliquez sur **Parcourir** pour rechercher un nom de fichier. dans ce cas, le répertoire par défaut dans **la zone de recherche est** spécifié par une combinaison du chemin d’accès spécifié par CommonFileDir dans HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Windows\CurrentVersion et « ODBC\DataSources ». (Si CommonFileDir était « C:\Program Files\Common Files », le répertoire par défaut serait « C:\Program Files\Common Files\ODBC\Data Sources ».)  
+ Si la **source de données fichier** a été sélectionnée dans la première page de l’Assistant, après qu’un pilote a été sélectionné et que les valeurs de mot clé ont été entrées dans la page avancé de l’Assistant, l’utilisateur est invité à entrer un nom de fichier. Cliquez sur **Parcourir** pour rechercher un nom de fichier. dans ce cas, le répertoire par défaut dans **la zone de recherche est** spécifié par une combinaison du chemin d’accès spécifié par CommonFileDir dans HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion et « ODBC\DataSources ». (Si CommonFileDir était « C:\Program Files\Common Files », le répertoire par défaut serait « C:\Program Files\Common Files\ODBC\Data Sources ».)  
   
  Quand un nom de fichier a été entré et que l’utilisateur clique sur **suivant** , le nom de fichier entré est vérifié par rapport aux règles de dénomination de fichier standard du système d’exploitation. Si le nom de fichier n’est pas valide, un message d’erreur indique à l’utilisateur qu’un nom de fichier non valide a été entré. Une fois que l’utilisateur a confirmé la boîte de message, le focus est renvoyé à la page de l’Assistant dans laquelle le nom de fichier est entré. Si le nom de fichier est valide, une page de l’Assistant qui affiche les paires mot clé-valeur sélectionnées s’affiche pour la révision, comme indiqué dans l’illustration suivante.  
   

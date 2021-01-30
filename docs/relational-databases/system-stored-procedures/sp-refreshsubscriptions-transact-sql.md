@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_refreshsubscriptions
 - sp_refreshsubscriptions_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 6cb9b1ce-1ce7-43ab-9451-201f79ed1ffa
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: b66508f869a2ee2ab7e0a9cad80340e69c798202
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 47d3f8d8d4a5691a333251e96ccb7b74f05e387a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547431"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206049"
 ---
 # <a name="sp_refreshsubscriptions-transact-sql"></a>sp_refreshsubscriptions (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Ajoutez des abonnements à de nouveaux articles pour tous les abonnés existants à une publication avec mise à jour immédiate. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

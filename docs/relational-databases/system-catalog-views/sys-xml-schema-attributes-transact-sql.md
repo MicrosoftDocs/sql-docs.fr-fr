@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - xml_schema_attributes_TSQL
 - xml_schema_attributes
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: dd0c98aa-5e72-4df6-96d9-482786c8dbb1
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: cedfdf992f1dbec8eeff1ff7fa74a489b179d943
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 135d3d376c79f6ac6ab6c75fbad206777c71b5a5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095405"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206451"
 ---
 # <a name="sysxml_schema_attributes-transact-sql"></a>sys.xml_schema_attributes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

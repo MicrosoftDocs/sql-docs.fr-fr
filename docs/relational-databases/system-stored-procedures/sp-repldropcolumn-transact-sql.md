@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_repldropcolumn_TSQL
 - sp_repldropcolumn
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fdc1ec5f-f108-42b4-a2d8-f06a71913ab8
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: df9b2be3d6253bd3ba225d4cc444e705678109f3
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 6c5fdabf724c284e8a75244269321b92c81b46ea
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89534934"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206428"
 ---
 # <a name="sp_repldropcolumn-transact-sql"></a>sp_repldropcolumn (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "89534934"
 > [!IMPORTANT]
 >  Cette procédure stockée est déconseillée ; elle est essentiellement prise en charge pour des raisons de compatibilité descendante. Elle doit être utilisée uniquement avec les serveurs de publication [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssVersion2000](../../includes/ssversion2000-md.md)] et les [!INCLUDE[ssVersion2000](../../includes/ssversion2000-md.md)] abonnés de republication. Cette procédure ne doit pas être utilisée sur des colonnes avec des types de données qui ont été introduits dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] ou ultérieur.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -59,7 +59,7 @@ sp_repldropcolumn [ @source_object = ] 'source_object', [ @column = ] 'column'
   
 -   Si des procédures stockées personnalisées sont automatiquement régénérées, *schema_change_script* pouvez les utiliser pour supprimer ces procédures stockées personnalisées et les remplacer par des procédures stockées personnalisées définies par l’utilisateur qui prennent en charge le nouveau schéma.  
   
--   Si les procédures stockées personnalisées ne sont pas régénérées automatiquement, *schema_change_script*pouvez les utiliser pour régénérer ces procédures stockées ou pour créer des procédures stockées personnalisées définies par l’utilisateur.  
+-   Si les procédures stockées personnalisées ne sont pas régénérées automatiquement, *schema_change_script* pouvez les utiliser pour régénérer ces procédures stockées ou pour créer des procédures stockées personnalisées définies par l’utilisateur.  
   
  [ @force_invalidate_snapshot =] *force_invalidate_snapshot*  
  Active ou désactive la possibilité d'invalider un instantané. *force_invalidate_snapshot* est un bit, avec 1 comme valeur par défaut.  

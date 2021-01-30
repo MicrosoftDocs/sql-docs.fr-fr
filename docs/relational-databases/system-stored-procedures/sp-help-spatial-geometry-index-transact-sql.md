@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_help_spatial_geometry_index
 - sp_help_spatial_geometry_index_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: f1bcefb1-09c8-4b49-8c51-5d471065849f
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: e59df620f51de5a3e99ab759460c73eb517bd7cf
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+ms.openlocfilehash: af6ed2f873a79be59af9adcd40311ef02fc715dd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91810898"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207334"
 ---
 # <a name="sp_help_spatial_geometry_index-transact-sql"></a>sp_help_spatial_geometry_index (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -55,7 +55,7 @@ sp_help_spatial_geometry_index [ @tabname =] 'tabname'
  Les propriétés qui contiennent des valeurs NULL ne sont pas incluses dans le jeu de retour.  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant utilise `sp_help_spatial_geometry_index` pour étudier l’index spatial **SIndx_SpatialTable_geometry_col2** défini sur la table **geometry_col** pour l’exemple de requête donné dans ** \@ QS**. Cet exemple retourne uniquement les propriétés principales de l'index spécifié.  
+ L’exemple suivant utilise `sp_help_spatial_geometry_index` pour étudier l’index spatial **SIndx_SpatialTable_geometry_col2** défini sur la table **geometry_col** pour l’exemple de requête donné dans **\@ QS**. Cet exemple retourne uniquement les propriétés principales de l'index spécifié.  
   
 ```  
 declare @qs geometry  

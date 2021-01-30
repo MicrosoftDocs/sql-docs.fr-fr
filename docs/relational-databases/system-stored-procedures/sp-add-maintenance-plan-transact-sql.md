@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_add_maintenance_plan
 - sp_add_maintenance_plan_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 01ab1834-6260-47cb-a1b7-20722217b062
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: a26b25a4c6484363ede0435b58febf894f13481f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d24a6cae27d0baba9b88549e99fc7e477539f57d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88474587"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208015"
 ---
 # <a name="sp_add_maintenance_plan-transact-sql"></a>sp_add_maintenance_plan (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -48,7 +48,7 @@ sp_add_maintenance_plan [ @plan_name = ] 'plan_name' ,
 ## <a name="arguments"></a>Arguments  
 `[ @plan_name = ] 'plan_name'` Spécifie le nom du plan de maintenance à ajouter. *plan_name* est **de type varchar (128)**.  
   
- ** @plan_id = '** *plan_id* **'**  
+ **@plan_id = '** *plan_id* **'**  
  Spécifie l'identificateur du plan de maintenance. *plan_id* est de type **uniqueidentifier**.  
   
 ## <a name="return-code-values"></a>Codet de retour  

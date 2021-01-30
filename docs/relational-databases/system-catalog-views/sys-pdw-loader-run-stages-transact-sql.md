@@ -6,19 +6,19 @@ ms.date: 03/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: 255681e9-323c-42c0-a63c-1f05536efdd5
 author: ronortloff
 ms.author: rortloff
 monikerRange: '>= aps-pdw-2016'
-ms.openlocfilehash: ee8eb27964a7fc26d5af6c8f7a13293720ca7821
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b0c0c6507a512e6eb02440735f4a7a9c41217ef8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475150"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206393"
 ---
 # <a name="syspdw_loader_run_stages-transact-sql"></a>sys.pdw_loader_run_stages (Transact-SQL)
 [!INCLUDE [pdw](../../includes/applies-to-version/pdw.md)]

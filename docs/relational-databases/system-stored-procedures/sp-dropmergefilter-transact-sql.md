@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_dropmergefilter_TSQL
 - sp_dropmergefilter
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 798586d7-05f3-4a5e-bea8-a34b7b52d0fd
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 238ef7b0c8a6c56aff5a034f192dd48298cf0fa1
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 2e57a65a6ab74050b855721d41a6d7304691f55e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89536555"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208237"
 ---
 # <a name="sp_dropmergefilter-transact-sql"></a>sp_dropmergefilter (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Supprime un filtre de fusion. **sp_dropmergefilter** supprime toutes les colonnes de filtre de fusion définies dans le filtre de fusion à supprimer. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,17 +42,17 @@ sp_dropmergefilter [ @publication= ] 'publication', [ @article= ] 'article'     
 ## <a name="arguments"></a>Arguments  
 `[ @publication = ] 'publication'` Nom de la publication. *publication* est de **type sysname**, sans valeur par défaut.  
   
-`[ @article = ] 'article'` Nom de l’article. *article* est de **type sysname**et n’a pas de valeur par défaut.  
+`[ @article = ] 'article'` Nom de l’article. *article* est de **type sysname** et n’a pas de valeur par défaut.  
   
 `[ @filtername = ] 'filtername'` Nom du filtre à supprimer. *FilterName* est de **type sysname**, sans valeur par défaut.  
   
-`[ @force_invalidate_snapshot = ] force_invalidate_snapshot` Active ou désactive la possibilité d’invalider un instantané. *force_invalidate_snapshot* est un **bit**, avec **0**comme valeur par défaut.  
+`[ @force_invalidate_snapshot = ] force_invalidate_snapshot` Active ou désactive la possibilité d’invalider un instantané. *force_invalidate_snapshot* est un **bit**, avec **0** comme valeur par défaut.  
   
  **0** indique que les modifications apportées à l’article de fusion n’entraînent pas la non-validité de l’instantané.  
   
  **1** signifie que les modifications apportées à l’article de fusion peuvent entraîner la non-validité de l’instantané. Si tel est le cas, la valeur **1** accorde l’autorisation pour que le nouvel instantané se produise.  
   
-`[ @force_reinit_subscription = ] force_reinit_subscription` Active ou désactive la possibilité de marquer un abonnement comme non valide. *force_reinit_subscription* est un **bit**, avec **0**comme valeur par défaut.  
+`[ @force_reinit_subscription = ] force_reinit_subscription` Active ou désactive la possibilité de marquer un abonnement comme non valide. *force_reinit_subscription* est un **bit**, avec **0** comme valeur par défaut.  
   
  **0** indique que les modifications apportées au filtre d’article de fusion n’entraînent pas la non-validité des abonnements.  
   

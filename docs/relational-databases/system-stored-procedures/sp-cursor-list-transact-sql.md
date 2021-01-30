@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_cursor_list
 - sp_cursor_list_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 7187cfbe-d4d9-4cfa-a3bb-96a544c7c883
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: dca9473813bf8e4324f1b7de6fb1a30c38a21148
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 3a60d447d7072c6386faef08d1dd7398f906064d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89536634"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205188"
 ---
 # <a name="sp_cursor_list-transact-sql"></a>sp_cursor_list (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Indique les attributs des curseurs côté serveur actuellement ouverts pour la connexion.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

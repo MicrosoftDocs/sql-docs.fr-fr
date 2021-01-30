@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_dropmergepartition_TSQL
 - sp_dropmergepartition
@@ -17,19 +17,19 @@ ms.assetid: 1be511c1-79ff-4947-9379-78d83b7b8945
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 850130a686a114d2e7a8bafaea8b0133d40215cd
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c3c80582e40382d810820501515c8f11a1518f2c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472730"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205558"
 ---
 # <a name="sp_dropmergepartition-transact-sql"></a>sp_dropmergepartition (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
   Supprime une partition d'un filtre de lignes paramétré d'une publication. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication. Elle supprime également le travail d'instantané correspondant et les fichiers d'instantané de la partition.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,7 +50,7 @@ sp_dropmergepartition [ @publication = ] 'publication'
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  **sp_dropmergepartition** est utilisé dans la réplication de fusion.  
   
 ## <a name="permissions"></a>Autorisations  

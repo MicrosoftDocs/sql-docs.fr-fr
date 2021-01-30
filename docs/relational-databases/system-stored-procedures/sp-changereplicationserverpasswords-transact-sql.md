@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_changereplicationserverpasswords_TSQL
 - sp_changereplicationserverpasswords
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9333da96-3a1c-4adb-9a74-5dac9ce596df
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 0d0e07afbf3837768ac2b57e3dfaa7d0c8c0d0af
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e301e37f252a81cf4e7c2634f291bc61bc2979c1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88481469"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207047"
 ---
 # <a name="sp_changereplicationserverpasswords-transact-sql"></a>sp_changereplicationserverpasswords (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -49,12 +49,12 @@ sp_changereplicationserverpasswords [ @login_type = ] login_type
   
 `[ @login = ] 'login'` Nom du compte Windows ou de la [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] connexion en cours de modification. *login* est de type **nvarchar (257)**, sans valeur par défaut  
   
-`[ @password = ] 'password'` Nouveau mot de passe à stocker pour la *connexion*spécifiée. *Password* est de **type sysname**, sans valeur par défaut.  
+`[ @password = ] 'password'` Nouveau mot de passe à stocker pour la *connexion* spécifiée. *Password* est de **type sysname**, sans valeur par défaut.  
   
 > [!NOTE]  
 >  Après avoir modifié un mot de passe de réplication, vous devez arrêter puis redémarrer chaque Agent qui utilise ce mot de passe afin que les modifications apportées prennent effet.  
   
-`[ @server = ] 'server'` Connexion serveur pour laquelle le mot de passe stocké est en cours de modification. *Server* est de **type sysname**et peut prendre l’une des valeurs suivantes :  
+`[ @server = ] 'server'` Connexion serveur pour laquelle le mot de passe stocké est en cours de modification. *Server* est de **type sysname** et peut prendre l’une des valeurs suivantes :  
   
 |Valeur|Description|  
 |-----------|-----------------|  

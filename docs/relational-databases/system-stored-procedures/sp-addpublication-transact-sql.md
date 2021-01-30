@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addpublication_TSQL
 - sp_addpublication
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: c7167ed1-2b7e-4824-b82b-65f4667c4407
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 9aa65ff9b5b9c14441ac555d40788e92082f01c5
-ms.sourcegitcommit: 7791bd2ba339edc5cd2078a6537c8f6bfe72a19b
+ms.openlocfilehash: de6ba893e44d7bfddda4325cc15c1c4d3f875a0c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98564452"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206697"
 ---
 # <a name="sp_addpublication-transact-sql"></a>sp_addpublication (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Crée une publication d'instantané ou transactionnelle. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -317,7 +317,7 @@ sp_addpublication [ @publication = ] 'publication'
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  **sp_addpublication** est utilisé dans la réplication d’instantané et la réplication transactionnelle.  
   
  S’il existe plusieurs publications qui publient le même objet de base de données, seules les publications dont la valeur de *replicate_ddl* est **1** RÉPLIQUENT les instructions ALTER TABLE, ALTER VIEW, ALTER PROCEDURE, ALTER FUNCTION et ALTER TRIGGER DDL. Cependant, une instruction ALTER TABLE DROP COLUMN DDL sera répliquée par toutes les publications publiant la colonne supprimée.  

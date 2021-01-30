@@ -1,13 +1,13 @@
 ---
 description: sys.sp_cdc_generate_wrapper_function (Transact-SQL)
-title: sys. sp_cdc_generate_wrapper_function (Transact-SQL) | Microsoft Docs
+title: sys.sp_cdc_generate_wrapper_function (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_cdc_generate_wrapper_function_TSQL
 - sp_cdc_generate_wrapper_function
@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 85bc086d-8a4e-4949-a23b-bf53044b925c
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 069c0cb5eab377d0c2cd4bc92b68d7071f56681a
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 9f6dc9038b4f23b7e38e69555ceed06fab90ba92
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540473"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205973"
 ---
 # <a name="syssp_cdc_generate_wrapper_function-transact-sql"></a>sys.sp_cdc_generate_wrapper_function (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Génère des scripts qui permettent de créer des fonctions wrapper pour les fonctions de requête de capture de données modifiées disponibles dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. L'API prise en charge dans les wrappers générés permet de spécifier l'intervalle de requête en tant qu'intervalle datetime. La fonction peut ainsi être utilisée dans de nombreuses applications d'entreposage, y compris celles que développent les concepteurs de packages [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] qui utilisent la technologie de capture de données modifiées pour déterminer la charge incrémentielle.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
