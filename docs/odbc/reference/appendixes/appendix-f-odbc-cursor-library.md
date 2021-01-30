@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ODBC cursor library [ODBC], about cursor library
 - ODBC cursor library [ODBC]
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a03084df-4e48-48ef-917d-4a3fae48a605
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 325c7cdc5d2fb185ef3dbd2500a20230d90193bf
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 44fcba1e4c4b2b7f82c99c82399884d7c9bdad85
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88411425"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99212531"
 ---
 # <a name="appendix-f-odbc-cursor-library"></a>Annexe F : Bibliothèque de curseurs ODBC
 > [!IMPORTANT]  
@@ -45,6 +45,6 @@ ms.locfileid: "88411425"
   
 -   [Exemple de code de la bibliothèque de curseurs](../../../odbc/reference/appendixes/cursor-library-code-example.md)  
   
--   [Remarques relatives à l’implémentation](../../../odbc/reference/appendixes/implementation-notes.md)  
+-   [Notes d’implémentation](../../../odbc/reference/appendixes/implementation-notes.md)  
   
 -   [Codes d’erreur de la bibliothèque de curseurs ODBC](../../../odbc/reference/appendixes/odbc-cursor-library-error-codes.md)

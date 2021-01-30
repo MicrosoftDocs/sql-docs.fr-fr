@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_clr_properties
 - sys.dm_clr_properties_TSQL
@@ -21,12 +21,12 @@ ms.assetid: 220d062f-d117-46e7-a448-06fe48db8163
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 34dfbfbecf82df79520fc5a530bcb8c18c544c77
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c23c8d624a9670cdb309d43f645831b5e09fab5a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095270"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99212097"
 ---
 # <a name="sysdm_clr_properties-transact-sql"></a>sys.dm_clr_properties (Transact-SQL)
 [!INCLUDE [sql-asdbmi-pdw](../../includes/applies-to-version/sql-asdbmi-pdw.md)]

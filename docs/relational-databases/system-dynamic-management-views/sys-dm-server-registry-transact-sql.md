@@ -6,7 +6,7 @@ ms.date: 06/10/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_server_registry_TSQL
 - sys.dm_server_registry
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 9b3e0c74-2e99-4996-a383-104d51831e97
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 909aaa820947285da692e43a178e7580a76adf58
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f90ca3117777081e11c1217c38d01f8fdf6a18ae
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096445"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203327"
 ---
 # <a name="sysdm_server_registry-transact-sql"></a>sys.dm_server_registry (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

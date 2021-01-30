@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLDriverToDataSource
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 0de28eb5-8aa9-43e4-a87f-7dbcafe800dc
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: da885e3be81a7a7de04a58bbb92725317477e80e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2ea0697dcedcf27992e771382b47a4b6713b1535
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461140"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211905"
 ---
 # <a name="sqldrivertodatasource-function"></a>SQLDriverToDataSource, fonction
 **SQLDriverToDataSource** prend en charge les traductions pour les pilotes ODBC. Cette fonction n’est pas appelée par les applications compatibles ODBC ; les applications demandent une traduction par le biais de **SQLSetConnectAttr**. Le pilote associé au *ConnectionHandle* spécifié dans **SQLSETCONNECTATTR** appelle la DLL spécifiée pour effectuer des traductions de toutes les données circulant du pilote à la source de données. Une DLL de traduction par défaut peut être spécifiée dans le fichier d’initialisation ODBC.  
@@ -97,7 +97,7 @@ BOOL SQLDriverToDataSource(
   
  Si la même mémoire tampon est spécifiée pour *rgbValueIn* et *rgbValueOut*, la traduction des données dans la mémoire tampon est effectuée sur place.  
   
- Bien que *cbValueIn*, *cbValueOutMax*et *pcbValueOut* soient du type SDWORD, **SQLDriverToDataSource** ne prend pas nécessairement en charge les pointeurs énormes.  
+ Bien que *cbValueIn*, *cbValueOutMax* et *pcbValueOut* soient du type SDWORD, **SQLDriverToDataSource** ne prend pas nécessairement en charge les pointeurs énormes.  
   
  Si **SQLDriverToDataSource** retourne la valeur false, la troncation des données s’est peut-être produite lors de la traduction. Si *pcbValueOut* (nombre d’octets disponibles à retourner dans la mémoire tampon de sortie) est supérieur à *cbValueOutMax* (longueur de la mémoire tampon de sortie), la troncation s’est produite. Le pilote doit déterminer si la troncation est acceptable ou non. Si la troncation n’a pas eu lieu, **SQLDriverToDataSource** a retourné false en raison d’une autre erreur. Dans les deux cas, un message d’erreur spécifique est retourné dans *szErrorMsg*.  
   

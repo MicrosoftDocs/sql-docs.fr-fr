@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - compatibility [ODBC], SQLGetInfo
 - backward compatibility [ODBC], SQLGetInfo
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 57326f57-daba-46b6-b0be-6c97213b9ef1
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: cff18a23c7d8c4526fc86904d75375ed5aaaf5a7
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1dc92c6bd409829da13395b1286a5762e4504ced
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88471230"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202744"
 ---
 # <a name="sqlgetinfo-support"></a>SQLGetInfo, prise en charge
 Quand ODBC 2. *x* appelle **SQLGetInfo** sur un pilote ODBC 3 *. x* , les arguments d' *infotype* dans le tableau suivant doivent être pris en charge.  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSlogreader_history_TSQL
 - MSlogreader_history
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 2e399fa1-3591-4c1c-96b7-7964fe82c7c4
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: e6e3c54c859a542f5992a0e2199099e6b93bb27c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 71963149d6ad8be972acd6a2da3380212eb8548a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096258"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99212310"
 ---
 # <a name="mslogreader_history-transact-sql"></a>MSlogreader_history (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

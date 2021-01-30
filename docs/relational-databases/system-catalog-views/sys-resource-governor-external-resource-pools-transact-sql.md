@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.resource_governor_external_resource_pools
 - sys.resource_governor_external_resource_pools_TSQL
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 75063e36-a91b-496f-9936-88f3d57bd447
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 49ea05c98551b8faa06b981d5a5b5b4c37e743fc
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 3ed2b14aab2e7eef20d1998848eed9c78864f682
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98169299"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203418"
 ---
 # <a name="sysresource_governor_external_resource_pools-transact-sql"></a>sys.resource_governor_external_resource_pools (Transact-SQL)
 [!INCLUDE [sqlserver2016](../../includes/applies-to-version/sqlserver2016.md)]

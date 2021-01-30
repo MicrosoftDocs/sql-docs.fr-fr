@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addsubscriber
 - sp_addsubscriber_TSQL
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b8a584ea-2a26-4936-965b-b84f026e39c0
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 9e48362fd0c671f3b7f9427c6a1ad291c175fa71
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 9839d1daa3316fa8cb47af0ed2e362eba194f414
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546229"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99212005"
 ---
 # <a name="sp_addsubscriber-transact-sql"></a>sp_addsubscriber (Transact-SQL)
 [!INCLUDE[sql-asdb](../../includes/applies-to-version/sql-asdb.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "89546229"
 > [!IMPORTANT]  
 >  Cette procédure stockée est désormais déconseillée. Vous n'avez donc plus besoin d'enregistrer un Abonné de façon explicite auprès du serveur de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -63,7 +63,7 @@ sp_addsubscriber [ @subscriber = ] 'subscriber'
 ## <a name="arguments"></a>Arguments  
 `[ @subscriber = ] 'subscriber'` Nom du serveur à ajouter en tant qu’abonné valide aux publications de ce serveur. *Subscriber* est de **type sysname**, sans valeur par défaut.  
   
-`[ @type = ] type` Type de l’abonné. *type* est de type **tinyint**et peut prendre l’une des valeurs suivantes.  
+`[ @type = ] type` Type de l’abonné. *type* est de type **tinyint** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -100,7 +100,7 @@ sp_addsubscriber [ @subscriber = ] 'subscriber'
 > [!NOTE]  
 >  Lorsqu'une valeur est spécifiée, elle sert alors de valeur par défaut au moment de la création des abonnements pour cet Abonné et un message d'avertissement s'affiche.  
   
-`[ @frequency_type = ] frequency_type` Fréquence de planification de l’agent de réplication. *frequency_type* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_type = ] frequency_type` Fréquence de planification de l’agent de réplication. *frequency_type* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -121,7 +121,7 @@ sp_addsubscriber [ @subscriber = ] 'subscriber'
 > [!NOTE]  
 >  Ce paramètre est déconseillé et n'est maintenu que dans un but de compatibilité ascendante avec les scripts déjà établis. La propriété est maintenant spécifiée sur une base par abonnement lors de l’exécution de [sp_addsubscription](../../relational-databases/system-stored-procedures/sp-addsubscription-transact-sql.md). Lorsqu'une valeur est spécifiée, elle sert alors de valeur par défaut au moment de la création des abonnements pour cet Abonné et un message d'avertissement s'affiche.  
   
-`[ @frequency_relative_interval = ] frequency_relative_interval` Date de l’agent de réplication. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuelle relative). *frequency_relative_interval* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_relative_interval = ] frequency_relative_interval` Date de l’agent de réplication. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuelle relative). *frequency_relative_interval* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -134,12 +134,12 @@ sp_addsubscriber [ @subscriber = ] 'subscriber'
 > [!NOTE]  
 >  Ce paramètre est déconseillé et n'est maintenu que dans un but de compatibilité ascendante avec les scripts déjà établis. La propriété est maintenant spécifiée sur une base par abonnement lors de l’exécution de [sp_addsubscription](../../relational-databases/system-stored-procedures/sp-addsubscription-transact-sql.md). Lorsqu'une valeur est spécifiée, elle sert alors de valeur par défaut au moment de la création des abonnements pour cet Abonné et un message d'avertissement s'affiche.  
   
-`[ @frequency_recurrence_factor = ] frequency_recurrence_factor` Facteur de récurrence utilisé par *frequency_type*. *frequency_recurrence_factor* est de **type int**, avec **0**comme valeur par défaut.  
+`[ @frequency_recurrence_factor = ] frequency_recurrence_factor` Facteur de récurrence utilisé par *frequency_type*. *frequency_recurrence_factor* est de **type int**, avec **0** comme valeur par défaut.  
   
 > [!NOTE]  
 >  Ce paramètre est déconseillé et n'est maintenu que dans un but de compatibilité ascendante avec les scripts déjà établis. La propriété est maintenant spécifiée sur une base par abonnement lors de l’exécution de [sp_addsubscription](../../relational-databases/system-stored-procedures/sp-addsubscription-transact-sql.md). Lorsqu'une valeur est spécifiée, elle sert alors de valeur par défaut au moment de la création des abonnements pour cet Abonné et un message d'avertissement s'affiche.  
   
-`[ @frequency_subday = ] frequency_subday` Fréquence de replanification au cours de la période définie. *frequency_subday* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_subday = ] frequency_subday` Fréquence de replanification au cours de la période définie. *frequency_subday* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -151,17 +151,17 @@ sp_addsubscriber [ @subscriber = ] 'subscriber'
 > [!NOTE]  
 >  Ce paramètre est déconseillé et n'est maintenu que dans un but de compatibilité ascendante avec les scripts déjà établis. La propriété est maintenant spécifiée sur une base par abonnement lors de l’exécution de [sp_addsubscription](../../relational-databases/system-stored-procedures/sp-addsubscription-transact-sql.md). Lorsqu'une valeur est spécifiée, elle sert alors de valeur par défaut au moment de la création des abonnements pour cet Abonné et un message d'avertissement s'affiche.  
   
-`[ @frequency_subday_interval = ] frequency_subday_interval` Intervalle de *frequency_subday*. *frequency_subday_interval* est de **type int**, avec **5**comme valeur par défaut.  
+`[ @frequency_subday_interval = ] frequency_subday_interval` Intervalle de *frequency_subday*. *frequency_subday_interval* est de **type int**, avec **5** comme valeur par défaut.  
   
 > [!NOTE]  
 >  Ce paramètre est déconseillé et n'est maintenu que dans un but de compatibilité ascendante avec les scripts déjà établis. La propriété est maintenant spécifiée sur une base par abonnement lors de l’exécution de [sp_addsubscription](../../relational-databases/system-stored-procedures/sp-addsubscription-transact-sql.md). Lorsqu'une valeur est spécifiée, elle sert alors de valeur par défaut au moment de la création des abonnements pour cet Abonné et un message d'avertissement s'affiche.  
   
-`[ @active_start_time_of_day = ] active_start_time_of_day` Heure de la journée à laquelle l’agent de réplication est planifié pour la première fois, au format HHMMSS. *active_start_time_of_day* est de **type int**, avec **0**comme valeur par défaut.  
+`[ @active_start_time_of_day = ] active_start_time_of_day` Heure de la journée à laquelle l’agent de réplication est planifié pour la première fois, au format HHMMSS. *active_start_time_of_day* est de **type int**, avec **0** comme valeur par défaut.  
   
 > [!NOTE]  
 >  Ce paramètre est déconseillé et n'est maintenu que dans un but de compatibilité ascendante avec les scripts déjà établis. La propriété est maintenant spécifiée sur une base par abonnement lors de l’exécution de [sp_addsubscription](../../relational-databases/system-stored-procedures/sp-addsubscription-transact-sql.md). Lorsqu'une valeur est spécifiée, elle sert alors de valeur par défaut au moment de la création des abonnements pour cet Abonné et un message d'avertissement s'affiche.  
   
-`[ @active_end_time_of_day = ] active_end_time_of_day` Heure de la journée à laquelle l’agent de réplication cesse d’être planifié, au format HHMMSS. *active_end_time_of_day*est de **type int**, avec 235959 comme valeur par défaut, ce qui signifie 11:59:59 P.M. mesurée sur une horloge de 24 heures.  
+`[ @active_end_time_of_day = ] active_end_time_of_day` Heure de la journée à laquelle l’agent de réplication cesse d’être planifié, au format HHMMSS. *active_end_time_of_day* est de **type int**, avec 235959 comme valeur par défaut, ce qui signifie 11:59:59 P.M. mesurée sur une horloge de 24 heures.  
   
 > [!NOTE]  
 >  Ce paramètre est déconseillé et n'est maintenu que dans un but de compatibilité ascendante avec les scripts déjà établis. La propriété est maintenant spécifiée sur une base par abonnement lors de l’exécution de [sp_addsubscription](../../relational-databases/system-stored-procedures/sp-addsubscription-transact-sql.md). Lorsqu'une valeur est spécifiée, elle sert alors de valeur par défaut au moment de la création des abonnements pour cet Abonné et un message d'avertissement s'affiche.  

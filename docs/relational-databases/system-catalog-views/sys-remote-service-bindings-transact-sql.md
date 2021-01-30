@@ -1,13 +1,13 @@
 ---
 description: sys.remote_service_bindings (Transact-SQL)
-title: sys. remote_service_bindings (Transact-SQL) | Microsoft Docs
+title: sys.remote_service_bindings (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.remote_service_bindings_TSQL
 - remote_service_bindings_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 4e1a885d-eed1-4993-9c87-e6fd781f437d
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 3688159328e073deaf3e815826ee861d9cf27d14
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0ea8bd821e577f50f70bb141a17739afb41d4121
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88490183"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203438"
 ---
 # <a name="sysremote_service_bindings-transact-sql"></a>sys.remote_service_bindings (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SQLCancelHandle
 helpviewer_keywords:
@@ -15,18 +15,18 @@ helpviewer_keywords:
 ms.assetid: 16049b5b-22a7-4640-9897-c25dd0f19d21
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 3f466f63d6da9aa9a96b9e929ea2b59a3e43491d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 727f9c15809969560410cfa54bdf9b70ec765f53
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88448849"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181044"
 ---
 # <a name="sqlcancelhandle-function"></a>SQLCancelHandle, fonction
 **Conformité**  
  Version introduite : ODBC 3,8 conformité aux normes : aucune  
   
- La plupart des pilotes ODBC 3,8 (et versions ultérieures) implémentent cette fonction. Si un pilote ne le fait **SQLCancel**pas, un appel à **SQLCancelHandle** avec un handle de connexion dans le paramètre *descripteur* retourne SQL_ERROR avec une valeur SQLSTATE de IM001 et le message « le pilote ne prend pas en charge cette fonction « » un appel à **SQLCancelHandle** avec un descripteur d’instruction, car le paramètre *handle* sera mappé à un appel à **SQLCancel** par le gestionnaire de pilotes et peut être traité si le Une application peut utiliser **SQLGetFunctions** pour déterminer si un pilote prend en charge **SQLCancelHandle**.  
+ La plupart des pilotes ODBC 3,8 (et versions ultérieures) implémentent cette fonction. Si un pilote ne le fait pas, un appel à **SQLCancelHandle** avec un handle de connexion dans le paramètre *descripteur* retourne SQL_ERROR avec une valeur SQLSTATE de IM001 et le message « le pilote ne prend pas en charge cette fonction « » un appel à **SQLCancelHandle** avec un descripteur d’instruction, car le paramètre *handle* sera mappé à un appel à **SQLCancel** par le gestionnaire de pilotes et peut être traité si le Une application peut utiliser **SQLGetFunctions** pour déterminer si un pilote prend en charge **SQLCancelHandle**.  
   
  **Résumé**  
  **SQLCancelHandle** annule le traitement sur une connexion ou une instruction. Le gestionnaire de pilotes mappe un appel à **SQLCancelHandle** à un appel à **SQLCancel** lorsque *comme HandleType* est SQL_HANDLE_STMT.  
@@ -53,16 +53,16 @@ SQLRETURN SQLCancelHandle(
  SQL_SUCCESS, SQL_SUCCESS_WITH_INFO, SQL_ERROR ou SQL_INVALID_HANDLE.  
   
 ## <a name="diagnostics"></a>Diagnostics  
- Quand **SQLCancelHandle** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *comme HandleType* de SQL_HANDLE_STMT et un *handle* de handle d’instruction ou un *comme HandleType* de SQL_HANDLE_DBC et un *handle*de handle de connexion.  
+ Quand **SQLCancelHandle** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *comme HandleType* de SQL_HANDLE_STMT et un *handle* de handle d’instruction ou un *comme HandleType* de SQL_HANDLE_DBC et un *handle* de handle de connexion.  
   
  Le tableau suivant répertorie les valeurs SQLSTATE couramment retournées par **SQLCancelHandle** et les explique dans le contexte de cette fonction. la notation « (DM) » précède les descriptions des SQLSTATEs retournées par le gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur|Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information spécifique au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
-|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par [SQLGetDiagRec](../../../odbc/reference/syntax/sqlgetdiagrec-function.md) dans l’argument * \* MessageText* buffer décrit l’erreur et sa cause.|  
+|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par [SQLGetDiagRec](../../../odbc/reference/syntax/sqlgetdiagrec-function.md) dans l’argument *\* MessageText* buffer décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|Le pilote n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou l’achèvement de la fonction.|  
-|HY010|Erreur de séquence de fonction|Une fonction d’instruction en cours d’exécution asynchrone a été appelée pour l’un des descripteurs d’instruction associés au *handle*, et *comme HandleType* a la valeur SQL_HANDLE_DBC. La fonction asynchrone était toujours en cours d’exécution lors de l’appel de **SQLCancelHandle** .<br /><br /> (DM) l’argument *comme HandleType* a été SQL_HANDLE_STMT ; une fonction d’exécution asynchrone a été appelée sur le handle de connexion associé ; et la fonction était toujours en cours d’exécution quand cette fonction a été appelée.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**ou **SQLMoreResults** a été appelé pour l’un des descripteurs d’instruction associés au *Handle* et *comme HandleType* a été défini sur SQL_HANDLE_DBC, et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.<br /><br /> **SQLBrowseConnect** a été appelé pour *ConnectionHandle*et a retourné SQL_NEED_DATA. Cette fonction a été appelée avant la fin du processus de navigation.|  
+|HY010|Erreur de séquence de fonction|Une fonction d’instruction en cours d’exécution asynchrone a été appelée pour l’un des descripteurs d’instruction associés au *handle*, et *comme HandleType* a la valeur SQL_HANDLE_DBC. La fonction asynchrone était toujours en cours d’exécution lors de l’appel de **SQLCancelHandle** .<br /><br /> (DM) l’argument *comme HandleType* a été SQL_HANDLE_STMT ; une fonction d’exécution asynchrone a été appelée sur le handle de connexion associé ; et la fonction était toujours en cours d’exécution quand cette fonction a été appelée.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect** ou **SQLMoreResults** a été appelé pour l’un des descripteurs d’instruction associés au *Handle* et *comme HandleType* a été défini sur SQL_HANDLE_DBC, et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.<br /><br /> **SQLBrowseConnect** a été appelé pour *ConnectionHandle* et a retourné SQL_NEED_DATA. Cette fonction a été appelée avant la fin du processus de navigation.|  
 |HY013|Erreur de gestion de la mémoire|Impossible de traiter l’appel de fonction, car les objets mémoire sous-jacents sont inaccessibles, probablement en raison de conditions de mémoire insuffisante.|  
 |HY092|Identificateur d’attribut/option non valide|*Comme HandleType* a été défini sur SQL_HANDLE_ENV ou SQL_HANDLE_DESC.|  
 |HY117|La connexion est interrompue en raison d’un état de transaction inconnu. Seules les fonctions de déconnexion et de lecture seule sont autorisées.|(DM) pour plus d’informations sur l’état suspendu, consultez [fonction SQLEndTran](../../../odbc/reference/syntax/sqlendtran-function.md).|  
@@ -91,7 +91,7 @@ SQLRETURN SQLCancelHandle(
 > [!NOTE]  
 >  Pour plus d’informations sur l’utilisation de **SQLCancelHandle** dans une application qui sera déployée sur un système d’exploitation Windows antérieur à Windows 7, consultez [matrice de compatibilité](../../../odbc/reference/develop-app/compatibility-matrix.md).  
   
-#### <a name="canceling-connection-related-asynchronous-processing"></a>Annulation du traitement asynchrone lié à la connexion  
+#### <a name="canceling-connection-related-asynchronous-processing"></a>Annulation Connection-Related traitement asynchrone  
  Si une fonction retourne SQL_STILL_EXECUTING, une application peut appeler **SQLCancelHandle** pour annuler l’opération. Si la demande d’annulation réussit, **SQLCancelHandle** retourne SQL_SUCCESS. Cela ne signifie pas que la fonction d’origine a été annulée ; elle indique que la demande d’annulation a été traitée. Le pilote et la source de données déterminent à quel moment ou si l’opération est annulée. L’application doit continuer à appeler la fonction d’origine jusqu’à ce que le code de retour ne soit pas SQL_STILL_EXECUTING. Si la fonction d’origine a été annulée, le code de retour est SQL_ERROR et SQLSTATE HY008 (opération annulée). Si la fonction d’origine a terminé son traitement normal (n’a pas été annulé), le code de retour est SQL_SUCCESS ou SQL_SUCCESS_WITH_INFO, ou SQL_ERROR et un SQLSTATE autre que HY008 (opération annulée), si la fonction d’origine a échoué.  
   
 #### <a name="canceling-functions-executing-on-another-thread"></a>Annulation de fonctions s’exécutant sur un autre thread  

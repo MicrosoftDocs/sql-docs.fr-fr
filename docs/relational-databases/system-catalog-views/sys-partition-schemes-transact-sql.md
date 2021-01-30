@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - partition_schemes_TSQL
 - partition_schemes
@@ -21,12 +21,12 @@ ms.assetid: ed557fd5-12b0-4cef-9e4f-440b02e99d1f
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: ce355e37b9a4fa5fcc4f8b2accd024a59ab2e5f1
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 8502a019a21bae64583736d5ed3c940c42fbdef9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096778"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203784"
 ---
 # <a name="syspartition_schemes-transact-sql"></a>sys.partition_schemes (Transact-SQL)
 [!INCLUDE [sql-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdbmi-asa-pdw.md)]

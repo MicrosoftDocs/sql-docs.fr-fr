@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_dbmmonitorchangemonitoring
 - sp_dbmmonitorchangemonitoring_TSQL
@@ -19,19 +19,19 @@ helpviewer_keywords:
 ms.assetid: 17be755b-673d-4cd4-9544-6ecb4220bed3
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 5ba2738f425a8240466cddca87a6d8cb6c5173bc
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 440e573fab7ee5c9cc6f8707df7d3c24bb410803
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548189"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99212398"
 ---
 # <a name="sp_dbmmonitorchangemonitoring-transact-sql"></a>sp_dbmmonitorchangemonitoring (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Modifie la valeur d'un paramètre de surveillance de mise en miroir de base de données.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

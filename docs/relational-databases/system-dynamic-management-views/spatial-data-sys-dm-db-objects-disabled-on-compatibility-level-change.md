@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_db_objects_disabled_on_compatibility_level_change
 - dm_db_objects_disabled_on_compatibility_level_change_TSQL
@@ -21,19 +21,19 @@ ms.assetid: a5d70064-0330-48b9-b853-01eba50755d0
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 4e5092468b8a6beebb9d5149d215b39f47db0818
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c7fef254ef7403e56c497453a36705110fe64e66
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100024"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202558"
 ---
 # <a name="spatial-data---sysdm_db_objects_disabled_on_compatibility_level_change"></a>Données spatiales-sys.dm_db_objects_disabled_on_compatibility_level_change
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]
 
   Répertorie les index et les contraintes qui seront désactivés suite à la modification du niveau de compatibilité dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les index et les contraintes qui contiennent des colonnes calculées persistantes dont les expressions utilisent des types définis par l'utilisateur spatiaux sont désactivés après une mise à niveau ou une modification du niveau de compatibilité. Utilisez cette fonction de gestion dynamique pour déterminer l'impact d'un changement de niveau de compatibilité.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

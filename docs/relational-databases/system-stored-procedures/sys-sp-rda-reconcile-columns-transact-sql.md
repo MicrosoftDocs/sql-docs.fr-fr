@@ -1,12 +1,12 @@
 ---
-title: sys. sp_rda_reconcile_columns (Transact-SQL) | Microsoft Docs
-description: En savoir plus sur sys. sp_rda_reconcile_columns. Utilisez cette procédure stockée pour rapprocher des colonnes dans les tables Azure distantes et les tables SQL Server compatibles avec Stretch.
+title: sys.sp_rda_reconcile_columns (Transact-SQL) | Microsoft Docs
+description: En savoir plus sur sys.sp_rda_reconcile_columns. Utilisez cette procédure stockée pour rapprocher des colonnes dans les tables Azure distantes et les tables SQL Server compatibles avec Stretch.
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: stored-procedures
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.sp_rda_reconcile_columns
 - sys.sp_rda_reconcile_columns_TSQL
@@ -17,14 +17,14 @@ helpviewer_keywords:
 ms.assetid: 60d9cc4e-1828-450b-9d88-5b8485800d73
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 1788e373c8bab330182df9338e447946cda87bd3
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 8eb33cbb1fd2975d96a727f6a7fde457c9827cc8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538441"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211775"
 ---
-# <a name="syssp_rda_reconcile_columns-transact-sql"></a>sys. sp_rda_reconcile_columns (Transact-SQL)
+# <a name="syssp_rda_reconcile_columns-transact-sql"></a>sys.sp_rda_reconcile_columns (Transact-SQL)
 [!INCLUDE [sqlserver2016](../../includes/applies-to-version/sqlserver2016.md)]
 
   Rapproche les colonnes de la table Azure distante des colonnes de la table de SQL Server avec Stretch.  
@@ -34,7 +34,7 @@ ms.locfileid: "89538441"
   > [!IMPORTANT]
   > Quand **sp_rda_reconcile_columns** recrée des colonnes que vous avez supprimées par inadvertance de la table distante, les données qui se trouvaient précédemment dans les colonnes supprimées ne sont pas restaurées.
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
    
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,14 +45,14 @@ sp_rda_reconcile_columns @objname = '@objname'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- \@objname = '* \@ objname*'  
+ \@objname = '*\@ objname*'  
  Nom de la table de SQL Server prenant en charge Stretch.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  0 (succès) ou >0 (échec)  
   
 ## <a name="permissions"></a>Autorisations  
- Requiert db_owner autorisations.  
+ Requiert les autorisations db_owner.  
    
 ## <a name="remarks"></a>Notes  
  Si des colonnes comprises dans la table Azure distante n’existent plus dans la table SQL Server compatible Stretch, ces colonnes supplémentaires n’empêchent pas Stretch Database de fonctionner normalement. Vous pouvez éventuellement supprimer manuellement les colonnes supplémentaires.  

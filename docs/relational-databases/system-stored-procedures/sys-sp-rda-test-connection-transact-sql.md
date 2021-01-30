@@ -1,12 +1,12 @@
 ---
-title: sys. sp_rda_test_connection (Transact-SQL) | Microsoft Docs
-description: Apprenez à utiliser sys. sp_rda_test_connection pour tester la connexion de SQL Server au serveur Azure distant et signaler des problèmes susceptibles d’empêcher la migration des données.
+title: sys.sp_rda_test_connection (Transact-SQL) | Microsoft Docs
+description: Apprenez à utiliser sys.sp_rda_test_connection pour tester la connexion de SQL Server au serveur Azure distant et signaler des problèmes susceptibles d’empêcher la migration de données.
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: stored-procedures
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.sp_rda_test_connection
 - sys.sp_rda_test_connection_TSQL
@@ -17,14 +17,14 @@ helpviewer_keywords:
 ms.assetid: e2ba050c-d7e3-4f33-8281-c9b525b4edb4
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 031e3abe622a4a15fa9656e65bce80b5eaf27365
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: e584604a0229e3e2e0c213b70d8fd4bca0321c2b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540400"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211715"
 ---
-# <a name="syssp_rda_test_connection-transact-sql"></a>sys. sp_rda_test_connection (Transact-SQL)
+# <a name="syssp_rda_test_connection-transact-sql"></a>sys.sp_rda_test_connection (Transact-SQL)
 [!INCLUDE [sqlserver2016](../../includes/applies-to-version/sqlserver2016.md)]
 
   Teste la connexion de SQL Server au serveur Azure distant et signale les problèmes susceptibles d’empêcher la migration des données.  
@@ -49,9 +49,9 @@ EXECUTE sys.sp_rda_test_connection
  @server_address = N'*azure_server_fully_qualified_address*'  
  Adresse complète du serveur Azure.  
   
--   Si vous fournissez une valeur pour ** \@ database_name**, mais que la base de données spécifiée n’est pas compatible avec Stretch, vous devez fournir une valeur pour ** \@ server_address**.  
+-   Si vous fournissez une valeur pour **\@ database_name**, mais que la base de données spécifiée n’est pas compatible avec Stretch, vous devez fournir une valeur pour **\@ server_address**.  
   
--   Si vous fournissez une valeur pour ** \@ database_name**et que la base de données spécifiée est compatible avec Stretch, vous n’avez pas besoin de fournir une valeur pour ** \@ server_address**. Si vous fournissez une valeur pour ** \@ server_address**, la procédure stockée l’ignore et utilise le serveur Azure existant déjà associé à la base de données Stretch.  
+-   Si vous fournissez une valeur pour **\@ database_name** et que la base de données spécifiée est compatible avec Stretch, vous n’avez pas besoin de fournir une valeur pour **\@ server_address**. Si vous fournissez une valeur pour **\@ server_address**, la procédure stockée l’ignore et utilise le serveur Azure existant déjà associé à la base de données Stretch.  
   
  @azure_username = N'*azure_username*  
  Nom d’utilisateur du serveur Azure distant.  
@@ -77,7 +77,7 @@ EXECUTE sys.sp_rda_test_connection
 |error_message|nvarchar(1024)|Message d’erreur. S’il n’y a pas d’erreur, ce champ a la valeur NULL.|  
   
 ## <a name="permissions"></a>Autorisations  
- Requiert db_owner autorisations.  
+ Requiert les autorisations db_owner.  
   
 ## <a name="examples"></a>Exemples  
   

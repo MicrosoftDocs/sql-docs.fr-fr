@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_backup_config_basic_TSQL
 - sp_backup_config_basic
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 3ad73051-ae9a-4e41-a889-166146e5508f
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 428dff3f22b5a924f7a208a988334c14ece752a3
-ms.sourcegitcommit: 968969b62bc158b9843aba5034c9d913519bc4a7
+ms.openlocfilehash: 0ef304af8088ee35aeb19022f5d7f6cf539f554d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91753732"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193595"
 ---
 # <a name="managed_backupsp_backup_config_basic-transact-sql"></a>managed_backup.sp_backup_config_basic (Transact-SQL)
 [!INCLUDE [sqlserver2016](../../includes/applies-to-version/sqlserver2016.md)]
@@ -66,7 +66,7 @@ EXEC managed_backup.sp_backup_config_basic
  Nom des informations d’identification SQL utilisées pour l’authentification auprès du compte de stockage Azure. @credentail_name est de **type sysname**. Lorsque cette valeur est spécifiée, la sauvegarde est stockée dans un objet blob de pages. Si ce paramètre a la valeur NULL, la sauvegarde est stockée en tant qu’objet blob de blocs. La sauvegarde vers l’objet blob de pages est dépréciée. il est donc préférable d’utiliser la nouvelle fonctionnalité de sauvegarde des objets BLOB de blocs. Lorsqu'il est utilisé pour modifier la configuration de la [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)], ce paramètre est facultatif. S’il n’est pas spécifié, les valeurs de configuration existantes sont conservées.  
   
 > [!WARNING]
->  Le paramètre ** \@ credential_name** n’est pas pris en charge pour l’instant. Seule la sauvegarde sur un objet blob de blocs est prise en charge, ce qui requiert la valeur NULL pour ce paramètre.  
+>  Le paramètre **\@ credential_name** n’est pas pris en charge pour l’instant. Seule la sauvegarde sur un objet blob de blocs est prise en charge, ce qui requiert la valeur NULL pour ce paramètre.  
   
 ## <a name="return-code-value"></a>Valeur du code de retour  
  0 (réussite) ou 1 (échec)  

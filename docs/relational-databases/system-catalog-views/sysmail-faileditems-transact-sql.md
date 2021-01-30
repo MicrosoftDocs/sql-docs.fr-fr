@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysmail_faileditems
 - sysmail_faileditems_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: a31562c5-358e-4cfc-a72d-b3faccc53851
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 0fc32200b893022e16bcd4ee7049da82c4572660
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 83e7bc1ebeaa78cd8e12325c7259c93139f9a200
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100125"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193013"
 ---
 # <a name="sysmail_faileditems-transact-sql"></a>sysmail_faileditems (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

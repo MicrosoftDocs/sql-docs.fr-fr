@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_fts_index_keywords_by_document_TSQL
 - dm_fts_index_keywords_by_document_TSQL
@@ -23,12 +23,12 @@ ms.assetid: 793b978b-c8a1-428c-90c2-a3e49d81b5c9
 author: pmasl
 ms.author: pelopes
 monikerRange: '>=aps-pdw-2016||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 353fcb321549546ff1b44956d5ebc20826e6c0e3
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c11b68f45ef5f42cb4e46fdfb7c2c975df5483c5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484701"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193793"
 ---
 # <a name="sysdm_fts_index_keywords_by_document-transact-sql"></a>sys.dm_fts_index_keywords_by_document (Transact-SQL)
 [!INCLUDE [sql-asdbmi-pdw](../../includes/applies-to-version/sql-asdbmi-pdw.md)]
@@ -72,7 +72,7 @@ sys.dm_fts_index_keywords_by_document
 |document_id|**int**|ID de la ligne ou du document à partir duquel le terme actuel a été indexé en texte intégral. Cet ID correspond à la valeur de clé de texte intégral de cette ligne ou de ce document.|  
 |occurrence_count|**int**|Nombre d’occurrences du mot clé Current dans le document ou la ligne indiqué par **document_id**. Lorsque'*search_property_name*'est spécifié, occurrence_count affiche uniquement le nombre d’occurrences du mot clé en cours dans la propriété de recherche spécifiée au sein du document ou de la ligne.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Les informations retournées par sys.dm_fts_index_keywords_by_document sont utiles pour déterminer, entre autres choses, les éléments ci-dessous :  
   
 -   Nombre total de mots clés contenus dans un index de recherche en texte intégral.  

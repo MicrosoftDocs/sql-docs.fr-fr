@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - cdc.lsn_time_mapping
 - cdc.lsn_time_mapping_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 1cb7aedc-48a4-486e-9b91-d30c4bd4084e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: edb2732da4b3d2dba2c8dfa0947eb0c5d135ffb6
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 6cf48f0c68e5e376b186e7f51361a479c9d1e67c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094909"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203638"
 ---
 # <a name="cdclsn_time_mapping-transact-sql"></a>cdc.lsn_time_mapping (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

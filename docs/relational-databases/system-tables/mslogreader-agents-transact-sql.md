@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSlogreader_agents_TSQL
 - MSlogreader_agents
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 8baa3c5a-cb40-42d0-b966-00e6d55368e8
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 58b93b15fc6f8b99d507004b33bbb371ac211663
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: cbf7f439c03ff29e205b7a19a159b67b43090a71
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096216"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99212315"
 ---
 # <a name="mslogreader_agents-transact-sql"></a>MSlogreader_agents (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

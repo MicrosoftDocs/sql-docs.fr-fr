@@ -5,19 +5,19 @@ ms.custom: ''
 ms.date: 03/03/2017
 ms.service: sql-data-warehouse
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: f5ccb424-7a95-4557-b774-c69de33c1545
 author: ronortloff
 ms.author: rortloff
 monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest'
-ms.openlocfilehash: 73d1eb9fe27fa060a8bfcd13341a3908545aeed3
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0c1d6af9bb11e4078314f27d9fd69346568204d5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97468340"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211863"
 ---
 # <a name="sp_pdw_database_encryption-azure-synapse-analytics"></a>sp_pdw_database_encryption (Azure Synapse Analytics)
 [!INCLUDE[applies-to-version/asa-pdw](../../includes/applies-to-version/asa-pdw.md)]
@@ -46,7 +46,7 @@ sp_pdw_database_encryption [ [ @enabled = ] enabled ] ;
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Lorsque le TDE est activé à l’aide de **sp_pdw_database_encryption**, la base de données tempdb est supprimée, recréée et chiffrée. Pour cette raison, le TDE ne peut pas être activé sur un appareil tant qu’il existe d’autres sessions actives utilisant tempdb. L’activation ou la désactivation de TDE sur un appareil est une action qui modifie l’état de l’appliance. dans la plupart des cas, il est prévu qu’elle soit exécutée une fois dans la durée de vie de l’appliance et doit être exécutée en l’absence de trafic sur l’appliance.  
   
 ## <a name="permissions"></a>Autorisations  

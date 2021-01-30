@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ODBC literals [ODBC], numeric
 - numeric literals [ODBC]
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fb17498d-4f1d-4b3d-b33d-1e62c7d3c32d
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: be87238f1663bcf9b12d40cb90521bb404a25af3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 541f2fa53d6aeb9a387117b17f0917cb110dc630
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88425011"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193295"
 ---
 # <a name="numeric-literal-syntax"></a>Syntaxe des littéraux numériques
 La syntaxe suivante est utilisée pour les littéraux numériques dans ODBC :  

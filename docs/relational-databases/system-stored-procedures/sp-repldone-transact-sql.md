@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_repldone
 - sp_repldone_TSQL
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 045d3cd1-712b-44b7-a56a-c9438d4077b9
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 7a8e32127986fb67a28abfa2433caefc044ed1b2
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 4889616070df4a42150272e0c9cd17aee941b063
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538572"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203149"
 ---
 # <a name="sp_repldone-transact-sql"></a>sp_repldone (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "89538572"
 > [!CAUTION]  
 >  Si vous exécutez **sp_repldone** manuellement, vous pouvez invalider l'ordre et la cohérence des transactions délivrées. **sp_repldone** ne doit être utilisé que pour résoudre les problèmes de réplication, comme indiqué par un professionnel expérimenté du support de la réplication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,7 +52,7 @@ sp_repldone [ @xactid= ] xactid
   
 `[ @time = ] time` Nombre de millisecondes, s’il est fourni, nécessaires pour distribuer le dernier lot de transactions. l' *heure* est de **type int**, sans valeur par défaut.  
   
-`[ @reset = ] reset` Est l’état de réinitialisation. *Reset* est de **type int**, sans valeur par défaut. Si la **1**est définie, toutes les transactions répliquées dans le journal sont marquées comme distribuées. Si la **valeur est 0**, le journal des transactions est réinitialisé à la première transaction répliquée et aucune transaction répliquée n’est marquée comme distribuée. la *réinitialisation* est valide uniquement lorsque *xactid* et *xact_seqno* ont la valeur null.  
+`[ @reset = ] reset` Est l’état de réinitialisation. *Reset* est de **type int**, sans valeur par défaut. Si la **1** est définie, toutes les transactions répliquées dans le journal sont marquées comme distribuées. Si la **valeur est 0**, le journal des transactions est réinitialisé à la première transaction répliquée et aucune transaction répliquée n’est marquée comme distribuée. la *réinitialisation* est valide uniquement lorsque *xactid* et *xact_seqno* ont la valeur null.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

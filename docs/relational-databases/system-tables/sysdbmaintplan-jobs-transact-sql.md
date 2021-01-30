@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysdbmaintplan_jobs
 - sysdbmaintplan_jobs_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: bc65cd70-6ef2-4c17-be11-877ecf4efe50
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 3c1c925fca9ae3fab98e0cc3579a9105db855f71
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f11720a8023b2828d8f607ff511a725bc8166be1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098077"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178010"
 ---
 # <a name="sysdbmaintplan_jobs-transact-sql"></a>sysdbmaintplan_jobs (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

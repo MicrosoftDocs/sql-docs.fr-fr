@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQLSetConnectAttrForDbcInfo function [ODBC]
 ms.assetid: a28fadb9-b998-472a-b252-709507e92005
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 7380ba8682deb7424c363b28d42ecf3980755daf
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2ca64e1309c939f4b39b8b9a020a1debb1cc10b9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88499559"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192441"
 ---
 # <a name="sqlsetconnectattrfordbcinfo-function"></a>SQLSetConnectAttrForDbcInfo, fonction
 **Conformité**  
@@ -72,7 +72,7 @@ SQLRETURN  SQLSetConnectAttrForDbcInfo(
 ## <a name="remarks"></a>Notes  
  **SQLSetConnectAttrForDbcInfo** est identique à **SQLSetConnectAttr**, mais définit l’attribut sur le jeton d’informations de connexion, plutôt que sur le handle de connexion. Par exemple, si **SQLSetConnectAttr** ne reconnaît pas un attribut, **SQLSetConnectAttrForDbcInfo** doit également retourner SQL_ERROR pour cet attribut.  
   
- Chaque fois que le pilote retourne SQL_ERROR ou SQL_INVALID_HANDLE, le pilote doit ignorer cet attribut pour calculer l’ID du pool. En outre, le gestionnaire de pilotes obtiendra les informations de diagnostic à partir de *hDbcInfoToken*et renverra SQL_SUCCESS_WITH_INFO à l’application dans [SQLConnect](../../../odbc/reference/syntax/sqlconnect-function.md) et [SQLDriverConnect](../../../odbc/reference/syntax/sqldriverconnect-function.md). Par conséquent, une application peut récupérer des détails sur la raison pour laquelle certains attributs ne peuvent pas être définis.  
+ Chaque fois que le pilote retourne SQL_ERROR ou SQL_INVALID_HANDLE, le pilote doit ignorer cet attribut pour calculer l’ID du pool. En outre, le gestionnaire de pilotes obtiendra les informations de diagnostic à partir de *hDbcInfoToken* et renverra SQL_SUCCESS_WITH_INFO à l’application dans [SQLConnect](../../../odbc/reference/syntax/sqlconnect-function.md) et [SQLDriverConnect](../../../odbc/reference/syntax/sqldriverconnect-function.md). Par conséquent, une application peut récupérer des détails sur la raison pour laquelle certains attributs ne peuvent pas être définis.  
   
  Les applications ne doivent pas appeler cette fonction directement. Un pilote ODBC qui prend en charge le regroupement de connexions prenant en charge les pilotes doit implémenter cette fonction.  
   

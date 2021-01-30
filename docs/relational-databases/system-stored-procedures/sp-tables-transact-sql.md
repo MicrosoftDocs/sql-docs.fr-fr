@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_tables
 - sp_tables_TSQL
@@ -19,12 +19,12 @@ ms.assetid: 787a2fa5-87a1-49bd-938b-6043c245f46b
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: dbbf927943b34c81ad1f0a49b831314803969d7c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a176073f8951cd15acd34aa00b92fc268f90c27e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472650"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180580"
 ---
 # <a name="sp_tables-transact-sql"></a>sp_tables (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "97472650"
 > [!NOTE]  
 >  Pour déterminer le nom de l’objet de base d’un synonyme, interrogez l’affichage catalogue [sys. synonymes](../../relational-databases/system-catalog-views/sys-synonyms-transact-sql.md) .  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -77,7 +77,7 @@ sp_tables [ [ @table_name = ] 'name' ]
 |**TABLE_TYPE**|**varchar(32)**|Table, table système ou vue.|  
 |**NOTES**|**varchar (254)**|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne retourne pas de valeur pour cette colonne.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Pour assurer une interopérabilité maximale, le client de la passerelle ne doit utiliser que les critères spéciaux SQL standard de SQL-92 (caractères génériques % et _).  
   
  Les informations de privilège concernant l'accès en lecture/écriture de l'utilisateur actuel à une table spécifique ne sont pas toujours vérifiées. Par conséquent, l'accès n'est pas garanti. Ce jeu de résultats ne comprend pas uniquement des tables et des vues, mais également des synonymes et des noms d'alias, dans le cas des passerelles vers les SGBD qui gèrent ces types. Si l’attribut de serveur **ACCESSIBLE_TABLES** est Y dans le jeu de résultats pour **sp_server_info**, seules les tables accessibles par l’utilisateur actuel sont retournées.  

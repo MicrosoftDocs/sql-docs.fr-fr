@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLBindParameter
 apilocation:
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 38349d4b-be03-46f9-9d6a-e50dd144e225
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 44b8b59722b790685b7fad47300039913d7294ae
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: d173d3cc38a0f07532f6b9d8a225d9bbf44a6a28
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170151"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181085"
 ---
 # <a name="sqlbindparameter-function"></a>Fonction SQLBindParameter
 

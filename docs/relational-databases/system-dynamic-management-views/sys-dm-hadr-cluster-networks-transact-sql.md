@@ -6,7 +6,7 @@ ms.date: 06/10/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_hadr_cluster_networks
 - sys.dm_hadr_cluster_networks_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: ece32b15-d63f-4f93-92b7-e2930333e97a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: d97862778240fac789f95c00a474df12770f8ef3
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 53e7158b5da43d42a167696e0d40e92315d69f0f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101595"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180251"
 ---
 # <a name="sysdm_hadr_cluster_networks-transact-sql"></a>sys.dm_hadr_cluster_networks (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ODBC desktop database drivers [ODBC], Paradox driver
 - desktop database drivers [ODBC], Paradox driver
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 0c9e5d21-9321-49f8-a055-69459e1c9c85
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 44494e9945a84f978449b6bab02bd967e40d9a20
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ee49ff2df24a57daa481ea650f57c09a7712400e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88340455"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203507"
 ---
 # <a name="paradox-data-types"></a>Types de données Paradox
 Le pilote ODBC Paradox mappe les types de données Paradox aux types de données ODBC SQL. Le tableau suivant répertorie tous les types de données Paradox et indique les types de données SQL ODBC auxquels ils sont mappés.  

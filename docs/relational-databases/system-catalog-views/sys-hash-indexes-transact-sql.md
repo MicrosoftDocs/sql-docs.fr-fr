@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.hash_indexes_TSQL
 - hash_indexes
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: d9e230fb-d3ff-486f-86ef-44898f0a703e
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: b422523074806b6cac30fc56859006561fc0c828
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: d0644ee943599ce3e34c408cf571543dd3692fcb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095527"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193841"
 ---
 # <a name="syshash_indexes-transact-sql"></a>sys.hash_indexes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_replmonitorhelpmergesession_TSQL
 - sp_replmonitorhelpmergesession
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: a0400ba8-9609-4901-917e-925e119103a1
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 9544a1d11efbd3d956821784257619bb45b7a5cc
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: d81a500eccbc8d969e9e0ef957ae4db09616d768
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89526056"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211891"
 ---
 # <a name="sp_replmonitorhelpmergesession-transact-sql"></a>sp_replmonitorhelpmergesession (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Retourne des informations sur les sessions passées d'un Agent de fusion de réplication, à raison d'une ligne par session correspondant au critère de filtrage. Cette procédure stockée, qui est utilisée pour surveiller la réplication de fusion, est exécutée sur la base de données de distribution du serveur de distribution ou sur la base de données d'abonnement de l'Abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -53,7 +53,7 @@ sp_replmonitorhelpmergesession [ [ @agent_name = ] 'agent_name' ]
 |**0** (valeur par défaut)|Retourne des informations sur toutes les exécutions passées de l'Agent.|  
 |> **entre**|Retourne des informations sur les exécutions de l’agent qui se sont produites au cours des dernières *heures* .|  
   
-`[ @session_type = ] session_type` Filtre le jeu de résultats en fonction du résultat final de la session. *session_type* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @session_type = ] session_type` Filtre le jeu de résultats en fonction du résultat final de la session. *session_type* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

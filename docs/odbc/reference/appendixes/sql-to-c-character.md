@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - converting data from SQL to C types [ODBC], character
 - character data type [ODBC]
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7fdb7f38-b64d-48f2-bcb4-1ca96b2bbdb6
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: dff2b456e995aa344fcd928a48a5aaa09c484e89
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 78bbf45362216f8fb2a0706977347219ac6ac28b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456527"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203069"
 ---
 # <a name="sql-to-c-character"></a>SQL à C : Caractère
 
@@ -43,10 +43,10 @@ Le tableau suivant répertorie les types de données ODBC C dans lesquels les do
 |SQL_C_FLOAT SQL_C_DOUBLE|Les données se trouvent dans la plage du type de données dans lequel le nombre est converti [a]<br /><br /> Les données se trouvent en dehors de la plage du type de données dans lequel le nombre est converti [a]<br /><br /> Data n’est pas un *littéral numérique*[b]|Données<br /><br /> Indéfini<br /><br /> Indéfini|Taille du type de données C<br /><br /> Indéfini<br /><br /> Indéfini|n/a<br /><br /> 22003<br /><br /> 22018|  
 |SQL_C_BIT|Les données sont 0 ou 1<br /><br /> Les données sont supérieures à 0, inférieures à 2 et ne sont pas égales à 1<br /><br /> Les données sont inférieures à 0 ou supérieures ou égales à 2<br /><br /> Les données ne sont pas un *littéral numérique*|Données<br /><br /> Données tronquées<br /><br /> Indéfini<br /><br /> Indéfini|1 [b]<br /><br /> 1 [b]<br /><br /> Indéfini<br /><br /> Indéfini|n/a<br /><br /> 01S07<br /><br /> 22003<br /><br /> 22018|  
 |SQL_C_BINARY|Longueur en octets des données <= *BufferLength*<br /><br /> Longueur en octets des données > *BufferLength*|Données<br /><br /> Données tronquées|Longueur des données en octets<br /><br /> Longueur des données|n/a<br /><br /> 01004|  
-|SQL_C_TYPE_DATE|La valeur de données est une *valeur de date*valide [a]<br /><br /> La valeur de données est une *valeur timestamp*valide ; la partie heure est égale à zéro [a]<br /><br /> La valeur de données est une *valeur timestamp*valide ; la partie heure est différente de zéro [a], [c]<br /><br /> La valeur des données n’est pas une valeur de *Date* ou d' *horodatage*valide [a]|Données<br /><br /> Données<br /><br /> Données tronquées<br /><br /> Indéfini|6 [b]<br /><br /> 6 [b]<br /><br /> 6 [b]<br /><br /> Indéfini|n/a<br /><br /> n/a<br /><br /> 01S07<br /><br /> 22018|  
-|SQL_C_TYPE_TIME|La valeur de données est une valeur d' *heure valide et la valeur de fractions de seconde est 0*[a]<br /><br /> La valeur de données est une valeur *timestamp valide ou une valeur temporelle valide*; la partie fractions de seconde est égale à zéro [a], [d]<br /><br /> La valeur de données est une *valeur timestamp*valide ; la partie fractions de seconde est différente de zéro [a], [d], [e]<br /><br /> La valeur des données n’est pas une valeur d' *heure* ou d' *horodatage*valide [a]|Données<br /><br /> Données<br /><br /> Données tronquées<br /><br /> Indéfini|6 [b]<br /><br /> 6 [b]<br /><br /> 6 [b]<br /><br /> Indéfini|n/a<br /><br /> n/a<br /><br /> 01S07<br /><br /> 22018|  
-|SQL_C_TYPE_TIMESTAMP|La valeur de données est une valeur *timestamp valide ou une valeur temporelle valide*; partie fractions de seconde non tronquées [a]<br /><br /> La valeur de données est une valeur *timestamp valide ou une valeur temporelle valide*; portion de fractions de seconde tronquées [a]<br /><br /> La valeur de données est une *valeur de date*valide [a]<br /><br /> La valeur de données est une *valeur de temps*valide [a]<br /><br /> La valeur des données n’est pas une valeur de *Date*, d' *heure*ou d' *horodatage*valide [a]|Données<br /><br /> Données tronquées<br /><br /> Données [f]<br /><br /> Données [g]<br /><br /> Indéfini|16 [b]<br /><br /> 16 [b]<br /><br /> 16 [b]<br /><br /> 16 [b]<br /><br /> Indéfini|n/a<br /><br /> 01S07<br /><br /> n/a<br /><br /> n/a<br /><br /> 22018|  
-|Tous les types d’intervalle C|La valeur de données est une *valeur d’intervalle*valide ; aucune troncation<br /><br /> La valeur de données est une *valeur d’intervalle*valide ; troncation d’un ou plusieurs champs de fin<br /><br /> L’intervalle de données est valide ; la précision significative du champ de début est perdue<br /><br /> La valeur de données n’est pas une valeur d’intervalle valide|Données<br /><br /> Données tronquées<br /><br /> Indéfini<br /><br /> Indéfini|Longueur des données en octets<br /><br /> Longueur des données en octets<br /><br /> Indéfini<br /><br /> Indéfini|n/a<br /><br /> 01S07<br /><br /> 22015<br /><br /> 22018|  
+|SQL_C_TYPE_DATE|La valeur de données est une *valeur de date* valide [a]<br /><br /> La valeur de données est une *valeur timestamp* valide ; la partie heure est égale à zéro [a]<br /><br /> La valeur de données est une *valeur timestamp* valide ; la partie heure est différente de zéro [a], [c]<br /><br /> La valeur des données n’est pas une valeur de *Date* ou d' *horodatage* valide [a]|Données<br /><br /> Données<br /><br /> Données tronquées<br /><br /> Indéfini|6 [b]<br /><br /> 6 [b]<br /><br /> 6 [b]<br /><br /> Indéfini|n/a<br /><br /> n/a<br /><br /> 01S07<br /><br /> 22018|  
+|SQL_C_TYPE_TIME|La valeur de données est une valeur d' *heure valide et la valeur de fractions de seconde est 0*[a]<br /><br /> La valeur de données est une valeur *timestamp valide ou une valeur temporelle valide*; la partie fractions de seconde est égale à zéro [a], [d]<br /><br /> La valeur de données est une *valeur timestamp* valide ; la partie fractions de seconde est différente de zéro [a], [d], [e]<br /><br /> La valeur des données n’est pas une valeur d' *heure* ou d' *horodatage* valide [a]|Données<br /><br /> Données<br /><br /> Données tronquées<br /><br /> Indéfini|6 [b]<br /><br /> 6 [b]<br /><br /> 6 [b]<br /><br /> Indéfini|n/a<br /><br /> n/a<br /><br /> 01S07<br /><br /> 22018|  
+|SQL_C_TYPE_TIMESTAMP|La valeur de données est une valeur *timestamp valide ou une valeur temporelle valide*; partie fractions de seconde non tronquées [a]<br /><br /> La valeur de données est une valeur *timestamp valide ou une valeur temporelle valide*; portion de fractions de seconde tronquées [a]<br /><br /> La valeur de données est une *valeur de date* valide [a]<br /><br /> La valeur de données est une *valeur de temps* valide [a]<br /><br /> La valeur des données n’est pas une valeur de *Date*, d' *heure* ou d' *horodatage* valide [a]|Données<br /><br /> Données tronquées<br /><br /> Données [f]<br /><br /> Données [g]<br /><br /> Indéfini|16 [b]<br /><br /> 16 [b]<br /><br /> 16 [b]<br /><br /> 16 [b]<br /><br /> Indéfini|n/a<br /><br /> 01S07<br /><br /> n/a<br /><br /> n/a<br /><br /> 22018|  
+|Tous les types d’intervalle C|La valeur de données est une *valeur d’intervalle* valide ; aucune troncation<br /><br /> La valeur de données est une *valeur d’intervalle* valide ; troncation d’un ou plusieurs champs de fin<br /><br /> L’intervalle de données est valide ; la précision significative du champ de début est perdue<br /><br /> La valeur de données n’est pas une valeur d’intervalle valide|Données<br /><br /> Données tronquées<br /><br /> Indéfini<br /><br /> Indéfini|Longueur des données en octets<br /><br /> Longueur des données en octets<br /><br /> Indéfini<br /><br /> Indéfini|n/a<br /><br /> 01S07<br /><br /> 22015<br /><br /> 22018|  
 |&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
 
  [a] la valeur de *BufferLength* est ignorée pour cette conversion. Le pilote suppose que la taille de **TargetValuePtr* est la taille du type de données C.  
@@ -67,7 +67,7 @@ Le tableau suivant répertorie les types de données ODBC C dans lesquels les do
 
 Les espaces de début et de fin sont ignorés quand les données de caractères SQL sont converties dans l’un des types suivants :
 
-- Date
+- date
 - numeric
 - time
 - timestamp

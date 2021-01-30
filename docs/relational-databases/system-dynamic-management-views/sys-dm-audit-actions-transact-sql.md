@@ -6,7 +6,7 @@ ms.date: 06/10/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_audit_actions_TSQL
 - sys.dm_audit_actions
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: b987c2b9-998a-4a5f-a82d-280dc6963cbe
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 7f880fa229e64990b729d193c6e39bfb05523788
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 093561cb55176862040496dc3827dff25b65bc5f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095296"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202468"
 ---
 # <a name="sysdm_audit_actions-transact-sql"></a>sys.dm_audit_actions (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

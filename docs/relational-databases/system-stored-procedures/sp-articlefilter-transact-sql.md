@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_articlefilter_TSQL
 - sp_articlefilter
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 4c3fee32-a43f-4757-a029-30aef4696afb
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 1adb46ae5954c0cbb2b401625869e4e1cb431484
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 6e39f67440e57c2c4a725db45e6e8d8deda3c8b3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548294"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203249"
 ---
 # <a name="sp_articlefilter-transact-sql"></a>sp_articlefilter (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Filtre les données publiées en fonction d'un article de table. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,19 +46,19 @@ sp_articlefilter [ @publication = ] 'publication'
 ## <a name="arguments"></a>Arguments  
 `[ @publication = ] 'publication'` Nom de la publication qui contient l’article. *publication* est de **type sysname**, sans valeur par défaut.  
   
-`[ @article = ] 'article'` Nom de l’article. *article* est de **type sysname**et n’a pas de valeur par défaut.  
+`[ @article = ] 'article'` Nom de l’article. *article* est de **type sysname** et n’a pas de valeur par défaut.  
   
 `[ @filter_name = ] 'filter_name'` Nom de la procédure stockée de filtre à créer à partir de la *filter_name*. *filter_name* est de type **nvarchar (386)**, avec NULL comme valeur par défaut. Vous devez spécifier un nom unique pour le filtre d'article.  
   
 `[ @filter_clause = ] 'filter_clause'` Clause de restriction (WHERE) qui définit un filtre horizontal. Quand vous entrez la clause de restriction, omettez le mot clé WHERE. *filter_clause* est de type **ntext**, avec NULL comme valeur par défaut.  
   
-`[ @force_invalidate_snapshot = ] force_invalidate_snapshot` Confirme que l’action entreprise par cette procédure stockée peut invalider un instantané existant. *force_invalidate_snapshot* est un **bit**, avec **0**comme valeur par défaut.  
+`[ @force_invalidate_snapshot = ] force_invalidate_snapshot` Confirme que l’action entreprise par cette procédure stockée peut invalider un instantané existant. *force_invalidate_snapshot* est un **bit**, avec **0** comme valeur par défaut.  
   
  **0** indique que les modifications apportées à l’article n’entraînent pas la non-validité de l’instantané. Si la procédure stockée détecte que la modification requiert un nouvel instantané, une erreur se produit et aucune modification n'est effectuée.  
   
  **1** indique que les modifications apportées à l’article peuvent entraîner la non-validité de l’instantané, et s’il existe des abonnements qui nécessitent un nouvel instantané, donne l’autorisation de marquer l’instantané existant comme obsolète et de générer un nouvel instantané.  
   
-`[ @force_reinit_subscription = ] force_reinit_subscription` Confirme que l’action entreprise par cette procédure stockée peut nécessiter la réinitialisation des abonnements existants. *force_reinit_subscription* est un **bit**, avec **0**comme valeur par défaut.  
+`[ @force_reinit_subscription = ] force_reinit_subscription` Confirme que l’action entreprise par cette procédure stockée peut nécessiter la réinitialisation des abonnements existants. *force_reinit_subscription* est un **bit**, avec **0** comme valeur par défaut.  
   
  **0** indique que les modifications apportées à l’article n’entraînent pas la réinitialisation des abonnements. Si la procédure stockée détecte que la modification requiert la réinitialisation des abonnements, une erreur se produit et aucune modification n'est effectuée.  
   
@@ -79,7 +79,7 @@ sp_articlefilter [ @publication = ] 'publication'
   
  **sp_articlefilter** crée le filtre, insère l’ID de la procédure stockée de filtre dans la colonne **filtre** de la table [sysarticles &#40;Transact-SQL&#41;](../../relational-databases/system-tables/sysarticles-transact-sql.md) , puis insère le texte de la clause de restriction dans la colonne **filter_clause** .  
   
- Pour créer un article avec un filtre horizontal, exécutez [sp_addarticle &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addarticle-transact-sql.md) sans paramètre de *filtre* . Exécutez **sp_articlefilter**, en fournissant tous les paramètres, y compris *filter_clause*, puis exécutez [sp_articleview &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-articleview-transact-sql.md), en fournissant tous les paramètres, y compris les *filter_clause*identiques. Si le filtre existe déjà et si le **type** dans **sysarticles** est **1** (article basé sur le journal), le filtre précédent est supprimé et un nouveau filtre est créé.  
+ Pour créer un article avec un filtre horizontal, exécutez [sp_addarticle &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addarticle-transact-sql.md) sans paramètre de *filtre* . Exécutez **sp_articlefilter**, en fournissant tous les paramètres, y compris *filter_clause*, puis exécutez [sp_articleview &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-articleview-transact-sql.md), en fournissant tous les paramètres, y compris les *filter_clause* identiques. Si le filtre existe déjà et si le **type** dans **sysarticles** est **1** (article basé sur le journal), le filtre précédent est supprimé et un nouveau filtre est créé.  
   
  Si *filter_name* et *filter_clause* ne sont pas fournis, le filtre précédent est supprimé et l’ID de filtre est défini sur **0**.  
   

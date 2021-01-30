@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLRemoveTranslator
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: c6feda49-0359-4224-8de9-77125cf2397b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 92042d1a29720d8fcca32d3fb7127f24a0566b7e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cc8d1c7340d548276f462512bf2b52a3deb37b79
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88499602"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192482"
 ---
 # <a name="sqlremovetranslator-function"></a>SQLRemoveTranslator, fonction
 **Conformité**  
@@ -54,9 +54,9 @@ BOOL SQLRemoveTranslator(
  La fonction retourne TRUE si elle réussit, FALSe en cas d’échec. Si aucune entrée n’existe dans les informations système lorsque cette fonction est appelée, la fonction retourne FALSe.  
   
 ## <a name="diagnostics"></a>Diagnostics  
- Quand **SQLRemoveTranslator** retourne false, une valeur * \* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs * \* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
+ Quand **SQLRemoveTranslator** retourne false, une valeur *\* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs *\* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur|Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur générale du programme d’installation|Une erreur s’est produite pour laquelle aucune erreur d’installation spécifique n’a été rencontrée.|  
 |ODBC_ERROR_COMPONENT_NOT_FOUND|Composant introuvable dans le registre|Le programme d’installation n’a pas pu supprimer les informations du traducteur, car il n’existait pas dans le registre ou est introuvable dans le registre.|  

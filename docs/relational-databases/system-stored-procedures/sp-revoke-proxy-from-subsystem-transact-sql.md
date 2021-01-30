@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_revoke_login_from_subsystem
 - sp_revoke_login_from_subsystem_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: b87bc8ba-3ea8-4aed-b54b-32c3d82d9d2a
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: d58ec6db017fee031a2de2e242a18281eb3b7a68
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9457a1d9dd0d9fd01a7418cd56e772902d593b6f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88469220"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211854"
 ---
 # <a name="sp_revoke_proxy_from_subsystem-transact-sql"></a>sp_revoke_proxy_from_subsystem (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -52,7 +52,7 @@ sp_revoke_proxy_from_subsystem
   
 |Valeur|Description|  
 |-----------|-----------------|  
-|**2**|Script ActiveX<br /><br /> Important le sous-système de script ActiveX sera supprimé de l’agent dans une version future de ** \* . \* \* \* ** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Évitez d'utiliser cette fonctionnalité dans de nouveaux travaux de développement, et prévoyez de modifier les applications qui utilisent actuellement cette fonctionnalité.|  
+|**2**|Script ActiveX<br /><br /> Important le sous-système de script ActiveX sera supprimé de l’agent dans une version future de **\* . \* \* \*** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Évitez d'utiliser cette fonctionnalité dans de nouveaux travaux de développement, et prévoyez de modifier les applications qui utilisent actuellement cette fonctionnalité.|  
 |**3**|Système d'exploitation (CmdExec)|  
 |**4**|Agent d'instantané de réplication|  
 |**5**|Agent de lecture du journal des réplications|  

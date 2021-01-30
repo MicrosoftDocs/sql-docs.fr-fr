@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_change_users_login
 - sp_change_users_login_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 1554b39f-274b-4ef8-898e-9e246b474333
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: c82241030646e2ef20c978cb1905cf836f9a589b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 109b2a6aa015f8f66a327714264aa986060f9a0c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88447401"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203718"
 ---
 # <a name="sp_change_users_login-transact-sql"></a>sp_change_users_login (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -54,8 +54,8 @@ sp_change_users_login [ @Action = ] 'action'
 |Valeur|Description|  
 |-----------|-----------------|  
 |**Auto_Fix**|Lie une entrée d'utilisateur de l'affichage catalogue système sys.database_principals de la base de données active à une connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] du même nom. Le compte de connexion de même nom est créé s'il n'existe pas déjà. Examinez le résultat de l’instruction **Auto_Fix** pour confirmer que le lien correct est effectivement effectué. Évitez d’utiliser des **Auto_Fix** dans des situations de sécurité.<br /><br /> Lorsque vous utilisez **Auto_Fix**, vous devez spécifier l' *utilisateur* et le *mot de passe* si la connexion n’existe pas déjà, sinon vous devez spécifier l' *utilisateur* , mais le *mot de passe* sera ignoré. la *connexion* doit avoir la valeur null. l' *utilisateur* doit être un utilisateur valide dans la base de données actuelle. Le compte de connexion ne doit être associé à aucun autre utilisateur.|  
-|**Report**|Dresse la liste des utilisateurs qui ne sont pas liés à un compte de connexion dans la base de données active et indique les identificateurs de sécurité (SID) correspondants. l' *utilisateur*, la *connexion*et le *mot de passe* doivent avoir la valeur null ou ne pas être spécifiés.<br /><br /> Pour remplacer l’option de rapport par une requête qui utilise les tables système, comparez les entrées dans **sys. server_prinicpals** avec les entrées dans **sys. database_principals**.|  
-|**Update_One**|Lie l' *utilisateur* spécifié dans la base de données active à une [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] *connexion*existante. l' *utilisateur* et la *connexion* doivent être spécifiés. le *mot de passe* doit avoir la valeur null ou n’est pas spécifié.|  
+|**Report**|Dresse la liste des utilisateurs qui ne sont pas liés à un compte de connexion dans la base de données active et indique les identificateurs de sécurité (SID) correspondants. l' *utilisateur*, la *connexion* et le *mot de passe* doivent avoir la valeur null ou ne pas être spécifiés.<br /><br /> Pour remplacer l’option de rapport par une requête qui utilise les tables système, comparez les entrées dans **sys.server_prinicpals** avec les entrées dans **sys.database_principals**.|  
+|**Update_One**|Lie l' *utilisateur* spécifié dans la base de données active à une [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] *connexion* existante. l' *utilisateur* et la *connexion* doivent être spécifiés. le *mot de passe* doit avoir la valeur null ou n’est pas spécifié.|  
   
  [ @UserNamePattern =] '*utilisateur*'  
  Nom d'un utilisateur dans la base de données active. *User* est de **type sysname**, avec NULL comme valeur par défaut.  
@@ -64,7 +64,7 @@ sp_change_users_login [ @Action = ] 'action'
  Est le nom d'un compte de connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *login* est de type **sysname**, avec NULL comme valeur par défaut.  
   
  [ @Password =] '*mot_de_passe*'  
- Mot de passe affecté à une nouvelle [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] connexion créée en spécifiant **Auto_Fix**. Si une connexion correspondante existe déjà, l’utilisateur et la connexion sont mappés et le *mot de passe* est ignoré. S’il n’existe pas de connexion correspondante, sp_change_users_login crée une nouvelle [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] connexion et attribue le *mot de* passe à la nouvelle connexion. *Password est de* **type sysname**et ne doit pas avoir la valeur null.  
+ Mot de passe affecté à une nouvelle [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] connexion créée en spécifiant **Auto_Fix**. Si une connexion correspondante existe déjà, l’utilisateur et la connexion sont mappés et le *mot de passe* est ignoré. S’il n’existe pas de connexion correspondante, sp_change_users_login crée une nouvelle [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] connexion et attribue le *mot de* passe à la nouvelle connexion. *Password est de* **type sysname** et ne doit pas avoir la valeur null.  
   
 > **IMPORTANT** Utilisez toujours un [mot de passe fort !](../../relational-databases/security/strong-passwords.md)
   
@@ -76,7 +76,7 @@ sp_change_users_login [ @Action = ] 'action'
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
 |UserName|**sysname**|Nom de l'utilisateur de la base de données.|  
-|UserSID|**varbinary (85)**|Identificateur de sécurité de l'utilisateur.|  
+|UserSID|**varbinary(85)**|Identificateur de sécurité de l'utilisateur.|  
   
 ## <a name="remarks"></a>Notes  
  Utilisez sp_change_users_login pour lier un utilisateur de la base de données active à une connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Si le compte de connexion d'un utilisateur a changé, utilisez sp_change_users_login pour lier l'utilisateur au nouveau compte de connexion sans perdre les autorisations de l'utilisateur. La nouvelle *connexion* ne peut pas être sa et l' *utilisateur* ne peut pas être dbo, guest ou un utilisateur INFORMATION_SCHEMA.  
@@ -124,11 +124,11 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédures stockées de sécurité &#40;&#41;Transact-SQL ](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
+ [Procédures stockées de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
  [CREATE LOGIN &#40;Transact-SQL&#41;](../../t-sql/statements/create-login-transact-sql.md)   
  [sp_adduser &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-adduser-transact-sql.md)   
  [sp_helplogins &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helplogins-transact-sql.md)   
- [Procédures stockées système &#40;&#41;Transact-SQL ](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
+ [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
  [sys.database_principals &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-principals-transact-sql.md)  
   
   
