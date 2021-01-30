@@ -1,13 +1,13 @@
 ---
 description: sys.sp_xtp_bind_db_resource_pool (Transact-SQL)
-title: sys. sp_xtp_bind_db_resource_pool (Transact-SQL) | Microsoft Docs
+title: sys.sp_xtp_bind_db_resource_pool (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 08/03/2016
 ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_xtp_bind_db_resource_pool_TSQL
 - sp_xtp_bind_db_resource_pool
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: c2a78073-626b-4159-996e-1808f6bfb6d2
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 436d04ea81df4b25646b4b56d8ac59ffc9fa3b91
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 73312fdb49f223f8a275ade2a13bf2d988649404
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540398"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205084"
 ---
 # <a name="syssp_xtp_bind_db_resource_pool-transact-sql"></a>sys.sp_xtp_bind_db_resource_pool (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "89540398"
   
  Si une liaison est déjà en place pour une base de données particulière, la procédure retourne une erreur.  En aucun cas, une base de données ne peut avoir plusieurs liaisons actives.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
   
 ## <a name="syntax"></a>Syntaxe  
@@ -93,7 +93,7 @@ Database 'Hekaton_DB' cannot be explicitly bound to the resource pool 'internal'
 ```  
   
 **La base de données est déjà liée à un autre pool de ressources**  
- Une base de données ne peut être liée qu'à un seul pool de ressources à un moment donné. Les liaisons de bases de données aux pools de ressources doivent être supprimées explicitement avant de pouvoir être associées à un autre pool. Consultez [sys. sp_xtp_unbind_db_resource_pool &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-xtp-unbind-db-resource-pool-transact-sql.md).  
+ Une base de données ne peut être liée qu'à un seul pool de ressources à un moment donné. Les liaisons de bases de données aux pools de ressources doivent être supprimées explicitement avant de pouvoir être associées à un autre pool. Consultez [sys.sp_xtp_unbind_db_resource_pool &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-xtp-unbind-db-resource-pool-transact-sql.md).  
 *La base de données% s est déjà liée au pool de ressources% s.  Vous devez annuler la liaison avant de pouvoir créer une nouvelle liaison.*  
   
 ```  
@@ -146,7 +146,7 @@ ELSE BEGIN
 END 
 ``` 
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Conditions requises  
   
 -   La base de données spécifiée par `database_name`, ainsi que le pool de ressources spécifié par `resource_pool_name`, doivent exister avant de pouvoir procéder à leur liaison.  
   

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_update_job
 - sp_update_job_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: cbdfea38-9e42-47f3-8fc8-5978b82e2623
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 494e284bb9df06094116d075979673bf2b033dea
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: e559c50589681f7d00b1bd6048b1e23579213bee
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89551187"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184707"
 ---
 # <a name="sp_update_job-transact-sql"></a>sp_update_job (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "89551187"
   
 
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -57,7 +57,7 @@ sp_update_job [ @job_id =] job_id | [@job_name =] 'job_name'
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @job_id = ] job_id` Numéro d’identification du travail à mettre à jour. *job_id*est de type **uniqueidentifier**.  
+`[ @job_id = ] job_id` Numéro d’identification du travail à mettre à jour. *job_id* est de type **uniqueidentifier**.  
   
 `[ @job_name = ] 'job_name'` Nom du travail. *job_name* est **de type nvarchar (128)**.  
   
@@ -75,7 +75,7 @@ sp_update_job [ @job_id =] job_id | [@job_name =] 'job_name'
   
 `[ @owner_login_name = ] 'login'` Nom de la connexion propriétaire du travail. la *connexion* est **nvarchar (128)** seuls les membres du rôle serveur fixe **sysadmin** peuvent modifier la propriété du travail.  
   
-`[ @notify_level_eventlog = ] eventlog_level` Spécifie à quel moment placer une entrée dans le journal des applications Microsoft Windows pour ce travail. *eventlog_level*est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @notify_level_eventlog = ] eventlog_level` Spécifie à quel moment placer une entrée dans le journal des applications Microsoft Windows pour ce travail. *eventlog_level* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description (action)|  
 |-----------|----------------------------|  
@@ -84,11 +84,11 @@ sp_update_job [ @job_id =] job_id | [@job_name =] 'job_name'
 |**2**|Si échec|  
 |**3**|Toujours|  
   
-`[ @notify_level_email = ] email_level` Spécifie à quel moment envoyer un message électronique à la fin de ce travail. *email_level*est de **type int**. *email_level*utilise les mêmes valeurs que *eventlog_level*.  
+`[ @notify_level_email = ] email_level` Spécifie à quel moment envoyer un message électronique à la fin de ce travail. *email_level* est de **type int**. *email_level* utilise les mêmes valeurs que *eventlog_level*.  
   
-`[ @notify_level_netsend = ] netsend_level` Spécifie à quel moment envoyer un message réseau à la fin de ce travail. *netsend_level*est de **type int**. *netsend_level*utilise les mêmes valeurs que *eventlog_level*.  
+`[ @notify_level_netsend = ] netsend_level` Spécifie à quel moment envoyer un message réseau à la fin de ce travail. *netsend_level* est de **type int**. *netsend_level* utilise les mêmes valeurs que *eventlog_level*.  
   
-`[ @notify_level_page = ] page_level` Spécifie à quel moment envoyer une page à la fin de ce travail. *page_level* est de **type int**. *page_level*utilise les mêmes valeurs que *eventlog_level*.  
+`[ @notify_level_page = ] page_level` Spécifie à quel moment envoyer une page à la fin de ce travail. *page_level* est de **type int**. *page_level* utilise les mêmes valeurs que *eventlog_level*.  
   
 `[ @notify_email_operator_name = ] 'operator_name'` Nom de l’opérateur auquel le message électronique est envoyé lorsque *email_level* est atteint. *email_name* est **de type nvarchar (128)**.  
   
@@ -96,7 +96,7 @@ sp_update_job [ @job_id =] job_id | [@job_name =] 'job_name'
   
 `[ @notify_page_operator_name = ] 'page_operator'` Nom de l’opérateur auquel une page est envoyée. *page_operator* est **de type nvarchar (128)**.  
   
-`[ @delete_level = ] delete_level` Spécifie à quel moment supprimer le travail. *delete_value*est de **type int**. *delete_level*utilise les mêmes valeurs que *eventlog_level*.  
+`[ @delete_level = ] delete_level` Spécifie à quel moment supprimer le travail. *delete_value* est de **type int**. *delete_level* utilise les mêmes valeurs que *eventlog_level*.  
   
 `[ @automatic_post = ] automatic_post` Réservé.  
   

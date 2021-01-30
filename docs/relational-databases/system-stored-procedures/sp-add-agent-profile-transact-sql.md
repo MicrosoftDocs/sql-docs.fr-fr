@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_add_agent_profile
 - sp_add_agent_profile_TSQL
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5c246a33-2c21-4a77-9c2a-a2c9f0c5dda1
 author: mashamsft
 ms.author: mathoma
-ms.openlocfilehash: 379e418cbca4b93fe38bf640f62cd357ef6b5a48
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: bd89f620f2640c9e88f03ef44909c844187d8c8f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88419393"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186082"
 ---
 # <a name="sp_add_agent_profile-transact-sql"></a>sp_add_agent_profile (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -57,13 +57,13 @@ sp_add_agent_profile [ [ @profile_id= ] profile_id OUTPUT ]
 |**4**|Agent de fusion|  
 |**9**|Agent de lecture de la file d'attente|  
   
-`[ @profile_type = ] profile_type` Type de profil. *profile_type* est de **type int**, avec **1**comme valeur par défaut.  
+`[ @profile_type = ] profile_type` Type de profil. *profile_type* est de **type int**, avec **1** comme valeur par défaut.  
   
  **0** indique un profil système. **1** indique un profil personnalisé. Seuls les profils personnalisés peuvent être créés à l’aide de cette procédure stockée. par conséquent, la seule valeur valide est **1**. Crée uniquement des [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] profils système.  
   
 `[ @description = ] 'description'` Description du profil. *Description* est de type **nvarchar (3000)**, sans valeur par défaut.  
   
-`[ @default = ] default` Indique si le profil est la valeur par défaut pour *agent_type * *.* la *valeur par défaut* est **bit**, avec **0**comme valeur par défaut. **1** indique que le profil ajouté deviendra le nouveau profil par défaut de l’agent spécifié par *agent_type*.  
+`[ @default = ] default` Indique si le profil est la valeur par défaut pour *agent_type * *.* la *valeur par défaut* est **bit**, avec **0** comme valeur par défaut. **1** indique que le profil ajouté deviendra le nouveau profil par défaut de l’agent spécifié par *agent_type*.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

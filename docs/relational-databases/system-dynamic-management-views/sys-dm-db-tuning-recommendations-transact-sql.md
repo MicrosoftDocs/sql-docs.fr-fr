@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_db_tuning_recommendations
 - dm_db_tuning_recommendations
@@ -22,12 +22,12 @@ ms.assetid: ced484ae-7c17-4613-a3f9-6d8aba65a110
 author: jovanpop-msft
 ms.author: jovanpop
 monikerRange: =azuresqldb-current||>=sql-server-2017||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: cad75b88b14fd9bc64acbbd8b167619d3dbcc2e3
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b9037aaefe27cd50deb9b61af423a8074ab86f65
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472880"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204804"
 ---
 # <a name="sysdm_db_tuning_recommendations-transact-sql"></a>\_recommandations pour \_ le paramétrage de sys.DM DB \_ (Transact-SQL)
 [!INCLUDE[sqlserver2017-asdb](../../includes/applies-to-version/sqlserver2017-asdb.md)]
@@ -54,15 +54,15 @@ ms.locfileid: "97472880"
 | **durée de l’action de restauration \_ \_** | **time** | Durée de l’action de restauration. |
 | **annuler \_ l’action \_ initiée \_ par** | **nvarchar(4000)** | `User` = Le plan recommandé par l’utilisateur n’est pas forcé manuellement. <br /> `System` = Le système rétablit automatiquement la recommandation. |
 | **rétablir l' \_ \_ heure d’initiation \_ de l’action** | **datetime2** | Date à laquelle la recommandation a été annulée. |
-| **enjeu** | **int** | Valeur/impact estimé pour cette recommandation sur l’échelle 0-100 (plus la meilleure est grande) |
+| **score** | **int** | Valeur/impact estimé pour cette recommandation sur l’échelle 0-100 (plus la meilleure est grande) |
 | **plus** | **nvarchar(max)** | Document JSON qui contient plus de détails sur la recommandation. Les champs suivants sont disponibles :<br /><br />`planForceDetails`<br />-    `queryId` : \_ ID de requête de la requête régressée.<br />-    `regressedPlanId` -plan_id du plan régressé.<br />-   `regressedPlanExecutionCount` -Nombre d’exécutions de la requête avec un plan régressé avant la détection de la régression.<br />-    `regressedPlanAbortedCount` -Nombre d’erreurs détectées pendant l’exécution du plan régressé.<br />-    `regressedPlanCpuTimeAverage` -Temps processeur moyen (en microsecondes) consommé par la requête régressée avant la détection de la régression.<br />-    `regressedPlanCpuTimeStddev` -Écart type du temps processeur consommé par la requête régressée avant la détection de la régression.<br />-    `recommendedPlanId` -plan_id du plan qui doit être forcé.<br />-   `recommendedPlanExecutionCount`-Nombre d’exécutions de la requête avec le plan qui doit être forcé avant la détection de la régression.<br />-    `recommendedPlanAbortedCount` -Nombre d’erreurs détectées pendant l’exécution du plan qui doit être forcé.<br />-    `recommendedPlanCpuTimeAverage` -Temps processeur moyen (en microsecondes) consommé par la requête exécutée avec le plan qui doit être forcé (calculé avant la détection de la régression).<br />-    `recommendedPlanCpuTimeStddev` Écart type du temps processeur consommé par la requête régressée avant la détection de la régression.<br /><br />`implementationDetails`<br />-  `method` -Méthode qui doit être utilisée pour corriger la régression. La valeur est toujours `TSql` .<br />-    `script` - [!INCLUDE[tsql_md](../../includes/tsql-md.md)] script à exécuter pour forcer le plan recommandé. |
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Les informations retournées par `sys.dm_db_tuning_recommendations` sont mises à jour lorsque le moteur de base de données identifie la régression potentielle des performances des requêtes et n’est pas conservée. Les recommandations sont conservées uniquement jusqu’au [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] redémarrage de. Les administrateurs de base de données doivent effectuer régulièrement des copies de sauvegarde de la recommandation de paramétrage si elles souhaitent les conserver après le recyclage du serveur. 
 
  `currentValue` le champ de la `state` colonne peut avoir les valeurs suivantes :
  
- | État | Description |
+ | Statut | Description |
  |--------|-------------|
  | `Active` | La recommandation est active et n’est pas encore appliquée. L’utilisateur peut prendre un script de recommandation et l’exécuter manuellement. |
  | `Verifying` | La recommandation est appliquée par [!INCLUDE[ssde_md](../../includes/ssde_md.md)] et le processus de vérification interne compare les performances du plan forcé avec le plan régressé. |

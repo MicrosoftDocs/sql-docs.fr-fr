@@ -5,7 +5,7 @@ ms.date: 03/25/2019
 ms.reviewer: ''
 ms.prod: sql
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 ms.custom: ''
 ms.author: mibar
 author: barmichal
@@ -24,12 +24,12 @@ helpviewer_keywords:
 - information types
 - rank
 monikerRange: '>= sql-server-ver15 || = azuresqldb-current || = azure-sqldw-latest'
-ms.openlocfilehash: 908151d19df364171063bffcd280786a354c2654
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 69e0d1958bdce992626d823f7da8ce1871cc4632
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472950"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182482"
 ---
 # <a name="syssensitivity_classifications-transact-sql"></a>sys.sensitivity_classifications (Transact-SQL)
 [!INCLUDE [SQL Server ASDB, ASDBMI, ASDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
@@ -50,7 +50,7 @@ Retourne une ligne pour chaque élément classifié dans la base de données.
 |**rank_desc**|**sysname**|Représentation textuelle du classement :  <br><br>AUCUN, FAIBLE, MOYEN, ÉLEVÉ, CRITIQUE|  
 | &nbsp; | &nbsp; | &nbsp; |
 
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
 
 - Cette vue fournit une visibilité de l’état de classification de la base de données. Il peut être utilisé pour gérer les classifications de base de données, ainsi que pour générer des rapports.
 - Actuellement, seule la classification des colonnes de base de données est prise en charge.

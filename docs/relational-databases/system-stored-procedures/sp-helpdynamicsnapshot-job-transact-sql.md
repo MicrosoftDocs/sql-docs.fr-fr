@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpdynamicsnapshot_TSQL
 - sp_helpdynamicsnapshot_job_TSQL
@@ -22,19 +22,19 @@ helpviewer_keywords:
 ms.assetid: d6dfdf26-f874-495f-a8a6-8780699646d7
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: b11598fc8dacc27f88856e2afdc3adced41470f7
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: faf8fcfe5636dc588b111701c5b2cf0668feed78
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549661"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204438"
 ---
 # <a name="sp_helpdynamicsnapshot_job-transact-sql"></a>sp_helpdynamicsnapshot_job (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Renvoie des informations sur les travaux d'un Agent qui génèrent des instantanés filtrés. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,15 +46,15 @@ sp_helpdynamicsnapshot_job [ [ @publication = ] 'publication' ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @publication = ] 'publication'` Nom de la publication. *publication* est de **type sysname**, avec la valeur par défaut **%** , qui retourne des informations sur tous les travaux d’instantané de données filtrées qui correspondent aux *dynamic_snapshot_jobid*et *dynamic_snapshot_jobname*spécifiés pour toutes les publications.  
+`[ @publication = ] 'publication'` Nom de la publication. *publication* est de **type sysname**, avec la valeur par défaut **%** , qui retourne des informations sur tous les travaux d’instantané de données filtrées qui correspondent aux *dynamic_snapshot_jobid* et *dynamic_snapshot_jobname* spécifiés pour toutes les publications.  
   
-`[ @dynamic_snapshot_jobname = ] 'dynamic_snapshot_jobname'` Nom d’un travail d’instantané de données filtrées. *dynamic_snapshot_jobname*est de **type sysname**, avec **%** ', par défaut, qui retourne toutes les tâches dynamiques pour une publication avec le *dynamic_snapshot_jobid*spécifié. Si aucun nom de travail n'est défini explicitement lors de la création du travail, le nom du travail a le format suivant :  
+`[ @dynamic_snapshot_jobname = ] 'dynamic_snapshot_jobname'` Nom d’un travail d’instantané de données filtrées. *dynamic_snapshot_jobname* est de **type sysname**, avec **%** ', par défaut, qui retourne toutes les tâches dynamiques pour une publication avec le *dynamic_snapshot_jobid* spécifié. Si aucun nom de travail n'est défini explicitement lors de la création du travail, le nom du travail a le format suivant :  
   
 ```  
 'dyn_' + <name of the standard snapshot job> + <GUID>  
 ```  
   
-`[ @dynamic_snapshot_jobid = ] 'dynamic_snapshot_jobid'` Identificateur d’un travail d’instantané de données filtrées. *dynamic_snapshot_jobid*est de type **uniqueidentifier**, avec NULL comme valeur par défaut, qui retourne tous les travaux d’instantané correspondant à la *dynamic_snapshot_jobname*spécifiée.  
+`[ @dynamic_snapshot_jobid = ] 'dynamic_snapshot_jobid'` Identificateur d’un travail d’instantané de données filtrées. *dynamic_snapshot_jobid* est de type **uniqueidentifier**, avec NULL comme valeur par défaut, qui retourne tous les travaux d’instantané correspondant à la *dynamic_snapshot_jobname* spécifiée.  
   
 ## <a name="result-sets"></a>Jeux de résultats  
   

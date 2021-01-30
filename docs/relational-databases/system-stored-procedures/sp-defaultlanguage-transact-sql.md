@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_defaultlanguage
 - sp_defaultlanguage_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 908d01cc-e704-45d9-9e85-d2df6da3e6f5
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 5eb94ea64b22f233d1c7c1e5d508fc0704f931ab
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 9c382a442e6b87220f2650e65adc03089f2014b3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549856"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195561"
 ---
 # <a name="sp_defaultlanguage-transact-sql"></a>sp_defaultlanguage (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "89549856"
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Utilisez à la place [ALTER LOGIN](../../t-sql/statements/alter-login-transact-sql.md) .  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,7 +46,7 @@ sp_defaultlanguage [ @loginame = ] 'login'
 ## <a name="arguments"></a>Arguments  
 `[ @loginame = ] 'login'` Nom de la connexion. *login* est de **type sysname**, sans valeur par défaut. la *connexion* peut être une [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] connexion existante ou un utilisateur ou un groupe Windows.  
   
-`[ @language = ] 'language'` Est la langue par défaut de la connexion. *Language* est de **type sysname**, avec NULL comme valeur par défaut. la *langue* doit être une langue valide sur le serveur. Si la *langue* n’est pas spécifiée, la *langue* est définie sur la langue par défaut du serveur. la langue par défaut est définie **sp_configure** par la sp_configure **langue par défaut**de la variable de configuration. Le changement de la langue par défaut du serveur n'affecte pas la langue par défaut des connexions existantes.  
+`[ @language = ] 'language'` Est la langue par défaut de la connexion. *Language* est de **type sysname**, avec NULL comme valeur par défaut. la *langue* doit être une langue valide sur le serveur. Si la *langue* n’est pas spécifiée, la *langue* est définie sur la langue par défaut du serveur. la langue par défaut est définie  par la sp_configure **langue par défaut** de la variable de configuration. Le changement de la langue par défaut du serveur n'affecte pas la langue par défaut des connexions existantes.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  0 (réussite) ou 1 (échec)  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - cursor library [ODBC], error codes
 - error codes [ODBC], cursor library
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9713480e-8744-4f37-a630-20871590d4a1
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 414de02eb7145006af4faa543735888082a3d6ff
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6c9a4d7a68ddaf9f569a04acd8be81b993a636b1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88466134"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193259"
 ---
 # <a name="odbc-cursor-library-error-codes"></a>Codes d’erreur de la bibliothèque de curseurs ODBC
 > [!IMPORTANT]  

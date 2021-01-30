@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLConnect
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 59075e46-a0ca-47bf-972a-367b08bb518d
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 714bc6f69a72609ee266effff71f1898d62ec7d6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 90d982db52e0656fba25eb54065ea84b751a7b18
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461201"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206138"
 ---
 # <a name="sqlconnect-function"></a>Fonction SQLConnect
 **Conformité**  
@@ -76,7 +76,7 @@ SQLRETURN SQLConnect(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLConnect** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *comme HandleType* de SQL_HANDLE_DBC et un *handle* de *ConnectionHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLConnect** et explique chacune d’elles dans le contexte de cette fonction. la notation « (DM) » précède les descriptions des SQLSTATEs retournées par le gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur|Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information spécifique au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |01S02 ne|Valeur d’option modifiée|Le pilote ne prenait pas en charge la valeur spécifiée de l’argument *ValuePtr* dans **SQLSetConnectAttr** et substituait une valeur similaire. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
@@ -85,12 +85,12 @@ SQLRETURN SQLConnect(
 |08004|Le serveur a rejeté la connexion|La source de données a rejeté l’établissement de la connexion pour des raisons définies par l’implémentation.|  
 |08S01|Échec de la liaison de communication|Le lien de communication entre le pilote et la source de données à laquelle le pilote essayait de se connecter a échoué avant la fin du traitement de la fonction.|  
 |28000|Spécification d’autorisation non valide|La valeur spécifiée pour l’argument *nom d’utilisateur* ou la valeur spécifiée pour l' *authentification* de l’argument n’a pas respecté les restrictions définies par la source de données.|  
-|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon * \* MessageText* décrit l’erreur et sa cause.|  
+|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon *\* MessageText* décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|(DM) le gestionnaire de pilotes n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou l’achèvement de la fonction.|  
 |HY008|Opération annulée|Le traitement asynchrone a été activé pour *ConnectionHandle*. La fonction **SQLConnect** a été appelée, et avant la fin de l’exécution, la [fonction SQLCancelHandle](../../../odbc/reference/syntax/sqlcancelhandle-function.md) a été appelée sur le *ConnectionHandle*, puis la fonction **SQLConnect** a été appelée à nouveau sur le *ConnectionHandle*.<br /><br /> Ou bien, la fonction **SQLConnect** a été appelée et avant la fin de l’exécution, **SQLCancelHandle** a été appelé sur le *ConnectionHandle* à partir d’un thread différent dans une application multithread.|  
 |HY010|Erreur de séquence de fonction|(DM) une fonction d’exécution asynchrone (pas celle-ci) a été appelée pour le *ConnectionHandle* et était toujours en cours d’exécution quand cette fonction a été appelée.|  
 |HY013|Erreur de gestion de la mémoire|Impossible de traiter l’appel de fonction, car les objets mémoire sous-jacents sont inaccessibles, probablement en raison de conditions de mémoire insuffisante.|  
-|HY090|Longueur de chaîne ou de mémoire tampon non valide|(DM) la valeur spécifiée pour l’argument *NameLength1*, *NameLength2*ou *NameLength3* est inférieure à 0, mais n’est pas égale à SQL_NTS.<br /><br /> (DM) la valeur spécifiée pour l’argument *NameLength1* a dépassé la longueur maximale pour un nom de source de données.|  
+|HY090|Longueur de chaîne ou de mémoire tampon non valide|(DM) la valeur spécifiée pour l’argument *NameLength1*, *NameLength2* ou *NameLength3* est inférieure à 0, mais n’est pas égale à SQL_NTS.<br /><br /> (DM) la valeur spécifiée pour l’argument *NameLength1* a dépassé la longueur maximale pour un nom de source de données.|  
 |HYT00|Délai expiré|Le délai d’expiration de la requête a expiré avant la fin de la connexion à la source de données. Le délai d’attente est défini par le biais de **SQLSetConnectAttr**, SQL_ATTR_LOGIN_TIMEOUT.|  
 |HY114|Le pilote ne prend pas en charge l’exécution de fonctions asynchrones au niveau de la connexion|(DM) l’application a activé l’opération asynchrone sur le handle de connexion avant d’établir la connexion. Toutefois, le pilote ne prend pas en charge les opérations asynchrones sur le handle de connexion.|  
 |HYT01|Délai d’attente de connexion expiré|Le délai d’attente de connexion a expiré avant que la source de données ait répondu à la demande. Le délai d’expiration de la connexion est défini par le biais de **SQLSetConnectAttr**, SQL_ATTR_CONNECTION_TIMEOUT.|  
@@ -101,9 +101,9 @@ SQLRETURN SQLConnect(
 |IM005|Échec du SQLAllocHandle du pilote sur SQL_HANDLE_DBC|(DM) au cours de **SQLConnect**, le gestionnaire de pilotes a appelé la fonction **SQLAllocHandle** du pilote avec un *comme HandleType* de SQL_HANDLE_DBC et le pilote a renvoyé une erreur.|  
 |IM006|Échec de SQLSetConnectAttr du pilote|Au cours de **SQLConnect**, le gestionnaire de pilotes a appelé la fonction **SQLSetConnectAttr** du pilote et le pilote a renvoyé une erreur. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |IM009|Impossible de se connecter à la DLL de traduction|Le pilote n’a pas pu se connecter à la DLL de traduction spécifiée pour la source de données.|  
-|IM010|Le nom de la source de données est trop long|Le nom du * \* serveur* (DM) est plus long que SQL_MAX_DSN_LENGTH caractères.|  
+|IM010|Le nom de la source de données est trop long|Le nom du *\* serveur* (DM) est plus long que SQL_MAX_DSN_LENGTH caractères.|  
 |IM014|Le nom de source de donnée spécifié contient une incompatibilité d’architecture entre le pilote et l’application|(DM) l’application 32 bits utilise un DSN se connectant à un pilote 64 bits ; ou vice versa.|  
-|IM015|Échec de SQLConnect sur SQL_HANDLE_DBC_INFO_HANDLE du pilote|Si un pilote retourne SQL_ERROR, le gestionnaire de pilotes renverra SQL_ERROR à l’application et la connexion échouera.<br /><br /> Pour plus d’informations sur la SQL_HANDLE_DBC_INFO_TOKEN, consultez [développement de la reconnaissance des pools de connexions dans un pilote ODBC](../../../odbc/reference/develop-driver/developing-connection-pool-awareness-in-an-odbc-driver.md).|  
+|IM015|Échec de SQLConnect sur SQL_HANDLE_DBC_INFO_HANDLE du pilote|Si un pilote retourne SQL_ERROR, le gestionnaire de pilotes renverra SQL_ERROR à l’application et la connexion échouera.<br /><br /> Pour plus d’informations sur la SQL_HANDLE_DBC_INFO_TOKEN, consultez [développement de la sensibilisation aux Connection-Pool dans un pilote ODBC](../../../odbc/reference/develop-driver/developing-connection-pool-awareness-in-an-odbc-driver.md).|  
 |IM017|L’interrogation est désactivée en mode de notification asynchrone|Chaque fois que le modèle de notification est utilisé, l’interrogation est désactivée.|  
 |IM018|**SQLCompleteAsync** n’a pas été appelé pour terminer l’opération asynchrone précédente sur ce handle.|Si l’appel de fonction précédent sur le descripteur retourne SQL_STILL_EXECUTING et si le mode de notification est activé, **SQLCompleteAsync** doit être appelé sur le handle pour effectuer un traitement postérieur et terminer l’opération.|  
 |S1118|Le pilote ne prend pas en charge la notification asynchrone|Si le pilote ne prend pas en charge les notifications asynchrones, vous ne pouvez pas définir SQL_ATTR_ASYNC_DBC_EVENT ou SQL_ATTR_ASYNC_DBC_RETCODE_PTR.|  
@@ -111,7 +111,7 @@ SQLRETURN SQLConnect(
 ## <a name="comments"></a>Commentaires  
  Pour plus d’informations sur la raison pour laquelle une application utilise **SQLConnect**, consultez [connexion avec SQLConnect](../../../odbc/reference/develop-app/connecting-with-sqlconnect.md).  
   
- Le gestionnaire de pilotes ne se connecte pas à un pilote tant que l’application n’a pas appelé une fonction (**SQLConnect**, **SQLDriverConnect**ou **SQLBrowseConnect**) pour se connecter au pilote. Jusqu’à ce stade, le gestionnaire de pilotes fonctionne avec ses propres Handles et gère les informations de connexion. Lorsque l’application appelle une fonction de connexion, le gestionnaire de pilotes vérifie si un pilote est actuellement connecté pour le *ConnectionHandle*spécifié :  
+ Le gestionnaire de pilotes ne se connecte pas à un pilote tant que l’application n’a pas appelé une fonction (**SQLConnect**, **SQLDriverConnect** ou **SQLBrowseConnect**) pour se connecter au pilote. Jusqu’à ce stade, le gestionnaire de pilotes fonctionne avec ses propres Handles et gère les informations de connexion. Lorsque l’application appelle une fonction de connexion, le gestionnaire de pilotes vérifie si un pilote est actuellement connecté pour le *ConnectionHandle* spécifié :  
   
 -   Si un pilote n’est pas connecté à, le gestionnaire de pilotes se connecte au pilote et appelle **SQLAllocHandle** avec un *comme HandleType* de SQL_HANDLE_ENV, **SQLAllocHandle** avec un *comme HandleType* de SQL_HANDLE_DBC, **SQLSetConnectAttr** (si l’application a spécifié des attributs de connexion) et la fonction de connexion dans le pilote. Le gestionnaire de pilotes retourne SQLSTATE IM006 (échec de **SQLSetConnectOption** du pilote) et SQL_SUCCESS_WITH_INFO pour la fonction de connexion si le pilote a retourné une erreur pour **SQLSetConnectAttr**. Pour plus d’informations, consultez [connexion à une source de données ou à un pilote](../../../odbc/reference/develop-app/connecting-to-a-data-source-or-driver.md).  
   
@@ -149,9 +149,9 @@ SQLRETURN SQLConnect(
   
  Une fois que le regroupement de connexions a été activé, **SQLAllocHandle** avec un *comme HandleType* de SQL_HANDLE_ENV est appelé pour allouer un environnement. L’environnement alloué par cet appel est un environnement partagé, car le regroupement de connexions a été activé. Toutefois, l’environnement qui sera utilisé n’est pas déterminé tant que **SQLAllocHandle** avec un *comme HandleType* de SQL_HANDLE_DBC n’est pas appelé.  
   
- **SQLAllocHandle** avec un *comme HandleType* de SQL_HANDLE_DBC est appelé pour allouer une connexion. Le gestionnaire de pilotes tente de trouver un environnement partagé existant qui correspond aux attributs d’environnement définis par l’application. Si aucun environnement de ce type n’existe, il est créé en tant qu' *environnement partagé*implicite. Si un environnement partagé correspondant est trouvé, le handle d’environnement est retourné à l’application et son décompte de références est incrémenté.  
+ **SQLAllocHandle** avec un *comme HandleType* de SQL_HANDLE_DBC est appelé pour allouer une connexion. Le gestionnaire de pilotes tente de trouver un environnement partagé existant qui correspond aux attributs d’environnement définis par l’application. Si aucun environnement de ce type n’existe, il est créé en tant qu' *environnement partagé* implicite. Si un environnement partagé correspondant est trouvé, le handle d’environnement est retourné à l’application et son décompte de références est incrémenté.  
   
- Toutefois, la connexion qui sera utilisée n’est pas déterminée tant que **SQLConnect** n’est pas appelé. À ce stade, le gestionnaire de pilotes tente de trouver une connexion existante dans le pool de connexions qui correspond aux critères demandés par l’application. Ces critères incluent les options de connexion demandées dans l’appel à **SQLConnect** (les valeurs des mots clés *ServerName*, *username*et *Authentication* ) et tous les attributs de connexion définis depuis **SQLAllocHandle** avec un *comme HandleType* de SQL_HANDLE_DBC a été appelé. Le gestionnaire de pilotes vérifie ces critères par rapport aux mots clés et attributs de connexion correspondants dans les connexions dans le pool. Si une correspondance est trouvée, la connexion dans le pool est utilisée. Si aucune correspondance n’est trouvée, une nouvelle connexion est créée.  
+ Toutefois, la connexion qui sera utilisée n’est pas déterminée tant que **SQLConnect** n’est pas appelé. À ce stade, le gestionnaire de pilotes tente de trouver une connexion existante dans le pool de connexions qui correspond aux critères demandés par l’application. Ces critères incluent les options de connexion demandées dans l’appel à **SQLConnect** (les valeurs des mots clés *ServerName*, *username* et *Authentication* ) et tous les attributs de connexion définis depuis **SQLAllocHandle** avec un *comme HandleType* de SQL_HANDLE_DBC a été appelé. Le gestionnaire de pilotes vérifie ces critères par rapport aux mots clés et attributs de connexion correspondants dans les connexions dans le pool. Si une correspondance est trouvée, la connexion dans le pool est utilisée. Si aucune correspondance n’est trouvée, une nouvelle connexion est créée.  
   
  Si l’attribut d’environnement SQL_ATTR_CP_MATCH est défini sur SQL_CP_STRICT_MATCH, la correspondance doit être exacte pour qu’une connexion dans le pool soit utilisée. Si l’attribut d’environnement SQL_ATTR_CP_MATCH est défini sur SQL_CP_RELAXED_MATCH, les options de connexion dans l’appel à **SQLConnect** doivent correspondre, mais tous les attributs de connexion doivent correspondre.  
   

@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 06/10/2016
 ms.service: sql-database
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_database_copies_TSQL
 - sys.dm_database_copies
@@ -20,12 +20,12 @@ ms.assetid: d03d4657-86d1-4496-97e6-cc3bc292e0b1
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: ef0c92766cfb03f56dfc08a476cb7e81dbf4743d
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: a9a6e570b6c535620152f49947b4d4e289a6ff2a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095177"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195099"
 ---
 # <a name="sysdm_database_copies-azure-sql-database"></a>sys.dm_database_copies (Azure SQL Database)
 [!INCLUDE[Azure SQL Database](../../includes/applies-to-version/asdb.md)]

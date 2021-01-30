@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2c83a4a7-720b-4435-a3b5-788c29f56949
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: f280208aa768997e63d0df2c9ee9fc4d8a079aca
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 8713dba06964ce44ccaa81b5f03ec44e1b30beaa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092599"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194623"
 ---
 # <a name="filestream-and-filetable-catalog-views-transact-sql"></a>Affichages catalogue FILESTREAM et FileTable (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQLPoolConnect function [ODBC]
 ms.assetid: 41322737-890d-4a81-aed2-06cc3d546962
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 30e2ce61baf861551e51773aea7ce6dcaf020cf6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8317e159a5a438bb22e8077f3a6635a79f9baefd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88487218"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204557"
 ---
 # <a name="sqlpoolconnect-function"></a>SQLPoolConnect, fonction
 **Conformité**  
@@ -72,7 +72,7 @@ SQLRETURN  SQLPoolConnect(
   
  Chaque fois qu’un pilote retourne SQL_ERROR ou SQL_INVALID_HANDLE, le gestionnaire de pilotes renvoie l’erreur à l’application (dans [SQLConnect](../../../odbc/reference/syntax/sqlconnect-function.md) ou [SQLDriverConnect](../../../odbc/reference/syntax/sqldriverconnect-function.md)).  
   
- Chaque fois qu’un pilote retourne SQL_SUCCESS_WITH_INFO, le gestionnaire de pilotes obtient les informations de diagnostic à partir de *hDbcInfoToken*et renvoie SQL_SUCCESS_WITH_INFO à l’application dans [SQLConnect](../../../odbc/reference/syntax/sqlconnect-function.md) et [SQLDriverConnect](../../../odbc/reference/syntax/sqldriverconnect-function.md).  
+ Chaque fois qu’un pilote retourne SQL_SUCCESS_WITH_INFO, le gestionnaire de pilotes obtient les informations de diagnostic à partir de *hDbcInfoToken* et renvoie SQL_SUCCESS_WITH_INFO à l’application dans [SQLConnect](../../../odbc/reference/syntax/sqlconnect-function.md) et [SQLDriverConnect](../../../odbc/reference/syntax/sqldriverconnect-function.md).  
   
  Quand une application utilise [SQLConnect](../../../odbc/reference/syntax/sqlconnect-function.md), *wszOutConnectString* est une mémoire tampon null (les trois derniers paramètres ont tous la valeur NULL, 0, null). Dans le cas contraire, le pilote doit retourner la chaîne de connexion de sortie, qui sera retournée à l’appel de [fonction SQLDriverConnect](../../../odbc/reference/syntax/sqldriverconnect-function.md) de l’application.  
   

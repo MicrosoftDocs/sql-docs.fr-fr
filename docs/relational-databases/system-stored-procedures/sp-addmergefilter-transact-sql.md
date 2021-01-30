@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addmergefilter
 - sp_addmergefilter_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 4c118cb1-2008-44e2-a797-34b7dc34d6b1
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 662fc45f9d2d4377bdb9a02ce69047a469d5bfe7
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 836f493a3ae4ca6d3f17928af0d5faa367bdd1b4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546278"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192337"
 ---
 # <a name="sp_addmergefilter-transact-sql"></a>sp_addmergefilter (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Ajoute un nouveau filtre de fusion pour créer une partition basée sur une jointure avec une autre table. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,20 +48,20 @@ sp_addmergefilter [ @publication = ] 'publication'
 ## <a name="arguments"></a>Arguments  
 `[ @publication = ] 'publication'` Nom de la publication dans laquelle le filtre de fusion est ajouté. *publication* est de **type sysname**, sans valeur par défaut.  
   
-`[ @article = ] 'article'` Nom de l’article sur lequel le filtre de fusion est ajouté. *article* est de **type sysname**et n’a pas de valeur par défaut.  
+`[ @article = ] 'article'` Nom de l’article sur lequel le filtre de fusion est ajouté. *article* est de **type sysname** et n’a pas de valeur par défaut.  
   
-`[ @filtername = ] 'filtername'` Nom du filtre. *FilterName* est un paramètre obligatoire. *FilterName*est de **type sysname**, sans valeur par défaut.  
+`[ @filtername = ] 'filtername'` Nom du filtre. *FilterName* est un paramètre obligatoire. *FilterName* est de **type sysname**, sans valeur par défaut.  
   
 `[ @join_articlename = ] 'join_articlename'` Article parent auquel l’article enfant, spécifié par *l’article*, doit être joint à l’aide de la clause join spécifiée par *join_filterclause*, afin de déterminer les lignes de l’article enfant qui répondent au critère de filtre du filtre de fusion. *join_articlename* est de **type sysname**, sans valeur par défaut. L’article doit figurer dans la publication donnée par *publication*.  
   
 `[ @join_filterclause = ] join_filterclause` Clause de jointure qui doit être utilisée pour joindre l’article enfant spécifié *par l’article et l'* article parent spécifié par *join_article*, afin de déterminer les lignes qualifiant le filtre de fusion. *join_filterclause* est **de type nvarchar (1000)**.  
   
-`[ @join_unique_key = ] join_unique_key` Spécifie si la jointure entre l' *article enfant et l'* article parent *join_article*est un-à-plusieurs, un-à-un, plusieurs-à-un ou plusieurs-à-plusieurs. *join_unique_key* est de **type int**, avec 0 comme valeur par défaut. **0** indique une jointure plusieurs-à-un ou plusieurs-à-plusieurs. **1** indique une jointure un-à-un ou un-à-plusieurs. Cette valeur est **1** lorsque les colonnes de jointure forment une clé unique dans *join_article*, ou si *join_filterclause* se trouve entre une clé étrangère dans *l’article* et une clé primaire dans *join_article*.  
+`[ @join_unique_key = ] join_unique_key` Spécifie si la jointure entre l' *article enfant et l'* article parent *join_article* est un-à-plusieurs, un-à-un, plusieurs-à-un ou plusieurs-à-plusieurs. *join_unique_key* est de **type int**, avec 0 comme valeur par défaut. **0** indique une jointure plusieurs-à-un ou plusieurs-à-plusieurs. **1** indique une jointure un-à-un ou un-à-plusieurs. Cette valeur est **1** lorsque les colonnes de jointure forment une clé unique dans *join_article*, ou si *join_filterclause* se trouve entre une clé étrangère dans *l’article* et une clé primaire dans *join_article*.  
   
 > [!CAUTION]  
 >  N’affectez la valeur **1** à ce paramètre que si vous avez une contrainte sur la colonne de jointure dans la table sous-jacente pour l’article parent qui garantit l’unicité. Si *join_unique_key* a la valeur **1** de manière incorrecte, la non-convergence des données peut se produire.  
   
-`[ @force_invalidate_snapshot = ] force_invalidate_snapshot` Confirme que l’action entreprise par cette procédure stockée peut invalider un instantané existant. *force_invalidate_snapshot* est un **bit**, avec **0**comme valeur par défaut.  
+`[ @force_invalidate_snapshot = ] force_invalidate_snapshot` Confirme que l’action entreprise par cette procédure stockée peut invalider un instantané existant. *force_invalidate_snapshot* est un **bit**, avec **0** comme valeur par défaut.  
   
  **0** indique que les modifications apportées à l’article de fusion n’entraînent pas la non-validité de l’instantané. Si la procédure stockée détecte que la modification requiert un nouvel instantané, une erreur est générée et aucune modification n'est effectuée.  
   
@@ -73,7 +73,7 @@ sp_addmergefilter [ @publication = ] 'publication'
   
  **1** indique que les modifications apportées à l’article de fusion entraînent la réinitialisation des abonnements existants et autorisent la réinitialisation de l’abonnement.  
   
-`[ @filter_type = ] filter_type` Spécifie le type de filtre ajouté. *filter_type* est de **type tinyint**et peut prendre l’une des valeurs suivantes.  
+`[ @filter_type = ] filter_type` Spécifie le type de filtre ajouté. *filter_type* est de **type tinyint** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

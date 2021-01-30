@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_syspolicy_rename_policy_category_TSQL
 - sp_syspolicy_rename_policy_category
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 8a9c4a3a-91e8-435e-b721-e0293c92be3e
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: b350a19bb19defbd1510f7ce13a82729c2cbe779
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 41bacd4093ebaf3337d311d0a3e2b4b20d246f90
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88446741"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203128"
 ---
 # <a name="sp_syspolicy_rename_policy_category-transact-sql"></a>sp_syspolicy_rename_policy_category (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -41,11 +41,11 @@ sp_syspolicy_rename_policy_category { [ @name = ] 'name' | [ @policy_category_id
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @name = ] 'name'` Nom de la catégorie de stratégie que vous souhaitez renommer. *Name* est de **type sysname**et doit être spécifié si *policy_category_id* a la valeur null.  
+`[ @name = ] 'name'` Nom de la catégorie de stratégie que vous souhaitez renommer. *Name* est de **type sysname** et doit être spécifié si *policy_category_id* a la valeur null.  
   
-`[ @policy_category_id = ] policy_category_id` Est l’identificateur de la catégorie de stratégie que vous souhaitez renommer. *policy_category_id* est de **type int**et doit être spécifié si *Name* a la valeur null.  
+`[ @policy_category_id = ] policy_category_id` Est l’identificateur de la catégorie de stratégie que vous souhaitez renommer. *policy_category_id* est de **type int** et doit être spécifié si *Name* a la valeur null.  
   
-`[ @new_name = ] 'new_name'` Nouveau nom de la catégorie de stratégie. *new_name* est de **type sysname**et est obligatoire. Ne peut pas avoir la valeur NULL ou être une chaîne vide.  
+`[ @new_name = ] 'new_name'` Nouveau nom de la catégorie de stratégie. *new_name* est de **type sysname** et est obligatoire. Ne peut pas avoir la valeur NULL ou être une chaîne vide.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

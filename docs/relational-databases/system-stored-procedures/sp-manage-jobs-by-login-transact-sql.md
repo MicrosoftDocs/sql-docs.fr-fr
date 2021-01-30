@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_manage_jobs_by_login
 - sp_manage_jobs_by_login_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 832ec15a-6e92-4eb5-8c4a-af4dba79fbaa
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: e16bce5905a993082ca480996fae9639dd053eeb
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 5f367f869092bde5458c732fda3e79bc06e43cb8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547620"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185357"
 ---
 # <a name="sp_manage_jobs_by_login-transact-sql"></a>sp_manage_jobs_by_login (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Supprime ou réaffecte des travaux appartenant à la connexion spécifiée.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,7 +43,7 @@ sp_manage_jobs_by_login
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @action = ] 'action'` Action à effectuer pour la connexion spécifiée. *action* est de type **varchar (10)**, sans valeur par défaut. Quand l' *action*est **supprimer**, **sp_manage_jobs_by_login** supprime toutes les tâches appartenant à *current_owner_login_name*. Quand l' *action* est **réassignée**, toutes les tâches sont affectées à *new_owner_login_name*.  
+`[ @action = ] 'action'` Action à effectuer pour la connexion spécifiée. *action* est de type **varchar (10)**, sans valeur par défaut. Quand l' *action* est **supprimer**, **sp_manage_jobs_by_login** supprime toutes les tâches appartenant à *current_owner_login_name*. Quand l' *action* est **réassignée**, toutes les tâches sont affectées à *new_owner_login_name*.  
   
 `[ @current_owner_login_name = ] 'current_owner_login_name'` Nom de connexion du propriétaire du travail actuel. *current_owner_login_name* est de **type sysname**, sans valeur par défaut.  
   

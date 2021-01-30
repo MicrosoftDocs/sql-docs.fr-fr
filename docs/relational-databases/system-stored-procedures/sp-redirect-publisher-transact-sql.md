@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_redirect_publisher_TSQL
 - sp_redirect_publisher
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: af45e2b2-57fb-4bcd-a58b-e61401fb3b26
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 6c58ec557fd2d41a0fbbe7fc6ac728df56935542
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: d7fef5e51b8a41e6e21d570a398775810dd23155
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543163"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185742"
 ---
 # <a name="sp_redirect_publisher-transact-sql"></a>sp_redirect_publisher (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Spécifie un serveur de publication redirigé pour une paire serveur de publication/base de données existante. Si la base de données du serveur de publication appartient à un groupe de disponibilité Always On, le serveur de publication Redirigé est le nom de l’écouteur de groupe de disponibilité associé au groupe de disponibilité.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -56,7 +56,7 @@ sp_redirect_publisher
 ## <a name="remarks"></a>Notes  
  **sp_redirect_publisher** est utilisé pour permettre à un serveur de publication de réplication d’être redirigé vers le réplica principal actuel d’un groupe de disponibilité Always on en associant la paire serveur de publication/base de données à l’écouteur d’un groupe de disponibilité. Exécutez **sp_redirect_publisher** une fois que l’écouteur GA a été configuré pour le groupe de disponibilité qui contient la base de données publiée.  
   
- Si la base de données de publication sur le serveur de publication d’origine est supprimée d’un groupe de disponibilité au niveau du réplica principal, exécutez **sp_redirect_publisher** sans spécifier de valeur pour le paramètre * \@ redirected_publisher* pour supprimer la redirection pour la paire serveur de publication/base de données. Pour plus d’informations sur la redirection du serveur de publication lorsque, consultez [maintenance d’une base de données de publication Alwayson &#40;SQL Server&#41;](../../database-engine/availability-groups/windows/maintaining-an-always-on-publication-database-sql-server.md).  
+ Si la base de données de publication sur le serveur de publication d’origine est supprimée d’un groupe de disponibilité au niveau du réplica principal, exécutez **sp_redirect_publisher** sans spécifier de valeur pour le paramètre *\@ redirected_publisher* pour supprimer la redirection pour la paire serveur de publication/base de données. Pour plus d’informations sur la redirection du serveur de publication lorsque, consultez [maintenance d’une base de données de publication Alwayson &#40;SQL Server&#41;](../../database-engine/availability-groups/windows/maintaining-an-always-on-publication-database-sql-server.md).  
   
 ## <a name="permissions"></a>Autorisations  
  L’appelant doit être membre du rôle serveur fixe **sysadmin** , du rôle de base de données fixe **db_owner** pour la base de données de distribution, ou être membre d’une liste d’accès à une publication pour une publication définie associée à la base de données du serveur de publication.  

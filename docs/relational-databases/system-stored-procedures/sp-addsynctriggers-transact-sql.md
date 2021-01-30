@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addsynctriggers_TSQL
 - sp_addsynctriggers
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e37d0c3b-19bf-4719-9535-96ba361372b3
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 38c0e33c780e13f11266d8cafde93fbdca2ebc11
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 00782a900c02976c06f2cfcdf6c9184d90e8059d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89539201"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211951"
 ---
 # <a name="sp_addsynctriggers-transact-sql"></a>sp_addsynctriggers (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "89539201"
 > [!IMPORTANT]  
 >  La procédure [sp_script_synctran_commands](../../relational-databases/system-stored-procedures/sp-script-synctran-commands-transact-sql.md) doit être utilisée à la place de **sp_addsynctrigger**. [sp_script_synctran_commands](../../relational-databases/system-stored-procedures/sp-script-synctran-commands-transact-sql.md) génère un script qui contient les appels de **sp_addsynctrigger** .  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -82,13 +82,13 @@ sp_addsynctriggers [ @sub_table = ] 'sub_table'
   
 `[ @ts_col = ] 'timestamp_col'` Nom de la colonne **timestamp** sur le serveur de publication. *timestamp_col* est de **type sysname**, avec NULL comme valeur par défaut.  
   
-`[ @filter_clause = ] 'filter_clause'` Clause de restriction (WHERE) qui définit un filtre horizontal. Quand vous entrez la clause de restriction, omettez le mot clé WHERE. *filter_clause*est de type **nvarchar (4000)**, avec NULL comme valeur par défaut.  
+`[ @filter_clause = ] 'filter_clause'` Clause de restriction (WHERE) qui définit un filtre horizontal. Quand vous entrez la clause de restriction, omettez le mot clé WHERE. *filter_clause* est de type **nvarchar (4000)**, avec NULL comme valeur par défaut.  
   
 `[ @primary_key_bitmap = ] 'primary_key_bitmap'` Est une table de bits des colonnes clés primaires dans la table. *primary_key_bitmap* est de type **varbinary (4000)**, sans valeur par défaut.  
   
-`[ @identity_support = ] identity_support` Active et désactive la gestion automatique des plages d’identité lorsque la mise à jour en file d’attente est utilisée. *identity_support* est un **bit**, avec **0**comme valeur par défaut. **0** signifie qu’il n’existe aucune prise en charge de plage d’identité, **1** active la gestion automatique des plages d’identité.  
+`[ @identity_support = ] identity_support` Active et désactive la gestion automatique des plages d’identité lorsque la mise à jour en file d’attente est utilisée. *identity_support* est un **bit**, avec **0** comme valeur par défaut. **0** signifie qu’il n’existe aucune prise en charge de plage d’identité, **1** active la gestion automatique des plages d’identité.  
   
-`[ @independent_agent = ] independent_agent` Indique s’il existe une seule Agent de distribution (un agent indépendant) pour cette publication, ou une Agent de distribution par base de données de publication et par paire de bases de données d’abonnement (un agent partagé). Cette valeur reflète la valeur de la propriété independent_agent de la publication définie sur le serveur de publication. *independent_agent* est un bit avec **0**comme valeur par défaut. Si la **valeur est 0**, l’agent est un agent partagé. Si la condition est **1**, l’agent est un agent indépendant.  
+`[ @independent_agent = ] independent_agent` Indique s’il existe une seule Agent de distribution (un agent indépendant) pour cette publication, ou une Agent de distribution par base de données de publication et par paire de bases de données d’abonnement (un agent partagé). Cette valeur reflète la valeur de la propriété independent_agent de la publication définie sur le serveur de publication. *independent_agent* est un bit avec **0** comme valeur par défaut. Si la **valeur est 0**, l’agent est un agent partagé. Si la condition est **1**, l’agent est un agent indépendant.  
   
 `[ @distributor = ] 'distributor'` Nom du serveur de distribution. *Distributor* est de **type sysname**, sans valeur par défaut.  
   

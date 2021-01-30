@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysmail_delete_mailitems_sp_TSQL
 - sysmail_delete_mailitems_sp
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: f87c9f4a-bda1-4bce-84b2-a055a3229ecd
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: a1bcfc2bbd5069e50399eaa6b23fc69938ec6a05
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 14e9d1fa942fc41f4865e70460465691e4aef6ef
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538491"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182043"
 ---
 # <a name="sysmail_delete_mailitems_sp-transact-sql"></a>sysmail_delete_mailitems_sp (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Supprime définitivement des messages électroniques des tables internes de la messagerie de base de données.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,13 +43,13 @@ sysmail_delete_mailitems_sp  [ [ @sent_before = ] 'sent_before' ]
 ## <a name="arguments"></a>Arguments  
 `[ \@sent_before = ] 'sent_before'` Supprime les messages électroniques jusqu’à la date et à l’heure spécifiées comme argument *sent_before* . *sent_before* est de **type DateTime** avec NULL comme valeur par défaut. La valeur NULL correspond à toutes les dates.  
   
-`[ \@sent_status = ] 'sent_status'` Supprime les messages électroniques du type spécifié par *sent_status*. *sent_status* est de type **varchar (8)** et n’a pas de valeur par défaut. Les entrées valides sont **Envoyer**, non **envoyé**, **nouvelle tentative**et **échec**. La valeur NULL correspond à tous les états.  
+`[ \@sent_status = ] 'sent_status'` Supprime les messages électroniques du type spécifié par *sent_status*. *sent_status* est de type **varchar (8)** et n’a pas de valeur par défaut. Les entrées valides sont **Envoyer**, non **envoyé**, **nouvelle tentative** et **échec**. La valeur NULL correspond à tous les états.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  
   
 ## <a name="remarks"></a>Notes  
- Database Mail messages et leurs pièces jointes sont stockés dans la base de données **msdb** . Les messages doivent être supprimés régulièrement pour empêcher que la base de données **msdb** ne devienne plus volumineuse que prévu et pour se conformer au programme de rétention de documents de votre organisation. Utilisez la procédure stockée **sysmail_delete_mailitems_sp** pour supprimer définitivement les messages électroniques des tables Database mail. Un argument facultatif vous permet de supprimer uniquement les messages les plus anciens en fournissant une date et une heure. Les messages antérieurs à cet argument sont alors supprimés. Un autre argument facultatif vous permet de supprimer uniquement les messages électroniques d’un certain type, spécifiés comme argument **sent_status** . Vous devez fournir un argument pour ** \@ sent_before** ou ** \@ sent_status**. Pour supprimer tous les messages, utilisez ** \@ sent_before = GETDATE ()**.  
+ Database Mail messages et leurs pièces jointes sont stockés dans la base de données **msdb** . Les messages doivent être supprimés régulièrement pour empêcher que la base de données **msdb** ne devienne plus volumineuse que prévu et pour se conformer au programme de rétention de documents de votre organisation. Utilisez la procédure stockée **sysmail_delete_mailitems_sp** pour supprimer définitivement les messages électroniques des tables Database mail. Un argument facultatif vous permet de supprimer uniquement les messages les plus anciens en fournissant une date et une heure. Les messages antérieurs à cet argument sont alors supprimés. Un autre argument facultatif vous permet de supprimer uniquement les messages électroniques d’un certain type, spécifiés comme argument **sent_status** . Vous devez fournir un argument pour **\@ sent_before** ou **\@ sent_status**. Pour supprimer tous les messages, utilisez **\@ sent_before = GETDATE ()**.  
   
  La suppression d'un message entraîne également la suppression des pièces jointes qui sont associées à ce message. La suppression du courrier électronique ne supprime pas les entrées correspondantes dans **sysmail_event_log**. Utilisez [sysmail_delete_log_sp](../../relational-databases/system-stored-procedures/sysmail-delete-log-sp-transact-sql.md) pour supprimer des éléments du journal.  
   

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_getagentparameterlist
 - sp_getagentparameterlist_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 50d3d3c1-b9a1-417c-bad4-674089c9c60d
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 18cfa88a02506846e004da36b84ec54205359859
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 9a44f56d638de2b37e804e54ca94812cec1703e0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89535862"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204729"
 ---
 # <a name="sp_getagentparameterlist-transact-sql"></a>sp_getagentparameterlist (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Renvoie la liste de tous les paramètres d'agent de réplication qui peuvent être définis dans un profil pour le type d'agent spécifié. Cette procédure stockée est exécutée sur n'importe quelle base de données du serveur de distribution sur lequel l'agent est en cours d'exécution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,14 +38,14 @@ sp_getagentparameterlist [ @agent_type = ] 'agent_type'
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @agent_type = ] 'agent_type'` Est l’agent de réplication pour lequel le paramètre est ajouté. *agent_type* est de **type int**et peut prendre l’une des valeurs suivantes :  
+`[ @agent_type = ] 'agent_type'` Est l’agent de réplication pour lequel le paramètre est ajouté. *agent_type* est de **type int** et peut prendre l’une des valeurs suivantes :  
   
 |Valeur|Agent|  
 |-----------|-----------|  
 |**1**|Instantané|  
 |**2**|Lecture du journal|  
 |**3**|Distribution|  
-|**4**|Fusionner (Merge)|  
+|**4**|Fusionner|  
 |**9**|Lecture de file d'attente|  
   
 ## <a name="return-code-values"></a>Codet de retour  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_reinitsubscription
 - sp_reinitsubscription_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: d56ae218-6128-4ff9-b06c-749914505c7b
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 68761baaf874d4900a7914753a37e1f465ff757e
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 0d8c12b3ca1b27f7560aeff466e51b7f43a9a42e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538676"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185667"
 ---
 # <a name="sp_reinitsubscription-transact-sql"></a>sp_reinitsubscription (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Marque l'abonnement pour la réinitialisation. Cette procédure stockée est exécutée sur le serveur de publication pour les abonnements par envoi de données (push).  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -74,7 +74,7 @@ sp_reinitsubscription [ [ @publication = ] 'publication' ]
   
  Pour les abonnements dans lesquels l'instantané initial est appliqué automatiquement et où la publication n'autorise pas les abonnements pouvant être mis à jour, l'Agent d'instantané doit être exécuté après l'exécution de cette procédure stockée pour que les fichiers du schéma et du programme de copie en bloc soient préparés et que les Agents de distribution puissent ensuite resynchroniser les abonnements.  
   
- Lorsque l'instantané initial est appliqué automatiquement et que la publication autorise les abonnements pouvant être mis à jour, l'Agent de distribution resynchronise l'abonnement à partir des fichiers de schéma et de programme de copie en bloc les plus récents préalablement créés par l'Agent d'instantané. Le Agent de distribution resynchronise l’abonnement immédiatement après l’exécution de **sp_reinitsubscription**par l’utilisateur, si le agent de distribution n’est pas occupé ; Sinon, la synchronisation peut avoir lieu après l’intervalle de message (spécifié par Agent de distribution paramètre d’invite de commandes : **MessageInterval**).  
+ Lorsque l'instantané initial est appliqué automatiquement et que la publication autorise les abonnements pouvant être mis à jour, l'Agent de distribution resynchronise l'abonnement à partir des fichiers de schéma et de programme de copie en bloc les plus récents préalablement créés par l'Agent d'instantané. Le Agent de distribution resynchronise l’abonnement immédiatement après l’exécution de **sp_reinitsubscription** par l’utilisateur, si le agent de distribution n’est pas occupé ; Sinon, la synchronisation peut avoir lieu après l’intervalle de message (spécifié par Agent de distribution paramètre d’invite de commandes : **MessageInterval**).  
   
  **sp_reinitsubscription** n’a aucun effet sur les abonnements où l’instantané initial est appliqué manuellement.  
   

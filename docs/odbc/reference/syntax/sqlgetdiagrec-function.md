@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLGetDiagRec
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: ebdbac93-3d68-438f-8416-ef1f08e04269
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 7f141891292fb80d53ba06e03329b66cbc8b826e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 93b5b85d6c20a58d314dcb7f7c53f391c15a1491
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461012"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194179"
 ---
 # <a name="sqlgetdiagrec-function"></a>SQLGetDiagRec, fonction
 **Conformité**  
@@ -63,7 +63,7 @@ SQLRETURN SQLGetDiagRec(
   
 -   SQL_HANDLE_STMT  
   
- SQL_HANDLE_DBC_INFO_TOKEN descripteur est utilisé uniquement par le gestionnaire de pilotes et le pilote. Les applications ne doivent pas utiliser ce type de handle. Pour plus d’informations sur la SQL_HANDLE_DBC_INFO_TOKEN, consultez [développement de la reconnaissance des pools de connexions dans un pilote ODBC](../../../odbc/reference/develop-driver/developing-connection-pool-awareness-in-an-odbc-driver.md).  
+ SQL_HANDLE_DBC_INFO_TOKEN descripteur est utilisé uniquement par le gestionnaire de pilotes et le pilote. Les applications ne doivent pas utiliser ce type de handle. Pour plus d’informations sur la SQL_HANDLE_DBC_INFO_TOKEN, consultez [développement de la sensibilisation aux Connection-Pool dans un pilote ODBC](../../../odbc/reference/develop-driver/developing-connection-pool-awareness-in-an-odbc-driver.md).  
   
  *Handle*  
  Entrée Handle pour la structure de données de diagnostic, du type indiqué par *comme HandleType*. Si *comme HandleType* a la valeur SQL_HANDLE_ENV, *descripteur* peut être un handle d’environnement partagé ou non partagé.  
@@ -86,7 +86,7 @@ SQLRETURN SQLGetDiagRec(
  Entrée Longueur de la mémoire tampon **MessageText* en caractères. Il n’y a pas de longueur maximale du texte du message de diagnostic.  
   
  *TextLengthPtr*  
- Sortie Pointeur vers une mémoire tampon dans laquelle retourner le nombre total de caractères (sans compter le nombre de caractères requis pour le caractère de fin null) pouvant être retourné dans * \* MessageText*. Si le nombre de caractères disponibles à retourner est supérieur à *BufferLength*, le texte du message de diagnostic dans * \* MessageText* est tronqué à *BufferLength* moins la longueur d’un caractère de fin null.  
+ Sortie Pointeur vers une mémoire tampon dans laquelle retourner le nombre total de caractères (sans compter le nombre de caractères requis pour le caractère de fin null) pouvant être retourné dans *\* MessageText*. Si le nombre de caractères disponibles à retourner est supérieur à *BufferLength*, le texte du message de diagnostic dans *\* MessageText* est tronqué à *BufferLength* moins la longueur d’un caractère de fin null.  
   
 ## <a name="returns"></a>Retours  
  SQL_SUCCESS, SQL_SUCCESS_WITH_INFO, SQL_ERROR ou SQL_INVALID_HANDLE.  
@@ -115,9 +115,9 @@ SQLRETURN SQLGetDiagRec(
   
  **SQLGetDiagRec** ne peut pas être utilisé pour retourner des champs de l’en-tête de la structure de données de diagnostic. (L’argument *recnumber* doit être supérieur à 0.) L’application doit appeler **SQLGetDiagField** à cet effet.  
   
- **SQLGetDiagRec** récupère uniquement les informations de diagnostic récemment associées au handle spécifié dans l’argument *handle* . Si l’application appelle une autre fonction ODBC, à l’exception de **SQLGetDiagRec**, **SQLGetDiagField**ou **SQLError**, toutes les informations de diagnostic issues des appels précédents sur le même handle sont perdues.  
+ **SQLGetDiagRec** récupère uniquement les informations de diagnostic récemment associées au handle spécifié dans l’argument *handle* . Si l’application appelle une autre fonction ODBC, à l’exception de **SQLGetDiagRec**, **SQLGetDiagField** ou **SQLError**, toutes les informations de diagnostic issues des appels précédents sur le même handle sont perdues.  
   
- Une application peut analyser tous les enregistrements de diagnostic en boucle, en incrémentant *recnumber*, tant que **SQLGetDiagRec** retourne SQL_SUCCESS. Les appels à **SQLGetDiagRec** ne sont pas destructifs pour les champs d’en-tête et d’enregistrement. L’application peut appeler **SQLGetDiagRec** à nouveau ultérieurement pour récupérer un champ d’un enregistrement tant qu’aucune autre fonction, à l’exception de **SQLGetDiagRec**, **SQLGetDiagField**ou **SQLError**, n’a été appelée dans l’intervalle. L’application peut également récupérer le nombre total d’enregistrements de diagnostic disponibles en appelant **SQLGetDiagField** pour récupérer la valeur du champ SQL_DIAG_NUMBER, puis en appelant **SQLGetDiagRec** plusieurs fois.  
+ Une application peut analyser tous les enregistrements de diagnostic en boucle, en incrémentant *recnumber*, tant que **SQLGetDiagRec** retourne SQL_SUCCESS. Les appels à **SQLGetDiagRec** ne sont pas destructifs pour les champs d’en-tête et d’enregistrement. L’application peut appeler **SQLGetDiagRec** à nouveau ultérieurement pour récupérer un champ d’un enregistrement tant qu’aucune autre fonction, à l’exception de **SQLGetDiagRec**, **SQLGetDiagField** ou **SQLError**, n’a été appelée dans l’intervalle. L’application peut également récupérer le nombre total d’enregistrements de diagnostic disponibles en appelant **SQLGetDiagField** pour récupérer la valeur du champ SQL_DIAG_NUMBER, puis en appelant **SQLGetDiagRec** plusieurs fois.  
   
  Pour obtenir une description des champs de la structure de données de diagnostic, consultez [SQLGetDiagField](../../../odbc/reference/syntax/sqlgetdiagfield-function.md). Pour plus d’informations, consultez [utilisation de SQLGetDiagRec et SQLGetDiagField](../../../odbc/reference/develop-app/using-sqlgetdiagrec-and-sqlgetdiagfield.md) et [implémentation de SQLGetDiagRec et SQLGetDiagField](../../../odbc/reference/develop-app/implementing-sqlgetdiagrec-and-sqlgetdiagfield.md).  
   
