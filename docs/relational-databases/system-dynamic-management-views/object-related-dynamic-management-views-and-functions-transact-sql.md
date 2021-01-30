@@ -6,7 +6,7 @@ ms.date: 02/10/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: f9dfff29-2e68-4c76-9460-c46085dca2e8
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: e82c18276ba8ecc0c69ebda81d3fdf02bf401670
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: abee55c26a00908c957495b6e421370cb048c07b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101649"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99145700"
 ---
 # <a name="object-related-dynamic-management-views-and-functions-transact-sql"></a>Fonctions et vues de gestion dynamique relatives aux objets (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
