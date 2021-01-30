@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - column data [ODBC]
 - ODBC cursor library [ODBC], cache
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0425818c-9469-493f-9e3c-fc03d9411c5c
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5f4ea57de9dfefd21b6d71bb3b248d5aed5dd50d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1287a4deadc6f35bf83f6c42dcebc633f6557fed
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88449001"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99212349"
 ---
 # <a name="column-data"></a>Données de la colonne
 > [!IMPORTANT]  

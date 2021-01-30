@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - IHpublisherindexes
 - IHpublisherindexes_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 6008ef89-eeb9-46dc-93a2-f7623298cf0f
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 03915f08ecf8aeb222f45e86af3988c64cab575b
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 5e27ab9816b6b1e96a31e9869b6c41db4c93c25b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092444"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201641"
 ---
 # <a name="ihpublisherindexes-transact-sql"></a>IHpublisherindexes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

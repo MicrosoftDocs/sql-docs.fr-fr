@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_who_TSQL
 - sp_who
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 132dfb08-fa79-422e-97d4-b2c4579c6ac5
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: a3d3af35b9d886e41d43e0c480c49a7e593e00f4
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: db60af487d1ee7b7475b0b4d6ec1d8f67decb1ca
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88463973"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201795"
 ---
 # <a name="sp_who-transact-sql"></a>sp_who (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -59,8 +59,8 @@ sp_who [ [ @loginame = ] 'login' | session ID | 'ACTIVE' ]
 |Colonne|Type de données|Description|  
 |------------|---------------|-----------------|  
 |**spid**|**smallint**|ID de la session.|  
-|**ecid**|**smallint**|ID du contexte d'exécution d'un thread donné associé à un ID de session spécifique.<br /><br /> ECID = {0, 1, 2, 3,... *n*}, où 0 représente toujours le thread principal ou parent et {1, 2, 3,... *n*} représente les sous-threads.|  
-|**statut**|**nchar(30)**|État du processus Les valeurs possibles sont les suivantes :<br /><br /> **dormant**. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] réinitialise la session.<br /><br /> **en cours d’exécution**. La session exécute un ou plusieurs traitements. Lorsque la fonctionnalité MARS (Multiple Active Result Sets) est activée, une session peut exécuter plusieurs traitements. Pour plus d’informations, consultez [Utilisation de MARS &#40;Multiple Active Result Sets&#41;](../../relational-databases/native-client/features/using-multiple-active-result-sets-mars.md).<br /><br /> **arrière-plan**. La session exécute une tâche en arrière-plan, telle qu'une détection de blocage.<br /><br /> **restauration**. Un processus d'annulation est en cours dans la session.<br /><br /> **en attente**. La session attend qu'un thread de travail soit disponible.<br /><br /> **runnable**. La tâche de la session figure dans la file d'attente exécutable d'un planificateur lors de l'attente de l'obtention d'un quantum.<br /><br /> **spinloop**. La tâche de la session attend qu'un verrouillage total de l'UC se libère.<br /><br /> **suspendu**. La session attend la fin d'un événement, tel qu'une E/S.|  
+|**ECID**|**smallint**|ID du contexte d'exécution d'un thread donné associé à un ID de session spécifique.<br /><br /> ECID = {0, 1, 2, 3,... *n*}, où 0 représente toujours le thread principal ou parent et {1, 2, 3,... *n*} représente les sous-threads.|  
+|**statut**|**nchar(30)**|État du processus Les valeurs possibles sont les suivantes :<br /><br /> **dormant**. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] réinitialise la session.<br /><br /> **en cours d’exécution**. La session exécute un ou plusieurs traitements. Lorsque la fonctionnalité MARS (Multiple Active Result Sets) est activée, une session peut exécuter plusieurs traitements. Pour plus d’informations, consultez [Utilisation de MARS &#40;Multiple Active Result Sets&#41;](../../relational-databases/native-client/features/using-multiple-active-result-sets-mars.md).<br /><br /> **arrière-plan**. La session exécute une tâche en arrière-plan, telle qu'une détection de blocage.<br /><br /> **restauration**. Un processus d'annulation est en cours dans la session.<br /><br /> **en attente**. La session attend qu'un thread de travail soit disponible.<br /><br /> **exécutable**. La tâche de la session figure dans la file d'attente exécutable d'un planificateur lors de l'attente de l'obtention d'un quantum.<br /><br /> **spinloop**. La tâche de la session attend qu'un verrouillage total de l'UC se libère.<br /><br /> **suspendu**. La session attend la fin d'un événement, tel qu'une E/S.|  
 |**loginame**|**nchar(128)**|Nom de connexion associé à ce processus particulier|  
 |**hostname**|**nchar(128)**|Nom de l'hôte ou de l'ordinateur pour chaque processus|  
 |**blk**|**Char (5)**|ID de session du processus bloquant, s'il en existe un. Dans les autres cas, cette colonne a la valeur NULL.<br /><br /> Lorsqu'une transaction associée à un ID de session spécifié est bloquée par une transaction distribuée orpheline, cette colonne renvoie la valeur « -2 » pour la transaction orpheline qui bloque.|  
@@ -75,7 +75,7 @@ sp_who [ [ @loginame = ] 'login' | session ID | 'ACTIVE' ]
   
  Toutes les transactions distribuées orphelines reçoivent la valeur d'ID de session « -2 ». Les transactions distribuées orphelines sont des transactions distribuées qui ne sont associées à aucun ID de session. Pour plus d’informations, consultez [Utiliser les transactions marquées pour récupérer des bases de données associées uniformément &#40;mode de récupération complète&#41;](../../relational-databases/backup-restore/use-marked-transactions-to-recover-related-databases-consistently.md).  
   
- Interrogez la colonne **is_user_process** de sys. dm_exec_sessions pour séparer les processus système des processus utilisateur.  
+ Interrogez la colonne **is_user_process** de sys.dm_exec_sessions pour séparer les processus système des processus utilisateur.  
   
 ## <a name="permissions"></a>Autorisations  
  Nécessite l'autorisation VIEW SERVER STATE sur le serveur pour voir toutes les sessions en cours d'exécution dans l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Dans le cas contraire, l'utilisateur ne voit que la session en cours.  

@@ -6,7 +6,7 @@ ms.date: 06/10/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_broker_forwarded_messages
 - dm_broker_forwarded_messages
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 5576376d-6364-417a-8475-aa770e060845
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 089fb1aaf7cca8f3d8d3d57c49e11cf803f3329e
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 89542df5c3e22b0c22188a42e11f57866f266ada
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095298"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202386"
 ---
 # <a name="sysdm_broker_forwarded_messages-transact-sql"></a>sys.dm_broker_forwarded_messages (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

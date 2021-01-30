@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_datatype_info_TSQL
 - sp_datatype_info
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 045f3b5d-6bb7-4748-8b4c-8deb4bc44147
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: ff2af6626004412a028777634269c6dc13e4fa8c
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 22d01167f9dbe1a268dc436efb506507e1fbe7f9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546129"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201293"
 ---
 # <a name="sp_datatype_info-transact-sql"></a>sp_datatype_info (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-asdw-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-asdw-xxx-md.md)]
 
   Retourne des informations sur les types de données pris en charge par l'environnement actuel.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -68,7 +68,7 @@ sp_datatype_info [ [ @data_type = ] data_type ]
 |MINIMUM_SCALE|**smallint**|Échelle minimale du type de données de la source de données. Si un type de données possède une échelle fixe, les colonnes MINIMUM_SCALE et MAXIMUM_SCALE contiennent toutes les deux cette valeur. La valeur NULL est retournée lorsque l'échelle n'est pas applicable.|  
 |MAXIMUM_SCALE|**smallint**|Échelle maximale du type de données de la source de données. Si l'échelle maximale n'est pas définie séparément dans la source de données, mais si au contraire elle est définie comme étant identique à la précision maximale, cette colonne contient la même valeur que la colonne PRECISION.|  
 |SQL_DATA_TYPE|**smallint**|Valeur du type de données SQL tel qu'il apparaît dans le champ TYPE du descripteur. Cette colonne est la même que la colonne DATA_TYPE, à l’exception des types de données **DateTime** et ANSI **Interval** . Ce champ retourne toujours une valeur.|  
-|SQL_DATETIME_SUB|**smallint**|sous-code **DateTime** ou ANSI **Interval** si la valeur de SQL_DATA_TYPE est SQL_DATETIME ou SQL_INTERVAL. Pour les types de données autres que **DateTime** et **Interval**ANSI, ce champ a la valeur null.|  
+|SQL_DATETIME_SUB|**smallint**|sous-code **DateTime** ou ANSI **Interval** si la valeur de SQL_DATA_TYPE est SQL_DATETIME ou SQL_INTERVAL. Pour les types de données autres que **DateTime** et **Interval** ANSI, ce champ a la valeur null.|  
 |NUM_PREC_RADIX|**int**|Nombre de bits ou de chiffres pour le calcul du nombre maximal qu’une colonne peut contenir. Si le type de données est un type de données numérique approximatif, cette colonne contient la valeur 2 pour indiquer plusieurs bits. Pour les types numériques exacts, cette colonne contient la valeur 10 pour indiquer plusieurs chiffres décimaux. Sinon, cette colonne est NULL. En combinant la précision et la base, l'application peut calculer le nombre maximal que la colonne peut contenir.|  
 |INTERVAL_PRECISION|**smallint**|Valeur de la précision de début de l’intervalle si *data_type* est **Interval**; Sinon, NULL.|  
 |USERTYPE|**smallint**|valeur **usertype** de la table systypes.|  

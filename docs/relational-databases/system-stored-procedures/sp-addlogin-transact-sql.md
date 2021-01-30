@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addlogin
 - sp_addlogin_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 030f19c3-a5e3-4b53-bfc4-de4bfca0fddc
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 585461904b68f26d3ea71e255b24e9ed6d38786a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a85da6cb0e9f0d2a490c802e4d67f8096999f217
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88474555"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202395"
 ---
 # <a name="sp_addlogin-transact-sql"></a>sp_addlogin (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -62,7 +62,7 @@ sp_addlogin [ @loginame = ] 'login'
 >  [!INCLUDE[ssNoteStrongPass](../../includes/ssnotestrongpass-md.md)]  
   
  [ @defdb =] '*base de données*'  
- Base de données par défaut de la connexion (la base de données avec laquelle la connexion est établie en premier). *Database est de* **type sysname**, avec **Master**comme valeur par défaut.  
+ Base de données par défaut de la connexion (la base de données avec laquelle la connexion est établie en premier). *Database est de* **type sysname**, avec **Master** comme valeur par défaut.  
   
  [ @deflanguage =] '*langue*'  
  Est la langue par défaut du compte de connexion. *Language* est de **type sysname**, avec NULL comme valeur par défaut. Si la *langue* n’est pas spécifiée, la *langue* par défaut de la nouvelle connexion est définie sur la langue par défaut actuelle du serveur.  

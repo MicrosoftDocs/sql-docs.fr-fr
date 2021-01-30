@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQLAllocStmt function [ODBC], Cursor Library
 ms.assetid: f4dd546a-0a6c-4397-8ee7-fafa6b9da543
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f3b3968687f1c9062457a16ec7c5bc11cb32d3a9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 64b51f58fd51b9bcad1abd86750b024be131a8a0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456478"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202949"
 ---
 # <a name="sqlbindcol-cursor-library"></a>SQLBindCol (bibliothèque de curseurs)
 > [!IMPORTANT]  
@@ -28,7 +28,7 @@ ms.locfileid: "88456478"
   
  Une application alloue une ou plusieurs mémoires tampons pour que la bibliothèque de curseurs retourne l’ensemble de lignes actuel dans. Elle appelle **SQLBindCol** une ou plusieurs fois pour lier ces mémoires tampons au jeu de résultats.  
   
- Une application peut appeler **SQLBindCol** pour relier les colonnes du jeu de résultats après avoir appelé **SQLExtendedFetch**, **SQLFetch**ou **SQLFetchScroll**, tant que le type de données C, la taille de colonne et les chiffres décimaux de la colonne liée restent identiques. L’application n’a pas besoin de fermer le curseur pour relier les colonnes à différentes adresses.  
+ Une application peut appeler **SQLBindCol** pour relier les colonnes du jeu de résultats après avoir appelé **SQLExtendedFetch**, **SQLFetch** ou **SQLFetchScroll**, tant que le type de données C, la taille de colonne et les chiffres décimaux de la colonne liée restent identiques. L’application n’a pas besoin de fermer le curseur pour relier les colonnes à différentes adresses.  
   
  La bibliothèque de curseurs prend en charge la définition de l’attribut d’instruction SQL_ATTR_ROW_BIND_OFFSET_PTR pour utiliser des décalages de liaison. (**SQLBindCol** n’a pas besoin d’être appelé pour que cette reliaison se produise.) Si la bibliothèque de curseurs est utilisée avec un pilote ODBC *3. x* , l’offset de liaison n’est pas utilisé lorsque **SQLFetch** est appelé. L’offset de liaison est utilisé si **SQLFetch** est appelé lorsque la bibliothèque de curseurs est utilisée avec un pilote ODBC *2. x* , car **SQLFetch** est ensuite mappée à **SQLExtendedFetch**.  
   

@@ -1,12 +1,12 @@
 ---
-description: Vues de gestion dynamique de recherche en texte intégral et sémantique-fonctions
-title: Vues de gestion dynamique de recherche en texte intégral et sémantique-fonctions | Microsoft Docs
+description: Vues de gestion dynamique Full-Text et sémantique de la recherche-fonctions
+title: Vues de gestion dynamique Full-Text et sémantique de la recherche-fonctions | Microsoft Docs
 ms.custom: ''
 ms.date: 03/15/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,14 +15,14 @@ helpviewer_keywords:
 ms.assetid: 199dbd5a-29f6-4ef0-8e65-86e32c0aaa3a
 author: pmasl
 ms.author: pelopes
-ms.openlocfilehash: 3f2d7a48bfbccf174b26a08ec3a887f44247a457
-ms.sourcegitcommit: 32135463a8494d9ed1600a58f51819359e3c09dc
+ms.openlocfilehash: cd9e072fa2c4aafceaad2d4aad57eb9dcc4bb38b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/08/2020
-ms.locfileid: "91834288"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201359"
 ---
-# <a name="full-text-and-semantic-search-dynamic-management-views---functions"></a>Vues de gestion dynamique de recherche en texte intégral et sémantique-fonctions
+# <a name="full-text-and-semantic-search-dynamic-management-views---functions"></a>Vues de gestion dynamique Full-Text et sémantique de la recherche-fonctions
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Cette section contient les vues de gestion dynamique suivantes et les fonctions en rapport avec la recherche en texte intégral et la recherche sémantique.  

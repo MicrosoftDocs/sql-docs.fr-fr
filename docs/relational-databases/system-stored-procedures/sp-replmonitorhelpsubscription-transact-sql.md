@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_replmonitorhelpsubscription_TSQL
 - sp_replmonitorhelpsubscription
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: a681b2db-c82d-4624-a10c-396afb0ac42f
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: dab0e5d4f8f655b0e3140878279a8abca090d262
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 898104516115207bd0cee45bf05f187922c13f6e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543107"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204363"
 ---
 # <a name="sp_replmonitorhelpsubscription-transact-sql"></a>sp_replmonitorhelpsubscription (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Renvoie des informations sur l'état actuel d'abonnements appartenant à une ou plusieurs publications du serveur de publication, et retourne une ligne pour chaque abonnement retourné. Cette procédure stockée, utilisée pour surveiller la réplication, est exécutée sur la base de données du serveur de distribution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -51,7 +51,7 @@ sp_replmonitorhelpsubscription [ @publisher = ] 'publisher'
   
 `[ @publication = ] 'publication'` Nom de la publication en cours d’analyse. *publication* est de **type sysname**, avec NULL comme valeur par défaut.  
   
-`[ @publication_type = ] publication_type` Si le type de publication. *publication_type* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @publication_type = ] publication_type` Si le type de publication. *publication_type* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -60,7 +60,7 @@ sp_replmonitorhelpsubscription [ @publisher = ] 'publisher'
 |**2**|Publication de fusion.|  
 |NULL (par défaut)|La réplication tente de déterminer le type de publication.|  
   
-`[ @mode = ] mode` Mode de filtrage à utiliser pour retourner les informations de surveillance d’abonnement. le *mode* est **int**et peut prendre l’une des valeurs suivantes.  
+`[ @mode = ] mode` Mode de filtrage à utiliser pour retourner les informations de surveillance d’abonnement. le *mode* est **int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -75,7 +75,7 @@ sp_replmonitorhelpsubscription [ @publisher = ] 'publisher'
   
 `[ @topnum = ] topnum` Limite le jeu de résultats au nombre d’abonnements spécifié au début des données retournées. *topnum* est de **type int**, sans valeur par défaut.  
   
-`[ @exclude_anonymous = ] exclude_anonymous` Indique si les abonnements extraits anonymes sont exclus du jeu de résultats. *exclude_anonymous* est de **bit**, avec **0**comme valeur par défaut ; la valeur **1** signifie que les abonnements anonymes sont exclus et la valeur **0** indique qu’ils sont inclus.  
+`[ @exclude_anonymous = ] exclude_anonymous` Indique si les abonnements extraits anonymes sont exclus du jeu de résultats. *exclude_anonymous* est de **bit**, avec **0** comme valeur par défaut ; la valeur **1** signifie que les abonnements anonymes sont exclus et la valeur **0** indique qu’ils sont inclus.  
   
 `[ @refreshpolicy = ] refreshpolicy` À usage interne uniquement.  
   

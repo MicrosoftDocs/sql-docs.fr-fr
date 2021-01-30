@@ -6,7 +6,7 @@ ms.date: 03/15/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3253bf60-5ea6-4525-8744-c21070c4df0e
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 60b5d17b24839f961707a94fd009cec795162584
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2223545bafa0ba3ca82c35f3a0fa30cb41eadfba
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095262"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202539"
 ---
 # <a name="service-broker-related-dynamic-management-views-transact-sql"></a>Vues de gestion dynamique liées à Service Broker (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

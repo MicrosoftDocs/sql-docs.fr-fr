@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQLFreeStmt function [ODBC], Cursor Library
 ms.assetid: 47bfbd4d-9453-4609-958d-1e05794cb223
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 9bc9ba1bc747f2c4408c308b13924afc8b3ba875
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 3b7ebdcfc5a9997efb4301852b1aae3c1408464d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88448989"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202817"
 ---
 # <a name="sqlfreestmt-cursor-library"></a>SQLFreeStmt (bibliothèque de curseurs)
 > [!IMPORTANT]  
@@ -26,4 +26,4 @@ ms.locfileid: "88448989"
   
  Cette rubrique traite de l’utilisation de la fonction **SQLFreeStmt** dans la bibliothèque de curseurs. Pour obtenir des informations générales sur **SQLFreeStmt**, consultez [fonction SQLFreeStmt](../../../odbc/reference/syntax/sqlfreestmt-function.md).  
   
- Si une application appelle **SQLFreeStmt** avec l’option SQL_UNBIND après avoir appelé **SQLExtendedFetch**, **SQLFetch**ou **SQLFetchScroll**, la bibliothèque de curseurs retourne une erreur. Avant de pouvoir détacher des colonnes de jeu de résultats, une application doit appeler **SQLCloseCursor** ou **SQLFreeStmt** avec l’option SQL_CLOSE.
+ Si une application appelle **SQLFreeStmt** avec l’option SQL_UNBIND après avoir appelé **SQLExtendedFetch**, **SQLFetch** ou **SQLFetchScroll**, la bibliothèque de curseurs retourne une erreur. Avant de pouvoir détacher des colonnes de jeu de résultats, une application doit appeler **SQLCloseCursor** ou **SQLFreeStmt** avec l’option SQL_CLOSE.

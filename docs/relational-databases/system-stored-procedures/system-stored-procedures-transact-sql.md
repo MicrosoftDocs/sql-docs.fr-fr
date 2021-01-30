@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sql13.TSQLSysNoExpandPortal.f1
 - sql13.TSQLSysNoExpandPortal.f1_TSQL
@@ -23,22 +23,22 @@ ms.assetid: a5c4d5b8-5a24-4a2d-99b4-d003b546ee3a
 author: VanMSFT
 ms.author: vanto
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 60d30105f0c56224748a3c676ba4d76b73aa989b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 603a16d94c185783b3b90566d71b90e195949254
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97462670"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203646"
 ---
 # <a name="system-stored-procedures-transact-sql"></a>Procédures stockées système (Transact-SQL)
 
 [!INCLUDE [sqlserver2016-asdb-asdbmi](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi.md)]
 
-  Dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], de nombreuses tâches d'administration et d'information peuvent être effectuées à l'aide de procédures stockées système. Les procédures stockées système sont regroupées par catégories dans le tableau suivant.  
+  Dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], de nombreuses tâches d'administration et d'information peuvent être effectuées à l'aide de procédures stockées système. Les procédures stockées système sont regroupées par catégories dans le tableau suivant.  
   
 ## <a name="in-this-section"></a>Dans cette section  
   
-|Catégorie|Description|  
+|Category|Description|  
 |--------------|-----------------|  
 |[Procédures stockées active Geo-Replication]()|Utilisé pour gérer pour gérer les configurations de Geo-Replication actives dans Azure SQL Database|  
 |[Procédures stockées du catalogue](../../relational-databases/system-stored-procedures/catalog-stored-procedures-transact-sql.md)|Permettent d'implémenter les fonctions du dictionnaire de données ODBC et d'isoler les applications ODBC des modifications apportées aux tables système concernées.|  

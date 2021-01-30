@@ -6,19 +6,19 @@ ms.date: 03/15/2017
 ms.service: sql-data-warehouse
 ms.subservice: design
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: 02e04dfe-d565-4e45-b427-b8e89c958ba3
 author: ronortloff
 ms.author: rortloff
 monikerRange: = azure-sqldw-latest
-ms.openlocfilehash: 1ee858953867209a6686f1775c17e539d13aae2f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 68b5977c3a042de5b3094b8b7cc743baedf0495d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97410008"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201734"
 ---
 # <a name="azure-synapse-analytics-stored-procedures"></a>Procédures stockées Azure Synapse Analytics
 [!INCLUDE [asa](../../includes/applies-to-version/asa.md)]

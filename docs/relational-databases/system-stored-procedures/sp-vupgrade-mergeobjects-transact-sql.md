@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_vupgrade_mergeobjects
 - sp_vupgrade_mergeobjects_TSQL
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 73257c2e-cc4c-48e7-9d66-7ef045bdd4f5
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 4df6f9a1f945de42836dd624010a313081955054
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 26e7405647b80d26c760bf88caf5e6aa786346ff
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538508"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201841"
 ---
 # <a name="sp_vupgrade_mergeobjects-transact-sql"></a>sp_vupgrade_mergeobjects (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "89538508"
   
  L'exécution de cette procédure stockée ne nécessite pas la réinitialisation des abonnements. Cette procédure n'est pas indispensable si vous installez un Service Pack ou une mise à niveau vers une nouvelle version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,7 +50,7 @@ sp_vupgrade_mergeobjects [ [@login = ] 'login' ]
   
 `[ @password = ] 'password'` Mot de passe de l’administrateur système à utiliser lors de la création d’objets système dans la base de données de distribution. *Password* est de **type sysname**, avec **«»** comme valeur par défaut (chaîne vide). Ce paramètre n’est pas requis si *security_mode* a la valeur **1**, ce qui correspond à l’authentification Windows.  
   
-`[ @security_mode = ] 'security_mode'` Mode de sécurité de connexion à utiliser lors de la création d’objets système dans la base de données de distribution. *security_mode* est de **bits** avec **1**comme valeur par défaut. Si la **valeur est 0**, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification est utilisée. Si la condition est **1**, l’authentification Windows sera utilisée. [!INCLUDE[ssNoteWinAuthentication](../../includes/ssnotewinauthentication-md.md)]  
+`[ @security_mode = ] 'security_mode'` Mode de sécurité de connexion à utiliser lors de la création d’objets système dans la base de données de distribution. *security_mode* est de **bits** avec **1** comme valeur par défaut. Si la **valeur est 0**, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification est utilisée. Si la condition est **1**, l’authentification Windows sera utilisée. [!INCLUDE[ssNoteWinAuthentication](../../includes/ssnotewinauthentication-md.md)]  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

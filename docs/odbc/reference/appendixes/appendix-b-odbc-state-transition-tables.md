@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - state transitions [ODBC]
 - transitioning states [ODBC], about state transitions
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 15088dbe-896f-4296-b397-02bb3d0ac0fb
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8b81b43d40d3552959ade377cb7b967eb7331b7f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 67c14205590ccdf9d20a30f44c13aa2da5abbe8d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88411615"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99212571"
 ---
 # <a name="appendix-b-odbc-state-transition-tables"></a>Annexe B : Tableaux des transitions d’état ODBC
 Les tableaux de cette annexe montrent comment les fonctions ODBC entraînent des transitions entre les États de l’environnement, de la connexion, de l’instruction et du descripteur. L’état de l’environnement, de la connexion, de l’instruction ou du descripteur dicte généralement le moment où les fonctions qui utilisent le type de handle correspondant (environnement, connexion, instruction ou descripteur) peuvent être appelées. Les États de l’environnement, de la connexion, de l’instruction et du descripteur se chevauchent à peu près comme indiqué dans les illustrations suivantes. Par exemple, le chevauchement exact des États de connexion C5 et C6 et des États d’instruction S1 à S12 est dépendant de la source de données, car les transactions commencent à différents moments sur des sources de données différentes, et l’état du descripteur D1i (descripteur alloué de manière implicite) dépend de l’état de l’instruction à laquelle le descripteur est associé. Pour obtenir une description de chaque État, consultez [transitions d’environnement](../../../odbc/reference/appendixes/environment-transitions.md), [transitions de connexion](../../../odbc/reference/appendixes/connection-transitions.md), [transitions d’instructions](../../../odbc/reference/appendixes/statement-transitions.md)et [transitions de descripteur](../../../odbc/reference/appendixes/descriptor-transitions.md), plus loin dans cette annexe.  
@@ -45,7 +45,7 @@ Les tableaux de cette annexe montrent comment les fonctions ODBC entraînent des
   
 -   **--** -L’État est inchangé après l’exécution de la fonction.  
   
--   **Envoyer**  
+-   **E**  
 
      **_n_** , **C_n_**, **S_n_** ou **D_n_** -l’état de l’environnement, de la connexion, de l’instruction ou du descripteur passe à l’état spécifié.  
  
@@ -67,7 +67,7 @@ Les tableaux de cette annexe montrent comment les fonctions ODBC entraînent des
 |d|Données requises. La fonction a retourné SQL_NEED_DATA.|  
 |e|Erreur. La fonction a retourné SQL_ERROR.|  
 |i|Ligne non valide. Le curseur a été positionné sur une ligne dans le jeu de résultats et soit la ligne a été supprimée, soit une erreur s’est produite dans une opération sur la ligne. Si le tableau d’état de ligne existait, la valeur dans le tableau d’état de ligne pour la ligne était SQL_ROW_DELETED ou SQL_ROW_ERROR. (Le tableau d’état de ligne est désigné par l’attribut d’instruction SQL_ATTR_ROW_STATUS_PTR.)|  
-|nf|Introuvable. La fonction a retourné SQL_NO_DATA. Cela ne s’applique pas lorsque **SQLExecDirect**, **SQLExecute**ou **SQLParamData** retourne SQL_NO_DATA après l’exécution d’une instruction UPDATE ou DELETE recherchée.|  
+|nf|Introuvable. La fonction a retourné SQL_NO_DATA. Cela ne s’applique pas lorsque **SQLExecDirect**, **SQLExecute** ou **SQLParamData** retourne SQL_NO_DATA après l’exécution d’une instruction UPDATE ou DELETE recherchée.|  
 |np|Non préparé. L’instruction n’a pas été préparée.|  
 |nr|Aucun résultat. L’instruction ne crée pas ou n’a pas créé de jeu de résultats.|  
 |o|Autre fonction. Une autre fonction s’exécutait de manière asynchrone.|  

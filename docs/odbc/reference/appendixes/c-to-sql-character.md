@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - character data type [ODBC]
 - data conversions from C to SQL types [ODBC], character
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: be66188a-ebdb-4c9e-af72-c379886766fa
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0ab8f1c0471c6e079f792aa40119f13cb31ca9ed
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c387c2063bea8f16c7ec5ec90aa0271830f3e5f9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88500022"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99212355"
 ---
 # <a name="c-to-sql-character"></a>C en SQL : Caractère
 Les identificateurs pour le type de données de caractères ODBC C sont les suivants :  
@@ -42,10 +42,10 @@ Les identificateurs pour le type de données de caractères ODBC C sont les suiv
 |SQL_REAL<br /><br /> SQL_FLOAT<br /><br /> SQL_DOUBLE|Les données se trouvent dans la plage du type de données dans lequel le nombre est converti<br /><br /> Les données se trouvent en dehors de la plage du type de données dans lequel le nombre est converti<br /><br /> La valeur des données n’est pas un *littéral numérique*|n/a<br /><br /> 22003<br /><br /> 22018|  
 |SQL_BIT|Les données sont 0 ou 1<br /><br /> Les données sont supérieures à 0, inférieures à 2 et ne sont pas égales à 1<br /><br /> Les données sont inférieures à 0 ou supérieures ou égales à 2<br /><br /> Les données ne sont pas un *littéral numérique*|n/a<br /><br /> 22001<br /><br /> 22003<br /><br /> 22018|  
 |SQL_BINARY<br /><br /> SQL_VARBINARY<br /><br /> SQL_LONGVARBINARY|(Longueur d’octet des données)/2 <= longueur d’octet de colonne<br /><br /> (Longueur d’octet des données)/2 > longueur d’octet de colonne<br /><br /> La valeur des données n’est pas une valeur hexadécimale|n/a<br /><br /> 22001<br /><br /> 22018|  
-|SQL_TYPE_DATE|La valeur des données est un *littéral ODBC-date* valide<br /><br /> La valeur des données est un *littéral ODBC-timestamp*valide ; la partie heure est égale à zéro<br /><br /> La valeur des données est un *littéral ODBC-timestamp*valide ; la partie heure est différente de zéro [a]<br /><br /> La valeur des données n’est pas un littéral *ODBC-date* ou un *littéral ODBC-timestamp*|n/a<br /><br /> n/a<br /><br /> 22008<br /><br /> 22018|  
-|SQL_TYPE_TIME|La valeur des données est un *littéral d’heure ODBC* valide<br /><br /> La valeur des données est un *littéral ODBC-timestamp*valide ; la partie fractions de seconde est égale à zéro [b]<br /><br /> La valeur des données est un *littéral ODBC-timestamp*valide ; la partie fractions de seconde est différente de zéro [b]<br /><br /> La valeur des données n’est pas un littéral *ODBC-Time-Literal* ou *ODBC-timestamp-Literal* valide|n/a<br /><br /> n/a<br /><br /> 22008<br /><br /> 22018|  
-|SQL_TYPE_TIMESTAMP|La valeur des données est un *littéral ODBC-timestamp*valide ; partie fractions de seconde non tronquée<br /><br /> La valeur des données est un *littéral ODBC-timestamp*valide ; fraction de seconde fractionnaire tronquée<br /><br /> La valeur des données est un *littéral ODBC-date*valide [c]<br /><br /> La valeur des données est un *littéral d’heure ODBC*valide [d]<br /><br /> La valeur des données n’est pas un littéral *ODBC-date-littéral*, *ODBC-Time-* Literal ou *ODBC-timestamp-Literal* valide|n/a<br /><br /> 22008<br /><br /> n/a<br /><br /> n/a<br /><br /> 22018|  
-|Tous les types d’intervalle SQL|La valeur de données est une *valeur d’intervalle*valide ; aucune troncation ne se produit<br /><br /> La valeur de données est une *valeur d’intervalle*valide ; la valeur dans l’un des champs est tronquée<br /><br /> La valeur des données n’est pas un littéral d’intervalle valide|n/a<br /><br /> 22015<br /><br /> 22018|  
+|SQL_TYPE_DATE|La valeur des données est un *littéral ODBC-date* valide<br /><br /> La valeur des données est un *littéral ODBC-timestamp* valide ; la partie heure est égale à zéro<br /><br /> La valeur des données est un *littéral ODBC-timestamp* valide ; la partie heure est différente de zéro [a]<br /><br /> La valeur des données n’est pas un littéral *ODBC-date* ou un *littéral ODBC-timestamp*|n/a<br /><br /> n/a<br /><br /> 22008<br /><br /> 22018|  
+|SQL_TYPE_TIME|La valeur des données est un *littéral d’heure ODBC* valide<br /><br /> La valeur des données est un *littéral ODBC-timestamp* valide ; la partie fractions de seconde est égale à zéro [b]<br /><br /> La valeur des données est un *littéral ODBC-timestamp* valide ; la partie fractions de seconde est différente de zéro [b]<br /><br /> La valeur des données n’est pas un littéral *ODBC-Time-Literal* ou *ODBC-timestamp-Literal* valide|n/a<br /><br /> n/a<br /><br /> 22008<br /><br /> 22018|  
+|SQL_TYPE_TIMESTAMP|La valeur des données est un *littéral ODBC-timestamp* valide ; partie fractions de seconde non tronquée<br /><br /> La valeur des données est un *littéral ODBC-timestamp* valide ; fraction de seconde fractionnaire tronquée<br /><br /> La valeur des données est un *littéral ODBC-date* valide [c]<br /><br /> La valeur des données est un *littéral d’heure ODBC* valide [d]<br /><br /> La valeur des données n’est pas un littéral *ODBC-date-littéral*, *ODBC-Time-* Literal ou *ODBC-timestamp-Literal* valide|n/a<br /><br /> 22008<br /><br /> n/a<br /><br /> n/a<br /><br /> 22018|  
+|Tous les types d’intervalle SQL|La valeur de données est une *valeur d’intervalle* valide ; aucune troncation ne se produit<br /><br /> La valeur de données est une *valeur d’intervalle* valide ; la valeur dans l’un des champs est tronquée<br /><br /> La valeur des données n’est pas un littéral d’intervalle valide|n/a<br /><br /> 22015<br /><br /> 22018|  
   
  [a] la partie heure de l’horodatage est tronquée.  
   

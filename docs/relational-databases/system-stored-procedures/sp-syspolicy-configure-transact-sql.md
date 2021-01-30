@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_syspolicy_configure
 - sp_syspolicy_configure_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 70c10922-9345-4190-ba69-808a43f760da
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 820952e0829014efc3669759dabf5d1dfc208d91
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: abf343b9230e8eeef0ce95ca8e2667c20c714cb8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88473577"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201248"
 ---
 # <a name="sp_syspolicy_configure-transact-sql"></a>sp_syspolicy_configure (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -51,7 +51,7 @@ sp_syspolicy_configure [ @name = ] 'name'
   
 -   'LogOnSuccess' - Spécifie si la Gestion basée sur des stratégies consigne les évaluations de stratégies réussies.  
   
-`[ @value = ] value` Valeur associée à la valeur spécifiée pour le *nom*. la *valeur* est **sql_variant**et est obligatoire.  
+`[ @value = ] value` Valeur associée à la valeur spécifiée pour le *nom*. la *valeur* est **sql_variant** et est obligatoire.  
   
 -   Si vous spécifiez « Enabled » comme *nom*, vous pouvez utiliser l’une des valeurs suivantes :  
   

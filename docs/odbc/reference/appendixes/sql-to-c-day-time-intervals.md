@@ -1,13 +1,13 @@
 ---
 description: 'SQL à C : Intervalles de jours-heures'
-title: 'SQL en C : intervalles de jours-temps | Microsoft Docs'
+title: 'SQL en C : intervalles de Day-Time | Microsoft Docs'
 ms.custom: ''
 ms.date: 01/19/2019
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - converting data from SQL to C types [ODBC], day-time intervals
 - day-time intervals [ODBC]
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8ea84d69-2292-4128-89a0-f184f68abb98
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f3c878434a6fc3b2dcbb8b09a4acfb41ecf44a84
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ae81fdf91c59457a6453958cb1c906abdd9d53fa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88429571"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203035"
 ---
 # <a name="sql-to-c-day-time-intervals"></a>SQL à C : Intervalles de jours-heures
 

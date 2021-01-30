@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addlinkedsrvlogin_TSQL
 - sp_addlinkedsrvlogin
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: eb69f303-1adf-4602-b6ab-f62e028ed9f6
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 4658625065876f35e3eb892381be67226795584f
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: bcefbe0acef90deb488a1d95f162a4d94f60aa95
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548407"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202374"
 ---
 # <a name="sp_addlinkedsrvlogin-transact-sql"></a>sp_addlinkedsrvlogin (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Crée ou met à jour un mappage entre une connexion sur l'instance locale de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et un compte de sécurité sur un serveur distant.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -49,7 +49,7 @@ sp_addlinkedsrvlogin [ @rmtsrvname = ] 'rmtsrvname'
  `[ @useself = ] { 'TRUE' | 'FALSE' | NULL }'`  
  Détermine s’il faut se connecter à *rmtsrvname* en empruntant l’identité des connexions locales ou en soumettant explicitement une connexion et un mot de passe. Le type de données est **varchar (** 8 **)**, avec true comme valeur par défaut.  
   
- La valeur TRUE spécifie que les connexions utilisent leurs propres informations d’identification pour se connecter à *rmtsrvname*, avec les arguments *rmtuser* et *rmtpassword* ignorés. FALSe spécifie que les arguments *rmtuser* et *rmtpassword* sont utilisés pour se connecter à *rmtsrvname* pour la connexion *locale locale*spécifiée. Si *rmtuser* et *rmtpassword* ont également la valeur null, aucune connexion ou aucun mot de passe n’est utilisé pour se connecter au serveur lié.  
+ La valeur TRUE spécifie que les connexions utilisent leurs propres informations d’identification pour se connecter à *rmtsrvname*, avec les arguments *rmtuser* et *rmtpassword* ignorés. FALSe spécifie que les arguments *rmtuser* et *rmtpassword* sont utilisés pour se connecter à *rmtsrvname* pour la connexion *locale locale* spécifiée. Si *rmtuser* et *rmtpassword* ont également la valeur null, aucune connexion ou aucun mot de passe n’est utilisé pour se connecter au serveur lié.  
   
  `[ @locallogin = ] 'locallogin'`  
  Connexion sur le serveur local. *LocalLogin* est de **type sysname**, avec NULL comme valeur par défaut. La valeur NULL indique que cette entrée s’applique à toutes les connexions locales qui se connectent à *rmtsrvname*. Si la valeur n’est pas NULL, la connexion *locale* peut être une [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] connexion ou une connexion Windows. La connexion Windows doit être autorisée à accéder à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] directement ou par l'intermédiaire de son appartenance à un groupe Windows qui a une autorisation d'accès.  

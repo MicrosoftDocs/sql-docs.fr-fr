@@ -6,7 +6,7 @@ ms.date: 04/17/2018
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 3030c86a-0a74-4fed-ac0f-392e244cb965
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 06a04e6b6deecddf722a80f9bcf736d7bc57387a
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 5dcc428b696009b15578e0b1813dcbc2380a299f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100009"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202473"
 ---
 # <a name="sql-server-operating-system-related-dynamic-management-views-transact-sql"></a>Vues de gestion dynamique SQL Server liées au système d'exploitation (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

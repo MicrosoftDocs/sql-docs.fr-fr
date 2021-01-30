@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - log_shipping_monitor_alert
 - log_shipping_monitor_alert_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 1c775e48-9898-4149-b9d1-04d465f23438
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 41dd2026ede118d7bbab15bfb238daba9a9ac96f
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: ae126f82cce72ec9270fd2779bae986bb317da7f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102124"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201618"
 ---
 # <a name="log_shipping_monitor_alert-transact-sql"></a>log_shipping_monitor_alert (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

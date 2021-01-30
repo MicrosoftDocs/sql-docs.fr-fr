@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dbo.sysdac_instances_TSQL
 - sysdac_instances
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 28285f3d-3889-439f-8b24-3bdef08e46b4
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: f5178fdb50b8a959471c8be973080d1416ba10f6
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: b548d5a92b20df8256b4e54b566dd8e6615b754a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092657"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201428"
 ---
 # <a name="data-tier-application-views---dbosysdac_instances"></a>Affichages des applications de la couche données-dbo.sysdac_instances
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - IHpublishertables
 - IHpublishertables_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 7d16ac39-633a-4fe2-8f22-1d9afc191ee9
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 604f5ddba7eb007833adcab0a4a026cd1fe3a124
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: d707fece2ded03399d410b69847593cfa0789045
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100570"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201630"
 ---
 # <a name="ihpublishertables-transact-sql"></a>IHpublishertables (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

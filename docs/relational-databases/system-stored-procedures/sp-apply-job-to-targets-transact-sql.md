@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_apply_job_to_targets
 - sp_apply_job_to_targets_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 4a3e9173-7e3c-4100-a9ac-2f5d2c60a8b0
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: a164569a5a62e24dabe0d47839eaa084b32e2efa
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: f9fdc4cffdbe21d1c6c502aa813db55e0444d696
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89528888"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203233"
 ---
 # <a name="sp_apply_job_to_targets-transact-sql"></a>sp_apply_job_to_targets (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Applique un travail à un ou plusieurs serveurs cibles ou aux serveurs cibles d'un ou de plusieurs groupes de serveurs cibles.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,9 +52,9 @@ sp_apply_job_to_targets { [ @job_id = ] job_id | [ @job_name = ] 'job_name' }
   
 `[ @target_server_groups = ] 'target_server_groups'` Liste séparée par des virgules des groupes de serveurs cibles auxquels le travail spécifié doit être appliqué. *target_server_groups* est de type **nvarchar (2048)**, avec NULL comme valeur par défaut.  
   
-`[ @target_servers = ] 'target_servers'` Liste séparée par des virgules des serveurs cibles auxquels le travail spécifié doit être appliqué. *target_servers*est de type **nvarchar (2048)**, avec NULL comme valeur par défaut.  
+`[ @target_servers = ] 'target_servers'` Liste séparée par des virgules des serveurs cibles auxquels le travail spécifié doit être appliqué. *target_servers* est de type **nvarchar (2048)**, avec NULL comme valeur par défaut.  
   
-`[ @operation = ] 'operation'` Indique si le travail spécifié doit être appliqué ou supprimé des serveurs cibles ou des groupes de serveurs cibles spécifiés. *operation*est de type **varchar (7)**, avec Apply comme valeur par défaut. Les opérations valides sont **apply** et **Remove**.  
+`[ @operation = ] 'operation'` Indique si le travail spécifié doit être appliqué ou supprimé des serveurs cibles ou des groupes de serveurs cibles spécifiés. *operation* est de type **varchar (7)**, avec Apply comme valeur par défaut. Les opérations valides sont **apply** et **Remove**.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

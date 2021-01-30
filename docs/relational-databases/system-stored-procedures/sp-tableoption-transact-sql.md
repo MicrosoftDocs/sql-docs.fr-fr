@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_tableoption_TSQL
 - sp_tableoption
@@ -19,12 +19,12 @@ ms.assetid: 0a57462c-1057-4c7d-bce3-852cc898341d
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 05de24f511f5d72bc4eba1947d1731491e3c1a37
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: d2846b289c31777adec6d548addba11a9c7e463d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472680"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204339"
 ---
 # <a name="sp_tableoption-transact-sql"></a>sp_tableoption (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "97472680"
 >  La fonctionnalité text in row sera supprimée dans une future version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour stocker des données de valeur élevée, nous vous recommandons d’utiliser les types de données **varchar (max)**, **nvarchar (max)** et **varbinary (max)** .  
   
 
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -53,7 +53,7 @@ sp_tableoption [ @TableNamePattern = ] 'table'
  [ @OptionName =] '*option_name*'  
  Spécifie un nom d'option de table. *option_name* est de type **varchar (35)**, sans valeur par défaut null. *option_name* peut prendre l’une des valeurs suivantes.  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |table lock on bulk load|Désactivée (valeur par défaut), oblige le processus de chargement en masse effectué sur les tables définies par l'utilisateur à obtenir des verrous de lignes. Activée, oblige le processus de chargement en masse effectué sur les tables définies par l'utilisateur à obtenir un verrou de mise à jour en bloc.|  
 |insert row lock|N'est plus pris en charge.<br /><br /> Cette option n'a aucun effet sur le comportement de verrouillage de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et elle n'est incluse qu'à des fins de compatibilité des scripts et des procédures existants.|  
@@ -69,7 +69,7 @@ sp_tableoption [ @TableNamePattern = ] 'table'
 ## <a name="return-code-values"></a>Codet de retour  
  0 (succès) ou numéro d'erreur (échec)  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  La procédure sp_tableoption peut être utilisée uniquement pour définir les valeurs des options des tables définies par l'utilisateur. Pour afficher les propriétés d’une table, utilisez OBJECTPROPERTY ou Query sys. tables.  
   
  L'option text in row de sp_tableoption peut être activée ou désactivée uniquement pour les tables qui contiennent des colonnes de texte. Si la table ne contient pas de colonne de texte, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] génère une erreur.  

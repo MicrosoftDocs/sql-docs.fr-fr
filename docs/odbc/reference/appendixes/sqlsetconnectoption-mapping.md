@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQLSetConnectOption function [ODBC], mapping
 - mapping deprecated functions [ODBC], SQLSetConnectOption
 ms.assetid: a1b325cf-0c42-41c1-b141-b5a4fee7e708
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 6c1f1379bfd2bbc2faccf719d68009ed63b350fd
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 919220fed87878bf0bcf23359f0714f702f9a6a8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88476961"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202653"
 ---
 # <a name="sqlsetconnectoption-mapping"></a>SQLSetConnectOption, mappage
 Quand ODBC 2. l’application *x* appelle **SQLSetConnectOption** via un pilote ODBC 3 *. x* , l’appel à  
@@ -48,7 +48,7 @@ SQLSetConnectOption(hdbc, fOption, vParam)
     SQLSetConnectAttr(ConnectionHandle, Attribute, ValuePtr, BufferLength)  
     ```  
   
- Dans les trois cas précédents, l' *argument ConnectionHandle* est défini sur la valeur de *hdbc*, l' *argument attribute* est défini sur la valeur de *fOption*et l’argument *ValuePtr* est défini sur la même valeur que *vParam*.  
+ Dans les trois cas précédents, l' *argument ConnectionHandle* est défini sur la valeur de *hdbc*, l' *argument attribute* est défini sur la valeur de *fOption* et l’argument *ValuePtr* est défini sur la même valeur que *vParam*.  
   
  Étant donné que le gestionnaire de pilotes ne sait pas si l’attribut de connexion défini par le pilote a besoin d’une chaîne ou d’une valeur entière de 32 bits, il doit transmettre une valeur valide pour l’argument *BufferLength* de **SQLSetConnectAttr**. Si le pilote a défini une sémantique spéciale pour les attributs de connexion définis par le pilote et doit être appelée à l’aide de **SQLSetConnectOption**, il doit prendre en charge **SQLSetConnectOption**.  
   

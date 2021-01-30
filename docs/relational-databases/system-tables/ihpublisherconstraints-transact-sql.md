@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - IHpublisherconstraints
 - IHpublisherconstraints_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 537b1e1a-7228-4680-aa27-5ad7072ea01e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: d53c7bdee115715b8513356f02a3afddc75ec118
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 1dba86ac246809ce6b707d0de0633c3057931280
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092446"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201659"
 ---
 # <a name="ihpublisherconstraints-transact-sql"></a>IHpublisherconstraints (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

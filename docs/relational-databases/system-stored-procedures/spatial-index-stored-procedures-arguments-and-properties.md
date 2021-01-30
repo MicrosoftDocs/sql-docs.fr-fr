@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ee26082b-c0ed-40ff-b5ad-f5f6b00f0475
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 840668495c620ca3cb7a403d3775238b12a52ec8
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+ms.openlocfilehash: f9faf0901643b07420f8627d6afda4b9713d034a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91809725"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201755"
 ---
 # <a name="spatial-index-stored-procedures---arguments-and-properties"></a>Procédures stockées d’index spatial-arguments et propriétés
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "91809725"
 `[ @xml_output = ] 'xml_output'` Paramètre de sortie qui retourne le jeu de résultats dans un fragment XML. *xml_output* est de **XML** sans valeur par défaut.  
   
 ## <a name="properties"></a>Propriétés  
- Définissez ** \@ verboseoutput** = 0 pour retourner les propriétés principales, comme indiqué dans le tableau ci-dessous. ** \@ verboseoutput** > 0 pour retourner toutes les propriétés de l’index spatial.  
+ Définissez **\@ verboseoutput** = 0 pour retourner les propriétés principales, comme indiqué dans le tableau ci-dessous. **\@ verboseoutput** > 0 pour retourner toutes les propriétés de l’index spatial.  
   
  **Base_Table_Rows**  
  Nombre de lignes dans la table de base. La valeur est de type **bigint**.  

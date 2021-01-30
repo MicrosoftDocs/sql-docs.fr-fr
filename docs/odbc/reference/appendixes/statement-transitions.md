@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - transitioning states [ODBC], statement
 - state transitions [ODBC], statement
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3d70e0e3-fe83-4b4d-beac-42c82495a05b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 3515b1d6aea4cab66bc01ee3d071727e6cb8f447
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7fb43bb8aa7ad9bd71906036a081dac4ec91c794
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88386515"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202548"
 ---
 # <a name="statement-transitions"></a>Transitions d’instruction
 Les instructions ODBC ont les États suivants.  
@@ -62,7 +62,7 @@ Les instructions ODBC ont les États suivants.
   
  [4] cette ligne affiche les transitions lorsque *comme HandleType* a été SQL_HANDLE_DESC.  
   
- [5] l’appel de **SQLAllocHandle** avec *OutputHandlePtr* pointant vers un handle valide remplace ce handle sans tenir compte du contenu précédent dans ce handle et peut entraîner des problèmes pour les pilotes ODBC. Il s’agit d’une programmation d’application ODBC incorrecte pour appeler **SQLAllocHandle** deux fois avec la même variable d’application définie pour * \* OutputHandlePtr* sans appeler **SQLFreeHandle** pour libérer le descripteur avant de le réallouer. Le remplacement des handles ODBC de telle manière peut entraîner des erreurs ou des comportements incohérents dans la partie des pilotes ODBC.  
+ [5] l’appel de **SQLAllocHandle** avec *OutputHandlePtr* pointant vers un handle valide remplace ce handle sans tenir compte du contenu précédent dans ce handle et peut entraîner des problèmes pour les pilotes ODBC. Il s’agit d’une programmation d’application ODBC incorrecte pour appeler **SQLAllocHandle** deux fois avec la même variable d’application définie pour *\* OutputHandlePtr* sans appeler **SQLFreeHandle** pour libérer le descripteur avant de le réallouer. Le remplacement des handles ODBC de telle manière peut entraîner des erreurs ou des comportements incohérents dans la partie des pilotes ODBC.  
   
 ## <a name="sqlbindcol"></a>SQLBindCol  
   
@@ -108,7 +108,7 @@ Les instructions ODBC ont les États suivants.
   
  [4]   **SQLSetPos** a retourné SQL_NEED_DATA.  
   
- [5]   **SQLFetch**, **SQLFetchScroll**ou **SQLExtendedFetch** n’a pas été appelé.  
+ [5]   **SQLFetch**, **SQLFetchScroll** ou **SQLExtendedFetch** n’a pas été appelé.  
   
  [6]   **SQLFetch** ou **SQLFetchScroll** a été appelé.  
   

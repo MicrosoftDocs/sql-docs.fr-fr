@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - IHpublishercolumnconstraints
 - IHpublishercolumnconstraints_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: d7a41da6-e067-430a-8da2-3f6745b8a4f3
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 8f82d650cc09c7379c9ad9256413229143be4cdf
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 83d20b9ac6496c04b5c36ec249c0227244b97b58
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092479"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201676"
 ---
 # <a name="ihpublishercolumnconstraints-transact-sql"></a>IHpublishercolumnconstraints (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

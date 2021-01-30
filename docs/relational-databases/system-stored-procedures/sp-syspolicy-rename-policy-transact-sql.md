@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_syspolicy_rename_policy_TSQL
 - sp_syspolicy_rename_policy
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: ce2b07f5-23b1-4f49-8e7b-c18cf3f3d45b
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 782128b1d41f94c63f4e9de22e618378c4ec6e6a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 962e15744221175abd5732df7fe4e29d7b924ae0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88481010"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211835"
 ---
 # <a name="sp_syspolicy_rename_policy-transact-sql"></a>sp_syspolicy_rename_policy (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -42,11 +42,11 @@ sp_syspolicy_rename_policy { [ @name = ] 'name' | [ @policy_id = ] policy_id }
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @name = ] 'name'` Nom de la stratégie que vous souhaitez renommer. *Name* est de **type sysname**et doit être spécifié si *policy_id* a la valeur null.  
+`[ @name = ] 'name'` Nom de la stratégie que vous souhaitez renommer. *Name* est de **type sysname** et doit être spécifié si *policy_id* a la valeur null.  
   
-`[ @policy_id = ] policy_id` Est l’identificateur de la stratégie que vous souhaitez renommer. *policy_id* est de **type int**et doit être spécifié si *Name* a la valeur null.  
+`[ @policy_id = ] policy_id` Est l’identificateur de la stratégie que vous souhaitez renommer. *policy_id* est de **type int** et doit être spécifié si *Name* a la valeur null.  
   
-`[ @new_name = ] 'new_name'` Nouveau nom de la stratégie. *new_name* est de **type sysname**et est obligatoire. Ne peut pas avoir la valeur NULL ou être une chaîne vide.  
+`[ @new_name = ] 'new_name'` Nouveau nom de la stratégie. *new_name* est de **type sysname** et est obligatoire. Ne peut pas avoir la valeur NULL ou être une chaîne vide.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

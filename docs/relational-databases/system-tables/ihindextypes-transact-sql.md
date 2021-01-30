@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - IHindextypes
 - IHindextypes_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 5eb67d59-a19d-4dba-9d2b-657f87818f6b
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 22ed282e39480e98d8df7a86a499e0513ac57081
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 7738b30518520436a9df6c09ad1ae585277f8b7f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094825"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201714"
 ---
 # <a name="ihindextypes-transact-sql"></a>IHindextypes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

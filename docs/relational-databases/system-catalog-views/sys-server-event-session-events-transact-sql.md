@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - server_event_session_events
 - server_event_session_events_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 75986e91-1fc7-4f14-98ac-4e90154a74db
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 48e6ae7653dc4ba2bb37bab71d597c405f35d626
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: d0476f0aefc103db45ad77c00d49ecf09d422c24
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096706"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203423"
 ---
 # <a name="sysserver_event_session_events-transact-sql"></a>sys.server_event_session_events (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "98096706"
 ## <a name="remarks"></a>Notes  
  Cette vue a les cardinalités de relation suivantes.  
   
-| Du | À | Relationship |
+| Du | À | Relation |
 | ---- | -- | ------------ |
 |sys.server_event_session_events.event_session_id|sys.server_event_sessions sys.server_event_sessions.event_session_id|Plusieurs-à-un|  
   

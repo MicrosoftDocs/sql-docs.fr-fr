@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSmerge_identity_range_TSQL
 - MSmerge_identity_range
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 493a2028-88a0-4e83-ad89-ae5661d9f477
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f4174aa0b720727ad765e8fa9b62b8d3730dab09
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 34c6c9258c4fd3a72f1c499abebefecdc65c3912
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102033"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203594"
 ---
 # <a name="msmerge_identity_range-transact-sql"></a>MSmerge_identity_range (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

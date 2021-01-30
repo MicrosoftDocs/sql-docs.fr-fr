@@ -5,19 +5,19 @@ ms.custom: ''
 ms.date: 03/13/2017
 ms.service: sql-data-warehouse
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: 1d043964-dc6e-4c3e-ab61-bc444d5e25ae
 author: ronortloff
 ms.author: rortloff
 monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest'
-ms.openlocfilehash: 8a859571ef9f4682c4c8556038247dc21d47eb50
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 2d3f79c55a1e48fd3f7b1d18671e1d710658f345
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474610"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201327"
 ---
 # <a name="sp_datatype_info_90-azure-synapse-analytics"></a>sp_datatype_info_90 (Azure Synapse Analytics)
 [!INCLUDE[applies-to-version/asa-pdw](../../includes/applies-to-version/asa-pdw.md)]
@@ -70,7 +70,7 @@ sp_datatype_info_90 [ [ @data_type = ] data_type ]
 |INTERVAL_PRECISION|**smallint**|Valeur de la précision de début de l’intervalle si *data_type* est **Interval**; Sinon, NULL.|  
 |USERTYPE|**smallint**|valeur **usertype** de la table systypes.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  sp_datatype_info équivaut à SQLGetTypeInfo dans ODBC. Les résultats retournés sont triés par DATA_TYPE, puis en fonction du niveau de précision de la concordance entre le type de données et le type de données ODBC SQL correspondant.  
   
 ## <a name="permissions"></a>Autorisations  

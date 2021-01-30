@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_vupgrade_replication_TSQL
 - sp_vupgrade_replication
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: d2c0ed66-07d1-4adc-82e5-a654376879bc
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 76af37a788db667d1fc7e39976a63d04feb72a29
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 7a47e06ee2d762763922974074927ea50e3944e4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547836"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201810"
 ---
 # <a name="sp_vupgrade_replication-transact-sql"></a>sp_vupgrade_replication (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Activé par le programme d'installation lors de la mise à niveau d'un serveur de réplication. Met à niveau le schéma et les données système afin que la réplication soit prise en charge par la version actuelle du produit. Crée de nouveaux objets système de réplication dans les bases de données système et utilisateur. Cette procédure stockée est exécutée sur la machine sur laquelle la mise à niveau de la réplication doit intervenir.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -58,7 +58,7 @@ sp_vupgrade_replication [ [@login=] 'login' ]
   
 `[ @force_remove = ] 'force_removal'` [!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]  
   
-`[ @security_mode = ] 'security_mode'` Mode de sécurité de connexion à utiliser lors de la création d’objets système dans la base de données de distribution. *security_mode* est de **bits** avec **0**comme valeur par défaut. Si la **valeur est 0**, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification est utilisée. Si la condition est **1**, l’authentification Windows sera utilisée.  
+`[ @security_mode = ] 'security_mode'` Mode de sécurité de connexion à utiliser lors de la création d’objets système dans la base de données de distribution. *security_mode* est de **bits** avec **0** comme valeur par défaut. Si la **valeur est 0**, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification est utilisée. Si la condition est **1**, l’authentification Windows sera utilisée.  
   
 > [!NOTE]  
 >  Ce paramètre est ignoré lorsque vous effectuez une mise à niveau vers [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] et versions ultérieures.  

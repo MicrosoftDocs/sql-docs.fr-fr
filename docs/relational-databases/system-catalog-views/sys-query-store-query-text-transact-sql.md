@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SYS.QUERY_STORE_QUERY_TEXT
 - QUERY_STORE_QUERY_TEXT
@@ -22,12 +22,12 @@ ms.assetid: f7032fa0-7c16-4492-bb82-685806c63a8c
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: ee84228b126765ac48b128024d41bf6f8318c148
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 6a700c3825e835f85c90f3f9116853861dfd16f0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093109"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204527"
 ---
 # <a name="sysquery_store_query_text-transact-sql"></a>sys.query_store_query_text (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa.md)]

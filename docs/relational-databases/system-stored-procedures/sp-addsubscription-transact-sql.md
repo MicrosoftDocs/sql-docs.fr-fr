@@ -7,7 +7,7 @@ ms.prod_service: database-engine
 ms.reviewer: ''
 ms.custom: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addsubscription
 - sp_addsubscription_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 61ddf287-1fa0-4c1a-8657-ced50cebf0e0
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 1cf622748da040060681dac848273238f73c66a5
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: a4bb033d4817fcf08a7816f8c6598802e9ac3f8c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548332"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211960"
 ---
 # <a name="sp_addsubscription-transact-sql"></a>sp_addsubscription (Transact-SQL)
 [!INCLUDE[sql-asdb](../../includes/applies-to-version/sql-asdb.md)]
 
   Ajoute un abonnement à une publication et définit l'état de l'abonné. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -159,7 +159,7 @@ sp_addsubscription [ @publication = ] 'publication'
  Valeur à appliquer à la fréquence définie par *frequency_type*. *frequency_interval* est de **type int**, avec NULL comme valeur par défaut.  
   
  [ @frequency_relative_interval =] *frequency_relative_interval*  
- Date de l'Agent de distribution. Ce paramètre est utilisé lorsque *frequency_type* a la valeur 32 (mensuelle relative). *frequency_relative_interval* est de **type int**et peut prendre l’une des valeurs suivantes.  
+ Date de l'Agent de distribution. Ce paramètre est utilisé lorsque *frequency_type* a la valeur 32 (mensuelle relative). *frequency_relative_interval* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -174,7 +174,7 @@ sp_addsubscription [ @publication = ] 'publication'
  Facteur de récurrence utilisé par *frequency_type*. *frequency_recurrence_factor* est de **type int**, avec NULL comme valeur par défaut.  
   
  [ @frequency_subday =] *frequency_subday*  
- Indique, en minutes, la fréquence de replanification pendant la période définie. *frequency_subday* est de **type int**et peut prendre l’une des valeurs suivantes.  
+ Indique, en minutes, la fréquence de replanification pendant la période définie. *frequency_subday* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -215,7 +215,7 @@ sp_addsubscription [ @publication = ] 'publication'
 >  Ce paramètre est déconseillé et n'est conservé que pour la compatibilité descendante des scripts.  
   
  [ @offloadserver =] '*remote_agent_server_name*'  
- Indique le nom réseau du serveur à utiliser pour l'activation à distance. *remote_agent_server_name*est de **type sysname**, avec NULL comme valeur par défaut.  
+ Indique le nom réseau du serveur à utiliser pour l'activation à distance. *remote_agent_server_name* est de **type sysname**, avec NULL comme valeur par défaut.  
   
  [ @dts_package_name =] '*dts_package_name*'  
  Spécifie le nom du package DTS (Data Transformation Services). *dts_package_name* est de **type sysname** , avec NULL comme valeur par défaut. Par exemple, pour spécifier un package de DTSPub_Package, le paramètre est : `@dts_package_name = N'DTSPub_Package'`. Ce paramètre est disponible avec les abonnements envoyés. Pour ajouter des informations de package DTS à un abonnement extrait, utilisez sp_addpullsubscription_agent.  
@@ -247,7 +247,7 @@ sp_addsubscription [ @publication = ] 'publication'
 |disk|L'unité de sauvegarde est un lecteur de disque.|  
 |tape|L'unité de sauvegarde est un lecteur de bande.|  
   
- *BackupDeviceType* est utilisé uniquement lorsque *sync_method*est défini sur initialize_with_backup.  
+ *BackupDeviceType* est utilisé uniquement lorsque *sync_method* est défini sur initialize_with_backup.  
   
  [ @backupdevicename =] '*backupdevicename*'  
  Indique le nom de l'unité utilisée lors de l'initialisation d'un Abonné à partir d'une sauvegarde. *backupdevicename* est de type **nvarchar (1000)**, avec NULL comme valeur par défaut.  
@@ -277,7 +277,7 @@ sp_addsubscription [ @publication = ] 'publication'
 >  Les flux d'abonnements ne fonctionnent pas pour les articles configurés pour fournir [!INCLUDE[tsql](../../includes/tsql-md.md)]. Pour utiliser les flux d'abonnements, configurez les articles afin qu'ils fournissent des appels de procédures stockées à la place.  
   
  [ @subscriber_type =] *subscriber_type*  
- Type d'abonné. *subscriber_type* est de **type tinyint**et peut prendre l’une des valeurs suivantes.  
+ Type d'abonné. *subscriber_type* est de **type tinyint** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -307,16 +307,16 @@ sp_addsubscription [ @publication = ] 'publication'
   
 -   ont un article configuré pour utiliser des instructions paramétrables.  
   
- En outre, si l’option *allow_queued_tran* de la publication est définie sur true (ce qui permet la mise en file d’attente des modifications sur l’abonné jusqu’à ce qu’elles puissent être appliquées sur le serveur de publication), la colonne timestamp d’un article est remplacée par l' **horodateur**et les modifications sur cette colonne sont envoyées à l’abonné. L'abonné génère et met à jour la valeur de la colonne timestamp. Pour un abonné ODBC ou OLE DB, sp_addsubscription échoue si une tentative est effectuée pour s’abonner à une publication dont le *allow_queued_tran* a la valeur true et les articles contenant des colonnes timestamp.  
+ En outre, si l’option *allow_queued_tran* de la publication est définie sur true (ce qui permet la mise en file d’attente des modifications sur l’abonné jusqu’à ce qu’elles puissent être appliquées sur le serveur de publication), la colonne timestamp d’un article est remplacée par l' **horodateur** et les modifications sur cette colonne sont envoyées à l’abonné. L'abonné génère et met à jour la valeur de la colonne timestamp. Pour un abonné ODBC ou OLE DB, sp_addsubscription échoue si une tentative est effectuée pour s’abonner à une publication dont le *allow_queued_tran* a la valeur true et les articles contenant des colonnes timestamp.  
   
  Si un abonnement n’utilise pas de package DTS, il ne peut pas s’abonner à une publication qui est définie sur *allow_transformable_subscriptions*. Si la table issue de la publication doit être répliquée vers un abonnement DTS et un abonnement non-DTS, deux publications indépendantes doivent être créées : une pour chaque type d'abonnement.  
   
- Lors de la sélection des options **sync_type** , *replication support only*, *initialize with backup*ou *initialize from lsn*, l'Agent de lecture du journal doit s'exécuter après l'exécution de **sp_addsubscription**, afin que les scripts d'installation soient écrits dans la base de données de distribution. L'Agent de lecture du journal doit s'exécuter sous un compte membre du rôle serveur fixe **sysadmin** . Lorsque l'option **sync_type** a la valeur *Automatic*, aucune action particulière de l'Agent de lecture du journal n'est requise.  
+ Lors de la sélection des options **sync_type** , *replication support only*, *initialize with backup* ou *initialize from lsn*, l'Agent de lecture du journal doit s'exécuter après l'exécution de **sp_addsubscription**, afin que les scripts d'installation soient écrits dans la base de données de distribution. L'Agent de lecture du journal doit s'exécuter sous un compte membre du rôle serveur fixe **sysadmin** . Lorsque l'option **sync_type** a la valeur *Automatic*, aucune action particulière de l'Agent de lecture du journal n'est requise.  
   
 ## <a name="permissions"></a>Autorisations  
  Seuls les membres du rôle serveur fixe sysadmin ou du rôle de base de données fixe db_owner peuvent exécuter sp_addsubscription. Pour les abonnements par extraction de données (pull), les utilisateurs ayant une connexion à la liste d'accès aux publications peuvent exécuter sp_addsubscription.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_addtranpushsubscription_agent](../../relational-databases/replication/codesnippet/tsql/sp-addsubscription-trans_1.sql)]  
   
 ## <a name="see-also"></a>Voir aussi  

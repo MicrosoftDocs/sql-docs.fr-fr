@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - IHpublishercolumnindexes
 - IHpublishercolumnindexes_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 95b95a1d-b502-4838-825f-82a456487e25
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ab3d300d9dc76dd1d4922e6d62b4a6e0f8e1e492
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 13d7e4240b86950b21889f660d9e228eb09552e7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092489"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201664"
 ---
 # <a name="ihpublishercolumnindexes-transact-sql"></a>IHpublishercolumnindexes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

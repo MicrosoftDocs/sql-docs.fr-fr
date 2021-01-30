@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpdevice
 - sp_helpdevice_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 1a5eafa7-384e-4691-ba05-978eb73bbefb
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: ae8e3db950ceab576786340ca396b25d774cb774
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 95c63d822851d7d1ccf9493e3e0d4cc9beedd624
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89527724"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204738"
 ---
 # <a name="sp_helpdevice-transact-sql"></a>sp_helpdevice (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -31,9 +31,9 @@ ms.locfileid: "89527724"
   Transmet des informations sur les unités de sauvegarde Microsoft® SQL Server™.  
   
 > [!IMPORTANT]  
->  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)]Nous vous recommandons d’utiliser à la place l’affichage catalogue [sys. backup_devices](../../relational-databases/system-catalog-views/sys-backup-devices-transact-sql.md)  
+>  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)]Nous vous recommandons d’utiliser à la place l’affichage catalogue [sys.backup_devices](../../relational-databases/system-catalog-views/sys-backup-devices-transact-sql.md)  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -60,7 +60,7 @@ sp_helpdevice [ [ @devname = ] 'name' ]
 |**size**|**int**|Taille du périphérique (en pages de 2 Ko).|  
   
 ## <a name="remarks"></a>Notes  
- Si le *nom* est spécifié, **sp_helpdevice** affiche des informations sur l’unité de vidage spécifiée. Si le *nom* n’est pas spécifié, **sp_helpdevice** affiche des informations sur tous les périphériques de vidage dans l’affichage catalogue **sys. backup_devices** .  
+ Si le *nom* est spécifié, **sp_helpdevice** affiche des informations sur l’unité de vidage spécifiée. Si le *nom* n’est pas spécifié, **sp_helpdevice** affiche des informations sur tous les périphériques de vidage dans l’affichage catalogue **sys.backup_devices** .  
   
  Les périphériques de vidage sont ajoutés au système à l’aide de **sp_addumpdevice**.  
   

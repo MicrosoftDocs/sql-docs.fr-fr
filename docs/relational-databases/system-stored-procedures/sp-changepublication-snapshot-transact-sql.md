@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_changepublication_snapshot_TSQL
 - sp_changepublication_snapshot
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 518a4618-3592-4edc-8425-cbc33cdff891
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 437a923a6b4ad536f7702e547bb299bcf1ff47d1
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: e7dadc4e406c11ba93a5428a6dfc958ed96a36a5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89541883"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211939"
 ---
 # <a name="sp_changepublication_snapshot-transact-sql"></a>sp_changepublication_snapshot (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "89541883"
 > [!IMPORTANT]  
 >  Lors de la configuration d'un serveur de publication avec un serveur de distribution distant, les valeurs fournies pour tous les paramètres, y compris *job_login* et *job_password*, sont envoyées en texte brut au serveur de distribution. Vous devez chiffrer la connexion entre le serveur de publication et son serveur de distribution distant avant d'exécuter cette procédure stockée. Pour plus d’informations, consultez [Activer des connexions chiffrées dans le moteur de base de données &#40;Gestionnaire de configuration SQL Server&#41;](../../database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine.md).  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -60,7 +60,7 @@ sp_changepublication_snapshot [ @publication= ] 'publication'
 ## <a name="arguments"></a>Arguments  
 `[ @publication = ] 'publication'` Nom de la publication. *publication* est de **type sysname**, sans valeur par défaut.  
   
-`[ @frequency_type = ] frequency_type` Fréquence de planification de l’agent. *frequency_type* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_type = ] frequency_type` Fréquence de planification de l’agent. *frequency_type* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -74,7 +74,7 @@ sp_changepublication_snapshot [ @publication= ] 'publication'
 |**128**|Périodique|  
 |NULL (par défaut)||  
   
-`[ @frequency_interval = ] frequency_interval` Spécifie les jours d’exécution de l’agent. *frequency_interval* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_interval = ] frequency_interval` Spécifie les jours d’exécution de l’agent. *frequency_interval* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -90,7 +90,7 @@ sp_changepublication_snapshot [ @publication= ] 'publication'
 |**10**|Jours de week-end|  
 |NULL (par défaut)||  
   
-`[ @frequency_subday = ] frequency_subday` Est l’unité pour *freq_subday_interval*. *frequency_subday* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_subday = ] frequency_subday` Est l’unité pour *freq_subday_interval*. *frequency_subday* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

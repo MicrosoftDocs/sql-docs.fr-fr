@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - data types [ODBC], C data types
 - C data types [ODBC], about C data types
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b681d260-3dbb-47df-a616-4910d727add7
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 6dadd93f13418d520c4ab908ba0d9402d07c893a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5dbce167ea65daa030030bd32a909c5af3d06262
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88421523"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99212453"
 ---
 # <a name="c-data-types"></a>Type de données C
 Les types de données ODBC C indiquent le type de données des mémoires tampons C utilisées pour stocker les données dans l’application.  
@@ -109,7 +109,7 @@ struct tagSQL_NUMERIC_STRUCT {
    SQLCHAR precision;  
    SQLSCHAR scale;  
    SQLCHAR sign[g];  
-   SQLCHAR val[SQL_MAX_NUMERIC_LEN];[e], [f]   
+   SQLCHAR val[SQL_MAX_NUMERIC_LEN];[e], [f]   
 } SQL_NUMERIC_STRUCT;  
 ```  
   
@@ -136,7 +136,7 @@ struct tagSQLGUID {
   
  [d] les applications ODBC 3 *. x* doivent utiliser SQL_C_VARBOOKMARK, pas SQL_C_BOOKMARK. Quand une application ODBC 3 *. x* fonctionne avec ODBC 2. *x* , le gestionnaire de pilotes ODBC 3 *. x* mappe SQL_C_VARBOOKMARK à SQL_C_BOOKMARK.  
   
- [e] un nombre est stocké dans le champ *Val* de la structure SQL_NUMERIC_STRUCT sous la forme d’un entier mis à l’échelle, en mode Little endian (l’octet le plus à gauche étant l’octet le moins significatif). Par exemple, le nombre 10,001 de base 10, avec une échelle de 4, est mis à l’échelle sur un entier de 100010. Étant donné qu’il s’agit de 186AA au format hexadécimal, la valeur de SQL_NUMERIC_STRUCT serait «AA 86 01 00 00... 00», avec le nombre d’octets défini par le **#define**SQL_MAX_NUMERIC_LEN.  
+ [e] un nombre est stocké dans le champ *Val* de la structure SQL_NUMERIC_STRUCT sous la forme d’un entier mis à l’échelle, en mode Little endian (l’octet le plus à gauche étant l’octet le moins significatif). Par exemple, le nombre 10,001 de base 10, avec une échelle de 4, est mis à l’échelle sur un entier de 100010. Étant donné qu’il s’agit de 186AA au format hexadécimal, la valeur de SQL_NUMERIC_STRUCT serait «AA 86 01 00 00... 00», avec le nombre d’octets défini par le **#define** SQL_MAX_NUMERIC_LEN.  
   
  Pour plus d’informations sur **SQL_NUMERIC_STRUCT**, consultez [Comment : récupérer des données numériques avec des SQL_NUMERIC_STRUCT](retrieve-numeric-data-sql-numeric-struct-kb222831.md).  
   

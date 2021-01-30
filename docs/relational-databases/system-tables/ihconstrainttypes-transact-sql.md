@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - IHconstrainttypes_TSQL
 - IHconstrainttypes
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 955d6fa9-0b31-4335-a3cd-e4c4d90ad308
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: e3f7bebe2533067d28695b6a0f2c50d7d4137ed3
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: af5af0c5b0469f8b3d5c3c00fa884f9d2aa6d0fb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091478"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201731"
 ---
 # <a name="ihconstrainttypes-transact-sql"></a>IHconstrainttypes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
