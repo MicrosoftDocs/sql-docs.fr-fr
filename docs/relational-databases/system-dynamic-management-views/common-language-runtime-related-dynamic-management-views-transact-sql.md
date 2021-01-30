@@ -6,7 +6,7 @@ ms.date: 03/15/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 57e79c45-ff47-4885-bdf5-aecf29891ab3
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: f8c84684df5e535e4928eb62dc56bfbd2f5165c9
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 22eb67e0b96e389e6580f944eb38191bf9539c2b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100094"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99146890"
 ---
 # <a name="common-language-runtime-related-dynamic-management-views-transact-sql"></a>Vues de gestion dynamique CLR (Common Language Runtime) (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

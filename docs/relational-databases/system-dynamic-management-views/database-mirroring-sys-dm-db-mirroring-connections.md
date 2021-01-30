@@ -6,7 +6,7 @@ ms.date: 03/15/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_db_mirroring_connections
 - dm_db_mirroring_connections
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: e4df91b6-0240-45d0-ae22-cb2c0d52e0b3
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: e0cd194ef04063bcd1500d4c3be59c352e905114
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: b943aec6add2467327152fd6ff83aacf1c8813c6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101701"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99146639"
 ---
 # <a name="database-mirroring---sysdm_db_mirroring_connections"></a>Mise en miroir de bases de données-sys.dm_db_mirroring_connections
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -69,7 +69,7 @@ ms.locfileid: "98101701"
   
 ## <a name="relationship-cardinalities"></a>Cardinalités de la relation  
   
-|Du|À|Relationship|  
+|Du|À|Relation|  
 |----------|--------|------------------|  
 |**dm_db_mirroring_connections.connection_id**|**dm_exec_connections.connection_id**|Un-à-un|  
   
