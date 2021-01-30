@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysmergepartitioninfoview
 - sysmergepartitioninfoview_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 714e2935-1bc7-4901-aea2-64b1bbda03d6
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: c194b2442762f2ec9373cc730cbc4835bce45983
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f9a5063691cb0d8ed77fdc19ce3bba1adebf8858
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88446515"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181575"
 ---
 # <a name="sysmergepartitioninfoview-transact-sql"></a>sysmergepartitioninfoview (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "88446515"
 |**select_proc**|**sysname**|Nom de la procédure stockée générée automatiquement que l'Agent de fusion utilise pour effectuer les verrouillages et rechercher des colonnes et des lignes pour un article.|  
 |**metadata_select_proc**|**sysname**|Nom de la procédure stockée générée automatiquement et utilisée pour accéder aux métadonnées des tables système de réplication de fusion.|  
 |**delete_proc**|**sysname**|Procédure utilisée pour supprimer des lignes pendant la synchronisation.|  
-|**schema_option**|**Binary(8**|Bitmap de l'option de génération de schéma pour l'article donné. Pour plus d’informations sur les valeurs de *schema_option* prises en charge, consultez [Sp_addmergearticle &#40;&#41;Transact-SQL ](../../relational-databases/system-stored-procedures/sp-addmergearticle-transact-sql.md).|  
+|**schema_option**|**Binary(8**|Bitmap de l'option de génération de schéma pour l'article donné. Pour plus d’informations sur les valeurs de *schema_option* prises en charge, consultez [Sp_addmergearticle &#40;&#41;Transact-SQL](../../relational-databases/system-stored-procedures/sp-addmergearticle-transact-sql.md).|  
 |**destination_object**|**sysname**|Nom de la table créée sur l'Abonné.|  
 |**destination_owner**|**sysname**|Nom du propriétaire de l’objet de destination.|  
 |**resolver_clsid**|**nvarchar(50)**|ID de l'outil personnalisé de résolution des conflits Cette valeur est NULL dans le cas d'un gestionnaire de logique métier.|  

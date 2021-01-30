@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e8670a6b-e15c-4126-8d2d-c9cfb968a12d
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: d55017490020bebba0dadc4752ceb54c179b6141
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0dac0e964aa965918c95eaa7e3fd951db2dd67ac
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092520"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194544"
 ---
 # <a name="object-catalog-views-transact-sql"></a>Vues de catalogue d'objets (Transact-SQL)
 

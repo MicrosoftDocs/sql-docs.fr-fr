@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - fn_builtin_permissions
 - sys.fn_builtin_permissions_TSQL
@@ -27,19 +27,19 @@ helpviewer_keywords:
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: fde6b0fdab3b6a0ac72f50a8edf63b9a6ff9a6da
-ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
+ms.openlocfilehash: f9ef419401ddf5bd314e526198d8a943a5cc0020
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98813297"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194474"
 ---
 # <a name="sysfn_builtin_permissions-transact-sql"></a>sys.fn_builtin_permissions (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
   Retourne une description de la hiérarchie des autorisations intégrées du serveur. `sys.fn_builtin_permissions` peut uniquement être appelé sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] , et retourne toutes les autorisations, qu’elles soient prises en charge ou non sur la plateforme actuelle. La plupart des autorisations s’appliquent à toutes les plates-formes, mais ce n’est pas le cas pour certaines d’entre elles. Par exemple, les autorisations de niveau serveur ne peuvent pas être accordées sur SQL Database. Pour plus d’informations sur les plateformes qui prennent en charge chaque autorisation, consultez [autorisations &#40;Moteur de base de données&#41;](../../relational-databases/security/permissions-database-engine.md).  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

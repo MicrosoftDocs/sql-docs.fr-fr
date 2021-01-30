@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Error::Description
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 4b5d6790-6c29-42aa-bf78-d9cfb8ad7965
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7060810eba49ad5e1b9385a090788690b43e07eb
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: e2a982c21cbab3a93db6c6c64cec997d9f3bb4fe
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88973910"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167527"
 ---
 # <a name="description-property"></a>Description, propriété
 Décrit un objet d' [erreur](../../../ado/reference/ado-api/error-object.md) .  
@@ -37,7 +37,7 @@ Décrit un objet d' [erreur](../../../ado/reference/ado-api/error-object.md) .
  Les fournisseurs sont responsables du passage du texte d’erreur spécifique à ADO. ADO ajoute un objet [Error](../../../ado/reference/ado-api/error-object.md) à la collection **Errors** pour chaque erreur de fournisseur ou avertissement qu’il reçoit. Énumérez la collection **Errors** pour tracer les erreurs que le fournisseur passe.  
   
 ## <a name="applies-to"></a>S'applique à  
- [Objet Error](../../../ado/reference/ado-api/error-object.md)  
+ [Error, objet](../../../ado/reference/ado-api/error-object.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Description, HelpContext, HelpFile, NativeError, Number, source et SQLState, exemples de propriétés (VB)](../../../ado/reference/ado-api/description-helpcontext-helpfile-nativeerror-number-source-example-vb.md)   

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/20/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 88b6d05c-d4eb-4ab1-bbe2-95d146237f94
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2556a8a748e3ff6d3ad2b36546a27cb0a77e6d23
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 13d890279c5cbc6a24ac590be868cf66ea14b01d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91721890"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168902"
 ---
 # <a name="internettimeout-property-example-vc"></a>InternetTimeout, exemple de propriété (VC++)
 > [!IMPORTANT]

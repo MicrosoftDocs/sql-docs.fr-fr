@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - data conversions from C to SQL types [ODBC], time
 - time data type [ODBC]
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a8da43c9-d9a5-45e5-bd9a-1dd633db2ee0
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e1711d6a5acffa73a640a0e25f647c53b3daa868
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b53505a9f10d6f7039e0811e5f9fda8674092be1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88449041"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195068"
 ---
 # <a name="c-to-sql-time"></a>C en SQL : Temps
 L’identificateur pour le type de données ODBC C Time est :  

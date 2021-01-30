@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSmerge_past_partition_mappings
 - MSmerge_past_partition_mappings_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 06d54ff5-4d29-4eeb-b8be-64d032e53134
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f9136cc284d8a60405e07874f262bb6abed37021
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 52b1099fb1cfcda5f61f9e9d0085e955aea72247
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098625"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205949"
 ---
 # <a name="msmerge_past_partition_mappings-transact-sql"></a>MSmerge_past_partition_mappings (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 03/20/2018
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset15::Filter
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 80263a7a-5d21-45d1-84fc-34b7a9be4c22
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2519fdf691cc0f982f16a3aa77fdb66036bd86e8
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 7366ba67d36049f1c5df701bc633d76f56bb9af5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88973000"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167324"
 ---
 # <a name="filter-property"></a>Filter, propriété
 Indique un filtre pour les données d’un [jeu d’enregistrements](./recordset-object-ado.md).  
@@ -65,7 +65,7 @@ La définition de la propriété de **filtre** peut échouer en raison d’un co
   
 La définition de la propriété **Filter** sur une chaîne de longueur nulle ("") a le même effet que l’utilisation de la constante **adFilterNone** .
   
-Chaque fois que la propriété **Filter** est définie, la position actuelle de l’enregistrement est déplacée vers le premier enregistrement du **jeu**d’enregistrements filtré. De même, lorsque la propriété **Filter** est désactivée, la position de l’enregistrement actif est déplacée vers le premier enregistrement du **jeu d’enregistrements**.
+Chaque fois que la propriété **Filter** est définie, la position actuelle de l’enregistrement est déplacée vers le premier enregistrement du **jeu** d’enregistrements filtré. De même, lorsque la propriété **Filter** est désactivée, la position de l’enregistrement actif est déplacée vers le premier enregistrement du **jeu d’enregistrements**.
 
 Supposez qu’un **jeu d’enregistrements** est filtré en fonction d’un champ d’un type Variant, tel que le type sql_variant. Une erreur (DISP_E_TYPEMISMATCH ou 80020005) se produit lorsque les sous-types des valeurs de champ et de filtre utilisées dans la chaîne de critères ne correspondent pas. Par exemple, supposons que :
 
@@ -76,7 +76,7 @@ Cette configuration génère l’erreur au moment de l’exécution. Toutefois, 
 
 Pour obtenir une explication des valeurs de signet à partir desquelles vous pouvez créer un tableau à utiliser avec la propriété de filtre, consultez la propriété [Bookmark, propriété (ADO)](./bookmark-property-ado.md) .
 
-Seuls les filtres sous la forme de chaînes de critères affectent le contenu d’un **jeu d’enregistrements**persistant. Un exemple de chaîne de critères est `OrderDate > '12/31/1999'` . Les filtres créés avec un tableau de signets, ou à l’aide d’une valeur de **FilterGroupEnum**, n’affectent pas le contenu de l' **objet Recordset**persistant. Ces règles s’appliquent aux jeux d’enregistrements créés à l’aide de curseurs côté client ou côté serveur.
+Seuls les filtres sous la forme de chaînes de critères affectent le contenu d’un **jeu d’enregistrements** persistant. Un exemple de chaîne de critères est `OrderDate > '12/31/1999'` . Les filtres créés avec un tableau de signets, ou à l’aide d’une valeur de **FilterGroupEnum**, n’affectent pas le contenu de l' **objet Recordset** persistant. Ces règles s’appliquent aux jeux d’enregistrements créés à l’aide de curseurs côté client ou côté serveur.
   
 > [!NOTE]
 >  Lorsque vous appliquez l’indicateur adFilterPendingRecords à un **Recordset** filtré et modifié dans le mode de mise à jour par lot, le **jeu d’enregistrements** résultant est vide si le filtrage était basé sur le champ clé d’une table à clé unique et que la modification a été apportée sur les valeurs de champ clés. Le **jeu d’enregistrements** résultant ne sera pas vide si l’une des affirmations suivantes est vraie :  
@@ -89,7 +89,7 @@ Seuls les filtres sous la forme de chaînes de critères affectent le contenu d�
   
 -   Des modifications ont été apportées sur les champs d’une table à clé multiple.  
   
-Le tableau suivant récapitule les effets de **adFilterPendingRecords** dans différentes combinaisons de filtrage et de modifications. La colonne de gauche affiche les modifications possibles. Des modifications peuvent être apportées sur l’un des champs non-clés, sur le champ clé d’une table à clé unique ou sur n’importe quel champ clé dans une table à clé multiple. La ligne du haut affiche le critère de filtrage. Le filtrage peut être basé sur n’importe quel champ non indexé, sur le champ clé d’une table à clé unique ou sur l’un des champs clés d’une table à clé multiple. Les cellules qui se croisent affichent les résultats. Un **+** signe plus signifie que l’application de **adFilterPendingRecords** produit un **jeu d’enregistrements**non vide. Un **-** signe moins signifie un **jeu d’enregistrements**vide.  
+Le tableau suivant récapitule les effets de **adFilterPendingRecords** dans différentes combinaisons de filtrage et de modifications. La colonne de gauche affiche les modifications possibles. Des modifications peuvent être apportées sur l’un des champs non-clés, sur le champ clé d’une table à clé unique ou sur n’importe quel champ clé dans une table à clé multiple. La ligne du haut affiche le critère de filtrage. Le filtrage peut être basé sur n’importe quel champ non indexé, sur le champ clé d’une table à clé unique ou sur l’un des champs clés d’une table à clé multiple. Les cellules qui se croisent affichent les résultats. Un **+** signe plus signifie que l’application de **adFilterPendingRecords** produit un **jeu d’enregistrements** non vide. Un **-** signe moins signifie un **jeu d’enregistrements** vide.  
   
 |Combinaisons|Non-clés|Clé unique|Clés multiples|
 |-|--------------|----------------|-------------------|
@@ -107,4 +107,4 @@ Le tableau suivant récapitule les effets de **adFilterPendingRecords** dans dif
 [Filter et RecordCount, exemple de propriétés (VB)](./filter-and-recordcount-properties-example-vb.md) 
  [Filter et RecordCount, exemples de propriétés (VC + +)](./filter-and-recordcount-properties-example-vc.md) 
  [Clear, méthode (ADO)](./clear-method-ado.md) 
- [Optimize, propriété dynamique (ADO)](./optimize-property-dynamic-ado.md)
+ [Property-Dynamic d’optimisation (ADO)](./optimize-property-dynamic-ado.md)

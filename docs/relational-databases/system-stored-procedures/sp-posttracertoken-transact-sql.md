@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - posttracerttoken
 - posttracerttoken_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 24da5cd2-1c45-475e-93db-5bdf660f1c2c
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: aa46de0f06b0566de0a221ed8f7ca7bf97443836
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 13331e0cb1c01aa2b8ec5203793b40d3a5c65ea4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89545953"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196018"
 ---
 # <a name="sp_posttracertoken-transact-sql"></a>sp_posttracertoken (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Cette procédure publie un jeton de suivi dans le journal des transactions sur le serveur de publication et commence le processus de suivi des statistiques de latence. Les informations sont enregistrées lorsque le jeton de suivi est écrit dans le journal des transactions, lorsqu'il est repris par l'Agent de lecture du journal et lorsqu'il est appliqué par l'Agent de distribution. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication. Pour plus d’informations, voir [Mesurer la latence et valider les connexions pour la réplication transactionnelle](../../relational-databases/replication/monitor/measure-latency-and-validate-connections-for-transactional-replication.md).  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSrepl_errors
 - MSrepl_errors_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: c6e023c1-2c32-4269-8d76-e442ea309e4b
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 96699d296c414d18d0d4fb8d8c892151e2013582
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0899b22bbd4c31676dd5520eaa8d6dfe4a0830a1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98090443"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194353"
 ---
 # <a name="msrepl_errors-transact-sql"></a>MSrepl_errors (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

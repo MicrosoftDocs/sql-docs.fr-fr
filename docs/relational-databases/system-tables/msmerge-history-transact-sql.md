@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSmerge_history_TSQL
 - MSmerge_history
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 936195ad-ca07-41a8-a1a0-6699b6e63403
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 060dc53fbce563ea7ae2552c50676739692ec750
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 618a12dd664136e212bc6f31b9b59c1b87d413d7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098173"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203625"
 ---
 # <a name="msmerge_history-transact-sql"></a>MSmerge_history (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - User
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f68e32ce-ef7c-407d-bdb5-d280947ae0e2
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6e83bd40c226f1d5b5948c6475b259c799907866
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: c5ca59cb5900643202c2d541072c48b275b5b5df
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88983049"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169134"
 ---
 # <a name="user-object-adox"></a>User, objet (ADOX)
 Représente un compte d’utilisateur qui dispose d’autorisations d’accès au sein d’une base de données sécurisée.  

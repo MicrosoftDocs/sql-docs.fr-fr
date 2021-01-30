@@ -1,13 +1,13 @@
 ---
-description: sys. edge_constraint_clauses (Transact-SQL)
-title: sys. edge_constraint_clauses (Transact-SQL) | Microsoft Docs
+description: sys.edge_constraint_clauses (Transact-SQL)
+title: sys.edge_constraint_clauses (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 09/17/2018
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.edge_constraint_clauses
 - edge_constraint_clauses
@@ -21,14 +21,14 @@ ms.assetid: 0f782d2f-7126-46ab-85b7-bcba44862231
 author: shkale-msft
 ms.author: shkale
 monikerRange: '>=sql-server-2017||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: a89937ae82b1bd53f2eae10f15d0cd6f87660ef8
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0138fea256558ee3cf57766462452452dfaa7c16
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88378075"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203897"
 ---
-# <a name="sysedge_constraint_clauses-transact-sql"></a>sys. edge_constraint_clauses (Transact-SQL)
+# <a name="sysedge_constraint_clauses-transact-sql"></a>sys.edge_constraint_clauses (Transact-SQL)
 [!INCLUDE[sqlserver2019](../../includes/applies-to-version/sqlserver2019.md)]
 
 Contient une ligne par clause d’une contrainte Edge.

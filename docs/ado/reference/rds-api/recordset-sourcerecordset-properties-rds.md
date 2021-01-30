@@ -7,19 +7,19 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - Recordset property [ADO]
 ms.assetid: a29e3fb9-306d-497a-9a59-1856a914e5e9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: cdf8a894341343fee7576daed45c75a46857b909
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: b4f8f1db220bdf68205e3bd4628a27d0b57705b8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724296"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168807"
 ---
 # <a name="recordset-sourcerecordset-properties-rds"></a>Recordset et SourceRecordset, propriétés (RDS)
 Indique l’objet **Recordset** renvoyé à partir d’un objet métier personnalisé.  

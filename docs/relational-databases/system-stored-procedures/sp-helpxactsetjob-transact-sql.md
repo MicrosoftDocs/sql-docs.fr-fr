@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpxactsetjob
 - sp_helpxactsetjob_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 242cea3e-e6ac-4f84-a072-b003b920eb33
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: b353f694301c4d6a6c1cc6eae85e9791481d4620
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 39092ea96ed0f143af7322fea3f04d38d3e4eef0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547897"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194726"
 ---
 # <a name="sp_helpxactsetjob-transact-sql"></a>sp_helpxactsetjob (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Affiche des informations sur le travail Xactset pour un serveur de publication Oracle. Cette procédure stockée est exécutée sur n’importe quelle base de données du serveur de distribution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,7 +48,7 @@ sp_helpxactsetjob [ @publisher = ] 'publisher'
 |**LASTDATE**|**varchar (22)**|Dernière date d'exécution du travail.|  
 |**thisdate**|**varchar (22)**|Heure de la modification|  
 |**nextdate**|**varchar (22)**|Date de la prochaine exécution du travail.|  
-|**broken**|**varchar(1)**|Indicateur signalant si le travail est interrompu.|  
+|**abîmé**|**varchar(1)**|Indicateur signalant si le travail est interrompu.|  
 |**interval**|**varchar (200)**|Intervalle du travail.|  
 |**enregistrées**|**int**|Nombre d'échecs du travail.|  
 |**xactsetjobwhat**|**varchar (200)**|Nom de la procédure exécutée par le travail.|  

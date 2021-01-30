@@ -1,13 +1,13 @@
 ---
-description: managed_backup. sp_backup_config_advanced (Transact-SQL)
-title: managed_backup. sp_backup_config_advanced (Transact-SQL) | Microsoft Docs
+description: managed_backup.sp_backup_config_advanced managed_backup (Transact-SQL)
+title: managed_backup managed_backup.sp_backup_config_advanced (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_backup_config_optional
 - sp_backup_config_optional_TSQL
@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 4fae8193-1f88-48fd-a94a-4786efe8d6af
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 877b9d2db59ba060c766a27b6b040a6b0f48dc73
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 77b56d757d685e30798c8763c948dbb72e89c2d9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89529390"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203729"
 ---
-# <a name="managed_backupsp_backup_config_advanced-transact-sql"></a>managed_backup. sp_backup_config_advanced (Transact-SQL)
+# <a name="managed_backupsp_backup_config_advanced-transact-sql"></a>managed_backup.sp_backup_config_advanced managed_backup (Transact-SQL)
 [!INCLUDE [sqlserver2016](../../includes/applies-to-version/sqlserver2016.md)]
 
   Configure les paramètres avancés pour [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] .  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -98,7 +98,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [managed_backup. sp_backup_config_basic (Transact-SQL)](../../relational-databases/system-stored-procedures/managed-backup-sp-backup-config-basic-transact-sql.md)   
+ [managed_backup.sp_backup_config_basic managed_backup (Transact-SQL)](../../relational-databases/system-stored-procedures/managed-backup-sp-backup-config-basic-transact-sql.md)   
  [managed_backup.sp_backup_config_schedule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/managed-backup-sp-backup-config-schedule-transact-sql.md)  
   
   

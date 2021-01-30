@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_replmonitorhelpmergesessiondetail
 - sp_replmonitorhelpmergesessiondetail_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 805c92fc-3169-410c-984d-f37e063b791d
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 8c09007256e5c336ecfa2ad62c45623fe2c0e5ff
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: ba050d49579e217fa5be5a2dedcd7aa21cf0c99d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543192"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204379"
 ---
 # <a name="sp_replmonitorhelpmergesessiondetail-transact-sql"></a>sp_replmonitorhelpmergesessiondetail (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Retourne des informations détaillées de niveau article sur une session spécifique de l'Agent de fusion des réplications, qui permettent de surveiller la réplication des fusions. Le jeu de résultats comprend une ligne de détails pour chaque article synchronisé pendant la session. Il comprend également une ligne qui représente l'initialisation de la session et des lignes qui récapitulent les différentes phases de téléchargement (Upload et Download) de la session. Cette procédure stockée est exécutée sur la base de données de distribution du serveur de distribution ou sur la base de données d'abonnement de l'Abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

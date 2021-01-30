@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_help_spatial_geometry_histogram
 - sp_help_spatial_geometry_histogram_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 036aaf61-df3e-40f7-aa4e-62983c5a37bd
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: d875178db938e92aa60e3396cee2242d6a54e3f7
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+ms.openlocfilehash: 75609570d3c021b350fc06cbaf35f32dee4bd8ba
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91810211"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183607"
 ---
 # <a name="sp_help_spatial_geometry_histogram-transact-sql"></a>sp_help_spatial_geometry_histogram (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -49,7 +49,7 @@ sp_help_spatial_geometry_histogram [ @tabname =] 'tabname'
   
  Les guillemets ne sont nécessaires que si une une table qualifiée est spécifiée. Si un nom qualifié complet (incluant un nom de base de données) est fourni, le nom de base de données doit être celui de la base de données active. *tabname* est de **type sysname**, sans valeur par défaut.  
   
-`[ @colname = ] 'colname'` Nom de la colonne spatiale spécifiée. *colname* est de **type sysname**et n’a pas de valeur par défaut.  
+`[ @colname = ] 'colname'` Nom de la colonne spatiale spécifiée. *colname* est de **type sysname** et n’a pas de valeur par défaut.  
   
 `[ @resolution = ] 'resolution'` Résolution du cadre englobant. Les valeurs possibles sont comprises entre 10 et 5000. la *résolution* est de **type tinyint**, sans valeur par défaut.  
   

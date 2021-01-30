@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset15::CacheSize
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 49dc9a49-af7b-433b-be36-7a14ca984fb7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b1fa8499a2fa25a2c112474ba6a6212d933c4815
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 9aef38a384c352648d5487ee9dae9a79d605e8e3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88975720"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167815"
 ---
 # <a name="cachesize-property-ado"></a>CacheSize, propriété (ADO)
 Indique le nombre d’enregistrements d’un objet [Recordset](./recordset-object-ado.md) mis en cache localement en mémoire.  

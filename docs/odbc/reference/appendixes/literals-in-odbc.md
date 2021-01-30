@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - literals [ODBC]
 - ODBC literals [ODBC], about literals
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e66e9ab8-6dcc-47e2-bcb6-efdb324a1d3b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e140547073aea086a20526e36803227012a837e6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ebd89d8ce1a31013c5a6fa0ae960c117ac74aa1b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88429650"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184384"
 ---
 # <a name="literals-in-odbc"></a>Littéraux dans ODBC
 La syntaxe des sections suivantes est utilisée pour les littéraux d’intervalle et numériques dans ODBC. Cette syntaxe est fournie ici comme une aide aux Writers de pilote lorsque les conversions sont effectuées d’un type de chaîne de caractères à un type numérique ou d’intervalle, ou d’un type numérique ou d’intervalle à un type de chaîne de caractères. Pour plus d’informations, consultez [littéraux d’intervalle](../../../odbc/reference/appendixes/interval-literals.md) et [littéraux numériques](../../../odbc/reference/appendixes/numeric-literals.md) dans annexe D : types de données.  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSdynamicsnapshotviews_TSQL
 - MSdynamicsnapshotviews
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 4fc1822a-5d6e-4034-a2e2-363210232d3b
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 00561f1934d84c1c44b561ea62ff512ee9acf0f8
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 845910563f9ec2900569f4a5cf87f0533358499e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102079"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99212332"
 ---
 # <a name="msdynamicsnapshotviews-transact-sql"></a>MSdynamicsnapshotviews (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - ConnectModeEnum
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3792c294-5161-4538-a908-22a5fc50b85f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 704e4e78c47744fbdf2288800353fbbd33d8b090
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: ec16f4d1db295e2160c587246cb9e77a921cfa72
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88974710"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167711"
 ---
 # <a name="connectmodeenum"></a>ConnectModeEnum
 Spécifie les autorisations disponibles pour la modification des données dans une [connexion](./connection-object-ado.md), l’ouverture d’un [enregistrement](./record-object-ado.md)ou la spécification de valeurs pour la propriété [mode](./mode-property-ado.md) des objets **Record** et [Stream](./stream-object-ado.md) .  
@@ -30,7 +30,7 @@ Spécifie les autorisations disponibles pour la modification des données dans u
 |--------------|-----------|-----------------|  
 |**adModeRead**|1|Indique des autorisations en lecture seule.|  
 |**adModeReadWrite**|3|Indique des autorisations de lecture/écriture.|  
-|**adModeRecursive**|0x400000|Utilisé conjointement avec les autres valeurs * \* ShareDeny \* * (**adModeShareDenyNone**, **adModeShareDenyWrite**ou **adModeShareDenyRead**) pour propager des restrictions de partage à tous les sous-enregistrements de l' **enregistrement**actif. Elle n’a aucun effet si l' **enregistrement** n’a pas d’enfants. Une erreur d’exécution est générée si elle est utilisée avec **adModeShareDenyNone** uniquement. Toutefois, il peut être utilisé avec **adModeShareDenyNone** lorsqu’il est combiné à d’autres valeurs. Par exemple, vous pouvez utiliser «**adModeRead** » ou « **adModeShareDenyNone** » ou « **adModeRecursive**».|  
+|**adModeRecursive**|0x400000|Utilisé conjointement avec les autres valeurs *\* ShareDeny \** (**adModeShareDenyNone**, **adModeShareDenyWrite** ou **adModeShareDenyRead**) pour propager des restrictions de partage à tous les sous-enregistrements de l' **enregistrement** actif. Elle n’a aucun effet si l' **enregistrement** n’a pas d’enfants. Une erreur d’exécution est générée si elle est utilisée avec **adModeShareDenyNone** uniquement. Toutefois, il peut être utilisé avec **adModeShareDenyNone** lorsqu’il est combiné à d’autres valeurs. Par exemple, vous pouvez utiliser «**adModeRead** » ou « **adModeShareDenyNone** » ou « **adModeRecursive**».|  
 |**adModeShareDenyNone**|16|Permet à d’autres utilisateurs d’ouvrir une connexion avec toutes les autorisations. Aucun accès en lecture ou en écriture ne peut être refusé à d'autres personnes.|  
 |**adModeShareDenyRead**|4|Empêche les autres utilisateurs d’ouvrir une connexion avec des autorisations de lecture.|  
 |**adModeShareDenyWrite**|8|Empêche les autres utilisateurs d’ouvrir une connexion avec des autorisations d’écriture.|  

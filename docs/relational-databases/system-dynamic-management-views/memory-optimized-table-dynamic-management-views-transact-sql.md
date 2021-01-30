@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: in-memory-oltp
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: ccd82fed-1a3f-47de-85c4-1c9bdd80b027
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: f39e2786bb095c5368cf9a97894ce114653a79c1
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 50b110b71cdbfc1d9f6775c0b046ff4cbdf69db6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097754"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196309"
 ---
 # <a name="memory-optimized-table-dynamic-management-views-transact-sql"></a>Vues de gestion dynamique des tables mémoire optimisées (Transact-SQL)
 [!INCLUDE[sql-asdb-asdbmi](../../includes/applies-to-version/sql-asdb-asdbmi.md)]

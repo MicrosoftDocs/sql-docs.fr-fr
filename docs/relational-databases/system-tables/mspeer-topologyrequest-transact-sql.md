@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSpeer_topologyrequest_TSQL
 - MSpeer_topologyrequest
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: c644814b-4e40-44d7-b6b4-5954b0d4db7c
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 5eb1eeecc58650f883fc64c974f11f901466742b
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c343e25ecc6a05caa301dc8c8cc17ef4cacad1ca
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097339"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205819"
 ---
 # <a name="mspeer_topologyrequest-transact-sql"></a>MSpeer_topologyrequest (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

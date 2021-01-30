@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Procedures
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: dc7a38e1-93b9-4034-9af2-ff419e8fb2a3
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b3f98420fc85cabd2ccc584817ac6ca9a9203081
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: c77c3eccd6cc2e61898b1619ec6255f65227384b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88983570"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169243"
 ---
 # <a name="procedures-collection-adox"></a>Procedures, collection (ADOX)
 Contient tous les objets de [procédure](./procedure-object-adox.md) d’un catalogue.  

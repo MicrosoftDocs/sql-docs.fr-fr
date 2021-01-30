@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSmerge_altsyncpartners_TSQL
 - MSmerge_altsyncpartners
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: da51b0f8-5ad0-4aeb-96ed-2b3672a2a6e2
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 8ccfa26eeb790b26bc8833ab7f4a90df472ec1a6
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: de4f7eeb04d3c64c4eb08c1435cc7d6e671fca08
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096199"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99212282"
 ---
 # <a name="msmerge_altsyncpartners-transact-sql"></a>MSmerge_altsyncpartners (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

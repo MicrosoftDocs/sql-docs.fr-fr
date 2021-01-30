@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8efe8bb4-face-4608-83f4-cc7c6e9faf31
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 7f9f62a309083694ae4944f190263750c6f64482
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 01d4912a326a33085bd3e0d12a669df61457087b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098744"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196115"
 ---
 # <a name="data-collector-functions--transact-sql"></a>Fonctions du collecteur de données (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

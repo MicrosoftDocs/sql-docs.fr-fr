@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - change_tracking_databases
 - sys.change_tracking_databases_TSQL
@@ -22,12 +22,12 @@ ms.assetid: bb233baa-2991-4904-a0eb-3772b81121a4
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 5a4122bb16ea7fced5acb078f28f8b11c37c54c5
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: a0f7402689e083ecb1a6eac133a095c3b90d4bd4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093254"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193089"
 ---
 # <a name="change-tracking-catalog-views---syschange_tracking_databases"></a>Affichages catalogue Change Tracking-sys.change_tracking_databases
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]

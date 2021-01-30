@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_help_spatial_geography_index
 - sp_help_spatial_geography_index_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: c9bf5675-eafc-4d71-bfdb-da963384fa0c
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: b2b519fd8e52af2a67c37941a4868622aa254599
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+ms.openlocfilehash: adccb4ff123d5ea91691d57c03556c51441abed3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91810339"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99212045"
 ---
 # <a name="sp_help_spatial_geography_index-transact-sql"></a>sp_help_spatial_geography_index (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -54,7 +54,7 @@ sp_help_spatial_geography_index [ @tabname =] 'tabname'
 ## <a name="remarks"></a>Notes  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant utilise `sp_help_spatial_geography_index` pour étudier l' **geography** index spatial Geography **SIndx_SpatialTable_geography_col2** défini sur la table **geography_col** pour l’exemple de requête donné dans ** \@ QS**. Cet exemple retourne uniquement les propriétés principales de l'index spécifié.  
+ L’exemple suivant utilise `sp_help_spatial_geography_index` pour étudier l'  index spatial Geography **SIndx_SpatialTable_geography_col2** défini sur la table **geography_col** pour l’exemple de requête donné dans **\@ QS**. Cet exemple retourne uniquement les propriétés principales de l'index spécifié.  
   
 ```  
 declare @qs geography  

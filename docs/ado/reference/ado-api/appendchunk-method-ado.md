@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Parameter::AppendChunk
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: c648b5a8-d4f1-4d16-836e-3957feb03617
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 260f1bddfe4433e26463bd58b594d2766ccbc531
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: b7abcebce9f587260d7147745ab99c2b4cecc78a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976010"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167876"
 ---
 # <a name="appendchunk-method-ado"></a>AppendChunk, méthode (ADO)
 Ajoute des données à un [champ](./field-object.md)de données de texte ou binaires volumineux, ou à un objet de [paramètre](./parameter-object.md) .  

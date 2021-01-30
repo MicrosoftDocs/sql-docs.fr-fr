@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSmerge_partition_groups_TSQL
 - MSmerge_partition_groups
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 5d56d780-ee40-4afc-9c2a-d1723d86e430
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 823e2a57cd6292be59fe9dca7bb805b8eaa47d49
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 1cd5fb30418a16a03f67b2ef574d8748448212f9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098645"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205934"
 ---
 # <a name="msmerge_partition_groups-transact-sql"></a>MSmerge_partition_groups (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: b6573c6e-fee8-4267-a722-fadaec6eafe6
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6cd6742bea404f3ed1ec6515d3579260701dbee7
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 27a98245b27d5c30f2bcc762318f86a358ef16b4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88975850"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167837"
 ---
 # <a name="bof-eof-and-bookmark-properties-example-vb"></a>BOF, EOF et Bookmark, exemple de propriétés (VB)
 Cet exemple utilise les propriétés [BOF](./bof-eof-properties-ado.md) et [EOF](./bof-eof-properties-ado.md) pour afficher un message si un utilisateur tente de se déplacer après le premier ou le dernier enregistrement d’un [jeu d’enregistrements](./recordset-object-ado.md). Elle utilise la propriété [Bookmark](./bookmark-property-ado.md) pour permettre à l’utilisateur d’indicateur un enregistrement dans un **jeu d’enregistrements** et de revenir ultérieurement.  

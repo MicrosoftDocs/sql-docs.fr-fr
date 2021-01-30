@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLDrivers
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 6b5b7514-e9cb-4cfd-8b7a-ab51dfab9efa
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 9abe7502b7efcfba695bd58081752342504378ab
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 905dfe1bc24872468868abef9f1c8cc2323d110a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461161"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195618"
 ---
 # <a name="sqldrivers-function"></a>SQLDrivers, fonction
 **Conformité**  
@@ -73,7 +73,7 @@ SQLRETURN SQLDrivers(
  Si *DriverAttributes* a la valeur null, *AttributesLengthPtr* retourne toujours le nombre total d’octets (à l’exception du caractère de fin null pour les données de type caractère) disponibles pour retourner dans la mémoire tampon vers laquelle pointe *DriverAttributes*.  
   
  *BufferLength2*  
- Entrée Longueur de la \* mémoire tampon *DriverAttributes* , en caractères. Si la valeur * \* DriverDescription* est une chaîne Unicode (lors de l’appel de **SQLDriversW**), l’argument *BufferLength* doit être un nombre pair.  
+ Entrée Longueur de la \* mémoire tampon *DriverAttributes* , en caractères. Si la valeur *\* DriverDescription* est une chaîne Unicode (lors de l’appel de **SQLDriversW**), l’argument *BufferLength* doit être un nombre pair.  
   
  *AttributesLengthPtr*  
  Sortie Pointeur vers une mémoire tampon dans laquelle retourner le nombre total d’octets (à l’exclusion de l’octet de fin null) disponibles à retourner dans \* *DriverAttributes*. Si le nombre d’octets disponibles à retourner est supérieur ou égal à *BufferLength2*, la liste des paires de valeurs d’attributs dans \* *DriverAttributes* est tronquée à *BufferLength2* moins la longueur du caractère de fin null.  
@@ -84,13 +84,13 @@ SQLRETURN SQLDrivers(
 ## <a name="diagnostics"></a>Diagnostics  
  Quand **SQLDrivers** retourne soit SQL_ERROR, soit SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *comme HandleType* de SQL_HANDLE_ENV et un *handle* de *EnvironmentHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLDrivers** et explique chacune d’elles dans le contexte de cette fonction. la notation « (DM) » précède les descriptions des SQLSTATEs retournées par le gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur|Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information spécifique au gestionnaire de pilotes (DM). (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |01004|Données de chaîne, tronquées à droite|(DM) la mémoire tampon \* *DriverDescription* n’était pas suffisamment grande pour retourner la description complète du pilote. Par conséquent, la description a été tronquée. La longueur de la description complète du pilote est retournée dans \* *DescriptionLengthPtr*. (La fonction retourne SQL_SUCCESS_WITH_INFO.)<br /><br /> (DM) la mémoire tampon \* *DriverAttributes* n’était pas suffisamment grande pour retourner la liste complète des paires valeur-attribut. Par conséquent, la liste a été tronquée. La longueur de la liste non tronquée des paires valeur d’attribut est retournée dans **AttributesLengthPtr*. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
-|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon * \* MessageText* décrit l’erreur et sa cause.|  
+|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon *\* MessageText* décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|(DM) le gestionnaire de pilotes n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou l’achèvement de la fonction.|  
-|HY010|Erreur de séquence de fonction|(DM) **SQLExecute**, **SQLExecDirect**ou **SQLMoreResults** a été appelé pour *StatementHandle* et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.|  
+|HY010|Erreur de séquence de fonction|(DM) **SQLExecute**, **SQLExecDirect** ou **SQLMoreResults** a été appelé pour *StatementHandle* et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.|  
 |HY013|Erreur de gestion de la mémoire|Impossible de traiter l’appel de fonction, car les objets mémoire sous-jacents sont inaccessibles, probablement en raison de conditions de mémoire insuffisante.|  
 |HY090|Longueur de chaîne ou de mémoire tampon non valide|(DM) la valeur spécifiée pour l’argument *BufferLength1* est inférieure à 0.<br /><br /> (DM) la valeur spécifiée pour l’argument *BufferLength2* est inférieure à 0 ou égale à 1.|  
 |HY103|Code de récupération non valide|(DM) la valeur spécifiée pour la *direction* de l’argument n’est pas égale à SQL_FETCH_FIRST ou SQL_FETCH_NEXT.|  

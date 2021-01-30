@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_cursorexecute
 - sp_cursorexecute_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 6a204229-0a53-4617-a57e-93d4afbb71ac
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 07795588a4c1d6df43a7041f9254a661e527be14
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 6aab1670ae9d517ec60d3af572d15eaf12432f7d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543588"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205155"
 ---
 # <a name="sp_cursorexecute-transact-sql"></a>sp_cursorexecute (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Crée et remplit un curseur basé sur le plan d'exécution créé par sp_cursorprepare. Cette procédure, couplée avec sp_cursorprepare, a la même fonction que sp_cursoropen, mais est fractionnée en deux phases. sp_cursorexecute est appelée en spécifiant ID = 4 dans un paquet tabular data stream (TDS).  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,7 +50,7 @@ sp_cursorexecute prepared_handle, cursor
  Identificateur de curseur généré par le SQL Server. *Cursor* est un paramètre obligatoire qui doit être fourni pour toutes les procédures suivantes qui agissent sur le curseur, par exemple sp_cursorfetch  
   
  *scrollopt*  
- Option de défilement. *scrollopt* est un paramètre facultatif qui requiert une valeur d’entrée **int** . Le paramètre sp_cursorexecute*scrollopt* a les mêmes options de valeur que celles pour sp_cursoropen.  
+ Option de défilement. *scrollopt* est un paramètre facultatif qui requiert une valeur d’entrée **int** . Le paramètre sp_cursorexecute *scrollopt* a les mêmes options de valeur que celles pour sp_cursoropen.  
   
 > [!NOTE]  
 >  La valeur PARAMETERIZED_STMT n'est pas prise en charge.  
@@ -59,7 +59,7 @@ sp_cursorexecute prepared_handle, cursor
 >  Si aucune valeur *scrollopt* n’est spécifiée, la valeur par défaut est keyset, quelle que soit la valeur *scrollopt* spécifiée dans sp_cursorprepare.  
   
  *ccopt*  
- Option de contrôle de la devise. *ccopt* est un paramètre facultatif qui requiert une valeur d’entrée **int** . Le paramètre sp_cursorexecute*ccopt* a les mêmes options de valeur que celles pour sp_cursoropen.  
+ Option de contrôle de la devise. *ccopt* est un paramètre facultatif qui requiert une valeur d’entrée **int** . Le paramètre sp_cursorexecute *ccopt* a les mêmes options de valeur que celles pour sp_cursoropen.  
   
 > [!IMPORTANT]  
 >  Si aucune valeur *ccopt* n’est spécifiée, la valeur par défaut est OPTIMISTIC, quelle que soit la valeur *ccopt* spécifiée dans sp_cursorprepare.  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysmail_update_account_sp
 - sysmail_update_account_sp_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: ba2fdccc-5ed4-40ef-a479-79497b4d61aa
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: fe446ee69a7bf3f7ac6600b2cb521f4f9d89ffa1
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b441dfe7aa92bd78bb87ef05b4b7f9cdd6108919
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88485514"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181889"
 ---
 # <a name="sysmail_update_account_sp-transact-sql"></a>sysmail_update_account_sp (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -61,7 +61,7 @@ sysmail_update_account_sp [ [ @account_id = ] account_id ] [ , ] [ [ @account_na
   
 `[ @display_name = ] 'display_name'` Nouveau nom complet à utiliser pour les messages électroniques à partir de ce compte. *display_name* est de type **nvarchar (128)**, sans valeur par défaut.  
   
-`[ @replyto_address = ] 'replyto_address'` Nouvelle adresse à utiliser dans l’en-tête Reply-to des messages électroniques à partir de ce compte. *replyto_address* est de type **nvarchar (128)**, sans valeur par défaut.  
+`[ @replyto_address = ] 'replyto_address'` Nouvelle adresse à utiliser dans l’en-tête Reply-To des messages électroniques à partir de ce compte. *replyto_address* est de type **nvarchar (128)**, sans valeur par défaut.  
   
 `[ @description = ] 'description'` Nouvelle description du compte. *Description* est de type **nvarchar (256)**, avec NULL comme valeur par défaut.  
   
@@ -77,9 +77,9 @@ sysmail_update_account_sp [ [ @account_id = ] account_id ] [ , ] [ [ @account_na
   
 `[ @password = ] 'password'` Nouveau mot de passe à utiliser pour se connecter au serveur de messagerie. *Password* est de **type sysname**, sans valeur par défaut.  
   
-`[ @use_default_credentials = ] use_default_credentials` Spécifie si le courrier électronique doit être envoyé au serveur SMTP à l’aide des informations d’identification du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] service. **use_default_credentials** est de bits, sans valeur par défaut. Lorsque la valeur de ce paramètre est définie sur 1, la messagerie de base de données utilise les informations d'identification du moteur de base de données [!INCLUDE[ssDE](../../includes/ssde-md.md)]. Lorsque ce paramètre a la valeur 0, Database Mail utilise le ** \@ nom d’utilisateur** et le ** \@ mot de passe** pour l’authentification sur le serveur SMTP. Si le ** \@ nom d’utilisateur** et le ** \@ mot de passe** sont NULL, l’authentification anonyme est utilisée. Contactez votre administrateur SMTP avant de définir ce paramètre.  
+`[ @use_default_credentials = ] use_default_credentials` Spécifie si le courrier électronique doit être envoyé au serveur SMTP à l’aide des informations d’identification du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] service. **use_default_credentials** est de bits, sans valeur par défaut. Lorsque la valeur de ce paramètre est définie sur 1, la messagerie de base de données utilise les informations d'identification du moteur de base de données [!INCLUDE[ssDE](../../includes/ssde-md.md)]. Lorsque ce paramètre a la valeur 0, Database Mail utilise le **\@ nom d’utilisateur** et le **\@ mot de passe** pour l’authentification sur le serveur SMTP. Si le **\@ nom d’utilisateur** et le **\@ mot de passe** sont NULL, l’authentification anonyme est utilisée. Contactez votre administrateur SMTP avant de définir ce paramètre.  
   
-`[ @enable_ssl = ] enable_ssl` Spécifie si Database Mail chiffre les communications à l’aide du protocole TLS (Transport Layer Security), précédemment connu sous le nom de protocole SSL (SSL). Utilisez cette option si TLS est requis sur votre serveur SMTP. **enable_ssl** est de bits, sans valeur par défaut.  
+`[ @enable_ssl = ] enable_ssl` Spécifie si Database Mail chiffre les communications à l’aide du protocole TLS (Transport Layer Security), précédemment connu sous le nom de SSL (Secure Sockets Layer) (SSL). Utilisez cette option si TLS est requis sur votre serveur SMTP. **enable_ssl** est de bits, sans valeur par défaut.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  
@@ -136,7 +136,7 @@ EXECUTE msdb.dbo.sysmail_update_account_sp
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Database Mail](../../relational-databases/database-mail/database-mail.md)   
+ [Messagerie de base de données](../../relational-databases/database-mail/database-mail.md)   
  [Créer un compte Database Mail](../../relational-databases/database-mail/create-a-database-mail-account.md)   
  [Database Mail des procédures stockées &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
   

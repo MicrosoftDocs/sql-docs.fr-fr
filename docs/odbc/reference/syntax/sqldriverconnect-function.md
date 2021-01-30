@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLDriverConnect
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: e299be1d-5c74-4ede-b6a3-430eb189134f
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: d9ff73c570e607f687ff8293587b8dbcef551926
-ms.sourcegitcommit: dc8a30a4a27e15fc6671ca2674da9b7c637ec255
+ms.openlocfilehash: 58c9f2071825c6c7d8f873f300e8e5c3f46af9b6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88745899"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195634"
 ---
 # <a name="sqldriverconnect-function"></a>Fonction SQLDriverConnect
 **Conformité**  
@@ -89,17 +89,17 @@ SQLRETURN SQLDriverConnect(
 |SQLSTATE|Erreur|Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information spécifique au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
-|01004|Données de chaîne, tronquées à droite|Le OutConnectionString de mémoire tampon \* *OutConnectionString* n’est pas assez grand pour retourner la chaîne de connexion entière, donc la chaîne de connexion a été tronquée. La longueur de la chaîne de connexion non tronquée est retournée dans **StringLength2Ptr*. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
+|01004|Données de chaîne, tronquées à droite|Le OutConnectionString de mémoire tampon \*  n’est pas assez grand pour retourner la chaîne de connexion entière, donc la chaîne de connexion a été tronquée. La longueur de la chaîne de connexion non tronquée est retournée dans **StringLength2Ptr*. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |01S00|Attribut de chaîne de connexion non valide|Un mot clé d’attribut non valide a été spécifié dans la chaîne de connexion (*InConnectionString*), mais le pilote a pu se connecter à la source de données. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |01S02 ne|Valeur d’option modifiée|Le pilote ne prenait pas en charge la valeur spécifiée pointée par l’argument *ValuePtr* dans **SQLSetConnectAttr** et substituait une valeur similaire. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
-|01S08|Erreur lors de l’enregistrement du fichier DSN|La chaîne dans * \* InConnectionString* contenait un mot clé **FILEDSN** , mais le fichier. DSN n’a pas été enregistré. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
-|01S09|Mot clé non valide|(DM) la chaîne dans * \* InConnectionString* contenait un mot clé **SaveFile** , mais pas un mot clé de **pilote** ou **FILEDSN** . (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
+|01S08|Erreur lors de l’enregistrement du fichier DSN|La chaîne dans *\* InConnectionString* contenait un mot clé **FILEDSN** , mais le fichier. DSN n’a pas été enregistré. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
+|01S09|Mot clé non valide|(DM) la chaîne dans *\* InConnectionString* contenait un mot clé **SaveFile** , mais pas un mot clé de **pilote** ou **FILEDSN** . (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |08001|Le client ne peut pas établir la connexion|Le pilote n’a pas pu établir une connexion avec la source de données.|  
 |08002|Nom de connexion en cours d’utilisation|(DM) le *ConnectionHandle* spécifié a déjà été utilisé pour établir une connexion avec une source de données, et la connexion était toujours ouverte.|  
 |08004|Le serveur a rejeté la connexion|La source de données a rejeté l’établissement de la connexion pour des raisons définies par l’implémentation.|  
 |08S01|Échec de la liaison de communication|Le lien de communication entre le pilote et la source de données à laquelle le pilote essayait de se connecter a échoué avant la fin du traitement de la fonction **SQLDriverConnect** .|  
 |28000|Spécification d’autorisation non valide|Soit l’identificateur d’utilisateur, soit la chaîne d’autorisation, ou les deux, comme spécifié dans la chaîne de connexion (*InConnectionString*), des restrictions non respectées sont définies par la source de données.|  
-|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon * \* szMessageText* décrit l’erreur et sa cause.|  
+|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon *\* szMessageText* décrit l’erreur et sa cause.|  
 |HY000|Erreur générale : nom de source de fichier non valide|(DM) la chaîne dans **InConnectionString* contenait un mot clé FileDSN, mais le nom du fichier. DSN est introuvable.|  
 |HY000|Erreur générale : impossible de créer le tampon de fichier|(DM) la chaîne dans **InConnectionString* contenait un mot clé FileDSN, mais le fichier. DSN était illisible.|  
 |HY001|Erreur d’allocation de mémoire|Le gestionnaire de pilotes n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou la fin de la fonction **SQLDriverConnect** .<br /><br /> Le pilote n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou l’achèvement de la fonction.|  
@@ -123,9 +123,9 @@ SQLRETURN SQLDriverConnect(
 |IM009|Impossible de charger la DLL de traduction|Le pilote n’a pas pu charger la DLL de traduction spécifiée pour la source de données ou pour la connexion.|  
 |IM010|Le nom de la source de données est trop long|(DM) la valeur de l’attribut du mot clé DSN était supérieure à SQL_MAX_DSN_LENGTH caractères.|  
 |IM011|Le nom du pilote est trop long|(DM) la valeur de l’attribut du mot clé **Driver** était supérieure à 255 caractères.|  
-|IM012|Erreur de syntaxe du mot clé du pilote|(DM) la paire mot clé-valeur pour le mot clé **Driver** contenait une erreur de syntaxe.<br /><br /> (DM) la chaîne contenue dans * \* InConnectionString* contenait un mot clé **FILEDSN** , mais le fichier. DSN ne contenait pas de mot clé de **pilote** ou de mot clé **DSN** .|  
+|IM012|Erreur de syntaxe du mot clé du pilote|(DM) la paire mot clé-valeur pour le mot clé **Driver** contenait une erreur de syntaxe.<br /><br /> (DM) la chaîne contenue dans *\* InConnectionString* contenait un mot clé **FILEDSN** , mais le fichier. DSN ne contenait pas de mot clé de **pilote** ou de mot clé **DSN** .|  
 |IM014|Le nom de source de donnée spécifié contient une incompatibilité d’architecture entre le pilote et l’application|(DM) l’application 32 bits utilise un DSN se connectant à un pilote 64 bits ; ou vice versa.|  
-|IM015|Échec du SQLDriverConnect du pilote sur SQL_HANDLE_DBC_INFO_HANDLE|Si un pilote retourne SQL_ERROR, le gestionnaire de pilotes renverra SQL_ERROR à l’application et la connexion échouera.<br /><br /> Pour plus d’informations sur la SQL_HANDLE_DBC_INFO_TOKEN, consultez [développement de la reconnaissance des pools de connexions dans un pilote ODBC](../../../odbc/reference/develop-driver/developing-connection-pool-awareness-in-an-odbc-driver.md).|  
+|IM015|Échec du SQLDriverConnect du pilote sur SQL_HANDLE_DBC_INFO_HANDLE|Si un pilote retourne SQL_ERROR, le gestionnaire de pilotes renverra SQL_ERROR à l’application et la connexion échouera.<br /><br /> Pour plus d’informations sur la SQL_HANDLE_DBC_INFO_TOKEN, consultez [développement de la sensibilisation aux Connection-Pool dans un pilote ODBC](../../../odbc/reference/develop-driver/developing-connection-pool-awareness-in-an-odbc-driver.md).|  
 |IM017|L’interrogation est désactivée en mode de notification asynchrone|Chaque fois que le modèle de notification est utilisé, l’interrogation est désactivée.|  
 |IM018|**SQLCompleteAsync** n’a pas été appelé pour terminer l’opération asynchrone précédente sur ce handle.|Si l’appel de fonction précédent sur le descripteur retourne SQL_STILL_EXECUTING et si le mode de notification est activé, **SQLCompleteAsync** doit être appelé sur le handle pour effectuer un traitement postérieur et terminer l’opération.|  
 |S1118|Le pilote ne prend pas en charge la notification asynchrone|Si le pilote ne prend pas en charge les notifications asynchrones, vous ne pouvez pas définir SQL_ATTR_ASYNC_DBC_EVENT ou SQL_ATTR_ASYNC_DBC_RETCODE_PTR.|  
@@ -153,7 +153,7 @@ SQLRETURN SQLDriverConnect(
   
  La chaîne de connexion peut inclure un nombre quelconque de mots clés définis par le pilote. Étant donné que le mot clé **Driver** n’utilise pas les informations des informations système, le pilote doit définir suffisamment de mots clés pour qu’un pilote puisse se connecter à une source de données en utilisant uniquement les informations contenues dans la chaîne de connexion. (Pour plus d’informations, consultez « Instructions relatives aux pilotes », plus loin dans cette section.) Le pilote définit les mots clés requis pour la connexion à la source de données.  
   
- Le tableau suivant décrit les valeurs d’attribut des mots clés **DSN**, **FILEDSN**, **Driver**, **UID**, **PWD**et **SaveFile** .  
+ Le tableau suivant décrit les valeurs d’attribut des mots clés **DSN**, **FILEDSN**, **Driver**, **UID**, **PWD** et **SaveFile** .  
   
 |Mot clé|Description de la valeur d’attribut|  
 |-------------|---------------------------------|  
@@ -170,7 +170,7 @@ SQLRETURN SQLDriverConnect(
   
  Les mots clés **FILEDSN** et **DSN** s’excluent mutuellement : quel que soit le mot clé qui apparaît en premier est utilisé, et celui qui est le second est ignoré. Les mots clés de l' **FILEDSN** et du **pilote** , en revanche, ne s’excluent pas mutuellement. Si un mot clé apparaît dans une chaîne de connexion avec **FILEDSN**, la valeur d’attribut du mot clé dans la chaîne de connexion est utilisée à la place de la valeur d’attribut du même mot clé dans le fichier. DSN.  
   
- Si le mot clé **FILEDSN** est utilisé, les mots clés spécifiés dans un fichier. DSN sont utilisés pour créer une chaîne de connexion. (Pour plus d’informations, consultez « sources de données de fichier » plus loin dans cette section.) Le mot clé **UID** est facultatif. un fichier. DSN peut être créé avec uniquement le mot clé **Driver** . Le mot clé **PWD** n’est pas stocké dans un fichier. DSN. Le répertoire par défaut pour l’enregistrement et le chargement d’un fichier. DSN est une combinaison du chemin d’accès spécifié par **CommonFileDir** dans HKEY_LOCAL_MACHINE \software\microsoft\ Windows\CurrentVersion et « ODBC\DataSources ». (Si CommonFileDir était « C:\Program Files\Common Files », le répertoire par défaut serait « C:\Program Files\Common Files\ODBC\Data Sources ».)  
+ Si le mot clé **FILEDSN** est utilisé, les mots clés spécifiés dans un fichier. DSN sont utilisés pour créer une chaîne de connexion. (Pour plus d’informations, consultez « sources de données de fichier » plus loin dans cette section.) Le mot clé **UID** est facultatif. un fichier. DSN peut être créé avec uniquement le mot clé **Driver** . Le mot clé **PWD** n’est pas stocké dans un fichier. DSN. Le répertoire par défaut pour l’enregistrement et le chargement d’un fichier. DSN est une combinaison du chemin d’accès spécifié par **CommonFileDir** dans HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ Windows\CurrentVersion et « ODBC\DataSources ». (Si CommonFileDir était « C:\Program Files\Common Files », le répertoire par défaut serait « C:\Program Files\Common Files\ODBC\Data Sources ».)  
   
 > [!NOTE]  
 >  Un fichier. DSN peut être manipulé directement en appelant les fonctions [SQLReadFileDSN](../../../odbc/reference/syntax/sqlreadfiledsn-function.md) et [SQLWRITEFILEDSN](../../../odbc/reference/syntax/sqlwritefiledsn-function.md) dans la dll du programme d’installation.  
@@ -182,7 +182,7 @@ SQLRETURN SQLDriverConnect(
   
  L’action du gestionnaire de pilotes est basée sur la valeur de l’argument *DriverCompletion* :  
   
--   SQL_DRIVER_PROMPT : si la chaîne de connexion ne contient pas le mot clé **Driver**, **DSN**ou **FILEDSN** , le gestionnaire de pilotes affiche la boîte de dialogue sources de données. Il construit une chaîne de connexion à partir du nom de source de données retourné par la boîte de dialogue et de tout autre mot clé qui lui est transmis par l’application. Si le nom de la source de données retourné par la boîte de dialogue est vide, le gestionnaire de pilotes spécifie la paire mot clé/valeur DSN = default. (Cette boîte de dialogue n’affiche pas de source de données avec le nom « default ».)  
+-   SQL_DRIVER_PROMPT : si la chaîne de connexion ne contient pas le mot clé **Driver**, **DSN** ou **FILEDSN** , le gestionnaire de pilotes affiche la boîte de dialogue sources de données. Il construit une chaîne de connexion à partir du nom de source de données retourné par la boîte de dialogue et de tout autre mot clé qui lui est transmis par l’application. Si le nom de la source de données retourné par la boîte de dialogue est vide, le gestionnaire de pilotes spécifie la paire mot clé/valeur DSN = default. (Cette boîte de dialogue n’affiche pas de source de données avec le nom « default ».)  
   
 -   SQL_DRIVER_COMPLETE ou SQL_DRIVER_COMPLETE_REQUIRED : si la chaîne de connexion spécifiée par l’application contient le mot clé **DSN** , le gestionnaire de pilotes copie la chaîne de connexion spécifiée par l’application. Dans le cas contraire, elle effectue les mêmes actions que quand *DriverCompletion* est SQL_DRIVER_PROMPT.  
   
@@ -228,7 +228,7 @@ SQLRETURN SQLDriverConnect(
   
 2.  Si le pilote retourne SQL_SUCCESS et que le nom de fichier n’est pas une chaîne vide, le gestionnaire de pilotes écrit les informations de connexion retournées dans l’argument *OutConnectionString* dans le fichier spécifié au format spécifié dans la section « chaînes de connexion », plus haut dans cette section.  
   
-3.  Si le pilote retourne SQL_SUCCESS et que le nom de fichier était une chaîne vide (""), le gestionnaire de pilotes appelle la boîte de dialogue courante d' **enregistrement de fichier** avec le *HWND* spécifié et écrit les informations de connexion retournées dans *OutConnectionString* dans le fichier spécifié dans la boîte de dialogue fichier courante d’enregistrement de fichier avec le format spécifié dans la section « chaînes de connexion » plus haut  
+3.  Si le pilote retourne SQL_SUCCESS et que le nom de fichier était une chaîne vide (« »), le gestionnaire de pilotes appelle la boîte de dialogue courante d' **enregistrement de fichier** avec le *HWND* spécifié et écrit les informations de connexion retournées dans *OutConnectionString* dans le fichier spécifié dans la boîte de dialogue File-Save commune avec le format spécifié dans la section «chaînes de connexion » plus haut dans cette section.  
   
 4.  Si le pilote retourne SQL_SUCCESS, il retourne l’argument *OutConnectionString* contenant la chaîne de connexion à l’application.  
   

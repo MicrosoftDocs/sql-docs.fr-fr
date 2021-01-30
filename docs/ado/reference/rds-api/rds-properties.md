@@ -7,19 +7,19 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - RDS properties [ADO]
 - properties [ADO], RDS
 ms.assetid: e4e04cbd-21fc-44a1-9f21-49aa68746934
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 75124c0fc8d7a0c3c0bb0ea491c84c3673339108
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 6bf9a232f2dadfc562cd6e7e183858c3a7f64e9c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724350"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168831"
 ---
 # <a name="rds-properties"></a>Propriétés RDS
 > [!IMPORTANT]
@@ -33,7 +33,7 @@ ms.locfileid: "91724350"
 |[FilterColumn (RDS)](./filtercolumn-property-rds.md)|Indique la colonne sur laquelle les critères de filtre doivent être évalués.|  
 |[FilterCriterion (RDS)](./filtercriterion-property-rds.md)|Indique l’opérateur d’évaluation à utiliser dans la valeur de filtre.|  
 |[FilterValue (RDS)](./filtervalue-property-rds.md)|Indique la valeur pour filtrer les enregistrements.|  
-|[Gestionnaire (RDS)](./handler-property-rds.md)|Indique le nom d’un programme de personnalisation côté serveur (*Gestionnaire*) qui étend les fonctionnalités de **RDSServer. DataFactory**et de tous les paramètres utilisés par le *Gestionnaire*.|  
+|[Gestionnaire (RDS)](./handler-property-rds.md)|Indique le nom d’un programme de personnalisation côté serveur (*Gestionnaire*) qui étend les fonctionnalités de **RDSServer. DataFactory** et de tous les paramètres utilisés par le *Gestionnaire*.|  
 |[InternetTimeout (RDS)](./internettimeout-property-rds.md)|Indique le nombre de millisecondes à attendre avant l’expiration d’une demande.|  
 |[ReadyState (RDS)](./readystate-property-rds.md)|Indique la progression d’un objet **DataControl** lors de l’extraction de données dans son objet **Recordset** .|  
 |[Recordset et SourceRecordset (RDS)](./recordset-sourcerecordset-properties-rds.md)|Indique l’objet **Recordset** renvoyé à partir d’un objet métier personnalisé.|  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQL statements [ODBC], elements supported
 - minimum SQL syntax supported [ODBC]
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 85777525-1555-4731-8309-63a464c6b43a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5c24f5dd55530e38ea47ed9a2b846d549bb26d56
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5911de3ce17fc0557b9fad885fa7cdc6ce5024ac
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456572"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194870"
 ---
 # <a name="elements-used-in-sql-statements"></a>Éléments utilisés dans les instructions SQL
 Les éléments suivants sont utilisés dans les instructions SQL répertoriées précédemment.  
@@ -36,7 +36,7 @@ Les éléments suivants sont utilisés dans les instructions SQL répertoriées 
   
  *Boolean-term* :: = *Boolean-Factor* [et *Boolean-term*]  
   
- *caractère-String-Literal* :: = ' ' {*caractère*}... ' ' (le*caractère* est n’importe quel caractère dans le jeu de caractères du pilote/de la source de données. Pour inclure un guillemet littéral simple (' ') dans un littéral de chaîne de caractères, utilisez deux guillemets littéraux [' ' ' '].)  
+ *caractère-String-Literal* :: = ' ' {*caractère*}... ' ' (le *caractère* est n’importe quel caractère dans le jeu de caractères du pilote/de la source de données. Pour inclure un guillemet littéral simple (' ') dans un littéral de chaîne de caractères, utilisez deux guillemets littéraux [' ' ' '].)  
   
  *Column-identifier* :: = *nom défini par l’utilisateur*  
   
@@ -98,7 +98,7 @@ Les éléments suivants sont utilisés dans les instructions SQL répertoriées 
   
  *table-reference-list* :: = *table-Reference* [,*table-Reference*]...  
   
- *terme* :: = *facteur* &#124; *terme* { \*&#124;*/* } *factor*  
+ *terme* :: = *facteur* &#124; *terme* { \*&#124;*/* }   
   
  *unsigned-entier* :: = {*digit*}  
   

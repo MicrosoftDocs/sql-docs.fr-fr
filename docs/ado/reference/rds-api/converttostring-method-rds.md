@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - ConvertToString method [ADO]
 ms.assetid: b3f36bc8-6f69-49b0-83cd-2ccd3afebfbe
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ec87fd4bc4495874aae88b3051081e30dda9bbb9
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 4edcebbfdee8a9a1411189786593c129ee32771c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91722425"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99169041"
 ---
 # <a name="converttostring-method-rds"></a>ConvertToString, méthode (RDS)
 Convertit un [Recordset](../ado-api/recordset-object-ado.md) en une chaîne MIME qui représente les données du Recordset.  
@@ -46,7 +46,7 @@ DataFactory.ConvertToString(Recordset)
   
  **ConvertToString** charge d’abord le **jeu d’enregistrements** dans les tables de service de curseur, puis génère un flux au format MIME.  
   
- Sur le client, Remote Data Service peut convertir la chaîne MIME en un **jeu d’enregistrements**entièrement fonctionnel. Elle fonctionne bien pour gérer moins de 400 lignes de données, avec une largeur inférieure à 1024 octets par ligne. Vous ne devez pas l’utiliser pour la diffusion en continu des données BLOB et des jeux de résultats volumineux sur HTTP. Aucune compression de câble n’est effectuée sur la chaîne. par conséquent, les jeux de données volumineux mettent beaucoup de temps au transport via HTTP par rapport au format TableGram optimisé pour les câbles, défini et déployé par le service de données distant en tant que format de protocole de transport natif.  
+ Sur le client, Remote Data Service peut convertir la chaîne MIME en un **jeu d’enregistrements** entièrement fonctionnel. Elle fonctionne bien pour gérer moins de 400 lignes de données, avec une largeur inférieure à 1024 octets par ligne. Vous ne devez pas l’utiliser pour la diffusion en continu des données BLOB et des jeux de résultats volumineux sur HTTP. Aucune compression de câble n’est effectuée sur la chaîne. par conséquent, les jeux de données volumineux mettent beaucoup de temps au transport via HTTP par rapport au format TableGram optimisé pour les câbles, défini et déployé par le service de données distant en tant que format de protocole de transport natif.  
   
 > [!NOTE]
 >  Si vous utilisez Active Server pages pour incorporer la chaîne MIME qui en résulte dans une page HTML cliente, sachez que les versions de VBScript antérieures à la version 2,0 limitent la taille de la chaîne à 32 Ko. Si cette limite est dépassée, une erreur est retournée. Conservez la portée de requête relativement petite lorsque vous utilisez l’incorporation MIME via des fichiers. asp. Pour résoudre ce problème, téléchargez la dernière version de VBScript à partir du site Web Microsoft Windows Script technologies.  

@@ -6,7 +6,7 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_db_uncontained_entities
 - dm_db_uncontained_entities_TSQL
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: f417efd4-8c71-4f81-bc9c-af13bb4b88ad
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 54b087c98071ea550fcdff630a93d8049188ea91
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 4bf535b136c8de41a54a6de6c75d0e22794a3448
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099899"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204787"
 ---
 # <a name="sysdm_db_uncontained_entities-transact-sql"></a>sys.dm_db_uncontained_entities (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "98099899"
 |-|-|-|  
 |**Nom de la colonne**|**Type**|**Description**|  
 |*class*|**int**|1 = objet ou colonne (inclut des modules, XPs, vues, synonymes et tables).<br /><br /> 4 = Principal de la base de données<br /><br /> 5 = Assembly<br /><br /> 6 = Type<br /><br /> 7 = Index (index de texte intégral)<br /><br /> 12 = déclencheur DDL de base de données<br /><br /> 19 = Itinéraire<br /><br /> 30 = Spécification d'audit|  
-|*class_desc*|**nvarchar(120)**|Description de la classe de l'entité. L’un des éléments suivants pour correspondre à la classe :<br /><br /> **OBJECT_OR_COLUMN**<br /><br /> **DATABASE_PRINCIPAL**<br /><br /> **CHARGEUR**<br /><br /> **TYPE**<br /><br /> **INDEX**<br /><br /> **DATABASE_DDL_TRIGGER**<br /><br /> **Itinéraire**<br /><br /> **AUDIT_SPECIFICATION**|  
+|*class_desc*|**nvarchar(120)**|Description de la classe de l'entité. L’un des éléments suivants pour correspondre à la classe :<br /><br /> **OBJECT_OR_COLUMN**<br /><br /> **DATABASE_PRINCIPAL**<br /><br /> **CHARGEUR**<br /><br /> **TYPE**<br /><br /> **INDEX**<br /><br /> **DATABASE_DDL_TRIGGER**<br /><br /> **ROUTE**<br /><br /> **AUDIT_SPECIFICATION**|  
 |*major_id*|**int**|ID de l'entité.<br /><br /> Si la *classe* est 1, object_id<br /><br /> Si *Class* = 4, sys. database_principals. principal_id.<br /><br /> Si *Class* = 5, sys.Assemblies.assembly_id.<br /><br /> Si *Class* = 6, sys.types.user_type_id.<br /><br /> Si *Class* = 7, sys.indexes.index_id.<br /><br /> Si *Class* = 12, sys.Triggers.OBJECT_ID.<br /><br /> Si *Class* = 19, sys.routes.Route_ID.<br /><br /> Si *Class* = 30, alors sys. database_audit_specifications database_audit_specifications.database_specification_id.|  
 |*statement_line_number*|**int**|Si la classe est un module, retourne le numéro de ligne sur lequel l'utilisation sans relation contenant-contenu se trouve.  Sinon, la valeur est Null.|  
 |*statement_ offset_begin*|**int**|Si la classe est un module, indique, en octets, en commençant par 0, la position de départ où l'utilisation sans relation contenant-contenu démarre. Sinon, la valeur de retour est Null.|  

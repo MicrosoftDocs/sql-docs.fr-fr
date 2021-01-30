@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_replmonitorchangepublicationthreshold_TSQL
 - sp_replmonitorchangepublicationthreshold
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 2c3615d8-4a1a-4162-b096-97aefe6ddc16
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 6114d52b0db23d04c3b8cf001b0881dbc38844a6
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 62f360416f46eee0bbe685f6ebd1af7520526ee6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543149"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204385"
 ---
 # <a name="sp_replmonitorchangepublicationthreshold-transact-sql"></a>sp_replmonitorchangepublicationthreshold (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Modifie la mesure du seuil de supervision pour une publication. Cette procédure stockée, utilisée pour surveiller la réplication, est exécutée sur la base de données du serveur de distribution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,7 +52,7 @@ sp_replmonitorchangepublicationthreshold [ @publisher = ] 'publisher'
   
 `[ @publication = ] 'publication'` Nom de la publication pour laquelle les attributs de seuil d’analyse sont modifiés. *publication* est de **type sysname**, sans valeur par défaut.  
   
-`[ @publication_type = ] publication_type` Si le type de publication. *publication_type* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @publication_type = ] publication_type` Si le type de publication. *publication_type* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -81,7 +81,7 @@ sp_replmonitorchangepublicationthreshold [ @publisher = ] 'publisher'
   
 `[ @shouldalert = ] shouldalert` Indique si une alerte est générée lorsqu’une métrique de seuil de publication est atteinte. *ShouldAlert* est de type **bit**, avec NULL comme valeur par défaut. La valeur **1** signifie qu’une alerte est générée, tandis que la valeur **0** indique qu’une alerte n’est pas générée.  
   
-`[ @mode = ] mode` Indique si la métrique du seuil de publication est activée. *mode* est de **type tinyint**, avec **1**comme valeur par défaut. La valeur **1** signifie que la surveillance de cette métrique est activée, et la valeur **2** signifie que la surveillance de cette métrique est désactivée.  
+`[ @mode = ] mode` Indique si la métrique du seuil de publication est activée. *mode* est de **type tinyint**, avec **1** comme valeur par défaut. La valeur **1** signifie que la surveillance de cette métrique est activée, et la valeur **2** signifie que la surveillance de cette métrique est désactivée.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

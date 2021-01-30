@@ -7,19 +7,19 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - SortColumn property [RDS]
 ms.assetid: f6f80f67-f0fb-4e63-a5f5-8fdf312aac63
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 62187b1643c315099d40d0bdd878699fcfc0065c
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: edbfa8f6c4dbb1296e9bf86aed43148bb7b12ec2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724226"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168779"
 ---
 # <a name="sortcolumn-property-rds"></a>SortColumn, propriété (RDS)
 Indique la colonne dans laquelle trier les enregistrements.  
@@ -42,9 +42,9 @@ DataControl.SortColumn = String
  Valeur de **chaîne** qui représente le nom ou l’alias de la colonne selon laquelle trier les enregistrements.  
   
 ## <a name="remarks"></a>Notes  
- Les propriétés **SortColumn**, [SortDirection](./sortdirection-property-rds.md), [FilterValue](./filtervalue-property-rds.md), [FilterCriterion](./filtercriterion-property-rds.md)et [FilterColumn](./filtercolumn-property-rds.md) fournissent des fonctionnalités de tri et de filtrage sur le cache côté client. La fonctionnalité de tri commande les enregistrements par valeurs d’une colonne. La fonctionnalité de filtrage affiche un sous-ensemble d’enregistrements basés sur des critères de recherche, tandis que le [jeu d’enregistrements](../ado-api/recordset-object-ado.md) complet est conservé dans le cache. La méthode de [réinitialisation](./reset-method-rds.md) exécute les critères et remplace le **jeu d’enregistrements** actuel par un **jeu d’enregistrements**pouvant être mis à jour.  
+ Les propriétés **SortColumn**, [SortDirection](./sortdirection-property-rds.md), [FilterValue](./filtervalue-property-rds.md), [FilterCriterion](./filtercriterion-property-rds.md)et [FilterColumn](./filtercolumn-property-rds.md) fournissent des fonctionnalités de tri et de filtrage sur le cache côté client. La fonctionnalité de tri commande les enregistrements par valeurs d’une colonne. La fonctionnalité de filtrage affiche un sous-ensemble d’enregistrements basés sur des critères de recherche, tandis que le [jeu d’enregistrements](../ado-api/recordset-object-ado.md) complet est conservé dans le cache. La méthode de [réinitialisation](./reset-method-rds.md) exécute les critères et remplace le **jeu d’enregistrements** actuel par un **jeu d’enregistrements** pouvant être mis à jour.  
   
- Pour effectuer un tri sur un **jeu d’enregistrements**, vous devez d’abord enregistrer toutes les modifications en attente. Si vous utilisez le **RDS. DataControl**, vous pouvez utiliser la méthode [SubmitChanges](./submitchanges-method-rds.md) . Par exemple, si votre **objet RDS. DataControl** est nommé ADC1, votre code est `ADC1.SubmitChanges` . Si vous utilisez un **jeu d’enregistrements**ADO, vous pouvez utiliser sa méthode [UpdateBatch](../ado-api/updatebatch-method.md) . L’utilisation de **UpdateBatch** est la méthode recommandée pour les objets **Recordset** créés avec la méthode [CreateRecordset](./createrecordset-method-rds.md) . Par exemple, votre code peut être `myRS.UpdateBatch` ou `ADC1.Recordset.UpdateBatch` .  
+ Pour effectuer un tri sur un **jeu d’enregistrements**, vous devez d’abord enregistrer toutes les modifications en attente. Si vous utilisez le **RDS. DataControl**, vous pouvez utiliser la méthode [SubmitChanges](./submitchanges-method-rds.md) . Par exemple, si votre **objet RDS. DataControl** est nommé ADC1, votre code est `ADC1.SubmitChanges` . Si vous utilisez un **jeu d’enregistrements** ADO, vous pouvez utiliser sa méthode [UpdateBatch](../ado-api/updatebatch-method.md) . L’utilisation de **UpdateBatch** est la méthode recommandée pour les objets **Recordset** créés avec la méthode [CreateRecordset](./createrecordset-method-rds.md) . Par exemple, votre code peut être `myRS.UpdateBatch` ou `ADC1.Recordset.UpdateBatch` .  
   
 ## <a name="applies-to"></a>S'applique à  
  [DataControl, objet (RDS)](./datacontrol-object-rds.md)  

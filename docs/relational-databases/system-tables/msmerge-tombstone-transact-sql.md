@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSmerge_tombstone_TSQL
 - MSmerge_tombstone
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 8b3fc7bf-729b-40f2-8a26-e7dfbe8ddb38
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 2b8f54ce66145ddc298bb44594c48f74ddd62be0
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 6cd4fb0d58f0e400d23834090f31bf9043f547d5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098592"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205899"
 ---
 # <a name="msmerge_tombstone-transact-sql"></a>MSmerge_tombstone (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
