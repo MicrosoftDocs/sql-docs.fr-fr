@@ -6,19 +6,19 @@ ms.date: 03/07/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: 0673a8f8-8bed-41eb-8959-a9e3e9e03a65
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>= aps-pdw-2016'
-ms.openlocfilehash: 38f15c09bc07e3ef9c74480ec6684805fc98ce08
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: ea7840aa8514bd3bdbc03004e551c66ad01944fb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092688"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99140135"
 ---
 # <a name="sysdm_pdw_os_performance_counters-transact-sql"></a>sys.dm_pdw_os_performance_counters (Transact-SQL)
 [!INCLUDE [pdw](../../includes/applies-to-version/pdw.md)]

@@ -6,19 +6,19 @@ ms.date: 03/07/2017
 ms.prod: sql
 ms.technology: data-warehouse
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: d4fee3ad-6285-4ea5-8513-5e6eb617abb0
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>= aps-pdw-2016'
-ms.openlocfilehash: 281d33274925e22ca30c44317f9926d820011c22
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 79a202511cd0a140287eaa254a3716c2070c9715
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092743"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99142272"
 ---
 # <a name="sysdm_pdw_network_credentials-transact-sql"></a>sys.dm_pdw_network_credentials (Transact-SQL)
 [!INCLUDE [pdw](../../includes/applies-to-version/pdw.md)]

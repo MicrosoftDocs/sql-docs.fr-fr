@@ -6,19 +6,19 @@ ms.date: 03/07/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: a0daa8cf-72e2-4349-8be1-d3cc0f9b1e02
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>= aps-pdw-2016'
-ms.openlocfilehash: af5633fc5e1a169c71197ac77a715e4b28da2b57
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: bfc09d3ebaae6a7e78c327cc0b12d8327c7e6d00
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092693"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99140178"
 ---
 # <a name="sysdm_pdw_os_event_logs-transact-sql"></a>sys.dm_pdw_os_event_logs (Transact-SQL)
 [!INCLUDE [pdw](../../includes/applies-to-version/pdw.md)]
