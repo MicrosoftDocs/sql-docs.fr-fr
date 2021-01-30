@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_denylogin_TSQL
 - sp_denylogin
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: db80f152-e8af-4303-95b6-3a3a7b664374
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 9133a6ee523c27837da0209c57e620a13187bdd1
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 7006aaa4a8c7ddf0603264d1c241d09a8e327f5f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546181"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178097"
 ---
 # <a name="sp_denylogin-transact-sql"></a>sp_denylogin (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "89546181"
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Utilisez à la place [ALTER LOGIN](../../t-sql/statements/alter-login-transact-sql.md) .  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -49,7 +49,7 @@ sp_denylogin [ @loginame = ] 'login'
  0 (réussite) ou 1 (échec)  
   
 ## <a name="remarks"></a>Notes  
- **sp_denylogin** refuse l’autorisation CONNECT SQL au principal au niveau du serveur mappé à l’utilisateur Windows ou au groupe Windows spécifié. Si le principal du serveur n'existe pas, il est créé. Le nouveau principal sera visible dans l’affichage catalogue [sys. server_principals &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-server-principals-transact-sql.md) .  
+ **sp_denylogin** refuse l’autorisation CONNECT SQL au principal au niveau du serveur mappé à l’utilisateur Windows ou au groupe Windows spécifié. Si le principal du serveur n'existe pas, il est créé. Le nouveau principal sera visible dans l’affichage catalogue [sys.server_principals &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-server-principals-transact-sql.md) .  
   
  **sp_denylogin** ne peut pas être exécutée dans une transaction définie par l’utilisateur.  
   

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.syscacheobjects_TSQL
 - sys.syscacheobjects
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 9b14f37c-b7f5-4f71-b070-cce89a83f69e
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 4b33b97a5b3753d63e1df4759d26970cf6359ee2
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 4e3374c67917f3468bb9b31d73acd47544d07405
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097803"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180724"
 ---
 # <a name="syssyscacheobjects-transact-sql"></a>sys.syscacheobjects (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "98097803"
 |-----------------|---------------|-----------------|  
 |**bucketid**|**int**|ID du compartiment. La valeur est comprise entre 0 et (taille du répertoire -1). La taille du répertoire est la taille de la table de hachage.|  
 |**cacheobjtype**|**nvarchar(17)**|Type de l'objet dans le cache :<br /><br /> Plan compilé<br /><br /> Plan exécutable<br /><br /> Arborescence d'analyse<br /><br /> Curseur<br /><br /> Procédure stockée étendue|  
-|**déclaré**|**nvarchar(8)**|Type d’objet :<br /><br /> Procédure stockée<br /><br /> Instruction préparée<br /><br /> Requête ad hoc ( [!INCLUDE[tsql](../../includes/tsql-md.md)] soumise en tant qu’événements de langage à partir des utilitaires **sqlcmd** ou **osql** , au lieu d’appels de procédure distante)<br /><br /> ReplProc (procédure de réplication)<br /><br /> Déclencheur<br /><br /> Afficher<br /><br /> Valeur par défaut<br /><br /> Table utilisateur<br /><br /> Table système<br /><br /> Vérification<br /><br /> Règle|  
+|**déclaré**|**nvarchar(8)**|Type d’objet :<br /><br /> Procédure stockée<br /><br /> Instruction préparée<br /><br /> Requête ad hoc ( [!INCLUDE[tsql](../../includes/tsql-md.md)] soumise en tant qu’événements de langage à partir des utilitaires **sqlcmd** ou **osql** , au lieu d’appels de procédure distante)<br /><br /> ReplProc (procédure de réplication)<br /><br /> Déclencheur<br /><br /> Affichage<br /><br /> Default<br /><br /> Table utilisateur<br /><br /> Table système<br /><br /> Vérification<br /><br /> Règle|  
 |**objid**|**int**|Une des clés principales servant à rechercher un objet dans le cache. Il s’agit de l’ID d’objet stocké dans **sysobjects** pour les objets de base de données (procédures, vues, déclencheurs, etc.). Pour les objets de cache tels que le SQL ad hoc ou préparé, **objID** est une valeur générée en interne.|  
 |**dbid**|**smallint**|ID de la base de données dans laquelle a été compilé l'objet contenu dans le cache|  
 |**dbidexec**|**smallint**|ID de la base de données à partir de laquelle la requête est exécutée.<br /><br /> Pour la plupart des objets, **dbidexec** a la même valeur que **dbid**.<br /><br /> Pour les vues système, **dbidexec** est l’ID de base de données à partir duquel la requête est exécutée.<br /><br /> Pour les requêtes ad hoc, **dbidexec** est égal à 0. Cela signifie que **dbidexec** a la même valeur que **dbid**.|  

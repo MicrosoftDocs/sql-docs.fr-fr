@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: aa615add-54e6-40f5-8b55-3728b26884ee
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 1f82c8cbfcf2871912a2a83a02f3f29be294a7ba
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: fe70ff306185ed57f0881cddd0a48dd19636dae0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098749"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180407"
 ---
 # <a name="backup-and-restore-tables-transact-sql"></a>Sauvegarder et restaurer des tables (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

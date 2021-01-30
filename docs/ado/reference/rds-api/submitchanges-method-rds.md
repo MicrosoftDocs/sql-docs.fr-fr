@@ -7,19 +7,19 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.prod: sql
 ms.prod_service: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - SubmitChanges method [ADO]
 ms.assetid: 250062a4-13c4-4bed-807d-8b9ad81536d4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 69a76648c676af5c6420cffde930ac76c096276d
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 052c131cb430d911d37f6782565c00a1d3cc53d0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724173"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166107"
 ---
 # <a name="submitchanges-method-rds"></a>SubmitChanges, méthode (RDS)
 Soumet les modifications en attente du [Recordset](../ado-api/recordset-object-ado.md) mis à jour localement et mis à jour dans la source de données spécifiée dans la propriété [Connect](./connect-property-rds.md) ou [URL](./url-property-rds.md) .  
@@ -42,7 +42,7 @@ DataControl.SubmitChanges DataFactory.SubmitChanges Connection, Recordset
  Variable objet qui représente un objet [RDSServer. DataFactory](./datafactory-object-rdsserver.md) .  
   
  *Connection*  
- Valeur de **chaîne** qui représente la connexion créée avec le **RDS. ** Propriété [Connect](./connect-property-rds.md) de l’objet DataControl.  
+ Valeur de **chaîne** qui représente la connexion créée avec le **RDS.** Propriété [Connect](./connect-property-rds.md) de l’objet DataControl.  
   
  *Recordset*  
  Variable objet qui représente un objet **Recordset** .  

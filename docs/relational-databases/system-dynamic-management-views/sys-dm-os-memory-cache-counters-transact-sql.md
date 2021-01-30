@@ -6,7 +6,7 @@ ms.date: 08/18/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_os_memory_cache_counters_TSQL
 - dm_os_memory_cache_counters_TSQL
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: ca7bd036-d661-4c17-b00a-e1a975bd8932
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: b35568bdef71d81918a3c672682e1e6df1fb9da1
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 53540f517cfe0869636591ddb5d59f95c7172cdc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092769"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184840"
 ---
 # <a name="sysdm_os_memory_cache_counters-transact-sql"></a>sys.dm_os_memory_cache_counters (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

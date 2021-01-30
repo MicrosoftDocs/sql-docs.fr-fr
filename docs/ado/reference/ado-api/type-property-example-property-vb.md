@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2ee8e4c5-1d66-4a77-8892-6dad7e07e611
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e826903c37ca436f73bd82abc93afdd0568fc9e6
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: e01df93f4f7f5db2b534c0c3458482ccd06c2b1f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988240"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166361"
 ---
 # <a name="type-property-example-property-vb"></a>Type, exemple de propriété (objet Property) (VB)
 Cet exemple illustre la propriété [type](./type-property-ado.md) . Il s’agit d’un modèle d’utilitaire permettant de répertorier les noms et les types d’une collection, tels que les [Propriétés](./properties-collection-ado.md), les [champs](./fields-collection-ado.md), etc.  

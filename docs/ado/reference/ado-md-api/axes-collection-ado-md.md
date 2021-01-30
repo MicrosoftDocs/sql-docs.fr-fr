@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Axes
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 072fb21a-ec0f-4b02-9022-1cef3ad4bfff
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 78113cb7854ec3f56ffe6f7322a6bb732939f27f
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 757d833da689c3d5097540571074292ec1bd2d69
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88987410"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166191"
 ---
 # <a name="axes-collection-ado-md"></a>Axes, collection (ADO MD)
 Contient les objets [Axis](./axis-object-ado-md.md) qui définissent un groupe de cellules.  

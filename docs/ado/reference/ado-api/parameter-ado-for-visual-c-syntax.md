@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 dev_langs:
 - C++
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 74801dc1-cf0f-4a6e-960b-5990fe55e30d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b2d502f6071375f7d5a482b2db9753caa15fb086
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 54bd88ab8b439752870bb2ac87d1f4de6528c13d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990220"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166919"
 ---
 # <a name="parameter-ado-for-visual-c-syntax"></a>Parameter (syntaxe ADO pour Visual C++)
 ## <a name="methods"></a>Méthodes  

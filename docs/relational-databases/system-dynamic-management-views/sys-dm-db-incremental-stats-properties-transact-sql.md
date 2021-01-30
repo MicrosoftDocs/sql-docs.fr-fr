@@ -6,7 +6,7 @@ ms.date: 12/18/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_db_incremental_stats_properties
 - sys.dm_db_incremental_stats_properties_TSQL
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: aa0db893-34d1-419c-b008-224852e71307
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 27585efd99f537e6b2f6d3082c341533e8bbea3b
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 578d55bc9f80a4586993b2b5a2011934f66c0cee
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172091"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180616"
 ---
 # <a name="sysdm_db_incremental_stats_properties-transact-sql"></a>sys.dm_db_incremental_stats_properties (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]

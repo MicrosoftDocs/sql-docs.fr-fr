@@ -7,24 +7,24 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - data types [ODBC], identifiers
 - identifiers [ODBC], data types
 ms.assetid: 467e0c0c-a818-4737-8a24-3d8e15c7e162
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 54fe7267ea70dc50b0b40f16b27a1306fea533f2
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cd38f5ddb62a28bc3ec2658dca621769e13ab481
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88386275"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202437"
 ---
 # <a name="using-data-type-identifiers"></a>Utilisation d’identificateurs de types de données
 Les applications utilisent des identificateurs de type de données de deux façons : pour décrire leurs mémoires tampons au pilote et pour récupérer les métadonnées sur le jeu de résultats à partir du pilote afin qu’elles puissent déterminer le type de tampons C à utiliser pour stocker les données. Les applications appellent les fonctions suivantes pour effectuer ces tâches :  
   
--   **SQLBindParameter**, **SQLBindCol**et **SQLGetData** -pour décrire le type de données C des mémoires tampons d’application.  
+-   **SQLBindParameter**, **SQLBindCol** et **SQLGetData** -pour décrire le type de données C des mémoires tampons d’application.  
   
 -   **SQLBindParameter** -pour décrire le type de données SQL des paramètres dynamiques.  
   
@@ -32,7 +32,7 @@ Les applications utilisent des identificateurs de type de données de deux faço
   
 -   **SQLDescribeParameter** : pour récupérer les types de données SQL des paramètres.  
   
--   **SQLColumns**, **SQLProcedureColumns**et **SQLSpecialColumns** -pour récupérer les types de données SQL des diverses informations de schéma  
+-   **SQLColumns**, **SQLProcedureColumns** et **SQLSpecialColumns** -pour récupérer les types de données SQL des diverses informations de schéma  
   
 -   **SQLGetTypeInfo** : pour récupérer la liste des types de données pris en charge  
   

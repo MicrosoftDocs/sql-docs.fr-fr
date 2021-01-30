@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_replicationdboption_TSQL
 - sp_replicationdboption
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d021864e-3f21-4d1a-89df-6c1086f753bf
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 65839ea899d001c42478e1eb3d1e54cad0f53f52
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e56271516d9ef2df60e993cd73963d074b503d42
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88485712"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211879"
 ---
 # <a name="sp_replicationdboption-transact-sql"></a>sp_replicationdboption (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -44,7 +44,7 @@ sp_replicationdboption [ @dbname= ] 'db_name'
 ## <a name="arguments"></a>Arguments  
 `[ @dbname = ] 'dbname'` Base de données pour laquelle l’option de base de données de réplication est définie. *db_name* est de **type sysname**, sans valeur par défaut.  
   
-`[ @optname = ] 'optname'` Option de base de données de réplication à activer ou à désactiver. *nom_d* 'est est de **type sysname**et peut prendre l’une des valeurs suivantes.  
+`[ @optname = ] 'optname'` Option de base de données de réplication à activer ou à désactiver. *nom_d* 'est est de **type sysname** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -53,9 +53,9 @@ sp_replicationdboption [ @dbname= ] 'db_name'
 |**Inscrivez**|La base de données est une base de données d'abonnement.|  
 |**sync with backup**|La base de données est activée pour la sauvegarde coordonnée. Pour plus d’informations, consultez [activer des sauvegardes coordonnées pour la réplication transactionnelle &#40;la programmation Transact-SQL de la réplication&#41;](../../relational-databases/replication/administration/enable-coordinated-backups-for-transactional-replication.md).|  
   
-`[ @value = ] 'value'` Indique s’il faut activer ou désactiver l’option de base de données de réplication donnée. la valeur est de **type sysname**et peut avoir la *valeur* **true** ou **false**. Lorsque cette valeur est **false** et que *nom_d* 'est la **publication de fusion**, les abonnements à la base de données publiée de fusion sont également supprimés.  
+`[ @value = ] 'value'` Indique s’il faut activer ou désactiver l’option de base de données de réplication donnée. la valeur est de **type sysname** et peut avoir la *valeur* **true** ou **false**. Lorsque cette valeur est **false** et que *nom_d* 'est la **publication de fusion**, les abonnements à la base de données publiée de fusion sont également supprimés.  
   
-`[ @ignore_distributor = ] ignore_distributor` Indique si cette procédure stockée est exécutée sans se connecter au serveur de distribution. *ignore_distributor* est de **bit**, avec **0**comme valeur par défaut, ce qui signifie que le serveur de distribution doit être connecté et mis à jour avec le nouvel état de la base de données de publication. La valeur **1** doit être spécifiée uniquement si le serveur de distribution est inaccessible et que **sp_replicationdboption** est utilisé pour désactiver la publication.  
+`[ @ignore_distributor = ] ignore_distributor` Indique si cette procédure stockée est exécutée sans se connecter au serveur de distribution. *ignore_distributor* est de **bit**, avec **0** comme valeur par défaut, ce qui signifie que le serveur de distribution doit être connecté et mis à jour avec le nouvel état de la base de données de publication. La valeur **1** doit être spécifiée uniquement si le serveur de distribution est inaccessible et que **sp_replicationdboption** est utilisé pour désactiver la publication.  
   
 `[ @from_scripting = ] from_scripting` [!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]  
   

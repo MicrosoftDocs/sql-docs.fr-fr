@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.sysconfigures
 - sysconfigures
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 146bf10a-c898-4676-a2a1-673fb1cee7a2
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 09f1991287bb1b3b2341de6fef1d7492d56e835c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 109c17040f52392df2518ddccb47491d2b0a9527
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099140"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180703"
 ---
 # <a name="syssysconfigures-transact-sql"></a>sys.sysconfigures (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

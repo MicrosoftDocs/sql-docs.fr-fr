@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLGetInstalledDrivers
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: a1983a2e-0edf-422e-bd1b-ec5db40a34bc
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0599cb187dee9d3b860f619538b1e0dc148ad58d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5f770254874b09158632ebaee071964c00265a46
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88421263"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180955"
 ---
 # <a name="sqlgetinstalleddrivers-function"></a>SQLGetInstalledDrivers, fonction
 **Conformité**  
@@ -58,9 +58,9 @@ BOOL SQLGetInstalledDrivers(
  La fonction retourne TRUE si elle réussit, FALSe en cas d’échec.  
   
 ## <a name="diagnostics"></a>Diagnostics  
- Quand **SQLGetInstalledDrivers** retourne false, une valeur * \* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs * \* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
+ Quand **SQLGetInstalledDrivers** retourne false, une valeur *\* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs *\* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur|Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur générale du programme d’installation|Une erreur s’est produite pour laquelle aucune erreur d’installation spécifique n’a été rencontrée.|  
 |ODBC_ERROR_INVALID_BUFF_LEN|Longueur de la mémoire tampon non valide|L’argument *lpszBuf* a la valeur null ou n’est pas valide, ou l’argument *cbBufMax* était inférieur ou égal à 0.|  

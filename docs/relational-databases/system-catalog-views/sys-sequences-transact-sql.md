@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.sequences_TSQL
 - sys.sequences
@@ -22,12 +22,12 @@ ms.assetid: 0e1b0e32-1cce-40f7-83c8-860ec660138a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: c64793ccb6d7280bcadd79de1587f09a8ac3eb29
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: fabf7eae6ee156918305e4e84f5ef549b7d67364
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101795"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182458"
 ---
 # <a name="syssequences-transact-sql"></a>sys.sequences (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

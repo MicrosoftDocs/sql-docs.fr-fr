@@ -7,19 +7,19 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - Axis object [ADO MD], members
 ms.assetid: 89ec13b9-6324-4a95-92a7-3230d46bd02f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4ca075ecc7c2a49608777ebfef4a7cf970ff4353
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: a2dee77704779c07c209f1b7bbc9a592e2f43e02
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88987350"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166169"
 ---
 # <a name="axis-object-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet Axis
 ## <a name="propertiescollections"></a>Propriétés/collections  

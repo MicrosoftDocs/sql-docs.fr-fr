@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 78bb9a95-7ac4-44b6-818b-d1787f952ed7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a3ef129dc3f6c17bb2d5e4b9da63f22f3c798cb7
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 5999c8c2baf64fa5da360b57c1d545b3a6250a6c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976610"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164946"
 ---
 # <a name="ado-code-examples-vbscript"></a>Exemples de code ADO dans VBScript
 Utilisez les exemples de code suivants pour en savoir plus sur l’utilisation des méthodes ADO lors de l’écriture dans Microsoft® Visual Basic® Scripting Edition (VBScript).  

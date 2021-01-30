@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dbo.sysproxies_TSQL
 - sysproxies_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: a73da875-be22-45fc-b5e2-ea7ebd48e2d6
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 3d04cd1822a9c7e0edc309a3500e800b2df58fd0
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: fb3f9c479086650752b550588bf8abe6c7f0e220
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098313"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184675"
 ---
 # <a name="dbosysproxies-transact-sql"></a>dbo.sysproxies (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

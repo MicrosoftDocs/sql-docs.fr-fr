@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.xml_schema_elements
 - sys.xml_schema_elements_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 190ed0cd-0c5e-4607-9db4-9e77cacf17d7
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: d867720ba017f45ab3e413b452ae975e2930727c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: e8b8e424b022ea8d05532eb6046c5780c26ef1de
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092969"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211988"
 ---
 # <a name="sysxml_schema_elements-transact-sql"></a>sys.xml_schema_elements (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Field20::GetUnderlyingValue
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 00a0c8b8-8b63-433f-95b8-020ab05874a0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a96924a682a0c916da8c6834ea7b290b88b6f690
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: dd9ba64953632ad4681e7650ba8028df45e53da6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88988170"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166348"
 ---
 # <a name="underlyingvalue-property"></a>UnderlyingValue, propriété
 Indique la valeur actuelle d’un objet [champ](./field-object.md) dans la base de données.  
@@ -38,7 +38,7 @@ Indique la valeur actuelle d’un objet [champ](./field-object.md) dans la base 
   
  Lorsque vous utilisez cette propriété avec la propriété **OriginalValue** , vous pouvez résoudre les conflits qui résultent des mises à jour par lots.  
   
-## <a name="record"></a>Enregistrement  
+## <a name="record"></a>Enregistrer  
  Pour les objets [Record](./record-object-ado.md) , cette propriété est vide pour les champs ajoutés avant l’appel de la méthode [Update](./update-method.md) .  
   
 ## <a name="applies-to"></a>S'applique à  

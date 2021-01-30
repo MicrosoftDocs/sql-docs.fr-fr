@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLBrowseConnect
 apilocation:
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: b7f1be66-e6c7-4790-88ec-62b7662103c0
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 712dbb366e25098c7956ffbb9c8733a437339297
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 33983c9fb41625fa6479c47045ca4a04738a1463
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88499632"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181070"
 ---
 # <a name="sqlbrowseconnect-function"></a>Fonction SQLBrowseConnect
 **Conformité**  
@@ -53,13 +53,13 @@ SQLRETURN SQLBrowseConnect(
  [Entrée] Handle de connexion.  
   
  *InConnectionString*  
- Entrée Parcourir la chaîne de connexion de la demande (voir « argument*InConnectionString* » dans « Comments »).  
+ Entrée Parcourir la chaîne de connexion de la demande (voir « argument *InConnectionString* » dans « Comments »).  
   
  *StringLength1*  
  Entrée Longueur de **InConnectionString* en caractères.  
   
  *OutConnectionString*  
- Sortie Pointeur vers une mémoire tampon de caractères dans laquelle retourner la chaîne de connexion du résultat de navigation (voir « argument*OutConnectionString* » dans « Comments »).  
+ Sortie Pointeur vers une mémoire tampon de caractères dans laquelle retourner la chaîne de connexion du résultat de navigation (voir « argument *OutConnectionString* » dans « Comments »).  
   
  Si *OutConnectionString* a la valeur null, *StringLength2Ptr* retourne toujours le nombre total de caractères (à l’exception du caractère de fin null pour les données de type caractère) disponibles pour retourner dans la mémoire tampon vers laquelle pointe *OutConnectionString*.  
   
@@ -75,10 +75,10 @@ SQLRETURN SQLBrowseConnect(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLBrowseConnect** retourne SQL_ERROR, SQL_SUCCESS_WITH_INFO ou SQL_NEED_DATA, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *comme HandleType* de SQL_HANDLE_STMT et un *handle de ConnectionHandle*. Le tableau suivant répertorie les valeurs SQLSTATE couramment retournées par **SQLBrowseConnect** et les explique dans le contexte de cette fonction. la notation « (DM) » précède les descriptions des SQLSTATEs retournées par le gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur|Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information spécifique au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
-|01004|Données de chaîne, tronquées à droite|Le OutConnectionString de mémoire tampon \* *OutConnectionString* n’est pas assez grand pour retourner la chaîne de connexion du résultat de navigation entier, donc la chaîne a été tronquée. La mémoire tampon **StringLength2Ptr* contient la longueur de la chaîne de connexion des résultats de navigation non tronqués. (La fonction retourne SQL_NEED_DATA.)|  
+|01004|Données de chaîne, tronquées à droite|Le OutConnectionString de mémoire tampon \*  n’est pas assez grand pour retourner la chaîne de connexion du résultat de navigation entier, donc la chaîne a été tronquée. La mémoire tampon **StringLength2Ptr* contient la longueur de la chaîne de connexion des résultats de navigation non tronqués. (La fonction retourne SQL_NEED_DATA.)|  
 |01S00|Attribut de chaîne de connexion non valide|Un mot clé d’attribut non valide a été spécifié dans la chaîne de connexion de la requête de navigation (*InConnectionString*). (La fonction retourne SQL_NEED_DATA.)<br /><br /> Un mot clé d’attribut a été spécifié dans la chaîne de connexion de la demande de navigation (*InConnectionString*) qui ne s’applique pas au niveau de connexion actuel. (La fonction retourne SQL_NEED_DATA.)|  
 |01S02 ne|Valeur modifiée|Le pilote ne prenait pas en charge la valeur spécifiée de l’argument *ValuePtr* dans **SQLSetConnectAttr** et substituait une valeur similaire. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |08001|Le client ne peut pas établir la connexion|Le pilote n’a pas pu établir une connexion avec la source de données.|  
@@ -86,7 +86,7 @@ SQLRETURN SQLBrowseConnect(
 |08004|Le serveur a rejeté la connexion|La source de données a rejeté l’établissement de la connexion pour des raisons définies par l’implémentation.|  
 |08S01|Échec de la liaison de communication|Le lien de communication entre le pilote et la source de données à laquelle le pilote essayait de se connecter a échoué avant la fin du traitement de la fonction.|  
 |28000|Spécification d’autorisation non valide|L’identificateur ou la chaîne d’autorisation de l’utilisateur, ou les deux, comme spécifié dans la chaîne de connexion de la demande de navigation (*InConnectionString*), des restrictions sont enfreintes définies par la source de données.|  
-|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon * \* MessageText* décrit l’erreur et sa cause.|  
+|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon *\* MessageText* décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|(DM) le gestionnaire de pilotes n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou l’achèvement de la fonction.<br /><br /> Le pilote n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou l’achèvement de la fonction.|  
 |HY008|Opération annulée|Une opération asynchrone a été annulée par l’appel de la [fonction SQLCancelHandle](../../../odbc/reference/syntax/sqlcancelhandle-function.md). Ensuite, la fonction d’origine a été appelée à nouveau sur le *ConnectionHandle*.<br /><br /> Une opération a été annulée en appelant **SQLCancelHandle** sur le *ConnectionHandle* à partir d’un thread différent dans une application multithread.|  
 |HY010|Erreur de séquence de fonction|(DM) une fonction d’exécution asynchrone (pas celle-ci) a été appelée pour le *ConnectionHandle* et était toujours en cours d’exécution quand cette fonction a été appelée.|  
@@ -142,11 +142,11 @@ SQLRETURN SQLBrowseConnect(
   
 -   Les mots clés d’attribut **UID** et **PWD** ont la même signification que celle définie dans **SQLDriverConnect**.  
   
--   Nom du *mot-clé-définition du pilote* : type d’attribut pour lequel une valeur d’attribut peut être fournie. Par exemple, il peut s’agir d’un **serveur**, d’une **base de données**, d’un **hôte**ou d’un **SGBD**.  
+-   Nom du *mot-clé-définition du pilote* : type d’attribut pour lequel une valeur d’attribut peut être fournie. Par exemple, il peut s’agir d’un **serveur**, d’une **base de données**, d’un **hôte** ou d’un **SGBD**.  
   
--   *ODBC-attribute-Keywords* et *Driver-Defined-Attribute-Keywords* incluent une version localisée ou conviviale du mot clé. Cela peut être utilisé par les applications comme une étiquette dans une boîte de dialogue. Toutefois, **UID**, **PWD**ou l' *identificateur* seul doit être utilisé lors du passage d’une chaîne de requête de navigation au pilote.  
+-   *ODBC-attribute-Keywords* et *Driver-Defined-Attribute-Keywords* incluent une version localisée ou conviviale du mot clé. Cela peut être utilisé par les applications comme une étiquette dans une boîte de dialogue. Toutefois, **UID**, **PWD** ou l' *identificateur* seul doit être utilisé lors du passage d’une chaîne de requête de navigation au pilote.  
   
--   {*Attribute-value-List*} est une énumération des valeurs réelles valides pour le *mot clé attribute*correspondant. Notez que les accolades ( {} ) n’indiquent pas une liste de choix ; elles sont retournées par le pilote. Par exemple, il peut s’agir d’une liste de noms de serveurs ou d’une liste de noms de base de données.  
+-   {*Attribute-value-List*} est une énumération des valeurs réelles valides pour le *mot clé attribute* correspondant. Notez que les accolades ( {} ) n’indiquent pas une liste de choix ; elles sont retournées par le pilote. Par exemple, il peut s’agir d’une liste de noms de serveurs ou d’une liste de noms de base de données.  
   
 -   Si la *valeur d’attribut* est un point d’interrogation unique ( ?), une seule valeur correspond au *mot clé d’attribut*. Par exemple, UID = JohnS ; PWD = Sesame.  
   

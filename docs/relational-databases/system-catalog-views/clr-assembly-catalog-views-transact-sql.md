@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: b2e71480-92b2-4610-a4ff-dafb121087d9
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 48070929c9e811736b5eb04b7e942cbb8000c094
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 7b79cccbcf9c6030419bb4550f3cbd4f9137eddc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101848"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193027"
 ---
 # <a name="clr-assembly-catalog-views-transact-sql"></a>Vues de catalogue d'assemblys CLR (Transact-SQL)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

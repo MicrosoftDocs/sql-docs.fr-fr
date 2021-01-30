@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - searched statements [ODBC]
 - ODBC cursor library [ODBC], statement processing
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: e429254c-c43f-4fbf-98b2-5f1ed53501ff
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b5ae620c4ba0292ff1133d70423cb85c360b1e53
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a7928e3c730a7431d7f94a90a85073a3c818ae31
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88339355"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165399"
 ---
 # <a name="constructing-searched-statements"></a>Construction d’instructions de recherche
 > [!IMPORTANT]  

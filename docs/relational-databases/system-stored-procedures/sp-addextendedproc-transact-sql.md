@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addextendedproc_TSQL
 - sp_addextendedproc
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: c0d4b47b-a855-451e-90e5-5fb2d836ebfa
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 4e8c7ffebae9f082a6a579a6cb6643ad2fc44d1b
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 5d3ca884a585b76eb62d9af20bf09757d7d3c84e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548388"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182782"
 ---
 # <a name="sp_addextendedproc-transact-sql"></a>sp_addextendedproc (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "89548388"
 > [!NOTE]  
 >  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Utilisez l’ [intégration CLR](../../relational-databases/clr-integration/common-language-runtime-integration-overview.md) à la place.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -59,7 +59,7 @@ sp_addextendedproc [ @functname = ] 'procedure' ,
   
  Cette procédure ne peut être exécutée que dans la base de données **Master** . Pour exécuter une procédure stockée étendue à partir d’une base de données autre que **Master**, qualifiez le nom de la procédure stockée étendue avec **Master**.  
   
- **sp_addextendedproc** ajoute des entrées à l’affichage catalogue [sys. Objects](../../relational-databases/system-catalog-views/sys-objects-transact-sql.md) , en inscrivant le nom de la nouvelle procédure stockée étendue avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Elle ajoute également une entrée dans l’affichage catalogue [sys. extended_procedures](../../relational-databases/system-catalog-views/sys-extended-procedures-transact-sql.md) .  
+ **sp_addextendedproc** ajoute des entrées à l’affichage catalogue [sys. Objects](../../relational-databases/system-catalog-views/sys-objects-transact-sql.md) , en inscrivant le nom de la nouvelle procédure stockée étendue avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Elle ajoute également une entrée dans l’affichage catalogue [sys.extended_procedures](../../relational-databases/system-catalog-views/sys-extended-procedures-transact-sql.md) .  
   
 > [!IMPORTANT]  
 >  Les DLL existantes qui n'ont pas été inscrites avec leur chemin complet ne fonctionneront plus après une mise à niveau vers [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Pour corriger le problème, utilisez **sp_dropextendedproc** pour annuler l’inscription de la dll, puis réinscrivez-la avec **sp_addextendedproc**, en spécifiant le chemin d’accès complet.  

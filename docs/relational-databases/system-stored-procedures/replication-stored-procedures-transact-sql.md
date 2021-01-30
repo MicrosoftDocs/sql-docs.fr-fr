@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - system stored procedures [SQL Server], replication
 - replication stored procedures [SQL Server]
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 10996a2a-3be4-4f66-9fc4-815d43fc6e52
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: dde3996f683fc568c6031011b5d851c15eb8cf95
-ms.sourcegitcommit: df1f0f2dfb9452f16471e740273cd1478ff3100c
+ms.openlocfilehash: 8a539c180fc57a6519d69b6c4f616c3cf54f759d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87395274"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182416"
 ---
 # <a name="replication-stored-procedures-transact-sql"></a>Procédures stockées de réplication (Transact-SQL)
 [!INCLUDE[sql-asdb](../../includes/applies-to-version/sql-asdb.md)]

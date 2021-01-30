@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - availability_read_only_routing_lists_TSQL
 - availability_read_only_routing_lists
@@ -25,12 +25,12 @@ helpviewer_keywords:
 ms.assetid: 0686bc5a-c206-41ef-b40a-79a8259d51d2
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: de371ea74a42675e2f3ce4f9501d6aedba1dc421
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f38f8ea25b94097da9bcfd2fca272f9ad9030d77
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101778"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183651"
 ---
 # <a name="sysavailability_read_only_routing_lists-transact-sql"></a>sys.availability_read_only_routing_lists (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

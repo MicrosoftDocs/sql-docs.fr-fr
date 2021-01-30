@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpsubscription_TSQL
 - sp_helpsubscription
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: ff96bcbf-e2b9-4da8-8515-d80d4ce86c16
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 5ff06497437017fd6771a7402c18d16a5ee6f94b
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 73fc43bf20a9306d0224392d984b3f2bff74ec6f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543260"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192896"
 ---
 # <a name="sp_helpsubscription-transact-sql"></a>sp_helpsubscription (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Affiche des informations sur les abonnements associés à une publication, un article, un Abonné ou un ensemble d'abonnements particuliers. Cette procédure stockée est exécutée sur la base de données de publication d'un serveur de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -51,13 +51,13 @@ sp_helpsubscription [ [ @publication = ] 'publication' ]
   
 `[ @destination_db = ] 'destination_db'` Nom de la base de données de destination. *destination_db* est de **type sysname**, avec la valeur par défaut **%** .  
   
-`[ @found = ] 'found'OUTPUT` Indicateur qui signale le retour de lignes. *valeur*de **type int** et paramètre de sortie, avec la valeur par défaut 23456.  
+`[ @found = ] 'found'OUTPUT` Indicateur qui signale le retour de lignes. *valeur* de **type int** et paramètre de sortie, avec la valeur par défaut 23456.  
   
  **1** indique que la publication est trouvée.  
   
  **0** indique que la publication est introuvable.  
   
-`[ @publisher = ] 'publisher'` Nom du serveur de publication. *Publisher* est de **type sysname**et sa valeur par défaut est le nom du serveur actuel.  
+`[ @publisher = ] 'publisher'` Nom du serveur de publication. *Publisher* est de **type sysname** et sa valeur par défaut est le nom du serveur actuel.  
   
 > [!NOTE]  
 >  l' *éditeur* ne doit pas être spécifié, sauf s’il s’agit d’un serveur de publication Oracle.  

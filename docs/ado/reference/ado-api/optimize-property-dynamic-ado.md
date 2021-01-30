@@ -1,25 +1,25 @@
 ---
 description: Optimize, propriété dynamique (ADO)
-title: Optimize, propriété dynamique (ADO) | Microsoft Docs
+title: Property-Dynamic d’optimisation (ADO) | Microsoft Docs
 ms.prod: sql
 ms.prod_service: connectivity
 ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 helpviewer_keywords:
 - Optimize property [ADO]
 ms.assetid: a491c4ce-2b04-4c84-be83-3846bde8d16b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3393bbfbfbaeb50c6a608db92dae42bb29fb3b1d
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 839c2cb27fc14546523272c1c5b6d69f233557fa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990260"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166943"
 ---
 # <a name="optimize-property-dynamic-ado"></a>Optimize, propriété dynamique (ADO)
 Spécifie si un index doit être créé sur un [champ](./field-object.md).  
@@ -30,7 +30,7 @@ Spécifie si un index doit être créé sur un [champ](./field-object.md).
 ## <a name="remarks"></a>Notes  
  Un index peut améliorer les performances des opérations qui recherchent ou trient des valeurs dans un [Recordset](./recordset-object-ado.md). L’index est interne à ADO ; vous ne pouvez pas y accéder explicitement ou l’utiliser dans votre application.  
   
- Pour créer un index sur un champ, affectez la valeur **true**à la propriété **optimize** . Pour supprimer l’index, affectez la valeur **false**à cette propriété.  
+ Pour créer un index sur un champ, affectez la valeur **true** à la propriété **optimize** . Pour supprimer l’index, affectez la valeur **false** à cette propriété.  
   
  **Optimize** est une propriété dynamique ajoutée à la collection de [Propriétés](./properties-collection-ado.md) de l’objet [Field](./field-object.md) lorsque la propriété [CursorLocation](./cursorlocation-property-ado.md) a la valeur **adUseClient**.  
   

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - functions [ODBC], time functions
 - functions [ODBC], date functions
@@ -18,17 +18,17 @@ helpviewer_keywords:
 ms.assetid: bdf054a0-7aba-4e99-a34a-799917376fd5
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: dcbdf9f40a9cd1f1296920e3d2ea71fcb5ce6b39
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e73d295613f3f11b72317d20b49a6c75be802cbd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88386375"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202494"
 ---
 # <a name="time-date-and-interval-functions"></a>Fonctions d'heure, de date et d'intervalle
 Le tableau suivant répertorie les fonctions d’heure et de date incluses dans l’ensemble de fonctions scalaires ODBC. Une application peut déterminer les fonctions de date et d’heure prises en charge par un pilote en appelant **SQLGetInfo** avec un *type d’informations* SQL_TIMEDATE_FUNCTIONS.  
   
- Les arguments dénotés comme *timestamp_exp* peuvent être le nom d’une colonne, le résultat d’une autre fonction scalaire ou ODBC *-Time-Escape*, *ODBC-date-Escape*ou *ODBC-timestamp-Escape*, où le type de données sous-jacent peut être représenté sous la forme SQL_CHAR, SQL_VARCHAR, SQL_TYPE_TIME, SQL_TYPE_DATE ou SQL_TYPE_TIMESTAMP.  
+ Les arguments dénotés comme *timestamp_exp* peuvent être le nom d’une colonne, le résultat d’une autre fonction scalaire ou ODBC *-Time-Escape*, *ODBC-date-Escape* ou *ODBC-timestamp-Escape*, où le type de données sous-jacent peut être représenté sous la forme SQL_CHAR, SQL_VARCHAR, SQL_TYPE_TIME, SQL_TYPE_DATE ou SQL_TYPE_TIMESTAMP.  
   
  Les arguments dénotés comme *date_exp* peuvent être le nom d’une colonne, le résultat d’une autre fonction scalaire, ou *ODBC-date-Escape* ou *ODBC-timestamp-Escape*, où le type de données sous-jacent peut être représenté sous la forme SQL_CHAR, SQL_VARCHAR, SQL_TYPE_DATE ou SQL_TYPE_TIMESTAMP.  
   
@@ -38,10 +38,10 @@ Le tableau suivant répertorie les fonctions d’heure et de date incluses dans 
   
 |Fonction|Description|  
 |--------------|-----------------|  
-|**CURRENT_DATE ()** (ODBC 3,0)|Retourne la date actuelle.|  
+|**CURRENT_DATE ()** (ODBC 3,0)|Retourne la date du jour.|  
 |**Current_time [(** *Time-précision* **)]** (ODBC 3,0)|Retourne l'heure locale actuelle. L’argument de *précision temporelle* détermine la précision en secondes de la valeur retournée.|  
 |**CURRENT_TIMESTAMP**<br /> **[(** *horodatage-précision* **)]** (ODBC 3,0)|Retourne la date locale actuelle et l’heure locale sous la forme d’une valeur d’horodatage. L’argument *timestamp-precise* détermine la précision en secondes de l’horodatage retourné.|  
-|**Caillé ()** (ODBC 1,0)|Retourne la date actuelle.|  
+|**Caillé ()** (ODBC 1,0)|Retourne la date du jour.|  
 |**CURTIME ()** (ODBC 1,0)|Retourne l'heure locale actuelle.|  
 |**DAYNAME (** *date_exp* **)** (ODBC 2,0)|Retourne une chaîne de caractères contenant le nom spécifique à la source de données du jour (par exemple, du dimanche au samedi ou du soleil). à sam pour une source de données qui utilise l’anglais, ou Sonntag à Samstag pour une source de données qui utilise l’allemand) pour la partie jour de *date_exp*.|  
 |**DayOfMonth (** *date_exp* **)** (ODBC 1,0)|Retourne le jour du mois basé sur le champ month dans *date_exp* sous la forme d’une valeur entière comprise dans la plage 1-31.|  

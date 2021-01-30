@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - BookmarkEnum
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 55d273c4-ccee-48ef-ba90-8893d04313c8
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6dcdb4b6366c3e787abdde04f7a88a51417e2aec
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: ae708c5acfc6cdfb56acef5e2862ed0883eab285
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88975750"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164765"
 ---
 # <a name="bookmarkenum"></a>BookmarkEnum
 Spécifie un signet indiquant où l’opération doit commencer.  

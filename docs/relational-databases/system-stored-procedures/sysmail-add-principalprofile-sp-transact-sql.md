@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysmail_add_principalprofile_sp_TSQL
 - sysmail_add_principalprofile_sp
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: b2a0b313-abb9-4c23-8511-db77ca8172b3
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: e6092ba1de12d71ff50facbafd7fed04aed9d9fd
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 0252e299f072144999e3c2db1b2404de9aa9b6a8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547235"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183029"
 ---
 # <a name="sysmail_add_principalprofile_sp-transact-sql"></a>sysmail_add_principalprofile_sp (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Accorde l’autorisation à un principal de base de données msdb d’utiliser un profil de Database Mail. Le principal de la base de données doit être mappé à un utilisateur d’authentification SQL Server, un utilisateur Windows ou un groupe Windows.
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -56,11 +56,11 @@ sysmail_add_principalprofile_sp  { [ @principal_id = ] principal_id | [ @princip
  **0** (succès) ou **1** (échec)  
   
 ## <a name="remarks"></a>Notes  
- Pour rendre un profil public, spécifiez un ** \@ principal_id** de **0** ou un ** \@ principal_name** de **public**. Un profil public est disponible pour tous les utilisateurs de la base de données **msdb** , bien que les utilisateurs doivent également être membres de **DatabaseMailUserRole** pour exécuter **sp_send_dbmail**.  
+ Pour rendre un profil public, spécifiez un **\@ principal_id** de **0** ou un **\@ principal_name** de **public**. Un profil public est disponible pour tous les utilisateurs de la base de données **msdb** , bien que les utilisateurs doivent également être membres de **DatabaseMailUserRole** pour exécuter **sp_send_dbmail**.  
   
- Un utilisateur de base de données ne peut avoir plus d'un seul profil par défaut. Lorsque ** \@ is_default** a la valeur «**1**» et que l’utilisateur est déjà associé à un ou plusieurs profils, le profil spécifié devient le profil par défaut de l’utilisateur. L'ancien profil par défaut est toujours associé à l'utilisateur, mais n'est plus le profil par défaut.  
+ Un utilisateur de base de données ne peut avoir plus d'un seul profil par défaut. Lorsque **\@ is_default** a la valeur «**1**» et que l’utilisateur est déjà associé à un ou plusieurs profils, le profil spécifié devient le profil par défaut de l’utilisateur. L'ancien profil par défaut est toujours associé à l'utilisateur, mais n'est plus le profil par défaut.  
   
- Lorsque ** \@ is_default** a la**valeur « 0**» et qu’aucune autre association n’existe, la procédure stockée retourne une erreur.  
+ Lorsque **\@ is_default** a la **valeur « 0**» et qu’aucune autre association n’existe, la procédure stockée retourne une erreur.  
   
  La procédure stockée **sysmail_add_principalprofile_sp** se trouve dans la base de données **msdb** et appartient au schéma **dbo** . La procédure doit être exécutée avec un nom en trois parties si la base de données actuelle n’est pas **msdb**.  
   

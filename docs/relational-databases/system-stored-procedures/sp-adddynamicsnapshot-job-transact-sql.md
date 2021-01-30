@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_adddynamicsnapshot_job
 - sp_adddynamicsnapshot_job_TSQL
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ef50ccf6-e360-4e4b-91b9-6706b8fabefa
 author: mashamsft
 ms.author: mathoma
-ms.openlocfilehash: 25bbf50a6732806c37eafeb3efedddd712dcba57
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9798613901be96552813ebe6f419f2e2c24229fd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88447441"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182795"
 ---
 # <a name="sp_adddynamicsnapshot_job-transact-sql"></a>sp_adddynamicsnapshot_job (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -74,7 +74,7 @@ sp_adddynamicsnapshot_job [ @publication = ] 'publication'
   
 `[ @dynamic_snapshot_jobid = ] 'dynamic_snapshot_jobid'` Identificateur du travail d’instantané de données filtrées créé. *dynamic_snapshot_jobid* est de type **uniqueidentifier**, avec NULL comme valeur par défaut. il s’agit d’un paramètre de sortie facultatif.  
   
-`[ @frequency_type = ] frequency_type` Fréquence de planification du travail d’instantané de données filtrées. *frequency_type* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_type = ] frequency_type` Fréquence de planification du travail d’instantané de données filtrées. *frequency_type* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -99,7 +99,7 @@ sp_adddynamicsnapshot_job [ @publication = ] 'publication'
 |**64**|*frequency_interval* n’est pas utilisé.|  
 |**128**|*frequency_interval* n’est pas utilisé.|  
   
-`[ @frequency_subday = ] frequency_subday` Spécifie les unités pour *frequency_subday_interval*. *frequency_subday* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_subday = ] frequency_subday` Spécifie les unités pour *frequency_subday_interval*. *frequency_subday* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -110,7 +110,7 @@ sp_adddynamicsnapshot_job [ @publication = ] 'publication'
   
 `[ @frequency_subday_interval = ] frequency_subday_interval` Nombre de *frequency_subday* périodes qui se produisent entre chaque exécution du travail. *frequency_subday_interval* est de **type int**, avec 5 comme valeur par défaut.  
   
-`[ @frequency_relative_interval = ] frequency_relative_interval` Est l’occurrence du travail d’instantané de données filtrées dans chaque mois. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuelle relative). *frequency_relative_interval* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_relative_interval = ] frequency_relative_interval` Est l’occurrence du travail d’instantané de données filtrées dans chaque mois. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuelle relative). *frequency_relative_interval* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

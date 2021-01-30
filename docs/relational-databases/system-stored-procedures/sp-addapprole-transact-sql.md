@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_addapprole_TSQL
 - sp_addapprole
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 24200295-9a54-4cab-9922-fb2e88632721
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: fa68e8b0d965fae3a1c27f5ca2705bc003d7b616
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5a48cfb80bab8e9a754cbcb8186de8cb2955f096
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88481545"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182855"
 ---
 # <a name="sp_addapprole-transact-sql"></a>sp_addapprole (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

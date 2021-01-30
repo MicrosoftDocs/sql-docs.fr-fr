@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - RecordStatusEnum
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 506fdd70-4452-4e83-95d5-c94311988dfa
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e4d2ad74187ef6be146be04f63e634bbdf3de9f5
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 695c0496f81afcb3d03991360fb9480d956740f2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989670"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166686"
 ---
 # <a name="recordstatusenum"></a>RecordStatusEnum
 Spécifie l' [État](./status-property-ado-recordset.md) d’un enregistrement en ce qui concerne les mises à jour par lots et les autres opérations en bloc.  

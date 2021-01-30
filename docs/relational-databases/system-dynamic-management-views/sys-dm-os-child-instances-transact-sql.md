@@ -6,7 +6,7 @@ ms.date: 08/18/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_os_child_instances
 - sys.dm_os_child_instances_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 1bef3074-0ccc-48fa-8f3d-14f3d99df86b
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 9b46f17c349015fee41f91ddb64fc6773ca8c5ee
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 67e13b08aa1feddf49d91933942f93140c43dc44
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094052"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184934"
 ---
 # <a name="sysdm_os_child_instances-transact-sql"></a>sys.dm_os_child_instances (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

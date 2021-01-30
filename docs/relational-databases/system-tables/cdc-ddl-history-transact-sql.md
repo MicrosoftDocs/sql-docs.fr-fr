@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - cdc.ddl_history_TSQL
 - cdc.ddl_history
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: cb97ea71-da2f-441a-bbd2-db1f5f48ab49
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 7536929659cf4c1c329116a27ab456efc0d9e5e0
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 579e6752527118b579b9bb1dc0975f5a0e9b3495
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094922"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183319"
 ---
 # <a name="cdcddl_history-transact-sql"></a>cdc.ddl_history (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

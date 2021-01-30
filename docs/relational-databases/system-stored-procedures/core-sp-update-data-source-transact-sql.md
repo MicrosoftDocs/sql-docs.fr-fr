@@ -1,13 +1,13 @@
 ---
 description: core.sp_update_data_source (Transact-SQL)
-title: Core. sp_update_data_source (Transact-SQL) | Microsoft Docs
+title: core.sp_update_data_source (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/03/2017
 ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_update_data_source
 - sp_update_data_source_TSQL
@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 66b95f96-6df7-4657-9b3c-86a58c788ca5
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 2ad50aaa81cb61b6ead9388e41e025993e54c364
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 45bfb2c042ea491516aa4d3caadff72c45451202
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89550097"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180592"
 ---
 # <a name="coresp_update_data_source-transact-sql"></a>core.sp_update_data_source (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Met à jour une ligne existante ou insère une nouvelle ligne dans la table core.source_info_internal de l'entrepôt de données de gestion. Cette procédure est appelée par le composant runtime du collecteur de données chaque fois qu'un package de téléchargement commence à télécharger des données dans l'entrepôt de données de gestion.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

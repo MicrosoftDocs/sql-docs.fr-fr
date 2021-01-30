@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQLGetDescField function [ODBC], Cursor Library
 - SQLGetDescRec function [ODBC], Cursor Library
 ms.assetid: 1a801f22-6fea-48aa-a723-3187a2ad852b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f13b3ff5ed7e54a127089b74b5a45081900edf55
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ef395940419d593571dc2da6df6323437f2812eb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88494749"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202774"
 ---
 # <a name="sqlgetdescfield-and-sqlgetdescrec-cursor-library"></a>SQLGetDescField et SQLGetDescRec (bibliothèque de curseurs)
 > [!IMPORTANT]  

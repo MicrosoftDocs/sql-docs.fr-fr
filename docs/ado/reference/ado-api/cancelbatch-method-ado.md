@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Recordset15::raw_CancelBatch
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: dbdc2574-e44e-4d95-b03d-4a5d9e9adf3c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0baf8d291bbb45961163dfc80106724c48d71613
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: edbafa81c787bb4dafed6688f43907a87504c3c7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88975580"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164737"
 ---
 # <a name="cancelbatch-method-ado"></a>CancelBatch, méthode (ADO)
 Annule une mise à jour par lot en attente.  
@@ -36,7 +36,7 @@ recordset.CancelBatchAffectRecords
   
 #### <a name="parameters"></a>Paramètres  
  *AffectRecords*  
- facultatif. Valeur [AffectEnum](./affectenum.md) qui indique le nombre d’enregistrements affectés par la méthode **CancelBatch** .  
+ Facultatif. Valeur [AffectEnum](./affectenum.md) qui indique le nombre d’enregistrements affectés par la méthode **CancelBatch** .  
   
 ## <a name="remarks"></a>Notes  
  Utilisez la méthode **CancelBatch** pour annuler les mises à jour en attente dans un [Recordset](./recordset-object-ado.md) en mode de mise à jour par lot. Si le **jeu d’enregistrements** est en mode de mise à jour immédiate, l’appel de **CancelBatch** sans **adAffectCurrent** génère une erreur.  

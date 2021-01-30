@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helprotect
 - sp_helprotect_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: faaa3e40-1c95-43c2-9fdc-c61a1d3cc0c3
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: fff150e26e7342beda98b2eb362e1fbb310cdab0
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: f64ca2d34d11811bec87c1e4e378b424065299c4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538724"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211929"
 ---
 # <a name="sp_helprotect-transact-sql"></a>sp_helprotect (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "89538724"
   Retourne un rapport contenant des informations sur les autorisations utilisateur concernant un objet ou des autorisations d'instruction, dans la base de données active.  
   
 > [!IMPORTANT]  
->  **sp_helprotect** ne retourne pas d’informations sur les éléments sécurisables introduits dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] . Utilisez à la place [sys. database_permissions](../../relational-databases/system-catalog-views/sys-database-permissions-transact-sql.md) et [fn_builtin_permissions](../../relational-databases/system-functions/sys-fn-builtin-permissions-transact-sql.md) .  
+>  **sp_helprotect** ne retourne pas d’informations sur les éléments sécurisables introduits dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] . Utilisez à la place [sys.database_permissions](../../relational-databases/system-catalog-views/sys-database-permissions-transact-sql.md) et [fn_builtin_permissions](../../relational-databases/system-functions/sys-fn-builtin-permissions-transact-sql.md) .  
   
  Ne répertorie pas les autorisations qui sont toujours affectées aux rôles serveur fixes ou aux rôles de base de données fixes. N'inclut pas les identifiants de connexion ou les utilisateurs qui reçoivent des autorisations en fonction de leur appartenance à un rôle.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -56,7 +56,7 @@ sp_helprotect [ [ @name = ] 'object_statement' ]
   
 `[ @grantorname = ] 'grantor'` Nom du principal qui a accordé des autorisations. *Granter* est de **type sysname**, avec NULL comme valeur par défaut, qui retourne toutes les informations relatives aux autorisations accordées par un principal de la base de données.  
   
-`[ @permissionarea = ] 'type'` Chaîne de caractères qui indique s’il faut afficher les autorisations relatives aux objets (chaîne de caractères **o**), les autorisations d’instruction (chaîne de caractères **s**) ou les deux (**système d’exploitation**). le *type* est **varchar (10)**, avec le **système d’exploitation**comme valeur par défaut. le *type* peut être n’importe quelle combinaison de **o** et de **s**, avec ou sans virgules ou espaces entre **o** et **s**.  
+`[ @permissionarea = ] 'type'` Chaîne de caractères qui indique s’il faut afficher les autorisations relatives aux objets (chaîne de caractères **o**), les autorisations d’instruction (chaîne de caractères **s**) ou les deux (**système d’exploitation**). le *type* est **varchar (10)**, avec le **système d’exploitation** comme valeur par défaut. le *type* peut être n’importe quelle combinaison de **o** et de **s**, avec ou sans virgules ou espaces entre **o** et **s**.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  0 (réussite) ou 1 (échec)  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_update_notification_TSQL
 - sp_update_notification
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 3e1c3d40-8c24-46ce-a68e-ce6c6a237fda
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 103e697c8aad38fa19769358372b31d89d3b5978
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 7e1f54c6933945c6031e48d4f97ab89f0f966779
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549522"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184317"
 ---
 # <a name="sp_update_notification-transact-sql"></a>sp_update_notification (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "89549522"
   Met à jour la méthode de notification d'une notification d'alerte.  
 
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,9 +46,9 @@ sp_update_notification
 ## <a name="arguments"></a>Arguments  
 `[ @alert_name = ] 'alert'` Nom de l’alerte associée à cette notification. *alerte* est de **type sysname**, sans valeur par défaut.  
   
-`[ @operator_name = ] 'operator'` Opérateur qui sera averti lorsque l’alerte se produit. l' *opérateur* est de **type sysname**et n’a pas de valeur par défaut.  
+`[ @operator_name = ] 'operator'` Opérateur qui sera averti lorsque l’alerte se produit. l' *opérateur* est de **type sysname** et n’a pas de valeur par défaut.  
   
-`[ @notification_method = ] notification` Méthode par laquelle l’opérateur est notifié. la *notification*est de **type tinyint**, sans valeur par défaut et peut être une ou plusieurs de ces valeurs.  
+`[ @notification_method = ] notification` Méthode par laquelle l’opérateur est notifié. la *notification* est de **type tinyint**, sans valeur par défaut et peut être une ou plusieurs de ces valeurs.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -63,7 +63,7 @@ sp_update_notification
 ## <a name="remarks"></a>Notes  
  **sp_update_notification** doit être exécuté à partir de la base de données **msdb** .  
   
- Vous pouvez mettre à jour une notification pour un opérateur qui ne dispose pas des informations d’adresse nécessaires à l’aide de la *notification_method*spécifiée. En cas d'échec de l'envoi d'une notification par courrier électronique ou par radiomessagerie, l'échec est consigné dans le journal des erreurs de l'Agent Microsoft SQL Server.  
+ Vous pouvez mettre à jour une notification pour un opérateur qui ne dispose pas des informations d’adresse nécessaires à l’aide de la *notification_method* spécifiée. En cas d'échec de l'envoi d'une notification par courrier électronique ou par radiomessagerie, l'échec est consigné dans le journal des erreurs de l'Agent Microsoft SQL Server.  
   
 ## <a name="permissions"></a>Autorisations  
  Pour exécuter cette procédure stockée, les utilisateurs doivent disposer du rôle serveur fixe **sysadmin** .  

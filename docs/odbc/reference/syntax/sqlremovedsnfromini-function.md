@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLRemoveDSNFromIni
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: bb2e8273-7b61-4113-bfc8-f7ccc607c811
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f49646881539d7c90c057633e7151b31cfe52b52
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 26bbcf3bf68dda172220323cb7d9b0dc39e3178d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88499612"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192491"
 ---
 # <a name="sqlremovedsnfromini-function"></a>SQLRemoveDSNFromIni, fonction
 **Conformité**  
@@ -39,7 +39,7 @@ ms.locfileid: "88499612"
 ```cpp  
   
 BOOL SQLRemoveDSNFromIni(  
-     LPCSTR   lpszDSN);  
+     LPCSTR   lpszDSN);  
 ```  
   
 ## <a name="arguments"></a>Arguments  
@@ -50,9 +50,9 @@ BOOL SQLRemoveDSNFromIni(
  La fonction retourne la valeur TRUE si elle supprime la source de données ou si la source de données n’était pas dans le fichier Odbc.ini. Elle retourne FALSe s’il ne parvient pas à supprimer la source de données.  
   
 ## <a name="diagnostics"></a>Diagnostics  
- Quand **SQLRemoveDSNFromIni** retourne false, une valeur * \* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs * \* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
+ Quand **SQLRemoveDSNFromIni** retourne false, une valeur *\* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs *\* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur|Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur générale du programme d’installation|Une erreur s’est produite pour laquelle aucune erreur d’installation spécifique n’a été rencontrée.|  
 |ODBC_ERROR_INVALID_DSN|DSN non valide|L’argument *lpszDSN* n’était pas valide.|  

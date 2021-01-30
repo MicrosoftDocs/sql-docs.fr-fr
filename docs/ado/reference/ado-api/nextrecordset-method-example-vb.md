@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b14806da-80d9-4da4-bb87-f558b36a6ac0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b4f173084f5a5a154e0aed25c4d1ad8f1f572734
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: af703b24bc3c1f2e94ccc5979ac9b7977cb087e2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990450"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167050"
 ---
 # <a name="nextrecordset-method-example-vb"></a>NextRecordset, exemple de méthode (VB)
 Cet exemple utilise la méthode [NextRecordset](./nextrecordset-method-ado.md) pour afficher les données d’un Recordset qui utilise une instruction de commande composée composée de trois instructions **Select** distinctes.  

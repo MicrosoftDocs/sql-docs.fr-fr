@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Level::UniqueName
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 5b977956-e252-4861-8425-f1aaf6b80130
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0b8b598c62d87fe515adc0557bf9a2888625eaa7
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: fcd72405c4f5fa25aca74261075ce0fdc67ce93f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88985960"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164399"
 ---
 # <a name="uniquename-property-ado-md"></a>UniqueName, propriété (ADO MD)
 Indique un nom non ambigu pour l’objet actuel.  

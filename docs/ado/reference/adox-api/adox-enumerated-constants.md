@@ -7,18 +7,18 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - enumerated constants [ADOX]
 ms.assetid: 9d91f511-d46f-44ef-97ef-77bf93836186
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d4a6ab82630c058db9bbb0b05ca9ee5713a4c8ab
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 6f9734a802ca1b653a912a0fe829b24e14e6953f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641179"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164351"
 ---
 # <a name="adox-enumerated-constants"></a>Constantes énumérées ADOX
 Pour faciliter le débogage, les constantes énumérées ADOX répertorient une valeur pour chaque constante. Toutefois, cette valeur est purement consultative et peut passer d’une version d’ADOX à une autre. Votre code ne doit dépendre que du nom, et non de la valeur réelle, des constantes énumérées.  

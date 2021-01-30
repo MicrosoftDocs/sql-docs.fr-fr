@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysmail_update_profileaccount_sp_TSQL
 - sysmail_update_profileaccount_sp
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 92ca7488-29db-414e-8e36-08b0a8f542bb
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: ccfcd3627627dd2fca78ba02b74f89f2bea07116
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 140256e73adee3593c620b17f81ac10c163030f3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88473345"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181851"
 ---
 # <a name="sysmail_update_profileaccount_sp-transact-sql"></a>sysmail_update_profileaccount_sp (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -82,7 +82,7 @@ EXECUTE msdb.dbo.sysmail_update_profileaccount_sp
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Database Mail](../../relational-databases/database-mail/database-mail.md)   
+ [Messagerie de base de données](../../relational-databases/database-mail/database-mail.md)   
  [Créer un compte Database Mail](../../relational-databases/database-mail/create-a-database-mail-account.md)   
  [Objets de configuration Database Mail](../../relational-databases/database-mail/database-mail-configuration-objects.md)   
  [Database Mail des procédures stockées &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  

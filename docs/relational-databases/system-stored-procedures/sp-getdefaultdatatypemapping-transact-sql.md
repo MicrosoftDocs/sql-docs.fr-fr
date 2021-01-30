@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_getdefaultdatatypemapping_TSQL
 - sp_getdefaultdatatypemapping
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: b8401de1-f135-41d0-ba79-ce8fe1f48c00
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 6d7737d0c4d8d44901da52bad6ad6867d7080554
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 64345f8471caf5d757e0c8fbdbc843b2a18680ee
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543334"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183165"
 ---
 # <a name="sp_getdefaultdatatypemapping-transact-sql"></a>sp_getdefaultdatatypemapping (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne des informations sur le mappage par défaut pour le type de données spécifié entre [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et un [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] système de gestion de base de données (SGBD) non-. Cette procédure stockée est exécutée sur n’importe quelle base de données du serveur de distribution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,12 +52,12 @@ sp_getdefaultdatatypemapping [ @source_dbms = ] 'source_dbms'
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @source_dbms = ] 'source_dbms'` Nom du SGBD à partir duquel les types de données sont mappés. *source_dbms* est de **type sysname**et peut prendre l’une des valeurs suivantes :  
+`[ @source_dbms = ] 'source_dbms'` Nom du SGBD à partir duquel les types de données sont mappés. *source_dbms* est de **type sysname** et peut prendre l’une des valeurs suivantes :  
   
 |Valeur|Description|  
 |-----------|-----------------|  
 |**MSSQLSERVER**|Base de données source au format [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
-|**ORACLE**|Base de données Oracle source.|  
+|**SOLUTION**|Base de données Oracle source.|  
   
  Ce paramètre est obligatoire.  
   
@@ -71,14 +71,14 @@ sp_getdefaultdatatypemapping [ @source_dbms = ] 'source_dbms'
   
 `[ @source_scale = ] source_scale` Est l’échelle du type de données dans le SGBD source. *source_scale* est de **type int**, avec NULL comme valeur par défaut.  
   
-`[ @source_nullable = ] source_nullable` Indique si le type de données du SGBD source prend en charge la valeur NULL. *source_nullable* est de type **bit**, avec **1**comme valeur par défaut, ce qui signifie que les valeurs NULL sont prises en charge.  
+`[ @source_nullable = ] source_nullable` Indique si le type de données du SGBD source prend en charge la valeur NULL. *source_nullable* est de type **bit**, avec **1** comme valeur par défaut, ce qui signifie que les valeurs NULL sont prises en charge.  
   
-`[ @destination_dbms = ] 'destination_dbms'` Nom du SGBD de destination. *destination_dbms* est de **type sysname**et peut prendre l’une des valeurs suivantes :  
+`[ @destination_dbms = ] 'destination_dbms'` Nom du SGBD de destination. *destination_dbms* est de **type sysname** et peut prendre l’une des valeurs suivantes :  
   
 |Valeur|Description|  
 |-----------|-----------------|  
 |**MSSQLSERVER**|Base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] de destination.|  
-|**ORACLE**|Base de données Oracle de destination.|  
+|**SOLUTION**|Base de données Oracle de destination.|  
 |**DB2**|Base de données IBM DB2 de destination.|  
 |**INTERFACES**|Base de données Sybase de destination.|  
   

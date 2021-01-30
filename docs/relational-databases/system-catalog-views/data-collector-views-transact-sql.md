@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a005e885-7813-4c7e-b332-b01d9e9d4054
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: b75aaa55f4734145f8733abc7d43512ed26c332e
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: bf304e44eb5f4374d4fdc1de21d7dc73fee2d72e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093181"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184304"
 ---
 # <a name="data-collector-views-transact-sql"></a>Vues de collecteur de données (Transact-SQL)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

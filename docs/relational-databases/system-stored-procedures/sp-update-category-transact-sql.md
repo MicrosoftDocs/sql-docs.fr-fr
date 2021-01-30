@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_update_category
 - sp_update_category_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 098b926a-b078-4122-a5e1-3ef54b979dd4
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 117f146c4ceea988d5817785494bf2af4dc11814
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: c771e031254821562933cd2e7f4d9f51903edba6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89542982"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184719"
 ---
 # <a name="sp_update_category-transact-sql"></a>sp_update_category (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Modifie le nom d'une catégorie.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,13 +47,13 @@ sp_update_category
   
 |Valeur|Description|  
 |-----------|-----------------|  
-|**NOTIFICATION**|Met à jour une catégorie d'alerte.|  
+|**ALERT**|Met à jour une catégorie d'alerte.|  
 |**ATTENTE**|Met à jour une catégorie de travail.|  
 |**AND**|Met à jour une catégorie d'opérateur.|  
   
-`[ @name = ] 'old_name'` Nom actuel de la catégorie. *old_name*est de **type sysname**, sans valeur par défaut.  
+`[ @name = ] 'old_name'` Nom actuel de la catégorie. *old_name* est de **type sysname**, sans valeur par défaut.  
   
-`[ @new_name = ] 'new_name'` Nouveau nom de la catégorie. *new_name*est de **type sysname**, sans valeur par défaut.  
+`[ @new_name = ] 'new_name'` Nouveau nom de la catégorie. *new_name* est de **type sysname**, sans valeur par défaut.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

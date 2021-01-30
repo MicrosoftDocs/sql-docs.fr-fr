@@ -6,7 +6,7 @@ ms.date: 09/18/2019
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_os_enumerate_fixed_drives
 - sys.dm_os_enumerate_fixed_drives_TSQL
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 2e27489e-cf69-4a89-9036-77723ac3de66
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: e909c2b38df99f0e2cd5aa4addc2e657f60b5cfa
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 07855299c41457c066f878125ca289f66a87e2a9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097572"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184899"
 ---
 # <a name="sysdm_os_enumerate_fixed_drives-transact-sql"></a>sys.dm_os_enumerate_fixed_drives (Transact-SQL)
 

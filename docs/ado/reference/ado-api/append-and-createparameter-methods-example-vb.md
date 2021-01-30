@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 46908cbd-434f-43e7-a794-ed0be0e0c0a7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0d301542b3f5d9bb31478f3636320857a1f514c3
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 80a1e86b9cd6beb54133ef796a560e5cdccbb177
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88976150"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164840"
 ---
 # <a name="append-and-createparameter-methods-example-vb"></a>Append et CreateParameter, exemple de méthodes (VB)
 Cet exemple utilise les méthodes [Append](./append-method-ado.md) et [CreateParameter](./createparameter-method-ado.md) pour exécuter une procédure stockée avec un paramètre d’entrée.  

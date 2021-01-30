@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQLSetStmtAttr function [ODBC], Cursor Library
 ms.assetid: 6018a733-c2c8-4047-92ec-92cf85031767
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 96466e354875224c05bef4c94d72249bad9a4cff
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8a395052df9eb5623e63463e3e79722769583721
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88429491"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202588"
 ---
 # <a name="sqlsetstmtattr-cursor-library"></a>SQLSetStmtAttr (bibliothèque de curseurs)
 > [!IMPORTANT]  

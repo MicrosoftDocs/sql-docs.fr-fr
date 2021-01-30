@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.xml_indexes_TSQL
 - xml_indexes_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 3408de72-b067-4fda-b5d5-8e856dfd9db3
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 4e83cc5aa28c8d657237893a036da84ec1f4c944
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 63ce32a74a3173cfd0710e9ed12cb925ababeb74
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097917"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183620"
 ---
 # <a name="sysxml_indexes-transact-sql"></a>sys.xml_indexes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

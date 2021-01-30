@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - _Stream::Position
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: daa8319a-49aa-4c1c-9af6-0b01e9ab2f9d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 55ae275db06b8b0c73598977e78954bac0fd22be
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 9b2da711df951fc79db5034eeb447a71ade21fee
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990060"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166853"
 ---
 # <a name="position-property-ado"></a>Position, propriété (ADO)
 Indique la position actuelle dans un objet de [flux](./stream-object-ado.md) .  
@@ -39,7 +39,7 @@ Indique la position actuelle dans un objet de [flux](./stream-object-ado.md) .
 >  Les valeurs négatives ne peuvent pas être utilisées pour modifier la position actuelle dans un **flux**. Seuls les nombres positifs peuvent être utilisés pour la **position**.  
   
 > [!NOTE]
->  Pour les objets de **flux** en lecture seule, ADO ne retourne pas d’erreur si **position** est définie sur une valeur supérieure à la **taille** du **flux**. Cela ne modifie pas la taille du **flux**, ni ne modifie le contenu du **flux** de quelque manière que ce soit. Toutefois, cette opération doit être évitée, car elle entraîne une valeur de **position**insignifiante.  
+>  Pour les objets de **flux** en lecture seule, ADO ne retourne pas d’erreur si **position** est définie sur une valeur supérieure à la **taille** du **flux**. Cela ne modifie pas la taille du **flux**, ni ne modifie le contenu du **flux** de quelque manière que ce soit. Toutefois, cette opération doit être évitée, car elle entraîne une valeur de **position** insignifiante.  
   
 ## <a name="applies-to"></a>S'applique à  
  [Stream, objet (ADO)](./stream-object-ado.md)  
