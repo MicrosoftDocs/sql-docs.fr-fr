@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 685f7652-2271-4ede-b552-2eeb8c756b4c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ac6f8388e3f07bf93e00f1d24aa3a782237ca0e5
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 5c66c4bdd347aaa8d01ab80d3a11ae67ce683b47
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991580"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99075861"
 ---
 # <a name="calling-a-stored-procedure-with-a-command"></a>Appel d’une procédure stockée avec une commande
 Vous pouvez utiliser une commande pour appeler une procédure stockée. L’exemple de code à la fin de cette rubrique fait référence à une procédure stockée dans l’exemple de base de données Northwind, appelée CustOrdersOrders, qui est définie comme suit.  
@@ -35,7 +35,7 @@ ORDER BY OrderID
   
  Pour plus d’informations sur la définition et l’appel des procédures stockées, consultez la documentation de votre SQL Server.  
   
- Cette procédure stockée est similaire à la commande utilisée dans les paramètres de l' [objet Command](./command-object-parameters.md). Il prend un paramètre d’ID de client et retourne des informations sur les commandes de ce client. L’exemple de code suivant utilise cette procédure stockée comme source pour un **jeu d’enregistrements**ADO.  
+ Cette procédure stockée est similaire à la commande utilisée dans les paramètres de l' [objet Command](./command-object-parameters.md). Il prend un paramètre d’ID de client et retourne des informations sur les commandes de ce client. L’exemple de code suivant utilise cette procédure stockée comme source pour un **jeu d’enregistrements** ADO.  
   
  L’utilisation de la procédure stockée vous permet d’accéder à une autre fonctionnalité ADO : la méthode **Refresh** de la collection **Parameters** . À l’aide de cette méthode, ADO peut automatiquement renseigner toutes les informations sur les paramètres requis par la commande au moment de l’exécution. Cette technique présente une baisse des performances, car ADO doit interroger la source de données pour obtenir des informations sur les paramètres.  
   
@@ -134,4 +134,4 @@ End Function
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Article 117500 de la base de connaissances](https://go.microsoft.com/fwlink/?LinkId=117500)
+ [Article 117500 de la base de connaissances](https://www.betaarchive.com/wiki/index.php?title=Microsoft_KB_Archive/185125)
