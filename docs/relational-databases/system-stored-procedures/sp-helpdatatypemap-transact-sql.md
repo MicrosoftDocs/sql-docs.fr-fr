@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpdatatypemap
 - sp_helpdatatypemap_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 800c9c65-723e-4961-a63d-327987f129f0
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 7fb7ee524e2b9849c9c8a348cd6c8a9de7fb74e2
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 46750f82e08a9a3dcb936320614390bc6f359c4e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538766"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176444"
 ---
 # <a name="sp_helpdatatypemap-transact-sql"></a>sp_helpdatatypemap (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Retourne des informations sur les mappages de types de données définis entre [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et les [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] systèmes de gestion de base de données (SGBD). Cette procédure stockée est exécutée sur n’importe quelle base de données du serveur de distribution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,18 +44,18 @@ sp_helpdatatypemap [ @source_dbms = ] 'source_dbms'
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @source_dbms = ] 'source_dbms'` Nom du SGBD à partir duquel les types de données sont mappés. *source_dbms* est de **type sysname**et peut prendre l’une des valeurs suivantes.  
+`[ @source_dbms = ] 'source_dbms'` Nom du SGBD à partir duquel les types de données sont mappés. *source_dbms* est de **type sysname** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
 |**MSSQLSERVER**|Base de données source au format [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
 |**SOLUTION**|Base de données Oracle source.|  
   
-`[ @source_version = ] 'source_version'` Version du produit du SGBD source. *source_version*est de type **varchar (10)** et, s’il n’est pas spécifié, les mappages de types de données pour toutes les versions du SGBD source sont retournés. Permet de filtrer le jeu de résultats en fonction de la version source du SGBD.  
+`[ @source_version = ] 'source_version'` Version du produit du SGBD source. *source_version* est de type **varchar (10)** et, s’il n’est pas spécifié, les mappages de types de données pour toutes les versions du SGBD source sont retournés. Permet de filtrer le jeu de résultats en fonction de la version source du SGBD.  
   
-`[ @source_type = ] 'source_type'` Type de données indiqué dans le SGBD source. *source_type* est de **type sysname**et, s’il n’est pas spécifié, les mappages de tous les types de données dans le SGBD source sont retournés. Permet de filtrer le jeu de résultats en fonction du type de données indiqué dans le SGBD source.  
+`[ @source_type = ] 'source_type'` Type de données indiqué dans le SGBD source. *source_type* est de **type sysname** et, s’il n’est pas spécifié, les mappages de tous les types de données dans le SGBD source sont retournés. Permet de filtrer le jeu de résultats en fonction du type de données indiqué dans le SGBD source.  
   
-`[ @destination_dbms = ] 'destination_dbms'` Nom du SGBD de destination. *destination_dbms* est de **type sysname**et peut prendre l’une des valeurs suivantes.  
+`[ @destination_dbms = ] 'destination_dbms'` Nom du SGBD de destination. *destination_dbms* est de **type sysname** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -64,11 +64,11 @@ sp_helpdatatypemap [ @source_dbms = ] 'source_dbms'
 |**DB2**|Base de données IBM DB2 de destination.|  
 |**INTERFACES**|Base de données Sybase de destination.|  
   
-`[ @destination_version = ] 'destination_version'` Version du produit du SGBD de destination. *destination_version*est de type **varchar (10)** et, s’il n’est pas spécifié, les mappages de toutes les versions du SGBD de destination sont retournés. Permet de filtrer le jeu de résultats en fonction de la version de destination du SGBD.  
+`[ @destination_version = ] 'destination_version'` Version du produit du SGBD de destination. *destination_version* est de type **varchar (10)** et, s’il n’est pas spécifié, les mappages de toutes les versions du SGBD de destination sont retournés. Permet de filtrer le jeu de résultats en fonction de la version de destination du SGBD.  
   
-`[ @destination_type = ] 'destination_type'` Type de données indiqué dans le SGBD de destination. *destination_type*est de **type sysname**et, s’il n’est pas spécifié, les mappages de tous les types de données du SGBD de destination sont retournés. Permet de filtrer le jeu de résultats en fonction du type de données indiqué dans le SGBD de destination.  
+`[ @destination_type = ] 'destination_type'` Type de données indiqué dans le SGBD de destination. *destination_type* est de **type sysname** et, s’il n’est pas spécifié, les mappages de tous les types de données du SGBD de destination sont retournés. Permet de filtrer le jeu de résultats en fonction du type de données indiqué dans le SGBD de destination.  
   
-`[ @defaults_only = ] defaults_only` Est si seuls les mappages de type de données par défaut sont retournés. *defaults_only* est de **bit**, avec **0**comme valeur par défaut. **1** signifie que seuls les mappages de type de données par défaut sont retournés. **0** signifie que les mappages par défaut et les mappages de types de données définis par l’utilisateur sont retournés.  
+`[ @defaults_only = ] defaults_only` Est si seuls les mappages de type de données par défaut sont retournés. *defaults_only* est de **bit**, avec **0** comme valeur par défaut. **1** signifie que seuls les mappages de type de données par défaut sont retournés. **0** signifie que les mappages par défaut et les mappages de types de données définis par l’utilisateur sont retournés.  
   
 ## <a name="result-sets"></a>Jeux de résultats  
   

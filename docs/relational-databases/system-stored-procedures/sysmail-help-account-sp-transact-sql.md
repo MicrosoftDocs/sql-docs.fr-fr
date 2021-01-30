@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysmail_help_account_sp_TSQL
 - sysmail_help_account_sp
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 87c7c39c-8e05-4e68-9272-45f908809c3b
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 711b0d317b600b455fc4d3d0d80e17e1a9ddf7c3
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 1931cbc58177686c1b7f09b069bc9ba061447e76
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89541043"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181980"
 ---
 # <a name="sysmail_help_account_sp-transact-sql"></a>sysmail_help_account_sp (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Répertorie les informations (à l'exception des mots de passe) relatifs aux comptes de messagerie de base de données.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -53,7 +53,7 @@ sysmail_help_account_sp [ [ @account_id = ] account_id | [ @account_name = ] 'ac
 | Nom de la colonne | Type de données | Description |
 | ----------- | --------- | ----------- |
 |**account_id**|**int**|Identificateur du compte.|  
-|**name**|**sysname**|Nom du compte|  
+|**name**|**sysname**|Nom du compte.|  
 |**description**|**nvarchar (256)**|Description du compte.|  
 |**email_address**|**nvarchar(128)**|Adresse électronique à partir de laquelle les messages sont envoyés.|  
 |**display_name**|**nvarchar(128)**|Nom d'affichage du compte|  
@@ -62,8 +62,8 @@ sysmail_help_account_sp [ [ @account_id = ] account_id | [ @account_name = ] 'ac
 |**nom du serveur**|**sysname**|Nom du serveur de messagerie pour le compte.|  
 |**port**|**int**|Numéro de port utilisé par le serveur de messagerie.|  
 |**username**|**nvarchar(128)**|Nom d'utilisateur à utiliser pour se connecter au serveur de messagerie, si ce serveur utilise l'authentification. Lorsque **username** a la valeur NULL, Database mail n’utilise pas l’authentification pour ce compte.|  
-|**use_default_credentials**|**bit**|Spécifie si le courrier électronique doit être envoyé au serveur SMTP en utilisant les informations d'identification du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)]. **use_default_credentials** est de bits, sans valeur par défaut. Lorsque ce paramètre est 1, Database Mail utilise les informations d’identification du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] service. Lorsque ce paramètre a la valeur 0, Database Mail utilise le ** \@ nom d’utilisateur** et le ** \@ mot de passe** pour l’authentification sur le serveur SMTP. Si le ** \@ nom d’utilisateur** et le ** \@ mot de passe** sont NULL, Database mail utilise l’authentification anonyme. Consultez l’administrateur SMTP avant de spécifier ce paramètre.|  
-|**enable_ssl**|**bit**|Spécifie si Database Mail chiffre les communications à l’aide du protocole TLS (Transport Layer Security), précédemment connu sous le nom de protocole SSL (SSL). Utilisez cette option si TLS est requis sur votre serveur SMTP. **enable_ssl** est de bits, sans valeur par défaut. 1 indique Database Mail chiffre les communications à l’aide de TLS. 0 indique Database Mail envoie le courrier sans chiffrement TLS.|  
+|**use_default_credentials**|**bit**|Spécifie si le courrier électronique doit être envoyé au serveur SMTP en utilisant les informations d'identification du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)]. **use_default_credentials** est de bits, sans valeur par défaut. Lorsque ce paramètre est 1, Database Mail utilise les informations d’identification du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] service. Lorsque ce paramètre a la valeur 0, Database Mail utilise le **\@ nom d’utilisateur** et le **\@ mot de passe** pour l’authentification sur le serveur SMTP. Si le **\@ nom d’utilisateur** et le **\@ mot de passe** sont NULL, Database mail utilise l’authentification anonyme. Consultez l’administrateur SMTP avant de spécifier ce paramètre.|  
+|**enable_ssl**|**bit**|Spécifie si Database Mail chiffre les communications à l’aide du protocole TLS (Transport Layer Security), précédemment connu sous le nom de SSL (Secure Sockets Layer) (SSL). Utilisez cette option si TLS est requis sur votre serveur SMTP. **enable_ssl** est de bits, sans valeur par défaut. 1 indique Database Mail chiffre les communications à l’aide de TLS. 0 indique Database Mail envoie le courrier sans chiffrement TLS.|  
   
 ## <a name="remarks"></a>Notes  
  Quand aucun *account_id* ou *account_name* n’est fourni, **sysmail_help_account** répertorie des informations sur tous les comptes de Database mail de l’instance Microsoft SQL Server.  

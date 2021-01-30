@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_update_jobstep
 - sp_update_jobstep_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: e158802c-c347-4a5d-bf75-c03e5ae56e6b
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 52b17f706b53c05074fdcb21bf5e566df3d1d165
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: c102cee625bc81611bd67209306d6bc5f9398660
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549492"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183571"
 ---
 # <a name="sp_update_jobstep-transact-sql"></a>sp_update_jobstep (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Modifie la valeur d'une étape d'un travail qui est utilisé pour effectuer des activités automatisées.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -62,13 +62,13 @@ sp_update_jobstep
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @job_id = ] job_id` Numéro d’identification du travail auquel l’étape appartient. *job_id*est de type **uniqueidentifier**, avec NULL comme valeur par défaut. *Job_id* ou *job_name* doivent être spécifiés, mais ils ne peuvent pas être spécifiés.  
+`[ @job_id = ] job_id` Numéro d’identification du travail auquel l’étape appartient. *job_id* est de type **uniqueidentifier**, avec NULL comme valeur par défaut. *Job_id* ou *job_name* doivent être spécifiés, mais ils ne peuvent pas être spécifiés.  
   
-`[ @job_name = ] 'job_name'` Nom du travail auquel l’étape appartient. *job_name*est de **type sysname**, avec NULL comme valeur par défaut. *Job_id* ou *job_name* doivent être spécifiés, mais ils ne peuvent pas être spécifiés.  
+`[ @job_name = ] 'job_name'` Nom du travail auquel l’étape appartient. *job_name* est de **type sysname**, avec NULL comme valeur par défaut. *Job_id* ou *job_name* doivent être spécifiés, mais ils ne peuvent pas être spécifiés.  
   
-`[ @step_id = ] step_id` Numéro d’identification de l’étape de travail à modifier. Il est impossible de modifier ce numéro. *step_id*est de **type int**, sans valeur par défaut.  
+`[ @step_id = ] step_id` Numéro d’identification de l’étape de travail à modifier. Il est impossible de modifier ce numéro. *step_id* est de **type int**, sans valeur par défaut.  
   
-`[ @step_name = ] 'step_name'` Nouveau nom de l’étape. *step_name*est de **type sysname**, avec NULL comme valeur par défaut.  
+`[ @step_name = ] 'step_name'` Nouveau nom de l’étape. *step_name* est de **type sysname**, avec NULL comme valeur par défaut.  
   
 `[ @subsystem = ] 'subsystem'` Sous-système utilisé par Microsoft SQL Server Agent pour exécuter la *commande*. *Subsystem* est de type **nvarchar (40)**, avec NULL comme valeur par défaut.  
   
@@ -104,9 +104,9 @@ sp_update_jobstep
   
 `[ @database_name = ] 'database'` Nom de la base de données dans laquelle exécuter une [!INCLUDE[tsql](../../includes/tsql-md.md)] étape. *Database est de* **type sysname**. Les noms placés entre crochets ([ ]) ne sont pas autorisés. La valeur par défaut est NULL.  
   
-`[ @database_user_name = ] 'user'` Nom du compte d’utilisateur à utiliser lors de l’exécution d’une [!INCLUDE[tsql](../../includes/tsql-md.md)] étape. *User*est de **type sysname**, avec NULL comme valeur par défaut.  
+`[ @database_user_name = ] 'user'` Nom du compte d’utilisateur à utiliser lors de l’exécution d’une [!INCLUDE[tsql](../../includes/tsql-md.md)] étape. *User* est de **type sysname**, avec NULL comme valeur par défaut.  
   
-`[ @retry_attempts = ] retry_attempts` Nombre de nouvelles tentatives à utiliser en cas d’échec de cette étape. *retry_attempts*est de **type int**, avec NULL comme valeur par défaut.  
+`[ @retry_attempts = ] retry_attempts` Nombre de nouvelles tentatives à utiliser en cas d’échec de cette étape. *retry_attempts* est de **type int**, avec NULL comme valeur par défaut.  
   
 `[ @retry_interval = ] retry_interval` Durée, en minutes, entre chaque tentative. *retry_interval* est de **type int**, avec NULL comme valeur par défaut.  
   
@@ -118,7 +118,7 @@ sp_update_jobstep
   
  **@output_file_name = ' '**  
   
-`[ @flags = ] flags` Option qui contrôle le comportement. *Flags* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @flags = ] flags` Option qui contrôle le comportement. *Flags* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

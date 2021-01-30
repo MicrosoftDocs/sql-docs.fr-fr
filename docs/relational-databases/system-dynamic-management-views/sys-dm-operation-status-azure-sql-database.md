@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 06/05/2017
 ms.service: sql-database
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_operation_status_TSQL
 - dm_operation_status
@@ -20,12 +20,12 @@ ms.assetid: cc847784-7f61-4c69-8b78-5f971bb24d61
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: = azuresqldb-current || = azure-sqldw-latest
-ms.openlocfilehash: 21028fd5cdabf435d7672074907b20ebeaaad3c4
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 10f8d0523f81c68317a87f960d7ae3e72bf00c3e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101540"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184986"
 ---
 # <a name="sysdm_operation_status"></a>sys.dm_operation_status
 
@@ -40,14 +40,14 @@ ms.locfileid: "98101540"
 |resource_type_desc|**nvarchar(2048)**|Description du type de ressource sur lequel l'opération est effectuée. Dans la version actuelle, cette vue trace les opérations effectuées sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] uniquement.|  
 |major_resource_id|**sql_variant**|Nom de [!INCLUDE[ssSDS](../../includes/sssds-md.md)] sur laquelle l'opération est effectuée. Non Null.|  
 |minor_resource_id|**sql_variant**|À usage interne uniquement. Différent de Null.|  
-|opération|**nvarchar(60)**|Opération effectuée sur une [!INCLUDE[ssSDS](../../includes/sssds-md.md)], telle que CREATE ou ALTER.|  
+|operation|**nvarchar(60)**|Opération effectuée sur une [!INCLUDE[ssSDS](../../includes/sssds-md.md)], telle que CREATE ou ALTER.|  
 |state|**tinyint**|État de l'opération.<br /><br /> 0 = En attente<br />1 = Opération en cours<br />2 = Opération terminée<br />3 = Échec<br />4 = Opération annulée|  
 |state_desc|**nvarchar(120)**|PENDING = Opération en attente de la disponibilité d'une ressource ou d'un quota.<br /><br /> IN_PROGRESS = L'opération a démarré et est en cours.<br /><br /> COMPLETED = L'opération s'est terminée avec succès.<br /><br /> FAILED = L'opération a échoué. Pour plus d’informations, consultez la colonne **error_desc** .<br /><br /> CANCELLED = Opération arrêtée à la demande de l'utilisateur.|  
 |percent_complete|**int**|Pourcentage de l'opération terminée. Les valeurs ne sont pas continues et les valeurs valides sont répertoriées ci-dessous. Non NULL.<br/><br/>0 = opération non démarrée<br/>50 = opération en cours<br/>100 = opération terminée|  
 |error_code|**int**|Code indiquant l'erreur qui s'est produite pendant une opération ayant échoué. 0 indique que l'opération pour cette étape s'est terminée avec succès.|  
 |error_desc|**nvarchar(2048)**|Description de l'erreur qui s'est produite pendant une opération ayant échoué.|  
 |error_severity|**int**|Niveau de gravité de l'erreur qui s'est produite pendant une opération ayant échoué. Pour plus d’informations sur les gravités des erreurs, consultez [moteur de base de données gravité des erreurs](../errors-events/database-engine-error-severities.md).|  
-|error_state|**int**|Réservé à un usage ultérieur. La compatibilité future n'est pas garantie.|  
+|error_state|**int**|Réservé pour un usage futur. La compatibilité future n'est pas garantie.|  
 |start_time|**datetime**|Horodateur du début de l'opération.|  
 |last_modify_time|**datetime**|Horodateur de la dernière modification de l'enregistrement d'une opération longue. Si les opérations se terminent avec succès, ce champ contient l'horodateur du moment où l'opération s'est terminée.|  
   

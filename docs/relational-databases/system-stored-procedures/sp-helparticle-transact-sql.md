@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helparticle_TSQL
 - sp_helparticle
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 9c4a1a88-56f1-45a0-890c-941b8e0f0799
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 7bc639fef551b78dd73da39cd404999e39219b2d
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 14baf63cc2944396a13bbc911fb6be7670244216
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538783"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176488"
 ---
 # <a name="sp_helparticle-transact-sql"></a>sp_helparticle (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Affiche des informations sur un article. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication. Dans le cas des serveurs de publication Oracle, cette procédure stockée est exécutée sur n'importe quelle base de données du serveur de distribution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,7 +46,7 @@ sp_helparticle [ @publication = ] 'publication'
   
 `[ @article = ] 'article'` Nom d’un article de la publication. *article* est de **type sysname**, avec la valeur par défaut **%** . Si *l’article* n’est pas fourni, des informations sur tous les Articles de la publication spécifiée sont retournées.  
   
-`[ @returnfilter = ] returnfilter` Spécifie si la clause de filtre doit être retournée. *returnfilter* est de **bits**, avec **1**comme valeur par défaut, qui retourne la clause de filtre.  
+`[ @returnfilter = ] returnfilter` Spécifie si la clause de filtre doit être retournée. *returnfilter* est de **bits**, avec **1** comme valeur par défaut, qui retourne la clause de filtre.  
   
 `[ @publisher = ] 'publisher'` Spécifie un serveur de publication non- [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . *Publisher* est de **type sysname**, avec NULL comme valeur par défaut.  
   
@@ -99,7 +99,7 @@ sp_helparticle [ @publication = ] 'publication'
 ## <a name="permissions"></a>Autorisations  
  Seuls les membres du rôle serveur fixe **sysadmin** , du rôle de base de données fixe **db_owner** ou la liste d’accès à la publication pour la publication actuelle peuvent exécuter **sp_helparticle**.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_helptranarticle](../../relational-databases/replication/codesnippet/tsql/sp-helparticle-transact-_1.sql)]  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,11 +1,11 @@
 ---
-title: sys. remote_data_archive_databases (Transact-SQL) | Microsoft Docs
-description: Découvrez comment sys. remote_data_archive_databases contient une ligne pour chaque base de données distante qui stocke des données à partir d’une base de données locale Stretch.
+title: sys.remote_data_archive_databases (Transact-SQL) | Microsoft Docs
+description: Découvrez comment sys.remote_data_archive_databases contient une ligne pour chaque base de données distante qui stocke des données à partir d’une base de données locale Stretch.
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
 ms.technology: stored-procedures
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.remote_data_archive_databases
 - sys.remote_data_archive_databases_TSQL
@@ -19,14 +19,14 @@ ms.assetid: 25bffb0c-9821-40b4-88cf-75f854891a09
 author: pmasl
 ms.author: pelopes
 ms.reviewer: mikeray
-ms.openlocfilehash: e192a70c1d8f46b7ad89844a3b38019ab6364cc1
-ms.sourcegitcommit: 216f377451e53874718ae1645a2611cdb198808a
+ms.openlocfilehash: 8ab3672838849626ea5f72f392ae102d8565b749
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87248148"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185015"
 ---
-# <a name="stretch-database-catalog-views---sysremote_data_archive_databases"></a>Affichages catalogue Stretch Database-sys. remote_data_archive_databases
+# <a name="stretch-database-catalog-views---sysremote_data_archive_databases"></a>Affichages catalogue Stretch Database-sys.remote_data_archive_databases
 [!INCLUDE [sqlserver2016](../../includes/applies-to-version/sqlserver2016.md)]
 
   Contient une ligne pour chaque base de données distante qui stocke les données d’une base de données locale Stretch.  

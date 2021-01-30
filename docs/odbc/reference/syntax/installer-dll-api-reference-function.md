@@ -7,21 +7,21 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - installer DLL [ODBC]
 ms.assetid: 47fcadc3-f102-4989-9ee7-a1c65233142a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: d5b2c49e5a49d371677b0fc16a77fb332bb95a9c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 88b1d85e731108984b1eb9f001363bd26401f91d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461241"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174679"
 ---
 # <a name="installer-dll-api-reference-function"></a>Informations de référence sur les fonctions de l’API de la DLL d’installation
-Cette section décrit la syntaxe des fonctions dans l’API DLL du programme d’installation. L’API DLL du programme d’installation se compose de 20 fonctions. Trois de ces fonctions, **SQLGetTranslator**, **SQLRemoveDSNFromIni**et **SQLWriteDSNToIni**, sont appelées uniquement par les dll d’installation. Les autres fonctions sont appelées par les programmes d’installation et d’administration.  
+Cette section décrit la syntaxe des fonctions dans l’API DLL du programme d’installation. L’API DLL du programme d’installation se compose de 20 fonctions. Trois de ces fonctions, **SQLGetTranslator**, **SQLRemoveDSNFromIni** et **SQLWriteDSNToIni**, sont appelées uniquement par les dll d’installation. Les autres fonctions sont appelées par les programmes d’installation et d’administration.  
   
  Chaque fonction est étiquetée avec la version ODBC dans laquelle elle a été introduite.  
   

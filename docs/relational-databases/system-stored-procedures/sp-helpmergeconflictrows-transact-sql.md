@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpmergeconflictrows_TSQL
 - sp_helpmergeconflictrows
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 131395a5-cb18-4795-a7ae-fa09d8ff347f
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: d6d8ea39fd9ccc48f96c838367d5f859226098d1
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+ms.openlocfilehash: 4aeb1205f3d929eed7b2717ff388d8e03891d9e3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91809835"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179259"
 ---
 # <a name="sp_helpmergeconflictrows-transact-sql"></a>sp_helpmergeconflictrows (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -44,7 +44,7 @@ sp_helpmergeconflictrows [ [ @publication = ] 'publication' ]
 ## <a name="arguments"></a>Arguments  
 `[ @publication = ] 'publication'` Nom de la publication. *publication* est de **type sysname**, avec la valeur par défaut **%** . Si la publication est spécifiée, tous les conflits qualifiés par la publication sont renvoyés. Par exemple, si la table **MSmerge_conflict_Customers** contient des lignes conflictuelles pour les publications **wa** et **ca** , le passage d’un nom de publication **ca** récupère les conflits qui se rapportent à la publication de l' **autorité de certification** .  
   
-`[ @conflict_table = ] 'conflict_table'` Nom de la table de conflits. *conflict_table* est de **type sysname**, sans valeur par défaut. Dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] et versions ultérieures, les tables de conflits sont nommées en utilisant les noms de format avec **MSmerge_conflict \_ _ \_ article de publication_**, avec une table pour chaque article publié.  
+`[ @conflict_table = ] 'conflict_table'` Nom de la table de conflits. *conflict_table* est de **type sysname**, sans valeur par défaut. Dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] et versions ultérieures, les tables de conflits sont nommées en utilisant les noms de format avec **MSmerge_conflict \_ _\_ article de publication_**, avec une table pour chaque article publié.  
   
 `[ @publisher = ] 'publisher'` Nom du serveur de publication. *Publisher* est de **type sysname**, avec NULL comme valeur par défaut.  
   

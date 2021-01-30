@@ -7,17 +7,17 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apitype: dllExport
 ms.assetid: b7a49774-f458-44ce-9a04-a0457501405b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 1627838d3f34f8092dce2806a1b1d8f885b9bf6a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 60dab6c50856d9f4132b9ec3d066d15c99194814
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88476180"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174654"
 ---
 # <a name="odbc-api-reference"></a>Informations de référence sur l’API ODBC
 Les rubriques de cette section décrivent chaque fonction ODBC par ordre alphabétique. Chaque fonction est définie en tant que fonction de langage de programmation C. Les descriptions sont les suivantes :  
@@ -32,7 +32,7 @@ Les rubriques de cette section décrivent chaque fonction ODBC par ordre alphab�
   
 -   Arguments  
   
--   Valeurs retournées  
+-   Valeurs de retour  
   
 -   Diagnostics  
   

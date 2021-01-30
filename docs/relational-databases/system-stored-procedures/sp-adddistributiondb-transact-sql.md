@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_adddistributiondb_TSQL
 - sp_adddistributiondb
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e9bad56c-d2b3-44ba-a4d7-ff2fd842e32d
 author: mashamsft
 ms.author: mathoma
-ms.openlocfilehash: f0f213880d00be458bb453aefd5957fe431dd053
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a5a80b39ca68abd37f3e9e843c2e76e8e71669d0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88481547"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182813"
 ---
 # <a name="sp_adddistributiondb-transact-sql"></a>sp_adddistributiondb (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -60,7 +60,7 @@ sp_adddistributiondb [ @database= ] 'database'
   
 `[ @data_file = ] 'data_file'` Nom du fichier de base de données. *data_file* est de type **nvarchar (255)**, avec une valeur par défaut de **base de données**. Si la valeur est NULL, la procédure stockée crée un nom de fichier en utilisant le nom de la base de données.  
   
-`[ @data_file_size = ] data_file_size` Taille initiale du fichier de données en mégaoctets (Mo). *data_file_size i*s **int**, avec une valeur par défaut de 5 Mo.  
+`[ @data_file_size = ] data_file_size` Taille initiale du fichier de données en mégaoctets (Mo). *data_file_size i* s **int**, avec une valeur par défaut de 5 Mo.  
   
 `[ @log_folder = ] 'log_folder'` Nom du répertoire du fichier journal de la base de données. *log_folder* est de type **nvarchar (255)**, avec NULL comme valeur par défaut. Si sa valeur est NULL, le répertoire de données de cette instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est utilisé, par exemple `C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\Data`.  
   
@@ -169,7 +169,7 @@ GO
  [sp_changedistributiondb &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changedistributiondb-transact-sql.md)   
  [sp_dropdistributiondb &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dropdistributiondb-transact-sql.md)   
  [sp_helpdistributiondb &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpdistributiondb-transact-sql.md)   
- [Procédures stockées système &#40;&#41;Transact-SQL ](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
+ [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
  [Configurer la distribution](../../relational-databases/replication/configure-distribution.md)  
   
   

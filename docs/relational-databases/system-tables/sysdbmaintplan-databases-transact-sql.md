@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysdbmaintplan_databases
 - sysdbmaintplan_databases_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: f8413a44-8fcc-4899-84f2-b4afe0f8ec08
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 60cbb5bf6e533837696328f68b33821fbc8108ed
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 459d4bae13d7a2526acc124bf4d26220919cf750
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096128"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178018"
 ---
 # <a name="sysdbmaintplan_databases-transact-sql"></a>sysdbmaintplan_databases (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

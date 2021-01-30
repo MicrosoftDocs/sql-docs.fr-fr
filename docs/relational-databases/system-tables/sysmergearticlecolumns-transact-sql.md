@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysmergearticlecolumns
 - sysmergearticlecolumns_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 1ad8663f-a624-42a2-8641-fefac3433c97
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 52b61bdb3429f5f42bd5e9012a28e06f09f2377b
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c34f48caeb04368e5ec0de2ef89294aa34af098c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098054"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177991"
 ---
 # <a name="sysmergearticlecolumns-transact-sql"></a>sysmergearticlecolumns (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

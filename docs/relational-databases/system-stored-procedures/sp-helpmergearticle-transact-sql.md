@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpmergearticle
 - sp_helpmergearticle_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 0fb9986a-3c33-46ef-87bb-297396ea5a6a
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 04e67d82b6c567a5c94de8009635c31e41864b92
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 43365f58dbfe76c89a5e7e41a0c65c65188edfdf
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89535208"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179288"
 ---
 # <a name="sp_helpmergearticle-transact-sql"></a>sp_helpmergearticle (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne des informations sur un article. Cette procédure stockée est exécutée sur la base de données de publication du serveur de publication ou sur la base de données d'abonnement d'un Abonné de republication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,9 +39,9 @@ sp_helpmergearticle [ [ @publication = ] 'publication' ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @publication = ] 'publication'` Nom de la publication sur laquelle les informations doivent être récupérées. *publication*est de **type sysname**, avec la valeur par défaut **%** , qui retourne des informations sur tous les Articles de fusion contenus dans toutes les publications de la base de données active.  
+`[ @publication = ] 'publication'` Nom de la publication sur laquelle les informations doivent être récupérées. *publication* est de **type sysname**, avec la valeur par défaut **%** , qui retourne des informations sur tous les Articles de fusion contenus dans toutes les publications de la base de données active.  
   
-`[ @article = ] 'article'` Nom de l’article pour lequel des informations doivent être retournées. *article*est de **type sysname**, avec la valeur par défaut **%** , qui retourne des informations sur tous les Articles de fusion de la publication donnée.  
+`[ @article = ] 'article'` Nom de l’article pour lequel des informations doivent être retournées. *article* est de **type sysname**, avec la valeur par défaut **%** , qui retourne des informations sur tous les Articles de fusion de la publication donnée.  
   
 ## <a name="result-set"></a>Jeu de résultats  
   
@@ -94,7 +94,7 @@ sp_helpmergearticle [ [ @publication = ] 'publication' ]
 ## <a name="permissions"></a>Autorisations  
  Seuls les membres du rôle de base de données fixe **db_owner** dans la base de données de publication, le rôle **replmonitor** dans la base de données de distribution ou la liste d’accès à la publication d’une publication peuvent exécuter **sp_helpmergearticle**.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_helpmergearticle](../../relational-databases/replication/codesnippet/tsql/sp-helpmergearticle-tran_1.sql)]  
   
 ## <a name="see-also"></a>Voir aussi  

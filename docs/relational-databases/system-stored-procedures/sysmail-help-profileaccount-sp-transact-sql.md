@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysmail_help_profileaccount_sp_TSQL
 - sysmail_help_profileaccount_sp
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 3ea68271-0a6b-4d77-991c-4757f48f747a
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 6894b44d7a09fa8f49ffa1d76a8613f930db7d18
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 45b542047875527a26d9c4854b223e626efda5ea
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89541056"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181941"
 ---
 # <a name="sysmail_help_profileaccount_sp-transact-sql"></a>sysmail_help_profileaccount_sp (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Affiche les comptes associés à un ou plusieurs profils de messagerie de base de données.  
     
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -63,7 +63,7 @@ sysmail_help_profileaccount_sp
 |**profile_id**|**int**|ID de profil du profil.|  
 |**profile_name**|**sysname**|Nom du profil.|  
 |**account_id**|**int**|ID du compte.|  
-|**account_name**|**sysname**|Nom du compte|  
+|**account_name**|**sysname**|Nom du compte.|  
 |**sequence_number**|**int**|Numéro de séquence du compte dans le profil.|  
   
 ## <a name="remarks"></a>Notes  

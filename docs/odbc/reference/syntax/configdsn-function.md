@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - ConfigDSN
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 01ced74e-c575-4a25-83f5-bd7d918123f8
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5e4ea667678fcbd0905ee3587f94554eb6e39b03
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 42e85b0c77ccc71946836e3103953fc85206b6e2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88421303"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174725"
 ---
 # <a name="configdsn-function"></a>ConfigDSN, fonction
 **Conformité**  
@@ -68,9 +68,9 @@ BOOL ConfigDSN(
  La fonction retourne TRUE si elle réussit, FALSe en cas d’échec.  
   
 ## <a name="diagnostics"></a>Diagnostics  
- Quand **ConfigDSN** retourne false, une valeur * \* pfErrorCode* associée est publiée dans la mémoire tampon d’erreur du programme d’installation par un appel à **SQLPostInstallerError** et peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs * \* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
+ Quand **ConfigDSN** retourne false, une valeur *\* pfErrorCode* associée est publiée dans la mémoire tampon d’erreur du programme d’installation par un appel à **SQLPostInstallerError** et peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs *\* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur|Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_INVALID_HWND|Handle de fenêtre non valide|L’argument *hwndParent* n’était pas valide.|  
 |ODBC_ERROR_INVALID_KEYWORD_VALUE|Paires mot clé/valeur non valides|L’argument *lpszAttributes* contient une erreur de syntaxe.|  
@@ -117,7 +117,7 @@ DSN=Personnel Data\0UID=Smith\0PWD=Sesame\0DATABASE=Personnel\0\0
 ## <a name="deleting-a-data-source"></a>Suppression d’une source de données  
  Pour supprimer une source de données, un nom de source de données doit être passé à **ConfigDSN** dans *lpszAttributes*. **ConfigDSN** vérifie que le nom de la source de données se trouve dans le fichier Odbc.ini (ou dans le registre). Il appelle ensuite **SQLRemoveDSNFromIni** dans la dll du programme d’installation pour supprimer la source de données.  
   
-## <a name="note"></a>Remarque
+## <a name="note"></a>Notes
  Si vous écrivez une version Unicode de cette routine, elle doit être appelée **ConfigDSNW**, avec des arguments LPCWSTR au lieu de LPCSTR.
   
 ## <a name="related-functions"></a>Fonctions connexes  

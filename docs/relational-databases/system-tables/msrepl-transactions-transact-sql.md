@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MSrepl_transactions_TSQL
 - MSrepl_transactions
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: d325288d-47ae-4488-8799-122f7ab43459
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 6e9ca4af77c9cab4e64a515041e68e4eb3dae3b6
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f94ebaa11a0b7b13c54a4c46ee86d508b5b73db3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092409"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184278"
 ---
 # <a name="msrepl_transactions-transact-sql"></a>MSrepl_transactions (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

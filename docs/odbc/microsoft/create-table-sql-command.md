@@ -7,23 +7,23 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - CREATE TABLE [ODBC]
 ms.assetid: be2143ba-fc16-42c9-84f7-8985cd924860
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 3ea84b28e12194ffb1a1b181089622cd169c91b7
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0fb1e91c03f7a1a1fee98ce887be991370450999
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88471631"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183205"
 ---
 # <a name="create-table---sql-command"></a>CREATE TABLE, commande SQL
 Crée une table avec les champs spécifiés.  
   
- Le pilote ODBC Visual FoxPro prend en charge la syntaxe du langage Visual FoxPro natif pour cette commande. Pour obtenir des informations spécifiques au pilote, consultez la **section Remarques**sur le pilote.  
+ Le pilote ODBC Visual FoxPro prend en charge la syntaxe du langage Visual FoxPro natif pour cette commande. Pour obtenir des informations spécifiques au pilote, consultez la **section Remarques** sur le pilote.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -115,12 +115,12 @@ CREATE TABLE mytable (char1 C(10), char2 C(10) NOCPTRANS,;
   
  Étant donné qu’une table ne peut avoir qu’un seul index primaire, vous ne pouvez pas inclure cette clause si vous avez déjà créé un index primaire pour un champ. Visual FoxPro génère une erreur si vous incluez plusieurs clauses de clé primaire dans CREATE TABLE.  
   
- Étiquette *EEXPRESSION3*unique *TagName3*  
+ Étiquette *EEXPRESSION3* unique *TagName3*  
  Crée un index candidat. *eExpression3* spécifie un champ ou une combinaison de champs dans la table. Toutefois, si vous avez créé un index primaire avec l’une des options de clé primaire, vous ne pouvez pas inclure le champ qui a été spécifié pour l’index primaire. TAG *TagName3* spécifie un nom de balise pour la balise d’index candidat qui est créée. Les noms de balises d’index peuvent contenir jusqu’à 10 caractères.  
   
  Une table peut avoir plusieurs index candidats.  
   
- CLÉ étrangère *eExpression4*balise *TagName4*[NODUP]  
+ CLÉ étrangère *eExpression4* balise *TagName4*[NODUP]  
  Crée un index étranger (non primaire) et établit une relation avec une table parente. *eExpression4* spécifie l’expression de clé d’index étrangère et *TagName4* spécifie le nom de la balise de clé d’index étrangère qui est créée. Les noms de balises d’index peuvent contenir jusqu’à 10 caractères. Incluez NODUP pour créer un index étranger candidat.  
   
  Vous pouvez créer plusieurs index étrangers pour la table, mais les expressions d’index étrangères doivent spécifier des champs différents dans la table.  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_update_alert_TSQL
 - sp_update_alert
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 4bbaeaab-8aca-4c9e-abc1-82ce73090bd3
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 368e5694231f52c9c7c73835308cd6a3d5fe5b81
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: c9dce24d3f8dd20d2138ba153fee74212e603e6c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547259"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184754"
 ---
 # <a name="sp_update_alert-transact-sql"></a>sp_update_alert (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Met à jour les paramètres d'une alerte existante.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -75,7 +75,7 @@ sp_update_alert
   
 `[ @delay_between_responses = ] delay_between_responses` Nouvelle période d’attente, en secondes, entre les réponses à l’alerte. *delay_between_responses* est de **type int**, avec NULL comme valeur par défaut.  
   
-`[ @notification_message = ] 'notification_message'` Texte révisé d’un message supplémentaire envoyé à l’opérateur dans le cadre de la notification par courrier électronique, **net send**ou radiomessagerie. *notification_message* est de type **nvarchar (512)**, avec NULL comme valeur par défaut.  
+`[ @notification_message = ] 'notification_message'` Texte révisé d’un message supplémentaire envoyé à l’opérateur dans le cadre de la notification par courrier électronique, **net send** ou radiomessagerie. *notification_message* est de type **nvarchar (512)**, avec NULL comme valeur par défaut.  
   
 `[ @include_event_description_in = ] include_event_description_in` Spécifie si la description de l' [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Erreur du journal des applications Windows doit être incluse dans le message de notification. *include_event_description_in* est de **type tinyint**, avec NULL comme valeur par défaut et peut prendre une ou plusieurs des valeurs suivantes.  
   

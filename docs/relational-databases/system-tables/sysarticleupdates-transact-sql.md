@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysarticleupdates_TSQL
 - sysarticleupdates
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 11a53bcd-a215-4d0b-9db8-233981d3ef5d
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a54ffa1056efb88336a776cf2a243c4e495a2d8d
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: b7fbaed24bf7b17207d366bb55882a3eb92b8660
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096080"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178035"
 ---
 # <a name="sysarticleupdates-transact-sql"></a>sysarticleupdates (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

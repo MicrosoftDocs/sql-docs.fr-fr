@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helplogins_TSQL
 - sp_helplogins
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: f9ad3767-5b9f-420d-8922-b637811404f7
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 9802a6087bd3747c8fe715d56482b54149ee55d8
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: b58e74a30ddd86fc2edbfc8db553ddf9449181db
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549627"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183125"
 ---
 # <a name="sp_helplogins-transact-sql"></a>sp_helplogins (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Fournit des informations sur les connexions et les utilisateurs associés dans chaque base de données.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -63,7 +63,7 @@ sp_helplogins [ [ @LoginNamePattern = ] 'login' ]
 |-----------------|---------------|-----------------|  
 |**LoginName**|**sysname**|Nom de connexion.|  
 |**@**|**sysname**|Base de données par défaut utilisée par **LoginName** lors de la connexion à une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .|  
-|**UserName**|**sysname**|Compte d’utilisateur auquel **LoginName** est mappé dans **dbname**et les rôles dont **LoginName** est membre dans **dbname**.|  
+|**UserName**|**sysname**|Compte d’utilisateur auquel **LoginName** est mappé dans **dbname** et les rôles dont **LoginName** est membre dans **dbname**.|  
 |**UserOrAlias**|**Char (8)**|MemberOf = **username** est un rôle.<br /><br /> User = **username** est un compte d’utilisateur.|  
   
 ## <a name="remarks"></a>Notes  

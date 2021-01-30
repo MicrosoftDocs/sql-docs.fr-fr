@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - display size of data types [ODBC]
 - data types [ODBC], column size
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 723107a1-be08-4ea3-a8c0-b2c45d38d1aa
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: d00a23fb38bdece97ffcbde0974b7bdf893a5133
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8a23183fd60d947771cb041af977d518157ac573
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88421503"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182531"
 ---
 # <a name="column-size-decimal-digits-transfer-octet-length-and-display-size---odbc"></a>Taille de colonne, chiffres décimaux, longueur d’octet de transfert et taille d’affichage-ODBC
 Les types de données sont caractérisés par leur taille de colonne (ou de paramètre), les chiffres décimaux, la longueur et la taille d’affichage. Les fonctions ODBC suivantes retournent ces attributs pour un paramètre dans une instruction SQL ou pour un type de données SQL sur une source de données. Chaque fonction ODBC retourne un ensemble différent de ces attributs, comme suit :  
@@ -36,7 +36,7 @@ Les types de données sont caractérisés par leur taille de colonne (ou de para
   
 -   **SQLDescribeParam** retourne la taille du paramètre et les chiffres décimaux des paramètres qu’il décrit. **SQLBindParameter** définit la taille des paramètres et les chiffres décimaux d’un paramètre dans une instruction SQL.  
   
--   Les fonctions de catalogue **SQLColumns**, **SQLProcedureColumns**et **SQLGetTypeInfo** retournent des attributs pour une colonne dans une table, un jeu de résultats ou un paramètre de procédure, ainsi que les attributs de catalogue des types de données dans la source de données. **SQLColumns** retourne la taille de colonne, les chiffres décimaux et la longueur d’une colonne dans les tables spécifiées (par exemple, la table de base, la vue ou une table système). **SQLProcedureColumns** retourne la taille de colonne, les chiffres décimaux et la longueur d’une colonne dans une procédure. **SQLGetTypeInfo** retourne la taille de colonne maximale et les chiffres décimaux minimal et maximal d’un type de données SQL sur une source de données.  
+-   Les fonctions de catalogue **SQLColumns**, **SQLProcedureColumns** et **SQLGetTypeInfo** retournent des attributs pour une colonne dans une table, un jeu de résultats ou un paramètre de procédure, ainsi que les attributs de catalogue des types de données dans la source de données. **SQLColumns** retourne la taille de colonne, les chiffres décimaux et la longueur d’une colonne dans les tables spécifiées (par exemple, la table de base, la vue ou une table système). **SQLProcedureColumns** retourne la taille de colonne, les chiffres décimaux et la longueur d’une colonne dans une procédure. **SQLGetTypeInfo** retourne la taille de colonne maximale et les chiffres décimaux minimal et maximal d’un type de données SQL sur une source de données.  
   
  Les valeurs retournées par ces fonctions pour la taille de la colonne ou du paramètre correspondent à la « précision » telle que définie dans ODBC 2. *x*. Toutefois, les valeurs ne correspondent pas nécessairement aux valeurs retournées dans SQL_DESC_PRECISION ou dans un autre champ de descripteur. Il en va de même pour les chiffres décimaux, qui correspondent à « Scale » comme défini dans ODBC 2. *x*. Elle ne correspond pas nécessairement aux valeurs retournées dans SQL_DESC_SCALE ou tout autre champ de descripteur, mais provient de différents champs de descripteur en fonction du type de données. Pour plus d’informations, consultez [taille de colonne](../../../odbc/reference/appendixes/column-size.md) et [chiffres décimaux](../../../odbc/reference/appendixes/decimal-digits.md).  
   
@@ -44,7 +44,7 @@ Les types de données sont caractérisés par leur taille de colonne (ou de para
   
  La valeur taille d’affichage pour tous les types de données correspond à la valeur dans un champ de descripteur unique, SQL_DESC_DISPLAY_SIZE.  
   
- Les champs de descripteur décrivent les caractéristiques d’un jeu de résultats. Les champs de descripteur ne contiennent pas de valeurs valides sur les données avant l’exécution de l’instruction. Les valeurs de taille de colonne, de chiffres décimaux et de taille d’affichage retournées par **SQLColumns**, **SQLProcedureColumns**et **SQLGetTypeInfo**, en revanche, renvoient les caractéristiques des objets de base de données, tels que les colonnes de table et les types de données, qui existent dans le catalogue de la source de données. De même, dans son jeu de résultats, **SQLColAttribute** retourne la taille de la colonne, les chiffres décimaux et la longueur en octets du transfert des colonnes au niveau de la source de données ; ces valeurs ne sont pas nécessairement les mêmes que les valeurs des champs de descripteur SQL_DESC_PRECISION, SQL_DESC_SCALE et SQL_DESC_OCTET_LENGTH.  
+ Les champs de descripteur décrivent les caractéristiques d’un jeu de résultats. Les champs de descripteur ne contiennent pas de valeurs valides sur les données avant l’exécution de l’instruction. Les valeurs de taille de colonne, de chiffres décimaux et de taille d’affichage retournées par **SQLColumns**, **SQLProcedureColumns** et **SQLGetTypeInfo**, en revanche, renvoient les caractéristiques des objets de base de données, tels que les colonnes de table et les types de données, qui existent dans le catalogue de la source de données. De même, dans son jeu de résultats, **SQLColAttribute** retourne la taille de la colonne, les chiffres décimaux et la longueur en octets du transfert des colonnes au niveau de la source de données ; ces valeurs ne sont pas nécessairement les mêmes que les valeurs des champs de descripteur SQL_DESC_PRECISION, SQL_DESC_SCALE et SQL_DESC_OCTET_LENGTH.  
   
  Pour plus d’informations sur ces champs de descripteur, consultez [SQLSetDescField](../../../odbc/reference/syntax/sqlsetdescfield-function.md).  
   

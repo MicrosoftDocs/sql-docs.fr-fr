@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_mergearticlecolumn
 - sp_mergearticlecolumn_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: b4f2b888-e094-4759-a472-d893638995eb
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 4be1d2544225a5317ea6af60598a57c958ce14a7
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: b5d8d2f63afd421081058dd1b53ec8084f4b5e13
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89541634"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185316"
 ---
 # <a name="sp_mergearticlecolumn-transact-sql"></a>sp_mergearticlecolumn (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Partitionne une publication de fusion verticalement. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,9 +46,9 @@ sp_mergearticlecolumn [ @publication = ] 'publication'
 ## <a name="arguments"></a>Arguments  
 `[ @publication = ] 'publication'` Nom de la publication. *Publication* est de **type sysname**, sans valeur par défaut.  
   
-`[ @article = ] 'article'` Nom de l’article dans la publication. *article* est de **type sysname**et n’a pas de valeur par défaut.  
+`[ @article = ] 'article'` Nom de l’article dans la publication. *article* est de **type sysname** et n’a pas de valeur par défaut.  
   
-`[ @column = ] 'column'` Identifie les colonnes sur lesquelles la partition verticale doit être créée. *Column* est de **type sysname**, avec NULL comme valeur par défaut. Si la valeur NULL est spécifiée et que `@operation = N'add'`, toutes les colonnes de la table source sont ajoutées à l'article par défaut. la *colonne* ne peut pas être NULL lorsque l' *opération* est définie sur **Drop**. Pour exclure des colonnes d’un article, exécutez **sp_mergearticlecolumn** et spécifiez la *colonne* et `@operation = N'drop'` pour chaque colonne à supprimer de l' *article*spécifié.  
+`[ @column = ] 'column'` Identifie les colonnes sur lesquelles la partition verticale doit être créée. *Column* est de **type sysname**, avec NULL comme valeur par défaut. Si la valeur NULL est spécifiée et que `@operation = N'add'`, toutes les colonnes de la table source sont ajoutées à l'article par défaut. la *colonne* ne peut pas être NULL lorsque l' *opération* est définie sur **Drop**. Pour exclure des colonnes d’un article, exécutez **sp_mergearticlecolumn** et spécifiez la *colonne* et `@operation = N'drop'` pour chaque colonne à supprimer de l' *article* spécifié.  
   
 `[ @operation = ] 'operation'` État de la réplication. *operation* est de type **nvarchar (4)**, avec Add comme valeur par défaut. **Ajouter** marque la colonne pour la réplication. **Drop** efface la colonne.  
   
@@ -57,13 +57,13 @@ sp_mergearticlecolumn [ @publication = ] 'publication'
 > [!NOTE]  
 >  Seule la **valeur false** est prise en charge pour *schema_replication*.  
   
-`[ @force_invalidate_snapshot = ] force_invalidate_snapshot` Active ou désactive la possibilité d’invalider un instantané. *force_invalidate_snapshot* est un **bit**, avec **0**comme valeur par défaut.  
+`[ @force_invalidate_snapshot = ] force_invalidate_snapshot` Active ou désactive la possibilité d’invalider un instantané. *force_invalidate_snapshot* est un **bit**, avec **0** comme valeur par défaut.  
   
  **0** indique que les modifications apportées à l’article de fusion n’entraînent pas la non-validité de l’instantané.  
   
  **1** indique que les modifications apportées à l’article de fusion peuvent entraîner la non-validité de l’instantané et, si tel est le cas, la valeur **1** accorde l’autorisation de se produire pour le nouvel instantané.  
   
-`[ @force_reinit_subscription = ]force_reinit_subscription_` Active ou désactive la possibilité d’avoir l’abonnement réinitialiser. *force_reinit_subscription* est un bit avec **0**comme valeur par défaut.  
+`[ @force_reinit_subscription = ]force_reinit_subscription_` Active ou désactive la possibilité d’avoir l’abonnement réinitialiser. *force_reinit_subscription* est un bit avec **0** comme valeur par défaut.  
   
  **0** indique que les modifications apportées à l’article de fusion n’entraînent pas la réinitialisation de l’abonnement.  
   

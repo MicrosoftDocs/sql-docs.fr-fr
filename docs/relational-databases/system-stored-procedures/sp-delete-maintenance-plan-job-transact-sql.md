@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_delete_maintenance_plan_job
 - sp_delete_maintenance_plan_job_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 1c2148c3-2928-4d9b-b1c8-3512cfbd6a63
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 0b06c9c385d85c1b1a4cb4df79ebb22f70d5abee
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 090fc42c20612f737bd0ed7b0be910d59dd1eb12
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89536577"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183418"
 ---
 # <a name="sp_delete_maintenance_plan_job-transact-sql"></a>sp_delete_maintenance_plan_job (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "89536577"
   
  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)]  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,9 +46,9 @@ sp_delete_maintenance_plan_job [ @plan_id = ] 'plan_id' ,
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @plan_id = ] 'plan\_id'` Spécifie l’ID du plan de maintenance. *plan_id* est de type **uniqueidentifier**et doit être un ID valide.  
+`[ @plan_id = ] 'plan\_id'` Spécifie l’ID du plan de maintenance. *plan_id* est de type **uniqueidentifier** et doit être un ID valide.  
   
-`[ @job_id = ] 'job\_id'` Spécifie l’ID du travail auquel le plan de maintenance est associé. *job_id* est de type **uniqueidentifier**et doit être un ID valide.  
+`[ @job_id = ] 'job\_id'` Spécifie l’ID du travail auquel le plan de maintenance est associé. *job_id* est de type **uniqueidentifier** et doit être un ID valide.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  0 (réussite) ou 1 (échec)  

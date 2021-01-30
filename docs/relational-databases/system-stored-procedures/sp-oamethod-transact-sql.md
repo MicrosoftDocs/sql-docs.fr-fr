@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_OAMethod
 - sp_OAMethod_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 1dfaebe2-c7cf-4041-a586-5d04faf2e25e
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 7442e3af4bf0233e51f32d7c8e6f034d69598046
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: da84a59353baffa92ac0fa30e55bfa4b248379f7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89526737"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182410"
 ---
 # <a name="sp_oamethod-transact-sql"></a>sp_OAMethod (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Appelle une méthode d'un objet OLE.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,7 +48,7 @@ sp_OAMethod objecttoken , methodname
  *MethodName*  
  Nom de la méthode de l'objet OLE à appeler.  
   
- _returnvalue_**sortie** returnValue    
+ **sortie** returnValue    
  Valeur renvoyée de la méthode de l'objet OLE. Si elle est spécifiée, il doit s'agir d'une variable locale du type de données approprié.  
   
  Si la méthode retourne une valeur unique, spécifiez une variable locale pour *returnValue*, qui retourne la valeur de retour de la méthode dans la variable locale, ou ne spécifiez pas *returnValue*, qui retourne la valeur de retour de la méthode au client sous la forme d’un jeu de résultats à une seule colonne et une seule ligne.  
@@ -69,13 +69,13 @@ sp_OAMethod objecttoken , methodname
   
  Pour obtenir la valeur de retour d’un paramètre de sortie, le *paramètre* doit être une variable locale du type de données approprié, et la **sortie** doit être spécifiée. Si un paramètre de constante est spécifié, ou si **Output** n’est pas spécifié, toute valeur de retour d’un paramètre de sortie est ignorée.  
   
- S’il est spécifié, *ParameterName* doit être le nom du [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] paramètre nommé. Notez que **@** _parametername_is pas une [!INCLUDE[tsql](../../includes/tsql-md.md)] variable locale. L’arobase ( **@** ) est supprimée et *ParameterName*est passé à l’objet OLE comme nom de paramètre. Tous les paramètres nommés doivent être spécifiés après tous les paramètres positionnels.  
+ S’il est spécifié, *ParameterName* doit être le nom du [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] paramètre nommé. Notez que **@** _parametername_is pas une [!INCLUDE[tsql](../../includes/tsql-md.md)] variable locale. L’arobase ( **@** ) est supprimée et *ParameterName* est passé à l’objet OLE comme nom de paramètre. Tous les paramètres nommés doivent être spécifiés après tous les paramètres positionnels.  
   
  *n*  
  Marque de réservation indiquant que plusieurs paramètres peuvent être spécifiés.  
   
 > [!NOTE]
->  * \@ ParameterName* peut être un paramètre nommé, car il fait partie de la méthode spécifiée et est passé à l’objet. Les autres paramètres pour cette procédure stockée sont spécifiés par position, et non par nom.  
+>  *\@ ParameterName* peut être un paramètre nommé, car il fait partie de la méthode spécifiée et est passé à l’objet. Les autres paramètres pour cette procédure stockée sont spécifiés par position, et non par nom.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  0 (succès) ou un nombre différent de zéro (échec), qui représente la valeur entière de HRESULT renvoyée par l'objet OLE Automation.  
