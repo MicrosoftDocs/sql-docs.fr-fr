@@ -1,13 +1,13 @@
 ---
 description: sys.linked_logins (Transact-SQL)
-title: sys. linked_logins (Transact-SQL) | Microsoft Docs
+title: sys.linked_logins (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.linked_logins
 - sys.linked_logins_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: af57bf0c-a265-410f-9bab-63b78569b4a6
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: dd84d1a373fdfa78e7c91f64857cc8adaffa8bdd
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cd771e7199ce5a120ad0ef6c4c5f0546cfdb426c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88323955"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191381"
 ---
 # <a name="syslinked_logins-transact-sql"></a>sys.linked_logins (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

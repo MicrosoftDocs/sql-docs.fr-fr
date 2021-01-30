@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_OACreate
 - sp_OACreate_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: eb84c0f1-26dd-48f9-9368-13ee4a30a27c
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: efcdc5094183143d3f45bc5a0174c0bead5381d2
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: bd6d44aedf1328234cf51366c3e81bcfb2d6dc94
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89541137"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191988"
 ---
 # <a name="sp_oacreate-transact-sql"></a>sp_OACreate (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Crée une instance d'un objet OLE.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,7 +52,7 @@ sp_OACreate { progid | clsid } , objecttoken OUTPUT [ , context ]
   
  Par exemple, {00026BA1-0000-0000-C000-000000000046} est le CLSID de l’objet SQL-DMO **SqlServer** .  
   
- _objecttoken_ **sortie** jeton_d'  
+  **sortie** jeton_d'  
  Est le jeton d’objet retourné, et doit être une variable locale de type de données **int**. Ce jeton d’objet identifie l’objet OLE créé et est utilisé dans les appels aux autres procédures stockées OLE Automation.  
   
  *context*  

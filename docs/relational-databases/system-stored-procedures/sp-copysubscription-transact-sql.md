@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_copysubscription
 - sp_copysubscription_TSQL
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 3c56cd62-2966-4e87-a986-44cb3fd0b760
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: e4a80092356c6508c7ef1f8408d5573c8014fdc0
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: b7377048df6d32715b8f91e26b5b21617c22a0d1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89528017"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192021"
 ---
 # <a name="sp_copysubscription-transact-sql"></a>sp_copysubscription (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "89528017"
   
  Copie une base de données d'abonnement contenant des abonnements par extraction de données (pull) mais pas d'abonnements par envoi de données (push). Seules les bases de données monofichier peuvent être copiées. Cette procédure stockée est exécutée sur la base de données d'abonnement de l'Abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,7 +48,7 @@ sp_copysubscription [ @filename = ] 'file_name'
   
 `[ @temp_dir = ] 'temp_dir'` Nom du répertoire qui contient les fichiers temporaires. *temp_dir* est de type **nvarchar (260)**, avec NULL comme valeur par défaut. Si la valeur est NULL, le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Répertoire de données par défaut sera utilisé. Le répertoire doit contenir suffisamment d'espace pour stocker un fichier d'une taille équivalente à celle de tous les fichiers de bases de données d'abonnés réunis.  
   
-`[ @overwrite_existing_file = ] 'overwrite_existing_file'`Indicateur booléen facultatif qui spécifie s’il faut ou non remplacer un fichier existant portant le même nom que celui spécifié dans ** \@ filename**. *overwrite_existing_file*est de **bit**, avec **0**comme valeur par défaut. Si la **1**est définie, elle remplace le fichier spécifié par ** \@ filename**, s’il existe. Si la **valeur est 0**, la procédure stockée échoue si le fichier existe et si le fichier n’est pas remplacé.  
+`[ @overwrite_existing_file = ] 'overwrite_existing_file'`Indicateur booléen facultatif qui spécifie s’il faut ou non remplacer un fichier existant portant le même nom que celui spécifié dans **\@ filename**. *overwrite_existing_file* est de **bit**, avec **0** comme valeur par défaut. Si la **1** est définie, elle remplace le fichier spécifié par **\@ filename**, s’il existe. Si la **valeur est 0**, la procédure stockée échoue si le fichier existe et si le fichier n’est pas remplacé.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

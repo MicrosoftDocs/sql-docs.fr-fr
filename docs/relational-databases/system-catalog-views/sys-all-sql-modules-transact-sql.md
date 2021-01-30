@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - all_sql_modules_TSQL
 - sys.all_sql_modules
@@ -21,12 +21,12 @@ ms.assetid: 7477a3fe-afb3-44c8-bb2c-c6e1d9bdee6f
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 627cafe9f1ab44ceacbe6476f5c4c912f63f006d
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 900c5f3ac658f9d2281112be34ed65aa3aaba395
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092522"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191609"
 ---
 # <a name="sysall_sql_modules-transact-sql"></a>sys.all_sql_modules (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

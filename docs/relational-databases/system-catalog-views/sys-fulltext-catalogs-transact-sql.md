@@ -1,12 +1,12 @@
 ---
 description: sys.fulltext_catalogs (Transact-SQL)
-title: sys. fulltext_catalogs (Transact-SQL) | Microsoft Docs
+title: sys.fulltext_catalogs (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
 ms.prod_service: database-engine
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.fulltext_catalogs_TSQL
 - sys.fulltext_catalogs
@@ -20,12 +20,12 @@ ms.assetid: cf1489ff-4819-41fa-a62a-4ed797a16207
 author: pmasl
 ms.author: pelopes
 ms.reviewer: mikeray
-ms.openlocfilehash: 886f8d99e286fd026e5e4435c8daa9192d22ce99
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 38420a12b6b6cab661644ef8d176c6e08c5e0c28
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88498372"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191522"
 ---
 # <a name="sysfulltext_catalogs-transact-sql"></a>sys.fulltext_catalogs (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "88498372"
   Contient une ligne pour chaque catalogue de texte intégral.  
   
 > [!NOTE]  
->  Les colonnes suivantes seront supprimées dans une version ultérieure de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] : **data_space_id**, **file_id**et **path**. Évitez d'utiliser ces colonnes dans de nouveaux travaux de développement et modifiez dès que possible les applications qui les utilisent actuellement.  
+>  Les colonnes suivantes seront supprimées dans une version ultérieure de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] : **data_space_id**, **file_id** et **path**. Évitez d'utiliser ces colonnes dans de nouveaux travaux de développement et modifiez dès que possible les applications qui les utilisent actuellement.  
  
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  

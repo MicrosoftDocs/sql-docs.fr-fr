@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.internal_tables
 - internal_tables
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: a5821c70-f150-4676-8476-3a31f7403dca
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: ecc601c3eec509258cdac61a9c9216077f36f712
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2064e987a92d42422ddfd7ba33104c6f5558e424
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094510"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191397"
 ---
 # <a name="sysinternal_tables-transact-sql"></a>sys.internal_tables (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "98094510"
 |**parent_id**|**int**|ID du parent, qu'il soit ou non de portée de schéma. En l'absence de parent, a pour valeur 0.<br /><br /> **queue_messages**  =  **object_id** de la file d’attente<br /><br /> **xml_index_nodes**  =  **object_id** de l’index XML<br /><br /> **fulltext_catalog_freelist**  =  **fulltext_catalog_id** du catalogue de texte intégral<br /><br /> **fulltext_index_map**  =  **object_id** de l’index de recherche en texte intégral<br /><br /> **query_notification** ou **service_broker_map** = 0<br /><br /> **extended_indexes**  =  **object_id** d’un index étendu, tel qu’un index spatial<br /><br /> **object_id** de la table pour laquelle le suivi de table est activé = **CHANGE_TRACKING**|  
 |**parent_minor_id**|**int**|ID mineur du parent.<br /><br /> **xml_index_nodes**  =  **index_id** de l’index XML<br /><br /> **extended_indexes**  =  **index_id** d’un index étendu, tel qu’un index spatial<br /><br /> 0 = **queue_messages**, **fulltext_catalog_freelist**, **fulltext_index_map**, **query_notification**, **service_broker_map** ou **CHANGE_TRACKING**|  
 |**lob_data_space_id**|**int**|Une valeur différente de zéro représente l'ID d'espace de données (groupe de fichiers ou schéma de partition) qui contient les données LOB de cette table.|  
-|**filestream_data_space_id**|**int**|Réservé à un usage ultérieur.|  
+|**filestream_data_space_id**|**int**|Réservé pour un usage futur.|  
   
 ## <a name="permissions"></a>Autorisations  
  [!INCLUDE[ssCatViewPerm](../../includes/sscatviewperm-md.md)] Pour plus d'informations, consultez [Metadata Visibility Configuration](../../relational-databases/security/metadata-visibility-configuration.md).  

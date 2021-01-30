@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - numbered_procedure_parameters_TSQL
 - sys.numbered_procedure_parameters_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: a441d46d-1f30-41c2-8d94-e9442f59786e
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 6d716d8b08d479043bfb592b743d987ddd7bf73f
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 861331152b5e3c25b09d14e326414a4ba25ba78b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095493"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191278"
 ---
 # <a name="sysnumbered_procedure_parameters-transact-sql"></a>sys.numbered_procedure_parameters (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

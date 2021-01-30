@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLWritePrivateProfileString
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 526f36a4-92ed-4874-9725-82d27c0b86f9
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b1110b60d6dc0ba079804ba8a9f21c06f0c1f78d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8f001e3a4ad2b6e3e4aad3f34e8a87be1c7b2b12
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88420953"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191646"
 ---
 # <a name="sqlwriteprivateprofilestring-function"></a>SQLWritePrivateProfileString, fonction
 **Conformité**  
@@ -39,10 +39,10 @@ ms.locfileid: "88420953"
 ```cpp  
   
 BOOL SQLWritePrivateProfileString(  
-     LPCSTR     lpszSection,  
-     LPCSTR     lpszEntry,  
-     LPCSTR     lpszString,  
-     LPCSTR     lpszFilename);  
+     LPCSTR     lpszSection,  
+     LPCSTR     lpszEntry,  
+     LPCSTR     lpszString,  
+     LPCSTR     lpszFilename);  
 ```  
   
 ## <a name="arguments"></a>Arguments  
@@ -62,9 +62,9 @@ BOOL SQLWritePrivateProfileString(
  La fonction retourne TRUE si elle réussit, FALSe en cas d’échec.  
   
 ## <a name="diagnostics"></a>Diagnostics  
- Quand **SQLWritePrivateProfileString** retourne false, une valeur * \* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs * \* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
+ Quand **SQLWritePrivateProfileString** retourne false, une valeur *\* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs *\* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur|Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur générale du programme d’installation|Une erreur s’est produite pour laquelle aucune erreur d’installation spécifique n’a été rencontrée.|  
 |ODBC_ERROR_REQUEST_FAILED|Échec de la demande|Les informations système demandées n’ont pas pu être écrites.|  

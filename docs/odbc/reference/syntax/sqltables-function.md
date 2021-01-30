@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLTables
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 60d5068a-7d7c-447c-acc6-f3f2cf73440c
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a1eb095849362914074e2c1e7f02166db2712894
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 537323651f0759a435c574fe6234c3050fb57536
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88421043"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191731"
 ---
 # <a name="sqltables-function"></a>Fonction SQLTables
 **Conformité**  
@@ -54,7 +54,7 @@ SQLRETURN SQLTables(
  *StatementHandle*  
  Entrée Descripteur d’instruction pour les résultats récupérés.  
   
- *CatalogName*  
+ *Nomcatalogue*  
  Entrée Nom du catalogue. L’argument *nomcatalogue* accepte les modèles de recherche si l’attribut d’environnement SQL_ODBC_VERSION est SQL_OV_ODBC3 ; elle n’accepte pas les modèles de recherche si SQL_OV_ODBC2 est définie. Si un pilote prend en charge des catalogues pour certaines tables, mais pas pour d’autres, par exemple lorsqu’un pilote récupère des données à partir de différents SGBD, une chaîne vide ("") indique les tables qui n’ont pas de catalogues.  
   
  Si l’attribut d’instruction SQL_ATTR_METADATA_ID est défini sur SQL_TRUE, *nomcatalogue* est traité comme un identificateur et sa casse n’est pas significative. S’il est SQL_FALSE, *nomcatalogue* est un argument de valeur de modèle ; Il est traité littéralement et sa casse est importante. Pour plus d’informations, consultez [arguments dans les fonctions de catalogue](../../../odbc/reference/develop-app/arguments-in-catalog-functions.md).  
@@ -92,18 +92,18 @@ SQLRETURN SQLTables(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLTables** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *comme HandleType* de SQL_HANDLE_STMT et un *handle* de *StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLTables** et explique chacune d’elles dans le contexte de cette fonction. la notation « (DM) » précède les descriptions des SQLSTATEs retournées par le gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur|Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information spécifique au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |08S01|Échec de la liaison de communication|Le lien de communication entre le pilote et la source de données à laquelle le pilote a été connecté a échoué avant la fin du traitement de la fonction.|  
 |24 000|État de curseur non valide|Un curseur a été ouvert sur *StatementHandle*, et **SQLFetch** ou **SQLFetchScroll** ont été appelés. Cette erreur est retournée par le gestionnaire de pilotes si **SQLFetch** ou **SQLFetchScroll** n’a pas retourné SQL_NO_DATA et est retourné par le pilote si **sqlfetch** ou **SQLFetchScroll** a retourné SQL_NO_DATA.<br /><br /> Un curseur a été ouvert sur le *StatementHandle*, mais **SQLFetch** ou **SQLFetchScroll** n’a pas été appelé.|  
 |40001|Échec de la sérialisation|La transaction a été restaurée en raison d’un blocage de ressource avec une autre transaction.|  
 |40003|Saisie semi-automatique des instructions inconnue|La connexion associée a échoué pendant l’exécution de cette fonction et l’état de la transaction ne peut pas être déterminé.|  
-|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon * \* MessageText* décrit l’erreur et sa cause.|  
+|HY000|Erreur générale|Une erreur s’est produite pour laquelle aucune SQLSTATE spécifique n’a été définie et pour lesquelles aucune SQLSTATE spécifique à l’implémentation n’a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans la mémoire tampon *\* MessageText* décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|Le pilote n’a pas pu allouer de la mémoire requise pour prendre en charge l’exécution ou l’achèvement de la fonction.|  
 |HY008|Opération annulée|Le traitement asynchrone a été activé pour *StatementHandle*. La fonction a été appelée, et avant la fin de l’exécution, **SQLCancel** ou **SQLCancelHandle** a été appelé sur le *StatementHandle*. Ensuite, la fonction a été appelée à nouveau sur le *StatementHandle*.<br /><br /> La fonction a été appelée et avant la fin de l’exécution, **SQLCancel** ou **SQLCancelHandle** a été appelé sur le *StatementHandle* à partir d’un thread différent dans une application multithread.|  
 |HY009|Utilisation non valide d’un pointeur null|L’attribut de l’instruction SQL_ATTR_METADATA_ID a été défini sur SQL_TRUE, l’argument *nomcatalogue* était un pointeur null, et l' *infotype* SQL_CATALOG_NAME retourne que les noms de catalogue sont pris en charge.<br /><br /> (DM) l’attribut d’instruction SQL_ATTR_METADATA_ID a été défini sur SQL_TRUE et l’argument *SchemaName* ou *TableName* était un pointeur null.|  
-|HY010|Erreur de séquence de fonction|(DM) une fonction d’exécution asynchrone a été appelée pour le handle de connexion associé à *StatementHandle*. Cette fonction asynchrone était toujours en cours d’exécution lors de l’appel de SQLTables.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**ou **SQLMoreResults** a été appelé pour *StatementHandle* et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.<br /><br /> (DM) une fonction d’exécution asynchrone (pas celle-ci) a été appelée pour le *StatementHandle* et était toujours en cours d’exécution quand cette fonction a été appelée.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations**ou **SQLSetPos** a été appelé pour *StatementHandle* et retourné SQL_NEED_DATA. Cette fonction a été appelée avant l’envoi des données pour l’ensemble des paramètres ou des colonnes de données en cours d’exécution.|  
+|HY010|Erreur de séquence de fonction|(DM) une fonction d’exécution asynchrone a été appelée pour le handle de connexion associé à *StatementHandle*. Cette fonction asynchrone était toujours en cours d’exécution lors de l’appel de SQLTables.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect** ou **SQLMoreResults** a été appelé pour *StatementHandle* et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant que les données ne soient récupérées pour tous les paramètres transmis en continu.<br /><br /> (DM) une fonction d’exécution asynchrone (pas celle-ci) a été appelée pour le *StatementHandle* et était toujours en cours d’exécution quand cette fonction a été appelée.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations** ou **SQLSetPos** a été appelé pour *StatementHandle* et retourné SQL_NEED_DATA. Cette fonction a été appelée avant l’envoi des données pour l’ensemble des paramètres ou des colonnes de données en cours d’exécution.|  
 |HY013|Erreur de gestion de la mémoire|Impossible de traiter l’appel de fonction, car les objets mémoire sous-jacents sont inaccessibles, probablement en raison de conditions de mémoire insuffisante.|  
 |HY090|Longueur de chaîne ou de mémoire tampon non valide|(DM) la valeur de l’un des arguments de longueur était inférieure à 0, mais n’est pas égale à SQL_NTS.<br /><br /> La valeur de l’un des arguments de longueur de nom dépasse la valeur de longueur maximale pour le nom correspondant.|  
 |HY117|La connexion est interrompue en raison d’un état de transaction inconnu. Seules les fonctions de déconnexion et de lecture seule sont autorisées.|(DM) pour plus d’informations sur l’état suspendu, consultez [fonction SQLEndTran](../../../odbc/reference/syntax/sqlendtran-function.md).|  
@@ -128,13 +128,13 @@ SQLRETURN SQLTables(
 > [!NOTE]  
 >  Pour plus d’informations sur l’utilisation générale, les arguments et les données renvoyées des fonctions de catalogue ODBC, consultez [fonctions de catalogue](../../../odbc/reference/develop-app/catalog-functions.md).  
   
- Pour prendre en charge l’énumération de catalogues, de schémas et de types de tables, la sémantique spéciale suivante est définie pour les arguments *nomcatalogue*, *SchemaName*, *TableName*et *TABLETYPE* de **SQLTables**:  
+ Pour prendre en charge l’énumération de catalogues, de schémas et de types de tables, la sémantique spéciale suivante est définie pour les arguments *nomcatalogue*, *SchemaName*, *TableName* et *TABLETYPE* de **SQLTables**:  
   
 -   Si *nomcatalogue* est SQL_ALL_CATALOGS et *SchemaName* et *TableName* sont des chaînes vides, le jeu de résultats contient une liste de catalogues valides pour la source de données. (Toutes les colonnes à l’exception de la TABLE_CAT colonne contiennent des valeurs NULL.)  
   
 -   Si *SchemaName* est SQL_ALL_SCHEMAS et si *nomcatalogue* et *TableName* sont des chaînes vides, le jeu de résultats contient une liste de schémas valides pour la source de données. (Toutes les colonnes à l’exception de la TABLE_SCHEM colonne contiennent des valeurs NULL.)  
   
--   Si *TABLETYPE* est SQL_ALL_TABLE_TYPES et *nomcatalogue*, *SchemaName*et *TableName* sont des chaînes vides, le jeu de résultats contient une liste de types de tables valides pour la source de données. (Toutes les colonnes à l’exception de la TABLE_TYPE colonne contiennent des valeurs NULL.)  
+-   Si *TABLETYPE* est SQL_ALL_TABLE_TYPES et *nomcatalogue*, *SchemaName* et *TableName* sont des chaînes vides, le jeu de résultats contient une liste de types de tables valides pour la source de données. (Toutes les colonnes à l’exception de la TABLE_TYPE colonne contiennent des valeurs NULL.)  
   
  Si *TABLETYPE* n’est pas une chaîne vide, il doit contenir une liste de valeurs séparées par des virgules pour les types intéressants. chaque valeur peut être placée entre des guillemets simples (') ou sans guillemets, par exemple, 'TABLE', 'VIEW’ou TABLE, VIEW. Une application doit toujours spécifier le type de table en majuscules. le pilote doit convertir le type de table en cas de besoin par la source de données. Si la source de données ne prend pas en charge un type de table spécifié, **SQLTables** ne retourne aucun résultat pour ce type.  
   

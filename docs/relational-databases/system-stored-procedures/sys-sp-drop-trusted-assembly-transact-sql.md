@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_drop_trusted_assembly_TSQL
 - sp_drop_trusted_assembly
@@ -21,19 +21,19 @@ ms.assetid: ''
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=sql-server-2017||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 4ff9015d6f7799a8d3d32ccf9fa6ec3f5a739ae5
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4f9eef43fbd837bdeb675e7ac2a90abba8e57c84
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482317"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191913"
 ---
 # <a name="syssp_drop_trusted_assembly-transact-sql"></a>sys.sp_drop_trusted_assembly (Transact-SQL)  
 [!INCLUDE[SQL Server 2017](../../includes/applies-to-version/sqlserver2017.md)]
 
 Supprime un assembly de la liste des assemblys approuvés sur le serveur.
 
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
 
 
 ## <a name="syntax"></a>Syntaxe
@@ -47,7 +47,7 @@ sp_drop_trusted_assembly
 [ @hash =] '*valeur*'  
 SHA2_512 valeur de hachage de l’assembly à supprimer de la liste des assemblys approuvés pour le serveur. Les assemblys de confiance peuvent être chargés lorsque la sécurité CLR stricte est activée, même si l’assembly n’est pas signé ou si la base de données n’est pas marquée comme digne de confiance.
 
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
 
 Cette procédure supprime un assembly de [sys.trusted_assemblies](../../relational-databases/system-catalog-views/sys-trusted-assemblies-transact-sql.md).
 

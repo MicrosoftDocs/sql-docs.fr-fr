@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLWriteDSNToIni
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: dc7018b2-18d4-4657-96d0-086479a47474
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 08a1094d29bbba9dc52974bd1cef5cd6645aa5dc
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 58e09c90ef785d1c851a1b95ef9a861277f47db7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88421013"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191697"
 ---
 # <a name="sqlwritedsntoini-function"></a>SQLWriteDSNToIni, fonction
 **Conformité**  
@@ -54,9 +54,9 @@ BOOL SQLWriteDSNToIni(
  La fonction retourne TRUE si elle réussit, FALSe en cas d’échec.  
   
 ## <a name="diagnostics"></a>Diagnostics  
- Quand **SQLWriteDSNToIni** retourne false, une valeur * \* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs * \* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
+ Quand **SQLWriteDSNToIni** retourne false, une valeur *\* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les valeurs *\* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur|Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur générale du programme d’installation|Une erreur s’est produite pour laquelle aucune erreur d’installation spécifique n’a été rencontrée.|  
 |ODBC_ERROR_INVALID_DSN|DSN non valide|L’argument *lpszDSN* contient une chaîne non valide pour un DSN.|  

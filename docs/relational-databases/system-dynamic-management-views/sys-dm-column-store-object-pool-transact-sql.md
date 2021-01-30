@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: a8a58ca7-0a7d-4786-bfd9-e8894bd345dd
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 9045d0b9ecda2e20bf9013d0c875adb09eeae67c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: ec39710cca6b477add803bc3dd798ca57ef19a65
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095239"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192024"
 ---
 # <a name="sysdm_column_store_object_pool-transact-sql"></a>sys.dm_column_store_object_pool (Transact-SQL)
 
@@ -54,5 +54,5 @@ Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de do
  [sys.indexes &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-indexes-transact-sql.md)   
  [sys.objects &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-objects-transact-sql.md)   
  [Surveillance et réglage des performances](../../relational-databases/performance/monitor-and-tune-for-performance.md)  
- [Index columnstore : Vue d’ensemble](../../relational-databases/indexes/columnstore-indexes-overview.md) 
+ [Index ColumnStore : vue d’ensemble](../../relational-databases/indexes/columnstore-indexes-overview.md) 
   

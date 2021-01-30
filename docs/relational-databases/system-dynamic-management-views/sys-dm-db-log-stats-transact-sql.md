@@ -6,7 +6,7 @@ ms.date: 05/17/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_db_log_stats_TSQL
 - sys.dm_db_log_stats
@@ -20,19 +20,19 @@ ms.assetid: ''
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=sql-server-2017||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: ddfd608b3f2d5bb5c4c259dfb0ec822f245f72b3
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 88ac57a5ba41afacafe8565225ed9ce7bca55991
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096560"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191184"
 ---
 # <a name="sysdm_db_log_stats-transact-sql"></a>sys.dm_db_log_stats (Transact-SQL)   
 [!INCLUDE[tsql-appliesto-2016sp2-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-2016sp2-asdb-xxxx-xxx-md.md)]
 
 Retourne des informations et des attributs de niveau récapitulatif sur les fichiers journaux des transactions des bases de données. Utilisez ces informations pour la surveillance et le diagnostic de l’intégrité du journal des transactions.   
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,7 +44,7 @@ Retourne des informations et des attributs de niveau récapitulatif sur les fich
 
 *database_id* | NULL | **Par défaut**
 
-ID de la base de données. `database_id` a la valeur `int`. Les entrées valides sont le numéro d’identification d’une base de données, `NULL` ou `DEFAULT` . La valeur par défaut est `NULL`. `NULL` et `DEFAULT` sont des valeurs équivalentes dans le contexte de la base de données active.  
+ID de la base de données. `database_id` a la valeur `int`. Les entrées valides sont le numéro d’identification d’une base de données, `NULL` ou `DEFAULT` . Par défaut, il s’agit de `NULL`. `NULL` et `DEFAULT` sont des valeurs équivalentes dans le contexte de la base de données active.  
 Vous pouvez spécifier la fonction intégrée [DB_ID](../../t-sql/functions/db-id-transact-sql.md). Lorsque vous utilisez `DB_ID` sans spécifier de nom de base de données, le niveau de compatibilité de la base de données actuelle doit être supérieur ou égal à 90.
 
   

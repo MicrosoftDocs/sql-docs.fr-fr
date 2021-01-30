@@ -6,19 +6,19 @@ ms.date: 03/03/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: e3944f48-8074-43aa-9840-3d5230faedd3
 author: ronortloff
 ms.author: rortloff
 monikerRange: '>= aps-pdw-2016'
-ms.openlocfilehash: c72d7a967a8a84a551db61a608cf7a55e7281c38
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a0af7ebab252922059eb2fed6f3b191be630994d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97428875"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191205"
 ---
 # <a name="syspdw_diag_event_properties-transact-sql"></a>sys.pdw_diag_event_properties (Transact-SQL)
 [!INCLUDE [pdw](../../includes/applies-to-version/pdw.md)]

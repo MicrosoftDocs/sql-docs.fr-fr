@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.parameter_type_usages
 - sys.parameter_type_usages_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: af0e167b-bffb-4525-84ec-3607f9268d3d
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: d4504c8c85852b418c5958dff144e8aa17eb50aa
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2ed2400f3b6adcbaa9539e4b7bccd5d952400712
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096765"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191227"
 ---
 # <a name="sysparameter_type_usages-transact-sql"></a>sys.parameter_type_usages (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

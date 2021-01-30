@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLValidDSN
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 930d1d89-337a-4429-85a2-84ee10555ac9
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 4919887a6e0bad4526959d0cd31205019a597a0f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 62692ed4b5d0ab600ceb36e87e7f796c77120c89
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88421023"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191703"
 ---
 # <a name="sqlvaliddsn-function"></a>SQLValidDSN, fonction
 **Conformité**  
@@ -39,7 +39,7 @@ ms.locfileid: "88421023"
 ```cpp  
   
 BOOL SQLValidDSN(  
-     LPCSTR    lpszDSN);  
+     LPCSTR    lpszDSN);  
 ```  
   
 ## <a name="arguments"></a>Arguments  
@@ -50,9 +50,9 @@ BOOL SQLValidDSN(
  La fonction retourne la valeur TRUE si le nom de la source de données est valide. Elle retourne la valeur FALSe si le nom de la source de données n’est pas valide ou si l’appel de fonction a échoué.  
   
 ## <a name="diagnostics"></a>Diagnostics  
- Quand **SQLValidDSN** retourne false, une valeur * \* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Un * \* pfErrorCode* est retourné uniquement si l’appel de fonction a échoué, et non si false a été retourné parce que le nom de la source de données n’est pas valide. Le tableau suivant répertorie les valeurs * \* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
+ Quand **SQLValidDSN** retourne false, une valeur *\* pfErrorCode* associée peut être obtenue en appelant **SQLInstallerError**. Un *\* pfErrorCode* est retourné uniquement si l’appel de fonction a échoué, et non si false a été retourné parce que le nom de la source de données n’est pas valide. Le tableau suivant répertorie les valeurs *\* pfErrorCode* qui peuvent être retournées par **SQLInstallerError** et les explique dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur|Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur générale du programme d’installation|Une erreur s’est produite pour laquelle aucune erreur d’installation spécifique n’a été rencontrée.|  
 |ODBC_ERROR_OUT_OF_MEM|Mémoire insuffisante|Le programme d’installation n’a pas pu exécuter la fonction en raison d’un manque de mémoire.|  

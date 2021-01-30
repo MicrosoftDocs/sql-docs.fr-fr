@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - filetables
 - filetables_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: a740be59-cd52-4707-9ad2-5203669a63ac
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 990965f5f3af485437cd2e97d5eb952a53b157cf
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: dd4fca9b22862bb628961c62a8ffcf8658ec2e86
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093149"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191541"
 ---
 # <a name="sysfiletables-transact-sql"></a>sys.filetables (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

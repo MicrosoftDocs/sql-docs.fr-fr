@@ -6,7 +6,7 @@ ms.date: 06/10/2016
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - fulltext_index_fragments
 - sys.fulltext_index_fragments_TSQL
@@ -24,12 +24,12 @@ author: pmasl
 ms.author: pelopes
 ms.reviewer: mikeray
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 5e0f1882c6840048e3308120e6b8768897b43d6b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: dbbf060be4706d17ed4bf4d9f5a25f121115d6b0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475180"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191485"
 ---
 # <a name="sysfulltext_index_fragments-transact-sql"></a>sys.fulltext_index_fragments (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "97475180"
 |row_count|**int**|Nombre de lignes individuelles dans le fragment.|  
 |status|**int**|Statut du fragment, une des valeurs suivantes :<br /><br /> 0 = Récemment créé mais pas encore utilisé<br /><br /> 1 = Utilisé pour l'insertion pendant l'alimentation ou la fusion d'index de recherche en texte intégral<br /><br /> 4 = Fermé. Prêt à être interrogé<br /><br /> 6 = Utilisé pour l'entrée de fusion et prêt à être interrogé<br /><br /> 8 = Marqué pour la suppression. Ne sera pas utilisé pour interroger et fusionner la source.<br /><br /> L’État 4 ou 6 signifie que le fragment fait partie de l’index de recherche en texte intégral logique et peut être interrogé ; autrement dit, il s’agit d’un fragment *interrogeable* .|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  L'affichage catalogue sys.fulltext_index_fragments peut être utilisé pour interroger le nombre des fragments qui comprennent un index de recherche en texte intégral. Si les performances des requêtes de texte intégral sont lentes, vous pouvez utiliser sys.fulltext_index_fragments pour déterminer le nombre de fragments requêtables (statut = 4 ou 6) dans l'index de recherche en texte intégral, comme suit :  
   
 ```  
