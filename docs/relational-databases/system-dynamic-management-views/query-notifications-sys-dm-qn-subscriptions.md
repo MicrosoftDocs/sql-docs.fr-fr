@@ -6,7 +6,7 @@ ms.date: 03/15/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_qn_subscriptions
 - dm_qn_subscriptions_TSQL
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: a3040ce6-f5af-48fc-8835-c418912f830c
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 62953d7f80a8d0fa327f37eadcc7a8dafd6fa734
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: bd2a8ddda0c28dcfeea53e860926c626b78d4af3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100041"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158447"
 ---
 # <a name="query-notifications---sysdm_qn_subscriptions"></a>Notifications de requêtes-sys.dm_qn_subscriptions
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "98100041"
   
 ## <a name="relationship-cardinalities"></a>Cardinalités de la relation  
   
-|Du|À|Activé|Type|  
+|Du|À|Il en va|Type|  
 |----------|--------|--------|----------|  
 |**sys.dm_qn_subscriptions**|**sys.databases**|**database_id**|Plusieurs-à-un|  
 |**sys.dm_qn_subscriptions**|**sys.internal_tables**|**object_id**|Plusieurs-à-un|  
@@ -56,7 +56,7 @@ ms.locfileid: "98100041"
 |Code|État secondaire|Informations|  
 |----------|------------------|----------|  
 |65798|L'abonnement a été déclenché parce que les données ont été modifiées|Abonnement déclenché par insertion|  
-|65799|L'abonnement a été déclenché parce que les données ont été modifiées|DELETE|  
+|65799|L'abonnement a été déclenché parce que les données ont été modifiées|Supprimer|  
 |65800|L'abonnement a été déclenché parce que les données ont été modifiées|Update|  
 |65801|L'abonnement a été déclenché parce que les données ont été modifiées|Fusionner|  
 |65802|L'abonnement a été déclenché parce que les données ont été modifiées|Troncation de la table|  

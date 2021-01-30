@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - Record
@@ -16,20 +16,20 @@ helpviewer_keywords:
 ms.assetid: db83ed2c-a8e3-460c-8682-64667e4d5d01
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6066d43bfa52d65ee133fd748f76fc651fac7379
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: b6064030bd26ab6abb0bb003b2fcf26e72c4f24d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989860"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166749"
 ---
 # <a name="record-object-ado"></a>Record, objet (ADO)
 Représente une ligne d’un [jeu d’enregistrements](./recordset-object-ado.md) ou du fournisseur de données, ou un objet retourné par un fournisseur de données semi-structuré, tel qu’un fichier ou un répertoire.  
   
 ## <a name="remarks"></a>Notes  
- Un objet **Record** représente une ligne de données et présente des similarités conceptuelles avec un **Recordset**d’une seule ligne. Selon les capacités de votre fournisseur, les objets d' **enregistrement** peuvent être retournés directement à partir de votre fournisseur au lieu d’un **Recordset**d’une seule ligne, par exemple lorsqu’une requête SQL qui sélectionne une seule ligne est exécutée. Ou un objet **enregistrement** peut être obtenu directement à partir d’un objet **Recordset** . Ou un **enregistrement** peut être retourné directement d’un fournisseur à des données semi-structurées, telles que le fournisseur de OLE DB Microsoft Exchange.  
+ Un objet **Record** représente une ligne de données et présente des similarités conceptuelles avec un **Recordset** d’une seule ligne. Selon les capacités de votre fournisseur, les objets d' **enregistrement** peuvent être retournés directement à partir de votre fournisseur au lieu d’un **Recordset** d’une seule ligne, par exemple lorsqu’une requête SQL qui sélectionne une seule ligne est exécutée. Ou un objet **enregistrement** peut être obtenu directement à partir d’un objet **Recordset** . Ou un **enregistrement** peut être retourné directement d’un fournisseur à des données semi-structurées, telles que le fournisseur de OLE DB Microsoft Exchange.  
   
- Vous pouvez afficher les champs associés à l’objet **Record** par le biais de la collection [Fields](./fields-collection-ado.md) sur l’objet **Record** . ADO autorise les colonnes à valeurs objet, y compris les valeurs **Recordset**, **SAFEARRAY**et scalaires dans la collection **Fields** des objets **Record** .  
+ Vous pouvez afficher les champs associés à l’objet **Record** par le biais de la collection [Fields](./fields-collection-ado.md) sur l’objet **Record** . ADO autorise les colonnes à valeurs objet, y compris les valeurs **Recordset**, **SAFEARRAY** et scalaires dans la collection **Fields** des objets **Record** .  
   
  Si l’objet **Record** représente une ligne dans un **Recordset**, il est possible de retourner à ce **Recordset** d’origine avec la propriété [source](./source-property-ado-record.md) .  
   
@@ -60,7 +60,7 @@ Représente une ligne d’un [jeu d’enregistrements](./recordset-object-ado.md
   
 -   Indique l’état actuel de l' **enregistrement** avec la propriété [State](./state-property-ado.md) .  
   
--   Indiquez le type d' **enregistrement**  -  *simple*, *collection*ou *document structuré* -avec la propriété [RecordType](./recordtype-property-ado.md).  
+-   Indiquez le type d' **enregistrement**  -  *simple*, *collection* ou *document structuré* -avec la propriété [RecordType](./recordtype-property-ado.md).  
   
 -   Arrête l’exécution d’une opération asynchrone avec la méthode [Cancel](./cancel-method-ado.md) .  
   

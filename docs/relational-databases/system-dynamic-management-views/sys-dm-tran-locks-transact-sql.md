@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_tran_locks
 - sys.dm_tran_locks
@@ -21,12 +21,12 @@ ms.assetid: f0d3b95a-8a00-471b-9da4-14cb8f5b045f
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: e3dad8a8c42e2189a29b2e75743653aca5055eae
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: a39e58fb6ca60a30a73531988eeffac89e7b46e1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101462"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99133964"
 ---
 # <a name="sysdm_tran_locks-transact-sql"></a>sys.dm_tran_locks (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -198,7 +198,7 @@ Des verrous sont placés sur les ressources [!INCLUDE[ssNoVersion](../../include
   
  Le tableau suivant fournit le format de la colonne **resource_description** pour chaque type de ressource.  
   
-|Ressource|Format|Description|  
+|Resource|Format|Description|  
 |--------------|------------|-----------------|  
 |DATABASE|Non applicable|L'ID de la base de données est déjà disponible dans la colonne **resource_database_id**.|  
 |FILE|<file_id>|ID du fichier représenté par cette ressource.|  

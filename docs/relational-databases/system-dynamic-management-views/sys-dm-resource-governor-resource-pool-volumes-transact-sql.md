@@ -6,7 +6,7 @@ ms.date: 08/09/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_resource_governor_resource_pool_volumes_TSQL
 - dm_resource_governor_resource_pool_volumes_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: fa692e56-c561-4533-97c5-bc12c600553f
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 9c6707bfd8b1c29073239821cd0fa3c0425ef089
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 11d02a022ba5e5444451a4a7474b39a91795a906
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093980"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99136963"
 ---
 # <a name="sysdm_resource_governor_resource_pool_volumes-transact-sql"></a>sys.dm_resource_governor_resource_pool_volumes (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]

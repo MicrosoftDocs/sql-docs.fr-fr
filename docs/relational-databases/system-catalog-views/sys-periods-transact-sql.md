@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: 25e66ed3-2270-4c5c-9f5a-2c0f165a57ca
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 3f932c00e569c57c951f2a708c810ff3dba8c08d
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 8f769581355224f8a9e3c6c222aabec2dc2478ad
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094473"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99109337"
 ---
 # <a name="sysperiods-transact-sql"></a>sys. periods (Transact-SQL)
 [!INCLUDE [sqlserver2016](../../includes/applies-to-version/sqlserver2016.md)]

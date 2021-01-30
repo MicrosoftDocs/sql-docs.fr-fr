@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 f1_keywords:
 - SeekEnum
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f0ec0c92-8253-47c6-9a14-e5dbccbad219
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 345e6dff5c2bc372f06eb386a4546a61b9e5a1bb
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: f61e05965b1750c4f8e6b48f092eeb059d1e19d3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88989150"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166561"
 ---
 # <a name="seekenum"></a>SeekEnum
 Spécifie le type de [recherche](./seek-method.md) à exécuter.  
@@ -32,7 +32,7 @@ Spécifie le type de [recherche](./seek-method.md) à exécuter.
 |**adSeekLastEQ**|2|Recherche la dernière clé égale à *KeyValues*.|  
 |**adSeekAfterEQ**|4|Recherche une clé égale à *KeyValues* ou juste après l’emplacement où cette correspondance s’est produite.|  
 |**adSeekAfter**|8|Recherche une clé juste après l’endroit où une correspondance avec *KeyValues* s’est produite.|  
-|**adSeekBeforeEQ**|16|Recherche une clé égale à *KeyValues*ou juste avant l’emplacement où cette correspondance s’est produite.|  
+|**adSeekBeforeEQ**|16|Recherche une clé égale à *KeyValues* ou juste avant l’emplacement où cette correspondance s’est produite.|  
 |**adSeekBefore**|32|Recherche une clé juste avant l’endroit où une correspondance avec *KeyValues* s’est produite.|  
   
 ## <a name="adowfc-equivalent"></a>Équivalent ADO/WFC  

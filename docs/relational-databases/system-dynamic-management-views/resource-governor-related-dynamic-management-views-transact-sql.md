@@ -6,7 +6,7 @@ ms.date: 10/28/2018
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fae5d600-586d-45fa-9d6d-03224cc13304
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 69d60a6250ed7190054ea021dcebf665c3ae89bd
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2c84214438243ba623010d0ba9aa443e4f5101f2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100039"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158146"
 ---
 # <a name="resource-governor-related-dynamic-management-views-transact-sql"></a>Vues de gestion dynamique relatives au gouverneur de ressources (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

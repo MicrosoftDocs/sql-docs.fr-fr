@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 36b96e3d-8cb0-4b79-bd93-ea5e0eb5679f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: af5f0a49c2bf126dbba4f0c40d88e15f0d71a187
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: c8c51d2aa6c648530d3aa218d21e9a8ed6cc5d5d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88975400"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99155726"
 ---
 # <a name="clone-method-example-vbscript"></a>Clone, exemple de méthode (VBScript)
 Cet exemple utilise la méthode [clone](./clone-method-ado.md) pour créer des copies d’un [jeu d’enregistrements](./recordset-object-ado.md) , puis permet à l’utilisateur de positionner le pointeur d’enregistrement de chaque copie indépendamment.  

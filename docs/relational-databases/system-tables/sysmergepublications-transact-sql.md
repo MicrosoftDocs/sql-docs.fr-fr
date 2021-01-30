@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysmergepublications
 - sysmergepublications_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 7f82c6c3-22d1-47c0-a92b-4d64b98cc455
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 0b2a7e7783ffb67688041a6da39ea99f945a607f
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 70cfe557241aa78c60726cc4e094b5945e876c61
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097335"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99102414"
 ---
 # <a name="sysmergepublications-transact-sql"></a>sysmergepublications (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -39,14 +39,14 @@ ms.locfileid: "98097335"
 |**fixation**|**int**|Période de rétention pour l’ensemble de la publication, où l’unité est indiquée par la valeur de la colonne **retention_period_unit** .|  
 |**publication_type**|**tinyint**|Indique que la publication est filtrée :<br /><br /> **0** = non filtré.<br /><br /> **1** = filtré.|  
 |**pubid**|**uniqueidentifier**|Numéro d'identification unique de cette publication. Ce numéro est généré lors de l'ajout de la publication.|  
-|**designmasterid**|**uniqueidentifier**|Réservé à un usage ultérieur.|  
+|**designmasterid**|**uniqueidentifier**|Réservé pour un usage futur.|  
 |**parentid**|**uniqueidentifier**|Indique la publication parente à partir de laquelle la publication paire courante ou la publication de sous-ensemble a été créée (utilisé pour les topologies de publication hiérarchiques).|  
 |**sync_mode**|**tinyint**|Mode de synchronisation de la publication :<br /><br /> **0** = natif.<br /><br /> **1** = caractère.|  
 |**allow_push**|**int**|Indique si la publication autorise les abonnements par envoi de données (push).<br /><br /> **0** = les abonnements envoyés ne sont pas autorisés.<br /><br /> **1** = les abonnements envoyés sont autorisés.|  
 |**allow_pull**|**int**|Indique si la publication autorise les abonnements par extraction de données (pull).<br /><br /> **0** = les abonnements extraits ne sont pas autorisés.<br /><br /> **1** = les abonnements extraits sont autorisés.|  
 |**allow_anonymous**|**int**|Indique si la publication autorise les abonnements anonymes.<br /><br /> **0** = les abonnements anonymes ne sont pas autorisés.<br /><br /> **1** = les abonnements anonymes sont autorisés.|  
 |**centralized_conflicts**|**int**|Indique si les enregistrements conflictuels sont stockés côté serveur de publication :<br /><br /> **0** = les enregistrements en conflit ne sont pas stockés sur le serveur de publication.<br /><br /> **1** = les enregistrements en conflit sont stockés sur le serveur de publication.|  
-|**statut**|**tinyint**|Réservé à un usage ultérieur.|  
+|**statut**|**tinyint**|Réservé pour un usage futur.|  
 |**snapshot_ready**|**tinyint**|Indique l'état de l'instantané de la publication :<br /><br /> **0** = l’instantané n’est pas prêt à être utilisé.<br /><br /> **1** = la capture instantanée est prête à être utilisée.<br /><br /> **2** = un nouvel instantané de cette publication doit être créé.|  
 |**enabled_for_internet**|**bit**|Indique si les fichiers de synchronisation pour la publication sont accessibles sur Internet, par l'intermédiaire de FTP et d'autres services.<br /><br /> **0** = les fichiers de synchronisation sont accessibles à partir d’Internet.<br /><br /> **1** = les fichiers de synchronisation ne sont pas accessibles à partir d’Internet.|  
 |**dynamic_filters**|**bit**|Indique si la publication est filtrée à l'aide d'un filtre de lignes paramétrable.<br /><br /> **0** = la publication n’est pas filtrée par ligne.<br /><br /> **1** = la publication est filtrée par ligne.|  

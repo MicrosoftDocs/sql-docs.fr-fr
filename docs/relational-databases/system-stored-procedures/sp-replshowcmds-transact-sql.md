@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_replshowcmds
 - sp_replshowcmds_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 199f5a74-e08e-4d02-a33c-b8ab0db20f44
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 9bbc74050303a854b39ced508caf8a49e1ffdd1d
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: efb46a1c57dc44f9fb90bbee84906c7bcd8b86d4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89534862"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99157504"
 ---
 # <a name="sp_replshowcmds-transact-sql"></a>sp_replshowcmds (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Renvoie les commandes pour les transactions signalées pour la réplication dans un format lisible. **sp_replshowcmds** ne peut être exécutée que lorsque les connexions clientes (y compris la connexion active) ne lisent pas les transactions répliquées à partir du journal. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,7 +38,7 @@ sp_replshowcmds [ @maxtrans = ] maxtrans
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @maxtrans = ] maxtrans` Nombre de transactions à propos desquelles retourner des informations. *maxtrans* est de **type int**, avec **1**comme valeur par défaut, qui spécifie le nombre maximal de transactions en attente de réplication pour lesquelles **sp_replshowcmds** retourne des informations.  
+`[ @maxtrans = ] maxtrans` Nombre de transactions à propos desquelles retourner des informations. *maxtrans* est de **type int**, avec **1** comme valeur par défaut, qui spécifie le nombre maximal de transactions en attente de réplication pour lesquelles **sp_replshowcmds** retourne des informations.  
   
 ## <a name="result-sets"></a>Jeux de résultats  
  **sp_replshowcmds** est une procédure de diagnostic qui retourne des informations sur la base de données de publication à partir de laquelle elle est exécutée.  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_exec_background_job_queue
 - sys.dm_exec_background_job_queue_TSQL
@@ -21,12 +21,12 @@ ms.assetid: 05d9884f-b74c-4e3c-a23b-c90c1ea5ef02
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 07490d9e2a05e65fa90dd76cbdf51647f000bb3a
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: cd67ec5a14684435e506f97bdae59bb5a3a46ff2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092911"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99107646"
 ---
 # <a name="sysdm_exec_background_job_queue-transact-sql"></a>sys.dm_exec_background_job_queue (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -40,10 +40,10 @@ ms.locfileid: "98092911"
 |**time_queued**|**datetime**|Moment auquel le travail a été ajouté à la file d'attente.|  
 |**job_id**|**int**|Identificateur du travail.|  
 |**database_id**|**int**|Base de données sur laquelle le travail doit s'exécuter.|  
-|**object_id1**|**int**|Cette valeur dépend du type de travail. Pour plus d'informations, consultez la section Remarques.|  
-|**object_id2**|**int**|Cette valeur dépend du type de travail. Pour plus d'informations, consultez la section Remarques.|  
-|**object_id3**|**int**|Cette valeur dépend du type de travail. Pour plus d'informations, consultez la section Remarques.|  
-|**object_id4**|**int**|Cette valeur dépend du type de travail. Pour plus d'informations, consultez la section Remarques.|  
+|**object_id1**|**int**|Cette valeur dépend du type de travail. Pour plus d'informations, consultez la section Notes.|  
+|**object_id2**|**int**|Cette valeur dépend du type de travail. Pour plus d'informations, consultez la section Notes.|  
+|**object_id3**|**int**|Cette valeur dépend du type de travail. Pour plus d'informations, consultez la section Notes.|  
+|**object_id4**|**int**|Cette valeur dépend du type de travail. Pour plus d'informations, consultez la section Notes.|  
 |**error_code**|**int**|Code d'erreur si le travail a été réinséré à cause d'une erreur. NULL si le travail a été suspendu, n'a pas été récupéré ou est terminé.|  
 |**request_type**|**smallint**|Type de demande du travail.|  
 |**retry_count**|**smallint**|Nombre de fois où le travail a été récupéré et réinséré dans la file d'attente pour cause de manque de ressources ou pour d'autres raisons.|  

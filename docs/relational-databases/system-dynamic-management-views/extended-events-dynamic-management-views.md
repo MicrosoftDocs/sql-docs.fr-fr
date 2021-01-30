@@ -6,7 +6,7 @@ ms.date: 03/15/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6d337c2f-71e9-4e0c-8877-9780baa7699d
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 527e6320f247a544f93df57e8f46e55fc69e04e8
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 95e44c5d5a7bf88515d4bc98c55fdf8a72c18764
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096601"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158469"
 ---
 # <a name="extended-events-dynamic-management-views"></a>Vues de gestion dynamique des Événements étendus
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

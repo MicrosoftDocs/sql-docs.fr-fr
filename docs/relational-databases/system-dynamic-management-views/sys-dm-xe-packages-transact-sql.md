@@ -6,7 +6,7 @@ ms.date: 08/09/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_xe_packages_TSQL
 - sys.dm_xe_packages_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 2e5ecbe9-3ea8-45e6-a161-e31671a03e1d
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: f4d23f493b669744f0c3bb53b6148056131ebe17
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 7afdba7f70bff018d24b000519e749275e350561
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093925"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99129348"
 ---
 # <a name="sysdm_xe_packages-transact-sql"></a>sys.dm_xe_packages (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "98093925"
   
 ## <a name="relationship-cardinalities"></a>Cardinalités de la relation  
   
-| Du | À | Relationship |
+| Du | À | Relation |
 | ---- | -- | ------------ |  
 |sys.dm_xe_packages.module_address|sys.dm_os_loaded_modules.base_address|Plusieurs-à-un|  
   

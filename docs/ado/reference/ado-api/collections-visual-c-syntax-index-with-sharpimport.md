@@ -7,7 +7,7 @@ ms.technology: ado
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
-ms.topic: conceptual
+ms.topic: reference
 apitype: COM
 dev_langs:
 - C++
@@ -19,17 +19,17 @@ helpviewer_keywords:
 ms.assetid: 36fbca8e-1884-44b5-806b-d15e30f42fe6
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: cba9fa93b2f23388b11dc764a95b78d94df4874c
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 1e29b092ea7c11dc9729986c342c96b2022fbf58
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88975260"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99164678"
 ---
 # <a name="collections-visual-c-syntax-index-with-import"></a>Collections (Visual C++ index de syntaxe avec #import)
 Il est utile de savoir que les collections héritent de certaines méthodes et propriétés communes.  
   
- Toutes les collections héritent de la propriété **Count** et de la méthode **Refresh** , et toutes les collections ajoutent la propriété **Item** . La collection **Errors** ajoute la méthode **Clear** . La collection **Parameters** hérite des méthodes **Append** et **Delete** , tandis que la collection **Fields** ajoute les méthodes d' **Ajout**, de **suppression**et de **mise à jour** .  
+ Toutes les collections héritent de la propriété **Count** et de la méthode **Refresh** , et toutes les collections ajoutent la propriété **Item** . La collection **Errors** ajoute la méthode **Clear** . La collection **Parameters** hérite des méthodes **Append** et **Delete** , tandis que la collection **Fields** ajoute les méthodes d' **Ajout**, de **suppression** et de **mise à jour** .  
   
 ## <a name="properties-collection"></a>Collection Properties  
   

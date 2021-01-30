@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_repl_articles_TSQL
 - dm_repl_articles
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 794d514e-bacd-432e-a8ec-3a063a97a37b
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 34151e89476ae62cdcce719b676477b9659ae3b4
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 807f8e1a8cf8b7400d471af1d1151e9652797105
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096472"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99138112"
 ---
 # <a name="sysdm_repl_articles-transact-sql"></a>sys.dm_repl_articles (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

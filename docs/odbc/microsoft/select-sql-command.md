@@ -7,23 +7,23 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - select [ODBC]
 ms.assetid: 2149c3ca-3a71-446d-8d53-3d056e2f301a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2b5fb0e3d38a2e5594cacf77b116844bcce219d7
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 3fc6ae552bc4e6e8bd681aa3d47ffadeaf81fd0a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88466421"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99153517"
 ---
 # <a name="select---sql-command"></a>SELECT, commande SQL
 Récupère des données d’une ou plusieurs tables.  
   
- Le pilote ODBC Visual FoxPro prend en charge la syntaxe du langage Visual FoxPro natif pour cette commande. Pour obtenir des informations spécifiques au pilote, consultez la **section Remarques**sur le pilote.  
+ Le pilote ODBC Visual FoxPro prend en charge la syntaxe du langage Visual FoxPro natif pour cette commande. Pour obtenir des informations spécifiques au pilote, consultez la **section Remarques** sur le pilote.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -127,7 +127,7 @@ FROM [DatabaseName!]Table [Local_Alias]
 |=|Égal à|  
 |==|Exactement égal à|  
 |LIKE|SQL COMME|  
-|<>, ! =, #|Non égal à|  
+|<>, ! =, #|Différent de|  
 |>|Plus de|  
 |>=|Supérieur ou égal à|  
 |<|Inférieur à|  
@@ -167,7 +167,7 @@ FROM [DatabaseName!]Table [Local_Alias]
   
  `customer.postalcode BETWEEN 90000 AND 99999`  
   
- L’exemple suivant vérifie si au moins une ligne répond aux critères de la sous-requête. Lorsque la condition de filtre comprend EXISTs, la condition de filtre prend la valeur true (. T.) sauf si la sous-requête est évaluée sur le jeu vide.  
+ L’exemple suivant vérifie si au moins une ligne répond aux critères de la sous-requête. Lorsque la condition de filtre comprend EXISTs, la condition de filtre prend la valeur true (. T.), sauf si la sous-requête est évaluée sur le jeu vide.  
   
  **Exemple 6** [not] Exists (*sous-requête*)  
   
@@ -254,7 +254,7 @@ WHERE customer.cust_id NOT IN ;
   
 -   La clause WHERE recherche tous les numéros de client de la table Customer qui ne se trouvent pas dans la table Orders. Étant donné que la première section de la commande a fourni à toutes les sociétés ayant un numéro de client dans la table Orders, toutes les sociétés de la table Customer sont désormais incluses dans les résultats de la requête.  
   
--   Étant donné que les structures des tables incluses dans une UNION doivent être identiques, il existe deux espaces réservés dans la deuxième instruction SELECT pour représenter *Orders. order_id* et *orders. emp_id* à partir de la première instruction SELECT.  
+-   Étant donné que les structures des tables incluses dans une UNION doivent être identiques, il existe deux espaces réservés dans la deuxième instruction SELECT pour représenter *Orders.order_id* et *Orders.emp_id* à partir de la première instruction SELECT.  
   
     > [!NOTE]  
     >  Les espaces réservés doivent être du même type que les champs qu’ils représentent. Si le champ est un type date, l’espace réservé doit être {//}. Si le champ est un champ de caractères, l’espace réservé doit être la chaîne vide ("").  

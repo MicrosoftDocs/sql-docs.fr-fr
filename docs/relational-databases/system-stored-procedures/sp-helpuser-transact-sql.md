@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpuser
 - sp_helpuser_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 9c70b41d-ef4c-43df-92da-bd534c287ca1
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: e9ea3b0b0b6d1700c486514c29f889cc7beb3566
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: ce2bf386978412c6b1409b31e371f8caa15eccdb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89546036"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99103048"
 ---
 # <a name="sp_helpuser-transact-sql"></a>sp_helpuser (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -31,9 +31,9 @@ ms.locfileid: "89546036"
   Signale des informations sur les principaux de niveau base de données dans la base de données en cours.  
   
 > [!IMPORTANT]  
->  **sp_helpuser** ne retourne pas d’informations sur les éléments sécurisables introduits dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] . Utilisez à la place [sys. database_principals](../../relational-databases/system-catalog-views/sys-database-principals-transact-sql.md) .  
+>  **sp_helpuser** ne retourne pas d’informations sur les éléments sécurisables introduits dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] . Utilisez à la place [sys.database_principals](../../relational-databases/system-catalog-views/sys-database-principals-transact-sql.md) .  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -78,7 +78,7 @@ sp_helpuser [ [ @name_in_db = ] 'security_account' ]
 |**IDutilisateur**|**smallint**|ID d'utilisateur du membre du rôle.|  
   
 ## <a name="remarks"></a>Notes  
- Pour afficher des informations sur l’appartenance aux rôles de base de données, utilisez [sys. database_role_members](../../relational-databases/system-catalog-views/sys-database-role-members-transact-sql.md). Pour afficher des informations sur les membres du rôle de serveur, utilisez [sys. server_role_members](../../relational-databases/system-catalog-views/sys-server-role-members-transact-sql.md)et pour afficher des informations sur les principaux au niveau du serveur, utilisez [sys. server_principals](../../relational-databases/system-catalog-views/sys-server-principals-transact-sql.md).  
+ Pour afficher des informations sur l’appartenance aux rôles de base de données, utilisez [sys.database_role_members](../../relational-databases/system-catalog-views/sys-database-role-members-transact-sql.md). Pour afficher des informations sur les membres du rôle de serveur, utilisez [sys.server_role_members](../../relational-databases/system-catalog-views/sys-server-role-members-transact-sql.md)et pour afficher des informations sur les principaux au niveau du serveur, utilisez [sys.server_principals](../../relational-databases/system-catalog-views/sys-server-principals-transact-sql.md).  
   
 ## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle **public** .  

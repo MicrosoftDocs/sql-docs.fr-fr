@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_dropsubscription
 - sp_dropsubscription_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 7551f345-5510-4684-ab53-f9057249d13a
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: c8c13030b1232a01aac14ac936323c05c540ab1f
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 3097c61204e0a9ae310af87fb83901a252c50e67
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89536573"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99157947"
 ---
 # <a name="sp_dropsubscription-transact-sql"></a>sp_dropsubscription (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Supprime les abonnements relatifs à un article, une publication ou un ensemble d'abonnements particuliers sur le serveur de publication. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,11 +43,11 @@ sp_dropsubscription [ [ @publication= ] 'publication' ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @publication = ] 'publication'` Nom de la publication associée. *publication* est de **type sysname**, avec NULL comme valeur par défaut. Si la **totalité**est, tous les abonnements de toutes les publications de l’abonné spécifié sont annulés. la *publication* est un paramètre obligatoire.  
+`[ @publication = ] 'publication'` Nom de la publication associée. *publication* est de **type sysname**, avec NULL comme valeur par défaut. Si la **totalité** est, tous les abonnements de toutes les publications de l’abonné spécifié sont annulés. la *publication* est un paramètre obligatoire.  
   
 `[ @article = ] 'article'` Nom de l’article. *article* est de **type sysname**, avec NULL comme valeur par défaut. Si la valeur est **All**, les abonnements à tous les articles pour chaque publication et abonné spécifiés sont supprimés. Utilisez **All pour les** publications qui autorisent la mise à jour immédiate.  
   
-`[ @subscriber = ] 'subscriber'` Nom de l’abonné dont les abonnements seront supprimés. *Subscriber* est de **type sysname**, sans valeur par défaut. Si la **totalité**est, tous les abonnements de tous les abonnés sont supprimés.  
+`[ @subscriber = ] 'subscriber'` Nom de l’abonné dont les abonnements seront supprimés. *Subscriber* est de **type sysname**, sans valeur par défaut. Si la **totalité** est, tous les abonnements de tous les abonnés sont supprimés.  
   
 `[ @destination_db = ] 'destination_db'` Nom de la base de données de destination. *destination_db* est de **type sysname**, avec NULL comme valeur par défaut. Si la valeur est NULL, tous les abonnements de cet Abonné seront supprimés.  
   

@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.technology: data-warehouse
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: 2625466b-d0ef-4c71-bedc-6d13491a8351
 author: ronortloff
 ms.author: rortloff
 monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest'
-ms.openlocfilehash: 0bd3d4c55a61f7e4911d4b9f1e962a11960976f5
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6819fe66d50d839f1a135b33a329d5d9e57dc8e5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482600"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99142976"
 ---
 # <a name="sysdm_pdw_exec_connections-transact-sql"></a>sys.dm_pdw_exec_connections (Transact-SQL)
 [!INCLUDE[applies-to-version/asa-pdw](../../includes/applies-to-version/asa-pdw.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "97482600"
   
 ## <a name="relationship-cardinalities"></a>Cardinalités de la relation  
   
-| Du | À | Relationship |
+| Du | À | Relation |
 | ---- | -- | ------------ |
 |dm_pdw_exec_sessions dm_pdw_exec_sessions.session_id|dm_pdw_exec_connections dm_pdw_exec_connections.session_id|Un-à-un|  
 |dm_pdw_exec_requests dm_pdw_exec_requests.connection_id|dm_pdw_exec_connections dm_pdw_exec_connections.connection_id|Plusieurs-à-un|  
