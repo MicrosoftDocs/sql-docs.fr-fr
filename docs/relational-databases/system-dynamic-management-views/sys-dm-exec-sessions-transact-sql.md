@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_exec_sessions_TSQL
 - sys.dm_exec_sessions
@@ -21,12 +21,12 @@ ms.assetid: 2b7e8e0c-eea0-431e-819f-8ccd12ec8cfa
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 49f04a21e95c0cc7a63b97fd9fd4add1729b25a7
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c9cfe8d7d41a56b216fdb5598173ac252ca989a1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098964"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192959"
 ---
 # <a name="sysdm_exec_sessions-transact-sql"></a>sys.dm_exec_sessions (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -115,7 +115,7 @@ Tout le monde peut voir ses propres informations de session.
   
 ## <a name="relationship-cardinalities"></a>Cardinalités de la relation  
   
-|Du|À|Actif/Appliquer|Relationship|  
+|Du|À|Actif/Appliquer|Relation|  
 |----------|--------|---------------|------------------|  
 |sys.dm_exec_sessions|[sys.dm_exec_requests](../../relational-databases/system-dynamic-management-views/sys-dm-exec-requests-transact-sql.md)|session_id|Un-à-zéro ou un-à-plusieurs|  
 |sys.dm_exec_sessions|[sys.dm_exec_connections](../../relational-databases/system-dynamic-management-views/sys-dm-exec-connections-transact-sql.md)|session_id|Un-à-zéro ou un-à-plusieurs|  

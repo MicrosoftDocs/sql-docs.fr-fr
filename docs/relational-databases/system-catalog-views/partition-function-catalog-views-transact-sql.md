@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 12400676-7f6b-4437-8fcb-ba9a33f35469
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: a39e25df03d5e315cd01518d42740cb4b8ed16c3
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 6ee1e4722da0cc8bc7d469332a3cf1ec453e43b6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092519"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194515"
 ---
 # <a name="partition-function-catalog-views-transact-sql"></a>Affichages catalogue des fonctions de partition (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_stored_procedures_TSQL
 - sp_stored_procedures
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: fe52dd83-000a-4665-83fb-7a0024193dec
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 41c28dd8a9dff8c95f6656aace6d80eb8d289e7c
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 3266b5619701d28a4fc65eb79d3f3e16c75e40b6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89541138"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193221"
 ---
 # <a name="sp_stored_procedures-transact-sql"></a>sp_stored_procedures (Transact-SQL)
 
@@ -31,7 +31,7 @@ ms.locfileid: "89541138"
 
   Renvoie la liste des procédures stockées dans l'environnement actuel.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -74,9 +74,9 @@ sp_stored_procedures [ [ @sp_name = ] 'name' ]
 |**PROCEDURE_QUALIFIER**|**sysname**|Nom du qualificateur de procédure. Cette colonne peut être NULL.|  
 |**PROCEDURE_OWNER**|**sysname**|Nom du propriétaire de la procédure. Cette colonne renvoie toujours une valeur.|  
 |**PROCEDURE_NAME**|**nvarchar (134)**|Nom de la procédure. Cette colonne renvoie toujours une valeur.|  
-|**NUM_INPUT_PARAMS**|**int**|Réservé à un usage ultérieur.|  
-|**NUM_OUTPUT_PARAMS**|**int**|Réservé à un usage ultérieur.|  
-|**NUM_RESULT_SETS**|**int**|Réservé à un usage ultérieur.|  
+|**NUM_INPUT_PARAMS**|**int**|Réservé pour un usage futur.|  
+|**NUM_OUTPUT_PARAMS**|**int**|Réservé pour un usage futur.|  
+|**NUM_RESULT_SETS**|**int**|Réservé pour un usage futur.|  
 |**NOTES**|**varchar (254)**|Description de la procédure. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne retourne pas de valeur pour cette colonne.|  
 |**PROCEDURE_TYPE**|**smallint**|Type de procédure. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] retourne toujours 2.0. Cette valeur peut être l'une des suivantes :<br /><br /> 0 = SQL_PT_UNKNOWN<br /><br /> 1 = SQL_PT_PROCEDURE<br /><br /> 2 = SQL_PT_FUNCTION|  
   
@@ -85,7 +85,7 @@ sp_stored_procedures [ [ @sp_name = ] 'name' ]
   
  Les informations d'autorisations relatives à l'exécution par l'utilisateur actuel d'une procédure stockée particulière ne sont pas nécessairement vérifiées ; l'accès n'est donc pas garanti. Notez que la dénomination en trois parties est utilisée. Cela signifie que seules les procédures stockées locales, et non pas les procédures stockées distantes (qui utilisent la dénomination en quatre parties), sont renvoyées dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Si l’attribut de serveur ACCESSIBLE_SPROC est Y dans le jeu de résultats pour **sp_server_info**, seules les procédures stockées qui peuvent être exécutées par l’utilisateur actuel sont retournées.  
   
- **sp_stored_procedures** est équivalent à **SQLProcedures** dans ODBC. Les résultats retournés sont triés par **PROCEDURE_QUALIFIER**, **PROCEDURE_OWNER**et **PROCEDURE_NAME**.  
+ **sp_stored_procedures** est équivalent à **SQLProcedures** dans ODBC. Les résultats retournés sont triés par **PROCEDURE_QUALIFIER**, **PROCEDURE_OWNER** et **PROCEDURE_NAME**.  
   
 ## <a name="permissions"></a>Autorisations  
  Nécessite l'autorisation SELECT sur le schéma.  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLGetDiagField
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 1dbc4398-97a8-4585-bb77-1f7ea75e24c4
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 92043f5deb505d60ebe168a9c219c4d37a304ed5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 733933691297f22934fe59e0c337dfd6093ddd3b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461024"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194190"
 ---
 # <a name="sqlgetdiagfield-function"></a>Fonction SQLGetDiagField
 
@@ -63,7 +63,7 @@ SQLRETURN SQLGetDiagField(
   
 -   SQL_HANDLE_STMT  
   
- SQL_HANDLE_DBC_INFO_TOKEN descripteur est utilisé uniquement par le gestionnaire de pilotes et le pilote. Les applications ne doivent pas utiliser ce type de handle. Pour plus d’informations sur la SQL_HANDLE_DBC_INFO_TOKEN, consultez [développement de la reconnaissance des pools de connexions dans un pilote ODBC](../../../odbc/reference/develop-driver/developing-connection-pool-awareness-in-an-odbc-driver.md).  
+ SQL_HANDLE_DBC_INFO_TOKEN descripteur est utilisé uniquement par le gestionnaire de pilotes et le pilote. Les applications ne doivent pas utiliser ce type de handle. Pour plus d’informations sur la SQL_HANDLE_DBC_INFO_TOKEN, consultez [développement de la sensibilisation aux Connection-Pool dans un pilote ODBC](../../../odbc/reference/develop-driver/developing-connection-pool-awareness-in-an-odbc-driver.md).  
   
  *Handle*  
  Entrée Handle pour la structure de données de diagnostic, du type indiqué par *comme HandleType*. Si *comme HandleType* a la valeur SQL_HANDLE_ENV, *descripteur* peut être un handle d’environnement partagé ou non partagé.  
@@ -72,7 +72,7 @@ SQLRETURN SQLGetDiagField(
  Entrée Indique l’enregistrement d’État à partir duquel l’application recherche des informations. Les enregistrements d’État sont numérotés à partir de 1. Si l’argument *DiagIdentifier* indique un champ de l’en-tête de diagnostic, *recnumber* est ignoré. Si ce n’est pas le cas, il doit être supérieur à 0.  
   
  *DiagIdentifier*  
- Entrée Indique le champ du diagnostic dont la valeur doit être retournée. Pour plus d’informations, consultez la section « argument*DiagIdentifier* » dans « Comments ».  
+ Entrée Indique le champ du diagnostic dont la valeur doit être retournée. Pour plus d’informations, consultez la section « argument *DiagIdentifier* » dans « Comments ».  
   
  *DiagInfoPtr*  
  Sortie Pointeur vers une mémoire tampon dans laquelle retourner les informations de diagnostic. Le type de données dépend de la valeur de *DiagIdentifier*. Si *DiagInfoPtr* est un type entier, les applications doivent utiliser une mémoire tampon de SQLULEN et initialiser la valeur à 0 avant d’appeler cette fonction, car certains pilotes peuvent uniquement écrire le plus petit 32 bits ou 16 bits d’une mémoire tampon et ne pas modifier le bit d’ordre supérieur.  
@@ -80,7 +80,7 @@ SQLRETURN SQLGetDiagField(
  Si *DiagInfoPtr* a la valeur null, *StringLengthPtr* retourne toujours le nombre total d’octets (à l’exception du caractère de fin null pour les données de type caractère) disponibles pour retourner dans la mémoire tampon vers laquelle pointe *DiagInfoPtr*.  
   
  *BufferLength*  
- Entrée Si *DiagIdentifier* est un diagnostic défini par ODBC et que *DiagInfoPtr* pointe vers une chaîne de caractères ou une mémoire tampon binaire, cet argument doit être la longueur de \* *DiagInfoPtr*. Si *DiagIdentifier* est un champ défini par ODBC et \* *DiagInfoPtr* est un entier, *BufferLength* est ignoré. Si la valeur de * \* DiagInfoPtr* est une chaîne Unicode (lors de l’appel de **SQLGetDiagFieldW**), l’argument *BufferLength* doit être un nombre pair.  
+ Entrée Si *DiagIdentifier* est un diagnostic défini par ODBC et que *DiagInfoPtr* pointe vers une chaîne de caractères ou une mémoire tampon binaire, cet argument doit être la longueur de \* *DiagInfoPtr*. Si *DiagIdentifier* est un champ défini par ODBC et \* *DiagInfoPtr* est un entier, *BufferLength* est ignoré. Si la valeur de *\* DiagInfoPtr* est une chaîne Unicode (lors de l’appel de **SQLGetDiagFieldW**), l’argument *BufferLength* doit être un nombre pair.  
   
  Si *DiagIdentifier* est un champ défini par le pilote, l’application indique la nature du champ au gestionnaire de pilotes en définissant l’argument *BufferLength* . *BufferLength* peut avoir les valeurs suivantes :  
   
@@ -90,7 +90,7 @@ SQLRETURN SQLGetDiagField(
   
 -   Si *DiagInfoPtr* est un pointeur vers une valeur autre qu’une chaîne de caractères ou une chaîne binaire, *BufferLength* doit avoir la valeur SQL_IS_POINTER.  
   
--   Si * \* DiagInfoPtr* contient un type de données de longueur fixe, *BufferLength* est SQL_IS_INTEGER, SQL_IS_UINTEGER, SQL_IS_SMALLINT ou SQL_IS_USMALLINT, selon le cas.  
+-   Si *\* DiagInfoPtr* contient un type de données de longueur fixe, *BufferLength* est SQL_IS_INTEGER, SQL_IS_UINTEGER, SQL_IS_SMALLINT ou SQL_IS_USMALLINT, selon le cas.  
   
  *StringLengthPtr*  
  Sortie Pointeur vers une mémoire tampon dans laquelle retourner le nombre total d’octets (à l’exception du nombre d’octets requis pour le caractère de fin null) disponibles pour retourner dans \* *DiagInfoPtr*, pour les données de type caractère. Si le nombre d’octets disponibles à retourner est supérieur ou égal à *BufferLength*, le texte de \* *DiagInfoPtr* est tronqué à *BufferLength* moins la longueur d’un caractère de fin null.  
@@ -126,7 +126,7 @@ SQLRETURN SQLGetDiagField(
   
 1.  Pour obtenir des informations d’erreur ou d’avertissement spécifiques lorsqu’un appel de fonction a retourné SQL_ERROR ou SQL_SUCCESS_WITH_INFO (ou SQL_NEED_DATA pour la fonction **SQLBrowseConnect** ).  
   
-2.  Pour déterminer le nombre de lignes dans la source de données qui ont été affectées lorsque des opérations d’insertion, de suppression ou de mise à jour ont été effectuées avec un appel à **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations**ou **SQLSetPos** (à partir du champ d’en-tête SQL_DIAG_ROW_COUNT), ou pour déterminer le nombre de lignes qui existent dans le curseur ouvert actuel, si le pilote peut fournir ces informations (à SQL_DIAG_CURSOR_ROW_COUNT partir  
+2.  Pour déterminer le nombre de lignes dans la source de données qui ont été affectées lorsque des opérations d’insertion, de suppression ou de mise à jour ont été effectuées avec un appel à **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations** ou **SQLSetPos** (à partir du champ d’en-tête SQL_DIAG_ROW_COUNT), ou pour déterminer le nombre de lignes qui existent dans le curseur ouvert actuel, si le pilote peut fournir ces informations (à SQL_DIAG_CURSOR_ROW_COUNT partir  
   
 3.  Pour déterminer la fonction qui a été exécutée par un appel à **SQLExecDirect** ou **SQLExecute** (à partir des champs d’en-tête SQL_DIAG_DYNAMIC_FUNCTION et SQL_DIAG_DYNAMIC_FUNCTION_CODE).  
   
@@ -163,12 +163,12 @@ SQLRETURN SQLGetDiagField(
   
 |DiagIdentifier|Type de retour|Retours|  
 |--------------------|-----------------|-------------|  
-|SQL_DIAG_CURSOR_ROW_COUNT|SQLLEN|Ce champ contient le nombre de lignes dans le curseur. Sa sémantique dépend des types d’informations **SQLGetInfo** SQL_DYNAMIC_CURSOR_ATTRIBUTES2, SQL_FORWARD_ONLY_CURSOR_ATTRIBUTES2, SQL_KEYSET_CURSOR_ATTRIBUTES2 et SQL_STATIC_CURSOR_ATTRIBUTES2, qui indiquent les nombres de lignes disponibles pour chaque type de curseur (dans les bits SQL_CA2_CRC_EXACT et SQL_CA2_CRC_APPROXIMATE).<br /><br /> Le contenu de ce champ est défini uniquement pour les descripteurs d’instruction et seulement après l’appel de **SQLExecute**, **SQLExecDirect**ou **SQLMoreResults** . L’appel de **SQLGetDiagField** avec un *DiagIdentifier* de SQL_DIAG_CURSOR_ROW_COUNT sur un autre qu’un descripteur d’instruction retourne SQL_ERROR.|  
-|SQL_DIAG_DYNAMIC_FUNCTION|SQLCHAR|Il s’agit d’une chaîne qui décrit l’instruction SQL exécutée par la fonction sous-jacente. (Consultez « valeurs des champs de fonction dynamique », plus loin dans cette section, pour obtenir des valeurs spécifiques.) Le contenu de ce champ est défini uniquement pour les descripteurs d’instruction et uniquement après un appel à **SQLExecute**, **SQLExecDirect**ou **SQLMoreResults**. L’appel de **SQLGetDiagField** avec un *DiagIdentifier* de SQL_DIAG_DYNAMIC_FUNCTION sur un autre qu’un descripteur d’instruction retourne SQL_ERROR. La valeur de ce champ est non définie avant un appel à **SQLExecute** ou à **SQLExecDirect**.|  
-|SQL_DIAG_DYNAMIC_FUNCTION_CODE|SQLINTEGER|Il s’agit d’un code numérique qui décrit l’instruction SQL exécutée par la fonction sous-jacente. (Consultez « valeurs des champs de fonction dynamique », plus loin dans cette section, pour obtenir une valeur spécifique.) Le contenu de ce champ est défini uniquement pour les descripteurs d’instruction et uniquement après un appel à **SQLExecute**, **SQLExecDirect**ou **SQLMoreResults**. L’appel de **SQLGetDiagField** avec un *DiagIdentifier* de SQL_DIAG_DYNAMIC_FUNCTION_CODE sur un autre qu’un descripteur d’instruction retourne SQL_ERROR. La valeur de ce champ est non définie avant un appel à **SQLExecute** ou à **SQLExecDirect**.|  
+|SQL_DIAG_CURSOR_ROW_COUNT|SQLLEN|Ce champ contient le nombre de lignes dans le curseur. Sa sémantique dépend des types d’informations **SQLGetInfo** SQL_DYNAMIC_CURSOR_ATTRIBUTES2, SQL_FORWARD_ONLY_CURSOR_ATTRIBUTES2, SQL_KEYSET_CURSOR_ATTRIBUTES2 et SQL_STATIC_CURSOR_ATTRIBUTES2, qui indiquent les nombres de lignes disponibles pour chaque type de curseur (dans les bits SQL_CA2_CRC_EXACT et SQL_CA2_CRC_APPROXIMATE).<br /><br /> Le contenu de ce champ est défini uniquement pour les descripteurs d’instruction et seulement après l’appel de **SQLExecute**, **SQLExecDirect** ou **SQLMoreResults** . L’appel de **SQLGetDiagField** avec un *DiagIdentifier* de SQL_DIAG_CURSOR_ROW_COUNT sur un autre qu’un descripteur d’instruction retourne SQL_ERROR.|  
+|SQL_DIAG_DYNAMIC_FUNCTION|SQLCHAR|Il s’agit d’une chaîne qui décrit l’instruction SQL exécutée par la fonction sous-jacente. (Consultez « valeurs des champs de fonction dynamique », plus loin dans cette section, pour obtenir des valeurs spécifiques.) Le contenu de ce champ est défini uniquement pour les descripteurs d’instruction et uniquement après un appel à **SQLExecute**, **SQLExecDirect** ou **SQLMoreResults**. L’appel de **SQLGetDiagField** avec un *DiagIdentifier* de SQL_DIAG_DYNAMIC_FUNCTION sur un autre qu’un descripteur d’instruction retourne SQL_ERROR. La valeur de ce champ est non définie avant un appel à **SQLExecute** ou à **SQLExecDirect**.|  
+|SQL_DIAG_DYNAMIC_FUNCTION_CODE|SQLINTEGER|Il s’agit d’un code numérique qui décrit l’instruction SQL exécutée par la fonction sous-jacente. (Consultez « valeurs des champs de fonction dynamique », plus loin dans cette section, pour obtenir une valeur spécifique.) Le contenu de ce champ est défini uniquement pour les descripteurs d’instruction et uniquement après un appel à **SQLExecute**, **SQLExecDirect** ou **SQLMoreResults**. L’appel de **SQLGetDiagField** avec un *DiagIdentifier* de SQL_DIAG_DYNAMIC_FUNCTION_CODE sur un autre qu’un descripteur d’instruction retourne SQL_ERROR. La valeur de ce champ est non définie avant un appel à **SQLExecute** ou à **SQLExecDirect**.|  
 |SQL_DIAG_NUMBER|SQLINTEGER|Nombre d’enregistrements d’état disponibles pour le handle spécifié.|  
 |SQL_DIAG_RETURNCODE|SQLRETURN|Code de retour retourné par la fonction. Pour obtenir la liste des codes de retour, consultez [codes de retour](../../../odbc/reference/develop-app/return-codes-odbc.md). Le pilote n’a pas besoin d’implémenter SQL_DIAG_RETURNCODE ; Il est toujours implémenté par le gestionnaire de pilotes. Si aucune fonction n’a encore été appelée sur le *handle*, SQL_SUCCESS est retourné pour SQL_DIAG_RETURNCODE.|  
-|SQL_DIAG_ROW_COUNT|SQLLEN|Nombre de lignes affectées par une insertion, une suppression ou une mise à jour effectuée par **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations**ou **SQLSetPos**. Elle est définie par le pilote après l’exécution d’une *spécification de curseur* . Le contenu de ce champ est défini uniquement pour les descripteurs d’instruction. L’appel de **SQLGetDiagField** avec un *DiagIdentifier* de SQL_DIAG_ROW_COUNT sur un autre qu’un descripteur d’instruction retourne SQL_ERROR. Les données de ce champ sont également retournées dans l’argument *RowCountPtr* de **SQLRowCount**. Les données de ce champ sont réinitialisées après chaque appel de fonction non-diagnostic, tandis que le nombre de lignes retourné par **SQLRowCount** reste le même jusqu’à ce que l’instruction soit rétablie à l’État prepared ou allocated.|  
+|SQL_DIAG_ROW_COUNT|SQLLEN|Nombre de lignes affectées par une insertion, une suppression ou une mise à jour effectuée par **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations** ou **SQLSetPos**. Elle est définie par le pilote après l’exécution d’une *spécification de curseur* . Le contenu de ce champ est défini uniquement pour les descripteurs d’instruction. L’appel de **SQLGetDiagField** avec un *DiagIdentifier* de SQL_DIAG_ROW_COUNT sur un autre qu’un descripteur d’instruction retourne SQL_ERROR. Les données de ce champ sont également retournées dans l’argument *RowCountPtr* de **SQLRowCount**. Les données de ce champ sont réinitialisées après chaque appel de fonction non-diagnostic, tandis que le nombre de lignes retourné par **SQLRowCount** reste le même jusqu’à ce que l’instruction soit rétablie à l’État prepared ou allocated.|  
   
 ## <a name="record-fields"></a>Champs d’enregistrement  
  Les champs d’enregistrement répertoriés dans le tableau suivant peuvent être inclus dans l’argument *DiagIdentifier* .  

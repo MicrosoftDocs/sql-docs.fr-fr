@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_cursor_prepare_TSQL
 - sp_cursor_prepare
@@ -19,12 +19,12 @@ ms.assetid: f328c9eb-8211-4863-bafa-347e1bf7bb3f
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 9726ac52d0579c56de3c3ad971028cd606748726
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: fe4da6ff8d3cdcbeb7ba809bf198c44373b99c9e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97462680"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196030"
 ---
 # <a name="sp_prepare-transact-sql"></a>sp_prepare (Transact SQL)
 [!INCLUDE [sql-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdbmi-asa-pdw.md)]
@@ -52,7 +52,7 @@ sp_prepare handle OUTPUT, params, stmt, options
  *options*  
  Paramètre optionnel qui retourne une description des colonnes du jeu de résultats du curseur. les *options* requièrent la valeur d’entrée int suivante :  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |0x0001|RETURN_METADATA|  
   

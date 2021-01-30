@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - assembly_types
 - sys.assembly_types
@@ -21,12 +21,12 @@ ms.assetid: 35f0384f-7a6d-41b1-9461-f1406d68f317
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 1b19cc8dff0ec3c1784ac9424f3dba328b1d080d
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: ef2bb6c85593377e6239a1bff502da7d1f3a79f0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093249"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197845"
 ---
 # <a name="sysassembly_types-transact-sql"></a>sys.assembly_types (Transact-SQL)
 [!INCLUDE [sql-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdbmi-asa-pdw.md)]

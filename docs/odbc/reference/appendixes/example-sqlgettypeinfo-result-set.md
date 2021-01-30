@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQL data types [ODBC], examples
 - SQLGetTypeInfo function [ODBC], examples
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: dc1952cc-7581-4d69-9c72-7dc1cd370836
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2420713e0adb7f0b7c983243b4021ebbe9b141c0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 79778748e5879e0433e97c648b477fcc9f0b7084
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88466209"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194845"
 ---
 # <a name="example-sqlgettypeinfo-result-set"></a>Exemple de jeu de résultats de SQLGetTypeInfo
 Une application appelle **SQLGetTypeInfo** pour déterminer quels types de données sont pris en charge par une source de données et les caractéristiques de ces types de données. Les tableaux suivants présentent un exemple de jeu de résultats retourné par **SQLGetTypeInfo** pour une source de données qui prend en charge SQL_CHAR, SQL_LONGVARCHAR, SQL_DECIMAL, SQL_REAL, SQL_DATETIME, SQL_INTERVAL_YEAR et SQL_INTERVAL_DAY_TO_SECOND.  

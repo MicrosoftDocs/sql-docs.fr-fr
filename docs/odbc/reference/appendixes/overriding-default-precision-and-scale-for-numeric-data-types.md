@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - numeric data type [ODBC], precision and scale
 - precision [ODBC], numeric data types
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 84292334-0e33-4a1b-84de-8c018dd787f3
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 798e607ff6584bde27791a29e4b20aeb1d7bb3cf
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 007df3acd040b3b227563c84eb68c0de495f0aef
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88466081"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194801"
 ---
 # <a name="overriding-default-precision-and-scale-for-numeric-data-types"></a>Remplacement de la précision et de l’échelle par défaut pour les types de données numériques
 Lorsque le champ SQL_DESC_TYPE d’un ARD est défini sur SQL_C_NUMERIC, en appelant **SQLBindCol** ou **SQLSetDescField**, le champ SQL_DESC_SCALE dans ARD est défini sur 0 et le champ SQL_DESC_PRECISION est défini sur une précision par défaut définie par le pilote. Cela est également vrai lorsque le champ SQL_DESC_TYPE dans un APD est défini sur SQL_C_NUMERIC, en appelant **SQLBindParameter** ou **SQLSetDescField**. Cela est vrai pour les paramètres d’entrée, d’entrée/sortie ou de sortie.  

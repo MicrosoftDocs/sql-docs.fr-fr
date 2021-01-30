@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_fulltext_semantic_register_language_statistics_db
 - sp_fulltext_semantic_register_language_statistics_db_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: bef1b104-5a44-4327-9ae4-45eae3000f7e
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: deb1973dcff95f79d70ca3f458c38208db3b1f47
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: dba0092fdad469c7ce8d762cfd16efcf5f75d6ef
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89548032"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193548"
 ---
 # <a name="sp_fulltext_semantic_register_language_statistics_db-transact-sql"></a>sp_fulltext_semantic_register_language_statistics_db (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "89548032"
   
  Vous pouvez initialiser l'extraction sémantique uniquement après avoir attaché cette base de données de statistiques linguistiques et l'avoir inscrite à l'aide de cette procédure stockée. Vous ne devez effectuer cette tâche qu'une fois pour chaque instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,7 +44,7 @@ GO
   
 ##  <a name="arguments"></a><a name="Arguments"></a> Arguments  
  [ @dbname =] '*database_name*'  
- Nom de la base de données de statistiques linguistiques de sémantique à inscrire pour l'instance actuelle de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. La base de données doit déjà être attachée. *database_name* est de **type sysname**et ne peut pas être null.  
+ Nom de la base de données de statistiques linguistiques de sémantique à inscrire pour l'instance actuelle de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. La base de données doit déjà être attachée. *database_name* est de **type sysname** et ne peut pas être null.  
   
 ## <a name="return-code-value"></a>Valeur du code de retour  
  **0** (succès) ou **1** (échec)  
@@ -74,7 +74,7 @@ GO
  Pour plus d’informations, consultez [Installer et configurer la recherche sémantique](../../relational-databases/search/install-and-configure-semantic-search.md).  
   
 ## <a name="metadata"></a>Métadonnées  
- Pour plus d’informations sur la base de données Base de langages statistiques pour la recherche sémantique installée sur une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , interrogez l’affichage catalogue [sys. fulltext_semantic_language_statistics_database &#40;&#41;Transact-SQL ](../../relational-databases/system-catalog-views/sys-fulltext-semantic-language-statistics-database-transact-sql.md).  
+ Pour plus d’informations sur la base de données Base de langages statistiques pour la recherche sémantique installée sur une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , interrogez l’affichage catalogue [sys.fulltext_semantic_language_statistics_database &#40;&#41;Transact-SQL ](../../relational-databases/system-catalog-views/sys-fulltext-semantic-language-statistics-database-transact-sql.md).  
   
 ## <a name="security"></a>Sécurité  
   

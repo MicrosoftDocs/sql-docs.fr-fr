@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - soap_endpoints_TSQL
 - sys.soap_endpoints
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: f50dcbfc-02ed-4a19-9c07-c78a5a1b3224
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: a0a41f08d7600ae25541924953c407ef12a2ab20
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0c02dba9a1d359517efc39ad73ebde3003c5bf3a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096713"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195605"
 ---
 # <a name="syssoap_endpoints-transact-sql"></a>sys.soap_endpoints (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "98096713"
 |**default_database**|**sysname**|Nom de la base de données par défaut indiqué dans l'option DATABASE =.<br /><br /> NULL = DEFAULT a été spécifié.|  
 |**default_namespace**|**nvarchar(384**|Espace de noms par défaut spécifié dans l’option espace de noms = ou `https://tempuri.org` si la valeur par défaut a été spécifiée à la place.|  
 |**default_result_schema**|**tinyint**|Valeur par défaut de l'option SCHEMA =.<br /><br /> 0 = AUCUN<br /><br /> 1 = STANDARD|  
-|**default_result_schema_desc**|**nvarchar(60)**|Description de la valeur par défaut de l'option SCHEMA =.<br /><br /> NONE<br /><br /> STANDARD|  
+|**default_result_schema_desc**|**nvarchar(60)**|Description de la valeur par défaut de l'option SCHEMA =.<br /><br /> Aucune<br /><br /> STANDARD|  
 |**is_xml_charset_enforced**|**bit**|0 = CHARACTER_SET = L'option SQL a été spécifiée.<br /><br /> 1 = CHARACTER_SET = L'option XML a été spécifiée.|  
 |**is_session_enabled**|**bit**|0 = SESSION = L'option DISABLE a été spécifiée.<br /><br /> 1 = SESSION = L'option ENABLED a été spécifiée.|  
 |**session_timeout**|**int**|Valeur spécifiée dans l'option SESSION_TIMEOUT =.|  

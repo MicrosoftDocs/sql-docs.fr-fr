@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQLRateConnection function [ODBC]
 ms.assetid: e8da2ffb-d6ef-4ca7-824f-57afd29585d8
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: cc6b217e8d9e06c4ab011d15cfe016dfefc91d76
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 40aec3459e43d2684bd80f0ced55171314551d92
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88487120"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192546"
 ---
 # <a name="sqlrateconnection-function"></a>SQLRateConnection, fonction
 **Conformité**  
@@ -53,7 +53,7 @@ SQLRETURN  SQLRateConnection(
  Entrée Si *fRequiredTransactionEnlistment* a la valeur true, *transId* représente la transaction DTC que la demande doit inscrire. Si *fRequiredTransactionEnlistment* a la valeur false, *transId* sera ignoré.  
   
  *pRating*  
- Sortie l’évaluation de la réutilisation de *hCandidateConnection*pour le *hRequest*. Cette évaluation sera comprise entre 0 et 100 (inclus).  
+ Sortie l’évaluation de la réutilisation de *hCandidateConnection* pour le *hRequest*. Cette évaluation sera comprise entre 0 et 100 (inclus).  
   
 ## <a name="returns"></a>Retours  
  SQL_SUCCESS, SQL_ERROR ou SQL_INVALID_HANDLE.  
@@ -67,7 +67,7 @@ SQLRETURN  SQLRateConnection(
 |Score|Signification (lorsque SQL_SUCCESS est retourné)|  
 |-----------|-----------------------------------------------|  
 |0|*hCandidateConnection* ne doit pas être réutilisé pour le *hRequest*.|  
-|Toutes les valeurs comprises entre 1 et 98 (inclusive)|Plus le score est élevé, plus la correspondance avec *hRequest*est proche de *hCandidateConnection* .|  
+|Toutes les valeurs comprises entre 1 et 98 (inclusive)|Plus le score est élevé, plus la correspondance avec *hRequest* est proche de *hCandidateConnection* .|  
 |99|Il n’existe que des incompatibilités dans les attributs non significatifs.  Le gestionnaire de pilotes doit arrêter la boucle d’évaluation.|  
 |100|Correspondance parfaite.  Le gestionnaire de pilotes doit arrêter la boucle d’évaluation.|  
 |Toute autre valeur supérieure à 100|*hCandidateConnection* est marqué comme Dead et ne peut pas être réutilisé même dans une demande de connexion ultérieure.|  

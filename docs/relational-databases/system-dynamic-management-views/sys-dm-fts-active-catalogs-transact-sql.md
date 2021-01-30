@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_fts_active_catalogs_TSQL
 - dm_fts_active_catalogs
@@ -21,12 +21,12 @@ ms.assetid: 40ab5453-040c-4d2e-bb49-e340cf90c3ee
 author: pmasl
 ms.author: pelopes
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 6b557073c7ad5d9aaef7f90380bf80f6ba382901
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5c9534a522e53f94d0116b9276a9080933b57453
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482730"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195160"
 ---
 # <a name="sysdm_fts_active_catalogs-transact-sql"></a>sys.dm_fts_active_catalogs (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "97482730"
 |**row_count_in_thousands**|**int**|Nombre estimé de lignes (en milliers) dans tous les index de texte intégral de ce catalogue de texte intégral.|  
 |**is_importing**|**bit**|Indique si le catalogue de texte intégral est en cours d'importation :<br /><br /> 1 = le catalogue est en cours d'importation.<br /><br /> 2 = le catalogue n'est pas en cours d'importation.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  La colonne is_importing est nouvelle dans [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] .  
   
 ## <a name="permissions"></a>Autorisations  
@@ -69,7 +69,7 @@ Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de do
   
 ## <a name="relationship-cardinalities"></a>Cardinalités de la relation  
   
-|Du|À|Relationship|  
+|Du|À|Relation|  
 |----------|--------|------------------|  
 |dm_fts_active_catalogs.database_id|dm_fts_index_population.database_id|Un-à-un|  
 |dm_fts_active_catalogs.catalog_id|dm_fts_index_population.catalog_id|Un-à-un|  

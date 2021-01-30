@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9c8de925-928b-460c-9455-779c4c37b966
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: b81d3535d2ea6a8abf18083f8d6c13d0f6ce8697
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 3573567f5588a0cd0507df3cc10afc959cb6c11e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89545863"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195054"
 ---
 # <a name="sql-server-agent-stored-procedures-transact-sql"></a>Procédures stockées de l'Agent SQL Server (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

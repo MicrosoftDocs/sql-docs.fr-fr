@@ -5,19 +5,19 @@ ms.custom: ''
 ms.date: 03/14/2017
 ms.service: sql-data-warehouse
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: 43c63b42-03cb-4fb5-8362-ec3b7e22a590
 author: ronortloff
 ms.author: rortloff
 monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest'
-ms.openlocfilehash: 2d2b3de8cf86e7597c944b827326dd070bc2ffce
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8c02aa65df689ab147d3c7312d8c1e84a513aa88
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461550"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196067"
 ---
 # <a name="sp_pdw_log_user_data_masking-azure-synapse-analytics"></a>sp_pdw_log_user_data_masking (Azure Synapse Analytics)
 [!INCLUDE[applies-to-version/asa-pdw](../../includes/applies-to-version/asa-pdw.md)]
@@ -52,7 +52,7 @@ sp_pdw_log_user_data_masking [ [ @masking_mode = ] value ] ;
   
  L’exécution de **sp_pdw_ log_user_data_masking** sans paramètres retourne l’état actuel du masquage des données utilisateur du journal TDE sur l’appareil sous la forme d’un jeu de résultats scalaire.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Le masquage des données utilisateur dans [!INCLUDE[ssSDW](../../includes/sssdw-md.md)] les journaux d’activité permet le remplacement des littéraux par des valeurs constantes prédéfinies dans des instructions **Select** et DML, car elles peuvent contenir des données utilisateur. La définition de *masking_mode* sur 1 ne masque pas les métadonnées, telles que les noms de colonne ou de table. La définition de *masking_mode* sur 2 supprime les instructions avec des métadonnées, telles que les noms de colonne ou de table.  
   
  Le masquage des données utilisateur dans [!INCLUDE[ssSDW](../../includes/sssdw-md.md)] les journaux d’activité est implémenté de la manière suivante :  

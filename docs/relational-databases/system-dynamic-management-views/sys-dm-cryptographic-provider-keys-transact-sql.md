@@ -6,7 +6,7 @@ ms.date: 06/10/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_cryptographic_provider_keys_TSQL
 - dm_cryptographic_provider_keys_TSQL
@@ -19,19 +19,19 @@ helpviewer_keywords:
 ms.assetid: 5a8c1421-c56b-44b5-96e5-4f01782a0c7c
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 668f98d9b15fd38792f7a6a48a92c955d17ca94d
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 9fcfeed749aea4fa18ac74ba4e78cc9dfa368828
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099929"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196299"
 ---
 # <a name="sysdm_cryptographic_provider_keys-transact-sql"></a>sys.dm_cryptographic_provider_keys (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne des informations sur les clés fournies par un fournisseur de gestion de clés extensible (EKM).  
 
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

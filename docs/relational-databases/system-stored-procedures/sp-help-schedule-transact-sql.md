@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_help_schedule
 - sp_help_schedule_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: b2fc4ce1-0a8e-44d2-b206-7dc7b258d8c9
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 9e6dbddc56d00732495bce71b7c05c79f76adb20
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 24a0d594e02fad844d651933bab8d89bc9d35bb2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538813"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193527"
 ---
 # <a name="sp_help_schedule-transact-sql"></a>sp_help_schedule (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Contient des informations sur les planifications.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,9 +48,9 @@ sp_help_schedule
   
 `[ @schedule_name = ] 'schedule_name'` Nom de la planification à répertorier. *schedule_name* est de **type sysname**, sans valeur par défaut. *Schedule_id* ou *schedule_name* peuvent être spécifiés.  
   
-`[ @attached_schedules_only = ] attached_schedules_only ]` Spécifie s’il faut afficher uniquement les planifications auxquelles un travail est attaché. *attached_schedules_only* est de **bit**, avec **0**comme valeur par défaut. Lorsque *attached_schedules_only* a la **valeur 0**, toutes les planifications sont affichées. Lorsque *attached_schedules_only* a la valeur **1**, le jeu de résultats contient uniquement les planifications attachées à un travail.  
+`[ @attached_schedules_only = ] attached_schedules_only ]` Spécifie s’il faut afficher uniquement les planifications auxquelles un travail est attaché. *attached_schedules_only* est de **bit**, avec **0** comme valeur par défaut. Lorsque *attached_schedules_only* a la **valeur 0**, toutes les planifications sont affichées. Lorsque *attached_schedules_only* a la valeur **1**, le jeu de résultats contient uniquement les planifications attachées à un travail.  
   
-`[ @include_description = ] include_description` Spécifie s’il faut inclure les descriptions dans le jeu de résultats. *include_description* est de **bit**, avec **0**comme valeur par défaut. Lorsque *include_description* a la **valeur 0**, la *schedule_description* colonne du jeu de résultats contient un espace réservé. Lorsque *include_description* a la valeur **1**, la description de la planification est incluse dans le jeu de résultats.  
+`[ @include_description = ] include_description` Spécifie s’il faut inclure les descriptions dans le jeu de résultats. *include_description* est de **bit**, avec **0** comme valeur par défaut. Lorsque *include_description* a la **valeur 0**, la *schedule_description* colonne du jeu de résultats contient un espace réservé. Lorsque *include_description* a la valeur **1**, la description de la planification est incluse dans le jeu de résultats.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

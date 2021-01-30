@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a8c2fb81-9644-4943-9391-fa62b37056de
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 8ac538bdcf2d54a4d0a2966871620e7c56e84cc6
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 484e127ae9f586ca569eeced2baec4ac9089d2db
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092628"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194660"
 ---
 # <a name="extended-events-catalog-views-transact-sql"></a>Affichages catalogue des événements étendus (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]

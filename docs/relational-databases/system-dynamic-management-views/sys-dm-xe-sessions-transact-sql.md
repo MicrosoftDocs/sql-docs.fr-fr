@@ -6,7 +6,7 @@ ms.date: 06/10/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_xe_sessions_TSQL
 - dm_xe_sessions
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: defd6efb-9507-4247-a91f-dc6ff5841e17
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 3acce4d01f26c3fcc818201e05c33ab9a46116a8
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: d915555f2e8f6fc3cbc3df4b87bc482ed6983483
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099704"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192909"
 ---
 # <a name="sysdm_xe_sessions-transact-sql"></a>sys.dm_xe_sessions (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

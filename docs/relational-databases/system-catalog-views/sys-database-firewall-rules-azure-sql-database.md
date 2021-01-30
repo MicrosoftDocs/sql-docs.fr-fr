@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 03/14/2017
 ms.service: sql-database
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.database_firewall_rules_TSQL
 - database_firewall_rules_TSQL
@@ -20,17 +20,17 @@ ms.assetid: 2e821593-3b9f-43d6-a99b-1ceffe177faf
 author: VanMSFT
 ms.author: vanto
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: 244c4245c81e264ea82c5434f8788b3960700641
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6e09c2043494b2d01adb3781b7b3c4336a3b9a1d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475210"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195874"
 ---
 # <a name="sysdatabase_firewall_rules-azure-sql-database"></a>sys.database_firewall_rules (Azure SQL Database)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]
 
-  Retourne des informations sur les paramètres de pare-feu au niveau de la base de données associés à votre [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] . Les paramètres de pare-feu de niveau base de données sont particulièrement utiles lors de l’utilisation des utilisateurs de base de données autonome. Pour plus d’informations, consultez [Utilisateurs de base de données autonome - Rendre votre base de données portable](../../relational-databases/security/contained-database-users-making-your-database-portable.md).  
+  Retourne des informations sur les paramètres de pare-feu au niveau de la base de données associés à votre [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] . Les paramètres de pare-feu de niveau base de données sont particulièrement utiles lors de l’utilisation des utilisateurs de base de données autonome. Pour plus d’informations, voir [Utilisateurs de base de données autonome - Rendre votre base de données portable](../../relational-databases/security/contained-database-users-making-your-database-portable.md).  
   
  La vue `sys.database_firewall_rules` contient les colonnes suivantes :  
   
@@ -43,7 +43,7 @@ ms.locfileid: "97475210"
 |create_date|**Date/heure**|Date et heure UTC de création du paramètre de pare-feu de niveau base de données.|  
 |modify_date|**Date/heure**|Date et heure UTC de la dernière modification du paramètre de pare-feu de niveau base de données.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Pour renvoyer des informations sur les paramètres de pare-feu au niveau du serveur associés à votre Microsoft Azure SQL Database, utilisez [sys.firewall_rules (Azure SQL Database)](../../relational-databases/system-catalog-views/sys-firewall-rules-azure-sql-database.md).  
   
 ## <a name="permissions"></a>Autorisations  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.fn_cdc_get_column_ordinal
 - fn_cdc_get_column_ordinal_TSQL
@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 4bb21a57-2b94-4208-8bdf-6a3e2681d881
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 4ebab4e1b02b325c5abb7e7b6fbc62b2b970ae50
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 9b778fca1203a7330b1d9f403a31e38ce71433c0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094991"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194456"
 ---
 # <a name="sysfn_cdc_get_column_ordinal-transact-sql"></a>sys.fn_cdc_get_column_ordinal (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne l’ordinal de colonne de la colonne spécifiée telle qu’elle apparaît dans la [table de modifications](../../relational-databases/system-tables/cdc-capture-instance-ct-transact-sql.md) associée à l’instance de capture spécifiée.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

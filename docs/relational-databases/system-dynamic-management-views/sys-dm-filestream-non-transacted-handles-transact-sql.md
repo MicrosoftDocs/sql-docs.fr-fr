@@ -6,7 +6,7 @@ ms.date: 06/10/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.dm_filestream_non_transacted_handles_TSQL
 - dm_filestream_non_transacted_handles
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 507ec125-67dc-450a-9081-94cde5444a92
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: e6b5082f5ad2105d91c23d3d1cca3e959b01343a
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: a9f5d61ef6c4ebda6c9f36fcbaad273cd853be16
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097639"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195112"
 ---
 # <a name="sysdm_filestream_non_transacted_handles-transact-sql"></a>sys.dm_filestream_non_transacted_handles (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

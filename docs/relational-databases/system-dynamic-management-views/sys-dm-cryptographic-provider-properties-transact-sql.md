@@ -6,7 +6,7 @@ ms.date: 06/10/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_cryptographic_provider_properties_TSQL
 - sys.dm_cryptographic_provider_properties
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 024b0095-6766-4189-a39a-d316c5ec2874
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: bf565e0ace07c592a5ae345b7e9b2d04c3aff23d
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: fc068cd362c9fd0df5552e92ba1e303ed451d6a2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095219"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196276"
 ---
 # <a name="sysdm_cryptographic_provider_properties-transact-sql"></a>sys.dm_cryptographic_provider_properties (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

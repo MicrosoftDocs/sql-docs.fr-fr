@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - fn_cdc_decrement_lsn
 - sys.fn_cdc_decrement_lsn_TSQL
@@ -21,19 +21,19 @@ helpviewer_keywords:
 ms.assetid: 83c182ad-4713-439b-8769-9b7408aec8b4
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 460af637f6829940d3dce5282e2bab067a6b08c7
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: b40ee742575133895b6f0e3f55f87d784ab0a144
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093872"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194468"
 ---
 # <a name="sysfn_cdc_decrement_lsn-transact-sql"></a>sys.fn_cdc_decrement_lsn (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne le numéro séquentiel dans le journal précédent dans la séquence basée sur le numéro séquentiel dans le journal spécifié.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

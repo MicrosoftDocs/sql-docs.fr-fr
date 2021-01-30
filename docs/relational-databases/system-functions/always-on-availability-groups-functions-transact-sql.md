@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: 293cc233-8688-4823-9887-176ed772f53d
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: a4fb9863e1fc8360a95aba608eb94a3103da3a48
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4f5fa49df257451a48f390a250a3cfa63dfb2225
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88321825"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196223"
 ---
 # <a name="always-on-availability-groups-functions-transact-sql"></a>Fonctions de groupes de disponibilité Always On (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

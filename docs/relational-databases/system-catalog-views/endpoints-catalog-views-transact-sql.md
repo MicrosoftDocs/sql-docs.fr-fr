@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 557bc2f2-135c-4e96-be5a-dfbdfd2ec932
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 7593d6dfc9fcb6a9536bd43ef1573025e568f307
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 43aafec74405d163ac276e41b8508dad1e1541fc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092631"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194643"
 ---
 # <a name="endpoints-catalog-views-transact-sql"></a>Affichages catalogue des points de terminaison (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_showrowreplicainfo_TSQL
 - sp_showrowreplicainfo
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 6a9dbc1a-e1e1-40c4-97cb-8164a2288f76
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 5a46fd42c9caa69e808635fc9dcc5125403697a6
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: f2a66e8e6123adef864ca2beadef31cd4a9cbffe
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543034"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193491"
 ---
 # <a name="sp_showrowreplicainfo-transact-sql"></a>sp_showrowreplicainfo (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Affiche des informations concernant une ligne d'une table utilisée en tant qu'article dans une réplication de fusion. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -45,9 +45,9 @@ sp_showrowreplicainfo [ [ @ownername = ] 'ownername' ]
   
 `[ @tablename = ] 'tablename'` Nom de la table qui contient la ligne pour laquelle les informations sont retournées. *TableName* est de **type sysname**, avec NULL comme valeur par défaut.  
   
-`[ @rowguid = ] rowguid` Identificateur unique de la ligne. *rowguid* est de type **uniqueidentifier**et n’a pas de valeur par défaut.  
+`[ @rowguid = ] rowguid` Identificateur unique de la ligne. *rowguid* est de type **uniqueidentifier** et n’a pas de valeur par défaut.  
   
-`[ @show = ] 'show'` Détermine la quantité d’informations à retourner dans le jeu de résultats. *Show* est de type **nvarchar (20),** avec les deux valeurs par défaut. Si la **ligne**est, seules les informations de version de ligne sont retournées. Si les **colonnes**sont, seules les informations de version de colonne sont retournées. Dans **les deux**cas, les informations de ligne et de colonne sont retournées.  
+`[ @show = ] 'show'` Détermine la quantité d’informations à retourner dans le jeu de résultats. *Show* est de type **nvarchar (20),** avec les deux valeurs par défaut. Si la **ligne** est, seules les informations de version de ligne sont retournées. Si les **colonnes** sont, seules les informations de version de colonne sont retournées. Dans **les deux** cas, les informations de ligne et de colonne sont retournées.  
   
 ## <a name="result-sets-for-row-information"></a>Ensemble de résultats pour les informations de ligne  
   

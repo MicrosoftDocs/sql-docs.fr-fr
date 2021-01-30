@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_delete_backuphistory
 - sp_delete_backuphistory_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: bdb56834-616e-47e4-b942-e895d2325e97
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: f4aa6b663bdfe8f1b5da5c00b4da26e5b7817e19
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: ac5426940ed3fd2a94c055968a22ec1000e4d564
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549853"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195552"
 ---
 # <a name="sp_delete_backuphistory-transact-sql"></a>sp_delete_backuphistory (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "89549853"
 > [!NOTE]  
 >  Les tables d’historique de sauvegarde et de restauration résident dans la base de données **msdb** .  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

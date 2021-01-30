@@ -6,7 +6,7 @@ ms.date: 06/10/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_hadr_availability_replica_cluster_nodes
 - sys.dm_hadr_availability_replica_cluster_nodes_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: dbd7e416-badd-4332-a45c-438aa0145a99
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 7b9fac113b31d21b36b573f92b073bc0db408370
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c2e52bb798ac51c622c213a28a854d20f21a2442
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092800"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193208"
 ---
 # <a name="sysdm_hadr_availability_replica_cluster_nodes-transact-sql"></a>sys.dm_hadr_availability_replica_cluster_nodes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

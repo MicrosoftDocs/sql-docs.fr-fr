@@ -1,11 +1,11 @@
 ---
 description: sys.dm_fts_semantic_similarity_population (Transact-SQL)
-title: sys. dm_fts_semantic_similarity_population (Transact-SQL) | Microsoft Docs
+title: sys.dm_fts_semantic_similarity_population (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_fts_semantic_similarity_population_TSQL
 - sys.dm_fts_semantic_similarity_population
@@ -19,19 +19,19 @@ ms.assetid: 33666f28-c370-47e2-a932-190316ed5f69
 author: pmasl
 ms.author: pelopes
 ms.reviewer: mikeray
-ms.openlocfilehash: 2857896ffefb5591482a44051081aa1034f3fee0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c031c0794dc541d0363edb8e0c1102bc885882d4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88398485"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196251"
 ---
 # <a name="sysdm_fts_semantic_similarity_population-transact-sql"></a>sys.dm_fts_semantic_similarity_population (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne une ligne d'informations d'état à propos du remplissage de l'index de ressemblance de document pour chaque index de ressemblance de chaque table associée à un index sémantique.  
   
- L'étape de remplissage suit l'étape d'extraction. Pour obtenir des informations d’État sur l’étape d’extraction de similarité, consultez [sys. dm_fts_index_population &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-population-transact-sql.md).  
+ L'étape de remplissage suit l'étape d'extraction. Pour obtenir des informations sur l’état de l’étape d’extraction de similarité, consultez [sys.dm_fts_index_population &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-population-transact-sql.md).  
     
 ||||  
 |-|-|-|  
@@ -53,7 +53,7 @@ ms.locfileid: "88398485"
  Pour plus d’informations, consultez [gérer et surveiller la recherche sémantique](../../relational-databases/search/manage-and-monitor-semantic-search.md).  
   
 ## <a name="metadata"></a>Métadonnées  
- Pour plus d’informations sur l’état de l’indexation sémantique, interrogez [sys. dm_fts_index_population &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-population-transact-sql.md).  
+ Pour plus d’informations sur l’état de l’indexation sémantique, interrogez [sys.dm_fts_index_population &#40;&#41;Transact-SQL ](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-population-transact-sql.md).  
   
 ## <a name="security"></a>Sécurité  
   

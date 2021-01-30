@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helprolemember_TSQL
 - sp_helprolemember
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 42797510-aa5d-4564-85ac-27418419af9c
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: bbfec9641e543b4774a8d8d6f7a288bd2fe23c8a
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 223d0fe0a72ed72f312e1aba5402ee9c14e9db63
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89541700"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195084"
 ---
 # <a name="sp_helprolemember-transact-sql"></a>sp_helprolemember (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne des informations sur les membres directs d'un rôle dans la base de données active.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

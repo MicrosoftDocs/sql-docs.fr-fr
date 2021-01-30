@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_replmonitorhelppublicationthresholds
 - sp_replmonitorhelppublicationthresholds_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: d6b1aa4b-3369-4255-a892-c0e5cc9cb693
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: a41b93878178bd47574acc7ae11da69e11c76016
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 1cfd6db6845702b624e98a31980a46f2fc6fd4f5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543105"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193913"
 ---
 # <a name="sp_replmonitorhelppublicationthresholds-transact-sql"></a>sp_replmonitorhelppublicationthresholds (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Retourne l'ensemble de mesures de seuil pour une publication analysée. Cette procédure stockée, utilisée pour surveiller la réplication, est exécutée sur la base de données du serveur de distribution.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,7 +48,7 @@ sp_replmonitorhelppublicationthresholds [ @publisher = ] 'publisher'
   
 `[ @publication = ] 'publication'` Nom de la publication. *publication* est de **type sysname**, sans valeur par défaut.  
   
-`[ @publication_type = ] publication_type` Si le type de publication. *publication_type* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @publication_type = ] publication_type` Si le type de publication. *publication_type* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

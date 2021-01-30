@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 03/03/2017
 ms.service: sql-database
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.resource_usage_TSQL
 - resource_usage
@@ -20,12 +20,12 @@ ms.assetid: b90147a3-fd8e-408e-961d-5c7000e068ad
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: 0cd6475d1bf7fed54221f9ef63366e44c660134f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 1c9ef43ee6834a890359ea46bcab7ff388ec7d4f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97411843"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193007"
 ---
 # <a name="sysresource_usage-azure-sql-database"></a>sys.resource_usage (Azure SQL Database)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "97411843"
 |-------------|---------------|-----------------|  
 |time|**datetime**|Heure (UTC) par incréments d'heures.|  
 |database_name|**nvarchar**|Nom de la base de données utilisateur.|  
-|sku|**nvarchar**|Nom de la SKU. Les valeurs possibles sont les suivantes :<br /><br /> Web<br /><br /> Entreprises<br /><br /> De base<br /><br /> Standard<br /><br /> Premium|  
+|sku|**nvarchar**|Nom de la SKU. Les valeurs possibles sont les suivantes :<br /><br /> Web<br /><br /> Entreprises<br /><br /> De base<br /><br /> standard<br /><br /> Premium|  
 |usage_in_seconds|**int**|Somme du temps processeur utilisé dans l'heure.<br /><br /> Remarque : cette colonne est déconseillée pour v11 et ne s’applique pas à v12. **La valeur est toujours définie sur 0.**|  
 |storage_in_megabytes|**decimal**|Taille de stockage maximale pour l'heure, y compris les données de la base de données, index, procédures stockées et métadonnées.|  
   

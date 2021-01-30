@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_post_msx_operation
 - sp_post_msx_operation_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 085deef8-2709-4da9-bb97-9ab32effdacf
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 304eef1c0e707ecb77fb8d13d5e2b524eb9e9e00
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: be9ef622f686044800f634837819b4cba92821a6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89545979"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196039"
 ---
 # <a name="sp_post_msx_operation-transact-sql"></a>sp_post_msx_operation (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Insère des opérations (lignes) dans la table système **sysdownloadlist** pour les serveurs cibles à télécharger et exécuter.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,17 +46,17 @@ sp_post_msx_operation
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @operation = ] 'operation'` Type d’opération de l’opération publiée. *operation*est de type **varchar (64)**, sans valeur par défaut. Les opérations valides dépendent de *object_type*.  
+`[ @operation = ] 'operation'` Type d’opération de l’opération publiée. *operation* est de type **varchar (64)**, sans valeur par défaut. Les opérations valides dépendent de *object_type*.  
   
 |Type d'objet|Opération|  
 |-----------------|---------------|  
-|**ATTENTE**|INSERT<br /><br /> UPDATE<br /><br /> Suppression<br /><br /> ÉCRAN D’ACCUEIL<br /><br /> STOP|  
+|**ATTENTE**|INSERT<br /><br /> UPDATE<br /><br /> Suppression<br /><br /> START<br /><br /> STOP|  
 |**SERVEURS**|RE-ENLIST<br /><br /> DEFECT<br /><br /> SYNC-TIME<br /><br /> SET-POLL|  
 |**PROGRAMMATEUR**|INSERT<br /><br /> UPDATE<br /><br /> Suppression|  
   
-`[ @object_type = ] 'object'` Type d’objet pour lequel une opération doit être publiée. Les types valides sont **Job**, **Server**et **Schedule**. l' *objet* est de type **varchar (64)**, avec **Job**comme valeur par défaut.  
+`[ @object_type = ] 'object'` Type d’objet pour lequel une opération doit être publiée. Les types valides sont **Job**, **Server** et **Schedule**. l' *objet* est de type **varchar (64)**, avec **Job** comme valeur par défaut.  
   
-`[ @job_id = ] job_id` Numéro d’identification du travail auquel l’opération s’applique. *job_id* est de type **uniqueidentifier**, sans valeur par défaut. **0x00** indique tous les travaux. Si l' *objet* est **serveur**, *job_id*n’est pas nécessaire.  
+`[ @job_id = ] job_id` Numéro d’identification du travail auquel l’opération s’applique. *job_id* est de type **uniqueidentifier**, sans valeur par défaut. **0x00** indique tous les travaux. Si l' *objet* est **serveur**, *job_id* n’est pas nécessaire.  
   
 `[ @specific_target_server = ] 'target_server'` Nom du serveur cible pour lequel l’opération spécifiée s’applique. Si *job_id* est spécifié, mais que *target_server* n’est pas spécifié, les opérations sont publiées pour tous les serveurs de travail du travail. *target_server* est de type **nvarchar (30)**, avec NULL comme valeur par défaut.  
   
@@ -73,7 +73,7 @@ sp_post_msx_operation
 ## <a name="remarks"></a>Notes  
  **sp_post_msx_operation** doit être exécuté à partir de la base de données **msdb** .  
   
- les **sp_post_msx_operation** peuvent toujours être appelées en toute sécurité, car elles déterminent d’abord si le serveur actuel est un agent multiserveur Microsoft SQL Server et, si tel est le cas, si l' *objet*est un travail multiserveur.  
+ les **sp_post_msx_operation** peuvent toujours être appelées en toute sécurité, car elles déterminent d’abord si le serveur actuel est un agent multiserveur Microsoft SQL Server et, si tel est le cas, si l' *objet* est un travail multiserveur.  
   
  Une fois qu’une opération a été publiée, elle apparaît dans la table **sysdownloadlist** . Après qu'un travail a été créé et publié, les modifications ultérieures apportées à ce travail doivent être aussi communiquées aux serveurs cibles (TSX). L'opération est également réalisée à l'aide de la liste de téléchargement. .  
   

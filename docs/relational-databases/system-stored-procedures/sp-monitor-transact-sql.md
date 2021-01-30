@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_monitor_TSQL
 - sp_monitor
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: cb628496-2f9b-40e4-b018-d0831c4cb018
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: f214abb7b20c42ec62f1bc35d85222e0033798d1
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: f046c3e6fe81c7dac489fcdd88237ecb2d3747d0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89544748"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195468"
 ---
 # <a name="sp_monitor-transact-sql"></a>sp_monitor (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Affiche des statistiques sur [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -63,7 +63,7 @@ sp_monitor
 ## <a name="remarks"></a>Notes  
  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] assure le suivi, par le biais d'une série de fonctions, du volume de son activité. L’exécution de **sp_monitor** affiche les valeurs actuelles retournées par ces fonctions et indique leur nombre modifié depuis la dernière exécution de la procédure.  
   
- Pour chaque colonne, les statistiques sont imprimées au format *Number*(*Number*)-*Number*% ou *Number*(*Number*). Le premier *nombre* fait référence au nombre de secondes (pour **cpu_busy**, **io_busy**et **inactif**) ou au nombre total (pour les autres variables) depuis le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] redémarrage de. Le *nombre* entre parenthèses fait référence au nombre de secondes ou au nombre total depuis la dernière exécution de **sp_monitor** . Le pourcentage est le pourcentage de temps écoulé depuis la dernière exécution de **sp_monitor** . Par exemple, si le rapport indique **cpu_busy** en tant que 4250 (215)-68%, le processeur est occupé 4250 secondes depuis [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] le dernier démarrage de, 215 secondes depuis la dernière exécution de **sp_monitor** et 68% du temps total depuis la dernière exécution de **sp_monitor** .  
+ Pour chaque colonne, les statistiques sont imprimées au format *Number*(*Number*)-*Number*% ou *Number*(*Number*). Le premier *nombre* fait référence au nombre de secondes (pour **cpu_busy**, **io_busy** et **inactif**) ou au nombre total (pour les autres variables) depuis le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] redémarrage de. Le *nombre* entre parenthèses fait référence au nombre de secondes ou au nombre total depuis la dernière exécution de **sp_monitor** . Le pourcentage est le pourcentage de temps écoulé depuis la dernière exécution de **sp_monitor** . Par exemple, si le rapport indique **cpu_busy** en tant que 4250 (215)-68%, le processeur est occupé 4250 secondes depuis [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] le dernier démarrage de, 215 secondes depuis la dernière exécution de **sp_monitor** et 68% du temps total depuis la dernière exécution de **sp_monitor** .  
   
 ## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle serveur fixe **sysadmin** .  

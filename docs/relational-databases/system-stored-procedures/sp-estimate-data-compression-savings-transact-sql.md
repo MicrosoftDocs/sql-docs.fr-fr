@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_estimate_data_compression_savings_TSQL
 - sp_estimate_data_compression_savings
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 6f6c7150-e788-45e0-9d08-d6c2f4a33729
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 4615bc9a30d28224ee3d1ed906a704af923d046d
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 938e6994f5d19f59023009cf9806ca62280dc5b9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543476"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193556"
 ---
 # <a name="sp_estimate_data_compression_savings-transact-sql"></a>sp_estimate_data_compression_savings (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "89543476"
 > [!NOTE]  
 > Si les données existantes sont fragmentées, vous pouvez être en mesure de réduire leur taille sans utiliser la compression en reconstruisant l'index. Pour les index, le facteur de remplissage sera appliqué pendant une reconstruction d'index. Cela pourrait augmenter la taille de l'index.  
 
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -63,10 +63,10 @@ sp_estimate_data_compression_savings
  Nom du schéma de la table ou de la vue indexée sur laquelle se trouve l'index. *object_name* est de type **sysname**.  
   
  [ @index_id =] *index_id*  
- Identificateur de l’index. *index_id* est de **type int**et peut prendre l’une des valeurs suivantes : le numéro d’ID d’un index, NULL ou 0 si *object_id* est un segment de mémoire. Pour retourner des informations sur tous les index d'une table de base ou d'une vue, spécifiez la valeur NULL. Si vous spécifiez NULL, vous devez également spécifier NULL pour *partition_number*.  
+ Identificateur de l’index. *index_id* est de **type int** et peut prendre l’une des valeurs suivantes : le numéro d’ID d’un index, NULL ou 0 si *object_id* est un segment de mémoire. Pour retourner des informations sur tous les index d'une table de base ou d'une vue, spécifiez la valeur NULL. Si vous spécifiez NULL, vous devez également spécifier NULL pour *partition_number*.  
   
  [ @partition_number =] *partition_number*  
- Numéro de partition dans l'objet. *partition_number* est de **type int**et peut prendre l’une des valeurs suivantes : le numéro de partition d’un index ou d’un segment de mémoire, null ou 1 pour un index ou un segment de mémoire non partitionné.  
+ Numéro de partition dans l'objet. *partition_number* est de **type int** et peut prendre l’une des valeurs suivantes : le numéro de partition d’un index ou d’un segment de mémoire, null ou 1 pour un index ou un segment de mémoire non partitionné.  
   
  Pour spécifier la partition, vous pouvez également spécifier la fonction [$partition](../../t-sql/functions/partition-transact-sql.md) . Pour retourner des informations pour toutes les partitions de l'objet propriétaire, spécifiez NULL.  
   
@@ -110,7 +110,7 @@ sp_estimate_data_compression_savings
  Avant SQL Server 2019, cette procédure ne s’appliquait pas aux index ColumnStore et n’acceptait donc pas les paramètres de compression de données COLUMNSTORE et COLUMNSTORE_ARCHIVE.  À compter de SQL Server 2019, les index ColumnStore peuvent être utilisés à la fois comme un objet source pour l’estimation et comme type de compression demandé.
 
  > [!IMPORTANT]
- > Lorsque [les métadonnées tempdb à mémoire optimisée](../databases/tempdb-database.md#memory-optimized-tempdb-metadata) sont activées dans [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] , la création d’index ColumnStore sur des tables temporaires n’est pas prise en charge. En raison de cette limitation, sp_estimate_data_compression_savings n’est pas prise en charge avec les paramètres de compression de données COLUMNSTORE et COLUMNSTORE_ARCHIVE lorsque les métadonnées TempDB mémoire optimisées sont activées.
+ > Lorsque [les métadonnées tempdb à mémoire optimisée](../databases/tempdb-database.md#memory-optimized-tempdb-metadata) sont activées dans [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] , la création d’index ColumnStore sur des tables temporaires n’est pas prise en charge. En raison de cette limitation, sp_estimate_data_compression_savings n’est pas pris en charge avec les paramètres de compression de données COLUMNSTORE et COLUMNSTORE_ARCHIVE lorsque Memory-Optimized métadonnées TempDB sont activées.
 
 ## <a name="considerations-for-columnstore-indexes"></a>Remarques pour les index columnstore
  À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] , `sp_estimate_compression_savings` prend en charge l’estimation de la compression d’archive ColumnStore et ColumnStore. Contrairement à la compression de page et de ligne, l’application de la compression ColumnStore à un objet requiert la création d’un nouvel index ColumnStore. Pour cette raison, lorsque vous utilisez les options COLUMNSTORE et COLUMNSTORE_ARCHIVE de cette procédure, le type de l’objet source fourni à la procédure détermine le type d’index COLUMNSTORE utilisé pour l’estimation de la taille compressée. Le tableau suivant illustre les objets de référence utilisés pour estimer les économies de compression pour chaque type d’objet source lorsque le @data_compression paramètre est défini sur COLUMNSTORE ou COLUMNSTORE_ARCHIVE.

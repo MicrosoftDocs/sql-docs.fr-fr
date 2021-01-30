@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_syspolicy_add_policy_category_subscription
 - sp_syspolicy_add_policy_category_subscription_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 4284f550-9a3f-4726-8181-15e407fbf08f
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: ba22b7025aa30216d94804440fec2c86eea5fc09
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 279cec943ce0e93556442c3ec29c2139764e078c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88485657"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195971"
 ---
 # <a name="sp_syspolicy_add_policy_category_subscription-transact-sql"></a>sp_syspolicy_add_policy_category_subscription (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -45,13 +45,13 @@ sp_syspolicy_add_policy_category_subscription [ @target_type = ] 'target_type'
 ## <a name="arguments"></a>Arguments  
 `[ @target_type = ] 'target_type'` Type de cible de l’abonnement aux catégories. *target_type* est de **type sysname**, est obligatoire et doit avoir la valeur’Database'.  
   
-`[ @target_object = ] 'target_object'` Nom de la base de données qui s’abonnera à la catégorie. *target_object* est de **type sysname**et est obligatoire.  
+`[ @target_object = ] 'target_object'` Nom de la base de données qui s’abonnera à la catégorie. *target_object* est de **type sysname** et est obligatoire.  
   
-`[ @policy_category = ] 'policy_category'` Nom de la catégorie de stratégie à laquelle s’abonner. *policy_category* est de **type sysname**et est obligatoire.  
+`[ @policy_category = ] 'policy_category'` Nom de la catégorie de stratégie à laquelle s’abonner. *policy_category* est de **type sysname** et est obligatoire.  
   
  Pour obtenir des valeurs pour *policy_category*, interrogez la vue système msdb.dbo.syspolicy_policy_categories.  
   
-`[ @policy_category_subscription_id = ] policy_category_subscription_id` Identificateur de l’abonnement aux catégories. *policy_category_subscription_id* est de **type int**et est retourné en tant que output.  
+`[ @policy_category_subscription_id = ] policy_category_subscription_id` Identificateur de l’abonnement aux catégories. *policy_category_subscription_id* est de **type int** et est retourné en tant que output.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

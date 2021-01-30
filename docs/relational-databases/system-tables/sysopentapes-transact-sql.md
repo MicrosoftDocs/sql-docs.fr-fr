@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysopentapes
 - sysopentapes_TSQL
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: c066ca9b-9cfd-46b1-90a3-5c8dc9e7b6ae
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 0cb05c0ac88f7f362651b872fa84598a656ff25d
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 133bbf06a4c25ba050287e83dcfd9005594483f4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096056"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195398"
 ---
 # <a name="sysopentapes-transact-sql"></a>sysopentapes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

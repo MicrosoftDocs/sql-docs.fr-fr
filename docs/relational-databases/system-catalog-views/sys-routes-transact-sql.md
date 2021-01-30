@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - routes
 - routes_TSQL
@@ -21,12 +21,12 @@ ms.assetid: 8fc65915-8bd6-425b-95d9-6a8468cb1e48
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016||>=sql-server-linux-2017
-ms.openlocfilehash: 3b5264712e226a67f4ea3ec602d546bd9ef014dd
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c056f72ea2ef662132d0f2063550956a48a3d947
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097971"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197809"
 ---
 # <a name="sysroutes-transact-sql"></a>sys.routes (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

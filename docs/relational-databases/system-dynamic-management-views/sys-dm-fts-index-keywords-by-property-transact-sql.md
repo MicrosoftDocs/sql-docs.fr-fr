@@ -1,12 +1,12 @@
 ---
 description: sys.dm_fts_index_keywords_by_property (Transact-SQL)
-title: sys. dm_fts_index_keywords_by_property (Transact-SQL) | Microsoft Docs
+title: sys.dm_fts_index_keywords_by_property (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_fts_index_keywords_by_property
 - dm_fts_index_keywords_by_property_TSQL
@@ -22,19 +22,19 @@ helpviewer_keywords:
 ms.assetid: fa41e052-a79a-4194-9b1a-2885f7828500
 author: pmasl
 ms.author: pelopes
-ms.openlocfilehash: bcb2864644941786244b19f0a3aa08dc25f7dca6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9052c7d64ab78c2e6eca1388ed08903365b6e129
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88447560"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196260"
 ---
 # <a name="sysdm_fts_index_keywords_by_property-transact-sql"></a>sys.dm_fts_index_keywords_by_property (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne tout le contenu en rapport avec les propriétés dans l'index de recherche en texte intégral d'une table donnée. Cela inclut toutes les données qui appartiennent à une propriété inscrite par la liste de propriétés de recherche associée à cet index de recherche en texte intégral.  
   
- sys. dm_fts_index_keywords_by_property est une fonction de gestion dynamique qui vous permet de voir les propriétés inscrites qui ont été émises par les IFilters au moment de l’indexation, ainsi que le contenu exact de chaque propriété dans chaque document indexé.  
+ sys.dm_fts_index_keywords_by_property est une fonction de gestion dynamique qui vous permet de voir les propriétés inscrites qui ont été émises par les IFilters au moment de l’indexation, ainsi que le contenu exact de chaque propriété dans chaque document indexé.  
   
  **Pour consulter tout le contenu au niveau du document (notamment le contenu en rapport avec les propriétés)**  
   
@@ -60,7 +60,7 @@ OBJECT_ID('table_name')
   
 ## <a name="arguments"></a>Arguments  
  db_id («*database_name*»)  
- Appel à la fonction [DB_ID ()](../../t-sql/functions/db-id-transact-sql.md) . Cette fonction accepte un nom de base de données et retourne l’ID de base de données, que sys. dm_fts_index_keywords_by_property utilise pour rechercher la base de données spécifiée. Si *database_name* est omis, la fonction retourne l’ID de la base de données active.  
+ Appel à la fonction [DB_ID ()](../../t-sql/functions/db-id-transact-sql.md) . Cette fonction accepte un nom de base de données et retourne l’ID de base de données, que sys.dm_fts_index_keywords_by_property utilise pour rechercher la base de données spécifiée. Si *database_name* est omis, la fonction retourne l’ID de la base de données active.  
   
  object_id («*table_name*»)  
  Appel à la fonction [OBJECT_ID ()](../../t-sql/functions/object-id-transact-sql.md) . Cette fonction accepte un nom de table et retourne l'ID de la table contenant l'index de recherche en texte intégral à examiner.  
@@ -110,7 +110,7 @@ GO
  Requiert l'autorisation SELECT sur les colonnes couvertes par l'index de recherche en texte intégral et les autorisations CREATE FULLTEXT CATALOG.  
   
 ## <a name="examples"></a>Exemples  
- L'exemple suivant retourne des mots clés de la propriété `Author` dans l'index de recherche en texte intégral de la table `Production.Document` de l'exemple de base de données `AdventureWorks`. L’exemple utilise l’alias `KWBPOP` pour la table retournée par **sys. dm_fts_index_keywords_by_property**. L’exemple utilise des jointures internes pour combiner des colonnes de [sys. registered_search_properties](../../relational-databases/system-catalog-views/sys-registered-search-properties-transact-sql.md) et [sys. fulltext_indexes](../../relational-databases/system-catalog-views/sys-fulltext-indexes-transact-sql.md).  
+ L'exemple suivant retourne des mots clés de la propriété `Author` dans l'index de recherche en texte intégral de la table `Production.Document` de l'exemple de base de données `AdventureWorks`. L’exemple utilise l’alias `KWBPOP` pour la table retournée par **sys.dm_fts_index_keywords_by_property**. L’exemple utilise des jointures internes pour combiner des colonnes à partir de [sys.registered_search_properties](../../relational-databases/system-catalog-views/sys-registered-search-properties-transact-sql.md) et [sys.fulltext_indexes](../../relational-databases/system-catalog-views/sys-fulltext-indexes-transact-sql.md).  
   
 ```  
 -- Once the full-text index is configured to support property searching  
@@ -133,12 +133,12 @@ GO
   
 ## <a name="see-also"></a>Voir aussi  
  [Recherche en texte intégral](../../relational-databases/search/full-text-search.md)   
- [Améliorer les performances des index de recherche en texte intégral](../../relational-databases/search/improve-the-performance-of-full-text-indexes.md)   
+ [Améliorer les performances des index Full-Text](../../relational-databases/search/improve-the-performance-of-full-text-indexes.md)   
  [sp_fulltext_keymappings &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-fulltext-keymappings-transact-sql.md)   
- [sys. dm_fts_index_keywords_by_document &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-keywords-by-document-transact-sql.md)   
- [sys. dm_fts_index_keywords &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-keywords-transact-sql.md)   
- [sys. registered_search_properties &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-registered-search-properties-transact-sql.md)   
- [sys. registered_search_property_lists &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-registered-search-property-lists-transact-sql.md)   
+ [sys.dm_fts_index_keywords_by_document &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-keywords-by-document-transact-sql.md)   
+ [sys.dm_fts_index_keywords &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-keywords-transact-sql.md)   
+ [sys.registered_search_properties &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-registered-search-properties-transact-sql.md)   
+ [sys.registered_search_property_lists &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-registered-search-property-lists-transact-sql.md)   
  [Rechercher les propriétés du document à l’aide des listes des propriétés de recherche](../../relational-databases/search/search-document-properties-with-search-property-lists.md)  
   
   

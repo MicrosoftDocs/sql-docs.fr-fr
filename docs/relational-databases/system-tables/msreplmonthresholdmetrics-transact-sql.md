@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - msreplmonthresholdmetrics_TSQL
 - msreplmonthresholdmetrics
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 0cc9b40a-36ce-485b-9bc2-d4abd5aa6727
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: e8d7d5c1ea9bbf421632e1d742cb316fd2c94cd2
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: dfa858af359e203101e2fbe6a3205dea0134ddb2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094769"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193194"
 ---
 # <a name="msreplmonthresholdmetrics-transact-sql"></a>MSreplmonthresholdmetrics (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

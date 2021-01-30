@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - state transitions [ODBC], descriptor
 - transitioning states [ODBC], descriptor
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0cf24fe6-5e3c-45fa-81b8-4f52ddf8501d
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 168df441e2e7e785f7dfc89894ec7aa9caf8207c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d312b372a0817ae79ad07bdbf149f90ba0c71939
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456595"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194888"
 ---
 # <a name="descriptor-transitions"></a>Transitions de descripteur
 Les descripteurs ODBC ont les trois États suivants.  

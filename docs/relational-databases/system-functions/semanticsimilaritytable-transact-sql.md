@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - semanticsimilaritytable
 - semanticsimilaritytable_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: b49d40ab-7552-438b-ad67-6237dcccb75b
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 4866c5002fce3540014b9ad0c94ccd7b20a0e235
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 532ec509de094db343406b6cb0f9f0cca924a724
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88397275"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194553"
 ---
 # <a name="semanticsimilaritytable-transact-sql"></a>semanticsimilaritytable (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -57,10 +57,10 @@ SEMANTICSIMILARITYTABLE
  **column_list**  
  Indique plusieurs colonnes, séparées par une virgule et placées entre parenthèses. L'indexation sémantique doit être activée pour toutes les colonnes.  
   
- **\***  
+ **\** _  
  Indique que toutes les colonnes pour lesquelles l'indexation sémantique est activée sont incluses.  
   
- **source_key**  
+ _ *source_key**  
  Clé unique de la ligne, pour demander des résultats d'une ligne spécifique.  
   
  La clé est convertie implicitement en type de clé unique de recherche en texte intégral dans la table source, dans la mesure du possible. La clé peut être spécifiée en tant que constante ou variable, mais il ne peut pas s'agir d'une expression ni du résultat d'une sous-requête scalaire.  
@@ -74,8 +74,8 @@ SEMANTICSIMILARITYTABLE
 |------------------|----------|-----------------|  
 |**source_column_id**|**int**|ID de la colonne depuis laquelle un document source a été utilisé pour rechercher des documents similaires.<br /><br /> Consultez les fonctions COL_NAME et COLUMNPROPERTY pour plus d'informations sur la récupération d'un nom de colonne à partir de column_id et inversement.|  
 |**matched_column_id**|**int**|ID de la colonne depuis laquelle un document similaire a été trouvé.<br /><br /> Consultez les fonctions COL_NAME et COLUMNPROPERTY pour plus d'informations sur la récupération d'un nom de colonne à partir de column_id et inversement.|  
-|**matched_document_key**|**\***<br /><br /> Cette clé correspond au type de la clé unique dans la table source.|Valeur de la clé unique de l'extraction sémantique et de recherche en texte intégral du document ou de la ligne considéré(e) comme similaire au document spécifié dans la requête.|  
-|**enjeu**|**NON**|Valeur relative de ressemblance pour ce document dans sa relation à tous les autres documents similaires.<br /><br /> La valeur est une valeur décimale fractionnaire dans la plage de [0.0, 1.0] dans laquelle un score élevé représente une correspondance plus proche, 1.0 étant un score parfait.|  
+|**matched_document_key**|**\** _<br /><br /> Cette clé correspond au type de la clé unique dans la table source.|Valeur de la clé unique de l'extraction sémantique et de recherche en texte intégral du document ou de la ligne considéré(e) comme similaire au document spécifié dans la requête.|  
+|_ *score**|**REAL**|Valeur relative de ressemblance pour ce document dans sa relation à tous les autres documents similaires.<br /><br /> La valeur est une valeur décimale fractionnaire dans la plage de [0.0, 1.0] dans laquelle un score élevé représente une correspondance plus proche, 1.0 étant un score parfait.|  
   
 ## <a name="general-remarks"></a>Remarques d'ordre général  
  Pour plus d’informations, consultez [Rechercher des documents similaires et connexes avec la recherche sémantique](../../relational-databases/search/find-similar-and-related-documents-with-semantic-search.md).  

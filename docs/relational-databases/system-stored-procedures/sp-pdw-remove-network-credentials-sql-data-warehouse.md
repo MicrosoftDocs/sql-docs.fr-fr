@@ -7,7 +7,7 @@ ms.prod_service: sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.service: sql-data-warehouse
 ms.subservice: design
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: c12696a2-5939-402b-9866-8a837ca4c0a3
@@ -15,12 +15,12 @@ author: ronortloff
 ms.author: rortloff
 monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest'
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 2e69f8446bc7a98b6aa3bae68a169d5e88759ea2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 07de301f6407caf8ab2775ed1d65dfdd290e1185
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461540"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196048"
 ---
 # <a name="sp_pdw_remove_network_credentials-azure-synapse-analytics"></a>sp_pdw_remove_network_credentials (Azure Synapse Analytics)
 [!INCLUDE[applies-to-version/asa-pdw](../../includes/applies-to-version/asa-pdw.md)]

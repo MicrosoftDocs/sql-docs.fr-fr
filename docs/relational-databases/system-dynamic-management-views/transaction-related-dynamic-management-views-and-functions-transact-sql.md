@@ -6,7 +6,7 @@ ms.date: 03/03/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 4db9f715-995e-4e71-9544-26eb59e9fae0
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 5b8a19b0529666f139c96615fddae67e265a008c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c5fa25bd1d634be7d914a559aa301018c9b8b18d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098789"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196234"
 ---
 # <a name="transaction-related-dynamic-management-views-and-functions-transact-sql"></a>Fonctions et vues de gestion dynamique relatives aux transactions (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

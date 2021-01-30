@@ -6,7 +6,7 @@ ms.date: 03/29/2017
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - dm_fts_outstanding_batches
 - dm_fts_outstanding_batches_TSQL
@@ -22,12 +22,12 @@ author: pmasl
 ms.author: pelopes
 ms.reviewer: mikeray
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 4398bd8b24d4e9bf741371ad0f298dfb91ff13ab
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: f4692e73e9aa13cf949d9154b0bc49c16d003e8d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484651"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193238"
 ---
 # <a name="sysdm_fts_outstanding_batches-transact-sql"></a>sys.dm_fts_outstanding_batches (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

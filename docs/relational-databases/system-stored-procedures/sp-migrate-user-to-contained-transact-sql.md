@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_migrate_user_to_contained
 - sp_migrate_user_to_contained_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: b3a49ff6-46ad-4ee7-b6fe-7e54213dc33e
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: edabb8a59a672c3ebfe04a799df7901b402fb5b3
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 81450361252fcdc2d02a9d9e118839db3c5af64c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543184"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195486"
 ---
 # <a name="sp_migrate_user_to_contained-transact-sql"></a>sp_migrate_user_to_contained (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -43,13 +43,13 @@ sp_migrate_user_to_contained [ @username = ] N'user' ,
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [** @username =** ] **N'***utilisateur***'**  
- Nom d'un utilisateur dans la base de données autonome actuelle mappée à un compte de connexion authentifié [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. La valeur est de **type sysname**, avec **null**comme valeur par défaut.  
+ [**@username =** ] **N'**_utilisateur_*_'_*  
+ Nom d'un utilisateur dans la base de données autonome actuelle mappée à un compte de connexion authentifié [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. La valeur est de **type sysname**, avec **null** comme valeur par défaut.  
   
- [** @rename =** ] **N'***copy_login_name***'**  |  **N'***keep_name***'**  
+ [**@rename =** ] **N'**_copy_login_name_*_'_*  |  **N'**_keep_name_*_'_*  
  Lorsqu’un utilisateur de base de données basé sur un compte de connexion a un nom d’utilisateur différent de celui de la connexion, utilisez *keep_name* pour conserver le nom d’utilisateur de la base de données pendant la migration. Utilisez *copy_login_name* pour créer le nouvel utilisateur de base de données à relation contenant-contenu avec le nom de la connexion, au lieu de l’utilisateur. Lorsqu'un utilisateur de la base de données basé sur un compte de connexion a le même nom d'utilisateur que le nom de connexion, les deux options créent l'utilisateur de base de données autonome sans modifier le nom.  
   
- [** @disablelogin =** ] **N'***disable_login***'**  |  **N'***do_not_disable_login***'**  
+ [**@disablelogin =** ] **N'**_disable_login_*_'_*  |  **N'**_do_not_disable_login_*_'_*  
  *disable_login* désactive la connexion dans la base de données Master. Pour vous connecter lorsque la connexion est désactivée, la connexion doit fournir le nom de la base de données à relation contenant-contenu comme **catalogue initial** dans le cadre de la chaîne de connexion.  
   
 ## <a name="return-code-values"></a>Codet de retour  

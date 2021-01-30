@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - messages_TSQL
 - sys.messages_TSQL
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 8c16ecdf-68f4-4a2a-b594-086e3344e58a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 590ad007eebcf37765752272ef775e0d3d2443f0
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 86deff195d153a4898775dd1127b4582a384a6e0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092546"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194527"
 ---
 # <a name="messages-for-errors-catalog-views---sysmessages"></a>Affichages catalogue des messages (d’erreur) - sys.messages
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

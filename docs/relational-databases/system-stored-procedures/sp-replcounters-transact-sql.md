@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_replcounters
 - sp_replcounters_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: fe585b1f-edda-421f-81d6-8a03a3a535d2
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 8a2078faa410b41e381c5c1a6e913d2c2329ee08
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 6a803b171901d60f78b9f4c712f713472591cd55
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89538553"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193505"
 ---
 # <a name="sp_replcounters-transact-sql"></a>sp_replcounters (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Renvoie les statistiques de réplication relatives à la latence, au débit de traitement et au nombre de transactions pour chaque base de données publiée. Cette procédure stockée est exécutée sur n'importe quelle base de données du serveur de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -42,7 +42,7 @@ sp_replcounters
   
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
-|**Sauvegarde de la base de données**|**sysname**|Nom de la base de données.|  
+|**Base de données**|**sysname**|Nom de la base de données.|  
 |**Replicated transactions**|**int**|Nombre de transactions qui attendent dans le journal d'être remises à la base de données de distribution.|  
 |**Replication rate trans/sec**|**float**|Nombre moyen de transactions transmises par seconde à la base de données de distribution.|  
 |**Latence de la réplication**|**float**|Temps moyen (en secondes) que les transactions restent dans le journal avant d'être distribuées.|  

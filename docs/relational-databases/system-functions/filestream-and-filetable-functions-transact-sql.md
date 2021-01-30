@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 71f729df-d340-4cf9-9a6d-305fcb39b009
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: ec00ce2a9bf71a224be069e3b9ddc93b09d6075a
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 30469b616c3f8ea6c372380ab2e82b384e2d0b6f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093921"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196103"
 ---
 # <a name="filestream-and-filetable-functions-transact-sql"></a>Fonctions Filestream et FileTable (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
