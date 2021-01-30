@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_fkeys
 - sp_fkeys_TSQL
@@ -19,19 +19,19 @@ ms.assetid: 18110444-d38d-4cff-90d2-d1fc6236668b
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: ec31170ac813f9a1901e5fe5dd6f58a66ea47475
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 11cd43abf45386f8bfd1a7b897bc9ad0e09893ae
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97439454"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189573"
 ---
 # <a name="sp_fkeys-transact-sql"></a>sp_fkeys (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
   Retourne des informations sur les clés étrangères logiques pour l'environnement actuel. Cette procédure montre les relations de clés étrangères comprenant des clés étrangères désactivées.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -90,7 +90,7 @@ sp_fkeys [ @pktable_name = ] 'pktable_name'
   
  Les résultats obtenus sont triés par FKTABLE_QUALIFIER, FKTABLE_OWNER, FKTABLE_NAME et KEY_SEQ.  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  Si le code de votre application fait référence à des tables avec des clés étrangères désactivées, vous pouvez l'implémenter en utilisant l'une des méthodes suivantes :  
   
 -   Désactiver temporairement la vérification des contraintes (ALTER TABLE NOCHECK ou CREATE TABLE NOT FOR REPLICATION) pendant que vous travaillez sur les tables, et la réactiver par la suite.  

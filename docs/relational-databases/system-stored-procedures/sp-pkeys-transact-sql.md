@@ -6,7 +6,7 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_pkeys
 - sp_pkeys_TSQL
@@ -18,19 +18,19 @@ ms.assetid: e614c75d-847b-4726-8f6f-cd18de688eda
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 6a55bcdd0df9f288daa22c5f4f1454b14305ec6a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: bfb9d942ae25c8bf690e1ed9740f56c021cf413d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478940"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190030"
 ---
 # <a name="sp_pkeys-transact-sql"></a>sp_pkeys (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
   Renvoie des informations de clé primaire pour une table de l'environnement actif.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -68,7 +68,7 @@ sp_pkeys [ @table_name = ] 'name'
 |KEY_SEQ|**smallint**|Numéro de séquence de la colonne dans une clé primaire multicolonne.|  
 |PK_NAME|**sysname**|Identificateur de clé primaire. Retourne NULL s'il n'est pas applicable à la source de données.|  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  sp_pkeys renvoie des informations sur les colonnes explicitement définies avec une contrainte PRIMARY KEY. Comme tous les systèmes ne prennent en charge pas les clés primaires explicitement nommées, la personne chargée de la mise en œuvre des passerelles détermine ce qui constitue une clé primaire. Notez que le terme « clé primaire » fait référence à une clé primaire logique pour une table. À chaque clé indiquée comme étant une clé primaire logique doit correspondre un seul index défini sur cette clé. Cet index unique est également renvoyé dans sp_statistics.  
   
  La procédure stockée sp_pkeys est équivalente à SQLPrimaryKeys dans ODBC. Les résultats renvoyés sont triés par TABLE_QUALIFIER, TABLE_OWNER, TABLE_NAME et KEY_SEQ.  

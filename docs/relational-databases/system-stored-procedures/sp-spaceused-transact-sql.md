@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_spaceused_TSQL
 - sp_spaceused
@@ -19,19 +19,19 @@ ms.assetid: c6253b48-29f5-4371-bfcd-3ef404060621
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: b887b79a2e768f3c73a683ae6f60b06fb8d16a2c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 480b61493dc38ea91679e590f3abe63bde3a48c0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466830"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189304"
 ---
 # <a name="sp_spaceused-transact-sql"></a>sp_spaceused (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
   Affiche le nombre de lignes, l'espace disque réservé et l'espace disque utilisé par une table, une vue indexée ou une file d'attente [!INCLUDE[ssSB](../../includes/sssb-md.md)] de la base de données active, ou affiche l'espace disque réservé et utilisé par l'ensemble de la base de données.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -62,7 +62,7 @@ Si *nom_d’nom_d* 'n’est pas spécifié, les résultats sont retournés pour 
   
  L’argument *mode* peut avoir les valeurs suivantes :  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |ALL|Retourne les statistiques de stockage de l’objet ou de la base de données, y compris la partie locale et la partie distante.|  
 |LOCAL_ONLY|Retourne les statistiques de stockage de la partie locale de l’objet ou de la base de données. Si l’objet ou la base de données ne prend pas en charge Stretch, retourne les mêmes statistiques que quand @mode = All.|  
@@ -72,7 +72,7 @@ Si *nom_d’nom_d* 'n’est pas spécifié, les résultats sont retournés pour 
   
 `[ @oneresultset = ] oneresultset` Indique s’il faut retourner un seul jeu de résultats. L’argument *oneresultset* peut avoir les valeurs suivantes :  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |0|Quand *\@ nomobj* a la valeur null ou qu’il n’est pas spécifié, deux jeux de résultats sont retournés. Deux jeux de résultats sont le comportement par défaut.|  
 |1|Quand *\@ nomobj* = null ou n’est pas spécifié, un seul jeu de résultats est retourné.|  
@@ -166,7 +166,7 @@ Si *nom_d* 'objet est omis, la valeur de oneresultset est 1, et *include_total_x
 |**xtp_used**|**varchar (18)**|Taille totale des fichiers de point de contrôle avec les États sous CONSTRUCTION, ACTIVE et cible de fusion, en Ko. Il s’agit de l’espace disque activement utilisé pour les données dans les tables optimisées en mémoire. Retourne NULL si la base de données n’a pas de groupe de fichiers memory_optimized_data avec au moins un conteneur. *Cette colonne est incluse uniquement si @include_total_xtp_storage = 1*.| 
 |**xtp_pending_truncation**|**varchar (18)**|Taille totale des fichiers de point de contrôle avec l’État WAITING_FOR_LOG_TRUNCATION, en Ko. Il s’agit de l’espace disque utilisé pour les fichiers de point de contrôle en attente de nettoyage. une fois la troncation du journal effectuée. Retourne NULL si la base de données n’a pas de groupe de fichiers memory_optimized_data avec au moins un conteneur. Cette colonne est incluse uniquement si `@include_total_xtp_storage=1` .|
 
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
  la valeur de **database_size** est généralement supérieure à la somme de l'   +  **espace non alloué** réservé, car elle comprend la taille des fichiers journaux, mais **réservée** et **unallocated_space** prendre en compte uniquement les pages de données. Dans certains cas, avec Azure Synapse Analytics, cette instruction ne peut pas être vraie. 
   
  Les pages utilisées par les index XML et les index de recherche en texte intégral sont incluses dans **index_size** pour les deux jeux de résultats. Lorsque *nom_d* 'objet est spécifié, les pages des index XML et des index de recherche en texte intégral de l’objet sont également comptées dans le résultat total **réservé** et **index_size** .  

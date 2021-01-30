@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_control_dbmasterkey_password
 - sp_control_dbmasterkey_password_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 63979a87-42a2-446e-8e43-30481faaf3ca
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 08b749ad756a47ed991acd1ad0ea1d533bbb770c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 06de3460a55eecba6c1525576caec85d6baa905f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88481437"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190042"
 ---
 # <a name="sp_control_dbmasterkey_password-transact-sql"></a>sp_control_dbmasterkey_password (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -59,7 +59,7 @@ sp_control_dbmasterkey_password @db_name = 'database_name,
 > [!CAUTION]  
 >  Ne créez pas d'informations d'identification de clé principale pour une base de données qui doit être inaccessible à sa et à d'autres principaux de serveur dotés de privilèges de haut niveau. Vous pouvez configurer une base de données de sorte que la hiérarchie de ses clés ne puisse pas être déchiffrée par la clé principale du service. Cette option est prise en charge dans le cadre d'une défense en profondeur de bases de données qui contiennent des données chiffrées qui ne doivent pas être accessibles à sa ni à d'autres principaux de serveur dotés de privilèges de haut niveau. La création d'informations d'identification de clé principale pour une telle base de données supprime cette défense en profondeur en permettant à sa et à d'autres principaux de serveur dotés de privilèges de haut niveau de déchiffrer la base de données.  
   
- Les informations d’identification créées à l’aide de sp_control_dbmasterkey_password sont visibles dans l’affichage catalogue [sys. master_key_passwords](../../relational-databases/system-catalog-views/sys-master-key-passwords-transact-sql.md) . Les noms des informations d'identification créées pour les clés principales des bases de données ont le format suivant :`##DBMKEY_<database_family_guid>_<random_password_guid>##`. Le mot de passe est stocké en tant que secret des informations d'identification. À chaque mot de passe ajouté dans la banque d'informations d'identification correspond une ligne dans sys.credentials.  
+ Les informations d’identification créées à l’aide de sp_control_dbmasterkey_password sont visibles dans l’affichage catalogue [sys.master_key_passwords](../../relational-databases/system-catalog-views/sys-master-key-passwords-transact-sql.md) . Les noms des informations d'identification créées pour les clés principales des bases de données ont le format suivant :`##DBMKEY_<database_family_guid>_<random_password_guid>##`. Le mot de passe est stocké en tant que secret des informations d'identification. À chaque mot de passe ajouté dans la banque d'informations d'identification correspond une ligne dans sys.credentials.  
   
  Vous ne pouvez pas utiliser sp_control_dbmasterkey_password pour créer des informations d'identification pour les bases de données système suivantes : master, model, msdb ou tempdb.  
   
@@ -102,8 +102,8 @@ GO
   
 ## <a name="see-also"></a>Voir aussi  
  [Configurer une base de données miroir chiffrée](../../database-engine/database-mirroring/set-up-an-encrypted-mirror-database.md)   
- [Procédures stockées de sécurité &#40;&#41;Transact-SQL ](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
- [Procédures stockées système &#40;&#41;Transact-SQL ](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
+ [Procédures stockées de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
+ [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
  [sys.credentials &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-credentials-transact-sql.md)   
  [Informations d’identification &#40;moteur de base de données&#41;](../../relational-databases/security/authentication-access/credentials-database-engine.md)  
   

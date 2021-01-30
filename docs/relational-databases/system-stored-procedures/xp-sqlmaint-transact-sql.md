@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - xp_sqlmaint
 - xp_sqlmaint_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: bda66e1b-6bbd-49be-b86e-37efc920e912
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: cfe66be84a9f631422c624eaf65152569d0405bd
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5b83e5e84d5712e9b1cf3e253222d1ef6d212720
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88419183"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187954"
 ---
 # <a name="xp_sqlmaint-transact-sql"></a>xp_sqlmaint (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -52,7 +52,7 @@ xp_sqlmaint 'switch_string'
  Aucun. Retourne une erreur si l’utilitaire **sqlmaint** échoue.  
   
 ## <a name="remarks"></a>Notes  
- Si cette procédure est appelée par un utilisateur connecté avec SQL Server l’authentification, les commutateurs **-U «***login_id***»** et **-P «***mot de passe***** » sont ajoutés à *switch_string* avant l’exécution. Si l’utilisateur a ouvert une session avec l’authentification Windows, *switch_string* est passé sans modification à **sqlmaint**.  
+ Si cette procédure est appelée par un utilisateur connecté avec SQL Server l’authentification, les commutateurs **-U «**_login_id_*_»_* et **-P «**_mot de passe_*_» sont_* ajoutés à *switch_string* avant l’exécution. Si l’utilisateur a ouvert une session avec l’authentification Windows, *switch_string* est passé sans modification à **sqlmaint**.  
   
 ## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle serveur fixe **sysadmin** .  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_changesubscriber
 - sp_changesubscriber_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: d453c451-e957-490f-b968-5e03aeddaf10
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 96cce9a9d9a0b9bf74a1ac3b67d3089f4fcd23ed
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 3f920abb3544800d99ba108e024e200fad769f1a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543671"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189609"
 ---
 # <a name="sp_changesubscriber-transact-sql"></a>sp_changesubscriber (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Modifie les options d'un Abonné. Toute tâche de distribution destinée aux Abonnés à ce serveur de publication est mise à jour. Cette procédure stockée écrit dans la table **MSsubscriber_info** de la base de données de distribution. Cette procédure stockée est exécutée sur le serveur de publication dans la base de données de publication.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -71,7 +71,7 @@ sp_changesubscriber [ @subscriber= ] 'subscriber'
   
 `[ @flush_frequency = ] flush_frequency` Pris en charge pour la compatibilité descendante uniquement.  
   
-`[ @frequency_type = ] frequency_type` Fréquence de planification de la tâche de distribution. *frequency_type* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_type = ] frequency_type` Fréquence de planification de la tâche de distribution. *frequency_type* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -86,7 +86,7 @@ sp_changesubscriber [ @subscriber= ] 'subscriber'
   
 `[ @frequency_interval = ] frequency_interval` Intervalle de *frequency_type*. *frequency_interval* est de **type int**, avec NULL comme valeur par défaut.  
   
-`[ @frequency_relative_interval = ] frequency_relative_interval` Date de la tâche de distribution. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuelle relative). *frequency_relative_interval* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_relative_interval = ] frequency_relative_interval` Date de la tâche de distribution. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuelle relative). *frequency_relative_interval* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -96,9 +96,9 @@ sp_changesubscriber [ @subscriber= ] 'subscriber'
 |**8**|Quatrième|  
 |**16**|Dernier|  
   
-`[ @frequency_recurrence_factor = ] frequency_recurrence_factor` Fréquence de répétition de la tâche de distribution au cours de la *frequency_type*définie. *frequency_recurrence_factor* est de **type int**, avec NULL comme valeur par défaut.  
+`[ @frequency_recurrence_factor = ] frequency_recurrence_factor` Fréquence de répétition de la tâche de distribution au cours de la *frequency_type* définie. *frequency_recurrence_factor* est de **type int**, avec NULL comme valeur par défaut.  
   
-`[ @frequency_subday = ] frequency_subday` Fréquence de replanification au cours de la période définie. *frequency_subday* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @frequency_subday = ] frequency_subday` Fréquence de replanification au cours de la période définie. *frequency_subday* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -111,15 +111,15 @@ sp_changesubscriber [ @subscriber= ] 'subscriber'
   
 `[ @active_start_time_of_day = ] active_start_time_of_day` Heure du jour de la première planification de la tâche de distribution, au format HHMMSS. *active_start_time_of_day* est de **type int**, avec NULL comme valeur par défaut.  
   
-`[ @active_end_time_of_day = ] active_end_time_of_day` Heure de la journée à laquelle la tâche de distribution cesse d’être planifiée, au format HHMMSS. *active_end_time_of_day*est de **type int**, avec NULL comme valeur par défaut.  
+`[ @active_end_time_of_day = ] active_end_time_of_day` Heure de la journée à laquelle la tâche de distribution cesse d’être planifiée, au format HHMMSS. *active_end_time_of_day* est de **type int**, avec NULL comme valeur par défaut.  
   
 `[ @active_start_date = ] active_start_date` Date à laquelle la tâche de distribution est planifiée pour la première fois, au format AAAAMMJJ. *active_start_date* est de **type int**, avec NULL comme valeur par défaut.  
   
-`[ @active_end_date = ] active_end_date` Date à laquelle la tâche de distribution cesse d’être planifiée, au format AAAAMMJJ. *active_end_date*est de **type int**, avec NULL comme valeur par défaut.  
+`[ @active_end_date = ] active_end_date` Date à laquelle la tâche de distribution cesse d’être planifiée, au format AAAAMMJJ. *active_end_date* est de **type int**, avec NULL comme valeur par défaut.  
   
 `[ @description = ] 'description'` Description facultative du texte. *Description* est de type **nvarchar (255)**, avec NULL comme valeur par défaut.  
   
-`[ @security_mode = ] security_mode` Est le mode de sécurité implémenté. *security_mode* est de **type int**et peut prendre l’une des valeurs suivantes.  
+`[ @security_mode = ] security_mode` Est le mode de sécurité implémenté. *security_mode* est de **type int** et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

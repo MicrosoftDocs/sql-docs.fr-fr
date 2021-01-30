@@ -6,7 +6,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.assetid: 8ad860e7-e054-4186-80a2-03977e42531d
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 4b1765797b43ddfb3cabec9976fca821da8019dd
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 4c9b29762b2f6ba3c44368313d23ecbe002b3741
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096320"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187367"
 ---
 # <a name="system-functions-by-category-for-transact-sql"></a>Fonctions système par catégorie pour Transact-SQL
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sys.system_views_TSQL
 - system_views
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: a526c410-e7b5-4075-8103-e1f3c6837c3c
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: c3ac54a56c76cd19d231e5f89d7188b14c49d774
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: e0dcaebcf38e4aa3b1cbee41d5528f8d10a991cf
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98766086"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189274"
 ---
 # <a name="syssystem_views-transact-sql"></a>sys.system_views (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

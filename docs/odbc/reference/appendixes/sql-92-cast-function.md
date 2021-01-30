@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - functions [ODBC], SQL-92 functions
 - SQL-92 functions [ODBC]
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 982f09e5-8205-41b9-98b3-8f898e24743f
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 7818cd653ac770de8f3d78d8599da5b66c4cf768
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f8cc377f6f87c8cff9728cbf3d211345b0a0a20f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88424931"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187110"
 ---
 # <a name="sql-92-cast-function"></a>CAST (SQL-92), fonction
 La fonction **Cast** définie dans SQL-92 est équivalente à la fonction **Convert** définie dans ODBC. La syntaxe des fonctions équivalentes est la suivante :  

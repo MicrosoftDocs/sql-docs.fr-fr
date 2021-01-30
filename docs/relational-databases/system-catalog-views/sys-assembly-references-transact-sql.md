@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - assembly_references
 - sys.assembly_references_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 50a5ed42-2d5b-4a11-a0d2-9a02241b078d
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 278214acd7a8a0fd0b78fb8bb77d30e73f68000c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 76f85ecf69c22e2f8f372f2b62e11aef86a0edd1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099237"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189328"
 ---
 # <a name="sysassembly_references-transact-sql"></a>sys.assembly_references (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

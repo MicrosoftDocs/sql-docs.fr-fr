@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_serveroption_TSQL
 - sp_serveroption
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 47d04a2b-dbf0-4f15-bd9b-81a2efc48131
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: ba6045caf5d95aed6d11c0844c16afd93365368f
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: ec6dfda1d4e12b190999b82e16c27b5127d5af6d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547378"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190778"
 ---
 # <a name="sp_serveroption-transact-sql"></a>sp_serveroption (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "89547378"
   Définit les options de serveur pour les serveurs distants et les serveurs liés.  
   
  
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -43,7 +43,7 @@ sp_serveroption [@server = ] 'server'
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @server = ] 'server'` Nom du serveur pour lequel l’option doit être définie. *server* est de type **sysname**et n'a pas de valeur par défaut.  
+`[ @server = ] 'server'` Nom du serveur pour lequel l’option doit être définie. *server* est de type **sysname** et n'a pas de valeur par défaut.  
   
 `[ @optname = ] 'option_name'` Option à définir pour le serveur spécifié. *option_name* est de type **varchar (** 35 **)**, sans valeur par défaut. *option_name* peut prendre l’une des valeurs suivantes.  
   

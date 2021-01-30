@@ -5,33 +5,33 @@ editor: ''
 ms.prod: sql
 ms.technology: connectivity
 ms.devlang: cpp
-ms.topic: conceptual
+ms.topic: reference
 ms.custom: ''
 ms.date: 07/14/2017
 ms.author: v-daenge
 author: David-Engel
-ms.openlocfilehash: 63575c952feb8fc21d56f48540a7cd4e54d5e11f
-ms.sourcegitcommit: e042272a38fb646df05152c676e5cbeae3f9cd13
+ms.openlocfilehash: dce2f56d3257ac3b513ef3839f949258c6f018df
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "81305120"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187170"
 ---
-# <a name="retrieve-numeric-data-with-sql_numeric_struct"></a>Récupérer des données numériques avec\_un\_struct numérique SQL
+# <a name="retrieve-numeric-data-with-sql_numeric_struct"></a>Récupérer des données numériques avec \_ un \_ struct numérique SQL
 
 Cet article explique comment récupérer des données numériques à partir de la SQL Server pilote ODBC dans une structure numérique. Elle explique également comment récupérer les valeurs correctes à l’aide de valeurs spécifiques de précision et d’échelle.
 
-Ce type de données permet aux applications de gérer directement des données numériques. À l’année 2003, ODBC 3,0 a introduit un nouveau type de données c ODBC, **identifié\_par\_SQL c Numeric**. Ce type de données est toujours applicable à partir du 2017.
+Ce type de données permet aux applications de gérer directement des données numériques. À l’année 2003, ODBC 3,0 a introduit un nouveau type de données C ODBC, identifié par **SQL \_ c \_ Numeric**. Ce type de données est toujours applicable à partir du 2017.
 
-La mémoire tampon C utilisée a la définition de type de **la\_structure\_numérique SQL**. Cette structure contient des champs pour le stockage de la précision, de l’échelle, du signe et de la valeur des données numériques. La valeur elle-même est stockée sous la forme d’un entier mis à l’échelle avec l’octet le moins significatif, en commençant par la position la plus à gauche. 
+La mémoire tampon C utilisée a la définition de type de **la \_ \_ structure numérique SQL**. Cette structure contient des champs pour le stockage de la précision, de l’échelle, du signe et de la valeur des données numériques. La valeur elle-même est stockée sous la forme d’un entier mis à l’échelle avec l’octet le moins significatif, en commençant par la position la plus à gauche. 
 
-Les [types de données](c-data-types.md) de l’article C fournissent des informations supplémentaires sur le format\_et\_l’utilisation du struct numérique SQL. En général, l' [annexe D](appendix-d-data-types.md) de la référence du programmeur ODBC 3,0 traite des types de données.
-
-
-## <a name="sql_numeric_struct-overview"></a>Vue\_d'\_ensemble des structs numériques SQL
+Les [types de données](c-data-types.md) de l’article C fournissent des informations supplémentaires sur le format et l’utilisation du \_ struct numérique SQL \_ . En général, l' [annexe D](appendix-d-data-types.md) de la référence du programmeur ODBC 3,0 traite des types de données.
 
 
-Le struct\_numérique\_SQL est défini dans le fichier d’en-tête SqlTypes. h comme suit :
+## <a name="sql_numeric_struct-overview"></a>\_ \_ Vue d’ensemble des structs numériques SQL
+
+
+Le \_ struct numérique SQL \_ est défini dans le fichier d’en-tête SqlTypes. h comme suit :
 
 
 ```c
@@ -50,7 +50,7 @@ Les champs de précision et d’échelle de la structure numérique ne sont jama
 
 Le pilote utilise la précision par défaut (définie par le pilote) et l’échelle par défaut (0) chaque fois que les données sont retournées à l’application. À moins que l’application spécifie des valeurs pour la précision et l’échelle, le pilote utilise la valeur par défaut et tronque la partie décimale des données numériques.
 
-## <a name="sql_numeric_struct-code-sample"></a>Exemple\_de\_code de struct numérique SQL
+## <a name="sql_numeric_struct-code-sample"></a>\_Exemple de \_ Code de struct numérique SQL
 
 Cet exemple de code montre comment :
 
@@ -265,7 +265,7 @@ long strtohextoval()
 ### <a name="applies-to-versions"></a>S’applique aux versions
 
 
-Les informations précédentes sur la\_structure\_numérique SQL s’appliquent aux versions de produit suivantes :
+Les informations précédentes sur \_ \_ la structure numérique SQL s’appliquent aux versions de produit suivantes :
 
 - Pilote Microsoft ODBC pour Microsoft SQL Server 3,7
 - Microsoft Data Access Components 2,1
@@ -274,10 +274,10 @@ Les informations précédentes sur la\_structure\_numérique SQL s’appliquent 
 - Microsoft Data Access Components 2,7
 
 
-## <a name="sql_c_numeric-overview"></a>Vue\_d'\_ensemble de la valeur numérique SQL C
+## <a name="sql_c_numeric-overview"></a>\_Vue d’ensemble de la valeur numérique SQL C \_
 
 
-L’exemple de programme suivant illustre l’utilisation de la\_valeur\_numérique SQL C, en insérant 123,45 dans une table. Dans le tableau, la colonne est définie sous la forme d’une valeur numérique ou décimale, avec une précision de 5 et une échelle de 2.
+L’exemple de programme suivant illustre l’utilisation de la \_ valeur \_ numérique SQL C, en insérant 123,45 dans une table. Dans le tableau, la colonne est définie sous la forme d’une valeur numérique ou décimale, avec une précision de 5 et une échelle de 2.
 
 Le pilote ODBC que vous utilisez pour exécuter ce programme doit prendre en charge les fonctionnalités ODBC 3,0.
 

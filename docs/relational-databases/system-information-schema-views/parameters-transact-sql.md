@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - PARAMETERS_TSQL
 - PARAMETERS
@@ -20,12 +20,12 @@ ms.assetid: 06ded0ca-7d21-4400-864a-b801e855b257
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 481e104f4762638fb4c71a548c3a390e1babe762
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: bdc283f4fb4a8aec6cbce2d1ba8aae238a28cc82
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478930"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189634"
 ---
 # <a name="parameters-transact-sql"></a>PARAMETERS (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -57,14 +57,14 @@ ms.locfileid: "97478930"
 |**NUMERIC_PRECISION_RADIX**|**smallint**|Base de précision des données numériques approchées ou exactes, des données de type entier ou monétaire. Dans le cas contraire, la valeur NULL est retournée.|  
 |**NUMERIC_SCALE**|**tinyint**|Échelle des données numériques approchées ou exactes, des données de type entier ou monétaire. Dans le cas contraire, la valeur NULL est retournée.|  
 |**DATETIME_PRECISION**|**smallint**|Précision en fractions de seconde si le type de paramètre est **DateTime** ou **smalldatetime**. Dans le cas contraire, la valeur NULL est retournée.|  
-|**INTERVAL_TYPE**|**nvarchar (** 30 **)**|NULL. Réservé à un usage ultérieur.|  
-|**INTERVAL_PRECISION**|**smallint**|NULL. Réservé à un usage ultérieur.|  
-|**USER_DEFINED_TYPE_CATALOG**|**nvarchar (** 128 **)**|NULL. Réservé à un usage ultérieur.|  
-|**USER_DEFINED_TYPE_SCHEMA**|**nvarchar (** 128 **)**|NULL. Réservé à un usage ultérieur.|  
-|**USER_DEFINED_TYPE_NAME**|**nvarchar (** 128 **)**|NULL. Réservé à un usage ultérieur.|  
-|**SCOPE_CATALOG**|**nvarchar (** 128 **)**|NULL. Réservé à un usage ultérieur.|  
-|**SCOPE_SCHEMA**|**nvarchar (** 128 **)**|NULL. Réservé à un usage ultérieur.|  
-|**SCOPE_NAME**|**nvarchar (** 128 **)**|NULL. Réservé à un usage ultérieur.|  
+|**INTERVAL_TYPE**|**nvarchar (** 30 **)**|NULL. Réservé pour un usage futur.|  
+|**INTERVAL_PRECISION**|**smallint**|NULL. Réservé pour un usage futur.|  
+|**USER_DEFINED_TYPE_CATALOG**|**nvarchar (** 128 **)**|NULL. Réservé pour un usage futur.|  
+|**USER_DEFINED_TYPE_SCHEMA**|**nvarchar (** 128 **)**|NULL. Réservé pour un usage futur.|  
+|**USER_DEFINED_TYPE_NAME**|**nvarchar (** 128 **)**|NULL. Réservé pour un usage futur.|  
+|**SCOPE_CATALOG**|**nvarchar (** 128 **)**|NULL. Réservé pour un usage futur.|  
+|**SCOPE_SCHEMA**|**nvarchar (** 128 **)**|NULL. Réservé pour un usage futur.|  
+|**SCOPE_NAME**|**nvarchar (** 128 **)**|NULL. Réservé pour un usage futur.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues système &#40;&#41;Transact-SQL ](../../t-sql/language-reference.md)   

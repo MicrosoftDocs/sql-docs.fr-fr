@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: fa2c95df-1211-4330-adc6-9657e1a113e8
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: d58da34aaf49813033b026ada4f200123afa7eaf
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: db6d913f6422161f0ff7760200d563c4bb599a04
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092723"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187338"
 ---
 # <a name="system-security-functions"></a>Fonctions de sécurité système
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLInstallerError
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: e6474b79-4d55-458f-81ce-abfafe357f83
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: fcc5f89a40802e6efa405771474cda3e86f4519c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: dcafadc902504ddfd32fa8b7369780bd5c296a0d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88421163"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189673"
 ---
 # <a name="sqlinstallererror-function"></a>SQLInstallerError, fonction
 **Conformité**  

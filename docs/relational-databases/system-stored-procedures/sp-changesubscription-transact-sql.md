@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - changesubscription
 - sp_changesubscription
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: f9d91fe3-47cf-4915-b6bf-14c9c3d8a029
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: d1dd4a0fc40cf24896de912c1254b154a5538866
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: db0e26092acb2a8cb0fc546a18c0b8f4010fa8fc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543672"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189588"
 ---
 # <a name="sp_changesubscription-transact-sql"></a>sp_changesubscription (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "89543672"
 > [!IMPORTANT]  
 >  Lors de la configuration d'un serveur de publication avec un serveur de distribution distant, les valeurs fournies pour tous les paramètres, y compris *job_login* et *job_password*, sont envoyées en texte brut au serveur de distribution. Vous devez chiffrer la connexion entre le serveur de publication et son serveur de distribution distant avant d'exécuter cette procédure stockée. Pour plus d’informations, consultez [Activer des connexions chiffrées dans le moteur de base de données &#40;Gestionnaire de configuration SQL Server&#41;](../../database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine.md).  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -49,9 +49,9 @@ sp_changesubscription [ @publication = ] 'publication'
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @publication = ] 'publication'` Nom de la publication à modifier. *publication*est de **type sysname**, sans valeur par défaut  
+`[ @publication = ] 'publication'` Nom de la publication à modifier. *publication* est de **type sysname**, sans valeur par défaut  
   
-`[ @article = ] 'article'` Nom de l’article à modifier. *article* est de **type sysname**et n’a pas de valeur par défaut.  
+`[ @article = ] 'article'` Nom de l’article à modifier. *article* est de **type sysname** et n’a pas de valeur par défaut.  
   
 `[ @subscriber = ] 'subscriber'` Nom de l’abonné. *Subscriber* est de **type sysname**, sans valeur par défaut.  
   
@@ -59,7 +59,7 @@ sp_changesubscription [ @publication = ] 'publication'
   
 `[ @property = ] 'property'` Propriété à modifier pour l’abonnement donné. la *propriété* est de type **nvarchar (30)** et peut prendre l’une des valeurs de la table.  
   
-`[ @value = ] 'value'` Nouvelle valeur de la *propriété*spécifiée. la *valeur* est de type **nvarchar (4000)** et peut prendre l’une des valeurs de la table.  
+`[ @value = ] 'value'` Nouvelle valeur de la *propriété* spécifiée. la *valeur* est de type **nvarchar (4000)** et peut prendre l’une des valeurs de la table.  
   
 |Propriété|Valeur|Description|  
 |--------------|-----------|-----------------|  

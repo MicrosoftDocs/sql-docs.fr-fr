@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_table_validation_TSQL
 - sp_table_validation
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 31b25f9b-9b62-496e-a97e-441d5fd6e767
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 88ee13025153fff3018fadfa8d64becf7a534303
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 255c30ea6b3144e781007bff3ae748c8e5a960ce
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89545924"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189255"
 ---
 # <a name="sp_table_validation-transact-sql"></a>sp_table_validation (Transact-SQL)
 [!INCLUDE[sqlserver](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne des informations sur le nombre de lignes ou sur la somme de contrôle d'une table ou d'une vue indexée, ou bien compare ces informations avec la table ou la vue indexée spécifiée. Cette procédure stockée est exécutée sur la base de données de publication du serveur de publication et sur la base de données d'abonnement de l'Abonné. *Non pris en charge pour les serveurs de publication Oracle*.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,7 +52,7 @@ sp_table_validation [ @table = ] 'table'
   
 `[ @expected_checksum = ] expected_checksumOUTPUT` Spécifie s’il faut retourner la somme de contrôle attendue pour la table. *expected_checksum* est de **type numeric**, avec NULL comme valeur par défaut. Si la valeur est NULL, la somme de contrôle réelle est retournée en tant que paramètre de sortie. Si une valeur est fournie, celle-ci est confrontée à la somme de contrôle réelle en vue d'une identification des éventuelles différences.  
   
-`[ @rowcount_only = ] type_of_check_requested` Spécifie le type de somme de contrôle ou de RowCount à effectuer. *type_of_check_requested* est de type **smallint**, avec **1**comme valeur par défaut.  
+`[ @rowcount_only = ] type_of_check_requested` Spécifie le type de somme de contrôle ou de RowCount à effectuer. *type_of_check_requested* est de type **smallint**, avec **1** comme valeur par défaut.  
   
  Si la **valeur est 0**, effectuez un comptage de lignes et une somme de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] contrôle compatible 7,0.  
   
@@ -62,7 +62,7 @@ sp_table_validation [ @table = ] 'table'
   
 `[ @owner = ] 'owner'` Nom du propriétaire de la table. *owner* est de **type sysname**, avec NULL comme valeur par défaut.  
   
-`[ @full_or_fast = ] full_or_fast` Méthode utilisée pour calculer le RowCount. *full_or_fast* est de **type tinyint**, avec **2**comme valeur par défaut et peut prendre l’une des valeurs suivantes.  
+`[ @full_or_fast = ] full_or_fast` Méthode utilisée pour calculer le RowCount. *full_or_fast* est de **type tinyint**, avec **2** comme valeur par défaut et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -70,9 +70,9 @@ sp_table_validation [ @table = ] 'table'
 |**1**|Effectue un comptage rapide à partir de **sysindexes. Rows**. Le comptage des lignes dans **sysindexes** est beaucoup plus rapide que le comptage des lignes dans la table réelle. Toutefois, étant donné que **sysindexes** est mis à jour tardivement, le ROWCOUNT peut ne pas être précis.|  
 |**2** (par défaut)|Exécute un décompte rapide conditionnel en essayant d'abord la méthode rapide. Si la méthode rapide affiche des différences, revient à la méthode totale. Si *expected_rowcount* a la valeur null et que la procédure stockée est utilisée pour obtenir la valeur, un nombre total (*) est toujours utilisé.|  
   
-`[ @shutdown_agent = ] shutdown_agent` Si le Agent de distribution exécute **sp_table_validation**, spécifie si le agent de distribution doit s’arrêter immédiatement à la fin de la validation. *shutdown_agent* est de **bit**, avec **0**comme valeur par défaut. Si la **valeur est 0**, l’agent de réplication ne s’arrête pas. Si la valeur est **1**, l’erreur 20578 est déclenchée et l’agent de réplication est signalé pour s’arrêter. Ce paramètre est ignoré lorsque **sp_table_validation** est exécutée directement par un utilisateur.  
+`[ @shutdown_agent = ] shutdown_agent` Si le Agent de distribution exécute **sp_table_validation**, spécifie si le agent de distribution doit s’arrêter immédiatement à la fin de la validation. *shutdown_agent* est de **bit**, avec **0** comme valeur par défaut. Si la **valeur est 0**, l’agent de réplication ne s’arrête pas. Si la valeur est **1**, l’erreur 20578 est déclenchée et l’agent de réplication est signalé pour s’arrêter. Ce paramètre est ignoré lorsque **sp_table_validation** est exécutée directement par un utilisateur.  
   
-`[ @table_name = ] table_name` Nom de la table de la vue utilisée pour les messages de sortie. *table_name* est de **type sysname**, avec ** \@ table**comme valeur par défaut.  
+`[ @table_name = ] table_name` Nom de la table de la vue utilisée pour les messages de sortie. *table_name* est de **type sysname**, avec **\@ table** comme valeur par défaut.  
   
 `[ @column_list = ] 'column_list'` Liste des colonnes à utiliser dans la fonction de somme de contrôle. *column_list* est de type **nvarchar (4000)**, avec NULL comme valeur par défaut. Active la validation d'articles de fusion pour spécifier une liste de colonnes excluant les colonnes calculées et les colonnes timestamp.  
   

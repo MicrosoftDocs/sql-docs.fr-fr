@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: machine-learning-services
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_execute_external_script_TSQL
 - sys.sp_execute_external_script
@@ -21,12 +21,12 @@ ms.assetid: de4e1fcd-0e1a-4af3-97ee-d1becc7f04df
 author: dphansen
 ms.author: davidph
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: cceb8ad1df56eabaf0aa9507187e71b8db15bcaa
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ef90d43021349b0327ff96ebdec85b6a8483e43c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482371"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188001"
 ---
 # <a name="sp_execute_external_script-transact-sql"></a>sp_execute_external_script (Transact-SQL)
 [!INCLUDE [SQL Server 2016 SQL MI](../../includes/applies-to-version/sqlserver2016-asdbmi.md)]
@@ -63,7 +63,7 @@ Pour Machine Learning Services, [python](../../machine-learning/concepts/extensi
 Pour exécuter **sp_execute_external_script**, vous devez d’abord activer machine learning services. Pour plus d’informations, consultez la [machine learning services dans la documentation Azure SQL Managed instance](/azure/azure-sql/managed-instance/machine-learning-services-overview).
 ::: moniker-end
 
-![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
 
 ::: moniker range=">=sql-server-ver15||>=sql-server-linux-ver15||=azuresqldb-mi-current"
 ## <a name="syntax"></a>Syntaxe
@@ -137,7 +137,7 @@ sp_execute_external_script
   
 `[ @parameter1 = 'value1' [ OUT | OUTPUT ] [ ,...n ] ]` Liste de valeurs pour les paramètres d’entrée utilisés par le script externe.  
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Notes
 
 > [!IMPORTANT]
 > L’arborescence de requêtes est contrôlée par SQL Machine Learning et les utilisateurs ne peuvent pas effectuer d’opérations arbitraires sur la requête.

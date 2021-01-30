@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - numeric data type [ODBC], literals
 - conversions with numeric literals [ODBC]
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 89f846a3-001d-496a-9843-ac9c38dc1762
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8e3d9a931a960ce1bd404b6616b4a6e4f0d37c4a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b015a60e376e47a4c3c931d4739a884db23fc98b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88424951"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187137"
 ---
 # <a name="rules-for-conversions"></a>Règles pour les conversions
 Les règles de cette section s’appliquent aux conversions impliquant des littéraux numériques. Dans le cadre de ces règles, les termes suivants sont définis :  
   
--   *Attribution du magasin :* Lors de l’envoi de données dans une colonne de table dans une base de données. Cela se produit lors des appels à **SQLExecute**, **SQLExecDirect**et **SQLSetPos**. Pendant l’attribution du magasin, la « cible » fait référence à une colonne de base de données et la « source » fait référence aux données dans les mémoires tampons d’application.  
+-   *Attribution du magasin :* Lors de l’envoi de données dans une colonne de table dans une base de données. Cela se produit lors des appels à **SQLExecute**, **SQLExecDirect** et **SQLSetPos**. Pendant l’attribution du magasin, la « cible » fait référence à une colonne de base de données et la « source » fait référence aux données dans les mémoires tampons d’application.  
   
--   *Assignation d’extraction :* Lors de la récupération de données de la base de données dans des mémoires tampons d’application. Cela se produit lors des appels à **SQLFetch**, **SQLGetData**, **SQLFetchScroll**et **SQLSetPos**. Lors de l’assignation de la récupération, « Target » fait référence aux mémoires tampons de l’application et « source » fait référence à la colonne de base de données.  
+-   *Assignation d’extraction :* Lors de la récupération de données de la base de données dans des mémoires tampons d’application. Cela se produit lors des appels à **SQLFetch**, **SQLGetData**, **SQLFetchScroll** et **SQLSetPos**. Lors de l’assignation de la récupération, « Target » fait référence aux mémoires tampons de l’application et « source » fait référence à la colonne de base de données.  
   
 -   *CS :* Valeur dans la source du caractère.  
   
@@ -47,7 +47,7 @@ Les règles de cette section s’appliquent aux conversions impliquant des litt�
 ## <a name="character-source-to-numeric-target"></a>Source de caractères en cible numérique  
  Voici les règles de conversion d’une source de caractères (CS) en cible numérique (NT) :  
   
-1.  Remplacez CS par la valeur obtenue en supprimant les espaces de début ou de fin dans CS. Si CS n’est pas un *littéral numérique*valide, SQLSTATE 22018 (valeur de caractère non valide pour la spécification de cast) est retournée.  
+1.  Remplacez CS par la valeur obtenue en supprimant les espaces de début ou de fin dans CS. Si CS n’est pas un *littéral numérique* valide, SQLSTATE 22018 (valeur de caractère non valide pour la spécification de cast) est retournée.  
   
 2.  Remplacez CS par la valeur obtenue en supprimant les zéros non significatifs avant la virgule décimale, les zéros de fin après la virgule décimale, ou les deux.  
   

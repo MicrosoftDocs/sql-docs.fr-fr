@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - column_xml_schema_collection_usages_TSQL
 - sys.column_xml_schema_collection_usages
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 4fd1ec7f-b9dc-4ddb-ab3a-0d59ab05ad20
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 919c411fee5ef0a1a8dc13e46fa9632a72e89629
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: bcc015f19b1bc9d9bffce3d488bcbf6369c96a28
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102909"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190883"
 ---
 # <a name="syscolumn_xml_schema_collection_usages-transact-sql"></a>sys.column_xml_schema_collection_usages (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

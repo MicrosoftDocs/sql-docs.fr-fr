@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - mspublicationthresholds
 - mspublicationthresholds_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 9da3879f-b1f4-4ab4-abd4-a9a8ac395eba
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 3fc1c3f5290e5c3f540e070c2de5790414ffb6dd
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: ff905e4e8849c460ddd947978b89cd63cc2b7a0d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098219"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191171"
 ---
 # <a name="mspublicationthresholds-transact-sql"></a>MSpublicationthresholds (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

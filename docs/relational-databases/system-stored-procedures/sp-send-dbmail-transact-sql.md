@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sendmail_sp_TSQL
 - sendmail_sp
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: f1d7a795-a3fd-4043-ac4b-c781e76dab47
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: d2e7f1d11052b422ef8eb387349fbc8089a49eb2
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 72da3a1013869049b350440108dc4d4b631b5712
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547430"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190833"
 ---
 # <a name="sp_send_dbmail-transact-sql"></a>sp_send_dbmail (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -64,13 +64,13 @@ sp_send_dbmail [ [ @profile_name = ] 'profile_name' ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @profile_name = ] 'profile_name'` Nom du profil à partir duquel envoyer le message. Le *profile_name* est de type **sysname**, avec NULL comme valeur par défaut. Le *profile_name* doit être le nom d’un profil de Database mail existant. Quand aucun *profile_name* n’est spécifié, **sp_send_dbmail** utilise le profil privé par défaut pour l’utilisateur actuel. Si l’utilisateur n’a pas de profil privé par défaut, **sp_send_dbmail** utilise le profil public par défaut pour la base de données **msdb** . Si l’utilisateur n’a pas de profil privé par défaut et qu’il n’existe pas de profil public par défaut pour la base de données, ** \@ profile_name** doit être spécifié.  
+`[ @profile_name = ] 'profile_name'` Nom du profil à partir duquel envoyer le message. Le *profile_name* est de type **sysname**, avec NULL comme valeur par défaut. Le *profile_name* doit être le nom d’un profil de Database mail existant. Quand aucun *profile_name* n’est spécifié, **sp_send_dbmail** utilise le profil privé par défaut pour l’utilisateur actuel. Si l’utilisateur n’a pas de profil privé par défaut, **sp_send_dbmail** utilise le profil public par défaut pour la base de données **msdb** . Si l’utilisateur n’a pas de profil privé par défaut et qu’il n’existe pas de profil public par défaut pour la base de données, **\@ profile_name** doit être spécifié.  
   
-`[ @recipients = ] 'recipients'` Liste délimitée par des points-virgules des adresses de messagerie auxquelles envoyer le message. La liste des destinataires est de type **varchar (max)**. Bien que ce paramètre soit facultatif, au moins l’un des ** \@ destinataires**, ** \@ copy_recipients**ou ** \@ blind_copy_recipients** doit être spécifié, ou **sp_send_dbmail** retourne une erreur.  
+`[ @recipients = ] 'recipients'` Liste délimitée par des points-virgules des adresses de messagerie auxquelles envoyer le message. La liste des destinataires est de type **varchar (max)**. Bien que ce paramètre soit facultatif, au moins l’un des **\@ destinataires**, **\@ copy_recipients** ou **\@ blind_copy_recipients** doit être spécifié, ou **sp_send_dbmail** retourne une erreur.  
   
-`[ @copy_recipients = ] 'copy_recipients'` Liste délimitée par des points-virgules des adresses de messagerie auxquelles le message est copié. La liste des destinataires de copie est de type **varchar (max)**. Bien que ce paramètre soit facultatif, au moins l’un des ** \@ destinataires**, ** \@ copy_recipients**ou ** \@ blind_copy_recipients** doit être spécifié, ou **sp_send_dbmail** retourne une erreur.  
+`[ @copy_recipients = ] 'copy_recipients'` Liste délimitée par des points-virgules des adresses de messagerie auxquelles le message est copié. La liste des destinataires de copie est de type **varchar (max)**. Bien que ce paramètre soit facultatif, au moins l’un des **\@ destinataires**, **\@ copy_recipients** ou **\@ blind_copy_recipients** doit être spécifié, ou **sp_send_dbmail** retourne une erreur.  
   
-`[ @blind_copy_recipients = ] 'blind_copy_recipients'` Liste délimitée par des points-virgules des adresses de messagerie de copie carbone invisible du message. La liste des destinataires de la copie aveugle est de type **varchar (max)**. Bien que ce paramètre soit facultatif, au moins l’un des ** \@ destinataires**, ** \@ copy_recipients**ou ** \@ blind_copy_recipients** doit être spécifié, ou **sp_send_dbmail** retourne une erreur.  
+`[ @blind_copy_recipients = ] 'blind_copy_recipients'` Liste délimitée par des points-virgules des adresses de messagerie de copie carbone invisible du message. La liste des destinataires de la copie aveugle est de type **varchar (max)**. Bien que ce paramètre soit facultatif, au moins l’un des **\@ destinataires**, **\@ copy_recipients** ou **\@ blind_copy_recipients** doit être spécifié, ou **sp_send_dbmail** retourne une erreur.  
   
 `[ @from_address = ] 'from_address'` Valeur de l' « adresse de l’adresse » du message électronique. Il s'agit d'un paramètre optionnel utilisé pour remplacer les paramètres dans le profil de messagerie. Ce paramètre est de type **varchar (max)**. Les paramètres de sécurité SMTP déterminent si ces substitutions sont acceptées. Si aucun paramètre n'est spécifié, la valeur par défaut est NULL.  
   
@@ -104,7 +104,7 @@ sp_send_dbmail [ [ @profile_name = ] 'profile_name' ]
   
 -   Personnel  
   
--   Private  
+-   Privé  
   
 -   Confidentiel  
   
@@ -117,29 +117,29 @@ sp_send_dbmail [ [ @profile_name = ] 'profile_name' ]
   
 `[ @query = ] 'query'` Requête à exécuter. Les résultats de la requête sont inclus dans le corps du message électronique ou attachés comme pièce jointe. La requête est de type **nvarchar (max)** et peut contenir n’importe quelle [!INCLUDE[tsql](../../includes/tsql-md.md)] instruction valide. Notez que la requête est exécutée dans une session distincte, de sorte que les variables locales du script appelant **sp_send_dbmail** ne sont pas disponibles pour la requête.  
   
-`[ @execute_query_database = ] 'execute_query_database'` Contexte de base de données dans lequel la procédure stockée exécute la requête. Le paramètre est de type **sysname**, avec la valeur par défaut de la base de données actuelle. Ce paramètre s’applique uniquement si la ** \@ requête** est spécifiée.  
+`[ @execute_query_database = ] 'execute_query_database'` Contexte de base de données dans lequel la procédure stockée exécute la requête. Le paramètre est de type **sysname**, avec la valeur par défaut de la base de données actuelle. Ce paramètre s’applique uniquement si la **\@ requête** est spécifiée.  
   
 `[ @attach_query_result_as_file = ] attach_query_result_as_file` Spécifie si le jeu de résultats de la requête est retourné sous la forme d’un fichier joint. *attach_query_result_as_file* est de type **bit**, avec 0 comme valeur par défaut.  
   
- Lorsque la valeur est 0, les résultats de la requête sont inclus dans le corps du message électronique, après le contenu du paramètre ** \@ Body** . Lorsque la valeur est 1, les résultats sont retournés comme pièce jointe. Ce paramètre s’applique uniquement si la ** \@ requête** est spécifiée.  
+ Lorsque la valeur est 0, les résultats de la requête sont inclus dans le corps du message électronique, après le contenu du paramètre **\@ Body** . Lorsque la valeur est 1, les résultats sont retournés comme pièce jointe. Ce paramètre s’applique uniquement si la **\@ requête** est spécifiée.  
   
 `[ @query_attachment_filename = ] query_attachment_filename` Spécifie le nom de fichier à utiliser pour le jeu de résultats de la pièce jointe de la requête. *query_attachment_filename* est de type **nvarchar (255)**, avec NULL comme valeur par défaut. Ce paramètre est ignoré lorsque *attach_query_result* a la valeur 0. Lorsque *attach_query_result* a la valeur 1 et que ce paramètre a la valeur NULL, Database mail crée un nom de fichier arbitraire.  
   
-`[ @query_result_header = ] query_result_header` Spécifie si les résultats de la requête incluent des en-têtes de colonnes. La valeur query_result_header est de type **bit**. Lorsque la valeur est 1, les résultats de la requête contiennent des en-têtes de colonne, et lorsque la valeur est 0, les résultats n'incluent aucun en-tête de colonne. La valeur par défaut de ce paramètre est **1**. Ce paramètre s’applique uniquement si la ** \@ requête** est spécifiée.  
+`[ @query_result_header = ] query_result_header` Spécifie si les résultats de la requête incluent des en-têtes de colonnes. La valeur query_result_header est de type **bit**. Lorsque la valeur est 1, les résultats de la requête contiennent des en-têtes de colonne, et lorsque la valeur est 0, les résultats n'incluent aucun en-tête de colonne. La valeur par défaut de ce paramètre est **1**. Ce paramètre s’applique uniquement si la **\@ requête** est spécifiée.  
  
    >[!NOTE]
    > L’erreur suivante peut se produire lors de la définition \@ de query_result_header sur 0 et la définition \@ de query_no_truncate sur 1 :
    > <br> MSG 22050, niveau 16, état 1, ligne 12 : échec de l’initialisation de la bibliothèque sqlcmd avec le numéro d’erreur-2147024809.
   
-`[ @query_result_width = ] query_result_width` Largeur de ligne, en caractères, à utiliser pour la mise en forme des résultats de la requête. Le *query_result_width* est de type **int**, avec 256 comme valeur par défaut. La valeur fournie doit être comprise entre 10 et 32767. Ce paramètre s’applique uniquement si la ** \@ requête** est spécifiée.  
+`[ @query_result_width = ] query_result_width` Largeur de ligne, en caractères, à utiliser pour la mise en forme des résultats de la requête. Le *query_result_width* est de type **int**, avec 256 comme valeur par défaut. La valeur fournie doit être comprise entre 10 et 32767. Ce paramètre s’applique uniquement si la **\@ requête** est spécifiée.  
   
 `[ @query_result_separator = ] 'query_result_separator'` Caractère utilisé pour séparer les colonnes dans le résultat de la requête. Le séparateur est de type **char (1)**. La valeur par défaut est ' ' (espace).  
   
 `[ @exclude_query_output = ] exclude_query_output` Spécifie s’il faut retourner la sortie de l’exécution de la requête dans le message électronique. **exclude_query_output** est de bit, avec 0 comme valeur par défaut. Lorsque ce paramètre a la valeur 0, l’exécution de la procédure stockée **sp_send_dbmail** imprime le message retourné à la suite de l’exécution de la requête sur la console. Lorsque ce paramètre est 1, l’exécution de la procédure stockée **sp_send_dbmail** n’affiche aucun des messages d’exécution de la requête sur la console.  
   
-`[ @append_query_error = ] append_query_error`Spécifie s’il faut envoyer le message électronique lorsqu’une erreur est retournée par la requête spécifiée dans l’argument de ** \@ requête** . **append_query_error** est de **bit**, avec 0 comme valeur par défaut. Lorsque la valeur de ce paramètre est 1, la messagerie de base de données envoie le message électronique et inclut le message d'erreur de la requête dans le corps du message. Lorsque ce paramètre a la valeur 0, Database Mail n’envoie pas le message électronique et **sp_send_dbmail** se termine par le code de retour 1, ce qui indique un échec.  
+`[ @append_query_error = ] append_query_error`Spécifie s’il faut envoyer le message électronique lorsqu’une erreur est retournée par la requête spécifiée dans l’argument de **\@ requête** . **append_query_error** est de **bit**, avec 0 comme valeur par défaut. Lorsque la valeur de ce paramètre est 1, la messagerie de base de données envoie le message électronique et inclut le message d'erreur de la requête dans le corps du message. Lorsque ce paramètre a la valeur 0, Database Mail n’envoie pas le message électronique et **sp_send_dbmail** se termine par le code de retour 1, ce qui indique un échec.  
   
-`[ @query_no_truncate = ] query_no_truncate` Spécifie s’il faut exécuter la requête avec l’option qui évite la troncation des types de données de longueur variable volumineuses (**varchar (max)**, **nvarchar (max)**, **varbinary (max)**, **XML**, **Text**, **ntext**, **image**et types de données définis par l’utilisateur). Lorsqu'ils sont définis, les résultats de requête n'incluent pas les en-têtes de colonne. La valeur *query_no_truncate* est de type **bit**. Lorsque la valeur est définie à 0 ou lorsqu'elle n'est pas spécifiée, les colonnes de la requête sont limitées à 256 caractères, si elle est définie à 1, les colonnes ne sont pas tronquées. La valeur par défaut de ce paramètre est 0.  
+`[ @query_no_truncate = ] query_no_truncate` Spécifie s’il faut exécuter la requête avec l’option qui évite la troncation des types de données de longueur variable volumineuses (**varchar (max)**, **nvarchar (max)**, **varbinary (max)**, **XML**, **Text**, **ntext**, **image** et types de données définis par l’utilisateur). Lorsqu'ils sont définis, les résultats de requête n'incluent pas les en-têtes de colonne. La valeur *query_no_truncate* est de type **bit**. Lorsque la valeur est définie à 0 ou lorsqu'elle n'est pas spécifiée, les colonnes de la requête sont limitées à 256 caractères, si elle est définie à 1, les colonnes ne sont pas tronquées. La valeur par défaut de ce paramètre est 0.  
   
 > [!NOTE]  
 >  Lorsqu’elle est utilisée avec de grandes quantités de données, l' \@ option **query_no_truncate** consomme des ressources supplémentaires et peut ralentir les performances du serveur.  
@@ -167,17 +167,17 @@ sp_send_dbmail [ [ @profile_name = ] 'profile_name' ]
   
  **sysmail_stop_sp** arrête Database mail en arrêtant les objets Service Broker que le programme externe utilise. **sp_send_dbmail** accepte toujours le courrier lorsque Database mail est arrêté à l’aide de **sysmail_stop_sp**. Pour démarrer Database Mail, utilisez **sysmail_start_sp**.  
   
- Si le ** \@ Profil** n’est pas spécifié, **sp_send_dbmail** utilise un profil par défaut. Si l'utilisateur expéditeur du message électronique a un profil privé par défaut, la messagerie de base de données utilise ce profil. Si l’utilisateur n’a pas de profil privé par défaut, **sp_send_dbmail** utilise le profil public par défaut. S’il n’existe pas de profil privé par défaut pour l’utilisateur et aucun profil public par défaut, **sp_send_dbmail** retourne une erreur.  
+ Si le **\@ Profil** n’est pas spécifié, **sp_send_dbmail** utilise un profil par défaut. Si l'utilisateur expéditeur du message électronique a un profil privé par défaut, la messagerie de base de données utilise ce profil. Si l’utilisateur n’a pas de profil privé par défaut, **sp_send_dbmail** utilise le profil public par défaut. S’il n’existe pas de profil privé par défaut pour l’utilisateur et aucun profil public par défaut, **sp_send_dbmail** retourne une erreur.  
   
- **sp_send_dbmail** ne prend pas en charge les messages électroniques sans contenu. Pour envoyer un message électronique, vous devez spécifier au moins l’un des ** \@ corps**, les ** \@ requêtes**, les ** \@ file_attachments**ou l' ** \@ objet**. Dans le cas contraire, **sp_send_dbmail** retourne une erreur.  
+ **sp_send_dbmail** ne prend pas en charge les messages électroniques sans contenu. Pour envoyer un message électronique, vous devez spécifier au moins l’un des **\@ corps**, les **\@ requêtes**, les **\@ file_attachments** ou l' **\@ objet**. Dans le cas contraire, **sp_send_dbmail** retourne une erreur.  
   
- La messagerie de base de données utilise le contexte de sécurité [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows de l'utilisateur actuel pour contrôler l'accès aux fichiers. Par conséquent, les utilisateurs authentifiés avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification ne peuvent pas joindre de fichiers à l’aide de ** \@ file_attachments**. Windows n'autorise pas [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à fournir des informations d'identification d'un ordinateur distant à un autre. De cette façon, la messagerie de base de données ne peut pas joindre de fichiers aux messages depuis un partage réseau lorsque la commande est exécutée par un ordinateur autre que celui sur lequel [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] s'exécute.  
+ La messagerie de base de données utilise le contexte de sécurité [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows de l'utilisateur actuel pour contrôler l'accès aux fichiers. Par conséquent, les utilisateurs authentifiés avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification ne peuvent pas joindre de fichiers à l’aide de **\@ file_attachments**. Windows n'autorise pas [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à fournir des informations d'identification d'un ordinateur distant à un autre. De cette façon, la messagerie de base de données ne peut pas joindre de fichiers aux messages depuis un partage réseau lorsque la commande est exécutée par un ordinateur autre que celui sur lequel [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] s'exécute.  
   
- Si les paramètres ** \@ query** et ** \@ file_attachments** sont spécifiés et que le fichier est introuvable, la requête est toujours exécutée, mais le message électronique n’est pas envoyé.  
+ Si les paramètres **\@ query** et **\@ file_attachments** sont spécifiés et que le fichier est introuvable, la requête est toujours exécutée, mais le message électronique n’est pas envoyé.  
   
  Lorsqu'une requête est spécifiée, l'ensemble de résultats se présente sous la forme d'un texte inséré. Les données binaires contenues dans le résultat sont envoyées au format hexadécimal.  
   
- Les paramètres ** \@ destinataires**, ** \@ copy_recipients**et ** \@ blind_copy_recipients** sont des listes délimitées par des points-virgules d’adresses de messagerie. Au moins un de ces paramètres doit être fourni ou **sp_send_dbmail** retourne une erreur.  
+ Les paramètres **\@ destinataires**, **\@ copy_recipients** et **\@ blind_copy_recipients** sont des listes délimitées par des points-virgules d’adresses de messagerie. Au moins un de ces paramètres doit être fourni ou **sp_send_dbmail** retourne une erreur.  
   
  Lors de l’exécution de **sp_send_dbmail** sans contexte de transaction, Database mail démarre et valide une transaction implicite. Lors de l’exécution de **sp_send_dbmail** à partir d’une transaction existante, Database mail s’appuie sur l’utilisateur pour valider ou annuler les modifications. Aucune transaction interne n'est lancée.  
   

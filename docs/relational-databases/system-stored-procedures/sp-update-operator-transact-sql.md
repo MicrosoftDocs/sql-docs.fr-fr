@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_update_operator_TSQL
 - sp_update_operator
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 231750a6-4828-4d03-afe6-b91d38c42ed3
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 4dbc3c382ecd1c58e9bd76624700a1c62804a82c
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 2d664bbfc012ee262528397f735525138e91e82b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89545899"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187303"
 ---
 # <a name="sp_update_operator-transact-sql"></a>sp_update_operator (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Met à jour des informations sur un opérateur (destinataire de la notification) à utiliser pour les alertes et les travaux.  
   
-   ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+   ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -70,25 +70,25 @@ sp_update_operator
  Adresse de radiomessagerie de l’opérateur. Cette chaîne est transmise directement au système de messagerie électronique. *pager_number* est de type **nvarchar (100)**, avec NULL comme valeur par défaut.  
   
  [ @weekday_pager_start_time =] *weekday_pager_start_time*  
- Indique l'heure à partir de laquelle une notification peut être envoyée à cet opérateur sur son récepteur de radiomessagerie, du lundi au vendredi. *weekday_pager_start_time*est de **type int**, avec NULL comme valeur par défaut et doit être entré au format HHMMSS pour une utilisation avec une horloge de 24 heures.  
+ Indique l'heure à partir de laquelle une notification peut être envoyée à cet opérateur sur son récepteur de radiomessagerie, du lundi au vendredi. *weekday_pager_start_time* est de **type int**, avec NULL comme valeur par défaut et doit être entré au format HHMMSS pour une utilisation avec une horloge de 24 heures.  
   
  [ @weekday_pager_end_time =] *weekday_pager_end_time*  
- Indique l'heure à partir de laquelle une notification ne peut pas être envoyée à l'opérateur spécifié sur son récepteur de radiomessagerie, du lundi au vendredi. *weekday_pager_end_time*est de **type int**, avec NULL comme valeur par défaut et doit être entré au format HHMMSS pour une utilisation avec une horloge de 24 heures.  
+ Indique l'heure à partir de laquelle une notification ne peut pas être envoyée à l'opérateur spécifié sur son récepteur de radiomessagerie, du lundi au vendredi. *weekday_pager_end_time* est de **type int**, avec NULL comme valeur par défaut et doit être entré au format HHMMSS pour une utilisation avec une horloge de 24 heures.  
   
  [ @saturday_pager_start_time =] *saturday_pager_start_time*  
- Indique l'heure à partir de laquelle une notification peut être envoyée le samedi à l'opérateur spécifié sur son récepteur de radiomessagerie. *saturday_pager_start_time*est de **type int**, avec NULL comme valeur par défaut et doit être entré au format HHMMSS pour une utilisation avec une horloge de 24 heures.  
+ Indique l'heure à partir de laquelle une notification peut être envoyée le samedi à l'opérateur spécifié sur son récepteur de radiomessagerie. *saturday_pager_start_time* est de **type int**, avec NULL comme valeur par défaut et doit être entré au format HHMMSS pour une utilisation avec une horloge de 24 heures.  
   
  [ @saturday_pager_end_time =] *saturday_pager_end_time*  
- Indique l'heure à partir de laquelle une notification ne peut pas être envoyée le samedi à l'opérateur spécifié sur son récepteur de radiomessagerie. *saturday_pager_end_time*est de **type int**, avec NULL comme valeur par défaut et doit être entré au format HHMMSS pour une utilisation avec une horloge de 24 heures.  
+ Indique l'heure à partir de laquelle une notification ne peut pas être envoyée le samedi à l'opérateur spécifié sur son récepteur de radiomessagerie. *saturday_pager_end_time* est de **type int**, avec NULL comme valeur par défaut et doit être entré au format HHMMSS pour une utilisation avec une horloge de 24 heures.  
   
  [ @sunday_pager_start_time =] *sunday_pager_start_time*  
- Indique l'heure à partir de laquelle une notification peut être envoyée le dimanche à l'opérateur spécifié sur son récepteur de radiomessagerie. *sunday_pager_start_time*est de **type int**, avec NULL comme valeur par défaut et doit être entré au format HHMMSS pour une utilisation avec une horloge de 24 heures.  
+ Indique l'heure à partir de laquelle une notification peut être envoyée le dimanche à l'opérateur spécifié sur son récepteur de radiomessagerie. *sunday_pager_start_time* est de **type int**, avec NULL comme valeur par défaut et doit être entré au format HHMMSS pour une utilisation avec une horloge de 24 heures.  
   
  [ @sunday_pager_end_time =] *sunday_pager_end_time*  
- Indique l'heure à partir de laquelle une notification ne peut pas être envoyée le dimanche à l'opérateur spécifié sur son récepteur de radiomessagerie. *sunday_pager_end_time*est de **type int**, avec NULL comme valeur par défaut et doit être entré au format HHMMSS pour une utilisation avec une horloge de 24 heures.  
+ Indique l'heure à partir de laquelle une notification ne peut pas être envoyée le dimanche à l'opérateur spécifié sur son récepteur de radiomessagerie. *sunday_pager_end_time* est de **type int**, avec NULL comme valeur par défaut et doit être entré au format HHMMSS pour une utilisation avec une horloge de 24 heures.  
   
  [ @pager_days =] *pager_days*  
- Indique les jours où l'opérateur est en mesure de recevoir des notifications par radiomessagerie (en fonction des heures de début/fin précisées). *pager_days*est de **type tinyint**, avec NULL comme valeur par défaut et doit être une valeur comprise entre **0** et **127**. *pager_days* est calculé en ajoutant les valeurs individuelles pour les jours requis. Par exemple, du lundi au vendredi, il s’agit de **2** + **4** + **8** + **16** + **32**  =  **64**.  
+ Indique les jours où l'opérateur est en mesure de recevoir des notifications par radiomessagerie (en fonction des heures de début/fin précisées). *pager_days* est de **type tinyint**, avec NULL comme valeur par défaut et doit être une valeur comprise entre **0** et **127**. *pager_days* est calculé en ajoutant les valeurs individuelles pour les jours requis. Par exemple, du lundi au vendredi, il s’agit de **2** + **4** + **8** + **16** + **32**  =  **64**.  
   
 |Valeur|Description|  
 |-----------|-----------------|  
@@ -101,7 +101,7 @@ sp_update_operator
 |**64**|Samedi|  
   
  [ @netsend_address =] '*netsend_address*'  
- Adresse réseau de l'opérateur à qui est envoyé le message réseau. *netsend_address*est de type **nvarchar (100)**, avec NULL comme valeur par défaut.  
+ Adresse réseau de l'opérateur à qui est envoyé le message réseau. *netsend_address* est de type **nvarchar (100)**, avec NULL comme valeur par défaut.  
   
  [ @category_name =] '*catégorie*'  
  Nom de la catégorie pour cette alerte. *Category* est de **type sysname**, avec NULL comme valeur par défaut.  

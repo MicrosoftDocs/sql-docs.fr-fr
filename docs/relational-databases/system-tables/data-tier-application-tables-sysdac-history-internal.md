@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sysdac_history_internal
 - sysdac_history_internal_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 774a1678-0b27-42be-8adc-a6d7a4a56510
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: eaea0060136a928e6fab1184c9fd0c08d88df09f
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2c1770701b0373e56bac0a6c7c5bb2e9eac44ad3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094891"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187933"
 ---
 # <a name="data-tier-application-tables---sysdac_history_internal"></a>Tables d’applications de la couche Données - sysdac_history_internal
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -38,9 +38,9 @@ ms.locfileid: "98094891"
 |**action_type**|**tinyint**|Identificateur du type d'action :<br /><br /> **0** = déploiement<br /><br /> **1** = créer<br /><br /> **2** = renommer<br /><br /> **3** = détacher<br /><br /> **4** = suppression|  
 |**action_type_name**|**varchar (19)**|Nom du type d'action :<br /><br /> **deploy**<br /><br /> **create**<br /><br /> **rename**<br /><br /> **dissocié**<br /><br /> **delete**|  
 |**dac_object_type**|**tinyint**|Identificateur du type d'objet affecté par l'action :<br /><br /> **0** = dacpac<br /><br /> **1** = connexion<br /><br /> **2** = base de données|  
-|**dac_object_type_name**|**varchar (8)**|Nom du type d'objet affecté par l'action :<br /><br /> **dacpac** = instance DAC<br /><br /> **connexion**<br /><br /> **database**|  
+|**dac_object_type_name**|**varchar (8)**|Nom du type d'objet affecté par l'action :<br /><br /> **dacpac** = instance DAC<br /><br /> **login**<br /><br /> **database**|  
 |**action_status**|**tinyint**|Code qui identifie l'état actuel de l'action :<br /><br /> **0** = en attente<br /><br /> **1** = réussite<br /><br /> **2** = échec|  
-|**action_status_name**|**varchar (11)**|État actuel de l'action :<br /><br /> **instance**<br /><br /> **fructueux**<br /><br /> **incident**|  
+|**action_status_name**|**varchar (11)**|État actuel de l'action :<br /><br /> **en attente**<br /><br /> **fructueux**<br /><br /> **incident**|  
 |**Obligatoire**|**bit**|Utilisé par lors de la [!INCLUDE[ssDE](../../includes/ssde-md.md)] restauration d’une opération DAC.|  
 |**dac_object_name_pretran**|**sysname**|Nom de l'objet avant la validation de la transaction qui contient l'action. Utilisé uniquement pour les bases de données et les connexions.|  
 |**dac_object_name_posttran**|**sysname**|Nom de l'objet après la validation de la transaction qui contient l'action. Utilisé uniquement pour les bases de données et les connexions.|  
@@ -57,9 +57,9 @@ ms.locfileid: "98094891"
   
 | action_id | sequence_id | action_type_name | dac_object_type_name |
 | --------- | ----------- | ---------------- | -------------------- |
-|12|0|créer|dacpac|  
-|12|1|créer|login|  
-|12|2|créer|database|  
+|12|0|create|dacpac|  
+|12|1|create|login|  
+|12|2|create|database|  
 |12|3|renommer|database|  
   
  Les opérations DAC, telles que Delete, ne suppriment pas les lignes de **sysdac_history_internal**. Vous pouvez utiliser la requête suivante pour supprimer manuellement les lignes de DAC qui ne sont plus déployées sur une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] :  
