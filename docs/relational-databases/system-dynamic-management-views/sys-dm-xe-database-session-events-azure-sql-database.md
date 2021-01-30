@@ -6,18 +6,18 @@ ms.date: 06/10/2016
 ms.service: sql-database
 ms.prod_service: sql-database
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 ms.assetid: 9e985a19-f93f-4c56-b644-12c529298011
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: = azuresqldb-current
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 9748a35e2e558d52897b678a7d5815f710a09b90
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 4c96b6596c01410f9cea5d0e3183f599d1031c26
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101358"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99131162"
 ---
 # <a name="sysdm_xe_database_session_events-azure-sql-database"></a>sys.dm_xe_database_session_events (Azure SQL Database)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "98101358"
   
 ### <a name="relationship-cardinalities"></a>Cardinalités de la relation  
   
-|Du|À|Relationship|  
+|Du|À|Relation|  
 |----------|--------|------------------|  
 |sys.dm_xe_database_session_events sys.dm_xe_database_session_events.event_session_address|sys.dm_xe_database_sessions. adresse|Plusieurs-à-un|  
 |sys. DM _xe_database_session_events. event_package_guid, sys. DM _xe_database_session_events. event_name|sys.dm_xe_objects.name, sys.dm_xe_objects.package_guid|Plusieurs-à-un|  

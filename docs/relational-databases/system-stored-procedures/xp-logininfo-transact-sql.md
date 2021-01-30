@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - xp_logininfo_TSQL
 - xp_logininfo
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: ee7162b5-e11f-4a0e-a09c-1878814dbbbd
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 44b76081c7ec5fdd3496b670b1884347d1a84d1f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6df69edd25c5c2f451e8a4aa657caf99a4c8103d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88419213"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99124107"
 ---
 # <a name="xp_logininfo-transact-sql"></a>xp_logininfo (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -45,9 +45,9 @@ xp_logininfo [ [ @acctname = ] 'account_name' ]
 `[ @acctname = ] 'account_name'` Nom d’un utilisateur ou groupe Windows autorisé à accéder à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . *account_name* est de **type sysname**, avec NULL comme valeur par défaut. Si *account_name* n’est pas spécifié, tous les groupes Windows et utilisateurs Windows auxquels une autorisation de connexion a été explicitement accordée sont signalés. *account_name* doit être complet. Par exemple, « ADVWKS4\macraes » ou « BUILTIN\Administrators ».  
   
  **'all'**  |  **'Members'**  
- Spécifie s'il faut rapporter les informations sur tous les chemins d'autorisation du compte ou sur les membres du groupe Windows. l' ** \@ option** est de type **varchar (10)**, avec NULL comme valeur par défaut. Sauf si **All** est spécifié, seul le premier chemin d’accès est affiché.  
+ Spécifie s'il faut rapporter les informations sur tous les chemins d'autorisation du compte ou sur les membres du groupe Windows. l' **\@ option** est de type **varchar (10)**, avec NULL comme valeur par défaut. Sauf si **All** est spécifié, seul le premier chemin d’accès est affiché.  
   
-`[ @privilege = ] variable_name` Paramètre de sortie qui retourne le niveau de privilège du compte Windows spécifié. *variable_name* est de type **varchar (10)**, avec « not recherché » comme valeur par défaut. Le niveau de privilège retourné est **User**, **admin**ou **null**.  
+`[ @privilege = ] variable_name` Paramètre de sortie qui retourne le niveau de privilège du compte Windows spécifié. *variable_name* est de type **varchar (10)**, avec « not recherché » comme valeur par défaut. Le niveau de privilège retourné est **User**, **admin** ou **null**.  
   
  OUTPUT  
  En cas de spécification, place *variable_name* dans le paramètre de sortie.  
@@ -61,7 +61,7 @@ xp_logininfo [ [ @acctname = ] 'account_name' ]
 |-----------------|---------------|-----------------|  
 |**nom du compte**|**sysname**|Nom de compte Windows complet.|  
 |**type**|**Char (8)**|Type de compte Windows. Les valeurs valides sont **User** ou **Group**.|  
-|**limités**|**char(9)**|Privilège d'accès à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les valeurs valides sont **admin**, **User**ou **null**.|  
+|**limités**|**char(9)**|Privilège d'accès à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les valeurs valides sont **admin**, **User** ou **null**.|  
 |**mapped login name**|**sysname**|Pour les comptes d’utilisateur dotés de privilèges utilisateur, le **nom de connexion mappé** indique le nom de connexion mappé qui [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tente d’être utilisé lors de la connexion avec ce compte à l’aide des règles mappées avec le nom de domaine ajouté avant.|  
 |**permission path**|**sysname**|Membre du groupe qui autorise l'accès au compte|  
   
@@ -90,7 +90,7 @@ EXEC xp_logininfo 'BUILTIN\Administrators';
  [sp_denylogin &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-denylogin-transact-sql.md)   
  [sp_grantlogin &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-grantlogin-transact-sql.md)   
  [sp_revokelogin &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-revokelogin-transact-sql.md)   
- [Procédures stockées système &#40;&#41;Transact-SQL ](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
+ [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
  [Procédures stockées étendues générales &#40;&#41;Transact-SQL ](../../relational-databases/system-stored-procedures/general-extended-stored-procedures-transact-sql.md)  
   
   

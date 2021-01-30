@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - xp_loginconfig_TSQL
 - xp_loginconfig
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: d380e799-2857-408a-bcbf-5e73a8e6aa5a
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 9e86352f992698387334531398bafc5bdfdc2d61
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: da53f9c3666a4d4d1e75136dd81caa45c9aaee81
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88419253"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99124408"
 ---
 # <a name="xp_loginconfig-transact-sql"></a>xp_loginconfig (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -51,11 +51,11 @@ xp_loginconfig ['config_name']
 |**login mode**|Mode de sécurité de connexion. Les valeurs possibles sont **Mixed** et **Windows Authentication**.<br /><br /> Remplacé par :<br /><br /> `SELECT SERVERPROPERTY('IsIntegratedSecurityOnly'); GO`|  
 |**default login**|Nom de l'ID de connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] par défaut pour les utilisateurs autorisés de connexions approuvées (les utilisateurs sans nom de connexion correspondant). La connexion par défaut est **Guest**. Cette valeur est fournie pour des raisons de compatibilité descendante.|  
 |**Domaine par défaut**|Nom du domaine Windows par défaut pour les utilisateurs réseau de connexions approuvées. Le domaine par défaut est le domaine de l'ordinateur exécutant Windows et [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Cette valeur est fournie pour des raisons de compatibilité descendante.|  
-|**niveau d’audit**|Niveau d'audit. Les valeurs possibles sont **None**, **Success**, **Failure**et **All**. Les audits sont enregistrés dans le journal des erreurs et dans l'Observateur d'événements Windows.|  
+|**niveau d’audit**|Niveau d'audit. Les valeurs possibles sont **None**, **Success**, **Failure** et **All**. Les audits sont enregistrés dans le journal des erreurs et dans l'Observateur d'événements Windows.|  
 |**set hostname**|Indique si le nom d'hôte de l'enregistrement de connexion client est remplacé par le nom d'utilisateur réseau Windows. Les valeurs possibles sont **true** ou **false**. Si cette valeur est définie, le nom d’utilisateur réseau s’affiche dans la sortie de **sp_who**.|  
-|**map _**|Indique les caractères spéciaux Windows mappés sur le caractère de soulignement (_) [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] valide. Les valeurs possibles sont le **séparateur de domaine** (valeur par défaut), l' **espace**, la **valeur null**ou tout caractère unique. Cette valeur est fournie pour des raisons de compatibilité descendante.|  
-|**mapper $**|Indique les caractères spéciaux Windows mappés sur le caractère $ [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] valide. Les valeurs possibles sont **séparateur de domaine**, **espace**, **null**ou n’importe quel caractère unique. La valeur par défaut est **espace**. Cette valeur est fournie pour des raisons de compatibilité descendante.|  
-|**canal #**|Indique les caractères spéciaux Windows mappés sur le caractère # [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] valide. Les valeurs possibles sont **séparateur de domaine**, **espace**, **null**ou n’importe quel caractère unique. La valeur par défaut est le trait d'union. Cette valeur est fournie pour des raisons de compatibilité descendante.|  
+|**map _**|Indique les caractères spéciaux Windows mappés sur le caractère de soulignement (_) [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] valide. Les valeurs possibles sont le **séparateur de domaine** (valeur par défaut), l' **espace**, la **valeur null** ou tout caractère unique. Cette valeur est fournie pour des raisons de compatibilité descendante.|  
+|**mapper $**|Indique les caractères spéciaux Windows mappés sur le caractère $ [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] valide. Les valeurs possibles sont **séparateur de domaine**, **espace**, **null** ou n’importe quel caractère unique. La valeur par défaut est **espace**. Cette valeur est fournie pour des raisons de compatibilité descendante.|  
+|**canal #**|Indique les caractères spéciaux Windows mappés sur le caractère # [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] valide. Les valeurs possibles sont **séparateur de domaine**, **espace**, **null** ou n’importe quel caractère unique. La valeur par défaut est le trait d'union. Cette valeur est fournie pour des raisons de compatibilité descendante.|  
   
 ## <a name="return-code-values"></a>Codet de retour  
  0 (réussite) ou 1 (échec)  
@@ -96,7 +96,7 @@ GO
 ## <a name="see-also"></a>Voir aussi  
  [sp_denylogin &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-denylogin-transact-sql.md)   
  [sp_grantlogin &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-grantlogin-transact-sql.md)   
- [Procédures stockées système &#40;&#41;Transact-SQL ](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
+ [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
  [sp_revokelogin &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-revokelogin-transact-sql.md)   
  [xp_logininfo &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/xp-logininfo-transact-sql.md)  
   

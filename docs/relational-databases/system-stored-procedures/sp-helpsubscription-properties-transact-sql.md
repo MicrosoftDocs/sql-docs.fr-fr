@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpsubscription_properties
 - sp_helpsubscription_properties_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 7a76a645-97eb-47ac-b3ea-e2d75012cbed
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 4bcbd2ec90018561870d6159edb41105119ebc69
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 681a72a604af765311bb10833cc17842819e97f1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89547957"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99103184"
 ---
 # <a name="sp_helpsubscription_properties-transact-sql"></a>sp_helpsubscription_properties (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Récupère des informations de sécurité à partir de la table [MSsubscription_properties](../../relational-databases/system-tables/mssubscription-properties-transact-sql.md) . Cette procédure stockée est exécutée sur l'Abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -76,7 +76,7 @@ sp_helpsubscription_properties [ [ @publisher = ] 'publisher' ]
 |**ftp_password**|**nvarchar (524)**|Pour compatibilité descendante uniquement. Mot de passe de l’utilisateur, utilisé pour la connexion au service FTP.|  
 |**alt_snapshot_folder**|**nvarchar(255)**|Indique l'emplacement du dossier de remplacement pour l'instantané.|  
 |**working_directory**|**nvarchar(255)**|Nom du répertoire de travail utilisé pour stocker les fichiers de schéma et de données.|  
-|**use_ftp**|**bit**|Spécifie l’utilisation de FTP au lieu du protocole normal pour récupérer des instantanés. Si la **1**est utilisée, FTP est utilisé.|  
+|**use_ftp**|**bit**|Spécifie l’utilisation de FTP au lieu du protocole normal pour récupérer des instantanés. Si la **1** est utilisée, FTP est utilisé.|  
 |**dts_package_name**|**sysame**|Spécifie le nom du package DTS (Data Transformation Services).|  
 |**dts_package_password**|**nvarchar (524)**|Spécifie le mot de passe du package, s'il existe.|  
 |**dts_package_location**|**int**|Emplacement où le package DTS est stocké.<br /><br /> **0** = l’emplacement du package est sur le serveur de distribution.<br /><br /> **1** = l’emplacement du package est sur l’abonné.|  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_cursorfetch
 - sp_cursorfetch_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 14513c5e-5774-4e4c-92e1-75cd6985b6a3
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 45621f2b99616085a2543972df7109b2f2fe8e3c
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: bd6ad166a48d259ab925ae9369abe0d73a73f13b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89543589"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99126308"
 ---
 # <a name="sp_cursorfetch-transact-sql"></a>sp_cursorfetch (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Extrait une mémoire tampon d'une ou de plusieurs lignes de la base de données. Le groupe de lignes dans cette mémoire tampon est appelé le *tampon d’extraction*du curseur. sp_cursorfetch est appelée en spécifiant ID = 7 dans un paquet tabular data stream (TDS).  
+  Extrait une mémoire tampon d'une ou de plusieurs lignes de la base de données. Le groupe de lignes dans cette mémoire tampon est appelé le *tampon d’extraction* du curseur. sp_cursorfetch est appelée en spécifiant ID = 7 dans un paquet tabular data stream (TDS).  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -82,7 +82,7 @@ sp_cursorfetch cursor
 > [!NOTE]  
 >  :   Si aucune ligne n'est retournée, le contenu de la mémoire tampon reste inchangé.  
   
-|*\<rownum>*|Définir sur|  
+|*\<rownum>*|Paramètre à définir sur |  
 |------------------|------------|  
 |Si le curseur n'est pas ouvert|0|  
 |Si le curseur est positionné avant le jeu de résultats|0|  
@@ -91,7 +91,7 @@ sp_cursorfetch cursor
 |Pour les curseurs DYNAMIC|1|  
 |Pour ABSOLUTE|-1 retourne la dernière ligne dans un jeu.<br /><br /> -2 retourne la deuxième à la dernière ligne dans un jeu, et ainsi de suite.<br /><br /> Remarque : si plusieurs lignes sont demandées pour extraction dans ce cas, les deux dernières lignes du jeu de résultats sont retournées.|  
   
-|*\<nrows>*|Définir sur|  
+|*\<nrows>*|Paramètre à définir sur |  
 |-----------------|------------|  
 |Si le curseur n'est pas ouvert|0|  
 |Pour les curseurs KEYSET et STATIC|En général, taille du jeu de clés actuel.<br /><br /> **-m** si le curseur est en création asynchrone avec *m* lignes trouvées à ce point.|  

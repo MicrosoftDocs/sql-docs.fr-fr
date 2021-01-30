@@ -5,17 +5,17 @@ ms.custom: ''
 ms.date: 03/06/2017
 ms.service: sql-database
 ms.reviewer: ''
-ms.topic: language-reference
+ms.topic: reference
 ms.assetid: 33ea5179-16bb-4abd-96cc-9bc696e80987
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: d800d67e59bb72c6120ec786adaf5863a80bdf5f
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0e70d8d2f3dc731f29eda1f96b8ad88d51964313
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093942"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99129879"
 ---
 # <a name="sysdm_xe_database_sessions-azure-sql-database"></a>sys.dm_xe_database_sessions (Azure SQL Database)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "98093942"
 ### <a name="relationship-cardinalities"></a>Cardinalités de la relation  
 À partir de 2015-07-13, 'sys.dm_xe_objects’est l’une de ces DMV XEvents qui ne contiennent pas' _database’dans leur nom. Il ne s’agit pas d’une faute de frappe ou d’erreur dans la colonne de droite du tableau suivant. Le nom est le même dans Microsoft SQL Server et Azure SQL Database.  
   
-|Du|À|Relationship|  
+|Du|À|Relation|  
 |--------|------|----------------|  
 |sys.dm_xe_database_session_events sys.dm_xe_database_session_events.event_session_address|sys.dm_xe_database_sessions. adresse|Plusieurs-à-un|  
 |sys. DM _xe_database_session_events. event_package_guid, sys. DM _xe_database_session_events. event_name|sys.dm_xe_objects.name, sys.dm_xe_objects.package_guid|Plusieurs-à-un|  

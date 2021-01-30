@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - xp_cmdshell
 - xp_cmdshell_TSQL
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 18935cf4-b320-4954-b6c1-e007fcefe358
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 7f545d556069e31e349c0a8badf0fd9d95e6dcef
-ms.sourcegitcommit: ae474d21db4f724523e419622ce79f611e956a22
+ms.openlocfilehash: 73bea06c7919c40b1080458f3e6982d2c10ebe47
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257606"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99125002"
 ---
 # <a name="xp_cmdshell-transact-sql"></a>xp_cmdshell (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Engendre une commande d'environnement Windows et lui transmet une chaîne à traiter. Toute sortie est retournée sous forme de lignes de texte.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -90,7 +90,7 @@ EXEC sp_xp_cmdshell_proxy_account 'SHIPPING\KobeR','sdfh%dkc93vcMt0';
   
  Lorsque vous activez pour la première fois, **xp_cmdshell** nécessite l’autorisation Control Server pour s’exécuter et le processus Windows créé par **xp_cmdshell** a le même contexte de sécurité que le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] compte de service. Le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] compte de service a souvent plus d’autorisations que nécessaire pour le travail effectué par le processus créé par **xp_cmdshell**. Pour améliorer la sécurité, l’accès à **xp_cmdshell** doit être limité aux utilisateurs disposant de privilèges élevés.  
   
- Pour permettre aux non-administrateurs d’utiliser **xp_cmdshell**et autoriser [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à créer des processus enfants avec le jeton de sécurité d’un compte avec des privilèges moindres, procédez comme suit :  
+ Pour permettre aux non-administrateurs d’utiliser **xp_cmdshell** et autoriser [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à créer des processus enfants avec le jeton de sécurité d’un compte avec des privilèges moindres, procédez comme suit :  
   
 1.  Créez et personnalisez un compte d'utilisateur local Windows ou un compte de domaine avec les privilèges minimaux requis par vos processus.  
   

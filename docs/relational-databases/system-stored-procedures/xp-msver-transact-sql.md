@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - xp_msver_TSQL
 - xp_msver
@@ -18,19 +18,19 @@ helpviewer_keywords:
 ms.assetid: 9264cf8c-92ba-45ad-b2d6-15d26d805a16
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: a736447de4215d7f9c630036ae13872ff9d58bff
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 8a23619f5a1bf12ddcde718fc95db484f6d3cf6e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89544703"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99123840"
 ---
 # <a name="xp_msver-transact-sql"></a>xp_msver (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Retourne des informations de version sur [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . **xp_msver** renvoie également des informations sur le numéro de build réel du serveur et des informations sur l’environnement du serveur. Les informations retournées par **xp_msver** peuvent être utilisées dans [!INCLUDE[tsql](../../includes/tsql-md.md)] des instructions, des traitements, des procédures stockées, etc., pour améliorer la logique du code indépendant de la plateforme.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,7 +50,7 @@ xp_msver [ optname ]
 |**Langage**|Version linguistique de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
 |**Plateforme**|Nom du système d'exploitation, du constructeur et de la famille de micro-processeurs pour l'ordinateur exécutant [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
 |**Commentaires**|Informations diverses sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
-|**Prennent**|Nom de la société qui produit [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ; par exemple, [!INCLUDE[msCoName](../../includes/msconame-md.md)] Corporation.|  
+|**CompanyName**|Nom de la société qui produit [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ; par exemple, [!INCLUDE[msCoName](../../includes/msconame-md.md)] Corporation.|  
 |**FileDescription**|Système d'exploitation.|  
 |**FileVersion**|Version de l'exécutable [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
 |**InternalName**|Nom interne à [!INCLUDE[msCoName](../../includes/msconame-md.md)] pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], par exemple, SQLSERVR.|  

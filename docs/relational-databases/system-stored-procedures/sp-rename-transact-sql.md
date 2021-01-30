@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_rename_TSQL
 - sp_rename
@@ -22,12 +22,12 @@ ms.assetid: bc3548f0-143f-404e-a2e9-0a15960fc8ed
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current||=azure-sqldw-latest
-ms.openlocfilehash: c180d679075076168d3be510c22d0775ebc7af30
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a9aabbb180e01dcfec95d87861fc43dd0a1aca51
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478900"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99125946"
 ---
 # <a name="sp_rename-transact-sql"></a>sp_rename (Transact-SQL)
 [!INCLUDE [sql-asdb-asa](../../includes/applies-to-version/sql-asdb-asa.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "97478900"
 > [!CAUTION]  
 >  La modification d'une partie du nom de l'objet peut provoquer des problèmes dans des scripts et des procédures stockées. Nous vous recommandons de ne pas utiliser cette instruction pour renommer des procédures stockées, des déclencheurs, des fonctions définies par l'utilisateur ou des vues ; supprimez plutôt l'objet et recréez-le avec le nouveau nom.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -71,7 +71,7 @@ sp_rename [ @objname = ] 'object_name' , [ @newname = ] 'new_name'
  [ @objtype =] '*object_type*'  
  Type d'objet renommé. *object_type* est de type **varchar (13)**, avec NULL comme valeur par défaut et peut prendre l’une des valeurs suivantes.  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |COLUMN|Colonne à renommer.|  
 |DATABASE|Base de données définie par l'utilisateur. Ce type d'objet est nécessaire pour renommer une base de données.|  
@@ -86,7 +86,7 @@ Dans sp_rename (version préliminaire) pour [!INCLUDE[ssazuresynapse](../../incl
 ## <a name="return-code-values"></a>Codet de retour  
  0 (réussite) ou un nombre différent de zéro (échec)  
   
-## <a name="remarks"></a>Remarks  
+## <a name="remarks"></a>Notes  
 **S’applique à** SQL Server (toutes les versions prises en charge) et Azure SQL Database  
  sp_rename renomme automatiquement l'index associé chaque fois qu'une contrainte PRIMARY KEY ou UNIQUE est renommée. Si un index renommé est lié à une contrainte PRIMARY KEY, cette dernière est également renommée automatiquement par sp_rename.  
 
