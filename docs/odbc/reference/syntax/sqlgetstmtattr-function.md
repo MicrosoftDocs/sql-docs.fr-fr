@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLGetStmtAttr
 apilocation:
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: e321d460-e997-4527-aee6-207cf5a498e9
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f6af1813068b51780c9181f3e3e98559769495fe
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: b527d4a828ab1684977ced21a0509a7c75bf2041
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172371"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186179"
 ---
 # <a name="sqlgetstmtattr-function"></a>Fonction SQLGetStmtAttr
 **Conformité**  

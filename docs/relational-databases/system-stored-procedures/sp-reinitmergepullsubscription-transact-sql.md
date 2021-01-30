@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_reinitmergepullsubscription
 - sp_reinitmergepullsubscription_TSQL
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 48464bc9-60aa-4886-b526-163f010102b8
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 06b65044129dd302d516eabe3b9c13f6352d3035
-ms.sourcegitcommit: b3a711a673baebb2ff10d7142b209982b46973ae
+ms.openlocfilehash: 2fb9aaa1ccc6cbd8e89b42a2e82c8a663e61cc91
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93364804"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185687"
 ---
 # <a name="sp_reinitmergepullsubscription-transact-sql"></a>sp_reinitmergepullsubscription (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Signale un abonnement de fusion extrait en vue de sa réinitialisation lors de la prochaine exécution de l'Agent de fusion. Cette procédure stockée est exécutée dans la base de données d'abonnement de l'abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -41,13 +41,13 @@ sp_reinitmergepullsubscription [ [ @publisher = ] 'publisher' ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
-`[ @publisher = ] 'publisher'` Nom du serveur de publication. *Publisher* est de **type sysname** , avec All comme valeur par défaut.  
+`[ @publisher = ] 'publisher'` Nom du serveur de publication. *Publisher* est de **type sysname**, avec All comme valeur par défaut.  
   
-`[ @publisher_db = ] 'publisher_db'` Nom de la base de données du serveur de publication. *publisher_db* est de **type sysname** , avec All comme valeur par défaut.  
+`[ @publisher_db = ] 'publisher_db'` Nom de la base de données du serveur de publication. *publisher_db* est de **type sysname**, avec All comme valeur par défaut.  
   
-`[ @publication = ] 'publication'` Nom de la publication. *publication* est de **type sysname** , avec All comme valeur par défaut.  
+`[ @publication = ] 'publication'` Nom de la publication. *publication* est de **type sysname**, avec All comme valeur par défaut.  
   
-`[ @upload_first = ] 'upload_first'` Indique si les modifications apportées à l’abonné sont téléchargées avant la réinitialisation de l’abonnement. *upload_first* est de type **nvarchar (5)** , avec false comme valeur par défaut. Si la **valeur est true** , les modifications sont téléchargées avant la réinitialisation de l’abonnement. Si la **valeur est false** , les modifications ne sont pas téléchargées.  
+`[ @upload_first = ] 'upload_first'` Indique si les modifications apportées à l’abonné sont téléchargées avant la réinitialisation de l’abonnement. *upload_first* est de type **nvarchar (5)**, avec false comme valeur par défaut. Si la **valeur est true**, les modifications sont téléchargées avant la réinitialisation de l’abonnement. Si la **valeur est false**, les modifications ne sont pas téléchargées.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  

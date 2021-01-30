@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_helpdistributor_TSQL
 - sp_helpdistributor
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 37b0983e-3b69-4f0f-977e-20efce0a0b97
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: f2c7f0778ced979765e046634d0bb39adc01578d
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: c23613a7b79ea7bfa418425a32b6d2ee9bf62699
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549642"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186979"
 ---
 # <a name="sp_helpdistributor-transact-sql"></a>sp_helpdistributor (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Répertorie des informations sur le serveur de distribution, la base de données de distribution, le répertoire de travail et le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] compte d’utilisateur de l’agent. Cette procédure stockée est exécutée sur la base de données de publication du serveur de publication ou sur n'importe quelle base de données.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -56,13 +56,13 @@ sp_helpdistributor [ [ @distributor= ] 'distributor' OUTPUT ]
   
 `[ @directory = ] 'directory' OUTPUT` Est le répertoire de travail. *Directory* est de type **nvarchar (255)**, avec **%** la valeur par défaut, qui est la seule valeur qui retourne un jeu de résultats.  
   
-`[ @account = ] 'account' OUTPUT` Est le [!INCLUDE[msCoName](../../includes/msconame-md.md)] compte d’utilisateur Windows. *Account*est de type **nvarchar (255)**, avec **%** la valeur par défaut, qui est la seule valeur qui retourne un jeu de résultats.  
+`[ @account = ] 'account' OUTPUT` Est le [!INCLUDE[msCoName](../../includes/msconame-md.md)] compte d’utilisateur Windows. *Account* est de type **nvarchar (255)**, avec **%** la valeur par défaut, qui est la seule valeur qui retourne un jeu de résultats.  
   
-`[ @min_distretention = ] _min_distretentionOUTPUT` Période de rétention minimale de la distribution, en heures. *min_distretention* est de **type int**, avec **-1**comme valeur par défaut.  
+`[ @min_distretention = ] _min_distretentionOUTPUT` Période de rétention minimale de la distribution, en heures. *min_distretention* est de **type int**, avec **-1** comme valeur par défaut.  
   
-`[ @max_distretention = ] _max_distretentionOUTPUT` Période de rétention maximale de la distribution, en heures. *max_distretention* est de **type int**, avec **-1**comme valeur par défaut.  
+`[ @max_distretention = ] _max_distretentionOUTPUT` Période de rétention maximale de la distribution, en heures. *max_distretention* est de **type int**, avec **-1** comme valeur par défaut.  
   
-`[ @history_retention = ] _history_retentionOUTPUT` Période de rétention de l’historique, en heures. *history_retention* est de **type int**, avec **-1**comme valeur par défaut.  
+`[ @history_retention = ] _history_retentionOUTPUT` Période de rétention de l’historique, en heures. *history_retention* est de **type int**, avec **-1** comme valeur par défaut.  
   
 `[ @history_cleanupagent = ] 'history_cleanupagent' OUTPUT` Nom de l’agent de nettoyage de l’historique. *history_cleanupagent* est de type **nvarchar (100)**, avec **%** la valeur par défaut, qui est la seule valeur qui retourne un jeu de résultats.  
   

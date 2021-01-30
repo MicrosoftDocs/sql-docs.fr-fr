@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_fulltext_catalog_TSQL
 - sp_fulltext_catalog
@@ -19,12 +19,12 @@ ms.assetid: e49b98e4-d1f1-42b2-b16f-eb2fc7aa1cf5
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 2cd4ad72b81a0a602707ad55c85174657feb183c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 7f2d26fe07a6b5c224de6984dbf47d0ae6bc3b8f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482390"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185443"
 ---
 # <a name="sp_fulltext_catalog-transact-sql"></a>sp_fulltext_catalog (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "97482390"
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Utilisez [CREATE FULLTEXT CATALOG](../../t-sql/statements/create-fulltext-catalog-transact-sql.md), [ALTER FULLTEXT CATALOG](../../t-sql/statements/alter-fulltext-catalog-transact-sql.md)et [DROP FULLTEXT CATALOG](../../t-sql/statements/drop-fulltext-catalog-transact-sql.md) à la place.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -53,10 +53,10 @@ sp_fulltext_catalog [ @ftcat= ] 'fulltext_catalog_name' ,
 > [!NOTE]  
 >  En fonction de vos besoins, vous pouvez créer, supprimer et modifier des catalogues de texte intégral. Toutefois, il vaut mieux éviter de procéder à des modifications de schéma sur plusieurs catalogues à la fois. Ces actions peuvent être effectuées à l’aide de la procédure stockée **sp_fulltext_table** , qui est la méthode recommandée.  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |**Créer**|Crée un nouveau catalogue de texte intégral vide dans le système de fichiers et ajoute une ligne associée dans **sysfulltextcatalogs** avec la *fulltext_catalog_name* et *root_directory*, le cas échéant, des valeurs. *fulltext_catalog_name* doit être unique dans la base de données.|  
-|**Supprimer**|Supprime *fulltext_catalog_name* en le supprimant du système de fichiers et en supprimant la ligne associée dans **sysfulltextcatalogs**. Cette action échoue si le catalogue contient des index pour une ou plusieurs tables. **sp_fulltext_table** «*table_name*», « Drop » doit être exécuté pour supprimer les tables du catalogue.<br /><br /> Une erreur est affichée si le catalogue n'existe pas.|  
+|**Déplacez**|Supprime *fulltext_catalog_name* en le supprimant du système de fichiers et en supprimant la ligne associée dans **sysfulltextcatalogs**. Cette action échoue si le catalogue contient des index pour une ou plusieurs tables. **sp_fulltext_table** «*table_name*», « Drop » doit être exécuté pour supprimer les tables du catalogue.<br /><br /> Une erreur est affichée si le catalogue n'existe pas.|  
 |**start_incremental**|Démarre un remplissage incrémentiel pour *fulltext_catalog_name*. Une erreur est affichée si le catalogue n'existe pas. Si une alimentation d'index de recherche en texte intégral est déjà active, un avertissement est affiché, mais aucune opération d'alimentation ne se produit. Avec remplissage incrémentiel, seules les lignes modifiées sont récupérées pour l’indexation de texte intégral, à condition qu’une colonne **timestamp** soit présente dans la table en cours d’indexation de texte intégral.|  
 |**start_full**|Démarre un remplissage complet pour *fulltext_catalog_name*. Même si elle a déjà été indexée, chaque ligne de chaque table associée à ce catalogue de texte intégral est récupérée lors de l'indexation en texte intégral.|  
 |**Stop**|Arrête un remplissage d’index pour *fulltext_catalog_name*. Une erreur est affichée si le catalogue n'existe pas. Aucun avertissement n'est affiché si l'alimentation était déjà arrêtée.|  

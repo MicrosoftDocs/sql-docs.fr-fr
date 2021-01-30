@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sp_reinitpullsubscription_TSQL
 - sp_reinitpullsubscription
@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 7d9abe49-ce92-47f3-82c9-aea749518c91
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: b584cb652e6abd79818c733cb4e4fb2742d1527b
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: c77a8e055da1e37712bda31c5d40d51201a40839
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89549553"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185700"
 ---
 # <a name="sp_reinitpullsubscription-transact-sql"></a>sp_reinitpullsubscription (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
   Signale un abonnement par extraction de données (pull) transactionnel ou anonyme en vue de sa réinitialisation lors de la prochaine exécution de l’Agent de distribution. Cette procédure stockée est exécutée sur la base de données d'abonnement par extraction de données (pull) de l'abonné.  
   
- ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -56,7 +56,7 @@ sp_reinitpullsubscription [ @publisher = ] 'publisher'
   
  **sp_reinitpullsubscription** peut être appelée à partir de l’abonné pour réinitialiser l’abonnement lors de la prochaine exécution du agent de distribution.  
   
- Les abonnements aux publications créées avec la valeur **false** pour ** \@ immediate_sync** ne peuvent pas être réinitialisés à partir de l’abonné.  
+ Les abonnements aux publications créées avec la valeur **false** pour **\@ immediate_sync** ne peuvent pas être réinitialisés à partir de l’abonné.  
   
  Pour réinitialiser un abonnement par extraction, vous pouvez soit exécuter **sp_reinitpullsubscription** sur l’abonné, soit **sp_reinitsubscription** sur le serveur de publication.  
   

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - QUERY_CONTEXT_SETTINGS_TSQL
 - SYS.QUERY_CONTEXT_SETTINGS_TSQL
@@ -21,12 +21,12 @@ ms.assetid: 3c1887df-6bd8-491e-82fc-d25ad9589faf
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 510f508b8d0048b1e13aa544a3c07f20f3a1d44c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: fba7c17453b0545763afb751aabd23b6c05c617c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098339"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185849"
 ---
 # <a name="sysquery_context_settings-transact-sql"></a>sys.query_context_settings (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa.md)]

@@ -6,7 +6,7 @@ ms.date: 12/30/2019
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SEQUENCES
 - SEQUENCES_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 365b91660769cbb189b23366671486271177e6e4
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 60a542af207d0de4936dda79c2560dc14dac9ba6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440590"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185472"
 ---
 # <a name="sequences-transact-sql"></a>SÉQUENCEs (Transact-SQL)
 
