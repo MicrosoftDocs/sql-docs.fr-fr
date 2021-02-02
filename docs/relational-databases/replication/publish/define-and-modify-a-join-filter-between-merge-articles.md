@@ -16,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: f7f23415-43ff-40f5-b3e0-0be1d148ee5b
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 3ca4b241b3f1224eeee37ca11b34b1345151c6d6
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 4ef84f22bf255b8dcb21ba371de5c3045da3ca6b
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85898030"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076747"
 ---
 # <a name="define-and-modify-a-join-filter-between-merge-articles"></a>Définir et modifier un filtre de jointure entre des articles de fusion
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique décrit comment définir et modifier un filtre de jointure entre des articles de fusion dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../../includes/tsql-md.md)]. La réplication de fusion prend en charge les filtres de jointure, qui sont en général utilisés conjointement aux filtres paramétrables pour étendre le partitionnement de table à d'autres articles de table connexes.  
+  Cette rubrique décrit comment définir et modifier un filtre de jointure entre des articles de fusion dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../../includes/tsql-md.md)]. La réplication de fusion prend en charge les filtres de jointure, qui sont en général utilisés conjointement aux filtres paramétrables pour étendre le partitionnement de table à d'autres articles de table connexes.  
   
  **Dans cette rubrique**  
   
@@ -64,7 +64,7 @@ ms.locfileid: "85898030"
   
 3.  Créez l'instruction de jointure : sélectionnez **Utiliser le générateur pour créer l'instruction** ou **Créer manuellement l'instruction de jointure**.  
   
-    -   Si vous sélectionnez le générateur, utilisez les colonnes de la grille (**Conjonction**, **Colonnes de table filtrée**, **Opérateur**et **Colonnes de table jointe**) pour créer une instruction de jointure.  
+    -   Si vous sélectionnez le générateur, utilisez les colonnes de la grille (**Conjonction**, **Colonnes de table filtrée**, **Opérateur** et **Colonnes de table jointe**) pour créer une instruction de jointure.  
   
          Chaque colonne de la grille contient une zone de liste déroulante fixe permettant de sélectionner deux colonnes et un opérateur ( **=** , **<>** , **<=** , **\<**, **>=** , **>** et **like**). Les résultats s'affichent dans la zone de texte **Aperçu** . Si la jointure concerne plus d'une paire de colonnes, sélectionnez une conjonction (AND ou OR) dans la colonne **Conjonction** , et entrez deux autres colonnes et un opérateur.  
   

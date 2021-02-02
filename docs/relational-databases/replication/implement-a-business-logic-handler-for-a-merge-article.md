@@ -19,16 +19,16 @@ helpviewer_keywords:
 ms.assetid: ed477595-6d46-4fa2-b0d3-a5358903ec05
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: ea4a56fdd17978bffa633bf1c466f493969074a9
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 45ed99072fb5abad47b9f63a22f879c0f4e438eb
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85716805"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076827"
 ---
 # <a name="implement-a-business-logic-handler-for-a-merge-article"></a>Implémenter un gestionnaire de logique métier pour un article de fusion
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique décrit comment implémenter un gestionnaire de logique métier pour un article de fusion dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de la programmation de réplication ou d'objets RMO (Replication Management Objects).  
+  Cette rubrique décrit comment implémenter un gestionnaire de logique métier pour un article de fusion dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de la programmation de réplication ou d'objets RMO (Replication Management Objects).  
   
  L'espace de noms <xref:Microsoft.SqlServer.Replication.BusinessLogicSupport> implémente une interface qui vous permet d'écrire une logique métier complexe afin de gérer les événements qui se produisent au cours du processus de synchronisation de la réplication de fusion. Les méthodes dans le gestionnaire de logique métier peuvent être appelées par le processus de réplication pour chaque ligne modifiée qui est répliquée pendant la synchronisation.  
   

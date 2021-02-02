@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: d2236a2a-4cf1-4c3f-b542-f73f6096e15c
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 69ad35549678772fc0da1c834ba4064beeb19ed7
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: fd5fa04b32d9c00f810b61bbca81963e21bd5697
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96125604"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076877"
 ---
 # <a name="file-restores-full-recovery-model"></a>Restaurations de fichiers (mode de récupération complète)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "96125604"
   
      Dans une *restauration de fichiers hors ligne*, la base de données est hors connexion pendant la restauration des fichiers ou des groupes de fichiers endommagés. À la fin de la séquence de restauration, la base de données est mise en ligne.  
   
-     Toutes les éditions de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] prennent en charge la restauration de fichiers hors connexion.  
+     Toutes les éditions de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] prennent en charge la restauration de fichiers hors connexion.  
   
 -   Restauration de fichiers en ligne  
   

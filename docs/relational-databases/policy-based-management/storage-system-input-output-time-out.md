@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: ff921952-b935-4bb0-b587-bba6cd15a090
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: d212a0ae0f42877340ff16acdb8e3b0adc00bb83
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 3a78ff89c0017c4e4091bbf9a6ed1b0a9518c3de
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88482546"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076797"
 ---
 # <a name="storage-system-input-output-time-out"></a>Délai d’attente d’entrée-sortie du système de stockage
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "88482546"
 ## <a name="best-practices-recommendations"></a>Meilleures pratiques recommandées  
  Pour plus d'informations sur la résolution de cette erreur, consultez les articles suivants de la Base de connaissances Microsoft :  
   
--   [Article 259237 de la Base de connaissances Microsoft](https://go.microsoft.com/fwlink/?linkid=117746)  
+-   [Article 259237 de la Base de connaissances Microsoft](https://www.betaarchive.com/wiki/index.php?title=Microsoft_KB_Archive/259237)  
   
--   [Article 154690 de la Base de connaissances Microsoft](https://go.microsoft.com/fwlink/?LinkId=117747)  
+-   [Article 154690 de la Base de connaissances Microsoft](https://www.betaarchive.com/wiki/index.php?title=Microsoft_KB_Archive/154690)  
   
 ## <a name="for-more-information"></a>Pour plus d'informations  
  [SQL Server I/O Basics, Chapter 2 (en anglais)](/previous-versions/sql/sql-server-2005/administrator/cc917726(v=technet.10))  

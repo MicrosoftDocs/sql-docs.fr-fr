@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 7101d77a-84ca-4c00-af1c-17679234e9fb
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 2631fc0d816766c175be0254b24fd47dd2a20e46
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4ee0b7b6ee2bbc792ab737e443813234a167d204
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88475621"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076997"
 ---
 # <a name="device-driver-control-error"></a>Erreur de contrôle du pilote de périphérique
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -27,8 +27,8 @@ ms.locfileid: "88475621"
 ## <a name="best-practices-recommendations"></a>Meilleures pratiques recommandées  
  Pour plus d'informations sur la résolution de cette erreur, consultez les articles suivants de la Base de connaissances Microsoft :  
   
--   [Article 259237 de la Base de connaissances Microsoft](https://go.microsoft.com/fwlink/?linkid=117746)  
+-   [Article 259237 de la Base de connaissances Microsoft](https://www.betaarchive.com/wiki/index.php?title=Microsoft_KB_Archive/259237)  
   
--   [Article 154690 de la Base de connaissances Microsoft](https://go.microsoft.com/fwlink/?linkid=117747)  
+-   [Article 154690 de la Base de connaissances Microsoft](https://www.betaarchive.com/wiki/index.php?title=Microsoft_KB_Archive/154690)  
   
   

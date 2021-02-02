@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 11e17f4e-72ed-44d7-a71d-a68937a78e4c
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 481f534c719d188d108ee1d9edd0776ee8b2bc9d
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 7ae8429bb51ec2a58a167784b701b7ae0532bb92
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92192446"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076927"
 ---
 # <a name="performance-counters"></a>Compteurs de performance
 
@@ -78,7 +78,7 @@ select * from [catalog].[dm_execution_performance_counters] (NULL)
   
 -   Vidéo : [Mesure et présentation des performances de vos packages SSIS dans l’entreprise (Vidéo liée à SQL Server)](/previous-versions/sql/sql-server-2008/dd795223(v=sql.100)), sur le site msdn.microsoft.com.  
   
--   Article du Support technique : [Le compteur de performance SSIS n’est plus disponible dans l’Analyseur de performances après la mise à niveau vers Windows Server 2008](https://go.microsoft.com/fwlink/?LinkId=235319), sur le site support.microsoft.com.  
+-   Article du Support technique : [Le compteur de performance SSIS n’est plus disponible dans l’Analyseur de performances après la mise à niveau vers Windows Server 2008](https://web.archive.org/web/20111112202346/http://support.microsoft.com:80/kb/955632), sur le site support.microsoft.com.  
 
 ## <a name="add-a-log-for-data-flow-performance-counters"></a>Ajouter un journal pour les compteurs de performances de flux de données
   Cette procédure décrit comment ajouter un journal pour les compteurs de performances fournis par le moteur de flux de données.  
