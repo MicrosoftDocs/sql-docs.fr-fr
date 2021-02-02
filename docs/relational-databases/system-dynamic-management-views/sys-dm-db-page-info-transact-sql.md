@@ -21,12 +21,12 @@ author: bluefooted
 ms.author: pamela
 manager: amitban
 monikerRange: '>=sql-server-ver15'
-ms.openlocfilehash: 429f8049ef0b92168be5e3e0fc90c91e3d37224e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 10756b0297cdc731468ea8983c5378d5b380fef9
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472810"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236016"
 ---
 # <a name="sysdm_db_page_info-transact-sql"></a>sys.dm_db_page_info (Transact-SQL)
 
@@ -35,7 +35,7 @@ ms.locfileid: "97472810"
 Retourne des informations sur une page d’une base de données.  La fonction retourne une ligne qui contient les informations d’en-tête de la page, y compris `object_id` , `index_id` et `partition_id` .  Cette fonction rend superflue l’utilisation de `DBCC PAGE` dans la plupart des cas.
 
 > [!NOTE]
-> `sys.dm_db_page_info` est actuellement pris en charge uniquement dans [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et versions ultérieures.
+> `sys.dm_db_page_info` est actuellement pris en charge uniquement dans [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] et versions ultérieures.
 
 
 ## <a name="syntax"></a>Syntaxe   
@@ -114,7 +114,7 @@ Détermine le niveau de détail dans la sortie de la fonction. 'LIMITED’renver
 |xdes_id |nvarchar (64) |Dernière transaction fournie par m_reserved <br> À des fins de débogage uniquement |
 ||||
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Notes
 La `sys.dm_db_page_info` fonction de gestion dynamique retourne des informations `page_id` de page comme, `file_id` , `index_id` , `object_id` etc. qui sont présentes dans un en-tête de page. Ces informations sont utiles pour le dépannage et le débogage des performances (verrouillage et contention de verrous internes) et des problèmes d’altération.
 
 `sys.dm_db_page_info` peut être utilisé à la place de l' `DBCC PAGE` instruction dans de nombreux cas, mais retourne uniquement les informations d’en-tête de page, et non le corps de la page. `DBCC PAGE` est toujours nécessaire pour les cas d’usage où le contenu entier de la page est requis.

@@ -11,12 +11,12 @@ ms.topic: quickstart
 ms.assetid: f6cd850f-b01b-491f-972c-f966b9fe4190
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 92511a835a8a9a6f899f7597900fec6707f6dada
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: ca05529c9b4ce1d9ec603989af81f0d2aeebf76b
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96129421"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236398"
 ---
 # <a name="master-data-services-installation-and-configuration"></a>Installation et configuration de Master Data Services
 
@@ -130,11 +130,11 @@ Si vous souhaitez apporter des modifications à l’installation de [!INCLUDE[ss
   
 3.  Sur la page **serveur de base de données** , spécifiez l’instance SQL Server. 
 
-    >  [!INCLUDE[sqlv15](../includes/sssqlv15-md.md)] Ajoute la prise en charge de SQL Server Managed Instance. Définissez la valeur de **SQL Server instance** sur l’hôte de l’instance gérée. Par exemple : `xxxxxx.xxxxxx.database.windows.net`.
+    >  [!INCLUDE[sqlv15](../includes/sssql19-md.md)] Ajoute la prise en charge de SQL Server Managed Instance. Définissez la valeur de **SQL Server instance** sur l’hôte de l’instance gérée. Par exemple : `xxxxxx.xxxxxx.database.windows.net`.
 
 4. Sélectionnez le **type d’authentification** , puis cliquez sur **tester la connexion** pour confirmer que vous pouvez vous connecter à la base de données à l’aide des informations d’identification pour le type d’authentification que vous avez sélectionné. Cliquez sur **Suivant**.
 
-    >Pour [!INCLUDE[sqlv15](../includes/sssqlv15-md.md)] , pour vous connecter à l’instance gérée, utilisez l’un des types d’authentification suivants :
+    >Pour [!INCLUDE[sqlv15](../includes/sssql19-md.md)] , pour vous connecter à l’instance gérée, utilisez l’un des types d’authentification suivants :
     >
     >- Authentification intégrée Azure Active Directory : **utilisateur actuel – Active Directory intégré**
     >- Authentification SQL Server : **compte SQL Server**.
@@ -207,7 +207,7 @@ Si vous souhaitez apporter des modifications à l’installation de [!INCLUDE[ss
      ![mds_2016ConfigManager_WebConfig_Completed](../master-data-services/media/mds-2016configmanager-webconfig-completed.png)  
  
      
-15. Cliquez sur **Appliquer**. La boîte de message **Configuration terminée** s’affiche. Cliquez sur **OK** dans la boîte de message pour lancer l’application web. L’adresse du site Web est https://*Server Name* / *web application*/. 
+15. Cliquez sur **Appliquer**. La boîte de message **Configuration terminée** s’affiche. Cliquez sur **OK** dans la boîte de message pour lancer l’application web. L’adresse du site Web est https://*Server Name* / /. 
 
 
 ![mds_2016ConfigurationComplete_MessageBox](../master-data-services/media/mds-2016configurationcomplete-messagebox.png) 
@@ -281,7 +281,7 @@ Pour plus d’informations sur les paramètres de la page Configuration Web, con
   
     1.  Accédez au site web [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] que vous avez configuré. Consultez la section [Configuration de la base de données et du site web](#SetUpWeb) .  
   
-         L’adresse du site Web est https://*Server Name* / *web application*/.  
+         L’adresse du site Web est https://*Server Name* / /.  
   
     2.  Sélectionnez un modèle dans la zone de liste **Modèle** , puis cliquez sur **Explorer**.  
   

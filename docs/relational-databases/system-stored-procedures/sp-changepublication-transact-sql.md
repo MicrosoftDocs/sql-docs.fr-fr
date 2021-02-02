@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c36e5865-25d5-42b7-b045-dc5036225081
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: a0e183d97b17936d5d7e1b414c2d492910a8a8b3
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d6d44a187862903181cb19ee2eabafc1fd26ec91
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99207080"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237211"
 ---
 # <a name="sp_changepublication-transact-sql"></a>sp_changepublication (Transact-SQL)
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -112,7 +112,7 @@ sp_changepublication [ [ @publication = ] 'publication' ]
 ||**concurrence**|Utilise la copie en bloc en mode natif de toutes les tables, mais ne verrouille pas les tables au cours de l'instantané. Non valide pour la réplication d'instantané.|  
 ||**concurrent_c**|Utilise la copie en bloc en mode caractère de toutes les tables, mais ne verrouille pas les tables au cours du processus de génération de l'instantané. Non valide pour la réplication d'instantané.|  
 |**TaskID**||Cette propriété est déconseillée et n'est plus prise en charge.|  
-|**allow_drop**|**true**|Active `DROP TABLE` la prise en charge des dll pour les articles qui font partie de la réplication transactionnelle. Version minimale prise en charge : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] Service Pack 2 ou version ultérieure et [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] Service Pack 1 ou version ultérieure. Référence supplémentaire : [KB 3170123](https://support.microsoft.com/help/3170123/supports-drop-table-ddl-for-articles-that-are-included-in-transactional-replication-in-sql-server-2014-or-in-sql-server-2016-sp1)|
+|**allow_drop**|**true**|Active `DROP TABLE` la prise en charge des dll pour les articles qui font partie de la réplication transactionnelle. Version minimale prise en charge : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] Service Pack 2 ou version ultérieure et [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] Service Pack 1 ou version ultérieure. Référence supplémentaire : [KB 3170123](https://support.microsoft.com/help/3170123/supports-drop-table-ddl-for-articles-that-are-included-in-transactional-replication-in-sql-server-2014-or-in-sql-server-2016-sp1)|
 ||**false**|Désactive `DROP TABLE` la prise en charge des dll pour les articles qui font partie de la réplication transactionnelle. Il s’agit de la valeur **par défaut** de cette propriété.|
 |**Null** (valeur par défaut)||Retourne la liste des valeurs prises en charge pour la *propriété*.|  
   
@@ -134,7 +134,7 @@ Consultez la section Remarques pour connaître les propriétés dont la modifica
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  **sp_changepublication** est utilisé dans la réplication d’instantané et la réplication transactionnelle.  
   
  Après avoir modifié l’une des propriétés suivantes, vous devez générer un nouvel instantané, et vous devez spécifier la valeur **1** pour le paramètre *force_invalidate_snapshot* .  
@@ -158,7 +158,7 @@ Pour répertorier les objets de publication dans le Active Directory à l’aide
   
  Lorsque la synchronisation immédiate est désactivée, les modifications sont conservées au moins pendant la période de rétention minimale et immédiatement nettoyées pour toutes les transactions qui sont déjà répliquées. Si la synchronisation immédiate est désactivée et configurée avec la période de rétention par défaut, il est probable que les modifications nécessaires après la sauvegarde aient été nettoyées et que le nouveau nœud homologue ne soit pas correctement initialisé. La seule option conssite à suspendre la topologie. L'activation de la synchronisation immédiate offre davantage de flexibilité et est le paramètre recommandé pour la réplication P2P.  
   
-## <a name="example"></a>Exemple  
+## <a name="example"></a> Exemple  
  [!code-sql[HowTo#sp_changepublication](../../relational-databases/replication/codesnippet/tsql/sp-changepublication-tra_1.sql)]  
   
 ## <a name="permissions"></a>Autorisations  

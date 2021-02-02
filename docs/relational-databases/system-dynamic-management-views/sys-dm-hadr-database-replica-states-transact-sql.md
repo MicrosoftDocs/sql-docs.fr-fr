@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 1a17b0c9-2535-4f3d-8013-cd0a6d08f773
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 2fa5692ca0f710a56937b3510e7eb4e68b283882
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: af42d2a2a5a014bffbab771637a45e3ac3afd6e6
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99209031"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237539"
 ---
 # <a name="sysdm_hadr_database_replica_states-transact-sql"></a>sys.dm_hadr_database_replica_states (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "99209031"
 |**last_commit_lsn**|**Numérique (25, 0)**|Numéro séquentiel réel dans le journal correspondant au dernier enregistrement de validation dans le journal des transactions.<br /><br /> Sur la base de données primaire, cet argument correspond au dernier enregistrement de validation traité. Les lignes des bases de données secondaires indiquent le numéro séquentiel dans le journal que le réplica secondaire a envoyé au réplica principal.<br /><br /> Sur le réplica secondaire, il s'agit du dernier enregistrement de validation qui a été restauré.|  
 |**last_commit_time**|**datetime**|Heure correspondant au dernier enregistrement de validation.<br /><br /> Sur la base de données secondaire, cette heure est la même que dans la base de données primaire.<br /><br /> Sur le réplica principal, chaque ligne de base de données secondaire indique l'heure que le réplica secondaire qui héberge la base de données secondaire a signalé au réplica principal. La différence de temps entre la ligne de base de données primaire et une ligne de base de données secondaire donnée représente approximativement l’objectif de point de récupération (RPO), en supposant que le processus de restauration par progression est pris en compte et que la progression a été signalée au réplica principal par le réplica secondaire.|  
 |**low_water_mark_for_ghosts**|**bigint**|Nombre à croissance monotone pour la base de données, qui indique une limite inférieure utilisée par la tâche de nettoyage des enregistrements fantômes sur la base de données primaire. Si ce nombre n'augmente pas avec le temps, cela implique que le nettoyage des enregistrements fantômes ne se produit pas. Pour déterminer quelles lignes fantômes nettoyer, le réplica principal utilise la valeur minimale de cette colonne pour cette base de données sur tous les réplicas de disponibilité (y compris le réplica principal).|  
-|**secondary_lag_seconds**|**bigint**|Nombre de secondes pendant lesquelles le réplica secondaire est derrière le réplica principal au cours de la synchronisation.<br /><br />**S’applique à :** [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures|  
+|**secondary_lag_seconds**|**bigint**|Nombre de secondes pendant lesquelles le réplica secondaire est derrière le réplica principal au cours de la synchronisation.<br /><br />**S’applique à :** [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures|  
   
 ##  <a name="understanding-the-lsn-column-values"></a><a name="LSNcolumns"></a> Fonctionnement des valeurs de colonne LSN  
  Les valeurs des colonnes **end_of_log_lsn**, **last_hardened_lsn**, **last_received_lsn**, **last_sent_lsn**, **recovery_lsn** et **truncation_lsn** ne sont pas des numéros séquentiels dans le journal (LSN) réels. Chacune de ces valeurs reflète plutôt un ID de bloc de journal complété avec des zéros.  

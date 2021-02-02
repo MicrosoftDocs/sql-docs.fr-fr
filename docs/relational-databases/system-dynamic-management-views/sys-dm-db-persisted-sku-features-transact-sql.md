@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: b4b29e97-b523-41b9-9528-6d4e84b89e09
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: a723e1278c0319e4dd80bc6bb69aa58d9a9a8d9a
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ac96eec67c1421e55bc4533c995a85aa6c404a4e
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99204845"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236076"
 ---
 # <a name="sysdm_db_persisted_sku_features-transact-sql"></a>sys.dm_db_persisted_sku_features (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "99204845"
 ## <a name="permissions"></a>Autorisations  
  Requiert l'autorisation VIEW DATABASE STATE sur la base de données.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Si aucune fonctionnalité pouvant être restreinte par une édition spécifique n’est utilisée par la base de données, la vue ne retourne aucune ligne.  
   
  sys.dm_db_persisted_sku_features pouvez répertorier les fonctionnalités de modification de base de données suivantes, limitées à des [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] éditions spécifiques :  
@@ -66,7 +66,7 @@ ms.locfileid: "99204845"
 -   **TransparentDataEncryption.** Indique qu'une base de données est chiffrée à l'aide du chiffrement transparent des données. Pour supprimer le chiffrement transparent des données, exécutez l'instruction ALTER DATABASE. Pour plus d’informations, consultez [Transparent Data Encryption &#40;TDE&#41;](../../relational-databases/security/encryption/transparent-data-encryption.md).  
 
 > [!NOTE]
-> À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] Service Pack 1, ces fonctionnalités, à l’exception de **TransparentDataEncryption.** sont disponibles dans plusieurs [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] éditions et ne sont pas limitées aux éditions Enterprise ou Developer.
+> À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] Service Pack 1, ces fonctionnalités, à l’exception de **TransparentDataEncryption.** sont disponibles dans plusieurs [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] éditions et ne sont pas limitées aux éditions Enterprise ou Developer.
 
  Pour déterminer si une base de données utilise des fonctionnalités limitées à des éditions spécifiques, exécutez l'instruction suivante dans la base de données :  
   

@@ -21,12 +21,12 @@ ms.assetid: 4e774ed9-4e83-4726-9f1d-8efde8f9feff
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016||>=sql-server-linux-2017
-ms.openlocfilehash: 7261cde3df2e1aa31e7a7ab0d5ccbd5f8e8d3e54
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: a37a592866c8fcfdc12e5b84657bc7fa7166ee81
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99161396"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237892"
 ---
 # <a name="sysservers-transact-sql"></a>sys.servers (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "99161396"
 |**server_id**|**int**|ID local du serveur lié.|  
 |**name**|**sysname**|Lorsque **server_id** = 0, la valeur retournée est le nom du serveur.<br /><br /> Lorsque **server_id** > 0, la valeur retournée est le nom local du serveur lié.|  
 |**product**|**sysname**|Nom de produit du serveur lié. La valeur « SQL Server » indique une autre instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .|  
-|**moteur**|**sysname**|Nom du fournisseur OLE DB permettant de se connecter au serveur lié.<br /><br />À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] , la valeur « sqlncli » est mappée au [pilote Microsoft OLE DB pour SQL Server (MSOLEDBSQL)](../../connect/oledb/oledb-driver-for-sql-server.md) par défaut. Dans les versions antérieures, la valeur « SQLNCLI » est mappée au [fournisseur de OLE DB SQL Server Native Client (SQLNCLI11)](../../relational-databases/native-client/sql-server-native-client.md).|  
+|**moteur**|**sysname**|Nom du fournisseur OLE DB permettant de se connecter au serveur lié.<br /><br />À compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] , la valeur « sqlncli » est mappée au [pilote Microsoft OLE DB pour SQL Server (MSOLEDBSQL)](../../connect/oledb/oledb-driver-for-sql-server.md) par défaut. Dans les versions antérieures, la valeur « SQLNCLI » est mappée au [fournisseur de OLE DB SQL Server Native Client (SQLNCLI11)](../../relational-databases/native-client/sql-server-native-client.md).|  
 |**data_source**|**nvarchar(4000)**|Propriété de connexion à la source de données OLE DB.|  
 |**location**|**nvarchar(4000)**|Propriété de connexion de l'emplacement OLE DB. NULL si aucun.|  
 |**provider_string**|**nvarchar(4000)**|Propriété de connexion à la chaîne du fournisseur OLE DB.<br /><br /> A la valeur NULL, sauf si l’appelant dispose de l' `ALTER ANY LINKED SERVER` autorisation.|  
@@ -60,7 +60,7 @@ ms.locfileid: "99161396"
 |**is_nonsql_subscriber**|**bit**|Le serveur est un abonné de réplication non-SQL Server.|  
 |**is_remote_proc_transaction_promotion_enabled**|**bit**|Si la valeur est 1, l'appel d'une procédure stockée distante démarre une transaction distribuée et enregistre la transaction dans MS DTC. Pour plus d’informations, consultez [sp_serveroption &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-serveroption-transact-sql.md).|  
 |**modify_date**|**datetime**|Date de la dernière modification des informations de serveur.|  
-|**is_rda_server**|**bit**|**S’applique à :** À partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] .<br /><br />Le serveur est activé pour l’archivage des données à distance (étendu). Pour plus d’informations, consultez [activer la Stretch Database sur le serveur](../../sql-server/stretch-database/enable-stretch-database-for-a-database.md#EnableTSQLServer).|
+|**is_rda_server**|**bit**|**S’applique à :** À partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] .<br /><br />Le serveur est activé pour l’archivage des données à distance (étendu). Pour plus d’informations, consultez [activer la Stretch Database sur le serveur](../../sql-server/stretch-database/enable-stretch-database-for-a-database.md#EnableTSQLServer).|
   
 ## <a name="permissions"></a>Autorisations  
  La valeur de **provider_string** est toujours null, sauf si l’appelant dispose de l’autorisation ALTER ANY Linked Server.  

@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: faf3901c-a0e0-4e0c-8b1b-86d9f15f34dd
 author: pmasl
 ms.author: pelopes
-ms.openlocfilehash: a08b50c897735183d2b3ac39a11cba09b11102e7
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: fc0253df9c1f9c593ef2169f03cb3ff98382cdad
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99202454"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236841"
 ---
 # <a name="stretch-database---sysdm_db_rda_migration_status"></a>Stretch Database-sys.dm_db_rda_migration_status
 [!INCLUDE [sqlserver2016](../../includes/applies-to-version/sqlserver2016.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "99202454"
   
  **sys.dm_db_rda_migration_status** est limitée au contexte de la base de données actuelle. Assurez-vous que vous êtes dans le contexte de la base de données des tables d’activation Stretch pour lesquelles vous souhaitez afficher l’état de la migration.  
   
- Dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] , la sortie de **sys.dm_db_rda_migration_status** est limitée à 200 lignes.  
+ Dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] , la sortie de **sys.dm_db_rda_migration_status** est limitée à 200 lignes.  
   
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  

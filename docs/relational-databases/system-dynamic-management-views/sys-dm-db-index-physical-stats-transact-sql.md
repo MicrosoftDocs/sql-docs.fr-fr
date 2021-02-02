@@ -22,12 +22,12 @@ ms.assetid: d294dd8e-82d5-4628-aa2d-e57702230613
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 208ea5a903e8a5e3517f5cf663a52a521c6cf9a7
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b8957c55955ba24131f6cc5692e17b86cd2154a4
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99190594"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236154"
 ---
 # <a name="sysdm_db_index_physical_stats-transact-sql"></a>sys.dm_db_index_physical_stats (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -66,7 +66,7 @@ sys.dm_db_index_physical_stats (
  *object_id* \| Valeur NULL \| 0 \| par défaut  
  ID d’objet de la table ou de la vue sur laquelle l’index est activé. *object_id* est de **type int**.  
   
- Les entrées autorisées sont l'ID d'une table et d'une vue ou la valeur NULL, 0 ou DEFAULT. La valeur par défaut est 0. Les valeurs NULL, 0 et DEFAULT sont des valeurs équivalentes dans ce contexte. À partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] , les entrées valides incluent également le nom de la file d’attente Service Broker ou le nom de la table interne de la file d’attente. Lorsque les paramètres par défaut sont appliqués (c’est-à-dire tous les objets, tous les index, etc.), les informations de fragmentation de toutes les files d’attente sont incluses dans le jeu de résultats.  
+ Les entrées autorisées sont l'ID d'une table et d'une vue ou la valeur NULL, 0 ou DEFAULT. La valeur par défaut est 0. Les valeurs NULL, 0 et DEFAULT sont des valeurs équivalentes dans ce contexte. À partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] , les entrées valides incluent également le nom de la file d’attente Service Broker ou le nom de la table interne de la file d’attente. Lorsque les paramètres par défaut sont appliqués (c’est-à-dire tous les objets, tous les index, etc.), les informations de fragmentation de toutes les files d’attente sont incluses dans le jeu de résultats.  
   
  Spécifiez la valeur NULL pour retourner des informations sur toutes les tables et les vues de la base de données spécifiée. Si vous spécifiez NULL pour *object_id*, vous devez également spécifier null pour *index_id* et *partition_number*.  
   
@@ -417,7 +417,7 @@ FROM sys.dm_db_index_physical_stats (db_id(),
   
 ||  
 |-|  
-|**S'applique à**: [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] jusqu'à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
+|**S'applique à**: [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] jusqu'à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
   
  Les exemples suivants montrent comment interroger les files d’attente de service Broker pour la fragmentation.  
   

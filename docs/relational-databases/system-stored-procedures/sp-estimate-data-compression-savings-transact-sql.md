@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 6f6c7150-e788-45e0-9d08-d6c2f4a33729
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 938e6994f5d19f59023009cf9806ca62280dc5b9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 93d169d364369e87f1c363297c2a5c73c58e442b
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99193556"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237850"
 ---
 # <a name="sp_estimate_data_compression_savings-transact-sql"></a>sp_estimate_data_compression_savings (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -90,7 +90,7 @@ sp_estimate_data_compression_savings
 |sample_size_with_current_compression_setting (Ko)|**bigint**|Taille de l'exemple avec le paramètre de compression actuel. Cela inclut toute fragmentation éventuelle.|  
 |sample_size_with_requested_compression_setting (Ko)|**bigint**|Taille de l'échantillon créé à l'aide du paramètre de compression demandé et, le cas échéant, du facteur de remplissage existant, sans fragmentation.|  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Utilisez `sp_estimate_data_compression_savings` pour estimer les économies qui peuvent se produire lorsque vous activez une table ou une partition pour la compression d’archive Row, page, ColumnStore ou ColumnStore. Par exemple, si la taille moyenne de la ligne peut être réduite de 40 %, vous pouvez réduire la taille de l'objet de 40 %. Vous n'économiserez peut-être pas d'espace car cela dépend du facteur de remplissage et de la taille de la ligne. Par exemple, si vous avez une ligne d’une longueur de 8 000 octets et que vous réduisez sa taille de 40%, vous pouvez toujours faire tenir une seule ligne dans une page de données. Vous ne bénéficiez d'aucun gain.  
   
  Si les résultats de l'exécution de `sp_estimate_data_compression_savings` indiquent que la taille de la table augmentera, cela signifie que de nombreuses lignes de la table utilisent presque toute la précision des types de données, et que l'ajout de la faible surcharge requise pour le format compressé dépasse les gains dérivés de la compression. Dans ce cas très peu fréquent, n'activez pas la compression.  
@@ -110,10 +110,10 @@ sp_estimate_data_compression_savings
  Avant SQL Server 2019, cette procédure ne s’appliquait pas aux index ColumnStore et n’acceptait donc pas les paramètres de compression de données COLUMNSTORE et COLUMNSTORE_ARCHIVE.  À compter de SQL Server 2019, les index ColumnStore peuvent être utilisés à la fois comme un objet source pour l’estimation et comme type de compression demandé.
 
  > [!IMPORTANT]
- > Lorsque [les métadonnées tempdb à mémoire optimisée](../databases/tempdb-database.md#memory-optimized-tempdb-metadata) sont activées dans [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] , la création d’index ColumnStore sur des tables temporaires n’est pas prise en charge. En raison de cette limitation, sp_estimate_data_compression_savings n’est pas pris en charge avec les paramètres de compression de données COLUMNSTORE et COLUMNSTORE_ARCHIVE lorsque Memory-Optimized métadonnées TempDB sont activées.
+ > Lorsque [les métadonnées tempdb à mémoire optimisée](../databases/tempdb-database.md#memory-optimized-tempdb-metadata) sont activées dans [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] , la création d’index ColumnStore sur des tables temporaires n’est pas prise en charge. En raison de cette limitation, sp_estimate_data_compression_savings n’est pas pris en charge avec les paramètres de compression de données COLUMNSTORE et COLUMNSTORE_ARCHIVE lorsque Memory-Optimized métadonnées TempDB sont activées.
 
 ## <a name="considerations-for-columnstore-indexes"></a>Remarques pour les index columnstore
- À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] , `sp_estimate_compression_savings` prend en charge l’estimation de la compression d’archive ColumnStore et ColumnStore. Contrairement à la compression de page et de ligne, l’application de la compression ColumnStore à un objet requiert la création d’un nouvel index ColumnStore. Pour cette raison, lorsque vous utilisez les options COLUMNSTORE et COLUMNSTORE_ARCHIVE de cette procédure, le type de l’objet source fourni à la procédure détermine le type d’index COLUMNSTORE utilisé pour l’estimation de la taille compressée. Le tableau suivant illustre les objets de référence utilisés pour estimer les économies de compression pour chaque type d’objet source lorsque le @data_compression paramètre est défini sur COLUMNSTORE ou COLUMNSTORE_ARCHIVE.
+ À compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] , `sp_estimate_compression_savings` prend en charge l’estimation de la compression d’archive ColumnStore et ColumnStore. Contrairement à la compression de page et de ligne, l’application de la compression ColumnStore à un objet requiert la création d’un nouvel index ColumnStore. Pour cette raison, lorsque vous utilisez les options COLUMNSTORE et COLUMNSTORE_ARCHIVE de cette procédure, le type de l’objet source fourni à la procédure détermine le type d’index COLUMNSTORE utilisé pour l’estimation de la taille compressée. Le tableau suivant illustre les objets de référence utilisés pour estimer les économies de compression pour chaque type d’objet source lorsque le @data_compression paramètre est défini sur COLUMNSTORE ou COLUMNSTORE_ARCHIVE.
 
  |Objet source|Objet de référence|
  |-----------------|---------------|
