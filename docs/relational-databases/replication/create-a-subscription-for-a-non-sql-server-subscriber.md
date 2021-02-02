@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 5020ee68-b988-4d57-8066-67d183e61237
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: cecd24ccf5aba44beff0a258ee75cf26722358f8
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 36c15a9d7de2c613b3a25b16827bfcc037393524
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85773899"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076221"
 ---
 # <a name="create-a-subscription-for-a-non-sql-server-subscriber"></a>Créer un abonnement pour un Abonné non-SQL Server
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment créer un abonnement pour un abonné non-SQL Server dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. La réplication transactionnelle et la réplication de capture instantanée prennent en charge la publication de données vers des abonnés non-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour plus d'informations sur les plateformes d'Abonné prises en charge, consultez [Non-SQL Server Subscribers](../../relational-databases/replication/non-sql/non-sql-server-subscribers.md).  
+  Cette rubrique explique comment créer un abonnement pour un abonné non-SQL Server dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. La réplication transactionnelle et la réplication de capture instantanée prennent en charge la publication de données vers des abonnés non-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour plus d'informations sur les plateformes d'Abonné prises en charge, consultez [Non-SQL Server Subscribers](../../relational-databases/replication/non-sql/non-sql-server-subscribers.md).  
   
  **Dans cette rubrique**  
   
@@ -102,11 +102,11 @@ ms.locfileid: "85773899"
   
 9. Dans la boîte de dialogue **Sécurité de l'Agent de distribution** :  
   
-    -   Dans les champs **Compte de processus**, **Mot de passe**et **Confirmer le mot de passe** , entrez le compte [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows et le mot de passe sous lequel l'Agent de distribution doit s'exécuter et se connecter en local sur le serveur de distribution.  
+    -   Dans les champs **Compte de processus**, **Mot de passe** et **Confirmer le mot de passe** , entrez le compte [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows et le mot de passe sous lequel l'Agent de distribution doit s'exécuter et se connecter en local sur le serveur de distribution.  
   
          Ce compte a besoin des autorisations minimales suivantes : membre du rôle de base de données fixe **db_owner** dans la base de données de distribution ; membre de la PAL (liste d'accès à la publication) ; autorisations de lecture sur le partage de fichiers d'instantanés ; et autorisation de lecture sur le répertoire d'installation du fournisseur OLE DB. Pour plus d’informations sur la liste d’accès à la publication, consultez [Sécuriser le serveur de publication](../../relational-databases/replication/security/secure-the-publisher.md).  
   
-    -   Sous **Connexion à l'Abonné**, dans les champs **Connexion**, **Mot de passe**et **Confirmer le mot de passe** , entrez la connexion et le mot de passe à utiliser pour se connecter à l'Abonné. Cette connexion devrait déjà être configurée et devrait avoir des autorisations suffisantes pour créer des objets dans la base de données d'abonnement.  
+    -   Sous **Connexion à l'Abonné**, dans les champs **Connexion**, **Mot de passe** et **Confirmer le mot de passe** , entrez la connexion et le mot de passe à utiliser pour se connecter à l'Abonné. Cette connexion devrait déjà être configurée et devrait avoir des autorisations suffisantes pour créer des objets dans la base de données d'abonnement.  
   
     -   Dans le champ **Options de connexion supplémentaires** , spécifiez les autres options de connexion pour l'Abonné sous la forme d'une chaîne de connexion (Oracle ne nécessite pas d'options supplémentaires). Chaque option doit être délimitée par un point-virgule. Voici un exemple de chaîne de connexion DB2 (les retours à la ligne facilitent la lisibilité) :  
   

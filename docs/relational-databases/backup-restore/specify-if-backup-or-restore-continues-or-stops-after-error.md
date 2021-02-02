@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 042be17a-b9b0-4629-b6bb-b87a8bc6c316
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: cddc94d853dffef5e030ccc388c0b95bbc5f745a
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: b0bf006ebe0017f1b1771608f7f780c928f1c82a
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96129051"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076001"
 ---
 # <a name="specify-backup-or-restore-to-continue-or-stop-after-error"></a>Spécifier si la sauvegarde ou la restauration doit continuer ou s’arrêter après une erreur
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique indique comment spécifier si une opération de sauvegarde ou de restauration continue ou s'arrête après la survenue d'une erreur dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
+  Cette rubrique indique comment spécifier si une opération de sauvegarde ou de restauration continue ou s'arrête après la survenue d'une erreur dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   
  **Dans cette rubrique**  
   

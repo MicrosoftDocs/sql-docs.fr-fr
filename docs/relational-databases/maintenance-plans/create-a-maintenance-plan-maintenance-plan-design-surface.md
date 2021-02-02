@@ -13,16 +13,16 @@ ms.assetid: 2ef803ee-a9f8-454a-ad63-fedcbe6838d1
 author: MikeRayMSFT
 ms.author: mikeray
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 46d577d8488a4b696ef5736a1bb94127e24bc53a
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 931aa85fbb37d8dba1c9bb3e06e00760d3f16caf
+ms.sourcegitcommit: 04d101fa6a85618b8bc56c68b9c006b12147dbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85667703"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99049151"
 ---
 # <a name="create-a-maintenance-plan-maintenance-plan-design-surface"></a>Créer un plan de maintenance (aire de conception de plan de maintenance)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment créer un plan de maintenance de serveur unique ou multiserveur à l'aide de l'aire de conception de plan de maintenance de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. L' **Assistant Plan de maintenance** est conseillé pour créer des plans de maintenance de base, tandis que l'aire de conception permet d'utiliser un flux de travail optimisé.  
+  Cette rubrique explique comment créer un plan de maintenance de serveur unique ou multiserveur à l'aide de l'aire de conception de plan de maintenance de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. L' **Assistant Plan de maintenance** est conseillé pour créer des plans de maintenance de base, tandis que l'aire de conception permet d'utiliser un flux de travail optimisé.  
   
  **Dans cette rubrique**  
   
@@ -94,7 +94,7 @@ ms.locfileid: "85667703"
      **Aire du concepteur**  
      Conception et entretien des plans de maintenance. Utilisez l'aire du concepteur pour ajouter des tâches de maintenance à un plan, supprimer des tâches d'un plan, spécifier des liens de précédence entre des tâches et indiquer les branchements et le parallélisme des tâches.  
   
-     Un lien de précédence entre deux tâches établit une relation entre ces tâches. La seconde tâche (la *tâche dépendante*) s’exécute seulement si le résultat d’exécution de la première tâche (la *tâche prioritaire*) correspond aux critères spécifiés. En général, le résultat d'exécution spécifié est **Succès**, **Échec**ou **À l'achèvement**. Pour plus d'informations, consultez l'étape **8** ci-dessous.  
+     Un lien de précédence entre deux tâches établit une relation entre ces tâches. La seconde tâche (la *tâche dépendante*) s’exécute seulement si le résultat d’exécution de la première tâche (la *tâche prioritaire*) correspond aux critères spécifiés. En général, le résultat d'exécution spécifié est **Succès**, **Échec** ou **À l'achèvement**. Pour plus d'informations, consultez l'étape **8** ci-dessous.  
   
 5.  Dans l’en-tête de l’aire de conception, double-cliquez sur **Sous-plan_1** et entrez un nom et une description pour le sous-plan dans la boîte de dialogue **Propriétés du sous-plan** .  
   
@@ -109,7 +109,7 @@ ms.locfileid: "85667703"
      **Planification**  
      Indique pour quelle planification le sous-plan sera exécuté. Cliquez sur **Planification du sous-plan** pour ouvrir la boîte de dialogue **Nouvelle planification du travail** . Cliquez sur **Supprimer la planification** pour supprimer la planification du sous-plan.  
   
-     Liste**Exécuter en tant que**  
+     Liste **Exécuter en tant que**  
      Sélectionnez le compte à utiliser pour exécuter cette sous-tâche.  
   
 6.  Cliquez sur l'icône **Planification du sous-plan** pour entrer les informations de la planification dans la boîte de dialogue **Nouvelle planification du travail** .  
@@ -161,17 +161,17 @@ ms.locfileid: "85667703"
          **Option de contrainte**  
          Définit la manière dont une contrainte fonctionne entre deux tâches.  
   
-         Liste**Opération d’évaluation**  
+         Liste **Opération d’évaluation**  
          Spécifiez l'opération d'évaluation utilisée par la contrainte de précédence. Ces opérations sont : **Contrainte**, **Expression**, **Expression et contrainte** et **Expression ou contrainte**.  
   
-         Liste**Valeur**  
+         Liste **Valeur**  
          Spécifiez la valeur de contrainte : **Réussite**, **Échec** ou **À l'achèvement**. **Réussite** est la valeur par défaut.  
   
         > [!NOTE]  
-        >  La ligne de contrainte de précédence est verte pour **Réussite**, rouge pour **Échec**et bleue pour **À l’achèvement**.  
+        >  La ligne de contrainte de précédence est verte pour **Réussite**, rouge pour **Échec** et bleue pour **À l’achèvement**.  
   
          **Expression**  
-         Si vous utilisez les opérations **Expression**, **Expression et contrainte**ou **Expression ou contrainte**, tapez une expression. L'expression doit prendre une valeur de type Boolean.  
+         Si vous utilisez les opérations **Expression**, **Expression et contrainte** ou **Expression ou contrainte**, tapez une expression. L'expression doit prendre une valeur de type Boolean.  
   
          **Test**  
          Validez l'expression.  
@@ -244,7 +244,7 @@ ms.locfileid: "85667703"
      Actualise l'affichage des journaux sélectionnés. Le bouton **Actualiser** permet de relire les journaux sélectionnés à partir du serveur cible lors de l'application des paramètres de filtre.  
   
      **Filter**  
-     Ouvre une boîte de dialogue qui vous permet de spécifier les paramètres utilisés pour filtrer le fichier journal, notamment **Connexion**, **Date**et d’autres critères de filtre **Général** .  
+     Ouvre une boîte de dialogue qui vous permet de spécifier les paramètres utilisés pour filtrer le fichier journal, notamment **Connexion**, **Date** et d’autres critères de filtre **Général** .  
   
      **action**  
      Permet de rechercher un texte spécifique dans le fichier journal. La recherche des caractères génériques n'est pas prise en charge.  

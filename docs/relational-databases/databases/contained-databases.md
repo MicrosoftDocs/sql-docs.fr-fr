@@ -17,17 +17,17 @@ ms.assetid: 36af59d7-ce96-4a02-8598-ffdd78cdc948
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: bbad843d482945a29cb03fde9545b1c19fb354f9
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: cd8b60ec5b302183fdb1a0713e71568821dae2fe
+ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098391"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98813101"
 ---
 # <a name="contained-databases"></a>Bases de données autonomes
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
-  Une *base de données autonome* est une base de données qui est isolée d’autres bases de données et de l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui héberge cette base de données.  [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] aide l'utilisateur à isoler sa base de données de l'instance de 4 manières différentes.  
+  Une *base de données autonome* est une base de données qui est isolée d’autres bases de données et de l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui héberge cette base de données.  [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] aide l'utilisateur à isoler sa base de données de l'instance de 4 manières différentes.  
   
 -   Une grande partie des métadonnées qui décrivent une base de données est conservée dans la base de données. (En plus ou en remplacement de la conservation des métadonnées dans la base de données MASTER.)  
   
@@ -37,7 +37,7 @@ ms.locfileid: "98098391"
   
 -   L'environnement [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (DMV, XEvents, etc.) signale des informations relatives à la relation contenant-contenu et peut interagir sur celles-ci.  
   
- Certaines fonctionnalités de bases de données partiellement autonomes, telles que le stockage des métadonnées dans la base de données, s'appliquent à toutes les bases de données [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Certains avantages des bases de données partiellement autonomes, tels que l'authentification de niveau base de données et le classement de catalogue, doivent être activés pour pouvoir être disponibles. La relation contenant-contenu partielle est activée à l’aide des instructions **CREATE DATABASE** et **ALTER DATABASE** ou de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]. Pour plus d'informations sur l'activation de l’autonomie de base de données partielle, consultez [Migrer vers une base de données partiellement autonome](../../relational-databases/databases/migrate-to-a-partially-contained-database.md).  
+ Certaines fonctionnalités de bases de données partiellement autonomes, telles que le stockage des métadonnées dans la base de données, s'appliquent à toutes les bases de données [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. Certains avantages des bases de données partiellement autonomes, tels que l'authentification de niveau base de données et le classement de catalogue, doivent être activés pour pouvoir être disponibles. La relation contenant-contenu partielle est activée à l’aide des instructions **CREATE DATABASE** et **ALTER DATABASE** ou de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]. Pour plus d'informations sur l'activation de l’autonomie de base de données partielle, consultez [Migrer vers une base de données partiellement autonome](../../relational-databases/databases/migrate-to-a-partially-contained-database.md).  
   
 ##  <a name="partially-contained-database-concepts"></a><a name="Concepts"></a> Concepts relatifs aux bases de données partiellement autonomes  
  Une base de données autonome complète inclut tous les paramètres et métadonnées requis pour définir la base de données ; sa configuration ne dépend pas de l'instance du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] où la base de données est installée. Dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], la séparation d'une base de données de l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pouvait être fastidieuse et nécessiter une connaissance détaillée de la relation entre la base de données et l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les bases de données partiellement autonomes simplifient la séparation d'une base de données de l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et des autres bases de données.  

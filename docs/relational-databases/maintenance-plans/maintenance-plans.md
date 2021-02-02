@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 5982ca65-74fe-44e3-aef9-00a65a0db169
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: e97723d6ea047aa86641c9074ff235c682519e7a
-ms.sourcegitcommit: 216f377451e53874718ae1645a2611cdb198808a
+ms.openlocfilehash: 6eb1586c38283d695e96d4640d37c261314a339f
+ms.sourcegitcommit: 04d101fa6a85618b8bc56c68b9c006b12147dbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87245193"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99048915"
 ---
 # <a name="maintenance-plans"></a>Plans de maintenance
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "87245193"
 ## <a name="benefits-of-maintenance-plans"></a>Avantages des plans de maintenance  
  Dans le [!INCLUDE[ssDECurrent](../../includes/ssdecurrent-md.md)], les plans de maintenance créent un package [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] qui est exécuté par un travail de l'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les plans de maintenance peuvent s'exécuter manuellement ou automatiquement à intervalles planifiés.  
   
- Les plans de maintenance [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] fournissent les fonctionnalités suivantes :  
+ Les plans de maintenance [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] fournissent les fonctionnalités suivantes :  
   
 -   Création d'un flux de travail à l'aide d'une série de tâches de maintenance standard. Vous pouvez également créer vos propres scripts [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   

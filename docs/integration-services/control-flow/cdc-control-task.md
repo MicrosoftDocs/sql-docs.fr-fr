@@ -14,12 +14,12 @@ f1_keywords:
 ms.assetid: 6404dc7f-550c-47cc-b901-c072742f430a
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 685ac46fd80e92d115dcf8aed3c49abb1ac9d144
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 492a0cd4b510b91d1f5f17ad04de54b005502bba
+ms.sourcegitcommit: 04d101fa6a85618b8bc56c68b9c006b12147dbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96123579"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99049112"
 ---
 # <a name="cdc-control-task"></a>Tâche de contrôle de capture de données modifiées
 
@@ -37,9 +37,9 @@ ms.locfileid: "96123579"
 |Opération|Description|  
 |---------------|-----------------|  
 |ResetCdcState|Cette opération est utilisée pour réinitialiser l'état permanent de capture de données modifiées associé au contexte de capture de données modifiées actuel. Une fois cette opération effectuée, le numéro LSN maximal actuel de la table d’horodatage des LSN `sys.fn_cdc_get_max_lsn` devient le début de la plage de traitement suivante. Cette opération requiert une connexion à la base de données source.|  
-|MarkInitialLoadStart|Cette opération est utilisée au début d'un package de charge initiale pour enregistrer le NSE actuel dans la base de données source avant que le package de charge initiale commence à lire les tables sources. Cette opération requiert une connexion à la base de données source pour appeler `sys.fn_cdc_get_max_lsn`.<br /><br /> Si vous sélectionnez MarkInitialLoadStart quand vous travaillez sur la capture de données modifiées [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] (autrement dit, hors d’Oracle), l’utilisateur spécifié dans le gestionnaire de connexions doit être db_owner ou sysadmin.|  
-|MarkInitialLoadEnd|Cette opération est utilisée à la fin d'un package de charge initiale pour enregistrer le NSE actuel dans la base de données source une fois que le package de charge initiale a fini de lire les tables sources. Ce NSE est déterminé en enregistrant l'heure à laquelle cette opération s'est produite, puis en interrogeant la table de mappage `cdc.lsn_time_`dans la base de données de capture de données modifiées afin de rechercher une modification survenue après cette heure.<br /><br /> Si vous sélectionnez MarkInitialLoadEnd quand vous travaillez sur la capture de données modifiées [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] (autrement dit, hors d’Oracle), l’utilisateur spécifié dans le gestionnaire de connexions doit être db_owner ou sysadmin.|  
-|MarkCdcStart|Cette opération est utilisée lorsque la charge initiale est effectuée à partir d'une base de données par instantané. Dans ce cas, le traitement des modifications doit démarrer immédiatement après le NSE de l'instantané. Vous pouvez spécifier le nom de la base de données par instantané à utiliser et la tâche de contrôle de capture de données modifiées qui interroge [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] pour connaître le NSE de l'instantané. Vous avez également la possibilité de spécifier directement le NSE de l'instantané.<br /><br /> Si vous sélectionnez MarkCdcStart quand vous travaillez sur la capture de données modifiées [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] (autrement dit, hors d’Oracle), l’utilisateur spécifié dans le gestionnaire de connexions doit être db_owner ou sysadmin.|  
+|MarkInitialLoadStart|Cette opération est utilisée au début d'un package de charge initiale pour enregistrer le NSE actuel dans la base de données source avant que le package de charge initiale commence à lire les tables sources. Cette opération requiert une connexion à la base de données source pour appeler `sys.fn_cdc_get_max_lsn`.<br /><br /> Si vous sélectionnez MarkInitialLoadStart quand vous travaillez sur la capture de données modifiées [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] (autrement dit, hors d’Oracle), l’utilisateur spécifié dans le gestionnaire de connexions doit être db_owner ou sysadmin.|  
+|MarkInitialLoadEnd|Cette opération est utilisée à la fin d'un package de charge initiale pour enregistrer le NSE actuel dans la base de données source une fois que le package de charge initiale a fini de lire les tables sources. Ce NSE est déterminé en enregistrant l'heure à laquelle cette opération s'est produite, puis en interrogeant la table de mappage `cdc.lsn_time_`dans la base de données de capture de données modifiées afin de rechercher une modification survenue après cette heure.<br /><br /> Si vous sélectionnez MarkInitialLoadEnd quand vous travaillez sur la capture de données modifiées [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] (autrement dit, hors d’Oracle), l’utilisateur spécifié dans le gestionnaire de connexions doit être db_owner ou sysadmin.|  
+|MarkCdcStart|Cette opération est utilisée lorsque la charge initiale est effectuée à partir d'une base de données par instantané. Dans ce cas, le traitement des modifications doit démarrer immédiatement après le NSE de l'instantané. Vous pouvez spécifier le nom de la base de données par instantané à utiliser et la tâche de contrôle de capture de données modifiées qui interroge [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] pour connaître le NSE de l'instantané. Vous avez également la possibilité de spécifier directement le NSE de l'instantané.<br /><br /> Si vous sélectionnez MarkCdcStart quand vous travaillez sur la capture de données modifiées [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] (autrement dit, hors d’Oracle), l’utilisateur spécifié dans le gestionnaire de connexions doit être db_owner ou sysadmin.|  
   
  Les opérations suivantes sont utilisées pour gérer la plage de traitement :  
   
@@ -108,17 +108,17 @@ ms.locfileid: "96123579"
   
 -   **Marquer le début de la charge initiale**: cette opération est utilisée en exécutant une charge initiale d'une base de données active sans instantané. Elle est invoquée au début d'un package de chargement initial pour enregistrer le numéro LSN actuel dans la base de données source avant que le package de chargement initial commence à lire les tables sources. Cela requiert une connexion à la base de données source.  
   
-     Si vous sélectionnez **Marquer le début de la charge initiale** quand vous travaillez sur la capture de données modifiées [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] (autrement dit, hors d’Oracle) l’utilisateur spécifié dans le gestionnaire de connexions doit être  **db_owner** ou **sysadmin**.  
+     Si vous sélectionnez **Marquer le début de la charge initiale** quand vous travaillez sur la capture de données modifiées [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] (autrement dit, hors d’Oracle) l’utilisateur spécifié dans le gestionnaire de connexions doit être  **db_owner** ou **sysadmin**.  
   
 -   **Marquer la fin de la charge initiale**: cette opération est utilisée en exécutant une charge initiale d'une base de données active sans instantané. Elle est invoquée à la fin d'un package de chargement initial pour enregistrer le numéro LSN actuel dans la base de données source une fois que le package de chargement initial a fini de lire les tables sources. Ce numéro LSN est déterminé en enregistrant l'heure à laquelle cette opération s'est produite, puis en interrogeant la table de mappage `cdc.lsn_time_`dans la base de données CDC afin de rechercher une modification survenue après cette heure.  
   
-     Si vous sélectionnez **Marquer la fin de la charge initiale** quand vous travaillez sur la capture de données modifiées [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] (autrement dit, hors d’Oracle) l’utilisateur spécifié dans le gestionnaire de connexions doit être  **db_owner** ou **sysadmin**.  
+     Si vous sélectionnez **Marquer la fin de la charge initiale** quand vous travaillez sur la capture de données modifiées [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] (autrement dit, hors d’Oracle) l’utilisateur spécifié dans le gestionnaire de connexions doit être  **db_owner** ou **sysadmin**.  
   
 -   **Marquer le début CDC** : cette opération est utilisée lorsque la charge initiale est effectuée à partir d'un fichier de base de données d'instantanés ou d'une base de données inactive. Elle est appelée à n'importe quel stade du package de charge initiale. L'opération accepte un paramètre qui peut être un numéro LSN d'instantané, un nom de base de données d'instantanés (de laquelle le numéro LSN d'instantané dérive automatiquement) ou qui peut être laissé vide, auquel cas le numéro LSN de la base de données actuelle est utilisé comme dernier numéro LSN pour le package de traitement des modifications.  
   
      Cette opération est utilisée à la place des opérations Marquer le début/la fin de la charge initiale.  
   
-     Si vous sélectionnez **Marquer le début CDC** quand vous travaillez sur la capture de données modifiées [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] (autrement dit, hors d’Oracle) l’utilisateur spécifié dans le gestionnaire de connexions doit être  **db_owner** ou **sysadmin**.  
+     Si vous sélectionnez **Marquer le début CDC** quand vous travaillez sur la capture de données modifiées [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] (autrement dit, hors d’Oracle) l’utilisateur spécifié dans le gestionnaire de connexions doit être  **db_owner** ou **sysadmin**.  
   
 -   **Get processing range**: cette opération est utilisée dans un package de traitement des modifications avant d'appeler le flux de données qui utilise le flux de données source CDC. Elle établit une plage de numéros LSN que le flux de données de la source CDC lit lorsqu'il est appelé. La plage est stockée dans une variable de package SSIS qui est utilisée par la source CDC pendant le traitement du flux de données.  
   

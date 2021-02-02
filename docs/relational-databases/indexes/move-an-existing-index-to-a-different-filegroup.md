@@ -17,17 +17,17 @@ helpviewer_keywords:
 ms.assetid: 167ebe77-487d-4ca8-9452-4b2c7d5cb96e
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: abbd77be3e20cc69bc12cd69f07fa82ec99d95db
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 4ccacb2b46b609b61485821f250644596f0e3955
+ms.sourcegitcommit: 04d101fa6a85618b8bc56c68b9c006b12147dbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88470462"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99048882"
 ---
 # <a name="move-an-existing-index-to-a-different-filegroup"></a>Déplacer un index existant dans un autre groupe de fichiers
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-  Cette rubrique explique comment déplacer un index existant d'un groupe de fichiers à un autre à l'aide de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] en utilisant [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou [!INCLUDE[tsql](../../includes/tsql-md.md)].  
+  Cette rubrique explique comment déplacer un index existant d'un groupe de fichiers à un autre à l'aide de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] en utilisant [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   
  **Dans cette rubrique**  
   
@@ -98,7 +98,7 @@ ms.locfileid: "88470462"
   
      Si vous déplacez un index cluster, vous pouvez procéder en ligne. Le traitement en ligne autorise l'accès des utilisateurs aux données sous-jacentes et aux index non cluster pendant l'opération sur l'index. Pour plus d'informations, consultez [Perform Index Operations Online](../../relational-databases/indexes/perform-index-operations-online.md).  
   
-     Sur les ordinateurs multiprocesseurs qui utilisent [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], vous pouvez configurer le nombre de processeurs utilisés pour exécuter l'instruction sur l'index en spécifiant un degré maximal de parallélisme. La fonctionnalité permettant les opérations d'index parallèles ne sont pas disponibles dans toutes les édition de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez les fonctionnalités prises en charge par les éditions de SQL Server 2016. Pour plus d’informations sur les opérations d’index parallèles, consultez [Configurer des opérations d’index parallèles](../../relational-databases/indexes/configure-parallel-index-operations.md).  
+     Sur les ordinateurs multiprocesseurs qui utilisent [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], vous pouvez configurer le nombre de processeurs utilisés pour exécuter l'instruction sur l'index en spécifiant un degré maximal de parallélisme. La fonctionnalité permettant les opérations d'index parallèles ne sont pas disponibles dans toutes les édition de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez les fonctionnalités prises en charge par les éditions de SQL Server 2016. Pour plus d’informations sur les opérations d’index parallèles, consultez [Configurer des opérations d’index parallèles](../../relational-databases/indexes/configure-parallel-index-operations.md).  
   
 8.  Cliquez sur **OK**.  
   

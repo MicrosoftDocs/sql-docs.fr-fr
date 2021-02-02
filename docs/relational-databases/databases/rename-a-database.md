@@ -15,17 +15,17 @@ ms.assetid: 44c69d35-abcb-4da3-9370-5e0bc9a28496
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 86b92afa3e9b2eb47ba3ca20ffa1fc88c27b0458
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: e22b6ae7e10347933b55ad643f6c69c6370340cf
+ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97468070"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98813012"
 ---
 # <a name="rename-a-database"></a>Modifier le nom d'une base de données
 
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
-  Cette rubrique explique comment renommer une base de données définie par l’utilisateur dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] ou Azure SQL Database avec [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou [!INCLUDE[tsql](../../includes/tsql-md.md)]. Le nom de la base de données peut contenir n'importe quel caractère conforme aux règles applicables aux identificateurs.  
+  Cette rubrique explique comment renommer une base de données définie par l’utilisateur dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] ou Azure SQL Database avec [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou [!INCLUDE[tsql](../../includes/tsql-md.md)]. Le nom de la base de données peut contenir n'importe quel caractère conforme aux règles applicables aux identificateurs.  
   
 ## <a name="in-this-topic"></a>Dans cette rubrique
   

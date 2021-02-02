@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: bd20fd3a-414b-4581-959d-ebba4ddf5a55
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 6721d36159003077cf771fbff6a0e7a50a182ed2
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: abb62aec3a712ace96d6db82ea8eb0085d8a9e74
+ms.sourcegitcommit: 04d101fa6a85618b8bc56c68b9c006b12147dbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97490009"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99049273"
 ---
 # <a name="install-integration-services-ssis"></a>Installer Integration Services (SSIS)
 
@@ -81,7 +81,7 @@ Pour utiliser un serveur dédié pour les processus d’extraction, de transform
 
 ### <a name="configuring-ssis-event-logging"></a>Configurer la journalisation des événements SSIS
 
-Par défaut, dans une nouvelle installation, [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] est configuré de façon à ne pas journaliser les événements en rapport avec l'exécution de packages dans le journal des événements des applications. Ce paramètre limite le nombre d'entrées de journal des événements lorsque vous utilisez la fonctionnalité du collecteur de données de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Les événements qui ne sont pas consignés sont l’ID d’événement 12288, « Le package a démarré » et l’ID d’événement 12289, « Le package s’est terminé avec succès ». Pour enregistrer ces événements dans le journal des événements des applications, ouvrez le Registre pour y apporter des modifications. Dans le Registre, recherchez le nœud HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\130\SSIS et modifiez la valeur DWORD du paramètre LogPackageExecutionToEventLog en remplaçant 0 par 1.
+Par défaut, dans une nouvelle installation, [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] est configuré de façon à ne pas journaliser les événements en rapport avec l'exécution de packages dans le journal des événements des applications. Ce paramètre limite le nombre d'entrées de journal des événements lorsque vous utilisez la fonctionnalité du collecteur de données de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. Les événements qui ne sont pas consignés sont l’ID d’événement 12288, « Le package a démarré » et l’ID d’événement 12289, « Le package s’est terminé avec succès ». Pour enregistrer ces événements dans le journal des événements des applications, ouvrez le Registre pour y apporter des modifications. Dans le Registre, recherchez le nœud HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\130\SSIS et modifiez la valeur DWORD du paramètre LogPackageExecutionToEventLog en remplaçant 0 par 1.
 
 ## <a name="install-additional-components-for-integration-services"></a>Installer des composants supplémentaires pour Integration Services
 

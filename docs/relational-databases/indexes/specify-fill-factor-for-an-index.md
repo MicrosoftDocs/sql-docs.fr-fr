@@ -15,17 +15,17 @@ ms.assetid: 237a577e-b42b-4adb-90cf-aa7fb174f3ab
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: = azuresqldb-current || >= sql-server-2016
-ms.openlocfilehash: d80ece2cf3b8974f203bf03601dd9c41bfc9bf79
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: e1e0a2b406d6817c43a5a4a51bea90b556c5cea6
+ms.sourcegitcommit: 04d101fa6a85618b8bc56c68b9c006b12147dbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478140"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99048772"
 ---
 # <a name="specify-fill-factor-for-an-index"></a>Spécifier un facteur de remplissage pour un index
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx_md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
 
-  Cette rubrique explique ce qu'est le facteur de remplissage et comment spécifier une valeur de facteur de remplissage sur un index dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
+  Cette rubrique explique ce qu'est le facteur de remplissage et comment spécifier une valeur de facteur de remplissage sur un index dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   
  L'option de facteur de remplissage permet de paramétrer précisément les performances et le stockage des données d'index. Lorsqu'un index est créé ou régénéré, la valeur du facteur de remplissage détermine le pourcentage d'espace sur chaque page de niveau feuille à remplir de données, réservant ainsi le reste de chaque page comme espace disponible pour une croissance future. Par exemple, une valeur de facteur de remplissage de 80 signifie que 20 pour cent de chaque page de niveau feuille reste vide afin que les index puissent s'étendre à mesure que des données sont ajoutées à la table sous-jacente. L'espace vide est réservé entre les lignes d'index plutôt qu'à la fin de l'index.  
   

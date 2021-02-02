@@ -19,17 +19,17 @@ ms.assetid: c55c8865-322e-4ab0-ba04-ea1f56735353
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: b9df5eb968e329f67fd9a98f7ddb1d4eff027a35
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0d309a308e71057f71fd20b0d0652d14a6011ce5
+ms.sourcegitcommit: 04d101fa6a85618b8bc56c68b9c006b12147dbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460362"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99048902"
 ---
 # <a name="enable-indexes-and-constraints"></a>Activer les index et contraintes
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
-  Cette rubrique explique comment activer un index désactivé dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Lorsqu'un index est désactivé, il reste à l'état désactivé tant qu'il n'est pas reconstruit ou supprimé  
+  Cette rubrique explique comment activer un index désactivé dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Lorsqu'un index est désactivé, il reste à l'état désactivé tant qu'il n'est pas reconstruit ou supprimé  
   
  **Dans cette rubrique**  
   

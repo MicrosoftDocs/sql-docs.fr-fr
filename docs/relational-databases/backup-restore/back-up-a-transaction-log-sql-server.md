@@ -15,16 +15,16 @@ helpviewer_keywords:
 ms.assetid: 3426b5eb-6327-4c7f-88aa-37030be69fbf
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 57c864996d15886eb69ef7caf0f000349b238b9c
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: e66f271830e686af36b450e27db2b5c98ad41244
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96130585"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99075941"
 ---
 # <a name="back-up-a-transaction-log"></a>Sauvegarder un journal des transactions
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment sauvegarder un journal des transactions dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../includes/tsql-md.md)]ou de PowerShell.  
+  Cette rubrique explique comment sauvegarder un journal des transactions dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../includes/tsql-md.md)]ou de PowerShell.  
 
 ## <a name="before-you-begin"></a>Avant de commencer
 ### <a name="limitations-and-restrictions"></a><a name="Restrictions"></a> Limitations et restrictions  

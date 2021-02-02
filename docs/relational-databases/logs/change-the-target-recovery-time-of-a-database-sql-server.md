@@ -11,16 +11,16 @@ ms.assetid: e466419a-d8a4-48f7-8d97-13a903ad6b15
 author: MashaMSFT
 ms.author: mathoma
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 00c7778583545c56b886bfc30c4763bacd1404b3
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 6a64388940661139a52a10cd781fa13033e6fb70
+ms.sourcegitcommit: 04d101fa6a85618b8bc56c68b9c006b12147dbb5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171561"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99049171"
 ---
 # <a name="change-the-target-recovery-time-of-a-database-sql-server"></a>Modifier la durée de récupération cible d'une base de données (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment régler ou modifier le temps de récupération cible d’une [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]base de données dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Par défaut, le temps de récupération cible est de 60 secondes, et la base de données utilise des *points de contrôle indirects*. Le temps de récupération cible établit une limite supérieure sur le temps de récupération pour cette base de données.  
+  Cette rubrique explique comment régler ou modifier le temps de récupération cible d’une [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]base de données dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Par défaut, le temps de récupération cible est de 60 secondes, et la base de données utilise des *points de contrôle indirects*. Le temps de récupération cible établit une limite supérieure sur le temps de récupération pour cette base de données.  
   
 > [!NOTE]  
 >  La limite supérieure spécifiée pour une base de données spécifique par son paramètre de temps de récupération cible peut être dépassée si une transaction longue entraîne des durées UNDO excessives.  
