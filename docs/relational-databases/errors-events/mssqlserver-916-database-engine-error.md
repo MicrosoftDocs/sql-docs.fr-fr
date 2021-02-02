@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 916 (Database Engine error)
 ms.assetid: 73eb6581-99fe-49a5-9b42-e239d7ffe27f
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 510708fd1cd119ee3a665cecb903ff63edbb525e
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: b57df3ff247d4c896719197c71d770a4c929a906
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85636809"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99153677"
 ---
 # <a name="mssqlserver_916"></a>MSSQLSERVER_916
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

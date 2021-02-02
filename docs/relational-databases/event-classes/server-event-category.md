@@ -6,7 +6,7 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQL Server event classes, Server event category
 - event classes [SQL Server], Server event category
@@ -15,12 +15,12 @@ ms.assetid: 335ea792-8f3a-45e6-bc63-eb2d7855878e
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 7c0a37139277385d917ff5b10434c3b55e5457db
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b7c812355ecc125230f501af1abca9ae920e9dc9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97485331"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99152116"
 ---
 # <a name="server-event-category"></a>Serveur, catégorie d’événement
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

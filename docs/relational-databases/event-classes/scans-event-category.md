@@ -6,7 +6,7 @@ ms.date: 03/01/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQL Server event classes, Scans event category
 - Scans event category
@@ -15,12 +15,12 @@ ms.assetid: 657aabe4-d3da-475e-87e5-cf9d33c976b1
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: fb9133495b42f64b9b579f4f5aee2629ca5808fb
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 76b7c4e6d3174e7cd5b7d96c87aabbb2c7be9131
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97469600"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99153350"
 ---
 # <a name="scans-event-category"></a>Catégorie d'événements Analyses
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]
