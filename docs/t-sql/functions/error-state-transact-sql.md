@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-data-warehouse, pdw, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ERROR_STATE_TSQL
 - ERROR_STATE
@@ -24,12 +24,12 @@ ms.assetid: 6059af00-83fe-409f-ab7c-daad111bc671
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 0add98a5f8e05a9d0deddaf4bfa2428ba6b0ff08
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 9cef172dff8e103a8ece7a8d704cdd7b009c08d4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98087748"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158745"
 ---
 # <a name="error_state-transact-sql"></a>ERROR_STATE (Transact-SQL)
 
@@ -55,7 +55,7 @@ ERROR_STATE ( )
   
  Retourne NULL si l'appel a lieu en dehors de l'étendue d'un bloc CATCH.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Certains messages d'erreur peuvent apparaître en de multiples endroits du code du [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssDE](../../includes/ssde-md.md)]. L'erreur « 1105 » par exemple, peut être provoquée par différentes conditions. Chaque condition qui génère l'erreur attribue un code d'état unique.  
   
  Lorsque vous consultez des bases de données de problèmes connus, telles que la Base de connaissances [!INCLUDE[msCoName](../../includes/msconame-md.md)], vous pouvez utiliser le numéro d'état pour voir si le problème enregistré est identique à l'erreur que vous avez rencontrée. Par exemple, si un article de la Base de connaissances traite de l'erreur 1105 avec un état 2 et que l'erreur 1105 reçue était associée à un état 3, votre erreur avait probablement une autre cause que celle mentionnée dans l'article.  

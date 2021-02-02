@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP EVENT NOTIFICATION
 - DROP_EVENT_NOTIFICATION_TSQL
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 0ffd8f47-4ea3-4238-9e73-c318df710cf7
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 9fb977f1f6f9627b56707f037a4524e98a7e3c0a
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 475349d9b2cf6222bc469fbcab8f4fbef756632e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095705"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158619"
 ---
 # <a name="drop-event-notification-transact-sql"></a>DROP EVENT NOTIFICATION (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

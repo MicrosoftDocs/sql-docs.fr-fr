@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STDisjoint (geography Data Type)
 - STDisjoint_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 98328a02-e018-47d6-aa93-de162b8aef62
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 14dcdd0581f88897f10160d2be70eb01bbd2b018
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 96cde2c956d745ab27c64118874c033b76670959
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88467461"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99157329"
 ---
 # <a name="stdisjoint-geography-data-type"></a>STDisjoint (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

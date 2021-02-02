@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - UNION
 - UNION_TSQL
@@ -21,12 +21,12 @@ ms.assetid: 607c296f-8a6a-49bc-975a-b8d0c0914df7
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 980dfe20df5c3909e8b35a6e5b460db2568b0fe3
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 9214d0aff36406604b64ff8b642e1c1f56b136c8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097084"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158919"
 ---
 # <a name="set-operators---union-transact-sql"></a>Opérateurs de jeu - UNION (Transact-SQL)
 
