@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: fa1c58ad-8487-42ad-956c-983f2229025f
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 0f685d3d6782aa003d36788757ed76bc41fdb2de
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: a34af15094cdd70833c16b2e3b3bfa1ce0ca4fca
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99193741"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99235954"
 ---
 # <a name="sysdm_os_volume_stats-transact-sql"></a>sys.dm_os_volume_stats (Transact-SQL)
 [!INCLUDE[tsql-appliesto-2008R2SP1-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-2008R2sp1-xxxx-xxxx-xxx-md.md)]
@@ -64,7 +64,7 @@ sys.dm_os_volume_stats (database_id, file_id)
 |**supports_sparse_files**|**tinyint**|Indique si le volume prend en charge les fichiers partiellement alloués.  Ne peut pas avoir la valeur NULL sur Windows et retourne la valeur NULL sur le système d’exploitation Linux.|  
 |**is_read_only**|**tinyint**|Indique si le volume est actuellement marqué comme étant en lecture seule. Ne peut pas être null.|  
 |**is_compressed**|**tinyint**|Indique si ce volume est actuellement compressé. Ne peut pas avoir la valeur NULL sur Windows et retourne la valeur NULL sur le système d’exploitation Linux.|  
-|**incurs_seek_penalty**|**tinyint**|Indique le type de stockage prenant en charge ce volume. Les valeurs possibles sont les suivantes :<br /><br />0 : aucune pénalité de recherche sur ce volume, en général lorsque le périphérique de stockage est PMM ou SSD<br /><br />1 : Rechercher la pénalité sur ce volume, généralement lorsque le périphérique de stockage est un disque dur<br /><br />2 : impossible de déterminer le type de stockage lorsque le volume se trouve sur un chemin d’accès UNC ou des partages montés<br /><br />NULL : le type de stockage ne peut pas être déterminé sur le système d’exploitation Linux<br /><br />**S’applique à :** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] )|  
+|**incurs_seek_penalty**|**tinyint**|Indique le type de stockage prenant en charge ce volume. Les valeurs possibles sont les suivantes :<br /><br />0 : aucune pénalité de recherche sur ce volume, en général lorsque le périphérique de stockage est PMM ou SSD<br /><br />1 : Rechercher la pénalité sur ce volume, généralement lorsque le périphérique de stockage est un disque dur<br /><br />2 : impossible de déterminer le type de stockage lorsque le volume se trouve sur un chemin d’accès UNC ou des partages montés<br /><br />NULL : le type de stockage ne peut pas être déterminé sur le système d’exploitation Linux<br /><br />**S’applique à :** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à partir de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] )|  
   
 ## <a name="security"></a>Sécurité  
   

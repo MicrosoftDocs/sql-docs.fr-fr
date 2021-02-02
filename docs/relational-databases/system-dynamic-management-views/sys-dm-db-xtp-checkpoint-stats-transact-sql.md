@@ -21,12 +21,12 @@ ms.assetid: 8d0b18ca-db4d-4376-9905-3e4457727c46
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: b6211155c51a2751e3f4625a4c838bec29695905
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b99081c2e62aa45789cdb7bc890f6b7fbd51cd67
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99210896"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236062"
 ---
 # <a name="sysdm_db_xtp_checkpoint_stats-transact-sql"></a>sys.dm_db_xtp_checkpoint_stats (Transact-SQL)
 [!INCLUDE[sql-asdb-asdbmi](../../includes/applies-to-version/sql-asdb-asdbmi.md)]
@@ -42,8 +42,8 @@ SELECT * FROM sys.dm_db_xtp_checkpoint_stats;
   
 **[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] est fondamentalement différent des versions plus récentes et est abordé plus bas dans la rubrique [SQL Server 2014](#bkmk_2014).**
   
-## <a name="sssql15-and-later"></a>[!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures  
- Le tableau suivant décrit les colonnes de `sys.dm_db_xtp_checkpoint_stats` , à partir de **[!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]** .  
+## <a name="sssql16-md-and-later"></a>[!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures  
+ Le tableau suivant décrit les colonnes de `sys.dm_db_xtp_checkpoint_stats` , à partir de **[!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]** .  
   
 |Nom de la colonne|Type|Description|  
 |-----------------|----------|-----------------|  
