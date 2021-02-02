@@ -21,17 +21,17 @@ ms.assetid: f0d3b95a-8a00-471b-9da4-14cb8f5b045f
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: a39e58fb6ca60a30a73531988eeffac89e7b46e1
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ec5ad1373336d3cc3873e0a0b81c2ad6c27291fa
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99133964"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250408"
 ---
 # <a name="sysdm_tran_locks-transact-sql"></a>sys.dm_tran_locks (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-  Retourne des informations sur les ressources actives du gestionnaire de verrous dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Chaque ligne représente une demande active au gestionnaire de verrous pour un verrou autorisé ou en attente d'autorisation.  
+  Retourne des informations sur les ressources actives du gestionnaire de verrous dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. Chaque ligne représente une demande active au gestionnaire de verrous pour un verrou autorisé ou en attente d'autorisation.  
   
  Les colonnes du jeu de résultats sont réparties en deux groupes principaux : ressource et demande. Le groupe ressource décrit la ressource sur laquelle la demande de verrou a lieu ; le groupe demande décrit la demande de verrou.  
   
@@ -65,7 +65,7 @@ ms.locfileid: "99133964"
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] , requiert l' `VIEW SERVER STATE` autorisation.   
 Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le `Server admin` ou un `Azure Active Directory admin` compte est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.   
  
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Un état de demande autorisée indique qu'un verrou a été accordé au demandeur sur une ressource. Une demande en attente indique que la demande n'est pas encore autorisée. La colonne **request_status** retourne les types de demandes en attente suivants :  
   
 -   Une demande de conversion indique que le demandeur a déjà reçu l'autorisation pour la ressource et attend l'autorisation de mise à jour de la demande initiale.  
@@ -100,7 +100,7 @@ Des verrous sont placés sur les ressources [!INCLUDE[ssNoVersion](../../include
 |-------------------|--------------------------|--------------------------------------|  
 |DATABASE|Représente une base de données.|Non applicable|  
 |FILE|Représente un fichier de base de données. Il peut s'agir d'un fichier journal ou d'un fichier de données.|Non applicable|  
-|OBJECT|Représente un objet de base de données. Il peut s'agir d'une table de données, d'une vue, d'une procédure stockée, d'une procédure stockée étendue ou de tout objet possédant un ID d'objet.|ID de l'objet|  
+|OBJECT|Représente un objet de base de données. Il peut s'agir d'une table de données, d'une vue, d'une procédure stockée, d'une procédure stockée étendue ou de tout objet possédant un ID d'objet.|ID objet|  
 |PAGE|Représente une seule page dans un fichier de données.|ID HoBt. Cette valeur correspond à **sys.partitions.hobt_id**. L'ID HoBt n'est pas toujours disponible pour les ressources PAGE car il se compose d'informations supplémentaires que peut fournir l'appelant, et tous les appelants ne sont pas capables de fournir ces informations.|  
 |KEY|Représente une ligne dans un index.|ID HoBt. Cette valeur correspond à **sys.partitions.hobt_id**.|  
 |EXTENT|Représente une étendue d'un fichier de données. Une étendue est un groupe de huit pages contiguës.|Non applicable|  

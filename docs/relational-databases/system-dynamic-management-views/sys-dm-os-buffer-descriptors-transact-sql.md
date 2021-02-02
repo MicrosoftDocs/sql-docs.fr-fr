@@ -21,17 +21,17 @@ ms.assetid: 012aab95-8888-4f35-9ea3-b5dff6e3f60f
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: a6749867b40c0673c63b8a6c4279bc31b6fb0682
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ce3894ac989047dc8274c6770e881066023ccabd
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99184969"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250370"
 ---
 # <a name="sysdm_os_buffer_descriptors-transact-sql"></a>sys.dm_os_buffer_descriptors (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
-  Retourne des informations sur toutes les pages de données qui se trouvent actuellement dans le pool de mémoires tampons de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Le résultat de cet affichage peut être utilisé pour déterminer la répartition des pages de base de données dans le pool de mémoires tampons par base de données, objet ou type. Dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], cette vue de gestion dynamique retourne également des informations sur les pages de données dans le fichier d'extension du pool de mémoires tampons. Pour plus d’informations, consultez [extension du pool de mémoires tampons](../../database-engine/configure-windows/buffer-pool-extension.md).  
+  Retourne des informations sur toutes les pages de données qui se trouvent actuellement dans le pool de mémoires tampons de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Le résultat de cet affichage peut être utilisé pour déterminer la répartition des pages de base de données dans le pool de mémoires tampons par base de données, objet ou type. Dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], cette vue de gestion dynamique retourne également des informations sur les pages de données dans le fichier d'extension du pool de mémoires tampons. Pour plus d’informations, consultez [extension du pool de mémoires tampons](../../database-engine/configure-windows/buffer-pool-extension.md).  
   
  Lorsqu'une page de données est lue à partir du disque, cette page est copiée dans le pool de mémoires tampons de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et mise en cache en vue de sa réutilisation. Chaque page de données mise en cache est associée à un descripteur de mémoire tampon. Les descripteurs de mémoire tampon identifient de manière unique chaque page de données actuellement mise en cache dans une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. sys.dm_os_buffer_descriptors retourne les pages mises en cache pour toutes les bases de données utilisateur et système. Cela inclut les pages qui sont associées à la base de données Resource.  
   
@@ -58,7 +58,7 @@ ms.locfileid: "99184969"
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] , requiert l' `VIEW SERVER STATE` autorisation.   
 Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le `Server admin` ou un `Azure Active Directory admin` compte est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.   
    
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  sys.dm_os_buffer_descriptors retourne les pages utilisées par la base de données des ressources. sys.dm_os_buffer_descriptors ne retourne pas d’informations sur les pages libres ou occultées, ni sur les pages qui comportaient des erreurs lors de leur lecture.  
   
 |Du|À|Il en va|Relation|  
