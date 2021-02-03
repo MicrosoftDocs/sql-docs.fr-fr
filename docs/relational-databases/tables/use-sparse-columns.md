@@ -16,12 +16,12 @@ ms.assetid: ea7ddb87-f50b-46b6-9f5a-acab222a2ede
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: ba2d4bc789c324e3e6153dc971a983638af603f4
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 2b2d569c3f37370bd132485e843da005b1769b17
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482337"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211541"
 ---
 # <a name="use-sparse-columns"></a>Utiliser des colonnes éparses
 
@@ -39,7 +39,7 @@ ms.locfileid: "97482337"
   
      Les colonnes éparses ayant de nombreuses lignes évaluées à NULL, elles sont particulièrement appropriées pour les index filtrés. Un index filtré sur une colonne éparse peut indexer uniquement les lignes qui ont des valeurs remplies. Cela crée un index plus petit et plus efficace. Pour plus d'informations, consultez [Create Filtered Indexes](../../relational-databases/indexes/create-filtered-indexes.md).  
   
- Les colonnes éparses et les index filtrés permettent aux applications, telles que [!INCLUDE[winSPServ](../../includes/winspserv-md.md)], de stocker efficacement et d’accéder à un grand nombre de propriétés définies par l’utilisateur à l’aide de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+ Les colonnes éparses et les index filtrés permettent aux applications, telles que [!INCLUDE[winSPServ](../../includes/winspserv-md.md)], de stocker efficacement et d’accéder à un grand nombre de propriétés définies par l’utilisateur à l’aide de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
   
 ## <a name="properties-of-sparse-columns"></a>Propriétés des colonnes éparses  
  Les colonnes éparses présentent les caractéristiques suivantes :  

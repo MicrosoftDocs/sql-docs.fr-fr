@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: 3d77ac6d-5eb5-4cd6-ab60-46290ac4d9ce
 author: julieMSFT
 ms.author: jrasnick
-ms.openlocfilehash: d1b862bdbe8eae15f754cb8d9fc71e64e6fc143a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: caa4af34190b6a45cdd71c1b8e151457ad36a8c1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88445529"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211275"
 ---
 # <a name="trigger-functions-transact-sql"></a>Fonctions de déclencheurs (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

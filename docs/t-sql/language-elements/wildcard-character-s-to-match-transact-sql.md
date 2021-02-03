@@ -8,7 +8,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - Match
 - wildcard
@@ -23,12 +23,12 @@ ms.assetid: 57817576-0bf1-49ed-b05d-fac27e8fed7a
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: b0cc55631431246f87a64c9a17fe953e34c454f3
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 4bae30f7bdee1455d0dcaef2194584ab2faaa174
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095877"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99211008"
 ---
 # <a name="--wildcard---characters-to-match-transact-sql"></a>\[ \] (Caractère générique - Caractères à rechercher) (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

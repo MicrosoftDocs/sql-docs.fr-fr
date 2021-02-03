@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 2576 (Database Engine error)
 ms.assetid: b727cc2f-c76c-46f8-bbbe-5e7a05a6eabf
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 7a3884da163f982260da46d76fb2abda8c8c80be
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 96f2ab95fcf96dbd4de214f5a39ca96419ff8911
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88410865"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209844"
 ---
 # <a name="mssqlserver_2576"></a>MSSQLSERVER_2576
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

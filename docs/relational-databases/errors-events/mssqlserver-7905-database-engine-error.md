@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 7905 (Database Engine error)
 ms.assetid: cf19fbbb-7158-45f2-8778-8f3cad7f574a
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: b1c44b748b89ae88ba107af6691ae1101d532609
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b211668cb6e2066bddc8297b3cfaa36206612ed5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88448863"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99210585"
 ---
 # <a name="mssqlserver_7905"></a>MSSQLSERVER_7905
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

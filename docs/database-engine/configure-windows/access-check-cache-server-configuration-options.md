@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0a992ea8-3ec6-4a4d-97b5-460ae7326247
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 893400411c6f3d2faf6313923aa0f6127a3f2cf0
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: dc1ff18d464c03d1eb5e96834f4d753bfead5559
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171071"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99233982"
 ---
 # <a name="access-check-cache-server-configuration-options"></a>access check cache (option de configuration de serveur)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -31,7 +31,7 @@ L’option **access check cache bucket count** contrôle le nombre de compartime
 
 L’option **access check cache quota** contrôle le nombre d’entrées stockées dans le cache des résultats de la vérification d’accès. Quand le nombre maximal d’entrées est atteint, les entrées les plus anciennes sont supprimées du cache des résultats de la vérification d’accès.
   
-Les valeurs par défaut 0 indiquent que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] gère ces options. À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], les valeurs par défaut se traduisent par les configurations internes suivantes :
+Les valeurs par défaut 0 indiquent que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] gère ces options. À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], les valeurs par défaut se traduisent par les configurations internes suivantes :
 -   Pour access check cache bucket count, la valeur 0 définit une valeur par défaut de 256 compartiments.
 -   Pour access check cache quota, la valeur 0 définit une valeur par défaut de 1 024 entrées.
 

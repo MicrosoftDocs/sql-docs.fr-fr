@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 47edefbd-a09b-4087-937a-453cd5c6e061
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: ea6799570df43f5d49cadd93b98dc89528acacdd
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: f95b2c815fabdc4e4c0d7c544e8c8fb5ad96deef
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171051"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99233991"
 ---
 # <a name="breaking-changes-to-database-engine-features-in-sql-server-2016"></a>Changements cassants dans les fonctionnalités du moteur de base de données de SQL Server 2016
 
@@ -28,7 +28,7 @@ ms.locfileid: "98171051"
 
   Cette rubrique décrit les changements cassants dans le [!INCLUDE[ssDE](../includes/ssde-md.md)] [!INCLUDE[sssql15-md](../includes/sssql16-md.md)] et les versions antérieures de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Ces modifications peuvent interrompre les applications, scripts ou fonctionnalités fondés sur les versions antérieures de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Il se peut que vous rencontriez ces problèmes lors d'une mise à niveau.  
   
-##  <a name="breaking-changes-in-sssql15"></a><a name="SQL15"></a> Modifications avec rupture dans [!INCLUDE[ssSQL15](../includes/sssql16-md.md)]  
+##  <a name="breaking-changes-in-sssql15-md"></a><a name="SQL15"></a> Modifications avec rupture dans [!INCLUDE[sssql15-md](../includes/sssql16-md.md)]  
   
 -   La colonne *sample_ms* de `sys.dm_io_virtual_file_stats` est passée du type de données **int** à **bigint**.  
   

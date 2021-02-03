@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - COLUMNS_UPDATED_TSQL
 - COLUMNS_UPDATED
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 765fde44-1f95-4015-80a4-45388f18a42c
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c927fbad08c222aad4e284a66d3b3e61061e82e9
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2f2c9a71bab585bc2b4d6b03ff62b60cfc96bd2e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101278"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209989"
 ---
 # <a name="columns_updated-transact-sql"></a>COLUMNS_UPDATED (Transact-SQL)
 
