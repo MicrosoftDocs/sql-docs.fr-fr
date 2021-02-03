@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CERTPRIVATEKEY
 - CERTPRIVATEKEY_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 33e0f01e-39ac-46da-94ff-fe53b1116df4
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 8dc94ac93a79ceabef40b9972293c086bfdc3eac
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f32b206053cdfbf3f8fce4f8ecc5da69417fc571
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88367245"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202179"
 ---
 # <a name="certprivatekey-transact-sql"></a>CERTPRIVATEKEY (Transact-SQL)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

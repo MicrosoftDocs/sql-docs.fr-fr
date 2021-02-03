@@ -6,18 +6,18 @@ ms.date: 08/20/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, Masha
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 3013 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 5ab2d181e08c1099f5c23ab273361ee95acedaa7
-ms.sourcegitcommit: ead0b8c334d487a07e41256ce5d6acafa2d23c9d
+ms.openlocfilehash: 57b23cce5d223c20d5072c6b0133d3deffa2e9a8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92418712"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198153"
 ---
 # <a name="mssqlserver_3013"></a>MSSQLSERVER_3013
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

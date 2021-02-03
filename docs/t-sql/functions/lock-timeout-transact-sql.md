@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - '@@LOCK_TIMEOUT'
 - '@@LOCK_TIMEOUT_TSQL'
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 6bf8bf97-60b8-40c1-b89d-8f5a00bcae2e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 3e1d70d12638f77437642a2b7738fea0d5f24129
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 68181dbd097d0f61c8051ef5d3d113360bb52ada
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101038"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200595"
 ---
 # <a name="x40x40lock_timeout-transact-sql"></a>&#x40;&#x40;LOCK_TIMEOUT (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 7773a87d-2f1b-4951-a225-baf159a7291b
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 776f3bfbefbafa3f2e7e116db40d893cacd425f5
-ms.sourcegitcommit: debaff72dbfae91b303f0acd42dd6d99e03135a2
+ms.openlocfilehash: 2f3fe2ac64da04d836090fe72869f12798b74aa5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419845"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199954"
 ---
 # <a name="security-functions-transact-sql"></a>Fonctions de sécurité (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

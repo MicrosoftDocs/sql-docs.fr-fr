@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 10001 (Database Engine error)
 ms.assetid: f8fd2d8d-a4af-4b6a-ba51-9123b7e4c9bf
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 4aedbaa7b1d5224bb09b71ccdff4866e350ee691
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 92f3b862798dd54f782834c86d724a1a591c1d4f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88339625"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197551"
 ---
 # <a name="mssqlserver_10001"></a>MSSQLSERVER_10001
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

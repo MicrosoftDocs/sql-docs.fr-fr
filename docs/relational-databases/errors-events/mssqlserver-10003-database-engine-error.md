@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 10003 (Database Engine error)
 ms.assetid: 9e2cb199-f077-4d88-8117-1b7550afc696
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: d25d4a203c5871c4d9542c03e3872dd1206bb543
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 81fb97c6cb16bacddfdbfacf63821e8aaac050b4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88339635"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197525"
 ---
 # <a name="mssqlserver_10003"></a>MSSQLSERVER_10003
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

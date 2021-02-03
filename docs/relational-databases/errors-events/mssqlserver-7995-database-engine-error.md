@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 7995 (Database Engine error)
 ms.assetid: af6d6322-3cba-43d8-be97-e6ef15f8c933
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: f2b13d327daffad43406a97bf172cc8375280988
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f412ba20bd29b0129df6b40403fa1449d9509d64
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88470797"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197915"
 ---
 # <a name="mssqlserver_7995"></a>MSSQLSERVER_7995
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

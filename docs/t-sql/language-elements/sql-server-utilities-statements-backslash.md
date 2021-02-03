@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - '\_TSQL'
 - '\'
@@ -29,12 +29,12 @@ helpviewer_keywords:
 ms.assetid: c97fbb20-3d12-4d0b-9b52-62a229bc83c0
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 3451d6a9346fd1988cdfc509635967017a0b6cb9
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f205f5fe06767e4f27cc7e695b02c2e3ed824dc6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095911"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200502"
 ---
 # <a name="backslash-line-continuation-transact-sql"></a>Barre oblique inverse (continuation de ligne) (Transact-SQL)
 

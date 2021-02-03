@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP COLUMN MASTER KEY
 - DROP_COLUMN_MASTER_KEY_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: fd5e77c8-a3ae-4795-bb46-b322c0500041
 author: jaszymas
 ms.author: jaszymas
-ms.openlocfilehash: 1e2b72e3b398f5b79f1467530b589853f7f67781
-ms.sourcegitcommit: 197a6ffb643f93592edf9e90b04810a18be61133
+ms.openlocfilehash: fb03c400ade4beecd77592e49d65980cdf599d38
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91380134"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198227"
 ---
 # <a name="drop-column-master-key-transact-sql"></a>DROP COLUMN MASTER KEY (Transact-SQL)
 

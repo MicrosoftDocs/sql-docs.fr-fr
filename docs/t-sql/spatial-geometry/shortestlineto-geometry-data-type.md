@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 39a2d0e4-4f93-4e94-a27e-6ad9537cfe74
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: bd22be1b41ec9213d8e42c66f4de187581d7381d
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 937a631ca32ab7d63dece2603d5cf1357fdd1567
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88422293"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200406"
 ---
 # <a name="shortestlineto-geometry-data-type"></a>ShortestLineTo (type de données geometry)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

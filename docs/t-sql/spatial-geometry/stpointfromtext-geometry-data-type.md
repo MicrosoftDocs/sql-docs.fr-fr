@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STPointFromText_TSQL
 - STPointFromText (geometry Data Type)
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 1d71dfd8-9d80-44c3-b6e1-64e99cde1fa0
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 469971c7a5b40f97ac67feca3dfb20f25a679486
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 837a1d92f784d7af2c5e067834f4c5420645339e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88444988"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198651"
 ---
 # <a name="stpointfromtext-geometry-data-type"></a>STPointFromText (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

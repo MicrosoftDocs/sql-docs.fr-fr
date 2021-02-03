@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STMPointFromWKB (geometry Data Type)
 - STMPointFromWKB_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 01d4117f-01a0-4bc3-8762-7382a1cdbd6c
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: a80aba8159be4697861ee9d80bcf2a18f7c59c8a
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: c694d10fec72b629009b60a36f123c940d5100b9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88445001"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200451"
 ---
 # <a name="stmpointfromwkb-geometry-data-type"></a>STMPointFromWKB (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MERGE
 - MERGE_TSQL
@@ -25,12 +25,12 @@ helpviewer_keywords:
 ms.assetid: c17996d6-56a6-482f-80d8-086a3423eecc
 author: XiaoyuMSFT
 ms.author: XiaoyuL
-ms.openlocfilehash: 664ef8a40e341f52bda0658d532849a278ae49b9
-ms.sourcegitcommit: 22e97435c8b692f7612c4a6d3fe9e9baeaecbb94
+ms.openlocfilehash: cbc1286bbbced3a546c1057433dba5bbc4289281
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92679082"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199391"
 ---
 # <a name="merge-transact-sql"></a>MERGE (Transact-SQL)
 
@@ -133,7 +133,7 @@ La clause TOP est appliquée après la jointure de l'intégralité de la table s
 Étant donné que l'instruction MERGE effectue une analyse complète des tables source et cible, les performances d'E/S peuvent être affectées lorsque la clause TOP est utilisée pour modifier une table volumineuse en créant plusieurs lots. Dans ce scénario, il est important de s’assurer que tous les lots consécutifs ciblent les nouvelles lignes.  
   
 *database_name*  
-Nom de la base de données contenant *target_table* .  
+Nom de la base de données contenant *target_table*.  
   
 *schema_name*  
 Nom du schéma auquel *target_table* appartient.  
@@ -143,10 +143,10 @@ Table ou vue à laquelle les lignes de données de \<table_source> sont comparé
   
 Si *target_table* est une vue, toutes les opérations dont elle fait l’objet doivent satisfaire aux conditions requises pour la mise à jour des vues. Pour plus d’informations, consultez [Modifier les données par l’intermédiaire d’une vue](../../relational-databases/views/modify-data-through-a-view.md).  
   
-*target_table* ne peut pas être une table distante. Aucune règle ne peut être définie sur *target_table* .  
+*target_table* ne peut pas être une table distante. Aucune règle ne peut être définie sur *target_table*.  
   
 [ AS ] *table_alias*  
-Autre nom utilisé pour faire référence à une table pour *target_table* .  
+Autre nom utilisé pour faire référence à une table pour *target_table*.  
   
 USING \<table_source>  
 Spécifie la source de données correspondant aux lignes de données dans *target_table* en fonction de \<merge_search condition>. Le résultat de cette correspondance dicte les actions à effectuer par les clauses WHEN de l'instruction MERGE. \<table_source> peut être une table distante ou une table dérivée qui accède à des tables distantes.
@@ -170,7 +170,7 @@ Spécifie que toutes les lignes de *target_table qui correspondent aux lignes re
 L'instruction MERGE peut avoir au plus deux clauses WHEN MATCHED. Si deux clauses sont spécifiées, la première clause doit être accompagnée d’une clause AND \<search_condition>. Pour toute ligne donnée, la deuxième clause WHEN MATCHED est appliquée uniquement si la première ne l'est pas. En présence de deux clauses WHEN MATCHED, l'une d'elles doit spécifier une action UPDATE et l'autre une action DELETE. Lorsque l’action UPDATE est spécifiée dans la clause \<merge_matched> et que plusieurs lignes de \<table_source> correspondent à une ligne dans *target_table* en fonction de \<merge_search_condition>, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] retourne une erreur. L'instruction MERGE ne peut pas mettre à jour la même ligne plus d'une fois, ou mettre à jour et supprimer la même ligne.  
   
 WHEN NOT MATCHED [ BY TARGET ] THEN \<merge_not_matched>  
-Spécifie qu’une ligne est insérée dans *target_table* pour chaque ligne retournée par \<table_source>ON \<merge_search_condition>qui ne correspond pas à une ligne dans *target_table* , mais satisfait à un critère de recherche supplémentaire, le cas échéant. Les valeurs à insérer sont spécifiées par la clause \<merge_not_matched>. L’instruction MERGE peut avoir une seule clause WHEN NOT MATCHED [ BY TARGET ].
+Spécifie qu’une ligne est insérée dans *target_table* pour chaque ligne retournée par \<table_source>ON \<merge_search_condition>qui ne correspond pas à une ligne dans *target_table*, mais satisfait à un critère de recherche supplémentaire, le cas échéant. Les valeurs à insérer sont spécifiées par la clause \<merge_not_matched>. L’instruction MERGE peut avoir une seule clause WHEN NOT MATCHED [ BY TARGET ].
 
 WHEN NOT MATCHED BY SOURCE THEN \<merge_matched>  
 Spécifie que toutes les lignes de *target_table qui correspondent aux lignes renvoyées par \<table_source> ON \<merge_search_condition>, et qui répondent aux conditions de recherche supplémentaires, sont mises à jour ou supprimées en fonction de la clause \<merge_matched>.  
@@ -215,10 +215,10 @@ Spécifie que les lignes qui correspondent aux lignes dans *target_table* sont s
 \<merge_not_matched>  
 Spécifie les valeurs à insérer dans la table cible.  
   
-( *column_list* )  
+(*column_list*)  
 Liste d'une ou de plusieurs colonnes de la table cible dans lesquelles insérer des données. Les colonnes doivent être spécifiées comme un nom en une seule partie sinon l'instruction MERGE échouera. *column_list* doit être placé entre parenthèses et délimité par des virgules.  
   
-VALUES ( *values_list* )  
+VALUES ( *values_list*)  
 Liste séparée par des virgules et contenant des constantes, variables ou expressions qui retourne les valeurs à insérer dans la table cible. Les expressions ne peuvent pas contenir d'instruction EXECUTE.  
   
 DEFAULT VALUES  
@@ -264,9 +264,9 @@ Pour chaque opération INSERT, UPDATE ou DELETE spécifiée dans l'instruction M
   
 Si la table cible a un déclencheur INSTEAD OF actif défini pour une opération INSERT, UPDATE ou DELETE effectuée par une instruction MERGE, elle doit avoir un déclencheur INSTEAD OF actif pour toutes les opérations spécifiées dans l'instruction MERGE.  
   
-Si des déclencheurs INSTEAD OF UPDATE ou INSTEAD OF DELETE sont définis sur *target_table* , les opérations UPDATE ou DELETE ne sont pas exécutées. À la place, les déclencheurs sont lancés et les tables **insérées** et **supprimées** sont remplies en conséquence.  
+Si des déclencheurs INSTEAD OF UPDATE ou INSTEAD OF DELETE sont définis sur *target_table*, les opérations UPDATE ou DELETE ne sont pas exécutées. À la place, les déclencheurs sont lancés et les tables **insérées** et **supprimées** sont remplies en conséquence.  
   
-Si des déclencheurs INSTEAD OF INSERT sont définis sur *target_table* , l’opération INSERT n’est pas effectuée. Au lieu de cela, la table est remplie en conséquence.  
+Si des déclencheurs INSTEAD OF INSERT sont définis sur *target_table*, l’opération INSERT n’est pas effectuée. Au lieu de cela, la table est remplie en conséquence.  
   
 ## <a name="permissions"></a>Autorisations
 

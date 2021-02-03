@@ -6,18 +6,18 @@ ms.date: 12/25/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, vencher, tejasaks, docast
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 6602 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: dc40432af6994b184678414efba4dcd098dc400b
-ms.sourcegitcommit: d819173fb91af6f20ca6ee59686c35c71b060fbc
+ms.openlocfilehash: b23ce0812b164033556b8bd6ec097ae380796fa1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "97797751"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198989"
 ---
 # <a name="mssqlserver_6602"></a>MSSQLSERVER_6602
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

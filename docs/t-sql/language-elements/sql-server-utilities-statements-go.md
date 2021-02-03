@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - GO
 - GO_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: b2ca6791-3a07-4209-ba8e-2248a92dd738
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f09f2dcdd59b0e0431dbdd92a4023a2e3296149f
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 527a67471c502eaaabe57751f61bdd81db8ea752
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100919"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200473"
 ---
 # <a name="sql-server-utilities-statements---go"></a>Instructions d’utilitaires SQL Server - GO
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

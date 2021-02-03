@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DISTRIBUTED
 - BEGIN_DISTRIBUTED_TRANSACTION_TSQL
@@ -27,12 +27,12 @@ helpviewer_keywords:
 ms.assetid: c3bc2716-39d3-4061-8c6a-8734899231ac
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 15f3221d2e7848a64f3ba22d618bdc54927afeba
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: e0d31150846696532f241c291a80ef226175c25c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095989"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200250"
 ---
 # <a name="begin-distributed-transaction-transact-sql"></a>BEGIN DISTRIBUTED TRANSACTION (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

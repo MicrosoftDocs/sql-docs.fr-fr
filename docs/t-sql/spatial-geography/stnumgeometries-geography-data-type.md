@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STNumGeometries (geography Data Type)
 - STNumGeometries_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 6ae7fac2-62f1-420f-9fc9-a09606be9605
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: fab670e6a334b121850a218cad3c57a9c67def33
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 21dfb949f48d8717062cc2df6abb7ac3d30c7d23
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88459021"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202122"
 ---
 # <a name="stnumgeometries-geography-data-type"></a>STNumGeometries (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

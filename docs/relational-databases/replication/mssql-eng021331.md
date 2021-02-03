@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - MSSQL_ENG021331 error
 ms.assetid: 9acd75d9-fda1-44cd-ba17-20295ad53ea0
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: e3cbab935db333c7cc12823dfc12df1678f8f13c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: fa13efc56fec37761c236de5daec2ce559ecd6fd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97473330"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200525"
 ---
 # <a name="mssql_eng021331"></a>MSSQL_ENG021331
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

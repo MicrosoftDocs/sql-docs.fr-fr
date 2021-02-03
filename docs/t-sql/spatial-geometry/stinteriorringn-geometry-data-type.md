@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STInteriorRingN_TSQL
 - STInteriorRingN (geometry Data Type)
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 47310f9f-2cdb-41e0-a6da-7c3cfbf139ac
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 52d1f15affc8f253303bb636c4b94f280e8a3319
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: b1df2763f3deadb459d352c1949a567d060b65fe
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88479265"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198261"
 ---
 # <a name="stinteriorringn-geometry-data-type"></a>STInteriorRingN (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

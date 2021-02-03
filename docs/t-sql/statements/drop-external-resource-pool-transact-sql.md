@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: machine-learning-services
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP EXTERNAL RESOURCE POOL
 - DROP_EXTERNAL_RESOURCE_POOL_TSQL
@@ -19,12 +19,12 @@ ms.assetid: e2fa01bd-96ff-4ea9-bb08-6cb6b6adf68c
 author: dphansen
 ms.author: davidph
 manager: cgronlund
-ms.openlocfilehash: 08f25755ca4742b0e14379c40e22e99741eedbda
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 70c4cb5ab7f6808e846bbd8a55ac1d8e75af4ab4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172391"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197565"
 ---
 # <a name="drop-external-resource-pool-transact-sql"></a>DROP EXTERNAL RESOURCE POOL (Transact-SQL)
 [!INCLUDE [SQL Server 2016 and later](../../includes/applies-to-version/sqlserver2016.md)]

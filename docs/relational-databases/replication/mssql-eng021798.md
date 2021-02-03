@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - MSSQL_ENG021798 error
 ms.assetid: 596f5092-75ab-4a19-8582-588687c7b089
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: dc233cde39917a65a946b1c4e112fdc0833c48cd
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: eeb2f515ceab6c2256f7c0f75c0847c1a55c8f18
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97469060"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201510"
 ---
 # <a name="mssql_eng021798"></a>MSSQL_ENG021798
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

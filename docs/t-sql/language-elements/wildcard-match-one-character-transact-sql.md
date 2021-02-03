@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - Match
 - wildcard
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 11a2ed36-9e21-4bdf-ae20-a31db1434b97
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 38398adeb20a6a9f70ab225d4ead8b8504635323
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 9c82aed5ad9ae3fa43ba17825a8682be40b2aabe
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095859"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202107"
 ---
 # <a name="_-wildcard---match-one-character-transact-sql"></a>_ (Caractère générique - recherche de correspondance d'un seul caractère) (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - concatenation
 - +
@@ -22,12 +22,12 @@ ms.assetid: 35cb3d7a-48f5-4b13-926c-a9d369e20ed7
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 93226b1e477c0ba0c1e5d72380c1c65cccf278eb
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 47a74bd7c9626dda0d10b27b0890420f6c9734fa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100974"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199513"
 ---
 # <a name="-string-concatenation-transact-sql"></a>+ (Concaténation de chaîne) (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

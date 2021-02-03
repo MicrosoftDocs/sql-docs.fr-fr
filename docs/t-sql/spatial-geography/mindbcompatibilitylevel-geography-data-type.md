@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - MinDbCompatibilityLevel
 - MinDbCompatibilityLevel_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: a9e44748-4a9e-4179-abc4-7631597be5a7
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: cfce4111cfcfb296689754e18aeea37878636543
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 74a243b34ee430ae8328eaec067a64a5f103aee4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92038082"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198439"
 ---
 # <a name="mindbcompatibilitylevel-geography-data-type"></a>MinDbCompatibilityLevel (type de données geography)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

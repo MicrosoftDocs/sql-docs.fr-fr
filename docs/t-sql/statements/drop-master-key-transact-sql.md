@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-data-warehouse, pdw, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP MASTER KEY
 - DROP_MASTER_KEY_TSQL
@@ -25,12 +25,12 @@ ms.assetid: 5ccef797-408f-4964-80da-965d8e1ccba7
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: f8fe46e23a17adb057431eca0c0a999087fe5f8e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0068840d96610921ba161326b505963218f46926
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465890"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201099"
 ---
 # <a name="drop-master-key-transact-sql"></a>DROP MASTER KEY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-asdw-pdw-md](../../includes/tsql-appliesto-ss2008-xxxx-asdw-pdw-md.md)]

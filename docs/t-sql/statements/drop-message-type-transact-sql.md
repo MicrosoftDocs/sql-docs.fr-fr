@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP_MESSAGE_TYPE_TSQL
 - DROP MESSAGE TYPE
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 805e8ad5-8a93-49f0-88e5-e6fca8814dd5
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 3813b67d85fc3dc8c145aaaa79226587b037f675
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2a31f1cae33f2c2899fc5ec8286f167c184894d6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096954"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201125"
 ---
 # <a name="drop-message-type-transact-sql"></a>DROP MESSAGE TYPE (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

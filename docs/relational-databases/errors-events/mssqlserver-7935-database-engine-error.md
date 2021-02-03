@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 7935 (Database Engine error)
 ms.assetid: 45ab21a3-024a-4523-9bd9-1175d01f9c8a
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: c0baec6b78137e9d35037f64747fb6ad7862fdef
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 3e483657f6504cc208f5065bc53ccbd2af44992b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88491167"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197969"
 ---
 # <a name="mssqlserver_7935"></a>MSSQLSERVER_7935
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

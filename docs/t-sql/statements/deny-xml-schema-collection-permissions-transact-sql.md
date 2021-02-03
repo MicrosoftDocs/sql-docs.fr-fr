@@ -8,7 +8,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 159969a7-8313-41bc-bb19-c55af76597e6
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 4e52584f3fe4bcd1528557dc04e602a3f11ca37c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 148b3837b069457c1ea144e5cd2bf21b6515e37f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98081772"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200397"
 ---
 # <a name="deny-xml-schema-collection-permissions-transact-sql"></a>DENY – refus d'autorisations de collection de schémas XML (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

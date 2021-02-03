@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 7936 (Database Engine error)
 ms.assetid: d78fc8a9-d173-4801-bb32-ed6a29257f08
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: f7077b7947a7aaa5e856f8e47d0b2de468f77540
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 135e0d8fcb41782d66c883326dce76dacd77781c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88331646"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197960"
 ---
 # <a name="mssqlserver_7936"></a>MSSQLSERVER_7936
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

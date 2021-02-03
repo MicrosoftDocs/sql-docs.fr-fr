@@ -6,7 +6,7 @@ ms.date: 04/16/2020
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f48f6f7b-219f-463a-bf36-bc10f21afaeb
 author: MightyPen
 ms.author: genemi
-ms.openlocfilehash: af8a312db85630c9f7e527b47ad876daf9520eef
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: 19dd6786f9ee59e4185b68c1ab49a9f5c9924a9a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91116598"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200224"
 ---
 # <a name="query-method-xml-data-type"></a>Méthode query() (type de données xml)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

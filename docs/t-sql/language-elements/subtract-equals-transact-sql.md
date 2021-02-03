@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - -=
 - -=_TSQL
@@ -23,12 +23,12 @@ ms.assetid: 2a2056b5-1dfa-4ea8-8cfc-6331a2f94da9
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 0271cadfc24ec5fdeeea0e3aaa8e6f67c4f83ae3
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 101884ca95cd0d782201ce9a9f19bb8fa0b721a5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093501"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199510"
 ---
 # <a name="--subtraction-assignment-transact-sql"></a>-= (Affectation après soustraction) (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

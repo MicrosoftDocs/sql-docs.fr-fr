@@ -6,7 +6,7 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - "-1"
 helpviewer_keywords:
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: bad25b91-eaed-46c0-a5b7-71117a32304c
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 92eba743312cf8649b928564deebac7a14168ec6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6b750fa65b41bd4e5125d48306caf9178623b57f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88340055"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197559"
 ---
 # <a name="mssqlserver_-1"></a>MSSQLSERVER_-1
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

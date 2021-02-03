@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - MSSQL_ENG021330 error
 ms.assetid: e2bb2e21-62a7-4689-b68b-bdfba3fdd985
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: 0014faab340070eec24e7beb7cf899b0b6d5eada
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c454c432fe23e56a1a8e3962c4763d3ce68c8e0d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97469100"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200535"
 ---
 # <a name="mssql_eng021330"></a>MSSQL_ENG021330
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

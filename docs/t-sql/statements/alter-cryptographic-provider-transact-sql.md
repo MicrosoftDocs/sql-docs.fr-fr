@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_CRYPTOGRAPHIC_PROVIDER_TSQL
 - ALTER CRYPTOGRAPHIC PROVIDER
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 876b6348-fb29-49e1-befc-4217979f6416
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 95c7f778abe9417a108e4df6982b73d3037f5ae9
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 6abe4053b87b6417bb1c55708815bc4cc91b2ba0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124288"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201148"
 ---
 # <a name="alter-cryptographic-provider-transact-sql"></a>ALTER CRYPTOGRAPHIC PROVIDER (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

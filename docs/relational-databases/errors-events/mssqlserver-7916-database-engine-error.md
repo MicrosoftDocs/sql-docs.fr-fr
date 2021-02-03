@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 7916 (Database Engine error)
 ms.assetid: 9bac3536-de14-4e98-84c2-bde9a59ba0d1
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: b131f19d85bd86875b6ca3d457142d068aaf3d8c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5a0a89019ae85f8d591518ec8a0f5e08cacc0ecc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88448710"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198033"
 ---
 # <a name="mssqlserver_7916"></a>MSSQLSERVER_7916
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -8,7 +8,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: a6b8b37c-0015-4596-898c-51a567659e2e
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 337ee4188d85ef83814ae6beb9095b835767dcb2
-ms.sourcegitcommit: edba1c570d4d8832502135bef093aac07e156c95
+ms.openlocfilehash: af58d742557f4cbff21a1d8f07afb73a3eaa58ed
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/20/2020
-ms.locfileid: "86483910"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200551"
 ---
 # <a name="revoke-search-property-list-permissions-transact-sql"></a>Autorisations de liste des propriétés de recherche REVOKE (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

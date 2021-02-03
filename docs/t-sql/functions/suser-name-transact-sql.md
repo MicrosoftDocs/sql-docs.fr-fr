@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-data-warehouse, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SUSER_NAME
 - SUSER_NAME_TSQL
@@ -25,12 +25,12 @@ ms.assetid: ae598d9f-9baa-49b8-b1c1-042854206de4
 author: VanMSFT
 ms.author: vanto
 monikerRange: =azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 880d2405053d4dad832e0efa7d8c4c5c9d7395f3
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b163b8aae38c389b8b20a6853fce685cac0dfd8e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484101"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200279"
 ---
 # <a name="suser_name-transact-sql"></a>SUSER_NAME (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

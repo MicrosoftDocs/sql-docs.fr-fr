@@ -6,18 +6,18 @@ ms.date: 12/25/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, vencher, tejasaks, docast
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 6522 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: f48534e104139ee7cbd4eb7602fce2a8e51eeb73
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 99c0a18330de144cc2a20ead150b1c0c5b7a3fc7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597137"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199013"
 ---
 # <a name="mssqlserver_6522"></a>MSSQLSERVER_6522
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

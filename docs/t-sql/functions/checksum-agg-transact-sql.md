@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CHECKSUM_AGG
 - CHECKSUM_AGG_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: cdede70c-4eb5-4c92-98ab-b07787ab7222
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 2bea0aad7839bc0b487b77b6ac1434396b84b765
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 9c55c317575e56f1a633033f7088a69231f21325
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102631"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202166"
 ---
 # <a name="checksum_agg-transact-sql"></a>CHECKSUM_AGG (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

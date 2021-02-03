@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - RingN
 - RingN_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 30f47275-2727-4d22-bbec-c0c54bcb3ac2
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 58325135db25b79d7c38fb3447f6b7e5bfd8c89a
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 3607ebae064041102a5c35ce425334e18adc3a5c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88417015"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199463"
 ---
 # <a name="ringn-geography-data-type"></a>RingN (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 96871075-1998-4cd9-86b1-3fc55577aee4
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 4a717b5b83be8d381a91ff1ab1055d24ae8c59ed
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: d1851b51e9068c3bd0fcbe7ac559e3d770fc1b48
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96115965"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198263"
 ---
 # <a name="curvetolinewithtolerance-geometry-data-type"></a>CurveToLineWithTolerance (type de données geometry)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

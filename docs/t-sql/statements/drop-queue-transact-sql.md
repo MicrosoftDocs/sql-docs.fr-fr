@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP QUEUE
 - DROP_QUEUE_TSQL
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: fd866520-ca00-477d-b2e9-0110e9610ed4
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: ead004ad07fbab696e42e5efdefa89a04cc0c2a2
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c52466e4763e2b01ff435e82d41bf393bbcfabdc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096929"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201122"
 ---
 # <a name="drop-queue-transact-sql"></a>DROP QUEUE (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

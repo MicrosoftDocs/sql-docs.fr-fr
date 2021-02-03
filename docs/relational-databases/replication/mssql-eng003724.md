@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - MSSQL_ENG003724 error
 ms.assetid: 10cb119d-92df-4124-b85d-cd2f2666c99c
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: 9d6bc0ed6bc09dffcd2d88e7b5299c5d66c28660
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ba60ce4e15ce700a08b417e513638dcb47785282
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475810"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198951"
 ---
 # <a name="mssql_eng003724"></a>MSSQL_ENG003724
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 7933 (Database Engine error)
 ms.assetid: 722bd2c6-0fb9-4838-954a-439744c6ac4b
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 64bcdd82e999a5e159d73058f51f07c82aa52dc0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0a9ec7e3c03206136ec3883e1e15ab4d4443d2b7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88491166"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197984"
 ---
 # <a name="mssqlserver_7933"></a>MSSQLSERVER_7933
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

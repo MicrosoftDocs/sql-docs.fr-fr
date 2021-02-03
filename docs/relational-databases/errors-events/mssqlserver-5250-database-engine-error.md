@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 5250 (Database Engine error)
 ms.assetid: f4a1d0e8-f27f-4cb8-a25d-040b40555dcc
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 81fa0c5fbf65012ac449bf9e7bd0aa0d5a92612b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 21e60413a37dbc129028b3d96b390e096fb291fe
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88470937"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198089"
 ---
 # <a name="mssqlserver_5250"></a>MSSQLSERVER_5250
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

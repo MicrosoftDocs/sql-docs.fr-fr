@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Plan Guide Unsuccessful event class
 ms.assetid: ef9759f8-5613-4884-9257-86b609313f69
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 430c75092979231985bbf9799d6f6ff12dc34de6
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 29b9b3a853b91f0a91c7431eb821fa0b6ebd218e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97467840"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202049"
 ---
 # <a name="plan-guide-unsuccessful-event-class"></a>Plan Guide Unsuccessful (classe d'événements)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

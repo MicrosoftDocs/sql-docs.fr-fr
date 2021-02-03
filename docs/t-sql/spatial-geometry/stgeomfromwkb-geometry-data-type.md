@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STGeomFromWKB (geometry Data Type)
 - STGeomFromWKB_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 6546ddb0-4a5f-46e5-ba04-8007486c95ec
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: dbd382664925059128b21a5a1dce048d7703fc2a
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 43efe98426cdd29fd2c56a11a5ce53fc8d4834ce
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88479350"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197799"
 ---
 # <a name="stgeomfromwkb-geometry-data-type"></a>STGeomFromWKB (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

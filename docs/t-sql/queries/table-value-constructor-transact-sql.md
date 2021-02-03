@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: e57cd31d-140e-422f-8178-2761c27b9deb
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: c82909bb5a128ee0a1dff9fa48b0a213a3c931e4
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 32074a8c0229ace53d636f8ef9bb31b8caf729b8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91115410"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200433"
 ---
 # <a name="table-value-constructor-transact-sql"></a>Constructeur de valeurs de table (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

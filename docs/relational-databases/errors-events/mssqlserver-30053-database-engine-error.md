@@ -6,16 +6,16 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 ms.assetid: 8ad23889-e243-4bd7-bc3e-150403399d89
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: c48552681225b6e540dfb55347a301ec4fc8c0d5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ae4efe0d2f27a273714e21713f420709220ccffc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88424391"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198178"
 ---
 # <a name="mssqlserver_30053"></a>MSSQLSERVER_30053
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,7 +6,7 @@ ms.date: 08/26/2020
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: machine-learning
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP EXTERNAL LIBRARY
 - DROP_EXTERNAL_LIBRARY_TSQL
@@ -18,12 +18,12 @@ author: dphansen
 ms.author: davidph
 manager: cgronlund
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 3cbf3bfa6ad5cb6971d1cd7ab7d9d4d2ac490c2a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 681e7082c2019cba4924d96e1617dc0031a76c35
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478480"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197578"
 ---
 # <a name="drop-external-library-transact-sql"></a>DROP EXTERNAL LIBRARY (Transact-SQL)  
 [!INCLUDE [SQL Server 2017 SQL MI](../../includes/applies-to-version/sqlserver2017-asdbmi.md)]

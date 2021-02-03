@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: pdw, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.assetid: 8ca0973c-30b2-4633-a165-c09b13cc81ae
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 0a7fab5fc48b055fb1a5cf253bfa343e517656cd
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 5404b1d743f32e07244f54f86e039087e05f6ab9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091873"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198424"
 ---
 # <a name="revoke-xml-schema-collection-permissions-transact-sql"></a>REVOKE – révocation d'autorisations de collection de schémas XML (Transact-SQL)
 [!INCLUDE [sql-asdbmi-pdw](../../includes/applies-to-version/sql-asdbmi-pdw.md)]

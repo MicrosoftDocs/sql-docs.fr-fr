@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 3417 (Database Engine error)
 ms.assetid: 005829c8-cf57-4828-818a-bbe8ee2e00f0
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: c8a7cedd7aec428c7b72d07090356977f385e300
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: bf4dac403156a5fff0b0b5cdb59a98d4a58abd0d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456201"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201609"
 ---
 # <a name="mssqlserver_3417"></a>MSSQLSERVER_3417
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

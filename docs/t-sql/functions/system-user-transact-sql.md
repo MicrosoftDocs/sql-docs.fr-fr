@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-data-warehouse, pdw, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SYSTEM_USER_TSQL
 - SYSTEM_USER
@@ -27,12 +27,12 @@ ms.assetid: 565984cd-60c6-4df7-83ea-2349b838ccb2
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: '>=aps-pdw-2016||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 83684cab677210f0c584a7554042fbe2ce8f8a80
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 3432cf3a1ba598f86ee5ac52b28922128171121e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480400"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197831"
 ---
 # <a name="system_user-transact-sql"></a>SYSTEM_USER (Transact-SQL)
 [!INCLUDE [sql-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdbmi-asa-pdw.md)]

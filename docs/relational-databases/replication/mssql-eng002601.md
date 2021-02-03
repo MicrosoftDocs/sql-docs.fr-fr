@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - MSSQL_ENG002601 error
 ms.assetid: 657c3ae6-9e4b-4c60-becc-4caf7435c1dc
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: 50892f2cdefcbab8fe29aea732cc839c128dc11a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8e507b7fc3bce13d775ab313dba6cd1af7da68ac
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475850"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198998"
 ---
 # <a name="mssql_eng002601"></a>MSSQL_ENG002601
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

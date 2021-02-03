@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 5242 (Database Engine error)
 ms.assetid: 712b1a10-2f87-41df-a111-1ed9f14102d4
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 47e4d3ed7cac78764d8ff1069a0a38ca78603c22
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 58ac27fac4af3c8d343102403549758ea428d494
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88470974"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198123"
 ---
 # <a name="mssqlserver_5242"></a>MSSQLSERVER_5242
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

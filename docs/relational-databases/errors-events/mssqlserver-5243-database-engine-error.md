@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 5243 (Database Engine error)
 ms.assetid: e04a1934-e57d-420e-ac79-97071745824e
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 2575d81f09ccb3ac4aceb2396f5db0f8d9bee451
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6cd72c5e595537fd4afa3d33581321b022d55077
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88470985"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198106"
 ---
 # <a name="mssqlserver_5243"></a>MSSQLSERVER_5243
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

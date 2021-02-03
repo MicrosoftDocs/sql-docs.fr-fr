@@ -6,18 +6,18 @@ ms.date: 07/11/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 2814 (Database Engine error)
 ms.assetid: 22800748-9be9-4511-9428-6b8b40e5bef9
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 174836221e6040bde4fff244e3d5377f90b0089e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6d64879e4ee4bc54edc566c2109ecdd3e28598f5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88482723"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198193"
 ---
 # <a name="mssqlserver_2814"></a>MSSQLSERVER_2814
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

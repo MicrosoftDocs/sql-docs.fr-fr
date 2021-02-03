@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Showplan XML event class
 ms.assetid: 8e22de84-8890-414a-93e4-aebfaa057d7f
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 11f669b8da5f22951ca1051fc64b484366150b04
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: d84e2991d309bc50964c8f2c32f7d0e0903b7abe
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480200"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197726"
 ---
 # <a name="showplan-xml-event-class"></a>Showplan XML (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

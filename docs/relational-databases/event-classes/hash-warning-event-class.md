@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Hash Warning event class
 ms.assetid: cb93c620-4be9-4362-8bf0-af3f2048bdaf
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: ec0ced044ba6405d36f53bed4a42f17b57e7d342
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 3353313a9ee65ab1de34fa8c1e90517950eed0e9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97485421"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199919"
 ---
 # <a name="hash-warning-event-class"></a>Hash Warning (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

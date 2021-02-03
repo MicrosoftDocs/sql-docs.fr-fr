@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - IDENT_SEED_TSQL
 - IDENT_SEED
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: e4cb8eb8-affb-4810-a8a9-0110af3c247a
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: c75867165d29be5af4073aa6c8e2281687db7f0c
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: cfaf7ca485c1b7b4bb047b66cc41cd2978dda1d1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91114771"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197610"
 ---
 # <a name="ident_seed-transact-sql"></a>IDENT_SEED (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

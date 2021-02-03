@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Audit Schema Object GDR event class
 ms.assetid: a0187811-dc71-4792-a282-3bfe1ca90c21
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 3c5403c4a42264c0d1ffeaf64bfd7c0d27525826
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ee41c341294720193824844dad6bcd5d639b1295
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97476290"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198616"
 ---
 # <a name="audit-schema-object-gdr-event-class"></a>Audit Schema Object GDR (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP PARTITION SCHEME
 - DROP_PARTITION_SCHEME_TSQL
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 6efbc87c-1c92-4e43-96a7-e0f30f1db185
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 65a64c6488afe5ca5598f68d13d4f5a41e7d2e03
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c3900b7323ed0312cdcfd265540f3f8e323bed2f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096906"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201108"
 ---
 # <a name="drop-partition-scheme-transact-sql"></a>DROP PARTITION SCHEME (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/applies-to-version/sqlserver.md)]

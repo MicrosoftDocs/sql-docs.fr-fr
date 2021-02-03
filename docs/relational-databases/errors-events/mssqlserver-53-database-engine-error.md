@@ -6,7 +6,7 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - "53"
 helpviewer_keywords:
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 1234f5a2-b3d1-425a-b29f-480fa792305f
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: e38abeb865418637336b88f8e1a72380c826a8e8
-ms.sourcegitcommit: 36fe62a3ccf34979bfde3e192cfa778505add465
+ms.openlocfilehash: 84f29b85aab41852163a0b64fce1edfdd6ec7a22
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94521071"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198059"
 ---
 # <a name="mssqlserver_53"></a>MSSQLSERVER_53
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

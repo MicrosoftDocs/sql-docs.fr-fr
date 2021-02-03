@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-data-warehouse, database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - LAST_VALUE
 - LAST_VALUE_TSQL
@@ -20,12 +20,12 @@ ms.assetid: fd833e34-8092-42b7-80fc-95ca6b0eab6b
 author: cawrites
 ms.author: chadam
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: f79779a303bf4f784daae8969f8c0d60adccbaf2
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: bc1a921244b7e4a6f19f95ebbb626f19265872fa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096032"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202128"
 ---
 # <a name="last_value-transact-sql"></a>LAST_VALUE (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

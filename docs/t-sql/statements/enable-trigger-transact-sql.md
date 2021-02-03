@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ENABLE TRIGGER
 - ENABLE_TSQL
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 6e21f0ad-68d0-432f-9c7c-a119dd2d3fc9
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 3ed2081a912291eed4682ba0e853df66f36e1801
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 3f931a5c162ab248a3d700917446001e22a63013
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091927"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198233"
 ---
 # <a name="enable-trigger-transact-sql"></a>ENABLE TRIGGER (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

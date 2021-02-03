@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - MSSQL_ENG014150 error
 ms.assetid: c3dd3109-abf3-4b38-a4e9-ef48d0235656
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: a11861d7869da84272f17c0b9fb15a7236b558e9
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6b6ad0060a3d039db1e46fdaab13251e28f5a3f9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97483060"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198781"
 ---
 # <a name="mssql_eng014150"></a>MSSQL_ENG014150
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

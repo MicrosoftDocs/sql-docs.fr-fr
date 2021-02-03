@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - MSSQL_ENG014010 error
 ms.assetid: 6ea84f2f-e7a2-4028-9ea9-af0d2eba660e
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: 3b925d1a587203a5f2072e601f23fb0a14b5c115
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6bc32eaf01530401f328e14a2b6e81438ead2c4f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475800"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198836"
 ---
 # <a name="mssql_eng014010"></a>MSSQL_ENG014010
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

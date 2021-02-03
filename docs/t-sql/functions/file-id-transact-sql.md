@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - FILE_ID
 - FILE_ID_TSQL
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 6a7382cf-a360-4d62-b9d2-5d747f56f076
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 780ca2746f1370a84c72334b6676c6d32e71d577
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 979b1f1689c4538fd78aa33e9473b6e0a2e69c85
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092309"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198457"
 ---
 # <a name="file_id-transact-sql"></a>FILE_ID (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

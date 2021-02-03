@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 7986 (Database Engine error)
 ms.assetid: ae64276c-4e1e-4ef3-9ee9-ebeb2f61e565
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 4d963b6e6dddc121014a2525c9898c944951f117
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 935e1a17d7ff00186c72bd96674c59cf9ffb0bb8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88491146"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197938"
 ---
 # <a name="mssqlserver_7986"></a>MSSQLSERVER_7986
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

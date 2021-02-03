@@ -6,18 +6,18 @@ ms.date: 09/05/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 5235 (Database Engine error)
 ms.assetid: 1aa7e6a5-7ccb-43c8-a1fd-d50e92e0a798
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 9086a2ba077c776c0d36a6ab5e7e2cafc97a688f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1a81590c727a34dfe272a03ec6319f487c02e9f9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88470992"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198137"
 ---
 # <a name="mssqlserver_5235"></a>MSSQLSERVER_5235
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

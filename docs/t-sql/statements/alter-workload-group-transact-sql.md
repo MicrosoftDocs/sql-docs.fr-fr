@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_WORKLOAD_GROUP_TSQL
 - ALTER WORKLOAD GROUP
@@ -19,12 +19,12 @@ ms.assetid: 957addce-feb0-4e54-893e-5faca3cd184c
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=sql-server-2016||>=sql-server-linux-2017||=azure-sqldw-latest||=azuresqldb-mi-current'
-ms.openlocfilehash: 2c9c90cb1107d33f6ecbb42e0974371555d9b9aa
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 8f387c9ab6d67f11211107b4e7c44d38d23702cf
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098419"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199378"
 ---
 # <a name="alter-workload-group-transact-sql"></a>ALTER WORKLOAD GROUP (Transact-SQL)
 

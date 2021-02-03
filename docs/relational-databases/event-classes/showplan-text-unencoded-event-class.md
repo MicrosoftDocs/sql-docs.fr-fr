@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Showplan Text (Unencoded) event class
 ms.assetid: 0aad4563-8caf-4971-92af-55992bc5ff2c
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: c7b0ecc4e1c330edd89d6385df2aa4f55f30f9ec
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 75a0126b0d982fe551cfcd8d4a38004f0d87da62
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97419905"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197719"
 ---
 # <a name="showplan-text-unencoded-event-class"></a>Showplan Text (non encodée), classe d'événements
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

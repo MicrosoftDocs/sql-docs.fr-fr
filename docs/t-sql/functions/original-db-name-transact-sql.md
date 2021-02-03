@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ORIGINAL_DB_NAME
 - ORIGINAL_DB_NAME_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 7dadc40a-1287-4f31-8487-434ee477144d
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: c22913dfea659c94b3e780d86272aabf55ccbd2b
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 6d84ffff979de59fae34a204e3a87ca8619ca17b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88459617"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200553"
 ---
 # <a name="original_db_name-transact-sql"></a>ORIGINAL_DB_NAME (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

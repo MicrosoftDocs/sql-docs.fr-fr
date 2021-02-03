@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 825 (Database Engine error)
 ms.assetid: f69f8214-5af1-4769-878b-117ad6eaff52
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: f8499e53cfd5a3011ae7bbf226d98a159bf5bdd3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4dd4bd0ae57db3fe54afc8cf54efd1909c48a1d9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88499470"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197885"
 ---
 # <a name="mssqlserver_825"></a>MSSQLSERVER_825
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

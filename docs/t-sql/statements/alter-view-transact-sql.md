@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_VIEW_TSQL
 - ALTER VIEW
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 03eba220-13e2-49e3-bd9d-ea9df84dc28c
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 76a16ec32341e54c66b7ba72edc50f4d9944b900
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 8e01212fb92fc5b589ace24258551b48ae1dbfdb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098461"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199477"
 ---
 # <a name="alter-view-transact-sql"></a>ALTER VIEW (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

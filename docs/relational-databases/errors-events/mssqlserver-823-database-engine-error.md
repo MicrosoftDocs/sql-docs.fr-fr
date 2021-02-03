@@ -6,18 +6,18 @@ ms.date: 01/27/2019
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 823 (Database Engine error)
 ms.assetid: 0d9fce3c-3772-46ce-a7a3-4f4988dc6cae
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 57850e8b54ef0f99895e558616b22089af266895
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 7ed748bdf748aa51813d11348859bc769525ed35
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85767853"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197899"
 ---
 # <a name="mssqlserver-error-823"></a>Erreur 823 de MSSQLSERVER
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

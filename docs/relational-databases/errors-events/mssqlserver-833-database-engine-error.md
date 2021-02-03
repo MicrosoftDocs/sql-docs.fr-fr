@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 833 (Database Engine error)
 ms.assetid: 14129cc4-be80-4772-9e3f-0e5da4d0696b
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 132e33d7bf2b03df21a1d6a3475ca625675b3328
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: d562e3ffcde77c706d0cf56a92f188b895eeb457
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988760"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197879"
 ---
 # <a name="mssqlserver_833"></a>MSSQLSERVER_833
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sql-asdbmi.md)]

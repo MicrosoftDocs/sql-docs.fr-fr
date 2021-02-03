@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 4e43f954-0982-470b-a239-08a13c61563a
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: abfb423e90d8c7776fe9d2f5eb8815a37254a3b8
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: d3b67e8c56f7a9282192bb29159ab54e620be179
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96131372"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197791"
 ---
 # <a name="deny-system-object-permissions-transact-sql"></a>DENY – refus d'autorisations d'objet système (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

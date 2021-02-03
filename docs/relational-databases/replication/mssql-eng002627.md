@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - MSSQL_ENG002627 error
 ms.assetid: 7f4136ac-3784-4a41-a98c-8a02308e4883
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: ae2261d43e2c8ffb995f16902db6b934e0efabcf
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 3063cc42afb22b1b64c480f409a0012abbd74f10
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475840"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198980"
 ---
 # <a name="mssql_eng002627"></a>MSSQL_ENG002627
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

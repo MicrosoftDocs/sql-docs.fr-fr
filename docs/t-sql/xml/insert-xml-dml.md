@@ -6,7 +6,7 @@ ms.date: 07/26/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 0c95c2b3-5cc2-4c38-9e25-86493096c442
 author: MightyPen
 ms.author: genemi
-ms.openlocfilehash: 73d68149950542082127e4132db529ad18cbc03d
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: d5eae7b06bb10c356bbb1c3975b05dd7cd267708
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91112503"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99199334"
 ---
 # <a name="insert-xml-dml"></a>insert (XML DML)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

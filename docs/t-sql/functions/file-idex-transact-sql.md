@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - FILE_IDEX
 - FILE_IDEX_TSQL
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 7532fea5-ee5e-4edd-b98b-111a7ba56c8e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 0f7739a422e82e496c772454bb596980497adef3
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: fc1a9dce88f13e9f1e0933ec19ef6d6b8ddeecd0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092299"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198448"
 ---
 # <a name="file_idex-transact-sql"></a>FILE_IDEX (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

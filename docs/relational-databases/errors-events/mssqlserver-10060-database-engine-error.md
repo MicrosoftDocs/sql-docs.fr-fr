@@ -6,7 +6,7 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - "10060"
 helpviewer_keywords:
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 28c21277-cad8-406c-a955-07933a56982a
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: cb6a706a664adc8dbc86760b6d5e7b519b8a192a
-ms.sourcegitcommit: 36fe62a3ccf34979bfde3e192cfa778505add465
+ms.openlocfilehash: 4dd897f705195b39a7182312e27ea5b88b2d48e8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94521206"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197515"
 ---
 # <a name="mssqlserver_10060"></a>MSSQLSERVER_10060
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

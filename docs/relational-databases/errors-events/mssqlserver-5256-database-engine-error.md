@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 5256 (Database Engine error)
 ms.assetid: 6fe254b4-2926-446f-8b20-0f1d921a4615
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 2f914049d9caca8917cbd821d0b4571fd00580e0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4322fecaf0b2aac9f17e019badd0e741e2bbc7f9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88470936"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99198081"
 ---
 # <a name="mssqlserver_5256"></a>MSSQLSERVER_5256
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

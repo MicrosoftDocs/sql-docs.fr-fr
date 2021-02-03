@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SOME
 - SOME_TSQL
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 1f717ad6-f67b-4980-9397-577ecb0e5789
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 42df6fc94ca0ca62b98156db73f3394d1850219f
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 79171692156d2abc360265b25d57a1cc0e28d3e2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095934"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99200484"
 ---
 # <a name="some--any-transact-sql"></a>SOME | ANY (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
