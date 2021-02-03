@@ -18,18 +18,18 @@ ms.assetid: 38e9bf58-10c6-46ed-83cb-e2d76cda0adc
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current||=azure-sqldw-latest
-ms.openlocfilehash: c09f7f91edf2cada0464b6cfbc1922664a86866f
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: ae34b381a6f1d46329855662d0a796ea6ab3d265
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97640996"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250189"
 ---
 # <a name="encrypt-a-column-of-data"></a>Chiffrer une colonne de données
 
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]  
 
-Cet article explique comment chiffrer une colonne de données à l’aide du chiffrement symétrique dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] avec [!INCLUDE[tsql](../../../includes/tsql-md.md)]. On parle parfois de chiffrement au niveau colonne ou au niveau cellule. Cette fonctionnalité est en préversion pour Azure Synapse Analytics.
+Cet article explique comment chiffrer une colonne de données à l’aide du chiffrement symétrique dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] avec [!INCLUDE[tsql](../../../includes/tsql-md.md)]. On parle parfois de chiffrement au niveau colonne ou au niveau cellule. Cette fonctionnalité est en préversion pour Azure Synapse Analytics.
 
 Les exemples de cet article ont été validés sur AdventureWorks2017. Pour obtenir des exemples de bases de données, consultez [Exemples de bases de données AdventureWorks](../../../samples/adventureworks-install-configure.md).
 

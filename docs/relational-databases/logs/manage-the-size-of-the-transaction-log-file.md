@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3a70e606-303f-47a8-96d4-2456a18d4297
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: e0d5c070d961e71711189b9b32ad12508812b277
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 699052eedf2a32faac9f3bf849f5f4aaa4c43b4c
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171541"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237702"
 ---
 # <a name="manage-the-size-of-the-transaction-log-file"></a>Gérer la taille du fichier journal des transactions
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -97,7 +97,7 @@ Voici une série de recommandations générales à suivre pendant l’utilisatio
   
       |Version|Valeurs par défaut|  
       |-------------|--------------------|  
-      |À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]|64 Mo de données. 64 Mo de fichiers journaux.|  
+      |À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]|64 Mo de données. 64 Mo de fichiers journaux.|  
       |À compter de [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]|1 Mo de données. 10 % de fichiers journaux.|  
       |Avant [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]|10 % de données. 10 % de fichiers journaux.|  
 

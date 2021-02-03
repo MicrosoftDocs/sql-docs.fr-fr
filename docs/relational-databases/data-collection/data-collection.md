@@ -14,25 +14,25 @@ helpviewer_keywords:
 ms.assetid: 0cc1f95c-5815-4d78-8868-a900be15e674
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: dd4827f08c9e21ccd45f128bcc64ab9e03c1474b
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 3dd72fbcc8f46f505e086043800ec68068a3cb5e
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92193419"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250101"
 ---
 # <a name="data-collection"></a>Collecte de données
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Le collecteur de données est un composant de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] qui recueille différents jeux de données. La collecte de données peut s'exécuter de façon constante ou selon une planification définie par l'utilisateur. Le collecteur de données stocke les données recueillies dans une base de données relationnelle appelée entrepôt de données de gestion.  
+  Le collecteur de données est un composant de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] qui recueille différents jeux de données. La collecte de données peut s'exécuter de façon constante ou selon une planification définie par l'utilisateur. Le collecteur de données stocke les données recueillies dans une base de données relationnelle appelée entrepôt de données de gestion.  
   
 ## <a name="what-is-data-collector"></a>Qu’est-ce que le collecteur de données ? 
- Le collecteur de données est un composant majeur de la plateforme de collecte de données pour [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et les outils fournis par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Le collecteur de données centralise la collecte de données sur vos serveurs et applications de base de données. Ce point de collecte peut obtenir des données de diverses sources et n'est pas limité aux données de performance, contrairement à SQL Trace.  
+ Le collecteur de données est un composant majeur de la plateforme de collecte de données pour [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] et les outils fournis par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Le collecteur de données centralise la collecte de données sur vos serveurs et applications de base de données. Ce point de collecte peut obtenir des données de diverses sources et n'est pas limité aux données de performance, contrairement à SQL Trace.  
   
  Le collecteur de données vous permet d'ajuster l'étendue de la collecte de données pour l'adapter à vos environnements de test et de production. Le collecteur de données utilise également un entrepôt de données, une base de données relationnelle qui vous permet de gérer les données que vous collectez en définissant pour elles différentes périodes de rétention.  
   
  Le collecteur de données prend en charge le paramétrage dynamique de la collecte de données et il est extensible via son API. Pour plus d’informations, consultez [Programmation du collecteur de données](../system-functions/data-collector-functions-transact-sql.md).  
   
- L'illustration suivante montre l'intégration du collecteur de données dans la stratégie globale de la collecte et de la gestion de données dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+ L'illustration suivante montre l'intégration du collecteur de données dans la stratégie globale de la collecte et de la gestion de données dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
   
  ![Rôle du collecteur de données dans la Gestion des données](../../relational-databases/data-collection/media/datacollectorroleindatastrategy.gif "Rôle du collecteur de données dans la Gestion des données")  
   

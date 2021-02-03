@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - EXEC
 - EXECUTE_TSQL
@@ -32,12 +32,12 @@ ms.assetid: bc806b71-cc55-470a-913e-c5f761d5c4b7
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 3ed27623969b2390f1d5b5b36b51a4c2eb5129e7
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 32a9e7f42747c6ddf5ef92f8bde260b4a0b234f0
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100407"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236011"
 ---
 # <a name="execute-transact-sql"></a>EXECUTE (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -374,7 +374,7 @@ Si vous passez un seul mot qui ne commence pas par `@` et qui n’est pas entour
  WITH \<execute_option>  
  Options d'exécution possibles. Les options RESULT SETS ne peuvent pas être spécifiées dans une instruction INSERT...EXEC.  
  
-AT DATA_SOURCE data_source_name **S’applique à** : [!INCLUDE[sssqlv15](../../includes/sssqlv15-md.md)] et versions ultérieures
+AT DATA_SOURCE data_source_name **S’applique à** : [!INCLUDE[sssql19](../../includes/sssql19-md.md)] et versions ultérieures
   
  Spécifie l’exécution de *command_string* sur *linked_server_name*. Les résultats, le cas échéant, sont renvoyés au client. *data_source_name* doit faire référence à une définition de SOURCE DE DONNÉES EXTERNE existante dans la base de données. Seules les sources de données qui pointent vers SQL Server sont prises en charge. En outre, pour le serveur SQL, les sources de données en gros cluster de données qui pointent vers un pool de calcul, un pool de données ou un pool de stockage sont prises en charge. Les sources de données sont définies à l’aide de [CRÉER UNE SOURCE DE DONNÉES EXTERNES](../statements/create-external-data-source-transact-sql.md).  
   
@@ -744,7 +744,7 @@ WITH RESULT SETS
   
  L’exemple suivant passe une chaîne de commande à une source de données externe pointant vers une instance de SQL Server. 
   
-**S’applique à** : [!INCLUDE[sssqlv15](../../includes/sssqlv15-md.md)] et ultérieur
+**S’applique à** : [!INCLUDE[sssql19](../../includes/sssql19-md.md)] et ultérieur
   
 ```sql    
 EXECUTE ( 'SELECT @@SERVERNAME' ) AT DATA_SOURCE my_sql_server;  
@@ -755,7 +755,7 @@ GO
 
  L’exemple suivant passe une chaîne de commande à une source de données externe pointant vers un pool de calcul dans SQL Server Cluster Big Data. L’exemple crée une source de données `SqlComputePool` par rapport à un pool de calcul dans SQL Server Cluster Big Data et exécute une instruction `SELECT` sur la source de données. 
   
-**S’applique à** : [!INCLUDE[sssqlv15](../../includes/sssqlv15-md.md)] et ultérieur
+**S’applique à** : [!INCLUDE[sssql19](../../includes/sssql19-md.md)] et ultérieur
   
 ```sql  
 CREATE EXTERNAL DATA SOURCE SqlComputePool 
@@ -767,7 +767,7 @@ GO
 ### <a name="q-using-execute-with-at-data_source-data_source_name-to-query-data-pool-in-sql-server-big-data-cluster"></a>Q. Utilisation de l’instruction EXECUTE avec AT DATA_SOURCE data_source_name pour interroger un pool de calcul dans SQL Server Cluster Big Data 
  L’exemple suivant passe une chaîne de commande à une source de données externe pointant vers un pool de calcul dans SQL Server Cluster Big Data. L’exemple crée une source de données `SqlDataPool` par rapport à un pool de calcul dans SQL Server Cluster Big Data et exécute une instruction `SELECT` sur la source de données. 
   
-**S’applique à** : [!INCLUDE[sssqlv15](../../includes/sssqlv15-md.md)] et ultérieur
+**S’applique à** : [!INCLUDE[sssql19](../../includes/sssql19-md.md)] et ultérieur
   
 ```sql  
 CREATE EXTERNAL DATA SOURCE SqlDataPool 
@@ -780,7 +780,7 @@ GO
 
  L’exemple suivant passe une chaîne de commande à une source de données externe pointant vers un pool de calcul dans SQL Server Cluster Big Data. L’exemple crée une source de données `SqlStoragePool` par rapport à un pool de calcul dans SQL Server Cluster Big Data et exécute une instruction `SELECT` sur la source de données. 
   
-**S’applique à** : [!INCLUDE[sssqlv15](../../includes/sssqlv15-md.md)] et ultérieur
+**S’applique à** : [!INCLUDE[sssql19](../../includes/sssql19-md.md)] et ultérieur
   
 ```sql  
 CREATE EXTERNAL DATA SOURCE SqlStoragePool

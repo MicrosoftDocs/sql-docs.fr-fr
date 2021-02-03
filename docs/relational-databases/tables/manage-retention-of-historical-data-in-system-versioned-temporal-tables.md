@@ -12,12 +12,12 @@ ms.assetid: 7925ebef-cdb1-4cfe-b660-a8604b9d2153
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: c0dac2b5d344969f96016a86622ee4e07ab8c23d
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 2e37f8234a1b8ee2ab72c76a423ea72ac9d3f14a
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98168067"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99235830"
 ---
 # <a name="manage-retention-of-historical-data-in-system-versioned-temporal-tables"></a>Gérer la conservation des données d’historique dans les tables temporelles versionnées par le système
 
@@ -51,9 +51,9 @@ Une fois la période de rétention de données déterminée, l’étape suivante
 ## <a name="using-stretch-database-approach"></a>Utilisation de la méthode stretch database
 
 > [!NOTE]
-> La méthode Stretch Database vaut uniquement pour [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et ne s’applique pas à [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].
+> La méthode Stretch Database vaut uniquement pour [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] et ne s’applique pas à [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].
 
-[Stretch Database](../../sql-server/stretch-database/stretch-database.md) de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] migre vos données d’historique en toute transparence vers Azure. Pour renforcer la sécurité, vous pouvez chiffrer les données en mouvement à l’aide de la fonctionnalité [Always Encrypted](../security/encryption/always-encrypted-database-engine.md) de SQL Server. De plus, vous pouvez utiliser la [sécurité au niveau des lignes](../../relational-databases/security/row-level-security.md) et les autres fonctionnalités de sécurité avancée de SQL Server avec Temporal et Stretch Database pour protéger vos données.
+[Stretch Database](../../sql-server/stretch-database/stretch-database.md) de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] migre vos données d’historique en toute transparence vers Azure. Pour renforcer la sécurité, vous pouvez chiffrer les données en mouvement à l’aide de la fonctionnalité [Always Encrypted](../security/encryption/always-encrypted-database-engine.md) de SQL Server. De plus, vous pouvez utiliser la [sécurité au niveau des lignes](../../relational-databases/security/row-level-security.md) et les autres fonctionnalités de sécurité avancée de SQL Server avec Temporal et Stretch Database pour protéger vos données.
 
 La méthode Stretch Database vous permet d’étendre tout ou partie des tables d’historique temporelles vers Azure. SQL Server déplace alors discrètement les données d’historique vers Azure. Le fait d’activer Strech pour une table d’historique ne change rien à la façon dont vous interagissez avec la table temporelle en termes de modification des données et d’interrogation temporelle.
 
@@ -70,7 +70,7 @@ Vous pouvez configurer une table d’historique temporelle pour Stretch à l’a
 
 ### <a name="using-the-stretch-wizard-to-stretch-the-entire-history-table"></a>Étendre l’ensemble de la table d’historique à l’aide de l’Assistant Stretch
 
-Pour les débutants, la méthode la plus simple consiste à utiliser l’Assistant Stretch pour activer Stretch pour la base de données entière, puis à sélectionner la table d’historique temporelle dans l’Assistant Stretch (cet exemple part du principe que vous avez configuré la table Department en tant que table temporelle avec versions gérées par le système dans une base de données autrement vide). Dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], vous ne pouvez pas cliquer avec le bouton droit sur la table d’historique temporelle proprement dite et cliquer sur Stretch.
+Pour les débutants, la méthode la plus simple consiste à utiliser l’Assistant Stretch pour activer Stretch pour la base de données entière, puis à sélectionner la table d’historique temporelle dans l’Assistant Stretch (cet exemple part du principe que vous avez configuré la table Department en tant que table temporelle avec versions gérées par le système dans une base de données autrement vide). Dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], vous ne pouvez pas cliquer avec le bouton droit sur la table d’historique temporelle proprement dite et cliquer sur Stretch.
 
 1. Cliquez avec le bouton droit sur votre base de données et pointez sur **Tâches**, sur **Stretch**, puis cliquez sur **Activer** pour lancer l’Assistant.
 2. Dans la fenêtre **Sélectionner des tables** , cochez la case de la table d’historique temporelle et cliquez sur Suivant.

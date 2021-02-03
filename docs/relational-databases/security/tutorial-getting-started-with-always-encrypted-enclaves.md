@@ -13,12 +13,12 @@ ms.topic: tutorial
 author: jaszymas
 ms.author: jaszymas
 monikerRange: '>= sql-server-ver15'
-ms.openlocfilehash: 08e7674819e4dc52a8613e39d1f8ec82a42abc05
-ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
+ms.openlocfilehash: 2334a132c8d2b56f0eaf0909b9f83544cb6e0af5
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98534718"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236512"
 ---
 # <a name="tutorial-getting-started-with-always-encrypted-with-secure-enclaves-in-sql-server"></a>Tutoriel : Bien démarrer avec Always Encrypted avec enclaves sécurisées dans SQL Server
 [!INCLUDE [sqlserver2019-windows-only](../../includes/applies-to-version/sqlserver2019-windows-only.md)]
@@ -38,7 +38,7 @@ Pour bien démarrer avec Always Encrypted avec enclaves sécurisées, vous avez 
 
 ### <a name="sql-server-computer-requirements"></a>Configuration requise de l’ordinateur SQL Server
 
-- [!INCLUDE [sssqlv15-md](../../includes/sssqlv15-md.md)] ou une version ultérieure.
+- [!INCLUDE [sssql19-md](../../includes/sssql19-md.md)] ou une version ultérieure.
 - Windows 10 Entreprise version 1809 ou ultérieure , ou Windows Server 2019 Édition Datacenter. Les autres éditions de Windows 10 et de Windows Server ne prennent pas en charge l’attestation avec le Service Guardian hôte.
 - Prise en charge du processeur pour les technologies de virtualisation :
   - Intel VT-x avec Extended Page Tables.

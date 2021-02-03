@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: 14bdbbbe-d384-4692-b670-4243d2466fe1
 author: jaszymas
 ms.author: jaszymas
-ms.openlocfilehash: b4e2d053a232d374360177159cb3b97785f73a4f
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 8df8f8a8a01b8ade5372147f274d329baf346ffd
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85898019"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250169"
 ---
 # <a name="restore-the-service-master-key"></a>Restaurer la clé principale du service
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique explique comment restaurer la clé principale de service dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
+  Cette rubrique explique comment restaurer la clé principale de service dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
   
 > [!WARNING]  
 > Il est peu probable que vous ayez jamais à restaurer cette clé. Si vous deviez le faire, observez la plus grande prudence. Pour plus d’informations, consultez [Back Up the Service Master Key](../../../relational-databases/security/encryption/back-up-the-service-master-key.md).  

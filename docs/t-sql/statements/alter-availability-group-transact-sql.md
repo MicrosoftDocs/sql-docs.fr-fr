@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_AVAILABILITY_GROUP_TSQL
 - ALTER_AVAILABILITY_TSQL
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: f039d0de-ade7-4aaf-8b7b-d207deb3371a
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 23cd700fd8b25778118b2141bf0205dcbd87c92e
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: dc5c1829eaa8be1116c07ae8f4cc3e6d80501f60
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170461"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237865"
 ---
 # <a name="alter-availability-group-transact-sql"></a>ALTER AVAILABILITY GROUP (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -228,10 +228,10 @@ ALTER AVAILABILITY GROUP group_name
  Pour plus d’informations sur ce paramètre, consultez [Option de détection de l’état d’intégrité au niveau base de données](../../database-engine/availability-groups/windows/sql-server-always-on-database-health-detection-failover-option.md) 
 
 DTC_SUPPORT  **=** { PER_DB | NONE }  
-Spécifie si les transactions distribuées sont activées pour ce groupe de disponibilité. Les transactions distribuées sont uniquement prises en charge pour les bases de données de groupe de disponibilité à compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], et les transactions entre bases de données sont uniquement prises en charge dans [!INCLUDE[ssSQL16](../../includes/sssql16-md.md)] SP2. `PER_DB` crée le groupe de disponibilité avec prise en charge de ces transactions, et promeut automatiquement les transactions entre bases de données impliquant des bases de données dans le groupe de disponibilité dans des transactions distribuées. `NONE` empêche la promotion automatique des transactions entre bases de données en transactions distribuées, et n’inscrit pas la base de données avec un RMID stable dans DTC. Les transactions distribuées ne sont pas bloquées quand le paramètre `NONE` est utilisé, mais le basculement et la récupération automatique de base de données risquent d’échouer dans certaines circonstances. Pour plus d’informations, consultez [Transactions entre bases de données et transactions distribuées pour des groupes de disponibilité Always On et la mise en miroir de bases de données &#40;SQL Server&#41;](../../database-engine/availability-groups/windows/transactions-always-on-availability-and-database-mirroring.md). 
+Spécifie si les transactions distribuées sont activées pour ce groupe de disponibilité. Les transactions distribuées sont uniquement prises en charge pour les bases de données de groupe de disponibilité à compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], et les transactions entre bases de données sont uniquement prises en charge dans [!INCLUDE[ssSQL16](../../includes/sssql16-md.md)] SP2. `PER_DB` crée le groupe de disponibilité avec prise en charge de ces transactions, et promeut automatiquement les transactions entre bases de données impliquant des bases de données dans le groupe de disponibilité dans des transactions distribuées. `NONE` empêche la promotion automatique des transactions entre bases de données en transactions distribuées, et n’inscrit pas la base de données avec un RMID stable dans DTC. Les transactions distribuées ne sont pas bloquées quand le paramètre `NONE` est utilisé, mais le basculement et la récupération automatique de base de données risquent d’échouer dans certaines circonstances. Pour plus d’informations, consultez [Transactions entre bases de données et transactions distribuées pour des groupes de disponibilité Always On et la mise en miroir de bases de données &#40;SQL Server&#41;](../../database-engine/availability-groups/windows/transactions-always-on-availability-and-database-mirroring.md). 
  
 > [!NOTE]
-> La prise en charge de la modification du paramètre DTC_SUPPORT d’un groupe de disponibilité a été introduite dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] Service Pack 2. Vous ne pouvez pas utiliser cette option avec les versions antérieures. Pour modifier ce paramètre dans les versions antérieures de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], vous devez supprimer puis recréer le groupe de disponibilité.
+> La prise en charge de la modification du paramètre DTC_SUPPORT d’un groupe de disponibilité a été introduite dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] Service Pack 2. Vous ne pouvez pas utiliser cette option avec les versions antérieures. Pour modifier ce paramètre dans les versions antérieures de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], vous devez supprimer puis recréer le groupe de disponibilité.
  
  REQUIRED_SYNCHRONIZED_SECONDARIES_TO_COMMIT   
  Introduite dans SQL Server 2017. Utilisé pour définir un nombre minimal de réplicas secondaires synchrones nécessaires à la validation avant que le réplica principal ne valide une transaction. Garantit que la transaction SQL Server attend que les journaux des transactions soient mis à jour avec le nombre minimal de réplicas secondaires. La valeur par défaut est 0, ce qui donne le même comportement que SQL Server 2016. La valeur minimale est 0. La valeur maximale est le nombre de réplicas moins 1. Cette option se rapporte aux réplicas en mode de validation synchrone. Quand les réplicas sont en mode de validation synchrone, les écritures sur le réplica principal attend que les écritures sur les réplicas secondaires synchrones soient validées dans le journal des transactions de la base de données de réplica. Si un serveur SQL Server qui héberge un réplica synchrone secondaire cesse de répondre, le serveur SQL qui héberge le réplica principal marque ce réplica secondaire comme NOT SYNCHRONIZED et poursuit. Quand la base de données qui ne répond pas revient en ligne, elle est dans un état « non synchronisé » et le réplica est marqué comme non sain tant que le réplica principal ne l’a pas rendu à nouveau synchrone. Ce paramètre garantit que le réplica principal attend que le nombre minimal de réplicas aient validé chaque transaction. Si le nombre minimal de réplicas n’est pas disponible, les validations sur le réplica principal échouent. Pour le type de cluster `EXTERNAL`, le paramètre est modifié quand le groupe de disponibilité est ajouté à une ressource de cluster. Consultez [Haute disponibilité et protection des données pour les configurations des groupes de disponibilité](../../linux/sql-server-linux-availability-group-ha.md).
@@ -406,7 +406,7 @@ Spécifie si les transactions distribuées sont activées pour ce groupe de disp
   
  Utilisez une liste séparée par des virgules pour spécifier toutes les instances de serveur qui peuvent héberger un réplica secondaire lisible. Le routage en lecture seule suivra l'ordre dans lequel les instances de serveur sont spécifiées dans la liste. Si vous incluez l'instance de serveur hôte d'un réplica dans la liste de routage en lecture seule du réplica, il est généralement recommandé d'insérer cette instance de serveur à la fin de la liste, afin que les connexions de tentative de lecture soient dirigées vers un réplica secondaire (le cas échéant).  
   
- Depuis [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], vous pouvez équilibrer la charge des demandes d’intention de lecture entre les réplicas secondaires lisibles. Vous le spécifiez en plaçant les réplicas dans un jeu imbriqué de parenthèses dans la liste de routage en lecture seule. Pour plus d’informations et des exemples, consultez [Configurer l’équilibrage de charge entre des réplicas en lecture seule](../../database-engine/availability-groups/windows/configure-read-only-routing-for-an-availability-group-sql-server.md#loadbalancing).  
+ Depuis [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], vous pouvez équilibrer la charge des demandes d’intention de lecture entre les réplicas secondaires lisibles. Vous le spécifiez en plaçant les réplicas dans un jeu imbriqué de parenthèses dans la liste de routage en lecture seule. Pour plus d’informations et des exemples, consultez [Configurer l’équilibrage de charge entre des réplicas en lecture seule](../../database-engine/availability-groups/windows/configure-read-only-routing-for-an-availability-group-sql-server.md#loadbalancing).  
   
  Aucune  
  Spécifie que lorsque ce réplica de disponibilité est le réplica principal, le routage en lecture seule ne sera pas pris en charge. Il s'agit du comportement par défaut. Lorsqu'elle est utilisée avec MODIFY REPLICA ON, cette valeur désactive une liste existante (le cas échéant).  

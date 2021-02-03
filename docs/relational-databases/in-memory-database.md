@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 11f8017e-5bc3-4bab-8060-c16282cfbac1
 author: briancarrig
 ms.author: brcarrig
-ms.openlocfilehash: 88f965eadf0defbd75c859fa2308dd255f5c1486
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6625022360c93da5cbc43224572908738f6d430c
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88470425"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236448"
 ---
 # <a name="in-memory-database-systems-and-technologies"></a>Technologies des systèmes de base de données en mémoire
 
@@ -39,13 +39,13 @@ Pour les charges de travail de bases de données relationnelles, c’est un cach
 
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]
 
-Le [pool de mémoires tampons hybride](../database-engine/configure-windows/hybrid-buffer-pool.md) étend le pool de mémoires tampons des fichiers de base de données résidant sur des supports de stockage à mémoire persistante adressables par octets, aussi bien pour les plateformes Windows que pour les plateformes Linux avec [!INCLUDE[sql-server-2019](../includes/sssqlv15-md.md)].
+Le [pool de mémoires tampons hybride](../database-engine/configure-windows/hybrid-buffer-pool.md) étend le pool de mémoires tampons des fichiers de base de données résidant sur des supports de stockage à mémoire persistante adressables par octets, aussi bien pour les plateformes Windows que pour les plateformes Linux avec [!INCLUDE[sql-server-2019](../includes/sssql19-md.md)].
 
 ## <a name="memory-optimized-tempdb-metadata"></a>Métadonnée `tempdb` à mémoire optimisée
 
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]
 
-[!INCLUDE[sql-server-2019](../includes/sssqlv15-md.md)] introduit une nouvelle fonctionnalité, les [métadonnées tempdb à mémoire optimisée](./databases/tempdb-database.md#memory-optimized-tempdb-metadata), qui supprime efficacement certains goulots de contention et déverrouille un nouveau niveau de scalabilité pour les charges de travail de base de données tempdb lourdes.
+[!INCLUDE[sql-server-2019](../includes/sssql19-md.md)] introduit une nouvelle fonctionnalité, les [métadonnées tempdb à mémoire optimisée](./databases/tempdb-database.md#memory-optimized-tempdb-metadata), qui supprime efficacement certains goulots de contention et déverrouille un nouveau niveau de scalabilité pour les charges de travail de base de données tempdb lourdes.
 
 ## <a name="in-memory-oltp"></a>OLTP en mémoire
 
@@ -57,7 +57,7 @@ L’[OLTP en mémoire](./in-memory-oltp/in-memory-oltp-in-memory-optimization.md
 
 [!INCLUDE [SQL Server - Linux](../includes/applies-to-version/sql-linux.md)]
 
-[!INCLUDE[sqlv15](../includes/sssqlv15-md.md)] explique comment configurer la mémoire persistante (PMEM) à l’aide de la [mémoire persistante](../linux/sql-server-linux-configure-pmem.md) de l’utilitaire `ndctl`.
+[!INCLUDE[sqlv15](../includes/sssql19-md.md)] explique comment configurer la mémoire persistante (PMEM) à l’aide de la [mémoire persistante](../linux/sql-server-linux-configure-pmem.md) de l’utilitaire `ndctl`.
 
 ## <a name="persisted-log-buffer"></a>Mémoire tampon du journal persistant
 

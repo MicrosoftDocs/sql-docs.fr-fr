@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP PROCEDURE
 - DROP_PROCEDURE_TSQL
@@ -26,17 +26,17 @@ ms.assetid: 1c2d7235-7b9b-4336-8f17-429e7d82c2c3
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 3915bf9f19396c8cc55179861e23052f25886b20
-ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
+ms.openlocfilehash: 438738baa1734e38a06eecebb6a2cfbc8a97f026
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98689046"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237009"
 ---
 # <a name="drop-procedure-transact-sql"></a>DROP PROCEDURE (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-  Supprime une ou plusieurs procédures stockées ou un ou plusieurs groupes de procédures de la base de données active dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+  Supprime une ou plusieurs procédures stockées ou un ou plusieurs groupes de procédures de la base de données active dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
   
  ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -58,7 +58,7 @@ DROP { PROC | PROCEDURE } { [ schema_name. ] procedure_name }
 
 ## <a name="arguments"></a>Arguments
  *IF EXISTS*  
- **S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md)).  
+ **S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] à la [version actuelle](/troubleshoot/sql/general/determine-version-edition-update-level)).  
   
  Supprime, de manière conditionnelle, la procédure uniquement si elle existe déjà.  
   
@@ -93,7 +93,7 @@ GO
 DROP PROCEDURE dbo.uspGetSalesbyMonth, dbo.uspUpdateSalesQuotes, dbo.uspGetSalesByYear;  
 ```  
   
- L’exemple suivant supprime la procédure stockée `dbo.uspMyProc` si elle existe, mais ne génère pas d’erreur si elle n’existe pas. Cette syntaxe est une nouveauté de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)].  
+ L’exemple suivant supprime la procédure stockée `dbo.uspMyProc` si elle existe, mais ne génère pas d’erreur si elle n’existe pas. Cette syntaxe est une nouveauté de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)].  
   
 ```sql  
 DROP PROCEDURE IF EXISTS dbo.uspMyProc;  

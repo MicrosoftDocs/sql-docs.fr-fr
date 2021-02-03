@@ -19,23 +19,23 @@ helpviewer_keywords:
 ms.assetid: a4e3226a-3917-4ec8-bdf0-472879d231c9
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 5b83b5781d8c40c0acc6ee79ab0730c249def7c5
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: da72d129bac65b1b9210e49d33782b257ea9e182
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172521"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236425"
 ---
 # <a name="start-and-use-the-database-engine-tuning-advisor"></a>Démarrer et utiliser l'Assistant Paramétrage du moteur de base de données
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique décrit comment démarrer et utiliser l'Assistant Paramétrage du moteur de base de données dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Pour plus d’informations sur l’affichage et l’utilisation des résultats après avoir paramétré une base de données, consultez [Afficher et utiliser la sortie de l’Assistant Paramétrage du moteur de base de données](../../relational-databases/performance/view-and-work-with-the-output-from-the-database-engine-tuning-advisor.md).  
+  Cette rubrique décrit comment démarrer et utiliser l'Assistant Paramétrage du moteur de base de données dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. Pour plus d’informations sur l’affichage et l’utilisation des résultats après avoir paramétré une base de données, consultez [Afficher et utiliser la sortie de l’Assistant Paramétrage du moteur de base de données](../../relational-databases/performance/view-and-work-with-the-output-from-the-database-engine-tuning-advisor.md).  
   
 ##  <a name="initialize-the-database-engine-tuning-advisor"></a><a name="Initialize"></a> Initialiser l'Assistant Paramétrage du moteur de base de données  
  Pour la première utilisation, un utilisateur membre du rôle serveur fixe **sysadmin** doit initialiser l'Assistant Paramétrage du moteur de base de données. Cela est dû au fait que plusieurs tables système doivent être créées dans la base de données **msdb** pour prendre en charge les opérations de paramétrage. L’initialisation permet aussi aux utilisateurs membres du rôle de base de données fixe **db_owner** de paramétrer des charges de travail sur les tables des bases de données dont ils sont propriétaires.  
   
  Un utilisateur disposant d'autorisations d'administrateur système doit exécuter l'une des actions suivantes :  
   
--   Utiliser l'interface utilisateur graphique de l'Assistant Paramétrage du moteur de base de données pour se connecter à une instance de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Pour plus d'informations, consultez [Démarrer l'Assistant Paramétrage du moteur de base de données](#Start) plus loin dans cette rubrique.  
+-   Utiliser l'interface utilisateur graphique de l'Assistant Paramétrage du moteur de base de données pour se connecter à une instance de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. Pour plus d'informations, consultez [Démarrer l'Assistant Paramétrage du moteur de base de données](#Start) plus loin dans cette rubrique.  
   
 -   Recourir à l’utilitaire **dta** pour paramétrer la première charge de travail. Pour plus d'informations, consultez [Utilisation de l'utilitaire dta](#dta) , plus loin dans cette rubrique.  
   
@@ -72,7 +72,7 @@ ms.locfileid: "98172521"
 
       ||  
       |-|  
-      |**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.|  
+      |**S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures.|  
 
   
 -   Utilisez le cache du plan comme charge de travail. Vous pouvez ainsi éviter d'avoir à créer manuellement une charge de travail. Pour plus d'informations, consultez [Paramétrer une base de données](#Tune) , plus loin dans cette rubrique.  

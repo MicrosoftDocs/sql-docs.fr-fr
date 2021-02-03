@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 17a81fcd-8dbd-458d-a9c7-2b5209062f45
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 63e2f722305c2af448be7d49868eef72d1a9fb8d
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 1b484ea7b300fe53983dd26c5f7644abbebd2ca2
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172691"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236819"
 ---
 # <a name="file-snapshot-backups-for-database-files-in-azure"></a>Sauvegarde d’instantanés de fichiers pour les fichiers de base de données dans Azure
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "98172691"
   
  **Télécharger**  
   
--   Pour télécharger [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], accédez au  **[Centre d’évaluation](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016)** .  
+-   Pour télécharger [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], accédez au  **[Centre d’évaluation](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016)** .  
   
--   Vous avez un compte Azure ?  Cliquez **[ici](https://azure.microsoft.com/services/virtual-machines/sql-server/)** pour lancer une machine virtuelle déjà équipée de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] .  
+-   Vous avez un compte Azure ?  Cliquez **[ici](https://azure.microsoft.com/services/virtual-machines/sql-server/)** pour lancer une machine virtuelle déjà équipée de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] .  
   
 ## <a name="using-azure-snapshots-to-back-up-database-files-stored-in-azure"></a>Utilisation d’instantanés Azure pour sauvegarder des fichiers de base de données stockés dans Azure  
   

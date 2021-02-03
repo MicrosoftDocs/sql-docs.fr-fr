@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.assetid: 81ee5637-ee31-4c4d-96d0-56c26a742354
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: a33a9bfe6409c08eba3d3f212c95619634699a55
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 038cb4e80af0423a5581ef2b7b51c1bbc54bb5cc
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480540"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237628"
 ---
 # <a name="nchar-and-nvarchar-transact-sql"></a>nchar et nvarchar (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -53,7 +53,7 @@ Les objets qui utilisent **nchar** ou **nvarchar** reçoivent le classement par 
   
 SET ANSI_PADDING a toujours la valeur ON pour **nchar** et **nvarchar**. SET ANSI_PADDING OFF ne s’applique pas aux types de données **nchar** ni **nvarchar**.
   
-Préfixer une constante de chaîne de caractères Unicode avec la lettre N pour signaler une entrée UCS-2 ou UTF-16, selon qu'un classement SC est utilisé ou non. Sans le préfixe N, la chaîne est convertie en page de codes par défaut de la base de données et ne reconnaîtra peut-être pas certains caractères. En commençant par [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], lorsqu’un classement prenant en charge UTF-8 est utilisé, la page de codes par défaut est capable de stocker le jeu de caractères UNICODE UTF-8. 
+Préfixer une constante de chaîne de caractères Unicode avec la lettre N pour signaler une entrée UCS-2 ou UTF-16, selon qu'un classement SC est utilisé ou non. Sans le préfixe N, la chaîne est convertie en page de codes par défaut de la base de données et ne reconnaîtra peut-être pas certains caractères. En commençant par [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], lorsqu’un classement prenant en charge UTF-8 est utilisé, la page de codes par défaut est capable de stocker le jeu de caractères UNICODE UTF-8. 
  
 > [!NOTE]  
 > Lorsque vous préfixez une constante de chaîne avec la lettre N, la conversion implicite donnera une chaîne UCS-2 ou UTF-16 si la constante à convertir ne dépasse pas la longueur maximale pour le type de données de chaîne nvarchar (4 000). Sinon, la conversion implicite génère un nvarchar(max) de valeur élevée.

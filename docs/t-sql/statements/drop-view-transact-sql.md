@@ -1,13 +1,13 @@
 ---
 description: DROP VIEW (Transact-SQL)
-title: DROP VIEW (Transact-SQL) | Microsoft Docs
+title: DROP VIEW (Transact-SQL)
 ms.custom: ''
 ms.date: 01/19/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP_VIEW_TSQL
 - DROP VIEW
@@ -20,16 +20,15 @@ helpviewer_keywords:
 - indexed views [SQL Server], removing
 - views [SQL Server], removing
 - removing views
-ms.assetid: 03cea355-e39c-46e1-b7db-8832038669dd
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: eb57746700a3e5fc6b48fb4dc4032e1d92e6ddb9
-ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
+ms.openlocfilehash: 155fd3d006d558cba685f520f7cf09e9ee69b732
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98689002"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236957"
 ---
 # <a name="drop-view-transact-sql"></a>DROP VIEW (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -62,7 +61,7 @@ DROP VIEW [ schema_name . ] view_name [ ; ]
 
 ## <a name="arguments"></a>Arguments
  *IF EXISTS*  
- **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] jusqu’à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md)), [!INCLUDE[sssds](../../includes/sssds-md.md)].|  
+ **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] jusqu’à la [version actuelle](/troubleshoot/sql/general/determine-version-edition-update-level), [!INCLUDE[sssds](../../includes/sssds-md.md)]).  
   
  Supprime, de manière conditionnelle, la vue uniquement si elle existe déjà.  
   

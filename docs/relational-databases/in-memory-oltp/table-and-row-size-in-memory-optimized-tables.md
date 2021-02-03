@@ -12,17 +12,17 @@ ms.assetid: b0a248a4-4488-4cc8-89fc-46906a8c24a1
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: ddc8c6bf630994b66ecd2977edc44bec888a0e8e
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 733b2ba63ba6236ae1df955dafd31ce18260214c
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172671"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237546"
 ---
 # <a name="table-and-row-size-in-memory-optimized-tables"></a>Taille de la table et des lignes dans les tables optimisées en mémoire
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
-Avant [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], la taille des données dans la ligne d’une table à mémoire optimisée ne pouvait pas être supérieure à [8 060 octets](?viewFallbackFrom=sql-server-2014). Toutefois, à compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et dans Azure SQL Database, il est désormais possible de créer une table à mémoire optimisée avec plusieurs colonnes volumineuses (par exemple, plusieurs colonnes varbinary(8000)) et colonnes LOB (c'est-à-dire, varbinary(max), varchar(max) et nvarchar(max)) et d’effectuer des opérations dessus à l’aide de modules T-SQL compilés en mode natif et des types de table. 
+Avant [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], la taille des données dans la ligne d’une table à mémoire optimisée ne pouvait pas être supérieure à [8 060 octets](?viewFallbackFrom=sql-server-2014). Toutefois, à compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et dans Azure SQL Database, il est désormais possible de créer une table à mémoire optimisée avec plusieurs colonnes volumineuses (par exemple, plusieurs colonnes varbinary(8000)) et colonnes LOB (c'est-à-dire, varbinary(max), varchar(max) et nvarchar(max)) et d’effectuer des opérations dessus à l’aide de modules T-SQL compilés en mode natif et des types de table. 
   
 Les colonnes qui ne cadrent pas avec la limite de taille de ligne de 8 060 octets sont déplacées des lignes vers une table interne. À chaque colonne hors ligne correspond une table interne correspondante, qui à son tour possède un index unique non cluster. Pour plus d’informations sur ces tables internes utilisées pour des colonnes hors ligne, consultez [sys.memory_optimized_tables_internal_attributes &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-memory-optimized-tables-internal-attributes-transact-sql.md). 
  

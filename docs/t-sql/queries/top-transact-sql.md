@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - TOP_TSQL
 - TOP
@@ -22,17 +22,17 @@ ms.assetid: da983c0a-06c5-4cf8-a6a4-7f9d66f34f2c
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: eb6024d0ad3ef6f34d170201c0fbacc3447dab26
-ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
+ms.openlocfilehash: d007bd92518d4ce5f898c400bad53f09d2e93642
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98783585"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237789"
 ---
 # <a name="top-transact-sql"></a>TOP (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-Limite les lignes retournées dans un jeu de résultats de la requête à un nombre spécifié de lignes ou à un pourcentage de lignes dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Lorsque vous utilisez TOP avec la clause ORDER BY, les résultats sont limités aux *N* premières lignes ordonnées. Sinon, TOP retourne les *N* premières lignes dans un ordre non défini. Utilisez cette clause pour spécifier le nombre de lignes retournées par une instruction SELECT. Vous pouvez également utiliser TOP pour spécifier les lignes affectées par une instruction INSERT, UPDATE, MERGE ou DELETE.  
+Limite les lignes retournées dans un jeu de résultats de la requête à un nombre spécifié de lignes ou à un pourcentage de lignes dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. Lorsque vous utilisez TOP avec la clause ORDER BY, les résultats sont limités aux *N* premières lignes ordonnées. Sinon, TOP retourne les *N* premières lignes dans un ordre non défini. Utilisez cette clause pour spécifier le nombre de lignes retournées par une instruction SELECT. Vous pouvez également utiliser TOP pour spécifier les lignes affectées par une instruction INSERT, UPDATE, MERGE ou DELETE.  
   
 ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   

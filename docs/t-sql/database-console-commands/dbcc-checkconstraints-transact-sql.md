@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: da6c9cee-6687-46e8-b504-738551f9068b
 author: pmasl
 ms.author: umajay
-ms.openlocfilehash: a0257d403980bcb869a7ac1e06471cd1699dd16d
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 66b0b155d8fb3bc6c35292469edd4fa40a6ce21f
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170601"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237287"
 ---
 # <a name="dbcc-checkconstraints-transact-sql"></a>DBCC CHECKCONSTRAINTS (Transact-SQL)
 
@@ -92,7 +92,7 @@ WHERE <table_being_checked.fkey1> IS NOT NULL
 Les données de la requête sont stockées dans une table temporaire. Une fois que toutes les tables ou les contraintes demandées ont été vérifiées, le jeu de résultats est renvoyé.
 DBCC CHECKCONSTRAINTS vérifie l'intégrité des contraintes FOREIGN KEY et CHECK, mais ne vérifie pas celle des structures de données sur disque d'une table. Ces vérifications de structures de données peuvent être effectuées à l’aide de [DBCC CHECKDB](../../t-sql/database-console-commands/dbcc-checkdb-transact-sql.md) et de [DBCC CHECKTABLE](../../t-sql/database-console-commands/dbcc-checktable-transact-sql.md).
   
-**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et ultérieur
+**S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et ultérieur
   
 Si *table_name* ou *table_id* est spécifié et activé pour la gestion système des versions, DBCC CHECKCONSTRAINTS effectue également des vérifications de cohérence des données temporelles sur la table spécifiée. Quand *NO_INFOMSGS* n’est pas spécifié, cette commande retourne chaque violation de cohérence dans la sortie sur une ligne distincte. Le format de la sortie sera ([pkcol1], [pkcol2]..) = (\<pkcol1_value>, \<pkcol2_value>...) AND \<what is wrong with temporal table record>.
   

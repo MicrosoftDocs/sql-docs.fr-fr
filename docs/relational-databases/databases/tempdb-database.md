@@ -16,12 +16,12 @@ ms.assetid: ce4053fb-e37a-4851-b711-8e504059a780
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 910db0887a50e12163ddeda927159f5e6c97b74b
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 87ea13391e0495c695ccc057e842e2f6ef0c6e19
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98169277"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237946"
 ---
 # <a name="tempdb-database"></a>base de données tempdb
 
@@ -213,7 +213,7 @@ Placez la base de données `tempdb` sur un sous-système d’E/S rapide. Si plus
 Placez la base de données `tempdb` sur des disques différents de ceux que les bases de données utilisateur emploient.
 
 ## <a name="performance-improvements-in-tempdb-for-sql-server"></a>Amélioration des performances dans tempdb pour SQL Server
-À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], les performances de `tempdb` sont optimisées de la façon suivante :  
+À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], les performances de `tempdb` sont optimisées de la façon suivante :  
   
 - Les tables temporaires et les variables de table sont mises en cache. La mise en cache permet aux opérations de création et de suppression des objets temporaires de s'exécuter très rapidement. La mise en cache réduit également l’allocation de pages et les conflits de métadonnées.  
 - Le protocole de verrouillage des pages d’allocation a été amélioré pour réduire le nombre de verrous `UP` (update) utilisés.  
@@ -226,9 +226,9 @@ Placez la base de données `tempdb` sur des disques différents de ceux que les 
 Pour plus d’informations sur les améliorations des performances dans `tempdb`, consultez l’article de blog [TEMPDB – Fichiers, indicateurs de traces et mises à jour, Oh My !](/archive/blogs/sql_server_team/tempdb-files-and-trace-flags-and-updates-oh-my).
 
 ## <a name="memory-optimized-tempdb-metadata"></a>Métadonnées tempdb à mémoire optimisée
-La contention de métadonnées dans `tempdb` a toujours été un goulot d’étranglement pour la scalabilité de nombreuses charges de travail s’exécutant sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] introduit une nouvelle fonctionnalité qui fait partie de la famille de fonctionnalités [base de données en mémoire](../in-memory-database.md) : métadonnées tempdb à mémoire optimisée. 
+La contention de métadonnées dans `tempdb` a toujours été un goulot d’étranglement pour la scalabilité de nombreuses charges de travail s’exécutant sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] introduit une nouvelle fonctionnalité qui fait partie de la famille de fonctionnalités [base de données en mémoire](../in-memory-database.md) : métadonnées tempdb à mémoire optimisée. 
 
-Cette fonctionnalité supprime efficacement ce goulot d’étranglement et déverrouille un nouveau niveau d’évolutivité pour les charges de travail lourdes dans tempdb. Dans [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], les tables système impliquées dans la gestion des métadonnées de table temporaire peuvent être déplacées dans des tables à mémoire optimisée non durables, dépourvues de verrous.
+Cette fonctionnalité supprime efficacement ce goulot d’étranglement et déverrouille un nouveau niveau d’évolutivité pour les charges de travail lourdes dans tempdb. Dans [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], les tables système impliquées dans la gestion des métadonnées de table temporaire peuvent être déplacées dans des tables à mémoire optimisée non durables, dépourvues de verrous.
 
 Regardez cette vidéo de sept minutes pour obtenir une vue d’ensemble des scénarios et du mode d’utilisation des métadonnées tempdb à mémoire optimisée :
 

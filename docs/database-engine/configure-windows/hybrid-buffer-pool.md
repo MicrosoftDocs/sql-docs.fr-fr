@@ -12,17 +12,17 @@ ms.assetid: ''
 author: briancarrig
 ms.author: brcarrig
 manager: amitban
-ms.openlocfilehash: 73f4abc0c1b2a7cd6943ab6b216133812c145d19
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: ccf508d0415bc6baabc9c054a95ec26cf7989880
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85772424"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236520"
 ---
 # <a name="hybrid-buffer-pool"></a>Pool de mémoires tampons hybride
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-Le pool de mémoires tampons hybride permet aux objets de pool de mémoires tampons de référencer des pages de données dans des fichiers de base de données résidant sur des appareils de mémoire persistante (PMEM), au lieu des copies des pages de données mises en cache dans la DRAM volatile. Cette fonctionnalité est introduite dans [!INCLUDE[sqlv15](../../includes/sssqlv15-md.md)].
+Le pool de mémoires tampons hybride permet aux objets de pool de mémoires tampons de référencer des pages de données dans des fichiers de base de données résidant sur des appareils de mémoire persistante (PMEM), au lieu des copies des pages de données mises en cache dans la DRAM volatile. Cette fonctionnalité est introduite dans [!INCLUDE[sqlv15](../../includes/sssql19-md.md)].
 
 ![Pool de mémoires tampons hybride](./media/hybrid-buffer-pool.png)
 
@@ -42,7 +42,7 @@ Pour plus d'informations, consultez les pages suivantes :
 
 ## <a name="enable-hybrid-buffer-pool"></a>Activer le pool de mémoires tampons hybride
 
-[!INCLUDE[sqlv15](../../includes/sssqlv15-md.md)] introduit un langage dynamique de données (DDL) permettant de contrôler le pool de mémoires tampons hybride.
+[!INCLUDE[sqlv15](../../includes/sssql19-md.md)] introduit un langage dynamique de données (DDL) permettant de contrôler le pool de mémoires tampons hybride.
 
 L’exemple suivant active le pool de mémoires tampons hybride pour une instance de SQL Server :
 

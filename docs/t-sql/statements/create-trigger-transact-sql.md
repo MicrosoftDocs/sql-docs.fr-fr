@@ -5,7 +5,7 @@ ms.date: 10/30/2019
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CREATE TRIGGER
 - TRIGGER
@@ -28,12 +28,12 @@ ms.assetid: edeced03-decd-44c3-8c74-2c02f801d3e7
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 ms.reviewer: mathoma
-ms.openlocfilehash: d4b71ddb3cb0b8dbd60ccfb9df778baaaff3f68d
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 16a67df352f2f1d1b77e48d5fdaff67c9fb77d15
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170331"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237039"
 ---
 # <a name="create-trigger-transact-sql"></a>CREATE TRIGGER (Transact-SQL)
 
@@ -164,7 +164,7 @@ AS { sql_statement  [ ; ] [ ,...n ]  [ ; ] }
 
 ## <a name="arguments"></a>Arguments
 OR ALTER  
-**S’applique à** : Azure [!INCLUDE[ssSDS](../../includes/sssds-md.md)], [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1). 
+**S’applique à** : Azure [!INCLUDE[ssSDS](../../includes/sssds-md.md)], [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP1). 
   
 Modifie, de manière conditionnelle, le déclencheur uniquement s’il existe déjà. 
   

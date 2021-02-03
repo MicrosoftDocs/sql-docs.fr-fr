@@ -1,5 +1,5 @@
 ---
-description: Fonctionnalités dépréciées du moteur de base de données dans [!INCLUDE[sssqlv15-md](../includes/sssqlv15-md.md)]
+description: Fonctionnalités dépréciées du moteur de base de données dans [!INCLUDE[sssql19-md](../includes/sssql19-md.md)]
 title: Fonctionnalités du moteur de base de données déconseillées dans SQL Server 2019 | Microsoft Docs
 titleSuffix: SQL Server 2019
 ms.custom: seo-lt-2019
@@ -15,14 +15,14 @@ ms.assetid: ''
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15'
-ms.openlocfilehash: b899f2e5ebd9d1af634aff02b4dfc3a4c5d77b47
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a2db458e13616c3796872f0ad9e07bfbd9ed16db
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97438802"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236617"
 ---
-# <a name="deprecated-database-engine-features-in-sssqlv15-md"></a>Fonctionnalités dépréciées du moteur de base de données dans [!INCLUDE[sssqlv15-md](../includes/sssqlv15-md.md)]
+# <a name="deprecated-database-engine-features-in-sssql19-md"></a>Fonctionnalités dépréciées du moteur de base de données dans [!INCLUDE[sssql19-md](../includes/sssql19-md.md)]
 
 [!INCLUDE[sqlserver2019](../includes/applies-to-version/sqlserver2019.md)]
 

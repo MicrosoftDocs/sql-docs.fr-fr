@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - FULLTEXTCATALOGPROPERTY_TSQL
 - FULLTEXTCATALOGPROPERTY
@@ -20,17 +20,17 @@ helpviewer_keywords:
 ms.assetid: f841dc79-2044-4863-aff0-56b8bb61f250
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 57e53c26b7f1797daf6a1ccc53f7578eabda734a
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: d49757197a66a0af05a0115cf4b16d6d589acc13
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98087303"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237499"
 ---
 # <a name="fulltextcatalogproperty-transact-sql"></a>FULLTEXTCATALOGPROPERTY (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
-Renvoie des informations concernant les propriétés de catalogue de texte intégral dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+Renvoie des informations concernant les propriétés de catalogue de texte intégral dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
   
 ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -71,7 +71,7 @@ Expression contenant le nom de la propriété de catalogue de texte intégral. L
 ## <a name="exceptions"></a>Exceptions  
 Retourne NULL en cas d’erreur ou si un appelant n’est pas autorisé à voir l’objet.  
   
-Dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], un utilisateur ne peut qu’afficher les métadonnées des sécurisables. Ces sécurisables sont ceux dont il est propriétaire ou pour lesquels il dispose des autorisations nécessaires. Par conséquent, les fonctions intégrées générant des métadonnées, telles que FULLTEXTCATALOGPROPERTY, peuvent retourner la valeur NULL si l’utilisateur ne dispose d’aucune autorisation sur l’objet. Pour plus d’informations, consultez [sp_help_fulltext_catalogs &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-fulltext-catalogs-transact-sql.md).  
+Dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], un utilisateur ne peut qu’afficher les métadonnées des sécurisables. Ces sécurisables sont ceux dont il est propriétaire ou pour lesquels il dispose des autorisations nécessaires. Par conséquent, les fonctions intégrées générant des métadonnées, telles que FULLTEXTCATALOGPROPERTY, peuvent retourner la valeur NULL si l’utilisateur ne dispose d’aucune autorisation sur l’objet. Pour plus d’informations, consultez [sp_help_fulltext_catalogs &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-fulltext-catalogs-transact-sql.md).  
   
 ## <a name="remarks"></a>Remarques  
 FULLTEXTCATALOGPROPERTY ('_catalog\_name_','**IndexSize**') n’examine que les fragments ayant l’état 4 ou 6, comme indiqué dans [sys.fulltext_index_fragments](../../relational-databases/system-catalog-views/sys-fulltext-index-fragments-transact-sql.md). Ces fragments font partie de l'index logique. Par conséquent, la propriété **IndexSize** ne retourne que la taille de l’index logique. 

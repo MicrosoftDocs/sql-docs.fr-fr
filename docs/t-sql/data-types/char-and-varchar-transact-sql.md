@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - varchar
 - varchar_TSQL
@@ -25,18 +25,18 @@ ms.assetid: 282cd982-f4fb-4b22-b2df-9e8478f13f6a
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 5f78cfecbfcf99ec3ae855b41bb802a0c6b12864
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a54d7e0abbbb15379f83a13fc0e604b6d087326d
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97462550"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236385"
 ---
 # <a name="char-and-varchar-transact-sql"></a>char et varchar (Transact-SQL)
 
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-Les types de données de caractères qui sont soit de taille fixe, **char**, soit de taille variable, **varchar**. À partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], quand un classement prenant en charge UTF-8 est utilisé, ces types de données stockent la plage complète des données caractères [Unicode](../../relational-databases/collations/collation-and-unicode-support.md#Unicode_Defn) et utilisent le codage de caractères [UTF-8](https://www.wikipedia.org/wiki/UTF-8). Si un classement non-UTF-8 est spécifié, ces types de données stockent uniquement un sous-ensemble de caractères pris en charge par la page de codes correspondante de ce classement.
+Les types de données de caractères qui sont soit de taille fixe, **char**, soit de taille variable, **varchar**. À partir de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], quand un classement prenant en charge UTF-8 est utilisé, ces types de données stockent la plage complète des données caractères [Unicode](../../relational-databases/collations/collation-and-unicode-support.md#Unicode_Defn) et utilisent le codage de caractères [UTF-8](https://www.wikipedia.org/wiki/UTF-8). Si un classement non-UTF-8 est spécifié, ces types de données stockent uniquement un sous-ensemble de caractères pris en charge par la page de codes correspondante de ce classement.
 
 ## <a name="arguments"></a>Arguments
 
@@ -56,11 +56,11 @@ Les objets qui utilisent **char** ou **varchar** reçoivent le classement par d�
 Les encodages multioctets dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] incluent :
 
 - Les jeux de caractères codés sur deux octets (DBCS) pour certaines langues d’Extrême-Orient à l’aide des pages de codes 936 et 950 (chinois), 932 (japonais) ou 949 (coréen).
-- UTF-8 avec la page de codes 65001. **S’applique à :** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)])
+- UTF-8 avec la page de codes 65001. **S’applique à :** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])
 
 Si vous avez de sites qui prennent en charge plusieurs langues :
 
-- À partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], envisagez d’utiliser un classement UTF-8 prenant en charge Unicode pour limiter les problèmes de conversion de caractères.
+- À partir de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], envisagez d’utiliser un classement UTF-8 prenant en charge Unicode pour limiter les problèmes de conversion de caractères.
 - Si vous utilisez une version antérieure de [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)], envisagez d’utiliser les types de données Unicode **nchar** ou **nvarchar** afin de limiter les problèmes de conversion de caractères.
 
 Si vous utilisez **char** ou **varchar**, nous vous recommandons de procéder comme suit :

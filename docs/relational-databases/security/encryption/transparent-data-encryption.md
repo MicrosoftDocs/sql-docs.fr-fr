@@ -19,12 +19,12 @@ author: jaszymas
 ms.author: jaszymas
 ms.reviewer: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 06288dc0bc6e16ab8928322005254f5fac1ddc61
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: adc1affe33d1172b3e648c510b2dbc1d00326849
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171481"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237975"
 ---
 # <a name="transparent-data-encryption-tde"></a>Transparent Data Encryption (TDE)
 
@@ -227,7 +227,7 @@ Pour chiffrer une clé de chiffrement de base de données avec une clé asymétr
 
 Pour activer TDE sur une base de données, [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] doit effectuer une analyse de chiffrement. L’analyse lit chaque page des fichiers de données dans le pool de mémoires tampons, puis réécrit les pages chiffrées sur disque.
 
-Pour vous permettre de mieux contrôler l’analyse du chiffrement, [!INCLUDE[sql-server-2019](../../../includes/sssqlv15-md.md)] intègre l’analyse TDE, qui propose une syntaxe de suspension (« suspend ») et de reprise (« resume »). Vous pouvez ainsi suspendre l’analyse quand le système est soumis à une charge de travail intense ou pendant les heures de pointe et reprendre l’analyse à un moment ultérieur.
+Pour vous permettre de mieux contrôler l’analyse du chiffrement, [!INCLUDE[sql-server-2019](../../../includes/sssql19-md.md)] intègre l’analyse TDE, qui propose une syntaxe de suspension (« suspend ») et de reprise (« resume »). Vous pouvez ainsi suspendre l’analyse quand le système est soumis à une charge de travail intense ou pendant les heures de pointe et reprendre l’analyse à un moment ultérieur.
 
 Pour suspendre l’analyse du chiffrement TDE, utilisez la syntaxe suivante :
 
@@ -314,7 +314,7 @@ Quand vous chiffrez une base de données à l’aide de TDE, les fichiers associ
 
 ## <a name="tde-and-in-memory-oltp"></a>TDE et OLTP en mémoire
 
-Vous pouvez activer TDE sur une base de données contenant des objets OLTP en mémoire. Dans [!INCLUDE[ssSQL15](../../../includes/sssql16-md.md)] et [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)], les enregistrements de journal et les données OLTP en mémoire sont chiffrés si vous activez TDE. Dans [!INCLUDE[ssSQL14](../../../includes/sssql14-md.md)], les enregistrements de journal OLTP en mémoire sont chiffrés si vous activez TDE, mais les fichiers contenus dans le groupe de fichiers MEMORY_OPTIMIZED_DATA ne le sont pas.
+Vous pouvez activer TDE sur une base de données contenant des objets OLTP en mémoire. Dans [!INCLUDE[sssql16-md](../../../includes/sssql16-md.md)] et [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)], les enregistrements de journal et les données OLTP en mémoire sont chiffrés si vous activez TDE. Dans [!INCLUDE[ssSQL14](../../../includes/sssql14-md.md)], les enregistrements de journal OLTP en mémoire sont chiffrés si vous activez TDE, mais les fichiers contenus dans le groupe de fichiers MEMORY_OPTIMIZED_DATA ne le sont pas.
 
 ## <a name="related-tasks"></a>Tâches associées
 

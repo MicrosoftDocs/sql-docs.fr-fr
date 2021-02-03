@@ -19,12 +19,12 @@ author: MikeRayMSFT
 ms.author: mikeray
 ms.prod_service: table-view-index, sql-database
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 17c91b53c786934d292692493fa886698128b34d
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9612070531dc13d9646d439501925f59f62c8da7
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465300"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236907"
 ---
 # <a name="guidelines-for-online-index-operations"></a>Instructions pour les opérations d’index en ligne
 
@@ -119,7 +119,7 @@ En règle générale, il n’existe aucune différence de qualité de défragmen
 ## <a name="online-default-options"></a>Options par défaut d’exécution en ligne
 
 > [!IMPORTANT]
-> Ces options sont en préversion publique pour [!INCLUDE[ssNoVersion](../../includes/sssqlv15-md.md)].
+> Ces options sont en préversion publique pour [!INCLUDE[ssNoVersion](../../includes/sssql19-md.md)].
 
 Vous pouvez définir des options par défaut pour l’exécution en ligne (« online ») ou pouvant être reprise (« resumable ») à un niveau de base de données en définissant les options de configuration étendues à la base de données ELEVATE_ONLINE ou ELEVATE_RESUMABLE. Avec ces options par défaut, vous pouvez éviter l’exécution accidentelle d’une opération qui met votre table de base de données en mode hors connexion. Les deux options forcent le moteur à élever automatiquement certaines opérations à une exécution en ligne (« online) ou à une exécution pouvant être reprise (« resumable »).  
 Vous pouvez définir l’option comme FAIL_UNSUPPORTED, WHEN_SUPPORTED ou OFF en utilisant la commande [ALTER DATABASE SCOPED CONFIGURATION](../../t-sql/statements/alter-database-scoped-configuration-transact-sql.md). Vous pouvez attribuer différentes valeurs aux options d’exécution en ligne (« online ») et d’exécution pouvant être reprise (« resumable »).
@@ -129,7 +129,7 @@ ELEVATE_ONLINE et ELEVATE_RESUMABLE s’appliquent uniquement aux instructions D
 > [!NOTE]
 > ELEVATE_ONLINE et ELEVATE_RESUMABLE ne s’appliquent pas aux opérations d’index XML.
 
-## <a name="related-content"></a>Contenu associé
+## <a name="related-content"></a>Contenu connexe
 
 - [Fonctionnement des opérations d'index en ligne](../../relational-databases/indexes/how-online-index-operations-work.md)  
 - [Exécuter des opérations en ligne sur les index](../../relational-databases/indexes/perform-index-operations-online.md)  

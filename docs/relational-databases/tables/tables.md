@@ -15,12 +15,12 @@ ms.assetid: 82d7819c-b801-4309-a849-baa63083e83f
 author: stevestein
 ms.author: sstein
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 40416d9ccd36e8de4ac1e4196a769607af3b5545
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4e8b8a82580fbe6f1a60a82d54e90c5ee106280f
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482363"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236787"
 ---
 # <a name="tables"></a>Tables
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa-pdw.md)]
@@ -38,7 +38,7 @@ Les tables sont des objets de base de données qui contiennent toutes les donné
 
 ### <a name="partitioned-tables"></a>Tables partitionnées
 
-Les tables partitionnées sont des tables dont les données sont divisées horizontalement en unités qui peuvent être réparties sur plusieurs groupes de fichiers dans une base de données. Le partitionnement permet une gestion plus simple des tables et index volumineux. Vous pouvez en effet accéder à des sous-ensembles de données ou les gérer de manière rapide et efficace, tout en préservant l'intégrité de la collection globale. Par défaut, [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] prend en charge jusqu'à 15 000 partitions. Pour plus d’informations, consultez [Tables et index partitionnés](../../relational-databases/partitions/partitioned-tables-and-indexes.md).
+Les tables partitionnées sont des tables dont les données sont divisées horizontalement en unités qui peuvent être réparties sur plusieurs groupes de fichiers dans une base de données. Le partitionnement permet une gestion plus simple des tables et index volumineux. Vous pouvez en effet accéder à des sous-ensembles de données ou les gérer de manière rapide et efficace, tout en préservant l'intégrité de la collection globale. Par défaut, [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] prend en charge jusqu'à 15 000 partitions. Pour plus d’informations, consultez [Tables et index partitionnés](../../relational-databases/partitions/partitioned-tables-and-indexes.md).
 
 ### <a name="temporary-tables"></a>Tables temporaires
 
@@ -47,7 +47,7 @@ Les tables temporaires sont stockées dans **tempdb**. Il en existe deux types :
 
 #### <a name="reduced-recompilations-for-workloads-using-temporary-tables-across-multiple-scopes"></a><a name="ctp23"></a> Recompilations réduites pour les charges de travail qui utilisent des tables temporaires sur plusieurs étendues
 
-[!INCLUDE[ss2019](../../includes/sssqlv15-md.md)] pour tous les niveaux de compatibilité de base de données réduit les recompilations pour les charges de travail qui utilisent des tables temporaires sur plusieurs étendues. Cette fonctionnalité est également activée dans Azure SQL Database sous le niveau de compatibilité de base de données 150 pour tous les modèles de déploiement.  Avant cette fonctionnalité, quand vous référenciez une table temporaire avec une instruction de langage de manipulation de données (DML) (`SELECT`, `INSERT`, `UPDATE`, `DELETE`), si la table temporaire était créée par un lot d’étendue externe, une recompilation de l’instruction DML se produisait à chacune de ses exécutions. Avec cette amélioration, SQL Server effectue de légères vérifications supplémentaires pour éviter les recompilations inutiles :
+[!INCLUDE[ss2019](../../includes/sssql19-md.md)] pour tous les niveaux de compatibilité de base de données réduit les recompilations pour les charges de travail qui utilisent des tables temporaires sur plusieurs étendues. Cette fonctionnalité est également activée dans Azure SQL Database sous le niveau de compatibilité de base de données 150 pour tous les modèles de déploiement.  Avant cette fonctionnalité, quand vous référenciez une table temporaire avec une instruction de langage de manipulation de données (DML) (`SELECT`, `INSERT`, `UPDATE`, `DELETE`), si la table temporaire était créée par un lot d’étendue externe, une recompilation de l’instruction DML se produisait à chacune de ses exécutions. Avec cette amélioration, SQL Server effectue de légères vérifications supplémentaires pour éviter les recompilations inutiles :
 
 - Vérifiez si le module d’étendue externe utilisé pour la création de la table temporaire au moment de la compilation est le même que celui utilisé pour les exécutions consécutives. 
 - Gardez une trace de toutes les modifications de langage de définition de données (DDL) apportées au moment de la compilation initiale et comparez-les aux opérations DDL des exécutions consécutives.

@@ -9,22 +9,22 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 monikerRange: '>= sql-server-linux-ver15  || >= sql-server-ver15'
-ms.openlocfilehash: 4630a96f1abf961174ece179aabfd160a5784ad9
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5b99f12aebc27d04b384ff0b8d51b5359ca76d19
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471610"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236915"
 ---
 # <a name="configure-persistent-memory-pmem-for-sql-server-on-linux"></a>Configurer la mémoire persistante (PMEM) pour SQL Server sur Linux
 
 [!INCLUDE [SQL Server - Linux](../includes/applies-to-version/sql-linux.md)]
 
-Cet article décrit comment configurer la mémoire persistante (PMEM) pour [!INCLUDE[sqlv15](../includes/sssqlv15-md.md)] sur Linux.
+Cet article décrit comment configurer la mémoire persistante (PMEM) pour [!INCLUDE[sqlv15](../includes/sssql19-md.md)] sur Linux.
 
 ## <a name="overview"></a>Vue d’ensemble
 
-[!INCLUDE[sqlv15](../includes/sssqlv15-md.md)] dispose d’un certain nombre de fonctionnalités en mémoire qui utilisent la mémoire persistante. Ce document décrit les étapes nécessaires à la configuration de la mémoire persistante pour SQL Server sur Linux.
+[!INCLUDE[sqlv15](../includes/sssql19-md.md)] dispose d’un certain nombre de fonctionnalités en mémoire qui utilisent la mémoire persistante. Ce document décrit les étapes nécessaires à la configuration de la mémoire persistante pour SQL Server sur Linux.
 
 > [!NOTE]
 > Le terme _enlightment_ (« illumination ») a été introduit pour décrire le concept d’utiliser un système de fichiers prenant en charge la mémoire persistante. L’accès direct au système de fichiers à partir d’applications d’espace utilisateur est facilité par l’utilisation du mappage de mémoire (`mmap()`). Lors de la création d’un mappage de mémoire pour un fichier, l’application peut émettre des instructions de chargement/stockage en contournant totalement la pile d’E/S. Il s’agit d’une méthode d’accès aux fichiers « enlightened » (ou illuminée) du point de vue de l’application d’extension hôte (qui est le code de boîte noire qui autorise SQLPAL à interagir avec le système d’exploitation Windows ou Linux).

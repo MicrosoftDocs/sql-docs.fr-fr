@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER SERVER CONFIGURATION
 - ALTER_SERVER_CONFIGURATION_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: f3059e42-5f6f-4a64-903c-86dca212a4b4
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: ce637e88679747faf40ec7f262ceaea3c0f01f5f
-ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
+ms.openlocfilehash: 7a61ed11e141376c0b0c769f961fad4e9520c271
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98688848"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237046"
 ---
 # <a name="alter-server-configuration-transact-sql"></a>ALTER SERVER CONFIGURATION (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -245,7 +245,7 @@ Désactive l'option d'extension du pool de mémoires tampons. Désactivez l'opti
   
 **\<soft_numa>**  
 
-**S’applique à :** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]).  
+**S’applique à :** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]).  
   
 ACTIVÉ  
 Active le partitionnement automatique afin de fractionner les nœuds NUMA matériels volumineux en nœuds NUMA plus petits. La modification de la valeur active nécessite un redémarrage du moteur de base de données.  
@@ -264,7 +264,7 @@ Désactive le partitionnement logiciel automatique des nœuds NUMA matériels vo
 
 **\<memory_optimized> ::=**
 
-**S’applique à :** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]).
+**S’applique à :** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]).
 
 ACTIVÉ <br>
 Active toutes les fonctionnalités de niveau instance qui font partie de la famille de fonctionnalités [Base de données en mémoire](../../relational-databases/in-memory-database.md). Cela inclut les [métadonnées tempdb à mémoire optimisée](../../relational-databases/databases/tempdb-database.md#memory-optimized-tempdb-metadata) et le [pool de mémoires tampons hybride](../../database-engine/configure-windows/hybrid-buffer-pool.md). Nécessite un redémarrage.
@@ -447,7 +447,7 @@ GO
 
 ### <a name="setting-in-memory-database-options"></a><a name="MemoryOptimized"></a> Définition des options de base de données en mémoire
 
-**S’applique à :** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]).
+**S’applique à :** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]).
 
 #### <a name="a-enable-all-in-memory-database-features-with-default-options"></a>R. Activer toutes les fonctionnalités de base de données en mémoire avec les options par défaut
 

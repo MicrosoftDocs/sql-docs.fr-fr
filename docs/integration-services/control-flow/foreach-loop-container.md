@@ -31,12 +31,12 @@ helpviewer_keywords:
 ms.assetid: dd6cc2ba-631f-4adf-89dc-29ef449c6933
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 7ae64e777b08cdf4df6f7e8fdd05ff8c3822a06b
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 3f1e5c31fdd51a7db14540bfeea3229c170dd2fa
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171521"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236659"
 ---
 # <a name="foreach-loop-container"></a>Conteneur de boucles Foreach
 
@@ -461,7 +461,7 @@ Utilisez la page **Général** de la boîte de dialogue **Éditeur de boucle For
 ####  <a name="enumerator--foreach-azure-blob-enumerator"></a><a name="ForeachAzureBlob"></a> Enumerator = Foreach Azure Blob Enumerator  
  L’  **Énumérateur d’objets blob Azure** permet à un package SSIS d’énumérer les fichiers d’objets blob à l’emplacement d’objets blob spécifié. Vous pouvez stocker le nom du fichier d’objets blob énuméré dans une variable et l’utiliser dans des tâches au sein du conteneur de boucles Foreach.  
   
- **L’Énumérateur d’objets Blob Azure** est un composant de SQL Server Integration Services (SSIS) Feature Pack pour Azure pour [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]. Le Feature Pack est disponible en téléchargement [ici](https://go.microsoft.com/fwlink/?LinkID=626967).  
+ **L’Énumérateur d’objets Blob Azure** est un composant de SQL Server Integration Services (SSIS) Feature Pack pour Azure pour [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]. Le Feature Pack est disponible en téléchargement [ici](https://go.microsoft.com/fwlink/?LinkID=626967).  
   
  **Gestionnaire de connexions de stockage Azure**  
  Sélectionnez un gestionnaire de connexions Azure Storage existant ou créez-en un nouveau qui fait référence à un compte Azure Storage.  

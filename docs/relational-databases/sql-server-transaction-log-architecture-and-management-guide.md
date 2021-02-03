@@ -22,12 +22,12 @@ ms.assetid: 88b22f65-ee01-459c-8800-bcf052df958a
 author: rothja
 ms.author: jroth
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: a445552a69033bec7564e05d7fc86d7416a5ff47
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ed532d22800cd10530ecc7db8595fcf75e3737da
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461830"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237940"
 ---
 # <a name="sql-server-transaction-log-architecture-and-management-guide"></a>Guide d’architecture et gestion du journal des transactions SQL Server
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -239,7 +239,7 @@ Le journal actif doit contenir chaque partie de toutes les transactions non vali
 * Si le système est arrêté après que la transaction a effectué de nombreuses modifications non validées, la phase de récupération lors du démarrage ultérieur peut être beaucoup plus longue que la durée spécifiée dans l’option **intervalle de récupération** .
 * Le journal peut devenir très volumineux parce qu'il ne peut pas être tronqué au-delà du MinLSN. Cela se produit même si la base de données utilise le modèle de récupération simple, dans lequel le journal des transactions est généralement tronqué sur chaque point de contrôle automatique.
 
-À partir de [!INCLUDE[sql-server-2019](../includes/sssqlv15-md.md)] et dans [!INCLUDE[ssSDSfull](../includes/sssdsfull-md.md)], la récupération des transactions de longue durée et des problèmes décrits ci-dessus peut être évitée à l’aide de la [récupération de base de données accélérée](../relational-databases/backup-restore/restore-and-recovery-overview-sql-server.md#adr).  
+À partir de [!INCLUDE[sql-server-2019](../includes/sssql19-md.md)] et dans [!INCLUDE[ssSDSfull](../includes/sssdsfull-md.md)], la récupération des transactions de longue durée et des problèmes décrits ci-dessus peut être évitée à l’aide de la [récupération de base de données accélérée](../relational-databases/backup-restore/restore-and-recovery-overview-sql-server.md#adr).  
 
 ### <a name="replication-transactions"></a>Transactions de réplication
 L'Agent de lecture du journal surveille le journal des transactions de chaque base de données configurée pour la réplication transactionnelle et copie les transactions devant être répliquées à partir du journal des transactions dans la base de données de distribution. Le journal actif doit contenir toutes les transactions qui sont marquées pour la réplication mais qui n'ont pas encore été transmises à la base de données de distribution. Si ces transactions ne sont pas répliquées à temps, elles peuvent empêcher la troncature du journal. Pour plus d’informations, consultez [Réplication transactionnelle](../relational-databases/replication/transactional/transactional-replication.md).

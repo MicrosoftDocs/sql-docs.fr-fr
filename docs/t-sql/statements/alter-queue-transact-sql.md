@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_QUEUE_TSQL
 - ALTER QUEUE
@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: d54aa325-8761-4cd4-8da7-acf33df12296
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 09303d17e8cb284251d9c8e585eeadb5a1a1e898
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: e1a858efef550632d3d5c8913222ab86a22a9543
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170841"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237769"
 ---
 # <a name="alter-queue-transact-sql"></a>ALTER QUEUE (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -107,12 +107,12 @@ WITH
  Spécifie si la file d'attente active ou non la procédure stockée. Lorsque STATUS = ON, la file d'attente lance la procédure stockée spécifiée avec PROCEDURE_NAME, quand le nombre de procédures actuellement en cours d'exécution est inférieur à la valeur de MAX_QUEUE_READERS et que la réception des messages dans la file d'attente est plus rapide que la réception des messages par les procédures stockées. Lorsque STATUS = OFF, la file d'attente n'active pas la procédure stockée.  
   
  REBUILD [ WITH \<queue_rebuild_options> ]  
- **S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.  
+ **S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures.  
   
  Reconstruit tous les index sur la table interne de file d’attente. Utilisez cette fonction quand vous rencontrez des problèmes de fragmentation en raison d’une charge élevée. MAXDOP est la seule option de reconstruction de file d’attente prise en charge. REBUILD est toujours une opération hors connexion.  
   
  REORGANIZE [ WITH ( LOB_COMPACTION = { ON | OFF } ) ]  
- **S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.  
+ **S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures.  
   
  Réorganiser tous les index sur la table interne de file d’attente.   
 Contrairement à REORGANIZE sur les tables utilisateur, REORGANIZE sur une file d’attente est toujours exécutée comme opération hors connexion, car les verrous de page sont explicitement désactivés sur les files d’attente.  
@@ -121,7 +121,7 @@ Contrairement à REORGANIZE sur les tables utilisateur, REORGANIZE sur une file 
 >  En guise de recommandation générale concernant la fragmentation des index, quand la fragmentation est comprise entre 5 et 30 %, réorganisez l’index. Quand la fragmentation est supérieure à 30 %, reconstruisez l’index. Ces nombres ne constituent que des recommandations d’ordre général, à utiliser comme point de départ pour votre environnement. Pour déterminer la quantité de fragmentation d’index, utilisez [sys.dm_db_index_physical_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-index-physical-stats-transact-sql.md) (voir l’exemple G dans cet article pour obtenir des exemples).  
   
  MOVE TO { *file_group* | "default" }  
- **S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.  
+ **S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures.  
   
  Déplace la table interne de file d’attente (avec ses index) vers un groupe de fichiers spécifié par l’utilisateur.  Le nouveau groupe de fichiers ne doit pas être en lecture seule.  
   
@@ -226,7 +226,7 @@ ALTER QUEUE ExpenseQueue WITH ACTIVATION (DROP) ;
   
 ### <a name="g-rebuilding-queue-indexes"></a>G. Reconstruction d’index de file d’attente  
   
-**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.  
+**S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures.  
   
  L’exemple suivant reconstruit des index de file d’attente.  
   
@@ -236,7 +236,7 @@ ALTER QUEUE ExpenseQueue REBUILD WITH (MAXDOP = 2)
   
 ### <a name="h-reorganizing-queue-indexes"></a>H. Réorganisation d’index de file d’attente  
   
-**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.  
+**S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures.  
   
  L’exemple suivant réorganise des index de file d’attente.  
   
@@ -246,7 +246,7 @@ ALTER QUEUE ExpenseQueue REORGANIZE
   
 ### <a name="i-moving-queue-internal-table-to-another-filegroup"></a>I. Déplacement d’une table interne de file d’attente vers un autre groupe de fichiers  
   
-**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.  
+**S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures.  
   
 ```sql  
 ALTER QUEUE ExpenseQueue MOVE TO [NewFilegroup]   

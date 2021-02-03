@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e75d6975-641e-440a-a642-cb39a583359a
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 8ff53ca4e4118b105eabac256663a8b052e218fa
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a5e968978dd641f78dfb17d515ab07e3b7e27485
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88429051"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250138"
 ---
 # <a name="data-collector-security"></a>Sécurité du collecteur de données
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "88429051"
  Les sections suivantes offrent une description générale de la sécurité de la collecte de données, ainsi que des rôles que vous devez attribuer aux utilisateurs pour qu'ils puissent configurer et utiliser le collecteur de données, et effectuer des tâches associées à l'entrepôt de données de gestion.  
   
 ## <a name="general-security"></a>Sécurité générale  
- Le collecteur de données est installé en fonction des normes documentées spécifiées pour [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+ Le collecteur de données est installé en fonction des normes documentées spécifiées pour [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
   
 ### <a name="network-security"></a>Sécurité réseau  
  Des informations sensibles peuvent être transmises entre des instances cibles, l'instance relationnelle associée au serveur de configuration, les jeux d'éléments de collection en cours d'exécution et le serveur hébergeant l'entrepôt de données de gestion.  

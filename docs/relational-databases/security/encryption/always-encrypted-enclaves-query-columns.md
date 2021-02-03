@@ -11,12 +11,12 @@ ms.topic: conceptual
 author: jaszymas
 ms.author: jaszymas
 monikerRange: '>= sql-server-ver15 || = sqlallproducts-allversions'
-ms.openlocfilehash: 8aecf4b22cf02ae91d259f45daff1d2cd8414f97
-ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
+ms.openlocfilehash: bc92b0af972236b588369869afc5b023735ae699
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98534688"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237125"
 ---
 # <a name="run-transact-sql-statements-using-secure-enclaves"></a>Exécuter des instructions Transact-SQL à l’aide d’enclaves sécurisées
 
@@ -45,15 +45,15 @@ Les instructions ou requêtes [DML (Data Manipulation Language)](../../../t-sql/
   - [IN (Transact-SQL)](../../../t-sql/language-elements/in-transact-sql.md)
   - [LIKE (Transact-SQL)](../../../t-sql/language-elements/like-transact-sql.md)
   - [DISTINCT](../../../t-sql/queries/select-transact-sql.md#c-using-distinct-with-select)
-  - [Jointures](../../performance/joins.md) - [!INCLUDE[sql-server-2019](../../../includes/sssqlv15-md.md)] prend en charge uniquement les jointures de boucles imbriquées. [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] prend en charge les jointures de boucles imbriquées, hachées et de fusion
-  - [SELECT - Clause ORDER BY (Transact-SQL)](../../../t-sql/queries/select-order-by-clause-transact-sql.md). Prise en charge dans [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)]. Non pris en charge dans [!INCLUDE[sql-server-2019](../../../includes/sssqlv15-md.md)]
-  - [SELECT - Clause ORDER BY (Transact-SQL)](../../../t-sql/queries/select-group-by-transact-sql.md). Prise en charge dans [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)]. Non pris en charge dans [!INCLUDE[sql-server-2019](../../../includes/sssqlv15-md.md)]
+  - [Jointures](../../performance/joins.md) - [!INCLUDE[sql-server-2019](../../../includes/sssql19-md.md)] prend en charge uniquement les jointures de boucles imbriquées. [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] prend en charge les jointures de boucles imbriquées, hachées et de fusion
+  - [SELECT - Clause ORDER BY (Transact-SQL)](../../../t-sql/queries/select-order-by-clause-transact-sql.md). Prise en charge dans [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)]. Non pris en charge dans [!INCLUDE[sql-server-2019](../../../includes/sssql19-md.md)]
+  - [SELECT - Clause ORDER BY (Transact-SQL)](../../../t-sql/queries/select-group-by-transact-sql.md). Prise en charge dans [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)]. Non pris en charge dans [!INCLUDE[sql-server-2019](../../../includes/sssql19-md.md)]
 - Requêtes qui insèrent, mettent à jour ou suppriment des lignes, ce qui déclenche l’insertion et/ou la suppression d’une clé d’index dans un index sur une colonne prenant en charge les enclaves. Pour plus d’informations, consultez [Créer et utiliser des index sur des colonnes à l’aide d’Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-create-use-indexes.md).
 
 > [!NOTE]
 > Les opérations sur les index et les requêtes DML confidentielles utilisant des enclaves sont uniquement prises en charge sur les colonnes prenant en charge les enclaves qui utilisent le chiffrement aléatoire. Le chiffrement déterministe n’est pas pris en charge.
 >
-> Dans [!INCLUDE[sql-server-2019](../../../includes/sssqlv15-md.md)], les requêtes confidentielles utilisant des enclaves sur des colonnes de chaînes de caractères (`char`, `nchar`) nécessitent un classement d’ordre de tri binary2 (BIN2) configuré pour la colonne. Dans [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)], l’utilisation de classements BIN2 ou UTF-8 est obligatoire.
+> Dans [!INCLUDE[sql-server-2019](../../../includes/sssql19-md.md)], les requêtes confidentielles utilisant des enclaves sur des colonnes de chaînes de caractères (`char`, `nchar`) nécessitent un classement d’ordre de tri binary2 (BIN2) configuré pour la colonne. Dans [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)], l’utilisation de classements BIN2 ou UTF-8 est obligatoire.
 
 ### <a name="dbcc-commands-using-secure-enclaves"></a>Commandes DBCC utilisant des enclaves sécurisées
 
@@ -67,7 +67,7 @@ Votre environnement doit répondre aux conditions suivantes pour prendre en char
 - Vous devez obtenir une URL d’attestation de votre environnement auprès de votre administrateur de service d’attestation.
 
   - Si vous utilisez [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] et le service Guardian hôte (SGH), consultez [Déterminer et partager l’URL d’attestation SGH](always-encrypted-enclaves-host-guardian-service-deploy.md#step-6-determine-and-share-the-hgs-attestation-url).
-  - Si vous utilisez [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] et Microsoft Azure Attestation, consultez [Déterminer l’URL d’attestation de votre stratégie d’attestation](/azure-sql/database/always-encrypted-enclaves-configure-attestation#determine-the-attestation-url-for-your-attestation-policy).
+  - Si vous utilisez [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] et Microsoft Azure Attestation, consultez [Déterminer l’URL d’attestation de votre stratégie d’attestation](/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver15#secure-enclave-attestation).
 
 - Si vous vous connectez à votre base de données à l’aide de votre application, celle-ci doit utiliser un pilote client qui prend en charge Always Encrypted avec enclaves sécurisées. Pour connecter l’application à la base de données, vous devez activer Always Encrypted pour la connexion de base de données et configurer correctement le protocole et l’URL d’attestation. Pour obtenir des informations détaillées, consultez [Développer des applications en utilisant Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves-client-development.md).
 - Si vous utilisez SSMS (SQL Server Management Studio) ou Azure SQL Data Studio, vous devez activer Always Encrypted et configurer le protocole et l’URL d’attestation lors de la connexion à votre base de données. Pour plus d’informations, consultez les sections suivantes.
@@ -104,7 +104,7 @@ Veillez à exécuter vos instructions à partir d’une fenêtre de requête qui
 1. Dans la boîte de dialogue **Connexion**, cliquez sur **Avancé...** .
 2. Pour activer Always Encrypted pour la connexion, définissez le champ **Always Encrypted** sur **Activé**.
 3. Spécifiez le protocole et l’URL d’attestation.
-    - Si vous utilisez [!INCLUDE [sssqlv15-md](../../../includes/sssqlv15-md.md)], définissez le **Service Guardian hôte** comme **Protocole d’attestation** et entrez votre URL d’attestation du service Guardian hôte dans le champ **URL d’attestation de l’enclave**.
+    - Si vous utilisez [!INCLUDE [sssql19-md](../../../includes/sssql19-md.md)], définissez le **Service Guardian hôte** comme **Protocole d’attestation** et entrez votre URL d’attestation du service Guardian hôte dans le champ **URL d’attestation de l’enclave**.
     - Si vous utilisez [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)], définissez **Attestation Azure** comme **Protocole d’attestation** et entrez l’URL d’attestation faisant référence à votre stratégie dans Microsoft Azure Attestation dans le champ **URL d’attestation de l’enclave**.
 
     ![Se connecter au serveur avec une attestation à l’aide d’Azure Data Studio](./media/always-encrypted-enclaves/azure-data-studio-connect-with-enclaves.png)
@@ -191,7 +191,7 @@ GO
 
 La requête ci-dessous trie les enregistrements d’employés en fonction de la colonne chiffrée `Salary` pour récupérer les 10 employés les mieux payés.
 > [!NOTE]
-> Le tri de colonnes chiffrées est pris en charge dans [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)], mais pas dans [!INCLUDE[sql-server-2019](../../../includes/sssqlv15-md.md)].
+> Le tri de colonnes chiffrées est pris en charge dans [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)], mais pas dans [!INCLUDE[sql-server-2019](../../../includes/sssql19-md.md)].
 
 ```sql
 SELECT TOP(10) * FROM [HR].[Employees]

@@ -41,7 +41,7 @@ Le paramètre IMPORTANCE est local par rapport au pool de ressources : les grou
 REQUEST_MAX_MEMORY_GRANT_PERCENT = *value*</br>
 Spécifie la quantité de mémoire maximale qu'une requête unique peut prendre du pool. *value* est un pourcentage relatif à la taille du pool de ressources spécifiée par MAX_MEMORY_PERCENT.
 
-*value* est un entier jusqu’à [!INCLUDE[ssSQL17](sssql17-md.md)], et une valeur flottante à compter de [!INCLUDE[sql-server-2019](sssqlv15-md.md)] et dans Azure SQL Managed Instance. La valeur par défaut est 25. La plage autorisée pour *value* est comprise entre 1 et 100.
+*value* est un entier jusqu’à [!INCLUDE[ssSQL17](sssql17-md.md)], et une valeur flottante à compter de [!INCLUDE[sql-server-2019](sssql19-md.md)] et dans Azure SQL Managed Instance. La valeur par défaut est 25. La plage autorisée pour *value* est comprise entre 1 et 100.
 
 > [!IMPORTANT]  
 > La quantité spécifiée fait uniquement référence à la mémoire allouée à l'exécution de la requête.
@@ -64,7 +64,7 @@ Spécifie la quantité maximale de temps processeur, en secondes, qu'une demande
 > [!NOTE]
 > Par défaut, Resource Governor n’empêche pas une demande de continuer si le temps maximal est dépassé. Toutefois, un événement sera généré. Pour plus d’informations, consultez [Classe d’événements CPU Threshold Exceeded](../relational-databases/event-classes/cpu-threshold-exceeded-event-class.md).
 > [!IMPORTANT]
-> À compter de [!INCLUDE[ssSQL15](sssql16-md.md)]SP2 et de [!INCLUDE[ssSQL17](sssql17-md.md)] CU3, quand [l’indicateur de trace 2422](../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) est utilisé, Resource Governor abandonne une demande en cas de dépassement de la durée maximale.
+> À compter de [!INCLUDE[sssql16-md](sssql16-md.md)]SP2 et de [!INCLUDE[ssSQL17](sssql17-md.md)] CU3, quand [l’indicateur de trace 2422](../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) est utilisé, Resource Governor abandonne une demande en cas de dépassement de la durée maximale.
 
 REQUEST_MEMORY_GRANT_TIMEOUT_SEC = *value*</br>
 Spécifie la durée maximale, en secondes, pendant laquelle une requête peut attendre qu’une allocation de mémoire (mémoire tampon de travail) devienne disponible. *value* doit être égal à 0 ou un entier positif. La valeur par défaut de *value*, 0, utilise un calcul interne basé sur le coût de requête pour déterminer le délai maximal.
@@ -97,7 +97,7 @@ Associe le groupe de charge de travail au pool de ressources défini par l’uti
 > Les groupes de charges de travail et les pools de ressources prédéfinis utilisent tous des noms minuscules, tels que "default". Ce facteur doit être pris en considération pour les serveurs qui utilisent un classement qui respecte la casse. Les serveurs avec un classement qui ne respecte pas la casse, tel que SQL_Latin1_General_CP1_CI_AS, traitent "default" et "Default" comme identiques.
 
 EXTERNAL external_pool_name | "default"</br>
-**S’applique à :** [!INCLUDE[ssNoVersion](ssnoversion-md.md)] (à compter de [!INCLUDE[ssSQL15](sssql16-md.md)]).
+**S’applique à :** [!INCLUDE[ssNoVersion](ssnoversion-md.md)] (à compter de [!INCLUDE[sssql16-md](sssql16-md.md)]).
 
 Le groupe de charge de travail peut spécifier un pool de ressources externes. Vous pouvez définir un groupe de charge de travail et l’associer à deux pools :
 
@@ -106,7 +106,7 @@ Le groupe de charge de travail peut spécifier un pool de ressources externes. V
 
 ## <a name="remarks"></a>Notes 
 
-Quand `REQUEST_MEMORY_GRANT_PERCENT` est utilisé, la création d’index est autorisée à utiliser une mémoire d’espace de travail supérieure à celle qui lui a été initialement allouée, afin d’améliorer les performances. Cette gestion spéciale est prise en charge par le gouverneur de ressources dans [!INCLUDE[ssCurrent](sscurrent-md.md)]. Toutefois, l'allocation initiale et toute allocation de mémoire supplémentaire sont limitées par les paramètres du pool de ressources et du groupe de charges de travail.
+Quand `REQUEST_MEMORY_GRANT_PERCENT` est utilisé, la création d’index est autorisée à utiliser une mémoire d’espace de travail supérieure à celle qui lui a été initialement allouée, afin d’améliorer les performances. Cette gestion spéciale est prise en charge par le gouverneur de ressources dans [!INCLUDE[ssCurrent](ssnoversion-md.md)]. Toutefois, l'allocation initiale et toute allocation de mémoire supplémentaire sont limitées par les paramètres du pool de ressources et du groupe de charges de travail.
 
 La limite `MAX_DOP` est définie par [tâche](../relational-databases/system-dynamic-management-views/sys-dm-os-tasks-transact-sql.md). Il ne s’agit pas d’une limite par [requête](../relational-databases/system-dynamic-management-views/sys-dm-exec-requests-transact-sql.md). Cela signifie que lors d’une exécution de requête parallèle, une requête unique peut générer plusieurs tâches qui sont affectées à un [planificateur](../relational-databases/system-dynamic-management-views/sys-dm-os-tasks-transact-sql.md). Pour plus d’informations, consultez le [Guide de l’architecture des threads et des tâches](../relational-databases/thread-and-task-architecture-guide.md).
 

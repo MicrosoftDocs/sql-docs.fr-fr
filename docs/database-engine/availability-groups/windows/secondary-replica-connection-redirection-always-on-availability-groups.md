@@ -18,24 +18,24 @@ ms.assetid: ''
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15'
-ms.openlocfilehash: 8fb07363cd52de514c646cff3d482b38f76493b3
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: ac4900e284d1e83ef0945e1d0082279c06414b0b
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643310"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236676"
 ---
 # <a name="secondary-to-primary-replica-readwrite-connection-redirection-always-on-availability-groups"></a>Redirection de connexion en lecture/écriture depuis un réplica secondaire vers le réplica principal (groupes de disponibilité Always On)
 
 [!INCLUDE[appliesto](../../../includes/applies-to-version/sqlserver2019.md)]
 
-[!INCLUDE[sssqlv15-md](../../../includes/sssqlv15-md.md)] CTP 2.0 permet désormais la *redirection de connexion en lecture/écriture depuis un réplica secondaire vers le réplica principal* pour les groupes de disponibilité AlwaysOn. La redirection de connexion en lecture/écriture est disponible pour toutes les plateformes de système d’exploitation. Elle permet de rediriger les connexions d’applications clientes vers le réplica principal, quel que soit le serveur cible spécifié dans la chaîne de connexion. 
+[!INCLUDE[sssql19-md](../../../includes/sssql19-md.md)] CTP 2.0 permet désormais la *redirection de connexion en lecture/écriture depuis un réplica secondaire vers le réplica principal* pour les groupes de disponibilité AlwaysOn. La redirection de connexion en lecture/écriture est disponible pour toutes les plateformes de système d’exploitation. Elle permet de rediriger les connexions d’applications clientes vers le réplica principal, quel que soit le serveur cible spécifié dans la chaîne de connexion. 
 
 Par exemple, la chaîne de connexion peut cibler un réplica secondaire. Selon la configuration du réplica de groupe de disponibilité et les paramètres de la chaîne de connexion, la connexion peut être automatiquement redirigée vers le réplica principal. 
 
 ## <a name="use-cases"></a>Cas d'utilisation
 
-Dans les versions antérieures à la [!INCLUDE[sssqlv15-md](../../../includes/sssqlv15-md.md)], l’écouteur du groupe de disponibilité et la ressource de cluster correspondante redirigent le trafic utilisateur vers le réplica principal afin de garantir la reconnexion après un basculement. La [!INCLUDE[sssqlv15-md](../../../includes/sssqlv15-md.md)] continue de prendre en charge la fonctionnalité d’écouteur du groupe de disponibilité, et permet de rediriger la connexion de réplica pour les scénarios qui ne peuvent pas inclure d’écouteur. Par exemple :
+Dans les versions antérieures à la [!INCLUDE[sssql19-md](../../../includes/sssql19-md.md)], l’écouteur du groupe de disponibilité et la ressource de cluster correspondante redirigent le trafic utilisateur vers le réplica principal afin de garantir la reconnexion après un basculement. La [!INCLUDE[sssql19-md](../../../includes/sssql19-md.md)] continue de prendre en charge la fonctionnalité d’écouteur du groupe de disponibilité, et permet de rediriger la connexion de réplica pour les scénarios qui ne peuvent pas inclure d’écouteur. Par exemple :
 
 * La technologie de cluster qui est intégrée aux groupes de disponibilité SQL Server ne propose pas d’écouteur. 
 * Une configuration à plusieurs sous-réseaux comme dans le cloud, ou une adresse IP flottante à plusieurs sous-réseaux avec Pacemaker où les configurations sont complexes, sujettes aux erreurs et difficiles à corriger en raison des nombreux composants impliqués
@@ -52,7 +52,7 @@ Pour qu’un réplica secondaire redirige les requêtes de connexion en lecture/
 
 Pour configurer la redirection des connexions en lecture/écriture, définissez `READ_WRITE_ROUTING_URL` pour le réplica principal lorsque vous créez le groupe de disponibilité. 
 
-Dans [!INCLUDE[sssqlv15-md](../../../includes/sssqlv15-md.md)], `READ_WRITE_ROUTING_URL` a été ajouté aux spécifications `<add_replica_option>`. Consultez les rubriques suivantes : 
+Dans [!INCLUDE[sssql19-md](../../../includes/sssql19-md.md)], `READ_WRITE_ROUTING_URL` a été ajouté aux spécifications `<add_replica_option>`. Consultez les rubriques suivantes : 
 
 * [CREATE AVAILABILITY GROUP](../../../t-sql/statements/create-availability-group-transact-sql.md)
 * [ALTER AVAILABILITY GROUP](../../../t-sql/statements/alter-availability-group-transact-sql.md)
@@ -67,7 +67,7 @@ Par défaut, la redirection des connexions de réplica en lecture/écriture n’
 |`ApplicationIntent=ReadWrite`<br/> Default|Échec des connexions|Échec des connexions|Réussite des connexions<br/>Réussite des lectures<br/>Échec des écritures|
 |`ApplicationIntent=ReadOnly`|Échec des connexions|Réussite des connexions|Réussite des connexions
 
-Le tableau précédant montre le comportement par défaut, qui est identique à celui des versions de SQL Server antérieures à la [!INCLUDE[sssqlv15-md](../../../includes/sssqlv15-md.md)]. 
+Le tableau précédant montre le comportement par défaut, qui est identique à celui des versions de SQL Server antérieures à la [!INCLUDE[sssql19-md](../../../includes/sssql19-md.md)]. 
 
 ### <a name="primary_roleread_write_routing_url-set"></a>PRIMARY_ROLE(READ_WRITE_ROUTING_URL) défini 
 

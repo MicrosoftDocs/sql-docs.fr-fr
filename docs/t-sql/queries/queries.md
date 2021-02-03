@@ -7,25 +7,25 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: 5ff02a32-e8d3-479c-ae8b-07581e41f5f8
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: e79bf08e7cbd4364d473a96032e226758b724134
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: abe6b791139a4fbc110b4aeb43e0de267a927e96
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460922"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99235998"
 ---
 # <a name="queries"></a>Requêtes
 
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-  Le langage de manipulation de données (DML, Data Manipulation Language) fournit les éléments de langage utilisés pour récupérer et utiliser des données dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et SQL Database. La plupart fonctionne également dans [!INCLUDE[ssSDW](../../includes/sssdwfull-md.md)] et [!INCLUDE[ssPDW](../../includes/sspdw-md.md)] (pour plus d’informations, consultez chaque instruction). Utilisez ces instructions pour ajouter, modifier, interroger ou supprimer des données depuis une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
+  Le langage de manipulation de données (DML, Data Manipulation Language) fournit les éléments de langage utilisés pour récupérer et utiliser des données dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] et SQL Database. La plupart fonctionne également dans [!INCLUDE[ssSDW](../../includes/sssdwfull-md.md)] et [!INCLUDE[ssPDW](../../includes/sspdw-md.md)] (pour plus d’informations, consultez chaque instruction). Utilisez ces instructions pour ajouter, modifier, interroger ou supprimer des données depuis une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
 ## <a name="in-this-section"></a>Dans cette section  
  Le tableau suivant répertorie les instructions DML utilisées par[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  

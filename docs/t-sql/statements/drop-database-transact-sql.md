@@ -1,13 +1,13 @@
 ---
 description: DROP DATABASE (Transact-SQL)
-title: DROP DATABASE (Transact-SQL) | Microsoft Docs
+title: DROP DATABASE (Transact-SQL)
 ms.custom: ''
 ms.date: 02/21/2019
 ms.prod: sql
 ms.prod_service: sql-data-warehouse, database-engine, pdw, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP DATABASE
 - DROP_DATABASE_TSQL
@@ -22,16 +22,15 @@ helpviewer_keywords:
 - databases [SQL Server], dropping
 - DROP DATABASE statement
 - database removal [SQL Server], DROP DATABASE statement
-ms.assetid: 477396a9-92dc-43c9-9b97-42c8728ede8e
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: fa18ed40692767751703f72f9e48e91180bf797f
-ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
+ms.openlocfilehash: ffdf0615671d2f3e019bccde83159bdb75eddcdd
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98688831"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236280"
 ---
 # <a name="drop-database-transact-sql"></a>DROP DATABASE (Transact-SQL)
 
@@ -57,8 +56,8 @@ DROP DATABASE database_name [;]
 
 ## <a name="arguments"></a>Arguments
 
-*IF EXISTS*
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md)).
+ *IF EXISTS*  
+**S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] à la [version actuelle](/troubleshoot/sql/general/determine-version-edition-update-level)).
 
 Supprime, de manière conditionnelle, la base de données uniquement si elle existe déjà.
 
@@ -80,7 +79,7 @@ Quand vous supprimez une base de données, vous devez effectuer une sauvegarde d
 Si vous supprimez une base de données, celle-ci l'est également d'une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Il en est de même pour les fichiers disque physiques utilisés par la base de données. Si la base de données ou l'un de ses fichiers est hors connexion lors de la suppression, les fichiers disque ne sont pas supprimés. Ces fichiers peuvent être supprimés manuellement à l'aide de l'Explorateur Windows. Pour supprimer une base de données du serveur actif sans supprimer les fichiers du système de fichiers, utilisez [sp_detach_db](../../relational-databases/system-stored-procedures/sp-detach-db-transact-sql.md).
 
 > [!WARNING]
-> Vous pouvez supprimer une base de données qui est associée à des sauvegardes FILE_SNAPSHOT, mais les fichiers de base de données qui sont associés à des instantanés ne sont pas supprimés pour éviter l’invalidation des sauvegardes qui font référence à ces fichiers. Le fichier est tronqué, mais il n’est pas supprimé physiquement afin de conserver les sauvegardes FILE_SNAPSHOT. Pour plus d’informations, voir [SQL Server Backup and Restore with Microsoft Azure Blob Storage Service](../../relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service.md)(en anglais). **S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] jusqu’à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md).
+> Vous pouvez supprimer une base de données qui est associée à des sauvegardes FILE_SNAPSHOT, mais les fichiers de base de données qui sont associés à des instantanés ne sont pas supprimés pour éviter l’invalidation des sauvegardes qui font référence à ces fichiers. Le fichier est tronqué, mais il n’est pas supprimé physiquement afin de conserver les sauvegardes FILE_SNAPSHOT. Pour plus d’informations, voir [SQL Server Backup and Restore with Microsoft Azure Blob Storage Service](../../relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service.md)(en anglais). **S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] jusqu’à la [version actuelle](/troubleshoot/sql/general/determine-version-edition-update-level).
 
 ### [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]
 

@@ -16,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: 26ee85de-6e97-4318-b526-900924d96e62
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 7f773a1ee50395eeebd40e0f08672c324170ccf3
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: d015a1adf0bdd5e5f47b49a8dabb6783b8538b7e
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85883537"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250078"
 ---
 # <a name="create-a-server-audit-and-database-audit-specification"></a>Créer une spécification pour l’audit de serveur et l’audit de base de données
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cet article explique comment créer une spécification d’audit de serveur et d’audit de base de données dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] en utilisant [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
+  Cet article explique comment créer une spécification d’audit de serveur et d’audit de base de données dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] en utilisant [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
   
  L’audit d’une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ou d’une base de données [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] implique le suivi et la journalisation des événements qui se produisent sur le système. L’objet *Audit SQL Server* collecte une seule instance des actions et des groupes d’actions au niveau du serveur ou au niveau de la base de données à superviser. L'audit s'effectue au niveau de l'instance [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Vous pouvez exécuter plusieurs audits par instance [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . L’objet *Spécification d’audit de niveau base de données* appartient à un audit. Vous pouvez créer une spécification d'audit de base de données par base de données SQL Server et par audit. Pour plus d’informations, consultez [Audit SQL Server &#40;Moteur de base de données&#41;](../../../relational-databases/security/auditing/sql-server-audit-database-engine.md).  
   
@@ -76,7 +76,7 @@ ms.locfileid: "85883537"
      Spécifie les groupes d'actions d'audit de niveau base de données et les actions d'audit à capturer. Pour obtenir la liste d’actions d’audit et de groupes d’actions d’audit au niveau de la base de données, ainsi qu’une description des événements qu’ils contiennent, consultez [Actions et groupes d’actions SQL Server Audit](../../../relational-databases/security/auditing/sql-server-audit-action-groups-and-actions.md).  
   
      **Schéma d'objet**  
-     Affiche le schéma du **Nom de l’objet**spécifié.  
+     Affiche le schéma du **Nom de l’objet** spécifié.  
   
      **Nom de l’objet**  
      Nom de l'objet à auditer. Cette option est disponible uniquement pour les actions d’audit. Elle ne s’applique pas aux groupes d’audit.  

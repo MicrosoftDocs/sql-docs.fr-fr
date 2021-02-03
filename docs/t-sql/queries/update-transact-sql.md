@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - UPDATE_TSQL
 - UPDATE
@@ -39,17 +39,17 @@ ms.assetid: 40e63302-0c68-4593-af3e-6d190181fee7
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 00ff65b2c1007f8c205bc30e27c48b5282b882b9
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4dde2d907d13a0f720f925fc33f9e7cb0ba708b5
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464210"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237804"
 ---
 # <a name="update-transact-sql"></a>UPDATE (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-  Modifie les données existantes d'une table ou d'une vue dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Pour obtenir des exemples, consultez [Exemples](#UpdateExamples).  
+  Modifie les données existantes d'une table ou d'une vue dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. Pour obtenir des exemples, consultez [Exemples](#UpdateExamples).  
   
  ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   

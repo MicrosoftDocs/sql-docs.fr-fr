@@ -16,12 +16,12 @@ ms.assetid: 29816a41-f105-4414-8be1-070675d62e84
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 35f08a014fd1abbc8af6db994ba4c2d9b85a0bd4
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: f31a17d3f8bf2285bc41c7462deec4e53008efd1
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97405571"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237074"
 ---
 # <a name="provision-always-encrypted-keys-using-sql-server-management-studio"></a>Provisionner des clés Always Encrypted avec SQL Server Management Studio
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb.md)]
@@ -50,7 +50,7 @@ La boîte de dialogue **Nouvelle clé principale de colonne** vous permet de gé
    
     Pour plus d’informations sur les magasins de clés ci-dessus, consultez [Créer et stocker des clés principales de colonne pour Always Encrypted](../../../relational-databases/security/encryption/create-and-store-column-master-keys-always-encrypted.md).
 
-5. Si vous utilisez [!INCLUDE [sssqlv15-md](../../../includes/sssqlv15-md.md)] et que votre instance SQL Server est configurée avec une enclave sécurisée, vous pouvez cocher la case **Autoriser les calculs d’enclave** pour rendre la clé principale activée pour les enclaves. Pour plus d’informations, consultez [Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves.md). 
+5. Si vous utilisez [!INCLUDE [sssql19-md](../../../includes/sssql19-md.md)] et que votre instance SQL Server est configurée avec une enclave sécurisée, vous pouvez cocher la case **Autoriser les calculs d’enclave** pour rendre la clé principale activée pour les enclaves. Pour plus d’informations, consultez [Always Encrypted avec enclaves sécurisées](always-encrypted-enclaves.md). 
 
     > [!NOTE]
     > La case à cocher **Autoriser les calculs d’enclave** n’apparaît pas si votre instance SQL Server n’est pas configurée correctement avec une enclave sécurisée.

@@ -23,12 +23,12 @@ ms.assetid: 925b42e0-c5ea-4829-8ece-a53c6cddad3b
 author: pmasl
 ms.author: jroth
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 02ddc1ad96f45ba67ed613ee7446d8a1c12e1e5b
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 3eb9fd5897029fedb0e53378ecbe5f6c12f635ef
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171401"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237656"
 ---
 # <a name="thread-and-task-architecture-guide"></a>guide d’architecture de thread et de tâche
 [!INCLUDE [SQL Server Azure SQL Database](../includes/applies-to-version/sql-asdb.md)]
@@ -74,7 +74,7 @@ En résumé, une **requête** peut générer une ou plusieurs **tâches** pour e
 > -  Worker 2 exécute des tâches subordonnées plus courtes et, par conséquent, doit être généré avant l’épuisement de son quantum complet.     
 >
 > Dans ce scénario et jusqu’à [!INCLUDE[ssSQL14](../includes/sssql14-md.md)], Worker 1 est autorisé à monopoliser le planificateur en faisant plus de temps quantum global.   
-> À partir de [!INCLUDE[ssSQL15](../includes/sssql16-md.md)], la planification coopérative prend en compte la planification du déficit volumineux (LDF). Avec la planification LDF, les modèles d’utilisation quantum sont surveillés et un thread de travail ne monopolise pas un planificateur. Dans le même scénario, Worker 2 est autorisé à consommer des quantums répétitifs avant que Worker 1 ne soit autorisé à plus de quantum, ce qui empêche Worker 1 de monopoliser le planificateur dans un modèle peu convivial.
+> À partir de [!INCLUDE[sssql15-md](../includes/sssql16-md.md)], la planification coopérative prend en compte la planification du déficit volumineux (LDF). Avec la planification LDF, les modèles d’utilisation quantum sont surveillés et un thread de travail ne monopolise pas un planificateur. Dans le même scénario, Worker 2 est autorisé à consommer des quantums répétitifs avant que Worker 1 ne soit autorisé à plus de quantum, ce qui empêche Worker 1 de monopoliser le planificateur dans un modèle peu convivial.
 
 ### <a name="scheduling-parallel-tasks"></a>Planification de tâches parallèles
 Imaginez une [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] configurée avec MaxDOP 8, et l’affinité du processeur est configurée pour 24 UC (planificateurs) sur les nœuds NUMA 0 et 1. Les planificateurs de 0 à 11 appartiennent au nœud NUMA 0, les planificateurs de 12 à 23 appartiennent au nœud NUMA 1. Une application envoie la requête suivante (request) au [!INCLUDE[ssde_md](../includes/ssde_md.md)] :

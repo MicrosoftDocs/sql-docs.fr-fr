@@ -28,12 +28,12 @@ ms.assetid: 98a80238-7409-4708-8a7d-5defd9957185
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: c98d84c8e3bc08bfae13c149cfc0487c57e40008
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 259e58dcf9ef713a9bb8787a63ac8cbf3a349c88
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171571"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237732"
 ---
 # <a name="database-checkpoints-sql-server"></a>Points de contrôle de base de données (SQL Server)
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -107,11 +107,11 @@ En cas de panne système, les points de contrôle indirects fournissent un temps
 Une charge de travail transactionnelle en ligne sur une base de données configurée pour les points de contrôle indirects peut rencontrer une dégradation des performances. Cela est dû au fait que l'enregistreur en arrière-plan utilisé par le point de contrôle indirect augmente parfois la charge d'écriture totale pour une instance de serveur.  
  
 > [!IMPORTANT]
-> Le point de contrôle indirect est le comportement par défaut pour les nouvelles bases de données créées dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], notamment les bases de données Model et TempDB.          
+> Le point de contrôle indirect est le comportement par défaut pour les nouvelles bases de données créées dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], notamment les bases de données Model et TempDB.          
 > Les bases de données qui ont été mises à niveau sur place ou restaurées à partir d’une version précédente de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utiliseront le comportement de point de contrôle automatique précédent, sauf si elles sont modifiées explicitement pour utiliser le point de contrôle indirect.       
 
 ### <a name="improved-indirect-checkpoint-scalability"></a><a name="ctp23"></a> Scalabilité du point de contrôle indirect améliorée
-Dans les versions antérieures à [!INCLUDE[ssNoVersion](../../includes/sssqlv15-md.md)], vous pouvez rencontrer des erreurs de planificateur improductives lorsqu’il existe une base de données qui génère un grand nombre de pages de modifications, comme `tempdb`. [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] introduit une meilleure scalabilité pour le point de contrôle indirect, ce qui devrait permettre d’éviter ces erreurs sur les bases de données dont la charge de travail `UPDATE`/`INSERT` est importante.
+Dans les versions antérieures à [!INCLUDE[ssNoVersion](../../includes/sssql19-md.md)], vous pouvez rencontrer des erreurs de planificateur improductives lorsqu’il existe une base de données qui génère un grand nombre de pages de modifications, comme `tempdb`. [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] introduit une meilleure scalabilité pour le point de contrôle indirect, ce qui devrait permettre d’éviter ces erreurs sur les bases de données dont la charge de travail `UPDATE`/`INSERT` est importante.
   
 ##  <a name="internal-checkpoints"></a><a name="EventsCausingChkpt"></a> Points de contrôle internes  
 Les points de contrôle internes sont générés par les divers composants serveur pour garantir que les images de disque correspondent à l'état actuel du journal. Les points de contrôle internes sont générés en réponse aux événements suivants :  

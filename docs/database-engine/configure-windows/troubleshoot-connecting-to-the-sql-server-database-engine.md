@@ -13,12 +13,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: sqlfreshmay19
 ms.date: 11/25/2019
-ms.openlocfilehash: 2ef49ed5d3d46e4f5c5602972ea87347b686d9bb
-ms.sourcegitcommit: 8a8c89b0ff6d6dfb8554b92187aca1bf0f8bcc07
+ms.openlocfilehash: cd4dae49fb19532e9aee082e4046c4d79dbf0a82
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97617568"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237994"
 ---
 # <a name="troubleshoot-connecting-to-the-sql-server-database-engine"></a>Résoudre les problèmes de connexion au moteur de base de données SQL Server
 
@@ -108,7 +108,7 @@ Cette procédure utilise SQL Server Management Studio. Si Management Studio n’
    > [!NOTE]
    > Certains messages d’erreur transmis au client intentionnellement ne donnent pas suffisamment d’informations pour résoudre le problème. Il s’agit d’une fonctionnalité de sécurité pour éviter de fournir à un attaquant des informations sur SQL Server. Pour afficher les informations complètes sur l’erreur, consultez le journal des erreurs SQL Server. Les détails y sont fournis. 
 
-4. Si vous recevez l’erreur `18456 Login failed for user`, la rubrique Documentation en ligne [MSSQLSERVER_18456](../../relational-databases/errors-events/mssqlserver-18456-database-engine-error.md) contient des informations supplémentaires sur les codes d’erreur. En outre, le blog d’Aaron Bertrand comprend une liste complète des codes d’erreur à la page [Troubleshooting Error 18456](https://sqlblog.org/2011/01/14/troubleshooting-error-18456). Vous pouvez afficher le journal des erreurs avec SSMS (si vous pouvez vous connecter), dans la section Gestion de l’Explorateur d’objets. Sinon, vous pouvez afficher le journal des erreurs avec le programme Bloc-notes de Windows. L’emplacement par défaut varie en fonction de votre version et peut être modifié pendant l’installation. L’emplacement par défaut pour [!INCLUDE[ssSQL15_md](../../includes/sssqlv15-md.md)] est `C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Log\ERRORLOG`. 
+4. Si vous recevez l’erreur `18456 Login failed for user`, la rubrique Documentation en ligne [MSSQLSERVER_18456](../../relational-databases/errors-events/mssqlserver-18456-database-engine-error.md) contient des informations supplémentaires sur les codes d’erreur. En outre, le blog d’Aaron Bertrand comprend une liste complète des codes d’erreur à la page [Troubleshooting Error 18456](https://sqlblog.org/2011/01/14/troubleshooting-error-18456). Vous pouvez afficher le journal des erreurs avec SSMS (si vous pouvez vous connecter), dans la section Gestion de l’Explorateur d’objets. Sinon, vous pouvez afficher le journal des erreurs avec le programme Bloc-notes de Windows. L’emplacement par défaut varie en fonction de votre version et peut être modifié pendant l’installation. L’emplacement par défaut pour [!INCLUDE[sssql19-md](../../includes/sssql19-md.md)] est `C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Log\ERRORLOG`. 
 
 5. Si vous pouvez vous connecter à l’aide de la mémoire partagée, testez la connexion à l’aide de TCP. Vous pouvez forcer une connexion TCP en spécifiant `tcp:` avant le nom. Par exemple :
 

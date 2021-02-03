@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.assetid: 6a0c9b6a-cf71-4311-82f2-12c445f63935
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: e1dcbea42043d1077dd2b0c9e0f1127c9319842b
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: cc9fa042411cdbd308ea40ae9584f039f155dc29
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170741"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236134"
 ---
 # <a name="sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service"></a>Sauvegarde et restauration SQL Server avec le service de stockage d’objets blob Microsoft Azure
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "98170741"
   
  SQL Server prend en charge le stockage des sauvegardes dans le service de stockage d’objets blob Microsoft Azure comme suit :  
   
--   **Gérer vos sauvegardes dans Microsoft Azure :** à l’aide des mêmes méthodes que celles utilisées pour sauvegarder sur disque (DISK) et sur bande (TAPE), réalisez maintenant vos sauvegardes dans le stockage Microsoft Azure en spécifiant une URL comme destination de sauvegarde. Utilisez cette fonctionnalité pour sauvegarder ou configurer manuellement votre propre stratégie de sauvegarde comme vous le feriez pour un stockage local ou d'autres options hors site. Cette fonctionnalité est également connue sous le nom **Sauvegarde SQL Server vers une URL**. Pour plus d’informations, consultez [SQL Server Backup to URL](../../relational-databases/backup-restore/sql-server-backup-to-url.md). Cette fonctionnalité est disponible dans SQL Server 2012 SP1 CU2 ou version ultérieure. Cette fonctionnalité a été améliorée dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] pour fournir des performances et des fonctionnalités supplémentaires via l’utilisation d’objets blob de blocs, de signatures d’accès partagé et d’entrelacements.  
+-   **Gérer vos sauvegardes dans Microsoft Azure :** à l’aide des mêmes méthodes que celles utilisées pour sauvegarder sur disque (DISK) et sur bande (TAPE), réalisez maintenant vos sauvegardes dans le stockage Microsoft Azure en spécifiant une URL comme destination de sauvegarde. Utilisez cette fonctionnalité pour sauvegarder ou configurer manuellement votre propre stratégie de sauvegarde comme vous le feriez pour un stockage local ou d'autres options hors site. Cette fonctionnalité est également connue sous le nom **Sauvegarde SQL Server vers une URL**. Pour plus d’informations, consultez [SQL Server Backup to URL](../../relational-databases/backup-restore/sql-server-backup-to-url.md). Cette fonctionnalité est disponible dans SQL Server 2012 SP1 CU2 ou version ultérieure. Cette fonctionnalité a été améliorée dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] pour fournir des performances et des fonctionnalités supplémentaires via l’utilisation d’objets blob de blocs, de signatures d’accès partagé et d’entrelacements.  
   
     > [!NOTE]  
     >  Pour les versions SQL Server antérieures à SQL Server 2012 SP1 CU2, utilisez le complément SQL Server Backup to Microsoft Azure Tool afin de créer rapidement et facilement des sauvegardes dans le stockage Microsoft Azure. Pour plus d'informations, consultez le [centre de téléchargement](https://go.microsoft.com/fwlink/?LinkID=324399).  
@@ -42,7 +42,7 @@ ms.locfileid: "98170741"
 -   Stockage hors site flexible, fiable et illimité : le stockage de vos sauvegardes dans le service d’objets blob Microsoft Azure peut représenter une option hors site pratique, flexible et facile d'accès. La création d'un stockage hors site pour vos sauvegardes [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut être aussi simple que la modification de vos scripts/tâches existants. En principe, le stockage hors site doit être suffisamment éloigné de l'emplacement de la base de données de production pour empêcher qu'un éventuel sinistre n'affecte tous les emplacements (bases de données hors site et de production). En choisissant de géorépliquer le stockage d'objets blob, vous disposez d'un niveau de protection supplémentaire au cas où un sinistre affecterait l'ensemble de la région. En outre, les sauvegardes restent accessibles à partir de n'importe quel endroit et à tout moment, et vous pouvez y accéder facilement pour les restaurations.  
   
     > [!IMPORTANT]  
-    >  Grâce à l’utilisation d’objets blob de blocs dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], vous pouvez distribuer votre jeu de sauvegarde pour prendre en charge des tailles de fichiers de sauvegarde jusqu’à 12,8 To.  
+    >  Grâce à l’utilisation d’objets blob de blocs dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], vous pouvez distribuer votre jeu de sauvegarde pour prendre en charge des tailles de fichiers de sauvegarde jusqu’à 12,8 To.  
   
 -   Archive de sauvegarde : le service de stockage d’objets blob Microsoft Azure offre une meilleure alternative à l’option de stockage sur bande souvent utilisée pour archiver les sauvegardes. Le stockage sur bande peut nécessiter le transport physique vers un emplacement hors site, ainsi que des mesures de protection des supports. En stockant vos sauvegardes dans le service de Stockage Blob Microsoft Azure, vous disposez d’une option d’archivage instantanée, hautement disponible et durable.  
   

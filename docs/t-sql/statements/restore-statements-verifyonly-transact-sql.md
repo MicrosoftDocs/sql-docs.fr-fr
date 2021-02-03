@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - VERIFYONLY
 - RESTORE VERIFYONLY
@@ -24,12 +24,12 @@ ms.assetid: cba3b6a0-b48e-4c94-812b-5b3cbb408bd6
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016||>=sql-server-linux-2017
-ms.openlocfilehash: eeae562c4cfbf093d3b7237a044c51084331e8a9
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: b76a49d34d0603d62ee7160bb2f4ef9c32d482a7
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172241"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237799"
 ---
 # <a name="restore-statements---verifyonly-transact-sql"></a>RESTORE Statements - VERIFYONLY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md.md )]
@@ -110,7 +110,7 @@ FROM <backup_device> [ ,...n ]
 >  RESTORE VERIFYONLY ne fonctionne pas sur un instantané de base de données. Pour vérifier un instantané de base de données avant une opération de restauration, vous pouvez exécuter DBCC CHECKDB.  
   
 > [!NOTE]  
->  Avec les sauvegardes d’instantanés, RESTORE VERIFYONLY vérifie l’existence des instantanés aux emplacements spécifiés dans le fichier de sauvegarde. Les sauvegardes d’instantanés sont une nouvelle fonctionnalité de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]. Pour plus d’informations sur la sauvegarde d’instantanés, consultez [Sauvegarde d’instantanés de fichiers pour les fichiers de base de données dans Azure](../../relational-databases/backup-restore/file-snapshot-backups-for-database-files-in-azure.md).  
+>  Avec les sauvegardes d’instantanés, RESTORE VERIFYONLY vérifie l’existence des instantanés aux emplacements spécifiés dans le fichier de sauvegarde. Les sauvegardes d’instantanés sont une nouvelle fonctionnalité de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]. Pour plus d’informations sur la sauvegarde d’instantanés, consultez [Sauvegarde d’instantanés de fichiers pour les fichiers de base de données dans Azure](../../relational-databases/backup-restore/file-snapshot-backups-for-database-files-in-azure.md).  
   
 ## <a name="security"></a>Sécurité  
  Une opération de sauvegarde peut éventuellement spécifier des mots de passe pour un support de sauvegarde, un jeu de sauvegarde ou les deux. Lorsqu'un mot de passe a été défini sur un support de sauvegarde ou un jeu de sauvegarde, vous devez entrer le ou les mots de passe corrects dans l'instruction RESTORE. Ces mots de passe empêchent les opérations non autorisées de restauration et d'ajouts de jeux de sauvegarde au support à l'aide d'outils [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. En revanche, un mot de passe n'empêche pas d'écraser les supports en cas d'utilisation de l'option FORMAT de l'instruction BACKUP.  

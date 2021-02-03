@@ -15,12 +15,12 @@ ms.assetid: 83a4aa90-1c10-4de6-956b-7c3cd464c2d2
 author: rothja
 ms.author: jroth
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 22e1a4832e3ef02d2b596ecd0dd4af3a08a7ec6e
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: ae2204f4d4562b35cde84b66608efee9dc727562
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171871"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236475"
 ---
 # <a name="pages-and-extents-architecture-guide"></a>Guide d’architecture des pages et des étendues
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -92,19 +92,19 @@ Les extensions constituent l'unité de base dans laquelle l'espace est géré. U
 
 Jusqu’à [!INCLUDE[ssSQL14](../includes/sssql14-md.md)] compris, [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] n’affecte pas d’étendues complètes aux tables possédant de petites quantités de données. Une nouvelle table ou un nouvel index affecte en général des pages issues d'extensions mixtes. Lorsque la table ou l'index atteint huit pages, il bascule à l'utilisation des extensions uniformes pour les allocations suivantes. Si vous créez un index sur une table existante qui possède un nombre de lignes suffisant pour générer huit pages dans l'index, toutes les allocations à l'index se trouvent dans des extensions uniformes. 
 
-À partir de [!INCLUDE[ssSQL15](../includes/sssql16-md.md)], la valeur par défaut pour la plupart des allocations dans une base de données utilisateur et tempdb consiste à utiliser des étendues uniformes, à l’exception des allocations appartenant aux huit premières pages d’une [chaîne IAM](#IAM). Les allocations pour les bases de données MASTER, msdb et model conservent toujours le comportement précédent. 
+À partir de [!INCLUDE[sssql15-md](../includes/sssql16-md.md)], la valeur par défaut pour la plupart des allocations dans une base de données utilisateur et tempdb consiste à utiliser des étendues uniformes, à l’exception des allocations appartenant aux huit premières pages d’une [chaîne IAM](#IAM). Les allocations pour les bases de données MASTER, msdb et model conservent toujours le comportement précédent. 
 
 > [!NOTE]
 > Jusqu'à [!INCLUDE[ssSQL14](../includes/sssql14-md.md)] compris, l’indicateur de trace 1118 peut être utilisé pour modifier l’allocation par défaut afin de toujours utiliser des extensions uniformes. Pour plus d’informations sur cet indicateur de trace, consultez [DBCC TRACEON - Indicateurs de Trace](../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md).   
 >   
-> À partir de [!INCLUDE[ssSQL15](../includes/sssql16-md.md)], la fonctionnalité fournie par l’indicateur de trace 1118 est automatiquement activée pour tempdb et toutes les bases de données utilisateur. Pour les bases de données utilisateur, ce comportement est contrôlé par l’option `SET MIXED_PAGE_ALLOCATION` de `ALTER DATABASE`, avec la valeur par défaut définie sur OFF, et l’indicateur de trace 1118 n’a aucun effet. Pour plus d’informations, consultez [Options SET d’ALTER DATABASE (Transact-SQL)](../t-sql/statements/alter-database-transact-sql-set-options.md).
+> À partir de [!INCLUDE[sssql15-md](../includes/sssql16-md.md)], la fonctionnalité fournie par l’indicateur de trace 1118 est automatiquement activée pour tempdb et toutes les bases de données utilisateur. Pour les bases de données utilisateur, ce comportement est contrôlé par l’option `SET MIXED_PAGE_ALLOCATION` de `ALTER DATABASE`, avec la valeur par défaut définie sur OFF, et l’indicateur de trace 1118 n’a aucun effet. Pour plus d’informations, consultez [Options SET d’ALTER DATABASE (Transact-SQL)](../t-sql/statements/alter-database-transact-sql-set-options.md).
 
 À partir de [!INCLUDE[ssSQL11](../includes/sssql11-md.md)], la fonction système `sys.dm_db_database_page_allocations` peut fournir des informations d’allocation de page pour une base de données, une table, un index et une partition.
 
 > [!IMPORTANT]
 > La fonction système `sys.dm_db_database_page_allocations` n’est pas documentée et est susceptible d’être modifiée. La compatibilité n'est pas garantie. 
 
-À partir de [!INCLUDE[sql-server-2019](../includes/sssqlv15-md.md)], la fonction système [sys.dm_db_page_info](../relational-databases/system-dynamic-management-views/sys-dm-db-page-info-transact-sql.md) est disponible et retourne des informations sur une page d’une base de données. La fonction retourne une ligne qui contient les informations d’en-tête de la page, notamment object_id, index_id et partition_id. Cette fonction rend superflue l’utilisation de `DBCC PAGE` dans la plupart des cas.
+À partir de [!INCLUDE[sql-server-2019](../includes/sssql19-md.md)], la fonction système [sys.dm_db_page_info](../relational-databases/system-dynamic-management-views/sys-dm-db-page-info-transact-sql.md) est disponible et retourne des informations sur une page d’une base de données. La fonction retourne une ligne qui contient les informations d’en-tête de la page, notamment object_id, index_id et partition_id. Cette fonction rend superflue l’utilisation de `DBCC PAGE` dans la plupart des cas.
 
 ## <a name="managing-extent-allocations-and-free-space"></a>Gestion des allocations des extensions et de l'espace libre 
 

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - INTO_TSQL
 - INSERT_INTO_TSQL
@@ -30,12 +30,12 @@ ms.assetid: b48d69e8-5a00-48bf-b2f3-19278a72dd88
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 7afde8d9db8beedc46ea597dc47e31877d170942
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 3ce1740def1f7d2ebd70ad611f3b7b489ca04f99
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172721"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99235855"
 ---
 # <a name="select---into-clause-transact-sql"></a>SELECT - Clause INTO (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -66,7 +66,7 @@ SELECT...INTO crée une table dans le groupe de fichiers par défaut et y insèr
  *groupe_fichiers*    
  Spécifie le nom du groupe de fichiers dans lequel créer la table. Si le groupe de fichiers spécifié n’existe pas dans la base de données, le moteur SQL Server lève une erreur.   
  
- **S’applique à :** [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 et versions ultérieures.
+ **S’applique à :** [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 et versions ultérieures.
   
 ## <a name="data-types"></a>Types de données  
  L'attribut FILESTREAM n'est pas transféré dans la nouvelle table. Les objets BLOB FILESTREAM sont copiés et stockés dans la nouvelle table en tant qu’objets BLOB **varbinary(max)** . Sans l’attribut FILESTREAM, le type de données **varbinary(max)** est limité à 2 Go. Si un objet BLOB FILESTREAM dépasse cette valeur, l'erreur 7119 se déclenche et l'instruction s'arrête.  
@@ -219,7 +219,7 @@ GO
 ### <a name="e-import-from-an-external-table-created-with-polybase"></a>E. Importer à partir d’une table externe créée avec PolyBase  
  Importez des données de Hadoop ou d’Azure Storage dans SQL Server à des fins de stockage permanent. Utilisez `SELECT INTO` pour importer des données référencées par une table externe en vue de leur stockage permanent dans SQL Server. Créez une table relationnelle à la volée, puis créez un index column-store en plus de la table.  
   
- **S’applique à :** [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+ **S’applique à :** [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
   
 ```sql
 -- Import data for car drivers into SQL Server to do more in-depth analysis.  
@@ -236,7 +236,7 @@ ORDER BY YearlyIncome;
 ### <a name="f-copying-the-data-from-one-table-to-another-and-create-the-new-table-on-a-specified-filegroup"></a>F. Copier les données d’une table vers une autre et créer la nouvelle table sur un groupe de fichiers spécifié
 L’exemple suivant illustre la création d’une table en tant que copie d’une autre table et son chargement dans un autre groupe de fichiers que le groupe de fichiers par défaut de l’utilisateur.
 
- **S’applique à :** [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 et versions ultérieures.
+ **S’applique à :** [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 et versions ultérieures.
 
 ```sql
 ALTER DATABASE [AdventureWorksDW2016] ADD FILEGROUP FG2;

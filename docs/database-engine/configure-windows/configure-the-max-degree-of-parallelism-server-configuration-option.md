@@ -17,12 +17,12 @@ ms.assetid: 86b65bf1-a6a1-4670-afc0-cdfad1558032
 author: markingmyname
 ms.author: maghan
 ms.custom: contperf-fy20q4
-ms.openlocfilehash: 7b0e4b8abf21d918e7d4d627c7ed82d5507394ec
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 4006ad1707d30d0a9147056ddfff8b71ae7643e1
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171061"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236968"
 ---
 # <a name="configure-the-max-degree-of-parallelism-server-configuration-option"></a>Configurer l'option de configuration de serveur max degree of parallelism
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "98171061"
   Cette rubrique explique comment configurer l’option de configuration de serveur **max degree of parallelism (MAXDOP)** dans SQL Server à l’aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Lorsqu’une instance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] s’exécute sur un ordinateur comportant plusieurs microprocesseurs ou processeurs, le [!INCLUDE[ssde_md](../../includes/ssde_md.md)] détecte si le parallélisme peut être utilisé. Le degré de parallélisme définit le nombre de processeurs employés pour exécuter une seule instruction, dans chaque exécution de plan parallèle. Vous pouvez utiliser l'option **max degree of parallelism** pour limiter le nombre de processeurs à utiliser lors de l'exécution des plans parallèles. Pour plus d’informations sur la limite définie par le **degré maximal de parallélisme (MAXDOP)** , consultez la section [Considérations](#Considerations) dans cette page. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en compte les plans d’exécution parallèle pour les requêtes, les opérations du langage de définition de données (DDL) d’index, les insertions parallèles, la modification de colonne en ligne, la collecte de statistiques parallèle et l’alimentation des curseurs statiques et de jeux de clés.
 
 > [!NOTE]
-> [!INCLUDE [sssqlv15-md](../../includes/sssqlv15-md.md)] offre désormais des recommandations automatiques de définition de l’option MAXDOP de configuration du serveur lors du processus d’installation en fonction du nombre de processeurs disponibles. L’interface utilisateur du programme d’installation vous permet d’accepter les paramètres recommandés ou d’entrer vos propres valeurs. Pour plus d’informations, consultez la [page Configuration du moteur de base de données - MaxDOP](../../sql-server/install/instance-configuration.md#maxdop).
+> [!INCLUDE [sssql19-md](../../includes/sssql19-md.md)] offre désormais des recommandations automatiques de définition de l’option MAXDOP de configuration du serveur lors du processus d’installation en fonction du nombre de processeurs disponibles. L’interface utilisateur du programme d’installation vous permet d’accepter les paramètres recommandés ou d’entrer vos propres valeurs. Pour plus d’informations, consultez la [page Configuration du moteur de base de données - MaxDOP](../../sql-server/install/instance-configuration.md#maxdop).
 
 ##  <a name="before-you-begin"></a><a name="BeforeYouBegin"></a> Avant de commencer  
   
@@ -55,9 +55,9 @@ ms.locfileid: "98171061"
 -   En plus des requêtes et des opérations d'index, cette option gère également le parallélisme de DBCC CHECKTABLE, DBCC CHECKDB et DBCC CHECKFILEGROUP. Vous pouvez désactiver les plans d'exécution parallèle pour ces instructions en utilisant l'indicateur de trace 2528. Pour plus d’informations, consultez [Indicateurs de trace &#40;Transact-SQL&#41;](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md).
 
 ###  <a name="recommendations"></a><a name="Recommendations"></a> <a name="Guidelines"></a> Recommandations  
-Avec [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], lors du démarrage du service, si [!INCLUDE[ssde_md](../../includes/ssde_md.md)] détecte plus de huit cœurs physiques par socket ou nœud NUMA au démarrage, des nœuds soft-NUMA sont créés automatiquement par défaut. [!INCLUDE[ssde_md](../../includes/ssde_md.md)] place les processeurs logiques du même cœur physique dans différents nœuds soft-NUMA. Les recommandations contenues dans le tableau ci-dessous ont pour but de conserver tous les threads de travail d’une requête parallèle au sein du même nœud soft-NUMA. Cela améliorera les performances des requêtes et la distribution des threads de travail entre les nœuds NUMA pour la charge de travail. Pour plus d’informations, consultez [Soft-NUMA](../../database-engine/configure-windows/soft-numa-sql-server.md).
+Avec [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], lors du démarrage du service, si [!INCLUDE[ssde_md](../../includes/ssde_md.md)] détecte plus de huit cœurs physiques par socket ou nœud NUMA au démarrage, des nœuds soft-NUMA sont créés automatiquement par défaut. [!INCLUDE[ssde_md](../../includes/ssde_md.md)] place les processeurs logiques du même cœur physique dans différents nœuds soft-NUMA. Les recommandations contenues dans le tableau ci-dessous ont pour but de conserver tous les threads de travail d’une requête parallèle au sein du même nœud soft-NUMA. Cela améliorera les performances des requêtes et la distribution des threads de travail entre les nœuds NUMA pour la charge de travail. Pour plus d’informations, consultez [Soft-NUMA](../../database-engine/configure-windows/soft-numa-sql-server.md).
 
-Depuis [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], suivez les directives suivantes quand vous configurez la valeur de configuration de serveur **max degree of parallelism** :
+Depuis [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], suivez les directives suivantes quand vous configurez la valeur de configuration de serveur **max degree of parallelism** :
 
 |Configurer le serveur|Nombre de processeurs|Assistance|
 |----------------|-----------------|-----------------|
@@ -67,7 +67,7 @@ Depuis [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], suivez les directives 
 |Serveur avec plusieurs nœuds NUMA|Plus de 16 processeurs logiques par nœud NUMA|Conservez MAXDOP à la moitié du nombre de processeurs logiques par nœud NUMA avec une valeur MAX de 16|
   
 > [!NOTE]
-> Le nœud NUMA dans la table ci-dessus fait référence à des nœuds soft-NUMA automatiquement créés par [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures ou des nœuds NUMA si soft-NUMA a été désactivé .   
+> Le nœud NUMA dans la table ci-dessus fait référence à des nœuds soft-NUMA automatiquement créés par [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures ou des nœuds NUMA si soft-NUMA a été désactivé .   
 >  Utilisez ces instructions lorsque vous définissez l’option max degree of parallelism pour les groupes de charge de travail du Resource Governor. Pour plus d’informations, consultez [CREATE WORKLOAD GROUP (Transact-SQL)](../../t-sql/statements/create-workload-group-transact-sql.md).
   
 De [!INCLUDE[ssKatmai](../../includes/ssKatmai-md.md)] à [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], utilisez les directives suivantes quand vous configurez la valeur de configuration de serveur **max degree of parallelism** :

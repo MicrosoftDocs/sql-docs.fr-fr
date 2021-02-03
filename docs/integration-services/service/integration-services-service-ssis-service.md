@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 2c785b3b-4a0c-4df7-b5cd-23756dc87842
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: a665d78d180d87fe0d412b025bcce75d509285d4
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 30d1635e0d58af970cae609fb2e3a6a7f2335791
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171201"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237741"
 ---
 # <a name="integration-services-service-ssis-service"></a>Service Integration Services (Service SSIS)
 
@@ -274,7 +274,7 @@ Lorsque vous installez [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.
 ```  
   
 ### <a name="modify-the-configuration-file-location"></a>Modifier l’emplacement du fichier de configuration  
- La clé de Registre **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\130\SSIS\ServiceConfigFile** spécifie l’emplacement et le nom du fichier de configuration utilisé par le service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]. La valeur par défaut de la clé de Registre est **C:\Program Files\Microsoft SQL Server\130\DTS\Binn\MsDtsSrvr.ini.xml**. Vous pouvez mettre à jour la valeur de la clé de Registre pour utiliser un nom et un emplacement différents pour le fichier de configuration. Notez que le numéro de version présent dans le chemin (120 pour SQL Server [!INCLUDE[ssSQL14_md](../../includes/sssql14-md.md)], 130 pour [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], etc.) varie selon la version de SQL Server.
+ La clé de Registre **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\130\SSIS\ServiceConfigFile** spécifie l’emplacement et le nom du fichier de configuration utilisé par le service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]. La valeur par défaut de la clé de Registre est **C:\Program Files\Microsoft SQL Server\130\DTS\Binn\MsDtsSrvr.ini.xml**. Vous pouvez mettre à jour la valeur de la clé de Registre pour utiliser un nom et un emplacement différents pour le fichier de configuration. Notez que le numéro de version présent dans le chemin (120 pour SQL Server [!INCLUDE[ssSQL14_md](../../includes/sssql14-md.md)], 130 pour [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], etc.) varie selon la version de SQL Server.
   
 > [!CAUTION]  
 >  La modification incorrecte du Registre peut entraîner de graves problèmes et nécessiter la réinstallation du système d'exploitation. [!INCLUDE[msCoName](../../includes/msconame-md.md)] ne garantit pas que les problèmes résultant d'une modification incorrecte du Registre peuvent être résolus. Avant de modifier le Registre, sauvegardez toutes vos données importantes. Pour plus d'informations sur la méthode de sauvegarde, de restauration et de modification du Registre, consultez l'article [!INCLUDE[msCoName](../../includes/msconame-md.md)] Description du Registre de Microsoft Windows [de la Base de connaissances](https://support.microsoft.com/kb/256986).  

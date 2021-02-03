@@ -18,12 +18,12 @@ ms.assetid: 5e0ef05a-8317-4c98-be20-b19d4cd78f12
 author: rothja
 ms.author: jroth
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 0271ca850648af434d225429976b4e111e49d498
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 9a14e09f0c914404261816b8edf84e0b4693ab65
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171381"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236312"
 ---
 # <a name="about-change-tracking-sql-server"></a>À propos du suivi des modifications (SQL Server)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -76,7 +76,7 @@ Le suivi des informations pour toutes les tables (celles pour lesquelles le suiv
 
 Chaque table activée pour le suivi des modifications a une table sur disque interne utilisée par les fonctions de suivi des modifications pour déterminer la version de modification et les lignes qui ont changé depuis une version particulière. Chaque fois que le thread de **nettoyage automatique** se réveille, il analyse toutes les bases de données utilisateur sur l’instance de SQL Server pour identifier les bases de données activées pour le suivi des modifications. En fonction du paramètre de période de rétention de la base de données, chaque table sur disque interne est purgée de ses enregistrements ayant expiré.
 
-Une procédure stockée a été ajoutée aux Service Packs pour [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] afin d’effectuer un nettoyage manuel des tables internes de suivi des modifications. Vous trouverez plus d’informations sur cette procédure stockée dans l’article [KB173157](https://support.microsoft.com/help/3173157/adds-a-stored-procedure-for-the-manual-cleanup-of-the-change-tracking-side-table-in-sql-server-2014-sp2-or-2016-sp1). 
+Une procédure stockée a été ajoutée aux Service Packs pour [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] afin d’effectuer un nettoyage manuel des tables internes de suivi des modifications. Vous trouverez plus d’informations sur cette procédure stockée dans l’article [KB173157](https://support.microsoft.com/help/3173157/adds-a-stored-procedure-for-the-manual-cleanup-of-the-change-tracking-side-table-in-sql-server-2014-sp2-or-2016-sp1). 
   
 ## <a name="see-also"></a>Voir aussi  
  [Activer et désactiver le suivi des modifications &#40;SQL Server&#41;](../../relational-databases/track-changes/enable-and-disable-change-tracking-sql-server.md)   

@@ -1,13 +1,13 @@
 ---
 description: DROP SYNONYM (Transact-SQL)
-title: DROP SYNONYM (Transact-SQL) | Microsoft Docs
+title: DROP SYNONYM (Transact-SQL)
 ms.custom: ''
 ms.date: 07/26/2017
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP SYNONYM
 - DROP_SYNONYM_TSQL
@@ -19,15 +19,14 @@ helpviewer_keywords:
 - removing synonyms
 - DROP SYNONYM statement
 - dropping synonyms
-ms.assetid: 23578932-e4de-4c39-a5a0-ce45139c4269
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 2a3dc4b5974059062815000f1671d1fa425137a7
-ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
+ms.openlocfilehash: a156c4c5bda031b079df53fa3f3796d271b62a1b
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98688873"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236212"
 ---
 # <a name="drop-synonym-transact-sql"></a>DROP SYNONYM (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -46,7 +45,7 @@ DROP SYNONYM [ IF EXISTS ] [ schema. ] synonym_name
 
 ## <a name="arguments"></a>Arguments
  *IF EXISTS*  
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md)).
+**S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] à la [version actuelle](/troubleshoot/sql/general/determine-version-edition-update-level)).
   
  Supprime, de manière conditionnelle, le synonyme uniquement s’il existe déjà.  
   

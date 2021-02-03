@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DATETIMEOFFSETFROMPARTS_TSQL
 - DATETIMEOFFSETFROMPARTS
@@ -19,12 +19,12 @@ ms.assetid: 463da1f4-b4b6-45a3-9a95-ea1f99575542
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: ab37520d60c482afccb40bde7392de2515a79753
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 9f8ce697a414d095e91214626b4ae4f8e1e2a83b
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101188"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237922"
 ---
 # <a name="datetimeoffsetfromparts-transact-sql"></a>DATETIMEOFFSETFROMPARTS (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -82,7 +82,7 @@ Valeur littérale entière qui spécifie la précision de la valeur **datetimeof
   
 L’argument *fractions* dépend de l’argument precision. Par exemple, pour une valeur precision égale à 7, chaque fraction représente 100 nanosecondes ; si elle est de 3, chaque fraction représente une milliseconde. Lorsque precision a la valeur zéro, la valeur de fractions doit également être zéro ; sinon, `DATETIMEOFFSETFROMPARTS` génère une erreur.  
   
-Cette fonction prend en charge la communication à distance vers des serveurs [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et versions ultérieures. Elle ne prend pas en charge la communication à distance vers des serveurs dont la version est antérieure à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].
+Cette fonction peut être exécutée à distance sur des serveurs [!INCLUDE[sssql11-md](../../includes/sssql11-md.md)] et versions ultérieures. Elle ne peut pas être exécutée à distance sur des serveurs dont la version est antérieure à [!INCLUDE[sssql11-md](../../includes/sssql11-md.md)].  
   
 ## <a name="examples"></a>Exemples  
   

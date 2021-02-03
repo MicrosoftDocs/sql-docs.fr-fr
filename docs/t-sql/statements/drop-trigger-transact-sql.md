@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP TRIGGER
 - DROP_TRIGGER_TSQL
@@ -25,12 +25,12 @@ helpviewer_keywords:
 ms.assetid: 092d0d71-9f1e-4e38-a1c4-2487adfa5b4e
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 6ef0daca8b2c593c5d451c25471cef73cf8034fa
-ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
+ms.openlocfilehash: 0be25328507c6afa210cd4d51817551395f94770
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98688942"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237762"
 ---
 # <a name="drop-trigger-transact-sql"></a>DROP TRIGGER (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -63,7 +63,7 @@ ON ALL SERVER
 
 ## <a name="arguments"></a>Arguments
  *IF EXISTS*  
- **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] jusqu’à la [version actuelle](../../sql-server/what-s-new-in-sql-server-2016.md), [!INCLUDE[sssds](../../includes/sssds-md.md)]).  
+ **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] jusqu’à la [version actuelle](/troubleshoot/sql/general/determine-version-edition-update-level), [!INCLUDE[sssds](../../includes/sssds-md.md)]).  
   
  Supprime, de manière conditionnelle, le déclencheur uniquement s’il existe déjà.  
   
@@ -107,7 +107,7 @@ ON ALL SERVER
 ## <a name="examples"></a>Exemples  
   
 ### <a name="a-dropping-a-dml-trigger"></a>R. Suppression d'un déclencheur DML  
- L'exemple suivant supprime le déclencheur `employee_insupd` de la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)]. (À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], vous pouvez utiliser la syntaxe DROP TRIGGER IF EXISTS.)  
+ L'exemple suivant supprime le déclencheur `employee_insupd` de la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)]. (À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], vous pouvez utiliser la syntaxe DROP TRIGGER IF EXISTS.)  
   
 ```sql  
 IF OBJECT_ID ('employee_insupd', 'TR') IS NOT NULL  

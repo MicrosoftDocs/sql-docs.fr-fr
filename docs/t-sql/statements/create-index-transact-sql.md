@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CREATE INDEX
 - INDEX
@@ -55,12 +55,12 @@ ms.assetid: d2297805-412b-47b5-aeeb-53388349a5b9
 author: pmasl
 ms.author: pelopes
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 3f1322f21ed7ad3f09f30a0f5a5e71e5614a8d47
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 8591620ce92aca8a6c272539721f20a8a64fd9ae
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98766236"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237096"
 ---
 # <a name="create-index-transact-sql"></a>CREATE INDEX (Transact-SQL)
 
@@ -90,7 +90,7 @@ CREATE UNIQUE INDEX i1 ON t1 (col1 DESC, col2 ASC, col3 DESC);
 
 **Scénario clé :**
 
-Depuis [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et [!INCLUDE[ssSDS](../../includes/sssds-md.md)], utilisez un index non-cluster sur un index columnstore pour améliorer les performances des requêtes d’entreposage de données. Pour plus d’informations, consultez [Index columnstore - Entrepôt de données](../../relational-databases/indexes/columnstore-indexes-data-warehouse.md).
+Depuis [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et [!INCLUDE[ssSDS](../../includes/sssds-md.md)], utilisez un index non-cluster sur un index columnstore pour améliorer les performances des requêtes d’entreposage de données. Pour plus d’informations, consultez [Index columnstore - Entrepôt de données](../../relational-databases/indexes/columnstore-indexes-data-warehouse.md).
 
 Pour d’autres types d’index, consultez :
 
@@ -250,7 +250,7 @@ Sauf indication contraire, le type d’index par défaut est NONCLUSTERED.
 *column*      
  Colonnes sur lesquelles l'index est basé. Spécifiez deux ou plusieurs noms de colonnes pour créer un index composite sur les valeurs combinées des colonnes spécifiées. Répertoriez les colonnes à inclure dans l’index composite, suivant l’ordre de priorité de tri, dans les parenthèses après *table_or_view_name*.
 
-Vous pouvez combiner jusqu’à 32 colonnes dans une même clé d’index composite. Toutes les colonnes d'une clé d'index composite doivent se trouver dans la même table ou la même vue. La taille maximale autorisée pour les valeurs d’index combinées est de 900 octets pour un index cluster, ou de 1 700 pour un index non-cluster. Les limites sont de 16 colonnes et de 900 octets pour les versions antérieures à [!INCLUDE[ssSDS](../../includes/sssds-md.md)] et à [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)].
+Vous pouvez combiner jusqu’à 32 colonnes dans une même clé d’index composite. Toutes les colonnes d'une clé d'index composite doivent se trouver dans la même table ou la même vue. La taille maximale autorisée pour les valeurs d’index combinées est de 900 octets pour un index cluster, ou de 1 700 pour un index non-cluster. Les limites sont de 16 colonnes et de 900 octets pour les versions antérieures à [!INCLUDE[ssSDS](../../includes/sssds-md.md)] et à [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)].
 
 Les colonnes ayant les types de données LOB (Large OBject) **ntext**, **text**, **varchar(max)** , **nvarchar(max)** , **varbinary(max)** , **xml** ou **image** ne peuvent pas être spécifiées comme colonnes clés pour un index. De plus, une définition de vue ne peut pas contenir des colonnes **ntext**, **text** ou **image**, même si elles ne sont pas référencées dans l’instruction CREATE INDEX.
 
@@ -351,7 +351,7 @@ Nom de la table ou de la vue à indexer.
 
 La vue doit être définie avec SCHEMABINDING pour pouvoir créer un index sur celle-ci. Un index cluster unique doit être créé sur une vue avant la création de tout index non cluster. Pour plus d'informations sur les vues indexées, consultez la section Remarques.
 
-Depuis [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], l’objet peut être une table stockée avec un index columnstore cluster.
+Depuis [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], l’objet peut être une table stockée avec un index columnstore cluster.
 
 [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] prend en charge le format de nom en trois parties _database_name_.[_schema_name_]._object_name_ quand *database_name* est la base de données active ou quand _database_name_ est `tempdb` et que _object_name_ commence par #.
 
@@ -498,7 +498,7 @@ Pour plus d’informations, consultez [Fonctionnement des opérations d’index 
 
 RESUMABLE **=** { ON | **OFF**}      
 
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
 
  Spécifie si une opération d’index en ligne peut être reprise.
 
@@ -510,7 +510,7 @@ L’opération de l’index ne peut pas être reprise.
 
 MAX_DURATION **=** *heure* [**MINUTES**] utilisé avec **RESUMABLE = ON** (nécessite **ONLINE = ON**)   
 
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
 
 Indique le temps (valeur entière spécifiée en minutes) pendant lequel une opération d’index en ligne pouvant être reprise est exécutée avant d’être mise en pause.
 
@@ -543,7 +543,7 @@ OFF
 Les verrous de page ne sont pas utilisés.
 
 OPTIMIZE_FOR_SEQUENTIAL_KEY = {ON | **OFF** }      
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
 
 Spécifie s’il faut optimiser ou pas la contention d’insertion de la dernière page. La valeur par défaut est OFF. Pour plus d'informations, consultez la section [Clés séquentielles](#sequential-keys) .
 
@@ -621,7 +621,7 @@ Les index prennent en charge les propriétés étendues.
 La création d'un index cluster sur une table (segment de mémoire) ou la suppression et la recréation d'un index nécessite un espace de travail supplémentaire dans la base de données pour pouvoir y placer le tri des données et une copie temporaire de la table d'origine ou les données d'index cluster existantes. Pour plus d’informations sur les index cluster, consultez [Créer un index cluster](../../relational-databases/indexes/create-clustered-indexes.md) et le [Guide de conception et d’architecture d’Index SQL Server](../../relational-databases/sql-server-index-design-guide.md).
 
 ## <a name="nonclustered-indexes"></a>Index non-cluster
-Depuis [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], vous pouvez créer un index non-cluster sur une table stockée sous la forme d’un index columnstore cluster. Si vous créez tout d’abord un index non-cluster sur une table stockée sous la forme d’un segment de mémoire ou d’un index cluster, l’index est conservé si, par la suite, vous convertissez la table en un index columnstore cluster. Il n’est pas non plus nécessaire de supprimer l’index non-cluster quand vous reconstruisez l’index columnstore cluster.
+Depuis [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], vous pouvez créer un index non-cluster sur une table stockée sous la forme d’un index columnstore cluster. Si vous créez tout d’abord un index non-cluster sur une table stockée sous la forme d’un segment de mémoire ou d’un index cluster, l’index est conservé si, par la suite, vous convertissez la table en un index columnstore cluster. Il n’est pas non plus nécessaire de supprimer l’index non-cluster quand vous reconstruisez l’index columnstore cluster.
 
 Limitations et restrictions :
 
@@ -682,7 +682,7 @@ Pour plus d’informations sur les index spatiaux, consultez [CREATE SPATIAL IND
 Pour plus d’informations sur les index XML, consultez [CREATE XML INDEX](../../t-sql/statements/create-xml-index-transact-sql.md) et [Index XML &#40;SQL Server&#41;](../../relational-databases/xml/xml-indexes-sql-server.md).
 
 ## <a name="index-key-size"></a>Taille de clé d'index
-La taille maximale d’une clé d’index est de 900 octets pour un index cluster et de 1 700 octets pour un index non-cluster. (Avant [!INCLUDE[ssSDS](../../includes/sssds-md.md)] et [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], la limite était toujours de 900 octets.) Vous pouvez créer des index qui dépassent la limite en octets sur des colonnes **varchar** si les données existantes des colonnes ne dépassent pas cette limite lors de la création de l’index. Cependant, les actions d’insertion ou de mise à jour suivantes sur les colonnes aboutissant à une taille totale supérieure à la limite échouent. La clé d’un index cluster ne peut pas contenir de colonnes **varchar** qui possèdent des données dans l’unité d’allocation ROW_OVERFLOW_DATA. Si un index cluster est créé sur une colonne **varchar** et que les données existantes se trouvent dans l’unité d’allocation IN_ROW_DATA, les actions d’insertion ou de mise à jour réalisées ultérieurement sur la colonne et susceptibles d’envoyer les données hors ligne sont vouées à l’échec.
+La taille maximale d’une clé d’index est de 900 octets pour un index cluster et de 1 700 octets pour un index non-cluster. (Avant [!INCLUDE[ssSDS](../../includes/sssds-md.md)] et [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], la limite était toujours de 900 octets.) Vous pouvez créer des index qui dépassent la limite en octets sur des colonnes **varchar** si les données existantes des colonnes ne dépassent pas cette limite lors de la création de l’index. Cependant, les actions d’insertion ou de mise à jour suivantes sur les colonnes aboutissant à une taille totale supérieure à la limite échouent. La clé d’un index cluster ne peut pas contenir de colonnes **varchar** qui possèdent des données dans l’unité d’allocation ROW_OVERFLOW_DATA. Si un index cluster est créé sur une colonne **varchar** et que les données existantes se trouvent dans l’unité d’allocation IN_ROW_DATA, les actions d’insertion ou de mise à jour réalisées ultérieurement sur la colonne et susceptibles d’envoyer les données hors ligne sont vouées à l’échec.
 
 Les index non cluster peuvent contenir des colonnes non-clés au niveau feuille de l'index. Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] ne tient pas compte de ces colonnes lors du calcul de la taille de la clé d’index. Pour plus d’informations, consultez [Créer des index avec colonnes incluses](../../relational-databases/indexes/create-indexes-with-included-columns.md) et le [Guide de conception et d’architecture d’Index SQL Server](../../relational-databases/sql-server-index-design-guide.md).
 
@@ -754,7 +754,7 @@ Les instructions suivantes s'appliquent aux opérations d'indexation en ligne :
 Pour plus d'informations, consultez [Perform Index Operations Online](../../relational-databases/indexes/perform-index-operations-online.md).
 
 ### <a name="resumable-index-operations"></a><a name="resumable-indexes"></a> Opérations d’index pouvant être reprises
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
 
 Les instructions suivantes s’appliquent aux opérations d’index pouvant être reprises :
 
@@ -797,7 +797,7 @@ Lorsque `ALLOW_ROW_LOCKS = ON` et `ALLOW_PAGE_LOCK = ON`, les verrous au niveau 
 Lorsque `ALLOW_ROW_LOCKS = OFF` et `ALLOW_PAGE_LOCK = OFF`, seul un verrou au niveau de la table est autorisé au moment où vous accédez à l’index.
 
 ## <a name="sequential-keys"></a>Clés séquentielles
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]. 
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]. 
 
 La contention de l’insertion de la dernière page est un problème de performances courant qui se produit lorsqu’un grand nombre de threads simultanés tentent d’insérer des lignes dans un index avec une clé séquentielle. Un index est considéré comme séquentiel lorsque la colonne clé principale contient des valeurs qui augmentent (ou diminuent) toujours, par exemple une colonne d’identité ou une date correspondant par défaut à la date/heure actuelle. Étant donné que les clés insérées sont séquentielles, toutes les nouvelles lignes seront insérées à la fin de la structure d’index - en d’autres termes, sur la même page. Cela conduit à une contention de la page en mémoire qui peut être observée comme plusieurs threads en attente sur PAGELATCH_EX de la page en question.
 
@@ -1104,7 +1104,7 @@ GO
 ```
 
 ### <a name="m-create-resume-pause-and-abort-resumable-index-operations"></a>M. Créer, reprendre, suspendre et abandonner des opérations d’index pouvant être reprises
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
 
 ```sql
 -- Execute a resumable online index create statement with MAXDOP=1
@@ -1133,7 +1133,7 @@ ALTER INDEX test_idx2 ON test_table ABORT;
 ### <a name="n-basic-syntax"></a>N. Syntaxe de base
 Créer, reprendre, suspendre et abandonner des opérations d’index pouvant être reprises       
 
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
 
 ```sql
 -- Execute a resumable online index create statement with MAXDOP=1

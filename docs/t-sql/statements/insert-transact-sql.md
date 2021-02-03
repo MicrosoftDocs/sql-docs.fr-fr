@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - INSERT_TSQL
 - INSERT
@@ -33,12 +33,12 @@ ms.assetid: 1054c76e-0fd5-4131-8c07-a6c5d024af50
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 206aefdd3cd58b94124a0840cef7e788c5a29390
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: b5a6fd7131b63741a82c120e1e0b222405865a9d
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171271"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237175"
 ---
 # <a name="insert-transact-sql"></a>INSERT (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -319,7 +319,7 @@ Les lignes insérées dans un segment de mémoire à la suite d'une action d'ins
   
 Contrairement à l’instruction `BULK INSERT`, qui maintient un verrou de mise à jour en bloc (BU) moins restrictif, `INSERT INTO … SELECT` avec l’indicateur `TABLOCK` maintient un verrou exclusif (X) sur la table. Cela signifie que vous ne pouvez pas insérer de lignes à l’aide de plusieurs opérations Insert simultanément exécutées. 
 
-Cependant, à partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et du niveau de compatibilité de base de données 130, une instruction `INSERT INTO … SELECT` unique peut être exécutée en parallèle lors de l’insertion dans des segments de mémoire ou des index columnstore en cluster (ICC). Les insertions parallèles sont possibles lors de l’utilisation de l’indicateur `TABLOCK`.  
+Cependant, à partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et du niveau de compatibilité de base de données 130, une instruction `INSERT INTO … SELECT` unique peut être exécutée en parallèle lors de l’insertion dans des segments de mémoire ou des index columnstore en cluster (ICC). Les insertions parallèles sont possibles lors de l’utilisation de l’indicateur `TABLOCK`.  
 
 Le parallélisme de l’instruction ci-dessus présente les exigences suivantes, qui sont similaires aux conditions requises pour la journalisation minimale :  
 -   La table cible est un segment de mémoire vide ou non vide.  
@@ -785,7 +785,7 @@ GO
 #### <a name="p-inserting-into-an-external-table-created-using-polybase"></a>P. Insertion dans une table externe créée à l’aide de PolyBase  
  Exportez des données de SQL Server vers Hadoop ou le Stockage Azure. Commencez par créer une table externe pointant vers le fichier ou le répertoire de destination. Puis, utilisez INSERT INTO pour exporter les données d’une table SQL Server locale dans une source de données externe. l’instruction INSERT INTO crée le fichier ou le répertoire de destination s’il n’existe pas, et les résultats de l’instruction SELECT sont exportés à l’emplacement et au format spécifiés.  Pour plus d’informations, consultez [Prise en main de PolyBase](../../relational-databases/polybase/polybase-guide.md).  
   
-**S'applique à**: [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+**S'applique à**: [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
   
 ```sql
 -- Create an external table.   

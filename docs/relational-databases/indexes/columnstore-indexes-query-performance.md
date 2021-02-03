@@ -12,12 +12,12 @@ ms.assetid: 83acbcc4-c51e-439e-ac48-6d4048eba189
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 1ea031ed8c733a2ced272bf05c952b7f32aa7da4
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 6501f3148ab906c8ac719407a489db6a4be1e62b
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172771"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236709"
 ---
 # <a name="columnstore-indexes---query-performance"></a>Index columnstore - Performances des requêtes
 
@@ -32,7 +32,7 @@ ms.locfileid: "98172771"
     
 ### <a name="1-organize-data-to-eliminate-more-rowgroups-from-a-full-table-scan"></a>1. Organisez les données pour éliminer davantage de rowgroups dans une analyse de table complète.    
     
--   **Optimisez l’ordre d’insertion.** Dans un entrepôt de données standard, les données sont généralement insérées dans un ordre chronologique et analysées dans la dimension de temps. C’est le cas, par exemple, des analyses de ventes trimestrielles. Pour ce type de charge de travail, l’élimination des rowgroups est automatique. Dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], les rowgroups de nombres peuvent être ignorés dans le processus de traitement des requêtes.    
+-   **Optimisez l’ordre d’insertion.** Dans un entrepôt de données standard, les données sont généralement insérées dans un ordre chronologique et analysées dans la dimension de temps. C’est le cas, par exemple, des analyses de ventes trimestrielles. Pour ce type de charge de travail, l’élimination des rowgroups est automatique. Dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], les rowgroups de nombres peuvent être ignorés dans le processus de traitement des requêtes.    
     
 -   **Optimisez l’index cluster rowstore.** Si le prédicat de requête commun se trouve dans une colonne (par exemple, C1) qui n’est pas liée à l’ordre d’insertion de la ligne, vous pouvez créer un index cluster rowstore dans les colonnes C1, puis créer des index cluster columnstore en supprimant l’index cluster rowstore. Si vous créez l’index cluster columnstore explicitement avec `MAXDOP = 1`, l’index cluster columnstore obtenu est parfaitement ordonné dans la colonne C1. Si vous spécifiez `MAXDOP = 8`, vous observez un chevauchement des valeurs entre huit rowgroups. Ce cas se produit souvent quand vous créez l’index columnstore initial pour un jeu de données volumineux. Notez que, dans les index non-cluster columnstore (NCCI), les lignes sont déjà ordonnées si la table de base rowstore a un index cluster. Dans ce cas, l’index non cluster columnstore résultant est automatiquement ordonné. Un point important à retenir est que l’index columnstore ne conserve pas l’ordre des lignes par héritage. Au fur et à mesure que vous ajoutez de nouvelles lignes ou que vous mettez à jour des lignes existantes, vous devrez répéter ce processus si vous constatez une baisse des performances des requêtes analytiques.    
     
@@ -41,7 +41,7 @@ ms.locfileid: "98172771"
 -   **Évitez de supprimer de grandes quantités de données**. La suppression de lignes compressées d’un rowgroup n’est pas une opération synchrone. Il serait coûteux de décompresser un rowgroup, de supprimer la ligne, puis de le recompresser. Par conséquent, si vous supprimez des données de rowgroups compressés, ceux-ci seront analysés même s’ils retournent moins de lignes. Si le nombre de lignes supprimées pour plusieurs rowgroups est suffisamment important pour que ceux-ci soient fusionné dans moins de rowgroups, la réorganisation du columnstore augmente la qualité de l’index et les performances des requêtes sont améliorées. Si votre processus de suppression des données vide généralement des rowgroups entiers, envisagez d’utiliser le partitionnement de table, d’extraire les partitions qui ne sont plus nécessaires et de les tronquer au lieu de supprimer des lignes. 
 
     > [!NOTE]
-    > À partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], le moteur de tuple est aidé par une tâche de fusion en arrière-plan qui compresse automatiquement les rowgroups delta OPEN plus petits qui existent depuis un certain temps, tel que déterminé par un seuil interne, ou qui fusionne les rowgroups COMPRESSED à partir desquels un grand nombre de lignes a été supprimé. Cela améliore la qualité de l’index columnstore dans le temps.   
+    > À partir de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], le moteur de tuple est aidé par une tâche de fusion en arrière-plan qui compresse automatiquement les rowgroups delta OPEN plus petits qui existent depuis un certain temps, tel que déterminé par un seuil interne, ou qui fusionne les rowgroups COMPRESSED à partir desquels un grand nombre de lignes a été supprimé. Cela améliore la qualité de l’index columnstore dans le temps.   
     > Si vous devez supprimer de grandes quantités de données de l’index columnstore, envisagez de fractionner cette opération en lots plus petits de suppression dans le temps, ce qui permet à la tâche de fusion en arrière-plan de gérer la tâche de fusion de rowgroups plus petits et d’améliorer la qualité de l’index, ce qui évite d’avoir à planifier des fenêtres de maintenance de réorganisation de l’index après la suppression de données.    
     > Pour plus d’informations sur les termes et les concepts columnstore, consultez [Index Columnstore : Vue d’ensemble](../../relational-databases/indexes/columnstore-indexes-overview.md).
     
@@ -52,7 +52,7 @@ ms.locfileid: "98172771"
     
  Si la table a plus d’un million de lignes, mais que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne peut pas obtenir suffisamment d’allocation de mémoire pour créer l’index à l’aide de MAXDOP, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] réduit automatiquement la valeur de `MAXDOP` en fonction de l’allocation de mémoire disponible.  Dans certains cas, le DOP doit être réduit à un pour pouvoir créer l'index sous une mémoire contrainte.    
     
- À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], la requête s’effectue toujours en mode batch. Dans les versions antérieures, l’exécution en mode batch est uniquement utilisée quand le degré de parallélisme défini est supérieur à un.    
+ À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], la requête s’effectue toujours en mode batch. Dans les versions antérieures, l’exécution en mode batch est uniquement utilisée quand le degré de parallélisme défini est supérieur à un.    
     
 ## <a name="columnstore-performance-explained"></a>Explication des performances columnstore    
  Les index columnstore optimisent les performances de requête en combinant l’utilisation du mode batch qui accélère le traitement en mémoire avec plusieurs techniques qui réduisent considérablement les E/S nécessaires. Étant donné que les requêtes d’analyse portent sur un grand nombre de lignes, elles sont généralement dépendantes des E/S. La réduction des E/S pendant l’exécution des requêtes est donc une exigence essentielle dans la conception des index columnstore. Une fois que les données ont été lues en mémoire, il est primordial de réduire le nombre d’opérations en mémoire.    
@@ -82,7 +82,7 @@ ms.locfileid: "98172771"
     
  **Quand un index columnstore doit-il effectuer une analyse de table complète ?**    
     
- À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], vous pouvez créer un ou plusieurs index non-cluster en arbre B (B-tree) standard sur un index cluster columnstore, comme vous pouvez le faire sur un segment de mémoire rowstore. Les index non-cluster B-tree peuvent accélérer une requête qui est définie avec un prédicat d’égalité ou avec un prédicat comportant une petite plage de valeurs. Pour les prédicats plus complexes, l’optimiseur de requête peut choisir d’effectuer une analyse de table complète. Sans la fonction d’élimination de rowgroup, l’analyse de table complète serait très longue, surtout pour les tables volumineuses.    
+ À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], vous pouvez créer un ou plusieurs index non-cluster en arbre B (B-tree) standard sur un index cluster columnstore, comme vous pouvez le faire sur un segment de mémoire rowstore. Les index non-cluster B-tree peuvent accélérer une requête qui est définie avec un prédicat d’égalité ou avec un prédicat comportant une petite plage de valeurs. Pour les prédicats plus complexes, l’optimiseur de requête peut choisir d’effectuer une analyse de table complète. Sans la fonction d’élimination de rowgroup, l’analyse de table complète serait très longue, surtout pour les tables volumineuses.    
     
  **Quand la fonction d’élimination de rowgroup est-elle intéressante pour une requête d’analyse de table complète ?**    
     
@@ -99,7 +99,7 @@ ms.locfileid: "98172771"
     
  Il n’est pas possible d’exécuter tous les opérateurs d’exécution de requête en mode batch. Par exemple, les opérations DML comme Insert, Delete ou Update sont exécutées ligne par ligne. Les opérateurs en mode batch ciblent les opérateurs tels que Scan, Join, Aggregate, Sort, etc. pour améliorer la vitesse de traitement des requêtes. Depuis l’introduction de l’index columnstore dans [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], nous nous efforçons d’étendre la prise en charge d’opérateurs exécutables en mode batch. Le tableau ci-dessous répertorie les opérateurs exécutables en mode batch pour chaque version du produit.    
     
-|Opérateurs en mode batch|Contexte d’utilisation|[!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]|[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|[!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et [!INCLUDE[ssSDS](../../includes/sssds-md.md)]<sup>1</sup>|Commentaires|    
+|Opérateurs en mode batch|Contexte d’utilisation|[!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]|[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|[!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et [!INCLUDE[ssSDS](../../includes/sssds-md.md)]<sup>1</sup>|Commentaires|    
 |---------------------------|------------------------|---------------------|---------------------|---------------------------------------|--------------|    
 |Opérations DML (insert, delete, update, merge)||non|non|non|DML n’est pas une opération en mode batch, car elle n’est pas effectuée en parallèle. Même si nous rendons possible le traitement batch en mode série, l’ajout du traitement des opérations DML en mode batch n’offre pas d’avantages significatifs.|    
 |Columnstore Index Scan|SCAN|N/D|Oui|Oui|Pour les index columnstore, nous pouvons transmettre le prédicat en mode Push vers le nœud SCAN.|    
@@ -116,14 +116,14 @@ ms.locfileid: "98172771"
 |requêtes à thread unique avec un plan de requête série||non|non|Oui||    
 |sort|Tri par clause sur SCAN avec l’index columnstore.|non|non|Oui||    
 |Top Sort||non|non|Oui||    
-|Window Aggregates||N/D|N/D|Oui|Nouvel opérateur dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)].|    
+|Window Aggregates||N/D|N/D|Oui|Nouvel opérateur dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)].|    
     
-<sup>1</sup> S’applique à [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], aux niveaux Premium [!INCLUDE[ssSDS](../../includes/sssds-md.md)], aux niveaux Standard (S3 et ultérieur) et à tous les niveaux vCore, ainsi qu’à [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]    
+<sup>1</sup> S’applique à [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], aux niveaux Premium [!INCLUDE[ssSDS](../../includes/sssds-md.md)], aux niveaux Standard (S3 et ultérieur) et à tous les niveaux vCore, ainsi qu’à [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]    
 
 Pour plus d’informations, consultez le [Guide d’architecture de traitement des requêtes](../../relational-databases/query-processing-architecture-guide.md#batch-mode-execution).
     
 ### <a name="aggregate-pushdown"></a>Agrégation en mode Push    
- Chemin d’exécution standard utilisé pour le calcul d’agrégation qui récupère les lignes qualifiées du nœud SCAN et agrège les valeurs en mode batch. Cette méthode offre de bonnes performances, mais dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], l’opération d’agrégation peut être transmise en mode Push vers le nœud SCAN pour améliorer les performances de calcul d’agrégation par ordre de grandeur avec l’exécution en mode batch. Cela est possible si les conditions suivantes sont remplies : 
+ Chemin d’exécution standard utilisé pour le calcul d’agrégation qui récupère les lignes qualifiées du nœud SCAN et agrège les valeurs en mode batch. Cette méthode offre de bonnes performances, mais dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], l’opération d’agrégation peut être transmise en mode Push vers le nœud SCAN pour améliorer les performances de calcul d’agrégation par ordre de grandeur avec l’exécution en mode batch. Cela est possible si les conditions suivantes sont remplies : 
  
 -    Les agrégats sont `MIN`, `MAX`, `SUM`, `COUNT` et `COUNT(*)`. 
 -  L’opérateur d’agrégation doit être au-dessus d’un nœud SCAN ou d’un nœud SCAN avec une clause `GROUP BY`.
@@ -157,7 +157,7 @@ Par exemple, un fait est un enregistrement représentant la vente d’un produit
     
 Prenons l’exemple d’une table de dimension `Products`. `ProductCode` est une clé primaire classique qui est généralement représentée par un type de données string. Pour améliorer les performances des requêtes, il est recommandé de créer une clé de substitution, généralement une colonne de type integer, pour faire référence à la ligne dans la table de dimension à partir de la table de faits. 
     
-L’index columnstore offre de très bonnes performances pour l’exécution de requêtes analytiques avec des jointures/prédicats impliquant des clés numériques ou entières. Toutefois, pour beaucoup de charges de travail client, l’utilisation de colonnes de type string associant des tables de faits/dimension, les performances de requête avec l’index columnstore n’étaient pas aussi bonnes. [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] améliore considérablement les performances des requêtes analytiques sur des colonnes de type string en transmettant en mode Push les prédicats avec les colonnes string vers le nœud SCAN.    
+L’index columnstore offre de très bonnes performances pour l’exécution de requêtes analytiques avec des jointures/prédicats impliquant des clés numériques ou entières. Toutefois, pour beaucoup de charges de travail client, l’utilisation de colonnes de type string associant des tables de faits/dimension, les performances de requête avec l’index columnstore n’étaient pas aussi bonnes. [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] améliore considérablement les performances des requêtes analytiques sur des colonnes de type string en transmettant en mode Push les prédicats avec les colonnes string vers le nœud SCAN.    
     
 Pour améliorer les performances de requête, la transmission Push des prédicats de type string utilise le dictionnaire principal/secondaire créé pour les colonnes. Par exemple, prenons un segment de colonne de type string situé dans un rowgroup de 100 valeurs string distinctes. Cela signifie que chaque valeur string est référencée 10 000 fois sur environ un million de lignes.    
     
