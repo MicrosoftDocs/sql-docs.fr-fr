@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 2512 (Database Engine error)
 ms.assetid: 989b527f-5b02-403c-9b7f-51580f4e7688
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 5cc5591033bae573ccfc9c8d2852c064b7472331
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: fdfbe70865d944fc637a5bdf748360744d6cce14
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88385795"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208465"
 ---
 # <a name="mssqlserver_2512"></a>MSSQLSERVER_2512
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

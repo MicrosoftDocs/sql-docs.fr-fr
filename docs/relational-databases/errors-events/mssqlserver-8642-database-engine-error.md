@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 8642 (Database Engine error)
 ms.assetid: fc498059-202f-4d0b-8599-4e784b47c186
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 7ab7d742d6af4b9f2ae29e8cb9cffe645a1d7f49
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f46b8d44f6fd8a7155be4afaa4b2f9dec5a89d0c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88460879"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205721"
 ---
 # <a name="mssqlserver_8642"></a>MSSQLSERVER_8642
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

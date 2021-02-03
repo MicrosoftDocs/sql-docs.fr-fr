@@ -6,7 +6,7 @@ ms.date: 08/06/2020
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: machine-learning-services
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_EXTERNAL_RESOURCE_POOL_TSQL
 dev_langs:
@@ -18,12 +18,12 @@ author: dphansen
 ms.author: davidph
 manager: cgronlund
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15'
-ms.openlocfilehash: feaf2da954465b17fb9beb948e47af9905c91512
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 13cceefecf9d5c67cfde6cd10ec1b86fc564ebf6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170231"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204222"
 ---
 # <a name="alter-external-resource-pool-transact-sql"></a>ALTER EXTERNAL RESOURCE POOL (Transact-SQL)
 [!INCLUDE [SQL Server 2016 and later](../../includes/applies-to-version/sqlserver2016.md)]

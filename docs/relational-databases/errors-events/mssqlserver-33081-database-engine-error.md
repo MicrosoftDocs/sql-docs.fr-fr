@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 33081 (Database Engine error)
 ms.assetid: 839705e7-fa37-4c0d-9f3f-95a9eab98bcf
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 3267a9195cd5128864bcb55503ffe1720be9299c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8be9f2bec59b51f75a7832768663535175946f60
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456315"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208414"
 ---
 # <a name="mssqlserver_33081"></a>MSSQLSERVER_33081
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,7 +6,7 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - "233"
 helpviewer_keywords:
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 201665dc-7ac8-4c19-90d3-33354c5caa72
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: bf1a3e2f94c221caa4b70105aaccc331c6082b97
-ms.sourcegitcommit: 36fe62a3ccf34979bfde3e192cfa778505add465
+ms.openlocfilehash: 7f029adf0a822d7ebfd8ce22708ecb83ab7f6248
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94521066"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208484"
 ---
 # <a name="mssqlserver_233"></a>MSSQLSERVER_233
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

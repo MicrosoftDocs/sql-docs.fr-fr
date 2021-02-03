@@ -6,7 +6,7 @@ ms.date: 10/30/2020
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_DATABASE_TSQL
 - ALTER DATABASE
@@ -27,12 +27,12 @@ ms.assetid: 15f8affd-8f39-4021-b092-0379fc6983da
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-current||=azuresqldb-mi-current||=azure-sqldw-latest||>=aps-pdw-2016'
-ms.openlocfilehash: a5b5a4174a8faae5c57ed6844e96f52b8f271311
-ms.sourcegitcommit: 2bdf1f1ee88f4fe3e872227d025e965e95d1b2b4
+ms.openlocfilehash: 721a8a8ec1e3d792b361dfeaafeca9bb0746b935
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98711995"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204253"
 ---
 # <a name="alter-database-transact-sql"></a>ALTER DATABASE (Transact-SQL)
 

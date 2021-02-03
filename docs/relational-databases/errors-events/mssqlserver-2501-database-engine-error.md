@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 2501 (Database Engine error)
 ms.assetid: 895aafe3-a4e7-4ed8-acc5-93be76ef3664
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 4e134d7ad6ee5c614914b2f93ca86d0bbc71d239
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 3f5f698928b3df5abc1c927ec926b24e2ba853f1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88465378"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208478"
 ---
 # <a name="mssqlserver_2501"></a>MSSQLSERVER_2501
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

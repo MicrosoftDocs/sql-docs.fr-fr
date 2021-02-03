@@ -6,19 +6,19 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 7308 (Database Engine error)
 - single-threaded apartment mode
 ms.assetid: cca9eab9-afb9-463d-abfd-0802257e2c99
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 568cf7ae707b3e0b8da28b0a6c0ae9b076267c6f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f01b6e1fb5d73daf947eb7d0f3e3bfd249dbd17f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88487024"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209157"
 ---
 # <a name="mssqlserver_7308"></a>MSSQLSERVER_7308
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

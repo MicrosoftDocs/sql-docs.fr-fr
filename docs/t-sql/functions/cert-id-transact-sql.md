@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CERT_ID
 - CERT_ID_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 59cc06f5-272e-4936-8afe-afba7aba8eea
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 70e1cb5ea77b6bd779d63cd349f1478cda31598f
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: b80528be1623d3f635c13aac5426cd98c98d05fb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91114949"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202209"
 ---
 # <a name="cert_id-transact-sql"></a>CERT_ID (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

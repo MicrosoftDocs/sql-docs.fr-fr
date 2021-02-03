@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 26013 (Database Engine error)
 ms.assetid: 7362fca4-b005-4872-bdfa-a3e32f834db8
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: b0d6efc8f8d1c4a80d811c70feb7177b8dbffc95
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6cc731cadc1eb712c514b4a98caefaa207563466
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88491402"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209789"
 ---
 # <a name="mssqlserver_26013"></a>MSSQLSERVER_26013
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

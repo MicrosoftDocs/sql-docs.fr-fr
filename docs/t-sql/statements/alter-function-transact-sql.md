@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, pdw, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_FUNCTION_TSQL
 - ALTER FUNCTION
@@ -21,12 +21,12 @@ ms.assetid: 89f066ee-05ac-4439-ab04-d8c3d5911179
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 1785a65f08952660bd3a8e3cad72355d8db5b373
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 60bba3f7a4ed2f4efd816c1fa46b0098005be270
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98081894"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204188"
 ---
 # <a name="alter-function-transact-sql"></a>ALTER FUNCTION (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-pdw-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-pdw-md.md)]

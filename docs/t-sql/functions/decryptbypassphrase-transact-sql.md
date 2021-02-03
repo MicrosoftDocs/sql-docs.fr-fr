@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DECRYPTBYPASSPHRASE
 - DECRYPTBYPASSPHRASE_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: ca34b5cd-07b3-4dca-b66a-ed8c6a826c95
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 96f5b7e89f1fd8ef297fabf3c27169375e53951f
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: 81e6e954a597e3ea6b7e2b6e983e063c4a1bf8e3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91117098"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207235"
 ---
 # <a name="decryptbypassphrase-transact-sql"></a>DECRYPTBYPASSPHRASE (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -50,7 +50,7 @@ DecryptByPassPhrase ( { 'passphrase' | @passphrase }
 Phrase secrète utilisée pour générer la clé de déchiffrement.  
   
  @passphrase  
-Variable de type **char**, **nchar**, **nvarchar**ou **varchar** contenant la phrase secrète utilisée pour générer la clé de déchiffrement.  
+Variable de type **char**, **nchar**, **nvarchar** ou **varchar** contenant la phrase secrète utilisée pour générer la clé de déchiffrement.  
   
 '*ciphertext*'  
 Chaîne de données chiffrées avec la clé. *ciphertext* a le type de données **varbinary**.  

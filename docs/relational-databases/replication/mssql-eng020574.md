@@ -6,19 +6,19 @@ ms.date: 03/01/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - MSSQL_ENG02574 error
 ms.assetid: 4e98f8de-287c-4090-81ee-dc8f80dfa6a1
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: 86f4947b3779ca0b091db4ae372b5fcb70ad84a9
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ec72ff403bd7a2067b9f9cf917d6a7faa8dbf710
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484851"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205575"
 ---
 # <a name="mssql_eng020574"></a>MSSQL_ENG020574
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

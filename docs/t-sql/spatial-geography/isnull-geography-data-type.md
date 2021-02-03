@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - IsNull (geography Data Type)
 dev_langs:
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: c031074f-bfda-4584-a3bf-4e7c324f237f
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: cd161c4d14241a6596e2a54ae79cd919fb776c59
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 5cf656f1f05188a6b765aa9eef4c36131fda56b8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88422373"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205403"
 ---
 # <a name="isnull-geography-data-type"></a>IsNull (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - UnionAggregate
 - UnionAggregate_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 1a3aeef1-5b0e-4ae8-aeb7-c4aab22f42ab
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 6a31d700c51a4d6bc5836de7d904fdbc3e4644c4
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ebd598ad26f240ae96cf25527f57ae914709ad6f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88488226"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203565"
 ---
 # <a name="unionaggregate-geography-data-type"></a>UnionAggregate (type de données geography)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

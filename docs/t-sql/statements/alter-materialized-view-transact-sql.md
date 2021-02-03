@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: jrasnick
 ms.technology: data-warehouse
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_VIEW_TSQL
 - ALTER VIEW
@@ -21,12 +21,12 @@ helpviewer_keywords:
 author: XiaoyuMSFT
 ms.author: xiaoyul
 monikerRange: = azure-sqldw-latest
-ms.openlocfilehash: 77da325e7418f596100ad7aea4f3a6c58e974f89
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 6797bba26dfa81e3c369d03837fb6f4222003663
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642205"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204136"
 ---
 # <a name="alter-materialized-view-transact-sql"></a>ALTER MATERIALIZED VIEW (Transact-SQL)  
 

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SELECT Clause
 - SELECT_Clause_TSQL
@@ -27,12 +27,12 @@ helpviewer_keywords:
 ms.assetid: 2616d800-4853-4cf1-af77-d32d68d8c2ef
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 84099c48344e27070433483eeac829640c3ce4c2
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: 2a633f4cfb8a0c9e5158b24c89035c5e97588a46
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91115906"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207593"
 ---
 # <a name="select-clause-transact-sql"></a>Clause SELECT (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -73,7 +73,7 @@ SELECT [ ALL | DISTINCT ]
  Indique que seules des lignes uniques peuvent apparaître dans le jeu de résultats. Les valeurs nulles sont considérées comme étant égales pour le mot clé DISTINCT.  
   
  TOP (*expression* ) [ PERCENT ] [ WITH TIES ]  
- Indique que seul un premier ensemble ou pourcentage de lignes spécifié sera retourné à partir du jeu de résultats de la requête. L'argument*expression* peut être un nombre ou un pourcentage de lignes.  
+ Indique que seul un premier ensemble ou pourcentage de lignes spécifié sera retourné à partir du jeu de résultats de la requête. L'argument *expression* peut être un nombre ou un pourcentage de lignes.  
   
  Pour la compatibilité descendante, l’utilisation de *l’expression* TOP sans parenthèses dans les instructions SELECT est prise en charge, mais déconseillée. Pour plus d’informations, consultez [TOP &#40;Transact-SQL&#41;](../../t-sql/queries/top-transact-sql.md).  
   
@@ -82,7 +82,7 @@ SELECT [ ALL | DISTINCT ]
  \*  
  Indique que toutes les colonnes de toutes les tables et vues de la clause FROM doivent être renvoyées. Les colonnes sont renvoyées par table ou vue, comme indiqué dans la clause FROM, et par ordre d'apparition dans la table ou la vue.  
   
- *table_name* | *view_name* | *table*_*alias*.*  
+ *table_name* | *view_name* | *table* _ *alias*.*  
  Limite l’étendue du \* à la table ou vue spécifiée.  
   
  *column_name*  

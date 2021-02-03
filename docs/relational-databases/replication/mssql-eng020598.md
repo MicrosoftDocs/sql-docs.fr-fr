@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - MSSQL_ENG020598 error
 ms.assetid: 1c3032f2-23d1-4ead-94ee-16ac4d75cd0c
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: 09959b146ba41bdadee12e59729c1dbc293eac86
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c888cc73e3fd624a38a10a7cb43f311a702ec919
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460222"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204898"
 ---
 # <a name="mssql_eng020598"></a>MSSQL_ENG020598
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

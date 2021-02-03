@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 7903 (Database Engine error)
 ms.assetid: 991a86df-42cd-435e-85b3-f42e4cb13039
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 38e0d172d55557e618bd5c80fcef71d2ddfd39bb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4d2727404b37b47a6291cb164e7266b3764b5c14
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88491200"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209146"
 ---
 # <a name="mssqlserver_7903"></a>MSSQLSERVER_7903
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

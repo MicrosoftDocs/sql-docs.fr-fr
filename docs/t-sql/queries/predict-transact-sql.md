@@ -8,7 +8,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: machine-learning
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - PREDICT
 - PREDICT_TSQL
@@ -19,12 +19,12 @@ helpviewer_keywords:
 author: dphansen
 ms.author: davidph
 monikerRange: '>=sql-server-2017||=azuresqldb-current||>=sql-server-linux-2017||=azuresqldb-mi-current||>=azure-sqldw-latest'
-ms.openlocfilehash: 83205b4a11be46888f8c7da8f29c84494d012740
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0baf8812e8bcfc6c5095a5e082b85b62bfa9db7e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460852"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207604"
 ---
 # <a name="predict-transact-sql"></a>PREDICT (Transact-SQL)
 

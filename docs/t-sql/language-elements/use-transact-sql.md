@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: pdw, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - USE_TSQL
 - USE
@@ -22,12 +22,12 @@ ms.assetid: c05acac8-c063-4770-8e36-d7f71d500b10
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: f31381a2c43d02af5b3c19478fcf03e7bcc608d6
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 5d83799db882df09ae57e7225d8c3f52cdb04cb8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095889"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208761"
 ---
 # <a name="use-transact-sql"></a>USE (Transact-SQL)
 [!INCLUDE [sql-asdbmi-pdw](../../includes/applies-to-version/sql-asdbmi-pdw.md)]
@@ -51,7 +51,7 @@ USE { database_name }
   
  Dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], le paramètre database ne peut faire référence qu'à la base de données active. Si une base de données autre que la base de données active est fournie, l’instruction `USE` ne permet pas de basculer entre les bases de données et le code d’erreur 40508 est retourné. Pour changer de bases de données, vous devez vous connecter directement à la base de données. L’instruction USE est marquée comme non applicable à SQL Database en haut de cette page, car même si vous pouvez inclure l’instruction `USE` dans un lot, elle n’a aucun effet.
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Lorsqu'un nom d'ouverture de session [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] se connecte à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], il est automatiquement connecté à sa base de données par défaut et acquiert le contexte de sécurité d'un utilisateur de base de données. Si aucun utilisateur de base de données n'a été créé pour le nom d'ouverture de session [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], celui-ci se connecte en tant que guest (invité). Si l'utilisateur de base de données ne bénéficie pas de l'autorisation CONNECT sur la base de données, l'instruction USE échoue. Si aucune base de données par défaut n'a été affectée au nom d'ouverture de session, sa base de données par défaut est définie sur master.  
   
  USE est exécutée à la fois au moment de l'exécution et de la compilation, et prend effet immédiatement. C'est pourquoi les instructions apparaissant dans un traitement après l'exécution de USE sont exécutées dans la base de données spécifiée.  

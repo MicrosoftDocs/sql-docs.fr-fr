@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 8651 (Database Engine error)
 ms.assetid: 4cc3498d-5449-4c4e-b1f9-3271831c725a
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: d159f9865cff8090291f65d158e82a6ab315602b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1892dbdba3b39f9b5d66837f58c596e2f7a3b759
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88420963"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203990"
 ---
 # <a name="mssqlserver_8651"></a>MSSQLSERVER_8651
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER PARTITION SCHEME
 - ALTER_PARTITION_SCHEME_TSQL
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: f01d6880-9800-4cfb-8d11-d4be21efc8ca
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 084263fab973e11c1c0a14e340f18ae952ca5f44
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: cbf8b1f76fc50438ff403c1b2703067ddb7cee53
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094734"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204107"
 ---
 # <a name="alter-partition-scheme-transact-sql"></a>ALTER PARTITION SCHEME (Transact-SQL)
 

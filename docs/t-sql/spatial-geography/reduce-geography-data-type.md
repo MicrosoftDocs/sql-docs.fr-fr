@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - Reduce_TSQL
 - Reduce
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: c5dfa8c1-6764-41d8-9150-f3cb30633d3e
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: ab2f24276cb3f151adf4e1418fd141180171a633
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6667a6f3681a3c3c058673cbcac997c2b91c33c5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88359875"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208735"
 ---
 # <a name="reduce-geography-data-type-"></a>Reduce (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

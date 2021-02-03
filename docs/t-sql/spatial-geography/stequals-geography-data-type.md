@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STEquals_TSQL
 - STEquals (geography Data Type)
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 0766ff37-0b9e-49bf-83c0-019f4354fe44
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 4a2e27ef2c94a4b3755da8b425fbe6ae60212f2b
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: b05146c00e87e8d57fe9d7d0b642bd0d4c262dc9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88416965"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207196"
 ---
 # <a name="stequals-geography-data-type"></a>STEquals (type de données geography)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

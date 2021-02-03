@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STNumPoints (geography Data Type)
 - STNumPoints_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 25ff7ad1-ba5f-4cfb-816a-59255ac1591d
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 6dbbf84ae21589d6428528d1599fe65eba7704f6
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 220e2e9149c3e153080fd044996d01a08c22db89
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88445158"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206503"
 ---
 # <a name="stnumpoints-geography-data-type"></a>STNumPoints (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

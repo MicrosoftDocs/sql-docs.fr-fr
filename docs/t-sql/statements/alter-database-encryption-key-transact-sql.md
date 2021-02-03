@@ -4,7 +4,7 @@ title: ALTER DATABASE ENCRYPTION KEY (Transact-SQL) | Microsoft Docs
 ms.date: 04/16/2018
 ms.prod: sql
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_DATABASE_ENCRYPTION_KEY_TSQL
 - ALTER DATABASE ENCRYPTION
@@ -19,12 +19,12 @@ ms.assetid: f88dac4b-efe0-47ed-9808-972a4381377e
 author: VanMSFT
 ms.author: vanto
 monikerRange: = azuresqldb-current || = azuresqldb-mi-current || >= sql-server-2016 || >= sql-server-linux-2017
-ms.openlocfilehash: 850526cec9e7fc4eb91d6ca4355d17e2804e00b3
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5519ff16020ab6e02220c32d72df4a349619a036
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97402047"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205787"
 ---
 # <a name="alter-database-encryption-key-transact-sql"></a>ALTER DATABASE ENCRYPTION KEY (Transact-SQL)
 

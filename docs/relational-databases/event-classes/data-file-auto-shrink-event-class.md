@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Data File Auto Shrink event class
 ms.assetid: ea02b01e-9f87-47ca-9117-afadc382fb45
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 4ab921b2b0e55d30f45360e83ac70f92dafe0061
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 492c458de06c71f3f8555d8392d1000c5ae039a1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97469840"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209541"
 ---
 # <a name="data-file-auto-shrink-event-class"></a>Data File Auto Shrink (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

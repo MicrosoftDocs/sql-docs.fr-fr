@@ -6,7 +6,7 @@ ms.date: 07/27/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CHECKPOINT_TSQL
 - CHECKPOINT
@@ -27,12 +27,12 @@ helpviewer_keywords:
 ms.assetid: ccdfc689-ad4e-44c0-83f7-0f2cfcfb6406
 author: julieMSFT
 ms.author: jrasnick
-ms.openlocfilehash: 257bdc81d1f5f2ab6a5599cb155f71453ac27c34
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 823bef4f26703b47404f28abb211cc87f70c0a04
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097145"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208803"
 ---
 # <a name="checkpoint-transact-sql"></a>CHECKPOINT (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

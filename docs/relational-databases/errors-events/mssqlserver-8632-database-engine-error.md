@@ -6,18 +6,18 @@ ms.date: 10/27/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, vencher, tejasaks, docast
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 8632 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 36f8b6f7eb55a30becf0f56eb318c6740b5783ec
-ms.sourcegitcommit: f87f2f0f1edc91fe400040d8e3a5810347aa8d70
+ms.openlocfilehash: 6755ddfcf85b8e49e00697e94eb91e340d39093c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96868913"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205740"
 ---
 # <a name="mssqlserver_8632"></a>MSSQLSERVER_8632
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

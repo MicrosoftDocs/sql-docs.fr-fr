@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - IIF_TSQL
 - IIF
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: e3ccf8ed-1cec-43ac-90b7-d8597c24b050
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 8dd7e4faa4c8e175987254981f09d78da9445d1a
-ms.sourcegitcommit: e40e75055c1435c5e3f9b6e3246be55526807b4c
+ms.openlocfilehash: 81b2e383d44386e14e6cca59ebf3973bc2dfc20c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98151275"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208818"
 ---
 # <a name="logical-functions---iif-transact-sql"></a>Fonctions logiques - IIF (Transact-SQL)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

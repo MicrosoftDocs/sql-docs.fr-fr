@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STGeomFromText (geometry Data Type)
 - STGeomFromText_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 20cace39-02e5-46c1-a9a5-841d04d0da16
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 0917ef0900d317eeaeb916604cd8e1dc53387b03
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: eb49a4d3deab1d2ef4d7ab898d5cc09fe95a9bd4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88479355"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205018"
 ---
 # <a name="stgeomfromtext-geometry-data-type"></a>STGeomFromText (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

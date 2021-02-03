@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CLOSE_TSQL
 - CLOSE
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 21546874-97e3-4b93-970f-87c27f6b78c7
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 7d4f487bb98745a8e9e182ab31fdeea8e66e3b76
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 8622cba1a9dcf8e39b23d2f7c00554e0cd3c466c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98085301"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208800"
 ---
 # <a name="close-transact-sql"></a>CLOSE (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

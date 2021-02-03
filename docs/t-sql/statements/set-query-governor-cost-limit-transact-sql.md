@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SET QUERY_GOVERNOR_COST_LIMIT
 - SET_QUERY_GOVERNOR_COST_LIMIT_TSQL
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 3424bb44-6915-462d-a8d7-fe834af81387
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: fb2a2c1dda36b6e2378c6197e1e87cc9190a535b
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 9204c77bdc1a3e99d66cb2ee6000bf4c1ecb1609
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100729"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206976"
 ---
 # <a name="set-query_governor_cost_limit-transact-sql"></a>SET QUERY_GOVERNOR_COST_LIMIT (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

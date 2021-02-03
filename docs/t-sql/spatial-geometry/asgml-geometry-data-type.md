@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - AsGml(geometry_Data_Type)_TSQL
 - AsGml
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: f6c2e130-05f3-4ef3-921b-d78b51437d48
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 5e41cc216ad67452e6a0f43e0baad30bb96fb3f0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c932617b3f2bea916105242e7195c5302d9ca130
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88488230"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208718"
 ---
 # <a name="asgml-geometry-data-type"></a>AsGml (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

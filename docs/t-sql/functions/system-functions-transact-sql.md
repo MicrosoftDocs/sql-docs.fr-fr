@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9cd7618d-6bd5-4f26-9351-87219b44775f
 author: julieMSFT
 ms.author: jrasnick
-ms.openlocfilehash: 2f72c9b307a56574a07fb64b1ebccb35fb246e9c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5bc1893e421790c61e098433b3e63421717cd86d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88459571"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205039"
 ---
 # <a name="system-functions-transact-sql"></a>Fonctions système (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - Long_TSQL
 - Long
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: bedbeced-70b8-4569-84f3-f86bfb04ce50
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 774ea7421e7616976bcedc1c848620accf8c07d7
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 98fa19504777027a5d8e4bca5951b1d5ceec6fe6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88467488"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99207538"
 ---
 # <a name="long-geography-data-type"></a>Long (type de données geography)
 

@@ -5,7 +5,7 @@ ms.date: 06/03/2020
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - 'Progress Report: Online Index Operation event class [SQL Server]'
 ms.assetid: 491616c1-f666-4b16-a5ea-1192bf156692
@@ -13,12 +13,12 @@ author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 52ef23a8928acecd386cd01251e4601a69d28245
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c612dfd308f20c56f1e216861c1f59e6e169107a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97476210"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205656"
 ---
 # <a name="progress-report-online-index-operation-event-class"></a>Classe d'événements Progress Report: Online Index Operation
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

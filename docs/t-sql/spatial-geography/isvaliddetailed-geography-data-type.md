@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - IsValidDetailed_TSQL
 - IsValidDetailed
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: f5f0b753-c825-43ce-987d-98655d8d8702
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 6e272d607592660c123a25847143a4aeff075fc7
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ba8b5af3b55a7700b7f88ffe63cd5f7dfc53d324
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88422353"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208751"
 ---
 # <a name="isvaliddetailed-geography-data-type"></a>IsValidDetailed (type de données geography)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "88422353"
   
  Type de retour CLR : **string**  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Le tableau suivant contient les valeurs de retour possibles :  
   
 |Valeur retournée|Description|  

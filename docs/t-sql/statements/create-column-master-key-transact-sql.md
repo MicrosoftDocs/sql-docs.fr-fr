@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SQL13.SWB.NEWCOLUMNMASTERKEYDEF.GENERAL.F1
 - SQL13.SWB.COLUMNMASTERKEYDEF.GENERAL.F1
@@ -27,12 +27,12 @@ helpviewer_keywords:
 ms.assetid: f8926b95-e146-4e3f-b56b-add0c0d0a30e
 author: jaszymas
 ms.author: jaszymas
-ms.openlocfilehash: 081941d580e51188f63c54953caa30004c83c6d0
-ms.sourcegitcommit: bd3a135f061e4a49183bbebc7add41ab11872bae
+ms.openlocfilehash: 6e18a1e0721428dcbfdb649be46ca83fd0d42972
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92300398"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204940"
 ---
 # <a name="create-column-master-key-transact-sql"></a>CREATE COLUMN MASTER KEY (Transact-SQL)
 [!INCLUDE [sqlserver2016-asdb-asdbmi](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi.md)]
@@ -176,7 +176,7 @@ Nous vous recommandons d’utiliser des outils, tels que SQL Server Management S
 
   
 ## <a name="permissions"></a>Autorisations  
-Nécessite l’autorisation **ALTER ANY COLUMN MASTER KEY** .  
+Nécessite l’autorisation **ALTER ANY COLUMN MASTER KEY**.  
   
 ## <a name="examples"></a>Exemples  
   

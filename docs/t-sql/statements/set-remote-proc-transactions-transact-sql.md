@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - REMOTE_PROC_TRANSACTIONS_TSQL
 - SET REMOTE_PROC_TRANSACTIONS
@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: 4d284ae9-3f5f-465a-b0dd-1328a4832a03
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: ecfcda70eb37c4b7b10db2ac49a02996140060da
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 6164638072a8cc41c07bb46e0337a0d3be5498cc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100684"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99206968"
 ---
 # <a name="set-remote_proc_transactions-transact-sql"></a>SET REMOTE_PROC_TRANSACTIONS (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -54,7 +54,7 @@ SET REMOTE_PROC_TRANSACTIONS { ON | OFF }
  ON | OFF  
  Si l'option est activée (ON), une transaction distribuée [!INCLUDE[tsql](../../includes/tsql-md.md)] est démarrée lorsqu'une procédure stockée distante est exécutée à partir d'une transaction locale. Si elle est désactivée, l'appel d'une procédure stockée distante depuis une transaction locale n'entraîne pas le démarrage d'une transaction distribuée [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Si REMOTE_PROC_TRANSACTIONS est défini sur ON, l'appel d'une procédure stockée distante démarre une transaction distribuée et enregistre la transaction dans MS DTC. L'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] appelant la procédure stockée distante constitue l'élément créateur de la transaction et qui contrôle l'exécution jusqu'à son terme. Si une instruction COMMIT TRANSACTION ou ROLLBACK TRANSACTION est ensuite émise pour la connexion, le serveur de contrôle demande à MS DTC de gérer l'achèvement de la transaction distribuée sur tous les ordinateurs concernés.  
   
  Une fois la transaction distribuée [!INCLUDE[tsql](../../includes/tsql-md.md)] démarrée, des appels de procédures stockées distantes peuvent être émis vers d'autres instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui n'ont pas été définies en tant que serveurs distants. Les serveurs distants sont tous enregistrés dans la transaction distribuée [!INCLUDE[tsql](../../includes/tsql-md.md)] et MS DTC s'assure que la transaction est exécutée jusqu'à son terme sur chaque serveur distant.  

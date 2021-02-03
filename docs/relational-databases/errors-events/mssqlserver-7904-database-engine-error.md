@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 7904 (Database Engine error)
 ms.assetid: d047920c-f864-4338-b15f-49820886fbc5
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: e7b2f9e0bfd83ac85b647a0ac7d13b4fb9c282cf
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 849d684c8d726d348234d9f00f4d74deab08ec07
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88491240"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209137"
 ---
 # <a name="mssqlserver_7904"></a>MSSQLSERVER_7904
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

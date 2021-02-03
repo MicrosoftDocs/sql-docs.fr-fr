@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 8645 (Database Engine error)
 ms.assetid: 63d6d6d7-3850-4061-8e96-b1fa665e3180
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: c332f76355942fea982677608b1785674dce019a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8f1772c8c73fb18173916b91ea14adf3cf997f4d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88331395"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99205679"
 ---
 # <a name="mssqlserver_8645"></a>MSSQLSERVER_8645
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -53,7 +53,7 @@ La liste suivante présente les procédures générales à suivre pour résoudre
   
     -   **Mémoire minimum par requête**  
   
-    Identifiez les paramètres inhabituels. Si besoin est, corrigez-les. Prenez en compte l'augmentation de la mémoire requise pour [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Les paramètres par défaut sont répertoriés dans la rubrique « Définition des options de configuration de serveur » de la documentation en ligne de SQL Server.  
+    Identifiez les paramètres inhabituels. Si besoin est, corrigez-les. Prenez en compte l'augmentation de la mémoire requise pour [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. Les paramètres par défaut sont répertoriés dans la rubrique « Définition des options de configuration de serveur » de la documentation en ligne de SQL Server.  
   
 4.  Observez la sortie de DBCC MEMORYSTATUS et la façon dont elle change lorsque vous voyez ces messages d'erreur.  
   

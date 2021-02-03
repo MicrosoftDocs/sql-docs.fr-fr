@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STEndpoint (geometry Data Type)
 - STEndpoint_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 61773c45-b568-4e0c-94da-1310c42de7f5
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 1ec856db5c9f528135393bdb968ac35de4e94f2e
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 3dccbee5616cdcea74c6d24c932e8108cf0bf308
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88497022"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204643"
 ---
 # <a name="stendpoint-geometry-data-type"></a>STEndpoint (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

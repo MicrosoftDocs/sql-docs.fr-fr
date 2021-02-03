@@ -6,7 +6,7 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Locks event category [SQL Server]
 - SQL Server event classes, Locks event category
@@ -16,12 +16,12 @@ ms.assetid: 27d6afa2-7dab-4fe7-a1ad-064b879dc654
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: ed5d792cd88f067ae014cb5191a363c51f336b7c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: bfc94fb634af805d02b642527896db75348ecf14
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97467990"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99209755"
 ---
 # <a name="locks-event-category"></a>Verrous, catégorie d’événement
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

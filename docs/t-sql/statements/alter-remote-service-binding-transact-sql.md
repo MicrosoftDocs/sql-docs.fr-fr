@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER REMOTE SERVICE BINDING
 - ALTER_REMOTE_SERVICE_BINDING_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: ee620b4a-9375-4eaa-a016-69916c9e1e68
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: c671b412d5d9ce34c34fdc49e16215dafc8ec83e
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f7f8c056a12c2ae18bad5c5fc733a95d290c3b2b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092110"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204075"
 ---
 # <a name="alter-remote-service-binding-transact-sql"></a>ALTER REMOTE SERVICE BINDING (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

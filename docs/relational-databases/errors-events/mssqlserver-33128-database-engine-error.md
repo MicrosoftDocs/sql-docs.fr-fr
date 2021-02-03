@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 33128 (Database Engine error)
 ms.assetid: 12c1096f-d120-439b-85f3-f794859503c9
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 42cd550957444666dcc94a2a215ed1620751a89a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a1cb053c0922fde5ed87c6a666c55c950457e358
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456245"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99208401"
 ---
 # <a name="mssqlserver_33128"></a>MSSQLSERVER_33128
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
