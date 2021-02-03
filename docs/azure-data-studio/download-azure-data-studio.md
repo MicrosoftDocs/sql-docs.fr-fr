@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: maghan
 ms.custom: seodec18
 ms.date: 1/22/2020
-ms.openlocfilehash: 65daa495933d0dc974b6ae4d1c14ff9e59bd6249
-ms.sourcegitcommit: 2bdf1f1ee88f4fe3e872227d025e965e95d1b2b4
+ms.openlocfilehash: 1a8de5f990d9f3a8a974705d090dad8dccc1bae6
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98711965"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99235726"
 ---
 # <a name="download-and-install-azure-data-studio"></a>Télécharger et installer Azure Data Studio
 
@@ -174,7 +174,7 @@ Les mises à jour d’environnement hors connexion peuvent être appliquées en 
 
 ## <a name="supported-sql-offerings"></a>Produits SQL pris en charge
 
-- Cette version d’Azure Data Studio fonctionne avec toutes les [versions prises en charge de SQL Server 2014 - [!INCLUDE[sql-server-2019](../includes/sssqlv15-MD.md)]](https://support.microsoft.com/lifecycle?C2=1044) et offre la prise en charge d’une utilisation des dernières fonctionnalités cloud d’Azure SQL Database et d’Azure Synapse Analytics. Azure Data Studio fournit également l’aperçu en préversion pour Azure SQL Managed Instance.
+- Cette version d’Azure Data Studio fonctionne avec toutes les [versions prises en charge de [!INCLUDE [sssql14-md](../includes/sssql14-md.md)] - [!INCLUDE[sql-server-2019](../includes/sssql19-md.md)]](https://support.microsoft.com/lifecycle?C2=1044) et prend en charge l’utilisation des dernières fonctionnalités cloud d’Azure SQL Database et d’Azure Synapse Analytics. Azure Data Studio fournit également l’aperçu en préversion pour Azure SQL Managed Instance.
 
 ## <a name="move-user-settings"></a>Déplacer les paramètres utilisateur
 
