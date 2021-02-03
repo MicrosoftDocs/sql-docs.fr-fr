@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - HOST_ID
 - HOST_ID_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 36ba56d4-20d7-4cd1-aa2a-e40a6c0a4e39
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 099026a22a03c563b8ea176d5fed14d7d936ffc6
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: bfd14c50d3f4b566c3be442631278eca8ffc661f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91116345"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159214"
 ---
 # <a name="host_id-transact-sql"></a>HOST_ID (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

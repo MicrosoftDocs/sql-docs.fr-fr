@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CATALOG_TSQL
 - CREATE_FULLTEXT_TSQL
@@ -27,12 +27,12 @@ helpviewer_keywords:
 ms.assetid: d7a8bd93-e2d7-4a40-82ef-39069e65523b
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 4d3520d2a9d8c1c90507bb52742bd888eb1925cd
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0166a4c24664172e3c101e9495a250835f29158a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095836"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159139"
 ---
 # <a name="create-fulltext-catalog-transact-sql"></a>CREATE FULLTEXT CATALOG (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

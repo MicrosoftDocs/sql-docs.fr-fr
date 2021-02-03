@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 15540837-c4bf-4d18-b380-13ae31f3226f
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: fa0f82d9ee71c8fb5174a4ee4d48c706315f97e0
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: b332c6c2acf9e367318e58e3816aad63ea5e6498
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88458968"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159444"
 ---
 # <a name="hasm-geometry-datatype"></a>HasM (type de données geometry)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

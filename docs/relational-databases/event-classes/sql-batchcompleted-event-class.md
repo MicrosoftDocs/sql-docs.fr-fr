@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQL:BatchCompleted event class
 ms.assetid: 1be023e8-7a98-4400-b9e7-b24f6a3fc5ca
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 1c7e44d8f63a0a8d95071697820dac93397775a0
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: aeecb6bbe4a28e901ffb5d67e7e56b5a39d4e6ff
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478210"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161527"
 ---
 # <a name="sqlbatchcompleted-event-class"></a>Classe d'événements SQL:BatchCompleted
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

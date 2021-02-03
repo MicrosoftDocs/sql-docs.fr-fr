@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - TRY_CONVERT_TSQL
 - TRY_CONVERT
@@ -19,12 +19,12 @@ ms.assetid: 3e6e7825-6482-4cb2-a8c2-9abc99e265a6
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: = azuresqldb-current||>= sql-server-2016 ||>= sql-server-linux-2017||>= aps-pdw-2016||= azure-sqldw-latest
-ms.openlocfilehash: 64d85762e97da9c282f1f36e65676354c68d210a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 65d082cc3e4758688c7405e7bfc337dfb28d525d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480390"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159710"
 ---
 # <a name="try_convert-transact-sql"></a>TRY_CONVERT (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

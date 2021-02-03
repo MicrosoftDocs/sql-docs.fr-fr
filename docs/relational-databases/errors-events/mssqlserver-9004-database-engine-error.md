@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 9004 (Database Engine error)
 ms.assetid: b528bb49-340c-4a81-9c8d-cefce6562f16
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 4f9b9a18806a4a91b58d0b30e83e560e8f73f6be
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b4706982db7c2c121af0658142344c0558321b52
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88460891"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161963"
 ---
 # <a name="mssqlserver_9004"></a>MSSQLSERVER_9004
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - EVENTDATA
 - fn_event_data
@@ -25,12 +25,12 @@ helpviewer_keywords:
 ms.assetid: 03a80e63-6f37-4b49-bf13-dc35cfe46c44
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: ab94e98f7a7a3dadacca109e64fa8c5cc2f5e1b6
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c1c09426976f6356c18c1bbc917599b2d22c1801
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093597"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174430"
 ---
 # <a name="eventdata-transact-sql"></a>EVENTDATA (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

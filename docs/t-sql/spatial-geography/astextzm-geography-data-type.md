@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - AsTextZM (geography Data Type)
 - AsTextZM_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: e9dc27f6-e945-4457-8498-7644db34008e
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 49857a94c95240386893854408d2b26cba533815
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: ba7999c54c0a6750136c5ef1484034b82288c2cd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96115165"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160224"
 ---
 # <a name="astextzm-geography-data-type"></a>AsTextZM (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

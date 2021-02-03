@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: d1822f1b-c1dd-4f2f-ab7c-6617c05a2b6c
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 4e9fe842234ae0cf2ec704bbdeee0eab81dfd835
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2d42be9458231abaa96aa1d89cafbd199589a59e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88467499"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176298"
 ---
 # <a name="extended-methods-on-geography-instances"></a>Méthodes étendues sur les instances géographiques
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

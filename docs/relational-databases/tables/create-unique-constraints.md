@@ -18,18 +18,18 @@ ms.assetid: a86f9d6f-f242-43be-b65d-b3435b71b62a
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 06f465d3c4ff6086d74c155c4f810730eca50742
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b2d8f1d2c6639b609a5f6feecc58137c6dc78580
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484481"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160285"
 ---
 # <a name="create-unique-constraints"></a>Créer des contraintes uniques
 
 [!INCLUDE [sqlserver2016-asdb-asdbmi](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi.md)]
 
-  Vous pouvez créer une contrainte unique dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou [!INCLUDE[tsql](../../includes/tsql-md.md)] pour interdire l'entrée de doublons dans des colonnes spécifiques qui ne participent pas à une clé primaire. La création d'une contrainte unique crée automatiquement un index unique correspondant.  
+  Vous pouvez créer une contrainte unique dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou [!INCLUDE[tsql](../../includes/tsql-md.md)] pour interdire l'entrée de doublons dans des colonnes spécifiques qui ne participent pas à une clé primaire. La création d'une contrainte unique crée automatiquement un index unique correspondant.  
   
 > [!NOTE]    
 > Pour plus d’informations sur les contraintes uniques dans Azure Synapse Analytics, consultez [Clé primaire, clé étrangère et clé unique dans Azure Synapse Analytics](/azure/sql-data-warehouse/sql-data-warehouse-table-constraints).

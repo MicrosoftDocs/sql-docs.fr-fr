@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 5231 (Database Engine error)
 ms.assetid: 6954ae84-ed0b-4f4c-9d0a-e73f3d71476c
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 634b525a3daa2b5ac83a759c89c8edd52eb5ca6d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8a300734abdc1a175a9601cd7e1049d75b1677ba
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88471028"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159582"
 ---
 # <a name="mssqlserver_5231"></a>MSSQLSERVER_5231
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

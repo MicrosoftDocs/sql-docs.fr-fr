@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - M (geography Data Type)
 - M_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: cdba04f0-4e17-48f6-bafb-b1f918c5a501
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 77a79972671854e7e8538de7b943545955f61e89
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 5c1a8113fbdd4d4406ede4d06f6b036227fdf6b1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88422423"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159638"
 ---
 # <a name="m-geography-data-type"></a>M (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

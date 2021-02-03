@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STMLineFromText (geometry Data Type)
 - STMLineFromText_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 39fe8559-c4c2-4d61-8508-86eb0a103807
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 25aaadff2928c1ed0e20aac626305621c98e9159
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: ce19b6188657afc79dae6a98ace97fc7391424ae
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88472421"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172487"
 ---
 # <a name="stmlinefromtext-geometry-data-type"></a>STMLineFromText (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

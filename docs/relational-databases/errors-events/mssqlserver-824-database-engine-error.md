@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 824 (Database Engine error)
 ms.assetid: 2aa22246-2712-4fdb-9744-36e7e6f3175e
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 0e2242b539f5fadb18beb54115e2cbad95336497
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 031a478a281538b096d0900ad80fa34741182269
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88499517"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180306"
 ---
 # <a name="mssqlserver_824"></a>MSSQLSERVER_824
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 41342 (Database Engine error)
 ms.assetid: 28270d98-c543-4e7d-b40c-2200e38dce1c
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: b236bbc02f7d3bd012d54c8481159e73e5a7adfc
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 638f0758a28a7a2a03a9f9abcbbfb82181948548
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88428711"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179571"
 ---
 # <a name="mssqlserver_41342"></a>MSSQLSERVER_41342
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

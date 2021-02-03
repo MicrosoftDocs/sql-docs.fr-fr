@@ -6,7 +6,7 @@ ms.date: 08/06/2020
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: machine-learning-services
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CREATE EXTERNAL RESOURCE POOL
 - CREATE EXTERNAL_RESOURCE_POOL_TSQL
@@ -23,12 +23,12 @@ author: dphansen
 ms.author: davidph
 manager: cgronlund
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15'
-ms.openlocfilehash: 7f57b0e829c240813d6f1a453d764e64bce6b279
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 20277ddde605ff45e00a913e0e5366e35f25fe43
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171601"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179146"
 ---
 # <a name="create-external-resource-pool-transact-sql"></a>CREATE EXTERNAL RESOURCE POOL (Transact-SQL)
 [!INCLUDE [SQL Server 2016 and later](../../includes/applies-to-version/sqlserver2016.md)]

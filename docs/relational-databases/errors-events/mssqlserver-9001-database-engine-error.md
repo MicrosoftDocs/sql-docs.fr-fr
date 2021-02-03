@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 9001 (Database Engine error)
 ms.assetid: a54de936-90c6-4845-aa96-29d32f154601
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: dcccb9a93c762cf7ccb1d690bc0894005dc30da3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d444024bbe25bdb6d49bc02b3fa82596dd6e8a6f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88494466"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162008"
 ---
 # <a name="mssqlserver_9001"></a>MSSQLSERVER_9001
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

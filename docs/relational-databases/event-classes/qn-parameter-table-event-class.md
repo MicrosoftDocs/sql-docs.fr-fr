@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - event classes [SQL Server], QN:Parameter Table
 ms.assetid: 292da1ed-4c7e-4bd2-9b84-b9ee09917724
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: ab228ac611b5e0267d9e1238d5269824020d5d3a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9bfa37ec3e59c1e67b3909eaad7926e443f5d5d6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97420054"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178164"
 ---
 # <a name="qnparameter-table-event-class"></a>Classe d'événements QN:Parameter Table
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

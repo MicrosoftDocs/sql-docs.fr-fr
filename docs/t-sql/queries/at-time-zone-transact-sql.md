@@ -7,7 +7,7 @@ ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.custom: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - AT TIME ZONE
 - AT_TIME_ZONE_TSQL
@@ -17,12 +17,12 @@ ms.assetid: 311f682f-7f1b-43b6-9ea0-24e36b64f73a
 author: VanMSFT
 ms.author: vanto
 monikerRange: = azuresqldb-current||=azure-sqldw-latest||>= sql-server-2016||>= sql-server-linux-2017
-ms.openlocfilehash: 8071dbcced9121cef361c2ceb76589a280ca344f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 391e045d078b2735411c51db73948e416f9e4ea5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460882"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159688"
 ---
 # <a name="at-time-zone-transact-sql"></a>AT TIME ZONE (Transact-SQL)
 

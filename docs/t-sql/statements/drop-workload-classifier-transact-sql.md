@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-data-warehouse
 ms.reviewer: jrasnick
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - WORKLOAD CLASSIFIER
 - WORKLOAD_CLASSIFIER_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 author: ronortloff
 ms.author: rortloff
 monikerRange: =azure-sqldw-latest
-ms.openlocfilehash: 4402f8a8b7b0f3bb887557fceb4eba2ab19775ac
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 94461734e21a8164357c2d53cf579efd26437993
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478450"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161823"
 ---
 # <a name="drop-workload-classifier-transact-sql"></a>DROP WORKLOAD CLASSIFIER (Transact-SQL)
 

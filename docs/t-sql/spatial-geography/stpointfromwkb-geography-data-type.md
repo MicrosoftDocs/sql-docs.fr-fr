@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STPointFromWKB_TSQL
 - STPointFromWKB (geography Data Type)
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: b3b4e3bb-47bc-4621-99c4-c97aa60cdf8b
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 70eabd3b36ad564b02d16e3ce906405d83a55730
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 2177f4464941bc49bfffd2531079974fb9fc0290
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88459014"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180384"
 ---
 # <a name="stpointfromwkb-geography-data-type"></a>STPointFromWKB (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

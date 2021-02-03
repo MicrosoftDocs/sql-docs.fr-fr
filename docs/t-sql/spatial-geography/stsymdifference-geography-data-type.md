@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STSymDifference (geography Data Type)
 - STSymDifference_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 82bbfa2c-a61b-4f41-9bf8-6f720f363bae
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 26536b5ac3042c1341d75336a7d1b7d8cc439892
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: e15a71c734543853a170b69cd9c0d380534af820
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88305895"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172519"
 ---
 # <a name="stsymdifference-geography-data-type"></a>STSymDifference (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Audit Database Scope GDR event class
 ms.assetid: 1641a38a-ef24-46ce-b2f4-bf732858c771
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: c9bbf61b097aa3a26fa9560eb7a0b5747f86773c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 1cabc1a81cf9d3a66951c5f58607f9bd8a3c2982
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97476400"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99171951"
 ---
 # <a name="audit-database-scope-gdr-event-class"></a>Audit Database Scope GDR (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

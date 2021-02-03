@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-data-warehouse
 ms.reviewer: jrasnick
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - WORKLOAD CLASSIFIER
 - WORKLOAD_CLASSIFIER_TSQL
@@ -21,12 +21,12 @@ ms.assetid: ''
 author: ronortloff
 ms.author: rortloff
 monikerRange: =azure-sqldw-latest
-ms.openlocfilehash: 6a81c3164e183bb8a202e4ac537298c093e6d873
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 5f592228f6570dfef5df91875ad60318806a1ad3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644011"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177861"
 ---
 # <a name="create-workload-classifier-transact-sql"></a>CREATE WORKLOAD CLASSIFIER (Transact-SQL)
 

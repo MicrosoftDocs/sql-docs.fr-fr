@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALL_TSQL
 - ALL
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 4b0c002e-1ffd-4425-a980-11fdc1f24af7
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: b531df59f8350058d88afd0d974aa873d88b7520
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f315735e5ad8b1c8fd9d5a54d581d66fe7e820b7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101034"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176367"
 ---
 # <a name="all-transact-sql"></a>ALL (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

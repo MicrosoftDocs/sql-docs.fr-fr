@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - GetAncestor_TSQL
 - GetAncestor
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: b96a986f-d5e4-4034-8013-de7974594ee9
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 0256deca482147f98ed93f788b8c77ea26a93b02
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 0a306814f0146fdb0dc1833d0d6f98d84cae8f1a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "92037172"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172546"
 ---
 # <a name="getancestor-database-engine"></a>GetAncestor (moteur de base de données)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

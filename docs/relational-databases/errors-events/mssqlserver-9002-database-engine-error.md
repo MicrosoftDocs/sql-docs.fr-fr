@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 9002 (Database Engine error)
 ms.assetid: 2e50841f-2b99-45f4-aec5-aa4add70cbeb
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 9e35ac85fa3037aa78b75a7f57046f9f9ef53e4d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6e46db0dadfa36155ac36670a13a0cc621fa74b2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88331125"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161989"
 ---
 # <a name="mssqlserver_9002"></a>MSSQLSERVER_9002
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

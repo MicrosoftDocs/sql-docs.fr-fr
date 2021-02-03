@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 9003 (Database Engine error)
 ms.assetid: 7fdfb391-5c6f-428b-b434-6c3d0b30fd7b
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 0e49ed3ea5b9be9475a5db57716c7f49e5673200
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 37070cdc53894b703674e4bd696cd162796351fa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88486983"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161980"
 ---
 # <a name="mssqlserver_9003"></a>MSSQLSERVER_9003
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

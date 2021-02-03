@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: 95a79b33-98f2-4929-a1a5-93b522a9e152
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest'
-ms.openlocfilehash: 164c05d3a8d78ad296af31bcbcbf797c0c77e56b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b96f059d38320b0c07e42f67125fc686ee7866df
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97421374"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159673"
 ---
 # <a name="version---transact-sql-metadata-functions"></a>Version - Fonctions de métadonnées Transact SQL
 [!INCLUDE[applies-to-version/asa-pdw](../../includes/applies-to-version/asa-pdw.md)]

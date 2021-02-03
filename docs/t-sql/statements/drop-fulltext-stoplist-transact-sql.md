@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP_FULLTEXT_STOPLIST_TSQL
 - DROP FULLTEXT STOPLIST
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 3ee2a2bb-1dfb-4e7c-90e9-9d917cd84a15
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: e8591c42688d3b459a2c3bdb126c6c988e3bdb1e
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: edd5eb9f8d47561d1ea0c97b47bcfdcb83885585
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091945"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179615"
 ---
 # <a name="drop-fulltext-stoplist-transact-sql"></a>DROP FULLTEXT STOPLIST (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

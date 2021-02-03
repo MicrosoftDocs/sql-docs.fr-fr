@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - FULLTEXT_INDEX_TSQL
 - CREATE_FULLTEXT_INDEX_TSQL
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 8b80390f-5f8b-4e66-9bcc-cabd653c19fd
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 758a8447197a5fcbb3794a7abfb152c4a430779d
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 780f0f1471f0ce7a03a4aa800e4e98cc6a533dbc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095814"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179179"
 ---
 # <a name="create-fulltext-index-transact-sql"></a>CREATE FULLTEXT INDEX (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

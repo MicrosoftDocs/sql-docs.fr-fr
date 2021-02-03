@@ -6,18 +6,18 @@ ms.date: 08/20/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, Masha
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 832 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 5252cae293cd4c700f359b8168e0d5d5d10a70cf
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: bba8712825dc3ef14617ad4e8d8f7312b479e936
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099236"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180296"
 ---
 # <a name="mssqlserver_832"></a>MSSQLSERVER_832
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

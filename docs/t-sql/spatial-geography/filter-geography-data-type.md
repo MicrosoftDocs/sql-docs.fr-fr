@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - Filter
 - Filter_TSQL
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 82a8f54a-3a47-4e20-b13a-b148029c5448
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 4a5e5ff41504184bd8c1aa0805267f38566b5162
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 4d3d5975a0e1d01a0b4dfbea123f483d8e004ab2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124313"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176316"
 ---
 # <a name="filter-geography-data-type"></a>Filter (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

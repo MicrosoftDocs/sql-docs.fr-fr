@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SP:CacheRemove event class
 ms.assetid: aaa3c5c4-2d3a-4832-a473-ce9bd4fb1c17
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 0c06d0df9d6d168cade0a055ca2c7a3544146f6c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6e26d61020412b3d98e36a79a298f781ff0e47a5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478220"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161642"
 ---
 # <a name="spcacheremove-event-class"></a>Classe d'événements SP:CacheRemove
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

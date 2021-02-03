@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 41333 (Database Engine error)
 ms.assetid: c3c3ae9a-1e4c-4de6-ba72-2f393375b053
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 0e3d0cb81362aacc4e3c60e83b077cf77e919f37
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 14c3afbb9c19506322b281c8abffb0865a68c9c8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88428681"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179575"
 ---
 # <a name="mssqlserver_41333"></a>MSSQLSERVER_41333
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

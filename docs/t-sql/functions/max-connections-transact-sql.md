@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - '@@MAX_CONNECTIONS'
 - '@@MAX_CONNECTIONS_TSQL'
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 57eb9f4b-548f-4212-9684-a11d831c4732
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: b703ec07314fca22052216aa938a94f4ee392604
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 67e4a3868e852a7bd454347e8e1e4b9c5a7fade4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102524"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160248"
 ---
 # <a name="x40x40max_connections-transact-sql"></a>&#x40;&#x40;MAX_CONNECTIONS (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

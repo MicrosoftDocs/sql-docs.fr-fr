@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: fdb64e09-222a-47fe-b08b-999264ca261d
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 4b30c373537ff1d70a6b41994cbf3c0a9ee05f53
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f20a996c6d89f1925a8e2f1317826b6e572d0d01
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099373"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161206"
 ---
 # <a name="grant-full-text-permissions-transact-sql"></a>GRANT - Autorisations relatives au texte intégral (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

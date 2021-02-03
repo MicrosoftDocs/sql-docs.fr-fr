@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a665a137-197c-4201-a2fb-ba639b5f3ca3
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 227af5db894525c1fe99b2020efa27ed6c2f8ec9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 06ef642e6a17188b0e806efb21c8685047cf3758
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88360115"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176303"
 ---
 # <a name="extended-static-geography-methods"></a>méthodes géographiques statiques étendues
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

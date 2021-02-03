@@ -6,7 +6,7 @@ ms.date: 03/01/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - event classes [SQL Server], Database event category
 - Database event category [SQL Server]
@@ -15,12 +15,12 @@ ms.assetid: b61af738-f144-4992-b0b2-d44cb7240991
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: aa35993e1430f14e24ceab407fb29a2cb83286c5
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5f13acae75ca7bb45efd20b940435ccfd6d1a299
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97469820"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178219"
 ---
 # <a name="database-event-category"></a>Catégorie d'événement Base de données
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

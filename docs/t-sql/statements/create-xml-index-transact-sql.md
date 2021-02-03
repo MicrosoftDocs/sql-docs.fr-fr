@@ -4,7 +4,7 @@ description: CREATE XML INDEX (Transact-SQL)
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CREATE_XML_INDEX_TSQL
 - XML INDEX
@@ -26,12 +26,12 @@ ms.author: wiassaf
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 08/10/2017
-ms.openlocfilehash: 03295249061e1ed6210c8dfbc086d0326137ad26
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f58ae25a634b080af7bcfaa752568aba7bd6519d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98082233"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177838"
 ---
 # <a name="create-xml-index-transact-sql"></a>CREATE XML INDEX (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

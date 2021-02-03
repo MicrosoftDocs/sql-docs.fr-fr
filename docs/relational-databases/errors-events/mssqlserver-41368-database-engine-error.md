@@ -6,19 +6,19 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 41368 (Database Engine error)
 ms.assetid: abc71559-4c4d-4cce-a08f-3299dd167842
 author: MashaMSFT
 ms.author: mathoma
 robots: noindex,nofollow
-ms.openlocfilehash: b3137e68acc9878af795a36015f6f6fe794a2156
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 97fec0c4cb8f24fe7e11b0399fa60289d68b7b07
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88476017"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179498"
 ---
 # <a name="mssqlserver_41368"></a>MSSQLSERVER_41368
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

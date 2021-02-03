@@ -5,7 +5,7 @@ ms.date: 03/25/2019
 ms.reviewer: ''
 ms.prod: sql
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 ms.custom: ''
 ms.author: giladm
 author: giladmit
@@ -25,12 +25,12 @@ helpviewer_keywords:
 - information types
 - data classification
 monikerRange: " >= sql-server-ver15 || = azuresqldb-current"
-ms.openlocfilehash: 8b5dce1e51adfd52c89a7cc6fbba2d9f91497933
-ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
+ms.openlocfilehash: 5d065fc3b939ae130d903d0d69060673a2094caf
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98688918"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165078"
 ---
 # <a name="drop-sensitivity-classification-transact-sql"></a>DROP SENSITIVITY CLASSIFICATION (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

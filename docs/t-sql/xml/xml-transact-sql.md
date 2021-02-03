@@ -3,7 +3,7 @@ title: xml (Transact-SQL)
 description: xml (Transact-SQL)
 ms.prod: sql
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - XML_TSQL
 - xml_TSQL
@@ -18,12 +18,12 @@ ms.author: genemi
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 07/26/2017
-ms.openlocfilehash: 885499cdd42d429c1fd86f098ad03be7b4b54ed2
-ms.sourcegitcommit: 2bf83972036bdbe6a039fb2d1fc7b5f9ca9589d3
+ms.openlocfilehash: a19e6cdb215e48965490c973f4daf0506d1cb805
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94674190"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161048"
 ---
 # <a name="xml-transact-sql"></a>xml (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

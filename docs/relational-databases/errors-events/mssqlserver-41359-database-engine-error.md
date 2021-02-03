@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 41359 (Database Engine error)
 ms.assetid: 02b717c7-9170-4676-b0f6-4dec9eb5b5d4
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 5de7dc505b2c9ab2c56a4f830dd456acf988f00a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 181f04da5be89f245f42b2205e23a53d0a58cc70
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88424331"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179520"
 ---
 # <a name="mssqlserver_41359"></a>MSSQLSERVER_41359
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

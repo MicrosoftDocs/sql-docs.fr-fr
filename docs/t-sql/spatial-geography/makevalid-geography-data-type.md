@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f67038e3-4f62-4465-994e-e95ac27d8ada
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 7a3ca43dea611fb3fb74167032bd72f045e39b41
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 86a6834c6f49d3df3a6d768ae2ed0617b3cd290d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88422413"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179624"
 ---
 # <a name="makevalid-geography-data-type"></a>MakeValid (type de données geography)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - SQLTransaction event class
 ms.assetid: 4e175aa3-4f3d-4b23-a423-4a7a1bd4e84e
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 06144140a2f37eec2cff1adfe9f4f4a15e4f1756
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4cd9c17ed1393b98025fa881f2b7eef7dae8dbb4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97483601"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161459"
 ---
 # <a name="sqltransaction-event-class"></a>SQLTransaction (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

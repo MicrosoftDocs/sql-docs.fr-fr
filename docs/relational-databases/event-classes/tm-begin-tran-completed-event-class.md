@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - 'TM: Begin Tran Completed event class'
 ms.assetid: 95ddd3c6-51ef-4ad1-afd0-3aed82c9f724
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: ecb9b915354e897d5966b0cfd96298bbae19376a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b1f40298ae91b328fdd3a1437c1d9adc938ec66b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97483581"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161443"
 ---
 # <a name="tm-begin-tran-completed-event-class"></a>TM : Begin Tran Completed (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "97483581"
 |SessionLoginName|**nvarchar**|Nom de connexion de l'utilisateur à l'origine de la session. Par exemple, si vous vous connectez à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en utilisant le nom Connexion1 et que vous exécutez une instruction en tant que Connexion2, SessionLoginName affiche Connexion1 et LoginName, Connexion2. Cette colonne affiche à la fois les connexions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et Windows.|64|Oui|  
 |SPID|**int**|ID de la session au cours de laquelle l'événement s'est produit.|12|Oui|  
 |StartTime|**datetime**|Heure à laquelle a débuté l'événement, si disponible.|14|Oui|  
-|Succès|**int**|1 = réussite. 0 = échec (1 signifie la réussite de la vérification d'autorisations et 0 l'échec de cette vérification, par exemple).|23|Oui|  
+|Succès|**int**|1 = réussite. 1 = échec (par exemple, 0 signifie le succès d'une vérification des autorisations, et 0 signifie l'échec de cette vérification).|23|Oui|  
 |TextData|**ntext**|Valeur texte qui dépend de la classe d'événements capturée dans la trace.|1|Oui|  
 |TransactionID|**bigint**|ID affecté par le système à la transaction.|4|Oui|  
 |XactSequence|**bigint**|Jeton qui décrit la transaction en cours.|50|Oui|  

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 905 (Database Engine error)
 ms.assetid: c828bb2e-e554-4f81-b76c-2b3740d2b944
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 01b230fedd998bc3affc3826163a3c51dcede123
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8a15042fcfaa82e6fa3380455c9f6a28050a6b20
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88410606"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161958"
 ---
 # <a name="mssqlserver_905"></a>MSSQLSERVER_905
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

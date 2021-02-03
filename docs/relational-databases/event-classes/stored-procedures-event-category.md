@@ -6,7 +6,7 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Stored Procedures event category [SQL Server]
 - SQL Server event classes, Stored Procedures event category
@@ -15,12 +15,12 @@ ms.assetid: 71bebaa3-a05a-4695-b349-078cecd0949a
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: dfb42d75870d029be20171a45d0fcfb693eecb58
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 000fab845e06d28d2671032ae032bdae10881b24
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97483591"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161441"
 ---
 # <a name="stored-procedures-event-category"></a>Catégorie d'événements Procédures stockées
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

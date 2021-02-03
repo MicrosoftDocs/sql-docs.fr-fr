@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - FULLTEXTSERVICEPROPERTY_TSQL
 - FULLTEXTSERVICEPROPERTY
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: b7dcacb0-af83-4807-9d1e-49148b56b59c
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: b5d14ac6097fb6b1199124046c5780139e644949
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c4108edf72e31ec8fc1db7838c239143cf36e136
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98087183"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179216"
 ---
 # <a name="fulltextserviceproperty-transact-sql"></a>FULLTEXTSERVICEPROPERTY (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -4,7 +4,7 @@ title: ISDATE (Transact-SQL)
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ISDATETIME
 - ISDATE_TSQL
@@ -32,12 +32,12 @@ ms.reviewer: ''
 ms.custom: ''
 ms.date: 03/14/2017
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 5345bbdc161730ba0d08c79e0d52b7e2ec901498
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c79cdd5c9a9863a6072a86693a2b597e282f38aa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097216"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161873"
 ---
 # <a name="isdate-transact-sql"></a>ISDATE (Transact-SQL)
 

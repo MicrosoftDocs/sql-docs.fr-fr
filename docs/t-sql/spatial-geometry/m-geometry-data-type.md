@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - M (geometry Data Type)
 - M_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 443ae2ea-739b-41ef-96cc-ac5dfd65e10b
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 79a575b57bc3f41f48f9a00ed95784b09f84f5f6
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 2e3b3bcb2c8dd48fffe278aef0415992b3d7dbc0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88497054"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159419"
 ---
 # <a name="m-geometry-data-type"></a>M (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

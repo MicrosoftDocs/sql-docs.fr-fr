@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 41399 (Database Engine error)
 ms.assetid: 5e5acb07-16ca-4329-8210-cd2bab0c904f
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 2265ac2c7b83dde303e25f68d3a3c49cc35bbfa3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1d031d704b3457dca1d8d0926825475a9cdba8a4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88471071"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179335"
 ---
 # <a name="mssqlserver_41399"></a>MSSQLSERVER_41399
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sql_variant
 - sql_variant_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 01229779-8bc1-4c7d-890a-8246d4899250
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: d6d5bac616d1c83cda53a055b00951cced2de19f
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: 3787a49e6488a2b43ba8ef6e7b67c2a94b6347b1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91111213"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179698"
 ---
 # <a name="sql_variant-transact-sql"></a>sql_variant (Transact-SQL)
 

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STMPolyFromWKB (geography Data Type)
 - STMPolyFromWKB_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: c4d0e649-0abb-4343-a3f0-3a702c8bbbdb
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 76adf5bfff925c74f728d19b6781f346646354fa
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 0131b12b730cac94bc507a2fc388d696feee72b2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88306188"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180161"
 ---
 # <a name="stmpolyfromwkb-geography-data-type"></a>STMPolyFromWKB (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

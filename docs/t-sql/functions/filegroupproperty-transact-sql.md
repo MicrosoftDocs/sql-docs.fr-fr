@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - FILEGROUPPROPERTY_TSQL
 - FILEGROUPPROPERTY
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: b3a930e6-df05-4034-929c-f681f5f6fc6e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 05e92cdfb95110701fd41d4d02462b35477d8c61
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: cdc8e66d73e7296d269edd420fde4709c11d41f9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98087790"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161865"
 ---
 # <a name="filegroupproperty-transact-sql"></a>FILEGROUPPROPERTY (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

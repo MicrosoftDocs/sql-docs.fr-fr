@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - geometry
 dev_langs:
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 3fefdf7b-f931-404c-821c-82c0375eaf51
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: a4db170e5d18b1d2e13d0e6a23ecc879856d71eb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4889317b7492a5f51657d38cf2e71001f890e048
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88445094"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180145"
 ---
 # <a name="spatial-types---geometry-transact-sql"></a>Types spatiaux - geometry (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

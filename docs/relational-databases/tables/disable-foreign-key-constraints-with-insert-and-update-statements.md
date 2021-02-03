@@ -18,17 +18,17 @@ ms.assetid: 029168d7-085e-4b13-9b86-5644b67c6e24
 author: stevestein
 ms.author: sstein
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 787dbcea6f31fa5bfdb70ebe22dcf9803195625c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 575ab9ae04fc18414426791c957acc76cd9ca428
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440550"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179725"
 ---
 # <a name="disable-foreign-key-constraints-with-insert-and-update-statements"></a>Désactiver les contraintes de clé étrangère avec des instructions INSERT et UPDATE
 [!INCLUDE [sqlserver2016-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sqlserver2016-asdb-asdbmi-asa-pdw.md)]
 
-  Vous pouvez désactiver une contrainte de clé étrangère pendant les transactions INSERT et UPDATE dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Utilisez cette option si vous savez que de nouvelles données ne violeront pas la contrainte existante ou si la contrainte s’applique uniquement aux données déjà dans la base de données.  
+  Vous pouvez désactiver une contrainte de clé étrangère pendant les transactions INSERT et UPDATE dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Utilisez cette option si vous savez que de nouvelles données ne violeront pas la contrainte existante ou si la contrainte s’applique uniquement aux données déjà dans la base de données.  
   
  **Dans cette rubrique**  
   

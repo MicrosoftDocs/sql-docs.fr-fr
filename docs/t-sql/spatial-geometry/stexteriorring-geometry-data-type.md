@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STExteriorRing_TSQL
 - STExteriorRing (geometry Data Type)
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: b402b36f-05bf-4c6d-8cd6-76c0fff19db2
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 7bdf05ddaa39a225bf77538fd492387c481c4749
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 7d73818f16a059de5b6f23171bc9cd4dec026d10
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88416915"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159376"
 ---
 # <a name="stexteriorring-geometry-data-type"></a>STExteriorRing (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

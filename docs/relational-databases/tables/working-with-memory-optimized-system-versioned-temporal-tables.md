@@ -12,12 +12,12 @@ ms.assetid: 691d4f80-6754-43f5-8b43-d4facf08f6fc
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 67d1c661f7157081f2693555667c439d589292e4
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: acfdadf0216bd243f61339982615c4bf83796dfa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97472560"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177975"
 ---
 # <a name="working-with-memory-optimized-system-versioned-temporal-tables"></a>Utilisation des tables temporelles avec contrôle de version du système à mémoire optimisée
 
@@ -28,7 +28,7 @@ ms.locfileid: "97472560"
 Cette rubrique décrit la façon dont l’utilisation d’une table temporelle avec contrôle de version du système à mémoire optimisée diffère de celle d’une table temporelle avec contrôle de version du système sur disque.
 
 > [!NOTE]
-> L’utilisation de la technologie Temporal avec des tables optimisées en mémoire s’applique uniquement à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et ne s’applique pas à [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].
+> L’utilisation de la technologie Temporal avec des tables optimisées en mémoire s’applique uniquement à [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] et ne s’applique pas à [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].
 
 ## <a name="discovering-metadata"></a>Découverte des métadonnées
 

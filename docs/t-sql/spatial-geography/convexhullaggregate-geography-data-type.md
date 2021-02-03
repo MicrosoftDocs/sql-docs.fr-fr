@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ConvexHullAggregate_TSQL
 - ConvexHullAggregate
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 21784c66-2725-471b-9e2d-a8c2e3695197
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: a43aad8c89ff1fccdcb8165c77140283a3d10b20
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: fba09550ac86e630ccf1e29083cbb7565ef2265e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96114961"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159656"
 ---
 # <a name="convexhullaggregate-geography-data-type"></a>ConvexHullAggregate (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

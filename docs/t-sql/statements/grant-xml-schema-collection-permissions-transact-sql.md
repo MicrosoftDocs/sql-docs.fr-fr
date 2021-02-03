@@ -8,7 +8,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 57e24465-cd43-45cf-bb52-eea0b49867f9
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 5708ddc71349be212e043b865f74da15dec8d9aa
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 6f9a79115c1243f058552d18f2f515f7d4a594d3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102281"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180128"
 ---
 # <a name="grant-xml-schema-collection-permissions-transact-sql"></a>GRANT – octroi d'autorisations de collection de schémas XML (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

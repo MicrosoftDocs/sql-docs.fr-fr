@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 63000023-54fc-4efc-a30f-fb4d4db73aae
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c32458123a5f67ac47718bee19f07912c548879c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 6b755aee79e699f7f0b68d2d8ae32cf5c50f4074
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100939"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172553"
 ---
 # <a name="cursors-transact-sql"></a>Curseurs (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

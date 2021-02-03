@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - 'TM: Rollback Tran Starting event class'
 ms.assetid: 3b4d0d56-c51f-4f07-a116-5d4bd6ec1a3c
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 158ed0a1d2d8bb3f97f1cfb4ec8e5d4f55995fbe
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5e718aa4cdcd11deea22b5fee9e9a9a8b0487cbd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97483511"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99161430"
 ---
 # <a name="tm-rollback-tran-starting-event-class"></a>TM : Rollback Tran Starting (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

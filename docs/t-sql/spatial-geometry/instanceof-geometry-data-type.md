@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - InstanceOf
 - InstanceOf_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: fdea1248-29a4-4bab-a60d-a1b359b5e109
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 5b79e0d67f11258afb8cf7aeebbfc4d52b9f4907
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: b1f57375c45bd6fcd78ff5f7e535b36cd2c89834
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88497047"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159441"
 ---
 # <a name="instanceof-geometry-data-type"></a>InstanceOf (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

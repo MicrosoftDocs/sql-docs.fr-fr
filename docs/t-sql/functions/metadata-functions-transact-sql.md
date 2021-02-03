@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a18c12a9-59ad-4711-a862-39d8f28476b0
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a32bd7613c6f89f9851b0989f9a30bc1d1671375
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: b09204a15c1f4b7231db84602053a4f38e4f2584
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096015"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160235"
 ---
 # <a name="metadata-functions-transact-sql"></a>Fonctions de métadonnées (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
