@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER SYMMETRIC KEY
 - ALTER_SYMMETRIC_KEY_TSQL
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: d3c776a4-7d71-4e6f-84fc-1db47400c465
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: a5635a7a0cc1d4c90ea70cf5973f0fc09b938f63
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: deb59e00ee0d95f7a4dc36b095cb73496b8a5261
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124196"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182162"
 ---
 # <a name="alter-symmetric-key-transact-sql"></a>ALTER SYMMETRIC KEY (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

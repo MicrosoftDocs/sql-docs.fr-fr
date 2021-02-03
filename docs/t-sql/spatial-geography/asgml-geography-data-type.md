@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - AsGml_(geography_Data_Type)_TSQL
 - AsGml
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 67795c64-d8d3-48dc-93ef-3c8a9274deb6
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 28d810b8bf74a91a72dad7ab7d9eadce9bbfb9ae
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: b90ecf9ef8c438f4973bce3ab20660d9e6b16d74
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124366"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187251"
 ---
 #  <a name="asgml---geography-data-type"></a>AsGml - type de données geography
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

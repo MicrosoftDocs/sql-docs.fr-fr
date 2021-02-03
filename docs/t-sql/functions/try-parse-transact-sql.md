@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - TRY_PARSE_TSQL
 - TRY_PARSE
@@ -19,12 +19,12 @@ ms.assetid: 292bac1d-edd8-468c-8ff1-8c7de625bc55
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: = azuresqldb-current||>= sql-server-2016||>= sql-server-linux-2017||=azure-sqldw-latest
-ms.openlocfilehash: 04192a06022cefa9ccc5ba42fd2db50cf867bb49
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: dfd39a530ca9bac61d2a4ac6036eaae7d5c37152
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97462350"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183334"
 ---
 # <a name="try_parse-transact-sql"></a>TRY_PARSE (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

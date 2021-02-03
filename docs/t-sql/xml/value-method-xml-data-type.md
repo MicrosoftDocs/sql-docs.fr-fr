@@ -6,7 +6,7 @@ ms.date: 07/26/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 298a7361-dc9a-4902-9b1e-49a093cd831d
 author: MightyPen
 ms.author: genemi
-ms.openlocfilehash: ce7382722999e7120cafc3fcc7aeff496d1b97c8
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: dce7148340136615b79d4bf4e4ec9dd15627c88e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91116556"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181724"
 ---
 # <a name="value-method-xml-data-type"></a>value(), méthode (Type de données xml)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -102,7 +102,7 @@ ORDER BY Result DESC
 ```  
   
 ### <a name="c-using-the-value-and-exist-methods-to-retrieve-values-from-an-xml-type-column"></a>C. Utilisation des méthodes value() et exist() pour récupérer des valeurs à partir d'une colonne de type xml  
- L’exemple suivant illustre l’utilisation de la méthode `value()` et de la [méthode exist() ](../../t-sql/xml/exist-method-xml-data-type.md) du type de données **xml**. La méthode `value()` est utilisée pour récupérer des valeurs d'attributs `ProductModelID` à partir du code XML. La méthode `exist()` de la clause `WHERE` est utilisée pour filtrer les lignes de la table.  
+ L’exemple suivant illustre l’utilisation de la méthode `value()` et de la [méthode exist()](../../t-sql/xml/exist-method-xml-data-type.md) du type de données **xml**. La méthode `value()` est utilisée pour récupérer des valeurs d'attributs `ProductModelID` à partir du code XML. La méthode `exist()` de la clause `WHERE` est utilisée pour filtrer les lignes de la table.  
   
  La requête récupère des ID de modèle de produit à partir d’instances XML qui incluent des informations de garantie (l’élément <`Warranty`>) comme caractéristiques. La condition de la clause `WHERE` utilise la méthode `exist()` pour récupérer uniquement les lignes qui satisfont cette condition.  
   

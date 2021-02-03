@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STCentroid_TSQL
 - STCentroid (geometry Data Type)
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 4dc5a004-7a53-4cce-81dd-9f5e1dd0db78
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 5bcdb5f682ebd279af1d5314917f61290a88b07e
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: efa17bc7e133aec0b3730c814a35c64bb6ac5ae7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88479264"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187200"
 ---
 # <a name="stcentroid-geometry-data-type"></a>STCentroid (type de données geometry)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

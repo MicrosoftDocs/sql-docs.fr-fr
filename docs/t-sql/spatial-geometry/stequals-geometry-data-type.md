@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STEquals (geometry Data Type)
 - STEquals_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 808f0e25-9e68-4ba7-9329-07ec950698f3
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 4ce45e482bac277168afdf65d447a53ebed00ea5
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 501921075c8da9dcbf1f2e9b0196f70439a7c8ba
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88445077"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186307"
 ---
 # <a name="stequals-geometry-data-type"></a>STEquals (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_SEQUENCE_TSQL
 - ALTER SEQUENCE
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: decc0760-029e-4baf-96c9-4a64073df1c2
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: c32f4e9a6a020df9f7be879eb6e4327bbb9d51f2
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 44baafa6b239a2eff1a62d6c5194535d9a87ecbd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094673"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182212"
 ---
 # <a name="alter-sequence-transact-sql"></a>ALTER SEQUENCE (Transact-SQL)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - MSSQL_ENG014157 error
 ms.assetid: 1a0890cf-d977-43e0-a2ba-9c5ff1a8f856
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: 2f2b6e47096e4bfff3c8830b3ba38f506db47df5
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 49be4e6ae7cbea651b5565dfd1e6c22afe4ad063
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97473430"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187061"
 ---
 # <a name="mssql_eng014157"></a>MSSQL_ENG014157
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

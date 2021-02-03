@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - Filter
 - Filter_TSQL
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 3d629a39-157e-4159-a3ca-a3c2e0ed4160
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 11092f892c9e6e756849f368a44db3ec7f3d0a61
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e52b7593ee0d47039681d4b87dea273fb369d34f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88359255"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187234"
 ---
 # <a name="filter-geometry-data-type"></a>Filter (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

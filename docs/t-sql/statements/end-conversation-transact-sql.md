@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - END DIALOG
 - END CONVERSATION
@@ -25,12 +25,12 @@ helpviewer_keywords:
 ms.assetid: 4415a126-cd22-4a5e-b84a-d8c68515c83b
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 16dd2a5201d001a54103408386036cee39040523
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 83d0acb45d13442e2c538878d3336688513e6519
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093433"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183003"
 ---
 # <a name="end-conversation-transact-sql"></a>END CONVERSATION (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

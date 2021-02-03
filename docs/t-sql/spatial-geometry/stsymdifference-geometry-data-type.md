@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STSymDifference_TSQL
 - STSymDifference (geometry Data Type)
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 1d4cf35a-ca89-4aa4-ae30-e61a0ff18b53
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 1a419562b8326cbdceee2be888c538e61bbedac3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a747287be04f7acf66c87e1b342f7532831b39ea
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88359625"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184559"
 ---
 # <a name="stsymdifference-geometry-data-type"></a>STSymDifference (type de données geometry)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

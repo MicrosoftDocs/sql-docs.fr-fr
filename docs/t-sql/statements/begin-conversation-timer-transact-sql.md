@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CONVERSATION
 - BEGIN_CONVERSATION_TSQL
@@ -33,12 +33,12 @@ helpviewer_keywords:
 ms.assetid: 98e49b3f-a38f-4180-8171-fa9cb30db4cb
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 6c30351f5fe448b967d874f3ef0a9eb5dc94faa5
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 8212a0d9589c325eb716ea2491fd7c78551929fd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098447"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184486"
 ---
 # <a name="begin-conversation-timer-transact-sql"></a>BEGIN CONVERSATION TIMER (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

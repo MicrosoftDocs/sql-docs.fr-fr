@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - PWDENCRYPT
 - PWDENCRYPT_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 333e9a43-1099-4b9b-b941-4b0b016f47f3
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 359caf584357994eab4441e345aefdc528cb363b
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 2bc5c778ea6dc591099538b974bf71f4d85c4f0a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91380704"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182349"
 ---
 # <a name="pwdencrypt-transact-sql"></a>PWDENCRYPT (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

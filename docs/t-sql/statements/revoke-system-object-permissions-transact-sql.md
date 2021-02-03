@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 84983238-dd7d-45bd-99bb-52c9d8e96a87
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: c7485325af023c264193fcc8ce8a449553dcb0b9
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: c3c0df1a646caa6562c640b119abe3817d15c094
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91498040"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185924"
 ---
 # <a name="revoke-system-object-permissions-transact-sql"></a>REVOKE – révocation d'autorisations d'objet système (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

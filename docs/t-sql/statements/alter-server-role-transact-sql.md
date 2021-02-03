@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: pdw, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_SERVER_ROLE_TSQL
 - ALTER SERVER ROLE
@@ -20,12 +20,12 @@ ms.assetid: 7a4db7bb-c442-4e12-9a8a-114da5bc7710
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 0f9c922af5cb3dcca795cb095aebea4875c9f18c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: d0708ee4181ce959b1bc307d9fa29b3c7ae408c4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97483941"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182150"
 ---
 # <a name="alter-server-role-transact-sql"></a>ALTER SERVER ROLE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-pdw-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-pdw-md.md)]

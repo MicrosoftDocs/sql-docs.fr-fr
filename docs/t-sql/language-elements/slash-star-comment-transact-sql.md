@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - /*...*/_TSQL
 - Comment
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 4d9ab1b2-4bbb-4c16-beb1-cafc1af7417c
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 00dbdd9a6fb7641c00b57eff996bf94b9b683aa3
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 28104f9417d37d8ca1a3c561738dfde34e504749
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096970"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184643"
 ---
 # <a name="slash-star-block-comment-transact-sql"></a>Barre oblique étoile (bloc de commentaire) (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx_md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

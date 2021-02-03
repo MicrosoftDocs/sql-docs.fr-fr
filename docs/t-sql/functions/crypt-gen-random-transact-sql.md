@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CRYPT_GEN_RANDOM_TSQL
 - CRYPT_GEN_RANDOM
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: b74bd9d4-758e-4b94-89a0-76dcda6d8c42
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: d0cdca25e14d58270185d4605287d22d1af5e0d2
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 7c0381c2348174e5d3663d0b38a44714a96df621
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96118620"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184155"
 ---
 # <a name="crypt_gen_random-transact-sql"></a>CRYPT_GEN_RANDOM (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

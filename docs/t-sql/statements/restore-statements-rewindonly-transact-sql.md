@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - RESTORE_REWINDONLY_TSQL
 - RESTORE REWINDONLY
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 7f825b40-2264-4608-9809-590d0f09d882
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 32162b5b3245c77d0f462b56cae2ddf9d39db9bd
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: fc5e119a9f3bad173ca72dc7b2905a82481fa1ef
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88478728"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186614"
 ---
 # <a name="restore-statements---rewindonly-transact-sql"></a>RESTORE Statements - REWINDONLY (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

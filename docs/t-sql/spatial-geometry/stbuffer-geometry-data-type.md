@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STBuffer (geometry Data Type)
 - STBuffer_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: ca6bf2dc-1d38-4503-b87e-f2ea033d36ba
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 7644e25159a7df28d2de51d5e1a08a0e1b36ef05
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 787612ae8cdb2cc5751818c31f111831e4013cbf
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "92300381"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187225"
 ---
 # <a name="stbuffer-geometry-data-type"></a>STBuffer (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

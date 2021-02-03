@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 41030 (Database Engine error)
 ms.assetid: c85341ae-0fbf-42ae-9275-4cfe678238f0
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 1420fb5c7abac41430135cec85c4e15e2737cc46
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5e091a0e56074657601f23a082ea32bd62128dd9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88471091"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185136"
 ---
 # <a name="mssqlserver_41030"></a>MSSQLSERVER_41030
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

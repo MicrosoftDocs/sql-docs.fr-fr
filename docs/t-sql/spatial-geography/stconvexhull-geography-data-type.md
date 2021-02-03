@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: fb435db7-31bb-4243-9d8b-35379184cfb4
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 0db7ad59585b2ff0c57526ca40f7caa3576e99fc
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: b97a73933a395aa868df5dfba4d281be873ca4db
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88479328"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185970"
 ---
 # <a name="stconvexhull-geography-data-type"></a>STConvexHull (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

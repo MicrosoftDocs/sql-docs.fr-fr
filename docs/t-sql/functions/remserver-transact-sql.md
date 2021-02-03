@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - '@@REMSERVER'
 - '@@REMSERVER_TSQL'
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 0bb451a9-3866-4064-963d-b74a2f864049
 author: julieMSFT
 ms.author: jrasnick
-ms.openlocfilehash: 65ab8cab274a4fa70aa70898725431a4d59bcd11
-ms.sourcegitcommit: 197a6ffb643f93592edf9e90b04810a18be61133
+ms.openlocfilehash: 46c6ebecd20f67506262bc48db332afeb15a726a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91380624"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182286"
 ---
 # <a name="x40x40remserver-transact-sql"></a>&#x40;&#x40;REMSERVER (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

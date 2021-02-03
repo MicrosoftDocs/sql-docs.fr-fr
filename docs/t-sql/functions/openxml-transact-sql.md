@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - OPENXML_TSQL
 - OPENXML
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 8088b114-7d01-435a-8e0d-b81abacc86d6
 author: julieMSFT
 ms.author: jrasnick
-ms.openlocfilehash: ee78ea030b50ee6ab90c5df616f2bd49f163ded2
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 6a37cdab9cc3adda4043cd7e849a4d743eb9779f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91115890"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183987"
 ---
 # <a name="openxml-transact-sql"></a>OPENXML (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

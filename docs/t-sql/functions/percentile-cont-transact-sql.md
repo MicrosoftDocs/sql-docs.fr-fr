@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - PERCENTILE_CONT_TSQL
 - PERCENTILE_CONT
@@ -20,12 +20,12 @@ ms.assetid: d019419e-5297-4994-97d5-e9c8fc61bbf4
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 77aafeec16256a6e05b48034f86c0a193cfecbf9
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 2e2ab7fa86b8888f105428847bdd751ac749bba5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97468150"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186065"
 ---
 # <a name="percentile_cont-transact-sql"></a>PERCENTILE_CONT (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

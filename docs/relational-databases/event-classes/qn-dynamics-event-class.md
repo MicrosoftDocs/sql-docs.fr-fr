@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - event classes [SQL Server], QN:Dynamics
 ms.assetid: 3c1ffa0c-c9e5-40a6-a26b-28339f60ebc3
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: df3b445815eaa10ce5a4a3dcda71eb7e1a0a0fd7
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 097d009976ec3de6233546177458243e739e5f0c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474020"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181369"
 ---
 # <a name="qndynamics-event-class"></a>Classe d'événements QN:Dynamics
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

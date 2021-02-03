@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STNumGeometries (geometry Data Type)
 - STNumGeometries_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 9402b03d-3039-42ca-ac59-f96b7f1a48de
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 8ef4aa6a47bdb974803d111a023b473c0c49cf0b
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: f988829d747889feeca37a538c4a0cb565d9dea6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88444938"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181765"
 ---
 # <a name="stnumgeometries-geometry-data-type"></a>STNumGeometries (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

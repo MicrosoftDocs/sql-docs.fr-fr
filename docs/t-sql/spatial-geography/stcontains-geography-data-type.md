@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b10e8f0a-2926-449a-82ea-be42543420ca
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: d3e9b03eac0107792b9b0cdb59359f5ad70b5474
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: f077d3aa3826fa0e2053ba23ddc94574d2823b09
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88459076"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185985"
 ---
 # <a name="stcontains--geography-data-type"></a>STContains (type de données geography)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

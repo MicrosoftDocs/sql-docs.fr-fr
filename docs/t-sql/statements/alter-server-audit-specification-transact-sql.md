@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER SERVER AUDIT SPECIFICATION
 - ALTER_SERVER_AUDIT_SPECIFICATION_TSQL
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 9cac288b-940e-4c16-88d6-de06aeed2b47
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: ca119bfb4b94aee36270315a29e97613f3d28ce5
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 0a15b11f429e63bbf8a7ae33b31f4549ccaa0ad9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124218"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182187"
 ---
 # <a name="alter-server-audit-specification-transact-sql"></a>ALTER SERVER AUDIT SPECIFICATION (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

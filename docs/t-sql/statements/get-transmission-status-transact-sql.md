@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STATUS_TSQL
 - TRANSMISSION
@@ -26,12 +26,12 @@ helpviewer_keywords:
 ms.assetid: 621805d5-49ed-4764-b3cb-2ae4a3bf797e
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: f5a59676494b664e11b3dbd0ad86a2c9d4d9f434
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 09666ba2e475f2f830654402603e4abde798e7dd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091841"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186643"
 ---
 # <a name="get_transmission_status-transact-sql"></a>GET_TRANSMISSION_STATUS (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

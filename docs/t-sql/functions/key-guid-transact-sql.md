@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - Key_GUID_TSQL
 - Key_GUID
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 9246c7b2-7098-42c4-a222-cbf30267c46a
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: ec78a9cd0dc6c0b08b61e4d1ca79748350bbb6ea
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: a41bc9595d6969b161a160691570125a8204b6d8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91115161"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183975"
 ---
 # <a name="key_guid-transact-sql"></a>KEY_GUID (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

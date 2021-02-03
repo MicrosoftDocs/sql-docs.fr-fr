@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - GROUPING
 - GROUPING_TSQL
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 4efa3868-1fc4-4626-8fb1-e863cc03e422
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 9ced8a83cff51304050b71373a3272cdc2a80af6
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: fe8a8f781c72e0b188ca87f9d71af8dff4aeab89
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100449"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182376"
 ---
 # <a name="grouping-transact-sql"></a>GROUPING (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

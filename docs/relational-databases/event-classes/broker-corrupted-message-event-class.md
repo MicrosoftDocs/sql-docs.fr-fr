@@ -6,19 +6,19 @@ ms.date: 05/24/2019
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Broker:Corrupted Message event class
 ms.assetid: 084bf198-2138-438e-bdc7-4ff1e04300f7
 author: stevestein
 ms.author: sstein
 monikerRange: '>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 053d1f562f65360272fa33312915b3c45f75bd6f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 140a6af6ae236818fbc88e56427d7034c82cc2bc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97469930"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187441"
 ---
 # <a name="brokercorrupted-message-event-class"></a>Broker:Corrupted Message, classe d'événements
 

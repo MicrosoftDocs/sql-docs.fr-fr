@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 844 (Database Engine error)
 ms.assetid: 2060c886-1226-4066-bc0c-de90a1cfb82b
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 1924a8cc064b9c0c7539802b99013ad28d97ce2a
-ms.sourcegitcommit: a0245fdae1ff9045f587a3a67b72f34405d35a4f
+ms.openlocfilehash: 0ae116b0ef06d82111e8ca356ae3f9c9a272f729
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88618080"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186791"
 ---
 # <a name="mssqlserver_844"></a>MSSQLSERVER_844
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - Null (geography Data Type)
 dev_langs:
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: bb464b06-86e0-4b8b-ad78-04bd33b6069c
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 5967923f11fddfbdfb1871474f421b02583a6db7
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 5be992307d8372d63d595220054e12968551f71f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88422343"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182254"
 ---
 # <a name="null-geography-data-type"></a>Null (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

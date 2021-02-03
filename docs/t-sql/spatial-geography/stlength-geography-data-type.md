@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STLength (geography Data Type)
 - STLength_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 774560ab-4a4a-4058-b043-1e67cf6fb9eb
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 5fe53017aa78bd4025a251611fd6f50c67d4401a
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 67ac1b9f1c846f33ede5522e079e5652ec7b6f7a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88445163"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181205"
 ---
 # <a name="stlength-geography-data-type"></a>STLength (type de données geography)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

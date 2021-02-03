@@ -8,7 +8,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 75409024-f150-4326-af16-9d60e900df18
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 1e2b53af6fd42d77e2169862074ac61c63dc5042
-ms.sourcegitcommit: b93beb4f03aee2c1971909cb1d15f79cd479a35c
+ms.openlocfilehash: 062096e77c7e907594f7c2b9a372e3eb1899324a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91498002"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185931"
 ---
 # <a name="revoke-server-principal-permissions-transact-sql"></a>REVOKE – révocation d'autorisations de principal de serveur (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

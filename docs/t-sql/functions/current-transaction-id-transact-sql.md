@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CURRENT_TRANSACTION_ID
 - CURRENT_TRANSACTION_ID_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 82cd9f92-d935-45a0-a433-620d6e15b467
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: bfb36aa43af3f67124d30b262f8fd6f3ca9f5215
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f48cffa6ebde2b0bae948d104636e3839b25a338
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093655"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184060"
 ---
 # <a name="current_transaction_id-transact-sql"></a>CURRENT_TRANSACTION_ID (Transact-SQL)
 

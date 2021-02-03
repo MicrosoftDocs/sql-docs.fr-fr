@@ -6,7 +6,7 @@ ms.date: 07/27/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - xml_schema_namespace_TSQL
 - xml_schema_namespace
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: ee9873d8-dd3a-4bff-a10c-68bbadbdf1a6
 author: MightyPen
 ms.author: genemi
-ms.openlocfilehash: c74b2b1f47c9e928d7c3028add043e539134828d
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: 865f2548293fc572a56c90b0813bb83aa2776cbc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91112977"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181694"
 ---
 # <a name="xml_schema_namespace"></a>xml_schema_namespace
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

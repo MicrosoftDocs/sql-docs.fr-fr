@@ -6,18 +6,18 @@ ms.date: 12/25/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, vencher, tejasaks, docast
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 3989 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 11862d9f21556dd5039024c225b58f5f0f05f9a4
-ms.sourcegitcommit: d819173fb91af6f20ca6ee59686c35c71b060fbc
+ms.openlocfilehash: b7932f2e15170ed2601c35c82a2880f390953d4b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "97797756"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185160"
 ---
 # <a name="mssqlserver_3989"></a>MSSQLSERVER_3989
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

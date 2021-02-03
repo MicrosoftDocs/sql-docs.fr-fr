@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6472c5e1-d37f-4919-a903-177e90cbfe1b
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: d3f649a84cc33cf134174edde1d6669fc8148517
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: eeb2cb131fd2a1d7e7a961e674caf50956616a4f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88458991"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187241"
 ---
 # <a name="extended-methods-on-geometry-instances"></a>Méthodes étendues sur les instances géométriques
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

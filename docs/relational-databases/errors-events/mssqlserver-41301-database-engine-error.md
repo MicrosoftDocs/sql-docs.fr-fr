@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 41301 (Database Engine error)
 ms.assetid: c6127e1e-2846-4ee9-bc42-2d896ea9730e
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: c47d56a61bd2c33955109677249d3532e3022865
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5d7fef050bc8287fb2665343e0fda148d38bf523
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88410805"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185125"
 ---
 # <a name="mssqlserver_41301"></a>MSSQLSERVER_41301
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

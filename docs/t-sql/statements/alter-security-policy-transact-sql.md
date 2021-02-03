@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_SECURITY_POLICY_TSQL
 - ALTER SECURITY POLICY
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: a8efc37e-113d-489c-babc-b914fea2c316
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 8ebe6f0764cd4993a101a43b9f9db753918d24c1
-ms.sourcegitcommit: ac9feb0b10847b369b77f3c03f8200c86ee4f4e0
+ms.openlocfilehash: e7c0976f6fe428b21817a2577cced14dda66852e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/16/2020
-ms.locfileid: "90688159"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182196"
 ---
 # <a name="alter-security-policy-transact-sql"></a>ALTER SECURITY POLICY (Transact-SQL)
 

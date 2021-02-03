@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - 'TM: Begin Tran Starting event class'
 ms.assetid: 34a35b0e-7bd1-480d-8cc8-00614adae84e
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 47b9230bab75181ffc2abc1209e7b1cb242a3f33
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c9fc5b1d70230ec3cc1d8bacaa39cf29bdd855e2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97483531"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183235"
 ---
 # <a name="tm-begin-tran-starting-event-class"></a>TM : Begin Tran Starting (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

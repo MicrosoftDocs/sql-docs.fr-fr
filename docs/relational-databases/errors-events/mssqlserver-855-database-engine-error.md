@@ -6,18 +6,18 @@ ms.date: 08/20/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, Masha
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 855 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: c65a48247359437c6680141b60c5e54463b03991
-ms.sourcegitcommit: ead0b8c334d487a07e41256ce5d6acafa2d23c9d
+ms.openlocfilehash: 6e68601a2690149b61fcea661d26843f16079a03
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92418760"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180986"
 ---
 # <a name="mssqlserver_855"></a>MSSQLSERVER_855
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

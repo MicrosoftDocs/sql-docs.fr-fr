@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - <>
 - <>_TSQL
@@ -25,12 +25,12 @@ ms.assetid: 34cf9b38-d589-4be9-925a-116e224609a0
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 6f078043c21f8cfc7c2c84b7d98ae8652394cd11
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: be34261f33ccc74783b1e1eff63d43fe4873b0e5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097063"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186495"
 ---
 # <a name="not-equal-to-transact-sql---traditional"></a>Différent de (Transact SQL) - traditionnel
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

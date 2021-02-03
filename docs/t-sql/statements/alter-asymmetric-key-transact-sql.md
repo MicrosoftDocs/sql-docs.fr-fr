@@ -4,7 +4,7 @@ title: ALTER ASYMMETRIC KEY (Transact-SQL) | Microsoft Docs
 ms.date: 04/12/2017
 ms.prod: sql
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_ASYMMETRIC_KEY_TSQL
 - ALTER ASYMMETRIC KEY
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 958e95d6-fbe6-43e8-abbd-ccedbac2dbac
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 814df70ce91d6cc65b6c2a86d0617dc42bbb4489
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 5d9604d366417688c8c04697e77852c3a27e189a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96128153"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182998"
 ---
 # <a name="alter-asymmetric-key-transact-sql"></a>ALTER ASYMMETRIC KEY (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

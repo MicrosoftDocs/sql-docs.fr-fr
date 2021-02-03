@@ -6,7 +6,7 @@ ms.date: 06/10/2016
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - WITH_XMLNAMESPACES_TSQL
 - WITH XMLNAMESPACES
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 3b32662b-566f-454d-b7ca-e247002a9a0b
 author: MightyPen
 ms.author: genemi
-ms.openlocfilehash: c4d059a65ae67856b7f96b47d75ea32be48f0638
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6ec08509389c8b5aadd080245253e289cc23100c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88496327"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181736"
 ---
 # <a name="with-xmlnamespaces"></a>WITH XMLNAMESPACES
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

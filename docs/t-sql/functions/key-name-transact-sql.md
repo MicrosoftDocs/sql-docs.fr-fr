@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - KEY_NAME_TSQL
 - KEY_NAME
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 7b693e5d-2325-4bf9-9b45-ad6a23374b41
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 9ccc9a860218a6fa39596faaee78908eedf6907a
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 857dff1b1ddb9e732cb065560d922fb5efbd6559
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91115991"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183964"
 ---
 # <a name="key_name-transact-sql"></a>KEY_NAME (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - INDEX_COL_TSQL
 - INDEX_COL
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 4db1fb3b-e46f-43fb-b269-a5b6e8b39ed0
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 4e1b37288462aea0eaeaab0a8299c5cfe6886723
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2419e111870e5dda5cc241ec82f328c162e8b801
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093559"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181244"
 ---
 # <a name="index_col-transact-sql"></a>INDEX_COL (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -12,16 +12,16 @@ ms.assetid: 891c37b3-cb72-411f-9937-ee87e6d95f34
 author: rothja
 ms.author: jroth
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 9696fef382c0a7a039d83ec8499c10829803b473
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9669c52ab060f05429dbdaca2aff9cf1f2590dd3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466740"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184260"
 ---
 # <a name="modify-user-defined-functions"></a>Modifier les fonctions définies par l'utilisateur
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
-  Vous pouvez modifier les fonctions définies par l'utilisateur dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Le fait de modifier des fonctions définies par l’utilisateur comme décrit ci-dessous n’affecte pas les autorisations des fonctions et n’a aucune incidence sur les fonctions, les procédures stockées et les déclencheurs qui en dépendent.  
+  Vous pouvez modifier les fonctions définies par l'utilisateur dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Le fait de modifier des fonctions définies par l’utilisateur comme décrit ci-dessous n’affecte pas les autorisations des fonctions et n’a aucune incidence sur les fonctions, les procédures stockées et les déclencheurs qui en dépendent.  
   
  **Dans cette rubrique**  
   

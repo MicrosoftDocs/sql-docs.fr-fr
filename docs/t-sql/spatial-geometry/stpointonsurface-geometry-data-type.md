@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STPointOnSurface (geometry Data Type)
 - STPointOnSurface_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 23b2b8eb-4176-49fb-ace0-92398928d60e
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 41b91f03aef83bd8a952531cc419869204b3f5e4
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 2c91a6961681911362dafe292108bd27f27a4b73
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88497012"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184614"
 ---
 # <a name="stpointonsurface-geometry-data-type"></a>STPointOnSurface (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

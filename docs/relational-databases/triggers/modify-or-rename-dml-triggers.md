@@ -15,16 +15,16 @@ ms.assetid: c7317eec-c0e9-479e-a4a7-83b6b6c58d59
 author: rothja
 ms.author: jroth
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 827327524cd818d830ba10d0e93ccec6ab7743bb
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 34947ff934ead8d308c6da1df2f1d0a6bd1b07c2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97426411"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187279"
 ---
 # <a name="modify-or-rename-dml-triggers"></a>Modifier ou renommer les déclencheurs DML
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
-  Cette rubrique explique comment modifier ou renommer un déclencheur DML dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
+  Cette rubrique explique comment modifier ou renommer un déclencheur DML dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   
  **Dans cette rubrique**  
   

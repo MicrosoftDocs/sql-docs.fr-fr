@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SET HADR
 - SET_HADR_TSQL
@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: 20e6e803-d6d5-48d5-b626-d1e0a73d174c
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 405ed385004aa0ad23d93ef4dbbf2dbd3c2c5726
-ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
+ms.openlocfilehash: 7d62a25ccfdf4abb6231f226e7a846418680a155
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98689172"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184525"
 ---
 # <a name="alter-database-transact-sql-set-hadr"></a>ALTER DATABASE (Transact-SQL) SET HADR 
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

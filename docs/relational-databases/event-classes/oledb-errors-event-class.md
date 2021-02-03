@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - OLEDB Errors event class
 ms.assetid: 0ce1e906-5d92-42f2-ab38-8771ad5ca008
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 460e7ae3ddfa52cf8c849eb05d7c373bacb9e532
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: cc3ff99d52c407cacb8276c582a536db24f7ef73
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480250"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184353"
 ---
 # <a name="oledb-errors-event-class"></a>Classe d'événements OLEDB Errors
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

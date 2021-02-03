@@ -1,12 +1,12 @@
 ---
 title: CASE (Transact-SQL)
 description: Référence Transact-SQL pour l’expression CASE. CASE évalue une liste de conditions pour retourner des résultats spécifiques.
-ms.date: 06/28/2017
+ms.date: 01/26/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CASE_TSQL
 - CASE
@@ -21,12 +21,12 @@ ms.assetid: 658039ec-8dc2-4251-bc82-30ea23708cee
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 0b845dd7b9ca9fcd78ccef5f9ebe55ac2bae7749
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 8e0fbd27d6849d5473862f93083c9d42f3d6e453
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98085864"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183314"
 ---
 # <a name="case-transact-sql"></a>CASE (Transact-SQL)
 
@@ -49,7 +49,7 @@ ms.locfileid: "98085864"
 ## <a name="syntax"></a>Syntaxe  
   
 ```syntaxsql
--- Syntax for SQL Server and Azure SQL Database  
+-- Syntax for SQL Server, Azure SQL Database and Azure Synapse Analytics
   
 --Simple CASE expression:   
 CASE input_expression   
@@ -65,7 +65,7 @@ END
 ```  
   
 ```syntaxsql
--- Syntax for Azure Synapse Analytics and Parallel Data Warehouse  
+-- Syntax for Parallel Data Warehouse  
   
 CASE  
      WHEN when_expression THEN result_expression [ ...n ]   

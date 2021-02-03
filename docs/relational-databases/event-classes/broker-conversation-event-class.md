@@ -6,19 +6,19 @@ ms.date: 05/24/2019
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Broker:Conversation event class
 ms.assetid: 784707b5-cc67-46a3-8ae6-8f8ecf4b27c0
 author: stevestein
 ms.author: sstein
 monikerRange: '>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: f77b2cff9793f7e6be200423dd6bc23377814635
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 32e74cf95915559a1d8d5e751b79f096d4bb59ce
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97468020"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187459"
 ---
 # <a name="brokerconversation-event-class"></a>Broker:Conversation, classe d'événements
 

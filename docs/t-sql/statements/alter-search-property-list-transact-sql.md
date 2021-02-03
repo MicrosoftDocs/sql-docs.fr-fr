@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_SEARCH_PROPERTY_TSQL
 - ALTER_SEARCH_PROPERTY_LIST_TSQL
@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: 0436e4a8-ca26-4d23-93f1-e31e2a1c8bfb
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 510bd7abb561fca8a425b843a1647290054b425a
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c39fb37a0df34e7f7cf2afcf34678fa4c225a9f2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094712"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182234"
 ---
 # <a name="alter-search-property-list-transact-sql"></a>ALTER SEARCH PROPERTY LIST (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

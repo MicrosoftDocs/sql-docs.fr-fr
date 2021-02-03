@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ROWCOUNT_BIG
 - ROWCOUNT_BIG_TSQL
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 6e18a0eb-bb36-4348-90d9-8b1ecf095064
 author: julieMSFT
 ms.author: jrasnick
-ms.openlocfilehash: 124ba59b2942fcfa7c4ac26be7b24df35c75806a
-ms.sourcegitcommit: 197a6ffb643f93592edf9e90b04810a18be61133
+ms.openlocfilehash: fb0770aba26099fbc10aebfdd59d6094007dc076
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "91379974"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183509"
 ---
 # <a name="rowcount_big-transact-sql"></a>ROWCOUNT_BIG (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STPointN_TSQL
 - STPointN (geometry Data Type)
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 8f0bb3b7-5cd9-42c2-b9f8-f04628653bd0
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 751fc973188d7fe12ea0034a14c4620808912545
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 78db87953b38208585bd9ea68c75766cfd3765b1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88444919"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184633"
 ---
 # <a name="stpointn-geometry-data-type"></a>STPointN (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

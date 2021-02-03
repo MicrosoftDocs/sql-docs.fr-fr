@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CONNECTIONPROPERTY_TSQL
 - CONNECTIONPROPERTY
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 6bd9ccae-af77-4a05-b97f-f8ab41cfde42
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 428201b41c42342df355df571763265e64a5da11
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 7168556e8b4352839eb7d23ea6ae73e811f61ce8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092328"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184243"
 ---
 # <a name="connectionproperty-transact-sql"></a>CONNECTIONPROPERTY (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

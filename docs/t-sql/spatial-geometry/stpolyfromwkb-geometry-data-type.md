@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STPolyFromWKB_TSQL
 - STPolyFromWKB (geometry Data Type)
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 8e8f0c41-0c62-4919-9d4c-d37c93fdd31c
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 0e15bc16518c9b5dbc53369a4919f3e289a7d261
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: c81eaf173324e9f47ce77775a1ea64828b24c613
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88454221"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184601"
 ---
 # <a name="stpolyfromwkb-geometry-data-type"></a>STPolyFromWKB (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CREATE_DEFAULT_TSQL
 - CREATE DEFAULT
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 08475db4-7d90-486a-814c-01a99d783d41
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 7dd06b9daff476b26667c0ef5900f34325b05f7c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c1ebdb3e7282fba1f22eedcda9278e44a22de424
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100883"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186901"
 ---
 # <a name="create-default-transact-sql"></a>CREATE DEFAULT (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

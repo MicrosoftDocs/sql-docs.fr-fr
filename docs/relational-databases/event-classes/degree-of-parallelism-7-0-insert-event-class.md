@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Degree of Parallelism event class
 ms.assetid: 6753ef30-890f-47a3-b0b6-8abb184e1d83
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 451bba0eaf89722fdb29265db8880bfc369da1ce
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 197dc975e6ca6e8119644188fac33aec77a541f2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97469760"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182938"
 ---
 # <a name="degree-of-parallelism-70-insert-event-class"></a>Classe d'événements Degree of Parallelism (7.0 Insert)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

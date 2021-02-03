@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - UPDATETEXT
 - UPDATETEXT_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: d73c28ee-3972-4afd-af8d-ebbbd9e50793
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 8444f4c3421f41cb94cdd716b1c2017f506b80c2
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 5304394a75662d5cdc37196aab70444ebfbcbe41
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91114708"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186909"
 ---
 # <a name="updatetext-transact-sql"></a>UPDATETEXT (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 3937 (Database Engine error)
 ms.assetid: 312d5bbe-c8de-42db-af4b-4ccb448ce6ef
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 90e05045031d4bab8c2975a6e2349df85ca588c9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d9c592a077e38da67073691e6d8eabb916fe791b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456143"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185197"
 ---
 # <a name="mssqlserver_3937"></a>MSSQLSERVER_3937
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Attention event class
 ms.assetid: da996305-181b-4cec-8388-c3b66677ed27
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 19984314c34a664fd389928a3f4b90837fbff709
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 54ab5c3179a80e3b2e410822134b0d92731c4a50
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465620"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180937"
 ---
 # <a name="attention-event-class"></a>Attention (classe d'événements)
 

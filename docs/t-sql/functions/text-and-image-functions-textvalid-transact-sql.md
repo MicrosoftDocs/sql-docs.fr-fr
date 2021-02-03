@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - TEXTVALID_TSQL
 - TEXTVALID
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 9411c349-b59b-4740-a270-92f91d81ad23
 author: julieMSFT
 ms.author: jrasnick
-ms.openlocfilehash: 52b353a09f8f175496a75a512188f5637d01d8e5
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 17a2d30b57e5c60624509f5adaafc2fb94fc30d1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "92036461"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181464"
 ---
 # <a name="text-and-image-functions---textvalid-transact-sql"></a>Fonctions texte et image - TEXTVALID (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

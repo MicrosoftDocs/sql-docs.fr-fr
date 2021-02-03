@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CLOSE MASTER KEY
 - CLOSE_MASTER_KEY_TSQL
@@ -23,12 +23,12 @@ ms.assetid: bb04ef7a-9f3a-437e-a6f9-ba0204082cb9
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: d5dd1f98b4dcfb8bdec73c5e562bb4bd94f2c6ea
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0856d5e8ef21bdec6549d793ba16915c78c85855
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97483971"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184512"
 ---
 # <a name="close-master-key-transact-sql"></a>CLOSE MASTER KEY (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 2538 (Database Engine error)
 ms.assetid: 0a0f7d79-f1ba-4749-8804-fb660cca3492
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: c4d083a389ffb80760f025cfeaa95f5f3bbac6ab
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e9a3a8f8de34d81209719fc0e8a17b89b4b68268
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456271"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181021"
 ---
 # <a name="mssqlserver_2538"></a>MSSQLSERVER_2538
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

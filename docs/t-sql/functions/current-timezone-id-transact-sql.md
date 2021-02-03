@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CURRENT_TIMEZONE)ID
 - CURRENT_TIMEZONE_ID_TSQL
@@ -25,12 +25,12 @@ helpviewer_keywords:
 - CURRENT_TIMEZONE_ID function [SQL Server]
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 936b4f0ea8353b71b26808f1911890149057b234
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 70f4fbb5e683aa7bc6436b27a727f2c3952b6592
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92036855"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184056"
 ---
 # <a name="current_timezone_id-transact-sql"></a>CURRENT_TIMEZONE_ID (Transact-SQL)
 

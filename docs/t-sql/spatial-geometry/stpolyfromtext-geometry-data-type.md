@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STPolyFromText_TSQL
 - STPolyFromText (geometry Data Type)
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: a7c1c9f0-1dd5-493b-b206-83bbfa33452b
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 0e2ce076523c0707c8764d9a21f38abdbf41e0a7
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 2c5670a46e852dde3e2e3bfe197945b946dc91bc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88359715"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184623"
 ---
 # <a name="stpolyfromtext-geometry-data-type"></a>STPolyFromText (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

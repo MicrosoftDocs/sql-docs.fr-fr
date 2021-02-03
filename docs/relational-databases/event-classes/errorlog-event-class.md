@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - ErrorLog event class
 ms.assetid: b0153a31-5794-410b-8816-d9f1290a5b36
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 1494ff28838f587aa8da80c9f34b458c948b0102
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 923429255d3256f65118af89932ce8be310f633f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97469700"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182877"
 ---
 # <a name="errorlog-event-class"></a>ErrorLog (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "97469700"
 |RequestID|**int**|ID de la demande contenant l'instruction.|49|Oui|  
 |ServerName|**nvarchar**|Nom de l'instance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tracée.|26|Non|  
 |SessionLoginName|**nvarchar**|Nom de connexion de l'utilisateur à l'origine de la session. Par exemple, si vous vous connectez à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en utilisant le nom Connexion1 et que vous exécutez une instruction en tant que Connexion2, SessionLoginName affiche Connexion1 et LoginName, Connexion2. Cette colonne affiche à la fois les connexions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et Windows.|64|Oui|  
-|Gravité|**int**|Niveau de gravité d'une exception.|20|Oui|  
+|severity|**int**|Niveau de gravité d'une exception.|20|Oui|  
 |SPID|**int**|ID de la session au cours de laquelle l'événement s'est produit.|12|Oui|  
 |StartTime|**datetime**|Heure à laquelle a débuté l'événement, si elle est connue.|14|Oui|  
 |TextData|**ntext**|Texte du message d'erreur.|1|Oui|  

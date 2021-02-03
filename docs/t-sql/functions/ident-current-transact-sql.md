@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - IDENT_CURRENT
 - IDENT_CURRENT_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 21517ced-39f5-4cd8-8d9c-0a0b8aff554a
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: a4fe77504233fe2569a978c9f51c34e4e2236993
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 608f7c4745d2d5590fc4d2956f7fca580c9b4111
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91116334"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184009"
 ---
 # <a name="ident_current-transact-sql"></a>IDENT_CURRENT (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

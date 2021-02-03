@@ -2,11 +2,11 @@
 description: CREATE EXTERNAL LIBRARY (Transact-SQL) - SQL Server
 title: CREATE EXTERNAL LIBRARY (Transact-SQL) - SQL Server | Microsoft Docs
 ms.custom: ''
-ms.date: 08/26/2020
+ms.date: 01/28/2021
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: machine-learning
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CREATE EXTERNAL LIBRARY
 - CREATE_EXTERNAL_LIBRARY_TSQL
@@ -20,12 +20,12 @@ author: dphansen
 ms.author: davidph
 manager: cgronlund
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 9839a6fa8bd678afdce426f9dcd5657500c5a6cd
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 1cb25ebe0b24e2656f6b206b8a56eb24b81f45af
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100785"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186839"
 ---
 # <a name="create-external-library-transact-sql"></a>CREATE EXTERNAL LIBRARY (Transact-SQL)  
 [!INCLUDE [SQL Server 2017 SQL MI](../../includes/applies-to-version/sqlserver2017-asdbmi.md)]
@@ -98,8 +98,7 @@ WITH ( LANGUAGE = 'R' )
 
 <file_spec> ::=  
 {  
-    (CONTENT = { <client_library_specifier> | <library_bits> }  
-    [, PLATFORM = WINDOWS ])  
+    (CONTENT = { <client_library_specifier> | <library_bits> })  
 }  
 
 <client_library_specifier> :: = 
@@ -171,6 +170,8 @@ Le fichier peut être spécifié sous la forme d’un chemin local ou d’un che
 
 Lors d’une tentative d’accès au fichier spécifié dans **client_library_specifier>** , SQL Server emprunte l’identité du contexte de sécurité de la connexion Windows active. Si **<client_assembly_specifier>** spécifie un emplacement réseau (chemin UNC), l’emprunt d’identité de la connexion active n’est pas transféré à l’emplacement réseau en raison des restrictions de délégation. Dans ce cas, l’accès a lieu en utilisant le contexte de sécurité du compte de service SQL Server. Pour plus d’informations, consultez [Informations d’identification (moteur de base de données)](../../relational-databases/security/authentication-access/credentials-database-engine.md).
 
+::: moniker-end
+::: moniker range=">=sql-server-ver15||>=sql-server-linux-ver15"
 Si vous le souhaitez, vous pouvez spécifier une plateforme de système d’exploitation pour le fichier. Un seul artefact de fichier ou contenu est autorisé pour chaque plateforme de système d’exploitation pour un langage ou un runtime spécifique.
 ::: moniker-end
 
@@ -179,13 +180,6 @@ Si vous le souhaitez, vous pouvez spécifier une plateforme de système d’expl
 Spécifie le contenu du package en tant que littéral hexadécimal, similaire aux assemblys. 
 
 Cette option est utile si vous devez créer une bibliothèque ou modifier une bibliothèque existante (et que vous disposez des autorisations nécessaires), mais que le système de fichiers sur le serveur est restreint et vous ne pouvez pas copier les fichiers de bibliothèque vers un emplacement accessible au serveur.
-
-::: moniker range="=sql-server-2017"
-**PLATFORM = WINDOWS**
-
-Spécifie la plateforme pour le contenu de la bibliothèque. La valeur par défaut est la plateforme hôte sur laquelle SQL Server est en cours d’exécution. Par conséquent, l’utilisateur n’a pas à spécifier la valeur. Elle est obligatoire dans le cas où plusieurs plateformes sont prises en charge, ou quand l’utilisateur a besoin de spécifier une autre plateforme.
-Dans SQL Server 2017, Windows est la seule plateforme prise en charge.
-::: moniker-end
 
 ::: moniker range=">=sql-server-ver15||>=sql-server-linux-ver15"
 **PLATFORM**
@@ -211,8 +205,6 @@ Spécifie le langage du package. La valeur peut être `R` ou `Python` dans Azure
 
 Spécifie le langage du package. La valeur peut être `R`, `Python` ou le nom d’un langage externe (consultez [CREATE EXTERNAL LANGUAGE](create-external-language-transact-sql.md)).
 ::: moniker-end
-
-[!INCLUDE[sql-server-tsql-previous-offline-documentation](../../includes/sql-server-tsql-previous-offline-documentation.md)]
 
 ## <a name="remarks"></a>Notes
 

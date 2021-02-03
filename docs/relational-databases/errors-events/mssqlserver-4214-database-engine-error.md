@@ -6,18 +6,18 @@ ms.date: 08/20/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, Masha
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 4214 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: b448b97f5f6eeaf403b0c5c218edb8cd7dd7f8ca
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0b9956dd515098189983b68f8639a22ab43da3a4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101853"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185589"
 ---
 # <a name="mssqlserver_4214"></a>MSSQLSERVER_4214
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

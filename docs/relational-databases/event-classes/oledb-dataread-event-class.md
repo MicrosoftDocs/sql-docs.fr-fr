@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - OLEDB DataRead event class
 ms.assetid: fb6869ba-3199-4e32-a650-60a5dda2571e
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 59e7b5358348a5d7196fd06cdee5f11466f5eea2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ad4603f5179755a8d6acac79cec2bdb888188be0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480260"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185074"
 ---
 # <a name="oledb-dataread-event-class"></a>Classe d'événements OLEDB DataRead
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - DTCTransaction event class
 ms.assetid: 9a2d358e-5b8f-4d0b-8b93-6705c009ad57
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: bddc85a01db6354b71f222de3b2257f55ba1e123
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 12ab86f1c07c8f4522d7190a1ed3471182ec8145
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97469710"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182886"
 ---
 # <a name="dtctransaction-event-class"></a>DTCTransaction (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

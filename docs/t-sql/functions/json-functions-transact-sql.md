@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 06/03/2020
 ms.prod: sql
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - JSON functions
 ms.assetid: ec97d451-06af-44a3-8304-305d410cfc8e
@@ -13,12 +13,12 @@ author: jovanpop-msft
 ms.author: jovanpop
 ms.reviewer: chadam
 monikerRange: = azuresqldb-current||= azure-sqldw-latest||>= sql-server-2016||>= sql-server-linux-2017
-ms.openlocfilehash: bf8d6d2516f31e5e5f40e5a2f418e5da11d9b879
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: a90480993cdcf7d91b757bf5f35ec456c52fec0f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101099"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186454"
 ---
 # <a name="json-functions-transact-sql"></a>Fonctions JSON (Transact-SQL)
 

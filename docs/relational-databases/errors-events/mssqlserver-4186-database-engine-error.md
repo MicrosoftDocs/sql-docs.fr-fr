@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 4186 (Database Engine error)
 ms.assetid: 1ae88554-f291-45bc-a186-6f41d9cd0fca
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 64d0e5012d6883a7933ccb7c48da0d1c6793d502
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 32df0694f8398bc39cb9e306b3e3da7905b1e212
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88471039"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185603"
 ---
 # <a name="mssqlserver_4186"></a>MSSQLSERVER_4186
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CREATE EVENT SESSION
 - SESSION
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 67683027-2b0f-47aa-b223-604731af8b4d
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 006ef49a390045d5c6d7d8c8c174da90e37f4f91
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 7284b9c3d574a55dc67c99e500c7c7da69400e29
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100844"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186865"
 ---
 # <a name="create-event-session-transact-sql"></a>CREATE EVENT SESSION (Transact-SQL)
 

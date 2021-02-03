@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - float
 - real_TSQL
@@ -24,12 +24,12 @@ ms.assetid: 08ea66b7-624e-4d8b-86bc-750ff76cdfc5
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 8fdbe0c896a5aba4cc68abf2b2c572a82ad9ca7b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4b7f4df0fd5efea427bf806543c3f397e6b1d1f7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482121"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185343"
 ---
 # <a name="float-and-real-transact-sql"></a>float et real (Transact-SQL)
 

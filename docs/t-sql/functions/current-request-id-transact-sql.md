@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CURRENT_REQUEST_ID_TSQL
 - CURRENT_REQUEST_ID
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 949f6e5f-bf5f-49d6-a763-c443d1d51fe2
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f35294840f2ebf4ac5e170c538c8154b17defbf3
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 3f13c321044aa5705b7d82b1490265cd3d7de963
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101213"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184120"
 ---
 # <a name="current_request_id-transact-sql"></a>CURRENT_REQUEST_ID (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -43,7 +43,7 @@ CURRENT_REQUEST_ID()
 ## <a name="return-types"></a>Types de retour
 **smallint**
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
 Pour rechercher des informations exactes sur la session active, utilisez @@SPID. Pour obtenir des informations exactes sur la requête actuelle, utilisez CURRENT_REQUEST_ID().
   
 ## <a name="see-also"></a>Voir aussi

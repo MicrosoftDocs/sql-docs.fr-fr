@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Audit Server Object Take Ownership event class
 ms.assetid: 780fde57-3970-4063-a634-04879b6ef141
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: f5ecdd6bf315734d8ceb7aaf09c2f13d4971b872
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 40953c8489683da131b3691f13233d6d7f6f1ff2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97469950"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180887"
 ---
 # <a name="audit-server-object-take-ownership-event-class"></a>Audit Server Object Take Ownership (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

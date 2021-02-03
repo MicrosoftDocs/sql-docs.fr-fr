@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - '@@CPU_BUSY_TSQL'
 - '@@CPU_BUSY'
@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: 81ae0e64-79fa-4a74-9aa5-37045c4cd211
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: edb5daccc0054ce98d0ebc4bb7568835adc46d80
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: a51d0b6e891ccefed7f3e6454c114f1765d44685
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98088000"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184139"
 ---
 # <a name="x40x40cpu_busy-transact-sql"></a>&#x40;&#x40;CPU_BUSY (Transact-SQL)
 

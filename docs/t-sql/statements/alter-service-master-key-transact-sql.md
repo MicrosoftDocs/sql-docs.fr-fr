@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ALTER_SERVICE_MASTER_KEY_TSQL
 - ALTER SERVICE MASTER KEY
@@ -25,12 +25,12 @@ helpviewer_keywords:
 ms.assetid: a1e9be0e-4115-47d8-9d3a-3316d876a35e
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 0c75769df4c504f71dfdd3a724648aea19b66460
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: d83d71f8640575319817f3610b1055e2808140ce
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96124207"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182217"
 ---
 # <a name="alter-service-master-key-transact-sql"></a>ALTER SERVICE MASTER KEY (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

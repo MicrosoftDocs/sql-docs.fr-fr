@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CONTEXT_INFO_TSQL
 - CONTEXT_INFO
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 571320f5-7228-4b0e-9d01-ab732d2d1eab
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a85309296fd5424d650fc23fa37a9baa8c2ee34f
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 1bd11d94547782ffee117e6ed883158423c52180
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092330"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184225"
 ---
 # <a name="context_info--transact-sql"></a>CONTEXT_INFO  (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

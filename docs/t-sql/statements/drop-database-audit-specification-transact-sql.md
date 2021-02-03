@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP_DATABASE_AUDIT_SPECIFICATION_TSQL
 - DROP DATABASE AUDIT SPECIFICATION
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 3c387c6e-9a67-4daa-b64a-c87f6b3c9c4f
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 864a3af986cd4b88df30ebc587c67e395bed9b10
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 86b5ed49598119e71b49d8c6df1f9f253d3e2b7e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96131312"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186279"
 ---
 # <a name="drop-database-audit-specification-transact-sql"></a>DROP DATABASE AUDIT SPECIFICATION (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

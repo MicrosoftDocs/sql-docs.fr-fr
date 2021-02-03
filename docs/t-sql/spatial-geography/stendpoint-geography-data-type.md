@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STEndPoint (geography Data Type)
 - STEndPoint_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 8974cd07-8ec4-4126-8fc2-fdcf322ccedd
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 9e7b33ea60599dc5920d15df18177a34bcdde07c
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 331c20cbde67920b2a2ba25d1d50f59996610626
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88416975"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183921"
 ---
 # <a name="stendpoint-geography-data-type"></a>STEndpoint (type de données géographie)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

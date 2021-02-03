@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - HAS_PERMS_BY_NAME
 - HAS_PERMS_BY_NAME_TSQL
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: eaf8cc82-1047-4144-9e77-0e1095df6143
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 8574b99c65972f566817749f34d89e3f6d3ca3e5
-ms.sourcegitcommit: 7f76975c29d948a9a3b51abce564b9c73d05dcf0
+ms.openlocfilehash: c80d6a873f0004344e7407dbf25adee5a02c2cd4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96900958"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184004"
 ---
 # <a name="has_perms_by_name-transact-sql"></a>HAS_PERMS_BY_NAME (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

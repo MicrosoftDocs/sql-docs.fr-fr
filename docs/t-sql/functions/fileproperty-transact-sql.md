@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - FILEPROPERTY_TSQL
 - FILEPROPERTY
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: b82244ed-d623-431f-aa06-8017349d847f
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 34dfde00fc303e926c1e2fe559e621b49edd0e83
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0cbbef3b704a8ec174fd9c3e5c1cbf5938a5a4ca
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101126"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183520"
 ---
 # <a name="fileproperty-transact-sql"></a>FILEPROPERTY (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

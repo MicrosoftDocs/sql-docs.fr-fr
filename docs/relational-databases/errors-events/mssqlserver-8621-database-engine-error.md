@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 8621 (Database Engine error)
 ms.assetid: 67f59865-becd-4999-8bb0-90aedd7effbf
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 5aa58480e63e15b418d3bc2f0ebe38330fe71be3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 61b164c84b39dc4f1e6e2a9a243d86243e798041
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88331515"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180914"
 ---
 # <a name="mssqlserver_8621"></a>MSSQLSERVER_8621
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

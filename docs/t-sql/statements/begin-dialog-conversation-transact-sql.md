@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DIALOG CONVERSATION
 - DIALOG
@@ -31,12 +31,12 @@ helpviewer_keywords:
 ms.assetid: 8e814f9d-77c1-4906-b8e4-668a86fc94ba
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: f1c32ad7e6a970b9ebb50dc29e7dda767f5e4f40
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: fdf0f646d2df5c8b0c2fc748973378426a0b96b6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98098498"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184465"
 ---
 # <a name="begin-dialog-conversation-transact-sql"></a>BEGIN DIALOG CONVERSATION (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

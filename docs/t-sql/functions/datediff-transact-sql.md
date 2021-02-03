@@ -6,7 +6,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DATEDIFF_TSQL
 - DATEDIFF
@@ -31,12 +31,12 @@ ms.assetid: eba979f2-1a8d-4cce-9d75-b74f9b519b37
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 744e0f900b0ff71c908cc32b7946b0b95f1061bc
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 236c082d81db4928e1697e692afef45a6770b5de
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100506"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181860"
 ---
 # <a name="datediff-transact-sql"></a>DATEDIFF (Transact-SQL)
 

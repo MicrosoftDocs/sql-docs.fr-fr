@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 511 (Database Engine error)
 ms.assetid: 0c85686a-53c1-4180-ba8c-2000e68a0d63
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: beb8f25c2251904f84f358012a5e1ad26450abfd
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a9b0d8a76d5b45b1de5926a7ba3d3394470eeb0d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88471052"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185616"
 ---
 # <a name="mssqlserver_511"></a>MSSQLSERVER_511
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

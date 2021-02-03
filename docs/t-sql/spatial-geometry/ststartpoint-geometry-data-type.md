@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STStartPoint_TSQL
 - STStartPoint (geometry Data Type)
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 049917db-3f76-4053-8cd2-bc54158e89bc
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 3fd64405d2e08038701262105675557893cdf96f
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 2317a906ffe24805efa07b897c1f12c24ef032df
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88416855"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184573"
 ---
 # <a name="ststartpoint-geometry-data-type"></a>STStartPoint (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

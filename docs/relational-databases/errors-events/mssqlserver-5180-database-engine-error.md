@@ -6,18 +6,18 @@ ms.date: 08/20/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, Masha
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 5180 (Database Engine error)
 ms.assetid: ''
 author: rgward
 ms.author: ramakoni
-ms.openlocfilehash: cbdc30c1e05d50bb20df3f9e3ebf54097c770743
-ms.sourcegitcommit: ead0b8c334d487a07e41256ce5d6acafa2d23c9d
+ms.openlocfilehash: f80f4dafad6b0570837728e15a79eebdd7d6f41c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92418739"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185529"
 ---
 # <a name="mssqlserver_5180"></a>MSSQLSERVER_5180
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

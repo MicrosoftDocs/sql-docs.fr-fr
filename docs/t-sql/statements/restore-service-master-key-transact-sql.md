@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - RESTORE SERVICE MASTER KEY
 - RESTORE_SERVICE_MASTER_KEY_TSQL
@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: a68fd0ee-70ce-4104-aca0-fcae5f41fc38
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 38193c05ecfa6c030954c6cbcbfcc50a1927d913
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 3954958dceda15a2eb68505ffbe12299b335c491
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "92300494"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184436"
 ---
 # <a name="restore-service-master-key-transact-sql"></a>RESTORE SERVICE MASTER KEY (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

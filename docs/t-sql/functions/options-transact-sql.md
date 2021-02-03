@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - '@@OPTIONS'
 - '@@OPTIONS_TSQL'
@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 3d5c7f6e-157b-4231-bbb4-4645a11078b3
 author: julieMSFT
 ms.author: jrasnick
-ms.openlocfilehash: aba9b19dd9788eef4f322db198dd7f8f3789a8c8
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 43da748085a31a9d9f25ef20bdb690f2b94e4cb9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96128395"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183944"
 ---
 # <a name="x40x40options-transact-sql"></a>&#x40;&#x40;OPTIONS (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

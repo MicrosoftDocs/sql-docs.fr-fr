@@ -7,19 +7,19 @@ ms.prod: sql
 ms.prod_service: database-engine
 ms.reviewer: ''
 ms.technology: replication
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - MSSQL_ENG021075 error
 ms.assetid: c8c29543-d1f6-49d5-b6c8-e8c3aa373090
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: fb6dd901838e3f3a669e642e5a4316d632a34c45
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 046c21ab2758ec1e9147a04f839ddd0e2b4aaa1d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97473410"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187053"
 ---
 # <a name="mssql_eng021075"></a>MSSQL_ENG021075
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]

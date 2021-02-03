@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STWithin_TSQL
 - STWithin (geometry Data Type)
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: f845d28c-8029-4e2b-bcf0-71c52a592501
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: f0a9d615fcb05ed6b1c9ada74a98038de9f84e66
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a8647d30d2b4f9eb50ce01eea91842e29fa2d93a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88488091"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184529"
 ---
 # <a name="stwithin-geometry-data-type"></a>STWithin (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

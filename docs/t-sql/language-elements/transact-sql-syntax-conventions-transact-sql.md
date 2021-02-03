@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - sql13.TSQLExpandPortal.f1
 dev_langs:
@@ -29,12 +29,12 @@ ms.assetid: 35fbcf7f-8b55-46cd-a957-9b8c7b311241
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 35c349190b7ebe24ae243bac518e21406a3861ba
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 973fb2678bbbff70ffe93031aca3e2789675e56c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102437"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182268"
 ---
 # <a name="transact-sql-syntax-conventions-transact-sql"></a>Conventions de la syntaxe Transact-SQL (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

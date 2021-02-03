@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 02bb71fa-1e92-4782-a9cf-6e256cc1f3ea
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: d5147b1fafa7c1095571a89f6d2bd8647806381f
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c25e28f6cea11fc690e984edecf0256d26405bda
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100899"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182242"
 ---
 # <a name="transaction-isolation-levels"></a>Niveaux d'isolement des transactions
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

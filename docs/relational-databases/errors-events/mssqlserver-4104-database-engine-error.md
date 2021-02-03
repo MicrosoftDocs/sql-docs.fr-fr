@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 4104 (Database Engine error)
 ms.assetid: 52dc32d8-97ad-4ef0-834d-2e68f215d007
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 9d3cac9c566928baac5a32fe0aa318fbb823c57d
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 9f28d2e4cf04427887584cab6ee27de80024eae7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85763074"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185110"
 ---
 # <a name="mssqlserver_4104"></a>MSSQLSERVER_4104
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - Key_ID
 - Key_ID_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: d7309542-dbbe-41dc-b42e-5d9a1c8b4838
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 35499f8b6ab0b95b59798fad463819b2f9c8ac72
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: c1481c85e999ebccdc47e18da315ddd302c77679
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91115148"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183955"
 ---
 # <a name="key_id-transact-sql"></a>KEY_ID (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

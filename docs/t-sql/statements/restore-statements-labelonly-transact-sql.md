@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - LABELONLY
 - RESTORE_LABELONLY_TSQL
@@ -22,12 +22,12 @@ ms.assetid: 7cf0641e-0d55-4ffb-9500-ecd6ede85ae5
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016||>=sql-server-linux-2017
-ms.openlocfilehash: 2760abe104f00a280c9b03b59f3b83874eeaae6d
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: e50ee3411fba5d2d3f5cfd1ddff100141cadf40b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463984"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186604"
 ---
 # <a name="restore-statements---labelonly-transact-sql"></a>Instructions RESTORE - LABELONLY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md.md )]

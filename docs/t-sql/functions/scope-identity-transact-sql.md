@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SCOPE_IDENTITY
 - SCOPE_IDENTITY_TSQL
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: eef24670-059b-4f10-91d4-a67bc1ed12ab
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: db39f526499581d105176fa7df6092b7b2edd567
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: bb49f217e40b13b106743da61169eaf35a58ef1c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "91379934"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183461"
 ---
 # <a name="scope_identity-transact-sql"></a>SCOPE_IDENTITY (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

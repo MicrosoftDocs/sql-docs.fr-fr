@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DATABASE_PRINCIPAL_ID_TSQL
 - DATABASE_PRINCIPAL_ID
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 908c7dd8-c10b-4658-92f6-0224f9835dd9
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 95d7bf7ac61ed2b79829a5aeb9d41c7f06485c8d
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 911c4733853d3920486c2b1cd37298159b539e2d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96117950"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184030"
 ---
 # <a name="database_principal_id-transact-sql"></a>DATABASE_PRINCIPAL_ID (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

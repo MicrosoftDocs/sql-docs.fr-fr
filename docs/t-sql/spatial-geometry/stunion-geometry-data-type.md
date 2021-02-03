@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STUnion (geometry Data Type)
 - STUnion_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 5b168118-137d-402f-9173-fee3f365a89c
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 857428b0dee48336ae41f22e79c82a02f2f7b241
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 6e772c5034a9fe6069aeee9c17aa017dca709fbc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88458914"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184540"
 ---
 # <a name="stunion-geometry-data-type"></a>STUnion (type de données geometry)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

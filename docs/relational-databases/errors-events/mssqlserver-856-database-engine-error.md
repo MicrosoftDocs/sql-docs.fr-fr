@@ -6,18 +6,18 @@ ms.date: 08/20/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, Masha
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 856 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: f94f6f4e8f8eebee48bbb0c2a6d0faefa4218c25
-ms.sourcegitcommit: ead0b8c334d487a07e41256ce5d6acafa2d23c9d
+ms.openlocfilehash: d0cb60c6117ebd17ce566f182c65423537100f04
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92418757"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180967"
 ---
 # <a name="mssqlserver_856"></a>MSSQLSERVER_856
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -60,7 +60,7 @@ Si ce pool de mémoires tampons ou cette page de données n’est pas modifié n
 
 > SQL Server a détecté une altération de la mémoire matérielle dans la base de données '%ls', ID de fichier : %u, ID de page : %u, adresse mémoire : 0x%I64X et a correctement récupéré la page.
 
-Lorsque les requêtes nécessitent une nouvelle fois cette page de données, le pool de mémoires tampons peut lire la page de données à partir du disque et remettre le contenu dans le pool de mémoires tampons. Il est également possible que la version sur disque de la page se trouve dans un état endommagé. Dans ce cas, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut consigner des erreurs supplémentaires telles que l’erreur 824.
+Lorsque les requêtes nécessitent une nouvelle fois cette page de données, le pool de mémoires tampons peut lire la page de données à partir du disque et remettre le contenu dans le pool de mémoires tampons. Il est également possible que la version sur disque de la page se trouve dans un état endommagé. Dans ce cas, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut consigner des erreurs supplémentaires telles que l’erreur 824.
 
 Si la page erronée est utilisée non pas par le pool de mémoires tampons mais par une autre structure ou un autre objet mis en cache, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] consigne le message suivant :
 

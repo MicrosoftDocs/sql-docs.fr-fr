@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 41325 (Database Engine error)
 ms.assetid: 97c6a8bb-139a-44f3-9ed5-f46d047e8ed3
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: a2f6c28f78791e7afeb05db72016d09a126bc2d5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: eed4e37b9f5b9b9f662fdb9fac9664e869113c01
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88428731"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185083"
 ---
 # <a name="mssqlserver_41325"></a>MSSQLSERVER_41325
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

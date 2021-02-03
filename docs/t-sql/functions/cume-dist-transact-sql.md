@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-data-warehouse, database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CUME_DIST
 - CUME_DIST_TSQL
@@ -20,12 +20,12 @@ ms.assetid: 491b07f3-9ffd-4cdd-93e5-5abb636fc5ef
 author: cawrites
 ms.author: chadam
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 4252c237e234fdc380ca0f4b18cfcf55f6bf9ae4
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2f28c7c8039602d5892430b1c59a4f39e026a954
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093722"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184189"
 ---
 # <a name="cume_dist-transact-sql"></a>CUME_DIST (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

@@ -4,7 +4,7 @@ description: DATEDIFF_BIG (Transact-SQL)
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DATEDIFF_BIG
 - DATEDIFF_BIG_TSQL
@@ -21,12 +21,12 @@ ms.author: chadam
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 01/12/2021
-ms.openlocfilehash: 8f6078aebab5456b8867aca1b7f6987d8a1eb6fd
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 2f82810525576e05d30bc8c68f74547014e4a788
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98168151"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183536"
 ---
 # <a name="datediff_big-transact-sql"></a>DATEDIFF_BIG (Transact-SQL)
 

@@ -6,18 +6,18 @@ ms.date: 07/25/2020
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 5120 (Database Engine error)
 ms.assetid: ''
 author: PijoCoder
 ms.author: mathoma
-ms.openlocfilehash: 331c35a269d63f9f71c3d0fce59485bd08b88df4
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 927134b385b3164416bca61c776778081b683d33
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97638769"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185563"
 ---
 # <a name="mssqlserver_5120"></a>MSSQLSERVER_5120
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 3431 (Database Engine error)
 ms.assetid: 9541217f-e5c6-4a12-a19a-006058f1d3f3
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: bab0c05fdf2cdb030d2c0c5263dad09fb026657c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6c66c72500e19689debc69fabd6ab4b6f5879193
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88332065"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185229"
 ---
 # <a name="mssqlserver_3431"></a>MSSQLSERVER_3431
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

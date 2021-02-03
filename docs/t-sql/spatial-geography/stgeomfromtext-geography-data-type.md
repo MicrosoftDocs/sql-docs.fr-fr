@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STGeomFromText (geography Data Type)
 - STGeomFromText_TSQL
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 3717987b-77d8-4ccf-a1db-5a8016ac1083
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 584b34c02bde76293654b0a0bef8c006ad3c38b1
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 7c2183e7118719ed6851ccd6f77af684785e0d50
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88445288"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181227"
 ---
 # <a name="stgeomfromtext-geography-data-type"></a>STGeomFromText (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

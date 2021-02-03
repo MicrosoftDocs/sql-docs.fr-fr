@@ -6,7 +6,7 @@ ms.date: 03/16/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d112b9c9-be9f-435c-a9e6-d21b65778fb7
 author: MightyPen
 ms.author: genemi
-ms.openlocfilehash: 6b139187edc98242b7b4efc03ebd53a71fe415f3
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: 8eb3fd64ab953922dfdddf31f2961c9d0df5f527
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91116557"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181675"
 ---
 # <a name="xml-data-type-methods"></a>Méthodes des types de données xml
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

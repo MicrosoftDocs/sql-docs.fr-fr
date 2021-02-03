@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-data-warehouse, database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - RAND
 - RAND_TSQL
@@ -21,12 +21,12 @@ ms.assetid: 363c84d6-b9fa-49ba-9a75-e44f27535ff6
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 085f8bda87e9b93039eb5b4a169080464e2cc6c2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ea82aba7de9d9f306518398b3cdc9312aa972607
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97462490"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182340"
 ---
 # <a name="rand-transact-sql"></a>RAND (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]

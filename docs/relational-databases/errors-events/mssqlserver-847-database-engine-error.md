@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 847 (Database Engine error)
 ms.assetid: 67208b7c-bd8d-48a1-9f70-a6488e0f5f9b
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: ece596b38638f4e043fac150e683682a551592de
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 72f2499bb52c26ed86ea18d84c4c43a645079260
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88420943"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186729"
 ---
 # <a name="mssqlserver_847"></a>MSSQLSERVER_847
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

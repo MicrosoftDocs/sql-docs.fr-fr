@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Audit Server Principal Impersonation event class
 ms.assetid: 6fee1a15-325a-4f09-a95d-deecf8af1b9f
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 10b32cfa57724038be4701f5445606536ab32cfe
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: d6ab93502c83fbdd94ba2d3890638aaa0170df6d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97469960"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180859"
 ---
 # <a name="audit-server-principal-impersonation-event-class"></a>Audit Server Principal Impersonation (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

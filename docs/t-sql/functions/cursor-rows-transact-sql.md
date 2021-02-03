@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - '@@CURSOR_ROWS'
 - '@@CURSOR_ROWS_TSQL'
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 31bd7a97-7f28-42a8-ba24-24d16d22973d
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 7df1f0df488313e5d13afe829ec25710477ffbcf
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: a179a8baa17142abca1ad8217a05cefbfea91c60
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097199"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99184094"
 ---
 # <a name="x40x40cursor_rows-transact-sql"></a>&#x40;&#x40;CURSOR_ROWS (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

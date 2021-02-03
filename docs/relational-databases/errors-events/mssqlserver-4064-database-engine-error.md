@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 4064 (Database Engine error)
 ms.assetid: 32112b90-0a2f-4834-a027-756811732be7
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 27f5ccbad0bd1722f8c9a4fbe1d2b7cd0fd633da
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cdf7443042df535359320ccee9631a7612ecbdf1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88471079"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185147"
 ---
 # <a name="mssqlserver_4064"></a>MSSQLSERVER_4064
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

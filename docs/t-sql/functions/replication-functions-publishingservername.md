@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - PUBLISHINGSERVERNAME_TSQL
 - PUBLISHINGSERVERNAME
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: e7c278e5-ab23-419e-ab3e-3bb20b0636df
 author: julieMSFT
 ms.author: jrasnick
-ms.openlocfilehash: e6b42d4883053a32ec97f76278139fad8d0cf0f4
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 1d51901aef802b8c490b138781d9174fea1375a1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92036587"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182285"
 ---
 # <a name="replication-functions---publishingservername"></a>Fonctions de réplication - PUBLISHINGSERVERNAME
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
