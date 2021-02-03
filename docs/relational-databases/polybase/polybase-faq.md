@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: mikeray
-ms.openlocfilehash: 57d59e774c1042bf7989bcd2df4a652ed4498f0d
-ms.sourcegitcommit: 7a3fdd3f282f634f7382790841d2c2a06c917011
+ms.openlocfilehash: 70ffec480513c7a002a8691f2624a604bc82ead0
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96563135"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99235804"
 ---
 # <a name="frequently-asked-questions"></a>Forum aux questions
 
@@ -36,7 +36,7 @@ Le tableau suivant présente les différences de fonctionnalités entre PolyBase
 
 ## <a name="whats-new-in-polybase-2019"></a>Nouveautés de PolyBase 2019 
 
-PolyBase dans [!INCLUDE[sssqlv15](../../includes/sssqlv15-md.md)] peut maintenant lire des données provenant d’un plus large éventail de sources de données. Les données de ces sources de données externes peuvent être stockées sous la forme de tables externes sur votre serveur SQL. PolyBase prend également en charge le calcul pushdown sur ces sources de données externes, à l’exception de types génériques ODBC.
+PolyBase dans [!INCLUDE[sssql19](../../includes/sssql19-md.md)] peut maintenant lire des données provenant d’un plus large éventail de sources de données. Les données de ces sources de données externes peuvent être stockées sous la forme de tables externes sur votre serveur SQL. PolyBase prend également en charge le calcul pushdown sur ces sources de données externes, à l’exception de types génériques ODBC.
 
 ### <a name="compatible-data-sources"></a>Sources de données compatibles
 
@@ -51,7 +51,7 @@ PolyBase dans [!INCLUDE[sssqlv15](../../includes/sssqlv15-md.md)] peut maintenan
 
 ## <a name="polybase-in-big-data-clusters-vs-polybase-in-stand-alone-instances"></a>Comparaison entre PolyBase dans Clusters Big Data et PolyBase dans les instances autonomes
 
-Le tableau suivant présente les fonctionnalités de PolyBase disponibles dans l’installation autonome de [!INCLUDE[sssqlv15](../../includes/sssqlv15-md.md)] et le cluster Big Data de [!INCLUDE[sssqlv15](../../includes/sssqlv15-md.md)] :
+Le tableau suivant présente les fonctionnalités de PolyBase disponibles dans l’installation autonome de [!INCLUDE[sssql19](../../includes/sssql19-md.md)] et le cluster Big Data de [!INCLUDE[sssql19](../../includes/sssql19-md.md)] :
 
 |Fonctionnalité |Clusters Big Data|Instance autonome|
 |--------------------------|--------------------------|---------|   
@@ -64,4 +64,4 @@ Le tableau suivant présente les fonctionnalités de PolyBase disponibles dans l
 |Monter en charge l’exécution des requêtes | X| X (Windows uniquement) |
 
 > [!NOTE]
->Le tableau ne décrit pas les fonctionnalités disponibles dans la dernière version de [!INCLUDE[sssqlv15](../../includes/sssqlv15-md.md)] CTP. Pour les connaître, voir les notes de publication. Pour plus d’informations sur les connexions établies avec le connecteur générique ODBC, voir notre [Guide pratique de la configuration des types génériques ODBC](polybase-configure-odbc-generic.md).
+>Le tableau ne décrit pas les fonctionnalités disponibles dans la dernière version de [!INCLUDE[sssql19](../../includes/sssql19-md.md)] CTP. Pour les connaître, voir les notes de publication. Pour plus d’informations sur les connexions établies avec le connecteur générique ODBC, voir notre [Guide pratique de la configuration des types génériques ODBC](polybase-configure-odbc-generic.md).

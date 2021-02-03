@@ -10,12 +10,12 @@ ms.topic: conceptual
 author: rpsqrd
 ms.author: ryanpu
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: c4c80a51370de62410367b1225fd85e3ffe7f261
-ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
+ms.openlocfilehash: d156b2c02d67c947041de268962579d6417202e2
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98534798"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99235745"
 ---
 # <a name="plan-for-host-guardian-service-attestation"></a>Planifier l’attestation du Service Guardian hôte
 
@@ -118,7 +118,7 @@ Le ou les ordinateurs exécutant [!INCLUDE [ssnoversion-md](../../../includes/ss
 
 Ces conditions requises incluent :
 
-- [!INCLUDE [sssqlv15-md](../../../includes/sssqlv15-md.md)] ou ultérieur
+- [!INCLUDE [sssql19-md](../../../includes/sssql19-md.md)] ou ultérieur
 - Windows 10 Entreprise version 1809 ou ultérieure , ou Windows Server 2019 Édition Datacenter. Les autres éditions de Windows 10 et de Windows Server ne prennent pas en charge l’attestation avec le Service Guardian hôte.
 - Prise en charge du processeur pour les technologies de virtualisation :
   - Intel VT-x avec Extended Page Tables.

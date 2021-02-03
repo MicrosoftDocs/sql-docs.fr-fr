@@ -14,12 +14,12 @@ ms.assetid: 867a54b8-5be4-46e6-9702-49ae6dabf67c
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 230a1a00d66f1839be7a8135ff9c45022f0a2511
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: b58c999fd74f7a899e7b700022f57b7171ed39b7
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98765656"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99234709"
 ---
 # <a name="create-foreign-key-relationships"></a>Créer des relations de clé étrangère
 
@@ -42,7 +42,7 @@ La création d'une clé étrangère dans une table existante nécessite l'autori
 - Les contraintes FOREIGN KEY peuvent faire référence à une autre colonne dans la même table, ce qui est appelé une auto-référence.
 - Une contrainte FOREIGN KEY spécifiée au niveau de la colonne ne peut lister qu'une colonne de référence. Cette colonne doit avoir le même type de données que la colonne pour laquelle la contrainte est définie.
 - Une contrainte FOREIGN KEY spécifiée au niveau de la table doit avoir le même nombre de colonnes de référence que le nombre de colonnes de la liste des colonnes de la contrainte. Le type de données de chaque colonne de référence doit également être identique à la colonne de référence correspondante dans la liste des colonnes.
-- Le[!INCLUDE[ssDE](../../includes/ssde-md.md)] n’a pas de limite prédéfinie quant au nombre de contraintes de clé étrangère qu’une table peut contenir et qui référencent d’autres tables. Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] ne limite pas non plus le nombre de contraintes de clé étrangère détenues par d’autres tables qui font référence à une table spécifique. Cependant, le nombre réel de contraintes FOREIGN KEY qui peuvent être utilisées est limité par la configuration matérielle et par la conception de la base de données et de l'application. Une table peut référencer au maximum 253 autres tables et colonnes en tant que clés étrangères (références sortantes). [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures font passer de 253 à 10 000 le nombre limite des autres tables et colonnes pouvant référencer des colonnes dans une table unique (références entrantes). (Cela nécessite au minimum le niveau de compatibilité 130). Cette augmentation est soumise aux restrictions suivantes :
+- Le[!INCLUDE[ssDE](../../includes/ssde-md.md)] n’a pas de limite prédéfinie quant au nombre de contraintes de clé étrangère qu’une table peut contenir et qui référencent d’autres tables. Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] ne limite pas non plus le nombre de contraintes de clé étrangère détenues par d’autres tables qui font référence à une table spécifique. Cependant, le nombre réel de contraintes FOREIGN KEY qui peuvent être utilisées est limité par la configuration matérielle et par la conception de la base de données et de l'application. Une table peut référencer au maximum 253 autres tables et colonnes en tant que clés étrangères (références sortantes). [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures font passer de 253 à 10 000 le nombre limite des autres tables et colonnes pouvant référencer des colonnes dans une table unique (références entrantes). (Cela nécessite au minimum le niveau de compatibilité 130). Cette augmentation est soumise aux restrictions suivantes :
 
   - Les références de clés étrangères supérieures à 253 sont prises en charge pour les opérations DELETE et UPDATE DML. Les opérations MERGE ne sont pas prises en charge.
   - Une table comportant une clé étrangère référencée vers elle-même est toujours limitée à 253 références de clés étrangères.

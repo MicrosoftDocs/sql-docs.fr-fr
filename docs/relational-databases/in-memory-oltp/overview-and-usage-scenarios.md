@@ -12,12 +12,12 @@ ms.assetid: 62c964c5-eae4-4cf1-9024-d5a19adbd652
 author: kevin-farlee
 ms.author: kfarlee
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 0b01ecd66479d93d3eb89065a94005d9deeffaf5
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 8492183591b2069115e8da8d05d89759f5eee46d
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172301"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99235261"
 ---
 # <a name="overview-and-usage-scenarios"></a>Vue d’ensemble et scénarios d’utilisation
 
@@ -29,7 +29,7 @@ Cet article présente la technologie OLTP en mémoire dans [!INCLUDE[ssNoVersion
 
 ## <a name="in-memory-oltp-overview"></a>Vue d’ensemble de l’OLTP en mémoire
 
-L’OLTP en mémoire peut offrir des gains de performance considérables pour les charges de travail appropriées. Un client, BWIN, a réussi à [atteindre 1,2 million de requêtes par seconde](/archive/blogs/sqlcat/how-bwin-is-using-sql-server-2016-in-memory-oltp-to-achieve-unprecedented-performance-and-scale) avec une seule machine exécutant [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], en tirant profit de l’OLTP en mémoire. Un autre client, Quorum, est parvenu à doubler sa charge de travail tout en [réduisant son utilisation des ressources de 70 %](https://customers.microsoft.com/story/quorum-doubles-key-databases-workload-while-lowering-dtu-with-sql-database), grâce à la fonctionnalité OLTP en mémoire disponible dans [!INCLUDE[ssSDS](../../includes/sssds-md.md)]. Si certains clients ont constaté un gain de performances multiplié par 30 dans certains cas, les gains réellement obtenus dépendent de la charge de travail.
+L’OLTP en mémoire peut offrir des gains de performance considérables pour les charges de travail appropriées. Un client, BWIN, a réussi à [atteindre 1,2 million de requêtes par seconde](/archive/blogs/sqlcat/how-bwin-is-using-sql-server-2016-in-memory-oltp-to-achieve-unprecedented-performance-and-scale) avec une seule machine exécutant [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], en tirant profit de l’OLTP en mémoire. Un autre client, Quorum, est parvenu à doubler sa charge de travail tout en [réduisant son utilisation des ressources de 70 %](https://customers.microsoft.com/story/quorum-doubles-key-databases-workload-while-lowering-dtu-with-sql-database), grâce à la fonctionnalité OLTP en mémoire disponible dans [!INCLUDE[ssSDS](../../includes/sssds-md.md)]. Si certains clients ont constaté un gain de performances multiplié par 30 dans certains cas, les gains réellement obtenus dépendent de la charge de travail.
 
 Mais d’où proviennent exactement ces gains de performance ? En substance, l’OLTP en mémoire améliore les performances de traitement transactionnel en rendant l’accès aux données et l’exécution des transactions plus efficaces, et en supprimant la contention de verrous et de verrous internes entre les transactions exécutées simultanément. Cette technologie n’est pas rapide parce qu’elle est en mémoire, mais parce qu’elle est optimisée à travers la présence des données en mémoire. Les algorithmes de stockage des données, d’accès et de traitement ont été entièrement repensés pour tirer parti des dernières améliorations en matière de calcul en mémoire et haute simultanéité.
 
@@ -67,8 +67,8 @@ Pour commencer avec une application existante :
 
 #### <a name="customer-case-studies"></a>Études de cas clients
 
-- CMC Markets utilise l’OLTP en mémoire dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] pour obtenir une latence faible homogène : [Because a second is too long to wait, this financial services firm is updating its trading software now.](https://customers.microsoft.com/story/because-a-second-is-too-long-to-wait-this-financial-services-firm-is-updating-its-trading-software) (Une seconde étant un délai d’attente trop long, ce cabinet de services financiers met à jour son logiciel de trading maintenant.)
-- Derivco utilise l’OLTP en mémoire dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] pour prendre en charge les hausses de débit et gérer les pics de charge de travail : [When an online gaming company doesn't want to risk its future, it bets on [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)].](https://customers.microsoft.com/story/when-an-online-gaming-company-doesnt-want-to-risk-its-future-it-bets-on-sql-server-2016) (Quand une entreprise de jeux en ligne ne veut pas mettre son avenir en danger, elle parie sur SQL Server 2015.)
+- CMC Markets utilise l’OLTP en mémoire dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] pour obtenir une latence faible homogène : [Because a second is too long to wait, this financial services firm is updating its trading software now.](https://customers.microsoft.com/story/because-a-second-is-too-long-to-wait-this-financial-services-firm-is-updating-its-trading-software) (Une seconde étant un délai d’attente trop long, ce cabinet de services financiers met à jour son logiciel de trading maintenant.)
+- Derivco utilise l’OLTP en mémoire dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] pour prendre en charge les hausses de débit et gérer les pics de charge de travail : [When an online gaming company doesn't want to risk its future, it bets on [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)].](https://customers.microsoft.com/story/when-an-online-gaming-company-doesnt-want-to-risk-its-future-it-bets-on-sql-server-2016) (Quand une entreprise de jeux en ligne ne veut pas mettre son avenir en danger, elle parie sur SQL Server 2015.)
 
 ### <a name="data-ingestion-including-iot-internet-of-things"></a>Intégration de données, IoT (Internet des objets) compris
 
@@ -101,7 +101,7 @@ Le référentiel d’exemples [!INCLUDE[ssNoVersion](../../includes/ssnoversion-
 
 La technologie d’OLTP en mémoire rend SQL vraiment intéressant pour le maintien de l’état de session (par exemple, pour une application ASP.NET) et pour la mise en cache.
 
-L’état de session ASP.NET est un cas d’utilisation très efficace pour l’OLTP en mémoire. Avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], un client est parvenu à atteindre 1,2 million de requêtes par seconde. Dans le même temps, il a commencé à utiliser l’OLTP en mémoire pour les besoins de mise en cache de toutes les applications de niveau intermédiaire de l’entreprise. Détails : [How bwin is using [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] In-Memory OLTP to achieve unprecedented performance and scale](https://blogs.msdn.microsoft.com/sqlcat/2016/10/26/how-bwin-is-using-sql-server-2016-in-memory-oltp-to-achieve-unprecedented-performance-and-scale/) (Comment bwin utilise la technologie OLTP en mémoire de SQL Server 2015 pour atteindre des performances et un nombre d’utilisateurs sans précédent)
+L’état de session ASP.NET est un cas d’utilisation très efficace pour l’OLTP en mémoire. Avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], un client est parvenu à atteindre 1,2 million de requêtes par seconde. Dans le même temps, il a commencé à utiliser l’OLTP en mémoire pour les besoins de mise en cache de toutes les applications de niveau intermédiaire de l’entreprise. Détails : [How bwin is using [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] In-Memory OLTP to achieve unprecedented performance and scale](https://blogs.msdn.microsoft.com/sqlcat/2016/10/26/how-bwin-is-using-sql-server-2016-in-memory-oltp-to-achieve-unprecedented-performance-and-scale/) (Comment bwin utilise la technologie OLTP en mémoire de SQL Server 2015 pour atteindre des performances et un nombre d’utilisateurs sans précédent)
 
 #### <a name="implementation-considerations"></a>Considérations relatives à l’implémentation
 
@@ -112,7 +112,7 @@ Pour bien démarrer, utilisez l’état de session ASP.NET à mémoire optimisé
 #### <a name="customer-case-studies"></a>Études de cas clients
 
 - bwin a pu nettement augmenter le débit et réduire l’encombrement matériel pour l’état de session ASP.NET avec l’OLTP en mémoire dans [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] : [Gaming Site Can Scale to 250,000 Requests Per Second and Improve Player Experience](https://customers.microsoft.com/story/gaming-site-can-scale-to-250000-requests-per-second-an) (Un site de jeux peut prendre en charge jusqu’à 250 000 requêtes par seconde afin d’optimiser l’expérience des joueurs)
-- bwin a augmenté encore plus le débit avec l’état de session ASP.NET et implémenté un système de mise en cache de niveau intermédiaire à l’échelle de l’entreprise grâce à l’OLTP en mémoire dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] : [How bwin is using [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] In-Memory OLTP to achieve unprecedented performance and scale](https://blogs.msdn.microsoft.com/sqlcat/2016/10/26/how-bwin-is-using-sql-server-2016-in-memory-oltp-to-achieve-unprecedented-performance-and-scale/) (Comment bwin utilise la technologie OLTP en mémoire de SQL Server 2015 pour atteindre des performances et un nombre d’utilisateurs sans précédent)
+- bwin a augmenté encore plus le débit avec l’état de session ASP.NET et implémenté un système de mise en cache de niveau intermédiaire à l’échelle de l’entreprise grâce à l’OLTP en mémoire dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] : [How bwin is using [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] In-Memory OLTP to achieve unprecedented performance and scale](https://blogs.msdn.microsoft.com/sqlcat/2016/10/26/how-bwin-is-using-sql-server-2016-in-memory-oltp-to-achieve-unprecedented-performance-and-scale/) (Comment bwin utilise la technologie OLTP en mémoire de SQL Server 2015 pour atteindre des performances et un nombre d’utilisateurs sans précédent)
 
 ### <a name="tempdb-object-replacement"></a>Remplacement d’objet tempdb
 

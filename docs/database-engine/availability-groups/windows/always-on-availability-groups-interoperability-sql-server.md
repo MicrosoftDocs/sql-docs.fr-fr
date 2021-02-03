@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: daf87f90-2623-42ca-912c-b8f07d210510
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 1c0322b1b00b3f5cbff775d3c248ee81916f48a9
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 928b63c84781b837560e593b56d3c272971f9a23
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98765134"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99235802"
 ---
 # <a name="always-on-availability-groups-interoperability-sql-server"></a>Groupes de disponibilité Always On : interopérabilité (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -50,7 +50,7 @@ Le tableau suivant liste les fonctionnalités de [!INCLUDE[ssNoVersion](../../..
 
 Les fonctionnalités suivantes interopèrent avec les [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] avec des restrictions spécifiques. Consultez les rubriques associées pour plus d’informations.
 
-- Transactions entre bases de données/transactions distribuées ([!INCLUDE[ssSQL15](../../../includes/sssql16-md.md)] et Windows Server 2016). Pour plus d’informations, consultez [Transactions entre bases de données et transactions distribuées pour des groupes de disponibilité Always On et la mise en miroir de bases de données &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/transactions-always-on-availability-and-database-mirroring.md).
+- Transactions entre bases de données/transactions distribuées ([!INCLUDE[sssql16-md](../../../includes/sssql16-md.md)] et Windows Server 2016). Pour plus d’informations, consultez [Transactions entre bases de données et transactions distribuées pour des groupes de disponibilité Always On et la mise en miroir de bases de données &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/transactions-always-on-availability-and-database-mirroring.md).
 - Le [collecteur de données système des statistiques de requête](../../../relational-databases/data-collection/system-data-collection-set-reports.md#Query) ne peut pas s’exécuter de manière fiable dans un environnement avec des secondaires non accessibles en lecture. Pour utiliser le collecteur de données système des statistiques de requête, paramétrez tous les réplicas de groupe de disponibilité secondaires afin d’autoriser l’[accès en lecture](configure-read-only-access-on-an-availability-replica-sql-server.md). 
 
 ## <a name="features-that-do-not-interoperate-with-always-on-availability-groups"></a><a name="NoInterop"></a> Fonctionnalités qui n’interopèrent pas avec les groupes de disponibilité Always On
