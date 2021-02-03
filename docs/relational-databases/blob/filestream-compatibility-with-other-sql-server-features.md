@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: d2c145dc-d49a-4f5b-91e6-89a2b0adb4f3
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: f6d34e2db139a4b38f073f693d3828f9d403c660
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+ms.openlocfilehash: 53ea4630f147ce576ad071d1ac593e00452944a3
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91809917"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250623"
 ---
 # <a name="filestream-compatibility-with-other-sql-server-features"></a>Compatibilité de FILESTREAM avec d’autres fonctionnalités SQL Server
 
@@ -72,7 +72,7 @@ ms.locfileid: "91809917"
  Une colonne **varbinary(max)** qui a l’attribut FILESTREAM activé sur le serveur de publication peut être répliquée sur un abonné avec ou sans l’attribut FILESTREAM. Pour spécifier la façon dont la colonne est répliquée, utilisez la boîte de dialogue **Propriétés de l'article - \<Article>** ou le paramètre @schema_option de [sp_addarticle](../../relational-databases/system-stored-procedures/sp-addarticle-transact-sql.md) ou [sp_addmergearticle](../../relational-databases/system-stored-procedures/sp-addmergearticle-transact-sql.md). Les données répliquées sur une colonne **varbinary(max)** qui n’a pas l’attribut FILESTREAM ne doivent pas dépasser la limite de 2 Go pour ce type de données, autrement une erreur d’exécution est générée. Nous vous recommandons de répliquer l'attribut FILESTREAM, à moins que vous ne répliquiez des données sur [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]. La réplication de tables qui possèdent des colonnes FILESTREAM sur des abonnés [!INCLUDE[ssVersion2000](../../includes/ssversion2000-md.md)] n'est pas prise en charge, quelle que soit l'option de schéma définie.  
   
 > [!NOTE]  
->  La réplication de grandes valeurs de données à partir d'Abonnés [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] vers [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] est limitée à des valeurs de données de 256 Mo maximum. Pour plus d'informations, consultez [Spécifications de capacité maximale](../../sql-server/maximum-capacity-specifications-for-sql-server.md).  
+>  La réplication de grandes valeurs de données à partir d'Abonnés [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] vers [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] est limitée à des valeurs de données de 256 Mo maximum. Pour plus d'informations, consultez [Spécifications de capacité maximale](../../sql-server/maximum-capacity-specifications-for-sql-server.md).  
   
 ### <a name="considerations-for-transactional-replication"></a>Considérations relatives à la réplication transactionnelle  
  Si vous utilisez des colonnes FILESTREAM dans des tables publiées pour la réplication transactionnelle, notez les considérations suivantes :  

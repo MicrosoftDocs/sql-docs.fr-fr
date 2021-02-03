@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 78737e19-c65b-48d9-8fa9-aa6f1e1bce73
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 4e9e0fca818c4988acacfbfa89af718eda8d8ac5
-ms.sourcegitcommit: 216f377451e53874718ae1645a2611cdb198808a
+ms.openlocfilehash: ea678a62f4453232fe8442cf2053c3b951e361ef
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87246579"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250658"
 ---
 # <a name="enable-and-configure-filestream"></a>Activer et configurer FILESTREAM
 
@@ -28,7 +28,7 @@ ms.locfileid: "87246579"
   
 #### <a name="to-enable-and-change-filestream-settings"></a>Pour activer et modifier des paramètres FILESTREAM  
   
-1.  Dans le menu **Démarrer** , pointez sur **Tous les programmes**, sur [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]et sur **Outils de configuration**, puis cliquez sur **Gestionnaire de configuration SQL Server**.  
+1.  Dans le menu **Démarrer** , pointez sur **Tous les programmes**, sur [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]et sur **Outils de configuration**, puis cliquez sur **Gestionnaire de configuration SQL Server**.  
   
 2.  Dans la liste de services, cliquez avec le bouton droit sur **Services SQL Server**, puis cliquez sur **Ouvrir**.  
   
@@ -87,7 +87,7 @@ ms.locfileid: "87246579"
 ###  <a name="physical-database-design"></a><a name="database"></a> Conception d’une base de données physique  
  Lorsque vous concevez une base de données FILESTREAM, prenez en compte les recommandations suivantes:  
   
--   Les colonnes FILESTREAM doivent être accompagnées d’une colonne **uniqueidentifier**ROWGUID correspondante. Ces types de tables doivent également être accompagnés d'un index unique. En règle générale, cet index n'est pas un index cluster. Si la logique métier des bases de données requiert un index cluster, vous devez vous assurer que les valeurs stockées dans l'index ne sont pas aléatoires. Les valeurs aléatoires entraînent une réorganisation de l'index chaque fois qu'une ligne est ajoutée ou supprimée dans la table.  
+-   Les colonnes FILESTREAM doivent être accompagnées d’une colonne **uniqueidentifier** ROWGUID correspondante. Ces types de tables doivent également être accompagnés d'un index unique. En règle générale, cet index n'est pas un index cluster. Si la logique métier des bases de données requiert un index cluster, vous devez vous assurer que les valeurs stockées dans l'index ne sont pas aléatoires. Les valeurs aléatoires entraînent une réorganisation de l'index chaque fois qu'une ligne est ajoutée ou supprimée dans la table.  
   
 -   Pour des raisons de performances, les groupes de fichiers et conteneurs FILESTREAM doivent résider sur d'autres volumes que ceux du système d'exploitation, de la base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , du journal [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , de la base de données tempdb ou du fichier de pagination.  
   

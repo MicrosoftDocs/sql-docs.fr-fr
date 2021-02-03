@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: f60b917c-6408-48be-b911-f93b05796904
 author: jaszymas
 ms.author: jaszymas
-ms.openlocfilehash: c333346b0c8ef728966f8e0b6d42a5be53d1b187
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 7c95feda5457c3623a893e77771dbdc10ea28257
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85895913"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250682"
 ---
 # <a name="back-up-the-service-master-key"></a>Sauvegarder la clé principale du service
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cet article explique comment sauvegarder la clé principale du service dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l’aide de [!INCLUDE[tsql](../../../includes/tsql-md.md)]. La clé principale du service représente la racine de la hiérarchie de chiffrement. Elle doit être sauvegardée et stockée en lieu sûr, en dehors de votre lieu de travail. La création de cette sauvegarde doit être l'une des premières actions administratives effectuées sur le serveur.  
+  Cet article explique comment sauvegarder la clé principale du service dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] à l’aide de [!INCLUDE[tsql](../../../includes/tsql-md.md)]. La clé principale du service représente la racine de la hiérarchie de chiffrement. Elle doit être sauvegardée et stockée en lieu sûr, en dehors de votre lieu de travail. La création de cette sauvegarde doit être l'une des premières actions administratives effectuées sur le serveur.  
 
 ## <a name="before-you-begin"></a>Avant de commencer  
   

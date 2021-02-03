@@ -13,12 +13,12 @@ ms.assetid: 1338b4ea-7142-44bc-a3b9-44e54431405f
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 02cd93e23233d62ee28327e90742593cf6f0bf07
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8a8806f26cd27ebe671946a0efa723ddaa030970
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460562"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251164"
 ---
 # <a name="view-collation-information"></a>Afficher des informations de classement
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -72,7 +72,7 @@ ms.locfileid: "97460562"
     EXECUTE sp_helpsort;  
     ```  
   
- **Pour afficher tous les classements pris en charge par [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]**  
+ **Pour afficher tous les classements pris en charge par [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]**  
   
 1.  Dans l'Explorateur d'objets, connectez-vous à une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] et, dans la barre d'outils, cliquez sur **Nouvelle requête**.  
   

@@ -18,16 +18,16 @@ ms.assetid: 67d79532-1482-4de1-ac9f-4a23d162c85e
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: 4eb7b7530c498a6ce590584aa83b3f38684960a7
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 1d7779f3e400345efcd183db16bf0d5780365f69
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170771"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250624"
 ---
 # <a name="view-and-modify-replication-security-settings"></a>Afficher et modifier les paramètres de sécurité de la réplication
 [!INCLUDE[sql-asdbmi](../../../includes/applies-to-version/sql-asdbmi.md)]
-  Cette rubrique décrit comment afficher et modifier les paramètres de sécurité de la réplication dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou d'objets RMO (Replication Management Objects). Par exemple, vous voulez peut-être modifier la connexion de l'Agent de lecture du journal au serveur de publication de l'authentification SQL Server à l'authentification intégrée de Windows, ou vous avez peut-être besoin de modifier les informations d'identification utilisées pour exécuter un travail de l'Agent lorsque le mot de passe du compte Windows a changé. Pour plus d’informations sur les autorisations requises par chaque agent, consultez [Modèle de sécurité de l’Agent de réplication](../../../relational-databases/replication/security/replication-agent-security-model.md).  
+  Cette rubrique décrit comment afficher et modifier les paramètres de sécurité de la réplication dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou d'objets RMO (Replication Management Objects). Par exemple, vous voulez peut-être modifier la connexion de l'Agent de lecture du journal au serveur de publication de l'authentification SQL Server à l'authentification intégrée de Windows, ou vous avez peut-être besoin de modifier les informations d'identification utilisées pour exécuter un travail de l'Agent lorsque le mot de passe du compte Windows a changé. Pour plus d’informations sur les autorisations requises par chaque agent, consultez [Modèle de sécurité de l’Agent de réplication](../../../relational-databases/replication/security/replication-agent-security-model.md).  
   
  **Dans cette rubrique**  
   

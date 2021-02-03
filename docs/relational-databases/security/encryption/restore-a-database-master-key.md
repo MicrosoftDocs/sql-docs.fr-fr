@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 16897cc5-db8f-43bb-a38e-6855c82647cf
 author: jaszymas
 ms.author: jaszymas
-ms.openlocfilehash: 9860b952751937b18ca5e95e92ac959bb86abd23
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 65441ecd309abbe9b1545de622f0f7d9d4c2d4bc
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85892240"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250511"
 ---
 # <a name="restore-a-database-master-key"></a>Restaurer une clé principale de base de données
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Cette rubrique décrit la restauration de la clé principale de base de données dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
+  Cette rubrique décrit la restauration de la clé principale de base de données dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
   
 ## <a name="before-you-begin"></a>Avant de commencer  
   

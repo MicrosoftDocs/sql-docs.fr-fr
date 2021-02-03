@@ -33,12 +33,12 @@ ms.assetid: 92d34f48-fa2b-47c5-89d3-a4c39b0f39eb
 author: pmasl
 ms.author: sstein
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 99ef20a9db20238f24361327b79068ed39d430f4
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: e2a5f205d7182d1ffedf07b885e7411920ca7b27
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465670"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251183"
 ---
 # <a name="collation-and-unicode-support"></a>Prise en charge d’Unicode et des classements
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -64,7 +64,7 @@ Un classement désigne les modèles binaires qui représentent chaque caractère
     
 Le résultat d'une instruction[!INCLUDE[tsql](../../includes/tsql-md.md)] peut varier lorsque cette dernière est exécutée dans un contexte réunissant plusieurs bases de données dont chacune a un paramètre de classement différent. Dans la mesure du possible, choisissez un classement normalisé pour votre organisation. De cette manière, vous n’avez pas à spécifier le classement dans chaque caractère ou expression Unicode. Si vous devez utiliser des objets qui ont des paramètres de classement et de page de codes différents, codez vos requêtes conformément aux règles de priorité des classements. Pour plus d’informations, consultez [Priorité de classement (Transact-SQL)](../../t-sql/statements/collation-precedence-transact-sql.md).    
     
-Les options associées à un classement sont le respect de la casse, le respect des accents, le respect du jeu de caractères Kana, le respect de la largeur et le respect du sélecteur de variante. [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] introduit une option supplémentaire pour l’encodage [UTF-8](https://www.wikipedia.org/wiki/UTF-8). 
+Les options associées à un classement sont le respect de la casse, le respect des accents, le respect du jeu de caractères Kana, le respect de la largeur et le respect du sélecteur de variante. [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] introduit une option supplémentaire pour l’encodage [UTF-8](https://www.wikipedia.org/wiki/UTF-8). 
 
 Vous pouvez spécifier ces options en les ajoutant au nom du classement. Par exemple, le classement **Japanese_Bushu_Kakusu_100_CS_AS_KS_WS_UTF8** respecte la casse, les accents, le jeu de caractères Kana et la largeur, et il est encodé en UTF-8. Autre exemple : le classement **Japanese_Bushu_Kakusu_140_CI_AI_KS_WS_VSS** ne respecte pas la casse, ne respecte pas les accents, respecte le jeu de caractères Kana, respecte la largeur, respecte le sélecteur de variante et utilise un encodage non-Unicode. 
 
@@ -76,7 +76,7 @@ Le comportement associé à ces différentes options est décrit dans le tableau
 |Respecter les accents (\_AS)|Fait la distinction entre les caractères accentués et non accentués. Par exemple, « a » n’est pas équivalent à « ấ ». Si cette option n’est pas sélectionnée, le classement ne respecte pas les accents. Dans ce cas, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] considère que la version accentuée et la version non accentuée d’une même lettre sont identiques dans les opérations de tri. Pour sélectionner explicitement le non-respect des accents, spécifiez \_AI.|    
 |Respecter le jeu de caractères Kana (\_KS)|Fait la distinction entre les deux types de caractères japonais Kana : Hiragana et Katakana. Si cette option n’est pas sélectionnée, le classement ne respecte pas les caractères Kana. Dans ce cas, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] considère que les caractères Hiragana et Katakana sont identiques dans les opérations de tri. L’omission de cette option est le seul moyen de spécifier le non-respect du jeu de caractères Kana.|   
 |Respecter la largeur (\_WS)|Fait la différence entre les caractères pleine largeur et demi-largeur. Si cette option n’est pas sélectionnée, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] considère que la représentation pleine largeur et demi-largeur d’un même caractère sont identiques dans les opérations de tri. L'omission de cette option est le seul moyen de spécifier le non-respect de la largeur.|  
-|Respecter le sélecteur de variante (\_VSS)|Fait la distinction entre différents sélecteurs de variante idéographiques dans les classements japonais **Japanese_Bushu_Kakusu_140** et **Japanese_XJIS_140**, qui sont introduits dans [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)]. Une séquence de variantes se compose d’un caractère de base et d’un sélecteur de variante supplémentaire. Si l’option \_VSS n’est pas sélectionnée, le classement ne respecte pas le sélecteur de variante, qui n’est pas non plus pris en compte dans la comparaison. Autrement dit, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] considère comme identiques pour les tris les caractères basés sur le même caractère de base avec différents sélecteurs de variante. Pour plus d’informations, consultez [Unicode Ideographic Variation Database](https://www.unicode.org/reports/tr37/).<br/><br/> Les classements qui respectent le sélecteur de variante (\_VSS) ne sont pas pris en charge par les index de recherche en texte intégral, qui ne gèrent que les options Respecter les accents (\_AS), Respecter le jeu de caractères Kana (\_KS) et Respecter la largeur (\_WS). Les moteurs XML et CLR de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne prennent pas en charge les sélecteurs de variante (\_VSS).|      
+|Respecter le sélecteur de variante (\_VSS)|Fait la distinction entre différents sélecteurs de variante idéographiques dans les classements japonais **Japanese_Bushu_Kakusu_140** et **Japanese_XJIS_140**, qui sont introduits dans [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)]. Une séquence de variantes se compose d’un caractère de base et d’un sélecteur de variante supplémentaire. Si l’option \_VSS n’est pas sélectionnée, le classement ne respecte pas le sélecteur de variante, qui n’est pas non plus pris en compte dans la comparaison. Autrement dit, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] considère comme identiques pour les tris les caractères basés sur le même caractère de base avec différents sélecteurs de variante. Pour plus d’informations, consultez [Unicode Ideographic Variation Database](https://www.unicode.org/reports/tr37/).<br/><br/> Les classements qui respectent le sélecteur de variante (\_VSS) ne sont pas pris en charge par les index de recherche en texte intégral, qui ne gèrent que les options Respecter les accents (\_AS), Respecter le jeu de caractères Kana (\_KS) et Respecter la largeur (\_WS). Les moteurs XML et CLR de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne prennent pas en charge les sélecteurs de variante (\_VSS).|      
 |Binaire (\_BIN)<sup>1</sup>|Trie et compare les données dans les tables [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en fonction des modèles de bits définis pour chaque caractère. L’ordre de tri binaire respecte la casse et les accents. Il s'agit aussi de l'ordre de tri le plus rapide. Pour plus d’informations, consultez la section [Classements binaires](#Binary-collations) de cet article.|      
 |Point de code binaire (\_BIN2)<sup>1</sup> | Trie et compare les données des tables [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en fonction des points de code Unicode pour les données Unicode. Pour les données non-Unicode, le point de code binaire utilise des comparaisons identiques à celles utilisées pour les tris binaires.<br/><br/> L’utilisation d’un ordre de tri de point de code binaire présente l’avantage de ne devoir retrier les données dans les applications qui comparent les données triées de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Par conséquent, un ordre de tri de point de code binaire simplifie le développement des applications et permet d’améliorer les performances. Pour plus d’informations, consultez la section [Classements binaires](#Binary-collations) de cet article.|
 |UTF-8 (\_UTF8)|Permet le stockage des données encodées en UTF-8 dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Si cette option n’est pas sélectionnée, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise le format d’encodage non-Unicode par défaut pour les types de données applicables. Pour plus d’informations, consultez la section [Prise en charge d’UTF-8](#utf8) de cet article.| 
@@ -461,7 +461,7 @@ Si vous stockez des données caractères qui reflètent plusieurs langues dans [
 > [!NOTE]
 > Pour les types de données Unicode, le [!INCLUDE[ssde_md](../../includes/ssde_md.md)] peut représenter jusqu'à 65 535 caractères à l’aide de UCS-2 ou la plage Unicode complète (1 114 111 caractères) si les caractères supplémentaires sont utilisés. Pour plus d’informations sur l’activation de caractères supplémentaires, consultez [Caractères supplémentaires](#Supplementary_Characters).
 
-D’autre part, à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], si un classement compatible UTF-8 (\_UTF8) est utilisé, les types de données non Unicode (**char** et **varchar**) deviennent des types de données Unicode basés sur l’encodage UTF-8. [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] ne change pas le comportement des types de données Unicode existants (**nchar**, **nvarchar** et **ntext**), qui continuent d’utiliser l’encodage UCS-2 ou UTF-16. Pour plus d’informations, consultez [Différences de stockage entre UTF-8 et UTF-16](#storage_differences).
+D’autre part, à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], si un classement compatible UTF-8 (\_UTF8) est utilisé, les types de données non Unicode (**char** et **varchar**) deviennent des types de données Unicode basés sur l’encodage UTF-8. [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] ne change pas le comportement des types de données Unicode existants (**nchar**, **nvarchar** et **ntext**), qui continuent d’utiliser l’encodage UCS-2 ou UTF-16. Pour plus d’informations, consultez [Différences de stockage entre UTF-8 et UTF-16](#storage_differences).
 
 ### <a name="unicode-considerations"></a>Considérations relatives à Unicode
 Des limitations significatives sont associées aux types de données non-Unicode. C’est parce qu’un ordinateur non-Unicode ne peut utiliser qu’une seule page de codes. Vous pouvez bénéficier de gains de performances en utilisant Unicode, car il requiert moins de conversions de page de codes. Les classements Unicode doivent être sélectionnés individuellement au niveau de la base de données, de la colonne ou de l’expression parce qu’ils ne sont pas pris en charge au niveau du serveur.    
@@ -473,7 +473,7 @@ Lorsque vous déplacez des données d'un serveur vers un client, votre classemen
 >
 > Pour utiliser les classements UTF-16 disponibles dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] et versions ultérieures) afin d’améliorer la recherche et le tri de certains caractères Unicode (classements Windows uniquement), vous pouvez sélectionner un des classements (\_SC) de caractères supplémentaires ou un des classements de la version 140.    
  
-Pour utiliser les classements UTF-8 disponibles dans [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et améliorer la recherche et le tri de certains caractères Unicode (classements Windows uniquement), vous devez sélectionner des classements compatibles avec l’encodage UTF-8 (\_UTF8).
+Pour utiliser les classements UTF-8 disponibles dans [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] et améliorer la recherche et le tri de certains caractères Unicode (classements Windows uniquement), vous devez sélectionner des classements compatibles avec l’encodage UTF-8 (\_UTF8).
  
 -   L’indicateur UTF8 peut être appliqué aux éléments suivants :    
     -   Classements linguistiques qui prennent déjà en charge les caractères supplémentaires (\_SC) ou le sélecteur de variante (\_VSS)
@@ -484,8 +484,8 @@ Pour utiliser les classements UTF-8 disponibles dans [!INCLUDE[sql-server-2019](
     -   Classements binaires BIN ou BIN2<sup>2</sup>
     -   Classements SQL\_*  
     
-<sup>1</sup> À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CTP 2.3. [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CTP 3.0 a remplacé le classement **UTF8_BIN2** par **Latin1_General_100_BIN2_UTF8**.        
-<sup>2</sup> Jusqu’à [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CTP 2.3.    
+<sup>1</sup> À compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CTP 2.3. [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CTP 3.0 a remplacé le classement **UTF8_BIN2** par **Latin1_General_100_BIN2_UTF8**.        
+<sup>2</sup> Jusqu’à [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CTP 2.3.    
     
 Pour déterminer les problèmes qui sont liés à l'utilisation des types de données Unicode ou non-Unicode, testez votre scénario pour mesurer les écarts de performances dans votre environnement. Il est recommandé de normaliser le classement utilisé sur les systèmes de votre organisation et de déployer des serveurs et clients Unicode partout où vous le pouvez.    
     
@@ -512,7 +512,7 @@ Mais le Consortium Unicode a établi des 16 « plans » de caractères supplé
 
 [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] a introduit une nouvelle famille de classements de caractères supplémentaires (\_SC) pouvant être utilisée avec les types de données **nchar**, **nvarchar** et **sql_variant** pour représenter la plage de caractères Unicode complète (de 000000 à 10FFFF). Par exemple : **Latin1_General_100_CI_AS_SC** ou, si vous utilisez un classement japonais, **Japanese_Bushu_Kakusu_100_CI_AS_SC**. 
  
-[!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] étend la prise en charge des caractères supplémentaires aux types de données **char** et **varchar** avec les nouveaux classements prenant en charge UTF-8 ([\_UTF8](#utf8)). Ces types de données sont également capables de représenter la plage de caractères Unicode complète.   
+[!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] étend la prise en charge des caractères supplémentaires aux types de données **char** et **varchar** avec les nouveaux classements prenant en charge UTF-8 ([\_UTF8](#utf8)). Ces types de données sont également capables de représenter la plage de caractères Unicode complète.   
 
 > [!NOTE]
 > À compter de [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], tous les nouveaux classements \_140 prennent en charge automatiquement les caractères supplémentaires.
@@ -545,7 +545,7 @@ Le tableau suivant compare le comportement de quelques fonctions de chaîne et o
 ## <a name="gb18030-support"></a><a name="GB18030"></a> Prise en charge de la norme GB18030    
 GB18030 est une norme distincte utilisée en République populaire de Chine pour l’encodage des caractères chinois. Dans la norme GB18030, les caractères peuvent être encodés sur 1, 2 ou 4 octets de longueur. Pour prendre en charge les caractères encodés selon la norme GB18030,[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] les reconnaît lorsqu'ils entrent dans le serveur en provenance d'une application côté client, puis les convertit et les stocke en mode natif en tant que caractères Unicode. Une fois stockés dans le serveur, ils sont traités en tant que caractères Unicode dans toutes les opérations suivantes. 
 
-Vous pouvez utiliser n'importe quel classement chinois, de préférence la version 100 la plus récente. Tous les classements de niveau \_100 prennent en charge le tri linguistique avec les caractères GB18030. Si les données incluent des caractères supplémentaires (paires de substitution), vous pouvez utiliser les classements SC disponibles dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] pour améliorer la recherche et le tri.    
+Vous pouvez utiliser n'importe quel classement chinois, de préférence la version 100 la plus récente. Tous les classements de niveau \_100 prennent en charge le tri linguistique avec les caractères GB18030. Si les données incluent des caractères supplémentaires (paires de substitution), vous pouvez utiliser les classements SC disponibles dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] pour améliorer la recherche et le tri.    
 
 > [!NOTE]
 > Vérifiez que vos outils clients, comme [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], utilisent la police Dengxian pour afficher correctement les chaînes qui contiennent des caractères encodés en GB18030.
@@ -559,9 +559,9 @@ Vous pouvez utiliser n'importe quel classement chinois, de préférence la versi
     
 Les applications de base de données qui interagissent avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] doivent utiliser des contrôles qui prennent en charge les scripts complexes. Les contrôles Windows Form standard créés dans du code managé peuvent prendre en charge les scripts complexes.    
 
-## <a name="japanese-collations-added-in--sssqlv14_md"></a><a name="Japanese_Collations"></a> Classements japonais ajoutés dans  [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)]
+## <a name="japanese-collations-added-in--sssql17-md"></a><a name="Japanese_Collations"></a> Classements japonais ajoutés dans  [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)]
  
-À compter de [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)], de nouvelles familles de classement du japonais sont prises en charge, avec les permutations de différentes options (\_CS, \_AS, \_KS, \_WS et \_VSS). 
+À compter de [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)], de nouvelles familles de classement du japonais sont prises en charge, avec les permutations de différentes options (\_CS, \_AS, \_KS, \_WS et \_VSS). 
 
 Pour lister ces classements, vous pouvez interroger le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] :      
 
@@ -577,12 +577,12 @@ Ces classements sont pris en charge dans les index, les tables optimisées en m�
 <a name="ctp23"></a>
 
 ## <a name="utf-8-support"></a><a name="utf8"></a> Support UTF-8
-[!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] introduit le complet support du codage de caractères UTF-8 largement utilisé en tant qu’encodage d’importation ou d’exportation et en tant que classement au niveau des base de données et au niveau des colonnes pour les données de chaîne. UTF-8 est autorisé dans les types de données **char** et **varchar**, et il est activé quand vous créez ou modifiez le classement d’un objet en un classement avec un suffixe *UTF8*. La modification de **LATIN1_GENERAL_100_CI_AS_SC** en **LATIN1_GENERAL_100_CI_AS_SC_UTF8** en est un exemple. 
+[!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] introduit le complet support du codage de caractères UTF-8 largement utilisé en tant qu’encodage d’importation ou d’exportation et en tant que classement au niveau des base de données et au niveau des colonnes pour les données de chaîne. UTF-8 est autorisé dans les types de données **char** et **varchar**, et il est activé quand vous créez ou modifiez le classement d’un objet en un classement avec un suffixe *UTF8*. La modification de **LATIN1_GENERAL_100_CI_AS_SC** en **LATIN1_GENERAL_100_CI_AS_SC_UTF8** en est un exemple. 
 
 UTF-8 est disponible uniquement pour les classements Windows qui prennent en charge les caractères supplémentaires, comme introduit dans [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]. Les types de données **nchar** et **nvarchar** autorisent l’encodage UCS-2 ou UTF-16 uniquement et restent inchangés.
 
 ### <a name="storage-differences-between-utf-8-and-utf-16"></a><a name="storage_differences"></a> Différences de stockage entre UTF-8 et UTF-16
-Le Consortium Unicode alloue à chaque caractère un point de code unique, qui est une valeur comprise entre 000000 et 10FFFF. Avec [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], les encodages UTF-8 et UTF-16 sont disponibles pour représenter la plage complète :    
+Le Consortium Unicode alloue à chaque caractère un point de code unique, qui est une valeur comprise entre 000000 et 10FFFF. Avec [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], les encodages UTF-8 et UTF-16 sont disponibles pour représenter la plage complète :    
 -  Avec l’encodage UTF-8, les caractères figurant dans la plage ASCII (de 000000 à 00007F) utilisent 1 octet, les points de code de 000080 à 0007FF nécessitent 2 octets, les points de code de 000800 à 00FFFF nécessitent 3 octets et les points de code de 0010000 à 0010FFFF nécessitent 4 octets. 
 -  Avec l’encodage UTF-16, les points de code de 000000 à 00FFFF nécessitent 2 octets et les points de code de 0010000 à 0010FFFF nécessitent 4 octets. 
 

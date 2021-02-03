@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a04a2aba-d07a-4423-ab8a-0a31658f6317
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: 5b13b4fcc5fd0071a5b008f4fa8186379ffecf41
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 562769cc1f9ce3e895b59811a61026747c0a3724
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92193049"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251092"
 ---
 # <a name="data-tier-applications"></a>Applications de la couche Données
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -50,14 +50,14 @@ ms.locfileid: "92193049"
   
     -   En plus des bases de données SQL 2016, les outils fournis avec SQL Server 2016 peuvent lire des fichiers DACPAC générés par les outils DAC livrés avec SQL Server 2008 R2 ou SQL Server 2012. Cela inclut les bases de données SQL Server 2014, 2012, 2008 R2, 2008 et 2005, mais **pas** SQL Server 2000.  
   
-    -   Les outils DAC de SQL Server 2008 R2 ne peuvent pas lire les fichiers DACPAC générés par les outils de [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] ou  [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+    -   Les outils DAC de SQL Server 2008 R2 ne peuvent pas lire les fichiers DACPAC générés par les outils de [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] ou  [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
   
 -   Un DACPAC est un fichier Windows avec une extension .dacpac. Le fichier prend en charge un format ouvert constitué de plusieurs sections XML représentant des détails de l'origine de DACPAC, des objets de la base de données, ainsi que d'autres caractéristiques. Un utilisateur expérimenté peut décompresser le fichier à l'aide de l'utilitaire DacUnpack.exe fourni avec le produit afin d'examiner chaque section plus en détail.  
   
 -   L'utilisateur doit être membre du rôle **dbmanager** ou disposer d'autorisations **CREATE DATABASE** afin de créer une base de données, ce qui inclut la création d’une base de données en déployant un package DAC. L'utilisateur doit être membre du rôle **dbmanager**, ou bénéficier d'autorisations **DROP DATABASE** pour pouvoir supprimer une base de données.  
   
 ## <a name="dac-tools"></a>Outils DAC  
- Un DACPAC peut être utilisé de façon transparente avec plusieurs outils fournis avec [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Ces outils répondent aux conditions des différents utilisateurs recourant à un DACPAC comme unité d'interopérabilité.  
+ Un DACPAC peut être utilisé de façon transparente avec plusieurs outils fournis avec [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. Ces outils répondent aux conditions des différents utilisateurs recourant à un DACPAC comme unité d'interopérabilité.  
   
 -   Développeurs d’applications :  
   

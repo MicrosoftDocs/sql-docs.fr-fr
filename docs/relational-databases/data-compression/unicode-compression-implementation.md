@@ -15,12 +15,12 @@ ms.assetid: 44e69e60-9b35-43fe-b9c7-8cf34eaea62a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: e0a63694f22f825604e5a3b2d453e58ea73766c4
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: f78e0bbe469861251c95a0d7fc382be4ed333dd0
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97485471"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251106"
 ---
 # <a name="unicode-compression-implementation"></a>Implémentation de la compression Unicode
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "97485471"
 >  La compression Unicode n’est pas prise en charge pour les données **nvarchar(max)** , même si celles-ci sont stockées dans des lignes. Toutefois, ce type de données peut tirer parti de la compression de page.  
   
 ## <a name="upgrading-from-earlier-versions-of-sql-server"></a>Mise à niveau à partir de versions antérieures de SQL Server  
- Quand une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est mise à niveau vers [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], les modifications liées à la compression Unicode ne sont apportées à aucun objet de base de données, compressé ou non compressé. Une fois la base de données mise à niveau, les objets sont affectés comme suit :  
+ Quand une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est mise à niveau vers [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], les modifications liées à la compression Unicode ne sont apportées à aucun objet de base de données, compressé ou non compressé. Une fois la base de données mise à niveau, les objets sont affectés comme suit :  
   
 -   Si l'objet n'est pas compressé, aucune modification n'est apportée et l'objet continue de fonctionner comme précédemment.  
   

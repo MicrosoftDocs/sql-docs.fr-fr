@@ -16,16 +16,16 @@ ms.assetid: 3ca24b23-fdc3-408e-8208-a2ace48fc8e3
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: =azuresqldb-mi-current||>=sql-server-2016
-ms.openlocfilehash: 439e400c4ae4298e7e7c55548ffeb7874917a573
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a8c254caf9d8142b9135d7424dda35095b2ff72a
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463170"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250584"
 ---
 # <a name="synchronize-a-pull-subscription"></a>Synchroniser un abonnement par extraction
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
-  Cette rubrique explique comment synchroniser un abonnement par extraction de données (pull) dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], d' [agents de réplication](../../relational-databases/replication/agents/replication-agents-overview.md)ou d'objets RMO (Replication Management Objects).  
+  Cette rubrique explique comment synchroniser un abonnement par extraction de données (pull) dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], d' [agents de réplication](../../relational-databases/replication/agents/replication-agents-overview.md)ou d'objets RMO (Replication Management Objects).  
   
  **Dans cette rubrique**  
   
