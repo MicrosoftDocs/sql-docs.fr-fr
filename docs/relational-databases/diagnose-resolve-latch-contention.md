@@ -9,12 +9,12 @@ ms.topic: how-to
 author: bluefooted
 ms.author: pamela
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 75f999052eecd750d548cb6d383eafe5375ed130
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: af2caf850d3f7facb61a7484c5af44e4ba785fa3
+ms.sourcegitcommit: 5f9d682924624fe1e1a091995cd3a673605a4e31
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440144"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98860912"
 ---
 # <a name="diagnose-and-resolve-latch-contention-on-sql-server"></a>Diagnostiquer et résoudre la contention de latchs sur SQL Server
 
@@ -58,7 +58,7 @@ Les latchs sont acquis selon un parmi cinq modes différents, qui sont liés au 
 
 * **KP** : Keep Latch (Latch de conservation), garantit que la structure référencée ne peut pas être détruite. Utilisé quand un thread veut examiner une structure de mémoire tampon. Comme le latch KP est compatible avec tous les latchs à l’exception du latch de destruction (DT), le latch KP est considéré comme « léger », ce qui signifie que son utilisation a un impact minimal sur les performances. Comme le latch KP n’est pas compatible avec le latch DT, il va empêcher tout autre thread de détruire la structure référencée. Par exemple, un latch KP va empêcher la structure qu’il référence d’être détruite par le processus d’écriture différée (lazywriter). Pour plus d’informations sur l’utilisation du processus d’écriture différée avec la gestion des pages de mémoire tampon de SQL Server, consultez [Écriture de pages](./writing-pages.md).
 
-* **SH** : Shared Latch (Latch partagé), nécessaire pour lire une structure de page. 
+* **SH** -- Verrou partagé, obligatoire pour lire la structure référencée (par exemple lire une page de données). Plusieurs threads peuvent accéder simultanément à une ressource pour la lecture sous un verrou partagé.
 * **UP** --Update Latch (Latch de mise à jour), est compatible avec SH (Latch partagé) et KP, mais pas avec les autres : il ne permet donc pas à un latch EX d’écrire dans la structure référencée. 
 * **EX** : Exclusive Latch (Latch exclusif), empêche les autres threads d’écrire ou de lire dans la structure référencée. Un exemple d’utilisation serait de modifier le contenu d’une page pour la protection de page endommagée. 
 * **DT** : Destroy Latch (Latch de destruction), doit être acquis avant de détruire le contenu de la structure référencée. Par exemple, un latch DT doit être acquis par le processus d’écriture différée pour libérer une page nettoyée avant de l’ajouter à la liste des mémoires tampons libres disponibles pour être utilisées par d’autres threads.

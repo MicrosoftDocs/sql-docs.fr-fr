@@ -12,12 +12,12 @@ author: Minewiskan
 ms.author: owend
 monikerRange: '>=sql-server-2016'
 manager: erikre
-ms.openlocfilehash: 03041d41745e51d858f56bfcd21407ad58530dd9
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 2f034ac2223b15a3b66883a3ce3dbc434bcf07db
+ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97460692"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98813246"
 ---
 # <a name="upgrade-power-pivot-for-sharepoint"></a>Mettre à niveau Power Pivot pour SharePoint
 
@@ -57,7 +57,7 @@ ms.locfileid: "97460692"
   
 -   Les outils de configuration [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] constituent l’une des fonctionnalités partagées de SQL Server et toutes les fonctionnalités partagées sont mises à niveau en même temps. Si, au cours d’un processus de mise à niveau, vous sélectionnez d’autres fonctionnalités ou instances SQL Server qui nécessitent une mise à niveau de fonctionnalité partagée, l’outil de configuration de [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] est également mis à niveau. Des problèmes peuvent survenir si l’outil de configuration [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] est mis à niveau, alors que votre instance de [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] ne l’est pas. Pour plus d’informations sur les fonctionnalités partagées de SQL Server, consultez [Effectuer une mise à niveau vers SQL Server 2016 à l’aide de l’Assistant Installation &#40;Installation&#41;](../../database-engine/install-windows/upgrade-sql-server-using-the-installation-wizard-setup.md).  
   
--   Le complément [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint (**spPowerPivot.msi**) s’installe côte à côte avec les versions antérieures. Par exemple le complément [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] est installé dans le dossier `c:\Program Files\Microsoft SQL Server\130\Tools\PowerPivotTools`.  
+-   Le complément [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint (**spPowerPivot.msi**) s’installe côte à côte avec les versions antérieures. Par exemple le complément est installé dans le dossier `c:\Program Files\Microsoft SQL Server\nnn\Tools\PowerPivotTools`. Pour plus d’informations sur les fichiers d’installation de SQL Server, consultez [Emplacements des fichiers](../../sql-server/install/file-locations-for-default-and-named-instances-of-sql-server.md#shared-files-for-all-instances-of-).
   
 ##  <a name="prerequisites"></a><a name="bkmk_prereq"></a> Conditions préalables  
  **autorisations**  

@@ -19,12 +19,12 @@ ms.assetid: f86dd29f-52dd-44a9-91ac-1eb305c1ca8d
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 872d40262da465bac6e336472e8beca402482b5f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0cc0d86dbdce6e3618957551a1059c0178a23d61
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97484371"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236300"
 ---
 # <a name="create-indexed-views"></a>Créer des vues indexées
 
@@ -39,8 +39,9 @@ Les étapes suivantes de création d'une vue indexée sont essentielles à la r�
 1. Vérifiez que les options SET sont correctes pour toutes les tables existantes qui seront référencées dans la vue.
 2. Vérifiez que les options SET de la session sont définies correctement avant de créer des tables et la vue.
 3. Vérifiez que la définition de la vue est déterministe.
-4. Créez la vue en utilisant l’option `WITH SCHEMABINDING`.
-5. Créez l'index cluster unique sur la vue.
+4. Vérifiez que la table de base a le même propriétaire que la vue.
+5. Créez la vue en utilisant l’option `WITH SCHEMABINDING`.
+6. Créez l'index cluster unique sur la vue.
 
 > [!IMPORTANT]
 > Lors de l’exécution de DML<sup>1</sup> sur une table référencée par un grand nombre de vues indexées, ou par moins de vues mais très complexes, ces vues indexées référencées doivent également être mises à jour. Par conséquent, les performances des requêtes DML peuvent se dégrader considérablement ou, dans certains cas, un plan de requête ne peut même pas être produit.
@@ -156,7 +157,10 @@ Les index sur les tables et les vues peuvent être désactivés. Lorsqu'un index
 
 #### <a name="permissions"></a><a name="Permissions"></a> Autorisations
 
-Nécessite l’autorisation **CREATE VIEW** dans la base de données et l’autorisation **ALTER** sur le schéma dans lequel la vue est créée.
+Nécessite l’autorisation **CREATE VIEW** dans la base de données et l’autorisation **ALTER** sur le schéma dans lequel la vue est créée. Si la table de base se trouve dans un autre schéma, **REFERENCES** est l’autorisation minimale nécessaire sur la table.
+
+    > [!NOTE]  
+    > For the creation of the index on top of the view, the base table must have the same owner as the view. This is also called ownership-chain. This is usually the case when table and view reside within the same schema, but it is possible that individual objects have different owners. The column **principal_id** in sys.tables contains a value if the owner is different from the schema-owner.
 
 ## <a name="using-transact-sql"></a><a name="TsqlProcedure"></a> Utilisation de Transact-SQL
 

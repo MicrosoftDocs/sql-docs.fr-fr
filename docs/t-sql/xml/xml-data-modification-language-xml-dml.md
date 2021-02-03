@@ -6,7 +6,7 @@ ms.date: 03/16/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 20ce50d2-c07b-4e41-93a7-1380d2cd49cb
 author: MightyPen
 ms.author: genemi
-ms.openlocfilehash: 2aaa0b9a37527c10de34e1f1037fe33a8dab3608
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b9296671957cfb5d8ee0bcd41ae94362a85f42c2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88496312"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181683"
 ---
 # <a name="xml-data-modification-language-xml-dml"></a>Langage de modification de données XML (XML DML)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "88496312"
   
  Notez que certains attributs ne peuvent pas être insérés ou supprimés, et que leur valeur ne peut pas être modifiée. Par exemple :  
   
--   Pour le **xml** typé et non typé, les attributs sont **xmlns**, **xmlns:\*** et **xml:base**.  
+-   Pour le **xml** typé et non typé, les attributs sont **xmlns**, **xmlns:\* *_ et _* xml:base**.  
   
 -   Pour le **xml** typé uniquement, les attributs sont **xsi:nil** et **xsi:type**.  
   

@@ -12,12 +12,12 @@ ms.assetid: c8a21481-0f0e-41e3-a1ad-49a84091b422
 author: markingmyname
 ms.author: maghan
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 3ba8729558f6e3e1736db9c380a268cd606444f1
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: c39e0d3bc84bd469d599ada0ecd5884e37193a08
+ms.sourcegitcommit: 5f9d682924624fe1e1a091995cd3a673605a4e31
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97482353"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98860922"
 ---
 # <a name="temporal-table-considerations-and-limitations"></a>Considérations et limitations liées aux tables temporelles
 
@@ -53,7 +53,7 @@ Prenez les points suivants en compte lorsque vous travaillez avec des tables tem
 - L’utilisation de technologies de réplication est limitée :
 
   - **Always On (Toujours active) :** entièrement prise en charge
-  - **Capture de données modifiées et suivi des modifications :** uniquement prise en charge sur la table actuelle
+  - **Capture des données modifiées et suivi des modifications :** uniquement prise en charge sur la table actuelle
   - **Capture instantanée et réplication transactionnelle** : uniquement prise en charge pour un serveur de publication unique sans activation de Temporal et un abonné avec Temporal activé. Dans ce cas, le serveur de publication est utilisé pour une charge de travail OLTP tandis que l’abonné est utilisé pour le déchargement de rapports (avec l’interrogation « AS OF »). Lorsque l’agent de distribution démarre, il ouvre une transaction qui est maintenue ouverte jusqu’à ce que l’agent de distribution s’arrête. En raison de ce comportement, SysStartTime et SysEndTime sont remplis avec l’heure de début de la première transaction démarrée par l’agent de distribution. Il est peut-être donc préférable d’exécuter l’agent de distribution selon une planification et non en continu comme le veut le comportement par défaut s’il est important pour votre application ou votre organisation que SysStartTime et SysEndTime soient remplis avec une heure proche de l’heure système actuelle. L’utilisation de plusieurs abonnés n’est pas prise en charge, car cela peut entraîner des données temporelles incohérentes en raison de la dépendance sur l’horloge système locale.
   - **Réplication de fusion :** non prise en charge pour les tables temporelles
 

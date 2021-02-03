@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.date: 06/10/2020
 ms.author: datrigan
 author: DavidTrigano
-ms.openlocfilehash: eab3c943f1191c2d52f6d476c1e0a83b74b6f0df
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 57ddcd78bd05cda262c9e4d041562dc5c2dfc4b7
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97638125"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236551"
 ---
 # <a name="sql-data-discovery-and-classification"></a>Découverte et classification des données SQL
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -24,13 +24,13 @@ ms.locfileid: "97638125"
 La fonctionnalité Découverte et classification des données introduit un nouvel outil intégré à [SQL Server Management Studio (SSMS)](../../ssms/download-sql-server-management-studio-ssms.md) pour la **découverte**, la **classification**, l’**étiquetage**  &  la **création de rapport** concernant les données sensibles dans vos bases de données.
 La découverte et la classification de vos données les plus sensibles (professionnelles, financières, médicales, etc.) peuvent jouer un rôle essentiel dans la protection des informations de votre organisation. Elles peuvent servir d’infrastructure pour :
 * Contribuer à répondre aux normes de confidentialité des données.
-* Contrôler l’accès aux bases de données/colonnes contenant des données sensibles et en renforcer la sécurité.
+* Surveillance de l’accès aux bases de données/colonnes contenant des données très sensibles.
 
 > [!NOTE]
 > La fonctionnalité Découverte et classification des données est **prise en charge pour SQL Server 2012 et ultérieur et peut être utilisée avec [SSMS 17.5](../../ssms/download-sql-server-management-studio-ssms.md) ou ultérieur**. Pour Azure SQL Database, consultez [Découverte et classification des données Azure SQL Database](/azure/sql-database/sql-database-data-discovery-and-classification/).
 
 ## <a name="overview"></a><a id="subheading-1"></a>Vue d’ensemble
-La fonctionnalité Découverte et classification des données introduit un ensemble de services avancées, qui forment un nouveau paradigme de protection des informations SQL visant à protéger les données et pas seulement la base de données :
+La fonctionnalité Découverte et classification des données introduit un ensemble de services, qui forment un nouveau paradigme de protection des informations SQL visant à protéger les données et non pas seulement la base de données :
 
 * **Découverte et recommandations** : le moteur de classification analyse votre base de données et identifie les colonnes contenant des données potentiellement sensibles. Il fournit ensuite un moyen simple d’examiner et appliquer les recommandations de classification appropriée, ainsi que de classifier manuellement des colonnes.
 * **Étiquetage** : des étiquettes de classification de sensibilité peuvent être marquées de manière permanente sur les colonnes.

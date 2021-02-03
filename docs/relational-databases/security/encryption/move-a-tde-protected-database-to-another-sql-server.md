@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: fb420903-df54-4016-bab6-49e6dfbdedc7
 author: jaszymas
 ms.author: jaszymas
-ms.openlocfilehash: e15751fb064d2843770d72f26db94b29de28f199
-ms.sourcegitcommit: 4d370399f6f142e25075b3714e5c2ce056b1bfd0
+ms.openlocfilehash: 1f9b85e3d2f14eb534956c218d38f98b634dc89c
+ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91867591"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98813283"
 ---
 # <a name="move-a-tde-protected-database-to-another-sql-server"></a>Déplacer une base de données protégée par le chiffrement transparent des données vers un autre serveur SQL Server
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "91867591"
   
 ##  <a name="to-create-a-database-protected-by-transparent-data-encryption"></a><a name="SSMSProcedure"></a> Pour créer une base de données protégée par le chiffrement transparent des données  
 
-Les procédures suivantes vous montrent comment créer une base de données protégée par TDE à l’aide de SQL Server Management Studio et de Transact-SQL.
+Les procédures suivantes vous montrent comment créer une base de données protégée par TDE avec SQL Server Management Studio et Transact-SQL.
   
 ###  <a name="using-sql-server-management-studio"></a><a name="SSMSCreate"></a> Utilisation de SQL Server Management Studio  
   
@@ -138,7 +138,7 @@ Les procédures suivantes vous montrent comment créer une base de données prot
   
 ##  <a name="to-move-a-database-protected-by-transparent-data-encryption"></a><a name="TsqlProcedure"></a> Pour déplacer une base de données protégée par le chiffrement transparent des données 
 
-Les procédures suivantes vous montrent comment déplacer une base de données protégée par TDE à l’aide de SQL Server Management Studio et de Transact-SQL.
+Les procédures suivantes vous montrent comment déplacer une base de données protégée par TDE avec SQL Server Management Studio et Transact-SQL.
   
 ###  <a name="using-sql-server-management-studio"></a><a name="SSMSMove"></a> Utilisation de SQL Server Management Studio  
   

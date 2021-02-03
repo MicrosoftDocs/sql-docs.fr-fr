@@ -9,12 +9,12 @@ ms.technology: ''
 ms.topic: reference
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: ad867768d72d9e03b7d76761bd371dd369c7161b
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: e89a3638dc304bdda8bc11c55897975fb006e3ca
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "94384727"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076837"
 ---
 # <a name="known-errors-and-resolutions-with-change-data-capture-for-oracle-by-attunity"></a>Erreurs connues et résolutions avec Change Data Capture pour Oracle d’Attunity
 [!INCLUDE[tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-asdbmi-xxxx-xxx-md.md)]
@@ -64,7 +64,7 @@ La **version 2.0.0.92** contient les correctifs suivants :
 - Certaines modifications sont ignorées et ne sont pas répliquées dans la base de données SQL Server. Ce problème se produit quand une table contient plusieurs objets CLOB et que l’un de ces objets a une valeur élevée. 
     - Correction dans _Mise à jour cumulative 1 pour SQL Server 2014 SP1_ et _Mise à jour cumulative 8 pour SQL Server 2014 RTM_ comme décrit dans KB [3029096](https://support.microsoft.com/kb/3029096). 
 - CDC pour Oracle d’Attunity cesse de fonctionner quand des tables Oracle ont une colonne avec un type de données Long.
-    - Correction dans _Mise à jour cumulative 5 pour SQL Server 2014 SP1_ et _Mise à jour cumulative 12 pour SQL 2014 RTM_ comme décrit dans KB [3145983](https://support.microsoft.com/kb/3145983).
+    - Correction dans _Mise à jour cumulative 5 pour SQL Server 2014 SP1_ et _Mise à jour cumulative 12 pour SQL 2014 RTM_ comme décrit dans [KB4017793](https://support.microsoft.com/topic/kb4017793-cumulative-update-12-for-sql-server-2014-sp1-bc24907b-afe2-6703-ccd9-99d6cb76a74d).
 
 ### <a name="sql-server-2012"></a>SQL Server 2012
 
@@ -89,7 +89,7 @@ La **version 1.1.0.102** contient les correctifs suivants :
 - Échec de la validation des métadonnées pour la table Oracle CDC.nom_table. L’index de la colonne nom_colonne est hors limites. Correction dans _Mise à jour cumulative 7 pour SQL Server 2012 SP1_, comme décrit dans KB [2883524](https://support.microsoft.com/kb/2883524).
 - Le service Oracle CDC montre un état Abandonné quand vous utilisez CDC pour Oracle d’Attunity dans SQL Server 2012. Correction dans _Mise à jour cumulative 8 pour SQL Server 2012 SP1_, comme décrit dans KB [2923839](https://support.microsoft.com/kb/2923839).  
 - Certaines modifications sont ignorées et ne sont pas répliquées dans les bases de données SQL Server. Ce problème se produit quand une table contient plusieurs objets CLOB et que l’un de ces objets a une valeur élevée. Correction dans _Mise à jour cumulative 8 pour SQL Server 2012 SP1_, comme décrit dans KB [2923839](https://support.microsoft.com/kb/2923839).   
-- CDC pour Oracle d’Attunity cesse de fonctionner quand des tables Oracle ont une colonne avec un type de données Long. Correction dans _Mise à jour cumulative 2 pour SQL Server 2012 SP3_ et _Mise à jour cumulative 11 pour SQL 2012 SP2_ comme décrit dans KB [3145983](https://support.microsoft.com/kb/3145983). 
+- CDC pour Oracle d’Attunity cesse de fonctionner quand des tables Oracle ont une colonne avec un type de données Long. Correction dans _Mise à jour cumulative 2 pour SQL Server 2012 SP3_ et _Mise à jour cumulative 11 pour SQL 2012 SP2_ comme décrit dans [KB4017793](https://support.microsoft.com/topic/kb4017793-cumulative-update-12-for-sql-server-2014-sp1-bc24907b-afe2-6703-ccd9-99d6cb76a74d). 
 
 ## <a name="collect-detailed-logs"></a>Collecter des journaux détaillés 
 

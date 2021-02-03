@@ -9,12 +9,12 @@ ms.date: 06/30/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: b929bd76f77f021fbc1821811beb7e86be8edd2e
-ms.sourcegitcommit: 442fbe1655d629ecef273b02fae1beb2455a762e
+ms.openlocfilehash: 20953eb151912f6eddf1e3ea0e13d34f3835e7d6
+ms.sourcegitcommit: 3e2421ae45a8e9fa57fb590a5d1a5566721ea74a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93235669"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98921407"
 ---
 # <a name="configure-failover-cluster-instance---iscsi---sql-server-on-linux"></a>Configurer l’instance de cluster de basculement - iSCSI - SQL Server sur Linux
 
@@ -58,7 +58,7 @@ Pour plus d’informations sur l’initiateur iSCSI pour les distributions prise
 
     Voir l’exemple suivant :
 
-    ![Capture d’écran du fichier, complètement rempli.][2]
+    ![Capture d’écran du fichier avec les valeurs complètement renseignées.][2]
 
 3.  Recherchez la cible iSCSI.
 
