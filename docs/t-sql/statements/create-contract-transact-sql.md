@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CONTRACT_TSQL
 - CREATE_CONTRACT_TSQL
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 494cbfa6-8e93-4161-a64d-90d681915211
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 3541197e5c74ebf5c5bc2ad38c43770028fbd43b
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 7cf2fa8811bad953b14810e3119a4841c9ec8f1f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099527"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192762"
 ---
 # <a name="create-contract-transact-sql"></a>CREATE CONTRACT (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

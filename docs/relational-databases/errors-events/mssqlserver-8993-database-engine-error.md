@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 8993 (Database Engine error)
 ms.assetid: 06aac110-a41c-4853-bc8e-a83e8535b8be
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: a32bd630e6f1847fad4cf28efe046af552ad2aae
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 155839147914ab971f4482d5885a59fb297d8fbe
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88470758"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194019"
 ---
 # <a name="mssqlserver_8993"></a>MSSQLSERVER_8993
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

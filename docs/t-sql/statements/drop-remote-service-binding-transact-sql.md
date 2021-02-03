@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP REMOTE SERVICE BINDING
 - DROP_REMOTE_SERVICE_BINDING_TSQL
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 377789b4-bf94-488f-8c20-687d0bae447a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 407a87486d185c93f9abfd5c5d4a6be2b5c3a436
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 8b5ae61854d97935e7423a5c37ccf9387d2fd264
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096913"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189801"
 ---
 # <a name="drop-remote-service-binding-transact-sql"></a>DROP REMOTE SERVICE BINDING (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

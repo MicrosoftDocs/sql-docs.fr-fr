@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 926 (Database Engine error)
 ms.assetid: 57e01668-883b-4be4-84a8-a111caaf0486
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 854648c2971c1cc7f49f52c0a45b761367c64f25
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5df8bbda604e3cfc9b55406d2f18732205054ad1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88330935"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190659"
 ---
 # <a name="mssqlserver_926"></a>MSSQLSERVER_926
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

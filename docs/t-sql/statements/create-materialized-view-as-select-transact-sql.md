@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-data-warehouse
 ms.reviewer: jrasnick
 ms.technology: data-warehouse
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CREATE VIEW
 - VIEW_TSQL
@@ -38,12 +38,12 @@ ms.assetid: aecc2f73-2ab5-4db9-b1e6-2f9e3c601fb9
 author: XiaoyuMSFT
 ms.author: xiaoyul
 monikerRange: =azure-sqldw-latest
-ms.openlocfilehash: dc48dc319a628b389479eacb0c68b702f796a836
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 5bacd22f46d494606cc1ddedae98b6313f58caf5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644395"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188544"
 ---
 # <a name="create-materialized-view-as-select-transact-sql"></a>CREATE MATERIALIZED VIEW AS SELECT (Transact-SQL)  
 

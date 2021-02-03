@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 33129 (Database Engine error)
 ms.assetid: 83b5f368-f1a1-4a40-9bb6-c77e2dec690f
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 16340b6800ded7be2642f70496a09a16eb360274
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: dd8ba9d3bce316b77db7fa6ae3ec01190607b858
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456217"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190909"
 ---
 # <a name="mssqlserver_33129"></a>MSSQLSERVER_33129
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

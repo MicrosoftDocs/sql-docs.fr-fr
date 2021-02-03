@@ -8,7 +8,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - wildcard
 - '[^]_TSQL'
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: b970038f-f4e7-4a5d-96f6-51e3248c6aef
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: dfaeb1d003fa5876cf924349fc8f701967d631db
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 7965a8b044f77e2e81583430833e77e234508c31
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092085"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193668"
 ---
 # <a name="-wildcard---characters-not-to-match-transact-sql"></a>\[^\] (Caractère générique - Caractères à exclure) (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx_md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

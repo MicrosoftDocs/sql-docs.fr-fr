@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 2527 (Database Engine error)
 ms.assetid: 1cef90ef-9c39-44e6-bc7f-316c8f53c10c
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 2687cc34a789723aeb9c098d622fbcd648ad0622
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1727d825bd3dac9df07824e5e26f58d6cc4ec625
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88428751"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188941"
 ---
 # <a name="mssqlserver_2527"></a>MSSQLSERVER_2527
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

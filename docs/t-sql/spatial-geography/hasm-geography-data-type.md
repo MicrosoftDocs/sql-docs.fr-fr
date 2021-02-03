@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - HasM_TSQL
 - HasM
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: e752e97f-1619-437d-b962-48c188b4e94c
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 33c1bdd90dae6fc6d7f40872355056b539d8016b
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 1a1f9431a0191a1c1ee4115c0c3a8d07801af7f7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88445255"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189825"
 ---
 # <a name="hasm-geography-data-type"></a>HasM (type de données geography)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 7912 (Database Engine error)
 ms.assetid: 8e6157c2-7e84-49f2-965a-c7426c2b23fa
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 7fa2ca009c567fd0d90fb7eade80d289eec18d13
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 113db245ca993d598e26b388cb2fa59bb6f9b718
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88448835"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190639"
 ---
 # <a name="mssqlserver_7912"></a>MSSQLSERVER_7912
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

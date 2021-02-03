@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CREATE PARTITION FUNCTION
 - PARTITION
@@ -28,17 +28,17 @@ helpviewer_keywords:
 ms.assetid: 9dfe8b76-721e-42fd-81ae-14e22258c4f2
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: d1bb72ca6736a49874050043b84a961928aed370
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 7e1c2b7c6c3b6e12ae3865a5c35ad8f9904cba4f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093483"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188569"
 ---
 # <a name="create-partition-function-transact-sql"></a>CREATE PARTITION FUNCTION (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
-  Crée une fonction, dans la base de données active, qui mappe les lignes d'une table ou d'un index avec des partitions à partir des valeurs d'une colonne spécifiée. L'utilisation de CREATE PARTITION FUNCTION est la première étape de la création d'une table ou d'un index partitionné. Dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], une table ou un index peut comprendre au maximum 15 000 partitions.  
+  Crée une fonction, dans la base de données active, qui mappe les lignes d'une table ou d'un index avec des partitions à partir des valeurs d'une colonne spécifiée. L'utilisation de CREATE PARTITION FUNCTION est la première étape de la création d'une table ou d'un index partitionné. Dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], une table ou un index peut comprendre au maximum 15 000 partitions.  
   
  ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   

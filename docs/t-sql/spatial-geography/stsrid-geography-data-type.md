@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STSrid (geography Data Type)
 - STSrid_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 6b04f5a7-2e69-4d34-901e-b61ba6ca9c14
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: bc6f88b25a67e3d8904ea7823324111e60576ab7
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 90a03f6d0ccefd7f7989818447e3865f621d4fd0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88305930"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189217"
 ---
 # <a name="stsrid-geography-data-type"></a>STSrid (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -6,18 +6,18 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Audit Backup/Restore event class
 ms.assetid: 08b0b5fe-298a-483f-b50a-73919a2513ce
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: cd3b8ca71c9a251343d001ca269e730acf71a217
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: f08c76be8ed7412386a5baa668f14184b67628a6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96126872"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190229"
 ---
 # <a name="audit-backup-and-restore-event-class"></a>Classe d’événements Audit Backup/Restore
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

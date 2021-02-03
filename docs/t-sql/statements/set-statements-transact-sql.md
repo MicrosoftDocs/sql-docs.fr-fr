@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SET
 - SET_TSQL
@@ -26,12 +26,12 @@ ms.assetid: f7e107f8-0fcf-408b-b30f-da2323eeb714
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: = azure-sqldw-latest ||= azuresqldb-current || >= sql-server-2016 || >= sql-server-linux-2017
-ms.openlocfilehash: e5c2bf8f1bfe5815a8eb696b5b837d70fbb9b21b
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: b00353ebc513ecdab6b0be57a64c05f84e1ae461
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98079259"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189408"
 ---
 # <a name="set-statements-transact-sql"></a>Instructions SET (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-asdw-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-asdw-xxx-md.md)]

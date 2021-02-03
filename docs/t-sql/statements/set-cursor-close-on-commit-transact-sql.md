@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CURSOR_CLOSE_ON_COMMIT
 - SET CURSOR_CLOSE_ON_COMMIT
@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: 7b976154-98ce-4a06-bbae-7e59c34211f7
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: f0a98ee853689cd05848526fbec4b685ca88b00e
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 79898f0fca4780c63782f17608f45067002d088f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091850"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190379"
 ---
 # <a name="set-cursor_close_on_commit-transact-sql"></a>SET CURSOR_CLOSE_ON_COMMIT (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

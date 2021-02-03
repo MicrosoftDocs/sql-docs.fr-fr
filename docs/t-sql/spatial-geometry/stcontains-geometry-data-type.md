@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STContains (geometry Data Type)
 - STContains_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 865ceca1-9200-45ed-a7d8-e286e2679fdc
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 69290b85b4788f0e35c4fb48cc05222211cd0413
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: a7ff3e834c2c64703720d567702da78a90f4887f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88305678"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187723"
 ---
 # <a name="stcontains-geometry-data-type"></a>STContains (type de données geometry)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 2533 (Database Engine error)
 ms.assetid: 0418352c-0ab2-4dc7-b8b9-5c3bad94560c
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 433983e1e126721b5372309e00a76a3e13f76811
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9001611265f16f0afac6de6f42e18cfb7f964357
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88424471"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188946"
 ---
 # <a name="mssqlserver_2533"></a>MSSQLSERVER_2533
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1fc2de8b-e7e0-4c61-9a02-4776a7d93ab7
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: db52698b5a75455f047c65e8f980d3dbb7da15b4
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 99a2e7238cf63eb6427c74922b1a3f75a3092e1f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092159"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191889"
 ---
 # <a name="operators-transact-sql"></a>Opérateurs (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

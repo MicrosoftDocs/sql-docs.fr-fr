@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - QUEUE_TSQL
 - CREATE QUEUE
@@ -26,12 +26,12 @@ helpviewer_keywords:
 ms.assetid: fce80faf-2bdc-475d-8ca1-31438ed41fb0
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: ce0306d204d4ce29a76e2041bebe67971e24c3a7
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 42b5b42ee88c6d562f1ebf8c03f92a1bd4be54f4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98092016"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188533"
 ---
 # <a name="create-queue-transact-sql"></a>CREATE QUEUE (Transact-SQL)
 

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 2522 (Database Engine error)
 ms.assetid: 19b9b00c-330f-4dd3-9052-9d88bce83849
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: d3529e9868c892077b8c18ff2e2c52c32f734243
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 38f518d6925e16ab9a4719cd577d97003c04e950
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88428741"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188981"
 ---
 # <a name="mssqlserver_2522"></a>MSSQLSERVER_2522
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

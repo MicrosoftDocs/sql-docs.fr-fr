@@ -7,18 +7,18 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 ms.assetid: 1d769f62-f646-4057-b93a-bf5f90e935ed
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 6431c70d94e106a30afeee2ee36b396c53a8c55f
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: d5b2226422e413b2437ab7fc4643740a92378b51
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98093454"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192681"
 ---
 # <a name="create-selective-xml-index-transact-sql"></a>CREATE SELECTIVE XML INDEX (Transact-SQL)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

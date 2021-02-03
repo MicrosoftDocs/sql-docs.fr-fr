@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ToString (geography Data Type)
 dev_langs:
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 045c12fa-8fc6-441a-9500-7021cb4ff13e
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 491c548960fde425b8f2c021d69dce94b95a7b21
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: d7d2d4b6d4f786c7962155e11b7fe89bbb491a7d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88472578"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187746"
 ---
 # <a name="tostring-geography-data-type"></a>ToString (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

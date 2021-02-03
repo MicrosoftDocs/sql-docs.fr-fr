@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - GeomFromGML_TSQL
 - GeomFromGML
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: a3f2c84b-a49f-4ce3-ba25-b903fb0c99b4
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 5526d9e8fb788e06b1ed61b3e20236963319b844
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 5bae1bb2757c590a3c22276f7fff506d7bbbb6a2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88458956"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193658"
 ---
 # <a name="geomfromgml-geometry-data-type"></a>GeomFromGml (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

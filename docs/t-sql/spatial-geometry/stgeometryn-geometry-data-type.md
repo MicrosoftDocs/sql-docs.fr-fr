@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STGeometryN_TSQL
 - STGeometryN (geometry Data Type)
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 348c7047-3442-4590-8879-fe841e79058c
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: ad02bc424fe6e6ba0196e56faf060998f841b0b0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9d74046c6465f09324c8b8b6e154dfbd3a823b95
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88488090"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190759"
 ---
 # <a name="stgeometryn-geometry-data-type"></a>STGeometryN (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -48,7 +48,7 @@ Retourne une géométrie spécifique dans une **collection geometry**.
   
  Type de retour CLR : **SqlGeometry**  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Cette méthode retourne **null** si le paramètre est supérieur au résultat de `STNumGeometries()`, et lève **ArgumentOutOfRangeException** si le paramètre *expression* est inférieur à 1.  
   
 ## <a name="examples"></a>Exemples  

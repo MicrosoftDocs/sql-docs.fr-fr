@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP_AVAILABILITY_GROUP_TSQL
 - DROP AVAILABILITY GROUP
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: c1600289-c990-454a-b279-dba0ebd5d63e
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: d2335b8015f0eb88821e94231ac8cf48d9bc0471
-ms.sourcegitcommit: bd3a135f061e4a49183bbebc7add41ab11872bae
+ms.openlocfilehash: d50eae15352e3de39b17c9ea57b5422bf41b5438
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92300389"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191007"
 ---
 # <a name="drop-availability-group-transact-sql"></a>DROP AVAILABILITY GROUP (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -64,12 +64,12 @@ DROP AVAILABILITY GROUP group_name
     > [!IMPORTANT]  
     >  Évitez de supprimer un groupe de disponibilité lorsque le cluster de clustering de basculement Windows Server (WSFC) n'a aucun quorum. Si vous devez supprimer un groupe de disponibilité lorsque le cluster ne dispose pas de quorum, les métadonnées du groupe de disponibilité stockées dans le cluster nesont pas supprimées. Après que le cluster a regagné le quorum, vous devez supprimer à nouveau le groupe de disponibilité pour le supprimer du cluster WSFC.  
   
--   Sur un réplica secondaire, **DROP AVAILABILITY GROUP** ne doit être utilisé qu’en cas d’urgence. Cela est dû au fait que la suppression d'un groupe de disponibilité met le groupe de disponibilité hors connexion. Si vous supprimez le groupe de disponibilité d’un réplica secondaire, le réplica principal ne peut pas déterminer si l’état **OFFLINE** était la conséquence d’une perte de quorum, d’un basculement forcé ou d’une commande **DROP AVAILABILITY GROUP** . Le réplica principal passe à l’état **RESTORING** pour éviter un fractionnement possible des partitions. Pour plus d’informations, consultez [Fonctionnement : comportements de DROP AVAILABILITY GROUP](/archive/blogs/psssql/how-it-works-drop-availability-group-behaviors) (blog des ingénieurs du Service clientèle et du Support technique de SQL Server).  
+-   Sur un réplica secondaire, **DROP AVAILABILITY GROUP** ne doit être utilisé qu’en cas d’urgence. Cela est dû au fait que la suppression d'un groupe de disponibilité met le groupe de disponibilité hors connexion. Si vous supprimez le groupe de disponibilité d’un réplica secondaire, le réplica principal ne peut pas déterminer si l’état **OFFLINE** était la conséquence d’une perte de quorum, d’un basculement forcé ou d’une commande **DROP AVAILABILITY GROUP**. Le réplica principal passe à l’état **RESTORING** pour éviter un fractionnement possible des partitions. Pour plus d’informations, consultez [Fonctionnement : comportements de DROP AVAILABILITY GROUP](/archive/blogs/psssql/how-it-works-drop-availability-group-behaviors) (blog des ingénieurs du Service clientèle et du Support technique de SQL Server).  
   
 ## <a name="security"></a>Sécurité  
   
 ### <a name="permissions"></a>Autorisations  
- Nécessite une autorisation **ALTER AVAILABILITY GROUP** sur le groupe de disponibilité, une autorisation **CONTROL AVAILABILITY GROUP** , une autorisation **ALTER ANY AVAILABILITY GROUP** ou une autorisation **CONTROL SERVER** . Pour supprimer un groupe de disponibilité qui n’est pas hébergé par l’instance de serveur local, vous avez besoin d’une autorisation **CONTROL SERVER** ou **CONTROL** sur ce groupe de disponibilité.  
+ Nécessite une autorisation **ALTER AVAILABILITY GROUP** sur le groupe de disponibilité, une autorisation **CONTROL AVAILABILITY GROUP**, une autorisation **ALTER ANY AVAILABILITY GROUP** ou une autorisation **CONTROL SERVER**. Pour supprimer un groupe de disponibilité qui n’est pas hébergé par l’instance de serveur local, vous avez besoin d’une autorisation **CONTROL SERVER** ou **CONTROL** sur ce groupe de disponibilité.  
   
 ## <a name="examples"></a>Exemples  
  L’exemple suivant supprime le groupe de disponibilité `AccountsAG`.  

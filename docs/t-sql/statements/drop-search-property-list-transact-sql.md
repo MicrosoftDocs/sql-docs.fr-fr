@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP_SEARCH_PROPERTY_LIST_TSQL
 - DROP SEARCH PROPERTY LIST
@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 7c7ce52a-6b77-4a1c-9abf-d5feb664bea8
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 8f9c4b81e73e4b1a96691c7ddbaa5b4ea436c45e
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 48a62e9aa8137d38e47b38d0228ec617c563f572
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100767"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191826"
 ---
 # <a name="drop-search-property-list-transact-sql"></a>DROP SEARCH PROPERTY LIST (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

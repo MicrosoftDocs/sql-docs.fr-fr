@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 5233 (Database Engine error)
 ms.assetid: 7a855afa-2d3b-49b7-adef-197b99fc98b1
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 6359ac7fafcbe22ee51bf8e1c39916198e95d3ec
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0f58483214c9b4088ad6ee6f3fe4ac8d375e0580
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88471043"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191689"
 ---
 # <a name="mssqlserver_5233"></a>MSSQLSERVER_5233
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP_EVENT_SESSION_TSQL
 - DROP EVENT SESSION
@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 92eabe4b-24e2-43b1-978c-31a199964b90
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 4fcfc24b3eadeff79e04a40dfa17b5a7b0239431
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 53a1c1e98bc8916eb23bb3fe0c74daa7196af8a3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98095697"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190454"
 ---
 # <a name="drop-event-session-transact-sql"></a>DROP EVENT SESSION (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

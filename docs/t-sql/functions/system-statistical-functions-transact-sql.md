@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 45828c67-1b9a-4653-bb24-86246084d8ba
 author: julieMSFT
 ms.author: jrasnick
-ms.openlocfilehash: 7368e6bdb14dfdabfe44b79ef68d764dceb40149
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2953922d7d04e6ededf3ec35133545f4697ff933
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88459561"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188721"
 ---
 # <a name="system-statistical-functions-transact-sql"></a>Fonctions statistiques système (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

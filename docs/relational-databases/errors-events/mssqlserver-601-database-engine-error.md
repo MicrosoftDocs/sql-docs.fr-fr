@@ -6,7 +6,7 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - "601"
 helpviewer_keywords:
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 2039cc0a-9a43-4369-a04a-935e384388b6
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 88d2d7ab52555abcb850689accd30c7fd96b3d07
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 91fc178421dffd9e221221d8df76a32c9a7a8942
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88470884"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190703"
 ---
 # <a name="mssqlserver_601"></a>MSSQLSERVER_601
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 2574 (Database Engine error)
 ms.assetid: efba507a-b5ad-4f1d-b0c8-f73b663a0562
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 62f09d7a7503942c41ae466d3c401b20afa68d01
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e7b6cebce9675fc363b210d2843b5b62fd44ee80
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88482772"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188846"
 ---
 # <a name="mssqlserver_2574"></a>MSSQLSERVER_2574
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP XML INDEX statement
 dev_langs:
@@ -15,12 +15,12 @@ dev_langs:
 ms.assetid: 4779ae84-e5f4-4d04-8fc1-e24a6631b428
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 10a8dce89cff5a8201c583b9479a774d44a72ade
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 988bd46d3e25b862bfcbc479896cc8cc0151b956
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096956"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193151"
 ---
 # <a name="drop-index-selective-xml-indexes"></a>DROP INDEX (Selective XML Indexes)
 [!INCLUDE [SQL Server Azure SQL Database ](../../includes/applies-to-version/sql-asdb.md)]

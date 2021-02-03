@@ -6,7 +6,7 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - "948"
 helpviewer_keywords:
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 95c4ad45-a518-4165-a5c4-6e6b932b0570
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 76aaccfb8651792af76ff674c352f9fd9b8c6c28
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ca8e3c0b4053378d4ec442e993b3626b271a0bfb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88460892"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187655"
 ---
 # <a name="mssqlserver_948"></a>MSSQLSERVER_948
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

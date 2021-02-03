@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 9524 (Database Engine error)
 ms.assetid: 12da7931-e124-4466-889c-046f1b7b7bfd
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 25b2fbd1f169b32a7bbe65fe3225341e4a1c24fb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 804bd2bda3c79af9d81954b05fae79059a190cda
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88460868"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187637"
 ---
 # <a name="mssqlserver_9524"></a>MSSQLSERVER_9524
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

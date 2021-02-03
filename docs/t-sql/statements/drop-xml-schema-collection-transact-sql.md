@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DROP XML SCHEMA COLLECTION
 - DROP_XML_SCHEMA_COLLECTION_TSQL
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: d686f2f5-e03a-4ffe-a566-6036628f46f1
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 87ce71446016c59ee888648a6557b4cbc0575519
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 158821f7c317e606ccf2643a3db82aac99b9ec78
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102285"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188707"
 ---
 # <a name="drop-xml-schema-collection-transact-sql"></a>DROP XML SCHEMA COLLECTION (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -52,7 +52,7 @@ Identifie le nom du schéma relationnel. Si cet argument n'est pas spécifié, l
 *sql_identifier*  
 Nom de la collection de schémas XML à supprimer.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
 La suppression d'une collection de schémas XML est une opération transactionnelle. Lorsque vous supprimez une collection de schémas XML dans une transaction et que vous annulez cette transaction par la suite, la collection n'est pas supprimée.  
   
 Vous ne pouvez pas supprimer une collection de schémas XML en cours d'utilisation. Donc, la collection à supprimer ne peut pas être :  

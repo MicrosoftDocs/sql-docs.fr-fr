@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 3260 (Database Engine error)
 ms.assetid: ed62f86d-90cb-4b04-8bc5-43e0b9ba6141
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 1d8c8a51a725148f0ecd4dbd1dab718389ff9e54
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cc5507914c4039d5bbf0d2ad3230d32c8786e52a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88476042"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190990"
 ---
 # <a name="mssqlserver_3260"></a>MSSQLSERVER_3260
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

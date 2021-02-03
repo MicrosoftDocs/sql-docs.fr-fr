@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SEND_ON_CONVERSATION_TSQL
 - ON_CONVERSATION_TSQL
@@ -25,12 +25,12 @@ helpviewer_keywords:
 ms.assetid: b6e66aeb-1714-4c2b-b7c2-d386d77b0d46
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 25ef934ae04ca8ba9cc9c4dee9f488341a1eb352
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: a0b0f6728157d4059ba11165e9a4fcc9c9490298
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091829"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190464"
 ---
 # <a name="send-transact-sql"></a>SEND (Transact-SQL)
 [!INCLUDE [SQL Server - ASDBMI](../../includes/applies-to-version/sql-asdbmi.md)]

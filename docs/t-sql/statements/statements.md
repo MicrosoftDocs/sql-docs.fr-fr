@@ -5,7 +5,7 @@ ms.prod: sql
 ms.prod_service: sql-data-warehouse, database-engine, pdw, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - Alter_TSQL
 dev_langs:
@@ -15,12 +15,12 @@ ms.author: wiassaf
 ms.custom: ''
 ms.date: 04/17/2020
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 65f48884fff2fc5ce9fc018f8d79b3c2da5a4770
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 85f4838575e340a5b40dddc109802ed99afedd7c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98079558"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189424"
 ---
 # <a name="transact-sql-statements"></a>instructions Transact-SQL
 

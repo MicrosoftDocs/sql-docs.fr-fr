@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 33027 (Database Engine error)
 ms.assetid: bfdc626e-7958-4511-987d-3b687824e8af
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: ce43e69dd5b90b72c84d49c41387896c4b664a60
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a577e04c9a4959fa95421a48877adf2834fe1d33
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88476035"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190964"
 ---
 # <a name="mssqlserver_33027"></a>MSSQLSERVER_33027
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

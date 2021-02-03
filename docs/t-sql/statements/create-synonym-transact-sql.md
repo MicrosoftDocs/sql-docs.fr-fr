@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CREATE_SYNONYM_TSQL
 - SYNONYM_TSQL
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 41313809-e970-449c-bc35-85da2ef96e48
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: ec09397653e497ff06283aed467fcfd18c6267fd
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 181476c45c78374d359e833bea1a0da7aa924a4e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102337"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192657"
 ---
 # <a name="create-synonym-transact-sql"></a>CREATE SYNONYM (Transact-SQL)
 

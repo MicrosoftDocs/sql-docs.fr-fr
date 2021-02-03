@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 2536 (Database Engine error)
 ms.assetid: 6307cce7-e5a4-4f7f-a105-977eefd7a1b6
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 249ff2389e18371a2d2f0928c555258583c72c3d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8bd326745fb3915c8c068c421dd39144916ae54d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456304"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188899"
 ---
 # <a name="mssqlserver_2536"></a>MSSQLSERVER_2536
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

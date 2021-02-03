@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - SEQUENCE
 - CREATE SEQUENCE
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 419f907b-8a72-4d6c-80cb-301df44c24c1
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 57dc922f5be1aac4a3a2fce713894353728a0e1c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0fb687f42e65bb1f1ec74046927282dc90563ccd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98096996"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188498"
 ---
 # <a name="create-sequence-transact-sql"></a>CREATE SEQUENCE (Transact-SQL)
 

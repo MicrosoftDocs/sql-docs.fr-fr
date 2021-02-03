@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - '!<'
 - Not Less
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: ecbb598e-58a2-4b6c-90b4-3ad5bdfcae39
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 117ead88282d37a655eb51bfb696c3e41770a350
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 9900f945c14dad293770dbb4cd03cefd17a0f303
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98097085"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187751"
 ---
 # <a name="lt-not-less-than-transact-sql"></a>!&lt; (Non inférieur à) (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

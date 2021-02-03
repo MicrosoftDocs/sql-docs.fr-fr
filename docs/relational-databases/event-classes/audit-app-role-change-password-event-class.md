@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Audit App Role Change Password event class
 ms.assetid: 28a76c12-e997-48bb-bb0e-9624237a188e
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 06662ea1228b09555524d30a6b5f0cf49a23ba34
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: aa8d7655bd168a0cafaa247e9a2e85b5f0fc4a15
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97440120"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190234"
 ---
 # <a name="audit-app-role-change-password-event-class"></a>Audit App Role Change Password (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

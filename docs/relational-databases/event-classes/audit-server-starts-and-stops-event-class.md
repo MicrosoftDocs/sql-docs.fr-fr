@@ -6,19 +6,19 @@ ms.date: 03/14/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Audit Server Starts and Stops event class
 ms.assetid: 8ddb55af-c77b-4d07-b803-a97320c0804e
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: cf0fbf98e413e7eb0f935acb3b62405ad720208b
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 53b82df0be49fd70688be3f9bf0630a676ee6098
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97485451"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187534"
 ---
 # <a name="audit-server-starts-and-stops-event-class"></a>Audit Server Starts and Stops (classe d'événements)
 [!INCLUDE [SQL Server - ASDB](../../includes/applies-to-version/sql-asdb.md)]

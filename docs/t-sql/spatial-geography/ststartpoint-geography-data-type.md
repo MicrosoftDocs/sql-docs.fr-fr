@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - STStartPoint_TSQL
 - STStartPoint (geography Data Type)
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 7df18a5f-b9ee-4e36-b765-a0790c1dee3d
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 015a1906ad2be09ffd2ea4fec85277255641a36a
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 96bc915dc2cae463d2244c3a2794daec0044e805
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88479325"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189204"
 ---
 # <a name="ststartpoint-geography-data-type"></a>STStartPoint (type de données geography)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

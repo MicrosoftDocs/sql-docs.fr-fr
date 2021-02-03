@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 9955 (Database Engine error)
 ms.assetid: 77f30570-7790-4747-b372-eac71c036e19
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 6d58bb993cf9f4d6cac724d105bde28f9c05c77e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cad93e9358d7bbe315dd83b52229b9b5a6d92c6a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88448701"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187539"
 ---
 # <a name="mssqlserver_9955"></a>MSSQLSERVER_9955
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
