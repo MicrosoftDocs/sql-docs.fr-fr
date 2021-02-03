@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 5554 (Database Engine error)
 ms.assetid: 7134bbe5-d240-4a98-85ce-b13cc8ae9b0e
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: f8039ad4a6cfefcdbd4e72c583f520e36f273875
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a08dae45118a377e16248b1c289eeb8314358b84
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88470899"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196349"
 ---
 # <a name="mssqlserver_5554"></a>MSSQLSERVER_5554
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

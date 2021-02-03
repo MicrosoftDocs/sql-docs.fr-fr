@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 10507 (Database Engine error)
 ms.assetid: cd83fa81-ac37-4eda-a3c3-17610b051de2
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 053093e3a150792d7383ec7286ff0ddd27f682b7
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 804a09bd518b5dd15d9abbd1944cf4cbb1aa00d6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88339125"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197491"
 ---
 # <a name="mssqlserver_10507"></a>MSSQLSERVER_10507
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

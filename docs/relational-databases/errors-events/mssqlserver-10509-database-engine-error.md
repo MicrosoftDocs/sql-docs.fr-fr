@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 10509 (Database Engine error)
 ms.assetid: e9dd5357-ee3d-420a-9a89-d12ab5404e73
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 4b0b60c5c2393dc3359815c05654492d9648617e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 71f607c8573ad9c309f6b4dc4af2de8690590fe2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88339395"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197461"
 ---
 # <a name="mssqlserver_10509"></a>MSSQLSERVER_10509
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

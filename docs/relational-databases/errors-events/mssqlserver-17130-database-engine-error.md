@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 17130 (Database Engine error)
 ms.assetid: 7ce6afca-221d-402f-89df-da7e74a339a8
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: c60cada5e0f1172c927fdb4ef5ebd8c89e719a33
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 05427e58b83e24844a0b9239d41e981b9e1b3272
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88499526"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196776"
 ---
 # <a name="mssqlserver_17130"></a>MSSQLSERVER_17130
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

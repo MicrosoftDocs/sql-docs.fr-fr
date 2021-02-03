@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 14420 (Database Engine error)
 ms.assetid: 4a1d72b1-ab1b-4119-a11b-a8a05c6fdb45
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 908c2726504def18fd2d737595a46d276eda1069
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b85c252180248a45cb8f267299bdffccfef16d80
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88334665"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196977"
 ---
 # <a name="mssqlserver_14420"></a>MSSQLSERVER_14420
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

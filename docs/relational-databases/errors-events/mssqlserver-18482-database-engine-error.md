@@ -6,18 +6,18 @@ ms.date: 12/25/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, vencher, tejasaks, docast
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 18482 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 42e8bf7a80659467c489d86b8a3ca944ceebe360
-ms.sourcegitcommit: d819173fb91af6f20ca6ee59686c35c71b060fbc
+ms.openlocfilehash: 07da09291b3bb3bf75593ed74ded516ed2638b46
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "97797799"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196499"
 ---
 # <a name="mssqlserver_18482"></a>MSSQLSERVER_18482
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

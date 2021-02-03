@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 10520 (Database Engine error)
 ms.assetid: cc8799f1-5b90-4248-b209-e1d5087f9529
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: b556c41dd3e1fddf0c304a32d9b87c0d4c843886
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0f2187ccd80b90c0375ae960bd4e27806640e74b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88338825"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197444"
 ---
 # <a name="mssqlserver_10520"></a>MSSQLSERVER_10520
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 8966 (Database Engine error)
 ms.assetid: 6b1150fd-9dfd-4df9-8f08-8eca237667db
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 0359c734fae801d7f1c2dded751043f8d1ae5d1f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6b3a7c18f37d0bb774b8a0af06cdd31a377425f8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88331485"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194039"
 ---
 # <a name="mssqlserver_8966"></a>MSSQLSERVER_8966
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

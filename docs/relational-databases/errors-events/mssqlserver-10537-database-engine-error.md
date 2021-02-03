@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 10537 (Database Engine error)
 ms.assetid: 728469a4-6523-4a37-925f-a950d75420fa
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: bdceeb93a5bc468639502e64af3b39ffc90be6a9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b6b1cff02deb2b56772b4d8af0c3fb47c7fd93c3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88337955"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197357"
 ---
 # <a name="mssqlserver_10537"></a>MSSQLSERVER_10537
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

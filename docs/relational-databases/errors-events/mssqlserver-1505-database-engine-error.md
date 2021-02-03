@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 1505 (Database Engine error)
 ms.assetid: ef4df75d-0f36-4c8b-b36c-e427f65f91ca
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 755cf72ef67b23207fe30144a23837d052a912bd
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: eb5140faa2aab243639d2e67232da53a7de1d4e5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88333935"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196937"
 ---
 # <a name="mssqlserver_1505"></a>MSSQLSERVER_1505
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

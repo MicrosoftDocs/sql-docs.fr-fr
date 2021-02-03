@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 17887 (Database Engine error)
 ms.assetid: ad0806e6-3296-4c32-b103-fccf0f8a8d3d
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 02a96dc46232bcce19b89234c07874ed5261ac46
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 32ce0464266726de06784ae078c7321339208f01
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456339"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196583"
 ---
 # <a name="mssqlserver_17887"></a>MSSQLSERVER_17887
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

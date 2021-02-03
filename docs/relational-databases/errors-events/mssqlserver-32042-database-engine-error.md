@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 32042 (Database Engine error)
 ms.assetid: 53a51c7a-dcd4-4c15-b4d2-6aaa9dce76da
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 5be9f2b0ada229fa469baac3e564a87d4ce8ef4c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0f04a45b89163c85e02447efc93eeae5c7feafba
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88494492"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194136"
 ---
 # <a name="mssqlserver_32042"></a>MSSQLSERVER_32042
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

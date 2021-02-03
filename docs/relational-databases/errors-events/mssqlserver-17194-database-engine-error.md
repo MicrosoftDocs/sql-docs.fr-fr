@@ -6,7 +6,7 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - "17194"
 helpviewer_keywords:
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 0d03eb20-28a7-4ceb-8903-7f9420a620f7
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: e6d652da7734e8ad5819ed8e5e84a8d27787cf48
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: aea38f7ca72e611ebfe7c0f5eb530ac9f25ce962
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88482838"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196725"
 ---
 # <a name="mssqlserver_17194"></a>MSSQLSERVER_17194
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

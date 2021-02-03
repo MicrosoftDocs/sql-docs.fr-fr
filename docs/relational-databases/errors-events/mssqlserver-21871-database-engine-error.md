@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 21871 (Database Engine error)
 ms.assetid: d3215378-9282-444f-a18b-00b96fd0133d
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 52f82fbebc9f164152f6047a90bbb1238e1a2bb7
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1085b9ad233df60e39dca019bd9cf7b1e424942f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88332785"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196413"
 ---
 # <a name="mssqlserver_21871"></a>MSSQLSERVER_21871
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

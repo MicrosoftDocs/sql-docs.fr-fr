@@ -3,7 +3,7 @@ description: AJOUTER UNE CLASSIFICATION DE SENSIBILITÉ (Transact-SQL)
 title: AJOUTER UNE CLASSIFICATION DE SENSIBILITÉ (Transact-SQL)
 ms.prod: sql
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 author: DavidTrigano
 ms.author: datrigan
 ms.reviewer: vanto
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.custom: ''
 ms.date: 06/10/2020
 monikerRange: " >= sql-server-linux-ver15 || >= sql-server-ver15 || = azuresqldb-current"
-ms.openlocfilehash: 8aa8b00a9a24513eb925ef113db94caaea0cfe50
-ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
+ms.openlocfilehash: 28226c6368dd070b95283abef683fcb47dc33dd4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98688832"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194716"
 ---
 # <a name="add-sensitivity-classification-transact-sql"></a>AJOUTER UNE CLASSIFICATION DE SENSIBILITÉ (Transact-SQL)
 

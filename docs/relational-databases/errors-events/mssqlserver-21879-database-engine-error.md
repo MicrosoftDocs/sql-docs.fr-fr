@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 21879 (Database Engine error)
 ms.assetid: fcfab735-05ca-423a-89f1-fdee7e2ed8c0
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 0c6b6b15e6a9224306bea073e38b9ef808edfddc
-ms.sourcegitcommit: 7791bd2ba339edc5cd2078a6537c8f6bfe72a19b
+ms.openlocfilehash: 68ae3fd91948c5c90e8e17bde3ca57193553977f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98564440"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196391"
 ---
 # <a name="mssqlserver_21879"></a>MSSQLSERVER_21879
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

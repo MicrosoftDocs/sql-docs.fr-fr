@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 8689 (Database Engine error)
 ms.assetid: 99467a32-6576-4272-a076-b16c06933f2a
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 3cb49e744aad34a9147c665d4c81d78e06d87165
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d07f9a50046d33e5c5f4ee122359f41c5b77d400
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88476038"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194081"
 ---
 # <a name="mssqlserver_8689"></a>MSSQLSERVER_8689
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

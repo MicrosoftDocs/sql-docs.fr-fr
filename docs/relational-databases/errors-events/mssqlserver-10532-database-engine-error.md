@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 10532 (Database Engine error)
 ms.assetid: 01da29ee-bf67-433f-8148-587a7e8d1d76
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: cb404a386558bb0fb0906ca3a0bd223a47c044a9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b8480abef9683be82149785bf60b4672b11a85fc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88338845"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197409"
 ---
 # <a name="mssqlserver_10532"></a>MSSQLSERVER_10532
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

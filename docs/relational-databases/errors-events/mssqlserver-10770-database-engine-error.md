@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 10770 (Database Engine error)
 ms.assetid: 20f2147d-7f2d-470a-ac01-3c9adc29c577
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 3ffbeb8f4ce2bd7b71f167366d44688ea2fcc5c0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 49820908859588d76e7262899169dc9b6cf9311e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88337345"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197306"
 ---
 # <a name="mssqlserver_10770"></a>MSSQLSERVER_10770
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

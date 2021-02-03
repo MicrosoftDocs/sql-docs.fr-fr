@@ -6,18 +6,18 @@ ms.date: 08/20/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, Masha
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 854 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: f0bf9061b452329280f0625bcc1339469372f4df
-ms.sourcegitcommit: ead0b8c334d487a07e41256ce5d6acafa2d23c9d
+ms.openlocfilehash: 9c3f2071748702b7537d1bc05450f09bb437ab0b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92418761"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194083"
 ---
 # <a name="mssqlserver_854"></a>MSSQLSERVER_854
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

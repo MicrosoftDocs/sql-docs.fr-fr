@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 12329 (Database Engine error)
 ms.assetid: 43f90287-36d5-46c2-ac91-a37202dcf6d3
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 1dceb73d84e4a4848e7bf2e58a279716356c10ad
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 73c58c5c97f71ed355f476bd5395197d5f0b0af1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88335105"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197054"
 ---
 # <a name="mssqlserver_12329"></a>MSSQLSERVER_12329
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

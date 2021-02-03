@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 207 (Database Engine error)
 ms.assetid: d1ab00c7-0331-437a-84fe-bae53b82feec
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 52115e3354d576e6d490e369f307cc119e611aa1
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 7c39bf5d5b820a906cc5b14fd270ed59aa3f4084
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85780566"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196430"
 ---
 # <a name="mssqlserver_207"></a>MSSQLSERVER_207
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

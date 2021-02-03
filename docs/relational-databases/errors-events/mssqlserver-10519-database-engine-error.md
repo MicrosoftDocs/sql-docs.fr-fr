@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 10519 (Database Engine error)
 ms.assetid: 3be393a1-b186-41ae-afb9-a3d07ff354bb
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: dbb694019769896c1af7d461a8c549f1fd7df696
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 20be40d02fed7d3a7eedbdf1b12fec6bb95fdcd9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88338915"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197439"
 ---
 # <a name="mssqlserver_10519"></a>MSSQLSERVER_10519
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

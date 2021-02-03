@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 15517 (Database Engine error)
 ms.assetid: f94287f5-129f-4c52-9d34-62b996088001
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: f10c75c78105598db0990e226f8283b799a392a6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 592439f0e90f1b8ba607f518ad5125510b8e8a3e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88333958"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196898"
 ---
 # <a name="mssqlserver_15517"></a>MSSQLSERVER_15517
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

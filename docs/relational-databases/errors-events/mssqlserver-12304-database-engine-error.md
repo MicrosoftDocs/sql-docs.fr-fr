@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 12304 (Database Engine error)
 ms.assetid: a2c252c2-e815-4ac8-a101-7af5b32e3233
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 2db83c6a5d34cf2639fe60cc5b8bf2356fb15d2a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 484046de79a34997f4e0c77cc0ff56f9c2c2452c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88336305"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197101"
 ---
 # <a name="mssqlserver_12304"></a>MSSQLSERVER_12304
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

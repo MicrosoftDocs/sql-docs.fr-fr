@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 17084 (Database Engine error)
 ms.assetid: e579d104-3307-4edd-8587-b14ecbc02ed9
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: bf44aa95cca35e56f836306f7870bd2c2de9be7a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0122cb9584c0b1d9ec905e787fefcdfb57c167b7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88471111"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196809"
 ---
 # <a name="mssqlserver_17084"></a>MSSQLSERVER_17084
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 11409 (Database Engine error)
 ms.assetid: 99b71a1c-a72d-4ca9-9d00-4230c9042ba5
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: eb94f021bd4328a584c0d5713436747e020158e3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4ad5ea6caf9aec21ffcad0c7b2c0ebc9ec48b76e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88336585"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197204"
 ---
 # <a name="mssqlserver_11409"></a>MSSQLSERVER_11409
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

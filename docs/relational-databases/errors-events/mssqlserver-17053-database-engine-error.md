@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 17053 (Database Engine error)
 ms.assetid: e0a01f3d-d0aa-4c38-8bcc-82e59de50512
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 0afb4a691519611f5b2a9e6cd5dfa365b2bbf3ce
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 97fe04b2300fee87a23b3dcfd887748633904209
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88334375"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196844"
 ---
 # <a name="mssqlserver_17053"></a>MSSQLSERVER_17053
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 10534 (Database Engine error)
 ms.assetid: e65bb118-99d5-4fdb-b1d5-0ec70f0a677b
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 8c649266f1eabb1c4d667060e78f96ac8574c026
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f53c5a8ce3a2965cda3f9fa1028189e2fbc8c266
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88338555"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197399"
 ---
 # <a name="mssqlserver_10534"></a>MSSQLSERVER_10534
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,18 +6,18 @@ ms.date: 12/25/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, Masha
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 18483 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 9ec3453277430ba71b9764ad69861f157c153699
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: b14a7a0e02dba2a8a8b6b4defa64f24581c7e02e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596273"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196508"
 ---
 # <a name="mssqlserver_18483"></a>MSSQLSERVER_18483
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

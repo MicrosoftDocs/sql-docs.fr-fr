@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 18264 (Database Engine error)
 ms.assetid: 3050fc56-2be5-43cf-916b-50a3ac5f89aa
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 7ce3007856d44fa513c7397cc37af880f6a21c5a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2a029255c0ae2d47f4f1033d9cf59e6f669383c0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88385751"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196539"
 ---
 # <a name="mssqlserver_18264"></a>MSSQLSERVER_18264
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

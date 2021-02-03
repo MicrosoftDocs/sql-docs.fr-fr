@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -19,12 +19,12 @@ ms.assetid: d410e06e-061b-4c25-9973-b2dc9b60bd85
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: caf0fcb2a9b00c8f391280395629348f055d4039
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 0cf40a6b16c1a2750180a5646e17ad317fe3c1bf
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98100951"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194288"
 ---
 # <a name="set-local_variable-transact-sql"></a>SET @local_variable (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -184,7 +184,7 @@ Pour plus d’informations, consultez [DECLARE CURSOR &#40;Transact-SQL&#41;](..
   
 Vous pouvez utiliser l’opérateur d’affectation composée partout où vous avez une affectation avec une expression à droite de l’opérateur, y compris des variables, et un SET dans une instruction UPDATE, SELECT et RECEIVE.  
   
-N’utilisez pas de variable dans une instruction INSERT pour concaténer les valeurs (c’est-à-dire, pour calculer des valeurs agrégées). Ceci peut engendrer des résultats de requête inattendus. Car toutes les expressions dans la liste SELECT (y compris les affectations) ne sont pas exécutées une seule fois exactement pour chaque ligne de sortie. Pour plus d’informations, consultez [cet article de la Base de connaissances](https://support.microsoft.com/kb/287515).  
+N’utilisez pas de variable dans une instruction INSERT pour concaténer les valeurs (c’est-à-dire, pour calculer des valeurs agrégées). Ceci peut engendrer des résultats de requête inattendus. Car toutes les expressions dans la liste SELECT (y compris les affectations) ne sont pas exécutées une seule fois exactement pour chaque ligne de sortie. Pour plus d’informations, consultez [cet article de la Base de connaissances](https://www.betaarchive.com/wiki/index.php?title=Microsoft_KB_Archive/287515).  
   
 ## <a name="permissions"></a>Autorisations  
 Nécessite l'appartenance au rôle public. Tous les utilisateurs peuvent utiliser SET **@** _local_variable_.  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ROLLBACK WORK
 - ROLLBACK_WORK_TSQL
@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 2071dbd3-53d5-4510-be8d-26e80f2553b4
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 38388c9d697bc3f7d2fddd8d6ff162ff7b306f08
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 67512d8fca35bfda9696192d511450d064f612d1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88459300"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194301"
 ---
 # <a name="rollback-work-transact-sql"></a>ROLLBACK WORK (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

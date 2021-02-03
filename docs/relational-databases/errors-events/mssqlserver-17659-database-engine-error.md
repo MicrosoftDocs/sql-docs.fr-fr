@@ -6,18 +6,18 @@ ms.date: 08/20/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, Masha
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 17659 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: b906310eb23bd1f9416cd792d95adfa79f72302c
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 5e7baf4f821a7fd36ca4202bc5299ae4cc99ae65
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099355"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196679"
 ---
 # <a name="mssqlserver_17659"></a>MSSQLSERVER_17659
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

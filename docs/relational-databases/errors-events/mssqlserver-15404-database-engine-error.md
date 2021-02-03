@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 15404 (Database Engine error)
 ms.assetid: 69677f02-bc81-4e4a-99b8-5c1bd1de36df
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: a9a05c8e47e97357b562a3429b98fe856e60d75f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8c6a71643180463fbe6176d73778026cfdae9019
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88333855"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196904"
 ---
 # <a name="mssqlserver_15404"></a>MSSQLSERVER_15404
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

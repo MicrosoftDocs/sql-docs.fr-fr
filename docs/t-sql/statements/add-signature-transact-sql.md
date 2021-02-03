@@ -3,7 +3,7 @@ description: ADD SIGNATURE (Transact-SQL)
 title: ADD SIGNATURE (Transact-SQL)
 ms.prod: sql
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - ADD SIGNATURE
 - ADD_SIGNATURE_TSQL
@@ -18,12 +18,12 @@ ms.author: vanto
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/10/2020
-ms.openlocfilehash: 1202cb470530941b23c3e0a742ea9a1715170784
-ms.sourcegitcommit: eeb30d9ac19d3ede8d07bfdb5d47f33c6c80a28f
+ms.openlocfilehash: 95bfeb321f43fb860bbbeecb32ac18ec221e5067
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96523070"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194683"
 ---
 # <a name="add-signature-transact-sql"></a>ADD SIGNATURE (Transact-SQL)
 

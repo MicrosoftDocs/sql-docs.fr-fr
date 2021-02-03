@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 18752 (Database Engine error)
 ms.assetid: 234c58d8-7a1e-4b07-a64b-32a311527980
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 50327e76c43f67dbed77e45457481e2b032f32ef
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 51d1c0e130e0bada6601a9ef10875108da2f233a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88499499"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196484"
 ---
 # <a name="mssqlserver_18752"></a>MSSQLSERVER_18752
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

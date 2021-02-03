@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 10521 (Database Engine error)
 ms.assetid: ba2d7e44-207c-4428-b5f0-c975ac122c0d
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 3c7b3bad98a125072b88e3a009c97d1011d8872c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6fc717b713ec5b3e6ca48ccb64cc43713cd663a2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88338545"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197429"
 ---
 # <a name="mssqlserver_10521"></a>MSSQLSERVER_10521
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

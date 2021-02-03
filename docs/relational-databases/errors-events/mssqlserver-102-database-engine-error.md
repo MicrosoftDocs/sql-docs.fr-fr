@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 102 (Database Engine error)
 ms.assetid: 264dc1a2-c8a0-4c89-b5f6-951baf950299
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: d18d07aae0e07625bb75c42ce60fa5c995937e10
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f8ec00fdf017b76574a1d5a9bd9e906bd283c0f8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88339375"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197503"
 ---
 # <a name="mssqlserver_102"></a>MSSQLSERVER_102
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 17300 (Database Engine error)
 ms.assetid: c1d6bfb6-28af-4df6-8087-25807602d282
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 23055c336c2cad273ba58b8a3bb061b93af3a80b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ef6de567f503cd836ee0ef4ed20d9aa601b57250
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456452"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196691"
 ---
 # <a name="mssqlserver_17300"></a>MSSQLSERVER_17300
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

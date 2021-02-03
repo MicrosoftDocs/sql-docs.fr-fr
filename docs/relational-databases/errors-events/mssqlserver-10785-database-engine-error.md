@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 10785 (Database Engine error)
 ms.assetid: 32f96c1e-9e94-4603-9bcd-b0c2e4af9fda
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: ffe180167a2303d330a0b2541e9e1d3286338b7a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0c5d6e842cb6fd8c8d761855559e07d0edb61433
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88337375"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197258"
 ---
 # <a name="mssqlserver_10785"></a>MSSQLSERVER_10785
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

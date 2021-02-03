@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 12306 (Database Engine error)
 ms.assetid: 1f83d927-a215-4e43-98a9-4dab9d6e68bb
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 76def5ed54a4710d34c54f56d4549b217bc5746d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 872d4e7dfb75e69f9b45859389c83da29cd4de69
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88336025"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197083"
 ---
 # <a name="mssqlserver_12306"></a>MSSQLSERVER_12306
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

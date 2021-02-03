@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 3168 (Database Engine error)
 ms.assetid: 991111d9-1eb3-43e9-9333-a75a775c3200
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: a5c3daa848ced9eb6ca784e68d14a66a9bea53aa
-ms.sourcegitcommit: a0245fdae1ff9045f587a3a67b72f34405d35a4f
+ms.openlocfilehash: 9e57fa84cf49932c0a550290c11f267d6a055921
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/19/2020
-ms.locfileid: "88618104"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194207"
 ---
 # <a name="mssqlserver_3168"></a>MSSQLSERVER_3168
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 8710 (Database Engine error)
 ms.assetid: 78b9f9da-5489-4be0-94df-f065d86ed18c
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 4ba05822e61987454169064dfbc4ae54b0a74ef0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f515311384b33f508bbf125f80977a995fa7cb2b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88420903"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194061"
 ---
 # <a name="mssqlserver_8710"></a>MSSQLSERVER_8710
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

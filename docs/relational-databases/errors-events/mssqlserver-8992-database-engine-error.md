@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 8992 (Database Engine error)
 ms.assetid: 68467e6a-09d8-478f-8bd9-3bb09453ada3
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: b8f95c0806a0bd3a4b735386ebbcf5974b683586
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: fa54a631a021dc07728490dde490a326901fa4b1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88470793"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194024"
 ---
 # <a name="mssqlserver_8992"></a>MSSQLSERVER_8992
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

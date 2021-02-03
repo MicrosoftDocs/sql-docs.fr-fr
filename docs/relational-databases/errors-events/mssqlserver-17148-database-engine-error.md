@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 17148 (Database Engine error)
 ms.assetid: acc6bb58-7248-4237-8bd6-4b3ed2c11446
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: ead5b8ba1fda90e5ee2505fcdf27f74e97029f99
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4f3f2bc5017805dadfc923f44fbbbb5d409e4543
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456591"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196740"
 ---
 # <a name="mssqlserver_17148"></a>MSSQLSERVER_17148
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

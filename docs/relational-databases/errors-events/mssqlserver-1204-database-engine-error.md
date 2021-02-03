@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 1204 (Database Engine error)
 ms.assetid: de6ece78-79de-484d-9224-ca0f7645815f
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 04e9802e4ca7df64fd469ef2ca8151cbe160c182
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0b909cfcf53c2e805a334f52b501c28673f6774d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88336365"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197174"
 ---
 # <a name="mssqlserver_1204"></a>MSSQLSERVER_1204
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

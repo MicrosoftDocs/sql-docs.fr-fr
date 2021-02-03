@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 208 (Database Engine error)
 ms.assetid: 4b1895f5-3197-4da1-af86-954c93507956
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 7d61a9510e87eff01b33aef43e3b0db2836fb40c
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 55b31cdba6f7a96fb8eff7fba2974608b72675d2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85780553"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196411"
 ---
 # <a name="mssqlserver_208"></a>MSSQLSERVER_208
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

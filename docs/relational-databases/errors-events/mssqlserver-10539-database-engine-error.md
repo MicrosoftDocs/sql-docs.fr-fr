@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 10539 (Database Engine error)
 ms.assetid: 49c26ff7-18b8-4f07-a087-f45f63463b3b
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 9f1f36f5b8721a94b7badb3316f30f9b3d4e059d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 659e04c3cafce5290877099d653c595e126c3eb9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88338205"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197344"
 ---
 # <a name="mssqlserver_10539"></a>MSSQLSERVER_10539
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 2020 (Database Engine error)
 ms.assetid: 4a8bf90f-a083-4c53-84f0-d23c711c8081
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: d38c7fad5e12e68fbf36a4cea6805ff514101ba5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 3898acf2b29719b2fa17566c579c1f350d6524cd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88491447"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196463"
 ---
 # <a name="mssqlserver_2020"></a>MSSQLSERVER_2020
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 17067 (Database Engine error)
 ms.assetid: 32c1f0e8-db70-4836-95b2-8833be9e0ad1
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: c680627cb9fb13a4f87358de978e0f0b9f29bd6f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 785e389dee61a90650d325becd678f998a75da9b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88333055"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196831"
 ---
 # <a name="mssqlserver_17067"></a>MSSQLSERVER_17067
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

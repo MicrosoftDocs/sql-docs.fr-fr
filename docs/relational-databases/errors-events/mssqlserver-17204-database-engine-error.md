@@ -6,18 +6,18 @@ ms.date: 07/25/2020
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 17204 (Database Engine error)
 ms.assetid: 40db66f9-dd5e-478c-891e-a06d363a2552
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 996650e8552f435240663d61bf3734f875e2210a
-ms.sourcegitcommit: 28fecbf61ae7b53405ca378e2f5f90badb1a296a
+ms.openlocfilehash: 3a09686fc277f95bfac11c97aeda51a6b8cf0e85
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96595167"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196713"
 ---
 # <a name="mssqlserver_17204"></a>MSSQLSERVER_17204
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

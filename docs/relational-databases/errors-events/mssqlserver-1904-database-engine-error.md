@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 1904 (Database Engine error)
 ms.assetid: 2a35d57d-74e2-45a2-8f67-3f2e51d69712
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 668264ef4242367de10762a1261b7673a4a05924
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 198fe8af27532157397b32875882a072f26f6f4f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88410885"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196481"
 ---
 # <a name="mssqlserver_1904"></a>MSSQLSERVER_1904
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

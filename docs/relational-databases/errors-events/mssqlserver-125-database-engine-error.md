@@ -6,7 +6,7 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - "125"
 helpviewer_keywords:
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 0f58338d-2ea0-48b8-8a20-c438b0940433
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: c6e97db4063a1876a53c307d8171118c9ce58ad5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a4f0e32c318134778544315240e0af229c9f8d1c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88335035"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197050"
 ---
 # <a name="mssqlserver_125"></a>MSSQLSERVER_125
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

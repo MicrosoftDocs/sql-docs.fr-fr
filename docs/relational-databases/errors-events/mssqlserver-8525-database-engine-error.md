@@ -6,7 +6,7 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - "8525"
 helpviewer_keywords:
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 297867c1-691e-4d6b-a3be-a7575015ecfa
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: eb5b5812aac0cf4e6a15d45806b84c68294398dc
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a8203c7a8fc8bcc957fa9eef0b9101a97ff825b3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88482693"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194095"
 ---
 # <a name="mssqlserver_8525"></a>MSSQLSERVER_8525
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

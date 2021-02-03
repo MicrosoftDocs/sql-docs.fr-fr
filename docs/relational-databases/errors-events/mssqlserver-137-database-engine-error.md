@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 137 (Database Engine error)
 ms.assetid: 47fb4212-2165-4fec-bc41-6d548465d7be
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 9e5ed207722e36f6466f56a8f08ae639249185b7
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c50c997d96029ee91673f8145e20d174c967a8fa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88334915"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197039"
 ---
 # <a name="mssqlserver_137"></a>MSSQLSERVER_137
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 10772 (Database Engine error)
 ms.assetid: 20ca35b6-bbf4-4e6f-bf9d-9bed0d327cbc
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: d08662ab6113c22b897c7700d112db9fc724af00
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7607ed4e634fbfe0b17888da287374c0e0132fc8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88337595"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99197298"
 ---
 # <a name="mssqlserver_10772"></a>MSSQLSERVER_10772
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

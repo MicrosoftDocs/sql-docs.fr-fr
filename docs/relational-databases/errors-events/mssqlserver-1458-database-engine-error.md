@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 1458 (Database Engine error)
 ms.assetid: adc78c59-a6f2-432b-9a07-fdd1dc2b9026
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: b0769ef5ed820b084086376d898b7a5dc30ab470
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c9869ae430c0d1b669ced02202642e5eee7a7b58
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88334235"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196986"
 ---
 # <a name="mssqlserver_1458"></a>MSSQLSERVER_1458
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

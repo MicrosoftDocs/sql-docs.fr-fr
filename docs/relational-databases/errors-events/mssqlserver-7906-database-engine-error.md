@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 7906 (Database Engine error)
 ms.assetid: 9638a764-4ac1-40ae-a614-2726ebcc6ba4
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: f18d5e9ba256c37531f0905bdb79eb4f57cdae9b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 453de49ae87c95631dffb05afbd313ed47e27bf7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88470853"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194103"
 ---
 # <a name="mssqlserver_7906"></a>MSSQLSERVER_7906
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

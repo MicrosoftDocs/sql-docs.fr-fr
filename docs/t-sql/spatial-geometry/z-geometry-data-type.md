@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - Z (geometry Data Type)
 - Z_(geometry_Data_Type)_TSQL
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: a62ed736-44df-4591-9109-ce90e1df9bd3
 author: MladjoA
 ms.author: mlandzic
-ms.openlocfilehash: 2e90df19c6d6946c17b554c9195c03bce3f55ca8
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: dcd85bac5ba2be71a49761dfe609092761fd3fc0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88472370"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194703"
 ---
 # <a name="z-geometry-data-type"></a>Z (type de données geometry)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 15599 (Database Engine error)
 ms.assetid: 97e427a9-8587-46ea-954b-974b5df9c223
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: eca555fb3ced04a0258db78c89c53e8cef9d9c20
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f6ec0fb50ca6a4dca0970e8483e6ea1570d55d85
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88333815"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196879"
 ---
 # <a name="mssqlserver_15599"></a>MSSQLSERVER_15599
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

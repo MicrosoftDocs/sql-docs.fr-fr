@@ -6,18 +6,18 @@ ms.date: 12/25/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, vencher, tejasaks, docast
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 15401 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 8d996c6e48f90cf54b962481cc1e7cd1ed7b088e
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: de444d90aa3bad32b5e283cb7b4fc92c4f8cabd7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596317"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196917"
 ---
 # <a name="mssqlserver_15401"></a>MSSQLSERVER_15401
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -6,18 +6,18 @@ ms.date: 04/04/2017
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 701 (Database Engine error)
 ms.assetid: 3b975000-63a1-43c2-a40f-89d0a8a36bef
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: d0e3280044c9d8d0677f8f1d0fd63413ac987b36
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5df51550a44455b728222aa02ea2f507a0b7d4fd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88470852"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194131"
 ---
 # <a name="mssqlserver_701"></a>MSSQLSERVER_701
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

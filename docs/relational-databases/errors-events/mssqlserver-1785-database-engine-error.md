@@ -6,18 +6,18 @@ ms.date: 12/25/2020
 ms.prod: sql
 ms.reviewer: ramakoni1, pijocoder, suresh-kandoth, vencher, tejasaks, docast
 ms.technology: supportability
-ms.topic: language-reference
+ms.topic: reference
 helpviewer_keywords:
 - 1785 (Database Engine error)
 ms.assetid: ''
 author: suresh-kandoth
 ms.author: ramakoni
-ms.openlocfilehash: 7f300583da4c034da2963590c81e0aedbed86beb
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: f083af775defa1b95eab75e1635e67ad79abbf93
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596261"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99196627"
 ---
 # <a name="mssqlserver_1785"></a>MSSQLSERVER_1785
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

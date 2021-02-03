@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - '@@MAX_PRECISION_TSQL'
 - '@@MAX_PRECISION'
@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 9e7158a1-e503-422a-b326-3c9b06e181b2
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: b04104c842f1de5242d770635d7aec9ab1f62048
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 18dbcd1561bc5c6e601ab4824ce4edaa43c34370
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102520"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195954"
 ---
 # <a name="x40x40max_precision-transact-sql"></a>&#x40;&#x40;MAX_PRECISION (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
