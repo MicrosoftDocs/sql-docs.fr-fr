@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 851e163a-ad2a-491e-bc1e-4df92327092f
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: b0ff8cd92d090424bbf7a17315dc09dfb7b8a06f
-ms.sourcegitcommit: fe59f8dc27fd633f5dfce54519d6f5dcea577f56
+ms.openlocfilehash: 7a58a11e71c471bf02ca68ddaf4a416c3d9c554b
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91934778"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99075701"
 ---
 # <a name="configure-a-url--report-server-configuration-manager"></a>Configurer une URL (Gestionnaire de configuration du serveur de rapports)
   Avant de pouvoir utiliser le [!INCLUDE[ssRSWebPortal](../../includes/ssrswebportal.md)] ou le service web Report Server, vous devez configurer au moins une URL pour chaque application. La configuration des URL est obligatoire si vous avez installé [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] en mode « fichiers uniquement » (autrement dit, en sélectionnant l’option **Installer mais ne pas configurer le serveur** dans la page Options d’installation du serveur de rapports dans l’Assistant Installation). Si vous avez installé [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] dans la configuration par défaut, les URL sont déjà configurées pour chaque application.  
@@ -79,7 +79,7 @@ ms.locfileid: "91934778"
   
          `netstat -anp tcp`  
   
-    -   Lisez l’article du support Microsoft [Informations relatives aux affectations de ports TCP/IP](https://support.microsoft.com/kb/174904)pour comprendre les attributions de port TCP et les différences entre les ports bien identifiés (0 à 1023), les ports inscrits (1024 à 49151) et les ports dynamiques ou privés (49152 à 65535).  
+    -   Lisez l’article du support Microsoft [Informations relatives aux affectations de ports TCP/IP](https://www.betaarchive.com/wiki/index.php?title=Microsoft_KB_Archive/174904)pour comprendre les attributions de port TCP et les différences entre les ports bien identifiés (0 à 1023), les ports inscrits (1024 à 49151) et les ports dynamiques ou privés (49152 à 65535).  
   
     -   Si vous utilisez le Pare-feu Windows, vous devez ouvrir le port. Pour obtenir des instructions, consultez [Configure a Firewall for Report Server Access](../../reporting-services/report-server/configure-a-firewall-for-report-server-access.md).  
   

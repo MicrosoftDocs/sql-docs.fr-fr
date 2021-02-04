@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: eb5c6f4a-3ed5-430b-a712-d5ed4b6b9b2b
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 72e29a5be172bdf00f9c57358cbbaa1e9bae5a09
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: b13ca53aad69647aee5158d86de2cfb16ac04710
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98594819"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076101"
 ---
 # <a name="extended-protection-for-authentication-with-reporting-services"></a>Protection étendue de l'authentification avec Reporting Services
 
@@ -25,7 +25,7 @@ ms.locfileid: "98594819"
 SQL Server Reporting Services (SSRS) prend en charge et applique la protection étendue qui a été activée dans le système d’exploitation et configurée dans [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]. Par défaut, [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] accepte les demandes qui spécifient l'authentification Negotiate ou NTLM et peut donc tirer parti de la prise en charge de la protection étendue dans le système d'exploitation et des fonctionnalités de la protection étendue de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] .  
   
 > [!IMPORTANT]  
->  Par défaut, Windows n'active pas la protection étendue. Pour plus d'informations sur l'activation de la protection étendue dans Windows, consultez [Protection étendue de l'authentification](https://go.microsoft.com/fwlink/?LinkID=178431). Le système d'exploitation et la pile d'authentification du client doivent tous les deux prendre en charge la protection étendue pour que l'authentification aboutisse. Vous devrez peut-être installer plusieurs mises à jour sur les systèmes d'exploitation plus anciens pour bénéficier d'une protection étendue à jour et prête à l'emploi sur l'ordinateur. Pour plus d’informations sur les développements les plus récents de la protection étendue, consultez les [informations mises à jour relatives à la protection étendue](/previous-versions/sql/sql-server-2008/dd146365(v=sql.100)).  
+>  Par défaut, Windows n'active pas la protection étendue. Pour plus d'informations sur l'activation de la protection étendue dans Windows, consultez [Protection étendue de l'authentification](https://support.microsoft.com/topic/microsoft-security-advisory-extended-protection-for-authentication-7dd2ee6d-c2e9-3484-2d8e-466261d3f0c7). Le système d'exploitation et la pile d'authentification du client doivent tous les deux prendre en charge la protection étendue pour que l'authentification aboutisse. Vous devrez peut-être installer plusieurs mises à jour sur les systèmes d'exploitation plus anciens pour bénéficier d'une protection étendue à jour et prête à l'emploi sur l'ordinateur. Pour plus d’informations sur les développements les plus récents de la protection étendue, consultez les [informations mises à jour relatives à la protection étendue](/previous-versions/sql/sql-server-2008/dd146365(v=sql.100)).  
 
 ## <a name="reporting-services-extended-protection-overview"></a>Vue d'ensemble de la protection étendue Reporting Services
 

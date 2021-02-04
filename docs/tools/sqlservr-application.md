@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 60e8ef0a-0851-41cf-a6d8-cca1e04cbcdb
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 67f25ef21a7d4897bba7242da796bd41f9fc655e
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 9422651db34ab9c423a960b9d945d1c748f25d93
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642194"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99075951"
 ---
 # <a name="sqlservr-application"></a>Application sqlservr
 
@@ -81,7 +81,7 @@ sqlservr [-s instance_name] [-c] [-d master_path] [-f]
 Dans la plupart des cas, le programme sqlservr.exe est uniquement utilisé pour le dépannage ou pour une maintenance majeure. Lorsque [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] est démarré à partir de l’invite de commandes avec sqlservr.exe, [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] ne démarre pas en tant que service et vous ne pouvez donc pas arrêter [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] avec des commandes **net** . Les utilisateurs peuvent se connecter à [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)], mais les outils [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] montrent l'état du service et le Gestionnaire de configuration [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] indique correctement que le service est arrêté. [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] peut se connecter au serveur, mais indique également que le service est arrêté.
 
 ## <a name="compatibility-support"></a>Prise en charge de la compatibilité
-Les paramètres suivants sont obsolètes et ne sont pas pris en charge dans [!INCLUDE[ssCurrent](../includes/sscurrent-md.md)].
+Les paramètres suivants sont obsolètes et ne sont pas pris en charge dans [!INCLUDE[sssql19-md](../includes/sssql19-md.md)].
 
 |Paramètre | Informations complémentaires|
 |:-----|:-----|

@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 8bbb88df-72fd-4c27-91b7-b255afedd345
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 968de0f9cf8c95b13a67f3fb2b0f36e3d8c09ced
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 74bf6f0da0daa0df248243ffbce505c75c55db5e
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91986111"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076321"
 ---
 # <a name="troubleshoot-server--database-connection-problems-with-reporting-services"></a>Résoudre les problèmes de connexion à un serveur et à une base de données avec Reporting Server
 Utilisez cette rubrique pour résoudre les problèmes que vous rencontrez lors de la connexion à un serveur de rapports. En outre, elle fournit des informations sur les messages de type « Erreur inattendue ». Pour plus d’informations sur la configuration de la source de données et des informations de connexion au serveur de rapports, consultez [Spécifier des informations d’identification et de connexion pour les sources de données de rapport](../../reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources.md) et [Configurer une connexion à la base de données du serveur de rapports (Gestionnaire de configuration du serveur de rapports)](../../reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager.md).  
@@ -35,7 +35,7 @@ Lors de la connexion à SQL Server, cet échec peut être dû au fait que les pa
 * Assurez-vous que l'URL du serveur de rapports et la chaîne de connexion à la base de données du serveur de rapports sont correctes. Si les services Reporting Services ou le moteur de base de données ont été installés en tant qu’instance nommée, la chaîne de connexion par défaut créée pendant l’installation comprend le nom d’instance. Par exemple, si vous avez installé une instance par défaut de SQL Server Express with Advanced Services sur un serveur nommé DEVSRV01, l’URL du portail web est DEVSRV01\Reports$SQLEXPRESS. En outre, le nom du serveur de base de données dans la chaîne de connexion ressemble à DEVSRV01\SQLEXPRESS. Pour plus d’informations sur les URL et les chaînes de connexion à la source de données pour SQL Server Express, voir [Reporting Services dans SQL Server Express with Advanced Services](/previous-versions/sql/sql-server-2008-r2/ms365166(v=sql.105)). Pour vérifier la chaîne de connexion de la base de données du serveur de rapports, démarrez l’outil de configuration de Reporting Services, puis consultez la page Installation de la base de données.  
   
 ### <a name="a-connection-cannot-be-made-ensure-that-the-server-is-running"></a>Impossible d'établir une connexion. Vérifiez que le serveur fonctionne.  
-Cette erreur est retournée par le fournisseur ADOMD.NET. Cette erreur peut se produire pour différentes raisons. Si vous avez spécifié le serveur comme hôte local (« localhost »), essayez de spécifier le nom du serveur à la place. Cette erreur peut également se produire s'il est impossible d'allouer de la mémoire à la nouvelle connexion. Pour plus d’informations, voir l’ [l’Article 912017 de Base de connaissances CORRECTIF, Message d’erreur lorsque vous vous connectez à une instance de SQL Server 2005 Analysis Services :](https://support.microsoft.com/kb/912017).  
+Cette erreur est retournée par le fournisseur ADOMD.NET. Cette erreur peut se produire pour différentes raisons. Si vous avez spécifié le serveur comme hôte local (« localhost »), essayez de spécifier le nom du serveur à la place. Cette erreur peut également se produire s'il est impossible d'allouer de la mémoire à la nouvelle connexion. Pour plus d’informations, voir l’ [l’Article 912017 de Base de connaissances CORRECTIF, Message d’erreur lorsque vous vous connectez à une instance de SQL Server 2005 Analysis Services :](https://www.betaarchive.com/wiki/index.php?title=Microsoft_KB_Archive/912017).  
   
 Si l’erreur inclut également « Hôte inconnu », cela indique que le serveur Analysis Services n’est pas disponible ou qu’il refuse la connexion. Si le serveur Analysis Services est installé en tant qu’instance nommée sur un ordinateur distant, vous pouvez être amené à exécuter le service SQL Server Browser pour obtenir le numéro de port que cette instance utilise.  
   
@@ -60,7 +60,7 @@ Impossible de se connecter à \<your server name>. Soit le fournisseur WMI de Re
   
 Pour résoudre cette erreur, vous devez réinstaller le logiciel. Dans tous les autres cas, en guise de solution temporaire, vous pouvez vous connecter au serveur de rapports via le point de terminaison SOAP :  
   
-* Dans la boîte de dialogue **Se connecter au serveur** de **, dans**Nom du serveur, tapez l’URL du serveur de rapports. Par défaut, il s’agit de `https://<your server name>/reportserver`. Ou si vous utilisez SQL Server 2008 Express with Advanced Services, il s’agit de `https://<your server name>/reportserver$sqlexpress`.  
+* Dans la boîte de dialogue **Se connecter au serveur** de **, dans** Nom du serveur, tapez l’URL du serveur de rapports. Par défaut, il s’agit de `https://<your server name>/reportserver`. Ou si vous utilisez SQL Server 2008 Express with Advanced Services, il s’agit de `https://<your server name>/reportserver$sqlexpress`.  
   
 Pour résoudre l’erreur et vous connecter à l’aide du fournisseur WMI, vous devez soit exécuter le programme d’installation afin de réparer Reporting Services, soit réinstaller l’application.  
   

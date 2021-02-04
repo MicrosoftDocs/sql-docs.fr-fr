@@ -17,12 +17,12 @@ ms.author: maghan
 ms.reviewer: matteot, drskwier
 ms.custom: ''
 ms.date: 07/31/2019
-ms.openlocfilehash: 68546680f73674b416aa42d141c7ea5d2f8b51b7
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: 67ad8b940787f50f36ea6798282b651c290d4fca
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081908"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076201"
 ---
 # <a name="sql-server-powershell-provider"></a>SQL Server PowerShell Provider
 
@@ -40,7 +40,7 @@ Les chemins d'accès implémentés par le fournisseur [!INCLUDE[ssNoVersion](../
 
 Les produits dont les données ou modèles objets peuvent être représentés dans une hiérarchie utilisent des fournisseurs Windows PowerShell pour exposer les hiérarchies. La hiérarchie est exposée à l'aide d'une structure de chemin d'accès semblable à celle utilisée par le système de fichiers Windows.  
   
- Chaque fournisseur Windows PowerShell implémente un ou plusieurs lecteurs. Chaque lecteur est le nœud racine d'une hiérarchie d'objets connexes. Le fournisseur [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] implémente un lecteur SQLSERVER:. Le fournisseur définit également un jeu de dossiers principaux pour le lecteur SQLSERVER:. Chaque dossier et ses sous-dossiers représentent l'ensemble d'objets auxquels il est possible d'accéder à l'aide d'un modèle SMO ( [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Management Object). Si vous vous trouvez au niveau d'un sous-dossier dans un chemin d'accès qui commence par l'un de ces dossiers principaux, vous pouvez utiliser les méthodes du modèle objet associé pour effectuer des actions sur l'objet représenté par ce nœud. Les dossiers Windows PowerShell implémentés par le fournisseur [!INCLUDE[ssCurrent](../includes/sscurrent-md.md)] sont répertoriés dans le tableau suivant :  
+ Chaque fournisseur Windows PowerShell implémente un ou plusieurs lecteurs. Chaque lecteur est le nœud racine d'une hiérarchie d'objets connexes. Le fournisseur [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] implémente un lecteur SQLSERVER:. Le fournisseur définit également un jeu de dossiers principaux pour le lecteur SQLSERVER:. Chaque dossier et ses sous-dossiers représentent l'ensemble d'objets auxquels il est possible d'accéder à l'aide d'un modèle SMO ( [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Management Object). Si vous vous trouvez au niveau d'un sous-dossier dans un chemin d'accès qui commence par l'un de ces dossiers principaux, vous pouvez utiliser les méthodes du modèle objet associé pour effectuer des actions sur l'objet représenté par ce nœud. Les dossiers Windows PowerShell implémentés par le fournisseur [!INCLUDE[ssnoversion](../includes/ssnoversion-md.md)] sont répertoriés dans le tableau suivant :  
   
 |Dossier|Espace de noms du modèle objet SQL Server|Objets|  
 |------------|---------------------------------------|-------------|  
