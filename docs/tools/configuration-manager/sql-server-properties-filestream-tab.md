@@ -12,16 +12,16 @@ ms.assetid: 07ca5ac6-a68a-4e85-bc6f-fa7ccf9f1c10
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: dd90fd648e68f878fed736e94e11fe40daf1bfe7
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a6e98afaa7b86c03fc1702b2c07ca0e8714eef7c
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465750"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076597"
 ---
 # <a name="sql-server-properties-filestream-tab"></a>Propriétés de SQL Server (onglet FILESTREAM)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
-  Utilisez cette page pour activer FILESTREAM pour cette installation de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+  Utilisez cette page pour activer FILESTREAM pour cette installation de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
   
 ## <a name="ui-element-list"></a>Liste d’éléments d’interface utilisateur  
  **Activer FILESTREAM pour l'accès Transact-SQL**  

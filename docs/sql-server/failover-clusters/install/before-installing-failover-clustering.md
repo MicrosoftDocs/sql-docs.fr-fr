@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a655225d-8c54-4b30-95fd-31f588167899
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a2ed61eb89deb29b22f82f39de4091f65be43cea
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 87294a8d20bf1c297c1629509a85cde7493b6ef5
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98595323"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076607"
 ---
 # <a name="before-installing-failover-clustering"></a>Avant l'installation du clustering de basculement
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -44,7 +44,7 @@ ms.locfileid: "98595323"
   
 -   Installez les logiciels requis. Avant d'exécuter l'installation ou la mise à niveau vers [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)], installez les composants requis suivants pour réduire la durée d'installation. Vous pouvez installer les logiciels requis sur chaque nœud de cluster de basculement, puis redémarrer les nœuds une fois avant d'exécuter le programme d'installation.  
   
-    -   Windows PowerShell n'est plus installé par le programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Windows PowerShell est un composant requis pour l’installation des composants du [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)][!INCLUDE[ssDE](../../../includes/ssde-md.md)] et de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)]. Si Windows PowerShell n’est pas présent sur votre ordinateur, vous pouvez l’activer en suivant les instructions de la page [Windows Management Framework](https://go.microsoft.com/fwlink/?LinkId=186214) .  
+    -   Windows PowerShell n'est plus installé par le programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Windows PowerShell est un composant requis pour l’installation des composants du [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)][!INCLUDE[ssDE](../../../includes/ssde-md.md)] et de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)]. Si Windows PowerShell n’est pas présent sur votre ordinateur, vous pouvez l’activer en suivant les instructions de la page [Windows Management Framework](/powershell/scripting/windows-powershell/wmf/overview) .  
   
     -   Le .NET Framework 3.5 SP1 n'est plus installé par le programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], mais il peut être requis lors de l'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sur des systèmes d'exploitation Windows plus anciens. Pour plus d’informations, consultez les [notes de publication](/previous-versions/sql/sql-server-15/dn169381(v=sql.15)) de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
   
@@ -145,7 +145,7 @@ ms.locfileid: "98595323"
   
 -   Consultez le contenu de [Security Considerations for a SQL Server Installation](../../../sql-server/install/security-considerations-for-a-sql-server-installation.md).  
   
--   Pour activer l'authentification Kerberos avec [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], consultez l'article [Utiliser l'authentification Kerberos dans SQL Server](https://support.microsoft.com/kb/319723) de la Base de connaissances [!INCLUDE[msCoName](../../../includes/msconame-md.md)] .  
+-   Pour activer l'authentification Kerberos avec [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], consultez l'article [Utiliser l'authentification Kerberos dans SQL Server](https://www.betaarchive.com/wiki/index.php?title=Microsoft_KB_Archive/319723) de la Base de connaissances [!INCLUDE[msCoName](../../../includes/msconame-md.md)] .  
 
 -   L’instance de cluster de basculement (FCI) SQL Server exige que les nœuds de cluster soient joints à un domaine. Les configurations suivantes ne sont **pas prises en charge** : 
     *   instance de cluster de basculement SQL sur des clusters de groupe de travail ; 
