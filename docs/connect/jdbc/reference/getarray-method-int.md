@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.getArray (int)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 5b839d3f-5a4e-43da-b93c-dc9e0f6d4b3b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 81844036d6f3d25177b8ddddbae10b37d9515085
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: be0c9fbc70debd31f2c255600b82f5085a667bec
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437491"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168378"
 ---
 # <a name="getarray-method-int"></a>Méthode getArray (int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

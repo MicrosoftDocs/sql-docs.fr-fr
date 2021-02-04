@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.getURL (java.lang.String)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: eb709f6b-64e1-4d0c-a704-290891627dd7
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 18bf85b53eb15831327970cfa1c1ab90590df157
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b0f24b28728673226bcddb3e77e3f97218aabd56
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433841"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99154691"
 ---
 # <a name="geturl-method-javalangstring"></a>Méthode getURL (java.lang.String)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

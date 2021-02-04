@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.getMaxCatalogNameLength
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 89c11327-eae1-4178-9e26-4b484d521c65
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: bf1819338cb3b456e667c65a3ea98023c7453abb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4314604f23cec70822eb3eeab5abadb1ccd8b09d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435661"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162859"
 ---
 # <a name="getmaxcatalognamelength-method-sqlserverdatabasemetadata"></a>Méthode getMaxCatalogNameLength (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

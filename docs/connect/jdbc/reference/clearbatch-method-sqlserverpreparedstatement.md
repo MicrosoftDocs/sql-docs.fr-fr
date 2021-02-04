@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.clearBatch
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 6e5cda26-e24d-4637-8dfd-8135ba126e3b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 50e546df81a728e42c8549762842eade184587df
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: bb7a605abf5fc56546a33e1d530b955ba1121ca8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88438141"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163524"
 ---
 # <a name="clearbatch-method-sqlserverpreparedstatement"></a>clearBatch, méthode (SQLServerPreparedStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

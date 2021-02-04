@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDriver.getMinorVersion
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 5507000a-98b1-40b1-b8a7-16365ae80d7d
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8669698ee394f75469b0b644ecc1fcbd80376c10
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: aced7c600f2a977eef694a25cd7a23c07cfddeac
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435431"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162747"
 ---
 # <a name="getminorversion-method-sqlserverdriver"></a>Méthode getMinorVersion (SQLServerDriver)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

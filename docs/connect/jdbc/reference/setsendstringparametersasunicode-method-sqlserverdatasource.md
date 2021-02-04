@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDataSource.setSendStringParametersAsUnicode
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 49198d63-76cb-4843-8d04-e49b1fbb6916
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b8957b431a3aabce4ed4564867c052ef63502350
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b21999dfd754787dd74a6f2010f098121e5fc318
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88458351"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173141"
 ---
 # <a name="setsendstringparametersasunicode-method-sqlserverdatasource"></a>Méthode setSendStringParametersAsUnicode (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

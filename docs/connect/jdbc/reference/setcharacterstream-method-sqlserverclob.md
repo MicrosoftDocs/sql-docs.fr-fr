@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerClob.setCharacterStream
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: c02778f2-6681-4a84-a58b-2bcfac4233e4
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f79891e2a2492a225896495651f8f0746353e6a5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b2957acf008433858474c5ff12392c0aa7807953
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432231"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173659"
 ---
 # <a name="setcharacterstream-method-sqlserverclob"></a>Méthode setCharacterStream (SQLServerClob)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

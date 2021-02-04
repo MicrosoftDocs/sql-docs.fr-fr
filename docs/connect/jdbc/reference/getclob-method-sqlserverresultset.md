@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getClob
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: b343b2b2-7215-4bcd-b12d-de4a9662e536
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2ff9b734d6f9d099134e84147e51f5a2e1f6f14d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 75e27ad7cb1e73c4985c64064417bb042ce77644
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436601"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163314"
 ---
 # <a name="getclob-method-sqlserverresultset"></a>getClob, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

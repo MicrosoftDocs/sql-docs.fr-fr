@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsDifferentTableCorrelationNames
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: b4f8db0c-2eaf-476b-b916-3e83355778f7
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0020826fc94dec70c041ec3d1a4d2a1570a04949
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d5943beb8ae6ade712a9f301bec4dcf38723425d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88354025"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159091"
 ---
 # <a name="supportsdifferenttablecorrelationnames-method-sqlserverdatabasemetadata"></a>Méthode supportsDifferentTableCorrelationNames (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

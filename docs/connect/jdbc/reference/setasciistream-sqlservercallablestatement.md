@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 8de3ae7c-ba7b-4249-8333-71c8416b3bb7
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 9d29bcaa89387e426c514f5ffa724dbf72f68374
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b41111b58f19ee1005aaa0dac2384457d23ebf2c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432531"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173971"
 ---
 # <a name="setasciistream-sqlservercallablestatement"></a>setAsciiStream (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

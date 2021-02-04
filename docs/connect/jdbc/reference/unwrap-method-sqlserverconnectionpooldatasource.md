@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: f5c9b734-2096-4ae4-a284-6b4d1b4a00d4
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a9e69d296e613aa887f38f6ad479aa21cfd81c88
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7ea2ec5c8b537448938a267b4dd66e0df1700a17
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88462391"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99160201"
 ---
 # <a name="unwrap-method-sqlserverconnectionpooldatasource"></a>Méthode unwrap (SQLServerConnectionPoolDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

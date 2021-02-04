@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.executeUpdate ()
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: ca534c6b-ef4d-4ae8-8cc3-514728623cff
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: d0a973d76e44869c2eb7584bbc7127f4613a5139
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a15178a58be70d09a00bc0311f257de7a26c4c6f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437601"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163373"
 ---
 # <a name="executeupdate-method-"></a>Méthode executeUpdate ()
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

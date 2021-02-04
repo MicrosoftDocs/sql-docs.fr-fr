@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: c1b95ee7-7e82-418f-8f30-948589086f63
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 4a7ae367a855ecb399e7bd6d720abcb5628f82a4
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6f0ca7dd98743991fc0aea92eb7bbd974924ac82
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431571"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173306"
 ---
 # <a name="setnclob-method-javalangstring-javaioreader-long"></a>Méthode setNClob (java.lang.String, java.io.Reader, long)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

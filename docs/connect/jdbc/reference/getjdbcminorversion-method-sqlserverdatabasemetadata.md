@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.getJDBCMinorVersion
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: d9e153b5-51b7-4e44-b342-f147f04dbe19
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: c45c051c29ffefa6cfcf1b0713a8745401f039ad
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9e55ded9bf11c6b2a8844000cc2319e2d342e90f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435781"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162911"
 ---
 # <a name="getjdbcminorversion-method-sqlserverdatabasemetadata"></a>Méthode getJDBCMinorVersion (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

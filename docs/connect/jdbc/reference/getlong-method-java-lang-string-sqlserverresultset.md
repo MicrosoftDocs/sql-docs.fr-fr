@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getLong (java.lang.String)
 apilocation:
@@ -16,17 +16,17 @@ apitype: Assembly
 ms.assetid: 7bd39d61-7461-443e-a580-753d55ef6903
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 4833ee58132d416339572cf8dd681b7991649b51
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c94d714e79299a5dc475329102ce2c4852ad6205
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435741"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162925"
 ---
 # <a name="getlong-method-javalangstring-sqlserverresultset"></a>getLong, méthode (java.lang.String) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
 
-  Récupère la valeur du nom de la colonne désignée dans la ligne actuelle de cet objet [SQLServerResultSet](../../../connect/jdbc/reference/sqlserverresultset-class.md) en tant que **long**dans le langage de programmation Java.  
+  Récupère la valeur du nom de la colonne désignée dans la ligne actuelle de cet objet [SQLServerResultSet](../../../connect/jdbc/reference/sqlserverresultset-class.md) en tant que **long** dans le langage de programmation Java.  
   
 ## <a name="syntax"></a>Syntaxe  
   

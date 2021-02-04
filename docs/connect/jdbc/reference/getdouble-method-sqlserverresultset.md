@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getDouble
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 55b5b7d0-448f-4b8a-9ca7-563f674d6b81
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 46ee2b362235ee287caffd5ea705c423efd94fff
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9113d4077a07985d5f1a95ab514eaea65280e5e9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436151"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163094"
 ---
 # <a name="getdouble-method-sqlserverresultset"></a>getDouble, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

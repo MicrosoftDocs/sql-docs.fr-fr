@@ -15,12 +15,12 @@ helpviewer_keywords:
 - BCPInit method
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a6557d0df9ce36aef689bad501eedfbe0b299ac8
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: e5872028183d2003218fdc3bf65bcdf189927883
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081808"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159611"
 ---
 # <a name="ibcpsessionbcpinit-ole-db"></a>IBCPSession::BCPInit (OLE DB)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

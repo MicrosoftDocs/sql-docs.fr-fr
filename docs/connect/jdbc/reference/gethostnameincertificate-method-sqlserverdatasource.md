@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - getHostNameInCertificate Method (SQLServerDataSource)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 45ea04e2-9ea5-4171-9136-d09f8a95e128
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 26e931b104c1eba44a09e1b43b51e00d2beaad70
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2514fae5914ddf409254531961e4e67765438aac
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435871"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162971"
 ---
 # <a name="gethostnameincertificate-method-sqlserverdatasource"></a>Méthode getHostNameInCertificate (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

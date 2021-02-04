@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.setBinaryStream
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 567297bf-5bec-46ae-8264-29639b9b4a06
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5b23d225c1cfeef0ca4008b221475af3cc901bfe
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 56d28d3b2ebfc01c319c87983359f33281f1252c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432461"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173888"
 ---
 # <a name="setbinarystream-method--javalangstring-javaioinputstream-int"></a>Méthode setBinaryStream (java.lang.String, java.io.InputStream, int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

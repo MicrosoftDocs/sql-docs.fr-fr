@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.getAsciiStream(String paramName)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 630b659f-eb36-4277-b04e-9a2e6134f795
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8176e432a802416dc0ea41756425862f86c74e20
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8a710e943eb7e4b1d798122d06d01ab7b9bca358
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437431"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168350"
 ---
 # <a name="getasciistream-javalangstring"></a>getAsciiStream (java.lang.String)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

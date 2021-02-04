@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerStatement.getFetchSize
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 8115ca58-8ae9-46ce-8515-7905d7bb25fe
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2f1f57da836e5ce4d0b31e3d4a8e5f4fe283b5ff
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 216ed0d1989a1646add0910fab4f40a929ecd0ae
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436011"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163040"
 ---
 # <a name="getfetchsize-method-sqlserverstatement"></a>getFetchSize, méthode (SQLServerStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

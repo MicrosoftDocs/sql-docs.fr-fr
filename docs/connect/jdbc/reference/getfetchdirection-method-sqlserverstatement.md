@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerStatement.getFetchDirection
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: ceb4ae68-decc-46d3-83f1-0bbd23aaf58c
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b2c42f7296f9bb4ac9cffd68f0d13d5ba7ca920c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a2e23066c13ecba2034b79432fededbf88edaa07
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436041"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163047"
 ---
 # <a name="getfetchdirection-method-sqlserverstatement"></a>Méthode getFetchDirection (SQLServerStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

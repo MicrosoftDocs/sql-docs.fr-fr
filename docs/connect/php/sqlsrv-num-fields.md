@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - sqlsrv_num_fields
 apitype: NA
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 03ca1860-01ed-408c-862a-57a7355de4bf
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 81f279d758f6dcb212fd20306fb09cb0222a2832
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a1ba94aaeef9360c0e46cde0ad8a14f0f7046f95
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88426211"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99153771"
 ---
 # <a name="sqlsrv_num_fields"></a>sqlsrv_num_fields
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

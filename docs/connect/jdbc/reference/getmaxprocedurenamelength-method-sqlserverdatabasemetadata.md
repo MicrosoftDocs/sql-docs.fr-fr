@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.getMaxProcedureNameLength
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: e1c05eb3-8465-46fd-99bc-5e8effcafee5
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 05a3737d1d589d68bc98b8625b510a257651ff75
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 3020742322ae3b51e6e498674ad6058f85f559f6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435541"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162795"
 ---
 # <a name="getmaxprocedurenamelength-method-sqlserverdatabasemetadata"></a>Méthode getMaxProcedureNameLength (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

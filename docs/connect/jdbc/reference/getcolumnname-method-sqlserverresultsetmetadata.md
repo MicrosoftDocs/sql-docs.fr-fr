@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSetMetaData.getColumnName
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 0330ca1d-5e24-4ce3-9d2a-b931f20a0fcf
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b9e3701e5905c2223cd77a9c9bcd30c2ca72042a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9d182063346096ae77b8533408852506813ee26f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436561"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163304"
 ---
 # <a name="getcolumnname-method-sqlserverresultsetmetadata"></a>Méthode getColumnName (SQLServerResultSetMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

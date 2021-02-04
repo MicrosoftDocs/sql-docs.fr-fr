@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: f84cfbe6-ebab-4357-8770-f1db34ecb04f
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e6e7ffce80688ad82930629f09055457854c467e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1a275f8438518e11f6fb41ac2e7e021faa2fa4df
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88354265"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158847"
 ---
 # <a name="updatebinarystream-method-int-javaioinputstream-long"></a>Méthode updateBinaryStream (int, java.io.InputStream, long)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

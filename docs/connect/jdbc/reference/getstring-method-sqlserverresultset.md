@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getString
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: f81dde01-d328-4b32-8871-1efac645b68e
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 23430ac4232ea8093aa4de94279d0e7e55717345
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cfb6a5acf91b523f42299815ee583ac737305788
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434331"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162194"
 ---
 # <a name="getstring-method-sqlserverresultset"></a>getString, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

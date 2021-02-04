@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.cancelRowUpdates
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 2ecacca4-f7bc-4f5d-886a-da7747fdccae
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 32e5333f571ff9375bdbdc61e9743d29a57cedfd
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2d5629e6ea7cb25331cbdeedd1440826c3687caf
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88438181"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168656"
 ---
 # <a name="cancelrowupdates-method-sqlserverresultset"></a>cancelRowUpdates, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

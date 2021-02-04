@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.getFloat (java.lang.String)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: b6492341-fdc2-449c-9d03-95a5dadf1bb0
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f25f20dfdc8ed7af265f505adabdc1a088f7f4ab
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d33f288609d0e1062e5fa9e00f77d4bacd610b77
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435971"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163013"
 ---
 # <a name="getfloat-method-javalangstring"></a>Méthode getFloat (java.lang.String)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

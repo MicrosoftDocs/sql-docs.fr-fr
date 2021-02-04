@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: fe13326b-799d-4bf3-b4f1-32ab1841d0ed
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 693277f2d44e48d55bd323e3d48b60e6bdc51bb8
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e1adc6b6f26349c261cbe8595fe7bc80108b4ee4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432221"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173639"
 ---
 # <a name="setcharacterstream-method-sqlserverpreparedstatement"></a>Méthode setCharacterStream (SQLServerPreparedStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

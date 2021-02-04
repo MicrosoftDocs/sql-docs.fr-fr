@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.setObject (int, java.lang.Object, int)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 78bfb6cc-8ca4-4879-9e2b-04164e746314
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: da2572b4d6d2f58ee33350054b540ea9e8b6e782
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ba21582e19807d7f942419fb543d649d5523ab9b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88458558"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173245"
 ---
 # <a name="setobject-method-int-javalangobject-int"></a>Méthode setObject (int, java.lang.Object, int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 2363902f-d4c6-4cd4-a5fc-86079eb9e418
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 3b5025d8a7387777de1d95861fa6b2d09f436b68
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 74ae525bdd1c05eb01f9bce98cba9ef987087a30
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88458271"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167996"
 ---
 # <a name="sqlserverpreparedstatement-members"></a>Membres de SQLServerPreparedStatement
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

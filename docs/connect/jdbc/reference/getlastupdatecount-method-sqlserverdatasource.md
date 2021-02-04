@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDataSource.getLastUpdateCount
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 4c4fbb24-0b02-42da-928c-a903bb591cc7
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 44b5b9c19b07479aaeae6eb400d3212accd3e5fa
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: bf2a9772d3fd6c97b9416e810ec3d5680ad3f559
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435771"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162898"
 ---
 # <a name="getlastupdatecount-method-sqlserverdatasource"></a>Méthode getLastUpdateCount (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

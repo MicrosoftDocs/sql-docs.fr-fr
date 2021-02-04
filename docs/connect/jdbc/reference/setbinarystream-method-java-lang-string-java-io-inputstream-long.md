@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: d59c7327-c9dc-4e4f-9dff-19e1a3c62eb2
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 390df1468f1bee53cd20ad0584c6204caf9aa12b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8669f362907fcfd9c83bd53e4f0873f3fe84a690
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432471"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173869"
 ---
 # <a name="setbinarystream-method-javalangstring-javaioinputstream-long"></a>Méthode setBinaryStream (java.lang.String, java.io.InputStream, long)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
