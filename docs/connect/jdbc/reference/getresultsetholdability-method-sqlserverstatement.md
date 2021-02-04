@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerStatement.getResultSetHoldability
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 053549ee-2018-47ab-9538-789dac2b150a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: cd7c65b1496220eb4faff60e9d3269a211be196f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 78dc9f286cd8ce036d2a0b7ed8ed6047ce958dff
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434751"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99175141"
 ---
 # <a name="getresultsetholdability-method-sqlserverstatement"></a>getResultSetHoldability, méthode (SQLServerStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

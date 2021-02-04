@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.beforeFirst
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 04eebd6a-016f-4462-82f5-ab34b945eec4
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 672387fd2f26ae0d5d9442a445df2ce433ca2c34
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: fcbaaeb17ad2142a5f829d6346b49e15a58e7d00
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88438201"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168666"
 ---
 # <a name="beforefirst-method-sqlserverresultset"></a>beforeFirst, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

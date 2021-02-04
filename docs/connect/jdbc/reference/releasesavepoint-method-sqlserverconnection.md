@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerConnection.releaseSavepoint
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: b6b625ea-c7ce-4a32-a9e0-6d2b4321bfd8
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 587fa4dcb100feed7890ca87d56218676ce842e5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 43a159feee134937fa14889fde196b2115e59494
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432751"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174164"
 ---
 # <a name="releasesavepoint-method-sqlserverconnection"></a>Méthode releaseSavepoint (SQLServerConnection)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

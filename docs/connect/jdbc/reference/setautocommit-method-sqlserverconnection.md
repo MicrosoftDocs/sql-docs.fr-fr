@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerConnection.setAutoCommit
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: db1e22d2-e53f-474e-8c99-cb1fff7f491a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 117fa85e5ec6bdd7d0d37de9fc057dd8127cf42a
-ms.sourcegitcommit: 129f8574eba201eb6ade1f1620c6b80dfe63b331
+ms.openlocfilehash: 2560883b009aa1184d001851f0fc09a4fa575ac4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87435369"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173949"
 ---
 # <a name="setautocommit-method-sqlserverconnection"></a>setAutoCommit, méthode (SQLServerConnection)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

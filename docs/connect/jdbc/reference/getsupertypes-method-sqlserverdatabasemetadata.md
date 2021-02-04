@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.getSuperTypes
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 5b8e78e6-2bb0-4dc7-9c77-a5609654cb05
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 85106a2fb02a43ed0191717f93211994d8cc7fe1
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 38784846d997b0ad37f67a21cb44e0cdcf8e40c1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434281"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174886"
 ---
 # <a name="getsupertypes-method-sqlserverdatabasemetadata"></a>Méthode getSuperTypes (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

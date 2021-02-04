@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPooledConnection.close
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 8de23939-aa84-47a1-aeb9-b03c69c090dc
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: fe33e7c030ad84bcefce5fb8f1f247ebd65886fa
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 58a124902485f69c4e8e7544446be55727a68fc5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88438101"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168605"
 ---
 # <a name="close-method-sqlserverpooledconnection"></a>Méthode close (SQLServerPooledConnection)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

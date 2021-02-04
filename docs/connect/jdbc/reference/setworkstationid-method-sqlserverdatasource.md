@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDataSource.setWorkstationID
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: c1093615-90bf-4918-9f05-8abd765ffb03
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 435116e862cc973230928d444c2c67e3c6bbf973
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8b0047a866a34f68fe1f4f2be9d51714f04fba73
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450587"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172910"
 ---
 # <a name="setworkstationid-method-sqlserverdatasource"></a>Méthode setWorkstationID (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -40,7 +40,7 @@ public void setWorkstationID(java.lang.String workstationID)
   
  **Chaîne** contenant le nom de l’ordinateur client.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Le workstationID est le nom de l'ordinateur client ou du poste de travail. Si la propriété workstationID n’est pas définie, la valeur par défaut est construite par un appel à la méthode InetAddress.getLocalHost().getHostName(). Si getHostName retourne une valeur vide, la méthode getHostAddress().toString() est appelée.  
   
 ## <a name="see-also"></a>Voir aussi  

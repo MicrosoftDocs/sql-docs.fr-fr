@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.setTimestamp
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 1de95320-3085-4b34-b722-a02aaa2dd6b0
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0e3a2429c9e7e8f49403480b473f8b7985cb5e2d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 3200595ad52a4cef3f8c19c58fffcf7ecc102da2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450646"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172987"
 ---
 # <a name="settimestamp-method-sqlserverpreparedstatement"></a>setTimestamp, méthode (SQLServerPreparedStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

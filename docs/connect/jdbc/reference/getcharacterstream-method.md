@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerClob.getCharacterStream
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 70a5a8c8-791a-43f9-8a0e-1c390f30857c
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 475b7924fc360a53078487a646bedfb86ac07c83
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 56ebb493e4a896ddd4c09cf4931977b35da4d549
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436721"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168052"
 ---
 # <a name="getcharacterstream-method-"></a>Méthode getCharacterStream ()
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

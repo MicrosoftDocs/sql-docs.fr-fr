@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 672171ac-976f-4605-9bee-2a5e141d92cb
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a3b421ae475d6c161396380073d1d8336b7f1b26
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 02451ce51b9d8df378f5560d06d8e716694fc0aa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434641"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99175076"
 ---
 # <a name="getschemas-method-string-string"></a>Méthode getSchemas (String, String)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

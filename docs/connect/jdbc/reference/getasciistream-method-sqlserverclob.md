@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerClob.getAsciiStream
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 134abe5e-5add-4d27-b333-b4b0f4d94c31
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 27a934e014b1b6045ead64e39759c665197f87bc
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c11c82325914bf029a7ac5bf0b5c1b2a5b63058c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437391"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168329"
 ---
 # <a name="getasciistream-method-sqlserverclob"></a>Méthode getAsciiStream (SQLServerClob)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

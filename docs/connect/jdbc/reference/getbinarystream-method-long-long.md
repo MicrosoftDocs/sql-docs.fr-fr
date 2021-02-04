@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 30bc8882-04b4-4efd-95e4-7d3a2a8c1d47
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a641fb117fe1dc091aa04f6343f69dac70d95c22
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: da3fcf0ab4e97c19458981feea8f7e2af4c5a133
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437201"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168229"
 ---
 # <a name="getbinarystream-method-long-long"></a>Méthode getBinaryStream (long, long)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

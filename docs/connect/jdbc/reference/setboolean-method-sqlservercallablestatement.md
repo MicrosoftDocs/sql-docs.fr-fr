@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.setBoolean
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 8cd810b1-9858-4e51-9535-239d864cd288
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 406af612bb46c03fb9b624aa034bc5a0edad8ce4
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a031673250144631d83c766584afee82d561e5aa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432401"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173831"
 ---
 # <a name="setboolean-method-sqlservercallablestatement"></a>Méthode setBoolean (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

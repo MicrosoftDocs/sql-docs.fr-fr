@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.setTimestamp (int, java.sql.Timestamp)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 2f7bb89f-ace7-41cb-b596-5aa8d0dd9e3c
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5bfa8511bd8a3fe0fa4876adc79ee4a25442dc0a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7b61b81f878049c76ddb580c1a121ab486cd9a10
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450701"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173008"
 ---
 # <a name="settimestamp-method-int-javasqltimestamp"></a>Méthode setTimestamp (int, java.sql.Timestamp)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

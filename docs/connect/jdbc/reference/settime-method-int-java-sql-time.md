@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.setTime (int, java.sql.Time)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 1e3878dc-42fe-4fac-8fe3-22a7bd70c6da
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 33fb06a2e241633531b563201200eb140ff2fb20
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 75e6e0169628268efe3196cae5263486ce0750bc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431591"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173120"
 ---
 # <a name="settime-method-int-javasqltime"></a>Méthode setTime (int, java.sql.Time)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getObject (java.lang.String, java.util.Map)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 8104406b-417d-4ff5-9aca-183ee0f76762
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0caeffbcd344c60ed12f59afe3f89b92b610c24b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0c8e5f26e45646d73545477b284c881b930c3776
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435161"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99175354"
 ---
 # <a name="getobject-method-javalangstring-javautilmap-sqlserverresultset"></a>Méthode getObject (java.lang.String, java.util.Map) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

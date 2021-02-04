@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getBytes (int)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 1385d7d4-9288-4cbd-8606-4b919e9b07b2
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e55408224f30335732709427e74869b62852963f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c33a1580e6474d85b72e4bff6d33475accfaba09
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437001"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168173"
 ---
 # <a name="getbytes-method-int-sqlserverresultset"></a>Méthode getBytes (int) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

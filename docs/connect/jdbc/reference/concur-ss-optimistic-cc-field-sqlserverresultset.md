@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.CONCUR_SS_OPTIMISTIC_CC
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 4d5cecb8-b29b-49c0-a4b1-9472b8709ddf
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 21f278843fd846b630b852494ded97810ea19ce6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 21067ebbd8f6100b35b48113c9a4a3cca041d971
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88438061"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166047"
 ---
 # <a name="concur_ss_optimistic_cc-field-sqlserverresultset"></a>CONCUR_SS_OPTIMISTIC_CC, champ (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

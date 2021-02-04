@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerStatement.execute
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: e1367f39-23d7-4e26-b160-6d988d7e6988
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8e8185052b0b84e0ee977e298a981774de821e25
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 019529c3b4c0b07fbd117b7d294b0cbb89168538
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437761"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168470"
 ---
 # <a name="execute-method-sqlserverstatement"></a>Méthode execute (SQLServerStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

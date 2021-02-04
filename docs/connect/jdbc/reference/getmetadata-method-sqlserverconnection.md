@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerConnection.getMetaData
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 86223cb5-3bf4-489a-8c82-669a91764f2b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 92beda80ff310c621ce1c849a8fff1d82d9f771e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0480d1852c55806f09391be330d9c286f40a3389
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435451"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99175496"
 ---
 # <a name="getmetadata-method-sqlserverconnection"></a>getMetaData, méthode (SQLServerConnection)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

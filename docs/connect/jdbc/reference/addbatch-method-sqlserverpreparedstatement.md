@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.addBatch
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 134f1455-c98c-4112-ab2d-9205a0db73df
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5d890003a4126ddcdaac64933ee885401b6a3cb3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e6ee08506550ea8e50cd37a80fb676244a653c49
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88438251"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168693"
 ---
 # <a name="addbatch-method-sqlserverpreparedstatement"></a>addBatch, méthode (SQLServerPreparedStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

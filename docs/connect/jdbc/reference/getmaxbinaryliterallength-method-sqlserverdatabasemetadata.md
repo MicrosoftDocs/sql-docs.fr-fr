@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.getMaxBinaryLiteralLength
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 42e49ff9-8072-44e4-ad75-c864c3a4ad8c
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8112b50bb2205645cb362696836d7b09fd45af8f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9ccb65d40257cc8960706895ce1cf4beda208a7e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435681"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99175594"
 ---
 # <a name="getmaxbinaryliterallength-method-sqlserverdatabasemetadata"></a>Méthode getMaxBinaryLiteralLength (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

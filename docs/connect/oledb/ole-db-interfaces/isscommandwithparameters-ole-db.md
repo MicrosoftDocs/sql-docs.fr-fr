@@ -15,19 +15,19 @@ helpviewer_keywords:
 - ISSCommandWithParameters interface
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0415e6ed7e7749f91f8654027865cfca8ab8c3f2
-ms.sourcegitcommit: c95f3ef5734dec753de09e07752a5d15884125e2
+ms.openlocfilehash: 3a30947176efb820a7105f005e3d372f090d4190
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88862150"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172163"
 ---
 # <a name="isscommandwithparameters-ole-db"></a>ISSCommandWithParameters (OLE DB)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
 [!INCLUDE[Driver_OLEDB_Download](../../../includes/driver_oledb_download.md)]
 
-  L’interface **ISSCommandWithParameters** expose la prise en charge de XML et des types définis par l’utilisateur (UDT) de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Il s’agit d’une interface facultative qui hérite de l’interface OLE DB de base **ICommandWithParameters**. En plus des trois méthodes héritées de **ICommandWithParameters** (**GetParameterInfo**, **MapParameterNames**et **SetParameterInfo**) **ISSCommandWithParameters** fournit deux nouvelles méthodes permettant de gérer des types de données spécifiques au serveur.  
+  L’interface **ISSCommandWithParameters** expose la prise en charge de XML et des types définis par l’utilisateur (UDT) de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Il s’agit d’une interface facultative qui hérite de l’interface OLE DB de base **ICommandWithParameters**. En plus des trois méthodes héritées de **ICommandWithParameters** (**GetParameterInfo**, **MapParameterNames** et **SetParameterInfo**) **ISSCommandWithParameters** fournit deux nouvelles méthodes permettant de gérer des types de données spécifiques au serveur.  
   
 > [!NOTE]  
 >  L’interface **ISSCommandWithParameters** peut être utilisée quand des composants de service sont utilisés, mais ceux-ci n’utilisent pas cette interface.  

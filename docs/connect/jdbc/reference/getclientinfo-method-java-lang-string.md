@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: e8e632c4-d6cc-4c5e-b6ad-873579343b19
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: d3db1e2b164ee4f9b49b5c4c1919c0a1ce713e16
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5a1b16d597533a6c8b2970f9ddd1a66a8b88c225
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436731"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168079"
 ---
 # <a name="getclientinfo-method-javalangstring"></a>Méthode getClientInfo (java.lang.String)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

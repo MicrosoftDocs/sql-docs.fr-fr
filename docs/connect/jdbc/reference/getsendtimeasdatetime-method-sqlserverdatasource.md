@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 02287122-5dc1-455d-987f-95fd9a69d503
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8036454468143c5910d9b5d7ba8135cc1a0ec4a8
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ba9fd31fdbc5626fc3baa81c853bc78ea2a81abc
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434610"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99175064"
 ---
 # <a name="getsendtimeasdatetime-method-sqlserverdatasource"></a>Méthode getSendTimeAsDatetime (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

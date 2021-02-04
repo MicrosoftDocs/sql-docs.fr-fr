@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.setDouble
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 295c16b7-1532-40e1-93ef-64462a2c0ab6
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f2f7b770e5bd8561990cf1e6b209d8d70fae5afc
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f30fbc7ef6fb7854c440791a1e5fba6a46f96156
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431931"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173491"
 ---
 # <a name="setdouble-method-sqlserverpreparedstatement"></a>setDouble, méthode (SQLServerPreparedStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

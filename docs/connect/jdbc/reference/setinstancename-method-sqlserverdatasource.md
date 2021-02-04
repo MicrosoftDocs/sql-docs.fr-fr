@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDataSource.setInstanceName
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 58833726-3a7e-46be-ac0e-4c602d865262
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 84385c871ba2bc3871c4485b69dfb3d801ce930e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7c11c8ed1d301e93614f7138d17a09798121bd40
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431831"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173444"
 ---
 # <a name="setinstancename-method-sqlserverdatasource"></a>Méthode setInstanceName (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

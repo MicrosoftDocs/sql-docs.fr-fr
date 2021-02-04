@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getBigDecimal (java.lang.String, int)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 572a1799-c232-400f-b8d8-37a5719a8d5e
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 16cd3731dc9c6cef484d2cceb0bbced908ef391e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4e0850bbd1c263ba5d494e8e8a0066c13a9da426
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437301"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168289"
 ---
 # <a name="getbigdecimal-method-javalangstring-int-sqlserverresultset"></a>getBigDecimal, méthode (java.lang.String, int) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.setBytes
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: f264f1a6-ee35-4eaf-81d8-ecf99f03b35d
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: ea6f65bb071cf61c5fe0b0d39ef95559361bceca
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 00b6584d3e15fdfeb606d0718eed85ff0fec9ca1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432371"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173799"
 ---
 # <a name="setbytes-method-sqlservercallablestatement"></a>Méthode setBytes (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

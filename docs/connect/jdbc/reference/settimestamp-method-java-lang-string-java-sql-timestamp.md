@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.setTimestamp (java.lang.String, java.sql.Timestamp)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: dc45b126-3196-47ff-956b-cbc897980ff8
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 9f176b15ac48910cf4ce1de74a284fa5080cbc75
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6c242da1e68234becc208cda9563af5672fde3c3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450681"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172997"
 ---
 # <a name="settimestamp-method-javalangstring-javasqltimestamp"></a>Méthode setTimestamp (java.lang.String, java.sql.Timestamp)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

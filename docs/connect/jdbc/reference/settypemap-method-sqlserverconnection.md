@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerConnection.setTypeMap
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: bffd20a6-1310-44b0-9602-974500481fa6
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 219cb957d22f82646b56cf774b34f1b76d183c03
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c53ec28f7ac3530d97e78059305bcf6060a1bae6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88467140"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172957"
 ---
 # <a name="settypemap-method-sqlserverconnection"></a>Méthode setTypeMap (SQLServerConnection)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

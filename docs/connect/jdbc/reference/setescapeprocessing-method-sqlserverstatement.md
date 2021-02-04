@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerStatement.setEscapeProcessing
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 6ac0682e-e04c-4fdb-893b-92408d42051e
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b8864c591a72fdeabc5dd61ee7df34dcdc5f61c1
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c60d547ed0a72a573bda8f16b4051ff796261dd5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431901"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173455"
 ---
 # <a name="setescapeprocessing-method-sqlserverstatement"></a>Méthode setEscapeProcessing (SQLServerStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

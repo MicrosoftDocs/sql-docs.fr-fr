@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.getClob
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: c1824b89-fc2e-4741-b849-7d06108fda97
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 83a69778c3a32d07cf010ceda609baa9b21f53e1
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7aace2bd88950871b8fdbdc25a789b10d57f576d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436621"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168029"
 ---
 # <a name="getclob-method-sqlservercallablestatement"></a>Méthode getClob (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

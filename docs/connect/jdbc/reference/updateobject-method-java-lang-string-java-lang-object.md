@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateObject (java.lang.String, java.lang.Object)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: f6999d9c-eab6-4e4d-96d8-e0fa4b4b87e3
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0598e19220740975f757a0611fd47e0964c9425e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: feba431ea525187fa79e38ae70212e935fe5dcf5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88484918"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174755"
 ---
 # <a name="updateobject-method-javalangstring-javalangobject"></a>Méthode updateObject (java.lang.String, java.lang.Object)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -2,19 +2,19 @@
 title: Matrice de prise en charge des fonctionnalités des pilotes
 description: Découvrez les fonctionnalités courantes prises en charge dans les pilotes pour SQL Server et où trouver des informations à leur sujet.
 ms.custom: ''
-ms.date: 12/03/2020
+ms.date: 01/29/2021
 ms.prod: sql
 ms.technology: connectivity
 ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-daenge
-ms.openlocfilehash: 4fff9c04098bd0796f714d160864e4edb93613ac
-ms.sourcegitcommit: 28fecbf61ae7b53405ca378e2f5f90badb1a296a
+ms.openlocfilehash: e93307a7f29f31aa078a7d705a904812e6aa3847
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96595230"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166055"
 ---
 # <a name="driver-feature-support-matrix-for-microsoft-sql-server"></a>Matrice de prise en charge des fonctionnalités des pilotes pour Microsoft SQL Server
 
@@ -62,9 +62,9 @@ Nous aimerions que tous les pilotes prennent en charge l’ensemble des fonction
 | [Authentification par jeton d’accès Azure Active Directory](/azure/active-directory/develop/access-tokens) | [Oui](odbc/using-azure-active-directory.md#authenticating-with-an-access-token) | [Oui](odbc/using-azure-active-directory.md#authenticating-with-an-access-token) | [Oui](jdbc/connecting-using-azure-active-directory-authentication.md#connecting-using-access-token) | [Oui](oledb/features/using-azure-active-directory.md) |
 | [Authentification par mot de passe Azure Active Directory](/azure/sql-database/sql-database-aad-authentication) |  [Oui](odbc/using-azure-active-directory.md) | [Oui](odbc/using-azure-active-directory.md) | [Oui](jdbc/connecting-using-azure-active-directory-authentication.md) | [Oui](oledb/features/using-azure-active-directory.md) |
 | [Authentification intégrée Azure Active Directory](/azure/sql-database/sql-database-aad-authentication) | [Oui](odbc/using-azure-active-directory.md) | [Oui](odbc/using-azure-active-directory.md) | [Oui](jdbc/connecting-using-azure-active-directory-authentication.md) | [Oui](oledb/features/using-azure-active-directory.md) |
-| [Authentification interactive (MFA) Azure Active Directory](/azure/sql-database/sql-database-aad-authentication) | [Oui](odbc/using-azure-active-directory.md) | | | [Oui](oledb/features/using-azure-active-directory.md) |
+| [Authentification interactive (MFA) Azure Active Directory](/azure/sql-database/sql-database-aad-authentication) | [Oui](odbc/using-azure-active-directory.md) | | [Oui](jdbc/connecting-using-azure-active-directory-authentication.md) | [Oui](oledb/features/using-azure-active-directory.md) |
 | [Authentification Managed Identity Azure Active Directory](/azure/active-directory/managed-identities-azure-resources/overview) | [Oui](odbc/using-azure-active-directory.md) | [Oui](odbc/using-azure-active-directory.md) | [Oui](jdbc/connecting-using-azure-active-directory-authentication.md) | [Oui](oledb/features/using-azure-active-directory.md) |
-| [Authentification par principal de service Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals) | | | | [Oui](oledb/features/using-azure-active-directory.md) |
+| [Authentification par principal de service Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals) | [Oui](odbc/using-azure-active-directory.md) | [Oui](odbc/using-azure-active-directory.md) | [Oui](jdbc/connecting-using-azure-active-directory-authentication.md) | [Oui](oledb/features/using-azure-active-directory.md) |
 | [Authentification Windows intégrée](/windows-server/security/windows-authentication/windows-authentication-overview) | Oui | [Oui](odbc/linux-mac/using-integrated-authentication.md) | [Oui](jdbc/using-kerberos-integrated-authentication-to-connect-to-sql-server.md) | Oui |
 | [Copie en bloc](../relational-databases/import-export/bulk-import-and-export-of-data-sql-server.md) | [Oui](../relational-databases/native-client-odbc-extensions-bulk-copy-functions/sql-server-driver-extensions-bulk-copy-functions.md) | [Oui](../relational-databases/native-client-odbc-extensions-bulk-copy-functions/sql-server-driver-extensions-bulk-copy-functions.md) | [Oui](jdbc/using-bulk-copy-with-the-jdbc-driver.md) | [Oui](oledb/features/performing-bulk-copy-operations.md) |
 | [Métadonnées de recherche et de classification des données](../relational-databases/security/sql-data-discovery-and-classification.md) | [Oui](odbc/data-classification.md) | [Oui](odbc/data-classification.md) | [Oui](jdbc/data-discovery-classification-sample.md) | |

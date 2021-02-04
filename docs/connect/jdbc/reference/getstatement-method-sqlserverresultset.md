@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getStatement
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 7dea981b-b4fd-4f8d-954f-e686124627e2
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f5affe4faf9a3c4f732d13d4c5ac54b442a28c83
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 720afe1e93fda2374427b0a9d01ad3ba069ba3e9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434391"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174957"
 ---
 # <a name="getstatement-method-sqlserverresultset"></a>getStatement, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

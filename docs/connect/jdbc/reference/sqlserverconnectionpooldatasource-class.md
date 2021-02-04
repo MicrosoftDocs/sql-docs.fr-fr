@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: b00e5a90-2af7-4d04-8ef8-256183777dcf
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2faa9b4df512d9b37bbba581353938120b85cbb1
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 152dcc1f6aa2d8b463b3e859f79ade54b5620334
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88354785"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172826"
 ---
 # <a name="sqlserverconnectionpooldatasource-class"></a>Classe SQLServerConnectionPoolDataSource
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

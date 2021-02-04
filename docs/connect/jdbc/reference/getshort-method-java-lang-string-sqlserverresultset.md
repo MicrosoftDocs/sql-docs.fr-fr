@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getShort (java.lang.String)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 183af414-b0a3-4ca7-b160-d199bcf469b0
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: cd726246ff18f9c3fe37dbaef41c46589f1da4f4
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c25233a2ab9bb029949e4ed3a0b1ca5279654c23
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434571"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99175037"
 ---
 # <a name="getshort-method-javalangstring-sqlserverresultset"></a>getShort, méthode (java.lang.String) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

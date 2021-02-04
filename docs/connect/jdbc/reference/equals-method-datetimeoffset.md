@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: d9883c25-5c43-4633-874e-4b490e4bccad
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f901d6d6e8f2906d5cf64d81fcc55be45afcf04f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7ba22ce66a8479d7494820c699c8d9fd496f6d51
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437811"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99168489"
 ---
 # <a name="equals-method-datetimeoffset"></a>Méthode equals (DateTimeOffset)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

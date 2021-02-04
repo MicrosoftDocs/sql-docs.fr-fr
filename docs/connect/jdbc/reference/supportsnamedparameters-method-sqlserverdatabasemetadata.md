@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsNamedParameters
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 158be08f-387d-4c5b-b567-a1fe590d6f16
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 46804b36bde6a8c9bf52c0ec7fda4f97e2be2113
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2494fdccbcbeefa18eb5729604ba7361c9238751
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450311"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99167934"
 ---
 # <a name="supportsnamedparameters-method-sqlserverdatabasemetadata"></a>Méthode supportsNamedParameters (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

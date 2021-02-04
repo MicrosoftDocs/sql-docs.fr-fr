@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.setBigDecimal
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: b50a920c-3839-40f0-9411-c60bbc2a9f34
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: cfc53c301f011250c9e90b92e24020cae7732e05
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 600a9d354f3c14dc4b2240639ff4a136df2949be
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432511"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173934"
 ---
 # <a name="setbigdecimal-method-sqlservercallablestatement"></a>Méthode setBigDecimal (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

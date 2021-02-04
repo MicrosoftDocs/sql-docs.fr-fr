@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 839f9c67-4cd4-4e07-a0ef-ba62591e9e5a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: c50c018ef439c8c86b4b2dce7380d711de9a6fa5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5cb0eef31f78f9e4b7a2f65a5e21ac4ae5b9f9a8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88478559"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99172851"
 ---
 # <a name="sqlserverclob-methods"></a>Méthodes SQLServerClob
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.setTime (java.lang.String, java.lang.Time)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 49301bec-6cf2-43fb-9d4e-e3986164a208
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2ecf5a5e0d1cdad43310f257cf301de175abf362
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d4b1a5e9f151ee48c8524374fd86e050ff7e1353
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88467171"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99173056"
 ---
 # <a name="settime-method-javalangstring-javasqltime"></a>Méthode setTime (java.lang.String, java.sql.Time)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
