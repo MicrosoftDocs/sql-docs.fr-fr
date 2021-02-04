@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 58a974ea-4daf-4e3b-98ed-9731b9c9250f
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2dd1bd53b5ce3304b48fe8ed022e538d4d705154
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: 31e4daeab0019aaf2ea9eb4a26af3f47c564c680
+ms.sourcegitcommit: fa63019cbde76dd981b0c5a97c8e4d57e8d5ca4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081438"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99495637"
 ---
 # <a name="how-to-retrieve-date-and-time-types-as-strings-using-the-sqlsrv-driver"></a>Procédure : Récupérer des types date et heure sous forme de chaînes à l’aide du pilote SQLSRV
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -39,7 +39,7 @@ L’exemple suivant montre la syntaxe permettant de récupérer des types de dat
 ```php
 <?php
 $serverName = "MyServer";
-$connectionInfo = array("Database"=>"AdventureWorks", 'ReturnDatesAsStrings '=> true);
+$connectionInfo = array("Database"=>"AdventureWorks", 'ReturnDatesAsStrings'=> true);
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 if ($conn === false) {
    echo "Could not connect.\n";
