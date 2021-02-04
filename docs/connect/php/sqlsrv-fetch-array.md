@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - sqlsrv_fetch_array
 apitype: NA
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 69270b9e-0791-42f4-856d-412da39dea63
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a9067a7ffa6bd6379fb9384b915d07cb64893467
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: 6e0df700729db03d2d0dd52ac5d0a251827db7d8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92080639"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195657"
 ---
 # <a name="sqlsrv_fetch_array"></a>sqlsrv_fetch_array
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -64,7 +64,7 @@ Pour plus d’informations sur ces valeurs, consultez [Spécification d’un typ
 ## <a name="return-value"></a>Valeur de retour  
 Si une ligne de données est récupérée, un **tableau** est retourné. S’il n’y a plus aucune ligne à récupérer, la valeur **null** est retournée. Si une erreur se produit, la valeur **false** est retournée.  
   
-En fonction de la valeur du paramètre *$fetchType* , le **tableau** retourné peut être un **tableau**indexé numériquement, un **tableau**associatif, ou les deux. Par défaut, un **tableau** avec des clés numériques et associatives est retourné. Le type de données d’une valeur dans le tableau retourné sera le type de données PHP par défaut. Pour plus d’informations sur les types de données PHP par défaut, consultez [Default PHP Data Types](../../connect/php/default-php-data-types.md).  
+En fonction de la valeur du paramètre *$fetchType* , le **tableau** retourné peut être un **tableau** indexé numériquement, un **tableau** associatif, ou les deux. Par défaut, un **tableau** avec des clés numériques et associatives est retourné. Le type de données d’une valeur dans le tableau retourné sera le type de données PHP par défaut. Pour plus d’informations sur les types de données PHP par défaut, consultez [Default PHP Data Types](../../connect/php/default-php-data-types.md).  
   
 ## <a name="remarks"></a>Notes  
 Si une colonne sans nom est retournée, la clé associative de l’élément de tableau est une chaîne vide (""). Par exemple, considérez cette instruction Transact-SQL qui insère une valeur dans une table de base de données et récupère la clé primaire générée par le serveur :  
@@ -83,7 +83,7 @@ SELECT SCOPE_IDENTITY() AS PictureID
 Si un jeu de résultats contient plusieurs colonnes sans nom, la valeur de la dernière colonne sans nom est affectée à la clé de chaîne vide ("").  
   
 ## <a name="associative-array-example"></a>Exemple de tableau associatif  
-L’exemple suivant récupère chaque ligne d’un jeu de résultats sous forme d’objet **array**associatif. L’exemple part du principe que SQL Server et la base de données [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) sont installés sur l’ordinateur local. Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
+L’exemple suivant récupère chaque ligne d’un jeu de résultats sous forme d’objet **array** associatif. L’exemple part du principe que SQL Server et la base de données [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) sont installés sur l’ordinateur local. Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
   
 ```  
 <?php  

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateFloat (int, float)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: c9ddcd7d-1dd4-491a-99ff-6cce7f67a73b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 08757f382cd247d4b9da233e10d8eec5d906d97d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: bf29743a39cbb5316fc80039594dedb960339128
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431371"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189079"
 ---
 # <a name="updatefloat-method-int-float"></a>Méthode updateFloat (int, float)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

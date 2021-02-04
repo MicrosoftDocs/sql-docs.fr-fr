@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6cefdc18-899e-410c-9ae4-d6080f724046
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: fcdd0f1d34ed4107cbe3c90708abe286efbf0837
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 6aa2a07da107a5283a4dacc8323dc5d6a928702a
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642653"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251181"
 ---
 # <a name="wsfc-disaster-recovery-through-forced-quorum-sql-server"></a>Récupération d'urgence WSFC par le quorum forcé (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "97642653"
 1.  **Déterminez l'étendue de l'échec.** Identifiez les groupes de disponibilité ou les instances de SQL Server non sensibles et les nœuds du cluster qui sont en ligne et disponibles à l'utilisation post-incident, puis examinez les journaux des événements Windows et les journaux système de SQL Server.  Si possible, vous devez conserver les données d'analyse et les journaux système pour les examiner ultérieurement.  
   
     > [!TIP]  
-    >  Sur une instance de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]qui répond, vous pouvez obtenir des informations sur l’état d’intégrité des groupes de disponibilité qui possèdent un réplica de disponibilité sur l’instance de serveur local en interrogeant la vue de gestion dynamique (DMV) [sys.dm_hadr_availability_group_states](../../../relational-databases/system-dynamic-management-views/sys-dm-hadr-availability-group-states-transact-sql.md) .  
+    >  Sur une instance de [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)]qui répond, vous pouvez obtenir des informations sur l’état d’intégrité des groupes de disponibilité qui possèdent un réplica de disponibilité sur l’instance de serveur local en interrogeant la vue de gestion dynamique (DMV) [sys.dm_hadr_availability_group_states](../../../relational-databases/system-dynamic-management-views/sys-dm-hadr-availability-group-states-transact-sql.md) .  
   
 2.  **Démarrez le cluster WSFC en utilisant le quorum forcé sur un nœud unique.** Identifiez un nœud avec un nombre minime de défaillances de composant, autre que celui qui a arrêté le service de cluster WSFC.  Vérifiez que ce nœud peut communiquer avec la majorité des autres nœuds.  
   

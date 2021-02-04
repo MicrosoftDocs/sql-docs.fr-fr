@@ -16,16 +16,16 @@ helpviewer_keywords:
 ms.assetid: 79d2ea5a-edd8-4b3b-9502-96202057b01a
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 56cfc62709e24fc48704ed44b86a866b07a0b0ef
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 11e424ef4f32b91a7c4d65faf796335a3f7faf26
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642663"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251214"
 ---
 # <a name="windows-server-failover-clustering-with-sql-server"></a>Clustering de basculement Windows Server avec SQL Server
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Un *cluster de basculement Windows Server* (WSFC, Windows Server Failover Cluster) est un groupe de serveurs indépendants qui fonctionnent conjointement afin d’augmenter la disponibilité des applications et des services. [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] tire parti des services et des fonctionnalités de WSFC afin de prendre en charge [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] et les instances de cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] .  
+  Un *cluster de basculement Windows Server* (WSFC, Windows Server Failover Cluster) est un groupe de serveurs indépendants qui fonctionnent conjointement afin d’augmenter la disponibilité des applications et des services. [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] tire parti des services et des fonctionnalités de WSFC afin de prendre en charge [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] et les instances de cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] .  
   
    
 ##  <a name="terms-and-definitions"></a><a name="TermsAndDefs"></a> Termes et définitions  
@@ -76,7 +76,7 @@ ms.locfileid: "97642663"
  Pour plus d’informations, consultez : [Vue d’ensemble du clustering de basculement - Windows Server](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831579(v=ws.11))  
   
 ##  <a name="sql-server-always-on-technologies-and-wsfc"></a><a name="AlwaysOnWsfcTech"></a> Technologies AlwaysOn de SQL Server et WSFC  
- [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] *AlwaysOn* est une solution haute disponibilité et de récupération d’urgence qui tire parti de WSFC. Les fonctionnalités AlwaysOn offrent des solutions intégrées et souples qui augmentent la disponibilité d’application, fournissent de meilleurs retours sur les investissements en matériel, et simplifient le déploiement et la gestion haute disponibilité.  
+ [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] *AlwaysOn* est une solution haute disponibilité et de récupération d’urgence qui tire parti de WSFC. Les fonctionnalités AlwaysOn offrent des solutions intégrées et souples qui augmentent la disponibilité d’application, fournissent de meilleurs retours sur les investissements en matériel, et simplifient le déploiement et la gestion haute disponibilité.  
   
  [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] et les instances de cluster de basculement AlwaysOn utilisent WSFC comme technologie de plateforme, en enregistrant les composants en tant que ressources de cluster WSFC.  Des ressources associées sont combinées en un *rôle*, lequel peut être rendu dépendant d’autres ressources de cluster WSFC. Le cluster WSFC peut ensuite détecter et indiquer la nécessité de redémarrer l’instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ou de la basculer automatiquement vers un nœud serveur différent dans le cluster WSFC.  
   

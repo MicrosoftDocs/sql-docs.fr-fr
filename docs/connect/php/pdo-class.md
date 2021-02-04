@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 9c77b68d-0649-44af-96fa-586cbb319f5f
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 9efde910074d92b35fbe6338f79f71ac87d11d80
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+ms.openlocfilehash: bea5767d2dfd31e19dfa27c69798afc1d559f916
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88646223"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202101"
 ---
 # <a name="pdo-class"></a>Classe PDO
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

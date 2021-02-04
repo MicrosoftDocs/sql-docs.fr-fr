@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsSubqueriesInQuantifieds
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 6749e14c-0f8a-4f1f-8583-dd5cc79b24fe
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: d7c10719052590399c4716a7b38f85444da8b6c9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5f9d4dfa5a933ede71a79ad0c77e31bcb5fbdd87
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88466971"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189127"
 ---
 # <a name="supportssubqueriesinquantifieds-method-sqlserverdatabasemetadata"></a>Méthode supportsSubqueriesInQuantifieds (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

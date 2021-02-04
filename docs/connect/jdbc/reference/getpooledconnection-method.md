@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerConnectionPoolDataSource.getPooledConnection ()
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: aad6c325-3398-462c-aa6e-201dc89fa5ef
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 7a4316687bb6def0a2d31395c715fd2a3dbe1925
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1dd6e8c826ef3ff8659ad7f4baa3bdd72574b4ec
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434961"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99175243"
 ---
 # <a name="getpooledconnection-method-"></a>Méthode getPooledConnection ()
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

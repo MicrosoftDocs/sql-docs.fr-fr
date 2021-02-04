@@ -18,18 +18,18 @@ ms.author: maghan
 ms.reviewer: mikeray
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 00caef8ecdd73814d60ce2c98c65ba0fc4083379
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: c180d44cf3ea9a0c878168eba4257e880c1ba965
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92037598"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250934"
 ---
 # <a name="create-or-edit-a-server-group-sql-server-management-studio"></a>Créer ou modifier un groupe de serveurs (SQL Server Management Studio)
 
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-Cette rubrique explique comment organiser les serveurs dans des serveurs inscrits dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] en créant des groupes de serveurs et en plaçant les serveurs dans les groupes. Vous pouvez créer des groupes de serveurs dans Serveurs inscrits à tout moment ou lors de l'inscription des serveurs.  
+Cette rubrique explique comment organiser les serveurs dans des serveurs inscrits dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] en créant des groupes de serveurs et en plaçant les serveurs dans les groupes. Vous pouvez créer des groupes de serveurs dans Serveurs inscrits à tout moment ou lors de l'inscription des serveurs.  
 
 ## <a name="SSMSProcedure"></a>
 

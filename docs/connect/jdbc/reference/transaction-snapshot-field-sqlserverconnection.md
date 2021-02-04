@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerConnection.TRANSACTION_SNAPSHOT
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 21c55c0b-76f0-411d-aa13-f606d3524b0e
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: dedced2939e1deccc8cc9f145ffca5f748fc033e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 75be61d73ed9ade4289d21461a1168cd0996b017
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431461"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189791"
 ---
 # <a name="transaction_snapshot-field-sqlserverconnection"></a>TRANSACTION_SNAPSHOT, champ (SQLServerConnection)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

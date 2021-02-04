@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 39ceaac5-42fa-4b5d-bfb6-54403d7f0dc9
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: fa75cc2e8a120510edc711aafc37d268fec4dba7
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 9101f2cf26e797cc63a909a85c3eefa3fb083b4f
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642721"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251191"
 ---
 # <a name="failover-policy-for-failover-cluster-instances"></a>Stratégie de basculement pour les instances de cluster de basculement
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
-  Dans une instance de cluster de basculement (FCI) [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] , un seul nœud peut posséder le groupe de ressources de cluster de basculement Windows Server (WSFC) à un moment donné. Les demandes des clients sont servies par ce nœud dans la FCI. En cas d'échec et d'un redémarrage infructueux, la propriété du groupe est déplacée vers un autre nœud WSFC dans la FCI. Ce processus s'appelle le basculement. [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] augmente la fiabilité de la détection de pannes et fournit une stratégie de basculement flexible.  
+  Dans une instance de cluster de basculement (FCI) [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] , un seul nœud peut posséder le groupe de ressources de cluster de basculement Windows Server (WSFC) à un moment donné. Les demandes des clients sont servies par ce nœud dans la FCI. En cas d'échec et d'un redémarrage infructueux, la propriété du groupe est déplacée vers un autre nœud WSFC dans la FCI. Ce processus s'appelle le basculement. [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] augmente la fiabilité de la détection de pannes et fournit une stratégie de basculement flexible.  
   
  Une FCI [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] dépend du service WSFC sous-jacent pour la détection de basculement. Par conséquent, deux mécanismes déterminent le comportement du basculement pour la FCI : l'ancien mécanisme est une fonctionnalité WSFC native et le dernier est une fonctionnalité ajoutée par la configuration [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] .  
   

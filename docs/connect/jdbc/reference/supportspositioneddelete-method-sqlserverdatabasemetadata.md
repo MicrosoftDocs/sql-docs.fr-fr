@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsPositionedDelete
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 8011659a-d74b-489b-a88b-08bd9e8b48b2
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: d943aa97362f75c567dc3e98a1736a2d7c540c91
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: fc6a01f3064d48dc59ea606b92f5ebbc942a8739
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88466982"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186376"
 ---
 # <a name="supportspositioneddelete-method-sqlserverdatabasemetadata"></a>Méthode supportsPositionedDelete (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

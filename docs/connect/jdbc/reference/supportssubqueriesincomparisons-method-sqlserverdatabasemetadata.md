@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsSubqueriesInComparisons
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 467d32e6-b47e-4095-9f8b-73e07fb814e8
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 487dacc09950670df68cec5517a14a46378beeec
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b1db10a54382263450097dc4dc8d5daafa877c32
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450146"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189151"
 ---
 # <a name="supportssubqueriesincomparisons-method-sqlserverdatabasemetadata"></a>Méthode supportsSubqueriesInComparisons (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

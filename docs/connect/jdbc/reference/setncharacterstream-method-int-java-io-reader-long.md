@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 36396dc9-f109-4da0-bd64-726704046bbf
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: d5baf0107e4c641782d2808e0fc62be9e1dbc3e5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ce7445a945b8ee655961f458ba39849bc4fe7ce1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431671"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178866"
 ---
 # <a name="setncharacterstream-method-int-javaioreader-long"></a>Méthode setNCharacterStream (int, java.io.Reader, long)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

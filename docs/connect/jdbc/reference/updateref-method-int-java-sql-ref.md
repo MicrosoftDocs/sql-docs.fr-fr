@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateRef (int, java.sql.Ref)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: eab3ebae-3f68-4303-869a-fee06e3a9c71
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 9358fdc1c788e2e2be19b4999c3d10ca825d2799
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 83619b41d10ffc2963d10054fde3c38041a11ad7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88353165"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183886"
 ---
 # <a name="updateref-method-int-javasqlref"></a>Méthode updateRef (int, java.sql.Ref)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

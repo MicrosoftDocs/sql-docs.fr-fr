@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.insertRow
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 363d1008-1396-4fc0-8e27-c9ba2499e7f1
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 3a399b5dbcd9d4c330c79d73b3cb2a57b2e02675
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c8571bb1e069be74de9ec93890606b887d247e5d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433681"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177519"
 ---
 # <a name="insertrow-method-sqlserverresultset"></a>insertRow, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

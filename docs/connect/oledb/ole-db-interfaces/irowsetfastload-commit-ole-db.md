@@ -15,12 +15,12 @@ helpviewer_keywords:
 - Commit method
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8e0248c160b80203a09f4712d697d1896732033e
-ms.sourcegitcommit: c95f3ef5734dec753de09e07752a5d15884125e2
+ms.openlocfilehash: e2b2d1b909732b6436346adb31db2d4c34b7f698
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88860692"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183860"
 ---
 # <a name="irowsetfastloadcommit-ole-db"></a>IRowsetFastLoad::Commit (OLE DB)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

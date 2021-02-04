@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerStatement.setCursorName
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 3f3ec4f2-103a-4e16-9206-c5bd8639f946
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 9b820e378338eac88adae654f21b29fad8bec05b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e3eab2388fca9dd4cd777ebff32442ea7daf956e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432091"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179073"
 ---
 # <a name="setcursorname-method-sqlserverstatement"></a>Méthode setCursorName (SQLServerStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

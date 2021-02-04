@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 5864b1d8-6814-41cd-a88d-415124484c13
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 03ed6428a6c655f3639bd66449506a6e50dd9186
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+ms.openlocfilehash: ed2a580a972375a14c5ed6532e40eb7db43373a5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88646179"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202041"
 ---
 # <a name="pdoerrorcode"></a>PDO::errorCode
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

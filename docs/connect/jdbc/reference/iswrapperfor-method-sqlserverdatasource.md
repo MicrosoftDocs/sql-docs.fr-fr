@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: f77af027-c021-4a17-b264-1ee592bfdd84
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: bcd792e3029a1591eaa05f88de80569e750429e9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: be904d675a160e70bfa2f8a9ad37859e24926c00
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433321"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177143"
 ---
 # <a name="iswrapperfor-method-sqlserverdatasource"></a>Méthode isWrapperFor (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

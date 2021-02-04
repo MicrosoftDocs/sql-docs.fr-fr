@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 048a6d8f-7fc4-449e-8161-19268c68f41d
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 22a5544c55d93cba85fcc669a85a3cc74a8b9304
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+ms.openlocfilehash: 2a23eecc838392bc22057069aa3bf853cd1746a0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88646589"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179911"
 ---
 # <a name="pdostatementnextrowset"></a>PDOStatement::nextRowset
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

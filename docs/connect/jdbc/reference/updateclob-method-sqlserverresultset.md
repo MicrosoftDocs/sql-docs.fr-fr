@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateClob
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: e841f9a6-e94f-4552-a0e2-aefe3d84faf0
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 1f24fb7b9bb14c74df2378b52f3247fd1c34266b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a604c45ce4f47f208a0dc63b84b18f5ac74dab4c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88353715"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188165"
 ---
 # <a name="updateclob-method-sqlserverresultset"></a>Méthode updateClob (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

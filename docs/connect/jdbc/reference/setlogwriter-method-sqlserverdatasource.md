@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDataSource.setLogWriter
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 7a77d8ef-2211-4bf8-af35-020fc896c073
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 3f38105acc725f392c91adf193e658ed3ad05ff6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ed4dca734759cfc5fd1d2f67bd3f2feecf9ae8b5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431721"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178889"
 ---
 # <a name="setlogwriter-method-sqlserverdatasource"></a>Méthode setLogWriter (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -40,7 +40,7 @@ public void setLogWriter(java.io.PrintWriter out)
   
  Objet PrintWriter.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
  Cette méthode setLogWriter est spécifiée par la méthode setLogWriter de l’interface javax.sql.DataSource.  
   
 ## <a name="see-also"></a>Voir aussi  

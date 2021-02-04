@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerXADataSource.getXAConnection ()
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: b2710613-78b1-438f-b996-c7ae6f34381a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: ea992985bc54be3313f7194781f345819bb1d869
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 54e4fcf13da93b908ee0e4e75b7061b2d319b903
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433731"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177571"
 ---
 # <a name="getxaconnection-method-"></a>Méthode getXAConnection ()
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

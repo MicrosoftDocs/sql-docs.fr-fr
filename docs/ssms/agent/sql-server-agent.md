@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 01/19/2017
 monikerRange: = azuresqldb-mi-current || >= sql-server-2016
-ms.openlocfilehash: 58d9f3921500e2fd7fd1fa02046d4f89d67ccbeb
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: cc8adae5672f14e25e9094befd455ac6ee599850
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478790"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250979"
 ---
 # <a name="sql-server-agent"></a>SQL Server Agent
 
@@ -29,7 +29,7 @@ ms.locfileid: "97478790"
 > [!IMPORTANT]  
 > Dans [Azure SQL Managed Instance](/azure/sql-database/sql-database-managed-instance), la plupart, mais pas toutes les fonctionnalités SQL Server Agent sont actuellement prises en charge. Pour plus d’informations, consultez [Différences T-SQL entre Azure SQL Managed Instance et SQL Server](/azure/sql-database/sql-database-managed-instance-transact-sql-information#sql-server-agent).
 
-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent est un service Microsoft Windows qui exécute des tâches administratives planifiées appelées *travaux* dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent est un service Microsoft Windows qui exécute des tâches administratives planifiées appelées *travaux* dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
 
 ## <a name="benefits-of-sql-server-agent"></a><a name="Benefits"></a>Avantages de SQL Server Agent 
 
@@ -38,7 +38,7 @@ ms.locfileid: "97478790"
 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent peut exécuter un travail sur la base d'une planification, en réponse à un événement spécifique ou sur demande. Par exemple, si vous sauvegardez l’ensemble des serveurs de l’entreprise chaque jour ouvrable après les horaires de bureau, vous pouvez automatiser cette tâche. Planifiez l'exécution de la sauvegarde après 22h00 du lundi au vendredi ; si la sauvegarde rencontre un problème, SQL Server Agent peut enregistrer l'événement et vous en avertir.  
   
 > [!NOTE]  
-> Par défaut, le service de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent est désactivé lorsque [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] est installé, sauf si l'utilisateur choisit explicitement de démarrer automatiquement le service.  
+> Par défaut, le service de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent est désactivé lorsque [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] est installé, sauf si l'utilisateur choisit explicitement de démarrer automatiquement le service.  
   
 ## <a name="sql-server-agent-components"></a><a name="Components"></a>Composants de SQL Server Agent  
 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent utilise les composants ci-après pour définir les tâches à exécuter et quand les exécuter, et pour signaler si elles ont réussi ou échoué.  

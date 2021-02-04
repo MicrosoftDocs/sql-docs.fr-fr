@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cd909612-99cc-4962-a8fb-e9a5b918e221
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 4c230a793b81960b29e66813ba392eeb6395d5ee
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 40c1f3b925612611d1fe925f87bd2d4dd9d926c4
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642737"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251226"
 ---
 # <a name="sql-server-multi-subnet-clustering-sql-server"></a>Clustering de sous-réseaux multiples SQL Server (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "97642737"
   
    
 ##  <a name="sql-server-multi-subnet-failover-cluster-two-nodes-two-subnets"></a><a name="VisualElement"></a> Cluster de basculement de sous-réseaux multiples SQL Server (deux nœuds, deux sous-réseaux)  
- L'illustration suivante représente une instance de cluster de basculement (FCI) à deux nœuds et deux sous-réseaux dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+ L'illustration suivante représente une instance de cluster de basculement (FCI) à deux nœuds et deux sous-réseaux dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)].  
   
  ![Architecture de sous-réseaux multiples avec MultiSubnetFailover](../../../sql-server/failover-clusters/windows/media/multi-subnet-architecture-withmultisubnetfailoverparam.png "Architecture de sous-réseaux multiples avec MultiSubnetFailover")  
   
@@ -67,7 +67,7 @@ ms.locfileid: "97642737"
 ##  <a name="client-recovery-latency-during-failover"></a><a name="DNS"></a> Latence de récupération cliente pendant un basculement  
  Une instance FCI à plusieurs sous-réseaux active par défaut la ressource de cluster RegisterAllProvidersIP pour son nom réseau. Dans une configuration à plusieurs sous-réseaux, les adresses IP en ligne et hors connexion du nom réseau seront inscrites sur le serveur DNS. L'application cliente récupère ensuite toutes les adresses IP inscrites depuis le serveur DNS, puis tente de se connecter aux adresses dans l'ordre ou en parallèle. Cela signifie que le temps de récupération client dans les basculements à plusieurs sous-réseaux ne dépend plus des latences de mise à jour DNS. Par défaut, le client tente les adresses IP dans l'ordre. Quand le client utilise le nouveau paramètre facultatif **MultiSubnetFailover=True** dans sa chaîne de connexion, il tente à la place les adresses IP simultanément et se connecte au premier serveur qui répond. Cela peut réduire la latence de récupération cliente lorsque des basculements se produisent. Pour plus d’informations, consultez [Connectivité client AlwaysOn (SQL Server)](../../../database-engine/availability-groups/windows/always-on-client-connectivity-sql-server.md) et [Créer ou configurer un écouteur de groupe de disponibilité (SQL Server)](../../../database-engine/availability-groups/windows/create-or-configure-an-availability-group-listener-sql-server.md).  
   
- Avec les bibliothèques clientes héritées ou les fournisseurs de données tiers, vous ne pouvez pas utiliser le paramètre **MultiSubnetFailover** dans votre chaîne de connexion. Pour vous aider à vous assurer que votre application cliente s'exécute de façon optimale avec l'instance FCI à plusieurs sous-réseaux dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)], essayez d'ajuster le délai de connexion dans la chaîne de connexion du client par 21 secondes pour chaque adresse IP supplémentaire. Cela garantit que la tentative de reconnexion du client n’expire pas avant de pouvoir faire défiler toutes les adresses IP de votre instance FCI à plusieurs sous-réseaux.  
+ Avec les bibliothèques clientes héritées ou les fournisseurs de données tiers, vous ne pouvez pas utiliser le paramètre **MultiSubnetFailover** dans votre chaîne de connexion. Pour vous aider à vous assurer que votre application cliente s'exécute de façon optimale avec l'instance FCI à plusieurs sous-réseaux dans [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)], essayez d'ajuster le délai de connexion dans la chaîne de connexion du client par 21 secondes pour chaque adresse IP supplémentaire. Cela garantit que la tentative de reconnexion du client n’expire pas avant de pouvoir faire défiler toutes les adresses IP de votre instance FCI à plusieurs sous-réseaux.  
   
  Le délai d’expiration de connexion cliente par défaut pour [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Management Studio et **sqlcmd** est de 15 secondes.  
  

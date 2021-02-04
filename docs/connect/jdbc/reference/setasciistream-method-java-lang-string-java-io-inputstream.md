@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: dc2caa44-9eb5-4ed8-a889-36148b50901d
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2fef33d5b60bef1f26fde6711cf849d6fab7487f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e1853007638de6ad13828b1ac37299b6b44114f4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432571"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99174004"
 ---
 # <a name="setasciistream-method-javalangstring-javaioinputstream"></a>Méthode setAsciiStream (java.lang.String, java.io.InputStream)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

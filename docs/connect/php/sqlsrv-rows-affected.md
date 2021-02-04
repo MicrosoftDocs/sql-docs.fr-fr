@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - sqlsrv_rows_affected
 apitype: NA
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 6f43fbfc-fc92-449b-82d0-33fa780e8f09
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 77581d5effb8454f7ef34b38b5994f7d459f46e9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 18936e2f9b0cb2d8390e0eee42f4fdd534d5e1ee
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88466713"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201060"
 ---
 # <a name="sqlsrv_rows_affected"></a>sqlsrv_rows_affected
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -42,7 +42,7 @@ sqlsrv_rows_affected( resource $stmt)
 ## <a name="return-value"></a>Valeur de retour  
 Entier indiquant le nombre de lignes modifiées par la dernière instruction exécutée. Si aucune ligne n’a été modifiée, la valeur zéro (0) est retournée. Si aucune information sur le nombre de lignes modifiées n’est disponible, la valeur moins un (-1) est retournée. Si une erreur s’est produite lors de la récupération du nombre de lignes modifiées, **false** est retourné.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
 L’exemple suivant affiche le nombre de lignes modifiées par une instruction UPDATE. L’exemple part du principe que SQL Server et la base de données [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) sont installés sur l’ordinateur local. Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
   
 ```  

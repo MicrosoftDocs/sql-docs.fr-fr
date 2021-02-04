@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 14d9226b-33df-43d3-a174-1b11ba43ab2e
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 35a6f6d21c078650a91a4c18ae75db096c64a287
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 89cddf5d3d948b0f7fce24d314a0dca070ccc8c4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88467081"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179609"
 ---
 # <a name="sqlserverresource-methods"></a>Méthodes SQLServerResource
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

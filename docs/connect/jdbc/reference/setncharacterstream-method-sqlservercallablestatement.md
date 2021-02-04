@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 77905630-0135-46ad-a419-215e648996e2
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 097881d27dee75c2e3f7b02f895ec441a77a4488
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 753f524dcbc42f40fa4dbd81ee854392878e51e9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431631"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178850"
 ---
 # <a name="setncharacterstream-method-sqlservercallablestatement"></a>Méthode setNCharacterStream (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

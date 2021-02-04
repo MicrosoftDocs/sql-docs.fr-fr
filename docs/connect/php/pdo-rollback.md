@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: d918c1e3-1be0-4001-b3b0-000db6d9e8b8
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 4d47a10d67a404efdcf9b4a85a9340c275fbb578
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+ms.openlocfilehash: 04803a35af3142cf687b680d1cdb846cfd9ca210
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88645460"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203964"
 ---
 # <a name="pdorollback"></a>PDO::Rollback
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

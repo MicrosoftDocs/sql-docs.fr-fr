@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 4d5db438-9df7-4d22-9907-3ddc63bd2220
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: ed3a4ed3e1dd4642f5456423e6266bb2a327c330
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+ms.openlocfilehash: 2aff13f864bd22ab9cc2407e7a990c6114a6e108
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88646209"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202089"
 ---
 # <a name="pdobegintransaction"></a>PDO::beginTransaction
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

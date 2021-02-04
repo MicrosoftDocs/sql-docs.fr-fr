@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.usesLocalFiles
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 69afb3a9-ed56-4191-88b8-bc46c03b817b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 17e7f5357b32df47fac971f44453c7e60762d59f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 33e9d57f56e47649cca26694e3d8410a21f20388
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88396245"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195855"
 ---
 # <a name="useslocalfiles-method-sqlserverdatabasemetadata"></a>Méthode usesLocalFiles (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

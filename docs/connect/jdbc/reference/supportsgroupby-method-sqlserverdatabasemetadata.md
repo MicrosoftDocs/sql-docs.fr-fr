@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsGroupBy
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 6f368df5-e88a-4088-b0de-2b5ab655ebaa
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: d7a0546e74b6be60947432275d40887686ece72a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 37d47b8c0af0165645284af0af1e81b1e319e9bf
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450381"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185225"
 ---
 # <a name="supportsgroupby-method-sqlserverdatabasemetadata"></a>Méthode supportsGroupBy (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

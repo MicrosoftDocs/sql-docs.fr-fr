@@ -9,18 +9,18 @@ ms.date: 01/07/2020
 ms.topic: overview
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: ced001726b7a8306f2064c1436ddb41cf65a6eb0
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: cda3b252ddfb602cca02d8dc09322769339e33e9
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091806"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99235740"
 ---
 # <a name="what-are-big-data-clusters-2019"></a>Présentation des [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)]
 
 [!INCLUDE[SQL Server 2019](../includes/applies-to-version/sqlserver2019.md)]
 
-À compter de [!INCLUDE[SQL Server 2019](../includes/sssqlv15-md.md)], les [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] vous permettent de déployer des clusters scalables de conteneurs SQL Server, Spark et HDFS exécutés sur Kubernetes. Ces composants sont exécutés côte à côte pour que vous puissiez lire, écrire et traiter du Big Data à partir de Transact-SQL ou Spark, afin de pouvoir combiner et analyser facilement vos données relationnelles de grande valeur avec du Big Data volumineux.
+À compter de [!INCLUDE[SQL Server 2019](../includes/sssql19-md.md)], les [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] vous permettent de déployer des clusters scalables de conteneurs SQL Server, Spark et HDFS exécutés sur Kubernetes. Ces composants sont exécutés côte à côte pour que vous puissiez lire, écrire et traiter du Big Data à partir de Transact-SQL ou Spark, afin de pouvoir combiner et analyser facilement vos données relationnelles de grande valeur avec du Big Data volumineux.
 
 Utilisez [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] pour effectuer les tâches suivantes :
 
@@ -43,7 +43,7 @@ Les [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)
 
 ### <a name="data-virtualization"></a>Virtualisation de données
 
-En tirant parti de [PolyBase](../relational-databases/polybase/polybase-guide.md), les [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] peuvent interroger des sources de données externes sans déplacer ni copier les données. [!INCLUDE[SQL Server 2019](../includes/sssqlv15-md.md)] introduit de nouveaux connecteurs aux sources de données.
+En tirant parti de [PolyBase](../relational-databases/polybase/polybase-guide.md), les [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] peuvent interroger des sources de données externes sans déplacer ni copier les données. [!INCLUDE[SQL Server 2019](../includes/sssql19-md.md)] introduit de nouveaux connecteurs aux sources de données.
 
 ![Virtualisation de données](media/big-data-cluster-overview/data-virtualization.png)
 

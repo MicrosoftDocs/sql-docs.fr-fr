@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 3f092a22-5421-45df-ade8-af8bf0339a3f
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: ca6a7d795414c23234b19ab10397cf72219d59e4
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8a319c1ce4892533db9e703af915613959dd1bd0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88458154"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181403"
 ---
 # <a name="sqlserverxadatasource-methods"></a>Méthodes SQLServerXADataSource
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

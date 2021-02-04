@@ -4,24 +4,23 @@ titleSuffix: SQL Server Profiler
 description: Explorez les fonctionnalités de SQL Server Profiler. Obtenez de l’aide pour la résolution des problèmes à l’aide de cet outil pour créer des traces et analyser et relire les résultats de trace.
 ms.prod: sql
 ms.prod_service: sql-tools
-ms.reviewer: ''
 ms.technology: profiler
 ms.topic: conceptual
-ms.assetid: 3ad5f33d-559e-41a4-bde6-bb98792f7f1a
 author: markingmyname
 ms.author: maghan
+ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 05/01/2020
-ms.openlocfilehash: 3169f8fbbc86fc95a62631c0cc93d77b6a46b0a4
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 3066ac1b16a1a294955825dc35b40f422bd79df3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643397"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99203533"
 ---
 # <a name="sql-server-profiler"></a>SQL Server Profiler
 
- [!INCLUDE[sql-asdbmi](../../includes/applies-to-version/sql-asdbmi.md)]
+[!INCLUDE[sql-asdbmi](../../includes/applies-to-version/sql-asdbmi.md)]
 
 [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] est une interface puissante, qui permet de créer et gérer des traces, ainsi que d’analyser et de relire les résultats de trace. Les événements sont enregistrés dans un fichier de trace, qui peut être analysé ou utilisé ultérieurement pour relire une série d’étapes spécifique lors du diagnostic d’un problème.
 
@@ -46,7 +45,7 @@ Vous pouvez démarrer le Générateur de profils de plusieurs façons dans [!INC
 
 ## <a name="capture-and-replay-trace-data"></a>Capturer et relire les données de trace
 
-Le tableau suivant indique les fonctionnalités que nous vous conseillons d’utiliser dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] pour capturer et relire les données de trace.
+Le tableau suivant indique les fonctionnalités que nous vous conseillons d’utiliser dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] pour capturer et relire les données de trace.
 
 ||||
 |-|-|-|

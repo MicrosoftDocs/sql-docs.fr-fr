@@ -1,5 +1,5 @@
 ---
-description: Éditions et fonctionnalités prises en charge de [!INCLUDE[sssqlv15-md](../includes/sssqlv15-md.md)]
+description: Éditions et fonctionnalités prises en charge de [!INCLUDE[sssql19-md](../includes/sssql19-md.md)]
 title: Éditions et fonctionnalités prises en charge de SQL Server 2019 | Microsoft Docs
 ms.custom: ''
 ms.date: 11/04/2019
@@ -34,18 +34,18 @@ ms.assetid: ''
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>= sql-server-ver15'
-ms.openlocfilehash: e0a8f226602ab41422715368fb12c13809fa6b40
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9987384899eeb9087a938d8fd8e8b156ff8e1962
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97477150"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236267"
 ---
-# <a name="editions-and-supported-features-of-sssqlv15-md"></a>Éditions et fonctionnalités prises en charge de [!INCLUDE[sssqlv15-md](../includes/sssqlv15-md.md)]
+# <a name="editions-and-supported-features-of-sssql19-md"></a>Éditions et fonctionnalités prises en charge de [!INCLUDE[sssql19-md](../includes/sssql19-md.md)]
 
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx](../includes/applies-to-version/sqlserver.md)]
 
-Cette rubrique fournit des détails sur les fonctionnalités prises en charge par les différentes éditions de [!INCLUDE[sssqlv15-md](../includes/sssqlv15-md.md)].
+Cette rubrique fournit des détails sur les fonctionnalités prises en charge par les différentes éditions de [!INCLUDE[sssql19-md](../includes/sssql19-md.md)].
 
 Pour plus d’informations sur les versions antérieures, consultez :
 
@@ -58,10 +58,10 @@ L’édition d’évaluation [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.m
 
 Pour obtenir les notes de publication les plus récentes et des informations sur les nouveautés, consultez les rubriques suivantes :
 
-* [Notes de publication de [!INCLUDE[sssqlv15-md](../includes/sssqlv15-md.md)]](../sql-server/sql-server-version-15-release-notes.md)
+* [Notes de publication de [!INCLUDE[sssql19-md](../includes/sssql19-md.md)]](../sql-server/sql-server-version-15-release-notes.md)
 * [Nouveautés de la version [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 2019](../sql-server/what-s-new-in-sql-server-ver15.md)
 
-**Essayez [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] ! : [Télécharger [!INCLUDE[sssqlv15-md](../includes/sssqlv15-md.md)] à partir du Centre d’évaluation](https://www.microsoft.com//evalcenter/evaluate-sql-server)**
+**Essayez [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] ! : [Télécharger [!INCLUDE[sssql19-md](../includes/sssql19-md.md)] à partir du Centre d’évaluation](https://www.microsoft.com//evalcenter/evaluate-sql-server)**
 
 ## <a name="ssnoversion-editions"></a>Éditions de[!INCLUDE[ssNoVersion](../includes/ssNoVersion-md.md)]
 
@@ -103,8 +103,8 @@ Utilisez les informations des tableaux suivants pour déterminer le jeu de fonct
 |[!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)]|[!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] inclut les composants serveur et clients permettant de créer, de gérer et de déployer des rapports tabulaires, de matrice, graphiques et de forme libre. [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] est également une plateforme évolutive que vous pouvez utiliser pour développer des applications de création de rapports.|
 |[!INCLUDE[ssISnoversion](../includes/ssisnoversion-md.md)]|[!INCLUDE[ssISnoversion](../includes/ssisnoversion-md.md)] propose un ensemble d’outils graphiques et d’objets programmables permettant de déplacer, de copier et de transformer les données. Il inclut également le composant [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS) pour [!INCLUDE[ssISnoversion](../includes/ssisnoversion-md.md)].|
 |[!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)]|[!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] (MDS) est la solution [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] de gestion des données de référence. MDS peut être configuré pour gérer tout domaine (produits, clients, comptes) et inclut des hiérarchies, une sécurité granulaire, des transactions, la gestion des versions des données et les règles métier, ainsi que [!INCLUDE[ssMDSXLS](../includes/ssmdsxls-md.md)] , pouvant être utilisé pour gérer les données.|
-|Machine Learning Services (en base de données)|Machine Learning Services (en base de données) prend en charge les solutions Machine Learning distribuées et scalables avec des sources de données d’entreprise. Dans [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 2016, le langage R était pris en charge. [!INCLUDE[sssqlv15-md](../includes/sssqlv15-md.md)] prend en charge R et Python.|
-|Machine Learning Server (autonome)|Machine Learning Server (autonome) prend en charge le déploiement de solutions Machine Learning distribuées et évolutives sur plusieurs plateformes et avec plusieurs sources de données d’entreprise, notamment Linux et Hadoop. Dans [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 2016, le langage R était pris en charge. [!INCLUDE[sssqlv15-md](../includes/sssqlv15-md.md)] prend en charge R et Python.|
+|Machine Learning Services (en base de données)|Machine Learning Services (en base de données) prend en charge les solutions Machine Learning distribuées et scalables avec des sources de données d’entreprise. Dans [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 2016, le langage R était pris en charge. [!INCLUDE[sssql19-md](../includes/sssql19-md.md)] prend en charge R et Python.|
+|Machine Learning Server (autonome)|Machine Learning Server (autonome) prend en charge le déploiement de solutions Machine Learning distribuées et évolutives sur plusieurs plateformes et avec plusieurs sources de données d’entreprise, notamment Linux et Hadoop. Dans [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] 2016, le langage R était pris en charge. [!INCLUDE[sssql19-md](../includes/sssql19-md.md)] prend en charge R et Python.|
 
 |Outils d'administration|Description|
 |----------------------|-----------------|
@@ -126,7 +126,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="scale-limits"></a><a name="Cross-BoxScaleLimits"></a> Limites d’échelle
 
-|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
 |-------|--------:|------:|---:|-------------------------------:|-----:|
 |Capacité maximale de calcul utilisée par une instance unique - [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)]<sup>1</sup>|Maximum du système d'exploitation|Limité à moins de 4 sockets ou 24 cœurs|Limité à moins de 4 sockets ou 16 cœurs|Limité à moins de 1 socket ou 4 cœurs|Limité à moins de 1 socket ou 4 cœurs|
 |Capacité maximale de calcul utilisée par une instance unique - [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] ou [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)]|Maximum du système d'exploitation|Limité à moins de 4 sockets ou 24 cœurs|Limité à moins de 4 sockets ou 16 cœurs|Limité à moins de 1 socket ou 4 cœurs|Limité à moins de 1 socket ou 4 cœurs|
@@ -145,7 +145,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="rdbms-high-availability"></a><a name="RDBMSHA"></a> Haute disponibilité SGBDR
 
-|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
 |-------|:--------:|:------:|:-:|--------------------------------:|:-----:|
 |Support de base du serveur<sup>1</sup>|Oui|Oui|Oui|Oui|Oui|
 |Copie des journaux de transaction|Oui|Oui|Oui|Non|Non|
@@ -188,7 +188,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="rdbms-scalability-and-performance"></a><a name="RDBMSSP"></a> Scalabilité et performances SGBDR
 
-|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
 |------:|:--------:|:------:|:-:|:-------------------------------:|:------:|
 |Columnstore<sup>1</sup> <sup>2</sup>|Oui|Oui|Oui|Oui|Oui|
 |Fichiers binaires LOB dans les index columnstore cluster|Oui|Oui|Oui|Oui|Oui|
@@ -229,7 +229,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="rdbms-security"></a><a name="RDBMSS"></a> Sécurité SGBDR
 
-|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
 |-------|:--------:|:------:|:-:|:-----:|:-----------------------:|:-----:|
 |Sécurité au niveau des lignes|Oui|Oui|Oui|Oui|Oui|
 |Always Encrypted|Oui|Oui|Oui|Oui|Oui|
@@ -246,7 +246,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="replication"></a>Réplication<a name="Replication"></a>
 
-|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
 |-------|:---------:|:-------:|:--:|:--------------------------------:|:------:|
 |Abonnés hétérogènes|Oui|Oui|Non|Non|Non|
 |Réplication de fusion|Oui|Oui|Oui<sup>1</sup>|Oui<sup>1</sup>|Oui<sup>1</sup>|
@@ -262,7 +262,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="management-tools"></a><a name="SSMS"></a> Outils d’administration
 
-|Fonctionnalité|Entreprise|Standard|Web|Express with Advanced Services|Express|
+|Fonctionnalité|Entreprise|standard|Web|Express with Advanced Services|Express|
 |-------|:--------:|:------:|:-:|:----------------------------:|:-----:|
 |Objets de gestion SQL (SMO)|Oui|Oui|Oui|Oui|Oui|
 |API d’évaluation SQL|Oui|Oui|Oui|Oui|Oui|
@@ -287,7 +287,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="rdbms-manageability"></a><a name="RDBMSM"></a> Simplicité de gestion SGBDR
 
-|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
 |-------|:--------:|:------:|:-:|:-------------------------------:|:-----:|
 |Instances utilisateur|Non|Non|Non|Oui|Oui|
 |LocalDB|Non|Non|Non|Oui|Non|
@@ -320,7 +320,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="development-tools"></a><a name="DevTools"></a> Outils de développement
 
-|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
 |-------|:--------:|:------:|:-:|:-------------------------------:|:-----:|
 |Intégration de Microsoft Visual Studio|Oui|Oui|Oui|Oui|Oui|
 |Intellisense (Transact-SQL et MDX)|Oui|Oui|Oui|Oui|Oui|
@@ -329,7 +329,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="programmability"></a><a name="Programmability"></a> Programmability
 
-|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express
+|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express
 |-------|:--------:|:------:|:-:|:-------------------------------:|:-----:|
 |Intégration R de base<sup>1</sup>|Oui|Oui|Oui|Oui|Non|
 |Intégration R avancée<sup>2</sup>|Oui|Non|Non|Non|Non|
@@ -377,7 +377,7 @@ Pour plus d’informations sur les fonctionnalités [!INCLUDE[ssMDSshort_md](../
 
 ## <a name="data-warehouse"></a><a name="DW"></a> Entrepôt de données
 
-|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
 |-------|:--------:|:------:|:-:|:-------------------------------:|:-----:|
 |Génération automatique de la mise en lots et du schéma d'entrepôt de données|Oui|Oui|Non|Non|Non|
 |Capture des données modifiées|Oui|Oui|Non|Non|Non|
@@ -399,7 +399,7 @@ Pour plus d’informations sur les fonctionnalités clientes Business Intelligen
 
 ## <a name="spatial-and-location-services"></a><a name="SLS"></a> Services d’emplacement et spatiaux
 
-|Nom de la fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
+|Nom de la fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
 |-------------|:-------:|:------:|:-:|:-------------------------------:|:-----:|
 |Index spatiaux|Oui|Oui|Oui|Oui|Oui|
 |Types de données planaires et géodésiques|Oui|Oui|Oui|Oui|Oui|
@@ -408,14 +408,14 @@ Pour plus d’informations sur les fonctionnalités clientes Business Intelligen
 
 ## <a name="additional-database-services"></a><a name="ADS"></a> Services de base de données supplémentaires
 
-|Nom de la fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
+|Nom de la fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
 |------------|:--------:|:------:|:-:|:-------------------------------:|:-----:|
 |[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Assistant Migration|Oui|Oui|Oui|Oui|Oui|
 |Messagerie de base de données|Oui|Oui|Oui|Non|Non|
 
 ## <a name="other-components"></a><a name="Other"></a> Autres composants
 
-|Nom de la fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
+|Nom de la fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
 |------------|:--------:|:------:|:-:|:-------------------------------:|:-----:|
 |StreamInsight|StreamInsight Premium Edition|StreamInsight Standard Edition|StreamInsight Standard Edition|Non|Non|
 |StreamInsight HA|StreamInsight Premium Edition|Non|Non|Non|Non|

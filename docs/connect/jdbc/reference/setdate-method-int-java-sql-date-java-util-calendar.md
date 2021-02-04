@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.setDate (int, java.sql.Date, java.util.Calendar)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 2c46f694-6dc4-429f-a037-a3bad369a7c8
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f4d3a23960b2b23720846ad630c03b50cc867b2b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ad7d90a970fd0963fb037352219b96761780d66f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432061"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179068"
 ---
 # <a name="setdate-method-int-javasqldate-javautilcalendar"></a>Méthode setDate (int, java.sql.Date, java.util.Calendar)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

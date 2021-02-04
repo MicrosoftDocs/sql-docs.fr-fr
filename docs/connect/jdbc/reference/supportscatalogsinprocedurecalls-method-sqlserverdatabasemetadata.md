@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsCatalogsInProcedureCalls
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 5ec3571a-c7c6-4b94-a9ea-ac08adc7f978
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e5d4a800e7a62728457c09083f8dfa57edc22cf1
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d6eb5f6ca56a6ae8da9e4f7cd4fa0d7bc5291596
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88467053"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183917"
 ---
 # <a name="supportscatalogsinprocedurecalls-method-sqlserverdatabasemetadata"></a>Méthode supportsCatalogsInProcedureCalls (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

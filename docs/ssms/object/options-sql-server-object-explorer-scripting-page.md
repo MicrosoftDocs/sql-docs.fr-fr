@@ -14,12 +14,12 @@ f1_keywords:
 ms.assetid: 6105aec9-1b72-4cb2-bd24-fc35f6d95240
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 35a255bb4df3779897ec40da29da9cc15f62ba1f
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: cbaf09a88e5856bfd5c8f36826d8894b947e3c0d
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92037625"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250498"
 ---
 # <a name="options-sql-server-object-explorer---scripting-page"></a>Options (Explorateur d’objets SQL Server - Page Script)
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -151,7 +151,7 @@ Inclut les noms de contraintes générés par le système pour appliquer l'inté
 **Script pour le type du moteur de base de données** Les scripts générés sont ciblés sur le [type de moteur de base de données](/previous-versions/sql/sql-server-2014/ee642509(v=sql.120)) spécifié.
 
 **Générer un script pour la version du serveur**  
-Les scripts générés sont ciblés sur la version spécifiée de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les fonctionnalités qui sont des nouveautés de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] ne peuvent pas faire l'objet d'un script pour les versions antérieures. Certains scripts qui sont créés pour [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] ne peuvent pas être exécutés sur les serveurs exécutant une version antérieure de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]ou sur une base de données qui possède un [paramètre de niveau de compatibilité de base de données](../../t-sql/statements/alter-database-transact-sql-compatibility-level.md)antérieur.  
+Les scripts générés sont ciblés sur la version spécifiée de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les fonctionnalités qui sont des nouveautés de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] ne peuvent pas faire l'objet d'un script pour les versions antérieures. Certains scripts qui sont créés pour [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] ne peuvent pas être exécutés sur les serveurs exécutant une version antérieure de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]ou sur une base de données qui possède un [paramètre de niveau de compatibilité de base de données](../../t-sql/statements/alter-database-transact-sql-compatibility-level.md)antérieur.  
 
 ## <a name="see-also"></a>Voir aussi  
 [Générer des scripts (SQL Server Management Studio)](../scripting/generate-scripts-sql-server-management-studio.md)  

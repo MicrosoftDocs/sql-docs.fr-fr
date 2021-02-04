@@ -15,12 +15,12 @@ helpviewer_keywords:
 - GetSensitivityClassification method
 author: bazizi
 ms.author: v-beaziz
-ms.openlocfilehash: 94bda63675db2c73acef4c13c00feab90ae7f337
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 1f33cdebd17c06b6f8f71a66ee31c216c540dde2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596459"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99204029"
 ---
 # <a name="issdataclassificationgetsensitivityclassification"></a>ISSDataClassification::GetSensitivityClassification
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW](../../../includes/applies-to-version/sql-asdb-asa.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - MSQLServerResultSet.updateRow
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: cfced0ca-a281-40dc-8d2f-370d5f0bf12b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 13238fc12a57244116744221fa53b76efde415e1
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0d22cb15c46c44d2cf6d48918cb229e128874c21
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450078"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183843"
 ---
 # <a name="updaterow-method-sqlserverresultset"></a>updateRow, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

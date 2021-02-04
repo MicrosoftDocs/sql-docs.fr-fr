@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateInt (int, int)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: f4f651b0-a822-4bd4-b391-cc2355154a2a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: c183cf7916352d6be6e03758422d94a41f7b6ddf
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 153ff01755ed73c70a3a4392a3670deb854b1bff
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431341"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99189047"
 ---
 # <a name="updateint-method-int-int"></a>Méthode updateInt (int, int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

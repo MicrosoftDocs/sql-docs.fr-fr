@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDataSource.getXopenStates
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: de6fdf6b-8345-4490-b35e-7115b61e782e
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 654b7a56a98b0a70599e21ef55a12d4db420890d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 115ceb9c00c9d5b9e8871724786b4adcec1b89dd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433711"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177559"
 ---
 # <a name="getxopenstates-method-sqlserverdatasource"></a>Méthode getXopenStates (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

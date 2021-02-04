@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsPositionedUpdate
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: f963fb70-377d-43f5-8d56-326591f6d3e9
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 1070fcc413ee09e167d9a06f8842c907dad0703a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 89abbe018116909325cdcf989e12258595041faf
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431411"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186555"
 ---
 # <a name="supportspositionedupdate-method-sqlserverdatabasemetadata"></a>Méthode supportsPositionedUpdate (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

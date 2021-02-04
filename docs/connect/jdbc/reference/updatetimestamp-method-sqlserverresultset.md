@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateTimestamp
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: f81f7ba0-7d75-4b42-861c-be00c0032335
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: bbb8aaffe67bb8e863f718f9b2d708b1a6d8af60
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 20b4ba9e2c0c5c7ff83015f10dadba1656bce291
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88488026"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195676"
 ---
 # <a name="updatetimestamp-method-sqlserverresultset"></a>updateTimestamp, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

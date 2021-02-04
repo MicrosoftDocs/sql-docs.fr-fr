@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerBlob.position
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: b520f192-6a14-4453-babd-8e7861ab25d6
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a0104fe50c2e1b1c1fea8458cb1709304d172e07
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ad52f951da0385ba49b4120b5acf76edba88dfaa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433001"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176863"
 ---
 # <a name="position-method-sqlserverblob"></a>Méthode position (SQLServerBlob)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

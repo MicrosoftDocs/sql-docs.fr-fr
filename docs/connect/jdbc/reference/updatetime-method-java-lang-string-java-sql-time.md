@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateTime (java.lang.String, java.sql.Time)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: fbbcef68-b903-4cfd-911c-a7e239d17c74
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 36af12218b060175bd708e6d5ca6468c18a7e3f3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6aaea8368fe23f6f250799958cbfddce8e118213
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88457924"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195720"
 ---
 # <a name="updatetime-method-javalangstring-javasqltime"></a>Méthode updateTime (java.lang.String, java.sql.Time)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
