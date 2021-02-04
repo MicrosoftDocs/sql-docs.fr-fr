@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.getTime (int, java.util.Calendar)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 87b7fbaf-7149-494f-b3b2-16b468a8ebf1
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: c4db287525eb6752abd9178c44bd16cc0cafe561
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7d0e44f09f0e1deefeddb441c50884f2f470cc54
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434271"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162167"
 ---
 # <a name="gettime-method-int-javautilcalendar"></a>Méthode getTime (int, java.util.Calendar)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

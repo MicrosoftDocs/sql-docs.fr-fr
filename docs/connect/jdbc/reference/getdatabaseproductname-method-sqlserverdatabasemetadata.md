@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.getDatabaseProductName
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 548bd099-019f-487c-87cc-6f0b665f164d
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: fe45ffe72bb9513318a5cec0fb2af15ce2baf0e1
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e475066cb13d67e246782a270a8cdbf8b007cf34
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436411"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163189"
 ---
 # <a name="getdatabaseproductname-method-sqlserverdatabasemetadata"></a>Méthode getDatabaseProductName (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

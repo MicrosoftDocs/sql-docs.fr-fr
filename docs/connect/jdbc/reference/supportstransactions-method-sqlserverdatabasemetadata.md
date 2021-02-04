@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsTransactions
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 57d28ee5-c2f6-4740-b42d-cead1aade809
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 47535eeb527bf7e74fc689475d4f13f2da6e876b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0b3b01255a7b174b5d98fe96003d24b99a5e8447
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88466951"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158225"
 ---
 # <a name="supportstransactions-method-sqlserverdatabasemetadata"></a>Méthode supportsTransactions (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

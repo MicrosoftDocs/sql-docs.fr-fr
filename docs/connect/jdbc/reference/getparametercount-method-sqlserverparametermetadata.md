@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerParameterMetaData.getParameterCount
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 7dbbdacb-74ef-42e7-9bdc-a3229505dad8
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0b79fbb9b2da9d72067931e3b741839a57b1dba6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: bc586f7b36f09f7accd370bda6e34d8ef571aee2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435041"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162548"
 ---
 # <a name="getparametercount-method-sqlserverparametermetadata"></a>Méthode getParameterCount (SQLServerParameterMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

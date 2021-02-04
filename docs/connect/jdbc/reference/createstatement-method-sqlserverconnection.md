@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerConnection.createStatement
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 6d043ba9-b8ec-41d3-bb22-ad2c4aebda6f
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 67053001f47251af6b076403eaf003225ef6eafd
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a86b1f55adccb5c185118e51e8fa114bf26615d7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437921"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165988"
 ---
 # <a name="createstatement-method-sqlserverconnection"></a>createStatement, méthode (SQLServerConnection)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

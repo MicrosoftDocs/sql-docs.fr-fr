@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.executeBatch
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 8418167e-cbd2-464d-b118-73cdd76080ed
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 53d0881e5e948d857c5a5941977f0945ea461794
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 3e31d995f65a5f1a9e5ff9d3ff88bf3965e8061d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437731"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165930"
 ---
 # <a name="executebatch-method-sqlserverpreparedstatement"></a>Méthode executeBatch (SQLServerPreparedStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

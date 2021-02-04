@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getBinaryStream (java.lang.String)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 149609b5-a6de-4e23-a440-7061775d0899
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8d0887b6cd8770310304596606ace6bba321465c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d9457c8042d41b3044e3ceaeb25ffe2bc5d36a97
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437251"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165725"
 ---
 # <a name="getbinarystream-method-javalangstring"></a>Méthode getBinaryStream (java.lang.String)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

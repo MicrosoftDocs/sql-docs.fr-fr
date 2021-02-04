@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerXAResource.forget
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 6d83138d-aa45-4d94-9da6-fdfe7ed28edc
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0bcefb9da6e171ed729e7ea32d0183de323707d0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 08c504a7c0c72b1fa4b4a408070bee408161dbb8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437551"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165899"
 ---
 # <a name="forget-method-sqlserverxaresource"></a>Méthode forget (SQLServerXAResource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getArray (int)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 377746c7-8c9c-41f5-8490-ca0dd56fd57a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 3c2019357a982dd81a9ef8f8c3d44a34243b97aa
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 512cd23bf0422449b62f39c5baa20505057cfcd6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437501"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165849"
 ---
 # <a name="getarray-method-int-sqlserverresultset"></a>getArray, méthode (int) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

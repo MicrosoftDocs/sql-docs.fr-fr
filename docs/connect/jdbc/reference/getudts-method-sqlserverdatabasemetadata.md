@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.getUDTs
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: c4396453-dcb0-4132-8325-06b3c7896b3b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 4d7649cc14a972f364b6fd10e6d6d728f4bb2ffe
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: daba1423b66213f3becba7459e73a9d8d9658374
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433941"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99155391"
 ---
 # <a name="getudts-method-sqlserverdatabasemetadata"></a>Méthode getUDTs (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

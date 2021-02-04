@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerStatement.executeUpdate (java.lang.String, int)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 4c52a20e-527e-4d14-9a5a-4cd195aac8ed
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a0d549d4da78cb58688842e545d94efd8e0f4087
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: dc7e44dfff97d8f1c02d7e346b1107900e506914
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437691"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165885"
 ---
 # <a name="executeupdate-method-javalangstring-int"></a>Méthode executeUpdate (java.lang.String, int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

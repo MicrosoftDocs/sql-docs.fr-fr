@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.getMetaData
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 5ed49a53-ed61-4e95-ad67-45957aaabb6a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: cf3d9efff347038e862c7b50f0ae7d83c977af1a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5f79d8c54856b0d68160d782d589fc201b0bf793
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435441"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162734"
 ---
 # <a name="getmetadata-method-sqlserverpreparedstatement"></a>getMetaData, méthode (SQLServerPreparedStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

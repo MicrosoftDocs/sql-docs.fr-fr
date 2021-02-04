@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: c8cc4636-01e9-4dc8-a40c-728337ca08f5
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 91e6dd1e44620d4e07a8376f78dd93b834dcc609
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: fd6a026154b61e8329b21af2e39f24defaafc502
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435241"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162633"
 ---
 # <a name="getnstring-method-int-sqlserverresultset"></a>Méthode getNString (int) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: a1b32d3a-d7c9-4086-ae2b-fc1da96949b1
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 87e68d936f0d2c868cfb3fb3c63693076bb0e547
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ffe7e8098de6c942b8ddc4085511de591893e4e2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434471"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162267"
 ---
 # <a name="getsqlxml-method-int"></a>Méthode getSQLXML (int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

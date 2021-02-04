@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.getDate
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: a4a969e7-e72c-4ac8-8b8c-ae2281e4e705
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 36a74adc9e1b9e968b5e60ec42e3cebdf31a86eb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 43e19c4b7a95dd374f607d16f9721c99cb8e85e3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436291"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163144"
 ---
 # <a name="getdate-method-sqlservercallablestatement"></a>Méthode getDate (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

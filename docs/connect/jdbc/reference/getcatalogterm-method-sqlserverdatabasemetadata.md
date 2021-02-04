@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.getCatalogTerm
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 0aa5d372-16aa-4790-a8f6-f8b742798f8f
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a9f0625997adaea84808bd8ace89173ce5798f8d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b87573617b741d4249a50fdfb6d05318c6cf20d9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436871"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165537"
 ---
 # <a name="getcatalogterm-method-sqlserverdatabasemetadata"></a>méthode getCatalogTerm (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.getCharacterStream(String paramName)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 5281e1b8-19b8-4fe5-83be-929d1987e25d
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2ce336e13a6c9e7e1a281131970761fdf5ca64ad
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 98289dd7a1f2867b7672e214da87290b80967ad6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436821"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165531"
 ---
 # <a name="getcharacterstream-javalangstring"></a>getCharacterStream (java.lang.String)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

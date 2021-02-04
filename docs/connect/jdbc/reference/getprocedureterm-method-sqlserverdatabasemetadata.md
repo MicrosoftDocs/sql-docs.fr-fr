@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.getProcedureTerm
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 3336d4c1-d999-43cc-b36b-ff1532e899bc
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 39564dfb9f802564805a5fbe58115a883551ca20
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 382bbb9154ddfdc1d928d5049550c1e020b19837
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434931"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162483"
 ---
 # <a name="getprocedureterm-method-sqlserverdatabasemetadata"></a>Méthode getProcedureTerm (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

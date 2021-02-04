@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getDate (int)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: e6b6cfe2-b7c4-4d41-8e09-c68b5086a503
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 05d362aa184c4dbcc9af89d4ebe25974e606ac4a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ddef1e6273f0467e957217ef29772e256072df5b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436401"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163223"
 ---
 # <a name="getdate-method-int-sqlserverresultset"></a>getDate, méthode (int) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

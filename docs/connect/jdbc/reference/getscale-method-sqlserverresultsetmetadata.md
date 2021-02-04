@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSetMetaData.getScale
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: fe29aa5f-4cc5-413f-8bbd-a58064993d87
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 1c36a67dc80a078308344105f2c1091a0d25f90d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9356abc117c86de16b215c461a72e47a3cf9eb7e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434761"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162403"
 ---
 # <a name="getscale-method-sqlserverresultsetmetadata"></a>Méthode getScale (SQLServerResultSetMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

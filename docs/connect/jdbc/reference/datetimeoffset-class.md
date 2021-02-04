@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 20bbeacd-ccca-4a46-8184-ff941ae2ec5f
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 318f3f814d26262e3be4dc0f8b6783961df759ec
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d573a42608e2ce9368f13e79ae824d600be49b8a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437901"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99166033"
 ---
 # <a name="datetimeoffset-class"></a>Classe DateTimeOffset
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

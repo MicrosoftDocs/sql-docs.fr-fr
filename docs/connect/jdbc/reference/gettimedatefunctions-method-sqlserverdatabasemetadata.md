@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.getTimeDateFunctions
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: a56e08ae-6f4e-4dc6-b175-ff457d0d7a81
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a5a47aab1bf388c5975f5d639a0de6c45f79eb3d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6771faae716ead956051ebfde3431a38e4078266
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434101"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162104"
 ---
 # <a name="gettimedatefunctions-method-sqlserverdatabasemetadata"></a>Méthode getTimeDateFunctions (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

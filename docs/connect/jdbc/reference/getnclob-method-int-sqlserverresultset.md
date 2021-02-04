@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 103082e3-de98-4dff-8dc7-eaa5c64b1597
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f107489d0c1cb4737aa2b371f48c0eecfe9c756c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a88bf7d886c5cd8f0e467abe6fd270c7401f29c6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435301"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162681"
 ---
 # <a name="getnclob-method-int-sqlserverresultset"></a>Méthode getNClob (int) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

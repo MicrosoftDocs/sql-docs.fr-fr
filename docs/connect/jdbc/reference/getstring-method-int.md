@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.getString (int)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: f3fce8bf-8d6e-476f-aa6d-992daa79b899
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8fc361542deac77a38db7244654b68cb780eceff
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 838246ca963d5a7feed3c3bb7a5d8177f7654c35
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434401"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162229"
 ---
 # <a name="getstring-method-int"></a>Méthode getString (int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

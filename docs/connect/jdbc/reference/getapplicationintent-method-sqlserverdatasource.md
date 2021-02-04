@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 19411e6c-c456-4533-8252-54569a2a6b1f
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 1008a92fafaeaf2755f1111398dce145ec67f926
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8c1ce05e3104ec151909b87231f9e6d126efa051
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437521"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165859"
 ---
 # <a name="getapplicationintent-method-sqlserverdatasource"></a>getApplicationIntent, méthode (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

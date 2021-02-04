@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.getTime (int)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 6c13dea2-511f-48dc-b3db-2d3b72ccc9de
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: eb618aaa4a15cc370bc290b8a7ebb405f7771d72
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7a0486a9816106b5ed07bcddf9a78a130bf24903
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434211"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162157"
 ---
 # <a name="gettime-method-int"></a>Méthode getTime (int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

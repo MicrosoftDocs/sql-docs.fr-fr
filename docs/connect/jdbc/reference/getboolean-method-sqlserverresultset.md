@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getBoolean
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 970a41d0-b2f6-4890-aa6d-2346abb6d96a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: bf753510bb652a5a95737e2f17254cf6f6d254f3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 056f80b0d1ca8169f695ba07dbfebde3f2f79c67
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437031"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165625"
 ---
 # <a name="getboolean-method-sqlserverresultset"></a>getBoolean, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.deleteRow
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: aa04a644-c7c2-4738-8b6e-7fea566d2c16
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 9302a3ee26137c693f4711fc5501c5b715b16a71
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8c515b4554b29b9db6ae91ba303834820c80aa63
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437841"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163448"
 ---
 # <a name="deleterow-method-sqlserverresultset"></a>deleteRow, méthode (SQLServerResultSet)
 

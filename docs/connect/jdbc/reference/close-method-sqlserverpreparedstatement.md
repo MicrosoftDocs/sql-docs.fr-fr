@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.close
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 36db9ff7-5819-4827-9803-4a81c99069b3
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2f31c2ff231addc007cab7208b23df3b14594742
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 57d5ea059d6b06917821e5ff735df92de64d4ae4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88438091"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163489"
 ---
 # <a name="close-method-sqlserverpreparedstatement"></a>close, méthode (SQLServerPreparedStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

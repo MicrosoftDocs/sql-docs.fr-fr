@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerStatement.getUpdateCount
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: e9570228-4500-44b6-b2f1-84ac050b5112
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 19a4cfc7b9957d8ba4392477e6dcd3732f10bd7c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: fbb56b829c3069318ec8f6df3c4353e80cb31860
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433901"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99154862"
 ---
 # <a name="getupdatecount-method-sqlserverstatement"></a>getUpdateCount, méthode (SQLServerStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

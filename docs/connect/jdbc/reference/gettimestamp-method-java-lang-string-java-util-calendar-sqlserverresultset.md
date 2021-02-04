@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getTimestamp (java.lang.String, java.util.Calendar)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 44474000-8951-49ee-93a5-c8cb879eaf55
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: dcee6ec45995da0c020a2430d1a69906c72d7ff9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0e9a38604d737a437b22e3f14d2944bde262c3dd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434131"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162075"
 ---
 # <a name="gettimestamp-method-javalangstring-javautilcalendar-sqlserverresultset"></a>getTimestamp, méthode (java.lang.String, java.util.Calendar) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

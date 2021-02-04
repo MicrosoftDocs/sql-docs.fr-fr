@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.getBytes
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: b6e88cea-54b3-4d18-a9af-db54abf19f45
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 98c52ff2ece018e496eb851a24e51e82af4f56bb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4c4618103482fa7fe9b81d4a2af446133dd9540c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436931"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165610"
 ---
 # <a name="getbytes-method-sqlservercallablestatement"></a>Méthode getBytes (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

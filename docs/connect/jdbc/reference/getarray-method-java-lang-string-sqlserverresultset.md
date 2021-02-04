@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getArray java.lang.String)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: a98d159b-1fae-482a-9465-5411ce60f901
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 6f58dda73d957ce4f993e6214907d4d4106c4fec
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 80e842bf141496cd809699d8d50e6905b9d1e661
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437481"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165834"
 ---
 # <a name="getarray-method-javalangstring-sqlserverresultset"></a>getArray, méthode (java.lang.String) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

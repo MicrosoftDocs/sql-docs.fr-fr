@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 630a93b0-6e3c-4255-a007-1097ce0ee243
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 64a834eee8ced5e60d7f9b834caa41e04b35b6a1
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1eef993496280ed3dc8e64d7c19a0605a3e5c552
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437981"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99163456"
 ---
 # <a name="createblob-method-sqlserverconnection"></a>Méthode createBlob (SQLServerConnection)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

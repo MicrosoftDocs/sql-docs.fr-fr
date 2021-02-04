@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerClob.getSubString
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: bf915590-a883-4403-befa-5b5bb42f34d8
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: bd407745df5e07ae2265105f990aa9df2a4ec963
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f08b8515dd827b2202d3e373242bb292c5060f72
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434311"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99162186"
 ---
 # <a name="getsubstring-method-sqlserverclob"></a>Méthode getSubString (SQLServerClob)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

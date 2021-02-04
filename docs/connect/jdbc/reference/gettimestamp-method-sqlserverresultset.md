@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getTimestamp
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 418d4db1-dfc2-47be-be76-8476265e1740
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0a7d2477a245eaff1abe5b05527d1aba73626e04
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 826e470599b6496b06caff7bb8877b7adef756fa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88434031"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99165499"
 ---
 # <a name="gettimestamp-method-sqlserverresultset"></a>getTimestamp, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
