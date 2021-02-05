@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.previous
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 66eb4e10-c375-4b31-ac46-3ba1d9dbf6a0
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 97ba2829717022eeb26bdc2e43eb007eb61063b2
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: aeb2d286c7f40f7e359004fba1d081db74da7fb0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432841"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176717"
 ---
 # <a name="previous-method-sqlserverresultset"></a>previous, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

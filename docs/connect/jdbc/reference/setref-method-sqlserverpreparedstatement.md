@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.setRef
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 1a09bbf9-6f8f-4a21-85d2-2182111b5ce7
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0b32f3d0d6a06a5ecc15678f781b61e9d9b94450
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5417e92d03203355a5822c5c6a8933ada64c3b5a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88458441"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178681"
 ---
 # <a name="setref-method-sqlserverpreparedstatement"></a>setRef, méthode (SQLServerPreparedStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

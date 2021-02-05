@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.isLast
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 85d4451f-6392-470e-ab21-78a495b45792
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: cbef8f4d7205a8433ee855568697f222a7f14b4c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d2f276b1f378ceb0bfef3a2cc4f7fe9719bdae56
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433551"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177395"
 ---
 # <a name="islast-method-sqlserverresultset"></a>isLast, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

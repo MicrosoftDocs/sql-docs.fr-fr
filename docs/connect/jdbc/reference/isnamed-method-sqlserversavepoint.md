@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerSavepoint.isNamed
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 66bcc445-9226-4419-b845-e0334875c80b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 898a6615ca52b5a989db7f99f31236847c33656c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 73d4490ae862f2ffcb4a24f2e13b50170e400430
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433561"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177387"
 ---
 # <a name="isnamed-method-sqlserversavepoint"></a>Méthode isNamed (SQLServerSavepoint)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

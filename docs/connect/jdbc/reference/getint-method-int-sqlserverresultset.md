@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getInt (int)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: c465ff91-ab96-41de-8917-96c4974c2624
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: ff2b65d6254e0ea65ad2fd6830032c217b9fe50a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 39bab711abd34fb41c3a8a7274eaa2582591479f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435921"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99175707"
 ---
 # <a name="getint-method-int-sqlserverresultset"></a>getInt, méthode (int) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

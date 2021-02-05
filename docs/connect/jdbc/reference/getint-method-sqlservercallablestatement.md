@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.getInt
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 19d60b8b-7e01-4d7b-afa9-f0705d634cf9
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 33a393b264acaa87621c1f7dda422fae3b08c8c4
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 39b27521d07465f16d80cec713508b44279db45c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88435821"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99175662"
 ---
 # <a name="getint-method-sqlservercallablestatement"></a>Méthode getInt (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

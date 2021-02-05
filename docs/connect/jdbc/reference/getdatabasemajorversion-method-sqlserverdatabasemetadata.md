@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.getDatabaseMajorVersion
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 30860c07-e84b-428a-922a-ba63c070cd9c
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 4a559047c604ced12168fcb7d2e4ee8fd9e9cc2f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5e9e002fdb193e4abb7ab495bb7c5672ad8e1780
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436461"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99175999"
 ---
 # <a name="getdatabasemajorversion-method-sqlserverdatabasemetadata"></a>Méthode getDatabaseMajorVersion (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

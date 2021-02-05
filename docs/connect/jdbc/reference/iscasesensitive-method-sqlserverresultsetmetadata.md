@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSetMetaData.isCaseSensitive
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 4db67eb7-7ff2-4fb8-8052-39f699de53ff
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 9145453ef1b483f554e3c27599415021c5295b6e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2887b43f25d17d9e92312f93fe2b3b7fe3053c63
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433621"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177477"
 ---
 # <a name="iscasesensitive-method-sqlserverresultsetmetadata"></a>Méthode isCaseSensitive (SQLServerResultSetMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

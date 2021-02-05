@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.nullsAreSortedAtEnd
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 713cf636-40f2-474a-8a5d-5aba4a310a9c
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b11b9868720a588ae60d63abad651af01193ca20
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2bc2e9c761fc798806019f7bf0183d4a2e200474
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433161"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176983"
 ---
 # <a name="nullsaresortedatend-method-sqlserverdatabasemetadata"></a>Méthode nullsAreSortedAtEnd (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

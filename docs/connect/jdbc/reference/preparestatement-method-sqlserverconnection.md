@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerConnection.prepareStatement
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: bd4e4085-f704-4a73-b6a7-7d443d564728
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 33ff50a91a7fd66191665a335a6e462adb9eb632
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2a95d9ad5c7f9d381d2feb98ae09c31d78263d15
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432871"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176725"
 ---
 # <a name="preparestatement-method-sqlserverconnection"></a>prepareStatement, méthode (SQLServerConnection)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

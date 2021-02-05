@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 53f3291f-d43a-476b-a656-d86168dacf6c
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a4eaf93ee14ced763099ae6080775df5eac2d750
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6b2cb6fe67d9a2ec5cbb0c56c5e1d1c3573533ef
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433301"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177126"
 ---
 # <a name="iswrapperfor-method-sqlserverstatement"></a>Méthode isWrapperFor (SQLServerStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

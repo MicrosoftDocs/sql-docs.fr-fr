@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 002496f7-8ec0-4267-b4e6-ba095e2ef306
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 9af7454de26296b406138c4a23bb1ba48ab6be12
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ac98cce77095a156f7ba8adb62e93095b8a03417
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433471"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177314"
 ---
 # <a name="isqlserverresultset-interface"></a>Interface ISQLServerResultSet
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

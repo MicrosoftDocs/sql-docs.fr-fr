@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.isFirst
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 2ff94b95-32ad-4378-8bb1-970030527bb2
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 05892bce86471733edca6a19a163603dc2a6bbce
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9be7720f2f4d14f51ff10f92279ea704de16647c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433571"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177404"
 ---
 # <a name="isfirst-method-sqlserverresultset"></a>isFirst, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

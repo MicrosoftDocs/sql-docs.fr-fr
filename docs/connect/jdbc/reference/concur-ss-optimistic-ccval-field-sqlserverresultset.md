@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.CONCUR_SS_OPTIMISTIC_CCVAL
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 5314cee7-fef0-47fc-bfb4-284b8700d612
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: ece1e6856d7d3a0e24faf32a136a81d934499393
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c4e1786ad1c0cf473d083475848343a891e5ef84
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88438041"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176256"
 ---
 # <a name="concur_ss_optimistic_ccval-field-sqlserverresultset"></a>CONCUR_SS_OPTIMISTIC_CCVAL, champ (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

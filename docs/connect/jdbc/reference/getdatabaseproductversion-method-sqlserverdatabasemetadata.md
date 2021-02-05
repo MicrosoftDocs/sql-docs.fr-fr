@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.getDatabaseProductVersion
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 19c0c15d-223f-45bd-a215-2867dfefecb0
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 3d86ab32d0327ec6dadc830d3d76ea4e611d7a80
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f5d2d7523eb017d29ce2ec02623dc558f6c56701
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436391"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99175939"
 ---
 # <a name="getdatabaseproductversion-method-sqlserverdatabasemetadata"></a>Méthode getDatabaseProductVersion (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

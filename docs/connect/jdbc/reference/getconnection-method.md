@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDataSource.getConnection ()
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 7f520e96-5313-468f-b987-535ddaea027e
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8f9ca3ee5b2e9102da4dda218c5a63f568eed1e7
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9c648fec5007c9493640c381467103b48bee578e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436471"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176009"
 ---
 # <a name="getconnection-method-"></a>Méthode getConnection ()
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

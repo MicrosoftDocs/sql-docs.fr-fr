@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 5088c649-10ee-4b91-ac9d-596d0ab250b9
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: d124dcd9fc82704f73e906c8005c931cf0e2106b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 57c76cd85f51b516b08b340daa0299a3d899bec2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450524"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176646"
 ---
 # <a name="sqlserverdriver-constructors"></a>Constructeurs SQLServerDriver
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

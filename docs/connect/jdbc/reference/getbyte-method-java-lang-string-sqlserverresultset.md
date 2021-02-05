@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.getByte (java.lang.String)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 069c68ff-442d-4104-917f-3445a3ad264a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: abbfc334796d5e0b24a9618bf6bfb08198fc8851
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: bfb3609cb028f5ac8f181a33ca1b36a356a8d988
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88437021"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176231"
 ---
 # <a name="getbyte-method-javalangstring-sqlserverresultset"></a>getByte, méthode (java.lang.String) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

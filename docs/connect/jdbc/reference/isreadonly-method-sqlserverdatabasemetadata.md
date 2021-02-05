@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.isReadOnly
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: d1569e03-b7bd-486a-af0b-d3f108f712dc
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 4ba16708b03651b7db9f0587c2d7bca2fb9496fb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 3b1f4e5654c50d9d40b998d8bd39ee2d164627a0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433431"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177266"
 ---
 # <a name="isreadonly-method-sqlserverdatabasemetadata"></a>Méthode isReadOnly (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

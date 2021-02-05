@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 2195ec6b-3cd1-4e57-90ba-89d111e20ea4
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 69df7e548465ac6595b2024483ab5f59be103db3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: dd2d20dce837168baa31706cefd1d6882b33db2a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88355185"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178539"
 ---
 # <a name="setstring-method-sqlservernclob"></a>Méthode setString (SQLServerNClob)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

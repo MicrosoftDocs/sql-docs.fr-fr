@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerClob.length
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 18bea01e-7d3d-40aa-961f-2318513fab1c
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 28b5a550b44d48a4f61883347fc8673d96ef4f8d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 12b6867e2923d3da657fab6373a6605d5a440208
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433241"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177066"
 ---
 # <a name="length-method-sqlserverclob"></a>Méthode length (SQLServerClob)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

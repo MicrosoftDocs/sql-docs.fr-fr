@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 6081aa34-fc88-4dd0-9a3f-05e8488219dc
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: c83e158dcb94f6fdf5b3ef2e9d1eedc5880e3d93
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4733b1877a0621f2f8974e3f3b221d745f3bfdcb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433581"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177433"
 ---
 # <a name="isclosed-method-sqlserverresultset"></a>Méthode isClosed (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

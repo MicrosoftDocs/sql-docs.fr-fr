@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: e4e1ae9d-18a6-41db-8bd2-9cf0eee4cccb
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0e96f8eb6ff2e3f20a5d6804ba3083e668c0f3a7
-ms.sourcegitcommit: cb620c77fe6bdefb975968837706750c31048d46
+ms.openlocfilehash: ad3cfba40d6ffcb3468870b38988ac63bbcf6108
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86391791"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177162"
 ---
 # <a name="jdbc-driver-api-reference"></a>Référence de l'API du pilote JDBC
 

@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 4c87e9d3-904a-4b86-90cc-3684034c86ee
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: fed9a2ff846c28c47bfe18eb88a3739a3d785d93
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 21a74d185e3f110ee5c77e45bf737b19c3049cc4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88472134"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176576"
 ---
 # <a name="sqlserverpooledconnection-class"></a>Classe SQLServerPooledConnection
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

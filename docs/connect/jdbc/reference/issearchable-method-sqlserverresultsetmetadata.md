@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSetMetaData.isSearchable
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 10cf54f9-ef42-475e-8397-790306934573
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b10413932af2a231a9b3a9218bf887f9086f053d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5413d86b10fa899c434b6553bf49d2cae6cb8f07
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433401"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177234"
 ---
 # <a name="issearchable-method-sqlserverresultsetmetadata"></a>Méthode isSearchable (SQLServerResultSetMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

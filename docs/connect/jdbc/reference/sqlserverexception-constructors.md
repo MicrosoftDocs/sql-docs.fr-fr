@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: ''
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8f07a0ed3580cbf3160b5087ebc9abc257d21c96
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2b3342fc6b7e9fe6fc7c4773cd697aa3389403a1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450435"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178192"
 ---
 # <a name="sqlserverexception-constructors"></a>SQLServerException, constructeurs
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerConnection, byte[].SQLServerBlob
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 9fe573e3-30db-4828-abab-e9346493e931
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 968c32094196c88ab8eb607e6faa8992de40ed00
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d2ff6f2a7fadaa23df917e07b10b20f2cf3df427
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88472161"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178412"
 ---
 # <a name="sqlserverblob-constructor-sqlserverconnection-byte"></a>SQLServerBlob, constructeur (SQLServerConnection, byte)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

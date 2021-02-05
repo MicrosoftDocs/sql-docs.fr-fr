@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.ownUpdatesAreVisible
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: eacbb1a8-ac9a-4f44-832e-ae0af476522e
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 6ccdac435eaccec8ff075f0d8ce0cdf802c8f9b2
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 55fb85c9df2e278c78a03d4c06d06c3f597c2672
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433071"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176935"
 ---
 # <a name="ownupdatesarevisible-method-sqlserverdatabasemetadata"></a>Méthode ownUpdatesAreVisible (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

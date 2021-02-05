@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: de095cb3-1111-4154-8996-3c2e529e3000
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e41da20bd3e3f046f5ece7e2c190a3a81c70e861
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ed5399cd8dc36aa1b8d05659b0488717472b1887
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88458301"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178615"
 ---
 # <a name="setsqlxml-method-sqlservercallablestatement"></a>Méthode setSQLXML (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

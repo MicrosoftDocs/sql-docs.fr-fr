@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.setTimestamp (int, java.sql.Timestamp, java.util.Calendar))
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 10c93cbf-f831-4e00-8e37-ea728bf34b1e
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2a60744d0adb570e98be1816925ceb5eca867bfa
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 58211718c8589ea7ec7cf367184fa712ac041488
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88467161"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178527"
 ---
 # <a name="settimestamp-method-int-javasqltimestamp-javautilcalendar"></a>Méthode setTimestamp (int, java.sql.Timestamp, java.util.Calendar)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

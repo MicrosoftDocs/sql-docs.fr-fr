@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPooledConnection.removeConnectionEventListener
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 46902e89-f512-40af-a2d9-a896f03d1200
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: ba6472207d42379a3c1d5fe04f4313db986ab0d2
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d2a145c8bc9ba4bd01dc837692a01908d4a75a15
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432741"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176654"
 ---
 # <a name="removeconnectioneventlistener-method-sqlserverpooledconnection"></a>Méthode removeConnectionEventListener (SQLServerPooledConnection)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.setString
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: f38b97b5-d4f0-4f74-a33d-740241a85842
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 6ab66f76ccc0f6c80c9358e56902c063ca5e1e15
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 24334ffd36b51017b5b46e3aebebe52a7d913b0f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450711"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178576"
 ---
 # <a name="setstring-method-sqlservercallablestatement"></a>Méthode setString (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

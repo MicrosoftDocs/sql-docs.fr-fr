@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPooledConnection.getConnection
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 05bdb61f-26e8-480f-a1c1-1e46a8ed4b70
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 7ab3459b4fccd244a958ae772bf12cda4ab49457
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 97d182890a4e631102f16a07463012cf2bbc85aa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436511"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99176017"
 ---
 # <a name="getconnection-method-sqlserverpooledconnection"></a>Méthode getConnection (SQLServerPooledConnection)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

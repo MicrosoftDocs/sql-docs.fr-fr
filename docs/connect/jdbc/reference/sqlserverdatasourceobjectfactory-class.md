@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: b616632b-5987-470d-b36c-b22fa9213145
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: c41473da9a29cc962f1b3ad37df22b0699def3b3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f4545776ff08e1f2fdd1760e652770a34733f058
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450588"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178282"
 ---
 # <a name="sqlserverdatasourceobjectfactory-class"></a>Classe SQLServerDataSourceObjectFactory
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.getDate (java.lang.String)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: a605bca6-d960-4756-ad14-0f42b313e60a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 9ec829f3f4f5717b0a493c69f6b5c4733a2fc1fa
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a10647e6e920636d59d412b62b190b5870954730
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88436341"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99175948"
 ---
 # <a name="getdate-method-javalangstring"></a>Méthode getDate (java.lang.String)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -49,7 +49,7 @@ public java.sql.Date getDate(java.lang.String sCol)
 ## <a name="remarks"></a>Notes  
  Cette méthode getDate est spécifiée par la méthode getDate de l’interface java.sql.CallableStatement.  
   
- Cette méthode retourne une partie date valide d’un type de données [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] **datetime** ou** smalldatetime**, avec la partie heure définie sur l’heure de référence Java 00:00 (minuit).  
+ Cette méthode retourne une partie date valide d’un type de données [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] **datetime** ou **smalldatetime**, avec la partie heure définie sur l’heure de référence Java 00:00 (minuit).  
   
 ## <a name="see-also"></a>Voir aussi  
  [getDate, méthode &#40;SQLServerCallableStatement&#41;](../../../connect/jdbc/reference/getdate-method-sqlservercallablestatement.md)   

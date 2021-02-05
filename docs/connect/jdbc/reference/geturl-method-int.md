@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.getURL Ijnt)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 75d03ced-3614-4997-9abd-24642b1d1aae
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f21b85039805f6b636b79be05fa0eb7a4f105abb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d5b1e9462703e9ce2f81ac473b6d5da32b4ca26a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433881"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177678"
 ---
 # <a name="geturl-method-int"></a>Méthode getURL (int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

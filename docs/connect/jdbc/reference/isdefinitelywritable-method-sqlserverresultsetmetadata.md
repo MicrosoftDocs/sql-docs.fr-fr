@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSetMetaData.isDefinitelyWritable
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 7650e89a-dc8e-43ca-8eb2-f962f1a4b4ae
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 761a502dc01dd9ce2b3e7705338ce94f73393187
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 28e0183a2ea0e9fbad3610c55d27b6a690eba5ae
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88433631"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99177416"
 ---
 # <a name="isdefinitelywritable-method-sqlserverresultsetmetadata"></a>Méthode isDefinitelyWritable (SQLServerResultSetMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

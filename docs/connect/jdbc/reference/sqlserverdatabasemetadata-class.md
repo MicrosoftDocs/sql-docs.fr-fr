@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 8b8049d0-8c6d-4476-866b-098709f37eec
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8ac6178fd502579920e181c7c0e7068ffff33ca2
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9ae440b99f3d750a2e7a4c5c94609e554068ea79
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88354605"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178305"
 ---
 # <a name="sqlserverdatabasemetadata-class"></a>Classe SQLServerDatabaseMetaData
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
