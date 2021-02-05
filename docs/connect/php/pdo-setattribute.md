@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 56f9ee96-e1d2-46cc-b137-38f06a251863
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: fc64e04ee53b6b654974312a8a7050bbb120a804
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+ms.openlocfilehash: ac1b72ea564df077ae7edb0f771becd9b76cda7b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88645889"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195239"
 ---
 # <a name="pdosetattribute"></a>PDO::setAttribute
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

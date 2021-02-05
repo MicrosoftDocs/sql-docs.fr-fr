@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 2bdbb539-0cb9-4047-98e3-7d6906af68f8
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: ff42e8389b3eeb74e8518787add914e7a1c8e1fa
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 37adda475822c7e6d56906170403ed26be3ab9a3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88472058"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99187625"
 ---
 # <a name="updatenclob-method-int-javaioreader-long"></a>Méthode updateNClob (int, java.io.Reader, long)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

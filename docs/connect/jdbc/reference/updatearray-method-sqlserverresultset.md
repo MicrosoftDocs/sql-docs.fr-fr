@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateArray
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 66b4473d-a8c1-4d19-8487-b39d6d0597c7
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 67bf6f32a4f4249b01f97505baa1dcd7de651ecd
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d4e0755a69c83ff378cafaa415cdba4d9af9589f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88462361"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191788"
 ---
 # <a name="updatearray-method-sqlserverresultset"></a>updateArray, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

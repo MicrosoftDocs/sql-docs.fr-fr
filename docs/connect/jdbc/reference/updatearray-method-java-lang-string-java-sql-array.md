@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateArray (java.lang.String, java.sql.Array)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 6f2ced5a-1c7d-439a-aaa5-472b9f4fdeab
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 1b40ee796c388c19796761eae067132862fddeb0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 264ca43b7c5379bad0e8b985b8c7800f4f6b2600
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88458041"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190955"
 ---
 # <a name="updatearray-method-javalangstring-javasqlarray"></a>Méthode updateArray (java.lang.String, java.sql.Array)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

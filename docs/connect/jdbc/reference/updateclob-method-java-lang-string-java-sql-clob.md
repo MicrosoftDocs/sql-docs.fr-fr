@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateClob (java.lang.String, java.sql.Clob)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 5da64915-1c13-44fd-90c0-52168889bae0
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: d9537b7bd0bd595e1063354e0e7c783007d15d59
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 465e213ee4164edd71881d576b29cf08f84c6000
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431381"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188181"
 ---
 # <a name="updateclob-method-javalangstring-javasqlclob"></a>Méthode updateClob (java.lang.String, java.sql.Clob)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: de170a1a-fd06-4b70-8749-d86e2e0fb286
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b2d596e02100899a13fa67c677ddcdcd87d556e8
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2f7697d8eb4fe239812752685dab90dda8981e14
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88462561"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179983"
 ---
 # <a name="sqlserverstatement-methods"></a>Méthodes SQLServerStatement
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

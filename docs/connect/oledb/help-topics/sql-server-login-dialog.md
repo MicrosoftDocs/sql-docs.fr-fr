@@ -7,15 +7,15 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: reference
+ms.topic: conceptual
 ms.author: v-beaziz
 author: bazizi
-ms.openlocfilehash: 97b52f8c1e4560c5fe1654d8e81d2ac00cdb6257
-ms.sourcegitcommit: 0e0cd9347c029e0c7c9f3fe6d39985a6d3af967d
+ms.openlocfilehash: 647551a314829ef196914e964cbd08237ef085d7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96506381"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195296"
 ---
 # <a name="sql-server-login-dialog-box"></a>Boîte de dialogue de connexion SQL Server
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

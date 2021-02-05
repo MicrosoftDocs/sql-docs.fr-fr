@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateBigDecimal (int, java.math.BigDecimal)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 1e15de27-a490-45cd-a3a6-a49721f15a97
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 111b892a260078161be77c5e0c1069dd96dd103e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 67841345f50085af29861365dd370ebf415078c3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88478491"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192628"
 ---
 # <a name="updatebigdecimal-method-int-javamathbigdecimal"></a>Méthode updateBigDecimal (int, java.math.BigDecimal)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

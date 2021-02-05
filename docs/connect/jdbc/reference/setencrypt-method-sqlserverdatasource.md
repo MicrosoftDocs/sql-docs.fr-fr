@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - setEncrypt Method (SQLServerDataSource)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 0c85a9c1-f27c-457e-8461-403cc03e2d17
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e7da98aa70be2066c370b75e2bc213c25ba16e03
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a041a866e825cef59441cbfd42ca408d1d3cfd0d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431971"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179016"
 ---
 # <a name="setencrypt-method-sqlserverdatasource"></a>Méthode setEncrypt (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

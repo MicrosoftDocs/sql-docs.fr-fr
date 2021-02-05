@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - sqlsrv_close
 apitype: NA
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 6ac6209c-a134-4f8f-b88b-8eefaa1cbc7f
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0ef31416d2ac40677e5907c96290ec8e32845862
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 16dfb43ebc8a35ef1a3e6016092f67e328d1eda5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88414175"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190715"
 ---
 # <a name="sqlsrv_close"></a>sqlsrv_close
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -45,7 +45,7 @@ Valeur booléenne **true** sauf si la fonction est appelée avec un paramètre n
 > [!NOTE]  
 > **Null** est un paramètre valide pour cette fonction. Ainsi, la fonction peut être appelée plusieurs fois dans un script. Par exemple, si vous fermez une connexion dans une condition d’erreur et que vous la refermez à la fin du script, le deuxième appel à **sqlsrv_close** va retourner **true**, car le premier appel à **sqlsrv_close** (dans la condition d’erreur) affecte la valeur **null** à la ressource de connexion.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
 L’exemple suivant ferme une connexion. L’exemple part du principe que SQL Server est installé sur l’ordinateur local. Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
   
 ```  

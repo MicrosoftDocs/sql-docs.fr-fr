@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - sqlsrv_errors
 apitype: NA
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: d1fcffec-f34f-46de-9a0e-343f3b5dbae2
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: c0922e0ec7f3072b15b61f76908116bb86f4fe04
-ms.sourcegitcommit: 129f8574eba201eb6ade1f1620c6b80dfe63b331
+ms.openlocfilehash: a74b89b93f924401d18372a04ab65180f2cbde8e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87435196"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194214"
 ---
 # <a name="sqlsrv_errors"></a>sqlsrv_errors
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

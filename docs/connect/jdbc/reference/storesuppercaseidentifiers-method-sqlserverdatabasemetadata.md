@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.storesUpperCaseIdentifiers
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: a622b748-d10b-4f02-afe3-fba4a5bca17b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e435ca2947dec04a0c9568389150f7f45082333f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6912b6582ac89f67264c8415ced44cedeb2ab6d5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450411"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183274"
 ---
 # <a name="storesuppercaseidentifiers-method-sqlserverdatabasemetadata"></a>Méthode storesUpperCaseIdentifiers (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

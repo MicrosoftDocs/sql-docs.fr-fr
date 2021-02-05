@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerXADataSource
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 03649d56-3319-4867-bef1-559dfd221b8b
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 660ee83adf3d380f8abe7f1156d263168cc5bdd3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a0394c3cc930b17ae8122331fa615a52bf3b1b7d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88462521"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180327"
 ---
 # <a name="sqlserverxadatasource-constructor-"></a>Constructeur SQLServerXADataSource ()
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

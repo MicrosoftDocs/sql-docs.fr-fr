@@ -7,15 +7,15 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: reference
+ms.topic: conceptual
 ms.author: v-beaziz
 author: bazizi
-ms.openlocfilehash: f8d9444864dfe144918374c6d10e1a9f403faff3
-ms.sourcegitcommit: 0e0cd9347c029e0c7c9f3fe6d39985a6d3af967d
+ms.openlocfilehash: 52089c92af76611fe8ab60b53dc7cf2848fb31c5
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96504724"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195303"
 ---
 # <a name="universal-data-link-udl-configuration"></a>Configuration UDL (Universal Data Link)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

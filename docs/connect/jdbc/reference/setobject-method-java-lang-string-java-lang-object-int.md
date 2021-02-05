@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.setObject (java.lang.String, java.lang.Object, int)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: a9a0c802-7851-4826-b173-87b0c0acb3a0
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5e110b1eefe842da53ab296f683bbd77101be1ad
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4d834471304f42cb095a90e1cef808070a441a5b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88458547"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178797"
 ---
 # <a name="setobject-method-javalangstring-javalangobject-int"></a>Méthode setObject (java.lang.String, java.lang.Object, int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

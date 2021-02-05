@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsOrderByUnrelated
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 9ea6c534-8132-49f3-aac3-a12ec4c46df2
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8402f4ee1f7e5fb17280fcf450a3eb94f89b1ba5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1d3f2732c38179a9433520b263082fc8cd023d19
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431481"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186102"
 ---
 # <a name="supportsorderbyunrelated-method-sqlserverdatabasemetadata"></a>Méthode supportsOrderByUnrelated (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

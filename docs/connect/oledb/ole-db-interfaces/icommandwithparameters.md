@@ -10,12 +10,12 @@ ms.technology: connectivity
 ms.topic: reference
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 21f3643737d1d6682133a252d52a072f73e81dfb
-ms.sourcegitcommit: c95f3ef5734dec753de09e07752a5d15884125e2
+ms.openlocfilehash: dd33d19aaa5bea8c938ceaafe926b23f256ce703
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88861376"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99191799"
 ---
 # <a name="icommandwithparameters"></a>ICommandWithParameters
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

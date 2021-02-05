@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateDouble (int, double)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 90c47643-e27e-425d-85a0-63866f858367
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 7d83a51b8c344f0472b402eb47999e3736384241
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b43ef23d933c76f752b8e7965812ca388680bcf7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88353485"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194251"
 ---
 # <a name="updatedouble-method-int-double"></a>Méthode updateDouble (int, double)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

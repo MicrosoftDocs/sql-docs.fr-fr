@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerPreparedStatement.setFloat
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 870d0031-6871-4dc0-b03a-fb0a9ff6ab98
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2a4ea923e29eeff00164e889320b1c32f4f1c028
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6e327c0bfedf36bd69c4f4fb45f09f9f386b8a1c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431801"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178929"
 ---
 # <a name="setfloat-method-sqlserverpreparedstatement"></a>setFloat, méthode (SQLServerPreparedStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: b7da6d44-f5b1-44f8-95f5-40179968b1b0
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a2d02b382ae11e8d607689153ee04f56f2bfa95b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c9a0e8ddb0bb108fbb6772ad12e98256efa291d4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88458658"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178786"
 ---
 # <a name="setnstring-method-int-javalangstring"></a>Méthode setNString (int, java.lang.String)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

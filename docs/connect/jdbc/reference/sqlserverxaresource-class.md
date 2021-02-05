@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: df957b79-536f-4db7-b6ac-3d59343559fc
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8126ecb70b0985845536d6d023937df6bbd344ff
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 27faf26e6bd35d492bda5c3da9484b7fe50bcb7f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88458191"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181173"
 ---
 # <a name="sqlserverxaresource-class"></a>Classe SQLServerXAResource
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

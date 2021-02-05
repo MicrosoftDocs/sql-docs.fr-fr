@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 114f55af-62ab-4c60-8724-0affbbbbbcdc
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: d9797c5109b34897aca747d091949975eefc3727
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 56a9bde3e6480c973ae173137f81149aced6c7b8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88396125"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181146"
 ---
 # <a name="valueof-method-javasqltimestamp-int"></a>Méthode valueOf (java.sql.Timestamp, int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsSchemasInTableDefinitions
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 3326b1b0-53e2-42ae-9ff7-98e8c7017ffa
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8b91bf2c511da150dce56850c0b1d344226499a6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c5dbaf0711011bc3d5e9ade3e19931a4564c1b33
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450201"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188411"
 ---
 # <a name="supportsschemasintabledefinitions-method-sqlserverdatabasemetadata"></a>Méthode supportsSchemasInTableDefinitions (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

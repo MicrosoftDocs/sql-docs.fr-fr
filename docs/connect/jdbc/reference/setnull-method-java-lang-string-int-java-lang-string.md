@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.setNull (java.lang.String, int, java.lang.String)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 16ff77f9-7928-415c-abf6-97ed59e3e396
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8c4d7666b4b743428ce2f81c7d84cd3b7caeca47
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 80410d9aedbaccc73e9309ea6438f66b9bbe36a8
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88458619"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178718"
 ---
 # <a name="setnull-method-javalangstring-int-javalangstring"></a>Méthode setNull (java.lang.String, int, java.lang.String)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

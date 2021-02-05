@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 0cb0d347-4449-4920-b382-05f88f2a3225
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 68799acec333dca82158a201fb288dbedf667333
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 785c48d6a9c9f95af326b845da068a7edfb4e7bd
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431271"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181656"
 ---
 # <a name="updatenclob-method-sqlserverresultset"></a>Méthode updateNClob (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

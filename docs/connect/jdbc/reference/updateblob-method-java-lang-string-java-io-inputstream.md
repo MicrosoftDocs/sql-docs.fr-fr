@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 018cd71b-4b58-49a7-990e-d28dbb12da70
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 701fb7df5f8c9632d139357021fb8793551f5147
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8fc0ed5dcb63ab02523c7da7bff9454e485b3eb7
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88462315"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192616"
 ---
 # <a name="updateblob-method-javalangstring-javaioinputstream"></a>Méthode updateBlob (java.lang.String, java.io.InputStream)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

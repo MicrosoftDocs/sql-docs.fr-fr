@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - sqlsrv_commit
 apitype: NA
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: bad67571-61ad-45b5-b4ff-677e3544f809
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0d42500c2764815ade1a2bf2292320f4b8745e88
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 73d68b6f16c655147ef79144658dadfa0e0198fa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88413965"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190673"
 ---
 # <a name="sqlsrv_commit"></a>sqlsrv_commit
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

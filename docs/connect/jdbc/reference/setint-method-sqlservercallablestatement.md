@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.setInt
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 7de05cf4-3a48-4c60-9a1b-6ad2ae43d258
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b8d43f97af53508572e1b41be61df4358f6cd020
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 29e828865f8de3c0a75fed6689a7ab9bbcfb8cf4
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431781"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178906"
 ---
 # <a name="setint-method-sqlservercallablestatement"></a>Méthode setInt (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

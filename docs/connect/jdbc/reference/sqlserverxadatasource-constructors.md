@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 8b734305-b007-41bd-819a-69792fac0781
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0b738f57ff36ed4bd22ed650d9f9fedd29416d44
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 173935e1643c0cac284c551077fe3578a9094139
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88462511"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99180311"
 ---
 # <a name="sqlserverxadatasource-constructors"></a>Constructeurs SQLServerXADataSource
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

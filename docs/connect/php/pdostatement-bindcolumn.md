@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: bbdcea53-d23d-4769-89a0-95c7cf4d5390
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: dd62d4436c5718801dee7b273773b87f6b47eec6
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+ms.openlocfilehash: d9ed841aaf609178ee28b6340206421fa6d0eb81
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88645879"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195228"
 ---
 # <a name="pdostatementbindcolumn"></a>PDOStatement::bindColumn
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

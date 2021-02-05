@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.wasNull
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: d37f80ef-d72c-4429-ada3-1d685bdab6d7
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: a72117ec8a5e6ee3e2cf663ce46b88189497900d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9270c7c4ab62d2d495a7416c22f59b2d0b69870c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88488006"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181114"
 ---
 # <a name="wasnull-method-sqlserverresultset"></a>wasNull, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

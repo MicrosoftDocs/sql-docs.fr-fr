@@ -12,12 +12,12 @@ helpviewer_keywords:
 - IBCPSession2 interface
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 50cc43cec2e51162a887801bc52dcf34d4df26fa
-ms.sourcegitcommit: c95f3ef5734dec753de09e07752a5d15884125e2
+ms.openlocfilehash: 1bb2ed79ebbcafb1e7c319d1dab990195131084a
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88862325"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190751"
 ---
 # <a name="ibcpsession2-ole-db"></a>IBCPSession2 (OLE DB)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

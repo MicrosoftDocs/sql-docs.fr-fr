@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: b5170751-fbe1-433b-96f5-4f237ba55f60
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b797de2201c57c55af7e466ba792ea7a54d9d8d8
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4f91be12042616311ec1da91bc410989b0cf82b3
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431251"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193058"
 ---
 # <a name="updatesqlxml-method-int-javasqlsqlxml"></a>Méthode updateSQLXML (int, java.sql.SQLXML)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

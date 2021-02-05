@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateAsciiStream (int, java.io.InputStream.int)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: d07944b8-7001-49b5-b3b3-0676f71e17cf
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 162af3f276de47ed81b060316c983c0d6d148aa3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2df6d301f26a931b788924e02321fcb6b507664e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88462351"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182130"
 ---
 # <a name="updateasciistream-method-int-javaioinputstream-int"></a>Méthode updateAsciiStream (int, java.io.InputStream, int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

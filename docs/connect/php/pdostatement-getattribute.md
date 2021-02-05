@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 41d0cca3-8556-4573-bb90-8e9402d9379f
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 07cc46717dafe973dee05647f1d08134d858c58e
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+ms.openlocfilehash: c639d53d0a877c6a1054d18638e50ef9b95cc73b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88646749"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179936"
 ---
 # <a name="pdostatementgetattribute"></a>PDOStatement::getAttribute
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

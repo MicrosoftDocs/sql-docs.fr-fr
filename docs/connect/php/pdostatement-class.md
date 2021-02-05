@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: ef2db0b3-b10e-4898-8bfc-d5e4baca18ef
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 6172e4c86786f57a2ddd30cb6c4f04a687802ea2
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+ms.openlocfilehash: 85be9e92bc589966cba3945df38db18c3ee2c7f2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88646599"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195193"
 ---
 # <a name="pdostatement-class"></a>Classe PDOStatement
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

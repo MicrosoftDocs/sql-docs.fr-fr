@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsGetGeneratedKeys
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 4f0e4659-14e7-4743-aed8-1768ee2b29dd
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: c27704022f1da09fdca6ec5f9697abed8bf3e3cf
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2a92c0dacc218fe5113bf0dfe0e78d71bdd50e0d
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88467031"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185241"
 ---
 # <a name="supportsgetgeneratedkeys-method-sqlserverdatabasemetadata"></a>Méthode supportsGetGeneratedKeys (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

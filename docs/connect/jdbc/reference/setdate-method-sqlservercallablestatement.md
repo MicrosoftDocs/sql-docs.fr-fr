@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.setDate
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 2a134217-276a-4d0e-8a75-4e1bf300c946
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 87621011b655d785bfa2ee1ea7930e26fdceda57
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 963b715ee72fc1fcc3a16c1bb97c49d0305ae9cb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432011"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179044"
 ---
 # <a name="setdate-method-sqlservercallablestatement"></a>Méthode setDate (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

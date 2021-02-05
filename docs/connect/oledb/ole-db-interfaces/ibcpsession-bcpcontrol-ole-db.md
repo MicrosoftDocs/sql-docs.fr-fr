@@ -15,12 +15,12 @@ helpviewer_keywords:
 - BCPControl method
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: dfb42fe378d428dbe272bb135492ab93c6eb619c
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: cedb68aa9157f89df053b1ab4c150736835b37b6
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081828"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186270"
 ---
 # <a name="ibcpsessionbcpcontrol-ole-db"></a>IBCPSession::BCPControl (OLE DB)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -70,7 +70,7 @@ HRESULT BCPControl(
  Spécifiez l'une des options répertoriées dans la section Notes ci-dessus.  
   
  *iValue*[in]  
- Valeur pour le paramètre *eOption*spécifié. L'argument *iValue* est un cast de valeur entière à un pointeur void permettant d'autoriser l'expansion future vers des valeurs 64 bits.  
+ Valeur pour le paramètre *eOption* spécifié. L'argument *iValue* est un cast de valeur entière à un pointeur void permettant d'autoriser l'expansion future vers des valeurs 64 bits.  
   
 ## <a name="return-code-values"></a>Codet de retour  
  S_OK  

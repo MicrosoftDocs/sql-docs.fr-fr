@@ -6,16 +6,16 @@ ms.date: 05/25/2020
 ms.prod: sql
 ms.prod_service: connectivity
 ms.technology: connectivity
-ms.topic: reference
+ms.topic: conceptual
 ms.reviewer: v-kaywon
 ms.author: v-daenge
 author: David-Engel
-ms.openlocfilehash: b16ba1f6fef9ec82de0e3c4877a52aee344a2b70
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 3b59abddd3cd64302137ec0a0347bde929d478ba
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91727272"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99190347"
 ---
 # <a name="utf-8-support-in-ole-db-driver-for-sql-server"></a>Prise en charge d’UTF-8 dans OLE DB Driver pour SQL Server
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

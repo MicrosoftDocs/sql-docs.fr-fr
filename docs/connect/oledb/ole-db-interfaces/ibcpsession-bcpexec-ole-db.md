@@ -15,12 +15,12 @@ helpviewer_keywords:
 - BCPExec method
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 9c3970eba0c3e9839d2eaa1ba42ad384fdbd5909
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: 20b51034cbaf825c10b4be13d15f562994e543aa
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081818"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194266"
 ---
 # <a name="ibcpsessionbcpexec-ole-db"></a>IBCPSession::BCPExec (OLE DB)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

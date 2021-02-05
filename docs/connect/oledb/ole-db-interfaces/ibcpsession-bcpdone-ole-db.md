@@ -15,12 +15,12 @@ helpviewer_keywords:
 - BCPDone method
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e4b785ef962474a73eeaafa1975adc3e70642b9c
-ms.sourcegitcommit: c95f3ef5734dec753de09e07752a5d15884125e2
+ms.openlocfilehash: 0b7acf9c54c93e9970f03319eb1436dc7c35b875
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88861964"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186257"
 ---
 # <a name="ibcpsessionbcpdone-ole-db"></a>IBCPSession::BCPDone (OLE DB)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

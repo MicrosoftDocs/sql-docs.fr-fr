@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsGroupByUnrelated
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 455fe02e-3877-409b-8281-8e0491acd3e8
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 4150a764a58d8b2b40ccfce31cf73746b8665372
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ab37191747a8f0df1580a1a68ed2196793cf7882
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88467021"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185574"
 ---
 # <a name="supportsgroupbyunrelated-method-sqlserverdatabasemetadata"></a>Méthode supportsGroupByUnrelated (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

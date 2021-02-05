@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateByte (int, byte)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: e635d789-9218-488e-a213-2e3e09635acc
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 00a7eea10e4ded2bcac76b0825f6ba33722d5795
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2444c734519ab0681b99de650c1be166fae9df8b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88462243"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99193573"
 ---
 # <a name="updatebyte-method-int-byte"></a>Méthode updateByte (int, byte)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

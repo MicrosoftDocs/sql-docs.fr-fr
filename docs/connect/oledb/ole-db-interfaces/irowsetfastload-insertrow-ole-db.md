@@ -15,12 +15,12 @@ helpviewer_keywords:
 - InsertRow method
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5a631a9385b323b3b8b8ac0d276ff9eb2d560ef3
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 650694069bb8019067f44c1a7aac593c27f048f9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91726934"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183783"
 ---
 # <a name="irowsetfastloadinsertrow-ole-db"></a>IRowsetFastLoad::InsertRow (OLE DB)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

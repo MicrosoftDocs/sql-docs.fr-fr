@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsLimitedOuterJoins
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 06225a1a-a58d-4bff-b2ef-be303f051644
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 454adf5aed291f90af16e0f1cca6080195b3c351
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b5d1fdd107818f9dcadc34797fc189658e4224d2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450361"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99185890"
 ---
 # <a name="supportslimitedouterjoins-method-sqlserverdatabasemetadata"></a>Méthode supportsLimitedOuterJoins (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.setObject
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 7110f6c5-4af3-4b50-a4d4-1bae1876c70d
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 649d74846247e3ab1f5825aef7f0282af96815bb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8f0df699b4e410109d6d88afbd30be97ddde65d0
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88458500"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178755"
 ---
 # <a name="setobject-method-sqlservercallablestatement"></a>Méthode setObject (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

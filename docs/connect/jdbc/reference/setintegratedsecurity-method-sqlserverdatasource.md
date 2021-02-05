@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDataSource.setIntegratedSecurity
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 4c968ee4-b041-424a-bf69-cc2c4a4f51c6
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b172631e774f5ea9da15873a1e8a00121ab46faf
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 93a3147cafb1ac00c629f23c516d97f8d63606af
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88431851"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178960"
 ---
 # <a name="setintegratedsecurity-method-sqlserverdatasource"></a>Méthode setIntegratedSecurity (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateBigDecimal
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 35445fe4-3b8e-4ec5-a138-067524236dc6
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 48cdc12b8ea9d57468c6bce4023ab77031faff2c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: fad1995a06508f1e699144e207b8b5567d811bba
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88478455"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99192115"
 ---
 # <a name="updatebigdecimal-method-sqlserverresultset"></a>updateBigDecimal, méthode (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

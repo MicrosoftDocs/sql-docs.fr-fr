@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateBinaryStream
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 1af26ac2-76e5-4a26-a600-9919211333ba
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f18ba3d2387af462095ab6a5ff9c4bfbd097b477
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 441846813959cb82bdacd0449d3a61e55a3f6adb
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88478411"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183259"
 ---
 # <a name="updatebinarystream-method-sqlserverresultset"></a>Méthode updateBinaryStream (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -15,12 +15,12 @@ helpviewer_keywords:
 - Abort method
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: cbbef11ae17029500a6910e5b28c121f6312dce2
-ms.sourcegitcommit: c95f3ef5734dec753de09e07752a5d15884125e2
+ms.openlocfilehash: 0eb1d96d2e3656d046cd738d1a4f38f4f6b7cb9f
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88862203"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183745"
 ---
 # <a name="issasynchstatusabort-ole-db"></a>ISSAsynchStatus::Abort (OLE DB)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

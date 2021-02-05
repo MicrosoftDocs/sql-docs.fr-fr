@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.setDate (java.lang.String, java.sql.Date, java.util.Calendar)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: fd152ad6-dd5e-49ef-b166-917371a2cba6
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 1ecb8736217a1d0396838917edeccc0e1d563e7d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 62f01af0ca80fd7858d41bc203cfb34b1fba9eb1
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88432031"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99179041"
 ---
 # <a name="setdate-method-javalangstring-javasqldate-javautilcalendar"></a>Méthode setDate (java.lang.String, java.sql.Date, java.util.Calendar)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

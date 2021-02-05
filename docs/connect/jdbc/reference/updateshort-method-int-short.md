@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerResultSet.updateShort (int, short)
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 155b9189-cb97-4264-b42c-bbda1c7d624f
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2585d0c5485b3e64f051c6bffcd867f762fd7d21
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 68a9f01d57f6f91e47713f29c521ede04622373b
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450071"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99181163"
 ---
 # <a name="updateshort-method-int-short"></a>Méthode updateShort (int, short)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

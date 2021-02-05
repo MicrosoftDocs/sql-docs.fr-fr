@@ -15,12 +15,12 @@ helpviewer_keywords:
 - BCPColFmt method
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: bfff1da26e499043206fc3f777e1bd9ba5902e44
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: 4806671e534faf347837333b0c667c396751aeef
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081858"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99186290"
 ---
 # <a name="ibcpsessionbcpcolfmt-ole-db"></a>IBCPSession::BCPColFmt (OLE DB)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -68,7 +68,7 @@ HRESULT BCPColFmt(
 > [!IMPORTANT]
 > <b id="terminator_note">[1] :</b> L’utilisation de la séquence de fin dans les scénarios où la page de codes du fichier de données est définie sur UTF-8 n’est pas prise en charge. Dans de tels scénarios, **pbUserDataTerm** doit être défini sur `nullptr` et **cbUserDataTerm** doit être défini sur `0`.
 
- Chaque appel à **BCPColFmt** spécifie le format pour un champ de fichier utilisateur. Par exemple, pour modifier les paramètres par défaut pour trois champs dans un fichier de données utilisateur de cinq champs, appelez tout d'abord `BCPColumns(5)`, puis **BCPColFmt** cinq fois, trois de ces appels définissant votre format personnalisé. Pour les deux appels restants, attribuez BCP_TYPE_DEFAULT à *eUserDataType* et, respectivement, 0, BCP_VARIABLE_LENGTH et 0 à *cbIndicator*, *cbUserData*et *cbUserDataTerm* . Cette procédure copie les cinq colonnes, trois avec votre format personnalisé et deux avec le format par défaut.  
+ Chaque appel à **BCPColFmt** spécifie le format pour un champ de fichier utilisateur. Par exemple, pour modifier les paramètres par défaut pour trois champs dans un fichier de données utilisateur de cinq champs, appelez tout d'abord `BCPColumns(5)`, puis **BCPColFmt** cinq fois, trois de ces appels définissant votre format personnalisé. Pour les deux appels restants, attribuez BCP_TYPE_DEFAULT à *eUserDataType* et, respectivement, 0, BCP_VARIABLE_LENGTH et 0 à *cbIndicator*, *cbUserData* et *cbUserDataTerm* . Cette procédure copie les cinq colonnes, trois avec votre format personnalisé et deux avec le format par défaut.  
   
 > [!NOTE]  
 >  La méthode [IBCPSession::BCPColumns](../../oledb/ole-db-interfaces/ibcpsession-bcpcolumns-ole-db.md) doit être appelée avant tout appel à **BCPColFmt**. Vous devez appeler **BCPColFmt** une fois pour chaque colonne dans le fichier utilisateur. Le fait d'appeler **BCPColFmt** plus d'une fois pour toute colonne de fichier utilisateur génère une erreur.  
@@ -98,7 +98,7 @@ HRESULT BCPColFmt(
   
  Pour les types de données caractères et binaires [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], **cbUserData** peut être BCP_LENGTH_VARIABLE, BCP_LENGTH_NULL, 0 ou une valeur positive. Si **cbUserData** est BCP_LENGTH_VARIABLE, le système utilise l'indicateur de longueur, s'il est présent, ou une séquence de marque de fin pour déterminer la longueur des données. Si un indicateur de longueur et une séquence de terminaison sont fournis, la copie en bloc utilise celui qui implique le volume de données à copier le plus faible. Si **cbUserData** est BCP_LENGTH_VARIABLE, le type de données est un type caractère ou binaire [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Si aucun indicateur de longueur ni aucune séquence de terminateur ne sont spécifiés, le système retourne un message d’erreur.  
   
- Si **cbUserData** a la valeur 0 ou une valeur positive, le système utilise **cbUserData** comme longueur de données maximale. Toutefois, si un indicateur de longueur ou une séquence de terminaison est fournie en plus d'une valeur **cbUserData**positive, le système détermine la longueur de données en utilisant la méthode qui entraîne la plus petite quantité de données à copier.  
+ Si **cbUserData** a la valeur 0 ou une valeur positive, le système utilise **cbUserData** comme longueur de données maximale. Toutefois, si un indicateur de longueur ou une séquence de terminaison est fournie en plus d'une valeur **cbUserData** positive, le système détermine la longueur de données en utilisant la méthode qui entraîne la plus petite quantité de données à copier.  
   
  La valeur **cbUserData** représente le nombre d'octets de données. Si des données caractères sont représentées par des caractères Unicode étendus, une valeur de paramètre **cbUserData** positive représente le nombre de caractères multiplié par la taille, en octets, de chaque caractère.  
   

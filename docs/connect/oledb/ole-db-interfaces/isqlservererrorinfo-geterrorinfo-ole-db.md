@@ -15,12 +15,12 @@ helpviewer_keywords:
 - GetErrorInfo method
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b365238ad6941bf82c8b130e56313313d9e814fa
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: c23db8a2472f236e0a9733b46fdc0d338d6b6f70
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081548"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183762"
 ---
 # <a name="isqlservererrorinfogeterrorinfo-ole-db"></a>ISQLServerErrorInfo::GetErrorInfo (OLE DB)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

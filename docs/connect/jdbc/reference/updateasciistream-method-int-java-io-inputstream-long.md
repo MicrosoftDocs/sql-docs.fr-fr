@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 143bff3e-2b5c-485d-9529-1c2387560094
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 840406139292e3ccecbc4953e89e7f1822095751
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a208ff14f0830820971b1944751042790fdb4d9c
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88462341"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99182106"
 ---
 # <a name="updateasciistream-method-int-javaioinputstream-long"></a>Méthode updateAsciiStream (int, java.io.InputStream, long)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

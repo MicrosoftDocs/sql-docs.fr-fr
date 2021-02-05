@@ -7,16 +7,16 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: a0db4a00-9700-4f49-ab16-6522dd1101d3
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 94e42cb5fccba7d69025de85b0247f7a4c065c03
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+ms.openlocfilehash: 2a498e78ce994907d666e8fdc01a494234d858d2
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88646189"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99202063"
 ---
 # <a name="pdocommit"></a>PDO::commit
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

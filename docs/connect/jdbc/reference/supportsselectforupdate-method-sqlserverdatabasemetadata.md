@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerDatabaseMetaData.supportsSelectForUpdate
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 721bc8e3-36c0-4fa6-8561-4f8d54c8265a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 653e9fdbc8b0b2092819751ddf4070eed0ea0873
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0061fd77446ab00cbf333f3d45d294e5cf3f4395
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88450191"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99188399"
 ---
 # <a name="supportsselectforupdate-method-sqlserverdatabasemetadata"></a>Méthode supportsSelectForUpdate (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

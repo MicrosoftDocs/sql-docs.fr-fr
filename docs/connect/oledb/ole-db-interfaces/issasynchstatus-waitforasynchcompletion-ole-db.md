@@ -15,12 +15,12 @@ helpviewer_keywords:
 - WaitForAsynchCompletion method
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b10988fb12dac4a315569958a4f457a0a83af72f
-ms.sourcegitcommit: c95f3ef5734dec753de09e07752a5d15884125e2
+ms.openlocfilehash: 438c1f78240a641c0b860384db1f20841758a084
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88862169"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99183704"
 ---
 # <a name="issasynchstatuswaitforasynchcompletion-ole-db"></a>ISSAsynchStatus::WaitForAsynchCompletion (OLE DB)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

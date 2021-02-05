@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - SQLServerCallableStatement.setNull
 apilocation:
@@ -16,12 +16,12 @@ apitype: Assembly
 ms.assetid: 842dbcfb-7f6a-46d5-b386-c6cbb879a23d
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 507e8b7c9f97bdcf925e2719686346ccfeace0ca
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f0a1c09c2804b3c9d5f452fc434b60054776a907
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88458601"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99178724"
 ---
 # <a name="setnull-method-sqlservercallablestatement"></a>Méthode setNull (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
