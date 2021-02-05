@@ -28,12 +28,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 09/11/2020
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017'
-ms.openlocfilehash: b499c7236391c7286c4a267c433ad991a963dab5
-ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
+ms.openlocfilehash: 3a33f274b18e36859e697dd4c0a6bdb5c171930e
+ms.sourcegitcommit: 5dcbe4abbe2339292961370c1d8ca3affa625f72
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98688917"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99536393"
 ---
 # <a name="sqlcmd-utility"></a>Utilitaire sqlcmd
 
@@ -57,7 +57,7 @@ L’utilitaire utilise ODBC pour exécuter des lots Transact-SQL.
 **[![Télécharger sqlcmd pour x64](../ssdt/media/download.png) Télécharger les utilitaires de ligne de commande Microsoft 15 pour SQL Server (x64) (2,6 Mo)](https://go.microsoft.com/fwlink/?linkid=2142258)**
 <br>**[![Télécharger sqlcmd pour x86](../ssdt/media/download.png) Télécharger les utilitaires de ligne de commande Microsoft 15 pour SQL Server (x86) (2,3 Mo)](https://go.microsoft.com/fwlink/?linkid=2142257)**
 
-Les outils en ligne de commande sont en disponibilité générale (GA), mais ils sont publiés avec le package d’installation de [!INCLUDE[sql-server-2019](../includes/sssqlv15-md.md)].
+Les outils en ligne de commande sont en disponibilité générale (GA), mais ils sont publiés avec le package d’installation de [!INCLUDE[sql-server-2019](../includes/sssql19-md.md)].
 
 **Informations sur la version**
 
@@ -70,7 +70,7 @@ Le nouveau BCP prend en charge l’authentification Azure AD, notamment la prise
 
 **Configuration requise** Windows 10 , Windows 7, Windows 8, Windows 8.1, Windows Server 2008 - 2019.
 
-Ce composant nécessite [Windows Installer 4.5](https://www.microsoft.com/download/details.aspx?id=8483) et [Microsoft ODBC Driver 17 for SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md).
+Ce composant nécessite [Windows Installer 4.5](https://windows-installer.soft32.com/) et [Microsoft ODBC Driver 17 for SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md).
  
 Pour vérifier la version de SQLCMD, exécutez la commande `sqlcmd -?` et vérifiez que la version 15.0.2000.5 ou une version ultérieure est utilisée.
 

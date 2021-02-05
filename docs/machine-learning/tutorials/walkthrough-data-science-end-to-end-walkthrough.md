@@ -9,12 +9,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15'
-ms.openlocfilehash: afd34354290134d0973c1105a902b96c4bbdd706
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0537e602d5c6773c4978c7fff0f5bf0f927985c6
+ms.sourcegitcommit: 5dcbe4abbe2339292961370c1d8ca3affa625f72
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470000"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99536340"
 ---
 # <a name="tutorial-sql-development-for-r-data-scientists"></a>Tutoriel : Développement SQL pour les scientifiques des données R
 [!INCLUDE [SQL Server 2016](../../includes/applies-to-version/sqlserver2016.md)]
@@ -25,7 +25,7 @@ Vous utilisez une combinaison de code R, de données [!INCLUDE[ssNoVersion](../.
 
 Cet exemple peut être étendu à tous les types de problèmes réels, tels que la prédiction des réponses des clients aux campagnes de vente ou la prédiction des dépenses ou de la participation lors d’un événement. En outre, le modèle pouvant être appelé à partir d’une procédure stockée, vous pouvez facilement l’incorporer dans une application.
 
-La procédure pas à pas étant conçue pour présenter [!INCLUDE[rsql_productname](../../includes/rsql-productname-md.md)] aux développeurs R, les tâches sont effectuées à l’aide de R, dans la mesure du possible. Toutefois, cela ne signifie pas que R est le meilleur outil pour toutes les tâches. Dans de nombreux cas, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut offrir de meilleures performances, en particulier pour des tâches telles que l’agrégation de données et l’ingénierie de caractéristiques.  Ces tâches peuvent notamment profiter de nouvelles fonctionnalités dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], telles que les index columnstore optimisés en mémoire. Nous essayons d’indiquer les optimisations possibles au cours de la procédure.
+La procédure pas à pas étant conçue pour présenter [!INCLUDE[rsql_productname](../../includes/rsql-productname-md.md)] aux développeurs R, les tâches sont effectuées à l’aide de R, dans la mesure du possible. Toutefois, cela ne signifie pas que R est le meilleur outil pour toutes les tâches. Dans de nombreux cas, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut offrir de meilleures performances, en particulier pour des tâches telles que l’agrégation de données et l’ingénierie de caractéristiques.  Ces tâches peuvent notamment profiter de nouvelles fonctionnalités dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], telles que les index columnstore optimisés en mémoire. Nous essayons d’indiquer les optimisations possibles au cours de la procédure.
 
 ## <a name="prerequisites"></a>Prérequis
 

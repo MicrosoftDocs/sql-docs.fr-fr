@@ -17,18 +17,18 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/07/2017
-ms.openlocfilehash: d433b5816919642b0d7b25b580f4314a949cf0c2
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: ba1ed37292b3b92ead4af84cb3f00d4b51e3372d
+ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92036907"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99250916"
 ---
 # <a name="move-a-registered-server-or-registered-server-group"></a>Déplacer un serveur inscrit ou un groupe de serveurs inscrits
 
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-Cette rubrique explique comment organiser les serveurs dans des serveurs inscrits en déplaçant un serveur inscrit ou des groupes de serveurs dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Les groupes de serveurs peuvent se composer de serveurs inscrits ou d'autres groupes de serveurs. Les serveurs comme les groupes de serveurs peuvent être déplacés d'un groupe de serveurs vers un autre.  
+Cette rubrique explique comment organiser les serveurs dans des serveurs inscrits en déplaçant un serveur inscrit ou des groupes de serveurs dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)]. Les groupes de serveurs peuvent se composer de serveurs inscrits ou d'autres groupes de serveurs. Les serveurs comme les groupes de serveurs peuvent être déplacés d'un groupe de serveurs vers un autre.  
 
 ## <a name="SSMSProcedure"></a>  
 
