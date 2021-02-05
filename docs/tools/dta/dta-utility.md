@@ -21,12 +21,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 01/09/2017
-ms.openlocfilehash: a80c3fc49962ad4a67430163f81d00b37c05329b
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 68efd346dad72b36e98f5ce0f0c659eed81c5966
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98169217"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236715"
 ---
 # <a name="dta-utility"></a>dta (utilitaire)
 
@@ -184,7 +184,7 @@ dta -d AdventureWorks2012 ...
 [Recommandations relatives aux index columnstore dans l’Assistant Paramétrage du moteur de base de données](../../relational-databases/performance/columnstore-index-recommendations-in-database-engine-tuning-advisor-dta.md).
  ||  
 |-|  
-|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.|  
+|**S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures.|  
 
   
  **-fk** _keep_existing_option_  
@@ -222,7 +222,7 @@ dta -d AdventureWorks2012 ...
  Spécifie que le Magasin des requêtes est utilisé comme charge de travail. Les 1 000 premiers événements du Magasin des requêtes pour les bases de données explicitement sélectionnées sont analysés. Cette valeur peut être modifiée à l'aide de l'option **-n**.  Pour plus d’informations, consultez [Magasin de requêtes](../../relational-databases/performance/how-query-store-collects-data.md) et [Paramétrage de base de données à l’aide des charges de travail du Magasin de requêtes](../../relational-databases/performance/tuning-database-using-workload-from-query-store.md).
  ||  
 |-|  
-|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.|  
+|**S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures.|  
      
  **-if** _workload_file_  
  Spécifie le chemin d'accès et le nom du fichier de charge de travail à utiliser comme entrée pour le réglage. Le fichier doit être dans l'un de ces formats : .trc (fichier trace SQL Server Profiler), .sql (fichier SQL) ou .log (fichier de trace [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]). Un fichier de charge de travail ou une table de charge travail doit être spécifié.  
@@ -281,7 +281,7 @@ dta -iq -I 48
 Dans ce cas, DTA utilise le Magasin des requêtes comme source de la charge de travail et ne tient compte que des requêtes qui ont été exécutées au cours des 48 dernières heures.  
   ||  
 |-|  
-|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.|  
+|**S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures.|  
 
 
   

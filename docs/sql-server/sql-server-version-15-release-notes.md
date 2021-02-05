@@ -10,23 +10,23 @@ ms.assetid: 13942af8-5a40-4cef-80f5-918386767a47
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: = sql-server-ver15
-ms.openlocfilehash: 9762de193eae8ad4e67e77ae54c9778e92357c45
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: bcd105fac1dcb534d6c287c0daa8b0fa0e692db2
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97402598"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99237838"
 ---
-# <a name="sql-server-2019-release-notes"></a>Notes de publication de [!INCLUDE[SQL Server 2019](../includes/sssqlv15-md.md)]
+# <a name="sql-server-2019-release-notes"></a>Notes de publication de [!INCLUDE[SQL Server 2019](../includes/sssql19-md.md)]
 [!INCLUDE[SQL Server 2019](../includes/applies-to-version/sqlserver2019.md)]
 
-Cet article décrit les limitations et les problèmes connus pour [!INCLUDE[SQL Server 2019](../includes/sssqlv15-md.md)]. Pour plus d’informations, consultez :
+Cet article décrit les limitations et les problèmes connus pour [!INCLUDE[SQL Server 2019](../includes/sssql19-md.md)]. Pour plus d’informations, consultez :
 
-> [Nouveautés de [!INCLUDE[SQL Server 2019](../includes/sssqlv15-md.md)]](../sql-server/what-s-new-in-sql-server-ver15.md)
+> [Nouveautés de [!INCLUDE[SQL Server 2019](../includes/sssql19-md.md)]](../sql-server/what-s-new-in-sql-server-ver15.md)
 
-## [!INCLUDE[sql-server-2019](../includes/sssqlv15-md.md)]
+## [!INCLUDE[sql-server-2019](../includes/sssql19-md.md)]
 
-[!INCLUDE[SQL Server 2019](../includes/sssqlv15-md.md)] est la dernière version publique de [!INCLUDE[SQL Server 2019](../includes/ssnoversion-md.md)].
+[!INCLUDE[SQL Server 2019](../includes/sssql19-md.md)] est la dernière version publique de [!INCLUDE[SQL Server 2019](../includes/ssnoversion-md.md)].
 
 Vous trouverez des informations complètes sur les licences dans le dossier `License Terms` sur le support d’installation.
 
@@ -42,16 +42,16 @@ Le numéro de build RTM pour SQL Server 2019 est `15.0.2000.5`.
 
 ## <a name="sql-server-installation-may-fail-if-ssms-18x-is-installed"></a>L’installation de SQL Server peut échouer si SSMS 18.x est installé
 
-- **Problème et impact sur le client** : [!INCLUDE[SQL Server 2019](../includes/sssqlv15-md.md)] l’installation échoue lorsque les installations suivantes sont effectuées dans cet ordre :
+- **Problème et impact sur le client** : [!INCLUDE[SQL Server 2019](../includes/sssql19-md.md)] l’installation échoue lorsque les installations suivantes sont effectuées dans cet ordre :
   1. SQL Server Management Studio (SSMS) version 18.0, 18.1, 18.2 ou 18.3 est installé sur le serveur.
-  1. Une tentative d’installation de [!INCLUDE[SQL Server 2019](../includes/sssqlv15-md.md)] est effectuée à partir d’un support amovible. Par exemple, le support d’installation est un DVD.
+  1. Une tentative d’installation de [!INCLUDE[SQL Server 2019](../includes/sssql19-md.md)] est effectuée à partir d’un support amovible. Par exemple, le support d’installation est un DVD.
 
 - **Solution de contournement** :
   1. Désinstallez toute version de SSMS antérieure à SSMS 18.3.1.
   1. Installez une version plus récente de SSMS (18.3.1 ou une version ultérieure). Pour obtenir la dernière version, consultez [Télécharger SSMS](../ssms/download-sql-server-management-studio-ssms.md).
-  1. Installez [!INCLUDE[SQL Server 2019](../includes/sssqlv15-md.md)] normalement.
+  1. Installez [!INCLUDE[SQL Server 2019](../includes/sssql19-md.md)] normalement.
 
-- **S’applique à** : [!INCLUDE[SQL Server 2019](../includes/sssqlv15-md.md)]
+- **S’applique à** : [!INCLUDE[SQL Server 2019](../includes/sssql19-md.md)]
 
 ## <a name="utf-8-collations"></a>Classements UTF-8
 
@@ -65,7 +65,7 @@ Le numéro de build RTM pour SQL Server 2019 est `15.0.2000.5`.
   > [!NOTE]
   > Actuellement, l’interface utilisateur d’Azure Data Studio et de SQL Server Data Tools (SSDT) ne permet pas de choisir des classements prenant en charge UTF-8. Il en va différemment de l’interface utilisateur de la dernière version 18 de [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] SSMS.
 
-- **S’applique à** : [!INCLUDE[SQL Server 2019](../includes/sssqlv15-md.md)] RTM
+- **S’applique à** : [!INCLUDE[SQL Server 2019](../includes/sssql19-md.md)] RTM
 
 ## <a name="master-data-service-notification-email-contains-broken-link"></a>L’e-mail de notification Master Data Services contient un lien rompu
 
@@ -75,7 +75,7 @@ Le numéro de build RTM pour SQL Server 2019 est `15.0.2000.5`.
 
 - **Solution de contournement** : Ouvrez le portail MDS et accédez à la ressource manuellement.
 
-- **S’applique à** : [!INCLUDE[SQL Server 2019](../includes/sssqlv15-md.md)] RTM
+- **S’applique à** : [!INCLUDE[SQL Server 2019](../includes/sssql19-md.md)] RTM
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -37,12 +37,12 @@ helpviewer_keywords:
 ms.assetid: e5186f02-dd91-47d0-8fa4-de3f41c76903
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 80b93a4a55b6d12ee5177230b78447c21fc0cae8
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 49d32254b0faaf9dea2ae4c31f7e3548179e75a7
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172531"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236609"
 ---
 # <a name="editions-and-supported-features-of-sql-server-2016"></a>Éditions et fonctionnalités prises en charge de SQL Server 2016
 [!INCLUDE [SQL Server 2016](../includes/applies-to-version/sqlserver2016.md)]  
@@ -129,7 +129,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
   
 ##  <a name="scale-limits"></a><a name="Cross-BoxScaleLimits"></a> Scale Limits  
   
-|Fonctionnalité|Entreprise|Standard|Web|Express with Advanced Services|Express| 
+|Fonctionnalité|Entreprise|standard|Web|Express with Advanced Services|Express| 
 |-------------|----------------|--------------|---------|------------------------------------|------------------------|
 |Capacité maximale de calcul utilisée par une instance unique - [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)]<sup>1</sup>|Maximum du système d'exploitation|Limité à moins de 4 sockets ou 24 cœurs|Limité à moins de 4 sockets ou 16 cœurs|Limité à moins de 1 socket ou 4 cœurs|Limité à moins de 1 socket ou 4 cœurs| 
 |Capacité maximale de calcul utilisée par une instance unique - [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] ou [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)]|Maximum du système d'exploitation|Limité à moins de 4 sockets ou 24 cœurs|Limité à moins de 4 sockets ou 16 cœurs|Limité à moins de 1 socket ou 4 cœurs|Limité à moins de 1 socket ou 4 cœurs|  
@@ -142,11 +142,11 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
   
 <sup>1</sup> L’édition Enterprise avec serveur + licences d’accès client (CAL) (non disponibles pour les nouveaux contrats) est limitée à un maximum de 20 cœurs par instance SQL Server. Il n'existe aucune limite dans le mode de licence Serveur selon le nombre de cœurs. Pour plus d’informations, voir [Compute Capacity Limits by Edition of SQL Server](../sql-server/compute-capacity-limits-by-edition-of-sql-server.md).  
   
-<sup>2</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune (CPSA, Common Programmability Surface Area) entre différentes éditions. 
+<sup>2</sup> S’applique à [!INCLUDE[sssql15-md](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune (CPSA, Common Programmability Surface Area) entre différentes éditions. 
 
 ##  <a name="rdbms-high-availability"></a><a name="RDBMSHA"></a> RDBMS High Availability  
   
-|Fonctionnalité|Entreprise|Standard|Web|Express with Advanced Services|Express|  
+|Fonctionnalité|Entreprise|standard|Web|Express with Advanced Services|Express|  
 |-------------|----------------|--------------|---------|------------------------------------|------------------------|  
 |Prise en charge de Server Core <sup>1</sup>|Oui|Oui|Oui|Oui|Oui|  
 |Copie des journaux de transaction|Oui|Oui|Oui|Non|Non|  
@@ -174,7 +174,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
   
 ##  <a name="rdbms-scalability-and-performance"></a><a name="RDBMSSP"></a> RDBMS Scalability and Performance  
   
-|Fonctionnalité|Entreprise|Standard|Web|Express with Advanced Services|Express|  
+|Fonctionnalité|Entreprise|standard|Web|Express with Advanced Services|Express|  
 |-------------|----------------|--------------|---------|------------------------------------|------------------------| 
 |Columnstore <sup>1</sup>|Oui|Oui <sup>2</sup>|Oui <sup>2</sup>|Oui<sup>2</sup>|Oui<sup>2</sup>|  
 |OLTP en mémoire <sup>1</sup>|Oui|Oui <sup>2</sup>|Oui <sup>2</sup>|Oui <sup>2</sup>, <sup>3</sup>|Oui <sup>2</sup>|
@@ -195,14 +195,14 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
 
 <sup>1</sup> La taille des données OLTP en mémoire et le cache de segments columnstore sont limités à la quantité de mémoire spécifiée par l’édition dans la section Limites d’échelle. Le Nombre maximal de degrés de parallélisme est limité. Le nombre de degrés de parallélisme maximal pour la création d’un index est limité à 2 pour l’Édition Standard et à 1 pour les éditions Web et Express. Ceci fait référence aux index columnstore créés sur des tables basées sur des disques et des tables à mémoire optimisée.
 
-<sup>2</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune entre différentes éditions. Pushdown d’agrégats, pushdown de prédicats de chaîne et optimisations SIMD sont des améliorations de l’évolutivité de l’Édition Entreprise [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Pour plus d’informations, consultez [Index columnstore - Nouveautés](../relational-databases/indexes/columnstore-indexes-what-s-new.md). 
+<sup>2</sup> S’applique à [!INCLUDE[sssql15-md](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune entre différentes éditions. Pushdown d’agrégats, pushdown de prédicats de chaîne et optimisations SIMD sont des améliorations de l’évolutivité de l’Édition Entreprise [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Pour plus d’informations, consultez [Index columnstore - Nouveautés](../relational-databases/indexes/columnstore-indexes-what-s-new.md). 
 
 <sup>3</sup> Cette fonctionnalité n’est pas incluse dans l’option d’installation LocalDB.
 
 <sup>4</sup> La licence Standard Edition et SQL Server + CAL peut limiter le nombre de processeurs utilisables par SQL Server Standard, mais SQL Server Standard est compatible NUMA. 
 ##  <a name="rdbms-security"></a><a name="RDBMSS"></a> RDBMS Security  
   
-|Fonctionnalité|Entreprise|Standard|Web|Express|Express with Advanced Services|  
+|Fonctionnalité|Entreprise|standard|Web|Express|Express with Advanced Services|  
 |-------------|----------------|--------------|---------|-------------|------------------------------------| 
 |Sécurité au niveau des lignes|Oui|Oui|Oui <sup>1</sup>|Oui <sup>1</sup>|Oui <sup>1</sup>|  
 |Always Encrypted|Oui|Oui <sup>1</sup>|Oui <sup>1</sup>|Oui <sup>1</sup>|Oui <sup>1</sup>| 
@@ -215,11 +215,11 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
 |Bases de données autonomes|Oui|Oui|Oui|Oui|Oui| 
 |Chiffrement des sauvegardes|Oui|Oui|Non|Non|Non|  
 
-<sup>1</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune entre différentes éditions.      
+<sup>1</sup> S’applique à [!INCLUDE[sssql15-md](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune entre différentes éditions.      
 
 ##  <a name="replication"></a>Réplication<a name="Replication"></a>  
   
-|Fonctionnalité|Entreprise|Standard|Web|Express with Advanced Services|Express|   
+|Fonctionnalité|Entreprise|standard|Web|Express with Advanced Services|Express|   
 |-------------|----------------|--------------|---------|------------------------------------|------------------------| 
 |Abonnés hétérogènes|Oui|Oui|Non|Non|Non|  
 |Réplication de fusion|Oui|Oui|Oui (abonné uniquement)|Oui (abonné uniquement)|Oui (abonné uniquement)|   
@@ -233,7 +233,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
   
 ##  <a name="management-tools"></a><a name="SSMS"></a> Management Tools  
   
-|Fonctionnalité|Entreprise|Standard|Web|Express with Advanced Services|Express| 
+|Fonctionnalité|Entreprise|standard|Web|Express with Advanced Services|Express| 
 |-------------|----------------|--------------|---------|------------------------------------|------------------------|  
 |Objets de gestion SQL (SMO)|Oui|Oui|Oui|Oui|Oui|  
 |Gestionnaire de configuration SQL|Oui|Oui|Oui|Oui|Oui|   
@@ -252,7 +252,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
   
 ##  <a name="rdbms-manageability"></a><a name="RDBMSM"></a> RDBMS Manageability  
   
-|Fonctionnalité|Entreprise|Standard|Web|Express with Advanced Services|Express|   
+|Fonctionnalité|Entreprise|standard|Web|Express with Advanced Services|Express|   
 |-------------|----------------|--------------|---------|------------------------------------|------------------------|  
 |Instances utilisateur|Non|Non|Non|Oui|Oui| 
 |LocalDB|Non|Non|Non|Oui|Non| 
@@ -276,11 +276,11 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
   
  <sup>1</sup> Pour plus d’informations, consultez [Considérations relatives à l’installation de SQL Server à l’aide de SysPrep](../database-engine/install-windows/considerations-for-installing-sql-server-using-sysprep.md).  
  
-<sup>2</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune (CPSA, Common Programmability Surface Area) entre différentes éditions.      
+<sup>2</sup> S’applique à [!INCLUDE[sssql15-md](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune (CPSA, Common Programmability Surface Area) entre différentes éditions.      
   
 ##  <a name="development-tools"></a><a name="DevTools"></a> Development Tools  
   
-|Fonctionnalité|Entreprise|Standard|Web|Express with Advanced Services|Express| 
+|Fonctionnalité|Entreprise|standard|Web|Express with Advanced Services|Express| 
 |-------------|----------------|--------------|---------|------------------------------------|------------------------| 
 |Intégration de Microsoft Visual Studio|Oui|Oui|Oui|Oui|Oui| 
 |Intellisense (Transact-SQL et MDX)|Oui|Oui|Oui|Oui|Oui| 
@@ -289,7 +289,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
   
 ##  <a name="programmability"></a><a name="Programmability"></a> Programmability  
   
-|Fonctionnalité|Entreprise|Standard|Web|Express with Advanced Services|Express 
+|Fonctionnalité|Entreprise|standard|Web|Express with Advanced Services|Express 
 |-------------|----------------|--------------|---------|------------------------------------|------------------------|  
 |Intégration R de base|Oui|Oui|Oui|Oui|Non|   
 |Intégration R avancée|Oui|Non|Non|Non|Non| 
@@ -314,7 +314,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
 
 <sup>1</sup> Le scale-out avec plusieurs nœuds de calcul nécessite un nœud principal.
 
-<sup>2</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune (CPSA, Common Programmability Surface Area) entre différentes éditions.     
+<sup>2</sup> S’applique à [!INCLUDE[sssql15-md](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune (CPSA, Common Programmability Surface Area) entre différentes éditions.     
   
 ## <a name="integration-services"></a><a name="IS"></a> Integration Services
 
@@ -326,7 +326,7 @@ Pour plus d’informations sur les fonctionnalités Integration Services (SSIS) 
   
 ##  <a name="data-warehouse"></a><a name="DW"></a> Data Warehouse  
   
-|Fonctionnalité|Entreprise|Standard|Web|Express with Advanced Services|Express|   
+|Fonctionnalité|Entreprise|standard|Web|Express with Advanced Services|Express|   
 |-------------|----------------|--------------|---------|------------------------------------|------------------------| 
 |Création de cubes sans une base de données|Oui|Oui|Non|Non|Non |   
 |Génération automatique de la mise en lots et du schéma d’entrepôt de données|Oui|Oui|Non|Non|Non| 
@@ -336,7 +336,7 @@ Pour plus d’informations sur les fonctionnalités Integration Services (SSIS) 
 |Traitement des requêtes parallèles sur les tables et les index partitionnés|Oui|Non|Non|Non|Non|   
 |Agrégation globale des traitements|Oui|Non|Non|Non|Non| 
 
-<sup>1</sup> S’applique à [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune entre différentes éditions.     
+<sup>1</sup> S’applique à [!INCLUDE[sssql15-md](../includes/sssql16-md.md)] SP1 dans le cadre de la création d’une surface de programmabilité commune entre différentes éditions.     
 
 ##  <a name="analysis-services"></a><a name="SSAS"></a> Analysis Services  
   
@@ -368,7 +368,7 @@ Pour plus d’informations sur les fonctionnalités de client Business Intellige
   
 ##  <a name="spatial-and-location-services"></a><a name="SLS"></a> Spatial and Location Services  
   
-|Nom de la fonctionnalité|Entreprise|Standard|Web|Express with Advanced Services|Express|  
+|Nom de la fonctionnalité|Entreprise|standard|Web|Express with Advanced Services|Express|  
 |------------------|----------------|--------------|---------|------------------------------------|------------------------|
 |Index spatiaux|Oui|Oui|Oui|Oui|Oui|   
 |Types de données planaires et géodésiques|Oui|Oui|Oui|Oui|Oui| 
@@ -377,14 +377,14 @@ Pour plus d’informations sur les fonctionnalités de client Business Intellige
   
 ##  <a name="additional-database-services"></a><a name="ADS"></a> Additional Database Services  
   
-|Nom de la fonctionnalité|Entreprise|Standard|Web|Express with Advanced Services|Express|   
+|Nom de la fonctionnalité|Entreprise|standard|Web|Express with Advanced Services|Express|   
 |------------------|----------------|--------------|---------|------------------------------------|------------------------| 
 |[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Assistant Migration|Oui|Oui|Oui|Oui|Oui|   
 |Messagerie de base de données|Oui|Oui|Oui|Non|Non| 
   
 ##  <a name="other-components"></a><a name="Other"></a> Other Components  
   
-|Nom de la fonctionnalité|Entreprise|Standard|Web|Express with Advanced Services|Express|   
+|Nom de la fonctionnalité|Entreprise|standard|Web|Express with Advanced Services|Express|   
 |------------------|----------------|--------------|---------|------------------------------------|------------------------|  
 |StreamInsight|StreamInsight Premium Edition|StreamInsight Standard Edition|StreamInsight Standard Edition|Non|Non| 
 |StreamInsight HA|StreamInsight Premium Edition|Non|Non|Non|Non|   

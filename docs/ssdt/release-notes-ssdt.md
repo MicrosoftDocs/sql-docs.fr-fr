@@ -12,12 +12,12 @@ ms.reviewer: maghan
 ms.custom: seo-lt-2019
 ms.date: 12/15/2019
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||=azuresqldb-mi-current'
-ms.openlocfilehash: a380eabba4a20a65fd291b938d270a440f66d754
-ms.sourcegitcommit: 44eebb659f9b226c08aea6c31a909b22ad4fec60
+ms.openlocfilehash: 8a13f35c56ab73e3bb984bbdc2c2e27c2d769356
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97860607"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99236802"
 ---
 # <a name="release-notes-for-sql-server-data-tools-ssdt"></a>Notes de publication pour SQL Server Data Tools (SSDT)
 
@@ -320,7 +320,7 @@ _SSDT pour Visual Studio 2017._
 
 **SSIS :**
 
-1. Ajout de la prise en charge de [!INCLUDE[sql-server-2019](../includes/sssqlv15-md.md)].
+1. Ajout de la prise en charge de [!INCLUDE[sql-server-2019](../includes/sssql19-md.md)].
 2. Suppression de la prise en charge de SQL Server 2012.
 
 ### <a name="known-issues"></a>Problèmes connus :
