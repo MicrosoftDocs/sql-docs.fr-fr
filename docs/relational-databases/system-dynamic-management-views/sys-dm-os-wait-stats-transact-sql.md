@@ -1,7 +1,7 @@
 ---
 description: sys.dm_os_wait_stats (Transact-SQL)
 title: sys.dm_os_wait_stats (Transact-SQL)
-ms.custom: ''
+ms.custom: contperf-fy21q3
 ms.date: 01/27/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
@@ -20,12 +20,12 @@ helpviewer_keywords:
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: e4ee480fe158c431f0f9b477bfab2ea4c17aa36c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e2620a3e5df464e964f0bc911897481093aca245
+ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99145080"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835325"
 ---
 # <a name="sysdm_os_wait_stats-transact-sql"></a>sys.dm_os_wait_stats (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -165,8 +165,8 @@ Cette commande remet tous les compteurs à 0.
 |CONNECTION_ENDPOINT_LOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |COUNTRECOVERYMGR |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |CREATE_DATINISERVICE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
-|CXCONSUMER <a name="cxconsumer"></a>|Se produit avec des plans de requête parallèles lorsqu’un thread de consommateur (parent) attend qu’un thread producteur envoie des lignes. Les attentes CXCONSUMER sont provoquées par un itérateur Exchange qui ne dispose plus de lignes de son thread producteur. Il s’agit d’une partie normale de l’exécution des requêtes parallèles. <br /><br /> **S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2, [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3), [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] , [!INCLUDE[ssSDSMIfull](../../includes/sssdsmifull-md.md)]|
-|CXPACKET <a name="cxpacket"></a>|Se produit avec des plans de requête parallèles lors de l’attente de la synchronisation de l' [itérateur d’échange](../../relational-databases/showplan-logical-and-physical-operators-reference.md)du processeur de requêtes, et lors de la production et de la consommation de lignes. Si l’attente est excessive et ne peut pas être réduite par le paramétrage de la requête (par exemple, l’ajout d’index), envisagez d’ajuster le seuil de coût pour le parallélisme ou de réduire le degré maximal de parallélisme (MaxDOP). <br /><br /> **Remarque :** À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3, CXPACKET fait uniquement référence à l’attente de la synchronisation de l’itérateur Exchange et à la production de lignes. Les threads consommant des lignes sont suivis séparément dans le type d’attente CXCONSUMER. Si les threads de consommateur sont trop lents, la mémoire tampon de l’itérateur Exchange peut devenir pleine et provoquer l’attente de CXPACKET. <br /><br /> **Remarque :** Dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] et [!INCLUDE[ssSDSMIfull](../../includes/sssdsmifull-md.md)] , CXPACKET fait uniquement référence à l’attente de threads produisant des lignes. La synchronisation de l’itérateur Exchange est suivie séparément dans le CXSYNC_PORT et CXSYNC_CONSUMER les types d’attente. Les threads consommant des lignes sont suivis séparément dans le type d’attente CXCONSUMER.<br /> | 
+|CXCONSUMER <a name="cxconsumer"></a>|Se produit avec des plans de requête parallèles lorsqu’un thread de consommateur (parent) attend qu’un thread producteur envoie des lignes. Les attentes CXCONSUMER sont provoquées par un itérateur Exchange qui ne dispose plus de lignes de son thread producteur. Il s’agit d’une partie normale de l’exécution des requêtes parallèles. <br /><br /> **S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2, [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3), [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] , [!INCLUDE[ssSDSMIfull](../../includes/sssdsmifull-md.md)]|
+|CXPACKET <a name="cxpacket"></a>|Se produit avec des plans de requête parallèles lors de l’attente de la synchronisation de l' [itérateur d’échange](../../relational-databases/showplan-logical-and-physical-operators-reference.md)du processeur de requêtes, et lors de la production et de la consommation de lignes. Si l’attente est excessive et ne peut pas être réduite par le paramétrage de la requête (par exemple, l’ajout d’index), envisagez d’ajuster le seuil de coût pour le parallélisme ou de réduire le degré maximal de parallélisme (MaxDOP). <br /><br /> **Remarque :** À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3, CXPACKET fait uniquement référence à l’attente de la synchronisation de l’itérateur Exchange et à la production de lignes. Les threads consommant des lignes sont suivis séparément dans le type d’attente CXCONSUMER. Si les threads de consommateur sont trop lents, la mémoire tampon de l’itérateur Exchange peut devenir pleine et provoquer l’attente de CXPACKET. <br /><br /> **Remarque :** Dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] et [!INCLUDE[ssSDSMIfull](../../includes/sssdsmifull-md.md)] , CXPACKET fait uniquement référence à l’attente de threads produisant des lignes. La synchronisation de l’itérateur Exchange est suivie séparément dans le CXSYNC_PORT et CXSYNC_CONSUMER les types d’attente. Les threads consommant des lignes sont suivis séparément dans le type d’attente CXCONSUMER.<br /> | 
 |CXSYNC_PORT|Se produit avec des plans de requête parallèles lors de l’attente de l’ouverture, de la fermeture et de la synchronisation des ports d' [itérateurs Exchange](../../relational-databases/showplan-logical-and-physical-operators-reference.md) entre les threads producteur et consommateur. Par exemple, si un plan de requête a une longue opération de tri, CXSYNC_PORT attentes peuvent être plus élevées, car le tri doit se terminer avant que le port d’itérateur Exchange puisse être synchronisé. <br /><br /> **S’applique à**: [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] , [!INCLUDE[ssSDSMIfull](../../includes/sssdsmifull-md.md)]| 
 |CXSYNC_CONSUMER|Se produit avec des plans de requête parallèles lorsqu’ils attendent d’atteindre un point de synchronisation d' [itérateur Exchange](../../relational-databases/showplan-logical-and-physical-operators-reference.md) parmi tous les threads consommateurs. <br /><br /> **S’applique à**: [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] , [!INCLUDE[ssSDSMIfull](../../includes/sssdsmifull-md.md)]| 
 |CXROWSET_SYNC |Se produit pendant une analyse de plage parallèle.| 
@@ -220,7 +220,7 @@ Cette commande remet tous les compteurs à 0.
 |EXECSYNC |Se produit au cours de requêtes parallèles, lors de la synchronisation dans le processeur de requêtes, dans des zones qui ne sont pas liées à l'itérateur d'échange. Ces zones sont par exemple des images bitmap, des objets binaires volumineux et l'itérateur de spouleurs. Les objets LOB peuvent utiliser souvent cet état d'attente.| 
 |EXECUTION_PIPE_EVENT_INTERNAL |Se produit durant la synchronisation entre les parties producteur et consommateur d'exécution de lot soumises via le contexte de connexion.| 
 |EXTERNAL_RG_UPDATE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
-|EXTERNAL_SCRIPT_NETWORK_IO |À usage interne uniquement <br /><br /> **S’applique à**: [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] en cours.| 
+|EXTERNAL_SCRIPT_NETWORK_IO |À usage interne uniquement <br /><br /> **S’applique à**: [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] en cours.| 
 |EXTERNAL_SCRIPT_PREPARE_SERVICE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |EXTERNAL_SCRIPT_SHUTDOWN |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |EXTERNAL_WAIT_ON_LAUNCHER, |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
@@ -259,7 +259,7 @@ Cette commande remet tous les compteurs à 0.
 |FILESTREAM_FILE_OBJECT |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |FILESTREAM_WORKITEM_QUEUE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |FILETABLE_SHUTDOWN |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
-|FOREIGN_REDO |À usage interne uniquement <br /><br /> **S’applique à**: [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] en cours.| 
+|FOREIGN_REDO |À usage interne uniquement <br /><br /> **S’applique à**: [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] en cours.| 
 |FORWARDER_TRANSITION |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |FS_FC_RWLOCK |Se produit lorsqu'il y a une attente par le garbage collector FILESTREAM pour effectuer l'une des opérations suivantes :| 
 |FS_GARBAGE_COLLECTOR_SHUTDOWN |Se produit lorsque le garbage collector FILESTREAM attend l'exécution de tâches de nettoyage.| 
@@ -281,12 +281,12 @@ Cette commande remet tous les compteurs à 0.
 |FT_RESTART_CRAWL |Se produit lorsqu'une analyse de texte intégral doit redémarrer à partir du dernier point de référence connu et fiable pour une récupération faisant suite à une panne transitoire. Grâce à cette attente, les tâches travaillant actuellement sur ce remplissage peuvent se terminer ou quitter l'étape en cours.| 
 |FULLTEXT GATHERER |Se produit durant la synchronisation d'opérations de texte intégral.| 
 |GDMA_GET_RESOURCE_OWNER |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
-|GHOSTCLEANUP_UPDATE_STATS |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|GHOSTCLEANUP_UPDATE_STATS |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |GHOSTCLEANUPSYNCMGR |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
-|GLOBAL_QUERY_CANCEL |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|GLOBAL_QUERY_CANCEL |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |GLOBAL_QUERY_CLOSE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
-|GLOBAL_QUERY_CONSUMER |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
-|GLOBAL_QUERY_PRODUCER |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|GLOBAL_QUERY_CONSUMER |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
+|GLOBAL_QUERY_PRODUCER |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |GLOBAL_TRAN_CREATE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |GLOBAL_TRAN_UCS_SESSION |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |GUARDIAN |Identifié à titre d'information uniquement. Non pris en charge. La compatibilité future n'est pas garantie.| 
@@ -346,9 +346,9 @@ Cette commande remet tous les compteurs à 0.
 |HADR_TDS_LISTENER_SYNC_PROCESSING |Utilisé à la fin d’une instruction Transact-SQL Always On qui nécessite le démarrage et/ou l’arrêt d’un écouteur de groupe de disponibilité. Étant donné que l'opération de démarrage/d'arrêt s'effectue de manière asynchrone, le thread utilisateur procède à un blocage à l'aide de ce type d'attente jusqu'à ce que la situation de l'écouteur soit connue. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |HADR_THROTTLE_LOG_RATE_GOVERNOR |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |HADR_THROTTLE_LOG_RATE_MISMATCHED_SLO | Se produit lorsqu’une base de données secondaire de géo-réplication est configurée avec une taille de calcul inférieure (SLO inférieure) par rapport à la base de données primaire. Une base de données primaire est limitée en raison d’une consommation de journal retardée par la base de données secondaire. Cela est dû au fait que la base de données secondaire dispose d’une capacité de calcul insuffisante pour suivre le taux de modification de la base de données primaire. <br /><br /> **S’applique à**: Azure SQL Database| 
-|HADR_THROTTLE_LOG_RATE_LOG_SIZE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
-|HADR_THROTTLE_LOG_RATE_SEEDING |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
-|HADR_THROTTLE_LOG_RATE_SEND_RECV_QUEUE_SIZE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|HADR_THROTTLE_LOG_RATE_LOG_SIZE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
+|HADR_THROTTLE_LOG_RATE_SEEDING |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
+|HADR_THROTTLE_LOG_RATE_SEND_RECV_QUEUE_SIZE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |HADR_TIMER_TASK |En attente de l'obtention du verrou sur l'objet de tâche du minuteur ; également utilisé pour les attentes réelles entre l'exécution de travaux. Par exemple, pour une tâche qui s’exécute toutes les 10 secondes, après une exécution, Always On groupes de disponibilité attendent environ 10 secondes de replanifier la tâche, et l’attente est incluse ici. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |HADR_TRANSPORT_DBRLIST |En attente de l'accès à la liste des réplicas de bases de données de la couche de transport. Utilisé pour la boucle qui accorde l'accès à cette liste. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |HADR_TRANSPORT_FLOW_CONTROL |En attente lorsque le nombre de messages Always On sans accusé de réception en attente est dépassé le seuil de contrôle de dépassement de capacité. Il s'agit d'une attente variant d'un réplica de disponibilité à l'autre (et non d'une base de données à l'autre). <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
@@ -471,9 +471,9 @@ Cette commande remet tous les compteurs à 0.
 |MD_AGENT_YIELD |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |MD_LAZYCACHE_RWLOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |MEMORY_ALLOCATION_EXT |Se produit lors de l’allocation de mémoire à partir du [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pool de mémoire interne ou du système d’exploitation. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
-|MEMORY_GRANT_UPDATE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|MEMORY_GRANT_UPDATE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |METADATA_LAZYCACHE_RWLOCK |À usage interne uniquement <br /><br /> **S’applique à**: [!INCLUDE[ssKilimanjaro_md](../../includes/sskilimanjaro-md.md)] uniquement. |  
-|MIGRATIONBUFFER |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|MIGRATIONBUFFER |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |MISCELLANEOUS |Identifié à titre d'information uniquement. Non pris en charge. La compatibilité future n'est pas garantie.| 
 |MISCELLANEOUS |Identifié à titre d'information uniquement. Non pris en charge. La compatibilité future n'est pas garantie.| 
 |MSQL_DQ |Se produit lorsqu'une tâche attend la fin d'une opération de requête distribuée. Permet de détecter d'éventuels interblocages d'application MARS (Multiple Active Result Set). L'attente se termine à la fin de l'appel de requête distribuée.| 
@@ -733,12 +733,12 @@ Cette commande remet tous les compteurs à 0.
 |PWAIT_MD_RELATION_CACHE |Se produit durant la synchronisation interne dans les métadonnées de la table ou de l'index. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |PWAIT_MD_SERVER_CACHE |Se produit durant la synchronisation interne dans les métadonnées sur les serveurs liés. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |PWAIT_MD_UPGRADE_CONFIG |Se produit durant la synchronisation interne lors de la mise à niveau des configurations à l'échelle du serveur. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
-|PWAIT_PREEMPTIVE_APP_USAGE_TIMER |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|PWAIT_PREEMPTIVE_APP_USAGE_TIMER |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |PWAIT_PREEMPTIVE_AUDIT_ACCESS_WINDOWSLOG |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |PWAIT_QRY_BPMEMORY |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |PWAIT_REPLICA_ONLINE_INIT_MUTEX |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |PWAIT_RESOURCE_SEMAPHORE_FT_PARALLEL_QUERY_SYNC |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
-|PWAIT_SBS_FILE_OPERATION |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|PWAIT_SBS_FILE_OPERATION |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |PWAIT_XTP_FSSTORAGE_MAINTENANCE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |PWAIT_XTP_HOST_STORAGE_WAIT |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |QDS_ASYNC_CHECK_CONSISTENCY_TASK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
@@ -752,7 +752,7 @@ Cette commande remet tous les compteurs à 0.
 |QDS_DB_DISK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |QDS_DYN_VECTOR |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |QDS_EXCLUSIVE_ACCESS |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
-|QDS_HOST_INIT |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|QDS_HOST_INIT |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |QDS_LOADDB |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |QDS_PERSIST_TASK_MAIN_LOOP_SLEEP |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |QDS_QDS_CAPTURE_INIT |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
@@ -777,7 +777,7 @@ Cette commande remet tous les compteurs à 0.
 |QUERY_OPTIMIZER_PRINT_MUTEX |Se produit durant la synchronisation de la production de la sortie de diagnostics de l'optimiseur de requête. Ce type d’attente se produit uniquement si les paramètres de diagnostic ont été activés sous la direction du support technique Microsoft.| 
 |QUERY_TASK_ENQUEUE_MUTEX |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |QUERY_TRACEOUT |Identifié à titre d'information uniquement. Non pris en charge. La compatibilité future n'est pas garantie.| 
-|RBIO_WAIT_VLF |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|RBIO_WAIT_VLF |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |RBIO_RG_STORAGE |Se produit lorsqu’un nœud de calcul de base de données hyperscale est limité en raison d’une consommation de journal retardée sur le ou les serveurs de pages. <br /><br /> **S’applique à**: Azure SQL Database hyperscale.|
 |RBIO_RG_DESTAGE |Se produit lorsqu’un nœud de calcul de base de données hyperscale est limité en raison d’une consommation de journal retardée par le stockage du journal à long terme. <br /><br /> **S’applique à**: Azure SQL Database hyperscale.|
 |RBIO_RG_REPLICA |Se produit lorsqu’un nœud de calcul de base de données hyperscale est limité en raison d’une consommation de journal retardée par le ou les nœuds de réplica secondaires accessibles en lecture. <br /><br /> **S’applique à**: Azure SQL Database hyperscale.|
@@ -786,7 +786,7 @@ Cette commande remet tous les compteurs à 0.
 |RECOVERY_MGR_LOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |REDO_THREAD_PENDING_WORK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |REDO_THREAD_SYNC |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
-|REMOTE_BLOCK_IO |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|REMOTE_BLOCK_IO |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |REMOTE_DATA_ARCHIVE_MIGRATION_DMV |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |REMOTE_DATA_ARCHIVE_SCHEMA_DMV |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |REMOTE_DATA_ARCHIVE_SCHEMA_TASK_QUEUE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
@@ -803,7 +803,7 @@ Cette commande remet tous les compteurs à 0.
 |RESMGR_THROTTLED |Se produit lorsqu'une nouvelle demande arrive et qu'elle est accélérée en fonction du paramètre GROUP_MAX_REQUESTS.| 
 |RESOURCE_GOVERNOR_IDLE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |RESOURCE_QUEUE |Se produit durant la synchronisation de diverses files d'attente de ressources internes.| 
-|RESOURCE_SEMAPHORE |Se produit lorsqu'une demande de mémoire de requête ne peut pas être accordée immédiatement en raison d'autres requêtes simultanées. Des temps d'attente élevés peuvent indiquer un trop grand nombre de requêtes simultanées ou des quantités de demande de mémoire trop importantes.| 
+|RESOURCE_SEMAPHORE |Se produit lorsqu’une demande de mémoire de requête pendant l’exécution d’une requête ne peut pas être accordée immédiatement en raison d’autres requêtes simultanées. Des temps d'attente élevés peuvent indiquer un trop grand nombre de requêtes simultanées ou des quantités de demande de mémoire trop importantes. Les attentes excessives de ce type peuvent déclencher l' [erreur SQL 8645](../errors-events/mssqlserver-8645-database-engine-error.md), «un délai d’attente A été dépassé lors de l’attente de ressources mémoire pour exécuter la requête. Réexécutez la requête.»<br /><br /> Pour obtenir des informations détaillées et des suggestions de dépannage sur les attentes d’allocation de mémoire, consultez ce billet de [blog](https://techcommunity.microsoft.com/t5/sql-server-support/memory-grants-the-mysterious-sql-server-memory-consumer-with/ba-p/333994)| 
 |RESOURCE_SEMAPHORE_MUTEX |Se produit lorsqu'une requête attend que sa demande de réservation de thread soit exécutée. Se produit également lors de la synchronisation des demandes d'allocation de mémoire et de compilation de requête.| 
 |RESOURCE_SEMAPHORE_QUERY_COMPILE |Se produit lorsque le nombre de compilations de requêtes simultanées atteint une limite. Les attentes et les temps d’attente élevés peuvent indiquer des compilations, des recompilations ou des plans sans mise en cache excessifs.| 
 |RESOURCE_SEMAPHORE_SMALL_QUERY |Se produit lorsqu'une demande de mémoire émanant d'une petite requête ne peut pas être accordée immédiatement en raison d'autres requêtes simultanées. Le temps d'attente ne doit pas excéder quelques secondes, car le serveur transfère la demande au pool de mémoire de requête principal s'il ne parvient pas à accorder la mémoire demandée dans les secondes qui suivent. Des temps d'attente élevés peuvent indiquer un nombre excessif de petites requêtes simultanées alors que le pool de mémoire principal est bloqué par les requêtes en attente. <br /><br /> **S’applique à**: [!INCLUDE[ssKilimanjaro_md](../../includes/sskilimanjaro-md.md)] uniquement. |  
@@ -816,12 +816,12 @@ Cette commande remet tous les compteurs à 0.
 |SATELLITE_CARGO |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |SATELLITE_SERVICE_SETUP |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |SATELLITE_TASK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
-|SBS_DISPATCH |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
-|SBS_RECEIVE_TRANSPORT |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
-|SBS_TRANSPORT |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|SBS_DISPATCH |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
+|SBS_RECEIVE_TRANSPORT |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
+|SBS_TRANSPORT |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |SCAN_CHAR_HASH_ARRAY_INITIALIZATION |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |SEC_DROP_TEMP_KEY |Se produit après l'échec d'une tentative de suppression d'une clé de sécurité temporaire avant une nouvelle tentative.| 
-|SECURITY_CNG_PROVIDER_MUTEX |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|SECURITY_CNG_PROVIDER_MUTEX |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |SECURITY_CRYPTO_CONTEXT_MUTEX |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |SECURITY_DBE_STATE_MUTEX |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |SECURITY_KEYRING_RWLOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
@@ -856,7 +856,7 @@ Cette commande remet tous les compteurs à 0.
 |SNI_HTTP_WAITFOR_0_DISCON |Se produit durant l'arrêt de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], pendant l'attente de la fermeture des connexions HTTP en suspens.| 
 |SNI_LISTENER_ACCESS |Se produit pendant l'attente de mise à jour de la modification d'état des nœuds NUMA (Non-Uniform Memory Access). L'accès à la modification d'état est sérialisé.| 
 |SNI_TASK_COMPLETION |Se produit lorsqu'il y a une attente de fin de toutes les tâches pendant la modification d'état d'un nœud NUMA.| 
-|SNI_WRITE_ASYNC |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|SNI_WRITE_ASYNC |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |SOAP_READ |Se produit durant l'attente de l'exécution d'une lecture sur le réseau HTTP.| 
 |SOAP_WRITE |Se produit durant l'attente de l'exécution d'une écriture sur le réseau HTTP.| 
 |SOCKETDUPLICATEQUEUE_CLEANUP |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
@@ -907,7 +907,7 @@ Cette commande remet tous les compteurs à 0.
 |TDS_INIT |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |TDS_PROXY_CONTAINER |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |TEMPOBJ |Se produit lorsque des suppressions d'objets temporaires sont synchronisées. Cette attente est rare ; elle survient uniquement si une tâche a demandé un accès exclusif pour les suppressions de tables temp.| 
-|TEMPORAL_BACKGROUND_PROCEED_CLEANUP |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|TEMPORAL_BACKGROUND_PROCEED_CLEANUP |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |TERMINATE_LISTENER |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |THREADPOOL |Se produit lorsqu'une tâche attend un thread de travail pour l'exécution. Ceci peut indiquer qu'un paramètre de thread de travail maximal est trop bas ou que les exécutions de traitement sont exceptionnellement longues, ce qui réduit le nombre de threads de travail disponibles pour répondre aux autres lots.| 
 |TIMEPRIV_TIMEPERIOD |Se produit durant la synchronisation interne du minuteur d'événements étendus.| 
@@ -935,16 +935,16 @@ Cette commande remet tous les compteurs à 0.
 |VIA_ACCEPT |Se produit lorsqu'une connexion du fournisseur VIA (Virtual Interface Adapter) est terminée au cours du démarrage.| 
 |VIEW_DEFINITION_MUTEX |Se produit durant la synchronisation d'accès aux définitions des vues mises en cache.| 
 |WAIT_FOR_RESULTS |Se produit durant l'attente du déclenchement d'une notification de requête.| 
-|WAIT_ON_SYNC_STATISTICS_REFRESH |Se produit lors de l’attente de la fin de la mise à jour des statistiques synchrones avant que la compilation et l’exécution des requêtes puissent reprendre.<br /><br /> **S’applique à** : À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]|
+|WAIT_ON_SYNC_STATISTICS_REFRESH |Se produit lors de l’attente de la fin de la mise à jour des statistiques synchrones avant que la compilation et l’exécution des requêtes puissent reprendre.<br /><br /> **S’applique à** : À compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]|
 |WAIT_SCRIPTDEPLOYMENT_REQUEST |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |WAIT_SCRIPTDEPLOYMENT_WORKER |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
-|WAIT_XLOGREAD_SIGNAL |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|WAIT_XLOGREAD_SIGNAL |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |WAIT_XTP_ASYNC_TX_COMPLETION |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |WAIT_XTP_CKPT_AGENT_WAKEUP |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |WAIT_XTP_CKPT_CLOSE |Se produit lors de l'attente d'un point de contrôle. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |WAIT_XTP_CKPT_ENABLED |Se produit lorsque les points de contrôle sont désactivés, et lors de l'attente de l'activation des points de contrôle. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |WAIT_XTP_CKPT_STATE_LOCK |Se produit lors de la synchronisation de la vérification de l'état du point de contrôle. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
-|WAIT_XTP_COMPILE_WAIT |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|WAIT_XTP_COMPILE_WAIT |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |WAIT_XTP_GUEST |Se produit lorsque l'allocateur de mémoire de base de données doit cesser de recevoir des notifications de mémoire insuffisante. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |WAIT_XTP_HOST_WAIT |Se produit lorsque des attentes sont déclenchées par le moteur de base de données et implémentées par l'hôte. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |WAIT_XTP_OFFLINE_CKPT_BEFORE_REDO |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
@@ -952,7 +952,7 @@ Cette commande remet tous les compteurs à 0.
 |WAIT_XTP_OFFLINE_CKPT_NEW_LOG |Se produit lorsqu'un point de contrôle hors connexion attend de nouveaux enregistrements du journal à analyser. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |WAIT_XTP_PROCEDURE_ENTRY |Se produit lorsqu'une procédure de suppression attend que toutes les exécutions en cours de cette procédure soient terminées. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |WAIT_XTP_RECOVERY |Se produit lorsque la récupération de base de données attend la fin de la récupération des objets mémoire optimisés. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
-|WAIT_XTP_SERIAL_RECOVERY |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|WAIT_XTP_SERIAL_RECOVERY |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |WAIT_XTP_SWITCH_TO_INACTIVE |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |WAIT_XTP_TASK_SHUTDOWN |Se produit lors de l'attente de l'exécution d'un thread OLTP en mémoire. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)] et versions ultérieures.| 
 |WAIT_XTP_TRAN_DEPENDENCY |Se produit lors de l'attente des dépendances de transaction. <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
@@ -1001,10 +1001,10 @@ Cette commande remet tous les compteurs à 0.
 |XE_TIMER_TASK_DONE |À usage interne uniquement| 
 |XIO_CREDENTIAL_MGR_RWLOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |XIO_CREDENTIAL_RWLOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
-|XIO_EDS_MGR_RWLOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
-|XIO_EDS_RWLOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
-|XIO_IOSTATS_BLOBLIST_RWLOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
-|XIO_IOSTATS_FCBLIST_RWLOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et versions ultérieures.| 
+|XIO_EDS_MGR_RWLOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
+|XIO_EDS_RWLOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
+|XIO_IOSTATS_BLOBLIST_RWLOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
+|XIO_IOSTATS_FCBLIST_RWLOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.| 
 |XIO_LEASE_RENEW_MGR_RWLOCK |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL15_md](../../includes/sssql16-md.md)] et versions ultérieures.| 
 |XTP_HOST_DB_COLLECTION |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 
 |XTP_HOST_LOG_ACTIVITY |À usage interne uniquement <br /><br /> **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.| 

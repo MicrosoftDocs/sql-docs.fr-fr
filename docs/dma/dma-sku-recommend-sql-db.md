@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: ''
 author: rajeshsetlem
 ms.author: rajpo
-ms.openlocfilehash: 8d4de2aea0a9020a7f971f36dd011c435a3cec3d
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: 2c82514c12ec3ba496e288454d87750e0c91a5f8
+ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489495"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835674"
 ---
 # <a name="identify-the-right-azure-sql-databasemanaged-instance-sku-for-your-on-premises-database"></a>Identifier la référence SKU Azure SQL Database/Managed Instance appropriée pour votre base de données locale
 
@@ -207,8 +207,12 @@ Pour entrer les informations de configuration et apporter des modifications aux 
     - **Groupe de ressources** : groupe de ressources dans lequel vous souhaitez déployer les bases de données. Entrez un groupe de ressources existant.
     - **Region** : région dans laquelle approvisionner les bases de données. Assurez-vous que votre abonnement prend en charge la région sélectionnée.
     - **Nom du serveur** : serveur Azure SQL Database sur lequel vous souhaitez déployer les bases de données. Si vous entrez un nom de serveur qui n’existe pas, il sera créé.
-    - **Nom d’utilisateur** de l’administrateur : nom d’utilisateur de l’administrateur du serveur.
-    - **Mot de passe d’administrateur** : mot de passe d’administrateur du serveur. Le mot de passe doit comporter au moins huit caractères et ne pas dépasser 128 caractères. Votre mot de passe doit contenir des caractères appartenant à trois des catégories suivantes : lettres majuscules, lettres minuscules, chiffres (0 à 9) et caractères non alphanumériques (!, $, #, %, etc.). Le mot de passe ne peut pas contenir la totalité ou une partie (3 + lettres consécutives) du nom d’utilisateur.
+    - **Nom d’utilisateur** de l’administrateur : nom d’utilisateur de l’administrateur du serveur. Assurez-vous que votre nom de connexion est conforme aux exigences suivantes : votre nom de connexion ne doit pas contenir d’identificateur SQL ou de nom de système standard (comme admin, administrateur, sa, root, dbmanager, loginmanager, etc.) ou un utilisateur ou un rôle de base de données intégré (par exemple, dbo, Guest, public, etc.) Votre nom de connexion ne doit pas contenir de caractères non alphanumériques (y compris des espaces, caractères Unicode). votre nom de connexion ne doit pas commencer par un chiffre ou un symbole
+
+    - **Mot de passe d’administrateur** : mot de passe d’administrateur du serveur. Votre mot de passe doit comporter au moins 8 caractères.
+Votre mot de passe ne doit pas comporter plus de 128 caractères.
+Votre mot de passe doit contenir des caractères appartenant à trois des catégories suivantes : lettres majuscules, lettres minuscules, chiffres (0 à 9) et caractères non alphanumériques (!, $, #, %, etc.).
+Votre mot de passe ne peut pas contenir tout ou partie du nom de connexion. (Une partie d’un nom de connexion est définie comme trois caractères alphanumériques consécutifs ou plus.)
 
 2. Passez en revue les recommandations pour chaque base de données et modifiez le niveau tarifaire, le niveau de calcul et la taille maximale des données en fonction des besoins. Veillez à désélectionner les bases de données que vous ne souhaitez pas configurer actuellement.
 
@@ -225,8 +229,13 @@ Pour entrer les informations de configuration et apporter des modifications aux 
     - **Groupe de ressources** : groupe de ressources dans lequel vous souhaitez déployer les bases de données. Entrez un groupe de ressources existant.
     - **Region** : région dans laquelle approvisionner les bases de données. Assurez-vous que votre abonnement prend en charge la région sélectionnée.
     - **Nom** de l’instance : instance du Managed instance Azure SQL vers lequel vous souhaitez migrer les bases de données. Le nom de l’instance ne peut contenir que des lettres minuscules, des chiffres et des « - », mais il ne peut pas commencer ou se terminer par « - » ou comporter plus de 63 caractères.
-    - **Nom d’utilisateur de l’administrateur d’instance** : nom d’utilisateur de l’administrateur de l’instance. Assurez-vous que votre nom de connexion est conforme aux exigences suivantes : il s’agit d’un identificateur SQL et non d’un nom système standard (comme admin, administrateur, sa, root, dbmanager, loginmanager, etc.) ou d’un utilisateur ou d’un rôle de base de données intégré (par exemple, dbo, Guest, public, etc.). Assurez-vous que votre nom ne contient pas d’espaces, de caractères Unicode ou de caractères non alphabétiques, et qu’il ne commence pas par des chiffres ou des symboles. 
-    - **Mot de passe de l’administrateur d’instance** : mot de passe d’administrateur de l’instance. Votre mot de passe doit comporter au moins 16 caractères et ne pas dépasser 128 caractères. Votre mot de passe doit contenir des caractères appartenant à trois des catégories suivantes : lettres majuscules, lettres minuscules, chiffres (0 à 9) et caractères non alphanumériques (!, $, #, %, etc.). Le mot de passe ne peut pas contenir la totalité ou une partie (3 + lettres consécutives) du nom d’utilisateur.
+    - **Nom d’utilisateur de l’administrateur d’instance** : nom d’utilisateur de l’administrateur de l’instance. Assurez-vous que votre nom de connexion est conforme aux exigences suivantes : votre nom de connexion ne doit pas contenir d’identificateur SQL ou de nom de système standard (comme admin, administrateur, sa, root, dbmanager, loginmanager, etc.) ou un utilisateur ou un rôle de base de données intégré (par exemple, dbo, Guest, public, etc.) Votre nom de connexion ne doit pas contenir de caractères non alphanumériques (y compris des espaces, caractères Unicode). votre nom de connexion ne doit pas commencer par un chiffre ou un symbole
+
+    - **Mot de passe de l’administrateur d’instance** : mot de passe d’administrateur de l’instance. Votre mot de passe doit comporter au moins 16 caractères.
+Votre mot de passe ne doit pas comporter plus de 128 caractères.
+Votre mot de passe doit contenir des caractères appartenant à trois des catégories suivantes : lettres majuscules, lettres minuscules, chiffres (0 à 9) et caractères non alphanumériques (!, $, #, %, etc.).
+Votre mot de passe ne peut pas contenir tout ou partie du nom de connexion. (Une partie d’un nom de connexion est définie comme trois caractères alphanumériques consécutifs ou plus.)
+
     - **Nom** du réseau virtuel : nom du réseau virtuel sous lequel l’instance gérée doit être approvisionnée. Entrez un nom de réseau virtuel existant.
     - **Nom du sous-** réseau : nom du sous-réseau sous lequel l’instance gérée doit être approvisionnée. Entrez un nom de sous-réseau existant.
 
