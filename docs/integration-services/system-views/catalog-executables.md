@@ -11,19 +11,16 @@ ms.topic: language-reference
 ms.assetid: bae22d0c-e190-426f-a074-c1d1170e8dd8
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 9c17439cda7e5071c4256be53ae4ec03dc3ccfff
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 3aff9256e3f8468642177a24975489ebf7ebd646
+ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88495234"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835323"
 ---
 # <a name="catalogexecutables"></a>catalog.executables 
 
 [!INCLUDE[sqlserver-ssis](../../includes/applies-to-version/sqlserver-ssis.md)]
-
-
-[!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Cette vue affiche une ligne pour chaque fichier exécutable dans l'exécution spécifiée.  
   

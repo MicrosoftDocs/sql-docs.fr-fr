@@ -11,19 +11,16 @@ ms.topic: language-reference
 ms.assetid: 83cbdd6f-ddde-47bf-abde-36bd24272621
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 230e2057c8257a37eb96c683abaf8348307a0cba
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: 36c222a0d08782e252e171ceb2f0004bf8f2ac8d
+ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96129461"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835100"
 ---
 # <a name="catalogexecution_property_override_values"></a>catalog.execution_property_override_values 
 
 [!INCLUDE[sqlserver-ssis](../../includes/applies-to-version/sqlserver-ssis.md)]
-
-
-[!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Affiche les valeurs de remplacement de la propriété définies pendant l'exécution du package.  
   

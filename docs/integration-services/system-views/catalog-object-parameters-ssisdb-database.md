@@ -11,19 +11,16 @@ ms.topic: language-reference
 ms.assetid: d7b04903-2d61-4159-9456-475942d1f732
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 856676c6ad5330e6039711d7a391bdd264a2b062
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 423f96cba79018230b7121bf25f93337a48a2fd6
+ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88422043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835179"
 ---
 # <a name="catalogobject_parameters-ssisdb-database"></a>catalog.object_parameters (base de données SSISDB)
 
 [!INCLUDE[sqlserver-ssis](../../includes/applies-to-version/sqlserver-ssis.md)]
-
-
-[!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Affiche les paramètres de tous les packages et projets dans le catalogue [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)].  
   
@@ -43,8 +40,8 @@ ms.locfileid: "88422043"
 |value_type|**char(1)**|Indique la valeur de type de paramètre. Ce champ affiche `V` quand parameter_value est une valeur littérale et `R` quand la valeur est affectée en référençant une variable d’environnement.|  
 |value_set|**bit**|Lorsque la valeur est `1`, la valeur de paramètre a été affectée. Lorsque la valeur est `0`, la valeur de paramètre n'a pas été affectée.|  
 |referenced_variable_name|**nvarchar(128)**|Nom de la variable d'environnement affectée à la valeur du paramètre. La valeur par défaut est **NULL**.|  
-|validation_status|**char(1)**|Identifié à titre d'information uniquement. Inutilisé dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
-|last_validation_time|**datetimeoffset(7)**|Identifié à titre d'information uniquement. Inutilisé dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
+|validation_status|**char(1)**|Identifié à titre d'information uniquement. Inutilisé dans [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)].|  
+|last_validation_time|**datetimeoffset(7)**|Identifié à titre d'information uniquement. Inutilisé dans [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)].|  
   
 ## <a name="permissions"></a>Autorisations  
  Pour consulter des lignes dans cette vue, vous devez avoir l'une des autorisations suivantes :  

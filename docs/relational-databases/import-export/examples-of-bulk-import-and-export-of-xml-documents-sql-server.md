@@ -19,12 +19,12 @@ ms.assetid: dff99404-a002-48ee-910e-f37f013d946d
 author: MashaMSFT
 ms.author: mathoma
 ms.custom: seo-lt-2019
-ms.openlocfilehash: fef5768f72f45bf388ccd5878d56dc480371aecd
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+ms.openlocfilehash: 5e2a52bcfa2e95aa364bbdf3079e2f8666f0e1e0
+ms.sourcegitcommit: 0b400bb99033f4b836549cb11124a1f1630850a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88646055"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "99978786"
 ---
 # <a name="examples-of-bulk-import-and-export-of-xml-documents-sql-server"></a>Exemples d’importation et d’exportation en bloc de documents XML (SQL Server)
 
@@ -36,7 +36,7 @@ Vous pouvez importer en bloc des documents XML vers une base de données [!INCLU
 
 Pour importer des données en bloc à partir d'un fichier de données dans une table ou une vue non partitionnée [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vous pouvez utiliser les méthodes suivantes :  
   
-- utilitaire**bcp**  
+- utilitaire **bcp**  
    Vous pouvez aussi faire appel à l’utilitaire **bcp** pour exporter des données à partir de n’importe quel emplacement d’une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] contenant une instruction SELECT, vues partitionnées comprises.  
 
 - BULK INSERT  
@@ -46,7 +46,7 @@ Pour importer des données en bloc à partir d'un fichier de données dans une t
 Pour plus d'informations, consultez les rubriques ci-dessous.
 - [Importer et exporter des données en bloc à l'aide de l'utilitaire bcp (SQL Server).](../../relational-databases/import-export/import-and-export-bulk-data-by-using-the-bcp-utility-sql-server.md)
 - [Importer des données en bloc à l’aide de BULK INSERT ou OPENROWSET(BULK...) (SQL Server).](../../relational-databases/import-export/import-bulk-data-by-using-bulk-insert-or-openrowset-bulk-sql-server.md) 
-- [Comment importer XML dans SQL Server avec le composant de chargement en masse XML.](https://support.microsoft.com/kb/316005)
+- [Comment importer XML dans SQL Server avec le composant de chargement en masse XML.](https://mskb.pkisolutions.com/kb/316005)
 - [Collections de schémas XML (SQL Server)](../xml/xml-schema-collections-sql-server.md)
   
 ## <a name="examples"></a>Exemples  

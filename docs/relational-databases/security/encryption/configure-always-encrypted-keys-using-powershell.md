@@ -11,12 +11,12 @@ ms.assetid: 3bdf8629-738c-489f-959b-2f5afdaf7d61
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: b9b9cbe8eb0a443471f261a59aadcaa5b48fc835
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: db15f4e1a01ae894e44c0e544f780873d21c7efb
+ms.sourcegitcommit: 6f4fb9cfd0cad06127a6328adc745e2ba7c191d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97405815"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570453"
 ---
 # <a name="provision-always-encrypted-keys-using-powershell"></a>Provisionner des clés Always Encrypted à l’aide de PowerShell
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb.md)]
@@ -107,7 +107,7 @@ $connStr = "Server = " + $serverName + "; Database = " + $databaseName + "; Auth
 $database = Get-SqlDatabase -ConnectionString $connStr
 
 # Create a SqlColumnMasterKeySettings object for your column master key. 
-$cmkSettings = New-SqlAzureKeyVaultColumnMasterKeySettings -KeyURL $akvKey.ID
+$cmkSettings = New-SqlAzureKeyVaultColumnMasterKeySettings -KeyURL $akvKey.Key.Kid
 
 # Create column master key metadata in the database.
 $cmkName = "CMK1"

@@ -16,12 +16,12 @@ ms.assetid: 1615db50-69de-4778-8be6-4e058c00ccd4
 author: MladjoA
 ms.author: mlandzic
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 668d1fda7e4b979e52377c03daaddb0cb2286cdd
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 87ed2882d8276b3a92add3349b73bf38fe821dc9
+ms.sourcegitcommit: 10ae200635b9e8554e6bc6f658125e1a80d4d5ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97462960"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99589296"
 ---
 # <a name="spatial-data-types-overview"></a>Présentation des types de données spatiales
 
@@ -84,7 +84,7 @@ Dans un système ellipsoïdal, un polygone sans orientation n’a aucune signifi
 
 L’intérieur du polygone dans un système ellipsoïdal est défini par la « règle de gauche » : si vous vous imaginez en train de longer l’anneau formé par un polygone geography en suivant les points dans l’ordre dans lequel ils sont listés, la zone de gauche est considérée comme l’intérieur du polygone et la zone de droite comme l’extérieur.
 
-Quand le niveau de compatibilité est égal ou inférieur à 100 dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] , le type de données **geography** présente les restrictions suivantes :
+Quand le niveau de compatibilité est égal ou inférieur à 100 dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] , le type de données **geography** présente les restrictions suivantes :
 
 - Chaque instance **geography** doit être contenue à l’intérieur d’un seul hémisphère. Aucun objet spatial plus grand qu'un hémisphère ne peut être stocké.
 
@@ -92,7 +92,7 @@ Quand le niveau de compatibilité est égal ou inférieur à 100 dans [!INCLUDE[
 
 - Les méthodes de type de données **geography** qui nécessitent l’entrée de deux instances **geography** , telles que STIntersection(), STUnion(), STDifference() et STSymDifference(), retournent Null si les résultats des méthodes ne s’ajustent pas à l’intérieur d’un seul hémisphère. STBuffer() retourne également null si la sortie dépasse un seul hémisphère.  
 
-Dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], **FullGlobe** est un type spécial de polygone qui couvre le globe entier. Il a une zone, mais aucune bordure ni sommet.  
+Dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)], **FullGlobe** est un type spécial de polygone qui couvre le globe entier. Il a une zone, mais aucune bordure ni sommet.  
 
 ### <a name="outer-and-inner-rings-in-geography-data-type"></a>Anneaux internes et externes dans le type de données `geography`
 

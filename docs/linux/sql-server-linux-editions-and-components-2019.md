@@ -25,12 +25,12 @@ helpviewer_keywords:
 author: VanMSFT
 ms.author: vanto
 ms.reviewer: vanto
-ms.openlocfilehash: f208b424272644f3d66146014401a1343f00e576
-ms.sourcegitcommit: 2bf83972036bdbe6a039fb2d1fc7b5f9ca9589d3
+ms.openlocfilehash: 398d8d1aaf626fdc65674ee1d5eb959951dcd5e2
+ms.sourcegitcommit: 58e7069b5b2b6367e27b49c002ca854b31b1159d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94674194"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99552622"
 ---
 # <a name="editions-and-supported-features-of-sql-server-2019-on-linux"></a>Éditions et fonctionnalités prises en charge de SQL Server 2019 sur Linux
 
@@ -97,7 +97,7 @@ L’édition Developer continue à prendre en charge seulement un client pour [
 |-------------|----------------|--------------|---------|------------------------|  
 |Copie des journaux de transaction|Oui|Oui|Oui|Non|  
 |Compression de sauvegarde|Oui|Oui|Non|Non| 
-|Instantané de base de données|Oui|Non|Non|Non|
+|Instantané de base de données|Oui|Oui|Non|Non|
 |Instance de cluster de basculement Always On<sup>1</sup>|Oui|Oui|Non|Non| 
 |Groupes de disponibilité Always On<sup>2</sup>|Oui|Non|Non|Non|
 |Groupes de disponibilité de base<sup>3</sup>|Non|Oui|Non|Non|

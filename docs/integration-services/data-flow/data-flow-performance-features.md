@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: c4bbefa6-172b-4547-99a1-a0b38e3e2b05
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 1956aeb1fc5895eea47ef46eb093a1eea435078b
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 600ab1bce27f4fa53c2e25ae7562a870f2ccf6a6
+ms.sourcegitcommit: 5dcbe4abbe2339292961370c1d8ca3affa625f72
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92196435"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99536350"
 ---
 # <a name="data-flow-performance-features"></a>Fonctionnalités de performances de flux de données
 
@@ -134,7 +134,7 @@ ms.locfileid: "92196435"
  Utilisez les suggestions de cette section pour améliorer les performances des transformations d'agrégation, de recherche floue, de regroupement probable, de recherche, de jointure de fusion et de dimension à variation lente.  
   
 #### <a name="aggregate-transformation"></a>Transformation d'agrégation  
- La transformation d'agrégation inclut les propriétés **Keys**, **KeysScale**, **CountDistinctKeys**et **CountDistinctScale** . Ces propriétés améliorent les performances en permettant à la transformation de préallouer la quantité de mémoire dont la transformation a besoin pour les données que la transformation met en cache. Si vous savez le nombre exact ou approximatif des groupes attendus d'une opération **Group by** , définissez les propriétés **Keys** et **KeysScale** , respectivement. Si vous savez le nombre exact ou approximatif des valeurs distinctes attendues d'une opération **Comptage de valeurs** , définissez les propriétés **CountDistinctKeys** et **CountDistinctScale** , respectivement.  
+ La transformation d'agrégation inclut les propriétés **Keys**, **KeysScale**, **CountDistinctKeys** et **CountDistinctScale** . Ces propriétés améliorent les performances en permettant à la transformation de préallouer la quantité de mémoire dont la transformation a besoin pour les données que la transformation met en cache. Si vous savez le nombre exact ou approximatif des groupes attendus d'une opération **Group by** , définissez les propriétés **Keys** et **KeysScale** , respectivement. Si vous savez le nombre exact ou approximatif des valeurs distinctes attendues d'une opération **Comptage de valeurs** , définissez les propriétés **CountDistinctKeys** et **CountDistinctScale** , respectivement.  
   
  Si vous devez créer plusieurs agrégations dans un flux de données, songez à créer plusieurs agrégations qui utilisent une transformation d'agrégation au lieu de créer plusieurs transformations. Cette approche améliore les performances lorsqu'une agrégation est un sous-ensemble d'une autre agrégation, car la transformation peut optimiser le stockage interne et analyser une seule fois les données entrantes. Par exemple, si une agrégation utilise une clause GROUP BY et une agrégation AVG, le fait de les combiner en une seule transformation peut améliorer les performances. Toutefois, du fait que la réalisation de plusieurs agrégations au sein d'une transformation d'agrégation sérialise les opérations d'agrégation, il est possible que les performances ne s'améliorent pas lorsque plusieurs agrégations doivent être calculées indépendamment.  
   
@@ -185,9 +185,9 @@ ms.locfileid: "92196435"
   
 -   Article technique, [Nous avons chargé 1 To en 30 minutes avec SSIS, vous le pouvez aussi](/previous-versions/sql/sql-server-2008/dd537533(v=sql.100)), sur le site msdn.microsoft.com.  
   
--   Article technique, [Les 10 meilleures pratiques pour SQL Server Integration Services](https://go.microsoft.com/fwlink/?LinkId=220818), sur le site sqlcat.com.  
+-   Article technique, [Les 10 meilleures pratiques pour SQL Server Integration Services](https://techcommunity.microsoft.com/t5/datacat/top-10-sql-server-integration-services-best-practices/ba-p/305163), sur le site sqlcat.com.  
   
--   Article technique et exemple, [« Distributeur de données équilibrées » pour SSIS](https://go.microsoft.com/fwlink/?LinkId=220822), sur le site sqlcat.com.  
+-   Article technique et exemple, [« Distributeur de données équilibrées » pour SSIS](https://www.sqlshack.com/ssis-balanced-data-distributor-overview/), sur le site sqlcat.com.  
   
 -   Publication de blog [Résolution des problèmes de performances des packages SSIS](https://techcommunity.microsoft.com/t5/sql-server-integration-services/api-sample-oledb-source-and-oledb-destination/ba-p/387553)sur blogs.msdn.com.  
   
@@ -201,7 +201,7 @@ ms.locfileid: "92196435"
   
 -   Vidéo [Modèles de conception des performances de Microsoft SQL Server Integration Services](https://go.microsoft.com/fwlink/?LinkID=233698&clcid=0x409), sur channel9.msdn.com.  
   
--   Présentation, [Exploitation par Microsoft IT des améliorations apportées au moteur de flux de données SQL Server 2008 SSIS](https://go.microsoft.com/fwlink/?LinkId=217660), sur le site sqlcat.com.  
+-   Présentation, [Exploitation par Microsoft IT des améliorations apportées au moteur de flux de données SQL Server 2008 SSIS](https://channel9.msdn.com/Shows/TechNet+Radio/TechNet-Radio-How-Microsoft-IT-Leverages-SQL-Server-2008-SSIS-Dataflow-Engine-Enhancements), sur le site sqlcat.com.  
   
 -   Vidéo, [Distributeur de données équilibrées](/previous-versions/dn912438(v=msdn.10)), sur technet.microsoft.com.  
   

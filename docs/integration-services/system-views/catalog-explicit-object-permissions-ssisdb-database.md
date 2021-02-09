@@ -11,21 +11,18 @@ ms.topic: language-reference
 ms.assetid: 49b09e0f-06e8-451f-b979-a0d91000bfe3
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: e7052caddf7087239e734d6474c4d829f13e9948
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 63db338fa18e3efbf0739acca2c1b97ad388e985
+ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88422083"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835200"
 ---
 # <a name="catalogexplicit_object_permissions-ssisdb-database"></a>catalog.explicit_object_permissions (base de données SSISDB)
 
 [!INCLUDE[sqlserver-ssis](../../includes/applies-to-version/sqlserver-ssis.md)]
 
-
-[!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-
-  Affiche uniquement les autorisations affectées explicitement à l'utilisateur.  
+ Affiche uniquement les autorisations affectées explicitement à l'utilisateur.  
   
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  

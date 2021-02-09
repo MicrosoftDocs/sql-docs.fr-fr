@@ -11,19 +11,16 @@ ms.topic: language-reference
 ms.assetid: a31a654f-31e9-4da1-aabf-182b07848e36
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 29fcb7e924f444b44435b6c46dcdf76a88ebeec5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: da96f49143a237741722c37cb9eda82754b24f52
+ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88495260"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835348"
 ---
 # <a name="catalogevent_messages"></a>catalog.event_messages 
 
 [!INCLUDE[sqlserver-ssis](../../includes/applies-to-version/sqlserver-ssis.md)]
-
-
-[!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Affiche des informations sur les messages qui ont été enregistrés pendant les opérations.  
   

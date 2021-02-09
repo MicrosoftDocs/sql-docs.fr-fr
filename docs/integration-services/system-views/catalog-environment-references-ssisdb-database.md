@@ -11,19 +11,16 @@ ms.topic: language-reference
 ms.assetid: efec53ef-3e5a-4b76-b71d-a0cf9e11ac00
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 617f7b5132f6df2cd8acd02579512b880ece4ff2
-ms.sourcegitcommit: 80701484b8f404316d934ad2a85fd773e26ca30c
+ms.openlocfilehash: 039c154c52b2a3069b9f47f9f24c92c0b4bb246b
+ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93243635"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835230"
 ---
 # <a name="catalogenvironment_references-ssisdb-database"></a>catalog.environment_references (base de données SSISDB)
 
 [!INCLUDE[sqlserver-ssis](../../includes/applies-to-version/sqlserver-ssis.md)]
-
-
-[!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Affiche les références environnementales pour tous les projets dans le catalogue **SSISDB**.  
   
