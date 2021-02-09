@@ -2,12 +2,12 @@
 description: sqlsrv_field_metadata
 title: sqlsrv_field_metadata | Microsoft Docs
 ms.custom: ''
-ms.date: 01/31/2020
+ms.date: 01/29/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - sqlsrv_field_metadata
 apitype: NA
@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: c02f6942-0484-4567-a78e-fe8aa2053536
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: c6f2e0f7eefdfe78d1058d839c3e5a4fa9404e77
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: 5cbcb5cf689d544730661fd9dd700537309d8a23
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92080568"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99154238"
 ---
 # <a name="sqlsrv_field_metadata"></a>sqlsrv_field_metadata
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -236,6 +236,76 @@ Comme on le voit dans la représentation JSON ci-dessous, les métadonnées de c
 {"Name":"FirstName","Type":-9,"Size":50,"Precision":null,"Scale":null,"Nullable":1,"Data Classification":[]}
 {"Name":"LastName","Type":-9,"Size":50,"Precision":null,"Scale":null,"Nullable":1,"Data Classification":[]}
 {"Name":"BirthDate","Type":91,"Size":null,"Precision":10,"Scale":0,"Nullable":1,"Data Classification":[{"Label":{"name":"Confidential Personal Data","id":""},"Information Type":{"name":"Birthdays","id":""}}]}
+```
+
+## <a name="sensitivity-rank-using-a-predefined-set-of-values"></a>Classement de la sensibilité avec un ensemble prédéfini de valeurs
+
+À compter de 5.9.0, les pilotes PHP ont ajouté la récupération de la classification de sensibilité lors de l’utilisation du pilote ODBC 17.4.2 ou ultérieur. L’utilisateur peut définir le classement lors de l’utilisation de [ADD SENSITIVITY CLASSIFICATION](/sql/t-sql/statements/add-sensitivity-classification-transact-sql) pour classifier n’importe quelle colonne de données. 
+
+Par exemple, si l’utilisateur affecte `NONE` et `LOW` respectivement à BirthDate et à SSN, la représentation JSON est la suivante :
+
+```
+{"0":{"Label":{"name":"Confidential Personal Data","id":""},"Information Type":{"name":"Birthdays","id":""},"rank":0},"rank":0}
+{"0":{"Label":{"name":"Highly Confidential - secure privacy","id":""},"Information Type":{"name":"Credentials","id":""},"rank":10},"rank":10}
+```
+
+Comme indiqué dans [classification de sensibilité](/sql/relational-databases/system-catalog-views/sys-sensitivity-classifications-transact-sql), les valeurs numériques des degrés sont les suivantes :
+
+```
+0 for NONE
+10 for LOW
+20 for MEDIUM
+30 for HIGH
+40 for CRITICAL
+```
+
+Par conséquent, si au lieu de `RANK=NONE`, l’utilisateur définit `RANK=CRITICAL` lors de la classification de la colonne BirthDate, les métadonnées de classification sont :
+
+```
+  array(7) {
+    ["Name"]=>
+    string(9) "BirthDate"
+    ["Type"]=>
+    int(91)
+    ["Size"]=>
+    NULL
+    ["Precision"]=>
+    int(10)
+    ["Scale"]=>
+    int(0)
+    ["Nullable"]=>
+    int(1)
+    ["Data Classification"]=>
+    array(2) {
+      [0]=>
+      array(3) {
+        ["Label"]=>
+        array(2) {
+          ["name"]=>
+          string(26) "Confidential Personal Data"
+          ["id"]=>
+          string(0) ""
+        }
+        ["Information Type"]=>
+        array(2) {
+          ["name"]=>
+          string(9) "Birthdays"
+          ["id"]=>
+          string(0) ""
+        }
+        ["rank"]=>
+        int(40)
+      }
+      ["rank"]=>
+      int(40)
+    }
+  }
+```
+
+La représentation JSON mise à jour est montrée ci-dessous :
+
+```
+{"0":{"Label":{"name":"Confidential Personal Data","id":""},"Information Type":{"name":"Birthdays","id":""},"rank":40},"rank":40}
 ```
 
 ## <a name="see-also"></a>Voir aussi  

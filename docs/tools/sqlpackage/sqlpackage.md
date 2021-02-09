@@ -10,12 +10,12 @@ author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
 ms.date: 11/4/2020
-ms.openlocfilehash: 8555a183dc1f888e6ae80b78999b5fc234b431cf
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: ef49071f97d255d98f8086b9ff329c77d7b4afad
+ms.sourcegitcommit: 5ceafd29b8f22edb800cec150f0ccddea43313e7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98594414"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98983662"
 ---
 # <a name="sqlpackageexe"></a>SqlPackage.exe
 
@@ -23,13 +23,13 @@ ms.locfileid: "98594414"
   
 - [Version](#version) : retourne le numéro de build de l’application SqlPackage.  Ajouté dans la version 18.6.
 
-- [Extraire](sqlpackage-extract.md) : crée un fichier de capture instantanée de base de données (.dacpac) à partir d’une base de données SQL Server ou Azure SQL Database active.  
+- [Extraire](sqlpackage-extract.md) : Crée un fichier d’application de la couche Données (.dacpac) contenant le schéma, ou le schéma et les données utilisateur à partir d’une base de données SQL connectée.  
   
 - [Publier](sqlpackage-publish.md) : met à jour de manière incrémentielle un schéma de base de données pour qu’il corresponde au schéma d’un fichier .dacpac source. Si la base de données n'existe pas sur le serveur, elle est créée par l'opération de publication. Dans le cas contraire, une base de données existante est mise à jour.  
   
-- [Exporter](sqlpackage-export.md) : exporte une base de données active, y compris son schéma et les données utilisateur, dans un package BACPAC (fichier .bacpac) à partir de SQL Server ou d’Azure SQL Database.  
+- [Exporter](sqlpackage-export.md) : Exporte une base de données SQL connectée, y compris le schéma de base de données et les données utilisateur, dans un fichier BACPAC (.bacpac).  
   
-- [Importer](sqlpackage-import.md) : importe le schéma et les données de table à partir d'un package BACPAC dans une nouvelle base de données utilisateur dans une instance de SQL Server ou d’Azure SQL Database.  
+- [Importer](sqlpackage-import.md) : Importe le schéma et les données des tables à partir d’un fichier BACPAC dans une nouvelle base de données utilisateur.  
   
 - [DeployReport](sqlpackage-deploy-drift-report.md) (déployer un rapport) : crée un rapport XML sur les modifications devant être apportées par une action de publication.  
   

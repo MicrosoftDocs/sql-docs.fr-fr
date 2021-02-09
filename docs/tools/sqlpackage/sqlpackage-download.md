@@ -10,12 +10,12 @@ author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
 ms.date: 10/02/2020
-ms.openlocfilehash: c86dde50390bdf14719da96f7fc3d0cc35a9c440
-ms.sourcegitcommit: 866554663ca3191748b6e4eb4d8d82fa58c4e426
+ms.openlocfilehash: 45aad0892dbc187e50368f7abcf6c0b02cbc7cca
+ms.sourcegitcommit: e4b6357756a9c691b0441208a0058f7b8f3bea51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97577870"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99510290"
 ---
 # <a name="download-and-install-sqlpackage"></a>Télécharger et installer sqlpackage
 
@@ -31,6 +31,9 @@ Téléchargez et installez la dernière version de .NET Framework et les version
 |[Windows .NET Core](#get-sqlpackage-net-core-for-windows) |[Fichier zip](https://go.microsoft.com/fwlink/?linkid=2143496)|18 septembre 2020| 18.6| 15.0.4897.1 |
 
 Pour plus d’informations sur la dernière version, consultez les [notes de publication](release-notes-sqlpackage.md). Pour télécharger des langues supplémentaires, consultez la section [Langues disponibles](#available-languages).
+
+
+Un lien persistant ([https://aka.ms/sqlpackage-linux](https://aka.ms/sqlpackage-linux)) est disponible et pointe vers la version actuelle de sqlpackage pour [.NET Core Linux](#get-sqlpackage-net-core-for-linux), qui peut être utilisé dans l’automatisation des environnements avec le sqlpackage le plus récent.
 
 ## <a name="dacfx"></a>DacFx
 SqlPackage est une interface de ligne de commande pour l’infrastructure DacFx, exposant certaines API DacFx publiques. DacServices ([Microsoft. SqlServer. DAC](/dotnet/api/microsoft.sqlserver.dac.dacservices)) est un mécanisme associé pour intégrer le déploiement de base de données à votre pipeline d’application.  L’API DacServices est disponible dans un package via NuGet,[Microsoft.SqlServer.DACFx](https://www.NuGet.org/packages/Microsoft.SqlServer.DACFx).  La version actuelle de DacFx est 150.4897.1.
@@ -90,7 +93,7 @@ Cette version de sqlpackage comprend une expérience du programme d’installati
 
 ## <a name="get-sqlpackage-net-core-for-linux"></a>Obtenir le sqlpackage .NET Core pour Linux
 
-1. Téléchargez [sqlpackage pour Linux](https://go.microsoft.com/fwlink/?linkid=2143497) à l’aide d’un des programmes d’installation ou de l’archive tar.gz :
+1. Téléchargez [sqlpackage pour Linux](https://go.microsoft.com/fwlink/?linkid=2143497) en utilisant un des programmes d’installation ou l’archive tar.gz.
 2. Pour extraire le fichier et lancer sqlpackage, ouvrez une nouvelle fenêtre de Terminal et tapez les commandes suivantes :
 
    ```bash

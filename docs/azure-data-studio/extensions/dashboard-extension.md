@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: alayu, maghan
 ms.custom: ''
 ms.date: 08/28/2020
-ms.openlocfilehash: c7402c8dd0d2d85d38536a0bcfea3ce8cd780657
-ms.sourcegitcommit: 7f76975c29d948a9a3b51abce564b9c73d05dcf0
+ms.openlocfilehash: d933f9bdff4279b841522f8a0e09f66e01364630
+ms.sourcegitcommit: fa63019cbde76dd981b0c5a97c8e4d57e8d5ca4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96900872"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99495752"
 ---
 # <a name="create-an-azure-data-studio-dashboard-extension"></a>Créer une extension de tableau de bord Azure Data Studio
 
@@ -37,7 +37,7 @@ Azure Data Studio repose sur la même infrastructure que Visual Studio Code, ain
 - [Node.js](https://nodejs.org) installé et disponible dans votre `$PATH`. Node. js comprend [npm](https://www.npmjs.com/), le gestionnaire de packages Node.js, qui est utilisé pour installer le générateur d’extensions.
 - [Visual Studio Code](https://code.visualstudio.com) pour déboguer l’extension.
 - [L’extension de débogage](https://marketplace.visualstudio.com/items?itemName=ms-mssql.sqlops-debug) d’Azure Data Studio (facultatif). L’extension de débogage vous permet de tester votre extension sans avoir à empaqueter et à l’installer dans Azure Data Studio.
-- Vérifiez que `azuredatastudio` se trouve dans votre chemin d’accès. Pour Windows, veillez à choisir l’option **Ajouter au chemin d’accès** dans setup.exe. Pour Mac ou Linux, exécutez l’option **Installer la commande 'azuredatastudio' dans CHEMIN D’ACCÈS**.
+- Vérifiez que `azuredatastudio` se trouve dans votre chemin d’accès. Pour Windows, veillez à choisir l’option **Ajouter au chemin d’accès** dans setup.exe. Pour Mac ou Linux, exécutez **Installer la commande 'azuredatastudio' dans PATH** à partir de la palette de commandes dans Azure Data Studio.
 
 ## <a name="install-the-extension-generator"></a>Installer le générateur d’extensions
 

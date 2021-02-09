@@ -14,12 +14,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 5b86d0a8ee13a4190d45d8a82cc08dea949acf26
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 61d04579d3eab5a373ea00814bf708d5bb3267ba
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85731996"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99075991"
 ---
 # <a name="tutorial-database-engine-tuning-advisor"></a>Tutoriel : Database Engine Tuning Advisor
 
@@ -44,7 +44,7 @@ Au cours de cette leçon, vous allez apprendre à démarrer l’utilitaire en li
 ## <a name="requirements"></a>Spécifications  
 Ce didacticiel s’adresse aux administrateurs de base de données qui ne connaissent pas l’interface utilisateur de l’Assistant Paramétrage du moteur de base de données ou l’utilitaire en ligne de commande **dta** , mais qui sont des administrateurs de base de données expérimentés et qui maîtrisent les concepts et les structures propres aux bases de données comme les index et les vues indexées.  
   
-Vous devez installer [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] (ou version ultérieure) avec l'exemple de base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] . Pour des raisons de sécurité, les exemples de bases de données ne sont pas installés par défaut. Pour installer les exemples de bases de données, consultez [Installation des exemples SQL Server et des exemples de bases de données](https://sqlserversamples.codeplex.com).  
+Vous devez installer [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] avec l’exemple de base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)]. Pour des raisons de sécurité, les exemples de bases de données ne sont pas installés par défaut. Pour installer les exemples de bases de données, consultez [Installation des exemples SQL Server et des exemples de bases de données](https://sqlserversamples.codeplex.com).  
   
 ## <a name="after-you-finish-this-tutorial"></a>Fin du didacticiel  
 Une fois les leçons du didacticiel terminées, reportez-vous aux rubriques suivantes pour plus d'informations sur l'Assistant Paramétrage du moteur de base de données :  

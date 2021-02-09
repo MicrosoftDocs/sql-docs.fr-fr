@@ -2,27 +2,36 @@
 title: Notes de publication pour mssql-tools sur Linux et macOS
 description: Découvrez les nouveautés et les évolutions apportées aux versions publiées des outils Microsoft SQL Server.
 ms.custom: ''
-ms.date: 07/13/2020
+ms.date: 01/29/2021
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 author: v-zhangw
 ms.author: v-zhangw
 manager: kenvh
-ms.openlocfilehash: 85f7115dbf138055df83a7bb07e5a78f505b5794
-ms.sourcegitcommit: 6f49804b863fed44968ea5829e2c26edc5988468
+ms.openlocfilehash: 75f1144e84792b3c9361dcab74dcdbcb7b072268
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87812354"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99075921"
 ---
 # <a name="release-notes-for-the-microsoft-sql-server-tools-on-linux-and-macos"></a>Notes de publication des outils Microsoft SQL Server sur Linux et macOS
 
 [!INCLUDE[Driver_ODBC_Download](../../../includes/driver_odbc_download.md)]
 
 Cet article liste et décrit les nouveautés des publications versionnées des outils [!INCLUDE[msCoName](../../../includes/msconame_md.md)] SQL Server pour sur Linux et macOS.
+
+## <a name="17711-january-2021"></a>17.7.1.1, janvier 2021
+
+| Fonctionnalité ajoutée | Détails |
+| :------------ | :------ |
+| Sqlcmd Bugfix | Correction du bogue de redirection d’entrée et des lignes vides conduisant à une exécution répétée. |
+| Sqlcmd Bugfix | Correction du signalement erroné d’erreurs pour les options r, p, X et k dans certaines mises en forme. |
+| Option Sqlcmd -z/-Z "Mot de passe" | Maintenant prise en charge. |
+| &nbsp; | &nbsp; |
 
 ## <a name="17611-july-2020"></a>17.6.1.1, juillet 2020
 

@@ -2,7 +2,7 @@
 title: Liste des bogues corrigés
 description: Cette page contient la liste des bogues résolus dans chaque version, à partir du pilote Microsoft ODBC 17 pour SQL Server.
 ms.custom: ''
-ms.date: 04/24/2020
+ms.date: 01/29/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -14,16 +14,25 @@ ms.assetid: f78b81ed-5214-43ec-a600-9bfe51c5745a
 author: v-chojas
 ms.author: v-jizho2
 manager: kenvh
-ms.openlocfilehash: fb686e3c70723cf847853ad558f47cf37da23972
-ms.sourcegitcommit: bc10ec0be5ddfc5f0bc220a9ac36c77dd6b80f1d
+ms.openlocfilehash: dcb4ec36406c44f51984ee5a8fc3afc2f0019a6e
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/03/2020
-ms.locfileid: "87544302"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076351"
 ---
 # <a name="list-of-bugs-fixed"></a>Liste des bogues corrigés
 
 Cette page contient la liste des bogues résolus dans chaque version, à partir du pilote [!INCLUDE[msCoName](../../includes/msconame_md.md)] ODBC 17 pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].
+
+### <a name="bug-fixes-in-the-msconame-odbc-driver-177-for-ssnoversion"></a>Correctifs de bogues dans la version 17.7 de [!INCLUDE[msCoName](../../includes/msconame_md.md)] ODBC Driver pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]
+
+- Correction de l’encodage des caractères des colonnes VARIANT en mode BCP NATIVE
+- Correction de la définition de SQL_ATTR_PARAMS_PROCESSED_PTR dans des conditions spécifiques
+- Correction de SQLDescribeParam en mode FMTONLY pour les instructions contenant des commentaires
+- Correction d’un problème avec l’authentification fédérée lors de l’utilisation d’Okta
+- Correction de l’utilisation excessive de la mémoire sur les systèmes multiprocesseurs
+- Correction de l’authentification Azure AD pour certaines variantes d’Azure SQL DB
 
 ### <a name="bug-fixes-in-the-msconame-odbc-driver-176-for-ssnoversion"></a>Correctifs de bogues dans la version 17.6 de [!INCLUDE[msCoName](../../includes/msconame_md.md)] ODBC Driver pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]
 

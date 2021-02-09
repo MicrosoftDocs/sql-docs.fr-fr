@@ -2,7 +2,7 @@
 title: Utilisation d’Always Encrypted avec le pilote JDBC
 description: Découvrez comment utiliser Always Encrypted dans votre application Java avec le pilote JDBC pour SQL Server pour chiffrer les données sensibles sur le serveur.
 ms.custom: ''
-ms.date: 08/24/2020
+ms.date: 01/29/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 271c0438-8af1-45e5-b96a-4b1cabe32707
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 52fc716acb62ea82a6a29c1cceaa73a30cc93c44
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: a89deba9ed124587899bc915fa86ef74074ed761
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91727504"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99195281"
 ---
 # <a name="using-always-encrypted-with-the-jdbc-driver"></a>Utilisation d’Always Encrypted avec le pilote JDBC
 
@@ -126,9 +126,9 @@ SQLServerConnection.registerColumnEncryptionKeyStoreProviders(keyStoreMap);
 >
 >  [azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java)
 >
->  [azure-activedirectory-library-for-java libraries](https://github.com/AzureAD/azure-activedirectory-library-for-java)
+>  [Bibliothèques microsoft-authentication-library-for-java](https://github.com/AzureAD/microsoft-authentication-library-for-java)
 >
-> Pour obtenir un exemple montrant comment inclure ces dépendances dans un projet Maven, consultez [Télécharger des dépendances ADAL4J et AKV avec Apache Maven](https://github.com/Microsoft/mssql-jdbc/wiki/Download-ADAL4J-And-AKV-Dependencies-with-Apache-Maven)
+> Pour obtenir un exemple montrant comment inclure ces dépendances dans un projet Maven, consultez [Télécharger des dépendances MSAL4J et AKV avec Apache Maven](https://github.com/microsoft/mssql-jdbc/wiki/Download-MSAL4J-And-AKV-Dependencies-with-Apache-Maven)
 
 ### <a name="using-azure-key-vault-authentication-with-managed-identities"></a>Utilisation de l’authentification Azure Key Vault avec des identités managées
 

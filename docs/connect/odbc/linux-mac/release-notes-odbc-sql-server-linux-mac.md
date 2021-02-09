@@ -2,7 +2,7 @@
 title: Notes de publication pour ODBC Driver for SQL Server sur Linux et macOS
 description: Découvrez les nouveautés et les évolutions apportées aux versions publiées de Microsoft ODBC Driver for SQL Server.
 ms.custom: ''
-ms.date: 05/06/2020
+ms.date: 01/29/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: v-jizho2
@@ -11,12 +11,12 @@ ms.topic: conceptual
 author: v-chojas
 ms.author: v-jizho2
 manager: kenvh
-ms.openlocfilehash: 79c86e34a759e65f858621932fea5772e51756e2
-ms.sourcegitcommit: a4ee6957708089f7d0dda15668804e325b8a240c
+ms.openlocfilehash: 43f6be9103f000150d8069888b6129b36ccf29e9
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87899523"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99194608"
 ---
 # <a name="release-notes-for-the-microsoft-odbc-driver-for-sql-server-on-linux-and-macos"></a>Notes de publication pour Microsoft ODBC Driver for SQL Server sur Linux et macOS
 
@@ -37,6 +37,15 @@ Thank you.
 GeneMi.  2019/04/03.
 -->
 
+## <a name="177-january-2021"></a>17.7 - Janvier 2021
+
+| Nouvel élément | Détails |
+| :------- | :------ |
+| Nouvelles distributions prises en charge. | Ubuntu 20.10, macOS Big Sur (11.0), Oracle Linux 7 |
+| Authentification d’un principal de service | Consultez [Attributs et mots clés de chaîne de connexion et DSN](../dsn-connection-string-attribute.md). |
+| Possibilité d’insertion dans des colonnes money et smallmoney chiffrées | Consultez [Utilisation d’Always Encrypted](../using-always-encrypted-with-the-odbc-driver.md). |
+| Résolution des bogues. | [Correctifs de bogues](../bug-fixes.md). |
+| &nbsp; | &nbsp; |
 
 ## <a name="176-july-2020"></a>17.6, juillet 2020
 

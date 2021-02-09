@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
 ms.technology: connectivity
-ms.topic: conceptual
+ms.topic: reference
 apiname:
 - sqlsrv_query
 apitype: NA
@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 9fa7c4c8-4da8-4299-9893-f61815055aa3
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5c2b60fa120863c5ca33fb21ae158649b1d1adcf
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: 751fd08e63cccfe4293785191a223728690ed13e
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081098"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99201074"
 ---
 # <a name="sqlsrv_query"></a>sqlsrv_query
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -59,11 +59,11 @@ sqlsrv_query(resource $conn, string $tsql [, array $params [, array $options]])
     |Élément|Description|  
     |-----------|---------------|  
     |*$value*|Valeur littérale, variable PHP ou variable PHP par référence.|  
-    |*$direction*[FACULTATIF]|L’une des constantes **SQLSRV_PARAM_\*** utilisées pour indiquer la direction du paramètre : **SQLSRV_PARAM_IN**, **SQLSRV_PARAM_OUT**, **SQLSRV_PARAM_INOUT**. La valeur par défaut est **SQLSRV_PARAM_IN**.<br /><br />Pour plus d’informations sur les constantes PHP, consultez [Constantes &#40;Microsoft Drivers for PHP for SQL Server&#41;](../../connect/php/constants-microsoft-drivers-for-php-for-sql-server.md).|  
-    |*$phpType*[FACULTATIF]|Constante **SQLSRV_PHPTYPE_\*** qui spécifie le type de données PHP de la valeur retournée.<br /><br />Pour plus d’informations sur les constantes PHP, consultez [Constantes &#40;Microsoft Drivers for PHP for SQL Server&#41;](../../connect/php/constants-microsoft-drivers-for-php-for-sql-server.md).|  
-    |*$sqlType*[FACULTATIF]|Constante **SQLSRV_SQLTYPE_\*** qui spécifie le type de données SQL Server de la valeur d’entrée.<br /><br />Pour plus d’informations sur les constantes PHP, consultez [Constantes &#40;Microsoft Drivers for PHP for SQL Server&#41;](../../connect/php/constants-microsoft-drivers-for-php-for-sql-server.md).|  
+    |*$direction*[FACULTATIF]|Une des constantes **SQLSRV_PARAM_\* *_ utilisées pour indiquer la direction du paramètre : _* SQLSRV_PARAM_IN**, **SQLSRV_PARAM_OUT**, **SQLSRV_PARAM_INOUT**. La valeur par défaut est **SQLSRV_PARAM_IN**.<br /><br />Pour plus d’informations sur les constantes PHP, consultez [Constantes &#40;Microsoft Drivers for PHP for SQL Server&#41;](../../connect/php/constants-microsoft-drivers-for-php-for-sql-server.md).|  
+    |*$phpType*[FACULTATIF]|Constante **SQLSRV_PHPTYPE_\** _ qui spécifie le type de données PHP de la valeur retournée.<br /><br />Pour plus d’informations sur les constantes PHP, consultez [Constantes &#40;Microsoft Drivers for PHP for SQL Server&#41;](../../connect/php/constants-microsoft-drivers-for-php-for-sql-server.md).|  
+    |_$sqlType*[FACULTATIF]|Constante **SQLSRV_SQLTYPE_\** _ qui spécifie le type de données SQL Server de la valeur d’entrée.<br /><br />Pour plus d’informations sur les constantes PHP, consultez [Constantes &#40;Microsoft Drivers for PHP for SQL Server&#41;](../../connect/php/constants-microsoft-drivers-for-php-for-sql-server.md).|  
   
-*$options* [FACULTATIF] : tableau associatif qui définit les propriétés de la requête. Cette même liste de clés est également prise en charge par [sqlsrv_prepare](../../connect/php/sqlsrv-prepare.md#properties).
+_$options* [FACULTATIF] : tableau associatif qui définit les propriétés de la requête. Cette même liste de clés est également prise en charge par [sqlsrv_prepare](../../connect/php/sqlsrv-prepare.md#properties).
   
 ## <a name="return-value"></a>Valeur de retour  
 Ressource d’instruction. Si l’instruction ne peut pas être créée et/ou exécutée, la valeur **false** est retournée.  

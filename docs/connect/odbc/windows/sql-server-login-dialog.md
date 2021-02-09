@@ -2,7 +2,7 @@
 title: Compte de connexion SQL Server, boîte de dialogue (ODBC)
 description: Le dialogue journalisé SQL Server peut s’afficher lorsqu’une application établit une connexion ODBC sans spécifier suffisamment d’informations pour se connecter à la base de données.
 ms.custom: ''
-ms.date: 03/21/2018
+ms.date: 01/29/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 76326eeb-1144-4b9f-85db-50524c655d30
 author: David-Engel
 ms.author: v-jizho2
-ms.openlocfilehash: 7c0a2be5961e4fab07941d999da1a2b2fe5f9dbe
-ms.sourcegitcommit: a4ee6957708089f7d0dda15668804e325b8a240c
+ms.openlocfilehash: 9a2ba6a75457b2c4742603368d153f5636d3b541
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87898801"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99158219"
 ---
 # <a name="sql-server-login-dialog-box-odbc"></a>Compte de connexion SQL Server, boîte de dialogue (ODBC)
 
@@ -41,6 +41,7 @@ Sélectionnez l'un des modes d'authentification suivants :
 - Authentification **Active Directory intégrée** à l’aide du compte d’utilisateur actuellement connecté
 - Authentification **interactive Active Directory** avec ID de connexion
 - Authentification **Identités managées pour les ressources Azure** avec Identité managée
+- Authentification du **principal de service Active Directory avec une application**  avec le principal de service Azure Active Directory
 
 Consultez [Assistant Source de données - Écran 2](../../../connect/odbc/windows/dsn-wizard-2.md) pour plus d’informations sur les modes d’authentification.
 
@@ -50,7 +51,7 @@ Si vous utilisez une connexion approuvée, vous pouvez spécifier un nom de prin
 
 ### <a name="login-id"></a>Nom d'accès
 
-Spécifie l’ID de connexion SQL Server ou Azure Active Directory à utiliser pour la connexion si le **Mode d’authentification** est défini sur **SQL Server**, **Mot de passe Active Directory**, **Active Directory Interactif** ou **Identités managées pour les ressources Azure**. Sinon, l’option **ID de connexion** est désactivée.
+Spécifie l’ID de connexion SQL Server ou Azure Active Directory à utiliser pour la connexion si le **Mode d’authentification** est défini sur **SQL Server**, **Mot de passe Active Directory**, **Active Directory Interactif**, **Managed Service Identity** ou **Principal de service Active Directory**. Sinon, l’option **ID de connexion** est désactivée.
 
 ### <a name="password"></a>Mot de passe
 

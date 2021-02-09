@@ -2,7 +2,7 @@
 description: Assistant Source de données, écran 2 (Pilote ODBC pour SQL Server)
 title: Assistant Source de données, écran 2 (ODBC Driver for SQL Server) | Microsoft Docs
 ms.custom: ''
-ms.date: 08/06/2020
+ms.date: 01/29/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 76326eeb-1144-4b9f-85db-50524c655d30
 author: David-Engel
 ms.author: v-jizho2
-ms.openlocfilehash: d1e18939ab9d3f2e86452dd3f1847971157ca92c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 749ba8963234955e4893a2c5197bcfd4c26f2584
+ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88462208"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99159558"
 ---
 # <a name="data-source-wizard-screen-2"></a>Assistant Source de données - Écran 2
 
@@ -50,9 +50,14 @@ Spécifie que le pilote s’authentifie auprès de SQL Server avec le mode inter
 
 Spécifie que le pilote s’authentifie auprès de SQL Server avec une identité managée.
 
+### <a name="with-active-directory-service-principal-authentication"></a>Avec l’authentification par principal de service Active Directory
+
+Spécifie que le pilote s’authentifie auprès de SQL Server en utilisant un principal de service Azure Active Directory.
+
+
 ### <a name="login-id"></a>Nom d'accès
 
-Spécifie l’ID de connexion utilisé par le pilote lors de la connexion à SQL Server si l’option **Avec l’authentification SQL Server à l’aide d’un ID de connexion et d’un mot de passe entrés par l’utilisateur**, l’option **Avec l’authentification par mot de passe Active Directory à l’aide d’un ID de connexion et d’un mot de passe entrés par l’utilisateur** ou l’option **Avec l’authentification interactive Active Directory à l’aide d’un ID de connexion entré par l’utilisateur** est sélectionnée. Si l’option**Avec l’authentification d’identités managées** est sélectionnée, spécifiez l’ID de l’objet de l’identité managée ou laissez la case vide pour utiliser l’identité par défaut. Ce champ s'applique uniquement à la connexion établie pour déterminer les paramètres serveur par défaut et pas aux connexions établies ultérieurement à l'aide de la source de données, après sa création, sauf si l’authentification d’identités managées est utilisée.
+Spécifie l’ID de connexion utilisé par le pilote lors de la connexion à SQL Server si l’option **Avec l’authentification SQL Server à l’aide d’un ID de connexion et d’un mot de passe entrés par l’utilisateur**, l’option **Avec l’authentification par mot de passe Active Directory à l’aide d’un ID de connexion et d’un mot de passe entrés par l’utilisateur** ou l’option **Avec l’authentification interactive Active Directory à l’aide d’un ID de connexion entré par l’utilisateur** est sélectionnée. Si l’option **Avec l’authentification d’identités managées** est sélectionnée, spécifiez l’ID de l’objet de l’identité managée ou laissez la case vide pour utiliser l’identité par défaut. Ce champ s'applique uniquement à la connexion établie pour déterminer les paramètres serveur par défaut et pas aux connexions établies ultérieurement à l'aide de la source de données, après sa création, sauf si l’authentification d’identités managées est utilisée.
 
 ### <a name="password"></a>Mot de passe
 

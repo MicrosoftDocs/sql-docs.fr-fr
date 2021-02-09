@@ -1,7 +1,7 @@
 ---
 title: Azure Active Directory
 description: Découvrez comment utiliser l’authentification Azure Active Directory avec les pilotes Microsoft pour PHP pour SQL Server.
-ms.date: 02/25/2019
+ms.date: 01/29/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.custom: ''
@@ -11,12 +11,12 @@ helpviewer_keywords:
 - azure active directory, authentication, access token
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f7abb90d32f93975c9a984670ca450dc791a46ae
-ms.sourcegitcommit: a5398f107599102af7c8cda815d8e5e9a367ce7e
+ms.openlocfilehash: ae3e734dee5f8ac46de2646cca9c37a7ed7748df
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92004561"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076957"
 ---
 # <a name="connect-using-azure-active-directory-authentication"></a>Se connecter à l’aide de l’authentification Azure Active Directory
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -33,6 +33,7 @@ Pour utiliser Azure AD, employez le mot clé **Authentication** ou le mot clé *
 ||`SqlPassword`|Authentification directe auprès d’une instance SQL Server (qui peut être une instance Azure) à l’aide d’un nom d’utilisateur et d’un mot de passe, qui doivent être transmis dans chaîne de connexion avec les mots clés **UID** et **PWD**. |
 ||`ActiveDirectoryPassword`|Authentification avec une identité Azure Active Directory à l’aide d’un nom d’utilisateur et d’un mot de passe, qui doivent être transmis dans chaîne de connexion avec les mots clés **UID** et **PWD**. |
 ||`ActiveDirectoryMsi`|Authentification avec une identité managée affectée par le système ou par l’utilisateur (version 17.3.1.1 ou ultérieure du pilote ODBC requise). Pour obtenir une vue d’ensemble et des tutoriels, consultez [À quoi correspondent les identités managées pour les ressources Azure ?](/azure/active-directory/managed-identities-azure-resources/overview).|
+||`ActiveDirectoryServicePrincipal`|Authentification en utilisant des objets de principal de service (nécessite le pilote ODBC version 17.7 ou ultérieure). Pour obtenir plus d’informations et des exemples, consultez [Objets application et de principal de service dans Azure Active Directory](/azure/active-directory/develop/app-objects-and-service-principals).|
 
 Le mot clé **Authentication** affecte les paramètres de sécurité de la connexion. S’il est défini dans la chaîne de connexion, le mot clé **Encrypt** a alors par défaut la valeur true, ce qui signifie que le client demandera un chiffrement. Par ailleurs, le certificat de serveur sera validé indépendamment du paramètre de chiffrement, sauf si **TrustServerCertificate** a la valeur true (**false** par défaut). Cette fonctionnalité est à distinguer de l’ancienne méthode de connexion, moins sécurisée, selon laquelle le certificat de serveur n’était validé que si le chiffrement était spécifiquement demandé dans la chaîne de connexion.
 
@@ -233,6 +234,63 @@ try {
 }
 ?>
 ```
+
+## <a name="example---connect-using-service-principal-objects-in-azure-active-directory"></a>Exemple - Se connecter en utilisant des objets de principal de service dans Azure Active Directory
+
+Pour s’authentifier en utilisant un objet de principal de service, vous avez besoin de l’[ID client de l’application](/azure/active-directory/develop/howto-create-service-principal-portal#get-tenant-and-app-id-values-for-signing-in) correspondante et du [secret client](/azure/active-directory/develop/howto-create-service-principal-portal#option-2-create-a-new-application-secret).
+
+
+### <a name="sqlsrv-driver"></a>Pilote SQLSRV
+
+```php
+<?php
+
+$adServer = 'myazureserver.database.windows.net';
+$adDatabase = 'myazuredatabase';
+$adSPClientId = 'myAppClientId';
+$adSPClientSecret = 'myClientSecret';
+
+$conn = false;
+$connectionInfo = array("Database"=>$adDatabase, 
+                        "Authentication"=>"ActiveDirectoryServicePrincipal",
+                        "UID"=>$adSPClientId,
+                        "PWD"=>$adSPClientSecret);
+
+$conn = sqlsrv_connect($adServer, $connectionInfo);
+if ($conn === false) {
+    echo "Could not connect using Azure AD Service Principal." . PHP_EOL;
+    print_r(sqlsrv_errors());
+}
+
+sqlsrv_close($conn);
+
+?>
+```
+
+### <a name="pdo_sqlsrv-driver"></a>Pilote PDO_SQLSRV
+
+```php
+<?php
+
+$adServer = 'myazureserver.database.windows.net';
+$adDatabase = 'myazuredatabase';
+$adSPClientId = 'myAppClientId';
+$adSPClientSecret = 'myClientSecret';
+
+$conn = false;
+try {
+    $connectionInfo = "Database = $adDatabase; Authentication = ActiveDirectoryServicePrincipal;";
+    $conn = new PDO("sqlsrv:server = $adServer; $connectionInfo", $adSPClientId, $adSPClientSecret);
+} catch (PDOException $e) {
+    echo "Could not connect using Azure AD Service Principal.\n";
+    print_r($e->getMessage());
+    echo PHP_EOL;
+}
+
+unset($conn);
+?>
+```
+
 
 ## <a name="see-also"></a>Voir aussi
 [Utilisation d’Azure Active Directory avec ODBC Driver](../odbc/using-azure-active-directory.md)

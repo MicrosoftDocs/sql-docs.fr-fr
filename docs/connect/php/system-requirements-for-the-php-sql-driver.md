@@ -2,7 +2,7 @@
 title: Configuration système requise pour les pilotes Microsoft SQL Server pour PHP
 description: Les pilotes Microsoft pour PHP pour SQL Server prennent en charge un large éventail de versions de PHP, de systèmes d’exploitation et de versions de SQL Server.
 ms.custom: ''
-ms.date: 08/06/2020
+ms.date: 01/29/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.technology: connectivity
@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 5db4b75f-c605-4785-9560-399a533c0fc9
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: e0ae11dd3a13ac8b2071943c49ef1ae4b8c400f4
-ms.sourcegitcommit: dd36d1cbe32cd5a65c6638e8f252b0bd8145e165
+ms.openlocfilehash: 06824f62740653eddeee6d3484e7eb8914404110
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "89540463"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076441"
 ---
 # <a name="system-requirements-for-the-microsoft-drivers-for-php-for-sql-server"></a>Configuration système requise pour Microsoft Drivers for PHP for SQL Server
 
@@ -25,20 +25,20 @@ ms.locfileid: "89540463"
 
 Cet article répertorie les composants qui doivent être installés sur votre système pour accéder aux données SQL Server ou Azure SQL Database en utilisant [!INCLUDE[ssDriverPHP](../../includes/ssdriverphp_md.md)].
 
-La version 3.2 et versions ultérieures des pilotes Microsoft PHP pour SQL Server sont officiellement prises en charge. Pour plus d’informations sur les cycles de vie de la prise en charge et la configuration requise des pilotes PHP, consultez le [tableau de prise en charge](microsoft-php-drivers-for-sql-server-support-matrix.md).
+Les versions 4.0 et ultérieures des pilotes Microsoft PHP pour SQL Server sont officiellement prises en charge. Pour plus d’informations sur les cycles de vie de la prise en charge et la configuration requise des pilotes PHP, consultez le [tableau de prise en charge](microsoft-php-drivers-for-sql-server-support-matrix.md).
 
 ## <a name="php"></a>PHP
 
 Pour plus d’informations sur le téléchargement et l’installation des derniers fichiers binaires PHP stables, consultez le [site web PHP](https://php.net).  Les pilotes Microsoft SQL Server pour PHP requièrent les versions appropriées de PHP, comme indiqué dans [Prise en charge de la version de PHP](microsoft-php-drivers-for-sql-server-support-matrix.md#php-version-support).
 
--   La version correcte du fichier de pilote doit être activée avec sa version PHP correspondante. Consultez [Versions de pilotes](#driver-versions) pour plus d’informations sur les différents fichiers de pilotes.  Pour télécharger les pilotes, consultez [Télécharger Microsoft Drivers for PHP for SQL Server](download-drivers-php-sql-server.md). Pour plus d’informations sur la configuration du pilote PHP, consultez [Chargement de Microsoft Drivers for PHP for SQL Server](loading-the-php-sql-driver.md).
+-   La version correcte du fichier de pilote doit être activée avec sa version PHP correspondante. Consultez [Versions de pilotes](#driver-versions) pour plus d’informations sur les différents fichiers de pilotes. Pour télécharger les pilotes, consultez [Télécharger Microsoft Drivers for PHP for SQL Server](download-drivers-php-sql-server.md). Pour plus d’informations sur la configuration du pilote PHP, consultez [Chargement de Microsoft Drivers for PHP for SQL Server](loading-the-php-sql-driver.md).
 
 -   Un serveur web est nécessaire. Votre serveur web doit être configuré pour exécuter PHP. Pour plus d’informations sur l’hébergement d’applications PHP avec IIS, consultez le [tutoriel sur le site web de PHP](http://docs.php.net/manual/da/install.windows.iis7.php).
 
     Les [!INCLUDE[ssDriverPHP](../../includes/ssdriverphp_md.md)] ont été testés à l’aide d’IIS 10 avec FastCGI.
 
-    > [!NOTE]
-    > Microsoft prend en charge uniquement IIS.
+> [!NOTE]
+> Microsoft prend en charge uniquement IIS.
 
 ## <a name="odbc-driver"></a>Pilote ODBC
 
@@ -46,12 +46,12 @@ La version correcte de Microsoft ODBC Driver pour SQL Server est requise sur l�
 
 Si vous téléchargez la version Windows du pilote sur une version 64 bits de Windows, le programme d’installation ODBC 64 bits installe les pilotes ODBC 32 bits et 64 bits. Si vous utilisez une version 32 bits de Windows, utilisez le programme d’installation ODBC x86. Sur les plateformes non Windows, seules les versions 64 bits du pilote sont disponibles.
 
-|Version du pilote PHP &#8594;<br />Version du pilote ODBC &#8595;|5.8|5.6|5.3|5.2|4.3|4.0|3.2|
+|Version du pilote PHP &#8594;<br />Version du pilote ODBC &#8595;|5.9|5.8|5.6|5.3|5.2|4.3|4.0|3.2|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|ODBC Driver 17+ |Oui|Oui|Oui|Oui|   |   |   |
-|ODBC Driver 13.1|Oui|Oui|Oui|Oui|Oui|Oui|   |
-|ODBC Driver 13  |   |   |   |   |   |Oui|   |
-|ODBC Driver 11  |Oui|Oui|Oui|Oui|Oui|Oui|Oui|
+|ODBC Driver 17+ |Oui|Oui|Oui|Oui|Oui|   |   |   |
+|ODBC Driver 13.1|Oui|Oui|Oui|Oui|Oui|Oui|Oui|   |
+|ODBC Driver 13  |   |   |   |   |   |   |Oui|   |
+|ODBC Driver 11  |Oui|Oui|Oui|Oui|Oui|Oui|Oui|Oui|
 
 Si vous utilisez le pilote SQLSRV, [sqlsrv_client_info](sqlsrv-client-info.md) retourne des informations sur la version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Microsoft ODBC Driver pour SQL Server utilisée par [!INCLUDE[ssDriverPHP](../../includes/ssdriverphp_md.md)]. Si vous utilisez le pilote PDO_SQLSRV, vous pouvez utiliser [PDO::getAttribute](pdo-getattribute.md) pour découvrir la version.
 
@@ -68,6 +68,36 @@ Pour plus d’informations sur les systèmes d’exploitation pris en charge, co
 Cette section répertorie les pilotes qui sont inclus dans chaque version du [!INCLUDE[ssDriverPHP](../../includes/ssdriverphp_md.md)]. Chaque package d’installation contient les fichiers de pilote SQLSRV et PDO_SQLSRV dans les variantes avec et sans thread. Sur Windows, ils sont également disponibles en version 32 bits et 64 bits. Pour configurer le pilote à utiliser avec le runtime PHP, suivez les instructions d’installation fournies dans [Chargement des pilotes Microsoft SQL Server pour PHP](loading-the-php-sql-driver.md).
 
 Sur les versions Linux et macOS prises en charge, les pilotes appropriés peuvent être installés à l’aide du système de package PECL de PHP, en suivant les [instructions d’installation pour Linux et macOS](installation-tutorial-linux-mac.md). Vous pouvez également télécharger des fichiers binaires prédéfinis pour votre plateforme sur la page du projet GitHub [Pilotes Microsoft SQL Server pour PHP](https://github.com/Microsoft/msphpsql/releases) ; les tableaux ci-dessous répertorient les fichiers disponibles dans les packages binaires prédéfinis.
+
+**Pilotes Microsoft 5.9 pour PHP pour SQL Server :**
+
+Sur Windows, les fichiers de pilote suivants sont fournis :
+
+|Fichier de pilote|Version PHP|Thread-safe ?|Utiliser avec .dll PHP|
+|---------------|:---------------:|:----------------:|---------------------|
+|32-bit php_sqlsrv_73_nts.dll<br />32-bit php_pdo_sqlsrv_73_nts.dll|7.3|non |php7.dll 32 bits|
+|32-bit php_sqlsrv_73_ts.dll <br />32-bit php_pdo_sqlsrv_73_ts.dll |7.3|Oui|php7ts.dll 32 bits|
+|64-bit php_sqlsrv_73_nts.dll<br />64-bit php_pdo_sqlsrv_73_nts.dll|7.3|non |php7.dll 64 bits|
+|64-bit php_sqlsrv_73_ts.dll <br />64-bit php_pdo_sqlsrv_73_ts.dll |7.3|Oui|php7ts.dll 64 bits|
+|php_sqlsrv_74_nts.dll 32 bits<br />php_pdo_sqlsrv_74_nts.dll 32 bits|7.4|non |php7.dll 32 bits|
+|php_sqlsrv_74_ts.dll 32 bits <br />php_pdo_sqlsrv_74_ts.dll 32 bits |7.4|Oui|php7ts.dll 32 bits|
+|php_sqlsrv_74_nts.dll 64 bits<br />php_pdo_sqlsrv_74_nts.dll 64 bits|7.4|non |php7.dll 64 bits|
+|php_sqlsrv_74_ts.dll 64 bits <br />php_pdo_sqlsrv_74_ts.dll 64 bits |7.4|Oui|php7ts.dll 64 bits|
+|32-bit php_sqlsrv_80_nts.dll<br />32-bit php_pdo_sqlsrv_80_nts.dll|8.0|non |32-bit php8.dll|
+|32-bit php_sqlsrv_80_ts.dll <br />32-bit php_pdo_sqlsrv_80_ts.dll |8.0|Oui|32-bit php8ts.dll|
+|64-bit php_sqlsrv_80_nts.dll<br />64-bit php_pdo_sqlsrv_80_nts.dll|8.0|non |64-bit php8.dll|
+|64-bit php_sqlsrv_80_ts.dll <br />64-bit php_pdo_sqlsrv_80_ts.dll |8.0|Oui|64-bit php8ts.dll|
+
+Sur Linux, les fichiers de pilote suivants sont fournis :
+
+|Fichier de pilote|Version PHP|Thread-safe ?|
+|---------------|:---------------:|:----------------:|
+|php_sqlsrv_73_nts.so<br />php_pdo_sqlsrv_73_nts.so|7.3|non |
+|php_sqlsrv_73_ts.so <br />php_pdo_sqlsrv_73_ts.so |7.3|Oui|
+|php_sqlsrv_74_nts.so<br />php_pdo_sqlsrv_74_nts.so|7.4|non |
+|php_sqlsrv_74_ts.so <br />php_pdo_sqlsrv_74_ts.so |7.4|Oui|
+|php_sqlsrv_80_nts.so<br />php_pdo_sqlsrv_80_nts.so|8.0|non |
+|php_sqlsrv_80_ts.so <br />php_pdo_sqlsrv_80_ts.so |8.0|Oui|
 
 **Microsoft Drivers 5.8 PHP pour SQL Server :**
 

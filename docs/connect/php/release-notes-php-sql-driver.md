@@ -2,7 +2,7 @@
 title: Notes de publication des pilotes Microsoft pour PHP
 description: Cette page décrit ce qui a été modifié dans chaque version des pilotes Microsoft pour PHP pour SQL Server.
 ms.custom: ''
-ms.date: 09/11/2020
+ms.date: 01/29/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 91cca3d2-ba99-4a6d-b0de-beb9699cb3f8
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: be2317f95adc1a94ee85805aecfaed37d05e875a
-ms.sourcegitcommit: a5398f107599102af7c8cda815d8e5e9a367ce7e
+ms.openlocfilehash: 2d62068af3e6ec4a8f2711a5c11ab1f01388be8e
+ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92005729"
+ms.lasthandoff: 01/29/2021
+ms.locfileid: "99076301"
 ---
 # <a name="release-notes-for-the-microsoft-drivers-for-php-for-sql-server"></a>Notes de publication de Microsoft Drivers for PHP for SQL Server
 
@@ -39,6 +39,36 @@ TO  :  'release-notes-php-sql-driver.md'
 For any questions, ask GeneMi or CraigG.
 Thanks a lot.  2019-03-28  (DevO= 1467988)
 -->
+
+## <a name="59"></a>5.9
+
+![télécharger](../../ssms/media/download-icon.png) [Télécharger le package Windows](https://go.microsoft.com/fwlink/?linkid=?????)
+[Balise de version GitHub (les packages Linux et macOS sont disponibles ici)](https://github.com/Microsoft/msphpsql/releases/tag/v5.9.0)
+
+### <a name="version-information"></a>Informations sur la version
+
+- Numéro de version : 5.9.0<sup>1</sup>
+- Publication : 29 janvier 2021
+
+### <a name="whats-new-in-59"></a>Nouveautés de la version 5.9
+
+| Nouvel élément | Détails |
+| :------- | :------ |
+| Ajout de la prise en charge de PHP 8.0. | &nbsp; |
+| Prise en charge de PHP 7.2 abandonnée. | &nbsp; |
+| Ajout de la prise en charge de Microsoft ODBC Driver 17.7 sur toutes les plateformes. | &nbsp; |
+| Ajout de la prise en charge de macOS Big Sur, Ubuntu 20.04, Ubuntu 20.10 et Alpine 3.12. | Certains nécessitent ODBC 17.5 ou ultérieur. |
+| Suppression de la prise en charge de macOS High Sierra, Debian 8 et Ubuntu 19.10. | &nbsp; |
+| Prise en charge des paramètres régionaux GB18030. | &nbsp; |
+| Extension de PDO errorinfo pour y inclure des messages ODBC supplémentaires s’ils sont disponibles. | &nbsp; |
+| Prise en charge de la classification des données avec des informations sur les degrés. | Nécessite SQL Server 2019 et le pilote ODBC 17.4.2 ou une version ultérieure. |
+| Ajout de la prise en charge de l’authentification par principal de service Azure Active Directory. | Nécessite ODBC Drive 17.7 ou ultérieur. |
+| Amélioration des performances lors du traitement des nombres décimaux en tant qu’entrées ou sorties, et suppression des conversions inutiles pour les valeurs numériques. | &nbsp; |
+| Amélioration des performances lors de l’extraction de nombres en utilisant des mémoires tampon clientes. | &nbsp; |
+| Définition du délai d’expiration des requêtes sans utilisation de LOCK TIMEOUT, ce qui permet d’économiser un aller-retour vers le serveur. | &nbsp; |
+| &nbsp; | &nbsp; |
+
+<sup>1</sup> Cette version nécessite ODBC Driver 17.4.2 ou ultérieur. Sinon, un avertissement d’échec de définition d’un attribut se produit. Cet avertissement peut être supprimé lors de l’utilisation d’un pilote ODBC plus ancien. Si vous utilisez SQLSRV, consultez [Procédure : configurer la gestion des erreurs et des avertissements à l’aide du pilote SQLSRV](https://docs.microsoft.com/sql/connect/php/how-to-configure-error-and-warning-handling-using-the-sqlsrv-driver). Si vous utilisez PDO_SQLSRV, les avertissements sont supprimés par défaut, mais ils peuvent être journalisés. Pour plus d’informations, consultez [Journalisation de l’activité](https://docs.microsoft.com/sql/connect/php/logging-activity).
 
 ## <a name="581"></a>5.8.1
 
