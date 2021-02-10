@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 05ae3f5a-a0c1-459d-aa7d-ed7f3b2ecd60
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 80215c133895804264ad7be586faeaf7cfcc4180
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: fdbecc77e8a86f2135c6b12fd9fbf6a4727c31cd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170904"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041859"
 ---
 # <a name="item-property-example-vc"></a>Item, exemple de propriété (VC++)
-Cet exemple montre comment la propriété [Item](./item-property-ado.md) accède aux membres d’une collection. L’exemple ouvre la table ***Authors** _ de la base de données _*_pubs_*_ avec une commande paramétrée.  
+Cet exemple montre comment la propriété [Item](./item-property-ado.md) accède aux membres d’une collection. L’exemple ouvre la table ***Authors** _ de la base de données _ *_pubs_** à l’aide d’une commande paramétrée.  
   
  Le paramètre de la commande exécutée sur la base de données est accessible à partir de la collection de [paramètres](./parameters-collection-ado.md) de l’objet de [commande](./command-object-ado.md) par index et par nom. Ensuite, les champs de l’ensemble d' [enregistrements](./recordset-object-ado.md) retourné sont accessibles à partir de la collection de [champs](./fields-collection-ado.md) de cet objet par index et par nom.  
   
@@ -82,7 +82,7 @@ void ItemX() {
       Column[7] = "zip";  
       Column[8] = "contract";  
   
-      _bstr_t strText("SELECT _ FROM authors WHERE state = ?");  
+      _bstr_t strText("SELECT * FROM authors WHERE state = ?");  
       pCmd->CommandText = strText;  
   
       pPrm = pCmd->CreateParameter("ItemXparm", adChar, adParamInput, 2, "CA");  

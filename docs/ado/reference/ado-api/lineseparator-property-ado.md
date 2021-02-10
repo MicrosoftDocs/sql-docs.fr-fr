@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0b20fbb8-6b83-48ec-b442-f96c8a4bafbb
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 629d2948bbbf62987f1352712df02521cf002189
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: fa50003834cf83017ec9eaf4581ed1cff7bd26bc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167178"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100044279"
 ---
 # <a name="lineseparator-property-ado"></a>LineSeparator, propriété (ADO)
 Indique le caractère binaire à utiliser comme séparateur de lignes dans les objets de [flux](./stream-object-ado.md) de texte.  

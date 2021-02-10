@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: pochiraju
 ms.author: rajpo
 ms.reviewer: mathoma
-ms.openlocfilehash: e335170c97f18039767fab8bf0b8400ce9f9b45d
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 9bc1dafd5242dc4be8a9a2947465ed48a01fcb8d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643759"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100042419"
 ---
 # <a name="capture-a-trace-in-database-experimentation-assistant"></a>Capturer une trace dans Assistant Expérimentation de base de données
 
@@ -147,6 +147,6 @@ Voici quelques-unes des erreurs possibles et des solutions pour les résoudre :
 
 Si vous voyez d’autres erreurs libellées *code d’erreur SQL*, consultez [moteur de base de données des erreurs](../relational-databases/errors-events/database-engine-events-and-errors.md) pour obtenir des descriptions détaillées.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 - Pour savoir comment configurer les outils de Distributed Replay dans SQL Server avant de relire une trace capturée, consultez [configurer Distributed Replay pour Assistant expérimentation de base de données](database-experimentation-assistant-configure-replay.md).

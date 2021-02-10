@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 20c76571-8c9a-482c-a99e-726ab1d93f8b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ec7732203c4341840e6dcd05a9e37101b443a1df
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2e1e6e2ec1be8669976fa155a761f7014a4d4c08
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170857"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100044089"
 ---
 # <a name="maxrecords-property-ado"></a>MaxRecords, propriété (ADO)
 Indique le nombre maximal d’enregistrements à retourner à un [jeu d’enregistrements](./recordset-object-ado.md) à partir d’une requête.  

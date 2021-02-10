@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: f2d1f0b0-5394-4adb-b3f3-abd71eb68ca7
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: ee6cf3bea905b169503851efe375fd614c4589e9
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: ba2e567c5675e602cc80382d42adfcbb89bce90a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988195"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100045039"
 ---
 # <a name="creating-and-managing-projects-accesstosql"></a>Création et gestion de projets (AccessToSQL)
 Pour migrer des bases de données Access vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure, vous devez d’abord créer un projet SSMA. Le projet est un fichier qui contient des métadonnées sur les bases de données Access que vous souhaitez migrer vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure, des métadonnées sur l’instance cible de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure qui recevront les objets migrés et les données, les [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] informations de connexion et les paramètres du projet.  
@@ -43,7 +43,7 @@ SSMA contient plusieurs options pour la conversion et la synchronisation des obj
   
 5.  Modifiez les options selon vos besoins.  
   
-6.  Répétez les étapes précédentes pour la **migration**, l' **interface utilisateur graphique**et les pages de **mappage de type** .  
+6.  Répétez les étapes précédentes pour la **migration**, l' **interface utilisateur graphique** et les pages de **mappage de type** .  
   
     -   Pour plus d’informations sur les options de migration, consultez [paramètres du projet (migration)](./project-settings-migration-accesstosql.md).  
   

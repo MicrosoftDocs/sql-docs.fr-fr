@@ -29,12 +29,12 @@ helpviewer_keywords:
 ms.assetid: e944c740-4c8a-4bc1-b0ed-be57bc06dced
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 12c51ce9a3b4bdd83a1d1c4c7295f2ff438bc707
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: d8443eaceb150bd0cf2c936e44cb29fc2292f89c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987715"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100042020"
 ---
 # <a name="adding-and-removing-access-database-files-accesstosql"></a>Ajout et suppression de fichiers de base de données Access (AccessToSQL)
 Pour migrer des données Access vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure, vous devez ajouter une ou plusieurs bases de données Access au projet SSMA. Ces bases de données doivent être Access 97 ou versions ultérieures. Si vous avez des bases de données d’une version antérieure d’Access, vous devez convertir les bases de données vers une version plus récente. Pour ce faire, vous devez ouvrir et enregistrer les bases de données dans Access 97 ou une version ultérieure avant de les ajouter à SSMA.  
@@ -102,7 +102,7 @@ Une fois que vous avez ajouté une base de données Access à un projet, les mé
   
 3.  Développez **tables** , puis sélectionnez une table.  
   
-    Notez que quatre onglets s’affichent : **table**, **mappage de type**, **Propriétés**et **données**.  
+    Notez que quatre onglets s’affichent : **table**, **mappage de type**, **Propriétés** et **données**.  
   
 4.  Développez une table, développez **clés**, puis sélectionnez une clé.  
   

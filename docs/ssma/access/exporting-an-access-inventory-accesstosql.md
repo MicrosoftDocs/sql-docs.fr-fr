@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 7e1941fb-3d14-4265-aff6-c77a4026d0ed
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 112452e9e6c31810dbf26d9aa1e7b36959c192d5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 10bff5f86bec26994c143195fcbb97aa30ba709e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88488332"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100044749"
 ---
 # <a name="exporting-an-access-inventory-accesstosql"></a>Exportation d’un inventaire des accès (AccessToSQL)
 Si vous disposez de plusieurs bases de données Access et que vous n’êtes pas certain de celles à migrer vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vous pouvez exporter un inventaire de toutes les bases de données Access dans un projet. Vous pouvez ensuite examiner et interroger les métadonnées d’inventaire pour déterminer les bases de données et les objets de ces bases de données à migrer. Cet inventaire vous permet de trouver rapidement des réponses aux questions, telles que les suivantes :  
@@ -136,7 +136,7 @@ Après avoir exporté les métadonnées relatives aux bases de données Access, 
   
 **Pour interroger les métadonnées**  
   
-1.  Dans le **menu Démarrer** , pointez sur **tous les programmes**, sur **microsoft [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 2005** ou sur Microsoft ** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 2008** ou sur **Microsoft [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 2012**, puis cliquez sur **SQL Server Management Studio**.  
+1.  Dans le **menu Démarrer** , pointez sur **tous les programmes**, sur **microsoft [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 2005** ou sur Microsoft **[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 2008** ou sur **Microsoft [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 2012**, puis cliquez sur **SQL Server Management Studio**.  
   
 2.  Dans la boîte de dialogue **se connecter au serveur** , vérifiez les paramètres, puis cliquez sur **se connecter**.  
   

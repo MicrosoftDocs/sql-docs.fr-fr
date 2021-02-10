@@ -46,12 +46,12 @@ helpviewer_keywords:
 ms.assetid: e11484bb-c5c7-42d8-9bb8-21572125d727
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0ae6b59ffe896180f5977288bbee16925b7d33b4
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 3e87e7ae8592afc67b049fb25c4e66392f45eb89
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170922"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041899"
 ---
 # <a name="item-property-ado"></a>Item, propriété (ADO)
 Indique un membre spécifique d’une collection, par nom ou numéro ordinal.  

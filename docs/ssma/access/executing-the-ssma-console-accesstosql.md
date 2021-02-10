@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: aa1bf665-8dc0-4259-b36f-46ae67197a43
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 655b6f64391ebf8c7fd28d179000753ed4f95faa
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cf369ee1104f4b686dc0e7b6ab4bbde7bab458de
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492512"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100044699"
 ---
 # <a name="executing-the-ssma-console-accesstosql"></a>Exécution de la console SSMA (AccessToSQL)
 Microsoft vous fournit un ensemble robuste de commandes de fichier de script et d’options de ligne de commande pour exécuter et contrôler les activités SSMA. Les sections suivantes détaillent les mêmes sections.  

@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 8684ed23-c36b-46f6-9687-30ad7f47f876
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: e03d61c4ab08db69748b63109099d03ba95f9450
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9d2a894f42f7651bb16ed47079d41b19a87abed8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88480344"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041929"
 ---
 # <a name="troubleshooting-sybasetosql"></a>Résolution des problèmes (SybaseToSQL)
 Il n’est pas rare de rencontrer des problèmes de migration à mi-chemin pour exécuter les commandes ou les scripts de la console.  
@@ -28,7 +28,7 @@ Les erreurs pouvant être corrigées sont les suivantes :
   
 2.  Procédure  
   
-3.  Vue  
+3.  Affichage  
   
 4.  Déclencheur  
   

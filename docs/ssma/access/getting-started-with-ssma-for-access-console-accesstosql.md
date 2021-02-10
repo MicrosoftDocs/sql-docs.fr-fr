@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 8585ec16-7e0a-483a-b250-adab9b9232a3
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 1923323699282e40fcca8afa1a8079edd8163c09
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d39f130c2b2ff8edd95fb52a78b7865b5c6dc868
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88426981"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100044509"
 ---
 # <a name="getting-started-with-ssma-for-access-console-accesstosql"></a>Prise en main avec SSMA pour Access console (AccessToSQL)
 Cette section décrit la procédure de lancement et de prise en main de l’application console Access. Les conventions utilisées dans une fenêtre de sortie de console SSMA standard sont également répertoriées.  
@@ -58,7 +58,7 @@ Interprétation des couleurs de la sortie de la console dans le tableau suivant�
 |Rouge|Erreur irrécupérable lors de l’exécution|  
 |Gris|Date et heure, message à l’utilisateur|  
 |White|Commandes de fichier de script, type de message|  
-|Jaune|Avertissement|  
+|Yellow|Avertissement|  
 |Vert|Demander une entrée utilisateur|  
 |Cyan|Début, fin et résultat d’une opération|  
   

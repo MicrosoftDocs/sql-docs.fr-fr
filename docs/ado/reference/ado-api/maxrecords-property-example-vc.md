@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: af6b399b-e546-4de5-9cd1-5a6e0ec7ddc7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b04dc407bd79f53aed59ccd70464b33ef319ecb5
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8f74ae0e10c13dd4cd972284139623ad865c6dee
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170851"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100043959"
 ---
 # <a name="maxrecords-property-example-vc"></a>MaxRecords, exemple de propriété (VC++)
-Cet exemple utilise la propriété [maxRecords](./maxrecords-property-ado.md) pour ouvrir un [jeu d’enregistrements](./recordset-object-ado.md) contenant les 10 titres les plus chers dans le tableau ***titles** _.  
+Cet exemple utilise la propriété [maxRecords](./maxrecords-property-ado.md) pour ouvrir un [jeu d’enregistrements](./recordset-object-ado.md) contenant les 10 titres les plus chers dans la table ***titles*** .  
   
 ## <a name="example"></a>Exemple  
   
@@ -78,7 +78,7 @@ void  MaxRecordsX() {
    _RecordsetPtr pRstTemp = NULL;  
   
    // Define Other Variables  
-   IADORecordBinding _picRs = NULL;   // Interface Pointer Declared    
+   IADORecordBinding *picRs = NULL;   // Interface Pointer Declared    
    CTitleRs titlers;   // C++ Class Object  
   
    try {  

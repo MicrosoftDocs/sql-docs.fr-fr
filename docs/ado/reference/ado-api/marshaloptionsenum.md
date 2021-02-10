@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 4013075d-dbea-4bbc-a6f4-c345a55c5633
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 27f9fcf5cadc8755ac17630f3e6fae852aeaf60b
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ceccd51288d55d3b2922de650153e66e649b8cab
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167135"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100044109"
 ---
 # <a name="marshaloptionsenum"></a>MarshalOptionsEnum
 Spécifie les enregistrements qui doivent être renvoyés au serveur.  

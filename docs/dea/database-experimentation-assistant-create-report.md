@@ -12,12 +12,12 @@ author: pochiraju
 ms.author: rajpo
 ms.reviewer: mathoma
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 7a50504923a825a437ea4456a1bb9394cd0635db
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: 931e013a84cd808d75a50edafdcf73d105f51827
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87951324"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100045109"
 ---
 # <a name="create-analysis-reports-in-database-experimentation-assistant-sql-server"></a>Créer des rapports d’analyse en Assistant Expérimentation de base de données (SQL Server)
 
@@ -67,7 +67,7 @@ L’utilisateur qui est connecté à DEA doit disposer de droits d’administrat
 |Erreurs possibles|Solution|  
 |---|---|  
 |Impossible de se connecter à la base de données. Vérifiez que vous disposez des droits d’administrateur système pour l’analyse et l’affichage des rapports.|Vous ne disposez peut-être pas d’un accès ou de droits d’administrateur système sur le serveur ou la base de données. Confirmez vos droits de connexion, puis réessayez.|  
-|Impossible de générer le **nom du rapport** sur le nom du **serveur**serveur. Pour plus d’informations, consultez le rapport **nom du rapport** .|Vous ne disposez peut-être pas des droits d’administrateur système nécessaires pour générer un nouveau rapport. Pour afficher les erreurs détaillées, sélectionnez le rapport d’erreur et vérifiez les journaux dans% Temp% \\ DEA.|  
+|Impossible de générer le **nom du rapport** sur le nom du **serveur** serveur. Pour plus d’informations, consultez le rapport **nom du rapport** .|Vous ne disposez peut-être pas des droits d’administrateur système nécessaires pour générer un nouveau rapport. Pour afficher les erreurs détaillées, sélectionnez le rapport d’erreur et vérifiez les journaux dans% Temp% \\ DEA.|  
 |L’utilisateur actuel ne dispose pas des autorisations requises pour exécuter l’opération. Vérifiez que vous disposez des droits d’administrateur système pour effectuer la trace et analyser les rapports.|Vous ne disposez pas des droits sysadmin nécessaires pour générer un nouveau rapport.|  
 
 **Q : je ne peux pas me connecter à l’ordinateur exécutant SQL Server**
@@ -88,7 +88,7 @@ Si une erreur se produit pendant la création du rapport, la page progression af
 |---|---|  
 |RInterop a rencontré une erreur au démarrage. Vérifiez les journaux RInterop et réessayez.|La DEA requiert un accès à Internet pour télécharger les packages R dépendants. Vérifiez les journaux RInterop dans% Temp% \\ RInterop et les journaux de DEA dans% Temp% \\ DEA. Si RInterop a été initialisé de manière incorrecte ou s’il a été initialisé sans les packages R corrects, vous pouvez voir l’exception « échec de la génération d’un nouveau rapport d’analyse » après l’étape InitializeRInterop dans les journaux de DEA.<br><br>Les journaux RInterop peuvent également afficher une erreur semblable à « aucun package jsonlite n’est disponible ». Si votre ordinateur n’a pas accès à Internet, vous pouvez télécharger manuellement le package jsonlite R requis :<br><br><li>Accédez au dossier% UserProfile% \\ DEARPackages sur le système de fichiers de l’ordinateur. Ce dossier est constitué des packages utilisés par R pour DEA.</li><br><li>Si le dossier jsonlite est manquant dans la liste des packages installés, vous devez disposer d’un ordinateur disposant d’un accès à Internet pour télécharger la version finale de jsonlite \_1.4.zip à partir de [https://cran.r-project.org/web/packages/jsonlite/index.html](https://cran.r-project.org/web/packages/jsonlite/index.html) .</li><br><li>Copiez le fichier. zip sur l’ordinateur sur lequel vous exécutez la DEA.  Extrayez le dossier jsonlite et copiez-le dans% UserProfile% \\ DEARPackages. Cette étape installe automatiquement le package jsonlite dans R. Le dossier doit être nommé **jsonlite** et le contenu doit se trouver directement à l’intérieur du dossier, et non un niveau ci-dessous.</li><br><li>Fermez la DEA, rouvrez, puis réessayez l’analyse.</li><br>Vous pouvez également utiliser l’RGUI. Accédez à **packages**  >  **installation à partir de zip**. Accédez au package que vous avez téléchargé précédemment et installez.<br><br>Si RInterop a été initialisé et configuré correctement, vous devez voir « Installation du package R dépendant jsonlite » dans les journaux RInterop.|  
 |Impossible de se connecter à l’instance de SQL Server, assurez-vous que le nom du serveur est correct et vérifiez l’accès requis pour l’utilisateur qui est connecté.|Vous ne disposez peut-être pas d’un accès ou de droits d’utilisateur sur le serveur, ou le nom du serveur est peut-être incorrect.|
-|Délai d’attente du processus RInterop dépassé. Vérifiez les journaux de DEA et RInterop, arrêtez le processus RInterop dans le gestionnaire des tâches, puis réessayez.<br><br>ou<br><br>RInterop est en état d’erreur. Arrêtez le processus RInterop dans le gestionnaire des tâches, puis réessayez.|Vérifiez les journaux dans% Temp% \\ RInterop pour confirmer l’erreur. Supprimez le processus RInterop du gestionnaire des tâches avant de réessayer. Si le problème persiste, contactez l’équipe du produit.|
+|Délai d’attente du processus RInterop dépassé. Vérifiez les journaux de DEA et RInterop, arrêtez le processus RInterop dans le gestionnaire des tâches, puis réessayez.<br><br>or<br><br>RInterop est en état d’erreur. Arrêtez le processus RInterop dans le gestionnaire des tâches, puis réessayez.|Vérifiez les journaux dans% Temp% \\ RInterop pour confirmer l’erreur. Supprimez le processus RInterop du gestionnaire des tâches avant de réessayer. Si le problème persiste, contactez l’équipe du produit.|
 
 **Q : le rapport est généré, mais les données semblent manquer**
 
@@ -98,6 +98,6 @@ Si les données n’existent pas, les données risquent de ne pas avoir été co
 
 Vous avez d’autres questions ou des commentaires ? Envoyez vos commentaires par le biais de l’outil DEA en choisissant l’icône représentant un smiley dans le coin inférieur gauche.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 - Pour savoir comment afficher le rapport d’analyse, consultez [afficher les rapports](database-experimentation-assistant-view-report.md).

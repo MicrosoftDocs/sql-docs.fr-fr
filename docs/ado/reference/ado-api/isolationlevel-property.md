@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ea84e4b2-fbf2-4eef-b9ce-796b22e21800
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: dc9f116c565321051184d16fa0cdf963cc4bfe0e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2e6b818ef937328d75d5c5425815dbd931ebdd2a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170924"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100044309"
 ---
 # <a name="isolationlevel-property"></a>IsolationLevel, propriété
 Indique le niveau d’isolation d’un objet de [connexion](./connection-object-ado.md) .  

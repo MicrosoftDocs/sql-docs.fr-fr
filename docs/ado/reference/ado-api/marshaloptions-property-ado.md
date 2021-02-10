@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 390c8abf-133e-40da-8b99-8f748a983e4f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2d825a56123965fa95605e913354f6ea34db04ea
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8797d968a342a8e68f3d3c3e19319d6a1bdc2505
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170878"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041799"
 ---
 # <a name="marshaloptions-property-ado"></a>MarshalOptions, propriété (ADO)
 Indique les enregistrements du [Recordset](./recordset-object-ado.md) qui doivent être remarshalés sur le serveur.  

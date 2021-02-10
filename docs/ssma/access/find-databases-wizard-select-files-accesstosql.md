@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 2f574a34-4bab-40a4-89a8-ad4907ffc3fd
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 973d2ec0a740e07aac94a4f44ab08051294d5128
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 55b92abd659ccfd0ebba21091764d53e7fc0614d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91985010"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100044657"
 ---
 # <a name="find-databases-wizard-select-files-accesstosql"></a>Assistant Rechercher des bases de données (sélectionner des fichiers) (AccessToSQL)
 La page Sélectionner des fichiers de l’Assistant Rechercher des bases de données répertorie les fichiers qui ont été trouvés lors de la recherche. Pour sélectionner un fichier à ajouter à SSMA, sélectionnez la ligne qui contient le nom de fichier. Lorsque vous avez terminé de sélectionner des fichiers, cliquez sur **suivant** pour afficher la page vérifier la sélection.  
@@ -27,7 +27,7 @@ Pour ouvrir l’Assistant analyser le réseau pour les fichiers, dans le menu **
 Pour sélectionner un fichier à ajouter à SSMA, activez la case à cocher en regard du nom de fichier. Lorsque vous avez terminé de sélectionner des fichiers, cliquez sur **suivant** pour afficher la page dernière étape.  
   
 ## <a name="options"></a>Options  
-**Sélectionner tout**  
+**Tout sélectionner**  
 Activez cette case à cocher pour sélectionner toutes les bases de données de la liste.  
   
 **Désélectionner tout**  

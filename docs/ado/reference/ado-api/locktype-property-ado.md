@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9920c14e-033a-4de1-8149-0ce9737a3246
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 06412dae7241ce74001c4bd5580624f40872619f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: a5ea6f3f8b9bb078599c95f015387bd36deec4e5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170885"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100044244"
 ---
 # <a name="locktype-property-ado"></a>LockType, propriété (ADO)
 Indique le type de verrou placé sur les enregistrements lors de la modification.  

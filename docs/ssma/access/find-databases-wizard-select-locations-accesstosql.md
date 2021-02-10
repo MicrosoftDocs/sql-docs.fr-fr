@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 00b2d32a-998b-47a7-b25c-589b5bd6777a
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 1babfbf6364371cbd1f96b310f29416b84f2b031
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 9ab968b72ccffacb776985c8aa43b4210e98324a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91984945"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100044590"
 ---
 # <a name="find-databases-wizard-select-locations-accesstosql"></a>Assistant Rechercher des bases de données (sélectionner des emplacements) (AccessToSQL)
 Dans la page Sélectionner des emplacements de l’Assistant Rechercher des bases de données, vous entrez les paramètres de recherche pour la recherche des bases de données Access.  
@@ -40,7 +40,7 @@ Ajoute l’emplacement dans la zone de texte chemin d’accès à la liste des e
 **Replace**  
 Si un élément de la liste des emplacements est sélectionné, l’élément dans la zone de texte chemin d’accès remplace l’élément sélectionné.  
   
-**Remove**  
+**Supprimer**  
 Supprime l’élément sélectionné de la liste des emplacements dans lesquels effectuer la recherche.  
   
 **Tout ou partie du nom de fichier**  
@@ -56,7 +56,7 @@ Pour rechercher les bases de données qui ont été mises à jour pour la derni�
 Pour rechercher des bases de données qui correspondent à des critères de taille, sélectionnez un caractère de comparaison dans la première zone, entrez un nombre pour la taille, puis sélectionnez octets, kilo-octets ou mégaoctets dans la troisième zone.  
   
 **Propriétaire**  
-Entrez le nom d’utilisateur Windows complet du propriétaire. Celui-ci peut être formaté en tant qu’utilisateur de *domaine* \\ *user*.  
+Entrez le nom d’utilisateur Windows complet du propriétaire. Celui-ci peut être formaté en tant qu’utilisateur de *domaine* \\ .  
   
 ## <a name="see-also"></a>Voir aussi  
 [Ajout et suppression de fichiers de base de données Access](adding-and-removing-access-database-files-accesstosql.md)  
