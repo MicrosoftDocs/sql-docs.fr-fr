@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 4ac19647-73e7-4edf-9913-25c8fd927e36
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: fab3def044f0e8b250be717d63e9ed716db52ca0
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2961ae94d1818c5519493b4bb3f7325e8dd981eb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167848"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035469"
 ---
 # <a name="begintrans-committrans-and-rollbacktrans-methods-example-vc"></a>BeginTrans, CommitTrans et RollbackTrans, exemples de méthodes (VC + +)
-Cet exemple modifie le type de livre de tous les livres de psychologie dans la table ***titles** _ de la base de données. Une fois que la méthode [BeginTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) a démarré une transaction qui isole toutes les modifications apportées à la table _*_titles_*_ , la méthode [CommitTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) enregistre les modifications. Vous pouvez utiliser la méthode [Rollback](./begintrans-committrans-and-rollbacktrans-methods-ado.md) pour annuler les modifications que vous avez enregistrées à l’aide de la méthode [Update](./update-method.md) .  
+Cet exemple modifie le type de livre de tous les livres de psychologie dans la table ***titles** _ de la base de données. Une fois que la méthode [BeginTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) a démarré une transaction qui isole toutes les modifications apportées à la table _ *_titles_**, la méthode [CommitTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) enregistre les modifications. Vous pouvez utiliser la méthode [Rollback](./begintrans-committrans-and-rollbacktrans-methods-ado.md) pour annuler les modifications que vous avez enregistrées à l’aide de la méthode [Update](./update-method.md) .  
   
 ## <a name="example"></a>Exemple  
   
@@ -76,7 +76,7 @@ void BeginTransX() {
    // Define ADO object pointers, initialize pointers on define.  These are in the ADODB::  namespace.  
    _RecordsetPtr rstTitles = NULL;  
    _ConnectionPtr pConnection = NULL;  
-   char _ token1, * token2;  
+   char * token1, * token2;  
   
    // Define Other Variables  
    HRESULT hr = S_OK;    

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 6e3305a0-7bc7-40d1-9122-235c15d23ab2
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 70f91e85010abb784291c3c9eca52b9a74ed6286
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: b2b9294b3024a3d4a7dbfd51baadb2474b7715ee
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91721390"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036409"
 ---
 # <a name="rds-tutorial"></a>Tutoriel RDS
 Ce didacticiel illustre l’utilisation du modèle de programmation RDS pour interroger et mettre à jour une source de données. Tout d’abord, il décrit les étapes nécessaires à la réalisation de cette tâche. Le didacticiel est ensuite répété dans Microsoft® Visual Basic Scripting Edition (avec ADO for Windows Foundation classes (ADO/WFC)).  

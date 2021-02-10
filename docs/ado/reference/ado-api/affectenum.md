@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1ab921a0-6c57-43b4-9291-701b2599f3e8
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0a4f722e1ac4557ff5e2fb89d63c3d40f490c5b7
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 797baaaa554e75fa11287e2288f9a9ffc610b6be
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164856"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035619"
 ---
 # <a name="affectenum"></a>AffectEnum
 Spécifie les enregistrements qui sont affectés par une opération.  

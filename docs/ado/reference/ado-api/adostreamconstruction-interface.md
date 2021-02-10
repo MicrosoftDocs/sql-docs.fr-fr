@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 92f5a939-3e1a-4b14-a9dd-90e6ce2dec74
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1138d00d291ffdabf415177a948bf87b1c6502a8
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: a13cf110fe4b7bd13ad5ce69da23794f5e6d76f9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171587"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035639"
 ---
 # <a name="adostreamconstruction-interface"></a>ADOStreamConstruction, interface
 L’interface **ADOStreamConstruction** est utilisée pour construire un objet de **flux** ADO à partir d’un objet OLE DB **IStream** dans une application C/C++.  
@@ -66,7 +66,7 @@ adoStrConstruct->put_Stream(pUnk);
   
  L' `adoStr` objet résultant représente maintenant l’objet de **flux** ADO construit à partir de l’objet OLE DB **IStream** .  
   
-## <a name="requirements"></a>Conditions requises  
+## <a name="requirements"></a>Spécifications  
  **Version :** ADO 2,0 ou version ultérieure  
   
  **Bibliothèque :** msado15.dll  

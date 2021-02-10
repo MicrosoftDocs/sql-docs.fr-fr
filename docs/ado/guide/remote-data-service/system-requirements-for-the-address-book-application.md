@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: da385405-1c9a-478b-9bf6-fba70015324c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7edd6f3c383c1563122bff053e39a372dff264b3
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 0fa1eb879a536a2958184942c5d779ebb1c998b5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91722831"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036079"
 ---
 # <a name="system-requirements-for-the-address-book-application"></a>Configuration système exigée pour l’application Carnet d’adresses
 Pour configurer l’exemple d’application de carnet d’adresses, vous devez respecter les conditions suivantes relatives aux logiciels et aux bases de données :  

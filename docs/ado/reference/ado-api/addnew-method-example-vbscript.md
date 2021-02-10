@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: dcdcaf0a-b9b0-4d81-8728-43c38c4c853b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 28facc99df37a43629596d0668d40fe84b68ad82
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2ea65f762dcc1089c171f9c207a5f5af84fba04e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99161709"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035829"
 ---
 # <a name="addnew-method-example-vbscript"></a>AddNew, exemple de méthode (VBScript)
 Cet exemple utilise la méthode [AddNew](./addnew-method-ado.md) pour créer un nouvel enregistrement avec le nom spécifié.  

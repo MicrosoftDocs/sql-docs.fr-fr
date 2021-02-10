@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bff2c273-b535-4b32-83b3-0336a406859c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b21491e0135ba7710102832c694d7b980d0dd5d6
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 15243f6f5ae5ed49a2142f4953172007537805d2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164975"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035909"
 ---
 # <a name="actualsize-and-definedsize-properties-example-vb"></a>ActualSize et DefinedSize, exemple de propriétés (VB)
 Cet exemple utilise les propriétés [ActualSize](./actualsize-property-ado.md) et [DefinedSize](./definedsize-property.md) pour afficher la taille définie et la taille réelle d’un champ.  

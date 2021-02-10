@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 52d0a96c-14fb-4ad9-b004-4d821bc0a6db
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: efcb376c9ad27dff5a0c85d73f70ae4000385e3d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 318bb7478bdbc6f3b4007f788045438cdb91dfe3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99159238"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035919"
 ---
 # <a name="activeconnection-property-ado"></a>ActiveConnection, propriété (ADO)
 Indique à quel objet de [connexion](./connection-object-ado.md) la [commande](./command-object-ado.md), le [jeu d’enregistrements](./recordset-object-ado.md)ou l’objet d' [enregistrement](./record-object-ado.md) spécifiés appartiennent actuellement.  
@@ -41,7 +41,7 @@ Indique à quel objet de [connexion](./connection-object-ado.md) la [commande](.
   
  Si un objet de **connexion** est affecté à la propriété **ActiveConnection** , l’objet doit être ouvert. L’attribution d’un objet de connexion fermé provoque une erreur.  
   
-### <a name="note"></a>Notes  
+### <a name="note"></a>Remarque  
  **Visual Basic Microsoft** L’affectation de la valeur *Nothing* à la propriété **ActiveConnection** dissocie l’objet **Command** de la **connexion** actuelle et oblige le fournisseur à libérer toutes les ressources associées sur la source de données. Vous pouvez ensuite associer l’objet de **commande** à la même ou à un autre objet de **connexion** . Certains fournisseurs vous permettent de modifier le paramètre de propriété d’une **connexion** à une autre, sans devoir d’abord affecter la valeur *Nothing* à la propriété.  
   
  Si la collection [Parameters](./parameters-collection-ado.md) de l’objet **Command** contient des paramètres fournis par le fournisseur, la collection est effacée si vous définissez la propriété **ActiveConnection** sur *Nothing* ou sur un autre objet **Connection** . Si vous créez manuellement des objets de [paramètre](./parameter-object.md) et que vous les utilisez pour remplir la collection de **paramètres** de l’objet de **commande** , la définition de la propriété **ActiveConnection** sur *Nothing* ou sur un autre objet de **connexion** laisse la collection **Parameters** intacte.  

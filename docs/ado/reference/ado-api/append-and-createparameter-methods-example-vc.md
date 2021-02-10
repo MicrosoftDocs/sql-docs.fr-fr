@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b57d144c-0a34-49c8-94cf-e5981edfcca6
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d07db05ed457f52616fa78e6c354c944719aff0f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 390f53742ea486d6d1cfe159c3c1e897f51a4766
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164852"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035629"
 ---
 # <a name="append-and-createparameter-methods-example-vc"></a>Append et CreateParameter, exemples de méthodes (VC + +)
 Cet exemple utilise les méthodes [Append](./append-method-ado.md) et [CreateParameter](./createparameter-method-ado.md) pour exécuter une procédure stockée avec un paramètre d’entrée.  

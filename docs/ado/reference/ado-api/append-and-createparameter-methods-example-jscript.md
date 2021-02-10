@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 37000833-68f4-45f1-b2dd-7f75893d09d9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1019f063f54605f2d3b5ce4acf61cf95f4cb110f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8021ea8cfbad143f228c940fa6ee4a7266ecbd1a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171575"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035649"
 ---
 # <a name="append-and-createparameter-methods-example-jscript"></a>Append et CreateParameter, exemple de méthodes (JScript)
 Cet exemple utilise les méthodes [Append](./append-method-ado.md) et [CreateParameter](./createparameter-method-ado.md) pour exécuter une procédure stockée avec un paramètre d’entrée. Coupez et collez le code suivant dans le bloc-notes ou dans un autre éditeur de texte, puis enregistrez-le en tant que **AppendJS. asp**.  

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 409b3f8b-0ced-4867-acbe-b245dcdf6702
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0550e12f67538e9872797031146a34c83a0ec87f
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 8e36c60e0c3e56ab0c159c362e98c2280e6c5426
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91721360"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036389"
 ---
 # <a name="running-the-address-book-sql-script"></a>Exécution du script SQL Carnet d’adresses
 > [!IMPORTANT]
@@ -67,7 +67,7 @@ ms.locfileid: "91721360"
   
 6.  Cliquez sur le bouton **exécuter la requête** (flèche verte dans la barre d’outils) ou sur **F5**.  
   
-7.  Après l’exécution, fermez la **requête**, l' **Analyseur de requêtes**et les fenêtres **Enterprise Manager** .  
+7.  Après l’exécution, fermez la **requête**, l' **Analyseur de requêtes** et les fenêtres **Enterprise Manager** .  
   
 ## <a name="see-also"></a>Voir aussi  
  [Exécution de l’exemple d’application Carnet d’adresses](./running-the-address-book-sample-application.md)

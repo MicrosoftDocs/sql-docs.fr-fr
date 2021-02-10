@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 5aaada64-5115-4adc-8668-827348f32566
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6593c39b91123a5189bad9dc86e93aa382085312
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 200bb6b7b87d5c63a2d6c1881a4df5e2aa5b19c1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99159952"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036019"
 ---
 # <a name="absolutepage-pagecount-and-pagesize-properties-example-vb"></a>AbsolutePage, PageCount et PageSize, propriétés, exemple (VB)
 ```  

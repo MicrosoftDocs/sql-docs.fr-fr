@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 55d273c4-ccee-48ef-ba90-8893d04313c8
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ae708c5acfc6cdfb56acef5e2862ed0883eab285
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 1b1df8ab6cd76425115a1c13f259ac6ac1399216
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164765"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035509"
 ---
 # <a name="bookmarkenum"></a>BookmarkEnum
 Spécifie un signet indiquant où l’opération doit commencer.  

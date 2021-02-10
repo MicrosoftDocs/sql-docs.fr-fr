@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: d02b199e-1e52-4cc9-b118-750952ae7f63
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e4e707145ce3724706a813afc886b3438a51e3e9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: a677295d6ff070d27cfbaef445314d4dbad3074a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99161621"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035739"
 ---
 # <a name="ado-for-visual-c-syntax-index-for-com"></a>Index de la syntaxe ADO pour Visual C++ pour COM
 Cet index est une référence croisée à la référence du langage ADO basée sur Microsoft Visual C++.  

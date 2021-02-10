@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1152893e-b617-40f1-88b6-81e82e2234f1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8d1281cc6f900c43ff568d70f7885277f7df89f0
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: aa11129824efaa5af4f244e34a5719a9a62ee2e6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164959"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035809"
 ---
 # <a name="ado-code-examples-in-visual-basic"></a>Exemples de code ADO dans Visual Basic
 Utilisez les exemples de code suivants pour apprendre à utiliser les méthodes, propriétés et événements ADO lors de l’écriture dans Visual Basic.  

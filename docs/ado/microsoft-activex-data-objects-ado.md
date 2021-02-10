@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 2fa6237b-44b8-4b6c-9952-5acd80a54e20
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a63b254397e45fdba56f3d86cdcf45069f9265fb
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 511b556971496633abd6d347ab416b75a8f9f27c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91721240"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036039"
 ---
 # <a name="microsoft-activex-data-objects-ado"></a>Microsoft ActiveX Data Objects (ADO)
 

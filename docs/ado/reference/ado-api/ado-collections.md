@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: b5e1d26d-b41d-4e35-8c7c-972426473dfb
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: fdab5e24244bc3b4f3bcf90a8401fb34a31f95bc
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: a3eb7878ff0875b916606732ad11dc67a961e269
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164936"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035769"
 ---
 # <a name="ado-collections"></a>Collections ADO
 Les relations entre ces collections et les objets ADO sont représentées dans le [modèle objet ADO](./ado-object-model.md).  

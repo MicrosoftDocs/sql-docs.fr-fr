@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 0ac0d1a7-6c7a-4f4c-b115-428935e0f98b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: bdacd558161c09d1d43f590f9f355e14da262b14
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f29b56b54c2800a77ac76134f0c946f09e34a621
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164891"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035719"
 ---
 # <a name="ado-properties"></a>Propriétés ADO
 
@@ -79,7 +79,7 @@ ms.locfileid: "99164891"
 |[Fournisseur](./provider-property-ado.md)|Indique le nom du fournisseur pour un objet de **connexion** .|  
 |[RecordCount](./recordcount-property-ado.md)|Indique le nombre d’enregistrements dans un objet **Recordset** .|  
 |[RecordType](./recordtype-property-ado.md)|Indique le type d’objet d' **enregistrement** .|  
-|[Ligne](./row-property-ado.md)|Obtient ou définit un objet OLE DB **ligne** à partir de/sur un objet **ADORecordConstruction** .|  
+|[Haut](./row-property-ado.md)|Obtient ou définit un objet OLE DB **ligne** à partir de/sur un objet **ADORecordConstruction** .|  
 |[RowPosition](./rowposition-property-ado.md)|Obtient ou définit un objet **RowPosition** OLE DB à partir de/sur un objet **ADORecordsetConstruction** .|  
 |[Ensemble de lignes](./rowset-property-ado.md)|Obtient ou définit un objet d' **ensemble de lignes** OLE DB à partir de/sur un objet **ADORecordsetConstruction** .|  
 |[Source (erreur ADO)](./source-property-ado-error.md)|Indique le nom de l’objet ou de l’application qui a généré à l’origine une erreur.|  

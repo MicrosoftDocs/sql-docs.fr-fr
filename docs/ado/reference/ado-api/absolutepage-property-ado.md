@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ddb58a35-ec3a-423c-a504-3c65e62c23d4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 781d20047b170ec5f3d1fc480d65cfc684735f84
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 5f5b8019bedb2273c15ee3362f7fd3cb9688308e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99161027"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035973"
 ---
 # <a name="absolutepage-property-ado"></a>AbsolutePage, propriété (ADO)
 Indique sur quelle page se trouve l’enregistrement en cours.  

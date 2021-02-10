@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e9032ad8-d14c-42e3-ba13-cb5f00084a79
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: fc5e30aef0162ecc2ffe9016e14fdfa36644aca5
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 76f3311a622abbd249aa942e1ebdbda33ad06966
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724880"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036419"
 ---
 # <a name="registering-a-custom-business-object"></a>Inscription d’un objet métier personnalisé
 Pour lancer correctement un objet métier personnalisé (. dll ou. exe) par le biais du serveur Web, vous devez entrer le ProgID de l’objet métier dans le registre, comme expliqué dans cette procédure. Cette fonctionnalité RDS protège la sécurité de votre serveur Web en exécutant uniquement les exécutables approuvés.  
@@ -37,7 +37,7 @@ Pour lancer correctement un objet métier personnalisé (. dll ou. exe) par le b
   
 2.  Tapez **regedit** et cliquez sur **OK**.  
   
-3.  Dans l’éditeur du Registre, accédez à la clé de Registre **HKEY_LOCAL_MACHINE \system\currentcontrolset\services\w3svc\parameters\adclaunch** .  
+3.  Dans l’éditeur du Registre, accédez à la clé de Registre **HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\W3SVC\Parameters\ADCLaunch** .  
   
 4.  Sélectionnez la clé **ADCLaunch** , puis dans le menu **Edition**, pointez sur **nouveau** , puis cliquez sur **clé**.  
   

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 8269ea29-912a-4d20-9360-f48b3746081f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 43678b66ed4d1abb32125f00c72b06d92ce59257
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8c24e6eb9df9dd878252682711103682d7578d74
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99161001"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035939"
 ---
 # <a name="activecommand-property-example-vc"></a>ActiveCommand, exemple de propriété (VC++)
 Cet exemple illustre la propriété [ActiveCommand](./activecommand-property-ado.md) .  

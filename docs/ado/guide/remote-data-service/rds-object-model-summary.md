@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 909f9af7-31db-4eec-ad52-650ce74dac2f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 456bfdf7e41b10c4a42708eabb21b485de463ca7
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 67f6cdaeea36e5ed13e28a7674a0bb4b3d6ef3f2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91721420"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036459"
 ---
 # <a name="rds-object-model-summary"></a>Résumé du modèle objet RDS
 > [!IMPORTANT]

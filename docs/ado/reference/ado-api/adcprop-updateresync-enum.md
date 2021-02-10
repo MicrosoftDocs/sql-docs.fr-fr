@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bc9e1a37-e969-47e9-8382-0bbfffa2034f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ca1583203ced1f1ce8ed54f7624d21d7b4cfa482
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ec0ef44d25f76e701142aa1c81077de2a93d27d7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99161750"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035869"
 ---
 # <a name="adcprop_updateresync_enum"></a>ADCPROP_UPDATERESYNC_ENUM
 Spécifie si la méthode [UpdateBatch](./updatebatch-method.md) est suivie d’une opération de méthode de [resynchronisation](./resync-method.md) implicite et, le cas échéant, de l’étendue de cette opération.  

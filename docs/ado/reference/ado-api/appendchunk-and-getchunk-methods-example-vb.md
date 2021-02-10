@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c07862b5-e466-46bd-910b-59ac96709cb9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e43133695928fecf3860805dcf620ddeabfed1d5
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2e7883597e0a2872b16d37ae60881af6de3c2159
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171567"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100035609"
 ---
 # <a name="appendchunk-and-getchunk-methods-example-vb"></a>AppendChunk et GetChunk, exemple de méthodes (VB)
 Cet exemple utilise les méthodes [AppendChunk](./appendchunk-method-ado.md) et [GetChunk](./getchunk-method-ado.md) pour remplir un champ d’image avec les données d’un autre enregistrement.  
