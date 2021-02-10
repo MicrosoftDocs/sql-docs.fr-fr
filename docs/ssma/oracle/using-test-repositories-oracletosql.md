@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: f941cce4-d3e3-4aeb-a88a-4f101a97a9f4
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 6b070a45c7990efbb598401b241083fcb2d804f5
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: f73dd1aabecee8625ace5cc4af0d342124306815
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92035138"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100063454"
 ---
 # <a name="using-test-repositories-oracletosql"></a>Utilisation de référentiels de tests (OracleToSQL)
 Le référentiel de test SSMA stocke les cas de test et les résultats des tests SSMA tester pour une utilisation ultérieure. Les données de référentiel sont enregistrées dans les tables SQL Server **TestCaseRepository** et **RunTestCaseResultRepository** dans le schéma **ssma_oracle_utilities** de la base de données **ssmatesterdb** .  

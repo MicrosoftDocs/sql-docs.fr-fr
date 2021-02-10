@@ -29,12 +29,12 @@ helpviewer_keywords:
 ms.assetid: e449de20-d6ca-4902-9f8e-814eb6e86650
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 56b1a2e50f26da8ce5ef581f8eda7c6a96afd741
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ea801de44e1fce175ac549402e17b9fcc2e9f020
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88449111"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100061124"
 ---
 # <a name="support-for-rules-triggers-default-values-and-stored-procedures-visual-foxpro-odbc-driver"></a>Prise en charge des règles, des déclencheurs, des valeurs par défaut et des procédures stockées (pilote ODBC Visual FoxPro)
 Vous ne pouvez pas créer des règles, des déclencheurs, des valeurs par défaut ou des procédures stockées Visual FoxPro à l’aide du pilote ODBC Visual FoxPro. Toutefois, votre application peut interagir avec les règles, les déclencheurs, les valeurs par défaut ou les procédures stockées existants lors de l’insertion, de la mise à jour ou de la suppression de données Visual FoxPro stockées dans une base de données.  
@@ -199,8 +199,8 @@ Vous ne pouvez pas créer des règles, des déclencheurs, des valeurs par défau
     :::column-end:::
     :::column:::
         Commande DO  
-        CASSE... Commande ENDCASE  
-        DO WHILE... Commande ENDDO  
+        CASSE... Commande ENDCASE  
+        DO WHILE... Commande ENDDO  
         Fonction DOW ()  
         DTOC () (fonction)  
         Fonction DTOR ()  
@@ -243,7 +243,7 @@ Vous ne pouvez pas créer des règles, des déclencheurs, des valeurs par défau
         FLOOR (), fonction  
         FLUSH (commande)  
         Fonction FOR ()  
-        POUR... Commande ENDFOR  
+        POUR... Commande ENDFOR  
         Fonction FOUND ()  
     :::column-end:::
     :::column:::
@@ -290,7 +290,7 @@ Vous ne pouvez pas créer des règles, des déclencheurs, des valeurs par défau
 :::row:::
     :::column:::
         IDXCOLLATE () (fonction)  
-        IF... Commande ENDIF  
+        IF... Commande ENDIF  
         Fonction IIF ()  
         INDBC () (fonction)  
         INDEX, commande  
@@ -473,7 +473,7 @@ Vous ne pouvez pas créer des règles, des déclencheurs, des valeurs par défau
 
 :::row:::
     :::column:::
-        RECHERCHER... Commande ENDSCAN  
+        RECHERCHER... Commande ENDSCAN  
         Commande nuages de points  
         Fonction SEC ()  
         Fonction SECONDS ()  

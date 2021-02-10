@@ -11,12 +11,12 @@ ms.assetid: a63e4112-4b5d-4b7a-a5c2-06a24e86ab1b
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 3dc9c6cb4032b1aa5dc101f102b412d3ace10554
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 54aa1d29a3452c7464fa46b68865c22638e5e4ae
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88320525"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100063484"
 ---
 # <a name="global-settings-editor-oracletosql"></a>Paramètres globaux (Éditeur) (OracleToSQL)
 Utilisez la page éditeur de la boîte de dialogue **paramètres globaux** pour spécifier les paramètres des fenêtres de l’éditeur de code.  

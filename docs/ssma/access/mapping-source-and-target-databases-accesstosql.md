@@ -18,18 +18,18 @@ helpviewer_keywords:
 ms.assetid: 69bee937-7b2c-49ee-8866-7518c683fad4
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 9e07c42e272728943f30198c8800c86aaa9443e3
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: 966ec1472737f0e4d67615d4e7eb65df01a52cf4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87938125"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100059043"
 ---
 # <a name="mapping-source-and-target-databases-accesstosql"></a>Mappage des bases de données source et cible (AccessToSQL)
 Lorsque vous vous connectez à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure, vous devez spécifier une base de données cible pour la migration. Si vous disposez de plusieurs bases de données Access, vous pouvez les mapper à plusieurs [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] bases de données (ou schémas) ou à plusieurs schémas sous le Azure SQL Database connecté.  
   
 ## <a name="sql-server-or-azure-sql-database-schemas"></a>Schémas de SQL Server ou de Azure SQL Database  
-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]les bases de données utilisent le concept de schéma pour séparer les objets d’une base de données en groupes logiques. Par exemple, une base de données de bibliothèque peut utiliser trois schémas nommés **livres**, **audio**et **vidéo** pour séparer les objets de livre, audio et vidéo les uns des autres. Par défaut, la base de données Access est mappée à la base de données **Master** et au schéma **dbo** dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et à la base de données connectée et au schéma **dbo** dans SQL Azure.  
+[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] les bases de données utilisent le concept de schéma pour séparer les objets d’une base de données en groupes logiques. Par exemple, une base de données de bibliothèque peut utiliser trois schémas nommés **livres**, **audio** et **vidéo** pour séparer les objets de livre, audio et vidéo les uns des autres. Par défaut, la base de données Access est mappée à la base de données **Master** et au schéma **dbo** dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et à la base de données connectée et au schéma **dbo** dans SQL Azure.  
   
 À moins que vous ne personnalisiez le mappage entre chaque base de données Access et la [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] base de données et le schéma, SSMA migre tous les schémas et données associés à la base de données Access vers la base de données par défaut mappée.  
   

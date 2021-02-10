@@ -20,12 +20,12 @@ ms.author: negust
 ms.reviewer: dphansen
 manager: cgronlun
 monikerRange: '>=sql-server-ver15'
-ms.openlocfilehash: f283066ac99b4ef41b0fc6d46fc7b1a2a64b1270
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8fe1a38d24306d697dd0ebfbd9dbf79502ab94c9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99203781"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100061598"
 ---
 # <a name="sysexternal_language_files-transact-sql"></a>sys.external_language_files (Transact-SQL)
 [!INCLUDE[SQL Server 2019](../../includes/applies-to-version/sqlserver2019.md)]
@@ -48,7 +48,7 @@ L’affichage catalogue sys.external_language_files répertorie une ligne pour c
 |parameters|nvarchar(4000)|Prameters de langage externe|
 |environment_variables |nvarchar(4000)|Variables d’environnement de langage externe|
 
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir également  
 
 + [sys.external_languages](sys-external-languages-transact-sql.md)  
 + [CRÉER UNE LANGUE EXTERNE](../../t-sql/statements/create-external-language-transact-sql.md)  

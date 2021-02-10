@@ -21,12 +21,12 @@ ms.assetid: 0f782d2f-7126-46ab-85b7-bcba44862231
 author: shkale-msft
 ms.author: shkale
 monikerRange: '>=sql-server-2017||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 0138fea256558ee3cf57766462452452dfaa7c16
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 043378ceafd2e3fba906c38e421afd2e18cba7a6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99203897"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100065064"
 ---
 # <a name="sysedge_constraint_clauses-transact-sql"></a>sys.edge_constraint_clauses (Transact-SQL)
 [!INCLUDE[sqlserver2019](../../includes/applies-to-version/sqlserver2019.md)]

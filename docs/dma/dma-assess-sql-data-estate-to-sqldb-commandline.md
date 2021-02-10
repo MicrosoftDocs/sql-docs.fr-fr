@@ -15,12 +15,12 @@ ms.assetid: ''
 author: rajeshsetlem
 ms.author: rajpo
 ms.custom: ''
-ms.openlocfilehash: 35465a761258fb5a7865e711e2809d740b9b9fee
-ms.sourcegitcommit: d35d0901296580bfceda6e0ab2e14cf2b7e99a0f
+ms.openlocfilehash: 8688fa61a1ccaede3bd370e1d19ccd66531f5739
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92496812"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100060934"
 ---
 # <a name="dmacmd-assess-readiness-of-a-sql-server-data-estate-migrating-to-azure-sql"></a>DMACMD : évaluer la préparation d’un SQL Server de données migration vers Azure SQL 
 
@@ -40,7 +40,7 @@ Pour plus d’informations, consultez la vidéo channel9 suivante :
 Pour utiliser DMACMD pour effectuer une évaluation et charger les résultats dans Azure Migrate Hub, vous avez besoin des éléments suivants : 
 
 - La [dernière version de Assistant Migration de données (DMA)](https://www.microsoft.com/en-us/download/details.aspx?id=53595).
-- [Projet Azure Migrate](dma-assess-sql-data-estate-to-sqldb.md#create-a-project-and-add-a-tool). 
+- [Projet Azure Migrate](dma-assess-sql-data-estate-to-sqldb.md#create-a-project-and-add-a-tool) 
 - Accès au rôle collaborateur pour la ressource de projet Azure Migrate.
 
 ## <a name="use-dmacmd"></a>Utiliser DMACMD
@@ -89,7 +89,7 @@ Le contenu de l’exemple `Assess-for-AzureSQLMI.xml` définit les éléments po
 Les éléments XML qui sont passés à DMACMD sont définis dans le tableau suivant : 
 
 
-|**Élément XML** |**Définition**  |
+|**Élément XML** |**Definition**  |
 |---------|---------|
 |`AssessmentName`|Nom de l’évaluation|
 |`AssessmentSourcePlatform`|Plateforme de SQL Server source. La valeur par défaut est `SqlOnPrem`.|
@@ -139,7 +139,7 @@ Tenez compte des meilleures pratiques suivantes lors de l’utilisation de DMACM
 - Le temps nécessaire à l’exécution d’une évaluation dépend du nombre d’objets de base de données. Si possible, évitez d’exécuter des évaluations sur le système de production et de décharger à la place un ordinateur virtuel ou un serveur intermédiaire, en particulier pour les bases de données avec un grand nombre d’objets. 
 
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 * [Assistant Migration de données (DMA)](../dma/dma-overview.md)
 * [Assistant Migration de données : paramètres de configuration](../dma/dma-configurationsettings.md)

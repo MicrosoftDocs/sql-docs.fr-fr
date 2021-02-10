@@ -11,12 +11,12 @@ ms.assetid: 62e2d30f-a73f-42d9-a6ab-3510a8198f4e
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 0606e20611d9857b3ee258504143e013f15b4996
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4abc53d2b47cac620b116fa760e15281aaa4ead7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88320335"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100063804"
 ---
 # <a name="new-gui-features-in-ssma-for-oracle-oracletosql"></a>Nouvelles fonctionnalités de l’interface graphique utilisateur de SSMA pour Oracle (OracleToSQL)
 Ce chapitre décrit les nouvelles fonctionnalités de l’interface utilisateur SSMA.  

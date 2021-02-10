@@ -10,12 +10,12 @@ ms.technology: ssma
 ms.topic: conceptual
 ms.assetid: 524f95ef-10bd-497c-84ca-c06a0ae794fb
 ms.author: alexiva
-ms.openlocfilehash: 72c6797bfc8d673069cab41002a4a93596d7e5d9
-ms.sourcegitcommit: e572f1642f588b8c4c75bc9ea6adf4ccd48a353b
+ms.openlocfilehash: 8d43e6a48746fbb1587327b430b67c6959731013
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "84779411"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100064094"
 ---
 # <a name="connect-to-sybase-sybasetosql"></a>Se connecter à Sybase (SybaseToSQL)
 
@@ -56,7 +56,7 @@ Les chaînes de connexion se composent de paires nom de paramètre/valeur. Les n
    |-----------|-------------------------|-----------------------|
    |Nom du serveur|Nom du serveur|Serveur|
    |Port|Adresse du port du serveur|Port|
-   |Nom d'utilisateur|ID d'utilisateur|ID d'utilisateur|
+   |Nom d'utilisateur|ID utilisateur|ID utilisateur|
    |Mot de passe|Mot de passe|Mot de passe|
    |Fournisseur|Fournisseur|Fournisseur|
 

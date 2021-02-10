@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 9ae780dc-b33f-4861-a996-176bae9e7211
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: fc847eecec3f84cda54e2820a444036a016ec9a8
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: d8f2dff81302c644a244a451f314026d29119cbd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87935268"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100062814"
 ---
 # <a name="menu-commands-and-other-shortcut-keys-mysqltosql"></a>Commandes de menu et autres touches de raccourci (MySQLToSQL)
 Les sections suivantes décrivent les raccourcis clavier permettant d’accéder aux commandes de menu et autres touches de raccourci utilisées dans les différentes boîtes de dialogue de l’application SSMA pour MySQL.  

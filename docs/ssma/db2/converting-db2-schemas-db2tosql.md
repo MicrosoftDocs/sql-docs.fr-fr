@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 7947efc3-ca86-4ec5-87ce-7603059c75a0
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: b506f7ae063964bc1667b4425028cd35fbc9c91e
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: af91274d4e48ce99894316c730a58d68fd633242
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91985099"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100062874"
 ---
 # <a name="converting-db2-schemas-db2tosql"></a>Conversion de schémas DB2 (DB2ToSQL)
 Après vous être connecté à DB2, connecté à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , et définir les options de mappage de données et de projet, vous pouvez convertir les objets de base de données DB2 en [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] objets de base de données.  

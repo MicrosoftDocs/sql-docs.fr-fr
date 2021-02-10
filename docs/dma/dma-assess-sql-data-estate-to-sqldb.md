@@ -15,12 +15,12 @@ ms.assetid: ''
 author: rajeshsetlem
 ms.author: rajpo
 ms.custom: seo-lt-2019
-ms.openlocfilehash: c6e5a3878011de396568c4649ea5575635e96aec
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: 4c59fb5228ef46a693e343716d1e58e56c042a53
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489553"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100061554"
 ---
 # <a name="assess-the-readiness-of-a-sql-server-data-estate-migrating-to-azure-sql-database-using-the-data-migration-assistant"></a>Évaluer la préparation d’un SQL Server de données qui migrent vers Azure SQL Database à l’aide de la Assistant Migration de données
 
@@ -101,7 +101,7 @@ Une fois que vous avez créé un projet de migration, sous **Outils d’évaluat
 
     Si vous effectuez la mise à niveau de votre instance locale de SQL Server vers une version ultérieure de SQL Server ou vers SQL Server hébergé sur une machine virtuelle Azure, définissez le type de serveur source et cible sur **SQL Server**. Définissez le type de serveur cible sur **Azure SQL Managed instance** pour une évaluation de la disponibilité cible du Azure SQL Database (PaaS).
 
-3. Sélectionnez **Créer**.
+3. Sélectionnez **Create** (Créer).
 
    ![Interface Azure Migrate Assistant Migration de données](../dma/media//dma-assess-sql-data-estate-to-sqldb/dms-dma-interface.png)
 
@@ -178,7 +178,7 @@ Une fois que vous avez créé un projet de migration, sous **Outils d’évaluat
 
    ![Azure Migrate-examiner les bloqueurs de migration](../dma/media//dma-assess-sql-data-estate-to-sqldb/dms-azure-migrate-migration-blockers.png)
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 * [Assistant Migration de données (DMA)](../dma/dma-overview.md)
 * [Assistant Migration de données : paramètres de configuration](../dma/dma-configurationsettings.md)

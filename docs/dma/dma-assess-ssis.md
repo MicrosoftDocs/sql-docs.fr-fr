@@ -14,12 +14,12 @@ ms.assetid: ''
 author: chugugrace
 ms.author: chugu
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 20f216b920eb16651ca0d06a6b8090e431f8c592
-ms.sourcegitcommit: fb8724fb99c46ecf3a6d7b02a743af9b590402f0
+ms.openlocfilehash: a893ad7e086abfdf0cc61c785ad6d93c3eeed184
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92439403"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100061524"
 ---
 # <a name="perform-a-sql-server-integration-service-migration-assessment-with-data-migration-assistant"></a>Effectuer une évaluation de la migration du service d’intégration SQL Server avec Assistant Migration de données
 
@@ -42,7 +42,7 @@ Les instructions pas à pas suivantes vous aident à effectuer la première éva
 
 1. Définissez le type de serveur source et cible.
 
-    Sélectionnez la source en tant que **SQL Server**et définissez le type de serveur cible sur **Azure SQL Database** ou sur **Azure SQL Managed instance**.
+    Sélectionnez la source en tant que **SQL Server** et définissez le type de serveur cible sur **Azure SQL Database** ou sur **Azure SQL Managed instance**.
 
 1. Cliquez sur **Créer**.
 

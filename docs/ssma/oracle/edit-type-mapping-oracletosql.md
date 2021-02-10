@@ -11,12 +11,12 @@ ms.assetid: 7078b4ed-c779-4bf3-8db8-f9dcb3edd50f
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 7b90da225116a2221d5a2492e1b7e5bfdc33ab91
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 79da4985cef777225cbf805c103c782b512e2d5b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492382"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100058644"
 ---
 # <a name="edit-type-mapping-oracletosql"></a>Modifier le mappage de type (OracleToSQL)
 La boîte de dialogue **modifier le mappage de type** vous permet de spécifier la manière dont les types sont mappés entre les objets de base de données source et de destination.  

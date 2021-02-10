@@ -10,12 +10,12 @@ ms.technology: ssma
 ms.topic: conceptual
 ms.assetid: 23a48cb6-ff30-49bb-b4a7-603ebcab336f
 ms.author: alexiva
-ms.openlocfilehash: 8e13b9ea8bcd264d1668cf0979dc2956bd11bef7
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 2eb44fa569048fe9e668a210ab97e66d1c8a8b55
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596718"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100058594"
 ---
 # <a name="connect-to-oracle-oracletosql"></a>Se connecter à Oracle (OracleToSQL)
 

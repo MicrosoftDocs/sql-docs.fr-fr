@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: b099d0f9-dd37-4c87-8b6f-ed0177881ea4
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 3069d1cff693ead8a6acf3af7f9644c4a3d6ab43
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 1d6fa64888898221ced921a2306278b7c4503fc7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988665"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100058914"
 ---
 # <a name="managing-passwords-accesstosql"></a>Gestion des mots de passe (AccessToSQL)
 Cette section concerne la sécurisation des mots de passe de base de données et la procédure d’importation ou d’exportation sur plusieurs serveurs :  

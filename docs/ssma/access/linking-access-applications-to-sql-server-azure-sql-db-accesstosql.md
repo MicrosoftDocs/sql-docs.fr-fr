@@ -24,12 +24,12 @@ ms.assetid: 82374ad2-7737-4164-a489-13261ba393d4
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: d19ed1ddfa2c64b653c02d887b9605ea132ae1bc
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: 53fbbd5a865594f46eacb75c9799b9c956efb2da
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87938401"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100059034"
 ---
 # <a name="linking-access-applications-to-sql-server---azure-sql-database-accesstosql"></a>Liaison d’applications Access à des Azure SQL Database SQL Server (AccessToSQL)
 Si vous souhaitez utiliser vos applications Access existantes avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vous pouvez lier vos tables Access d’origine aux tables migrées [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure. La liaison modifie votre base de données Access afin que vos requêtes, formulaires, rapports et pages d’accès aux données utilisent les données de la [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Azure SQL Database ou au lieu des données de votre base de données Access.  
@@ -49,7 +49,7 @@ Lorsque vous liez une table Access à une [!INCLUDE[ssNoVersion](../../includes/
   
 2.  Cliquez avec le bouton droit sur **tables**, puis sélectionnez **lier**.  
   
-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Assistant Migration (SSMA) pour Access sauvegarde la table Access d’origine et crée une table liée.  
+[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Assistant Migration (SSMA) pour Access sauvegarde la table Access d’origine et crée une table liée.  
   
 Une fois que vous avez lié les tables, les tables de SSMA apparaissent avec une petite icône de lien. Dans Access, les tables apparaissent avec une icône « liée », qui est un globe avec une flèche pointant vers celle-ci.  
   
@@ -147,13 +147,13 @@ Recordset.LastModified
 ### <a name="hyperlink-functionality-is-lost-after-migrating-data"></a>La fonctionnalité de lien hypertexte est perdue après la migration des données  
 **Cause :** Après la migration des données, les liens hypertexte dans les colonnes perdent leur fonctionnalité et deviennent des colonnes **nvarchar (max)** simples.  
   
-**Résolution :** Aucune.  
+**Résolution :** Aucun.  
   
 ### <a name="some-sql-server-data-types-are-not-supported-by-access"></a>Certains types de données SQL Server ne sont pas pris en charge par Access  
 **Cause :** Si, par la suite, vous mettez à jour vos [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tables ou SQL Azure pour qu’elles contiennent des types de données qui ne sont pas pris en charge par Access, vous ne pouvez pas ouvrir la table dans Access.  
   
 **Résolution :** Vous pouvez définir une requête Access qui ne retourne que les lignes avec des types de données pris en charge.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir également  
 [Migration de bases de données Access vers SQL Server](migrating-access-databases-to-sql-server-azure-sql-db-accesstosql.md)  
   

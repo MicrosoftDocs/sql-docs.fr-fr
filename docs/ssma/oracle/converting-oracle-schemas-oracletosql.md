@@ -13,12 +13,12 @@ ms.assetid: e021182d-31da-443d-b110-937f5db27272
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 907c04d8acd0859b71d1b31d2839c23d5e4b85e8
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: 8e2ee101ec916a920d4b72d924456a52850e8bc7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87935060"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100058754"
 ---
 # <a name="converting-oracle-schemas-oracletosql"></a>Conversion de schémas Oracle (OracleToSQL)
 Après vous être connecté à Oracle, connecté à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , et définir les options de mappage de données et de projet, vous pouvez convertir des objets de base de données Oracle en [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] objets de base de données.  

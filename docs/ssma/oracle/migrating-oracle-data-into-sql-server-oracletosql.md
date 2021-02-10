@@ -14,12 +14,12 @@ ms.assetid: e23c5268-41ed-4e55-9fe7-a11376202a13
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 5b22dfee8112beb7419408dfc8a3dcadf53c631d
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: a63fcd49d37e47485ed82c3b75514b5c1b7d48cd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92035162"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100063324"
 ---
 # <a name="migrating-oracle-data-into-sql-server-oracletosql"></a>Migration de données Oracle dans SQL Server (OracleToSQL)
 Une fois que vous avez correctement synchronisé les objets convertis avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vous pouvez migrer des données d’Oracle vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  

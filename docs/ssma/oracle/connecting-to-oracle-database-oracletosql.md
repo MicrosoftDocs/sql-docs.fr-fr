@@ -12,12 +12,12 @@ helpviewer_keywords:
 - Refreshing Oracle Metadata
 ms.assetid: e276cdbf-3ebc-4ba8-b40d-a7a42befa2b6
 ms.author: alexiva
-ms.openlocfilehash: d6fc63d62e9761f167eb70165c6f9324f56253a8
-ms.sourcegitcommit: 38639b67a135ca1a50a8e38fa61a089efe90e3f1
+ms.openlocfilehash: 4354a4e2726151177c48c27ce37a74e5b4ac335e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "84454532"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100058795"
 ---
 # <a name="connecting-to-oracle-database-oracletosql"></a>Connexion à Oracle Database (OracleToSQL)
 
@@ -97,7 +97,7 @@ Lorsque vous vous connectez à une base de données, SSMA lit les métadonnées 
   
 2. Dans la zone **fournisseur** , sélectionnez **fournisseur client Oracle** ou **fournisseur OLE DB**, selon le fournisseur installé. La valeur par défaut est client Oracle.
 
-3. Dans la zone **mode** , sélectionnez mode **standard**, **mode TNSNAME**ou **mode chaîne de connexion**.  
+3. Dans la zone **mode** , sélectionnez mode **standard**, **mode TNSNAME** ou **mode chaîne de connexion**.  
    Utilisez le mode standard pour spécifier le nom du serveur et le port. Utilisez le mode nom du service pour spécifier le nom du service Oracle manuellement. Utilisez le mode chaîne de connexion pour fournir une chaîne de connexion complète.
 
 4. Si vous sélectionnez le **mode standard**, indiquez les valeurs suivantes :
@@ -154,6 +154,6 @@ Les métadonnées relatives à la base de données Oracle ne sont pas automatiqu
 
 L’étape suivante du processus de migration consiste à [se connecter à une instance de SQL Server](connecting-to-sql-server-oracletosql.md).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 [Migration de bases de données Oracle vers SQL Server &#40;OracleToSQL&#41;](../../ssma/oracle/migrating-oracle-databases-to-sql-server-oracletosql.md)

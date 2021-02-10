@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 15088dbe-896f-4296-b397-02bb3d0ac0fb
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 67c14205590ccdf9d20a30f44c13aa2da5abbe8d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 9bb65299be2778897b72303cccb99043a3b01406
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99212571"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100061104"
 ---
 # <a name="appendix-b-odbc-state-transition-tables"></a>Annexe B : Tableaux des transitions d’état ODBC
 Les tableaux de cette annexe montrent comment les fonctions ODBC entraînent des transitions entre les États de l’environnement, de la connexion, de l’instruction et du descripteur. L’état de l’environnement, de la connexion, de l’instruction ou du descripteur dicte généralement le moment où les fonctions qui utilisent le type de handle correspondant (environnement, connexion, instruction ou descripteur) peuvent être appelées. Les États de l’environnement, de la connexion, de l’instruction et du descripteur se chevauchent à peu près comme indiqué dans les illustrations suivantes. Par exemple, le chevauchement exact des États de connexion C5 et C6 et des États d’instruction S1 à S12 est dépendant de la source de données, car les transactions commencent à différents moments sur des sources de données différentes, et l’état du descripteur D1i (descripteur alloué de manière implicite) dépend de l’état de l’instruction à laquelle le descripteur est associé. Pour obtenir une description de chaque État, consultez [transitions d’environnement](../../../odbc/reference/appendixes/environment-transitions.md), [transitions de connexion](../../../odbc/reference/appendixes/connection-transitions.md), [transitions d’instructions](../../../odbc/reference/appendixes/statement-transitions.md)et [transitions de descripteur](../../../odbc/reference/appendixes/descriptor-transitions.md), plus loin dans cette annexe.  

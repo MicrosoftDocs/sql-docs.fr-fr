@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 05ff7bd4-e60b-4f48-a893-bc2346aa9a8a
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 9942d2ee78932c3bb8bed2baac0885b68e40049d
-ms.sourcegitcommit: 82b92f73ca32fc28e1948aab70f37f0efdb54e39
+ms.openlocfilehash: 489a026fe610b298803db088e7f8c9953215a7c4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94869561"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100060581"
 ---
 # <a name="mapping-db2-schemas-to-sql-server-schemas-db2tosql"></a>Mappage de schémas DB2 à des schémas de SQL Server (DB2ToSQL)
 Dans DB2, chaque base de données contient un ou plusieurs schémas. Par défaut, SSMA migre tous les objets d’un schéma DB2 vers une [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] base de données nommée pour le schéma. Toutefois, vous pouvez personnaliser le mappage entre les schémas DB2 et les [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] bases de données.  

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 89c23aad-bfee-4917-bc16-175288390ac0
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: c6bcddffdbb524e10a0686e6e9a82f4abcd30db8
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a43c4d8b1448949725820d69c6489aff26770d98
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492138"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100060564"
 ---
 # <a name="selecting-and-configuring-objects-to-test-sybasetosql"></a>Sélection et configuration des objets à tester (SybaseToSQL)
 À cette étape, vous sélectionnez les objets à tester, puis vous configurez les paramètres de comparaison des paramètres de sortie des procédures et des fonctions, ainsi que des valeurs de retour des fonctions.  
@@ -38,14 +38,14 @@ Active l’utilisation du paramètre sélectionné dans la comparaison des résu
   
 -   Si vous choisissez **true**, SSMA compare la valeur de sortie de ce paramètre après l’exécution de la procédure sur Sybase avec la valeur correspondante sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]  
   
--   Si vous choisissez la**valeur false**, le paramètre sera exclu de la vérification des résultats.  
+-   Si vous choisissez la **valeur false**, le paramètre sera exclu de la vérification des résultats.  
   
 ### <a name="use-custom-scale"></a>Utiliser l’échelle personnalisée  
 Pour les paramètres de type de données numérique de longueur approximative et fixe, vous pouvez définir une échelle personnalisée pour la comparaison.  
   
 -   Si vous choisissez **true**, les valeurs numériques sont arrondies en fonction de la valeur d' **échelle de comparaison** avant d’être comparées.  
   
--   Si vous choisissez la**valeur false**, la comparaison numérique sera exacte.  
+-   Si vous choisissez la **valeur false**, la comparaison numérique sera exacte.  
   
 ### <a name="comparing-scale"></a>Comparaison de l’échelle  
 Disponible uniquement si l’option utiliser la mise à l' **échelle personnalisée** a la valeur **true**. Il s’agit de la précision pour la comparaison numérique.  

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 513f071a-d5e6-4ed5-acca-269bf76323c5
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 3f9f5e0f498dbe6a8fe45a9c80cbf3c512f04bac
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7fc5d4a2e2e907feb867d5cd9e44d2b7d8e77bd4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492277"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100064224"
 ---
 # <a name="edit-type-mapping-sybasetosql"></a>Modifier le mappage de type (SybaseToSQL)
 La boîte de dialogue **modifier le mappage de type** vous permet de spécifier la manière dont les types sont mappés entre les objets de base de données source et de destination.  
