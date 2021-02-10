@@ -11,12 +11,12 @@ ms.assetid: ef94e843-9f88-45a2-86c4-a0af268738c4
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 2bab82a2fe9cc10b100cc49a4f18c1aa0bfaacff
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: fb02391afdcb082e69d4848c47d5f4caabd8e8cf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492502"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100065996"
 ---
 # <a name="working-with-ssma-for-access-console-accesstosql"></a>Utilisation de SSMA pour accéder à la console (AccessToSQL)
 Assistant Migration Microsoft SQL Server (SSMA) pour l’accès est désormais accessible par le biais d’une application console à partir de la ligne de commande. Les fichiers de script constituent l’entrée de l’application pour l’exécution des commandes. En tant qu’application console, SSMA permet l’interfaçage au niveau du script, réduit le cycle de migration et met à l’échelle l’effort de migration.  
@@ -38,6 +38,6 @@ Les sujets abordés dans cette section sont les suivants :
 |[Génération de rapports &#40;&#41;AccessToSQL ](../../ssma/access/generating-reports-accesstosql.md)|Répertorie les commandes permettant de générer des rapports.|  
 |[Résolution des problèmes &#40;AccessToSQL&#41;](../../ssma/access/troubleshooting-accesstosql.md)|Fournit de brèves informations sur la résolution des problèmes de migration.|  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir également  
 [Prise en main avec SSMA pour la console d’accès](getting-started-with-ssma-for-access-console-accesstosql.md)  
   

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 3f8c07a6-5542-495b-ad29-487ed64f0101
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: fba0cb8e85556411085a0502364d9b2cd3008ce6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 68d2d5369cbed507792b13613ef4f6ca04f8a92d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88320235"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100065014"
 ---
 # <a name="user-interface-reference-sybasetosql"></a>Informations de référence sur l’interface utilisateur (SybaseToSQL)
 Cette section contient des rubriques d’aide pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Assistant Migration (SSMA) pour Sybase.  

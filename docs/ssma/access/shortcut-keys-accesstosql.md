@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 25a06221-0045-4fb6-a150-1245649768ab
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: ce07766ba9a10a8f9a0c7be38b8d263d371afd19
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 81a18ca94c24ddcfb3749e5f13d92808f904f09f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88418535"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066214"
 ---
 # <a name="shortcut-keys-accesstosql"></a>Touches de raccourci (AccessToSQL)
 Vous pouvez utiliser les raccourcis clavier pour naviguer dans l’application SSMA. Pour plus d'informations, consultez les rubriques ci-dessous.  

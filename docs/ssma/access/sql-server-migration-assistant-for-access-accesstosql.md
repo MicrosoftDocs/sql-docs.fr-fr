@@ -11,12 +11,12 @@ ms.assetid: 40c1eb02-26b2-44ba-969d-6c430c61c281
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 25e7694505f7f67702f476983c33120a87539887
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 9c41ebf5da555869ee3c6603062acd1ecdd5471f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596422"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066321"
 ---
 # <a name="sql-server-migration-assistant-for-access-accesstosql"></a>Assistant Migration SQL Server pour l’accès (AccessToSQL)
 

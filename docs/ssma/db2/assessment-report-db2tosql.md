@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 9e13eba0-e3cf-4205-974f-c00f982061de
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: bea3b1c684457bc794d1b35d3a7985b79da41bef
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 56e4d034fde766784fb218429e1cf5a5a5e01b73
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88418515"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100065924"
 ---
 # <a name="assessment-report-db2tosql"></a>Rapport d’évaluation (DB2ToSQL)
 La fenêtre rapport d’évaluation affiche les résultats de la conversion des objets de base de données en [!INCLUDE[tsql](../../includes/tsql-md.md)] syntaxe et peut également vous aider à estimer la complexité et le coût de vos projets de migration.  
@@ -31,5 +31,5 @@ Pour accéder au rapport d’évaluation, sélectionnez les objets à convertir 
 |**Statistiques**|Affiche les statistiques de conversion pour l’objet sélectionné. Ce volet est visible uniquement lorsqu’un objet individuel avec code est sélectionné dans le volet gauche. Vous devrez peut-être développer les **statistiques**, qui est immédiatement au-dessus du volet **source** , pour afficher ce volet.|  
 |**Source**|Affiche le code DB2 pour l’objet sélectionné et met en surbrillance le code qui n’a pas été converti en [!INCLUDE[tsql](../../includes/tsql-md.md)] . Ce volet est visible uniquement lorsqu’un objet individuel avec code est sélectionné dans le volet gauche.<br /><br />Cliquez sur les numéros de ligne pour définir ou supprimer des signets. Utilisez les boutons en haut du volet pour naviguer dans le code.|  
 |**Cible**|Affiche le code résultant de [!INCLUDE[tsql](../../includes/tsql-md.md)] la conversion pour l’objet sélectionné, ainsi que les messages d’erreur pour le code qui n’a pas été converti. Ce volet est visible uniquement lorsqu’un objet individuel avec code est sélectionné dans le volet gauche.<br /><br />Cliquez sur les numéros de ligne pour définir ou supprimer des signets. Utilisez les boutons en haut du volet pour naviguer dans le code.|  
-|**Volet Messages**|Affiche les erreurs, les avertissements et les messages d’information qui ont été générés lors de la création du rapport d’évaluation. Les messages sont regroupés par nombre. Pour afficher le code à l’origine de l’erreur, cliquez sur **Erreurs**, **avertissements**ou **informations**, développez la catégorie des messages, puis cliquez sur un message.|  
+|**Volet Messages**|Affiche les erreurs, les avertissements et les messages d’information qui ont été générés lors de la création du rapport d’évaluation. Les messages sont regroupés par nombre. Pour afficher le code à l’origine de l’erreur, cliquez sur **Erreurs**, **avertissements** ou **informations**, développez la catégorie des messages, puis cliquez sur un message.|  
   

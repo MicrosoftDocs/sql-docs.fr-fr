@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 0a7304df-2f35-4453-96ef-7ac83dea1167
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: cc9a5328095f2ef839eb0c9617798299e46371fd
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 154eaa42bf08f622f3e08359f025284752134bc5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987681"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066314"
 ---
 # <a name="setting-conversion-and-migration-options-accesstosql"></a>Définition des options de conversion et de migration (AccessToSQL)
 Pour chaque projet SSMA, vous pouvez définir des options au niveau du projet. Ces options spécifient la façon dont les objets sont convertis, la façon dont les données sont migrées et la manière dont les types de données sources sont mappés aux types de données cibles. Avant de convertir des objets en SQL Azure ou de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] migrer [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] des données vers ou SQL Azure, vérifiez que les options de configuration sont appropriées pour le projet.  
@@ -56,7 +56,7 @@ Dans SSMA, vous pouvez configurer des paramètres par défaut pour tous les proj
         > [!NOTE]  
         > SQL Azure option est disponible sous l’onglet **général** uniquement si le type de projet créé est SQL Azure.  
   
-    -   Pour sélectionner un mode prédéfini, sélectionnez **par défaut**, **optimiste**ou **complète** dans la zone de liste déroulante **mode** .  
+    -   Pour sélectionner un mode prédéfini, sélectionnez **par défaut**, **optimiste** ou **complète** dans la zone de liste déroulante **mode** .  
   
     -   Pour spécifier un mode personnalisé, sélectionnez **personnalisé** dans la zone **mode** , sélectionnez une option dans le volet gauche, cliquez sur le paramètre ou la valeur dans le volet droit, puis sélectionnez ou entrez le nouveau paramètre ou la nouvelle valeur.  
   
@@ -70,7 +70,7 @@ Vous pouvez également personnaliser les paramètres du projet actuel. Ces param
   
 2.  Dans la boîte de dialogue **paramètres du projet** , effectuez l’une des opérations suivantes :  
   
-    -   Pour sélectionner un mode prédéfini, sélectionnez **par défaut**, **optimiste**ou **complète** dans la zone de liste déroulante **mode** .  
+    -   Pour sélectionner un mode prédéfini, sélectionnez **par défaut**, **optimiste** ou **complète** dans la zone de liste déroulante **mode** .  
   
     -   Pour spécifier un mode personnalisé, sélectionnez **personnalisé** dans la zone **mode** , sélectionnez une option dans le volet gauche, cliquez sur le paramètre ou la valeur dans le volet droit, puis sélectionnez ou entrez le nouveau paramètre ou la nouvelle valeur.  
   

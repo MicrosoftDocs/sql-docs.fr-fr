@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: pochiraju
 ms.author: rajpo
 ms.reviewer: mathoma
-ms.openlocfilehash: 017b7a1e06fca4a1f682050b99f8c8412b44aaf4
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: d1666d4ba2279623065dd3c0d8faf5e0653de82e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87951124"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100065944"
 ---
 # <a name="view-analysis-reports-in-database-experimentation-assistant"></a>Afficher les rapports d’analyse dans Assistant Expérimentation de base de données
 
@@ -83,6 +83,6 @@ Vous pouvez sélectionner des liens de modèle de requête pour obtenir des info
    > [!NOTE]
    > Si vous analysez un événement étendu (. XEL), les informations de plan de requête ne sont pas collectées pour limiter la sollicitation de la mémoire sur l’ordinateur de l’utilisateur.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 - Pour savoir comment générer un rapport d’analyse à partir d’une invite de commandes, consultez [exécuter à l’invite de commandes](database-experimentation-assistant-run-command-prompt.md).

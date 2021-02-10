@@ -14,12 +14,12 @@ ms.assetid: ''
 author: rajeshsetlem
 ms.author: rajpo
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 13b0775dd7a20d37e80eaddb39f649f65c43b129
-ms.sourcegitcommit: fb1430aedbb91b55b92f07934e9b9bdfbbd2b0c5
+ms.openlocfilehash: f56976c9140cb4ac18c048d7d57d6949fc4ae74d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82886176"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100065158"
 ---
 # <a name="assess-an-apps-data-access-layer-with-data-migration-assistant"></a>Évaluer la couche d’accès aux données d’une application avec Assistant Migration de données
 
@@ -104,9 +104,9 @@ Pour activer cette évaluation, nous avons récemment introduit le DAMT (Data Ac
 
 Désormais, en plus du point de vue de la migration, les utilisateurs ont également une vue du point de vue de l’application.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
-* [Vue d’ensemble de Assistant Migration de données](../dma/dma-overview.md)
+* [Vue d’ensemble de l’Assistant Migration de données](../dma/dma-overview.md)
 * [Assistant Migration de données : paramètres de configuration](../dma/dma-configurationsettings.md)
 * [Assistant Migration de données : meilleures pratiques](../dma/dma-bestpractices.md)
 * [Boîte à outils de migration de l’accès aux données](https://marketplace.visualstudio.com/items?itemName=ms-databasemigration.data-access-migration-toolkit)
