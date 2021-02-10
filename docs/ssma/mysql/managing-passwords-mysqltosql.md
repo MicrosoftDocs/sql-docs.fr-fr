@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 4ffbc587-ea3f-49ad-bc42-a654f672325e
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 50238d3cbcd65077ad724d41c907221d5d8be998
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: e5986144465beac5b9358869bbbd5f7510d70fbe
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988525"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017476"
 ---
 # <a name="managing-passwords-mysqltosql"></a>Gestion des mots de passe (MySQLToSQL)
 Cet article porte sur la sécurisation des mots de passe de base de données et la procédure d’importation ou d’exportation entre les serveurs.

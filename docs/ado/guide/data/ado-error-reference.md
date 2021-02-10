@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: f653393e-d4b0-4c34-ad5f-2bdf56bc1305
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 83f3d5e9408180c4ff513f1457a2972a676fa726
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: cfb6a2ede665c939aa5824810c692bdbe02df6c1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991740"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100028371"
 ---
 # <a name="ado-errors"></a>Erreurs ADO
 La constante **ErrorValueEnum** décrit les valeurs d’erreur ADO. Pour obtenir la liste complète de ces constantes énumérées, y compris les valeurs, consultez l' [annexe B : erreurs ADO](../appendixes/appendix-b-ado-errors.md). Cette section examine certaines des erreurs les plus intéressantes et explique certaines situations spécifiques qui peuvent les déclencher, ou des solutions pour résoudre le problème. La constante **ErrorValueEnum** et le nombre décimal positif bref sont répertoriés.
 
-|Number|ErrorValueEnum, constante|Description/causes possibles|
+|Nombre|ErrorValueEnum, constante|Description/causes possibles|
 |------------|-----------------------------|----------------------------------|
 |**3000**|**adErrProviderFailed**|Le fournisseur n’a pas pu effectuer l’opération demandée.|
 |**3001**|**adErrInvalidArgument**|Les arguments sont de type incorrect, sont en dehors de la plage acceptable ou sont en conflit les uns avec les autres. Cette erreur est souvent due à une erreur typographique dans une instruction SQL SELECT. Par exemple, un nom de champ ou un nom de table mal orthographié peut générer cette erreur. Cette erreur peut également se produire lorsqu’un champ ou une table nommée dans une instruction SELECT n’existe pas dans le magasin de données.|
@@ -42,7 +42,7 @@ La constante **ErrorValueEnum** décrit les valeurs d’erreur ADO. Pour obtenir
 |**3420**|**adErrObjectNotSet**|L’objet n’est plus valide.|
 |**3421**|**adErrDataConversion**|L’application utilise une valeur de type incorrect pour l’opération en cours. Vous avez peut-être fourni une chaîne à une opération qui attend un flux, par exemple.|
 |**3704**|**adErrObjectClosed**|L’opération n’est pas autorisée lorsque l’objet est fermé. La **connexion** ou l’ensemble **d’enregistrements** a été fermé. Par exemple, une autre routine peut avoir fermé un objet global. Vous pouvez éviter cette erreur en vérifiant la propriété **State** avant de tenter une opération.|
-|**3705**|**adErrObjectOpen**|L’opération n’est pas autorisée lorsque l’objet est ouvert. Impossible d’ouvrir un objet ouvert. Les champs ne peuvent pas être ajoutés à un **Recordset**ouvert.|
+|**3705**|**adErrObjectOpen**|L’opération n’est pas autorisée lorsque l’objet est ouvert. Impossible d’ouvrir un objet ouvert. Les champs ne peuvent pas être ajoutés à un **Recordset** ouvert.|
 |**3706**|**adErrProviderNotFound**|Le fournisseur est introuvable. Il n’est peut-être pas installé correctement.<br /><br /> Le nom du fournisseur peut être spécifié de manière incorrecte, le fournisseur spécifié n’est peut-être pas installé sur l’ordinateur sur lequel votre code est en cours d’exécution, ou l’installation a peut-être été endommagée.|
 |**3707**|**adErrBoundToCommand**|La propriété **ActiveConnection** d’un objet **Recordset** , qui a un objet **Command** comme source, ne peut pas être modifiée. L’application a tenté d’assigner un nouvel objet de **connexion** à un **jeu d’enregistrements** dont la source est un objet de **commande** .|
 |**3708**|**adErrInvalidParamInfo**|L’objet de **paramètre** n’est pas correctement défini. Des informations incohérentes ou incomplètes ont été fournies.|
@@ -54,8 +54,8 @@ La constante **ErrorValueEnum** décrit les valeurs d’erreur ADO. Pour obtenir
 |**3714**|**adErrInvalidTransaction**|La coordination de la transaction n’est pas valide ou n’a pas démarré.|
 |**3715**|**adErrNotExecuting**|Impossible d’effectuer l’opération pendant qu’elle n’est pas exécutée.|
 |**3716**|**adErrUnsafeOperation**|Les paramètres de sécurité de cet ordinateur interdisent l’accès à une source de données d’un autre domaine.|
-|**3717**|**adWrnSecurityDialog**|Uniquement réservé à un usage interne. N’utilisez pas. (L’entrée a été incluse pour des raisons d’exhaustivité. Cette erreur ne doit pas apparaître dans votre code.)|
-|**3718**|**adWrnSecurityDialogHeader**|Uniquement réservé à un usage interne. N’utilisez pas. (Entrée incluse pour des raisons d’exhaustivité. Cette erreur ne doit pas apparaître dans votre code.)|
+|**3717**|**adWrnSecurityDialog**|À usage interne uniquement. N’utilisez pas. (L’entrée a été incluse pour des raisons d’exhaustivité. Cette erreur ne doit pas apparaître dans votre code.)|
+|**3718**|**adWrnSecurityDialogHeader**|À usage interne uniquement. N’utilisez pas. (Entrée incluse pour des raisons d’exhaustivité. Cette erreur ne doit pas apparaître dans votre code.)|
 |**3719**|**adErrIntegrityViolation**|La valeur des données est en conflit avec les contraintes d’intégrité du champ. Une nouvelle valeur pour un **champ** provoquerait une clé dupliquée. Une valeur qui forme un côté d’une relation entre deux enregistrements peut ne pas pouvoir être mise à jour.|
 |**3720**|**adErrPermissionDenied**|Les autorisations insuffisantes empêchent l’écriture dans le champ. L’utilisateur nommé dans la chaîne de connexion ne dispose pas des autorisations appropriées pour écrire dans un **champ**.|
 |**3721**|**adErrDataOverflow**|La valeur des données est trop grande pour être représentée par le type de données du champ. Une valeur numérique qui est trop grande pour le champ prévu a été assignée. Par exemple, une valeur d’entier long a été assignée à un champ de type entier Short.|
@@ -76,7 +76,7 @@ La constante **ErrorValueEnum** décrit les valeurs d’erreur ADO. Pour obtenir
 |**3736**|**adErrUnavailable**|L’opération a échoué et l’État n’est pas disponible. Le champ n’est peut-être pas disponible ou l’opération n’a pas été tentée. Un autre utilisateur a peut-être modifié ou supprimé le champ auquel vous essayez d’accéder.|
 |**3737**|**adErrURLNamedRowDoesNotExist**|L’enregistrement nommé par cette URL n’existe pas. Lors de la tentative d’ouverture d’un fichier à l’aide d’un objet **Record** , le nom de fichier ou le chemin d’accès au fichier a été mal orthographié.|
 |**3738**|**adErrDelResOutOfScope**|L’URL de l’objet à supprimer est en dehors de l’étendue de l’enregistrement en cours.|
-|**3747**|**adErrCatalogNotSet**|L’opération requiert un **ParentCatalog**valide.|
+|**3747**|**adErrCatalogNotSet**|L’opération requiert un **ParentCatalog** valide.|
 |**3748**|**adErrCantChangeConnection**|La connexion a été refusée. La nouvelle connexion que vous avez demandée présente des caractéristiques différentes de celles déjà utilisées.|
 |**3749**|**adErrFieldsUpdateFailed**|Échec de la mise à jour des champs. Pour plus d’informations, examinez la propriété **Status** des objets Field individuels. Cette erreur peut se produire dans deux situations : lors de la modification de la valeur d’un objet **champ** dans le processus de modification ou d’ajout d’un enregistrement à la base de données. et lors de la modification des propriétés de l’objet de **champ** lui-même.<br /><br /> Échec de la mise à jour de l' **enregistrement** ou de l’ensemble **d’enregistrements** en raison d’un problème avec l’un des champs de l’enregistrement en cours. Énumérez la collection de **champs** et vérifiez la propriété **Status** de chaque champ pour déterminer la cause du problème.|
 |**3750**|**adErrDenyNotSupported**|Le fournisseur ne prend pas en charge les restrictions de partage. Une tentative a été effectuée pour restreindre le partage de fichiers et votre fournisseur ne prend pas en charge le concept.|

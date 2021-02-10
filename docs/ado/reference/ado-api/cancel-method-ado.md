@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: e0db4e15-6787-41e2-8f13-9e9b524d620a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: adc282492b4c6d9a21683693154e43f1177bdca0
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c33cedffcdd4eb9b738b952afaa060af9d99ff6a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164743"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100027485"
 ---
 # <a name="cancel-method-ado"></a>Cancel, méthode (ADO)
 Annule l’exécution d’un appel de méthode asynchrone en attente.  

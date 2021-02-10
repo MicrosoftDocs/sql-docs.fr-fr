@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 08386eba-f1f7-4879-8ffd-8733930ecb2f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d9be4f47033616f56177027bc83c4621cef57847
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8f0ed083766464cccd504da7ad9270600fe0050c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164865"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100027926"
 ---
 # <a name="adorecordsetconstruction-interface"></a>ADORecordsetConstruction, interface
 L’interface **ADORecordsetConstruction** est utilisée pour construire un objet **Recordset** ADO à partir d’un objet d' **ensemble de lignes** OLE DB dans une application C/C++.  
@@ -72,7 +72,7 @@ L’interface **ADORecordsetConstruction** est utilisée pour construire un obje
   
  Vous pouvez également construire un objet **Recordset** ADO à partir d’un OLE DB **chapitre** ou **RowPosition** .  
   
-## <a name="requirements"></a>Conditions requises  
+## <a name="requirements"></a>Spécifications  
  **Version :** ADO 2,0 et versions ultérieures  
   
  **Bibliothèque :** msado15.dll  

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: a6a7f4d6-68aa-4a38-93bf-53eba0d7dc82
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 16b6c68c520291b0f9ae6613940832c0fa77af68
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 3207dc38dd777ee6ccc36e37e9b18414dbea085e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988165"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017524"
 ---
 # <a name="migrating-mysql-data-into-sql-server---azure-sql-database-mysqltosql"></a>Migration de données MySQL vers SQL Server Azure SQL Database (MySQLToSQL)
 Une fois que vous avez synchronisé avec succès les objets convertis avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure, vous pouvez migrer des données de MySQL vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure.  

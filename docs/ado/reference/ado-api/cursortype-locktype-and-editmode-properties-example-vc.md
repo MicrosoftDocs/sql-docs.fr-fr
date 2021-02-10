@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: b2a80e44-03d8-426e-81b6-dd9dfc30e181
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 964410feadaac3ff321af122ff7118a6c6327552
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 6e47c46dbdd6cfa44e7e818289bee840b349f387
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171349"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100025892"
 ---
 # <a name="cursortype-locktype-and-editmode-properties-example-vc"></a>CursorType, LockType et EditMode, exemples de propriétés (VC + +)
 Cet exemple montre comment définir les propriétés [CursorType](./cursortype-property-ado.md) et [LockType](./locktype-property-ado.md) avant d’ouvrir un [Recordset](./recordset-object-ado.md). Il montre également la valeur de la propriété [EditMode](./editmode-property.md) sous différentes conditions. La fonction EditModeOutput est requise pour l’exécution de cette procédure.  

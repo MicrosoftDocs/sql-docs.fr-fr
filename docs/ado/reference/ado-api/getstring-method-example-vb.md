@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 14c96d71-46a8-4782-b474-80ce348e8bff
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 916d396bfa430e7aeaec02e7d1868bad67fb4cda
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 4fd0c6bf71f1be089db9976ede0ad87e541fe652
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170966"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100020843"
 ---
 # <a name="getstring-method-example-vb"></a>GetString, exemple de méthode (VB)
 Cet exemple illustre la méthode [GetString](./getstring-method-ado.md) .  

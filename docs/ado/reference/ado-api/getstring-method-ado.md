@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 92452940-b2a7-456e-94fc-3780c71da33c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d1626dd9ff1c97426a0597b010015adada4c17c7
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b1cfaa8b75f7e8d1dfb5fc0cecf7e5d99634960a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167252"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100020808"
 ---
 # <a name="getstring-method-ado"></a>GetString, méthode (ADO)
 Retourne le [Recordset](./recordset-object-ado.md) sous forme de chaîne.  
@@ -42,16 +42,16 @@ Variant = recordset.GetString(StringFormat, NumRows, ColumnDelimiter, RowDelimit
  Valeur [StringFormatEnum](./stringformatenum.md) qui spécifie la façon dont l' **objet Recordset** doit être converti en chaîne. Les paramètres *RowDelimiter*, *ColumnDelimiter* et *NullExpr* sont utilisés uniquement avec un *StringFormat* de **adClipString**.  
   
  *NumRows*  
- Facultatif. Nombre de lignes à convertir dans le **Recordset**. Si la valeur *numRows* n’est pas spécifiée, ou si elle est supérieure au nombre total de lignes dans le **Recordset**, toutes les lignes de l’ensemble d' **enregistrements** sont converties.  
+ facultatif. Nombre de lignes à convertir dans le **Recordset**. Si la valeur *numRows* n’est pas spécifiée, ou si elle est supérieure au nombre total de lignes dans le **Recordset**, toutes les lignes de l’ensemble d' **enregistrements** sont converties.  
   
  *ColumnDelimiter*  
- Facultatif. Séparateur utilisé entre les colonnes, si elles sont spécifiées, sinon le caractère de tabulation.  
+ facultatif. Séparateur utilisé entre les colonnes, si elles sont spécifiées, sinon le caractère de tabulation.  
   
  *RowDelimiter*  
- Facultatif. Séparateur utilisé entre les lignes, si elles sont spécifiées, sinon le caractère de retour chariot.  
+ facultatif. Séparateur utilisé entre les lignes, si elles sont spécifiées, sinon le caractère de retour chariot.  
   
  *NullExpr*  
- Facultatif. Expression utilisée à la place d’une valeur null, si elle est spécifiée, sinon la chaîne vide.  
+ facultatif. Expression utilisée à la place d’une valeur null, si elle est spécifiée, sinon la chaîne vide.  
   
 ## <a name="remarks"></a>Notes  
  Les données de ligne, mais pas de données de schéma, sont enregistrées dans la chaîne. Par conséquent, un **jeu d’enregistrements** ne peut pas être rouvert à l’aide de cette chaîne.  

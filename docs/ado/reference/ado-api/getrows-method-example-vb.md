@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9f7c78bb-7bb8-4c4f-8e5a-4d3bfc8a208f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 19192cdf3d85e2b25297f59d91e64be4653441ac
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 00000e6e053cc7782f234f1e59005c831402dc46
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170989"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100020853"
 ---
 # <a name="getrows-method-example-vb"></a>GetRows, exemple de méthode (VB)
 Cet exemple utilise la méthode [GetRows](./getrows-method-ado.md) pour récupérer un nombre spécifié de lignes à partir d’un [jeu d’enregistrements](./recordset-object-ado.md) et pour remplir un tableau avec les données résultantes. La méthode **GetRows** retourne moins de lignes que le nombre souhaité dans deux cas : si [EOF](./bof-eof-properties-ado.md) a été atteint ou si **GetRows** a tenté de récupérer un enregistrement qui a été supprimé par un autre utilisateur. La fonction retourne **false** uniquement si le second cas se produit. La fonction GetRowsOK est requise pour l’exécution de cette procédure.  

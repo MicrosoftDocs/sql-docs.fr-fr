@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 3ee27314-a305-4fbc-8433-9ee9a909afd6
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 756fe40bf7916dfa3e56a3e559be2874b5e8cd85
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 08019584f43891bb8e918b5e5f491c038a4b9afc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171305"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100025599"
 ---
 # <a name="definedsize-property"></a>DefinedSize, propriété
 Indique la capacité de données d’un objet de [champ](../../../ado/reference/ado-api/field-object.md) .  
   
-## <a name="return-value"></a>Valeur renvoyée  
+## <a name="return-value"></a>Valeur de retour  
  Retourne une valeur de **type long** qui reflète la taille définie d’un champ, qui dépend du type de données de l’objet Field ; Pour plus d’informations, consultez [type](../../../ado/reference/ado-api/type-property-ado.md) . Pour un champ qui utilise un type de données de longueur fixe, la valeur de retour correspond à la taille du type de données en octets. Pour un champ qui utilise un type de données de longueur variable, il s’agit de l’un des éléments suivants :  
   
 1.  Longueur maximale du champ en caractères (pour **adVarChar** et **adVarWChar**) ou en octets (pour **adVarBinary** et **adVarNumeric**) si le champ a une longueur définie. Par exemple, le champ **adVarChar (5)** a une longueur maximale de 5.  

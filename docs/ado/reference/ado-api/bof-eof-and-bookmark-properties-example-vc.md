@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: bd2b9d85-e75e-4fc8-a392-076582019caa
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7cfc7d8ffa447beccf4597beb63f54d5ba958f29
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ae45fb2eea6c971fe72d152d0ee6058dbfc81db5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164778"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100027559"
 ---
 # <a name="bof-eof-and-bookmark-properties-example-vc"></a>BOF, EOF et Bookmark, exemple de propriétés (VC + +)
 La première fonction de cet exemple utilise les propriétés [BOF](./bof-eof-properties-ado.md) et [EOF](./bof-eof-properties-ado.md) pour afficher un message si un utilisateur tente de se déplacer après le premier ou le dernier enregistrement d’un [jeu d’enregistrements](./recordset-object-ado.md). Elle utilise la propriété [Bookmark](./bookmark-property-ado.md) pour permettre à l’utilisateur d’indicateur un enregistrement dans un **jeu d’enregistrements** et de revenir ultérieurement.  

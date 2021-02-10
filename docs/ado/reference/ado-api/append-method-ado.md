@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f8a9bbed-ba9c-4698-945d-317ad22d2e92
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 03e454407c1b01b34ea918f81a404d579f8a3809
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 099cce7da61fbfa9f3a70904a6c8593b9be4d304
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167885"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100027855"
 ---
 # <a name="append-method-ado"></a>Append, méthode (ADO)
 Ajoute un objet à une collection. Si la collection est de [champs](./fields-collection-ado.md), un nouvel objet de [champ](./field-object.md) peut être créé avant d’être ajouté à la collection.  
@@ -35,7 +35,7 @@ fields.Append Name, Type, DefinedSize, Attrib, FieldValue
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *collection*  
+ *collecte*  
  Objet de collection.  
   
  *fields*  
@@ -51,13 +51,13 @@ fields.Append Name, Type, DefinedSize, Attrib, FieldValue
  Valeur [DataTypeEnum](./datatypeenum.md) , dont la valeur par défaut est **adEmpty**, qui spécifie le type de données du nouveau champ. Les types de données suivants ne sont pas pris en charge par ADO et ne doivent pas être utilisés lors de l’ajout de nouveaux champs à un [objet Recordset (ADO)](./recordset-object-ado.md): **adIDispatch**, **adIUnknown**, **adVariant**.  
   
  *DefinedSize*  
- Facultatif. Valeur de **type long** qui représente la taille définie, en caractères ou en octets, du nouveau champ. La valeur par défaut de ce paramètre est dérivée du *type*. Les champs qui ont une valeur *DefinedSize* supérieure à 255 octets sont traités comme des colonnes de longueur variable. La valeur par défaut de *DefinedSize* n’est pas spécifiée.  
+ facultatif. Valeur de **type long** qui représente la taille définie, en caractères ou en octets, du nouveau champ. La valeur par défaut de ce paramètre est dérivée du *type*. Les champs qui ont une valeur *DefinedSize* supérieure à 255 octets sont traités comme des colonnes de longueur variable. La valeur par défaut de *DefinedSize* n’est pas spécifiée.  
   
  *Attrib*  
- Facultatif. Valeur [FieldAttributeEnum](./fieldattributeenum.md) , dont la valeur par défaut est **adFldDefault**, qui spécifie les attributs du nouveau champ. Si vous ne spécifiez pas cette valeur, le champ contient des attributs dérivés du *type*.  
+ facultatif. Valeur [FieldAttributeEnum](./fieldattributeenum.md) , dont la valeur par défaut est **adFldDefault**, qui spécifie les attributs du nouveau champ. Si vous ne spécifiez pas cette valeur, le champ contient des attributs dérivés du *type*.  
   
  *FieldValue*  
- Facultatif. **Variant** qui représente la valeur du nouveau champ. S’il n’est pas spécifié, le champ est ajouté avec une valeur null.  
+ facultatif. **Variant** qui représente la valeur du nouveau champ. S’il n’est pas spécifié, le champ est ajouté avec une valeur null.  
   
 ## <a name="remarks"></a>Notes  
   

@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: fc268e22-205b-44a3-9038-ffed51e23e10
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7d9e47713f3bd4d86f35cff2acac0255ed4ab5c7
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 10a4938973b3ce1f47f140fb0aeb3da4ce13debb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164577"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100021241"
 ---
 # <a name="getchunk-method-ado"></a>GetChunk, méthode (ADO)
 Retourne la totalité ou une partie du contenu d’un objet de texte ou de [champ](./field-object.md) de données binaire volumineux.  

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4daa93aa-9727-4d1c-886a-e9d22017a1ea
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 456a850f88914355cf21c99f3f221c52bda1a023
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 61384780e21c5ca3b2200f05d7e0c0d571a3c6b3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167238"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100020809"
 ---
 # <a name="getstring-method-example-vc"></a>GetString, exemple de méthode (VC++)
 Cet exemple illustre la méthode [GetString](./getstring-method-ado.md) .  

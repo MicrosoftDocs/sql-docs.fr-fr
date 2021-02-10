@@ -4,11 +4,11 @@ ms.service: sql
 ms.topic: include
 ms.date: 06/11/2020
 ms.author: mikeray
-ms.openlocfilehash: 81d1645f42a242f66462a07ce17a87c748235b56
-ms.sourcegitcommit: 8515bb2021cfbc7791318527b8554654203db4ad
+ms.openlocfilehash: e9c7e247b616cddab9133db0a267d21357a96ed9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "86091482"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100019051"
 ---
 [!INCLUDE [Applies to](../../includes/applies-md.md)] [!INCLUDE [SQL Server](_ssnoversion.md)] [!INCLUDE [ASDBMI](_asdbmi.md)] [!INCLUDE [Parallel Data Warehouse](../../includes/applies-to-version/_pdw.md)]

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 594c51cb-1157-4417-802b-d91b875ba020
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 91d55e44f9c9bd1a6bef3e5fc2689eb1899ae025
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2ee99725aeb4eadab7df8323bb1ffcd0ce901551
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171017"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100024183"
 ---
 # <a name="find-method-example-vc"></a>Find, exemple de méthode (VC++)
 Cet exemple utilise la méthode [Find](./find-method-ado.md) de l’objet [Recordset](./recordset-object-ado.md) pour rechercher et compter le nombre de titres de l’entreprise dans la base de données **pubs** . L’exemple suppose que le fournisseur sous-jacent ne prend pas en charge les fonctionnalités similaires.  

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ffc6e245-4471-42ae-84dd-e85bddfce983
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 16c4d140efef977e3773e48dfc4f8797fda22dc5
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 9ce49416e2cb298e4829022b7da0840a5e2c516a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171331"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100025865"
 ---
 # <a name="cursortypeenum"></a>CursorTypeEnum
 Spécifie le type de curseur utilisé dans un objet [Recordset](./recordset-object-ado.md) .  

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 258bdce3-1819-44a2-9217-105879c789ef
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5aaa3c02210e548e2e2081a1a5728eecda7543ab
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 01cda52ce9a1a2f1d64350a299f8a9505c707c90
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164815"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100027599"
 ---
 # <a name="attributes-and-name-properties-example-vb"></a>Attributes et Name, exemple de propriétés (VB)
 Cet exemple affiche la valeur de la propriété [attributes](./attributes-property-ado.md) pour les objets de [connexion](./connection-object-ado.md), de [champ](./field-object.md)et de [propriété](./property-object-ado.md) . Elle utilise la propriété [Name](./name-property-ado.md) pour afficher le nom de chaque objet **Field** et **Property** .  

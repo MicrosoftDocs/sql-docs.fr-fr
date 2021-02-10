@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 7ad5fe44-6445-4ba8-a457-5af792631f11
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 4c2c4c093fec21723584538dfb5585a74e15c8fb
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7cdbc6ac65fa24f8130bc92c03b62145370bedea
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492432"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017419"
 ---
 # <a name="project-settings-conversion-mysqltosql"></a>Paramètres du projet (Conversion) (MySQLToSQL)
 La page conversion de la boîte de dialogue **paramètres du projet** contient des paramètres qui personnalisent la manière dont SSMA convertit la syntaxe MySQL en SQL Server ou SQL Azure syntaxe.  

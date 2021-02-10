@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 14b92860-4171-47d9-a413-dd60dd6a8880
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: df59c3d464d1c19a3b98e8611e2db2983db2a833
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 717569716fa6191cfb4fc7258c32240d9ebd2e17
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171000"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100021036"
 ---
 # <a name="getrows-method-ado"></a>GetRows, méthode (ADO)
 Récupère plusieurs enregistrements d’un objet [Recordset](./recordset-object-ado.md) dans un tableau.  
@@ -39,13 +39,13 @@ array = recordset.GetRows(Rows, Start, Fields )
   
 #### <a name="parameters"></a>Paramètres  
  *Lignes*  
- Facultatif. Valeur [GetRowsOptionEnum](./getrowsoptionenum.md) qui indique le nombre d’enregistrements à récupérer. La valeur par défaut est **adGetRowsRest**.  
+ facultatif. Valeur [GetRowsOptionEnum](./getrowsoptionenum.md) qui indique le nombre d’enregistrements à récupérer. La valeur par défaut est **adGetRowsRest**.  
   
  *Start*  
- Facultatif. Valeur de **chaîne** ou **Variant** qui prend la valeur du signet de l’enregistrement à partir duquel l’opération **GetRows** doit commencer. Vous pouvez également utiliser une valeur [BookmarkEnum](./bookmarkenum.md) .  
+ facultatif. Valeur de **chaîne** ou **Variant** qui prend la valeur du signet de l’enregistrement à partir duquel l’opération **GetRows** doit commencer. Vous pouvez également utiliser une valeur [BookmarkEnum](./bookmarkenum.md) .  
   
  *Fields*  
- Facultatif. **Variante** qui représente un nom de champ unique ou une position ordinale, ou un tableau de noms de champs ou de numéros de position ordinale. ADO retourne uniquement les données de ces champs.  
+ facultatif. **Variante** qui représente un nom de champ unique ou une position ordinale, ou un tableau de noms de champs ou de numéros de position ordinale. ADO retourne uniquement les données de ces champs.  
   
 ## <a name="remarks"></a>Notes  
  Utilisez la méthode **GetRows** pour copier les enregistrements d’un **jeu d’enregistrements** dans un tableau à deux dimensions. Le premier indice identifie le champ et le second identifie le numéro d’enregistrement. La variable de *tableau* est automatiquement dimensionnée à la taille correcte lorsque la méthode **GetRows** retourne les données.  

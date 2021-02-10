@@ -13,12 +13,12 @@ dev_langs:
 ms.assetid: 385ad90a-37d0-497c-94aa-935d21fed78f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 68ccc1f5cc173f4ebd80ed093e88968c137c954f
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: fd479847766b8682025b2e4c6f047a5f4549d077
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991650"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100028044"
 ---
 # <a name="ado-event-instantiation-visual-c"></a>Instanciation des événements ADO Visual C++
 Il s’agit d’une description schématique de l’instanciation des événements ADO dans Microsoft® Visual C++®. Pour une description complète, consultez [exemple de modèle d’événements ADO (VC + +)](../../reference/ado-api/ado-events-model-example-vc.md) .  
@@ -66,7 +66,7 @@ STDMETHODIMP CConnEvent::ConnectComplete(
 // EndEventExampleVC02  
 ```  
   
- Comme les classes d’événements héritent de **IUnknown**, vous devez également implémenter les méthodes **QueryInterface**, **AddRef**et **Release** . Implémentez également des constructeurs et des destructeurs de classe. Choisissez les outils Visual C++ avec lesquels vous êtes le plus à l’aise pour simplifier cette partie de la tâche.  
+ Comme les classes d’événements héritent de **IUnknown**, vous devez également implémenter les méthodes **QueryInterface**, **AddRef** et **Release** . Implémentez également des constructeurs et des destructeurs de classe. Choisissez les outils Visual C++ avec lesquels vous êtes le plus à l’aise pour simplifier cette partie de la tâche.  
   
  Vous savez que vos gestionnaires d’événements sont disponibles en émettant **QueryInterface** sur les objets [Recordset](../../reference/ado-api/recordset-object-ado.md) et [Connection](../../reference/ado-api/connection-object-ado.md) pour les interfaces **IConnectionPointContainer** et **IConnectionPoint** . Ensuite, émettez **IConnectionPoint :: Advise** pour chaque classe.  
   

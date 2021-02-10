@@ -4,11 +4,11 @@ ms.service: sql
 ms.topic: include
 ms.date: 06/11/2020
 ms.author: mikeray
-ms.openlocfilehash: 0809e0ba8c63bb216d6f315f9d7ebef578219800
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: e1af6c8e28a54c1914e510b8c5c17aba87996fa8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85627032"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100016522"
 ---
 [!INCLUDE [Applies to](../../includes/applies-md.md)] [!INCLUDE [SQL Server 2019](_ss2019.md)]

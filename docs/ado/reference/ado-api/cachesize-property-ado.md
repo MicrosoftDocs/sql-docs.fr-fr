@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 49dc9a49-af7b-433b-be36-7a14ca984fb7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9aef38a384c352648d5487ee9dae9a79d605e8e3
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ac840d510bbfeebc575ada36e76462930ffaf19f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167815"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100027495"
 ---
 # <a name="cachesize-property-ado"></a>CacheSize, propriété (ADO)
 Indique le nombre d’enregistrements d’un objet [Recordset](./recordset-object-ado.md) mis en cache localement en mémoire.  

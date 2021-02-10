@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 4a44f9f6-0265-4c00-8def-d85b6af923b1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b65a3bf2d4664be84250a9923f0ed3908c07f179
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 21ae22283af2dff79094e87dc51f25cb359a6ff4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170142"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100020304"
 ---
 # <a name="stream-property"></a>Stream, propriété
 Obtient ou définit un objet de **flux** OLE DB à partir de/sur un objet **ADOStreamConstruction** .  

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ca44809c-8647-48b6-a7fb-0be70a02f53e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: debd8c2630ba9fa7369b356950f979a64eee59d0
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 883887b32a46025c1fc60f5b8ca782241b201ab3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99155715"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100026587"
 ---
 # <a name="commandtype-property-ado"></a>CommandType, propriété (ADO)
 Indique le type d’un objet [Command](./command-object-ado.md) .  

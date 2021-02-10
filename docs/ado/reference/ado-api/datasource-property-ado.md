@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 300a702a-3544-48c5-b759-83b511fe97e0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 67a57da52bd73bd90d630ac84e4afeca6a0b16c7
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 73058aa92e594528ef214a9ffa93fa0f58d29b76
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171341"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100025666"
 ---
 # <a name="datasource-property-ado"></a>DataSource, propriété (ADO)
 Indique un objet qui contient les données à représenter sous la forme d’un objet [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) .  

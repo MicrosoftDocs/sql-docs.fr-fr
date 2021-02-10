@@ -14,12 +14,12 @@ ms.assetid: ''
 author: rajeshsetlem
 ms.author: rajpo
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 02a6d49202ad2607d862246eee232e599788244a
-ms.sourcegitcommit: fb1430aedbb91b55b92f07934e9b9bdfbbd2b0c5
+ms.openlocfilehash: 9f427c7d706e3665cc5cbca092bfbc99a333a1ea
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82885856"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100030627"
 ---
 # <a name="save-and-load-assessments-with-data-migration-assistant"></a>Enregistrez et chargez les évaluations avec Assistant Migration de données
 

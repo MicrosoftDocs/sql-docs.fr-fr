@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: aa7de324-cd71-4bd0-8043-24229f4a785e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 02b1296a81bed339071995d66bc9c1454ae86aa8
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c95c60e0d10b1dfd361af1c93ba5810ae35eb95c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164793"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100027579"
 ---
 # <a name="begintrans-committrans-and-rollbacktrans-methods-example-vb"></a>BeginTrans, CommitTrans et RollbackTrans, exemples de méthodes (VB)
 Cet exemple modifie le type de livre de tous les livres de psychologie dans la table ***titles** _ de la base de données. Une fois que la méthode [BeginTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) a démarré une transaction qui isole toutes les modifications apportées à la table _ *_titles_**, la méthode [CommitTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) enregistre les modifications. Vous pouvez utiliser la méthode [RollbackTrans](./begintrans-committrans-and-rollbacktrans-methods-ado.md) pour annuler les modifications que vous avez enregistrées à l’aide de la méthode [Update](./update-method.md) .  

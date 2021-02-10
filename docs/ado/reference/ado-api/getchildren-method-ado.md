@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: b3f09bac-4f66-49f6-aa5a-6fbb4fb28338
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: cb49de0d3613cca9d24991e67ee8787c0d863b8c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 3bf4e7c68bbab5c5452a2eb0dabc790ab3cc5e15
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167288"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100021231"
 ---
 # <a name="getchildren-method-ado"></a>GetChildren, méthode (ADO)
 Retourne un [jeu d’enregistrements](./recordset-object-ado.md) dont les lignes représentent les enfants d’un [enregistrement](./record-object-ado.md)de collection.  

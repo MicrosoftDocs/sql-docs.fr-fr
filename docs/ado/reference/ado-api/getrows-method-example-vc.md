@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 08e5c5bf-f7de-4bf9-97a9-f214c128ad8c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f7116806c9c308257328cca001571b1a397a11c5
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e0fd04633e9922368c77f0caae50f6d2b5fd292b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167255"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100020863"
 ---
 # <a name="getrows-method-example-vc"></a>GetRows, exemple de méthode (VC++)
 Cet exemple utilise la méthode [GetRows](./getrows-method-ado.md) pour récupérer un nombre spécifié de lignes à partir d’un [jeu d’enregistrements](./recordset-object-ado.md) et pour remplir un tableau avec les données résultantes. La méthode **GetRows** retourne une valeur inférieure au nombre de lignes souhaité dans deux cas : si [EOF](./bof-eof-properties-ado.md) a été atteint ou si **GetRows** a tenté de récupérer un enregistrement qui a été supprimé par un autre utilisateur. La fonction retourne **false** uniquement si le second cas se produit. La fonction GetRowsOK est requise pour l’exécution de cette procédure.  

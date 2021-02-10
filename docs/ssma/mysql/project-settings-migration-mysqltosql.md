@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 2a3cba9e-cd54-4a8b-b858-8fc4cf2580d9
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 17ba3712f1b644a0d80d890c405e8ead8267236c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 92c6e91ca49046561c24d7716dd5a3e152e686f5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88372645"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017369"
 ---
 # <a name="project-settings-migration-mysqltosql"></a>Paramètres du projet (Migration) (MySQLToSQL)
 La page migration de la boîte de dialogue **paramètres du projet** contient des paramètres qui personnalisent la manière dont SSMA migre les données de MySQL vers SQL Server.  

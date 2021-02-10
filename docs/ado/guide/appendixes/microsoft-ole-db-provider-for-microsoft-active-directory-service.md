@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f9e81452-5675-4cfc-9949-cfbd2fe57534
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 08d945b101ac91300793920e3e01ea0a9619b372
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 2174610e0747f984babae59c4b00d1245d763db2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991050"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100029273"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-active-directory-service"></a>Fournisseur Microsoft OLE DB pour le service Microsoft Active Directory
 Le fournisseur ADSI (Active Directory Service Interfaces) permet à ADO de se connecter à des services d’annuaire hétérogènes par le biais d’ADSI. Cela donne aux applications ADO un accès en lecture seule aux services d’annuaire Microsoft Windows NT 4,0 et Microsoft Windows 2000, en plus des services d’annuaire compatibles LDAP et des services d’annuaire Novell. ADSI est basé sur un modèle de fournisseur, de sorte que si un nouveau fournisseur donne accès à un autre annuaire, l’application ADO peut y accéder en toute transparence. Le fournisseur ADSI est libre de thread et Unicode est activé.  
@@ -121,7 +121,7 @@ objectClass='user' AND objectCategory='Person'"
 |[Annuler](../../reference/ado-api/cancel-method-ado.md)|Non|  
 |[CancelBatch](../../reference/ado-api/cancelbatch-method-ado.md)|Non|  
 |[CancelUpdate](../../reference/ado-api/cancelupdate-method-ado.md)|Non|  
-|[Clone](../../reference/ado-api/clone-method-ado.md)|Oui|  
+|[Répliqué](../../reference/ado-api/clone-method-ado.md)|Oui|  
 |[Close](../../reference/ado-api/close-method-ado.md)|Oui|  
 |[Supprimer](../../reference/ado-api/delete-method-ado-recordset.md)|Non|  
 |[GetRows](../../reference/ado-api/getrows-method-ado.md)|Oui|  

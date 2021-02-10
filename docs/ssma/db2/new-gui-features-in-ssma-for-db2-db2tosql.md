@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: a8ed33e9-185a-492d-a4cf-2fded1aa5c70
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: d3ad4946b7e900fa9ca4adc22e16a299948e00f9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 48704383f4ce8b9abc4cfc46b39d6609c57e1e38
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88488150"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017549"
 ---
 # <a name="new-gui-features-in-ssma-for-db2-db2tosql"></a>Nouvelles fonctionnalités de l’interface utilisateur graphique dans SSMA pour DB2 (DB2ToSQL)
 Ce chapitre décrit les nouvelles fonctionnalités de l’interface utilisateur SSMA.  

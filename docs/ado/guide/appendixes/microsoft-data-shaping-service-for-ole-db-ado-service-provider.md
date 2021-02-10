@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 523009ce-e01b-4e2d-a7df-816d7688aff0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 07e5747e11cf3393e51c66a24c4c6fd5e6ade887
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: a83d37c301d34c273514e4d6eb0551bc86429bd4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991080"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100029373"
 ---
 # <a name="microsoft-data-shaping-service-for-ole-db-overview"></a>Vue d’ensemble de Microsoft Data Shaping Service pour OLE DB
 > [!IMPORTANT]
@@ -39,7 +39,7 @@ ms.locfileid: "88991080"
 
 |Nom de la propriété dynamique|Description|
 |---------------------------|-----------------|
-|**Noms de reformes uniques**|Indique si les objets **Recordset** avec des valeurs dupliquées pour leurs propriétés **Remodel Name** sont autorisés. Si cette propriété dynamique a la **valeur true** et qu’un nouvel ensemble **d’enregistrements** est créé avec le même nom de reforme spécifié par l’utilisateur qu’un **jeu d’enregistrements**existant, le nom de la nouvelle forme de l’objet **Recordset** est modifié pour le rendre unique. Si cette propriété a la **valeur false** et qu’un nouvel ensemble **d’enregistrements** est créé avec le même nom de reforme spécifié par l’utilisateur que le **jeu d’enregistrements**existant, les deux objets **Recordset** auront le même nom de reforme. Par conséquent, aucun **Recordset** ne peut être remodelé tant que les deux jeux d’enregistrements existent.<br /><br /> La valeur par défaut de la propriété est **false**.|
+|**Noms de reformes uniques**|Indique si les objets **Recordset** avec des valeurs dupliquées pour leurs propriétés **Remodel Name** sont autorisés. Si cette propriété dynamique a la **valeur true** et qu’un nouvel ensemble **d’enregistrements** est créé avec le même nom de reforme spécifié par l’utilisateur qu’un **jeu d’enregistrements** existant, le nom de la nouvelle forme de l’objet **Recordset** est modifié pour le rendre unique. Si cette propriété a la **valeur false** et qu’un nouvel ensemble **d’enregistrements** est créé avec le même nom de reforme spécifié par l’utilisateur que le **jeu d’enregistrements** existant, les deux objets **Recordset** auront le même nom de reforme. Par conséquent, aucun **Recordset** ne peut être remodelé tant que les deux jeux d’enregistrements existent.<br /><br /> La valeur par défaut de la propriété est **false**.|
 |**Fournisseur de données**|Indique le nom du fournisseur qui fournira les lignes à mettre en forme. Cette valeur peut être NONE si un fournisseur ne sera pas utilisé pour fournir des lignes.|
 
  Vous pouvez également définir des propriétés dynamiques en écriture en spécifiant leurs noms en tant que Mots clés dans la chaîne de connexion. Par exemple, dans Microsoft Visual Basic, définissez la propriété dynamique **fournisseur de données** sur « MSDASQL » en spécifiant :

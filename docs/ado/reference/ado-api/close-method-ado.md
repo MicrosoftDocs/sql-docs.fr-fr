@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 3cdf27d1-a180-4cff-8e42-95dec5fb1b55
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9a7c0ea176f203bd9b7b2febc17475e6af385d7f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0e7f1edd109f9ea4fe66c3f77a732aeec27e41c2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171513"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100027077"
 ---
 # <a name="close-method-ado"></a>Close, méthode (ADO)
 Ferme un objet ouvert et tous les objets dépendants.  

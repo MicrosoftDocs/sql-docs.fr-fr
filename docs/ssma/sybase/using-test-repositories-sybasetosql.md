@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: c359c25c-db2a-4a20-afa9-62d87a62df72
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: b05dac0ec74bb6c0cd9c9e99d8bb631b0a242eb3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 05e91905930b011976f61b149abeeaccc1d00398
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88418245"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100023172"
 ---
 # <a name="using-test-repositories-sybasetosql"></a>Utilisation de référentiels de tests (SybaseToSQL)
 Le référentiel de test SSMA stocke les cas de test et les résultats des tests SSMA tester pour une utilisation ultérieure. Les données de référentiel sont enregistrées dans les tables SQL Server **TestCaseRepository** et **RunTestCaseResultRepository** du schéma **ssma_sybase_utilities** de **ssmatesterdb_syb** base de données.  
