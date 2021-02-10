@@ -1,5 +1,5 @@
 ---
-description: Erreurs d’exécution ADO
+description: Erreurs de Run-Time ADO
 title: Erreurs ADO | Microsoft Docs
 ms.prod: sql
 ms.prod_service: connectivity
@@ -13,14 +13,14 @@ helpviewer_keywords:
 ms.assetid: 9bb84114-a1df-4122-a1b8-ad98dcd85cc3
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0b1da9cd8e7afd2b56921fa6b413b5d349d7027f
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: bed9958455af424c4f18cb0f6051eb30e2efaa3b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991730"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100033389"
 ---
-# <a name="ado-run-time-errors"></a>Erreurs d’exécution ADO
+# <a name="ado-run-time-errors"></a>Erreurs de Run-Time ADO
 Les erreurs ADO sont signalées à votre programme comme des erreurs d’exécution. Vous pouvez utiliser le mécanisme de piégeage des erreurs de votre langage de programmation pour les intercepter et les gérer. Par exemple, dans Visual Basic, utilisez l’instruction **On Error** . Dans Visual C++, cela dépend de la méthode que vous utilisez pour accéder aux bibliothèques ADO. Avec #import, utilisez un bloc **try-catch** . Sinon, les programmeurs C++ doivent récupérer explicitement l’objet d’erreur en appelant **GetErrorInfo**. La procédure Visual Basic Sub suivante montre comment intercepter une erreur ADO :
 
 ```

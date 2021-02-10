@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 62bd7dc9-45b5-4ca9-8b52-457325e0ce9e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: df2e7f035e5479298887920814947666164f6593
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: e062dd88fbb2a67d17ce8f96d3eee9b9db2d2acc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991420"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100033269"
 ---
 # <a name="data-shaping"></a>Mise en forme des données
 Cette section contient les rubriques suivantes :  

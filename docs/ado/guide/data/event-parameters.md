@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: bd5c5afa-d301-4899-acda-40f98a6afa4d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: cc36f0ab059bb7b605b02316008a969411663a8d
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 7f60d32ccd968c39da4fcea3978a46389e49ae49
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991300"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100033209"
 ---
 # <a name="event-parameters"></a>Paramètres des événements
-Chaque gestionnaire d’événements a un paramètre d’État qui contrôle le gestionnaire d’événements. Pour les événements complets, ce paramètre est également utilisé pour indiquer la réussite ou l’échec de l’opération qui a généré l’événement. La plupart des événements complets ont également un paramètre d’erreur qui fournit des informations sur les erreurs qui ont pu se produire, ainsi qu’un ou plusieurs paramètres d’objet qui font référence aux objets ADO utilisés pour effectuer l’opération. Par exemple, l’événement [ExecuteComplete](../../reference/ado-api/executecomplete-event-ado.md) comprend les paramètres d’objet de la **commande**, du **Recordset**et des objets de **connexion** associés à l’événement. Dans l’exemple Microsoft® Visual Basic®, vous pouvez voir les objets pCommand, prerecordset et pConnection qui représentent les objets **Command**, **Recordset**et **Connection** utilisés par la méthode **Execute** .  
+Chaque gestionnaire d’événements a un paramètre d’État qui contrôle le gestionnaire d’événements. Pour les événements complets, ce paramètre est également utilisé pour indiquer la réussite ou l’échec de l’opération qui a généré l’événement. La plupart des événements complets ont également un paramètre d’erreur qui fournit des informations sur les erreurs qui ont pu se produire, ainsi qu’un ou plusieurs paramètres d’objet qui font référence aux objets ADO utilisés pour effectuer l’opération. Par exemple, l’événement [ExecuteComplete](../../reference/ado-api/executecomplete-event-ado.md) comprend les paramètres d’objet de la **commande**, du **Recordset** et des objets de **connexion** associés à l’événement. Dans l’exemple Microsoft® Visual Basic®, vous pouvez voir les objets pCommand, prerecordset et pConnection qui représentent les objets **Command**, **Recordset** et **Connection** utilisés par la méthode **Execute** .  
   
 ```  
 Private Sub connEvent_ExecuteComplete(ByVal RecordsAffected As Long, _  
@@ -52,7 +52,7 @@ Private Sub connEvent_ExecuteComplete(ByVal RecordsAffected As Long, _
   
  Si vous déterminez dans votre événement que l’opération doit se poursuivre, laissez le paramètre d' *État* inchangé. Toutefois, tant que le paramètre d’État entrant n’a pas la valeur **adStatusCantDeny**, vous pouvez annuler l’opération en attente en remplaçant l' *État* par **adStatusCancel**. Dans ce cas, le paramètre *Status* de l’événement complet associé à l’opération est défini sur **adStatusErrorsOccurred**. L’objet d' **erreur** transmis à l’événement Complete contient la valeur **adErrOperationCancelled**.  
   
- Si vous ne souhaitez plus traiter un événement, vous pouvez définir l' *État* sur **adStatusUnwantedEvent** et votre application ne recevra plus de notification de cet événement. Toutefois, n’oubliez pas que certains événements peuvent être déclenchés pour plusieurs raisons. Dans ce cas, vous devez spécifier **adStatusUnwantedEvent** pour chaque raison possible. Par exemple, pour cesser de recevoir des notifications d’événements **RecordChange** en attente, vous devez définir le paramètre *Status* sur **adStatusUnwantedEvent** pour **adRsnAddNew**, **adRsnDelete**, **adRsnUpdate**, **adRsnUndoUpdate**, **adRsnUndoAddNew**, **adRsnUndoDelete**et **adRsnFirstChange** lorsqu’ils se produisent.  
+ Si vous ne souhaitez plus traiter un événement, vous pouvez définir l' *État* sur **adStatusUnwantedEvent** et votre application ne recevra plus de notification de cet événement. Toutefois, n’oubliez pas que certains événements peuvent être déclenchés pour plusieurs raisons. Dans ce cas, vous devez spécifier **adStatusUnwantedEvent** pour chaque raison possible. Par exemple, pour cesser de recevoir des notifications d’événements **RecordChange** en attente, vous devez définir le paramètre *Status* sur **adStatusUnwantedEvent** pour **adRsnAddNew**, **adRsnDelete**, **adRsnUpdate**, **adRsnUndoUpdate**, **adRsnUndoAddNew**, **adRsnUndoDelete** et **adRsnFirstChange** lorsqu’ils se produisent.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

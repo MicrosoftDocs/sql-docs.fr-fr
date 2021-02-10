@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 90cb636a-9416-48a4-b4eb-bb11bbd40950
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: fd7de2b8d8576bedce58e175a5eea53e7307c10f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ac55f8536489b07804fa36882bcbddf3c2ec414a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171083"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100024645"
 ---
 # <a name="field-visual-c-syntax-index-with-import"></a>Field (Visual C++ index de syntaxe avec #import)
 ## <a name="methods"></a>Méthodes  

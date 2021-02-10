@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: b4aa5714-916b-48b8-8b09-cc2708379602
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 07c5a4bc4db5fc05cb24ee51ac7a9ec989dd1e29
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 09cb9764b113d01d8742d3fe951c55991dc3c8cf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171401"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100026017"
 ---
 # <a name="copyto-method-ado"></a>CopyTo, méthode (ADO)
 Copie le nombre spécifié de caractères ou d’octets (selon le [type](./type-property-ado-stream.md)) dans le [flux](./stream-object-ado.md) vers un autre objet de **flux** .  
@@ -42,7 +42,7 @@ Stream.CopyTo DestStream, NumChars
 >  Le paramètre *DestStream* ne peut pas être un proxy d’objet de **flux** , car cela nécessite l’accès à une interface privée sur l’objet de **flux** qui ne peut pas être à distance au client.  
   
  *NumChars*  
- Facultatif. Valeur **entière** qui spécifie le nombre d’octets ou de caractères à copier à partir de la position actuelle dans le **flux** source dans le **flux** de destination. La valeur par défaut est-1, qui spécifie que tous les caractères ou octets sont copiés de la position actuelle vers [EOS](./eos-property.md).  
+ facultatif. Valeur **entière** qui spécifie le nombre d’octets ou de caractères à copier à partir de la position actuelle dans le **flux** source dans le **flux** de destination. La valeur par défaut est-1, qui spécifie que tous les caractères ou octets sont copiés de la position actuelle vers [EOS](./eos-property.md).  
   
 ## <a name="remarks"></a>Notes  
  Cette méthode copie le nombre spécifié de caractères ou d’octets, en commençant à la position actuelle spécifiée par la propriété [position](./position-property-ado.md) . Si le nombre spécifié est supérieur au nombre d’octets disponibles jusqu’à **EOS**, seuls les caractères ou octets de la position actuelle vers **EOS** sont copiés. Si la valeur de *NUMCHARS* est-1, ou si elle est omise, tous les caractères ou octets à partir de la position actuelle sont copiés.  

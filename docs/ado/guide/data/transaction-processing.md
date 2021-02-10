@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 74ab6706-e2dc-42cb-af77-dbc58a9cf4ce
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: bde1338e56f4685359f8d1260b36c39a24455083
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: f534d38ea52e942a00e2e95f837b096ed6fef0f1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88979330"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032381"
 ---
 # <a name="transaction-processing"></a>Traitement des transactions
 Une *transaction* délimite le début et la fin d’une série d’opérations d’accès aux données exécutées sur une connexion. Selon les fonctionnalités transactionnelles de votre source de données, l’objet de **connexion** vous permet également de créer et de gérer des transactions. Par exemple, en utilisant le fournisseur Microsoft OLE DB pour SQL Server pour accéder à une base de données sur Microsoft SQL Server, vous pouvez créer plusieurs transactions imbriquées pour les commandes que vous exécutez.  
@@ -30,7 +30,7 @@ Une *transaction* délimite le début et la fin d’une série d’opérations d
   
  Si vous annulez la transaction, ou si l’une de ses opérations échoue, le résultat sera comme si aucune des opérations de la transaction ne se produisait. La source de données restera telle qu’elle était avant le début de la transaction.  
   
- ADO fournit les méthodes suivantes pour contrôler les transactions : **BeginTrans**, **CommitTrans**et **RollbackTrans**. Utilisez ces méthodes avec un objet de **connexion** lorsque vous souhaitez enregistrer ou annuler une série de modifications apportées aux données sources en tant qu’unité unique. Par exemple, pour transférer de l’argent entre les comptes, vous devez soustraire un montant d’un et ajouter le même montant à l’autre. Si l’une des mises à jour échoue, les comptes ne sont plus équilibrés. L’apport de ces modifications dans une transaction ouverte garantit que toutes les modifications ou aucune d’entre elles sont effectuées.  
+ ADO fournit les méthodes suivantes pour contrôler les transactions : **BeginTrans**, **CommitTrans** et **RollbackTrans**. Utilisez ces méthodes avec un objet de **connexion** lorsque vous souhaitez enregistrer ou annuler une série de modifications apportées aux données sources en tant qu’unité unique. Par exemple, pour transférer de l’argent entre les comptes, vous devez soustraire un montant d’un et ajouter le même montant à l’autre. Si l’une des mises à jour échoue, les comptes ne sont plus équilibrés. L’apport de ces modifications dans une transaction ouverte garantit que toutes les modifications ou aucune d’entre elles sont effectuées.  
   
 > [!NOTE]
 >  Tous les fournisseurs ne prennent pas en charge les transactions. Vérifiez que la propriété «**transaction DDL**» définie par le fournisseur apparaît dans la collection de [Propriétés](../../../ado/reference/ado-api/properties-collection-ado.md) de l’objet de **connexion** , ce qui indique que le fournisseur prend en charge les transactions. Si le fournisseur ne prend pas en charge les transactions, l’appel de l’une de ces méthodes renverra une erreur.  

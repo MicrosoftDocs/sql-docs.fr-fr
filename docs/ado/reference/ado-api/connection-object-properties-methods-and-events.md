@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: f571b74d-b796-4009-9c66-6a36ab995a2a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: efbf7d9c27b7ba9c4be39e81bf0c7ea3296c0bf4
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 22f29c0cccecb21cdab5463b76357a61a6729a7d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171449"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100026469"
 ---
 # <a name="connection-object-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet Connection
 ## <a name="propertiescollections"></a>Propriétés/collections  

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e8ca40e8-459c-40e2-8dd3-3ec6d5ee7b51
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ec23a74b26be84684965c8e81fffbfd827a9981a
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: e3ac822fef8270649240e18fc9bc061203c88bb1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88980510"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032761"
 ---
 # <a name="hybrid-commands"></a>Commandes hybrides
 Les commandes hybrides sont des commandes partiellement paramétrées. Par exemple :  

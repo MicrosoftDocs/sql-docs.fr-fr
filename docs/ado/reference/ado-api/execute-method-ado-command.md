@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: f84a5ff3-0528-4ad7-9bea-9a15103378dd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1bc27de85c9c8e1e47ec3fb89ec8fadce07713c3
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 74e86bfb03ca77d103594009b7ddbbddb6b5b894
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171157"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100034159"
 ---
 # <a name="execute-method-ado-command"></a>Execute, méthode (commande ADO)
 Exécute la requête, l’instruction SQL ou la procédure stockée spécifiée dans la propriété [CommandText](../../../ado/reference/ado-api/commandtext-property-ado.md) ou [CommandStream](../../../ado/reference/ado-api/commandstream-property-ado.md) de l' [objet Command](../../../ado/reference/ado-api/command-object-ado.md).  
@@ -39,13 +39,13 @@ Set recordset = command.Execute( RecordsAffected, Parameters, Options )
   
 #### <a name="parameters"></a>Paramètres  
  *RecordsAffected*  
- Facultatif. Variable de **type long** à laquelle le fournisseur retourne le nombre d’enregistrements affectés par l’opération. Le paramètre *RecordsAffected* s’applique uniquement aux requêtes d’action ou aux procédures stockées. *RecordsAffected* ne retourne pas le nombre d’enregistrements renvoyés par une requête ou une procédure stockée qui retourne un résultat. Pour obtenir ces informations, utilisez la propriété [RecordCount](../../../ado/reference/ado-api/recordcount-property-ado.md) . La méthode **Execute** ne retourne pas les informations correctes lorsqu’elle est utilisée avec **adAsyncExecute**, simplement parce que lorsqu’une commande est exécutée de manière asynchrone, le nombre d’enregistrements affectés n’est peut-être pas encore connu au moment du retour de la méthode.  
+ facultatif. Variable de **type long** à laquelle le fournisseur retourne le nombre d’enregistrements affectés par l’opération. Le paramètre *RecordsAffected* s’applique uniquement aux requêtes d’action ou aux procédures stockées. *RecordsAffected* ne retourne pas le nombre d’enregistrements renvoyés par une requête ou une procédure stockée qui retourne un résultat. Pour obtenir ces informations, utilisez la propriété [RecordCount](../../../ado/reference/ado-api/recordcount-property-ado.md) . La méthode **Execute** ne retourne pas les informations correctes lorsqu’elle est utilisée avec **adAsyncExecute**, simplement parce que lorsqu’une commande est exécutée de manière asynchrone, le nombre d’enregistrements affectés n’est peut-être pas encore connu au moment du retour de la méthode.  
   
  *Paramètres*  
- Facultatif. Tableau **Variant** de valeurs de paramètre utilisées conjointement avec la chaîne d’entrée ou le flux spécifié dans **CommandText** ou **CommandStream**. (Les paramètres de sortie ne retournent pas les valeurs correctes lorsqu’ils sont passés dans cet argument.)  
+ facultatif. Tableau **Variant** de valeurs de paramètre utilisées conjointement avec la chaîne d’entrée ou le flux spécifié dans **CommandText** ou **CommandStream**. (Les paramètres de sortie ne retournent pas les valeurs correctes lorsqu’ils sont passés dans cet argument.)  
   
  *Options*  
- Facultatif. Valeur de **type long** qui indique comment le fournisseur doit évaluer le [CommandText](../../../ado/reference/ado-api/commandtext-property-ado.md) ou la propriété [CommandStream](../../../ado/reference/ado-api/commandstream-property-ado.md) de l’objet [Command](../../../ado/reference/ado-api/command-object-ado.md) . Peut être une valeur de masque de masque créée à l’aide de valeurs [CommandTypeEnum](../../../ado/reference/ado-api/commandtypeenum.md) et/ou [ExecuteOptionEnum](../../../ado/reference/ado-api/executeoptionenum.md) . Par exemple, vous pouvez utiliser **adCmdText** et **adExecuteNoRecords** en combinaison si vous souhaitez qu’ADO évalue la valeur de la propriété **CommandText** en tant que texte, et indique que la commande doit ignorer et ne pas retourner les enregistrements qui peuvent être générés lors de l’exécution du texte de la commande.  
+ facultatif. Valeur de **type long** qui indique comment le fournisseur doit évaluer le [CommandText](../../../ado/reference/ado-api/commandtext-property-ado.md) ou la propriété [CommandStream](../../../ado/reference/ado-api/commandstream-property-ado.md) de l’objet [Command](../../../ado/reference/ado-api/command-object-ado.md) . Peut être une valeur de masque de masque créée à l’aide de valeurs [CommandTypeEnum](../../../ado/reference/ado-api/commandtypeenum.md) et/ou [ExecuteOptionEnum](../../../ado/reference/ado-api/executeoptionenum.md) . Par exemple, vous pouvez utiliser **adCmdText** et **adExecuteNoRecords** en combinaison si vous souhaitez qu’ADO évalue la valeur de la propriété **CommandText** en tant que texte, et indique que la commande doit ignorer et ne pas retourner les enregistrements qui peuvent être générés lors de l’exécution du texte de la commande.  
   
 > [!NOTE]
 >  Utilisez la  valeur ExecuteOptionEnum **adExecuteNoRecords** pour améliorer les performances en minimisant le traitement interne. Si **adExecuteStream** a été spécifié, les options **adAsyncFetch** et **adAsynchFetchNonBlocking** sont ignorées. N’utilisez pas les valeurs **CommandTypeEnum** de **adCmdFile** ou **adCmdTableDirect** avec l' **instruction EXECUTE**. Ces valeurs ne peuvent être utilisées qu’en tant qu’options avec les méthodes d' [ouverture](../../../ado/reference/ado-api/open-method-ado-recordset.md) et de [rerequête](../../../ado/reference/ado-api/requery-method.md) d’un **Recordset**.  

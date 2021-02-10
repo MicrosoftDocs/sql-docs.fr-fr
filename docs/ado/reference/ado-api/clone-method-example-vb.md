@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 64cb1753-e074-4a2d-8b74-7c35f3f6f64d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0d454097154d70c0cfd367458f52b3ae50d2097f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 19afe68d5cfdff6e577c9d09d786dd245b123773
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164712"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100034970"
 ---
 # <a name="clone-method-example-vb"></a>Clone, exemple de méthode (VB)
 Cet exemple utilise la méthode [clone](./clone-method-ado.md) pour créer des copies d’un [jeu d’enregistrements](./recordset-object-ado.md) , puis permet à l’utilisateur de positionner le pointeur d’enregistrement de chaque copie indépendamment.  

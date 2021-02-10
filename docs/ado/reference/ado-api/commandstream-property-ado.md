@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f78f61b6-87e0-48dc-961e-83d0e20da58e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 817ee84681b4b13895bc493034ceabade1f4773e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b2b7618cae464f8d4fdbafb0ebcab09551749b90
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167759"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100034829"
 ---
 # <a name="commandstream-property-ado"></a>CommandStream, propriété (ADO)
 Indique le flux utilisé comme entrée pour un objet [Command](./command-object-ado.md) .  

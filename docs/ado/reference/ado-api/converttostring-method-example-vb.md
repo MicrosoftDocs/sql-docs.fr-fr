@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 31731e4f-3c0c-451e-8cbc-c9df28fabf6c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 18a44348584ec0f7894910300073b9c221566098
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d195a15bc0d9b513fa1983e2dded896664840664
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171415"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100026064"
 ---
 # <a name="converttostring-method-example-vb"></a>ConvertToString, exemple de méthode (VB)
 ```  

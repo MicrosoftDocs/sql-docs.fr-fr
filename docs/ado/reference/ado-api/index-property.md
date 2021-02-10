@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1c79e271-21ec-41a8-8163-c5e89f0001a7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9e8c346ac48092d7a5dcaf09068bb64d63316a38
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b722cb4f3842f74491e7cfe9ae21b0575094e8af
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170955"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100020639"
 ---
 # <a name="index-property"></a>Index, propriété
 Indique le nom de l’index actuellement en vigueur pour un objet [Recordset](./recordset-object-ado.md) .  

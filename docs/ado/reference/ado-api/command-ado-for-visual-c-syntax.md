@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cf12cbd1-25f7-4bb5-aa94-0fe823b3b6d6
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b6b9dc331d75370b515253f57a8c249fc54dac49
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 219ed3b9ea7555ceec696f9f868ff1fd793c89bb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171499"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100026965"
 ---
 # <a name="command-ado-for-visual-c-syntax"></a>Command (syntaxe ADO pour Visual C++)
 ## <a name="methods"></a>Méthodes  

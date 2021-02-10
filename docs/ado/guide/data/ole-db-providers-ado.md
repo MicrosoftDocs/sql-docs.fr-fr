@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 6e0488c3-934d-4976-99dc-65c580dc7a3c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 25eea144ab0f9301f79a74773258cf399802af9d
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 7e70762a2cbaa6e2dd3d8d91b824591799605748
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88980180"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032661"
 ---
 # <a name="ole-db-providers-ado"></a>Fournisseurs OLE DB (ADO)
 OLE DB définit un ensemble d’interfaces COM pour fournir aux applications un accès uniforme aux données stockées dans diverses sources d’informations. Cette approche permet à une source de données de partager ses données via les interfaces qui prennent en charge la quantité de fonctionnalités SGBD appropriées à la source de données. Par défaut, l’architecture hautes performances de OLE DB est basée sur l’utilisation d’un modèle de services flexible basé sur les composants. Au lieu d’avoir un nombre prescrit de couches intermédiaires entre l’application et les données, OLE DB ne nécessite que le nombre de composants nécessaires pour accomplir une tâche particulière.  
   
- Supposons, par exemple, qu’un utilisateur souhaite exécuter une requête. Considérez les scénarios suivants :  
+ Supposons, par exemple, qu’un utilisateur souhaite exécuter une requête. Examinez les scénarios suivants :  
   
 -   Les données se trouvent dans une base de données relationnelle pour laquelle il existe actuellement un pilote ODBC mais aucun fournisseur de OLE DB natif : l’application utilise ADO pour communiquer avec le fournisseur OLE DB pour ODBC, qui charge ensuite le pilote ODBC approprié. Le pilote passe l’instruction SQL au SGBD, qui récupère les données.  
   

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 35033910-623b-449a-a57d-baff3ed5ab8f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c3b910450302c83486979f59d019405b97013c22
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 15d8a58584a70be849050d32733a73149e865f69
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171389"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100026026"
 ---
 # <a name="count-property-example-vb"></a>Count, exemple de propriétés (VB)
 Cet exemple illustre la propriété [Count](./count-property-ado.md) avec deux collections dans la base de données ***Employee** _. La propriété obtient le nombre d’objets dans chaque collection et définit la limite supérieure pour les boucles qui énumèrent ces collections. Une autre façon d’énumérer ces collections sans utiliser la propriété _ *Count** consiste à utiliser des `For Each...Next` instructions.  

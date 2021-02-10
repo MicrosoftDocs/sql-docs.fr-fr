@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 1eb9209c-602c-4507-b0c2-6527a599b67d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d445a6bfc705821b49408027c13ef1474cdc0d94
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 81caf2da7f342cc7c31d1e4cd2bbad5b83852e9a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167570"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100034399"
 ---
 # <a name="delete-method-ado-recordset"></a>Delete, méthode (objet Recordset ADO)
 Supprime l’enregistrement en cours ou un groupe d’enregistrements.  

@@ -1,6 +1,6 @@
 ---
 description: Curseurs avant uniquement
-title: Curseurs avant uniquement | Microsoft Docs
+title: Curseurs de Forward-Only | Microsoft Docs
 ms.prod: sql
 ms.prod_service: connectivity
 ms.technology: ado
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 2b1e062f-3294-4a6f-8241-a17045c4df18
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1ccf9d679d158b6f89ef6842b427c315078b99f6
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 0ac51891368a5551c29190de959f8a9559d03b4e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991240"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100033139"
 ---
 # <a name="forward-only-cursors"></a>Curseurs avant uniquement
 Le type de curseur par défaut classique, appelé curseur avant uniquement (ou non défilant), ne peut se déplacer que vers l’avant dans le jeu de résultats. Un curseur avant uniquement ne prend pas en charge le défilement (la possibilité de se déplacer vers l’avant et vers l’arrière dans le jeu de résultats); Il prend uniquement en charge l’extraction de lignes du début jusqu’à la fin du jeu de résultats. Avec certains curseurs avant uniquement (par exemple, avec la bibliothèque de curseurs SQL Server), toutes les instructions d’insertion, de mise à jour et de suppression effectuées par l’utilisateur actuel (ou validées par d’autres utilisateurs) qui affectent les lignes du jeu de résultats sont visibles lors de l’extraction des lignes. Cependant, étant donné que le curseur ne permet pas le défilement arrière, les modifications apportées aux lignes de la base de données après l’extraction d’une ligne ne sont pas visibles par le biais du curseur.  

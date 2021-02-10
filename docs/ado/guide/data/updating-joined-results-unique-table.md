@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: d52e6926-5c22-43dc-9f32-7b32c1a071e2
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 659ae835cb14a71018de651db83d5d7b934b43ae
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: b17e1b7bdac37e6f170833fda83233017643526b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88979130"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032311"
 ---
 # <a name="updating-joined-results-unique-table"></a>Mise à jour des résultats d’une jointure : table unique
 ADO vous permet de contrôler étroitement les modifications apportées à une table de base particulière dans un jeu d’enregistrements formé par une opération de jointure sur plusieurs tables de base à l’aide de la propriété dynamique table unique. Pour plus d’informations sur l’utilisation d’une table unique, reportez-vous aux rubriques de référence du programmeur ADO sur les propriétés dynamiques de la table unique et Update Resync.  

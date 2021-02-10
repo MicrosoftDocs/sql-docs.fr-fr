@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c611f857-d6b0-4dca-8925-f4a02e769eb0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: aa12f6e7c6e2451f6323f4d25dfed6894d7b5c26
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ffd44947f767aa98a835d89d7809b4cb31667615
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171464"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100034809"
 ---
 # <a name="commandtimeout-property-ado"></a>CommandTimeout, propriété (ADO)
 Indique le délai d’attente lors de l’exécution d’une commande avant de mettre fin à la tentative et de générer une erreur.  

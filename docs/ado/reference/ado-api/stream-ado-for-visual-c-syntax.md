@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dddcceef-9296-4fb3-8eca-94b17d0148de
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4f6ee4566e977115e3b94a562f06a9a836235e80
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c9feb5c9291b0d3ee72b88248c03b2c0fe2e8f49
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166430"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100020378"
 ---
 # <a name="stream-ado-for-visual-c-syntax"></a>Stream (syntaxe ADO pour Visual C++)
 ## <a name="methods"></a>Méthodes  

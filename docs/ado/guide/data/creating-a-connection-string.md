@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 14eae122-2d1e-40c8-b88e-b7cb8dfbc93b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0fcd3b23a6aeaa86b33650acf677dc132e8219d1
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: eda5438d4fbda93b9e8c19602b9236d1812e6826
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991500"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100033289"
 ---
 # <a name="creating-a-connection-string"></a>Création d’une chaîne de connexion
 Une chaîne de connexion se compose d’une liste de paires argument/valeur (c’est-à-dire des paramètres), séparées par des points-virgules. Par exemple :  

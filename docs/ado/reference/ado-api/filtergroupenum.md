@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b22e725e-84bd-4286-a070-290c278c3783
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8b28b3f23d1df661e5a142d85c3a066acfbf2f50
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 27b8b217287f3c623fc626de1cb46dcc2eed5394
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171034"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100024595"
 ---
 # <a name="filtergroupenum"></a>FilterGroupEnum
 Spécifie le groupe d’enregistrements à filtrer à partir d’un [jeu d’enregistrements](./recordset-object-ado.md).  

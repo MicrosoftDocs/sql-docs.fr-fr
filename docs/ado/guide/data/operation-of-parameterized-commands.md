@@ -14,19 +14,19 @@ helpviewer_keywords:
 ms.assetid: 4fae0d54-83b6-4ead-99cc-bcf532daa121
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 91fe315304cc2be0ccfb8c638665ce699c75e248
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 55eaf3798ee8d14a776da14010b4b6617d0e2723
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88980170"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032651"
 ---
 # <a name="operation-of-parameterized-commands"></a>Fonctionnement des commandes paramétrées
-Si vous utilisez un **jeu d’enregistrements**enfant volumineux, en particulier par rapport à la taille du **Recordset**parent, mais que vous n’avez besoin d’accéder qu’à quelques chapitres enfants, il peut s’avérer plus efficace d’utiliser une commande paramétrable.  
+Si vous utilisez un **jeu d’enregistrements** enfant volumineux, en particulier par rapport à la taille du **Recordset** parent, mais que vous n’avez besoin d’accéder qu’à quelques chapitres enfants, il peut s’avérer plus efficace d’utiliser une commande paramétrable.  
   
- Une *commande non paramétrée* récupère l’ensemble des **jeux d’enregistrements**parents et enfants, ajoute une colonne de chapitre au parent, puis assigne une référence au chapitre enfant associé pour chaque ligne parente.  
+ Une *commande non paramétrée* récupère l’ensemble des **jeux d’enregistrements** parents et enfants, ajoute une colonne de chapitre au parent, puis assigne une référence au chapitre enfant associé pour chaque ligne parente.  
   
- Une *commande paramétrable* récupère l’ensemble du **Recordset**parent, mais n’extrait que le jeu **d’enregistrements** du chapitre lors de l’accès à la colonne de chapitre. Cette différence de stratégie de récupération peut entraîner des avantages significatifs en matière de performances.  
+ Une *commande paramétrable* récupère l’ensemble du **Recordset** parent, mais n’extrait que le jeu **d’enregistrements** du chapitre lors de l’accès à la colonne de chapitre. Cette différence de stratégie de récupération peut entraîner des avantages significatifs en matière de performances.  
   
  Par exemple, vous pouvez spécifier les éléments suivants :  
   
@@ -45,13 +45,13 @@ SHAPE {SELECT * FROM customer}
   
 1.  La *commande parent-Command* est exécutée et retourne un **jeu d’enregistrements** parent de la table Customers.  
   
-2.  Une colonne de chapitre est ajoutée au **jeu d’enregistrements**parent.  
+2.  Une colonne de chapitre est ajoutée au **jeu d’enregistrements** parent.  
   
-3.  Lorsque vous accédez à la colonne de chapitre d’une ligne parente, la *commande enfant* est exécutée à l’aide de la valeur de Customer. cust_id comme valeur du paramètre.  
+3.  Lorsque vous accédez à la colonne de chapitre d’une ligne parente, la *commande enfant* est exécutée à l’aide de la valeur de la Customer.cust_id comme valeur du paramètre.  
   
-4.  Toutes les lignes de l’ensemble de lignes du fournisseur de données créé à l’étape 3 sont utilisées pour remplir le **Recordset**enfant. Dans cet exemple, il s’agit de toutes les lignes de la table Orders dans lesquelles la cust_id est égale à la valeur de Customer. cust_id. Par défaut, le **jeu d’enregistrements**enfant est mis en cache sur le client jusqu’à ce que toutes les références au **Recordset** parent soient libérées. Pour modifier ce comportement, affectez la valeur **false**aux **lignes enfants du cache** de [propriétés dynamiques](../../reference/ado-api/ado-dynamic-property-index.md) du **jeu d’enregistrements** .  
+4.  Toutes les lignes de l’ensemble de lignes du fournisseur de données créé à l’étape 3 sont utilisées pour remplir le **Recordset** enfant. Dans cet exemple, il s’agit de toutes les lignes de la table Orders dans lesquelles la cust_id est égale à la valeur de customer.cust_id. Par défaut, le **jeu d’enregistrements** enfant est mis en cache sur le client jusqu’à ce que toutes les références au **Recordset** parent soient libérées. Pour modifier ce comportement, affectez la valeur **false** aux **lignes enfants du cache** de [propriétés dynamiques](../../reference/ado-api/ado-dynamic-property-index.md) du **jeu d’enregistrements** .  
   
-5.  Une référence aux lignes enfants récupérées (autrement dit, le chapitre du **Recordset**enfant) est placée dans la colonne de chapitre de la ligne actuelle de l' **objet Recordset**parent.  
+5.  Une référence aux lignes enfants récupérées (autrement dit, le chapitre du **Recordset** enfant) est placée dans la colonne de chapitre de la ligne actuelle de l' **objet Recordset** parent.  
   
 6.  Les étapes 3-5 sont répétées lors de l’accès à la colonne de chapitre d’une autre ligne.  
   

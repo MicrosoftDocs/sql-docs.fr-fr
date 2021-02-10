@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b71346cb-3b09-4b8c-a600-976171a1c336
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 337d31ae8b52457df2d54ddc73a7615e78752bb0
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 3771ecab9a598c0cd3e40f316ce00ba95cbce2f6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171049"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100024605"
 ---
 # <a name="filter-and-recordcount-properties-example-vc"></a>Filter et RecordCount, exemples de propriétés (VC + +)
 Cet exemple utilise la propriété [Filter](./filter-property.md) pour ouvrir un nouveau [jeu d’enregistrements](./recordset-object-ado.md) en fonction d’une condition spécifiée appliquée à un **jeu d’enregistrements** existant. Elle utilise la propriété [RecordCount](./recordcount-property-ado.md) pour afficher le nombre d’enregistrements dans les deux **jeux d’enregistrements**. La fonction FilterField est requise pour l’exécution de cette procédure.  

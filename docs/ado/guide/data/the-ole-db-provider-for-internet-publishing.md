@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 4869aafa-7401-4ce1-93ce-45406a60274f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7556d3857142a4762fd411f5175a38c2e4d58cf3
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 9282bdc81d71ecd938f3d115678769915f8e3367
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88979360"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032401"
 ---
 # <a name="the-ole-db-provider-for-internet-publishing"></a>Fournisseur OLE DB pour la publication Internet
-Les objets d' [enregistrement](../../../ado/reference/ado-api/record-object-ado.md) et de [flux](../../../ado/reference/ado-api/stream-object-ado.md) ADO peuvent être utilisés avec le fournisseur Microsoft OLE DB pour la publication Internet (fournisseur de publication Internet) afin d’accéder à des ressources et de les manipuler, telles que des dossiers Web ou des fichiers pris en charge par Microsoft FrontPage. Avec ADO, vous pouvez spécifier la source d’un **enregistrement**, d’un **flux**ou d’un [jeu d’enregistrements](../../../ado/reference/ado-api/recordset-object-ado.md) comme URL. Vous pouvez ensuite charger, télécharger, déplacer, copier et supprimer des ressources, ou manipuler directement les propriétés des ressources.  
+Les objets d' [enregistrement](../../../ado/reference/ado-api/record-object-ado.md) et de [flux](../../../ado/reference/ado-api/stream-object-ado.md) ADO peuvent être utilisés avec le fournisseur Microsoft OLE DB pour la publication Internet (fournisseur de publication Internet) afin d’accéder à des ressources et de les manipuler, telles que des dossiers Web ou des fichiers pris en charge par Microsoft FrontPage. Avec ADO, vous pouvez spécifier la source d’un **enregistrement**, d’un **flux** ou d’un [jeu d’enregistrements](../../../ado/reference/ado-api/recordset-object-ado.md) comme URL. Vous pouvez ensuite charger, télécharger, déplacer, copier et supprimer des ressources, ou manipuler directement les propriétés des ressources.  
   
  Pour obtenir un exemple de code qui utilise des **enregistrements** et des **flux** avec le fournisseur de publication Internet, consultez [scénario de publication Internet](../../../ado/guide/data/internet-publishing-scenario.md).  
   

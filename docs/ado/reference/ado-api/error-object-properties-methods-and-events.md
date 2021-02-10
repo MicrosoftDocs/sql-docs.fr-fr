@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: cd69e4b7-82bf-4ffc-bc53-c535ba20161f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6018c1d975d57e756345083b7228fd5e0f319ab9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 12e55b2f2847d4ae90967b01d8e394ea0e31a527
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167469"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100034209"
 ---
 # <a name="error-object-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet Error
 ## <a name="properties"></a>Propriétés  
@@ -41,4 +41,4 @@ ms.locfileid: "99167469"
  Aucun.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Error, objet](../../../ado/reference/ado-api/error-object.md)
+ [Objet Error](../../../ado/reference/ado-api/error-object.md)

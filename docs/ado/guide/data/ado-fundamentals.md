@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: d6a66928-e68f-4c38-b87a-838c5de50a28
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: dedb841f9889d71da89107766ff26e3f870d1193
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: fdf7580f3a04a15fd75fb6d2c7712a694dfd2175
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991660"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100033759"
 ---
 # <a name="ado-fundamentals"></a>Concepts de base d’ADO
 ADO offre aux développeurs un modèle d’objet logique puissant pour accéder, modifier et mettre à jour les données à partir d’un large éventail de sources de données via des interfaces système OLE DB. L’utilisation la plus courante d’ADO est d’interroger une table ou des tables dans une base de données relationnelle, de récupérer et d’afficher les résultats dans une application, et peut-être de permettre aux utilisateurs de créer et d’enregistrer les modifications apportées aux données. Les autres tâches sont les suivantes :  
@@ -49,7 +49,7 @@ ADO offre aux développeurs un modèle d’objet logique puissant pour accéder,
   
 -   Liaison de champs de base de données à des composants qui prennent en charge les données.  
   
--   Création **d’un jeu d’enregistrements**distants et déconnectés.  
+-   Création **d’un jeu d’enregistrements** distants et déconnectés.  
   
  ADO expose un large éventail d’options et de paramètres pour offrir une telle flexibilité. Par conséquent, il est important d’adopter une approche méthodique pour apprendre à utiliser ADO dans une application, en divisant chacun de vos objectifs en éléments gérables.  
   

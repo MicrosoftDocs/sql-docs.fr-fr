@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 05f7cc97-b806-41d2-939d-a955d10844c4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0e87c17de8cc9b5fcede937c3678cb5b7b499712
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 928a49f833a95ab6911b04b3270cbf86378f1ac4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99161800"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100031506"
 ---
 # <a name="actualsize-and-definedsize-properties-example-vc"></a>ActualSize et DefinedSize, exemple de propriétés (VC + +)
 Cet exemple utilise les propriétés [ActualSize](./actualsize-property-ado.md) et [DefinedSize](./definedsize-property.md) pour afficher la taille définie et la taille réelle d’un champ.  

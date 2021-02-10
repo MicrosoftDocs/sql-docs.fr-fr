@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7d4a5496-ec2d-4936-b36a-7049a82be4b4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 53076cb3787e334955a727bf33502c80d289aac4
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d8789e0c2819bfd4a976dfa047b6081284e7292d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167441"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100034179"
 ---
 # <a name="eventreasonenum"></a>EventReasonEnum
 Spécifie la raison pour laquelle un événement a eu lieu.  

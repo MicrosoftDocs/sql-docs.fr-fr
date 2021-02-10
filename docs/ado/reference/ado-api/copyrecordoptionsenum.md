@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2fa4eec5-d50b-4fd3-8ae7-40af441ba12b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2afe394c4b6251ea21d7245d55ab905ba6347fcc
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2ea414447624d8b1aa7c27e250a92dc227020304
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167688"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100034609"
 ---
 # <a name="copyrecordoptionsenum"></a>CopyRecordOptionsEnum
 Spécifie le comportement de la méthode [CopyRecord](./copyrecord-method-ado.md) .  

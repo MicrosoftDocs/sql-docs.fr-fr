@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 301716fd-81fc-40eb-8a04-221ef7ab410e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 53cd3be90492bb601c06138a3829d428d3abcaeb
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: fa10ddcef5adfd340d2cbd690ff54d8ab62f35ff
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167397"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100034069"
 ---
 # <a name="fetchprogress-event-ado"></a>FetchProgress, événement (ADO)
 L’événement **FetchProgress** est appelé régulièrement au cours d’une longue opération asynchrone pour signaler le nombre de lignes qui ont été récupérées actuellement dans le [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md).  

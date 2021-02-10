@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 38ca4e1b-c109-4fba-b590-bdd6994f770e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6e0abc6c184911e91cbdc01e1825f7808208a74a
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: add660176cd65db7c5859c2372017b1eb142aed7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99159302"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100031668"
 ---
 # <a name="absolutepage-pagecount-and-pagesize-properties-example-vc"></a>AbsolutePage, PageCount et PageSize, propriétés, exemple (VC + +)
-Cet exemple utilise les propriétés [AbsolutePage](./absolutepage-property-ado.md), [PageCount](./pagecount-property-ado.md)et [pageSize](./pagesize-property-ado.md) pour afficher des noms et des dates d’embauche à partir de la table ***Employee** _, cinq enregistrements à la fois.  
+Cet exemple utilise les propriétés [AbsolutePage](./absolutepage-property-ado.md), [PageCount](./pagecount-property-ado.md)et [pageSize](./pagesize-property-ado.md) pour afficher des noms et des dates d’embauche à partir de la table ***Employee*** , cinq enregistrements à la fois.  
   
 ```  
 // BeginAbsolutePageCpp.cpp  
@@ -82,7 +82,7 @@ void AbsolutePageX() {
    _RecordsetPtr pRstEmployees = NULL;  
   
    // Define Other Variables.    Interface Pointer declared.(VC++ Extensions)  
-   IADORecordBinding _picRs = NULL;  
+   IADORecordBinding *picRs = NULL;  
    CEmployeeRs emprs;   // C++ class object   
    HRESULT hr = S_OK;  
    _bstr_t strMessage;  

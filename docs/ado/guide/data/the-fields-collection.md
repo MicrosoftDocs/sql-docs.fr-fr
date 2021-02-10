@@ -14,17 +14,17 @@ helpviewer_keywords:
 ms.assetid: 574cf36e-e5f5-403b-983c-749ef93c108f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 45bad5289a33b5b1f76807f1f7a9da62044dafc2
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 7dee12a0cdb274f58bb3dc79fddeb057e4913e81
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88979380"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032411"
 ---
 # <a name="the-fields-collection"></a>Fields, collection
 La collection **Fields** est l’une des collections intrinsèques d’ADO. Une collection est un ensemble ordonné d’éléments qui peuvent être référencés sous la forme d’une unité. Pour plus d’informations sur les collections ADO, consultez [le modèle objet ADO](../../../ado/guide/data/ado-objects-and-collections.md).  
   
- La collection **Fields** contient un objet **Field** pour chaque champ (colonne) dans le **Recordset**. Comme toutes les collections ADO, elle comporte des propriétés **Count** et **Item** , ainsi que des méthodes d' **Ajout** et d' **actualisation** . Il comporte également des méthodes **CancelUpdate**, **Delete**, **Resync**et **Update** , qui ne sont pas disponibles pour d’autres collections ADO.  
+ La collection **Fields** contient un objet **Field** pour chaque champ (colonne) dans le **Recordset**. Comme toutes les collections ADO, elle comporte des propriétés **Count** et **Item** , ainsi que des méthodes d' **Ajout** et d' **actualisation** . Il comporte également des méthodes **CancelUpdate**, **Delete**, **Resync** et **Update** , qui ne sont pas disponibles pour d’autres collections ADO.  
   
 ## <a name="examining-the-fields-collection"></a>Examen de la collection Fields  
  Examinez la collection de **champs** de l’exemple **d’objet Recordset** présenté dans cette section. L’exemple **d’objet Recordset** a été dérivé de l’instruction SQL  
@@ -75,7 +75,7 @@ objField = objRecordset.Fields(0)
 ## <a name="adding-fields-to-a-recordset"></a>Ajout de champs à un Recordset  
  La méthode **Append** est utilisée pour ajouter des champs à un **Recordset**.  
   
- Vous pouvez utiliser la méthode **Append** pour fabriquer un **jeu d’enregistrements** par programmation sans ouvrir de connexion à une source de données. Une erreur d’exécution se produit si la méthode **Append** est appelée sur la collection **Fields** d’un **Recordset** ouvert ou sur un **Recordset** dans lequel la propriété **ActiveConnection** a été définie. Vous pouvez ajouter des champs uniquement à un **jeu d’enregistrements** qui n’est pas ouvert et qui n’a pas encore été connecté à une source de données. Toutefois, pour spécifier des valeurs pour les **champs**nouvellement ajoutés, vous devez d’abord ouvrir le **jeu d’enregistrements** .  
+ Vous pouvez utiliser la méthode **Append** pour fabriquer un **jeu d’enregistrements** par programmation sans ouvrir de connexion à une source de données. Une erreur d’exécution se produit si la méthode **Append** est appelée sur la collection **Fields** d’un **Recordset** ouvert ou sur un **Recordset** dans lequel la propriété **ActiveConnection** a été définie. Vous pouvez ajouter des champs uniquement à un **jeu d’enregistrements** qui n’est pas ouvert et qui n’a pas encore été connecté à une source de données. Toutefois, pour spécifier des valeurs pour les **champs** nouvellement ajoutés, vous devez d’abord ouvrir le **jeu d’enregistrements** .  
   
  Les développeurs ont souvent besoin d’un emplacement pour stocker temporairement des données ou souhaitent que certaines données agissent comme si elles provenaient d’un serveur afin de pouvoir participer à la liaison de données dans une interface utilisateur. ADO (conjointement avec le [service de curseur Microsoft pour OLE DB](../../../ado/guide/appendixes/microsoft-cursor-service-for-ole-db-ado-service-component.md)) permet au développeur de créer un objet **Recordset** vide en spécifiant les informations de colonne et en appelant **Open**. Dans l’exemple suivant, trois nouveaux champs sont ajoutés à un nouvel objet **Recordset** . Le **jeu d'** enregistrements est ensuite ouvert, deux nouveaux enregistrements sont ajoutés et le **Recordset** est conservé dans un fichier. (Pour plus d’informations sur la persistance des **jeux d’enregistrements** , consultez [mise à jour et persistance des données](../../../ado/guide/data/updating-and-persisting-data.md).)  
   

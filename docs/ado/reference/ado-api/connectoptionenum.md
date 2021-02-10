@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bff07eeb-dee3-4e4e-9b2d-d56061ea744d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 257dd82d5740c89fd8ca9f8f8d1969d27b9301ba
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e159309a0fb1875851ff6ae0a7bf56ade908bafd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171424"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100026074"
 ---
 # <a name="connectoptionenum"></a>ConnectOptionEnum
 Spécifie si la méthode [Open](./open-method-ado-connection.md) d’un objet [Connection](./connection-object-ado.md) doit être retournée après l’établissement de la connexion (de façon synchrone) ou avant (de façon asynchrone).  

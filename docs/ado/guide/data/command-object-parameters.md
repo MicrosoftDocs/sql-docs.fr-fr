@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 10e7ef4a-78bf-4e91-931e-cbc6c065dd4c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2adb1e8d6dc516de2077416ce7e866efa6a03c54
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: a49f7099e45e92cac31653f5c3f08442dda2459b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991550"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100033319"
 ---
 # <a name="command-object-parameters"></a>Paramètres de l’objet Command
 La rubrique précédente a abordé la [création et l’exécution d’une commande simple](./creating-and-executing-a-simple-command.md). Une utilisation plus intéressante de l’objet de [commande](../../reference/ado-api/command-object-ado.md) est présentée dans l’exemple suivant, dans lequel la commande SQL a été paramétrée. Cette modification permet de réutiliser la commande, en passant chaque fois une valeur différente pour le paramètre. Étant donné que la propriété [Prepared Property](../../reference/ado-api/prepared-property-ado.md) de l’objet **Command** a la valeur **true**, ADO demande au fournisseur de compiler la commande spécifiée dans [CommandText](../../reference/ado-api/commandtext-property-ado.md) avant de l’exécuter pour la première fois. La commande compilée est également conservée en mémoire. Cela ralentit légèrement l’exécution de la commande la première fois qu’elle est exécutée en raison de la surcharge requise pour la préparer, mais entraîne un gain de performances chaque fois que la commande est appelée par la suite. Par conséquent, les commandes doivent être préparées uniquement si elles sont utilisées plus d’une fois.  
@@ -119,4 +119,4 @@ End Function
 'EndNewConnection  
 ```  
   
- Tous les fournisseurs ne prennent pas en charge les commandes préparées. Si le fournisseur ne prend pas en charge la préparation de la commande, il peut retourner une erreur dès que cette propriété a la valeur **true**. Si elle ne retourne pas d’erreur, elle ignore la demande de préparation de la commande et affecte la **valeur false**à la propriété **Prepared** .
+ Tous les fournisseurs ne prennent pas en charge les commandes préparées. Si le fournisseur ne prend pas en charge la préparation de la commande, il peut retourner une erreur dès que cette propriété a la valeur **true**. Si elle ne retourne pas d’erreur, elle ignore la demande de préparation de la commande et affecte la **valeur false** à la propriété **Prepared** .

@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 9666fdcc-0544-4ed7-a97b-c415f2a56d7e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 61793ca158cee6d4143128eae7fdecf3722ae61e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c5156f48f17d2d389646f4f752033cf88faf83f8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171377"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100025963"
 ---
 # <a name="createparameter-method-ado"></a>CreateParameter, méthode (ADO)
 Crée un nouvel objet de [paramètre](./parameter-object.md) avec les propriétés spécifiées.  
@@ -39,19 +39,19 @@ Set parameter = command.CreateParameter (Name, Type, Direction, Size, Value)
   
 #### <a name="parameters"></a>Paramètres  
  *Nom*  
- Facultatif. Valeur de **chaîne** qui contient le nom de l’objet de **paramètre** .  
+ facultatif. Valeur de **chaîne** qui contient le nom de l’objet de **paramètre** .  
   
  *Type*  
- Facultatif. Valeur [DataTypeEnum](./datatypeenum.md) qui spécifie le type de données de l’objet de **paramètre** .  
+ facultatif. Valeur [DataTypeEnum](./datatypeenum.md) qui spécifie le type de données de l’objet de **paramètre** .  
   
  *Sens*  
- Facultatif. Valeur [ParameterDirectionEnum](./parameterdirectionenum.md) qui spécifie le type d’objet de **paramètre** .  
+ facultatif. Valeur [ParameterDirectionEnum](./parameterdirectionenum.md) qui spécifie le type d’objet de **paramètre** .  
   
  *Taille*  
- Facultatif. Valeur de **type long** qui spécifie la longueur maximale de la valeur de paramètre en caractères ou en octets.  
+ facultatif. Valeur de **type long** qui spécifie la longueur maximale de la valeur de paramètre en caractères ou en octets.  
   
  *Valeur*  
- Facultatif. **Variant** qui spécifie la valeur de l’objet **Parameter** .  
+ facultatif. **Variant** qui spécifie la valeur de l’objet **Parameter** .  
   
 ## <a name="remarks"></a>Notes  
  Utilisez la méthode **CreateParameter** pour créer un nouvel objet de **paramètre** avec un nom, un type, une direction, une taille et une valeur spécifiés. Toutes les valeurs que vous transmettez dans les arguments sont écrites dans les propriétés de **paramètre** correspondantes.  

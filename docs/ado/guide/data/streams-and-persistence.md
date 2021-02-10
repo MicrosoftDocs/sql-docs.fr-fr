@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ad5bf52c-fd10-4cfa-bf7d-fcedcaa41eea
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 60e006733fd8ef5bd958328420ab43c1cbabc50e
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 1b554afa949acea4f816ce66e92e897477c2fe00
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88979420"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032421"
 ---
 # <a name="streams-and-persistence"></a>Flux et persistance
-La méthode [Save](../../../ado/reference/ado-api/save-method.md) de l’objet [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) stocke ou *conserve*un **jeu d’enregistrements** dans un fichier, et la méthode [Open](../../../ado/reference/ado-api/open-method-ado-recordset.md) restaure le **Recordset** à partir de ce fichier.  
+La méthode [Save](../../../ado/reference/ado-api/save-method.md) de l’objet [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) stocke ou *conserve* un **jeu d’enregistrements** dans un fichier, et la méthode [Open](../../../ado/reference/ado-api/open-method-ado-recordset.md) restaure le **Recordset** à partir de ce fichier.  
   
  Avec ADO 2,7 ou une version ultérieure, les méthodes **Save** et **Open** peuvent également conserver un **jeu d’enregistrements** dans un objet de [flux](../../../ado/reference/ado-api/stream-object-ado.md) . Cette fonctionnalité est particulièrement utile lorsque vous travaillez avec des pages RDS (Remote Data Service) et des pages d’Active Server (ASP).  
   
@@ -101,7 +101,7 @@ Set rs = nothing
 ```  
   
 ## <a name="scenario-4"></a>Scénario 4  
- Dans ce scénario, le code ASP écrit le contenu de l’ensemble d' **enregistrements** au format ADTG sur le client. Le [service de curseur Microsoft pour OLE DB](../../../ado/guide/appendixes/microsoft-cursor-service-for-ole-db-ado-service-component.md) peut utiliser ces données pour créer un **jeu d’enregistrements**déconnecté.  
+ Dans ce scénario, le code ASP écrit le contenu de l’ensemble d' **enregistrements** au format ADTG sur le client. Le [service de curseur Microsoft pour OLE DB](../../../ado/guide/appendixes/microsoft-cursor-service-for-ole-db-ado-service-component.md) peut utiliser ces données pour créer un **jeu d’enregistrements** déconnecté.  
   
  Une nouvelle propriété sur le [DATACONTROL](../../../ado/reference/rds-api/datacontrol-object-rds.md)RDS, [URL](../../../ado/reference/rds-api/url-property-rds.md), pointe vers la page. asp qui génère le **Recordset**. Cela signifie qu’un objet **Recordset** peut être obtenu sans RDS à l’aide de l’objet [DataFactory](../../../ado/reference/rds-api/datafactory-object-rdsserver.md) côté serveur ou de l’utilisateur qui écrit un objet métier. Cela simplifie considérablement le modèle de programmation RDS.  
   

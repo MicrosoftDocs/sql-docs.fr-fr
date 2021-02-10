@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e63ff331-8655-4be7-82c6-e6cd6cc9d16d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3f7001bb1c53f126498cd94878e02ae8b539ef68
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 791ca36a7f5a61a0ad0208753386fba826d6d06e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991490"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100033339"
 ---
 # <a name="current-record-and-size-of-recordset"></a>Enregistrement actif et taille du recordset
 Cette section décrit comment localiser la position actuelle du curseur dans l’exemple de code **Recordset** dans [JScript pour retourner un Recordset](./jscript-code-example-to-return-a-recordset.md).  

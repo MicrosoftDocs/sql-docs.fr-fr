@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 77ce3042-9ebc-44ba-a4ff-0f1b1fd4a9c4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 00bb06c8ea24b622278bb3202f2e0500c4594627
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e918ba6744075052934e9715c50c190f5efd7896
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167500"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100034229"
 ---
 # <a name="eos-and-lineseparator-properties-and-skipline-method-example-vb"></a>Propriétés EOS et LineSeparator et SkipLine, exemple de méthode (VB)
 Cet exemple montre comment manipuler des flux de texte une ligne à la fois. L’effet de la modification du séparateur de lignes à partir du retour chariot/saut de ligne par défaut (**adCRLF**) en simple saut de ligne (**adLF**) ou retour chariot (**ADCR**) est affiché.  
