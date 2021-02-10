@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 708efd50-2905-4168-b7e4-91b2e9b23539
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d401f644919d816af32b7b9d3ba22f15bdb62863
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 5aa2d23ab796531d62b70f9a9579ae56830901e3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172389"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056164"
 ---
 # <a name="version-property-example-vb"></a>Version, exemple de propriété (VB)
 Cet exemple utilise la propriété [version](./version-property-ado.md) d’un objet [Connection](./connection-object-ado.md) pour afficher la version ADO actuelle. Il utilise également plusieurs propriétés dynamiques pour afficher :  

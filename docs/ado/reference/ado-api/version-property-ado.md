@@ -18,17 +18,17 @@ helpviewer_keywords:
 ms.assetid: db4cb894-9bd9-422d-a58a-cef6941a5784
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6b4ed042d847ab250386857560bcbc232660fcd9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e80e1ff7f889cb8e7d4528cb7a2cd4de3159ae38
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166294"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056174"
 ---
 # <a name="version-property-ado"></a>Version, propriété (ADO)
 Indique le numéro de version ADO.  
   
-## <a name="return-value"></a>Valeur renvoyée  
+## <a name="return-value"></a>Valeur de retour  
  Retourne une valeur de **chaîne** qui indique la version.  
   
 ## <a name="remarks"></a>Notes  

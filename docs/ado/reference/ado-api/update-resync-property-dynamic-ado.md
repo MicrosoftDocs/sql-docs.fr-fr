@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 8a3bb608-66d7-4128-a3ef-84cb0556de0d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d92f70c5091ec2468199874c4a79843398bc7833
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8e52c07a4f776c740079ae1460a2890d7aac02ec
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170026"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056294"
 ---
 # <a name="update-resync-property-dynamic-ado"></a>Update Resync, propriété dynamique (ADO)
 Spécifie si la méthode [UpdateBatch](./updatebatch-method.md) est suivie d’une opération de méthode de [resynchronisation](./resync-method.md) implicite et, le cas échéant, de l’étendue de cette opération.  

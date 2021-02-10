@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bdbf3405-a0bd-4f02-85d4-e3fe8da3f3f7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5be021aab95fb9fa2c0571deba176f30836a7f4e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f0f102ec1457b0cb327ab563ee348cf4112c749a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170105"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056544"
 ---
 # <a name="streamwriteenum"></a>StreamWriteEnum
 Spécifie si un séparateur de ligne est ajouté à la chaîne écrite dans un objet de [flux](./stream-object-ado.md) .  

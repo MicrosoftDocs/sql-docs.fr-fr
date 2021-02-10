@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: e9566718-9122-490d-8a8e-da8f605246f2
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2b69050452e444926ad5781d427717a55f564840
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 90a4dfc091a2672f44af44fb4a53589967c8deb3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166148"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100055664"
 ---
 # <a name="catalog-object-properties-methods-and-events-ado-md"></a>Propriétés, méthodes et événements de l’objet Catalog (ADO MD)
 ## <a name="propertiescollections"></a>Propriétés/collections  

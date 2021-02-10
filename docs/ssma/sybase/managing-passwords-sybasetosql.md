@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 9b6a70f9-6840-4140-a059-bb7bd7ccc67c
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 5a43526e9dd4b0d1e5057c9854a827b084a7e17b
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: ef87698106dfd3bec7fd0c53434a115dda73efe6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92036499"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100058434"
 ---
 # <a name="managing-passwords-sybasetosql"></a>Gestion des mots de passe (SybaseToSQL)
 Cette section concerne la sécurisation des mots de passe de base de données, ainsi que la procédure d’importation ou d’exportation entre les serveurs.

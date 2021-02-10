@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e6baf106-abbd-4200-b3de-33b4b4f1b294
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 0f5205dccc0d5c13f4c9308d32d981a7be506656
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b3f417752ef7de6ab5c4fef077eb9771d7454996
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88463161"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100057194"
 ---
 # <a name="creating-script-files-sybasetosql"></a>Création de fichiers de script (SybaseToSQL)
 La première étape avant le lancement de l’application de console SSMA consiste à créer le fichier de script et, si nécessaire, à créer le fichier de valeur de variable et le fichier de connexion au serveur.  

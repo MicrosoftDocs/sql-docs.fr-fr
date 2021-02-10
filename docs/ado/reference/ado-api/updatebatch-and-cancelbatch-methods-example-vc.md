@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: bcb1468e-18bb-41b8-8902-6ee05b786eec
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d1dd9e59a8adfd107a033cdf1606e80825bd8e74
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: bff174eb526c52ceb30fac86d41f7cc2455a7858
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172419"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056264"
 ---
 # <a name="updatebatch-and-cancelbatch-methods-example-vc"></a>UpdateBatch et CancelBatch, exemple de méthodes (VC++)
 Cet exemple illustre la méthode [UpdateBatch](./updatebatch-method.md) conjointement à la méthode [CancelBatch](./cancelbatch-method-ado.md) .  

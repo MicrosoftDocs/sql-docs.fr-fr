@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2d4fe651-ef09-461b-8884-a70b6af4362e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 228d78a90510bbc060143f6d7686f4c76680d3f7
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 3e857bc2ea97203131abb7368605e737374087c0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166307"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056204"
 ---
 # <a name="value-property-example-vb"></a>Value, exemple de propriété (VB)
 Cet exemple illustre la propriété [value](./value-property-ado.md) avec des objets [Field](./field-object.md) et [Property](./property-object-ado.md) en affichant les valeurs des champs et des propriétés de la table ***Employees*** .  

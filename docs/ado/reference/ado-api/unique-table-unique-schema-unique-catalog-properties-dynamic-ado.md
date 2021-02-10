@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d0e775d8-e353-46a1-ad10-ed4cc240dfaa
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 485fe00e6f55e6916341fd4420f0aaaa395fe54b
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 1cd94edb4b1e2c2fba12221a3371592c34eb8c50
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170044"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056358"
 ---
 # <a name="unique-table-unique-schema-unique-catalog-properties-dynamic-ado"></a>Table unique, schéma unique, Properties-Dynamic de catalogue unique (ADO)
 Permet de contrôler étroitement les modifications apportées à une table de base particulière dans un [jeu d’enregistrements](./recordset-object-ado.md) formé par une opération de jointure sur plusieurs tables de base.  

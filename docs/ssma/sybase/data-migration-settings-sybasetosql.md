@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 94d7a083-2dbc-4e3d-94dd-92b7ff9d0c2d
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 6fcca84f52f5a6b9b8c033c00980374a0c17d7be
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 6b3598ebd679a85b8965babccfee4fc3658a08b2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92036683"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056604"
 ---
 # <a name="data-migration-settings-sybasetosql"></a>Paramètres de migration de données (SybaseToSQL)
   
@@ -40,7 +40,7 @@ Les **paramètres de migration des données** permettent à l’utilisateur d’
     -   Si cette zone de texte est désactivée, les données qui sont migrées seront ajoutées aux données existantes dans la base de données cible.  
   
 2.  **Utiliser la sélection personnalisée :**  
-     Cette option permet à l’utilisateur de modifier l’instruction **Select** présente (l’instruction**Select** permet aux utilisateurs de sélectionner les données à afficher dans la base de données cible).  
+     Cette option permet à l’utilisateur de modifier l’instruction **Select** présente (l’instruction **Select** permet aux utilisateurs de sélectionner les données à afficher dans la base de données cible).  
   
     1.  Par défaut, cette zone de texte est désactivée.  
   

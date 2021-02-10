@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: cfa1b416-003a-436f-a21b-bd2397e54db3
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5200d39c0dfe9d79fa0adaab4c2a3aeb9060c9d4
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8fe599d5a737cb1f7d1eef0120c5e0b18d2de31a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170118"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056564"
 ---
 # <a name="streamreadenum"></a>StreamReadEnum
 Spécifie si l’intégralité du flux ou la ligne suivante doit être lue à partir d’un objet de [flux](./stream-object-ado.md) .  

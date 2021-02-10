@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 48919c74-86d4-462e-99b9-8854ceb8d683
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b809a24429b490961e1d0d009656539db9fe81d9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 7796f70b1652c479d958477dd244f836477c64e9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172411"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056214"
 ---
 # <a name="value-property-ado"></a>Value, propriété (ADO)
 

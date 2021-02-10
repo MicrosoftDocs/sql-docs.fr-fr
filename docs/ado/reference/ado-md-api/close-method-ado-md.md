@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: a3aa594d-f9d4-4654-8625-ec20153ff5d9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b90dab9bc42bb9aef0de5300c38f238b8ff67b34
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0c334b7868162c5ec378ca0f4d981503622a639c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99174336"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056734"
 ---
 # <a name="close-method-ado-md"></a>Close, méthode (ADO MD)
 Ferme un CellSet ouvert.  

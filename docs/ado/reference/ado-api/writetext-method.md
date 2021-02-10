@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 7a669048-13f4-4574-a2b1-985e089729d5
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b4c05ab892ce442db5eefefddf3eb0796af5dec9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8d310e2beaf69968721e2edc5c65c57cb88cf492
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166252"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056034"
 ---
 # <a name="writetext-method"></a>WriteText, méthode
 Écrit une chaîne de texte spécifiée dans un objet de [flux](./stream-object-ado.md) .  
@@ -39,7 +39,7 @@ Stream.WriteText Data, Options
  Valeur de **chaîne** qui contient le texte en caractères à écrire.  
   
  *Options*  
- Facultatif. Valeur de [StreamWriteEnum](./streamwriteenum.md) qui spécifie si un caractère de séparation de ligne doit être écrit à la fin de la chaîne spécifiée.  
+ facultatif. Valeur de [StreamWriteEnum](./streamwriteenum.md) qui spécifie si un caractère de séparation de ligne doit être écrit à la fin de la chaîne spécifiée.  
   
 ## <a name="remarks"></a>Notes  
  Les chaînes spécifiées sont écrites dans l’objet de **flux** sans aucun espace ou caractère intermédiaire entre chaque chaîne.  

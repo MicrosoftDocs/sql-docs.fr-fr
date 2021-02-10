@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: maghan
 ms.custom: seodec18
 ms.date: 1/22/2021
-ms.openlocfilehash: 5e7759c3dbf450f944504ea0ac67bb24cda7b263
-ms.sourcegitcommit: e4b6357756a9c691b0441208a0058f7b8f3bea51
+ms.openlocfilehash: 1832c528f302d45a4f098a6e8fe2aa6300ca10ec
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99510340"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054428"
 ---
 # <a name="download-and-install-azure-data-studio"></a>Télécharger et installer Azure Data Studio
 

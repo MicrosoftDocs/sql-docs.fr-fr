@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e59d0687-1f5a-45c5-9d0a-c1f27079495d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5d98bb28c9a529aecdba92e805995ab3e01896e5
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f030bf01a0fbfc69911713466255f7335e434a04
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170125"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056594"
 ---
 # <a name="stream-visual-c-syntax-index-with-import"></a>Stream (Visual C++ index de syntaxe avec #import)
 ## <a name="methods"></a>Méthodes  

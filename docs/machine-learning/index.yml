@@ -10,12 +10,12 @@ metadata:
   author: dphansen
   ms.author: davidph
   ms.date: 05/27/2020
-  ms.openlocfilehash: 226eb1c5afe9812cf5bcc29de47289b865ac0c3c
-  ms.sourcegitcommit: e3460309b301a77d0babec032f53de330da001a9
+  ms.openlocfilehash: 2c7241bccf7f3c8398bc2cee726f8085ec5385b9
+  ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 09/24/2020
-  ms.locfileid: "91136367"
+  ms.lasthandoff: 02/10/2021
+  ms.locfileid: "100016229"
 landingContent:
 - title: Machine learning sur SQL Server
   linkLists:

@@ -11,12 +11,12 @@ ms.assetid: 91f7f558-025d-4f4d-ac2c-aa095e7d1ace
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: a46cdca0d713dc9d33cc919e312a500d867fbfbd
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 4bd91336e15f7d9404632aafd0b9cbc29e0dc2e0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92038052"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100058464"
 ---
 # <a name="data-migration-settings-oracletosql"></a>Paramètres de migration de données (OracleToSQL)
   
@@ -41,7 +41,7 @@ Les **paramètres de migration des données** permettent à l’utilisateur d’
     -   Si cette zone de texte est désactivée, les données qui sont migrées seront ajoutées aux données existantes dans la base de données cible.  
   
 2.  **Utiliser la sélection personnalisée :**  
-     Cette option permet à l’utilisateur de modifier l’instruction **Select** présente (l’instruction**Select** permet aux utilisateurs de sélectionner les données à afficher dans la base de données cible).  
+     Cette option permet à l’utilisateur de modifier l’instruction **Select** présente (l’instruction **Select** permet aux utilisateurs de sélectionner les données à afficher dans la base de données cible).  
   
     1.  Par défaut, cette zone de texte est désactivée.  
   

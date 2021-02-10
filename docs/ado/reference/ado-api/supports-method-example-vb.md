@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 135aab26-ff5c-4fd9-910f-65cdead0b47e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ebd897f7c3de447afe13dea57c9e41e5b6b494fe
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: faaa4aaba30a37c8c13ff2d3b189f425595d6ee7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170097"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056488"
 ---
 # <a name="supports-method-example-vb"></a>Supports, exemple de méthode (VB)
 Cet exemple utilise la méthode [supports](./supports-method.md) pour afficher les options prises en charge par un jeu d’enregistrements ouvert avec différents types de curseurs. La procédure DisplaySupport est requise pour l’exécution de cette procédure.  

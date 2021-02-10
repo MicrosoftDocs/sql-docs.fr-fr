@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 5c06451e-06ec-4da6-9a87-2d043469248a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c2b1f8ebc7341a85cbeb887133336653979b5d9a
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: aba336cff29c02f1468ed1763d005990cc465adb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169843"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054754"
 ---
 # <a name="formattedvalue-property-ado-md"></a>FormattedValue, propriété (ADO MD)
 Indique l’affichage mis en forme d’une valeur de [cellule](./cell-object-ado-md.md) .  

@@ -18,17 +18,17 @@ helpviewer_keywords:
 ms.assetid: 00a0c8b8-8b63-433f-95b8-020ab05874a0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: dd9ba64953632ad4681e7650ba8028df45e53da6
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d96f48d796e3eef7b41467ea4f5b5b14bfc66d36
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166348"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056374"
 ---
 # <a name="underlyingvalue-property"></a>UnderlyingValue, propriété
 Indique la valeur actuelle d’un objet [champ](./field-object.md) dans la base de données.  
   
-## <a name="return-value"></a>Valeur renvoyée  
+## <a name="return-value"></a>Valeur de retour  
  Retourne une valeur de **type Variant** qui indique la valeur du **champ**.  
   
 ## <a name="remarks"></a>Notes  

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 85b6c57f-47ed-46ba-bd92-07882ae9e9d2
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5da222318b827eae05d07d7cad4a121a568d6540
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b7f34376cf191409627a919ffb0c51e97ff8e2ea
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166418"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056574"
 ---
 # <a name="streamopenoptionsenum"></a>StreamOpenOptionsEnum
 Spécifie les options d’ouverture d’un objet de [flux](./stream-object-ado.md) . Les valeurs peuvent être combinées avec une opération OR.  

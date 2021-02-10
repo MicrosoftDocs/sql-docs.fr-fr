@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3aae1107-2f81-413c-8eda-ef96c3df1b8a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a78cd5e1d1415353e2186570abda78e16b7316b9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b09edba191b0927ade67755b3aaa39f5becfdb41
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166155"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100055744"
 ---
 # <a name="catalog-example-vb"></a>Exemple avec Catalog (VB)
 Ce projet de Visual Basic crée un cube à l’aide de MDX. Ensuite, il documente la structure d’un cube dans un document Microsoft Word.  

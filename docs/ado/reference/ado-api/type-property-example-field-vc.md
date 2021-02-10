@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 440dbdb1-16fc-4cfe-9451-59a153852537
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d3f433434833ee07e4ebbf999e2ef2ca122f44fc
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 41ef9c6809302e39d63e5cca53bc3c0f29963683
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170069"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056414"
 ---
 # <a name="type-property-example-field-vc"></a>Type, exemple de propriété (objet Field) (VC++)
-Cet exemple illustre la propriété [type](./type-property-ado.md) en affichant le nom de la constante qui correspond à la valeur de la propriété **type** de tous les objets [Field](./field-object.md) de la table **_Employees_* _. La fonction FieldType est requise pour l’exécution de cette procédure.  
+Cet exemple illustre la propriété [type](./type-property-ado.md) en affichant le nom de la constante qui correspond à la valeur de la propriété **type** de tous les objets [Field](./field-object.md) de la table **_Employees_** . La fonction FieldType est requise pour l’exécution de cette procédure.  
   
 ## <a name="example"></a>Exemple  
   
@@ -154,7 +154,7 @@ void PrintComError(_com_error &e) {
 }  
 ```  
   
- _ *Champs de la table Employee :**  
+ **Champs de la table Employee :**  
  **Nom : emp_id**  
  **Type : adChar**  
  **Nom : fname**  

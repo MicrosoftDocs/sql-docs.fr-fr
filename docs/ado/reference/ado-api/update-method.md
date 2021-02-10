@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6b2a9c31-1a7e-40db-8a53-30720d0f6cc1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 279d0e82bff4d71a2c3b18bbdc7ff88f0b9581a9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 17959e475214a23998ac7242f90e29da9de5ecfe
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172423"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056313"
 ---
 # <a name="update-method"></a>Update, méthode
 Enregistre les modifications apportées à la ligne actuelle d’un objet [Recordset](./recordset-object-ado.md) ou à la collection [Fields](./fields-collection-ado.md) d’un objet [Record](./record-object-ado.md) .  
@@ -36,10 +36,10 @@ record.Fields.Update
   
 #### <a name="parameters"></a>Paramètres  
  *Fields*  
- Facultatif. Valeur de **type Variant** qui représente un nom unique ou un tableau de **variants** qui représente des noms ou des positions ordinales du ou des champs que vous souhaitez modifier.  
+ facultatif. Valeur de **type Variant** qui représente un nom unique ou un tableau de **variants** qui représente des noms ou des positions ordinales du ou des champs que vous souhaitez modifier.  
   
  *Valeurs*  
- Facultatif. **Variant** qui représente une valeur unique ou un tableau de **variants** qui représente des valeurs pour le ou les champs dans le nouvel enregistrement.  
+ facultatif. **Variant** qui représente une valeur unique ou un tableau de **variants** qui représente des valeurs pour le ou les champs dans le nouvel enregistrement.  
   
 ## <a name="remarks"></a>Notes  
   

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2a104245-56df-44f3-b9b7-b3d18643d57b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 35db4866759c229556ae8f0a9b3b4470227c28ef
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 1b0399fa0c86ee2ddd641cb2ab64d67adffae66c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172395"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056194"
 ---
 # <a name="value-property-example-vc"></a>Value, exemple de propriété (VC++)
 Cet exemple illustre la propriété [value](./value-property-ado.md) avec des objets [Field](./field-object.md) et [Property](./property-object-ado.md) en affichant les valeurs des champs et des propriétés de la table ***Employees*** .  

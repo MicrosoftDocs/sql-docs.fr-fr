@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 35ef396f-9f98-429d-9fc5-4f413d08fb37
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 5ac29f4a13f61882ccc007de2bcc54b74d1e68ab
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 41fa50fba0f6d1398788246422a84b825594a5f4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492302"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056664"
 ---
 # <a name="creating-the-server-connection-files-sybasetosql"></a>Création des fichiers de connexion de serveur (SybaseToSQL)
 Les informations sur le serveur peuvent être spécifiées dans la section serveurs du fichier de script ou dans un fichier de connexion au serveur distinct. Le paramètre de ligne de commande du fichier de connexion au serveur est, `-c <serverconnectionfile>` . Si le même ID de serveur est présent dans le fichier de script et le fichier de connexion au serveur, la définition du serveur dans le fichier de script est prise en compte.  

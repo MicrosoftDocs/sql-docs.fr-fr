@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 61d36468-1ccd-467a-9cb5-17d0bfacc766
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 81cbaddf1db2017384392e20b249b9c1beb3ccd0
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 7fae1b50b219abc4e5841bb537d0befaf35a4b3e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169916"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100055673"
 ---
 # <a name="children-property-ado-md"></a>Children, propriété (ADO MD)
 Retourne une collection de [membres](./members-collection-ado-md.md) pour laquelle le [membre](./member-object-ado-md.md) actuel est le parent dans la hiérarchie.  

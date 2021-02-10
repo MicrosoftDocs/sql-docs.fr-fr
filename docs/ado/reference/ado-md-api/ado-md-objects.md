@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 2a32e873-3282-4520-a7ed-89493f1da80e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ae9723fb593a6f2599a3fe13cbfc359fa280febe
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 489228bb44322c6db39c3ced8b1854749c36deeb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172306"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100055854"
 ---
 # <a name="ado-md-objects"></a>Objets ADO MD
 

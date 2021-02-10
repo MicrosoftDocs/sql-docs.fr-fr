@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: be459530-6f28-458f-ad70-759eae3ae08c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 234dda022151a89cdadbd10a8d52f2ec7d47cc51
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d74cea075072045a072e8f7c6e5bb82eb793c274
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169999"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100055824"
 ---
 # <a name="axes-collection-properties-methods-and-events"></a>Propriétés, méthodes et événements de la collection Axes
 ## <a name="properties"></a>Propriétés  

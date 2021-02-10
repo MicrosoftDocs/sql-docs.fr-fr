@@ -4,12 +4,12 @@ ms.topic: include
 ms.prod: sql
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7502743d17abbc24bdc23d29e6948a93f20b527f
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 26b9b96833cd777a1b88081ab87d8baa36c0f4ca
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91745704"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048063"
 ---
 ## <a name="image-typeicon-sourcemediainfo-tippng-borderfalse-get-help-for-sql-tools"></a>:::image type="icon" source="../media/info-tip.png" border="false"::: Obtenir de l’aide pour les outils SQL
 

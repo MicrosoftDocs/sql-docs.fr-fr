@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: dd368a1a-45b0-40e9-b4d3-5cdb48c26606
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 2988f57c5d0e3162c9b6dc54d8a7371efcf5da05
-ms.sourcegitcommit: 82b92f73ca32fc28e1948aab70f37f0efdb54e39
+ms.openlocfilehash: 5637ee7524758dc8d527946c69a2edc9af948d8d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94870407"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056904"
 ---
 # <a name="connecting-to-sql-server-sybasetosql"></a>Connexion à SQL Server (SybaseToSQL)
 

@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 23f9314c-b027-4a51-aeae-50caa2977740
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8bc846e849df5980efca8f5e28982c964276f8bb
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 4e754d71d3b616ebd8b44af399c6386e940c8ada
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166319"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100056224"
 ---
 # <a name="updatebatch-method"></a>UpdateBatch, méthode
 Écrit toutes les mises à jour par lots en attente sur le disque.  
@@ -36,10 +36,10 @@ recordset.UpdateBatch AffectRecords, PreserveStatus
   
 #### <a name="parameters"></a>Paramètres  
  *AffectRecords*  
- Facultatif. Valeur [AffectEnum](./affectenum.md) qui indique le nombre d’enregistrements affectés par la méthode **UpdateBatch** .  
+ facultatif. Valeur [AffectEnum](./affectenum.md) qui indique le nombre d’enregistrements affectés par la méthode **UpdateBatch** .  
   
  *PreserveStatus*  
- Facultatif. Valeur **booléenne** qui spécifie si les modifications locales, comme indiqué par la propriété [Status](./status-property-ado-recordset.md) , doivent être validées. Si cette valeur est définie sur **true**, la propriété **Status** de chaque enregistrement reste inchangée une fois la mise à jour terminée.  
+ facultatif. Valeur **booléenne** qui spécifie si les modifications locales, comme indiqué par la propriété [Status](./status-property-ado-recordset.md) , doivent être validées. Si cette valeur est définie sur **true**, la propriété **Status** de chaque enregistrement reste inchangée une fois la mise à jour terminée.  
   
 ## <a name="remarks"></a>Notes  
  Utilisez la méthode **UpdateBatch** lors de la modification d’un objet **Recordset** en mode de mise à jour par lot pour transmettre toutes les modifications apportées à un objet **Recordset** à la base de données sous-jacente.  

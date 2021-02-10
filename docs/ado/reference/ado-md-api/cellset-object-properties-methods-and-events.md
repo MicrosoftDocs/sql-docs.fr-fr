@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: fb303e33-5a85-4e4e-81db-acaaa6f53799
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ffc1a3e6a96a3910d02bf7d94b2a655cad5b1381
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 241181a8e6333959cb2d38d21470f7ef88e6916d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169941"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100055684"
 ---
 # <a name="cellset-object-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet Cellset
 ## <a name="propertiescollections"></a>Propriétés/collections  

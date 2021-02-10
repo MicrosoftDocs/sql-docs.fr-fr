@@ -10,12 +10,12 @@ metadata:
   author: markingmyname
   ms.author: maghan
   ms.date: 05/09/2020
-  ms.openlocfilehash: c1d5d77e80df6d611f906c4286de35add10c05f8
-  ms.sourcegitcommit: 9c6130d498f1cfe11cde9f2e65c306af2fa8378d
+  ms.openlocfilehash: a3c9d2c13b10317b1dcc51daa873910a4e5513cf
+  ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 10/30/2020
-  ms.locfileid: "93035965"
+  ms.lasthandoff: 02/10/2021
+  ms.locfileid: "100048329"
 landingContent:
 - title: À propos d’Azure Data Studio
   linkLists:

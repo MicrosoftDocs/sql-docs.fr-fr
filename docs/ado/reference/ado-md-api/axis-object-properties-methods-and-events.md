@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 89ec13b9-6324-4a95-92a7-3230d46bd02f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a2dee77704779c07c209f1b7bbc9a592e2f43e02
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8b7d83e4f4d5e9901d1d15b09f6e571dcdb992d5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166169"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100055764"
 ---
 # <a name="axis-object-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet Axis
 ## <a name="propertiescollections"></a>Propriétés/collections  
