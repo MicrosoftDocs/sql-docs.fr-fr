@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: ca9fa99e-1a9f-4deb-80d4-6942555fb22a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5df64003a33f98ca1dd92fff62cb47e598cb6c0e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e8a412db78c760f377530f6aa9dbf809e4fd3437
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168867"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049269"
 ---
 # <a name="rds-api-reference"></a>Référence sur l’API RDS
 > [!IMPORTANT]

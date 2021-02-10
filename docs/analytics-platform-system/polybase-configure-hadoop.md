@@ -9,12 +9,12 @@ ms.date: 12/13/2019
 ms.author: murshedz
 ms.reviewer: martinle
 ms.custom: seo-dt-2019, seo-lt-2019
-ms.openlocfilehash: 2989be74f4c180d07a6270a8ba5f685460780fbd
-ms.sourcegitcommit: 216f377451e53874718ae1645a2611cdb198808a
+ms.openlocfilehash: 18bec3d694985e15b1ae2d813fddf2f378c9d78a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87243473"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049105"
 ---
 # <a name="configure-polybase-in-parallel-data-warehouse-to-access-external-data-in-hadoop"></a>Configurer Polybase en parallèle Data Warehouse pour accéder aux données externes dans Hadoop
 
@@ -49,7 +49,7 @@ Tout d’abord, configurez APS pour utiliser votre fournisseur Hadoop spécifiqu
 
 2. Redémarrez la région APS à l’aide de la page État du service sur le Configuration Manager de l' [Appliance](launch-the-configuration-manager.md).
   
-## <a name="enable-pushdown-computation"></a><a id="pushdown"></a>Activer le calcul pushdown  
+## <a name="enable-pushdown-computation"></a><a id="pushdown"></a> Activer le calcul de réactivation  
 
 Pour améliorer les performances des requêtes, activez le calcul pushdown sur votre cluster Hadoop :  
   
@@ -278,7 +278,7 @@ Pour interroger les données dans votre source de données Hadoop, vous devez d�
 
 PolyBase est approprié pour trois fonctions :  
   
-- Requêtes ad hoc sur des tables externes.  
+- Requêtes ad hoc sur des tables externes.  
 - Importation de données.  
 - Exportation de données.  
 
@@ -286,7 +286,7 @@ Les requêtes suivantes fournissent un exemple avec des données fictives proven
 
 ### <a name="ad-hoc-queries"></a>requêtes ad hoc ;  
 
-La requête ad hoc suivante joint les données relationnelles aux données Hadoop. Il sélectionne les clients qui ont une vitesse supérieure à 35 km, en joignant les données clientes structurées stockées dans les points d’accès avec les données de capteur de voiture stockées dans Hadoop.  
+La requête ad hoc suivante fait une jointure entre des données relationnelles et des données Hadoop. Il sélectionne les clients qui ont une vitesse supérieure à 35 km, en joignant les données clientes structurées stockées dans les points d’accès avec les données de capteur de voiture stockées dans Hadoop.  
 
 ```sql  
 SELECT DISTINCT Insured_Customers.FirstName,Insured_Customers.LastName,

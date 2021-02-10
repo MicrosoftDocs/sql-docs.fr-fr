@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: c2c6af1a-3c44-4c9d-ad33-b381552c71af
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c5eb9926646d247bc252232d3fab155337f03890
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e69be76df19f449837a7f22682f1ac2aa6b75ce3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168834"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049239"
 ---
 # <a name="rds-methods"></a>Méthodes RDS
 > [!IMPORTANT]

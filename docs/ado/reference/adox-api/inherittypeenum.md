@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: c2f6ce79-c4b3-4d40-ac95-21025208f991
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d758c78b8778d5a00c0105c8c9dcebfe40da22e3
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ef61a93080846e8fc65a02e592ca3b171c1f92bb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164192"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049979"
 ---
 # <a name="inherittypeenum"></a>InheritTypeEnum
 Spécifie la manière dont les objets héritent des autorisations définies avec [SetPermissions](./setpermissions-method-adox.md).  

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: f6f80f67-f0fb-4e63-a5f5-8fdf312aac63
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: edbfa8f6c4dbb1296e9bf86aed43148bb7b12ec2
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 5a2acfc204928fb23cea7a466e3baaa0a1ebb8aa
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168779"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049169"
 ---
 # <a name="sortcolumn-property-rds"></a>SortColumn, propriété (RDS)
 Indique la colonne dans laquelle trier les enregistrements.  

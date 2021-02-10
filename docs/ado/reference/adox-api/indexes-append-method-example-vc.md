@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 33c559c4-4db7-4850-9309-2743a7ae5521
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9b1f8c85d939681e497d9f9286ea8e90863201dc
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b3f6843ddc960230c42f48990088389e556e6a13
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164221"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050019"
 ---
 # <a name="indexes-append-method-example-vc"></a>Indexes, exemple de méthode Append (VC++)
 Le code suivant montre comment créer un nouvel index. L’index se trouve sur deux colonnes de la table.  

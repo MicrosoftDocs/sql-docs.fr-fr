@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6acf3689-1a7f-4379-9d7f-df452ccbac27
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 872d3dfd6658a7190e3f18fcc23a1b7fb34da1f9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c91de05e128468135d846aaa588624295a584b04
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164318"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050560"
 ---
 # <a name="allownullsenum"></a>AllowNullsEnum
 Spécifie si les enregistrements avec des valeurs NULL sont indexés.  

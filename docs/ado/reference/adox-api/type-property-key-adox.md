@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 8ca2f1fd-eb1e-490c-a28b-67eda92e0fc7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f87e422c42a0421fbdf12eb9b51ade82e9cfe9c2
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: a23a9bc6749d97978a9f5ab686aa0c1f0eb7a023
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169160"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049699"
 ---
 # <a name="type-property-key-adox"></a>Type, propriété (clé) (ADOX)
 Indique le type de la clé.  

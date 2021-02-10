@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 0776457f-bf78-4a79-96bf-a17136d45811
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f99405db467d6c84f380a2f516e02b6e9d06a581
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 5f8adfc874fa34ccf1f00d8273c6d2130e3a5e13
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169374"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050049"
 ---
 # <a name="groups-collection-properties-methods-and-events"></a>Propriétés, méthodes et événements de la collection Groups
 ## <a name="properties"></a>Propriétés  

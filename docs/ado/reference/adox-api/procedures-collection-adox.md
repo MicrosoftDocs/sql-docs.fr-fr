@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: dc7a38e1-93b9-4034-9af2-ff419e8fb2a3
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c77c3eccd6cc2e61898b1619ec6255f65227384b
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8285f74a4c5702e21dc2cd34e86be11ee4fc93a0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169243"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049819"
 ---
 # <a name="procedures-collection-adox"></a>Procedures, collection (ADOX)
 Contient tous les objets de [procédure](./procedure-object-adox.md) d’un catalogue.  

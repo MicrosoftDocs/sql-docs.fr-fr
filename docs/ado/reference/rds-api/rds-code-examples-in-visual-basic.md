@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d9cb84a1-4ec2-4d41-8f92-dec2e17cde67
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: badc0385bc1400b4c3d1039c8fbc67865fcff29d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0a833cad547ff69ab10c89882f575ae2b50cdc86
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168858"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049259"
 ---
 # <a name="rds-code-examples-in-visual-basic"></a>Exemples de code RDS dans Visual Basic
 > [!IMPORTANT]

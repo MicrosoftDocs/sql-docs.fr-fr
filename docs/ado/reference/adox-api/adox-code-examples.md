@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 438e4369-f7e8-4dca-a709-dd501a3ca83f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6e11e9954a8370b14a163cd45af99a5d71b26741
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: bdbe605934d065565d4f912284ea1d0301e651a6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164366"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050650"
 ---
 # <a name="adox-code-examples"></a>Exemples de code ADOX
 Utilisez les exemples de code suivants pour apprendre à utiliser les objets, les méthodes, les propriétés et les événements ADOX.  

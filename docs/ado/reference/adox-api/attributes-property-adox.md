@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: e3abb359-79a3-4c22-b3a8-2900817e0d23
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: fd868bc3b2fba2f59a4fa75abc2b2865fe1dd41d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8db5140c3adbc0df74c4aae26fba9eebf98f21b6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169557"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050430"
 ---
 # <a name="attributes-property-adox"></a>Attributes, propriété (ADOX)
 Décrit les caractéristiques de colonne.  

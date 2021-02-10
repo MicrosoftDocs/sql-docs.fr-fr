@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 9b62fb35-de43-425a-83ca-77af4e33fea9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0e9a727d17e4c673b1a6e9376ef40903e8408ee7
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 3636da83a0318eb9a3af4bf5209aa96c46e2a1ab
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169513"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050320"
 ---
 # <a name="clustered-property-adox"></a>Clustered, propriété (ADOX)
 Indique si l’index est ordonné en clusters.  

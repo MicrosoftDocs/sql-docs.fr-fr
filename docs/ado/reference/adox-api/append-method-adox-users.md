@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: b80bc5d5-78ca-4f75-956b-2ac658029cc7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e321d3cf41e8edcd5a5bd29452050542257a908b
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 6df2a76aa32ceec8e77bf27424345fc6bae52233
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169567"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050470"
 ---
 # <a name="append-method-adox-users"></a>Append, méthode (utilisateurs ADOX)
 Ajoute un nouvel objet [utilisateur](./user-object-adox.md) à la collection [Users](./users-collection-adox.md) .  
@@ -39,7 +39,7 @@ Users.Append User[,Password]
  Valeur de **type Variant** qui contient l’objet **utilisateur** à ajouter ou le nom de l’utilisateur à créer et à ajouter.  
   
  *Mot de passe*  
- Facultatif. Valeur de **chaîne** qui contient le mot de passe de l’utilisateur. Le paramètre de *mot de passe* correspond à la valeur spécifiée par la méthode [ChangePassword](./changepassword-method-adox.md) d’un objet **utilisateur** .  
+ facultatif. Valeur de **chaîne** qui contient le mot de passe de l’utilisateur. Le paramètre de *mot de passe* correspond à la valeur spécifiée par la méthode [ChangePassword](./changepassword-method-adox.md) d’un objet **utilisateur** .  
   
 ## <a name="remarks"></a>Notes  
  La collection d' **utilisateurs** d’un [catalogue](./catalog-object-adox.md) représente tous les utilisateurs du catalogue. Le regroupement **utilisateurs** pour un [groupe](./group-object-adox.md) représente uniquement les utilisateurs qui ont une appartenance au groupe spécifique.  

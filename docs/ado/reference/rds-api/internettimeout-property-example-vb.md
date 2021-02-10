@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b35d2f4a-449c-4170-aab6-9ff88c890043
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 477026088458c71f964eadac23b9cf38d1f65307
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: a3cc6ad7775494fe308c37e79b841dfaa6dc5a8f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99163747"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049369"
 ---
 # <a name="internettimeout-property-example-vb"></a>InternetTimeout, exemple de propriété (VB)
 > [!IMPORTANT]

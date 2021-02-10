@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b993e357-3e2e-48a7-a627-76909160c97f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4c7526163303d8e9c420de4c6b9ff1b451510710
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f0a28393a5a2bbe84088c774c45e58abd7cfc14d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169506"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050299"
 ---
 # <a name="clustered-property-example-vc"></a>Clustered, exemple de propriété (VC++)
 Cet exemple illustre la propriété [cluster](./clustered-property-adox.md) d’un [index](./index-object-adox.md). Notez que les bases de données Microsoft Jet ne prennent pas en charge les index cluster. par conséquent, cet exemple retourne la **valeur false** pour la propriété **cluster** de tous les index de la base de données *Northwind* .  

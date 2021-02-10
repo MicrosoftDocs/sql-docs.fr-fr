@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 0a30fa74-6f10-4410-bd70-882e7c43cd46
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 84fffacf0795d60808e172185251f3135bd0d7d4
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 781f9eb90c621cf8daf4afb0cdf8dc4f1f7b47b4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169118"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049669"
 ---
 # <a name="users-collection-adox"></a>Users, collection (ADOX)
 Contient tous les objets [utilisateur](./user-object-adox.md) stockés d’un [catalogue](./catalog-object-adox.md) ou d’un [groupe](./group-object-adox.md).  

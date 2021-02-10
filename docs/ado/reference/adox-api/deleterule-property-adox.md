@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 87bd4c0a-cae3-4007-a939-4193acaa00ac
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4b591759ee1964ed1e5962558d8590d69957d3be
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 66c34576605f028401ec0cad513599ee264f542f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169425"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050139"
 ---
 # <a name="deleterule-property-adox"></a>DeleteRule, propriété (ADOX)
 Indique l’action effectuée lorsqu’une clé primaire est supprimée.  

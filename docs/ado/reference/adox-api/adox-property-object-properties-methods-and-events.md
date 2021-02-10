@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 640780dc-5733-4f0c-9c11-6f43c1db5901
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a1ce3e49b7fd1152013e8e60ece2444aaef0a927
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: a241ab26dfe174087b450f0af04f01263c99afe4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169605"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050570"
 ---
 # <a name="adox-property-object-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet Property ADOX
 ## <a name="properties"></a>Propriétés  

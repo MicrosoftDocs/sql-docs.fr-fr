@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4f306a51-d5a4-4785-b426-487639cda164
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 685cb61f5f64dc879a01a7fc2a7a6160d0858604
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 11012c50bc31f2200f63d76000252ecc9ce00928
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169027"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049489"
 ---
 # <a name="datacontrol-object-example-vbscript"></a>DataControl, exemple d’objet (VBScript)
 > [!IMPORTANT]

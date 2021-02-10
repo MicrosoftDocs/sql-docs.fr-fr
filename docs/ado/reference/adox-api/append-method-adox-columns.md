@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 7a46d23c-efef-4ec7-815d-cd3ac86787dd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 40abf0ae298b469d0814e8dd3da85a8c8865be78
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 7cf3b6e70bb7df0aff23d8d4d6c92b4fe6656e21
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169602"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050550"
 ---
 # <a name="append-method-adox-columns"></a>Append, méthode (colonnes ADOX)
 Ajoute un nouvel objet [Column](./column-object-adox.md) à la collection [Columns](./columns-collection-adox.md) .  
@@ -39,10 +39,10 @@ Columns.Append Column [,Type] [,DefinedSize]
  Objet de **colonne** à ajouter ou nom de la colonne à créer et à ajouter.  
   
  *Type*  
- Facultatif. Valeur de type **long** qui spécifie le type de données de la colonne. Le paramètre de *type* correspond à la propriété de [type](./type-property-column-adox.md) d’un objet de **colonne** .  
+ facultatif. Valeur de type **long** qui spécifie le type de données de la colonne. Le paramètre de *type* correspond à la propriété de [type](./type-property-column-adox.md) d’un objet de **colonne** .  
   
  *DefinedSize*  
- Facultatif. Valeur de **type long** qui spécifie la taille de la colonne. Le paramètre *DefinedSize* correspond à la propriété [DefinedSize](./definedsize-property-adox.md) d’un objet **Column** .  
+ facultatif. Valeur de **type long** qui spécifie la taille de la colonne. Le paramètre *DefinedSize* correspond à la propriété [DefinedSize](./definedsize-property-adox.md) d’un objet **Column** .  
   
 > [!NOTE]
 >  Une erreur se produit lors de l’ajout d’une **colonne** à la collection **Columns** d’un [index](./index-object-adox.md) si la **colonne** n’existe pas dans une [table](./table-object-adox.md) qui est déjà ajoutée à la collection [tables](./tables-collection-adox.md) .  

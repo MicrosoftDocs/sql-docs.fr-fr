@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 140d1517-6f0c-4fc9-9deb-9658982d88ed
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 382c5164bf59f76f8862200d1557c901627e6d39
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 399b756ed79447e71fb6327b5632c9d172c03ce3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169179"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049729"
 ---
 # <a name="table-object-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet Table
 ## <a name="propertiescollections"></a>Propriétés/collections  

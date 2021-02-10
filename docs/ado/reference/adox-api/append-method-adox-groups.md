@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 56b94fc6-7ef0-4e4a-82a3-033b94c46036
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 859e3dea7f5dbdb84efd44aebc766eb2d195a7e3
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 846475567fb15e549f96094ca55a1881d8888ce5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164305"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050530"
 ---
 # <a name="append-method-adox-groups"></a>Append, méthode (groupes ADOX)
 Ajoute un nouvel objet de [groupe](./group-object-adox.md) à la collection de [groupes](./groups-collection-adox.md) .  

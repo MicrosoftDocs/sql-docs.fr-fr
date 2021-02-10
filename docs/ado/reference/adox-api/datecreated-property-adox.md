@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 2bf4b00d-045c-444e-8af7-8af6297ed418
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2a47ca11af6b3874a6408bfecc67e3ac96afe0d6
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 5fff28639b996e05e2e0eed14eed357fe62e5e0b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172150"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050159"
 ---
 # <a name="datecreated-property-adox"></a>DateCreated, propriété (ADOX)
 Indique la date à laquelle l’objet a été créé.  

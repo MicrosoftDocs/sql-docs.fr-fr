@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: dbad5e77-b213-4eb8-aecf-d60f203fdb59
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0307cc8b32eca807225356314f31d0aada5354bc
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 288efb8a2af9896e731bd0248967d1aaadcb2992
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169050"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049499"
 ---
 # <a name="connect-property-rds"></a>Connect, propriété (RDS)
 Indique le nom de la base de données à partir de laquelle les opérations de requête et de mise à jour sont exécutées.  

@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 25fff69b-7556-4a28-b6f5-600a4bb0f607
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 088e7c8f0d0c346382bdbe7db260192f65d3e029
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: a9f2a83b7b58663c59499b67af7085ec8adca4ab
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164379"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050780"
 ---
 # <a name="activeconnection-property-adox"></a>ActiveConnection, propriété (ADOX)
 Indique l’objet de [connexion](../ado-api/connection-object-ado.md) ADO auquel le [catalogue](./catalog-object-adox.md) appartient.  

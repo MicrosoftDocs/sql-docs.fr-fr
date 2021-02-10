@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 59030e99-de9c-4506-a450-67dfcb6f7c00
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b5d517dfc1f6053f721372d47f7162be033b6ba1
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2b4f5fa01c0d8598f12962d362441aeaa5f989e4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168844"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049249"
 ---
 # <a name="rds-code-examples"></a>Exemples de code RDS
 > [!IMPORTANT]

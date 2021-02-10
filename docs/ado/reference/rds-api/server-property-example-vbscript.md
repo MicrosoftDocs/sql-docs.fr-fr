@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0fe57af9-a4d0-4986-a2e3-beaa4d26ed58
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6439899c60a5dee7c1276a094e6c41c09a35f543
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 85fbdc115a8b021020ca31f04e11a84fddbb827e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168783"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049179"
 ---
 # <a name="server-property-example-vbscript"></a>Server, exemple de propriété (VBScript)
 > [!IMPORTANT]

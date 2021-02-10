@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: c90a8050-0ff4-4c83-9925-261f2f2ccfe9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f35574b0e9623560ddfafe123340e302a9fc5220
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0f9e23ed4b6c17f4d1f3ffa7489490f40c25f8b7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168795"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049189"
 ---
 # <a name="refresh-method-rds"></a>Refresh, méthode (RDS)
 Interroge à jour la source de données spécifiée dans la propriété [Connect](./connect-property-rds.md) et met à jour les résultats de la requête.  

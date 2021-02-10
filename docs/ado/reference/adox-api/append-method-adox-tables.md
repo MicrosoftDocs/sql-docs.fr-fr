@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: a362ed51-314c-4783-9598-538dbf755f3d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 56ead8ee314cb5b6bffa31a3292b395c0c990927
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d7f8ccacd9b81205ddd58a1b58290548db8bec92
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172283"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050480"
 ---
 # <a name="append-method-adox-tables"></a>Append, méthode (tables ADOX)
 Ajoute un nouvel objet [table](./table-object-adox.md) à la collection [tables](./tables-collection-adox.md) .  

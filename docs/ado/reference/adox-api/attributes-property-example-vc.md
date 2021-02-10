@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1057b57b-5ace-4830-9a20-562e88aeef86
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a1b465013a9229f1542756f75427ea32acf1104b
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: aafb86aae81dcb3b638349a87f68d29de9043396
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169545"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050360"
 ---
 # <a name="attributes-property-example-vc"></a>Attributes, exemple de propriété (VC++)
 Cet exemple illustre la propriété [attributes](./attributes-property-adox.md) d’une [colonne](./column-object-adox.md). Sa définition sur **adColNullable** permet à l’utilisateur de définir la valeur d’un [champ](../ado-api/field-object.md) du [Recordset](../ado-api/recordset-object-ado.md) sur une chaîne vide. Dans ce cas, l’utilisateur peut faire la distinction entre un enregistrement où les données ne sont pas connues et un enregistrement où les données ne s’appliquent pas.  

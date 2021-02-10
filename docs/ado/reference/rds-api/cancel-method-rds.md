@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 560b5b3d-fba9-4275-8920-9c3e186134f7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e87e8d173e1ab9aa8978ed9ab98c6a2f37a93e79
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 5c3c1c78d69db0ceba435c91f13172a5ee77a697
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169067"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049549"
 ---
 # <a name="cancel-method-rds"></a>Cancel, méthode (RDS)
 Annule l’exécution d’un appel de méthode asynchrone en attente.  

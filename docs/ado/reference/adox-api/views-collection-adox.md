@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: a55d380c-2b7b-4b57-af74-8ba0b3de0db9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 51a32bb1952e5c8100ed1d13cb7ba72b99e8994d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c4ac183994402714383320305c64d30a27f3acb5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169099"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049599"
 ---
 # <a name="views-collection-adox"></a>Views, collection (ADOX)
 Contient tous les objets de [vue](./view-object-adox.md) d’un catalogue.  

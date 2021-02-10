@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0b9d46e7-29d9-4ca1-a23a-056403106a71
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 096d2588a79f74be3d15594ff40bf850449b1225
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 318053a21f3da616269a9f92cab1044ba560b6f6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169191"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049739"
 ---
 # <a name="sortorderenum"></a>SortOrderEnum
 Spécifie la séquence de tri pour une colonne indexée.  

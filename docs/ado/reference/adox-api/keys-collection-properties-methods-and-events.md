@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: eeb3746d-1c75-4bb0-97b5-2c2d073c8c0e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d75023a00e420f9d4a6c0bc1a4c9d1ceb62c2844
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e39b95d91de6477c8be9b81ea81e3f32c58d6177
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164153"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049909"
 ---
 # <a name="keys-collection-properties-methods-and-events"></a>Propriétés, méthodes et événements de la collection Keys
 ## <a name="properties"></a>Propriétés  

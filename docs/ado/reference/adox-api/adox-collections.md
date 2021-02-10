@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: c0c90ba9-0471-4381-96f1-376de22fa2ee
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9b88f431f1ffa80105c60314acefd71420325039
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 69c5785fc47dfb0cede3d7aaa73aaac10d6fd4c1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169618"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050660"
 ---
 # <a name="adox-collections"></a>Collections ADOX
 

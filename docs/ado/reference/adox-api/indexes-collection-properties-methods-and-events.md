@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: b27b5c37-3db2-4831-a447-ee6442e24d87
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0ece2b2a78b98bcc18a8dabfefbbc987dd4c15dc
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d0605df58a6b728fdcea02ad0b6785431894e0a0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164209"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050009"
 ---
 # <a name="indexes-collection-properties-methods-and-events"></a>Propriétés, méthodes et événements de la collection Indexes
 ## <a name="properties"></a>Propriétés  

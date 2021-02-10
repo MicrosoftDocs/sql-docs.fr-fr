@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 522f6447-ba9e-45f5-a185-37b312e126d4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a31a12e11cce5c16f080ed32f0ba17cb2557d93a
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 75969edb8e1c131c83e60c2290cc7b6d0d8c8fc1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169260"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049839"
 ---
 # <a name="procedure-object-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet Procedure
 ## <a name="properties"></a>Propriétés  

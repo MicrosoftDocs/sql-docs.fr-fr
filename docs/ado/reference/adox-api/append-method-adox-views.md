@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 6070fd58-3237-4c77-a966-5b39ce5d57e4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 757778961d7b66dd147b8b013b48062dae0cbd91
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 15a22e293262c414278db7f6e7e266b562d61de3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172278"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050440"
 ---
 # <a name="append-method-adox-views"></a>Append, méthode (vues ADOX)
 Crée un objet de [vue](./view-object-adox.md) et l’ajoute à la collection [views](./views-collection-adox.md) .  

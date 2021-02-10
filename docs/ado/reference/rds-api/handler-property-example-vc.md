@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d046d89c-622b-48bc-9d30-f454c3e13595
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 757679e99f9f4de7b7c1c96abf367ad5df5daee1
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b42f254b54380b9b240f7231cf6bacf86510662b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99163758"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100049379"
 ---
 # <a name="handler-property-example-vc"></a>Handler, exemple de propriété (VC++)
 > [!IMPORTANT]
