@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: cab4adff-f22f-4fb1-9217-f8138c795268
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 408f93b0054709de09d5556be94371dd9adc472f
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: b12b01f0d1beeacac3862061718e71f1b650b51e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991760"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100028674"
 ---
 # <a name="adding-records-using-addnew-method"></a>Ajout d’enregistrements à l’aide de la méthode AddNew
 Il s’agit de la syntaxe de base de la méthode **AddNew** :
 
- *Recordset*. *Valeurs* du *FieldList*AddNew
+ *Recordset*. *Valeurs* du *FieldList* AddNew
 
  Les arguments *FieldList* et *values* sont facultatifs. *FieldList* est un nom unique ou un tableau de noms ou de positions ordinales des champs dans le nouvel enregistrement.
 

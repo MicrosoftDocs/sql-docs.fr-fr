@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9469ba3a-5e4f-4a10-bbb8-a51a6c9660ea
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 238c8bf3d0c21625b9317690f70adbe16bd5075f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 519b505c0fcb985e6f0ca9cfd04f890114b3fdb2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171168"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100025066"
 ---
 # <a name="errorvalueenum"></a>ErrorValueEnum
 Spécifie le type d’erreur d’exécution ADO.  
@@ -32,14 +32,14 @@ Spécifie le type d’erreur d’exécution ADO.
   
 -   Décimale négative-traduction décimale du numéro d’erreur complet.  
   
--   Hexadecimal-The représentation hexadécimale du numéro d’erreur complet. Le code de l’installation Windows se trouve dans le quatrième chiffre. Le code d’installation pour les numéros d’erreur ADO est *un*. Par exemple : 0x800 ***A** _0E7B.  
+-   Hexadecimal-The représentation hexadécimale du numéro d’erreur complet. Le code de l’installation Windows se trouve dans le quatrième chiffre. Le code d’installation pour les numéros d’erreur ADO est *un*. Par exemple : 0x800 ***A*** 0E7B.  
   
 > [!NOTE]
->  OLE DB erreurs peuvent être transmises à votre application ADO. En règle générale, elles peuvent être identifiées par un code d’installation Windows de _4 *. Par exemple, 0x800 * * * 4* *_.  
+>  OLE DB erreurs peuvent être transmises à votre application ADO. En règle générale, elles peuvent être identifiées par un code d’installation Windows de *4*. Par exemple, 0x800 ***4***.  
   
 |Constante|Valeur|Description|  
 |--------------|-----------|-----------------|  
-|_ *adErrBoundToCommand**|3707-2146824581 0x800A0E7B|Impossible de modifier la propriété **ActiveConnection** d’un objet **Recordset** qui possède un objet **Command** comme source.|  
+|**adErrBoundToCommand**|3707-2146824581 0x800A0E7B|Impossible de modifier la propriété **ActiveConnection** d’un objet **Recordset** qui possède un objet **Command** comme source.|  
 |**adErrCannotComplete**|3732-2146824556 0x800A0E94|Le serveur ne peut pas terminer l’opération.|  
 |**adErrCantChangeConnection**|3748-2146824540 0x800A0EA4|La connexion a été refusée. La nouvelle connexion que vous avez demandée présente des caractéristiques différentes de celles déjà utilisées.|  
 |**adErrCantChangeProvider**|3220-2146825068 0X800A0C94|Le fournisseur fourni est différent de celui déjà utilisé.|  

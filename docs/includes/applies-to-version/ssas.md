@@ -4,11 +4,11 @@ ms.service: analysis-services
 ms.topic: include
 ms.date: 06/06/2019
 ms.author: owend
-ms.openlocfilehash: ffa4fa11d099e2eaf2f6a8296c27ce23c104acf2
-ms.sourcegitcommit: 205de8fa4845c491914902432791bddf11002945
+ms.openlocfilehash: 86e64f96846d3a7380807b15dea56d91b6f0f288
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86967802"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100019086"
 ---
 [!INCLUDE [applies-md](../applies-md.md)] [!INCLUDE [_ssas](_ssas.md)]

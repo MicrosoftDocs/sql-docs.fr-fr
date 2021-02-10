@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 290819e1-7b39-4e1e-a93b-801257138b00
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1f75d1a068a3e86ecb9e0d5b1e27afae6ac4a6e5
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c243b27a03a5fb80b3444267a184ab995212226d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171190"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100025035"
 ---
 # <a name="errors-collection-ado"></a>Errors, collection (ADO)
 Contient tous les objets d' [erreur](../../../ado/reference/ado-api/error-object.md) créés en réponse à un échec lié à un fournisseur unique.  

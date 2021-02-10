@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6a34a7ef-50cc-4c3d-82f7-106b9a8f3caf
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 19ade6a2c9501523e97d30f496249a423445d3c0
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 50535a71c1062bc04aa009bea1aab08d3cf1faf0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991790"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100028694"
 ---
 # <a name="absolute-and-relative-urls"></a>URL absolues et relatives
 Une URL spécifie l’emplacement d’une cible stockée sur un ordinateur local ou en réseau. La cible peut être un fichier, un répertoire, une page HTML, une image, un programme, et ainsi de suite.  
@@ -31,7 +31,7 @@ Une URL spécifie l’emplacement d’une cible stockée sur un ordinateur local
   
  Une *URL absolue* utilise le format suivant : *Scheme://Server/Path/Resource*  
   
- Une URL relative se compose généralement du *chemin d’accès*et, éventuellement, de la *ressource*, mais pas d’un *schéma* ou d’un *serveur*. Les tableaux suivants définissent les parties individuelles du format d’URL complet.  
+ Une URL relative se compose généralement du *chemin d’accès* et, éventuellement, de la *ressource*, mais pas d’un *schéma* ou d’un *serveur*. Les tableaux suivants définissent les parties individuelles du format d’URL complet.  
   
  *mode*  
  Spécifie le mode d’accès à la *ressource* .  
@@ -68,7 +68,7 @@ Une URL spécifie l’emplacement d’une cible stockée sur un ordinateur local
  Par exemple, l’exemple de code suivant montre comment ouvrir un **Recordset** sur le fichier Readme25.txt du répertoire Winnt/system32 :  
   
 ```  
-recordset.Open "system32/Readme25.txt", "URL=https://YourServer/Winnt/",,,adCmdTableDirect  
+recordset.Open "system32/Readme25.txt", "URL=https://YourServer/Winnt/",,,adCmdTableDirect  
 ```  
   
  L’URL absolue dans la chaîne de connexion spécifie le serveur ( `YourServer` ) et le chemin d’accès ( `Winnt` ). Cette URL définit également le contexte.  
@@ -83,7 +83,7 @@ recordset.Open "system32/Readme25.txt", "URL=https://YourServer/Winnt/",,,adCmd
 recordset.Open "", "URL=https://YourServer/Winnt/",,,adCmdTableDirect  
 ```  
   
-## <a name="ole-db-provider-supplied-url-schemes"></a>OLE DB les schémas d’URL fournis par le fournisseur  
+## <a name="ole-db-provider-supplied-url-schemes"></a>OLE DB Provider-Supplied des schémas d’URL  
  Le premier élément d’une URL qualifiée complète est le *schéma* utilisé pour accéder à la ressource identifiée par le reste de l’URL. Les exemples sont HTTP (Hypertext Transfer Protocol) et FTP (protocole FTP).  
   
  ADO prend en charge les fournisseurs OLE DB qui reconnaissent leurs propres schémas d’URL. Par exemple, le [fournisseur Microsoft OLE DB pour la publication Internet](../appendixes/microsoft-ole-db-provider-for-internet-publishing.md)*,* qui accède aux fichiers Windows 2000 « publiés », reconnaît le schéma http existant.  

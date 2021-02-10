@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 42061ff7-e6e7-497b-a0d9-440b9cf5986c
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 3ea89bcdf9b10fb50e74228a26bfcd5cead83aca
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 3f778b2bd361fab5ac1210005076692c813bb4b9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492381"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017309"
 ---
 # <a name="project-settings-synchronization-mysqltosql"></a>Paramètres du projet (Synchronisation) (MySQLToSQL)
 Les **paramètres du projet** de synchronisation vous permettent de configurer le mode de synchronisation des objets de base de données MySQL avec SQL Server objets de base de données.  
@@ -32,7 +32,7 @@ Vous pouvez accéder à deux pages de synchronisation différentes qui contienne
   
 ##### <a name="misc"></a>Divers  
   
-##### <a name="attempts"></a>Essayer  
+##### <a name="attempts"></a>Tentatives  
 Fournit les informations relatives au nombre d’objets Pass à charger dans SQL Server. Le chargement d’objets dans SQL Server est généralement effectué en plusieurs passes. Les objets dont le chargement a échoué lors de la première passe, tels que les clés étrangères, peuvent être chargés dans la passe suivante.  
   
 La valeur par défaut est 2.  

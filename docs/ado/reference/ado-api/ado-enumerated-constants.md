@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: c97ed131-1a93-463c-9e61-22f029b0c474
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5882488e36fb420ad808974d18b34acb8ccbc00c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: a0295fd9f1feec8db54734a5dfc02eba483e1615
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99161643"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100031281"
 ---
 # <a name="ado-enumerated-constants"></a>Constantes énumérées ADO
 Pour faciliter le débogage, les énumérations ADO répertorient une valeur pour chaque constante. Toutefois, cette valeur est purement indicative et peut passer d’une version d’ADO à une autre. Votre code ne doit dépendre que du nom, et non de la valeur réelle, de chaque constante énumérée.  

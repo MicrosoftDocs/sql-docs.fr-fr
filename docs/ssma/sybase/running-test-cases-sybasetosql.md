@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 195ffdef-cfde-4bf4-a3ae-e7402bb07972
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: ea2b250f59a29a16bc77ad23e28b0823461a8ace
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8cb7521c0f58526c6dbc9e0f5fa7bfae848f6d38
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88468752"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017628"
 ---
 # <a name="running-test-cases-sybasetosql"></a>Exécution de cas de test (SybaseToSQL)
 Lorsque SSMA tester exécute un cas de test, il exécute les objets sélectionnés pour le test et crée un rapport sur les résultats de la vérification. Si les résultats sont identiques sur les deux plateformes, le test a réussi. La correspondance entre les objets entre Sybase et [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est déterminée en fonction des paramètres de mappage de schéma pour le projet SSMA actuel.  
@@ -50,10 +50,10 @@ Les objets suivants sont créés sur Sybase dans la base de données SSMATESTER2
 |USER_TABLE $ Trg|Déclencheur|Déclenchez l’audit des modifications dans la table vérifiée.|  
 |USER_TABLE $ AUD|Table de charge de travail|Table dans laquelle les lignes supprimées et remplacées sont enregistrées.|  
 |USER_TABLE $ AudI|Table de charge de travail|Table dans laquelle les lignes nouvelles et modifiées sont enregistrées.|  
-|USER_TABLE|Vue|Représentation simplifiée des modifications de la table.|  
-|USER_TABLE $ nouveau|Vue|Représentation simplifiée des lignes insérées et remplacées.|  
-|USER_TABLE $ new_id|Vue|Identification des lignes insérées et modifiées.|  
-|USER_TABLE $ Old|Vue|Représentation simplifiée des lignes supprimées et remplacées.|  
+|USER_TABLE|Affichage|Représentation simplifiée des modifications de la table.|  
+|USER_TABLE $ nouveau|Affichage|Représentation simplifiée des lignes insérées et remplacées.|  
+|USER_TABLE $ new_id|Affichage|Identification des lignes insérées et modifiées.|  
+|USER_TABLE $ Old|Affichage|Représentation simplifiée des lignes supprimées et remplacées.|  
   
 L’objet suivant est créé dans la base de données de la table vérifiée sur Sybase et [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
   

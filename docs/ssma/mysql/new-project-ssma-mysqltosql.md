@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 7a3846ee-b221-47a5-ac8c-d08a962931af
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 7c8136b85de92fa4b7019ac8b9320aba4b3fdd06
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a27331ac7337fdf188ae1b7ccd9d18e73312ee3e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88463351"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100016789"
 ---
 # <a name="new-project-ssma-mysqltosql"></a>Nouveau projet (SSMA) (MySQLToSQL)
 Utilisez la boîte de dialogue **nouveau projet** pour créer un nouveau projet SSMA. Pour accéder à la boîte de dialogue **nouveau projet** , dans le menu **fichier** , cliquez sur **nouveau projet**.  

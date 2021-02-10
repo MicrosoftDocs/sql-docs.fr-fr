@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 38c8ad3c-d6f1-40f6-a394-bbba6ed861e5
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1cd2f1da937b663b1cc32939c0fb0de17dad8fb7
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: d067e7bb1adbbb19d08cb87c9ccf4f69004bff55
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991210"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100030507"
 ---
 # <a name="products-and-technologies-table"></a>Tableau produits et technologies
 Le tableau suivant répertorie les produits, outils et technologies Microsoft présentés dans le Guide du programmeur ADO. Il fournit des liens, dans la mesure du possible, vers des rubriques pertinentes dans le guide.
@@ -42,5 +42,5 @@ Le tableau suivant répertorie les produits, outils et technologies Microsoft pr
 |Visual Basic|[Erreurs](./data/errors-ado.md)<br /><br /> [Erreurs ADO](./data/ado-errors.md)<br /><br /> [Instanciation des événements ADO par langage](./data/ado-event-instantiation-by-language.md)<br /><br /> [Fonctions Visual Basic pour Applications](./data/visual-basic-for-applications-functions.md)<br /><br /> [Tutoriel RDS](./remote-data-service/rds-tutorial.md)<br /><br /> [Utilisation d’ADO avec Microsoft Visual Basic](./appendixes/using-ado-with-microsoft-visual-basic.md)<br /><br /> [Exemples de code ADO dans Microsoft Visual Basic](../reference/ado-api/ado-code-examples-in-visual-basic.md)|
 |Visual C++|[Gestion des erreurs dans d’autres langues](./data/handling-errors-in-other-languages.md)<br /><br /> [Instanciation des événements ADO par langage](./data/ado-event-instantiation-by-language.md)<br /><br /> [Utilisation d’ADO avec Microsoft Visual C++](./appendixes/using-ado-with-microsoft-visual-c.md)<br /><br /> [Exemples de code ADO en Microsoft Visual C++](../reference/ado-api/ado-code-examples-in-visual-c.md)|
 |Visual Studio|[Annexe D : Exemples ADO](./appendixes/appendix-d-ado-samples.md)|
-|Windows 2000|[Configuration système exigée pour l’application Carnet d’adresses](./remote-data-service/system-requirements-for-the-address-book-application.md)<br /><br /> [Octroi de privilèges d’invité à un serveur web](./remote-data-service/granting-guest-privileges-to-a-web-server-computer.md)<br /><br /> [Inscription d’un objet métier personnalisé](./remote-data-service/registering-a-custom-business-object.md)<br /><br /> [Sécurisation des applications RDS](./remote-data-service/securing-rds-applications.md)<br /><br /> [Configuration de RDS sur Windows 2000](./remote-data-service/configuring-rds-on-windows-2000.md)|
+|Windows 2000|[Configuration système exigée pour l’application Carnet d’adresses](./remote-data-service/system-requirements-for-the-address-book-application.md)<br /><br /> [Octroi de privilèges d’invité à un serveur web](./remote-data-service/granting-guest-privileges-to-a-web-server-computer.md)<br /><br /> [Inscription d’un objet métier personnalisé](./remote-data-service/registering-a-custom-business-object.md)<br /><br /> [Sécurisation des applications RDS](./remote-data-service/securing-rds-applications.md)<br /><br /> [Configuration de RDS sur Windows 2000](./remote-data-service/configuring-rds-on-windows-2000.md)|
 |XML|[Persistance des enregistrements au format XML](./data/persisting-records-in-xml-format.md)<br /><br /> [Enregistrements et flux](./data/records-and-streams.md)<br /><br /> [Flux de commandes](./data/command-streams.md)<br /><br /> [Récupération de jeux de résultats dans les flux](./data/retrieving-resultsets-into-streams.md)|

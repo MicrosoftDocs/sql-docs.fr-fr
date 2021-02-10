@@ -11,12 +11,12 @@ author: pochiraju
 ms.author: rajpo
 ms.reviewer: mathoma
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 7362bc8069291d2e7d99399180cc147a38217d93
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: 09d334d7cfcc313cd36d3b59a6b47c64d441f3ee
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87951244"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017069"
 ---
 # <a name="overview-of-database-experimentation-assistant"></a>Vue d’ensemble de Assistant Expérimentation de base de données
 
@@ -107,11 +107,11 @@ La collecte et l’envoi de données de télémétrie sont facultatifs. Pour sp�
 1. Accédez à l’emplacement dans lequel la DEA est installée (par exemple, C : \\ Program Files (x86) \\ Microsoft Corporation \\ Assistant expérimentation de base de données).
 2. Ouvrez et modifiez les fichiers. config **DEA.exe.config** (pour l’application) et **DEACmd.exe.config** (pour l’interface CLI) pour traiter votre scénario comme il convient :
     - Pour arrêter la collecte d’un type d’événement, définissez la valeur de l' *événement* (par exemple, **TraceEvent**) sur **false**. Pour recommencer la collecte de l’événement, définissez la valeur sur **true**.
-    - Pour arrêter l’enregistrement des copies locales des événements, affectez la valeur **false**à **TraceLoggerEnabled** . Pour recommencer à enregistrer les copies locales, définissez la valeur sur **true**.
-    - Pour arrêter l’envoi d’événements à Microsoft, affectez la valeur **false**à **AppInsightsLoggerEnabled** . Pour commencer à envoyer des événements à Microsoft, définissez la valeur sur **true**.
+    - Pour arrêter l’enregistrement des copies locales des événements, affectez la valeur **false** à **TraceLoggerEnabled** . Pour recommencer à enregistrer les copies locales, définissez la valeur sur **true**.
+    - Pour arrêter l’envoi d’événements à Microsoft, affectez la valeur **false** à **AppInsightsLoggerEnabled** . Pour commencer à envoyer des événements à Microsoft, définissez la valeur sur **true**.
 
 La DEA est régie par la [déclaration de confidentialité de Microsoft](https://aka.ms/dea-privacy).
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 - L’article [vue d’ensemble du processus de comparaison des charges de travail](database-experimentation-assistant-get-started.md), qui explique le processus impliqué dans la comparaison des charges de travail dans deux environnements.

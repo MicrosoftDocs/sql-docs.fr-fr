@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 1e7dc6f0-482c-4103-8187-f890865e40fc
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4eb4635aafa67d2b6c96f88580811c204ff73423
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: a07224d352f059b8aad3709c6d4f9605c16696b5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990980"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100029233"
 ---
 # <a name="microsoft-ole-db-simple-provider-overview"></a>Présentation de Microsoft OLE DB simple Provider
 Le fournisseur Microsoft OLE DB simple (OSP) permet à ADO d’accéder à toutes les données pour lesquelles un fournisseur a été écrit à l’aide de [OLE DB boîte à outils OSP (simple Provider)](/previous-versions/windows/desktop/ms715822(v=vs.85)). Les fournisseurs simples sont destinés à accéder aux sources de données qui nécessitent uniquement une prise en charge fondamentale de la OLE DB, telles que les tableaux en mémoire ou les documents XML.
@@ -66,7 +66,7 @@ Portfolio
          WebSite
 ```
 
- Le DSO XML utilise des heuristiques intégrées pour convertir les nœuds d’une arborescence XML en chapitres dans un **jeu d’enregistrements**hiérarchique.
+ Le DSO XML utilise des heuristiques intégrées pour convertir les nœuds d’une arborescence XML en chapitres dans un **jeu d’enregistrements** hiérarchique.
 
  À l’aide de ces heuristiques intégrées, l’arborescence XML est convertie en un **jeu d’enregistrements** hiérarchique à deux niveaux sous la forme suivante :
 
@@ -77,7 +77,7 @@ Shares, Symbol, Price, $Text
       Company Name, WebSite, $Text
 ```
 
- Notez que les balises de portefeuille et d’informations ne sont pas représentées dans le **jeu d’enregistrements**hiérarchique. Pour obtenir une explication de la façon dont l’objet DSO XML convertit les arborescences XML en **jeux d’enregistrements**hiérarchiques, consultez les règles suivantes. La colonne $Text est présentée dans la section suivante.
+ Notez que les balises de portefeuille et d’informations ne sont pas représentées dans le **jeu d’enregistrements** hiérarchique. Pour obtenir une explication de la façon dont l’objet DSO XML convertit les arborescences XML en **jeux d’enregistrements** hiérarchiques, consultez les règles suivantes. La colonne $Text est présentée dans la section suivante.
 
 ## <a name="rules-for-assigning-xml-elements-and-attributes-to-columns-and-rows"></a>Règles d’affectation d’éléments et d’attributs XML à des colonnes et des lignes
  Le DSO XML suit une procédure pour assigner des éléments et des attributs à des colonnes et des lignes dans des applications liées aux données. XML est modélisé sous la forme d’une arborescence avec une balise qui contient l’ensemble de la hiérarchie. Par exemple, une description XML d’un livre peut contenir des balises de chapitre, des balises de figure et des balises de section. Au niveau le plus élevé, la balise Book contient les sous-éléments Chapter, figures et section. Lorsque le DSO XML mappe des éléments XML à des lignes et des colonnes, les sous-éléments, et non l’élément de niveau supérieur, sont convertis.
@@ -88,7 +88,7 @@ Shares, Symbol, Price, $Text
 
 -   Le nom de la colonne est le même que le nom du sous-élément ou de l’attribut, sauf si l’élément parent a un attribut et un sous-élément portant le même nom, auquel cas un «  ! » est ajouté au nom de colonne du sous-élément.
 
--   Chaque colonne est soit une colonne *simple* qui contient des valeurs scalaires (généralement des chaînes), soit une colonne du **jeu d’enregistrements** qui contient des **recordsets**enfants.
+-   Chaque colonne est soit une colonne *simple* qui contient des valeurs scalaires (généralement des chaînes), soit une colonne du **jeu d’enregistrements** qui contient des **recordsets** enfants.
 
 -   Les colonnes correspondant aux attributs sont toujours simples.
 
@@ -140,9 +140,9 @@ adoRS.Open "C:\Directory\portfolio.xml", adoConn
  Pour plus d’informations sur le OLE DB fournisseur simple, consultez [création d’un fournisseur simple](/previous-versions/windows/desktop/ms721067(v=vs.85)).
 
 ## <a name="code-example"></a>Exemple de code
- Le code Visual Basic suivant illustre l’ouverture d’un fichier XML arbitraire, la construction d’un **jeu d’enregistrements**hiérarchique et l’écriture récursive de chaque enregistrement de chaque **Recordset** dans la fenêtre de débogage.
+ Le code Visual Basic suivant illustre l’ouverture d’un fichier XML arbitraire, la construction d’un **jeu d’enregistrements** hiérarchique et l’écriture récursive de chaque enregistrement de chaque **Recordset** dans la fenêtre de débogage.
 
- Voici un simple fichier XML qui contient les cotations boursières. Le code suivant utilise ce fichier pour construire un **jeu d’enregistrements**hiérarchique à deux niveaux.
+ Voici un simple fichier XML qui contient les cotations boursières. Le code suivant utilise ce fichier pour construire un **jeu d’enregistrements** hiérarchique à deux niveaux.
 
 ```xml
 <portfolio>

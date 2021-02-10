@@ -4,12 +4,12 @@ ms.service: sql
 ms.topic: include
 ms.date: 06/11/2020
 ms.author: mikeray
-ms.openlocfilehash: cf13f15fae87d9c3c603c33e094613d4d92ef39f
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 5c8627ff788491540f16e5fc7f7e34bd07988e11
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96116115"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100019235"
 ---
 <Token>![oui](../media/yes-icon.png)[!INCLUDE [ssazuresynapse_md](../ssazuresynapse_md.md)]</Token>
 

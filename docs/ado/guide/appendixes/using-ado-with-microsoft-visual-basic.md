@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9dfb6784-037d-4f9d-bb7f-b506b4498573
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8e2076732536c8d9862ebc022f7a78b197ff428c
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 229662bd5db68039202f1f39d7309c12ff6354a4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990970"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100028858"
 ---
 # <a name="using-ado-with-microsoft-visual-basic-and-visual-basic-for-applications"></a>Utilisation d’ADO avec Microsoft Visual Basic et Visual Basic pour Applications
 La configuration d’un projet ADO et l’écriture de code ADO sont similaires, que vous utilisiez Visual Basic ou Visual Basic pour Applications. Cette rubrique traite de l’utilisation d’ADO avec Visual Basic et Visual Basic pour Applications et note les différences éventuelles.

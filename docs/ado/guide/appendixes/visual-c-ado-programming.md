@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 11233b96-e05c-4221-9aed-5f20944b0f1c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a2e0284db09672d0e92bb952c9e122a65cb8350b
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 420bfbba2eaa3946ce9a373c4ac31a88b540f7d2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991830"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100028704"
 ---
 # <a name="visual-c-ado-programming"></a>Programmation ADO Visual C++
 Les informations de référence sur l’API ADO décrivent les fonctionnalités de l’interface de programmation d’applications (API) ADO à l’aide d’une syntaxe similaire à celle de Microsoft Visual Basic. Bien que le public visé soit l’un de tous les utilisateurs, les programmeurs ADO utilisent différents langages, tels que Visual Basic, Visual C++ (avec et sans la directive **#import** ) et Visual J++ (avec le package de classe ADO/WFC).  
@@ -33,49 +33,49 @@ Les informations de référence sur l’API ADO décrivent les fonctionnalités 
   
  ADO est implémenté avec les interfaces COM (Component Object Model). Toutefois, il est plus facile pour les programmeurs de travailler avec COM dans certains langages de programmation que d’autres. Par exemple, presque tous les détails de l’utilisation de COM sont gérés implicitement pour les programmeurs de Visual Basic, tandis que Visual C++ les programmeurs doivent assister à ces détails eux-mêmes.  
   
- Les sections suivantes résument les détails des programmeurs C et C++ à l’aide d’ADO et de la directive **#import** . Elle se concentre sur les types de données spécifiques à COM (**Variant**, **BSTR**et **SAFEARRAY**) et la gestion des erreurs (_com_error).  
+ Les sections suivantes résument les détails des programmeurs C et C++ à l’aide d’ADO et de la directive **#import** . Elle se concentre sur les types de données spécifiques à COM (**Variant**, **BSTR** et **SAFEARRAY**) et la gestion des erreurs (_com_error).  
   
 ## <a name="using-the-import-compiler-directive"></a>Utilisation de la directive de compilateur #import  
  La directive du compilateur **#import** Visual C++ simplifie l’utilisation des méthodes et des propriétés ADO. La directive prend le nom d’un fichier qui contient une bibliothèque de types, comme ADO. dll (Msado15.dll), et génère des fichiers d’en-tête contenant des déclarations typedef, des pointeurs intelligents pour les interfaces et des constantes énumérées. Chaque interface est encapsulée, ou encapsulée, dans une classe.  
   
  Pour chaque opération dans une classe (autrement dit, un appel de méthode ou de propriété), il existe une déclaration permettant d’appeler l’opération directement (c’est-à-dire la forme « brute » de l’opération), ainsi qu’une déclaration d’appel de l’opération brute et de lever une erreur COM si l’exécution de l’opération a échoué. Si l’opération est une propriété, il existe généralement une directive de compilateur qui crée une syntaxe alternative pour l’opération dont la syntaxe est comme Visual Basic.  
   
- Les opérations qui récupèrent la valeur d’une propriété ont des noms sous la forme, **obtenir**la_propriété_. Les opérations qui définissent la valeur d’une propriété ont des noms de la forme, **put**_Property_. Les opérations qui définissent la valeur d’une propriété avec un pointeur vers un objet ADO ont des noms au format de la_propriété_ **PutRef**.  
+ Les opérations qui récupèrent la valeur d’une propriété ont des noms sous la forme, **obtenir** la _propriété_. Les opérations qui définissent la valeur d’une propriété ont des noms de la forme, **put**_Property_. Les opérations qui définissent la valeur d’une propriété avec un pointeur vers un objet ADO ont des noms au format de la _propriété_ **PutRef**.  
   
  Vous pouvez obtenir ou définir une propriété avec les appels de ces formes :  
   
 ```cpp
-variable = objectPtr->GetProperty(); // get property value   
-objectPtr->PutProperty(value);       // set property value  
-objectPtr->PutRefProperty(&value);   // set property with object pointer  
+variable = objectPtr->GetProperty(); // get property value   
+objectPtr->PutProperty(value);       // set property value  
+objectPtr->PutRefProperty(&value);   // set property with object pointer  
 ```
   
 ## <a name="using-property-directives"></a>Utilisation des directives de propriété  
  La directive de compilateur **__declspec (Property...)** est une extension de langage C spécifique à Microsoft qui déclare une fonction utilisée comme propriété pour avoir une syntaxe alternative. Par conséquent, vous pouvez définir ou obtenir les valeurs d’une propriété d’une manière similaire à Visual Basic. Par exemple, vous pouvez définir et obtenir une propriété de cette façon :  
   
 ```cpp
-objectPtr->property = value;        // set property value  
-variable = objectPtr->property;     // get property value  
+objectPtr->property = value;        // set property value  
+variable = objectPtr->property;     // get property value  
 ```
   
  Notez que vous n’avez pas besoin de coder :  
   
 ```cpp
-objectPtr->PutProperty(value);      // set property value  
-variable = objectPtr->GetProperty;  // get property value  
+objectPtr->PutProperty(value);      // set property value  
+variable = objectPtr->GetProperty;  // get property value  
 ```
   
- Le compilateur génère l’appel de **Get** _-_ _propriété_ obtenir, **put**ou **PutRef**approprié en fonction de la syntaxe de remplacement déclarée et de la lecture ou de l’écriture de la propriété.  
+ Le compilateur génère l’appel de  _-_ _propriété_ obtenir, **put** ou **PutRef** approprié en fonction de la syntaxe de remplacement déclarée et de la lecture ou de l’écriture de la propriété.  
   
  La directive de compilateur **__declspec (Property...)** peut uniquement déclarer une syntaxe d' **extraction** **, d'** extraction ou d' **extraction** et de **placement** pour une fonction. Les opérations en lecture seule ont uniquement une déclaration d' **extraction** ; les opérations en écriture seule ont uniquement une déclaration **put** . les opérations qui sont à la fois en lecture et en écriture ont **des déclarations d’extraction et d'** **extraction** .  
   
- Seules deux déclarations sont possibles avec cette directive. Toutefois, chaque propriété peut avoir trois fonctions de propriété : **obtenir**la_propriété_, **Placer**_la propriété et__propriété_ **PutRef**. Dans ce cas, seules deux formes de la propriété ont la syntaxe alternative.  
+ Seules deux déclarations sont possibles avec cette directive. Toutefois, chaque propriété peut avoir trois fonctions de propriété : **obtenir** la _propriété_, **Placer**_la propriété et__propriété_ **PutRef**. Dans ce cas, seules deux formes de la propriété ont la syntaxe alternative.  
   
- Par exemple, la propriété **ActiveConnection** de l’objet de **commande** est déclarée avec une syntaxe alternative pour **obtenir**_ActiveConnection_ et **PutRef**_ActiveConnection_. La syntaxe **PutRef**est un bon choix, car dans la pratique, vous souhaiterez généralement placer un objet de **connexion** ouvert (autrement dit, un pointeur d’objet de **connexion** ) dans cette propriété. D’un autre côté, l’objet **Recordset** contient des opérations d' **extraction**, **put**et **PutRef**_ActiveConnection_ , mais aucune autre syntaxe.  
+ Par exemple, la propriété **ActiveConnection** de l’objet de **commande** est déclarée avec une syntaxe alternative pour **obtenir**_ActiveConnection_ et **PutRef**_ActiveConnection_. La syntaxe **PutRef** est un bon choix, car dans la pratique, vous souhaiterez généralement placer un objet de **connexion** ouvert (autrement dit, un pointeur d’objet de **connexion** ) dans cette propriété. D’un autre côté, l’objet **Recordset** contient des opérations d' **extraction**, **put** et **PutRef**_ActiveConnection_ , mais aucune autre syntaxe.  
   
 ## <a name="collections-the-getitem-method-and-the-item-property"></a>Collections, méthode GetItem et propriété Item  
 
- ADO définit plusieurs collections, y compris les **champs**, les **paramètres**, les **Propriétés**et les **Erreurs**. Dans Visual C++, la méthode **GetItem (_index_)** retourne un membre de la collection. *Index* est un **Variant**, dont la valeur est un index numérique du membre de la collection ou une chaîne contenant le nom du membre.  
+ ADO définit plusieurs collections, y compris les **champs**, les **paramètres**, les **Propriétés** et les **Erreurs**. Dans Visual C++, la méthode **GetItem (_index_)** retourne un membre de la collection. *Index* est un **Variant**, dont la valeur est un index numérique du membre de la collection ou une chaîne contenant le nom du membre.  
   
  La directive du compilateur **__declspec (Property...)** déclare la propriété **Item** comme une autre syntaxe pour la méthode fondamentale **GetItem ()** de chaque collection. La syntaxe alternative utilise des crochets et ressemble à une référence de tableau. En général, les deux formulaires ressemblent à ce qui suit :  
   
@@ -85,7 +85,7 @@ variable = objectPtr->GetProperty;  // get property value
 collectionPtr->Item[index];  
 ```
   
- Par exemple, affectez une valeur à un champ d’un objet **Recordset** , nommé **_RS_**, dérivé de la table **Authors** de la base de données **pubs** . Utilisez la propriété **Item ()** pour accéder au troisième **champ** de la collection de **champs** de l’objet **Recordset** (les collections sont indexées à partir de zéro ; Supposons que le troisième champ est nommé au- **_ \_ fname_**). Appelez ensuite la méthode **value ()** sur l’objet de **champ** pour assigner une valeur de chaîne.  
+ Par exemple, affectez une valeur à un champ d’un objet **Recordset** , nommé **_RS_**, dérivé de la table **Authors** de la base de données **pubs** . Utilisez la propriété **Item ()** pour accéder au troisième **champ** de la collection de **champs** de l’objet **Recordset** (les collections sont indexées à partir de zéro ; Supposons que le troisième champ est nommé au- **_\_ fname_**). Appelez ensuite la méthode **value ()** sur l’objet de **champ** pour assigner une valeur de chaîne.  
   
  Cela peut être exprimé en Visual Basic des quatre façons suivantes (les deux dernières formes sont uniques à Visual Basic ; les autres langages n’ont pas d’équivalents) :  
   
@@ -112,12 +112,12 @@ rs->Fields->Item["au_fname"]->Value = "value";
   
  Pour obtenir des exemples d’itération au sein d’une collection, consultez la section « collections ADO » de « référence ADO ».  
   
-## <a name="com-specific-data-types"></a>Types de données spécifiques à COM  
- En général, tout Visual Basic type de données que vous trouvez dans la référence de l’API ADO a un Visual C++ équivalent. Celles-ci incluent des types de données standard tels que **unsigned char** pour un **octet**Visual Basic, **short** pour **Integer**et **long** pour **long**. Examinez la syntaxe Indexesto pour voir exactement ce qui est requis pour les opérandes d’une méthode ou d’une propriété donnée.  
+## <a name="com-specific-data-types"></a>Types de données COM-Specific  
+ En général, tout Visual Basic type de données que vous trouvez dans la référence de l’API ADO a un Visual C++ équivalent. Celles-ci incluent des types de données standard tels que **unsigned char** pour un **octet** Visual Basic, **short** pour **Integer** et **long** pour **long**. Examinez la syntaxe Indexesto pour voir exactement ce qui est requis pour les opérandes d’une méthode ou d’une propriété donnée.  
   
- Les exceptions à cette règle sont les types de données spécifiques à COM : **Variant**, **BSTR**et **SAFEARRAY**.  
+ Les exceptions à cette règle sont les types de données spécifiques à COM : **Variant**, **BSTR** et **SAFEARRAY**.  
   
-### <a name="variant"></a>Variant  
+### <a name="variant"></a>Variante  
  Un **Variant** est un type de données structurées qui contient un membre de valeur et un membre de type de données. Une **variante** peut contenir un large éventail d’autres types de données, notamment un autre variant, BSTR, Boolean, IDispatch ou IUnknown, Currency, date, etc. COM fournit également des méthodes qui facilitent la conversion d’un type de données en un autre.  
   
  La classe **_variant_t** encapsule et gère le type de données **Variant** .  
@@ -127,14 +127,14 @@ rs->Fields->Item["au_fname"]->Value = "value";
  Cette règle est explicitement vraie lorsque la section des **paramètres** dans les rubriques de la référence de l’API ADO indique qu’un opérande est un **Variant**. Une exception est quand la documentation indique explicitement que l’opérande accepte un type de données standard, tel que **long** ou **Byte**, ou une énumération. Une autre exception est lorsque l’opérande prend une **chaîne**.  
   
 ### <a name="bstr"></a>BSTR  
- Un **BSTR** (**B**ASIC **Str**) est un type de données structurées qui contient une chaîne de caractères et la longueur de la chaîne. COM fournit des méthodes pour allouer, manipuler et libérer un **BSTR**.  
+ Un **BSTR** (**B** ASIC **Str**) est un type de données structurées qui contient une chaîne de caractères et la longueur de la chaîne. COM fournit des méthodes pour allouer, manipuler et libérer un **BSTR**.  
   
  La classe **_bstr_t** encapsule et gère le type de données **BSTR** .  
   
  Lorsque la référence de l’API ADO indique qu’une méthode ou une propriété prend une valeur de **chaîne** , cela signifie que la valeur est sous la forme d’un **_bstr_t**.  
   
 ### <a name="casting-_variant_t-and-_bstr_t-classes"></a>Cast des classes _variant_t et _bstr_t  
- Il n’est souvent pas nécessaire de coder explicitement un **_variant_t** ou **_bstr_t** dans un argument d’une opération. Si la classe **_variant_t** ou **_bstr_t** a un constructeur qui correspond au type de données de l’argument, le compilateur génère le **_variant_t** ou **_bstr_t**approprié.  
+ Il n’est souvent pas nécessaire de coder explicitement un **_variant_t** ou **_bstr_t** dans un argument d’une opération. Si la classe **_variant_t** ou **_bstr_t** a un constructeur qui correspond au type de données de l’argument, le compilateur génère le **_variant_t** ou **_bstr_t** approprié.  
   
  Toutefois, si l’argument est ambigu, autrement dit, si le type de données de l’argument correspond à plusieurs constructeurs, vous devez effectuer un cast de l’argument avec le type de données approprié pour appeler le constructeur correct.  
   
@@ -169,7 +169,7 @@ rs->Fields->Item["au_fname"]->Value = "value";
   
  Par exemple, le deuxième paramètre de la méthode **OpenSchema** de l’objet **Connection** requiert un tableau de valeurs de **type Variant** . Ces valeurs de **type Variant** doivent être passées en tant qu’éléments d’un **SAFEARRAY**, et ce **SAFEARRAY** doit être défini en tant que valeur d’une autre **variante**. Il s’agit de l’autre **Variant** qui est passé comme deuxième argument de **OpenSchema**.  
   
- À titre d’exemple, le premier argument de la méthode **Find** est un **Variant** dont la valeur est un **SAFEARRAY**unidimensionnel ; chacun des premier et deuxième arguments facultatifs de **AddNew** est un **SAFEARRAY**unidimensionnel ; et la valeur de retour de la méthode **GetRows** est une **variante** dont la valeur est un **SAFEARRAY**à deux dimensions.  
+ À titre d’exemple, le premier argument de la méthode **Find** est un **Variant** dont la valeur est un **SAFEARRAY** unidimensionnel ; chacun des premier et deuxième arguments facultatifs de **AddNew** est un **SAFEARRAY** unidimensionnel ; et la valeur de retour de la méthode **GetRows** est une **variante** dont la valeur est un **SAFEARRAY** à deux dimensions.  
   
 ## <a name="missing-and-default-parameters"></a>Paramètres manquants et par défaut  
  Visual Basic autorise les paramètres manquants dans les méthodes. Par exemple, la méthode d' **ouverture** d’un objet **Recordset** a cinq paramètres, mais vous pouvez ignorer les paramètres intermédiaires et conserver les paramètres de fin. Un **BSTR** ou une **variante** par défaut est substitué selon le type de données de l’opérande manquant.  
@@ -179,11 +179,11 @@ rs->Fields->Item["au_fname"]->Value = "value";
  Trois méthodes sont des exceptions à l’utilisation classique de **vtMissing**. Il s’agit des méthodes **Execute** des objets **Connection** et **Command** , et de la méthode **NextRecordset** de l’objet **Recordset** . Les signatures sont les suivantes :  
   
 ```cpp
-_RecordsetPtr <A HREF="mdmthcnnexecute.htm">Execute</A>( _bstr_t CommandText, VARIANT * RecordsAffected,   
-        long Options );  // Connection  
-_RecordsetPtr <A HREF="mdmthcmdexecute.htm">Execute</A>( VARIANT * RecordsAffected, VARIANT * Parameters,   
-        long Options );  // Command  
-_RecordsetPtr <A HREF="mdmthnextrec.htm">NextRecordset</A>( VARIANT * RecordsAffected );  // Recordset  
+_RecordsetPtr <A HREF="mdmthcnnexecute.htm">Execute</A>( _bstr_t CommandText, VARIANT * RecordsAffected,   
+        long Options );  // Connection  
+_RecordsetPtr <A HREF="mdmthcmdexecute.htm">Execute</A>( VARIANT * RecordsAffected, VARIANT * Parameters,   
+        long Options );  // Command  
+_RecordsetPtr <A HREF="mdmthnextrec.htm">NextRecordset</A>( VARIANT * RecordsAffected );  // Recordset  
 ```
   
  Les paramètres, *RecordsAffected* et *Parameters*, sont des pointeurs vers un **Variant**. *Parameters* est un paramètre d’entrée qui spécifie l’adresse d’un **Variant** contenant un seul paramètre, ou un tableau de paramètres, qui modifiera la commande en cours d’exécution. *RecordsAffected* est un paramètre de sortie qui spécifie l’adresse d’un **Variant**, où le nombre de lignes affectées par la méthode est retourné.  
@@ -195,8 +195,8 @@ _RecordsetPtr <A HREF="mdmthnextrec.htm">NextRecordset</A>( VARIANT * Record
  Par conséquent, pour ces trois méthodes, il est valide de coder un code tel que :  
   
 ```cpp
-pConnection->Execute("commandText", NULL, adCmdText);   
-pCommand->Execute(NULL, NULL, adCmdText);  
+pConnection->Execute("commandText", NULL, adCmdText);   
+pCommand->Execute(NULL, NULL, adCmdText);  
 pRecordset->NextRecordset(NULL);  
 ```
   
@@ -223,7 +223,7 @@ Dim rst As ADODB.Recordset
 Dim rst As New ADODB.Recordset  
 ```
   
- - ou -  
+ -ou-  
   
 ```vb
 Dim rst As ADODB.Recordset  
@@ -270,14 +270,14 @@ rs->Open(...);
  Lorsque vous devez coder un opérande de **chaîne** manquant dans Visual Basic, il vous suffit d’omettre l’opérande. Vous devez spécifier l’opérande dans Visual C++. Code un **_bstr_t** qui a une chaîne vide en tant que valeur.  
   
 ```cpp
-_bstr_t strMissing(L"");  
+_bstr_t strMissing(L"");  
 ```
   
 ### <a name="coding-a-missing-parameter---variant"></a>Codage d’une variante de paramètre manquante  
  Lorsque vous devez coder un opérande **Variant** manquant dans Visual Basic, il vous suffit d’omettre l’opérande. Vous devez spécifier tous les opérandes dans Visual C++. Codez un paramètre **Variant** manquant avec un **_variant_t** défini sur la valeur spéciale, DISP_E_PARAMNOTFOUND et type, VT_ERROR. Vous pouvez également spécifier **vtMissing**, qui est une constante prédéfinie équivalente fournie par la directive **#import** .  
   
 ```cpp
-_variant_t  vtMissingYours(DISP_E_PARAMNOTFOUND, VT_ERROR);   
+_variant_t  vtMissingYours(DISP_E_PARAMNOTFOUND, VT_ERROR);   
 ```
   
  -ou utilisez-  
@@ -290,7 +290,7 @@ _variant_t  vtMissingYours(DISP_E_PARAMNOTFOUND, VT_ERROR); 
  Dans Visual Basic, un **Variant** est déclaré avec l’instruction **Dim** comme suit :  
   
 ```vb
-Dim VariableName As Variant  
+Dim VariableName As Variant  
 ```
   
  Dans Visual C++, déclarez une variable en tant que type **_variant_t**. Quelques déclarations de **_variant_t** schématique sont présentées ci-dessous.  
@@ -299,30 +299,30 @@ Dim VariableName As Variant
 >  Ces déclarations donnent simplement une idée approximative de ce que vous pourriez coder dans votre propre programme. Pour plus d’informations, consultez les exemples ci-dessous et la documentation Visual C++.  
   
 ```cpp
-_variant_t  VariableName(value);  
-_variant_t  VariableName((data type cast) value);  
-_variant_t  VariableName(value, VT_DATATYPE);  
-_variant_t  VariableName(interface * value, bool fAddRef = true);  
+_variant_t  VariableName(value);  
+_variant_t  VariableName((data type cast) value);  
+_variant_t  VariableName(value, VT_DATATYPE);  
+_variant_t  VariableName(interface * value, bool fAddRef = true);  
 ```
   
 ### <a name="using-arrays-of-variants"></a>Utilisation de tableaux de variants  
  Dans Visual Basic, les tableaux de **variants** peuvent être codés avec l’instruction **Dim** , ou vous pouvez utiliser la fonction **Array** , comme illustré dans l’exemple de code suivant :  
   
 ```vb
-Public Sub ArrayOfVariants  
-Dim cn As ADODB.Connection  
-Dim rs As ADODB.Recordset  
+Public Sub ArrayOfVariants  
+Dim cn As ADODB.Connection  
+Dim rs As ADODB.Recordset  
 Dim fld As ADODB.Field  
   
-    cn.Open "DSN=pubs"  
-    rs = cn.OpenSchema(adSchemaColumns, _  
-        Array(Empty, Empty, "authors", Empty))  
+    cn.Open "DSN=pubs"  
+    rs = cn.OpenSchema(adSchemaColumns, _  
+        Array(Empty, Empty, "authors", Empty))  
     For Each fld in rs.Fields  
         Debug.Print "Name = "; fld.Name  
     Next fld  
     rs.Close  
     cn.Close  
-End Sub  
+End Sub  
 ```
   
  L’exemple de Visual C++ suivant illustre l’utilisation d’un **SAFEARRAY** utilisé avec une **_variant_t**.  
@@ -332,10 +332,10 @@ End Sub
   
 1.  Une fois encore, la fonction inline TESTHR () est définie pour tirer parti du mécanisme de gestion des erreurs existant.  
   
-2.  Vous n’avez besoin que d’un tableau unidimensionnel. vous pouvez donc utiliser **SafeArrayCreateVector**au lieu de la Déclaration **SAFEARRAYBOUND** à usage général et de la fonction **SafeArrayCreate** . Voici à quoi ressemble le code à l’aide de **SafeArrayCreate**:  
+2.  Vous n’avez besoin que d’un tableau unidimensionnel. vous pouvez donc utiliser **SafeArrayCreateVector** au lieu de la Déclaration **SAFEARRAYBOUND** à usage général et de la fonction **SafeArrayCreate** . Voici à quoi ressemble le code à l’aide de **SafeArrayCreate**:  
   
     ```cpp
-       SAFEARRAYBOUND   sabound[1];  
+       SAFEARRAYBOUND   sabound[1];  
        sabound[0].lLbound = 0;  
        sabound[0].cElements = 4;  
        pSa = SafeArrayCreate(VT_VARIANT, 1, sabound);  
@@ -418,28 +418,28 @@ int main() {
  Dans Visual Basic, le nom d’une propriété n’est pas qualifié par le fait qu’elle soit récupérée, affectée ou assignée à une référence.  
   
 ```vb
-Public Sub GetPutPutRef  
-Dim rs As New ADODB.Recordset  
-Dim cn As New ADODB.Connection  
-Dim sz as Integer  
-cn.Open "Provider=sqloledb;Data Source=yourserver;" & _  
+Public Sub GetPutPutRef  
+Dim rs As New ADODB.Recordset  
+Dim cn As New ADODB.Connection  
+Dim sz as Integer  
+cn.Open "Provider=sqloledb;Data Source=yourserver;" & _  
          "Initial Catalog=pubs;Integrated Security=SSPI;"  
-rs.PageSize = 10  
-sz = rs.PageSize  
-rs.ActiveConnection = cn  
-rs.Open "authors",,adOpenStatic  
+rs.PageSize = 10  
+sz = rs.PageSize  
+rs.ActiveConnection = cn  
+rs.Open "authors",,adOpenStatic  
 ' ...  
 rs.Close  
 cn.Close  
-End Sub  
+End Sub  
 ```
   
- Cet exemple de Visual C++ illustre **Get**la propriété obten / **put** / **PutRef**_Property_.  
+ Cet exemple de Visual C++ illustre la propriété obten / **put** / **PutRef**.  
   
 #### <a name="notes"></a>Notes  
  Les remarques suivantes correspondent aux sections commentées dans l’exemple de code.  
   
-1.  Cet exemple utilise deux formes d’un argument de chaîne manquant : une constante explicite, **strMissing**et une chaîne que le compilateur utilisera pour créer un **_bstr_t** temporaire qui existera pour la portée de la méthode **ouverte** .  
+1.  Cet exemple utilise deux formes d’un argument de chaîne manquant : une constante explicite, **strMissing** et une chaîne que le compilateur utilisera pour créer un **_bstr_t** temporaire qui existera pour la portée de la méthode **ouverte** .  
   
 2.  Il n’est pas nécessaire d’effectuer un cast de l’opérande de `rs->PutRefActiveConnection(cn)` en `(IDispatch *)` , car le type de l’opérande est déjà `(IDispatch *)` .  
   
@@ -487,21 +487,21 @@ int main() {
  Cet exemple de Visual Basic illustre la syntaxe standard et alternative pour **Item**().  
   
 ```vb
-Public Sub GetItemItem  
-Dim rs As New ADODB.Recordset  
-Dim name as String  
-rs = rs.Open "authors", "DSN=pubs;", adOpenDynamic, _  
-         adLockBatchOptimistic, adTable  
-name = rs(0)  
-' -or-  
-name = rs.Fields.Item(0)  
-rs(0) = "Test"  
+Public Sub GetItemItem  
+Dim rs As New ADODB.Recordset  
+Dim name as String  
+rs = rs.Open "authors", "DSN=pubs;", adOpenDynamic, _  
+         adLockBatchOptimistic, adTable  
+name = rs(0)  
+' -or-  
+name = rs.Fields.Item(0)  
+rs(0) = "Test"  
 rs.UpdateBatch  
-' Restore name  
-rs(0) = name  
+' Restore name  
+rs(0) = name  
 rs.UpdateBatch  
 rs.Close  
-End Sub  
+End Sub  
 ```
   
  Cet exemple de Visual C++ illustre **Item**.  
@@ -558,7 +558,7 @@ void main() {
 #### <a name="notes"></a>Notes  
  Les remarques suivantes correspondent aux sections commentées dans l’exemple de code.  
   
-1.  Spécifiez un objet de **connexion** ouvert dans une **variante**codée explicitement. Effectuez un cast de celui-ci avec (IDispatch \* ) pour que le constructeur correct soit appelé. De même, définissez explicitement le deuxième paramètre **_variant_t** sur la valeur par défaut **true**, afin que le nombre de références d’objet soit correct lorsque l’opération **Recordset :: Open** se termine.  
+1.  Spécifiez un objet de **connexion** ouvert dans une **variante** codée explicitement. Effectuez un cast de celui-ci avec (IDispatch \* ) pour que le constructeur correct soit appelé. De même, définissez explicitement le deuxième paramètre **_variant_t** sur la valeur par défaut **true**, afin que le nombre de références d’objet soit correct lorsque l’opération **Recordset :: Open** se termine.  
   
 2.  L’expression, `(_bstr_t)` , n’est pas un cast, mais un opérateur **_variant_t** qui extrait une chaîne **_bstr_t** à partir de la **variante** retournée par **value**.  
   

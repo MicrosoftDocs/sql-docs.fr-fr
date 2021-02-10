@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: b0478836-4123-4357-969a-c5784fc28be5
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: dd781612557faebd4b6eefb710ffad2379928aee
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 3a79a16b0fe5f0514b2d90333fcbe99e8e5b5023
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88980850"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100031051"
 ---
 # <a name="ado-glossary-terms"></a>Termes du Glossaire ADO
 Cette rubrique définit les termes pertinents pour ADO.
@@ -97,21 +97,21 @@ Cette rubrique définit les termes pertinents pour ADO.
 
  Logiciel de fournisseur de données qui expose des données à une application ADO, directement ou via un fournisseur de services. Voir aussi fournisseur de services.
 
- mise en forme des données une technique qui utilise une syntaxe formalisée (appelée **langage**de mise en forme) pour définir un objet **Recordset** spécialisé (appelé *jeu d’enregistrements mis*en forme) qui ne contient pas uniquement des données, mais également des références à d’autres objets **Recordset** et/ou à des valeurs calculées en fonction de ces autres objets **Recordset** .
+ mise en forme des données une technique qui utilise une syntaxe formalisée (appelée **langage** de mise en forme) pour définir un objet **Recordset** spécialisé (appelé *jeu d’enregistrements mis* en forme) qui ne contient pas uniquement des données, mais également des références à d’autres objets **Recordset** et/ou à des valeurs calculées en fonction de ces autres objets **Recordset** .
 
  couche de source de données couche logique d’un système distribué qui représente un ordinateur exécutant un SGBD, tel qu’une base de données SQL Server. Voir aussi *niveau client*, *couche intermédiaire*, *application distribuée*.
 
  DCOM protocole câble qui permet aux composants COM de communiquer directement entre eux sur un réseau. Voir aussi *com*, *composant*.
 
- DDL (Data Definition Language) ces instructions dans SQL qui définissent, par opposition à manipuler, les données. Le schéma d’une base de données est créé ou modifié avec DDL. Par exemple, **Create table**, **Create index**, **Grant**et **Revoke** sont des instructions DDL SQL.
+ DDL (Data Definition Language) ces instructions dans SQL qui définissent, par opposition à manipuler, les données. Le schéma d’une base de données est créé ou modifié avec DDL. Par exemple, **Create table**, **Create index**, **Grant** et **Revoke** sont des instructions DDL SQL.
 
  Le flux par défaut est un flux de texte ou binaire (représenté par un objet de **flux** ) qui est associé à des objets **Record** ou **Recordset** lors de l’utilisation de certains fournisseurs de OLE DB, tels que le fournisseur Microsoft OLE DB pour la publication Internet. Le flux par défaut contient généralement le contenu d’un fichier tel que le code HTML de la racine d’un site Web.
 
- application distribuée un programme écrit de sorte que le traitement puisse être réparti entre plusieurs ordinateurs sur un réseau. En règle générale, une application distribuée est divisée *en couches de*présentation, de logique métier et de magasin de données. Voir aussi niveau client, niveau intermédiaire, niveau source de données.
+ application distribuée un programme écrit de sorte que le traitement puisse être réparti entre plusieurs ordinateurs sur un réseau. En règle générale, une application distribuée est divisée *en couches de* présentation, de logique métier et de magasin de données. Voir aussi niveau client, niveau intermédiaire, niveau source de données.
 
  Recordset déconnecté un objet **Recordset** dans un cache client qui ne dispose plus d’une connexion active au serveur. Si la source de données d’origine doit être réutilisée pour une raison quelconque, telle que la mise à jour des données, la connexion doit être rétablie. Toutefois, les collections, les propriétés et les méthodes d’un **jeu d’enregistrements** déconnecté sont toujours accessibles.
 
- DML (Data Manipulation Language) ces instructions dans SQL qui manipulent, au lieu de définir, des données. Les valeurs d’une base de données sont sélectionnées et modifiées à l’aide de DML. Par exemple, **Insert**, **Update**, **Delete**et **Select** sont des instructions SQL DML.
+ DML (Data Manipulation Language) ces instructions dans SQL qui manipulent, au lieu de définir, des données. Les valeurs d’une base de données sont sélectionnées et modifiées à l’aide de DML. Par exemple, **Insert**, **Update**, **Delete** et **Select** sont des instructions SQL DML.
 
  fournisseur de source de document classe spéciale de fournisseurs qui gèrent des dossiers et des documents. Lorsqu’un document est représenté par un objet **enregistrement** ou qu’un dossier de documents est représenté par un objet **Recordset** , le fournisseur de source du document remplit ces objets avec un ensemble unique de champs qui décrivent les caractéristiques du document, au lieu du document proprement dit. Voir aussi enregistrement de ressource.
 
@@ -120,7 +120,7 @@ Cette rubrique définit les termes pertinents pour ADO.
  propriété dynamique propriété spécifique à un fournisseur de données ou au service de curseur. La collection Properties d’un objet est remplie automatiquement avec ces **Propriétés** (« dynamiquement »). Un objet n’a pas de propriétés dynamiques tant qu’il n’est pas connecté à une source de données par le biais d’un fournisseur de données particulier. Voir aussi fournisseur de données, curseur.
 
 ## <a name="e"></a>E
- Énumération d’une liste de constantes nommées. Les valeurs énumérées ne doivent pas être uniques. Toutefois, le nom de chaque valeur doit être unique dans l’étendue où l’énumération est définie. Dans ADO, les énumérations sont utilisées pour les paramètres numériques et les valeurs de retour, afin d’ajouter une signification au code ADO et de protéger le développeur des valeurs numériques (qui peuvent changer d’une version à l’autres). Par exemple, pour ouvrir un **jeu d’enregistrements**statique, utilisez la valeur énumérée **adOpenStatic** : `Recordset.Open ,,adOpenStatic`
+ Énumération d’une liste de constantes nommées. Les valeurs énumérées ne doivent pas être uniques. Toutefois, le nom de chaque valeur doit être unique dans l’étendue où l’énumération est définie. Dans ADO, les énumérations sont utilisées pour les paramètres numériques et les valeurs de retour, afin d’ajouter une signification au code ADO et de protéger le développeur des valeurs numériques (qui peuvent changer d’une version à l’autres). Par exemple, pour ouvrir un **jeu d’enregistrements** statique, utilisez la valeur énumérée **adOpenStatic** : `Recordset.Open ,,adOpenStatic`
 
  Également appelée *constante énumérée*. Voir aussi *constante*.
 

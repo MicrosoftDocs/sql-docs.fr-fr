@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a4360ed4-b70f-4734-9041-4025d033346b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6a4e4fcec5217a9a9475f11d3a386c7436892ea6
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: c73122e5fe1b06fb44ad69219145972ef4009202
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724870"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100029243"
 ---
 # <a name="microsoft-ole-db-remoting-provider-overview"></a>Vue d’ensemble du fournisseur Microsoft OLE DB Remoting
 Le fournisseur Microsoft OLE DB Remoting permet à un utilisateur local sur un ordinateur client d’appeler des fournisseurs de données sur un ordinateur distant. Spécifiez les paramètres du fournisseur de données pour la machine distante comme vous le feriez pour un utilisateur local sur l’ordinateur distant. Spécifiez ensuite les paramètres utilisés par le fournisseur de communication à distance pour accéder à la machine distante. Vous pouvez ensuite accéder à la machine distante comme si vous étiez un utilisateur local.
@@ -49,7 +49,7 @@ Le fournisseur Microsoft OLE DB Remoting permet à un utilisateur local sur un o
 |---------------------------|-----------------|
 |**DFMode**|Indique le mode DataFactory. Chaîne qui spécifie la version souhaitée de l’objet [DataFactory](../../reference/rds-api/datafactory-object-rdsserver.md) sur le serveur. Définissez cette propriété avant d’ouvrir une connexion pour demander une version particulière du **DataFactory**. Si la version demandée n’est pas disponible, une tentative d’utilisation de la version précédente est effectuée. S’il n’existe pas de version précédente, une erreur se produit. Si **DFMode** est inférieur à la version disponible, une erreur se produit. Cette propriété est en lecture seule après l’établissement d’une connexion.<br /><br /> Il peut s’agir de l’une des valeurs de chaîne valides suivantes :<br /><br /> -"25"-version 2,5 (par défaut)<br />-« 21 »-version 2,1<br />-« 20 »-version 2,0<br />-« 15 »-version 1,5|
 |**Propriétés de commande**|Indique les valeurs qui seront ajoutées à la chaîne de propriétés de commande (rowset) envoyées au serveur par le fournisseur distant MS. La valeur par défaut de cette chaîne est vt_empty.|
-|**DFMode actuel**|Indique le numéro de version réel du **DataFactory** sur le serveur. Vérifiez cette propriété pour voir si la version demandée dans la propriété **DFMode** a été respectée.<br /><br /> Il peut s’agir de l’une des valeurs entières longues valides suivantes :<br /><br /> -25-version 2,5 (par défaut)<br />-21-version 2,1<br />-20-version 2,0<br />-15-version 1,5<br /><br /> L’ajout de « DFMode = 20 ; » à votre chaîne de connexion lors de l’utilisation du fournisseur **MSRemote** peut améliorer les performances de votre serveur lors de la mise à jour des données. Avec ce paramètre, l’objet **RDSServer. DataFactory** sur le serveur utilise un mode moins gourmand en ressources. Toutefois, les fonctionnalités suivantes ne sont pas disponibles dans cette configuration :<br /><br /> -Utilisation de requêtes paramétrables.<br />-Obtention des informations sur les paramètres ou les colonnes avant d’appeler la méthode **Execute** .<br />-Affectation de la **valeur true**à la **mise à jour de Transact** .<br />-Obtention de l’état de la ligne.<br />-Appel de la méthode **Resync** .<br />-Actualisation (explicite ou automatique) via la propriété **mettre à jour la resynchronisation** .<br />-Définition des propriétés de la **commande** ou du **Recordset** .<br />-Utilisation de **adCmdTableDirect**.|
+|**DFMode actuel**|Indique le numéro de version réel du **DataFactory** sur le serveur. Vérifiez cette propriété pour voir si la version demandée dans la propriété **DFMode** a été respectée.<br /><br /> Il peut s’agir de l’une des valeurs entières longues valides suivantes :<br /><br /> -25-version 2,5 (par défaut)<br />-21-version 2,1<br />-20-version 2,0<br />-15-version 1,5<br /><br /> L’ajout de « DFMode = 20 ; » à votre chaîne de connexion lors de l’utilisation du fournisseur **MSRemote** peut améliorer les performances de votre serveur lors de la mise à jour des données. Avec ce paramètre, l’objet **RDSServer. DataFactory** sur le serveur utilise un mode moins gourmand en ressources. Toutefois, les fonctionnalités suivantes ne sont pas disponibles dans cette configuration :<br /><br /> -Utilisation de requêtes paramétrables.<br />-Obtention des informations sur les paramètres ou les colonnes avant d’appeler la méthode **Execute** .<br />-Affectation de la **valeur true** à la **mise à jour de Transact** .<br />-Obtention de l’état de la ligne.<br />-Appel de la méthode **Resync** .<br />-Actualisation (explicite ou automatique) via la propriété **mettre à jour la resynchronisation** .<br />-Définition des propriétés de la **commande** ou du **Recordset** .<br />-Utilisation de **adCmdTableDirect**.|
 |**Handler**|Indique le nom d’un programme de personnalisation côté serveur (ou gestionnaire) qui étend les fonctionnalités de [RDSServer. DataFactory](../../reference/rds-api/datafactory-object-rdsserver.md)et de tous les paramètres utilisés par le gestionnaire, séparés par des virgules (","). Valeur de **chaîne**.|
 |**Délai d’expiration Internet**|Indique le nombre maximal de millisecondes d’attente d’une demande de déplacement vers et à partir du serveur. (La valeur par défaut est 5 minutes.)|
 |**Fournisseur distant**|Indique le nom du fournisseur de données à utiliser sur le serveur distant.|
@@ -73,7 +73,7 @@ cn.Properties("Internet Timeout") = 5000
 ## <a name="remarks"></a>Notes
  Dans ADO 2,0, le fournisseur de communication à distance OLE DB ne peut être spécifié que dans le paramètre *ActiveConnection* de la méthode **Open** de l’objet [Recordset](../../reference/ado-api/recordset-object-ado.md) . À compter d’ADO 2,1, le fournisseur peut également être spécifié dans le paramètre *ConnectionString* de la méthode **Open** de l’objet de [connexion](../../reference/ado-api/connection-object-ado.md) .
 
- Équivalent de l' **objet RDS. ** La propriété [SQL](../../reference/rds-api/sql-property.md) de l’objet DataControl n’est pas disponible. L’argument de *source* de la méthode d' **ouverture** de l’objet [Recordset](../../reference/ado-api/recordset-object-ado.md) est utilisé à la place.
+ Équivalent de l' **objet RDS.** La propriété [SQL](../../reference/rds-api/sql-property.md) de l’objet DataControl n’est pas disponible. L’argument de *source* de la méthode d' **ouverture** de l’objet [Recordset](../../reference/ado-api/recordset-object-ado.md) est utilisé à la place.
 
  **Remarque** La spécification de «...; Fournisseur distant = MS Remote ;...» créerait un scénario à quatre niveaux. Les scénarios au-delà de trois niveaux n’ont pas été testés et ne devraient pas être nécessaires.
 
@@ -83,11 +83,11 @@ cn.Properties("Internet Timeout") = 5000
 ```vb
 Dim rs as New ADODB.Recordset
 Dim cn as New ADODB.Connection
-cn.Open  "Provider=MS Remote;Data Source=pubs;" & _
+cn.Open  "Provider=MS Remote;Data Source=pubs;" & _
          "Remote Server=https://YourServer"
 rs.Open "SELECT * FROM authors", cn
-...                'Edit the recordset
-rs.UpdateBatch     'Equivalent of RDS SubmitChanges
+...                'Edit the recordset
+rs.UpdateBatch     'Equivalent of RDS SubmitChanges
 ...
 ```
 

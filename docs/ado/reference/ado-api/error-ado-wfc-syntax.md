@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a22c6688-5321-4e6a-ba2a-87985a0e854a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5d337003f6c71caf7e6f708e4b77b6ec8d95b481
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: bea3c2576eca1cd8270e9a2e262b1686d4b1b57a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171203"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100025046"
 ---
 # <a name="error-ado---wfc-syntax"></a>Error (ADO - syntaxe WFC)
 ## <a name="package-commswfcdata"></a>package com. ms. wfc. Data  
@@ -35,4 +35,4 @@ public String getSQLState()
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Error, objet](../../../ado/reference/ado-api/error-object.md)
+ [Objet Error](../../../ado/reference/ado-api/error-object.md)

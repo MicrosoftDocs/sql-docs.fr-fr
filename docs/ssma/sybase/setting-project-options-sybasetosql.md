@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 97b70fc8-1f68-4f15-8e22-db5b784ea4ec
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: df912a5a58bdcfb2777177bddef80899f31f38c2
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: fa8e45af93faa4ef175d129487a1d655a6d02ead
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88468712"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100030757"
 ---
 # <a name="setting-project-options-sybasetosql"></a>Définition des options du projet (SybaseToSQL)
 Pour chaque projet SSMA, vous pouvez définir des options au niveau du projet. Ces options spécifient la conversion d’objet, le chargement d’objet, SQL Azure, l’interface utilisateur et les paramètres de migration de données. Avant de convertir des objets en SQL Azure ou de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] migrer [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] des données vers ou SQL Azure, vérifiez que les options de configuration sont appropriées pour le projet.  
@@ -45,7 +45,7 @@ Il comporte également quatre modes de configuration de ces paramètres :
   
 3.  Complète  
   
-4.  Custom  
+4.  Personnalisé  
   
 Le mode par défaut est recommandé pour la plupart des utilisateurs. Le mode optimiste conserve davantage la syntaxe Sybase Adaptive Server Enterprise (ASE) actuelle et est plus facile à lire. Toutefois, il se peut que la conservation de la syntaxe actuelle ne soit pas exacte. Si la syntaxe de l’ASE doit être convertie en syntaxe équivalente [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure, le mode complet effectue une conversion complète, mais le code obtenu peut être plus difficile à lire. Dans le mode personnalisé, vous définissez les options.  
   
@@ -74,7 +74,7 @@ Dans SSMA, vous pouvez configurer des paramètres par défaut pour tous les proj
   
     -   Sélectionnez le type de projet de migration pour lequel les paramètres doivent être affichés ou modifiés dans la liste déroulante **version cible** de la migration cliquez sur général en bas du volet gauche, puis sélectionnez conversion ou migration ou SQL Azure.  
   
-    -   Pour sélectionner un mode prédéfini, dans la zone de liste déroulante **mode** , sélectionnez **par défaut**, **optimiste**ou **complète**.  
+    -   Pour sélectionner un mode prédéfini, dans la zone de liste déroulante **mode** , sélectionnez **par défaut**, **optimiste** ou **complète**.  
   
     -   Pour spécifier des paramètres personnalisés, il vous suffit de sélectionner ou d’entrer les nouveaux paramètres ou valeurs.  
   
@@ -88,7 +88,7 @@ Vous pouvez également personnaliser les paramètres du projet actuel. Ces param
   
 2.  Dans la boîte de dialogue **paramètres du projet** , utilisez l’une des procédures suivantes :  
   
-    -   Pour sélectionner un mode prédéfini, dans la zone de liste déroulante **mode** , sélectionnez **par défaut**, **optimiste**ou **complète**.  
+    -   Pour sélectionner un mode prédéfini, dans la zone de liste déroulante **mode** , sélectionnez **par défaut**, **optimiste** ou **complète**.  
   
     -   Pour spécifier un mode personnalisé, dans la zone déroulante **mode** , sélectionnez **personnalisé**, sélectionnez une option dans le volet gauche, cliquez sur le paramètre ou la valeur dans le volet droit, puis sélectionnez ou entrez le nouveau paramètre ou la nouvelle valeur.  
   

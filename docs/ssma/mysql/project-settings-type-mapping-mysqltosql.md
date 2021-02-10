@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 136fdf6d-657f-447b-af41-49bbc6e0e93e
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: a6f4bc99caceeb7011c932c86e636304941c459c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a2f3e077a93d90afccf05023e41f8e5f2ea6fabc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88418485"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017319"
 ---
 # <a name="project-settings-type-mapping-mysqltosql"></a>Paramètres du projet (Mappage de type) (MySQLToSQL)
 Les paramètres de projet de mappage de type vous permettent de définir des mappages de types par défaut pour le projet SSMA.  

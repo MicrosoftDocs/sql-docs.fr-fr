@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ebfd4cda-4017-4873-9d28-38b1c7db12a8
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ace9f64003241cbf16e0ed957bdce77a1187813c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 917e88ace8b1d2e0abdbe084ebaf2eb71191f093
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171175"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100025027"
 ---
 # <a name="eventstatusenum"></a>EventStatusEnum
 Spécifie l’état actuel de l’exécution d’un événement.  

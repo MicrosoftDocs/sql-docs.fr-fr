@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 0ded5ad9-8f83-4224-95af-38512783b972
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 343d24455490674a9c926d94a902906992679a2c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 41431d92cd8c9dfea44ea88feadcce9df7edc3bf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164924"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100031271"
 ---
 # <a name="ado-events"></a>Événements ADO
 

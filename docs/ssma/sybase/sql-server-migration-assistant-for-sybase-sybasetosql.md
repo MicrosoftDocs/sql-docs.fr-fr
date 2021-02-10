@@ -11,12 +11,12 @@ ms.assetid: 59e63eac-8a7e-4d54-be1c-0633a9bf510d
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: d961301d94eb9c14bb4fc924cf826c769843483e
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: d32f59e4f9c81236199203cfa063b7d26152986b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596614"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100030747"
 ---
 # <a name="sql-server-migration-assistant-for-sybase-sybasetosql"></a>Assistant Migration SQL Server pour Sybase (SybaseToSQL)
 

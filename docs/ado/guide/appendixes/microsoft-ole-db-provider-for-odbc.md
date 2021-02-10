@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 2dc0372d-e74d-4d0f-9c8c-04e5a168c148
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1bce53fd000baace86d32542d9b9cc843ee68296
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 5a6cfdda6072f8ed51d55569ed68b113a4148642
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991020"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100029263"
 ---
 # <a name="microsoft-ole-db-provider-for-odbc-overview"></a>Vue d’ensemble du fournisseur Microsoft OLE DB pour ODBC
 Pour un programmeur ADO ou RDS, un monde idéal serait celui dans lequel chaque source de données expose une interface OLE DB, afin qu’ADO puisse appeler directement dans la source de données. Bien que de plus en plus de fournisseurs de bases de données implémentent des interfaces OLE DB, certaines sources de données ne sont pas encore exposées de cette façon. Toutefois, la plupart des systèmes SGBD en cours d’utilisation sont accessibles via ODBC.
@@ -88,9 +88,9 @@ DATABASE=database; UID=MyUserID; PWD=MyPassword"
 
  Vous pouvez également spécifier un nom de compte d’utilisateur (**UID =**) et le mot de passe du compte d’utilisateur (**PWD =**) dans les paramètres spécifiques à ODBC ou dans les paramètres d' *utilisateur* et de *mot de passe* définis par ADO standard.
 
- Bien qu’une définition de **DSN** spécifie déjà une base de données, vous pouvez spécifier *un* paramètre *de base de données* en plus d’un nom de **source** de données pour vous connecter à une autre base de données. Il est judicieux de toujours inclure le paramètre *the* *de base de données* lorsque vous utilisez un **nom de source**de données. Cela permet de s’assurer que vous vous connectez à la base de données correcte si un autre utilisateur a modifié le paramètre de base de données par défaut depuis la dernière vérification de la définition du **DSN** .
+ Bien qu’une définition de **DSN** spécifie déjà une base de données, vous pouvez spécifier *un* paramètre *de base de données* en plus d’un nom de **source** de données pour vous connecter à une autre base de données. Il est judicieux de toujours inclure le paramètre  *de base de données* lorsque vous utilisez un **nom de source** de données. Cela permet de s’assurer que vous vous connectez à la base de données correcte si un autre utilisateur a modifié le paramètre de base de données par défaut depuis la dernière vérification de la définition du **DSN** .
 
-## <a name="provider-specific-connection-properties"></a>Propriétés de connexion spécifiques au fournisseur
+## <a name="provider-specific-connection-properties"></a>Provider-Specific les propriétés de connexion
  Le fournisseur OLE DB pour ODBC ajoute plusieurs propriétés à la collection [Properties](../../reference/ado-api/properties-collection-ado.md) de l’objet **Connection** . Le tableau suivant répertorie ces propriétés avec le nom de la propriété OLE DB correspondante entre parenthèses.
 
 |Nom de la propriété|Description|
@@ -117,14 +117,14 @@ DATABASE=database; UID=MyUserID; PWD=MyPassword"
 |Fonctions de date/heure (KAGPROP_TIMEDATEFUNCTIONS)|Indique les fonctions de date et d’heure prises en charge par le pilote ODBC. Pour obtenir la liste des noms de fonctions et les valeurs associées utilisées dans ce masque de réutiliser, consultez [annexe E : fonctions scalaires](../../../odbc/reference/appendixes/appendix-e-scalar-functions.md)dans la documentation ODBC.|
 |Prise en charge de la grammaire SQL (KAGPROP_ODBCSQLCONFORMANCE)|Indique la grammaire SQL prise en charge par le pilote ODBC.|
 
-## <a name="provider-specific-recordset-and-command-properties"></a>Propriétés de commande et Recordset spécifiques au fournisseur
+## <a name="provider-specific-recordset-and-command-properties"></a>Propriétés de commande et Recordset Provider-Specific
  Le fournisseur OLE DB pour ODBC ajoute plusieurs propriétés à la collection **Properties** des objets **Recordset** et **Command** . Le tableau suivant répertorie ces propriétés avec le nom de la propriété OLE DB correspondante entre parenthèses.
 
 |Nom de la propriété|Description|
 |-------------------|-----------------|
 |Mises à jour/insertions basées sur une requête (KAGPROP_QUERYBASEDUPDATES)|Indique si les mises à jour, les suppressions et les insertions peuvent être effectuées à l’aide de requêtes SQL.|
 |Type d’accès concurrentiel ODBC (KAGPROP_CONCURRENCY)|Indique la méthode utilisée pour réduire les problèmes potentiels causés par deux utilisateurs tentant d’accéder simultanément aux mêmes données à partir de la source de données.|
-|Accessibilité des objets BLOB sur le curseur avant uniquement (KAGPROP_BLOBSONFOCURSOR)|Indique si les **champs** BLOB sont accessibles lors de l’utilisation d’un curseur avant uniquement.|
+|Accessibilité des objets BLOB sur Forward-Only curseur (KAGPROP_BLOBSONFOCURSOR)|Indique si les **champs** BLOB sont accessibles lors de l’utilisation d’un curseur avant uniquement.|
 |Inclure SQL_FLOAT, SQL_DOUBLE et SQL_REAL dans les clauses d’emplacement de QBU (KAGPROP_INCLUDENONEXACT)|Indique si SQL_FLOAT, SQL_DOUBLE et SQL_REAL valeurs peuvent être incluses dans une clause WHERE QBU.|
 |Position sur la dernière ligne après Insert (KAGPROP_POSITIONONNEWROW)|Indique qu’après l’insertion d’un nouvel enregistrement dans une table, la dernière ligne de la table est la ligne actuelle.|
 |IRowsetChangeExtInfo (KAGPROP_IROWSETCHANGEEXTINFO)|Indique si l’interface **IRowsetChange** fournit la prise en charge des informations étendues.|
@@ -205,7 +205,7 @@ DATABASE=database; UID=MyUserID; PWD=MyPassword"
 |[Annuler](../../reference/ado-api/cancel-method-ado.md)|Oui|Oui|Oui|Oui|
 |[CancelBatch](../../reference/ado-api/cancelbatch-method-ado.md)|Oui|Oui|Oui|Oui|
 |[CancelUpdate](../../reference/ado-api/cancelupdate-method-ado.md)|Oui|Oui|Oui|Oui|
-|[Clone](../../reference/ado-api/clone-method-ado.md)|Non|Non|Oui|Oui|
+|[Répliqué](../../reference/ado-api/clone-method-ado.md)|Non|Non|Oui|Oui|
 |[Close](../../reference/ado-api/close-method-ado.md)|Oui|Oui|Oui|Oui|
 |[Supprimer](../../reference/ado-api/delete-method-ado-recordset.md)|Oui|Oui|Oui|Oui|
 |[GetRows](../../reference/ado-api/getrows-method-ado.md)|Oui|Oui|Oui|Oui|
@@ -252,7 +252,7 @@ DATABASE=database; UID=MyUserID; PWD=MyPassword"
 |Prise en charge de GROUP BY|DBPROP_GROUPBY|
 |Prise en charge des tables hétérogènes|DBPROP_HETEROGENEOUSTABLES|
 |Respect de la casse des identificateurs|DBPROP_IDENTIFIERCASE|
-|Catalogue initial|DBPROP_INIT_CATALOG|
+|Initial Catalog|DBPROP_INIT_CATALOG|
 |Niveaux d’isolation|DBPROP_SUPPORTEDTXNISOLEVELS|
 |Rétention de l’isolation|DBPROP_SUPPORTEDTXNISORETAIN|
 |Identificateur de paramètres régionaux|DBPROP_INIT_LCID|
@@ -285,7 +285,7 @@ DATABASE=database; UID=MyUserID; PWD=MyPassword"
 |Nom convivial du fournisseur|DBPROP_PROVIDERFRIENDLYNAME|
 |Nom du fournisseur|DBPROP_PROVIDERFILENAME|
 |Version du fournisseur|DBPROP_PROVIDERVER|
-|Source de données en lecture seule|DBPROP_DATASOURCEREADONLY|
+|Read-Only source de données|DBPROP_DATASOURCEREADONLY|
 |Conversions d’ensemble de lignes sur la commande|DBPROP_ROWSETCONVERSIONSONCOMMAND|
 |Terme de schéma|DBPROP_SCHEMATERM|
 |Utilisation du schéma|DBPROP_SCHEMAUSAGE|

@@ -12,19 +12,19 @@ helpviewer_keywords:
 ms.assetid: 266d987c-ecc5-4fa4-bfdf-8c584f1a1332
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 916c0493f477175d9bb92c5fc0db860ea7b375c6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1c29cec3ec38dc56636df0c3f063f4a758e6e87e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88372055"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017299"
 ---
 # <a name="managing-backups-sybasetosql"></a>Gestion des sauvegardes (SybaseToSQL)
 La gestion des sauvegardes Sybase vous permet de sauvegarder et de restaurer des données de table avant ou après l’exécution d’un test. Vous pouvez également gérer le contenu de la sauvegarde avec la boîte de dialogue gérer le contenu de la sauvegarde.  
   
 ## <a name="sybase-backup-management"></a>Gestion des sauvegardes Sybase  
   
-### <a name="backup"></a>Backup  
+### <a name="backup"></a>Sauvegarde  
 Pour ouvrir la boîte de dialogue sauvegarde, dans le menu testeur, pointez sur gestion des sauvegardes Sybase, puis cliquez sur sauvegarder.... Dans la boîte de dialogue de sauvegarde, vous trouverez l’arborescence de métadonnées Sybase affichant toutes les tables du schéma Sybase chargé. Sélectionnez une ou plusieurs tables pour effectuer une sauvegarde.  
   
 Les boutons suivants sont disponibles dans la boîte de dialogue :  
@@ -60,7 +60,7 @@ Les boutons suivants sont disponibles dans la boîte de dialogue :
 ## <a name="sql-server-backup-management"></a>Gestion de la sauvegarde SQL Server  
 SQL Server la gestion des sauvegardes vous permet de sauvegarder et de restaurer des données de table avant ou après l’exécution d’un test. Vous pouvez également gérer le contenu de la sauvegarde avec la boîte de dialogue gérer le contenu de la sauvegarde.  
   
-### <a name="backup"></a>Backup  
+### <a name="backup"></a>Sauvegarde  
 Pour ouvrir la boîte de dialogue sauvegarde, dans le menu tester, pointez sur SQL Server gestion de la sauvegarde, puis cliquez sur sauvegarder.... Dans la boîte de dialogue de sauvegarde, vous trouverez la SQL Server arborescence de métadonnées qui affiche toutes les tables des bases de données SQL Server chargées. Sélectionnez une ou plusieurs tables pour effectuer une sauvegarde.  
   
 Les boutons suivants sont disponibles dans la boîte de dialogue :  

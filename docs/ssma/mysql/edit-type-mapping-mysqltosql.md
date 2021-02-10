@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 184f7ab2-725f-491e-a15b-b889f2fb6a68
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 7dc968e4e9bd2d33c4a15de625f5abd12a3696a8
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b1ddf264835cf0a9a008335787353d7a1051431f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492451"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100016599"
 ---
 # <a name="edit-type-mapping-mysqltosql"></a>Modifier le mappage de type (MySQLToSQL)
 La boîte de dialogue **modifier le mappage de type** vous permet de spécifier la manière dont les types sont mappés entre les objets de base de données source et de destination.  
@@ -41,7 +41,7 @@ Spécifiez la longueur minimale pour ce mappage. Par exemple, pour le type de do
 ##### <a name="to"></a>À  
 Spécifiez la longueur maximale pour ce mappage. Par exemple, pour le type de données **nchar** , vous pouvez entrer 20 pour spécifier que ce mappage est destiné à une plage se terminant par **nchar (20).**  
   
-##### <a name="target-type"></a>Type de cible  
+##### <a name="target-type"></a>Type cible  
 Sélectionnez le type de données SQL Server auquel le type de données source est mappé. Lorsque SSMA crée la table ou dans le SQL Server, le type de données source passe à ce type de données.  
   
 Si le type de données est de longueur variable, le champ suivant s’affiche sous **type de cible**:  

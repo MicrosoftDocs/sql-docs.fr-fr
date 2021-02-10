@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: pochiraju
 ms.author: rajpo
 ms.reviewer: mathoma
-ms.openlocfilehash: 7001f188b00e70c2616e8c3592d7fa9e34147321
-ms.sourcegitcommit: debaff72dbfae91b303f0acd42dd6d99e03135a2
+ms.openlocfilehash: 18428e87d1c769d10a4d1acbf0033c739db09d0d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96419784"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017059"
 ---
 # <a name="configure-distributed-replay-for-database-experimentation-assistant"></a>Configurer Distributed Replay pour Assistant Expérimentation de base de données
 
@@ -126,6 +126,6 @@ Les étapes suivantes doivent être effectuées pour chaque relecture :
 2. Accordez des autorisations à l’utilisateur du compte de service client pour accéder aux bases de données sous l’instance SQL Server. Des autorisations sont requises pour que les requêtes soient exécutées sur l’instance SQL Server.
 3. Démarrer la relecture.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 - Pour savoir comment relire une trace capturée dans un environnement de test mis à niveau, consultez [relire une trace dans Assistant expérimentation de base de données](database-experimentation-assistant-replay-trace.md).

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 2d7cb5b5-8307-49dd-b07e-c07069bb1626
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8471d7e80599b96315fae47e130aaba8c23bd4f1
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 13a518a3cbf7c4d9f83da5810e340406147f86f2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990940"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100028829"
 ---
 # <a name="using-the-microsoft-sdk-for-java"></a>Utilisation du SDK Microsoft pour Java
 

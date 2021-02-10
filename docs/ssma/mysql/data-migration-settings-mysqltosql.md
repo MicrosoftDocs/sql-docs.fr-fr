@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 9c396df4-5676-4f32-9c57-70d4f15f9b7a
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 3bc5427d17a8678e81ee148d247d743bda9d53ff
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: c7dcbafc23b4489289a77e780bfa5694f4caa485
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988715"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100016589"
 ---
 # <a name="data-migration-settings-mysqltosql"></a>Paramètres de migration de données (MySQLToSQL)
   
@@ -40,7 +40,7 @@ Les **paramètres de migration des données** permettent à l’utilisateur d’
     -   Si cette zone de texte est désactivée, les données qui sont migrées seront ajoutées aux données existantes dans la base de données cible.  
   
 2.  **Utiliser la sélection personnalisée :**  
-     Cette option permet à l’utilisateur de modifier l’instruction **Select** présente (l’instruction**Select** permet aux utilisateurs de sélectionner les données à afficher dans la base de données cible).  
+     Cette option permet à l’utilisateur de modifier l’instruction **Select** présente (l’instruction **Select** permet aux utilisateurs de sélectionner les données à afficher dans la base de données cible).  
   
     1.  Par défaut, cette zone de texte est désactivée.  
   

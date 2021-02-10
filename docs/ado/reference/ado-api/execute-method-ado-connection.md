@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 03c69320-96b2-4d85-8d49-a13b13e31578
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2fc73324160dd46a6d626c0db889a4213c9fc438
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c91fd13744afd106b2a0cb8e986d803f1b722c24
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167484"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100025103"
 ---
 # <a name="execute-method-ado-connection"></a>Execute, méthode (objet Connection ADO)
 Exécute la requête, l’instruction SQL, la procédure stockée ou le texte spécifique au fournisseur spécifié.  
@@ -43,10 +43,10 @@ Set recordset = connection.Execute (CommandText, RecordsAffected, Options)
  Valeur de **chaîne** qui contient l’instruction SQL, la procédure stockée, une URL ou un texte spécifique au fournisseur à exécuter. Si **vous le souhaitez**, les noms de table peuvent être utilisés, mais uniquement si le fournisseur prend en charge SQL. Par exemple, si le nom de table « Customers » est utilisé, ADO ajoutera automatiquement la syntaxe SQL SELECT standard pour former et passer « SELECT * FROM Customers » comme [!INCLUDE[tsql](../../../includes/tsql-md.md)] instruction au fournisseur.  
   
  *RecordsAffected*  
- Facultatif. Variable de **type long** à laquelle le fournisseur retourne le nombre d’enregistrements affectés par l’opération.  
+ facultatif. Variable de **type long** à laquelle le fournisseur retourne le nombre d’enregistrements affectés par l’opération.  
   
  *Options*  
- Facultatif. Valeur de **type long** qui indique comment le fournisseur doit évaluer l’argument CommandText. Peut être un masque de masque d’une ou plusieurs valeurs [CommandTypeEnum](../../../ado/reference/ado-api/commandtypeenum.md) ou [ExecuteOptionEnum](../../../ado/reference/ado-api/executeoptionenum.md) .  
+ facultatif. Valeur de **type long** qui indique comment le fournisseur doit évaluer l’argument CommandText. Peut être un masque de masque d’une ou plusieurs valeurs [CommandTypeEnum](../../../ado/reference/ado-api/commandtypeenum.md) ou [ExecuteOptionEnum](../../../ado/reference/ado-api/executeoptionenum.md) .  
   
  **Remarque** Utilisez la  valeur ExecuteOptionEnum **adExecuteNoRecords** pour améliorer les performances en minimisant le traitement interne et pour les applications que vous migrez à partir de Visual Basic 6,0.  
   

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f86a0598-5097-471b-8318-d2c859d085f2
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b3e479ca023efb704bf496c9ffaeaca2f1b6ba15
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: f7d2204a2d91e862616713dbfee6eec3d6d3e8ba
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991040"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100029303"
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-indexing-service-overview"></a>Vue d’ensemble du fournisseur Microsoft OLE DB pour le service d’indexation Microsoft
 Le fournisseur Microsoft OLE DB pour le service d’indexation Microsoft fournit un accès par programmation en lecture seule au système de fichiers et aux données Web indexées par le service d’indexation Microsoft. Les applications ADO peuvent émettre des requêtes SQL pour récupérer du contenu et des informations sur les propriétés de fichier.
@@ -100,7 +100,7 @@ MSIDXS
 |[Annuler](../../reference/ado-api/cancel-method-ado.md)|Oui|
 |[CancelBatch](../../reference/ado-api/cancelbatch-method-ado.md)|Non|
 |[CancelUpdate](../../reference/ado-api/cancelupdate-method-ado.md)|Non|
-|[Clone](../../reference/ado-api/clone-method-ado.md)|Oui|
+|[Répliqué](../../reference/ado-api/clone-method-ado.md)|Oui|
 |[Close](../../reference/ado-api/close-method-ado.md)|Oui|
 |[Supprimer](../../reference/ado-api/delete-method-ado-recordset.md)|Non|
 |[GetRows](../../reference/ado-api/getrows-method-ado.md)|Oui|

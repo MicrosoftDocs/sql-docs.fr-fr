@@ -16,18 +16,18 @@ helpviewer_keywords:
 ms.assetid: ff759185-df41-4507-8d12-0921894ffbd9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0419311c4d8e952a5212f60dee055c7b37aed5f4
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: b5acd1b06bbaad8476ac48261ba49a6ca90cb0b5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990930"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100028654"
 ---
 # <a name="visual-c-extensions"></a>Extensions de Visual C++
 ## <a name="the-iadorecordbinding-interface"></a>Interface IADORecordBinding
  Les extensions Microsoft Visual C++ pour ADO associent, ou lient, des champs d’un objet [Recordset](../../reference/ado-api/recordset-object-ado.md) à des variables C/C++. Chaque fois que la ligne actuelle de l’ensemble d' **enregistrements** lié change, tous les champs liés dans le **Recordset** sont copiés dans les variables C/C++. Si nécessaire, les données copiées sont converties dans le type de données déclaré de la variable C/C++.
 
- La méthode **BindToRecordset** de l’interface **IADORecordBinding** lie les champs aux variables C/C++. La méthode **AddNew** ajoute une nouvelle ligne au **Recordset**lié. La méthode **Update** remplit les champs dans les nouvelles lignes de l’ensemble d' **enregistrements**ou met à jour les champs des lignes existantes, avec la valeur des variables C/C++.
+ La méthode **BindToRecordset** de l’interface **IADORecordBinding** lie les champs aux variables C/C++. La méthode **AddNew** ajoute une nouvelle ligne au **Recordset** lié. La méthode **Update** remplit les champs dans les nouvelles lignes de l’ensemble d' **enregistrements** ou met à jour les champs des lignes existantes, avec la valeur des variables C/C++.
 
  L’interface **IADORecordBinding** est implémentée par l’objet **Recordset** . Vous ne codez pas l’implémentation vous-même.
 
@@ -51,14 +51,14 @@ ms.locfileid: "88990930"
 
 2.  Spécifiez les entrées de liaison et les variables C/C++ correspondantes dans la classe dérivée. Mettre entre crochets les entrées de liaison entre les macros de **BEGIN_ADO_BINDING** et **END_ADO_BINDING** . Ne mettez pas fin aux macros avec des virgules ou des points-virgules. Les délimiteurs appropriés sont spécifiés automatiquement par chaque macro.
 
-     Spécifiez une entrée de liaison pour chaque champ à mapper à une variable C/C++. Utilisez un membre approprié à partir de la famille de macros **ADO_FIXED_LENGTH_ENTRY**, **ADO_NUMERIC_ENTRY**ou **ADO_VARIABLE_LENGTH_ENTRY** .
+     Spécifiez une entrée de liaison pour chaque champ à mapper à une variable C/C++. Utilisez un membre approprié à partir de la famille de macros **ADO_FIXED_LENGTH_ENTRY**, **ADO_NUMERIC_ENTRY** ou **ADO_VARIABLE_LENGTH_ENTRY** .
 
 3.  Dans votre application, créez une instance de la classe dérivée de **CADORecordBinding**. Obtient l’interface **IADORecordBinding** à partir du **Recordset**. Appelez ensuite la méthode **BindToRecordset** pour lier les champs du **Recordset** aux variables C/C++.
 
  Pour plus d’informations, consultez l' [exemple Visual C++ extensions](./visual-c-extensions-example.md).
 
 ## <a name="interface-methods"></a>Méthodes d'interface
- L’interface **IADORecordBinding** a trois méthodes : **BindToRecordset**, **AddNew**et **Update**. Le seul argument de chaque méthode est un pointeur vers une instance de la classe dérivée de **CADORecordBinding**. Par conséquent, les méthodes **AddNew** et **Update** ne peuvent pas spécifier l’un des paramètres de leur méthode ADO namesakes.
+ L’interface **IADORecordBinding** a trois méthodes : **BindToRecordset**, **AddNew** et **Update**. Le seul argument de chaque méthode est un pointeur vers une instance de la classe dérivée de **CADORecordBinding**. Par conséquent, les méthodes **AddNew** et **Update** ne peuvent pas spécifier l’un des paramètres de leur méthode ADO namesakes.
 
 ## <a name="syntax"></a>Syntaxe
  La méthode **BindToRecordset** associe les champs du **Recordset** à des variables C/C++.
@@ -82,14 +82,14 @@ Update(CADORecordBinding *binding)
 ## <a name="binding-entry-macros"></a>Macros d’entrée de liaison
  Les macros d’entrée de liaison définissent l’Association d’un champ de **Recordset** et d’une variable. Une macro de début et de fin délimite le jeu d’entrées de liaison.
 
- Des familles de macros sont fournies pour les données de longueur fixe, telles que **adDate** ou **adBoolean**; données numériques, telles que **adTinyInt**, **adInteger**ou **adDouble**; et les données de longueur variable, telles que **adChar**, **adVarChar** ou **adVarBinary**. Tous les types numériques, à l’exception de **adVarNumeric**, sont également des types de longueur fixe. Chaque famille a des jeux de paramètres différents, ce qui vous permet d’exclure les informations de liaison qui ne sont pas intéressantes.
+ Des familles de macros sont fournies pour les données de longueur fixe, telles que **adDate** ou **adBoolean**; données numériques, telles que **adTinyInt**, **adInteger** ou **adDouble**; et les données de longueur variable, telles que **adChar**, **adVarChar** ou **adVarBinary**. Tous les types numériques, à l’exception de **adVarNumeric**, sont également des types de longueur fixe. Chaque famille a des jeux de paramètres différents, ce qui vous permet d’exclure les informations de liaison qui ne sont pas intéressantes.
 
  Pour plus d’informations, consultez [annexe A : types de données](/previous-versions/windows/desktop/ms723969(v=vs.85))de la OLE DB Guide de référence du programmeur.
 
 ### <a name="begin-binding-entries"></a>Début des entrées de liaison
  **BEGIN_ADO_BINDING**(*classe*)
 
-### <a name="fixed-length-data"></a>Données de longueur fixe
+### <a name="fixed-length-data"></a>Données Fixed-Length
  **ADO_FIXED_LENGTH_ENTRY**(*ordinal, type de données, mémoire tampon, État, modifier*)
 
  **ADO_FIXED_LENGTH_ENTRY2**(*ordinal, type de données, mémoire tampon, modifier*)
@@ -99,7 +99,7 @@ Update(CADORecordBinding *binding)
 
  **ADO_NUMERIC_ENTRY2**(*ordinal, type de données, mémoire tampon, précision, échelle, modifier*)
 
-### <a name="variable-length-data"></a>Données de longueur variable
+### <a name="variable-length-data"></a>Données Variable-Length
  **ADO_VARIABLE_LENGTH_ENTRY**(*ordinal, type de données, mémoire tampon, taille, État, longueur, modifier*)
 
  **ADO_VARIABLE_LENGTH_ENTRY2**(*ordinal, type de données, mémoire tampon, taille, État, modifier*)
@@ -122,7 +122,7 @@ Update(CADORecordBinding *binding)
 |*Modify*|Indicateur booléen ; Si la valeur est TRUE, le champ ADO est autorisé à mettre à jour le champ **Recordset** correspondant avec la valeur contenue dans *buffer*.<br /><br /> Définissez le paramètre de *modification* BOOLÉENNE sur true pour permettre à ADO de mettre à jour le champ lié, et false si vous souhaitez examiner le champ, mais pas le modifier.|
 |*Précision*|Nombre de chiffres qui peuvent être représentés dans une variable numérique.|
 |*Mettre à l'échelle*|Nombre de décimales dans une variable numérique.|
-|*Longueur*|Nom d’une variable de 4 octets qui doit contenir la longueur réelle des données dans la *mémoire tampon*.|
+|*Durée*|Nom d’une variable de 4 octets qui doit contenir la longueur réelle des données dans la *mémoire tampon*.|
 
 ## <a name="status-values"></a>Valeurs d'état
  La valeur de la variable d' *État* indique si un champ a été correctement copié dans une variable.
