@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 92905044-579f-4c38-bca6-f8bd5b239c20
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3054ab884f4c44453573cd6599ef35d15b9aa6f4
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 2fa93202690fb9e488b6ba95240a6548f456cf38
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91722820"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100031697"
 ---
 # <a name="troubleshooting-rds"></a>Résolution des problèmes liés à RDS
 > [!IMPORTANT]

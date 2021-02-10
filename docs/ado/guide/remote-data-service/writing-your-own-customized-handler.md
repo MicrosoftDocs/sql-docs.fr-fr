@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: d447712a-e123-47b5-a3a4-5d366cfe8d72
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6d761b781e7de4225f51fb3600ac467015a0c274
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: f2c62c8b12435ec70166b66416f343fa835f6158
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91722720"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032604"
 ---
 # <a name="writing-your-own-customized-handler"></a>Écriture d’un gestionnaire personnalisé
 Vous pouvez écrire votre propre gestionnaire si vous êtes un administrateur de serveur IIS qui souhaite la prise en charge de RDS par défaut, mais plus de contrôle sur les demandes utilisateur et les droits d’accès.  
@@ -44,17 +44,17 @@ Vous pouvez écrire votre propre gestionnaire si vous êtes un administrateur de
   
  ***requête***  Texte de commande pour la création d’une requête.  
   
- ***PPRS***  Pointeur où le **Recordset** doit être retourné.  
+ ***PPRS** _ le pointeur où _ *Recordset** doit être retourné.  
   
 ## <a name="reconnect-method"></a>Reconnect, méthode  
- Cette méthode met à jour la source de données. Il crée un objet de [connexion](../../reference/ado-api/connection-object-ado.md) et attache le **jeu d’enregistrements**donné.  
+ Cette méthode met à jour la source de données. Il crée un objet de [connexion](../../reference/ado-api/connection-object-ado.md) et attache le **jeu d’enregistrements** donné.  
   
 ### <a name="arguments"></a>Arguments  
  ***conn***  Chaîne de connexion.  
   
  ***arguments***  Arguments pour le gestionnaire.  
   
- ***pRS***  Objet **Recordset** .  
+ ***pRS** _ A _ *Recordset** objet.  
   
 ## <a name="msdfhdlidl"></a>msdfhdl.idl  
  Il s’agit de la définition d’interface pour **IDataFactoryHandler** qui apparaît dans le fichier **msdfhdl. idl** .  

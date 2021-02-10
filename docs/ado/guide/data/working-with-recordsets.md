@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: bdf9a56a-de4a-44de-9111-2f11ab7b16ea
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0a8ffeab33125b3b13ca5725125654bd3ed1f822
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 4e64608adc461534a30630a6b8b8d29d0478544a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88978840"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032251"
 ---
 # <a name="working-with-recordsets"></a>Utilisation des recordsets
 L’objet **Recordset** offre des fonctionnalités intégrées qui vous permettent de réorganiser l’ordre des données dans le jeu de résultats, de rechercher un enregistrement spécifique en fonction des critères que vous fournissez, et même d’optimiser ces opérations de recherche à l’aide d’index. Le fait que ces fonctionnalités soient disponibles dépend du fournisseur et, dans certains cas, de la propriété [index](../../../ado/reference/ado-api/index-property.md) (la structure de la source de données elle-même).  
@@ -34,7 +34,7 @@ L’objet **Recordset** offre des fonctionnalités intégrées qui vous permette
   
  Si vous affectez une chaîne vide à la propriété de **Tri** , les lignes sont réinitialisées dans leur ordre d’origine et les index temporaires sont supprimés. Les index existants ne seront pas supprimés.  
   
- Supposons qu’un **Recordset** contienne trois champs nommés *FirstName*, *MiddleInitial*et *LastName*. Définissez la propriété de **Tri** sur la chaîne « `lastName DESC, firstName ASC` », ce qui permet d’ordonner le **jeu d’enregistrements** par nom de famille dans l’ordre décroissant, puis par le prénom dans l’ordre croissant. L’initiale du deuxième prénom est ignorée.  
+ Supposons qu’un **Recordset** contienne trois champs nommés *FirstName*, *MiddleInitial* et *LastName*. Définissez la propriété de **Tri** sur la chaîne « `lastName DESC, firstName ASC` », ce qui permet d’ordonner le **jeu d’enregistrements** par nom de famille dans l’ordre décroissant, puis par le prénom dans l’ordre croissant. L’initiale du deuxième prénom est ignorée.  
   
  Aucun champ référencé dans une chaîne de critères de tri ne peut être nommé « ASC » ou « DESC », car ces noms sont en conflit avec les mots clés **ASC** et **desc**. Donnez à un champ qui a un nom en conflit un alias à l’aide du mot clé **As** dans la requête qui retourne le **Recordset**.  
   
@@ -74,7 +74,7 @@ L’objet **Recordset** offre des fonctionnalités intégrées qui vous permette
 ## <a name="filtering-the-results"></a>Filtrage des résultats  
  La méthode **Find** limite votre recherche au contenu d’un champ. La méthode **Seek** exige que vous disposiez d’un index et que vous ayez également d’autres limitations. Si vous devez effectuer une recherche sur plusieurs champs qui ne sont pas la base d’un index ou si votre fournisseur ne prend pas en charge les index, vous pouvez limiter vos résultats à l’aide de la propriété **Filter** de l’objet **Recordset** .  
   
- Utilisez la propriété **Filter pour filtrer** de manière sélective les enregistrements d’un objet **Recordset** . Le **Recordset** filtré devient le curseur actuel, ce qui signifie que les enregistrements qui ne répondent pas aux critères de **filtre** ne sont pas disponibles dans le **Recordset** tant que le **filtre** n’est pas supprimé. Les autres propriétés qui retournent des valeurs basées sur le curseur actuel sont affectées, telles que **AbsolutePosition**, **AbsolutePage**, **RecordCount**et **PageCount**. Cela est dû au fait que la définition de la propriété **Filter** sur une valeur spécifique déplace l’enregistrement en cours vers le premier enregistrement qui satisfait la nouvelle valeur.  
+ Utilisez la propriété **Filter pour filtrer** de manière sélective les enregistrements d’un objet **Recordset** . Le **Recordset** filtré devient le curseur actuel, ce qui signifie que les enregistrements qui ne répondent pas aux critères de **filtre** ne sont pas disponibles dans le **Recordset** tant que le **filtre** n’est pas supprimé. Les autres propriétés qui retournent des valeurs basées sur le curseur actuel sont affectées, telles que **AbsolutePosition**, **AbsolutePage**, **RecordCount** et **PageCount**. Cela est dû au fait que la définition de la propriété **Filter** sur une valeur spécifique déplace l’enregistrement en cours vers le premier enregistrement qui satisfait la nouvelle valeur.  
   
  La propriété **Filter** accepte un argument variant. Cette valeur représente l’une des trois méthodes d’utilisation de la propriété **Filter** : une chaîne de critères, une constante **FilterGroupEnum** ou un tableau de signets. Pour plus d’informations, consultez filtrage à l’aide d’une chaîne de critères, filtrage avec une constante et filtrage avec des signets plus loin dans cette rubrique.  
   
@@ -93,7 +93,7 @@ L’objet **Recordset** offre des fonctionnalités intégrées qui vous permette
 -   La *valeur* est la valeur avec laquelle vous allez comparer les valeurs de champ (par exemple,,, `'Smith'` `#8/24/95#` `12.345` ou `$50.00` ). Utilisez des guillemets simples (') avec des chaînes et des signes dièse ( `#` ) avec des dates. Pour les nombres, vous pouvez utiliser des points décimaux, des signes dollar et une notation scientifique. Si l' *opérateur* est **comme**, la *valeur* peut utiliser des caractères génériques. Uniquement l’astérisque ( \* ) et le signe de pourcentage (%) les caractères génériques sont autorisés et doivent être le dernier caractère de la chaîne. La *valeur* ne peut pas être null.  
   
     > [!NOTE]
-    >  Pour inclure des guillemets simples (') dans la *valeur*de filtre, utilisez deux guillemets simples pour en représenter un. Par exemple, pour filtrer sur *O’Malley*, la chaîne de critères doit être `"col1 = 'O''Malley'"` . Pour inclure des guillemets simples à la fois au début et à la fin de la valeur de filtre, mettez la chaîne entre signes dièse (#). Par exemple, pour filtrer sur *« 1 »*, la chaîne de critères doit être `"col1 = #'1'#"` .  
+    >  Pour inclure des guillemets simples (') dans la *valeur* de filtre, utilisez deux guillemets simples pour en représenter un. Par exemple, pour filtrer sur *O’Malley*, la chaîne de critères doit être `"col1 = 'O''Malley'"` . Pour inclure des guillemets simples à la fois au début et à la fin de la valeur de filtre, mettez la chaîne entre signes dièse (#). Par exemple, pour filtrer sur *« 1 »*, la chaîne de critères doit être `"col1 = #'1'#"` .  
   
  Il n’existe aucune priorité entre **and** et **or**. Les clauses peuvent être regroupées entre parenthèses. Toutefois, vous ne pouvez pas regrouper les clauses jointes par **ou** , puis joindre le groupe à une autre clause avec un et, comme suit.  
   
@@ -112,9 +112,9 @@ L’objet **Recordset** offre des fonctionnalités intégrées qui vous permette
 ### <a name="filtering-with-a-constant"></a>Filtrage avec une constante  
  Les constantes suivantes sont disponibles pour filtrer les **recordsets**.  
   
-|Constant|Description|  
+|Constante|Description|  
 |--------------|-----------------|  
-|**adFilterAffectedRecords**|Filtres permettant d’afficher uniquement les enregistrements affectés par le dernier appel **Delete**, **Resync**, **UpdateBatch**ou **CancelBatch** .|  
+|**adFilterAffectedRecords**|Filtres permettant d’afficher uniquement les enregistrements affectés par le dernier appel **Delete**, **Resync**, **UpdateBatch** ou **CancelBatch** .|  
 |**adFilterConflictingRecords**|Filtres permettant d’afficher les enregistrements qui ont échoué lors de la dernière mise à jour par lot.|  
 |**adFilterFetchedRecords**|Filtres permettant d’afficher les enregistrements dans le cache actuel, autrement dit, les résultats du dernier appel pour récupérer des enregistrements de la base de données.|  
 |**adFilterNone**|Supprime le filtre en cours et restaure tous les enregistrements à afficher.|  
@@ -125,7 +125,7 @@ L’objet **Recordset** offre des fonctionnalités intégrées qui vous permette
  `Attribute VB_Name = "modExaminingData"`  
   
 ### <a name="filtering-with-bookmarks"></a>Filtrage avec des signets  
- Enfin, vous pouvez passer un tableau de signets de type Variant à la propriété **Filter** . Le curseur résultant contient uniquement les enregistrements dont le signet a été passé à la propriété. L’exemple de code suivant crée un tableau de signets à partir des enregistrements d’un **jeu d’enregistrements** qui ont un « B » dans le champ *ProductName* . Il passe ensuite le tableau à la propriété **Filter** et affiche des informations sur le **Recordset**filtré résultant.  
+ Enfin, vous pouvez passer un tableau de signets de type Variant à la propriété **Filter** . Le curseur résultant contient uniquement les enregistrements dont le signet a été passé à la propriété. L’exemple de code suivant crée un tableau de signets à partir des enregistrements d’un **jeu d’enregistrements** qui ont un « B » dans le champ *ProductName* . Il passe ensuite le tableau à la propriété **Filter** et affiche des informations sur le **Recordset** filtré résultant.  
   
 ```  
 'BeginFilterBkmk  
@@ -162,7 +162,7 @@ Loop
   
  L’enregistrement actuel d’un clone nouvellement créé est initialement défini sur le premier enregistrement. Le pointeur d’enregistrement actif dans un **jeu d’enregistrements** cloné n’est pas synchronisé avec l’original ou vice versa. Vous pouvez naviguer indépendamment dans chaque **Recordset**.  
   
- Les modifications que vous apportez à un objet **Recordset** sont visibles dans tous ses clones, quel que soit le type de curseur. Toutefois, après l’exécution de [Requery](../../../ado/reference/ado-api/requery-method.md) sur le **jeu d’enregistrements**d’origine, les clones ne sont plus synchronisés avec l’original.  
+ Les modifications que vous apportez à un objet **Recordset** sont visibles dans tous ses clones, quel que soit le type de curseur. Toutefois, après l’exécution de [Requery](../../../ado/reference/ado-api/requery-method.md) sur le **jeu d’enregistrements** d’origine, les clones ne sont plus synchronisés avec l’original.  
   
  La fermeture de l' **objet Recordset** d’origine ne ferme pas ses copies et ne ferme pas non plus la copie d’origine ou de l’une des autres copies.  
   

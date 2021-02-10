@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: e776b4e3-fcc4-4bfb-a7e8-5ffae1d83833
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 614f8f4444ab470530cea01133b34adffc505b78
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: c33a92334c410e7cd2d33cc7f48360a3e44b15eb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97638027"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100031831"
 ---
 # <a name="required-client-settings"></a>Paramètres client obligatoires
 > [!IMPORTANT]

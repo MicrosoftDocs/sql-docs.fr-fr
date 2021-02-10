@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 596eb4b6-c22f-4cde-b23f-172dd66c3161
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3090e38507a73d00edbe3bd1cb85e408c88fdba1
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 915d41f78de6c789c82bca3d729aa2c28ff26f27
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88978920"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032261"
 ---
 # <a name="what-is-a-cursor"></a>Qu’est qu’un curseur ?
 Les opérations réalisées dans une base de données relationnelle s'exécutent sur un ensemble complet de lignes. L'ensemble de lignes retourné par une instruction SELECT contient toutes les lignes satisfaisant aux conditions de la clause WHERE de l'instruction. Cet ensemble complet de lignes retournées par l'instruction est appelé ensemble de résultats. Les applications, en particulier celles qui sont interactives et en ligne, ne peuvent pas toujours travailler efficacement avec l’ensemble du jeu de résultats en tant qu’unité. Ces applications ont besoin d'un mécanisme leur permettant de travailler avec une seule ligne ou avec un petit bloc de lignes à la fois. Les curseurs sont une extension des ensembles de résultats et fournissent ce mécanisme.  

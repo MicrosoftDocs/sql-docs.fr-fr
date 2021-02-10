@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e65c2871-9986-44ff-b8b7-7f5eda91b3fa
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d17fa12aa0b07b265fb8f26b6ac1b6c584015d1e
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: bc9b9415628f27cd68cecbf02de2c52165c8d509
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724760"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100031991"
 ---
 # <a name="customization-file-sql-section"></a>Fichier de personnalisation, section SQL
 La section **SQL** peut contenir une nouvelle chaîne SQL qui remplace la chaîne de commande du client. S’il n’existe aucune chaîne SQL dans la section, la section sera ignorée.  
@@ -46,7 +46,7 @@ SQL = " "
  **SQL =**   
  ***sqlString***  
   
-|Élément|Description|  
+|Partie|Description|  
 |----------|-----------------|  
 |**SQL**|Chaîne littérale qui indique qu’il s’agit d’une entrée de section SQL.|  
 |***sqlString***|Chaîne SQL qui remplace la chaîne du client.|  

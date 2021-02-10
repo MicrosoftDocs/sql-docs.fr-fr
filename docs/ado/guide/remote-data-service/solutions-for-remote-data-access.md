@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: d311cc67-7db7-4c43-9590-d465564695e4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0e46994321b73166095acbb0891f5434a6fc86a1
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 01516d04ce20fc1590ca41985078bcd47f47e47e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91723038"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100031771"
 ---
 # <a name="solutions-for-remote-data-access"></a>Solutions pour le service RDA (Remote Data Access)
 ## <a name="the-issue"></a>Le problème  

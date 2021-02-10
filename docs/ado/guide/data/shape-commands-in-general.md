@@ -14,23 +14,23 @@ helpviewer_keywords:
 ms.assetid: 1fac7831-a187-4b15-9b43-aad380c5556c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c20132fe933d232d38ee843a706e9ad923d0d376
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 021d47eb011a4c0628b6f356772e82c591747103
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724930"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032461"
 ---
 # <a name="shape-commands-in-general"></a>Généralités sur les commandes SHAPE
-La mise en forme des données définit les colonnes d’un **jeu d’enregistrements**mis en forme, les relations entre les entités représentées par les colonnes et la manière dont le **Recordset** est rempli avec les données.  
+La mise en forme des données définit les colonnes d’un **jeu d’enregistrements** mis en forme, les relations entre les entités représentées par les colonnes et la manière dont le **Recordset** est rempli avec les données.  
   
  Un **Recordset** mis en forme peut être constitué des types de colonnes suivants.  
   
 |Type de colonne|Description|  
 |-----------------|-----------------|  
-|Données|Les champs d’un **jeu d’enregistrements** retournés par une commande de requête à un fournisseur de données, à une table ou à un **jeu d’enregistrements**précédemment mis en forme.|  
+|data|Les champs d’un **jeu d’enregistrements** retournés par une commande de requête à un fournisseur de données, à une table ou à un **jeu d’enregistrements** précédemment mis en forme.|  
 |chapitre|Référence à un autre **Recordset**, appelée *chapitre*. Les colonnes de chapitre permettent de définir une relation *parent-enfant* où le *parent* est le **Recordset** qui contient la colonne de chapitre et l' *enfant* est le **jeu d’enregistrements** représenté par le chapitre.|  
-|aggregate|La valeur de la colonne est dérivée de l’exécution d’une *fonction d’agrégation* sur toutes les lignes ou une colonne de toutes les lignes d’un **jeu d’enregistrements**enfant. (Pour plus d’informations, consultez fonctions d’agrégation dans la rubrique suivante, [fonctions d’agrégation, fonction Calc et mot clé New](../../../ado/guide/data/aggregate-functions-the-calc-function-and-the-new-keyword.md).)|  
+|aggregate|La valeur de la colonne est dérivée de l’exécution d’une *fonction d’agrégation* sur toutes les lignes ou une colonne de toutes les lignes d’un **jeu d’enregistrements** enfant. (Pour plus d’informations, consultez fonctions d’agrégation dans la rubrique suivante, [fonctions d’agrégation, fonction Calc et mot clé New](../../../ado/guide/data/aggregate-functions-the-calc-function-and-the-new-keyword.md).)|  
 |expression calculée|La valeur de la colonne est dérivée du calcul d’une expression Visual Basic pour Applications sur les colonnes de la même ligne du **Recordset**. L’expression est l’argument de la fonction CALC. (Voir l’expression calculée dans la rubrique suivante, [fonctions d’agrégation, fonction Calc et le mot clé New](../../../ado/guide/data/aggregate-functions-the-calc-function-and-the-new-keyword.md) et dans les [fonctions Visual Basic pour applications](../../../ado/guide/data/visual-basic-for-applications-functions.md).)|  
 |new|Champs vides, fabriqués, qui peuvent être remplis avec des données ultérieurement. La colonne est définie avec le mot clé NEW. (Consultez nouveau mot clé dans la rubrique suivante, [fonctions d’agrégation, fonction Calc et mot clé New](../../../ado/guide/data/aggregate-functions-the-calc-function-and-the-new-keyword.md).)|  
   
@@ -48,7 +48,7 @@ La mise en forme des données définit les colonnes d’un **jeu d’enregistrem
   
  Microsoft fournit un outil visuel qui génère des commandes de forme (voir le [Concepteur d’environnement de données](/previous-versions/visualstudio/aa445793(v=vs.60)) dans la documentation Visual Basic 6) et un autre qui affiche des curseurs hiérarchiques (consultez « Utilisation du contrôle Microsoft Hierarchical FlexGrid » dans la documentation de Visual Basic 6).  
   
- Pour plus d’informations sur la navigation dans un **jeu d’enregistrements**hiérarchique, consultez [accès aux lignes d’un jeu d’enregistrements hiérarchique](../../../ado/guide/data/accessing-rows-in-a-hierarchical-recordset.md).  
+ Pour plus d’informations sur la navigation dans un **jeu d’enregistrements** hiérarchique, consultez [accès aux lignes d’un jeu d’enregistrements hiérarchique](../../../ado/guide/data/accessing-rows-in-a-hierarchical-recordset.md).  
   
  Pour obtenir des informations précises sur les commandes de forme syntaxiquement correctes, consultez [grammaire de forme formelle](../../../ado/guide/data/formal-shape-grammar.md).  
   

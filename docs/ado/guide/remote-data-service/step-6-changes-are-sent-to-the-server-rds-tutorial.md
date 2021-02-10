@@ -13,18 +13,18 @@ helpviewer_keywords:
 ms.assetid: b1e927d6-7d50-4978-9eef-045043cdce7a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9929177baaf1efd486cb9f628034158b370badc7
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: d6a769a22a86e145727079af6fc067b1552f2bbf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91722860"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100031711"
 ---
 # <a name="step-6-changes-are-sent-to-the-server-rds-tutorial"></a>Étape 6 : Les changements sont envoyés au serveur (tutoriel RDS)
 Si l’objet **Recordset** est modifié, toute modification (c’est-à-dire les lignes ajoutées, modifiées ou supprimées) peut être renvoyée au serveur.  
   
 > [!NOTE]
->  Le comportement par défaut de RDS peut être appelé implicitement avec les objets ADO et le fournisseur Microsoft OLE DB Remoting. Les requêtes peuvent retourner des **jeux d’enregistrements**, et les **jeux d’enregistrements**modifiés peuvent mettre à jour la source de données. Ce didacticiel n’appelle pas RDS avec des objets ADO, mais c’est là qu’il s’agit d’un résultat :  
+>  Le comportement par défaut de RDS peut être appelé implicitement avec les objets ADO et le fournisseur Microsoft OLE DB Remoting. Les requêtes peuvent retourner des **jeux d’enregistrements**, et les **jeux d’enregistrements** modifiés peuvent mettre à jour la source de données. Ce didacticiel n’appelle pas RDS avec des objets ADO, mais c’est là qu’il s’agit d’un résultat :  
   
 ```vb
 Dim rs as New ADODB.Recordset  

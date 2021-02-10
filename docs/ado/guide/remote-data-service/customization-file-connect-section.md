@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: d50eb3cc-a822-486f-b80b-65bb50547ecd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c4350cb9aad6e2ef1d9381cffb6e05b13d09c43c
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 0b3508479d6d52799f286421c1bb2c67683088f9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724780"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032011"
 ---
 # <a name="customization-file-connect-section"></a>Fichier de personnalisation, section connect
 Le comportement par défaut du gestionnaire consiste à refuser toutes les connexions. La section **Connect** spécifie des exceptions à ce comportement. Par exemple, si toutes les sections **Connect** étaient absentes ou vides, aucune connexion n’a pu être établie par défaut.  
@@ -54,7 +54,7 @@ connectionString
   
 ## <a name="remarks"></a>Notes  
   
-|Élément|Description|  
+|Partie|Description|  
 |----------|-----------------|  
 |**Connexion**|Chaîne littérale qui indique qu’il s’agit d’une entrée de chaîne de connexion.|  
 |**_connectionString_**|Chaîne qui remplace l’intégralité de la chaîne de connexion du client.|  

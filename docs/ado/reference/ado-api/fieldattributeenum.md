@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6e34d886-005a-40dc-bd5c-6adcbf81e5cd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7df5e9bb6ed91b96f5c58f365bbe4356fb3f5f10
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: aa880e4a9a39e50cef558a77ba6a72fedfbbd8b9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167371"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100034039"
 ---
 # <a name="fieldattributeenum"></a>FieldAttributeEnum
 Spécifie un ou plusieurs attributs d’un objet de [champ](../../../ado/reference/ado-api/field-object.md) .  

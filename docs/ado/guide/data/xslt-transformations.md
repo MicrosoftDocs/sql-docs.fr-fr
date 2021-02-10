@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 1a46196e-839f-4734-a59e-2c64609ffb9e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a704245d166b0d53cb7ed17e6a5f8cdfa32d9447
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 75a29504d0d19300f8137959be150670f71e8b5b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88978800"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032202"
 ---
 # <a name="xslt-transformations"></a>Transformations XSLT
 XSLT peut être appliqué au code XML généré pour le transformer en un autre format. La compréhension du format XML dans ADO vous aide à développer des modèles XSLT qui peuvent le transformer en une forme plus conviviale.  

@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 938522b4-f836-4c80-8d27-a598a000f0ee
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ce390555df75e2fd1d1a9a68257ba5952ee482f0
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c4df6f318afaed7bbbc7a3302be2b1c6a15a5c1d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167299"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100033952"
 ---
 # <a name="flush-method-ado"></a>Flush, méthode (ADO)
 Force le contenu du [flux](./stream-object-ado.md) restant dans la mémoire tampon ADO à l’objet sous-jacent auquel le **flux** est associé.  

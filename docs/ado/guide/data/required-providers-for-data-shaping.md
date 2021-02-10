@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: d49d48d2-ac2d-4c11-895c-5a149b444620
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: bd2829c49adb318ae80eeefd2ec2913fd8620d2b
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: eb3d91f23666c900f59a6ffc8e6b94af9bcdb4d7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88979800"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032531"
 ---
 # <a name="required-providers-for-data-shaping"></a>Fournisseurs nécessaires pour la mise en forme des données
 La mise en forme des données nécessite généralement deux fournisseurs. Le fournisseur de services, [Data Shaping Service pour OLE DB](../../../ado/guide/appendixes/microsoft-data-shaping-service-for-ole-db-ado-service-provider.md), fournit les fonctionnalités de mise en forme des données, et un fournisseur de données, tel que le fournisseur OLE DB pour SQL Server, fournit des lignes de données pour remplir le [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md)mis en forme.  
@@ -30,7 +30,7 @@ La mise en forme des données nécessite généralement deux fournisseurs. Le fo
   
  Aucun fournisseur de données n’est requis si le **jeu d’enregistrements** n’est pas rempli (par exemple, comme dans un **Recordset** fabriqué où des colonnes sont créées avec le nouveau mot clé). Dans ce cas, spécifiez «**fournisseur de données =** None ; ».  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
   
 ```  
 Dim cnn As New ADODB.Connection  

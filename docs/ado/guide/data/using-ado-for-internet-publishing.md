@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d399fce4-b70b-418f-8110-3deb3448863c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 774ff9b0728d362822c72047b573ab9def944d18
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: f7affce9c8596b9155f691ccf2ef61f9f0eca35d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88979032"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032271"
 ---
 # <a name="using-ado-for-internet-publishing"></a>Utilisation d’ADO pour la publication Internet
 [Le fournisseur OLE DB pour la publication Internet](../../../ado/guide/data/the-ole-db-provider-for-internet-publishing.md) montre un exemple spécifique d’accès à des données hétérogènes avec ADO. Bien que les exemples de cette section soient spécifiques à l’utilisation du fournisseur de publication Internet, les principes présentés doivent être similaires lorsque vous utilisez ADO avec d’autres fournisseurs pour des données hétérogènes, par exemple un fournisseur dans un magasin de messagerie électronique.  
@@ -32,7 +32,7 @@ ms.locfileid: "88979032"
  Pour plus d’informations sur l’utilisation des URL, consultez [URL absolues et relatives](../../../ado/guide/data/absolute-and-relative-urls.md).  
   
 ## <a name="record-fields"></a>Champs d’enregistrement  
- La différence entre les données hétérogènes et les données homogènes réside dans le fait que, pour la première, chaque ligne de données ou **enregistrement**peut avoir un ensemble différent de colonnes ou de **champs**. Pour les données homogènes, chaque ligne a le même ensemble de colonnes. Pour plus d’informations sur les champs spécifiques au fournisseur de publication Internet, consultez [enregistrements et champs supplémentaires fournis par le fournisseur](../../../ado/guide/data/records-and-provider-supplied-fields.md).  
+ La différence entre les données hétérogènes et les données homogènes réside dans le fait que, pour la première, chaque ligne de données ou **enregistrement** peut avoir un ensemble différent de colonnes ou de **champs**. Pour les données homogènes, chaque ligne a le même ensemble de colonnes. Pour plus d’informations sur les champs spécifiques au fournisseur de publication Internet, consultez [enregistrements et Provider-Supplied champs supplémentaires](../../../ado/guide/data/records-and-provider-supplied-fields.md).  
   
 ### <a name="appending-new-fields"></a>Ajout de nouveaux champs  
  Plusieurs objets ADO ont été améliorés pour fonctionner conjointement avec les objets **Record** et **Stream** .  

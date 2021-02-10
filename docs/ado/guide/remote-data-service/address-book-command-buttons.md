@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 80676831-6488-4dad-a558-c47c52256a22
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d234732b90fdd89b6f0e41efe1762bb3a99ddde2
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: dccdb22981bb1662cd50da1e28db8fa0a2ce47d6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724850"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032044"
 ---
 # <a name="address-book-command-buttons"></a>Boutons de commande de l’application Carnet d’adresses
 L’application Carnet d’adresses contient les boutons de commande suivants :  
@@ -63,7 +63,7 @@ End Sub
 ```  
   
 ## <a name="update-profile-button"></a>Bouton mettre à jour le profil  
- En cliquant sur le bouton **mettre à jour le profil** , vous activez la sous-procédure VBScript Update_OnClick, qui exécute les [services Bureau à distance. ](../../reference/rds-api/datacontrol-object-rds.md) `DC1` Méthodes [SubmitChanges](../../reference/rds-api/submitchanges-method-rds.md) et [Refresh](../../reference/rds-api/refresh-method-rds.md) de l’objet DataControl.  
+ En cliquant sur le bouton **mettre à jour le profil** , vous activez la sous-procédure VBScript Update_OnClick, qui exécute les [services Bureau à distance.](../../reference/rds-api/datacontrol-object-rds.md) `DC1` Méthodes [SubmitChanges](../../reference/rds-api/submitchanges-method-rds.md) et [Refresh](../../reference/rds-api/refresh-method-rds.md) de l’objet DataControl.  
   
 ```vb
 Sub Update_OnClick  

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 353d569a-043a-4397-9ee6-564c4af8d5f6
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 91066d8dd42d1bcd4a11aab093661a9061a7d7d1
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: bbad3ddcfd8c34be6ea911f4cef580832f1c55b2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88978820"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100032221"
 ---
 # <a name="xml-recordset-persistence-scenario"></a>Scénario de persistance des recordsets XML
 Dans ce scénario, vous allez créer une application Active Server pages (ASP) qui enregistre le contenu d’un objet Recordset directement dans l’objet de réponse ASP.  

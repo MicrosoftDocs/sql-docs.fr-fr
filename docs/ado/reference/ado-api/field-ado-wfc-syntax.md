@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7e01cb24-2338-4f92-ad46-8d97248e1a4d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2bfcf230d897274c45621dd404c9ed2816946812
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8d998deb2d09e77e54ba9c733e371cc60a439761
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167389"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100034099"
 ---
 # <a name="field-ado---wfc-syntax"></a>Field (ADO - syntaxe WFC)
 ## <a name="package-commswfcdata"></a>package com. ms. wfc. Data  
