@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 65090cba-6d46-4775-8d61-f6838e7752a6
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c2caaf9e708b9a9fccd728472c7b13857978fdbe
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 6a20514318de8222d016f2d345bd6758a075ab5e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991380"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037529"
 ---
 # <a name="determining-what-is-supported"></a>Détermination de ce qui est pris en charge
 La méthode **prend en charge** l’utilisation de la méthode pour déterminer si un objet **Recordset** spécifié prend en charge un type particulier de fonctionnalité. Sa syntaxe est la suivante :  

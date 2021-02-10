@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 35ffdb79-a931-4271-a3bb-0cd804cf173e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 887730cdedd1dca884bca18bb6df449fdec2e1dc
-ms.sourcegitcommit: c74bb5944994e34b102615b592fdaabe54713047
+ms.openlocfilehash: ee564f90e5a1ff24155eaae5b4613df821138209
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90989952"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037780"
 ---
 # <a name="calling-a-stored-procedure-as-a-method-on-a-connection-object"></a>Appel d’une procédure stockée en tant que méthode sur un objet Connection
 Vous pouvez appeler une procédure stockée comme s’il s’agissait d’une méthode native sur l’objet de **connexion** ouvert associé. Cela revient à appeler une commande nommée sur l’objet de **connexion** .  

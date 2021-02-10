@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 0590b466-2a36-49a2-868e-028ef5e49394
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1b62e392325306bc358283874f4638077d8a4178
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 458a0f051e9bbf21c04b0c84125a1c438693f00d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991630"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037835"
 ---
 # <a name="aggregate-functions-the-calc-function-and-the-new-keyword"></a>Fonctions d’agrégation, fonction CALC et mot clé NEW
 La mise en forme des données prend en charge les fonctions suivantes. Le nom affecté au chapitre contenant la colonne à utiliser est l' *alias du chapitre*.  
@@ -30,13 +30,13 @@ La mise en forme des données prend en charge les fonctions suivantes. Le nom af
   
 |Fonctions d’agrégation|Description|  
 |-------------------------|-----------------|  
-|SOMME (*alias-Chapter*.* nom de colonne*)|Calcule la somme de toutes les valeurs dans la colonne spécifiée.|  
-|AVG (*alias-Chapter*.* nom de colonne*)|Calcule la moyenne de toutes les valeurs dans la colonne spécifiée.|  
-|MAX (*alias-Chapter*.* nom de colonne*)|Calcule la valeur maximale dans la colonne spécifiée.|  
-|MIN (*Chapter-alias*.* nom de colonne*)|Calcule la valeur minimale dans la colonne spécifiée.|  
-|COUNT (*alias-Chapter*[.* Column-Name*])|Compte le nombre de lignes dans l’alias spécifié. Si une colonne est spécifiée, seules les lignes pour lesquelles cette colonne est non NULL sont incluses dans le nombre.|  
-|ECARTYPE (*alias-Chapter*.* nom de colonne*)|Calcule l’écart type de la colonne spécifiée.|  
-|ANY (*alias-chapitre)*.* nom de colonne*)|Valeur de la colonne spécifiée. ANY a une valeur prévisible uniquement lorsque la valeur de la colonne est la même pour toutes les lignes du chapitre.<br /><br /> **Remarque** Si la colonne ne contient pas la même valeur pour toutes les lignes du chapitre, la commande SHAPE retourne arbitrairement l’une des valeurs pour être la valeur de la fonction ANY.|  
+|SOMME (*alias-Chapter*.*nom de colonne*)|Calcule la somme de toutes les valeurs dans la colonne spécifiée.|  
+|AVG (*alias-Chapter*.*nom de colonne*)|Calcule la moyenne de toutes les valeurs dans la colonne spécifiée.|  
+|MAX (*alias-Chapter*.*nom de colonne*)|Calcule la valeur maximale dans la colonne spécifiée.|  
+|MIN (*Chapter-alias*.*nom de colonne*)|Calcule la valeur minimale dans la colonne spécifiée.|  
+|COUNT (*alias-Chapter*[.*Column-Name*])|Compte le nombre de lignes dans l’alias spécifié. Si une colonne est spécifiée, seules les lignes pour lesquelles cette colonne est non NULL sont incluses dans le nombre.|  
+|ECARTYPE (*alias-Chapter*.*nom de colonne*)|Calcule l’écart type de la colonne spécifiée.|  
+|ANY (*alias-chapitre)*.*nom de colonne*)|Valeur de la colonne spécifiée. ANY a une valeur prévisible uniquement lorsque la valeur de la colonne est la même pour toutes les lignes du chapitre.<br /><br /> **Remarque** Si la colonne ne contient pas la même valeur pour toutes les lignes du chapitre, la commande SHAPE retourne arbitrairement l’une des valeurs pour être la valeur de la fonction ANY.|  
   
 |Expression calculée|Description|  
 |---------------------------|-----------------|  

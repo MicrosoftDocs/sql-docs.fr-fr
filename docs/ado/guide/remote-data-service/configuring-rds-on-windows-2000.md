@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: ef37e858-c05f-4f52-a65f-3ce6037e0d03
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3c52989f83608b33756ae90778485bfddab08173
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: caa8fe846651f65e4316c81f29f2f18078628658
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724800"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036569"
 ---
 # <a name="configuring-rds-on-windows-2000"></a>Configuration de RDS sur Windows 2000
 Si vous rencontrez des difficultés pour que RDS fonctionne correctement après la mise à niveau vers Windows 2000, procédez comme suit pour résoudre le problème :  
@@ -27,11 +27,11 @@ Si vous rencontrez des difficultés pour que RDS fonctionne correctement après 
   
 2.  Dans le menu Démarrer, sélectionnez Exécuter. Tapez msdfmap.ini, puis cliquez sur OK pour ouvrir le fichier msdfmap.ini dans le bloc-notes. Vérifiez la section [CONNECT DEFAULT] et, si le paramètre d’accès a la valeur NoAccess, remplacez-le par READONLY.  
   
-3.  À l’aide de l’utilitaire RegEdit, accédez à « HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\DataFactory\HandlerInfo » et assurez-vous que **HandlerRequired** est défini sur 0 et que le **DefaultHandler** est «» (chaîne null).  
+3.  À l’aide de l’utilitaire RegEdit, accédez à « HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DataFactory\HandlerInfo » et assurez-vous que **HandlerRequired** a la valeur 0 et que le **DefaultHandler** est «» (chaîne null).  
   
      **Remarque** Si vous apportez des modifications à cette section du Registre, vous devez arrêter et redémarrer le service de publication World Wide Web en entrant les commandes suivantes à l’invite de commandes : « NET STOP W3SVC » et « NET START W3SVC ».  
   
-4.  À l’aide de l’utilitaire RegEdit, accédez au Registre « HKEY_LOCAL_MACHINE \SYSTEM\CurrentControlSet\Services\W3SVC\Parameters\ADCLaunch » et vérifiez qu’il existe une clé nommée **RDSServer. DataFactory**. Si ce n’est pas le cas, créez-le.  
+4.  À l’aide de l’utilitaire RegEdit, accédez au registre « HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\W3SVC\Parameters\ADCLaunch » et vérifiez qu’il existe une clé nommée **RDSServer. DataFactory**. Si ce n’est pas le cas, créez-le.  
   
 5.  À l’aide de Gestionnaire des services Internet, recherchez le site Web par défaut et affichez les propriétés de la racine virtuelle MSADC. Examinez les restrictions relatives à la sécurité du répertoire, à l’adresse IP et au nom de domaine. Si l’option « accès refusé » est cochée, sélectionnez « accordé ».  
   

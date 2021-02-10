@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 7d1c4ad5-4be3-42ab-b516-e7133ca300bc
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c2d0130d00c86830614242363914105605031ef4
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: bf3a704b26e35c77d9ba7ba059978091002cc424
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88979430"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036938"
 ---
 # <a name="the-field-object"></a>Field, objet
 Chaque objet de **champ** correspond généralement à une colonne dans une table de base de données. Toutefois, un **champ** peut également représenter un pointeur vers un autre **Recordset**, appelé un chapitre. Les exceptions, telles que les colonnes de chapitre, seront abordées plus loin dans ce guide.  
@@ -31,7 +31,7 @@ Chaque objet de **champ** correspond généralement à une colonne dans une tabl
   
 -   Affichez ou modifiez les données du champ à l’aide de la propriété **value** . La **valeur** est la propriété par défaut de l’objet de **champ** .  
   
--   Retourne les caractéristiques de base d’un champ à l’aide des propriétés **type**, **PRECISION**et **NumericScale** .  
+-   Retourne les caractéristiques de base d’un champ à l’aide des propriétés **type**, **PRECISION** et **NumericScale** .  
   
 -   Retourne la taille déclarée d’un champ à l’aide de la propriété **DefinedSize** .  
   
@@ -44,7 +44,7 @@ Chaque objet de **champ** correspond généralement à une colonne dans une tabl
  Résolvez les incohérences dans les valeurs de champ lors de la mise à jour par lots à l’aide des propriétés **OriginalValue** et **UnderlyingValue** , si le fournisseur prend en charge les mises à jour par lots.  
   
 ## <a name="describing-a-field"></a>Description d’un champ  
- Les rubriques qui suivent décrivent les propriétés de l’objet de [champ](../../../ado/reference/ado-api/field-object.md) qui représentent des informations qui décrivent l’objet de **champ** lui-même, autrement dit, les métadonnées relatives au champ. Ces informations peuvent être utilisées pour déterminer une grande partie du schéma du **Recordset**. Ces propriétés sont les suivantes : **type**, **DefinedSize** , **ActualSize**, **Name**et **NumericScale** et **PRECISION**.  
+ Les rubriques qui suivent décrivent les propriétés de l’objet de [champ](../../../ado/reference/ado-api/field-object.md) qui représentent des informations qui décrivent l’objet de **champ** lui-même, autrement dit, les métadonnées relatives au champ. Ces informations peuvent être utilisées pour déterminer une grande partie du schéma du **Recordset**. Ces propriétés sont les suivantes : **type**, **DefinedSize** , **ActualSize**, **Name** et **NumericScale** et **PRECISION**.  
   
 ### <a name="discovering-the-data-type"></a>Découverte du type de données  
  La propriété de **type** indique le type de données du champ. Les constantes énumérées de type de données prises en charge par ADO sont décrites dans [DataTypeEnum](../../../ado/reference/ado-api/datatypeenum.md) dans le *Guide de référence du programmeur ADO*.  
@@ -64,7 +64,7 @@ Chaque objet de **champ** correspond généralement à une colonne dans une tabl
  Pour modifier les données d’un champ, affectez à la propriété **valeur** une nouvelle valeur du type correct. Votre type de curseur doit prendre en charge les mises à jour pour modifier le contenu d’un champ. La validation de la base de données n’est pas effectuée ici en mode batch. vous devrez donc vérifier les erreurs quand vous appelez **UpdateBatch** dans ce cas. Certains fournisseurs prennent également en charge les propriétés **UnderlyingValue** et **OriginalValue** de l’objet **Field** ADO pour vous aider à résoudre les conflits lorsque vous tentez d’effectuer des mises à jour par lots. Pour plus d’informations sur la résolution de ces conflits, consultez [modification des données](../../../ado/guide/data/editing-data.md).  
   
 > [!NOTE]
->  Impossible de définir des valeurs de **champ de jeu d’enregistrements** lors de l’ajout de nouveaux **champs** à un **Recordset**. Au lieu de cela, de nouveaux **champs** peuvent être ajoutés à un **jeu d’enregistrements**fermé. Le **jeu d’enregistrements** doit être ouvert, et seules les valeurs peuvent être assignées à ces **champs**.  
+>  Impossible de définir des valeurs de **champ de jeu d’enregistrements** lors de l’ajout de nouveaux **champs** à un **Recordset**. Au lieu de cela, de nouveaux **champs** peuvent être ajoutés à un **jeu d’enregistrements** fermé. Le **jeu d’enregistrements** doit être ouvert, et seules les valeurs peuvent être assignées à ces **champs**.  
   
 ### <a name="getting-more-field-information"></a>Obtenir plus d’informations sur les champs  
  Les objets ADO ont deux types de propriétés : intégré et dynamique. À ce stade, seules les propriétés intégrées de l’objet **Field** ont été discutées.  

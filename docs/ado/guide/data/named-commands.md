@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 5a0ec8f9-5ba3-4f9f-b80d-2073aa049586
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 986c82ca73e202ea2f07ab20822c73dbfe6e7832
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: f93c158a5572286e61ceacdaf95c5a0cd2153242
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88980270"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037249"
 ---
 # <a name="named-commands"></a>Commandes nommées
 [La création et l’exécution d’une commande simple](./creating-and-executing-a-simple-command.md) montrent une façon d’exécuter une commande. Il existe une autre méthode : vous pouvez en faire une commande nommée, puis appeler cette commande nommée directement sur l’objet de **connexion** (affecté à la propriété **ActiveConnection** de l’objet **Command** ). L’attribution d’un nom à une commande implique l’attribution d’un nom à la propriété **Name** d’un objet **Command** . Par exemple,  

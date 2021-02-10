@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 0bdd236b-edff-4aac-94c3-93e1465ca6c5
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b43d18127717ae58b4db2c8fb33c5d173ab160af
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 81d789c003921b4e8359df281cb9fa51dbdf1f26
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724830"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036578"
 ---
 # <a name="basic-rds-programming-model"></a>Modèle de programmation RDS de base
 > [!IMPORTANT]

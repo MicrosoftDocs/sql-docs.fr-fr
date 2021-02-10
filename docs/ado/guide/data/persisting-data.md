@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 21c162ca-2845-4dd8-a49d-e715aba8c461
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 86789dbce8ab86035f815f36f8eff369b55401a3
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: f9a2ad809efbc847a2dfaf2292a15c1c7376e9b2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88980100"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037209"
 ---
 # <a name="persisting-data"></a>Persistance des données
 L’informatique portable (par exemple, à l’aide d’ordinateurs portables) a généré le besoin d’applications qui peuvent s’exécuter dans un état connecté et déconnecté. ADO a ajouté la prise en charge pour cela en donnant au développeur la possibilité d’enregistrer un **jeu d’enregistrements** de curseur client sur le disque et de le recharger ultérieurement.  
@@ -30,7 +30,7 @@ L’informatique portable (par exemple, à l’aide d’ordinateurs portables) a
   
 -   En **déplacement :** Lorsque vous prenez l’application en déplacement, il est essentiel de fournir la possibilité d’apporter des modifications et d’ajouter de nouveaux enregistrements qui peuvent ensuite être reconnectés à la base de données ultérieurement et validés.  
   
--   **Recherches rarement mises à jour :** Souvent, dans une application, les tables sont utilisées comme recherches, par exemple les tables de taxes d’État. Ils sont rarement mis à jour et sont en lecture seule. Au lieu de relire ces données à partir du serveur chaque fois que l’application est démarrée, l’application peut simplement charger les données à partir d’un **Recordset**conservé localement.  
+-   **Recherches rarement mises à jour :** Souvent, dans une application, les tables sont utilisées comme recherches, par exemple les tables de taxes d’État. Ils sont rarement mis à jour et sont en lecture seule. Au lieu de relire ces données à partir du serveur chaque fois que l’application est démarrée, l’application peut simplement charger les données à partir d’un **Recordset** conservé localement.  
   
  Dans ADO, pour enregistrer et charger des **jeux d’enregistrements**, utilisez les méthodes **Recordset. Save** et **recordset. Open (,,,, adCmdFile)** sur l’objet **Recordset** ADO.  
   

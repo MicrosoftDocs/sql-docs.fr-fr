@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: f8989555-28c6-4c17-9bf8-7f44a8a5c407
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d64d6b417f6430cb834c48b8caf93e041a2084e8
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 245a0cd91b9d6c7675df146d9d5808b42bb8c618
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88978870"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036729"
 ---
 # <a name="what-is-a-lock"></a>Qu’est qu’un verrou ?
 Le verrouillage est le processus par lequel un SGBD restreint l’accès à une ligne dans un environnement multi-utilisateur. Lorsqu’une ligne ou une colonne est verrouillée de manière exclusive, les autres utilisateurs ne sont pas autorisés à accéder aux données verrouillées tant que le verrou n’est pas libéré. Cela permet de s’assurer que deux utilisateurs ne peuvent pas simultanément mettre à jour la même colonne dans une ligne.  

@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 12a978c0-b8a0-4ef0-87f0-a43c13659272
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 55087e96c0855f24153dee9bc279d9abf58d3f04
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 8d72b169247df929d923f3b2362a497647b8f8e2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88979260"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036899"
 ---
 # <a name="types-of-locks"></a>Types de verrous
 ## <a name="adlockbatchoptimistic"></a>adLockBatchOptimistic  

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f90fcf55-6b24-401d-94e1-d65bd24bd342
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 11d2c02d24753460f90452ddd6cc6b1e1589b80b
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 7c6d62d410e6709c93ad6e3d04db627f14f091a1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88979620"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036989"
 ---
 # <a name="shape-append-clause"></a>Clause APPEND de la commande SHAPE
-La clause APPEND de la commande SHAPE ajoute une ou plusieurs colonnes à un **Recordset**. Souvent, ces colonnes sont des colonnes de chapitres, qui font référence à un **jeu d’enregistrements**enfant.  
+La clause APPEND de la commande SHAPE ajoute une ou plusieurs colonnes à un **Recordset**. Souvent, ces colonnes sont des colonnes de chapitres, qui font référence à un **jeu d’enregistrements** enfant.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,7 +44,7 @@ SHAPE [parent-command [[AS] parent-alias]] APPEND column-list
 -   Le mot clé TABLE, suivi du nom d’une table dans le fournisseur de données.  
   
  *parent-alias*  
- Alias facultatif qui fait référence au **jeu d’enregistrements**parent.  
+ Alias facultatif qui fait référence au **jeu d’enregistrements** parent.  
   
  *colonne-liste*  
  Un ou plusieurs des éléments suivants :  
@@ -71,12 +71,12 @@ SHAPE [parent-command [[AS] parent-alias]]
   
 -   Autre commande de forme incorporée entre parenthèses.  
   
--   Nom d’un **jeu d’enregistrements**mis en forme existant.  
+-   Nom d’un **jeu d’enregistrements** mis en forme existant.  
   
 -   Le mot clé TABLE, suivi du nom d’une table dans le fournisseur de données.  
   
  *alias-enfant*  
- Alias qui fait référence au **Recordset**enfant.  
+ Alias qui fait référence au **Recordset** enfant.  
   
  *parent-column*  
  Colonne du **Recordset** retournée par la *commande parent-.*  

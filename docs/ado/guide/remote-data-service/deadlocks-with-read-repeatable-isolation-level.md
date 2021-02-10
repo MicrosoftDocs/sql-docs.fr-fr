@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 29f3683f-12f3-4304-8a54-fe133c25a423
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 46444bf6e34278af9ca80f56f7d3bfdea1f3feef
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 05b43a72ede823a3a755edfdaa48be1e767b3e74
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724730"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036499"
 ---
 # <a name="deadlocks-with-read-repeatable-isolation-level"></a>Interblocages avec le niveau d’isolation REPEATABLE READ
 Si un objet métier personnalisé utilise un niveau d’isolation lecture renouvelable pour accéder à un SQL Server, et que l’objet métier est appelé simultanément par deux clients qui envoient une requête et mettent à jour dans la même transaction, un blocage est possible. Le service de données à distance est conçu pour permettre à l’un des processus de libérer le délai pour libérer le blocage, mais la mise à jour échoue pour ce client.  

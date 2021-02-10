@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: cce93ace-c4ed-4c6c-940c-28a50ff2fd12
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 65ca384d89c4afbeeb24120debfd2ead5c2716ed
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: a6b6ef12f2da2416e5f2c3c6e2e6c0c94e2c5327
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88979550"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036979"
 ---
 # <a name="static-cursors"></a>Curseurs statiques
 Le curseur statique affiche toujours l’ensemble de résultats tel qu’il était au moment où le curseur a été ouvert pour la première fois. En fonction de l’implémentation, les curseurs statiques sont en lecture seule ou en lecture/écriture, et permettent de faire défiler vers l’avant et vers l’arrière. Le curseur statique ne détecte généralement pas les modifications apportées à l’appartenance, à l’ordre ou aux valeurs du jeu de résultats après l’ouverture du curseur. Les curseurs statiques peuvent détecter leurs propres mises à jour, suppressions et insertions, bien qu’ils ne soient pas obligés de le faire.  

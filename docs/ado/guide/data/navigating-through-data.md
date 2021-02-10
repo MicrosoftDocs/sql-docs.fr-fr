@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 8d88c9aa-8ec8-4969-8fa1-1663fd29bfc4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7abcc738c4fd89a64e2d57f9ecf5e068abfaf7e3
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 2a41fa68719fa1ec28b5f8d7a51b3707407cec9d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88980220"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037229"
 ---
 # <a name="navigating-through-data"></a>Navigation dans les données
 **Recordset** prend en charge différentes méthodes et propriétés pour naviguer dans le jeu de données résultant. Nous examinons cette fonctionnalité en parcourant quelques scénarios avec nos exemples d’objets **Recordset** .  

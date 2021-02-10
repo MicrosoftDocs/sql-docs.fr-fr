@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: de1d74af-89b6-4f3f-a8c9-07c3e2b3c9a5
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1f13e39dd6c1740fb29fc0347a835d568aee352a
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: e43e974d8ae280af4ff045caae61c2d16b3b9034
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991290"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037479"
 ---
 # <a name="examining-data"></a>Examen des données
 La section [obtention de données](./getting-data.md) a expliqué comment récupérer des données d’une source de données sous la forme d’un ou de plusieurs objets **Recordset** . Cette section traite de l' **objet Recordset** plus en détail, y compris comment naviguer dans le **Recordset** et afficher ses données.  

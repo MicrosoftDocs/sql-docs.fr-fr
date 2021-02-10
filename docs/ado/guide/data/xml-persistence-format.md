@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 6e146738-ac4d-47bb-b6cd-d87b2260aead
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2da0090b9e06a9df7692a27242a08303174f51aa
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 3a1a1b832f9e34cbf99e5fd01c424bf54c50c3bc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88978830"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036719"
 ---
 # <a name="xml-persistence-format"></a>Format de persistance XML
 ADO utilise l’encodage UTF-8 pour le flux XML qu’il conserve.  
@@ -67,7 +67,7 @@ xmlns:z="#RowsetSchema">
   
  Le schéma montre les déclarations des espaces de noms, de la section de schéma et de la section de données. La section schéma contient des définitions pour Row, ShipperID, CompanyName et Phone.  
   
- Les définitions de schéma sont conformes à la [spécification de données XML W3C](http://www.w3.org/TR/1998/NOTE-XML-data/) et peuvent être entièrement validées (même si la validation ne se produit pas dans Internet Explorer 5). XML-Data est actuellement le seul format de schéma pris en charge pour la persistance du Recordset.  
+ Les définitions de schéma sont conformes à la [spécification du W3C XML-Data](http://www.w3.org/TR/1998/NOTE-XML-data/) et peuvent être entièrement validées (même si la validation ne se produit pas dans Internet Explorer 5). XML-Data est actuellement le seul format de schéma pris en charge pour la persistance du Recordset.  
   
  La section des données comporte trois lignes contenant des informations sur les expéditeurs. Pour un ensemble de lignes vide, la section de données peut être vide, mais les \<rs:data> balises doivent être présentes. Sans données, vous pouvez écrire la balise sténographique comme simple \<rs:data/> . Toute balise précédée de « RS » indique qu’elle se trouve dans l’espace de noms défini par urn : schemas-microsoft-com : rowset.  
   

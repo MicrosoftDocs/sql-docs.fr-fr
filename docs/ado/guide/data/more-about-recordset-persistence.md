@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a9b287f5-04b0-4514-8143-f67879ca9842
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1dca646b07c441a4fccd617723aba98536f1a7e1
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: ce3b22ecd5913db0045f82e72aa20b0833a5109b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88980330"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037259"
 ---
 # <a name="more-about-recordset-persistence"></a>En savoir plus sur la persistance des recordsets
 L’objet ADO Recordset prend en charge le stockage du contenu d’un objet **Recordset** dans un fichier à l’aide de sa méthode [Save](../../reference/ado-api/save-method.md) . Le fichier stocké de manière permanente peut exister sur un lecteur local, un serveur ou en tant qu’URL sur un site Web. Plus tard, le fichier peut être restauré à l’aide de la méthode [Open](../../reference/ado-api/open-method-ado-recordset.md) de l’objet **Recordset** ou de la méthode [Execute](../../reference/ado-api/execute-method-ado-connection.md) de l’objet [Connection](../../reference/ado-api/connection-object-ado.md) .  

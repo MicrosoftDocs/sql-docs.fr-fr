@@ -1,6 +1,6 @@
 ---
 description: Enregistrements et champs fournis par le fournisseur
-title: Enregistrements et champs fournis par le fournisseur | Microsoft Docs
+title: Enregistrements et champs de Provider-Supplied | Microsoft Docs
 ms.prod: sql
 ms.prod_service: connectivity
 ms.technology: ado
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 77f95e0a-0cf2-411a-a792-593f77330fbd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7cc7b8c4fb0116f96a2470a7161f9fbd30c7efb9
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: a64168a8a1fec81d47c337978ea75664fec0a10c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88979950"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037109"
 ---
 # <a name="records-and-provider-supplied-fields"></a>Enregistrements et champs fournis par le fournisseur
 Lorsqu’un objet [Record](../../../ado/reference/ado-api/record-object-ado.md) est ouvert, sa source peut être la ligne actuelle d’un [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md)ouvert, une URL absolue ou une URL relative avec un objet de [connexion](../../../ado/reference/ado-api/connection-object-ado.md) ouvert.  
@@ -34,7 +34,7 @@ Lorsqu’un objet [Record](../../../ado/reference/ado-api/record-object-ado.md) 
   
  Un champ qui est commun à l' **enregistrement** et au **Recordset** peut être modifié sur l’un ou l’autre des objets. Toutefois, le champ ne peut pas être supprimé de l’objet **Record** , même si le fournisseur sous-jacent peut prendre en charge l’affectation de la valeur null au champ.  
   
- Une fois l' **enregistrement** ouvert, vous pouvez ajouter des champs par programmation. Vous pouvez également supprimer des champs que vous avez ajoutés, mais vous ne pouvez pas supprimer des champs de l' **objet Recordset**d’origine.  
+ Une fois l' **enregistrement** ouvert, vous pouvez ajouter des champs par programmation. Vous pouvez également supprimer des champs que vous avez ajoutés, mais vous ne pouvez pas supprimer des champs de l' **objet Recordset** d’origine.  
   
  Vous pouvez également ouvrir l’objet **Record** directement à partir d’une URL. Dans ce cas, les champs ajoutés à l' **enregistrement** dépendent du fournisseur sous-jacent. Actuellement, la plupart des fournisseurs ajoutent un ensemble de champs qui décrivent l’entité représentée par l' **enregistrement**. Si l’entité se compose d’un flux d’octets, tel qu’un fichier simple, un objet de [flux](../../../ado/reference/ado-api/stream-object-ado.md) peut généralement être ouvert à partir de l' **enregistrement**.  
   

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 0b81af6f-b9ae-4f7c-b59b-b5bdd775036f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f40f55f2a7df85078131813015fd584b52c75c2d
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: d0fac62712f21e2f25416419252a1e13f8b47274
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991480"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037669"
 ---
 # <a name="creating-and-executing-a-simple-command"></a>Création et exécution d’une commande simple
 Une commande simple est une commande qui n’est pas paramétrable et ne nécessite pas de persistance. Il existe trois façons de créer et d’exécuter une commande simple.  

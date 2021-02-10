@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: a576bf81-8f3c-4ba1-817b-87e89a8da684
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8a4be3fb7f70ba41e24cd757da34e7272e51f87c
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 1b19762b1e06a093d194636bb699dd7dcce368be
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88980440"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037299"
 ---
 # <a name="intervening-shape-compute-clauses"></a>Clauses COMPUTE intermédiaires de la commande SHAPE
 Il est possible d’incorporer une ou plusieurs clauses Compute entre le parent et l’enfant dans une commande SHAPE paramétrable, comme dans l’exemple suivant :  

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 74aad8a6-06cc-4a2c-811a-d78f9b741d84
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 32c9c97d8baaff41d209a939fdca5d3e5d7a5435
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 8de1fed0417dbd652d409490dbf66711769be012
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88980410"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037289"
 ---
 # <a name="jscript-code-example-to-return-a-recordset"></a>Exemple de code JScript pour retourner un recordset
 ## <a name="jscript-code-rsjs"></a>Code JScript (rs.js)  

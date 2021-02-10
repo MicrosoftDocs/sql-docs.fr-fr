@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 75b774a5-fa94-490a-b521-b2b8f7d48919
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a4c9bd4794a310a0962593ddbe58f96d84af0e43
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 44b1f613f15ac420b79d10b0d97b610680acd857
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88978650"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036659"
 ---
 # <a name="ado-multidimensional-ado-md"></a>ADO multidimensionnel (ADO MD)
 Cette section contient la rubrique suivante.  

@@ -1,6 +1,6 @@
 ---
 description: Objet de liaison de données de l’application Carnet d’adresses
-title: Objet de liaison de données du carnet d’adresses | Microsoft Docs
+title: Objet de Data-Binding de carnet d’adresses | Microsoft Docs
 ms.prod: sql
 ms.prod_service: connectivity
 ms.technology: ado
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 080c1925-d453-4b89-92ac-c93591490518
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0f5c98370ebb1a1b16e09e900455888d0c201905
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 91489445aef2034ed273a6d13cc5d6ae02b7f519
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91721570"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036589"
 ---
 # <a name="address-book-data-binding-object"></a>Objet de liaison de données de l’application Carnet d’adresses
 L’application Carnet d’adresses utilise le [RDS. DataControl](../../reference/rds-api/datacontrol-object-rds.md) pour lier les données de la base de données SQL Server à un objet visuel (dans ce cas, un tableau DHTML) dans la page HTML cliente de l’application. La logique du programme VBScript piloté par les événements utilise le [RDS. DataControl](../../reference/rds-api/datacontrol-object-rds.md) à :  
@@ -53,11 +53,11 @@ Initial Catalog=AddrBookDb;Integrated Security=SSPI;">
   
 |Paramètre|Description|  
 |---------------|-----------------|  
-|***CLASSID***|Nombre 128 bits unique qui identifie le type d’objet incorporé sur le système. Cet identificateur est conservé dans le registre système de l’ordinateur local. (Pour les ID de classe de l' **objet RDS. DataControl** , consultez [RDS. DataControl, objet](../../reference/rds-api/datacontrol-object-rds.md).)|  
+|***ClassID** _|Nombre 128 bits unique qui identifie le type d’objet incorporé sur le système. Cet identificateur est conservé dans le registre système de l’ordinateur local. (Pour les ID de classe de _ *RDS. DataControl**, consultez [RDS. DataControl, objet](../../reference/rds-api/datacontrol-object-rds.md).)|  
 |***Identifiant***|Définit un identificateur à l’ensemble du document pour l’objet incorporé qui est utilisé pour l’identifier dans le code.|  
   
 ## <a name="rdsdatacontrol-tag-parameters"></a>Licence. Paramètres de balise DataControl  
- Le tableau suivant décrit les paramètres spécifiques à l' **objet RDS. DataControl** . (Pour obtenir la liste complète des **services Bureau à distance. ** Les paramètres d’objet DataControl et le moment où les implémentent, consultez [RDS. DataControl, objet](../../reference/rds-api/datacontrol-object-rds.md).)  
+ Le tableau suivant décrit les paramètres spécifiques à l' **objet RDS. DataControl** . (Pour obtenir la liste complète des **services Bureau à distance.** Les paramètres d’objet DataControl et le moment où les implémentent, consultez [RDS. DataControl, objet](../../reference/rds-api/datacontrol-object-rds.md).)  
   
 |Paramètre|Description|  
 |---------------|-----------------|  

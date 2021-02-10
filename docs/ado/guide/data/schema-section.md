@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 4ac6e524-2c92-48e8-b871-0a4b5c8fda18
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a1f294e9c0258f1cc9d108d1eb9a47087b456ca8
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 346957b2b060bf990cf77bfe7784f67b13a37c37
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88979720"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037009"
 ---
 # <a name="schema-section"></a>Section de schéma
 La section du schéma est obligatoire. Comme le montre l’exemple précédent, ADO écrit des métadonnées détaillées sur chaque colonne pour conserver la sémantique des valeurs de données le plus possible pour la mise à jour. Toutefois, pour charger dans le XML, ADO requiert uniquement les noms des colonnes et l’ensemble de lignes auquel ils appartiennent. Voici un exemple de schéma minimal :  
@@ -99,7 +99,7 @@ La section du schéma est obligatoire. Comme le montre l’exemple précédent, 
  De même, étant donné qu’aucun alias n’est défini pour `CompanyName` dans l’exemple précédent, `CompanyName` doit être utilisé de manière cohérente dans tout le document.  
   
 ## <a name="data-types"></a>Types de données  
- Vous pouvez appliquer un type de données à une colonne avec l’attribut dt : type. Pour obtenir le guide définitif sur les types XML autorisés, consultez la section types de données de la [spécification W3C XML-Data](http://www.w3.org/TR/1998/NOTE-XML-data/). Vous pouvez spécifier un type de données de deux façons : spécifiez l’attribut dt : type directement sur la définition de colonne elle-même ou utilisez la construction s :DataType comme élément imbriqué de la définition de colonne. Par exemple,  
+ Vous pouvez appliquer un type de données à une colonne avec l’attribut dt : type. Pour obtenir le guide définitif sur les types XML autorisés, consultez la section types de données de la [spécification du XML-Data W3C](http://www.w3.org/TR/1998/NOTE-XML-data/). Vous pouvez spécifier un type de données de deux façons : spécifiez l’attribut dt : type directement sur la définition de colonne elle-même ou utilisez la construction s :DataType comme élément imbriqué de la définition de colonne. Par exemple,  
   
 ```  
 <s:AttributeType name="Phone" >  

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 299c37bd-19ff-4261-8571-b9665687e075
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ca4c5a094e263ca0c44c58a9d9118d4e2ce01538
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: a5ce736c8dd24f2398d7c8c374be260080c32e11
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991410"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037639"
 ---
 # <a name="dealing-with-failed-updates"></a>Traitement des mises à jour ayant échoué
 Lorsqu’une mise à jour se termine avec des erreurs, la façon dont vous résolvez les erreurs dépend de la nature et de la gravité des erreurs et de la logique de votre application. Toutefois, si la base de données est partagée avec d’autres utilisateurs, une erreur classique est que quelqu’un d’autre modifie le champ avant. Ce type d’erreur est appelé un conflit. ADO détecte cette situation et signale une erreur.  
@@ -29,10 +29,10 @@ Lorsqu’une mise à jour se termine avec des erreurs, la façon dont vous réso
  Le code permettant d’alerter l’utilisateur en cas de conflit de mise à jour ressemble à ceci :  
   
 ```  
-objRs.Filter = adFilterConflictingRecords  
+objRs.Filter = adFilterConflictingRecords  
 objRs.MoveFirst  
-Do While Not objRst.EOF  
-   Debug.Print "Conflict: Name =  "; objRs!au_fname; " "; objRs!au_lname  
+Do While Not objRst.EOF  
+   Debug.Print "Conflict: Name =  "; objRs!au_fname; " "; objRs!au_lname  
    objRs.MoveNext  
 Loop  
 ```  

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ccbdea9d-f9cf-4b0c-ade2-2d65311e12dc
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 960e0f8cf42a2ef1f0b2b30f73a784d208777dae
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 1c7b1b8493e6e8dd066ad2208e35d374cc0fadff
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88978930"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036739"
 ---
 # <a name="visual-basic-for-applications-functions"></a>Fonctions Visual Basic pour Applications
 Les fonctions de Visual Basic pour Applications suivantes peuvent être utilisées dans les expressions CALC de mise en forme des données :  
@@ -58,13 +58,13 @@ Les fonctions de Visual Basic pour Applications suivantes peuvent être utilisé
         PartDate  
         SérieDate  
         ValDate  
-        jour  
+        Jour  
         DDB  
         Error  
         Error$  
         Exp  
         Fix  
-        Mettre en forme  
+        Format  
         Format$  
         VC  
         Hex  
@@ -139,7 +139,7 @@ Les fonctions de Visual Basic pour Applications suivantes peuvent être utilisé
         Tan  
         Temps  
         Temps$  
-        Minuteur  
+        Minuterie  
         SérieHeure  
         VHeure  
         SupprEspace  

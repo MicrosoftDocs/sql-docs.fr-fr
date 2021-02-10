@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 84387746-aa3e-44fd-ad6c-a8214a6966dc
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0589b1fe5ca6da29f088e26b2236cfc5205bfe0c
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 33ae3c1ca1cb8f89378b4f2ea468b41d6d3a4ac5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88978570"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036619"
 ---
 # <a name="working-with-multidimensional-data"></a>Utilisation de données multidimensionnelles
 Un jeu de *cellules* est le résultat d’une requête sur des données multidimensionnelles. Il se compose d’une collection d’axes, généralement pas plus de quatre axes et en général seulement de deux ou trois. Un *axe* est une collection de membres d’une ou de plusieurs dimensions, qui est utilisée pour rechercher ou filtrer des valeurs spécifiques dans un cube.  
@@ -41,7 +41,7 @@ Un jeu de *cellules* est le résultat d’une requête sur des données multidim
   
 -   Measures-Sales, PercentChange, BudgetedSales  
   
--   Products  
+-   Produits  
   
  L’ensemble de cellules suivant représente les ventes de 1991 pour tous les produits :  
   

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: e5b43cfa-da8d-430d-a2ab-5443dda47a16
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9cf9b2010fdbb20522c774d4c54ce2773cf817c5
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: f0fa2a2e3ee7d28bab239980710440cbd375d52a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91721560"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036479"
 ---
 # <a name="internet-server-error-access-denied"></a>Erreur du serveur Internet : accès refusé
 Si vous recevez cette erreur, cela signifie généralement que Microsoft Internet Information Services (IIS) a retourné l’état suivant :  

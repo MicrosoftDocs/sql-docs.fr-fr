@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a368e264-865c-41ee-be00-d9097255c2ea
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: cc65c6d9ad0b97f6d7f98a26fec173fc0fd630c3
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 34485c91a20b8c5df668e5eddd11e442418844a9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724770"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036529"
 ---
 # <a name="customization-file-logs-section"></a>Fichier de personnalisation, section Logs
 La section **logs** contient une entrée de fichier journal qui spécifie le nom d’un fichier qui enregistre les erreurs lors de l’opération du **DataFactory**.  
@@ -39,7 +39,7 @@ FileName
   
 ## <a name="remarks"></a>Notes  
   
-|Élément|Description|  
+|Partie|Description|  
 |----------|-----------------|  
 |**Raise**|Chaîne littérale qui indique qu’il s’agit d’une entrée de fichier journal.|  
 |*FileName*|Un chemin d’accès complet et un nom de fichier. Le nom de fichier par défaut est **c:\msdfmap.log**.|  

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 6da136c5-fa93-4fe6-9bf5-90f4d92441fb
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f9b2e96e3c7e3cd8b4295cd981ad70f480b3fa8b
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 84e77e158d8cba86775f5edc2602a118b800d322
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88980580"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037359"
 ---
 # <a name="hellodata-code"></a>Code de HelloData
 ```  

@@ -15,17 +15,17 @@ helpviewer_keywords:
 ms.assetid: ea1d4a97-58c3-476b-a496-cc80db2a90d5
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f5affe90da5a982a6e01bd5719793581fb3c5f13
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 4a8c7c3867d7e133428ff8e17cca8e54e5a54297
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991610"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037809"
 ---
 # <a name="anticipating-errors"></a>Anticipation des erreurs
 La prévention des erreurs est au moins aussi importante que la gestion des erreurs. Cette dernière section contient une liste succincte des précautions que votre application peut prendre pour aider à rendre les erreurs moins susceptibles de se produire.  
   
- Vérifiez l’état des objets en vérifiant la valeur dans la propriété **État** avant d’essayer d’effectuer une opération à l’aide de ces objets. Par exemple, si votre application utilise une **connexion**globale, vérifiez sa propriété **State** pour voir si elle est déjà ouverte avant d’appeler la méthode **Open** .  
+ Vérifiez l’état des objets en vérifiant la valeur dans la propriété **État** avant d’essayer d’effectuer une opération à l’aide de ces objets. Par exemple, si votre application utilise une **connexion** globale, vérifiez sa propriété **State** pour voir si elle est déjà ouverte avant d’appeler la méthode **Open** .  
   
 -   Tout programme qui accepte les données d’un utilisateur doit inclure du code pour valider ces données avant de les envoyer au magasin de données. Vous ne pouvez pas compter sur le magasin de données, le fournisseur, ADO ou même votre langage de programmation pour vous avertir des problèmes. Vous devez vérifier chaque octet entré par vos utilisateurs, en vous assurant que les données sont de type correct pour le champ et que les champs obligatoires ne sont pas vides.  
   
@@ -33,4 +33,4 @@ La prévention des erreurs est au moins aussi importante que la gestion des erre
   
  Assurez-vous que les objets **Recordset** ne sont pas au-delà des limites du **Recordset** avant de tenter de déplacer le pointeur d’enregistrement. Si vous essayez d’utiliser **MoveNext** lorsque **EOF** a la valeur true ou **MovePrev** lorsque **BOF** a la valeur true, une erreur se produit. Si vous effectuez l’une des méthodes **Move** quand les paramètres **EOF** et **BOF** ont la valeur true, une erreur est générée.  
   
- Des erreurs se produisent également si vous essayez d’effectuer des opérations telles que **Seek** et **Find** sur un **jeu d’enregistrements**vide.
+ Des erreurs se produisent également si vous essayez d’effectuer des opérations telles que **Seek** et **Find** sur un **jeu d’enregistrements** vide.

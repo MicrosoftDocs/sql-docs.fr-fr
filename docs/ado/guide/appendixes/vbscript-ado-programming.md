@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6aaaf6d0-1376-4473-bea6-b81f2645a9ac
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6b89d247f5bc91ca0b3494c15d3781116b8c9614
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 31e6c98d12c6c6f472053634d8b3aea314ccbab2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88990920"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037869"
 ---
 # <a name="vbscript-ado-programming"></a>Programmation ADO VBScript
 ## <a name="creating-an-ado-project"></a>Création d’un projet ADO  
@@ -51,8 +51,8 @@ Set Rs1 = Server.CreateObject( "ADODB.Recordset" )
  Le code suivant est un exemple générique de programmation côté serveur VBScript dans un fichier de page (ASP) Active Server :  
   
 ```vb
-<%  @LANGUAGE="VBSCRIPT" %>  
-<%  Option Explicit %>  
+<%  @LANGUAGE="VBSCRIPT" %>  
+<%  Option Explicit %>  
 <!--#include File="adovbs.inc"-->  
 <HTML>  
     <BODY BGCOLOR="White" topmargin="10" leftmargin="10">  
@@ -84,4 +84,4 @@ Response.Write("Success!")
   
 -   Vous ne pouvez pas utiliser **on \<label> Error GoTo** dans VBScript.  
   
--   VBScript prend en charge certaines fonctions de Visual Basic intégrées, telles que **MsgBox**, **Date**et **IsNumeric**. Toutefois, étant donné que VBScript est un sous-ensemble de Visual Basic, toutes les fonctions intégrées ne sont pas prises en charge. Par exemple, VBScript ne prend pas en charge la fonction **format** et les fonctions d’e/s de fichier.
+-   VBScript prend en charge certaines fonctions de Visual Basic intégrées, telles que **MsgBox**, **Date** et **IsNumeric**. Toutefois, étant donné que VBScript est un sous-ensemble de Visual Basic, toutes les fonctions intégrées ne sont pas prises en charge. Par exemple, VBScript ne prend pas en charge la fonction **format** et les fonctions d’e/s de fichier.

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 0ac09dbe-2665-411e-8fbb-d1efe6c777be
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2ae54835836fecdfbf3b026fe9e6a701a5602d3d
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 1c0872f20754d093020ece2830d389de32f09032
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991540"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037739"
 ---
 # <a name="command-streams"></a>Flux de commandes
 ADO a toujours pris en charge l’entrée de commande dans un format de chaîne spécifié par la propriété **CommandText** . En guise d’alternative, avec ADO 2,7 ou une version ultérieure, vous pouvez également utiliser un flux d’informations pour l’entrée de commande en affectant le flux à la propriété **CommandStream** . Vous pouvez assigner un objet de **flux** ADO ou tout objet qui prend en charge l’interface com **IStream** .  
@@ -64,7 +64,7 @@ Set adoCmd  = Server.CreateObject("ADODB.Command"")
 adoCmd.CommandStream = adoStreamQuery  
 ```  
   
- Spécifiez le **dialecte**du langage de commande, qui indique comment le fournisseur d’OLE DB SQL Server doit interpréter le flux de commande. Dialecte spécifié par un GUID spécifique au fournisseur :  
+ Spécifiez le **dialecte** du langage de commande, qui indique comment le fournisseur d’OLE DB SQL Server doit interpréter le flux de commande. Dialecte spécifié par un GUID spécifique au fournisseur :  
   
 ```  
 adoCmd.Dialect = "{5D531CB2-E6Ed-11D2-B252-00C04F681B71}"  

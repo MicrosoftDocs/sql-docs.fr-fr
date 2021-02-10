@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: cfd37a82-aad2-41cd-8d13-1566c43d95f0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 71ae81dc98d0fffe7463759be0846afccd708f0f
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 431a58609ff26ace443b012bc2835e5ba89736db
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88978510"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100036609"
 ---
 # <a name="referencing-the-ado-libraries-in-a-visual-basic-6-application"></a>Références aux bibliothèques ADO dans une application Visual Basic 6
 Pour importer les bibliothèques ADO dans une application Microsoft Visual Basic 6, vous devez définir une référence dans le projet Visual Basic.  
@@ -33,9 +33,9 @@ Pour importer les bibliothèques ADO dans une application Microsoft Visual Basic
   
 2.  Cliquez sur l’élément de menu **projet** , puis sélectionnez **références...** dans le panneau du menu déroulant.  
   
-3.  Dans **Références disponibles**, activez la case à cocher de la **bibliothèque Microsoft ActiveX Data Objects *n. n* **, où ***n. n*** représente le numéro de version le plus récent. Le champ d' **emplacement** ci-dessous doit identifier votre choix en tant que *$installDir\msado15.dll*, où *$INSTALLDIR* représente le chemin d’accès du répertoire dans lequel la bibliothèque ADO a été installée.  
+3.  Dans **Références disponibles**, activez la case à cocher de la **bibliothèque Microsoft ActiveX Data Objects *n. n***, où **_n. n_*_ représente le numéro de version le plus récent. Le*** champ « emplacement » ci-dessous doit identifier votre choix en tant que *$installDir\msado15.dll*, où *$INSTALLDIR* représente le chemin d’accès du répertoire dans lequel la bibliothèque ADO a été installée.  
   
-4.  Si vous envisagez d’utiliser ADO MD, répétez l’étape 3 pour sélectionner la **bibliothèque Microsoft ActiveX Data Objects (multidimensionnelle) *n. n* **. Le champ d' **emplacement** doit identifier ce choix en tant que *$installDir\msadomd.dll*.  
+4.  Si vous envisagez d’utiliser ADO MD, répétez l’étape 3 pour sélectionner la **bibliothèque Microsoft ActiveX Data Objects (multidimensionnelle) *n. n***. Le champ d' **emplacement** doit identifier ce choix en tant que *$installDir\msadomd.dll*.  
   
 5.  Si vous envisagez d’utiliser ADOX, répétez l’étape 3 pour sélectionner **Microsoft ADO ext. *n. n* pour DDL et sécurité**. Le champ d' **emplacement** doit identifier ce choix en tant que *$installDir\msadox.dll*.  
   

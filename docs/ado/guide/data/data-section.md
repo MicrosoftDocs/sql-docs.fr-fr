@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 43dc42a8-7057-48e6-93d6-880d5c5c51a4
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ac4febc789aca18401380ee8ada7b2ab7f9d30a3
-ms.sourcegitcommit: 18a98ea6a30d448aa6195e10ea2413be7e837e94
+ms.openlocfilehash: 09b79b0001ff448ecd333a4ec601c4ff42febf6d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88991450"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100037659"
 ---
 # <a name="data-section"></a>Section de données
 La section Data définit les données de l’ensemble de lignes, ainsi que toutes les mises à jour, insertions ou suppressions en attente. La section de données peut contenir zéro ou plusieurs lignes. Elle ne peut contenir que des données d’un ensemble de lignes où la ligne est définie par le schéma. En outre, comme indiqué précédemment, les colonnes sans données peuvent être omises. Si un attribut ou un sous-élément est utilisé dans la section de données et que cette construction n’a pas été définie dans la section de schéma, elle est ignorée en mode silencieux.  
@@ -38,9 +38,9 @@ La section Data définit les données de l’ensemble de lignes, ainsi que toute
 ## <a name="datetime"></a>DateTime  
  Le format de VT_DATE variant n’est pas directement pris en charge par les types de données XML-Data. Le format correct pour les dates avec un composant de données et d’heure est AAAA-MM-JJThh : mm : SS.  
   
- Pour plus d’informations sur les formats de date spécifiés par XML, consultez [W3C XML-Data Specification](https://go.microsoft.com/fwlink/?LinkId=5692).  
+ Pour plus d’informations sur les formats de date spécifiés par XML, consultez la [spécification W3C XML-Data](https://go.microsoft.com/fwlink/?LinkId=5692).  
   
- Lorsque la spécification XML-Data définit deux types de données équivalents (par exemple, I4 = = int), ADO écrit le nom convivial, mais lit les deux.  
+ Lorsque la spécification de XML-Data définit deux types de données équivalents (par exemple, I4 = = int), ADO écrit le nom convivial, mais lit les deux.  
   
 ## <a name="managing-pending-changes"></a>Gestion des modifications en attente  
  Un jeu d’enregistrements peut être ouvert en mode de mise à jour immédiate ou par lot. Lorsqu’ils sont ouverts en mode de mise à jour par lot avec des curseurs côté client, toutes les modifications apportées à l’ensemble d’enregistrements sont dans un état d’attente jusqu’à ce que la méthode UpdateBatch soit appelée. Les modifications en attente sont également conservées lors de l’enregistrement du Recordset. En XML, ils sont représentés par l’utilisation des éléments « Update » définis dans urn : schemas-microsoft-com : rowset. En outre, si un ensemble de lignes peut être mis à jour, la propriété pouvant être mise à jour doit avoir la valeur true dans la définition de la ligne. Par exemple, pour définir que la table Shippers contient des modifications en attente, la définition de ligne ressemble à ce qui suit.  
