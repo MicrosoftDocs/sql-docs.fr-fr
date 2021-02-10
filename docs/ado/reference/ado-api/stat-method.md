@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 99a2b2d4-e6b1-4205-b011-72d024ea7240
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 18571c88e604b21856195c9675e10b2c86dad35e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 684e824edc2238d2a6ba18d629c53fbab7ed7d3d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166485"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051330"
 ---
 # <a name="stat-method"></a>Stat, méthode
 Récupère des informations sur un objet de [flux](./stream-object-ado.md) .  

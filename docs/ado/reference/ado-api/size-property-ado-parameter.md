@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e6bad449-ebdb-4dd3-886a-9e6f1e7ee5d2
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5f47c76cd0c79d1ffade6ff163558be5e5a254be
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 57682be31c8640dc68b149495df2b0b36639d419
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166544"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051440"
 ---
 # <a name="size-property-ado-parameter"></a>Size, propriété (paramètre ADO)
 Indique la taille maximale, en octets ou en caractères, d’un objet de [paramètre](./parameter-object.md) .  

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f557e537-015d-4ba7-8a41-a6f00b366a91
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8ef671384a552f240930e24a073f979f6e84da8d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 5ddaae2256f595abe3778477e020d8f6774aacec
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166679"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051690"
 ---
 # <a name="recordtypeenum"></a>RecordTypeEnum
 Spécifie le type d’objet d' [enregistrement](./record-object-ado.md) .  

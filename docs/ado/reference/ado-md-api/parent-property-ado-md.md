@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 32c278c1-d8e1-4bb7-9ecd-2fbfdffee34b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: fd5b6c1adafca65b48f79eb5debc61ea45381705
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0674b3455611e8700e8859d4ced5d4052c51135c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164448"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050950"
 ---
 # <a name="parent-property-ado-md"></a>Parent, propriété (ADO MD)
 Indique le membre qui est le parent du [membre](./member-object-ado-md.md) actuel dans une hiérarchie.  

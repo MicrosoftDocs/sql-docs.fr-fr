@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 34698910-64b9-41d8-8531-9de12f2b1e32
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 383105d5e33c3443cda93c5d2e8db77aaef57134
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: a09786a0819735625e518a25464fea28c2336e8a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169689"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050830"
 ---
 # <a name="type-property-ado-md"></a>Type, propriété (ADO MD)
 Indique le type du [membre](./member-object-ado-md.md)actuel.  

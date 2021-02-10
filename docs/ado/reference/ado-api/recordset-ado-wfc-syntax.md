@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: bd1f571e-007f-432e-ada1-5c3e436c1a22
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 16ab80d0ea30669a4545785b9c48450e30f078d4
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8ddfe5c0b536ecf9d9876a7d282df7dab1d3835b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170433"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051790"
 ---
 # <a name="recordset-ado---wfc-syntax"></a>Recordset (ADO - syntaxe WFC)
 ## <a name="package-commswfcdata"></a>package com. ms. wfc. Data  

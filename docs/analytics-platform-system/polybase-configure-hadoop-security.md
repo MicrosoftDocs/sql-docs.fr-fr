@@ -9,12 +9,12 @@ ms.date: 10/26/2018
 ms.author: murshedz
 ms.reviewer: martinle
 ms.custom: seo-dt-2019
-ms.openlocfilehash: 3c0db3807b45d28f99ef1a3da571675bd6d8ac48
-ms.sourcegitcommit: 36fe62a3ccf34979bfde3e192cfa778505add465
+ms.openlocfilehash: 3b99f9d274f7c2d30bf8fae326953e2f57e9810e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94520956"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052730"
 ---
 # <a name="configure-polybase-hadoop-security"></a>Configurer Polybase Hadoop Security
 

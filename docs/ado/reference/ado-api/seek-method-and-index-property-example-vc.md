@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 57bda520-e98b-443c-a8bc-d8430e89a383
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0dd3d70fcb53d74ec9a364c8fe1b240c25d56112
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d59878f855be7593eeffaaec3fee9f6236b1b2ff
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166567"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051470"
 ---
 # <a name="seek-method-and-index-property-example-vc"></a>Seek (méthode) et Index (propriété), exemple (VC++)
-Cet exemple utilise la méthode [Seek](./seek-method.md) de l’objet [Recordset](./recordset-object-ado.md) et la propriété [index](./index-property.md) conjointement avec un **ID d’employé** donné, afin de localiser le nom de l’employé dans la table _*_Employees_*_ de la base de données Nwind. mdb.  
+Cet exemple utilise la méthode [Seek](./seek-method.md) de l’objet [Recordset](./recordset-object-ado.md) et la propriété [index](./index-property.md) conjointement avec un **ID d’employé** donné, afin de localiser le nom de l’employé dans la table _ *_Employees_** de la base de données Nwind. mdb.  
   
 ```  
 // BeginSeekCpp.cpp  
@@ -69,7 +69,7 @@ void SeekX();
 void PrintProviderError(_ConnectionPtr pConnection);  
 void PrintComError(_com_error &e);  
   
-inline char_ mygets(char* strDest, int n) {      
+inline char* mygets(char* strDest, int n) {      
    char strExBuff[10];  
    char* pstrRet = fgets(strDest, n, stdin);  
   

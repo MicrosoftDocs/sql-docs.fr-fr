@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 6d626d35-0bf3-4f24-9934-ad9c9c91273a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7339bcafe8df6678ec5cd9a0bef43dd92dd6edbd
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 4fbb1ff444c4d5b2cbf233ec2999411ab11ddfd9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169891"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051160"
 ---
 # <a name="description-property-ado-md"></a>Description, propriété (ADO MD)
 Retourne une explication textuelle de l’objet actuel.  

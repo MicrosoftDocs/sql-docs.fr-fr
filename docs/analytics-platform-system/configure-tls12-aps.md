@@ -8,19 +8,19 @@ ms.topic: conceptual
 ms.date: 10/29/2018
 ms.author: murshedz
 ms.reviewer: martinle
-ms.openlocfilehash: 988cac765a596b541d128b0b6190f6f228d95ee7
-ms.sourcegitcommit: e042272a38fb646df05152c676e5cbeae3f9cd13
+ms.openlocfilehash: 561a0a4f1d45d78e0f2fd23d61aae67f6adb6ff7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "74401252"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052740"
 ---
 # <a name="configure-tls-12-in-aps"></a>Configurer TLS 1,2 dans APS
 
 Pour sécuriser les points d’accès afin d’utiliser uniquement TLS 1,2, vous devez désactiver explicitement le protocole sur tous les hôtes physiques et virtuels. La désactivation des protocoles nécessite des modifications de paramètres du Registre. Les modifications du Registre requièrent un redémarrage des hôtes physiques et virtuels.
 
 > [!WARNING]
-> Cette section, méthode ou tâche contient les étapes qui vous indiquent comment modifier le Registre. Toutefois, des problèmes sérieux peuvent survenir si vous modifiez le registre de manière incorrecte, ce qui peut entraîner une perte de données et nécessiter la réinstallation du système d’exploitation. Nous vous recommandons vivement de sauvegarder le registre avant de le modifier. De cette manière, vous pourrez restaurer le Registre si un problème survient. Pour plus d’informations sur la sauvegarde et la restauration du Registre, cliquez sur le numéro d’article suivant pour afficher l’article de la base de connaissances Microsoft :<br>
+> Cette section, méthode ou tâche contient des étapes qui vous indiquent comment modifier le registre. Toutefois, des problèmes sérieux peuvent survenir si vous modifiez le registre de manière incorrecte, ce qui peut entraîner une perte de données et nécessiter la réinstallation du système d’exploitation. Nous vous recommandons vivement de sauvegarder le registre avant de le modifier. Vous pourrez ainsi restaurer le Registre en cas de problème. Pour plus d’informations sur la sauvegarde et la restauration du Registre, cliquez sur le numéro d’article suivant pour afficher l’article de la base de connaissances Microsoft :<br>
 [322756](https://support.microsoft.com/help/322756) comment sauvegarder et restaurer le registre dans Windows
 
 **Désactive**

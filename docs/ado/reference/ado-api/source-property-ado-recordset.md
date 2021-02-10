@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: a05ba2c9-2821-4343-8607-4de9b764ec91
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7ece9c2255891424ce26ef6ed81285c6f5767086
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 04287b1fca3b3716302ab440f8f5213cff3f6302
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166509"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051370"
 ---
 # <a name="source-property-ado-recordset"></a>Source, propriété (objet Recordset ADO)
 Indique la source de données d’un objet [Recordset](./recordset-object-ado.md) .  

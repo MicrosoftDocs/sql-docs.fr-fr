@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9da6db50-d9bb-47e1-ae8b-be3c9b88cf9a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 05c746f3e9419fe4b6e674991376a02af1c00563
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f0805eb346bb34f1cf1d8d7336ea28f11df704de
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166481"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051250"
 ---
 # <a name="state-property-example-vb"></a>State, exemple de propriété (VB)
 Cet exemple utilise la propriété [State](./state-property-ado.md) pour afficher un message alors que des connexions asynchrones s’ouvrent et que des commandes asynchrones sont en cours d’exécution.  

@@ -10,12 +10,12 @@ ms.author: murshedz
 ms.reviewer: martinle
 ms.custom: seo-dt-2019
 monikerRange: '>= aps-pdw-2016-au7'
-ms.openlocfilehash: fc204c5c4fd37ef4621c4376142662b7a9164ade
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4311195ce4b748ffeb73c4a001086b3f199b2c5b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97420186"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052780"
 ---
 # <a name="configure-auto-statistics"></a>Configurer les statistiques automatiques
 

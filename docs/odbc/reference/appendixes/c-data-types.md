@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b681d260-3dbb-47df-a616-4910d727add7
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5dbce167ea65daa030030bd32a909c5af3d06262
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 322aa55f007e4ebf1ba3fa2b3093bf750db7e678
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99212453"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051890"
 ---
 # <a name="c-data-types"></a>Type de données C
 Les types de données ODBC C indiquent le type de données des mémoires tampons C utilisées pour stocker les données dans l’application.  

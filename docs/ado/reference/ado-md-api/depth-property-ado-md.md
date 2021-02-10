@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: e41f2644-617d-4c09-80a4-feb5cf736186
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5289293ff0704f19cd793532b165e51b1526ce45
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ff072a20c675a67e75b39d93341b2dd9528551ba
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99174285"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051170"
 ---
 # <a name="depth-property-ado-md"></a>Depth, propriété (ADO MD)
 Indique le nombre de niveaux entre le [niveau](./level-object-ado-md.md) et la racine de la hiérarchie.  

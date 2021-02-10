@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f0ec0c92-8253-47c6-9a14-e5dbccbad219
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f61e05965b1750c4f8e6b48f092eeb059d1e19d3
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 3286e6d6477cf18f95d95ccd494336e7a119f009
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166561"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051450"
 ---
 # <a name="seekenum"></a>SeekEnum
 Spécifie le type de [recherche](./seek-method.md) à exécuter.  

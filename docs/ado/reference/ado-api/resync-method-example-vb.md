@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: ab95315c-fe15-458c-9e0c-937ae5596592
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c4ac3a795925d3f6ad259b2d597bc73c0874eb15
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 21c18e619ac348e136d4d7d65e421044279fc16b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170371"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051610"
 ---
 # <a name="resync-method-example-vb"></a>Resync, exemple de méthode (VB)
 Cet exemple illustre l’utilisation de la méthode [Resync](./resync-method.md) pour actualiser des données dans un Recordset statique.  

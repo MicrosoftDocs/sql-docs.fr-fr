@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 56091fcb-71e1-463a-b8ae-c09108eece2f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6cb56219e381443ccfa1ded2043b0222fa4e9745
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b3d3c4311e5fed3bcd117cd9255b3f998d2704a4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169706"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050890"
 ---
 # <a name="positions-collection-properties-methods-and-events"></a>Propriétés, méthodes et événements de la collection Positions
 ## <a name="properties"></a>Propriétés  

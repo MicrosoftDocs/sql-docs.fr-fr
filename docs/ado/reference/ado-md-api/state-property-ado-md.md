@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 06d480ca-9eb6-4570-a45d-a73539bddd32
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 61d34ef2afa96babbb194d4f52a560239f033154
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e2a9cfdd30460b790527c6c8a8eb5bcd7d05b7bf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164404"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050850"
 ---
 # <a name="state-property-ado-md"></a>State, propriété (ADO MD)
 Indique l’état actuel du CellSet.  

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: affc847c-a533-4c8a-bdff-3682fdb5df5f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d675e8349b652c3e0d9e248a34260cc06d5612c1
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ed161654a2a2c0e112281294b41c826c299e9344
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166717"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051800"
 ---
 # <a name="recordset-ado-for-visual-c-syntax"></a>Recordset (syntaxe ADO pour Visual C++)
 ## <a name="methods"></a>Méthodes  

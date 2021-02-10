@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ba6dd186-9552-4b6c-960b-3ee6cd589afd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ff1744d577bd4585becbbdc3f9a2b4c255ff3ed3
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ef61caf37491136be634cbd5683d701aabbecc0c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166739"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051870"
 ---
 # <a name="record-visual-c-syntax-index-with-import"></a>Enregistrement (Visual C++ index de syntaxe avec #import)
 ## <a name="methods"></a>Méthodes  

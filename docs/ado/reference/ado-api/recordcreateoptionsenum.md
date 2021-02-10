@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6d746670-0850-4065-9cd4-168dea1d3ea9
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 99c13920d8a786b4d9eae0d22a794b9ed34ddbb0
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 942f11dfa25a92f6914c868ffcdeb65c434e490c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166726"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051850"
 ---
 # <a name="recordcreateoptionsenum"></a>RecordCreateOptionsEnum
 Spécifie si un **enregistrement existant doit** être ouvert ou si un nouvel **enregistrement** a été créé pour la méthode d' [ouverture](./open-method-ado-record.md) de l’objet [Record](./record-object-ado.md) . Les valeurs peuvent être combinées avec un opérateur AND.  

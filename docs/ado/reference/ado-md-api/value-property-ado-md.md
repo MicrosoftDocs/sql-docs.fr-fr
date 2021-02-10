@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 70dc5cff-0b05-456d-b86b-2686fe4e7ce6
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c61b5389d847e2cb14a18b0e379078e9ea22b55e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 58196cf713a857a2c5f6a1922a4346db66d49d1a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169681"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050820"
 ---
 # <a name="value-property-ado-md"></a>Value, propriété (ADO MD)
 Indique la valeur de la [cellule](./cell-object-ado-md.md)active.  

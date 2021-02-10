@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b7021f11-8242-4e9f-92e9-1a4472673fb1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8086814a0baf03d9329b79bd04a698cd5ee64cf2
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f648f753326c31ac89f2d1c74fb3478e5718f5c3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170422"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051720"
 ---
 # <a name="recordsetevents-visual-c-syntax-index-with-import"></a>RecordsetEvents (index de la syntaxe Visual C++ avec #import)
 ## <a name="events"></a>Événements  

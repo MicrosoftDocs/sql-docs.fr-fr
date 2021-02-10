@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 2c18279e-6f35-4af0-b12e-8f1543d9ed20
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 232bebc8eabf96584a4513c3197f329ecf70fe87
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 850f3d493962db94671bb1f2e8ef65c1b2120f51
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170239"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051400"
 ---
 # <a name="source-property-ado-record"></a>Source, propriété (objet Record ADO)
 Indique la source de données ou l’objet représenté par l' [enregistrement](./record-object-ado.md).  

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 506fdd70-4452-4e83-95d5-c94311988dfa
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 695c0496f81afcb3d03991360fb9480d956740f2
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 4facc7f958c6fe8eab09c6889a54c63deb664ac0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166686"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051710"
 ---
 # <a name="recordstatusenum"></a>RecordStatusEnum
 Spécifie l' [État](./status-property-ado-recordset.md) d’un enregistrement en ce qui concerne les mises à jour par lots et les autres opérations en bloc.  

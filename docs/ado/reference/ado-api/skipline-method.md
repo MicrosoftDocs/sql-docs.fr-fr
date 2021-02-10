@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 0abc00fe-ee09-4c8e-b1f2-48ee9c5f3329
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 826e90b65131453bb50cc70e3efbc3ad8796c89f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 3c1b23ef249e2dd543772e1e414d347cc2377860
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166542"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051430"
 ---
 # <a name="skipline-method"></a>SkipLine, méthode
 Ignore une ligne entière lors de la lecture d’un [flux](./stream-object-ado.md)de texte.  

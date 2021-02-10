@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: d81ab76f-1aa8-4ccf-92ec-b65254dc3ea1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 21056d0e8f8e488bc5b80541ea4c397b3340c453
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 060c1c7f792a0cf74e9ca8192167c41fcb7b9399
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166656"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051620"
 ---
 # <a name="requery-method"></a>Requery, méthode
 Met à jour les données dans un objet [Recordset](./recordset-object-ado.md) en exécutant à nouveau la requête sur laquelle l’objet est basé.  
@@ -36,7 +36,7 @@ recordset.Requery Options
   
 #### <a name="parameters"></a>Paramètres  
  *Options*  
- Facultatif. Masque de répercussion qui contient des valeurs [ExecuteOptionEnum](./executeoptionenum.md) et [CommandTypeEnum](./commandtypeenum.md) affectant cette opération.  
+ facultatif. Masque de répercussion qui contient des valeurs [ExecuteOptionEnum](./executeoptionenum.md) et [CommandTypeEnum](./commandtypeenum.md) affectant cette opération.  
   
 > [!NOTE]
 >  Si *options* a la valeur **adAsyncExecute**, cette opération s’exécute de façon asynchrone et un événement [RecordsetChangeComplete](./willchangerecordset-and-recordsetchangecomplete-events-ado.md) est émis lorsqu’elle se termine. Les valeurs **ExecuteOpenEnum** de **adExecuteNoRecords** ou **adExecuteStream** ne doivent pas être utilisées avec **Requery**.  

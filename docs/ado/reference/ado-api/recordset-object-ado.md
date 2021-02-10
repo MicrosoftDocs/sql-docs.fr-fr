@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ede1415f-c3df-4cc5-a05b-2576b2b84b60
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ecf73bd3708fc33d8ada106dcaa4fb6e1f0b5503
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 7b4e7514d0ca9b9fd94c634c1e6a17dcdb42d976
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166694"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051780"
 ---
 # <a name="recordset-object-ado"></a>Recordset, objet (ADO)
 Représente l’ensemble des enregistrements d’une table de base ou les résultats d’une commande exécutée. À tout moment, l’objet **Recordset** fait référence à un seul enregistrement dans le jeu en tant qu’enregistrement actif.  

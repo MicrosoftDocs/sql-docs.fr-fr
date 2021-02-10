@@ -10,12 +10,12 @@ ms.author: murshedz
 ms.reviewer: martinle
 ms.custom: seo-dt-2019
 monikerRange: '>= aps-pdw-2016-au7'
-ms.openlocfilehash: 8dfadabcae27ff8705d86294b1c05851245d199c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: d1d60b85bec6ec810cc506e1002dbc8ecc60ed50
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97420198"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052790"
 ---
 # <a name="common-subexpression-elimination-explained"></a>Explication de l’élimination des sous-expressions communes
 

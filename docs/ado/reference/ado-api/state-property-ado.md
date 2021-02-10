@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 0b993bac-2653-40b1-bcbb-5b57b6aae2bf
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 517ffc71b5e2a95ba5f85fcc9d3561ce82b9ec86
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 7357d21aa58bca15e1fbbeb3c9cec542ef40ce8b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170212"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051320"
 ---
 # <a name="state-property-ado"></a>State, propriété (ADO)
 Indique pour tous les objets applicables si l’état de l’objet est ouvert ou fermé. Si l’objet exécute une méthode asynchrone, indique si l’état actuel de l’objet est en cours de connexion, en cours d’exécution ou en cours d’extraction.  
   
-## <a name="return-value"></a>Valeur renvoyée  
+## <a name="return-value"></a>Valeur de retour  
  Retourne une valeur de **type long** qui peut être une valeur [ObjectStateEnum](./objectstateenum.md) . La valeur par défaut est **adStateClosed**.  
   
 ## <a name="remarks"></a>Notes  

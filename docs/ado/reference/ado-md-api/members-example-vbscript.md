@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 87bbd4ad-bb1a-4123-93ef-99ef47fd970b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0115d1c7e902e43f7bcd36ebbcade7170cb11396
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f083e543dbca6c8e0fd66a31acf896f96e27f53a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164471"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051060"
 ---
 # <a name="members-example-vbscript"></a>Exemple avec Members (VBScript)
 Cet exemple utilise une chaîne de requête MDX pour extraire des données OLAP et écrit le CellSet résultant dans une structure de table HTML à l’aide des fonctionnalités de fractionnement de colonne pour les cellules à plusieurs dimensions.  
@@ -29,11 +29,11 @@ Cet exemple utilise une chaîne de requête MDX pour extraire des données OLAP 
 <%@ Language=VBScript %>  
 <%  
 '************************************************************************  
-'**_ Active Server Page displays OLAP data from default or provided  
-'_*_ MDX Query string and writes resulting cell set to HTML table  
-'_*_ structure. This ASP provides colspan features for multiple  
-'_*_ dimension cell sets.  
-'_***********************************************************************  
+'*** Active Server Page displays OLAP data from default or provided  
+'*** MDX Query string and writes resulting cell set to HTML table  
+'*** structure. This ASP provides colspan features for multiple  
+'*** dimension cell sets.  
+'************************************************************************  
 Response.Buffer=True  
 Response.Expires=0  
 %>  
@@ -48,27 +48,27 @@ Response.Expires=0
   
 Dim cat,cst,i,j,strSource,csw,LevelValue,intDC0,intDC1,intPC0, intPC1  
 '************************************************************************  
-'**_ Gather Server Name and MDX Query Strings from text box and  
-'_*_ text area and assign them to Session Objects of same name  
-'_***********************************************************************  
+'*** Gather Server Name and MDX Query Strings from text box and  
+'*** text area and assign them to Session Objects of same name  
+'************************************************************************  
 Session("ServerName")=Request.Form("strServerName")  
 Session("InitialCatalog")=Request.Form("strInitialCatalog")  
 Session("MDXQuery")=Request.Form("MDXQuery")  
   
 '************************************************************************  
-'**_ Set Connection Objects for Multi dimensional Catalog and Cell Set  
-'_***********************************************************************  
+'*** Set Connection Objects for Multi dimensional Catalog and Cell Set  
+'************************************************************************  
 Set cat = Server.CreateObject("ADOMD.Catalog")  
 Set cst = Server.CreateObject("ADOMD.CellSet")  
   
 '************************************************************************  
-'**_ Check to see if the Session Object Server Name is present  
-'_*_ If present then: Create Active Connection using Server Name  
-'_*_ and MSOLAP as connection Provider  
-'_*_ If not present then: Use default settings of a known OLAP Server  
-'_*_ for Server Name for Connection Set Server Name Session Object  
-'_*_ to default value  
-'_***********************************************************************  
+'*** Check to see if the Session Object Server Name is present  
+'*** If present then: Create Active Connection using Server Name  
+'*** and MSOLAP as connection Provider  
+'*** If not present then: Use default settings of a known OLAP Server  
+'*** for Server Name for Connection Set Server Name Session Object  
+'*** to default value  
+'************************************************************************  
 If Len(Session("ServerName")) > 0 Then  
    cat.ActiveConnection = "Data Source=" & Session("ServerName") & _  
       ";Initial Catalog=" & Session("InitialCatalog") & _  
@@ -76,9 +76,9 @@ If Len(Session("ServerName")) > 0 Then
 Else  
   
 '************************************************************************  
-'**_ Must set OLAPServerName to OLAP Server that is  
-'_*_ present on network  
-'_***********************************************************************  
+'*** Must set OLAPServerName to OLAP Server that is  
+'*** present on network  
+'************************************************************************  
    OLAPServerName = "Please set to present OLAP Server"  
    cat.ActiveConnection = "Data Source=" & OLAPServerName & _  
       ";Initial Catalog=FoodMart;Provider=msolap;"  
@@ -86,12 +86,12 @@ Else
    Session("InitialCatalog") = "FoodMart"  
 End if  
 '************************************************************************  
-'**_ Check to see if the Session Object MDXQuery is present  
-'_*_ If present then: Set strSource using MDXQuery Session Object  
-'_*_ If not present then: Use default MDX Query string of a known query  
-'_*_ that works with default server Set MDXQuery Session Object to   
-'_*_ default value  
-'_***********************************************************************  
+'*** Check to see if the Session Object MDXQuery is present  
+'*** If present then: Set strSource using MDXQuery Session Object  
+'*** If not present then: Use default MDX Query string of a known query  
+'*** that works with default server Set MDXQuery Session Object to   
+'*** default value  
+'************************************************************************  
 If Len(Session("MDXQuery")) < 5 Then  
    strSource = strSource & "SELECT "  
    strSource = strSource & "CROSSJOIN({[Store].[Store Country].MEMBERS},"  
@@ -106,27 +106,27 @@ Else
 End if  
   
 '************************************************************************  
-'**_ Set Cell Set Source property to strSource to be passed on cell set   
-'_*_ open method  
-'_***********************************************************************  
+'*** Set Cell Set Source property to strSource to be passed on cell set   
+'*** open method  
+'************************************************************************  
    cst.Source = strSource  
   
 '************************************************************************  
-'**_ Set Cell Sets Active connection to use the current Catalogs Active   
-'_*_ connection  
-'_***********************************************************************  
+'*** Set Cell Sets Active connection to use the current Catalogs Active   
+'*** connection  
+'************************************************************************  
 Set cst.ActiveConnection = cat.ActiveConnection  
   
 '************************************************************************  
-'**_ Using Open method, Open cell set  
-'_***********************************************************************  
+'*** Using Open method, Open cell set  
+'************************************************************************  
 cst.Open  
   
 '************************************************************************  
-'**_ Standard HTML to collect Server Name and MDX Query Information  
-'_*_ Note that post action posts back to same page to process  
-'_*_ thus using state of Session Variables to change look of page  
-'_***********************************************************************  
+'*** Standard HTML to collect Server Name and MDX Query Information  
+'*** Note that post action posts back to same page to process  
+'*** thus using state of Session Variables to change look of page  
+'************************************************************************  
 %>  
 <form action="ASPADOComplex.asp" method="POST" id="form1" name="form1">  
 <table>  
@@ -156,9 +156,9 @@ cst.Open
 </p>  
 <%  
 '************************************************************************  
-'**_ Set Dimension Counts minus 1 for Both Axes to intDC0, intDC1  
-'_*_ Set Position Counts minus 1 for Both Axes to intPC0, intPC1  
-'_***********************************************************************  
+'*** Set Dimension Counts minus 1 for Both Axes to intDC0, intDC1  
+'*** Set Position Counts minus 1 for Both Axes to intPC0, intPC1  
+'************************************************************************  
 intDC0 = cst.Axes(0).DimensionCount-1  
 intDC1 = cst.Axes(1).DimensionCount-1  
   
@@ -166,38 +166,38 @@ intPC0 = cst.Axes(0).Positions.Count - 1
 intPC1 = cst.Axes(1).Positions.Count - 1  
   
 '************************************************************************  
-'**_ Create HTML Table structure to hold MDX Query return Record set  
-'_***********************************************************************  
+'*** Create HTML Table structure to hold MDX Query return Record set  
+'************************************************************************  
 Response.Write "<Table width=100% border=1>"  
   
 '************************************************************************  
-'**_ Loop to create Column header for all Dimensions based  
-'_*_ on Count of Dimensions for Axes(0)  
-'_***********************************************************************  
+'*** Loop to create Column header for all Dimensions based  
+'*** on Count of Dimensions for Axes(0)  
+'************************************************************************  
 For h=0 to intDC0  
    Response.Write "<TR>"  
   
 '************************************************************************  
-'**_ Loop to create spaces in front of Column headers  
-'_*_ to align with Row headers  
-'_***********************************************************************  
+'*** Loop to create spaces in front of Column headers  
+'*** to align with Row headers  
+'************************************************************************  
    For c=0 to intDC1  
       Response.Write "<TD></TD>"  
    Next  
   
 '************************************************************************  
-'**_ Check current dimension to see if equal to Last Dimension  
-'_*_ If True: Write Table header titles normally to HTML output with out   
-'_*_ ColSpan value   
-'_*_ If False: Write Table header titles with ColSpan values to HTML   
-'_*_ output  
-'_***********************************************************************  
+'*** Check current dimension to see if equal to Last Dimension  
+'*** If True: Write Table header titles normally to HTML output with out   
+'*** ColSpan value   
+'*** If False: Write Table header titles with ColSpan values to HTML   
+'*** output  
+'************************************************************************  
    If h = intDC0 then  
   
 '************************************************************************  
-'**_ Iterate through Axes(0) Positions writing member captions to table   
-'_*_ header  
-'_***********************************************************************  
+'*** Iterate through Axes(0) Positions writing member captions to table   
+'*** header  
+'************************************************************************  
       For i = 0 To intPC0  
          Response.Write "<TH>"  
          Response.Write "<FONT size=-2>"  
@@ -208,31 +208,31 @@ For h=0 to intDC0
    Else  
   
 '************************************************************************  
-'**_ Iterate through Axes(0) Positions writing member captions to table   
-'_*_ header taking into account for the span of columns for duplicate   
-'_*_ member captions  
-'_***********************************************************************  
+'*** Iterate through Axes(0) Positions writing member captions to table   
+'*** header taking into account for the span of columns for duplicate   
+'*** member captions  
+'************************************************************************  
       CaptionCount = 1  
       LastCaption = cst.Axes(0).Positions(0).Members(h).Caption  
       Response.Write "<TH"  
       For t=1 to intPC0  
   
 '************************************************************************  
-'**_ Check to see if LastCaption is equal to current members caption  
-'_*_ If True: Add one to CaptionCount to increase Colspan value  
-'_*_ If False: Write Table header titles with ColSpan values to HTML   
-'_*_ output using current CaptionCount for Colspan and LastCaption for   
-'_*_ header string  
-'_***********************************************************************  
+'*** Check to see if LastCaption is equal to current members caption  
+'*** If True: Add one to CaptionCount to increase Colspan value  
+'*** If False: Write Table header titles with ColSpan values to HTML   
+'*** output using current CaptionCount for Colspan and LastCaption for   
+'*** header string  
+'************************************************************************  
          If LastCaption = _  
             cst.Axes(0).Positions(t).Members(h).Caption then  
             CaptionCount = CaptionCount+1  
   
 '************************************************************************  
-'**_ Check if at last position  
-'_*_ If True: Write HTML to finish table row using current  
-'_*_ CaptionCount and LastCaption  
-'_***********************************************************************  
+'*** Check if at last position  
+'*** If True: Write HTML to finish table row using current  
+'*** CaptionCount and LastCaption  
+'************************************************************************  
             If t = intPC0 then  
                Response.Write " colspan=" & CaptionCount & _  
                   "><FONT size=-2>" & LastCaption & "</FONT></TH>"  
@@ -250,16 +250,16 @@ For h=0 to intDC0
       Next  
   
 '************************************************************************  
-'**_ Iterate through Axes(1) Positions first writing member captions   
-'_*_ to table row headers then writing cell set data to table structure  
-'_***********************************************************************  
+'*** Iterate through Axes(1) Positions first writing member captions   
+'*** to table row headers then writing cell set data to table structure  
+'************************************************************************  
       Dim aryRows()  
       Dim intArray,Marker  
       intArray=0  
   
 '************************************************************************  
-'**_ Set value of Array for row header formatting  
-'_***********************************************************************  
+'*** Set value of Array for row header formatting  
+'************************************************************************  
       For a=1 To intDC1  
          intArray = intArray+(intPC1+1)  
       Next  
@@ -268,9 +268,9 @@ For h=0 to intDC0
       Marker=0  
   
 '************************************************************************  
-'**_ Use Array values for row header formatting to provide  
-'_*_ spaces under beginning row header titles  
-'_***********************************************************************  
+'*** Use Array values for row header formatting to provide  
+'*** spaces under beginning row header titles  
+'************************************************************************  
       For j = 0 To intPC1  
          Response.Write "<TR>"  
          For h=0 to intDC1  
@@ -309,8 +309,8 @@ For h=0 to intDC0
          Next  
   
 '************************************************************************  
-'**_ Alternates Cell background color  
-'_***********************************************************************  
+'*** Alternates Cell background color  
+'************************************************************************  
          If (j+1) Mod 2 = 0 Then  
             csw = "#cccccc"  
          Else  
@@ -323,8 +323,8 @@ For h=0 to intDC0
             Response.Write "<FONT size=-2>"  
   
 '************************************************************************  
-'**_ FormattedValue property pulls data  
-'_***********************************************************************  
+'*** FormattedValue property pulls data  
+'************************************************************************  
             Response.Write cst(k, j).FormattedValue  
             Response.Write "</FONT>"  
             Response.Write "</TD>"  

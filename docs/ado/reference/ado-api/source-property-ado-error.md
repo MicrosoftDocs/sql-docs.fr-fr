@@ -18,17 +18,17 @@ helpviewer_keywords:
 ms.assetid: 4044ba15-f013-4c4c-9fe1-b4410fe9a778
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 360457f3056ee27e213ba60adcef776a3c0aee02
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b468c7b99d69e9da026a462b0c33084a4880eea3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166514"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051410"
 ---
 # <a name="source-property-ado-error"></a>Source, propriété (objet Error ADO)
 Indique le nom de l’objet ou de l’application qui a généré à l’origine une erreur.  
   
-## <a name="return-value"></a>Valeur renvoyée  
+## <a name="return-value"></a>Valeur de retour  
  Retourne une valeur de **chaîne** qui indique le nom d’un objet ou d’une application.  
   
 ## <a name="remarks"></a>Notes  
@@ -39,7 +39,7 @@ Indique le nom de l’objet ou de l’application qui a généré à l’origine
  La propriété **source** est en lecture seule pour les objets d' **erreur** .  
   
 ## <a name="applies-to"></a>S'applique à  
- [Error, objet](./error-object.md)  
+ [Objet Error](./error-object.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Description, HelpContext, HelpFile, NativeError, Number, source et SQLState, exemples de propriétés (VB)](./description-helpcontext-helpfile-nativeerror-number-source-example-vb.md)   

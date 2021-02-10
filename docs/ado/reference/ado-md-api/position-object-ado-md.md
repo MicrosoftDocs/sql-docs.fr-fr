@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 91eab784-3ce9-41d6-a840-9b0939ca0608
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6364517c41ff08417a86bcdc6fd5b3f7d0dd3c2b
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 44c63a6eda1c98b76408a1f62a6aa3094aa4764e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164436"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050912"
 ---
 # <a name="position-object-ado-md"></a>Position, objet (ADO MD)
 Représente un ensemble d’un ou plusieurs membres de dimensions différentes qui définissent un point le long d’un axe.  

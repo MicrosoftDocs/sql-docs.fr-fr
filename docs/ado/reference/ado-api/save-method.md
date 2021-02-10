@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: ed3d9678-5c28-4e61-8bb3-7dfb66d99cf5
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 54e75b3ed86a1522c7334f6948b2a5a105971c9f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: a15cb79b3dc6a00e8096cec5289a5c8ce5304938
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166598"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051511"
 ---
 # <a name="save-method"></a>Save, méthode
 Enregistre le [Recordset](./recordset-object-ado.md) dans un objet de fichier ou de [flux](./stream-object-ado.md) .  
@@ -36,10 +36,10 @@ recordset.Save Destination, PersistFormat
   
 #### <a name="parameters"></a>Paramètres  
  *Destination*  
- Facultatif. **Variant** qui représente le nom de chemin d’accès complet du fichier dans lequel le **Recordset** doit être enregistré, ou une référence à un objet de **flux** .  
+ facultatif. **Variant** qui représente le nom de chemin d’accès complet du fichier dans lequel le **Recordset** doit être enregistré, ou une référence à un objet de **flux** .  
   
  *PersistFormat*  
- Facultatif. Valeur [PersistFormatEnum](./persistformatenum.md) qui spécifie le format dans lequel l' **objet Recordset** doit être enregistré (XML ou ADTG). La valeur par défaut est **adPersistADTG**.  
+ facultatif. Valeur [PersistFormatEnum](./persistformatenum.md) qui spécifie le format dans lequel l' **objet Recordset** doit être enregistré (XML ou ADTG). La valeur par défaut est **adPersistADTG**.  
   
 ## <a name="remarks"></a>Notes  
  La méthode **Save Method** ne peut être appelée que sur un **Recordset** ouvert. Utilisez la méthode [Open (ADO Recordset)](./open-method-ado-recordset.md) pour restaurer ultérieurement le **Recordset** de la *destination*.  

@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 5b9e7545-cf30-464d-80ef-5c99c8306bab
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2a11dfa5b6fff9112098443d73ef54a742db06f6
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 1cd3a431884f314c814b2d7060ae506cb6c18d71
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164431"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100050900"
 ---
 # <a name="positions-collection-ado-md"></a>Positions, collection (ADO MD)
 Contient les objets [position](./position-object-ado-md.md) qui définissent un point sur un axe.  

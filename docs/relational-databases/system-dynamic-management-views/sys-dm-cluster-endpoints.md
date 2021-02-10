@@ -20,12 +20,12 @@ ms.assetid: ''
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-2017'
-ms.openlocfilehash: 1d5d9cc9219422fd7559d73417354435eb20d488
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0a1b3dd8242301e080581272a569bf55c06427c2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99200352"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052150"
 ---
 # <a name="sysdm_cluster_endpoints-transact-sql"></a>sys.dm_cluster_endpoints (Transact-SQL)
 [!INCLUDE[sqlserver2019](../../includes/applies-to-version/sqlserver2019.md)]
