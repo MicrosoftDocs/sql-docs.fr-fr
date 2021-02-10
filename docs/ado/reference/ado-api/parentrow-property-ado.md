@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 5ea8029b-eda4-490b-ae84-2ad036fb582f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 115689c06ce4bdb387b126ecc6087e63c705dcdc
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 1dbe6152997431b95cfde76d8d45391c8465394e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170591"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041069"
 ---
 # <a name="parentrow-property-ado"></a>ParentRow, propriété (ADO)
 Définit le conteneur d’un objet OLE DB **Row** sur un objet **ADORecordConstruction** , de sorte que le parent de la ligne soit converti en objet ADO **Record** .  

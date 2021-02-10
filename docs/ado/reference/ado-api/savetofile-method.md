@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 8a8594f2-422b-4d2e-94f8-7fe337445900
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e52fe6b3b26a8bc4832952940c7e84c736f2da5e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: febf5627d46bbb464ff01c41a0eee23b2242c801
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166591"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040699"
 ---
 # <a name="savetofile-method"></a>SaveToFile, méthode
 Enregistre le contenu binaire d’un [flux](./stream-object-ado.md) dans un fichier.  

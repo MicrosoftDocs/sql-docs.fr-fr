@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 11ca8825-765e-4bb4-a6ce-3f6564ad8755
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f20fb9b9f4050ebb0f382b2e36e2f7d5b6231fa9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e8e595f471de1219f0500f51160422ed91922e3c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170553"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040999"
 ---
 # <a name="prepared-property-ado"></a>Prepared, propriété (ADO)
 Indique s’il faut enregistrer une version compilée d’une [commande](./command-object-ado.md) avant l’exécution.  

@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 9d068fed-39bf-4842-afc3-686a2af2145d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a836ca9dd23e6bb43d6bcf3a2707c4b523d530f4
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 725f900e5de8bde82b2ee2e954783536d3100e5a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166621"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040729"
 ---
 # <a name="rowposition-property-ado"></a>RowPosition, propriété (ADO)
 Obtient ou définit un objet **RowPosition** OLE DB à partir de/sur un objet **ADORecordsetConstruction** . Quand vous utilisez **put_RowPosition** pour définir l’objet **RowPosition** , l’objet **Recordset** résultant utilise l’objet **RowPosition** pour déterminer la ligne actuelle.  

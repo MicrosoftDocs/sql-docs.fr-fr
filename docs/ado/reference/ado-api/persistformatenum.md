@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ebe1a2ab-e9f1-43a2-8f94-b190c9613d70
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 25214603d009cfa8203aabe482ffdd7b511dd169
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0d5968d9193f8e083982703664abf29ade2c864c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170578"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041019"
 ---
 # <a name="persistformatenum"></a>PersistFormatEnum
 Spécifie le format d’enregistrement d’un [jeu d’enregistrements](./recordset-object-ado.md).  

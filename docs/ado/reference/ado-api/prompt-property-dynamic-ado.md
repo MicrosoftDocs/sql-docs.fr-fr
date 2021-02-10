@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: c4f001b5-8d16-4d39-a42e-c0e2faaaceaf
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b5b7e99548e156126455a66be7fdf73a9c00ebbc
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ab4d7c462e0e205050eed2b873a0071ac82ea936
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166830"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040969"
 ---
 # <a name="prompt-property-dynamic-ado"></a>Prompt, propriété dynamique (ADO)
 Spécifie si le fournisseur de OLE DB doit inviter l’utilisateur à fournir des informations d’initialisation.  

@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 911aa1dd-2786-4f34-992c-bb2fbdabcbdf
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b9695c1a7d2c24ca01b06c46be78afbf7a5c4029
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 9f4e5e04f47121c341ac88a3b98199b60f5956d3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167089"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041689"
 ---
 # <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vbscript"></a>MoveFirst, MoveLast, MoveNext et MovePrevious, exemple de méthode (VBScript)
 Cet exemple utilise les méthodes [MoveFirst](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md)et [MovePrevious](./movefirst-movelast-movenext-and-moveprevious-methods-ado.md) pour déplacer le pointeur d’enregistrement d’un [jeu d’enregistrements](./recordset-object-ado.md) en fonction de la commande fournie.  

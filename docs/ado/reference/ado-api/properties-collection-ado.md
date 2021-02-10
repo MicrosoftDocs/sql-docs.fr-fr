@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 1d539aa8-ce0d-4418-ab03-8d0a3c1e9d82
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 56e758cf68a87db330d459b638548031122498bd
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8f3eabe8859595e648c7ab3d1ca2511abaa59b96
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170549"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040949"
 ---
 # <a name="properties-collection-ado"></a>Properties, collection (ADO)
 Contient tous les objets de [propriété](./property-object-ado.md) pour une instance spécifique d’un objet.  

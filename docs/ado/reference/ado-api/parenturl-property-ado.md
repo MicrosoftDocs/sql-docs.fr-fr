@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: 65120ce6-3900-4cd4-b322-3b9816d74737
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 89b3caf606d47c2be1add80a20830570be3f7fd2
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: fe54516f1721cdc24da9fbdeaf72688a6c0960a2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166872"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041039"
 ---
 # <a name="parenturl-property-ado"></a>ParentURL, propriété (ADO)
 Indique une chaîne d’URL absolue qui pointe vers l' [enregistrement](./record-object-ado.md) parent de l’objet **enregistrement** actif.  
   
-## <a name="return-value"></a>Valeur renvoyée  
+## <a name="return-value"></a>Valeur de retour  
  Retourne une valeur de **chaîne** qui indique l’URL de l' **enregistrement** parent.  
   
 ## <a name="remarks"></a>Notes  

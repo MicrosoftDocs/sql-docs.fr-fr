@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 652194af-cfa4-4aa0-a6d6-fa409bbc3f98
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 183d57a53063a4fc72d5218a2fd061a9913ce5c5
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 281c417f31ce5602299a2abb3643dda088c382e7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170664"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041279"
 ---
 # <a name="optimize-property-example-vb"></a>Optimize, exemple de propriété (VB)
-Cet exemple illustre la propriété d' **optimisation** dynamique de l’objet [Field](./field-object.md) . Le **_champ zip_*_ de la table _*_Authors_*_ de la**base de données _ pubs _ n’est pas indexé. La définition de la propriété [optimize](./optimize-property-dynamic-ado.md) sur _* true** dans le champ **_zip_* _ autorise ADO à générer un index qui améliore les performances de la méthode [Find](./find-method-ado.md) .  
+Cet exemple illustre la propriété d' **optimisation** dynamique de l’objet [Field](./field-object.md) . Le **_champ zip_*_ de la table _*_Authors_*_ de la**base de données _ pubs _ n’est pas indexé. La définition de la propriété [optimize](./optimize-property-dynamic-ado.md) sur _* true** dans le champ **_zip_** autorise ADO à créer un index qui améliore les performances de la méthode [Find](./find-method-ado.md) .  
   
 ```  
 'BeginOptimizeVB  
@@ -49,7 +49,7 @@ Public Sub Main()
      ' open recordset client-side to enable index creation.  
     Set rstAuthors = New ADODB.Recordset  
     rstAuthors.CursorLocation = adUseClient  
-    strSQLAuthors = "SELECT _ FROM Authors"  
+    strSQLAuthors = "SELECT * FROM Authors"  
     rstAuthors.Open strSQLAuthors, Cnxn, adOpenStatic, adLockReadOnly, adCmdText  
      ' Create the index.  
     rstAuthors!zip.Properties("Optimize") = True  

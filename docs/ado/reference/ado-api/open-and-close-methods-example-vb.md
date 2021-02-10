@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 1311d561-0e86-40f5-8cbc-ad8f13e626d1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9b5b045800bd6998eea46ac3fb75ff7999f0b431
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b2c1798c1574aa671677ffbf944db595a48c16cf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167003"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041449"
 ---
 # <a name="open-and-close-methods-example-vb"></a>Open et Close, exemple de méthodes (VB)
 Cet exemple utilise les méthodes **Open** et [Close](./close-method-ado.md) sur les objets [Recordset](./recordset-object-ado.md) et [Connection](./connection-object-ado.md) qui ont été ouverts.  

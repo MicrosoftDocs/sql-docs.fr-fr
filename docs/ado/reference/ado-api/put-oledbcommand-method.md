@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: ca6a5804-bf5c-4afc-99db-22904bc0b33d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c124bfa83dc9c8546d968b7292850086fa393a25
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f3407244fa0042bd9c248998e7684d729e46665d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166775"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040809"
 ---
 # <a name="put_oledbcommand-method"></a>put_OLEDBCommand, méthode
 Cette méthode n’effectue aucune opération et retourne toujours S_OK.  

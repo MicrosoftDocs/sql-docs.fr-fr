@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f697ac1a-f125-42b5-bbf6-762a7fa30ae3
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8dbdff171e7c1052e84e080aa5a11d37ef9055e6
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c439bde9ef6ee225354a1a3064ac730b4768c526
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170536"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040979"
 ---
 # <a name="prepared-property-example-vc"></a>Prepared, exemple de propriété (VC++)
 Cet exemple illustre la propriété [préparée](./prepared-property-ado.md) en ouvrant deux objets de [commande](./command-object-ado.md) : l’un préparé et l’autre non préparé.  

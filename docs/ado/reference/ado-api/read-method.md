@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 838502de-80f1-4eeb-8838-dd3d9403e567
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0adf12bc63745f739aaf8b71a92c660c1c1ad2fd
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 030627c58eb33d064b50c4e9347a06330f01cf9a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170492"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040789"
 ---
 # <a name="read-method"></a>Read, méthode
 Lit un nombre spécifié d’octets à partir d’un objet de [flux](./stream-object-ado.md) binaire.  
@@ -35,9 +35,9 @@ Variant = Stream.Read ( NumBytes)
   
 #### <a name="parameters"></a>Paramètres  
  *NumBytes*  
- Facultatif. Valeur de **type long** qui spécifie le nombre d’octets à lire dans le fichier ou la valeur [StreamReadEnum](./streamreadenum.md) **adReadAll**, qui est la valeur par défaut.  
+ facultatif. Valeur de **type long** qui spécifie le nombre d’octets à lire dans le fichier ou la valeur [StreamReadEnum](./streamreadenum.md) **adReadAll**, qui est la valeur par défaut.  
   
-## <a name="return-value"></a>Valeur renvoyée  
+## <a name="return-value"></a>Valeur de retour  
  La méthode **Read** lit un nombre spécifié d’octets ou le flux entier à partir d’un objet de **flux** et retourne les données résultantes sous la forme d’un **Variant**.  
   
 ## <a name="remarks"></a>Notes  

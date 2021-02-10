@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 129293d2-19d3-4940-bf64-483ee72fb4a1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a7974464ad6302e7ce59b1ce458a46c8b43bcf45
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 9819ce55d8898fb55e0cc98fb9dab10f339cfb17
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170289"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041699"
 ---
 # <a name="seek-method"></a>Seek, méthode
 Recherche l’index d’un [jeu d’enregistrements](./recordset-object-ado.md) pour localiser rapidement la ligne qui correspond aux valeurs spécifiées et modifie la position de ligne actuelle en cette ligne.  

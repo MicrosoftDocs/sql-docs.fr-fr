@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 42409387-026c-435f-a9b1-bf4167095875
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9ce2c73ec00431f649d24a9effda2a7e9ecb6cfd
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 7541454e1a7545002d48201a50452bfd11931a27
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170776"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041599"
 ---
 # <a name="namedparameters-property-ado"></a>NamedParameters, propriété (ADO)
 Indique si les noms de paramètres doivent être passés au fournisseur.  

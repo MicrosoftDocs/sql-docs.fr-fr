@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e010e794-7f0f-4026-8b5b-37328e437d63
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d3922289548cbc3cb2e694399ac9f09e13d73985
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 6e9d4f0770cdc15ac44882fa808f60f1a85f071c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170619"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041149"
 ---
 # <a name="parameter-object"></a>Objet Parameter
 Représente un paramètre ou un argument associé à un objet de [commande](./command-object-ado.md) basé sur une requête paramétrable ou une procédure stockée.  

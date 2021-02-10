@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: cfd0e29c-8310-44ab-85c3-5761184b865d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 384c1e96eb735d8cf9569039f45c2d420679ce0e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 150951c91a58e966bbcd02e8a11a5a495026a129
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99167065"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041619"
 ---
 # <a name="name-property-ado"></a>Name, propriété (ADO)
 Indique le nom d’un objet.  

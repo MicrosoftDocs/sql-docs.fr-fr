@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f53c2ce4-1021-4a45-92b8-775e8bebad99
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8a6556944a56cd695fe4b336f7080c9ea79f0f4c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 9c471bf1a5f3a96efd75c62bab2175c83f5ca2b8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170791"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041659"
 ---
 # <a name="moverecordoptionsenum"></a>MoveRecordOptionsEnum
 Spécifie le comportement de la méthode [MoveRecord](./moverecord-method-ado.md) de l’objet [Record](./record-object-ado.md) .  

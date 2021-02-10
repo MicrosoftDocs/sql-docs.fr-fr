@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 707c18ca-6a56-4970-bbd6-ae1fb86a0b8a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0b9685f0ca0b5e9bdd1b484c7d424308619307d9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: a68804b31f36c108096b5f0bb6b3b1d20b4109cd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170281"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040569"
 ---
 # <a name="seteos-method"></a>SetEOS, méthode
 Définit la position qui correspond à la fin du flux.  

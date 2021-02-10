@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6b43cf70-9695-47b0-9e68-f36898859b6b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ced00c5855fd961d7db67aacf16ddd86a46acac9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b3c958930b82a15f9dc9cbfd14be52a82f90c86e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166894"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041139"
 ---
 # <a name="parameter-visual-c-syntax-index-with-import"></a>Parameter (Visual C++ index de syntaxe avec #import)
 ## <a name="methods"></a>Méthodes  

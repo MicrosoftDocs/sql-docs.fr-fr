@@ -16,17 +16,17 @@ helpviewer_keywords:
 ms.assetid: b601b56c-0ac4-44ee-bc91-c3d2d104f00a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 07eb8ef6a51b67b70b1a0bd4b8fecba116df58a4
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 828a0f9d872ab1040700941d85980e0b5deecf98
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166928"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041229"
 ---
 # <a name="pagecount-property-ado"></a>PageCount, propriété (ADO)
 Indique le nombre de pages de données que contient l’objet [Recordset](./recordset-object-ado.md) .  
   
-## <a name="return-value"></a>Valeur renvoyée  
+## <a name="return-value"></a>Valeur de retour  
  Retourne une valeur de **type long** qui indique le nombre de pages dans le **Recordset**.  
   
 ## <a name="remarks"></a>Notes  

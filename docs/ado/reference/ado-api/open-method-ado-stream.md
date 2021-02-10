@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: d26f48fb-904e-4932-a245-3b4332ca1600
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9151af754b245acc04dae70c120f01e37ac587cf
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ba1b13e92b4c26be0c117693b807371e66e651ce
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166974"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041359"
 ---
 # <a name="open-method-ado-stream"></a>Open, méthode (Stream ADO)
 Ouvre un objet de [flux](./stream-object-ado.md) pour manipuler des flux de données binaires ou de texte.  
@@ -36,19 +36,19 @@ Stream.Open Source, Mode , OpenOptions, UserName, Password
   
 #### <a name="parameters"></a>Paramètres  
  *Source*  
- Facultatif. Valeur de **type Variant** qui spécifie la source de données pour le **flux**. La *source* peut contenir une chaîne d’URL absolue qui pointe vers un nœud existant dans une arborescence connue, telle qu’un message électronique ou un système de fichiers. Une URL doit être spécifiée à l’aide du mot clé URL (« URL =*Scheme*://*Server* / *Folder*»). Sinon, la *source* peut contenir une référence à un objet [enregistrement](./record-object-ado.md) déjà ouvert, ce qui ouvre le flux par défaut associé à l' **enregistrement**. Si la *source* n’est pas spécifiée, un **flux** est instancié et ouvert, mais il n’est associé à aucune source sous-jacente par défaut. Pour plus d’informations sur les schémas d’URL et leurs fournisseurs associés, consultez [URL absolues et relatives](../../guide/data/absolute-and-relative-urls.md).  
+ facultatif. Valeur de **type Variant** qui spécifie la source de données pour le **flux**. La *source* peut contenir une chaîne d’URL absolue qui pointe vers un nœud existant dans une arborescence connue, telle qu’un message électronique ou un système de fichiers. Une URL doit être spécifiée à l’aide du mot clé URL (« URL =*Scheme*://*Server* / *Folder*»). Sinon, la *source* peut contenir une référence à un objet [enregistrement](./record-object-ado.md) déjà ouvert, ce qui ouvre le flux par défaut associé à l' **enregistrement**. Si la *source* n’est pas spécifiée, un **flux** est instancié et ouvert, mais il n’est associé à aucune source sous-jacente par défaut. Pour plus d’informations sur les schémas d’URL et leurs fournisseurs associés, consultez [URL absolues et relatives](../../guide/data/absolute-and-relative-urls.md).  
   
  *Mode*  
- Facultatif. Valeur de [ConnectModeEnum](./connectmodeenum.md) qui spécifie le mode d’accès pour le **flux** résultant (par exemple, en lecture/écriture ou en lecture seule). La valeur par défaut est **adModeUnknown**. Pour plus d’informations sur les modes d’accès, consultez la propriété [mode](./mode-property-ado.md) . Si le *mode* n’est pas spécifié, il est hérité par l’objet source. Par exemple, si l' **enregistrement** source est ouvert en mode lecture seule, le **flux** est également ouvert en mode lecture seule par défaut.  
+ facultatif. Valeur de [ConnectModeEnum](./connectmodeenum.md) qui spécifie le mode d’accès pour le **flux** résultant (par exemple, en lecture/écriture ou en lecture seule). La valeur par défaut est **adModeUnknown**. Pour plus d’informations sur les modes d’accès, consultez la propriété [mode](./mode-property-ado.md) . Si le *mode* n’est pas spécifié, il est hérité par l’objet source. Par exemple, si l' **enregistrement** source est ouvert en mode lecture seule, le **flux** est également ouvert en mode lecture seule par défaut.  
   
  *OpenOptions*  
- Facultatif. Valeur [StreamOpenOptionsEnum](./streamopenoptionsenum.md) . La valeur par défaut est **adOpenStreamUnspecified**.  
+ facultatif. Valeur [StreamOpenOptionsEnum](./streamopenoptionsenum.md) . La valeur par défaut est **adOpenStreamUnspecified**.  
   
  *UserName*  
- Facultatif. Valeur de **chaîne** qui contient l’identification de l’utilisateur qui, si nécessaire, accède à l’objet de **flux** .  
+ facultatif. Valeur de **chaîne** qui contient l’identification de l’utilisateur qui, si nécessaire, accède à l’objet de **flux** .  
   
  *Mot de passe*  
- Facultatif. Valeur de **chaîne** qui contient le mot de passe qui, le cas échéant, accède à l’objet de **flux** .  
+ facultatif. Valeur de **chaîne** qui contient le mot de passe qui, le cas échéant, accède à l’objet de **flux** .  
   
 ## <a name="remarks"></a>Notes  
  Lorsqu’un objet **Record** est transmis comme paramètre source, les paramètres *userid* et *Password* ne sont pas utilisés, car l’accès à l’objet **Record** est déjà disponible. De même, le [mode](./mode-property-ado.md) de l’objet **Record** est transféré à l’objet **Stream** . Lorsque *source* n’est pas spécifié, le **flux** ouvert ne contient pas de données et sa [taille](./size-property-ado-stream.md) est égale à zéro (0). Pour éviter de perdre les données écrites dans ce **flux** lorsque le **flux** est fermé, enregistrez le **flux** avec les méthodes [CopyTo](./copyto-method-ado.md) ou [SaveToFile](./savetofile-method.md) , ou enregistrez-le dans un autre emplacement de mémoire.  

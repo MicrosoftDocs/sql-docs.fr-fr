@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: be5a409e-cf87-4859-9ea5-713401755a77
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e0d88fba7389c40442fccf006afc03020004d928
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b9d82bf7985afebbcbd0a07baeae76cb80af6027
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166760"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040769"
 ---
 # <a name="readtext-method"></a>ReadText, méthode
 Lit le nombre spécifié de caractères à partir d’un objet de [flux](./stream-object-ado.md) de texte.  
@@ -36,9 +36,9 @@ String = Stream.ReadText ( NumChars)
   
 #### <a name="parameters"></a>Paramètres  
  *NumChars*  
- Facultatif. Valeur de **type long** qui spécifie le nombre de caractères à lire à partir du fichier ou une valeur [StreamReadEnum](./streamreadenum.md) . La valeur par défaut est **adReadAll**.  
+ facultatif. Valeur de **type long** qui spécifie le nombre de caractères à lire à partir du fichier ou une valeur [StreamReadEnum](./streamreadenum.md) . La valeur par défaut est **adReadAll**.  
   
-## <a name="return-value"></a>Valeur renvoyée  
+## <a name="return-value"></a>Valeur de retour  
  La méthode **READTEXT** lit un nombre spécifié de caractères, une ligne entière ou le flux entier à partir d’un objet de **flux** et retourne la chaîne résultante.  
   
 ## <a name="remarks"></a>Notes  

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d9868c99-425a-4b10-af67-1929ed513fda
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 723604ab50d684b7d99536cb59880d86bf4f9d2b
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 13071d81285ec75afb0713e1d24a452778e5bebb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166785"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040839"
 ---
 # <a name="provider-and-defaultdatabase-properties-example-vc"></a>Provider et DefaultDatabase, exemple de propriétés (VC++)
 Cet exemple illustre la propriété de [fournisseur](./provider-property-ado.md) en ouvrant trois objets de [connexion](./connection-object-ado.md) à l’aide de différents fournisseurs. Elle utilise également la propriété [DefaultDatabase](./defaultdatabase-property.md) pour définir la base de données par défaut pour le fournisseur Microsoft ODBC.  

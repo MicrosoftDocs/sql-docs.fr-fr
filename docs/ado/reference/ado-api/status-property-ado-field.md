@@ -18,17 +18,17 @@ helpviewer_keywords:
 ms.assetid: 8cd1f7f4-0a3a-4f07-b8ba-6582e70140ad
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b0ae4ed8f72dca085edd0c82220296d65795d6ac
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d8ec88ad85b4f0432ce4740e8f54647640f2e7bd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166472"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040609"
 ---
 # <a name="status-property-ado-field"></a>Status, propriété (objet Field ADO)
 Indique l’état d’un objet de [champ](./field-object.md) .  
   
-## <a name="return-value"></a>Valeur renvoyée  
+## <a name="return-value"></a>Valeur de retour  
  Retourne une valeur [FieldStatusEnum](./fieldstatusenum.md) . La valeur par défaut est **adFieldOK**.  
   
 ## <a name="remarks"></a>Notes  

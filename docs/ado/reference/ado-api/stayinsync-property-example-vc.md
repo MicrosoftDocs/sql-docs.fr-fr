@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 3a5db5f0-094b-46e1-939b-d9fa9417a406
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d15933fec72109c58206c43dfc4b57db1ac29288
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: cc3a77c9a4381a5493ea7219715ebad2aedc56f7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166433"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040379"
 ---
 # <a name="stayinsync-property-example-vc"></a>StayInSync, exemple de propriété (VC++)
 Cet exemple montre comment la propriété [StayInSync](./stayinsync-property.md) facilite l’accès aux lignes d’un [jeu d’enregistrements](./recordset-object-ado.md)hiérarchique.  

@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 1fa38e78-6b5b-414d-ba0a-3dd26b29b766
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4e8eba98d2489dab9bd41019ddc1f32da3711ad1
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0060418a7b2cce6f7d82ecfe1095e35102aadbff
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166848"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041009"
 ---
 # <a name="precision-property-ado"></a>Precision, propriété (ADO)
 Indique le degré de précision des valeurs numériques dans un objet de [paramètre](./parameter-object.md) ou pour les objets de [champ](./field-object.md) numérique.  

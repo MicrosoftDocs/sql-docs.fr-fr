@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 497cae10-3913-422a-9753-dcbb0a639b1b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4cd94745a6ec2d4f34245b53f509752c13688d45
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 93d34581e7ea19ad584161e12375101a06256cbd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170597"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041109"
 ---
 # <a name="parameters-collection-ado"></a>Parameters, collection (ADO)
 Contient tous les objets [Parameter](./parameter-object.md) d’un objet [Command](./command-object-ado.md) .  

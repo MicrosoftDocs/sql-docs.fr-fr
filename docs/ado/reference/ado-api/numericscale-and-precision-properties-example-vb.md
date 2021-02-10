@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 9c1e2322-c225-49d1-a120-a343f23cea73
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9e8e0d8013df4ec6d58aeeb059baa655e1980005
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 897fa99e44e6d5c9f31250be0157bacaa92c211a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170747"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041520"
 ---
 # <a name="numericscale-and-precision-properties-example-vb"></a>NumericScale et Precision, exemple de propriétés (VB)
 Cet exemple utilise les propriétés [NumericScale](./numericscale-property-ado.md) et [PRECISION](./precision-property-ado.md) pour afficher l’échelle numérique et la précision des champs dans la table ***discounts** _ de la base de données _ *_pubs_**.  

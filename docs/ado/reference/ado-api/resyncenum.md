@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d3df2c90-e570-4c40-a79a-25b3448a009c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c20965a348227583580bb75a807e792f74a9e967
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: db02c56f55b577c9f74a42f43abc9a1957311c0d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166624"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040749"
 ---
 # <a name="resyncenum"></a>ResyncEnum
 Spécifie si les valeurs sous-jacentes sont remplacées par un appel à [Resync](./resync-method.md).  

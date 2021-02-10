@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 63b3f9a3-1c36-4d06-a6b0-49b5eb5adf06
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 211152737a8b95812f9808074c1e2316824648d1
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 064c6ee47359a3049501f3354194fbc022a74da2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166879"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041099"
 ---
 # <a name="parameters-collection-properties-methods-and-events"></a>Propriétés, méthodes et événements de la collection Parameters
 ## <a name="properties"></a>Propriétés  

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e69af0a5-3405-4b72-9c6e-6b188ff746fd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 22760113f966379d8e1705420853705114d9c362
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 6c563c2d548d56b5b87273a4b3e5c05ef2cdff6d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170569"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041029"
 ---
 # <a name="positionenum"></a>PositionEnum
 Spécifie la position actuelle du pointeur d’enregistrement dans un [Recordset](./recordset-object-ado.md).  

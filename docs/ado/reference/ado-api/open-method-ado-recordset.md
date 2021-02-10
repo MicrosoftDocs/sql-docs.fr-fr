@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 3236749c-4b71-4235-89e2-ccdfaaa9319d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8a6c7b68f817bd3e4937833a4385819bd8de8aac
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0f9cf81ef9845875db984e4cba0fcd7bc23e380c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170701"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041399"
 ---
 # <a name="open-method-ado-recordset"></a>Open, méthode (objet Recordset ADO)
 Ouvre un curseur sur un objet [Recordset](./recordset-object-ado.md) .  
@@ -36,19 +36,19 @@ recordset.Open Source, ActiveConnection, CursorType, LockType, Options
   
 #### <a name="parameters"></a>Paramètres  
  *Source*  
- Facultatif. **Variante** qui prend la valeur d’un objet [Command](./command-object-ado.md) valide, d’une instruction SQL, d’un nom de table, d’un appel de procédure stockée, d’une URL ou du nom d’un fichier ou d’un objet de [flux](./stream-object-ado.md) contenant un [Recordset](./recordset-object-ado.md)stocké de façon permanente.  
+ facultatif. **Variante** qui prend la valeur d’un objet [Command](./command-object-ado.md) valide, d’une instruction SQL, d’un nom de table, d’un appel de procédure stockée, d’une URL ou du nom d’un fichier ou d’un objet de [flux](./stream-object-ado.md) contenant un [Recordset](./recordset-object-ado.md)stocké de façon permanente.  
   
  *ActiveConnection*  
- Facultatif. Valeur **Variant** qui prend la valeur d’un nom de variable objet de [connexion](./connection-object-ado.md) valide, ou **chaîne** qui contient les paramètres [ConnectionString](./connectionstring-property-ado.md) .  
+ facultatif. Valeur **Variant** qui prend la valeur d’un nom de variable objet de [connexion](./connection-object-ado.md) valide, ou **chaîne** qui contient les paramètres [ConnectionString](./connectionstring-property-ado.md) .  
   
  *CursorType*  
- Facultatif. Valeur [CursorTypeEnum](./cursortypeenum.md) qui détermine le type de curseur que le fournisseur doit utiliser lors de l’ouverture du **Recordset**. La valeur par défaut est **adOpenForwardOnly**.  
+ facultatif. Valeur [CursorTypeEnum](./cursortypeenum.md) qui détermine le type de curseur que le fournisseur doit utiliser lors de l’ouverture du **Recordset**. La valeur par défaut est **adOpenForwardOnly**.  
   
  *Verrou*  
- Facultatif. Valeur [LockTypeEnum](./locktypeenum.md) qui détermine le type de verrouillage (accès concurrentiel) que le fournisseur doit utiliser lors de l’ouverture du **Recordset**. La valeur par défaut est **adLockReadOnly**.  
+ facultatif. Valeur [LockTypeEnum](./locktypeenum.md) qui détermine le type de verrouillage (accès concurrentiel) que le fournisseur doit utiliser lors de l’ouverture du **Recordset**. La valeur par défaut est **adLockReadOnly**.  
   
  *Options*  
- Facultatif. Valeur de **type long** qui indique comment le fournisseur doit évaluer l’argument *source* s’il représente autre chose qu’un objet **Command** ou si le **jeu d’enregistrements** doit être restauré à partir d’un fichier dans lequel il a été précédemment enregistré. Il peut s’agir d’une ou plusieurs valeurs [CommandTypeEnum](./commandtypeenum.md) ou [ExecuteOptionEnum](./executeoptionenum.md) , qui peuvent être combinées avec un opérateur or au niveau du bit.  
+ facultatif. Valeur de **type long** qui indique comment le fournisseur doit évaluer l’argument *source* s’il représente autre chose qu’un objet **Command** ou si le **jeu d’enregistrements** doit être restauré à partir d’un fichier dans lequel il a été précédemment enregistré. Il peut s’agir d’une ou plusieurs valeurs [CommandTypeEnum](./commandtypeenum.md) ou [ExecuteOptionEnum](./executeoptionenum.md) , qui peuvent être combinées avec un opérateur or au niveau du bit.  
   
 > [!NOTE]
 >  Si vous ouvrez un **jeu d’enregistrements** à partir d’un **flux** contenant un **Recordset** persistant, l’utilisation d’une valeur [ExecuteOptionEnum](./executeoptionenum.md) de **adAsyncFetchNonBlocking** n’aura aucun effet. l’extraction est synchrone et bloque.  

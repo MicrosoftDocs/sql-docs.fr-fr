@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 6f3da460-0f49-41e0-999d-a754ec1d887e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 98362a1c4bc122c46b84b5521168979283eb966d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 14e33283ac05de6f8ad1864e87a6c66a5bfbafd8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166966"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041329"
 ---
 # <a name="openschema-method-example-vc"></a>OpenSchema, exemple de méthode (VC++)
-Cet exemple utilise la méthode [OpenSchema](./openschema-method.md) pour afficher le nom et le type de chaque table dans la base de données ***pubs** _.  
+Cet exemple utilise la méthode [OpenSchema](./openschema-method.md) pour afficher le nom et le type de chaque table dans la base de données ***pubs*** .  
   
 ```  
 // OpenSchemaMethodExample.cpp  
@@ -108,7 +108,7 @@ void OpenSchemaX2() {
   
       // Create a safearray which takes four elements,and pass it as   
       // 2nd parameter in OpenSchema method.  
-      SAFEARRAY FAR_ psa = NULL;  
+      SAFEARRAY FAR* psa = NULL;  
       SAFEARRAYBOUND rgsabound;  
       _variant_t  var;  
       _variant_t  Array;  

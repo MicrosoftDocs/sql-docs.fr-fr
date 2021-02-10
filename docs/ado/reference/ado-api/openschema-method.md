@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 850cf3ce-f18f-4e7c-8597-96c1dc504866
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9b5ca92e42a68639f6b9e3044894ec779109fff5
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b764f9a28665d31667e9c502c7ad8bdf0b9bbcad
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170678"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041309"
 ---
 # <a name="openschema-method"></a>OpenSchema, méthode
 Obtient des informations de schéma de base de données à partir du fournisseur.  
@@ -42,7 +42,7 @@ Set recordset = connection.OpenSchema(QueryType, Criteria, SchemaID)
  Toute valeur [SchemaEnum](./schemaenum.md) qui représente le type de requête de schéma à exécuter.  
   
  *Critères*  
- Facultatif. Tableau de contraintes de requête pour chaque option *QueryType* , comme indiqué dans [SchemaEnum](./schemaenum.md).  
+ facultatif. Tableau de contraintes de requête pour chaque option *QueryType* , comme indiqué dans [SchemaEnum](./schemaenum.md).  
   
  *SchemaID*  
  GUID d’une requête de schéma de fournisseur non définie par la spécification OLE DB. Ce paramètre est obligatoire si *QueryType* est défini sur **adSchemaProviderSpecific**; dans le cas contraire, il n’est pas utilisé.  

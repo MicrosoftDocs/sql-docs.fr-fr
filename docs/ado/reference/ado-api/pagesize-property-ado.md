@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e57930a6-46c4-4a17-a3b6-f79e94d5c9c7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0b4e3a85d2c496f88939100a79d464bf1076fd61
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8d37ac91b1899c0eb515d8443cfc5c3e2f9463cb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170627"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100041209"
 ---
 # <a name="pagesize-property-ado"></a>PageSize, propriété (ADO)
 Indique le nombre d’enregistrements constituant une page dans le [jeu d’enregistrements](./recordset-object-ado.md).  

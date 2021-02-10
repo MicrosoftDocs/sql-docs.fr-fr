@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 96a01955-a6b4-4cbf-9c73-52bcd1e9fb25
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2bca96a1f3e1e4f39254335d19853493768fe8c9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 694170521f4fc99d5dd9c99d15f48e7461acde09
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166794"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040859"
 ---
 # <a name="propertyattributesenum"></a>PropertyAttributesEnum
 Spécifie les attributs d’un objet de [propriété](./property-object-ado.md) .  
