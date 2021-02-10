@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 09aa7b0a-69d5-4564-80a7-20ad8189670f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e0cbcc0941c3c2c7158d15bc73f07e4b835db4f3
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 52d997496e03fccc7807c09e392568c3b4a3f4b2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164227"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054144"
 ---
 # <a name="groups-collection-adox"></a>Groups, collection (ADOX)
 Contient tous les objets de [groupe](./group-object-adox.md) stockés d’un catalogue ou d’un utilisateur.  

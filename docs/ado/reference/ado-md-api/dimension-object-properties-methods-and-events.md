@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: e491439f-8eff-4bf6-a808-8dba243af8c3
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: faa1b302c80ba09aba712c3afcecbfe5b57d4fa8
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 907c6676667046ffa14f5039bff1967109eafa24
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169881"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054734"
 ---
 # <a name="dimension-object-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet Dimension
 ## <a name="propertiescollections"></a>Propriétés/collections  

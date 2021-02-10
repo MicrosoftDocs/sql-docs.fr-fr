@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: fed09266-1547-4bda-9088-c254d81cc738
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d7cddcf1c5156f7ffbdc5e8b5de9b51e81dc34ed
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ef5fe0610059d8dff38732d356cbd8b1562ed7d7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172141"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054284"
 ---
 # <a name="datemodified-property-adox"></a>DateModified, propriété (ADOX)
 Indique la date à laquelle l’objet a été modifié pour la dernière fois.  

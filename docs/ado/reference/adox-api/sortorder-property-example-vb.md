@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: d9502254-d89b-4bcb-94f1-6418f89e7f30
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 09ecc9649da8d080ac0fc1dbde4f26cc850907e5
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: dd66a90a039531ec3aeeaa78ed0bea5716f39d0d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164029"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053490"
 ---
 # <a name="sortorder-property-example-vb"></a>SortOrder, exemple de propriété (VB)
 Cet exemple illustre la propriété [SortOrder](./sortorder-property-adox.md) d’une [colonne](./column-object-adox.md) qui a été ajoutée à la collection [Columns](./columns-collection-adox.md) d’un [index](./index-object-adox.md). Le code ajoute un index croissant à la colonne country de la table **Employees** , puis affiche les enregistrements. Ensuite, le code ajoute un index décroissant à la colonne country dans la table **Employees** et affiche à nouveau les enregistrements. La différence entre les index croissant et décroissant est indiquée.  

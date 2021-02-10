@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: b01cbc62-fbd7-4068-b16c-8b0f80a05887
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2596f0ff667a682a16ccf1a9c5678e678e83342e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 6912fe32c7d070b0f58c9c42fdd2217f91a72b39
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99163721"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053060"
 ---
 # <a name="onerror-event-rds"></a>onError, événement (RDS)
 L’événement **OnError** est appelé chaque fois qu’une erreur se produit pendant une opération.  

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 88b6d05c-d4eb-4ab1-bbe2-95d146237f94
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 13d890279c5cbc6a24ac590be868cf66ea14b01d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 3a16fa7d3c1efef5dea07d8c8b11c42a50bfbd9d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168902"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053100"
 ---
 # <a name="internettimeout-property-example-vc"></a>InternetTimeout, exemple de propriété (VC++)
 > [!IMPORTANT]

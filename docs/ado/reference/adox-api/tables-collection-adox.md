@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 38d750e7-f3fb-426e-b4b4-55eea4f1a654
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e30bb754332d52f02d2857dc80d572e227e819ed
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 5d95bec64e9751d8663c34d1bf9d9d301c163eb9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164009"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053470"
 ---
 # <a name="tables-collection-adox"></a>Tables, collection (ADOX)
 Contient tous les objets [table](./table-object-adox.md) d’un catalogue.  

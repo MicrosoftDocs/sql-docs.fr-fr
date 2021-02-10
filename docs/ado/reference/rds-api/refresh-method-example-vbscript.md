@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: f2926578-bc60-464b-916e-ddfdb8014253
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3e057d11a2284b5b4a605497b5819de7b89c3c2f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e6af828ea67719386d2807e6608d8d3f7872f664
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99163629"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052950"
 ---
 # <a name="refresh-method-example-vbscript"></a>Refresh, exemple de méthode (VBScript)
 > [!IMPORTANT]

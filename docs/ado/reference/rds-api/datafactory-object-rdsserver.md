@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e75240c2-b749-471e-b6ea-98cae232efbe
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 75c727e8c857dcb5c5922f52e56a37e99f223293
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 3fcd50994a0389f56592a35d9ba239842ac6e198
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99163834"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053230"
 ---
 # <a name="datafactory-object-rdsserver"></a>DataFactory, objet (RDSServer)
 > [!IMPORTANT]

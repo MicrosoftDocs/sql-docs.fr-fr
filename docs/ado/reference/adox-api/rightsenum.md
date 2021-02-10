@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 55ee67c7-a583-42aa-849a-78264b4cb614
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d89daeb8d85e9e59e60f6a1aa6b918364ab915fd
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 144e01921ec2c0aea14b3b853e0c9ce4bf8daf5a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169215"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053794"
 ---
 # <a name="rightsenum"></a>RightsEnum
 Spécifie les droits ou les autorisations pour un groupe ou un utilisateur sur un objet.  

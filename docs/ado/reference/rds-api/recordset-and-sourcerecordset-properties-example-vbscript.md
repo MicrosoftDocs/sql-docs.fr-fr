@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 95175316-cd10-4cf7-96ba-2a226fd97701
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d7829b4063733da73a28c0ea46e5e804b536c9a8
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 9e6a47a9c4d47be07523d9fc92da056a4cf4c280
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171961"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052960"
 ---
 # <a name="recordset-and-sourcerecordset-properties-example-vbscript"></a>Recordset et SourceRecordset, exemples de propriétés (VBScript)
 > [!IMPORTANT]

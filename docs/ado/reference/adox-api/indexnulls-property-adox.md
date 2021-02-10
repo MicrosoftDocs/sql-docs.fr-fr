@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 313b0bf7-3f37-4823-8fca-bd9c80e078a7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: bf41734c44e4ae2347cdaf560167b72003716f7f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: afbcf86674cf5addb8e09e1599987470660c691c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169358"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054094"
 ---
 # <a name="indexnulls-property-adox"></a>IndexNulls, propriété (ADOX)
 Indique si les enregistrements qui ont des valeurs NULL dans leurs champs d’index ont des entrées d’index.  

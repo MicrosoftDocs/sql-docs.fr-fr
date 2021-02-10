@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 0e0ecbbf-d7de-49d4-a128-5a519ecd54ba
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4ecb674380de526f729246a249e2369f0cf90e4b
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f98cc2ee59e7b3e0c873a6bc48c3234148543484
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164116"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053895"
 ---
 # <a name="precision-property-adox"></a>Precision, propriété (ADOX)
 Indique la précision maximale des valeurs de données dans la [colonne](./column-object-adox.md).  

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 32c33bcf-3320-4836-9e2e-99c8978ce581
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 62495442c20e4205e9fad2e5c650e09a87777328
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: fa2e53f82f648ce15f2d3d7986b14d0c2967a54f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168771"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052920"
 ---
 # <a name="sql-property-example-vbscript"></a>SQL, exemple de propriété (VBScript)
 > [!IMPORTANT]

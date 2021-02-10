@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 619bc7fd-ad0a-44ea-9678-ad40a662c258
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: faea3ba69a0a1f0f5a1aedc6bd48dca137ff391c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0b74c04a64ca6b5deeb06a7aaa85b97eac1f3fb4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168759"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052880"
 ---
 # <a name="submitchanges-method-example-vbscript"></a>SubmitChanges, exemple de méthode (VBScript)
 > [!IMPORTANT]

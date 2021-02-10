@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: c23912f0-1288-4727-8fb4-f643b8811cf7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b59e6aaccdc93c7c375acc8c3437302d6941474d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f97b0fd1dfea16e9215d3c8a0f187de174905223
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99163883"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053320"
 ---
 # <a name="cancelupdate-method-example-vbscript"></a>CancelUpdate, exemple de méthode (VBScript)
 > [!IMPORTANT]

@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 04510b19-9cb2-4895-b23b-f7790123eb04
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: ff50a29404b063ee8f7eee2d88d93c2ac2cbcf6e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 939630bea7346d1c4602fb04a6d9ed21a7b3fef7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169193"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053510"
 ---
 # <a name="sortorder-property-adox"></a>SortOrder, propriété (ADOX)
 Indique la séquence de tri de la colonne (colonnes d’index uniquement).  

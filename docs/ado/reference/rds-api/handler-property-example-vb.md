@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9664f9a6-65fc-4e7f-be3d-3e4b501b558a
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d4d97d9aae8117ac7d10362da0ab5f666fc329f9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0936abc9114998ac76fd59a63730efd6efd70122
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168926"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053130"
 ---
 # <a name="handler-property-example-vb"></a>Handler, exemple de propriété (VB)
 > [!IMPORTANT]

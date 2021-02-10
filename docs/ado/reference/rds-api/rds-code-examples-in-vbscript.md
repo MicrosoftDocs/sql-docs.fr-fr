@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 22f23c30-7c21-4fe3-8e76-36cea6448819
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 622994e3bc0fc199ef1b63440cb94e7ba115739d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b55c047a512931b4e529c24c01c17399e530941c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99163695"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053049"
 ---
 # <a name="rds-code-examples-in-vbscript"></a>Exemples de code RDS dans VBScript
 > [!IMPORTANT]

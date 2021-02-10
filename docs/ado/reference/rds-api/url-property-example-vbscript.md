@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 6ae5ac50-c88c-4262-b7ab-f2b3de382a0b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f295fd69f61e6359b257f053ac3775223a70603d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d90e82e34d53a54562def11bd4814bf5c04af419
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168718"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052820"
 ---
 # <a name="url-property-example-vbscript"></a>URL, exemple de propriété (VBScript)
 > [!IMPORTANT]

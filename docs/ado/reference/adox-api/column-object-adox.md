@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 6e772783-1bc8-4ea7-94b2-7d7a52ea5c47
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7501381174ddf522b60a596cd5846f012d59d88e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: fd44882eaf9dafacdfa54bf3149cf8e82d7d86a0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164261"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054404"
 ---
 # <a name="column-object-adox"></a>Column, objet (ADOX)
 Représente une colonne d’une table, d’un index ou d’une clé.  

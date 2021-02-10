@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 8ec0b00e-0e18-4f1b-9bbf-42168670bf5f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 263331eec58ebfb08e6b557fccd58dfb4dee1a19
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 3523e4b0298941f3605341bda78a2ccf5235cec6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169816"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054594"
 ---
 # <a name="hierarchy-object-properties-methods-and-events"></a>Propriétés, méthodes et événements de l’objet Hierarchy
 ## <a name="propertiescollections"></a>Propriétés/collections  

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 9194bffa-5bdf-4dff-af86-f7158c23bfa7
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d9ca4337b26a52c28619f703456693a0c715a86a
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: cf507d982ede5af1ced904618e7ffc17be083207
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168971"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053180"
 ---
 # <a name="dataspace-object-rds"></a>DataSpace, objet (RDS)
 > [!IMPORTANT]

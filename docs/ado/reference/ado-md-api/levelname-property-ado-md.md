@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: bf3b4466-9a0b-446e-9e04-fed944e3a493
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 225ae29d2fa74d6788115a921590c669c7bb3ba0
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f864868d3ad1bb4474b0640862aef20a3f187e4b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164518"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054524"
 ---
 # <a name="levelname-property-ado-md"></a>LevelName, propriété (ADO MD)
 Indique le nom du niveau d’un [membre](./member-object-ado-md.md).  

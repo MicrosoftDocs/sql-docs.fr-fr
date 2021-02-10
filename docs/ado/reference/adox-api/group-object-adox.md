@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 55ef0ade-68ea-4da5-8aa5-4cd27d1f6d1e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7d41a816c7c66c4308b2da3f58d8dab51d865ae0
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b72179e91ad4c9742ffd42a70ff37e33f402d8e3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99164267"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054194"
 ---
 # <a name="group-object-adox"></a>Group, objet (ADOX)
 Représente un compte de groupe qui dispose d’autorisations d’accès au sein d’une base de données sécurisée.  

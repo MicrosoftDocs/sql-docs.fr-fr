@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 7af42866-7db2-4174-8251-388a2cf741f2
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 455628537f876b1500f0d53f29d4869da9b48d1d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c569505febe68a588799a0eb5c3d3142b3633137
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168741"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052850"
 ---
 # <a name="synchronize-method-rds"></a>Synchronize, méthode (RDS)
 Synchronisez le Recordset donné avec la base de données spécifiée par la chaîne de connexion pour l’utiliser dans ADO 2,5 et versions ultérieures.  

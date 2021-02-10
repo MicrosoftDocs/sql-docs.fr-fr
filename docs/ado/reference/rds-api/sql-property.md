@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e0dabf23-a159-4fe5-a962-3df544a21f5c
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c24b191e11f95428b80a9ecfb3cced4f605e3e76
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c293915a847a150719754c1df0f9389be3efb863
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166099"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052910"
 ---
 # <a name="sql-property"></a>SQL, propriété
 Indique la chaîne de requête utilisée pour récupérer le [jeu d’enregistrements](../ado-api/recordset-object-ado.md).  

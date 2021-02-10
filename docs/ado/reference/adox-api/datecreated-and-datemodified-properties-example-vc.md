@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: b964beee-83c7-4f91-8255-3ba864c9adfd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e600adf457a91874ccf99fb9002b968b05f61a45
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 606a839b852e3fe18779f111a592328feb6625e7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172153"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054274"
 ---
 # <a name="datecreated-and-datemodified-properties-example-vc"></a>DateCreated et DateModified, exemples de propriétés (VC++)
 Cet exemple illustre les propriétés [DateCreated](./datecreated-property-adox.md) et [DateModified](./datemodified-property-adox.md) en ajoutant une nouvelle [colonne](./column-object-adox.md) à une [table](./table-object-adox.md) existante et en créant une nouvelle **table**. La procédure DateOutput est requise pour que cet exemple s’exécute.  

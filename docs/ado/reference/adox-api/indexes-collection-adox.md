@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 184cf536-455c-42be-bf1c-a5c25bade961
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 74147f1168e9bf9789c0ab1111daa27536dfd64e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8b8873cf8815fc6ffac1afbd9f6e003ee792d61f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172020"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054104"
 ---
 # <a name="indexes-collection-adox"></a>Indexes, collection (ADOX)
 Contient tous les objets [index](./index-object-adox.md) d’une table.  

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d2727ce7-da9f-4271-ae3c-9334ef477c14
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 373b43f3540d0dcb99349ca34d0a424bc6235f73
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: cc6262e9748a4fd94fd7f4e0a75214c24def0acb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99166124"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052930"
 ---
 # <a name="server-property-rds"></a>Server, propriété (RDS)
 Indique le nom du Internet Information Services (IIS) et le protocole de communication.  
@@ -112,7 +112,7 @@ DataControl.Server=""
  Valeur de **chaîne** qui contient un chemin d’accès Internet ou intranet, ou un nom d’ordinateur, si le serveur se trouve sur un ordinateur distant ; ou une chaîne vide si le serveur se trouve sur l’ordinateur local.  
   
  *port*  
- Facultatif. Port utilisé pour se connecter à un serveur exécutant IIS. Le numéro de port est défini dans Internet Explorer (dans le menu **affichage** , cliquez sur **options**, puis sélectionnez l’onglet **connexion** ) ou IIS.  
+ facultatif. Port utilisé pour se connecter à un serveur exécutant IIS. Le numéro de port est défini dans Internet Explorer (dans le menu **affichage** , cliquez sur **options**, puis sélectionnez l’onglet **connexion** ) ou IIS.  
   
  *DataControl*  
  Variable objet qui représente un objet **RDS. DataControl** .  

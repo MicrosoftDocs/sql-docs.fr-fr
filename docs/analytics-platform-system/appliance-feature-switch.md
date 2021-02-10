@@ -9,12 +9,12 @@ ms.date: 06/27/2018
 ms.author: murshedz
 ms.reviewer: martinle
 monikerRange: '>= aps-pdw-2016-au7'
-ms.openlocfilehash: cd9e93b1b734737eda94501df7a30a07c8f8042a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 656b1592dd50567f59744e39c24be7d93b5b220f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97420262"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052830"
 ---
 # <a name="appliance-feature-switches"></a>Commutateurs de fonctionnalités d’appliance
 

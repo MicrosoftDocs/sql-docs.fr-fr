@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: a05a0190-352d-44ff-9488-0c94e9fb656e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 06aeb42f35b55b99745089a423f307c14c4aa5ab
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: ccf50845958a24a01ddb01094e3493420ec5a1a5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99163932"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053370"
 ---
 # <a name="views-collection-commandtext-property-example-vb"></a>Views (collection), CommandText (exemple de propriété) (VB)
 Le code suivant montre comment utiliser la propriété [Command](./command-property-adox.md) pour mettre à jour le texte d’une vue.  

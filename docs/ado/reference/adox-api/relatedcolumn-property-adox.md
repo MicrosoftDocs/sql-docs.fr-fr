@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 2f2ca019-c785-4c08-beb1-3a2d3b47823e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6192efed41f24ff9d80ab027d20c29968fa2a452
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 6f9d63ef7f7d6a919d76e4e6b6220f423352ff10
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169230"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054854"
 ---
 # <a name="relatedcolumn-property-adox"></a>RelatedColumn, propriété (ADOX)
 Indique le nom de l' [objet de colonne associé (ADOX)](./column-object-adox.md) dans la table associée (colonnes clés uniquement).  

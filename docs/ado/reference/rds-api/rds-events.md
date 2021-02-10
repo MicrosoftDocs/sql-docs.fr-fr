@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e03739e0-8169-46d6-9956-556b644a7645
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: afe3cf7e2d3b036e99af01c54b51bdb8f53a871d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 981d12e705d3b93d60583c5e4a0ed32af3240fec
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99163677"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053010"
 ---
 # <a name="rds-events"></a>Événements RDS
 > [!IMPORTANT]

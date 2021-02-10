@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 9f131c8d-1497-416d-8209-abb481c38f7b
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 92ec3f1eb3cf5504bd2a64322e91640bd9518a2e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8bd48d561f9b21997df0f7a77a993f95900e8cdb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99168999"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053220"
 ---
 # <a name="execute21-method-rds"></a>Execute21, méthode (RDS)
 Exécute la demande et crée un jeu d’enregistrements ADO à utiliser dans ADO 2,1.  

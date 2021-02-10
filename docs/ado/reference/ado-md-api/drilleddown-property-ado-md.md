@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: bf39dd36-fc7a-4f6e-86c0-fa71430c0d86
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 2e25d23cfdbf7f33f024203e25814b16d4ec6da4
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 55560851c22ab73fa27c55f55edf0dd56b1afd56
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99169862"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054704"
 ---
 # <a name="drilleddown-property-ado-md"></a>DrilledDown, propriété (ADO MD)
 Indique si les enfants suivent immédiatement le [membre](./member-object-ado-md.md) sur l’axe.  

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e3e18da4-0511-4ece-a35d-699978bc28c6
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b216c69954e6551924dd63f7b93ac281015bf025
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c3b6a6cb918633175040275471fa56d0385a4824
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99163662"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052970"
 ---
 # <a name="readystate-property-example-vbscript"></a>ReadyState, exemple de propriété (VBScript)
 > [!IMPORTANT]

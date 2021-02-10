@@ -42,12 +42,12 @@ helpviewer_keywords:
 ms.assetid: 81b92baf-b6b9-4f4e-9f33-4503795518cd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 83ef51697cd3ad1ad1a01355baead5d90788813f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 51373d1eee3613366c39bd3d18a9f479a0d046c6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172002"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100053993"
 ---
 # <a name="name-property-adox"></a>Name, propriété (ADOX)
 Indique le nom de l’objet.  

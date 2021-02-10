@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2b6dfef9-bcdf-483d-a164-2fa3ec81a43f
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f5ee45e4bccfc82e5a4e1017aa2ebe24f80520d9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2c09dc2ee3c5a98814de979eb398ba59f0423b7e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99172243"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100054374"
 ---
 # <a name="columns-and-tables-append-methods-name-property-example-vc"></a>Append, méthode des collections Columns et Tables, Name (exemple de propriété) (VC++)
 Le code suivant montre comment créer une nouvelle table.  
