@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: e963e205-9ae0-446d-97df-028a1d2727d9
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 4514d1b0fb84da6a44e5d51a60add48aff971021
-ms.sourcegitcommit: 2f166e139f637d6edfb5731510d632a13205eb25
+ms.openlocfilehash: c389923aade8a22f75180ab0a422a46e71843997
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84529641"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100065424"
 ---
 # <a name="debugging-data-processing-extension-code"></a>Débogage du code des extensions pour le traitement des données
   [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] fournit plusieurs outils de débogage qui peuvent vous aider à analyser le code de vos extensions pour le traitement des données et à localiser les erreurs qu’il contient. L'outil le plus approprié dépend de ce que vous essayez d'accomplir. Cet exemple utilise [!INCLUDE[vsOrcas](../../../includes/vsorcas-md.md)].  

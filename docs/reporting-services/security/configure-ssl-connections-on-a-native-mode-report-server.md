@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 212f2042-456a-4c0a-8d76-480b18f02431
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 0532c42a5bd080b7f686c1663c6f88d8066bc9ff
-ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
+ms.openlocfilehash: 8d53b3db2c87487da6cf76d4b1c84fdd40483e6e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99076261"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100062924"
 ---
 # <a name="configure-tls-connections-on-a-native-mode-report-server"></a>Configurer des connexions TLS sur un serveur de rapports en mode natif
 

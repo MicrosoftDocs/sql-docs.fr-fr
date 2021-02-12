@@ -13,12 +13,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 4c9bb76ddd3ee5f5c0828f5c9ef181f98e26f94d
-ms.sourcegitcommit: 894c1a23e922dc29b82c1d2c34c7b0ff28b38654
+ms.openlocfilehash: 6edd17773c3624e181659962cd3c7a4e2b9f6d4b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93067071"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066834"
 ---
 # <a name="use-transact-sql-editor-to-edit-and-execute-scripts"></a>Utiliser l'Éditeur Transact-SQL pour modifier et exécuter des scripts
 

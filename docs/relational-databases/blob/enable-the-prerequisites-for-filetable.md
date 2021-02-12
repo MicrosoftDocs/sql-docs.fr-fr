@@ -12,12 +12,12 @@ ms.assetid: 6286468c-9dc9-4eda-9961-071d2a36ebd6
 author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: ''
-ms.openlocfilehash: 12e392d083b9b47e3330d8a95b6c2d199a146cea
-ms.sourcegitcommit: 04cf7905fa32e0a9a44575a6f9641d9a2e5ac0f8
+ms.openlocfilehash: d5e02aa025d65fd7f3db6d1f5bd8f43e44566ac9
+ms.sourcegitcommit: 58e7069b5b2b6367e27b49c002ca854b31b1159d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91809914"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99552658"
 ---
 # <a name="enable-the-prerequisites-for-filetable"></a>Activer les conditions préalables pour les FileTables
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -148,7 +148,7 @@ GO
   
 -   Lorsque vous attachez ou restaurez une base de données, l’opération échoue si la nouvelle base de données comporte une valeur pour **DIRECTORY_NAME** qui existe déjà dans l’instance cible. Spécifiez une valeur unique pour **DIRECTORY_NAME** lorsque vous appelez **CREATE DATABASE FOR ATTACH** ou **RESTORE DATABASE**.  
   
--   Lorsque vous mettez à niveau une base de données existante avec [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], la valeur de **DIRECTORY_NAME** est Null.  
+-   Lorsque vous mettez à niveau une base de données existante, la valeur de **DIRECTORY_NAME** est Null.  
   
 -   Lorsque vous activez ou désactivez l'accès non transactionnel au niveau de la base de données, l'opération ne vérifie pas si le nom de répertoire a été spécifié ou s'il est unique.  
   

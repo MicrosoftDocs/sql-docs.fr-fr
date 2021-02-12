@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 054c4a87-60bf-4556-9a8c-8b2d77a534e6
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 05ee90e9ccbf781e0145665b8f1dd06ca2fb8d45
-ms.sourcegitcommit: df1f0f2dfb9452f16471e740273cd1478ff3100c
+ms.openlocfilehash: 6631325809a468aed4e7c7fd00cf71aedecc7ba0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87396081"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100042056"
 ---
 # <a name="monitor-reporting-services-subscriptions"></a>Analyser les abonnements Reportions Services
   Vous pouvez surveiller les abonnements [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] à partir de l'interface utilisateur, de Windows PowerShell ou des fichiers journaux. Les options de surveillance à votre disposition dépendent du mode de serveur de rapports que vous exécutez.  

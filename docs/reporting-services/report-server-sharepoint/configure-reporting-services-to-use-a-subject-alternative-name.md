@@ -8,12 +8,12 @@ ms.technology: security
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 40ddab224d24e566ad346d64d5238ca5c81d9f48
-ms.sourcegitcommit: 783b35f6478006d654491cb52f6edf108acf2482
+ms.openlocfilehash: 25e5fce47d86ea4d544b43f297fcb793d8167a66
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91891589"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100065154"
 ---
 # <a name="configure-reporting-services-to-use-a-subject-alternative-name-san"></a>Configurer Reporting Services pour utiliser un autre nom d’objet (SAN)
 

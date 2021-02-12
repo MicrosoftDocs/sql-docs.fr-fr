@@ -12,12 +12,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 810010b70a50f51c29b34b917af90127233d622c
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 5983d00806f895d8112ac111312309cf93aa48ee
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987795"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100063494"
 ---
 # <a name="running-sql-server-unit-tests"></a>Exécution de tests unitaires SQL Server
 
@@ -26,7 +26,7 @@ Pour améliorer et gérer la qualité de votre code, créez et exécutez des tes
 ## <a name="ways-to-run-sql-server-unit-tests"></a>Manières d’exécuter des tests unitaires SQL Server  
 Vous pouvez effectuer des tests unitaires SQL Server de plusieurs façons, en fonction du logiciel que vous avez installé, comme suit :  
   
--   Exécutez des tests à l’aide de la fenêtre Visual Studio 2010**Affichage des tests**. Pour plus d’informations, consultez [Procédure : exécuter des tests unitaires SQL Server](../ssdt/how-to-run-sql-server-unit-tests.md) et [Procédure : exécuter des tests automatisés à partir de Microsoft Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/ms182470(v=vs.100)). Pour Visual Studio 2012, consultez [Procédure : exécuter des tests automatisés à partir de Microsoft Visual Studio 2012](/previous-versions/ms182470(v=vs.140)).  
+-   Exécutez des tests à l’aide de la fenêtre Visual Studio 2010 **Affichage des tests**. Pour plus d’informations, consultez [Procédure : exécuter des tests unitaires SQL Server](../ssdt/how-to-run-sql-server-unit-tests.md) et [Procédure : exécuter des tests automatisés à partir de Microsoft Visual Studio 2010](/previous-versions/visualstudio/visual-studio-2010/ms182470(v=vs.100)). Pour Visual Studio 2012, consultez [Procédure : exécuter des tests automatisés à partir de Microsoft Visual Studio 2012](/previous-versions/ms182470(v=vs.140)).  
   
 -   Exécutez des tests à l'aide de la commande MSTest.exe à l'invite de commandes. Pour plus d'informations, consultez [Procédure : exécuter des tests automatisés à partir de la ligne de commande à l'aide de MSTest (Visual Studio 2010)](/previous-versions/visualstudio/visual-studio-2010/ms182487(v=vs.100)) or [Procédure : exécuter des tests automatisés à partir de la ligne de commande à l'aide de MSTest (Visual Studio 2012)](/previous-versions/ms182487(v=vs.140)).  
   

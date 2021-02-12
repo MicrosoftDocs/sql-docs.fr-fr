@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 48ca32fc-1830-4d1f-add7-480ba5ad02e8
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 7cb317fc73f32a8795fe5ce4e5be9af776edf938
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1829101a62a3f2602e32b6e4d3535292a90a140d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88454259"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100069514"
 ---
 # <a name="getting-started-with-ssma-for-db2-db2tosql"></a>Prise en main avec SSMA pour DB2 (DB2ToSQL)
 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Assistant Migration (SSMA) pour DB2 vous permet de convertir rapidement les schémas de base de données DB2 en [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] schémas, de charger les schémas résultants dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et de migrer des données de DB2 vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
@@ -25,7 +25,7 @@ Cette rubrique présente le processus d’installation de, puis vous aide à vou
 ## <a name="installing-ssma"></a>Installation de SSMA  
 Pour utiliser SSMA, vous devez d’abord installer le programme client SSMA sur un ordinateur qui peut accéder à la base de données DB2 source et à l’instance cible de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Fournisseurs OLEDB DB2 sur l’ordinateur qui exécute [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Ces composants prennent en charge la migration des données et l’émulation des fonctions système DB2. Pour obtenir des instructions d’installation, consultez [installation de SSMA pour DB2 &#40;DB2ToSQL&#41;](../../ssma/db2/installing-ssma-for-db2-db2tosql.md).  
   
-Pour démarrer SSMA, cliquez sur **Démarrer**, pointez sur **tous les programmes**, sur ** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Assistant Migration pour DB2**, puis cliquez sur ** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Assistant Migration pour DB2**.  
+Pour démarrer SSMA, cliquez sur **Démarrer**, pointez sur **tous les programmes**, sur **[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Assistant Migration pour DB2**, puis cliquez sur **[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Assistant Migration pour DB2**.  
   
 ## <a name="ssma-for-db2-user-interface"></a>SSMA pour l’interface utilisateur DB2  
 Après l’installation de SSMA, vous pouvez utiliser SSMA pour migrer des bases de données DB2 vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Il vous permet de vous familiariser avec l’interface utilisateur SSMA avant de commencer. Le diagramme suivant illustre l’interface utilisateur pour SSMA, y compris les explorateurs de métadonnées, les métadonnées, les barres d’outils, le volet de sortie et le volet Liste d’erreurs :  
@@ -60,7 +60,7 @@ L’Explorateur de métadonnées DB2 affiche des informations sur les schémas D
 Vous pouvez utiliser [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’Explorateur de métadonnées pour sélectionner les objets de base de données DB2 convertis, puis synchroniser ces objets avec l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
   
 ### <a name="metadata"></a>Métadonnées  
-À droite de chaque Explorateur de métadonnées se trouvent des onglets qui décrivent l’objet sélectionné. Par exemple, si vous sélectionnez une table dans l’Explorateur de métadonnées DB2, six onglets s’affichent : **table**, **SQL**, **mappage de type, rapport**, **Propriétés**et **données**. L’onglet **rapport** contient des informations uniquement après que vous avez créé un rapport qui contient l’objet sélectionné. Si vous sélectionnez une table dans l' [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Explorateur de métadonnées, trois onglets s’affichent : **table**, **SQL**et **données**.  
+À droite de chaque Explorateur de métadonnées se trouvent des onglets qui décrivent l’objet sélectionné. Par exemple, si vous sélectionnez une table dans l’Explorateur de métadonnées DB2, six onglets s’affichent : **table**, **SQL**, **mappage de type, rapport**, **Propriétés** et **données**. L’onglet **rapport** contient des informations uniquement après que vous avez créé un rapport qui contient l’objet sélectionné. Si vous sélectionnez une table dans l' [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Explorateur de métadonnées, trois onglets s’affichent : **table**, **SQL** et **données**.  
   
 La plupart des paramètres de métadonnées sont en lecture seule. Toutefois, vous pouvez modifier les métadonnées suivantes :  
   
@@ -93,7 +93,7 @@ Le tableau suivant présente les menus SSMA.
 |----|-----------|  
 |**File**|Contient des commandes pour travailler avec des projets, se connecter à DB2 et se connecter à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .|  
 |**Modifier**|Contient des commandes pour rechercher et utiliser du texte dans les pages de détails, telles que [!INCLUDE[tsql](../../includes/tsql-md.md)] la copie à partir du volet d’informations SQL. Contient également l’option **gérer les signets** , dans laquelle vous pouvez afficher la liste des signets existants. Vous pouvez utiliser les boutons sur le côté droit de la boîte de dialogue pour gérer les signets.|  
-|**Afficher**|Contient la commande **synchroniser les explorateurs de métadonnées** . Qui synchronise les objets entre l’Explorateur de métadonnées DB2 et l' [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Explorateur de métadonnées. Contient également des commandes pour afficher et masquer les volets **sortie** et **liste d’erreurs** , ainsi qu’une **disposition** d’options pour gérer les dispositions.|  
+|**Visualiser**|Contient la commande **synchroniser les explorateurs de métadonnées** . Qui synchronise les objets entre l’Explorateur de métadonnées DB2 et l' [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Explorateur de métadonnées. Contient également des commandes pour afficher et masquer les volets **sortie** et **liste d’erreurs** , ainsi qu’une **disposition** d’options pour gérer les dispositions.|  
 |**outils**|Contient des commandes pour créer des rapports et migrer des objets et des données. Permet également d’accéder aux boîtes de dialogue **paramètres globaux** et **paramètres du projet** .|  
 |**Aide**|Fournit l’accès à l’aide de SSMA et à la boîte de dialogue **à propos** de.|  
   

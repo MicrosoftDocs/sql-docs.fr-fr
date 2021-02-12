@@ -8,12 +8,12 @@ ms.prod_service: reporting-services-native
 ms.technology: report-server
 ms.topic: conceptual
 ms.date: 12/11/2019
-ms.openlocfilehash: 674e549b48cdb96a6ecae1b8630353751195085f
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9e7a7b0dce01b21fcb746fdfdcbd5adfa7c7483d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461390"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100067205"
 ---
 # <a name="configure-a-report-server-on-a-network-load-balancing-cluster"></a>Configurer un serveur de rapports sur un cluster avec équilibrage de la charge réseau
 

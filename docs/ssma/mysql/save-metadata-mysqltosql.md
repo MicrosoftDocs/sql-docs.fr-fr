@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 9bc6273f-e8b1-430b-81a5-14330a783562
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: b19ba78707fb596fde5ab73f04003a9d2d3feb9b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: bc5f3e07439f79fd5746fc564f2b7c9fb87e69c3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88418455"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100074520"
 ---
 # <a name="save-metadata--mysqltosql"></a>Enregistrer les métadonnées (MySQLToSQL)
 La boîte de dialogue **enregistrer les métadonnées** vous invite à charger les métadonnées dans votre projet SSMA avant de l’enregistrer. Cela vous permet d’avoir un fichier projet complet que vous pouvez utiliser en mode hors connexion et l’envoyer à d’autres personnes, telles que le personnel du support technique.  
@@ -34,7 +34,7 @@ SSMA charge les métadonnées dans le projet, si nécessaire. Les métadonnées 
 **Sélectionner tout**  
 Sélectionne toutes les bases de données listées.  
   
-**Clear**  
+**Effacer**  
 Désactive la case à cocher de toutes les bases de données avec des métadonnées manquantes. Vous ne pouvez pas désactiver la case à cocher si des métadonnées ont été chargées.  
   
 **Save**  

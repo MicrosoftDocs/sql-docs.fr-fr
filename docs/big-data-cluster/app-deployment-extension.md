@@ -9,12 +9,12 @@ ms.date: 08/21/2019
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 74f3306167a4c2fbc248f65e5384ea9847f48f7a
-ms.sourcegitcommit: 22e97435c8b692f7612c4a6d3fe9e9baeaecbb94
+ms.openlocfilehash: d373b6739f30c0cae6d9534c26da2114dd0f718b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92678915"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100039869"
 ---
 # <a name="how-to-use-visual-studio-code-to-deploy-applications-to-big-data-clusters-2019"></a>Comment utiliser Visual Studio Code pour déployer des applications sur [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)]
 

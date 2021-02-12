@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: d73abd3a-80df-4293-b973-1723069db049
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: de3254b236dc03d7474aefe465aae91bef518f09
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 908aee9ddde0bb5ee2d2850ce5f164310953c0b8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88372825"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100068995"
 ---
 # <a name="connect-to-sql-server-mysqltosql"></a>Se connecter à SQL Server (MySQLToSQL)
 Utilisez la boîte de dialogue **se connecter au SQL Server** pour vous connecter à l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur laquelle vous souhaitez effectuer la migration. Pour accéder à la boîte de dialogue **se connecter à SQL Server** , dans le menu **fichier** , cliquez sur **se connecter à SQL Server**.  
@@ -39,7 +39,7 @@ Spécifiez la base de données vers laquelle migrer les objets et les données. 
 **Authentification**  
 Sélectionnez la méthode d’authentification utilisée pour se connecter à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Pour utiliser votre compte Windows actuel, sélectionnez authentification Windows. Pour spécifier une [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] connexion et un mot de passe, sélectionnez [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] authentification.  
   
-**Nom d’utilisateur**  
+**Nom d'utilisateur**  
 Si vous utilisez l' [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] authentification, entrez la connexion de cette instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Si vous utilisez l’authentification Windows, cette option n’est pas disponible.  
   
 **Mot de passe**  

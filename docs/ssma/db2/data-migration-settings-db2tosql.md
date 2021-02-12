@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 573e673e-a194-4cb2-9aba-aaac6e1a225c
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 0646fc033f73134a4dfcba62e574ba08e378b9cc
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 17121feedda919034ed8c2ee40fec8b06321d131
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91984875"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100078247"
 ---
 # <a name="data-migration-settings-db2tosql"></a>Paramètres de migration des données (DB2ToSQL)
   
@@ -40,7 +40,7 @@ Les **paramètres de migration des données** permettent à l’utilisateur d’
     -   Si cette zone de texte est désactivée, les données qui sont migrées seront ajoutées aux données existantes dans la base de données cible.  
   
 2.  **Utiliser la sélection personnalisée :**  
-     Cette option permet à l’utilisateur de modifier l’instruction **Select** présente (l’instruction**Select** permet aux utilisateurs de sélectionner les données à afficher dans la base de données cible).  
+     Cette option permet à l’utilisateur de modifier l’instruction **Select** présente (l’instruction **Select** permet aux utilisateurs de sélectionner les données à afficher dans la base de données cible).  
   
     1.  Par défaut, cette zone de texte est désactivée.  
   

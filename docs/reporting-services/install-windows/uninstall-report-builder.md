@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.assetid: 009538c6-4941-4393-b14b-9144cffdbdaf
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: e92f5eafad039858022a915fd0006ea3130a2c75
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 3f473c53a8e0a04603a391300fb2fc26dbd8210e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88446042"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077480"
 ---
 # <a name="uninstall-report-builder"></a>Désinstaller le Générateur de rapports
 

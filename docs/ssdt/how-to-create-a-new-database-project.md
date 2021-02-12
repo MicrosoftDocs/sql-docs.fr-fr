@@ -17,12 +17,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: f4e89dcf95cc02f3eea7cf681e9cdfc48d906367
-ms.sourcegitcommit: b860fe41b873977649dca8c1fd5619f294c37a58
+ms.openlocfilehash: 6039138eda38f67aae2a1f4770ebc93380087607
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2020
-ms.locfileid: "85518989"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018369"
 ---
 # <a name="how-to-create-a-new-database-project"></a>Procédure : Créer un projet de base de données
 

@@ -9,12 +9,12 @@ ms.date: 10/12/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: machine-learning-bdc
-ms.openlocfilehash: 3357757c0cca35be0b3410795cfd89ca75f34dc3
-ms.sourcegitcommit: 544706f6725ec6cdca59da3a0ead12b99accb2cc
+ms.openlocfilehash: c8423d8a08264255df02d6a9a2ea544a89dbbad3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638972"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100043513"
 ---
 # <a name="data-wrangling-using-prose-code-accelerator"></a>Data wrangling avec l’accélérateur de code PROSE
 

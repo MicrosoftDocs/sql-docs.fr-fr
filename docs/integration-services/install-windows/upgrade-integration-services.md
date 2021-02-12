@@ -17,12 +17,12 @@ ms.assetid: 04f9863c-ba0b-47c5-af91-f2d41b078a23
 author: MikeRayMSFT
 ms.author: mikeray
 manager: erikre
-ms.openlocfilehash: 95ffd6eb4e200139f653d3c051b6106c5f472497
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: cd258e7680e2f70693ea6e6c36355c0beacbeca8
+ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92193906"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835850"
 ---
 # <a name="upgrade-integration-services"></a>Mettre à niveau Integration Services
 
@@ -36,10 +36,10 @@ ms.locfileid: "92193906"
  Avec cette installation côte à côte, plusieurs versions de l'utilitaire dtexec sont installés. Pour vérifier que vous exécutez la version appropriée de l’utilitaire, à l’invite de commandes, exécutez l’utilitaire en entrant le chemin complet (\<drive>:\Program Files\Microsoft SQL Server\\<version\>\DTS\Binn). Pour plus d'informations dtexec, consultez [dtexec Utility](../../integration-services/packages/dtexec-utility.md).  
   
 > [!NOTE]  
->  Dans les versions précédentes de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], par défaut, lorsque vous installiez [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , tous les utilisateurs du groupe Utilisateurs avaient accès au service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Lorsque vous installez [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], les utilisateurs n'ont pas accès au service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Ce service est sécurisé par défaut. Une fois [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] installé, l'administrateur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] doit exécuter l'outil de configuration DCOM (Dcomcnfg.exe) pour accorder à des utilisateurs spécifiques l'accès au service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Pour plus d’informations, consultez [Service Integration Services &#40;Service SSIS&#41;](../../integration-services/service/integration-services-service-ssis-service.md).  
+>  Dans les versions précédentes de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], par défaut, lorsque vous installiez [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , tous les utilisateurs du groupe Utilisateurs avaient accès au service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Lorsque vous installez [!INCLUDE[ssSQL16](../../includes/sssql16-md.md)] et après l’installation, les utilisateurs n’ont pas accès au service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]. Ce service est sécurisé par défaut. Une fois [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] installé, l'administrateur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] doit exécuter l'outil de configuration DCOM (Dcomcnfg.exe) pour accorder à des utilisateurs spécifiques l'accès au service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Pour plus d’informations, consultez [Service Integration Services &#40;Service SSIS&#41;](../../integration-services/service/integration-services-service-ssis-service.md).  
   
 ## <a name="before-upgrading-integration-services"></a>Avant de procéder à la mise à niveau d'Integration Services  
- Nous vous avons recommandé d'exécuter le Conseiller de mise à niveau avant de procéder à la mise à niveau vers [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Le Conseiller de mise à niveau signale des problèmes que vous pouvez rencontrer si vous effectuez une migration de packages [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] existants vers le nouveau format de package que [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] utilise.  
+ Nous vous avons recommandé d'exécuter le Conseiller de mise à niveau avant de procéder à la mise à niveau vers [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)]. Le Conseiller de mise à niveau signale des problèmes que vous pouvez rencontrer si vous effectuez une migration de packages [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] existants vers le nouveau format de package que [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)] utilise.  
   
 > [!NOTE]
 >  La prise en charge de la migration ou de l’exécution de packages DTS (Data Transformation Services) a été suspendue dans SQL Server 2012. Les fonctionnalités DTS suivantes ne sont plus disponibles.  
@@ -56,7 +56,7 @@ ms.locfileid: "92193906"
 ## <a name="upgrading-integration-services"></a>mise à niveau d'Integration Services  
  Vous pouvez effectuer la mise à niveau au moyen de l'une des méthodes suivantes :  
   
--   Exécutez le programme d’installation de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et sélectionnez l’option **Mise à niveau de SQL Server 2008, SQL Server 2008 R2, [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]** .  
+-   Exécutez le programme d’installation de [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)] et sélectionnez l’option **Mise à niveau de SQL Server 2008, SQL Server 2008 R2, [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]** .  
   
 -   Exécutez le fichier **setup.exe** à l’invite de commandes et spécifiez l’option **/ACTION=upgrade** . Pour plus d’informations, consultez la section, « Scripts d’installation pour [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]», dans [Installer SQL Server 2016 à partir de l’invite de commandes](../../database-engine/install-windows/install-sql-server-from-the-command-prompt.md).  
   
@@ -70,19 +70,19 @@ ms.locfileid: "92193906"
   
  Lors d’une mise à niveau, vous pouvez mettre à niveau à la fois [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] et [!INCLUDE[ssDE](../../includes/ssde-md.md)], mais vous pouvez également choisir de mettre à niveau uniquement [!INCLUDE[ssDE](../../includes/ssde-md.md)]ou uniquement [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]. Si vous mettez à niveau uniquement [!INCLUDE[ssDE](../../includes/ssde-md.md)], [!INCLUDE[ssISversion10](../../includes/ssisversion10-md.md)] (ou une version ultérieure) reste fonctionnel, mais sans les fonctionnalités de [!INCLUDE[ssISCurrent](../../includes/ssiscurrent-md.md)]. Si vous mettez uniquement à niveau [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)], [!INCLUDE[ssISCurrent](../../includes/ssiscurrent-md.md)] sera totalement fonctionnel, mais uniquement en mesure de stocker des packages dans le système de fichiers, à moins qu'une instance du [!INCLUDE[ssDECurrent](../../includes/ssdecurrent-md.md)] ne soit disponible sur un autre ordinateur.  
   
-## <a name="upgrading-both-integration-services-and-the-database-engine-to-sscurrent"></a>Mise à niveau d'Integration Services et du moteur de base de données vers [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]  
+## <a name="upgrading-both-integration-services-and-the-database-engine-to-sssql19"></a>Mise à niveau d'Integration Services et du moteur de base de données vers [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)]  
  Cette section décrit les conséquences liées à l'exécution d'une mise à niveau qui obéit aux critères suivants :  
   
--   Mise à niveau de [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] et d’une instance de [!INCLUDE[ssDE](../../includes/ssde-md.md)] vers [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+-   Mise à niveau de [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] et d’une instance de [!INCLUDE[ssDE](../../includes/ssde-md.md)] vers [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)].  
   
 -   Installation de [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] et de l’instance de [!INCLUDE[ssDE](../../includes/ssde-md.md)] sur le même ordinateur.  
   
 ### <a name="what-the-upgrade-process-does"></a>Ce que fait le processus de mise à niveau  
  Le processus de mise à niveau effectue les tâches suivantes :  
   
--   Installe les fichiers [!INCLUDE[ssISCurrent](../../includes/ssiscurrent-md.md)] , ainsi que le service et les outils ([!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] et [!INCLUDE[ssBIDevStudio](../../includes/ssbidevstudio-md.md)]). Lorsque plusieurs instances de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] sont installées sur le même ordinateur, la première mise à niveau d’une instance quelconque vers [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]active l’installation des fichiers, services et outils [!INCLUDE[ssISCurrent](../../includes/ssiscurrent-md.md)] .  
+-   Installe les fichiers [!INCLUDE[ssISCurrent](../../includes/ssiscurrent-md.md)] , ainsi que le service et les outils ([!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] et [!INCLUDE[ssBIDevStudio](../../includes/ssbidevstudio-md.md)]). Lorsque plusieurs instances de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] sont installées sur le même ordinateur, la première mise à niveau d’une instance quelconque vers [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)]active l’installation des fichiers, services et outils [!INCLUDE[ssISCurrent](../../includes/ssiscurrent-md.md)] .  
   
--   Met à niveau l’instance de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)][!INCLUDE[ssDE](../../includes/ssde-md.md)] vers la version [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] .  
+-   Met à niveau l’instance de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)][!INCLUDE[ssDE](../../includes/ssde-md.md)] vers la version [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)] .  
   
 -   Déplace les données des tables système [!INCLUDE[ssISversion10](../../includes/ssisversion10-md.md)] ou ultérieures vers les tables système [!INCLUDE[ssISCurrent](../../includes/ssiscurrent-md.md)] , comme suit :  
   
@@ -99,7 +99,7 @@ ms.locfileid: "92193906"
   
 -   Pour contrôler l'accès aux packages, crée trois nouveaux rôles de base de données fixes : db_ssisadmin, db_ssisltduser et db_ssisoperator. Les rôles [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)][!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] de db_dtsadmin, db_dtsltduser et db_dtsoperator ne sont pas supprimés, mais deviennent membres des nouveaux rôles correspondants.  
   
--   Si le magasin de packages [!INCLUDE[ssIS](../../includes/ssis-md.md)] (autrement dit, l’emplacement du système de fichiers géré par le service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] ) constitue l’emplacement par défaut sous **\SQL Server\90**, **\SQL Server\100**, **\SQL Server\110**ou **\SQL Server\120** , ces packages sont déplacés vers le nouvel emplacement par défaut sous **\SQL Server\130**.  
+-   Si le magasin de packages [!INCLUDE[ssIS](../../includes/ssis-md.md)] (autrement dit, l’emplacement du système de fichiers géré par le service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] ) constitue l’emplacement par défaut sous **\SQL Server\90**, **\SQL Server\100**, **\SQL Server\110** ou **\SQL Server\120** , ces packages sont déplacés vers le nouvel emplacement par défaut sous **\SQL Server\130**.  
   
 -   Met à jour le fichier de configuration du service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] de sorte qu’il pointe vers l’instance mise à niveau de [!INCLUDE[ssDE](../../includes/ssde-md.md)].  
   
@@ -108,11 +108,11 @@ ms.locfileid: "92193906"
   
 -   **Ne** supprime pas le service [!INCLUDE[ssISversion10](../../includes/ssisversion10-md.md)] ou version ultérieure.  
   
--   N'effectue pas la migration des packages [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] existants vers le nouveau format utilisé par [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] pour les packages. Pour plus d’informations sur la migration de packages, consultez [Mettre à niveau des packages Integration Services](../../integration-services/install-windows/upgrade-integration-services-packages.md).  
+-   N'effectue pas la migration des packages [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] existants vers le nouveau format utilisé par [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)] pour les packages. Pour plus d’informations sur la migration de packages, consultez [Mettre à niveau des packages Integration Services](../../integration-services/install-windows/upgrade-integration-services-packages.md).  
   
 -   Ne déplace pas de packages à partir d'emplacements du système de fichiers, autre que l'emplacement par défaut, qui ont été ajoutés au fichier de configuration du service. Si vous avez déjà modifié le fichier de configuration du service de manière à ajouter des dossiers de système de fichiers supplémentaires, les packages stockés dans ces dossiers ne seront pas déplacés à un nouvel endroit.  
   
--   Dans les étapes du travail de l’Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui appellent directement l’utilitaire **dtexec** (dtexec.exe), ne met pas à jour le chemin du système de fichiers pour l’utilitaire **dtexec** . Vous devez modifier manuellement ces étapes du travail pour mettre à jour le chemin d’accès au système de fichiers en vue de spécifier l’emplacement [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] pour l’utilitaire **dtexec** .  
+-   Dans les étapes du travail de l’Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui appellent directement l’utilitaire **dtexec** (dtexec.exe), ne met pas à jour le chemin du système de fichiers pour l’utilitaire **dtexec** . Vous devez modifier manuellement ces étapes du travail pour mettre à jour le chemin d’accès au système de fichiers en vue de spécifier l’emplacement [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)] pour l’utilitaire **dtexec** .  
   
 ### <a name="what-you-can-do-after-upgrading"></a>Ce que vous pouvez faire après la mise à niveau  
  Une fois la mise à niveau terminée, vous pouvez accomplir les tâches suivantes :  
@@ -128,12 +128,12 @@ ms.locfileid: "92193906"
   
 -   Vous ne pouvez pas utiliser les outils [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] pour concevoir, exécuter ou gérer des packages [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Les outils [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] incluent les versions correspondantes de [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)], de l’Assistant Importation et Exportation [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et de l’utilitaire d’exécution de package (dtexecui.exe). La mise à niveau ne supprime pas les outils [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]. Toutefois, vous ne serez pas en mesure de faire appel à ces outils pour continuer à utiliser les packages [!INCLUDE[ssISversion10](../../includes/ssisversion10-md.md)] ou version ultérieure sur un serveur qui a été mis à niveau.  
   
--   Par défaut, dans le cadre d'une installation mise à niveau, [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] est configuré de façon à journaliser les événements en rapport avec l'exécution de packages dans le journal d'événements de l'application. Ce paramètre peut générer trop d'entrées de journal d'événements lorsque vous utilisez la fonctionnalité collecteur de données de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Les événements enregistrés incluent l'ID d'événement 12288, « le Package a démarré », et l'ID d'événement 12289, « le Package a fini avec succès ». Pour arrêter l'enregistrement de ces deux événements dans le journal d'événements de l'application, ouvrez le Registre pour y apporter des modifications. Dans le Registre, recherchez le nœud HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\130\SSIS et modifiez la valeur DWORD du paramètre LogPackageExecutionToEventLog en remplaçant 1 par 0.  
+-   Par défaut, dans le cadre d'une installation mise à niveau, [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] est configuré de façon à journaliser les événements en rapport avec l'exécution de packages dans le journal d'événements de l'application. Ce paramètre peut générer trop d'entrées de journal d'événements lorsque vous utilisez la fonctionnalité collecteur de données de [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)]. Les événements enregistrés incluent l'ID d'événement 12288, « le Package a démarré », et l'ID d'événement 12289, « le Package a fini avec succès ». Pour arrêter l'enregistrement de ces deux événements dans le journal d'événements de l'application, ouvrez le Registre pour y apporter des modifications. Dans le Registre, recherchez le nœud HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\130\SSIS et modifiez la valeur DWORD du paramètre LogPackageExecutionToEventLog en remplaçant 1 par 0.  
   
-## <a name="upgrading-only-the-database-engine-to-sscurrent"></a>Mise à niveau du seul moteur de base de données vers [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]  
+## <a name="upgrading-only-the-database-engine-to-sssql19"></a>Mise à niveau du seul moteur de base de données vers [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)]  
  Cette section décrit les conséquences liées à l'exécution d'une mise à niveau qui obéit aux critères suivants :  
   
--   Mise à niveau d’une instance de [!INCLUDE[ssDE](../../includes/ssde-md.md)]uniquement. Autrement dit, l’instance de [!INCLUDE[ssDE](../../includes/ssde-md.md)] est maintenant une instance de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], mais l’instance de [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] et les outils clients proviennent de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)].  
+-   Mise à niveau d’une instance de [!INCLUDE[ssDE](../../includes/ssde-md.md)]uniquement. Autrement dit, l’instance de [!INCLUDE[ssDE](../../includes/ssde-md.md)] est maintenant une instance de [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)], mais l’instance de [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] et les outils clients proviennent de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)].  
   
 -   L’instance de [!INCLUDE[ssDE](../../includes/ssde-md.md)] se trouve sur un ordinateur, tandis que [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] et les outils clients se trouvent sur un autre ordinateur.  
   

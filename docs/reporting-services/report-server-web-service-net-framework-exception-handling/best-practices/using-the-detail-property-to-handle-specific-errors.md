@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 4392633d-b46b-41e6-bc12-efb64e166704
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 22628ac610fc8de3febba7e820e79be018f8a8d9
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: d22bfdf0659b17e7730c25aef7369d4fa323bce6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "80216375"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100023455"
 ---
 # <a name="using-the-detail-property-to-handle-specific-errors"></a>Utilisation de la propriété Detail pour gérer des erreurs spécifiques
-  Pour mieux classifier les exceptions, [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] retourne des informations supplémentaires sur l’erreur dans la propriété**InnerText** des éléments enfants dans la propriété **Detail** de l’exception SOAP. Dans la mesure où la propriété **Detail** est un objet **XmlNode**, vous pouvez accéder au texte interne de l’élément enfant **Message** à l’aide du code indiqué ci-après.  
+  Pour mieux classifier les exceptions, [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] retourne des informations supplémentaires sur l’erreur dans la propriété **InnerText** des éléments enfants dans la propriété **Detail** de l’exception SOAP. Dans la mesure où la propriété **Detail** est un objet **XmlNode**, vous pouvez accéder au texte interne de l’élément enfant **Message** à l’aide du code indiqué ci-après.  
   
  Pour obtenir la liste de tous les éléments enfants disponibles dans la propriété **Detail**, consultez [Detail, propriété](../../../reporting-services/report-server-web-service-net-framework-exception-handling/soapexception-class/detail-property.md). Pour plus d’informations, consultez « Detail, propriété » dans la documentation du SDK [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)].  
   

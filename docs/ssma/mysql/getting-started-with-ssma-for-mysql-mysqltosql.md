@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 8ebfa061-be6f-4a07-923f-8dc832a82f70
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: e183c885cc08f699926dc88838d8650be55b400b
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 9847b7a709fe64f3fcb7fca92ce1f8a4003843e5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987875"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070254"
 ---
 # <a name="getting-started-with-ssma-for-mysql-mysqltosql"></a>Bien démarrer avec SSMA pour MySQL (MySQLToSQL)
 Assistant Migration SQL Server (SSMA) pour MySQL vous permet de convertir rapidement les schémas de base de données MySQL en SQL Server ou Azure SQL Database schémas, de charger les schémas résultants dans SQL Server ou Azure SQL Database, et de migrer les données de MySQL vers SQL Server ou Azure SQL Database.  
@@ -76,7 +76,7 @@ Vous pouvez utiliser cet Explorateur de métadonnées pour sélectionner les obj
 Pour plus d’informations, consultez [Synchronization (MySQL to SQL Server/Azure SQL Database)](./loading-converted-database-objects-into-sql-server-mysqltosql.md)  
   
 ### <a name="metadata"></a>Métadonnées  
-À droite de chaque Explorateur de métadonnées se trouvent des onglets qui décrivent l’objet sélectionné. Par exemple, si vous sélectionnez une table dans l’Explorateur de métadonnées MySQL, neuf onglets s’affichent : **table**, **SQL**, mappage de type, **données**, **paramètres**, **mappage de jeux**de **caractères**, **modes SQL**, **Propriétés**et **rapport**. L’onglet **rapport** contient des informations uniquement après que vous avez créé un rapport qui contient l’objet sélectionné. Si vous sélectionnez une table dans SQL Server Explorateur de métadonnées, trois onglets s’affichent : **table**, **SQL** et **données**.  
+À droite de chaque Explorateur de métadonnées se trouvent des onglets qui décrivent l’objet sélectionné. Par exemple, si vous sélectionnez une table dans l’Explorateur de métadonnées MySQL, neuf onglets s’affichent : **table**, **SQL**, mappage de type, **données**, **paramètres**, **mappage de jeux** de **caractères**, **modes SQL**, **Propriétés** et **rapport**. L’onglet **rapport** contient des informations uniquement après que vous avez créé un rapport qui contient l’objet sélectionné. Si vous sélectionnez une table dans SQL Server Explorateur de métadonnées, trois onglets s’affichent : **table**, **SQL** et **données**.  
   
 La plupart des paramètres de métadonnées sont en lecture seule. Toutefois, vous pouvez modifier les métadonnées suivantes :  
   
@@ -109,9 +109,9 @@ Le tableau suivant présente les menus SSMA.
 |||  
 |-|-|  
 |**Menu**|**Description**|  
-|**File**|Contient des commandes pour travailler avec des projets, se connecter à MySQL et se connecter à SQL Server ou Azure SQL Database.|  
+|**Fichier**|Contient des commandes pour travailler avec des projets, se connecter à MySQL et se connecter à SQL Server ou Azure SQL Database.|  
 |**Modifier**|Contient des commandes pour rechercher et utiliser du texte dans les pages de détails. Pour ouvrir la boîte de dialogue **gérer les signets** , dans le menu Edition, cliquez sur gérer les signets. Dans la boîte de dialogue, vous verrez une liste de signets existants. Vous pouvez utiliser les boutons sur le côté droit de la boîte de dialogue pour gérer les signets.|  
-|**Afficher**|Contient la commande **synchroniser les explorateurs de métadonnées** . Cela synchronise les objets entre l’Explorateur de métadonnées MySQL et SQL Server ou Azure SQL Database Explorateur de métadonnées. Contient également des commandes permettant d’afficher et de masquer les volets de **sortie** et de **liste d’erreurs** , ainsi que les **mises en page** d’options à gérer avec les dispositions.|  
+|**Visualiser**|Contient la commande **synchroniser les explorateurs de métadonnées** . Cela synchronise les objets entre l’Explorateur de métadonnées MySQL et SQL Server ou Azure SQL Database Explorateur de métadonnées. Contient également des commandes permettant d’afficher et de masquer les volets de **sortie** et de **liste d’erreurs** , ainsi que les **mises en page** d’options à gérer avec les dispositions.|  
 |**outils**|Contient des commandes pour créer des rapports, convertir un schéma, actualiser à partir de la base de données, migrer des objets et des données, et enregistrer en tant que script. Permet également d’accéder aux boîtes de dialogue paramètres **globaux, paramètres du projet par défaut** et **paramètres du projet** .|  
 |**Aide**|Fournit l’accès à l’aide de SSMA et à la boîte de dialogue **à propos** de.|  
   

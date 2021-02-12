@@ -13,12 +13,12 @@ ms.assetid: ae8226ff-0853-4716-be7b-673ce77dd370
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 630732f9f1d56292a72ddd180ee536008c4ecf83
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 04a4515467265456797fbff8f5dc0446748229ba
+ms.sourcegitcommit: 6f4fb9cfd0cad06127a6328adc745e2ba7c191d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475590"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570466"
 ---
 # <a name="always-encrypted-cryptography"></a>Chiffrement Always Encrypted
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb.md)]
@@ -33,7 +33,9 @@ ms.locfileid: "97475590"
  Une clé de chiffrement de colonne (CEK) est une clé de chiffrement de contenu (par exemple, une clé utilisée pour protéger des données) protégée par une clé CMK.  
   
  Tous les fournisseurs du magasin CMK [!INCLUDE[msCoName](../../../includes/msconame-md.md)] chiffrent les clés CEK à l’aide de la méthode RSA-OAEP (RSA avec Optimal Asymmetric Encryption Padding). Le fournisseur du magasin de clés qui prend en charge l’API de chiffrement Microsoft : La prochaine génération (CNG) dans .NET Framework ([classe SqlColumnEncryptionCngProvider](/dotnet/api/system.data.sqlclient.sqlcolumnencryptioncngprovider)) utilise les paramètres par défaut spécifiés par RFC 8017 dans la Section A.2.1. Ces paramètres par défaut utilisent une fonction de hachage de SHA-1 et une fonction de génération de masque de MGF1 avec SHA-1. Tous les autres fournisseurs du magasin de clés utilisent SHA-256. 
-  
+
+Always Encrypted utilise en interne les modules de chiffrement validés FIPS 140-2. 
+
 ## <a name="data-encryption-algorithm"></a>Algorithme de chiffrement des données  
  Always Encrypted utilise l’algorithme **AEAD_AES_256_CBC_HMAC_SHA_256** pour chiffrer les données de la base de données.  
   

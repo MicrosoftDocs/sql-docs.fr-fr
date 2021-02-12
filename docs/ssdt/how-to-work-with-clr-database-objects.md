@@ -12,12 +12,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 4427101e26905c21e093eca61a5579026522991b
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 02f5aa47948ee5cdbf2cc7f95d749a5f56e47328
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988682"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017949"
 ---
 # <a name="how-to-work-with-clr-database-objects"></a>Procédure : Travailler avec des objets de base de données CLR
 
@@ -59,7 +59,7 @@ Pour plus d'informations sur les conditions de création d'objets de base de don
   
 4.  Notez que `Regex` est souligné en rouge. Cliquez avec le bouton droit sur `Regex`, sélectionnez **Résoudre**, **à l'aide de System.Text.RegularExpressions**.  
   
-5.  Si vous développez avec une instance de serveur Microsoft SQL Server 2012, vous pouvez ignorer cette étape. Sinon, SQL Server 2005 et SQL Server 2008 ne prennent en charge que les projets de base de données générés avec la version 2.0, 3.0 ou 3.5 du .NET Framework. Pour vérifier que la plateforme cible .NET est configurée correctement, cliquez avec le bouton droit sur le projet de base de données **TradeDev** dans l'**Explorateur de solutions**, puis sélectionnez **Propriétés**. Dans la page de propriétés **SQLCLR**, remplacez la**Plateforme cible** par **.NET Framework 3.5** ou version inférieure. Cliquez sur **Oui** dans le dernier écran pour fermer et rouvrir le projet.  
+5.  Si vous développez avec une instance de serveur Microsoft SQL Server 2012, vous pouvez ignorer cette étape. Sinon, SQL Server 2005 et SQL Server 2008 ne prennent en charge que les projets de base de données générés avec la version 2.0, 3.0 ou 3.5 du .NET Framework. Pour vérifier que la plateforme cible .NET est configurée correctement, cliquez avec le bouton droit sur le projet de base de données **TradeDev** dans l'**Explorateur de solutions**, puis sélectionnez **Propriétés**. Dans la page de propriétés **SQLCLR**, remplacez la **Plateforme cible** par **.NET Framework 3.5** ou version inférieure. Cliquez sur **Oui** dans le dernier écran pour fermer et rouvrir le projet.  
   
 6.  Cliquez avec le bouton droit sur le projet **TradeDev** et sélectionnez **Générer** pour générer le projet.  
   
@@ -97,7 +97,7 @@ Pour plus d'informations sur les conditions de création d'objets de base de don
   
 3.  Cliquez avec le bouton droit sur la table Suppliers et sélectionnez **Afficher les données**.  
   
-4.  Entrez **5** pour le champ **id**, **Contoso** pour **nom**, laissez le champ**Adresse** vide et entrez **425 3122 1222** pour le champ **téléphone**. Accédez par tabulation à un champ autre que le champ **téléphone`INSERT` et notez qu'un message s'affiche, indiquant que l'instruction ** est en conflit avec votre contrainte de validation existante, qui valide l'entrée du champ **téléphone** à l'aide d'un modèle de numéro de téléphone prédéfini.  
+4.  Entrez **5** pour le champ **id**, **Contoso** pour **nom**, laissez le champ **Adresse** vide et entrez **425 3122 1222** pour le champ **téléphone**. Accédez par tabulation à un champ autre que le champ **téléphone`INSERT` et notez qu'un message s'affiche, indiquant que l'instruction** est en conflit avec votre contrainte de validation existante, qui valide l'entrée du champ **téléphone** à l'aide d'un modèle de numéro de téléphone prédéfini.  
   
 5.  Remplacez l'entrée par **425 312 1222** et accédez par tabulation à un autre champ. Notez que cette fois-ci, l'entrée est acceptée.  
   

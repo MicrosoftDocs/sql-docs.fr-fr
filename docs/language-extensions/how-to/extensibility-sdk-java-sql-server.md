@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: dphansen
 ms.author: davidph
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15'
-ms.openlocfilehash: 3357beba32fc9efb2f288f16eb90b0af5673f109
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 153ea1440b3a56eabd98533600de1620c9d6cb93
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471730"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100072633"
 ---
 # <a name="microsoft-extensibility-sdk-for-java-for-sql-server"></a>Kit SDK d’extensibilité Microsoft pour Java pour SQL Server
 [!INCLUDE [SQL Server 2019 and later](../../includes/applies-to-version/sqlserver2019.md)]

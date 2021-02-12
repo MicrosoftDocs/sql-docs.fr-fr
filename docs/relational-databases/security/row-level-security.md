@@ -17,12 +17,12 @@ helpviewer_keywords:
 author: VanMSFT
 ms.author: vanto
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 828218dcebe5f2e5ab6c0759083f497876dae6b2
-ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
+ms.openlocfilehash: 739501f78f313f8fbff20d71cc63376a8da27343
+ms.sourcegitcommit: 58e7069b5b2b6367e27b49c002ca854b31b1159d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98813532"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99552675"
 ---
 # <a name="row-level-security"></a>Sécurité au niveau des lignes
 
@@ -302,7 +302,7 @@ Ce petit exemple crée trois utilisateurs et une table externe de six lignes. Il
 ### <a name="prerequisites"></a>Prérequis
 
 1. Vous devez disposer d’un pool SQL dédié. Consultez [Création d’un pool SQL dédié](/azure/synapse-analytics/sql-data-warehouse/create-data-warehouse-portal).
-1. Le serveur qui héberge votre pool SQL dédié doit être inscrit auprès d’AAD. Par ailleurs, vous devez disposer d’un compte de stockage Azure doté d’autorisations de contributeur au blog de stockage. Suivez cette [procédure](/azure/azure-sql/database/vnet-service-endpoint-rule-overview#steps).
+1. Le serveur qui héberge votre pool SQL dédié doit être inscrit auprès d’AAD. Par ailleurs, vous devez disposer d’un compte Stockage Azure doté d’autorisations de contributeur aux données du blog de Stockage. Suivez cette [procédure](/azure/azure-sql/database/vnet-service-endpoint-rule-overview#steps).
 1. Créez un système de fichiers pour votre compte de stockage Azure. Utilisez l’Explorateur Stockage pour afficher votre compte de stockage. Cliquez avec le bouton droit sur des conteneurs, puis sélectionnez *Créer un système de fichiers*.  
 
 Une fois les prérequis en place, créez trois comptes d’utilisateur qui illustrent différentes fonctionnalités d’accès.

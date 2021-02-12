@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: ae0b544fb49a1161699a1a9e2d152abea2d847bb
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: d74fe60ff94d2893dc5a2dd899643cabfd0a4f30
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91985937"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018279"
 ---
 # <a name="how-to-create-test-conditions-for-the-sql-server-unit-test-designer"></a>Procédure : Créer des conditions de test pour le Concepteur de test unitaire SQL Server
 

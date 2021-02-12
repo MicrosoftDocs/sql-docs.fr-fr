@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 3614e601-004e-4a16-8388-836ffd67e9dd
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: ae577ca756b4f575dd1bdf7c8e6c59e379d82098
-ms.sourcegitcommit: 2f166e139f637d6edfb5731510d632a13205eb25
+ms.openlocfilehash: ee0f4c58af897bacf929f0447141256a30682990
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84529617"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100065395"
 ---
 # <a name="deploying-a-data-processing-extension-to-report-designer"></a>Déploiement d’une extension pour le traitement des données sur le Concepteur de rapports
   Le Concepteur de rapports utilise des extensions pour le traitement des données afin de récupérer et traiter des données pendant que vous concevez des rapports. Vous devez déployer votre assembly d'extension pour le traitement des données sur le Concepteur de rapports en tant qu'assembly privé. Vous devez également créer une entrée dans le fichier de configuration du Concepteur de rapports (RSReportDesigner.config.)  

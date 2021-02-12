@@ -13,12 +13,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 42506560d69a8d5b64be5f955a240518c82881d3
-ms.sourcegitcommit: 29a2be59c56f8a4b630af47760ef38d2bf56a3eb
+ms.openlocfilehash: 9425b06215cd44ca2347799386fcae6eb1616208
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92358857"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066904"
 ---
 # <a name="sql-server-data-tools"></a>SQL Server Data Tools
 

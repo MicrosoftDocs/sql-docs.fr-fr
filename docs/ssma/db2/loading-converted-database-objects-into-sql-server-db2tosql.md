@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: f4ea1ced-9f9f-4a9d-88ab-81dbab64adc3
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: e89edc66dee92fb74071de952e056d99c91cbf12
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 209b49e3719400b92a5425bdd680d8bed548e285
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91984995"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100072473"
 ---
 # <a name="loading-converted-database-objects-into-sql-server-db2tosql"></a>Chargement des objets de base de données convertis dans SQL Server (DB2ToSQL)
 Après avoir converti les schémas DB2 en [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vous pouvez charger les objets de base de données résultants dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Vous pouvez faire en sorte que SSMA crée les objets, ou vous pouvez générer un script pour les objets et exécuter les scripts vous-même. En outre, SSMA vous permet de mettre à jour les métadonnées cibles avec le contenu réel de la [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] base de données.  

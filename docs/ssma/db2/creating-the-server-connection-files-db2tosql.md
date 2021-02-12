@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 685419f6-8606-462c-be12-8bace45bede6
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 754f9002dd5b9e8f9111dce59bc81417c704e40d
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 6a03c33bac6415ed4916b5bf7d95cfcff38183be
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91984915"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100076642"
 ---
 # <a name="creating-the-server-connection-files-db2tosql"></a>Création des fichiers de connexion au serveur (DB2ToSQL)
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 1ca622b2-55d8-4666-b80a-8d9791cd3d3b
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 774c1260d3ffcd6797c1e0a1a6d3a88103ae3f5f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f0b27d3ffcab6f13f41bcf354cf966302425906e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88480360"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100067474"
 ---
 # <a name="menu-commands-and-other-shortcut-keys-sybase-to-sql"></a>Commandes de menu et autres touches de raccourci (SybaseToSQL)
 Les sections suivantes décrivent les raccourcis clavier permettant d’accéder aux commandes de menu et autres touches de raccourci utilisées dans les différentes boîtes de dialogue de l’application SSMA pour Sybase.  

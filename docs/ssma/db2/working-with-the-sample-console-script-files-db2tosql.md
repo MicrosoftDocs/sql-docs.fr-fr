@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 5c3080c3-d074-4f99-a5f5-219ebeddc474
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: d609900151e7ced05be4cc92e65c06270b6ef8a5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e9c19e60d2b4b30724dc750f3a99a604334a2155
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88426921"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100069234"
 ---
 # <a name="working-with-the-sample-console-script-files-db2tosql"></a>Utilisation des exemples de fichiers de script de console (DB2ToSQL)
 Quelques exemples de fichiers ont été fournis avec le produit pour la référence et l’utilisation de l’utilisateur. Cette section décrit la façon de personnaliser facilement ces scripts en fonction des besoins de l’utilisateur final.  

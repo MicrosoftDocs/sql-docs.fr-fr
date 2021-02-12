@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 6772d0c5-258f-4d7b-afb0-b5f810e71af1
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: a38808c64209edb094c986e63305707a0a834edb
-ms.sourcegitcommit: 777704aefa7e574f4b7d62ad2a4c1b10ca1731ff
+ms.openlocfilehash: 48c111ab342d7410031851a5635fa73fe143b96b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87823667"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070194"
 ---
 # <a name="installing-ssma-components-on-sql-server-mysqltosql"></a>Installation des composants SSMA sur SQL Server (MySQLToSql)
 
@@ -33,7 +33,7 @@ En outre, lorsque vous migrez des données vers [!INCLUDE[ssNoVersion](../../inc
 
 Avant d’installer les composants du serveur SSMA pour MySQL sur, assurez [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] -vous que l’ordinateur remplit les conditions suivantes :
 
-- [!INCLUDE[msCoName](../../includes/msconame_md.md)]Windows Installer 3,1 ou une version ultérieure.
+- [!INCLUDE[msCoName](../../includes/msconame_md.md)] Windows Installer 3,1 ou une version ultérieure.
 - La [!INCLUDE[msCoName](../../includes/msconame_md.md)] [!INCLUDE[dnprdnshort](../../includes/dnprdnshort_md.md)] version 4.7.2 ou une version ultérieure. Vous pouvez l’obtenir à partir du [Centre de développement .NET Framework](https://go.microsoft.com/fwlink/?LinkId=48882).
 - Le fournisseur client MySQL et la connectivité à la base de données MySQL que vous souhaitez migrer. Vous pouvez installer des fournisseurs à partir du média du produit MySQL ou du site Web MySQL.
 - Le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Service Browser doit être en cours d’exécution pendant l’installation. Cette valeur est utilisée pour remplir une liste des instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans l’Assistant installation. Vous pouvez désactiver le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Service Browser après l’installation.  
@@ -50,8 +50,8 @@ Vous pouvez installer le pack d’extension à tout moment avant de migrer des d
 
 Pour installer le pack d’extension :
 
-1. Copiez SSMA pour **SSMAforMySQLExtensionPack_*n*. msi**, où *n* est le numéro de build, sur l’ordinateur qui exécute [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .
-2. Double-cliquez sur **SSMAforMySQLExtensionPack_*n*. msi**.
+1. Copiez SSMA pour **SSMAforMySQLExtensionPack_ *n*. msi**, où *n* est le numéro de build, sur l’ordinateur qui exécute [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .
+2. Double-cliquez sur **SSMAforMySQLExtensionPack_ *n*. msi**.
 3. Dans la boîte de dialogue **Bienvenue** , cliquez sur **suivant**.
 4. Dans la boîte de dialogue **contrat de licence utilisateur final** , lisez le contrat de licence. Si vous acceptez, sélectionnez l’option **J’accepte le contrat** , puis cliquez sur **suivant**.
 5. Dans la boîte de dialogue **choisir le type d’installation** , cliquez sur par **défaut**.
@@ -76,7 +76,7 @@ Pour installer le pack d’extension :
 
 12. Pour installer les utilitaires sur une autre instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , sélectionnez **Oui**, puis cliquez sur **suivant**. Ou, pour quitter l’Assistant, cliquez sur **non**.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
-- [Installation de SSMA pour MySQL Client](../../ssma/mysql/installing-ssma-for-mysql-client-mysqltosql.md)
+- [Installation de SSMA pour MySQL client](../../ssma/mysql/installing-ssma-for-mysql-client-mysqltosql.md)
 - [Migration de bases de données MySQL vers SQL Server Azure SQL Database](../../ssma/mysql/migrating-mysql-databases-to-sql-server-azure-sql-db-mysqltosql.md)

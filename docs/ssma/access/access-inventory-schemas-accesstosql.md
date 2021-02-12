@@ -37,12 +37,12 @@ helpviewer_keywords:
 ms.assetid: fdd3cff2-4d62-4395-8acf-71ea8f17f524
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 593c36c193b95d1484f3d478018992ea130d5417
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: bddb9d2329c20203aca602e7aec37f235c4b6850
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88418635"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077670"
 ---
 # <a name="access-inventory-schemas-accesstosql"></a>Accéder aux schémas d’inventaire (AccessToSQL)
 Les sections suivantes décrivent les tables créées par SSMA lorsque vous exportez des schémas d’accès vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
@@ -56,7 +56,7 @@ Les métadonnées de base de données sont exportées vers la table **SSMA_Acces
 |**DatabaseName**|**nvarchar(4000)**|Nom de la base de données Access.|  
 |**ExportTime**|**datetime**|Date et heure auxquelles ces métadonnées ont été créées par SSMA.|  
 |**Cheminfichier**|**nvarchar(4000)**|Chemin d’accès complet et nom de fichier de la base de données Access.|  
-|**Taille**|**bigint**|Taille de la base de données Access, en Ko.|  
+|**FileSize**|**bigint**|Taille de la base de données Access, en Ko.|  
 |**FileOwner**|**nvarchar(4000)**|Compte Windows qui est spécifié en tant que propriétaire de la base de données Access.|  
 |**DateCreated**|**datetime**|Date et heure de création de la base de données Access.|  
 |**DateModified**|**datetime**|Date et heure de la dernière modification de la base de données Access.|  
@@ -70,7 +70,7 @@ Les métadonnées de base de données sont exportées vers la table **SSMA_Acces
 |**Classement**|**nvarchar(4000)**|Classement de la base de données Access. Les classements déterminent la façon dont une base de données trie et compare les chaînes.|  
 |**JetVersion**|**nvarchar(4000)**|Version du moteur de base de données Jet. Les bases de données Access utilisent le moteur de base de données Jet sous-jacent.|  
 |**IsUpdatable**|**bit**|Indique si la base de données peut être mise à jour. Si la valeur est 1, la base de données peut être mise à jour. Si la valeur est 0, la base de données est en lecture seule.|  
-|**QueryTimeout**|**int**|Valeur du délai d’expiration de la requête ODBC configurée pour la base de données, en secondes. La valeur par défaut est 60 secondes.|  
+|**QueryTimeout**|**int**|Valeur du délai d’expiration de la requête ODBC configurée pour la base de données, en secondes. La valeur par défaut est de 60 secondes.|  
   
 ## <a name="tables"></a>Tables  
 Les métadonnées de table sont exportées vers la table **SSMA_Access_InventoryTables** . Ce tableau contient les colonnes suivantes :  

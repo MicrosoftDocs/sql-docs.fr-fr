@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 20b3f22e-16a2-4a87-b4eb-c277be6bf5c8
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 7782a8853e1b17ecba0950e647d1335758b998af
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: 13b2accd6b4dc2ba2bbd8c9c1e6db312650d2d62
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87935278"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077620"
 ---
 # <a name="mapping-mysql-and-sql-server-character-set-mysqltosql"></a>Mappage des jeux de caractères MySQL et SQL Server (MySQLToSQL)
 Le jeu de caractères (CharSet) peut être spécifié pour les types de données de caractères MySQL, les expressions et les littéraux.  
@@ -103,7 +103,7 @@ Le mappage de jeu de caractères varie selon les différents niveaux de nœud, �
     |utf8|Unicode UTF-8|NCHAR/NVARCHAR (par défaut)|  
     |ucs2|Unicode UCS-2|NCHAR/NVARCHAR (par défaut)|  
     |cp866|DOS (russe)|CHAR/VARCHAR (valeur par défaut)|  
-    |keybcs2|DOS Kamenicky tchèque-slovaque|CHAR/VARCHAR (valeur par défaut)|  
+    |keybcs2|Czech-Slovak DOS Kamenicky|CHAR/VARCHAR (valeur par défaut)|  
     |macce|Europe centrale Mac|CHAR/VARCHAR (valeur par défaut)|  
     |macro|Europe de l’Ouest Mac|CHAR/VARCHAR (valeur par défaut)|  
     |cp852|DOS-Europe centrale|CHAR/VARCHAR (valeur par défaut)|  

@@ -12,26 +12,28 @@ ms.author: pelopes
 ms.reviewer: mikeray
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 4a2624566444f5cc3b9531d5b6767937dabb2da6
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: f99e5892f697b06bcafcfc35f9672d8ee474bc40
+ms.sourcegitcommit: 10ae200635b9e8554e6bc6f658125e1a80d4d5ae
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643988"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99589292"
 ---
 # <a name="revert-word-breakers-used-by-search-to-previous-version-sql-server-search"></a>Rétablir la version précédente des analyseurs lexicaux utilisés par la recherche (Recherche SQL Server)
+
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
-  [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] installe et active une version des analyseurs lexicaux et des générateurs de formes dérivées pour toutes les langues prises en charge par la recherche en texte intégral à l’exception du coréen. Cet article décrit comment passer de cette version de ces composants à la version précédente, ou de la version précédente à la nouvelle version.  
+
+[!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] installe et active une version des analyseurs lexicaux et des générateurs de formes dérivées pour toutes les langues prises en charge par la recherche en texte intégral à l’exception du coréen. Cet article décrit comment passer de cette version de ces composants à la version précédente, ou de la version précédente à la nouvelle version.  
   
  Cet article ne couvre pas les langues suivantes :  
   
--   **Anglais**. Pour rétablir ou restaurer les composants anglais, consultez [Modifier l'analyseur lexical utilisé pour l'anglais des États-Unis et l'anglais (R.U.)](../../relational-databases/search/change-the-word-breaker-used-for-us-english-and-uk-english.md).  
+- **Anglais**. Pour rétablir ou restaurer les composants anglais, consultez [Modifier l'analyseur lexical utilisé pour l'anglais des États-Unis et l'anglais (R.U.)](../../relational-databases/search/change-the-word-breaker-used-for-us-english-and-uk-english.md).  
   
--   **Danois, polonais et turc**. Les analyseurs lexicaux tiers pour le danois, le polonais et le turc qui étaient inclus avec les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ont été remplacés par les composants [!INCLUDE[msCoName](../../includes/msconame-md.md)] .  
+- **Danois, polonais et turc**. Les analyseurs lexicaux tiers pour le danois, le polonais et le turc qui étaient inclus avec les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ont été remplacés par les composants [!INCLUDE[msCoName](../../includes/msconame-md.md)] .  
   
--   **Tchèque et grec**. Il existe de nouveaux analyseurs lexicaux pour le tchèque et le grec. Les versions antérieures de la recherche en texte intégral de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne prenaient pas en charge ces deux langues.  
+- **Tchèque et grec**. Il existe de nouveaux analyseurs lexicaux pour le tchèque et le grec. Les versions antérieures de la recherche en texte intégral de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne prenaient pas en charge ces deux langues.  
   
--   **Coréen**. L'analyseur lexical et le générateur de formes dérivées pour le coréen ne sont pas mis à niveau dans cette version.  
+- **Coréen**. L'analyseur lexical et le générateur de formes dérivées pour le coréen ne sont pas mis à niveau dans cette version.  
   
  Pour obtenir des informations générales sur les analyseurs lexicaux et générateurs de formes dérivées, consultez [Configurer et gérer les analyseurs lexicaux et générateurs de formes dérivées pour la recherche](../../relational-databases/search/configure-and-manage-word-breakers-and-stemmers-for-search.md).  
   
@@ -42,7 +44,7 @@ ms.locfileid: "97643988"
 |------------------|-------------------|----------------------------------|----------------------|---------------------------------|  
 |NaturalLanguage6.dll|NaturalLanguage6.dll|34|Obtenez et installez une version précédente de NaturalLanguage6.dll en remplaçant la version actuelle du fichier.|Aucune action requise.<br /><br /> Les clés de Registre et les valeurs n'ont pas changé pour cette version.|  
 |(Autre nom de fichier)|NaturalLanguage6.dll|5|Obtenez et installez une version précédente de NaturalLanguage6.dll en remplaçant la version actuelle du fichier.|Modifiez un ensemble d'entrées de Registre pour spécifier la version précédente des composants.|  
-|(Autre nom de fichier)|(Autre nom de fichier)|6|Aucune action requise.<br /><br /> [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] copie la version actuelle et la version précédente des composants dans le dossier Binn.|Modifiez un ensemble d'entrées de Registre pour spécifier la version précédente des composants.|  
+|(Autre nom de fichier)|(Autre nom de fichier)|6|Aucune action requise.<br /><br /> [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] copie la version actuelle et la version précédente des composants dans le dossier Binn.|Modifiez un ensemble d'entrées de Registre pour spécifier la version précédente des composants.|  
   
 > [!WARNING]  
 >  Si vous remplacez la version actuelle du fichier NaturalLanguage6.dll par une version différente, le comportement de toutes les langues qui utilisent ce fichier est affecté.  
@@ -61,40 +63,40 @@ ms.locfileid: "97643988"
   
 |Langage|Abréviation<br />utilisée dans le<br />Registre|LCID|  
 |--------------|---------------------------------------|----------|  
-|Bengali|ben|1093|  
-|Bulgare|bgr|1026|  
-|Catalan|cat|1027|  
-|Espagnol|esn|3082|  
-|Français|fra|1036|  
-|Goudjrati|guj|1095|  
-|Hébreu|heb|1037|  
-|Hindi|hin|1081|  
-|Croate|hrv|1050|  
-|Indonésien|ind|1057|  
-|Islandais|isl|1039|  
-|Italien|ita|1040|  
-|Kannada|kan|1099|  
-|Lituanien|lth|1063|  
-|Letton|lvi|1062|  
-|Malayalam|mal|1100|  
-|Marathi|mar|1102|  
-|Malais|msl|1086|  
-|Neutre|Neutre|0000|  
-|Norvégien (bokmål)|nor|1044|  
-|Pendjabi|panoramique|1094|  
-|Portugais (Brésil)|ptb|1046|  
-|Portugais|ptg|2070|  
-|Roumain|rom|1048|  
-|Slovaque|sky|1051|  
-|Slovène|slv|1060|  
-|Serbe - Cyrillique|srb|3098|  
-|Serbe - Latin|srl|2074|  
-|Suédois|sve|1053|  
-|Tamoul|tam|1097|  
-|Télougou|tel|1098|  
-|Ukrainien|ukr|1058|  
-|Ourdou|urd|1056|  
-|Vietnamien|vit|1066|  
+|Bengali|`ben`|1093|  
+|Bulgare|`bgr`|1026|  
+|Catalan|`cat`|1027|  
+|Espagnol|`esn`|3082|  
+|Français|`fra`|1036|  
+|Goudjrati|`guj`|1095|  
+|Hébreu|`heb`|1037|  
+|Hindi|`hin`|1081|  
+|Croate|`hrv`|1050|  
+|Indonésien|`ind`|1057|  
+|Islandais|`isl`|1039|  
+|Italien|`ita`|1040|  
+|Kannada|`kan`|1099|  
+|Lituanien|`lth`|1063|  
+|Letton|`lvi`|1062|  
+|Malayalam|`mal`|1100|  
+|Marathi|`mar`|1102|  
+|Malais|`msl`|1086|  
+|Neutre|`Neutral`|0000|  
+|Norvégien (bokmål)|`nor`|1044|  
+|Pendjabi|`pan`|1094|  
+|Portugais (Brésil)|`ptb`|1046|  
+|Portugais|`ptg`|2070|  
+|Roumain|`rom`|1048|  
+|Slovaque|`sky`|1051|  
+|Slovène|`slv`|1060|  
+|Serbe - Cyrillique|`srb`|3098|  
+|Serbe - Latin|`srl`|2074|  
+|Suédois|`sve`|1053|  
+|Tamoul|`tam`|1097|  
+|Télougou|`tel`|1098|  
+|Ukrainien|`ukr`|1058|  
+|Ourdou|`urd`|1056|  
+|Vietnamien|`vit`|1066|  
   
  Le tableau précédent est trié par ordre alphabétique selon la colonne Abréviation.  
   
@@ -102,9 +104,9 @@ ms.locfileid: "97643988"
   
 1.  Accédez au dossier Binn décrit ci-dessus.  
   
-2.  Sauvegardez la version [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] de NaturalLanguage6.dll dans un autre emplacement.  
+2.  Sauvegardez la version [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] de NaturalLanguage6.dll dans un autre emplacement.  
   
-3.  Copiez la version précédente de NaturalLanguage6.dll du dossier Binn d'une instance de [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] ou de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] dans le dossier Binn de l'instance [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] .  
+3.  Copiez la version précédente de NaturalLanguage6.dll du dossier Binn d'une instance de [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] ou de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] dans le dossier Binn de l'instance [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] .  
   
     > [!WARNING]  
     >  Cette modification affecte toutes les langues qui utilisent NaturalLanguage6.dll dans la version actuelle et la version précédente.  
@@ -113,9 +115,9 @@ ms.locfileid: "97643988"
 
 ###  <a name="to-restore-the-current-components"></a><a name="nl6nl6restore"></a> Pour restaurer les composants actuels  
   
-1.  Accédez à l'emplacement où vous avez sauvegardé la version [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] de NaturalLanguage6.dll.  
+1.  Accédez à l'emplacement où vous avez sauvegardé la version [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] de NaturalLanguage6.dll.  
   
-2.  Copiez la version actuelle de NaturalLanguage6.dll à partir de l'emplacement de sauvegarde dans le dossier Binn de l'instance [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] .  
+2.  Copiez la version actuelle de NaturalLanguage6.dll à partir de l'emplacement de sauvegarde dans le dossier Binn de l'instance [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] .  
   
     > [!WARNING]  
     >  Cette modification affecte toutes les langues qui utilisent NaturalLanguage6.dll dans la version actuelle et la version précédente.  
@@ -148,9 +150,9 @@ ms.locfileid: "97643988"
   
 2.  Ne supprimez pas les fichiers pour la version actuelle des composants du dossier Binn.  
   
-3.  Sauvegardez la version [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] de NaturalLanguage6.dll dans un autre emplacement.  
+3.  Sauvegardez la version [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] de NaturalLanguage6.dll dans un autre emplacement.  
   
-4.  Copiez la version précédente de NaturalLanguage6.dll du dossier Binn d'une instance de [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] ou de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] dans le dossier Binn de l'instance [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] .  
+4.  Copiez la version précédente de NaturalLanguage6.dll du dossier Binn d’une instance de [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] ou [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] dans le dossier Binn de la nouvelle instance [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].  
   
     > [!WARNING]  
     >  Cette modification affecte toutes les langues qui utilisent NaturalLanguage6.dll dans la version actuelle et la version précédente.  
@@ -177,9 +179,9 @@ ms.locfileid: "97643988"
   
 ###  <a name="to-restore-the-current-components"></a><a name="newnl6restore"></a> Pour restaurer les composants actuels  
   
-1.  Accédez à l'emplacement où vous avez sauvegardé la version [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] de NaturalLanguage6.dll.  
+1.  Accédez à l'emplacement où vous avez sauvegardé la version [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] de NaturalLanguage6.dll.  
   
-2.  Copiez la version actuelle de NaturalLanguage6.dll à partir de l'emplacement de sauvegarde dans le dossier Binn de l'instance [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] .  
+2.  Copiez la version actuelle de NaturalLanguage6.dll à partir de l'emplacement de sauvegarde dans le dossier Binn de l'instance [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] .  
   
     > [!WARNING]  
     >  Cette modification affecte toutes les langues qui utilisent NaturalLanguage6.dll dans la version actuelle et la version précédente.  
@@ -255,7 +257,7 @@ ms.locfileid: "97643988"
 |Nom de fichier actuel|MSWB7.dll|MSWB7.dll|  
   
 ##  <a name="languages-for-which-neither-the-previous-nor-the-current-file-name-is-naturallanguage6dll"></a><a name="newnew"></a> Langues pour lesquelles ni le nom de fichier précédent ni le nom de fichier actuel n'est NaturalLanguage6.dll  
- Pour les langues dans le tableau suivant, les noms de fichier des analyseurs lexicaux et des générateurs de formes dérivées précédents sont différents des noms de fichier des nouvelles versions. Ni le nom de fichier précédent ni le nom de fichier actuel n'est NaturalLanguage6.dll. Vous n'êtes pas obligé de remplacer des fichiers, et ce car le programme d'installation de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] copie la version actuelle et la version précédente des composants dans le dossier Binn. Toutefois, vous devez modifier un ensemble d'entrées de Registre pour spécifier la version précédente ou la version actuelle des composants.  
+ Pour les langues dans le tableau suivant, les noms de fichier des analyseurs lexicaux et des générateurs de formes dérivées précédents sont différents des noms de fichier des nouvelles versions. Ni le nom de fichier précédent ni le nom de fichier actuel n'est NaturalLanguage6.dll. Vous n'êtes pas obligé de remplacer des fichiers, et ce car le programme d'installation de [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] copie la version actuelle et la version précédente des composants dans le dossier Binn. Toutefois, vous devez modifier un ensemble d'entrées de Registre pour spécifier la version précédente ou la version actuelle des composants.  
   
  **Liste des langues affectées**  
   

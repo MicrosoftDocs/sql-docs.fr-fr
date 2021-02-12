@@ -11,12 +11,12 @@ ms.assetid: e223fb7d-05ec-4fa5-8973-d845c33a23dd
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 6b27143bca2e5b2a2ef9d844fc5f2fc8208734a5
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ff0869f3219eb21d079be062203f20e4602217c5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492374"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100067774"
 ---
 # <a name="project-settingssynchronization-oracletosql"></a>Paramètres du projet (Synchronisation) (OracleToSQL)
 La page synchronisation de la boîte de dialogue **paramètres du projet** contient des paramètres qui personnalisent la manière dont SSMA charge et actualise les objets de base de données, tels que les tables et les procédures stockées, dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
@@ -30,7 +30,7 @@ Vous pouvez accéder à deux pages de synchronisation différentes qui contienne
 -   Pour spécifier les paramètres du projet actif, dans le menu **Outils** , cliquez sur **paramètres du projet**, puis sur **synchronisation** en bas du volet gauche.  
   
 ## <a name="miscellaneous-options"></a>Options diverses  
-**Essayer**  
+**Tentatives**  
 Spécifie le nombre de tentatives que SSMA doit effectuer lors du chargement des objets dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Les objets qui ne sont pas chargés [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans la tentative actuelle seront tentés à nouveau jusqu’à ce que SSMA atteigne le nombre maximal de tentatives dans le processus de synchronisation en cours. L’ensemble de valeurs par défaut est **2**  
   
 ## <a name="synchronization-for-oracle-options"></a>Synchronisation pour les options Oracle  

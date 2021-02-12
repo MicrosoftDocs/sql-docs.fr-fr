@@ -11,12 +11,12 @@ ms.assetid: 16849cfd-050c-4ac7-bd3d-a929aebb5010
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: d16a3aee923d7b57e7195799ed26a72571f4d92d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1328fe2737a461ceafd7bb1c9cd816eec0d4a9fd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88320535"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100078260"
 ---
 # <a name="new-project-oracletosql"></a>Nouveau projet (OracleToSQL)
 Utilisez la boîte de dialogue **nouveau projet** pour créer un nouveau projet SSMA. Pour accéder à la boîte de dialogue **nouveau projet** , dans le menu **fichier** , cliquez sur **nouveau projet**.  

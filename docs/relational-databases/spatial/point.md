@@ -1,7 +1,7 @@
 ---
 description: Point
 title: Point | Microsoft Docs
-ms.date: 03/14/2017
+ms.date: 02/02/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
@@ -14,12 +14,12 @@ ms.assetid: 2a596ec4-8b2f-4962-bcb4-e5c8f77edad5
 author: MladjoA
 ms.author: mlandzic
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 0e17822f4eb88a1103ab5a214249ec5db7146c74
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: bcbdda427a587e06bf1ad678939b8164178112dd
+ms.sourcegitcommit: 05fc736e6b6b3a08f503ab124c3151f615e6faab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97475330"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99478574"
 ---
 # <a name="point"></a>Point
 [!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/sql-asdb-asdbmi.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "97475330"
   
 ## <a name="examples"></a>Exemples  
 ### <a name="example-a"></a>Exemple A.
-L’exemple suivant crée une instance `geometry Point`qui représente le point (3, 4) avec un SRID de 0.  
+L’exemple suivant crée une instance géométrie Point qui représente le point (3, 4) avec un SRID de 0.  
   
 ```sql  
 DECLARE @g geometry;  
@@ -41,7 +41,7 @@ SET @g = geometry::STGeomFromText('POINT (3 4)', 0);
 ```  
   
 ### <a name="example-b"></a>Exemple B.
-L’exemple suivant crée une instance `geometry``Point` qui représente le point (3, 4) avec une valeur Z (élévation) de 7, une valeur M (mesure) de 2,5 et le SRID par défaut de 0.  
+L’exemple suivant crée une instance géométrie Point qui représente le point (3, 4) avec une valeur Z (élévation) de 7, une valeur M (mesure) de 2,5 et le SRID par défaut de 0.  
   
 ```  
 DECLARE @g geometry;  
@@ -49,7 +49,7 @@ SET @g = geometry::Parse('POINT(3 4 7 2.5)');
 ```  
   
 ### <a name="example-c"></a>Exemple C.
-L’exemple suivant retourne les valeurs X, Y, Z et M pour l’instance `geometry``Point`.  
+L’exemple suivant retourne les valeurs X, Y, Z et M pour l’instance géométrie Point.  
   
 ```  
 SELECT @g.STX;  

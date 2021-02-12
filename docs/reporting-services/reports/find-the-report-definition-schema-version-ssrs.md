@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 67954419-1b61-4481-a3b9-23b4ba7a5624
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: fd43fb3dba83ab3821b1b670468e7849faac2044
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: f3e656d797f876fdd40ab1904f153a332673f504
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "79510140"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100069454"
 ---
 # <a name="find-the-report-definition-schema-version-ssrs"></a>Rechercher la version du schéma de définition de rapport (SSRS)
 

@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: e1ebdca633ff866d51fcc20aa05993bb5969e4b2
-ms.sourcegitcommit: b860fe41b873977649dca8c1fd5619f294c37a58
+ms.openlocfilehash: bd6ea94af644c981d368608a0fe864dbdf237181
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2020
-ms.locfileid: "85518809"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018219"
 ---
 # <a name="how-to-edit-an-existing-table-using-queries"></a>Procédure : Modifier une table existante à l’aide de requêtes
 

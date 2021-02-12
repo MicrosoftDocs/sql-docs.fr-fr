@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: b0a08639-3101-40a2-abe2-3a41753826d1
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: fc0d61726a885b6a2422a4fe048121e65b8642f8
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 45edea2b8f4b489f7681ded859a4f81a06047b5a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88423243"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100044969"
 ---
 # <a name="setting-the-item-namespace-for-the-getproperties-method"></a>Définition de l'espace de noms d'élément pour la méthode GetProperties
   Vous pouvez utiliser l'en-tête SOAP <xref:ReportService2010.ItemNamespaceHeader> dans [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] pour récupérer des propriétés d'élément selon deux identificateurs d'élément différents : le chemin d'accès complet de l'élément ou l'ID de l'élément.  

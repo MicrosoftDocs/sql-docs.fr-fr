@@ -13,12 +13,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 7c8321f4f1264b8bf0352f459bde02a07e439dd3
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: ebe23b534590bfb45c4a0bffce78d2139ef8912c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85895794"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017989"
 ---
 # <a name="how-to-view-and-edit-data-in-a-table"></a>Procédure : Afficher et modifier des données dans une table
 

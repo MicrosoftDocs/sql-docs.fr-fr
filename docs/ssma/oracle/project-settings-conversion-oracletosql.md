@@ -10,12 +10,12 @@ ms.technology: ssma
 ms.topic: conceptual
 ms.assetid: a98a5e07-eb5e-47b9-a6f2-e2cb3a18309c
 ms.author: alexiva
-ms.openlocfilehash: a999bcde42029b50772f18925a1f24432d558a3f
-ms.sourcegitcommit: 8fcee1bc2503bea81a0c9d02827193ab71d8ca32
+ms.openlocfilehash: 828f206c7fc6b8d653e0b141b8041f10093cdf4b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2021
-ms.locfileid: "98564228"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100068007"
 ---
 # <a name="project-settings-conversion-oracletosql"></a>Paramètres du projet (Conversion) (OracleToSQL)
 

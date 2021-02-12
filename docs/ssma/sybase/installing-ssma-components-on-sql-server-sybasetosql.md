@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 5ad9e12c-2cdb-4dd2-8703-05a23242d19d
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 33b5663e7693de8c031f2b39c0436a771920be56
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 82f5d7eef228326f0dba9b194b87bffce4bb5eff
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88372365"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100078230"
 ---
 # <a name="installing-ssma-components-on-sql-server-sybasetosql"></a>Installation des composants SSMA sur SQL Server (SybaseToSQL)
 
@@ -23,7 +23,7 @@ Outre l’installation de SSMA, pour l’utilisation de la migration des donnée
 
 ## <a name="ssma-for-sybase-extension-pack"></a>SSMA pour le pack d’extension Sybase
 
-Le pack d’extension SSMA ajoute les bases de données, **sysdb** et **ssmatesterdb_syb**, à l’instance spécifiée de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . La base de données **sysdb** contient les tables et les procédures stockées nécessaires à la migration des données. La base de données **ssmatester_syb** contient le **ssma_sybase_utilities**de schéma, dans lequel les objets (tables, déclencheurs, vues) utilisés par le composant testeur SSMA sont créés.
+Le pack d’extension SSMA ajoute les bases de données, **sysdb** et **ssmatesterdb_syb**, à l’instance spécifiée de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . La base de données **sysdb** contient les tables et les procédures stockées nécessaires à la migration des données. La base de données **ssmatester_syb** contient le **ssma_sybase_utilities** de schéma, dans lequel les objets (tables, déclencheurs, vues) utilisés par le composant testeur SSMA sont créés.
 
 En outre, lorsque vous migrez des données vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , SSMA crée [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] des travaux de l’agent lorsque le moteur de migration de données côté serveur est utilisé pour la migration des données.
 
@@ -49,8 +49,8 @@ Vous pouvez installer le pack d’extension à tout moment avant de migrer des d
 
 Pour installer le pack d’extension :
 
-1. Copiez **SSMAforSybaseExtensionPack_*n*. msi**, où *n* est le numéro de build, sur l’ordinateur qui exécute [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .
-2. Double-cliquez sur **SSMAforSybaseExtensionPack_*n*. msi**.
+1. Copiez **SSMAforSybaseExtensionPack_ *n*. msi**, où *n* est le numéro de build, sur l’ordinateur qui exécute [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .
+2. Double-cliquez sur **SSMAforSybaseExtensionPack_ *n*. msi**.
 3. Sur la page d’**accueil**, cliquez sur **Suivant**.
 4. Sur la page **contrat de licence utilisateur final** , lisez le contrat de licence. Si vous acceptez, sélectionnez l’option **J’accepte le contrat** , puis cliquez sur **suivant**.
 5. Dans la page **choisir le type d’installation** , cliquez sur par **défaut**.
@@ -79,7 +79,7 @@ Pour installer le pack d’extension :
 
 ### <a name="sql-server-database-objects"></a>SQL Server les objets de base de données
 
-Une fois que vous avez installé le pack d’extension, vous voyez s’afficher une table **ssma_syb. bcp_migration_packages** dans la base de données **sysdb** . Vous verrez également les procédures stockées suivantes :
+Après avoir installé le pack d’extension, vous verrez une table **ssma_syb. bcp _migration_packages** dans la base de données **sysdb** . Vous verrez également les procédures stockées suivantes :
 
 - `bcp_clean_migration_data`
 - `bcp_ensure_message_table`
@@ -110,7 +110,7 @@ Les instructions suivantes fournissent les étapes d’installation de base pour
 3. Dans la page sélection de fonctionnalités, sélectionnez les fournisseurs de données ODBC, OLE DB et ADO.NET.
 4. Vérifiez les fonctionnalités sélectionnées, puis cliquez sur **Terminer** pour installer le fournisseur de données.
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 - [Installation de SSMA pour Sybase client](../../ssma/sybase/installing-ssma-for-sybase-client-sybasetosql.md)
 - [Migration de bases de données Sybase ASE vers SQL Server Azure SQL Database](../../ssma/sybase/migrating-sybase-ase-databases-to-sql-server-azure-sql-db-sybasetosql.md)

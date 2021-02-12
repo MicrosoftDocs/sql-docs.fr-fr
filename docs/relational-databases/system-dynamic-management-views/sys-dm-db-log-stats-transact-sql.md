@@ -20,19 +20,19 @@ ms.assetid: ''
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=sql-server-2017||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 88ac57a5ba41afacafe8565225ed9ce7bca55991
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: d9220bbd52a63f571287a76ccbfc7c88a064abd8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99191184"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100071673"
 ---
 # <a name="sysdm_db_log_stats-transact-sql"></a>sys.dm_db_log_stats (Transact-SQL)   
 [!INCLUDE[tsql-appliesto-2016sp2-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-2016sp2-asdb-xxxx-xxx-md.md)]
 
 Retourne des informations et des attributs de niveau récapitulatif sur les fichiers journaux des transactions des bases de données. Utilisez ces informations pour la surveillance et le diagnostic de l’intégrité du journal des transactions.   
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   

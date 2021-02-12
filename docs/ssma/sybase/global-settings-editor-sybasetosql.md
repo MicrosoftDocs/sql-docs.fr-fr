@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 0bc0d5e8-b092-413e-a0ee-7ef2c516d324
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 08c7a7a779ca03e3b1d2a13d0e9934ac8ace92b3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1937ab87a2eb9343bf739a9213c64efc9789d122
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88497692"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100078710"
 ---
 # <a name="global-settings-editor-sybasetosql"></a>Paramètres globaux (Éditeur) (SybaseToSQL)
 Utilisez la page éditeur de la boîte de dialogue **paramètres globaux** pour spécifier les paramètres des fenêtres de l’éditeur de code.  

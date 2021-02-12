@@ -11,12 +11,12 @@ ms.assetid: 112e0240-351d-46a9-98c7-2be09f26ac60
 ms.reviewer: maggies
 author: RhysSchmidtke
 ms.author: rhys
-ms.openlocfilehash: 7edb40b44108ebf66c9462e8c909fbbd9f39510f
-ms.sourcegitcommit: 0c0e4ab90655dde3e34ebc08487493e621f25dda
+ms.openlocfilehash: b6d1c768bb933036d3b23d37be20974515896a3b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443007"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100068154"
 ---
 # <a name="release-notes-for-report-viewer-controls-for-webforms-and-winforms-of-ssrs"></a>Notes de publication pour les contrôles Visionneuse de rapports pour WebForms et WinForms de SSRS
 

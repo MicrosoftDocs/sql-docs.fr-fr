@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: alayu, maghan, sstein
 ms.custom: seodec18, sqlfreshmay19
 ms.date: 08/02/2019
-ms.openlocfilehash: 6a637791eac7858e905f766126ca93d9277b65c1
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 5e9973932338ee2937f5e0942242e95af6d6164d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97637625"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040039"
 ---
 # <a name="quickstart-use-azure-data-studio-to-connect-and-query-sql-server"></a>Démarrage rapide : Utilisez Azure Data Studio pour vous connecter et interroger SQL Server
 

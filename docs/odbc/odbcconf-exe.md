@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 3bf2be83-61f9-4183-836b-85204ac7116a
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: d4f4af809044a46fd6df8c45c77cf1d3a7929226
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e62fec06a10316bb3b773cf599f11c23ba376cfd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88471254"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100075045"
 ---
 # <a name="odbcconfexe"></a>ODBCCONF.EXE
 ODBCCONF.exe est un outil en ligne de commande qui vous permet de configurer des pilotes ODBC et des noms de sources de données.  
@@ -64,7 +64,7 @@ ODBCCONF [switches] action
 |INSTALLDRIVER|Équivalent à la [fonction SQLInstallDriverEx](../odbc/reference/syntax/sqlinstalldriverex-function.md).<br /><br /> Pour plus d’informations sur la syntaxe de paires mot clé/valeur transmise à INSTALLDRIVER, consultez [sous-clés de spécification de pilote](../odbc/reference/install/driver-specification-subkeys.md).<br /><br /> Par exemple :<br /><br /> /A {INSTALLDRIVER "Driver &#124; pilote =c:\your.dll &#124; Setup =c:\your.dll &#124; APILevel = 2 &#124; ConnectFunctions = YYY &#124; DriverODBCVer = 03.50 &#124; FileUsage = 0 &#124; SQLLevel = 1"}|  
 |*Configuration du traducteur INSTALLTRANSLATOR * * chemin du pilote*|Ajoute des informations sur un traducteur à la clé de Registre **HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBCINST.INI \Odbc Translators** .<br /><br /> Équivalent à la [fonction SQLInstallTranslatorEx](../odbc/reference/syntax/sqlinstalltranslatorex-function.md).<br /><br /> Pour plus d’informations sur la syntaxe de paires mot clé/valeur transmise à INSTALLDRIVER, consultez sous-clés de la [spécification du traducteur](../odbc/reference/install/translator-specification-subkeys.md).<br /><br /> Par exemple :<br /><br /> /A {INSTALLTRANSLATOR "mon traducteur &#124; Translator =c:\my.dll &#124; de l’installation =c:\my.dll"}|  
 |REGSVR, *dll*|Inscrit une DLL.<br /><br /> Équivalent à regsvr32.exe.<br /><br /> Par exemple :<br /><br /> /A {REGSVR c:\my.dll}|  
-|SETFILEDSNDIR|Lorsque HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI fichier \ODBC DSN\DefaultDSNDir n’existe pas, l’action SETFILEDSNDIR le crée et lui attribue la valeur à HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\Windows\CurrentVersion\CommonFilesDir, ajoutée avec les sources \ODBC\Data.<br /><br /> La valeur de HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI fichier \ODBC DSN\DefaultDSNDir spécifie l’emplacement par défaut utilisé par l’administrateur de la source de données ODBC lors de la création d’une source de données basée sur des fichiers.<br /><br /> Par exemple :<br /><br /> /A {SETFILEDSNDIR}|  
+|SETFILEDSNDIR|Lorsque HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI fichier \ODBC DSN\DefaultDSNDir n’existe pas, l’action SETFILEDSNDIR le crée et lui attribue la valeur de HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\CommonFilesDir, ajoutée aux sources \ODBC\Data.<br /><br /> La valeur de HKEY_LOCAL_MACHINE\SOFTWARE\ODBC\ODBC.INI fichier \ODBC DSN\DefaultDSNDir spécifie l’emplacement par défaut utilisé par l’administrateur de la source de données ODBC lors de la création d’une source de données basée sur des fichiers.<br /><br /> Par exemple :<br /><br /> /A {SETFILEDSNDIR}|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Microsoft ODBC (Open Database Connectivity)](../odbc/microsoft-open-database-connectivity-odbc.md)

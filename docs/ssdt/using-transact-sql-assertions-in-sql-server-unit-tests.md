@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: f7b6eaf18166bd546e8eb3e89ee2176c39dfb49a
-ms.sourcegitcommit: 7791bd2ba339edc5cd2078a6537c8f6bfe72a19b
+ms.openlocfilehash: 23dff8f246d741896a042486f0dbe6c95067a8d9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98564417"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066760"
 ---
 # <a name="using-transact-sql-assertions-in-sql-server-unit-tests"></a>Utilisation d'assertions Transact-SQL dans les tests unitaires SQL Server
 

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 323fd58a-a462-4c48-b188-77ebc0b4212e
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 237d056f8b42570fcab375330a9eb3172eb11758
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 1b5ccf62185045dc8d3efaccfe00e26a01f01a9d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596963"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100015659"
 ---
 # <a name="creating-a-custom-report-item-design-time-component"></a>Création d'un composant au moment de la conception d'élément de rapport personnalisé
   Un composant au moment de la conception d'élément de rapport personnalisé est un contrôle qui peut être utilisé dans l'environnement du Concepteur de rapports Visual Studio. Le composant au moment de la conception d'élément de rapport personnalisé fournit une aire de conception activée qui prend en charge les opérations de glisser-déplacer et l'intégration avec l'Explorateur de propriétés [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], tout en fournissant des éditeurs de propriété personnalisée.  

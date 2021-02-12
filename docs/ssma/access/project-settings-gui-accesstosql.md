@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: e0f611ac-7b67-4245-8d1c-804c1c44c935
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 06cbbe7bbfd71483f2ac778b717758b91a4d8e2d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 42ea93836e695ca6d4c8cebfd86a5b71f5969dc8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88488215"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066434"
 ---
 # <a name="project-settings-gui-accesstosql"></a>Paramètres du projet (GUI) (AccessToSQL)
 Les paramètres de projet d’interface utilisateur graphique vous permettent de configurer la façon dont les données s’affichent sous l’onglet **données** et d’inclure les rapports de données avec les rapports d’évaluation.  

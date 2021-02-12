@@ -30,12 +30,12 @@ helpviewer_keywords:
 ms.assetid: e0ef67bf-80a6-4e6c-a82d-5d46e0623c6c
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 04f6f0adb61a0bb7ccf33e3705a4a32b9ed9d69e
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 38385657de137e9e13bf03f7a4209be1303452d3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988225"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100076075"
 ---
 # <a name="converting-access-database-objects-accesstosql"></a>Conversion d’objets de base de données Access (AccessToSQL)
 Une fois que vous avez ajouté des bases de données Access et que vous vous êtes connecté à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure, SSMA affiche les métadonnées des objets Access et [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Azure SQL Database. Vous pouvez maintenant sélectionner accéder aux objets de base de données, puis convertir les schémas dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure schémas.  
@@ -88,7 +88,7 @@ Pour convertir des objets de base de données Access, vous devez d’abord séle
   
     -   Pour convertir ou omettre des tables individuelles, développez la base de données, développez **tables**, puis activez ou désactivez la case à cocher en regard de la table.  
   
-3.  Effectuez l’une des actions suivantes :  
+3.  Effectuez l’une des opérations suivantes :  
   
     -   Pour convertir des schémas, cliquez avec le bouton droit sur **bases de données** , puis sélectionnez **convertir le schéma**.  
   

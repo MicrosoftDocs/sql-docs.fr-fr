@@ -9,12 +9,12 @@ ms.topic: how-to
 author: garyericson
 ms.author: garye
 monikerRange: =sql-server-2016||=sql-server-2017
-ms.openlocfilehash: 8ba60de81e880c03db50031c8489850b28a77018
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: eacae756f788a5cf42c19cae27a975f98111fb71
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471210"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100068928"
 ---
 # <a name="change-the-default-r-or-python-language-runtime-version"></a>Modifier la version du runtime de langage R ou Python par défaut
 

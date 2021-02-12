@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 2280fff6-3de7-44b1-87da-5db0ec975928
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 1390e53ddbc864f634b581bd2a1b42902c6b6bb9
-ms.sourcegitcommit: 2f166e139f637d6edfb5731510d632a13205eb25
+ms.openlocfilehash: e5f82b3db5f52656e88c54062f203d273d8ab24c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84529325"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100065264"
 ---
 # <a name="using-reporting-services-security-policy-files"></a>Utilisation des fichiers de stratégie de sécurité Reporting Services
   [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] stocke les informations de stratégie de sécurité dans trois fichiers de configuration qui sont copiés dans le système de fichiers au cours de l'installation. Ces fichiers de configuration peuvent contenir une combinaison de stratégies de sécurité à usage interne et définies par l'utilisateur pour les assemblys de code dans [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)]. Les trois fichiers de configuration correspondent à trois composants sécurisables dans [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] : le service Windows Report Server, l'application Web du Gestionnaire de rapports et la fenêtre d'aperçu du Concepteur de rapports.  

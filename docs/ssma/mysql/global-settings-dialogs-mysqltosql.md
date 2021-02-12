@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 6df20fbb-e92d-475f-a94d-aaf70b06eb9b
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: e902927b90ff868e8766b3eb1fe9839938dd8ece
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f4211de000b662794498532ba213a7a2439e8a27
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88463414"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070218"
 ---
 # <a name="global-settings-dialogs-mysqltosql"></a>Paramètres globaux (boîtes de dialogue) (MySQLToSQL)
 Utilisez la page boîtes de dialogue de la boîte de dialogue **paramètres globaux** pour spécifier les paramètres d’action et d’avertissement de l’utilisateur par défaut pour SSMA.  

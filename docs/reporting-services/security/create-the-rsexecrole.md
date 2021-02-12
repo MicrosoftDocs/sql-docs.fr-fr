@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 7ac17341-df7e-4401-870e-652caa2859c0
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 3735f53eac6101d2cc02568d1ea6fa789df50512
-ms.sourcegitcommit: fe59f8dc27fd633f5dfce54519d6f5dcea577f56
+ms.openlocfilehash: fc9beaae557b81ae65e4fd63a22f5696b4f78052
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91935389"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100015309"
 ---
 # <a name="create-the-rsexecrole"></a>Créer le rôle RSExecRole
 

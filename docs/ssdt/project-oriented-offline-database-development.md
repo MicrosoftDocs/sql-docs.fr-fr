@@ -13,12 +13,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 5e56a458d06fbc70a71f36f87fdcd68bd8688847
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: e36876d1b30b12dbae1dd4c7d3c72230070c9ef8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85896616"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077053"
 ---
 # <a name="project-oriented-offline-database-development"></a>Développement de base de données hors connexion orienté projet
 

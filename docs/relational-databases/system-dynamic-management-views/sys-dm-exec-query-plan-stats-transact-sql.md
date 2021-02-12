@@ -1,6 +1,6 @@
 ---
-description: sys. dm_exec_query_plan_stats (Transact-SQL)
-title: sys. dm_exec_query_plan_stats (Transact-SQL) | Microsoft Docs
+description: sys.dm_exec_query_plan_stats (Transact-SQL)
+title: sys.dm_exec_query_plan_stats (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 05/22/2019
 ms.prod: sql
@@ -18,14 +18,14 @@ ms.assetid: fdc7659e-df41-488e-b2b5-0d79734dfacb
 author: pmasl
 ms.author: pelopes
 manager: amitban
-ms.openlocfilehash: 0ab11e74205f47d50e927680081e8e13dfee37fb
-ms.sourcegitcommit: 9be0047805ff14e26710cfbc6e10d6d6809e8b2c
+ms.openlocfilehash: c1f833351fd342629b858b19c113015e81ec3db1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "89042475"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100072023"
 ---
-# <a name="sysdm_exec_query_plan_stats-transact-sql"></a>sys. dm_exec_query_plan_stats (Transact-SQL)
+# <a name="sysdm_exec_query_plan_stats-transact-sql"></a>sys.dm_exec_query_plan_stats (Transact-SQL)
 [!INCLUDE[SQL Server 2019](../../includes/tsql-appliesto-ssver15-asdb-xxxx-xxx.md)]
 
 Retourne l’équivalent du dernier plan d’exécution réel connu pour un plan de requête précédemment mis en cache.
@@ -48,9 +48,9 @@ Le *plan_handle* peut être obtenu à partir des objets de gestion dynamique sui
   
 -   [sys.dm_exec_requests &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-requests-transact-sql.md)  
 
--   [sys. dm_exec_procedure_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-procedure-stats-transact-sql.md)  
+-   [sys.dm_exec_procedure_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-procedure-stats-transact-sql.md)  
 
--   [sys. dm_exec_trigger_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-trigger-stats-transact-sql.md)  
+-   [sys.dm_exec_trigger_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-trigger-stats-transact-sql.md)  
 
 ## <a name="table-returned"></a>Table retournée
 
@@ -73,13 +73,13 @@ La sortie Showplan de `sys.dm_exec_query_plan_stats` contient les informations s
 
 Dans les conditions suivantes, une sortie Showplan **équivalente à un plan d’exécution réel** est retournée dans la colonne **query_plan** de la table retournée pour `sys.dm_exec_query_plan_stats` :  
 
--   Le plan se trouve dans [sys. dm_exec_cached_plans](../../relational-databases/system-dynamic-management-views/sys-dm-exec-cached-plans-transact-sql.md).     
+-   Le plan se trouve dans [sys.dm_exec_cached_plans](../../relational-databases/system-dynamic-management-views/sys-dm-exec-cached-plans-transact-sql.md).     
     **AND**    
 -   La requête en cours d’exécution est complexe ou consommatrice de ressources.
 
-Dans les conditions suivantes, une sortie Showplan **simplifiée <sup>1</sup> ** est retournée dans la colonne **query_plan** de la table retournée pour `sys.dm_exec_query_plan_stats` :  
+Dans les conditions suivantes, une sortie Showplan **simplifiée <sup>1</sup>** est retournée dans la colonne **query_plan** de la table retournée pour `sys.dm_exec_query_plan_stats` :  
 
--   Le plan se trouve dans [sys. dm_exec_cached_plans](../../relational-databases/system-dynamic-management-views/sys-dm-exec-cached-plans-transact-sql.md).     
+-   Le plan se trouve dans [sys.dm_exec_cached_plans](../../relational-databases/system-dynamic-management-views/sys-dm-exec-cached-plans-transact-sql.md).     
     **AND**    
 -   La requête est assez simple, généralement classée dans le cadre d’une charge de travail OLTP.
 
@@ -100,14 +100,14 @@ Dans les conditions suivantes, **aucune sortie n’est retournée** à partir de
 ## <a name="examples"></a>Exemples  
   
 ### <a name="a-looking-at-last-known-actual-query-execution-plan-for-a-specific-cached-plan"></a>R. Examen du dernier plan d’exécution de requête réel connu pour un plan mis en cache spécifique  
- L’exemple suivant interroge **sys. dm_exec_cached_plans** pour rechercher le plan intéressant et copier son `plan_handle` à partir de la sortie.  
+ L’exemple suivant interroge **sys.dm_exec_cached_plans** pour rechercher le plan intéressant et copier son `plan_handle` à partir de la sortie.  
   
 ```sql  
 SELECT * FROM sys.dm_exec_cached_plans;  
 GO  
 ```  
   
-Ensuite, pour obtenir le dernier plan d’exécution de requête réel connu, utilisez le copié `plan_handle` avec la fonction système **sys. dm_exec_query_plan_stats**.  
+Ensuite, pour obtenir le dernier plan d’exécution de requête réel connu, utilisez l' `plan_handle` **sys.dm_exec_query_plan_stats** copié avec la fonction système.  
   
 ```sql  
 SELECT * FROM sys.dm_exec_query_plan_stats(< copied plan_handle >);  

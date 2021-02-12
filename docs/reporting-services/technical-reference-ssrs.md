@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4876bee2-071f-4a8d-ab8a-b03337625b74
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: a3b2d48c507043b59455f04011d3d75e45727866
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 331e22d25fee5150baa37345c6c939a9527673b9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91986988"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100063614"
 ---
 # <a name="technical-reference-ssrs"></a>Références techniques (SSRS)
 

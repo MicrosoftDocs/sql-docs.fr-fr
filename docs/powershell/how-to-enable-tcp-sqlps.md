@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: matteot
 ms.custom: ''
 ms.date: 08/06/2020
-ms.openlocfilehash: ba4b1362a3f435617f36c75fbcf0e8371169f990
-ms.sourcegitcommit: a5398f107599102af7c8cda815d8e5e9a367ce7e
+ms.openlocfilehash: 158b15f6d7e7471fccab43400def4609f55a13c6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92005169"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100062348"
 ---
 # <a name="how-to-enable-the-tcp-protocol"></a>Comment activer le protocole TCP
 

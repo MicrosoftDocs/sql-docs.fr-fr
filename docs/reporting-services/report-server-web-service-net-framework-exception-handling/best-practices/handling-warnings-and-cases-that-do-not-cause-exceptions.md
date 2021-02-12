@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 475c0713-6265-44e7-9ebc-ebdd1b89e0af
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 5dd1c9335db348aeb3cb979079d3f1bd929f008a
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 41fce911539fdae4e1d0655fe488fa1e0bc7ee9e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "80216388"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100023628"
 ---
 # <a name="handling-warnings-and-cases-that-do-not-cause-exceptions"></a>Gestion des avertissements et des erreurs qui ne lèvent pas d'exceptions
   [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] ne lève pas d'exceptions pour les avertissements et certaines erreurs. Par exemple, lorsque vous utilisez la méthode <xref:ReportService2010.ReportingService2010.CreateCatalogItem%2A> pour publier un nouveau rapport sur un serveur de rapports, tous les avertissements qui se produisent sont retournés sous la forme d'un tableau d'objets <xref:ReportService2010.Warning>. Ces avertissements doivent être gérés et affichés afin que les mesures appropriées puisse être prises.  

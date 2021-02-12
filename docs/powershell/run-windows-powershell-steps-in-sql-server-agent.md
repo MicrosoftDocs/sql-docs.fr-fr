@@ -10,12 +10,12 @@ ms.assetid: f25f7549-c9b3-4618-85f2-c9a08adbe0e3
 author: markingmyname
 ms.author: maghan
 ms.reviewer: matteot, drskwier
-ms.openlocfilehash: 2b303e01ab1dd15401d8ee64f2160f761320616a
-ms.sourcegitcommit: a5398f107599102af7c8cda815d8e5e9a367ce7e
+ms.openlocfilehash: a4ca54d68e62c4d9691df15d20261ec850f499c5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92006158"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100062394"
 ---
 # <a name="run-windows-powershell-steps-in-sql-server-agent"></a>Utiliser Windows PowerShell dans les étapes de travail de l'Agent SQL Server
 
@@ -46,7 +46,7 @@ Chaque [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] étape de travail 
   
 2.  Dans la boîte de dialogue **Propriétés du travail** , cliquez sur la page **Étapes** , puis sur **Nouveau**.  
   
-3.  Dans la boîte de dialogue **Nouvelle étape du travail** , tapez un **nom d'étape**de travail.  
+3.  Dans la boîte de dialogue **Nouvelle étape du travail** , tapez un **nom d'étape** de travail.  
   
 4.  Dans la liste **Type** , cliquez sur **PowerShell**.  
   
@@ -63,7 +63,7 @@ Chaque [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] étape de travail 
   
 2.  Dans la boîte de dialogue **Propriétés du travail** , cliquez sur la page **Étapes** , puis sur **Nouveau**.  
   
-3.  Dans la boîte de dialogue **Nouvelle étape du travail** , tapez un **nom d'étape**de travail.  
+3.  Dans la boîte de dialogue **Nouvelle étape du travail** , tapez un **nom d'étape** de travail.  
   
 4.  Dans la liste **Type** , choisissez **Système d’exploitation (CmdExec)** .  
   

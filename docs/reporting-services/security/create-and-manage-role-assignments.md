@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 086d0987-b43c-4834-8372-e08fb4b432f8
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 3b7b88e9342c818645e0a9e1430cc5fe5c9400c3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e1be919afaea2693329ae6fe957fb6fc5ff3357f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88468988"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100015199"
 ---
 # <a name="create-and-manage-role-assignments"></a>Créer et gérer des attributions de rôles
 
@@ -30,7 +30,7 @@ Les attributions de rôles ont comme portée le *niveau élément* ou le *niveau
 
 - Une attribution de rôle au niveau élément est créée pour un élément ou une branche spécifique de l’arborescence des dossiers sur le serveur de rapports. Vous naviguez jusqu'à un dossier ou un élément spécifique pour lui créer une attribution de rôle.
 
-- Les attributions de rôles au niveau système permettent aux utilisateurs sélectionnés d’effectuer des tâches qui affectent le site du serveur de rapports dans son ensemble. Il s’agit notamment des tâches suivantes :
+- Les attributions de rôles au niveau système permettent aux utilisateurs sélectionnés d’effectuer des tâches qui affectent le site du serveur de rapports dans son ensemble. Ces tâches incluent :
   - Création de planifications partagées
   - Gérer les travaux
   - Traitement de rapports

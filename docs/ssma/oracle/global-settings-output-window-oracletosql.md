@@ -11,12 +11,12 @@ ms.assetid: 42b26160-354f-460c-a1e4-167017af3a0b
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: b20d6d0e447581f1b746d254eb82f0895f2a37c6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 367d3418a1ce8162761ea709eff077b3ed841813
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88320475"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100068834"
 ---
 # <a name="global-settings-output-window--oracletosql"></a>Paramètres globaux (Fenêtre Sortie) (OracleToSQL)
 Utilisez la boîte de dialogue **paramètres globaux** pour spécifier les paramètres de SSMA.  

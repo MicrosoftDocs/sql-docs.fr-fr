@@ -12,12 +12,12 @@ ms.topic: conceptual
 author: pochiraju
 ms.author: rajpo
 ms.reviewer: mathoma
-ms.openlocfilehash: c7443ed363a4968415b651e460bbc4f69cb7415b
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: 0e52cf31a94f2fd63f92305b80f7f7ae049c2809
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87951104"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066444"
 ---
 # <a name="run-database-experimentation-assistant-at-a-command-prompt"></a>Exécuter Assistant Expérimentation de base de données à partir d’une invite de commandes
 
@@ -28,7 +28,7 @@ Cet article explique comment capturer une trace dans Assistant Expérimentation 
    >
    > `Deacmd.exe -o <operation> --help`
    >
-   > Un nom d’opération est requis ; les opérations valides sont **Analysis**, **StartCapture**et **StopCapture**.
+   > Un nom d’opération est requis ; les opérations valides sont **Analysis**, **StartCapture** et **StopCapture**.
 
 ## <a name="start-a-new-workload-capture-by-using-the-dea-command"></a>Démarrer une nouvelle capture de la charge de travail à l’aide de la commande DEA
 
@@ -132,6 +132,6 @@ Lorsque vous analysez des traces à l’aide de la commande DEA, vous pouvez uti
 | --Abu | URL de l’objet BLOB pour une instance avec la clé SAS |
 | --les blocs-secours | URL de l’objet BLOB pour l’instance B avec la clé SAS |
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 - Pour plus d’informations sur l’utilisation de DEA, consultez [vue d’ensemble des Assistant expérimentation de base de données](database-experimentation-assistant-overview.md).

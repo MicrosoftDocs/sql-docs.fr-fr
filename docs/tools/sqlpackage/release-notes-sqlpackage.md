@@ -9,12 +9,12 @@ ms.prod_service: sql-tools
 ms.topic: conceptual
 author: dzsquared
 ms.author: drskwier
-ms.openlocfilehash: cd4fc69334cb9e4bf77a4ccfa4c972d8515bbd1e
-ms.sourcegitcommit: 866554663ca3191748b6e4eb4d8d82fa58c4e426
+ms.openlocfilehash: 1b93c290596cf9af23e4963912efff652e9c80ee
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97577893"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100061044"
 ---
 # <a name="release-notes-for-sqlpackageexe"></a>Notes de version de SqlPackage.exe
 

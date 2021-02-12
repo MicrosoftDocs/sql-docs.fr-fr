@@ -9,12 +9,12 @@ ms.date: 09/18/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 08645672c1aa8b7b980b4ffe86b4029a691fa1cf
-ms.sourcegitcommit: 275fd02d60d26f4e66f6fc45a1638c2e7cedede7
+ms.openlocfilehash: 6dcf6b86a0c1bb8c6321cec97592d9afdfe57b42
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94447105"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100038857"
 ---
 # <a name="deploy-sql-server-big-data-cluster-with-high-availability"></a>Déployer un cluster Big Data SQL Server avec une haute disponibilité
 

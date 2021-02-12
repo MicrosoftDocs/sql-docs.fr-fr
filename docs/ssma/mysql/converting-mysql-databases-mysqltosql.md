@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: ac21850b-fb32-4704-9985-5759b7c688c7
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: cd6dcfc6613b1290fb0798a29a5302b7ede34b43
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: 61298bb7e2c65e85959b52ab3750dc49a5105504
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87936098"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100068986"
 ---
 # <a name="converting-mysql-databases-mysqltosql"></a>Conversion de bases de données MySQL (MySQLToSQL)
 Après vous être connecté à MySQL, connecté à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure et définir les options de mappage de projet et de données, vous pouvez convertir des objets de base de données MySQL en [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] objets ou Azure SQL Database.  
@@ -39,7 +39,7 @@ Le tableau suivant répertorie les objets MySQL qui sont convertis et les objets
 |Conversion de base de données|Les bases de données en tant qu’objets MySQL ne sont pas directement converties par SSMA pour MySQL. Les bases de données MySQL sont traitées plus comme des noms de schéma et tous les paramètres physiques sont perdus pendant la conversion. SSMA pour MySQL utilise le [mappage des bases de données MySQL aux schémas de SQL Server &#40;MySQLToSQL&#41;](../../ssma/mysql/mapping-mysql-databases-to-sql-server-schemas-mysqltosql.md) pour mapper les objets de la base de données MySQL à la paire de base de données/schéma appropriée SQL Server.|  
 |Conversion de déclencheur|**SSMA crée des déclencheurs en fonction des règles suivantes :**<br /><br />Les déclencheurs BEFORe sont convertis en déclencheurs INSTEAD OF T-SQL<br /><br />Les déclencheurs AFTER sont convertis en déclencheurs T-SQL avec ou sans itérations par ligne.|  
 |Afficher la conversion|SSMA crée des vues avec des objets dépendants|  
-|Conversion d’instruction|-Chaque objet instruction SQL peut contenir une seule instruction MySQL (comme DDL, DML et d’autres types d’instructions) ou BEGIN... Bloc de fin.<br />-   **Conversion à États multiversions : Begin... **L’instruction SQL de conversion de bloc end peut également contenir un Begin... Bloc END comme un bloc dans la définition de la procédure, de la fonction ou du déclencheur. Ces blocs doivent être convertis de la même façon que pour les objets d’instruction MySQL uniques.|  
+|Conversion d’instruction|-Chaque objet instruction SQL peut contenir une seule instruction MySQL (comme DDL, DML et d’autres types d’instructions) ou BEGIN... Bloc de fin.<br />-   **Conversion à États multiversions : Begin...** L’instruction SQL de conversion de bloc end peut également contenir un Begin... Bloc END comme un bloc dans la définition de la procédure, de la fonction ou du déclencheur. Ces blocs doivent être convertis de la même façon que pour les objets d’instruction MySQL uniques.|  
   
 ## <a name="converting-mysql-database-objects"></a>Conversion d’objets de base de données MySQL  
 Pour convertir des objets de base de données MySQL, vous devez d’abord sélectionner les objets que vous souhaitez convertir, puis demander à SSMA d’effectuer la conversion. Pour afficher les messages de sortie pendant la conversion, dans le menu **affichage** , sélectionnez **sortie**.  

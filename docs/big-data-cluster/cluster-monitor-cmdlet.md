@@ -10,12 +10,12 @@ ms.date: 09/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: be07fa7f00f38f4f7ff3782593b19a584627e2f7
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c82aad4ae4fb808f9e657a0c5cbd1a6172c45c53
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091697"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100039445"
 ---
 # <a name="monitor-cluster-with-azdata-and-kubectl"></a>Analyser le cluster avec azdata et kubectl
 

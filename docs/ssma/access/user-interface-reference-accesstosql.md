@@ -14,12 +14,12 @@ ms.assetid: af24c303-4a41-449b-9c86-d6558a97e839
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 6f46d7714c9da54fde1105671c5be7b3ea090a48
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: cb932aeb30be643b260e3b1e0ce10fea22ffeb1a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987925"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100067224"
 ---
 # <a name="user-interface-reference-accesstosql"></a>Informations de référence sur l’interface utilisateur (AccessToSQL)
 Cette section contient des rubriques d’aide pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Assistant Migration (SSMA) pour l’accès.  
@@ -51,7 +51,7 @@ Cette section contient des rubriques d’aide pour [!INCLUDE[ssNoVersion](../../
 |[Paramètres du projet (SQL Azure)](./project-settings-azure-sql-db-accesstosql.md)|Utilisez la page SQL Azure de la boîte de dialogue **paramètres du projet** pour spécifier le suffixe de la base de données et l’intervalle de délai d’attente des pulsations.|  
 |[Enregistrer les métadonnées &#40;AccessToSQL&#41;](../../ssma/access/save-metadata-accesstosql.md)|La boîte de dialogue **enregistrer les métadonnées** s’affiche lorsque vous enregistrez un projet qui ne contient pas de métadonnées.|  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir également  
 [Prise en main avec Assistant Migration SQL Server pour Access &#40;AccessToSQL&#41;](../../ssma/access/getting-started-with-sql-server-migration-assistant-for-access-accesstosql.md)  
 [Préparation des bases de données Access pour la migration](preparing-access-databases-for-migration-accesstosql.md)  
 [Migration de bases de données Access vers SQL Server](migrating-access-databases-to-sql-server-azure-sql-db-accesstosql.md)  

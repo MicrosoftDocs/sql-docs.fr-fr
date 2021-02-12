@@ -3,15 +3,15 @@ title: SQL Server PowerShell
 description: Explique que le module PowerShell Sqlserver est le jeu de commandes SQL Server PowerShell actuel.
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 29fb145b1134404fb977171066d72c34cc712785
-ms.sourcegitcommit: a5398f107599102af7c8cda815d8e5e9a367ce7e
+ms.openlocfilehash: 7d2072705186ad2006ae52adb821359a5c64e39e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92005153"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100062347"
 ---
 > [!NOTE]
-> Il existe deux modules SQL Server PowerShell : [SqlServer](https://docs.microsoft.com/powershell/module/sqlserver) et [SQLPS](https://docs.microsoft.com/powershell/module/sqlps).
+> Il existe deux modules SQL Server PowerShell : [SqlServer](/powershell/module/sqlserver) et [SQLPS](/powershell/module/sqlps).
 >
 > Le module **SqlServer** est le module PowerShell actuel à utiliser.
 >

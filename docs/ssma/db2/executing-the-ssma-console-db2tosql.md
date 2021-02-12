@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: ce63f633-067d-4f04-b8e9-e1abd7ec740b
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 536c32f8332fd3d3d2e2db505275b6cb773d24a6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8d10a1ce6bab71b99f11be697843ce32ed03c678
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88418475"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077080"
 ---
 # <a name="executing-the-ssma-console-db2tosql"></a>Exécution de la console SSMA (DB2ToSQL)
 Microsoft vous fournit un ensemble robuste de commandes de fichier de script pour exécuter et contrôler les activités SSMA. Les sections suivantes détaillent les mêmes sections. L’application console utilise certaines commandes de fichier de script standard comme énuméré dans cette section.  

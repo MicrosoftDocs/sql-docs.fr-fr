@@ -4,11 +4,11 @@ ms.service: sql
 ms.topic: include
 ms.date: 10/19/2020
 ms.author: mikeray
-ms.openlocfilehash: 7a8105af3493bd0afa9aad914cd883236e1e3f31
-ms.sourcegitcommit: ae474d21db4f724523e419622ce79f611e956a22
+ms.openlocfilehash: 9600ddd3bf0da8a7d72af237a10325910c7ed535
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257073"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100039152"
 ---
 Azure Data CLI (`azdata`)

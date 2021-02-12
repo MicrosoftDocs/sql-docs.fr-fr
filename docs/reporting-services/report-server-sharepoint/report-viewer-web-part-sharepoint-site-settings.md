@@ -8,12 +8,12 @@ ms.technology: report-server-sharepoint
 ms.topic: conceptual
 author: jt000
 ms.author: jasontre
-ms.openlocfilehash: dfb8a3a33d56660bd8a7bdeeffb88824a3960dce
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 91969322c0f61d912ea26806c78f3074e38905e7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596922"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100016923"
 ---
 # <a name="sharepoint-site-settings-for-the-report-viewer-web-part---reporting-services"></a>Paramètres de site SharePoint pour le composant WebPart de la visionneuse de rapports - Reporting Services
 

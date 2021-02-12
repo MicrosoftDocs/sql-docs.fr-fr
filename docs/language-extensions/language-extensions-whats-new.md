@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: language-extensions
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15'
-ms.openlocfilehash: b737f8764f387faa88d0e5de0c844e55c89a4a30
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: e72b202230573352eca54bd8bc9d2afc0a58f29e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471700"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070549"
 ---
 # <a name="whats-new-in-sql-server-language-extensions"></a>Nouveautés des extensions de langage SQL Server
 [!INCLUDE [SQL Server 2019 and later](../includes/applies-to-version/sqlserver2019.md)]

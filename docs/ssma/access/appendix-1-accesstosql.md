@@ -10,17 +10,17 @@ ms.topic: conceptual
 ms.assetid: 00665e16-2990-4bfc-8e17-d97ca9fb4999
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 88b8566b0ed3b264f09f0307251dcf9e69270e19
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 5492027b30b96e315225c640c48e3e4cfd34b3e9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987669"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100076410"
 ---
 # <a name="appendix---1-accesstosql"></a>Annexe-1 (AccessToSQL)
 Affichage rapide des options de ligne de commande de la console SSMA :  
   
-|SL. Non.|Basculer|Requis ?|Argument de commutateur|Valeurs autorisées|  
+|SL. Non.|Commutateur|Nécessaire ?|Argument de commutateur|Valeurs autorisées|  
 |-----------|----------|-------------|-------------------|--------------------|  
 |1|-s/script|Oui|scriptfile|Nom de fichier XML valide.<br /><br />Fichier de définition de script de console.|  
 |2|-v/variable|Non|variablevaluefile|Nom de fichier XML valide. Si des variables sont utilisées dans un fichier de script, ce fichier doit être spécifié.|  

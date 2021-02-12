@@ -30,12 +30,12 @@ ms.assetid: 483588bd-021b-4eae-b4ee-216268003e79
 author: cawrites
 ms.author: chadam
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: ccb8c1e7f26102aa960ab720283debaceff2dd2c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e9892fe80ff3f29dca2ac46c99249fa603ab5528
+ms.sourcegitcommit: 6f4fb9cfd0cad06127a6328adc745e2ba7c191d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99203618"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570483"
 ---
 # <a name="raiserror-transact-sql"></a>RAISERROR (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -132,7 +132,7 @@ RAISERROR ( { msg_str | @local_variable }
  Variable de n’importe quel type de données caractères valide qui contient une chaîne mise en forme de la même manière que *msg_str*. *\@local_variable* doit être de type **char** ou **varchar**, ou pouvoir être convertie implicitement en ces types de données.  
   
  *severity*  
- Représente le niveau de gravité défini par l'utilisateur associé au message en question. Lorsque vous utilisez *msg_id* pour générer un message défini par l’utilisateur créé à l’aide de sp_addmessage, la gravité spécifiée dans l’instruction RAISERROR remplace celle indiquée dans sp_addmessage.  
+ Représente le [niveau de gravité](../../relational-databases/errors-events/database-engine-error-severities.md) défini par l’utilisateur associé à ce message. Lorsque vous utilisez *msg_id* pour générer un message défini par l’utilisateur créé à l’aide de sp_addmessage, la gravité spécifiée dans l’instruction RAISERROR remplace celle indiquée dans sp_addmessage.  
   
  Les niveaux de gravité de 0 à 18 peuvent être spécifiés par tout utilisateur. Les niveaux de gravité de 19 à 25 peuvent uniquement être spécifiés par des membres du rôle serveur fixe sysadmin ou par des utilisateurs bénéficiant de permissions ALTER TRACE. Pour les niveaux de 19 à 25, l'option WITH LOG est nécessaire. Les niveaux de gravité inférieurs à 0 sont interprétés comme 0. Les niveaux de gravité supérieurs à 25 sont interprétés comme 25.  
   
