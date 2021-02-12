@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: b2cdb71a-f301-45b3-878c-382356c93b4b
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: b380158d79f78601f5f63396e270e9f8be56a96c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8c342543cfd2d8c72a5a1dd96c5ccaa61af47889
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88426941"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100072233"
 ---
 # <a name="project-settings-gui-db2tosql"></a>Paramètres du projet (GUI) (DB2ToSQL)
 Les paramètres de projet de l’interface utilisateur graphique vous permettent de configurer le mode d’affichage des données sous l’onglet **données** et d’afficher ou non le rapport d’évaluation après conversion.  

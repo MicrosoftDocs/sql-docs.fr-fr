@@ -9,12 +9,12 @@ ms.date: 06/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: cef348aee2b917b0a6afd61d30b5e4f7fa7da665
-ms.sourcegitcommit: ae474d21db4f724523e419622ce79f611e956a22
+ms.openlocfilehash: d983b4d0d7cfb02a587675984fdc42c54bf9f0ec
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257199"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100047199"
 ---
 # <a name="configure-deployment-settings-for-cluster-resources-and-services"></a>Configurer les paramètres de déploiement de services et ressources de cluster
 
@@ -677,8 +677,8 @@ azdata bdc config patch --config-file custom-bdc/control.json --patch-file elast
 
 ## <a name="turn-pods-and-nodes-metrics-collection-onoff"></a>Activer/désactiver la collecte de métriques sur les pods et les nœuds
 
-SQL Server 2019 CU5 a activé deux commutateurs de fonctionnalités pour contrôler la collecte de métriques sur les pods et les nœuds. Si vous utilisez d’autres solutions pour superviser votre infrastructure Kubernetes, vous pouvez désactiver la collecte de métriques intégrée pour les pods et les nœuds hôtes en définissant *allowNodeMetricsCollection* et *allowPodMetricsCollection* sur *false* dans le fichier de configuration de déploiement *control.json* . Pour les environnements OpenShift, ces paramètres sont définis sur *false* par défaut dans les profils de déploiement intégrés, puisque la collecte des métriques sur les pods et les nœuds requiert des fonctionnalités privilégiées.
-Exécutez cette commande pour mettre à jour les valeurs de ces paramètres dans votre fichier de configuration personnalisé à l’aide de l’interface CLI *azdata*  :
+SQL Server 2019 CU5 a activé deux commutateurs de fonctionnalités pour contrôler la collecte de métriques sur les pods et les nœuds. Si vous utilisez d’autres solutions pour superviser votre infrastructure Kubernetes, vous pouvez désactiver la collecte de métriques intégrée pour les pods et les nœuds hôtes en définissant *allowNodeMetricsCollection* et *allowPodMetricsCollection* sur *false* dans le fichier de configuration de déploiement *control.json*. Pour les environnements OpenShift, ces paramètres sont définis sur *false* par défaut dans les profils de déploiement intégrés, puisque la collecte des métriques sur les pods et les nœuds requiert des fonctionnalités privilégiées.
+Exécutez cette commande pour mettre à jour les valeurs de ces paramètres dans votre fichier de configuration personnalisé à l’aide de l’interface CLI *azdata* :
 
 ```bash
  azdata bdc config replace -c custom-bdc/control.json -j "$.security.allowNodeMetricsCollection=false"

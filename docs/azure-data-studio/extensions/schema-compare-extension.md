@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: maghan, sstein
 ms.custom: ''
 ms.date: 11/04/2019
-ms.openlocfilehash: 35afe56806ad1c24b1fa6ae1f03978d7f6558af4
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: 88f96d75150fc1b3e69d9cf158a50e02110dbae0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91123170"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048476"
 ---
 # <a name="schema-compare-extension"></a>Extension de comparaison de schéma
 

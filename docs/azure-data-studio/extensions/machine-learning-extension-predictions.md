@@ -9,12 +9,12 @@ ms.author: davidph
 ms.reviewer: sstein
 ms.custom: ''
 ms.date: 06/09/2020
-ms.openlocfilehash: 2b68f15f69d3efb0a773022e87615d298da07706
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 6da9918b4ebb3ed571d82d23c123c8e477741c0b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91725155"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048539"
 ---
 # <a name="make-predictions-with-machine-learning-extension-for-azure-data-studio-preview"></a>Faire des prédictions avec l’extension Machine Learning pour Azure Data Studio (préversion)
 
@@ -27,7 +27,7 @@ Découvrez comment utiliser [l’extension Machine Learning pour Azure Data Stud
 
 - Installez et configurez l’[extension Machine Learning pour Azure Data Studio](machine-learning-extension.md). Vous devez spécifier les [chemins d’installation Python dans les paramètres d’extension](machine-learning-extension.md#settings).
 
-- Les packages Python**onnxruntime**, **mlflow**et **mlflow-DBStore**. L’extension Machine Learning vous invite à installer le package, le cas échéant.
+- Les packages Python **onnxruntime**, **mlflow** et **mlflow-DBStore**. L’extension Machine Learning vous invite à installer le package, le cas échéant.
 
 ## <a name="make-predictions-from-onnx-model"></a>Effectuer des prédictions à partir d’un modèle ONNX
 
@@ -40,7 +40,7 @@ Suivez les étapes ci-dessous pour utiliser un modèle ONNX pour effectuer des p
 1. Choisissez l’emplacement où se trouve votre modèle, puis sélectionnez **Suivant**. Vous pouvez utiliser :
     - **Modèles importés**. Choisissez cette valeur pour utiliser un modèle qui est déjà stocké dans votre base de données. Choisissez le **Modèle de base de données** et la **Table de modèle** où se trouve votre modèle, sélectionnez le modèle que vous souhaitez utiliser, puis cliquez sur **Suivant**.
     - **Chargement de fichiers**. Choisissez cette option pour utiliser un modèle à partir d’un fichier. Sélectionnez le fichier de modèle sous **Fichiers sources** puis sélectionnez **Suivant**.
-    - **Azure Machine Learning**. Choisissez cette valeur pour utiliser un modèle à partir d’Azure Machine Learning. Tout d’abord, **Connectez-vous à Azure**. Sélectionnez ensuite votre **compte Azure**, **abonnement Azure**, **groupe de ressources Azure** et votre**espace de travail Azure ML**. Sélectionnez le modèle que vous souhaitez utiliser, puis sélectionnez **Suivant**.
+    - **Azure Machine Learning**. Choisissez cette valeur pour utiliser un modèle à partir d’Azure Machine Learning. Tout d’abord, **Connectez-vous à Azure**. Sélectionnez ensuite votre **compte Azure**, **abonnement Azure**, **groupe de ressources Azure** et votre **espace de travail Azure ML**. Sélectionnez le modèle que vous souhaitez utiliser, puis sélectionnez **Suivant**.
 
 1. Mapper les données sources à votre modèle.
     - Sélectionnez la **Base de données sources** et la **Table source** contenant le jeu de données pour lequel vous souhaitez appliquer la prédiction.

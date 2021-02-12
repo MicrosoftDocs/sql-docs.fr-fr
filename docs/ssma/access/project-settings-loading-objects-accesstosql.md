@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 9ec1c1e8-a3e1-4e81-bf49-631f87daa209
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: f03b7457d79c573806ffbda2b601f56d0f942a54
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a2d119ac2c58d0bea25a6f21ba4bf97cb47a8421
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88488200"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066364"
 ---
 # <a name="project-settings-loading-objects-accesstosql"></a>Paramètres du projet (chargement d’objets) (AccessToSQL)
 Les paramètres de projet de chargement d’objets vous permettent de configurer le mode de synchronisation des objets de base de données Access avec SQL Server objets de base de données.  
@@ -32,7 +32,7 @@ Vous pouvez accéder à deux pages de synchronisation différentes qui contienne
   
 ##### <a name="misc"></a>Divers  
   
-##### <a name="attempts"></a>Essayer  
+##### <a name="attempts"></a>Tentatives  
 Fournit les informations relatives au nombre d’objets Pass à charger dans SQL Server. Le chargement d’objets dans SQL Server est généralement effectué en plusieurs passes. Les objets dont le chargement a échoué lors de la première passe, tels que les clés étrangères, peuvent être chargés dans la passe suivante.  
   
 La valeur par défaut est 2.  

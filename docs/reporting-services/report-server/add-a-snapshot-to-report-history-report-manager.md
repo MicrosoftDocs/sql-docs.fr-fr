@@ -9,12 +9,12 @@ ms.author: maggies
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/26/2019
-ms.openlocfilehash: 18d1cc11b8ab4d4501e62ac5acfbffaeab32c892
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: b11e4f129ea349e44c328b1f665a3935a937506a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466580"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100021630"
 ---
 # <a name="add-a-snapshot-to-report-history"></a>Ajouter un instantané à un historique de rapport
 

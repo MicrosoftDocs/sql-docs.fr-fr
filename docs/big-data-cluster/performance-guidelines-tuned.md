@@ -8,12 +8,12 @@ ms.date: 06/30/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: abb5a73f472ccefa53517c54a3d403af82d0beb2
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 7b430e09a06523bc3ee369434911738f83ab5ee4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85906233"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100044139"
 ---
 # <a name="performance-best-practices-and-configuration-guidelines-for-sql-server-big-data-clusters"></a>Meilleures pratiques en matière de performances et recommandations de configuration pour Clusters Big Data SQL Server
 

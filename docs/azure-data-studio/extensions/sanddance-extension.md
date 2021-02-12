@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: maghan, sstein
 ms.custom: seodec18
 ms.date: 07/03/2019
-ms.openlocfilehash: 5b00b83fedeb4d0f4673f23a0a2640a3b3a00e3f
-ms.sourcegitcommit: 9774e2cb8c07d4f6027fa3a5bb2852e4396b3f68
+ms.openlocfilehash: d031ddea065f035bf4d1f4ffc70bd65d90f1bd0f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92100108"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040334"
 ---
 # <a name="sanddance-for-azure-data-studio-preview"></a>SandDance pour Azure Data Studio (préversion)
 

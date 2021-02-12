@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 1/25/2021
-ms.openlocfilehash: 39c48fc84047deea9c2bf49751c9bc3a491023b7
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 19328956cab5d7c5e449e48d99bbfda1b999ca6f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98766391"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100067117"
 ---
 # <a name="sql-assessment-api"></a>API d’évaluation SQL
 

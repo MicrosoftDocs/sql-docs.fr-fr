@@ -10,20 +10,20 @@ ms.date: 09/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 99e62be597e4ce08d38db199116f1bd4d5ab33f6
-ms.sourcegitcommit: 29a2be59c56f8a4b630af47760ef38d2bf56a3eb
+ms.openlocfilehash: 8cbf034873b690262ff6acb395ed8eca5d09ae79
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92378425"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100039509"
 ---
 # <a name="common-notebooks-for-sql-server-big-data-clusters"></a>Notebooks communs pour les Clusters Big Data SQL Server
 
 Cet article répertorie des notebooks pour des Clusters Big Data SQL Server. Les notebooks exécutables (.ipynb) sont conçus pour SQL Server 2019 afin de faciliter l’affichage de scénarios communs sur des clusters Big Data.
 
-Chaque notebook est conçu pour vérifier ses propres dépendances. Une option **Exécuter toutes les cellules** s’effectue correctement ou produit une exception avec un *conseil* en lien hypertexte vers un autre notebook qui va résoudre la dépendance manquante. Suivez le lien hypertexte vers le notebook suivant, appuyez sur **Exécuter toutes les cellules** puis, après une exécution réussie, revenez au notebook d’origine, et appuyez à nouveau sur **Exécuter toutes les cellules** .
+Chaque notebook est conçu pour vérifier ses propres dépendances. Une option **Exécuter toutes les cellules** s’effectue correctement ou produit une exception avec un *conseil* en lien hypertexte vers un autre notebook qui va résoudre la dépendance manquante. Suivez le lien hypertexte vers le notebook suivant, appuyez sur **Exécuter toutes les cellules** puis, après une exécution réussie, revenez au notebook d’origine, et appuyez à nouveau sur **Exécuter toutes les cellules**.
 
-Une fois toutes les dépendances installées, mais après l’échec de la commande **Exécuter toutes les cellules** , chaque notebook analyse les résultats et, dans la mesure du possible, produit un conseil de lien hypertexte vers un autre notebook pour faciliter la résolution du problème.
+Une fois toutes les dépendances installées, mais après l’échec de la commande **Exécuter toutes les cellules**, chaque notebook analyse les résultats et, dans la mesure du possible, produit un conseil de lien hypertexte vers un autre notebook pour faciliter la résolution du problème.
 
 ## <a name="gathering-logs-from-big-data-cluster-bdc"></a>Collecte des journaux à partir du Cluster Big Data (BDC)
 

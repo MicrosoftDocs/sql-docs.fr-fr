@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: alayu, sstein
 ms.custom: seodec18, sqlfreshmay19, seo-lt-2019
 ms.date: 05/14/2019
-ms.openlocfilehash: c93cd3ea16b87a23dac96c1f21f3720d169e8c19
-ms.sourcegitcommit: 63aef5a96905f0b026322abc9ccb862ee497eebe
+ms.openlocfilehash: 2b8f54b66852df0ce0300e950ba712a803a7a012
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91364012"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040169"
 ---
 # <a name="manage-servers-and-databases-with-insight-widgets-in-azure-data-studio"></a>Gérer les serveurs et les bases de données avec les widgets d’insight dans Azure Data Studio
 

@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: alayu; sstein
 ms.custom: seodec18; seo-lt-2019
 ms.date: 06/01/2020
-ms.openlocfilehash: 8137ca8f37254bab94dfaae6d9c8072c293a81ff
-ms.sourcegitcommit: 80701484b8f404316d934ad2a85fd773e26ca30c
+ms.openlocfilehash: 6b8632f9ff5c07cb23a296b98a5933639abee4d1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93243388"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048139"
 ---
 # <a name="tutorial-add-the-five-slowest-queries-sample-widget-to-the-database-dashboard"></a>Tutoriel : Ajouter le widget d’exemple *cinq requêtes les plus lentes* au tableau de bord de la base de données
 
@@ -26,11 +26,11 @@ Ce didacticiel illustre le processus d’ajout d’un widget d’exemple intégr
 > * Afficher des détails sur les requêtes les plus lentes de la base de données
 > * Afficher les plans d’exécution de requête pour les requêtes lentes
 
-Azure Data Studio comprend plusieurs widgets d’insight prêts à l’emploi. Ce didacticiel montre comment ajouter le widget *query-data-store-db-insight* , mais les étapes sont fondamentalement les mêmes pour l’ajout de n’importe quel widget.
+Azure Data Studio comprend plusieurs widgets d’insight prêts à l’emploi. Ce didacticiel montre comment ajouter le widget *query-data-store-db-insight*, mais les étapes sont fondamentalement les mêmes pour l’ajout de n’importe quel widget.
 
 ## <a name="prerequisites"></a>Prérequis
 
-Ce didacticiel nécessite la base de données *TutorialDB* de SQL Server ou Azure SQL Database. Pour créer la base de données *TutorialDB* , suivez un des démarrages rapides suivants :
+Ce didacticiel nécessite la base de données *TutorialDB* de SQL Server ou Azure SQL Database. Pour créer la base de données *TutorialDB*, suivez un des démarrages rapides suivants :
 
 * [Se connecter à et interroger SQL Server avec [!INCLUDE[name-sos-short](../includes/name-sos-short.md)]](quickstart-sql-server.md)
 
@@ -40,7 +40,7 @@ Ce didacticiel nécessite la base de données *TutorialDB* de SQL Server ou Azur
 
 Dans cet exemple, le widget requiert l’activation du *Magasin des requêtes*.
 
-1. Cliquez avec le bouton droit sur la base de données **TutorialDB** (dans la barre latérale **SERVEURS** ) et sélectionnez **Nouvelle requête**.
+1. Cliquez avec le bouton droit sur la base de données **TutorialDB** (dans la barre latérale **SERVEURS**) et sélectionnez **Nouvelle requête**.
 
 2. Collez l’instruction Transact-SQL suivante dans l’éditeur de requête et cliquez sur **Exécuter** :
 
@@ -58,7 +58,7 @@ Pour ajouter le *widget de requêtes lentes* à votre tableau de bord, modifiez 
 
    ![Commande d’ouverture des paramètres utilisateur](./media/tutorial-qds-sql-server/open-user-settings.png)
 
-3. Saisissez *dashboard* dans la zone de recherche de paramètres, recherchez **dashboard.database.widgets** , puis cliquez sur *Modifier dans settings.json*.
+3. Saisissez *dashboard* dans la zone de recherche de paramètres, recherchez **dashboard.database.widgets**, puis cliquez sur *Modifier dans settings.json*.
 
    ![Rechercher des paramètres](./media/tutorial-qds-sql-server/search-settings.png)
 
@@ -100,7 +100,7 @@ Pour ajouter le *widget de requêtes lentes* à votre tableau de bord, modifiez 
 
 5. Appuyez sur **Ctrl+S** pour enregistrer les **Paramètres utilisateur**.
 
-6. Ouvrez le *Tableau de bord de la base de données* en accédant à **TutorialDB** dans la barre latérale **SERVEURS** , cliquez avec le bouton droit, puis sélectionnez **Gérer**.
+6. Ouvrez le *Tableau de bord de la base de données* en accédant à **TutorialDB** dans la barre latérale **SERVEURS**, cliquez avec le bouton droit, puis sélectionnez **Gérer**.
 
    ![Ouvrir le tableau de bord](./media/tutorial-qds-sql-server/insight-open-dashboard.png)
 
@@ -120,9 +120,9 @@ Pour ajouter le *widget de requêtes lentes* à votre tableau de bord, modifiez 
 
 ## <a name="view-the-query-plan"></a>Afficher le plan de requête
 
-1. Cliquez avec le bouton droit sur la base de données **TutorialDB** , puis sélectionnez *Gérer*.
+1. Cliquez avec le bouton droit sur la base de données **TutorialDB**, puis sélectionnez *Gérer*.
 
-2. Sous *slow queries widget*  : pour afficher des informations supplémentaires sur un widget d’insights, cliquez sur les points de suspension ( **...** ) situés en haut à droite, puis sélectionnez **Exécuter la requête**.
+2. Sous *slow queries widget* : pour afficher des informations supplémentaires sur un widget d’insights, cliquez sur les points de suspension ( **...** ) situés en haut à droite, puis sélectionnez **Exécuter la requête**.
 
     ![Exécuter la requête](media/tutorial-qds-sql-server/run-query.png)
 
@@ -147,7 +147,7 @@ Dans ce didacticiel, vous avez appris à :
 > * Afficher des détails sur les requêtes les plus lentes de la base de données
 > * Afficher les plans d’exécution de requête pour les requêtes lentes
 
-Pour savoir comment activer l’exemple d’insight **d’utilisation de l’espace de table** , effectuez le didacticiel suivant :
+Pour savoir comment activer l’exemple d’insight **d’utilisation de l’espace de table**, effectuez le didacticiel suivant :
 
 > [!div class="nextstepaction"]
 > [Activer le widget d’exemple d’aperçu d’espace de table](tutorial-table-space-sql-server.md)

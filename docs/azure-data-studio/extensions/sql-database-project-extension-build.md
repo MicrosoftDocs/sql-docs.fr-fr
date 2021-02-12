@@ -9,12 +9,12 @@ ms.author: drskwier
 ms.reviewer: maghan, sstein
 ms.custom: ''
 ms.date: 06/25/2020
-ms.openlocfilehash: 06021fc598165982156093c12c26434f06cbc422
-ms.sourcegitcommit: fa63019cbde76dd981b0c5a97c8e4d57e8d5ca4e
+ms.openlocfilehash: 8bcc0e9d54c98c83e184c3ff957dbf35082ba673
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99495707"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048413"
 ---
 # <a name="build-and-publish-a-project"></a>Générer et publier un projet
 

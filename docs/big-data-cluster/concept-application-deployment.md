@@ -10,12 +10,12 @@ ms.date: 06/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: ac26973c4d1ff8b2a9e689f3aa372d3888f939d6
-ms.sourcegitcommit: ab9ddcc16fdfc245cf9a49d1e90bb1ffe3958c38
+ms.openlocfilehash: 8c1f6b4895e872289095411cfd8ecdaf1e2eb087
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92914295"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100047649"
 ---
 # <a name="what-is-application-deployment-on-a-sql-server-big-data-cluster"></a>Présentation du déploiement d’applications sur un cluster Big Data SQL Server
 
@@ -59,7 +59,7 @@ Quand une application est exécutée, le service Kubernetes pour l’application
 
 SQL Server 2019 CU5 prend en charge le déploiement de clusters Big Data sur Red Hat OpenShift, ainsi qu’un modèle de sécurité mis à jour pour BDC, si bien que les conteneurs privilégiés ne sont plus nécessaires. Outre les utilisateurs sans privilège, les conteneurs s’exécutent en tant qu’utilisateur non racine par défaut pour tous les nouveaux déploiements avec SQL Server 2019 CU5.
 
-À l’heure où CU5 est publié, l’étape de configuration des applications déployées avec les interfaces de [déploiement d’application]() s’exécute toujours comme utilisateur *racine* . En effet, c’est à ce moment-là que sont installés les packages supplémentaires utilisés par l’application. Le reste du code utilisateur déployé dans le cadre de l’application s’exécute en tant qu’utilisateur à faibles privilèges. 
+À l’heure où CU5 est publié, l’étape de configuration des applications déployées avec les interfaces de [déploiement d’application]() s’exécute toujours comme utilisateur *racine*. En effet, c’est à ce moment-là que sont installés les packages supplémentaires utilisés par l’application. Le reste du code utilisateur déployé dans le cadre de l’application s’exécute en tant qu’utilisateur à faibles privilèges. 
 
 En outre, **CAP_AUDIT_WRITE** est une fonctionnalité facultative permettant la planification d’applications SSIS à l’aide de travaux cron. Lorsque le fichier de spécification yaml de l’application indique une planification, l’application est déclenchée par le biais d’un travail cron, qui nécessite une fonctionnalité supplémentaire.  L’application peut également être déclenchée à la demande avec *azdata app run* via un appel de service web, qui ne nécessite pas la fonctionnalité CAP_AUDIT_WRITE. 
 

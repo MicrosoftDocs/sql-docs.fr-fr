@@ -9,12 +9,12 @@ ms.date: 10/01/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: e8bc204c3f93d4a4ebbd26876bc8c3e23bad8047
-ms.sourcegitcommit: ab9ddcc16fdfc245cf9a49d1e90bb1ffe3958c38
+ms.openlocfilehash: 9d9b74b3d0f3822152927197b71d77731a5c775c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92914288"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100047430"
 ---
 # <a name="what-is-the-storage-pool-in-a-sql-server-big-data-cluster"></a>Qu’est-ce que le pool de stockage dans un cluster Big Data SQL Server ?
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: fe086e53-e2a9-4bb8-9534-94369d32ab41
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: c98c029db0ec72991d45b433fa8654fe4a5ae116
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 295729c9fb99992fd39ebb4722cece3cd645ef73
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88497675"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100078560"
 ---
 # <a name="legal-notice-ssma-for-sybase"></a>Mentions légales (SSMA pour Sybase)
 Cette documentation, ainsi que les exemples d’applications qu’elle contient, est fournie à titre d’information uniquement et sans aucune garantie, expresse ou implicite. Les informations contenues dans cette documentation, notamment les URL et autres références à des sites web Internet, pourront faire l’objet de modifications sans préavis. L’utilisateur reconnaît assumer tous les risques liés à l’utilisation ou aux résultats de l’utilisation de cette documentation.  

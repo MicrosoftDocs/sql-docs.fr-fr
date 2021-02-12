@@ -9,12 +9,12 @@ ms.date: 06/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: e74e08146ea4c92f23ba17816738122147150e7b
-ms.sourcegitcommit: ae474d21db4f724523e419622ce79f611e956a22
+ms.openlocfilehash: 52a24c1dbe2a239450b440c07de1a7852f9c627a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257119"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100046039"
 ---
 # <a name="non-root-big-data-clusters-containers"></a>Conteneurs Clusters Big Data non racine
 
@@ -31,7 +31,7 @@ Consultez [ce livre blanc technique](https://aka.ms/sql-bdc-openshift-security),
 > Nous recommandons d’exécuter le cluster avec le paramètre non racine par défaut. Si vous souhaitez rétablir le comportement antérieur à CU5 afin que les conteneurs Clusters Big Data s’exécutent en tant qu’utilisateur `root`, vous pouvez utiliser le nouveau commutateur de fonctionnalité `allowRunAsRoot` pour désactiver le comportement par défaut. Ce paramètre peut également être défini au moment du déploiement. Pour cela, spécifiez-le sous la section `security` dans le fichier de configuration de déploiement `control.json` :
 
 ```json
- "security": {
+ "security": {
   …
     "allowRunAsRoot": true,
   …

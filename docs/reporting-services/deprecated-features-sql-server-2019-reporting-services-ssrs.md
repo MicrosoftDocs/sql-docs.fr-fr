@@ -15,12 +15,12 @@ ms.assetid: 3876c01e-f81d-4cce-9104-5106a8c369e6
 author: maggiesMSFT
 ms.author: maggies
 monikerRange: '>= sql-server-ver15'
-ms.openlocfilehash: d5f173bf7fa557a963a55b0a88a9dc48fae74a66
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0491d5ee88b7e7476b51bcdef4a08fc1c354ef7a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97425204"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100065528"
 ---
 # <a name="deprecated-features-in-sql-server-2019-reporting-services"></a>Fonctionnalités déconseillées dans SQL Server 2019 Reporting Services
 

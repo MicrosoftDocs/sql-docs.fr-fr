@@ -9,12 +9,12 @@ ms.date: 09/30/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 0e3d7217ef917c794f1c497f7c5548588c2da1ba
-ms.sourcegitcommit: ae474d21db4f724523e419622ce79f611e956a22
+ms.openlocfilehash: 3c172eea166f93d3e612145a2675e195c9dfdf76
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257379"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052760"
 ---
 # <a name="install-azure-data-cli-azdata-on-macos"></a>Installer [!INCLUDE [azure-data-cli-azdata](../../includes/azure-data-cli-azdata.md)] sur macOS
 

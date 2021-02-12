@@ -11,12 +11,12 @@ ms.topic: reference
 ms.assetid: c92a21cc-8e53-43d0-a4bf-542c77c100c9
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: c5793f486b43fe4c2d12ec9be004dbb2b3346020
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8767da09f84be9c557238643e16c925756e0bede
+ms.sourcegitcommit: c52a6aeb6fa6d7c3a86b3e84449361f4a0949ad0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99179922"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99623779"
 ---
 # <a name="pdostatementgetcolumnmeta"></a>PDOStatement::getColumnMeta
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -72,7 +72,7 @@ print $metadata['name'];
   
 ## <a name="sensitivity-data-classification-metadata"></a>Métadonnées de classification des données sensibles
 
-À compter de la version 5.8.0, un nouvel attribut d’instruction `PDO::SQLSRV_ATTR_DATA_CLASSIFICATION` permet aux utilisateurs d’accéder aux [métadonnées de classification des données sensibles](../../relational-databases/security/sql-data-discovery-and-classification.md?tabs=t-sql#subheading-4) dans Microsoft SQL Server 2019 avec `PDOStatement::getColumnMeta`, ce qui implique d’utiliser la version 17.4.2 ou une version ultérieure de Microsoft ODBC Driver.
+À compter de la version 5.8.0, un nouvel attribut d’instruction `PDO::SQLSRV_ATTR_DATA_CLASSIFICATION` permet aux utilisateurs d’accéder aux [métadonnées de classification des données sensibles](../../relational-databases/security/sql-data-discovery-and-classification.md) dans Microsoft SQL Server 2019 avec `PDOStatement::getColumnMeta`, ce qui implique d’utiliser la version 17.4.2 ou une version ultérieure de Microsoft ODBC Driver.
 
 Il est à noter que l’attribut `PDO::SQLSRV_ATTR_DATA_CLASSIFICATION` a la valeur `false` par défaut. En revanche, s’il a la valeur `true`, le champ de tableau mentionné plus haut, `flags`, est rempli avec les métadonnées de classification des données sensibles, le cas échéant. 
 

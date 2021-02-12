@@ -10,12 +10,12 @@ author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
 ms.date: 10/02/2020
-ms.openlocfilehash: 45aad0892dbc187e50368f7abcf6c0b02cbc7cca
-ms.sourcegitcommit: e4b6357756a9c691b0441208a0058f7b8f3bea51
+ms.openlocfilehash: d664c9b5d87e8a9358fc63418f3223a062e5d7bf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99510290"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100061034"
 ---
 # <a name="download-and-install-sqlpackage"></a>Télécharger et installer sqlpackage
 

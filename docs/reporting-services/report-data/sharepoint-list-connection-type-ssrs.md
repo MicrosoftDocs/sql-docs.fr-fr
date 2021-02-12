@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 2c4adf2f-e9c4-4fae-bd3c-97fe64436caf
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 369f8962752bcdc67c407b561400138f3c179abe
-ms.sourcegitcommit: fe59f8dc27fd633f5dfce54519d6f5dcea577f56
+ms.openlocfilehash: 7bb6380e168c1e4bddefab539354d80bf14805c6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91935332"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100033459"
 ---
 # <a name="sharepoint-list-connection-type-ssrs"></a>Type de connexion de liste SharePoint (SSRS)
 
@@ -36,7 +36,7 @@ Utilisez les informations de cette rubrique pour générer une source de donnée
   
  Les tableaux suivants décrivent le comportement de récupération des informations d'identification pour l'extension de liste SharePoint lors de la connexion à une liste SharePoint locale de batteries de serveurs et à une liste SharePoint distante.  
   
- Le**tableau 1** dresse la liste des rapports déployés sur un site Windows SharePoint hérité. Un site Windows hérité prend en charge uniquement l'authentification Kerberos, NTLM et à base de formulaires (FBA). Le**tableau 2** dresse la liste des rapports déployés sur un site SharePoint basé sur les revendications.  
+ Le **tableau 1** dresse la liste des rapports déployés sur un site Windows SharePoint hérité. Un site Windows hérité prend en charge uniquement l'authentification Kerberos, NTLM et à base de formulaires (FBA). Le **tableau 2** dresse la liste des rapports déployés sur un site SharePoint basé sur les revendications.  
   
  **Tableau 1**  
   

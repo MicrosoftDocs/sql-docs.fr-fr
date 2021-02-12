@@ -9,12 +9,12 @@ ms.topic: reference
 ms.prod: sql
 ms.technology: language-extensions
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15'
-ms.openlocfilehash: 244a8ce680704b0b25f9d0499e1a7802661d56cd
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 21099123d8065fad63e1526a3377f1904aed87b4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471690"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100016523"
 ---
 # <a name="extensibility-framework-api-for-sql-server"></a>API de framework d’extensibilité pour SQL Server
 [!INCLUDE [SQL Server 2019 and later](../../includes/applies-to-version/sqlserver2019.md)]
@@ -389,13 +389,13 @@ SQLRETURN GetResults(
     SQLUSMALLINT    TaskId,
     SQLULEN*        RowsNumber,
     SQLPOINTER**    Data,
-    SQLINTEGER**_   StrLen_or_Ind
+    SQLINTEGER***   StrLen_or_Ind
 );
 ```
 
 ### <a name="arguments"></a>Arguments
 
-_SessionId*  
+*SessionId*  
 \[Entrée\] GUID identifiant de façon unique cette session de script.
 
 *TaskId*  

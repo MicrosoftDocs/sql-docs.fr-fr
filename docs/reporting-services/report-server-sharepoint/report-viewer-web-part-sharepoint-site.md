@@ -8,12 +8,12 @@ ms.technology: report-server-sharepoint
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 2eb1b02a7291d7d9eccd95a082fadb71f5e07010
-ms.sourcegitcommit: 4b7ecc080795c5f90322d60df5c0550884f48140
+ms.openlocfilehash: 1fcd4e099c245ba26d967fd775def2dc86a50d69
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "94334431"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100016825"
 ---
 # <a name="report-viewer-web-part-on-a-sharepoint-site---reporting-services"></a>Composant WebPart Visionneuse de rapports sur un site SharePoint - Reporting Services
 

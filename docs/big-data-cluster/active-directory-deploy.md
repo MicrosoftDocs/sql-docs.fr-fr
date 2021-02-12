@@ -9,12 +9,12 @@ ms.date: 09/30/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 48dde8000274ea74df1c6095714b54669c5becdd
-ms.sourcegitcommit: ae474d21db4f724523e419622ce79f611e956a22
+ms.openlocfilehash: 2a79c82f2c3fd443d7237fc3b0a1f7c51102bceb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257289"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048014"
 ---
 # <a name="deploy-sql-server-big-data-cluster-in-active-directory-mode"></a>Déployer un cluster Big Data SQL Server en mode Active Directory
 
@@ -50,9 +50,9 @@ L’intégration AD nécessite les paramètres suivants. Ajoutez ces paramètre
 - `security.activeDirectory.domainControllerFullyQualifiedDns`: Liste des noms de domaine complets de contrôleur de domaine. Le nom de domaine complet contient le nom de l’ordinateur/hôte du contrôleur de domaine. Si vous avez plusieurs contrôleurs de domaine, vous pouvez fournir une liste ici. Exemple : `HOSTNAME.CONTOSO.LOCAL`.
 
   > [!IMPORTANT]
-  > Lorsque plusieurs contrôleurs de domaine servent un domaine, utilisez le contrôleur de domaine principal comme première entrée de la liste `domainControllerFullyQualifiedDns` dans la configuration de la sécurité. Pour récupérer le nom du contrôleur de domaine principal, tapez `netdom query fsmo` dans l’invite de commandes, puis appuyez sur **ENTRÉE** .
+  > Lorsque plusieurs contrôleurs de domaine servent un domaine, utilisez le contrôleur de domaine principal comme première entrée de la liste `domainControllerFullyQualifiedDns` dans la configuration de la sécurité. Pour récupérer le nom du contrôleur de domaine principal, tapez `netdom query fsmo` dans l’invite de commandes, puis appuyez sur **ENTRÉE**.
 
-- `security.activeDirectory.realm` **Paramètre facultatif**  : Dans la majorité des cas, le domaine est égal au nom de domaine. Pour les cas où ils ne sont pas les mêmes, utilisez ce paramètre pour définir le nom du domaine (par exemple, `CONTOSO.LOCAL`). La valeur fournie pour ce paramètre doit être complète.
+- `security.activeDirectory.realm` **Paramètre facultatif** : Dans la majorité des cas, le domaine est égal au nom de domaine. Pour les cas où ils ne sont pas les mêmes, utilisez ce paramètre pour définir le nom du domaine (par exemple, `CONTOSO.LOCAL`). La valeur fournie pour ce paramètre doit être complète.
 
   > [!IMPORTANT]
   > À ce stade, le BDC ne prend pas en charge une configuration où le nom de domaine Active Directory est différent du nom de **NETBIOS** du domaine Active Directory.
@@ -77,7 +77,7 @@ Pour savoir comment mettre à jour les groupes AD en ce qui concerne ces paramè
   >Créez ces groupes dans AD avant le début du déploiement. Si l’étendue de l’un de ces groupes AD est locale au niveau du domaine, le déploiement échoue.
 
   >[!IMPORTANT]
-  >Si vos utilisateurs de domaine présentent de nombreuses appartenances à des groupes, ajustez les valeurs du paramètre de passerelle `httpserver.requestHeaderBuffer` (valeur par défaut : `8192`) et du paramètre HDFS `hadoop.security.group.mapping.ldap.search.group.hierarchy.levels` (valeur par défaut : `10`), à l’aide du fichier de configuration de déploiement *bdc.json* personnalisé. Cette meilleure pratique vise à éviter les délais de connexion à la passerelle et les réponses HTTP comportant le code d’état 431 ( *Champs d’en-tête de demande trop volumineux* ). Voici une section du fichier de configuration montrant comment définir les valeurs de ces paramètres et indiquant les valeurs recommandées pour un nombre élevé d’appartenance à des groupes :
+  >Si vos utilisateurs de domaine présentent de nombreuses appartenances à des groupes, ajustez les valeurs du paramètre de passerelle `httpserver.requestHeaderBuffer` (valeur par défaut : `8192`) et du paramètre HDFS `hadoop.security.group.mapping.ldap.search.group.hierarchy.levels` (valeur par défaut : `10`), à l’aide du fichier de configuration de déploiement *bdc.json* personnalisé. Cette meilleure pratique vise à éviter les délais de connexion à la passerelle et les réponses HTTP comportant le code d’état 431 (*Champs d’en-tête de demande trop volumineux*). Voici une section du fichier de configuration montrant comment définir les valeurs de ces paramètres et indiquant les valeurs recommandées pour un nombre élevé d’appartenance à des groupes :
 
 ```json
 {
@@ -89,7 +89,7 @@ Pour savoir comment mettre à jour les groupes AD en ce qui concerne ces paramè
                 "spec": {
                     "replicas": 1,
                     "endpoints": [{...}],
-                    "settings": {
+                    "settings": {
                         "gateway-site.gateway.httpserver.requestHeaderBuffer": "65536"
                     }
                 }
@@ -113,9 +113,9 @@ Pour savoir comment mettre à jour les groupes AD en ce qui concerne ces paramè
   >[!IMPORTANT]
   >Créez les groupes fournis pour les paramètres ci-dessous dans AD avant le début du déploiement. Si l’étendue de l’un de ces groupes AD est locale au niveau du domaine, le déploiement échoue.
 
-- `security.activeDirectory.appOwners` **Paramètre facultatif**  : Liste des groupes Active Directory qui sont autorisés à créer, supprimer et exécuter n’importe quelle application. La liste peut inclure des groupes AD dont l’étendue est universelle ou globale. Il ne peut pas s’agir de groupes locaux au niveau du domaine.
+- `security.activeDirectory.appOwners` **Paramètre facultatif** : Liste des groupes Active Directory qui sont autorisés à créer, supprimer et exécuter n’importe quelle application. La liste peut inclure des groupes AD dont l’étendue est universelle ou globale. Il ne peut pas s’agir de groupes locaux au niveau du domaine.
 
-- `security.activeDirectory.appReaders` **Paramètre facultatif**  : liste des groupes AD qui sont autorisés à exécuter n’importe quelle application. La liste peut inclure des groupes AD dont l’étendue est universelle ou globale. Il ne peut pas s’agir de groupes locaux au niveau du domaine.
+- `security.activeDirectory.appReaders` **Paramètre facultatif** : liste des groupes AD qui sont autorisés à exécuter n’importe quelle application. La liste peut inclure des groupes AD dont l’étendue est universelle ou globale. Il ne peut pas s’agir de groupes locaux au niveau du domaine.
 
 Le tableau ci-dessous montre le modèle d’autorisation pour la gestion des applications :
 
@@ -138,7 +138,7 @@ Le tableau ci-dessous montre le modèle d’autorisation pour la gestion des app
 
   Pour plus d’informations sur le déploiement de plusieurs clusters Big Data dans le même domaine Active Directory, consultez [Concept : Déploiement de [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] en mode Active Directory](active-directory-deployment-background.md).
 
-- `security.activeDirectory.accountPrefix`: **(Paramètre facultatif)** Ce paramètre, introduit dans la version SQL Server 2019 CU5, permet de prendre en charge le déploiement de plusieurs clusters Big Data sur le même domaine. Ce paramètre garantit, pour différents services Clusters Big Data, l’unicité des noms de compte, qui doivent varier d’un cluster à l’autre. La personnalisation du nom de préfixe de compte est facultative. Par défaut, c’est le nom du sous-domaine qui est utilisé comme préfixe de compte. Si ce nom dépasse 12 caractères, le préfixe de compte est constitué des 12 premiers caractères.  
+- `security.activeDirectory.accountPrefix`: **(Paramètre facultatif)** Ce paramètre, introduit dans la version SQL Server 2019 CU5, permet de prendre en charge le déploiement de plusieurs clusters Big Data sur le même domaine. Ce paramètre garantit, pour différents services Clusters Big Data, l’unicité des noms de compte, qui doivent varier d’un cluster à l’autre. La personnalisation du nom de préfixe de compte est facultative. Par défaut, c’est le nom du sous-domaine qui est utilisé comme préfixe de compte. Si ce nom dépasse 12 caractères, le préfixe de compte est constitué des 12 premiers caractères.  
 
   >[!NOTE]
   >Active Directory impose que les noms de compte soient limités à 20 caractères. Le cluster Big Data doit en utiliser 8 pour distinguer les pods et les StatefulSet, ce qui laisse 12 caractères comme limite du préfixe de compte.

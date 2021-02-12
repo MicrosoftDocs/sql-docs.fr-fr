@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: f325a606-97ac-48bc-b344-b55f5e086a48
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 307c726811d4071754ff118ebd56d7d43abd05f9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 72e4fadcd1422ea0afacc0af5e8766ebff9e6386
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88321015"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100071943"
 ---
 # <a name="setting-project-options-db2tosql"></a>Définition des options du projet (DB2ToSQL)
 Pour chaque projet SSMA, vous pouvez définir des options au niveau du projet. Ces options spécifient la conversion d’objet, le chargement d’objet, l’interface utilisateur et les paramètres de migration de données. Avant de convertir des objets vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou de migrer des données vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vérifiez que les options de configuration sont appropriées pour le projet.  
@@ -43,7 +43,7 @@ Il comporte également quatre modes de configuration de ces paramètres :
   
 -   Complète  
   
--   Custom  
+-   Personnalisé  
   
 Le mode par défaut est recommandé pour la plupart des utilisateurs. Le mode optimiste conserve la syntaxe DB2 actuelle et est plus facile à lire. Toutefois, il se peut que la conservation de la syntaxe actuelle ne soit pas exacte. Si la syntaxe DB2 doit être convertie en syntaxe équivalente [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , le mode complet effectue la conversion la plus complète, mais le code obtenu peut être plus difficile à lire. Dans le mode personnalisé, vous définissez les options.  
   
@@ -70,7 +70,7 @@ Dans SSMA, vous pouvez configurer des paramètres par défaut pour tous les proj
   
     -   Sélectionnez le type de projet de migration pour lequel les paramètres doivent être affichés ou modifiés dans la liste déroulante **version cible** de la migration cliquez sur **général** en bas du volet gauche, puis sélectionnez conversion ou migration.  
   
-    -   Pour sélectionner un mode prédéfini, dans la zone de liste déroulante **mode** , sélectionnez **par défaut**, **optimiste**ou **complète**.  
+    -   Pour sélectionner un mode prédéfini, dans la zone de liste déroulante **mode** , sélectionnez **par défaut**, **optimiste** ou **complète**.  
   
     -   Pour spécifier des paramètres personnalisés, sélectionnez ou entrez les nouveaux paramètres ou valeurs.  
   
@@ -84,7 +84,7 @@ Vous pouvez également personnaliser les paramètres du projet actuel. Ces param
   
 2.  Dans la boîte de dialogue **paramètres du projet** , utilisez l’une des procédures suivantes :  
   
-    -   Pour sélectionner un mode prédéfini, dans la zone de liste déroulante **mode** , sélectionnez **par défaut**, **optimiste**ou **complète**.  
+    -   Pour sélectionner un mode prédéfini, dans la zone de liste déroulante **mode** , sélectionnez **par défaut**, **optimiste** ou **complète**.  
   
     -   Pour spécifier un mode personnalisé, dans la zone **mode** , sélectionnez **personnalisé**, puis sélectionnez les paramètres de projet appropriés.  
   

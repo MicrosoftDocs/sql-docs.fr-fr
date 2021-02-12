@@ -8,12 +8,12 @@ ms.topic: tutorial
 ms.prod: sql
 ms.technology: language-extensions
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15'
-ms.openlocfilehash: 3d03be56084be15175ec402eafd5b3d8ebdd921e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6502be49b2076e8f6d89bdd88695f24b65dc79ae
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471680"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100075180"
 ---
 # <a name="tutorial-search-for-a-string-using-regular-expressions-regex-in-java"></a>Tutoriel : Rechercher une chaîne à l’aide d’expressions régulières (regex) dans Java
 [!INCLUDE [SQL Server 2019 and later](../../includes/applies-to-version/sqlserver2019.md)]

@@ -4,11 +4,11 @@ ms.service: sql
 ms.topic: include
 ms.date: 06/11/2020
 ms.author: mikeray
-ms.openlocfilehash: e1407d6b177b0332e6f897d9487c46f03dd4f4a4
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: aeb9ecf40494b834981b626a0f61e22e539e0638
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96131145"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100106060"
 ---
 [!INCLUDE [Applies to](../../includes/applies-md.md)] [!INCLUDE [SQL Server](_ssnoversion.md)] [!INCLUDE [ASDBMI](_asdbmi.md)] [!INCLUDE [Azure Synapse Analytics ](../../includes/applies-to-version/_asa.md)] [!INCLUDE [Parallel Data Warehouse](../../includes/applies-to-version/_pdw.md)] 

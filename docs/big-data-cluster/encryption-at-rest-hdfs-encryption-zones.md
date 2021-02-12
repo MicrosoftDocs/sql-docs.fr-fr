@@ -9,12 +9,12 @@ ms.date: 10/19/2020
 ms.topic: tutorial
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 904b07913a63e226e5e45876f2fc520226411223
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: bfcc348595a645eca3b1150ae39e7c777f4e192a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92199569"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100046759"
 ---
 # <a name="sql-server-big-data-clusters-hdfs-encryption-zones-usage-guide"></a>Guide d’utilisation des zones de chiffrement HDFS des Clusters Big Data SQL Server
 
@@ -22,7 +22,7 @@ ms.locfileid: "92199569"
 
 Ce guide décrit comment utiliser les fonctionnalités de chiffrement au repos des Clusters Big Data SQL Server pour chiffrer des dossiers HDFS à l’aide des zones de chiffrement.
 
-Notez qu’il existe déjà une zone de chiffrement par défaut montée sur __```/securelake```__ prêt à être utilisée. Elle a été créée avec une clé 256 bits générée par le système et nommée __securelakekey__ . Cette clé peut être utilisée pour créer des zones de chiffrement supplémentaires.
+Notez qu’il existe déjà une zone de chiffrement par défaut montée sur __```/securelake```__ prêt à être utilisée. Elle a été créée avec une clé 256 bits générée par le système et nommée __securelakekey__. Cette clé peut être utilisée pour créer des zones de chiffrement supplémentaires.
 
 ## <a name="prerequisites"></a><a id="prereqs"></a> Conditions préalables
 
@@ -45,7 +45,7 @@ Utilisez [les instructions de connexion Active Directory](active-directory-conne
    hdfs dfs -mkdir -p /user/zone/folder
    ```
 
-1. Émettez la commande de création de zone de chiffrement pour chiffrer le dossier à l’aide de la clé __securelakekey__ .
+1. Émettez la commande de création de zone de chiffrement pour chiffrer le dossier à l’aide de la clé __securelakekey__.
 
    ```console
    hdfs crypto -createZone -keyName securelakekey -path /user/zone/folder

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: eeb80fa5-f530-4f21-beee-25f5a4b8ace6
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 1f4d616b964a1e9e9eed391e3386b16e9df54e44
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 66d1ce573f464f14e0b738fb4c461be031db64ba
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195531"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070067"
 ---
 # <a name="project-settings-conversion-sybasetosql"></a>Paramètres du projet (Conversion) (SybaseToSQL)
 
@@ -456,7 +456,7 @@ Lorsque vous sélectionnez un mode de conversion dans la zone **mode** , SSMA ap
 |-|-|
 |Default|À ne pas utiliser|
 |Optimistic|À ne pas utiliser|
-|Complète|Utilisez|
+|Complète|Utilisation|
 
 ### <a name="replicate-function"></a>REPLICATE (fonction)
 

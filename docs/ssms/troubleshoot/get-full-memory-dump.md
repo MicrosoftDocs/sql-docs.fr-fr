@@ -12,12 +12,12 @@ ms.author: maghan
 ms.reviewer: drskwier, sstein
 ms.custom: seo-lt-2019
 ms.date: 05/17/2019
-ms.openlocfilehash: d6055d14fd6edbc711c950aa194cd9b553cb3b78
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 38e711e9857aea6601878f712c9c5de8cf908e03
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92035916"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017393"
 ---
 # <a name="get-full-memory-dump"></a>Obtenir l’image mémoire complète
 

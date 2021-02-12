@@ -8,12 +8,12 @@ ms.date: 08/04/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: ef2df0bec343d73de90a43e411da92530c3c50c8
-ms.sourcegitcommit: 6ab28d954f3a63168463321a8bc6ecced099b247
+ms.openlocfilehash: 7c40a136f748126bd7baa6892d5cdb5317363ad2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "87790263"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100046329"
 ---
 # <a name="manage-big-data-cluster-access-in-active-directory-mode"></a>Gérer l’accès à un cluster Big Data en mode Active Directory
 

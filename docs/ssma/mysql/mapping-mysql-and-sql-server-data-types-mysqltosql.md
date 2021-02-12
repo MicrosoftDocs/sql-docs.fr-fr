@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 14f98054-13b4-4231-a6b0-2452f3b9941d
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 0df267807ff824cebac580fb3454d63de8dfe31b
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f7024f944030714e7aa2431815e326b1be5be701
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88463382"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077200"
 ---
 # <a name="mapping-mysql-and-sql-server-data-types-mysqltosql"></a>Mappage des types de données MySQL et SQL Server (MySQLToSQL)
 Les types de base de données MySQL diffèrent des [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] types de Azure SQL Database ou. Lorsque vous convertissez des objets de base de données MySQL en [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] objets ou SQL Azure, vous devez spécifier comment mapper les types de données de MySQL à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure. Vous pouvez accepter les mappages de type de données par défaut, ou vous pouvez personnaliser les mappages comme indiqué dans les procédures suivantes.  
@@ -57,7 +57,7 @@ Lorsque vous affichez l’onglet **mappage de type** dans SSMA, l’arrière-pla
   
         1.  Certains types nécessitent une longueur de type de données cible. Si nécessaire, entrez la nouvelle longueur des données dans la zone **remplacer par** , puis cliquez sur **OK**.  
   
-        2.  Certains types nécessitent une **précision** et une **échelle**de type de données cible. Si nécessaire, entrez la nouvelle précision et l’échelle dans la zone **remplacer par** , puis cliquez sur **OK**.  
+        2.  Certains types nécessitent une **précision** et une **échelle** de type de données cible. Si nécessaire, entrez la nouvelle précision et l’échelle dans la zone **remplacer par** , puis cliquez sur **OK**.  
   
 -   **Pour modifier un mappage de type, procédez comme suit :**  
   
@@ -71,7 +71,7 @@ Lorsque vous affichez l’onglet **mappage de type** dans SSMA, l’arrière-pla
   
     -  Certains types nécessitent une longueur de type de données cible. Si nécessaire, entrez la nouvelle longueur des données dans la zone **remplacer par** , puis cliquez sur **OK**.  
   
-    -  Certains types nécessitent une **précision** et une **échelle**de type de données cible. Si nécessaire, entrez la nouvelle précision et l’échelle dans la zone **remplacer par** , puis cliquez sur **OK**.  
+    -  Certains types nécessitent une **précision** et une **échelle** de type de données cible. Si nécessaire, entrez la nouvelle précision et l’échelle dans la zone **remplacer par** , puis cliquez sur **OK**.  
   
 -   **Pour supprimer un mappage de type de données, procédez comme suit :**  
   

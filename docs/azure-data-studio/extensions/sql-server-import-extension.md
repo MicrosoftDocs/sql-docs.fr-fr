@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: maghan, sstein
 ms.custom: ''
 ms.date: 09/22/2020
-ms.openlocfilehash: caf2b3ee70d2542dc529e83e1e243ff215c644a4
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: a1a4c9a83aca18ef41960f3c497b75f6de210109
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91123099"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048379"
 ---
 # <a name="sql-server-import-extension"></a>Extension d’importation SQL Server
 

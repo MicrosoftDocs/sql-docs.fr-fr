@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: alayu
 ms.custom: seodec18
 ms.date: 11/04/2019
-ms.openlocfilehash: 808dec10c92bffe66122bfa9a55d7db1cc64f62e
-ms.sourcegitcommit: 63aef5a96905f0b026322abc9ccb862ee497eebe
+ms.openlocfilehash: 851fbdf950656f9edfba76e3d5a0aae54e8e3d99
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91364169"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048169"
 ---
 # <a name="tutorial-back-up-and-restore-databases-using-azure-data-studio"></a>Tutoriel : Sauvegarder et restaurer des bases de données avec Azure Data Studio
 

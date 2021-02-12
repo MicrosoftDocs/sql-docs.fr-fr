@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: c02f6942-0484-4567-a78e-fe8aa2053536
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5cbcb5cf689d544730661fd9dd700537309d8a23
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 45b617e91f2f296aa9749f7f8f2f25b640ddf546
+ms.sourcegitcommit: c52a6aeb6fa6d7c3a86b3e84449361f4a0949ad0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99154238"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "99623769"
 ---
 # <a name="sqlsrv_field_metadata"></a>sqlsrv_field_metadata
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -129,7 +129,7 @@ sqlsrv_close($conn);
 
 ## <a name="sensitivity-data-classification-metadata"></a>Métadonnées de classification des données sensibles
 
-Une nouvelle option `DataClassification` est introduite dans la version 5.8.0 pour permettre aux utilisateurs d’accéder aux [métadonnées de classification des données sensibles](../../relational-databases/security/sql-data-discovery-and-classification.md?tabs=t-sql#subheading-4) dans Microsoft SQL Server 2019 avec `sqlsrv_field_metadata`, ce qui implique d’utiliser la version 17.4.2 ou une version ultérieure de Microsoft ODBC Driver.
+Une nouvelle option `DataClassification` est introduite dans la version 5.8.0 pour permettre aux utilisateurs d’accéder aux [métadonnées de classification des données sensibles](../../relational-databases/security/sql-data-discovery-and-classification.md) dans Microsoft SQL Server 2019 avec `sqlsrv_field_metadata`, ce qui implique d’utiliser la version 17.4.2 ou une version ultérieure de Microsoft ODBC Driver. 
 
 Par défaut, l’option `DataClassification` a la valeur `false` par défaut. En revanche, lorsqu’elle a la valeur `true`, le tableau retourné par `sqlsrv_field_metadata` est rempli avec les métadonnées de classification des données sensibles, le cas échéant. 
 

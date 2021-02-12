@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 580d72a3-9be3-4f19-a9b3-5b41cc84b589
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 0331ab7217acef6a3f87a9c91e0e72fb7d3a7555
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 86b6b984374e9fb64b08a1299ad0c7ba170f5749
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88463316"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100074460"
 ---
 # <a name="shortcut-keys-mysqltosql"></a>Touches de raccourci (MySQLToSQL)
 Vous pouvez utiliser les raccourcis clavier pour naviguer dans l’application SSMA. Pour plus d'informations, consultez les rubriques ci-dessous.  

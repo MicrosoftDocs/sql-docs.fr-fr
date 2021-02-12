@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 05b0bed4a16dcbbac17030adc79ff1231d989696
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 923d81fb2f9e899b8004a0384f05431f784cdea5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85899754"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100017794"
 ---
 # <a name="manage-tables-relationships-and-fix-errors"></a>Gérer des tables et des relations, et résoudre les erreurs
 

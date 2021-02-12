@@ -8,12 +8,12 @@ ms.technology: report-server-sharepoint
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: b6c0280e54fab14c4a3f76f75a4639dad99a0635
-ms.sourcegitcommit: fe59f8dc27fd633f5dfce54519d6f5dcea577f56
+ms.openlocfilehash: 4b8638e0c9a958e8f5dd6b6039540e8492555b03
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91933558"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100074830"
 ---
 # <a name="deploy-the-sql-server-reporting-services-report-viewer-web-part-on-a-sharepoint-site"></a>Déployer le composant WebPart Visionneuse de rapports de SQL Server Reporting Services sur un site SharePoint
 
@@ -29,7 +29,7 @@ Utilisez les instructions suivantes pour déployer manuellement le package de so
 
 > [!IMPORTANT]
 > Depuis la version « 15.X.X.X », vous pouvez installer ReportViewerWebPart côte à côte avec vos applications de services partagés en mode intégré Reporting Services SharePoint.
-> De nouveaux fichiers ont été ajoutés dans le cadre de la mise à jour de la solution .wsp. Vous devez supprimer la solution précédente et redéployer la nouvelle à l’aide des applets de commande Uninstall-SPSolution et Install-SPSolution, respectivement.
+> Avec cette mise à jour de la solution .wsp nous avons introduit de nouveaux fichiers et la solution précédente doit être retirée et la nouvelle solution .wsp doit être redéployée à l’aide des cmdlets Uninstall-SPSolution et Install-SPSolution, respectivement.
 >
 
 **Versions SharePoint Server prises en charge :**

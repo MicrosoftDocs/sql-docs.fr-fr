@@ -16,12 +16,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: db4981480d5c14a658c49e29068f7eebfa53bb6b
-ms.sourcegitcommit: b860fe41b873977649dca8c1fd5619f294c37a58
+ms.openlocfilehash: f7d63d6b26d8f5f07b6a4344e84f3d490012c91f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2020
-ms.locfileid: "85518959"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077054"
 ---
 # <a name="extract-publish-and-register-dacpac-files"></a>Extraire, publier et enregistrer des fichiers .dacpac.
 

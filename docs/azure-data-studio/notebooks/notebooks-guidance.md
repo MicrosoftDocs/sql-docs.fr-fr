@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: achatter, maghan, mikeray
 ms.custom: seo-lt-2019
 ms.date: 07/01/2020
-ms.openlocfilehash: c9f9e95fd6cd437d74f350afa9cc4ca1399cac16
-ms.sourcegitcommit: 63aef5a96905f0b026322abc9ccb862ee497eebe
+ms.openlocfilehash: 77a0b2749f8b3ed12cf59f1359959c8d292d6eeb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91364006"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048399"
 ---
 # <a name="use-jupyter-notebooks-in-azure-data-studio"></a>Utiliser des notebooks Jupyter dans Azure Data Studio
 

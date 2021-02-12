@@ -11,12 +11,12 @@ ms.assetid: 4acc0f2a-85ba-4c99-856a-89030f5c418e
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 789d2cbb22e03053ab8f03e0bdd50b6383ea788e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: f3b8a5871ae12f9408700153afa4f429a4865514
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88320395"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100067936"
 ---
 # <a name="global-settings-tester-oracletosql"></a>Paramètres globaux (Testeur) (OracleToSQL)
 Utilisez la page testeur de la boîte de dialogue **paramètres globaux** pour spécifier les paramètres du testeur SSMA.  

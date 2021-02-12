@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: a5629a72-8c17-46a4-bb4d-19d51a0b98a2
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: d6b4aef228ca1631bb550437ff0f66ff20555cb0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 4d96e3e3caeb1c40a9f4529f8d2c0ea7e0b1f717
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88321065"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100072123"
 ---
 # <a name="project-settingssynchronization-db2tosql"></a>Paramètres du projet (synchronisation) (DB2ToSQL)
 La page synchronisation de la boîte de dialogue **paramètres du projet** contient des paramètres qui personnalisent la manière dont SSMA charge et actualise les objets de base de données, tels que les tables et les procédures stockées, dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
@@ -29,7 +29,7 @@ Vous pouvez accéder à deux pages de synchronisation différentes qui contienne
 -   Pour spécifier les paramètres du projet actif, dans le menu **Outils** , cliquez sur **paramètres du projet**, puis sur **synchronisation** en bas du volet gauche.  
   
 ## <a name="miscellaneous-options"></a>Options diverses  
-**Essayer**  
+**Tentatives**  
 Spécifie le nombre de tentatives que SSMA doit effectuer lors du chargement des objets dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Les objets qui ne sont pas chargés [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans la tentative actuelle seront tentés à nouveau jusqu’à ce que SSMA atteigne le nombre maximal de tentatives dans le processus de synchronisation en cours. L’ensemble de valeurs par défaut est **2**  
   
 ## <a name="synchronization-for-db2-options"></a>Synchronisation pour les options DB2  

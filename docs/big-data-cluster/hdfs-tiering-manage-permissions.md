@@ -9,12 +9,12 @@ ms.date: 11/04/2019
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: ef2a1097d07494ca74ed2afe50c93922de83838c
-ms.sourcegitcommit: ae474d21db4f724523e419622ce79f611e956a22
+ms.openlocfilehash: 0f791cd64dd177e01dc086dd08f9216bda4a55b4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257169"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100046681"
 ---
 # <a name="manage-hdfs-permissions-for-big-data-clusters-2019"></a>Gérer les autorisations HDFS pour [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)]
 

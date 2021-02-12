@@ -12,12 +12,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: f1eae246680e35f52d10a5c5338e866b58843ec3
-ms.sourcegitcommit: b860fe41b873977649dca8c1fd5619f294c37a58
+ms.openlocfilehash: f6f3e0512a0189bde68a2dde0b39c5df7f28acde
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2020
-ms.locfileid: "85518719"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077070"
 ---
 # <a name="data-tools-operations-window"></a>Fenêtre Opérations des outils de données
 

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 1ac003b5-493a-49a5-be2b-fedbc6e2cc11
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 36d25008aa4a76bd1326c7c61ec537a6047b01e3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 054211c36aa934c0cdf011cb873d27b9170e4117
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88463404"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070204"
 ---
 # <a name="global-settings-editor-mysqltosql"></a>Paramètres globaux (Éditeur) (MySQLToSQL)
 Utilisez la page éditeur de la boîte de dialogue **paramètres globaux** pour spécifier les paramètres des fenêtres de l’éditeur de code.  

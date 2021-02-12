@@ -9,12 +9,12 @@ ms.prod: azure-data-studio
 ms.technology: azure-data-studio
 ms.custom: ''
 ms.date: 10/14/2020
-ms.openlocfilehash: d73e4b95059dab183f9a0af4896c5a6f86b7e564
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: c5cffc4964e7a91b3b63da56e43e01db41bbe8a9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091756"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048629"
 ---
 # <a name="create-sql-server-on-azure-virtual-machines-using-azure-data-studio"></a>Créer SQL Server sur des machines virtuelles Azure à l’aide d’Azure Data Studio
 

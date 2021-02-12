@@ -9,12 +9,12 @@ ms.topic: overview
 author: dphansen
 ms.author: davidph
 monikerRange: =sql-server-2016
-ms.openlocfilehash: 66e023799f69f35b8e220983b261d9e5ae074f24
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 87c3afd4e8fc96bf753067c06de2a60741bbbadb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98102232"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100019983"
 ---
 # <a name="what-is-sql-server-2016-r-services"></a>Qu’est-ce que SQL Server 2016 R Services ?
 

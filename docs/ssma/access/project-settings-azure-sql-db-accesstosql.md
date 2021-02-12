@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: bbb8a204-d0e4-4f0b-9709-271feb1f136e
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 9954fe012158526e87bd30512b13eca0314bc00e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 6fa8b7f9940327d3a45c3b4f349892ae253f4738
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88418545"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066454"
 ---
 # <a name="project-settings-azure-sql-database-accesstosql"></a>Paramètres du projet (Azure SQL Database) (AccessToSQL)
 Les paramètres du projet SQL Azure vous permettent de configurer l’ajout du suffixe Azure SQL Database dans la boîte de dialogue de connexion et d’autoriser également l’implémentation d’un mécanisme de pulsation dans SQL Azure connexion.  

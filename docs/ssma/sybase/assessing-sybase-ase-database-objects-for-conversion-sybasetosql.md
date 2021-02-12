@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: eb996b7c-1eef-4f73-b5e6-2fa6faf7336c
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 6e8bd25b8529f09896cbec2ec31578375a015f2a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e0926c350d02bf2cdbb5ae7fe4fdefbda3ef6863
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88372626"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077220"
 ---
 # <a name="assessing-sap-ase-database-objects-for-conversion-sybasetosql"></a>Évaluation des objets de base de données SAP ASE pour la conversion (SybaseToSQL)
 Avant de charger des objets et de migrer des données vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou Azure SQL, vous devez déterminer la complexité de la migration et le temps nécessaire. SSMA peut créer un rapport d’évaluation qui indique le pourcentage d’objets et de procédures qui seront correctement convertis en [!INCLUDE[tsql](../../includes/tsql-md.md)] . SSMA vous permet également de consulter les problèmes spécifiques qui peuvent provoquer des échecs de conversion.  
@@ -52,7 +52,7 @@ La fenêtre rapport d’évaluation contient trois volets :
     -   La zone source affiche le code source de l’objet sélectionné dans le volet gauche. Les zones mises en surbrillance indiquent un code source problématique.  
     -   La zone cible affiche le code converti. Le texte en rouge montre le code et les messages d’erreur les plus problématiques.  
   
--   Le volet inférieur affiche des messages de conversion, regroupés par numéro de message. Sélectionnez **Erreurs**, **avertissements**ou **informations** pour afficher les catégories de messages, puis développez un groupe de messages. Cliquez sur un message pour sélectionner l’objet dans le volet gauche, puis affichez les détails dans le volet droit.  
+-   Le volet inférieur affiche des messages de conversion, regroupés par numéro de message. Sélectionnez **Erreurs**, **avertissements** ou **informations** pour afficher les catégories de messages, puis développez un groupe de messages. Cliquez sur un message pour sélectionner l’objet dans le volet gauche, puis affichez les détails dans le volet droit.  
   
 ## <a name="analyze-conversion-problems-by-using-the-assessment-report"></a>Analyser les problèmes de conversion à l’aide du rapport d’évaluation  
 Les **volets des statistiques de conversion** affichent les statistiques de conversion. Si le pourcentage pour une catégorie est inférieur à 100%, vous devez déterminer la raison pour laquelle la conversion a échoué.  

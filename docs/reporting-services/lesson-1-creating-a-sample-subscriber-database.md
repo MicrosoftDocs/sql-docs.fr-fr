@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 47a882b7-efe5-4ee6-bef4-06118eb56903
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: a62e0e1c47cd6df4d2d5e4f28b35294af694a824
-ms.sourcegitcommit: ead0b8c334d487a07e41256ce5d6acafa2d23c9d
+ms.openlocfilehash: 8be94f5ae47a7b7545cd553299673c823993402a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "87243270"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100062984"
 ---
 # <a name="lesson-1-creating-a-sample-subscriber-database"></a>Leçon 1 : Création d’un exemple de base de données d’abonnés
 
@@ -26,9 +26,9 @@ Cette leçon part du principe que vous utilisez [!INCLUDE[ssManStudioFull_md](..
   
 1.  Démarrez [!INCLUDE[ssManStudio](../includes/ssmanstudio-md.md)]et ouvrez une connexion à une instance du [!INCLUDE[ssDEnoversion_md](../includes/ssdenoversion-md.md)].  
   
-2.  Cliquez avec le bouton droit sur Bases de données, puis sélectionnez **Nouvelle base de données** .  
+2.  Cliquez avec le bouton droit sur Bases de données, puis sélectionnez **Nouvelle base de données**.  
   
-3.  Dans la boîte de dialogue Nouvelle base de données, dans la zone **Nom de la base de données** , tapez *Abonnés* . 
+3.  Dans la boîte de dialogue Nouvelle base de données, dans la zone **Nom de la base de données**, tapez *Abonnés*. 
 4. [!INCLUDE[clickOK](../includes/clickok-md.md)]  
   
 5.  Cliquez sur le bouton **Nouvelle requête** dans la barre d’outils.  

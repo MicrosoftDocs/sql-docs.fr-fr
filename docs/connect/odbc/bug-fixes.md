@@ -14,12 +14,12 @@ ms.assetid: f78b81ed-5214-43ec-a600-9bfe51c5745a
 author: v-chojas
 ms.author: v-jizho2
 manager: kenvh
-ms.openlocfilehash: dcb4ec36406c44f51984ee5a8fc3afc2f0019a6e
-ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
+ms.openlocfilehash: 21766a0abcdd0fff1e1e3973436732caacdf8189
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99076351"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100038649"
 ---
 # <a name="list-of-bugs-fixed"></a>Liste des bogues corrigés
 
