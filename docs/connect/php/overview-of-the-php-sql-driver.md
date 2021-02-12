@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 66559249-34c0-409d-b919-9b5bf0c4c9ec
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 556d13a5b29a53b323b41bc9b697d7ad934ca143
-ms.sourcegitcommit: f7c9e562d6048f89d203d71685ba86f127d8d241
+ms.openlocfilehash: 687f8a87ea03ef661b96af27a574bb5cea09f847
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90042780"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100045269"
 ---
 # <a name="overview-of-the-microsoft-drivers-for-php-for-sql-server"></a>Vue d’ensemble des pilotes Microsoft pour PHP pour SQL Server
 

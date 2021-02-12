@@ -9,12 +9,12 @@ ms.date: 05/01/2020
 ms.topic: how-to
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 669d8f050c3dd86d733c33741eb6fc846245aff2
-ms.sourcegitcommit: 783b35f6478006d654491cb52f6edf108acf2482
+ms.openlocfilehash: 41145555b16dc437a4cb8f47ec490077f8aa8db3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91891039"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100045549"
 ---
 # <a name="symptom-ad-mode-login-fails---untrusted-domain-big-data-clusters"></a>Symptôme : Échec de la connexion en mode AD – Domaine non approuvé (Clusters Big Data)
 

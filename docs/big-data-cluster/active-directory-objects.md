@@ -9,12 +9,12 @@ ms.date: 09/30/2020
 ms.topic: reference
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: fcd045c07e7300478e811b2bbc4b9a0f5dfaab52
-ms.sourcegitcommit: 783b35f6478006d654491cb52f6edf108acf2482
+ms.openlocfilehash: 347129c6627bce865ffd4962a9cf2cb3b0beb862
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91892449"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100039780"
 ---
 # <a name="auto-generated-active-directory-objects"></a>Objets Active Directory générés automatiquement
 

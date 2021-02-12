@@ -10,12 +10,12 @@ ms.date: 09/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 51286acc7f963b8d680bd81121cc22bab1c1a0a6
-ms.sourcegitcommit: b3a711a673baebb2ff10d7142b209982b46973ae
+ms.openlocfilehash: 550c56a7ceb82b1215e6e921adb68a1438e87464
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93364381"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048239"
 ---
 # <a name="troubleshooting-big-data-clusters-bdc-with-notebooks"></a>Résolution des problèmes liés aux Clusters Big Data (BDC) avec des notebooks
 
@@ -23,7 +23,7 @@ Cette page est un index des notebooks pour les Clusters Big Data SQL Server. Ces
 
 Chaque notebook est conçu pour vérifier ses propres dépendances. Une commande **Exécuter toutes les cellules** s’effectue correctement ou produit une exception avec un conseil en lien hypertexte vers un autre notebook qui va résoudre la dépendance manquante. Suivez le lien hypertexte vers le notebook suivant, appuyez sur **Exécuter toutes les cellules** puis, après une exécution réussie, revenez au notebook d’origine, et appuyez à nouveau sur **Exécuter toutes les cellules**.
 
-Une fois toutes les dépendances installées, mais après l’échec de la commande **Exécuter toutes les cellules** , chaque notebook analyse les résultats et, dans la mesure du possible, produit un conseil de lien hypertexte vers un autre notebook pour faciliter la résolution du problème.
+Une fois toutes les dépendances installées, mais après l’échec de la commande **Exécuter toutes les cellules**, chaque notebook analyse les résultats et, dans la mesure du possible, produit un conseil de lien hypertexte vers un autre notebook pour faciliter la résolution du problème.
 
 
 ## <a name="troubleshooting-big-data-cluster-bdc"></a>Résolution des problèmes liés au cluster Big Data (BDC)

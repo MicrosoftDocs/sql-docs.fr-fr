@@ -13,12 +13,12 @@ keywords:
 ms.assetid: 9d922118-1412-4a9d-9c02-70d6c48d6c0d
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: e0b20fde852e02662780f75bd14e4b9023e01d80
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 46fceca874105ee036815d2149638be75a53b687
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92192403"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272570"
 ---
 # <a name="entity-dependencies-explorer"></a>Explorateur Dépendances d’entité
 

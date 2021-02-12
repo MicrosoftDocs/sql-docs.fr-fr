@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: maghan, sstein
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.openlocfilehash: c76e4cf15edcfeb6cb25b9d205f79ba34386e8d0
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: f2a6672f3b73a5be8077229019473758b2bf1e95
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91123096"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040249"
 ---
 # <a name="sql-server-profiler-extension-preview"></a>Extension SQL Server Profiler (préversion)
 

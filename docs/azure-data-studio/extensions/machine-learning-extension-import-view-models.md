@@ -9,12 +9,12 @@ ms.author: davidph
 ms.reviewer: sstein
 ms.custom: ''
 ms.date: 06/09/2020
-ms.openlocfilehash: 26570d8b2ca1ac80ce2a6923dc3778154cb345ec
-ms.sourcegitcommit: e3460309b301a77d0babec032f53de330da001a9
+ms.openlocfilehash: 3f55f793391e408d96b8c6d07a31c7e790d54853
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91136789"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048529"
 ---
 # <a name="import-or-view-models-with-machine-learning-extension-for-azure-data-studio-preview"></a>Importer ou afficher des modèles avec l’extension Machine Learning pour Azure Data Studio (préversion)
 
@@ -27,7 +27,7 @@ Découvrez comment utiliser [l’extension Machine Learning pour Azure Data Stud
 
 - Installez et configurez l’[extension Machine Learning pour Azure Data Studio](machine-learning-extension.md). Vous devez spécifier les [chemins d’installation Python dans les paramètres d’extension](machine-learning-extension.md#settings).
 
-- Les packages Python**onnxruntime**, **mlflow**et **mlflow-DBStore**. L’extension Machine Learning vous invite à installer le package, le cas échéant.
+- Les packages Python **onnxruntime**, **mlflow** et **mlflow-DBStore**. L’extension Machine Learning vous invite à installer le package, le cas échéant.
 
 ## <a name="view-models"></a>Afficher les modèles
 
@@ -57,9 +57,9 @@ Suivez les étapes ci-dessous pour importer un modèle ONNX dans votre base de d
 
 1. Choisissez l’emplacement de votre modèle, puis sélectionnez **Suivant**. Vous pouvez utiliser :
     - **Chargement de fichiers**. Choisissez cette option pour utiliser un modèle à partir d’un fichier. Sélectionnez le fichier de modèle sous **Fichiers sources** puis sélectionnez **Suivant**.
-    - **Azure Machine Learning**. Choisissez cette valeur pour utiliser un modèle à partir de Azure Machine Learning. Tout d’abord, **Connectez-vous à Azure**. Sélectionnez ensuite votre **compte Azure**, **abonnement Azure**, **groupe de ressources Azure** et votre**espace de travail Azure ML**. Sélectionnez le modèle que vous souhaitez utiliser, puis sélectionnez **Suivant**.
+    - **Azure Machine Learning**. Choisissez cette valeur pour utiliser un modèle à partir de Azure Machine Learning. Tout d’abord, **Connectez-vous à Azure**. Sélectionnez ensuite votre **compte Azure**, **abonnement Azure**, **groupe de ressources Azure** et votre **espace de travail Azure ML**. Sélectionnez le modèle que vous souhaitez utiliser, puis sélectionnez **Suivant**.
 
-1. Entrez le **Nom** et la**Description**du modèle, puis sélectionnez **Déployer** pour stocker le modèle dans votre base de données.
+1. Entrez le **Nom** et la **Description** du modèle, puis sélectionnez **Déployer** pour stocker le modèle dans votre base de données.
 
 > [!NOTE]
 > L’extension Machine Learning est actuellement en préversion. Par conséquent, le schéma de la table dans lequel les modèles sont stockés peut changer à l’avenir.

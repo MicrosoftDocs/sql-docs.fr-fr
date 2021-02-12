@@ -14,12 +14,12 @@ ms.assetid: 545eeda2-9829-4187-a858-619a96b4b71d
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 5cd9ca7c8789133fdbccc3367f3bda121d2499ed
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b8256909a2ebc460da2dd2db826e809dd6dfb50c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88418345"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100067624"
 ---
 # <a name="selecting-and-configuring-affected-objects-oracletosql"></a>Sélection et configuration des objets affectés (OracleToSQL)
 Sur cette page, vous pouvez sélectionner des tables et des clés étrangères, les modifications dans lesquelles doivent être comparées lorsque SSMA vérifie les résultats de l’exécution pour les objets choisis à l’étape précédente. En outre, vous pouvez personnaliser les paramètres de vérification.  
@@ -36,7 +36,7 @@ L’onglet table contient la vue de grille de la table sélectionnée. La grille
   
 -   Type de données  
   
--   Précision  
+-   Precision  
   
 -   Scale  
   
@@ -69,14 +69,14 @@ Détermine si cette colonne participera à la vérification des résultats des t
   
 -   Si vous choisissez **true**, SSMA compare le contenu de cette colonne après l’exécution du test sur Oracle avec le contenu de la colonne dans SQL Server. 
   
--   Si vous choisissez la**valeur false**, la colonne sera exclue de la vérification des résultats.  
+-   Si vous choisissez la **valeur false**, la colonne sera exclue de la vérification des résultats.  
   
 ### <a name="use-custom-scale"></a>Utiliser l’échelle personnalisée  
 Pour les colonnes de type de données numérique, vous pouvez définir une échelle personnalisée pour la comparaison.  
   
 -   Si vous choisissez **true**, les valeurs numériques sont arrondies en fonction de la valeur d' **échelle de comparaison** avant d’être comparées.  
   
--   Si vous choisissez la**valeur false**, la comparaison numérique sera exacte.  
+-   Si vous choisissez la **valeur false**, la comparaison numérique sera exacte.  
   
 ### <a name="comparing-scale"></a>Comparaison de l’échelle  
   

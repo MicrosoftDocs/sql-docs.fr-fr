@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 1ba0d113-dc05-4431-8689-e14a8821bafd
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: f910e9c07bf4318419714b97e4f4db742c913753
-ms.sourcegitcommit: 82b92f73ca32fc28e1948aab70f37f0efdb54e39
+ms.openlocfilehash: 4f31b2e46312e89830d977ca0ce61ad07572c875
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94869457"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100076270"
 ---
 # <a name="connecting-to-azure-sql-database-accesstosql"></a>Connexion à Azure SQL Database (AccessToSQL)
 

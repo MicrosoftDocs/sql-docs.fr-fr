@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: d0233525-a83b-4279-813e-c554042abd0e
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 2de9fc7fdc730cb09f96bff6633cab29521e175e
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 1b715f09cbbcd4dd565e5faa373a23edec50f47f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596986"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100073343"
 ---
 # <a name="sql-server-migration-assistant"></a>Assistant Migration SQL Server
 

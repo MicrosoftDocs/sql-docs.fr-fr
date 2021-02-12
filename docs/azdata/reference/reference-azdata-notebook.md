@@ -9,18 +9,18 @@ ms.date: 09/22/2020
 ms.topic: reference
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 4a0e171861d01d7a3afe7904905d373aa5e57639
-ms.sourcegitcommit: 22e97435c8b692f7612c4a6d3fe9e9baeaecbb94
+ms.openlocfilehash: ece761617495c2d4b5d002541ac2d3838ec58d6f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92678727"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048709"
 ---
 # <a name="azdata-notebook"></a>azdata notebook
 
 S'applique à l'[!INCLUDE [azure-data-cli-azdata](../../includes/azure-data-cli-azdata.md)]
 
-L’article suivant fournit des informations de référence sur les commandes **sql** dans l’outil **azdata** . Pour plus d’informations sur les commandes **azdata** , consultez [azdata reference](reference-azdata.md)
+L’article suivant fournit des informations de référence sur les commandes **sql** dans l’outil **azdata**. Pour plus d’informations sur les commandes **azdata**, consultez [azdata reference](reference-azdata.md)
 
 ## <a name="commands"></a>Commandes
 
@@ -112,7 +112,7 @@ Augmentez le niveau de détail de la journalisation. Utilisez --debug pour des j
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Pour plus d’informations sur les autres commandes **azdata** , consultez [azdata reference](reference-azdata.md). 
+Pour plus d’informations sur les autres commandes **azdata**, consultez [azdata reference](reference-azdata.md). 
 
-Pour plus d’informations sur l’installation de l’outil **azdata** , consultez [Installer azdata](..\install\deploy-install-azdata.md).
+Pour plus d’informations sur l’installation de l’outil **azdata**, consultez [Installer azdata](..\install\deploy-install-azdata.md).
 

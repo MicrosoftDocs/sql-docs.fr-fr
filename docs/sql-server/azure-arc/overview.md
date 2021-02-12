@@ -9,12 +9,12 @@ ms.date: 12/08/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.custom: references_regions
-ms.openlocfilehash: c1ba7f7552b5050e3c1fa7bc765acfa431f3df30
-ms.sourcegitcommit: 18e2f0706e03d0b2b6324845244fbafaa077a8dd
+ms.openlocfilehash: 4acc04883d4e4fcc0933078b81dcb8be2a45be89
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97103144"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100023263"
 ---
 # <a name="azure-arc-enabled-sql-server-preview"></a>SQL Server avec Azure Arc (préversion)
 

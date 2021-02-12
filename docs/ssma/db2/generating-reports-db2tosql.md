@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.assetid: 69ef5fd9-190d-4c58-8199-b3f77d5e1883
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 20c7e28e46f4a522f1532db69bf4e7260dced0da
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 500b1272357e115362283914c046a894cd5be715
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987425"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100073453"
 ---
 # <a name="generating-reports-db2tosql"></a>Génération de rapports (DB2ToSQL)
 Les rapports de certaines activités effectuées à l’aide de commandes sont générés dans la console SSMA au niveau de l’arborescence d’objets.  
   
 Pour générer des rapports, procédez comme suit :  
   
-1.  Spécifiez le paramètre **Write-Resume-Report-to** . Le rapport associé est stocké en tant que nom de fichier (s’il est spécifié) ou dans le dossier que vous spécifiez. Le nom de fichier est prédéfini par le système, comme indiqué dans le tableau ci-dessous, où ** &lt; n &gt; ** est le numéro de fichier unique qui s’incrémente avec un chiffre à chaque exécution de la même commande.  
+1.  Spécifiez le paramètre **Write-Resume-Report-to** . Le rapport associé est stocké en tant que nom de fichier (s’il est spécifié) ou dans le dossier que vous spécifiez. Le nom de fichier est prédéfini par le système, comme indiqué dans le tableau ci-dessous, où **&lt; n &gt;** est le numéro de fichier unique qui s’incrémente avec un chiffre à chaque exécution de la même commande.  
   
     Les rapports vis-à-vis sont les suivants :  
   
@@ -81,7 +81,7 @@ Pour générer des rapports, procédez comme suit :
 ```  
   
 ### <a name="synchronize-target"></a>synchroniser-cible :  
-La commande **Synchronize-Target** a un paramètre **signal-Errors-to** qui spécifie l’emplacement du rapport d’erreurs pour l’opération de synchronisation. Ensuite, un fichier par son nom **TargetSynchronizationReport &lt; n &gt; . XML** est créé à l’emplacement spécifié, où ** &lt; n &gt; ** est le numéro de fichier unique qui s’incrémente avec un chiffre à chaque exécution de la même commande.  
+La commande **Synchronize-Target** a un paramètre **signal-Errors-to** qui spécifie l’emplacement du rapport d’erreurs pour l’opération de synchronisation. Ensuite, un fichier par son nom **TargetSynchronizationReport &lt; n &gt; . XML** est créé à l’emplacement spécifié, où **&lt; n &gt;** est le numéro de fichier unique qui s’incrémente avec un chiffre à chaque exécution de la même commande.  
   
 **Remarque :** Si le chemin d’accès au dossier est donné, le paramètre « Report-Errors-to » devient un attribut facultatif pour la commande « Synchronize-Target ».  
   
@@ -107,7 +107,7 @@ La commande **Synchronize-Target** a un paramètre **signal-Errors-to** qui spé
 -   échec du script  
   
 ### <a name="refresh-from-database"></a>actualisation à partir de la base de données :  
-La commande **Refresh-from-Database** a un paramètre **Report-Errors-to** qui spécifie l’emplacement du rapport d’erreurs pour l’opération d’actualisation. Ensuite, un fichier par son nom **SourceDBRefreshReport &lt; n &gt; . XML** est créé à l’emplacement spécifié, où ** &lt; n &gt; ** est le numéro de fichier unique qui s’incrémente avec un chiffre à chaque exécution de la même commande.  
+La commande **Refresh-from-Database** a un paramètre **Report-Errors-to** qui spécifie l’emplacement du rapport d’erreurs pour l’opération d’actualisation. Ensuite, un fichier par son nom **SourceDBRefreshReport &lt; n &gt; . XML** est créé à l’emplacement spécifié, où **&lt; n &gt;** est le numéro de fichier unique qui s’incrémente avec un chiffre à chaque exécution de la même commande.  
   
 **Remarque :** Si le chemin d’accès au dossier est donné, le paramètre « Report-Errors-to » devient un attribut facultatif pour la commande « Synchronize-Target ».  
   

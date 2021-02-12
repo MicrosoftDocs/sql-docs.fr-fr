@@ -9,12 +9,12 @@ ms.date: 10/19/2020
 ms.topic: tutorial
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 55456185a6503ee11465a1e65cb9cd91de3ba6e2
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 0ec2ab7fa84dc3f4b4155a093794d5a4e49b56ec
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92199566"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100046809"
 ---
 # <a name="sql-server-big-data-clusters-transparent-data-encryption-tde-at-rest-usage-guide"></a>Guide d’utilisation du TDE (Transparent Data Encryption) au repos des Clusters Big Data SQL Server
 
@@ -40,7 +40,7 @@ __Fonctionnalités non prises en charge :__
 
 1. Dans Azure Data Studio, connectez-vous à l’instance maître SQL Server de votre cluster Big Data. Pour plus d’informations, consultez [Se connecter à l’instance maître SQL Server](connect-to-big-data-cluster.md#master).
 
-1. Double-cliquez sur la connexion dans la fenêtre **Serveurs** pour afficher le tableau de bord de serveur de l’instance maître SQL Server. Sélectionnez **Nouvelle requête** .
+1. Double-cliquez sur la connexion dans la fenêtre **Serveurs** pour afficher le tableau de bord de serveur de l’instance maître SQL Server. Sélectionnez **Nouvelle requête**.
 
    ![Requête d’instance maître SQL Server](./media/tutorial-data-pool-ingest-sql/sql-server-master-instance-query.png)
 

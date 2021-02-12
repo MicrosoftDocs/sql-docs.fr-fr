@@ -12,12 +12,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 3954ae84a201209e49b65dc421ab41b93126fb65
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 2ecad870723402e33026668055368dac5dfd02c2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85893870"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018089"
 ---
 # <a name="how-to-update-a-connected-database-with-power-buffer"></a>Procédure : Mettre à jour une base de données connectée avec Power Buffer
 

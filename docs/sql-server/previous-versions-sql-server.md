@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.date: 08/12/2020
 monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || >= sql-server-linux-2017'
-ms.openlocfilehash: e74d0961c6aa01c3d32df015ddf3665e412fef15
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 6fd9447cbc323ac9649754a49cc6c00ade4b67c6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466540"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100080305"
 ---
 # <a name="previous-versions-of-sql-server-documentation"></a>Versions antérieures de la documentation SQL Server
 

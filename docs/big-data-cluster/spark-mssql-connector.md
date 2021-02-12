@@ -9,12 +9,12 @@ ms.date: 11/04/2019
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: machine-learning-bdc
-ms.openlocfilehash: 454d5fadaa88d645e9d1c2feec2c9d87c2af29c9
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+ms.openlocfilehash: 29a660452841ee0057485c1a44c8ff30abd6f230
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88645500"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100045589"
 ---
 # <a name="use-the-apache-spark-connector-for-sql-server-and-azure-sql"></a>Utiliser le connecteur Apache Spark pour SQL Server et Azure SQL
 

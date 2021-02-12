@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 3c0dbca4-abfc-4449-b133-66c819681840
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: f0665f02e81c09a7ac753da738efa6cd92cc62c3
-ms.sourcegitcommit: d1051f05a7db81ec62d9785bb6af572408f3d4e0
+ms.openlocfilehash: 82a766e3f593b9f6ed49c2606703af2cdf717794
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88680598"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100038409"
 ---
 # <a name="how-to-retrieve-character-data-as-a-stream-using-the-sqlsrv-driver"></a>Procédure : Récupérer des données caractères sous la forme d’un flux à l’aide du pilote SQLSRV
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

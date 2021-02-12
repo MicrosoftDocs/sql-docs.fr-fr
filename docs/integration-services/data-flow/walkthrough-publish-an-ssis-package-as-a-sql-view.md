@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: d32d9761-93fb-4020-bf82-231439c6f3ac
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: d8a02e714f78f830da467cb35cf227d73e3a6277
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 0a9c522bf292147852203fb9ac740e7103195b35
+ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92194573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835990"
 ---
 # <a name="walkthrough-publish-an-ssis-package-as-a-sql-view"></a>Procédure pas à pas : publier un package SSIS en tant que vue SQL
 
@@ -30,14 +30,14 @@ ms.locfileid: "92194573"
 ## <a name="prerequisites"></a>Conditions préalables requises  
  Pour pouvoir effectuer cette procédure pas à pas, vous devez disposer des logiciels suivants installés sur votre ordinateur.  
   
-1.  [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] ou ultérieur avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)].  
+1.  [!INCLUDE[ssNoVersion ](../../includes/ssnoversion-md.md)] avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)].  
   
 2.  [SQL Server Data Tools](../../ssdt/download-sql-server-data-tools-ssdt.md).  
   
 ## <a name="step-1-build-and-deploy-ssis-project-to-the-ssis-catalog"></a>Étape 1 : créer et déployer le projet SSIS dans le catalogue SSIS  
  Dans cette étape, vous créez un package SSIS qui extrait les données d’une source de données SSIS prise en charge (dans cet exemple, nous utilisons une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ) et qui produit en sortie des données en utilisant un composant Data Streaming Destination. Vous générez et déployez ensuite le projet SSIS dans le catalogue SSIS.  
   
-1.  Lancez **SQL Server Data Tools**. Dans le menu **Démarrer** , pointez sur **Tous les programmes**, puis sur **Microsoft SQL Server**et cliquez sur **SQL Server Data Tools**.  
+1.  Lancez **SQL Server Data Tools**. Dans le menu **Démarrer** , pointez sur **Tous les programmes**, puis sur **Microsoft SQL Server** et cliquez sur **SQL Server Data Tools**.  
   
 2.  Créez un projet [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] .  
   
@@ -133,7 +133,7 @@ ms.locfileid: "92194573"
   
         2.  Spécifiez si les données doivent être chiffrées avant d’être envoyées sur le réseau (champ Chiffrer). Consultez la rubrique [Utilisation du chiffrement sans validation](../../relational-databases/native-client/features/using-encryption-without-validation.md) pour plus d’informations sur ce paramètre et sur le paramètre TrustServerCertificate.  
   
-        3.  Spécifiez si un certificat de serveur auto-signé peut être utilisé quand le paramètre de chiffrement est activé (champ**TrustServerCertificate** ).  
+        3.  Spécifiez si un certificat de serveur auto-signé peut être utilisé quand le paramètre de chiffrement est activé (champ **TrustServerCertificate** ).  
   
         4.  Cliquez sur **OK** pour fermer la boîte de dialogue **Paramètres avancés** .  
   

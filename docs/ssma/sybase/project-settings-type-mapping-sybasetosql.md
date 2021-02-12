@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 2698fb3a-f9e6-4e04-94e0-dad289d7ed0a
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 99ab880b69d2c06d462ed42ca0a2529ba6bf7bc2
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 9e9086feb8adcb64ba1a24191e91028fc870d488
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88372115"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100069916"
 ---
 # <a name="project-settings-type-mapping-sybasetosql"></a>Paramètres du projet (Mappage de type) (SybaseToSQL)
 La page mappage de type de la boîte de dialogue **paramètres du projet** contient des paramètres qui personnalisent la manière dont SSMA convertit les types de données Sybase Adaptive Server Enterprise (ASE) en [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] types de données.  
@@ -41,7 +41,7 @@ Cliquez pour ajouter un type de données à la liste de mappage.
 **Modifier**  
 Cliquez pour modifier le type de données sélectionné dans la liste mappage.  
   
-**Remove**  
+**Supprimer**  
 Cliquez pour supprimer le mappage de type de données sélectionné de la liste de mappage.  
   
 **Rétablir les valeurs par défaut**  
@@ -63,7 +63,7 @@ Le tableau suivant contient le mappage de type par défaut entre ASE et les [!IN
 |**char varying [8001.. \* ]**|**varchar(max)**|  
 |**Char [ \* .. 8000]**|**Char [ \* ]**|  
 |**Char [8001.. \* ;]**|**varchar(max)**|  
-|**symbole**|**char**|  
+|**character**|**char**|  
 |**character varying**|**varchar**|  
 |**caractère variable [ \* .. 8000]**|**VARCHAR [ \* ]**|  
 |**caractère variable [8001.. \* ]**|**varchar(max)**|  

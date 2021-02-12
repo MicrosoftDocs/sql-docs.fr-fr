@@ -22,12 +22,12 @@ ms.assetid: 9b80a9e0-08e7-4b4d-b5ec-cc998d3f5114
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 038ffa60562a443c916d0143fa432d3e5da87bc4
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: 7c52b13a2a71afc005f19d1733e8dff435d2a582
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87937806"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066584"
 ---
 # <a name="preparing-access-databases-for-migration-accesstosql"></a>Préparation des bases de données Access pour la migration (AccessToSQL)
 Avant de migrer des bases de données Access vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vous devez déterminer les bases de données à migrer et vérifier que ces bases de données sont prêtes pour la migration.  
@@ -38,7 +38,7 @@ Le moteur de base de données Jet, qui est utilisé en tant que moteur de base d
 Après la migration des bases de données vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vous pouvez continuer à utiliser l’accès à l’aide de tables liées, ou vous pouvez migrer manuellement vos applications vers du [!INCLUDE[msCoName](../../includes/msconame_md.md)] code basé sur .NET Framework qui interagit directement avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
   
 ## <a name="determining-which-databases-to-migrate"></a>Détermination des bases de données à migrer  
-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Assistant Migration (SSMA) pour Access peut localiser les bases de données Access pour vous. Vous pouvez ensuite exporter les métadonnées relatives à ces bases de données vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Pour plus d’informations sur l’exportation et l’interrogation des métadonnées, consultez [exportation d’un inventaire des accès](exporting-an-access-inventory-accesstosql.md).  
+[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Assistant Migration (SSMA) pour Access peut localiser les bases de données Access pour vous. Vous pouvez ensuite exporter les métadonnées relatives à ces bases de données vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Pour plus d’informations sur l’exportation et l’interrogation des métadonnées, consultez [exportation d’un inventaire des accès](exporting-an-access-inventory-accesstosql.md).  
 
    > [!NOTE]
    > Les fonctionnalités et les paramètres d’accès ne sont pas tous pris en charge par, ou peuvent être facilement converties en [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Avant de commencer à migrer des bases de données, consultez [fonctionnalités d’accès incompatible](incompatible-access-features-accesstosql.md).
@@ -76,6 +76,6 @@ Pour plus d’informations sur la sauvegarde des [!INCLUDE[ssNoVersion](../../in
 ### <a name="documenting-databases"></a>Documentation des bases de données  
 Vous pouvez également documenter les propriétés, telles que les listes d’objets de base de données, les tailles de fichier et les autorisations, de vos bases de données Access. Pour générer cette documentation dans Access, dans le menu **Outils** , pointez sur **analyser**, puis cliquez sur **documenté**.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir également  
 [Migration de bases de données Access vers SQL Server](migrating-access-databases-to-sql-server-azure-sql-db-accesstosql.md)  
 [Liaison des applications Access à SQL Server](linking-access-applications-to-sql-server-azure-sql-db-accesstosql.md)

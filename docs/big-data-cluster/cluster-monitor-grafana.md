@@ -10,12 +10,12 @@ ms.date: 09/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: ee0ceb3a9f86fc2a7fabe44e9279b7e63dabfb8b
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 6b9e97e90e844391f62d920b64f7a09de5b6e7ea
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091684"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100047729"
 ---
 # <a name="monitor-cluster-with-azdata-and-grafana-dashboard"></a>Analyser le cluster avec azdata et le tableau de bord Grafana
 

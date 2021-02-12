@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 87cdbd49-a0c9-4b00-8a93-34188b18d11a
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 3a7932d79c414fb79dfc29074c1b8a5888c85827
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 898b55146317a09b43b1b4df63a22a9a74882ee9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88418505"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100074630"
 ---
 # <a name="removing-the-ssma-for-mysql-components-mysqltosql"></a>Suppression des composants SSMA pour MySQL (MySQLToSql)
-Une fois que vous avez terminé la migration des bases de données de MySQL vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vous pouvez désinstaller les composants SSMA. Vous pouvez désinstaller les composants du client à tout moment. Toutefois, si vous désinstallez le pack d’extension de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , SSMA ne prend plus en charge la migration des données de MySQL vers la base de données cible (SQL Server/SQL Azure) à l’aide du moteur de migration de données côté serveur.  
+Une fois que vous avez terminé la migration des bases de données de MySQL vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vous pouvez désinstaller les composants SSMA. Vous pouvez désinstaller les composants du client à tout moment. Toutefois, si vous désinstallez le pack d’extension de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , SSMA ne prend plus en charge la migration des données de MySQL vers la base de données cible (SQL Server/SQL Azure) à l’aide du moteur de migration de données Server-Side.  
   
 ## <a name="uninstalling-the-ssma-for-mysql-client"></a>Désinstallation du client SSMA pour MySQL  
 Vous pouvez désinstaller SSMA à l’aide d' **Ajout/suppression de programmes**.  
@@ -55,7 +55,7 @@ Vous pouvez supprimer le pack d’extension en utilisant **Ajout/suppression de 
   
 7.  Dans la page terminer, cliquez sur **quitter**.  
   
-Une fois le processus de désinstallation terminé, vous pouvez vérifier que les objets du schéma **sysdb. ssma_MySQL** , et éventuellement la base de données **sysdb** entière, ont été supprimés à l’aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] . Toutefois, si vous utilisez d’autres produits SSMA, ils utilisent également la base de données **sysdb** . Si la base de données existe et que vous êtes sûr qu’aucune autre base de données ne fait référence aux objets de cette base de données, vous pouvez détacher la base de données.  
+Une fois le processus de désinstallation terminé, vous pouvez vérifier que les objets du schéma **sysdb.ssma_MySQL** , et éventuellement la base de données **sysdb** entière, ont été supprimés à l’aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] . Toutefois, si vous utilisez d’autres produits SSMA, ils utilisent également la base de données **sysdb** . Si la base de données existe et que vous êtes sûr qu’aucune autre base de données ne fait référence aux objets de cette base de données, vous pouvez détacher la base de données.  
   
 ## <a name="see-also"></a>Voir aussi  
 [Installation de SSMA pour MySQL client &#40;MySQLToSQL&#41;](../../ssma/mysql/installing-ssma-for-mysql-client-mysqltosql.md)  

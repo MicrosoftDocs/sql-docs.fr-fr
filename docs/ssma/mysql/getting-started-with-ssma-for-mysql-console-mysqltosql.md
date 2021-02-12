@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 218d502c-059f-4d48-9aea-61e553d74303
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 59df65daf56708a2b30b1e0a75e554750e95cb47
-ms.sourcegitcommit: 442fbe1655d629ecef273b02fae1beb2455a762e
+ms.openlocfilehash: 4c4a7e894052ec9799039d45ff5bb9e2aa29a23b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93235186"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100078210"
 ---
 # <a name="getting-started-with-ssma-for-mysql-console-mysqltosql"></a>Bien démarrer avec la console SSMA pour MySQL (MySQLToSQL)
 Cette section décrit la procédure de lancement et de prise en main de l’application de console MySQL. Les conventions utilisées dans une fenêtre de sortie de console SSMA standard sont également répertoriées.  
@@ -26,7 +26,7 @@ Cette section décrit la procédure de lancement et de prise en main de l’appl
 ## <a name="launching-ssma-console"></a>Lancement de la console SSMA  
 Pour démarrer l’application de console SSMA, procédez comme suit :  
   
-1.  Accédez à **Démarrer** et pointez sur **tous les programmes** .  
+1.  Accédez à **Démarrer** et pointez sur **tous les programmes**.  
   
 2.  Cliquez sur le raccourci **d’invite de commandes Assistant Migration SQL Server pour MySQL** .  
   
@@ -61,7 +61,7 @@ Interprétation des couleurs de la sortie de la console dans le tableau suivant�
 |Rouge|Erreur irrécupérable lors de l’exécution|  
 |Gris|Date et heure, message à l’utilisateur|  
 |White|Commandes de fichier de script, type de message|  
-|Jaune|Avertissement|  
+|Yellow|Avertissement|  
 |Vert|Demander une entrée utilisateur|  
 |Cyan|Début, fin et résultat d’une opération|  
   

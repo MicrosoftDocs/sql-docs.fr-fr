@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 5e879c65-0d38-454f-9a20-62a6e72c89f7
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 134f6e6b573fd77440b656504c12c292e7ff37c4
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 60fd195f5588ef38ab0a6e3c0c7ccbc4162bdc90
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88500678"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272810"
 ---
 # <a name="change-tracking-master-data-services"></a>Suivi des modifications (Master Data Services)
 

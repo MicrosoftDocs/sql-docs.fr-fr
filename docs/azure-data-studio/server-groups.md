@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: alayu, maghan, sstein
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.openlocfilehash: 293e90c5df31151cf75490f79dd92dc1b15fa02f
-ms.sourcegitcommit: dc8a30a4a27e15fc6671ca2674da9b7c637ec255
+ms.openlocfilehash: f84b784cde611f372b44b74f908aa507cf8a036a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88745919"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048219"
 ---
 # <a name="server-groups-in-azure-data-studio"></a>Groupes de serveurs dans Azure Data Studio
 

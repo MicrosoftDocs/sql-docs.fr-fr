@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: alayu, maghan, sstein
 ms.custom: seodec18; seo-lt-2019
 ms.date: 09/24/2018
-ms.openlocfilehash: e2c200bc57bc62a54a9850e85e13b9c9f15c49f0
-ms.sourcegitcommit: 80701484b8f404316d934ad2a85fd773e26ca30c
+ms.openlocfilehash: 1c91b067ff8396968b2d26c57bf5f78d4f5d4181
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93243378"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100039929"
 ---
 # <a name="tutorial-use-the-transact-sql-editor-to-create-database-objects---azure-data-studio"></a>Tutoriel : Utiliser l’éditeur Transact-SQL pour créer des objets de base de données - Azure Data Studio
 
@@ -30,7 +30,7 @@ Dans ce didacticiel, vous apprendrez à utiliser [!INCLUDE[name-sos-short](../in
 
 ## <a name="prerequisites"></a>Prérequis
 
-Ce didacticiel nécessite la base de données *TutorialDB* de SQL Server ou Azure SQL Database. Pour créer la base de données *TutorialDB* , suivez un des démarrages rapides suivants :
+Ce didacticiel nécessite la base de données *TutorialDB* de SQL Server ou Azure SQL Database. Pour créer la base de données *TutorialDB*, suivez un des démarrages rapides suivants :
 
 - [Se connecter à et interroger SQL Server avec [!INCLUDE[name-sos-short](../includes/name-sos-short.md)]](quickstart-sql-server.md)
 - [Se connecter à et interroger Azure SQL Database avec [!INCLUDE[name-sos-short](../includes/name-sos-short.md)]](quickstart-sql-database.md)
@@ -40,9 +40,9 @@ Ce didacticiel nécessite la base de données *TutorialDB* de SQL Server ou Azur
 
 [!INCLUDE[name-sos-short](../includes/name-sos-short.md)] fournit un widget de recherche pour rechercher rapidement des objets de base de données. La liste des résultats fournit un menu contextuel pour les tâches courantes relatives à l’objet sélectionné, telles que *Modifier les données* pour une table.
 
-1. Ouvrez la barre latérale SERVEURS ( **Ctrl +G** ), développez **Bases de données** , puis sélectionnez **TutorialDB**. 
+1. Ouvrez la barre latérale SERVEURS (**Ctrl +G**), développez **Bases de données**, puis sélectionnez **TutorialDB**. 
 
-1. Ouvrez le *Tableau de bord TutorialDB* en cliquant avec le bouton droit sur **TutorialDB** , puis en sélectionnant **Gérer** dans le menu contextuel :
+1. Ouvrez le *Tableau de bord TutorialDB* en cliquant avec le bouton droit sur **TutorialDB**, puis en sélectionnant **Gérer** dans le menu contextuel :
 
    ![Menu contextuel - Gérer](./media/tutorial-sql-editor/insight-open-dashboard.png)
 
@@ -53,7 +53,7 @@ Ce didacticiel nécessite la base de données *TutorialDB* de SQL Server ou Azur
 
    ![Widget de recherche rapide](./media/tutorial-sql-editor/quick-search-widget.png)
 
-1. Modifiez la colonne **Email** de la première ligne, saisissez *orlando0\@adventure-works.com* , puis appuyez sur **Entrée** pour enregistrer la modification.
+1. Modifiez la colonne **Email** de la première ligne, saisissez *orlando0\@adventure-works.com*, puis appuyez sur **Entrée** pour enregistrer la modification.
 
    ![modifier les données](./media/tutorial-sql-editor/edit-data.png)
 
@@ -64,11 +64,11 @@ Azure Data Studio fournit de nombreux extraits de code T-SQL intégrés pour cr�
 
 1. Ouvrez un nouvel éditeur de requête en appuyant sur **Ctrl + N**.
 
-2. Saisissez **sql** dans l’éditeur, appuyez sur la flèche vers le bas jusqu’à **sqlCreateStoredProcedure** , puis appuyez sur la touche *Tab* (ou sur *Entrée* ) pour charger l’extrait de code de création de procédure stockée.
+2. Saisissez **sql** dans l’éditeur, appuyez sur la flèche vers le bas jusqu’à **sqlCreateStoredProcedure**, puis appuyez sur la touche *Tab* (ou sur *Entrée*) pour charger l’extrait de code de création de procédure stockée.
 
    ![Capture d’écran montrant l’éditeur de requête avec sql tapé dans l’éditeur et l’option sqlCreateStoredProcedure mise en évidence.](./media/tutorial-sql-editor/snippet-list.png)
 
-3. L’extrait de code de création de procédure stockée a deux champs configurés pour une modification rapide, *StoredProcedureName* et *SchemaName*. Sélectionnez *StoredProcedureName* , cliquez avec le bouton droit, puis sélectionnez **Modifier toutes les occurrences**. Maintenant, saisissez *getCustomer* et toutes les entrées *StoredProcedureName* sont modifiées en *getCustomer*.
+3. L’extrait de code de création de procédure stockée a deux champs configurés pour une modification rapide, *StoredProcedureName* et *SchemaName*. Sélectionnez *StoredProcedureName*, cliquez avec le bouton droit, puis sélectionnez **Modifier toutes les occurrences**. Maintenant, saisissez *getCustomer* et toutes les entrées *StoredProcedureName* sont modifiées en *getCustomer*.
 
    ![Capture d’écran montrant l’éditeur de requête avec mise en évidence de l’option Modifier toutes les occurrences.](./media/tutorial-sql-editor/snippet.png)
 
@@ -117,7 +117,7 @@ Azure Data Studio offre la possibilité d’afficher une définition d’objets 
 
 1. Ouvrez un nouvel éditeur en appuyant sur **Ctrl + N**. 
 
-2. Saisissez *sql* dans l’éditeur, appuyez sur la flèche vers le bas jusqu’à *sqlCreateStoredProcedure* , puis appuyez sur la touche *Tab* (ou sur *Entrée* ) pour charger l’extrait de code de création de procédure stockée.
+2. Saisissez *sql* dans l’éditeur, appuyez sur la flèche vers le bas jusqu’à *sqlCreateStoredProcedure*, puis appuyez sur la touche *Tab* (ou sur *Entrée*) pour charger l’extrait de code de création de procédure stockée.
 3. Saisissez *setCustomer* pour *StoredProcedureName* et *dbo* pour *SchemaName*
 
 3. Remplacez les espaces réservés @param par la définition de paramètre suivante :
@@ -177,13 +177,13 @@ Azure Data Studio offre la possibilité d’afficher une définition d’objets 
    GO
    ```
 
-8. Pour créer la procédure stockée *setCustomer* , appuyez sur **F5**.
+8. Pour créer la procédure stockée *setCustomer*, appuyez sur **F5**.
 
 ## <a name="use-save-query-results-as-json-to-test-the-setcustomer-stored-procedure"></a>Utiliser l’enregistrement des résultats de la requête au format JSON pour tester la procédure stockée setCustomer
 
 La procédure stockée *setCustomer* créée dans la section précédente nécessite que les données JSON soient passées dans le paramètre *\@json_val*. Cette section montre comment obtenir du JSON correctement mis en forme à transmettre au paramètre afin de pouvoir tester la procédure stockée.
 
-1. Dans le volet **SERVERS** , cliquez avec le bouton droit sur *dbo.Customers* , puis cliquez sur **SELECT TOP 1000 Rows**.
+1. Dans le volet **SERVERS**, cliquez avec le bouton droit sur *dbo.Customers*, puis cliquez sur **SELECT TOP 1000 Rows**.
 
 2. Sélectionnez la première ligne de la vue de résultats. Assurez-vous que la ligne entière est sélectionnée (cliquez sur le numéro 1 dans la colonne la plus à gauche), puis sélectionnez **Enregistrer en tant que JSON**.  
 3. Remplacez le dossier par un emplacement dont vous vous souviendrez pour pouvoir supprimer le fichier ultérieurement (par exemple le bureau), puis cliquez sur **Enregistrer**. Le fichier au format JSON s’ouvre.
@@ -225,7 +225,7 @@ Dans ce didacticiel, vous avez appris à :
 > * Apprenez-en davantage sur les détails de l'objet de base de données avec l’option Aperçu de la définition et Atteindre la définition
 
 
-Pour savoir comment activer le widget **Cinq requêtes les plus lentes** , suivez le didacticiel suivant :
+Pour savoir comment activer le widget **Cinq requêtes les plus lentes**, suivez le didacticiel suivant :
 
 > [!div class="nextstepaction"]
 > [Activer le widget d’aperçu des requêtes les plus lentes](tutorial-qds-sql-server.md)

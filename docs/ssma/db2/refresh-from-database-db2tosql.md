@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 613a8368-b372-443f-8252-fb6dc31a003d
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 973f3aae444b27be93b675d16c9b9a73d8fac518
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7c33ccf20e2b90fd967b5b15b491710d31ea83b0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88463476"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100071935"
 ---
 # <a name="refresh-from-database-db2tosql"></a>Actualiser à partir de la base de données (DB2ToSQL)
 La boîte **de dialogue actualiser à partir de la base de données** vous permet de sélectionner les objets à actualiser à partir de la base de données DB2. Les lignes de la boîte de dialogue sont codées par couleur en fonction de l’état des métadonnées :  

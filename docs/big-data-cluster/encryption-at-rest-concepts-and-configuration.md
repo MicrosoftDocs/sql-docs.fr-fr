@@ -10,12 +10,12 @@ ms.date: 10/19/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: de0bc20d7551e8d42c5dc1463fada6ffcbb6a0fd
-ms.sourcegitcommit: ae474d21db4f724523e419622ce79f611e956a22
+ms.openlocfilehash: df878f94c2ed6338ae28cbff156460ffdef87826
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257149"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100046659"
 ---
 # <a name="encryption-at-rest-concepts-and-configuration-guide"></a>Guide de configuration et de concepts du chiffrement au repos
 
@@ -28,14 +28,14 @@ Les Clusters Big Data SQL Server stockent les données dans les deux emplacement
 
 Pour pouvoir chiffrer de manière transparente les données dans des Clusters Big Data SQL Server, il existe deux approches possibles :
 
-* __Chiffrement de volume__ . Cette approche est prise en charge par la plateforme Kubernetes et est attendue comme meilleure pratique pour les déploiements de Clusters Big Data. Ce guide ne couvre pas le chiffrement de volume. Consultez la documentation de votre plateforme ou de votre appliance Kubernetes pour savoir comment chiffrer correctement des volumes qui seront utilisés pour les Clusters Big Data SQL Server.
-* __Chiffrement au niveau de l’application__ . Cette architecture fait référence au chiffrement des données par l’application qui gère les données avant qu’elles ne soient écrites sur le disque. Si les volumes sont exposés, un attaquant ne pourra pas restaurer les artefacts de données ailleurs, sauf si le système de destination a également été configuré avec les mêmes clés de chiffrement. 
+* __Chiffrement de volume__. Cette approche est prise en charge par la plateforme Kubernetes et est attendue comme meilleure pratique pour les déploiements de Clusters Big Data. Ce guide ne couvre pas le chiffrement de volume. Consultez la documentation de votre plateforme ou de votre appliance Kubernetes pour savoir comment chiffrer correctement des volumes qui seront utilisés pour les Clusters Big Data SQL Server.
+* __Chiffrement au niveau de l’application__. Cette architecture fait référence au chiffrement des données par l’application qui gère les données avant qu’elles ne soient écrites sur le disque. Si les volumes sont exposés, un attaquant ne pourra pas restaurer les artefacts de données ailleurs, sauf si le système de destination a également été configuré avec les mêmes clés de chiffrement. 
 
 L’ensemble de fonctionnalités de chiffrement au repos des Clusters Big Data SQL Server prend en charge le scénario de base du chiffrement au niveau de l’application pour les composants SQL Server et HDFS.
 
 Les fonctionnalités suivantes sont inclues :
 
-* __Chiffrement au repos managé par le système__ . Cette possibilité est disponible dans CU8.
+* __Chiffrement au repos managé par le système__. Cette possibilité est disponible dans CU8.
 * __Le chiffrement au repos managé par l’utilisateur (BYOK)__ , avec les intégrations managées par le système et de fournisseurs de clés externes. Actuellement, seules les clés créées par l’utilisateur managées par le service sont prises en charge.
 
 ## <a name="key-definitions"></a>Définitions clés
@@ -49,9 +49,9 @@ Service hébergé par un contrôleur chargé de gérer les clés et les certific
 * Gestion des certificats TDE SQL Server.
 
 La fonction suivante n'est pas prise en charge pour l’instant :
-* *Prise en charge du contrôle de version des clés* . 
+* *Prise en charge du contrôle de version des clés*. 
 
-Nous allons faire référence à ce service comme __KMS BDC__ dans le reste de ce document. Le terme __BDC__ est également utilisé pour faire référence à la plateforme de calcul des __Clusters Big Data SQL Server__ .
+Nous allons faire référence à ce service comme __KMS BDC__ dans le reste de ce document. Le terme __BDC__ est également utilisé pour faire référence à la plateforme de calcul des __Clusters Big Data SQL Server__.
 
 ### <a name="system-managed-keys-and-certificates"></a>Clés et certificats managés par le système
 
@@ -98,7 +98,7 @@ L’ensemble de fonctionnalités présente le __service du contrôleur KMS BDC__
 
 Le chiffrement au repos sur des Clusters Big Data SQL Server est une fonctionnalité managée par le service et, en fonction de votre chemin de déploiement, peut nécessiter des étapes supplémentaires.
 
-Pendant de __nouveaux déploiements de Clusters Big Data SQL Server__ , CU8 et versions ultérieures, __le chiffrement au repos est activé et configuré par défaut__ . Cela signifie que :
+Pendant de __nouveaux déploiements de Clusters Big Data SQL Server__, CU8 et versions ultérieures, __le chiffrement au repos est activé et configuré par défaut__. Cela signifie que :
 
 * Le composant KMS BDC sera déployé dans le contrôleur et générera un ensemble de clés et de certificats par défaut .
 * SQL Server est déployé avec TDE activé et les certificats sont installés par le contrôleur.
@@ -106,7 +106,7 @@ Pendant de __nouveaux déploiements de Clusters Big Data SQL Server__ , CU8 et v
 
 Les spécifications et les comportements par défaut décrits dans la section précédente s’appliquent.
 
-Si __vous mettez à niveau votre cluster vers CU8__ , __lisez attentivement la section suivante__ .
+Si __vous mettez à niveau votre cluster vers CU8__, __lisez attentivement la section suivante__.
 
 ### <a name="upgrading-to-cu8"></a>Mise à niveau vers CU8
 
@@ -117,14 +117,14 @@ Sur les clusters existants, le processus de mise à niveau n’applique pas de c
 
 * __SQL Server__
 
-    1. __Instance maître SQL Server__ . Le processus de mise à niveau n’affecte pas les bases de données d’instance maître ni les certificats TDE installés, mais il est vivement recommandé de sauvegarder vos bases de données et vos certificats TDE installés manuellement avant le processus de mise à niveau. Il est également recommandé de stocker ces artefacts en dehors du cluster BDC SQL Server.
-    1. __Pool de calcul et de stockage__ . Ces bases de données sont managées par le système, volatiles et seront recréées et automatiquement chiffrées lors de la mise à niveau du cluster.
-    1. __Pool de données__ . La mise à niveau n’a pas d’impact sur les bases de données de la partie Instances SQL du pool de données.
+    1. __Instance maître SQL Server__. Le processus de mise à niveau n’affecte pas les bases de données d’instance maître ni les certificats TDE installés, mais il est vivement recommandé de sauvegarder vos bases de données et vos certificats TDE installés manuellement avant le processus de mise à niveau. Il est également recommandé de stocker ces artefacts en dehors du cluster BDC SQL Server.
+    1. __Pool de calcul et de stockage__. Ces bases de données sont managées par le système, volatiles et seront recréées et automatiquement chiffrées lors de la mise à niveau du cluster.
+    1. __Pool de données__. La mise à niveau n’a pas d’impact sur les bases de données de la partie Instances SQL du pool de données.
 
 * __HDFS__
 
-    1. __HDFS__ . Le processus de mise à niveau ne touche pas les fichiers et dossiers HDFS en dehors des zones de chiffrement.
-    1. __Les zones de chiffrement ne seront pas configurées__ . Le composant KMS Hadoop ne sera pas configuré pour utiliser le service KMS BDC. Pour configurer et activer la fonctionnalité de zones de chiffrement HDFS après la mise à niveau, suivez la section suivante.
+    1. __HDFS__. Le processus de mise à niveau ne touche pas les fichiers et dossiers HDFS en dehors des zones de chiffrement.
+    1. __Les zones de chiffrement ne seront pas configurées__. Le composant KMS Hadoop ne sera pas configuré pour utiliser le service KMS BDC. Pour configurer et activer la fonctionnalité de zones de chiffrement HDFS après la mise à niveau, suivez la section suivante.
 
 ### <a name="enable-hdfs-encryption-zones-after-upgrade"></a>Activer les zones de chiffrement HDFS après la mise à niveau
 

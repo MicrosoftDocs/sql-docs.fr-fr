@@ -4,20 +4,18 @@ description: Découvrez comment SQL Server Data Tools peut fonctionner avec des 
 ms.prod: sql
 ms.technology: ssdt
 ms.topic: conceptual
-f1_keywords:
-- sql.data.tools.sqlserverobjectexplorer
 ms.assetid: 21f7f959-7b8e-4335-8681-bebcd957692c
 author: markingmyname
 ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: b1b9e9d3bcdfbd9ca02b26da9c20cc086081502e
-ms.sourcegitcommit: bd3a135f061e4a49183bbebc7add41ab11872bae
+ms.openlocfilehash: 46dd6a4df85b57cbd18817debf55f95d6cf982e1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92300333"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077169"
 ---
 # <a name="connected-database-development"></a>Développement de base de données connectée
 

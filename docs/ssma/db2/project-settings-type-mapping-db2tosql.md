@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: cf426c69-6a8e-4d19-951d-6661d5ae2562
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: fc7abeb4eec6d25e183db5ffcf1923185016b913
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b562e886bcb09eae4c02607f17eb7419b313a759
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492542"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100072033"
 ---
 # <a name="project-settings-type-mapping-db2tosql"></a>Paramètres du projet (mappage de type) (DB2ToSQL)
 La page mappage de type de la boîte de dialogue **paramètres du projet** contient des paramètres qui personnalisent la manière dont SSMA convertit les types de données DB2 en [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] types de données.  
@@ -45,7 +45,7 @@ Cliquez pour ajouter un type de données à la liste de mappage.
 **Modifier**  
 Cliquez pour modifier le type de données sélectionné dans la liste mappage.  
   
-**Remove**  
+**Supprimer**  
 Cliquez pour supprimer le mappage de type de données sélectionné de la liste de mappage.  
   
 **Rétablir les valeurs par défaut**  
@@ -234,7 +234,7 @@ Le tableau suivant contient le mappage de type par défaut pour les variables lo
 |NCHAR varying [ \* .. 4000]|nvarchar [ \* ]|  
 |NCHAR varying [4001.. \* ]|nvarchar(max)|  
 |NCLOB|nvarchar(max)|  
-|Number|float [53]|  
+|Nombre|float [53]|  
 |nombre [ \* .. \* ]|Numeric [ \* ]|  
 |nombre [ \* .. \* ] [\*..\*]|Numeric [ \* ] [ \* ]|  
 |Numérique|numérique [38] [0]|  

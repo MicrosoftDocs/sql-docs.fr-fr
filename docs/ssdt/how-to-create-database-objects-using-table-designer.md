@@ -14,22 +14,22 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 410b2674f407018b895ed84781bedf5fa8766feb
-ms.sourcegitcommit: b3a711a673baebb2ff10d7142b209982b46973ae
+ms.openlocfilehash: a055bd1f8de41686e1c3477e3e4810e78d6b5025
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93364391"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018309"
 ---
 # <a name="how-to-create-database-objects-using-table-designer"></a>Procédure : Créer des objets de base de données avec le Concepteur de tables
 
-Non seulement le nouveau nœud **SQL Server** de l' **Explorateur d'objets SQL Server** est très similaire à SSMS visuellement, mais vous pouvez aussi créer de nouveaux objets à l'aide de menus contextuels dont le fonctionnement est semblable à celui de leurs homologues SSMS.  
+Non seulement le nouveau nœud **SQL Server** de l'**Explorateur d'objets SQL Server** est très similaire à SSMS visuellement, mais vous pouvez aussi créer de nouveaux objets à l'aide de menus contextuels dont le fonctionnement est semblable à celui de leurs homologues SSMS.  
   
 Par exemple, vous pouvez créer une nouvelle base de données sous le nœud **Bases de données**. De la même façon, vous pouvez sélectionner une base de données spécifique et créer ou modifier des définitions de tables et leurs objets de programmation associés à la volée à l'aide du nouveau Concepteur de tables. Dans le Concepteur de tables, vous pouvez basculer vers un volet de script qui vous permet de modifier directement le script qui définit cette table.  
   
 ### <a name="to-create-a-new-database"></a>Pour créer une nouvelle base de données  
   
-1.  Dans l' **Explorateur d'objets SQL Server** , sous le nœud **SQL Server** , développez l'instance de serveur connecté.  
+1.  Dans l'**Explorateur d'objets SQL Server**, sous le nœud **SQL Server**, développez l'instance de serveur connecté.  
   
 2.  Cliquez avec le bouton droit sur le nœud **Bases de données** et sélectionnez **Ajouter une nouvelle base de données**.  
   
@@ -53,9 +53,9 @@ Par exemple, vous pouvez créer une nouvelle base de données sous le nœud **Ba
     CREATE TABLE [dbo].[Suppliers]  
     ```  
   
-4.  Cliquez sur la ligne vide dans la Grille Colonnes pour ajouter une nouvelle colonne à la table.  Entrez **CompanyName** pour le champ **Nom** , **nvarchar (128)** pour **Type de données** et désactivez le champ **Autoriser les valeurs NULL**. Lorsque vous accédez par tabulation à un autre champ, notez que le volet de script est mis à jour immédiatement.  
+4.  Cliquez sur la ligne vide dans la Grille Colonnes pour ajouter une nouvelle colonne à la table.  Entrez **CompanyName** pour le champ **Nom**, **nvarchar (128)** pour **Type de données** et désactivez le champ **Autoriser les valeurs NULL**. Lorsque vous accédez par tabulation à un autre champ, notez que le volet de script est mis à jour immédiatement.  
   
-5.  Ajoutez une autre colonne. Entrez **Adresse** pour le champ **Nom** , **nvarchar (MAX)** pour **Type de données** , et désactivez le champ **Autoriser les valeurs NULL**.  
+5.  Ajoutez une autre colonne. Entrez **Adresse** pour le champ **Nom**, **nvarchar (MAX)** pour **Type de données**, et désactivez le champ **Autoriser les valeurs NULL**.  
   
     > [!WARNING]  
     > Lorsque vous modifiez des objets d'une base de données connectée, ne les enregistrez pas sur le disque local. Pour enregistrer correctement vos modifications dans la base de données, suivez les étapes de la prochaine [Procédure : mettre à jour une base de données connectée avec Power Buffer](../ssdt/how-to-update-a-connected-database-with-power-buffer.md).  

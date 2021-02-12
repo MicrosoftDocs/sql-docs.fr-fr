@@ -9,12 +9,12 @@ ms.author: alayu
 ms.reviewer: maghan, sstein
 ms.custom: ''
 ms.date: 06/06/2019
-ms.openlocfilehash: ca200de903675da9fdfbd2549d3ee1b5bd192907
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: 0d93943619d0825e5ba01b51a9c413950fffde37
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91123119"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048391"
 ---
 # <a name="sql-server-central-management-servers-extension-preview"></a>Extension de serveurs de gestion centralisée SQL Server (préversion)
 

@@ -9,12 +9,12 @@ ms.date: 04/21/2020
 ms.topic: how-to
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: c6d09921074ca2f2e386535baff5060620a7a3c8
-ms.sourcegitcommit: 4cb53a8072dbd94a83ed8c7409de2fb5e2a1a0d9
+ms.openlocfilehash: d914b2006656162b233351815e238f282d73e913
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83669384"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100045529"
 ---
 # <a name="restore-hdfs-permissions"></a>Restauration des autorisations HDFS
 

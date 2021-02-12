@@ -14,12 +14,12 @@ ms.assetid: 2b1fbec1-7859-44fc-8417-724fc57a59c0
 author: rothja
 ms.author: jroth
 ms.custom: seo-dt-2019
-ms.openlocfilehash: c53fe235850dbb932e5773c82cc22cc19d62e749
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 7aeb0f7cdbb911ace2ab5701e2a61befde568f2a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88454348"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100080110"
 ---
 # <a name="limitations-for-stretch-database"></a>Limitations concernant Stretch Database
 [!INCLUDE [sqlserver2016-windows-only](../../includes/applies-to-version/sqlserver2016-windows-only.md)]

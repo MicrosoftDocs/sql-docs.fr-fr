@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 08820d88-e157-4d49-9401-38580dd7ec2d
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: df2a29b2d411c2502573ede95feefe9c1e061c5b
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 75c4f6ca899135141aa68ec147889fcce8cfa549
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987895"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100074510"
 ---
 # <a name="setting-project-options-mysqltosql"></a>Définition des options du projet (MySQLToSQL)
 Pour chaque projet SSMA, vous pouvez définir des options au niveau du projet. Ces options spécifient la façon dont les objets sont convertis, la façon dont les données sont migrées et la manière dont les types de données sources sont mappés aux types de données cibles.  Avant de convertir des objets en SQL Server ou SQL Azure ou de migrer des données vers SQL Server ou SQL Azure, vérifiez que les options de configuration sont appropriées pour le projet.  
@@ -45,7 +45,7 @@ Les paramètres du projet peuvent être configurés de quatre façons :
   
 -   Complète  
   
--   Custom  
+-   Personnalisé  
   
 Le mode par défaut est recommandé pour la plupart des utilisateurs. Le mode optimiste conserve la syntaxe MySQL actuelle et est plus facile à lire. Toutefois, il se peut que la conservation de la syntaxe actuelle ne soit pas exacte. Si la syntaxe MySQL doit être convertie en SQL Server ou SQL Azure syntaxe équivalente, le mode complet effectue la conversion la plus complète. Toutefois, le code résultant peut être plus difficile à lire. Dans le mode personnalisé, vous pouvez définir les options.  
   
@@ -74,7 +74,7 @@ Dans SSMA, vous pouvez configurer des paramètres par défaut pour tous les proj
   
     1.  Sélectionnez le type de projet de migration pour lequel les paramètres doivent être affichés/modifiés dans la liste déroulante de la **version cible** de la migration, cliquez sur **général** en bas du volet gauche, puis sélectionnez option **conversion ou migration ou SQL Azure** .  
   
-    2.  Pour sélectionner un mode prédéfini, sélectionnez **par défaut**, **optimiste**ou **complète** dans la zone de liste déroulante **mode** .  
+    2.  Pour sélectionner un mode prédéfini, sélectionnez **par défaut**, **optimiste** ou **complète** dans la zone de liste déroulante **mode** .  
   
     3.  Pour spécifier des paramètres personnalisés, sélectionnez ou entrez les nouveaux paramètres ou valeurs.  
   
@@ -88,7 +88,7 @@ Vous pouvez également personnaliser les paramètres du projet actuel. Les param
   
 2.  Dans la boîte de dialogue **ProjectSettings** , utilisez l’une des procédures suivantes :  
   
-    1.  Pour sélectionner un mode prédéfini, sélectionnez **par défaut**, **optimiste**ou **complète** dans la zone de liste déroulante **mode** .  
+    1.  Pour sélectionner un mode prédéfini, sélectionnez **par défaut**, **optimiste** ou **complète** dans la zone de liste déroulante **mode** .  
   
     2.  Pour spécifier un mode personnalisé, sélectionnez **personnalisé** dans la zone de liste déroulante **mode** . Puis sélectionnez les paramètres de projet appropriés.  
   

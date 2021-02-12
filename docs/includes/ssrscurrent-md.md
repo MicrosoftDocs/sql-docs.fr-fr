@@ -4,11 +4,11 @@ ms.service: reporting-services
 ms.topic: include
 ms.date: 04/24/2019
 ms.author: v-hassmi
-ms.openlocfilehash: 717950766d10f01fce53ca42116d11697b7c7497
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: ca5bad0a84f7ed6df852d347dfb81228b41c2cc7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "92324317"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100019610"
 ---
 SQL Server 2016 Reporting Services ou versions ultérieures (SSRS)

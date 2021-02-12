@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 8373bb35-f0f9-4c3c-a53c-dfaa2ce567ac
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: af13d59ddb5c8837959feb83b31fc17dbcd7aa29
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 464bfd4714e7cc7680b2a2800d1c2ae1711feeb1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85883873"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272480"
 ---
 # <a name="create-a-master-data-services-database"></a>Créer une base de données Master Data Services
 

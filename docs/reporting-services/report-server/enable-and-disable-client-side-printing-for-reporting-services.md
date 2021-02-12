@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 0e709c96-7517-4547-8ef6-5632f8118524
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 4a2f61a8700c24a2cc41192103f57a51befbbd15
-ms.sourcegitcommit: df1f0f2dfb9452f16471e740273cd1478ff3100c
+ms.openlocfilehash: 8cf4544579f4a3258d4bc785c98ada5935653dff
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "87390655"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100075774"
 ---
 # <a name="enable-and-disable-client-side-printing-for-reporting-services"></a>Activer et désactiver l'impression côté client pour Reporting Services
 
@@ -51,7 +51,7 @@ ms.locfileid: "87390655"
      ![ssrs_html5_switch2html5](../../reporting-services/report-server/media/ssrs-html5-switch2html5.png "ssrs_html5_switch2html5")  
   
 ##  <a name="enable-and-disable-client-side-printing"></a><a name="bkmk_enable"></a> Activer et désactiver l'impression côté client  
- Les administrateurs du serveur de rapports ont la possibilité de désactiver la fonctionnalité d'impression à distance en affectant la valeur **false** à la propriété système **EnableClientPrinting**du serveur de rapports. Cela entraîne la désactivation de l'impression côté client pour tous les rapports gérés par ce serveur. Par défaut, **EnableClientPrinting** a la valeur **true**. Vous pouvez désactiver l'impression côté client de différentes façons :  
+ Les administrateurs du serveur de rapports ont la possibilité de désactiver la fonctionnalité d'impression à distance en affectant la valeur **false** à la propriété système **EnableClientPrinting** du serveur de rapports. Cela entraîne la désactivation de l'impression côté client pour tous les rapports gérés par ce serveur. Par défaut, **EnableClientPrinting** a la valeur **true**. Vous pouvez désactiver l'impression côté client de différentes façons :  
   
 -   Pour un **serveur de rapports en mode natif**:  
   
