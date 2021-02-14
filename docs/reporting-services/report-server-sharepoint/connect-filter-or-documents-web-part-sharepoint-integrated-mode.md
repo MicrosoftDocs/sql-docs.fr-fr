@@ -8,12 +8,12 @@ ms.technology: report-server-sharepoint
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: ed8aa919129d8ece0d0618fdd14f6309080a812d
-ms.sourcegitcommit: fe59f8dc27fd633f5dfce54519d6f5dcea577f56
+ms.openlocfilehash: 0e58600c502aa6ebb0a031480ab5bb66f48833ca
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91935077"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100074850"
 ---
 # <a name="connect-filter-or-documents-web-part-with-a-reporting-services-report-viewer-web-part"></a>Connecter un composant WebPart Filtre ou Documents à un composant WebPart Visionneuse de rapports Reporting Services
 
@@ -28,7 +28,7 @@ Si vous utilisez un produit SharePoint, vous pouvez créer un tableau de bord ou
 
  Le composant WebPart Filtre sert à envoyer des valeurs à un ou plusieurs paramètres d’un rapport. Pour utiliser un composant WebPart Filtre, le rapport doit avoir des paramètres relatifs à ce composant qui sont compatibles avec les valeurs, le type de données et le format envoyés par le composant WebPart.  
   
- Le composant WebPart Documents est associé à la bibliothèque de documents du site d’accueil. Pour afficher, ajouter ou supprimer des éléments de la bibliothèque de documents, cliquez sur **Afficher tout le contenu du site**. Dans Bibliothèques, cliquez sur **Documents**. Vous pouvez utiliser les menus **Nouveau**, **Télécharger**et **Actions** pour gérer les éléments de la bibliothèque de documents.  
+ Le composant WebPart Documents est associé à la bibliothèque de documents du site d’accueil. Pour afficher, ajouter ou supprimer des éléments de la bibliothèque de documents, cliquez sur **Afficher tout le contenu du site**. Dans Bibliothèques, cliquez sur **Documents**. Vous pouvez utiliser les menus **Nouveau**, **Télécharger** et **Actions** pour gérer les éléments de la bibliothèque de documents.  
   
 ## <a name="connect-a-filter-web-part"></a>Connecter un composant WebPart Filtre
   

@@ -1,8 +1,8 @@
 ---
 description: sys.dm_os_spinlock_stats (Transact-SQL)
-title: sys.dm_os_spinlock_stats (Transact-SQL) | Microsoft Docs
+title: sys.dm_os_spinlock_stats (Transact-SQL)
 ms.custom: ''
-ms.date: 06/03/2019
+ms.date: 02/10/2021
 ms.prod: sql-non-specified
 ms.prod_service: database-engine
 ms.service: ''
@@ -23,12 +23,12 @@ author: bluefooted
 ms.author: pamela
 ms.reviewer: wiassaf
 manager: amitban
-ms.openlocfilehash: 636a16d8656572e6fe2505f58bafc9eca9f6ce18
-ms.sourcegitcommit: 78b3096c2be89bcda92244f78663d8b38811bec5
+ms.openlocfilehash: 66b8a24e8b2b48aa43dd00cb37e8fc4c60fa0cd4
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100009287"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100342828"
 ---
 # <a name="sysdm_os_spinlock_stats-transact-sql"></a>sys.dm_os_spinlock_stats (Transact-SQL)
 
@@ -49,7 +49,7 @@ Retourne des informations sur toutes les attentes de verrouillages spinlock orga
 
 ## <a name="permissions"></a>Autorisations  
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] , requiert l' `VIEW SERVER STATE` autorisation.   
-Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le `Server admin` ou un `Azure Active Directory admin` compte est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.    
+Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le compte d' [administrateur de serveur](https://docs.microsoft.com/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) ou le compte d' [administrateur Azure Active Directory](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-overview#administrator-structure) est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.    
   
 ## <a name="remarks"></a>Notes  
  
@@ -69,7 +69,10 @@ GO
   
 ## <a name="spinlocks"></a>SpinLock  
  Un SpinLock est un objet de synchronisation léger utilisé pour sérialiser l’accès aux structures de données qui sont généralement maintenues pendant une brève période de temps. Quand un thread tente d’accéder à une ressource protégée par un SpinLock qui est détenu par un autre thread, le thread exécute une boucle, ou « tourne » et tente à nouveau d’accéder à la ressource, au lieu de générer immédiatement le planificateur comme avec un verrou ou une autre ressource en attente. Le thread continue de tourner jusqu’à ce que la ressource soit disponible, ou que la boucle se termine, auquel moment le thread génère le planificateur et repasse dans la file d’attente exécutable. Cette pratique permet de réduire le basculement de contexte de thread excessif, mais lorsque la contention d’un SpinLock est élevée, une utilisation importante du processeur peut être observée.
-   
+
+> [!NOTE]  
+>  Si vous avez [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] installé sur des processeurs Intel Skylake, consultez [cet article](https://support.microsoft.com/topic/kb4538688-fix-severe-spinlock-contention-occurs-in-sql-server-2019-43faea65-fdcb-6835-f7fe-93abdb235837) pour appliquer la mise à jour requise et activer l’indicateur de trace 8101.
+
  Le tableau suivant contient une brève description de certains des types SpinLock les plus courants.  
   
 |Type de verrouillage SpinLock|Description|  
@@ -230,6 +233,7 @@ GO
 |MEM_MGR|À usage interne uniquement|
 |MGR_CACHE|À usage interne uniquement|
 |MIGRATION_BUF_LIST|À usage interne uniquement|
+|MUTEX|Protège les entrées de cache relatives aux jetons de sécurité et aux vérifications d’accès. Utilisé pour les versions ci-dessous [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] . Si les entrées dans le magasin de cache TokenAndPermUserStore jusqu’se développent en permanence, vous remarquerez peut-être de grandes rotations pour ce SpinLock. Évaluez l’utilisation des [indicateurs de Trace](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) 4610 et 4618 pour limiter les entrées. Références supplémentaires : [blog](https://techcommunity.microsoft.com/t5/sql-server-support/query-performance-issues-associated-with-a-large-sized-security/ba-p/315494), [article](https://support.microsoft.com/topic/queries-take-a-longer-time-to-finish-running-when-the-size-of-the-tokenandpermuserstore-cache-grows-in-sql-server-2005-ad1622e7-3bb5-7902-19a0-5d0e6271033d) et [documentation](../../database-engine/configure-windows/access-check-cache-server-configuration-options.md).|
 |NETCONN_ADDRESS|À usage interne uniquement|
 |ONDEMAND_TASK|À usage interne uniquement|
 |ONE_PROC_SIM_NODE_CONTEXT|À usage interne uniquement|
@@ -290,7 +294,7 @@ GO
 |SBS_TRANSPORT|À usage interne uniquement|
 |SBS_UCS_DISPATCH|À usage interne uniquement|
 |SÉCURITÉ|À usage interne uniquement|
-|SECURITY_CACHE|À usage interne uniquement|
+|SECURITY_CACHE|Protège les entrées de cache relatives aux jetons de sécurité et aux vérifications d’accès. Utilisé pour [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et les versions ultérieures. Si les entrées dans le magasin de cache TokenAndPermUserStore jusqu’se développent en permanence, vous remarquerez peut-être de grandes rotations pour ce SpinLock. Évaluez l’utilisation des [indicateurs de Trace](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) 4610 et 4618 pour limiter les entrées. Références supplémentaires : [blog](https://techcommunity.microsoft.com/t5/sql-server-support/query-performance-issues-associated-with-a-large-sized-security/ba-p/315494), [article](https://support.microsoft.com/topic/queries-take-a-longer-time-to-finish-running-when-the-size-of-the-tokenandpermuserstore-cache-grows-in-sql-server-2005-ad1622e7-3bb5-7902-19a0-5d0e6271033d) et [documentation](../../database-engine/configure-windows/access-check-cache-server-configuration-options.md). Notez la modification du nom du verrouillage SpinLock après l’application [des mises à jour pour sql 2017 et sql 2016](https://support.microsoft.com/topic/kb3195888-fix-high-cpu-usage-causes-performance-issues-in-sql-server-2016-and-2017-9514b80d-938f-e179-3131-74e6c757c4d5).|
 |SECURITY_FEDAUTH_AAD_BECWSCONNS|À usage interne uniquement|
 |SEMANTIC_TICACHE|À usage interne uniquement|
 |SEQUENCED_OBJECT|À usage interne uniquement|
@@ -416,5 +420,4 @@ GO
  [Diagnostic et résolution de contention de verrouillage SpinLock sur SQL Server](../diagnose-resolve-spinlock-contention.md)
   
   
-
 

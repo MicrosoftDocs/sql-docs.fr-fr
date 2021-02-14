@@ -10,12 +10,12 @@ ms.reviewer: ''
 ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 1dfba407449b9517af2ed899f49387732c48353b
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: ce9cd8ee5a4153cb1d744d505a26b400497b460b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85718526"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354052"
 ---
 # <a name="wideworldimportersdw-etl-workflow"></a>Flux de travail ETL WideWorldImportersDW
 [!INCLUDE [SQL Server Azure SQL Database](../includes/applies-to-version/sql-asdb.md)]
@@ -63,7 +63,7 @@ Pour obtenir le code source permettant de recréer l’exemple de base de donné
    2. Entrez un nom, par exemple, *WIDEWORLDIMPORTERS ETL*.
    3. Ajoutez une **étape de travail** du type **SQL Server Integration Services package**.
    4. Sélectionnez le serveur qui contient le catalogue Integration Services, puis sélectionnez le package *ETL quotidien* .
-   5. Sous **Configuration**  >  **gestionnaires de connexions**de configuration, assurez-vous que les connexions à la source et à la cible sont correctement configurées. La valeur par défaut consiste à se connecter à l’instance locale.
+   5. Sous   >  **gestionnaires de connexions** de configuration, assurez-vous que les connexions à la source et à la cible sont correctement configurées. La valeur par défaut consiste à se connecter à l’instance locale.
    6. Sélectionnez **OK** pour créer le travail.
 
 3. Exécutez ou planifiez le travail.

@@ -11,12 +11,12 @@ ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
 monikerRange: '>=sql-server-2016||>=sql-server-linux-2017||=azure-sqldw-latest||>=aps-pdw-2016||=azuresqldb-mi-current'
-ms.openlocfilehash: e246d516d3c05b9a2c6725f7fd3e3f787066b8aa
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 4481a0c96a8f4a7f2f82e8babc5d8dce5ea97e92
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461400"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100077810"
 ---
 # <a name="wideworldimportersdw-database-catalog"></a>Catalogue de bases de données WideWorldImportersDW
 [!INCLUDE[appliesto-ss-xxxx-asdw-pdw-md](../includes/appliesto-ss-xxxx-asdw-pdw-md.md)]
@@ -61,9 +61,9 @@ WideWorldImportersDW contient les tables de faits suivantes. La description comp
 
 |Table de charge de travail|Tables sources|Exemple d’analyse|
 |-----------------------------|---------------------|---------------------|
-|Commande|`Sales.Orders` et `Sales.OrderLines`|Les vendeurs, le sélecteur/la productivité des packs et le temps de prélèvement des commandes. En outre, les situations de stock faible conduisent à des commandes en différé.|
+|JSON|`Sales.Orders` et `Sales.OrderLines`|Les vendeurs, le sélecteur/la productivité des packs et le temps de prélèvement des commandes. En outre, les situations de stock faible conduisent à des commandes en différé.|
 |Sale|`Sales.Invoices` et `Sales.InvoiceLines`|Les ventes, les dates de livraison, la rentabilité dans le temps, la rentabilité par commercial.|
-|Purchase|`Purchasing.PurchaseOrderLines`|Temps de leads comparatifs attendus|
+|Acheter|`Purchasing.PurchaseOrderLines`|Temps de leads comparatifs attendus|
 |Transaction|`Sales.CustomerTransactions` et `Purchasing.SupplierTransactions`|Mesure des dates de sortie et des dates de finalisation et des montants.|
 |Movement|`Warehouse.StockTransactions`|Mouvements dans le temps.|
 |Détention des actions|`Warehouse.StockItemHoldings`|Niveaux et valeurs de stock disponibles.|

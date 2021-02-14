@@ -8,12 +8,12 @@ ms.topic: how-to
 author: garyericson
 ms.author: garye
 monikerRange: =sql-server-2017
-ms.openlocfilehash: d7d00673c0c65e451721f0d1c23b762428d1fd83
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 72f10f291041f44c0598d40b21ca0bfe379a42d4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470990"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100073870"
 ---
 # <a name="r-package-synchronization-for-sql-server"></a>Synchronisation de packages R pour SQL Server
 [!INCLUDE [SQL Server 2017 only](../../includes/applies-to-version/sqlserver2017-only.md)]

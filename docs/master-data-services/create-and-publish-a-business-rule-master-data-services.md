@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 6961d636-4d69-468e-81f7-8d0be6a4a039
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 39fdd6cebd0c27ec4a27a4543129a659bcdb22a3
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: fbdb07d5a9bbff92b98fca913e2fcf142a1cbe6c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813036"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339094"
 ---
 # <a name="create-and-publish-a-business-rule-master-data-services"></a>Créer et publier une règle d'entreprise (Master Data Services)
 
@@ -46,7 +46,7 @@ ms.locfileid: "85813036"
   
 5.  Dans la liste **Types de membres** , sélectionnez un type de membre auquel appliquer la règle d’entreprise.  
   
-6.  Cliquez sur **Ajouter**.  
+6.  Cliquez sur **Add**.  
   
 7.  Dans la zone **Nom** , tapez un nom de règle d’entreprise.  
   
@@ -80,7 +80,7 @@ ms.locfileid: "85813036"
   
 19. Complétez tous les champs obligatoires.  
   
-20. Cliquez sur **Enregistrer**. Une nouvelle ligne est ajoutée à la grille **Then** .  
+20. Cliquez sur **Save**. Une nouvelle ligne est ajoutée à la grille **Then** .  
   
 21. Si vous souhaitez ajouter une action **Else** , procédez comme suit.  
   
@@ -92,9 +92,9 @@ ms.locfileid: "85813036"
   
     4.  Complétez tous les champs obligatoires.  
   
-    5.  Cliquez sur **Enregistrer**. Une nouvelle ligne est ajoutée à la grille **Else** .  
+    5.  Cliquez sur **Save**. Une nouvelle ligne est ajoutée à la grille **Else** .  
   
-22. Cliquez sur **Enregistrer**. Une nouvelle ligne est ajoutée à la grille des règles d’entreprise.  
+22. Cliquez sur **Save**. Une nouvelle ligne est ajoutée à la grille des règles d’entreprise.  
   
 23. Cliquez sur **Tout publier**.  
   

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 7f22d5e2-70c1-422c-99c2-e995a47d812a
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 433208ab105244e319de091f07553e70dfe1645a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: aff4e2f70faf333daf9c977d2a7fdfed2d15a169
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88344675"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350245"
 ---
 # <a name="delete-hierarchy-member-permissions-master-data-services"></a>Supprimer des autorisations de membre de hiérarchie (Master Data Services)
 

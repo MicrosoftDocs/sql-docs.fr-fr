@@ -10,12 +10,12 @@ ms.date: 12/13/2019
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 8e91315b5ec79c136b4d84a7fbc36a707cc3d82f
-ms.sourcegitcommit: ae474d21db4f724523e419622ce79f611e956a22
+ms.openlocfilehash: 9d475edb720d329d5fb52f7bd75c055fc3a8494a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92257299"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100047929"
 ---
 # <a name="how-to-deploy-an-app-on-sql-server-big-data-clusters"></a>Comment déployer une application sur un cluster Big Data SQL Server
 
@@ -36,7 +36,7 @@ Les applications sont déployées et managées à l’aide de [!INCLUDE [azure-d
 
 Les types d’applications suivants sont pris en charge :
 
-- **Python**  : un des langages de programmation généraux les plus populaires pour différents profils, comme les ingénieurs de données, les scientifiques des données ou les ingénieurs DevOps ; il est adapté à de nombreux scénarios, comme le data wrangling, l’automatisation et le prototypage, dans une certaine mesure. Il est également utilisé pour programmer des applications professionnelles conjointement avec des infrastructures de développement web telles que Flask et Django pour répondre à différents besoins professionnels.  
+- **Python** : un des langages de programmation généraux les plus populaires pour différents profils, comme les ingénieurs de données, les scientifiques des données ou les ingénieurs DevOps ; il est adapté à de nombreux scénarios, comme le data wrangling, l’automatisation et le prototypage, dans une certaine mesure. Il est également utilisé pour programmer des applications professionnelles conjointement avec des infrastructures de développement web telles que Flask et Django pour répondre à différents besoins professionnels.  
 - **R** : un autre langage de programmation populaire pour l’ingénierie des données et les scientifiques des données. Par rapport à Python, R est un langage de programmation avec une focalisation plus spécifique sur le calcul statistique et les graphiques.  
 - **SQL Server Integration Services (SSIS)** : des solutions d’intégration de données hautes performances pour la génération et le débogage de packages ETL. SSIS utilise le format de fichier de package de services de transformation de données (DTSX), un format de fichier XML qui stocke les instructions pour le traitement de la migration de données entre les bases de données et l’intégration de sources de données externes.   
 - **MLeap** : un format de sérialisation courant qui fournit tout ce qui est nécessaire pour exécuter et sérialiser des pipelines SparkML et d’autres qui peuvent être chargés au moment de l’exécution pour traiter les tâches de scoring ML en temps quasi-réel et proches des données.  
@@ -48,7 +48,7 @@ Les types d’applications suivants sont pris en charge :
 
 ## <a name="capabilities"></a>Fonctionnalités
 
-Dans SQL Server 2019, vous pouvez créer, supprimer, décrire, initialiser, exécuter et mettre à jour votre application. Le tableau suivant décrit les commandes de déploiement d’application que vous pouvez utiliser avec **azdata** .
+Dans SQL Server 2019, vous pouvez créer, supprimer, décrire, initialiser, exécuter et mettre à jour votre application. Le tableau suivant décrit les commandes de déploiement d’application que vous pouvez utiliser avec **azdata**.
 
 |Commande |Description |
 |:---|:---|

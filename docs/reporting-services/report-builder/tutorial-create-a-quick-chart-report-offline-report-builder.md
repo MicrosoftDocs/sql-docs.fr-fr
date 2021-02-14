@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 6b1db67a-cf75-494c-b70c-09f1e6a8d414
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 41e26cbdeaa794ebae01371207d7ff7847619dc2
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 2f7fb9781583a56a2765f066462e62717c1d32d6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "80290746"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070548"
 ---
 # <a name="tutorial-create-a-quick-chart-report-offline-report-builder"></a>Tutoriel : Créer un rapport de graphique rapide en mode hors connexion (Générateur de rapports)
 
@@ -189,7 +189,7 @@ Vous pouvez effectuer ce didacticiel de deux façons différentes. Les deux mét
 15. Pour afficher votre graphique à secteurs, cliquez sur **Exécuter** sous l'onglet **Accueil** du ruban.  
  
 ##  <a name="after-you-run-the-wizard"></a><a name="AfterWizard"></a> Après l'exécution de l'Assistant  
- Maintenant que vous avez créé votre rapport de graphique à secteurs, vous pouvez le manipuler. Sous l'onglet **Exécuter** du ruban, cliquez sur **Conception**de manière à pouvoir continuer de le modifier.  
+ Maintenant que vous avez créé votre rapport de graphique à secteurs, vous pouvez le manipuler. Sous l'onglet **Exécuter** du ruban, cliquez sur **Conception** de manière à pouvoir continuer de le modifier.  
   
 ## <a name="make-the-chart-bigger"></a>Augmenter la taille du graphique  
  Vous pouvez augmenter la taille du graphique à secteurs. 

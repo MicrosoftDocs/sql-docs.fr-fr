@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: b69db02a-43a7-4fdc-ad9b-438d817a7f83
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 86bc7c0352e7bf2447628a143a5c1732b132a412
-ms.sourcegitcommit: 783b35f6478006d654491cb52f6edf108acf2482
+ms.openlocfilehash: c6b42238a081adbd40f9756fb3d2fb8871e1d7cc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91891369"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100023334"
 ---
 # <a name="turn-reporting-services-features-on-or-off"></a>Activer ou désactiver les fonctionnalités Reporting Services
   Vous pouvez désactiver les fonctionnalités de serveur de rapports que vous n'utilisez pas dans le cadre d'une stratégie de verrouillage pour réduire l'exposition aux attaques d'un serveur de rapports de production. Dans la plupart des cas, vous préférerez exécuter les fonctionnalités de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] conjointement afin de bénéficier de toutes les fonctionnalités offertes dans [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]. Toutefois, vous pouvez désactiver les fonctionnalités dont vous n'avez pas besoin, selon votre modèle de déploiement. Par exemple, vous pouvez activer le traitement en arrière-plan uniquement si le traitement de tous les rapports a été planifié. De même, vous pouvez exécuter simplement le service web Report Server si vous souhaitez disposer uniquement de rapports interactifs à la demande.  
@@ -74,7 +74,7 @@ ms.locfileid: "91891369"
   
 1.  Ouvrez le fichier RsReportServer.config dans un éditeur de texte. Pour plus d’informations, consultez [Modifier un fichier de configuration &#40;RSreportserver.config&#41;](../../reporting-services/report-server/modify-a-reporting-services-configuration-file-rsreportserver-config.md).  
   
-2.  Pour activer le traitement et la remise des rapports planifiés, affectez à **IsSchedulingService**, **IsNotificationService**et **IsEventService** la valeur **true**:  
+2.  Pour activer le traitement et la remise des rapports planifiés, affectez à **IsSchedulingService**, **IsNotificationService** et **IsEventService** la valeur **true**:  
   
     ```  
     <IsSchedulingService>true</IsSchedulingService>  
@@ -82,7 +82,7 @@ ms.locfileid: "91891369"
     <IsEventService>true</IsEventService>  
     ```  
   
-3.  Pour désactiver le traitement et la remise des rapports planifiés, affectez la à **IsSchedulingService**, **IsNotificationService**et **IsEventService** la valeur **false**:  
+3.  Pour désactiver le traitement et la remise des rapports planifiés, affectez la à **IsSchedulingService**, **IsNotificationService** et **IsEventService** la valeur **false**:  
   
     ```  
     <IsSchedulingService>false</IsSchedulingService>  

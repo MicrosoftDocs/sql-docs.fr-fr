@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 798c325e-e8d8-412a-b02e-118f2741d1c7
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: ffe84797d519961ab26e6d43fb48a5c4c2dd3e13
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 3d2e129bdd1a995fb5d0092bc15136ca9e1726f9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461827"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348096"
 ---
 # <a name="create-an-attribute-group-master-data-services"></a>Créer un groupe d'attributs (Master Data Services)
 
@@ -54,7 +54,7 @@ ms.locfileid: "88461827"
   
      Si le groupe d’attributs est associé aux collections, sélectionnez **Collection** dans la liste déroulante **Types de membres** .  
   
-6.  Cliquez sur **Groupes feuille**, **Groupes consolidés**ou **Groupes de collections** pour créer respectivement un groupe d'attributs pour les membres feuille, les membres consolidés ou les collections.  
+6.  Cliquez sur **Groupes feuille**, **Groupes consolidés** ou **Groupes de collections** pour créer respectivement un groupe d'attributs pour les membres feuille, les membres consolidés ou les collections.  
   
 7.  Dans la zone **Nom** , tapez un nom pour le groupe d’attributs. Ce nom s’affiche dans l’onglet de l’ **Explorateur**.  
   

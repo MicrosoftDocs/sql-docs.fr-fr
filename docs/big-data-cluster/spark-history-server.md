@@ -10,12 +10,12 @@ ms.date: 06/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 6bdded00e9f4cc9fb5048bf242c0333cb88f186f
-ms.sourcegitcommit: 7345e4f05d6c06e1bcd73747a4a47873b3f3251f
+ms.openlocfilehash: 43a450b21ab7d025f61f77b1391f9484e1cb2991
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/24/2020
-ms.locfileid: "88778518"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100045919"
 ---
 # <a name="debug-and-diagnose-spark-applications-on-big-data-clusters-2019-in-spark-history-server"></a>Déboguer et diagnostiquer les applications Spark sur [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] dans le serveur d’historique Spark
 
@@ -100,7 +100,7 @@ Sélectionnez l’ID du travail, puis cliquez sur **Graph** dans le menu des out
 
     ![Carte thermique du graphique](./media/apache-azure-spark-history-server/sparkui-graph-heatmap.png)
 
-+ Lisez le travail en cliquant sur le bouton**Playback** (Lire) et arrêtez à tout moment en cliquant sur le bouton d’arrêt. Lors de la lecture, l’affichage de la tâche utilise des couleurs pou refléter les différents états :
++ Lisez le travail en cliquant sur le bouton **Playback** (Lire) et arrêtez à tout moment en cliquant sur le bouton d’arrêt. Lors de la lecture, l’affichage de la tâche utilise des couleurs pou refléter les différents états :
 
     + Vert (réussite) : le travail s’est correctement effectué.
     + Orange (nouvelle tentative) : instances de tâches qui ont échoué, mais qui n’affectent pas le résultat final du travail. Ces tâches comportaient des instances dupliquées ou renouvelées qui peuvent réussir ultérieurement.

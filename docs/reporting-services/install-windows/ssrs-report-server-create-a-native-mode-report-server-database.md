@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 81b9f4ad-800b-4688-8b47-a5a83dc8ff10
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 4cf54be2376dede022b0f6905e21685184a6b122
-ms.sourcegitcommit: fe59f8dc27fd633f5dfce54519d6f5dcea577f56
+ms.openlocfilehash: dab7b82e27ba57974a4bdb8e679164f6316ecd4a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91934749"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100067124"
 ---
 # <a name="create-a-native-mode-report-server-database-report-server-configuration-manager"></a>Créer une base de données du serveur de rapports en mode natif (Gestionnaire de configuration du serveur de rapports)
 
@@ -59,7 +59,7 @@ Pour créer une base de données du serveur de rapports ou modifier la chaîne d
   
 1.  Si vous utilisez une instance distante du [!INCLUDE[ssDE](../../includes/ssde-md.md)] , ouvrez une session sur le serveur de base de données pour vérifier ou activer les connexions TCP/IP.  
   
-2.  Dans le menu **Démarrer**, pointez successivement sur **Tous les programmes**, **Microsoft SQL Server**et **Outils de configuration**, puis cliquez sur **Gestionnaire de configuration SQL Server**.  
+2.  Dans le menu **Démarrer**, pointez successivement sur **Tous les programmes**, **Microsoft SQL Server** et **Outils de configuration**, puis cliquez sur **Gestionnaire de configuration SQL Server**.  
   
 3.  Ouvrez **Configuration du réseau SQL Server**.  
   

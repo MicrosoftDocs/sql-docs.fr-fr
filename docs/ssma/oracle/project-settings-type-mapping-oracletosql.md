@@ -11,12 +11,12 @@ ms.assetid: 4bb8466e-2199-4f00-8513-b04e9586723d
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 0facd2ecca0ff6cc0a4bc28fe709a7adfc0c5acf
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cbb47d74535af0dea97842bdf46680a4376c2ba7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88320445"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100067730"
 ---
 # <a name="project-settings-type-mapping-oracletosql"></a>Paramètres du projet (Mappage de type) (OracleToSQL)
 La page mappage de type de la boîte de dialogue **paramètres du projet** contient des paramètres qui personnalisent la manière dont SSMA convertit les types de données Oracle en [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] types de données.  
@@ -46,7 +46,7 @@ Cliquez pour ajouter un type de données à la liste de mappage.
 **Modifier**  
 Cliquez pour modifier le type de données sélectionné dans la liste mappage.  
   
-**Remove**  
+**Supprimer**  
 Cliquez pour supprimer le mappage de type de données sélectionné de la liste de mappage.  
   
 **Rétablir les valeurs par défaut**  
@@ -235,7 +235,7 @@ Le tableau suivant contient le mappage de type par défaut pour les variables lo
 |NCHAR varying [*.. 4000]|nvarchar [*]|  
 |NCHAR varying [4001.. *]|nvarchar(max)|  
 |NCLOB|nvarchar(max)|  
-|Number|float [53]|  
+|Nombre|float [53]|  
 |nombre [*.. \* ]|Numeric [*]|  
 |nombre [*.. \* ] [\*..\*]|Numeric [*] [ \* ]|  
 |Numérique|numérique [38] [0]|  

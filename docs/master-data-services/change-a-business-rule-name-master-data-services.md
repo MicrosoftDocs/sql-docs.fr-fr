@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: cffcae43-a208-443f-9f43-a0ec9e05f79c
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: c575f408d0682554eb3ead69e3915d226d4975b0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cada2e43ffb4d987c54a0e8b5079b32879a47bf2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88500706"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351957"
 ---
 # <a name="change-a-business-rule-name-master-data-services"></a>Modifier le nom d'une règle d'entreprise (Master Data Services)
 
@@ -51,11 +51,11 @@ ms.locfileid: "88500706"
   
 7.  Saisissez un nom pour la règle d’entreprise.  
   
-8.  Cliquez sur **Enregistrer**.  
+8.  Cliquez sur **Save**.  
   
 9. Cliquez sur **Tout publier**.  
   
-10. Dans la boîte de dialogue de confirmation, cliquez sur **OK**. La valeur de la colonne **État de la règle d’entreprise**est **Active**.  
+10. Dans la boîte de dialogue de confirmation, cliquez sur **OK**. La valeur de la colonne **État de la règle d’entreprise** est **Active**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Règles d’entreprise &#40;Master Data Services&#41;](../master-data-services/business-rules-master-data-services.md)  

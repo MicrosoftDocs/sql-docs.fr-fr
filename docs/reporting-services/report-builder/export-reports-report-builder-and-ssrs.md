@@ -8,12 +8,12 @@ ms.technology: report-builder
 ms.topic: conceptual
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: a97450563aa62e7b8179b7c5a0d2bead5f156f1b
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: d82c6f45d6cd8e4e35735291433d3e054afe5481
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "80342929"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100024105"
 ---
 # <a name="export-reports-report-builder-and-ssrs"></a>Exporter des rapports (Générateur de rapports et SSRS)
 
@@ -42,7 +42,7 @@ ms.locfileid: "80342929"
 
 1.  Créez le rapport ou affichez son aperçu.  
   
-2.  Cliquez sur **Exporter**dans le ruban.  
+2.  Cliquez sur **Exporter** dans le ruban.  
   
      ![Exporter - Générateur de rapports](../../reporting-services/report-builder/media/ssrb-export.png "Exporter - Générateur de rapports")  
   
