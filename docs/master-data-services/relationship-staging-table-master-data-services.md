@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: e19b6002-67bd-4e7d-9f19-ecb455522b1a
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: ba606cd7c5eeef578b4a2a224a8322e4cbe8bb55
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 199b351fb0aea4036b906aee326c64fac128d425
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88421983"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353706"
 ---
 # <a name="relationship-staging-table-master-data-services"></a>Table de mise en lots des relations (Master Data Services)
 

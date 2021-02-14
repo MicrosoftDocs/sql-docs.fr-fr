@@ -11,12 +11,12 @@ ms.assetid: 12dbcd77-2b90-4fa1-9cf9-239231ea5773
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: fbc74e9129c642ea1b6655deb4e01ee04d92d0ee
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c6b19ddbe9ab7e1bf1e8f88f5c0c4262fa326c56
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88480501"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100068008"
 ---
 # <a name="global-settings-logging-oracletosql"></a>Paramètres globaux (Journalisation) (OracleToSQL)
 Utilisez la boîte de dialogue **paramètres globaux** pour spécifier les paramètres de journalisation pour SSMA. En règle générale, vous pouvez modifier ces paramètres uniquement lorsque vous travaillez avec le support technique.  

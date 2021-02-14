@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: b987b141-5abf-4161-a073-4cfc3e7f5aae
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 58e9bf0ee719e650d8e7a5b8270fbe9f638b559d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e650bd924e893b21cbc6b154887d9cd6e66565b9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "92257926"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352770"
 ---
 # <a name="filter-dialog-box-mds-add-in-for-excel"></a>Boîte de dialogue Filtrer (Complément MDS pour Excel)
 
@@ -24,7 +24,7 @@ ms.locfileid: "92257926"
 
   Dans [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)][!INCLUDE[ssMDSXLS](../../includes/ssmdsxls-md.md)], utilisez la boîte de dialogue **Filtre** pour limiter la liste des données managées MDS avant de les charger dans Excel.  
   
- Cette boîte de dialogue contient trois sections : **Colonnes**, **Lignes**et **Résumé**.  
+ Cette boîte de dialogue contient trois sections : **Colonnes**, **Lignes** et **Résumé**.  
   
 ## <a name="columns"></a>Colonnes  
  Utilisez la section **Colonnes** pour déterminer les attributs (colonnes) que vous souhaitez afficher dans Excel.  
@@ -51,7 +51,7 @@ ms.locfileid: "92257926"
 |Supprimer tout|Supprime tous les filtres de la liste.|  
 |Supprimer|Supprime de la liste le filtre sélectionné.|  
   
-## <a name="summary"></a>Résumé  
+## <a name="summary"></a>Récapitulatif  
  Utilisez la section **Résumé** pour afficher des informations sur la quantité de données qui seront chargées, avant de les charger.  
   
 |Nom du contrôle|Description|  
