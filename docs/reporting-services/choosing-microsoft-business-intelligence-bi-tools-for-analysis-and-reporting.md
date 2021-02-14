@@ -10,12 +10,12 @@ ms.prod_service: reporting-services-native
 ms.topic: conceptual
 ms.custom: seodec18
 ms.date: 07/22/2020
-ms.openlocfilehash: fa6dab95ec14a40c553f3f47dcde1dee480eb1cc
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: bd23d6a1e586a317503374f15e7ecc90381b1563
+ms.sourcegitcommit: 0b400bb99033f4b836549cb11124a1f1630850a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642334"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "99978431"
 ---
 # <a name="analysis-and-reporting-with-microsoft-business-intelligence-bi-tools"></a>Analyse et création de rapports avec les outils Microsoft Business Intelligence
 
@@ -36,7 +36,7 @@ Le tableau suivant mappe les charges de travail pour l'analyse et la création d
 |Effectuer des analyses prédictives en libre-service||||||[Compléments d’exploration de données pour Excel](/previous-versions/sql/2014/analysis-services/data-mining-client-for-excel-sql-server-data-mining-add-ins?view=sql-server-2014&preserve-view=true) |  
 |Visualiser et explorer les données||[Power View](https://support.office.com/article/Power-View-Explore-visualize-and-present-your-data-98268d31-97e2-42aa-a52b-a68cf460472e)<br /><br /> [Cartes 3D](https://support.office.com/article/Visualize-your-data-in-3D-Maps-ce6b1d5c-4602-4dae-b487-91ec0268e75d)|||[Power BI Desktop](/power-bi/fundamentals/desktop-get-the-desktop)||  
 |Poser des questions à l'aide d'un requête en langage naturel|||||[Q & R](/power-bi/consumer/end-user-q-and-a)|
-|Accéder à des rapports avec des appareils mobiles||||[HTML 5 (prend en charge l’affichage de fichiers < 10 Mo)](create-deploy-and-manage-mobile-and-paginated-reports.md)<br /><br /> | [HTML 5 (prend en charge l’affichage < 250 Mo)](https://go.microsoft.com/fwlink/p/?LinkId=391854)<br /><br /> [Application mobile Power BI sur les appareils iOS](/power-bi/consumer/mobile/mobile-iphone-app-get-started)<br /><br /> [Application mobile Power BI sur les appareils Android](/power-bi/consumer/mobile/mobile-android-app-get-started) <br /><br /> [Application mobile Power BI pour Windows 10](/power-bi/consumer/mobile/mobile-windows-10-phone-app-get-started)|  
+|Accéder à des rapports avec des appareils mobiles||||[HTML 5 (prend en charge l’affichage de fichiers < 10 Mo)](create-deploy-and-manage-mobile-and-paginated-reports.md)<br /><br /> | [HTML 5 (prend en charge l’affichage < 250 Mo)](https://www.microsoft.com/en-us/microsoft-365/blog/2013/07/08/what-powers-power-bi-in-office-365/)<br /><br /> [Application mobile Power BI sur les appareils iOS](/power-bi/consumer/mobile/mobile-iphone-app-get-started)<br /><br /> [Application mobile Power BI sur les appareils Android](/power-bi/consumer/mobile/mobile-android-app-get-started) <br /><br /> [Application mobile Power BI pour Windows 10](/power-bi/consumer/mobile/mobile-windows-10-phone-app-get-started)|  
 |Collaborer et partager|||[Sites SharePoint](/sharepoint/getting-started)|[Sites de l'équipe SharePoint](https://go.microsoft.com/fwlink/?LinkId=391850)|[Sites Power BI](/power-bi/service-how-to-collaborate-distribute-dashboards-reports)||  
 |**BI d'entreprise**|Professionnel de l'informatique||||||  
 |Créer des modèles d'entreprise multidimensionnels/tabulaires||||||[Analysis Services](/analysis-services/analysis-services-overview)|  

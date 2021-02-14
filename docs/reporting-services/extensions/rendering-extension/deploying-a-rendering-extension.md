@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 9fb8c887-5cb2-476e-895a-7b0e2dd11398
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: a13d9eb18fae38ef85c182576fe50ed3be6f4d38
-ms.sourcegitcommit: 2f166e139f637d6edfb5731510d632a13205eb25
+ms.openlocfilehash: 56c22120fb08b538b845647f1a2300c22e17d017
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84529465"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100042210"
 ---
 # <a name="deploying-a-rendering-extension"></a>Déploiement d'une extension de rendu
   Après avoir écrit et compilé votre extension de génération de rapport [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] dans une bibliothèque [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)], vous devez la rendre détectable par le serveur de rapports et par le Concepteur de rapports. Pour cela, copiez l'extension dans le répertoire approprié et ajoutez des entrées aux fichiers de configuration [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] appropriés.  
@@ -57,7 +57,7 @@ ms.locfileid: "84529465"
     </Extensions>  
     ```  
   
-4.  Ajoutez une entrée pour votre extension de rendu. Celle-ci doit comporter un élément dont les valeurs **Name** et **Type**doivent être définies. Cette entrée peut se présenter comme suit :  
+4.  Ajoutez une entrée pour votre extension de rendu. Celle-ci doit comporter un élément dont les valeurs **Name** et **Type** doivent être définies. Cette entrée peut se présenter comme suit :  
   
     ```  
     <Extension Name="My Rendering Extension Name" Type="CompanyName.ExtensionName.MyRenderingProvider, AssemblyName" />  

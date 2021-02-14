@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 486e4216-a946-4c6e-828c-61bc905f7ec1
 author: swinarko
 ms.author: sawinark
-ms.openlocfilehash: 1f1523cde32af2c4a01b7b2838cb0293797afcdb
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: c7a91729430078f5913d5f4d83ca75015c50ac15
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91724626"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339902"
 ---
 # <a name="install-data-quality-services"></a>Installer Data Quality Services
 

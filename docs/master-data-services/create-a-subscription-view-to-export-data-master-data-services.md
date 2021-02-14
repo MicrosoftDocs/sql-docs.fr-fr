@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a5e28961-af16-414a-9845-d2e06aac5214
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 381d089aa124f44161b3fd5f1102f7377719f142
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 4181704586d8a0316567ba4548ccd263d4117d79
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85812761"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272600"
 ---
 # <a name="create-a-subscription-view-to-export-data-master-data-services"></a>Créer une vue d’abonnement pour exporter des données (Master Data Services)
 
@@ -48,7 +48,7 @@ ms.locfileid: "85812761"
   
 5.  Dans la liste **Modèle** , sélectionnez un modèle.  
   
-6.  Sélectionnez **Inclure les membres supprimés récupérables**pour inclure dans la vue les membres qui ont fait l’objet d’une suppression réversible.  
+6.  Sélectionnez **Inclure les membres supprimés récupérables** pour inclure dans la vue les membres qui ont fait l’objet d’une suppression réversible.  
   
 7.  Dans **Options de version** , sélectionnez **Version** ou **Indicateur de version**, puis effectuez votre sélection dans la liste correspondante.  
   
@@ -61,7 +61,7 @@ ms.locfileid: "85812761"
   
 10. Si vous avez sélectionné **Niveaux explicites** ou **Niveaux dérivés** dans la liste **Format** , tapez le nombre de niveaux dans la hiérarchie à inclure dans la vue.  
   
-11. Cliquez sur **Enregistrer**.  
+11. Cliquez sur **Save**.  
   
 ## <a name="view-information"></a>Visualiser les informations  
  Pour chaque vue créée, une ligne comportant dix colonnes est ajoutée à la grille. Le tableau suivant décrit ces colonnes.  
@@ -75,7 +75,7 @@ ms.locfileid: "85812761"
 |Version|Nom de l’indicateur de version.|  
 |Entité|Nom de la hiérarchie dérivée.|  
 |Entité|Nom de l’entité.|  
-|Mettre en forme|Type des données figurant dans la vue.|  
+|Format|Type des données figurant dans la vue.|  
 |Level|Spécifie le nombre de niveaux de la vue ; cette valeur est uniquement utilisée pour les formats de vue de niveau Explicite ou Dérivé.|  
 |Inclure les membres supprimés|Indique si les membres supprimés de façon réversible sont inclus dans la vue.|  
   

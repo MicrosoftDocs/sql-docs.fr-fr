@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 5f0f6958-6cf2-444b-bdcd-05b887637a0b
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: a3ecfda6bd7b2bbd885cc8cc4b12917289dd3142
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e5529b10ef0a293a19c45eb8a0e904fcf1fc0f42
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88495051"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339694"
 ---
 # <a name="add-multiple-conditions-to-a-business-rule-master-data-services"></a>Ajouter plusieurs conditions à une règle d'entreprise (Master Data Services)
 
@@ -54,7 +54,7 @@ ms.locfileid: "88495051"
   
 7.  Cliquez sur **Modifier**.  
   
-8.  Sous le bloc **If** à gauche de la liste déroulante, sélectionnez l’opérateur logique **AND/OR/NOT**dans la liste.  
+8.  Sous le bloc **If** à gauche de la liste déroulante, sélectionnez l’opérateur logique **AND/OR/NOT** dans la liste.  
   
 9. Cliquez sur **Add**. Un panneau s’affiche.  
   
@@ -64,7 +64,7 @@ ms.locfileid: "88495051"
   
 12. Complétez tous les champs obligatoires.  
   
-13. Cliquez sur **Enregistrer**. Une nouvelle ligne est ajoutée à la grille **If** .  
+13. Cliquez sur **Save**. Une nouvelle ligne est ajoutée à la grille **If** .  
   
 14. Si vous le souhaitez, suivez les étapes 8 à 13 pour ajouter d’autres conditions.  
   

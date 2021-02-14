@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 2cd6bc01-b8e5-4312-83a4-eac66dc1d460
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 505df97bc8acbc0d3f55ef9c816ed4fb0c9bd569
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a5db262979e7c7e267491e34b54302c0a5b36999
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88497646"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070504"
 ---
 # <a name="project-settings-synchronization-sybasetosql"></a>Paramètres du projet (Synchronisation) (SybaseToSQL)
 La page synchronisation de la boîte de dialogue **paramètres du projet** contient des paramètres qui personnalisent la manière dont SSMA charge les objets de base de données, tels que les tables et les procédures stockées, dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure.  
@@ -27,7 +27,7 @@ Vous pouvez accéder à deux pages de synchronisation différentes qui contienne
 -   Pour spécifier les paramètres du projet actif, dans le menu **Outils** , sélectionnez **paramètres du projet**, puis sélectionnez **synchronisation** en bas du volet gauche.  
   
 ## <a name="options"></a>Options  
-**Essayer**  
+**Tentatives**  
 Spécifie le nombre de tentatives que SSMA doit effectuer lors du chargement des objets dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Les objets qui ne sont pas chargés [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans la tentative actuelle seront tentés à nouveau jusqu’à ce que SSMA atteigne le nombre maximal de tentatives dans le processus de synchronisation en cours.  
   
 ## <a name="synchronization-for-sql-server"></a>Synchronisation pour SQL Server  

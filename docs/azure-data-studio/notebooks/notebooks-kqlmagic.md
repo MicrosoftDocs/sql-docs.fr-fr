@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: jukoesma
 ms.custom: ''
 ms.date: 10/29/2020
-ms.openlocfilehash: cd9145bb01350a2019f1bfaa12c5280151c35f49
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 7f21215f0f241373db532feeac00143e03753bf7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091743"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100042649"
 ---
 # <a name="kqlmagic-in-azure-data-studio"></a>Kqlmagic dans Azure Data Studio
 

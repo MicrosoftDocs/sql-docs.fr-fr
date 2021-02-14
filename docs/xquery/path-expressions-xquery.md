@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: b93fa36c-bf69-46b9-b137-f597d66fd0c0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d1eccee8a5acfbb810ed7636f5d073c2644f0342
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 6d69a916d19c519e1b313a7244a6a07feba36a67
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85759479"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339996"
 ---
 # <a name="path-expressions-xquery"></a>Expressions de chemin d'accès (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]

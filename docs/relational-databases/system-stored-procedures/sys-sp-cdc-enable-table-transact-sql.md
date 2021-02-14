@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 26150c09-2dca-46ad-bb01-3cb3165bcc5d
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: fe8e347cb82fa1b89ad03ebb152a8d0257f0985b
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f499a26e4884518e002b5d33d9f9cb25b7c1457e
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99205988"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100339393"
 ---
 # <a name="syssp_cdc_enable_table-transact-sql"></a>sys.sp_cdc_enable_table (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "99205988"
   
  La capture des modifications de données n’est pas disponible dans toutes les éditions de [!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prise en charge par les éditions de SQL Server 2016](~/sql-server/editions-and-supported-features-for-sql-server-2016.md).  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -99,7 +99,12 @@ sys.sp_cdc_enable_table
   
 > [!IMPORTANT]  
 >  SWITCH PARTITION est une opération de métadonnées, mais elle entraîne des modifications de données. Les modifications de données associées à cette opération ne sont pas capturées dans les tables de modifications de capture de données modifiées. Pensez à une table qui comprend trois partitions et à laquelle des modifications sont apportées. Le processus de capture effectuera le suivi des insertions, mises à jour et suppressions exécutées par l'utilisateur sur cette table. Toutefois, si une partition est extraite dans une autre table (par exemple, pour effectuer une suppression en bloc), les lignes déplacées dans le cadre de cette opération ne seront pas capturées en tant que lignes supprimées dans la table de modifications. De la même façon, si une nouvelle partition qui comprend des lignes préremplies est ajoutée à la table, ces lignes ne se seront pas répercutées dans la table de modifications. Cette situation peut aboutir à des données incohérentes lorsque les modifications sont utilisées par une application et appliquées à une destination.  
-  
+ 
+> [!NOTE] 
+> Avant d’exécuter une opération de fractionnement ou de fusion sur une table avec CDC, vérifiez que la partition n’a pas de commandes répliquées en attente et qu’aucune opération DML n’est exécutée pendant les opérations de fractionnement ou de fusion. Les transactions non traitées ou les opérations DML peuvent entraîner une erreur de traitement `Error 608: No catalog entry found for partitionID` avec l’agent de lecture du journal ou le travail de capture CDC. Il peut être nécessaire de désactiver la capture de données modifiées sur la table pour poursuivre l’opération de fractionnement ou de fusion. 
+
+
+
 ## <a name="return-code-values"></a>Codet de retour  
  **0** (succès) ou **1** (échec)  
   

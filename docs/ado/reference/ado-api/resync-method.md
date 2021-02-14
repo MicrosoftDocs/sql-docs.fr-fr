@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 73b355d4-a4c0-434b-bfc4-039b1c76b32e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: b1c4156c56a3c6722fb856511ccb3be1b14c7f5e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b9d31d01510e80e9ad402e775bb182246a3c7956
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99170359"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051560"
 ---
 # <a name="resync-method"></a>Resync, méthode
 Actualise les données de la base de données sous-jacente de l’objet [Recordset](./recordset-object-ado.md) actuel ou de la collection [Fields](./fields-collection-ado.md) d’un objet [Record](./record-object-ado.md) .  
@@ -38,12 +38,12 @@ Recordset.Resync AffectRecords, ResyncValues Record.Fields.Resync ResyncValues
   
 #### <a name="parameters"></a>Paramètres  
  *AffectRecords*  
- Facultatif. Valeur [AffectEnum](./affectenum.md) qui détermine le nombre d’enregistrements affectés par la méthode **Resync** . La valeur par défaut est **adAffectAll**. Cette valeur n’est pas disponible avec la méthode **Resync** de la collection **Fields** d’un objet **Record** .  
+ facultatif. Valeur [AffectEnum](./affectenum.md) qui détermine le nombre d’enregistrements affectés par la méthode **Resync** . La valeur par défaut est **adAffectAll**. Cette valeur n’est pas disponible avec la méthode **Resync** de la collection **Fields** d’un objet **Record** .  
   
  *ResyncValues*  
- Facultatif. Valeur de [ResyncEnum](./resyncenum.md) qui spécifie si les valeurs sous-jacentes sont remplacées. La valeur par défaut est **adResyncAllValues**.  
+ facultatif. Valeur de [ResyncEnum](./resyncenum.md) qui spécifie si les valeurs sous-jacentes sont remplacées. La valeur par défaut est **adResyncAllValues**.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Remarques  
   
 ## <a name="recordset"></a>Ensemble d'enregistrements  
  Utilisez la méthode **Resync** pour resynchroniser les enregistrements dans le **jeu d'** enregistrements actuel avec la base de données sous-jacente. Cela est utile si vous utilisez un curseur statique ou avant uniquement, mais que vous souhaitez voir toutes les modifications apportées à la base de données sous-jacente.  

@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 9a76083e-4902-449e-b125-7e9259fc37f7
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 0a8972f267c21fdd43b01a7316ddd199400733de
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0362be657cfa46cacf81bb989caeefeb3948cd11
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88463461"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100071883"
 ---
 # <a name="save-metadata-db2tosql"></a>Enregistrer les métadonnées (DB2ToSQL)
 La boîte de dialogue **enregistrer les métadonnées** vous invite à charger les métadonnées dans votre projet SSMA avant de l’enregistrer. Cela vous permet d’avoir un fichier projet complet que vous pouvez utiliser en mode hors connexion et l’envoyer à d’autres personnes, telles que le personnel du support technique.  
@@ -34,7 +34,7 @@ SSMA charge les métadonnées dans le projet, si nécessaire. Les métadonnées 
 **Sélectionner tout**  
 Sélectionne toutes les bases de données listées.  
   
-**Clear**  
+**Effacer**  
 Désactive la case à cocher de toutes les bases de données avec des métadonnées manquantes. Vous ne pouvez pas désactiver la case à cocher si des métadonnées ont été chargées.  
   
 **Save**  

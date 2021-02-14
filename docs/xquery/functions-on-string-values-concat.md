@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: d50afd20-a297-445e-be9e-13b48017e7ca
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: f6fadf3bed15869ccd3d3307dcfe8b70c53d5310
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 3ad92315e20ae314fb9a22ddea1241f379ecc90f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85737867"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341918"
 ---
 # <a name="functions-on-string-values---concat"></a>Fonctions sur les valeurs de chaîne : oncat
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -41,16 +41,16 @@ fn:concat ($string as xs:string?
  *$string*  
  Chaîne facultative à concaténer.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La fonction requiert au moins deux arguments. Si un argument est une séquence vide, elle est traitée comme une chaîne de longueur zéro.  
   
 ## <a name="supplementary-characters-surrogate-pairs"></a>Caractères supplémentaires (paires de substitution)  
- Le comportement de la paire de substitution dans des fonctions XQuery dépend du niveau de compatibilité de la base de données et, dans certains cas, de l'URI de l'espace de noms par défaut des fonctions. Pour plus d’informations, consultez la section « les fonctions XQuery prennent en charge les substitutions » dans la rubrique [modifications avec rupture des fonctionnalités de moteur de base de données dans SQL Server 2016](../database-engine/breaking-changes-to-database-engine-features-in-sql-server-2016.md). Consultez également [niveau de compatibilité ALTER database &#40;&#41;Transact-SQL](../t-sql/statements/alter-database-transact-sql-compatibility-level.md) et la [prise en charge d’Unicode et du classement](../relational-databases/collations/collation-and-unicode-support.md).  
+ Le comportement de la paire de substitution dans des fonctions XQuery dépend du niveau de compatibilité de la base de données et, dans certains cas, de l'URI de l'espace de noms par défaut des fonctions. Pour plus d’informations, consultez la section « les fonctions XQuery prennent en charge les substitutions » dans la rubrique [modifications avec rupture des fonctionnalités de moteur de base de données dans SQL Server 2016](../database-engine/breaking-changes-to-database-engine-features-in-sql-server-2016.md). Consultez également [niveau de compatibilité ALTER database &#40;&#41;Transact-SQL ](../t-sql/statements/alter-database-transact-sql-compatibility-level.md) et la [prise en charge d’Unicode et du classement](../relational-databases/collations/collation-and-unicode-support.md).  
   
 ## <a name="examples"></a>Exemples  
  Cette rubrique fournit des exemples de XQuery relatifs à des instances XML stockées dans différentes colonnes de type **XML** de l’exemple de base de données AdventureWorks.  
   
-### <a name="a-using-the-concat-xquery-function-to-concatenate-strings"></a>A. Utilisation de la fonction XQuery concat() pour concaténer des chaînes  
+### <a name="a-using-the-concat-xquery-function-to-concatenate-strings"></a>R. Utilisation de la fonction XQuery concat() pour concaténer des chaînes  
  Pour un modèle de produit spécifique, cette requête renvoie une chaîne obtenue d'après la concaténation de la période et de la description de la garantie. Dans le document de description du catalogue, l' `Warranty` élément <> est constitué de <`WarrantyPeriod`> et <`Description` éléments enfants.  
   
 ```  

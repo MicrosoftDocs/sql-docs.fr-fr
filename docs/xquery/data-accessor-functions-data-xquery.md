@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 511b5d7d-c679-4cb2-a3dd-170cc126f49d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a5d0940f6e182d477d2c0660f4c93aaa9fedeb6f
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 4e20c00d93082994cd5dc230bfe1b4356b3ed031
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85643545"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338498"
 ---
 # <a name="data-accessor-functions---data-xquery"></a>Fonctions d’accesseur de données : data (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -39,7 +39,7 @@ fn:data ($arg as item()*) as xdt:untypedAtomic*
  *$arg*  
  Séquence d'éléments dont les valeurs typées seront renvoyées.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les points suivants s'appliquent aux valeurs typées :  
   
 -   La valeur typée d'une valeur atomique est la valeur atomique.  
@@ -79,7 +79,7 @@ select @x.query('data(<SomeNode>value</SomeNode>)')
 ## <a name="examples"></a>Exemples  
  Cette rubrique fournit des exemples de XQuery relatifs à des instances XML stockées dans différentes colonnes de type **XML** dans la base de données AdventureWorks.  
   
-### <a name="a-using-the-data-xquery-function-to-extract-typed-value-of-a-node"></a>A. Utilisation de la fonction XQuery data() pour extraire la valeur typée d'un nœud  
+### <a name="a-using-the-data-xquery-function-to-extract-typed-value-of-a-node"></a>R. Utilisation de la fonction XQuery data() pour extraire la valeur typée d'un nœud  
  La requête suivante illustre l’utilisation de la fonction **Data ()** pour extraire les valeurs d’un attribut, d’un élément et d’un nœud de texte :  
   
 ```  

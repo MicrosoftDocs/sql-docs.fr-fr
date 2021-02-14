@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 12288f37-b54c-4237-b75e-eedc5fe8f96d
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5f329d4e4684997138d3c54e6b2831d70b961a93
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: e9d68fba9560ef4b0fe99f1263e8d65c57a7c6a2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85765654"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341934"
 ---
 # <a name="aggregate-functions---sum"></a>Fonctions d’agrégation : sum
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -39,7 +39,7 @@ fn:sum($arg as xdt:anyAtomicType*) as xdt:anyAtomicType
  *$arg*  
  Série de valeurs atomiques dont la somme est à calculer.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Tous les types des valeurs atomisées passées à **Sum ()** doivent être des sous-types du même type de base. Les types de base acceptés sont les trois types de base numériques intégrés ou xdt:untypedAtomic. Les valeurs de type xdt:untypedAtomic sont converties en xs:double. S’il existe un mélange de ces types, ou si d’autres valeurs d’autres types sont passées, une erreur statique est générée.  
   
  Le résultat de **Sum ()** reçoit le type de base des types transmis, tels que XS : double dans le cas de xdt : untypedAtomic, même si l’entrée est éventuellement la séquence vide. Si l'entrée est vide statiquement, le résultat est 0 avec le type statique et dynamique de xs:integer.  
@@ -51,7 +51,7 @@ fn:sum($arg as xdt:anyAtomicType*) as xdt:anyAtomicType
 ## <a name="examples"></a>Exemples  
  Cette rubrique fournit des exemples de XQuery relatifs à des instances XML stockées dans différentes colonnes de type **XML** dans la [!INCLUDE[ssSampleDBobject](../includes/sssampledbobject-md.md)] base de données.  
   
-### <a name="a-using-the-sum-xquery-function-to-find-the-total-combined-number-of-labor-hours-for-all-work-center-locations-in-the-manufacturing-process"></a>A. Utilisation de la fonction XQuery sum() pour rechercher le nombre total d'heures de travail pour tous les ateliers inclus dans le processus de fabrication  
+### <a name="a-using-the-sum-xquery-function-to-find-the-total-combined-number-of-labor-hours-for-all-work-center-locations-in-the-manufacturing-process"></a>R. Utilisation de la fonction XQuery sum() pour rechercher le nombre total d'heures de travail pour tous les ateliers inclus dans le processus de fabrication  
  La requête ci-dessous permet de trouver le nombre total d'heures de travail pour tous les ateliers inclus dans le processus de fabrication de tous les modèles de produits pour lesquels des instructions de fabrication sont stockées.  
   
 ```  

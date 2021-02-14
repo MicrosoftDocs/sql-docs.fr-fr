@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 9a5e37f3-352e-45a6-b4a0-6f98f83b4bd8
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 68b88f98626f2645d2ca69311f4302e0d51fe51c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d9789966bd50c937d7365ed11bc72c30623a4508
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88389465"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341731"
 ---
 # <a name="edit-and-delete-an-entity-sync-relationship-master-data-services"></a>Modifier et supprimer une relation de synchronisation d’entités (Master Data Services)
 
@@ -71,7 +71,7 @@ ms.locfileid: "88389465"
   
 5.  Modifiez la valeur du champ **Fréquence**. Sélectionnez **Synchronisation à la demande**, ou sélectionnez **Synchronisation automatique** et définissez une fréquence.  
   
-6.  Cliquez sur **Enregistrer**.  
+6.  Cliquez sur **Save**.  
   
  **Pour supprimer une relation de synchronisation d’entités**  
   

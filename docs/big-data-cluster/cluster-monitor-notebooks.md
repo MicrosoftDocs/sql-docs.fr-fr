@@ -10,20 +10,20 @@ ms.date: 10/01/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 516b1bb461e5927ff52f0cee79e48d9945e6da21
-ms.sourcegitcommit: 29a2be59c56f8a4b630af47760ef38d2bf56a3eb
+ms.openlocfilehash: bc370b42f247c4b8e57c5628feaae7385ba1502d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92378444"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100039372"
 ---
 # <a name="monitoring-cluster-with-notebooks"></a>Analyse du cluster avec des notebooks
 
 Cette page est un index des notebooks pour les Clusters Big Data SQL Server. Ces notebooks exécutables (.ipynb) sont conçus pour SQL Server 2019 afin de faciliter l’analyse des Clusters Big Data.
 
-Chaque notebook est conçu pour vérifier ses propres dépendances. Une commande **Exécuter toutes les cellules** s’effectue correctement ou produit une exception avec un conseil en lien hypertexte vers un autre notebook qui va résoudre la dépendance manquante. Suivez le lien hypertexte vers le notebook suivant, appuyez sur **Exécuter toutes les cellules** puis, après une exécution réussie, revenez au notebook d’origine, et appuyez à nouveau sur **Exécuter toutes les cellules** .
+Chaque notebook est conçu pour vérifier ses propres dépendances. Une commande **Exécuter toutes les cellules** s’effectue correctement ou produit une exception avec un conseil en lien hypertexte vers un autre notebook qui va résoudre la dépendance manquante. Suivez le lien hypertexte vers le notebook suivant, appuyez sur **Exécuter toutes les cellules** puis, après une exécution réussie, revenez au notebook d’origine, et appuyez à nouveau sur **Exécuter toutes les cellules**.
 
-Une fois toutes les dépendances installées, mais après l’échec de la commande **Exécuter toutes les cellules** , chaque notebook analyse les résultats et, dans la mesure du possible, produit un conseil de lien hypertexte vers un autre notebook pour faciliter la résolution du problème.
+Une fois toutes les dépendances installées, mais après l’échec de la commande **Exécuter toutes les cellules**, chaque notebook analyse les résultats et, dans la mesure du possible, produit un conseil de lien hypertexte vers un autre notebook pour faciliter la résolution du problème.
 
 
 ## <a name="monitoring-kubernetes"></a>Analyse de Kubernetes

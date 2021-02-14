@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 519130a7-4226-4d71-9124-d2ee0ce7e5bd
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: c7245b06b114c62b7fd0dde543f8a7a2859bd842
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: b8810bb155896b4935163bb1143d535faddb1dad
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88500628"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339003"
 ---
 # <a name="delete-a-member-or-collection-master-data-services"></a>Supprimer un membre ou une collection (Master Data Services)
 
@@ -60,7 +60,7 @@ ms.locfileid: "88500628"
   
 5.  Dans la grille, cliquez sur la ligne correspondant au membre ou à la collection à supprimer.  
   
-6.  Cliquez sur **Supprimer un membre**, sur **Supprimer**ou sur **Supprimer une collection**.  
+6.  Cliquez sur **Supprimer un membre**, sur **Supprimer** ou sur **Supprimer une collection**.  
   
 7.  Les administrateurs d’entité verront également apparaître une option de menu permettant de purger (supprimer définitivement) tous les membres supprimés de manière réversible dans la version d’entité.  
   

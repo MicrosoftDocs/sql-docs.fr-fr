@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: bf44b236-d9be-41ae-a5fd-bd73038e505f
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 15882852544113881b52f3641e0c85ec684add22
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 57fadc47d241658b96f2d9a7087bcb174d72dcce
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88418565"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100076310"
 ---
 # <a name="connect-to-azure-sql-database-accesstosql"></a>Se connecter à Azure SQL Database (AccessToSQL)
 Utilisez la boîte de dialogue se connecter au SQL Azure pour vous connecter à la base de données dans Azure SQL Database que vous souhaitez migrer.  
@@ -35,7 +35,7 @@ Sélectionnez, entrez ou **recherchez** le nom de la base de données.
 > [!IMPORTANT]  
 > SSMA pour Access ne prend pas en charge la connexion à la base de données Master dans SQL Azure.  
   
-**Nom d’utilisateur**  
+**Nom d'utilisateur**  
   
 Entrez le nom d’utilisateur que SSMA utilisera pour se connecter à Azure SQL Database  
   

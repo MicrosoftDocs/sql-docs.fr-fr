@@ -13,12 +13,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: c381b920a527ab2320f6e83d6dbc057b675a4754
-ms.sourcegitcommit: b860fe41b873977649dca8c1fd5619f294c37a58
+ms.openlocfilehash: 0a3c615e98f16c5894924817fc2d4d5acf37b962
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/29/2020
-ms.locfileid: "85518839"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018340"
 ---
 # <a name="how-to-create-a-snapshot-of-a-project"></a>Procédure : Créer une capture instantanée d’un projet
 
@@ -31,7 +31,7 @@ Si une erreur utilisateur se produit dans un projet de base de données source, 
   
 ### <a name="to-create-a-snapshot"></a>Pour créer un instantané  
   
-1.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le projet **TradeDev** et sélectionnez**Application de la couche Données (\*.dacpac)...** .  
+1.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le projet **TradeDev** et sélectionnez **Application de la couche Données (\*.dacpac)...** .  
   
 2.  SSDT tentera de générer le projet en premier. Si aucune erreur de build n'est détectée, un dossier **Instantané** est créé dans l'**Explorateur de solutions**. Dans ce dossier, SSDT crée un fichier .dacpac au format de nom « <Project Name>_YYYYMMDD_HH-MM-SS.dacpac ».  
   
@@ -58,7 +58,7 @@ Si une erreur utilisateur se produit dans un projet de base de données source, 
   
 1.  Cliquez avec le bouton droit sur **TradeDev1.dacpac** dans l'Explorateur de solutions et sélectionnez **Comparaison de schémas**. La fenêtre **Comparaison de schémas** s'ouvre.  
   
-2.  Utilisez les options **Fichier d'application de la couche Données**pour définir les schémas source et cible. Vérifiez que le **Schéma source** est défini à **TradeDev1.dacpac** sous **Fichier d'application de la couche Données** et que le **Schéma cible** est défini à **TradeDev2.dacpac**.  
+2.  Utilisez les options **Fichier d'application de la couche Données** pour définir les schémas source et cible. Vérifiez que le **Schéma source** est défini à **TradeDev1.dacpac** sous **Fichier d'application de la couche Données** et que le **Schéma cible** est défini à **TradeDev2.dacpac**.  
   
 3.  Cliquez sur **OK** pour démarrer la comparaison. Notez que la fonction supprimée est mise en surbrillance en tant que différence entre l'ancien et le nouvel instantané.  
   
