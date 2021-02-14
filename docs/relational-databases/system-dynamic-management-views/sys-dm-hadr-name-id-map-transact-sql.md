@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: e07bb8a9-37de-4a39-a257-950d7c3ae8fb
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: fb1d27d8754ae146c5e46edcaedae7acb1b6d9dd
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 89c2d1fbfdc82657b9611c8e3d23abf00fa864ae
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99186527"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347600"
 ---
 # <a name="sysdm_hadr_name_id_map-transact-sql"></a>sys.dm_hadr_name_id_map (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

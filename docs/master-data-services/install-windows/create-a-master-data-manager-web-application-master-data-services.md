@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 241d46d7-8008-47f6-bebd-0dfff1cc856a
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 1f7504244f658af94cccb42bead95de60b2c409e
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: df266fd09cfdd586d5f2fc438791104bf7097938
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85882115"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344822"
 ---
 # <a name="create-a-master-data-manager-web-application-master-data-services"></a>Créer une application Web Master Data Manager (Master Data Services)
 
@@ -79,7 +79,7 @@ ms.locfileid: "85882115"
   
 -   Associez l'application Web à une base de données [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)] . Pour plus d’informations, consultez [Associer une base de données Master Data Services et une application Web](../../master-data-services/install-windows/associate-a-master-data-services-database-and-web-application.md).  
   
--   Éventuellement, configurez le site Web qui héberge l' [!INCLUDE[ssMDSmdm](../../includes/ssmdsmdm-md.md)] application Web pour utiliser une liaison HTTPS si vous souhaitez chiffrer le contenu à l’aide du protocole TLS (Transport Layer Security), précédemment appelé protocole SSL (SSL). Vous devez utiliser un outil Internet Information Services (IIS), tel que le gestionnaire des services Internet, pour configurer le certificat de serveur pour le serveur Web, et pour configurer une liaison HTTPs et les paramètres TLS pour le site. Pour plus d’informations, consultez [Sécuriser une application Web Master Data Manager](../../master-data-services/install-windows/secure-a-master-data-manager-web-application.md).  
+-   Éventuellement, configurez le site Web qui héberge l' [!INCLUDE[ssMDSmdm](../../includes/ssmdsmdm-md.md)] application Web pour utiliser une liaison HTTPS si vous souhaitez chiffrer le contenu à l’aide du protocole TLS (Transport Layer Security), précédemment appelé SSL (Secure Sockets Layer) (SSL). Vous devez utiliser un outil Internet Information Services (IIS), tel que le gestionnaire des services Internet, pour configurer le certificat de serveur pour le serveur Web, et pour configurer une liaison HTTPs et les paramètres TLS pour le site. Pour plus d’informations, consultez [Sécuriser une application Web Master Data Manager](../../master-data-services/install-windows/secure-a-master-data-manager-web-application.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Installer Master Data Services](../../master-data-services/install-windows/install-master-data-services.md)  

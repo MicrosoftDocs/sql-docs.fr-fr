@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: dacf3ab3-f214-482e-aab5-0dab9f0a3648
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: da9707021bf11d2417b48f95c07da85f6e668897
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0bbf64478b1ce114419df3e65c26ff453b3cfc5e
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99159876"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100342974"
 ---
 # <a name="sysdm_exec_plan_attributes-transact-sql"></a>sys.dm_exec_plan_attributes (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -48,7 +48,7 @@ sys.dm_exec_plan_attributes ( plan_handle )
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
 |attribut|**varchar(128)**|Nom de l'attribut associé à ce plan. Le tableau situé juste en dessous de celui-ci répertorie les attributs possibles, leurs types de données et leurs descriptions.|  
-|value|**sql_variant**|Valeur de l'attribut associé à ce plan.|  
+|valeur|**sql_variant**|Valeur de l'attribut associé à ce plan.|  
 |is_cache_key|**bit**|Indique si l'attribut est utilisé comme une partie de la clé de recherche en cache pour le plan.|  
 
 Dans le tableau ci-dessus, l' **attribut** peut avoir les valeurs suivantes :
@@ -82,7 +82,7 @@ Dans le tableau ci-dessus, l' **attribut** peut avoir les valeurs suivantes :
 ## <a name="permissions"></a>Autorisations  
 
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] , requiert l' `VIEW SERVER STATE` autorisation.   
-Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le `Server admin` ou un `Azure Active Directory admin` compte est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.   
+Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le compte d' [administrateur de serveur](https://docs.microsoft.com/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) ou le compte d' [administrateur Azure Active Directory](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-overview#administrator-structure) est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.   
 
 ## <a name="remarks"></a>Notes  
   

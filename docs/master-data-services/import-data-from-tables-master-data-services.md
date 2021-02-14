@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: ad5b83b1-8e40-4ef8-9ba8-4ea17a58b672
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: f4b7f610ca23940c676befc107331b406c124cb2
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: e9faf7de8d3e7517d47c61ba3a9b6e00cd2e2b09
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92197019"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347731"
 ---
 # <a name="import-data-from-tables-master-data-services"></a>Importer des données à partir de tables (Master Data Services)
 
@@ -24,7 +24,7 @@ ms.locfileid: "92197019"
 
   Vous pouvez ajouter des données et apporter des modifications de données à un modèle en bloc dans [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)].  
   
- **Composants requis**  
+ **Conditions préalables**  
   
 -   Vous devez avoir l’autorisation d’insérer des données dans le STG. \<name> _Leaf, STG. \<name> _Consolidated, STG. \<name> _Relationship table dans la [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] base de données.  
   

@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: bdbc9df0-23f7-40b9-8aba-4445c1482580
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: bc69a5cfcd36e96ed6bc0778c72e6a3a09e6fb23
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 75dbbb6f8e880ab587f5a3a23b164bdedcc07706
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88388955"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344810"
 ---
 # <a name="exclude-a-business-rule-master-data-services"></a>Exclure une règle d'entreprise (Master Data Services)
 
@@ -49,7 +49,7 @@ ms.locfileid: "88388955"
   
 7.  Cochez la case **Exclu** .  
   
-8.  Cliquez sur **Enregistrer**.  
+8.  Cliquez sur **Save**.  
   
 9. Cliquez sur **Tout publier**.  
   

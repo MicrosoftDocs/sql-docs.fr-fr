@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 2c83a4a7-720b-4435-a3b5-788c29f56949
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: 41dbdba8212b9896f1a864ff39cf3623eb71c2f3
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 7ee0eced0370c3ea16091827555e90f4951d6cf7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99165213"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346704"
 ---
 # <a name="filestream-and-filetable-system-stored-procedures-transact-sql"></a>Procédures stockées système FileStream et filetable (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

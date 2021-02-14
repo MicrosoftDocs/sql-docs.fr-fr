@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2c88c015-04fc-429b-84b2-835596a28b65
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 9c1f313a5316059a05cb30a5af6ef7a451353a3d
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 18f57d57e1a944a1be66a880231533e6cf34493e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85724221"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344969"
 ---
 # <a name="functions-on-string-values---contains"></a>Fonctions sur les valeurs de chaîne : contains
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -42,7 +42,7 @@ fn:contains ($arg1 as xs:string?, $arg2 as xs:string?) as xs:boolean?
  *$arg 2*  
  Sous-chaîne à rechercher.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Si la valeur de *$arg 2* est une chaîne de longueur nulle, la fonction retourne la **valeur true**. Si la valeur de *$arg 1* est une chaîne de longueur nulle et que la valeur de *$arg 2* n’est pas une chaîne de longueur nulle, la fonction retourne **false**.  
   
  Si la valeur de *$arg 1* ou *$arg 2* est la séquence vide, l’argument est traité comme une chaîne de longueur nulle.  
@@ -54,12 +54,12 @@ fn:contains ($arg1 as xs:string?, $arg2 as xs:string?) as xs:boolean?
  Pour pouvoir effectuer des comparaisons sans respect de la casse, vous pouvez utiliser les fonctions [majuscules](../xquery/functions-on-string-values-upper-case.md) ou minuscules.  
   
 ## <a name="supplementary-characters-surrogate-pairs"></a>Caractères supplémentaires (paires de substitution)  
- Le comportement de la paire de substitution dans des fonctions XQuery dépend du niveau de compatibilité de la base de données et, dans certains cas, de l'URI de l'espace de noms par défaut des fonctions. Pour plus d’informations, consultez la section « les fonctions XQuery prennent en charge les substitutions » dans la rubrique [modifications avec rupture des fonctionnalités de moteur de base de données dans SQL Server 2016](../database-engine/breaking-changes-to-database-engine-features-in-sql-server-2016.md). Consultez également [niveau de compatibilité ALTER database &#40;&#41;Transact-SQL](../t-sql/statements/alter-database-transact-sql-compatibility-level.md) et la [prise en charge d’Unicode et du classement](../relational-databases/collations/collation-and-unicode-support.md).  
+ Le comportement de la paire de substitution dans des fonctions XQuery dépend du niveau de compatibilité de la base de données et, dans certains cas, de l'URI de l'espace de noms par défaut des fonctions. Pour plus d’informations, consultez la section « les fonctions XQuery prennent en charge les substitutions » dans la rubrique [modifications avec rupture des fonctionnalités de moteur de base de données dans SQL Server 2016](../database-engine/breaking-changes-to-database-engine-features-in-sql-server-2016.md). Consultez également [niveau de compatibilité ALTER database &#40;&#41;Transact-SQL ](../t-sql/statements/alter-database-transact-sql-compatibility-level.md) et la [prise en charge d’Unicode et du classement](../relational-databases/collations/collation-and-unicode-support.md).  
   
 ## <a name="examples"></a>Exemples  
  Cette rubrique fournit des exemples XQuery sur des instances XML stockées dans différentes colonnes de type XML dans la base de données AdventureWorks.  
   
-### <a name="a-using-the-contains-xquery-function-to-search-for-a-specific-character-string"></a>A. Utilisation de la fonction contains() XQuery pour rechercher une chaîne de caractères spécifique.  
+### <a name="a-using-the-contains-xquery-function-to-search-for-a-specific-character-string"></a>R. Utilisation de la fonction contains() XQuery pour rechercher une chaîne de caractères spécifique.  
  La requête suivante recherche des produits qui contiennent le mot Aerodynamic dans les descriptions résumées. La requête retourne le ProductID et l' `Summary` élément <> pour ces produits.  
   
 ```  

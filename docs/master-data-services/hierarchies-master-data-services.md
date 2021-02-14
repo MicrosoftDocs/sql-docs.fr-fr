@@ -1,5 +1,5 @@
 ---
-title: Hiérarchies
+title: Hierarchies
 description: Une hiérarchie est une arborescence que vous pouvez utiliser pour regrouper des membres similaires et consolider/synthétiser des membres pour la création de rapports et l’analyse dans Master Data Services.
 ms.custom: ''
 ms.date: 04/01/2016
@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 70dbb1fc-ead7-45be-9552-a45e3ccd8d21
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 5990a9f60700f034c372bf74382908b261a43608
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 9705dbcd81c263573bbc911a22e4464852fcd441
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85812724"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272530"
 ---
 # <a name="hierarchies-master-data-services"></a>Hiérarchies (services de données de référence)
 

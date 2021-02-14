@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a8c953da-ec20-47dc-8656-ed5f0dfed89b
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 398d6e5a18236080acbb44d822bc14b18a5914bd
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: e38a38d14551b819db0e6ff7f8558448040a7049
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85811938"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338222"
 ---
 # <a name="leaf-member-staging-table-master-data-services"></a>Table de mise en lots des membres feuille (Master Data Services)
 
@@ -27,7 +27,7 @@ ms.locfileid: "85811938"
 
   Utilisez la table de mise en lots des membres feuille (stg.name_Leaf) dans la base de données [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] pour créer, mettre à jour, désactiver et supprimer des membres feuille. Elle permet également de mettre à jour les valeurs d'attribut des membres feuille.  
   
-##  <a name="table-columns"></a><a name="TableColumns"></a>Colonnes de table  
+##  <a name="table-columns"></a><a name="TableColumns"></a> Colonnes de table  
  Le tableau suivant explique la fonction de chacun des champs de la table de mise en lots Feuille.  
   
 |Nom de la colonne|Description|Valeurs|  

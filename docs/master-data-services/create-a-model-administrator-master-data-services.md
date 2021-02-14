@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: dae17afc-3b39-490e-b51f-2d8da26d429e
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 9049dc6e40cb7bba60b68e8185e887fe27f4a5ec
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 11aada5002d7f35a66d64040016e9cf6e614fdf0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88390085"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272650"
 ---
 # <a name="create-a-model-administrator-master-data-services"></a>Créer un administrateur de modèle (Master Data Services)
 

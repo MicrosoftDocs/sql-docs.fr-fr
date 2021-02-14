@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: da7fa55f-c008-45d9-bcfc-3513b02d9e71
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 2808ab7ce8d64ed5615a2bf2d2b6500a68d6e88f
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: cc784f8bbd811ad50f2fcb1b64bd3f5bdf8cd2d6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99210055"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338912"
 ---
 # <a name="sysavailability_groups-transact-sql"></a>sys.availability_groups (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

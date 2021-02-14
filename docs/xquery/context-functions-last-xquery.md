@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: dc92086e-3b01-4b0b-9f54-3bbf306cf7ae
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 3713f0fadfe186c31a26f2f19adea88da2f28384
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 3fdc8ce4bf35bb630d0ed0b40892312f89a5285c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85729516"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340521"
 ---
 # <a name="context-functions---last-xquery"></a>Fonctions relatives au contexte : last (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -41,7 +41,7 @@ fn:last() as xs:integer
 ## <a name="examples"></a>Exemples  
  Cette rubrique fournit des exemples de XQuery relatifs à des instances XML stockées dans différentes colonnes de type **XML** dans la base de données AdventureWorks.  
   
-### <a name="a-using-the-last-xquery-function-to-retrieve-the-last-two-manufacturing-steps"></a>A. Utilisation de la fonction XQuery last() pour récupérer les deux dernières étapes de fabrication.  
+### <a name="a-using-the-last-xquery-function-to-retrieve-the-last-two-manufacturing-steps"></a>R. Utilisation de la fonction XQuery last() pour récupérer les deux dernières étapes de fabrication.  
  La requête suivante récupère les deux dernières étapes de fabrication d'un modèle de produit spécifique. La valeur, le nombre d’étapes de fabrication, retournée par la fonction **Last ()** , est utilisée dans cette requête pour récupérer les deux dernières étapes de fabrication.  
   
 ```  

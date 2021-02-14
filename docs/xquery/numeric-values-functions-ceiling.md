@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 594f1dd0-3c27-41b3-b809-9ce6714c5a97
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: dc2a85c48e404fa717b001482bbe5fc8f8356e99
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 1ea2dbaab164c57acf9e9bc166ee431e80783648
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85775493"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341582"
 ---
 # <a name="numeric-values-functions---ceiling"></a>Fonctions de valeurs numériques : ceiling 
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -39,8 +39,8 @@ fn:ceiling ( $arg as numeric?) as numeric?
  *$arg*  
  Nombre à laquelle s'applique la fonction.  
   
-## <a name="remarks"></a>Remarques  
- Si le type de *$arg* est l’un des trois types numériques de base, **XS : float**, **XS : double**ou **XS : Decimal**, le type de retour est le même que le type de *$arg* .  
+## <a name="remarks"></a>Notes  
+ Si le type de *$arg* est l’un des trois types numériques de base, **XS : float**, **XS : double** ou **XS : Decimal**, le type de retour est le même que le type de *$arg* .  
   
  Si le type de *$arg* est un type dérivé de l’un des types numériques, le type de retour est le type numérique de base.  
   
@@ -51,7 +51,7 @@ fn:ceiling ( $arg as numeric?) as numeric?
 ## <a name="examples"></a>Exemples  
  Cette rubrique fournit des exemples de XQuery relatifs à des instances XML stockées dans différentes colonnes de type **XML** dans la base de données AdventureWorks.  
   
-### <a name="a-using-the-ceiling-xquery-function"></a>A. Utilisation de la fonction ceiling() de XQuery  
+### <a name="a-using-the-ceiling-xquery-function"></a>R. Utilisation de la fonction ceiling() de XQuery  
  Pour le modèle de produit 7, cette requête renvoie une liste des postes de travail que compte le processus de fabrication du modèle de produit. Pour chaque poste de travail, la requête renvoie l'ID, les heures de main-d'œuvre et la taille des lots, le cas échéant. La requête utilise la fonction **Ceiling** pour retourner les heures de main-d’œuvre en tant que valeurs de type **Decimal**.  
   
 ```  

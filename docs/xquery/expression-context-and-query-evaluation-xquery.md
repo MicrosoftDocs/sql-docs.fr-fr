@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 5059f858-086a-40d4-811e-81fedaa18b06
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a870cdbd9a90fefe29088892f278446479665de7
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: f4fd85737d1a7cdc981576f624a2a403f0eb19ee
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85753634"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341956"
 ---
 # <a name="expression-context-and-query-evaluation-xquery"></a>Contexte des expressions et évaluation des requêtes (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -78,7 +78,7 @@ ms.locfileid: "85753634"
   
      Toutes les liaisons d'espace de noms sont résolues au cours de l'initialisation du contexte statique.  
   
--   En cas d’interrogation d’une colonne ou d’une variable **XML** typée, les composants de la collection de schémas XML associée à la colonne ou à la variable sont importés dans le contexte statique. Pour plus d’informations, consultez [comparer du XML typé et du XML](../relational-databases/xml/compare-typed-xml-to-untyped-xml.md)non typé.  
+-   En cas d’interrogation d’une colonne ou d’une variable **XML** typée, les composants de la collection de schémas XML associée à la colonne ou à la variable sont importés dans le contexte statique. Pour plus d’informations, consultez [Comparer du XML typé et du XML non typé](../relational-databases/xml/compare-typed-xml-to-untyped-xml.md).  
   
 -   Pour chaque type atomique des schémas importés, une fonction de conversion est également mise à disposition dans le contexte statique. L'exemple suivant illustre ce concept. Dans cet exemple, une requête est spécifiée par rapport à une variable **XML** typée. La collection de schémas XML associée à cette variable définit un type atomique, myType. Correspondant à ce type, une fonction de conversion, **MyType ()**, est disponible pendant l’analyse statique. L'expression de la requête (`ns:myType(0)`) renvoie une valeur de type myType.  
   
@@ -183,7 +183,7 @@ ms.locfileid: "85753634"
 ### <a name="implementation-restrictions"></a>Limites de la mise en œuvre  
  Voici les limites liées à un contexte dynamique :  
   
--   Les fonctions de contexte de **date et d’heure actuelles** , **FN : current-date**, **FN : Current-Time**et **FN : Current-DateTime**, ne sont pas prises en charge.  
+-   Les fonctions de contexte de **date et d’heure actuelles** , **FN : current-date**, **FN : Current-Time** et **FN : Current-DateTime**, ne sont pas prises en charge.  
   
 -   Le **fuseau horaire implicite** est fixé à l’heure UTC + 0 et ne peut pas être modifié.  
   

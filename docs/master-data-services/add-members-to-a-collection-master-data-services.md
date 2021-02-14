@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 1a7155e6-2d4a-4ed1-a72c-edb37fa1a46b
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 141bdb831dce76b00e0ce14ea5616341d052451a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: a1eff1fabaf3f8b5174e37340380feaf97c2fadb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88500842"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347757"
 ---
 # <a name="add-members-to-a-collection-master-data-services"></a>Ajouter des membres à une collection (Master Data Services)
 

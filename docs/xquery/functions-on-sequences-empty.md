@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 46da89a8-0cd9-4913-8521-4087589a04ba
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c522e0756ca846558acbf6ac1b96c7d4abeef57e
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 7f9a09225562cbabe7ced75d80f26e37ee53d3e3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85753564"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100335835"
 ---
 # <a name="functions-on-sequences---empty"></a>Fonctions sur les séquences : empty
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -39,13 +39,13 @@ fn:empty($arg as item()*) as xs:boolean
  *$arg*  
  Séquence d'éléments. Si la séquence est vide, la fonction renvoie la valeur True. Sinon, cette fonction renvoie la valeur False.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La fonction **FN : Exists ()** n’est pas prise en charge. À la place, la fonction **not ()** peut être utilisée.  
   
 ## <a name="examples"></a>Exemples  
  Cette rubrique fournit des exemples de XQuery relatifs à des instances XML stockées dans différentes colonnes de type **XML** dans la base de données AdventureWorks.  
   
-### <a name="a-using-the-empty-xquery-function-to-determine-if-an-attribute-is-present"></a>A. Utilisation de la fonction XQuery empty() pour déterminer la présence d'un attribut  
+### <a name="a-using-the-empty-xquery-function-to-determine-if-an-attribute-is-present"></a>R. Utilisation de la fonction XQuery empty() pour déterminer la présence d'un attribut  
  Dans le processus de fabrication du modèle de produit 7, cette requête retourne tous les postes de travail qui n’ont pas d’attribut **MachineHours** .  
   
 ```  

@@ -10,12 +10,12 @@ author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
 ms.date: 12/11/2020
-ms.openlocfilehash: e1a70d9b69306e4394bc726fd58a48923bb2a937
-ms.sourcegitcommit: 5ceafd29b8f22edb800cec150f0ccddea43313e7
+ms.openlocfilehash: 942d0c84e697654e67d48ce708792eb8bcf770aa
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "98983672"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081480"
 ---
 # <a name="sqlpackage-export-parameters-and-properties"></a>Paramètres et propriétés de l’action Export de SqlPackage
 L’action Export de SqlPackage.exe exporte une base de données connectée dans un fichier BACPAC (.bacpac). Par défaut, les données de toutes les tables sont incluses dans le fichier .bacpac. Si vous le souhaitez, vous pouvez spécifier uniquement un sous-ensemble de tables pour lequel exporter des données. La validation de l'action d'exportation garantit la compatibilité avec Azure SQL Database pour la base de données ciblée complète même si un sous-ensemble de tables est spécifié pour l'exportation. 

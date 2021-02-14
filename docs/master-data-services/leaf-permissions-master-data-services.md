@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: bde16e8c-bcd4-4041-8130-55c5450e5f72
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: a50723727690307492d3d16cb3671e762dec401f
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 1924b33891b36d68a7b79c9046e0375b92f1d940
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461743"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338220"
 ---
 # <a name="leaf-permissions-master-data-services"></a>Autorisations de feuille (services de données de référence)
 
@@ -59,7 +59,7 @@ ms.locfileid: "88461743"
 |**Supprimer**|Aucun effet.|  
 |**Deny**|L'attribut n'est pas affiché.<br /><br /> Remarque : vous ne pouvez pas refuser explicitement l’accès aux attributs Name et Code.|  
   
-### <a name="example"></a>Exemple  
+### <a name="example"></a> Exemple  
  Pour l'entité Product, affectez l'autorisation **Mise à jour** à l'attribut Subcategory. Autorisation refuser à tous les autres attributs.  
   
 |Nom|Code|Subcategory (Mise à jour)|  

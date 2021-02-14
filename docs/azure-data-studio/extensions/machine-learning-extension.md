@@ -9,12 +9,12 @@ ms.author: davidph
 ms.reviewer: sstein
 ms.custom: ''
 ms.date: 05/19/2020
-ms.openlocfilehash: 163f5efca97e99609cbdbaae8f713c4576cc4e0b
-ms.sourcegitcommit: 9c6130d498f1cfe11cde9f2e65c306af2fa8378d
+ms.openlocfilehash: 8eb7dd5f5a11c508af0d85e7559349c14e558adb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93035975"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051950"
 ---
 # <a name="machine-learning-extension-for-azure-data-studio-preview"></a>Extension Machine Learning pour Azure Data Studio (préversion)
 
@@ -54,7 +54,7 @@ Pour installer l’extension Machine Learning dans Azure Data Studio, suivez les
 
 1. Ouvrez le gestionnaire d’extensions dans Azure Data Studio. Vous pouvez sélectionner l’icône des extensions ou l’option Extensions dans le menu Affichage.
 
-1. Sélectionnez l’extension **Machine Learning** , puis affichez les détails associés.
+1. Sélectionnez l’extension **Machine Learning**, puis affichez les détails associés.
 
 1. Sélectionnez **Installer**.
 

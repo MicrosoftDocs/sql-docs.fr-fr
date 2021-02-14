@@ -14,12 +14,12 @@ ms.assetid: 6334db3e-9297-44df-8d53-211187a95520
 author: rothja
 ms.author: jroth
 ms.custom: seo-dt-2019
-ms.openlocfilehash: efe0b68c605c96423dae5206693ff733430aff63
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 346bc660bc1fa1fd9a6e75a91caa182ff25e6c53
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88454331"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081024"
 ---
 # <a name="manage-and-troubleshoot-stretch-database"></a>Gestion et dépannage de Stretch Database
 [!INCLUDE [sqlserver2016-windows-only](../../includes/applies-to-version/sqlserver2016-windows-only.md)]

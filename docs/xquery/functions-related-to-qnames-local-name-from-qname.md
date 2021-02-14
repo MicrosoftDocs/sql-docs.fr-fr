@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: fafed718-8c3c-403f-93ee-ec51fc157a6e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d19153bbfd3cf2483cf8dfa30358f752dd45290e
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 97852b8479df926a933e34f5a8dddff7eb240e65
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92036812"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345005"
 ---
 # <a name="functions-related-to-qnames---local-name-from-qname"></a>Fonctions relatives aux QName : local-name-from-QName
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]

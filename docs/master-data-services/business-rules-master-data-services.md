@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a9f9e41a-2461-4845-b947-58b3a205543f
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 229ac06d8d37922f5ca0abca4f5d327137e18499
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 4869875867f7b1cad99780b1ec82664c9d569201
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813663"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341487"
 ---
 # <a name="business-rules-master-data-services"></a>Règles d'entreprise (Master Data Services)
 
