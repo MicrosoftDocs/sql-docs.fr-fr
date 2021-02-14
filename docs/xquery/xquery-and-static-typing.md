@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: d599c791-200d-46f8-b758-97e761a1a5c0
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 1a0b9cf43331e45d4aa1253fe5ad4b90d0bbea92
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 6dcaa7bbbd5674c6db3b6d8ec5185cc31e890707
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85775463"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352316"
 ---
 # <a name="xquery-and-static-typing"></a>XQuery et le typage statique
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -56,7 +56,7 @@ ms.locfileid: "85775463"
   
  Les sous-types sont définis en fonction des règles de sous-typage permettant de les dériver par restriction ou extension du schéma XML. Par exemple, un type S est un sous-type du type T si toutes les valeurs dotées du type S sont aussi des instances du type T.  
   
- De plus, toutes les valeurs entières sont aussi des valeurs décimales, conformément à la hiérarchie du type de schéma XML. En revanche, toutes les valeurs décimales ne sont pas des entiers. Si un entier est un sous-type de décimal, la réciproque est fausse. Par exemple, l' **+** opération autorise uniquement des valeurs de certains types, telles que les types numériques **XS : Integer**, **XS : Decimal**, **XS : float**et **XS : double**. Si des valeurs d’autres types, telles que **XS : String**, sont passées, l’opération génère une erreur de type. Cela s'appelle le typage fort. Des valeurs d'autres types, comme le type atomique utilisé pour indiquer la présence de XML non typé, peuvent être converties implicitement en une valeur d'un type accepté par l'opération. Cela s'appelle le typage faible.  
+ De plus, toutes les valeurs entières sont aussi des valeurs décimales, conformément à la hiérarchie du type de schéma XML. En revanche, toutes les valeurs décimales ne sont pas des entiers. Si un entier est un sous-type de décimal, la réciproque est fausse. Par exemple, l' **+** opération autorise uniquement des valeurs de certains types, telles que les types numériques **XS : Integer**, **XS : Decimal**, **XS : float** et **XS : double**. Si des valeurs d’autres types, telles que **XS : String**, sont passées, l’opération génère une erreur de type. Cela s'appelle le typage fort. Des valeurs d'autres types, comme le type atomique utilisé pour indiquer la présence de XML non typé, peuvent être converties implicitement en une valeur d'un type accepté par l'opération. Cela s'appelle le typage faible.  
   
  Si elle est obligatoire après une conversion implicite, la vérification des types statiques permet de s'assurer que seules les valeurs dotées de types autorisés et d'une cardinalité correcte sont transmises à une opération. Pour « String » + 1, il reconnaît que le type statique de « String » est **XS : String**. Étant donné qu’il ne s’agit pas d’un type autorisé pour l' **+** opération, une erreur de type est générée.  
   
@@ -64,7 +64,7 @@ ms.locfileid: "85775463"
   
  Comme nous l'avons déjà mentionné, il arrive fréquemment que l'inférence de type déduise un type plus large que ce que sait l'utilisateur à l'égard des données transmises. Dans ces cas-là, l'utilisateur doit réécrire la requête. Voici quelques cas typiques :  
   
--   Le type infère un type plus général tel qu'un supertype ou une union de types. Si le type est un type atomique, vous devez utiliser l'expression cast ou la fonction constructor pour indiquer le type statique réel. Par exemple, si le type déduit de l’expression E1 est un choix entre **XS : String** ou **XS : Integer** et que l’addition requiert **XS : Integer**, vous devez écrire `xs:integer(E1) + E2` au lieu de `E1+E2` . Cette expression peut échouer au moment de l’exécution si une valeur de chaîne qui ne peut pas être convertie en **XS : Integer**est détectée. En revanche, l'expression passera désormais la vérification des types statiques. Cette expression est mappée avec la séquence vide.  
+-   Le type infère un type plus général tel qu'un supertype ou une union de types. Si le type est un type atomique, vous devez utiliser l'expression cast ou la fonction constructor pour indiquer le type statique réel. Par exemple, si le type déduit de l’expression E1 est un choix entre **XS : String** ou **XS : Integer** et que l’addition requiert **XS : Integer**, vous devez écrire `xs:integer(E1) + E2` au lieu de `E1+E2` . Cette expression peut échouer au moment de l’exécution si une valeur de chaîne qui ne peut pas être convertie en **XS : Integer** est détectée. En revanche, l'expression passera désormais la vérification des types statiques. Cette expression est mappée avec la séquence vide.  
   
 -   Le type infère une cardinalité supérieure à celle que les données contiennent réellement. Cela se produit fréquemment, car le type de données **XML** peut contenir plusieurs éléments de niveau supérieur, et une collection de schémas XML ne peut pas la contraindre. Afin de réduire le type statique et de garantir qu'il n'y a en fait qu'une seule et unique valeur transmise, vous devez utiliser le prédicat positionnel `[1]`. Par exemple, pour ajouter 1 à la valeur de l'attribut `c` de l'élément `b` situé sous l'élément a de niveau supérieur, vous devez `write (/a/b/@c)[1]+1`. En outre, le mot clé DOCUMENT peut être utilisé avec une collection de schémas XML.  
   

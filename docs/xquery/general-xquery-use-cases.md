@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 5187c97b-6866-474d-8bdb-a082634039cc
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4756d86070e933f4c281922d54d80974832e9f5a
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 62fa5c7bba9133c9a8b0098142d97fdd422c47ba
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85775498"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341910"
 ---
 # <a name="general-xquery-use-cases"></a>Cas d'emploi généraux des requêtes XQuery
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -346,7 +346,7 @@ AND     CatalogDescription.exist('declare namespace p1="https://schemas.microsof
  [Recherche de chaînes dans XQuery](../xquery/string-search-in-xquery.md)   
  [Gestion des espaces de noms dans XQuery](../xquery/handling-namespaces-in-xquery.md)   
  [Ajouter des espaces de noms aux requêtes avec WITH XMLNAMESPACES](../relational-databases/xml/add-namespaces-to-queries-with-with-xmlnamespaces.md)   
- [SQL Server de &#40;de données XML&#41;](../relational-databases/xml/xml-data-sql-server.md)   
+ [Données XML &#40;SQL Server&#41;](../relational-databases/xml/xml-data-sql-server.md)   
  [Références relatives au langage Xquery &#40;SQL Server&#41;](../xquery/xquery-language-reference-sql-server.md)  
   
   

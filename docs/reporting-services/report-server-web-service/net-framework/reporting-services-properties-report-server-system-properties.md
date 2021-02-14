@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: cd874117-00e5-4ae6-8629-eb9ba9f40478
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: ecb90d65a011e5bb00c66f5f6ccd32ab4be663ee
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 17cfa96da435821c4f4dbba0f2493570f1ddcf27
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "79509631"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100063645"
 ---
 # <a name="reporting-services-properties---report-server-system-properties"></a>Propriétés de Reporting Services - Propriétés système du serveur de rapports
   Les noms de propriétés système suivants sont réservés. Vous ne pouvez pas créer des propriétés définies par l'utilisateur du même nom. Vous pouvez lire ou modifier nombre de ces propriétés à l'aide des méthodes de service Web.  

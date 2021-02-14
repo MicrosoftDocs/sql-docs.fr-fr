@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: b8cc9a35-97ab-4fe0-ab4b-c07f13d9793a
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 7f4baf9f3ef626f5e2dcdc62092afaf1e586df33
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: f277ecb0d3f0cc3a2e4cc62d3feff954e7c22327
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92196093"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348883"
 ---
 # <a name="web-configuration-reference-master-data-services"></a>Référence de la configuration Web (Master Data Services)
 
@@ -62,9 +62,9 @@ ms.locfileid: "92196093"
 |**virtualPath**|Attribut. Spécifie le chemin d'accès virtuel de l'application Web et du service Web [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] . Cela correspond à l’attribut **path** de l' **\<application>** élément sous l' **\<site>** élément dans le fichier de ApplicationHost.config IIS.|  
 |**siteName**|Attribut. Spécifie le nom du site qui héberge l'application Web et le service Web [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] . Cela correspond à l’attribut **Name** de l' **\<site>** élément sous **\<sites>** dans le fichier de ApplicationHost.config IIS.|  
 |**connectionName**|Attribut. Spécifie le nom de la connexion à utiliser. Cela correspond à l’attribut **Name** de l' **\<add>** élément sous l' **\<connectionStrings>** élément dans Web.config.|  
-|**FormName**|Attribut. Spécifie le nom du service Web. Cela correspond à l’attribut **Name** de l' **\<service>** élément sous l' **\<services>** élément dans Web.config.|  
+|**serviceName**|Attribut. Spécifie le nom du service Web. Cela correspond à l’attribut **Name** de l' **\<service>** élément sous l' **\<services>** élément dans Web.config.|  
   
-### <a name="example"></a>Exemple  
+### <a name="example"></a> Exemple  
  L'exemple suivant présente un service nommé MDS1 sur le site Contoso et le chemin d'accès /MDS, utilisant une chaîne de connexion spécifiée par MDSDB.  
   
 ```  

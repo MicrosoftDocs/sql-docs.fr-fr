@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 2a56a003-3b0f-453a-963c-00c9e40933ec
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 5512d7230b1b59add11e0d72efba232bb3770099
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 61e8cd99640b45cfdfd74de60beb2fcbd9393308
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88320795"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100069194"
 ---
 # <a name="assessing-mysql-databases-for-conversion-mysqltosql"></a>Évaluation des bases de données MySQL pour la conversion (MySQLToSQL)
 Avant de charger des objets et de migrer des données vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure, vous devez déterminer le niveau de complexité de la migration et le temps nécessaire à la migration. SSMA peut créer un rapport d’évaluation qui indique le pourcentage d’objets qui seront convertis avec succès. SSMA vous permet également d’afficher les problèmes spécifiques qui provoquent des échecs de conversion.  
@@ -56,7 +56,7 @@ La fenêtre rapport d’évaluation contient trois volets :
   
     -   La zone cible affiche le code converti. Le texte en rouge montre le code et les messages d’erreur les plus problématiques.  
   
--   Le volet inférieur affiche des messages de conversion, regroupés par numéro de message. Vous pouvez cliquer sur **Erreurs**, **avertissements**ou **informations** pour afficher les catégories de messages, puis développer un groupe de messages. Cliquez sur un message pour sélectionner l’objet dans le volet gauche et afficher les détails dans le volet droit.  
+-   Le volet inférieur affiche des messages de conversion, regroupés par numéro de message. Vous pouvez cliquer sur **Erreurs**, **avertissements** ou **informations** pour afficher les catégories de messages, puis développer un groupe de messages. Cliquez sur un message pour sélectionner l’objet dans le volet gauche et afficher les détails dans le volet droit.  
   
 ## <a name="analyzing-conversion-problems-by-using-the-assessment-report"></a>Analyse des problèmes de conversion à l’aide du rapport d’évaluation  
 Le volet statistiques de conversion affiche les statistiques de conversion. Si le pourcentage pour une catégorie est inférieur à 100%, vous devez déterminer la raison pour laquelle la conversion a échoué.  

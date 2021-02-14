@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 2660ceca-b8b4-4a1f-98a0-719ad5f89f81
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: a0945ffa8845c901662acb29c3ed04826870d0ae
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: ef2625be70c2af44f4a45ba00302b3d26afc101d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85722600"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339942"
 ---
 # <a name="path-expressions---specifying-predicates"></a>Expressions de chemin : spécification de prédicats
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "85722600"
   
 -   Un test de nœud. Pour plus d’informations, consultez [spécification d’un test de nœud dans une étape d’expression de chemin d’accès](../xquery/path-expressions-specifying-node-test.md).  
   
--   Zéro ou plusieurs prédicats. Ce paramètre est facultatif.  
+-   Zéro ou plusieurs prédicats. Cette étape est facultative.  
   
  Le prédicat facultatif représente la troisième partie de l'étape d'axe dans une expression de chemin d'accès.  
   
@@ -161,7 +161,7 @@ WHERE ProductModelID=7
   
 3.  Si la valeur de l'expression de prédicat est une valeur de type simple de type booléen, la valeur de vérité de prédicat est égale à la valeur de l'expression de prédicat.  
   
-     Par exemple, la requête suivante est spécifiée par rapport à une variable de type **XML**qui contient une instance XML, l’instance XML de l’enquête client. La requête récupère les clients qui ont des enfants. Dans cette requête, il s’agit de \<HasChildren> 1 \</HasChildren> .  
+     Par exemple, la requête suivante est spécifiée par rapport à une variable de type **XML** qui contient une instance XML, l’instance XML de l’enquête client. La requête récupère les clients qui ont des enfants. Dans cette requête, il s’agit de \<HasChildren> 1 \</HasChildren> .  
   
     ```  
     declare @x xml  

@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 13ce70e4-9d43-4a80-a826-099e6213bf85
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 0648f9c281c59789f3ae9d4f97cc3d277303abd1
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: c8a4a8a968432fa37489f579d36c53c32b5d31db
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99171795"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339430"
 ---
 # <a name="sysdm_hadr_cluster-transact-sql"></a>sys.dm_hadr_cluster (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

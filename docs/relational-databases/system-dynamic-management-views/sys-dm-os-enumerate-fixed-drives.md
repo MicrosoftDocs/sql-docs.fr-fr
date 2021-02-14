@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 2e27489e-cf69-4a89-9036-77723ac3de66
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 07855299c41457c066f878125ca289f66a87e2a9
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 0f6989a0b79ce409489c120d1fdfbe70a9ccbeb6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99184899"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338830"
 ---
 # <a name="sysdm_os_enumerate_fixed_drives-transact-sql"></a>sys.dm_os_enumerate_fixed_drives (Transact-SQL)
 

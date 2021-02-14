@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 94099d01-ab19-4d58-a172-340c86b4a0f3
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 399946496bbb649f84c9d539a9fe80f3f7919b31
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 33017262982effedd9fa85ea26818fdb7b2ae8ed
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88372695"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100068952"
 ---
 # <a name="connect-to-mysql-mysqltosql"></a>Se connecter à MySQL (MySQLToSQL)
 Utilisez la boîte de dialogue **se connecter à MySQL** pour vous connecter à la base de données MySQL que vous souhaitez migrer.  
@@ -39,7 +39,7 @@ Entrez le nom du serveur MySQL. Il s’agit d’une option de mode standard.
   
 Entrez le port du serveur. Le port du serveur par défaut est 3306. Il s’agit d’une option de mode standard.  
   
-**Nom d’utilisateur**  
+**Nom d'utilisateur**  
   
 Entrez le nom d’utilisateur que SSMA utilisera pour se connecter à la base de données MySQL.  
   

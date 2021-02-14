@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: f2e91306-2b1b-4e1c-b6d8-a34fb9980057
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: e7de4ccd0a7bba950767d9d9028e4635a10ee25d
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 0cd4a68b21ae23b60c2bea5618308c0d13300cab
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85759462"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353268"
 ---
 # <a name="type-casting-rules-in-xquery"></a>Règles de conversion de types dans XQuery
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "85759462"
   
 -   Un type de primitive intégré peut se convertir en un autre type de primitive intégré en respectant les règles en vigueur sur les données de la table.  
   
--   Un type de primitive peut également se convertir en tout autre type dérivé de ce type de primitive. Par exemple, vous pouvez effectuer un cast de **XS : Decimal** en **XS : Integer**ou de **XS : Decimal** en **XS : long**.  
+-   Un type de primitive peut également se convertir en tout autre type dérivé de ce type de primitive. Par exemple, vous pouvez effectuer un cast de **XS : Decimal** en **XS : Integer** ou de **XS : Decimal** en **XS : long**.  
   
 -   Un type dérivé peut être converti en tout autre type dont il constitue l'ancêtre dans la hiérarchie des types, et ce jusqu'à son type de primitive de base intégré. Par exemple, vous pouvez effectuer un cast de **XS : Token** en **XS : normalizedString** ou en **XS : String**.  
   
@@ -59,7 +59,7 @@ ms.locfileid: "85759462"
   
  Les types de conversion suivants ne sont pas pris en charge :  
   
--   La conversion mettant en œuvre les types de liste n'est pas autorisée. Cela comprend les types de listes définies par l’utilisateur et les types de listes intégrés tels que **XS : IDREFS**, **XS : Entities**et **XS : NMTOKENS**.  
+-   La conversion mettant en œuvre les types de liste n'est pas autorisée. Cela comprend les types de listes définies par l’utilisateur et les types de listes intégrés tels que **XS : IDREFS**, **XS : Entities** et **XS : NMTOKENS**.  
   
 -   Le cast vers ou à partir de **XS : QName** n’est pas pris en charge.  
   
