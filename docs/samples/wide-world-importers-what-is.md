@@ -10,12 +10,12 @@ ms.reviewer: ''
 ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: adc2e7d74f8479384bd9f34b5442e796e4b74d66
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: f844299a392f9521afe3af7d72bc72272304d3a5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85718541"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354040"
 ---
 # <a name="wide-world-importers-sample-databases-for-microsoft-sql"></a>Exemples de bases de données larges World Importers pour Microsoft SQL
 [!INCLUDE [SQL Server Azure SQL Database](../includes/applies-to-version/sql-asdb.md)]
@@ -65,4 +65,4 @@ La société travaille avec un exercice qui commence le 1er novembre.
 
 La licence de l’exemple de base de données et de l’exemple de code est décrite ici : [license.txt](https://github.com/Microsoft/sql-server-samples/blob/master/license.txt)
 
-L’exemple de base de données inclut des données publiques qui ont été chargées à partir de data.gov et de EarthData naturel. Les conditions d’utilisation sont les suivantes :[https://www.naturalearthdata.com/about/terms-of-use/](https://www.naturalearthdata.com/about/terms-of-use/)
+L’exemple de base de données inclut des données publiques qui ont été chargées à partir de data.gov et de EarthData naturel. Les conditions d’utilisation sont les suivantes : [https://www.naturalearthdata.com/about/terms-of-use/](https://www.naturalearthdata.com/about/terms-of-use/)

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 320b572f-bd5b-4055-95a6-dec5718c0041
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 7433ab9f3bd6bcadda324db1a5907f4d83040575
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: f245b613c3e5e32fd2d4cc8eb09e969719ab1762
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85720001"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347915"
 ---
 # <a name="numeric-values-functions---round"></a>Fonctions de valeurs numériques : round
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -47,10 +47,10 @@ fn:round ( $arg as numeric?) as numeric?
  *$arg*  
  Nombre à laquelle s'applique la fonction.  
   
-## <a name="remarks"></a>Remarques  
- Si le type de *$arg* est l’un des trois types numériques de base, **XS : float**, **XS : double**ou **XS : Decimal**, le type de retour est le même que le type de *$arg* . Si le type de *$arg* est un type dérivé de l’un des types numériques, le type de retour est le type numérique de base.  
+## <a name="remarks"></a>Notes  
+ Si le type de *$arg* est l’un des trois types numériques de base, **XS : float**, **XS : double** ou **XS : Decimal**, le type de retour est le même que le type de *$arg* . Si le type de *$arg* est un type dérivé de l’un des types numériques, le type de retour est le type numérique de base.  
   
- Si l’entrée des fonctions **FN : Floor**, **FN : Ceiling**ou **FN : Round** est **xdt : untypedAtomic**, les données non typées sont implicitement converties en **XS : double**.  
+ Si l’entrée des fonctions **FN : Floor**, **FN : Ceiling** ou **FN : Round** est **xdt : untypedAtomic**, les données non typées sont implicitement converties en **XS : double**.  
   
  Tout autre type génère une erreur statique.  
   

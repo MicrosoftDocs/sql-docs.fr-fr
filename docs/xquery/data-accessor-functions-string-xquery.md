@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7baa2959-9340-429b-ad53-3df03d8e13fc
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: d4c0dee40eb08aac425f93570c98fc88d32bcc60
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 9c334f2f78ae79b9a1af3a268728d6fcc5454f05
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85730973"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351086"
 ---
 # <a name="data-accessor-functions---string-xquery"></a>Fonctions d’accesseur de données : string (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -40,7 +40,7 @@ fn:string($arg as item()?) as xs:string
  *$arg*  
  Nœud ou valeur atomique.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
   
 -   Si *$arg* est la séquence vide, la chaîne de longueur nulle est retournée.  
   
@@ -55,7 +55,7 @@ fn:string($arg as item()?) as xs:string
 ## <a name="examples"></a>Exemples  
  Cette rubrique fournit des exemples de XQuery relatifs à des instances XML stockées dans différentes colonnes de type **XML** dans la base de données AdventureWorks.  
   
-### <a name="a-using-the-string-function"></a>A. Utilisation de la fonction string  
+### <a name="a-using-the-string-function"></a>R. Utilisation de la fonction string  
  La requête suivante récupère le <`Features`> nœud d’élément enfant de l' `ProductDescription` élément <>.  
   
 ```  

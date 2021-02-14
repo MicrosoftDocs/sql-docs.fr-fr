@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: alayu, sstein
 ms.custom: seodec18
 ms.date: 09/24/2019
-ms.openlocfilehash: 7f032d870952cdadbde79dbf56f4c63ae351d6e9
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: 014376dd56045b9e5ef440054ae2c1d1df836cad
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081568"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040019"
 ---
 # <a name="source-control-in-azure-data-studio"></a>Contrôle de code source dans Azure Data Studio
 

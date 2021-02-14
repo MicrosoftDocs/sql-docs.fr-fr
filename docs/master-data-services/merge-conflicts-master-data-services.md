@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 797219ad-5109-4666-94d3-dd1d59440a33
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 908d4d5de8fac337529a8e581a658159c47e3d8d
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 51505c334183372ba24cc8075868e37ec69781ad
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88343945"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341421"
 ---
 # <a name="merge-conflicts-master-data-services"></a>Fusionner les conflits (Master Data Services)
 

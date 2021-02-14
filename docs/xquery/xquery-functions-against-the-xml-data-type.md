@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 8df0877d-a03f-4ca9-b84e-908c4bb42b5e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 8e92148b5a85ced147599eafe09156cf41c47021
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 82f3eae7098b3ac5e86355aed1e13bdd5c137015
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92037012"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352815"
 ---
 # <a name="xquery-functions-against-the-xml-data-type"></a>Fonctions XQuery impliquant le type de données xml
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -42,7 +42,7 @@ ms.locfileid: "92037012"
 ||[contains](../xquery/functions-on-string-values-contains.md)|  
 ||[substring](../xquery/functions-on-string-values-substring.md)|  
 ||[Fonction en minuscules &#40;XQuery&#41;](../xquery/functions-on-string-values-lower-case.md)|  
-||[string-length](../xquery/functions-on-string-values-string-length.md)|  
+||[chaîne-longueur](../xquery/functions-on-string-values-string-length.md)|  
 ||[Fonction majuscule &#40;XQuery&#41;](../xquery/functions-on-string-values-upper-case.md)|  
 |Fonctions sur les valeurs booléennes|[not](../xquery/functions-on-boolean-values-not-function.md)|  
 |[Fonctions sur les nœuds]()|[number](../xquery/functions-on-nodes-number.md)|  

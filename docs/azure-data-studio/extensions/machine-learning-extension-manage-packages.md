@@ -9,12 +9,12 @@ ms.author: davidph
 ms.reviewer: sstein
 ms.custom: ''
 ms.date: 05/19/2020
-ms.openlocfilehash: 2977f25e09d3d634d479abd8371d010206edea90
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: c874317acf39e954a0e640c1954e3a0dac6e9f43
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91725166"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051960"
 ---
 # <a name="manage-packages-in-database-with-machine-learning-extension-for-azure-data-studio-preview"></a>Gérer les packages dans une base de données à l’aide de l’extension Machine Learning pour Azure Data Studio (préversion)
 

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: fab6335b-4cae-47de-ae7c-6c4743e0680f
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 79fcb613f985f363631b1ce26c75228bb7ab5862
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: fc4372748ee9556293eee5c074afc2f404134849
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92193621"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340323"
 ---
 # <a name="model-object-permissions-master-data-services"></a>Autorisations d'objet de modèle (Master Data Services)
 

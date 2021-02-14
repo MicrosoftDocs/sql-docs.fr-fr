@@ -10,12 +10,12 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: sstein
 ms.date: 03/16/2018
-ms.openlocfilehash: 1688998d5a3f6b9033808701c33ff141cf8cc8c3
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 3c2145db468fb0c6423cbd2ec1bc45d7902b2cdf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597192"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081810"
 ---
 # <a name="sql-server-management-studio-components-and-configuration"></a>Composants et configuration de SQL Server Management Studio
 

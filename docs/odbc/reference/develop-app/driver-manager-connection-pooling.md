@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ee95ffdb-5aa1-49a3-beb2-7695b27c3df9
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 4c3c2fecc26cf2d8bbf5d53598a7b28ce7db5612
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 8876696412360275fcf443a5543634c9ac537df6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195571"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070334"
 ---
 # <a name="driver-manager-connection-pooling"></a>Regroupement de connexions du gestionnaire de pilotes
 Le regroupement de connexions permet à une application d’utiliser une connexion à partir d’un pool de connexions qui n’ont pas besoin d’être rétablies pour chaque utilisation. Une fois qu’une connexion a été créée et placée dans un pool, une application peut réutiliser cette connexion sans exécuter le processus de connexion complet.  

@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: b87b9683-abed-4677-8c50-18bdba704655
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 8c39bc03cb6a1da09c7be6aac41c18b9d3bbd871
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 2fc9bbd8092c98d21263d3972ab04d90888fcbae
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987525"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066387"
 ---
 # <a name="project-settings-type-mapping-accesstosql"></a>Paramètres du projet (mappage de type) (AccessToSQL)
 Les paramètres de projet de mappage de type vous permettent de définir des mappages de types par défaut pour le projet SSMA. Vous pouvez également spécifier des mappages de type pour des objets de base de données individuels. Pour plus d’informations, consultez [mappage des types de données source et cible](mapping-source-and-target-data-types-accesstosql.md).  
@@ -67,7 +67,7 @@ Cliquez pour ajouter un type de données à la liste de mappage.
 **Modifier**  
 Cliquez pour modifier un type de données dans la liste mappage.  
   
-**Remove**  
+**Supprimer**  
 Cliquez pour supprimer le mappage de type de données sélectionné de la liste de mappage.  
   
 **Rétablir les valeurs par défaut**  

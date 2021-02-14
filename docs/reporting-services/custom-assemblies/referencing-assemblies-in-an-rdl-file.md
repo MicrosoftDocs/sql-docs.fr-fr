@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9a48e552-7d47-4243-9be1-894990c506d9
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: d310ec6895f1e8d027378fca71df36331dfbf5a8
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 6d27d3f44d9b60a2c3bb38249881d38adbc6f2e2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "80217018"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100064504"
 ---
 # <a name="referencing-assemblies-in-an-rdl-file"></a>Référencement d'assemblys dans un Fichier RDL
   Pour prendre en charge l’utilisation d’assemblys de code personnalisés dans les fichiers de définition de rapport, deux éléments RDL (Report Definition Language) sont inclus dans la spécification RDL : l’élément **CodeModules** et l’élément **Classes**.  

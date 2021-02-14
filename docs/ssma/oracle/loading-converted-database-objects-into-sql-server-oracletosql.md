@@ -14,12 +14,12 @@ ms.assetid: a8ae33b2-1883-4785-922b-ea0e31c0b37a
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 37d75a6454388c19caaa483d83cc5f6a230dab30
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: 4b315b0b26f771a2e215f03e1abcfeb5f829e86b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87934759"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100080800"
 ---
 # <a name="loading-converted-database-objects-into-sql-server-oracletosql"></a>Chargement d’objets de base de données convertis dans SQL Server (OracleToSQL)
 Après avoir converti les schémas Oracle en SQL Server, vous pouvez charger les objets de base de données résultants dans SQL Server. Vous pouvez faire en sorte que SSMA crée les objets, ou vous pouvez générer un script pour les objets et exécuter les scripts vous-même. En outre, SSMA vous permet de mettre à jour les métadonnées cibles avec le contenu réel de SQL Server base de données.  
@@ -47,7 +47,7 @@ Pour utiliser SSMA pour créer SQL Server objets de base de données, sélection
   
 3.  Une fois que vous avez sélectionné les objets à traiter dans SQL Server Explorateur de métadonnées, cliquez avec le bouton droit sur **bases de données**, puis cliquez sur **synchroniser avec la base de données**.  
   
-    Vous pouvez également synchroniser des objets individuels ou des catégories d’objets en cliquant avec le bouton droit sur l’objet ou son dossier parent, puis en cliquant sur **synchroniser avec la base de données**.  
+    Vous pouvez également synchroniser des objets individuels ou des catégories d’objets en cliquant avec le bouton droit sur l’objet ou son dossier parent, puis en cliquant sur  **synchroniser avec la base de données**.  
   
     Ensuite, SSMA affiche la boîte **de dialogue synchroniser avec la base de données** , où vous pouvez voir deux groupes d’éléments. Sur le côté gauche, SSMA affiche les objets de base de données sélectionnés représentés dans une arborescence. Sur le côté droit, vous pouvez voir une arborescence qui représente les mêmes objets dans les métadonnées SSMA. Vous pouvez développer l’arborescence en cliquant sur le bouton « + » de droite ou de gauche. La direction de la synchronisation est indiquée dans la colonne action placée entre les deux arbres.  
   

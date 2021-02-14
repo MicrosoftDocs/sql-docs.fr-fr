@@ -25,12 +25,12 @@ helpviewer_keywords:
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 89ebfbb70c7c50729ebbfb5de6a8551e00927bc6
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 521904030d97213770d4a2310b51eaadc37d4e5d
+ms.sourcegitcommit: 05fc736e6b6b3a08f503ab124c3151f615e6faab
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99233238"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99478584"
 ---
 # <a name="statistics"></a>Statistiques
 
@@ -44,7 +44,7 @@ ms.locfileid: "99233238"
  Chaque objet de statistiques est créé dans une liste constituée d’une ou de plusieurs colonnes de table, et comprend un *histogramme* présentant la distribution des valeurs dans la première colonne. Les objets de statistiques sur plusieurs colonnes stockent également des informations statistiques sur la corrélation des valeurs entre les colonnes. Ces statistiques de corrélation, également appelées *densités*, sont dérivées du nombre de lignes distinctes de valeurs de colonne. 
 
 #### <a name="histogram"></a><a name="histogram"></a> Histogramme  
-Un **histogramme** mesure la fréquence des occurrences de chaque valeur distincte dans un jeu de données. L'optimiseur de requête calcule un histogramme sur les valeurs de colonnes de la première colonne clé de l'objet de statistiques, en sélectionnant les valeurs de colonnes au moyen d'un échantillonnage statistique des lignes ou d'une analyse complète de toutes les lignes dans la table ou la vue. Si l'histogramme est créé à partir d'un jeu de lignes échantillonnées, les totaux stockés pour le nombre de lignes et le nombre de valeurs distinctes sont des estimations et ne doivent pas nécessairement être des nombres entiers.
+Un **histogramme** mesure la fréquence des occurrences de chaque valeur distincte dans un jeu de données. L’optimiseur de requête calcule un histogramme sur les valeurs de colonnes de la première colonne clé de l’objet de statistiques, en sélectionnant les valeurs de colonnes au moyen d’un échantillonnage statistique des lignes ou d’une analyse complète de toutes les lignes dans la table ou la vue. Si l'histogramme est créé à partir d'un jeu de lignes échantillonnées, les totaux stockés pour le nombre de lignes et le nombre de valeurs distinctes sont des estimations et ne doivent pas nécessairement être des nombres entiers.
 
 > [!NOTE]
 > <a name="frequency"></a> Les histogrammes dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont créés pour une seule colonne, en l’occurrence, la première colonne du jeu de colonnes clés de l’objet de statistiques.
@@ -69,10 +69,10 @@ Pour chaque étape de l’histogramme ci-dessus :
   
 -   La zone pleine située à gauche de *range_high_key* représente la plage de valeurs de colonnes et le nombre moyen d’occurrences de chacune des valeurs de colonnes (*average_range_rows*). Pour la première étape de l’histogramme, la valeur de *average_range_rows* est toujours égale à 0.  
   
--   Les lignes pointillées représentent les valeurs échantillonnées utilisées pour estimer le nombre total de valeurs distinctes dans la plage (*distinct_range_rows*) et le nombre total de valeurs dans la plage (*range_rows*). L’optimiseur de requête utilise *range_rows* et *distinct_range_rows* pour calculer *average_range_rows*, et ne stocke pas les valeurs échantillonnées.   
+-   Les lignes pointillées représentent les valeurs échantillonnées utilisées pour estimer le nombre total de valeurs distinctes dans la plage (*distinct_range_rows*) et le nombre total de valeurs dans la plage (*range_rows*). L’optimiseur de requête utilise *range_rows* et *distinct_range_rows* pour calculer *average_range_rows* et ne stocke pas les valeurs échantillonnées.   
   
 #### <a name="density-vector"></a><a name="density"></a> Vecteur de densité  
-La **densité** correspond aux informations sur le nombre de doublons d’une colonne donnée ou d’une combinaison de colonnes. Elle est calculée ainsi : 1/(nombre de valeurs distinctes). L'optimiseur de requête utilise des densités afin d'améliorer les estimations de cardinalité pour les requêtes qui retournent plusieurs colonnes à partir de la même table ou vue indexée. Lorsque la densité diminue, la sélectivité d’une valeur augmente. Par exemple, dans une table représentant des voitures, plusieurs voitures proviennent du même constructeur mais chacune a un numéro d'identification unique. Un index sur le numéro d'identification du véhicule est plus sélectif qu'un index sur le constructeur, car le numéro d'identification du véhicule a une plus faible densité que le constructeur. 
+La **densité** correspond aux informations sur le nombre de doublons d’une colonne donnée ou d’une combinaison de colonnes. Elle est calculée ainsi : 1/(nombre de valeurs distinctes). L’optimiseur de requête utilise des densités afin d’améliorer les estimations de cardinalité pour les requêtes qui retournent plusieurs colonnes à partir de la même table ou vue indexée. Lorsque la densité diminue, la sélectivité d’une valeur augmente. Par exemple, dans une table représentant des voitures, plusieurs voitures proviennent du même constructeur mais chacune a un numéro d'identification unique. Un index sur le numéro d'identification du véhicule est plus sélectif qu'un index sur le constructeur, car le numéro d'identification du véhicule a une plus faible densité que le constructeur. 
 
 > [!NOTE]
 > La fréquence correspond aux informations sur l’occurrence de chaque valeur distincte dans la première colonne de clé de l’objet de statistiques. Elle est calculée ainsi : nombre de lignes x densité. Les colonnes qui comportent des valeurs uniques ont une fréquence maximale de 1.
@@ -108,22 +108,38 @@ ORDER BY s.name;
 ```  
   
 #### <a name="auto_update_statistics-option"></a>Option AUTO_UPDATE_STATISTICS  
- Quand l’option de mise à jour automatique des statistiques [AUTO_UPDATE_STATISTICS](../../t-sql/statements/alter-database-transact-sql-set-options.md#auto_update_statistics) est activée, l’optimiseur de requête détermine si les statistiques sont obsolètes, puis les met à jour le cas échéant quand elles sont utilisées par une requête. Les statistiques deviennent obsolètes après que des opérations d'insertion, de mise à jour, de suppression ou de fusion ont modifié la distribution des données dans la table ou la vue indexée. L'optimiseur de requête détermine si les statistiques sont obsolètes en comptant le nombre de modifications de données depuis la dernière mise à jour des statistiques et en comparant le nombre de modifications à un seuil. Ce seuil est basé sur le nombre de lignes contenues dans la table ou la vue indexée.  
+ Quand l’option de mise à jour automatique des statistiques [AUTO_UPDATE_STATISTICS](../../t-sql/statements/alter-database-transact-sql-set-options.md#auto_update_statistics) est activée, l’optimiseur de requête détermine si les statistiques sont obsolètes, puis les met à jour le cas échéant quand elles sont utilisées par une requête. Cette action est également connue sous le nom de recompilation des statistiques. Les statistiques deviennent obsolètes après que des modifications des opérations d’insertion, de mise à jour, de suppression ou de fusion ont modifié la distribution des données dans la table ou la vue indexée. L’optimiseur de requête détermine si les statistiques sont obsolètes en comptant les modifications du nombre de lignes depuis la dernière mise à jour des statistiques et en comparant les modifications du nombre de lignes à un seuil. Ce seuil est basé sur la cardinalité de la table, ce qui peut être défini comme le nombre de lignes contenues dans la table ou la vue indexée.  
   
-* Jusqu’à [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise un seuil reposant sur le pourcentage de lignes modifiées. Cette valeur est indépendante du nombre de lignes figurant dans la table. Le seuil est :
-    * Si la cardinalité de la table affichait une valeur de 500 ou moins au moment de l’évaluation des statistiques, une mise à jour est effectuée toutes les 500 modifications.
-    * Si la cardinalité de la table affichait une valeur supérieure à 500 au moment de l’évaluation des statistiques, une mise à jour est effectuée toutes les 500 modifications + 20 %.
+- Jusqu’à [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], [!INCLUDE[ssde_md](../../includes/ssde_md.md)] utilise un seuil de recompilation basé sur le nombre de lignes dans la table ou la vue indexée au moment de l’évaluation des statistiques. Le seuil est différent si une table est temporaire ou permanente.
 
-* À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et avec un [niveau de compatibilité de base de données](../../relational-databases/databases/view-or-change-the-compatibility-level-of-a-database.md) de 130, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise un seuil dynamique décroissant de mise à jour des statistiques qui s’ajuste en fonction du nombre de lignes contenues de la table. Il est obtenu en calculant la racine carrée du produit de 1 000 et de la cardinalité de la table actuelle. Par exemple, si votre table contient 2 millions de lignes, le calcul est le suivant : sqrt(1000 * 2000000) = 44721.359. Du fait de cette modification, les statistiques sur des tables volumineuses sont mises à jour plus fréquemment. Toutefois, si une base de données affiche un niveau de compatibilité inférieur à 130, le seuil [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] s’applique. 
+  |Type de la table|Cardinalité de table (*n*)|Seuil de recompilation (nombre de modifications)|
+  |-----------|-----------|-----------|
+  |Temporaire|*n* < 6|6|
+  |Temporaire|6 <= *n* <= 500|500|
+  |Permanent|*n* <= 500|500|
+  |Temporaire ou permanent|*n* > 500|500 + (0,20 x *n*)|
+  
+  Par exemple, si votre table contient 20 000 lignes, le calcul est `500 + (0.2 * 20,000) = 4,500` et les statistiques sont mises à jour toutes les 4 500 modifications.
+
+- À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et avec un [niveau de compatibilité de base de données](../../relational-databases/databases/view-or-change-the-compatibility-level-of-a-database.md) inférieur à 130, [!INCLUDE[ssde_md](../../includes/ssde_md.md)] utilise également un seuil de recompilation des statistiques décroissant et dynamique qui s’ajuste en fonction de la cardinalité de la table et du moment de l’évaluation des statistiques. Du fait de cette modification, les statistiques sur des tables volumineuses sont mises à jour plus fréquemment. Toutefois, si une base de données affiche un niveau de compatibilité inférieur à 130, le seuil [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] s’applique.
+
+  |Type de la table|Cardinalité de table (*n*)|Seuil de recompilation (nombre de modifications)|
+  |-----------|-----------|-----------|
+  |Temporaire|*n* < 6|6|
+  |Temporaire|6 <= *n* <= 500|500|
+  |Permanent|*n* <= 500|500|
+  |Temporaire ou permanent|500 <= *n* <= 25 000|500 + (0,20 x *n*)|
+  |Temporaire ou permanent|*n* > 25 000|SQRT(1 000 x *n*)|
+
+  Par exemple, si votre table contient 2 millions de lignes, le calcul est `SQRT(1,000 * 2,000,000) = 44,721` et les statistiques sont mises à jour toutes les 44 721 modifications.
 
 > [!IMPORTANT]
 > Dans [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] à [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], ou dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures sous le [niveau de compatibilité de la base de données](../../relational-databases/databases/view-or-change-the-compatibility-level-of-a-database.md) 120 et inférieur, activez [trace flag 2371](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) pour que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise un seuil de mise à jour des statistiques décroissant et dynamique.
 
-Vous pouvez utiliser les conseils suivants pour activer l’indicateur de trace 2371 dans votre environnement pré-[!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] :
+Bien que recommandée pour tous les scénarios, l’activation de l’indicateur de trace est facultative. Toutefois, vous pouvez utiliser l’aide suivante pour activer l’indicateur de trace 2371 dans votre environnement pré-[!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] :
 
- - Si vous n’avez pas constaté de problèmes de performances dus à des statistiques obsolètes, il n’est pas nécessaire d’activer cet indicateur de trace.
- - Si vous utilisez des systèmes SAP, activez cet indicateur de trace.  Pour plus d’informations, reportez-vous à ce [blog](/archive/blogs/saponsqlserver/changes-to-automatic-update-statistics-in-sql-server-traceflag-2371).
- - Si vous exécutez des tâches nocturnes pour mettre à jour les statistiques car la mise à jour automatique actuelle n’est pas déclenchée assez fréquemment, vous pouvez activer l’indicateur de trace 2371 pour réduire le seuil.
+ - Si vous utilisez un système SAP, activez cet indicateur de trace. Pour plus d’informations, reportez-vous à ce [blog](/archive/blogs/saponsqlserver/changes-to-automatic-update-statistics-in-sql-server-traceflag-2371).
+ - Si vous exécutez des tâches nocturnes pour mettre à jour les statistiques car la mise à jour automatique actuelle n’est pas déclenchée assez fréquemment, vous pouvez activer l’indicateur de trace 2371 pour ajuster le seuil à la cardinalité de table.
   
 L'optimiseur de requête vérifie s'il existe des statistiques obsolètes avant de compiler une requête et avant d'exécuter un plan de requête mis en cache. Avant de compiler une requête, l'optimiseur de requête utilise les colonnes, les tables et les vues indexées du prédicat de requête pour identifier les statistiques susceptibles d'être obsolètes. Avant d'exécuter un plan de requête mis en cache, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] vérifie que le plan de requête fait référence à des statistiques à jour.  
   
@@ -131,9 +147,6 @@ L’option AUTO_UPDATE_STATISTICS s’applique aux objets de statistiques créé
  
 Vous pouvez utiliser le paramètre [sys.dm_db_stats_properties](../../relational-databases/system-dynamic-management-views/sys-dm-db-stats-properties-transact-sql.md) pour suivre avec précision le nombre de lignes modifiées dans une table et déterminer si vous souhaitez mettre à jour les statistiques manuellement.
 
-
-
-  
 #### <a name="auto_update_statistics_async"></a>AUTO_UPDATE_STATISTICS_ASYNC  
 L’option de mise à jour asynchrone des statistiques [AUTO_UPDATE_STATISTICS_ASYNC](../../t-sql/statements/alter-database-transact-sql-set-options.md#auto_update_statistics_async) détermine si l’optimiseur de requête utilise des mises à jour des statistiques synchrones ou asynchrones. Par défaut, l’option de mise à jour asynchrone des statistiques est désactivée, et l’optimiseur de requête met à jour les statistiques de façon synchrone. L’option AUTO_UPDATE_STATISTICS_ASYNC s’applique aux objets de statistiques créés pour les index, aux colonnes uniques contenues dans les prédicats de requête et aux statistiques créées à l’aide de l’instruction [CREATE STATISTICS](../../t-sql/statements/create-statistics-transact-sql.md) .  
  
@@ -144,7 +157,7 @@ La mise à jour des statistiques peut être synchrone (par défaut) ou asynchron
 
 * Avec les mises à jour synchrones des statistiques, les requêtes sont toujours compilées et exécutées avec des statistiques à jour. Lorsque les statistiques sont obsolètes, l’optimiseur de requête attend les statistiques mises à jour avant de compiler et d’exécuter la requête. 
 
-* Avec les mises à jour asynchrones des statistiques, les requêtes sont compilées avec les statistiques existantes, même si celles-ci sont obsolètes. L’optimiseur de requête peut choisir un plan de requête non optimal si les statistiques sont obsolètes lors de la compilation de la requête. Les statistiques sont généralement mises à jour peu de temps après. Les requêtes compilées à l’issue des mises à jour des statistiques ont l’avantage d’utiliser les statistiques mises à jour, comme d’habitude.   
+* Avec les mises à jour asynchrones des statistiques, les requêtes sont compilées avec les statistiques existantes, même si celles-ci sont obsolètes. L’optimiseur de requête peut choisir un plan de requête non optimal si les statistiques sont obsolètes lors de la compilation de la requête. Les statistiques sont généralement mises à jour peu de temps après. Les requêtes compilées à l’issue des mises à jour des statistiques ont l’avantage d’utiliser les statistiques mises à jour.   
 
 Envisagez d'utiliser des statistiques synchrones lorsque vous effectuez des opérations qui modifient la distribution des données, telles que la troncation d'une table ou une mise à jour en bloc d'un fort pourcentage de lignes. Si vous ne mettez pas à jour manuellement les statistiques à l’issue de l’opération, l’utilisation de statistiques synchrones vous garantit que les statistiques sont à jour avant d’exécuter des requêtes sur les données modifiées.  
   
@@ -157,12 +170,12 @@ Envisagez d'utiliser des statistiques asynchrones pour obtenir des temps de rép
 > [!NOTE]
 > Les statistiques sur les tables temporaires locales sont toujours mises à jour de façon synchrone, quelle que soit l’option AUTO_UPDATE_STATISTICS_ASYNC. Les statistiques sur les tables temporaires globales sont mises à jour de façon synchrone ou asynchrone en fonction de l’option AUTO_UPDATE_STATISTICS_ASYNC définie pour la base de données utilisateur.
 
-La mise à jour asynchrone des statistiques est effectuée par une requête en arrière-plan. Lorsque la requête est prête à écrire des statistiques mises à jour dans la base de données, elle tente d’acquérir un verrou de modification de schéma sur l’objet de métadonnées des statistiques. Si une autre session détient déjà un verrou sur le même objet, la mise à jour asynchrone des statistiques est bloquée jusqu’à ce que le verrou de modification de schéma puisse être acquis. De même, les sessions qui doivent acquérir un verrou de stabilité de schéma sur l’objet de métadonnées des statistiques pour compiler une requête peuvent être bloquées par la session d’arrière-plan de mise à jour asynchrone des statistiques, qui détient déjà ou attend l’acquisition du verrou de modification de schéma. Par conséquent, pour les charges de travail avec des compilations de requêtes très fréquentes et des mises à jour fréquentes de statistiques, l’utilisation de statistiques asynchrones peut augmenter la probabilité de problèmes d’accès concurrentiel dus à un blocage des verrous.
+La mise à jour asynchrone des statistiques est effectuée par une requête en arrière-plan. Lorsque la requête est prête à écrire des statistiques mises à jour dans la base de données, elle tente d’acquérir un verrou de modification de schéma sur l’objet de métadonnées des statistiques. Si une autre session détient déjà un verrou sur le même objet, la mise à jour asynchrone des statistiques est bloquée jusqu’à ce que le verrou de modification de schéma puisse être acquis. De même, les sessions qui doivent acquérir un verrou de stabilité de schéma (Sch-S) sur l’objet de métadonnées des statistiques pour compiler une requête peuvent être bloquées par la session d’arrière-plan de mise à jour asynchrone des statistiques, qui détient déjà ou attend l’acquisition du verrou de modification de schéma. Par conséquent, pour les charges de travail avec des compilations de requêtes très fréquentes et des mises à jour fréquentes de statistiques, l’utilisation de statistiques asynchrones peut augmenter la probabilité de problèmes d’accès concurrentiel dus à un blocage des verrous.
 
-Dans Azure SQL Database et Azure SQL Managed Instance, vous pouvez éviter les éventuels problèmes d’accès concurrentiel à l’aide de la mise à jour asynchrone des statistiques si vous activez la [configuration à l’échelle de la base de données](../../t-sql/statements/alter-database-scoped-configuration-transact-sql.md) ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY. Lorsque cette configuration est activée, la requête en arrière-plan attend d’acquérir le verrou de modification de schéma (Sch-M) sur une file d’attente basse priorité distincte, ce qui permet à d’autres requêtes de continuer à compiler des requêtes avec des statistiques existantes. Une fois qu’aucune autre session ne détient un verrou sur l’objet de métadonnées des statistiques, la requête en arrière-plan acquiert le verrou de modification de schéma et met à jour les statistiques. Dans le cas improbable où la requête en arrière-plan ne peut pas acquérir le verrou dans un délai de plusieurs minutes, la mise à jour des statistiques asynchrones est abandonnée et les statistiques ne sont pas mises à jour tant qu’une autre mise à jour automatique des statistiques n’est pas déclenchée, ou jusqu’à ce que les statistiques soient [mises à jour manuellement](update-statistics.md).
+Dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] et [!INCLUDE[ssSDSMIfull](../../includes/sssdsmifull-md.md)], vous pouvez éviter les éventuels problèmes d’accès concurrentiel à l’aide de la mise à jour asynchrone des statistiques si vous activez la [configuration à l’échelle de la base de données](../../t-sql/statements/alter-database-scoped-configuration-transact-sql.md) ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY. Quand cette configuration est activée, la requête en arrière-plan attend d’acquérir le verrou de modification de schéma (Sch-M) et conserve les statistiques mises à jour sur une file d’attente basse priorité distincte, ce qui permet à d’autres requêtes de continuer à compiler des requêtes avec des statistiques existantes. Une fois qu’aucune autre session ne détient un verrou sur l’objet de métadonnées des statistiques, la requête en arrière-plan acquiert le verrou de modification de schéma et met à jour les statistiques. Dans le cas improbable où la requête en arrière-plan ne peut pas acquérir le verrou dans un délai de plusieurs minutes, la mise à jour des statistiques asynchrones est abandonnée et les statistiques ne sont pas mises à jour tant qu’une autre mise à jour automatique des statistiques n’est pas déclenchée, ou jusqu’à ce que les statistiques soient [mises à jour manuellement](update-statistics.md).
 
 > [!Note]
-> L’option de configuration délimitée aux bases de données ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY est maintenant disponible dans Azure SQL Database et Azure SQL Managed Instance. Il est prévu qu’elle le soit dans SQL Server vNext. 
+> L’option de configuration délimitée aux bases de données ASYNC_STATS_UPDATE_WAIT_AT_LOW_PRIORITY est disponible dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] et [!INCLUDE[ssSDSMIfull](../../includes/sssdsmifull-md.md)]. Il est prévu qu’elle soit disponible dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. 
 
 #### <a name="incremental"></a>INCREMENTAL  
  Quand l’option INCREMENTAL de CREATE STATISTICS est définie sur ON, les statistiques sont créées pour chaque partition. Si la valeur est OFF, l’arborescence des statistiques est supprimée et [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] recalcule les statistiques. La valeur par défaut est OFF. Ce paramètre remplace la propriété INCREMENTAL de niveau base de données. Pour plus d’informations sur la création de statistiques incrémentielles, consultez [CREATE STATISTICS &#40;Transact-SQL&#41;](../../t-sql/statements/create-statistics-transact-sql.md). Pour plus d’informations sur la création automatique de statistiques par partition, consultez [Propriétés de la base de données &#40;page Options&#41;](../../relational-databases/databases/database-properties-options-page.md#automatic) et [Options ALTER DATABASE SET &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md). 

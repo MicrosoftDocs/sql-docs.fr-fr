@@ -20,12 +20,12 @@ ms.assetid: 02379a1b-3622-4578-8c59-a1b8f1a17914
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: 14785888953906f42b2196dc2cb06ca35cfc3a8b
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 54732718d3c31c8dc646c9f61b3afcfa23cb07d2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99210029"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100343138"
 ---
 # <a name="sysresource_stats-azure-sql-database"></a>sys.resource_stats (Azure SQL Database)
 [!INCLUDE[Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "99210029"
 |start_time|**datetime**|Heure UTC indiquant le début de l’intervalle de création de rapports de cinq minutes.|  
 |end_time|**datetime**|Heure UTC indiquant la fin de l’intervalle de création de rapports de cinq minutes.|  
 |database_name|**nvarchar(128)**|Nom de la base de données utilisateur.|  
-|sku|**nvarchar(128)**|Niveau de service de la base de données. Les valeurs possibles sont les suivantes :<br /><br /> De base<br /><br /> standard<br /><br /> Premium<br /><br />Usage général<br /><br />Critique pour l’entreprise|  
+|sku|**nvarchar(128)**|Niveau de service de la base de données. Les valeurs possibles sont les suivantes :<br /><br /> De base<br /><br /> Standard<br /><br /> Premium<br /><br />Usage général<br /><br />Critique pour l’entreprise|  
 |storage_in_megabytes|**float**|Taille de stockage maximale en mégaoctets pour la période, y compris les données, les index, les procédures stockées et les métadonnées de la base de données.|  
 |avg_cpu_percent|**décimal (5, 2)**|Utilisation moyenne du calcul en pourcentage de la limite de la couche de service.|  
 |avg_data_io_percent|**décimal (5, 2)**|Utilisation moyenne des E-S en pourcentage en fonction de la limite du niveau de service. Pour les bases de données Hyperscale, consultez [e/s de données dans statistiques d’utilisation des ressources](/azure/sql-database/sql-database-hyperscale-performance-diagnostics#data-io-in-resource-utilization-statistics).|  

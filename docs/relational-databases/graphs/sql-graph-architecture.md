@@ -15,15 +15,15 @@ ms.assetid: ''
 author: shkale-msft
 ms.author: shkale
 monikerRange: =azuresqldb-current||>=sql-server-2017||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: f167741a2064020cfbc7fdc43e881a74609e4ac6
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: ab08692b1e221e589cc6283e2800a695044f79b7
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97480160"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100351413"
 ---
 # <a name="sql-graph-architecture"></a>Architecture du graphique SQL  
-[!INCLUDE[sqlserver2017-asdb](../../includes/applies-to-version/sqlserver2017-asdb.md)]
+[!INCLUDE[sqlserver2017-asdb](../../includes/applies-to-version/sqlserver2017-asdb-asdbmi.md)]
 
 Découvrez comment SQL Graph est conçu. Le fait de connaître les principes de base facilitera la compréhension des autres Articles de SQL Graph.
  
@@ -136,7 +136,7 @@ Découvrez les [!INCLUDE[tsql-md](../../includes/tsql-md.md)] extensions introdu
  
 ### <a name="data-definition-language-ddl-statements"></a>Instructions du langage de définition de données (DDL)
 
-|Tâche   |Article connexe  |Notes
+|Tâche   |Article connexe  |Remarques
 |---  |---  |---  |
 |CREATE TABLE |[CREATE TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-table-sql-graph.md)|`CREATE TABLE` est maintenant étendu pour prendre en charge la création d’une table en tant que nœud ou EDGE. Notez qu’une table Edge peut ou non avoir des attributs définis par l’utilisateur.  |
 |ALTER TABLE    |[ALTER TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-table-transact-sql.md)|Les tables de nœuds et de périphérie peuvent être modifiées de la même façon qu’une table relationnelle, à l’aide de `ALTER TABLE` . Les utilisateurs peuvent ajouter ou modifier des colonnes, des index ou des contraintes définis par l’utilisateur. Toutefois, la modification de colonnes graphiques internes, comme `$node_id` ou `$edge_id` , génère une erreur.  |
@@ -147,10 +147,10 @@ Découvrez les [!INCLUDE[tsql-md](../../includes/tsql-md.md)] extensions introdu
 
 ### <a name="data-manipulation-language-dml-statements"></a>Instructions du langage de manipulation de données
 
-|Tâche   |Article connexe  |Notes
+|Tâche   |Article connexe  |Remarques
 |---  |---  |---  |
 |INSERT |[INSERT &#40;Transact-SQL&#41;](../../t-sql/statements/insert-sql-graph.md)|L’insertion dans une table de nœuds n’est pas différente de l’insertion dans une table relationnelle. Les valeurs de la `$node_id` colonne sont générées automatiquement. Toute tentative d’insertion d’une valeur dans `$node_id` ou de `$edge_id` colonne génère une erreur. Les utilisateurs doivent fournir des valeurs pour les `$from_id` `$to_id` colonnes et lors de l’insertion dans une table Edge. `$from_id` et `$to_id` sont les `$node_id` valeurs des nœuds auxquels se connecte un bord donné.  |
-|DELETE | [DELETE &#40;Transact-SQL&#41;](../../t-sql/statements/delete-transact-sql.md)|Les données des tables de nœuds ou d’arêtes peuvent être supprimées de la même façon qu’elles sont supprimées des tables relationnelles. Toutefois, dans cette version, il n’existe aucune contrainte pour garantir qu’aucun bord ne pointe vers un nœud supprimé et que la suppression en cascade des bords n’est pas prise en charge lors de la suppression d’un nœud. Quand un nœud est supprimé, tous les bords de connexion à ce nœud sont également supprimés, afin de préserver l’intégrité du graphique.  |
+|Suppression | [DELETE &#40;Transact-SQL&#41;](../../t-sql/statements/delete-transact-sql.md)|Les données des tables de nœuds ou d’arêtes peuvent être supprimées de la même façon qu’elles sont supprimées des tables relationnelles. Toutefois, dans cette version, il n’existe aucune contrainte pour garantir qu’aucun bord ne pointe vers un nœud supprimé et que la suppression en cascade des bords n’est pas prise en charge lors de la suppression d’un nœud. Quand un nœud est supprimé, tous les bords de connexion à ce nœud sont également supprimés, afin de préserver l’intégrité du graphique.  |
 |UPDATE |[UPDATE &#40;Transact-SQL&#41;](../../t-sql/queries/update-transact-sql.md)  |Les valeurs des colonnes définies par l’utilisateur peuvent être mises à jour à l’aide de l’instruction UPDATE. La mise à jour des colonnes graphiques internes, `$node_id` , `$edge_id` `$from_id` et `$to_id` n’est pas autorisée.  |
 |MERGE |[MERGE &#40;Transact-SQL&#41;](../../t-sql/statements/merge-transact-sql.md)  |`MERGE` l’instruction est prise en charge sur une table de nœuds ou d’arêtes.  |
 

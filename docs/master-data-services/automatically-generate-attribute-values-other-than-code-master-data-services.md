@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.assetid: b82f6f81-6e9c-4918-9ea9-4ab5f5d11b15
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 85339e8fb742bfa6e8545e72ac1ff70dc5bde6c7
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 90302e701b8975d300e77cc7ca028c76825a79f6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461956"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339555"
 ---
 # <a name="automatically-generate-attribute-values-other-than-code-master-data-services"></a>Générer automatiquement les valeurs des attributs autres que Code (Master Data Services)
 
@@ -64,7 +64,7 @@ ms.locfileid: "88461956"
   
 14. Cliquez sur **Précédent**.  
   
-15. (Facultatif) Dans la page **Maintenance des règles d’entreprise** , sur la ligne qui contient votre règle d’entreprise, double-cliquez sur une cellule dans la colonne **Nom**, **Description**ou **Notification** pour mettre à jour la valeur.  
+15. (Facultatif) Dans la page **Maintenance des règles d’entreprise** , sur la ligne qui contient votre règle d’entreprise, double-cliquez sur une cellule dans la colonne **Nom**, **Description** ou **Notification** pour mettre à jour la valeur.  
   
 16. Cliquez sur **Publier les règles d’entreprise**.  
   

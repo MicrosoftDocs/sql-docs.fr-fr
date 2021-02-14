@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 97480368-1fc3-4c32-b1b0-63edfb54e472
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: b17b8c6e3506d31e7576c2e0f5f155a9da597c7d
-ms.sourcegitcommit: 2f166e139f637d6edfb5731510d632a13205eb25
+ms.openlocfilehash: dccf6bacfaf431cb69ba4ec8dc031f4e817f4650
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84529395"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100065284"
 ---
 # <a name="code-access-security-in-reporting-services"></a>Sécurité d'accès du code dans Reporting Services
   La sécurité d'accès du code est axée sur les concepts principaux suivants : preuve, groupes de codes et jeux d'autorisations nommés. Dans [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)], les composants du Gestionnaire de rapports, du Concepteur de rapports et de Report Server ont chacun un fichier de stratégie qui configure la sécurité d'accès du code pour les assemblys personnalisés, ainsi que pour les extensions de remise des données, de rendu et de sécurité. Les sections suivantes fournissent une vue d'ensemble de la sécurité d'accès du code. Pour obtenir des détails sur les rubriques traitées dans cette section, consultez les informations relatives au modèle de stratégie de sécurité dans la documentation du SDK de [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)].  

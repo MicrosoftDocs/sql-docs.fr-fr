@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: f83c2e41-5722-47c3-b5b8-bf0f8cbe05d3
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4b8270babb8fe592c050a9352a7fd687660b178e
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 959d5498011984fc1f400567517d3b5b07727fcc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86920095"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339934"
 ---
 # <a name="path-expressions---using-abbreviated-syntax"></a>Expressions de chemin : utilisation de la syntaxe abrégée
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]

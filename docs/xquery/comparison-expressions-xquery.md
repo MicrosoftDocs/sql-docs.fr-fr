@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: dc671348-306f-48ef-9e6e-81fc3c7260a6
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: c0b96fbd075ed2b2f79ca8b92d09e2d2782d77dc
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 4824cd52001305a05c00e197e8c4140598267d4f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86922320"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349344"
 ---
 # <a name="comparison-expressions-xquery"></a>Expressions de comparaison (XQuery)
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]
@@ -47,7 +47,7 @@ ms.locfileid: "86922320"
   
 |Opérateur|Description|  
 |--------------|-----------------|  
-|=|Equal|  
+|=|Égal à|  
 |!=|Différent de|  
 |\<|Inférieur à|  
 |>|Supérieur à|  
@@ -221,9 +221,9 @@ ProductModelID       Result
   
  Ces comparaisons sont faites en fonction de l'ordre du document :  
   
--   `<<`: L' **opérande 1** précède l' **opérande 2** dans l’ordre du document.  
+-   `<<` : L' **opérande 1** précède l' **opérande 2** dans l’ordre du document.  
   
--   `>>`: L' **opérande 1** suit l' **opérande 2** dans l’ordre du document.  
+-   `>>` : L' **opérande 1** suit l' **opérande 2** dans l’ordre du document.  
   
  La requête suivante retourne la valeur true si la description du catalogue de produits contient l' \<Warranty> élément qui apparaît avant l' \<Maintenance> élément dans l’ordre du document pour un produit particulier.  
   
@@ -241,7 +241,7 @@ where ProductModelID=19
   
  Notez les points suivants dans la requête précédente :  
   
--   La méthode **value ()** du type de données **XML**est utilisée dans la requête.  
+-   La méthode **value ()** du type de données **XML** est utilisée dans la requête.  
   
 -   Le résultat booléen de la requête est converti en **nvarchar (10)** et retourné.  
   

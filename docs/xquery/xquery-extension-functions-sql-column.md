@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: e8f67bdf-b489-49a9-9d0f-2069c1750467
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 55a38974ec5e85eeec58195c18edd1f6fb8b5cb4
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 3d2f550e3516594a269257786e109df9c84a1082
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92038062"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341868"
 ---
 # <a name="xquery-extension-functions---sqlcolumn"></a>Fonctions d’extension XQuery : sql:column()
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -60,7 +60,7 @@ sql:column("columnName")
   
  Il est à noter les points suivants dans le code XML ainsi construit :  
   
--   Les valeurs des attributs **ProductID**, **ProductName**et **ProductPrice** sont obtenues à partir de la table **Product** .  
+-   Les valeurs des attributs **ProductID**, **ProductName** et **ProductPrice** sont obtenues à partir de la table **Product** .  
   
 -   La valeur de l’attribut **ProductModelID** est récupérée à partir de la table **ProductModel** .  
   

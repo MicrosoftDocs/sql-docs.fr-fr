@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: cab1c662-5d40-4c16-9f5c-36ff9608810b
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: b790b0f733a862f93249ecf85490d914e8e8d3b0
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: af9b942b8fb2cf6b1d0838327d5e32d278068146
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88500562"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352970"
 ---
 # <a name="setting-properties-for-master-data-services-add-in-for-excel"></a>Définition des propriétés pour le complément Master Data Services pour Excel
 

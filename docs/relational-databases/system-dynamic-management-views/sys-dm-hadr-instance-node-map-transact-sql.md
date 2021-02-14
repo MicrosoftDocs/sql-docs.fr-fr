@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: ccfaf62c-9f87-43cf-a5e7-8942e91dd041
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 7632bf8f343c1dd906e574e3ded3688fa2a812ca
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 1a95ad5a8dbd95d185df27aace94f26d5859d648
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99188682"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347613"
 ---
 # <a name="sysdm_hadr_instance_node_map-transact-sql"></a>sys.dm_hadr_instance_node_map (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

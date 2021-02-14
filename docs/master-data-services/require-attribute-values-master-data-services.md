@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a360ef13-0c34-43b8-a87e-2f5d8732d30e
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 74893d2d64a6de182206313a3d227c3a7db2f1de
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8e863605632b82b18f0dbe824fd45adbeaf22274
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88456739"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353777"
 ---
 # <a name="require-attribute-values-master-data-services"></a>Requérir des valeurs d'attribut (Master Data Services)
 
@@ -61,9 +61,9 @@ ms.locfileid: "88456739"
   
 11. Dans la liste déroulante **Attribut** , sélectionnez un attribut.  
   
-12. Cliquez sur **Enregistrer**. Une nouvelle ligne est ajoutée à la grille **Then** .  
+12. Cliquez sur **Save**. Une nouvelle ligne est ajoutée à la grille **Then** .  
   
-13. Cliquez sur **Enregistrer**.  
+13. Cliquez sur **Save**.  
   
 14. Cliquez sur **Tout publier**.  
   

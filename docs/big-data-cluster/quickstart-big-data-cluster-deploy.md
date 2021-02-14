@@ -9,12 +9,12 @@ ms.date: 06/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 6457c4bfe1579453a68e8d5ea11f45b67980ca8b
-ms.sourcegitcommit: 610e3ebe21ac6575850a29641a32f275e71557e3
+ms.openlocfilehash: 9c0ccb64a67d547b2027423dbc3571e44b3b21ef
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91785102"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100046167"
 ---
 # <a name="use-a-python-script-to-deploy-a-sql-server-big-data-cluster-on-azure-kubernetes-service-aks"></a>Utiliser un script Python pour déployer un cluster Big Data SQL Server sur Azure Kubernetes Service (AKS)
 

@@ -9,12 +9,12 @@ ms.author: garye
 ms.reviewer: mikeray, alayu, maghan
 ms.custom: ''
 ms.date: 07/01/2020
-ms.openlocfilehash: e019777c629084c5265cac1cd531ee01bdede01f
-ms.sourcegitcommit: 63aef5a96905f0b026322abc9ccb862ee497eebe
+ms.openlocfilehash: e1859c5e1af823e067210c5b69247702e8c78f89
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91364216"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040309"
 ---
 # <a name="create-and-run-a-python-notebook"></a>Créer et exécuter un notebook Python
 

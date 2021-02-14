@@ -11,12 +11,12 @@ ms.author: drskwier
 ms.reviewer: maghan, sstein
 ms.custom: seo-lt-2019
 ms.date: 11/03/2020
-ms.openlocfilehash: ea5ae3f9fa941e723d3bdf10de0ec900310cc28d
-ms.sourcegitcommit: 985e2e8e494badeac6d6b652cd35765fd9c12d80
+ms.openlocfilehash: f7a11c952fa20b720ad37abc204c7dbb31f0e96f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93328773"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100058604"
 ---
 # <a name="workaround-to-enable-copying-from-find-and-replace-window"></a>Solution de contournement pour autoriser la copie à partir de la fenêtre Rechercher et remplacer
 
@@ -36,9 +36,9 @@ Quand vous tentez de copier du texte à partir de la fenêtre Rechercher et remp
 
 Pour autoriser la copie de texte à partir de la fenêtre Rechercher et remplacer, effectuez les étapes suivantes :
 
-1. Dans le menu **Outils** , ouvrez **Options**.
+1. Dans le menu **Outils**, ouvrez **Options**.
 
-2. Sous **Environnement**>**Documents** , décochez l’élément « Afficher les fichiers divers dans l’Explorateur de solutions ».
+2. Sous **Environnement**>**Documents**, décochez l’élément « Afficher les fichiers divers dans l’Explorateur de solutions ».
 
 3. Fermez et rouvrez SQL Server Management Studio.
 

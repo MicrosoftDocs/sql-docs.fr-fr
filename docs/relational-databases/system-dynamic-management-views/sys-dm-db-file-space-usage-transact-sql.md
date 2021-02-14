@@ -21,12 +21,12 @@ ms.assetid: 148a5276-a8d5-49d2-8146-3c63d24c2144
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: d5b078e8c93918cc15d547e01d45ab0a3f97adae
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 495e70e426f4a015c1d789526e4ad7292e2503e4
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99236851"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100343118"
 ---
 # <a name="sysdm_db_file_space_usage-transact-sql"></a>sys.dm_db_file_space_usage (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -85,14 +85,14 @@ ms.locfileid: "99236851"
   
 ## <a name="relationship-cardinalities"></a>Cardinalités de la relation  
   
-|Du|À|Relation|  
+|Du|À|Relationship|  
 |----------|--------|------------------|  
 |sys.dm_db_file_space_usage.database_id, file_id|sys.dm_io_virtual_file_stats.database_id, file_id|Un-à-un|  
   
 ## <a name="permissions"></a>Autorisations
 
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] , requiert l' `VIEW SERVER STATE` autorisation.   
-Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le `Server admin` ou un `Azure Active Directory admin` compte est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.   
+Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le compte d' [administrateur de serveur](https://docs.microsoft.com/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) ou le compte d' [administrateur Azure Active Directory](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-overview#administrator-structure) est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.   
 
 ## <a name="examples"></a>Exemples  
   

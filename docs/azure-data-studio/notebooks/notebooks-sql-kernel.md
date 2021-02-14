@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: mikeray, alayu
 ms.custom: ''
 ms.date: 07/01/2020
-ms.openlocfilehash: cd71a160036bdcb5768e7a2ca51529989f733eeb
-ms.sourcegitcommit: 63aef5a96905f0b026322abc9ccb862ee497eebe
+ms.openlocfilehash: d2d04be4d571b14445abfb638f070b3666ce9984
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91364206"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040279"
 ---
 # <a name="create-and-run-a-sql-server-notebook"></a>Créer et exécuter un notebook SQL Server
 

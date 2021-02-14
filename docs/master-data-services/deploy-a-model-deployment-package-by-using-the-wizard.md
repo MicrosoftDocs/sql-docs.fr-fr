@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 4f65dc60-0ff8-46e6-9988-5bc5b9603ad0
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 86170829ee1ae3f5116497f8435bf207edb3d5a2
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cce8c342c17881a4d1c52af468b6e2c4d4f0b7d3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88344455"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350198"
 ---
 # <a name="deploy-a-model-deployment-package-by-using-the-wizard"></a>Déployer un package de déploiement de modèle à l'aide de l'Assistant
 
@@ -76,7 +76,7 @@ ms.locfileid: "88344455"
      Lorsque vous mettez à jour un modèle, si le processus échoue au cours des trois premières étapes, il s'arrête ; toutefois, les modifications qui sont déjà effectuées ne sont pas annulées.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
- Les attributs de fichier et les autorisations d’accès ne sont pas inclus dans les packages de déploiement de modèle. Après avoir déployé un modèle, vous devez les mettre à jour manuellement. Pour plus d'informations, consultez les pages suivantes :  
+ Les attributs de fichier et les autorisations d’accès ne sont pas inclus dans les packages de déploiement de modèle. Après avoir déployé un modèle, vous devez les mettre à jour manuellement. Pour plus d’informations, consultez :  
   
 -   [Affecter des autorisations d’objet de modèle &#40;Master Data Services&#41;](../master-data-services/assign-model-object-permissions-master-data-services.md)  
   

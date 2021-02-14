@@ -21,12 +21,12 @@ author: pmasl
 ms.author: pelopes
 ms.reviewer: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 79fdfc18a80ebff0e6e737db4efcdc81e5ae265d
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: b3ff96f67611b41db3e1cf1e827ff2577305a24d
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99192976"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100342928"
 ---
 # <a name="sysdm_exec_requests-transact-sql"></a>sys.dm_exec_requests (Transact-SQL)
 
@@ -40,7 +40,7 @@ Retourne des informations sur chaque requête qui s’exécute dans [!INCLUDE[ss
 |request_id|**int**|ID de la demande. Unique dans le contexte de la session. N'accepte pas la valeur NULL.|  
 |start_time|**datetime**|Horodateur lors la réception de la demande. N'accepte pas la valeur NULL.|  
 |status|**nvarchar(30)**|Statut de la demande. Il peut s'agir de l'une des ressources suivantes :<br /><br /> Arrière-plan<br />Exécution en cours<br />Exécutable<br />En état de veille<br />Interrompu<br /><br /> N'accepte pas la valeur NULL.|  
-|.|**nvarchar(32)**|Identifie le type de commande en cours de traitement. Les types de commandes courants comprennent notamment :<br /><br /> SELECT<br />INSERT<br />UPDATE<br />Suppression<br />BACKUP LOG<br />BACKUP DATABASE<br />DBCC<br />FOR<br /><br /> Le texte de la demande peut être extrait à l'aide de sys.dm_exec_sql_text avec le paramètre sql_handle correspondant pour la demande. Des processus système internes définissent la commande en fonction du type de tâche à exécuter. Il peut s'agir des tâches suivantes :<br /><br /> LOCK MONITOR<br />CHECKPOINTLAZY<br />WRITER<br /><br /> N'accepte pas la valeur NULL.|  
+|command|**nvarchar(32)**|Identifie le type de commande en cours de traitement. Les types de commandes courants comprennent notamment :<br /><br /> SELECT<br />INSERT<br />UPDATE<br />Suppression<br />BACKUP LOG<br />BACKUP DATABASE<br />DBCC<br />FOR<br /><br /> Le texte de la demande peut être extrait à l'aide de sys.dm_exec_sql_text avec le paramètre sql_handle correspondant pour la demande. Des processus système internes définissent la commande en fonction du type de tâche à exécuter. Il peut s'agir des tâches suivantes :<br /><br /> LOCK MONITOR<br />CHECKPOINTLAZY<br />WRITER<br /><br /> N'accepte pas la valeur NULL.|  
 |sql_handle|**varbinary(64)**|Jeton qui identifie de façon unique le lot ou la procédure stockée dont fait partie la requête. Autorise la valeur NULL.| 
 |statement_start_offset|**int**|Indique, en octets, à partir de 0, la position de départ de l’instruction en cours d’exécution pour le lot en cours d’exécution ou l’objet persistant. Peut être utilisé avec `sql_handle` , `statement_end_offset` et la `sys.dm_exec_sql_text` fonction de gestion dynamique pour récupérer l’instruction en cours d’exécution pour la demande. Autorise la valeur NULL.|  
 |statement_end_offset|**int**|Indique, en octets, à partir de 0, la position de fin de l’instruction en cours d’exécution pour le lot en cours d’exécution ou l’objet persistant. Peut être utilisé avec `sql_handle` , `statement_start_offset` et la `sys.dm_exec_sql_text` fonction de gestion dynamique pour récupérer l’instruction en cours d’exécution pour la demande. Autorise la valeur NULL.|  
@@ -91,11 +91,11 @@ Retourne des informations sur chaque requête qui s’exécute dans [!INCLUDE[ss
 |query_plan_hash|**Binary(8**|Valeur de hachage binaire calculée sur le plan d'exécution de requête et utilisée pour identifier des plans d'exécution de requête semblables. Vous pouvez utiliser le hachage de plan de requête pour rechercher le coût cumulatif de requêtes avec les plans d'exécution semblables.|  
 |statement_sql_handle|**varbinary(64)**|**S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.<br /><br /> Descripteur SQL de la requête individuelle.<br /><br />Cette colonne a la valeur NULL si Magasin des requêtes n’est pas activée pour la base de données. |  
 |statement_context_id|**bigint**|**S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions ultérieures.<br /><br /> Clé étrangère facultative à sys.query_context_settings.<br /><br />Cette colonne a la valeur NULL si Magasin des requêtes n’est pas activée pour la base de données. |  
-|dop |**int** |**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.<br /><br /> Degré de parallélisme de la requête. |  
-|parallel_worker_count |**int** |**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.<br /><br /> Nombre de threads de travail parallèles réservés s’il s’agit d’une requête parallèle.  |  
-|external_script_request_id |**uniqueidentifier** |**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et versions ultérieures.<br /><br /> ID de demande de script externe associé à la requête actuelle. |  
-|is_resumable |**bit** |**S’applique à** : [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)] et versions ultérieures.<br /><br /> Indique si la demande est une opération d’index pouvant être reprise. |  
-|page_resource |**Binary(8** |**S’applique à** : [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]<br /><br /> Représentation hexadécimale sur 8 octets de la ressource de page si la `wait_resource` colonne contient une page. Pour plus d’informations, consultez [sys.fn_PageResCracker](../../relational-databases/system-functions/sys-fn-pagerescracker-transact-sql.md). |  
+|dop |**int** |**S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures.<br /><br /> Degré de parallélisme de la requête. |  
+|parallel_worker_count |**int** |**S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures.<br /><br /> Nombre de threads de travail parallèles réservés s’il s’agit d’une requête parallèle.  |  
+|external_script_request_id |**uniqueidentifier** |**S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures.<br /><br /> ID de demande de script externe associé à la requête actuelle. |  
+|is_resumable |**bit** |**S’applique à** : [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)] et versions ultérieures.<br /><br /> Indique si la demande est une opération d’index pouvant être reprise. |  
+|page_resource |**Binary(8** |**S’applique à** : [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]<br /><br /> Représentation hexadécimale sur 8 octets de la ressource de page si la `wait_resource` colonne contient une page. Pour plus d’informations, consultez [sys.fn_PageResCracker](../../relational-databases/system-functions/sys-fn-pagerescracker-transact-sql.md). |  
 |page_server_reads|**bigint**|**S’applique à**: Azure SQL Database hyperscale<br /><br /> Nombre de lectures du serveur de pages effectuées par cette demande. N'accepte pas la valeur NULL.|  
 | &nbsp; | &nbsp; | &nbsp; |
 

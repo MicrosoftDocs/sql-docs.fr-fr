@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: a6150940-4d1c-4bff-a8f9-eda667fc45eb
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 0144663029fb4e2a000eda590c85ee97d349dab6
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 43890e5162643781079c8c9bd3e4c2d4cd093b94
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86917948"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352786"
 ---
 # <a name="xquery-expressions"></a>Expressions XQuery
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]

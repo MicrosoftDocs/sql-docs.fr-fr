@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: d694a105-69b1-4ff6-99d3-1f408b916b81
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 48d78cffb116996848035e3675e707994226f080
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cad316eb2c1bd4925e72839ede2e29bccb825118
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461821"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351897"
 ---
 # <a name="create-an-index-master-data-services"></a>Créer un index (Master Data Services)
 
@@ -47,7 +47,7 @@ ms.locfileid: "88461821"
   
 7.  Cliquez sur les attributs dans la zone **Attributs disponibles** , puis sur la flèche **Ajouter** . Pour ajouter tous les attributs, cliquez sur la flèche **Ajouter tout** .  
   
-8.  Cliquez sur **Enregistrer**.  
+8.  Cliquez sur **Save**.  
   
  Pour chaque index créé, une ligne avec quatre colonnes est ajoutée dans la grille. Le tableau suivant décrit ces colonnes.  
   

@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: b2f6cc27-dbc9-4f3f-961e-e81e76375248
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: c966c12bb8245571dcbfac0984d0434282e82c57
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c0e7c6f05ce075571a78e6b16abd8c3f40ccfd75
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88495014"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338197"
 ---
 # <a name="make-an-attribute-group-visible-to-users-master-data-services"></a>Rendre un groupe d'attributs visible pour les utilisateurs (Master Data Services)
 

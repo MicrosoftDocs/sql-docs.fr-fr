@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 98562d0e-d0e0-4f62-b001-90acbac67277
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 56dd5919565d1cbb7d0b95ae4476aef9140cecd0
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 0cc1fe3f4f36191a04973c759474f55a8356abda
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85773708"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349333"
 ---
 # <a name="constructor-functions-xquery"></a>Fonctions constructeur (XQuery)
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -44,8 +44,8 @@ TYP($atomicvalue as xdt:anyAtomicType?
  *TYP*  
  Tout type XSD intégré.  
   
-## <a name="remarks"></a>Remarques  
- Les constructeurs sont pris en charge pour les types XSD de base et dérivés. Toutefois, les sous-types de **XS : Duration**, notamment **xdt : yearMonthDuration et xdt : dayTimeDuration**et **XS : QName**, **XS : NMTOKEN**et **XS : notation** , ne sont pas pris en charge. Les types atomiques définis par l'utilisateur présents dans les collections de schémas associées sont également disponibles, sous réserve qu'ils soient directement ou indirectement dérivés des types ci-après.  
+## <a name="remarks"></a>Notes  
+ Les constructeurs sont pris en charge pour les types XSD de base et dérivés. Toutefois, les sous-types de **XS : Duration**, notamment **xdt : yearMonthDuration et xdt : dayTimeDuration** et **XS : QName**, **XS : NMTOKEN** et **XS : notation** , ne sont pas pris en charge. Les types atomiques définis par l'utilisateur présents dans les collections de schémas associées sont également disponibles, sous réserve qu'ils soient directement ou indirectement dérivés des types ci-après.  
   
 #### <a name="supported-base-types"></a>Types de base pris en charge  
  Les types de base pris en charge sont les suivants :  
@@ -138,7 +138,7 @@ TYP($atomicvalue as xdt:anyAtomicType?
 ## <a name="examples"></a>Exemples  
  Cette rubrique fournit des exemples de XQuery relatifs à des instances XML stockées dans différentes colonnes de type **XML** dans la base de données AdventureWorks.  
   
-### <a name="a-using-the-datetime-xquery-function-to-retrieve-older-product-descriptions"></a>A. Utilisation de la fonction XQuery dateTime() pour extraire les anciennes descriptions de produits  
+### <a name="a-using-the-datetime-xquery-function-to-retrieve-older-product-descriptions"></a>R. Utilisation de la fonction XQuery dateTime() pour extraire les anciennes descriptions de produits  
  Dans cet exemple, un exemple de document XML est d’abord affecté à une variable de type **XML** . Ce document contient trois exemples de <`ProductDescription`> éléments, chacun d’eux contenant un `DateCreated` élément enfant <>.  
   
  La variable est ensuite interrogée afin que ne soient extraites que les descriptions de produits créées avant une date spécifique. À des fins de comparaison, la requête utilise la fonction constructeur **XS : DateTime ()** pour taper les dates.  

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: b3e15a4a-98f8-4dbb-b847-bbcb20327051
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 0946739b0b0aaefd1e0d6a682f0228dfa98529c9
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 1c6d70bba220624cd43ca1ced80cbe89ba936460
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "80216983"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100061944"
 ---
 # <a name="creating-a-custom-report-item-run-time-component"></a>Création d'un composant d'exécution d'élément de rapport personnalisé
   Le composant d’exécution d’élément de rapport personnalisé est implémenté en tant que composant [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] à l’aide de tout langage Conforme CLS et est appelé par le processeur de rapports au moment de l’exécution. Les propriétés du composant d'exécution sont définies dans l'environnement de conception en modifiant le composant de conception d'élément de rapport personnalisé y correspondant.  

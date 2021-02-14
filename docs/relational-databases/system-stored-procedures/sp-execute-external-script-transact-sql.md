@@ -21,12 +21,12 @@ ms.assetid: de4e1fcd-0e1a-4af3-97ee-d1becc7f04df
 author: dphansen
 ms.author: davidph
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: ef90d43021349b0327ff96ebdec85b6a8483e43c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: f7c407416b8181864e7cc2fecdc4c95f97ab03cc
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99188001"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100355250"
 ---
 # <a name="sp_execute_external_script-transact-sql"></a>sp_execute_external_script (Transact-SQL)
 [!INCLUDE [SQL Server 2016 SQL MI](../../includes/applies-to-version/sqlserver2016-asdbmi.md)]
@@ -63,7 +63,7 @@ Pour Machine Learning Services, [python](../../machine-learning/concepts/extensi
 Pour exécuter **sp_execute_external_script**, vous devez d’abord activer machine learning services. Pour plus d’informations, consultez la [machine learning services dans la documentation Azure SQL Managed instance](/azure/azure-sql/managed-instance/machine-learning-services-overview).
 ::: moniker-end
 
-![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
 
 ::: moniker range=">=sql-server-ver15||>=sql-server-linux-ver15||=azuresqldb-mi-current"
 ## <a name="syntax"></a>Syntaxe

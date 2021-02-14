@@ -11,12 +11,12 @@ ms.assetid: 84abdd92-682c-404b-879d-7879bdf5b468
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: f6b00e473822a9f326dc28151feedbe8e26d3c8a
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 2fe693935fdb3d1e4ed7d7a2fa010531762e4db7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596783"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100075154"
 ---
 # <a name="sql-server-migration-assistant-for-oracle-oracletosql"></a>Assistant Migration SQL Server pour Oracle (OracleToSQL)
 [!INCLUDE[msCoName](../../includes/msconame_md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Assistant Migration (SSMA) pour Oracle est un outil qui permet de migrer des bases de données Oracle vers [!INCLUDE[msCoName](../../includes/msconame_md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 2012, [!INCLUDE[msCoName](../../includes/msconame_md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 2014, [!INCLUDE[msCoName](../../includes/msconame_md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 2016, [!INCLUDE[msCoName](../../includes/msconame_md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 2017 sur Windows et Linux, [!INCLUDE[msCoName](../../includes/msconame_md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 2019 sur Windows et Linux, et Azure SQL Database. SSMA pour Oracle convertit les objets de base de données Oracle en [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] objets de base de données, crée ces objets dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , puis migre les données d’Oracle vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
