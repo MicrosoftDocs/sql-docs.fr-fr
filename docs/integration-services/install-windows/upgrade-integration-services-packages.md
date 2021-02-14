@@ -15,12 +15,12 @@ ms.assetid: 68dbdf81-032c-4a73-99f6-41420e053980
 author: MikeRayMSFT
 ms.author: mikeray
 manager: erikre
-ms.openlocfilehash: 7353d02985194024c24319df5c6eca1100607d29
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 35b7d58a37e5f343380af6ef26e1f8e9bdb11102
+ms.sourcegitcommit: 868c60aa3a76569faedd9b53187e6b3be4997cc9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195869"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99835858"
 ---
 # <a name="upgrade-integration-services-packages"></a>Mettre à niveau des packages Integration Services
 
@@ -48,7 +48,7 @@ ms.locfileid: "92195869"
 ## <a name="custom-applications-and-custom-components"></a>Applications et composants personnalisés  
  [!INCLUDE[ssISversion2005](../../includes/ssisversion2005-md.md)] ne fonctionnent pas avec la version actuelle de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)][!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)].  
   
- Vous pouvez utiliser la version actuelle des outils [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)][!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] pour exécuter et gérer des packages qui incluent des composants personnalisés [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)][!INCLUDE[ssIS](../../includes/ssis-md.md)] . Nous avons ajouté quatre règles de redirection de liaison aux fichiers suivants pour faciliter la redirection des assemblys du runtime de la version 10.0.0.0 ( [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)]), 11.0.0.0 ( [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]) ou 12.0.0.0 ( [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]) vers la version 13.0.0.0 ( [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]).  
+ Vous pouvez utiliser la version actuelle des outils [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)][!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] pour exécuter et gérer des packages qui incluent des composants personnalisés [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)][!INCLUDE[ssIS](../../includes/ssis-md.md)] . Nous avons ajouté quatre règles de redirection de liaison aux fichiers suivants pour faciliter la redirection des assemblys du runtime de la version 10.0.0.0 ( [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)]), 11.0.0.0 ( [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]) ou 12.0.0.0 ( [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]) vers la version 15.0.0.0 ( [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)]).  
   
 -   DTExec.exe.config  
   
@@ -62,10 +62,10 @@ ms.locfileid: "92195869"
   
  Pour utiliser [!INCLUDE[ssBIDevStudio](../../includes/ssbidevstudio-md.md)] pour concevoir des packages incluant des composants personnalisés [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], vous devez modifier le fichier devenv.exe.config situé dans *\<drive>* :\Program Files\Microsoft Visual Studio 10.0\Common7\IDE.  
   
- Pour utiliser ces packages avec les applications clientes générées avec le runtime pour [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], incluez les règles de redirection dans la section de configuration du fichier *.exe .config de l'exécutable. Les règles redirigent les assemblys du runtime vers la version 13.0.0.0 ([!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]). Pour plus d’informations sur la redirection des versions d’assemblys, consultez [Élément \<assemblyBinding> pour \<runtime>](/dotnet/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime).  
+ Pour utiliser ces packages avec les applications clientes générées avec le runtime pour [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)], incluez les règles de redirection dans la section de configuration du fichier *.exe .config de l'exécutable. Les règles redirigent les assemblys du runtime vers la version 15.0.0.0 ([!INCLUDE[ssSQL19](../../includes/sssql19-md.md)]). Pour plus d’informations sur la redirection des versions d’assemblys, consultez [Élément \<assemblyBinding> pour \<runtime>](/dotnet/framework/configure-apps/file-schema/runtime/assemblybinding-element-for-runtime).  
   
 ### <a name="locating-the-assemblies"></a>Recherche d'assemblys  
- Dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], les assemblys [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] ont été mis à niveau vers le .NET 4.0. Il existe un Global Assembly Cache distinct pour .NET 4, situé dans *\<drive>* :\Windows\Microsoft.NET\assembly. Vous trouverez tous les assemblys [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] sous ce chemin d'accès, en général dans le dossier GAC_MSIL.  
+ Dans [!INCLUDE[ssSQL19](../../includes/sssql19-md.md)], les assemblys [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] ont été mis à niveau vers le .NET 4.0. Il existe un Global Assembly Cache distinct pour .NET 4, situé dans *\<drive>* :\Windows\Microsoft.NET\assembly. Vous trouverez tous les assemblys [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] sous ce chemin d'accès, en général dans le dossier GAC_MSIL.  
   
  Comme dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], les principaux fichiers .dll d’extensibilité [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] se trouvent également dans *\<drive>* :\Program files\Microsoft SQL Server\130\SDK\Assemblies.  
   

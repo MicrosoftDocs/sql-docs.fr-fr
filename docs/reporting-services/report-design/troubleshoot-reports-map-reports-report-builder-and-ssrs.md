@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: a690aec2-056b-40bc-8cab-c694bd2d6d62
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 6411d6f3810153614de0e60e9b20555e061836e3
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: a4580559356869ffb52d75241219e42c8511ba3e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641598"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081160"
 ---
 # <a name="troubleshoot-reports-map-reports-report-builder-and-ssrs"></a>Dépanner les rapports : Rapports cartographiques (Générateur de rapports et SSRS)
   Vous pouvez rencontrer des problèmes quand vous ajoutez une carte ou une couche à votre rapport paginé [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] , quand vous personnalisez une carte ou une couche existante de votre rapport, quand vous affichez l’aperçu d’une carte dans un rapport ou quand vous publiez un rapport contenant une carte. Utilisez cette rubrique pour vous aider à résoudre ces problèmes.  

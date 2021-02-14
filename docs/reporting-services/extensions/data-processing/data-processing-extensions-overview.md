@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 1d652605-9313-4c75-98b4-ba4dcbbb222d
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 5e9c3407060e22a2be8f74214cd1ba6a44c1487c
-ms.sourcegitcommit: 2f166e139f637d6edfb5731510d632a13205eb25
+ms.openlocfilehash: 61c30aa9214b87e9acf74dc12d71dd9e8e6d6fa5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "84529673"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100061174"
 ---
 # <a name="data-processing-extensions-overview"></a>Vue d'ensemble des extensions pour le traitement des données
   Les extensions pour le traitement des données dans [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] vous permettent de vous connecter à une source de données et de récupérer des données. Elles servent également de pont entre une source de données et un dataset Les extensions pour le traitement des données [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] sont basées sur un sous-ensemble des interfaces de fournisseur de données [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)].  

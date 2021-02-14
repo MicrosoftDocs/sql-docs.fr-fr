@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 0e59e2dc-1e4a-47c0-a5c3-ae7b5f5e469c
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: f36a775e1aebe1b22b18571475ddfaeb07fe1ada
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: dea94421878b6ae3e81c3c5b81825f6e47c5a711
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88418495"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100069954"
 ---
 # <a name="new-gui-features-in-ssma-for-mysql-mysqltosql"></a>Nouvelles fonctionnalités de l’interface graphique utilisateur de SSMA pour MySQL (MySQLToSQL)
 Ce chapitre décrit les nouvelles fonctionnalités de l’interface utilisateur SSMA  

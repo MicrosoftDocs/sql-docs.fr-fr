@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 41e18b20-526b-45d2-9bd9-e3b7d7fbce4e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 5e7ae12dd658b6b5affde321666d84b010771699
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: ea654a45894791fa22ecfa843c44cdd6214a5181
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86916123"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351058"
 ---
 # <a name="sequence-expressions-xquery"></a>Expressions de séquence (XQuery)
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]

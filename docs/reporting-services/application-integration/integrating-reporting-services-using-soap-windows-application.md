@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e4804792-20cd-4df2-9257-fb958ff447b4
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 78bdfb5335f00df64e1ae3a98a6a34aa26f71881
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: a91f7cd3a95b722db1c595767ed71900bc55af55
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "79198194"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100082558"
 ---
 # <a name="integrating-reporting-services-using-soap---windows-application"></a>Intégration de Reporting Services à l’aide de SOAP - Application Windows
   Vous pouvez accéder aux fonctionnalités complètes du serveur de rapports via l'API SOAP de Reporting Services. L'API SOAP est un service Web et, en tant que tel, est facilement accessible afin de fournir des fonctionnalités de création de rapports d'entreprise à vos applications de gestion personnalisées. Pour accéder au service Web dans une application Windows, il suffit d'écrire un code qui permet d'appeler le service. À l’aide du [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)], vous pouvez générer une classe proxy qui expose les propriétés et méthodes du service web et vous permet d’utiliser une infrastructure et des outils familiers pour générer des applications métier basées sur la technologie [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)].  

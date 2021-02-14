@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 2b3b8651-de51-46dc-af82-c86c45eac871
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 4a4881fc4710ba56439eb98b5b196af93247c11f
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 7457341a5489485973869e46c2ba721b86352217
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85768159"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345015"
 ---
 # <a name="functions-on-string-values---substring"></a>Fonctions sur les valeurs de chaîne : substring
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -50,7 +50,7 @@ fn:substring($sourceString as xs:string?,
  *$length*  
  [facultatif] Nombre de caractères à extraire. S’il n’est pas spécifié, elle retourne tous les caractères de l’emplacement spécifié dans *$startingLoc* jusqu’à la fin de la chaîne.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La version à trois arguments de la fonction retourne les caractères de `$sourceString` dont la position `$p` obéit à :  
   
  `fn:round($startingLoc) <= $p < fn:round($startingLoc) + fn:round($length)`  
@@ -62,7 +62,7 @@ fn:substring($sourceString as xs:string?,
  Si la valeur de *$sourceString* est la séquence vide, elle est gérée comme une chaîne de longueur nulle. Dans le cas contraire, si *$startingLoc* ou *$Length* est une séquence vide, la séquence vide est retournée.  
   
 ## <a name="supplementary-characters-surrogate-pairs"></a>Caractères supplémentaires (paires de substitution)  
- Le comportement de la paire de substitution dans des fonctions XQuery dépend du niveau de compatibilité de la base de données et, dans certains cas, de l'URI de l'espace de noms par défaut des fonctions. Pour plus d’informations, consultez la section « les fonctions XQuery prennent en charge les substitutions » dans la rubrique [modifications avec rupture des fonctionnalités de moteur de base de données dans SQL Server 2016](../database-engine/breaking-changes-to-database-engine-features-in-sql-server-2016.md). Consultez également [niveau de compatibilité ALTER database &#40;&#41;Transact-SQL](../t-sql/statements/alter-database-transact-sql-compatibility-level.md) et la [prise en charge d’Unicode et du classement](../relational-databases/collations/collation-and-unicode-support.md).  
+ Le comportement de la paire de substitution dans des fonctions XQuery dépend du niveau de compatibilité de la base de données et, dans certains cas, de l'URI de l'espace de noms par défaut des fonctions. Pour plus d’informations, consultez la section « les fonctions XQuery prennent en charge les substitutions » dans la rubrique [modifications avec rupture des fonctionnalités de moteur de base de données dans SQL Server 2016](../database-engine/breaking-changes-to-database-engine-features-in-sql-server-2016.md). Consultez également [niveau de compatibilité ALTER database &#40;&#41;Transact-SQL ](../t-sql/statements/alter-database-transact-sql-compatibility-level.md) et la [prise en charge d’Unicode et du classement](../relational-databases/collations/collation-and-unicode-support.md).  
   
 ## <a name="implementation-limitations"></a>Limites de mise en œuvre  
  SQL Server nécessite que les paramètres *$startingLoc* et *$Length* soient de type xs : decimal au lieu de XS : double.  
@@ -72,7 +72,7 @@ fn:substring($sourceString as xs:string?,
 ## <a name="examples"></a>Exemples  
  Cette rubrique fournit des exemples de XQuery relatifs à des instances XML stockées dans différentes colonnes de type **XML** dans la [!INCLUDE[ssSampleDBobject](../includes/sssampledbobject-md.md)] base de données.  
   
-### <a name="a-using-the-substring-xquery-function-to-retrieve-partial-summary-product-model-descriptions"></a>A. Utilisation de la fonction XQuery substring() pour extraire une synthèse partielle des descriptions de modèles de produits.  
+### <a name="a-using-the-substring-xquery-function-to-retrieve-partial-summary-product-model-descriptions"></a>R. Utilisation de la fonction XQuery substring() pour extraire une synthèse partielle des descriptions de modèles de produits.  
  La requête récupère les 50 premiers caractères du texte qui décrivent le modèle de produit, le <`Summary`> élément dans le document.  
   
 ```  

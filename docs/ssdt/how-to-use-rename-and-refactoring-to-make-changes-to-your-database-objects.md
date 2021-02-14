@@ -16,12 +16,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 8ca1ef866a86f71eaa1b5f7dfa94821c94da5588
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 8fd846301467dbbcbf08aa6bf4a02e52fb467c4b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85895836"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018019"
 ---
 # <a name="how-to-use-rename-and-refactoring-to-make-changes-to-your-database-objects"></a>Procédure : Utiliser Renommer et Refactorisation pour apporter des modifications à vos objets de base de données
 

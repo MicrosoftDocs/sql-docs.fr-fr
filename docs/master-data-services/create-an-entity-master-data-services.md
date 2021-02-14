@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: d9a6a51e-7b53-4785-a118-3baeb7ca2d48
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 8618b0dfc4488f3862366ac873e8cd38e1086e51
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 8d47a78e4a7e706e91312ee2eb4686121c2b2532
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85813365"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341433"
 ---
 # <a name="create-an-entity-master-data-services"></a>Créer une entité (Master Data Services)
 
@@ -65,7 +65,7 @@ ms.locfileid: "85813365"
   
 9. facultatif. Cochez la case **Activer la compression des données** . La compression de ligne est activée par défaut. Pour plus d’informations, voir [Data Compression](../relational-databases/data-compression/data-compression.md).  
   
-10. Cliquez sur **Enregistrer**.  
+10. Cliquez sur **Save**.  
   
 ## <a name="grid-columns"></a>Colonnes de la grille  
  Pour chaque entité créée, une ligne comportant treize colonnes est ajoutée à la grille. Les différentes colonnes sont décrites ci-après.  

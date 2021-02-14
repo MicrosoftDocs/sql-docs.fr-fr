@@ -11,12 +11,12 @@ ms.topic: reference
 ms.assetid: 8bdab026-a0c0-41f3-9d36-f3919c23247f
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 33eeff1c3bd33ee193a283c26225418a7ca54a25
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 2df08cca57a68d38c72f19921243ae95ff394c23
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92196786"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350091"
 ---
 # <a name="create-master-data-manager-web-service-proxy-classes"></a>Créer des classes proxy de service Web Master Data Manager
 
@@ -32,7 +32,7 @@ ms.locfileid: "92196786"
 2.  Recherchez la section **mdsWsHttpBehavior** sous **\<serviceBehaviors>** . Pour l' **\<serviceMetadata>** élément, affectez à **httpGetEnabled** la **valeur true**.  
   
     > [!NOTE]  
-    >  Si vous souhaitez activer des services Web sur TLS (Transport Layer Security), précédemment appelé protocole SSL (SSL), définissez **HttpsGetEnabled** sur **true** dans la section **mdsWsHttpBehavior** du fichier web.config. Vous devez également modifier **mdsWsHTTPBinding** afin qu’il soit configuré pour TLS, et commenter la section non-TLS.  
+    >  Si vous souhaitez activer des services Web sur TLS (Transport Layer Security), précédemment appelé SSL (Secure Sockets Layer) (SSL), définissez **HttpsGetEnabled** sur **true** dans la section **mdsWsHttpBehavior** du fichier web.config. Vous devez également modifier **mdsWsHTTPBinding** afin qu’il soit configuré pour TLS, et commenter la section non-TLS.  
   
 3.  Enregistrez les modifications apportées au fichier.  
   

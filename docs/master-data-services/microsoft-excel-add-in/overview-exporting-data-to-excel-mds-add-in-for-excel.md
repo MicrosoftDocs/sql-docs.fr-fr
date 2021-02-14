@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: b628548b-982b-4e45-abf4-c8e83e3ab1c2
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 14ebf23101358677f0c9f0afdf4ed069199614ec
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: ab060952626699683379dbbbca848f3af36c68e1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "92257625"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348868"
 ---
 # <a name="overview-exporting-data-to-excel-mds-add-in-for-excel"></a>Présentation : Exportation de données vers Excel (Complément MDS pour Excel)
 

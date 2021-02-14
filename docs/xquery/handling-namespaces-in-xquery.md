@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 542b63da-4d3d-4ad5-acea-f577730688f1
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 6a6f5a6dbe1db85dc5f25e9d68fa94dcd245e5a4
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: acb1595ca2e7032d0363df3a1dd81740b7bcbf2d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85772921"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341879"
 ---
 # <a name="handling-namespaces-in-xquery"></a>Gestion des espaces de noms dans XQuery
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -148,7 +148,7 @@ where ProductModelID=19
   
 ## <a name="see-also"></a>Voir aussi  
  [Ajouter des espaces de noms aux requêtes avec WITH XMLNAMESPACES](../relational-databases/xml/add-namespaces-to-queries-with-with-xmlnamespaces.md)   
- [SQL Server de &#40;de données XML&#41;](../relational-databases/xml/xml-data-sql-server.md)   
+ [Données XML &#40;SQL Server&#41;](../relational-databases/xml/xml-data-sql-server.md)   
  [Références relatives au langage Xquery &#40;SQL Server&#41;](../xquery/xquery-language-reference-sql-server.md)  
   
   

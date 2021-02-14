@@ -21,12 +21,12 @@ author: WilliamDAssafMSFT
 ms.author: wiassaf
 ms.custom: seo-dt-2019
 monikerRange: = azuresqldb-current
-ms.openlocfilehash: 948a45e2f9d2dca95bca1c3afbaed419030f47df
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 9aaca2dee46593d637b11cde9b4e9e2a55664f6b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99210354"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350889"
 ---
 # <a name="sysdatabase_connection_stats-azure-sql-database"></a>sys.database_connection_stats (Azure SQL Database)
 
@@ -90,7 +90,7 @@ start_time                    end_time
 
  Les utilisateurs autorisés à accéder à la base de données **Master** disposent d’un accès en lecture seule à cette vue.  
   
-## <a name="example"></a>Exemple
+## <a name="example"></a> Exemple
 
  L’exemple suivant montre une requête de **sys.database_connection_stats** pour retourner un résumé des connexions de base de données qui se sont produites entre midi sur 9/25/2011 et midi le 9/28/2011 (UTC). Par défaut, les résultats de la requête sont triés par **start_time** (ordre croissant).  
   

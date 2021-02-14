@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 31c3cf7d-17d4-4474-b6a7-ffcb9fc45b37
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 7774014827d27b27913bd54079f13ecb3c5bdd7c
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 9df096d687fbd0ea2730c328ee3a4d25b062967f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85812878"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340267"
 ---
 # <a name="overlapping-user-and-group-permissions-master-data-services"></a>Chevauchement des autorisations d'accès (Master Data Services)
 

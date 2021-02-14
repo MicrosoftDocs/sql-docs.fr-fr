@@ -16,12 +16,12 @@ author: MikeRayMSFT
 ms.author: mikeray
 ms.custom: ''
 ms.date: 11/10/2020
-ms.openlocfilehash: 30205befcdd9da78f4f9a3f002ddd398f49abc55
-ms.sourcegitcommit: d681796e8c012eca2d9629d3b816749e9f50f868
+ms.openlocfilehash: 31b0dedb8544cc6752eac8a9934aa92d74d424ee
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98005384"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081870"
 ---
 # <a name="sp_data_source_table_columns-transact-sql"></a>sp_data_source_table_columns (Transact-SQL)
 
@@ -32,7 +32,7 @@ Retourne la liste des colonnes dans la table de source de données externe.
 > [!NOTE]
 > Cette procédure est présentée dans [SQL 2019 CU5](../../big-data-cluster/release-notes-big-data-cluster.md#cu5).
 
-![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -51,13 +51,13 @@ Nom de la source de données externe à partir de laquelle récupérer les méta
 `[ @table_location = ] 'table_location'`   
 Chaîne d’emplacement de table qui identifie la table. `table_location` le type est `nvarchar(max)` .
 
-## <a name="returns"></a>Retours
+## <a name="returns"></a>retourne :
 
 La procédure stockée retourne les informations suivantes :
 
 |Nom de la colonne |Type de données |Description|
 |---|---|---|
-|NAME|nvarchar(max)|Nom de la colonne.
+|NOM|nvarchar(max)|Nom de la colonne.
 |TYPE|nvarchar(200)|Nom du type de SQL Server
 |LENGTH|int|Longueur de la colonne
 |PRECISION|int|Précision de la colonne
@@ -71,7 +71,7 @@ La procédure stockée retourne les informations suivantes :
 
 Exige l’autorisation ALTER ANY EXTERNAL DATA SOURCE.
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
 
 La fonctionnalité  [Polybase](../../relational-databases/polybase/polybase-guide.md) doit être installée sur l’instance SQL Server.
 
@@ -101,7 +101,7 @@ DECLARE @table_location NVARCHAR(400) = N'[database].[schema].[table]';
 EXEC sp_data_source_table_columns @data_source, @table_location
 ```  
   
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir également
 
 - [Prise en main de PolyBase](../polybase/polybase-guide.md)
 - [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)

@@ -22,12 +22,12 @@ ms.assetid: ced484ae-7c17-4613-a3f9-6d8aba65a110
 author: jovanpop-msft
 ms.author: jovanpop
 monikerRange: =azuresqldb-current||>=sql-server-2017||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: b9037aaefe27cd50deb9b61af423a8074ab86f65
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 332e035a12de891bde8324a55f08a2baf59a9edc
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99204804"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100343046"
 ---
 # <a name="sysdm_db_tuning_recommendations-transact-sql"></a>\_recommandations pour \_ le paramétrage de sys.DM DB \_ (Transact-SQL)
 [!INCLUDE[sqlserver2017-asdb](../../includes/applies-to-version/sqlserver2017-asdb.md)]
@@ -85,6 +85,8 @@ Document JSON dans `state` la colonne contient la raison qui décrit la raison p
 | `VerificationForcedQueryRecompile`| La requête est recompilée, car il n’y a pas d’amélioration significative des performances. |
 | `PlanForcedByUser`| L’utilisateur a forcé manuellement le plan à l’aide de [sp_query_store_force_plan &#40;procédure&#41;Transact-SQL ](../../relational-databases/system-stored-procedures/sp-query-store-force-plan-transact-sql.md) . Le moteur de base de données n’applique pas la recommandation si l’utilisateur a décidé explicitement de forcer un plan. |
 | `PlanUnforcedByUser` | L’utilisateur n’a pas forcé manuellement le plan à l’aide de [sp_query_store_unforce_plan &#40;procédure&#41;Transact-SQL ](../../relational-databases/system-stored-procedures/sp-query-store-unforce-plan-transact-sql.md) . Étant donné que l’utilisateur a explicitement rétabli le plan recommandé, le moteur de base de données continue d’utiliser le plan actuel et génère une nouvelle recommandation si une régression de plan se produit à l’avenir. |
+| `UserForcedDifferentPlan` | L’utilisateur a forcé manuellement un plan différent à l’aide de [sp_query_store_force_plan &#40;procédure&#41;Transact-SQL ](../../relational-databases/system-stored-procedures/sp-query-store-force-plan-transact-sql.md) . Le moteur de base de données n’applique pas la recommandation si l’utilisateur a décidé explicitement de forcer un plan. |
+| `TempTableChanged` | Une table temporaire qui a été utilisée dans le plan a été modifiée. |
 
  Les statistiques de la colonne Détails n’affichent pas les statistiques du plan d’exécution (par exemple, le temps processeur actuel). Les détails de la recommandation sont pris au moment de la détection de la régression et décrivent pourquoi une [!INCLUDE[ssde_md](../../includes/ssde_md.md)] régression des performances a été identifiée. Utilisez `regressedPlanId` et `recommendedPlanId` pour interroger [magasin des requêtes affichages catalogue](../../relational-databases/performance/how-query-store-collects-data.md) afin de rechercher des statistiques de plan d’exécution exactes.
 

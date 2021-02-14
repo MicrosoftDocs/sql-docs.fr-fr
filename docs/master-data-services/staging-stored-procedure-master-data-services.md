@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 6a613106-9f87-4caf-a23a-a726fc6561c5
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 20d82b7a57f6a7779a12d0ae9c8b9963fdba238b
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: f232be6d9e1107d579f14065a959acebd969681b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85812865"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336254"
 ---
 # <a name="staging-stored-procedure-master-data-services"></a>Procédure stockée de mise en lots (Master Data Services)
 
@@ -24,11 +24,11 @@ ms.locfileid: "85812865"
 
   Lors de l’initialisation du processus de site à partir de [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)], vous devez utiliser l’une des trois procédures stockées.  
   
--   STG. udp_ \<name> _Leaf  
+-   stg.udp_ \<name> _Leaf  
   
--   STG. udp_ \<name> _Consolidated  
+-   stg.udp_ \<name> _Consolidated  
   
--   STG. udp_ \<name> _Relationship  
+-   stg.udp_ \<name> _Relationship  
   
  Où nom indique le nom de la table de mise en lots spécifié lors de la création de l'entité.  
   

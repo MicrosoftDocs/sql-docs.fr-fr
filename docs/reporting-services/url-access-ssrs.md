@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 52c3f2a3-3d6d-4fee-9c46-83f366919398
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: df897731d0172a2d496446e3ee6a12d6320a0d0b
-ms.sourcegitcommit: fe59f8dc27fd633f5dfce54519d6f5dcea577f56
+ms.openlocfilehash: 54c41a9b4a735d5136cf86e805836305b2031bb7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91934743"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100078900"
 ---
 # <a name="url-access-ssrs"></a>Accès URL (SSRS)
   L'accès URL du serveur de rapports dans SQL Server Reporting Services (SSRS) vous permet d'envoyer des commandes à un serveur de rapports par la biais d'une demande d'URL. Par exemple, vous pouvez personnaliser le rendu d'un rapport sur un serveur de rapports en mode natif ou dans une bibliothèque SharePoint. Vous avez peut-être affiché le rapport à l'aide d'un ensemble de valeurs de paramètre de rapport, ou vous avez peut-être consulté une page spécifique digne d'intérêt dans le rapport. Vous pouvez encapsuler ces informations dans l'URL à l'aide de paramètres d'accès URL prédéfinis. Vous pouvez personnaliser davantage la façon dont le serveur de rapports traite le rapport en incorporant des paramètres pour les formats de rendu ou pour l'apparence de la visionneuse de rapports. Vous pouvez ensuite coller cette URL directement dans un courrier électronique ou une page Web pour permettre à d'autres utilisateurs d'accéder à votre rapport de la même manière dans le navigateur.  

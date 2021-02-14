@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: ffe27a4c-fdf3-4c66-94f1-7e955a36cadd
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: aaad5923695e6cb8e98e2c7f40fa2bb9a044a7ce
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 578d10bc078edf886eb7980c3b7a099c99ef59a5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86915545"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338540"
 ---
 # <a name="path-expressions---specifying-node-test"></a>Expressions de chemin : spécification d’un test de nœud
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]
@@ -93,7 +93,7 @@ select @x.query('declare namespace ns="ns1"; /ns:*')
 ## <a name="node-type-as-node-test"></a>Type de nœud comme test de nœud  
  Pour interroger des types de nœuds autres que des nœuds éléments, lancez un test de type de nœud. Le tableau suivant répertorie les quatre tests de type de nœud disponibles.  
   
-|Type de nœud|Retours|Exemple|  
+|Type de nœud|Retours| Exemple|  
 |---------------|-------------|-------------|  
 |`comment()`|Vrai (valeur True) dans le cas d'un nœud de commentaire.|`following::comment()` sélectionne tous les nœuds de commentaire apparaissant après le nœud de contexte.|  
 |`node()`|Vrai (valeur True) dans le cas d'un nœud de type quelconque.|`preceding::node()` sélectionne tous les nœuds apparaissant avant le nœud de contexte.|  
@@ -111,7 +111,7 @@ child::comment()
 ## <a name="examples"></a>Exemples  
  Les exemples suivants comparent nom de nœud et type de nœud.  
   
-### <a name="a-results-of-specifying-the-node-name-and-the-node-type-as-node-tests-in-a-path-expression"></a>A. Résultats de la spécification du nom de nœud et du type de nœud en tant que tests de nœuds dans une expression de chemin d'accès  
+### <a name="a-results-of-specifying-the-node-name-and-the-node-type-as-node-tests-in-a-path-expression"></a>R. Résultats de la spécification du nom de nœud et du type de nœud en tant que tests de nœuds dans une expression de chemin d'accès  
  Dans l’exemple suivant, un document XML simple est assigné à une variable de type **XML** . Le document est interrogé à l'aide de plusieurs expressions de chemin d'accès. Les résultats sont ensuite comparés.  
   
 ```  

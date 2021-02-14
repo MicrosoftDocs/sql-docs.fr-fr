@@ -1,7 +1,7 @@
 ---
 description: Gérer la récupération de base de données accélérée
 title: Gérer la récupération de base de données accélérée | Microsoft Docs
-ms.date: 08/12/2019
+ms.date: 02/02/2021
 ms.prod: sql
 ms.prod_service: backup-restore
 ms.technology: backup-restore
@@ -13,12 +13,12 @@ author: mashamsft
 ms.author: mathoma
 ms.reviewer: kfarlee
 monikerRange: '>=sql-server-ver15'
-ms.openlocfilehash: cfd5a901f38dacf9e17baff4d65363796ab3cd73
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: ca11bbae7f1bcc86c0891cc22d8a7a02b26fd46e
+ms.sourcegitcommit: fa63019cbde76dd981b0c5a97c8e4d57e8d5ca4e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99236110"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99495777"
 ---
 # <a name="manage-accelerated-database-recovery"></a>Gérer la récupération de base de données accélérée
 
@@ -118,7 +118,30 @@ Un magasin de versions persistantes est considéré comme grand s’il est signi
 
    Les transactions actives empêchent le nettoyage du magasin de versions persistantes.
 
-1. Si la base de données fait partie d’un groupe de disponibilité, vérifiez la `secondary_low_water_mark`. C’est la même chose que la `low_water_mark_for_ghosts` indiquée par `sys.dm_hadr_database_replica_states`. Interrogez `sys.dm_hadr_database_replica_states` pour voir si un des réplicas contient cette valeur, car ceci empêchera également le nettoyage du magasin de versions persistantes.
-1. Vérifiez `min_transaction_timestamp` (ou `online_index_min_transaction_timestamp` si le magasin de versions persistantes en ligne est en attente) et, sur cette base, vérifiez `sys.dm_tran_active_snapshot_database_transactions` pour la colonne `transaction_sequence_num` pour trouver la session qui a l’ancienne transaction d’instantané bloquant le nettoyage du magasin de versions persistantes.
-1. Si aucun des éléments ci-dessus ne s’applique, cela signifie que le nettoyage est bloqué par des transactions abandonnées. Recherchez l’heure la plus récente de `aborted_version_cleaner_last_start_time` et de `aborted_version_cleaner_last_end_time` pour voir si le nettoyage des transactions abandonnées est terminé. `oldest_aborted_transaction_id` doit passer plus haut après la fin du nettoyage des transactions abandonnées.
-1. Si la transaction abandonnée n’a pas été effectuée avec succès récemment, recherchez dans le journal des erreurs des messages indiquant des problèmes concernant `VersionCleaner`.
+2. Si la base de données fait partie d’un groupe de disponibilité, vérifiez la `secondary_low_water_mark`. C’est la même chose que la `low_water_mark_for_ghosts` indiquée par `sys.dm_hadr_database_replica_states`. Interrogez `sys.dm_hadr_database_replica_states` pour voir si un des réplicas contient cette valeur, car ceci empêchera également le nettoyage du magasin de versions persistantes.
+3. Vérifiez `min_transaction_timestamp` (ou `online_index_min_transaction_timestamp` si le magasin de versions persistantes en ligne est en attente) et, sur cette base, vérifiez `sys.dm_tran_active_snapshot_database_transactions` pour la colonne `transaction_sequence_num` pour trouver la session qui a l’ancienne transaction d’instantané bloquant le nettoyage du magasin de versions persistantes.
+4. Si aucun des éléments ci-dessus ne s’applique, cela signifie que le nettoyage est bloqué par des transactions abandonnées. Recherchez l’heure la plus récente de `aborted_version_cleaner_last_start_time` et de `aborted_version_cleaner_last_end_time` pour voir si le nettoyage des transactions abandonnées est terminé. `oldest_aborted_transaction_id` doit passer plus haut après la fin du nettoyage des transactions abandonnées.
+5. Si la transaction abandonnée n’a pas été effectuée avec succès récemment, recherchez dans le journal des erreurs des messages indiquant des problèmes concernant `VersionCleaner`.
+
+Utilisez l’exemple de requête ci-dessous comme aide pour la résolution des problèmes :
+
+```sql
+SELECT pvss.persistent_version_store_size_kb / 1024. / 1024 AS persistent_version_store_size_gb,
+       pvss.online_index_version_store_size_kb / 1024. / 1024 AS online_index_version_store_size_gb,
+       pvss.current_aborted_transaction_count,
+       pvss.aborted_version_cleaner_start_time,
+       pvss.aborted_version_cleaner_end_time,
+       dt.database_transaction_begin_time AS oldest_transaction_begin_time,
+       asdt.session_id AS active_transaction_session_id,
+       asdt.elapsed_time_seconds AS active_transaction_elapsed_time_seconds
+FROM sys.dm_tran_persistent_version_store_stats AS pvss
+LEFT JOIN sys.dm_tran_database_transactions AS dt
+ON pvss.oldest_active_transaction_id = dt.transaction_id
+   AND
+   pvss.database_id = dt.database_id
+LEFT JOIN sys.dm_tran_active_snapshot_database_transactions AS asdt
+ON pvss.min_transaction_timestamp = asdt.transaction_sequence_num
+   OR
+   pvss.online_index_min_transaction_timestamp = asdt.transaction_sequence_num
+WHERE pvss.database_id = DB_ID();
+```

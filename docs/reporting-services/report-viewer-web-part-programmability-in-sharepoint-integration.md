@@ -9,12 +9,12 @@ ms.topic: reference
 ms.assetid: 714017b7-1bd6-4950-a3c6-d0df8450a877
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: ee3b85d50225a8c3b7b74e111a152128e4af0d4a
-ms.sourcegitcommit: 216f377451e53874718ae1645a2611cdb198808a
+ms.openlocfilehash: d7054e2af081bd76505f3adebbae4cc7541f8a44
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87245716"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100023273"
 ---
 # <a name="report-viewer-web-part-programmability-in-sharepoint-integration"></a>Programmabilité du composant WebPart Visionneuse de rapports dans l'intégration SharePoint
   Le composant WebPart Visionneuse de rapports est un contrôle serveur qui contient un ensemble d’interfaces de programmation d’applications (API) publiques permettant aux développeurs de créer des applications SharePoint personnalisées. Vous pouvez créer des composants WebPart personnalisés qui fournissent les paramètres et le chemin du rapport au composant WebPart Visionneuse de rapports à l’aide de connexions de composants WebPart. Vous pouvez également incorporer le composant WebPart dans une page WebPart SharePoint personnalisée et le personnaliser en utilisant l'API publique.  

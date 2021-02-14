@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: b3880eed-1bf6-4f65-ab23-b08c194cc858
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: e80ec1e7ffaa4f3bbce87363de109aa85132f74d
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 58c354eae5dadcc34d160b756e936dd82c3844e6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92194039"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347740"
 ---
 # <a name="hierarchy-member-permissions-master-data-services"></a>Autorisations des membres de la hiérarchie (Master Data Services)
 
@@ -57,11 +57,11 @@ ms.locfileid: "92194039"
 ### <a name="when-a-member-belongs-to-multiple-hierarchies"></a>Lorsqu'un membre appartient à plusieurs hiérarchies  
  Plusieurs hiérarchies peuvent contenir le même membre.  
   
--   Si l’autorisation **Mettre à jour** est affectée à un nœud de hiérarchie et que l’autorisation **Lire**est affectée à un autre nœud, les membres du nœud disposent de l’autorisation **Lire**.  
+-   Si l’autorisation **Mettre à jour** est affectée à un nœud de hiérarchie et que l’autorisation **Lire** est affectée à un autre nœud, les membres du nœud disposent de l’autorisation **Lire**.  
   
 -   Si les autorisations **Mettre à jour** et **Créer** sont affectées à un nœud de hiérarchie, et que les autorisations **Mettre à jour** et **Supprimer** sont attribuées à un autre nœud, les membres du nœud peuvent être mis à jour.  
   
--   Si un nœud de hiérarchie est affecté à n’importe quelle combinaison d’autorisations **Create** / **Read** / **Update Update** / **Delete** et qu’un autre nœud reçoit les autorisations **Deny** , l’accès aux membres du nœud est refusé.  
+-   Si un nœud de hiérarchie est affecté à n’importe quelle combinaison d’autorisations **Create** /  / **Update Update** / **Delete** et qu’un autre nœud reçoit les autorisations **Deny** , l’accès aux membres du nœud est refusé.  
   
 ## <a name="external-resources"></a>Ressources externes  
  Billet de blog, [Améliorations de sécurité](/archive/blogs/e7/improvements-to-autoplay), sur msdn.com.  

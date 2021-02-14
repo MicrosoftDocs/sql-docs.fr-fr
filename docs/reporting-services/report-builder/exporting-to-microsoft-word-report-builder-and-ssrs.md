@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: 0cd8ae26-4682-4473-8f15-af084951defd
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: afcafeeb554e60c84c3d5e5051db354721371416
-ms.sourcegitcommit: 205de8fa4845c491914902432791bddf11002945
+ms.openlocfilehash: e1a9fd855d1b0bc8defd0e4355f490a2824fead6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/23/2020
-ms.locfileid: "86972127"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100015259"
 ---
 # <a name="exporting-to-microsoft-word-report-builder-and-ssrs"></a>Exportation vers Microsoft Word (Générateur de rapports et SSRS)
 

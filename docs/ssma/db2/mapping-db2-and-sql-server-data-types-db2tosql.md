@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: e7e939a8-5e76-4509-beaf-5acd1cab505e
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 0579a5c477b9933b9937c1f003d3c7bbc056eae6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 32cf19b192fe67802ae44eaf9ce6e4ca891d02ae
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88497788"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100072363"
 ---
 # <a name="mapping-db2-and-sql-server-data-types-db2tosql"></a>Mappage des types de données DB2 et SQL Server (DB2ToSQL)
 Les types de base de données DB2 diffèrent des [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] types de base de données. Lorsque vous convertissez des objets de base de données DB2 en [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] objets, vous devez spécifier comment mapper les types de données de DB2 à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Vous pouvez accepter les mappages de type de données par défaut, ou vous pouvez personnaliser les mappages comme indiqué dans les sections suivantes.  

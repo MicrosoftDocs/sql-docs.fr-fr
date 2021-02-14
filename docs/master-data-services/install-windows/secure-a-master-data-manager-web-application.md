@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: e360ba3a-e96b-4f85-b588-ed1f767fa973
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 6740c3491ff9a10f611f3b1fe26cd5b3acc1788c
-ms.sourcegitcommit: dacd9b6f90e6772a778a3235fb69412662572d02
+ms.openlocfilehash: 5e941ce4f06961f19e0d5f4a0dc96aff31039647
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/11/2020
-ms.locfileid: "86279375"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344750"
 ---
 # <a name="secure-a-master-data-manager-web-application"></a>Sécuriser une application Web Master Data Manager
 
@@ -45,7 +45,7 @@ ms.locfileid: "86279375"
   
 3.  Dans le volet **Actions**, cliquez sur **Liaisons**.  
   
-4.  Cliquez sur **Ajouter**.  
+4.  Cliquez sur **Add**.  
   
 5.  Dans la liste, sélectionnez **https**.  
   

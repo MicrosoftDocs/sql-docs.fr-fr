@@ -9,12 +9,12 @@ ms.author: hanqin
 ms.reviewer: maghan
 ms.custom: ''
 ms.date: 10/14/2020
-ms.openlocfilehash: 4054917071578fb0b3ddcf5c22d5950075a2b0fe
-ms.sourcegitcommit: 985e2e8e494badeac6d6b652cd35765fd9c12d80
+ms.openlocfilehash: bccf25686c397266a4cee3c44819b08ee301569b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93328483"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100040125"
 ---
 # <a name="preview-features-in-azure-data-studio"></a>Fonctionnalités d’évaluation dans Azure Data Studio
 
@@ -32,7 +32,7 @@ Si vous êtes un nouvel utilisateur, vous pouvez vous abonner aux fonctionnalit�
 
 Vous pouvez activer ou désactiver les fonctionnalités d’évaluation à tout moment dans vos paramètres.
 
-1. Sélectionnez l’icône d’ **engrenage** dans le coin inférieur gauche, puis sélectionnez **Paramètres** dans le menu contextuel. L’onglet Paramètres s’ouvre.
+1. Sélectionnez l’icône d’**engrenage** dans le coin inférieur gauche, puis sélectionnez **Paramètres** dans le menu contextuel. L’onglet Paramètres s’ouvre.
 
    ![Icône d’engrenage pour accéder à Paramètres dans ADS](./media/settings/open-settings-menu.png)
 

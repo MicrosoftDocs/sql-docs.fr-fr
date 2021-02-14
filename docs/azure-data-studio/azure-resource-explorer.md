@@ -9,12 +9,12 @@ ms.author: yanacai
 ms.reviewer: alayu, maghan, sstein
 ms.custom: seodec18
 ms.date: 09/24/2018
-ms.openlocfilehash: 7107c1489521f733eb685887e6c1bcc543a2c147
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 5d28054e9f459bc3334a863e7ee5edb3bd98afea
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987850"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100048729"
 ---
 # <a name="explore-and-manage-azure-sql-resources-with-azure-resource-explorer"></a>Explorer et gérer les ressources Azure SQL avec Azure Resource Explorer
 

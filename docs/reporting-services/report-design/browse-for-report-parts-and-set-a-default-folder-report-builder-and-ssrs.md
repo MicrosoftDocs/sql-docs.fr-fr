@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 5cf38068-65d1-4fe8-81f3-a404d8fbc663
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 3959fdd6512afe12270b353393e4c72c651fc57a
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: fb998c464acaf6296ef4b0b188f33e5798c757a5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87939173"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100074808"
 ---
 # <a name="browse-for-report-parts-and-set-a-default-folder-report-builder-and-ssrs"></a>Rechercher des parties de rapports et définir un dossier par défaut (Générateur de rapports et SSRS)
 Pour créer un rapport paginé [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] , le plus simple est d’ajouter à votre rapport des parties de rapports existantes, telles que des tables et des graphiques, à partir de la bibliothèque de parties de rapports. Lorsque vous ajoutez une partie de rapport à votre rapport, vous ajoutez également tout ce qu'elle doit comporter pour fonctionner. Par exemple, toute partie de rapport qui affiche des données dépend d'un dataset, autrement dit, une requête et une connexion à une source de données. Après avoir ajouté la partie de rapport à votre rapport, vous pouvez la modifier comme vous le souhaitez.  
