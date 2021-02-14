@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: ec23d188-b890-49b8-9a88-446df96269e4
 author: F
 ms.author: alexiva
-ms.openlocfilehash: 3df3cd8297dbf4f6be480f183b8b0f3acdcb8fe6
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 70422b0fad55ec209f23c0f5bdfd971f5e64738a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88372725"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100081510"
 ---
 # <a name="creating-script-files-db2tosql"></a>Création de fichiers de script (DB2ToSQL)
 La première étape avant le lancement de l’application de console SSMA consiste à créer le fichier de script et, si nécessaire, à créer le fichier de valeur de variable et le fichier de connexion au serveur.  

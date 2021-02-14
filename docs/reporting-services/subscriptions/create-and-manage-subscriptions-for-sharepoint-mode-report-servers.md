@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 44be7ee2-33ce-46e4-9d1a-a20aaf43a227
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 289483df5c80b4524a281e62b4d63147b6f61bb0
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: bf68742926ef0f26c5a12a5d001ea9b14f9b199c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91986835"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100080091"
 ---
 # <a name="create-and-manage-subscriptions-for-sharepoint-mode-report-servers"></a>Créer et gérer des abonnements pour des serveurs de rapports en mode SharePoint
   Vous pouvez créer des abonnements [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] pour remettre les rapports à partir d’une application web SharePoint qui est intégrée à un serveur de rapports en mode SharePoint. Les abonnements peuvent remettre des rapports dans une bibliothèque de documents, un dossier de fichiers ou sous forme de courrier électronique. Cette rubrique résume les conditions requises et les étapes de création d’un abonnement [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] .  
@@ -61,7 +61,7 @@ ms.locfileid: "91986835"
   
  Vous ne pouvez pas renommer l'extension du nom de fichier d'un rapport exporté au format .rdl et l'exécuter dans le composant WebPart Visionneuse de rapports. Si vous souhaitez créer un abonnement qui propose un véritable rapport, utilisez l'extension de remise par messagerie du serveur de rapports et définissez les options appropriées afin d'inclure un lien vers le rapport.  
   
- Les paramètres de version de la bibliothèque qui contient le document remis déterminent si une nouvelle version du document est créée à chaque remise. Par défaut, les paramètres de version sont activés pour chaque bibliothèque. Sauf si vous avez choisi **Pas de version**spécifiquement, une nouvelle version principale du document est créée à la remise. Seules les versions principales du document sont créées ; les versions mineures ne sont jamais créées suite à une remise des abonnements, même si vous sélectionnez une option de version autorisant les versions mineures. Si vous limitez le nombre de versions principales retenues, les anciennes remises seront remplacées par des nouvelles une fois atteinte la limite maximale.  
+ Les paramètres de version de la bibliothèque qui contient le document remis déterminent si une nouvelle version du document est créée à chaque remise. Par défaut, les paramètres de version sont activés pour chaque bibliothèque. Sauf si vous avez choisi **Pas de version** spécifiquement, une nouvelle version principale du document est créée à la remise. Seules les versions principales du document sont créées ; les versions mineures ne sont jamais créées suite à une remise des abonnements, même si vous sélectionnez une option de version autorisant les versions mineures. Si vous limitez le nombre de versions principales retenues, les anciennes remises seront remplacées par des nouvelles une fois atteinte la limite maximale.  
   
  Les formats de sortie que vous sélectionnez pour un abonnement sont basés sur les extensions de rendu installées sur le serveur de rapports. Vous pouvez uniquement sélectionner les formats de sortie qui sont pris en charge par les extensions de rendu sur le serveur de rapports.  
   
@@ -105,7 +105,7 @@ ms.locfileid: "91986835"
   
 7.  Dans **Format du rendu**, sélectionnez le format d'application du rapport.  
   
-8.  Dans **Mode écriture**, choisissez entre **Aucun**, **Auto-incrément**et **Remplacer**. Ces options permettent de déterminer si les remises ultérieures doivent remplacer un fichier. Si vous souhaitez conserver les remises antérieures, choisissez **Autoincrément**. Un nombre est ajouté aux nouveaux fichiers pour permettre la création d'un nom de fichier unique. Si vous choisissez **Aucun**, il n'y aura pas de remise si un fichier portant le même nom existe déjà à l'emplacement cible.  
+8.  Dans **Mode écriture**, choisissez entre **Aucun**, **Auto-incrément** et **Remplacer**. Ces options permettent de déterminer si les remises ultérieures doivent remplacer un fichier. Si vous souhaitez conserver les remises antérieures, choisissez **Autoincrément**. Un nombre est ajouté aux nouveaux fichiers pour permettre la création d'un nom de fichier unique. Si vous choisissez **Aucun**, il n'y aura pas de remise si un fichier portant le même nom existe déjà à l'emplacement cible.  
   
 9. Dans **Extension de fichier**, choisissez **Vrai** pour ajouter une extension de nom de fichier correspondant au format du fichier d'application ou Faux pour créer le fichier sans extension.  
   

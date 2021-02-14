@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: 8d9c57e5-7f39-4315-b466-92748231140a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 2725e29dfff7f9d78db4cf866055bd2199e4c48e
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: caf27210827b7c3ab981efe65c320bc5ddf6dab5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99165300"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338954"
 ---
 # <a name="sysavailability_databases_cluster-transact-sql"></a>sys.availability_databases_cluster (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

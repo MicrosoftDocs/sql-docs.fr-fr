@@ -19,19 +19,19 @@ helpviewer_keywords:
 ms.assetid: f5e6d9da-76ef-42cb-b3f5-f640857df732
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 7cba29b0dda2b0d4533444fd3fa8b83eaaeae7a9
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: e4c31d523a9fb50dd45bf8ab56c551d3830b0861
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88461411"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100082160"
 ---
 # <a name="mapping-replacement-functions-for-backward-compatibility-of-applications"></a>Mappage des fonctions de remplacement pour la compatibilité descendante des applications
 Une application ODBC *3. x* utilisant le gestionnaire de pilotes ODBC *3. x* fonctionnera sur un pilote ODBC *2. x* tant qu’aucune nouvelle fonctionnalité ne sera utilisée. Les modifications de fonctionnalités et de comportements en double affectent cependant la manière dont l’application ODBC *3. x* fonctionne sur un pilote ODBC *2. x* . Lorsque vous utilisez un pilote ODBC *2. x* , le gestionnaire de pilotes mappe les fonctions ODBC *3. x* suivantes, qui ont remplacé une ou plusieurs fonctions ODBC *2. x* dans les fonctions ODBC *2. x* correspondantes.  
   
 |ODBC *3. x,* fonction|ODBC *2. x,* fonction|  
 |-------------------------|-------------------------|  
-|**SQLAllocHandle**|**SQLAllocEnv**, **SQLAllocConnect**ou **SQLAllocStmt,**|  
+|**SQLAllocHandle**|**SQLAllocEnv**, **SQLAllocConnect** ou **SQLAllocStmt,**|  
 |**SQLBulkOperations**|**SQLSetPos**|  
 |**SQLColAttribute**|**SQLColAttributes**|  
 |**SQLEndTran**|**SQLTransact**|  
@@ -47,7 +47,7 @@ Une application ODBC *3. x* utilisant le gestionnaire de pilotes ODBC *3. x* fon
  [1] d’autres actions peuvent également être effectuées, en fonction de l’attribut demandé.  
   
 ## <a name="sqlallochandle"></a>SQLAllocHandle  
- Le gestionnaire de pilotes mappe ce à **SQLAllocEnv**, **SQLAllocConnect**ou **SQLAllocStmt,**, selon le cas. L’appel suivant à **SQLAllocHandle**:  
+ Le gestionnaire de pilotes mappe ce à **SQLAllocEnv**, **SQLAllocConnect** ou **SQLAllocStmt,**, selon le cas. L’appel suivant à **SQLAllocHandle**:  
   
 ```  
 SQLAllocHandle(HandleType, InputHandle, OutputHandlePtr);  
@@ -85,7 +85,7 @@ SQLBulkOperations(hstmt, Operation);
   
 4.  Si l’argument d’opération est SQL_ADD, l’application doit appeler **SQLBindCol** pour lier les données à insérer. Il ne peut pas appeler **SQLSetDescField** ou **SQLSetDescRec** pour lier les données à insérer.  
   
-5.  Si l’argument Operation est SQL_ADD et que le nombre de lignes à insérer n’est pas le même que la taille de l’ensemble de lignes en cours, **SQLSetStmtAttr** doit être appelé pour affecter à l’attribut d’instruction SQL_ATTR_ROW_ARRAY_SIZE le nombre de lignes à insérer avant d’appeler **SQLBulkOperations**. Pour revenir à la taille de l’ensemble de lignes précédent, l’application doit définir l’attribut d’instruction SQL_ATTR_ROW_ARRAY_SIZE avant l’appel de **SQLFetch**, **SQLFetchScroll**ou **SQLSetPos** .  
+5.  Si l’argument Operation est SQL_ADD et que le nombre de lignes à insérer n’est pas le même que la taille de l’ensemble de lignes en cours, **SQLSetStmtAttr** doit être appelé pour affecter à l’attribut d’instruction SQL_ATTR_ROW_ARRAY_SIZE le nombre de lignes à insérer avant d’appeler **SQLBulkOperations**. Pour revenir à la taille de l’ensemble de lignes précédent, l’application doit définir l’attribut d’instruction SQL_ATTR_ROW_ARRAY_SIZE avant l’appel de **SQLFetch**, **SQLFetchScroll** ou **SQLSetPos** .  
   
 ## <a name="sqlcolattribute"></a>SQLColAttribute  
  Le gestionnaire de pilotes mappe ce à **SQLColAttributes**. L’appel suivant à **SQLColAttribute**:  
@@ -140,7 +140,7 @@ switch (HandleType) {
 SQLFetch (StatementHandle);  
 ```  
   
- entraîne l’appel de **SQLExtendedFetch**par le gestionnaire de pilotes, comme suit :  
+ entraîne l’appel de **SQLExtendedFetch** par le gestionnaire de pilotes, comme suit :  
   
 ```  
 rc = SQLExtendedFetch(StatementHandle, FetchOrientation, FetchOffset, &RowCount, RowStatusArray);  
@@ -293,7 +293,7 @@ SQLGetStmtAttr(StatementHandle, Attribute, ValuePtr, BufferLength, StringLengthP
     SQLGetStmtOption (hstmt, fOption, pvParam);  
     ```  
   
-     où *HSTMT*, *fOption*et *pvParam* seront définis respectivement sur les valeurs de *StatementHandle*, *attribute*et *ValuePtr*. *BufferLength* et *StringLengthPtr* sont ignorés.  
+     où *HSTMT*, *fOption* et *pvParam* seront définis respectivement sur les valeurs de *StatementHandle*, *attribute* et *ValuePtr*. *BufferLength* et *StringLengthPtr* sont ignorés.  
   
 ## <a name="sqlsetconnectattr"></a>SQLSetConnectAttr  
  Le gestionnaire de pilotes mappe ce à **SQLSetConnectOption**. L’appel suivant à **SQLSetConnectAttr**:  
@@ -316,7 +316,7 @@ SQLSetConnectAttr(ConnectionHandle, Attribute, ValuePtr, StringLength);
     SQLSetConnectOption (hdbc, fOption, vParam);  
     ```  
   
-     où *hdbc*, *fOption*et *vParam* sont définis sur les valeurs de *ConnectionHandle*, *attribute*et *ValuePtr*, respectivement. *StringLengthPtr* est ignoré.  
+     où *hdbc*, *fOption* et *vParam* sont définis sur les valeurs de *ConnectionHandle*, *attribute* et *ValuePtr*, respectivement. *StringLengthPtr* est ignoré.  
   
 > [!NOTE]  
 >  La possibilité de définir des attributs d’instruction sur le niveau de connexion est dépréciée. Les attributs d’instruction ne doivent jamais être définis au niveau de la connexion par une application ODBC *3. x* .  
@@ -380,7 +380,7 @@ SQLSetStmtAttr(StatementHandle, Attribute, ValuePtr, StringLength);
     SQLSetStmtOption (hstmt, fOption, vParam);  
     ```  
   
-     où *HSTMT*, *fOption*et *vParam* seront définis sur les valeurs de *StatementHandle*, *attribute*et *ValuePtr*, respectivement. L’argument *StringLength* est ignoré.  
+     où *HSTMT*, *fOption* et *vParam* seront définis sur les valeurs de *StatementHandle*, *attribute* et *ValuePtr*, respectivement. L’argument *StringLength* est ignoré.  
   
      Si un pilote ODBC *2. x* prend en charge les options de chaîne de caractères, les instructions spécifiques au pilote, une application ODBC *3. x* doit appeler **SQLSetStmtOption** pour définir ces options.  
   

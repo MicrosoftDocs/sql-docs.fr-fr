@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: c44fb843-0626-4496-bde0-52ca0bac0a9e
 author: rothja
 ms.author: jroth
-ms.openlocfilehash: 96240f605762be382065268fa39198baeeaaa53f
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 2207dcce2787fb6f51668e777b01ce345d1f33ba
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85717176"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344664"
 ---
 # <a name="path-expressions---specifying-axis"></a>Expressions de chemin : spécification de l’axe
 [!INCLUDE [SQL Server Azure SQL Database ](../includes/applies-to-version/sqlserver.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "85717176"
   
 |Axe|Description|  
 |----------|-----------------|  
-|**child**|Retourne l'enfant du nœud du contexte.|  
+|**Division**|Retourne l'enfant du nœud du contexte.|  
 |**descendant**|Retourne tous les descendants du nœud du contexte.|  
 |**parent**|Retourne le parent du nœud du contexte.|  
 |**attribute**|Retourne les attributs du nœud du contexte.|  
@@ -60,7 +60,7 @@ ms.locfileid: "85717176"
 ## <a name="examples"></a>Exemples  
  Les exemples de requête de cette rubrique sont spécifiés par rapport aux colonnes de type **XML** dans la base de données **AdventureWorks** .  
   
-### <a name="a-specifying-a-child-axis"></a>A. Spécification de l'axe enfant  
+### <a name="a-specifying-a-child-axis"></a>R. Spécification de l'axe enfant  
  Pour un modèle de produit spécifique, la requête suivante extrait les \<Features> enfants de nœud d’élément du \<ProductDescription> nœud d’élément à partir de la description du catalogue de produits stockée dans la `Production.ProductModel` table.  
   
 ```  

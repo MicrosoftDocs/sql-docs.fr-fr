@@ -11,12 +11,12 @@ ms.assetid: 32f38713-7ae4-48d3-980d-74cadc8545a0
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: 4707c68c0b744e092844d57bd6f235a69dbec9ce
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: f1d0f99987a58a8d942c9d7601124c3cfc39b09d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92038042"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100014620"
 ---
 # <a name="finishing-test-case-preparation-oracletosql"></a>Terminer la préparation des cas de test (OracleToSQL)
 La dernière page de l’Assistant affiche la description du cas de test et les informations relatives aux objets impliqués dans le test. En outre, sur cette page, vous pouvez définir les options d’exécution des tests.  
@@ -49,11 +49,11 @@ Définit le mode d’enregistrement pour les tables auxiliaires créées pendant
   
 -   Si vous sélectionnez **toujours enregistrer**, les données de la table auxiliaire sont toujours stockées pour une utilisation ultérieure.  
   
--   Si vous sélectionnez **enregistrer en cas d’échec**de la comparaison de tables, les données de la table auxiliaire sont stockées uniquement si une erreur se produit.  
+-   Si vous sélectionnez **enregistrer en cas d’échec** de la comparaison de tables, les données de la table auxiliaire sont stockées uniquement si une erreur se produit.  
   
 -   Si vous sélectionnez **toujours supprimer**, les tables auxiliaires sont toujours supprimées après l’exécution du test.  
   
--   Si vous sélectionnez **demander**à l’utilisateur en cas d’échec de la comparaison de tables, l’utilisateur peut sélectionner l’action nécessaire si une erreur se produit.  
+-   Si vous sélectionnez **demander** à l’utilisateur en cas d’échec de la comparaison de tables, l’utilisateur peut sélectionner l’action nécessaire si une erreur se produit.  
   
 Cliquez sur le bouton **Terminer** pour enregistrer le cas de test préparé dans [à l’aide des référentiels de test (OracleToSQL)](./using-test-repositories-oracletosql.md).  
   

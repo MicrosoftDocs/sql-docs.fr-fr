@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: cb20a327-e565-49a3-a5d0-4cc79a48c179
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 0145b286e7d3f93ec491d7506c944b5e7a8fed3e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: db06d93c4086908778d064f71435f7863b78ad58
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88320745"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100071873"
 ---
 # <a name="shortcut-keys-db2tosql"></a>Touches de raccourci (DB2ToSQL)
 Vous pouvez utiliser les raccourcis clavier pour naviguer dans l’application SSMA. Pour plus d'informations, consultez les rubriques ci-dessous.  

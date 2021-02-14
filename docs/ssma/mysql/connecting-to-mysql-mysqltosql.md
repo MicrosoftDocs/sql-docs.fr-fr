@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 084c7020-f729-4f91-90e0-143f85fa68d1
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: 0246bd83bb7ca75d464452b5b430fbef1bbf128b
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: d7f3f46a58fccafa68164d9335c66df10c5b7487
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87935835"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100068894"
 ---
 # <a name="connecting-to-mysql-mysqltosql"></a>Connexion à MySQL (MySQLToSQL)
 Pour migrer des bases de données MySQL vers SQL Server ou SQL Azure, vous devez vous connecter à la base de données MySQL que vous souhaitez migrer. Quand vous vous connectez, SSMA obtient des métadonnées sur tous les schémas MySQL, puis les affiche dans le volet Explorateur de métadonnées MySQL. SSMA stocke les informations relatives au serveur de base de données, mais ne stocke pas les mots de passe.  

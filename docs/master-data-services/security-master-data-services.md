@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 56bc41ea-de28-4184-aa7e-99111ae55af5
 author: lrtoyou1223
 ms.author: lle
-ms.openlocfilehash: 9501014be6fdd311c37fd8f446ae01f0f2939f90
-ms.sourcegitcommit: 6be9a0ff0717f412ece7f8ede07ef01f66ea2061
+ms.openlocfilehash: 97209bd6d906a73f6199f06a09e14e1ab4d0ac22
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "92257826"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352996"
 ---
 # <a name="security-master-data-services"></a>Sécurité (Master Data Services)
 

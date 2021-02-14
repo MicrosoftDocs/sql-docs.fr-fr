@@ -10,12 +10,12 @@ ms.reviewer: ''
 ms.topic: conceptual
 author: MashaMSFT
 ms.author: mathoma
-ms.openlocfilehash: d9dc40928fddda2708a23a7fc927627cf0e9450d
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 991f001ea8fd43298cefe1f9ba542472de6935ef
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85718578"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354096"
 ---
 # <a name="wideworldimporters-database-catalog"></a>Catalogue de bases de données WideWorldImporters
 [!INCLUDE [SQL Server Azure SQL Database](../includes/applies-to-version/sql-asdb.md)]
@@ -42,7 +42,7 @@ Ces schémas sont utilisés pour les applications externes qui ne sont pas autor
 
 |schéma|Description|
 |-----------------------------|---------------------|
-|Website|Tout accès à la base de données à partir du site Web de l’entreprise s’effectue par le biais de ce schéma.|
+|Site web|Tout accès à la base de données à partir du site Web de l’entreprise s’effectue par le biais de ce schéma.|
 |Rapports|Tout accès à la base de données à partir de Reporting Services rapports s’effectue par le biais de ce schéma.|
 |PowerBI|Tout accès à la base de données à partir des tableaux de bord Power BI via la passerelle d’entreprise se fait par le biais de ce schéma.|
 
@@ -100,7 +100,7 @@ Détails des clients, des commerciaux et des ventes d’articles en stock.
 |BuyingGroups|Les organisations clientes peuvent faire partie des groupes qui exercent une plus grande puissance d’achat|
 |CustomerTransactions|Toutes les transactions financières liées aux clients (factures, paiements)|
 |SpecialDeals|Tarification spéciale. Cela peut inclure des prix fixes, une remise en dollars ou un pourcentage de remise.|
-|Orders|Détails des commandes client|
+|Orders (Commandes)|Détails des commandes client|
 |OrderLines|Lignes de détails des commandes client|
 |Factures|Détails des factures client|
 |InvoiceLines|Lignes de détails des factures client|

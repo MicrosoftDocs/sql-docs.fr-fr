@@ -13,12 +13,12 @@ ms.assetid: 29fb6542-5c1f-4b14-a822-87700beb7623
 author: nahk-ivanov
 ms.author: alexiva
 manager: alexiva
-ms.openlocfilehash: deb482c041dd290db3d2a7c911fb7d3663aa819a
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2cf0aab82f56740dfe73476af89899fd9fd135f6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88418335"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100067611"
 ---
 # <a name="selecting-and-configuring-objects-to-test-oracletosql"></a>Sélection et configuration des objets à tester (OracleToSQL)
 À cette étape, vous sélectionnez les objets à tester, puis vous configurez les paramètres de comparaison des paramètres de sortie des procédures et des fonctions, ainsi que des valeurs de retour des fonctions.  
@@ -38,14 +38,14 @@ Active l’utilisation du paramètre sélectionné dans la comparaison des résu
   
 -   Si vous choisissez **true**, SSMA compare la valeur de sortie de ce paramètre après l’exécution de la procédure sur Oracle avec la valeur correspondante sur SQL Server.
   
--   Si vous choisissez la**valeur false**, le paramètre sera exclu de la vérification des résultats.  
+-   Si vous choisissez la **valeur false**, le paramètre sera exclu de la vérification des résultats.  
   
 ### <a name="use-custom-scale"></a>Utiliser l’échelle personnalisée  
 Pour les paramètres de type de données numérique, vous pouvez définir une échelle personnalisée pour la comparaison.  
   
 -   Si vous choisissez **true**, les valeurs numériques sont arrondies en fonction de la valeur d' **échelle de comparaison** avant d’être comparées.  
   
--   Si vous choisissez la**valeur false**, la comparaison numérique sera exacte.  
+-   Si vous choisissez la **valeur false**, la comparaison numérique sera exacte.  
   
 ### <a name="comparing-scale"></a>Comparaison de l’échelle  
 Disponible uniquement si l’option utiliser la mise à l' **échelle personnalisée** a la valeur **true**. Il s’agit de la précision pour la comparaison numérique.  

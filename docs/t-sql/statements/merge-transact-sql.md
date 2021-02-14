@@ -25,12 +25,12 @@ helpviewer_keywords:
 ms.assetid: c17996d6-56a6-482f-80d8-086a3423eecc
 author: XiaoyuMSFT
 ms.author: XiaoyuL
-ms.openlocfilehash: cbc1286bbbced3a546c1057433dba5bbc4289281
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 6b6610293bb78ef34ae5ca8b88f762c9ab4948e9
+ms.sourcegitcommit: 0b400bb99033f4b836549cb11124a1f1630850a1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99199391"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "99978861"
 ---
 # <a name="merge-transact-sql"></a>MERGE (Transact-SQL)
 
@@ -236,14 +236,14 @@ Spécifie le modèle de correspondance de graphe. Pour plus d’informations sur
 >[!NOTE]
 > Dans Azure Synapse Analytics, la commande MERGE (préversion) présente les différences suivantes par rapport à SQL Server et à Azure SQL Database.  
 > - Une mise à jour MERGE correspond à une paire suppression-insertion. Le nombre de lignes affectées par une mise à jour MERGE comprend les lignes supprimées et insérées. 
-> - Pendant la préversion, la commande MERGE ne fonctionne pas avec les tables avec des contraintes UNIQUES.  Ce sera résolu bientôt dans une version ultérieure.
+> - Dans préversion, MERGE…WHEN NOT MATCHED INSERT n’est pas pris en charge pour les tables avec colonnes IDENTITY.  
 > - La prise en charge de tables présentant des types de distribution différents est décrite dans le tableau suivant :
 
 >|Clause MERGE dans Azure Synapse Analytics|Table de distribution CIBLE prise en charge| Table de distribution SOURCE prise en charge|Comment|  
 >|-----------------|---------------|-----------------|-----------|  
->|**WHEN MATCHED**| HASH, ROUND_ROBIN, REPLICATE |Tous les points de distribution||  
+>|**WHEN MATCHED**| Tous les points de distribution |Tous les points de distribution||  
 >|**NOT MATCHED BY TARGET**|HASH |Tous les points de distribution|Utilisez UPDATE/DELETE FROM… JOIN pour synchroniser deux tables. |
->|**NOT MATCHED BY SOURCE**|Tous les points de distribution|Tous les points de distribution|Utilisez UPDATE/DELETE FROM… JOIN pour synchroniser deux tables.||  
+>|**NOT MATCHED BY SOURCE**|Tous les points de distribution|Tous les points de distribution|||  
 
 Au moins l'une des trois clauses MATCHED doit être spécifiée, mais cela peut être dans n'importe quel ordre. Une variable ne peut pas être mise à jour plus d'une fois dans la même clause MATCHED.  
   

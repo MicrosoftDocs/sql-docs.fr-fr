@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 8b2a49b0-4296-4f3f-9e56-323aa6a6fa8e
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: a1a3c415e8c13bf0ed1eaf4c75baf0230544964c
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0c1f34f19034042d542cba2d81a55bf32288058e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88492220"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100067517"
 ---
 # <a name="finishing-test-case-preparation-sybasetosql"></a>Terminer la préparation du cas de test (SybaseToSQL)
 La dernière page de l’Assistant affiche la description du cas de test et les informations relatives aux objets impliqués dans le test. En outre, sur cette page, vous pouvez définir les options d’exécution des tests.  
@@ -50,13 +50,13 @@ Définit le mode d’enregistrement pour les tables auxiliaires créées pendant
   
 -   Si vous sélectionnez **toujours enregistrer**, les données de la table auxiliaire sont toujours stockées pour une utilisation ultérieure.  
   
--   Si vous sélectionnez **enregistrer en cas d’échec**de la comparaison de tables, les données de la table auxiliaire sont stockées uniquement si une erreur se produit.  
+-   Si vous sélectionnez **enregistrer en cas d’échec** de la comparaison de tables, les données de la table auxiliaire sont stockées uniquement si une erreur se produit.  
   
 -   Si vous sélectionnez **toujours supprimer**, les tables auxiliaires sont toujours supprimées après l’exécution du test.  
   
--   Si vous sélectionnez **demander**à l’utilisateur en cas d’échec de la comparaison de tables, l’utilisateur peut sélectionner l’action nécessaire si une erreur se produit.  
+-   Si vous sélectionnez **demander** à l’utilisateur en cas d’échec de la comparaison de tables, l’utilisateur peut sélectionner l’action nécessaire si une erreur se produit.  
   
-Cliquez sur le bouton **Terminer** pour enregistrer le cas de test préparé dans [à l’aide des dépôts de test &#40;&#41;SybaseToSQL ](../../ssma/sybase/using-test-repositories-sybasetosql.md).  
+Cliquez sur le bouton **Terminer** pour enregistrer le cas de test préparé dans [à l’aide des dépôts de test &#40;&#41;SybaseToSQL](../../ssma/sybase/using-test-repositories-sybasetosql.md).  
   
 ## <a name="see-also"></a>Voir aussi  
 [Utilisation de référentiels de test &#40;SybaseToSQL&#41;](../../ssma/sybase/using-test-repositories-sybasetosql.md)  

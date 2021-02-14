@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 5bab5914-b2ae-4795-8cf5-83e42d64bef2
 author: nahk-ivanov
 ms.author: alexiva
-ms.openlocfilehash: c8f03fa27bf8c49cfeef06246c47996860c932ba
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 2f5f97b55b4d357c2caa2314c993806c61f51e07
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988645"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100066664"
 ---
 # <a name="migration-wizard-accesstosql"></a>Assistant Migration (AccessToSQL)
 L’Assistant Migration vous guide tout au long de la migration d’une ou plusieurs bases de données d’accès à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure. À l’aide de l’Assistant, vous allez créer un projet, ajouter des bases de données au projet, sélectionner les objets à migrer, puis vous connecter à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou SQL Azure. Vous allez également convertir, charger et migrer les schémas d’accès et les données. Si vous le souhaitez, vous pouvez lier des tables d’accès à des [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tables ou SQL Azure.  
@@ -44,7 +44,7 @@ Par défaut, SSMA démarre l’Assistant Migration lorsque vous démarrez SSMA. 
 La page créer un nouveau projet vous permet d’entrer le nom du fichier projet, l’emplacement et le type de projet de migration (la version de la SQL Server cible utilisée pour la migration). Pour plus d’informations, consultez [New Project (SSMA)](./new-project-ssma-accesstosql.md) .  
   
 ## <a name="add-access-databases-page"></a>Page Ajouter des bases de données Access  
-La page Ajouter des bases de données Access est l’emplacement où vous ajoutez une ou plusieurs bases de données Access au projet. Vous pouvez ajouter des bases de données individuelles en cliquant sur **Ajouter des bases**de données, puis en sélectionnant les bases de données dans la fenêtre **ouvrir** . Vous pouvez rechercher des bases de données à l’aide du bouton **Rechercher des bases de données** . Pour plus d'informations, voir les rubriques suivantes :  
+La page Ajouter des bases de données Access est l’emplacement où vous ajoutez une ou plusieurs bases de données Access au projet. Vous pouvez ajouter des bases de données individuelles en cliquant sur **Ajouter des bases** de données, puis en sélectionnant les bases de données dans la fenêtre **ouvrir** . Vous pouvez rechercher des bases de données à l’aide du bouton **Rechercher des bases de données** . Pour plus d'informations, voir les rubriques suivantes :  
   
 -   [Ajout et suppression de fichiers de base de données Access](adding-and-removing-access-database-files-accesstosql.md)  
   
