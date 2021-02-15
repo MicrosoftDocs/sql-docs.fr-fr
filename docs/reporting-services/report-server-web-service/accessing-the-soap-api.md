@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 63bb870a-4dbf-46bd-8921-78f8ebe5fd75
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 165302d4bb324dfb79f43e37b8a47e5e11973ce5
-ms.sourcegitcommit: ff82f3260ff79ed860a7a58f54ff7f0594851e6b
+ms.openlocfilehash: 5fcb5dd895f6997ed72c91e9c66d9bd7be1c5aa4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2020
-ms.locfileid: "79509910"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018652"
 ---
 # <a name="accessing-the-soap-api"></a>Accès à l'API  SOAP
   Le service Web Report Server utilise le protocole SOAP (Simple Object Access Protocol) sur HTTP et joue le rôle d'interface de communication entre les programmes clients et le serveur de rapports. Le service Web fournit deux points de terminaison ; un pour l'exécution des rapports et un autre pour la gestion des rapports. Par ailleurs, il se compose de méthodes et d'un jeu d'objets de type complexe que vous pouvez utiliser pour accéder aux fonctionnalités complètes de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]. Pour appeler le service, vous devez référencer WSDL (Web Services Description Language) Reporting Services.  
@@ -54,7 +54,7 @@ https://server/reportserver/ReportService2010.asmx?wsdl
 |-----------------|-----------------|  
 |*server*|Nom du serveur sur lequel le serveur de rapports est déployé.|  
 |*reportserver*|Nom du dossier qui contient le service Web XML. Cet élément est configuré au moment de l'installation.|  
-|*\<nom du point de terminaison>.asmx*|Nom du point de terminaison du service Web.|  
+|*\<endpoint name>.asmx*|Nom du point de terminaison du service Web.|  
   
  Pour plus d'informations sur le format WSDL, consultez la spécification WSDL du W3C (World Wide Consortium) à l'adresse http://www.w3.org/TR/wsdl.  
   

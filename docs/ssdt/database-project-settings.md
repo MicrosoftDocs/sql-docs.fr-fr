@@ -40,12 +40,12 @@ ms.author: maghan
 ms.reviewer: “”
 ms.custom: seo-lt-2019
 ms.date: 02/09/2017
-ms.openlocfilehash: 126a649f2555b2a66ba7ce4378378ff9e401f6fc
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 99552883fb06c01a862ddc973ff3747d11a89ee8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987225"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100079550"
 ---
 # <a name="database-project-settings"></a>Paramètres du projet de base de données
 
@@ -138,7 +138,7 @@ La fonctionnalité de vérification étendue peut également être utilisée lor
   
 ##### <a name="to-enable-or-disable-extended-verification-at-the-project-level"></a>Pour activer ou désactiver la vérification étendue au niveau du projet  
   
-1.  Dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur le fichier de projet, puis sélectionnez**Propriétés**.  
+1.  Dans l'**Explorateur de solutions**, cliquez avec le bouton droit sur le fichier de projet, puis sélectionnez **Propriétés**.  
   
 2.  Dans **Paramètres du projet**, sous **Plateforme cible**, activez ou désactivez la case **Activer la vérification Transact-SQL étendue pour les objets communs**.  
   
@@ -220,7 +220,7 @@ Vous pouvez utiliser ces paramètres pour contrôler le débogage de votre proje
 |---------|-----------------|---------------|  
 |Action de démarrage|None|Spécifie un script ou un programme externe à exécuter lorsque vous déboguez votre projet.|  
 |Chaîne de connexion cible|Data Source=(localdb)\\*SolutionName*;Initial Catalog=*DatabaseProjectName*;Integrated Security=True;Pooling=False;Connect Timeout=30|Spécifie les informations de connexion du serveur de base de données que vous souhaitez cibler pour la configuration de build spécifiée. La chaîne de connexion par défaut est spécifiée par rapport à une instance LocalDB SQL Server et une base de données.|  
-|Déployer les propriétés de la base de données|Oui|Spécifie si les paramètres DatabaseProerties.DatabaseProperties sont déployés ou mis à jour lorsque vous déployez le projet de base de données.|  
+|Déployer les propriétés de la base de données|Oui|Spécifie si les paramètres DatabaseProperties.DatabaseProperties sont déployés ou mis à jour quand vous déployez le projet de base de données.|  
 |Toujours recréer la base de données|Non|Spécifie si la base de données doit être supprimée et recréée au lieu d'effectuer une mise à niveau incrémentielle. Vous pouvez cocher cette case par exemple si vous souhaitez exécuter des tests unitaires de bases de données par rapport à un déploiement propre de la base de données. Si cette case à cocher est désactivée, la base de données existante sera mise à jour au lieu d'être supprimée et recréée.|  
 |Bloquer le déploiement incrémentiel si une perte de données peut se produire|Oui|Spécifie si le déploiement s'arrête si une mise à jour entraîne la perte de données. Si cette case à cocher est activée, les modifications susceptibles de créer une perte de données entraînent l'arrêt du déploiement avec une erreur, ce qui empêche toute perte des données. Par exemple, le déploiement s'arrête si une colonne `varchar(50)` a été remplacée par une colonne `varchar(30)`.<br /><br />**REMARQUE :** le déploiement est bloqué uniquement si les tables dans lesquelles une perte de données peut se produire contiennent des données. Le déploiement se poursuit si aucune donnée n'a été perdue.|  
 |Objets DROP dans la cible mais pas dans le projet|Non|Spécifie si les objets qui sont dans la base de données cible, mais pas dans le projet de base de données, doivent être supprimés dans le cadre du script de déploiement. Vous pouvez exclure des fichiers de votre projet pour les supprimer temporairement de votre script de compilation. Toutefois, il est possible que vous souhaitiez laisser les versions existantes de ces objets dans la base de données cible. Cette case à cocher n'a aucun effet si la case **Toujours recréer la base de données** est cochée, car la base de données sera supprimée.|  

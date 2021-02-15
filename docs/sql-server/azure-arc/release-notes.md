@@ -7,12 +7,12 @@ ms.reviewer: mikeray
 ms.date: 12/08/2020
 ms.topic: conceptual
 ms.prod: sql
-ms.openlocfilehash: 372f4bec9acc4d4e170ddbc1a1fa6d66be1541e7
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: f53731685f5ba1723ebdd8d20064342808205566
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596553"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100070304"
 ---
 # <a name="release-notes---azure-arc-enabled-sql-server-preview"></a>Notes de publication - Azure Arc enabled SQL Server (préversion)
 
@@ -42,7 +42,7 @@ Si vous disposez de ressources SQL Server-Azure Arc existantes, suivez ces étap
 
 > [!NOTE]
 > - Pour coller les commandes dans l’interpréteur de commandes, utilisez `Ctrl-Shift-V` sur Windows ou `Cmd-v` sur MacOS.
-> - Le script est chargé directement dans le dossier de base associé à votre session Cloud Shell.
+> - La commande `curl` copie le script directement dans le dossier de base associé à votre session Cloud Shell.
 > - Le script vous invite à entrer le nom du groupe de ressources et à imprimer un message une fois la migration terminée.
 
 ### <a name="other-changes"></a>Autres modifications

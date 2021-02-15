@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: alayu, maghan, sstein
 ms.custom: ''
 ms.date: 10/03/2019
-ms.openlocfilehash: 2e2e76c436c02f2cbc5878228f1be2d57248816c
-ms.sourcegitcommit: cc23d8646041336d119b74bf239a6ac305ff3d31
+ms.openlocfilehash: 3cc965ffd169d53e59706ca4ba68f2bcdddb5aa9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/23/2020
-ms.locfileid: "91123213"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100052119"
 ---
 # <a name="extend-the-functionality-of-azure-data-studio"></a>Étendre les fonctionnalités d’Azure Data Studio
 
@@ -58,7 +58,7 @@ Vous pouvez désactiver temporairement une extension au lieu de la supprimer dé
 
 ### <a name="enable-an-extension"></a>Activation d’une extension
 
-Si une extension a été désactivée, elle figure dans la section **Désactivées** de la liste d’extensions et elle est marquée comme ***Désactivée***. Vous pouvez la réactiver avec la commande **Activer** ou **Activer (Espace de travail**) du menu déroulant. La **palette de commandes** permet également d’activer toutes les extensions avec les commandes **Extensions : Activer toutes les extensions** et **Extensions : Activer toutes les extensions (Espace de travail)** .
+Si une extension a été désactivée, elle figure dans la section **Désactivées** de la liste d’extensions et est marquée comme **_Désactivée_ *. Vous pouvez la réactiver avec la commande* Activer** ou **Activer (Espace de travail**) du menu déroulant. La **palette de commandes** permet également d’activer toutes les extensions avec les commandes **Extensions : Activer toutes les extensions** et **Extensions : Activer toutes les extensions (Espace de travail)** .
 
 ![activation d’une extension](media/add-extensions/extensions-enable.png)
 

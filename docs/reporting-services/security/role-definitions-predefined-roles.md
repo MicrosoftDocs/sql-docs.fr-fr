@@ -1,7 +1,7 @@
 ---
 description: Définitions de rôles - Rôles prédéfinis
 title: Définitions de rôles - Rôles prédéfinis | Microsoft Docs
-ms.date: 06/10/2020
+ms.date: 02/04/2021
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
 ms.technology: security
@@ -13,28 +13,31 @@ helpviewer_keywords:
 ms.assetid: 6b46db51-7c30-467d-a251-50f50647fe21
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 0c0929f82f7f9a086fa58856b6e1357807c198f7
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 19846d90b09ce660d2ffbd2e1ef996984057d420
+ms.sourcegitcommit: 6f4fb9cfd0cad06127a6328adc745e2ba7c191d1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987387"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570443"
 ---
 # <a name="role-definitions---predefined-roles"></a>Définitions de rôles - Rôles prédéfinis
+
+[!INCLUDE[ssrs-appliesto](../../includes/ssrs-appliesto.md)] [!INCLUDE[ssrs-appliesto-2016-and-later](../../includes/ssrs-appliesto-2016-and-later.md)] [!INCLUDE[ssrs-appliesto-pbirsi](../../includes/ssrs-appliesto-pbirs.md)]
+
 [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] est installé avec des rôles prédéfinis que vous pouvez utiliser pour accorder l'accès aux opérations du serveur de rapports. Chaque rôle prédéfini décrit une collection de tâches associées. Vous pouvez assigner des groupes et des comptes d'utilisateurs à des rôles prédéfinis pour fournir l'accès immédiat aux opérations du serveur de rapports.  
   
 ## <a name="how-to-use-predefined-roles"></a>Comment utiliser des rôles prédéfinis  
   
 1. Examinez les rôles prédéfinis pour déterminer si vous pouvez les utiliser en l'état. Si vous devez ajuster les tâches ou définir des rôles supplémentaires, vous devez le faire avant de commencer à assigner des utilisateurs à des rôles spécifiques. Pour créer ou modifier des rôles personnalisés, utilisez SQL Server Management Studio. Pour plus d’informations, consultez [Créer, supprimer ou modifier un rôle &#40;Management Studio&#41;](../../reporting-services/security/role-definitions-create-delete-or-modify.md).
   
-2. Identifiez les utilisateurs et les groupes qui doivent accéder au serveur de rapports, et à quel niveau. Le rôle **Lecteur** ou le rôle **Générateur de rapports** doit être attribué à la plupart des utilisateurs. Le rôle **Serveur de publication** doit être attribué à un nombre restreint d'utilisateurs. Le rôle **Gestionnaire de contenu**ne doit être attribué qu'à un nombre très limité d'utilisateurs.  
+2. Identifiez les utilisateurs et les groupes qui doivent accéder au serveur de rapports, et à quel niveau. Le rôle **Lecteur** ou le rôle **Générateur de rapports** doit être attribué à la plupart des utilisateurs. Le rôle **Serveur de publication** doit être attribué à un nombre restreint d'utilisateurs. Le rôle **Gestionnaire de contenu** ne doit être attribué qu'à un nombre très limité d'utilisateurs.  
 
 3. Lorsque vous êtes prêt à attribuer des comptes d'utilisateurs et de groupes à des rôles spécifiques, utilisez le portail web. Pour plus d’informations, consultez [Accorder à un utilisateur l’accès à un serveur de rapports](../../reporting-services/security/grant-user-access-to-a-report-server.md).  
   
 ##  <a name="predefined-role-definitions"></a><a name="bkmk_rolelist"></a> Définitions de rôles prédéfinis  
  Les rôles prédéfinis sont définis par les tâches qu'ils prennent en charge. Vous pouvez modifier ces rôles ou les remplacer par des rôles personnalisés.  
   
- La*portée* définit les limites dans lesquelles les rôles sont utilisés. Les rôles au niveau élément fournissent des niveaux d'accès variés aux éléments du serveur de rapports et aux opérations qui affectent ces éléments. Les rôles au niveau élément sont définis sur le nœud racine (de base) et sur tous les éléments de l'arborescence des dossiers du serveur de rapports. Les rôles au niveau système autorisent l'accès au niveau du site. Les rôles au niveau élément et au niveau système sont mutuellement exclusifs mais sont utilisés ensemble pour fournir des autorisations complètes au contenu et aux opérations du serveur de rapports.  
+ La *portée* définit les limites dans lesquelles les rôles sont utilisés. Les rôles au niveau élément fournissent des niveaux d'accès variés aux éléments du serveur de rapports et aux opérations qui affectent ces éléments. Les rôles au niveau élément sont définis sur le nœud racine (de base) et sur tous les éléments de l'arborescence des dossiers du serveur de rapports. Les rôles au niveau système autorisent l'accès au niveau du site. Les rôles au niveau élément et au niveau système sont mutuellement exclusifs mais sont utilisés ensemble pour fournir des autorisations complètes au contenu et aux opérations du serveur de rapports.  
   
  Le tableau suivant décrit la portée prédéfinie des rôles :  
   
@@ -58,22 +61,24 @@ ms.locfileid: "91987387"
   
 |Tâche|Description|  
 |----------|-----------------|  
+|Effectuer des commentaires sur les rapports|Créer, afficher, modifier et supprimer des commentaires sur les rapports.| 
 |Lire les rapports|Lire les définitions de rapport.|  
 |Créer des rapports liés|Créer des rapports liés qui sont basés sur un rapport non lié.|  
 |Gérer tous les abonnements|Afficher, modifier et supprimer un abonnement à un rapport, lié ou non, quel que soit le propriétaire de l'abonnement. Cette tâche prend en charge la création d’abonnements pilotés par les données. Elle prend également en charge la modification et l’exécution de l’[actualisation planifiée pour les fichiers Power BI (.pbix) dans Power BI Report Server](/power-bi/report-server/configure-scheduled-refresh).|  
+|Gérer les commentaires|Supprimer les commentaires d’autres utilisateurs sur les rapports.| 
 |Gérer les sources de données|Créer et supprimer les éléments de source de données partagée, afficher et modifier les propriétés et le contenu des sources de données.|  
-|Gérer les dossiers|Créer, afficher et supprimer des dossiers. Afficher et modifier des propriétés de dossier.|  
-|Gérer les modèles|Créer, afficher et supprimer des modèles. Afficher et modifier des propriétés du modèle.|  
+|Gérer les dossiers|Créer, afficher et supprimer des dossiers. Afficher et modifier des propriétés de dossier.| 
 |Gérer les abonnements individuels|Créer, afficher, modifier et supprimer des abonnements - appartenant à des utilisateurs - à des rapports, liés ou non. Cette tâche prend également en charge la modification et l’exécution de l’[actualisation planifiée pour les fichiers Power BI (.pbix) dans Power BI Report Server](/power-bi/report-server/configure-scheduled-refresh).|  
+|Gérer les modèles|Créer, afficher et supprimer des modèles. Afficher et modifier des propriétés du modèle.|  
 |Gérer l'historique de rapport|Créer, afficher et supprimer l'historique de rapport, afficher les propriétés de l'historique de rapport. Afficher et modifier les paramètres qui déterminent les limites de l'historique des instantanés ainsi que le fonctionnement de la mise en cache.|  
 |Gérer les rapports|Ajouter et supprimer des rapports, modifier des paramètres de rapport, afficher et modifier des propriétés de rapport, afficher et modifier des sources de données qui fournissent du contenu au rapport, afficher et modifier des définitions de rapports et définir des stratégies au niveau du rapport.|  
 |Gestion des ressources|Créer, modifier et supprimer des ressources. Afficher et modifier des propriétés de ressource.|  
-|Définir des stratégies de sécurité pour les éléments|Définir des stratégies de sécurité pour les rapports, les rapports liés, les dossiers, les ressources et les sources de données. Pour plus d’informations, consultez [Éléments sécurisables](../../reporting-services/security/securable-items.md).|  
+|Définir la sécurité pour des éléments individuels|Définir des stratégies de sécurité pour les rapports, les rapports liés, les dossiers, les ressources et les sources de données. Pour plus d’informations, consultez [Éléments sécurisables](../../reporting-services/security/securable-items.md).|  
 |Afficher les sources de données|Afficher les éléments de source de données partagée dans la hiérarchie de dossiers.|  
-|Afficher les rapports|Exécuter les rapports et afficher les propriétés de rapports.|  
-|Afficher les modèles|Afficher des modèles de l'arborescence des dossiers, utiliser des modèles comme sources de données pour un rapport et exécuter des requêtes sur le modèle pour récupérer des données.|  
-|Afficher les ressources|Afficher les ressources et les propriétés des ressources.|  
 |Afficher les dossiers|Afficher le contenu des dossiers et naviguer dans la hiérarchie des dossiers.|  
+|Afficher les modèles|Afficher des modèles de l'arborescence des dossiers, utiliser des modèles comme sources de données pour un rapport et exécuter des requêtes sur le modèle pour récupérer des données.|  
+|Afficher les rapports|Exécuter les rapports et afficher les propriétés de rapports.|  
+|Afficher les ressources|Afficher les ressources et les propriétés des ressources.|  
   
 ### <a name="customizing-the-content-manager-role"></a>Personnalisation du rôle du Gestionnaire de contenu  
  Ce rôle est destiné aux utilisateurs approuvés qui ont la responsabilité générale de la gestion et de la maintenance du contenu du serveur de rapports. Vous pouvez supprimer des tâches de cette définition, mais vous risquez d'introduire de l'ambiguïté dans ce qui peut être géré. Par exemple, supprimer la tâche « Afficher les rapports » de cette définition de rôle interdirait à un **Gestionnaire de contenu** d'afficher du contenu de rapports, rendant ainsi impossible la vérification des modifications apportées aux paramètres et aux paramètres relatifs aux informations d'identification.  
@@ -96,10 +101,11 @@ ms.locfileid: "91987387"
 |Tâche|Description|  
 |----------|-----------------|  
 |Créer des rapports liés|Créer des rapports liés puis les publier dans un dossier de serveur de rapports.|  
+|Gérer les commentaires|Supprimer les commentaires d’autres utilisateurs sur les rapports.| 
 |Gérer les sources de données|Créer et supprimer les éléments de source de données partagée, afficher et modifier les propriétés et le contenu des sources de données.|  
 |Gérer les dossiers|Créer, afficher et supprimer des dossiers ; afficher et modifier des propriétés de dossier.|  
-|Gérer les rapports|Ajouter et supprimer des rapports, modifier des paramètres de rapport, afficher et modifier des propriétés de rapport, afficher et modifier des sources de données qui fournissent du contenu au rapport, afficher et modifier des définitions de rapports.|  
 |Gérer les modèles|Créer, afficher et supprimer des modèles de rapport ; afficher et modifier des propriétés de modèles de rapport.|  
+|Gérer les rapports|Ajouter et supprimer des rapports, modifier des paramètres de rapport, afficher et modifier des propriétés de rapport, afficher et modifier des sources de données qui fournissent du contenu au rapport, afficher et modifier des définitions de rapports.|  
 |Gestion des ressources|Créer, modifier et supprimer des ressources ; afficher et modifier des propriétés de ressource.|  
   
 ### <a name="customizing-the-publisher-role"></a>Personnalisation du rôle de serveur de publication  
@@ -117,12 +123,13 @@ ms.locfileid: "91987387"
   
 |Tâche|Description|  
 |----------|-----------------|  
+|Effectuer des commentaires sur les rapports|Créer, afficher, modifier et supprimer des commentaires sur les rapports.| 
+|Gérer les abonnements individuels|Créer, afficher, modifier et supprimer des abonnements - appartenant à des utilisateurs - à des rapports, liés ou non, et créer des planifications pour ces abonnements.| 
+|Afficher les dossiers|Afficher le contenu des dossiers et naviguer dans la hiérarchie des dossiers.| 
+|Afficher les modèles|Afficher des modèles de l'arborescence des dossiers, utiliser des modèles comme sources de données pour un rapport et exécuter des requêtes sur le modèle pour récupérer des données.| 
 |Afficher les rapports|Exécuter un rapport et afficher les propriétés du rapport.|  
 |Afficher les ressources|Afficher les ressources et les propriétés des ressources.|  
-|Afficher les dossiers|Afficher le contenu des dossiers et naviguer dans la hiérarchie des dossiers.|  
-|Afficher les modèles|Afficher des modèles de l'arborescence des dossiers, utiliser des modèles comme sources de données pour un rapport et exécuter des requêtes sur le modèle pour récupérer des données.|  
-|Gérer les abonnements individuels|Créer, afficher, modifier et supprimer des abonnements - appartenant à des utilisateurs - à des rapports, liés ou non, et créer des planifications pour ces abonnements.|  
-  
+   
 ### <a name="customizing-the-browser-role"></a>Personnalisation du rôle Navigateur  
  Modifiez le rôle **Lecteur** en fonction de vos besoins. Par exemple, vous pouvez supprimer la tâche « Gérer les abonnements individuels » si vous ne voulez pas prendre en charge les abonnements, ou supprimer la tâche « Afficher les ressources » si vous ne voulez pas que les utilisateurs puissent consulter la documentation associée ou d'autres éléments pouvant être transférés dans le serveur de rapports.  
   
@@ -136,12 +143,13 @@ ms.locfileid: "91987387"
   
 |Tâche|Description|  
 |----------|-----------------|  
+|Effectuer des commentaires sur les rapports|Créer, afficher, modifier et supprimer des commentaires sur les rapports.| 
 |Lire les rapports|Lire les définitions de rapport.|  
-|Afficher les rapports|Exécuter un rapport et afficher les propriétés du rapport.|  
-|Afficher les ressources|Afficher les ressources et les propriétés des ressources.|  
+|Gérer les abonnements individuels|Créer, afficher, modifier et supprimer des abonnements - appartenant à des utilisateurs - à des rapports, liés ou non, et créer des planifications pour ces abonnements.|  
 |Afficher les dossiers|Afficher le contenu des dossiers et naviguer dans la hiérarchie des dossiers.|  
 |Afficher les modèles|Afficher des modèles de l'arborescence des dossiers, utiliser des modèles comme sources de données pour un rapport et exécuter des requêtes sur le modèle pour récupérer des données.|  
-|Gérer les abonnements individuels|Créer, afficher, modifier et supprimer des abonnements - appartenant à des utilisateurs - à des rapports, liés ou non, et créer des planifications pour ces abonnements.|  
+|Afficher les rapports|Exécuter un rapport et afficher les propriétés du rapport.|  
+|Afficher les ressources|Afficher les ressources et les propriétés des ressources.|  
   
 ### <a name="customizing-the-report-builder-role"></a>Personnalisation du rôle Générateur de rapports  
  Modifiez le rôle **Générateur de rapports** en fonction de vos besoins. Les recommandations sont généralement les mêmes que celles liées au rôle **Lecteur** : supprimez la tâche « Gérer les abonnements individuels » si vous ne souhaitez pas prendre en charge les abonnements, supprimez la tâche « Afficher les ressources » si vous ne souhaitez pas que les utilisateurs visualisent les ressources et conservez les tâches « Afficher les rapports » et « Afficher les dossiers » pour prendre en charge l'affichage et l'exploration des dossiers.  
@@ -158,21 +166,24 @@ ms.locfileid: "91987387"
   
 |Tâche|Description|  
 |----------|-----------------|  
+|Effectuer des commentaires sur les rapports|Créer, afficher, modifier et supprimer des commentaires sur les rapports.| 
 |Créer des rapports liés|Créer des rapports liés qui sont basés sur les rapports qui sont stockés dans le dossier Mes Rapports de l'utilisateur.|  
-|Gérer les dossiers|Créer, afficher et supprimer des dossiers. Afficher et modifier des propriétés de dossier.|  
+|Gérer les commentaires|Supprimer les commentaires d’autres utilisateurs sur les rapports.| 
 |Gérer les sources de données|Créer et supprimer les éléments de source de données partagée, afficher et modifier les propriétés et le contenu des sources de données.|  
+|Gérer les dossiers|Créer, afficher et supprimer des dossiers. Afficher et modifier des propriétés de dossier.|  
 |Gérer les abonnements individuels|Créer, afficher, modifier et supprimer des abonnements à des rapports, liés ou non.|  
+|Gérer l'historique de rapport|Créer, afficher et supprimer l'historique de rapport, afficher les propriétés de l'historique de rapport. Afficher et modifier les paramètres qui déterminent les limites de l'historique des instantanés ainsi que le fonctionnement de la mise en cache.|  
 |Gérer les rapports|Ajouter et supprimer des rapports, modifier des paramètres de rapport, afficher et modifier des propriétés de rapport, afficher et modifier des sources de données qui fournissent du contenu au rapport, afficher et modifier des définitions de rapports et définir des stratégies au niveau du rapport.|  
 |Gestion des ressources|Créer, modifier, puis supprimer des ressources et afficher-les. et modifier des propriétés de ressource.|  
-|Afficher les rapports|Exécuter les rapports qui sont stockés dans le dossier Mes Rapports de l'utilisateur et afficher les propriétés des rapports.|  
 |Afficher les sources de données|Afficher les éléments de source de données partagée dans la hiérarchie de dossiers.|  
-|Afficher les ressources|Afficher les ressources et les propriétés des ressources.|  
 |Afficher les dossiers|Afficher le contenu des dossiers.|  
+|Afficher les rapports|Exécuter les rapports qui sont stockés dans le dossier Mes Rapports de l'utilisateur et afficher les propriétés des rapports.|  
+|Afficher les ressources|Afficher les ressources et les propriétés des ressources.|  
   
 ### <a name="customizing-the-my-reports-role"></a>Personnalisation du rôle Mes Rapports  
  Vous pouvez modifier ce rôle en fonction de vos besoins. Toutefois, il est recommandé que vous conserviez les tâches « Gérer les rapports » et « Gérer les dossiers » pour permettre la gestion du contenu de base. En outre, ce rôle doit prendre en charge toutes les tâches d'affichage pour que les utilisateurs puissent voir le contenu des dossiers et exécuter les rapports qu'ils gèrent.  
   
- Bien que la tâche « Définir des stratégies de sécurité pour les éléments » ne fasse pas partie de la définition de rôle par défaut, vous pouvez ajouter cette tâche au rôle **Mes Rapports** pour que les utilisateurs puissent personnaliser les paramètres de sécurité pour les sous-dossiers et les rapports.  
+ Bien que la tâche « Définir la sécurité pour des éléments individuels » ne fasse pas partie de la définition de rôle par défaut, vous pouvez ajouter cette tâche au rôle **Mes Rapports** pour que les utilisateurs puissent personnaliser les paramètres de sécurité pour les sous-dossiers et les rapports.  
   
 ##  <a name="system-administrator-role"></a><a name="bkmk_systemadministrator"></a> Rôle Administrateur système  
  Le rôle **Administrateur système** est un rôle prédéfini qui comprend des tâches utiles pour un administrateur qui a la responsabilité générale du serveur de rapports, mais pas nécessairement de son contenu.  
@@ -189,9 +200,9 @@ ms.locfileid: "91987387"
 |Exécuter les définitions de rapport|Démarrer l'exécution de la définition de rapport sans la publier sur un serveur de rapports.|  
 |Gestion des travaux|Afficher et annuler les travaux en cours d'exécution. Pour plus d’informations, consultez [Gérer un processus en cours d’exécution](../../reporting-services/subscriptions/manage-a-running-process.md).|  
 |Gérer les propriétés du serveur de rapports|Afficher et modifier les propriétés qui s'appliquent au serveur de rapports et aux éléments gérés par le serveur de rapports.<br /><br /> Cette tâche permet le changement de nom du portail web, l'activation de Mes Rapports et la définition des paramètres par défaut de l'historique de rapport.|  
+|Gérer la sécurité du serveur de rapports|Afficher et modifier des attributions de rôles au niveau du système|  
 |Gérer les rôles|Créer, afficher, modifier et supprimer les définitions de rôles.<br /><br /> Les membres du rôle **Administrateur système** peuvent utiliser la page Paramètres du site pour gérer les rôles.|  
 |Gérer les planifications partagées|Créer, afficher, modifier et supprimer les planifications partagées qui sont utilisées pour exécuter ou actualiser les rapports.|  
-|Gérer la sécurité du serveur de rapports|Afficher et modifier des attributions de rôles au niveau du système|  
   
  Le rôle **Administrateur système** est utilisé dans la sécurité par défaut.  
   
