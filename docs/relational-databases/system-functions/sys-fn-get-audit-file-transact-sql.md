@@ -22,19 +22,19 @@ ms.assetid: d6a78d14-bb1f-4987-b7b6-579ddd4167f5
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current||=azure-sqldw-latest
-ms.openlocfilehash: e0e6692a24371b91b57ad2269ec48c43db1e1a8c
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 013586570ce43b8270ae2613c05ced8bc9bdc48b
+ms.sourcegitcommit: c83c17e44b5e1e3e2a3b5933c2a1c4afb98eb772
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99206075"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525213"
 ---
 # <a name="sysfn_get_audit_file-transact-sql"></a>sys.fn_get_audit_file (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]    
 
   Retourne des informations à partir d'un fichier d'audit créé par un audit du serveur dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour plus d’informations, consultez [SQL Server Audit &#40;moteur de base de données&#41;](../../relational-databases/security/auditing/sql-server-audit-database-engine.md).  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,11 +52,11 @@ fn_get_audit_file ( file_pattern,
     
     Cet argument doit inclure à la fois un chemin d'accès (lettre de lecteur ou partage réseau) et un nom de fichier qui peut inclure un caractère générique. Un seul astérisque (*) peut être utilisé pour collecter plusieurs fichiers à partir d’un jeu de fichiers d’audit. Par exemple :  
   
-    -   **\<path>\\\** _-Collecter tous les fichiers d’audit à l’emplacement spécifié.  
+    -   **\<path>\\\*** -Collecter tous les fichiers d’audit à l’emplacement spécifié.  
   
-    -   _* \<path> \LoginsAudit_{Guid} * * _-collecter tous les fichiers d’audit qui ont le nom et la paire de GUID spécifiés.  
+    -   **\<path> \ LOGINSAUDIT_ {GUID}***-collecter tous les fichiers d’audit qui ont le nom et la paire GUID spécifiés.  
   
-    -   _* \<path> \LoginsAudit_{GUID} _00_29384. sqlaudit * *-collecter un fichier d’audit spécifique.  
+    -   **\<path> \ LOGINSAUDIT_ {GUID} _00_29384. sqlaudit** -collecter un fichier d’audit spécifique.  
   
  - **Azure SQL Database**:
  
@@ -115,7 +115,7 @@ fn_get_audit_file ( file_pattern,
 | server_principal_name | **sysname** | Connexion actuelle. Autorise la valeur NULL. |  
 | server_principal_sid | **varbinary** | SID de la connexion actuelle. Autorise la valeur NULL. |  
 | session_id | **smallint** | ID de la session au cours de laquelle l'événement s'est produit. N'accepte pas la valeur NULL. |  
-| session_server_principal_name | **sysname** | Principal de serveur pour la session. Autorise la valeur NULL. |  
+| session_server_principal_name | **sysname** | Principal de serveur pour la session. Autorise la valeur NULL. Retourne l’identité de la connexion d’origine qui a été connectée à l’instance de SQL Server en cas de changements de contexte explicites ou implicites.|  
 | statement | **nvarchar(4000)** | Instruction TSQL si elle existe. Autorise la valeur NULL. Retourne NULL si non applicable. |  
 | réussi | **bit** | Indique si l’action qui a déclenché l’événement a réussi. N'accepte pas la valeur NULL. Pour tous les événements autres que les événements de connexion, cet argument signale uniquement le succès ou l'échec de la vérification des autorisations, mais n'indique rien sur l'opération.<br /> 1 = succès<br /> 0 = échec |
 | target_database_principal_id | **int** | Principal de base de données sur lequel l’opération GRANT/DENY/REVOKE est effectuée. N'accepte pas la valeur NULL. Retourne 0 si non applicable. |  

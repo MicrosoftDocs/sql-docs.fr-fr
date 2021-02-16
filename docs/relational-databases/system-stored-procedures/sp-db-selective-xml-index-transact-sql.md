@@ -17,20 +17,20 @@ helpviewer_keywords:
 - sp_db_selective_xml_index procedure
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 5df370a674026b4c6ebc7eb59985505821e3b028
-ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
+ms.openlocfilehash: ed30d2b8df6141b308d32dee8f2fdcec0c2eceb1
+ms.sourcegitcommit: c83c17e44b5e1e3e2a3b5933c2a1c4afb98eb772
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100489443"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525165"
 ---
 # <a name="sp_db_selective_xml_index-transact-sql"></a>sp_db_selective_xml_index (Transact-SQL)
 [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
   Active ou désactive la fonctionnalité d'index XML sélectif sur une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Appelée sans paramètres, la procédure stockée retourne 1 si l'index XML sélectif est activé sur une base de données particulière.  
-  
+
 > [!NOTE]  
->  Pour désactiver l’index XML sélectif à l’aide de cette procédure stockée, la base de données doit être placée en mode de récupération simple à l’aide des [options ALTER DATABASE SET &#40;commande Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md) .  
+> À compter de [!INCLUDE[sssql14-md](../../includes/sssql14-md.md)] , la fonctionnalité d’index XML sélectif ne peut pas être désactivée. [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Dans [!INCLUDE[sssql11-md](../../includes/sssql11-md.md)] , afin de désactiver la fonctionnalité d’index XML sélectif à l’aide de cette procédure stockée, la base de données doit être placée en mode de récupération simple à l’aide des [options ALTER database SET &#40;commande Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md) .  
   
  ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
