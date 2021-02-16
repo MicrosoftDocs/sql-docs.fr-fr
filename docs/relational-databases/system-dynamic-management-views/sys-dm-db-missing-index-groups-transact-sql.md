@@ -1,6 +1,6 @@
 ---
 description: sys.dm_db_missing_index_groups (Transact-SQL)
-title: sys.dm_db_missing_index_groups (Transact-SQL) | Microsoft Docs
+title: sys.dm_db_missing_index_groups (Transact-SQL)
 ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: sql
@@ -18,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_db_missing_index_groups dynamic management view
 - missing indexes feature [SQL Server], sys.dm_db_missing_index_groups dynamic management view
-ms.assetid: 9cc00acd-d83d-49f8-be72-5b2aebed246b
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: fb82dc8e3a8d47c6f497c7caebc8c0aca24f5b34
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 203e3f190a76299899098cc0cc5a185947ce0428
+ms.sourcegitcommit: c6cc0b669b175ae290cf5b08952010661ebd03c3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99180597"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100530823"
 ---
 # <a name="sysdm_db_missing_index_groups-transact-sql"></a>sys.dm_db_missing_index_groups (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -56,5 +55,4 @@ ms.locfileid: "99180597"
  [sys.dm_db_missing_index_columns &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-columns-transact-sql.md)   
  [sys.dm_db_missing_index_details &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-details-transact-sql.md)   
  [sys.dm_db_missing_index_group_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-group-stats-transact-sql.md)  
-  
-  
+ [sys.dm_db_missing_index_group_stats_query &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-group-stats-query-transact-sql.md)    
