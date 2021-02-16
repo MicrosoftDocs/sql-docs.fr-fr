@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - DATABASE_TSQL
 - DATABASE
@@ -37,12 +37,12 @@ ms.assetid: 29ddac46-7a0f-4151-bd94-75c1908c89f8
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-current||=azuresqldb-mi-current||=azure-sqldw-latest||>=aps-pdw-2016'
-ms.openlocfilehash: 5321af1026b82d2ed49f077d7cf5604bce3a8e69
-ms.sourcegitcommit: 713e5a709e45711e18dae1e5ffc190c7918d52e7
+ms.openlocfilehash: 509e4fc7445371c57d0fed7208d556e53aa18fe8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98689016"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100063034"
 ---
 # <a name="create-database"></a>CREATE DATABASE
 
@@ -371,7 +371,7 @@ SIZE ne peut pas être spécifié quand *os_file_name* est spécifié en tant qu
 
 *size* correspond à la taille initiale du fichier.
 
-Quand *size* n’est pas spécifié pour le fichier primaire, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] utilise la taille du fichier primaire dans la base de données model. La taille par défaut de la base de données model est de 8 Mo (à partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]) ou de 1 Mo (pour les versions antérieures). Quand vous spécifiez un fichier de données secondaire ou un fichier journal, mais que *size* n’est pas spécifié pour le fichier, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] lui donne une taille de 8 Mo (à partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]) ou de 1 Mo (pour les versions antérieures). La taille spécifiée pour le fichier primaire doit être au moins égale à la taille du fichier primaire de la base de données model.
+Quand *size* n’est pas spécifié pour le fichier primaire, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] utilise la taille du fichier primaire dans la base de données model. La taille par défaut de la base de données model est de 8 Mo (à partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]) ou de 1 Mo (pour les versions antérieures). Quand vous spécifiez un fichier de données secondaire ou un fichier journal, mais que *size* n’est pas spécifié pour le fichier, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] lui donne une taille de 8 Mo (à partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]) ou de 1 Mo (pour les versions antérieures). La taille spécifiée pour le fichier primaire doit être au moins égale à la taille du fichier primaire de la base de données model.
 
 Les suffixes kilo-octet (Ko), mégaoctet (Mo), gigaoctet (Go) ou téraoctet (To) peuvent être utilisés. La valeur par défaut est Mo. Indiquez un nombre entier sans aucune décimale. *Size* est une valeur entière. Pour les valeurs supérieures à 2147483647, utilisez des unités plus grandes.
 
@@ -396,7 +396,7 @@ Si FILEGROWTH n’est pas spécifié, les valeurs par défaut sont les suivantes
 
 |Version|Valeurs par défaut|
 |-------------|--------------------|
-|À partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]|64 Mo de données. 64 Mo de fichiers journaux.|
+|À partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]|64 Mo de données. 64 Mo de fichiers journaux.|
 |À partir de [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]|1 Mo de données. 10 % de fichiers journaux.|
 |Avant [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]|10 % de données. 10 % de fichiers journaux.|
 

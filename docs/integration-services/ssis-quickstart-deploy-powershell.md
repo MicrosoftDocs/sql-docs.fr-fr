@@ -9,12 +9,12 @@ ms.custom: ''
 ms.technology: integration-services
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: fba08ada042e526f4f6321f328d67a55dd149b2e
-ms.sourcegitcommit: 192f6a99e19e66f0f817fdb1977f564b2aaa133b
+ms.openlocfilehash: e4cbdedce72ad96da140930dacdfb8955bfc8b60
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96129980"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354241"
 ---
 # <a name="deploy-an-ssis-project-with-powershell"></a>Déployer un projet SSIS avec PowerShell
 

@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: 7b93d0d7-7946-4b78-b33a-57d6307cdfa9
-ms.openlocfilehash: 1d4c924652ec21ab4ed8e7c79d01d7f36835715b
-ms.sourcegitcommit: a5398f107599102af7c8cda815d8e5e9a367ce7e
+ms.openlocfilehash: c27e4095854abd409336c97ac5b8458bf6f62894
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92006556"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345614"
 ---
 # <a name="bulk-copy-data-with-bcp-to-sql-server-on-linux"></a>Copie en bloc de données avec bcp pour SQL Server sur Linux
 
@@ -37,7 +37,7 @@ Cet article vous montre comment :
 
 ## <a name="import-data-with-bcp"></a>Importer des données avec bcp
 
-Dans ce didacticiel, vous allez créer un exemple de base de données et de table sur l'instance locale ( **localhost** ), puis utiliser `bcp` pour charger l’exemple de table à partir d’un fichier texte sur le disque.
+Dans ce didacticiel, vous allez créer un exemple de base de données et de table sur l'instance locale (**localhost**), puis utiliser `bcp` pour charger l’exemple de table à partir d’un fichier texte sur le disque.
 
 ### <a name="create-a-sample-database-and-table"></a>Créer un exemple de base de données et de table
 
@@ -45,18 +45,18 @@ Commençons par créer un exemple de base de données avec une table simple util
 
 1. Sur votre boîte Linux, ouvrez un terminal de commande.
 
-2. Copiez et collez les commandes suivantes dans la fenêtre du terminal. Ces commandes utilisent l'utilitaire de ligne de commande **sqlcmd** pour créer un exemple de base de données ( **BcpSampleDB** ) et une table ( **TestEmployees** ) sur l’instance locale ( **localhost** ). N’oubliez pas de remplacer le `username` et le `<your_password>`, si nécessaire, avant d’exécuter les commandes.
+2. Copiez et collez les commandes suivantes dans la fenêtre du terminal. Ces commandes utilisent l'utilitaire de ligne de commande **sqlcmd** pour créer un exemple de base de données (**BcpSampleDB**) et une table (**TestEmployees**) sur l’instance locale (**localhost**). N’oubliez pas de remplacer le `username` et le `<your_password>`, si nécessaire, avant d’exécuter les commandes.
 
-Pour créer la base de données **BcpSampleDB**  :
+Pour créer la base de données **BcpSampleDB** :
 ```bash 
 sqlcmd -S localhost -U sa -P <your_password> -Q "CREATE DATABASE BcpSampleDB;"
 ```
-Créez la table **TestEmployees** dans la base de données **BcpSampleDB**  :
+Créez la table **TestEmployees** dans la base de données **BcpSampleDB** :
 ```bash 
 sqlcmd -S localhost -U sa -P <your_password> -d BcpSampleDB -Q "CREATE TABLE TestEmployees (Id INT IDENTITY(1,1) NOT NULL PRIMARY KEY, Name NVARCHAR(50), Location NVARCHAR(50));"
 ```
 ### <a name="create-the-source-data-file"></a>Créer le fichier de données source
-Copiez et collez la commande suivante dans la fenêtre du terminal. Nous utilisons la commande `cat` intégrée pour créer un exemple de fichier de données texte avec trois enregistrements et enregistrer le fichier dans votre répertoire de départ sous la forme **~/test_data.txt** . Les champs des enregistrements sont délimités par une virgule.
+Copiez et collez la commande suivante dans la fenêtre du terminal. Nous utilisons la commande `cat` intégrée pour créer un exemple de fichier de données texte avec trois enregistrements et enregistrer le fichier dans votre répertoire de départ sous la forme **~/test_data.txt**. Les champs des enregistrements sont délimités par une virgule.
 
 ```bash
 cat > ~/test_data.txt << EOF
@@ -79,7 +79,7 @@ Ce qui suit s’affiche dans la fenêtre du terminal :
 ```
 
 ### <a name="import-data-from-the-source-data-file"></a>Importer des données à partir du fichier de données source
-Copiez et collez les commandes suivantes dans la fenêtre du terminal. Cette commande utilise `bcp` pour se connecter à l’instance locale ( **localhost** ) et importer les données à partir du fichier de données ( **~/test_data.txt** ) dans la table ( **TestEmployees** ) dans la base de données( **BcpSampleDB** ). N’oubliez pas de remplacer le nom d’utilisateur et le `<your_password>`, si nécessaire, avant d’exécuter les commandes.
+Copiez et collez les commandes suivantes dans la fenêtre du terminal. Cette commande utilise `bcp` pour se connecter à l’instance locale (**localhost**) et importer les données à partir du fichier de données ( **~/test_data.txt**) dans la table (**TestEmployees**) dans la base de données(**BcpSampleDB**). N’oubliez pas de remplacer le nom d’utilisateur et le `<your_password>`, si nécessaire, avant d’exécuter les commandes.
 
 ```bash 
 bcp TestEmployees in ~/test_data.txt -S localhost -U sa -P <your_password> -d BcpSampleDB -c -t  ','
@@ -116,7 +116,7 @@ Id          Name                Location
 
 Dans ce didacticiel, vous allez utiliser `bcp` pour exporter des données à partir de la table d’exemple que nous avons créée précédemment dans un nouveau fichier de données.
 
-Copiez et collez les commandes suivantes dans la fenêtre du terminal. Ces commandes utilisent l'utilitaire de ligne de commande `bcp` pour exporter des données à partir de la table **TestEmployees** dans la base de données **BcpSampleDB** vers un nouveau fichier de données appelé **~/test_export.txt** .  N’oubliez pas de remplacer le nom d’utilisateur et le `<your_password>`, si nécessaire, avant d’exécuter la commande.
+Copiez et collez les commandes suivantes dans la fenêtre du terminal. Ces commandes utilisent l'utilitaire de ligne de commande `bcp` pour exporter des données à partir de la table **TestEmployees** dans la base de données **BcpSampleDB** vers un nouveau fichier de données appelé **~/test_export.txt**.  N’oubliez pas de remplacer le nom d’utilisateur et le `<your_password>`, si nécessaire, avant d’exécuter la commande.
 
 ```bash 
 bcp TestEmployees out ~/test_export.txt -S localhost -U sa -P <your_password> -d BcpSampleDB -c -t ','

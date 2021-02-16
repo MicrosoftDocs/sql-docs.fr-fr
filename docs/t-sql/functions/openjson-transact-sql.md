@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 06/03/2020
 ms.prod: sql
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - OPENJSON
 - OPENJSON_TSQL
@@ -18,12 +18,12 @@ author: jovanpop-msft
 ms.author: jovanpop
 ms.reviewer: chadam
 monikerRange: = azuresqldb-current||= azure-sqldw-latest||>= sql-server-2016||>= sql-server-linux-2017
-ms.openlocfilehash: 1c7b948b1f883d1de6c6bb6556aee25c0e859695
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: b29315567520dff0d4700aeb476279bf6cfe24b7
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98085821"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100340639"
 ---
 # <a name="openjson-transact-sql"></a>OPENJSON (Transact-SQL)
 
@@ -109,7 +109,7 @@ SELECT * FROM OpenJson(@json);
 
 Expression de chemin JSON facultative qui fait référence à un objet ou un tableau dans *jsonExpression*. **OPENJSON** recherche dans le texte JSON à la position spécifiée et analyse uniquement le fragment référencé. Pour plus d’informations, consultez [Expressions de chemin JSON &#40;SQL Server&#41;](../../relational-databases/json/json-path-expressions-sql-server.md).
 
-Dans [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et [!INCLUDE[ssSDSfull_md](../../includes/sssdsfull-md.md)], vous pouvez fournir une variable comme valeur de *path*.
+Dans [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] et [!INCLUDE[ssSDSfull_md](../../includes/sssdsfull-md.md)], vous pouvez fournir une variable comme valeur de *path*.
   
 L’exemple suivant retourne un objet imbriqué en spécifiant le *chemin* :  
 

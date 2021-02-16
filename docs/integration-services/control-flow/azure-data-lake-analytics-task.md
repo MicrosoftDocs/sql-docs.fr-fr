@@ -12,12 +12,12 @@ f1_keywords:
 author: yanancai
 ms.author: yanacai
 ms.reviewer: maghan
-ms.openlocfilehash: d3fd592913164d92851ca738090de9dd200df66f
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 2bc717a0dc59c0d880e7095e18a0c97432519e56
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91719235"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346572"
 ---
 # <a name="azure-data-lake-analytics-task"></a>Tâche Azure Data Lake Analytics
 

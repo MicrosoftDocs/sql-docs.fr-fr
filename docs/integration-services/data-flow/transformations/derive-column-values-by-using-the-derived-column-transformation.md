@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 28b07746-fc6f-42b2-b741-9de6fac3f29c
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 30708e4bfb6dc21aa3f110a74754600aa3492b0e
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 06ecff11e6fc32ad59e6457ec2404292a9c22955
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88348415"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353721"
 ---
 # <a name="derive-column-values-with-the-derived-column-transformation"></a>Dériver les valeurs de colonnes avec la transformation de colonne dérivée
 
@@ -53,7 +53,7 @@ ms.locfileid: "88348415"
   
      Si vous choisissez d’utiliser une nouvelle colonne, la boîte de dialogue **Éditeur de transformation de colonne dérivée** évalue l’expression et affecte un type de données à la colonne en fonction du type de données, de la longueur, de la précision, de l’échelle et de la page de codes.  
   
-8.  Si vous utilisez une nouvelle colonne, sélectionnez un type de données dans la liste **Type de données** . En fonction du type de données sélectionné et si vous le souhaitez, mettez à jour les valeurs des colonnes **Longueur**, **Précision**, **Échelle**et **Page de codes** . Les métadonnées des colonnes existantes ne peuvent pas être modifiées.  
+8.  Si vous utilisez une nouvelle colonne, sélectionnez un type de données dans la liste **Type de données** . En fonction du type de données sélectionné et si vous le souhaitez, mettez à jour les valeurs des colonnes **Longueur**, **Précision**, **Échelle** et **Page de codes** . Les métadonnées des colonnes existantes ne peuvent pas être modifiées.  
   
 9. Si vous le souhaitez, modifiez les valeurs de la colonne **Nom de la colonne dérivée** .  
   

@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: b7422911-7524-4bcd-9ab9-e460d5897b3d
 author: DavidTrigano
 ms.author: datrigan
-ms.openlocfilehash: e435d8c94dfdfc8f989875d48440554e04405376
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 0ab7abaaa4473bdc1d4a309ce3ccf0103a33a54a
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172491"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100344424"
 ---
 # <a name="sql-server-audit-action-groups-and-actions"></a>Actions et groupes d’actions SQL Server Audit
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -126,7 +126,7 @@ ms.locfileid: "98172491"
  Les actions de niveau serveur ne permettent pas un filtrage détaillé des actions au niveau de la base de données. Un audit de niveau base de données, tel que l'audit d'actions SELECT sur la table Customers pour les connexions dans le groupe Employee est requis pour implémenter le filtrage d'action détaillé. N'incluez pas d'objets dans l'étendue du serveur, tels que les vues système, dans une spécification d'audit de base de données utilisateur.  
 
  > [!NOTE]
- > En raison de la surcharge qu’implique l’activation de l’audit au niveau des transactions, dans [!INCLUDE[ssSQL15](../../../includes/sssql16-md.md)] SP2 CU3 et [!INCLUDE[ssSQL17](../../../includes/sssql17-md.md)] CU4 et versions ultérieures, l’audit au niveau des transactions est désactivé par défaut, sauf si la conformité des critères communs est activée.  Si la conformité des critères communs est désactivée, vous pourrez toujours ajouter une action à partir de TRANSACTION_GROUP dans une spécification d’audit. Toutefois, aucune action de transaction ne sera collectée.  Si vous envisagez de configurer toutes les actions d’audit de TRANSACTION_GROUP, activez l’infrastructure d’audit au niveau des transactions en activant la conformité des critères communs (ceci est valable pour [!INCLUDE[ssSQL15](../../../includes/sssql16-md.md)] SP2 CU3 et [!INCLUDE[ssSQL17](../../../includes/sssql17-md.md)] CU4 et versions ultérieures).  Notez que dans [!INCLUDE[ssSQL15](../../../includes/sssql16-md.md)], l’audit au niveau des transactions peut également être désactivé avec l’indicateur de trace 3427 (à partir de la version SP1 CU2).
+ > En raison de la surcharge qu’implique l’activation de l’audit au niveau des transactions, dans [!INCLUDE[sssql16-md](../../../includes/sssql16-md.md)] SP2 CU3 et [!INCLUDE[ssSQL17](../../../includes/sssql17-md.md)] CU4 et versions ultérieures, l’audit au niveau des transactions est désactivé par défaut, sauf si la conformité des critères communs est activée.  Si la conformité des critères communs est désactivée, vous pourrez toujours ajouter une action à partir de TRANSACTION_GROUP dans une spécification d’audit. Toutefois, aucune action de transaction ne sera collectée.  Si vous envisagez de configurer toutes les actions d’audit de TRANSACTION_GROUP, activez l’infrastructure d’audit au niveau des transactions en activant la conformité des critères communs (ceci est valable pour [!INCLUDE[sssql16-md](../../../includes/sssql16-md.md)] SP2 CU3 et [!INCLUDE[ssSQL17](../../../includes/sssql17-md.md)] CU4 et versions ultérieures).  Notez que dans [!INCLUDE[sssql16-md](../../../includes/sssql16-md.md)], l’audit au niveau des transactions peut également être désactivé avec l’indicateur de trace 3427 (à partir de la version SP1 CU2).
   
 ## <a name="database-level-audit-action-groups"></a>Groupes d'actions d'audit de niveau base de données  
  Les groupes d’actions d’audit de niveau base de données sont des actions semblables aux classes d’événements d’audit de sécurité [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Pour plus d'informations sur les classes d'événements, consultez [Référence de classe d'événements SQL Server](../../../relational-databases/event-classes/sql-server-event-class-reference.md).  

@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 1c846950-0a2d-45df-b0d5-193e455f7cd5
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: dc4e8fb6adfbad8fc1c338a717bee625b216740c
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: f3cb4e183bdc9213186b05b6e86e26e5b4ac54e9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97640755"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352275"
 ---
 # <a name="start-the-configuring-database-mirroring-security-wizard"></a>Démarrer l’Assistant Configuration de la sécurité de la mise en miroir de bases de données
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

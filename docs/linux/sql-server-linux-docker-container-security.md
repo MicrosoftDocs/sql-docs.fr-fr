@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 moniker: '>= sql-server-linux-2017 || >= sql-server-2017 '
-ms.openlocfilehash: 88c179b1a17dd84dc33c2ae77979507e82b7a55a
-ms.sourcegitcommit: cb8e2ce950d8199470ff1259c9430f0560f0dc1d
+ms.openlocfilehash: c120dedfaf7c83be5b4a4c67f07def520280c602
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878751"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348179"
 ---
 # <a name="secure-sql-server-docker-containers"></a>Sécuriser des conteneurs Docker SQL Server
 

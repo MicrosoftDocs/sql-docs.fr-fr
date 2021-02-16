@@ -15,12 +15,12 @@ ms.assetid: e06344a4-22a5-4c67-b6c6-a7060deb5de6
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current||=azure-sqldw-latest
-ms.openlocfilehash: e61f723ddbc3010cc705c076675b731482fdee6b
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: c8a836f1a8daf2b4b6a9d5b76156191799013484
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171841"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341715"
 ---
 # <a name="monitoring-performance-by-using-the-query-store"></a>Surveillance des performances à l’aide du magasin de requêtes
 
@@ -31,7 +31,7 @@ La fonctionnalité de magasin de requêtes [!INCLUDE[ssNoVersion](../../includes
 Pour plus d’informations sur l’utilisation du Magasin des requêtes dans Azure [!INCLUDE[ssSDS](../../includes/sssds-md.md)], consultez [Utilisation du Magasin des requêtes dans Azure SQL Database](best-practice-with-the-query-store.md#Insight).
 
 > [!IMPORTANT]
-> Si vous utilisez le Magasin des requêtes pour avoir un aperçu juste-à-temps de la charge de travail dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], prévoyez d’installer les correctifs d’évolutivité des performances dans [KB 4340759](https://support.microsoft.com/help/4340759) dès que possible.
+> Si vous utilisez le Magasin des requêtes pour avoir un aperçu juste-à-temps de la charge de travail dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], prévoyez d’installer les correctifs d’évolutivité des performances dans [KB 4340759](https://support.microsoft.com/help/4340759) dès que possible.
 
 ## <a name="enabling-the-query-store"></a><a name="Enabling"></a> Activation du magasin de requêtes
 
@@ -645,7 +645,7 @@ Quand vous utilisez **sp_query_store_force_plan** , vous pouvez uniquement force
 
 #### <a name="a-namectp23-plan-forcing-support-for-fast-forward-and-static-cursors"></a><a name="ctp23"><a/> Considérer l’application forcée du support de l’avance rapide et des curseurs statiques
 
-À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et d’Azure SQL Database (tous les modèles de déploiement), le Magasin des requêtes prend en charge la possibilité de forcer des plans d’exécution de requêtes pour l’avance rapide et les curseurs [!INCLUDE[tsql](../../includes/tsql-md.md)] et d’API statiques. Le forçage est pris en charge via `sp_query_store_force_plan` ou via les rapports du magasin des requêtes [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)].
+À compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] et d’Azure SQL Database (tous les modèles de déploiement), le Magasin des requêtes prend en charge la possibilité de forcer des plans d’exécution de requêtes pour l’avance rapide et les curseurs [!INCLUDE[tsql](../../includes/tsql-md.md)] et d’API statiques. Le forçage est pris en charge via `sp_query_store_force_plan` ou via les rapports du magasin des requêtes [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)].
 
 ### <a name="remove-plan-forcing-for-a-query"></a>Annuler l’application forcée du plan pour une requête
 

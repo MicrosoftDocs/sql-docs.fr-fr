@@ -13,12 +13,12 @@ f1_keywords:
 ms.assetid: dcb6374d-becb-4c6c-b88c-5a8273f8aa38
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f5171195bb3d275eb170330565cd9f90531dc0c6
-ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
+ms.openlocfilehash: 82671e390d67faf6a7059a0d4c267dd744b5a936
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98783397"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100352573"
 ---
 # <a name="specify-availability-group-options-page-for-an-always-on-availability-group"></a>Page Spécifier les options du groupe de disponibilité pour un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -36,11 +36,11 @@ ms.locfileid: "98783397"
 
    * **EXTERNAL**
       
-      À utiliser quand le groupe de disponibilité est hébergé sur une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] qui est gérée par une technologie de cluster externe pour la haute disponibilité et la récupération d’urgence, par exemple Pacemaker sur Linux. S’applique à [!INCLUDE[sssqlv14](../../../includes/sssqlv14-md.md)] et ultérieur.
+      À utiliser quand le groupe de disponibilité est hébergé sur une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] qui est gérée par une technologie de cluster externe pour la haute disponibilité et la récupération d’urgence, par exemple Pacemaker sur Linux. S’applique à [!INCLUDE[sssql14](../../../includes/sssql17-md.md)] et ultérieur.
 
    * **NONE**
       
-      À utiliser quand le groupe de disponibilité est hébergé sur une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] qui n’est pas gérée par une technologie de cluster pour la mise à l’échelle en lecture et l’équilibrage de charge. S’applique à [!INCLUDE[sssqlv14](../../../includes/sssqlv14-md.md)] et ultérieur. 
+      À utiliser quand le groupe de disponibilité est hébergé sur une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] qui n’est pas gérée par une technologie de cluster pour la mise à l’échelle en lecture et l’équilibrage de charge. S’applique à [!INCLUDE[sssql14](../../../includes/sssql17-md.md)] et ultérieur. 
  
    **Détection de l’état d’intégrité au niveau base de données** Cochez cette case pour activer l’option de détection de l’état d’intégrité au niveau base de données (DB_FAILOVER) pour le groupe de disponibilité. La détection de l’état d’intégrité de base de données indique quand une base de données n’est plus en ligne ou quand un problème se produit, puis déclenche le basculement automatique du groupe de disponibilité. Consultez [Option Détection de l’état d’intégrité au niveau base de données Always On SQL Server](sql-server-always-on-database-health-detection-failover-option.md).
 

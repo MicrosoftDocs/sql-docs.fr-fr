@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: fd7efe79-c1f9-497d-bfe7-b2a2b2321cf5
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 5a6cdaf5ef76f5777dd13cddabd469a55cd2102b
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 9e1d98fc820215de35e11cb06843884968dd5b3a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98766426"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348455"
 ---
 # <a name="join-a-secondary-database-to-an-always-on-availability-group"></a>Joindre une base de données secondaire à un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

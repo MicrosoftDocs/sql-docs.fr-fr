@@ -13,12 +13,12 @@ ms.assetid: 5b13b5ac-1e4c-45e7-bda7-ebebe2784551
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 4054435b8341ab60d08866acb017ef85892f4faa
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 83985f8cb34b9efa8485f9827dd9692a38f91a65
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170581"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100344794"
 ---
 # <a name="best-practices-with-query-store"></a>Bonnes pratiques relatives au Magasin des requêtes
 
@@ -73,7 +73,7 @@ Les paramètres par défaut sont assez bons pour démarrer, mais vous devez surv
 
 Pendant que le Magasin des requêtes collecte des requêtes, des plans d’exécution et des statistiques, sa taille dans la base de données croît jusqu’à atteindre cette limite. Quand cela se produit, le magasin de requêtes change automatiquement de mode d’opération pour passer en lecture seule et cesse de collecter les nouvelles données, ce qui signifie que l’analyse de vos performances n’est plus précise.
 
-La valeur par défaut dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] est de 100 Mo. Cette taille peut ne pas suffire si votre charge de travail génère un grand nombre de requêtes et de plans différents, ou si vous souhaitez conserver plus longtemps l’historique de requêtes. À partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], la valeur par défaut est de 1 Go. Effectuez le suivi de l’utilisation de l’espace actuelle et augmentez la valeur **Taille maximale (Mo)** pour empêcher le Magasin des requêtes de passer en mode lecture seule.
+La valeur par défaut dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] est de 100 Mo. Cette taille peut ne pas suffire si votre charge de travail génère un grand nombre de requêtes et de plans différents, ou si vous souhaitez conserver plus longtemps l’historique de requêtes. À partir de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], la valeur par défaut est de 1 Go. Effectuez le suivi de l’utilisation de l’espace actuelle et augmentez la valeur **Taille maximale (Mo)** pour empêcher le Magasin des requêtes de passer en mode lecture seule.
 
 > [!IMPORTANT]
 > La limite **Taille maximale (Mo)** n’est pas strictement appliquée. La taille de stockage est vérifiée seulement quand le Magasin des requêtes écrit des données sur le disque. Cet intervalle est défini par l’option **Intervalle de vidage des données (minutes)** . Si le Magasin des requêtes a enfreint la limite de taille maximale entre les vérifications de taille de stockage, il passe en mode lecture seule. Si l’option **Mode de nettoyage basé sur la taille** est activée, le mécanisme de nettoyage permettant d’appliquer la limite de taille maximale est également déclenché.
@@ -133,8 +133,8 @@ SET QUERY_STORE (SIZE_BASED_CLEANUP_MODE = AUTO);
 
 **Mode de capture du Magasin des requêtes** : spécifie la stratégie de capture des requêtes du Magasin des requêtes.
 
-- **Tout** : Capture toutes les requêtes. Cette option est l’option par défaut dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)].
-- **Auto** : les requêtes peu fréquentes et les requêtes dont la durée de compilation et d’exécution n’est pas significative sont ignorées. Les seuils concernant le nombre d’exécutions, la durée de compilation et la durée d’exécution sont déterminés en interne. À partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], il s’agit de l’option par défaut.
+- **Tout** : Capture toutes les requêtes. Cette option est l’option par défaut dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)].
+- **Auto** : les requêtes peu fréquentes et les requêtes dont la durée de compilation et d’exécution n’est pas significative sont ignorées. Les seuils concernant le nombre d’exécutions, la durée de compilation et la durée d’exécution sont déterminés en interne. À partir de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], il s’agit de l’option par défaut.
 - **Aucun** : le Magasin des requêtes cesse de capturer les nouvelles requêtes.
 - **Personnalisé** : permet un contrôle supplémentaire et permet d’ajuster la stratégie de collecte des données. Les nouveaux paramètres personnalisés définissent ce qui se passe pendant la durée seuil de la stratégie de capture interne. Il s’agit d’une durée limite pendant laquelle les conditions configurables sont évaluées et, si elles ont la valeur true, la requête peut être capturée par le Magasin des requêtes.
 
@@ -150,7 +150,7 @@ SET QUERY_STORE (QUERY_CAPTURE_MODE = AUTO);
 
 ### <a name="examples"></a>Exemples
 
-L’exemple suivant définit QUERY_CAPTURE_MODE sur AUTO et définit d’autres options recommandées dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] :
+L’exemple suivant définit QUERY_CAPTURE_MODE sur AUTO et définit d’autres options recommandées dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] :
 
 ```sql
 ALTER DATABASE [QueryStoreDB]
@@ -183,7 +183,7 @@ SET QUERY_STORE = ON
     );
 ```
 
-L’exemple suivant définit QUERY_CAPTURE_MODE sur AUTO et définit d’autres options recommandées dans [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], et il définit *éventuellement* la stratégie de capture CUSTOM (personnalisée) avec ses valeurs par défaut, au lieu du mode de capture AUTO :
+L’exemple suivant définit QUERY_CAPTURE_MODE sur AUTO et définit d’autres options recommandées dans [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], et il définit *éventuellement* la stratégie de capture CUSTOM (personnalisée) avec ses valeurs par défaut, au lieu du mode de capture AUTO :
 
 ```sql
 ALTER DATABASE [QueryStoreDB]
@@ -225,7 +225,7 @@ Les vues du magasin de requêtes de[!INCLUDE[ssManStudio](../../includes/ssmanst
 
 |Version [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|Métrique d’exécution|Fonction statistique|
 |----------------------|----------------------|------------------------|
-|[!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]|Temps processeur, Durée, Nombre d’exécutions, Lectures logiques, Écritures logiques, Consommation de mémoire, Lectures physiques, Durée du CLR, Degré de parallélisme et Nombre de lignes|Moyenne, Maximum, Minimum, Écart type, Total|
+|[!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]|Temps processeur, Durée, Nombre d’exécutions, Lectures logiques, Écritures logiques, Consommation de mémoire, Lectures physiques, Durée du CLR, Degré de parallélisme et Nombre de lignes|Moyenne, Maximum, Minimum, Écart type, Total|
 |[!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]|Temps processeur, Durée, Nombre d’exécutions, Lectures logiques, Écritures logiques, Consommation de mémoire, Lectures physiques, Durée du CLR, Degré de parallélisme, Nombre de lignes, Mémoire utilisée par la journalisation, Mémoire tempdb et Délai d’attente|Moyenne, Maximum, Minimum, Écart type, Total|
 
 Le graphique suivant montre comment trouver les vues du magasin de requêtes :
@@ -332,7 +332,7 @@ FROM sys.database_query_store_options;
 
 Si le problème persiste, cela indique que l’endommagement des données du Magasin des requêtes est rendu persistant sur le disque.
 
-Depuis [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], le Magasin des requêtes peut être récupéré via l’exécution de la procédure stockée **sp_query_store_consistency_check** dans la base de données affectée. Il faut désactiver le Magasin des requêtes avant de tenter l’opération de récupération. Pour [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], vous devez effacer les données du Magasin des requêtes comme cela est indiqué.
+Depuis [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], le Magasin des requêtes peut être récupéré via l’exécution de la procédure stockée **sp_query_store_consistency_check** dans la base de données affectée. Il faut désactiver le Magasin des requêtes avant de tenter l’opération de récupération. Pour [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], vous devez effacer les données du Magasin des requêtes comme cela est indiqué.
 
 Si la récupération a échoué, vous pouvez essayer d’effacer le contenu du Magasin des requêtes avant de définir le mode lecture-écriture.
 
@@ -358,10 +358,10 @@ Conservez les données les plus pertinentes dans le magasin de requêtes. Le tab
 
 |Mode de capture du magasin des requêtes|Scénario|
 |------------------------|--------------|
-|**Tout**|Analysez minutieusement votre charge de travail, c’est-à-dire toutes les formes de requêtes, leur fréquence d’exécution et les autres statistiques.<br /><br /> Identifiez les nouvelles requêtes dans votre charge de travail.<br /><br /> Détectez si des requêtes ad hoc sont utilisées pour identifier les opportunités de paramétrage défini par l’utilisateur ou automatique.<br /><br />Remarque : Il s’agit du mode de capture par défaut dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)].|
-|**Automatique**|Concentrez-vous sur les requêtes pertinentes et actionnables. Les requêtes qui s’exécutent régulièrement ou qui consomment beaucoup de ressources en sont un exemple.<br /><br />Remarque : à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], il s’agit du mode de capture par défaut.|
+|**Tout**|Analysez minutieusement votre charge de travail, c’est-à-dire toutes les formes de requêtes, leur fréquence d’exécution et les autres statistiques.<br /><br /> Identifiez les nouvelles requêtes dans votre charge de travail.<br /><br /> Détectez si des requêtes ad hoc sont utilisées pour identifier les opportunités de paramétrage défini par l’utilisateur ou automatique.<br /><br />Remarque : Il s’agit du mode de capture par défaut dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)].|
+|**Automatique**|Concentrez-vous sur les requêtes pertinentes et actionnables. Les requêtes qui s’exécutent régulièrement ou qui consomment beaucoup de ressources en sont un exemple.<br /><br />Remarque : à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], il s’agit du mode de capture par défaut.|
 |**Aucun**|Vous avez déjà capturé le jeu de requêtes que vous vouliez surveiller dans le runtime et souhaitez éliminer les confusions que pourraient provoquer les autres requêtes.<br /><br /> L’option Aucun est adaptée aux environnements de test et d’évaluation.<br /><br /> Elle est aussi appropriée pour les éditeurs de logiciels qui proposent le magasin de requêtes avec une configuration destinée à surveiller la charge de travail de leur application.<br /><br /> Cette option doit être utilisée avec précaution, car vous risquez de ne pas pouvoir suivre et optimiser de nouvelles requêtes importantes. Évitez d’utiliser l’option Aucun(e) sauf si l’un de vos scénarios l’exige.|
-|**Personnalisée**|[!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] introduit un mode de capture personnalisé sous la commande `ALTER DATABASE SET QUERY_STORE`. Quand ce mode est activé, vous pouvez affiner la collecte de données sur un serveur spécifique au moyen de configurations supplémentaires du Magasin des requêtes, disponibles sous un nouveau paramètre de stratégie de capture du Magasin des requêtes.<br /><br />Les nouveaux paramètres personnalisés définissent ce qui se passe pendant la durée seuil de la stratégie de capture interne. Il s’agit d’une durée limite pendant laquelle les conditions configurables sont évaluées et, si elles ont la valeur true, la requête peut être capturée par le Magasin des requêtes. Pour plus d’informations, consultez [Options ALTER DATABASE SET &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md).|
+|**Personnalisée**|[!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] introduit un mode de capture personnalisé sous la commande `ALTER DATABASE SET QUERY_STORE`. Quand ce mode est activé, vous pouvez affiner la collecte de données sur un serveur spécifique au moyen de configurations supplémentaires du Magasin des requêtes, disponibles sous un nouveau paramètre de stratégie de capture du Magasin des requêtes.<br /><br />Les nouveaux paramètres personnalisés définissent ce qui se passe pendant la durée seuil de la stratégie de capture interne. Il s’agit d’une durée limite pendant laquelle les conditions configurables sont évaluées et, si elles ont la valeur true, la requête peut être capturée par le Magasin des requêtes. Pour plus d’informations, consultez [Options ALTER DATABASE SET &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md).|
 
 > [!NOTE]
 > Les curseurs, les requêtes dans les procédures stockées et les requêtes compilées en mode natif sont toujours capturés quand le mode de capture du Magasin des requêtes est défini sur **Tous**, **Auto** ou **Personnalisé**. Pour capturer des requêtes compilées en mode natif, activez la collecte des statistiques par requête avec [sys.sp_xtp_control_query_exec_stats](../../relational-databases/system-stored-procedures/sys-sp-xtp-control-query-exec-stats-transact-sql.md).
@@ -428,13 +428,13 @@ Les indicateurs de trace globaux 7745 et 7752 peuvent être utilisés pour amél
 - L’indicateur de trace 7752 permet le chargement asynchrone du Magasin des requêtes. Cela permet de mettre en ligne une base de données et d’exécuter des requêtes avant la récupération complète du Magasin des requêtes. Le comportement par défaut consiste à charger de façon synchrone le Magasin de données des requêtes. Le comportement par défaut empêche l’exécution des requêtes avant la récupération du Magasin des requêtes, mais il évite également qu’une requête soit manquée lors de la collecte des données.
 
 > [!NOTE]
-> À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], ce comportement est contrôlé par le moteur, et l’indicateur de trace 7752 n’a pas d’effet.
+> À compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], ce comportement est contrôlé par le moteur, et l’indicateur de trace 7752 n’a pas d’effet.
 
 > [!IMPORTANT]
-> Si vous utilisez le Magasin des requêtes pour avoir des aperçus juste-à-temps de la charge de travail dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], prévoyez d’installer dès que possible les correctifs de scalabilité des performances figurant dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 CU2 ([KB 4340759](https://support.microsoft.com/help/4340759)). Sans ces améliorations, lorsque la base de données est sous des charges de travail lourdes, une contention de verrouillages spinlock peut se produire et les performances du serveur peuvent devenir lentes. En particulier, vous pouvez constater une contention importante sur le verrouillage spinlock `QUERY_STORE_ASYNC_PERSIST` ou `SPL_QUERY_STORE_STATS_COOKIE_CACHE`. Une fois cette amélioration appliquée, le Magasin des requêtes n’entraîne plus de contention de verrouillages spinlock.
+> Si vous utilisez le Magasin des requêtes pour avoir des aperçus juste-à-temps de la charge de travail dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], prévoyez d’installer dès que possible les correctifs de scalabilité des performances figurant dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 CU2 ([KB 4340759](https://support.microsoft.com/help/4340759)). Sans ces améliorations, lorsque la base de données est sous des charges de travail lourdes, une contention de verrouillages spinlock peut se produire et les performances du serveur peuvent devenir lentes. En particulier, vous pouvez constater une contention importante sur le verrouillage spinlock `QUERY_STORE_ASYNC_PERSIST` ou `SPL_QUERY_STORE_STATS_COOKIE_CACHE`. Une fois cette amélioration appliquée, le Magasin des requêtes n’entraîne plus de contention de verrouillages spinlock.
 
 > [!IMPORTANT]
-> Si vous utilisez le Magasin des requêtes pour obtenir des insights de la charge de travail juste-à-temps dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]), prévoyez d’installer dès que possible l’amélioration de la scalabilité des performances de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 CU15, [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU22 et [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU8. Sans cette amélioration, lorsque la base de données est sous des charges de travail ad hoc lourdes, le Magasin des requêtes peut utiliser une grande quantité de mémoire et les performances du serveur peuvent devenir lentes. Une fois cette amélioration appliquée, le Magasin des requêtes impose des limites internes à la quantité de mémoire que ses différents composants peuvent utiliser et peut automatiquement changer le mode d’opération en lecture seule jusqu’à ce que la mémoire soit suffisamment retournée au [!INCLUDE[ssde_md](../../includes/ssde_md.md)]. Notez que les limites de mémoire interne du Magasin des requêtes ne sont pas documentées, car elles sont sujettes à modification.  
+> Si vous utilisez le Magasin des requêtes pour obtenir des insights de la charge de travail juste-à-temps dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]), prévoyez d’installer dès que possible l’amélioration de la scalabilité des performances de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 CU15, [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU22 et [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU8. Sans cette amélioration, lorsque la base de données est sous des charges de travail ad hoc lourdes, le Magasin des requêtes peut utiliser une grande quantité de mémoire et les performances du serveur peuvent devenir lentes. Une fois cette amélioration appliquée, le Magasin des requêtes impose des limites internes à la quantité de mémoire que ses différents composants peuvent utiliser et peut automatiquement changer le mode d’opération en lecture seule jusqu’à ce que la mémoire soit suffisamment retournée au [!INCLUDE[ssde_md](../../includes/ssde_md.md)]. Notez que les limites de mémoire interne du Magasin des requêtes ne sont pas documentées, car elles sont sujettes à modification.  
 
 
 ## <a name="using-query-store-in-azure-sql-database-active-geo-replication"></a><a name="geosyncreplicas"></a> Utilisation du Magasin des requêtes dans la géoréplication active d’Azure SQL Database

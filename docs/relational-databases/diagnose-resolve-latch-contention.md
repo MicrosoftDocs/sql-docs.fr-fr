@@ -9,12 +9,12 @@ ms.topic: how-to
 author: bluefooted
 ms.author: pamela
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: af2caf850d3f7facb61a7484c5af44e4ba785fa3
-ms.sourcegitcommit: 5f9d682924624fe1e1a091995cd3a673605a4e31
+ms.openlocfilehash: 67f6fe5f8c1577142ac2356a070a954f94b856f1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98860912"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100075013"
 ---
 # <a name="diagnose-and-resolve-latch-contention-on-sql-server"></a>Diagnostiquer et résoudre la contention de latchs sur SQL Server
 
@@ -89,16 +89,16 @@ Utilisez l’objet **SQL Server:Latches** et les compteurs associés de l’Anal
 
 Les informations sur les attentes cumulées sont suivies par SQL Server et sont accessibles via la vue de gestion dynamique *sys.dm_os_wait_stats*. SQL Server utilise trois types d’attente de latch tels que définis par le « wait_type » correspondant dans la vue de gestion dynamique *sys.dm_os_wait_stats* :
 
-* **Latch de mémoire tampon (BUF) :**  : utilisé pour garantir la cohérence des pages d’index et de données pour les objets utilisateur. Ils sont également utilisés pour protéger l’accès aux pages de données que SQL Server utilise pour les objets système. Par exemple, les pages qui gèrent les allocations sont protégées par des latchs de mémoire tampon. Il s’agit des pages PFS (Page Free Space), GAM (Global Allocation Map), SGAM (Shared Global Allocation Map) et IAM (Index Allocation Map). Les latchs de mémoire tampon sont signalés dans *sys.dm_os_wait_stats* par le *wait_type* **PAGELATCH\_\** _.
+* **Latch de mémoire tampon (BUF) :**  : utilisé pour garantir la cohérence des pages d’index et de données pour les objets utilisateur. Ils sont également utilisés pour protéger l’accès aux pages de données que SQL Server utilise pour les objets système. Par exemple, les pages qui gèrent les allocations sont protégées par des latchs de mémoire tampon. Il s’agit des pages PFS (Page Free Space), GAM (Global Allocation Map), SGAM (Shared Global Allocation Map) et IAM (Index Allocation Map). Les latchs de mémoire tampon sont signalés dans *sys.dm_os_wait_stats* par le *wait_type* **PAGELATCH\_\*** .
 
-_ **Latch non-mémoire tampon (non-BUF) :**  : utilisé pour garantir la cohérence des structures en mémoire autres que les pages du pool de mémoires tampons. Les attentes pour les latchs non-mémoire tampon sont signalées par le *wait_type* **LATCH\_\** _.
+* **Latch non-mémoire tampon (non-BUF) :**  : utilisé pour garantir la cohérence des structures en mémoire autres que les pages du pool de mémoires tampons. Les attentes pour les latchs non-mémoire tampon sont signalées par le *wait_type* **LATCH\_\*** .
 
-_ **Latch d’E/S :** un sous-ensemble de latchs de mémoire tampon qui garantissent la cohérence des mêmes structures protégées par des latchs de mémoire tampon quand ces structures nécessitent un chargement dans le pool de mémoires tampons avec une opération d’E/S. Les latchs d’E/S empêchent un autre thread de charger la même page dans le pool de mémoires tampons avec un latch incompatible. Associé à un *wait_type* **PAGEIOLATCH\_\** _.
+* **Latch d’E/S :** un sous-ensemble de latchs de mémoire tampon qui garantissent la cohérence des mêmes structures protégées par des latchs de mémoire tampon quand ces structures nécessitent un chargement dans le pool de mémoires tampons avec une opération d’E/S. Les latchs d’E/S empêchent un autre thread de charger la même page dans le pool de mémoires tampons avec un latch incompatible. Associé à un *wait_type* **PAGEIOLATCH\_\*** .
 
    > [!NOTE]
    > Si vous voyez une quantité significative d’attentes PAGEIOLATCH, cela signifie que SQL Server est en attente sur le sous-système d’E/S. Alors qu’une certaine quantité d’attentes PAGEIOLATCH est attendue ainsi qu’un comportement normal, si les temps d’attente PAGEIOLATCH moyens sont régulièrement au-dessus de 10 millisecondes (ms), vous devez rechercher la raison pour laquelle le sous-système d’E/S est sous pression.
 
-Si, en regardant la vue de gestion dynamique _sys.dm_os_wait_stats*, vous voyez des latchs non-mémoire tampon, vous devez examiner *sys.dm_os_latch_waits* pour obtenir une répartition détaillée des informations sur les attentes cumulées pour les latchs non-mémoire tampon. Toutes les attentes de latchs de mémoire tampon sont classifiées sous la classe de latch BUFFER, les autres étant utilisées pour classifier les verrous non-mémoire tampon.
+Si, en regardant la vue de gestion dynamique *sys.dm_os_wait_stats*, vous voyez des latchs non-mémoire tampon, vous devez examiner *sys.dm_os_latch_waits* pour obtenir une répartition détaillée des informations sur les attentes cumulées pour les latchs non-mémoire tampon. Toutes les attentes de latchs de mémoire tampon sont classifiées sous la classe de latch BUFFER, les autres étant utilisées pour classifier les verrous non-mémoire tampon.
 
 ## <a name="symptoms-and-causes-of-sql-server-latch-contention"></a>Symptômes et causes de la contention de latchs SQL Server
 

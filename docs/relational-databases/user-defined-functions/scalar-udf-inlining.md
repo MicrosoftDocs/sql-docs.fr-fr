@@ -15,18 +15,18 @@ ms.assetid: ''
 author: s-r-k
 ms.author: karam
 monikerRange: = azuresqldb-current || >= sql-server-ver15
-ms.openlocfilehash: 8d116fbf036540337bef9d0b21bb66f79017bfd2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 5e2dd566b0c5842636619c8331bfc88378dc4f84
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97464500"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350861"
 ---
 # <a name="scalar-udf-inlining"></a>Incorporation des fonctions UDF scalaires
 
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
-Cet article présente l’incorporation (inlining) des fonctions UDF scalaires. Il s’agit d’une fonctionnalité qui est prise en charge dans la suite de fonctionnalités de [traitement intelligent des requêtes](../../relational-databases/performance/intelligent-query-processing.md). Cette fonctionnalité améliore les performances des requêtes qui appellent des fonctions scalaires définies par l’utilisateur dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à partir de [!INCLUDE[ssSQLv15](../../includes/sssqlv15-md.md)]).
+Cet article présente l’incorporation (inlining) des fonctions UDF scalaires. Il s’agit d’une fonctionnalité qui est prise en charge dans la suite de fonctionnalités de [traitement intelligent des requêtes](../../relational-databases/performance/intelligent-query-processing.md). Cette fonctionnalité améliore les performances des requêtes qui appellent des fonctions scalaires définies par l’utilisateur dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à partir de [!INCLUDE[sssql19](../../includes/sssql19-md.md)]).
 
 ## <a name="t-sql-scalar-user-defined-functions"></a>Fonctions UDF (définies par l’utilisateur) scalaires T-SQL
 Les fonctions définies par l’utilisateur (UDF) qui sont implémentées dans [!INCLUDE[tsql](../../includes/tsql-md.md)] et qui retournent une valeur de données unique sont appelées fonctions UDF (définies par l’utilisateur) scalaires T-SQL. Les fonctions UDF T-SQL offrent une façon élégante de réutiliser le code et d’assurer la modularité entre les requêtes [!INCLUDE[tsql](../../includes/tsql-md.md)]. Certains calculs (tels que des règles métier complexes) sont plus faciles à exprimer sous forme de fonctions UDF impératives. Les fonctions UDF favorisent la création d’une logique complexe sans devoir savoir écrire des requêtes SQL complexes. Pour plus d’informations sur les fonctions UDF, consultez [Créer des fonctions définies par l’utilisateur (moteur de base de données)](../../relational-databases/user-defined-functions/create-user-defined-functions-database-engine.md).
@@ -174,13 +174,13 @@ Selon la complexité de la logique dans la fonction UDF, le plan de requête obt
 
 <sup>3</sup> Les fonctions intrinsèques dont les résultats dépendent de l’heure système actuelle sont dépendantes de l’heure. Une fonction intrinsèque qui peut mettre à jour un état global interne est un exemple de fonction avec effets secondaires. Ces fonctions retournent des résultats différents chaque fois qu’elles sont appelées, selon l’état interne.
 
-<sup>4</sup> Restriction ajoutée dans [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU2
+<sup>4</sup> Restriction ajoutée dans [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU2
 
-<sup>5</sup> Restriction ajoutée dans [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU4
+<sup>5</sup> Restriction ajoutée dans [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU4
 
-<sup>6</sup> Restriction ajoutée dans [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU5
+<sup>6</sup> Restriction ajoutée dans [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU5
 
-<sup>7</sup> Restriction ajoutée dans [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU6
+<sup>7</sup> Restriction ajoutée dans [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU6
 
 > [!NOTE]
 > Pour plus d’informations sur les derniers correctifs d’incorporation des fonctions UDF scalaires T-SQL et les dernières modifications apportées aux scénarios d’éligibilité d’incorporation, consultez l’article de la base de connaissances : [CORRECTIF : Problèmes d’incorporation de FDU scalaires dans SQL Server 2019](https://support.microsoft.com/help/4538581).
@@ -283,7 +283,7 @@ Comme cela est décrit dans cet article, l’incorporation des fonctions UDF sca
 1. Les indicateurs de jointure au niveau des requêtes ne sont peut-être plus valides, car l’incorporation peut introduire de nouvelles jointures. Les indicateurs de jointure locaux doivent être utilisés à la place.
 1. Les vues qui référencent des fonctions UDF scalaires inline ne peuvent pas être indexées. Si vous avez besoin de créer un index sur ces vues, désactivez l’incorporation pour les fonctions UDF référencées.
 1. Il peut y avoir des différences de comportement de [Dynamic Data Masking](../security/dynamic-data-masking.md) avec l’incorporation des données UDF. Dans certaines situations (selon la logique utilisée dans la fonction UDF), l’incorporation peut être plus conservatrice que le masquage des colonnes de sortie. Dans les scénarios où les colonnes référencées dans une fonction UDF ne sont pas les colonnes de sortie, elles ne sont pas masquées. 
-1. Si une fonction UDF référence des fonctions intégrées telles que `SCOPE_IDENTITY()`, `@@ROWCOUNT` ou `@@ERROR`, la valeur retournée par la fonction intégrée change avec l’incorporation. Ce changement de comportement est dû au fait que l’incorporation modifie l’étendue des instructions au sein de la fonction UDF. À partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU2, l’inlining est bloqué si la fonction UDF référence certaines fonctions intrinsèques (par exemple `@@ROWCOUNT`).
+1. Si une fonction UDF référence des fonctions intégrées telles que `SCOPE_IDENTITY()`, `@@ROWCOUNT` ou `@@ERROR`, la valeur retournée par la fonction intégrée change avec l’incorporation. Ce changement de comportement est dû au fait que l’incorporation modifie l’étendue des instructions au sein de la fonction UDF. À partir de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU2, l’inlining est bloqué si la fonction UDF référence certaines fonctions intrinsèques (par exemple `@@ROWCOUNT`).
 
 ## <a name="see-also"></a>Voir aussi
 [Créer des fonctions définies par l’utilisateur (moteur de base de données)](../../relational-databases/user-defined-functions/create-user-defined-functions-database-engine.md)   

@@ -11,12 +11,12 @@ ms.assetid: 8b7810b2-637e-46a3-9fe1-d055898ba639
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 9c0ed977deed5b4eb031406368f3d010062da7df
-ms.sourcegitcommit: 5dcbe4abbe2339292961370c1d8ca3affa625f72
+ms.openlocfilehash: 91e51eeb0f2f3b39eba6c183c04f144d42e49579
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99536356"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353136"
 ---
 # <a name="install-sql-server-with-smb-fileshare-storage"></a>Installer SQL Server avec le stockage de partage de fichiers SMB
 
