@@ -12,12 +12,12 @@ ms.assetid: 07a305b1-4110-42f0-b7aa-28a4e32e912a
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: be7a5c94f5de63f343a8c529f8a824e13177923c
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 234f6233e2f6b024e6ad74a82f403e3df7db9a05
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97467300"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340186"
 ---
 # <a name="overview-of-key-management-for-always-encrypted"></a>Vue d’ensemble de la gestion de clés pour Always Encrypted
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb.md)]
@@ -27,10 +27,10 @@ ms.locfileid: "97467300"
 
 Quand il s’agit de gestion des clés et de clés Always Encrypted, il est important de comprendre la distinction entre les clés de chiffrement réelles et les objets de métadonnées qui *décrivent* les clés. Nous utilisons les termes **clé de chiffrement de colonne** et **clé principale de colonne** pour faire référence aux clés de chiffrement réelles, et nous utilisons les termes **métadonnées de clé de chiffrement de colonne** et **métadonnées de clé principale de colonne** pour faire référence aux *descriptions* des clés Always Encrypted dans la base de données.
 
-- Les ***clés de chiffrement de colonne** _ sont des clés de chiffrement de contenu utilisées pour chiffrer les données. Comme leur nom l’indique, les clés de chiffrement de colonne servent à chiffrer les données contenues dans les colonnes de base de données. Vous pouvez chiffrer une ou plusieurs colonnes avec la même clé de chiffrement de colonne, ou vous pouvez utiliser plusieurs clés de chiffrement de colonne en fonction des besoins de votre application. Les clés de chiffrement de colonne sont elles-mêmes chiffrées, et seules les valeurs chiffrées des clés de chiffrement de colonne sont stockées dans la base de données (dans le cadre des métadonnées de clé de chiffrement de colonne). Les métadonnées de clé de chiffrement de colonne sont stockées dans les affichages catalogue [sys.column_encryption_keys (Transact-SQL)](../../../relational-databases/system-catalog-views/sys-column-encryption-keys-transact-sql.md) et [sys.column_encryption_key_values (Transact-SQL)](../../../relational-databases/system-catalog-views/sys-column-encryption-key-values-transact-sql.md) . Les clés de chiffrement de colonne utilisées avec l’algorithme AES-256 ont une longueur de 256 bits.
+- Les ***clés de chiffrement de colonne*** sont des clés de chiffrement de contenu utilisées pour chiffrer les données. Comme leur nom l’indique, les clés de chiffrement de colonne servent à chiffrer les données contenues dans les colonnes de base de données. Vous pouvez chiffrer une ou plusieurs colonnes avec la même clé de chiffrement de colonne, ou vous pouvez utiliser plusieurs clés de chiffrement de colonne en fonction des besoins de votre application. Les clés de chiffrement de colonne sont elles-mêmes chiffrées, et seules les valeurs chiffrées des clés de chiffrement de colonne sont stockées dans la base de données (dans le cadre des métadonnées de clé de chiffrement de colonne). Les métadonnées de clé de chiffrement de colonne sont stockées dans les affichages catalogue [sys.column_encryption_keys (Transact-SQL)](../../../relational-databases/system-catalog-views/sys-column-encryption-keys-transact-sql.md) et [sys.column_encryption_key_values (Transact-SQL)](../../../relational-databases/system-catalog-views/sys-column-encryption-key-values-transact-sql.md) . Les clés de chiffrement de colonne utilisées avec l’algorithme AES-256 ont une longueur de 256 bits.
 
 
-- Les _*_clés principales de colonne_*_ sont des clés de protection de clé utilisées pour chiffrer les clés de chiffrement de colonne. Les clés principales de colonne doivent être stockées dans un magasin de clés approuvé, tel que le Magasin de certificats Windows, Azure Key Vault ou un module de sécurité matériel. La base de données contient uniquement des métadonnées sur les clés principales de colonne (le type de magasin de clés et l’emplacement). Les métadonnées de clé principale de colonne sont stockées dans l’affichage catalogue [sys.column_master_keys (Transact-SQL)](../../../relational-databases/system-catalog-views/sys-column-master-keys-transact-sql.md) .  
+- Les ***clés principales de colonne*** sont des clés de protection de clé utilisées pour chiffrer les clés de chiffrement de colonne. Les clés principales de colonne doivent être stockées dans un magasin de clés approuvé, tel que le Magasin de certificats Windows, Azure Key Vault ou un module de sécurité matériel. La base de données contient uniquement des métadonnées sur les clés principales de colonne (le type de magasin de clés et l’emplacement). Les métadonnées de clé principale de colonne sont stockées dans l’affichage catalogue [sys.column_master_keys (Transact-SQL)](../../../relational-databases/system-catalog-views/sys-column-master-keys-transact-sql.md) .  
 
 Il est important de noter que les métadonnées de clé dans le système de base de données ne contiennent pas de clés principales de colonne en texte clair ni de clés de chiffrement de colonne en texte clair. La base de données contient uniquement des informations sur le type et l’emplacement des clés principales de colonne, et des valeurs chiffrées des clés de chiffrement de colonne. Cela signifie que les clés en texte clair ne sont jamais exposées au système de base de données. Ainsi, les données protégées à l’aide d’Always Encrypted sont sécurisées, même si le système de base de données est compromis. Pour vous assurer que le système de base de données ne peut pas accéder aux clés en texte clair, veillez à exécuter vos outils de gestion de clés sur un ordinateur différent de celui qui héberge votre base de données. Pour plus d’informations, consultez les [Considérations relatives à la sécurité pour la gestion des clés](#security-considerations-for-key-management) ci-dessous.
 
@@ -42,7 +42,7 @@ Il est important de noter que les métadonnées de clé dans le système de base
 
 Le processus de gestion de clés implique les tâches principales suivantes :
 
-- _ *Provisionnement de clé** : création des clés physiques dans un magasin de clés approuvé (par exemple dans le Magasin de certificats Windows, Azure Key Vault ou un module de sécurité matériel), chiffrement de clés de chiffrement de colonne avec des clés principales de colonne et création de métadonnées pour les deux types de clés dans la base de données.
+- **Mise en service des clés** : création des clés physiques dans un magasin de clés approuvé (par exemple dans le Magasin de certificats Windows, Azure Key Vault ou un module de sécurité matériel), chiffrement de clés de chiffrement de colonne avec des clés principales de colonne, et création de métadonnées pour les deux types de clés dans la base de données.
 
 - **Permutation des clés** : remplacement périodique d’une clé existante par une nouvelle clé. Vous devrez peut-être permuter une clé si elle a été compromise, ou pour vous conformer aux stratégies ou aux réglementations de conformité de votre organisation qui régissent la permutation des clés de chiffrement. 
 

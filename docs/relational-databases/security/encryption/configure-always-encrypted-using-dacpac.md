@@ -13,12 +13,12 @@ ms.assetid: 29816a41-f105-4414-8be1-070675d62e84
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 7a42972d4a0cd5e6b456d72ccdba6786ad66c734
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: cae5c4c74f5fc4f6df9b62b1ad985b469aa528ce
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99237110"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345420"
 ---
 # <a name="configure-column-encryption-using-always-encrypted-with-a-dac-package"></a>Configurer le chiffrement de colonne en utilisant Always Encrypted avec un package DAC 
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb.md)]

@@ -15,12 +15,12 @@ ms.assetid: d502548d-ece6-4a42-9ded-2157d33e3d21
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 7231b013f4fabb5e91cf02d6885620cdc876a3a6
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 7f72e53e13b98e79a7d4b5849966e9b3a62e518e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643680"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347520"
 ---
 # <a name="wsfc-cluster-service-is-offline"></a>Le service de cluster WSFC est hors connexion
 

@@ -11,12 +11,12 @@ ms.topic: conceptual
 author: randomnote1
 ms.author: dareist
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: d0c3828e26e5bde24d678cfac8959264adafcb13
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: a1105db9984a8ff52485247e6699c578ec350986
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98091593"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100061444"
 ---
 # <a name="install-sql-server-with-powershell-desired-state-configuration"></a>Installer SQL Server avec la configuration d’état souhaité PowerShell
 

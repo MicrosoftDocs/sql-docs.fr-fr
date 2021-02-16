@@ -10,12 +10,12 @@ ms.technology: backup-restore
 ms.topic: conceptual
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 3f098dc361d4e30a82dee198bb8203d19b412613
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 36fbf9ac4010797561e0852b96b6df6fd85b640d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96125434"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347304"
 ---
 # <a name="sql-server-back-up-applications---volume-shadow-copy-service-vss-and-sql-writer"></a>Applications de sauvegarde SQL Server - Service de cliché instantané des volumes (VSS) et SQL Writer
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

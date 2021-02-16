@@ -30,12 +30,12 @@ helpviewer_keywords:
 ms.assetid: 65e17889-371f-4951-9a7e-9932b2d0dcde
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: cee8ccf62e9ec8a6497d3515e85b7aeff8f0b479
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 8ac0f913188b23b85548f87a4f458d1c2b754d15
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88457129"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347451"
 ---
 # <a name="integration-services-ssis-logging"></a>Journalisation d'Integration Services (SSIS)
 
@@ -386,7 +386,7 @@ ms.locfileid: "88457129"
 ## <a name="enable-logging-for-package-execution-on-the-ssis-server"></a><a name="server_logging"></a>Activer la journalisation des exécutions de package sur le serveur SSIS
   Cette rubrique explique comment définir ou modifier le niveau de journalisation d'un package lorsque vous exécutez un package déployé sur le serveur [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Le niveau de journalisation que vous définissez lorsque vous exécutez le package remplace la journalisation du package configurée lors de la création dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]. Pour plus d’informations, consultez [Activer la journalisation des packages dans les outils de données SQL Server](#ssdt) .  
   
- Dans **Propriétés du serveur**de SQL Server, sous la propriété **Niveau de journalisation du serveur** , vous pouvez sélectionner un niveau de journalisation par défaut au niveau du serveur. Vous pouvez choisir parmi les niveaux de journalisation intégrés décrits dans cette rubrique, ou choisir un niveau de journalisation personnalisé existant. Le niveau de journalisation sélectionné s'applique par défaut à tous les packages déployés sur le catalogue SSIS. Il s'applique également par défaut à une étape de travail de l'Agent SQL qui exécute un package SSIS.  
+ Dans **Propriétés du serveur** de SQL Server, sous la propriété **Niveau de journalisation du serveur** , vous pouvez sélectionner un niveau de journalisation par défaut au niveau du serveur. Vous pouvez choisir parmi les niveaux de journalisation intégrés décrits dans cette rubrique, ou choisir un niveau de journalisation personnalisé existant. Le niveau de journalisation sélectionné s'applique par défaut à tous les packages déployés sur le catalogue SSIS. Il s'applique également par défaut à une étape de travail de l'Agent SQL qui exécute un package SSIS.  
   
  Vous pouvez également spécifier le niveau de journalisation d’un package individuel en procédant selon l'une des méthodes suivantes. Cette rubrique présente la première méthode.  
   

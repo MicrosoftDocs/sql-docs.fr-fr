@@ -19,18 +19,18 @@ ms.assetid: f0b10fee-27f7-45fe-aece-ccc3f63bdcdb
 author: stevestein
 ms.author: sstein
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 942e69f127b37fa6caf4ba83605fabdf4a31da38
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8872cf6e593279a282c34868a2f019ac82e5bf01
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97408108"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100339492"
 ---
 # <a name="write-international-transact-sql-statements"></a>Rédiger des instructions Transact-SQL internationales
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
   Les directives suivantes facilitent la transition d'une langue à l'autre des bases de données et applications de bases de données qui utilisent des instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] , ou leur permettent de prendre en charge directement plusieurs langues :  
 
--   À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], utilisez :
+-   À compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] et dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], utilisez :
     -   Les types de données **char**, **varchar** et **varchar(max)** avec un classement activé [UTF-8](../../relational-databases/collations/collation-and-unicode-support.md#utf8) pour que les données soient encodées en UTF-8.
     -   Les types de données **nchar**, **nvarchar** et **nvarchar(max)** avec un classement activé avec [caractère supplémentaire](../../relational-databases/collations/collation-and-unicode-support.md#Supplementary_Characters) pour que les données soient encodées en UTF-16. L’utilisation d’un classement sans caractère supplémentaire génère des données encodées en UCS-2.      
 

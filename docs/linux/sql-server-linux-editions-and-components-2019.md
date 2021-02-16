@@ -25,12 +25,12 @@ helpviewer_keywords:
 author: VanMSFT
 ms.author: vanto
 ms.reviewer: vanto
-ms.openlocfilehash: 398d8d1aaf626fdc65674ee1d5eb959951dcd5e2
-ms.sourcegitcommit: 58e7069b5b2b6367e27b49c002ca854b31b1159d
+ms.openlocfilehash: 933ce305104358f56246b2c31fd8fe52a07b03ed
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99552622"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348156"
 ---
 # <a name="editions-and-supported-features-of-sql-server-2019-on-linux"></a>Éditions et fonctionnalités prises en charge de SQL Server 2019 sur Linux
 

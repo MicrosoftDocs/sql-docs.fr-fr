@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: ''
-ms.openlocfilehash: 03c9c90f1c9382c85141853ff19cc5d76b40f093
-ms.sourcegitcommit: 22102f25db5ccca39aebf96bc861c92f2367c77a
+ms.openlocfilehash: 7313fbc789b37cf326d55566c1f087f80b4929df
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92115932"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100351929"
 ---
 # <a name="configure-sql-server-always-on-availability-group-for-high-availability-on-linux"></a>Configurer le groupe de disponibilité Always On SQL Server sur Linux
 
@@ -178,8 +178,8 @@ Exécutez **seulement un** des scripts suivants :
          FAILOVER_MODE = EXTERNAL,
          SEEDING_MODE = AUTOMATIC
       ),
-      N'node2' WITH ( 
-         ENDPOINT_URL = N'tcp://node2:5022', 
+      N'node2' WITH ( 
+         ENDPOINT_URL = N'tcp://node2:5022', 
          AVAILABILITY_MODE = SYNCHRONOUS_COMMIT,
          FAILOVER_MODE = EXTERNAL,
          SEEDING_MODE = AUTOMATIC
@@ -211,7 +211,7 @@ ALTER AVAILABILITY GROUP [ag1] GRANT CREATE ANY DATABASE;
 [!INCLUDE [Create Post](../includes/ss-linux-cluster-availability-group-create-post.md)]
 
 >[!IMPORTANT]
->Après avoir créé le groupe de disponibilité, vous devez configurer l’intégration avec une technologie de cluster comme Pacemaker pour la haute disponibilité. Pour une configuration à l’échelle lecture à l’aide de groupes de disponibilité, à partir de [!INCLUDE [SQL Server version](../includes/sssqlv14-md.md)], la configuration d’un cluster n’est pas nécessaire.
+>Après avoir créé le groupe de disponibilité, vous devez configurer l’intégration avec une technologie de cluster comme Pacemaker pour la haute disponibilité. Pour une configuration à l’échelle lecture à l’aide de groupes de disponibilité, à partir de [!INCLUDE [SQL Server version](../includes/sssql17-md.md)], la configuration d’un cluster n’est pas nécessaire.
 
 Si vous avez suivi les étapes de ce document, vous disposez d’un groupe de disponibilité qui n’est pas encore en cluster. L’étape suivante consiste à ajouter le cluster. Cette configuration est valide pour les scénarios d’échelle lecture/équilibrage de charge, mais elle n’est pas complète pour la haute disponibilité. Pour une haute disponibilité, vous devez ajouter le groupe de disponibilité en tant que ressource de cluster. Pour obtenir des instructions, consultez [Étapes suivantes](#next-steps). 
 

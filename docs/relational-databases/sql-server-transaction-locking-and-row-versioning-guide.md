@@ -20,12 +20,12 @@ ms.assetid: 44fadbee-b5fe-40c0-af8a-11a1eecf6cb7
 author: rothja
 ms.author: jroth
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 815ad066f97a80d250dcd1c3b1a961e4a86b05a6
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 47545adc6e3e620cd74585d477bdd028f1e8625f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97416740"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352491"
 ---
 # <a name="transaction-locking-and-row-versioning-guide"></a>Guide du verrouillage des transactions et du contrôle de version de ligne
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -912,7 +912,7 @@ GO
 #### <a name="deadlock-extended-event"></a><a name="deadlock_xevent"></a> Événement étendu de blocage
 À compter de [!INCLUDE[ssSQL11](../includes/sssql11-md.md)], l’événement étendu `xml_deadlock_report` (xEvent) doit être utilisé à la place de la classe d’événements Deadlock Graph dans SQL Trace ou SQL Profiler.
 
-De plus, à compter de [!INCLUDE[ssSQL11](../includes/sssql11-md.md)], en cas d’interblocage, la session **_system\_health_* _ capture déjà tous les événements étendus `xml_deadlock_report` qui contiennent le graphique d’interblocage. Étant donné que la session _system\_health* est activée par défaut, il n’est pas nécessaire qu’une session xEvent distincte soit configurée pour capturer les informations d’interblocage. 
+De plus, à compter de [!INCLUDE[ssSQL11](../includes/sssql11-md.md)], en cas d’interblocage, la session ***system\_health** _ capture déjà tous les événements étendus `xml_deadlock_report` qui contiennent le graphique d’interblocage. Étant donné que la session _system\_health* est activée par défaut, il n’est pas nécessaire qu’une session xEvent distincte soit configurée pour capturer les informations d’interblocage. 
 
 L’événement Deadlock Graph capturé a généralement trois nœuds distincts :
 -   **victim-list**. Identificateur du processus victime de l’interblocage.

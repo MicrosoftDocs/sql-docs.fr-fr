@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: 075ab7d8-8b68-43f3-9303-bbdf00b54db1
-ms.openlocfilehash: 639e88a96ac639d20a6190bffeed75d46495aa51
-ms.sourcegitcommit: 610e3ebe21ac6575850a29641a32f275e71557e3
+ms.openlocfilehash: 272bc33012e37c58f6a3f8ea0ed51f1c216d716f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91785074"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346269"
 ---
 # <a name="operate-rhel-failover-cluster-instance-fci-for-sql-server"></a>Utiliser une instance de cluster de basculement RHEL pour SQL Server
 
@@ -41,10 +41,10 @@ Pour plus d’informations sur la configuration du cluster, les options des agen
 
 ## <a name="failover-cluster-manually"></a><a name = "failManual"></a>Cluster de basculement manuel
 
-La commande `resource move` crée une contrainte forçant la ressource à démarrer sur le nœud cible.  Après l’exécution de la commande `move`, l’exécution de la ressource `clear` supprime la contrainte, de sorte qu’il est possible de déplacer à nouveau la ressource ou d’effectuer le basculement automatique de la ressource. 
+La commande `resource move` crée une contrainte forçant la ressource à démarrer sur le nœud cible.    Après l’exécution de la commande `move`, l’exécution de la ressource `clear` supprime la contrainte, de sorte qu’il est possible de déplacer à nouveau la ressource ou d’effectuer le basculement automatique de la ressource. 
 
 ```bash
-sudo pcs resource move <sqlResourceName> <targetNodeName>  
+sudo pcs resource move <sqlResourceName> <targetNodeName>  
 sudo pcs resource clear <sqlResourceName> 
 ```
 
@@ -60,7 +60,7 @@ sudo pcs resource clear mssqlha
 Afficher l’état actuel du cluster :
 
 ```bash
-sudo pcs status  
+sudo pcs status  
 ```
 
 Afficher l’état actif du cluster et des ressources :
@@ -183,7 +183,7 @@ Afficher les journaux de l’agent de ressources sur `/var/log/cluster/corosync.
     L’exemple suivant ajoute un nœud nommé **vm3** au cluster.
 
     ```bash
-    sudo pcs    cluster auth  
+    sudo pcs    cluster auth  
     sudo pcs    cluster start 
     ```
 
@@ -192,7 +192,7 @@ Afficher les journaux de l’agent de ressources sur `/var/log/cluster/corosync.
 Pour supprimer un nœud d’un cluster, exécutez la commande suivante :
 
 ```bash
-sudo pcs    cluster node remove <nodeName>  
+sudo pcs    cluster node remove <nodeName>  
 ```
 
 ## <a name="change-the-frequency-of-sqlservr-resource-monitoring-interval"></a>Modifier la fréquence de l’intervalle d’analyse des ressources sqlservr
@@ -226,7 +226,7 @@ Voici un exemple de sortie de quorum Pacemaker sain :
 
 ```
 Cluster name: MyAppSQL 
-Last updated: Wed Oct 31 12:00:00 2016  Last change: Wed Oct 31 11:00:00 2016 by root via crm_resource on sqlvmnode1 
+Last updated: Wed Oct 31 12:00:00 2016  Last change: Wed Oct 31 11:00:00 2016 by root via crm_resource on sqlvmnode1 
 Stack: corosync 
 Current DC: sqlvmnode1  (version 1.1.13-10.el7_2.4-44eb2dd) - partition with quorum 
 3 nodes and 1 resource configured 

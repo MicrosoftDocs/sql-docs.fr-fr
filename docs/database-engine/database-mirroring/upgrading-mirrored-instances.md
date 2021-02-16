@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 0e73bd23-497d-42f1-9e81-8d5314bcd597
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 36d92a6dcbe8fa1bb2af06a042a281ef5648a5df
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: eedcc57c76e6c4a25b0f90561fd98d685e80e299
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641925"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352194"
 ---
 # <a name="upgrading-mirrored-instances"></a>Mise à niveau des instances en miroir
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

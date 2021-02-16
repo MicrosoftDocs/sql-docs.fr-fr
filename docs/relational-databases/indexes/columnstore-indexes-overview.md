@@ -19,17 +19,17 @@ ms.assetid: f98af4a5-4523-43b1-be8d-1b03c3217839
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: c7b30279b49a21bbc50492b5a17224fe42d0b335
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: f4ac369f42fccd251cffb5b06f3603f8349f857a
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171231"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100351222"
 ---
 # <a name="columnstore-indexes-overview"></a>Index columnstore : Vue d’ensemble
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-Les index columnstore sont la norme pour le stockage et l’interrogation des tables de faits d’entreposage de données de grande taille. Ils utilisent un stockage de données en colonnes et un traitement des requêtes allant jusqu’à multiplier par 10 les performances des requêtes dans l’entrepôt de données par rapport au stockage orienté lignes classique. Vous pouvez également obtenir jusqu’à 10 fois la compression de données par rapport à la taille des données décompressées. À partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1, les index columnstore sont compatibles avec l’analytique opérationnelle, qui permet d’exécuter des analyses en temps réel performantes sur une charge de travail transactionnelle.  
+Les index columnstore sont la norme pour le stockage et l’interrogation des tables de faits d’entreposage de données de grande taille. Ils utilisent un stockage de données en colonnes et un traitement des requêtes allant jusqu’à multiplier par 10 les performances des requêtes dans l’entrepôt de données par rapport au stockage orienté lignes classique. Vous pouvez également obtenir jusqu’à 10 fois la compression de données par rapport à la taille des données décompressées. À partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP1, les index columnstore sont compatibles avec l’analytique opérationnelle, qui permet d’exécuter des analyses en temps réel performantes sur une charge de travail transactionnelle.  
   
 Voici un scénario connexe :  
   
@@ -60,11 +60,11 @@ Un rowgroup à partir duquel toutes les données ont été supprimées passe de 
 
 > [!TIP]
 > Avoir un trop grand nombre de rowgroups de petite taille réduit la qualité de l’index columnstore. Jusqu’à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], une opération de réorganisation est nécessaire pour fusionner des rowgroups COMPRESSED plus petits, suite à une stratégie de seuil interne qui détermine comment supprimer les lignes supprimées et combiner les rowgroups compressés.    
-> À partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], une tâche de fusion en arrière-plan fonctionne également pour fusionner les rowgroups COMPRESSED à partir desquels un grand nombre de lignes a été supprimé.     
+> À partir de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], une tâche de fusion en arrière-plan fonctionne également pour fusionner les rowgroups COMPRESSED à partir desquels un grand nombre de lignes a été supprimé.     
 > Après la fusion de plusieurs rowgroups plus petits, la qualité de l’index doit être améliorée. 
 
 > [!NOTE]
-> À partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], le moteur de tuple est aidé par une tâche de fusion en arrière-plan qui compresse automatiquement les rowgroups delta OPEN plus petits qui existent depuis un certain temps, tel que déterminé par un seuil interne, ou qui fusionne les rowgroups COMPRESSED à partir desquels un grand nombre de lignes a été supprimé. Cela améliore la qualité de l’index columnstore dans le temps.         
+> À partir de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], le moteur de tuple est aidé par une tâche de fusion en arrière-plan qui compresse automatiquement les rowgroups delta OPEN plus petits qui existent depuis un certain temps, tel que déterminé par un seuil interne, ou qui fusionne les rowgroups COMPRESSED à partir desquels un grand nombre de lignes a été supprimé. Cela améliore la qualité de l’index columnstore dans le temps.         
 
 #### <a name="column-segment"></a>segment de colonne
 Un segment de colonne est une colonne de données issue du rowgroup.  
@@ -91,7 +91,7 @@ Quand un rowgroup delta a été compressé, le rowgroup delta existant passe à 
 Pour plus d’informations sur les états de rowgroup, consultez [sys.dm_db_column_store_row_group_physical_stats (Transact-SQL)](../../relational-databases/system-dynamic-management-views/sys-dm-db-column-store-row-group-physical-stats-transact-sql.md). 
 
 > [!NOTE]
-> À partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], le moteur de tuple est aidé par une tâche de fusion en arrière-plan qui compresse automatiquement les rowgroups delta OPEN plus petits qui existent depuis un certain temps, tel que déterminé par un seuil interne, ou qui fusionne les rowgroups COMPRESSED à partir desquels un grand nombre de lignes a été supprimé. Cela améliore la qualité de l’index columnstore dans le temps.         
+> À partir de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], le moteur de tuple est aidé par une tâche de fusion en arrière-plan qui compresse automatiquement les rowgroups delta OPEN plus petits qui existent depuis un certain temps, tel que déterminé par un seuil interne, ou qui fusionne les rowgroups COMPRESSED à partir desquels un grand nombre de lignes a été supprimé. Cela améliore la qualité de l’index columnstore dans le temps.         
   
 #### <a name="deltastore"></a>Deltastore
 Un index columnstore peut avoir plusieurs rowgroups delta, qui sont appelés collectivement le deltastore.   
@@ -109,7 +109,7 @@ Un index columnstore non cluster est compatible avec l’analytique opérationne
 L’exécution en mode batch est une méthode de traitement des requêtes utilisée pour traiter plusieurs lignes ensemble. L’exécution en mode batch est étroitement intégrée au format de stockage columnstore et optimisée pour celui-ci. L’exécution en mode batch est parfois appelée *exécution vectorielle* ou *vectorisée*. Les requêtes sur les index columnstore utilisent l’exécution en mode batch, qui permet généralement de multiplier les performances des requêtes par deux ou quatre. Pour plus d’informations, voir [Guide d’architecture de traitement des requêtes](../query-processing-architecture-guide.md#execution-modes). 
   
 ##  <a name="why-should-i-use-a-columnstore-index"></a><a name="benefits"></a> Pourquoi utiliser un index columnstore ?  
-Un index columnstore peut offrir un niveau très élevé de compression de données (généralement multiplié par 10) afin de réduire de manière significative le coût de stockage de l’entrepôt de données. Pour l’analytique, il présente des performances réellement meilleures que celles d’un index btree. Il s’agit du format de stockage de données de prédilection pour les charges de travail d’entreposage des données et d’analytique. Depuis [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], vous pouvez utiliser des index columnstore pour l’analyse en temps réel sur votre charge de travail opérationnelle.  
+Un index columnstore peut offrir un niveau très élevé de compression de données (généralement multiplié par 10) afin de réduire de manière significative le coût de stockage de l’entrepôt de données. Pour l’analytique, il présente des performances réellement meilleures que celles d’un index btree. Il s’agit du format de stockage de données de prédilection pour les charges de travail d’entreposage des données et d’analytique. Depuis [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], vous pouvez utiliser des index columnstore pour l’analyse en temps réel sur votre charge de travail opérationnelle.  
   
 Voici les raisons pour lesquelles les index columnstore sont si rapides :  
   
@@ -134,9 +134,9 @@ Les index rowstore fonctionnent de manière optimale sur les requêtes qui reche
 Les index columnstore offrent des gains de performances élevés pour les requêtes analytiques qui analysent de grandes quantités de données, en particulier sur des tables volumineuses. Utilisez les index columnstore sur les charges de travail d’analytique et d’entreposage des données, en particulier sur les tables de faits, car ils passent généralement par des analyses de tables complètes plutôt que par des recherches de tables.  
   
 ### <a name="can-i-combine-rowstore-and-columnstore-on-the-same-table"></a>Puis-je combiner les formats rowstore et columnstore dans la même table ?  
-Oui. À partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], il est possible de créer un index columnstore non cluster pouvant être mis à jour sur une table rowstore. L’index columnstore stocke une copie des colonnes sélectionnées. Il faut donc de l’espace supplémentaire pour ces données, même si elles sont compressées en moyenne 10 fois. Il est possible d’exécuter simultanément l’analytique sur l’index columnstore et les transactions sur l’index rowstore. Le columnstore est mis à jour en cas de modification des données de la table rowstore. Les deux index utilisent donc les mêmes données.  
+Oui. À partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], il est possible de créer un index columnstore non cluster pouvant être mis à jour sur une table rowstore. L’index columnstore stocke une copie des colonnes sélectionnées. Il faut donc de l’espace supplémentaire pour ces données, même si elles sont compressées en moyenne 10 fois. Il est possible d’exécuter simultanément l’analytique sur l’index columnstore et les transactions sur l’index rowstore. Le columnstore est mis à jour en cas de modification des données de la table rowstore. Les deux index utilisent donc les mêmes données.  
   
-À partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], il est possible d’avoir un ou plusieurs index rowstore non cluster sur un index columnstore et d’effectuer des recherches de tables efficaces sur le columnstore sous-jacent. D’autres options sont également disponibles. Par exemple, vous pouvez appliquer une contrainte de clé primaire à l’aide d’une contrainte UNIQUE sur la table rowstore. Dans la mesure où une valeur non unique ne s’insère pas dans la table rowstore, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne peut pas l’ajouter au columnstore.  
+À partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], il est possible d’avoir un ou plusieurs index rowstore non cluster sur un index columnstore et d’effectuer des recherches de tables efficaces sur le columnstore sous-jacent. D’autres options sont également disponibles. Par exemple, vous pouvez appliquer une contrainte de clé primaire à l’aide d’une contrainte UNIQUE sur la table rowstore. Dans la mesure où une valeur non unique ne s’insère pas dans la table rowstore, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne peut pas l’ajouter au columnstore.  
   
 ## <a name="metadata"></a>Métadonnées  
 Toutes les colonnes dans un index columnstore sont stockées dans les métadonnées en tant que colonnes incluses. L'index columnstore n'a pas de colonnes clés.  
@@ -205,11 +205,11 @@ Quand vous créez une table avec l’instruction `CREATE TABLE`, vous pouvez en 
   
 |Tâche|Rubriques de référence|Notes|  
 |----------|----------------------|-----------|  
-|Créer une table sous forme de columnstore|[CREATE TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-table-transact-sql.md)|Depuis [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], vous pouvez créer la table en tant qu’index cluster columnstore. Il est inutile de créer au préalable une table rowstore pour la convertir ensuite en columnstore.|  
-|Créer une table mémoire avec un index columnstore.|[CREATE TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-table-transact-sql.md)|Depuis [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], vous pouvez créer une table optimisée en mémoire avec un index columnstore. L’index columnstore peut également être ajouté après la création de la table, suivant la syntaxe `ALTER TABLE ADD INDEX`.|  
+|Créer une table sous forme de columnstore|[CREATE TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-table-transact-sql.md)|Depuis [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], vous pouvez créer la table en tant qu’index cluster columnstore. Il est inutile de créer au préalable une table rowstore pour la convertir ensuite en columnstore.|  
+|Créer une table mémoire avec un index columnstore.|[CREATE TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-table-transact-sql.md)|Depuis [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], vous pouvez créer une table optimisée en mémoire avec un index columnstore. L’index columnstore peut également être ajouté après la création de la table, suivant la syntaxe `ALTER TABLE ADD INDEX`.|  
 |Convertir une table rowstore en table columnstore|[CREATE COLUMNSTORE INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-columnstore-index-transact-sql.md)|Convertissez un segment de mémoire ou un arbre binaire existant en columnstore. Les exemples montrent comment gérer les index existants, ainsi que le nom de l’index lors de cette conversion.|  
 |Convertir une table columnstore en rowstore|[CREATE CLUSTERED INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-columnstore-index-transact-sql.md#d-convert-a-columnstore-table-to-a-rowstore-table-with-a-clustered-index) ou [Reconvertir une table columnstore en segment rowstore](../../t-sql/statements/create-columnstore-index-transact-sql.md#e-convert-a-columnstore-table-back-to-a-rowstore-heap) |Cette conversion n’est généralement pas nécessaire, mais le cas peut se présenter. Les exemples montrent comment convertir un columnstore en segment de mémoire ou index cluster.|  
-|Créer un index columnstore sur une table rowstore|[CREATE COLUMNSTORE INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-columnstore-index-transact-sql.md)|Une table rowstore ne peut avoir qu’un seul index columnstore. Depuis [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], l’index columnstore peut avoir une condition de filtrage. Les exemples affichent la syntaxe de base.|  
+|Créer un index columnstore sur une table rowstore|[CREATE COLUMNSTORE INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-columnstore-index-transact-sql.md)|Une table rowstore ne peut avoir qu’un seul index columnstore. Depuis [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], l’index columnstore peut avoir une condition de filtrage. Les exemples affichent la syntaxe de base.|  
 |Créer des index performants pour l’analytique opérationnelle|[Bien démarrer avec columnstore pour l’analytique opérationnelle en temps réel](../../relational-databases/indexes/get-started-with-columnstore-for-real-time-operational-analytics.md)|Explique comment créer des index columnstore et btree complémentaires afin que les requêtes OLTP utilisent des index btree et les requêtes analytiques des index columnstore.|  
 |Créer des index columnstore performants pour l’entreposage des données|[Index columnstore pour l’entreposage des données](~/relational-databases/indexes/columnstore-indexes-data-warehouse.md)|Décrit l’utilisation des index btree sur les tables columnstore pour créer des requêtes performantes en matière d’entreposage des données.|  
 |Utiliser un index btree pour appliquer une contrainte de clé primaire sur un index columnstore|[Index columnstore pour l’entreposage des données](~/relational-databases/indexes/columnstore-indexes-data-warehouse.md)|Montre comment combiner des index btree et columnstore pour appliquer des contraintes de clé primaire sur l’index columnstore.|  

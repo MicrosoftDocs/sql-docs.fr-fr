@@ -20,12 +20,12 @@ ms.assetid: 6ef578bf-8da7-46e0-88b5-e310fc908bb0
 author: stevestein
 ms.author: sstein
 ms.custom: seo-dt-2019
-ms.openlocfilehash: ea8f2b873b8990a00bc61cd8ce45c192feefaaa5
-ms.sourcegitcommit: 4d370399f6f142e25075b3714e5c2ce056b1bfd0
+ms.openlocfilehash: 09738de0caf9b7da5fcf3bec7c413d53d5d46981
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91869414"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100351194"
 ---
 # <a name="linked-servers-database-engine"></a>Serveurs liés (Moteur de base de données)
 
@@ -57,7 +57,7 @@ Vous pouvez configurer un serveur lié en utilisant [!INCLUDE[ssManStudioFull](.
   
 Un *fournisseur OLE°DB* représente une DLL qui gère une source de données spécifique et interagit avec elle. Une *source de données OLE DB* identifie la base de données spécifique accessible via OLE DB. Bien que les sources de données interrogées au moyen des définitions de serveurs liés soient d'ordinaire des bases de données, des fournisseurs OLE°DB existent pour différents fichiers et formats de fichiers, dont les fichiers texte, les données incluses dans des feuilles de calcul et les résultats de recherches de contenu.  
   
-En commençant avec [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], [Microsoft OLE DB Driver pour SQL Server (MSOLEDBSQL)](../../connect/oledb/oledb-driver-for-sql-server.md) (PROGID : MSOLEDBSQL) est le fournisseur OLE DB par défaut. Dans les versions antérieures, le [fournisseur OLE DB SQL Server Native Client (SQLNCLI)](../../relational-databases/native-client/sql-server-native-client.md) (PROGID : SQLNCLI11) est le fournisseur OLE DB par défaut.
+En commençant avec [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], [Microsoft OLE DB Driver pour SQL Server (MSOLEDBSQL)](../../connect/oledb/oledb-driver-for-sql-server.md) (PROGID : MSOLEDBSQL) est le fournisseur OLE DB par défaut. Dans les versions antérieures, le [fournisseur OLE DB SQL Server Native Client (SQLNCLI)](../../relational-databases/native-client/sql-server-native-client.md) (PROGID : SQLNCLI11) est le fournisseur OLE DB par défaut.
   
 > [!NOTE]  
 > [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ont été conçues pour être utilisées avec tout fournisseur OLE DB qui implémente les interfaces OLE DB requises. Toutefois, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] a été testé par rapport au fournisseur OLE DB par défaut.  
@@ -92,7 +92,7 @@ Vous pouvez utiliser des procédures stockées et des affichages catalogue pour 
   
 -   Supprimez une définition de serveur lié en exécutant **sp_dropserver**. Vous pouvez également utiliser cette procédure stockée pour supprimer un serveur distant.  
   
-Vous pouvez également définir des serveurs liés à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]. Dans l’Explorateur d’objets, cliquez avec le bouton droit sur **Objets serveur**et sélectionnez **Nouveau**, puis **Serveur lié**. Pour supprimer une définition de serveur lié, vous pouvez cliquer avec le bouton droit sur le nom du serveur lié, puis sélectionner **Supprimer**.  
+Vous pouvez également définir des serveurs liés à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]. Dans l’Explorateur d’objets, cliquez avec le bouton droit sur **Objets serveur** et sélectionnez **Nouveau**, puis **Serveur lié**. Pour supprimer une définition de serveur lié, vous pouvez cliquer avec le bouton droit sur le nom du serveur lié, puis sélectionner **Supprimer**.  
   
  Lorsque vous exécutez une requête distribuée sur un serveur lié, veillez à inclure pour chaque source de données à interroger un nom de table en quatre parties complet. Ce nom en quatre parties doit être au format _nom\_serveur\_lié.catalog_ **.** _schéma_ **.** _nom\_objet_.  
   

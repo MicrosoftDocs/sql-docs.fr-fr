@@ -9,12 +9,12 @@ ms.technology: security
 ms.topic: how-to
 author: rupp29
 ms.author: arupp
-ms.openlocfilehash: 8d3f89803711e96cb1e37adc9792c54bceb259c4
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 3a674994d7028a8f4455c26d6f705b9da7b5ee08
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596497"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100018682"
 ---
 # <a name="sql-server-connector-error-and-information-logging"></a>Journalisation des erreurs et des informations du connecteur SQL Server
 

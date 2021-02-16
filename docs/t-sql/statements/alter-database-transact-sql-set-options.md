@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -31,12 +31,12 @@ ms.assetid: f76fbd84-df59-4404-806b-8ecb4497c9cc
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||=azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azure-sqldw-latest||=azuresqldb-mi-current
-ms.openlocfilehash: d02a4199775c519602e88573c7fbca72c1e8f9a9
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 37ea2f4896d68f4ae5a47b14025d54a344febdc0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170481"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100016313"
 ---
 # <a name="alter-database-set-options-transact-sql"></a>Options SET d’ALTER DATABASE (Transact-SQL)
 
@@ -327,9 +327,9 @@ CURRENT
 Exécute l’action dans la base de données actuelle. `CURRENT` n’est pas pris en charge pour toutes les options dans tous les contextes. Si `CURRENT` échoue, fournissez le nom de la base de données.
 
 **\<accelerated_database_recovery> ::=**      
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)])
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])
 
-Active la [récupération de base de données accélérée](../../relational-databases/accelerated-database-recovery-management.md) pour chaque base de données. ADR est défini par défaut sur OFF dans [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]. À l’aide de cette syntaxe, vous pouvez choisir de désigner un groupe de fichiers spécifique pour les données du magasin de versions persistantes. Si aucun groupe de fichiers n’est spécifié, le magasin de versions persistantes est stocké dans le groupe de fichiers PRIMARY. Pour obtenir des exemples et des informations supplémentaires, consultez [Récupération de base de données accélérée](../../relational-databases/accelerated-database-recovery-management.md).
+Active la [récupération de base de données accélérée](../../relational-databases/accelerated-database-recovery-management.md) pour chaque base de données. ADR est défini par défaut sur OFF dans [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]. À l’aide de cette syntaxe, vous pouvez choisir de désigner un groupe de fichiers spécifique pour les données du magasin de versions persistantes. Si aucun groupe de fichiers n’est spécifié, le magasin de versions persistantes est stocké dans le groupe de fichiers PRIMARY. Pour obtenir des exemples et des informations supplémentaires, consultez [Récupération de base de données accélérée](../../relational-databases/accelerated-database-recovery-management.md).
 
 **\<auto_option> ::=**      
 Contrôle les options automatiques.
@@ -432,7 +432,7 @@ Vous pouvez déterminer l’état de cette option en consultant la colonne `is_a
 Pour plus d’informations décrivant quand utiliser des mises à jour de statistiques synchrones ou asynchrones, consultez la section « Options des statistiques » dans [Statistiques](../../relational-databases/statistics/statistics.md#statistics-options).
 
 <a name="auto_tuning"></a> **\<automatic_tuning_option> ::=**      
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)])
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)])
 
 Active ou désactive l’option `FORCE_LAST_GOOD_PLAN` [Optimisation automatique](../../relational-databases/automatic-tuning/automatic-tuning.md).
 
@@ -557,12 +557,12 @@ OFF
 Indique que la base de données ne doit pas être chiffrée.
 
 SUSPEND     
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)])     
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])     
 
 Peut être utilisée pour suspendre l’analyse du chiffrement après l’activation ou la désactivation du chiffrement TDE, ou après un changement de la clé de chiffrement.
 
 RESUME     
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)])
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])
 
 Peut être utilisée pour reprendre une analyse du chiffrement.
 
@@ -738,7 +738,7 @@ Nom de répertoire compatible avec Windows. Ce nom doit être unique parmi tous 
 Voir [ALTER DATABASE SET HADR](../../t-sql/statements/alter-database-transact-sql-set-hadr.md).
 
 **\<mixed_page_allocation_option> ::=**      
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)])
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)])
 
 Contrôle si la base de données peut créer des pages initiales à l’aide d’une extension mixte pour les huit premières pages d’une table ou d’un index.
 
@@ -764,7 +764,7 @@ FORCED
 La valeur actuelle de cette option peut être déterminée en examinant la colonne `is_parameterization_forced column` dans la vue de catalogue [sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md).
 
 <a name="query-store"></a> **\<query_store_options> ::=**      
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)])
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)])
 
 ON | **OFF** [ ( FORCED )  ] | CLEAR [ ALL ]     
 Contrôle si le Magasin des requêtes est activé dans cette base de données et contrôle la suppression du contenu du Magasin des requêtes. Pour plus d’informations, consultez [Scénarios d’utilisation du magasin des requêtes](../../relational-databases/performance/query-store-usage-scenarios.md).
@@ -773,7 +773,7 @@ ACTIVÉ
 Active le magasin des requêtes.
 
 OFF [ ( FORCED ) ]      
-Désactive le magasin des requêtes. OFF est la valeur par défaut. FORCED est facultatif. FORCED abandonne toutes les tâches en arrière-plan du Magasin des requêtes en cours d’exécution, et ignore le vidage synchrone lorsque le Magasin des requêtes est désactivé. Entraîne l’arrêt du Magasin des requêtes aussi vite que possible. FORCED s’applique à [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 CU14, [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU21, [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] CU6 et aux builds ultérieures.
+Désactive le magasin des requêtes. OFF est la valeur par défaut. FORCED est facultatif. FORCED abandonne toutes les tâches en arrière-plan du Magasin des requêtes en cours d’exécution, et ignore le vidage synchrone lorsque le Magasin des requêtes est désactivé. Entraîne l’arrêt du Magasin des requêtes aussi vite que possible. FORCED s’applique à [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 CU14, [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU21, [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU6 et aux builds ultérieures.
 
 > [!NOTE]  
 > Le Magasin des requêtes ne peut pas être désactivé dans la base de données unique [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] et le pool élastique. L’exécution de `ALTER DATABASE [database] SET QUERY_STORE = OFF` renverra l’avertissement `'QUERY_STORE=OFF' is not supported in this version of SQL Server.`. 
@@ -797,7 +797,7 @@ DATA_FLUSH_INTERVAL_SECONDS
 Détermine la fréquence à laquelle les données écrites dans le magasin des requêtes sont stockées sur le disque. Pour optimiser les performances, les données collectées par le magasin des requêtes sont écrites de façon asynchrone sur le disque. La fréquence à laquelle ce transfert asynchrone se produit est configurée à l'aide de l'argument DATA_FLUSH_INTERVAL_SECONDS. DATA_FLUSH_INTERVAL_SECONDS est de type **bigint**. La valeur par défaut est **900** (15 minutes).
 
 MAX_STORAGE_SIZE_MB     
-Détermine l’espace alloué au magasin des requêtes. MAX_STORAGE_SIZE_MB est de type **bigint**. La valeur par défaut est de **100 Mo** pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)](de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]). À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], la valeur par défaut est de **1 Go**.
+Détermine l’espace alloué au magasin des requêtes. MAX_STORAGE_SIZE_MB est de type **bigint**. La valeur par défaut est de **100 Mo** pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)](de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]). À compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], la valeur par défaut est de **1 Go**.
 
 > [!NOTE]
 > La limite `MAX_STORAGE_SIZE_MB` n’est pas strictement appliquée. La taille de stockage est vérifiée seulement quand le Magasin des requêtes écrit des données sur le disque. Cet intervalle est défini par l’option `DATA_FLUSH_INTERVAL_SECONDS` ou l’option de la boîte de dialogue Magasin des requêtes [!INCLUDE[ssManStudio](../../includes/ssManStudio-md.md)] **Intervalle de vidage des données**. La valeur par défaut de l’intervalle est 900 secondes (ou 15 minutes).
@@ -806,7 +806,7 @@ Détermine l’espace alloué au magasin des requêtes. MAX_STORAGE_SIZE_MB est 
 
 > [!IMPORTANT]
 > Si vous pensez que la capture de votre charge de travail nécessite plus de 10 Go d’espace disque, vous devez probablement repenser et optimiser votre charge de travail pour réutiliser les plans de requête (par exemple, en utilisant le [paramétrage forcé](../../relational-databases/query-processing-architecture-guide.md#ForcedParam)) ou ajuster les configurations du Magasin des requêtes.    
-> À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], vous pouvez définir `QUERY_CAPTURE_MODE` sur CUSTOM pour disposer d’un contrôle supplémentaire sur la stratégie de capture des requêtes.
+> À compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] et dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], vous pouvez définir `QUERY_CAPTURE_MODE` sur CUSTOM pour disposer d’un contrôle supplémentaire sur la stratégie de capture des requêtes.
 
 INTERVAL_LENGTH_MINUTES     
 Détermine l’intervalle de temps auquel les données des statistiques d’exécution du runtime sont agrégées dans le magasin des requêtes. Pour optimiser l'espace, les statistiques d'exécution du runtime du magasin de statistiques du runtime sont agrégées sur une période fixe. Cette fenêtre de temps fixe est configurée à l'aide de l'argument INTERVAL_LENGTH_MINUTES. INTERVAL_LENGTH_MINUTES est de type **bigint**. La valeur par défaut est **60**.
@@ -829,16 +829,16 @@ Désigne le mode de capture de requête actif actuellement. Chaque mode définit
 > Les curseurs, les requêtes dans les procédures stockées et les requêtes compilées en mode natif sont toujours capturés lorsque le mode de capture de requête est défini sur All (Tous), Auto ou Custom (Personnalisé).
 
 ALL     
-Capture toutes les requêtes. **ALL** est la valeur de configuration par défaut pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]).
+Capture toutes les requêtes. **ALL** est la valeur de configuration par défaut pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]).
 
 AUTO     
-Capturer les requêtes pertinentes en fonction du nombre d’exécutions et de la consommation de ressources. Il s’agit de la valeur de configuration par défaut pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
+Capturer les requêtes pertinentes en fonction du nombre d’exécutions et de la consommation de ressources. Il s’agit de la valeur de configuration par défaut pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]) et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].
 
 Aucune     
 Cesser la capture des nouvelles requêtes. Le Magasin des requêtes continue de collecter des statistiques de compilation et d’exécution pour les requêtes qui ont déjà été capturées. Utilisez cette configuration avec précaution, car vous risquez de manquer la capture de requêtes importantes.
 
 CUSTOM     
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)])
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])
 
 Permet de contrôler les options QUERY_CAPTURE_POLICY.
 
@@ -859,7 +859,7 @@ OFF
 Les informations des statistiques d’attente par requête ne seront pas capturées.
 
 **\<query_capture_policy_option_list> :: =**      
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)])
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])
 
 Contrôle les options de stratégie de capture du magasin des requêtes. Sauf pour STALE_CAPTURE_POLICY_THRESHOLD, ces options définissent dans la valeur de la durée de validité de la stratégie de capture les conditions OR qui doivent intervenir pour que les requêtes soient capturées.
 
@@ -945,7 +945,7 @@ Pour plus d’informations sur les messages d’erreur 823, 824 et 825, consulte
 Vous pouvez déterminer la valeur actuelle de cette option en consultant la colonne `page_verify_option` de la vue de catalogue [sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md) ou la propriété `IsTornPageDetectionEnabled` de la fonction [DATABASEPROPERTYEX](../../t-sql/functions/databasepropertyex-transact-sql.md).
 
 **\<remote_data_archive_option> ::=**      
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)])
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)])
 
 Active ou désactive Stretch Database pour la base de données. Pour plus d'informations, consultez [Stretch Database](../../sql-server/stretch-database/stretch-database.md).
 
@@ -1206,7 +1206,7 @@ Vous pouvez déterminer l’état de cette option en consultant la colonne `is_r
 **\<target_recovery_time_option> ::=**      
 **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)])
 
-Spécifie la fréquence des points de contrôle indirects en fonction de chaque base de données. À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], la valeur par défaut pour les nouvelles bases de données est **1 minute**, ce qui signifie que la base de données utilise des points de contrôle indirects. Pour les versions antérieures, la valeur par défaut est 0, ce qui indique que la base de données utilise les points de contrôle automatiques, dont la fréquence dépend du paramètre d’intervalle de récupération de l’instance de serveur. [!INCLUDE[msCoName](../../includes/msconame-md.md)] recommande une valeur d’une minute pour la plupart des systèmes.
+Spécifie la fréquence des points de contrôle indirects en fonction de chaque base de données. À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], la valeur par défaut pour les nouvelles bases de données est **1 minute**, ce qui signifie que la base de données utilise des points de contrôle indirects. Pour les versions antérieures, la valeur par défaut est 0, ce qui indique que la base de données utilise les points de contrôle automatiques, dont la fréquence dépend du paramètre d’intervalle de récupération de l’instance de serveur. [!INCLUDE[msCoName](../../includes/msconame-md.md)] recommande une valeur d’une minute pour la plupart des systèmes.
 
 TARGET_RECOVERY_TIME **=** *target_recovery_time* { SECONDS | MINUTES }     
 *target_recovery_time*     
@@ -1400,7 +1400,7 @@ SET CHANGE_TRACKING = OFF;
 
 ### <a name="e-enabling-the-query-store"></a>E. Activation du magasin de requêtes
 
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)])
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)])
 
 L’exemple suivant active le magasin des requêtes et configure ses paramètres.
 
@@ -1440,7 +1440,7 @@ SET QUERY_STORE = ON
 
 ### <a name="g-enabling-the-query-store-with-custom-capture-policy-options"></a>G. Activation du magasin des requêtes avec les options de stratégie de capture personnalisée
 
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)])
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])
 
 L’exemple suivant active le magasin des requêtes et configure ses paramètres.
 
@@ -1738,7 +1738,7 @@ Vous pouvez déterminer l’état de cette option en consultant la colonne `is_a
 Pour plus d’informations décrivant quand utiliser des mises à jour de statistiques synchrones ou asynchrones, consultez la section « Options des statistiques » dans [Statistiques](../../relational-databases/statistics/statistics.md#statistics-options).
 
 <a name="auto_tuning"></a> **\<automatic_tuning_option> ::=**      
-**S’applique à** : [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)]
+**S’applique à** : [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)]
 
 Contrôle les options automatiques pour [Optimisation automatique](../../relational-databases/automatic-tuning/automatic-tuning.md).
 
@@ -1926,7 +1926,7 @@ Détermine l’espace alloué au magasin des requêtes. MAX_STORAGE_SIZE_MB est 
 
 > [!IMPORTANT]
 > Si vous pensez que la capture de votre charge de travail nécessite plus de 10 Go d’espace disque, vous devez probablement repenser et optimiser votre charge de travail pour réutiliser les plans de requête (par exemple, en utilisant le [paramétrage forcé](../../relational-databases/query-processing-architecture-guide.md#ForcedParam)) ou ajuster les configurations du Magasin des requêtes.    
-> À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], vous pouvez définir `QUERY_CAPTURE_MODE` sur CUSTOM pour disposer d’un contrôle supplémentaire sur la stratégie de capture des requêtes.
+> À compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] et dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], vous pouvez définir `QUERY_CAPTURE_MODE` sur CUSTOM pour disposer d’un contrôle supplémentaire sur la stratégie de capture des requêtes.
 
 INTERVAL_LENGTH_MINUTES     
 Détermine l’intervalle de temps auquel les données des statistiques d’exécution du runtime sont agrégées dans le magasin des requêtes. Pour optimiser l'espace, les statistiques d'exécution du runtime du magasin de statistiques du runtime sont agrégées sur une période fixe. Cette fenêtre de temps fixe est configurée à l'aide de l'argument INTERVAL_LENGTH_MINUTES. INTERVAL_LENGTH_MINUTES est de type **bigint**. La valeur par défaut est **60**.
@@ -2178,7 +2178,7 @@ Vous pouvez déterminer l’état de cette option en consultant la colonne `is_r
 Vous pouvez déterminer l’état de cette option en consultant la colonne `is_recursive_triggers_on` de la vue de catalogue [sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md) ou la propriété `IsRecursiveTriggersEnabled` de la fonction [DATABASEPROPERTYEX](../../t-sql/functions/databasepropertyex-transact-sql.md).
 
 **\<target_recovery_time_option> ::=**      
-Spécifie la fréquence des points de contrôle indirects en fonction de chaque base de données. À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], la valeur par défaut pour les nouvelles bases de données est une minute, ce qui signifie que la base de données utilise les points de contrôle indirects. Pour les versions antérieures, la valeur par défaut est 0, ce qui indique que la base de données utilise les points de contrôle automatiques, dont la fréquence dépend du paramètre d’intervalle de récupération de l’instance de serveur. [!INCLUDE[msCoName](../../includes/msconame-md.md)] recommande une valeur d’une minute pour la plupart des systèmes.
+Spécifie la fréquence des points de contrôle indirects en fonction de chaque base de données. À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], la valeur par défaut pour les nouvelles bases de données est une minute, ce qui signifie que la base de données utilise les points de contrôle indirects. Pour les versions antérieures, la valeur par défaut est 0, ce qui indique que la base de données utilise les points de contrôle automatiques, dont la fréquence dépend du paramètre d’intervalle de récupération de l’instance de serveur. [!INCLUDE[msCoName](../../includes/msconame-md.md)] recommande une valeur d’une minute pour la plupart des systèmes.
 
 TARGET_RECOVERY_TIME **=** objectif_temps_récupération { SECONDS | MINUTES }     
 *target_recovery_time*     
@@ -2609,7 +2609,7 @@ Vous pouvez déterminer l’état de cette option en consultant la colonne is_au
 Pour plus d’informations sur l’utilisation des mises à jour de statistiques synchrones ou asynchrones, consultez la section « Utilisation des options de statistiques à l’échelle de la base de données » dans [Statistiques](../../relational-databases/statistics/statistics.md).
 
 <a name="auto_tuning"></a> **\<automatic_tuning_option> ::=**      
-**S’applique à** : [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)]
+**S’applique à** : [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)]
 
 Active ou désactive l’option `FORCE_LAST_GOOD_PLAN` [Optimisation automatique](../../relational-databases/automatic-tuning/automatic-tuning.md).
 
@@ -2748,7 +2748,7 @@ Détermine l’espace alloué au magasin des requêtes. MAX_STORAGE_SIZE_MB est 
 
 > [!IMPORTANT]
 > Si vous pensez que la capture de votre charge de travail nécessite plus de 10 Go d’espace disque, vous devez probablement repenser et optimiser votre charge de travail pour réutiliser les plans de requête (par exemple, en utilisant le [paramétrage forcé](../../relational-databases/query-processing-architecture-guide.md#ForcedParam)) ou ajuster les configurations du Magasin des requêtes.    
-> À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] et dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], vous pouvez définir `QUERY_CAPTURE_MODE` sur CUSTOM pour disposer d’un contrôle supplémentaire sur la stratégie de capture des requêtes.
+> À compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] et dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], vous pouvez définir `QUERY_CAPTURE_MODE` sur CUSTOM pour disposer d’un contrôle supplémentaire sur la stratégie de capture des requêtes.
 
 INTERVAL_LENGTH_MINUTES     
 Détermine l’intervalle de temps auquel les données des statistiques d’exécution du runtime sont agrégées dans le magasin des requêtes. Pour optimiser l'espace, les statistiques d'exécution du runtime du magasin de statistiques du runtime sont agrégées sur une période fixe. Cette fenêtre de temps fixe est configurée à l'aide de l'argument INTERVAL_LENGTH_MINUTES. INTERVAL_LENGTH_MINUTES est de type **bigint**. La valeur par défaut est **60**.
@@ -2999,7 +2999,7 @@ Vous pouvez déterminer l’état de cette option en consultant la colonne `is_r
 Vous pouvez déterminer l’état de cette option en consultant la colonne `is_recursive_triggers_on` de la vue de catalogue [sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md) ou la propriété `IsRecursiveTriggersEnabled` de la fonction [DATABASEPROPERTYEX](../../t-sql/functions/databasepropertyex-transact-sql.md).
 
 **\<target_recovery_time_option> ::=**      
-Spécifie la fréquence des points de contrôle indirects en fonction de chaque base de données. À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], la valeur par défaut pour les nouvelles bases de données est **1 minute**, ce qui signifie que la base de données utilise des points de contrôle indirects. Pour les versions antérieures, la valeur par défaut est 0, ce qui indique que la base de données utilise les points de contrôle automatiques, dont la fréquence dépend du paramètre d’intervalle de récupération de l’instance de serveur. [!INCLUDE[msCoName](../../includes/msconame-md.md)] recommande une valeur d’une minute pour la plupart des systèmes.
+Spécifie la fréquence des points de contrôle indirects en fonction de chaque base de données. À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], la valeur par défaut pour les nouvelles bases de données est **1 minute**, ce qui signifie que la base de données utilise des points de contrôle indirects. Pour les versions antérieures, la valeur par défaut est 0, ce qui indique que la base de données utilise les points de contrôle automatiques, dont la fréquence dépend du paramètre d’intervalle de récupération de l’instance de serveur. [!INCLUDE[msCoName](../../includes/msconame-md.md)] recommande une valeur d’une minute pour la plupart des systèmes.
 
 TARGET_RECOVERY_TIME **=** _target_recovery_time_ { SECONDS | MINUTES }     
 *target_recovery_time*     

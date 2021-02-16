@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: a433fbef-1853-4740-9d5e-8a32bc4ffbb2
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 0405dabd99568e09bc07502544db5a181bf357a5
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: f4607ffe77d7fe93aff86d8dc707bb86e515d67d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92192419"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340789"
 ---
 # <a name="identify-the-source-of-packages-with-digital-signatures"></a>Identifier la source de packages à l'aide de signatures numériques
 
@@ -77,7 +77,7 @@ ms.locfileid: "92192419"
   
 1.  Dans le menu **Démarrer** , cliquez sur **Exécuter**.  
   
-2.  Dans la boîte de dialogue Exécuter, tapez **Regedit**et cliquez sur **OK**.  
+2.  Dans la boîte de dialogue Exécuter, tapez **Regedit** et cliquez sur **OK**.  
   
 3.  Localisez la clé de registre HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Microsoft SQL Server\100\SSIS.  
   
@@ -128,7 +128,7 @@ ms.locfileid: "92192419"
   
 5.  Dans la boîte de dialogue **Sélectionner un certificat** , sélectionnez un certificat.  
   
-6.  (Facultatif) Cliquez sur **Afficher le certificat**pour afficher les informations sur le certificat.  
+6.  (Facultatif) Cliquez sur **Afficher le certificat** pour afficher les informations sur le certificat.  
   
 7.  Cliquez sur **OK** pour fermer la boîte de dialogue **Sélectionner un certificat** .  
   

@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 9702e90c-fada-4978-a473-1b1423017d80
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: cd1ad3437f02b0c0df834d3a16365140d9638798
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: d8801c1a4f7387f1ff5bc815b45897d5a4f68fdb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88487738"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340784"
 ---
 # <a name="integration-services-roles-ssis-service"></a>Rôles Integration Services (Service SSIS)
 
@@ -69,10 +69,10 @@ ms.locfileid: "88487738"
 -   La colonne **ownersid** contient l'identificateur de sécurité unique de l'utilisateur qui a créé le package. Cette colonne définit le propriétaire du package.  
   
 ### <a name="permissions"></a>Autorisations  
- Par défaut, les autorisations des rôles fixes de niveau base de données **db_ssisadmin** et **db_ssisoperator** et l’identificateur de sécurité unique de l’utilisateur qui a créé le package s’appliquent au rôle de lecteur pour les packages, tandis que les autorisations du rôle **db_ssisadmin** et l’identificateur de sécurité unique de l’utilisateur qui a créé le package s’appliquent au rôle de rédacteur. Un utilisateur doit être membre du rôle **db_ssisadmin**, **db_ssisltduser**ou **db_ssisoperator** pour bénéficier d’un accès en lecture au package. Un utilisateur doit être membre du rôle **db_ssisadmin** pour bénéficier d’un accès en écriture.  
+ Par défaut, les autorisations des rôles fixes de niveau base de données **db_ssisadmin** et **db_ssisoperator** et l’identificateur de sécurité unique de l’utilisateur qui a créé le package s’appliquent au rôle de lecteur pour les packages, tandis que les autorisations du rôle **db_ssisadmin** et l’identificateur de sécurité unique de l’utilisateur qui a créé le package s’appliquent au rôle de rédacteur. Un utilisateur doit être membre du rôle **db_ssisadmin**, **db_ssisltduser** ou **db_ssisoperator** pour bénéficier d’un accès en lecture au package. Un utilisateur doit être membre du rôle **db_ssisadmin** pour bénéficier d’un accès en écriture.  
   
 ### <a name="access-to-packages"></a>Accès aux packages  
- Les rôles fixes au niveau de la base de données fonctionnent conjointement avec les rôles définis par l'utilisateur. Les rôles définis par l’utilisateur sont les rôles que vous créez dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] , puis que vous utilisez pour attribuer des autorisations aux packages. Pour accéder à un package, un utilisateur doit être membre du rôle défini par l’utilisateur et du rôle fixe pertinent de niveau base de données [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Par exemple, si des utilisateurs sont membres du rôle défini par l’utilisateur **AuditUsers** affecté à un package, ils doivent aussi être membres du rôle **db_ssisadmin**, **db_ssisltduser**ou **db_ssisoperator** pour disposer d’un accès en lecture au package.  
+ Les rôles fixes au niveau de la base de données fonctionnent conjointement avec les rôles définis par l'utilisateur. Les rôles définis par l’utilisateur sont les rôles que vous créez dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] , puis que vous utilisez pour attribuer des autorisations aux packages. Pour accéder à un package, un utilisateur doit être membre du rôle défini par l’utilisateur et du rôle fixe pertinent de niveau base de données [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Par exemple, si des utilisateurs sont membres du rôle défini par l’utilisateur **AuditUsers** affecté à un package, ils doivent aussi être membres du rôle **db_ssisadmin**, **db_ssisltduser** ou **db_ssisoperator** pour disposer d’un accès en lecture au package.  
   
  Si vous n'affectez pas des rôles définis par l'utilisateur aux packages, les rôles de base de données fixes déterminent l'accès aux packages.  
   
@@ -138,7 +138,7 @@ ms.locfileid: "88487738"
 ## <a name="package-roles-dialog-box-ui-reference"></a><a name="roles_dialog"></a> Référence de l’IU de la boîte de dialogue Rôles de package
   Utilisez la boîte de dialogue **Rôles de package** , disponible dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], pour spécifier les rôles au niveau de la base de données qui possèdent un accès en lecture au package et les rôles au niveau de la base de données qui possèdent un accès en écriture au package. Les rôles au niveau de la base de données s’appliquent uniquement aux packages stockés dans la base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] **msdb**.  
   
- Les rôles répertoriés dans la boîte de dialogue sont les rôles actuels de la base de données système **msdb** . Si aucun rôle n'est sélectionné, les rôles [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] par défaut s'appliquent. Par défaut, le rôle de lecteur inclut **db_ssisadmin**, **db_ssisoperator**et l’utilisateur qui a créé le package. Un utilisateur membre de l'un de ces rôles ou qui a créé les packages peut énumérer, consulter, exporter et exécuter des packages. Par défaut, le rôle de rédacteur inclut **db_ssisadmin** et l’utilisateur qui a créé le package. Un utilisateur membre de ce rôle et l'utilisateur qui a créé les packages peuvent importer, supprimer et modifier des packages.  
+ Les rôles répertoriés dans la boîte de dialogue sont les rôles actuels de la base de données système **msdb** . Si aucun rôle n'est sélectionné, les rôles [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] par défaut s'appliquent. Par défaut, le rôle de lecteur inclut **db_ssisadmin**, **db_ssisoperator** et l’utilisateur qui a créé le package. Un utilisateur membre de l'un de ces rôles ou qui a créé les packages peut énumérer, consulter, exporter et exécuter des packages. Par défaut, le rôle de rédacteur inclut **db_ssisadmin** et l’utilisateur qui a créé le package. Un utilisateur membre de ce rôle et l'utilisateur qui a créé les packages peuvent importer, supprimer et modifier des packages.  
   
  La colonne **ownersid** de la table **sysssispackages** contient l'identificateur de sécurité unique de l'utilisateur qui a créé le package.  
   
