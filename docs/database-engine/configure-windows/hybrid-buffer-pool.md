@@ -12,12 +12,12 @@ ms.assetid: ''
 author: briancarrig
 ms.author: brcarrig
 manager: amitban
-ms.openlocfilehash: ccf508d0415bc6baabc9c054a95ec26cf7989880
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 70754d80b8faba251683c1cec1db808e91d8d6e1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99236520"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350377"
 ---
 # <a name="hybrid-buffer-pool"></a>Pool de mémoires tampons hybride
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

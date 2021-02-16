@@ -12,12 +12,12 @@ ms.assetid: 05515013-28b5-4ccf-9a54-ae861448945b
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 42d638afd9fc98fb68eb024c0a712bea5f278a26
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 011a7d3fa710699f75afd4ca835ba1f082a956b5
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170221"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100353615"
 ---
 # <a name="supported-features-for-natively-compiled-t-sql-modules"></a>Fonctionnalités prises en charge pour les modules T-SQL compilés en mode natif
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -34,8 +34,8 @@ ms.locfileid: "98170221"
 Les constructions de requête suivantes sont prises en charge :  
 
 Expression CASE : CASE peut être utilisé dans n'importe quelle instruction ou clause qui autorise une expression valide.
-   - **S’applique à :** [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)].  
-    Depuis [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)], les instructions CASE sont désormais prises en charge pour les modules T-SQL compilés en mode natif.
+   - **S’applique à :** [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)].  
+    Depuis [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)], les instructions CASE sont désormais prises en charge pour les modules T-SQL compilés en mode natif.
 
 Clause SELECT :  
 
@@ -176,8 +176,8 @@ Les instructions DML suivantes sont prises en charge.
 -   Opérateurs au niveau du bit ~, &, |, et ^  
 
 -   APPLY (opérateur)
-    - **S’applique à :** [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)].  
-      À partir de [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)], l’opérateur APPLY est pris en charge dans les modules compilés en mode natif.
+    - **S’applique à :** [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)].  
+      À partir de [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)], l’opérateur APPLY est pris en charge dans les modules compilés en mode natif.
 
 ##  <a name="built-in-functions-in-natively-compiled-modules"></a><a name="bfncsp"></a> Fonctions intégrées dans les modules compilés en mode natif  
  Les fonctions suivantes sont prises en charge dans les contraintes sur les tables optimisées en mémoire et dans les modules T-SQL compilés en mode natif.  
@@ -187,8 +187,8 @@ Les instructions DML suivantes sont prises en charge.
 -   Fonctions de date : CURRENT_TIMESTAMP, DATEADD, DATEDIFF, DATEFROMPARTS, DATEPART, DATETIME2FROMPARTS, DATETIMEFROMPARTS, DAY, EOMONTH, GETDATE, GETUTCDATE, MONTH, SMALLDATETIMEFROMPARTS, SYSDATETIME, SYSUTCDATETIME et YEAR.  
 
 -   Fonctions de chaînes : LEN, LTRIM, RTRIM et SUBSTRING.  
-    - **S’applique à :** [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)].  
-      À compter de [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)], les fonctions intégrées suivantes sont également prises en charge : TRIM, TRANSLATE et CONCAT_WS.  
+    - **S’applique à :** [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)].  
+      À compter de [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)], les fonctions intégrées suivantes sont également prises en charge : TRIM, TRANSLATE et CONCAT_WS.  
 
 -   Fonctions d’identité : SCOPE_IDENTITY  
 
@@ -197,8 +197,8 @@ Les instructions DML suivantes sont prises en charge.
 -   Fonctions Uniqueidentifier : NEWID et NEWSEQUENTIALID  
 
 -   Fonctions JSON  
-    - **S’applique à :** [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)].  
-      À partir de [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)], les fonctions JSON sont prises en charge dans les modules compilés en mode natif.
+    - **S’applique à :** [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)].  
+      À partir de [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)], les fonctions JSON sont prises en charge dans les modules compilés en mode natif.
 
 -   Fonctions d’erreur : ERROR_LINE, ERROR_MESSAGE, ERROR_NUMBER, ERROR_PROCEDURE, ERROR_SEVERITY et ERROR_STATE  
 

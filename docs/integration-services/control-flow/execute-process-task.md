@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: aca5a0b5-34a9-45bc-a234-8e63ea51a1ee
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: b19a591448da6e14c6275462ba6cb5ae595092a0
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 98409c2a75cc76589a705579ff02f1be34c9c7b2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92197210"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352113"
 ---
 # <a name="execute-process-task"></a>Tâche d'exécution de processus
 

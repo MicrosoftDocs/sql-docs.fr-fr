@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -19,12 +19,12 @@ ms.assetid: acceef84-2c68-46e2-a021-be019b7ab14e
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: e89cac604654a1793a65bdd43dcd38cf77484b06
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 2fa047e5ef018109352972f3ae139c6eff2c1b93
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98099378"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100349948"
 ---
 # <a name="windows-collation-name-transact-sql"></a>Nom de classement Windows (Transact-SQL)
 
@@ -75,12 +75,12 @@ L’oubli de cette option ne suit pas les caractères Kana, alors que **KS** les
 L’oubli de cette option ne tient pas compte des largeurs, alors que **WS** les respecte.
 
 *VariationSelectorSensitivity*  
-- **S’applique à** : À compter de [!INCLUDE[ssSQL15](../../includes/sssqlv14-md.md)] 
+- **S’applique à** : À compter de [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)] 
 
 - L’oubli de cette option spécifie le non-respect du sélecteur de variation, **VSS** spécifie le respect du sélecteur de variation.
 
 **UTF8**  
-- **S’applique à** : À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]   
+- **S’applique à** : À compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]   
 
 - Spécifie l’encodage UTF-8 à utiliser pour les types de données éligibles. Pour plus d’informations, consultez [Prise en charge d’Unicode et du classement](../../relational-databases/collations/collation-and-unicode-support.md).
 
@@ -134,7 +134,7 @@ Pour énumérer les classements Windows pris en charge par votre d'instance de [
 SELECT * FROM sys.fn_helpcollations() WHERE [name] NOT LIKE N'SQL%';
 ```
 
-Le tableau suivant répertorie tous les classements Windows pris en charge dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].
+Le tableau suivant répertorie tous les classements Windows pris en charge dans [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)].
 
 |Paramètres régionaux Windows|Classement version 100|Classement version 90|
 |--------------------|---------------------------|--------------------------|

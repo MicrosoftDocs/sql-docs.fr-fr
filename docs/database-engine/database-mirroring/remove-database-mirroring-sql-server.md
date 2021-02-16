@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: bbc4d7f7-3bc7-40d6-a822-af195fe7f8c0
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 2d1e09227bd8f3334e2dfea5cce81dcb96857247
-ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
+ms.openlocfilehash: 1dc0d50f418d0e27e8e3f52d31601b0703151fd6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98783708"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100337866"
 ---
 # <a name="remove-database-mirroring-sql-server"></a>Supprimer la mise en miroir des bases de données (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

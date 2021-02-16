@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 87d3801b-dc52-419e-9316-8b1f1490946c
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 2b50f06d3830a8f723d9d6ecc570125ecafb136a
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 4f8b18819666c7cec7c0f50b074a5a9a7ed5a804
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641537"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352225"
 ---
 # <a name="troubleshoot-database-mirroring-configuration-sql-server"></a>Résoudre les problèmes de configuration de mise en miroir de bases de données (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

@@ -12,12 +12,12 @@ ms.assetid: 64a9eade-22c3-4a9d-ab50-956219e08df1
 author: MightyPen
 ms.author: genemi
 monikerRange: =sql-server-2016
-ms.openlocfilehash: 95f920fc8648ed646f1056c9d334ee831651f5e2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: a5038368e66524324fb0189b2f1b06e0b374e41a
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97465370"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100353696"
 ---
 # <a name="migrating-computed-columns"></a>Migration de colonnes calculées
 
@@ -25,7 +25,7 @@ ms.locfileid: "97465370"
 
 Les colonnes calculées ne sont pas prises en charge dans les tables mémoire optimisées. Toutefois, vous pouvez simuler une colonne calculée.
 
-À partir de [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)], les colonnes calculées sont prises en charge dans les tables optimisées en mémoire et les index.
+À partir de [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)], les colonnes calculées sont prises en charge dans les tables optimisées en mémoire et les index.
 
 Pensez à rendre vos colonnes calculées persistantes lorsque vous migrez vos tables sur disque vers des tables mémoire optimisées. Les performances des tables mémoire optimisées et des procédures stockées compilées en mode natif peuvent remettre en cause le besoin de persistance.  
   

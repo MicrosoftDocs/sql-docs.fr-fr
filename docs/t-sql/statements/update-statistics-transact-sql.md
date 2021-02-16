@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - UPDATE STATISTICS
 - UPDATE_STATISTICS_TSQL
@@ -22,12 +22,12 @@ ms.assetid: 919158f2-38d0-4f68-82ab-e1633bd0d308
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 3680ba07e290f8b531ab46576f76bd3ffeee3460
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: ab5b7fac995e54160798d2f2c3113e391a84340d
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170441"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100349980"
 ---
 # <a name="update-statistics-transact-sql"></a>UPDATE STATISTICS (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -108,7 +108,7 @@ UPDATE STATISTICS [ schema_name . ] table_name
   
  SAMPLE est utile pour les cas spéciaux dans lesquels le plan de requête, basé sur l'échantillonnage par défaut, n'est pas optimal. Dans la plupart des situations, il n'est pas nécessaire de spécifier SAMPLE car l'optimiseur de requête utilise l'échantillonnage et détermine la taille d'échantillon statistiquement significative par défaut, comme requis pour créer des plans de requête de haute qualité. 
  
-À partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], l’échantillonnage des données pour générer des statistiques est effectué en parallèle, lors de l’utilisation du niveau de compatibilité 130, afin d’améliorer les performances de collecte des statistiques. L’optimiseur de requête utilise des échantillons de statistiques parallèles chaque fois que la taille d’une table dépasse un certain seuil. 
+À partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], l’échantillonnage des données pour générer des statistiques est effectué en parallèle, lors de l’utilisation du niveau de compatibilité 130, afin d’améliorer les performances de collecte des statistiques. L’optimiseur de requête utilise des échantillons de statistiques parallèles chaque fois que la taille d’une table dépasse un certain seuil. 
    
  SAMPLE ne peut pas être utilisé avec l'option FULLSCAN. Lorsque ni SAMPLE ni FULLSCAN n'est spécifié, l'optimiseur de requête utilise les données échantillonnées et calcule la taille d'échantillon par défaut.  
   
@@ -136,7 +136,7 @@ Si vous spécifiez **ON**, les statistiques conserveront le pourcentage d’éch
  > [!TIP] 
  > [DBCC SHOW_STATISTICS](../../t-sql/database-console-commands/dbcc-show-statistics-transact-sql.md) et [sys.dm_db_stats_properties](../../relational-databases/system-dynamic-management-views/sys-dm-db-stats-properties-transact-sql.md) exposent la valeur de pourcentage d’échantillonnage persistante pour la statistique sélectionnée.
  
- **S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] (à partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1 CU4) et versions ultérieures (à partir de [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU1).  
+ **S’applique à** : [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] (à partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP1 CU4) et versions ultérieures (à partir de [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU1).  
  
  ON PARTITIONS ( { \<partition_number> | \<range> } [, ...n] ) ] Impose le recalcul des statistiques au niveau feuille couvrant les partitions spécifiées dans la clause ON PARTITIONS, puis leur fusion afin de générer des statistiques globales. WITH RESAMPLE est nécessaire car les statistiques de partitions créées avec différents taux d'échantillonnage ne peuvent pas être fusionnées ensemble.  
   
@@ -171,7 +171,7 @@ Si vous spécifiez **ON**, les statistiques conserveront le pourcentage d’éch
 **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et ultérieur
 
 MAXDOP = *max_degree_of_parallelism*  
-**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3).  
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3).  
   
  Remplace l’option de configuration **max degree of parallelism** pendant la durée de l’opération statistique. Pour plus d’informations, consultez [Configurer l’option de configuration du serveur max degree of parallelism](../../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md). Utilisez MAXDOP pour limiter le nombre de processeurs utilisés dans une exécution de plan parallèle. Le nombre maximal de processeurs est égal à 64.  
   

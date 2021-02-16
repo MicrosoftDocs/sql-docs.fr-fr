@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: ''
-ms.openlocfilehash: c37157d47e2eddaaf47f787de364603cbaaa250a
-ms.sourcegitcommit: 610e3ebe21ac6575850a29641a32f275e71557e3
+ms.openlocfilehash: 93bff6d536a6c1c5ad4eb8d8805fefb706377594
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91785094"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346293"
 ---
 # <a name="operate-failover-cluster-instance---sql-server-on-linux"></a>Utiliser une instance de cluster de basculement - SQL Server sur Linux
 

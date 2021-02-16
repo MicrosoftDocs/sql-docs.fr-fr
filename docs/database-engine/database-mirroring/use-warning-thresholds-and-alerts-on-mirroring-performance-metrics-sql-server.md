@@ -18,12 +18,12 @@ helpviewer_keywords:
 ms.assetid: 8cdd1515-0bd7-4f8c-a7fc-a33b575e20f6
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: c323c5915752e68505e7e1e512843ae03c8197e4
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 7b7b014ffdd1377dcda2bfd0c72e4b91b6116a71
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97643486"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352183"
 ---
 # <a name="use-warning-thresholds-and-alerts-on-mirroring-performance-metrics-sql-server"></a>Utiliser des seuils d'avertissement et d'alertes sur des métriques de performances de mise en miroir (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

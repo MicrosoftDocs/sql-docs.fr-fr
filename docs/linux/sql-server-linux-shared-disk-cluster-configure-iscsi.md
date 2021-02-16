@@ -9,12 +9,12 @@ ms.date: 06/30/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: 20953eb151912f6eddf1e3ea0e13d34f3835e7d6
-ms.sourcegitcommit: 3e2421ae45a8e9fa57fb590a5d1a5566721ea74a
+ms.openlocfilehash: dfd63aa749b6bf158ae5e9dcef06ba032c31ddee
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98921407"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346328"
 ---
 # <a name="configure-failover-cluster-instance---iscsi---sql-server-on-linux"></a>Configurer l’instance de cluster de basculement - iSCSI - SQL Server sur Linux
 

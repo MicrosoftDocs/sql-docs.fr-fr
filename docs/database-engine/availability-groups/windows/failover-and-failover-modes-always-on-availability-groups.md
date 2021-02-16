@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 378d2d63-50b9-420b-bafb-d375543fda17
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f6ea40fdde107aedf5a76f7419dfd096e167bd53
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 469f51a30a7eac878b83fd14086507ccd952f708
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644145"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353888"
 ---
 # <a name="failover-and-failover-modes-always-on-availability-groups"></a>Basculement et modes de basculement (groupes de disponibilité Always On)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

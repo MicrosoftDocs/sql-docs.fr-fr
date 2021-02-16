@@ -39,22 +39,22 @@ ms.assetid: 7f3fa5f6-6b50-43bb-9047-1544ade55e39
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 268aafa5b95bed4c9e2687fef430aa4a972ea2c7
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 86560767d969ef5ee7da97c989da7558421f0302
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463160"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344413"
 ---
 # <a name="database-level-roles"></a>Rôles au niveau de la base de données
 
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
 
-  Pour gérer facilement les autorisations dans vos bases de données, [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] fournit plusieurs *rôles* , qui sont des principaux de sécurité regroupant d'autres principaux. Ils sont similaires aux ***groupes** _ du système d’exploitation [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Windows. Les autorisations des rôles au niveau de la base de données ont une portée à l'échelle de la base de données.  
+  Pour gérer facilement les autorisations dans vos bases de données, [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] fournit plusieurs *rôles* , qui sont des principaux de sécurité regroupant d'autres principaux. Ils sont similaires aux ***groupes*** du système d'exploitation [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Windows. Les autorisations des rôles au niveau de la base de données ont une portée à l'échelle de la base de données.  
 
 Pour ajouter et supprimer des utilisateurs à un rôle de base de données, utilisez les options `ADD MEMBER` et `DROP MEMBER` les options de l’instruction [ALTER ROLE](../../../t-sql/statements/alter-role-transact-sql.md) . [!INCLUDE[ssPDW_md](../../../includes/sspdw-md.md)] et Azure Synapse ne prennent pas en charge cette utilisation de `ALTER ROLE`. Utilisez les anciennes procédures [sp_addrolemember](../../../relational-databases/system-stored-procedures/sp-addrolemember-transact-sql.md) et [sp_droprolemember](../../../relational-databases/system-stored-procedures/sp-droprolemember-transact-sql.md) à la place.
   
- Il existe deux types de rôles au niveau de la base de données : les _rôles de base de données fixes* qui sont prédéfinis dans la base de données et les *rôles de base de données définis par l’utilisateur* que vous pouvez créer.  
+ Il existe deux types de rôles au niveau de la base de données : les *rôles de base de données fixes* qui sont prédéfinis dans la base de données et les *rôles de base de données définis par l’utilisateur* que vous pouvez créer.  
   
  Les rôles de base de données fixes sont définis au niveau de la base de données et existent dans chaque base de données. Les membres du rôle de base de données **db_owner** peuvent gérer l’appartenance aux rôles de base de données fixes. La base de données msdb comprend également des rôles de base de données spéciaux.  
   

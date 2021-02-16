@@ -12,17 +12,17 @@ ms.assetid: 2f82db01-da7e-4a7d-8bc0-48b245e6f768
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 92e8976ec52409d877bdd2bfe2b90a8784731d12
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 9711cebcaab12cd0c665591612b56aefd8f0cfbb
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171961"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100351262"
 ---
 # <a name="implementing-a-case-expression-in-a-natively-compiled-stored-procedure"></a>Implémentation d’une expression CASE dans une procédure stockée compilée en mode natif
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
-**S’applique à :** [!INCLUDE[ssSDSFull_md](../../includes/sssdsfull-md.md)] et SQL Server à partir de [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)]
+**S’applique à :** [!INCLUDE[ssSDSFull_md](../../includes/sssdsfull-md.md)] et SQL Server à partir de [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)]
 
 Les expressions CASE sont prises en charge dans les modules T-SQL compilés en mode natif. L’exemple suivant montre une façon d’utiliser l’expression CASE dans une requête. 
 

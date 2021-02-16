@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: ae1d8fad-6649-4e93-b589-14a32d07da33
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 28d2bac4024f067f4c3eb07318a47ef0d91fd171
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: e39187e32afbcf72bf1eb950f18d5f21cef38211
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92194277"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348302"
 ---
 # <a name="message-queue-task"></a>Message Queue Task
 

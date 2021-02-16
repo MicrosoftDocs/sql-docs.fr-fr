@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: ae52a723-91c4-43fd-bcc7-f8de1d1f90e5
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: ea62ec35accc4f808fdbd1b2ff4319c0b44cdcc5
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 5091c3437d0e74f3c108e13efb3789997cadb2d3
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195669"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489463"
 ---
 # <a name="extract-a-dac-from-a-database"></a>Extraire une DAC d'une base de données
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -98,7 +98,7 @@ Sélectionnez les données de référence que vous voulez inclure dans votre fic
 ###  <a name="validation-and-summary-page"></a><a name="ValidateSummary"></a> Validation and summary page  
  Dans cette page, l'Assistant vérifie que tous les objets de base de données sont pris en charge par une application de la couche Données (DAC). Il vérifie également les dépendances entre les objets de base de données afin de déterminer l'ensemble d'objets qui peuvent être inclus avec succès dans la DAC. Après cela, il affiche le rapport de validation et résume les options que vous avez sélectionnées dans cet Assistant. Pour modifier une option, cliquez sur **Précédent**. Pour commencer à extraire une DAC, cliquez sur **Suivant**.  
   
-> **Remarque**Si un ou plusieurs objets ne sont pas pris en charge par une DAC, le bouton **Suivant** est désactivé et le processus d’extraction ne peut pas continuer. Dans ces cas-là, il est recommandé de supprimer les objets non pris en charge, puis de réexécuter cet Assistant.  
+> **Remarque** Si un ou plusieurs objets ne sont pas pris en charge par une DAC, le bouton **Suivant** est désactivé et le processus d’extraction ne peut pas continuer. Dans ces cas-là, il est recommandé de supprimer les objets non pris en charge, puis de réexécuter cet Assistant.  
   
  **Résumé** - Un résumé des options que vous avez sélectionnées est affiché sous **Propriétés de la DAC**. Les résultats de la validation apparaissent sous **Objets de DAC**. Il existe trois types de résultats de validation :  
   
@@ -162,5 +162,5 @@ $extractionunit.Extract($dacpacPath)
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Applications de la couche Données](../../relational-databases/data-tier-applications/data-tier-applications.md)  
-  
+ - [Applications de la couche Données](../../relational-databases/data-tier-applications/data-tier-applications.md) 
+ - [SqlPackage dans les pipelines de développement](../../tools/sqlpackage/sqlpackage-pipelines.md)

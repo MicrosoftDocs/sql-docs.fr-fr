@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 65fff22d-5963-4a8c-8b31-fe9ab247a03e
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: cb1effd626bd1d3d7b62c9884ee69857ca6cc91e
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: c24ac8fac48de3a01d86371f56fcb86796b317db
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641162"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340844"
 ---
 # <a name="availability-group-properties-new-availability-group-backup-preferences-page"></a>Propriétés d’un groupe de disponibilité : Nouveau groupe de disponibilité (page Préférences de sauvegarde)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

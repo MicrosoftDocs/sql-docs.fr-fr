@@ -9,12 +9,12 @@ ms.topic: conceptual
 author: haoqian
 ms.author: haoqian
 ms.reviewer: maghan
-ms.openlocfilehash: 48ed32fedde7d3874f01644eec257f4450e0555e
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 1cf9077a9b500c9e5052b48aab13d325809bb297
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86919019"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347380"
 ---
 # <a name="get-started-with-integration-services-ssis-scale-out-on-a-single-computer"></a>Bien démarrer avec Integration Services (SSIS) Scale Out sur un seul ordinateur
 

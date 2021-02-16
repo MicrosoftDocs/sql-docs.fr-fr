@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 10817e5e-75fa-42dd-baa2-359bea3ad051
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 1e41945d69a499908d11d8ebc8cbda7688d544a8
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: 39c9f6852fd1a1cc15a014b67ee693a3cb315787
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98766098"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344503"
 ---
 # <a name="secondary-database-is-not-joined"></a>La base de données secondaire n'est pas attachée
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

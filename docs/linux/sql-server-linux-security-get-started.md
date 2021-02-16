@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: ecc72850-8b01-492e-9a27-ec817648f0e0
-ms.openlocfilehash: 4a9137ad71947d222d246df046c6ab573fb4500d
-ms.sourcegitcommit: 22102f25db5ccca39aebf96bc861c92f2367c77a
+ms.openlocfilehash: f4201aa6c07d4ae96d44d8aa443b23e275e1f9f2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92115812"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346412"
 ---
 # <a name="walkthrough-for-the-security-features-of-sql-server-on-linux"></a>Procédure pas à pas pour les fonctionnalités de sécurité de SQL Server sur Linux
 
@@ -82,12 +82,12 @@ Plus tard, lorsque vous serez prêt à configurer un accès plus précis à vos 
 
 Par exemple, les instructions suivantes créent un rôle de base de données nommé `Sales`, octroie au groupe `Sales` la possibilité de consulter, de mettre à jour et de supprimer des lignes du tableau `Orders`, puis ajoute l’utilisateur `Jerry` au rôle `Sales`.   
    
-```   
-CREATE ROLE Sales;   
-GRANT SELECT ON Object::Sales TO Orders;   
-GRANT UPDATE ON Object::Sales TO Orders;   
-GRANT DELETE ON Object::Sales TO Orders;   
-ALTER ROLE Sales ADD MEMBER Jerry;   
+```   
+CREATE ROLE Sales;   
+GRANT SELECT ON Object::Sales TO Orders;   
+GRANT UPDATE ON Object::Sales TO Orders;   
+GRANT DELETE ON Object::Sales TO Orders;   
+ALTER ROLE Sales ADD MEMBER Jerry;   
 ```
 
 Pour plus d’informations sur le système d’autorisations, voir [Débuter avec les autorisations du moteur de base de données](../relational-databases/security/authentication-access/getting-started-with-database-engine-permissions.md).
@@ -99,27 +99,27 @@ Pour plus d’informations sur le système d’autorisations, voir [Débuter ave
 
 Les étapes suivantes vous guident dans la configuration de deux utilisateurs avec un accès au niveau des lignes différent à la table `Sales.SalesOrderHeader`. 
 
-Créez deux comptes d’utilisateur pour tester la sécurité au niveau des lignes :    
+Créez deux comptes d’utilisateur pour tester la sécurité au niveau des lignes :    
    
-```   
-USE AdventureWorks2014;   
-GO   
+```   
+USE AdventureWorks2014;   
+GO   
    
-CREATE USER Manager WITHOUT LOGIN;     
+CREATE USER Manager WITHOUT LOGIN;     
    
-CREATE USER SalesPerson280 WITHOUT LOGIN;    
+CREATE USER SalesPerson280 WITHOUT LOGIN;    
 ```
 
-Accordez l'accès en lecture sur la table `Sales.SalesOrderHeader` à chaque utilisateur :    
+Accordez l'accès en lecture sur la table `Sales.SalesOrderHeader` à chaque utilisateur :    
    
-```   
-GRANT SELECT ON Sales.SalesOrderHeader TO Manager;      
+```   
+GRANT SELECT ON Sales.SalesOrderHeader TO Manager;      
 GRANT SELECT ON Sales.SalesOrderHeader TO SalesPerson280;
 ```
    
 Créez un nouveau schéma et une fonction table inline. La fonction renvoie 1 lorsqu'une ligne de la colonne `SalesPersonID` est identique à l’ID d’une connexion `SalesPerson` ou si l'utilisateur exécutant la requête est l'utilisateur Manager.   
    
-```     
+```     
 CREATE SCHEMA Security;   
 GO   
    
@@ -129,7 +129,7 @@ WITH SCHEMABINDING
 AS     
    RETURN SELECT 1 AS fn_securitypredicate_result    
 WHERE ('SalesPerson' + CAST(@SalesPersonId as VARCHAR(16)) = USER_NAME())     
-    OR (USER_NAME() = 'Manager');    
+    OR (USER_NAME() = 'Manager');    
 ```
 
 Créez une stratégie de sécurité qui ajoute cette fonction en tant que prédicat de filtre et prédicat BLOCK sur la table :  
@@ -172,7 +172,7 @@ Utilisez une instruction `ALTER TABLE` pour ajouter une fonction de masquage à 
 ```
 USE AdventureWorks2014;
 GO
-ALTER TABLE Person.EmailAddress    
+ALTER TABLE Person.EmailAddress    
 ALTER COLUMN EmailAddress    
 ADD MASKED WITH (FUNCTION = 'email()');
 ``` 
@@ -231,7 +231,7 @@ GO
 CREATE CERTIFICATE MyServerCert WITH SUBJECT = 'My Database Encryption Key Certificate';  
 GO  
 
-USE AdventureWorks2014;  
+USE AdventureWorks2014;  
 GO
   
 CREATE DATABASE ENCRYPTION KEY  
@@ -254,7 +254,7 @@ Pour plus d’informations sur le chiffrement des bases de données, consultez l
 
 
 ## <a name="configure-backup-encryption"></a>Configurer le chiffrement de sauvegarde
-SQL Server peut chiffrer les données lors de la création d’une sauvegarde. En spécifiant l'algorithme de chiffrement et le chiffreur (un certificat ou une clé asymétrique) lors de la création d'une sauvegarde, vous créez un fichier de sauvegarde chiffré.    
+SQL Server peut chiffrer les données lors de la création d’une sauvegarde. En spécifiant l'algorithme de chiffrement et le chiffreur (un certificat ou une clé asymétrique) lors de la création d'une sauvegarde, vous créez un fichier de sauvegarde chiffré.    
   
 > [!WARNING]
 > Il est très important de sauvegarder le certificat ou la clé asymétrique, et de préférence dans un emplacement autre que le fichier de sauvegarde pour lequel il a été utilisé pour le chiffrement. Sans certificat ou clé asymétrique, vous ne pouvez pas restaurer la sauvegarde, ce qui rend le fichier de sauvegarde inutilisable. 
@@ -263,12 +263,12 @@ SQL Server peut chiffrer les données lors de la création d’une sauvegarde. E
 L’exemple suivant crée un certificat, puis crée une sauvegarde protégée par le certificat.
 
 ```
-USE master;  
-GO  
-CREATE CERTIFICATE BackupEncryptCert   
-   WITH SUBJECT = 'Database backups';  
+USE master;  
+GO  
+CREATE CERTIFICATE BackupEncryptCert   
+   WITH SUBJECT = 'Database backups';  
 GO 
-BACKUP DATABASE [AdventureWorks2014]  
+BACKUP DATABASE [AdventureWorks2014]  
 TO DISK = N'/var/opt/mssql/backups/AdventureWorks2014.bak'  
 WITH  
   COMPRESSION,  

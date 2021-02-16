@@ -9,12 +9,12 @@ ms.custom: ''
 ms.technology: integration-services
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: dcbd93a2e1e40c58cd92bd71449ba9a9155ba5b2
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: c911778dbf9321a09fb901806e50f9fae501507a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "92006196"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336307"
 ---
 # <a name="run-an-ssis-package-from-visual-studio-code-with-transact-sql"></a>Exécuter un package SSIS à partir de Visual Studio Code avec Transact-SQL
 

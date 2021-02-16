@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: fe0b7cbc-fe8e-4fe2-95b4-2953efff5869
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: ca2c1223a195d05816b74dd4288b6c2b242d86ac
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 362da93d1048564812826fceb3c0f2e76a47977a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92197116"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348279"
 ---
 # <a name="send-mail-task"></a>tache Envoyer un message
 
@@ -133,9 +133,9 @@ ms.locfileid: "92197116"
   
 |Valeur|Description|  
 |-----------|-----------------|  
-|**Entrée directe**|Permet de définir la source du texte du message. Si cette valeur est sélectionnée, les options dynamiques incluses dans **MessageSource**s'affichent alors.|  
-|**Connexion de fichiers**|Permet de définir la source du fichier contenant le texte du message. Si cette valeur est sélectionnée, les options dynamiques incluses dans **MessageSource**s'affichent alors.|  
-|**Variable**|Permet d'attribuer à la source une variable contenant le texte du message. Si cette valeur est sélectionnée, les options dynamiques incluses dans **MessageSource**s'affichent alors.|  
+|**Entrée directe**|Permet de définir la source du texte du message. Si cette valeur est sélectionnée, les options dynamiques incluses dans **MessageSource** s'affichent alors.|  
+|**Connexion de fichiers**|Permet de définir la source du fichier contenant le texte du message. Si cette valeur est sélectionnée, les options dynamiques incluses dans **MessageSource** s'affichent alors.|  
+|**Variable**|Permet d'attribuer à la source une variable contenant le texte du message. Si cette valeur est sélectionnée, les options dynamiques incluses dans **MessageSource** s'affichent alors.|  
   
  **Priorité**  
  Permet d'indiquer la priorité à appliquer au message.  

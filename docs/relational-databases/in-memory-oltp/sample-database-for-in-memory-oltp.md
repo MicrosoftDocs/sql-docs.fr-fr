@@ -12,12 +12,12 @@ ms.assetid: df347f9b-b950-4e3a-85f4-b9f21735eae3
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: bc7e46cf13da66476b53d68d5f2ea02fb29a69a5
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 67f29ef6d47de5cc14cb248d20a243053857c9e9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172101"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353643"
 ---
 # <a name="sample-database-for-in-memory-oltp"></a>Exemple de base de données pour OLTP en mémoire
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -46,7 +46,7 @@ ms.locfileid: "98172101"
   
 ##  <a name="prerequisites"></a><a name="Prerequisites"></a> Conditions préalables  
   
--   [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]  
+-   [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]  
   
 -   Pour tester les performances, un serveur avec des caractéristiques semblables dans votre environnement de production. Pour cet exemple en particulier, vous devez disposer d’au moins 16 Go de mémoire pour SQL Server. Pour obtenir des conseils généraux sur le matériel pour l’OLTP en mémoire, consultez le billet de blog suivant : [Considérations matérielles pour l’OLTP en mémoire dans SQL Server 2014](blog-hardware-in-memory-oltp.md)
 
@@ -142,25 +142,25 @@ ms.locfileid: "98172101"
   
 -   Les *contraintes par défaut* sont prises en charge pour les tables optimisées en mémoire, et la plupart des contraintes par défaut ont été migrées en l’état. Toutefois, la table d'origine Sales.SalesOrderHeader contient plusieurs contraintes par défaut qui récupèrent la date actuelle, pour les colonnes OrderDate et ModifiedDate. Dans une charge de travail de traitement des commandes à haut débit avec de nombreuses concurrences, toute ressource globale peut devenir un point de contention. L’heure système est l’une de ces ressources globales, et nous avons observé qu’elle peut devenir un goulot d’étranglement quand une charge de travail d’OLTP en mémoire qui insère des commandes client est exécutée, en particulier si l’heure système doit être extraite pour plusieurs colonnes dans l’en-tête de la commande, ainsi que pour ses détails. Le problème est résolu dans cet exemple en récupérant l'heure système une seule fois pour chaque commande client insérée, puis en utilisant cette valeur pour les colonnes datetime dans SalesOrderHeader_inmem et SalesOrderDetail_inmem, dans la procédure stockée Sales.usp_InsertSalesOrder_inmem.  
   
--   *UDT (types de données définis par l’utilisateur) alias* : la table d’origine utilise deux UDT alias, dbo.OrderNumber et dbo.AccountNumber, pour les colonnes PurchaseOrderNumber et AccountNumber, respectivement. [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] ne prend pas en charge le type défini par l’utilisateur alias pour les tables optimisées en mémoire, par conséquent les nouvelles tables utilisent les types de données système nvarchar(25) et nvarchar(15), respectivement.  
+-   *UDT (types de données définis par l’utilisateur) alias* : la table d’origine utilise deux UDT alias, dbo.OrderNumber et dbo.AccountNumber, pour les colonnes PurchaseOrderNumber et AccountNumber, respectivement. [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] ne prend pas en charge le type défini par l’utilisateur alias pour les tables optimisées en mémoire, par conséquent les nouvelles tables utilisent les types de données système nvarchar(25) et nvarchar(15), respectivement.  
   
 -   *Colonnes autorisant des valeurs NULL dans l’index* : dans la table d’origine, la colonne SalesPersonID autorise les valeurs NULL, tandis que dans les nouvelles tables, la colonne n’accepte pas les valeurs NULL et a une contrainte par défaut avec la valeur (-1). Cela est dû au fait que les index des tables à mémoire optimisée ne peuvent pas avoir de colonnes Nullable dans la clé d’index ; -1 est une valeur de substitution de la valeur NULL dans ce cas.  
   
--   *Colonnes calculées[!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] : les colonnes calculées SalesOrderNumber et TotalDue sont omises, car* ne prend pas en charge les colonnes calculées dans les tables optimisées en mémoire. La nouvelle vue Sales.vSalesOrderHeader_extended_inmem reflète les colonnes SalesOrderNumber et TotalDue. Par conséquent, vous pouvez utiliser cette vue si ces colonnes sont nécessaires.  
+-   *Colonnes calculées[!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] : les colonnes calculées SalesOrderNumber et TotalDue sont omises, car* ne prend pas en charge les colonnes calculées dans les tables optimisées en mémoire. La nouvelle vue Sales.vSalesOrderHeader_extended_inmem reflète les colonnes SalesOrderNumber et TotalDue. Par conséquent, vous pouvez utiliser cette vue si ces colonnes sont nécessaires.  
 
-    - **S’applique à :** [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] CTP 1.1.  
-À partir de [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] CTP 1.1, les colonnes calculées sont prises en charge dans les tables optimisées en mémoire et les index.
+    - **S’applique à :** [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] CTP 1.1.  
+À partir de [!INCLUDE [sssql17-md](../../includes/sssql17-md.md)] CTP 1.1, les colonnes calculées sont prises en charge dans les tables optimisées en mémoire et les index.
 
   
--   Les *contraintes de clé étrangère* sont prises en charge pour les tables optimisées en mémoire dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], mais uniquement si les tables référencées sont également optimisées en mémoire. Les clés étrangères qui référencent des tables également migrées vers des tables optimisées en mémoire sont conservées dans les tables migrées, tandis que les autres clés étrangères sont omises.  En outre, SalesOrderHeader_inmem est une table très sollicitée dans l'exemple de charge de travail, et les contraintes de clé étrangère nécessitent un traitement supplémentaire pour toutes les opérations DML, avec des recherches dans les autres tables référencées dans ces contraintes. Par conséquent, on formule l’hypothèse que l’application garantit l’intégrité référentielle pour la table Sales.SalesOrderHeader_inmem, et celle-ci n’est pas validée quand des lignes sont insérées.  
+-   Les *contraintes de clé étrangère* sont prises en charge pour les tables optimisées en mémoire dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], mais uniquement si les tables référencées sont également optimisées en mémoire. Les clés étrangères qui référencent des tables également migrées vers des tables optimisées en mémoire sont conservées dans les tables migrées, tandis que les autres clés étrangères sont omises.  En outre, SalesOrderHeader_inmem est une table très sollicitée dans l'exemple de charge de travail, et les contraintes de clé étrangère nécessitent un traitement supplémentaire pour toutes les opérations DML, avec des recherches dans les autres tables référencées dans ces contraintes. Par conséquent, on formule l’hypothèse que l’application garantit l’intégrité référentielle pour la table Sales.SalesOrderHeader_inmem, et celle-ci n’est pas validée quand des lignes sont insérées.  
   
--   *Rowguid* : la colonne ROWGUID est omise. Alors que uniqueidentifier est pris en charge pour les tables optimisées en mémoire, l'option ROWGUIDCOL n'est pas prise en charge dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]. Les colonnes de ce type sont généralement utilisées pour la réplication de fusion ou pour des tables qui possèdent des colonnes FILESTREAM. Cet exemple ne comporte aucun de ces éléments.  
+-   *Rowguid* : la colonne ROWGUID est omise. Alors que uniqueidentifier est pris en charge pour les tables optimisées en mémoire, l'option ROWGUIDCOL n'est pas prise en charge dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]. Les colonnes de ce type sont généralement utilisées pour la réplication de fusion ou pour des tables qui possèdent des colonnes FILESTREAM. Cet exemple ne comporte aucun de ces éléments.  
   
  Sales.SalesOrderDetail  
   
 -   *Contraintes par défaut* : similairement à SalesOrderHeader, la contrainte par défaut qui exige la date/l’heure système n’est pas migrée. En revanche, la procédure stockée d’insertion des commandes prend soin d’insérer la date et l’heure système actuelles à la première insertion.  
   
--   *Colonnes calculées* : la colonne calculée LineTotal n’a pas été migrée, car les colonnes calculées ne sont pas prises en charge par les tables à mémoire optimisée dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]. Pour accéder à cette colonne, utilisez la vue Sales.vSalesOrderDetail_extended_inmem.  
+-   *Colonnes calculées* : la colonne calculée LineTotal n’a pas été migrée, car les colonnes calculées ne sont pas prises en charge par les tables à mémoire optimisée dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]. Pour accéder à cette colonne, utilisez la vue Sales.vSalesOrderDetail_extended_inmem.  
   
 -   *Rowguid* : la colonne ROWGUID est omise. Pour plus d'informations consultez la description de la table SalesOrderHeader.  
   

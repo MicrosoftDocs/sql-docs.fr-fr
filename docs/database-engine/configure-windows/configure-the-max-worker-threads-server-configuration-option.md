@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: abeadfa4-a14d-469a-bacf-75812e48fac1
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 4d95d8f774d2b9daba6bd2a0e7a179dd901ef0ac
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: c5291b502ec70be8b86c6806e14404664d0b0831
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171041"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100346998"
 ---
 # <a name="configure-the-max-worker-threads-server-configuration-option"></a>Configurer l'option de configuration de serveur max worker threads
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -69,7 +69,7 @@ La valeur par défaut de **Nombre maximum de threads de travail** est 0. Cela pe
   
 -   Le tableau suivant indique le nombre maximal de threads de travail configurés automatiquement (lorsqu la valeur est définie sur 0) pour différentes combinaisons d’UC, d’architecture d’ordinateur et de versions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], à l’aide de la formule : **_Nombre maximal de Workers par défaut_ + ((* UC logiques * - 4) * *Workers par UC*)**.  
   
-    |Nombre d'unités centrales|Ordinateur 32 bits (jusqu’à [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)])|Ordinateur 64 bits (jusqu’à [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1)|Ordinateur 64 bits (à partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)])|   
+    |Nombre d'unités centrales|Ordinateur 32 bits (jusqu’à [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)])|Ordinateur 64 bits (jusqu’à [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP1)|Ordinateur 64 bits (à partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)])|   
     |------------|------------|------------|------------|  
     |\<= 4|256|512|512|   
     |8|288|576|576|   
@@ -79,14 +79,14 @@ La valeur par défaut de **Nombre maximum de threads de travail** est 0. Cela pe
     |128|1248|2496|4480|   
     |256|2272|4544|8576|   
     
-    Jusqu’à [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1, le nombre de *Workers par UC* dépend uniquement de l’architecture (32 bits ou 64 bits) :
+    Jusqu’à [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP1, le nombre de *Workers par UC* dépend uniquement de l’architecture (32 bits ou 64 bits) :
     
     |Nombre d'unités centrales|Ordinateur 32 bits <sup>1</sup>|Ordinateur 64 bits|   
     |------------|------------|------------|   
     |\<= 4|256|512|   
     |\> 4|256 + ((UC logiques - 4) * 8)|512 <sup>2</sup> + ((UC logiques - 4) * 16)|   
     
-    À partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], le nombre de *Workers par UC* dépend de l’architecture et du nombre de processeurs (entre 4 et 64, ou supérieur à 64) :
+    À partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], le nombre de *Workers par UC* dépend de l’architecture et du nombre de processeurs (entre 4 et 64, ou supérieur à 64) :
     
     |Nombre d'unités centrales|Ordinateur 32 bits <sup>1</sup>|Ordinateur 64 bits|   
     |------------|------------|------------|   
@@ -94,7 +94,7 @@ La valeur par défaut de **Nombre maximum de threads de travail** est 0. Cela pe
     |\> 4 et \<= 64|256 + ((UC logiques - 4) * 8)|512 <sup>2</sup> + ((UC logiques - 4) * 16)|   
     |\> 64|256 + ((UC logiques - 4) * 32)|512 <sup>2</sup> + ((UC logiques - 4) * 32)|   
   
-    <sup>1</sup> À partir de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne peut plus être installé sur un système d’exploitation 32 bits. Les valeurs d’ordinateur 32 bits sont répertoriées pour aider les clients exécutant [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions antérieures. Nous vous recommandons d'utiliser 1 024 comme nombre maximal de threads de travail pour une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] exécutée sur un ordinateur 32 bits.
+    <sup>1</sup> À partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne peut plus être installé sur un système d’exploitation 32 bits. Les valeurs d’ordinateur 32 bits sont répertoriées pour aider les clients exécutant [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et versions antérieures. Nous vous recommandons d'utiliser 1 024 comme nombre maximal de threads de travail pour une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] exécutée sur un ordinateur 32 bits.
     
     <sup>2</sup> À partir de [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], la valeur *Nombre maximal de Workers* par défaut est divisée par 2 pour les machines avec moins de 2 Go de mémoire.
   

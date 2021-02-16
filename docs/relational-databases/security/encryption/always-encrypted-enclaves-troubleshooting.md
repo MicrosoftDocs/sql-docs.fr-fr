@@ -11,12 +11,12 @@ ms.topic: how-to
 author: jaszymas
 ms.author: jaszymas
 monikerRange: '>= sql-server-ver15 || = sqlallproducts-allversions'
-ms.openlocfilehash: dc6bcbecdb29cdf0cf1fca8c41e971463bb0d6b9
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: ee15152be634c08cb04ec6a01716604fae720471
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99236357"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100069724"
 ---
 # <a name="troubleshoot-common-issues-for-always-encrypted-with-secure-enclaves"></a>Résoudre les problèmes courants relatifs à Always Encrypted avec enclaves sécurisées
 

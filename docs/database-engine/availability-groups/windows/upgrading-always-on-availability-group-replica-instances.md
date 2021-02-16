@@ -10,12 +10,12 @@ ms.topic: conceptual
 ms.assetid: f670af56-dbcc-4309-9119-f919dcad8a65
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 1c2a6ec0dcaf1e1d9b75016fd44aa17f534854fe
-ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
+ms.openlocfilehash: f0a1e63760b0a584a4e89cb20253b3df21bef9c9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98783588"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340866"
 ---
 # <a name="upgrading-always-on-availability-group-replica-instances"></a>Mise à niveau d’instances de réplica d’un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
