@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 23b3e84f-9296-4dc9-81c0-c7f06ae3f1ff
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: aa38530f0cddfd8518e114b15dda86e5fd51f297
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 2deebc6e6c730be90264bf7f0f3586f56b3d1546
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88495652"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350989"
 ---
 # <a name="split-a-dataset-by-using-the-conditional-split-transformation"></a>Fractionner un dataset à l'aide de la transformation de fractionnement conditionnel
 

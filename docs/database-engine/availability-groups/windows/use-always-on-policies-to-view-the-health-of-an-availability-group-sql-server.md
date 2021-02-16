@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 6f1bcbc3-1220-4071-8e53-4b957f5d3089
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: c1459c830f3879e10b97c88b2ff9ce64ff7901c7
-ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
+ms.openlocfilehash: b9b06dac9dc00fd405fd28f1428a0833d968fabe
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98783577"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340835"
 ---
 # <a name="use-always-on-policies-to-view-the-health-of-an-availability-group-sql-server"></a>Utiliser les stratégies Always On pour afficher l’intégrité d’un groupe de disponibilité (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

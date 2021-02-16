@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: 1314744f-fcaf-46db-800e-2918fa7e1b6c
-ms.openlocfilehash: 369c52eeb66a3d8ca5042f54d71ea9001d30b194
-ms.sourcegitcommit: af64e2b8d498af26b973e86db5c00f8d72991295
+ms.openlocfilehash: fe088ed697e4150b2272f3a390b4002714ab4dc4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98193036"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338273"
 ---
 # <a name="release-notes-for-sql-server-2017-on-linux"></a>Notes de publication pour SQL Server 2017 sur Linux
 
@@ -22,7 +22,7 @@ ms.locfileid: "98193036"
 Les notes de publication suivantes s’appliquent à [!INCLUDE[ssSQL17](../includes/sssql17-md.md)] s’exécutant sur Linux. Cet article est divisé en sections pour chaque mise en production. La mise en production GA offre une prise en charge détaillée et des problèmes connus répertoriés. Chaque mise à jour cumulative (CU) ou la mise à jour de distribution générale (GDR) a un lien vers un article de support décrivant les modifications de la CU, ainsi que des liens de téléchargement des packages Linux.
 
 > [!TIP]
-> Ces notes de publication sont spécifiques aux mises en production [!INCLUDE[ssSQL17](../includes/sssql17-md.md)]. Pour plus d’informations sur le nouveau [!INCLUDE[sql-server-2019](../includes/sssqlv15-md.md)], consultez [Notes de publication pour la préversion SQL Server 2019 sur Linux](sql-server-linux-release-notes-2019.md?view=sql-server-ver15&preserve-view=true).
+> Ces notes de publication sont spécifiques aux mises en production [!INCLUDE[ssSQL17](../includes/sssql17-md.md)]. Pour plus d’informations sur le nouveau [!INCLUDE[sql-server-2019](../includes/sssql19-md.md)], consultez [Notes de publication pour la préversion SQL Server 2019 sur Linux](sql-server-linux-release-notes-2019.md?view=sql-server-ver15&preserve-view=true).
 
 ## <a name="supported-platforms"></a>Plateformes prises en charge
 
@@ -604,7 +604,7 @@ Les sections suivantes décrivent les problèmes connus avec la mise en producti
          sudo systemctl restart mssql-server
          ```
 
-- Les bases de données [!INCLUDE[ssSQL14](../includes/sssql14-md.md)] sur Windows qui utilisent l’OLTP en mémoire ne peuvent pas être restaurées sur [!INCLUDE[ssSQL17](../includes/sssql17-md.md)] sur Linux. Pour restaurer une base de données [!INCLUDE[ssSQL14](../includes/sssql14-md.md)] qui utilise l’OLTP en mémoire, commencez par mettre à niveau les bases de données vers [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] ou [!INCLUDE[ssSQL17](../includes/sssql17-md.md)] sur Windows avant de les déplacer vers [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] sur Linux via la sauvegarde/restauration ou le détachement/attachement.
+- Les bases de données [!INCLUDE[ssSQL14](../includes/sssql14-md.md)] sur Windows qui utilisent l’OLTP en mémoire ne peuvent pas être restaurées sur [!INCLUDE[ssSQL17](../includes/sssql17-md.md)] sur Linux. Pour restaurer une base de données [!INCLUDE[ssSQL14](../includes/sssql14-md.md)] qui utilise l’OLTP en mémoire, commencez par mettre à niveau les bases de données vers [!INCLUDE[sssql15-md](../includes/sssql16-md.md)] ou [!INCLUDE[ssSQL17](../includes/sssql17-md.md)] sur Windows avant de les déplacer vers [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] sur Linux via la sauvegarde/restauration ou le détachement/attachement.
 
 - L’autorisation utilisateur **ADMINISTER BULK OPERATIONS** n’est pas prise en charge sur Linux pour l’instant.
 

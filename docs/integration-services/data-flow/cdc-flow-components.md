@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 5ae69ddf-27c3-467c-9af1-c89ec383f661
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 6df8e88cfbe4098cdb13a9dce9b929caddbc6571
-ms.sourcegitcommit: 04d101fa6a85618b8bc56c68b9c006b12147dbb5
+ms.openlocfilehash: aa24cbdbafa67af73e3b1ee97592b42f6ac86d59
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99049039"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347508"
 ---
 # <a name="cdc-flow-components"></a>Composants de flux CDC
 

@@ -11,12 +11,12 @@ ms.assetid: 31d16820-d126-4c57-82cc-27701e4091bc
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: a1787dd26f51b6b712c253270bfbc14641d19b21
-ms.sourcegitcommit: 00be343d0f53fe095a01ea2b9c1ace93cdcae724
+ms.openlocfilehash: cb7bbbe15bee9219bf78430421bf99ea6b63676f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98813208"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353824"
 ---
 # <a name="upgrade-to-a-different-edition-of-sql-server-setup"></a>Mettre à niveau vers une autre édition de SQL Server 2016 (Installation)
 

@@ -11,7 +11,7 @@ DROP WORKLOAD GROUP group_name
 
 ## <a name="arguments"></a>Arguments
 
-*group_name*  : nom d'un groupe de charges de travail défini par l'utilisateur existant.
+*group_name* : nom d'un groupe de charges de travail défini par l'utilisateur existant.
 
 ## <a name="remarks"></a>Notes 
 

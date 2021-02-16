@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: e1e55519-97ec-4404-81ef-881da3b42006
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 1b5726aad103012b0ed7619749c1f6f669baa234
-ms.sourcegitcommit: 23649428528346930d7d5b8be7da3dcf1a2b3190
+ms.openlocfilehash: 87ac1c0759264b00567d5edc2cd9f22727fdd0fa
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98241831"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100353858"
 ---
 # <a name="enable-encrypted-connections-to-the-database-engine"></a>Activez les connexions chiffrées dans le moteur de base de données
 
@@ -40,7 +40,7 @@ ms.locfileid: "98241831"
  L’ordinateur serveur doit disposer d’un certificat alloué. Pour allouer le certificat sur l’ordinateur serveur, vous [l’importez dans Windows](#single-server). L’ordinateur client doit être configuré pour [approuver l’autorité racine du certificat](#about).  
   
 > [!IMPORTANT]
-> À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], le protocole SSL (Secure Sockets Layer) n’est plus disponible. Utilisez TLS (Transport Layer Security) à la place.
+> À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], le protocole SSL (Secure Sockets Layer) n’est plus disponible. Utilisez TLS (Transport Layer Security) à la place.
 
 ## <a name="transport-layer-security-tls"></a>TLS (Transport Layer Security)
 
@@ -100,9 +100,9 @@ Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], pour charger un 
 
 ## <a name="install-on-single-server"></a><a name="single-server"></a>Installation sur un serveur unique
 
-Avec [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], la gestion des certificats est intégrée au Gestionnaire de configuration SQL Server. Le Gestionnaire de configuration SQL Server pour [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] peut être utilisé avec des versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Consultez [Gestion des certificats (Gestionnaire de configuration SQL Server)](../../database-engine/configure-windows/manage-certificates.md) pour ajouter un certificat sur une seule instance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].
+Avec [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], la gestion des certificats est intégrée au Gestionnaire de configuration SQL Server. Le Gestionnaire de configuration SQL Server pour [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] peut être utilisé avec des versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Consultez [Gestion des certificats (Gestionnaire de configuration SQL Server)](../../database-engine/configure-windows/manage-certificates.md) pour ajouter un certificat sur une seule instance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].
 
-Si vous utilisez [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], et que le Gestionnaire de configuration SQL Server pour [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] n’est pas disponible, effectuez les étapes suivantes :
+Si vous utilisez [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], et que le Gestionnaire de configuration SQL Server pour [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] n’est pas disponible, effectuez les étapes suivantes :
 
 1. Dans le menu **Démarrer** , cliquez sur **Exécuter** puis, dans la zone **Ouvrir** , tapez **MMC** et cliquez sur **OK**.  
   
@@ -130,9 +130,9 @@ Si vous utilisez [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[
   
 ## <a name="install-across-multiple-servers"></a>Installation sur plusieurs serveurs
 
-Avec [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], la gestion des certificats est intégrée au Gestionnaire de configuration SQL Server. Le Gestionnaire de configuration SQL Server pour [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] peut être utilisé avec des versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Reportez-vous à [Gestion des certificats (Gestionnaire de configuration SQL Server)](../../database-engine/configure-windows/manage-certificates.md) pour ajouter un certificat dans une configuration de cluster de basculement ou dans une configuration de groupe de disponibilité.
+Avec [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], la gestion des certificats est intégrée au Gestionnaire de configuration SQL Server. Le Gestionnaire de configuration SQL Server pour [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] peut être utilisé avec des versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Reportez-vous à [Gestion des certificats (Gestionnaire de configuration SQL Server)](../../database-engine/configure-windows/manage-certificates.md) pour ajouter un certificat dans une configuration de cluster de basculement ou dans une configuration de groupe de disponibilité.
 
-Si vous utilisez [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], et que le Gestionnaire de configuration SQL Server pour [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] n’est pas disponible, suivez les étapes de la section [Pour provisionner (installer) un certificat sur un seul serveur](#single-server) pour chaque serveur.
+Si vous utilisez [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], et que le Gestionnaire de configuration SQL Server pour [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] n’est pas disponible, suivez les étapes de la section [Pour provisionner (installer) un certificat sur un seul serveur](#single-server) pour chaque serveur.
 
 ## <a name="export-server-certificate"></a>Exportation du certificat de serveur  
   

@@ -10,12 +10,12 @@ ms.technology: integration-services
 author: swinarko
 ms.author: sawinark
 ms.reviewer: maghan
-ms.openlocfilehash: 7a73a233a84d532f55dc61797f44e5d39013722f
-ms.sourcegitcommit: 894c1a23e922dc29b82c1d2c34c7b0ff28b38654
+ms.openlocfilehash: f603b138773ea76fe73ea3d6929ece535779e23c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93067332"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351993"
 ---
 # <a name="tutorial-deploy-and-run-a-sql-server-integration-services-ssis-package-in-azure"></a>Tutoriel : Déployer et exécuter un package SQL Server Integration Services (SSIS) sur Azure
 
@@ -36,7 +36,7 @@ Pour exécuter le package sur Azure SQL Database, obtenez les informations de co
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com/).
 2. Sélectionnez **Bases de données SQL** dans le menu de gauche, puis sélectionnez la base de données SSISDB dans la page **Bases de données SQL**. 
-3. Dans la page **Vue d’ensemble** de votre base de données, notez le nom complet du serveur. Pour voir l’option **Cliquer pour copier** , pointez sur le nom du serveur. 
+3. Dans la page **Vue d’ensemble** de votre base de données, notez le nom complet du serveur. Pour voir l’option **Cliquer pour copier**, pointez sur le nom du serveur. 
 4. Si vous avez oublié vos informations de connexion au serveur Azure SQL Database, accédez à la page du serveur SQL Database pour voir le nom de l’administrateur du serveur. Vous pouvez réinitialiser le mot de passe si nécessaire.
 
 ## <a name="connect-to-the-ssisdb-database"></a>Se connecter à la base de données SSISDB
@@ -52,7 +52,7 @@ Voici les deux points les plus importants à retenir. Ces étapes sont décrites
 
 1. Ouvrez SQL Server Management Studio.
 
-2. **Connectez-vous au serveur**. Dans la fenêtre **Se connecter au serveur** , entrez les valeurs suivantes :
+2. **Connectez-vous au serveur**. Dans la fenêtre **Se connecter au serveur**, entrez les valeurs suivantes :
 
    | Paramètre       | Valeur suggérée | Description | 
    | ------------ | ------------------ | ------------------------------------------------- | 
@@ -62,11 +62,11 @@ Voici les deux points les plus importants à retenir. Ces étapes sont décrites
    | **Connexion** | Compte d’administrateur de serveur | Le compte que vous avez spécifié lorsque vous avez créé le serveur. |
    | **Mot de passe** | Mot de passe de votre compte d’administrateur de serveur | Il s’agit du mot de passe que vous avez spécifié quand vous avez créé le serveur. |
 
-3. **Connectez-vous à la base de données SSISDB**. Sélectionnez **Options** pour développer la boîte de dialogue **Se connecter au serveur**. Dans la boîte de dialogue **Se connecter au serveur** développée, sélectionnez l’onglet **Propriétés de connexions**. Dans le champ **Se connecter à la base de données** , sélectionnez ou entrez `SSISDB`.
+3. **Connectez-vous à la base de données SSISDB**. Sélectionnez **Options** pour développer la boîte de dialogue **Se connecter au serveur**. Dans la boîte de dialogue **Se connecter au serveur** développée, sélectionnez l’onglet **Propriétés de connexions**. Dans le champ **Se connecter à la base de données**, sélectionnez ou entrez `SSISDB`.
 
 4. Sélectionnez **Connecter**. La fenêtre Explorateur d’objets s’ouvre dans SSMS. 
 
-5. Dans l’Explorateur d’objets, développez **Catalogues Integration Services** , puis développez **SSISDB** pour afficher les objets de la base de données de catalogues SSIS.
+5. Dans l’Explorateur d’objets, développez **Catalogues Integration Services**, puis développez **SSISDB** pour afficher les objets de la base de données de catalogues SSIS.
 
 ## <a name="deploy-a-project-with-the-deployment-wizard"></a>Déployer un projet avec l’Assistant Déploiement
 
@@ -76,11 +76,11 @@ Pour en savoir plus sur le déploiement de packages et sur l’Assistant Déploi
 > Le déploiement sur Azure prend uniquement en charge le modèle de déploiement de projet.
 
 ### <a name="start-the-integration-services-deployment-wizard"></a>Démarrer l’Assistant Déploiement d’Integration Services
-1. Dans l’Explorateur d’objets de SSMS, après avoir développé le nœud **Catalogues Integration Services** et le nœud **SSISDB** , développez un dossier de projet.
+1. Dans l’Explorateur d’objets de SSMS, après avoir développé le nœud **Catalogues Integration Services** et le nœud **SSISDB**, développez un dossier de projet.
 
 2.  Sélectionnez le nœud **Projets**.
 
-3.  Cliquez avec le bouton droit sur le nœud **Projets** , puis sélectionnez **Déployer le projet**. L’Assistant Déploiement d’Integration Services s’ouvre. Vous pouvez déployer un projet à partir d’une base de données de catalogues SSIS ou du système de fichiers.
+3.  Cliquez avec le bouton droit sur le nœud **Projets**, puis sélectionnez **Déployer le projet**. L’Assistant Déploiement d’Integration Services s’ouvre. Vous pouvez déployer un projet à partir d’une base de données de catalogues SSIS ou du système de fichiers.
 
     ![Déployer un projet à partir de SSMS](media/ssis-azure-deploy-run-monitor-tutorial/ssisdb-deploy-project1.png)
 
@@ -89,19 +89,19 @@ Pour en savoir plus sur le déploiement de packages et sur l’Assistant Déploi
 ### <a name="deploy-a-project-with-the-deployment-wizard"></a>Déployer un projet avec l’Assistant Déploiement
 1. Dans la page **Introduction** de l’Assistant Déploiement, lisez l’introduction. Sélectionnez **Suivant** pour ouvrir la page **Sélectionner la source**.
 
-2. Dans la page **Sélectionner la source** , sélectionnez le projet SSIS existant à déployer.
+2. Dans la page **Sélectionner la source**, sélectionnez le projet SSIS existant à déployer.
     -   Pour déployer un fichier de déploiement de projet que vous avez créé, sélectionnez **Fichier de déploiement de projet** , puis entrez le chemin d’accès du fichier .ispac.
-    -   Pour déployer un projet qui réside dans un catalogue SSIS, sélectionnez **Catalogue Integration Services** , puis entrez le nom du serveur et le chemin du projet au sein du catalogue. Seuls les projets qui résident dans SSISDB hébergé par SQL Server peuvent être redéployés au cours de cette étape.
+    -   Pour déployer un projet qui réside dans un catalogue SSIS, sélectionnez **Catalogue Integration Services**, puis entrez le nom du serveur et le chemin du projet au sein du catalogue. Seuls les projets qui résident dans SSISDB hébergé par SQL Server peuvent être redéployés au cours de cette étape.
     -   Sélectionnez **Suivant** pour voir la page **Sélectionner la destination**.
   
-3.  Dans la page **Sélectionner la destination** , sélectionnez la destination du projet.
+3.  Dans la page **Sélectionner la destination**, sélectionnez la destination du projet.
     -   Entrez le nom complet du serveur au format `<server_name>.database.windows.net`.
     -   Fournissez les informations d’authentification et sélectionnez **Se connecter**.
     -   Sélectionnez ensuite **Parcourir** pour sélectionner le dossier cible dans SSISDB.
     -   Ensuite, sélectionnez **Suivant** pour ouvrir la page **Vérifier**. (Le bouton **Suivant** est activé seulement si vous sélectionnez **Se connecter**.)
   
-4.  Dans la page **Vérifier** , vérifiez les paramètres que vous avez sélectionnés.
-    -   Vous pouvez changer vos choix en sélectionnant **Précédent** , ou en sélectionnant l’une des étapes du volet gauche.
+4.  Dans la page **Vérifier**, vérifiez les paramètres que vous avez sélectionnés.
+    -   Vous pouvez changer vos choix en sélectionnant **Précédent**, ou en sélectionnant l’une des étapes du volet gauche.
     -   Sélectionnez **Déployer** pour démarrer le processus de déploiement.
 
     > [!NOTE]
@@ -182,15 +182,15 @@ Write-Host "All done."
 
 2. Cliquez avec le bouton droit et sélectionnez **Exécuter** pour ouvrir la boîte de dialogue **Exécuter le package**.
 
-3.  Dans la boîte de dialogue **Exécuter le package** , configurez l’exécution du package à l’aide des paramètres situés sous les onglets **Paramètres** , **Gestionnaires de connexions** et **Avancé**.
+3.  Dans la boîte de dialogue **Exécuter le package**, configurez l’exécution du package à l’aide des paramètres situés sous les onglets **Paramètres**, **Gestionnaires de connexions** et **Avancé**.
 
 4.  Sélectionnez **OK** pour exécuter le package.
 
 ## <a name="monitor-the-running-package-in-ssms"></a>Surveiller l’exécution du package dans SSMS
 
-Pour afficher l’état des opérations Integration Services en cours d’exécution sur le serveur Integration Services, par exemple le déploiement, la validation et l’exécution du package, utilisez la boîte de dialogue **Opérations actives** dans SSMS. Pour ouvrir la boîte de dialogue **Opérations actives** , cliquez avec le bouton droit sur **SSISDB** , puis sélectionnez **Opérations actives**.
+Pour afficher l’état des opérations Integration Services en cours d’exécution sur le serveur Integration Services, par exemple le déploiement, la validation et l’exécution du package, utilisez la boîte de dialogue **Opérations actives** dans SSMS. Pour ouvrir la boîte de dialogue **Opérations actives**, cliquez avec le bouton droit sur **SSISDB**, puis sélectionnez **Opérations actives**.
 
-Vous pouvez également sélectionner un package dans l’Explorateur d’objets, cliquer avec le bouton droit et sélectionner **Rapports** , **Rapports standard** , puis **Toutes les exécutions**.
+Vous pouvez également sélectionner un package dans l’Explorateur d’objets, cliquer avec le bouton droit et sélectionner **Rapports**, **Rapports standard**, puis **Toutes les exécutions**.
 
 Pour plus d’informations sur la surveillance des packages en cours d’exécution dans SSMS, consultez la section [Surveiller les packages en cours d’exécution et autres opérations](../performance/monitor-running-packages-and-other-operations.md).
 

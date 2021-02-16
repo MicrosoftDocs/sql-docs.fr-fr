@@ -11,12 +11,12 @@ ms.topic: language-reference
 ms.assetid: 1b38e8e3-c560-4b6e-b60e-bfd7cfcd4fdf
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 19111422e69b2ce77f53e13bb6d1a450b4ef7692
-ms.sourcegitcommit: 80701484b8f404316d934ad2a85fd773e26ca30c
+ms.openlocfilehash: f1fee927b37a29f575e2b20c09de5a8f465e4ab4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93243666"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100347815"
 ---
 # <a name="functions---dm_execution_performance_counters"></a>Fonctions - dm_execution_performance_counters
 

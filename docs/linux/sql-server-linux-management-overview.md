@@ -9,12 +9,12 @@ ms.prod: sql
 ms.technology: linux
 ms.assetid: 6bd8eb0b-593d-467e-87ea-ab1c4dbcd1ea
 moniker: '>= sql-server-linux-2017 || >= sql-server-2017 '
-ms.openlocfilehash: 04ece9daf696d73b9de96f48a08e32136fe6ab66
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: 3defce833ad89868dd4fb08ba6abfcfeea4a0d46
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98094629"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345620"
 ---
 # <a name="choose-the-right-tool-to-manage-sql-server-on-linux"></a>Choisissez l’outil approprié pour gérer SQL Server sur Linux
 

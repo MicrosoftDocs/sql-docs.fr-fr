@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 54a458cc-9f4f-4b48-8cf2-db2e0fa7756c
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: bea31577692752b028bdbddbf0ed440dfee7e493
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 53fc539f46751cf6073aee0d5cd3aefae1971283
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88421963"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338405"
 ---
 # <a name="debugging-control-flow"></a>Débogage du flux de contrôle
 
@@ -109,7 +109,7 @@ ms.locfileid: "88421963"
 ## <a name="debug-windows"></a>Fenêtres de débogage  
  [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] propose de nombreuses fenêtres que vous pouvez utiliser pour travailler avec les points d’arrêt et déboguer les packages qui contiennent des points d’arrêt. Pour en savoir plus sur chacune des fenêtres, ouvrez-les et appuyez sur F1 pour afficher l'aide.  
   
- Pour ouvrir ces fenêtres dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)], cliquez sur le menu **Déboguer** , pointez sur **Fenêtres**, puis cliquez sur **Points d’arrêt**, **Sortie**ou **Immédiat**.  
+ Pour ouvrir ces fenêtres dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)], cliquez sur le menu **Déboguer** , pointez sur **Fenêtres**, puis cliquez sur **Points d’arrêt**, **Sortie** ou **Immédiat**.  
   
  Le tableau qui suit décrit ces fenêtres.  
   

@@ -8,12 +8,12 @@ ms.topic: tutorial
 author: amvin87
 ms.author: amitkh
 ms.reviewer: vanto
-ms.openlocfilehash: 3956c0470ac9f4b3ac2f2a35ed057015db6ea0e0
-ms.sourcegitcommit: 8ca4b1398e090337ded64840bcb8d6c92d65c29e
+ms.openlocfilehash: 528d9550f79eea50db554dec11ead53039348cdb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98534873"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100051930"
 ---
 # <a name="tutorial---setup-a-three-node-always-on-availability-group-with-hpe-serviceguard-for-linux"></a>Tutoriel : Configurer un groupe de disponibilité Always On à trois nœuds avec HPE Serviceguard pour Linux 
 

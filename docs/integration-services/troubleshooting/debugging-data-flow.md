@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 1c574f1b-54f7-4c05-8e42-8620e2c1df0f
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: bc8ff10121320da5b291c3c10cdcdac36f0cc364
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: c69bed5fbec76fab380f91515827630fa60938a5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92194049"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342164"
 ---
 # <a name="debugging-data-flow"></a>Débogage d'un flux de données
 

@@ -12,12 +12,12 @@ ms.assetid: eecc5821-152b-4ed5-888f-7c0e6beffed9
 author: MightyPen
 ms.author: genemi
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 4721f3ae9add5e62aa95820b0b40f0ddd20a6d81
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 15cabb6877e249a6f0be9d38449c85c13bbda78b
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98172551"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100351244"
 ---
 # <a name="indexes-on-memory-optimized-tables"></a>Index sur des tables optimisées en mémoire
 
@@ -62,7 +62,7 @@ Pour être déclarée avec DURABILITY = SCHEMA\_AND_DATA (paramètre par défaut
     ```
 
 > [!NOTE]  
-> Dans [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], le nombre d’index par table à mémoire optimisée ou type de table est limité à 8. À compter de [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] et dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], le nombre d’index n’est plus limité pour les tables à mémoire optimisée et les types de tables.
+> Dans [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] et [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], le nombre d’index par table à mémoire optimisée ou type de table est limité à 8. À compter de [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] et dans [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)], le nombre d’index n’est plus limité pour les tables à mémoire optimisée et les types de tables.
   
 ### <a name="code-sample-for-syntax"></a>Exemple de code pour la syntaxe  
   

@@ -11,12 +11,12 @@ ms.topic: language-reference
 ms.assetid: c73d7452-31c5-4f4e-afcc-e9eca760c826
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 6641ff60f49534a303d3f60110dbdd63aab2ed29
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 5cff0cdf01fbfbb0af768a18ab54614c2a46f5bb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88477125"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346514"
 ---
 # <a name="catalogrename_environment-ssisdb-database"></a>catalog.rename_environment (base de données SSISDB)
 
@@ -67,7 +67,7 @@ catalog.rename_environment [ @folder_name = ] folder_name
   
 -   Le nouveau nom a déjà été utilisé dans un environnement existant  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Les références environnementales des projets ne sont pas mises à jour automatiquement lorsque vous renommez l'environnement. Les références environnementales doivent être mises à jour en conséquence. Cette procédure stockée réussira même si les références environnementales sont arrêtées en modifiant le nom d'un environnement. Les références environnementales doivent être mises à jour après que cette procédure stockée s'est achevée.  
   
 > [!NOTE]  

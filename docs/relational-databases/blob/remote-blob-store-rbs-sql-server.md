@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 31c947cf-53e9-4ff4-939b-4c1d034ea5b1
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: bfd234025664e7508d7d9cf942ff81a216b447a2
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 89a79b07977d8fec2e2dd6f2a8b9acd9cea0ba5e
+ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171751"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "100343160"
 ---
 # <a name="remote-blob-store-rbs-sql-server"></a>Magasin d'objets blob distants (RBS) (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -32,9 +32,9 @@ ms.locfileid: "98171751"
 
 | Version [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] | Emplacement de téléchargement de RBS |
 |:---|:---|
-| [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] | [[!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP2 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833) |
+| [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] | [[!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 Feature Pack](https://www.microsoft.com/download/details.aspx?id=56833) |
 | [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] | [[!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] Feature Pack](https://www.microsoft.com/download/details.aspx?id=55992) |
-| [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] | [Page de téléchargement [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] RBS](https://go.microsoft.com/fwlink/?linkid=2109005) |
+| [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] | [Page de téléchargement [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] RBS](https://go.microsoft.com/fwlink/?linkid=2109005) |
 | &nbsp; | &nbsp; |
   
  
@@ -72,7 +72,7 @@ ms.locfileid: "98171751"
 ### <a name="credential-store-symmetric-key"></a>Clé symétrique du magasin d'informations d'identification  
  Si un fournisseur demande l’installation et l’utilisation d’un secret stocké dans le magasin d’informations d’identification, RBS utilise une clé symétrique pour chiffrer les secrets du fournisseur qu’un client peut utiliser pour obtenir l’autorisation d’accès au magasin d’objets blob du fournisseur.  
   
--   RBS 2016 utilise une clé symétrique **AES_128** . [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] n’autorise pas la création de nouvelles clés **TRIPLE_DES** , sauf pour des raisons de compatibilité descendante. Pour plus d’informations, consultez [CREATE SYMMETRIC KEY &#40;Transact-SQL&#41;](../../t-sql/statements/create-symmetric-key-transact-sql.md).  
+-   RBS 2016 utilise une clé symétrique **AES_128** . [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] n’autorise pas la création de nouvelles clés **TRIPLE_DES** , sauf pour des raisons de compatibilité descendante. Pour plus d’informations, consultez [CREATE SYMMETRIC KEY &#40;Transact-SQL&#41;](../../t-sql/statements/create-symmetric-key-transact-sql.md).  
   
 -   RBS 2014 et les versions antérieures utilisent un magasin d’informations d’identification qui maintient le chiffrement des clés secrètes à l’aide de l’algorithme de clé symétrique **TRIPLE_DES** , obsolète. Si vous utilisez **TRIPLE_DES**[!INCLUDE[msCoName](../../includes/msconame-md.md)] , nous vous recommandons d’améliorer votre sécurité en suivant les étapes décrites dans cette rubrique pour permuter votre clé vers une méthode de chiffrement plus forte.  
   

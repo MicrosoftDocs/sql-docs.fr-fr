@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 9281c5f8-8da3-4ae8-8142-53c5919a4cfe
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: d80feda3402c1aedcc0c1016c3de903524f68f17
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 19c64b4d9d20bbaa6552f11fa5f5228a62e7dd6f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88425211"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346898"
 ---
 # <a name="load-balancing-packages-on-remote-servers-by-using-sql-server-agent"></a>Équilibrage de charge de packages sur des serveurs distants à l'aide de l'Agent SQL Server
 

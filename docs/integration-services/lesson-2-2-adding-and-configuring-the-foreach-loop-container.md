@@ -11,12 +11,12 @@ ms.topic: tutorial
 ms.assetid: 88a973cc-0f23-4ecf-adb6-5b06279c2df6
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: e80ddcc6a21eecfea98fbe44aa985066c1a92736
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 8c63288019fa6938f4481bbded2e5b29c29198d3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92193789"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354312"
 ---
 # <a name="lesson-2-2-add-and-configure-the-foreach-loop-container"></a>Leçon 2-2 : Ajouter et configurer le conteneur de boucles Foreach
 

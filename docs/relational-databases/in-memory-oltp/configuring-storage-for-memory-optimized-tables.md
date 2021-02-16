@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 6e005de0-3a77-4b91-b497-14cc0f9f6605
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: fdb18826c75e55f41e3c02a97e2f8374a22778b3
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 892ce217acbc07bdd98ca7166aeb0a9211b2adea
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99237562"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350673"
 ---
 # <a name="configuring-storage-for-memory-optimized-tables"></a>Configuration du stockage des tables optimisées en mémoire
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

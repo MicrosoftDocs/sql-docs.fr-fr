@@ -15,12 +15,12 @@ ms.assetid: 4fd003e7-808e-4b0e-b28a-47d9f2616f06
 author: cawrites
 ms.author: chadam
 manager: erikre
-ms.openlocfilehash: 0e470b200e31e047c7bd9cdd15cc74277f4b0b1e
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: fc78c3fc25d7dcf0222494863ef8c7db20527f97
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98765706"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344634"
 ---
 # <a name="data-synchronization-state-of-availability-database-is-not-healthy-for-an-always-on-availability-group"></a>L’état de synchronisation des données de la base de données de disponibilité n’est pas sain pour un groupe de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]

@@ -10,12 +10,12 @@ ms.technology: integration-services
 author: swinarko
 ms.author: sawinark
 ms.reviewer: maghan
-ms.openlocfilehash: 4f6031cd363db4ae3c26511daf91811c3d133d1e
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 2c7209d43628296169e973012ea459296acc3549
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92192539"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351976"
 ---
 # <a name="run-sql-server-integration-services-ssis-packages-deployed-in-azure"></a>Exécuter des packages SSIS (SQL Server Integration Services) déployés sur Azure
 

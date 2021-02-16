@@ -7,7 +7,7 @@ ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
 ms.technology: t-sql
-ms.topic: language-reference
+ms.topic: reference
 f1_keywords:
 - CERTIFICATE
 - CREATE_CERTIFICATE_TSQL
@@ -28,12 +28,12 @@ ms.assetid: a4274b2b-4cb0-446a-a956-1c8e6587515d
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 238fcde63bf0af459ab741f54a411fefb317bfe9
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 4774ca76959e70514d93c31b9a8ccb81650dc97d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170351"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344038"
 ---
 # <a name="create-certificate-transact-sql"></a>CREATE CERTIFICATE (Transact-SQL)
 [!INCLUDE [sql-asdb-pdw](../../includes/applies-to-version/sql-asdb-pdw.md)]
@@ -168,7 +168,7 @@ CREATE CERTIFICATE certificate_name
 ## <a name="remarks"></a>Notes  
  Un certificat est un élément sécurisable de niveau base de données qui suit la norme X.509 et prend en charge les champs X.509 V1. `CREATE CERTIFICATE` permet de charger un certificat à partir d’un fichier, d’une constante binaire ou d’un assembly. Cette instruction peut également générer une paire de clés et créer un certificat autosigné.  
   
- La clé privée doit être \<= 2500 octets dans un format chiffré. Les clés privées générées par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] font 1024 bits jusqu’à [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], et 2 048 bits à compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]. Les clés privées importées à partir d'une source externe ont une longueur minimale de 384 bits et une longueur maximale de 4 096 bits. La longueur d'une clé privée importée doit être un entier multiple de 64 bits. Les certificats utilisés pour le chiffrement transparent des données sont limités à une taille de clé privée de 3456 bits.  
+ La clé privée doit être \<= 2500 octets dans un format chiffré. Les clés privées générées par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] font 1024 bits jusqu’à [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], et 2 048 bits à compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]. Les clés privées importées à partir d'une source externe ont une longueur minimale de 384 bits et une longueur maximale de 4 096 bits. La longueur d'une clé privée importée doit être un entier multiple de 64 bits. Les certificats utilisés pour le chiffrement transparent des données sont limités à une taille de clé privée de 3456 bits.  
   
  Le numéro de série entier du certificat est stocké, mais seuls les 16 premiers octets apparaissent dans la vue de catalogue sys.certificates.  
   
@@ -187,7 +187,7 @@ CREATE CERTIFICATE certificate_name
   
  Vous pouvez créer une description binaire d’un certificat à l’aide des fonctions [CERTENCODED &#40;Transact-SQL&#41;](../../t-sql/functions/certencoded-transact-sql.md) et [CERTPRIVATEKEY &#40;Transact-SQL&#41;](../../t-sql/functions/certprivatekey-transact-sql.md). L’exemple B de l’article [CERTENCODED &#40;Transact-SQL&#41;](../../t-sql/functions/certencoded-transact-sql.md) utilise **CERTPRIVATEKEY** et **CERTENCODED** afin de copier un certificat dans une autre base de données.  
 
-Les algorithmes MD2, MD4, MD5, SHA et SHA1 sont dépréciés dans [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]. Jusqu’à [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], un certificat auto-signé est créé à l’aide de l’algorithme SHA1. À partir de [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], un certificat auto-signé est créé à l’aide de l’algorithme SHA2_256.
+Les algorithmes MD2, MD4, MD5, SHA et SHA1 sont dépréciés dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]. Jusqu’à [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], un certificat auto-signé est créé à l’aide de l’algorithme SHA1. À partir de [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)], un certificat auto-signé est créé à l’aide de l’algorithme SHA2_256.
 
 ## <a name="permissions"></a>Autorisations  
  Requiert l'autorisation `CREATE CERTIFICATE` sur la base de données. Les connexions Windows, les connexions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et les rôles d’application sont les seuls à pouvoir posséder des certificats. Les groupes et les rôles ne peuvent pas posséder de certificats.  

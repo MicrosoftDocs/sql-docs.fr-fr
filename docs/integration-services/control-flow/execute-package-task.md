@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 042d4ec0-0668-401c-bb3a-a25fe2602eac
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: ab1215ca58f64c6e28f78e423bdee5a66b4c46b2
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 8251f2ff30fafff584b4f56fe93a9b7423ea412b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91725926"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352086"
 ---
 # <a name="execute-package-task"></a>Tâche d'exécution de package
 
@@ -64,7 +64,7 @@ ms.locfileid: "91725926"
   
  Dans d'autres situations, vous pouvez préférer que les packages parent et enfants échouent ensemble comme une même unité, ou bien éviter la charge de traitement supplémentaire d'un autre processus. Par exemple, si un processus enfant échoue et que les traitements ultérieurs du processus parent du package dépendent de la réussite du processus enfant, alors le package enfant doit s'exécuter dans le processus du package parent.  
   
- Par défaut, la propriété ExecuteOutOfProcess de la tâche d’exécution du package a la valeur **False**, et le package enfant s’exécute dans le même processus que le package parent. Si vous affectez la valeur **True**à cette propriété, le package enfant s'exécute dans un processus indépendant. Cela peut ralentir le lancement du package enfant. En outre, si vous affectez la valeur **True**à la propriété, vous ne pouvez pas déboguer le package dans une installation d’outils uniquement. Vous devez installer [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]. Pour plus d’informations, consultez [Installer Integration Services](../../integration-services/install-windows/install-integration-services.md).  
+ Par défaut, la propriété ExecuteOutOfProcess de la tâche d’exécution du package a la valeur **False**, et le package enfant s’exécute dans le même processus que le package parent. Si vous affectez la valeur **True** à cette propriété, le package enfant s'exécute dans un processus indépendant. Cela peut ralentir le lancement du package enfant. En outre, si vous affectez la valeur **True** à la propriété, vous ne pouvez pas déboguer le package dans une installation d’outils uniquement. Vous devez installer [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]. Pour plus d’informations, consultez [Installer Integration Services](../../integration-services/install-windows/install-integration-services.md).  
   
 ## <a name="extending-transactions"></a>Extension des transactions  
  La transaction que le package parent utilise peut être étendue au package enfant ; par conséquent, le travail réalisé par les deux packages peut être validé ou annulé. Par exemple, les insertions dans une base de données effectuées par le package parent peuvent être validées ou annulées, en fonction de celles réalisées par le package enfant, et vice versa. Pour plus d'informations, consultez [Inherited Transactions](../integration-services-transactions.md).  
@@ -165,7 +165,7 @@ ms.locfileid: "91725926"
  Si le package enfant s’avère protégé par un mot de passe, indiquez ce dernier ou cliquez sur le bouton représentant des points de suspension (...) afin de définir un nouveau mot de passe.  
   
  **ExecuteOutOfProcess**  
- Spécifiez si le package enfant s'exécute dans le processus du package parent ou dans un processus distinct. Par défaut, la propriété ExecuteOutOfProcess de la tâche d’exécution du package a la valeur **False**, et le package enfant s’exécute dans le même processus que le package parent. Si vous affectez la valeur **true**à cette propriété, le package enfant s'exécute dans un processus indépendant. Cela peut ralentir le lancement du package enfant. En outre, si vous avez défini la propriété sur **true**, vous ne pouvez pas déboguer le package dans une installation d’outils uniquement : vous devez installer le produit [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Pour plus d’informations, consultez [Installer Integration Services](../../integration-services/install-windows/install-integration-services.md).  
+ Spécifiez si le package enfant s'exécute dans le processus du package parent ou dans un processus distinct. Par défaut, la propriété ExecuteOutOfProcess de la tâche d’exécution du package a la valeur **False**, et le package enfant s’exécute dans le même processus que le package parent. Si vous affectez la valeur **true** à cette propriété, le package enfant s'exécute dans un processus indépendant. Cela peut ralentir le lancement du package enfant. En outre, si vous avez défini la propriété sur **true**, vous ne pouvez pas déboguer le package dans une installation d’outils uniquement : vous devez installer le produit [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Pour plus d’informations, consultez [Installer Integration Services](../../integration-services/install-windows/install-integration-services.md).  
   
 #### <a name="referencetype-dynamic-options"></a>Options dynamiques de ReferenceType  
   

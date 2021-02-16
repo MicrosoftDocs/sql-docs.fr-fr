@@ -10,12 +10,12 @@ ms.technology: integration-services
 author: swinarko
 ms.author: sawinark
 ms.reviewer: maghan
-ms.openlocfilehash: 7c61b1b032ef4ff08301c91f080f188d89e2aadc
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 7b7c6d785910425aa6388c23bc51b4690d7782c2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195171"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345691"
 ---
 # <a name="schedule-the-execution-of-sql-server-integration-services-ssis-packages-deployed-in-azure"></a>Planifier l’exécution de packages SSIS (SQL Server Integration Services) déployés dans Azure
 
@@ -60,32 +60,32 @@ Créez le travail à l’aide d’un script Transact-SQL similaire au script ind
 
 ```sql
 -- Create Elastic Jobs target group
-EXEC jobs.sp_add_target_group 'TargetGroup'
+EXEC jobs.sp_add_target_group 'TargetGroup'
 
 -- Add Elastic Jobs target group member
-EXEC jobs.sp_add_target_group_member @target_group_name='TargetGroup',
-    @target_type='SqlDatabase', @server_name='YourSQLDBServer.database.windows.net',
-    @database_name='SSISDB' 
+EXEC jobs.sp_add_target_group_member @target_group_name='TargetGroup',
+    @target_type='SqlDatabase', @server_name='YourSQLDBServer.database.windows.net',
+    @database_name='SSISDB' 
 
 -- Add a job to schedule SSIS package execution
-EXEC jobs.sp_add_job @job_name='ExecutePackageJob', @description='Description', 
-    @schedule_interval_type='Minutes', @schedule_interval_count=60
+EXEC jobs.sp_add_job @job_name='ExecutePackageJob', @description='Description', 
+    @schedule_interval_type='Minutes', @schedule_interval_count=60
 
 -- Add a job step to create/start SSIS package execution using SSISDB catalog stored procedures
-EXEC jobs.sp_add_jobstep @job_name='ExecutePackageJob', 
-    @command=N'DECLARE @exe_id bigint 
+EXEC jobs.sp_add_jobstep @job_name='ExecutePackageJob', 
+    @command=N'DECLARE @exe_id bigint 
         EXEC [SSISDB].[catalog].[create_execution]
             @folder_name=N''folderName'', @project_name=N''projectName'',
             @package_name=N''packageName'', @use32bitruntime=0,
-            @runinscaleout=1, @useanyworker=1, 
-            @execution_id=@exe_id OUTPUT         
-        EXEC [SSISDB].[catalog].[start_execution] @exe_id, @retry_count=0', 
-    @credential_name='YourDBScopedCredentials', 
-    @target_group_name='TargetGroup' 
+            @runinscaleout=1, @useanyworker=1, 
+            @execution_id=@exe_id OUTPUT         
+        EXEC [SSISDB].[catalog].[start_execution] @exe_id, @retry_count=0', 
+    @credential_name='YourDBScopedCredentials', 
+    @target_group_name='TargetGroup' 
 
--- Enable the job schedule 
-EXEC jobs.sp_update_job @job_name='ExecutePackageJob', @enabled=1, 
-    @schedule_interval_type='Minutes', @schedule_interval_count=60 
+-- Enable the job schedule 
+EXEC jobs.sp_update_job @job_name='ExecutePackageJob', @enabled=1, 
+    @schedule_interval_type='Minutes', @schedule_interval_count=60 
 ```
 
 ## <a name="schedule-a-package-with-sql-server-agent-on-premises"></a><a name="agent"></a> Planifier un package avec SQL Server Agent en local
@@ -145,17 +145,17 @@ Pour planifier un package avec SQL Server Agent localement, créez un travail av
 
     ```sql
     -- T-SQL script to create and start SSIS package execution using SSISDB stored procedures
-    DECLARE @return_value int, @exe_id bigint 
+    DECLARE @return_value int, @exe_id bigint 
 
-    EXEC @return_value = [YourLinkedServer].[SSISDB].[catalog].[create_execution] 
-        @folder_name=N'folderName', @project_name=N'projectName', 
-        @package_name=N'packageName', @use32bitruntime=0, @runincluster=1, @useanyworker=1,
-        @execution_id=@exe_id OUTPUT 
+    EXEC @return_value = [YourLinkedServer].[SSISDB].[catalog].[create_execution] 
+        @folder_name=N'folderName', @project_name=N'projectName', 
+        @package_name=N'packageName', @use32bitruntime=0, @runincluster=1, @useanyworker=1,
+        @execution_id=@exe_id OUTPUT 
 
     EXEC [YourLinkedServer].[SSISDB].[catalog].[set_execution_parameter_value] @exe_id,
         @object_type=50, @parameter_name=N'SYNCHRONIZED', @parameter_value=1
 
-    EXEC [YourLinkedServer].[SSISDB].[catalog].[start_execution] @execution_id=@exe_id
+    EXEC [YourLinkedServer].[SSISDB].[catalog].[start_execution] @execution_id=@exe_id
     ```
 
 6.  Finissez de configurer et de planifier le travail.

@@ -17,18 +17,18 @@ ms.assetid: ''
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-2017||>=sql-server-linux-2017'
-ms.openlocfilehash: 5d9f07f96f83767a84f7ee0128d674f4ab955eed
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: e14f354812c99b9ed3e8be86734e3cb8e07db751
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170851"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489473"
 ---
 # <a name="deprecated-database-engine-features-in-sql-server-2017"></a>Fonctionnalités du moteur de base de données dépréciées dans SQL Server 2017
 
 [!INCLUDE[SQL Server 2017](../includes/applies-to-version/sqlserver2017.md)]
 
-  Cette rubrique décrit les fonctionnalités [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] déconseillées qui sont toujours disponibles dans [!INCLUDE[sssqlv14-md](../includes/sssqlv14-md.md)]. Les fonctions déconseillées ne doivent pas être utilisées dans de nouvelles applications.  
+  Cette rubrique décrit les fonctionnalités [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] déconseillées qui sont toujours disponibles dans [!INCLUDE[sssql17-md](../includes/sssql17-md.md)]. Les fonctions déconseillées ne doivent pas être utilisées dans de nouvelles applications.  
   
 Quand une fonctionnalité est marquée comme étant dépréciée, cela signifie que :
 
@@ -46,7 +46,7 @@ WHERE object_name = 'SQLServer:Deprecated Features';
 ```
 
 > [!NOTE]
-> Cette liste est identique à la liste [!INCLUDE[sssql15-md](../includes/sssql16-md.md)]. Aucune nouvelle fonctionnalité du moteur de base de données supprimée ou dépréciée n’a été annoncée pour [!INCLUDE[sssqlv14-md](../includes/sssqlv14-md.md)].
+> Cette liste est identique à la liste [!INCLUDE[sssql15-md](../includes/sssql16-md.md)]. Aucune nouvelle fonctionnalité du moteur de base de données supprimée ou dépréciée n’a été annoncée pour [!INCLUDE[sssql17-md](../includes/sssql17-md.md)].
 
 ## <a name="features-deprecated-in-the-next-version-of-sql-server"></a>Fonctionnalités dépréciées dans la prochaine version de SQL Server
 

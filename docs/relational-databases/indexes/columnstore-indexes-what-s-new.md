@@ -11,12 +11,12 @@ ms.topic: conceptual
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 58f0348a84362b48520c9bd5cf46868cdaea60e0
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 4a82a85c87fd1b5c9b2625ed0d8a7c51bee11e21
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98171181"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351230"
 ---
 # <a name="columnstore-indexes---what39s-new"></a>Index columnstore - Nouveautés
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -24,12 +24,12 @@ ms.locfileid: "98171181"
   Récapitulatif des fonctionnalités columnstore disponibles pour chaque version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et pour les dernières versions de [!INCLUDE[ssSDS](../../includes/sssds-md.md)], [!INCLUDE[ssSDW](../../includes/sssdw-md.md)] et [!INCLUDE[ssPDW](../../includes/sspdw-md.md)].  
 
  > [!NOTE]
- > Pour [!INCLUDE[ssSDS](../../includes/sssds-md.md)], les index columnstore sont disponibles dans les niveaux Premium, Standard (S3 et ultérieur) et dans tous les niveaux vCore de [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]. Pour [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] SP1 et ultérieur, les index columnstore sont disponibles dans toutes les éditions. Pour [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] (avant SP1), les index columnstore sont disponibles seulement dans l’édition Entreprise.
+ > Pour [!INCLUDE[ssSDS](../../includes/sssds-md.md)], les index columnstore sont disponibles dans les niveaux Premium, Standard (S3 et ultérieur) et dans tous les niveaux vCore de [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]. Pour [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP1 et ultérieur, les index columnstore sont disponibles dans toutes les éditions. Pour [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] (avant SP1), les index columnstore sont disponibles seulement dans l’édition Entreprise.
  
 ## <a name="feature-summary-for-product-releases"></a>Synthèse des fonctionnalités pour les versions du produit  
  Ce tableau récapitule les principales fonctionnalités des index columnstore et des produits dans lesquels ils sont disponibles.  
 
-|Fonctionnalité d’index columnstore|[!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]|[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|[!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]|[!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]|[!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]|[!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)]|[!INCLUDE[ssSDW](../../includes/sssdw-md.md)]|  
+|Fonctionnalité d’index columnstore|[!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]|[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|[!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]|[!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]|[!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]|[!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)]|[!INCLUDE[ssSDW](../../includes/sssdw-md.md)]|  
 |-------------------------------|---------------------------|---------------------------|---------------------------|---------------------------|--------------------------------------------|-------------------------|---|  
 |Exécution en mode batch pour les requêtes multithread|Oui|Oui|Oui|Oui|Oui|Oui|Oui| 
 |Exécution en mode batch pour les requêtes monothread|||Oui|Oui|Oui|Oui|Oui|  
@@ -55,11 +55,11 @@ ms.locfileid: "98171181"
 > [!NOTE]
 > Le degré de parallélisme (DOP) pour les opérations [en mode batch](../../relational-databases/query-processing-architecture-guide.md#batch-mode-execution) est limité à 2 pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Édition standard, et à 1 pour les éditions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Web et Express. Ceci fait référence aux index columnstore créés sur des tables basées sur des disques et des tables à mémoire optimisée.
 
-## [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] 
- [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] ajoute ces nouvelles fonctionnalités.
+## [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] 
+ [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] ajoute ces nouvelles fonctionnalités.
 
 ### <a name="functional"></a>Fonctionnelle
-- À partir de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], le moteur de tuple est aidé par une tâche de fusion en arrière-plan qui compresse automatiquement les rowgroups delta OPEN plus petits qui existent depuis un certain temps, tel que déterminé par un seuil interne, ou qui fusionne les rowgroups COMPRESSED à partir desquels un grand nombre de lignes a été supprimé. Auparavant, une opération de réorganisation d’index était nécessaire pour fusionner les rowgroups avec des données partiellement supprimées. Cela améliore la qualité de l’index columnstore dans le temps. 
+- À partir de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], le moteur de tuple est aidé par une tâche de fusion en arrière-plan qui compresse automatiquement les rowgroups delta OPEN plus petits qui existent depuis un certain temps, tel que déterminé par un seuil interne, ou qui fusionne les rowgroups COMPRESSED à partir desquels un grand nombre de lignes a été supprimé. Auparavant, une opération de réorganisation d’index était nécessaire pour fusionner les rowgroups avec des données partiellement supprimées. Cela améliore la qualité de l’index columnstore dans le temps. 
 
 ## [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] 
  [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] ajoute ces nouvelles fonctionnalités.
@@ -67,8 +67,8 @@ ms.locfileid: "98171181"
 ### <a name="functional"></a>Fonctionnelle
 - [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] prend en charge les colonnes calculées non persistantes dans les index columnstore cluster. Les colonnes calculées non persistantes ne sont pas prises en charge dans les index columnstore cluster. Vous ne pouvez pas créer un index non-cluster sur un index columnstore qui comporte une colonne calculée. 
 
-## [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)]  
- [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)] ajoute des améliorations clés pour optimiser les performances et la flexibilité des index columnstore. Ces améliorations touchent les scénarios d’entreposage de données et permettent l’analytique opérationnelle en temps réel.  
+## [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)]  
+ [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] ajoute des améliorations clés pour optimiser les performances et la flexibilité des index columnstore. Ces améliorations touchent les scénarios d’entreposage de données et permettent l’analytique opérationnelle en temps réel.  
   
 ### <a name="functional"></a>Fonctionnelle  
   

@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: cedf5cad-2fac-42d0-ad91-9461e117d330
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 26f08ee42a1fae6ac5a5d3a50d8b32282c2a2fde
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 426ec69e927a61acfc083f9f4c0462553ea11d97
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92192682"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100348293"
 ---
 # <a name="create-and-deploy-a-cache-for-the-lookup-transformation"></a>Créer et déployer un cache pour la transformation de recherche
 

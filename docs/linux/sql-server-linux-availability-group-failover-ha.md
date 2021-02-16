@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: ''
-ms.openlocfilehash: 60dbfed32581a7646da590004c839fc7cf3d316f
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: 52fbeee33dd992f4916f33a1545b59265a8b47f9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85892306"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345654"
 ---
 # <a name="always-on-availability-group-failover-on-linux"></a>Basculement du groupe de disponibilité Always On sur Linux
 

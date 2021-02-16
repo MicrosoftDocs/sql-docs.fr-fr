@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 7dd79a6a-e066-4028-a385-1d40f31056f8
 author: chugugrace
 ms.author: chugu
-ms.openlocfilehash: 9d686ed80120622c2a53cbb9cc52eb4637cfd3f2
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 51646edb5b2937d04d4915e2a7d4a66327343a6c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92196511"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345714"
 ---
 # <a name="file-system-task"></a>Tâches du système de fichiers
 

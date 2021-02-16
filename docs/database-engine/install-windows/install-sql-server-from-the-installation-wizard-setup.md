@@ -15,18 +15,18 @@ ms.assetid: 6ad23de1-2bab-4933-9122-c09f5565028d
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: d2c5f2fc245c981cf0c6d045333528aeff32536c
-ms.sourcegitcommit: f29f74e04ba9c4d72b9bcc292490f3c076227f7c
+ms.openlocfilehash: 8bb4b3b0e70850702c34ff1c69b9c2fcd5f3c85b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98170191"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342322"
 ---
 # <a name="install-sql-server-from-the-installation-wizard-setup"></a>Installer SQL Server à partir de l’Assistant Installation (programme d’installation)
 
 [!INCLUDE [SQL Server -Windows Only](../../includes/applies-to-version/sql-windows-only.md)]
 
-Cet article explique comment installer SQL Server avec l’Assistant Installation. Il s’applique à [!INCLUDE[SQLServer2016](../../includes/sssql16-md.md)] et [!INCLUDE[SQLServer2017](../../includes/sssqlv14-md.md)].
+Cet article explique comment installer SQL Server avec l’Assistant Installation. Il s’applique à [!INCLUDE[SQLServer2016](../../includes/sssql16-md.md)] et [!INCLUDE[SQLServer2017](../../includes/sssql17-md.md)].
 
 Cet article fournit une procédure d’installation pas à pas d’une nouvelle instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] avec l’Assistant Installation de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. L'Assistant Installation fournit une seule arborescence de fonctionnalités pour l'installation de tous les composants [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] afin d’éviter de les installer individuellement. Pour installer les composants [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] individuellement, consultez [Installer SQL Server](../../database-engine/install-windows/install-sql-server.md#individual-component-installation).  
 
@@ -55,7 +55,7 @@ Avant d’installer [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], c
 
 Microsoft a identifié un problème qui affecte les fichiers binaires du runtime Microsoft Visual C++ 2013 installés en tant que composants requis par SQL Server 2016 et 2017. Une mise à jour est disponible pour résoudre ce problème. Si cette mise à jour des fichiers binaires du runtime Visual C++ n’est pas installée, SQL Server risque de rencontrer des problèmes de stabilité dans certains scénarios. Avant d’installer SQL Server, suivez les instructions données dans les [notes de publication SQL Server](../../sql-server/sql-server-2016-release-notes.md#bkmk_ga_instalpatch) pour voir si votre ordinateur nécessite un correctif pour les fichiers binaires du runtime Visual C++. 
 
-Cela ne s’applique pas à [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)].
+Cela ne s’applique pas à [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)].
 
 ## <a name="to-install-sql-server-2016-and-2017"></a>Pour installer SQL Server 2016 et 2017  
 
@@ -131,7 +131,7 @@ Cela ne s’applique pas à [!INCLUDE[sql-server-2019](../../includes/sssqlv15-m
     > [!INCLUDE[ssNoteStrongPass](../../includes/ssnotestrongpass-md.md)]  
 
     > [!NOTE]
-    > À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], cochez la case **Accorder le privilège Effectuer une tâche de maintenance en volume au service Moteur de base de données SQL Server** pour permettre au compte de service [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] d’utiliser [l’initialisation instantanée de fichiers de base de données](../../relational-databases/databases/database-instant-file-initialization.md).
+    > À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], cochez la case **Accorder le privilège Effectuer une tâche de maintenance en volume au service Moteur de base de données SQL Server** pour permettre au compte de service [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] d’utiliser [l’initialisation instantanée de fichiers de base de données](../../relational-databases/databases/database-instant-file-initialization.md).
   
 1. Utilisez la page **Configuration du serveur - Classement** pour spécifier les classements non définis par défaut pour [!INCLUDE[ssDE](../../includes/ssde-md.md)] et [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)].    
 
@@ -286,9 +286,9 @@ Cela ne s’applique pas à [!INCLUDE[sql-server-2019](../../includes/sssqlv15-m
   
      Le workflow du reste de l’installation dépend des fonctionnalités que vous avez spécifiées pour votre installation. En fonction de vos sélections, il est possible que les pages ne soient pas toutes visibles. 
 
-1. À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], Polybase ne requiert plus qu’Oracle JRE 7 Update 51 (au moins) soit préinstallé sur l’ordinateur avant l’installation de la fonctionnalité. Si vous choisissez d’installer la fonctionnalité Polybase, la page **Emplacement d’installation Java** est ajoutée à la configuration de SQL Server affichée après la page **Configuration de l’instance**. Sur la page d’emplacement de l’installation Java, vous pouvez choisir d’installer Azul Zulu Open JRE fourni avec l’installation de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] ou de fournir l’emplacement d’un autre JRE ou JDK qui a déjà été installé sur l’ordinateur.
+1. À compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], Polybase ne requiert plus qu’Oracle JRE 7 Update 51 (au moins) soit préinstallé sur l’ordinateur avant l’installation de la fonctionnalité. Si vous choisissez d’installer la fonctionnalité Polybase, la page **Emplacement d’installation Java** est ajoutée à la configuration de SQL Server affichée après la page **Configuration de l’instance**. Sur la page d’emplacement de l’installation Java, vous pouvez choisir d’installer Azul Zulu Open JRE fourni avec l’installation de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] ou de fournir l’emplacement d’un autre JRE ou JDK qui a déjà été installé sur l’ordinateur.
 
-1. À compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)], Java a été ajouté avec des extensions de langage. Si vous choisissez d’installer la fonctionnalité Java, la page **Emplacement d’installation de Java** est ajoutée à la fenêtre de dialogue de configuration de SQL Server, affichée après la page **Configuration de l’instance**. Sur la page d’**emplacement de l’installation Java**, vous pouvez choisir d’installer Zulu Open JRE fourni avec l’installation de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] ou de fournir l’emplacement d’un autre JRE ou JDK qui a déjà été installé sur l’ordinateur.
+1. À compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], Java a été ajouté avec des extensions de langage. Si vous choisissez d’installer la fonctionnalité Java, la page **Emplacement d’installation de Java** est ajoutée à la fenêtre de dialogue de configuration de SQL Server, affichée après la page **Configuration de l’instance**. Sur la page d’**emplacement de l’installation Java**, vous pouvez choisir d’installer Zulu Open JRE fourni avec l’installation de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] ou de fournir l’emplacement d’un autre JRE ou JDK qui a déjà été installé sur l’ordinateur.
 
 1. Utilisez la page **Configuration du serveur - Comptes de service** pour spécifier les comptes de connexion des services [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les services réels configurés dans cette page dépendent des fonctionnalités que vous avez choisi d'installer. Pour plus d’informations sur les paramètres de configuration, consultez [Aide de l’assistant Installation](../../sql-server/install/instance-configuration.md#serverconfig).
   
@@ -300,7 +300,7 @@ Cela ne s’applique pas à [!INCLUDE[sql-server-2019](../../includes/sssqlv15-m
     > [!INCLUDE[ssNoteStrongPass](../../includes/ssnotestrongpass-md.md)]  
 
     > [!NOTE]
-    > À compter de [!INCLUDE[ssSQL15](../../includes/sssql16-md.md)], cochez la case **Accorder le privilège Effectuer une tâche de maintenance en volume au service Moteur de base de données SQL Server** pour permettre au compte de service [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] d’utiliser [l’initialisation instantanée de fichiers de base de données](../../relational-databases/databases/database-instant-file-initialization.md).
+    > À compter de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], cochez la case **Accorder le privilège Effectuer une tâche de maintenance en volume au service Moteur de base de données SQL Server** pour permettre au compte de service [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] d’utiliser [l’initialisation instantanée de fichiers de base de données](../../relational-databases/databases/database-instant-file-initialization.md).
   
      Utilisez la page **Configuration du serveur - Classement** pour spécifier les classements non définis par défaut pour le [!INCLUDE[ssDE](../../includes/ssde-md.md)] et [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]. Pour plus d’informations, consultez [Classement et support Unicode](../../relational-databases/collations/collation-and-unicode-support.md).  
   
@@ -324,14 +324,14 @@ Cela ne s’applique pas à [!INCLUDE[sql-server-2019](../../includes/sssqlv15-m
      Utilisez la page de **configuration [!INCLUDE[ssDE](../../includes/ssde-md.md)] - MaxDOP** pour spécifier votre degré maximal de parallélisme. Ce paramètre détermine le nombre de processeurs une seule instruction peut utiliser pendant l’exécution. La valeur recommandée est calculée automatiquement lors de l’installation. 
      
     > [!NOTE]  
-    > Cette page est uniquement disponible dans le programme d’installation à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]. 
+    > Cette page est uniquement disponible dans le programme d’installation à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]. 
     
     Pour plus d’informations, consultez la [page de configuration du moteur de base de données - MaxDOP](../../sql-server/install/instance-configuration.md?view=sql-server-ver15&preserve-view=true#maxdop). 
 
      Utilisez la page de **configuration du moteur de base de données - Mémoire** pour spécifier les valeurs **min server memory** and **max server memory** utilisées par cette instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] après le démarrage. Vous pouvez utiliser les valeurs par défaut, les valeurs recommandées calculées ou spécifiez manuellement vos propres valeurs une fois que vous avez choisi l’option **Recommandé**.
      
     > [!NOTE]  
-    > Cette page est uniquement disponible dans le programme d’installation à compter de [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)]. 
+    > Cette page est uniquement disponible dans le programme d’installation à compter de [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)]. 
     
     Pour plus d’informations, consultez la [page de configuration du moteur de base de données - Mémoire](../../sql-server/install/instance-configuration.md?view=sql-server-ver15&preserve-view=true#memory). 
 
