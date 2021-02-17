@@ -65,15 +65,15 @@ ms.locfileid: "100341433"
   
 9. facultatif. Cochez la case **Activer la compression des données** . La compression de ligne est activée par défaut. Pour plus d’informations, voir [Data Compression](../relational-databases/data-compression/data-compression.md).  
   
-10. Cliquez sur **Save**.  
+10. Cliquez sur **Enregistrer**.  
   
 ## <a name="grid-columns"></a>Colonnes de la grille  
  Pour chaque entité créée, une ligne comportant treize colonnes est ajoutée à la grille. Les différentes colonnes sont décrites ci-après.  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
 |Statut|État de l’entité. Lorsque vous cliquez sur **Enregistrer** , l’image ci-après s’affiche pour indiquer que l’entité est en cours de mise à jour.<br /><br /> ![Icône de mise à jour de l’État](../master-data-services/media/mds-statusicon-updating.png "Icône de mise à jour de l’État")<br /><br /> En cas d’erreur lors de la création ou de la modification d’une entité, l’image suivante apparaît.<br /><br /> ![Icône d’état d’erreur](../master-data-services/media/mds-statusicon-error.png "Icône d’état d’erreur")<br /><br /> Si l’état présente la valeur OK, l’image ci-dessous s’affiche.<br /><br /> ![Icône d’état OK](../master-data-services/media/mds-statusicon-ok.png "Icône d’état OK")|  
-|Nom|Nom de l’entité.|  
+|Name|Nom de l’entité.|  
 |Description|Description de l’entité.|  
 |Table de mise en lots|Nom de préfixe de la table utilisée pour le stockage des données.|  
 |Type de journal des transactions|Type du journal des transactions de l’entité.|  

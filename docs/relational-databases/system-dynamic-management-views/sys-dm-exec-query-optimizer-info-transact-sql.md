@@ -36,7 +36,7 @@ ms.locfileid: "100342952"
 > [!NOTE]  
 >  Pour appeler cette valeur à partir de [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] ou [!INCLUDE[ssPDW](../../includes/sspdw-md.md)] , utilisez le nom **sys.dm_pdw_nodes_exec_query_optimizer_info**.  
   
-|Nom|Type de données|Description|  
+|Name|Type de données|Description|  
 |----------|---------------|-----------------|  
 |**)**|**nvarchar(4000)**|Nom de l'événement statistique de l'optimiseur.|  
 |**occurrence**|**bigint**|Nombre d'occurrences de l'événement d'optimisation pour ce compteur.|  

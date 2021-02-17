@@ -33,7 +33,7 @@ Ces schémas contiennent les données. Un certain nombre de tables sont nécessa
 |-----------------------------|---------------------|
 |Application|Utilisateurs, contacts et paramètres au niveau de l’application. Contient également des tables de référence avec des données utilisées par plusieurs schémas|
 |Achat|Achat d’articles sur les achats et informations sur les fournisseurs.|  
-|Sales|Stockez les ventes d’articles pour les clients de détail et les détails sur les clients et les vendeurs. |  
+|Ventes|Stockez les ventes d’articles pour les clients de détail et les détails sur les clients et les vendeurs. |  
 |Warehouse|Stock et transactions d’inventaire.|  
 
 ### <a name="secure-access-schemas"></a>Schémas d’accès sécurisé

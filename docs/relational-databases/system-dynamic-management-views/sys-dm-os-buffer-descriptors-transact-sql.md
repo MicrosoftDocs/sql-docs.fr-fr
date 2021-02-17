@@ -61,7 +61,7 @@ Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de do
 ## <a name="remarks"></a>Notes  
  sys.dm_os_buffer_descriptors retourne les pages utilisées par la base de données des ressources. sys.dm_os_buffer_descriptors ne retourne pas d’informations sur les pages libres ou occultées, ni sur les pages qui comportaient des erreurs lors de leur lecture.  
   
-|Du|À|Il en va|Relationship|  
+|Du|À|Activé|Relationship|  
 |----------|--------|--------|------------------|  
 |sys.dm_os_buffer_descriptors|sys.databases|database_id|plusieurs-à-un|  
 |sys.dm_os_buffer_descriptors|\<userdb>.sys.allocation_units|allocation_unit_id|plusieurs-à-un|  

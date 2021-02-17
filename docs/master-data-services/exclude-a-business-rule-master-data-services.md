@@ -49,7 +49,7 @@ ms.locfileid: "100344810"
   
 7.  Cochez la case **Exclu** .  
   
-8.  Cliquez sur **Save**.  
+8.  Cliquez sur **Enregistrer**.  
   
 9. Cliquez sur **Tout publier**.  
   

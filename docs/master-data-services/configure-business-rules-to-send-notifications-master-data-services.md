@@ -57,7 +57,7 @@ ms.locfileid: "100272770"
   
 7.  Cochez la case **Envoyer des notifications** puis, dans la liste déroulante, sélectionnez un utilisateur ou un groupe auxquels envoyer la notification par e-mail.  
   
-8.  Cliquez sur **Save**.  
+8.  Cliquez sur **Enregistrer**.  
   
 9. Cliquez sur **Tout publier**.  
   

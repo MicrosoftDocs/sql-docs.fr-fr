@@ -81,7 +81,7 @@ ms.locfileid: "100339106"
   
 10. Sélectionnez **Synchronisation à la demande**, ou sélectionnez **Synchronisation automatique** et définissez une fréquence.  
   
-11. Cliquez sur **Save**.  
+11. Cliquez sur **Enregistrer**.  
   
  **Pour exécuter une relation de synchronisation d’entités**  
   

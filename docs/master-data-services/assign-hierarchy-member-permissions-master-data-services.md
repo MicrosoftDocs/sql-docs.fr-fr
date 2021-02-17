@@ -58,7 +58,7 @@ ms.locfileid: "100339501"
   
 10. Dans le menu, sélectionnez une combinaison d’autorisations **Créer**, **Lire, Mettre à jour** et **Supprimer** , ou **Refusez** d’octroyer des autorisation.  
   
-11. Cliquez sur **Save**.  
+11. Cliquez sur **Enregistrer**.  
   
     > [!NOTE]  
     >  Les autorisations des membres de la hiérarchie n'entrent pas immédiatement en vigueur. Pour plus d’informations, consultez [Appliquer immédiatement des autorisations de membre &#40;Master Data Services&#41;](../master-data-services/immediately-apply-member-permissions-master-data-services.md).  

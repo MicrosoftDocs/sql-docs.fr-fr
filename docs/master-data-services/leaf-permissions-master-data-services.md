@@ -59,7 +59,7 @@ ms.locfileid: "100338220"
 |**Supprimer**|Aucun effet.|  
 |**Deny**|L'attribut n'est pas affiché.<br /><br /> Remarque : vous ne pouvez pas refuser explicitement l’accès aux attributs Name et Code.|  
   
-### <a name="example"></a> Exemple  
+### <a name="example"></a>Exemple  
  Pour l'entité Product, affectez l'autorisation **Mise à jour** à l'attribut Subcategory. Autorisation refuser à tous les autres attributs.  
   
 |Nom|Code|Subcategory (Mise à jour)|  

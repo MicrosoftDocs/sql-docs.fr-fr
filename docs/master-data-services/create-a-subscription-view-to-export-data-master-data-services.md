@@ -61,7 +61,7 @@ ms.locfileid: "100272600"
   
 10. Si vous avez sélectionné **Niveaux explicites** ou **Niveaux dérivés** dans la liste **Format** , tapez le nombre de niveaux dans la hiérarchie à inclure dans la vue.  
   
-11. Cliquez sur **Save**.  
+11. Cliquez sur **Enregistrer**.  
   
 ## <a name="view-information"></a>Visualiser les informations  
  Pour chaque vue créée, une ligne comportant dix colonnes est ajoutée à la grille. Le tableau suivant décrit ces colonnes.  
@@ -69,7 +69,7 @@ ms.locfileid: "100272600"
 |Colonne|Description|  
 |------------|-----------------|  
 |Statut|État de la vue.<br /><br /> Lorsque vous cliquez sur **Enregistrer**, l’image ![icône d’état de mise à jour](../master-data-services/media/mds-statusicon-updating.png "Icône de mise à jour de l’État") s’affiche, indiquant que la vue est en mode de mise à jour.<br /><br /> Si des erreurs se produisent lors de la création ou de la modification d’une vue, l’image ![icône d’état d’erreur](../master-data-services/media/mds-statusicon-error.png "Icône d’état d’erreur") s’affiche.<br /><br /> Dans le cas contraire, l’État est OK et l’image ![icône d’état OK](../master-data-services/media/mds-statusicon-ok.png "Icône d’état OK") s’affiche.|  
-|Nom|Nom de la vue d’abonnement.|  
+|Name|Nom de la vue d’abonnement.|  
 |Modèle|Nom du modèle.|  
 |Version|Nom de la version.|  
 |Version|Nom de l’indicateur de version.|  

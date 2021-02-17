@@ -103,7 +103,7 @@ CREATE PROCEDURE [usr].[YourAction]
   
     4.  Affecter une valeur à chaque paramètre  
   
-    5.  Cliquez sur **Save**.  
+    5.  Cliquez sur **Enregistrer**.  
   
 8.  Procédez comme suit pour créer un script défini par l’utilisateur en tant qu’action.  
   

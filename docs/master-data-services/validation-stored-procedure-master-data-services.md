@@ -29,7 +29,7 @@ ms.locfileid: "100351884"
 > [!NOTE]  
 >  Si vous appelez la validation avant la fin de l'exécution du processus de site, les membres qui n'ont pas terminé la mise en lots ne sont pas validés.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
   
 ```  
 DECLARE @ModelName nVarchar(50) = 'Customer'   

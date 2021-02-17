@@ -61,9 +61,9 @@ ms.locfileid: "100353777"
   
 11. Dans la liste déroulante **Attribut** , sélectionnez un attribut.  
   
-12. Cliquez sur **Save**. Une nouvelle ligne est ajoutée à la grille **Then** .  
+12. Cliquez sur **Enregistrer**. Une nouvelle ligne est ajoutée à la grille **Then** .  
   
-13. Cliquez sur **Save**.  
+13. Cliquez sur **Enregistrer**.  
   
 14. Cliquez sur **Tout publier**.  
   

@@ -34,7 +34,7 @@ ms.locfileid: "100342941"
 
   Retourne les informations de disponibilité du Worker par nœud.  
   
-|Nom|Type de données|Description|  
+|Name|Type de données|Description|  
 |----------|---------------|-----------------|  
 |**node_id**|**int**|ID de nœud NUMA.|  
 |**scheduler_count**|**int**|Nombre de planificateurs sur ce nœud.|  

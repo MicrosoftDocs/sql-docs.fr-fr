@@ -47,14 +47,14 @@ ms.locfileid: "100351897"
   
 7.  Cliquez sur les attributs dans la zone **Attributs disponibles** , puis sur la flèche **Ajouter** . Pour ajouter tous les attributs, cliquez sur la flèche **Ajouter tout** .  
   
-8.  Cliquez sur **Save**.  
+8.  Cliquez sur **Enregistrer**.  
   
  Pour chaque index créé, une ligne avec quatre colonnes est ajoutée dans la grille. Le tableau suivant décrit ces colonnes.  
   
 |Nom de la colonne|Description|  
 |-----------------|-----------------|  
 |Statut|État de l’index.<br /><br /> Lorsque vous cliquez sur **Enregistrer**, l’image ![icône d’état de mise à jour](../master-data-services/media/mds-statusicon-updating.png "Icône de mise à jour de l’État") s’affiche, indiquant que l’index est en état de mise à jour.<br /><br /> Si des erreurs se produisent lors de la création ou de la modification d’un index, l’image ![icône d’état d’erreur](../master-data-services/media/mds-statusicon-error.png "Icône d’état d’erreur") s’affiche.<br /><br /> Dans le cas contraire, l’État est OK et l’image ![icône d’état OK](../master-data-services/media/mds-statusicon-ok.png "Icône d’état OK") s’affiche.|  
-|Nom|Nom de l'index.|  
+|Name|Nom de l'index.|  
 |Est unique|Indique si l’index est unique.|  
 |Sur les attributs|Affiche les noms complets des attributs sur lesquels l’index est défini.|  
   

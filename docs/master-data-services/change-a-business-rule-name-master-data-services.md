@@ -51,7 +51,7 @@ ms.locfileid: "100351957"
   
 7.  Saisissez un nom pour la règle d’entreprise.  
   
-8.  Cliquez sur **Save**.  
+8.  Cliquez sur **Enregistrer**.  
   
 9. Cliquez sur **Tout publier**.  
   

@@ -43,7 +43,7 @@ Ensuite, une série de tâches de workflow charge chaque dimension. Ils chargent
   - Veillez à créer un catalogue de Integration Services. Pour créer un catalogue de Integration Services, dans SQL Server Management Studio l’Explorateur d’objets, cliquez avec le bouton droit sur **Integration Services**, puis sélectionnez **Ajouter un catalogue**. Laissez les options par défaut. Vous êtes invité à activer SQLCLR et à fournir un mot de passe.
 
 
-## <a name="download"></a>Télécharger
+## <a name="download"></a>Téléchargement
 
 Pour obtenir la version la plus récente de l’exemple, consultez [larges-World-](https://go.microsoft.com/fwlink/?LinkID=800630)Importers-Release. Téléchargez le fichier de package *ETL. ispac Integration Services quotidien* .
 

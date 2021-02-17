@@ -26,7 +26,7 @@ Instructions d’installation et de configuration de la base de données OLTP de
 - [SQL Server 2016](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016) (ou version ultérieure) ou [Azure SQL Database](https://azure.microsoft.com/services/sql-database/). Pour obtenir la version complète de l’exemple, utilisez l’édition Évaluation SQL Server/Developer/Enterprise.
 - [SQL Server Management Studio](../ssms/download-sql-server-management-studio-ssms.md). Pour obtenir les meilleurs résultats, utilisez la version du 2016 juin ou une version ultérieure.
 
-## <a name="download"></a>Télécharger
+## <a name="download"></a>Téléchargement
 
 La dernière version de l’exemple :
 

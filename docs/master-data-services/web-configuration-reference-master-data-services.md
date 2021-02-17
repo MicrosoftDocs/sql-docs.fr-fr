@@ -62,9 +62,9 @@ ms.locfileid: "100348883"
 |**virtualPath**|Attribut. Spécifie le chemin d'accès virtuel de l'application Web et du service Web [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] . Cela correspond à l’attribut **path** de l' **\<application>** élément sous l' **\<site>** élément dans le fichier de ApplicationHost.config IIS.|  
 |**siteName**|Attribut. Spécifie le nom du site qui héberge l'application Web et le service Web [!INCLUDE[ssMDSmdm](../includes/ssmdsmdm-md.md)] . Cela correspond à l’attribut **Name** de l' **\<site>** élément sous **\<sites>** dans le fichier de ApplicationHost.config IIS.|  
 |**connectionName**|Attribut. Spécifie le nom de la connexion à utiliser. Cela correspond à l’attribut **Name** de l' **\<add>** élément sous l' **\<connectionStrings>** élément dans Web.config.|  
-|**serviceName**|Attribut. Spécifie le nom du service Web. Cela correspond à l’attribut **Name** de l' **\<service>** élément sous l' **\<services>** élément dans Web.config.|  
+|**FormName**|Attribut. Spécifie le nom du service Web. Cela correspond à l’attribut **Name** de l' **\<service>** élément sous l' **\<services>** élément dans Web.config.|  
   
-### <a name="example"></a> Exemple  
+### <a name="example"></a>Exemple  
  L'exemple suivant présente un service nommé MDS1 sur le site Contoso et le chemin d'accès /MDS, utilisant une chaîne de connexion spécifiée par MDSDB.  
   
 ```  

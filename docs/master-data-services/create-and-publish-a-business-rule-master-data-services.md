@@ -80,7 +80,7 @@ ms.locfileid: "100339094"
   
 19. Complétez tous les champs obligatoires.  
   
-20. Cliquez sur **Save**. Une nouvelle ligne est ajoutée à la grille **Then** .  
+20. Cliquez sur **Enregistrer**. Une nouvelle ligne est ajoutée à la grille **Then** .  
   
 21. Si vous souhaitez ajouter une action **Else** , procédez comme suit.  
   
@@ -92,9 +92,9 @@ ms.locfileid: "100339094"
   
     4.  Complétez tous les champs obligatoires.  
   
-    5.  Cliquez sur **Save**. Une nouvelle ligne est ajoutée à la grille **Else** .  
+    5.  Cliquez sur **Enregistrer**. Une nouvelle ligne est ajoutée à la grille **Else** .  
   
-22. Cliquez sur **Save**. Une nouvelle ligne est ajoutée à la grille des règles d’entreprise.  
+22. Cliquez sur **Enregistrer**. Une nouvelle ligne est ajoutée à la grille des règles d’entreprise.  
   
 23. Cliquez sur **Tout publier**.  
   
@@ -103,10 +103,10 @@ ms.locfileid: "100339094"
 ## <a name="grid-columns"></a>Colonnes de la grille  
  Pour chaque règle d’entreprise créée, une ligne comportant six colonnes est ajoutée dans la grille. Les différentes colonnes sont décrites ci-après.  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
 |Statut|Lorsque vous cliquez sur **Enregistrer** , l’image ci-après s’affiche pour indiquer que la règle d’entreprise est en cours de mise à jour.<br /><br /> ![mds_BR_refresh](../master-data-services/media/mds-br-refresh.png "mds_BR_refresh")<br /><br /> En cas d’erreur lors de la création ou de la modification d’une règle d’entreprise, l’image suivante apparaît.<br /><br /> ![mds_br_error](../master-data-services/media/mds-br-error.png "mds_br_error")<br /><br /> Si l’état présente la valeur OK, l’image ci-dessous s’affiche.<br /><br /> ![mds_BR_success](../master-data-services/media/mds-br-success.png "mds_BR_success")|  
-|Nom|Le nom de la règle d’entreprise.|  
+|Name|Le nom de la règle d’entreprise.|  
 |Description|La description de la règle d’entreprise.|  
 |État de la règle d’entreprise|L’un des états de règle d’entreprise suivants : Règle non définie, Active, Exclue, Modifications en attente, Exclusion en attente et Suppression en attente.|  
 |Exclu|Indique si la règle d’entreprise est exclue.|  

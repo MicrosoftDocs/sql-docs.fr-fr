@@ -54,15 +54,15 @@ ms.locfileid: "100351913"
   
 7.  Décochez éventuellement la case **Hiérarchie obligatoire** pour créer la hiérarchie comme une hiérarchie non obligatoire. Pour plus d’informations sur les types de hiérarchies, consultez [Hiérarchies explicites &#40;Master Data Services&#41;](../master-data-services/explicit-hierarchies-master-data-services.md).  
   
-8.  Cliquez sur **Save**.  
+8.  Cliquez sur **Enregistrer**.  
   
 ## <a name="grid-columns"></a>Colonnes de la grille  
  Pour chaque hiérarchie explicite que vous créez, une ligne comportant sept colonnes est ajoutée à la grille. Ces différentes colonnes sont décrites ci-après.  
   
-|Nom|Description|  
+|Name|Description|  
 |----------|-----------------|  
 |Statut|État de l’entité. Lorsque vous cliquez sur **Enregistrer** , l’image ci-après s’affiche pour indiquer que l’entité est en cours de mise à jour.<br /><br /> ![Icône de mise à jour de l’État](../master-data-services/media/mds-statusicon-updating.png "Icône de mise à jour de l’État")<br /><br /> En cas d’erreur lors de la création ou de la modification d’une entité, l’image suivante apparaît.<br /><br /> ![Icône d’état d’erreur](../master-data-services/media/mds-statusicon-error.png "Icône d’état d’erreur")<br /><br /> Si l’état présente la valeur OK, l’image ci-dessous s’affiche.<br /><br /> ![Icône d’état OK](../master-data-services/media/mds-statusicon-ok.png "Icône d’état OK")|  
-|Nom|Nom de hiérarchie explicite.|  
+|Name|Nom de hiérarchie explicite.|  
 |Est obligatoire|Indique si la hiérarchie explicite est ou non obligatoire.|  
 |Created By|Nom de l’utilisateur ayant créé la hiérarchie explicite.|  
 |Créée le|Date et heure de création de la hiérarchie explicite.|  

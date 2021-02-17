@@ -71,7 +71,7 @@ ms.locfileid: "100341731"
   
 5.  Modifiez la valeur du champ **Fréquence**. Sélectionnez **Synchronisation à la demande**, ou sélectionnez **Synchronisation automatique** et définissez une fréquence.  
   
-6.  Cliquez sur **Save**.  
+6.  Cliquez sur **Enregistrer**.  
   
  **Pour supprimer une relation de synchronisation d’entités**  
   

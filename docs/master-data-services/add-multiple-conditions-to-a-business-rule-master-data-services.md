@@ -64,7 +64,7 @@ ms.locfileid: "100339694"
   
 12. Complétez tous les champs obligatoires.  
   
-13. Cliquez sur **Save**. Une nouvelle ligne est ajoutée à la grille **If** .  
+13. Cliquez sur **Enregistrer**. Une nouvelle ligne est ajoutée à la grille **If** .  
   
 14. Si vous le souhaitez, suivez les étapes 8 à 13 pour ajouter d’autres conditions.  
   

@@ -590,7 +590,7 @@ where ProductModelID=7;
   
 -   attribut  
   
--   texte  
+-   text  
   
  Dans le cas des nœuds d'élément et d'attribut, ces mots clés sont suivis du nom du nœud ainsi que de l'expression, entre accolades, qui génère le contenu du nœud. Dans l'exemple suivant, vous construisez ce document XML :  
   

@@ -51,7 +51,7 @@ ms.locfileid: "100352770"
 |Supprimer tout|Supprime tous les filtres de la liste.|  
 |Supprimer|Supprime de la liste le filtre sélectionné.|  
   
-## <a name="summary"></a>Récapitulatif  
+## <a name="summary"></a>Résumé  
  Utilisez la section **Résumé** pour afficher des informations sur la quantité de données qui seront chargées, avant de les charger.  
   
 |Nom du contrôle|Description|  

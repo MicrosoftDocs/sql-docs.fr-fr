@@ -51,7 +51,7 @@ ms.locfileid: "100272630"
   
 6.  Cliquez sur **Télécharger**.  
   
-7.  Enregistrez le fichier.  
+7.  Enregistrez le fichier .  
   
 8.  Cliquez sur **Fermer** pour fermer l’assistant.  
   

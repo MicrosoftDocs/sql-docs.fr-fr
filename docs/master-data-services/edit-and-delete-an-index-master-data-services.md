@@ -49,7 +49,7 @@ ms.locfileid: "100341764"
   
 8.  Modifiez la liste des attributs affectés en ajoutant et en supprimant des attributs dans la liste.  
   
-9. Cliquez sur **Save**.  
+9. Cliquez sur **Enregistrer**.  
   
  **Pour supprimer un index**  
   

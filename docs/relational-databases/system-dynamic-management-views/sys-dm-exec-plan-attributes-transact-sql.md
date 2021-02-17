@@ -48,7 +48,7 @@ sys.dm_exec_plan_attributes ( plan_handle )
 |Nom de la colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
 |attribut|**varchar(128)**|Nom de l'attribut associé à ce plan. Le tableau situé juste en dessous de celui-ci répertorie les attributs possibles, leurs types de données et leurs descriptions.|  
-|valeur|**sql_variant**|Valeur de l'attribut associé à ce plan.|  
+|value|**sql_variant**|Valeur de l'attribut associé à ce plan.|  
 |is_cache_key|**bit**|Indique si l'attribut est utilisé comme une partie de la clé de recherche en cache pour le plan.|  
 
 Dans le tableau ci-dessus, l' **attribut** peut avoir les valeurs suivantes :

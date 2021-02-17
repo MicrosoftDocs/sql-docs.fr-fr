@@ -93,7 +93,7 @@ select @x.query('declare namespace ns="ns1"; /ns:*')
 ## <a name="node-type-as-node-test"></a>Type de nœud comme test de nœud  
  Pour interroger des types de nœuds autres que des nœuds éléments, lancez un test de type de nœud. Le tableau suivant répertorie les quatre tests de type de nœud disponibles.  
   
-|Type de nœud|Retours| Exemple|  
+|Type de nœud|Retours|Exemple|  
 |---------------|-------------|-------------|  
 |`comment()`|Vrai (valeur True) dans le cas d'un nœud de commentaire.|`following::comment()` sélectionne tous les nœuds de commentaire apparaissant après le nœud de contexte.|  
 |`node()`|Vrai (valeur True) dans le cas d'un nœud de type quelconque.|`preceding::node()` sélectionne tous les nœuds apparaissant avant le nœud de contexte.|  
