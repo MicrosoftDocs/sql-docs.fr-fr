@@ -122,6 +122,8 @@
           href: notebooks/notebooks-kusto-kernel.md
         - name: Utiliser Kqlmagic
           href: notebooks/notebooks-kqlmagic.md
+        - name: Utiliser le paramétrage
+          href: notebooks/notebooks-parameterization.md
     - name: Déploiement
       items:
         - name: Déployer Azure SQL Database

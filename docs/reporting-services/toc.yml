@@ -347,11 +347,11 @@
         - name: Analyse des performances d'un serveur de rapports
           href: ../reporting-services/report-server/monitoring-report-server-performance.md
           items:
-            - name: Compteurs de performance du service Web MSRS 2011 et des objets de performance du service Windows MSRS 2011 (mode natif)
+            - name: "Compteurs de performance, objets de performance du service web MSRS\_2016 et du service Windows MSRS\_2016 (mode natif)"
               href: ../reporting-services/report-server/performance-counters-msrs-2011-web-service-performance-objects.md
-            - name: Compteurs de performance du service Web MSRS 2011 en mode SharePoint et des objets de performance du service Windows MSRS 2011 en mode SharePoint (mode SharePoint)
+            - name: "Compteurs de performance, objets de performance du service web MSRS\_2016 en mode SharePoint et du service Windows MSRS\_2016 en mode SharePoint"
               href: ../reporting-services/report-server/performance-counters-msrs-2011-sharepoint-mode-performance-objects.md
-            - name: 'Performance Counters for the ReportServer:Service  and ReportServerSharePoint:Service Performance Objects'
+            - name: 'Compteurs de performances, objets de performance ReportServer:Service et ReportServerSharePoint:Service'
               href: ../reporting-services/report-server/performance-counters-reportserver-service-performance-objects.md
         - name: Définir les propriétés de traitement d'un rapport
           href: ../reporting-services/report-server/set-report-processing-properties.md
