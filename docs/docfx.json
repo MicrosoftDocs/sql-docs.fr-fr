@@ -43,7 +43,7 @@
 
     "globalMetadata": {
       "layout": "Conceptual",
-      "recommendations": true
+      "recommendations": true,
       "uhfHeaderId": "MSDocsHeader-DocsSQL",
       "contributors_to_exclude": ["hexiaokai", "openpublishingbuild","sudeepku","saldana","iRaindrop"],
       "searchScope": ["sql"],
