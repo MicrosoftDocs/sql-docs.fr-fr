@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 8b319b69e76d63b275a61c7136b18344491d988b
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 658680481c8f77bf528e5db98ae0d9bd317b8eaf
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85786048"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354491"
 ---
 # <a name="prepare-the-input-trace-data"></a>Préparer les données de trace d'entrée
 

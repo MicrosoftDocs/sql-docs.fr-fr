@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 6452f60083c166ab86633655b0cfb3b92da88da6
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 5c2909a8f4c6f592781d94dbef6ab0288ff5980d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85732197"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354498"
 ---
 # <a name="review-the-replay-results"></a>Examiner les résultats de la relecture
 

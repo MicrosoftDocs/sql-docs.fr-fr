@@ -20,12 +20,12 @@ ms.assetid: d4859be5-ff5b-48b2-a101-ad40c6dbcc68
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.openlocfilehash: ae92bc88f3b18dcd195d857c1ccc975d116880f3
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: fe9c75b0b173bf2f72437233d2c06305b5041132
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88491712"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100355203"
 ---
 # <a name="conventions-for-combining-search-conditions-in-the-criteria-pane-visual-database-tools"></a>Conventions pour la combinaison de conditions de recherche dans le volet Critères (Visual Database Tools)
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
