@@ -8,25 +8,26 @@ author: yualan
 ms.author: alayu
 ms.reviewer: maghan
 ms.custom: seodec18
-ms.date: 1/22/2021
-ms.openlocfilehash: d249e36c9b15cabe9556701c8aafc3cb5ab66fac
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.date: 2/10/2021
+ms.openlocfilehash: 17cc8ef3252ad39c344de7a7c51a9af80c1f6030
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100040009"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100343404"
 ---
 # <a name="release-notes-for-azure-data-studio"></a>Notes de publication pour Azure Data Studio
 
 **[Téléchargez et installez la dernière version !](./download-azure-data-studio.md)**
 
-## <a name="january-2021-hotfix"></a>Janvier 2021 (correctif)
+## <a name="december-2020-hotfix"></a>Décembre 2020 (correctif logiciel)
 
-22 janvier 2021 &nbsp; / &nbsp; version : 1.25.2
+10 février 2021 &nbsp; / &nbsp; version : 1.25.3
 
 | Modifier | Détails |
 | ------ | ------- |
-| Correction du bogue [13899](https://github.com/microsoft/azuredatastudio/issues/13899)| Défilement vers les liens de renvoi appropriés dans Notebooks |
+| Correction du bogue [13899](https://github.com/microsoft/azuredatastudio/issues/13899) | Défilement vers les liens de renvoi appropriés dans Notebooks |
+| Mise à niveau d’Electron pour incorporer des correctifs de bogues importants| N/A |
 
 ## <a name="december-2020"></a>Décembre 2020
 

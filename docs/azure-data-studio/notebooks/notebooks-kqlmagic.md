@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: jukoesma
 ms.custom: ''
 ms.date: 10/29/2020
-ms.openlocfilehash: 7f21215f0f241373db532feeac00143e03753bf7
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: e78a8b6bd70724b8dda3d542e9c088e706cbe5ee
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100042649"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100343518"
 ---
 # <a name="kqlmagic-in-azure-data-studio"></a>Kqlmagic dans Azure Data Studio
 
@@ -35,20 +35,22 @@ Les étapes de cette section s’exécutent toutes dans un notebook Azure Data S
 
    ![Nouveau notebook](media/notebooks-kqlmagic/install-new-notebook.png)
 
-2. Quand vous y êtes invité, sélectionnez **Oui** pour mettre à niveau les packages Python.
+2. Vous pouvez être invité à mettre à niveau vos packages Python quand vos packages doivent être mis à jour.
 
    ![Oui](media/notebooks-kqlmagic/install-python-yes.png)
 
 3. Installer Kqlmagic :
 
    ```python
-   !pip install Kqlmagic --no-cache-dir --upgrade
+   import sys
+   !{sys.executable} -m pip install Kqlmagic --no-cache-dir --upgrade
    ```
 
    Vérifiez qu’il est installé :
 
    ```python
-   !pip list
+   import sys
+   !{sys.executable} -m pip list
    ```
 
    ![List](media/notebooks-kqlmagic/install-list.png)

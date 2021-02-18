@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: edbab896-42bb-4d17-8d75-e92ca11f7abb
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: e1a2fe365ff2cf40e1dd7e08e113a586e7c2b666
-ms.sourcegitcommit: 2f3f5920e0b7a84135c6553db6388faf8e0abe67
+ms.openlocfilehash: 571cf683c8d905cfb499624cbd05dc40efe94b86
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98783516"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100344641"
 ---
 # <a name="prerequisites-restrictions-and-recommendations-for-always-on-availability-groups"></a>Prérequis, restrictions et recommandations pour les groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -263,7 +263,7 @@ ms.locfileid: "98783516"
   
 -   **Nom de groupe de disponibilité unique :**  chaque nom de groupe de disponibilité doit être unique sur le WSFC. La longueur maximale d'un nom de groupe de disponibilité est de 128 caractères.  
   
--   **Réplicas de disponibilité :**  Chaque groupe de disponibilité prend en charge un réplica principal et jusqu'à huit réplicas secondaires. Tous les réplicas peuvent s'exécuter en mode de validation asynchrone, ou au plus trois d'entre eux peuvent s'exécuter en mode de validation synchrone (un réplica principal et deux réplicas secondaires synchrones).  
+-   **Réplicas de disponibilité :**  Chaque groupe de disponibilité prend en charge un réplica principal et jusqu'à huit réplicas secondaires. Tous les réplicas peuvent s’exécuter en mode de validation asynchrone, ou au plus cinq d’entre eux peuvent s’exécuter en mode de validation synchrone (un réplica principal avec deux réplicas secondaires synchrones).  
   
 -   **Nombre maximal de groupes de disponibilité et de bases de données de disponibilité par ordinateur :** Le nombre réel de bases de données et les groupes de disponibilité que vous pouvez placer sur un ordinateur (virtuel ou physique) dépendent du matériel et de la charge de travail, mais il n'existe aucune limite imposée. Microsoft a testé jusqu’à 10 groupes de disponibilité et 100 bases de données par machine physique, mais il ne s’agit pas d’une limite contraignante. Selon la spécification matérielle du serveur et de la charge de travail, il peut être possible de placer plus de bases de données et de groupes de disponibilité sur une instance SQL Server. Les signes d’un système surchargé incluent, notamment, l’épuisement des threads de travail, des temps de réponse longs pour les vues système et les vues de gestion dynamique des groupes de disponibilité et/ou des vidages de système de répartiteur bloqués. Veillez à tester soigneusement votre environnement avec une charge de travail semblable à celle de production pour vous assurer qu'il peut gérer la capacité de pointe conformément au contrat de niveau de service de l'application. Lorsque vous choisissez les contrats de niveau de service, assurez-vous de prendre en compte la charge en conditions d'échec ainsi que les temps de réponse attendus.  
   

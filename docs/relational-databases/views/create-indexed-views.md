@@ -19,12 +19,12 @@ ms.assetid: f86dd29f-52dd-44a9-91ac-1eb305c1ca8d
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 0cc0d86dbdce6e3618957551a1059c0178a23d61
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 148f93b43f704686b3083954cb3d7353f33a16e0
+ms.sourcegitcommit: c6cc0b669b175ae290cf5b08952010661ebd03c3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99236300"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100530858"
 ---
 # <a name="create-indexed-views"></a>Créer des vues indexées
 
@@ -157,10 +157,11 @@ Les index sur les tables et les vues peuvent être désactivés. Lorsqu'un index
 
 #### <a name="permissions"></a><a name="Permissions"></a> Autorisations
 
-Nécessite l’autorisation **CREATE VIEW** dans la base de données et l’autorisation **ALTER** sur le schéma dans lequel la vue est créée. Si la table de base se trouve dans un autre schéma, **REFERENCES** est l’autorisation minimale nécessaire sur la table.
+Pour créer la vue, un utilisateur a besoin de l’autorisation **CREATE VIEW** dans la base de données et de l’autorisation **ALTER** sur le schéma où la vue est créée. Si la table de base se trouve dans un autre schéma, **REFERENCES** est l’autorisation minimale nécessaire sur la table. Si l’utilisateur qui crée l’index diffère des utilisateurs qui ont créé la vue, pour la création de l’index seul, l’autorisation **ALTER** sur la vue est nécessaire (couverte par ALTER sur le schéma).
 
     > [!NOTE]  
-    > For the creation of the index on top of the view, the base table must have the same owner as the view. This is also called ownership-chain. This is usually the case when table and view reside within the same schema, but it is possible that individual objects have different owners. The column **principal_id** in sys.tables contains a value if the owner is different from the schema-owner.
+    > Indexes can only be created on views which have the same owner as the referenced table or tables. This is also called an intact **ownership-chain** between the view and the table(s). Typically, when table and view reside within the same schema, the same schema-owner applies to all objects within the schema. But it is possible that individual objects have different explicit owners. The column **principal_id** in sys.tables contains a value if the owner is different from the schema-owner.
+
 
 ## <a name="using-transact-sql"></a><a name="TsqlProcedure"></a> Utilisation de Transact-SQL
 

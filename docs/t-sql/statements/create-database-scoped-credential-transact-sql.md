@@ -23,12 +23,12 @@ ms.assetid: fe830577-11ca-44e5-953b-2d589d54d045
 author: VanMSFT
 ms.author: vanto
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=aps-pdw-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 1b9a9c27b80d702706d0b6bf1d7e7b3cb7d1d09b
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2bb17115cb016e13f0ef20f8bd4ace4edf5c214a
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99192730"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100270496"
 ---
 # <a name="create-database-scoped-credential-transact-sql"></a>CREATE DATABASE SCOPED CREDENTIAL (Transact-SQL)
 
@@ -56,7 +56,7 @@ WITH IDENTITY = 'identity_name'
 IDENTITY **=’** _identity\_name_ **’**  : Spécifie le nom du compte à utiliser lors d’une connexion en dehors du serveur. Pour importer un fichier à partir du stockage Blob Azure avec une clé partagée, le nom de l’identité doit être `SHARED ACCESS SIGNATURE`. Pour charger des données dans Azure Synapse Analytics, n’importe quelle valeur valide peut être utilisée pour l’identité. Pour plus d’informations sur les signatures d’accès partagé, consultez [Utilisation des signatures d’accès partagé (SAP)](/azure/storage/storage-dotnet-shared-access-signature-part-1). Lorsque vous utilisez Kerberos (Windows Active Directory ou MIT KDC), n’utilisez pas le nom de domaine dans l’argument IDENTITY. Il doit s’agir simplement du nom du compte.
 
 > [!IMPORTANT]
-> Les connecteurs ODBC SQL, Oracle, Teradata et MongoDB pour Polybase prennent uniquement en charge l’authentification de base (l’authentification Kerberos n’est pas prise en charge).
+> La seule source de données externe PolyBase qui prend en charge l’authentification Kerberos est Hadoop. Toutes les autres sources de données externes (SQL Server, Oracle, Teradata, MongoDB, ODBC générique) prennent en charge seulement l’authentification de base.
 
 > [!NOTE]
 > WITH IDENTITY n’est pas requis si le conteneur dans le stockage Blob Azure est activé pour l’accès anonyme. Pour obtenir un exemple d’interrogation du stockage Blob Azure, consultez [Importation dans une table à partir d’un fichier stocké dans le stockage Blob Azure](../functions/openrowset-transact-sql.md#j-importing-into-a-table-from-a-file-stored-on-azure-blob-storage).

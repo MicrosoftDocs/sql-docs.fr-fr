@@ -3,7 +3,7 @@ description: Fonctionnalités dépréciées du moteur de base de données dans [
 title: Fonctionnalités du moteur de base de données déconseillées dans SQL Server 2019 | Microsoft Docs
 titleSuffix: SQL Server 2019
 ms.custom: seo-lt-2019
-ms.date: 12/13/2019
+ms.date: 02/12/2021
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
@@ -15,18 +15,40 @@ ms.assetid: ''
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-ver15||>=sql-server-linux-ver15'
-ms.openlocfilehash: a2db458e13616c3796872f0ad9e07bfbd9ed16db
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: b6a8b2edf94d74720836e02589ec8e1270f38dac
+ms.sourcegitcommit: c83c17e44b5e1e3e2a3b5933c2a1c4afb98eb772
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99236617"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "100525160"
 ---
-# <a name="deprecated-database-engine-features-in-sssql19-md"></a>Fonctionnalités dépréciées du moteur de base de données dans [!INCLUDE[sssql19-md](../includes/sssql19-md.md)]
+# <a name="deprecated-database-engine-features-in-sql-server-2019-15x"></a>Fonctionnalités du moteur de base de données dépréciées dans SQL Server 2019 (15.x)
 
 [!INCLUDE[sqlserver2019](../includes/applies-to-version/sqlserver2019.md)]
 
-SQL Server 2019 ne déprécie aucune fonctionnalité.
+[!INCLUDE [sssql19-md](../includes/sssql19-md.md)] ne déprécie aucune fonctionnalité en plus de celles qui ont été dépréciées dans les versions antérieures :
+
+- [[!INCLUDE [sssql17-md](../includes/sssql17-md.md)]](deprecated-database-engine-features-in-sql-server-2017.md)
+- [[!INCLUDE [sssql16-md](../includes/sssql16-md.md)]](deprecated-database-engine-features-in-sql-server-2016.md)
+
+## <a name="deprecation-guidelines"></a>Indications à suivre pour la dépréciation
+
+Quand une fonctionnalité est marquée comme étant dépréciée, cela signifie que :
+
+- La fonctionnalité est en mode de maintenance uniquement. Aucune nouvelle modification ne lui sera apportée, notamment celles liées à l’interopérabilité avec de nouvelles fonctionnalités.
+- Nous nous efforçons de ne pas retirer une fonctionnalité dépréciée des futures versions pour faciliter les mises à niveau. Cependant, dans de rares cas, nous pouvons décider de retirer définitivement une fonctionnalité de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] si elle limite de futures innovations.
+- Pour un nouveau travail de développement, nous vous recommandons de ne pas utiliser des fonctionnalités dépréciées.      
+
+Vous pouvez surveiller l’utilisation des fonctionnalités déconseillées en utilisant le compteur de performance Objet des fonctionnalités dépréciées de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)], ou les événements étendus `deprecation_announcement` et `deprecation_final_support`. Pour plus d’informations, consultez [Utiliser des objets SQL Server](../relational-databases/performance-monitor/use-sql-server-objects.md).  
+
+## <a name="query-deprecated-features"></a>Interroger les fonctionnalités dépréciées
+
+Vous pouvez également obtenir les valeurs de ces compteurs en exécutant l’instruction suivante :  
+
+```sql
+SELECT * FROM sys.dm_os_performance_counters
+WHERE object_name = 'SQLServer:Deprecated Features';
+```
 
 ### <a name="see-also"></a>Voir aussi
 

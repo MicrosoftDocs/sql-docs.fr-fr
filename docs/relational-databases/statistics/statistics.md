@@ -25,12 +25,12 @@ helpviewer_keywords:
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 521904030d97213770d4a2310b51eaadc37d4e5d
-ms.sourcegitcommit: 05fc736e6b6b3a08f503ab124c3151f615e6faab
+ms.openlocfilehash: 996ae78401e57e538ef2835ec107a2cc5400741a
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99478584"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100352474"
 ---
 # <a name="statistics"></a>Statistiques
 
@@ -128,10 +128,9 @@ ORDER BY s.name;
   |Temporaire|*n* < 6|6|
   |Temporaire|6 <= *n* <= 500|500|
   |Permanent|*n* <= 500|500|
-  |Temporaire ou permanent|500 <= *n* <= 25 000|500 + (0,20 x *n*)|
-  |Temporaire ou permanent|*n* > 25 000|SQRT(1 000 x *n*)|
+  |Temporaire ou permanent|*n* >= 500|MIN ( 500 + (0.20 * *n*), SQRT(1,000 * *n*) ) |
 
-  Par exemple, si votre table contient 2 millions de lignes, le calcul est `SQRT(1,000 * 2,000,000) = 44,721` et les statistiques sont mises à jour toutes les 44 721 modifications.
+  Par exemple, si votre table contient 2 millions de lignes, la valeur est le résultat le plus petit de ces deux calculs : `500 + (0.20 * 2,000,000) = 400,500` et `SQRT(1,000 * 2,000,000) = 44,721`. Cela signifie que les statistiques seront mises à jour toutes les 44 721 modifications.
 
 > [!IMPORTANT]
 > Dans [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] à [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], ou dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et versions ultérieures sous le [niveau de compatibilité de la base de données](../../relational-databases/databases/view-or-change-the-compatibility-level-of-a-database.md) 120 et inférieur, activez [trace flag 2371](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) pour que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise un seuil de mise à jour des statistiques décroissant et dynamique.

@@ -16,12 +16,12 @@ ms.assetid: ce4053fb-e37a-4851-b711-8e504059a780
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 87ea13391e0495c695ccc057e842e2f6ef0c6e19
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 0fa90cc172c07b7642ca937271fe8c6709b65ede
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99237946"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489373"
 ---
 # <a name="tempdb-database"></a>base de données tempdb
 
@@ -68,6 +68,9 @@ Le nombre de fichiers de données secondaires dépend du nombre de processeurs (
 
 > [!NOTE]
 > La valeur par défaut du nombre de fichiers de données est basée sur les directives générales de l’article [KB 2154845](https://support.microsoft.com/kb/2154845/).  
+
+> [!NOTE]
+> Pour vérifier les paramètres actuels de croissance et de taille pour `tempdb`, interrogez la vue `tempdb.sys.database_files`.
   
 ### <a name="moving-the-tempdb-data-and-log-files-in-sql-server"></a>Déplacement des fichiers de données et journaux de tempdb dans SQL Server
 

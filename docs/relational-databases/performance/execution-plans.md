@@ -17,12 +17,12 @@ ms.assetid: 07f8f594-75b4-4591-8c29-d63811d7753f
 author: pmasl
 ms.author: pelopes
 manager: amitban
-ms.openlocfilehash: fee5c2f4f1d8a286830f4e1fdefdb1043964a726
-ms.sourcegitcommit: 0e0cd9347c029e0c7c9f3fe6d39985a6d3af967d
+ms.openlocfilehash: 9007a29a613f1fea6891af33b66e69d98f2058b2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96505223"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100355267"
 ---
 # <a name="execution-plans"></a>Plans d’exécution
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -46,9 +46,9 @@ Un plan d'exécution de requête permet de définir :
 
 > [!NOTE]
 > [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] propose trois options pour afficher les plans d’exécution :        
-> -  Le **_[Plan d’exécution estimé](../../relational-databases/performance/display-the-estimated-execution-plan.md)_* _, à savoir le plan compilé, produit par l’optimiseur de requête en fonction des estimations. Il s’agit du plan de requête qui est stocké dans le cache du plan.        
-> -  Le _*_ [Plan d’exécution réel](../../relational-databases/performance/display-an-actual-execution-plan.md) _*_ , est le plan compilé avec son [contexte d’exécution](../../relational-databases/query-processing-architecture-guide.md#execution-plan-caching-and-reuse). Il est disponible _*une fois l’exécution de la requête terminée**. c’est-à-dire les informations sur l’exécution réelle, comme les avertissements d’exécution ou, dans les versions récentes du [!INCLUDE[ssde_md](../../includes/ssde_md.md)], le temps écoulé et le temps processeur utilisés pendant l’exécution.         
-> -  Les **_[Statistiques des requêtes actives](../../relational-databases/performance/live-query-statistics.md)_ *_ sont identiques au plan compilé auquel s’ajoute son contexte d’exécution. Ce plan est disponible pour les _* exécutions de requêtes à la volée** et est mis à jour toutes les secondes. Cela comprend des informations d’exécution telles que le nombre réel de lignes qui transitent par les [opérateurs](../../relational-databases/showplan-logical-and-physical-operators-reference.md), le temps écoulé et l’estimation de la progression des requêtes.
+> -  Le ***[Plan d’exécution estimé](../../relational-databases/performance/display-the-estimated-execution-plan.md)***, à savoir le plan compilé, produit par l’optimiseur de requête en fonction des estimations. Il s’agit du plan de requête qui est stocké dans le cache du plan.        
+> -  Le * **[Plan d’exécution réel](../../relational-databases/performance/display-an-actual-execution-plan.md)** _ est le plan compilé plus son [contexte d’exécution](../../relational-databases/query-processing-architecture-guide.md#execution-plan-caching-and-reuse). Il est disponible _*une fois l’exécution de la requête terminée**. c’est-à-dire les informations sur l’exécution réelle, comme les avertissements d’exécution ou, dans les versions récentes du [!INCLUDE[ssde_md](../../includes/ssde_md.md)], le temps écoulé et le temps processeur utilisés pendant l’exécution.         
+> -  Les **[Statistiques des requêtes en direct](../../relational-databases/performance/live-query-statistics.md)** sont le plan compilé plus son contexte d’exécution. Ce plan est disponible pour les _*exécutions de requêtes à la volée** et est mis à jour toutes les secondes. Cela comprend des informations d’exécution telles que le nombre réel de lignes qui transitent par les [opérateurs](../../relational-databases/showplan-logical-and-physical-operators-reference.md), le temps écoulé et l’estimation de la progression des requêtes.
 
 > [!TIP]
 > Pour plus d’informations sur les plans de traitement et d’exécution des requêtes, consultez les sections [Optimisation des instructions SELECT](../../relational-databases/query-processing-architecture-guide.md#optimizing-select-statements) et [Mise en cache et réutilisation des plans d’exécution](../../relational-databases/query-processing-architecture-guide.md#execution-plan-caching-and-reuse) du Guide de l’architecture de traitement des requêtes.

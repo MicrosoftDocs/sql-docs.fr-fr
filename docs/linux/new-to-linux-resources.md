@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: ''
-ms.openlocfilehash: 789178113f1e22df2d2cf028d2f6e5f93e9b5b0e
-ms.sourcegitcommit: 331b8495e4ab37266945c81ff5b93d250bdaa6da
+ms.openlocfilehash: 253c398e0f010e164d1efa5c39fc958e86047ed6
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/20/2020
-ms.locfileid: "88646819"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100064054"
 ---
 # <a name="new-to-linux-resources-for-sql-users"></a>Ressources Débuter avec Linux pour les utilisateurs SQL
 
@@ -63,6 +63,6 @@ Découvrez les [commandes fréquentes](https://www.linux.org/threads/commands-fo
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Après vous être familiarisé avec l’environnement Linux, passez en revue les  [éditions et composants](sql-server-linux-editions-and-components-2019.md) pour SQL Server sur Linux ainsi que les  [plateformes Linux prises en charge](sql-server-linux-release-notes-2019.md). 
+Après vous être familiarisé avec l’environnement Linux, passez en revue [les éditions et les composants](sql-server-linux-editions-and-components-2019.md) pour SQL Server sur Linux ainsi que les [plateformes Linux prises en charge](sql-server-linux-release-notes-2019.md). 
 
 Pour plus d’informations, consultez les [autres tutoriels Linux](https://www.linux.org/forums/linux-beginner-tutorials.123/) ainsi que les [questions fréquentes (FAQ)](sql-server-linux-faq.md).

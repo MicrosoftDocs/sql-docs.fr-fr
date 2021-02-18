@@ -9,12 +9,12 @@ ms.topic: tutorial
 ms.prod: sql
 ms.technology: linux
 moniker: '>= sql-server-linux-2017 || >= sql-server-2017 || =sqlallproducts-allversions'
-ms.openlocfilehash: 6b68cb2b2ff3712502ef4e0862fe71ad78705d7c
-ms.sourcegitcommit: c52a6aeb6fa6d7c3a86b3e84449361f4a0949ad0
+ms.openlocfilehash: e1e14db6e55ca4af4f76220c0e3f377c38e41165
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99623759"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100351875"
 ---
 # <a name="tutorial-configure-active-directory-authentication-with-sql-server-on-linux-using-adutil"></a>Tutoriel : Configurer l’authentification Active Directory avec SQL Server sur Linux à l’aide d’adutil
 
@@ -70,9 +70,10 @@ Sur l’ordinateur hôte Linux, utilisez les commandes suivantes pour installer 
 
 ### <a name="ubuntu"></a>Ubuntu
 
-1. Enregistrez le référentiel Microsoft Ubuntu.
+1. Importez les clés GPG du dépôt public, puis inscrivez le dépôt Microsoft Ubuntu.
 
     ```bash
+    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
     sudo curl https://packages.microsoft.com/config/ubuntu/18.04/prod.list | sudo tee /etc/apt/sources.list.d/msprod.list
     ```
 

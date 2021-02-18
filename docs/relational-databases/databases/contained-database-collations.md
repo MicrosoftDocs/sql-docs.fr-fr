@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 4b44f6b9-2359-452f-8bb1-5520f2528483
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: 09edac79bf52c2826436ecdfdf25b0db342f4aeb
-ms.sourcegitcommit: 99f61724de5edf6640efd99916d464172eb23f92
+ms.openlocfilehash: a1da6b96aea93feaacdb5384716ef6cd0ab82a06
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87363560"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489403"
 ---
 # <a name="contained-database-collations"></a>Classements de base de données autonome
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -136,7 +136,7 @@ END;
 |Étiquettes goto|Classement d'instance|CATALOG_DEFAULT|  
 |Noms de curseur|Classement d'instance|CATALOG_DEFAULT|  
   
- Si nous examinons l’exemple de table temp décrit précédemment, nous pouvons voir que ce comportement de classement rend la clause **COLLATE** explicite inutile dans la plupart des utilisations de table temp. Dans une base de données autonome, ce code s'exécute désormais sans erreur, même si les classements d'instance et de base de données diffèrent :  
+ Dans l’exemple de table temp décrit précédemment, nous pouvons voir que ce comportement de classement rend la clause **COLLATE** explicite inutile dans la plupart des utilisations de la table temp. Dans une base de données autonome, ce code s'exécute désormais sans erreur, même si les classements d'instance et de base de données diffèrent :  
   
 ```sql  
 CREATE TABLE T1 (T1_txt nvarchar(max)) ;  
@@ -156,7 +156,7 @@ JOIN #T2
   
 -   Le comportement du classement d'un lot est déterminé par la base de données dans laquelle commence le lot.  
   
- Notez que cette décision est prise avant l’émission d’une commande, notamment la commande **USE**initiale. Autrement dit, si un lot commence dans une base de données autonome, mais que la première commande est une opération **USE** sur une base de données non autonome, le comportement du classement autonome sera toujours utilisé pour le lot. En conséquence, une référence à une variable, par exemple, peut donner plusieurs résultats possibles :  
+ Notez que cette décision est prise avant l’émission d’une commande, notamment la commande **USE** initiale. Autrement dit, si un lot commence dans une base de données autonome, mais que la première commande est une opération **USE** sur une base de données non autonome, le comportement du classement autonome sera toujours utilisé pour le lot. En conséquence, une référence à une variable, par exemple, peut donner plusieurs résultats possibles :  
   
 -   La référence peut trouver exactement une correspondance. Dans ce cas, la référence fonctionnera sans erreur.  
   

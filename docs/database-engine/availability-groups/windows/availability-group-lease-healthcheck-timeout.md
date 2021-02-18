@@ -10,12 +10,12 @@ ms.topic: how-to
 ms.assetid: ''
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: a616e9b8fb1ebce6edd15c6af101765963d862f8
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 787a683eb0fc666eff8f3c72519bbba149dafe96
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97640315"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100340814"
 ---
 # <a name="mechanics-and-guidelines-of-lease-cluster-and-health-check-timeouts-for-always-on-availability-groups"></a>Mécanismes et recommandations liés aux délais d’attente concernant les baux, les clusters et le contrôle d’intégrité pour les groupes de disponibilité Always On 
 
@@ -98,7 +98,7 @@ Les valeurs de délai déterminent le temps d’attente entre chaque pulsation d
 Pour répertorier toutes les valeurs de cluster actuelles, sur l’un des nœuds du cluster cible, ouvrez un terminal PowerShell avec élévation de privilèges. Exécutez la commande suivante :
 
 ```PowerShell
- Get-Cluster | fl \
+ Get-Cluster | fl *
 ``` 
 
 Pour mettre à jour ces valeurs, exécutez la commande suivante dans un terminal PowerShell avec élévation de privilèges :
@@ -125,6 +125,8 @@ Le mécanisme de bail est contrôlé par une seule valeur qui est spécifique à
 
    Selon la configuration du groupe de disponibilité, il peut y avoir d’autres ressources pour les écouteurs, les disques partagés, les partages de fichiers, etc. Ces ressources ne nécessitent pas de configuration supplémentaire. 
 
+> [!NOTE]  
+>  La nouvelle valeur de la propriété « LeaseTimeout » prend effet une fois que la ressource est mise hors connexion puis remise en ligne.
    
 ### <a name="health-check-values"></a>Délai d’attente du contrôle d’intégrité 
 

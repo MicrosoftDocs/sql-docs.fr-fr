@@ -1,19 +1,19 @@
 ---
 description: Liste des derniers Service Packs et mises à jour cumulatives, avec les numéros de build pour Microsoft SQL Server.
 title: Dernières mises à jour pour SQL Server
-ms.date: 11/30/2020
+ms.date: 02/11/2021
 ms.prod: sql
 ms.technology: install
 ms.topic: conceptual
-author: tmichael-ms
-ms.author: tmichael
+author: SrinivasSQLMS
+ms.author: skandi
 ms.reviewer: hristins
-ms.openlocfilehash: a79ab99baaad3ec156fc77be77a8584e50448662
-ms.sourcegitcommit: 1f826eb3f73bd4d94bc9638b9cdd60991a2e2fa0
+ms.openlocfilehash: f5b522ae47687b2b960b23812f859b3a97238f5e
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98125626"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100353080"
 ---
 # <a name="latest-updates-for-microsoft-sql-server"></a>Dernières mises à jour pour Microsoft SQL Server
 
@@ -29,9 +29,9 @@ Chacun des liens suivants fournit des informations sur tous les produits et tech
 
 |Versions du produit   | Dernier Service Pack |  Dernier correctif logiciel grand public | Dernière mise à jour cumulative | Date de mise en production de la mise à jour cumulative | Conseils d’ordre général  |
 |--|--|--|--|--|--|
-|SQL Server 2019|N/A|[Article 4583458 de la base de connaissances](https://support.microsoft.com/help/4583458)|CU 8 [(article 4583459 de la base de connaissances)](https://support.microsoft.com/help/4583459)|12/1/2021|[Installation de SQL Server 2019](./install-sql-server.md)|
+|SQL Server 2019|N/A|[Article 4583458 de la base de connaissances](https://support.microsoft.com/help/4583458)|CU 9 [(KB 5000642)](https://support.microsoft.com/help/5000642)|2/11/2021|[Installation de SQL Server 2019](./install-sql-server.md)|
 |SQL Server 2017|N/A|[Article 4583456 de la base de connaissances](https://support.microsoft.com/help/4583456)|CU 22 [(article 4583457 de la base de connaissances)](https://support.microsoft.com/help/4583457)|12/1/2021|[Installation de SQL Server 2017](./install-sql-server.md)|
-|SQL Server 2016|SP2 [(KB 4052908)](https://support.microsoft.com/help/4052908)|[Article 4583460 de la base de connaissances](https://support.microsoft.com/help/4583460)|CU 15 [(article 4583461 de la base de connaissances)](https://support.microsoft.com/kb/4583461)|12/1/2021|[Installation de SQL Server 2016](./install-sql-server.md)|
+|SQL Server 2016|SP2 [(KB 4052908)](https://support.microsoft.com/help/4052908)|[Article 4583460 de la base de connaissances](https://support.microsoft.com/help/4583460)|CU 16 [(KB 5000645)](https://support.microsoft.com/kb/5000645)|2/11/2021|[Installation de SQL Server 2016](./install-sql-server.md)|
 |SQL Server 2016|SP1 [(article 3182545 de la base de connaissances)](https://support.microsoft.com/help/3182545/sql-server-2016-service-pack-1-release-information)|[KB 4505219](https://support.microsoft.com/help/4505219)|Mise à jour cumulative 15 + correctif logiciel grand public [(KB 4505221)](https://support.microsoft.com/help/4505221)|9/7/2019|[Installation de SQL Server 2016](./install-sql-server.md)|
 |SQL Server 2016|N/A|[KB 4058560](https://support.microsoft.com/help/4058560)|Mise à jour cumulative 9 [(KB 4058559)](https://support.microsoft.com/help/4058559)|22/11/2017|[Installation de SQL Server 2016](./install-sql-server.md)|
 |SQL Server 2014|SP3 [(KB 4022619)](https://support.microsoft.com/kb/4022619)|[Article 4583463 de la base de connaissances](https://support.microsoft.com/help/4583463)|CU 4 [(article 4583462 de la base de connaissances)](https://support.microsoft.com/kb/4583462)|12/1/2021|[Installation de SQL Server 2014](https://www.microsoft.com/download/details.aspx?id=42299)|
