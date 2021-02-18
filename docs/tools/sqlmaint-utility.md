@@ -19,16 +19,16 @@ helpviewer_keywords:
 ms.assetid: 937a9932-4aed-464b-b97a-a5acfe6a50de
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 3d6e9aff189018cf140ac3a39593e11e69241e4e
-ms.sourcegitcommit: 75f767c7b1ead31f33a870fddab6bef52f99906b
+ms.openlocfilehash: c822bd2acbd92bcfd9b3008c78c3ccef244f3c88
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/28/2020
-ms.locfileid: "87332254"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338554"
 ---
 # <a name="sqlmaint-utility"></a>sqlmaint (utilitaire)
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]
-  L’utilitaire**sqlmaint** exécute un ensemble spécifique d’opérations de maintenance sur une ou plusieurs bases de données. Utilisez **sqlmaint** pour exécuter des vérifications DBCC, sauvegarder une base de données et son journal des transactions, mettre à jour des statistiques et reconstruire des index. Toutes les activités de maintenance de base de données produisent un rapport qui peut être envoyé vers un fichier texte, un fichier HTML ou un compte de messagerie déterminé. **sqlmaint** exécute les plans de maintenance de base de données créés avec des versions précédentes de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Pour exécuter des plans de maintenance [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] à partir de l’invite de commandes, utilisez [l’utilitaire dtexec](../integration-services/packages/dtexec-utility.md).  
+  L’utilitaire **sqlmaint** exécute un ensemble spécifique d’opérations de maintenance sur une ou plusieurs bases de données. Utilisez **sqlmaint** pour exécuter des vérifications DBCC, sauvegarder une base de données et son journal des transactions, mettre à jour des statistiques et reconstruire des index. Toutes les activités de maintenance de base de données produisent un rapport qui peut être envoyé vers un fichier texte, un fichier HTML ou un compte de messagerie déterminé. **sqlmaint** exécute les plans de maintenance de base de données créés avec des versions précédentes de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Pour exécuter des plans de maintenance [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] à partir de l’invite de commandes, utilisez [l’utilitaire dtexec](../integration-services/packages/dtexec-utility.md).  
   
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteDepNextAvoid](../includes/ssnotedepnextavoid-md.md)] Utilisez plutôt la fonction plan de maintenance de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] . Pour plus d’informations sur les plans de maintenance, consultez [Plans de maintenance](../relational-databases/maintenance-plans/maintenance-plans.md).  
@@ -106,7 +106,7 @@ number[minutes | hours | days | weeks | months]
  Spécifie l'identificateur global unique (GUID) d'un plan de maintenance de base de données à l'aide de l'Assistant Plan de maintenance de base de données. La seule information du plan utilisée par **sqlmaint** est la liste des bases de données qui y figurent. Toutes les activités de maintenance spécifiées dans les autres paramètres de **sqlmaint** s’appliquent à cette liste de bases de données. Cela doit correspondre à une valeur plan_id dans msdb.dbo.sysdbmaintplans.  
   
  **-Rpt** _text_file_  
- Spécifie le chemin et le nom complet du fichier dans lequel le rapport doit être créé. Le rapport est aussi créé à l'écran. Le rapport conserve les informations de version en ajoutant une date au nom de fichier. La date est générée comme suit : à la fin du nom de fichier, mais avant le point, sous la forme _*yyyyMMddhhmm*. *yyyy* = année, *MM* = mois, *dd* = jour, *hh* = heure, *mm* = minute.  
+ Spécifie le chemin et le nom complet du fichier dans lequel le rapport doit être créé. Le rapport est aussi créé à l'écran. Le rapport conserve les informations de version en ajoutant une date au nom de fichier. La date est générée comme suit : à la fin du nom de fichier, mais avant le point, sous la forme _ *yyyyMMddhhmm*. *yyyy* = année, *MM* = mois, *dd* = jour, *hh* = heure, *mm* = minute.  
   
  Si vous exécutez l'utilitaire à 10h23 le 1er décembre 1996, avec la valeur *text_file* suivante :  
   
@@ -126,7 +126,7 @@ c:\Program Files\Microsoft SQL Server\Mssql\Backup\AdventureWorks2012_maint_1996
  Spécifie l'opérateur auquel le rapport créé sera envoyé par l'intermédiaire de SQL Mail.  
   
  **-HtmlRpt** _html_file_  
- Spécifie le chemin et le nom complets du fichier dans lequel un rapport HTML doit être créé. **sqlmaint** crée le nom de fichier en lui ajoutant une chaîne de type _*yyyyMMddhhmm* de la même manière que pour le paramètre **-Rpt** .  
+ Spécifie le chemin et le nom complets du fichier dans lequel un rapport HTML doit être créé. **sqlmaint** crée le nom de fichier en lui ajoutant une chaîne de type _ *yyyyMMddhhmm* de la même manière que pour le paramètre **-Rpt** .  
   
  Le nom de fichier complet UNC est requis pour *html_file* lorsque **sqlmaint** accède à un serveur distant.  
   
@@ -167,7 +167,7 @@ UPDATE STATISTICS table WITH SAMPLE sample_percent PERCENT;
  Doit être spécifié pour l’exécution de commandes de maintenance DBCC avec **sqlmaint** sur des colonnes calculées.  
   
  **-WriteHistory**  
- Spécifie que chaque action de maintenance effectuée par **sqlmaint**fait l’objet d’une entrée dans msdb.dbo.sysdbmaintplan_history. Si **-PlanName** ou **-PlanID** est spécifié, les entrées de sysdbmaintplan_history utilisent l’ID du plan spécifié. Si **-D** est spécifié, l’ID du plan est remplacé par des zéros dans les entrées de sysdbmaintplan_history.  
+ Spécifie que chaque action de maintenance effectuée par **sqlmaint** fait l’objet d’une entrée dans msdb.dbo.sysdbmaintplan_history. Si **-PlanName** ou **-PlanID** est spécifié, les entrées de sysdbmaintplan_history utilisent l’ID du plan spécifié. Si **-D** est spécifié, l’ID du plan est remplacé par des zéros dans les entrées de sysdbmaintplan_history.  
   
  **-BkUpDB** [ *backup_path*] |  **-BkUpLog** [ *backup_path* ]  
  Spécifie une action de sauvegarde. **-BkUpDb** sauvegarde l’ensemble de la base de données. **-BkUpLog** sauvegarde uniquement le journal des transactions.  
@@ -213,7 +213,7 @@ dbname_log_yyyymmddhhmm.BAK
  Spécifie que le support de sauvegarde est une bande.  
   
  **-BkUpOnlyIfClean**  
- Spécifie que la sauvegarde a lieu uniquement si les contrôles **-Ck** spécifiés n’ont rencontré aucun problème au niveau des données. Les actions de maintenance s'exécutent dans le même ordre que celui dans lequel elles apparaissent dans la ligne de commande. Spécifiez les paramètres **-CkDB**, **-CkDBNoIdx**, **-CkAl**, **-CkAlNoIdx**, **-CkTxtAl**ou **-CkCat** avant le(s) paramètre(s) **-BkUpDB**/ **-BkUpLog** si vous allez également spécifier **-BkUpOnlyIfClean**ou la sauvegarde a lieu, même si la vérification signale des problèmes ou pas.  
+ Spécifie que la sauvegarde a lieu uniquement si les contrôles **-Ck** spécifiés n’ont rencontré aucun problème au niveau des données. Les actions de maintenance s'exécutent dans le même ordre que celui dans lequel elles apparaissent dans la ligne de commande. Spécifiez les paramètres **-CkDB**, **-CkDBNoIdx**, **-CkAl**, **-CkAlNoIdx**, **-CkTxtAl** ou **-CkCat** avant le(s) paramètre(s) **-BkUpDB**/ **-BkUpLog** si vous allez également spécifier **-BkUpOnlyIfClean** ou la sauvegarde a lieu, même si la vérification signale des problèmes ou pas.  
   
  **-VrfyBackup**  
  Spécifie que RESTORE VERIFYONLY est exécuté sur la sauvegarde lorsque celle-ci est terminée.  
@@ -236,7 +236,7 @@ dbname_log_yyyymmddhhmm.BAK
   
 -   Les opérations de maintenance échouent dans les ces suivants :  
   
--   Si les vérifications **-CkDB**, **-CkDBNoIdx**, **-CkAl**, **-CkAlNoIdx**, **-CkTxtAl**ou **-CkCat** trouvent des problèmes sur les données.  
+-   Si les vérifications **-CkDB**, **-CkDBNoIdx**, **-CkAl**, **-CkAlNoIdx**, **-CkTxtAl** ou **-CkCat** trouvent des problèmes sur les données.  
   
 -   En cas de panne générale.  
   

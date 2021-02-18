@@ -9,12 +9,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15'
-ms.openlocfilehash: 0537e602d5c6773c4978c7fff0f5bf0f927985c6
-ms.sourcegitcommit: 5dcbe4abbe2339292961370c1d8ca3affa625f72
+ms.openlocfilehash: d9bfe9ec4f81ca61bacbb4dc3526ea5b7a1a87f7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99536340"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272960"
 ---
 # <a name="tutorial-sql-development-for-r-data-scientists"></a>Tutoriel : Développement SQL pour les scientifiques des données R
 [!INCLUDE [SQL Server 2016](../../includes/applies-to-version/sqlserver2016.md)]

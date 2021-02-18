@@ -23,12 +23,12 @@ helpviewer_keywords:
 ms.assetid: f55c6a0e-b6bd-4803-b51a-f3a419803024
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 7a4e10b437f60c8f6b1f80ed76017591fc22686d
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 7a00c8196a3a20d17f07c215b8d0d0f1c3ffd84e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597259"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352453"
 ---
 # <a name="configure-the-windows-firewall-to-allow-sql-server-access"></a>Configure the Windows Firewall to Allow SQL Server Access
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
@@ -204,7 +204,7 @@ Le tableau suivant répertorie les ports et services dont [!INCLUDE[ssNoVersion]
  Pour plus d'informations sur le port 135, consultez les rubriques de référence suivantes :  
   
 -   [Vue d'ensemble des services et exigences de ports réseau pour le système Windows Server](https://support.microsoft.com/kb/832017)   
--   [Comment faire pour corriger les erreurs du mappeur de points de terminaison RPC à l'aide d'outils de support Windows Server 2003 disponibles sur le CD-ROM du produit](https://support.microsoft.com/kb/839880)  
+-   [Comment faire pour corriger les erreurs du mappeur de points de terminaison RPC à l'aide d'outils de support Windows Server 2003 disponibles sur le CD-ROM du produit](https://mskb.pkisolutions.com/kb/839880)  
 -   [Appel de procédure distante (RPC)](/previous-versions/ms950395(v=msdn.10))    
 -   [Comment faire pour configurer l'allocation de port dynamique RPC avec un pare-feu](https://support.microsoft.com/kb/154596/)  
   

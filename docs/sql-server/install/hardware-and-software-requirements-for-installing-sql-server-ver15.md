@@ -45,12 +45,12 @@ helpviewer_keywords:
 ms.assetid: 09bcf20b-0a40-4131-907f-b61479d5e4d8
 ms.author: chadam
 author: cawrites
-ms.openlocfilehash: 460de4547ababdaac8dff28ff71c53520726ad53
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 52c29a7de29a324d7bda2fba4cb52073cf62d752
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96121118"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100352429"
 ---
 # <a name="sql-server-2019-hardware-and-software-requirements"></a>SQL Server 2019 : Configuration matérielle et logicielle requise
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
@@ -105,7 +105,7 @@ Le programme d'installation de[!INCLUDE[ssNoVersion](../../includes/ssnoversion-
 Le tableau suivant indique les éditions de SQL Server 2019 qui sont compatibles avec les différentes versions de Windows :  
   
 
-| Édition de SQL Server :               | Entreprise | Développeur | standard | Web | Express |  
+| Édition de SQL Server :               | Entreprise | Développeur | Standard | Web | Express |  
 | :------------------------         | :--------- | :-------- | :------- | :-- | :------ | 
 | Windows Server 2019 Datacenter    |    Oui     |    Oui    |    Oui   | Oui |   Oui   |
 | Windows Server 2019 Standard      |    Oui     |    Oui    |    Oui   | Oui |   Oui   |
@@ -116,7 +116,7 @@ Le tableau suivant indique les éditions de SQL Server 2019 qui sont compatible
 | Windows 10 IoT Entreprise         |    Non      |    Oui    |    Oui   | Non  |   Oui   |
 | Windows 10 Entreprise             |    Non      |    Oui    |    Oui   | Non  |   Oui   |
 | Windows 10 Professionnel           |    Non      |    Oui    |    Oui   | Non  |   Oui   |
-| Windows 10 Famille                   |    Non       |    Oui    |    Oui   | Non   |   Oui   |
+| Windows 10 Famille                   |    Non       |    Oui    |    Oui   | Non  |   Oui   |
 | &nbsp; | &nbsp; |
 
 ### <a name="server-core-support"></a>Prise en charge Server Core

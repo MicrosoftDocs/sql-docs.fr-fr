@@ -16,12 +16,12 @@ ms.assetid: 31bb6772-7974-4329-bca0-c16d5875483d
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.openlocfilehash: ec512eeb7d07876e78cb3c450f86a8b3b728ecb7
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 0c0a2e37288f27a8045b9928fd289ef998b597a1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88497156"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100270765"
 ---
 # <a name="customize-the-amount-of-information-displayed-in-diagrams-visual-database-tools"></a>Personnaliser la quantité d'informations affichées dans les schémas (Visual Database Tools)
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -33,11 +33,11 @@ Les choix sont les suivants :
   
 -   Noms des colonnes  
   
--   Touches  
+-   Keys  
   
 -   Nom uniquement  
   
--   Custom  
+-   Personnalisé  
   
 -   Modifier la vue personnalisée  
   

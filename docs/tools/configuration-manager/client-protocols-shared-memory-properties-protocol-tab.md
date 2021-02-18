@@ -15,12 +15,12 @@ ms.assetid: 941369bd-cd4d-4a64-8e42-724d9a866eb7
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: f6294c73d9ba3a422381d38f1914e84d48d9596e
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8b2ecbb27f56d77ce57a1f5b996b171d5ada2038
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463862"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349876"
 ---
 # <a name="client-protocols---shared-memory-properties-protocol-tab"></a>Protocoles clients - Propriétés de Mémoire partagée (onglet Protocole)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

@@ -17,12 +17,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/07/2017
-ms.openlocfilehash: ba1ed37292b3b92ead4af84cb3f00d4b51e3372d
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: 2891d4dcfcae8689dda1aaf78cad9c4c43bae220
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250916"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350468"
 ---
 # <a name="move-a-registered-server-or-registered-server-group"></a>Déplacer un serveur inscrit ou un groupe de serveurs inscrits
 

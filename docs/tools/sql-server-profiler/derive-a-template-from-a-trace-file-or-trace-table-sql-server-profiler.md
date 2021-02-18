@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 3a1f608eba9a91510258c15ccaf109e43806ef1c
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 55c4bfbdee91a2c6aa095d50bcaa106730a8931f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97641917"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345878"
 ---
 # <a name="derive-a-template-from-a-trace-file-or-trace-table-sql-server-profiler"></a>Dériver un modèle à partir d'un fichier de trace ou d'une table de trace (SQL Server Profiler)
 

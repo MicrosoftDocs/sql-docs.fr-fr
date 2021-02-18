@@ -15,12 +15,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 4151e138347ad09f8e32dbd0f96e8e7a9a5ff83e
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: e6d7337e2215a95979f86cfc94cb7105587e6947
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85732093"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340580"
 ---
 # <a name="index-element-dta"></a>Index, élément (Assistant Paramétrage de base de données)
 
@@ -70,7 +70,7 @@ Contient les informations sur un index que vous souhaitez créer ou supprimer po
 |Relation|Éléments|  
 |------------------|--------------|  
 |**Élément parent**|[Create, élément &#40;Assistant Paramétrage de base de données&#41;](../../tools/dta/create-element-dta.md)<br /><br /> Élément **Drop**. Pour plus d'informations, voir le schéma de l'Assistant Paramétrage du moteur de base de données.|  
-|**Éléments enfants**|[Name, élément pour les index &#40;Assistant Paramétrage de base de données&#41;](../../tools/dta/name-element-for-index-dta.md)<br /><br /> [Column, élément pour les index &#40;Assistant Paramétrage de base de données&#41;](../../tools/dta/column-element-for-index-dta.md)<br /><br /> Élément**PartitionScheme** . Pour plus d'informations, voir le schéma de l'Assistant Paramétrage du moteur de base de données.<br /><br /> Élément**PartitionColumn** . Pour plus d'informations, voir le schéma de l'Assistant Paramétrage du moteur de base de données.<br /><br /> [Filegroup, élément pour les index &#40;Assistant Paramétrage de base de données&#41;](../../tools/dta/filegroup-element-for-index-dta.md)<br /><br /> Élément**NumberOfReferences** . Pour plus d'informations, voir le schéma de l'Assistant Paramétrage du moteur de base de données.<br /><br /> Élément**PercentUsage** . Pour plus d'informations, voir le schéma de l'Assistant Paramétrage du moteur de base de données.|  
+|**Éléments enfants**|[Name, élément pour les index &#40;Assistant Paramétrage de base de données&#41;](../../tools/dta/name-element-for-index-dta.md)<br /><br /> [Column, élément pour les index &#40;Assistant Paramétrage de base de données&#41;](../../tools/dta/column-element-for-index-dta.md)<br /><br /> Élément **PartitionScheme** . Pour plus d'informations, voir le schéma de l'Assistant Paramétrage du moteur de base de données.<br /><br /> Élément **PartitionColumn** . Pour plus d'informations, voir le schéma de l'Assistant Paramétrage du moteur de base de données.<br /><br /> [Filegroup, élément pour les index &#40;Assistant Paramétrage de base de données&#41;](../../tools/dta/filegroup-element-for-index-dta.md)<br /><br /> Élément **NumberOfReferences** . Pour plus d'informations, voir le schéma de l'Assistant Paramétrage du moteur de base de données.<br /><br /> Élément **PercentUsage** . Pour plus d'informations, voir le schéma de l'Assistant Paramétrage du moteur de base de données.|  
   
 ## <a name="example"></a>Exemple  
  Pour obtenir un exemple d’utilisation de cet élément, consultez l’[Exemple de fichier d’entrée XML avec une configuration spécifiée par l’utilisateur &#40;Assistant Paramétrage de base de données&#41;](../../tools/dta/xml-input-file-sample-with-user-specified-configuration-dta.md).  

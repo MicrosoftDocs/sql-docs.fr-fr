@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: e473cfa21a026563bc2ac71b39e25d66d4c6a619
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: b7d6139941e7ee3b80e62596e95f0d5d492cbc1d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85774784"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349386"
 ---
 # <a name="replay-a-trace-file-sql-server-profiler"></a>Relire un fichier de trace (SQL Server Profiler)
 
@@ -41,7 +41,7 @@ La relecture est la possibilité d'ouvrir une trace enregistrée et de la relire
   
     -   **Enregistrer dans la table**: spécifie une table de la base de données dans laquelle la relecture sera enregistrée.  
   
-5.  Choisissez **Relire les événements selon leur ordre de suivi**ou **Relire les événements en utilisant plusieurs threads**. Le tableau suivant explique la différence entre ces paramètres.  
+5.  Choisissez **Relire les événements selon leur ordre de suivi** ou **Relire les événements en utilisant plusieurs threads**. Le tableau suivant explique la différence entre ces paramètres.  
   
     |Option|Description|  
     |------------|-----------------|  
@@ -50,13 +50,13 @@ La relecture est la possibilité d'ouvrir une trace enregistrée et de la relire
   
 6.  Sélectionnez **Afficher les résultats de relecture** pour consulter la relecture lorsqu’elle a lieu.  
   
-7.  Si vous le souhaitez, cliquez sur l’onglet **Options de relecture avancées**pour configurer les options suivantes :  
+7.  Si vous le souhaitez, cliquez sur l’onglet **Options de relecture avancées** pour configurer les options suivantes :  
   
     -   Pour relire tous les ID de processus de serveur (SPID), sélectionnez **Relire les SPID système**.  
   
     -   Pour limiter la relecture aux processus appartenant à un SPID spécifique, sélectionnez **Relire un SPID uniquement**. Dans la zone **SPID à relire** , tapez le SPID.  
   
-    -   Pour relire les événements qui se sont produits durant une période spécifique, sélectionnez **Limiter la relecture par date et heure**. Sélectionnez une date et une heure pour **Heure de début**et **Heure de fin**afin de spécifier la période à inclure dans la relecture.  
+    -   Pour relire les événements qui se sont produits durant une période spécifique, sélectionnez **Limiter la relecture par date et heure**. Sélectionnez une date et une heure pour **Heure de début** et **Heure de fin** afin de spécifier la période à inclure dans la relecture.  
   
     -   Pour déterminer la manière dont SQL Server gèrera les processus durant la relecture, configurez les **Options du moniteur d’intégrité**.  
   

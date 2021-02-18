@@ -15,12 +15,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 4afa4261a652930862d0d9fd5128ad7e7c1353cc
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 281fd59192deeedbc32d7e543fdb95875929801d
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85732152"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100342082"
 ---
 # <a name="create-element-dta"></a>Create, élément (Assistant Paramétrage de base de données)
 
@@ -52,7 +52,7 @@ Contient des informations sur les index, les statistiques ou les structures de s
 |Relation|Éléments|  
 |------------------|--------------|  
 |**Élément parent**|[Recommendation, élément &#40;Assistant Paramétrage de base de données&#41;](../../tools/dta/recommendation-element-dta.md)|  
-|**Éléments enfants**|[Index, élément &#40;Assistant Paramétrage de base de données&#41;](../../tools/dta/index-element-dta.md)<br /><br /> Élément**Statistics** (pour plus d’informations, consultez [Database Engine Tuning Advisor XML schema](https://schemas.microsoft.com/sqlserver/) (Schéma XML de l’Assistant Paramétrage du moteur de base de données))<br /><br /> Élément**Heap** (pour plus d’informations, consultez [Database Engine Tuning Advisor XML schema](https://schemas.microsoft.com/sqlserver/) (Schéma XML de l’Assistant Paramétrage du moteur de base de données))|  
+|**Éléments enfants**|[Index, élément &#40;Assistant Paramétrage de base de données&#41;](../../tools/dta/index-element-dta.md)<br /><br /> Élément **Statistics** (pour plus d’informations, consultez [Database Engine Tuning Advisor XML schema](https://schemas.microsoft.com/sqlserver/) (Schéma XML de l’Assistant Paramétrage du moteur de base de données))<br /><br /> Élément **Heap** (pour plus d’informations, consultez [Database Engine Tuning Advisor XML schema](https://schemas.microsoft.com/sqlserver/) (Schéma XML de l’Assistant Paramétrage du moteur de base de données))|  
   
 ## <a name="remarks"></a>Notes  
  Cet élément porte le nom **CreateTypecomplexType** dans le schéma XML de l’Assistant Paramétrage du moteur de base de données. Il est utilisé pour créer des index, des statistiques ou des structures de segments pour une configuration spécifiée par l'utilisateur. Ne confondez pas cet élément **Create** avec les autres types d’éléments qui peuvent être utilisés pour créer des vues (**CreateViewType**) ou des partitions (**CreatePType**). Pour plus d’informations sur les autres types d’éléments [Create](https://schemas.microsoft.com/sqlserver/) , consultez **Database Engine Tuning Advisor XML schema** (Schéma XML de l’Assistant Paramétrage du moteur de base de données).  

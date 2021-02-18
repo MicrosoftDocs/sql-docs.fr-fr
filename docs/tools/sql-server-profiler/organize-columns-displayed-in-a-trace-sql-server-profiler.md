@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 2dd83d35238e74908614c2aaed96e3bc8a11180f
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 2727aa7ed5e95881e21eddb73a94ddef97795c08
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85774753"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353413"
 ---
 # <a name="organize-columns-displayed-in-a-trace-sql-server-profiler"></a>Organiser les colonnes affichées dans une trace (SQL Server Profiler)
 
@@ -25,7 +25,7 @@ ms.locfileid: "85774753"
 
  Vous pouvez grouper les colonnes de données dans une trace en sélectionnant **Organiser les colonnes** dans la table de trace ou dans la boîte de dialogue **Propriétés du fichier de suivi**, ou bien quand vous définissez une trace. Le regroupement des colonnes de données vous permet de mieux analyser la sortie de trace du [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] . Pour plus d’informations, consultez [Afficher et analyser des traces avec SQL Server Profiler](../../tools/sql-server-profiler/view-and-analyze-traces-with-sql-server-profiler.md).  
   
- L’option**Organiser les colonnes** vous permet de grouper les événements de trace ou de les grouper et de les agréger en fonction des colonnes de données que vous sélectionnez.  
+ L’option **Organiser les colonnes** vous permet de grouper les événements de trace ou de les grouper et de les agréger en fonction des colonnes de données que vous sélectionnez.  
   
 -   Choisissez plusieurs colonnes de données pour regrouper seulement des événements de trace. Lorsque vous choisissez plusieurs colonnes de données de regroupement, la fenêtre de trace affiche les événements en les groupant en fonction des valeurs de ces colonnes de données. L’exemple suivant indique comment la grille de la fenêtre de trace apparaît si vous choisissez les colonnes de données **Duration** et **StartTime** pour le regroupement. Notez que les valeurs de la colonne **Duration** apparaissent en ordre croissant, suivies de celles de la colonne **StartTime** .  
   

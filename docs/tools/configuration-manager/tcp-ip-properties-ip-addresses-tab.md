@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 4c17ed45-9da7-4bec-bce6-970109fe7365
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 8824963894b70412ff4525f25b40de7ed53ccd3b
-ms.sourcegitcommit: 6d53ecfdc463914f045c20eda96da39dec22acca
+ms.openlocfilehash: 56055b7d3537413398980579342884ab6a58c142
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "88901063"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345083"
 ---
 # <a name="tcpip-properties-ip-addresses-tab"></a>Propriétés TCP/IP (onglet Adresses IP)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
@@ -59,7 +59,7 @@ ms.locfileid: "88901063"
  Le Gestionnaire de configuration SQL Server affiche les adresses IP qui étaient disponibles au moment de l’installation de SQL Server. Les adresses IP disponibles peuvent changer lorsque : des cartes réseau sont ajoutées ou supprimées, une adresse IP affectée dynamiquement arrive à expiration, une structure de réseau est reconfigurée ou un ordinateur est déplacé physiquement, par exemple si un ordinateur portable est connecté au réseau d'un autre bâtiment. Pour changer une adresse IP, modifiez la zone **Adresse IP** , puis redémarrez SQL Server.  
   
 ## <a name="additional-topics-in-books-online"></a>Autres rubriques dans la documentation en ligne  
- Recherchez par exemple les rubriques **Configurer un serveur pour écouter un port TCP spécifique (Gestionnaire de configuration SQL Server)** et **Configurer le moteur de base de données de manière à écouter sur plusieurs ports TCP**dans MSDN.  
+ Recherchez par exemple les rubriques **Configurer un serveur pour écouter un port TCP spécifique (Gestionnaire de configuration SQL Server)** et **Configurer le moteur de base de données de manière à écouter sur plusieurs ports TCP** dans MSDN.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Choix d'un protocole réseau](../../database-engine/configure-windows/enable-or-disable-a-server-network-protocol.md)   

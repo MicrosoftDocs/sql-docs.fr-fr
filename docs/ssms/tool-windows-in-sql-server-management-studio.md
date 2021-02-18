@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: d3be5062-234c-43a8-8d47-cce111dd3c25
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: b75edb6b6a66c4722bda7c8b63615a1523838206
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: a33f5afba4a13d31024547632a16717cc12810e9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92035952"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100344104"
 ---
 # <a name="tool-windows-in-sql-server-management-studio"></a>Fenêtres Outil dans SQL Server Management Studio
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "92035952"
 |[l’Explorateur de modèles](../ssms/template/template-explorer.md)|Créer des requêtes basées sur des modèles existants. Vous pouvez également créer des requêtes personnalisées ou modifier les modèles existants afin qu'ils correspondent à vos scénarios. Cet outil est accessible à partir du menu **Affichage** .|  
 |[Aide dynamique](../ssms/user-assistance-in-sql-server-management-studio.md)|Afficher la liste des rubriques d'aide associées lorsque vous cliquez sur un composant ou que vous tapez du code.|  
   
-Les outils de [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] fonctionnent ensemble. Vous pouvez par exemple :  
+Les outils de [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] fonctionnent ensemble. Par exemple, vous pouvez :  
   
 -   inscrire un serveur à l'aide de l'Explorateur d'objets ;  
   

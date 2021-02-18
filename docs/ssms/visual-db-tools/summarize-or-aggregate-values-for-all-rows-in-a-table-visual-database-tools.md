@@ -14,12 +14,12 @@ ms.assetid: f5af876e-f937-4110-ba09-07999c35a699
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.openlocfilehash: 4c554f781aa8f6c8f6003de76f5dfe0979f77c85
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 88c4808e8418c248f54c9da8966306020fbb72f0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88312925"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350421"
 ---
 # <a name="summarize-or-aggregate-values-for-all-rows-in-a-table-visual-database-tools"></a>Synthétiser ou regrouper des valeurs de toutes les lignes d'une table (Visual Database Tools)
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -59,7 +59,7 @@ Lorsque vous créez une seule valeur d'agrégation pour toutes les lignes d'une 
   
     Le Concepteur de requêtes et de vues assigne automatiquement un alias de colonne à la colonne que vous agrégez. Il est possible de remplacer cet alias par un autre plus significatif. Pour plus d’informations, consultez [Créer des alias de colonnes &#40;Visual Database Tools&#41;](../../ssms/visual-db-tools/create-column-aliases-visual-database-tools.md).  
   
-4.  Dans la colonne de la grille **Group By**, sélectionnez la fonction d’agrégation adéquate, par exemple : **Sum**, **Avg**, **Min**, **Max**, **Count**. Pour n’agréger que des lignes uniques dans le jeu de résultats, choisissez une fonction d’agrégation avec l’option DISTINCT, telle que **Min Distinct**. Évitez des options comme **Group By**, **Expression**ou **Where**, car ces options ne s’appliquent pas quand vous agrégez toutes les lignes.  
+4.  Dans la colonne de la grille **Group By**, sélectionnez la fonction d’agrégation adéquate, par exemple : **Sum**, **Avg**, **Min**, **Max**, **Count**. Pour n’agréger que des lignes uniques dans le jeu de résultats, choisissez une fonction d’agrégation avec l’option DISTINCT, telle que **Min Distinct**. Évitez des options comme **Group By**, **Expression** ou **Where**, car ces options ne s’appliquent pas quand vous agrégez toutes les lignes.  
   
     Le Concepteur de requêtes et de vues remplace le nom de colonne dans l’instruction figurant dans le [volet SQL](../../ssms/visual-db-tools/sql-pane-visual-database-tools.md) par le nom de la fonction d’agrégation que vous spécifiez. Par exemple, l'instruction SQL peut se présenter de la manière suivante :  
   

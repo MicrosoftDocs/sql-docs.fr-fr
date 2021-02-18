@@ -13,12 +13,12 @@ ms.assetid: 28e9630c-dff4-46cc-bb0e-fe77998b6ac2
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.openlocfilehash: 0b758a04f81dffc31844af91933a544960f6ba2d
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 5dd6604f4fb82a502402d74cb15c0a0744f82e0e
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92037521"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350461"
 ---
 # <a name="create-relationships-between-tables-on-a-diagram-visual-database-tools"></a>Créer des relations entre des tables sur un diagramme (Visual Database Tools)
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -32,7 +32,7 @@ Vous pouvez créer des relations entre des colonnes dans différentes tables dan
   
 3.  Deux boîtes de dialogue s’ouvre : **Relation de clé étrangère** et **Tables et colonnes**, cette dernière apparaissant au premier plan.  
   
-4.  Le**nom de relation** est fourni par le système au format FK_*localtable*\_*foreigntable*. Vous pouvez modifier cette valeur.  
+4.  Le **nom de relation** est fourni par le système au format FK_ *localtable*\_*foreigntable*. Vous pouvez modifier cette valeur.  
   
 5.  Vérifiez que la **table de clé primaire** spécifie la bonne table.  
   
@@ -40,7 +40,7 @@ Vous pouvez créer des relations entre des colonnes dans différentes tables dan
   
 7.  Choisissez **OK**.  
   
-    La boîte de dialogue **Relation de clé étrangère** s’ouvre. La**Relation sélectionnée** affiche la relation créée.  
+    La boîte de dialogue **Relation de clé étrangère** s’ouvre. La **Relation sélectionnée** affiche la relation créée.  
   
 8.  Modifiez les propriétés de la relation dans la grille.  
   

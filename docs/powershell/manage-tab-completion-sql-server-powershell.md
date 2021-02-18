@@ -10,12 +10,12 @@ ms.author: maghan
 ms.reviewer: matteot, drskwier
 ms.custom: ''
 ms.date: 10/14/2020
-ms.openlocfilehash: d15d859239aa9ea36f0885218d3469489f28a9b2
-ms.sourcegitcommit: a5398f107599102af7c8cda815d8e5e9a367ce7e
+ms.openlocfilehash: cca82925c95b360bff522bc813798485628d4382
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92006092"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339045"
 ---
 # <a name="manage-tab-completion-with-sql-server-powershell"></a>Gérer la saisie semi-automatique via la touche Tab avec SQL Server PowerShell
 

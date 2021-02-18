@@ -12,12 +12,12 @@ ms.assetid: ef2e5e6a-e2cf-4391-803c-23096dee1a14
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: ec9ef922b8cf9d101ff10446853a1fda9669f547
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9254626ae573ef0b4644ea15f7a7911624326fdd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463730"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345129"
 ---
 # <a name="sql-server-network-configuration"></a>Configuration du réseau SQL Server
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
