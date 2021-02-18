@@ -15,12 +15,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 557501bb02cdb3a0b29c1f9654b5414bff6134b5
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: bb7d075fba09db4de518018f29190cb0c351bf27
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85785977"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100335971"
 ---
 # <a name="file-element-dta"></a>File, élément (Assistant Paramétrage de base de données)
 
@@ -45,7 +45,7 @@ Spécifie le fichier de charge de travail. Une charge de travail est un ensemble
 |--------------------|-----------------|  
 |**Type de données et longueur**|Utilisez le type de données **string** pour spécifier le chemin du répertoire de votre fichier de charge de travail. Par exemple :<br /><br /> `<File>C:\Tuning\tun.sql</File>`<br /><br /> Notez que la limite de longueur est appliquée par le serveur.|  
 |**Valeur par défaut**|Aucun.|  
-|**Occurrence**|Obligatoire une fois si aucun autre type de charge de travail n'est spécifié. Vous devez spécifier un élément enfant **EventString**, **File**ou **Database** pour le parent **Workload** , mais un seul type peut être utilisé. Par exemple, si vous spécifiez une charge de travail avec l’élément **File** , vous ne pouvez pas spécifier une charge de travail avec l’élément **Database** dans le même fichier d’entrée XML.|  
+|**Occurrence**|Obligatoire une fois si aucun autre type de charge de travail n'est spécifié. Vous devez spécifier un élément enfant **EventString**, **File** ou **Database** pour le parent **Workload** , mais un seul type peut être utilisé. Par exemple, si vous spécifiez une charge de travail avec l’élément **File** , vous ne pouvez pas spécifier une charge de travail avec l’élément **Database** dans le même fichier d’entrée XML.|  
   
 ## <a name="element-relationships"></a>Relations entre les éléments  
   

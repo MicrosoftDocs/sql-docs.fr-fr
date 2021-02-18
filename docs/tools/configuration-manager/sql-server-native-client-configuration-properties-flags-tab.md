@@ -12,12 +12,12 @@ ms.assetid: 59af121d-c8b9-4faa-91a1-b664f2c9b441
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: bd8d00c4db1a327ca46ffcae1761faf5af85d32a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 582c05b7dad6d952aeec4a2f9464759069159b2a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97481510"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349604"
 ---
 # <a name="sql-server-native-client-configuration-properties-flags-tab"></a>Propriétés de la configuration de SQL Server Native Client (onglet Indicateurs)
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]

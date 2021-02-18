@@ -21,12 +21,12 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 monikerRange: = azuresqldb-mi-current || >= sql-server-2016
-ms.openlocfilehash: dd46f133a98263a721e0dfb56a7bd5cc25c591cf
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 57de6b3b9d4282155af520ba53d8ec7aff96f194
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97474360"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100346110"
 ---
 # <a name="sql-server-agent-fixed-database-roles"></a>Rôles de base de données fixes de SQL Server Agent
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
@@ -57,9 +57,9 @@ Le tableau suivant récapitule les autorisations de **SQLAgentUserRole** sur les
   
 |Action|Opérateurs|Travaux locaux<br /><br />(travaux lui appartenant uniquement)|Calendriers de travaux<br /><br />(planifications lui appartenant uniquement)|Proxies|  
 |----------|-------------|-----------------------------------|-------------------------------------------|-----------|  
-|Créer/modifier/supprimer|Non |Oui<br /><br />Ne peut pas modifier l’appartenance des travaux.|Oui|Non |  
+|Créer/modifier/supprimer|Non|Oui<br /><br />Ne peut pas modifier l’appartenance des travaux.|Oui|Non |  
 |Afficher la liste (énumérer)|Oui<br /><br />Peut obtenir la liste des opérateurs disponibles à utiliser dans **sp_notify_operator** et dans la boîte de dialogue **Propriétés du travail** de Management Studio.|Oui|Oui|Oui<br /><br />Liste de proxys uniquement disponibles dans la boîte de dialogue **Propriétés de l’étape du travail** de Management Studio.|  
-|Activer/désactiver|Non |Oui|Oui|Non applicable|  
+|Activer/désactiver|Non|Oui|Oui|Non applicable|  
 |Afficher les propriétés|Non |Oui|Oui|Non |  
 |Exécuter/arrêter/démarrer|Non applicable|Oui|Non applicable|Non applicable|  
 |Afficher l’historique des travaux|Non applicable|Oui|Non applicable|Non applicable|  
@@ -102,7 +102,7 @@ Le tableau suivant récapitule les autorisations de **SQLAgentOperatorRole** sur
 |----------|----------|-------------|--------------|--------------------|-----------------|-----------|  
 |Créer/modifier/supprimer|Non|Non |Oui (travaux lui appartenant uniquement)<br /><br />Ne peut pas modifier l’appartenance des travaux.|No|Oui (planifications lui appartenant uniquement)|No|  
 |Afficher la liste (énumérer)|Oui|Oui<br /><br />Peut obtenir la liste des opérateurs disponibles à utiliser dans **sp_notify_operator** et dans la boîte de dialogue **Propriétés du travail** de Management Studio.|Oui|Oui|Oui|Oui|  
-|Activer/désactiver|Non|Non |Oui<br /><br />Les membres de **SQLAgentOperatorRole** peuvent activer ou désactiver les travaux locaux qui ne leur appartiennent pas en utilisant la procédure stockée **sp_update_job** et en attribuant des valeurs aux paramètres **\@enabled** et **\@job_id** (ou **\@job_name**). Si un membre de ce rôle spécifie d'autres paramètres pour cette procédure stockée, l'exécution de cette dernière échoue.|Non |Oui<br /><br />Les membres de **SQLAgentOperatorRole** peuvent activer ou désactiver les planifications qui ne leur appartiennent pas en utilisant la procédure stockée **sp_update_schedule** et en attribuant des valeurs aux paramètres **\@enabled** et **\@schedule_id** (ou **\@name**). Si un membre de ce rôle spécifie d'autres paramètres pour cette procédure stockée, l'exécution de cette dernière échoue.|Non applicable|  
+|Activer/désactiver|Non|Non|Oui<br /><br />Les membres de **SQLAgentOperatorRole** peuvent activer ou désactiver les travaux locaux qui ne leur appartiennent pas en utilisant la procédure stockée **sp_update_job** et en attribuant des valeurs aux paramètres **\@enabled** et **\@job_id** (ou **\@job_name**). Si un membre de ce rôle spécifie d'autres paramètres pour cette procédure stockée, l'exécution de cette dernière échoue.|Non |Oui<br /><br />Les membres de **SQLAgentOperatorRole** peuvent activer ou désactiver les planifications qui ne leur appartiennent pas en utilisant la procédure stockée **sp_update_schedule** et en attribuant des valeurs aux paramètres **\@enabled** et **\@schedule_id** (ou **\@name**). Si un membre de ce rôle spécifie d'autres paramètres pour cette procédure stockée, l'exécution de cette dernière échoue.|Non applicable|  
 |Afficher les propriétés|Oui|Oui|Oui|Oui|Oui|Oui|  
 |Modifier les propriétés|Non|Non |Oui (travaux lui appartenant uniquement)|No|Oui (planifications lui appartenant uniquement)|No|  
 |Exécuter/arrêter/démarrer|Non applicable|Non applicable|Oui|Non|Non applicable|Non applicable|  

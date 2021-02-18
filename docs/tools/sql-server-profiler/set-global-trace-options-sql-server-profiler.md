@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 65f9f3c32da239c7ae6f41dfbe74b7ee8bb9ce41
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 0394038ecd114f30c1a32005e126a4aa20b548a2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85726863"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345813"
 ---
 # <a name="set-global-trace-options-sql-server-profiler"></a>Définir les options globales de trace (SQL Server Profiler)
 
@@ -29,7 +29,7 @@ Cette rubrique décrit la définition des options qui s'appliquent à toutes les
   
 1.  Dans le menu **Outils** , cliquez sur **Options**.  
   
-2.  Dans la boîte de dialogue **Options générales**, cliquez sur **Choisir la police**pour modifier les options d’affichage, puis sur **OK**.  
+2.  Dans la boîte de dialogue **Options générales**, cliquez sur **Choisir la police** pour modifier les options d’affichage, puis sur **OK**.  
   
 3.  Vous pouvez sélectionner l’option **Démarrer le suivi juste après avoir établi la connexion**.  
   
@@ -53,7 +53,7 @@ Cette rubrique décrit la définition des options qui s'appliquent à toutes les
         |**4**|Valeur par défaut.|  
         |**255**|Valeur maximale. Une valeur maximale risque de nuire aux performances d'autres processus.|  
   
-    -   L’option**Délai d’attente du moniteur d’intégrité par défaut (sec)** définit la durée maximale, en secondes, pendant laquelle un thread peut bloquer un autre processus. Le tableau suivant indique les valeurs possibles.  
+    -   L’option **Délai d’attente du moniteur d’intégrité par défaut (sec)** définit la durée maximale, en secondes, pendant laquelle un thread peut bloquer un autre processus. Le tableau suivant indique les valeurs possibles.  
   
         |Valeur|Description|  
         |-----------|-----------------|  
@@ -61,7 +61,7 @@ Cette rubrique décrit la définition des options qui s'appliquent à toutes les
         |**3600**|Valeur par défaut. Autorise les processus de blocage dont la durée n’est pas supérieure à **3600** secondes (une heure).|  
         |**86400**|Valeur maximale. Autorise les processus de blocage dont la durée n’est pas supérieure à **86400** secondes (un jour).|  
   
-    -   L’option**Intervalle d’interrogation du moniteur d’intégrité par défaut (s)** définit la fréquence d’interrogation des threads de relecture des processus de blocage. Le tableau suivant indique les valeurs possibles.  
+    -   L’option **Intervalle d’interrogation du moniteur d’intégrité par défaut (s)** définit la fréquence d’interrogation des threads de relecture des processus de blocage. Le tableau suivant indique les valeurs possibles.  
   
         |Valeur|Description|  
         |-----------|-----------------|  

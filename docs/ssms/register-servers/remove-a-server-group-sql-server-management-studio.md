@@ -17,12 +17,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/07/2017
-ms.openlocfilehash: 2066f5a90f27b892827c1a36034a3f9e57f4f0ea
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: 07a0210f5416d899702046cf257ca2b3892609b8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250456"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341049"
 ---
 # <a name="remove-a-server-group-sql-server-management-studio"></a>Supprimer un groupe de serveurs (SQL Server Management Studio)
 

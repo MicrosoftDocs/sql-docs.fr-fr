@@ -15,12 +15,12 @@ ms.assetid: 20a99dcb-83bd-4aa6-9139-92e2e5ba4887
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.openlocfilehash: a1d8686e1502fab121e49abed19f8f01488d22b7
-ms.sourcegitcommit: fb8724fb99c46ecf3a6d7b02a743af9b590402f0
+ms.openlocfilehash: 11b6399adb28a81f5364e6073a6fb0fde757ffe7
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92439353"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338058"
 ---
 # <a name="how-the-query-and-view-designer-represents-joins-visual-database-tools"></a>Représentation des jointures dans le Concepteur de requêtes et de vues (Visual Database Tools)
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -60,7 +60,7 @@ Dans une instruction SQL, une jointure peut être exprimée de plusieurs façons
   
 Pour spécifier une jointure de tables, vous disposez de plusieurs options de syntaxe :  
   
--   **Qualificateur JOIN pour la clause FROM** .   Les mots clés INNER et OUTER spécifient le type de jointure. Il s'agit de la syntaxe standard du SQL ANSI 92.  
+-   **Qualificateur JOIN pour la clause FROM**.   Les mots clés INNER et OUTER spécifient le type de jointure. Il s'agit de la syntaxe standard du SQL ANSI 92.  
   
     Par exemple, si vous joignez les tables `publishers` et `pub_info` sur la base de la colonne `pub_id` de chaque table, vous obtenez une instruction SQL similaire à la suivante :  
   
@@ -72,7 +72,7 @@ Pour spécifier une jointure de tables, vous disposez de plusieurs options de sy
   
     En cas de jointure externe, le mot INNER est remplacé par les mots LEFT OUTER ou RIGHT OUTER.  
   
--   **Clause WHERE comparant des colonnes des deux tables** .   Une clause WHERE apparaît si la base de données ne prend pas en charge la syntaxe JOIN (ou si vous l'avez entrée vous-même). Si la jointure est créée dans la clause WHERE, les noms des deux tables apparaissent dans la clause FROM.  
+-   **Clause WHERE comparant des colonnes des deux tables**.   Une clause WHERE apparaît si la base de données ne prend pas en charge la syntaxe JOIN (ou si vous l'avez entrée vous-même). Si la jointure est créée dans la clause WHERE, les noms des deux tables apparaissent dans la clause FROM.  
   
     Par exemple, l'instruction suivante joint les tables `publishers` et `pub_info` .  
   

@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 9a1e746b4f418c23e22dafc6c07b211c188b8a13
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 96e420bbca08ca14af89614fa28c35e7b3f78dbb
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85726871"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100345749"
 ---
 # <a name="set-trace-display-defaults-sql-server-profiler"></a>Définir l'affichage par défaut des traces (SQL Server Profiler)
 
@@ -31,9 +31,9 @@ Cette rubrique décrit comment définir les options des outils qui définissent 
   
 2.  Dans la boîte de dialogue **Options générales** , cliquez sur **Choisir la police**.  
   
-3.  Dans la boîte de dialogue **Police** , sélectionnez la **Police**, le **Style de police**et la **Taille** que doit utiliser [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour afficher la trace.  
+3.  Dans la boîte de dialogue **Police** , sélectionnez la **Police**, le **Style de police** et la **Taille** que doit utiliser [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour afficher la trace.  
   
-4.  Cliquez sur **OK**pour appliquer les paramètres et fermer la boîte de dialogue **Police** .  
+4.  Cliquez sur **OK** pour appliquer les paramètres et fermer la boîte de dialogue **Police** .  
   
 5.  Dans la boîte de dialogue **Options générales** , cochez la case **Utiliser des paramètres régionaux pour afficher les valeurs de date et d’heure** pour que [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] affiche les traces en utilisant les paramètres régionaux configurés pour votre système.  
   

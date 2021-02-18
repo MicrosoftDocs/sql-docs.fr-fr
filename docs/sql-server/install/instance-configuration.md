@@ -16,12 +16,12 @@ ms.assetid: 5bf822fc-6dec-4806-a153-e200af28e9a5
 author: cawrites
 ms.author: chadam
 robots: noindex,nofollow
-ms.openlocfilehash: 08b7d5d8c1680be42902fe287c14418b2732f7f9
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 7b678ac25174b75db198739e0e9bc191d29f18d9
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98595442"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336170"
 ---
 # <a name="installation-wizard-help"></a>Aide de l’assistant d’installation
 
@@ -365,11 +365,11 @@ Configurez les paramètres de **tempdb** en fonction de votre charge de travail 
   
 * **Nombre de fichiers** : nombre total de fichiers de données pour **tempdb**. La valeur par défaut est inférieure à 8 ou elle correspond au nombre de cœurs logiques détectés par l’installation. En règle générale, si le nombre de processeurs logiques est inférieur ou égal à 8, utilisez le même nombre de fichiers de données que de processeurs logiques. Si le nombre de processeurs logiques est supérieur à 8, utilisez 8 fichiers de données. Si une contention survient, augmentez le nombre de fichiers de données par des multiples de 4 (jusqu’au nombre de processeurs logiques) jusqu’à ce que la contention atteigne un niveau acceptable ou modifiez la charge de travail/le code.
   
-* **Taille initiale (Mo)**  : la taille initiale en mégaoctets de chaque fichier de données **tempdb**. La valeur par défaut est de 8 Mo (ou de 4 Mo pour [!INCLUDE[ssexpress](../../includes/ssexpress_md.md)]). [!INCLUDE[sssqlv14](../../includes/sssqlv14-md.md)] introduit une taille initiale maximale de fichier de 262 144 Mo (256 Go). [!INCLUDE[sssql15](../../includes/sssql16-md.md)] avait une taille initiale maximale de fichier de 1 024 Mo. Tous les fichiers de données **tempdb** ont la même taille initiale. Étant donné que **tempdb** est recréé à chaque fois que SQL Server démarre ou est basculé, spécifiez une taille proche de la taille requise par votre charge de travail pour une opération normale. Pour optimiser davantage la création de **tempdb** lors du démarrage, activez [initialisation instantanée des fichiers de base de données](../../relational-databases/databases/database-instant-file-initialization.md).  
+* **Taille initiale (Mo)**  : la taille initiale en mégaoctets de chaque fichier de données **tempdb**. La valeur par défaut est de 8 Mo (ou de 4 Mo pour [!INCLUDE[ssexpress](../../includes/ssexpress_md.md)]). [!INCLUDE[sssql17](../../includes/sssql17-md.md)] introduit une taille initiale maximale de fichier de 262 144 Mo (256 Go). [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] avait une taille initiale maximale de fichier de 1 024 Mo. Tous les fichiers de données **tempdb** ont la même taille initiale. Étant donné que **tempdb** est recréé à chaque fois que SQL Server démarre ou est basculé, spécifiez une taille proche de la taille requise par votre charge de travail pour une opération normale. Pour optimiser davantage la création de **tempdb** lors du démarrage, activez [initialisation instantanée des fichiers de base de données](../../relational-databases/databases/database-instant-file-initialization.md).  
   
 * **Taille initiale totale (Mo)** : la taille cumulée de tous les fichiers de données **tempdb**.  
   
-* **Croissance automatique (Mo)** : la quantité d’espace en mégaoctets selon laquelle chaque fichier de données **tempdb** croît automatiquement en cas de manque d’espace. Dans [!INCLUDE[sssql15](../../includes/sssql16-md.md)] et version ultérieure, tous les fichiers de données augmentent en taille en même temps en fonction de la quantité spécifiée dans ce paramètre.  
+* **Croissance automatique (Mo)** : la quantité d’espace en mégaoctets selon laquelle chaque fichier de données **tempdb** croît automatiquement en cas de manque d’espace. Dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] et version ultérieure, tous les fichiers de données augmentent en taille en même temps en fonction de la quantité spécifiée dans ce paramètre.  
   
 * **Croissance automatique totale (Mo)** : taille cumulée de chaque événement de croissance automatique.  
 * **Répertoires de données** : affiche tous les répertoires qui contiennent des fichiers de données **tempdb**. Lorsqu’il existe plusieurs répertoires, les fichiers de données sont placés dans les répertoires de manière alternée. Par exemple, si vous créez 3 répertoires et spécifiez 8 fichiers de données, les fichiers de données 1, 4 et 7 seront créés dans le premier répertoire. Les fichiers de données 2, 5 et 8 seront créés dans le deuxième répertoire. Les fichiers de données 3 et 6 seront créés dans le troisième répertoire.  
@@ -380,7 +380,7 @@ Configurez les paramètres de **tempdb** en fonction de votre charge de travail 
   
 **Fichier journal TempDB** : le nom du fichier journal. Ce fichier est créé automatiquement. Les paramètres suivants s’appliquent uniquement aux fichiers journaux **tempdb** :  
   
-* **Taille initiale (Mo)** : taille initiale du fichier journal **tempdb** . La valeur par défaut est de 8 Mo (ou de 4 Mo pour [!INCLUDE[ssexpress](../../includes/ssexpress_md.md)]). [!INCLUDE[sssqlv14](../../includes/sssqlv14-md.md)] introduit une taille initiale maximale de fichier de 262 144 Mo (256 Go). [!INCLUDE[sssql15](../../includes/sssql16-md.md)] avait une taille initiale maximale de fichier de 1 024 Mo. Étant donné que **tempdb** est recréé à chaque fois que SQL Server démarre ou est basculé, spécifiez une taille proche de la taille requise par votre charge de travail pour une opération normale. Pour optimiser davantage la création de **tempdb** lors du démarrage, activez [initialisation instantanée des fichiers de base de données](../../relational-databases/databases/database-instant-file-initialization.md).  
+* **Taille initiale (Mo)** : taille initiale du fichier journal **tempdb** . La valeur par défaut est de 8 Mo (ou de 4 Mo pour [!INCLUDE[ssexpress](../../includes/ssexpress_md.md)]). [!INCLUDE[sssql17](../../includes/sssql17-md.md)] introduit une taille initiale maximale de fichier de 262 144 Mo (256 Go). [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] avait une taille initiale maximale de fichier de 1 024 Mo. Étant donné que **tempdb** est recréé à chaque fois que SQL Server démarre ou est basculé, spécifiez une taille proche de la taille requise par votre charge de travail pour une opération normale. Pour optimiser davantage la création de **tempdb** lors du démarrage, activez [initialisation instantanée des fichiers de base de données](../../relational-databases/databases/database-instant-file-initialization.md).  
   
   > [!NOTE]
   > **tempdb** utilise une journalisation minimale. Le fichier journal **tempdb** ne peut pas être sauvegardé. Il est recréé à chaque fois que SQL Server démarre ou lorsqu’une instance de cluster bascule.
@@ -420,7 +420,7 @@ The MaxDOP setting applies only to SQL Server 2019 and later.
 
 ## <a name="a-namemaxdop-database-engine-configuration---maxdop-page"></a>Page de configuration du moteur de base de données <a name="maxdop"><a/> - MaxDOP
 
-Le **degré maximal de parallélisme (MaxDOP)** détermine le nombre maximal de processeurs que peut utiliser une seule instruction. [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] introduit la possibilité de configurer cette option lors de l’installation. [!INCLUDE[sql-server-2019](../../includes/sssqlv15-md.md)] détecte également automatiquement le paramètre MaxDOP recommandé pour le serveur en fonction du nombre de cœurs.  
+Le **degré maximal de parallélisme (MaxDOP)** détermine le nombre maximal de processeurs que peut utiliser une seule instruction. [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] introduit la possibilité de configurer cette option lors de l’installation. [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] détecte également automatiquement le paramètre MaxDOP recommandé pour le serveur en fonction du nombre de cœurs.  
 
 Si cette page est ignorée lors de l’installation, la valeur par défaut MaxDOP est la valeur recommandée affichée dans cette page au lieu de la valeur [!INCLUDE[ssde_md](../../includes/ssde_md.md)] par défaut pour les versions précédentes (0). Vous pouvez également configurer manuellement ce paramètre sur cette page et le modifier après l’installation. 
 

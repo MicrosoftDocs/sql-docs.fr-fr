@@ -10,12 +10,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: contperf-fy21q1
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 95c009dda19220fb0f5f5901f1da9d5539ca9e11
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: ddee800cdba3a90414b0ee9d3eb9638b9a343e67
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101949"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351533"
 ---
 # <a name="quickstart-run-simple-python-scripts-with-sql-machine-learning"></a>Démarrage rapide : Exécution de scripts Python simples avec le Machine Learning SQL
 [!INCLUDE [SQL Server 2017 SQL MI](../../includes/applies-to-version/sqlserver2017-asdbmi.md)]

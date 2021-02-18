@@ -14,12 +14,12 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: c16a849f9bff99059415bbd4027d376b3dee717b
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: a379779eab6f06f1dfe7acc8e601fb2da5b5e7d4
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250442"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350558"
 ---
 # <a name="connect-to-a-registered-server-sql-server-management-studio"></a>Se connecter à un serveur inscrit (SQL Server Management Studio)
 

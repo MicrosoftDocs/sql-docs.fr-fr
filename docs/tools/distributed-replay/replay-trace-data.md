@@ -12,12 +12,12 @@ ms.topic: conceptual
 ms.assetid: 19ff5285-fb9d-4fd1-97c4-ec72c311c384
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 1f642b375e4e3331bbac0e49fb878ceecd02cf5e
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 4035d5faf74365939e2696dd83a13b1b512e84b0
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85786022"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349536"
 ---
 # <a name="replay-trace-data"></a>Relire les données de trace
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]

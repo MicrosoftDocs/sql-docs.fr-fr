@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: d5fa4964a2ffb0d62777c25aa0d0c6ef205ee94b
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: 9105e4d7c28b003c191d5a9794717496d07eb0f5
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85789928"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353363"
 ---
 # <a name="replay-requirements"></a>Conditions préalables à la relecture
 
@@ -116,7 +116,7 @@ Pour relire les données de trace avec [!INCLUDE[ssSqlProfiler](../../includes/s
   
 -   Les ID de base de données sur la cible doivent idéalement être identiques à ceux qui sont sur la source. Si ce n’est pas le cas, la mise en correspondance peut être effectuée sur la base du **DatabaseName** s’il est présent dans la trace.  
   
--   La base de données par défaut de chaque connexion d'accès contenue dans la trace doit être définie (sur la cible) en tant que base de données cible relative à la connexion. Par exemple, la trace à relire contient les activités de la connexion **Fred**dans la base de données **Fred_Db** située sur la source. Ainsi, sur la cible, la base de données par défaut de la connexion **Fred**doit être la base de données correspondant à **Fred_Db** (même si le nom de la base de données est différent). Pour définir la base de données par défaut de la connexion, utilisez la procédure stockée **sp_defaultdb** .  
+-   La base de données par défaut de chaque connexion d'accès contenue dans la trace doit être définie (sur la cible) en tant que base de données cible relative à la connexion. Par exemple, la trace à relire contient les activités de la connexion **Fred** dans la base de données **Fred_Db** située sur la source. Ainsi, sur la cible, la base de données par défaut de la connexion **Fred** doit être la base de données correspondant à **Fred_Db** (même si le nom de la base de données est différent). Pour définir la base de données par défaut de la connexion, utilisez la procédure stockée **sp_defaultdb** .  
   
  La relecture d'événements associés à des connexions manquantes ou incorrectes va entraîner des erreurs de relecture, mais l'opération de relecture va se poursuivre.  
   

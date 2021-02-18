@@ -30,12 +30,12 @@ helpviewer_keywords:
 ms.assetid: 45ba1307-33d1-431e-872c-a6e4556f5ff2
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 122aa921cb742d05c46e2d32430c857f4a723dee
-ms.sourcegitcommit: c8e1553ff3fdf295e8dc6ce30d1c454d6fde8088
+ms.openlocfilehash: 1c9f3528ac4f377e379afd26e6583df3fe63fb2b
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "86920895"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353332"
 ---
 # <a name="sqldiag-utility"></a>SQLdiag (utilitaire)
 [!INCLUDE[sqlserver](../includes/applies-to-version/sqlserver.md)]
@@ -134,7 +134,7 @@ sqldiag
   
  Utilisez **+** sans la date (HH:MM:SS seulement) pour spécifier une heure relative à la date et l’heure actuelle. Par exemple, si vous spécifiez **/B +02:00:00**, **SQLdiag** attend deux heures avant de démarrer la collecte d’informations.  
   
- N’insérez pas d’espace entre **+** et la valeur *date_début*spécifiée.  
+ N’insérez pas d’espace entre **+** et la valeur *date_début* spécifiée.  
   
  Si vous spécifiez une heure de début dans le passé, **SQLdiag** modifie cette date de façon à ce que la date et l’heure de début se situent dans le futur. Par exemple, si vous spécifiez **/B 01:00:00** et si l’heure actuelle est 08:00:00, **SQLdiag** remplace la date de début par la date du lendemain.  
   
@@ -149,7 +149,7 @@ sqldiag
   
  Utilisez **+** sans la date (HH:MM:SS seulement) pour spécifier une heure relative à la date et l’heure actuelle. Par exemple si vous spécifiez une heure de début et une heure de fin avec **/B +02:00:00 /E +03:00:00**, **SQLdiag** attend deux heures avant de démarrer la collecte d’informations, puis collecte des informations pendant trois heures avant de s’arrêter et de quitter. Si **/B** n’est pas spécifié, **SQLdiag** débute la collecte de diagnostics immédiatement et l’arrête à la date et l’heure spécifiées par **/E**.  
   
- N’insérez pas d’espace entre **+** et la valeur *heure_début* ou *heure_fin*spécifié.  
+ N’insérez pas d’espace entre **+** et la valeur *heure_début* ou *heure_fin* spécifié.  
   
  Notez que **SQLdiag** utilise l’heure locale sur l’ordinateur sur lequel l’utilitaire s’exécute.  
   
@@ -158,7 +158,7 @@ sqldiag
   
  Chaque *nom_application_SQLdiag* identifie une instance différente de **SQLdiag**. Il n’existe aucune relation entre une instance *nom_application_SQLdiag* et un nom d’instance [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] .  
   
- Vous pouvez utiliser*nom_application_SQLdiag* pour démarrer ou arrêter une instance spécifique du service **SQLdiag** .  
+ Vous pouvez utiliser *nom_application_SQLdiag* pour démarrer ou arrêter une instance spécifique du service **SQLdiag** .  
   
  Par exemple :  
   
@@ -227,7 +227,7 @@ sqldiag
   
  **SQLDIAG START**  
   
- Seul l’argument **/A** , qui spécifie une instance nommée de **SQLdiag**, peut être utilisé avec **START**, **STOP**ou **STOP_ABORT** pour prendre le contrôle d’une instance spécifique du service **SQLdiag** . Par exemple :  
+ Seul l’argument **/A** , qui spécifie une instance nommée de **SQLdiag**, peut être utilisé avec **START**, **STOP** ou **STOP_ABORT** pour prendre le contrôle d’une instance spécifique du service **SQLdiag** . Par exemple :  
   
  **SQLDIAG START /A** _SQLdiag_application_name_  
   
@@ -288,7 +288,7 @@ SQLDIAG STOP /A Instance1
 ```  
   
 > [!NOTE]  
->  **/A** est le seul argument de ligne de commande pouvant être utilisé avec **START**, **STOP**ou **STOP_ABORT**. Si vous devez spécifier une instance nommée de **SQLdiag** avec l’un des verbes de contrôle du service, placez **/A** après le verbe de contrôle sur la ligne de commande, comme illustré dans l’exemple de syntaxe précédent. Lorsqu'ils sont utilisés, les verbes de contrôle doivent impérativement occuper la place du premier argument sur une ligne de commande.  
+>  **/A** est le seul argument de ligne de commande pouvant être utilisé avec **START**, **STOP** ou **STOP_ABORT**. Si vous devez spécifier une instance nommée de **SQLdiag** avec l’un des verbes de contrôle du service, placez **/A** après le verbe de contrôle sur la ligne de commande, comme illustré dans l’exemple de syntaxe précédent. Lorsqu'ils sont utilisés, les verbes de contrôle doivent impérativement occuper la place du premier argument sur une ligne de commande.  
   
  Pour arrêter le service le plus rapidement possible, exécutez **SQLDIAG STOP_ABORT** dans le dossier de démarrage de l’utilitaire. Cette commande interrompt toute collecte de diagnostics en cours d'exécution sans attendre que cette opération se termine.  
   
@@ -302,7 +302,7 @@ SQLDIAG STOP /A Instance1
 sqldiag /B +01:00:00 /E +03:00:00  
 ```  
   
- Quand vous spécifiez une valeur *heure_début* relative, **SQLdiag** commence à une heure qui est cohérente par rapport à la date et l’heure actuelles. Quand vous spécifiez une valeur *heure_fin* relative, **SQLdiag** se termine à une heure qui est chronologiquement cohérente par rapport à la valeur *heure_début*spécifiée. Si les dates ou heures de démarrage et d’arrêt que vous spécifiez se situent dans le passé, **SQLdiag** change la date de démarrage afin que la date et l’heure de démarrage se situent dans le futur.  
+ Quand vous spécifiez une valeur *heure_début* relative, **SQLdiag** commence à une heure qui est cohérente par rapport à la date et l’heure actuelles. Quand vous spécifiez une valeur *heure_fin* relative, **SQLdiag** se termine à une heure qui est chronologiquement cohérente par rapport à la valeur *heure_début* spécifiée. Si les dates ou heures de démarrage et d’arrêt que vous spécifiez se situent dans le passé, **SQLdiag** change la date de démarrage afin que la date et l’heure de démarrage se situent dans le futur.  
   
  Ceci présente des implications importantes sur les dates de démarrage et d'arrêt que vous choisissez. Prenons l’exemple suivant :  
   
@@ -352,7 +352,7 @@ SQLDIAG START /A Instance1
   
  Vous pouvez également utiliser la commande **net start** pour démarrer le service SQLDIAG.  
   
- Quand il est redémarré, **SQLdiag**remplace le contenu du dossier de sortie actif. Pour éviter cela, spécifiez **/N 2** sur la ligne de commande pour renommer le dossier de sortie au redémarrage de l’utilitaire.  
+ Quand il est redémarré, **SQLdiag** remplace le contenu du dossier de sortie actif. Pour éviter cela, spécifiez **/N 2** sur la ligne de commande pour renommer le dossier de sortie au redémarrage de l’utilitaire.  
   
  L’interruption du service **SQLdiag** n’est pas prise en charge.  
   

@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 01/19/2017
 monikerRange: = azuresqldb-mi-current || >= sql-server-2016
-ms.openlocfilehash: d96a2e1340903a615aafdaf8120fa9bdb263243d
-ms.sourcegitcommit: 38e055eda82d293bf5fe9db14549666cf0d0f3c0
+ms.openlocfilehash: f747c905370de7dc35b60fbe566f17e6d80d1ce3
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99250983"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350614"
 ---
 # <a name="set-the-sql-server-connection-for-the-sql-server-agent-service"></a>Définir la connexion SQL Server pour le service SQL Server Agent
 

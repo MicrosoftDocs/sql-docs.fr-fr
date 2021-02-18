@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: 13e95046-0e76-4604-b561-d1a74dd824d7
 ms.author: mikeray
 author: MikeRayMSFT
-ms.openlocfilehash: b4f0e4ed75e992095cff1f9ae315e3036ba7ef90
-ms.sourcegitcommit: 108bc8e576a116b261c1cc8e4f55d0e0713d402c
+ms.openlocfilehash: c0d0da7b2f74eb9dacdef390ede2cdd34d0356fa
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98766223"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336028"
 ---
 # <a name="maximum-capacity-specifications-for-sql-server"></a>Spécifications de capacité maximale pour SQL Server
 
@@ -56,7 +56,7 @@ Taille maximale et nombre maximal des différents objets définis dans les bases
 |Octets par clé étrangère|900||
 |Octets par clé primaire|900||
 |Octets par ligne|8,060|[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] prend en charge le stockage avec dépassement de ligne, qui permet d’envoyer hors ligne les colonnes de longueur variable. Seule une racine de 24 octets est stockée dans l’enregistrement principal pour les colonnes de longueur variable envoyées hors ligne. Cette fonctionnalité autorise une limite supérieure à celle des versions précédentes de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Pour plus d’informations, consultez [Prise en charge des lignes de grande taille](../relational-databases/pages-and-extents-architecture-guide.md#large-row-support).|
-|Octets par ligne dans les tables optimisées en mémoire|8,060|À compter de [!INCLUDE[ssSQL15](../includes/sssql16-md.md)] , les tables optimisées en mémoire prennent en charge le stockage hors ligne. Les colonnes de longueur variable sont envoyées hors ligne si la taille maximale de toutes les colonnes dans la table dépasse 8060 octets. Cette action est une décision prise au moment de la compilation. Seule une référence de huit octets est stockée dans la ligne pour les colonnes stockées hors ligne. Pour plus d’informations, consultez [Taille de la table et des lignes dans les tables optimisées en mémoire](../relational-databases/in-memory-oltp/table-and-row-size-in-memory-optimized-tables.md).|
+|Octets par ligne dans les tables optimisées en mémoire|8,060|À compter de [!INCLUDE[sssql15-md](../includes/sssql16-md.md)] , les tables optimisées en mémoire prennent en charge le stockage hors ligne. Les colonnes de longueur variable sont envoyées hors ligne si la taille maximale de toutes les colonnes dans la table dépasse 8060 octets. Cette action est une décision prise au moment de la compilation. Seule une référence de huit octets est stockée dans la ligne pour les colonnes stockées hors ligne. Pour plus d’informations, consultez [Taille de la table et des lignes dans les tables optimisées en mémoire](../relational-databases/in-memory-oltp/table-and-row-size-in-memory-optimized-tables.md).|
 |Octets dans le texte source d'une procédure stockée|Taille de lot inférieure ou 250 Mo||
 |Octets par colonne `varchar(max) `, `varbinary(max)`, `xml`, `text` ou `image`|2^31-1||
 |Caractères par colonne `ntext` ou `nvarchar(max)`|2^30-1||
@@ -83,7 +83,7 @@ Taille maximale et nombre maximal des différents objets définis dans les bases
 |Références de table de clé étrangère par table|Sortantes = 253. Entrantes = 10 000.|Pour connaître les restrictions associées, consultez [Create Foreign Key Relationships](../relational-databases/tables/create-foreign-key-relationships.md).|
 |Longueur d'identificateur (en caractères)|128||
 |Instances par ordinateur|50 instances sur un serveur autonome.<br /><br />25 instances de cluster de basculement lors de l’utilisation d’un disque de cluster partagé comme stockage.<br/><br/>50 instances de cluster de basculement avec des partages de fichiers SMB comme option de stockage.||
-|Index par table optimisée en mémoire|999 à partir de [!INCLUDE[ssSQL17](../includes/ssSQL17-md.md)] et dans [!INCLUDE[ssSDSFull](../includes/ssSDSFull-md.md)]<br/>8 dans [!INCLUDE[ssSQL14](../includes/ssSQL14-md.md)] et [!INCLUDE[ssSQL15](../includes/sssql16-md.md)]||
+|Index par table optimisée en mémoire|999 à partir de [!INCLUDE[ssSQL17](../includes/ssSQL17-md.md)] et dans [!INCLUDE[ssSDSFull](../includes/ssSDSFull-md.md)]<br/>8 dans [!INCLUDE[ssSQL14](../includes/ssSQL14-md.md)] et [!INCLUDE[sssql15-md](../includes/sssql16-md.md)]||
 |Longueur d’une chaîne contenant des instructions SQL (taille du traitement)|65 536 (Taille de paquet réseau)|La taille des paquets réseau représente la taille des paquets TDS (Tabular Data Stream) utilisés pour la communication entre des applications et le [!INCLUDE[ssDE](../includes/ssde-md.md)] relationnel. La taille par défaut s'élève à 4 Ko ; elle est contrôlée par l'option de configuration Taille du paquet réseau.|
 |Verrous par connexion|Verrous maximaux par serveur||
 |Verrous par instance de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]|Limité uniquement par la mémoire|Cette valeur s’applique à l’allocation de verrouillage statique. Les verrous dynamiques sont uniquement limités par la mémoire.|

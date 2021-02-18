@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.prod: sql
 ms.technology: machine-learning
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||=azuresqldb-mi-current||=azuresqldb-current'
-ms.openlocfilehash: 466abc8687a7f325d216a6b5b6545bc516b2b34d
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: f9c803760a3ee098e841cbc716cde8ac8a2fd648
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101989"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100349100"
 ---
 # <a name="plot-histograms-in-python"></a>Création d’histogrammes en Python 
 [!INCLUDE[SQL Server SQL DB SQL MI](../../includes/applies-to-version/sql-asdb-asdbmi.md)]

@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: 6a428023-e3cc-4626-a88a-4c13ccbd7db0
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 24cf362c711abd450533b218c699fc7f2bc1dd18
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: c9313877cac9c4e22fdaa4234fc40f0701649934
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91987255"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100271736"
 ---
 # <a name="whats-new-in-sql-server-2016"></a>Nouveautés de SQL Server 2016
 [!INCLUDE [SQL Server 2016](../includes/applies-to-version/sqlserver2016.md)]    
@@ -33,7 +33,7 @@ Cette page offre une synthèse ainsi que des liens vers des informations plus d�
 ![SQL Server 2016](../sql-server/media/sql-server-2016.png)
 
  **Essayez SQL Server aujourd’hui !** 
-- Téléchargez **gratuitement** [**la dernière version de SQL Server !** ](https://www.microsoft.com/sql-server/sql-server-downloads).
+- Téléchargez **gratuitement** [**la dernière version de SQL Server !**](https://www.microsoft.com/sql-server/sql-server-downloads).
 - Téléchargez la dernière version de [SQL Server Management Studio (SSMS)](../ssms/download-sql-server-management-studio-ssms.md). 
 - Vous avez un compte Azure ? Faites tourner une [machine virtuelle sur laquelle SQL Server 2016 est déjà installé](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftsqlserver.sql2017-ws2019?tab=Overview).
 

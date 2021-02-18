@@ -11,12 +11,12 @@ ms.assetid: 3941a2f0-0d0c-4d1a-8618-7a6a7751beac
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.openlocfilehash: e07f558163cd7b028f318d3df66c4a1ae16af84b
-ms.sourcegitcommit: a41e1f4199785a2b8019a419a1f3dcdc15571044
+ms.openlocfilehash: 375f351c1d80e957fba29f81b9d2afc423c222ad
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91988046"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336093"
 ---
 # <a name="uninstall-power-pivot-for-sharepoint"></a>Désinstaller Power Pivot pour SharePoint
 [!INCLUDE [SQL Server Windows Only - ASDBMI ](../../includes/applies-to-version/sql-windows-only-asdbmi.md)]
@@ -83,7 +83,7 @@ ms.locfileid: "91988046"
   
 2.  Sélectionnez **Supprimer des fonctionnalités, des services, des applications et des solutions** , puis cliquez sur **OK**.  
   
-3.  Affichez éventuellement la fenêtre en plein écran. Vous devez voir une barre d'icônes en bas de la fenêtre qui comprend les commandes **Valider**, **Exécuter**et **Quitter** .  
+3.  Affichez éventuellement la fenêtre en plein écran. Vous devez voir une barre d'icônes en bas de la fenêtre qui comprend les commandes **Valider**, **Exécuter** et **Quitter** .  
   
 4.  Passez en revue chaque action dans la liste des tâches afin de comprendre le rôle de chacune d'elles.  
   

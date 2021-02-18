@@ -21,12 +21,12 @@ ms.assetid: bd0ca68e-6f69-42dd-bcb5-ce511673769c
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.openlocfilehash: 22a49dc4a6d4dbff64a0468c4caae5cadc4b16a1
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 129de2adfa1b3b033551d3b41db4eac8f34891fe
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88479951"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338773"
 ---
 # <a name="visual-database-tool-designers"></a>Concepteurs Visual Database Tools
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

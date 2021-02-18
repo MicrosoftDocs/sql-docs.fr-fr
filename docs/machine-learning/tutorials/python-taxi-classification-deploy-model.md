@@ -10,12 +10,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||>=azuresqldb-mi-current'
-ms.openlocfilehash: 4e101a017197d83217a574ca6521dd60328f536a
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 39717778ca2456d77b6ceff4ba72e8de06dac75f
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470330"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339706"
 ---
 # <a name="python-tutorial-run-predictions-using-python-embedded-in-a-stored-procedure"></a>Tutoriel Python : Exécuter des prédictions avec un script Python incorporé dans une procédure stockée
 [!INCLUDE [SQL Server 2017 SQL MI](../../includes/applies-to-version/sqlserver2017-asdbmi.md)]

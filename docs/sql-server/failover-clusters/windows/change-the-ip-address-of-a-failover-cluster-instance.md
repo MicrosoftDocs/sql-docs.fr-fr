@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: b685f400-cbfe-4c5d-a070-227a1123dae4
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 96dfbacbdc162768b13a56c7a36c61eabecee79a
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: c9c13206c93ca9a726b067091c130e39826571f8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97642791"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100353940"
 ---
 # <a name="change-the-ip-address-of-a-failover-cluster-instance"></a>Modifier l'adresse IP d'une instance de cluster de basculement
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "97642791"
 -   **Avant de commencer :**  [Sécurité](#Security)  
   
 ##  <a name="before-you-begin"></a><a name="BeforeYouBegin"></a> Avant de commencer  
- Avant de commencer, consultez la rubrique suivante dans la documentation en ligne de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] : [Before Installing Failover Clustering](../../../sql-server/failover-clusters/install/before-installing-failover-clustering.md).  
+ Avant de commencer, consultez la rubrique [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Avant l’installation du clustering de basculement [dans la documentation en ligne de](../../../sql-server/failover-clusters/install/before-installing-failover-clustering.md).  
   
 ###  <a name="security"></a><a name="Security"></a> Sécurité  
   

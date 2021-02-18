@@ -13,16 +13,16 @@ helpviewer_keywords:
 ms.assetid: fc2fc949-746f-40c7-b5d4-3fd51ccfbd7b
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: bd11ff436649d4e871c09fb2ebba85f56a83ccc4
-ms.sourcegitcommit: 5a1ed81749800c33059dac91b0e18bd8bb3081b1
+ms.openlocfilehash: 1e410b42c5e53b479f28febee1ccd716d68437d8
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "96127644"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354014"
 ---
 # <a name="management-of-logins-and-jobs-after-role-switching-sql-server"></a>Gestion des connexions et des travaux après un basculement de rôle (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
-  Lors du déploiement d’une solution de récupération d’urgence ou haute disponibilité pour une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , il est important de reproduire les informations importantes stockées pour la base de données dans les bases de données **master** ou **msdb** . En général, les informations importantes incluent les travaux de la base de données primaire/principale et les connexions des utilisateurs ou des processus qui doivent se connecter à la base de données. Vous devez dupliquer ces informations dans une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui héberge une base de données secondaire/miroir. Si possible, il est préférable de reproduire, par programmation, l'information au niveau de la nouvelle base de données primaire/principale, après le basculement des rôles.  
+   Lors du déploiement d’une solution de récupération d’urgence ou haute disponibilité pour une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], il est important de reproduire les informations importantes stockées pour la base de données dans les bases de données **master** ou **msdb**. En général, les informations importantes incluent les travaux de la base de données primaire/principale et les connexions des utilisateurs ou des processus qui doivent se connecter à la base de données. Vous devez dupliquer ces informations dans une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui héberge une base de données secondaire/miroir. Si possible, il est préférable de reproduire, par programmation, l'information au niveau de la nouvelle base de données primaire/principale, après le basculement des rôles.  
   
 ## <a name="logins"></a>Connexions  
  Sur chaque instance de serveur qui héberge une copie de la base de données, vous devez reproduire les connexions qui sont autorisées à accéder à la base de données principale. Lorsque le rôle primaire/principal bascule, seuls les utilisateurs dont les connexions existent sur la nouvelle instance de serveur primaire/principal peuvent accéder à la nouvelle base de données primaire/principale. Les utilisateurs dont les connexions ne sont pas définies sur la nouvelle instance de serveur primaire/principal sont orphelins et ne peuvent pas accéder à la base de données.  

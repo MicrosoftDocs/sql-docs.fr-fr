@@ -10,12 +10,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||>=azuresqldb-mi-current'
-ms.openlocfilehash: db28a38415d62abe9bab3540c47567a92df25104
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 630a5db712e3bd6e288c0ac12ca767a07c3ac4ef
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470350"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100339708"
 ---
 # <a name="python-tutorial-create-data-features-using-t-sql"></a>Tutoriel Python : Créer des caractéristiques de données à l’aide de T-SQL
 [!INCLUDE [SQL Server 2017 SQL MI](../../includes/applies-to-version/sqlserver2017-asdbmi.md)]

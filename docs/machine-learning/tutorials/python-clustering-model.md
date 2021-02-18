@@ -11,12 +11,12 @@ author: garyericson
 ms.author: garye
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2017||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: dc119f4afe15606dc0d97e69abf0e3f055235bd7
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: ac99e5442054161f87d67244f039224e61a58b3a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101954"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100351490"
 ---
 # <a name="python-tutorial-categorizing-customers-using-k-means-clustering-with-sql-machine-learning"></a>Tutoriel Python : Catégoriser des clients à l’aide de k-moyennes avec l’apprentissage automatique SQL
 [!INCLUDE [SQL Server 2017 SQL MI](../../includes/applies-to-version/sqlserver2017-asdbmi.md)]

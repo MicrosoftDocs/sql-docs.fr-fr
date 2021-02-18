@@ -10,12 +10,12 @@ author: garyericson
 ms.author: garye
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: 540804d2a35758627b24586ec8c29ca2dbab6e5f
-ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
+ms.openlocfilehash: eaecfcf9cd4944d48099a5bf1582e8144c1f62e1
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98101922"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272990"
 ---
 # <a name="quickstart-run-simple-r-scripts-with-sql-machine-learning"></a>Démarrage rapide : Exécuter des scripts R simples avec le Machine Learning SQL
 [!INCLUDE [SQL Server 2016 SQL MI](../../includes/applies-to-version/sqlserver2016-asdbmi.md)]

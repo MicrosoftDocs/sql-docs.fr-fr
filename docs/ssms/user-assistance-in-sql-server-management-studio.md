@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: 3c33a474-e507-4712-86fe-ae40e8370319
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: 26b2ecf32bb6c7a683f0321f342258b44ff4d214
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: c1d8ad8f855a2888dc1a37fd985f2b1a3bfc0357
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88417835"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338789"
 ---
 # <a name="user-assistance-in-sql-server-management-studio"></a>Assistance utilisateur de SQL Server Management Studio
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -32,7 +32,7 @@ Les onglets **Sommaire** et **Index** offrent des fonctionnalités et une interf
   
     Fournit un ensemble hiérarchique de pages liées qui contiennent des rubriques associées aux tâches [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] courantes. Le contenu est classé par composant et tâche (rubriques Réplication, par exemple), etc.  
   
--   **Recherche**  
+-   **Rechercher**  
   
     Recherche des rubriques avec ou sans filtres prédéfinis. L’option Rechercher dans [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] se trouve dans une page avec onglets distincte. Les utilisateurs peuvent affiner leurs recherches à l'aide d'un ou de plusieurs filtres prédéfinis (type de rubrique, langage ou technologie). Par défaut, l'option Rechercher n'utilise aucun des filtres prédéfinis, et seules les rubriques des collections installées font l'objet des recherches.  
   

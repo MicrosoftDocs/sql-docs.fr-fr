@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 59f76b28-ba78-4a1a-b5d5-8b581f30114d
 author: markingmyname
 ms.author: maghan
-ms.openlocfilehash: abc9fccd9c81f26b872a991c05a2d653384ad123
-ms.sourcegitcommit: 22dacedeb6e8721e7cdb6279a946d4002cfb5da3
+ms.openlocfilehash: 0d4b3a2e75a00e3688ec53c5e64e6ab7727375a2
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92036903"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100341040"
 ---
 # <a name="registered-servers-f1-help"></a>Serveurs inscrits – Aide (F1)
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

@@ -12,12 +12,12 @@ author: markingmyname
 ms.author: maghan
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: c806d55867c63c273bd528ecafc4419d31fde7e0
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: b95380a4a99e525cc97588b2051d1812c6e2d34a
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85722635"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100338643"
 ---
 # <a name="view-and-analyze-traces-with-sql-server-profiler"></a>Afficher et analyser des traces avec SQL Server Profiler
 
@@ -33,7 +33,7 @@ Utilisez [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour affi
  Vous pouvez configurer le format d'horodatage du [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour vous aider dans l'analyse des traces.  
   
 ## <a name="troubleshooting-data"></a>Dépannage de problèmes liés aux données  
- Le [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)]vous permet de résoudre des problèmes de données en regroupant les traces ou les fichiers de traces dans quatre colonnes : **Duration**, **CPU**, **Reads**et **Writes** . Le genre de données que vous pourriez être amené à réparer pourrait être une requête qui fonctionne mal ou qui a un nombre exceptionnellement élevé de lectures logiques.  
+ Le [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)]vous permet de résoudre des problèmes de données en regroupant les traces ou les fichiers de traces dans quatre colonnes : **Duration**, **CPU**, **Reads** et **Writes** . Le genre de données que vous pourriez être amené à réparer pourrait être une requête qui fonctionne mal ou qui a un nombre exceptionnellement élevé de lectures logiques.  
   
  Vous pouvez trouver des informations complémentaires en enregistrant les traces dans des tables et en utilisant [!INCLUDE[tsql](../../includes/tsql-md.md)] pour interroger les données d'événement. Par exemple, pour déterminer quels événements **SQL:BatchCompleted** ont présenté des délais d'attente excessifs, exécutez :  
   
@@ -50,14 +50,14 @@ AND     CPU < (Duration * 1000)
 ## <a name="displaying-object-names-when-viewing-traces"></a>Affichage de noms d'objets durant l'affichage des traces  
  Pour afficher le nom d’un objet au lieu de son identificateur (**Object ID**), vous devez capturer les colonnes **Server Name** et **Database ID** en plus de la colonne **Object Name** .  
   
- Si vous choisissez de regrouper les traces par **Object ID** , assurez-vous de les regrouper d’abord par **Server Name** et par **Database ID** , puis par **Object ID** . De même, si vous choisissez de regrouper les traces par **Index ID** , assurez-vous de les regrouper d’abord par **Server Name**, **Database ID**et **Object ID** , puis par **Index ID** . Cet ordre doit être respecté parce que les ID d'objet et d'index ne sont pas les mêmes sur tous les serveurs et dans toutes les bases de données (et un objet n'a pas toujours le même ID d'index).  
+ Si vous choisissez de regrouper les traces par **Object ID** , assurez-vous de les regrouper d’abord par **Server Name** et par **Database ID** , puis par **Object ID** . De même, si vous choisissez de regrouper les traces par **Index ID** , assurez-vous de les regrouper d’abord par **Server Name**, **Database ID** et **Object ID** , puis par **Index ID** . Cet ordre doit être respecté parce que les ID d'objet et d'index ne sont pas les mêmes sur tous les serveurs et dans toutes les bases de données (et un objet n'a pas toujours le même ID d'index).  
   
 ## <a name="finding-specific-events-within-a-trace"></a>Détection d'événements spécifiques dans une trace  
  Pour rechercher des événements dans une trace et les regrouper, exécutez les étapes suivantes :  
   
 1.  Créez votre trace.  
   
-    -   Lorsque vous définissez la trace, capturez les colonnes de données **Event Class**, **ClientProcessID**et **Start Time** en plus des autres colonnes de données que vous souhaitez capturer. Pour plus d’informations, consultez [Créer une trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/create-a-trace-sql-server-profiler.md).  
+    -   Lorsque vous définissez la trace, capturez les colonnes de données **Event Class**, **ClientProcessID** et **Start Time** en plus des autres colonnes de données que vous souhaitez capturer. Pour plus d’informations, consultez [Créer une trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/create-a-trace-sql-server-profiler.md).  
   
     -   Regroupez les données capturées sur la colonne **Event Class**, puis capturez la trace dans un fichier ou une table. Pour regrouper les données capturées, cliquez sur **Organiser les colonnes** dans l'onglet **Sélection des événements** de la boîte de dialogue Propriétés de la trace. Pour plus d’informations, consultez [Organiser les colonnes affichées dans une trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/organize-columns-displayed-in-a-trace-sql-server-profiler.md).  
   
@@ -71,9 +71,9 @@ AND     CPU < (Duration * 1000)
   
 3.  Affichez les événements en contexte.  
   
-    -   Affichez les propriétés de la trace, et regroupez-les par **ClientProcessID**plutôt que par **Event Class** .  
+    -   Affichez les propriétés de la trace, et regroupez-les par **ClientProcessID** plutôt que par **Event Class** .  
   
-    -   Développez les nœuds de chaque ID de processus client que vous souhaitez afficher. Parcourez la trace manuellement ou utilisez l’option **Rechercher** jusqu’à ce que vous trouviez les valeurs **Start Time**précédemment notées pour les événements cibles. Les événements sont affichés dans l'ordre chronologique avec les autres événements relatifs à chaque ID de processus client sélectionné. Par exemple, les événements **Interblocage** et **Interblocage Chain**, capturés dans la trace, se trouveront immédiatement après les événements **SQL:BatchStarting**events within the expeted client process ID.  
+    -   Développez les nœuds de chaque ID de processus client que vous souhaitez afficher. Parcourez la trace manuellement ou utilisez l’option **Rechercher** jusqu’à ce que vous trouviez les valeurs **Start Time** précédemment notées pour les événements cibles. Les événements sont affichés dans l'ordre chronologique avec les autres événements relatifs à chaque ID de processus client sélectionné. Par exemple, les événements **Interblocage** et **Interblocage Chain**, capturés dans la trace, se trouveront immédiatement après les événements **SQL:BatchStarting** events within the expeted client process ID.  
   
  La même technique peut être utilisée pour retrouver des événements regroupés. Une fois que vous avez trouvé les événements recherchés, regroupez-les par **ClientProcessID**, **ApplicationName**, ou autre classe d’événements pour afficher les activités qui y sont liées dans l’ordre chronologique.  
   

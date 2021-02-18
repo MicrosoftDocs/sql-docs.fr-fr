@@ -21,12 +21,12 @@ ms.assetid: 1e07cf56-b4b7-4c49-8ddd-c276812a7148
 author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
-ms.openlocfilehash: 6e02a61bd221c35cac2dfacd51602364035c2ba4
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: cdaf2096589b5a1b16753c79c7eac6cda08fff68
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88422943"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350442"
 ---
 # <a name="use-having-and-where-clauses-in-the-same-query-visual-database-tools"></a>Utiliser les clauses HAVING et WHERE dans la même requête (Visual Database Tools)
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
