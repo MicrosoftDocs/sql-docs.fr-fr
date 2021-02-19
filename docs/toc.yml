@@ -397,7 +397,7 @@ items:
                 href: big-data-cluster/notebooks-tutorial-spark.md
               - name: Répertorier les notebooks d’opérations
                 href: big-data-cluster/cluster-manage-notebooks.md
-          - name: Monitor
+          - name: Superviser
             items:
               - name: Analyser avec Azure Data Studio
                 href: big-data-cluster/cluster-monitor-ads.md
@@ -443,6 +443,8 @@ items:
                 href: big-data-cluster/spark-hive-tools-vscode.md
               - name: Utiliser le serveur d’historique Spark
                 href: big-data-cluster/spark-history-server.md
+              - name: Gérer des bibliothèques
+                href: big-data-cluster/spark-install-packages.md
           - name: Dépanner
             items:
               - name: Résoudre les problèmes liés à Kubernetes
@@ -521,6 +523,8 @@ items:
                     href: azdata/reference/reference-azdata-bdc-endpoint.md
                   - name: bdc gateway
                     href: azdata/reference/reference-azdata-bdc-gateway.md
+                  - name: bdc gateway settings
+                    href: azdata/reference/reference-azdata-bdc-gateway-settings.md
                   - name: bdc gateway status
                     href: azdata/reference/reference-azdata-bdc-gateway-status.md
                   - name: bdc hdfs
@@ -531,6 +535,8 @@ items:
                     href: azdata/reference/reference-azdata-bdc-hdfs-key.md
                   - name: bdc hdfs mount
                     href: azdata/reference/reference-azdata-bdc-hdfs-mount.md
+                  - name: bdc hdfs settings
+                    href: azdata/reference/reference-azdata-bdc-hdfs-settings.md
                   - name: bdc hdfs status
                     href: azdata/reference/reference-azdata-bdc-hdfs-status.md
                   - name: bdc settings
@@ -541,12 +547,16 @@ items:
                     href: azdata/reference/reference-azdata-bdc-spark-batch.md
                   - name: bdc spark session
                     href: azdata/reference/reference-azdata-bdc-spark-session.md
+                  - name: bdc spark settings
+                    href: azdata/reference/reference-azdata-bdc-spark-settings.md
                   - name: bdc spark statement
                     href: azdata/reference/reference-azdata-bdc-spark-statement.md
                   - name: bdc spark status
                     href: azdata/reference/reference-azdata-bdc-spark-status.md
                   - name: bdc sql
                     href: azdata/reference/reference-azdata-bdc-sql.md
+                  - name: bdc sql settings
+                    href: azdata/reference/reference-azdata-bdc-sql-settings.md
                   - name: bdc status
                     href: azdata/reference/reference-azdata-bdc-status.md
   - name: Continuité de l’activité
@@ -8879,6 +8889,8 @@ items:
                 href: ssms/configure-login-auditing-sql-server-management-studio.md
               - name: Autoriser la copie sur la fenêtre Rechercher et remplacer
                 href: ssms/troubleshoot/enable-copying-find-replace-window.md
+              - name: Activer les tabulations pour se déplacer
+                href: ssms/troubleshoot/workaround-move-tabs.md
               - name: Dépanner
                 items:
                   - name: Obtenir l’image mémoire complète
