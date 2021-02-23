@@ -14,12 +14,12 @@ helpviewer_keywords:
 ms.assetid: a655225d-8c54-4b30-95fd-31f588167899
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 87294a8d20bf1c297c1629509a85cde7493b6ef5
-ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
+ms.openlocfilehash: 2c40647cad7568789a2909adf79d8cb12508532d
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99076607"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100341154"
 ---
 # <a name="before-installing-failover-clustering"></a>Avant l'installation du clustering de basculement
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -40,19 +40,19 @@ ms.locfileid: "99076607"
   
 ##  <a name="best-practices"></a><a name="BestPractices"></a> Bonnes pratiques  
   
--   Passez en revue les [Notes de publication](/previous-versions/sql/sql-server-15/dn169381(v=sql.15)) de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]  
+-   Passez en revue les [[!INCLUDE[SQL Server 2019](../../../includes/sssql19-md.md)]notes de publication](../../sql-server-version-15-release-notes.md).
   
--   Installez les logiciels requis. Avant d'exécuter l'installation ou la mise à niveau vers [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)], installez les composants requis suivants pour réduire la durée d'installation. Vous pouvez installer les logiciels requis sur chaque nœud de cluster de basculement, puis redémarrer les nœuds une fois avant d'exécuter le programme d'installation.  
+-   Installez les logiciels requis. Avant d’exécuter le programme d’installation pour effectuer une installation ou une mise à niveau, installez les prérequis suivants pour réduire la durée d’installation. Vous pouvez installer les logiciels requis sur chaque nœud de cluster de basculement, puis redémarrer les nœuds une fois avant d'exécuter le programme d'installation.  
   
-    -   Windows PowerShell n'est plus installé par le programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Windows PowerShell est un composant requis pour l’installation des composants du [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)][!INCLUDE[ssDE](../../../includes/ssde-md.md)] et de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)]. Si Windows PowerShell n’est pas présent sur votre ordinateur, vous pouvez l’activer en suivant les instructions de la page [Windows Management Framework](/powershell/scripting/windows-powershell/wmf/overview) .  
+    -   Windows PowerShell n'est plus installé par le programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Windows PowerShell est un composant requis pour l’installation des composants du [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)][!INCLUDE[ssDE](../../../includes/ssde-md.md)] et de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)]. Si Windows PowerShell n’est pas présent sur votre ordinateur, vous pouvez l’activer en suivant les instructions de la page [Windows Management Framework](/powershell/scripting/windows-powershell/wmf/overview) .  
   
-    -   Le .NET Framework 3.5 SP1 n'est plus installé par le programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], mais il peut être requis lors de l'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sur des systèmes d'exploitation Windows plus anciens. Pour plus d’informations, consultez les [notes de publication](/previous-versions/sql/sql-server-15/dn169381(v=sql.15)) de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+    -   .NET Framework 3.5 SP1 n’est plus installé par le programme d’installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], mais il peut être requis lors de l’installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sur des systèmes d’exploitation Windows plus anciens. Pour plus d’informations, consultez [SQL Server 2019 : Configurations matérielle et logicielle requises](../../install/hardware-and-software-requirements-for-installing-sql-server-ver15.md).  
   
-    -   **Mise à jour [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Update :** Pour éviter le redémarrage de l'ordinateur suite à l'installation de .NET Framework 4 pendant l'installation, le programme d'installation [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] requiert l'installation de [!INCLUDE[msCoName](../../../includes/msconame-md.md)] sur l'ordinateur.  Si vous installez [!INCLUDE[ssSQL14](../../../includes/sssql14-md.md)] sur Windows 7 SP1 ou [!INCLUDE[firstref_longhorn](../../../includes/firstref-longhorn-md.md)] SP2, cette mise à jour est incluse. Si vous installez sur un système d'exploitation Windows plus ancien, vous pouvez la télécharger à partir de la [Mise à niveau Microsoft pour le .NET Framework 4.0 sur Windows Vista et Windows Server 2008](https://go.microsoft.com/fwlink/?LinkId=198093).  
+    -   **Mise à jour [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Update :** Pour éviter le redémarrage de l'ordinateur suite à l'installation de .NET Framework 4 pendant l'installation, le programme d'installation [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] requiert l'installation de [!INCLUDE[msCoName](../../../includes/msconame-md.md)] sur l'ordinateur.  Si vous installez [!INCLUDE[ssSQL14](../../../includes/sssql14-md.md)] sur Windows 7 SP1 ou [!INCLUDE[firstref_longhorn](../../../includes/firstref-longhorn-md.md)] SP2, cette mise à jour est incluse. Si vous installez sur un système d'exploitation Windows plus ancien, vous pouvez la télécharger à partir de la [Mise à niveau Microsoft pour le .NET Framework 4.0 sur Windows Vista et Windows Server 2008](https://go.microsoft.com/fwlink/?LinkId=198093).  
   
     -   .NET Framework 4 : Le programme d'installation installe le .NET Framework 4 sur un système d'exploitation en cluster. Pour réduire le temps d'installation, vous pouvez envisager d'installer le .NET Framework 4 avant d'exécuter le programme d'installation.  
   
-    -   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Vous pouvez installer ces fichiers en exécutant SqlSupport.msi qui se trouve sur le support d'installation de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] .  
+    -   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Vous pouvez installer ces fichiers en exécutant SqlSupport.msi qui se trouve sur votre support d’installation.  
   
 -   Vérifiez qu'aucun logiciel antivirus n'est installé sur votre cluster WSFC. Pour plus d’informations, consultez l’article [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Le logiciel antivirus peut être à l’origine de problèmes avec les services de cluster [de la Base de connaissances](/troubleshoot/windows-server/high-availability/not-cluster-aware-antivirus-software-cause-issue).  
   
@@ -137,7 +137,7 @@ ms.locfileid: "99076607"
   
 -   Pour créer un cluster de basculement, vous devez être un administrateur local autorisé à se connecter en tant que service et à agir dans le cadre du système d'exploitation sur tous les nœuds de l'instance de cluster de basculement.  
   
--   Sur [!INCLUDE[nextref_longhorn](../../../includes/nextref-longhorn-md.md)], les SID de service sont générés automatiquement pour une utilisation avec les services [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] . Pour les instances de cluster de basculement [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] mises à niveau à partir d'anciennes versions de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], les groupes de domaines et configurations des listes de contrôle d'accès existants seront conservés.  
+-   Sur [!INCLUDE[nextref_longhorn](../../../includes/nextref-longhorn-md.md)], les SID de service sont générés automatiquement pour une utilisation avec les services [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] . Pour les instances de cluster de basculement [!INCLUDE[ssnoversion](../../../includes/ssnoversion-md.md)] mises à niveau à partir d'anciennes versions de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], les groupes de domaines et configurations des listes de contrôle d'accès existants seront conservés.  
   
 -   Les groupes de domaines doivent se trouver dans le même domaine que les comptes d'ordinateurs. Si, par exemple, l'ordinateur sur lequel [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sera installé se trouve dans le domaine SQLSVR, enfant de MYDOMAIN, vous devez spécifier un groupe dans le domaine SQLSVR. Le domaine SQLSVR peut contenir des comptes d'utilisateurs de MYDOMAIN.  
   
@@ -187,18 +187,19 @@ ms.locfileid: "99076607"
 ##  <a name="verify-your-operating-system"></a><a name="OS_Support"></a> Vérifiez votre système d'exploitation  
  Assurez-vous que votre système d'exploitation est installé correctement et qu'il prend en charge le clustering de basculement. Le tableau suivant comporte une liste des éditions [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] et des systèmes d'exploitation qui les prennent en charge.  
   
-|Édition de[!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]|[!INCLUDE[firstref_longhorn](../../../includes/firstref-longhorn-md.md)] Enterprise|[!INCLUDE[firstref_longhorn](../../../includes/firstref-longhorn-md.md)] Datacenter Server|[!INCLUDE[winserver2008r2](../../../includes/winserver2008r2-md.md)] Enterprise|[!INCLUDE[winserver2008r2](../../../includes/winserver2008r2-md.md)] Datacenter Server|  
+|Édition de[!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]|Windows Server 2019 Datacenter|Windows Server 2019 Standard|Windows Server 2016 Datacenter|Windows Server 2016 Standard |  
 |---------------------------------------|------------------------------------------------|-------------------------------------------------------|----------------------------------------------|-----------------------------------------------------|  
-|[!INCLUDE[ssSQL14](../../../includes/sssql14-md.md)] Enterprise (64 bits) x64*|Oui|Oui|Oui**|Oui**|  
+|[!INCLUDE[ssSQL14](../../../includes/sssql14-md.md)] Enterprise (64 bits) x64*|Oui|Oui|Oui|Oui|  
 |[!INCLUDE[ssSQL14](../../../includes/sssql14-md.md)] Enterprise (32 bits)|Oui|Oui|||  
-|[!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] bits) Developer (64|Oui|Oui|Oui**|Oui**|  
-|[!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] Developer (32 bits)|Oui|Oui|||  
-|[!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] Standard (64 bits)|Oui|Oui|Oui|Oui|  
-|[!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] Standard (32 bits)|Oui|Oui|||  
-  
+|[!INCLUDE[sssql16-md](../../../includes/sssql16-md.md)] Enterprise |Oui|Oui|Oui|Oui|
+|[!INCLUDE[sssql16-md](../../../includes/sssql16-md.md)] Standard |Oui|Oui|Oui|Oui|
+|[!INCLUDE[sssql17-md](../../../includes/sssql17-md.md)] Enterprise |Oui|Oui|Oui|Oui|
+|[!INCLUDE[sssql17-md](../../../includes/sssql17-md.md)] Standard |Oui|Oui|Oui|Oui|
+|[!INCLUDE[sssql19-md](../../../includes/sssql19-md.md)] Enterprise |Oui|Oui|Oui|Oui|
+|[!INCLUDE[sssql19-md](../../../includes/sssql19-md.md)] Standard |Oui|Oui|Oui|Oui|
+
  *[!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ne sont pas pris en charge en mode WOW. Cela inclut les mises à niveau de versions précédentes des clusters de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] installés à l'origine dans WOW. Pour ceux-là, la seule option de mise à niveau est d'installer la nouvelle version côte à côte et de migrer.  
-  
- **Pris en charge pour le clustering de basculement de plusieurs sous-réseaux [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] .  
+
   
 ##  <a name="additional-considerations-for-multi-subnet-configurations"></a><a name="MultiSubnet"></a> Remarques supplémentaires concernant les configurations de sous-réseaux multiples  
  Les sections ci-dessous décrivent les points à garder à l'esprit lors de l'installation d'un cluster de basculement de sous-réseaux multiples [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Une configuration de sous-réseaux multiples implique le clustering de plusieurs sous-réseaux et, par conséquent, l'utilisation de plusieurs adresses IP et la modification des dépendances de ressource d'adresse IP.  
@@ -234,7 +235,7 @@ ms.locfileid: "99076607"
   
 -   WSFC doit être en mesure de vérifier que l'instance de cluster de basculement s'exécute à l'aide de la vérification IsAlive. Cela signifie qu'il convient de se connecter au serveur à l'aide d'une connexion approuvée. Par défaut, le compte qui exécute le service de cluster n'est pas configuré en tant qu'administrateur sur les nœuds du cluster, et le groupe BUILTIN\Administrateurs n'a pas l'autorisation de se connecter à [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Ces paramètres changent uniquement si vous modifiez les autorisations définies sur les nœuds du cluster.  
   
--   Configurez le service DNS (Domain Name Service) ou le service WINS (Windows Internet Name Service). Un serveur DNS ou un serveur WINS doit s'exécuter dans l'environnement où votre cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sera installé. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] nécessite un enregistrement DNS dynamique de la référence virtuelle de l'interface IP [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . La configuration du serveur DNS doit permettre aux nœuds de cluster d'inscrire dynamiquement une table d'adresses IP en ligne sur le nom du réseau. Si l'enregistrement dynamique ne peut pas être effectué, le programme d'installation échoue et l'installation est restaurée. Pour plus d'informations, consultez [cet article de la base de connaissances](https://support.microsoft.com/kb/947048)  
+-   Configurez le service DNS (Domain Name Service) ou le service WINS (Windows Internet Name Service). Un serveur DNS ou un serveur WINS doit s'exécuter dans l'environnement où votre cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sera installé. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] nécessite un enregistrement DNS dynamique de la référence virtuelle de l'interface IP [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . La configuration du serveur DNS doit permettre aux nœuds de cluster d'inscrire dynamiquement une table d'adresses IP en ligne sur le nom du réseau. Si l'enregistrement dynamique ne peut pas être effectué, le programme d'installation échoue et l'installation est restaurée. Pour plus d'informations, consultez [cet article de la base de connaissances](https://mskb.pkisolutions.com/kb/947048)  
   
 ##  <a name="install-msconame-distributed-transaction-coordinator"></a><a name="MSDTC"></a> Installer [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Distributed Transaction Coordinator  
  Avant d'installer [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sur un cluster de basculement, déterminez si la ressource de cluster [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Distributed Transaction Coordinator (MSDTC) doit être créée. Si vous installez uniquement le [!INCLUDE[ssDE](../../../includes/ssde-md.md)], la ressource de cluster MSDTC n'est pas nécessaire. Si vous installez le [!INCLUDE[ssDE](../../../includes/ssde-md.md)] et SSIS, les composants de station de travail, ou si vous comptez utiliser les transactions distribuées, vous devez installer MSDTC. Notez que MSDTC n'est pas requis pour les instances d' [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)]uniquement.  

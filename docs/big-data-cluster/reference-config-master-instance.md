@@ -5,20 +5,22 @@ description: Article de référence pour les propriétés de configuration pour 
 author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: rahul.ajmera
-ms.date: 08/04/2020
+ms.date: 02/11/2021
 ms.topic: reference
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 2f251357c818577b0ecd761c4a5ca2f030eeca58
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 2d986013374e7f69111288d2d0f50b09130a2d68
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100043969"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100343510"
 ---
-# <a name="sql-server-master-instance-configuration-properties"></a>Propriétés de configuration de l’instance maître SQL Server
+# <a name="sql-server-master-instance-configuration-properties----pre-cu9-release"></a>Propriétés de configuration de l’instance maître de SQL Server - Version antérieure à CU9
 
 [!INCLUDE[SQL Server 2019](../includes/applies-to-version/sqlserver2019.md)]
+> [!NOTE]
+> Les informations suivantes s’appliquent uniquement aux clusters dont la version est antérieure à CU9, qui ne sont pas configurables et qui nécessitent mssql-conf pour configurer l’instance maître de SQL Server. Les clusters CU9 et versions ultérieures tirent parti de la fonctionnalité de gestion de la configuration et n’ont donc plus besoin d’un fichier mssql-conf. Vous trouverez [ici](reference-config-bdc-overview.md) les configurations disponibles pour l’instance maître de SQL Server et d’autres composants de clusters Big Data.
 
 ## <a name="properties"></a>Propriétés
 

@@ -10,12 +10,12 @@ ms.date: 09/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 34592d9a6cb3db8bde5a2a25098314fd9ace1208
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 3af391b2fe6a2c104a4854afdb57b4dc5eb95029
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100039479"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489173"
 ---
 # <a name="manage-big-data-clusters-bdc-the-cluster-with-notebooks"></a>Gérer des Clusters Big Data (BDC) avec des notebooks
 
@@ -31,7 +31,7 @@ Une fois toutes les dépendances installées, mais après l’échec de la comma
 Cette section contient un ensemble de notebooks permettant d’installer et de désinstaller les outils en ligne de commande et packages nécessaires pour gérer des Clusters Big Data SQL Server.
 
 |Nom |Description |
-|---|---|---|---|
+|---|---|
 |SOP010 - Mettre à niveau un cluster Big Data|Utilisez ce notebook pour mettre à niveau un cluster Big Data à l’aide de azdata. |
 |SOP012 - Installer unixodbc pour Mac|Utiliser ce notebook lorsque vous recevez des erreurs lors de l’utilisation Préparer l’installation ODBC pour SQL Server.|
 |SOP036 - Installer l’interface de ligne de commande kubectl|Utilisez ce notebook pour installer l’interface de ligne de commande kubectl, quel que soit votre système d’exploitation.|
@@ -49,13 +49,24 @@ Cette section contient un ensemble de notebooks permettant d’installer et de d
 |SOP064 - Désinstaller l’interface de ligne de commande azdata (à l’aide du gestionnaire de package)|Utilisez ce notebook pour désinstaller l’interface de ligne de commande azdata (à l’aide du gestionnaire de package).|
 |SOP069 - Installer ODBC for SQL Server|Utilisez ce notebook pour installer le pilote ODBC, car certaines sous-commandes dans azdata requièrent le pilote ODBC SQL Server.|
 
+## <a name="encryption-at-rest-utilities-on-big-data-cluster-bdc"></a>Utilitaires de chiffrement au repos sur un cluster Big Data
+
+Cette section contient un ensemble de notebooks utiles pour la gestion des fonctionnalités de chiffrement au repos sur un cluster Big Data.
+
+|Nom |Description |
+|---|---|
+|SOP0124 - Lister les clés de chiffrement au repos|Utilisez ce notebook pour lister toutes les clés HDFS.|
+|SOP0128 - Activer des zones de chiffrement HDFS dans des clusters Big Data|Utilisez ce notebook pour activer les zones de chiffrement HDFS lors de la mise à niveau vers CU8 à partir de CU6 ou une version antérieure. Facultatif sur les nouveaux déploiements de CU8+ ou lors de la mise à niveau vers CU9.|
+|SOP0125 - Supprimer la clé de chiffrement au repos|Utilisez ce notebook pour supprimer des clés de zone de chiffrement HDFS. __Attention !__|
+|SOP0126 - Sauvegarder les clés de chiffrement au repos|Utilisez ce notebook pour sauvegarder des clés de zone de chiffrement HDFS.|
+|SOP0127 - Restaurer des clés de chiffrement au repos|Utilisez ce notebook pour restaurer des clés de zone de chiffrement HDFS.|
 
 ## <a name="managing-certificates-on-big-data-clusters-bdc"></a>Gestion des certificats sur des Clusters Big Data (BDC)
 
 Ensemble de notebooks permettant d’exécuter un notebook pour la gestion des certificats sur des Clusters Big Data.
 
 |Nom |Description |
-|---|---|---|---|
+|---|---|
 |CER001 - Générer un certificat d’autorité de certification racine|Générez un certificat d’autorité de certification racine. Envisagez d’utiliser un certificat d’autorité de certification racine pour tous les clusters de non-production dans chaque environnement, car cette technique réduit le nombre de certificats d’autorité de certification racines qui doivent être téléchargés vers les clients qui se connectent à ces clusters. |
 |CER002 - Télécharger le certificat d’autorité de certification racine existant|Utilisez ce notebook pour télécharger un certificat d’autorité de certification racine généré à partir d’un cluster.|
 |CER003 - Charger le certificat d’autorité de certification racine existant|CER003 - Charger le certificat d’autorité de certification racine existant.|

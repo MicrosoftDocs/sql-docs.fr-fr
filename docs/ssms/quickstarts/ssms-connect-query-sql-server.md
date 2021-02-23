@@ -9,12 +9,12 @@ ms.author: maghan
 ms.reviewer: sstein, mikeray
 ms.custom: contperf-fy21q2
 ms.date: 12/15/2020
-ms.openlocfilehash: 519b60f63da38192e2196014e0ea7820dafd5491
-ms.sourcegitcommit: 8a8c89b0ff6d6dfb8554b92187aca1bf0f8bcc07
+ms.openlocfilehash: 92160da1da48fc107be98354250e4c580cb51155
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97619098"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350594"
 ---
 # <a name="quickstart-connect-and-query-a-sql-server-instance-using-sql-server-management-studio-ssms"></a>Démarrage rapide : Se connecter à une instance SQL Server et l’interroger avec SQL Server Management Studio (SSMS)
 
@@ -48,8 +48,8 @@ L’article explique comment suivre les étapes ci-dessous :
     |   Paramètre   |   Valeur(s) suggérée(s)   |   Description   |
     |--------------|-----------------------|-----------------|
     | **Type de serveur** | Moteur de base de données | Pour **Type de serveur**, sélectionnez **Moteur de base de données** (généralement l’option par défaut). |
-    | **Nom du serveur** | Nom complet du serveur | Pour **Nom du serveur**, entrez le nom de votre instance SQL Server (vous pouvez aussi utiliser *localhost* comme nom de serveur si vous vous connectez en local). Si vous N’utilisez PAS l’instance par défaut (***MSSQLSERVER** _), vous devez entrer le nom du serveur et le nom de l’instance. </br> </br> Si vous ne savez pas comment déterminer le nom de votre instance SQL Server, consultez [Conseils et astuces supplémentaires sur l’utilisation de SSMS](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
-    | _ *Authentification** | Authentification Windows </br> </br> l’authentification SQL Server | L’authentification Windows est définie par défaut. </br> </br> Vous pouvez aussi utiliser l’**authentification SQL Server** pour vous connecter. Cependant, si vous sélectionnez l’**Authentification SQL Server**, un nom d’utilisateur et un mot de passe sont nécessaires. </br> </br> Pour plus d’informations sur les types d’authentification, consultez [Se connecter au serveur (moteur de base de données)](../f1-help/connect-to-server-database-engine.md). |
+    | **Nom du serveur** | Nom complet du serveur | Pour **Nom du serveur**, entrez le nom de votre instance SQL Server (vous pouvez aussi utiliser *localhost* comme nom de serveur si vous vous connectez en local). Si vous n’utilisez PAS l’instance par défaut (***MSSQLSERVER***), vous devez entrer le nom du serveur et le nom de l’instance. </br> </br> Si vous ne savez pas comment déterminer le nom de votre instance SQL Server, consultez [Conseils et astuces supplémentaires sur l’utilisation de SSMS](../tutorials/ssms-tricks.md#find-sql-server-instance-name). |
+    | **Authentification** | Authentification Windows </br> </br> l’authentification SQL Server | L’authentification Windows est définie par défaut. </br> </br> Vous pouvez aussi utiliser l’**authentification SQL Server** pour vous connecter. Cependant, si vous sélectionnez l’**Authentification SQL Server**, un nom d’utilisateur et un mot de passe sont nécessaires. </br> </br> Pour plus d’informations sur les types d’authentification, consultez [Se connecter au serveur (moteur de base de données)](../f1-help/connect-to-server-database-engine.md). |
     | **Connexion** | ID d’utilisateur du compte serveur | ID d’utilisateur du compte serveur utilisé pour se connecter au serveur. Une connexion est nécessaire quand l’**authentification SQL Server** est utilisée. |
     | **Mot de passe** | Mot de passe du compte serveur | Mot de passe du compte serveur utilisé pour se connecter au serveur. Un mot de passe est nécessaire quand l’**authentification SQL Server** est utilisée. |
 

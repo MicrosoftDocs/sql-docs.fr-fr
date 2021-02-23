@@ -1,5 +1,5 @@
 ---
-title: 'Didacticiel R : Ingénierie des caractéristiques'
+title: 'Tutoriel R : Ingénierie de caractéristiques'
 description: Tutoriel expliquant comment créer des fonctionnalités de données à l’aide de fonctions SQL Server pour l’analyse dans la base de données.
 ms.prod: sql
 ms.technology: machine-learning-services
@@ -9,12 +9,12 @@ author: dphansen
 ms.author: davidph
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15'
-ms.openlocfilehash: 38920a0d7dda05b2dbd853035c4ce0c17ffd74f2
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 502600980a3cb1f80eaeca64284f0a189cfcb405
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97470030"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100272980"
 ---
 # <a name="create-data-features-using-r-and-sql-server-walkthrough"></a>Créer des caractéristiques de données à l’aide de R et SQL Server (guide pas à pas)
 [!INCLUDE [SQL Server 2016](../../includes/applies-to-version/sqlserver2016.md)]
@@ -109,7 +109,7 @@ Tout d’abord, procédons comme les utilisateurs R ont l’habitude de faire :
     print(paste("It takes CPU Time=", round(used.time[1]+used.time[2],2)," seconds, Elapsed Time=", round(used.time[3],2), " seconds to generate features.", sep=""));
     ```
 
-    + La fonction rxDataStep prend en charge différentes méthodes pour modifier les données sur place. Pour plus d'informations, consultez cet article :  [Transformer et dégrouper des données dans Microsoft R](/r-server/r/how-to-revoscaler-data-transform)
+    + La fonction rxDataStep prend en charge différentes méthodes pour modifier les données sur place. Pour plus d’informations, consultez cet article : [Guide pratique pour transformer et dégrouper des données dans Microsoft R](/r-server/r/how-to-revoscaler-data-transform).
     
     Toutefois, quelques points méritent une attention particulière concernant rxDataStep : 
     
@@ -129,7 +129,7 @@ Dans cet exercice, découvrez comment accomplir la même tâche à l’aide de f
 
 Passez à [SQL Server Management Studio](../../ssms/download-sql-server-management-studio-ssms.md) ou à un autre éditeur de requête pour exécuter le script T-SQL.
 
-1. Utilisez une fonction SQL, nommée *fnCalculateDistance*. La fonction doit déjà exister dans la base de données NYCTaxi_Sample. Dans l’Explorateur d’objets, vérifiez que la fonction existe, en accédant à ce chemin d’accès : Bases de données > NYCTaxi_Sample > Programmabilité > Fonctions > Fonctions scalaires > dbo.fnCalculateDistance.
+1. Utilisez une fonction SQL, nommée *fnCalculateDistance*. La fonction doit déjà exister dans la base de données NYCTaxi_Sample. Dans l’Explorateur d’objets, vérifiez que la fonction existe, en accédant à ce chemin : Bases de données > NYCTaxi_Sample > Programmabilité > Fonctions > Fonctions scalaires > dbo.fnCalculateDistance.
 
     Si elle n’existe pas, utilisez SQL Server Management Studio pour générer la fonction dans la base de données NYCTaxi_Sample.
 
@@ -227,7 +227,7 @@ Passez à [SQL Server Management Studio](../../ssms/download-sql-server-manageme
     ```
 
     > [!NOTE]
-    > Dans certains cas, vous pouvez recevoir une erreur semblable à celle-ci : *L’autorisation EXECUTE a été refusée sur l’objet « fnCalculateDistance »* . Dans ce cas, assurez-vous que la connexion que vous utilisez dispose des autorisations nécessaires pour exécuter des scripts et créer des objets sur la base de données, et pas seulement sur l’instance.
+    > Dans certains cas, vous pouvez recevoir une erreur semblable à celle-ci : *L’autorisation EXECUTE a été refusée sur l’objet « fnCalculateDistance »* . Dans ce cas, assurez-vous que la connexion que vous utilisez dispose des autorisations nécessaires pour exécuter des scripts et créer des objets sur la base de données, et pas seulement sur l’instance.
     > Vérifiez le schéma de l’objet, fnCalculateDistance. Si l’objet a été créé par le propriétaire de la base de données et que votre connexion appartient au rôle db_datareader, vous devez accorder à la connexion des autorisations explicites pour exécuter le script.
 
 ## <a name="comparing-r-functions-and-sql-functions"></a>Comparaison des fonctions R et des fonctions SQL

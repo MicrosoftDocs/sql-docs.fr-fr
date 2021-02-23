@@ -13,14 +13,14 @@ ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-dt-2019
 ms.date: 03/01/2017
-ms.openlocfilehash: 735176a4fbb92d91d446f47492b2ddaa11098b2e
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: e8c4f32eab8fa7d7791a5f4718d8d771cb1dd6cd
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489329"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354469"
 ---
-# <a name="lesson-1-basic-navigation-in-database-engine-tuning-advisor-dta"></a>Leçon 1 : Navigation de base dans l’Assistant Paramétrage du moteur de base de données (DTA)
+# <a name="lesson-1-basic-navigation-in-database-engine-tuning-advisor-dta"></a>Leçon 1 : Navigation de base dans l’Assistant Paramétrage du moteur de base de données
 
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
 
@@ -81,7 +81,7 @@ Lorsque l'Assistant Paramétrage du moteur de base de données s'ouvre pour la p
   
     -   Vous pouvez affecter à l'option **Nombre d'éléments dans les listes des derniers fichiers utilisés** une valeur comprise entre **1** et **10**. Cela permet de définir le nombre maximal d'éléments qui s'affichent dans les listes lorsque vous cliquez sur **Sessions récentes** ou sur **Fichiers récents** dans le menu **Fichier** . Par défaut, la valeur affectée à cette option est **4**.  
   
-    -   Lorsque l'option **Mémoriser mes dernières options de paramétrage** est activée, l'Assistant Paramétrage du moteur de base de données utilise par défaut les options de paramétrage que vous avez spécifiées au cours de la dernière session de paramétrage pour la session de paramétrage suivante. Désactivez cette case à cocher pour utiliser les valeurs par défaut des options de paramétrage de l'Assistant Paramétrage du moteur de base de données. Cette option est sélectionnée par défaut.  
+    -   Lorsque l'option **Mémoriser mes dernières options de paramétrage** est activée, l'Assistant Paramétrage du moteur de base de données utilise par défaut les options de paramétrage que vous avez spécifiées au cours de la dernière session de paramétrage pour la session de paramétrage suivante. Désactivez cette case à cocher pour utiliser les valeurs par défaut des options de paramétrage de l'Assistant Paramétrage du moteur de base de données. Cette option est activée par défaut.  
   
     -   Par défaut, l'option **Demander avant de supprimer définitivement les sessions** est activée pour éviter la suppression accidentelle des sessions de paramétrage.  
   

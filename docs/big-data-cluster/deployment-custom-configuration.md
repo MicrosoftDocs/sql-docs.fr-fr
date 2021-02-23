@@ -4,21 +4,23 @@ titleSuffix: SQL Server big data clusters
 description: Découvrez comment personnaliser un déploiement de cluster Big Data à l’aide de fichiers de configuration intégrés à l’outil de gestion azdata.
 author: MikeRayMSFT
 ms.author: mikeray
-ms.reviewer: mihaelab
-ms.date: 06/22/2020
+ms.reviewer: rajmera3
+ms.date: 02/11/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: d983b4d0d7cfb02a587675984fdc42c54bf9f0ec
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: ffb41a559c6f262fe6d25a50c51b6e6553a2a7b8
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100047199"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100343926"
 ---
 # <a name="configure-deployment-settings-for-cluster-resources-and-services"></a>Configurer les paramètres de déploiement de services et ressources de cluster
 
 [!INCLUDE[SQL Server 2019](../includes/applies-to-version/sqlserver2019.md)]
+> [!Note]
+> Les clusters Big Data version CU9+ prennent en charge la fonctionnalité de gestion de la configuration. Cette fonctionnalité permet d’effectuer des configurations après le déploiement et d’améliorer la visibilité et la configurabilité du cluster. Les versions CU8 et inférieures ne disposent pas de cette fonctionnalité et les configurations peuvent donc uniquement être effectuées au moment du déploiement.
 
 En commençant avec un ensemble prédéfini de profils de configuration intégrés à l’outil de gestion [!INCLUDE [azure-data-cli-azdata](../includes/azure-data-cli-azdata.md)], vous pouvez facilement modifier les paramètres par défaut pour mieux répondre à vos exigences de charge de travail BDC. La structure des fichiers de configuration vous permet de mettre à jour précisément les paramètres de chaque service de la ressource.
 
@@ -28,6 +30,9 @@ Regardez cette vidéo de 13 minutes pour obtenir une vue d’ensemble de la conf
 
 > [!TIP]
 > Reportez-vous aux articles sur la façon de configurer la **haute disponibilité** pour des composants critiques tels que le [nœud maître SQL Server](deployment-high-availability.md) ou le [nœud de nom HDFS](deployment-high-availability-hdfs-spark.md), afin d’obtenir des détails sur la façon de déployer des services hautement disponibles.
+
+> [!TIP]
+> Reportez-vous à l’article [Propriétés de configuration des clusters Big Data SQL Server](reference-config-bdc-overview.md) pour connaître les paramètres configurables. Pour les versions CU8 ou antérieures, reportez-vous à [Propriétés de configuration de l’instance maître de SQL Server - Version antérieure à CU9](reference-config-master-instance.md) pour connaître les configurations disponibles pour l’instance maître de SQL Server et à [Propriétés de configuration Apache Spark et Apache Hadoop (HDFS)](reference-config-spark-hadoop.md) pour connaître les propriétés Apache Spark et Hadoop.
 
 Vous pouvez également définir des configurations au niveau des ressources ou mettre à jour les configurations de tous les services dans une ressource. Voici un résumé de la structure de `bdc.json` :
 

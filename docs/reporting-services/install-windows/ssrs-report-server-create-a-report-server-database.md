@@ -7,13 +7,13 @@ ms.prod: reporting-services
 ms.prod_service: reporting-services-native
 ms.topic: conceptual
 ms.custom: seodec18
-ms.date: 9/2/2020
-ms.openlocfilehash: 70a92bf37285e9af58dcef2e7a69abfb88b37178
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.date: 02/16/2021
+ms.openlocfilehash: 927fafb66a9551332a0d5fcbff868ad79efa5eef
+ms.sourcegitcommit: 129c084add904fd3f7e9ab35a800c3fd8b1a8927
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100067094"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100564106"
 ---
 # <a name="create-a-report-server-database-report-server-configuration-manager"></a>Créer une base de données du serveur de rapports, Gestionnaire de configuration du serveur de rapports  
 
@@ -84,6 +84,9 @@ La page des **options d’installation du serveur de rapports** n’offre que l�
 - [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]  
   
 - [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]  
+
+> [!NOTE] 
+> SQL sur Linux n’est pas un environnement pris en charge pour héberger une base de données SQL Server Reporting Services.
 
 Si vous créez la base de données du serveur de rapports sur un ordinateur distant, configurez la connexion de manière à employer un compte d'utilisateur de domaine ou un compte de service pouvant accéder au réseau. Si vous utilisez une instance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] distante, réfléchissez aux informations d'identification que le serveur de rapports devra utiliser pour se connecter à l'instance. Pour plus d’informations, consultez [Configurer une connexion à la base de données du serveur de rapports &#40;Gestionnaire de configuration du serveur de rapports&#41;](../../reporting-services/install-windows/configure-a-report-server-database-connection-ssrs-configuration-manager.md).  
   

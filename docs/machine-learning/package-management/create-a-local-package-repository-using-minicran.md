@@ -10,12 +10,12 @@ author: garyericson
 ms.author: garye
 ms.custom: seo-lt-2019
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15||=azuresqldb-mi-current'
-ms.openlocfilehash: a0edb79e6e23f713767da060fc580ac92c3daaee
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: f93a1180f25f764330db44306457e775961bc0da
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97471170"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100350694"
 ---
 # <a name="create-a-local-r-package-repository-using-minicran"></a>Créer un référentiel de packages R local à l’aide de miniCRAN
 [!INCLUDE [SQL Server 2016 SQL MI](../../includes/applies-to-version/sqlserver2016-asdbmi.md)]
@@ -34,11 +34,11 @@ La création d’un référentiel de packages local a pour but de fournir un emp
 
 Les référentiels de packages sont utiles dans les scénarios suivants :
 
-- **Sécurité** : beaucoup d’utilisateurs de R sont habitués à télécharger et à installer de nouveaux packages R selon leurs besoins à partir de CRAN ou de l’un de ses sites miroir. Toutefois, pour des raisons de sécurité, les serveurs de production qui exécutent [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] ne disposent généralement pas d’une connectivité Internet.
+- **Sécurité** : Beaucoup d’utilisateurs de R sont habitués à télécharger et à installer de nouveaux packages R selon leurs besoins à partir de CRAN ou de l’un de ses sites miroir. Toutefois, pour des raisons de sécurité, les serveurs de production qui exécutent [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] ne disposent généralement pas d’une connectivité Internet.
 
-- **Installation hors connexion simplifiée** : pour installer un package sur un serveur hors connexion, vous devez également télécharger toutes les dépendances de package. Avec miniCRAN, il est plus facile d’extraire toutes les dépendances dans le format approprié et d’éviter les erreurs de dépendance.
+- **Installation hors connexion simplifiée** : Pour installer un package sur un serveur hors connexion, vous devez également télécharger toutes les dépendances de package. Avec miniCRAN, il est plus facile d’extraire toutes les dépendances dans le format approprié et d’éviter les erreurs de dépendance.
 
-- **Gestion des versions améliorée** : dans un environnement multi-utilisateur, il existe de bonnes raisons d’éviter d’installer négligemment plusieurs versions des packages sur le serveur. Utilisez un référentiel local pour proposer un ensemble cohérent de packages à vos utilisateurs.
+- **Gestion des versions améliorée** : Dans un environnement multi-utilisateur, il existe de bonnes raisons d’éviter d’installer négligemment plusieurs versions des packages sur le serveur. Utilisez un référentiel local pour proposer un ensemble cohérent de packages à vos utilisateurs.
 
 ## <a name="install-minicran"></a>Installer miniCRAN
 

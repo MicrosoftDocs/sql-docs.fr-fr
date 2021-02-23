@@ -10,12 +10,12 @@ ms.date: 10/19/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: df878f94c2ed6338ae28cbff156460ffdef87826
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 69749c0da2a5f7ef672a4673b5bc857898e9964f
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100046659"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489183"
 ---
 # <a name="encryption-at-rest-concepts-and-configuration-guide"></a>Guide de configuration et de concepts du chiffrement au repos
 
@@ -29,9 +29,9 @@ Les Clusters Big Data SQL Server stockent les données dans les deux emplacement
 Pour pouvoir chiffrer de manière transparente les données dans des Clusters Big Data SQL Server, il existe deux approches possibles :
 
 * __Chiffrement de volume__. Cette approche est prise en charge par la plateforme Kubernetes et est attendue comme meilleure pratique pour les déploiements de Clusters Big Data. Ce guide ne couvre pas le chiffrement de volume. Consultez la documentation de votre plateforme ou de votre appliance Kubernetes pour savoir comment chiffrer correctement des volumes qui seront utilisés pour les Clusters Big Data SQL Server.
-* __Chiffrement au niveau de l’application__. Cette architecture fait référence au chiffrement des données par l’application qui gère les données avant qu’elles ne soient écrites sur le disque. Si les volumes sont exposés, un attaquant ne pourra pas restaurer les artefacts de données ailleurs, sauf si le système de destination a également été configuré avec les mêmes clés de chiffrement. 
+* __Chiffrement au niveau de l’application__. Cette architecture fait référence au chiffrement des données par l’application qui gère les données avant qu’elles ne soient écrites sur le disque. Si les volumes sont exposés, un attaquant ne pourra pas restaurer les artefacts de données ailleurs, sauf si le système de destination a également été configuré avec les mêmes clés de chiffrement.
 
-L’ensemble de fonctionnalités de chiffrement au repos des Clusters Big Data SQL Server prend en charge le scénario de base du chiffrement au niveau de l’application pour les composants SQL Server et HDFS.
+L’__ensemble de fonctionnalités de chiffrement au repos des Clusters Big Data SQL Server__ prend en charge le scénario de base du __chiffrement au niveau de l’application__ pour les composants __SQL Server__ et __HDFS__.
 
 Les fonctionnalités suivantes sont inclues :
 
@@ -48,9 +48,6 @@ Service hébergé par un contrôleur chargé de gérer les clés et les certific
 * Compatibilité KMS Hadoop. Il agit en tant que service de gestion de clés pour le composant HDFS sur BDC.
 * Gestion des certificats TDE SQL Server.
 
-La fonction suivante n'est pas prise en charge pour l’instant :
-* *Prise en charge du contrôle de version des clés*. 
-
 Nous allons faire référence à ce service comme __KMS BDC__ dans le reste de ce document. Le terme __BDC__ est également utilisé pour faire référence à la plateforme de calcul des __Clusters Big Data SQL Server__.
 
 ### <a name="system-managed-keys-and-certificates"></a>Clés et certificats managés par le système
@@ -65,9 +62,9 @@ Les clés et certificats fournis par l’utilisateur sont managés par le KMS BD
 
 Solutions de clé externe compatibles avec KMS BDC pour la délégation externe. Cette fonctionnalité est pas prise en charge pour l’instant.
 
-## <a name="encryption-at-rest-on-sql-server-big-data-clusters-cu8"></a>Chiffrement au repos sur des Clusters Big Data SQL Server CU8
+## <a name="encryption-at-rest-on-sql-server-big-data-clusters"></a>Chiffrement au repos sur des clusters Big Data SQL Server
 
-Les Clusters Big Data SQL Server CU8 correspondent à la version initiale de l’ensemble de fonctionnalités de chiffrement au repos. Lisez attentivement ce document pour évaluer complètement votre scénario.
+Lisez attentivement ce document pour évaluer complètement votre scénario.
 
 L’ensemble de fonctionnalités présente le __service du contrôleur KMS BDC__ pour fournir des clés et des certificats managés par le système pour le chiffrement des données au repos sur SQL Server et HDFS. Ces clés et certificats sont managés par le service et cette documentation fournit des conseils opérationnels sur la façon d’interagir avec le service.
 
@@ -80,7 +77,7 @@ L’ensemble de fonctionnalités présente le __service du contrôleur KMS BDC__
 * Les bases de données et bases de données utilisateur fournies par le BDC de l’instance maître ne sont pas chiffrées automatiquement. Les administrateurs de bases de données peuvent utiliser le certificat installé pour chiffrer n’importe quelle base de données.
 * Le pool de calcul et le pool de stockage sera automatiquement chiffré à l’aide du certificat managé par le système.
 * Le chiffrement du pool de données, quoique techniquement possible à l’aide de commandes `EXECUTE AT` T-SQL, est déconseillé et n’est pas pris en charge pour l’instant. L’utilisation de cette technique pour chiffrer les bases de données du pool de données peut ne pas être efficace et le chiffrement peut ne pas se produire à l’état souhaité. Elle crée également un chemin de mise à niveau incompatible vers les prochaines mises en production.
-* Il n’existe aucune rotation de certificat pour l’instant. Elle est prise en charge pour le déchiffrement, puis le chiffrement avec un nouveau certificat à l’aide de commandes T-SQL s’il ne s’agit pas de déploiements haute disponibilité.
+* La rotation des clés SQL Server est obtenue à l’aide des commandes d’administration T-SQL standard. Lisez le [Guide d’utilisation du TDE (Transparent Data Encryption) au repos des clusters Big Data SQL Server](encryption-at-rest-sql-server-tde.md) pour obtenir des instructions complètes.
 * L’analyse du chiffrement s’effectue par le biais des DMV SQL Server standard existantes pour TDE.
 * Elle est prise en charge pour la sauvegarde et la restauration d’une base de données TDE activée dans le cluster.
 * La haute disponibilité est prise en charge. Si une base de données sur l’instance principale de SQL Server est chiffrée, le réplica secondaire de la base de données est également chiffré.
@@ -91,12 +88,20 @@ L’ensemble de fonctionnalités présente le __service du contrôleur KMS BDC__
 * Une clé managée par le système sera approvisionnée dans Hadoop KMS. Le nom de la clé est `securelakekey`. Sur CU8, la clé par défaut est 256 bits et le chiffrement AES 256 bits est pris en charge.
 * Une zone de chiffrement par défaut sera approvisionnée à l’aide de la clé générée par le système ci-dessus sur un chemin d’accès nommé `/securelake`.
 * Les utilisateurs peuvent créer des clés et des zones de chiffrement supplémentaires à l’aide des instructions spécifiques fournies dans ce guide. Les utilisateurs peuvent choisir la taille de clé 128, 192 ou 256 pendant la création de la clé.
-* La rotation de clé en place pour HDFS n’est pas possible dans CU8. En guise d’alternative, les données peuvent être déplacées d’une zone de chiffrement vers une autre à l’aide de distcp.
+* La rotation des clés des zones de chiffrement HDFS est obtenue avec azdata. Lisez le [Guide d’utilisation des zones de chiffrement HDFS des clusters Big Data SQL Server](encryption-at-rest-hdfs-encryption-zones.md) pour obtenir des instructions complètes.
 * Cela n’est pas pris en charge pour effectuer un montage hiérarchisé HDFS au-dessus d’une zone de chiffrement.
 
-## <a name="configuration-guide"></a>Guide de configuration
+## <a name="encryption-at-rest-administration"></a>Administration du chiffrement au repos
 
-Le chiffrement au repos sur des Clusters Big Data SQL Server est une fonctionnalité managée par le service et, en fonction de votre chemin de déploiement, peut nécessiter des étapes supplémentaires.
+La liste suivante contient les fonctionnalités d’administration du chiffrement au repos.
+
+* La gestion du [TDE (Transparent Data Encryption) SQL Server](encryption-at-rest-sql-server-tde.md) est effectuée à l’aide des commandes T-SQL standard.
+* La gestion des clés HDFS et des [zones de chiffrement HDFS](encryption-at-rest-hdfs-encryption-zones.md) est effectuée à l’aide des commandes azdata.
+* Les fonctionnalités d’administration suivantes s’effectuent avec des [notebooks opérationnels](cluster-manage-notebooks.md) :
+    - Sauvegarde et récupération des clés HDFS
+    - Suppression des clés HDFS
+
+## <a name="configuration-guide"></a>Guide de configuration
 
 Pendant de __nouveaux déploiements de Clusters Big Data SQL Server__, CU8 et versions ultérieures, __le chiffrement au repos est activé et configuré par défaut__. Cela signifie que :
 
@@ -106,14 +111,11 @@ Pendant de __nouveaux déploiements de Clusters Big Data SQL Server__, CU8 et ve
 
 Les spécifications et les comportements par défaut décrits dans la section précédente s’appliquent.
 
-Si __vous mettez à niveau votre cluster vers CU8__, __lisez attentivement la section suivante__.
+__Si vous effectuez un nouveau déploiement de clusters Big Data SQL Server CU8 ou une mise à niveau directe vers CU9, aucune étape supplémentaire n’est nécessaire__.
 
-### <a name="upgrading-to-cu8"></a>Mise à niveau vers CU8
+### <a name="upgrade-scenarios"></a>Scénarios de mise à niveau
 
-   > [!CAUTION]
-   > Avant de procéder à la mise à niveau vers les Clusters Big Data SQL Server CU8, effectuez une sauvegarde complète de vos données.
-
-Sur les clusters existants, le processus de mise à niveau n’applique pas de chiffrement aux données utilisateur et ne configure pas les zones de chiffrement HDFS. Ce comportement est dû à la conception et les éléments suivants doivent être pris en compte pour chaque composant :
+Sur les clusters existants, le processus de mise à niveau n’appliquera pas de nouveau chiffrement ni de rechiffrement sur les données utilisateur qui n’étaient pas déjà chiffrées. Ce comportement est dû à la conception et les éléments suivants doivent être pris en compte pour chaque composant :
 
 * __SQL Server__
 
@@ -124,17 +126,31 @@ Sur les clusters existants, le processus de mise à niveau n’applique pas de c
 * __HDFS__
 
     1. __HDFS__. Le processus de mise à niveau ne touche pas les fichiers et dossiers HDFS en dehors des zones de chiffrement.
-    1. __Les zones de chiffrement ne seront pas configurées__. Le composant KMS Hadoop ne sera pas configuré pour utiliser le service KMS BDC. Pour configurer et activer la fonctionnalité de zones de chiffrement HDFS après la mise à niveau, suivez la section suivante.
 
-### <a name="enable-hdfs-encryption-zones-after-upgrade"></a>Activer les zones de chiffrement HDFS après la mise à niveau
+### <a name="upgrading-to-cu9-from-cu8-or-earlier"></a>Mise à niveau vers CU9 à partir de CU8 ou d’une version antérieure
 
-Exécutez les actions suivantes si vous avez mis à niveau votre cluster vers CU8 (`azdata upgrade`) et souhaitez activer les zones de chiffrement HDFS.
+Aucune étape supplémentaire n’est nécessaire.
+
+### <a name="upgrading-to-cu8-from-cu6-or-earlier"></a>Mise à niveau vers CU8 à partir de CU6 ou d’une version antérieure
+
+   > [!CAUTION]
+   > Avant de procéder à la mise à niveau vers les Clusters Big Data SQL Server CU8, effectuez une sauvegarde complète de vos données.
+
+
+__Les zones de chiffrement ne seront pas configurées__. Le composant KMS Hadoop ne sera pas configuré pour utiliser le service KMS BDC. Pour configurer et activer la fonctionnalité des zones de chiffrement HDFS après la mise à niveau, suivez les instructions de la section suivante.
+
+#### <a name="enable-hdfs-encryption-zones-after-upgrade-to-cu8"></a>Activer les zones de chiffrement HDFS après la mise à niveau vers CU8
+
+Si vous avez mis à niveau votre cluster vers CU8 (`azdata upgrade`) et souhaitez activer des zones de chiffrement HDFS, deux possibilités s’offrent à vous :
+
+* Exécution du [notebook opérationnel](cluster-manage-notebooks.md) Azure Data Studio nommé __SOP0128 - Activer des zones de chiffrement HDFS dans des clusters Big Data__ pour effectuer la configuration.
+* Exécution du script comme décrit ci-dessous.
 
 Conditions requises :
 
 - Cluster [Active Directory](active-directory-prerequisites.md) intégré.
 
-- [!INCLUDE [azure-data-cli-azdata](../includes/azure-data-cli-azdata.md)] configuré et connecté au cluster en mode AD.
+- [!INCLUDE[azdata](../includes/azure-data-cli-azdata.md)] configuré et connecté au cluster en mode AD.
 
 Suivez la procédure ci-dessous pour reconfigurer le cluster avec supporte des zones de chiffrement.
 

@@ -5,16 +5,16 @@ description: Cet article décrit les dernières mises à jour et les problèmes 
 author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: mihaelab
-ms.date: 01/13/2021
+ms.date: 02/11/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 75b3b483a9e7744bb35b50ff30649b3257e14285
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 1f3e1e0ed29121f0fb0ffcac54885ca80de3e63c
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100046183"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489303"
 ---
 # <a name="sql-server-2019-big-data-clusters-release-notes"></a>Notes de publication des clusters Big Data SQL Server 2019
 
@@ -64,6 +64,7 @@ La table suivante énumère l’historique des mises en production pour [!INCLUD
 
 | Version <sup>1</sup> | Version BDC | [!INCLUDE [azure-data-cli-azdata](../includes/azure-data-cli-azdata.md)] version <sup>2</sup> | Date de publication |
 |--|--|--|--|
+| [CU9](#cu9) |  15.0.4102.2 | 20.3.0    | 2021-02-11 |
 | [CU8-GDR](#cu8-gdr) | 15.0.4083.2  | 20.2.6    | 2021-01-12 |
 | [CU8](#cu8)     | 15.0.4073.23 | 20.2.2    | 2020-10-19 |
 | [CU6](#cu6)     | 15.0.4053.23 | 20.0.1    | 2020-08-04 |
@@ -81,6 +82,25 @@ La table suivante énumère l’historique des mises en production pour [!INCLUD
 ## <a name="how-to-install-updates"></a>Comment installer les mises à jour
 
 Pour installer les mises à jour, consultez [Comment mettre à niveau [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)]](deployment-upgrade.md).
+
+## <a name="cu9-february-2021"></a><a id="cu9"></a> CU9 (février 2021)
+
+Mise à jour cumulative 9 (CU9) pour SQL Server 2019.
+
+|Version du package | Balise d'image |
+|-----|-----|
+|15.0.4102.2|[2019-CU9-ubuntu-16.04]|
+
+La mise à jour cumulative 9 (CU9) de SQL Server 2019 pour les clusters Big Data SQL Server comprend des fonctionnalités importantes :
+
+- Prise en charge de la configuration de clusters Big Data après le déploiement et amélioration de la visibilité des paramètres système.
+
+   Les clusters utilisant `mssql-conf` pour les configurations de l’instance maître de SQL Server nécessitent des étapes supplémentaires après la mise à niveau vers CU9. Suivez les instructions [ici](bdc-upgrade-configuration.md).
+
+- Amélioration de l’expérience [!INCLUDE[azdata](../includes/azure-data-cli-azdata.md)] pour le chiffrement au repos.
+- Possibilité d’installer de manière dynamique des packages Python Spark à l’aide d’environnements virtuels.
+- Versions logicielles mises à niveau de la plupart de nos composants OSS (Grafana, Kibana, FluentBit, etc.) pour garantir que les images de clusters Big Data sont à jour avec les dernières améliorations et correctifs. Consultez [Informations de référence sur les logiciels Open Source](reference-open-source-software.md).
+- Autres améliorations diverses et correctifs de bogues.
 
 ## <a name="cu8-gdrjanuary-2021"></a><a id="cu8-gdr"></a> CU8-GDR (janvier 2021)
 
@@ -233,7 +253,7 @@ SQL Server 2019 GDR1 (General Distribution Release 1) : offre une disponibilité
 
 ### <a name="ha-sql-server-database-encryption-key-encryptor-rotation"></a>Rotation du chiffreur de clé de chiffrement de base de données SQL Server HA
 
-- **Versions concernées** : Tous les déploiements haute disponibilité du cluster Big Data, quelle que soit la version.
+- **Versions concernées** : Toutes les versions jusqu’à CU8. Résolu pour CU9.
 
 - **Problème et impact sur le client** : Avec SQL Server déployé avec HA, la rotation de certificat pour la base de données chiffrée échoue. Lorsque la commande suivante est exécutée sur le pool principal, un message d’erreur s’affiche :
     ```
@@ -242,7 +262,13 @@ SQL Server 2019 GDR1 (General Distribution Release 1) : offre une disponibilité
     CERTIFICATE <NewCertificateName>
     ```
     Il n’y a aucun impact, la commande échoue et le chiffrement de la base de données cible est conservé à l’aide du certificat précédent.
-    
+
+### <a name="enabling-hdfs-encryption-zones-support-on-cu8"></a>Activation de la prise en charge des zones de chiffrement HDFS sur CU8
+
+- **Versions concernées** : Ce scénario apparaît lors de la mise à niveau vers CU8 à partir de la version CU6 ou d’une version précédente. Il ne se produira pas dans les nouveaux déploiements de CU8+ ou lors de la mise à niveau directe vers CU9.
+
+- **Problème et impact sur le client** : La prise en charge des zones de chiffrement HDFS n’est pas activée par défaut dans ce scénario et doit être configurée à l’aide de la procédure décrite dans le [guide de configuration](encryption-at-rest-concepts-and-configuration.md).
+
 ### <a name="empty-livy-jobs-before-you-apply-cumulative-updates"></a>Tâches Livy vides avant d’appliquer les mises à jour cumulatives
 
 - **Versions concernées** : Toutes les versions jusqu’à CU6. Résolu pour CU8.

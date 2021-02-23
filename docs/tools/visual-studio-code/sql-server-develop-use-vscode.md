@@ -8,12 +8,12 @@ ms.assetid: 9766ee75-32d3-4045-82a6-4c7968bdbaa6
 author: markingmyname
 ms.author: maghan
 ms.date: 10/28/2019
-ms.openlocfilehash: d0726366cab5728038c5b1fd2bbe6681115337d4
-ms.sourcegitcommit: a9f16d7819ed0e2b7ad8f4a7d4d2397437b2bbb2
+ms.openlocfilehash: fdb3d5e695824117def89347da883a0a7a5d7a9c
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/21/2020
-ms.locfileid: "88714107"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100340541"
 ---
 # <a name="use-visual-studio-code-to-create-and-run-transact-sql-scripts"></a>Utiliser Visual Studio Code pour créer et exécuter des scripts Transact-SQL
 
@@ -38,11 +38,11 @@ L’[extension mssql pour Visual Studio Code](https://aka.ms/mssql-marketplace) 
 
 1. Dans Visual Studio Code, sélectionnez **Afficher** > **Palette de commandes**, ou appuyez sur **Ctrl**+**Maj**+**P**, ou bien sur **F1** pour ouvrir la **Palette de commandes**.
 
-2. Dans la **palette de commandes**, sélectionnez extensions   **: Installez les extensions** à partir de la liste déroulante.
+2. Dans la **palette de commandes**, sélectionnez **Extensions : Installer des extensions** dans la liste déroulante.
 
 3. Dans le volet **Extensions**, tapez *mssql*.
 
-4. Sélectionnez l'extension **SQL Server (mssql)** , puis sélectionnez **Installer**.
+4. Sélectionnez l'extension **SQL Server (mssql)**, puis sélectionnez **Installer**.
 
    ![Installer l’extension mssql](./media/sql-server-develop-use-vscode/vscode-extension.png)
 
@@ -69,14 +69,14 @@ Procédez comme suit pour créer un profil de connexion et vous connecter à une
 
 1. Appuyez sur **Ctrl**+**MAJ**+**P** ou sur **F1** pour ouvrir la **palette de commandes**. 
 
-2. Tapez *sql* pour afficher les commandes mssql ou tapez sur *sqlcon*, puis sélectionnez **MS SQL : Connect** à partir de la liste déroulante.
+2. Tapez *sql* pour afficher les commandes mssql ou tapez *sqlcon*, puis sélectionnez **MS SQL : Se connecter** dans le menu déroulant.
 
    ![Commandes mssql](./media/sql-server-develop-use-vscode/vscode-commands.png)
 
    >[!NOTE]
    >Un fichier SQL tel que le fichier SQL vide que vous avez créé doit avoir son focus dans l’éditeur de code avant que vous puissiez exécuter les commandes mssql.
 
-3. Sélectionnez la commande **MS SQL : gérer les profils de connexion**.
+3. Sélectionnez la commande **MS SQL : Gérer les profils de connexion**.
 
 4. Sélectionnez ensuite **Créer** afin de créer un profil de connexion pour votre instance SQL Server.
 
@@ -140,7 +140,7 @@ Comme alternative aux étapes précédentes, vous pouvez également créer et mo
 
 2. Appuyez sur **Ctrl**+**MAJ**+**P** ou sur **F1** pour ouvrir la **palette de commandes**.
 
-3. Tapez *sql* pour afficher les commandes mssql ou tapez sur *sqluse*, puis sélectionnez la commande **MS SQL : Utiliser la base de données**.
+3. Tapez *sql* pour afficher les commandes mssql ou tapez sur *sqluse*, puis sélectionnez la commande **MS SQL : Utiliser une base de données**.
 
 4. Sélectionnez la nouvelle base de données **TutorialDB**.
 
@@ -164,7 +164,7 @@ Comme alternative aux étapes précédentes, vous pouvez également créer et mo
 
 ## <a name="insert-and-query"></a>Insérer et interroger
 
-1. Ajoutez les instructions suivantes pour insérer quatre lignes dans la table  **Employees**.
+1. Ajoutez les instructions suivantes pour insérer quatre lignes dans la table **Employees**.
 
    ```sql
    -- Insert rows into table 'Employees'
@@ -231,7 +231,7 @@ Si vous avez besoin d’enregistrer et d’exécuter ultérieurement des scripts
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Si vous débutez avec T-SQL, consultez le [Tutoriel : Écrire des instructions Transact-SQL](../../t-sql/tutorial-writing-transact-sql-statements.md) et la [Référence Transact-SQL (moteur de base de données)](../../t-sql/language-reference.md).
+Si vous débutez avec T-SQL, consultez [Tutoriel : Écrire des instructions Transact-SQL](../../t-sql/tutorial-writing-transact-sql-statements.md) et [Informations de référence sur Transact-SQL (moteur de base de données)](../../t-sql/language-reference.md).
 
 Pour plus d’informations sur l’utilisation de l’extension mssql ou sur la contribution à cette dernière, consultez le [wiki du projet d’extension mssql](https://github.com/Microsoft/vscode-mssql/wiki).
 

@@ -5,16 +5,16 @@ description: Apprenez à mettre à niveau des clusters Big Data SQL Server dans 
 author: cloudmelon
 ms.author: melqin
 ms.reviewer: mikeray
-ms.date: 09/30/2020
+ms.date: 02/11/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 2a79c82f2c3fd443d7237fc3b0a1f7c51102bceb
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 799afc246b106c4b49d6aba44f8d26a761d6c2cc
+ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100048014"
+ms.lasthandoff: 02/13/2021
+ms.locfileid: "100343959"
 ---
 # <a name="deploy-sql-server-big-data-cluster-in-active-directory-mode"></a>Déployer un cluster Big Data SQL Server en mode Active Directory
 
@@ -54,8 +54,10 @@ L’intégration AD nécessite les paramètres suivants. Ajoutez ces paramètre
 
 - `security.activeDirectory.realm` **Paramètre facultatif** : Dans la majorité des cas, le domaine est égal au nom de domaine. Pour les cas où ils ne sont pas les mêmes, utilisez ce paramètre pour définir le nom du domaine (par exemple, `CONTOSO.LOCAL`). La valeur fournie pour ce paramètre doit être complète.
 
-  > [!IMPORTANT]
-  > À ce stade, le BDC ne prend pas en charge une configuration où le nom de domaine Active Directory est différent du nom de **NETBIOS** du domaine Active Directory.
+- `security.activeDirectory.netbiosDomainName` **Paramètre facultatif** : Il s’agit du nom NetBIOS du domaine Active Directory. Dans la majorité des cas, ce nom correspond à la première étiquette du nom de domaine Active Directory. Pour les cas différents, utilisez ce paramètre pour définir le nom de domaine NETBIOS. Cette valeur ne doit pas contenir de points. Habituellement, ce nom est utilisé pour qualifier les comptes d’utilisateur dans le domaine. Par exemple, CONTOSO\user où CONTOSO est le nom de domaine NETBIOS.
+
+  > [!NOTE]
+  > La prise en charge d’une configuration dans laquelle le nom de domaine Active Directory est différent du nom **NetBIOS** du domaine Active Directory qui utilise *security.activeDirectory.netbiosDomainName* est activée depuis SQL Server 2019 CU9.
 
 - `security.activeDirectory.domainDnsName`: Nom du domaine DNS qui sera utilisé pour le cluster (par exemple, `contoso.local`).
 

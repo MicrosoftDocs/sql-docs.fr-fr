@@ -1,7 +1,7 @@
 ---
 title: Analyse des performances d’un serveur de rapports | Microsoft Docs
 description: Découvrez comment superviser les performances du serveur de rapports pour évaluer l’activité du serveur, observer les tendances, diagnostiquer les goulots d’étranglement et collecter des données sur la configuration du système.
-ms.date: 06/20/2019
+ms.date: 02/12/2021
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
 ms.technology: report-server
@@ -17,14 +17,17 @@ helpviewer_keywords:
 ms.assetid: c1bc13d4-8297-4daf-bb19-4c1e5ba292a6
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: 12afa9794e4d48e2c7b16620ce845660f61801bc
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: deae632ce9305b58b72e24e1a57507f9f4c5ee89
+ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97461410"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100489433"
 ---
 # <a name="monitoring-report-server-performance"></a>Analyse des performances d'un serveur de rapports
+
+[!INCLUDE[ssrs-appliesto](../../includes/ssrs-appliesto.md)] [!INCLUDE[ssrs-appliesto-2016-and-later](../../includes/ssrs-appliesto-2016-and-later.md)] [!INCLUDE[ssrs-appliesto-pbirsi](../../includes/ssrs-appliesto-pbirs.md)]
+
   Utilisez les outils d'analyse des performances sur un serveur de rapports pour évaluer l'activité du serveur, observer les tendances, diagnostiquer les goulots d'étranglement du système ou collecter des données permettant de déterminer si la configuration actuelle est suffisante. Pour optimiser les performances du serveur, vous pouvez spécifier la fréquence de recyclage du domaine d'application du serveur de rapports. Pour plus d’informations, consultez [Configurer la mémoire disponible pour les applications du serveur de rapports](../../reporting-services/report-server/configure-available-memory-for-report-server-applications.md).  
   
 ## <a name="sources-of-performance-data"></a>Sources des données de performances  
@@ -34,13 +37,13 @@ ms.locfileid: "97461410"
   
 -   Observateur d'événements  
   
--   Console de performance  
+-   Analyseur de performances  
   
  Le Gestionnaire des tâches fournit des informations sur les programmes et les processus en cours d'exécution sur votre ordinateur. Il vous permet de surveiller les indicateurs clés des performances de votre serveur de rapports. Vous pouvez également évaluer l'activité des processus en cours d'exécution et afficher des graphiques et des données sur l'utilisation de l'UC et de la mémoire. Pour plus d'informations sur l'utilisation du Gestionnaire des tâches, consultez la documentation du produit [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows.  
   
- Vous pouvez utiliser la Console de performance et l'Observateur d'événements pour créer des journaux et des alertes à propos du traitement des rapports et de la consommation de ressources. Pour plus d’informations sur les événements Windows générés par [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], consultez [Journal des applications Windows](../../reporting-services/report-server/windows-application-log.md). Pour plus d'informations sur la Console de performance, consultez la section « Compteurs de performances Windows » plus loin dans cet article.  
+ Vous pouvez utiliser l’observateur d’événements et l’Analyseur de performances pour créer des journaux et des alertes à propos du traitement des rapports et de la consommation des ressources. Pour plus d’informations sur les événements Windows générés par [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], consultez [Journal des applications Windows](../../reporting-services/report-server/windows-application-log.md). Pour plus d’informations sur l’Analyseur de performances, consultez « Compteurs de performances Windows » plus loin dans cet article.  
   
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Les utilitaires fournissent également des informations sur la base de données du serveur de rapports et sur les bases de données temporaires utilisées pour la gestion des sessions et de la mise en cache.  
+ Les utilitaires [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], comme [SQL Server Profiler](../../tools/sql-server-profiler/sql-server-profiler.md) ou les [événements étendus](../../relational-databases/extended-events/extended-events.md), fournissent également des informations sur la base de données du serveur de rapports et sur les bases de données temporaires utilisées pour la gestion des sessions et de la mise en cache.  
   
 ## <a name="windows-performance-counters"></a>Compteurs de performances Windows  
  La surveillance de compteurs de performances spécifiques vous permet de :  
@@ -55,41 +58,41 @@ ms.locfileid: "97461410"
   
 -   Valider que les modifications qui ont été apportées à la configuration du système ont l'effet souhaité sur les performances.  
 
-::: moniker range=">=sql-server-2017"
   
 ## <a name="reporting-services-performance-objects"></a>Objets de performance de Reporting Services  
-SQL Server 2016 Reporting Services ou version ultérieure (SSRS) comprend les objets de performance suivants :  
+SQL Server 2016 Reporting Services comprend les objets de performance suivants :  
   
--   **Service Web MSRS 2011** et **Service Web MSRS 2011 en mode SharePoint** pour analyser les performances d’un serveur de rapports. Ces objets de performance incluent une collection de compteurs utilisée pour suivre le traitement du serveur de rapports initialisé en général via des opérations de consultation du rapport interactives. Ces compteurs sont réinitialisés à chaque interruption du service Web Report Server par [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] .  
+-   **MSRS 2016 Web Service** et **MSRS 2016 Web Service SharePoint Mode** pour superviser les performances du serveur de rapports. Ces objets de performance incluent une collection de compteurs utilisée pour suivre le traitement du serveur de rapports initialisé en général via des opérations de consultation du rapport interactives. Ces compteurs sont réinitialisés dès lors que le service Web Report Server est arrêté ou recyclé.  
   
--   **Service Windows MSRS 2011** et **Service Windows MSRS 2011 en mode SharePoint** pour surveiller les opérations planifiées et la remise des rapports. Ces objets de performance incluent une collection de compteurs utilisée pour suivre le traitement des rapports initialisé via des opérations planifiées. Les opérations planifiées englobent l'abonnement et la remise, les instantanés d'exécution de rapport et l'historique de rapport.  
+-   **MSRS 2016 Windows Service** et **MSRS 2016 Windows Service SharePoint Mode** pour superviser les opérations planifiées et la remise des rapports. Ces objets de performance incluent une collection de compteurs utilisée pour suivre le traitement des rapports initialisé via des opérations planifiées. Les opérations planifiées englobent l'abonnement et la remise, les instantanés d'exécution de rapport et l'historique de rapport.  
   
--   **Service ReportServer** et **Service ReportServerSharePoint** pour surveiller des événements liés à HTTP et la gestion de la mémoire. Ces compteurs sont spécifiques à [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], et ils suivent les événements liés à HTTP pour le serveur de rapports, notamment les demandes, les connexions et les tentatives d’ouverture de session. Cet objet de performance inclut également des compteurs liés à la gestion de la mémoire.  
+-   **ReportServer:Service** et **ReportServerSharePoint:Service** pour surveiller des événements liés à HTTP et la gestion de la mémoire. Ces compteurs sont spécifiques à [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], et ils suivent les événements liés à HTTP pour le serveur de rapports, notamment les demandes, les connexions et les tentatives d’ouverture de session. Cet objet de performance inclut également des compteurs liés à la gestion de la mémoire.  
   
- Si vous possédez plusieurs instances de serveurs de rapports sur un seul ordinateur, vous pouvez les analyser collectivement ou individuellement. Choisissez les instances à inclure au moment où vous ajoutez un compteur. Pour plus d’informations sur l’utilisation de la Console de performances (perfmon.msc) et l’ajout de compteurs, consultez la documentation du produit [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows.  
+ Si vous possédez plusieurs instances de serveurs de rapports sur un seul ordinateur, vous pouvez les analyser collectivement ou individuellement. Choisissez les instances à inclure au moment où vous ajoutez un compteur. Pour plus d’informations sur l’utilisation de l’Analyseur de performances (perfmon.msc) et l’ajout de compteurs, consultez la documentation du produit [!INCLUDE[msCoName](../../includes/msconame-md.md)] [Analyseur de performances Windows](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).  
   
 ## <a name="other-performance-counters"></a>Autres compteurs de performance  
- Les compteurs de performances [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] personnalisés sont fournis uniquement pour le **Service Web MSRS 2008**, le **Service Windows MSRS 2008** et **Service ReportServer**. Les objets de performance suivants fournissent des données d'analyse des performances supplémentaires pour le serveur de rapports.  
-  
+ Des compteurs de performances [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] personnalisés sont fournis uniquement pour les objets de performance Reporting Services listés ci-dessus. Les objets de performance .NET Framework suivants fournissent des données de supervision des performances supplémentaires pour le serveur de rapports.
+ 
+ > [!NOTE]
+ > Power BI Report Server et SQL Server Reporting Services 2017 et les versions ultérieures n’incluent pas d’objets de performance Reporting Services. Il existe des [compteurs de performances .NET Framework](https://docs.microsoft.com/dotnet/framework/debug-trace-profile/performance-counters) disponibles pour fournir une supervision des performances du serveur de rapports. 
+ 
 |Objet de performance|Notes|  
 |------------------------|-----------|  
-|**Données CLR .NET** et **mémoire CLR .NET**|Le portail web utilise les compteurs de performances [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]. Pour plus d'informations, consultez la rubrique relative à l'amélioration des performances et de l'évolutivité des applications .NET, « Improving .NET Application Performance and Scalability » (en anglais) sur MSDN.|  
+|**Données CLR .NET** et **mémoire CLR .NET**|Le portail web utilise les compteurs de performances [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)]. Pour plus d’informations, téléchargez [Amélioration des performances et de la scalabilité des applications .NET](https://www.microsoft.com/download/details.aspx?id=11711).|  
 |**Processus**|Ajoutez les compteurs de performances **Temps écoulé** et **ID de processus** pour une instance ReportingServicesService pour suivre le temps de fonctionnement de processus par ID de processus.|  
   
 ## <a name="sharepoint-events"></a>Événements SharePoint  
  En plus des objets de performance [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] , vous pouvez également vouloir configurer des événements SharePoint si vous exécutez un serveur de rapports en mode intégré SharePoint et avez configuré votre environnement de création de rapports de façon à utiliser un produit SharePoint. Dans cette section, utilisez les événements d'un serveur de rapports en mode intégré SharePoint pour examiner les événements de diagnostic qui peuvent fournir des informations utiles si votre environnement de création de rapports est intégré SharePoint.  
   
 ## <a name="in-this-section"></a>Contenu de cette section  
- [Compteurs de performances du service Web MSRS 2011 et des objets de performance du service Windows MSRS 2011 &#40;mode natif&#41;](../../reporting-services/report-server/performance-counters-msrs-2011-web-service-performance-objects.md)  
+ [Compteurs de performances pour les objets de performance MSRS 2016 Web Service et MSRS 2016 Windows Service &#40;mode natif&#41;](../../reporting-services/report-server/performance-counters-msrs-2011-web-service-performance-objects.md)  
  Décrit les compteurs de performances utilisés par le service Web Report Server.  
   
- [Compteurs de performances du service Web MSRS 2011 en mode SharePoint et des objets de performance du service Windows MSRS 2011 en mode SharePoint &#40;mode SharePoint&#41;](../../reporting-services/report-server/performance-counters-msrs-2011-sharepoint-mode-performance-objects.md)  
+ [Compteurs de performances pour les objets de performance MSRS 2016 Web Service SharePoint Mode et MSRS 2016 Windows Service SharePoint Mode &#40;mode SharePoint&#41;](../../reporting-services/report-server/performance-counters-msrs-2011-sharepoint-mode-performance-objects.md)  
  Décrit les compteurs de performances utilisés par le service Windows Report Server.  
   
  [Compteurs de performances pour des objets de performances ReportServer:Service  et ReportServerSharePoint:Service](../../reporting-services/report-server/performance-counters-reportserver-service-performance-objects.md)  
  Décrit les compteurs de performance liés à HTTP et relatifs à la mémoire dans [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)].  
-
-::: moniker-end
   
 ## <a name="see-also"></a>Voir aussi  
  [Configurer la mémoire disponible pour les applications du serveur de rapports](../../reporting-services/report-server/configure-available-memory-for-report-server-applications.md)   
