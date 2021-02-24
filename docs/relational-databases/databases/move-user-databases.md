@@ -25,12 +25,12 @@ helpviewer_keywords:
 ms.assetid: ad9a4e92-13fb-457d-996a-66ffc2d55b79
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: feb85bc9b14169c862447c8465ce47c4637b5c32
-ms.sourcegitcommit: cfa04a73b26312bf18d8f6296891679166e2754d
+ms.openlocfilehash: 64b8416375cdc61c43e8799b33891096858a79f7
+ms.sourcegitcommit: 059722ff78a6061b801807416b312ae9f721ec7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92195017"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100636712"
 ---
 # <a name="move-user-databases"></a>Déplacer des bases de données utilisateur
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -48,19 +48,19 @@ ms.locfileid: "92195017"
 ## <a name="planned-relocation-procedure"></a>Procédure de déplacement planifié  
  Pour déplacer un fichier journal ou un fichier de données dans le cadre d'un déplacement planifié, procédez comme suit :  
   
-1.  Exécutez la commande suivante.  
+1.  Pour chaque fichier à déplacer, exécutez la commande suivante.  
+  
+    ```  
+    ALTER DATABASE database_name MODIFY FILE ( NAME = logical_name, FILENAME = 'new_path\os_file_name' );  
+    ```  
+  
+2.  Exécutez la commande suivante.  
   
     ```  
     ALTER DATABASE database_name SET OFFLINE;  
     ```  
   
-2.  Déplacez le ou les fichiers vers le nouvel emplacement.  
-  
-3.  Pour chaque fichier déplacé, exécutez la commande suivante.  
-  
-    ```  
-    ALTER DATABASE database_name MODIFY FILE ( NAME = logical_name, FILENAME = 'new_path\os_file_name' );  
-    ```  
+3.  Déplacez le ou les fichiers vers le nouvel emplacement.  
   
 4.  Exécutez la commande suivante.  
   

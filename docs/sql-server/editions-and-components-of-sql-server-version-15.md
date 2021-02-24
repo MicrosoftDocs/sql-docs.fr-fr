@@ -34,12 +34,12 @@ ms.assetid: ''
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>= sql-server-ver15'
-ms.openlocfilehash: 9987384899eeb9087a938d8fd8e8b156ff8e1962
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 98b630f4471d35259db609a5bf1740ff96b8d604
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99236267"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100336180"
 ---
 # <a name="editions-and-supported-features-of-sssql19-md"></a>Éditions et fonctionnalités prises en charge de [!INCLUDE[sssql19-md](../includes/sssql19-md.md)]
 
@@ -108,7 +108,7 @@ Utilisez les informations des tableaux suivants pour déterminer le jeu de fonct
 
 |Outils d'administration|Description|
 |----------------------|-----------------|
-|[!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)]|[!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] (SSMS) est un environnement intégré permettant d'accéder aux composants de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] en vue de les configurer, de les gérer, de les administrer et de les développer. SSMS permet aux développeurs et aux administrateurs de tous niveaux de compétence d'utiliser [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. La dernière édition de SSMS met à jour SMO, qui comprend l’API S[QL Assessment](../tools/sql-assessment-api/sql-assessment-api-overview.md).<br /><br/> Télécharger et installer <br />[!INCLUDE[ssManStudio](../includes/ssmanstudio-md.md)] de [Télécharger [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Management Studio](https://msdn.microsoft.com/library/mt238290.aspx)|
+|[!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)]|[!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] (SSMS) est un environnement intégré permettant d'accéder aux composants de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] en vue de les configurer, de les gérer, de les administrer et de les développer. SSMS permet aux développeurs et aux administrateurs de tous niveaux de compétence d'utiliser [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. La dernière édition de SSMS met à jour SMO, qui comprend l’[API SQL Assessment](../tools/sql-assessment-api/sql-assessment-api-overview.md).<br /><br/> Télécharger et installer <br />[!INCLUDE[ssManStudio](../includes/ssmanstudio-md.md)] de [Télécharger [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Management Studio](https://msdn.microsoft.com/library/mt238290.aspx)|
 |[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Gestionnaire de configuration|Le Gestionnaire de configuration[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] permet de gérer la configuration de base des services [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] , des protocoles serveur et clients et des alias clients.|
 |[!INCLUDE[ssSqlProfiler](../includes/sssqlprofiler-md.md)]|[!INCLUDE[ssSqlProfiler](../includes/sssqlprofiler-md.md)] fournit une interface utilisateur graphique qui permet d’analyser une instance du [!INCLUDE[ssDE](../includes/ssde-md.md)] ou d’ [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)].|
 |Assistant Paramétrage du[!INCLUDE[ssDE](../includes/ssde-md.md)]|L'Assistant Paramétrage du[!INCLUDE[ssDE](../includes/ssde-md.md)] permet de créer des ensembles d'index, des vues indexées et des partitions optimaux.|
@@ -126,7 +126,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="scale-limits"></a><a name="Cross-BoxScaleLimits"></a> Limites d’échelle
 
-|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
 |-------|--------:|------:|---:|-------------------------------:|-----:|
 |Capacité maximale de calcul utilisée par une instance unique - [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)]<sup>1</sup>|Maximum du système d'exploitation|Limité à moins de 4 sockets ou 24 cœurs|Limité à moins de 4 sockets ou 16 cœurs|Limité à moins de 1 socket ou 4 cœurs|Limité à moins de 1 socket ou 4 cœurs|
 |Capacité maximale de calcul utilisée par une instance unique - [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] ou [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)]|Maximum du système d'exploitation|Limité à moins de 4 sockets ou 24 cœurs|Limité à moins de 4 sockets ou 16 cœurs|Limité à moins de 1 socket ou 4 cœurs|Limité à moins de 1 socket ou 4 cœurs|
@@ -145,7 +145,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="rdbms-high-availability"></a><a name="RDBMSHA"></a> Haute disponibilité SGBDR
 
-|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
 |-------|:--------:|:------:|:-:|--------------------------------:|:-----:|
 |Support de base du serveur<sup>1</sup>|Oui|Oui|Oui|Oui|Oui|
 |Copie des journaux de transaction|Oui|Oui|Oui|Non|Non|
@@ -188,7 +188,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="rdbms-scalability-and-performance"></a><a name="RDBMSSP"></a> Scalabilité et performances SGBDR
 
-|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
 |------:|:--------:|:------:|:-:|:-------------------------------:|:------:|
 |Columnstore<sup>1</sup> <sup>2</sup>|Oui|Oui|Oui|Oui|Oui|
 |Fichiers binaires LOB dans les index columnstore cluster|Oui|Oui|Oui|Oui|Oui|
@@ -229,7 +229,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="rdbms-security"></a><a name="RDBMSS"></a> Sécurité SGBDR
 
-|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
 |-------|:--------:|:------:|:-:|:-----:|:-----------------------:|:-----:|
 |Sécurité au niveau des lignes|Oui|Oui|Oui|Oui|Oui|
 |Always Encrypted|Oui|Oui|Oui|Oui|Oui|
@@ -246,7 +246,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="replication"></a>Réplication<a name="Replication"></a>
 
-|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
 |-------|:---------:|:-------:|:--:|:--------------------------------:|:------:|
 |Abonnés hétérogènes|Oui|Oui|Non|Non|Non|
 |Réplication de fusion|Oui|Oui|Oui<sup>1</sup>|Oui<sup>1</sup>|Oui<sup>1</sup>|
@@ -262,7 +262,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="management-tools"></a><a name="SSMS"></a> Outils d’administration
 
-|Fonctionnalité|Entreprise|standard|Web|Express with Advanced Services|Express|
+|Fonctionnalité|Entreprise|Standard|Web|Express with Advanced Services|Express|
 |-------|:--------:|:------:|:-:|:----------------------------:|:-----:|
 |Objets de gestion SQL (SMO)|Oui|Oui|Oui|Oui|Oui|
 |API d’évaluation SQL|Oui|Oui|Oui|Oui|Oui|
@@ -287,7 +287,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="rdbms-manageability"></a><a name="RDBMSM"></a> Simplicité de gestion SGBDR
 
-|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
 |-------|:--------:|:------:|:-:|:-------------------------------:|:-----:|
 |Instances utilisateur|Non|Non|Non|Oui|Oui|
 |LocalDB|Non|Non|Non|Oui|Non|
@@ -320,7 +320,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="development-tools"></a><a name="DevTools"></a> Outils de développement
 
-|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
 |-------|:--------:|:------:|:-:|:-------------------------------:|:-----:|
 |Intégration de Microsoft Visual Studio|Oui|Oui|Oui|Oui|Oui|
 |Intellisense (Transact-SQL et MDX)|Oui|Oui|Oui|Oui|Oui|
@@ -329,7 +329,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [[
 
 ## <a name="programmability"></a><a name="Programmability"></a> Programmability
 
-|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express
+|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express
 |-------|:--------:|:------:|:-:|:-------------------------------:|:-----:|
 |Intégration R de base<sup>1</sup>|Oui|Oui|Oui|Oui|Non|
 |Intégration R avancée<sup>2</sup>|Oui|Non|Non|Non|Non|
@@ -377,7 +377,7 @@ Pour plus d’informations sur les fonctionnalités [!INCLUDE[ssMDSshort_md](../
 
 ## <a name="data-warehouse"></a><a name="DW"></a> Entrepôt de données
 
-|Fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
+|Fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
 |-------|:--------:|:------:|:-:|:-------------------------------:|:-----:|
 |Génération automatique de la mise en lots et du schéma d'entrepôt de données|Oui|Oui|Non|Non|Non|
 |Capture des données modifiées|Oui|Oui|Non|Non|Non|
@@ -399,7 +399,7 @@ Pour plus d’informations sur les fonctionnalités clientes Business Intelligen
 
 ## <a name="spatial-and-location-services"></a><a name="SLS"></a> Services d’emplacement et spatiaux
 
-|Nom de la fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
+|Nom de la fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
 |-------------|:-------:|:------:|:-:|:-------------------------------:|:-----:|
 |Index spatiaux|Oui|Oui|Oui|Oui|Oui|
 |Types de données planaires et géodésiques|Oui|Oui|Oui|Oui|Oui|
@@ -408,14 +408,14 @@ Pour plus d’informations sur les fonctionnalités clientes Business Intelligen
 
 ## <a name="additional-database-services"></a><a name="ADS"></a> Services de base de données supplémentaires
 
-|Nom de la fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
+|Nom de la fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
 |------------|:--------:|:------:|:-:|:-------------------------------:|:-----:|
 |[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Assistant Migration|Oui|Oui|Oui|Oui|Oui|
 |Messagerie de base de données|Oui|Oui|Oui|Non|Non|
 
 ## <a name="other-components"></a><a name="Other"></a> Autres composants
 
-|Nom de la fonctionnalité|Entreprise|standard|Web|Express avec<br/>Advanced Services|Express|
+|Nom de la fonctionnalité|Entreprise|Standard|Web|Express avec<br/>Advanced Services|Express|
 |------------|:--------:|:------:|:-:|:-------------------------------:|:-----:|
 |StreamInsight|StreamInsight Premium Edition|StreamInsight Standard Edition|StreamInsight Standard Edition|Non|Non|
 |StreamInsight HA|StreamInsight Premium Edition|Non|Non|Non|Non|

@@ -11,12 +11,12 @@ ms.author: drskwier
 ms.reviewer: maghan
 ms.custom: seo-lt-2019
 ms.date: 12/17/2020
-ms.openlocfilehash: 2e1d3faf6d17417ea1f4a134778ddd9342441231
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.openlocfilehash: 050447d6f1f9f13f04b01dec82e1b50ca6efbc69
+ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98596858"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100354815"
 ---
 # <a name="release-notes-for-sql-server-management-studio-ssms"></a>Notes de publication de SQL Server Management Studio (SSMS)
 
@@ -722,7 +722,7 @@ Pour connaître les autres problèmes connus et pour envoyer vos commentaires à
 |Classification des données|Ajout d’une nouvelle fonctionnalité de « classification des données » à SMO. L’objet Column expose de nouvelles propriétés : SensitivityLabelName, SensitivityLabelId, SensitivityInformationTypeName, SensitivityInformationTypeId et IsClassified (en lecture seule). Pour plus d’informations, consultez [ADD SENSITIVITY CLASSIFICATION (Transact-SQL)](../t-sql/statements/add-sensitivity-classification-transact-sql.md)|
 |Classification des données|Ajout d’un nouvel élément de menu « Rapport de classification » au menu volant « Classification des données ».|
 |Classification des données| Recommandations mises à jour.|
-|Mise à niveau du niveau de compatibilité de la base de données|Ajout d’une nouvelle option sous **_Nom de la base de données_ *_ > _* _Tâches_ *_ > _* _Mise à niveau de la base de données_ *_. Celle-ci démarre le nouvel _* Assistant Paramétrage de requêtes** pour guider l’utilisateur dans le processus suivant : Collecte d’une ligne de base de performances avant la mise à niveau du niveau de compatibilité de la base de données. Mise à niveau vers le niveau de compatibilité de la base de données souhaité.  Collecte d’un deuxième passage de données de performances sur la même charge de travail. Détection des régressions de la charge de travail et indication de recommandations testées pour améliorer les performances de la charge de travail.  Ce processus est semblable au processus de mise à niveau de base de données documenté dans la rubrique [Scénarios d’utilisation du Magasin des requêtes](../relational-databases/performance/query-store-usage-scenarios.md#CEUpgrade), à l’exception de la dernière étape où l’Assistant Paramétrage de requêtes ne s’appuie pas sur un état valide antérieur connu pour générer des recommandations.|
+|Mise à niveau du niveau de compatibilité de la base de données|Ajout d’une nouvelle option sous ***Nom de la base de données** _ > _*_Tâches_*_ > _*_Mise à niveau de la base de données_*_. Celle-ci démarre le nouvel _ *Assistant Paramétrage de requêtes** pour guider l’utilisateur tout au long du processus suivant : Collecte d’une base de référence de performances avant la mise à niveau du niveau de compatibilité de la base de données. Mise à niveau vers le niveau de compatibilité de la base de données souhaité.  Collecte d’un deuxième passage de données de performances sur la même charge de travail. Détection des régressions de la charge de travail et indication de recommandations testées pour améliorer les performances de la charge de travail.  Ce processus est semblable au processus de mise à niveau de base de données documenté dans la rubrique [Scénarios d’utilisation du Magasin des requêtes](../relational-databases/performance/query-store-usage-scenarios.md#CEUpgrade), à l’exception de la dernière étape où l’Assistant Paramétrage de requêtes ne s’appuie pas sur un état valide antérieur connu pour générer des recommandations.|
 |Assistant Application de la couche Données|Ajout de la prise en charge de l’importation/exportation de l’application de la couche Données avec des tables de graphe.|
 |Assistant Importation d’un fichier plat|Ajout d’une logique pour notifier l’utilisateur que l’importation peut avoir abouti à un renommage des colonnes.|
 |Integration Services (SSIS)|Les clients peuvent désormais planifier des packages SSIS sur les runtimes d’intégration Azure-SSIS qui se trouvent dans le cloud Azure Government.|

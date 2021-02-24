@@ -21,16 +21,16 @@ ms.assetid: 7a34be46-15b4-4b6b-8497-cfd8f9f14234
 author: rothja
 ms.author: jroth
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: b38293d4b60168028a5669a9f5dd2e01ccbde012
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 9c5f6c8b611dcc86fcd514ae425edc6f45a7657f
+ms.sourcegitcommit: 8bdb5a51f87a6ff3b94360555973ca0cd0b6223f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97466750"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100549395"
 ---
 # <a name="track-data-changes-sql-server"></a>Suivre les modifications de données (SQL Server)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
-  [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] fournit deux fonctionnalités qui suivent les modifications apportées aux données d'une base de données : [Capture de données modifiées](#Capture) et [Suivi des modifications](#Tracking). Ces fonctionnalités permettent aux applications de déterminer les modifications de DML (opérations d’insertion, de mise à jour et de suppression) apportées aux tables utilisateur dans une base de données. La capture de données modifiées et le suivi des modifications peuvent être activés sur la même base de données ; aucune attention particulière n'est requise. Pour connaître les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui prennent en charge la capture de données et le suivi des modifications, consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2016](~/sql-server/editions-and-supported-features-for-sql-server-2016.md). Lorsque le suivi des modifications est pris en charge par [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)]. La capture de données modifiées est prise en charge seulement dans SQL Server et Azure SQL Managed Instance.
+  [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] fournit deux fonctionnalités qui suivent les modifications apportées aux données d'une base de données : [Capture de données modifiées](#Capture) et [Suivi des modifications](#Tracking). Ces fonctionnalités permettent aux applications de déterminer les modifications de DML (opérations d’insertion, de mise à jour et de suppression) apportées aux tables utilisateur dans une base de données. La capture de données modifiées et le suivi des modifications peuvent être activés sur la même base de données ; aucune attention particulière n'est requise. Pour connaître les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui prennent en charge la capture de données et le suivi des modifications, consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2016](~/sql-server/editions-and-supported-features-for-sql-server-2016.md). Lorsque le suivi des modifications est pris en charge par [!INCLUDE[ssazure_md](../../includes/ssazure_md.md)]. La capture de données modifiées est prise en charge seulement dans SQL Server et Azure SQL Managed Instance.
   
 ## <a name="benefits-of-using-change-data-capture-or-change-tracking"></a>Avantages liés à l'utilisation de la capture de données modifiées ou du suivi des modifications  
  Certaines applications doivent, pour être efficaces, être en mesure de rechercher les données qui ont été modifiées dans une base de données. En règle générale, les développeurs d'applications doivent, pour identifier les données modifiées, implémenter une méthode de suivi personnalisée dans leurs applications en utilisant une combinaison de déclencheurs, de colonnes d'horodateur et de tables supplémentaires. La création de ces applications demande généralement un effort considérable, aboutit à des mises à jour de schéma et se traduit souvent par une importante diminution des performances.  
