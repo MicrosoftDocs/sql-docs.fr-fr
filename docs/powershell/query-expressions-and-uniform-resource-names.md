@@ -14,12 +14,12 @@ ms.author: maghan
 ms.reviewer: matteot, drskwier
 ms.custom: ''
 ms.date: 10/14/2020
-ms.openlocfilehash: 839bef5d4b3aba3a9d95664c549556d6c05206e5
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: ea6bb90e43c66160463cdfa0229826b3a7013762
+ms.sourcegitcommit: a9e982e30e458866fcd64374e3458516182d604c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081898"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "100338234"
 ---
 # <a name="query-expressions-and-uniform-resource-names"></a>Expressions de requête et noms URN
 
@@ -169,5 +169,5 @@ Server[@Name='MYCOMPUTER']/Database[@Name='AdventureWorks2012"]/Table[Not(is_nul
   
 ## <a name="see-also"></a>Voir aussi
 
-- [Invoke-PolicyEvaluation (applet de commande)](invoke-policyevaluation-cmdlet.md)
+- [Invoke-PolicyEvaluation (applet de commande)](/powershell/module/sqlserver/Invoke-PolicyEvaluation)
 - [SQL Server Audit &#40moteur de base de données&#41;](../relational-databases/security/auditing/sql-server-audit-database-engine.md)
