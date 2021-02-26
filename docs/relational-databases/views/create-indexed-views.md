@@ -19,12 +19,12 @@ ms.assetid: f86dd29f-52dd-44a9-91ac-1eb305c1ca8d
 author: stevestein
 ms.author: sstein
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 148f93b43f704686b3083954cb3d7353f33a16e0
-ms.sourcegitcommit: c6cc0b669b175ae290cf5b08952010661ebd03c3
+ms.openlocfilehash: 5c074add532e55209c8fc304a98da686cec60aab
+ms.sourcegitcommit: 059722ff78a6061b801807416b312ae9f721ec7d
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100530858"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100636723"
 ---
 # <a name="create-indexed-views"></a>Créer des vues indexées
 
@@ -159,8 +159,8 @@ Les index sur les tables et les vues peuvent être désactivés. Lorsqu'un index
 
 Pour créer la vue, un utilisateur a besoin de l’autorisation **CREATE VIEW** dans la base de données et de l’autorisation **ALTER** sur le schéma où la vue est créée. Si la table de base se trouve dans un autre schéma, **REFERENCES** est l’autorisation minimale nécessaire sur la table. Si l’utilisateur qui crée l’index diffère des utilisateurs qui ont créé la vue, pour la création de l’index seul, l’autorisation **ALTER** sur la vue est nécessaire (couverte par ALTER sur le schéma).
 
-    > [!NOTE]  
-    > Indexes can only be created on views which have the same owner as the referenced table or tables. This is also called an intact **ownership-chain** between the view and the table(s). Typically, when table and view reside within the same schema, the same schema-owner applies to all objects within the schema. But it is possible that individual objects have different explicit owners. The column **principal_id** in sys.tables contains a value if the owner is different from the schema-owner.
+> [!NOTE]  
+> Les index peuvent être seulement créés sur des vues qui ont le même propriétaire que la ou les tables référencées. On parle de **chaîne d’appartenance** intacte entre la vue et la ou les tables. En règle générale, lorsque la table et la vue résident dans le même schéma, le même propriétaire de schéma s’applique à tous les objets du schéma. C’est pourquoi il est possible de créer une vue et non le propriétaire de la vue. En revanche, il est également possible que les objets individuels d’un schéma aient des propriétaires explicites différents. La colonne **principal_id** dans sys.tables contient une valeur si le propriétaire est différent du propriétaire de schéma.
 
 
 ## <a name="using-transact-sql"></a><a name="TsqlProcedure"></a> Utilisation de Transact-SQL
