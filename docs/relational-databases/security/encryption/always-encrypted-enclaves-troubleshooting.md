@@ -11,12 +11,12 @@ ms.topic: how-to
 author: jaszymas
 ms.author: jaszymas
 monikerRange: '>= sql-server-ver15 || = sqlallproducts-allversions'
-ms.openlocfilehash: ee15152be634c08cb04ec6a01716604fae720471
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: dc50006d17228bf3b5ec03c2a672ed113260bf3b
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100069724"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101839258"
 ---
 # <a name="troubleshoot-common-issues-for-always-encrypted-with-secure-enclaves"></a>Résoudre les problèmes courants relatifs à Always Encrypted avec enclaves sécurisées
 
@@ -28,7 +28,7 @@ Pour plus d’informations sur l’exécution de requêtes utilisant des enclave
 
 Pour exécuter des instructions utilisant une enclave sécurisée, vous devez activer Always Encrypted et spécifier une URL d’attestation pour la connexion de base de données, comme cela est expliqué dans les [prérequis pour l’exécution d’instructions utilisant des enclaves sécurisées](always-encrypted-enclaves-query-columns.md#prerequisites-for-running-statements-using-secure-enclaves). Toutefois, si vous spécifiez une URL d’attestation, mais que votre base de données dans [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] ou votre instance [!INCLUDE [ssnoversion-md](../../../includes/ssnoversion-md.md)] cible ne prend pas en charge les enclaves sécurisées ou n’est pas configurée correctement, votre connexion échoue.
 
-- Si vous utilisez [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)], vérifiez que votre base de données utilise la configuration matérielle de la [série DC](https://docs.microsoft.com/azure/azure-sql/database/service-tiers-vcore?tabs=azure-portal#dc-series). Pour plus d’informations, consultez [Activer Intel SGX pour votre base de données Azure SQL](/azure/azure-sql/database/always-encrypted-enclaves-enable-sgx).
+- Si vous utilisez [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)], vérifiez que votre base de données utilise la configuration matérielle de la [série DC](/azure/azure-sql/database/service-tiers-vcore?tabs=azure-portal#dc-series). Pour plus d’informations, consultez [Activer Intel SGX pour votre base de données Azure SQL](/azure/azure-sql/database/always-encrypted-enclaves-enable-sgx).
 - Si vous utilisez [!INCLUDE[sql-server-2019](../../../includes/sssql19-md.md)], vérifiez que l’enclave sécurisée est correctement configurée pour votre instance. Pour plus d’informations, consultez [Configurer l’enclave sécurisée dans SQL Server](always-encrypted-enclaves-configure-enclave-type.md).
 
 ## <a name="attestation-errors-when-using-microsoft-azure-attestation"></a>Erreurs d’attestation lors de l’utilisation de Microsoft Azure Attestation
@@ -56,7 +56,7 @@ Des erreurs peuvent se produire à différentes étapes du workflow ci-dessus en
   - La cause racine probable est une stratégie d’attestation incorrecte. Veillez à utiliser la stratégie recommandée par Microsoft. Pour plus d’informations, consultez [Créer et configurer un fournisseur d’attestation](/azure/azure-sql/database/always-encrypted-enclaves-configure-attestation#create-and-configure-an-attestation-provider).
   - La validation de la stratégie peut également échouer en raison d’une violation de sécurité compromettant l’enclave côté serveur.
 - Votre application cliente ne peut pas se connecter au fournisseur d’attestation et récupérer la clé de signature publique (étape 5). Les causes probables sont les suivantes :
-  - La configuration de pare-feux entre votre application et le fournisseur d’attestation peut bloquer les connexions. Pour résoudre les problèmes de connexion bloquée, vérifiez que vous pouvez vous connecter au point de terminaison OpenId de votre fournisseur d’attestation. Par exemple, utilisez un navigateur web sur l’ordinateur hébergeant votre application pour voir si vous pouvez vous connecter au point de terminaison OpenID. Pour plus d’informations, consultez [Configuration des métadonnées - Get](https://docs.microsoft.com/rest/api/attestation/metadataconfiguration/get).
+  - La configuration de pare-feux entre votre application et le fournisseur d’attestation peut bloquer les connexions. Pour résoudre les problèmes de connexion bloquée, vérifiez que vous pouvez vous connecter au point de terminaison OpenId de votre fournisseur d’attestation. Par exemple, utilisez un navigateur web sur l’ordinateur hébergeant votre application pour voir si vous pouvez vous connecter au point de terminaison OpenID. Pour plus d’informations, consultez [Configuration des métadonnées - Get](/rest/api/attestation/metadataconfiguration/get).
 
 ## <a name="attestation-errors-when-using-host-guardian-service"></a>Erreurs d’attestation lors de l’utilisation du service Guardian hôte
 
