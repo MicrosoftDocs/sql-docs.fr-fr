@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: c1bc13d4-8297-4daf-bb19-4c1e5ba292a6
 author: maggiesMSFT
 ms.author: maggies
-ms.openlocfilehash: deae632ce9305b58b72e24e1a57507f9f4c5ee89
-ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
+ms.openlocfilehash: f24b3bb19150271532561d691a1ed1f4c89dfbc5
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100489433"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101838084"
 ---
 # <a name="monitoring-report-server-performance"></a>Analyse des performances d'un serveur de rapports
 
@@ -68,13 +68,13 @@ SQL Server 2016 Reporting Services comprend les objets de performance suivants�
   
 -   **ReportServer:Service** et **ReportServerSharePoint:Service** pour surveiller des événements liés à HTTP et la gestion de la mémoire. Ces compteurs sont spécifiques à [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], et ils suivent les événements liés à HTTP pour le serveur de rapports, notamment les demandes, les connexions et les tentatives d’ouverture de session. Cet objet de performance inclut également des compteurs liés à la gestion de la mémoire.  
   
- Si vous possédez plusieurs instances de serveurs de rapports sur un seul ordinateur, vous pouvez les analyser collectivement ou individuellement. Choisissez les instances à inclure au moment où vous ajoutez un compteur. Pour plus d’informations sur l’utilisation de l’Analyseur de performances (perfmon.msc) et l’ajout de compteurs, consultez la documentation du produit [!INCLUDE[msCoName](../../includes/msconame-md.md)] [Analyseur de performances Windows](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).  
+ Si vous possédez plusieurs instances de serveurs de rapports sur un seul ordinateur, vous pouvez les analyser collectivement ou individuellement. Choisissez les instances à inclure au moment où vous ajoutez un compteur. Pour plus d’informations sur l’utilisation de l’Analyseur de performances (perfmon.msc) et l’ajout de compteurs, consultez la documentation du produit [!INCLUDE[msCoName](../../includes/msconame-md.md)] [Analyseur de performances Windows](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc749249(v=ws.11)).  
   
 ## <a name="other-performance-counters"></a>Autres compteurs de performance  
  Des compteurs de performances [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] personnalisés sont fournis uniquement pour les objets de performance Reporting Services listés ci-dessus. Les objets de performance .NET Framework suivants fournissent des données de supervision des performances supplémentaires pour le serveur de rapports.
  
  > [!NOTE]
- > Power BI Report Server et SQL Server Reporting Services 2017 et les versions ultérieures n’incluent pas d’objets de performance Reporting Services. Il existe des [compteurs de performances .NET Framework](https://docs.microsoft.com/dotnet/framework/debug-trace-profile/performance-counters) disponibles pour fournir une supervision des performances du serveur de rapports. 
+ > Power BI Report Server et SQL Server Reporting Services 2017 et les versions ultérieures n’incluent pas d’objets de performance Reporting Services. Il existe des [compteurs de performances .NET Framework](/dotnet/framework/debug-trace-profile/performance-counters) disponibles pour fournir une supervision des performances du serveur de rapports. 
  
 |Objet de performance|Notes|  
 |------------------------|-----------|  
@@ -98,4 +98,3 @@ SQL Server 2016 Reporting Services comprend les objets de performance suivants�
  [Configurer la mémoire disponible pour les applications du serveur de rapports](../../reporting-services/report-server/configure-available-memory-for-report-server-applications.md)   
  [Serveur de rapports Reporting Services &#40;mode natif&#41;](../../reporting-services/report-server/reporting-services-report-server-native-mode.md)   
  [Outils de Reporting Services](../../reporting-services/tools/reporting-services-tools.md)  
-  

@@ -5,18 +5,17 @@ titleSuffix: SQL Server on Linux
 ms.prod: sql
 ms.technology: sql-server-powershell
 ms.topic: conceptual
-ms.assetid: ab9212a6-6628-4f08-a38c-d3156e05ddea
 author: markingmyname
 ms.author: maghan
 ms.reviewer: matteot, drskwier
 ms.custom: seo-lt-2019
 ms.date: 10/14/2020
-ms.openlocfilehash: ed8fce6dfaebb20ebeebe9b5197948dbf2502dad
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 233c456a2e4c7f41efd6038efccc6b00b68eb72d
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100339049"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101838057"
 ---
 # <a name="manage-authentication-to-sql-server-in-powershell"></a>Gérer l’authentification pour SQL Server dans PowerShell
 

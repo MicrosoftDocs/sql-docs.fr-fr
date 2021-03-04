@@ -13,12 +13,12 @@ ms.assetid: 5b13b5ac-1e4c-45e7-bda7-ebebe2784551
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 83985f8cb34b9efa8485f9827dd9692a38f91a65
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: c8379a2e1c18ea5da82abda5ad25dee47679a742
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "100344794"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837774"
 ---
 # <a name="best-practices-with-query-store"></a>Bonnes pratiques relatives au Magasin des requêtes
 
@@ -441,7 +441,7 @@ Les indicateurs de trace globaux 7745 et 7752 peuvent être utilisés pour amél
 
 Le Magasin des requêtes sur une géoréplication active secondaire d’Azure SQL Database est une copie en lecture seule de l’activité sur le réplica principal. 
 
-Évitez les niveaux incompatibles entre les bases de données Azure SQL qui participent à la géoréplication. La taille de calcul de la base de données secondaire doit être égale à celle de la base de données primaire, ou proche de celle-ci, et se trouver dans le même niveau de service que celui de la base de données primaire. Recherchez le type d’attente HADR_THROTTLE_LOG_RATE_MISMATCHED_SLO dans [sys.dm_db_wait_stats](/sql/relational-databases/system-dynamic-management-views/sys-dm-db-wait-stats-azure-sql-database), qui indique une limitation du taux de journalisation des transactions sur le réplica principal en raison d’un décalage au niveau secondaire.
+Évitez les niveaux incompatibles entre les bases de données Azure SQL qui participent à la géoréplication. La taille de calcul de la base de données secondaire doit être égale à celle de la base de données primaire, ou proche de celle-ci, et se trouver dans le même niveau de service que celui de la base de données primaire. Recherchez le type d’attente HADR_THROTTLE_LOG_RATE_MISMATCHED_SLO dans [sys.dm_db_wait_stats](../system-dynamic-management-views/sys-dm-db-wait-stats-azure-sql-database.md), qui indique une limitation du taux de journalisation des transactions sur le réplica principal en raison d’un décalage au niveau secondaire.
 
 Pour plus d’informations sur l’estimation et la configuration de la taille de la base de données Azure SQL secondaire de la géoréplication active, consultez [Configuration d’une base de données secondaire](/azure/azure-sql/database/active-geo-replication-overview#configuring-secondary-database).
 

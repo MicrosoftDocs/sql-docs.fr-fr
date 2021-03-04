@@ -11,12 +11,12 @@ ms.topic: reference
 ms.assetid: c92a21cc-8e53-43d0-a4bf-542c77c100c9
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8767da09f84be9c557238643e16c925756e0bede
-ms.sourcegitcommit: c52a6aeb6fa6d7c3a86b3e84449361f4a0949ad0
+ms.openlocfilehash: bbfddcbf39dbbba3b63c6853ea7700e6a27a4614
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99623779"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837217"
 ---
 # <a name="pdostatementgetcolumnmeta"></a>PDOStatement::getColumnMeta
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -133,7 +133,7 @@ Si nous modifions l’extrait de code ci-dessus en affectant à `PDO::SQLSRV_ATT
 
 ## <a name="sensitivity-rank-using-a-predefined-set-of-values"></a>Classement de la sensibilité avec un ensemble prédéfini de valeurs
 
-À compter de 5.9.0, les pilotes PHP ont ajouté la récupération de la classification de sensibilité lors de l’utilisation du pilote ODBC 17.4.2 ou ultérieur. L’utilisateur peut définir le classement lors de l’utilisation de [ADD SENSITIVITY CLASSIFICATION](/sql/t-sql/statements/add-sensitivity-classification-transact-sql) pour classifier n’importe quelle colonne de données. 
+À compter de 5.9.0, les pilotes PHP ont ajouté la récupération de la classification de sensibilité lors de l’utilisation du pilote ODBC 17.4.2 ou ultérieur. L’utilisateur peut définir le classement lors de l’utilisation de [ADD SENSITIVITY CLASSIFICATION](../../t-sql/statements/add-sensitivity-classification-transact-sql.md) pour classifier n’importe quelle colonne de données. 
 
 Par exemple, si l’utilisateur affecte `NONE` et `LOW` respectivement à BirthDate et à SSN, la représentation JSON est la suivante :
 
@@ -142,7 +142,7 @@ Par exemple, si l’utilisateur affecte `NONE` et `LOW` respectivement à BirthD
 {"0":{"Label":{"name":"Highly Confidential - secure privacy","id":""},"Information Type":{"name":"Credentials","id":""},"rank":10},"rank":10}
 ```
 
-Comme indiqué dans [classification de sensibilité](/sql/relational-databases/system-catalog-views/sys-sensitivity-classifications-transact-sql), les valeurs numériques des degrés sont les suivantes :
+Comme indiqué dans [classification de sensibilité](../../relational-databases/system-catalog-views/sys-sensitivity-classifications-transact-sql.md), les valeurs numériques des degrés sont les suivantes :
 
 ```
 0 for NONE
@@ -192,4 +192,4 @@ La représentation JSON mise à jour est montrée ci-dessous :
 ## <a name="see-also"></a>Voir aussi  
 [PDOStatement, classe](../../connect/php/pdostatement-class.md)
 
-[PDO](https://php.net/manual/book.pdo.php)  
+[PDO](https://php.net/manual/book.pdo.php)

@@ -23,12 +23,12 @@ author: bluefooted
 ms.author: pamela
 ms.reviewer: wiassaf
 manager: amitban
-ms.openlocfilehash: 66b8a24e8b2b48aa43dd00cb37e8fc4c60fa0cd4
-ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
+ms.openlocfilehash: e24a8532aa721f4103e6cbff4b34b15bf607640c
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "100342828"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101839041"
 ---
 # <a name="sysdm_os_spinlock_stats-transact-sql"></a>sys.dm_os_spinlock_stats (Transact-SQL)
 
@@ -49,7 +49,7 @@ Retourne des informations sur toutes les attentes de verrouillages spinlock orga
 
 ## <a name="permissions"></a>Autorisations  
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] , requiert l' `VIEW SERVER STATE` autorisation.   
-Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le compte d' [administrateur de serveur](https://docs.microsoft.com/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) ou le compte d' [administrateur Azure Active Directory](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-overview#administrator-structure) est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.    
+Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le compte d' [administrateur de serveur](/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) ou le compte d' [administrateur Azure Active Directory](/azure/azure-sql/database/authentication-aad-overview#administrator-structure) est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.    
   
 ## <a name="remarks"></a>Notes  
  
@@ -419,5 +419,3 @@ GO
 
  [Diagnostic et résolution de contention de verrouillage SpinLock sur SQL Server](../diagnose-resolve-spinlock-contention.md)
   
-  
-

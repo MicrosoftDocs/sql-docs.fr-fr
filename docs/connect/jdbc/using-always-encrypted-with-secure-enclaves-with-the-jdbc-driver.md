@@ -5,18 +5,18 @@ ms.custom: ''
 ms.date: 01/15/2021
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 ms.assetid: 271c0438-8af1-45e5-b96a-4b1cabe32707
 author: reneye
 ms.author: v-reye
-ms.openlocfilehash: 3970374537cc3491a0d8d624c3eccd31db0134e7
-ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
+ms.openlocfilehash: 46e812a4234098e49a272be503e52f34d4c78733
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99076967"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837536"
 ---
 # <a name="using-always-encrypted-with-secure-enclaves-with-the-jdbc-driver"></a>Utilisation d’Always Encrypted avec enclaves sécurisées avec le pilote JDBC
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
@@ -47,7 +47,7 @@ Pour activer les calculs d’enclave pour une connexion de base de données, vou
 
 - **enclaveAttestationUrl:**  : spécifie une URL d’attestation (un point de terminaison de service d’attestation). Vous devez obtenir une URL d’attestation pour votre environnement auprès de votre administrateur de services fédérés d’attestation.
   - Si vous utilisez [!INCLUDE [ssnoversion-md](../../includes/ssnoversion-md.md)] et le service Guardian hôte (SGH), consultez [Déterminer et partager l’URL d’attestation SGH](../../relational-databases/security/encryption/always-encrypted-enclaves-host-guardian-service-deploy.md#step-6-determine-and-share-the-hgs-attestation-url).
-  - Si vous utilisez [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] et Microsoft Azure Attestation, consultez [Déterminer l’URL d’attestation de votre stratégie d’attestation](/sql/relational-databases/security/encryption/always-encrypted-enclaves?view=sql-server-ver15#secure-enclave-attestation).
+  - Si vous utilisez [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] et Microsoft Azure Attestation, consultez [Déterminer l’URL d’attestation de votre stratégie d’attestation](../../relational-databases/security/encryption/always-encrypted-enclaves.md?view=sql-server-ver15#secure-enclave-attestation).
 
 Les utilisateurs doivent activer **columnEncryptionSetting** et configurer correctement les **deux** propriétés de chaîne de connexion ci-dessus pour activer Always Encrypted avec enclaves sécurisées à partir de [!INCLUDE[jdbcNoVersion](../../includes/jdbcnoversion_md.md)].
 
@@ -91,4 +91,4 @@ try (Connection c = DriverManager.getConnection(URL);Statement s = c.createState
 Cette fonctionnalité requiert l’algorithme de signature RSASSA-PSA. Cet algorithme a été ajouté dans JDK 11, mais il n’a pas été rétroporté dans JDK 8. Les utilisateurs qui souhaitent utiliser cette fonctionnalité avec la version JDK 8 de [!INCLUDE[jdbcNoVersion](../../includes/jdbcnoversion_md.md)] ont deux solutions : charger leur propre fournisseur qui prend en charge l’algorithme de signature RSASSA-PSA ou inclure la dépendance facultative BouncyCastleProvider. La dépendance sera supprimée à une date ultérieure si l’algorithme de signature est rétroporté dans JDK 8 ou si le cycle de vie de la prise en charge de JDK 8 se termine.
 
 ## <a name="see-also"></a>Voir aussi
-[Utilisation d'Always Encrypted avec le pilote JDBC](../../connect/jdbc/using-always-encrypted-with-the-jdbc-driver.md)  
+[Utilisation d'Always Encrypted avec le pilote JDBC](../../connect/jdbc/using-always-encrypted-with-the-jdbc-driver.md)

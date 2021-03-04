@@ -5,7 +5,7 @@ ms.custom: ''
 ms.date: 08/12/2019
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.suite: sql
 ms.technology: connectivity
 ms.tgt_pltfrm: ''
@@ -15,12 +15,12 @@ caps.latest.revision: ''
 author: rene-ye
 ms.author: v-reye
 manager: kenvh
-ms.openlocfilehash: 509c88230b8a09933291e5c09d528370cf06caca
-ms.sourcegitcommit: 7eb80038c86acfef1d8e7bfd5f4e30e94aed3a75
+ms.openlocfilehash: a88707cc4679343c2e29a86ecc3a9efb8a9719dd
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "92081528"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837449"
 ---
 # <a name="retrieving-parametermetadata-via-usefmtonly"></a>Récupération de ParameterMetaData via useFmtOnly
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

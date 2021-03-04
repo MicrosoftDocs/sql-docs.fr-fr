@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 91cca3d2-ba99-4a6d-b0de-beb9699cb3f8
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 8d53811bef7cb4c570d2aa60638474f815548a17
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 0df2acfa00507f42d3ee03a0a65ff2ae25aafbd1
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100058334"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837183"
 ---
 # <a name="release-notes-for-the-microsoft-drivers-for-php-for-sql-server"></a>Notes de publication de Microsoft Drivers for PHP for SQL Server
 
@@ -68,7 +68,7 @@ Thanks a lot.  2019-03-28  (DevO= 1467988)
 | Définition du délai d’expiration des requêtes sans utilisation de LOCK TIMEOUT, ce qui permet d’économiser un aller-retour vers le serveur. | &nbsp; |
 | &nbsp; | &nbsp; |
 
-<sup>1</sup> Cette version nécessite ODBC Driver 17.4.2 ou ultérieur. Sinon, un avertissement d’échec de définition d’un attribut se produit. Cet avertissement peut être supprimé lors de l’utilisation d’un pilote ODBC plus ancien. Si vous utilisez SQLSRV, consultez [Procédure : configurer la gestion des erreurs et des avertissements à l’aide du pilote SQLSRV](https://docs.microsoft.com/sql/connect/php/how-to-configure-error-and-warning-handling-using-the-sqlsrv-driver). Si vous utilisez PDO_SQLSRV, les avertissements sont supprimés par défaut, mais ils peuvent être journalisés. Pour plus d’informations, consultez [Journalisation de l’activité](https://docs.microsoft.com/sql/connect/php/logging-activity).
+<sup>1</sup> Cette version nécessite ODBC Driver 17.4.2 ou ultérieur. Sinon, un avertissement d’échec de définition d’un attribut se produit. Cet avertissement peut être supprimé lors de l’utilisation d’un pilote ODBC plus ancien. Si vous utilisez SQLSRV, consultez [Procédure : configurer la gestion des erreurs et des avertissements à l’aide du pilote SQLSRV](./how-to-configure-error-and-warning-handling-using-the-sqlsrv-driver.md). Si vous utilisez PDO_SQLSRV, les avertissements sont supprimés par défaut, mais ils peuvent être journalisés. Pour plus d’informations, consultez [Journalisation de l’activité](./logging-activity.md).
 
 ## <a name="581"></a>5.8.1
 

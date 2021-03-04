@@ -5,17 +5,17 @@ ms.custom: ''
 ms.date: 01/02/2020
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: reference
 author: chris-rossi
 ms.author: v-chross
-ms.openlocfilehash: 944c51fd392ffb684cf2c2fc02967b040163a9d9
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: dbbafac3c6b895d76ec4c931602194d767f9aabd
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100351127"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837457"
 ---
 # <a name="using-transparent-network-ip-resolution"></a>Utilisation de la résolution d’adresses IP réseau transparente
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]

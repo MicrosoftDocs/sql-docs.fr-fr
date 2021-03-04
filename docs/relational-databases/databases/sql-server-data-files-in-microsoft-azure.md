@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 38ffd9c2-18a5-43d2-b674-e425addec4e4
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: b59fc811c5bdfa122b306e9522bae97faa37e451
-ms.sourcegitcommit: 059722ff78a6061b801807416b312ae9f721ec7d
+ms.openlocfilehash: 952e8d393733c62f60c5b6792b422d22417ddede
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100636711"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837935"
 ---
 # <a name="sql-server-data-files-in-microsoft-azure"></a>Fichiers de données SQL Server dans Microsoft Azure
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -112,7 +112,7 @@ Pour plus d'informations, consultez [Gérer l'accès aux ressources Azure Storag
   
 ###  <a name="limitations"></a><a name="bkmk_Limitations"></a> Limitations  
   
-- En raison des caractéristiques de performances des charges de travail SQL Server, les fichiers de données SQL Server sont implémentés en tant qu’objets blob de pages dans le Stockage Blob Azure. D’autres types de stockage d’objets blob, tels que les objets blob de blocs ou [Azure Data Lake Storage](https://docs.microsoft.com/azure/storage/blobs/data-lake-storage-introduction), ne sont pas pris en charge.
+- En raison des caractéristiques de performances des charges de travail SQL Server, les fichiers de données SQL Server sont implémentés en tant qu’objets blob de pages dans le Stockage Blob Azure. D’autres types de stockage d’objets blob, tels que les objets blob de blocs ou [Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction), ne sont pas pris en charge.
 
 - Dans la version actuelle de cette fonctionnalité, l’enregistrement de données **FileStream** dans le stockage Azure n’est pas pris en charge. Vous pouvez stocker des données **FileStream** dans une base de données qui contient également des fichiers stockés dans le stockage Azure, mais tous les fichiers de données FileStream doivent se trouver sur le stockage local.  Comme les données FileStream doivent résider sur un stockage local, il est impossible de les déplacer entre des ordinateurs à l’aide du stockage Azure. Nous vous recommandons donc d’utiliser les [techniques traditionnelles](../../relational-databases/blob/move-a-filestream-enabled-database.md) pour déplacer les données associées à FileStream entre différents ordinateurs.  
   

@@ -4,20 +4,19 @@ titleSuffix: SQL Server Distributed Replay
 description: Une fois que la fonctionnalité SQL Server Distributed Replay a terminé une relecture distribuée, l’activité de relecture de chaque client peut être enregistrée dans des fichiers de trace sur chaque client.
 ms.prod: sql
 ms.prod_service: sql-tools
-ms.reviewer: ''
 ms.technology: tools-other
 ms.topic: conceptual
-ms.assetid: da999781-f0ff-47eb-ba7a-09c0ed8f61ad
 author: markingmyname
 ms.author: maghan
+ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 5c2909a8f4c6f592781d94dbef6ab0288ff5980d
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: e2d240a5fbd0b2828fbccd03494048805914fc16
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100354498"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101838669"
 ---
 # <a name="review-the-replay-results"></a>Examiner les résultats de la relecture
 

@@ -17,12 +17,12 @@ helpviewer_keywords:
 ms.assetid: c02f6942-0484-4567-a78e-fe8aa2053536
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 45b617e91f2f296aa9749f7f8f2f25b640ddf546
-ms.sourcegitcommit: c52a6aeb6fa6d7c3a86b3e84449361f4a0949ad0
+ms.openlocfilehash: 82e1ad1147867abd9308dc89517855df830a38e6
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "99623769"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837152"
 ---
 # <a name="sqlsrv_field_metadata"></a>sqlsrv_field_metadata
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -240,7 +240,7 @@ Comme on le voit dans la représentation JSON ci-dessous, les métadonnées de c
 
 ## <a name="sensitivity-rank-using-a-predefined-set-of-values"></a>Classement de la sensibilité avec un ensemble prédéfini de valeurs
 
-À compter de 5.9.0, les pilotes PHP ont ajouté la récupération de la classification de sensibilité lors de l’utilisation du pilote ODBC 17.4.2 ou ultérieur. L’utilisateur peut définir le classement lors de l’utilisation de [ADD SENSITIVITY CLASSIFICATION](/sql/t-sql/statements/add-sensitivity-classification-transact-sql) pour classifier n’importe quelle colonne de données. 
+À compter de 5.9.0, les pilotes PHP ont ajouté la récupération de la classification de sensibilité lors de l’utilisation du pilote ODBC 17.4.2 ou ultérieur. L’utilisateur peut définir le classement lors de l’utilisation de [ADD SENSITIVITY CLASSIFICATION](../../t-sql/statements/add-sensitivity-classification-transact-sql.md) pour classifier n’importe quelle colonne de données. 
 
 Par exemple, si l’utilisateur affecte `NONE` et `LOW` respectivement à BirthDate et à SSN, la représentation JSON est la suivante :
 
@@ -249,7 +249,7 @@ Par exemple, si l’utilisateur affecte `NONE` et `LOW` respectivement à BirthD
 {"0":{"Label":{"name":"Highly Confidential - secure privacy","id":""},"Information Type":{"name":"Credentials","id":""},"rank":10},"rank":10}
 ```
 
-Comme indiqué dans [classification de sensibilité](/sql/relational-databases/system-catalog-views/sys-sensitivity-classifications-transact-sql), les valeurs numériques des degrés sont les suivantes :
+Comme indiqué dans [classification de sensibilité](../../relational-databases/system-catalog-views/sys-sensitivity-classifications-transact-sql.md), les valeurs numériques des degrés sont les suivantes :
 
 ```
 0 for NONE
@@ -313,4 +313,4 @@ La représentation JSON mise à jour est montrée ci-dessous :
 
 [Constantes &#40;Microsoft Drivers for PHP for SQL Server&#41;](../../connect/php/constants-microsoft-drivers-for-php-for-sql-server.md)  
 
-[À propos des exemples de code dans la documentation](../../connect/php/about-code-examples-in-the-documentation.md)  
+[À propos des exemples de code dans la documentation](../../connect/php/about-code-examples-in-the-documentation.md)

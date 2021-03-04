@@ -11,12 +11,12 @@ ms.topic: reference
 ms.assetid: 9d5481d5-13bc-4388-b3aa-78676c0fc709
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 46b57275d92f4eb6acb64c276e3b34ea67efb429
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 62ad5c26342ce03d3098d5a835776d193df4b88c
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99202025"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837230"
 ---
 # <a name="pdoerrorinfo"></a>PDO::ErrorInfo
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -130,14 +130,14 @@ pdo_sqlsrv.report_additional_errors = 0
 
 ## <a name="warnings-and-errors"></a>Avertissements et erreurs
 
-À compter de 5.9.0, les avertissements ODBC ne seront plus enregistrés comme erreurs. Les [codes d’erreur](https://docs.microsoft.com/sql/odbc/reference/appendixes/appendix-a-odbc-error-codes) avec le préfixe « 01 » sont consignés comme avertissements. En d’autres termes, si l’utilisateur veut consigner seulement les erreurs, mettez à jour le fichier php.ini comme suit :
+À compter de 5.9.0, les avertissements ODBC ne seront plus enregistrés comme erreurs. Les [codes d’erreur](../../odbc/reference/appendixes/appendix-a-odbc-error-codes.md) avec le préfixe « 01 » sont consignés comme avertissements. En d’autres termes, si l’utilisateur veut consigner seulement les erreurs, mettez à jour le fichier php.ini comme suit :
 
 ```
 [pdo_sqlsrv]  
 pdo_sqlsrv.log_severity = 1
 ```
 
-Dans ce cas, le fichier journal ne contiendra aucun message d’avertissement. Découvrez comment la [journalisation](https://docs.microsoft.com/sql/connect/php/logging-activity#logging-activity-using-the-pdo_sqlsrv-driver) fonctionne pour les utilisateurs pdo_sqlsrv.
+Dans ce cas, le fichier journal ne contiendra aucun message d’avertissement. Découvrez comment la [journalisation](./logging-activity.md#logging-activity-using-the-pdo_sqlsrv-driver) fonctionne pour les utilisateurs pdo_sqlsrv.
 
 ## <a name="see-also"></a>Voir aussi  
 [PDO, classe](../../connect/php/pdo-class.md)

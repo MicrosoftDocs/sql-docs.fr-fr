@@ -4,20 +4,19 @@ description: L’outil d’administration SQL Server Distributed Replay, est un 
 titleSuffix: SQL Server Distributed Replay
 ms.prod: sql
 ms.prod_service: sql-tools
-ms.reviewer: ''
 ms.technology: tools-other
 ms.topic: conceptual
-ms.assetid: c01b0ed3-67e4-4561-92d2-a8fbb086aca8
 author: markingmyname
 ms.author: maghan
+ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 08/12/2016
-ms.openlocfilehash: 031668199ce4d54a29a2e781e4f6d200f58ed509
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 80cb7abb5f1bf3511b30719563908f0b59cecc93
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100345949"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836946"
 ---
 # <a name="administration-tool-command-line-options-distributed-replay-utility"></a>Options de ligne de commande de l'outil d'administration (Distributed Replay Utility)
 

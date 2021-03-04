@@ -4,20 +4,19 @@ titleSuffix: SQL Server Distributed Replay
 description: Avant de pouvoir démarrer une relecture distribuée avec SQL Server Distributed Replay, préparez les données de trace d’entrée en lançant l’étape de prétraitement.
 ms.prod: sql
 ms.prod_service: sql-tools
-ms.reviewer: ''
 ms.technology: tools-other
 ms.topic: conceptual
-ms.assetid: c14fd3d2-5770-47c2-a851-cc13ddbc9bf5
 author: markingmyname
 ms.author: maghan
+ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 03/14/2017
-ms.openlocfilehash: 658680481c8f77bf528e5db98ae0d9bd317b8eaf
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: e885abb184979156cfc029c1d9116d9ae66b4356
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100354491"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836907"
 ---
 # <a name="prepare-the-input-trace-data"></a>Préparer les données de trace d'entrée
 

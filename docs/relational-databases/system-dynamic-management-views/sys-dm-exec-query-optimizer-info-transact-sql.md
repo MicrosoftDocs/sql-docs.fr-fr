@@ -21,12 +21,12 @@ ms.assetid: 1d72cef1-22d8-4ae0-91db-6694fe918c9e
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 3bd179dd4660ce82e6629619c92e0e0e8e429bc1
-ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
+ms.openlocfilehash: f7ab67b6e9364f95156d9e13a9183ffd06384080
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "100342952"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837666"
 ---
 # <a name="sysdm_exec_query_optimizer_info-transact-sql"></a>sys.dm_exec_query_optimizer_info (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -36,9 +36,9 @@ ms.locfileid: "100342952"
 > [!NOTE]  
 >  Pour appeler cette valeur à partir de [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] ou [!INCLUDE[ssPDW](../../includes/sspdw-md.md)] , utilisez le nom **sys.dm_pdw_nodes_exec_query_optimizer_info**.  
   
-|Name|Type de données|Description|  
+|Nom|Type de données|Description|  
 |----------|---------------|-----------------|  
-|**)**|**nvarchar(4000)**|Nom de l'événement statistique de l'optimiseur.|  
+|**counter**|**nvarchar(4000)**|Nom de l'événement statistique de l'optimiseur.|  
 |**occurrence**|**bigint**|Nombre d'occurrences de l'événement d'optimisation pour ce compteur.|  
 |**value**|**float**|Valeur moyenne de la propriété par occurrence de l'événement.|  
 |**pdw_node_id**|**int**|**S’applique à**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] , [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]<br /><br /> Identificateur du nœud sur lequel cette distribution se trouve.|  
@@ -46,7 +46,7 @@ ms.locfileid: "100342952"
 ## <a name="permissions"></a>Autorisations  
 
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)] , requiert l' `VIEW SERVER STATE` autorisation.   
-Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le compte d' [administrateur de serveur](https://docs.microsoft.com/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) ou le compte d' [administrateur Azure Active Directory](https://docs.microsoft.com/azure/azure-sql/database/authentication-aad-overview#administrator-structure) est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.   
+Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de données dans des pools élastiques, le compte d' [administrateur de serveur](/azure/azure-sql/database/logins-create-manage#existing-logins-and-user-accounts-after-creating-a-new-database) ou le compte d' [administrateur Azure Active Directory](/azure/azure-sql/database/authentication-aad-overview#administrator-structure) est requis. Pour tous les autres SQL Database objectifs de service, l' `VIEW DATABASE STATE` autorisation est requise dans la base de données.   
     
 ## <a name="remarks"></a>Notes  
  **sys.dm_exec_query_optimizer_info** contient les propriétés suivantes (compteurs). Toutes les valeurs d'occurrence sont cumulatives et sont définies à 0 au redémarrage du système. Tous les champs de valeurs sont initialisés à NULL au redémarrage du système. Toutes les colonnes de valeurs qui indiquent une moyenne utilisent la valeur d'occurrence de la ligne comme dénominateur pour le calcul de la moyenne. Toutes les optimisations de requêtes sont mesurées lorsque [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] détermine les modifications apportées à **dm_exec_query_optimizer_info**, y compris les requêtes générées par l’utilisateur et le système. L’exécution d’un plan déjà mis en cache ne change pas les valeurs de **dm_exec_query_optimizer_info**, seules les optimisations sont significatives.  
@@ -70,7 +70,7 @@ Sur SQL Database objectifs de service de base, S0 et S1, et pour les bases de do
 |search 2 tasks|Interne uniquement|Interne uniquement|  
 |gain stage 0 to stage 1|Interne uniquement|Interne uniquement|  
 |gain stage 1 to stage 2|Interne uniquement|Interne uniquement|  
-|timeout|Interne uniquement|Interne uniquement|  
+|délai d'expiration|Interne uniquement|Interne uniquement|  
 |memory limit exceeded|Interne uniquement|Interne uniquement|  
 |insert stmt|Nombre d'optimisations destinées à des instructions INSERT.|Non applicable|  
 |delete stmt|Nombre d'optimisations destinées à des instructions DELETE.|Non applicable|  
@@ -132,6 +132,3 @@ SELECT (SELECT CAST (occurrence AS float) FROM sys.dm_exec_query_optimizer_info 
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
  [Fonctions et vues de gestion dynamique relatives aux exécutions &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)  
   
-  
-
-
