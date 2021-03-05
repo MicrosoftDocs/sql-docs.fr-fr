@@ -7,7 +7,7 @@ items:
     href: sql-server/previous-versions-sql-server.md
   - name: Vue d’ensemble
     items:
-      - name: What's New
+      - name: Nouveautés
         items:
           - name: "SQL Server\_2019"
             href: sql-server/what-s-new-in-sql-server-ver15.md
@@ -6176,6 +6176,22 @@ items:
                 href: dma/dma-assess-sql-data-estate-to-sqldb-commandline.md
       - name: Assistant Migration SQL Server (SSMA)
         href: ssma/toc.yml
+      - name: Azure Synapse Pathway
+        items:
+          - name: Vue d’ensemble
+            href: tools/synapse-pathway/azure-synapse-pathway-overview.md
+          - name: FAQ sur Azure Synapse Pathway
+            href: tools/synapse-pathway/pathway-faq.md
+          - name: Dans les coulisses
+            href: tools/synapse-pathway/synapse-pathway-behind-the-scenes.md
+          - name: Installation
+            href: tools/synapse-pathway/synapse-pathway-download.md
+          - name: Didacticiel - Exécuter Azure Synapse Pathway
+            href: tools/synapse-pathway/synapse-pathway-assessment.md
+          - name: Didacticiel - Enregistrer et charger
+            href: tools/synapse-pathway/tutorial-save-load-assessment.md
+          - name: Générer des rapports
+            href: tools/synapse-pathway/report-generation.md
   - name: 'Gérer, superviser et optimiser'
     items:
       - name: Gérer
@@ -7200,6 +7216,8 @@ items:
                     href: relational-databases/polybase/polybase-troubleshoot-connectivity.md
                   - name: Forum aux questions de PolyBase
                     href: relational-databases/polybase/polybase-faq.md
+                  - name: Erreurs PolyBase et solutions possibles
+                    href: relational-databases/polybase/polybase-errors-and-possible-solutions.md
           - name: Informations de référence
             items:
               - name: Référence T-SQL
