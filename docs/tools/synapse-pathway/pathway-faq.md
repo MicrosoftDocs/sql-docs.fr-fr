@@ -6,17 +6,17 @@ ms.author: anrampal
 ms.topic: overview
 ms.date: 03/02/2021
 ms.prod: sql
-ms.technology: Azure Synapse Pathway
+ms.technology: tools-other
 monikerRange: =azure-sqldw-latest
 ms.custom: template-overview
-ms.openlocfilehash: 345346d2161800810ba3d07667b831107f70b215
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 8352fb6a70c54ede61d544a147f970237404c9f5
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101873042"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186321"
 ---
-# <a name="azure-synapse-pathway-preview"></a>Azure Synapse Pathway Preview
+# <a name="azure-synapse-pathway-preview-faq"></a>Forum aux questions d’Azure Synapse Pathway Preview
 [!INCLUDE [Azure Synapse Analytics](../../includes/applies-to-version/asa.md)]
 
 Ce guide recense les questions les plus fréquemment posées sur Azure Synapse Pathway Preview.
@@ -58,7 +58,9 @@ R. Comme vous pouvez exécuter Synapse Pathway dans votre environnement local, a
 
 R. Azure Synapse Pathway est actuellement en **préversion**.   Le support pour Synapse Pathway est disponible via le canal de support Microsoft. Vous pouvez ouvrir le ticket dans le portail Azure ou dans les portails standard (généralement pour un support local).
 
-> [!NOTE] À l’instar de tous les autres services Azure, tous les services en préversion sont éligibles au support, simplement sans contrat SLA en place.
+
+> [!NOTE] 
+> À l’instar de tous les autres services Azure, tous les services en préversion sont éligibles au support, simplement sans contrat SLA en place.
 
 <!-- ### Troubleshooting and optimization
 

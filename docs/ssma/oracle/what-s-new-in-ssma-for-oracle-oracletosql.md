@@ -10,16 +10,24 @@ ms.technology: ssma
 ms.topic: conceptual
 ms.assetid: f305ebb6-7393-4a43-abb3-6332b739d690
 ms.author: alexiva
-ms.openlocfilehash: 4dc76c57f7194c1ee96bd091d674b793dad29faa
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: ef5f8fd634958c75cc67002615e3c4a72dcf3a51
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100081876"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186560"
 ---
 # <a name="whats-new-in-ssma-for-oracle-oracletosql"></a>Nouveautés de SSMA pour Oracle (OracleToSQL)
 
 Cet article répertorie les Assistant Migration SQL Server (SSMA) pour les modifications Oracle dans chaque version.
+
+## <a name="ssma-v817"></a>SSMA v 8.17
+
+La version v 8.17 de SSMA pour Oracle contient les modifications suivantes :
+
+* Ajouter la prise en charge des colonnes calculées
+* Résoudre les problèmes liés à l’analyseur lorsque des caractères d’opérateur spécifiques à la culture sont utilisés dans des expressions
+* Mettre à jour les rapports d’évaluation HTML pour utiliser l’éditeur moderne pour afficher du texte SQL
 
 ## <a name="ssma-v816"></a>SSMA v 8.16
 

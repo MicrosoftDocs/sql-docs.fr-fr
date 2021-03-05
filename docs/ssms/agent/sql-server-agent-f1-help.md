@@ -12,14 +12,15 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 monikerRange: = azuresqldb-mi-current || >= sql-server-2016
-ms.openlocfilehash: abda7c0b98c55dbac6f22e80a8ceac9fdbff7413
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 0510c58823468cfa011a3e834b1f460d915c635c
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97478800"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186605"
 ---
 # <a name="sql-server-agent-f1-help"></a>Agent SQL Server – Aide (F1)
+
 [!INCLUDE [SQL Server SQL MI](../../includes/applies-to-version/sql-asdbmi.md)]
 
 > [!IMPORTANT]  

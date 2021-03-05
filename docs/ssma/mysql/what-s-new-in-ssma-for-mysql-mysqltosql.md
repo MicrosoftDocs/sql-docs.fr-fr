@@ -10,16 +10,22 @@ ms.technology: ssma
 ms.topic: conceptual
 ms.assetid: 1451a0b0-6713-4d0c-954f-ea3d8fce1d31
 ms.author: alexiva
-ms.openlocfilehash: 5f2de303081b21e1b29ce99059e15bc3634b32d8
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 138cb90558bfb73d0b9e0cd3ba75a7a41fc84229
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100064304"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186455"
 ---
 # <a name="whats-new-in-ssma-for-mysql-mysqltosql"></a>Nouveautés de SSMA pour MySQL (MySQLToSql)
 
 Cet article répertorie les Assistant Migration SQL Server (SSMA) pour les modifications MySQL dans chaque version.
+
+## <a name="ssma-v817"></a>SSMA v 8.17
+
+La version v 8.17 de SSMA pour MySQL contient les modifications suivantes :
+
+* Mettre à jour les rapports d’évaluation HTML pour utiliser l’éditeur moderne pour afficher du texte SQL
 
 ## <a name="ssma-v816"></a>SSMA v 8.16
 

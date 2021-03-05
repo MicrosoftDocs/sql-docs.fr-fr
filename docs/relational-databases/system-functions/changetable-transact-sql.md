@@ -2,7 +2,7 @@
 description: CHANGETABLE (Transact-SQL)
 title: CHANGETABLE (Transact-SQL) | Microsoft Docs
 ms.custom: ''
-ms.date: 08/08/2016
+ms.date: 02/12/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.reviewer: ''
@@ -20,64 +20,63 @@ ms.assetid: d405fb8d-3b02-4327-8d45-f643df7f501a
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: d3d4e72681f16689c6241c8f9d7b35119d898722
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 2de815ad24a41604f18d0083a800df3a56feb021
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99196135"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186623"
 ---
 # <a name="changetable-transact-sql"></a>CHANGETABLE (Transact-SQL)
 [!INCLUDE [SQL Server SQL Database](../../includes/applies-to-version/sql-asdb.md)]
 
   Retourne des informations de suivi des modifications pour une table. Vous pouvez utiliser cette instruction pour retourner toutes les modifications pour une table ou les informations de suivi des modifications pour une ligne spécifique.  
   
- ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+ ![Icône du lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône du lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```sql
+```syntaxsql
 CHANGETABLE (  
-    { CHANGES table , last_sync_version  
-    | VERSION table , <primary_key_values> } )  
-[AS] table_alias [ ( column_alias [ ,...n ] )  
+    { CHANGES <table_name> , <last_sync_version> 
+    | VERSION <table_name> , <primary_key_values> } 
+    , [ FORCESEEK ] 
+    )  
+[AS] <table_alias> [ ( <column_alias> [ ,...n ] )  
   
 <primary_key_values> ::=  
-( column_name [ , ...n ] ) , ( value [ , ...n ] )  
+( <column_name> [ , ...n ] ) , ( <value> [ , ...n ] )  
 ```  
   
 ## <a name="arguments"></a>Arguments  
- *Table* des modifications, *last_sync_version*  
+ MODIFIE *table_name* , *last_sync_version*  
  Retourne des informations de suivi pour toutes les modifications apportées à une table depuis la version spécifiée par *last_sync_version*.  
   
- *table*  
+ *table_name*  
  Table définie par l'utilisateur sur laquelle obtenir le suivi des modifications. Le suivi des modifications doit être activé sur la table. Un nom de table en une, deux, trois ou quatre parties peut être utilisé. Le nom de table peut être un synonyme de la table.  
   
  *last_sync_version*  
- Lorsqu'elle obtient des modifications, l'application appelante doit spécifier le point à partir duquel les modifications sont requises. L'argument last_sync_version spécifie ce point. La fonction retourne des informations pour toutes les lignes qui ont été modifiées depuis la version considérée. L'application exécute une requête pour recevoir les modifications avec une version supérieure à last_sync_version.  
-  
- En général, avant d’obtenir des modifications, l’application appellera **CHANGE_TRACKING_CURRENT_VERSION ()** pour obtenir la version qui sera utilisée la prochaine fois que des modifications seront nécessaires. Par conséquent, l'application n'a pas besoin d'interpréter ou comprendre la valeur réelle.  
-  
- Comme last_sync_version est obtenu par l'application appelante, celle-ci doit rendre la valeur persistante. Si l'application perd cette valeur, elle doit alors réinitialiser les données.  
-  
- *last_sync_version* est de type **bigint**. La valeur doit être scalaire. Une expression entraîne une erreur de syntaxe.  
-  
- Si la valeur est NULL, toutes les modifications suivies sont retournées.  
-  
+ Valeur scalaire **bigint** Nullable. Une [expression](../../t-sql/language-elements/expressions-transact-sql.md) entraîne une erreur de syntaxe. Si la valeur est NULL, toutes les modifications suivies sont retournées.
+Lorsqu'elle obtient des modifications, l'application appelante doit spécifier le point à partir duquel les modifications sont requises. Le *last_sync_version* spécifie ce point. La fonction retourne des informations pour toutes les lignes qui ont été modifiées depuis la version considérée. L’application interroge pour recevoir les modifications dont la version est supérieure à *last_sync_version*. En général, avant d’obtenir des modifications, l’application appellera `CHANGE_TRACKING_CURRENT_VERSION()` pour obtenir la version qui sera utilisée la prochaine fois que des modifications seront nécessaires. Par conséquent, l'application n'a pas besoin d'interpréter ou comprendre la valeur réelle. Étant donné que *last_sync_version* est obtenu par l’application appelante, l’application doit rendre la valeur persistante. Si l'application perd cette valeur, elle doit alors réinitialiser les données. 
  les *last_sync_version* doivent être validées pour s’assurer qu’elles ne sont pas trop anciennes, car certaines ou toutes les informations de modification ont peut-être été nettoyées en fonction de la période de rétention configurée pour la base de données. Pour plus d’informations, consultez [CHANGE_TRACKING_MIN_VALID_VERSION &#40;Transact-sql&#41;](../../relational-databases/system-functions/change-tracking-min-valid-version-transact-sql.md) et [options ALTER DATABASE SET &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md).  
   
- *Table* de version, {<primary_key_values>}  
- Retourne les informations de suivi des modifications les plus récentes pour une ligne spécifiée. Les valeurs de clé primaire doivent identifier la ligne. <primary_key_values> identifie les colonnes de clé primaire et spécifie les valeurs. Les noms des colonnes clés primaires peuvent être spécifiés dans n'importe quel ordre.  
+ *Table_name* de version, { *primary_key_values* }  
+ Retourne les informations de suivi des modifications les plus récentes pour une ligne spécifiée. Les valeurs de clé primaire doivent identifier la ligne. *primary_key_values* identifie les colonnes de clé primaire et spécifie les valeurs. Les noms des colonnes clés primaires peuvent être spécifiés dans n'importe quel ordre.  
   
- *Table*  
+ *table_name*  
  Table définie par l'utilisateur sur laquelle obtenir les informations de suivi des modifications. Le suivi des modifications doit être activé sur la table. Un nom de table en une, deux, trois ou quatre parties peut être utilisé. Le nom de table peut être un synonyme de la table.  
   
  *column_name*  
  Spécifie le nom de la colonne ou des colonnes clés primaires. Plusieurs noms de colonne peuvent être spécifiés dans un ordre quelconque.  
   
- *Valeur*  
+ *value*  
  Valeur de la clé primaire. S’il existe plusieurs colonnes de clé primaire, les valeurs doivent être spécifiées dans le même ordre que celui où les colonnes apparaissent dans la liste *column_name* .  
-  
+
+ FORCESEEK   
+ **S’applique à :** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (À partir de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 CU16 et [!INCLUDE[sssql19-md](../../includes/sssql19-md.md)] ), [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] et [!INCLUDE[ssSDSMIfull](../../includes/sssdsmifull-md.md)]    
+ 
+ Paramètre facultatif qui force l’utilisation d’une opération de recherche pour accéder au *table_name*. Dans certains cas où très peu de lignes ont été modifiées, une opération d’analyse peut toujours être utilisée pour accéder au *table_name*. Si une opération d’analyse introduit un problème de performances, utilisez le `FORCESEEK` paramètre.
+
  SERVIR *table_alias* [(*column_alias* [,... *n* ])]  
  Fournit des noms pour les résultats retournés par CHANGETABLE.  
   
@@ -86,7 +85,7 @@ CHANGETABLE (
   
  *column_alias*  
  Alias de colonne facultatif ou liste d'alias de colonne pour les colonnes retournées par CHANGETABLE. Ce paramètre permet de personnaliser les noms de colonne au cas où il existerait des noms en double dans les résultats.  
-  
+
 ## <a name="return-types"></a>Types de retour  
  **table**  
   
@@ -123,31 +122,23 @@ CHANGETABLE (
   
  Si vous supprimez une ligne puis insérez une ligne dotée de l'ancienne clé primaire, la modification est considérée comme une mise à jour de toutes les colonnes de la ligne.  
   
- Les valeurs retournées pour les colonnes SYS_CHANGE_OPERATION et SYS_CHANGE_COLUMNS sont relatives à la ligne de base (last_sync_version) spécifiée. Par exemple, si une opération d’insertion a été effectuée à la version 10 et une opération de mise à jour à la version 15, et si le *last_sync_version* de la ligne de base est 12, une mise à jour est signalée. Si la valeur *last_sync_version* est 8, une insertion sera signalée. SYS_CHANGE_COLUMNS ne signalera jamais les colonnes calculées comme ayant été mises à jour.  
+ Les valeurs retournées pour les `SYS_CHANGE_OPERATION` `SYS_CHANGE_COLUMNS` colonnes et sont relatives à la ligne de base (last_sync_version) spécifiée. Par exemple, si une opération d’insertion a été effectuée au niveau de `10` la version et d’une opération de mise à jour à `15` la version, et si la ligne de base *last_sync_version* est `12` , une mise à jour est signalée. Si la valeur *last_sync_version* est `8` , une insertion sera signalée. `SYS_CHANGE_COLUMNS` ne signalera jamais les colonnes calculées comme ayant été mises à jour.  
   
  En général, toutes les opérations d'insertion, de mise à jour ou de suppression de données dans les tables utilisateur font l'objet d'un suivi, y compris l'instruction MERGE.  
   
  Les opérations suivantes qui impliquent les données des tables utilisateur ne font pas l'objet d'un suivi :  
   
--   Exécution de l'instruction UPDATETEXT  
+-   Exécution de l' `UPDATETEXT` instruction. Cette instruction est déconseillée et sera supprimée dans une prochaine version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Toutefois, les modifications apportées à l’aide `.WRITE` de la clause de l’instruction Update sont suivies.  
   
-     Cette instruction est déconseillée et sera supprimée dans une prochaine version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Toutefois, les modifications apportées en utilisant la clause .WRITE de l'instruction UPDATE font l'objet d'un suivi.  
-  
--   Suppression de lignes à l'aide de TRUNCATE TABLE  
-  
-     Lorsqu'une table est tronquée, les informations sur la version du suivi des modifications associées à la table sont réinitialisées comme si le suivi des modifications venait d'être activé sur la table. Une application cliente doit toujours valider sa dernière version synchronisée. La validation échoue si la table a été tronquée.  
+-   Suppression de lignes à l’aide de `TRUNCATE TABLE` . Lorsqu'une table est tronquée, les informations sur la version du suivi des modifications associées à la table sont réinitialisées comme si le suivi des modifications venait d'être activé sur la table. Une application cliente doit toujours valider sa dernière version synchronisée. La validation échoue si la table a été tronquée.  
   
 ## <a name="changetableversion"></a>CHANGETABLE(VERSION...)  
  Un jeu de résultats vide est retourné si une clé primaire inexistante est spécifiée.  
   
- La valeur de SYS_CHANGE_VERSION peut être NULL si aucune modification n'a pas été apportée pendant une période plus longue que la période de rétention (par exemple, le nettoyage a supprimé les informations de modification) ou si la ligne n'a jamais été modifiée depuis l'activation du suivi des modifications pour la table.  
+ La valeur de `SYS_CHANGE_VERSION` peut être null si aucune modification n’a été apportée depuis plus longtemps que la période de rétention (par exemple, le nettoyage a supprimé les informations de modification) ou si la ligne n’a jamais été modifiée depuis l’activation du suivi des modifications pour la table.  
   
 ## <a name="permissions"></a>Autorisations  
- Requiert les autorisations suivantes sur la table spécifiée par la valeur de la *table* pour obtenir les informations de suivi des modifications :  
-  
--   Autorisation SELECT sur les colonnes clés primaires  
-  
--   VIEW CHANGE TRACKING  
+ Requiert l' `SELECT` autorisation sur les colonnes de clé primaire et l' `VIEW CHANGE TRACKING` autorisation sur la table spécifiée par le *<table_name>* valeur pour obtenir des informations de suivi des modifications.
   
 ## <a name="examples"></a>Exemples  
   
@@ -216,5 +207,4 @@ WHERE
  [CHANGE_TRACKING_IS_COLUMN_IN_MASK &#40;Transact-SQL&#41;](../../relational-databases/system-functions/change-tracking-is-column-in-mask-transact-sql.md)   
  [CHANGE_TRACKING_CURRENT_VERSION &#40;Transact-SQL&#41;](../../relational-databases/system-functions/change-tracking-current-version-transact-sql.md)   
  [CHANGE_TRACKING_MIN_VALID_VERSION &#40;Transact-SQL&#41;](../../relational-databases/system-functions/change-tracking-min-valid-version-transact-sql.md)  
-  
   

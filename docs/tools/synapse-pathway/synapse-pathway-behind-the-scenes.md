@@ -2,19 +2,19 @@
 title: Dans les coulisses d’Azure Synapse Pathway Preview.
 description: Présentation technique approfondie de la façon dont Azure Synapse Pathway traduit votre code.
 author: anshul82-ms
-ms.author: anrampal.
+ms.author: anrampal
 ms.prod: sql
-ms.technology: Azure Synapse Pathway
+ms.technology: tools-other
 ms.topic: conceptual
 ms.date: 03/02/2021
 monikerRange: =azure-sqldw-latest
 ms.custom: template-concept
-ms.openlocfilehash: dbd362e53b5bfcd916c53e90d6f66c8fb44f0374
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 9f23aa23ef40ee7df5ad601b73ad526df7bcf0da
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101873044"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186299"
 ---
 # <a name="azure-synapse-pathway-preview-behind-the-scenes"></a>Dans les coulisses d’Azure Synapse Pathway Preview
 [!INCLUDE [Azure Synapse Analytics](../../includes/applies-to-version/asa.md)]
@@ -23,7 +23,7 @@ L’objectif d’Azure Synapse Pathway est de préserver l’intention fonctionn
 
 Chacune des phases préserve et augmente la connaissance de la source, y compris les métadonnées spécifiques à la source, pour garantir la meilleure qualité de la traduction.
 
- ![Azure Synapse Pathway.](./media/technical-deep-dive/behind-the-scene.png)
+ ![Azure Synapse Pathway.](./media/synapse-pathway-behind-the-scenes/behind-the-scene.png)
 
 ## <a name="stage-1--lexing-and-parsing"></a>Phase 1 : Segmentation et analyse
 
@@ -49,7 +49,7 @@ Azure Synapse SQL définit la fonction « absolute » comme suit :
 ABS ( numeric_expression )  
 ```
 
-Dans ce cas simple, Synapse Pathway comprend que la conversion en Synapse SQL de flottant en numérique est une [conversion](../../t-sql/functions/cast-and-convert-transact-sql?view=azure-sqldw-latest#implicit-conversions) implicite et ne nécessite aucun cast de type supplémentaire. Traduction du code simple, propre et efficace.
+Dans ce cas simple, Synapse Pathway comprend que la conversion en Synapse SQL de flottant en numérique est une [conversion](../../t-sql/functions/cast-and-convert-transact-sql.md?view=azure-sqldw-latest&preserve-view=true#implicit-conversions) implicite et ne nécessite aucun cast de type supplémentaire. Traduction du code simple, propre et efficace.
 
 Conserver ces méta-informations sur les instructions et les fragments sources permet de résoudre les différences structurelles entre les plateformes, par exemple les conversions en logique de refus pour les prédicats des conditions de recherche dans une clause WHERE.
 

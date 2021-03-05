@@ -10,16 +10,22 @@ ms.technology: ssma
 ms.topic: conceptual
 ms.assetid: a24d3fc0-6911-4bfa-828a-197abf222e02
 ms.author: alexiva
-ms.openlocfilehash: f077eb235b38a6eba9f70d2653796d088fb0f074
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: b6d660d00b036c1bbc5008411a9f8e9a0bc77ea0
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100066114"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102185846"
 ---
 # <a name="whats-new-in-ssma-for-access-accesstosql"></a>Nouveautés de SSMA for Access (AccessToSQL)
 
 Cet article répertorie les Assistant Migration SQL Server (SSMA) pour les modifications d’accès dans chaque version.
+
+## <a name="ssma-v817"></a>SSMA v 8.17
+
+La version v 8.17 de SSMA pour Access contient les modifications suivantes :
+
+* Mettre à jour les rapports d’évaluation HTML pour utiliser l’éditeur moderne pour afficher du texte SQL
 
 ## <a name="ssma-v816"></a>SSMA v 8.16
 

@@ -1,21 +1,22 @@
 ---
 title: Vue d’ensemble d’Azure Synapse Pathway Preview
 description: Azure Synapse Pathway est un outil qui permet de migrer un entrepôt de données vers Azure Synapse Analytics.
+author: anshul82-ms
 ms.author: anrampal
 ms.topic: overview
 ms.date: 03/02/2021
 ms.prod: sql
-ms.technology: Azure Synapse Pathway
+ms.technology: tools-other
 monikerRange: =azure-sqldw-latest
 ms.custom: template-overview
-ms.openlocfilehash: d7289d2bfe099dad7bbc91ccd5060797f7aad997
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 5e3844f6e63fafca5137a646ff4c02edbc7105b8
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101873132"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102185919"
 ---
-# <a name="azure-synapse-pathway-preview"></a>Azure Synapse Pathway Preview
+# <a name="azure-synapse-pathway-preview-overview"></a>Vue d’ensemble d’Azure Synapse Pathway Preview
 [!INCLUDE [Azure Synapse Analytics](../../includes/applies-to-version/asa.md)]
 
 Quand des clients envisagent de moderniser leurs systèmes d’entrepôts de données, un des facteurs critiques bloquants auxquels ils sont confrontés est la traduction de leur code SQL. Le code existant est écrit et optimisé pour leur système actuel, mais doit être optimisé pour le nouveau système vers lequel ils migrent.
@@ -32,7 +33,7 @@ Pour traduire ce code SQL critique, les clients doivent réécrire manuellement 
 
 **Azure Synapse Pathway** vous aide à effectuer une mise à niveau vers une plateforme d’entrepôt de données moderne en automatisant la traduction du code de votre entrepôt de données existant. Il s’agit d’un outil gratuit, intuitif et facile à utiliser, qui automatise la traduction du code, ce qui permet une migration plus rapide vers Azure Synapse Analytics.
 
- ![Vue d’ensemble d’Azure Synapse Pathway.](./media/pathway-overview/synapse-pathway-overview.png) 
+ ![Vue d’ensemble d’Azure Synapse Pathway.](./media/azure-synapse-pathway-overview/pathway-overview.png) 
 
 Synapse Pathway traduit les instructions DDL (Data Definition Language) et DML (Data Manipulation Language) en un langage compatible T-SQL compatible avec Azure Synapse SQL.
 
@@ -47,7 +48,7 @@ Pour installer Synapse Pathway, consultez [Téléchargement d’Azure Synapse Pa
 ## <a name="supported-sources"></a>Sources prises en charge
 
 Azure Synapse Pathway prend en charge la conversion de code des bases de données, des schémas et des tables pour les sources suivantes :
-- **IBM Netezza** 
+- **IBM Netezza**
 - **Microsoft SQL Server**
 - **Snowflake**
 
@@ -59,5 +60,3 @@ Pour plus d’informations sur Azure Synapse Pathway, consultez la [page Forum a
 
 - [Exécuter votre première traduction avec Azure Synapse Pathway](synapse-pathway-assessment.md)
 - Blog des annonces - [Announcing Azure Synapse Pathway: Turbocharge your data warehouse migration - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/azure-synapse-analytics/announcing-azure-synapse-pathway-turbocharge-your-data-warehouse/ba-p/2176630)
-
-
