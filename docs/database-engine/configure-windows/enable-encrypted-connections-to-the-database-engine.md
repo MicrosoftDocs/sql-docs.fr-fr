@@ -24,12 +24,12 @@ helpviewer_keywords:
 ms.assetid: e1e55519-97ec-4404-81ef-881da3b42006
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 87ac1c0759264b00567d5edc2cd9f22727fdd0fa
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 4139b8b53a50aa58329f6a5a5c490d99ee9f0524
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "100353858"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186252"
 ---
 # <a name="enable-encrypted-connections-to-the-database-engine"></a>Activez les connexions chiffrées dans le moteur de base de données
 
@@ -71,7 +71,7 @@ L’activation du chiffrement TLS améliore la sécurité des données transmise
  Le client doit être en mesure de vérifier la propriété du certificat employé par le serveur. Si le client dispose du certificat de clé publique de l'autorité de certification qui a signé le certificat de serveur, aucune configuration supplémentaire n'est requise. [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows comprend les certificats de clé publique d'un grand nombre d'autorités de certification. Si le certificat de serveur a été signé par une autorité de certification publique ou privée pour laquelle le client ne dispose pas de certificat de clé publique, vous devez installer le certificat de clé publique de l'autorité de certification ayant signé le certificat de serveur.  
   
 > [!NOTE]  
-> Pour utiliser le chiffrement à l'aide d'un cluster de basculement, installez le certificat du serveur avec le nom DNS complet du serveur virtuel sur tous les nœuds du cluster de basculement. Si, par exemple, vous disposez d’un cluster à deux nœuds nommés **_test1.\_\<your company>\*.com*** and **_test2.\_\<your company>\*.com***, ainsi que d’un serveur virtuel nommé **_virtsql_*_, vous devez installer un certificat pour _ *_virtsql.\_\<your company>\*.com*** sur les deux nœuds. Vous pouvez définir la valeur de l’option **Forcer le chiffrement** dans la zone de propriété **Protocoles pour virtsql** de **Configuration du réseau SQL Server** sur **Oui**.
+> Pour utiliser le chiffrement à l'aide d'un cluster de basculement, installez le certificat du serveur avec le nom DNS complet du serveur virtuel sur tous les nœuds du cluster de basculement. Si, par exemple, vous disposez d’un cluster à deux nœuds nommés ***test1.\*\<your company>\*.com*** et **_test2.\_\<your company>\*.com*** ainsi que d’un serveur virtuel nommé **_virtsql_*_, vous devez installer un certificat pour _ *_virtsql.\_\<your company>\*.com*** sur les deux nœuds. Vous pouvez définir la valeur de l’option **Forcer le chiffrement** dans la zone de propriété **Protocoles pour virtsql** de **Configuration du réseau SQL Server** sur **Oui**.
 
 > [!NOTE]
 > Si vous créez des connexions chiffrées entre un indexeur de la Recherche Azure et [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur une machine virtuelle Azure, consultez [Configurer une connexion à partir d’un indexeur de la Recherche Azure à SQL Server sur une machine virtuelle Azure](/azure/search/search-howto-connecting-azure-sql-iaas-to-azure-search-using-indexers). 
@@ -85,6 +85,9 @@ Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], pour charger un 
 - Le compte de service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] doit avoir l’autorisation nécessaire pour accéder au certificat TLS.
 
 - L'heure actuelle du système doit être postérieure à la propriété **Valide du** du certificat et antérieure à la propriété **Valide jusqu’au** du certificat.
+
+> [!NOTE]  
+> La validité du certificat est évaluée lors de la connexion à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] avec des connexions clientes qui sont lancées en spécifiant l’option de chiffrement sur true, sauf si elle est remplacée par le paramètre Faire confiance au certificat de serveur. 
 
 - Le certificat doit être destiné à une authentification serveur. Pour cela, la propriété **Utilisation améliorée de la clé** du certificat doit indiquer l’**authentification du serveur (1.3.6.1.5.5.7.3.1)** .
 

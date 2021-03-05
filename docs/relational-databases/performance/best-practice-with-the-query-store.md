@@ -13,12 +13,12 @@ ms.assetid: 5b13b5ac-1e4c-45e7-bda7-ebebe2784551
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: =azuresqldb-current||>=sql-server-2016||= azure-sqldw-latest||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: c8379a2e1c18ea5da82abda5ad25dee47679a742
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 85c9a992660b63f70d2193acd114e7b07d3c1092
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101837774"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186494"
 ---
 # <a name="best-practices-with-query-store"></a>Bonnes pratiques relatives au Magasin des requêtes
 
@@ -434,7 +434,7 @@ Les indicateurs de trace globaux 7745 et 7752 peuvent être utilisés pour amél
 > Si vous utilisez le Magasin des requêtes pour avoir des aperçus juste-à-temps de la charge de travail dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)], prévoyez d’installer dès que possible les correctifs de scalabilité des performances figurant dans [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 CU2 ([KB 4340759](https://support.microsoft.com/help/4340759)). Sans ces améliorations, lorsque la base de données est sous des charges de travail lourdes, une contention de verrouillages spinlock peut se produire et les performances du serveur peuvent devenir lentes. En particulier, vous pouvez constater une contention importante sur le verrouillage spinlock `QUERY_STORE_ASYNC_PERSIST` ou `SPL_QUERY_STORE_STATS_COOKIE_CACHE`. Une fois cette amélioration appliquée, le Magasin des requêtes n’entraîne plus de contention de verrouillages spinlock.
 
 > [!IMPORTANT]
-> Si vous utilisez le Magasin des requêtes pour obtenir des insights de la charge de travail juste-à-temps dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]), prévoyez d’installer dès que possible l’amélioration de la scalabilité des performances de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 CU15, [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU22 et [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU8. Sans cette amélioration, lorsque la base de données est sous des charges de travail ad hoc lourdes, le Magasin des requêtes peut utiliser une grande quantité de mémoire et les performances du serveur peuvent devenir lentes. Une fois cette amélioration appliquée, le Magasin des requêtes impose des limites internes à la quantité de mémoire que ses différents composants peuvent utiliser et peut automatiquement changer le mode d’opération en lecture seule jusqu’à ce que la mémoire soit suffisamment retournée au [!INCLUDE[ssde_md](../../includes/ssde_md.md)]. Notez que les limites de mémoire interne du Magasin des requêtes ne sont pas documentées, car elles sont sujettes à modification.  
+> Si vous utilisez le Magasin des requêtes pour obtenir des insights de la charge de travail juste-à-temps dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] à [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)]), prévoyez d’installer dès que possible l’amélioration de la scalabilité des performances de [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 CU15, [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU23 et [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU9. Sans cette amélioration, lorsque la base de données est sous des charges de travail ad hoc lourdes, le Magasin des requêtes peut utiliser une grande quantité de mémoire et les performances du serveur peuvent devenir lentes. Une fois cette amélioration appliquée, le Magasin des requêtes impose des limites internes à la quantité de mémoire que ses différents composants peuvent utiliser et peut automatiquement changer le mode d’opération en lecture seule jusqu’à ce que la mémoire soit suffisamment retournée au [!INCLUDE[ssde_md](../../includes/ssde_md.md)]. Notez que les limites de mémoire interne du Magasin des requêtes ne sont pas documentées, car elles sont sujettes à modification.  
 
 
 ## <a name="using-query-store-in-azure-sql-database-active-geo-replication"></a><a name="geosyncreplicas"></a> Utilisation du Magasin des requêtes dans la géoréplication active d’Azure SQL Database

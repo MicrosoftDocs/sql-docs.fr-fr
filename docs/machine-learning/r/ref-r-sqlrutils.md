@@ -8,12 +8,12 @@ ms.topic: how-to
 author: dphansen
 ms.author: davidph
 monikerRange: '>=sql-server-2016||>=sql-server-linux-ver15'
-ms.openlocfilehash: 874c3175b830cbcdb5805c5bdb06a747015ff889
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 67e14f965889cbbeecf2a9800d49b70622b88502
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100273010"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186386"
 ---
 # <a name="sqlrutils-r-package-in-sql-server-machine-learning-services"></a>sqlrutils (package R de SQL Server Machine Learning Services)
 [!INCLUDE [SQL Server 2016 and later](../../includes/applies-to-version/sqlserver2016.md)]
@@ -35,7 +35,7 @@ Vous pouvez également exécuter la procédure stockée à partir d’un environ
   
 ## <a name="full-reference-documentation"></a>Documentation de référence complète
 
-Le package **sqlrutils** est distribué dans plusieurs produits Microsoft, mais l’utilisation est la même quelle que soit sa provenance (SQL Server ou un autre produit). Étant donné que les fonctions sont les mêmes, la [documentation de chaque fonction sqlrutils](/machine-learning-server/r-reference/revoscaler/revoscaler) est publiée au même endroit sous la [référence R](/machine-learning-server/r-reference/introducing-r-server-r-package-reference) pour Microsoft Machine Learning Server. Si des comportements spécifiques à un produit existent, les différences seront signalées dans la page d’aide de la fonction.
+Le package **sqlrutils** est distribué dans plusieurs produits Microsoft, mais l’utilisation est la même quelle que soit sa provenance (SQL Server ou un autre produit). Comme les fonctions sont les mêmes, la documentation de chaque fonction sqlrutils individuelle est publiée à un seul endroit sous la [référence de package sqlrutils](/machine-learning-server/r-reference/sqlrutils/sqlrutils) pour Microsoft Machine Learning Server. Si des comportements spécifiques à un produit existent, les différences seront signalées dans la page d’aide de la fonction.
 
 ## <a name="functions-list"></a>Liste des fonctions
 
@@ -106,4 +106,4 @@ Aucune donnée ou valeur n’est généralement associé à l’objet de procéd
 
 ## <a name="see-also"></a>Voir aussi
 
-[Guide pratique pour créer une procédure stockée à l’aide de sqlrutils](how-to-create-a-stored-procedure-using-sqlrutils.md)
+[Guide pratique pour créer une procédure stockée à l’aide de sqlrutils](/machine-learning-server/r-reference/sqlrutils/how-to-create-a-stored-procedure-from-r)

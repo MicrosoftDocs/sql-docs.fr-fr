@@ -3,7 +3,7 @@ title: Fonctionnalités du moteur de base de données dépréciées dans SQL Ser
 titleSuffix: SQL Server 2019
 description: Découvrez les fonctionnalités du moteur de base de données dépréciées qui sont toujours disponibles dans SQL Server 2017 (14.x), mais qui ne doivent pas être utilisées dans les nouvelles applications.
 ms.custom: seo-lt-2019
-ms.date: 12/13/2019
+ms.date: 03/03/2021
 ms.prod: sql
 ms.prod_service: high-availability
 ms.reviewer: ''
@@ -17,24 +17,23 @@ ms.assetid: ''
 author: MikeRayMSFT
 ms.author: mikeray
 monikerRange: '>=sql-server-2017||>=sql-server-linux-2017'
-ms.openlocfilehash: e14f354812c99b9ed3e8be86734e3cb8e07db751
-ms.sourcegitcommit: e8c0c04eb7009a50cbd3e649c9e1b4365e8994eb
+ms.openlocfilehash: e3b27292b817d0ec0bf22afcc1e8eaab61864e82
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100489473"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186439"
 ---
 # <a name="deprecated-database-engine-features-in-sql-server-2017"></a>Fonctionnalités du moteur de base de données dépréciées dans SQL Server 2017
 
 [!INCLUDE[SQL Server 2017](../includes/applies-to-version/sqlserver2017.md)]
 
-  Cette rubrique décrit les fonctionnalités [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] déconseillées qui sont toujours disponibles dans [!INCLUDE[sssql17-md](../includes/sssql17-md.md)]. Les fonctions déconseillées ne doivent pas être utilisées dans de nouvelles applications.  
+  Cet article décrit les fonctionnalités [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] dépréciées qui sont toujours disponibles dans [!INCLUDE[sssql17-md](../includes/sssql17-md.md)]. Les fonctions déconseillées ne doivent pas être utilisées dans de nouvelles applications.  
   
 Quand une fonctionnalité est marquée comme étant dépréciée, cela signifie que :
-
 - La fonctionnalité est en mode de maintenance uniquement. Aucune nouvelle modification ne lui sera apportée, notamment celles liées à l’interopérabilité avec de nouvelles fonctionnalités.
-- Nous nous efforçons de ne pas retirer une fonctionnalité dépréciée des futures versions pour faciliter les mises à niveau. Cependant, dans de rares cas, nous pouvons décider de retirer définitivement une fonctionnalité de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] si elle limite de futures innovations.
-- Pour un nouveau travail de développement, nous vous recommandons de ne pas utiliser des fonctionnalités dépréciées.      
+- Nous nous efforçons de ne pas retirer une fonctionnalité dépréciée des futures versions pour faciliter les mises à niveau. Cependant, dans de rares cas, nous pouvons décider d’arrêter (supprimer) définitivement une fonctionnalité de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] si elle limite des innovations futures.
+- Pour les nouveaux travaux de développement, n’utilisez pas de fonctionnalités dépréciées. Pour les applications existantes, prévoyez de modifier dès que possible celles qui utilisent actuellement ces fonctionnalités.     
 
 Vous pouvez surveiller l'utilisation de fonctionnalités déconseillées à l'aide du compteur de performance Objet [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Fonctionnalités déconseillées et des événements de suivi. Pour plus d’informations, consultez [Utiliser des objets SQL Server](../relational-databases/performance-monitor/use-sql-server-objects.md).  
 
@@ -49,8 +48,7 @@ WHERE object_name = 'SQLServer:Deprecated Features';
 > Cette liste est identique à la liste [!INCLUDE[sssql15-md](../includes/sssql16-md.md)]. Aucune nouvelle fonctionnalité du moteur de base de données supprimée ou dépréciée n’a été annoncée pour [!INCLUDE[sssql17-md](../includes/sssql17-md.md)].
 
 ## <a name="features-deprecated-in-the-next-version-of-sql-server"></a>Fonctionnalités dépréciées dans la prochaine version de SQL Server
-
-Les fonctionnalités du moteur de base de données SQL Server décrites ci-dessous sont dépréciées dans la prochaine version de SQL Server. Évitez d'utiliser ces fonctionnalités dans vos nouveaux développements et modifiez dès que possible les applications qui y ont recours. La valeur **Nom de la fonctionnalité** apparaît dans les événements de trace comme ObjectName et dans les compteurs de performance et `sys.dm_os_performance_counters` comme nom d’instance. La valeur de l’ **ID de la fonctionnalité** apparaît dans les événements de suivi comme ObjectId.
+Les fonctionnalités suivantes de [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] ne seront pas prises en charge dans une version future de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Évitez d'utiliser ces fonctionnalités dans vos nouveaux développements et modifiez dès que possible les applications qui y ont recours. La valeur **Nom de la fonctionnalité** apparaît dans les événements de trace comme ObjectName et dans les compteurs de performance et `sys.dm_os_performance_counters` comme nom d’instance. La valeur de l’ **ID de la fonctionnalité** apparaît dans les événements de suivi comme ObjectId.
 
 ### <a name="back-up-and-restore"></a>Sauvegarde et restauration
 
@@ -62,7 +60,7 @@ Les fonctionnalités du moteur de base de données SQL Server décrites ci-desso
 
 | Fonctionnalité déconseillée | Remplacement | Nom de la fonctionnalité | ID de la fonctionnalité |
 |--------------------|-------------|--------------|------------|
-Mise à niveau à partir de la version 100 (SQL Server 2008 et SQL Server 2008 R2). | Quand le [support](/lifecycle/products/?products=sql-server) d’une version de SQL Server prend fin, le niveau de compatibilité de base de données associé est marqué comme étant déprécié. Cependant, nous continuons le plus longtemps possible d’assurer le support des applications certifiées sur tous les niveaux de compatibilité de base de données pris en charge de façon à faciliter la mise à niveau. Pour plus d’informations sur les niveaux de compatibilité, consultez [Niveau de compatibilité ALTER DATABASE &#40;Transact-SQL&#41;](../t-sql/statements/alter-database-transact-sql-compatibility-level.md). | Niveau de compatibilité 100 de la base de données | 108 |
+Mettez à niveau à partir de la version 100 ([!INCLUDE[ssKatmai](../includes/ssKatmai-md.md)] et [!INCLUDE[ssKilimanjaro](../includes/ssKilimanjaro-md.md)]). | Quand le [support](/lifecycle/products/?products=sql-server) n’est plus assuré pour une version de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)], le niveau de compatibilité de base de données associé est marqué comme étant déprécié. Cependant, nous continuons le plus longtemps possible d’assurer le support des applications certifiées sur tous les niveaux de compatibilité de base de données pris en charge de façon à faciliter la mise à niveau. Pour plus d’informations sur les niveaux de compatibilité, consultez [Niveau de compatibilité ALTER DATABASE &#40;Transact-SQL&#41;](../t-sql/statements/alter-database-transact-sql-compatibility-level.md). | Niveau de compatibilité 100 de la base de données | 108 |
 
 ### <a name="database-objects"></a>Objets de base de données
 

@@ -16,19 +16,19 @@ helpviewer_keywords:
 ms.assetid: 6fabeea3-7a42-4769-a0f3-7e04daada314
 author: VanMSFT
 ms.author: vanto
-ms.openlocfilehash: 68228106bcd2620cb684bd61efec353fdb49585c
-ms.sourcegitcommit: f7ac1976d4bfa224332edd9ef2f4377a4d55a2c9
+ms.openlocfilehash: abdd25c6166b40436584a1260d4b1b09d40900c4
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85884835"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186056"
 ---
 # <a name="write-sql-server-audit-events-to-the-security-log"></a>Écrire des événements d'audit SQL Server dans le journal de sécurité  
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
 
 Dans un environnement extrêmement sécurisé, le journal de sécurité Windows est l'emplacement approprié pour consigner des événements d'accès aux objets. D'autres emplacements d'audit sont pris en charge mais ils sont plus exposés au risque de falsification.  
   
- L'écriture des audits du serveur [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] dans le journal de sécurité Windows est soumise à deux conditions clés :  
+ L’écriture des audits du serveur [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] dans le journal de sécurité Windows est soumise à trois conditions clés :  
   
 -   Le paramètre Auditer l'accès aux objets doit être configuré pour capturer les événements. L’outil de stratégie d’audit (`auditpol.exe`) expose différents paramètres de sous-stratégies dans la catégorie **Auditer l’accès aux objets** . Pour permettre à [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] d'auditer l'accès aux objets, configurez le paramètre **généré par une application** .  
 -   Le compte sous lequel le service [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] est exécuté doit posséder l’autorisation **Générer des audits de sécurité** pour écrire dans le journal de sécurité Windows. Par défaut, les comptes Service local et Service réseau disposent de cette autorisation. Cette étape n'est pas requise si [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] s'exécute sous l'un de ces comptes.  

@@ -1,10 +1,8 @@
 ---
-title: Afficher ou modifier des propriétés de serveur (SQL Server) | Microsoft Docs
+title: Afficher ou modifier des propriétés de serveur (SQL Server)
 description: Découvrez comment utiliser SQL Server Management Studio, Transact-SQL ou le Gestionnaire de configuration SQL Server pour afficher ou modifier les propriétés d’une instance de SQL Server.
-ms.date: 03/14/2017
 ms.prod: sql
 ms.prod_service: high-availability
-ms.reviewer: ''
 ms.technology: configuration
 ms.topic: conceptual
 f1_keywords:
@@ -18,13 +16,15 @@ helpviewer_keywords:
 ms.assetid: 55f3ac04-5626-4ad2-96bd-a1f1b079659d
 author: markingmyname
 ms.author: maghan
+ms.reviewer: ''
 ms.custom: contperf-fy20q4
-ms.openlocfilehash: f6bf2a5d86faba024d58ae6b6f9c539e8bd17003
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.date: 03/14/2017
+ms.openlocfilehash: 80d52c19e5fde8116f7f6fed638e1120064038d3
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100350343"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186048"
 ---
 # <a name="view-or-change-server-properties-sql-server"></a>Afficher ou modifier des propriétés de serveur (SQL Server)
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -94,15 +94,15 @@ Les autorisations d’exécution de **sp_configure** , sans paramètre ou avec l
   
 1.  Connectez-vous au [!INCLUDE[ssDE](../../includes/ssde-md.md)].  
   
-2.  Dans la barre d'outils standard, cliquez sur **Nouvelle requête**.  
+2.  Dans la barre d’outils standard, sélectionnez **Nouvelle requête**.  
   
-3.  Copiez et collez l'exemple suivant dans la fenêtre de requête, puis cliquez sur **Exécuter**. L'exemple suivant interroge la vue de catalogue [sys.configurations](../../relational-databases/system-catalog-views/sys-configurations-transact-sql.md) pour retourner des informations sur chaque option de configuration du serveur sur le serveur actuel. L'exemple retourne le nom (`name`) et la description (`description`) de l'option et indique si l'option est une option avancée (`is_advanced`).  
+3.  Copiez et collez l’exemple suivant dans la fenêtre de requête, puis sélectionnez **Exécuter**. L'exemple suivant interroge la vue de catalogue [sys.configurations](../../relational-databases/system-catalog-views/sys-configurations-transact-sql.md) pour retourner des informations sur chaque option de configuration du serveur sur le serveur actuel. L’exemple retourne le nom (`name`) et la description (`description`) de l’option, sa valeur (`value`) et indique si l’option est une option avancée (`is_advanced`).  
   
     ```wmimof  
     USE AdventureWorks2012;   
     GO  
-    SELECT name, description, is_advanced  
-    FROM sys.configurations ;   
+    SELECT name, description, value, is_advanced  
+    FROM sys.configurations;   
     GO  
   
     ```  
@@ -111,9 +111,9 @@ Les autorisations d’exécution de **sp_configure** , sans paramètre ou avec l
   
 1.  Connectez-vous au [!INCLUDE[ssDE](../../includes/ssde-md.md)].  
   
-2.  Dans la barre d'outils standard, cliquez sur **Nouvelle requête**.  
+2.  Dans la barre d’outils standard, sélectionnez **Nouvelle requête**.  
   
-3.  Copiez et collez l'exemple suivant dans la fenêtre de requête, puis cliquez sur **Exécuter**. Cet exemple montre comment utiliser [sp_configure](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md) pour modifier une propriété de serveur. L'exemple modifie la valeur de l'option `fill factor` sur `100`. Le serveur doit être redémarré pour appliquer le changement.  
+3.  Copiez et collez l’exemple suivant dans la fenêtre de requête, puis sélectionnez **Exécuter**. Cet exemple montre comment utiliser [sp_configure](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md) pour modifier une propriété de serveur. L'exemple modifie la valeur de l'option `fill factor` sur `100`. Le serveur doit être redémarré pour appliquer le changement.  
   
 ```sql  
 Use AdventureWorks2012;  
@@ -137,11 +137,11 @@ GO
   
 1.  Dans le menu **Démarrer** , pointez sur **Tous les programmes**, sur [!INCLUDE[ssCurrentUI](../../includes/sscurrentui-md.md)]et sur **Outils de configuration**, puis cliquez sur **Gestionnaire de configuration SQL Server**.  
   
-2.  Dans le **Gestionnaire de configuration SQL Server**, cliquez sur **Services SQL Server**.  
+2.  Dans **Gestionnaire de configuration SQL Server**, sélectionnez **SQL Server Services**.  
   
-3.  Dans le volet d’informations, cliquez avec le bouton droit sur **SQL Server (\<**_instancename_**>)** , puis cliquez sur **Propriétés**.  
+3.  Dans le volet d’informations, cliquez avec le bouton droit sur **SQL Server (\<**_instancename_**>)** , puis sélectionnez **Propriétés**.  
   
-4.  Dans la boîte de dialogue **Propriétés de SQL Server (\<**_instancename_**>)** , modifiez les propriétés du serveur sous l’onglet **Service** ou **Avancé**, puis cliquez sur **OK**.  
+4.  Dans la boîte de dialogue **Propriétés de SQL Server (\<**_instancename_**>)** , modifiez les propriétés du serveur sous l’onglet **Service** ou **Avancé**, puis sélectionnez **OK**.  
   
 ## <a name="restart-after-changes"></a><a name="FollowUp"></a>Redémarrer après les modifications
 

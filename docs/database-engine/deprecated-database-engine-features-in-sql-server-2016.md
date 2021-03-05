@@ -15,12 +15,12 @@ helpviewer_keywords:
 - deprecation [SQL Server], feature list
 author: MikeRayMSFT
 ms.author: mikeray
-ms.openlocfilehash: 518b29507e7992b267922e09c97bf98b1657205d
-ms.sourcegitcommit: c83c17e44b5e1e3e2a3b5933c2a1c4afb98eb772
+ms.openlocfilehash: e4227e17c9b8f3319e771d7de9d93fefddbaa487
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "100525156"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186097"
 ---
 # <a name="deprecated-database-engine-features-in-sql-server-2016"></a>Fonctionnalités du moteur de base de données déconseillées dans SQL Server 2016
 [!INCLUDE [SQL Server 2016](../includes/applies-to-version/sqlserver2016.md)]  
@@ -28,9 +28,9 @@ ms.locfileid: "100525156"
 Cet article décrit les fonctionnalités [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] dépréciées qui sont toujours disponibles dans [!INCLUDE[sssql15-md](../includes/sssql16-md.md)]. Les fonctions déconseillées ne doivent pas être utilisées dans de nouvelles applications.  
   
 Quand une fonctionnalité est marquée comme étant dépréciée, cela signifie que :
--  La fonctionnalité est en mode de maintenance uniquement. Aucune nouvelle modification ne lui sera apportée, notamment celles liées à l’interopérabilité avec de nouvelles fonctionnalités.
--  Nous nous efforçons de ne pas retirer une fonctionnalité dépréciée des futures versions pour faciliter les mises à niveau. Cependant, dans de rares cas, nous pouvons décider de retirer définitivement une fonctionnalité de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] si elle limite de futures innovations.
--  Pour un nouveau travail de développement, nous vous recommandons de ne pas utiliser des fonctionnalités dépréciées.      
+- La fonctionnalité est en mode de maintenance uniquement. Aucune nouvelle modification ne lui sera apportée, notamment celles liées à l’interopérabilité avec de nouvelles fonctionnalités.
+- Nous nous efforçons de ne pas retirer une fonctionnalité dépréciée des futures versions pour faciliter les mises à niveau. Cependant, dans de rares cas, nous pouvons décider d’arrêter (supprimer) définitivement une fonctionnalité de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] si elle limite des innovations futures.
+- Pour les nouveaux travaux de développement, n’utilisez pas de fonctionnalités dépréciées. Pour les applications existantes, prévoyez de modifier dès que possible celles qui utilisent actuellement ces fonctionnalités.     
 
 Pour [!INCLUDE[sssql17-md](../includes/sssql17-md.md)], consultez [Fonctionnalités du moteur de base de données dépréciées dans SQL Server 2017](../database-engine/deprecated-database-engine-features-in-sql-server-2017.md).
 
@@ -44,7 +44,7 @@ WHERE object_name = 'SQLServer:Deprecated Features';
 ```  
   
 ## <a name="features-deprecated-in-the-next-version-of-sql-server"></a>Fonctionnalités dépréciées dans la prochaine version de SQL Server
- Les fonctionnalités suivantes du [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] ne seront pas prises en charge dans la prochaine version de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Évitez d'utiliser ces fonctionnalités dans vos nouveaux développements et modifiez dès que possible les applications qui y ont recours. La valeur **Nom de la fonctionnalité** apparaît dans les événements de trace comme ObjectName et dans les compteurs de performance et `sys.dm_os_performance_counters` comme nom d’instance. La valeur de l’ **ID de la fonctionnalité** apparaît dans les événements de suivi comme ObjectId.  
+ Les fonctionnalités suivantes de [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] ne seront pas prises en charge dans une version future de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Évitez d'utiliser ces fonctionnalités dans vos nouveaux développements et modifiez dès que possible les applications qui y ont recours. La valeur **Nom de la fonctionnalité** apparaît dans les événements de trace comme ObjectName et dans les compteurs de performance et `sys.dm_os_performance_counters` comme nom d’instance. La valeur de l’ **ID de la fonctionnalité** apparaît dans les événements de suivi comme ObjectId.  
   
 |Category|Fonctionnalité déconseillée|Remplacement|Nom de la fonctionnalité|ID de la fonctionnalité|  
 |--------------|------------------------|-----------------|------------------|----------------|  

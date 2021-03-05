@@ -1,5 +1,6 @@
 ---
-title: Fichiers include de la documentation de SQL Server | Microsoft Docs
+title: Fichiers include de la documentation de SQL Server
+description: Explication des fichiers include de SQL Server pour le versioning et « s’applique à ».
 ms.custom: ''
 ms.date: 01/19/2019
 ms.prod: sql
@@ -9,12 +10,12 @@ author: MashaMSFT
 ms.author: mathoma
 ms.topic: conceptual
 monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || >= sql-server-linux-2017'
-ms.openlocfilehash: e23fdd773cce72583f561569e106912d8b77db5c
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: ec2b43b19f86a8006dd44b562c1b3ee85768c79e
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100341302"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186630"
 ---
 # <a name="sql-server-include-files-for-versioning-and-applies-to"></a>Fichiers include SQL Server pour la gestion des versions et applies-to
 

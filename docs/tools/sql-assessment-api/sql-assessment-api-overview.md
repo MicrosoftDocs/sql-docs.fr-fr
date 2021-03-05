@@ -8,13 +8,13 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 1/25/2021
-ms.openlocfilehash: 19328956cab5d7c5e449e48d99bbfda1b999ca6f
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.date: 3/3/2021
+ms.openlocfilehash: 7e55abe0d02a9f9deffffdaa7639d911faad1fa3
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100067117"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102185746"
 ---
 # <a name="sql-assessment-api"></a>API d’évaluation SQL
 
@@ -24,9 +24,13 @@ L’API SQL Assessment est utile pour vérifier si votre configuration de SQL Se
 
 L’API peut être utilisée pour évaluer :
  
-* Azure SQL Database Managed Instance et SQL Server versions 2012 et ultérieures.
+* SQL Server sur les machines virtuelles Azure
 
-* SQL sur les systèmes basés sur Linux.
+* Azure SQL Database Managed Instance
+
+* SQL Server 2012 et ultérieur
+
+* SQL sur des systèmes Linux
 
 L’API est également utilisée par l’Extension d’évaluation SQL Server pour Azure Data Studio (ADS).
 
