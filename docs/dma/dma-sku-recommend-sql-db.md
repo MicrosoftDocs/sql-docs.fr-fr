@@ -1,6 +1,6 @@
 ---
 title: Identifiez la référence SKU Azure SQL Database appropriée pour votre base de données locale (Assistant Migration de données) | Microsoft Docs
-description: Découvrez comment utiliser Assistant Migration de données pour identifier la référence SKU Azure SQL Database adaptée à votre base de données locale.
+description: Découvrez comment utiliser Assistant Migration de données pour identifier la référence SKU Azure SQL Database ou Azure SQL Managed Instance adaptée à votre base de données locale.
 ms.custom: ''
 ms.date: 05/06/2019
 ms.prod: sql
@@ -14,29 +14,23 @@ helpviewer_keywords:
 ms.assetid: ''
 author: rajeshsetlem
 ms.author: rajpo
-ms.openlocfilehash: ffb47ee457a03315821fee863816d725f9691ac3
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: b29815876d804f387ce31754c960e80f9db99434
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100062584"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247170"
 ---
-# <a name="identify-the-right-azure-sql-databasemanaged-instance-sku-for-your-on-premises-database"></a>Identifier la référence SKU Azure SQL Database/Managed Instance appropriée pour votre base de données locale
+# <a name="identify-the-right-azure-sql-database-or-sql-managed-instance-sku-for-your-on-premises-database"></a>Identifier la référence Azure SQL Database ou SQL Managed Instance appropriée pour votre base de données locale
 
-La migration des bases de données vers le Cloud peut être compliquée, en particulier lors de la tentative de sélection de la meilleure cible de base de données Azure et de la référence SKU de votre base de données. L’objectif de la Assistant Migration de base de données (DMA) est de vous aider à répondre à ces questions et à faciliter la migration de votre base de données en fournissant ces recommandations SKU dans une sortie conviviale.
+La migration des bases de données vers le Cloud peut être compliquée, en particulier lors de la tentative de sélection de la meilleure Azure SQL Database ou de la cible SQL Managed Instance et de la référence SKU de votre base de données. L’objectif de la Assistant Migration de base de données (DMA) est de vous aider à répondre à ces questions et à faciliter la migration de votre base de données en fournissant ces recommandations SKU dans une sortie conviviale.
 
-Cet article se concentre sur la fonctionnalité de recommandation Azure SQL Database SKU de DMA. Azure SQL Database et Azure SQL Managed Instance disposent de plusieurs options de déploiement, notamment :
 
-- Base de données unique
-- Pools élastiques
-- Instance gérée
-
-La fonctionnalité recommandations SKU vous permet d’identifier la version minimale recommandée Azure SQL Database base de données unique ou la référence SKU Azure SQL Managed Instance en fonction des compteurs de performances collectés sur le ou les ordinateurs hébergeant vos bases de données. Cette fonctionnalité fournit des recommandations relatives au niveau tarifaire, au niveau de calcul et à la taille maximale des données, ainsi qu’au coût estimé par mois. Il offre également la possibilité d’approvisionner en bloc des bases de données uniques et des instances gérées pour toutes les bases de données recommandées.
-
-> [!NOTE]
-> Cette fonctionnalité n’est actuellement disponible qu’à l’aide de l’interface de ligne de commande (CLI).
+La fonctionnalité de recommandations SKU vous permet d’identifier la référence minimale recommandée pour le Azure SQL Database ou le Managed Instance SQL Azure en fonction des compteurs de performances collectés sur le ou les ordinateurs hébergeant vos bases de données. Cette fonctionnalité fournit des recommandations relatives au niveau tarifaire, au niveau de calcul et à la taille maximale des données, ainsi qu’au coût estimé par mois. Il offre également la possibilité d’approvisionner en bloc des bases de données uniques et des instances gérées pour toutes les bases de données recommandées. Cette fonctionnalité n’est actuellement disponible qu’à l’aide de l’interface de ligne de commande (CLI).
 
 Voici des instructions pour vous aider à déterminer les recommandations relatives aux références SKU et à approvisionner des bases de données uniques ou des instances gérées dans Azure à l’aide de DMA.
+
+[!INCLUDE [online-offline](../includes/azure-migrate-to-assess-sql-data-estate.md)]
 
 ## <a name="prerequisites"></a>Prérequis
 

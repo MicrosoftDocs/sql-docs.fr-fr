@@ -15,18 +15,20 @@ ms.assetid: ''
 author: rajeshsetlem
 ms.author: rajpo
 ms.custom: seo-lt-2019
-ms.openlocfilehash: 4c59fb5228ef46a693e343716d1e58e56c042a53
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 1094f10eedc819123cd446c0933ec14df511ac75
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100061554"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247344"
 ---
 # <a name="assess-the-readiness-of-a-sql-server-data-estate-migrating-to-azure-sql-database-using-the-data-migration-assistant"></a>Évaluer la préparation d’un SQL Server de données qui migrent vers Azure SQL Database à l’aide de la Assistant Migration de données
 
-La migration de centaines d’instances de SQL Server et de milliers de bases de données vers Azure SQL Database, notre offre PaaS (Platform as a service), est une tâche considérable. Pour simplifier autant que possible le processus, vous devez être certain de votre disponibilité relative pour la migration. Identifier les fruits à faible baisse, y compris les serveurs et les bases de données qui sont entièrement prêts ou qui nécessitent un minimum d’effort pour préparer la migration, facilite et accélère vos efforts.
+La migration de centaines d’instances de SQL Server et de milliers de bases de données vers Azure SQL Database ou Azure SQL Managed Instance, notre offre PaaS (Platform as a service), est une tâche considérable. Pour simplifier autant que possible le processus, vous devez être certain de votre disponibilité relative pour la migration. Identifier les fruits à faible baisse, y compris les serveurs et les bases de données qui sont entièrement prêts ou qui nécessitent un minimum d’effort pour préparer la migration, facilite et accélère vos efforts.
 
 Cet article fournit des instructions pas à pas pour tirer parti de la [Assistant Migration de données](./dma-overview.md) pour résumer les résultats de préparation et les faire apparaître sur le Hub [Azure Migrate](https://portal.azure.com/?feature.customPortal=false#blade/Microsoft_Azure_Migrate/AmhResourceMenuBlade/overview) .
+
+[!INCLUDE [online-offline](../includes/azure-migrate-to-assess-sql-data-estate.md)]
 
 >
 > [!VIDEO https://channel9.msdn.com/Shows/Data-Exposed/Data-Migration-Assistant/player?WT.mc_id=dataexposed-c9-niner]
@@ -178,7 +180,7 @@ Une fois que vous avez créé un projet de migration, sous **Outils d’évaluat
 
    ![Azure Migrate-examiner les bloqueurs de migration](../dma/media//dma-assess-sql-data-estate-to-sqldb/dms-azure-migrate-migration-blockers.png)
 
-## <a name="see-also"></a>Voir également
+## <a name="see-also"></a>Voir aussi
 
 * [Assistant Migration de données (DMA)](../dma/dma-overview.md)
 * [Assistant Migration de données : paramètres de configuration](../dma/dma-configurationsettings.md)

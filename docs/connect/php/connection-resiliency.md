@@ -1,7 +1,7 @@
 ---
 title: Résilience des connexions inactives
 description: Découvrez ce qu’est la résilience des connexions inactives et comment elle se comporte dans les pilotes Microsoft pour PHP pour SQL Server.
-ms.date: 07/13/2017
+ms.date: 03/04/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.custom: ''
@@ -9,12 +9,12 @@ ms.technology: connectivity
 ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 4008dd4f023170b50bdf28f1f026da9ee892f970
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: 07223e87c82a64fe17cd1b2969b5c93227c70af2
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91726860"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247485"
 ---
 # <a name="idle-connection-resiliency"></a>Résilience des connexions inactives
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -26,7 +26,7 @@ La résilience de connexion s’implémente en ajoutant deux mots clés de conne
 |Mot clé|Valeurs|Default|Description|
 |-|-|-|-|
 |**ConnectRetryCount**| Entier compris entre 0 et 255 (inclus)|1|Nombre maximal de tentatives de rétablissement d’une connexion interrompue avant abandon. Par défaut, une seule tentative est effectuée pour rétablir une connexion interrompue. La valeur 0 signifie qu’aucune reconnexion n’est tentée.|
-|**ConnectRetryInterval**| Entier compris entre 1 et 60 (inclus)|1| Durée, en secondes, entre les tentatives de rétablissement d’une connexion. L’application tente de se reconnecter immédiatement en cas de détection d’une connexion interrompue, puis attend **ConnectRetryInterval** secondes avant de réessayer. Ce mot clé est ignoré si **ConnectRetryCount** est égal à 0.
+|**ConnectRetryInterval**| Entier compris entre 1 et 60 (inclus)|10| Durée, en secondes, entre les tentatives de rétablissement d’une connexion. L’application tente de se reconnecter immédiatement en cas de détection d’une connexion interrompue, puis attend **ConnectRetryInterval** secondes avant de réessayer. Ce mot clé est ignoré si **ConnectRetryCount** est égal à 0.
 
 Si le produit de **ConnectRetryCount** et de **ConnectRetryInterval** est supérieur à **LoginTimeout**, le client cesse d’essayer de se connecter une fois **LoginTimeout** atteint. Sinon, il continuera à tenter de se reconnecter jusqu’à ce que **ConnectRetryCount** soit atteint.
 

@@ -1,8 +1,8 @@
 ---
-title: Utilisation de mots clés de chaînes de connexion
+title: Utilisation de mots clés de chaîne de connexion
 description: Certaines API SQL Server Native Client utilisent des chaînes de connexion pour spécifier les attributs de connexion. Les chaînes de connexion sont des paires mot clé/valeur.
 ms.custom: ''
-ms.date: 08/01/2016
+ms.date: 03/05/2021
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: native-client
@@ -18,12 +18,12 @@ ms.assetid: 16008eec-eddf-4d10-ae99-29db26ed6372
 author: markingmyname
 ms.author: maghan
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: dbe28b09c88f63e6e0a9a764fea3da17feb3d1f0
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 8abbefef4c13cf0006b80f24771a06cc067a6324
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97463420"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247453"
 ---
 # <a name="using-connection-string-keywords-with-sql-server-native-client"></a>Utilisation de mots clés de chaîne de connexion avec SQL Server Native Client
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -71,11 +71,11 @@ ms.locfileid: "97463420"
 |**Driver**|Nom du pilote tel qu’il est retourné par [SQLDrivers](../../../relational-databases/native-client-odbc-api/sqldrivers.md). La valeur de mot clé pour le pilote ODBC [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client est « {SQL Server Native Client 11.0} ». Le mot clé **Server** est requis si **Driver** est spécifié et **DriverCompletion** a la valeur SQL_DRIVER_NOPROMPT.<br /><br /> Pour plus d’informations sur les noms des pilotes, consultez [utilisation des fichiers de bibliothèque et d’en-tête SQL Server Native Client](../../../relational-databases/native-client/applications/using-the-sql-server-native-client-header-and-library-files.md).|  
 |**DSN**|Nom d'une source de données utilisateur ou système ODBC existante. Ce mot clé remplace toutes les valeurs qui peuvent être spécifiées dans les mots clés **Server**, **Network** et **Address** .|  
 |**Encrypt**|Spécifie si les données doivent être chiffrées avant d'être envoyées sur le réseau. Les valeurs possibles sont « yes » et « no ». La valeur par défaut est « no ».|  
-|**Secours**|Ce mot clé est déconseillé et sa valeur est ignorée par le pilote ODBC [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client.|  
+|**Bascul**|Ce mot clé est déconseillé et sa valeur est ignorée par le pilote ODBC [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client.|  
 |**Failover_Partner**|Nom du partenaire de basculement à utiliser s'il est impossible d'établir une connexion au serveur principal.|  
 |**FailoverPartnerSPN**|Nom principal de service du partenaire de basculement. La valeur par défaut est une chaîne vide. Une chaîne vide fait en sorte que [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client utilise le nom principal de service par défaut généré par le pilote.|  
 |**FileDSN**|Nom d'une source de données de fichier ODBC existante.|  
-|**Language**|Nom de la langue [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] (facultatif). [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] peut stocker des messages pour plusieurs langues dans **sysmessages**. Si vous vous connectez à un [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] avec plusieurs langues, la **langue** spécifie le jeu de messages à utiliser pour la connexion.|  
+|**Langage**|Nom de la langue [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] (facultatif). [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] peut stocker des messages pour plusieurs langues dans **sysmessages**. Si vous vous connectez à un [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] avec plusieurs langues, la **langue** spécifie le jeu de messages à utiliser pour la connexion.|  
 |**MARS_Connection**|Active ou désactive MARS (Multiple Active Result Set) sur la connexion. Les valeurs reconnues sont « yes » et « no ». La valeur par défaut est « no ».|  
 |**MultiSubnetFailover**|Spécifiez toujours **multiSubnetFailover = Yes** lors de la connexion à l’écouteur du groupe de disponibilité d’un [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] groupe de disponibilité ou d’une [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] instance de cluster de basculement. **multiSubnetFailover = Yes** configure [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client pour permettre une détection plus rapide et une connexion au serveur (actuellement) actif. Les valeurs possibles sont **Yes** et **No**. La valeur par défaut est **No**. Par exemple :<br /><br /> `MultiSubnetFailover=Yes`<br /><br /> Pour plus d’informations sur [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] la prise en charge de Native Client pour [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] , consultez [SQL Server Native Client la prise en charge de la haute disponibilité et de la récupération d’urgence](../../../relational-databases/native-client/features/sql-server-native-client-support-for-high-availability-disaster-recovery.md).|  
 |**Net**|Synonyme de « Network ».|  
@@ -155,7 +155,7 @@ ms.locfileid: "97463420"
 |**Encrypt**|SSPROP_INIT_ENCRYPT|Spécifie si les données doivent être chiffrées avant d'être envoyées sur le réseau. Les valeurs possibles sont « yes » et « no ». La valeur par défaut est « no ».|  
 |**FailoverPartner**|SSPROP_INIT_FAILOVERPARTNER|Nom du serveur de basculement utilisé pour la mise en miroir de bases de données.|  
 |**FailoverPartnerSPN**|SSPROP_INIT_FAILOVERPARTNERSPN|Nom principal de service du partenaire de basculement. La valeur par défaut est une chaîne vide. Une chaîne vide fait en sorte que [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client utilise le nom principal de service par défaut généré par le fournisseur.|  
-|**Language**|SSPROP_INIT_CURRENTLANGUAGE|Langue de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].|  
+|**Langage**|SSPROP_INIT_CURRENTLANGUAGE|Langue de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].|  
 |**MarsConn**|SSPROP_INIT_MARSCONNECTION|Active ou désactive MARS (Multiple Active Result Set) sur la connexion si le serveur est [!INCLUDE[ssVersion2005](../../../includes/ssversion2005-md.md)] ou version ultérieure. Les valeurs possibles sont « yes » et « no ». La valeur par défaut est « no ».|  
 |**Net**|SSPROP_INIT_NETWORKLIBRARY|Synonyme de « Network ».|  
 |**Réseau**|SSPROP_INIT_NETWORKLIBRARY|Bibliothèque réseau utilisée pour établir une connexion à une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] dans l'organisation.|  

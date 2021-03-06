@@ -15,19 +15,20 @@ ms.assetid: ''
 author: rajeshsetlem
 ms.author: rajpo
 ms.custom: seo-lt-2019
-ms.openlocfilehash: c88a289e21e7cd70980763474e82b7dd6cbd49c2
-ms.sourcegitcommit: 3bd188e652102f3703812af53ba877cce94b44a9
+ms.openlocfilehash: 300d88b66c2105235ab04ff616d9fcf81b24e944
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97489516"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247333"
 ---
 # <a name="perform-a-sql-server-migration-assessment-with-data-migration-assistant"></a>Effectuer une évaluation de migration SQL Server avec l’assistant Migration de données
 
 Les instructions pas à pas suivantes vous aident à effectuer la première évaluation de la migration vers des SQL Server locaux, SQL Server s’exécutant sur une machine virtuelle Azure ou Azure SQL Database à l’aide de Assistant Migration de données.
 
-   > [!NOTE]
-   > Assistant Migration de données v 5.0 introduit la prise en charge de l’analyse de la connectivité de base de données et des requêtes SQL incorporées dans le code de l’application. Pour plus d’informations, consultez le billet de blog [Using Assistant Migration de données pour évaluer la couche d’accès aux données d’une application](https://techcommunity.microsoft.com/t5/Microsoft-Data-Migration/Using-Data-Migration-Assistant-to-assess-an-application-s-data/ba-p/990430).
+Assistant Migration de données v 5.0 introduit la prise en charge de l’analyse de la connectivité de base de données et des requêtes SQL incorporées dans le code de l’application. Pour plus d’informations, consultez le billet de blog [Using Assistant Migration de données pour évaluer la couche d’accès aux données d’une application](https://techcommunity.microsoft.com/t5/Microsoft-Data-Migration/Using-Data-Migration-Assistant-to-assess-an-application-s-data/ba-p/990430).
+
+[!INCLUDE [online-offline](../includes/azure-migrate-to-assess-sql-data-estate.md)]
 
 ## <a name="create-an-assessment"></a>Créer une évaluation
 
@@ -119,7 +120,7 @@ Les instructions pas à pas suivantes vous aident à effectuer la première éva
 
 ## <a name="view-results"></a>Afficher les résultats
 
-La durée de l’évaluation dépend du nombre de bases de données ajoutées et de la taille de schéma de chaque base de données. Les résultats s’affichent pour chaque base de données dès qu’ils sont disponibles.
+La durée de l’évaluation dépend du nombre de bases de données ajoutées et de la taille du schéma de chaque base de données. Les résultats sont affichés pour chaque base de données dès qu’ils sont disponibles.
 
 1. Sélectionnez la base de données qui a terminé l’évaluation, puis basculez entre les **problèmes de compatibilité** et les **recommandations relatives aux fonctionnalités** à l’aide du sélecteur.
 

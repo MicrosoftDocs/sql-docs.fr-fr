@@ -14,16 +14,18 @@ ms.assetid: ''
 author: rajeshsetlem
 ms.author: rajpo
 ms.custom: seo-lt-2019
-ms.openlocfilehash: c2804bbc185a3aa17d7f50d85b9ef6c2cc84d002
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: c82b5cf03b5db429903dd90fdf8a5fa5d6ec3772
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100044646"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247505"
 ---
 # <a name="assess-an-enterprise-and-consolidate-assessment-reports-with-dma"></a>Évaluer une entreprise et consolider les rapports d’évaluation à l’aide de DMA
 
 Les instructions pas à pas suivantes vous aident à utiliser le Assistant Migration de données pour effectuer une évaluation à l’échelle réussie pour la mise à niveau d’un SQL Server local ou d’un SQL Server s’exécutant sur des machines virtuelles Azure, ou pour la migration vers Azure SQL Database.
+
+[!INCLUDE [online-offline](../includes/azure-migrate-to-assess-sql-data-estate.md)]
 
 ## <a name="prerequisites"></a>Prérequis
 
