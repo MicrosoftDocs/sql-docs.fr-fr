@@ -26,14 +26,14 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 ms.custom: seo-lt-2019
-ms.date: 09/11/2020
+ms.date: 02/24/2021
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017'
-ms.openlocfilehash: be528466cb44e5c72413b0494dfe5416dd29783e
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 1b7d902064ef7a083b706af08730e91319be312f
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100338591"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836833"
 ---
 # <a name="sqlcmd-utility"></a>Utilitaire sqlcmd
 
@@ -179,8 +179,8 @@ Définissez le paramètre de chiffrement de colonne sur `Enabled`. Pour plus d�
 Ce commutateur est utilisé par le client durant la connexion à SQL Database ou à Azure Synapse Analytics pour faire en sorte que l’utilisateur soit authentifié à l’aide de l’authentification Azure Active Directory. Cette option définit la variable de script **sqlcmd** SQLCMDUSEAAD = true. Le commutateur -G nécessite au moins **sqlcmd** version [13.1](https://go.microsoft.com/fwlink/?LinkID=825643). Pour déterminer votre version, exécutez `sqlcmd -?`. Pour plus d’informations, consultez [Connexion à SQL Database ou Azure Synapse Analytics à l’aide de l’authentification Azure Active Directory](/azure/azure-sql/database/authentication-aad-overview). L’option -A n’est pas prise en charge avec l’option -G.
 
 > [!IMPORTANT]
-> L’option `-G` s’applique uniquement à Azure SQL Database et à Azure Data Warehouse.
-> L’authentification interactive AAD n’est actuellement prise en charge ni sur Linux ni sur macOS. L’authentification intégrée AAD requiert [Microsoft ODBC Driver 17 pour SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) version 17.6.1 ou ultérieure et un environnement Kerberos correctement configuré.
+> L’option `-G` s’applique uniquement à Azure SQL Database et à Azure Synapse Analytics.
+> L’authentification interactive AAD n’est actuellement prise en charge ni sur Linux ni sur macOS. L’authentification intégrée AAD requiert [Microsoft ODBC Driver 17 pour SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) version 17.6.1 ou ultérieure et un [environnement Kerberos correctement configuré](../connect/odbc/linux-mac/using-integrated-authentication#configure-kerberos).
 
 - **Nom d’utilisateur et mot de passe Azure Active Directory :** 
 
@@ -199,7 +199,7 @@ Ce commutateur est utilisé par le client durant la connexion à SQL Database ou
 - **Intégrée à Azure Active Directory**
 
    Pour l’authentification intégrée à Azure Active Directory, spécifiez l’option **-G** sans nom d’utilisateur ni mot de passe.
-   *L’authentification intégrée et interactive AAD n’est actuellement prise en charge ni sur Linux ni sur macOS*.
+   *L’authentification intégrée AAD requiert [Microsoft ODBC Driver 17 pour SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) version 17.6.1 ou ultérieure et un [environnement Kerberos correctement configuré](../connect/odbc/linux-mac/using-integrated-authentication.md#configure-kerberos).*
 
     ```cmd
     Sqlcmd -S Target_DB_or_DW.testsrv.database.windows.net -G

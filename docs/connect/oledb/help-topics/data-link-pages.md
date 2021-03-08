@@ -5,17 +5,17 @@ ms.custom: ''
 ms.date: 09/30/2020
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 ms.author: v-beaziz
 author: bazizi
-ms.openlocfilehash: 52089c92af76611fe8ab60b53dc7cf2848fb31c5
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e3a7367daa776da3641c1b9a506f8f8335ce05d9
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99195303"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837459"
 ---
 # <a name="universal-data-link-udl-configuration"></a>Configuration UDL (Universal Data Link)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -32,7 +32,7 @@ L’onglet Connexion est propre à chaque fournisseur et affiche uniquement les 
 |Option|Description|
 |---   |---        |
 |Sélectionnez ou entrez un nom de serveur.|Sélectionnez le nom d'un serveur dans la liste déroulante ou tapez l'emplacement du serveur sur lequel se trouve la base de données à laquelle vous souhaitez accéder. La sélection de la base de données sur le serveur est une action distincte. Mettez à jour la liste en cliquant sur « Actualiser ».
-|Entrez des informations pour vous connecter au serveur|Vous pouvez sélectionner les options d’authentification suivantes dans cette liste déroulante : <ul><li>`Windows Authentication:` Authentification à SQL Server à l’aide des informations d’identification du compte Windows de l’utilisateur connecté.</li><li>`SQL Server Authentication:` Authentification à l’aide de l’ID de connexion et du mot de passe.</li><li>`Active Directory - Integrated:` Authentification intégrée avec une identité Azure Active Directory. Ce mode peut également être utilisé pour l’authentification Windows à SQL Server.</li><li>`Active Directory - Password:` Authentification par ID d’utilisateur et mot de passe avec une identité Azure Active Directory.</li><li>`Active Directory - Universal with MFA support:` Authentification interactive avec une identité Azure Active Directory. Ce mode prend en charge Azure Multi-Factor Authentication (MFA).</li><li>Authentification `Active Directory - Service Principal:` avec un principal de service Azure Active Directory. **Le nom d’utilisateur** doit être défini sur l’ID de l’application (client). **Le mot de passe** doit être défini sur le secret de l’application (client).</li></ul>|
+|Entrez des informations pour vous connecter au serveur|Vous pouvez sélectionner les options d’authentification suivantes dans cette liste déroulante : <ul><li>`Windows Authentication:` Authentification à SQL Server à l’aide des informations d’identification du compte Windows de l’utilisateur connecté.</li><li>`SQL Server Authentication:` Authentification à l’aide de l’ID de connexion et du mot de passe.</li><li>`Active Directory - Integrated:` Authentification intégrée avec une identité Azure Active Directory. Ce mode peut également être utilisé pour l’authentification Windows à SQL Server.</li><li>`Active Directory - Password:` Authentification par ID d’utilisateur et mot de passe avec une identité Azure Active Directory.</li><li>`Active Directory - Universal with MFA support:` Authentification interactive avec une identité Azure Active Directory. Ce mode prend en charge l’authentification multifacteur Azure Active Directory (MFA).</li><li>Authentification `Active Directory - Service Principal:` avec un principal de service Azure Active Directory. **Le nom d’utilisateur** doit être défini sur l’ID de l’application (client). **Le mot de passe** doit être défini sur le secret de l’application (client).</li></ul>|
 |SPN du serveur|Si vous utilisez une connexion approuvée, vous pouvez spécifier un nom de principal de service (SPN) pour le serveur.|
 |Nom d'utilisateur|Saisissez l’ID d’utilisateur à utiliser pour l’authentification lorsque vous vous connectez à la source de données.|
 |Mot de passe|Saisissez le mot de passe à utiliser pour l’authentification lorsque vous vous connectez à la source de données.|

@@ -2,7 +2,7 @@
 description: CREATE EXTERNAL DATA SOURCE (Transact-SQL)
 title: CREATE EXTERNAL DATA SOURCE (Transact-SQL) | Microsoft Docs
 ms.custom: ''
-ms.date: 02/26/2020
+ms.date: 03/05/2021
 ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
 ms.reviewer: ''
@@ -20,12 +20,12 @@ helpviewer_keywords:
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 807994f4a6e1f3c7b426c3a7c47ecdf7c152ea3b
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 4f503a3382f0ae4ec8ea7fb8f43e91254551e73c
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "100070675"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247368"
 ---
 # <a name="create-external-data-source-transact-sql"></a>CREATE EXTERNAL DATA SOURCE (Transact-SQL)
 
@@ -71,7 +71,7 @@ Crée une source de données externe pour des requêtes PolyBase. Des sources de
 CREATE EXTERNAL DATA SOURCE <data_source_name>
 WITH
   ( [ LOCATION = '<prefix>://<path>[:<port>]' ]
-    [ [ , ] CONNECTION_OPTIONS = '<name_value_pairs>']
+    [ [ , ] CONNECTION_OPTIONS = '<key_value_pairs>'[,...]]
     [ [ , ] CREDENTIAL = <credential_name> ]
     [ [ , ] PUSHDOWN = { ON | OFF } ]
     [ [ , ] TYPE = { HADOOP | BLOB_STORAGE } ]
@@ -127,9 +127,14 @@ Remarques et conseils supplémentaires lors de la définition de l’emplacement
 Spécifie des options supplémentaires lors de la connexion via `ODBC` à une source de données externe. Pour utiliser plusieurs options de connexion, séparez-les par un point-virgule.
 
 
-Au minimum, le nom du pilote est nécessaire, mais d’autres options telles que `APP='<your_application_name>'` ou `ApplicationIntent= ReadOnly|ReadWrite` s’avèrent également utiles à paramétrer et facilitent la résolution des problèmes.
+S’applique aux connexions `ODBC` génériques ainsi qu’aux connecteurs `ODBC` intégrés pour SQL Server, Oracle, Teradata, MongoDB et Cosmos DB.
 
-Reportez-vous à la documentation du produit `ODBC` pour obtenir la liste des options [CONNECTION_OPTIONS][connection_options] autorisées.
+`key_value_pair` correspond au mot clé et à la valeur d’une option de connexion spécifique. Les mots clés et valeurs disponibles dépendent du type de source de données externe. Au minimum, le nom du pilote est nécessaire, mais d’autres options telles que `APP='<your_application_name>'` ou `ApplicationIntent= ReadOnly|ReadWrite` s’avèrent également utiles à paramétrer et facilitent la résolution des problèmes.
+
+Si vous souhaitez en savoir plus, veuillez consulter :
+
+- [Utilisation de mots clés de chaînes de connexion][connection_options]
+- [Mots clés de chaîne de connexion du pilote ODBC][connection_option_keyword]
 
 ### <a name="pushdown--on--off"></a>PUSHDOWN = *ON | OFF*
 
@@ -316,7 +321,9 @@ WITH
 
 ### <a name="f-create-external-data-source-to-reference-a-sql-server-named-instance-via-polybase-connectivity-sql-server-2019"></a>F. Créer une source de données externe pour référencer une instance nommée SQL Server par le biais d’une connectivité PolyBase ([!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)])
 
-Pour créer une source de données externe qui référence une instance nommée de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], vous pouvez utiliser CONNECTION_OPTIONS pour spécifier le nom de l’instance. Dans l’exemple ci-dessous, `WINSQL2019` est le nom de l’hôte et `SQL2019` est le nom de l’instance.
+Pour créer une source de données externe qui référence une instance nommée de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], utilisez `CONNECTION_OPTIONS` pour spécifier le nom de l’instance. 
+
+Dans l’exemple ci-dessous, `WINSQL2019` est le nom de l’hôte et `SQL2019` le nom de l’instance. `'Server=%s\SQL2019'` est la paire clé-valeur.
 
 ```sql
 CREATE EXTERNAL DATA SOURCE SQLServerInstance2
@@ -1154,6 +1161,7 @@ WITH
 [mongodb_pb]: ../../relational-databases/polybase/polybase-configure-mongodb.md
 [connectivity_pb]:https://docs.microsoft.com/sql/database-engine/configure-windows/polybase-connectivity-configuration-transact-sql
 [connection_options]: ../../relational-databases/native-client/applications/using-connection-string-keywords-with-sql-server-native-client.md
+[connection_option_keyword]: ../../relational-databases/native-client/applications/using-connection-string-keywords-with-sql-server-native-client.md#odbc-driver-connection-string-keywords
 [hint_pb]: ../../relational-databases/polybase/polybase-pushdown-computation.md#force-pushdown
 <!-- Elastic Query Docs -->
 [intro_eq]: /azure/azure-sql/database/elastic-query-overview

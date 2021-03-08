@@ -2,7 +2,7 @@
 title: Réplication, suivi des modifications, capture des changements de données et groupes de disponibilité
 description: Découvrez-en plus sur l’interopérabilité de la réplication, du suivi des modifications et de la capture des changements de données quand vous les utilisez avec des groupes de disponibilité Always On SQL Server.
 ms.custom: seo-lt-2019
-ms.date: 08/21/2018
+ms.date: 02/23/2021
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: availability-groups
@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: e17a9ca9-dd96-4f84-a85d-60f590da96ad
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: f82db97e9b818ecca6682cf6778850dab8a238c1
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 1ee6a097a60930064ee23389d1d54e965336e3d7
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100344551"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837688"
 ---
 # <a name="replication-change-tracking--change-data-capture---always-on-availability-groups"></a>Réplication, suivi des modifications et capture de données modifiées - groupes de disponibilité Always On
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -42,18 +42,18 @@ ms.locfileid: "100344551"
 ###  <a name="general-changes-to-replication-agents-to-support-availability-groups"></a><a name="Changes"></a> Modifications générales apportées aux agents de réplication pour prendre en charge les groupes de disponibilité  
  Trois agents de réplication ont été modifiés pour prendre en charge [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)]. L'agent de lecture du journal, ainsi que les agents d'instantané et de fusion ont été modifiés pour interroger la base de données de distribution pour le serveur de publication redirigé et pour utiliser le nom d'écouteur de groupe de disponibilité retourné, si un serveur de publication redirigé était déclaré, pour se connecter au serveur de publication de base de données.  
   
- Par défaut, lorsque les agents interrogent le serveur de distribution afin de déterminer si le serveur de publication d'origine a été redirigé, l'adéquation de la cible actuelle ou de la redirection est vérifiée avant de retourner l'hôte redirigé à l'agent. Il s'agit du comportement recommandé. Toutefois, si le démarrage de l’agent se produit très fréquemment, la surcharge liée à la procédure stockée de validation peut être considérée comme trop importante. Un nouveau commutateur de ligne de commande, *BypassPublisherValidation*, a été ajouté à l’Agent Lecture de journal, à l’Agent d’instantané et à l’Agent Fusion. Lorsque le commutateur est utilisé, le serveur de publication redirigé est retourné immédiatement à l'agent et l'exécution de la procédure stockée de validation est ignorée.  
+ Par défaut, lorsque les agents interrogent le serveur de distribution afin de déterminer si le serveur de publication d'origine a été redirigé, l'adéquation de la cible actuelle ou de la redirection est vérifiée avant de retourner l'hôte redirigé à l'agent. Il s'agit du comportement recommandé. Toutefois, si le démarrage de l’agent se produit très fréquemment, la surcharge liée à la procédure stockée de validation peut être considérée comme trop importante. Un nouveau commutateur de ligne de commande, *BypassPublisherValidation*, a été ajouté au lecteur de journaux, à la capture instantanée et aux agents de fusion. Lorsque le commutateur est utilisé, le serveur de publication redirigé est retourné immédiatement à l'agent et l'exécution de la procédure stockée de validation est ignorée.  
   
  Les échecs retournés de la procédure stockée de validation sont consignés dans les journaux d'historique de l'agent. Les erreurs dont le niveau de gravité est supérieur ou égal à 16 entraîneront l'arrêt des agents. Certaines fonctions de reprise ont été intégrées aux agents afin de gérer la déconnexion attendue d'une base de données publiée en cas de basculement vers un nouveau principal.  
   
 #### <a name="log-reader-agent-modifications"></a>Modifications apportées à l'agent de lecture du journal  
- L'agent de lecture du journal comporte les modifications suivantes.  
+ L'agent lecteur de journaux comporte les modifications suivantes.  
   
 -   **Cohérence de bases de données répliquées**  
   
      Quand une base de données publiée est membre d’un groupe de disponibilité, par défaut, l’agent de lecture du journal ne traite pas les enregistrements de journal qui n’ont pas déjà été renforcés au niveau de tous les réplicas secondaires de groupe de disponibilité. Cela permet de s’assurer que lors du basculement, toutes les lignes répliquées sur un abonné sont également présentes dans le nouveau principal.  
   
-     Quand le serveur de publication dispose de deux réplicas de disponibilité uniquement (un principal et un secondaire) et qu’un basculement a lieu, le réplica principal d’origine reste arrêté, car le lecteur de journal n’avance pas tant que toutes les bases de données secondaires ne sont pas remises en ligne ou tant que les réplicas secondaires défaillants n’ont pas été supprimés du groupe de disponibilité. Le lecteur de journal, qui s’exécute à présent sur la base de données secondaire, n’avance pas étant donné qu’Always On ne peut pas renforcer de modifications sur une base de données secondaire. Pour permettre au lecteur de journal de poursuivre et de continuer à disposer de la capacité de récupération d'urgence, supprimez le réplica principal d'origine du groupe de disponibilité à l'aide de ALTER AVAILABITY GROUP <nom_groupe> REMOVE REPLICA. Ajoutez ensuite un nouveau réplica secondaire au groupe de disponibilité.  
+     Quand le serveur de publication dispose de deux réplicas de disponibilité uniquement (un principal et un secondaire) et qu’un basculement a lieu, le réplica principal d’origine reste arrêté, car le lecteur de journal n’avance pas tant que toutes les bases de données secondaires ne sont pas remises en ligne ou tant que les réplicas secondaires défaillants n’ont pas été supprimés du groupe de disponibilité. Le lecteur de journaux, qui s’exécute à présent sur la base de données secondaire, n’avance pas étant donné qu’Always On ne peut pas renforcer de modifications sur une base de données secondaire. Pour permettre au lecteur de journaux de poursuivre et de continuer à disposer de la capacité de récupération d'urgence, supprimez le réplica principal d'origine du groupe de disponibilité à l'aide de ALTER AVAILABITY GROUP <group_name> REMOVE REPLICA. Ajoutez ensuite un nouveau réplica secondaire au groupe de disponibilité.  
   
 -   **Indicateur de trace 1448**  
   
@@ -109,7 +109,7 @@ ms.locfileid: "100344551"
     ```  
   
     > [!NOTE]  
-    >  Vous devez créer les travaux au niveau de toutes les cibles possibles de basculement avant le basculement, et les marquer comme étant désactivés jusqu'à ce que le réplica de disponibilité sur un hôte devienne le nouveau réplica principal. Les travaux de capture de données modifiées s'exécutant au niveau de l'ancienne base de données principale doivent également être désactivés lorsque la base de données locale devient une base de données secondaire. Pour désactiver et activer des travaux, utilisez l’option *\@enabled* de [sp_update_job &#40;Transact-SQL&#41;](../../../relational-databases/system-stored-procedures/sp-update-job-transact-sql.md). Pour plus d’informations sur la création de travaux de capture de données modifiées, consultez [sys.sp_cdc_add_job &#40;Transact-SQL&#41;](../../../relational-databases/system-stored-procedures/sys-sp-cdc-add-job-transact-sql.md).  
+    >  Vous devez créer les travaux au niveau du nouveau réplica principal après le basculement. Les travaux de capture des changements de données s'exécutant au niveau de l'ancienne base de données principale doivent également être désactivés lorsque la base de données locale devient une base de données secondaire. Publiez cela si le réplica redevient principal, vous devez réactiver les travaux de capture des changements de données sur le réplica. Pour désactiver et activer des travaux, utilisez l’option *\@enabled* de [sp_update_job &#40;Transact-SQL&#41;](../../../relational-databases/system-stored-procedures/sp-update-job-transact-sql.md). Pour plus d’informations sur la création de travaux de capture de données modifiées, consultez [sys.sp_cdc_add_job &#40;Transact-SQL&#41;](../../../relational-databases/system-stored-procedures/sys-sp-cdc-add-job-transact-sql.md).  
   
 -   **Ajout de rôles de capture de données modifiées à un réplica de base de données principal Always On**  
   

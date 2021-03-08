@@ -17,12 +17,12 @@ helpviewer_keywords:
 author: VanMSFT
 ms.author: vanto
 monikerRange: =azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: a842f6ed226fe6b298dc9063f5d6c64f287fc82e
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 3f54ca9be0a75912c716f12b56c8b3848b151358
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100340164"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247539"
 ---
 # <a name="row-level-security"></a>Sécurité au niveau des lignes
 
@@ -159,7 +159,7 @@ Il est possible de provoquer des fuites d'informations via l'utilisation de requ
   
 - **Flux de fichier :** la sécurité au niveau des lignes est incompatible avec le flux de fichier.  
   
-- **PolyBase :** La sécurité au niveau des lignes est prise en charge avec des tables externes PolyBase pour Azure Synapse uniquement.
+- **Polybase :** La sécurité au niveau des lignes est prise en charge avec les tables externes dans Azure Synapse et SQL Server 2019 CU1 ou ultérieur. 
 
 - **Tables à mémoire optimisée :** la fonction table incluse utilisée comme prédicat de sécurité sur une table optimisée en mémoire doit être définie avec l’option `WITH NATIVE_COMPILATION`. Avec cette option, les fonctionnalités de langue non prises en charge par les tables optimisées en mémoire sont interdites, et l’erreur appropriée est au moment de la création. Pour plus d’informations, consultez la section **Sécurité au niveau des lignes dans les tables optimisées en mémoire** dans [Introduction aux tables optimisées en mémoire](../../relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables.md).  
   

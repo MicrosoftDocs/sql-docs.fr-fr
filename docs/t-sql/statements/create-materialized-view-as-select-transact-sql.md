@@ -38,12 +38,12 @@ ms.assetid: aecc2f73-2ab5-4db9-b1e6-2f9e3c601fb9
 author: XiaoyuMSFT
 ms.author: xiaoyul
 monikerRange: =azure-sqldw-latest
-ms.openlocfilehash: 5bacd22f46d494606cc1ddedae98b6313f58caf5
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 49e71e733797e2474721c251b9c52ff6f07c04fb
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99188544"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101839356"
 ---
 # <a name="create-materialized-view-as-select-transact-sql"></a>CREATE MATERIALIZED VIEW AS SELECT (Transact-SQL)  
 
@@ -196,7 +196,62 @@ select DATEDIFF(ms,@timerstart,@timerend);
 
 ```
 
-  
+B. Dans cet exemple, User_B crée un affichage matérialisé sur la table T1 et T2.  L’affichage et les deux tables sont détenues par un autre utilisateur User_A.
+
+```sql
+
+-- Create the users 
+CREATE USER User_A WITHOUT LOGIN ;  
+CREATE USER User_B WITHOUT LOGIN ;  
+GO
+CREATE SCHEMA User_A authorization User_A;
+GO
+
+-- User_A creates two tables
+
+GRANT CREATE TABLE to User_A;
+GO
+EXECUTE AS USER = 'User_A';  
+SELECT USER_NAME();  
+Go
+CREATE TABLE [User_A].[T1]
+(
+    [vendorID] [varchar](255) Not NULL,
+    [totalAmount] [float] Not NULL,
+    [puYear] [int] NULL
+)
+GO
+CREATE TABLE [User_A].[T2]
+(
+    [vendorID] [varchar](255) Not NULL,
+    [totalAmount] [float] Not NULL,
+    [puYear] [int] NULL
+)
+GO
+REVERT;
+
+-- Grant User_B the required permissions to create a materialized view for User_A on T1 and T2 owned by User_A
+GRANT CREATE VIEW to User_B;
+GRANT Control ON SCHEMA::User_A to User_B;
+GRANT SELECT ON OBJECT::User_A.T3 to User_B;
+GRANT SELECT ON OBJECT::User_A.T4 to User_B;
+
+-- User_B creates a materialized view.  Both the view and the base tables are owned by User_A.
+EXECUTE AS USER = 'User_B';  
+SELECT USER_NAME(); 
+GO
+
+CREATE materialized VIEW [User_A].MV_CreatedBy_UserB with(distribution=round_robin) 
+as 
+        select A.vendorID, sum(A.totalamount) as S, Count_Big(*) as T 
+        from [User_A].[T1] A
+        inner join [User_A].[T2] B
+        on A.vendorID = B.vendorID
+        group by A.vendorID ;
+GO
+revert;
+```
+
 ## <a name="see-also"></a>Voir aussi
 
 [Réglage des performances avec une vue matérialisée](/azure/sql-data-warehouse/performance-tuning-materialized-views)   

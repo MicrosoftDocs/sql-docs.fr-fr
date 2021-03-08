@@ -8,13 +8,13 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 3/3/2021
-ms.openlocfilehash: 7e55abe0d02a9f9deffffdaa7639d911faad1fa3
-ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
+ms.date: 3/5/2021
+ms.openlocfilehash: 37e31834df74bf91fcf31004973c1556b8f34552
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102185746"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247466"
 ---
 # <a name="sql-assessment-api"></a>API d’évaluation SQL
 
@@ -34,11 +34,14 @@ L’API peut être utilisée pour évaluer :
 
 L’API est également utilisée par l’Extension d’évaluation SQL Server pour Azure Data Studio (ADS).
 
+>[!NOTE]
+>L’API SQL Assessment fournit une évaluation sur plusieurs domaines, mais elle n’examine pas en profondeur la sécurité. Nous vous recommandons d’utiliser l’[évaluation des vulnérabilités SQL](https://docs.microsoft.com/sql/relational-databases/security/sql-vulnerability-assessment) pour améliorer de façon proactive la sécurité de votre base de données.
+
 ## <a name="rules"></a>Règles
 
 Les règles (parfois appelées « vérifications ») sont définies dans des fichiers au format JSON. Le format nécessite la spécification du nom et de la version d’un ensemble de règles. Quand vous utilisez des ensembles de règles personnalisés, vous pouvez facilement savoir quelles recommandations proviennent de quel ensemble de règles.
 
-L’ensemble de règles fourni par Microsoft est disponible sur GitHub. Pour plus d’informations, consultez le [dépôt d’exemples](https://aka.ms/sql-assessment-api).
+L’ensemble de règles fourni par Microsoft est disponible sur GitHub. Vous pouvez voir l’[ensemble de règles complet](https://github.com/microsoft/sql-server-samples/blob/567d49a42d4cf10e4942b19290ab80828b451b77/samples/manage/sql-assessment-api/DefaultRuleset.csv) dans le [dépôt d‘exemples](https://aka.ms/sql-assessment-api).
 
 ## <a name="sql-assessment-cmdlets-and-associated-extensions"></a>Applets de commande SQL Assessment et extensions associées
 
@@ -156,10 +159,11 @@ Des règles spécifiques ont des seuils qui sont comparés à la valeur actuelle
 
 Vous pouvez chaîner des ensembles de règles en ajoutant un ou plusieurs fichiers JSON comme paramètres à votre appel d’API SQL Assessment. Votre organisation peut écrire ces fichiers ou les obtenir auprès d’un tiers. Par exemple, vous pouvez avoir votre fichier JSON qui désactive des règles spécifiques de l’ensemble de règles Microsoft, un autre fichier JSON écrit par un expert du secteur qui inclut des règles que vous trouvez utiles pour votre environnement, puis un autre fichier JSON qui modifie certaines valeurs de seuil dans ce fichier JSON.
 
-> [!IMPORTANT]  
-> Nous vous recommandons vivement de passer attentivement en revue les ensembles de règles provenant de sources non approuvées avant de les utiliser afin de vérifier qu’ils ne présentent aucun risque.
+>[!IMPORTANT]
+>Nous vous recommandons vivement de passer attentivement en revue les ensembles de règles provenant de sources non approuvées avant de les utiliser afin de vérifier qu’ils ne présentent aucun risque.
 
 ## <a name="next-steps"></a>Étapes suivantes
 
 * [SMO (SQL Server Management Objects)](../../relational-databases/server-management-objects-smo/overview-smo.md)
-* [PowerShell](../../powershell/download-sql-server-ps-module.md).
+* [PowerShell](../../powershell/download-sql-server-ps-module.md)
+* [Évaluation des vulnérabilités SQL](https://docs.microsoft.com/sql/relational-databases/security/sql-vulnerability-assessment)

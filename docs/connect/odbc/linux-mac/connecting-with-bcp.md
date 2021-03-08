@@ -2,7 +2,7 @@
 title: Connexion avec bcp
 description: Découvrez comment utiliser l’utilitaire bcp avec Microsoft ODBC Driver for SQL Server sur Linux et macOS.
 ms.custom: ''
-ms.date: 01/19/2017
+ms.date: 02/24/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -13,12 +13,12 @@ helpviewer_keywords:
 ms.assetid: 3eca5717-e50f-40db-be16-a1cebbdfee70
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: b66ebab16bc26beec9ef9cd8699f53e75d36d478
-ms.sourcegitcommit: c7f40918dc3ecdb0ed2ef5c237a3996cb4cd268d
+ms.openlocfilehash: f8bff2d5d9892d709885d0888e36ca042aa72242
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91727434"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837393"
 ---
 # <a name="connecting-with-bcp"></a>Connexion avec bcp
 [!INCLUDE[Driver_ODBC_Download](../../../includes/driver_odbc_download.md)]
@@ -74,7 +74,14 @@ Spécifie le chemin complet au fichier de format.
   
 - -F *first_row*  
 Spécifie le numéro de la première ligne à exporter à partir d’une table ou à importer à partir d’un fichier de données.  
-  
+
+- -G  
+Ce commutateur est utilisé par le client durant la connexion à Azure SQL Database ou à Azure Synapse Analytics pour faire en sorte que l’utilisateur soit authentifié à l’aide de l’authentification Azure Active Directory. Le commutateur -G nécessite au moins la version bcp 17.6. Pour déterminer votre version, exécutez bcp -v.
+
+> [!IMPORTANT]
+> L’option `-G` s’applique uniquement à Azure SQL Database et à Azure Synapse Analytics.
+> L’authentification interactive AAD n’est actuellement prise en charge ni sur Linux ni sur macOS. L’authentification intégrée AAD requiert [Microsoft ODBC Driver 17 pour SQL Server](../download-odbc-driver-for-sql-server.md) version 17.6.1 ou ultérieure et un [environnement Kerberos correctement configuré](using-integrated-authentication.md#configure-kerberos).
+
 - -k  
 Pendant l’opération, les colonnes vides doivent conserver une valeur NULL et les colonnes insérées ne doivent pas prendre de valeur par défaut.  
   

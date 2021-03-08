@@ -5,18 +5,18 @@ ms.custom: ''
 ms.date: 07/31/2020
 ms.prod: sql
 ms.prod_service: connectivity
-ms.reviewer: ''
+ms.reviewer: v-daenge
 ms.technology: connectivity
 ms.topic: conceptual
 ms.assetid: ''
 author: peterbae
 ms.author: v-hyba
-ms.openlocfilehash: bfc8816c30020669918b3632f94e289524097537
-ms.sourcegitcommit: e700497f962e4c2274df16d9e651059b42ff1a10
+ms.openlocfilehash: 168034034e5f2abe53bd47029b99fa78c250336b
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/17/2020
-ms.locfileid: "88438441"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836966"
 ---
 # <a name="client-certificate-authentication-for-loopback-scenarios"></a>Authentification par certificat client pour les scénarios de bouclage
 

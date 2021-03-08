@@ -8,12 +8,12 @@ ms.date: 01/19/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: 652db6f752f8bf46ad2b7d4779063c79359e3a33
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 42638520dd0d7391a10217dc7f7fdd2ce708189f
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100350939"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247498"
 ---
 # <a name="performance-best-practices-and-configuration-guidelines-for-sql-server-on-linux"></a>Meilleures pratiques en matière de performances et lignes directrices de configuration pour SQL Server sur Linux
 
@@ -51,7 +51,7 @@ mdadm --create --verbose /dev/md2 --level=raid0 --chunk=64K --raid-devices=2 /de
 
 #### <a name="disk-partitioning-and-configuration-recommendations"></a>Recommandations relatives à la configuration et au partitionnement de disque
 
-Pour SQL Server, il est recommandé d’utiliser des configurations RAID. L’unité de bande (sunit) et la largeur de bande du système de fichiers déployé doivent correspondre à la géométrie RAID. Voici un exemple basé sur le système de fichiers XFS pour un volume de journal. 
+Pour SQL Server, il est recommandé d’utiliser des configurations RAID. L’unité de bande (sunit) et la largeur de bande du système de fichiers déployé doivent correspondre à la géométrie RAID. Voici un exemple basé sur le système de fichiers XFS pour un volume de journal.
 
 ```bash
 # Creating a log volume, using 6 devices, in RAID 10 configuration with 64KB stripes
@@ -71,8 +71,9 @@ realtime =none                   extsz=4096   blocks=0, rtextents=0
 ```
 
 Le tableau de journaux est une configuration RAID-10 à 6 lecteurs avec une bande de 64 Ko. Comme vous pouvez le voir :
-   1. « sunit=16 blks », 16*4096 (taille de bloc) = 64 Ko, ce qui correspond à la taille de bande. 
-   2. « swidth = 48 blks », swidth/sunit = 3, ce qui correspond au nombre de lecteurs de données dans le tableau, à l’exception des lecteurs de parité. 
+
+- « sunit=16 blks », 16*4096 (taille de bloc) = 64 Ko, ce qui correspond à la taille de bande.
+- « swidth = 48 blks », swidth/sunit = 3, ce qui correspond au nombre de lecteurs de données dans le tableau, à l’exception des lecteurs de parité.
 
 #### <a name="file-system-configuration-recommendation"></a>Configuration recommandée du système de fichiers
 
@@ -216,7 +217,7 @@ La table suivante fournit des suggestions pour les paramètres du disque :
 | Paramètre | Valeur | Informations complémentaires |
 |---|---|---|
 | disk `readahead` | 4096 | Consultez la commande `blockdev` |
-| paramètres sysctl | kernel.sched_min_granularity_ns = 10000000<br/>kernel.sched_wakeup_granularity_ns = 15000000<br/>vm.dirty_ratio = 40<br/>vm.dirty_background_ratio = 10<br/>vm.swappiness = 1 | Consultez la commande **sysctl** |
+| paramètres sysctl | kernel.sched_min_granularity_ns = 15000000<br/>kernel.sched_wakeup_granularity_ns = 2000000<br/>vm.dirty_ratio = 80<br/>vm.dirty_background_ratio = 3<br/>vm.swappiness = 1 | Consultez la commande **sysctl** |
 
 **Description :**
 
@@ -274,117 +275,117 @@ L’utilisation du profil **mssql** **_Tuned_ *_ configure l’option _* transpa
 
 #### <a name="network-setting-recommendations"></a>Recommandations relatives aux paramètres réseau
 
-À l’instar des recommandations en matière de stockage et de processeur, il existe des recommandations spécifiques liées au réseau. Celles-ci sont listées ci-dessous pour référence. Les paramètres mentionnés ci-dessous ne sont pas disponibles sur toutes les cartes réseau. Pour obtenir des conseils sur chacune de ces options, contactez les fournisseurs de cartes réseau. Testez et configurez ces paramètres sur des environnements de développement avant de les appliquer à des environnements de production. Les options mentionnées ci-dessous sont expliquées avec des exemples, et les commandes utilisées sont propres à un type et à un fournisseur de carte réseau. 
+À l’instar des recommandations en matière de stockage et de processeur, il existe des recommandations spécifiques liées au réseau. Celles-ci sont listées ci-dessous pour référence. Les paramètres mentionnés ci-dessous ne sont pas disponibles sur toutes les cartes réseau. Pour obtenir des conseils sur chacune de ces options, contactez les fournisseurs de cartes réseau. Testez et configurez ces paramètres sur des environnements de développement avant de les appliquer à des environnements de production. Les options mentionnées ci-dessous sont expliquées avec des exemples, et les commandes utilisées sont propres à un type et à un fournisseur de carte réseau.
 
 1. Configuration de la taille de la mémoire tampon du port réseau : Dans l’exemple ci-dessous, la carte d’interface réseau est nommée « eth0 » (carte réseau Intel). Pour les cartes réseau Intel, la taille de la mémoire tampon recommandée est de 4 Ko (4096). Vérifiez les valeurs maximales prédéfinies, puis effectuez la configuration à l’aide des exemples de commandes ci-dessous :
 
- ```bash
-         #To check the pre-set maximums please run the command, example NIC name used here is:"eth0"
-         ethtool -g eth0
-         #command to set both the rx(recieve) and tx (transmit) buffer size to 4 KB. 
-         ethtool -G eth0 rx 4096 tx 4096
-         #command to check the value is properly configured is:
-         ethtool -g eth0
-  ```
+   ```bash
+            #To check the pre-set maximums please run the command, example NIC name used here is:"eth0"
+            ethtool -g eth0
+            #command to set both the rx(recieve) and tx (transmit) buffer size to 4 KB. 
+            ethtool -G eth0 rx 4096 tx 4096
+            #command to check the value is properly configured is:
+            ethtool -g eth0
+   ```
 
 2. Activer les trames Jumbo : Avant d’activer les trames Jumbo, vérifiez que tous les commutateurs réseau, routeurs et autres éléments essentiels dans le chemin du paquet réseau entre les clients et SQL Server prennent en charge les trames Jumbo. Ce n’est que dans ce cas que l’activation des trames Jumbo peut améliorer les performances. Une fois les trames Jumbo activées, connectez-vous à SQL Server et remplacez la taille du paquet réseau par 8060 à l’aide de `sp_configure`, comme indiqué ci-dessous :
 
-```bash
-         #command to set jumbo frame to 9014 for a Intel NIC named eth0 is
-         ifconfig eth0 mtu 9014
-         #verify the setting using the command:
-         ip addr | grep 9014
-```
+   ```bash
+            #command to set jumbo frame to 9014 for a Intel NIC named eth0 is
+            ifconfig eth0 mtu 9014
+            #verify the setting using the command:
+            ip addr | grep 9014
+   ```
 
-```sql
-         sp_configure 'network packet size' , '8060'
-         go
-         reconfigure with override
-         go
-```
+   ```sql
+            sp_configure 'network packet size' , '8060'
+            go
+            reconfigure with override
+            go
+   ```
 
 3. Par défaut, nous vous recommandons de définir le port pour la fusion des IRQ RX/TX adaptatives, ce qui signifie que la remise des interruptions sera ajustée pour améliorer la latence quand le taux de paquets est faible et améliorer le débit quand le taux de paquets est élevé. Notez que ce paramètre peut ne pas être disponible dans l’ensemble de l’infrastructure réseau. Vérifiez donc l’infrastructure réseau existante et confirmez qu’elle est prise en charge. L’exemple ci-dessous concerne la carte d’interface réseau nommée « eth0 » (carte réseau Intel) :
 
-```bash
-         #command to set the port for adaptive RX/TX IRQ coalescing
-         echtool -C eth0 adaptive-rx on
-         echtool -C eth0 adaptive-tx on
-         #confirm the setting using the command:
-         ethtool -c eth0
-```
+   ```bash
+            #command to set the port for adaptive RX/TX IRQ coalescing
+            echtool -C eth0 adaptive-rx on
+            echtool -C eth0 adaptive-tx on
+            #confirm the setting using the command:
+            ethtool -c eth0
+   ```
 
-> [!NOTE]
-> Pour obtenir un comportement prévisible dans les environnements hautes performances, comme ceux utilisés comme points de référence, désactivez la fusion des IRQ RX/TX adaptatives, puis définissez spécifiquement la fusion des interruptions RX/TX. Consultez les exemples de commandes pour désactiver la fusion des IRQ RX/TX, puis définissez spécifiquement les valeurs :
+   > [!NOTE]
+   > Pour obtenir un comportement prévisible dans les environnements hautes performances, comme ceux utilisés comme points de référence, désactivez la fusion des IRQ RX/TX adaptatives, puis définissez spécifiquement la fusion des interruptions RX/TX. Consultez les exemples de commandes pour désactiver la fusion des IRQ RX/TX, puis définissez spécifiquement les valeurs :
 
-```bash
-         #commands to disable adaptive RX/TX IRQ coalescing
-         echtool -C eth0 adaptive-rx off
-         echtool -C eth0 adaptive-tx off
-         #confirm the setting using the command:
-         ethtool -c eth0
-         #Let us set the rx-usecs parameter which specify how many microseconds after at least 1 packet is received before generating an interrupt, and the [irq] parameters are the corresponding delays in updating the #status when the interrupt is disabled. For Intel bases NICs below are good values to start with:
-         ethtool -C eth0 rx-usecs 100 tx-frames-irq 512
-         #confirm the setting using the command:
-         ethtool -c eth0
-```
+   ```bash
+            #commands to disable adaptive RX/TX IRQ coalescing
+            echtool -C eth0 adaptive-rx off
+            echtool -C eth0 adaptive-tx off
+            #confirm the setting using the command:
+            ethtool -c eth0
+            #Let us set the rx-usecs parameter which specify how many microseconds after at least 1 packet is received before generating an interrupt, and the [irq] parameters are the corresponding delays in updating the #status when the interrupt is disabled. For Intel bases NICs below are good values to start with:
+            ethtool -C eth0 rx-usecs 100 tx-frames-irq 512
+            #confirm the setting using the command:
+            ethtool -c eth0
+   ```
 
 4. Nous vous recommandons également d’activer RSS (Receive-Side Scaling) et, par défaut, de combiner les côtés RX et TX des files d’attente RSS. Dans certains scénarios spécifiques impliquant le Support Microsoft, la désactivation de RSS a également permis d’améliorer les performances. Testez ce paramètre dans les environnements de test avant de l’appliquer à des environnements de production. L’exemple de commande illustré concerne les cartes réseau Intel.
 
-```bash
-         #command to get pre-set maximums
-         ethtool -l eth0 
-         #note the pre-set "Combined" maximum value. let's consider for this example, it is 8.
-         #command to combine the queues with the value reported in the pre-set "Combined" maximum value:
-         ethtool -L eth0 combined 8
-         #you can verify the setting using the command below
-         ethtool -l eth0
-```
+   ```bash
+            #command to get pre-set maximums
+            ethtool -l eth0 
+            #note the pre-set "Combined" maximum value. let's consider for this example, it is 8.
+            #command to combine the queues with the value reported in the pre-set "Combined" maximum value:
+            ethtool -L eth0 combined 8
+            #you can verify the setting using the command below
+            ethtool -l eth0
+   ```
 
 5. Utilisation de l’affinité d’IRQ des ports de la carte réseau. Pour obtenir les performances attendues en modifiant l’affinité d’IRQ, vous devez tenir compte de quelques paramètres importants tels que la gestion par Linux de la topologie du serveur, la pile de pilotes de la carte réseau, les paramètres par défaut et le paramètre irqbalance. Pour optimiser les paramètres d’affinité d’IRQ des ports de la carte réseau, vous devez connaître la topologie du serveur, désactiver irqbalance et utiliser des paramètres spécifiques au fournisseur de la carte réseau. Voici un exemple d’infrastructure réseau spécifique à Mellanox pour vous aider à comprendre la configuration. Notez que les commandes varient en fonction de l’environnement. Pour plus d’informations, contactez le fournisseur de la carte réseau :
 
-```bash
-         #disable irqbalance or get a snapshot of the IRQ settings and force the daemon to exit
-         systemctl disable irqbalance.service
-         #or
-         irqbalance --oneshot
+   ```bash
+            #disable irqbalance or get a snapshot of the IRQ settings and force the daemon to exit
+            systemctl disable irqbalance.service
+            #or
+            irqbalance --oneshot
 
-         #download the Mellanox mlnx_tuning_scripts tarball, https://www.mellanox.com/sites/default/files/downloads/tools/mlnx_tuning_scripts.tar.gz and extract it
-         tar -xvf mlnx_tuning_scripts.tar.gz
-         # be sure, common_irq_affinity.sh is executable. if not, 
-         # chmod +x common_irq_affinity.sh       
+            #download the Mellanox mlnx_tuning_scripts tarball, https://www.mellanox.com/sites/default/files/downloads/tools/mlnx_tuning_scripts.tar.gz and extract it
+            tar -xvf mlnx_tuning_scripts.tar.gz
+            # be sure, common_irq_affinity.sh is executable. if not, 
+            # chmod +x common_irq_affinity.sh       
 
-         #display IRQ affinity for Mellanox NIC port; e.g eth0
-         ./show_irq_affinity.sh eth0
+            #display IRQ affinity for Mellanox NIC port; e.g eth0
+            ./show_irq_affinity.sh eth0
 
-         #optimize for best throughput performance
-         ./mlnx_tune -p HIGH_THROUGHPUT
+            #optimize for best throughput performance
+            ./mlnx_tune -p HIGH_THROUGHPUT
 
-         #set hardware affinity to the NUMA node hosting physically the NIC and its port
-         ./set_irq_affinity_bynode.sh `\cat /sys/class/net/eth0/device/numa_node` eth0
+            #set hardware affinity to the NUMA node hosting physically the NIC and its port
+            ./set_irq_affinity_bynode.sh `\cat /sys/class/net/eth0/device/numa_node` eth0
 
-         #verify IRQ affinity
-         ./show_irq_affinity.sh eth0
+            #verify IRQ affinity
+            ./show_irq_affinity.sh eth0
 
-         #add IRQ coalescing optimizations
-         ethtool -C eth0 adaptive-rx off
-         ethtool -C eth0 adaptive-tx off
-         ethtool -C eth0  rx-usecs 750 tx-frames-irq 2048
+            #add IRQ coalescing optimizations
+            ethtool -C eth0 adaptive-rx off
+            ethtool -C eth0 adaptive-tx off
+            ethtool -C eth0  rx-usecs 750 tx-frames-irq 2048
 
-         #verify the settings
-         ethtool -c eth0
-```
+            #verify the settings
+            ethtool -c eth0
+   ```
 
 6. Une fois les modifications ci-dessus effectuées, vérifiez que la vitesse de la carte réseau correspond aux attentes à l’aide de la commande suivante :
 
-```bash
-         ethtool eth0 | grep -i Speed
-```
+   ```bash
+            ethtool eth0 | grep -i Speed
+   ```
 
 #### <a name="additional-advanced-kernelos-configuration"></a>Configuration avancée supplémentaire du noyau/système d’exploitation
 
-1. Pour des performances optimales d’E/S de stockage, il est recommandé d’utiliser la planification Linux à plusieurs files d’attente pour les appareils de traitement par blocs. Cela permet de mettre à l’échelle correctement les performances de la couche de traitement par blocs avec des disques SSD (Solid-State Drive) et des systèmes multicœurs rapides. Consultez la documentation si elle est activée par défaut dans vos distributions Linux. Dans la plupart des autres cas, l’amorçage du noyau avec **scsi_mod.use_blk_mq=y** l’active, même si la documentation de la distribution Linux utilisée peut fournir des instructions supplémentaires à ce sujet. Celle-ci est cohérente avec le noyau Linux en amont.
+- Pour des performances optimales d’E/S de stockage, il est recommandé d’utiliser la planification Linux à plusieurs files d’attente pour les appareils de traitement par blocs. Cela permet de mettre à l’échelle correctement les performances de la couche de traitement par blocs avec des disques SSD (Solid-State Drive) et des systèmes multicœurs rapides. Consultez la documentation si elle est activée par défaut dans vos distributions Linux. Dans la plupart des autres cas, l’amorçage du noyau avec **scsi_mod.use_blk_mq=y** l’active, même si la documentation de la distribution Linux utilisée peut fournir des instructions supplémentaires à ce sujet. Celle-ci est cohérente avec le noyau Linux en amont.
 
-1. Comme MPIO (Multipath I/O) est souvent utilisé pour les déploiements SQL Server, la cible multivoie du mappeur d’appareil (DM) doit également être configurée pour utiliser l’infrastructure `blk-mq` en activant l’option d’amorçage du noyau **dm_mod.use_blk_mq=y**. La valeur par défaut est `n` (désactivé). Ce paramètre, lorsque les appareils SCSI sous-jacents utilisent `blk-mq`, réduit la surcharge de verrouillage au niveau de la couche DM. Reportez-vous à la documentation de la distribution Linux utilisée pour obtenir des conseils supplémentaires sur la façon de le configurer.
+- Comme MPIO (Multipath I/O) est souvent utilisé pour les déploiements SQL Server, la cible multivoie du mappeur d’appareil (DM) doit également être configurée pour utiliser l’infrastructure `blk-mq` en activant l’option d’amorçage du noyau **dm_mod.use_blk_mq=y**. La valeur par défaut est `n` (désactivé). Ce paramètre, lorsque les appareils SCSI sous-jacents utilisent `blk-mq`, réduit la surcharge de verrouillage au niveau de la couche DM. Reportez-vous à la documentation de la distribution Linux utilisée pour obtenir des conseils supplémentaires sur la façon de le configurer.
 
 #### <a name="configure-swapfile"></a>Configurer un fichier d’échange
 

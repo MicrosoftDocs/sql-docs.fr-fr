@@ -7,7 +7,7 @@ items:
     href: sql-server/previous-versions-sql-server.md
   - name: Vue d’ensemble
     items:
-      - name: Nouveautés
+      - name: What's New
         items:
           - name: "SQL Server\_2019"
             href: sql-server/what-s-new-in-sql-server-ver15.md
@@ -6146,7 +6146,7 @@ items:
             href: dma/dma-assess-ssis.md
           - name: Enregistrer et charger des évaluations
             href: dma/dma-save-load-assessments.md
-          - name: Identifier la bonne référence SKU Azure SQL Database
+          - name: Identifier la référence SKU Azure SQL cible
             href: dma/dma-sku-recommend-sql-db.md
           - name: Mise à niveau SQL Server vers une version ultérieure
             href: dma/dma-migrateonpremsql.md

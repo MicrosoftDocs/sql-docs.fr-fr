@@ -10,13 +10,13 @@ ms.technology: connectivity
 ms.topic: conceptual
 author: johnnypham
 ms.author: v-jopha
-ms.reviewer: ''
-ms.openlocfilehash: 1bcf11727a5ccd640846788b936ff5fefe9c63a3
-ms.sourcegitcommit: d8cdbb719916805037a9167ac4e964abb89c3909
+ms.reviewer: v-daenge
+ms.openlocfilehash: c13942dc5633deec4759ebd4c8a5661654c0952b
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98595680"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837084"
 ---
 # <a name="enable-event-tracing-in-sqlclient"></a>Activer le suivi d’événements dans SqlClient
 
@@ -50,6 +50,7 @@ L’implémentation actuelle prend en charge les mots clés d’événements sui
 |||
 
 ## <a name="example"></a>Exemple
+
 L’exemple suivant active le suivi d’événements pour une opération de données sur l’exemple de base de données **AdventureWorks** et affiche les événements dans la fenêtre de console.
 
 [!code-csharp [SqlClientEventSource#1](~/../sqlclient/doc/samples/SqlClientEventSource.cs#1)]
@@ -112,7 +113,7 @@ class Program
    ```
    xperf -start trace -f myTrace.etl -on *Microsoft.Data.SqlClient.EventSource
    ```
-   
+
 2. Exécutez l’exemple de traçage SNI natif pour vous connecter à SQL Server.
 
 3. Arrêtez le suivi en utilisant la ligne de commande suivante.
@@ -120,8 +121,8 @@ class Program
    ```
    xperf -stop trace
    ```
-   
-4. Utilisez PerfView pour ouvrir le fichier myTrace.etl spécifié à l’étape 1. Le journal de suivi SNI peut être trouvé avec les noms d’événements `Microsoft.Data.SqlClient.EventSource/SNIScope` et `Microsoft.Data.SqlClient.EventSource/SNITrace`. 
+
+4. Utilisez PerfView pour ouvrir le fichier myTrace.etl spécifié à l’étape 1. Le journal de suivi SNI peut être trouvé avec les noms d’événements `Microsoft.Data.SqlClient.EventSource/SNIScope` et `Microsoft.Data.SqlClient.EventSource/SNITrace`.
 
    ![Utiliser PerfView pour afficher le fichier de trace SNI](media/view-event-trace-native-sni.png)
 
@@ -133,20 +134,20 @@ class Program
 2. Configurez le nom du fichier de trace, le chemin de sortie et le nom du fournisseur.
 
    ![Configurer Prefview avant le regroupement](media/collect-event-trace-native-sni.png)
-   
+
 3. Démarrez le regroupement.
 
 4. Exécutez l’exemple de traçage SNI natif pour vous connecter à SQL Server.
 
 5. Arrêtez le regroupement à partir de PerfView. La génération du fichier PerfViewData.etl en fonction de la configuration à l’étape 2 prendra un certain temps.
 
-6. Ouvrez le fichier etl dans PerfView. Le journal de suivi SNI peut être trouvé avec les noms d’événements `Microsoft.Data.SqlClient.EventSource/SNIScope` et `Microsoft.Data.SqlClient.EventSource/SNITrace`. 
-
+6. Ouvrez le fichier `etl` dans PerfView. Le journal de suivi SNI peut être trouvé avec les noms d’événements `Microsoft.Data.SqlClient.EventSource/SNIScope` et `Microsoft.Data.SqlClient.EventSource/SNITrace`.
 
 ## <a name="external-resources"></a>Ressources externes  
+
 Pour plus d'informations, consultez les ressources ci-dessous.  
   
 |Ressource|Description|  
 |--------------|-----------------|  
-|[EventSource Class](/dotnet/api/system.diagnostics.tracing.eventsource)|Offre la possibilité de créer des événements ETW.| 
+|[EventSource Class](/dotnet/api/system.diagnostics.tracing.eventsource)|Utilisé pour créer des événements ETW.|
 |[Classe EventListener](/dotnet/api/system.diagnostics.tracing.eventlistener)|Fournit des méthodes permettant d’activer et de désactiver des événements à partir des sources d’événements.|

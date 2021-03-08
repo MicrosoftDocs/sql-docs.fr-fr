@@ -2,7 +2,7 @@
 title: Utilisation du pilote JDBC | Microsoft Docs
 description: Cette section fournit des instructions de démarrage rapide pour la création d'une connexion simple à une base de données SQL Seveur à l'aide du pilote Microsoft JDBC pour SQL Server.
 ms.custom: ''
-ms.date: 01/29/2021
+ms.date: 02/26/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 6faaf05b-8b70-4ed2-9b44-eee5897f1cd0
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 6b3550536a3512315d511efc831adc27b35ec974
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: e74135523d2ba4cbde27e588eee999b3450def37
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99195260"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837516"
 ---
 # <a name="using-the-jdbc-driver"></a>Utilisation du pilote JDBC
 
@@ -28,7 +28,7 @@ Cette section fournit des instructions de démarrage rapide pour la création d�
 
 Microsoft JDBC Driver fournit différents fichiers JAR à utiliser en correspondance avec les paramètres Java Runtime Environment (JRE) choisis :
 
-Microsoft JDBC Driver 9.2 pour SQL Server fournit les fichiers bibliothèque de classes **mssql-jdbc-9.2.0.jre8.jar**, **mssql-jdbc-9.2.0.jre11.jar** et **mssql-jdbc-9.2.0.jre15.jar**.
+Microsoft JDBC Driver 9.2 pour SQL Server fournit les fichiers bibliothèque de classes **mssql-jdbc-9.2.1.jre8.jar**, **mssql-jdbc-9.2.1.jre11.jar** et **mssql-jdbc-9.2.1.jre15.jar**.
 
 Microsoft JDBC Driver 8.4 pour SQL Server fournit les fichiers bibliothèque de classes **mssql-jdbc-8.4.1.jre8.jar**, **mssql-jdbc-8.4.1.jre11.jar** et **mssql-jdbc-8.4.1.jre14.jar**.
 
@@ -70,31 +70,31 @@ Si vous utilisez le pilote JDBC 8.2, définissez le classpath sur **mssql-jdbc
 
 Si vous utilisez JDBC Driver 8.4, définissez le classpath sur **mssql-jdbc-8.4.1.jre8.jar**, **mssql-jdbc-8.4.1.jre11.jar** ou **mssql-jdbc-8.4.1.jre14.jar**.
 
-Si vous utilisez JDBC Driver 9.2, définissez le classpath en y incluant **mssql-jdbc-9.2.0.jre8.jar**, **mssql-jdbc-9.2.0.jre11.jar** ou **mssql-jdbc-9.2.0.jre15.jar**.
+Si vous utilisez JDBC Driver 9.2, définissez le classpath pour inclure **mssql-jdbc-9.2.1.jre8.jar**, **mssql-jdbc-9.2.1.jre11.jar** ou **mssql-jdbc-9.2.1.jre15.jar**.
 
 S’il manque une entrée correspondant au bon fichier JAR dans le classpath, l’application lève l’exception courante `Class not found`.  
 
 ### <a name="for-microsoft-jdbc-driver-92"></a>Pour Microsoft JDBC Driver 9.2
 
-Les fichiers **mssql-jdbc-9.2.0.jre8.jar**, **mssql-jdbc-9.2.0.jre11.jar** ou **mssql-jdbc-9.2.0.jre15.jar** sont installés aux emplacements suivants :
+Les fichiers **mssql-jdbc-9.2.1.jre8.jar**, **mssql-jdbc-9.2.1.jre11.jar** ou **mssql-jdbc-9.2.1.jre15.jar** sont installés aux emplacements suivants :
 
 ```bash
-\<installation directory>\sqljdbc_<version>\<language>\mssql-jdbc-9.2.0.jre8.jar
+\<installation directory>\sqljdbc_<version>\<language>\mssql-jdbc-9.2.1.jre8.jar
 
-\<installation directory>\sqljdbc_<version>\<language>\mssql-jdbc-9.2.0.jre11.jar
+\<installation directory>\sqljdbc_<version>\<language>\mssql-jdbc-9.2.1.jre11.jar
 
-\<installation directory>\sqljdbc_<version>\<language>\mssql-jdbc-9.2.0.jre15.jar
+\<installation directory>\sqljdbc_<version>\<language>\mssql-jdbc-9.2.1.jre15.jar
 ```
 
 L’extrait de code suivant est un exemple de l’instruction CLASSPATH utilisée pour une application Windows :
 
-`CLASSPATH =.;C:\Program Files\Microsoft JDBC Driver 9.2 for SQL Server\sqljdbc_9.2\enu\mssql-jdbc-9.2.0.jre11.jar`
+`CLASSPATH =.;C:\Program Files\Microsoft JDBC Driver 9.2 for SQL Server\sqljdbc_9.2\enu\mssql-jdbc-9.2.1.jre11.jar`
 
 L’extrait de code suivant est un exemple de l’instruction CLASSPATH utilisée pour une application Unix/Linux :
 
-`CLASSPATH =.:/home/usr1/mssqlserverjdbc/Driver/sqljdbc_9.2/enu/mssql-jdbc-9.2.0.jre11.jar`
+`CLASSPATH =.:/home/usr1/mssqlserverjdbc/Driver/sqljdbc_9.2/enu/mssql-jdbc-9.2.1.jre11.jar`
 
-Vérifiez que l’instruction CLASSPATH ne contient qu’un seul [!INCLUDE[jdbcNoVersion](../../includes/jdbcnoversion_md.md)], comme **mssql-jdbc-9.2.0.jre8.jar**, **mssql-jdbc-9.2.0.jre11.jar** ou **mssql-jdbc-9.2.0.jre15.jar**.
+Vérifiez que l’instruction CLASSPATH ne contient qu’un seul [!INCLUDE[jdbcNoVersion](../../includes/jdbcnoversion_md.md)], comme **mssql-jdbc-9.2.1.jre8.jar**, **mssql-jdbc-9.2.1.jre11.jar** ou **mssql-jdbc-9.2.1.jre15.jar**.
 
 
 ### <a name="for-microsoft-jdbc-driver-84"></a>Pour Microsoft JDBC Driver 8.4
@@ -287,7 +287,7 @@ Les servlets et les JSP sont exécutés dans un moteur de servlet/JSP tel que To
   
 ### <a name="enterprise-java-beans"></a>EJB (Enterprise Java Beans)  
 
-Les EJB (Enterprise Java Beans) sont exécutés dans un conteneur EJB. Les conteneurs EJB proviennent de différents fournisseurs. Les applets Java s'exécutent dans un navigateur, mais sont téléchargés à partir d'un serveur web. Copiez le fichier sqljdbc.jar, sqljdbc4.jar ou sqljdbc41.jar à la racine du serveur web et spécifiez le nom du fichier JAR sous l’onglet d’archive HTML de l’applet, par exemple `<applet ... archive=mssql-jdbc-**_.jar>`.  
+Les EJB (Enterprise Java Beans) sont exécutés dans un conteneur EJB. Les conteneurs EJB proviennent de différents fournisseurs. Les applets Java s'exécutent dans un navigateur, mais sont téléchargés à partir d'un serveur web. Copiez le fichier sqljdbc.jar, sqljdbc4.jar ou sqljdbc41.jar à la racine du serveur web et spécifiez le nom du fichier JAR sous l’onglet d’archive HTML de l’applet, par exemple `<applet ... archive=mssql-jdbc-***.jar>`.  
   
 ## <a name="making-a-simple-connection-to-a-database"></a>Création d'une connexion simple à une base de données
 
@@ -299,7 +299,7 @@ Une fois le pilote chargé, vous pouvez établir une connexion à l’aide d’u
 
 ```java
 String connectionUrl = "jdbc:sqlserver://localhost:1433;" +  
-   "databaseName=AdventureWorks;user=MyUserName;password=_****;";  
+   "databaseName=AdventureWorks;user=MyUserName;password=*****;";  
 Connection con = DriverManager.getConnection(connectionUrl);  
 ```
 

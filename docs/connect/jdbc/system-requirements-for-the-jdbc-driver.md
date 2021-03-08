@@ -2,7 +2,7 @@
 description: Configuration requise pour le pilote JDBC
 title: Configuration requise pour le pilote JDBC | Microsoft Docs
 ms.custom: ''
-ms.date: 01/29/2021
+ms.date: 02/26/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 447792bb-f39b-49b4-9fd0-1ef4154c74ab
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 2052f4db6b90851a09b0aa7f56a2f4a9220be506
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 50820ee0f7da0f58872d255c8a918dff35234553
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99187663"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837546"
 ---
 # <a name="system-requirements-for-the-jdbc-driver"></a>Configuration requise pour le pilote JDBC
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
@@ -52,7 +52,7 @@ ms.locfileid: "99187663"
 
 **Microsoft JDBC Driver 9.2 pour SQL Server :**  
 
-  JDBC Driver 9.2 inclut trois bibliothèques de classes JAR dans chaque package d’installation : **mssql-jdbc-9.2.0.jre8.jar**, **mssql-jdbc-9.2.0.jre11.jar** et **mssql-jdbc-9.2.0.jre15.jar**.
+  JDBC Driver 9.2 inclut trois bibliothèques de classes JAR dans chaque package d’installation : **mssql-jdbc-9.2.1.jre8.jar**, **mssql-jdbc-9.2.1.jre11.jar** et **mssql-jdbc-9.2.1.jre15.jar**.
 
   JDBC Driver 9.2 est conçu pour fonctionner et être pris en charge par toutes les machines virtuelles Java principales ; il est cependant testé seulement sur OpenJDK 1.8, OpenJDK 11.0, OpenJDK 15.0, Azul Zulu JRE 1.8, Azul Zulu JRE 11.0 et Azul Zulu JRE 15.0.
   
@@ -60,9 +60,9 @@ ms.locfileid: "99187663"
   
   |JAR|Compatibilité avec la version de JDBC|Version de Java recommandée|Description|  
 |---------|-----------------------------|----------------------|-----------------|   
-|mssql-jdbc-9.2.0.jre8.jar|4,2|8|Nécessite Java Runtime Environment (JRE) 1.8. JRE 1.7 et les versions antérieures lèvent une exception.<br /><br /> Les nouvelles fonctionnalités de la version 9.2 incluent : La prise en charge de JDK 15, la prise en charge de l’authentification interactive Azure Active Directory, la prise en charge de l’authentification par principal de service Azure Active Directory et la prise en charge de useBulkCopyForBatchInsert pour les serveurs non-Azure Synapse Analytics. |
-|mssql-jdbc-9.2.0.jre11.jar|4.3|11|Nécessite un environnement JRE (Java Runtime Environment) 11.0. JRE 10.0 et les versions antérieures lèvent une exception.<br /><br /> Les nouvelles fonctionnalités de la version 9.2 incluent : La prise en charge de JDK 15, la prise en charge de l’authentification interactive Azure Active Directory, la prise en charge de l’authentification par principal de service Azure Active Directory et la prise en charge de useBulkCopyForBatchInsert pour les serveurs non-Azure Synapse Analytics. |
-|mssql-jdbc-9.2.0.jre15.jar|4.3|15|Nécessite Java Runtime Environment (JRE) 15.0. L’utilisation de JRE 14.0 ou antérieur lève une exception.<br /><br /> Les nouvelles fonctionnalités de la version 9.2 incluent : La prise en charge de JDK 15, la prise en charge de l’authentification interactive Azure Active Directory, la prise en charge de l’authentification par principal de service Azure Active Directory et la prise en charge de useBulkCopyForBatchInsert pour les serveurs non-Azure Synapse Analytics. |
+|mssql-jdbc-9.2.1.jre8.jar|4,2|8|Nécessite Java Runtime Environment (JRE) 1.8. JRE 1.7 et les versions antérieures lèvent une exception.<br /><br /> Les nouvelles fonctionnalités de la version 9.2 incluent : La prise en charge de JDK 15, la prise en charge de l’authentification interactive Azure Active Directory, la prise en charge de l’authentification par principal de service Azure Active Directory et la prise en charge de useBulkCopyForBatchInsert pour les serveurs non-Azure Synapse Analytics. |
+|mssql-jdbc-9.2.1.jre11.jar|4.3|11|Nécessite un environnement JRE (Java Runtime Environment) 11.0. JRE 10.0 et les versions antérieures lèvent une exception.<br /><br /> Les nouvelles fonctionnalités de la version 9.2 incluent : La prise en charge de JDK 15, la prise en charge de l’authentification interactive Azure Active Directory, la prise en charge de l’authentification par principal de service Azure Active Directory et la prise en charge de useBulkCopyForBatchInsert pour les serveurs non-Azure Synapse Analytics. |
+|mssql-jdbc-9.2.1.jre15.jar|4.3|15|Nécessite Java Runtime Environment (JRE) 15.0. L’utilisation de JRE 14.0 ou antérieur lève une exception.<br /><br /> Les nouvelles fonctionnalités de la version 9.2 incluent : La prise en charge de JDK 15, la prise en charge de l’authentification interactive Azure Active Directory, la prise en charge de l’authentification par principal de service Azure Active Directory et la prise en charge de useBulkCopyForBatchInsert pour les serveurs non-Azure Synapse Analytics. |
 
 
   JDBC Driver 9.2 est également disponible sur le référentiel central Maven ; pour l’ajouter à un projet Maven, ajoutez le code suivant dans le fichier POM.XML :  
@@ -71,7 +71,7 @@ ms.locfileid: "99187663"
 <dependency>
     <groupId>com.microsoft.sqlserver</groupId>
     <artifactId>mssql-jdbc</artifactId>
-    <version>9.2.0.jre11</version>
+    <version>9.2.1.jre11</version>
 </dependency>
 ```
 

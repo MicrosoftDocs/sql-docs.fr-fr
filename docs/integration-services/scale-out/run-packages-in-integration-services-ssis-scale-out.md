@@ -6,17 +6,17 @@ ms.date: 12/13/2017
 ms.prod: sql
 ms.technology: integration-services
 ms.topic: conceptual
-author: haoqian
+author: HaoQian-MS
 ms.author: haoqian
 ms.reviewer: maghan
 f1_keywords:
 - sql13.ssis.ssms.ispackageexecuteinscaleout.f1
-ms.openlocfilehash: 13f9a386b6ab60280edf2d8b494721dd233b042a
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 25f550f711364760de9cc07608b46532cfa34219
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100347414"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101839001"
 ---
 # <a name="run-packages-in-integration-services-ssis-scale-out"></a>Exécuter des packages dans Integration Services (SSIS) Scale Out
 
@@ -125,6 +125,9 @@ Pour redéfinir le mode d’exécution par défaut afin que les packages ne soie
 
 ## <a name="run-package-in-sql-server-agent-job"></a><a name="sql_agent"></a> Exécuter le package dans le travail de SQL Server Agent
 Dans un travail SQL Server Agent, vous pouvez exécuter un package SSIS en tant qu’étape du travail. Pour exécuter le package dans Scale-out, définissez le mode d’exécution par défaut sur **Scale-out**. Une fois le mode d’exécution par défaut défini sur **Scale-out**, les packages dans les travaux SQL Server Agent sont exécutés en mode Scale-out.
+
+> [!NOTE]
+> Vous ne pouvez pas arrêter l’exécution du package Scale Out en annulant le travail SQL Server Agent. Pour arrêter l’exécution Scale Out, nous vous recommandons d’utiliser la procédure stockée catalog.stop_operation ou d’utiliser le volet **Opérations actives**. 
 
 ## <a name="next-steps"></a>Étapes suivantes
 -   [Résoudre les problèmes de Scale Out](troubleshooting-scale-out.md)

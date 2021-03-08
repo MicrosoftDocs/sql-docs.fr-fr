@@ -27,14 +27,14 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: v-daenge
 ms.custom: seo-lt-2019
-ms.date: 09/11/2020
+ms.date: 02/24/2021
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017'
-ms.openlocfilehash: 87aa8b901c24839aa23b75a318b7a47e3d52f40e
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: c74a2f03c36449bc597d699edb008206c76d7448
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100349968"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101839019"
 ---
 # <a name="bcp-utility"></a>Utilitaire bcp
 
@@ -219,8 +219,8 @@ Indique que la ou les valeurs d'identité figurant dans le fichier de données i
  Ce commutateur est utilisé par le client durant la connexion à Azure SQL Database ou à Azure Synapse Analytics pour faire en sorte que l’utilisateur soit authentifié à l’aide de l’authentification Azure Active Directory. Le commutateur -G nécessite la [version 14.0.3008.27 ou ultérieure](https://go.microsoft.com/fwlink/?LinkID=825643). Pour déterminer votre version, exécutez bcp -v. Pour plus d’informations, consultez [Utiliser l’authentification Azure Active Directory pour l’authentification auprès de SQL Database ou Azure Synapse Analytics](/azure/sql-database/sql-database-aad-authentication). 
 
 > [!IMPORTANT]
-> L’option **-G** s’applique uniquement à Azure SQL Database et à Azure Data Warehouse.
-> L’authentification intégrée et interactive AAD n’est actuellement pas prise en charge sur Linux ou macOS.
+> L’option **-G** s’applique uniquement à Azure SQL Database et à Azure Synapse Analytics.
+> L’authentification interactive AAD n’est actuellement prise en charge ni sur Linux ni sur macOS. L’authentification intégrée AAD requiert [Microsoft ODBC Driver 17 pour SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) version 17.6.1 ou ultérieure et un [environnement Kerberos correctement configuré](../connect/odbc/linux-mac/using-integrated-authentication.md#configure-kerberos).
 
 > [!TIP]
 > Pour vérifier si votre version de BCP comprend la prise en charge de type d’authentification Azure Active Directory (AAD), tapez **BCP--** (BCP \<space>\<dash>\<dash>) et vérifiez que -G apparait dans la liste des arguments disponibles.

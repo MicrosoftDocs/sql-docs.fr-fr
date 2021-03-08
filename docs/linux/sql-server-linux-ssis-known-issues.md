@@ -8,12 +8,12 @@ ms.date: 06/06/2018
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: 0c95b3a843cbec0e703efea846b9c80f99b9dc41
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: ce07fb02a81b4e44375d80f643713b9a0b62d80d
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100346232"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101838994"
 ---
 # <a name="limitations-and-known-issues-for-ssis-on-linux"></a>Limitations et problèmes connus pour SSIS sur Linux
 
@@ -94,7 +94,7 @@ Les tâches de plan de maintenance suivantes sont prises en charge sur Linux :
 | Composant | Limites |
 |------------|---|
 | Source et destination ADO.NET | Ne prend en charge que le fournisseur de données SQLClient. |
-| Source et destination fichier plat | Ne prend en charge que les chemins d’accès aux fichiers de style Windows auxquels la règle de mappage de chemin d’accès par défaut est appliquée. Par exemple `D:\home\ssis\travel.csv` devient `/home/ssis/travel.csv`. |
+| Source et destination fichier plat | 1. Ne prend en charge que les chemins d’accès aux fichiers de style Windows auxquels la règle de mappage de chemin d’accès par défaut est appliquée. Par exemple `D:\home\ssis\travel.csv` devient `/home/ssis/travel.csv`. 2. Le partage de fichiers Azure monté sur Red Hat 7 n’est pas pris en charge. |
 | Source OData | Ne prend en charge que l’authentification de base. |
 | Source et destination ODBC | Prend en charge les pilotes ODBC Unicode 64 bits sur Linux. Dépend du gestionnaire de pilotes UnixODBC sur Linux. |
 | Source et destination OLE DB | Ne prend en charge que SQL Server Native Client 11.0 et Fournisseur Microsoft OLE DB pour SQL Server. |

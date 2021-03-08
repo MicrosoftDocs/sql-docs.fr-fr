@@ -1,26 +1,28 @@
 ---
-title: Superviser et dépanner PolyBase | Microsoft Docs
+title: Superviser et dépanner PolyBase
 description: Pour résoudre les problèmes de PolyBase, utilisez ces vues et vues de gestion dynamique. Affichez le plan de requête PolyBase, supervisez les nœuds dans un groupe PolyBase et configurez la haute disponibilité des nœuds de nom Hadoop.
-ms.date: 04/23/2019
+ms.date: 02/17/2021
 ms.prod: sql
 ms.technology: polybase
 ms.topic: conceptual
+dev_langs:
+- TSQL
+- XML
 f1_keywords:
 - PolyBase, monitoring
 - PolyBase, performance monitoring
 helpviewer_keywords:
 - PolyBase, troubleshooting
-ms.assetid: f119e819-c3ae-4e0b-a955-3948388a9cfe
 author: MikeRayMSFT
 ms.author: mikeray
 ms.reviewer: ''
 monikerRange: '>= sql-server-linux-ver15 || >= sql-server-2016'
-ms.openlocfilehash: 5945f88320f01f6ce431bea79483528bf8dbeb64
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 5306f392623bebdb08d17b704e12b06c5ce9e8fa
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100351753"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101835259"
 ---
 # <a name="monitor-and-troubleshoot-polybase"></a>Superviser et dépanner PolyBase
 
@@ -171,7 +173,7 @@ Surveillez et résolvez les problèmes des requêtes PolyBase à l’aide des vu
    ORDER BY total_elapsed_time DESC;  
    ```  
 
-## <a name="to-view-the--polybase-query-plan-to-be-changed"></a>Pour voir le plan de requête PolyBase (à modifier) 
+## <a name="to-view-the-polybase-query-plan-to-be-changed"></a>Pour afficher le plan de requête PolyBase (à modifier) 
 
 1. Dans SSMS, activez **Inclure le plan d’exécution réel** (Ctrl + M) et exécutez la requête.
 
@@ -256,12 +258,37 @@ Après avoir configuré un ensemble d’ordinateurs dans le cadre d’un groupe 
 
 De nos jours, PolyBase n’interagit pas avec les services de haute disponibilité des nœuds de nom tels que Zookeeper ou Knox. Toutefois, vous pouvez utiliser une solution de contournement éprouvée pour fournir cette fonctionnalité.
 
-Solution de contournement : utiliser le nom DNS pour rediriger les connexions vers le nom de nœud actif. Pour ce faire, vous devez vous assurer que la source de données externe utilise un nom DNS pour communiquer avec le nom de nœud. Quand le basculement du nom de nœud se produit, vous devez changer l’adresse IP associée au nom DNS utilisé dans la définition de la source de données externe. Cette opération redirige toutes les nouvelles connexions vers le nœud de nom correct. Les connexions existantes échouent quand le basculement se produit. Pour automatiser ce processus, une « pulsation » peut exécuter un ping sur le nom de nœud actif. Si la pulsation échoue, il est à supposer qu’un basculement s’est produit avec un basculement automatiquement vers l’adresse IP des bases de données secondaires.
+Cette solution consiste à utiliser le nom DNS pour rediriger les connexions vers le nom de nœud actif. Pour ce faire, vous devez vous assurer que la source de données externe utilise un nom DNS pour communiquer avec le nom de nœud. Quand le basculement du nom de nœud se produit, vous devez changer l’adresse IP associée au nom DNS utilisé dans la définition de la source de données externe. Cette opération redirige toutes les nouvelles connexions vers le nœud de nom correct. Les connexions existantes échouent quand le basculement se produit. Pour automatiser ce processus, une « pulsation » peut exécuter un ping sur le nom de nœud actif. Si la pulsation échoue, il est à supposer qu’un basculement s’est produit avec un basculement automatiquement vers l’adresse IP des bases de données secondaires.
+
+## <a name="log-file-locations"></a>Emplacements des fichiers journaux
+
+Dans les serveurs Windows, les journaux se trouvent dans le chemin d’accès du répertoire d’installation, par défaut : c:\Program Files\Microsoft SQL Server\MSSQLnn.InstanceName\MSSQL\Log\Polybase\.
+
+Dans les serveurs Linux, les journaux se trouvent par défaut dans /var/opt/mssql/log/polybase.
+
+Fichiers journaux de déplacement des données PolyBase :  
+- <INSTANCENAME>_<SERVERNAME>_Dms_errors.log 
+- <INSTANCENAME>_<SERVERNAME>_Dms_movement.log 
+
+Fichiers journaux du service de moteur PolyBase :  
+- <INSTANCENAME>_<SERVERNAME>_DWEngine_errors.log 
+- <INSTANCENAME>_<SERVERNAME>_DWEngine_movement.log 
+- <INSTANCENAME>_<SERVERNAME>_DWEngine_server.log 
+
+Dans Windows, les fichiers journaux Java PolyBase :
+- <SERVERNAME> Dms polybase.log
+- <SERVERNAME>_DWEngine_polybase.log
+ 
+Dans Linux, les fichiers journaux Java PolyBase :
+- /var/opt/mssql-extensibility/hdfs_bridge/log/hdfs_bridge_pdw.log
+- /var/opt/mssql-extensibility/hdfs_bridge/log/hdfs_bridge_dms.log
+
 
 ## <a name="error-messages-and-possible-solutions"></a>Messages d’erreur et solutions possibles
 
-Pour résoudre les erreurs de table externe, consultez le blog de Murshed Zaman [https://blogs.msdn.microsoft.com/sqlcat/2016/06/21/polybase-setup-errors-and-possible-solutions/](/archive/blogs/sqlcat/polybase-setup-errors-and-possible-solutions "Erreurs de configuration de PolyBase et solutions possibles").
+Pour des scénarios de dépannage courants, consultez [Erreurs PolyBase et solutions possibles](polybase-errors-and-possible-solutions.md).
 
 ## <a name="see-also"></a>Voir aussi
 
-[Résoudre les problèmes de connectivité de PolyBase Kerberos](polybase-troubleshoot-connectivity.md)
+[Résoudre des problèmes de connectivité de PolyBase Kerberos](polybase-troubleshoot-connectivity.md)   
+[Erreurs de configuration de PolyBase et solutions possibles](polybase-errors-and-possible-solutions.md)   

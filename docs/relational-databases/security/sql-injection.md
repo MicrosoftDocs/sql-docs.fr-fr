@@ -14,12 +14,12 @@ ms.assetid: eb507065-ac58-4f18-8601-e5b7f44213ab
 author: VanMSFT
 ms.author: vanto
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: ea1d2300b2ff2431d58b8fb2d6139ecad130a965
-ms.sourcegitcommit: 1a544cf4dd2720b124c3697d1e62ae7741db757c
+ms.openlocfilehash: 074033472f37787c0bcf1da6f261a5f835f0cbec
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97432303"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101838974"
 ---
 # <a name="sql-injection"></a>l’injection de code SQL ;
 [!INCLUDE[SQL Server Azure SQL Database Synapse Analytics PDW ](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -94,7 +94,7 @@ SELECT * FROM OrdersTable WHERE ShipCity = 'Redmond';drop table OrdersTable--'
 |---------------------|------------------------------|  
 |**;**|Délimiteur de requête|  
 |**'**|Délimiteur de chaîne de données de caractères|  
-|**--**|Délimiteur de chaîne de données de caractères<br />.|  
+|**--**|Délimiteur de commentaire sur une seule ligne. Le texte suivant **--** jusqu’à la fin de cette ligne n’est pas évalué par le serveur.|  
 |**/\**_ ... _*\*/**|Délimiteurs de commentaire. Le serveur n’évalue pas le texte qui figure entre les caractères **/\* *_ et _* \*/** .|  
 |**xp_**|Figure au début du nom des procédures stockées étendues de catalogue, telles que `xp_cmdshell`.|  
   

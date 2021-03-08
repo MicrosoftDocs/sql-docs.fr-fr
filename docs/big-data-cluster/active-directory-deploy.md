@@ -5,16 +5,16 @@ description: Apprenez à mettre à niveau des clusters Big Data SQL Server dans 
 author: cloudmelon
 ms.author: melqin
 ms.reviewer: mikeray
-ms.date: 02/11/2021
+ms.date: 02/19/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 799afc246b106c4b49d6aba44f8d26a761d6c2cc
-ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
+ms.openlocfilehash: 9417444a1c9d28181529ace79b6dcff6162b7f2d
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "100343959"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837029"
 ---
 # <a name="deploy-sql-server-big-data-cluster-in-active-directory-mode"></a>Déployer un cluster Big Data SQL Server en mode Active Directory
 
@@ -27,6 +27,21 @@ Pour le déploiement du cluster BDC avec l’intégration Active Directory, des 
 En utilisant le profil `kubeadm-prod` (ou `openshift-prod` à partir de la version CU5), vous disposez automatiquement des espaces réservés aux informations relatives à la sécurité et aux points de terminaison requises pour l’intégration AD.
 
 De plus, vous devez fournir des informations d’identification que les [!INCLUDE[big-data-clusters](../includes/ssbigdataclusters-nover.md)] utiliseront pour créer les objets nécessaires dans Active Directory. Ces informations d’identification sont fournies en tant que variables d’environnement.
+
+### <a name="traffic-and-ports"></a>Trafic et ports
+
+Vérifiez que les pare-feux ou les applications tierces autorisent les ports requis pour la communication Active Directory. 
+
+![Diagramme du trafic entre le cluster Big Data et Active Directory. Le contrôleur, le service de support de sécurité et d’autres services de cluster parlent via LDAP/Kerberos à des contrôleurs de domaine. Le service proxy DNS du BDC parle via DNS aux serveurs DNS.](media/big-data-cluster-overview/big-data-cluster-active-directory-dns-traffic-ports.png)
+
+Les requêtes sont effectuées sur ces protocoles vers et depuis les services de cluster Kubernetes vers le domaine Active Directory. elles doivent donc être entrantes et sortantes dans n’importe quel pare-feu ou application tierce écoutant sur les ports requis pour TCP et UDP. Les numéros de port standard que Active Directory utilise :
+
+| Service | Port |
+|:---|:---|
+| DNS | 53 |
+| LDAP <BR> LDAPS | 389<BR> 636 |
+| Kerberos | 88 |
+| Port de catalogue global <BR>via LDAP<BR>via LDAPS |<BR> 3268 <BR> 3269 |
 
 ## <a name="set-security-environment-variables"></a>Définir des variables d’environnement de sécurité
 
@@ -54,12 +69,12 @@ L’intégration AD nécessite les paramètres suivants. Ajoutez ces paramètre
 
 - `security.activeDirectory.realm` **Paramètre facultatif** : Dans la majorité des cas, le domaine est égal au nom de domaine. Pour les cas où ils ne sont pas les mêmes, utilisez ce paramètre pour définir le nom du domaine (par exemple, `CONTOSO.LOCAL`). La valeur fournie pour ce paramètre doit être complète.
 
-- `security.activeDirectory.netbiosDomainName` **Paramètre facultatif** : Il s’agit du nom NetBIOS du domaine Active Directory. Dans la majorité des cas, ce nom correspond à la première étiquette du nom de domaine Active Directory. Pour les cas différents, utilisez ce paramètre pour définir le nom de domaine NETBIOS. Cette valeur ne doit pas contenir de points. Habituellement, ce nom est utilisé pour qualifier les comptes d’utilisateur dans le domaine. Par exemple, CONTOSO\user où CONTOSO est le nom de domaine NETBIOS.
+- `security.activeDirectory.netbiosDomainName` **Paramètre facultatif** : Il s’agit du nom NetBIOS du domaine Active Directory. Dans la majorité des cas, ce nom correspond à la première étiquette du nom de domaine AD. Pour les cas différents, utilisez ce paramètre pour définir le nom de domaine NETBIOS. Cette valeur ne doit pas contenir de points. Habituellement, ce nom est utilisé pour qualifier les comptes d’utilisateur dans le domaine. Par exemple, CONTOSO\utilisateur où CONTOSO est le nom de domaine NETBIOS.
 
   > [!NOTE]
   > La prise en charge d’une configuration dans laquelle le nom de domaine Active Directory est différent du nom **NetBIOS** du domaine Active Directory qui utilise *security.activeDirectory.netbiosDomainName* est activée depuis SQL Server 2019 CU9.
 
-- `security.activeDirectory.domainDnsName`: Nom du domaine DNS qui sera utilisé pour le cluster (par exemple, `contoso.local`).
+- `security.activeDirectory.domainDnsName` : nom du domaine DNS qui sera utilisé pour le cluster (par exemple, `contoso.local`).
 
 - `security.activeDirectory.clusterAdmins`: Ce paramètre prend un groupe AD. L’étendue du groupe AD doit être universelle ou globale. Les membres de ce groupe possèdent le rôle de cluster `bdcAdmin`, ce qui leur donne des autorisations d’administrateur dans le cluster. Ils disposent donc des [autorisations `sysadmin` dans SQL Server](../relational-databases/security/authentication-access/server-level-roles.md#fixed-server-level-roles), des [autorisations `superuser` dans HDFS](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsPermissionsGuide.html#The_Super-User) et des autorisations d’administrateurs lorsqu’ils sont connectés au point de terminaison du contrôleur.
 
@@ -70,7 +85,7 @@ L’intégration AD nécessite les paramètres suivants. Ajoutez ces paramètre
 
 Les groupes AD de cette liste sont associés au rôle de cluster Big Data `bdcUser` et doivent être autorisés à accéder à SQL Server (cf. [Autorisations SQL Server](../relational-databases/security/permissions-hierarchy-database-engine.md)) ou à HDFS (consultez [Guide des autorisations HDFS](https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HdfsPermissionsGuide.html#:~:text=Permission%20Checks%20%20%20%20Operation%20%20,%20%20N%2FA%20%2029%20more%20rows%20)). Lorsqu’ils sont connectés au point de terminaison du contrôleur, ces utilisateurs peuvent seulement lister les points de terminaison disponibles dans le cluster à l’aide de la commande `azdata bdc endpoint list`.
 
-Pour savoir comment mettre à jour les groupes AD en ce qui concerne ces paramètres, consultez [Gestion de l’accès au cluster Big Data en mode Active Directory](manage-user-access.md).
+Pour savoir comment mettre à jour les groupes AD en ce qui concerne ces paramètres, consultez [Gérer l’accès au cluster Big Data en mode Active Directory](manage-user-access.md).
 
   >[!TIP]
   >Pour activer l’expérience de navigation HDFS quand vous vous connectez au maître SQL Server dans Azure Data Studio, un utilisateur disposant du rôle bdcUser doit disposer des autorisations VIEW SERVER STATE, car Azure Data Studio utilise la DMV `sys.dm_cluster_endpoints` pour obtenir le point de terminaison de passerelle Knox requis pour se connecter à HDFS.
@@ -223,7 +238,7 @@ azdata bdc config replace -c custom-prod-kubeadm/control.json -j "$.security.act
 
 Vous devez maintenant avoir défini tous les paramètres requis pour un déploiement du cluster BDC avec l’intégration Active Directory.
 
-Vous pouvez maintenant déployer le cluster BDC intégré à Active Directory à l’aide de la commande [!INCLUDE [azure-data-cli-azdata](../includes/azure-data-cli-azdata.md)] et du profil de déploiement kubeadm-prod. Pour obtenir une documentation complète sur le déploiement des [!INCLUDE[big-data-clusters](../includes/ssbigdataclusters-nover.md)], consultez [Comment déployer des clusters Big Data SQL Server sur Kubernetes](deployment-guidance.md).
+Vous pouvez maintenant déployer le cluster BDC intégré à Active Directory à l’aide de la commande [!INCLUDE [azure-data-cli-azdata](../includes/azure-data-cli-azdata.md)] et du profil de déploiement kubeadm-prod. Pour obtenir une documentation complète sur le déploiement de [!INCLUDE[big-data-clusters](../includes/ssbigdataclusters-nover.md)], consultez [Comment déployer des clusters Big Data SQL Server sur Kubernetes](deployment-guidance.md).
 
 ## <a name="verify-reverse-dns-entry-for-domain-controller"></a>Vérifier l’entrée DNS inversée pour le contrôleur de domaine
 

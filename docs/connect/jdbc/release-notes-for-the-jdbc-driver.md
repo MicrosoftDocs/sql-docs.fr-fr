@@ -2,7 +2,7 @@
 title: Notes de publication pour le pilote JDBC
 description: Cet article répertorie les versions du pilote JDBC Microsoft pour SQL Server. Pour chaque version publiée, les modifications sont nommées et décrites.
 ms.custom: ''
-ms.date: 01/29/2021
+ms.date: 03/02/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.reviewer: ''
@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 074f211e-984a-4b76-bb15-ee36f5946f12
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 0ffc7d8e4090673f3fc8feb96aa3650d35361281
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: c394eaeb6ec8361dd429b944b128d19a0cf33319
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99234861"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837526"
 ---
 # <a name="release-notes-for-the-microsoft-jdbc-driver-for-sql-server"></a>Notes de publication du pilote Microsoft JDBC pour SQL Server
 
@@ -24,27 +24,42 @@ Cet article répertorie les versions du _pilote JDBC Microsoft pour SQL Server_.
 
 ## <a name="92"></a><a id="92"></a> 9.2
 
-**[![Télécharger](../../ssms/media/download-icon.png) Télécharger Microsoft JDBC Driver 9.2 pour SQL Server (zip)](https://go.microsoft.com/fwlink/?linkid=2153622)**  
-**[![Télécharger](../../ssms/media/download-icon.png) Télécharger Microsoft JDBC Driver 9.2 pour SQL Server (tar.gz)](https://go.microsoft.com/fwlink/?linkid=2153521)**  
+**[![Télécharger](../../ssms/media/download-icon.png) Télécharger Microsoft JDBC Driver 9.2.1 pour SQL Server (zip)](https://go.microsoft.com/fwlink/?linkid=2155948)**  
+**[![Télécharger](../../ssms/media/download-icon.png) Télécharger Microsoft JDBC Driver 9.2.1 pour SQL Server (tar.gz)](https://go.microsoft.com/fwlink/?linkid=2155949)**  
 
-Numéro de version : 9.2.0 Date de publication : 29 janvier 2021
+Numéro de version : 9.2.1  
+Publication : 2 mars 2021
 
 Si vous avez besoin de télécharger le pilote dans une langue autre que celle détectée, vous pouvez utiliser ces liens directs.  
-Pour télécharger le pilote sous forme de fichier zip : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x40a)  
-Pour télécharger le pilote sous forme de fichier tar.gz : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x40a)  
+Pour télécharger le pilote sous forme de fichier zip : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x40a)  
+Pour télécharger le pilote sous forme de fichier tar.gz : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x40a)  
 
 ### <a name="compliance"></a>Conformité
 
 | Modification de conformité | Détails |
 | :---------------- | :------ |
-| Téléchargez les dernières mises à jour pour JDBC Driver 9.2. | &bull; &nbsp; [GitHub, 9.2.0](https://github.com/Microsoft/mssql-jdbc/releases/tag/v9.2.0)<br/>&bull; &nbsp; [Maven Central](https://search.maven.org/search?q=g:com.microsoft.sqlserver) |
-| Entièrement conforme à la spécification de l’API JDBC 4.2. | Les fichiers JAR dans le package 9.2 sont nommés en fonction de la compatibilité avec les versions de Java.<br/><br/>Par exemple, le fichier mssql-jdbc-9.2.0.jre15.jar du package 9.2 doit être utilisé avec Java 15. |
+| Téléchargez les dernières mises à jour pour JDBC Driver 9.2. | &bull; &nbsp; [GitHub, 9.2.1](https://github.com/Microsoft/mssql-jdbc/releases/tag/v9.2.1)<br/>&bull; &nbsp; [Maven Central](https://search.maven.org/search?q=g:com.microsoft.sqlserver) |
+| Entièrement conforme à la spécification de l’API JDBC 4.2. | Les fichiers JAR dans le package 9.2 sont nommés en fonction de la compatibilité avec les versions de Java.<br/><br/>Par exemple, le fichier mssql-jdbc-9.2.1.jre15.jar du package 9.2 doit être utilisé avec Java 15. |
 | Compatible avec les versions 15.0, 11.0 et 1.8 du Kit de développement Java (JDK). | Microsoft JDBC Driver 9.2 pour SQL Server est maintenant compatible avec la version 15.0 du Kit de développement Java, en plus des versions 11.0 et 1.8. |
 | &nbsp; | &nbsp; |
 
 ### <a name="releases"></a>Versions
 
-Numéro de version : 9.2.0 Date de publication : 29 janvier 2021
+Numéro de version : 9.2.1  
+Publication : 2 mars 2021
+
+Problèmes résolus dans 9.2.1 :
+
+Résolution d’un problème lié à la clé secrète client vide pendant l’authentification ActiveDirectoryServicePrincipal dans l’environnement Azure.
+
+Numéro de version : 9.2.0  
+Publication : 29 janvier 2021
+
+**[![Télécharger](../../ssms/media/download-icon.png) Télécharger Microsoft JDBC Driver 9.2.0 pour SQL Server (zip)](https://go.microsoft.com/fwlink/?linkid=2153622)**  
+**[![Télécharger](../../ssms/media/download-icon.png) Télécharger Microsoft JDBC Driver 9.2.0 pour SQL Server (tar.gz)](https://go.microsoft.com/fwlink/?linkid=2153521)**  
+
+Fichier zip : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2153622&clcid=0x40a)  
+Fichier tar.gz : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2153521&clcid=0x40a)  
 
 ### <a name="support-for-jdk-15"></a>Prise en charge de JDK 15
 

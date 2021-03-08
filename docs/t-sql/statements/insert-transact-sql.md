@@ -33,12 +33,12 @@ ms.assetid: 1054c76e-0fd5-4131-8c07-a6c5d024af50
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: b5a6fd7131b63741a82c120e1e0b222405865a9d
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 505cda4f226945cd8788e777b8ac1ea35a3aa47e
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99237175"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837719"
 ---
 # <a name="insert-transact-sql"></a>INSERT (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -210,7 +210,10 @@ Clause OUTPUT
  Si les valeurs de la liste de valeurs ne sont pas dans le même ordre que les colonnes de la table ou n’ont pas de valeur pour chaque colonne de la table, *column_list* doit être utilisé afin de spécifier de manière explicite la colonne qui stocke chaque valeur entrante.  
   
  Vous pouvez utiliser le constructeur ROW [!INCLUDE[tsql](../../includes/tsql-md.md)] (également appelé constructeur de valeurs de table) pour spécifier plusieurs lignes dans une seule instruction INSERT. Le constructeur ROW est constitué d'une seule clause VALUES comportant plusieurs listes de valeurs placées entre parenthèses et séparées par une virgule. Pour plus d’informations, consultez [Constructeur de valeurs de table &#40;Transact-SQL&#41;](../../t-sql/queries/table-value-constructor-transact-sql.md).  
-  
+
+> [!NOTE]  
+> Dans Azure Synapse Analytics, les valeurs d’insertion ne peuvent être que des valeurs littérales constantes ou des références de variables. Pour insérer un non littéral, définissez une variable sur une valeur non constante et insérez la variable.
+
  DEFAULT  
  Force le [!INCLUDE[ssDE](../../includes/ssde-md.md)] à charger la valeur par défaut définie pour une colonne. S'il n'existe pas de valeur par défaut pour la colonne et si celle-ci autorise les valeurs NULL, NULL est inséré. Pour une colonne définie avec le type de données **timestamp**, la valeur d’horodateur suivante est insérée. DEFAULT n'est pas valide pour une colonne d'identité.  
   

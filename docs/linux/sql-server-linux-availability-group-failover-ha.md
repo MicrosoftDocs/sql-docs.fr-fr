@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: ''
-ms.openlocfilehash: 52fbeee33dd992f4916f33a1545b59265a8b47f9
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 863278eacebc4b405a4a44e72c4318e950d0cc1d
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100345654"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101837667"
 ---
 # <a name="always-on-availability-group-failover-on-linux"></a>Basculement du groupe de disponibilité Always On sur Linux
 
@@ -50,17 +50,18 @@ Pour basculer manuellement une ressource du groupe de disponibilité nommée *ag
 - **Exemple RHEL/Ubuntu**
 
    ```bash
-   sudo pcs resource move ag_cluster-master nodeName2 --master
+   sudo pcs resource move ag_cluster-master nodeName2 --master --lifetime=30S
    ```
 
 - **Exemple SLES**
 
    ```bash
-   crm resource migrate ag_cluster nodeName2
+   crm resource migrate ag_cluster nodeName2 --lifetime=30S
    ```
 
 >[!IMPORTANT]
->Quand vous faites basculer manuellement une ressource, vous devez supprimer une contrainte d’emplacement qui est automatiquement ajoutée.
+>Lorsque vous utilisez l’option --lifetime, la contrainte d’emplacement créée pour déplacer la ressource est temporaire par nature et est valide pendant 30 secondes dans l’exemple précédent.
+>Notez que la contrainte temporaire n’est pas effacée automatiquement et peut apparaître dans la liste de contraintes, mais comme une contrainte expirée. Les contraintes expirées n’affectent pas le comportement de basculement du cluster pacemaker. Si vous n’utilisez pas l’option --lifetime pendant le déplacement de la ressource, vous devez supprimer une contrainte d’emplacement qui est automatiquement ajoutée comme indiqué ci-dessous.
 
 #### <a name="step-2-remove-the-location-constraint"></a><a name="removeLocConstraint"> </a> Étape 2. Supprimer la contrainte d’emplacement
 

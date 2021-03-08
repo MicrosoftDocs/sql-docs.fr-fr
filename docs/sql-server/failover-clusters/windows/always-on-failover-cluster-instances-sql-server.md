@@ -20,12 +20,12 @@ helpviewer_keywords:
 ms.assetid: 86a15b33-4d03-4549-8ea2-b45e4f1baad7
 author: cawrites
 ms.author: chadam
-ms.openlocfilehash: 2f87ae98424eef3f6aeadca1f11da6d9d1f2b403
-ms.sourcegitcommit: 8bdb5a51f87a6ff3b94360555973ca0cd0b6223f
+ms.openlocfilehash: acbe6e9241f003f100bedc3fd01d297fb91e8141
+ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100549385"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101836648"
 ---
 # <a name="always-on-failover-cluster-instances-sql-server"></a>Instances de cluster de basculement Always On (SQL Server)
 [!INCLUDE [SQL Server](../../../includes/applies-to-version/sqlserver.md)]
@@ -129,7 +129,7 @@ ms.locfileid: "100549385"
  Une instance FCI se compose d'un ensemble de serveurs physiques (nœuds) qui présentent une configuration matérielle similaire, ainsi qu'une configuration logicielle identique qui inclut la version du système d'exploitation et le niveau de correctif, la version de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] , le niveau de correctif, les composants et le nom de l'instance. Une configuration logicielle identique est nécessaire pour garantir le fonctionnement intégral de l'instance FCI au moment du basculement entre les nœuds.  
   
  Groupe de ressources WSFC  
- Une instance [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] FCI s'exécute dans un groupe de ressources WSFC. Chaque nœud du groupe de ressources conserve une copie synchronisée des paramètres de configuration, ainsi que les clés de Registre ayant fait l'objet d'un point de contrôle, pour garantir la fonctionnalité complète de l'instance FCI suite à un basculement. Seul un des nœuds du cluster possède le groupe de ressources à la fois (nœud actif). Le service WSFC gère le cluster de serveurs, la configuration de quorum, la stratégie de basculement et les opérations de basculement, ainsi que les adresses IP virtuelles et le nom VNN de l'instance FCI. En cas de défaillances (défaillances matérielles, défaillances du système d'exploitation, d'une application ou d'un service) ou lors d'une mise à niveau planifiée, la propriété du groupe de ressources est transférée vers un autre nœud de l'instance FCI. Le nombre de nœuds pris en charge dans un groupe de ressources WSFC dépend de l'édition de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] que vous utilisez. De plus, le même cluster WSFC peut exécuter plusieurs instances FCI (plusieurs groupes de ressources), selon la capacité du matériel, notamment le processeur, la mémoire et le nombre de disques.  
+ Une instance [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] FCI s'exécute dans un groupe de ressources WSFC. Chaque nœud du groupe de ressources conserve une copie synchronisée des paramètres de configuration, ainsi que les clés de Registre ayant fait l'objet d'un point de contrôle, pour garantir la fonctionnalité complète de l'instance FCI suite à un basculement. Seul un des nœuds du cluster possède le groupe de ressources à la fois (nœud actif). Le service WSFC gère le cluster de serveurs, la configuration de quorum, la stratégie de basculement et les opérations de basculement, ainsi que les adresses IP virtuelles et le nom VNN de l'instance FCI. En cas de défaillance (défaillances matérielles, défaillances du système d'exploitation, d'une application ou d'un service) ou lors d'une mise à niveau planifiée, la propriété du groupe de ressources est transférée vers un autre nœud dans le FCI. Le nombre de nœuds pris en charge dans un groupe de ressources WSFC dépend de votre édition [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. De plus, le même cluster WSFC peut exécuter plusieurs instances FCI (plusieurs groupes de ressources), selon la capacité du matériel, notamment le processeur, la mémoire et le nombre de disques.  
   
  Binaires de SQL Server  
  Les binaires de produit sont installés localement sur chaque nœud de l'instance FCI, un processus similaire aux installations autonomes de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Toutefois, lors du démarrage, les services ne sont pas démarrés automatiquement ; ils sont gérés par WSFC.  
