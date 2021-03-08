@@ -38,12 +38,12 @@ ms.assetid: aecc2f73-2ab5-4db9-b1e6-2f9e3c601fb9
 author: XiaoyuMSFT
 ms.author: xiaoyul
 monikerRange: =azure-sqldw-latest
-ms.openlocfilehash: 49e71e733797e2474721c251b9c52ff6f07c04fb
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 60f460c06c89d1d9b01ed5f19f705cec745dce09
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101839356"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247354"
 ---
 # <a name="create-materialized-view-as-select-transact-sql"></a>CREATE MATERIALIZED VIEW AS SELECT (Transact-SQL)  
 
@@ -233,8 +233,8 @@ REVERT;
 -- Grant User_B the required permissions to create a materialized view for User_A on T1 and T2 owned by User_A
 GRANT CREATE VIEW to User_B;
 GRANT Control ON SCHEMA::User_A to User_B;
-GRANT SELECT ON OBJECT::User_A.T3 to User_B;
-GRANT SELECT ON OBJECT::User_A.T4 to User_B;
+GRANT REFERENCES ON OBJECT::User_A.T1 to User_B;
+GRANT REFERENCES ON OBJECT::User_A.T2 to User_B;
 
 -- User_B creates a materialized view.  Both the view and the base tables are owned by User_A.
 EXECUTE AS USER = 'User_B';  
