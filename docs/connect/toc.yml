@@ -272,7 +272,7 @@
                   href: ado-net/sql/tutorial-always-encrypted-enclaves-develop-net-apps.md
                 - name: Utilisation d’Azure Key Vault avec Always Encrypted
                   href: ado-net/sql/azure-key-vault-example.md
-                - name: Utilisation d’Azure Key Vault avec Always Encrypted avec des enclaves sécurisées
+                - name: Utilisation d’Azure Key Vault avec Always Encrypted avec enclaves sécurisées
                   href: ado-net/sql/azure-key-vault-enclave-example.md
             - name: Découverte et classification des données dans SqlClient
               href: ../connect/ado-net/sql/data-classification.md
@@ -313,7 +313,7 @@
         - name: Recherche d’informations supplémentaires
           href: ../connect/jdbc/finding-additional-jdbc-driver-information.md
         - name: Forum Aux Questions (FAQ)
-          href: ../connect/jdbc/frequently-asked-questions-faq-for-jdbc-driver.md
+          href: ../connect/jdbc/frequently-asked-questions-faq-for-jdbc-driver.yml
         - name: Dépendances des fonctionnalités
           href: ../connect/jdbc/feature-dependencies-of-microsoft-jdbc-driver-for-sql-server.md
     - name: Informations de référence sur l'API
@@ -2941,7 +2941,7 @@
         - name: Problèmes connus
           href: ../connect/odbc/linux-mac/known-issues-in-this-version-of-the-driver.md
         - name: Forum Aux Questions (FAQ)
-          href: ../connect/odbc/linux-mac/frequently-asked-questions-faq-for-odbc-linux.md
+          href: ../connect/odbc/linux-mac/frequently-asked-questions-faq-for-odbc-linux.yml
     - name: Windows
       items:
         - name: Pilote Microsoft ODBC pour SQL Server sur Windows
@@ -5735,7 +5735,7 @@
           href: ../connect/php/logging-activity.md
         - name: Utilisation d’Always Encrypted avec Microsoft Drivers for PHP for SQL Server
           href: ../connect/php/using-always-encrypted-php-drivers.md
-        - name: Always Encrypted avec des enclaves sécurisées avec les pilotes PHP pour SQL Server
+        - name: Always Encrypted avec enclaves sécurisées avec les pilotes PHP pour SQL Server
           href: ../connect/php/always-encrypted-secure-enclaves.md
         - name: Paramètres régionaux non-système
           href: ../connect/php/non-system-locale-settings.md

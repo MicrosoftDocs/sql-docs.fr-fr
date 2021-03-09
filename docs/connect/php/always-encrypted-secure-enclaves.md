@@ -1,5 +1,5 @@
 ---
-title: Always Encrypted avec des enclaves sécurisées avec les pilotes PHP
+title: Utilisation d’Always Encrypted avec enclaves sécurisées avec les pilotes PHP
 description: Découvrez comment utiliser Always Encrypted avec les enclaves sécurisées avec les pilotes Microsoft pour PHP pour SQL Server.
 ms.date: 01/31/2020
 ms.prod: sql
@@ -10,35 +10,38 @@ ms.topic: conceptual
 ms.reviewer: ''
 ms.author: v-daenge
 author: David-Engel
-ms.openlocfilehash: f407cae7fe7d53a7522e64f0bb26961ebeb4276f
-ms.sourcegitcommit: 8ffc23126609b1cbe2f6820f9a823c5850205372
+ms.openlocfilehash: c49d81783f82c41cd95e25b137807b006e5b2ad1
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2020
-ms.locfileid: "81632089"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464705"
 ---
-# <a name="using-always-encrypted-with-secure-enclaves-with-the-php-drivers-for-sql-server"></a>Utilisation d’Always Encrypted avec des enclaves sécurisées avec les pilotes PHP pour SQL Server
+# <a name="using-always-encrypted-with-secure-enclaves-with-the-php-drivers-for-sql-server"></a>Utilisation d’Always Encrypted avec enclaves sécurisées avec les pilotes PHP pour SQL Server
+
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
 
 ## <a name="applicable-to"></a>Applicable à
- -   Pilotes Microsoft 5.8.0 pour PHP pour SQL Server
- 
+
+- Pilotes Microsoft 5.8.0 pour PHP pour SQL Server
+
 ## <a name="introduction"></a>Introduction
 
-[Always Encrypted avec des enclaves sécurisées](../../relational-databases/security/encryption/always-encrypted-enclaves.md) est la deuxième itération de la fonctionnalité de Always Encrypted pour SQL Server. Always Encrypted avec des enclaves sécurisées permet aux utilisateurs d’effectuer des calculs riches sur les données chiffrées en créant une enclave sécurisée (une région de mémoire sur le serveur où les données chiffrées dans une base de données sont déchiffrées afin que des calculs puissent être effectués). Les opérations prises en charge incluent la comparaison et les critères spéciaux avec la clause `LIKE`.
+[Always Encrypted avec enclaves sécurisées](../../relational-databases/security/encryption/always-encrypted-enclaves.md) est la deuxième itération de la fonctionnalité Always Encrypted pour SQL Server. Always Encrypted avec enclaves sécurisées permet aux utilisateurs d’effectuer des calculs complexes sur des données chiffrées en créant une enclave sécurisée (une région de la mémoire sur le serveur où les données chiffrées dans une base de données sont déchiffrées pour les besoins de calculs). Les opérations prises en charge incluent la comparaison et les critères spéciaux avec la clause `LIKE`.
 
-## <a name="enabling-always-encrypted-with-secure-enclaves"></a>Activation d’Always Encrypted avec les enclaves sécurisées
+## <a name="enabling-always-encrypted-with-secure-enclaves"></a>Activation d’Always Encrypted avec des enclaves sécurisées
 
-Le support de Always Encrypted avec des enclaves sécurisées est disponible dans les pilotes PHP pour SQL Server à partir de 5.8.0. Always Encrypted avec des enclaves sécurisées requiert SQL Server 2019 ou version ultérieure et la version 17.4+ du pilote ODBC. Pour plus d’informations sur les exigences générales requises pour Always Encrypted avec les pilotes PHP pour SQL Server, consultez [ici](using-always-encrypted-php-drivers.md).
+La fonctionnalité Always Encrypted avec des enclaves sécurisées est prise en charge dans les pilotes PHP pour SQL Server 5.8.0 et les versions ultérieures. Always Encrypted avec des enclaves sécurisées nécessite SQL Server 2019 ou version ultérieure ainsi que le pilote ODBC version 17.4 ou ultérieure. Pour plus d’informations sur les exigences générales requises pour Always Encrypted avec les pilotes PHP pour SQL Server, consultez [ici](using-always-encrypted-php-drivers.md).
 
-Always Encrypted avec des enclaves sécurisées garantit la sécurité des données chiffrées en attestant l’enclave, c’est-à-dire en vérifiant l’enclave par rapport à un service d’attestation externe. Pour utiliser des enclaves sécurisées, le mot clé `ColumnEncryption` doit identifier le type et le protocole d’attestation ainsi que les données d’attestation associées, séparées par une virgule. La version 17.4 du pilote ODBC prend en charge uniquement la sécurité basée sur la virtualisation (VBS) et le protocole de service Guardian hôte (SGH) pour le type et le protocole d’enclave. Les données d’attestation associées sont l’URL du serveur d’attestation. Ainsi, les éléments suivants sont ajoutés à la chaîne de connexion :
+Always Encrypted avec des enclaves sécurisées garantit la sécurité des données chiffrées en attestant l’enclave, c’est-à-dire en vérifiant l’enclave par rapport à un service d’attestation externe. Pour utiliser des enclaves sécurisées, le mot clé `ColumnEncryption` doit identifier le type et le protocole d’attestation ainsi que les données d’attestation associées, séparées par une virgule. La version 17.4 du pilote ODBC prend en charge uniquement la sécurité basée sur la virtualisation (VBS) et le protocole de service Guardian hôte (SGH) pour le type et le protocole d’enclave. Les données d’attestation associées sont l’URL du serveur d’attestation. Le paramètre suivant est donc ajouté à la chaîne de connexion :
 
 ```
 ColumnEncryption=VBS-HGS,http://attestationserver.mydomain/Attestation
 ```
+
 Si le protocole est incorrect, le pilote ne le reconnaît pas, la connexion échoue et une erreur est renvoyée. Si seule l’URL d’attestation est incorrecte, la connexion est établie et une erreur est levée lors d’une tentative de calcul d’enclave, mais le comportement est identique à celui de Always Encrypted d’origine. La définition de `ColumnEncryption` sur `enabled` fournira des fonctionnalités de Always Encrypted régulières, mais toute tentative d’une opération avec une enclave renverra une erreur.
 
-Vous trouverez des informations détaillées sur la configuration de votre environnement pour prendre en charge Always Encrypted avec des enclaves sécurisées, notamment la configuration du service Guardian hôte et la création des clés de chiffrement requises, [ici](../../relational-databases/security/encryption/configure-always-encrypted-enclaves.md).
+Vous trouverez [ici](../../relational-databases/security/encryption/configure-always-encrypted-enclaves.md) des informations détaillées sur la configuration de votre environnement en vue de la prise en charge d’Always Encrypted avec des enclaves sécurisées, notamment sur la configuration du service Guardian hôte et la création des clés de chiffrement requises.
 
 ## <a name="examples"></a>Exemples
 
@@ -50,9 +53,10 @@ Les exemples suivants, un pour SQLSRV et un pour PDO_SQLSRV, créent une table a
 - Lors du passage de la chaîne de critères spéciaux en tant que paramètre pour les types char et NCHAR correspondants, le `SQLSRV_SQLTYPE_*` passé à `sqlsrv_query` ou `sqlsrv_prepare` doit spécifier la longueur de la chaîne à mettre en correspondance et non la taille de la colonne, car les types char et nchar sont des espaces blancs à la fin de la chaîne. Par exemple, lors de la correspondance de la chaîne `%abc%` par rapport à une colonne char(10), spécifiez `SQLSRV_SQLTYPE_CHAR(5)`. Si vous spécifiez à la place `SQLSRV_SQLTYPE_CHAR(10)`, la requête correspondra à `%abc%     ` (avec cinq espaces ajoutés) et les données de la colonne contenant moins de cinq espaces sont incompatibles (par conséquent `abcdef` ne correspondrait pas à `%abc%`, car le remplissage est composé de quatre espaces). Pour les chaînes Unicode, utilisez les fonctions `mb_strlen` ou `iconv_strlen` pour obtenir le nombre de caractères.
 - L’interface PDO n’autorise pas l’indication de la longueur d’un paramètre. Au lieu de cela, spécifiez une longueur de 0 ou `null` dans `PDOStatement::bindParam`. Si la longueur est définie explicitement sur un autre nombre, le paramètre est traité comme un paramètre de sortie.
 - Les critères spéciaux ne fonctionnent pas sur les types autres que des chaînes dans Always Encrypted.
-- La vérification des erreurs est exclue par souci de clarté. 
+- La vérification des erreurs est exclue par souci de clarté.
 
-Voici les données courantes pour les deux exemples :
+Les données suivantes sont courantes pour les deux exemples :
+
 ```php
 <?php
 // Data for testing - integer, datetime2, char, nchar, varchar, and nvarchar
@@ -101,7 +105,9 @@ $encryptQuery = " ALTER TABLE $myTable
                   ALTER DATABASE SCOPED CONFIGURATION CLEAR PROCEDURE_CACHE;";
 ?>
 ```
+
 ### <a name="sqlsrv"></a>SQLSRV
+
 ```php
 <?php
 // Specify Azure Key Vault credentials using the KeyStoreAuthentication, KeyStorePrincipalId, and KeyStoreSecret keywords
@@ -235,6 +241,7 @@ function getResults($stmt)
 ```
 
 ### <a name="pdo_sqlsrv"></a>PDO_SQLSRV
+
 ```php
 <?php
 // Specify Azure Key Vault credentials using the KeyStoreAuthentication, KeyStorePrincipalId, and KeyStoreSecret keywords
@@ -361,7 +368,9 @@ function getResults($stmt)
 }
 ?>
 ```
+
 Sortie :
+
 ```
 Test comparisons:
 1
@@ -390,9 +399,10 @@ zyxwv
 㬚㔈♠既
 㛜ꆶ㕸㔈♠既ꁺꖁ㓫ޘ갧ᛄ
 ```
-## <a name="see-also"></a>Voir aussi  
+
+## <a name="see-also"></a>Voir aussi
+
 [Guide de programmation pour le pilote SQL PHP](programming-guide-for-php-sql-driver.md)  
 [Informations de référence sur l’API du pilote SQLSRV](sqlsrv-driver-api-reference.md)  
 [Référence API du pilote PDO_SQLSRV](pdo-sqlsrv-driver-reference.md)  
 [Utilisation d’Always Encrypted avec les pilotes PHP pour SQL Server](using-always-encrypted-php-drivers.md)
-  

@@ -28,12 +28,12 @@ ms.reviewer: ''
 ms.custom: seo-lt-2019
 ms.date: 02/24/2021
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017'
-ms.openlocfilehash: 1b7d902064ef7a083b706af08730e91319be312f
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 928936a4b4ad6524e4d0817b94696353cb8427e9
+ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101836833"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102186596"
 ---
 # <a name="sqlcmd-utility"></a>Utilitaire sqlcmd
 
@@ -180,7 +180,8 @@ Ce commutateur est utilisé par le client durant la connexion à SQL Database ou
 
 > [!IMPORTANT]
 > L’option `-G` s’applique uniquement à Azure SQL Database et à Azure Synapse Analytics.
-> L’authentification interactive AAD n’est actuellement prise en charge ni sur Linux ni sur macOS. L’authentification intégrée AAD requiert [Microsoft ODBC Driver 17 pour SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) version 17.6.1 ou ultérieure et un [environnement Kerberos correctement configuré](../connect/odbc/linux-mac/using-integrated-authentication#configure-kerberos).
+> L’authentification interactive AAD n’est actuellement prise en charge ni sur Linux ni sur macOS. L’authentification intégrée AAD requiert [Microsoft ODBC Driver 17 pour SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) version 17.6.1 ou ultérieure et un [environnement Kerberos correctement configuré](../connect/odbc/linux-mac/using-integrated-authentication.md).
+
 
 - **Nom d’utilisateur et mot de passe Azure Active Directory :** 
 
@@ -199,7 +200,7 @@ Ce commutateur est utilisé par le client durant la connexion à SQL Database ou
 - **Intégrée à Azure Active Directory**
 
    Pour l’authentification intégrée à Azure Active Directory, spécifiez l’option **-G** sans nom d’utilisateur ni mot de passe.
-   *L’authentification intégrée AAD requiert [Microsoft ODBC Driver 17 pour SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) version 17.6.1 ou ultérieure et un [environnement Kerberos correctement configuré](../connect/odbc/linux-mac/using-integrated-authentication.md#configure-kerberos).*
+   *L’authentification intégrée AAD requiert [Microsoft ODBC Driver 17 pour SQL Server](../connect/odbc/download-odbc-driver-for-sql-server.md) version 17.6.1 ou ultérieure et un [environnement Kerberos correctement configuré](../connect/odbc/linux-mac/using-integrated-authentication.md).*
 
     ```cmd
     Sqlcmd -S Target_DB_or_DW.testsrv.database.windows.net -G
@@ -467,11 +468,10 @@ Nous vous recommandons d’utiliser un mot de passe fort.
   
 - **image**  
   
-> [!NOTE]  
->  Les types UDT peuvent être de longueur fixe, selon la mise en œuvre. Si cette longueur d’un type UDT à longueur fixe est inférieure à *largeur_affichage*, la valeur du type UDT retournée n’est pas affectée. Cependant, si la longueur est supérieure à *largeur_affichage*, la sortie est tronquée.  
-   
+> [!NOTE]
+> Les types UDT peuvent être de longueur fixe, selon la mise en œuvre. Si cette longueur d’un type UDT à longueur fixe est inférieure à *largeur_affichage*, la valeur du type UDT retournée n’est pas affectée. Cependant, si la longueur est supérieure à *largeur_affichage*, la sortie est tronquée.  
   
-> [!IMPORTANT]  
+> [!IMPORTANT]
 >  Utilisez l’option **-y 0** avec une extrême prudence, car elle peut créer de graves problèmes de performances sur le serveur et le réseau, en fonction de la taille des données retournées.  
   
  **-Y** _fixed_length_type_display_width_  
@@ -514,7 +514,7 @@ Nous vous recommandons d’utiliser un mot de passe fort.
  Répertorie tous les serveurs configurés localement et le nom des serveurs diffusant sur le réseau. Ce paramètre ne peut pas être utilisé en combinaison avec d'autres paramètres. Le nombre maximal de serveurs pouvant être répertoriés est de 3000. Si la liste de serveurs est tronquée en raison de la taille de la mémoire tampon, un message d'avertissement s'affiche.  
   
 > [!NOTE]  
->  Compte tenu de la nature de la diffusion sur les réseaux, il est possible que **sqlcmd** ne reçoive pas de réponse de tous les serveurs dans les délais impartis. Par conséquent, la liste des serveurs retournée peut varier à chaque invocation de cette option.  
+> Compte tenu de la nature de la diffusion sur les réseaux, il est possible que **sqlcmd** ne reçoive pas de réponse de tous les serveurs dans les délais impartis. Par conséquent, la liste des serveurs retournée peut varier à chaque invocation de cette option.  
   
  Si le paramètre optionnel **c** est spécifié, la sortie s'affiche sans les **serveurs** : la ligne d'en-tête et chaque ligne de serveur apparaissent sans espace de début. Cette présentation est qualifiée comme « propre ». Une sortie propre améliore les performances de traitement des langages de script.  
   

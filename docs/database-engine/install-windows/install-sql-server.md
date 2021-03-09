@@ -2,7 +2,7 @@
 title: Guide d’installation de SQL Server
 description: Index de contenu qui vous permet d’installer SQL Server et les composants associés à l’aide d’options telles que l’Assistant d’installation, l’invite de commandes ou sysprep.
 ms.custom: ''
-ms.date: 11/14/2019
+ms.date: 03/05/2021
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: install
@@ -15,12 +15,12 @@ ms.assetid: 0300e777-d56b-4d10-9c33-c9ebd2489ee5
 author: cawrites
 ms.author: chadam
 monikerRange: '>=sql-server-2016'
-ms.openlocfilehash: 8f123235f263abd05878e7be422c13fcf84825e8
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 4e433c16ba070d59c963589c8bceec371238ca38
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100353094"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464271"
 ---
 # <a name="sql-server-installation-guide"></a>Guide d’installation de SQL Server
 
@@ -58,11 +58,11 @@ Pour d’autres scénarios de déploiement, consultez :
 L’emplacement de téléchargement pour [!INCLUDE[ssnoversion](../../includes/ssnoversion-md.md)] dépend de l’édition :
 
 * Les **éditions de SQL Server Entreprise, Standard et Express** sont concédées sous licence pour une utilisation en production. Pour les éditions Enterprise et Standard, contactez votre revendeur de logiciels pour obtenir le support d’installation. Vous trouverez des informations sur l’achat et un annuaire de partenaires de Microsoft sur la [page Microsoft dédiée aux licences](https://www.microsoft.com/licensing/product-licensing/sql-server).
-* [Version gratuite - dernière version](https://www.microsoft.com/sql-server/sql-server-downloads)
-* [Version gratuite - autres versions](https://www.microsoft.com/evalcenter/evaluate-sql-server)
+* Si vous avez un contrat de licence en volume, par exemple un [Contrat Entreprise](https://www.microsoft.com/en-us/licensing/licensing-programs/enterprise), vous pouvez télécharger des logiciels à partir du [Centre de gestion des licences en volume (VLSC)](https://www.microsoft.com/licensing/servicecenter/default.aspx).
+* [Version gratuite - dernière version](https://www.microsoft.com/sql-server/sql-server-downloads).
+* [Version gratuite - autres versions](https://www.microsoft.com/evalcenter/evaluate-sql-server).
 
-
-Les liens suivants vous permettront de trouver d’autres composants SQL Server : 
+Les liens suivants vous permettront de trouver d’autres composants SQL Server :
 
 * [Ensemble des mises à jour cumulatives](https://sqlserverbuilds.blogspot.com/)
 * [SQL Server Reporting Services](https://www.microsoft.com/download/details.aspx?id=100122). 

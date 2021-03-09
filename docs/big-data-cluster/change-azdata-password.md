@@ -4,16 +4,16 @@ description: Mettre à jour le `AZDATA_PASSWORD` manuellement
 author: NelGson
 ms.author: negust
 ms.reviewer: mikeray
-ms.date: 03/01/2021
+ms.date: 03/05/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 062e574772c2a44b78772da4a979c81ed3deb959
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 71fe901915b533c4af25e98c3573aaaa00b82d53
+ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101836246"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102247385"
 ---
 # <a name="manually-update-azdata_password"></a>Mettre à jour manuellement `AZDATA_PASSWORD`
 
@@ -34,7 +34,7 @@ Si le cluster fonctionne en mode non Active Directory, mettez à jour le mot de 
    ```
 
    b. Décoder le secret au format Base64 :
-   
+
    ```bash
    echo <password from kubectl command>  | base64 --decode && echo
    ```
@@ -95,18 +95,18 @@ Après avoir effectué les étapes de mise à jour de AZDATA_PASSWORD, vous verr
 Suivez ces options pour mettre à jour manuellement le mot de passe pour [Grafana](app-monitor.md).
 
 1. L’utilitaire htpasswd est obligatoire. Vous pouvez l’installer sur n’importe quel ordinateur client.
-    
-    #### <a name="for-ubuntu"></a>[Pour Ubuntu](#tab/ubuntu) : 
-    ```bash
-    sudo apt install apache2-utils
-    ```
-    
-    #### <a name="for-rhel"></a>[Pour RHEL](#tab/rhel) : 
-    ```bash
-    sudo yum install httpd-tools
-    ```
-    
-    ---
+  
+### <a name="for-ubuntu"></a>[Pour Ubuntu](#tab/for-ubuntu)
+Sur Ubuntu Linux, vous pouvez utiliser ce qui suit :
+```bash
+sudo apt install apache2-utils
+```
+### <a name="for-rhel"></a>[Pour RHEL](#tab/for-rhel)
+Sur Red Hat Enterprise Linux, vous pouvez utiliser ce qui suit :
+```bash
+sudo yum install httpd-tools
+```
+---
 
 2. Générer le nouveau mot de passe. 
     
@@ -154,23 +154,19 @@ Suivez ces options pour mettre à jour manuellement le mot de passe pour [Grafan
      
     Si nécessaire, identifiez le nom de votre prod mgmtproxy.
     
-    #### <a name="for-windows"></a>[Pour Windows](#tab/windows) : 
-    Sur un serveur Windows, vous pouvez utiliser les éléments suivants :
-    
-    ```bash 
+    ### <a name="for-windows"></a>[Pour Windows](#tab/for-windows)
+     Sur un serveur Windows, vous pouvez utiliser les éléments suivants :
+    ```bash
     kubectl get pods -n <namespace> -l app=mgmtproxy
     ```
-    
-    #### <a name="for-linux"></a>[Pour Linux](#tab/linux) : 
-    Sur Linux, vous pouvez utiliser ce qui suit :
-    
+    ### <a name="for-linux"></a>[Pour Linux](#tab/for-linux)
+     Sur Linux, vous pouvez utiliser ce qui suit :
     ```bash
     kubectl get pods -n <namespace> | grep 'mgmtproxy'
     ```
-    
     ---
-    
-    Supprimez le pod mgmtproxy :
+
+     Supprimez le pod mgmtproxy :
     ```bash
     kubectl delete pod mgmtproxy-xxxxx -n mssql-clutser
     ```
@@ -178,13 +174,15 @@ Suivez ces options pour mettre à jour manuellement le mot de passe pour [Grafan
 7. Attendez que le pod mgmtproxy soit en ligne et que le tableau de bord Grafana démarre.  
  
     Le temps d’attente n’est pas trop long et le pod doit être en ligne en quelques secondes. Pour vérifier l’état du pod, vous pouvez utiliser la même commande `get pods` que celle utilisée à l’étape précédente. 
-    Si vous voyez que le pod mgmtproxy ne retourne pas rapidement à l’état Prêt, utilisez kubectl pour décrire le pod :
-    
+
+    Si vous voyez que le pod mgmtproxy ne retourne pas rapidement à l’état Prêt, utilisez kubectl pour décrire le pod : 
+
     ```bash
     kubectl describe pods mgmtproxy-xxxxx  -n <namespace>
-    ```
+    ```   
     
-    Pour la résolution des problèmes et la collecte de journaux supplémentaire, utilisez la commande Azure Data CLI `[azdata bdc debug copy-logs](../azdata/reference/reference-azdata-bdc-debug.md)`.
+    Pour la résolution des problèmes et la collecte de journaux supplémentaires, utilisez la commande Azure Data CLI [azdata bdc debug copy-logs](../azdata/reference/reference-azdata-bdc-debug.md).   
+
     
 8. Connectez-vous maintenant à Grafana à l’aide du nouveau mot de passe. 
 
@@ -198,7 +196,7 @@ Suivez ces options pour mettre à jour manuellement le mot de passe pour [Kibana
 
 1. Ouvrez l’URL Kibana.
     
-    Vous pouvez trouver l’URL du point de terminaison du service Kibana à partir de [Azure Data Studio](manage-with-controller-dashboard#controller-dashboard) ou utilisez la commande **azdata** suivante :
+    Vous pouvez trouver l’URL du point de terminaison du service Kibana à partir de [Azure Data Studio](manage-with-controller-dashboard.md#controller-dashboard) ou utilisez la commande **azdata** suivante :
     
     ```azurecli
     azdata login
@@ -230,6 +228,6 @@ Suivez ces options pour mettre à jour manuellement le mot de passe pour [Kibana
 
 ## <a name="see-also"></a>Voir aussi
 
-* [azdata bdc (Azure Data CLI)](../../sql/azdata/reference/reference-azdata-bdc.md) 
-* [Surveiller les applications avec azdata et le tableau de bord Grafana](app-monitor.md)  
-* [Extraire des journaux de cluster avec le tableau de bord Kibana](cluster-logging-kibana.md)  
+* [azdata bdc (Azure Data CLI)](../azdata/reference/reference-azdata-bdc.md)  
+* [Surveiller les applications avec azdata et le tableau de bord Grafana](app-monitor.md)   
+* [Extraire des journaux de cluster avec le tableau de bord Kibana](cluster-logging-kibana.md)   

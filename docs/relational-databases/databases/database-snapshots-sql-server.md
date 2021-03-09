@@ -19,12 +19,12 @@ helpviewer_keywords:
 ms.assetid: 00179314-f23e-47cb-a35c-da6f180f86d3
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: fdf81fde342a3c7f0e250d467e7b486d753a8588
-ms.sourcegitcommit: da88320c474c1c9124574f90d549c50ee3387b4c
+ms.openlocfilehash: c6ed1f27444b86ba79fd6c3178bc0029624b05d2
+ms.sourcegitcommit: ece104654ac14e10d32e59f45916fa944665f4df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85630815"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102474893"
 ---
 # <a name="database-snapshots-sql-server"></a>Instantanés de base de données (SQL Server)
 
@@ -137,7 +137,7 @@ Une capture instantanée de base de données est une vue statique en lecture seu
   
 -   La base de données source ne peut pas être configurée en tant que base de données partagée évolutive.  
 
--   La base de données source ne doit pas comporter de groupe de fichiers MEMORY_OPTIMIZED_DATA.  Pour plus d’informations, consultez la page [Fonctionnalités SQL Server non prises en charge pour l’OLTP en mémoire](../../relational-databases/in-memory-oltp/unsupported-sql-server-features-for-in-memory-oltp.md).
+-   Avant SQL Server 2019, la base de données source ne pouvait pas contenir de groupe de fichiers MEMORY_OPTIMIZED_DATA. La prise en charge des instantanés de base de données en mémoire a été ajoutée dans SQL Server 2019.
   
 > [!NOTE]  
 >  Tous les modes de récupération prennent en charge les instantanés de base de données.  
@@ -167,7 +167,7 @@ Une capture instantanée de base de données est une vue statique en lecture seu
   
 -   Les instantanés sont en lecture seule. Comme ils sont en lecture seule, ils ne peuvent pas être mis à niveau. C'est pourquoi, les instantanés de base de données ne sont pas viables après une mise à niveau.  
   
--   Les instantanés des bases de données **model**, **master**et **tempdb** sont interdits.  
+-   Les instantanés des bases de données **model**, **master** et **tempdb** sont interdits.  
   
 -   Vous ne pouvez pas modifier les spécifications des fichiers d'instantané de base de données.  
   

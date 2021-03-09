@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 074f211e-984a-4b76-bb15-ee36f5946f12
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: c394eaeb6ec8361dd429b944b128d19a0cf33319
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: b308bd441b063592a39dae710c782aaf826c3071
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101837526"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464787"
 ---
 # <a name="release-notes-for-the-microsoft-jdbc-driver-for-sql-server"></a>Notes de publication du pilote Microsoft JDBC pour SQL Server
 
@@ -34,7 +34,7 @@ Si vous avez besoin de télécharger le pilote dans une langue autre que celle d
 Pour télécharger le pilote sous forme de fichier zip : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2155948&clcid=0x40a)  
 Pour télécharger le pilote sous forme de fichier tar.gz : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2155949&clcid=0x40a)  
 
-### <a name="compliance"></a>Conformité
+### <a name="92-compliance"></a>Conformité de la version 9.2
 
 | Modification de conformité | Détails |
 | :---------------- | :------ |
@@ -43,7 +43,7 @@ Pour télécharger le pilote sous forme de fichier tar.gz : [Chinois (simplifi�
 | Compatible avec les versions 15.0, 11.0 et 1.8 du Kit de développement Java (JDK). | Microsoft JDBC Driver 9.2 pour SQL Server est maintenant compatible avec la version 15.0 du Kit de développement Java, en plus des versions 11.0 et 1.8. |
 | &nbsp; | &nbsp; |
 
-### <a name="releases"></a>Versions
+### <a name="92-releases"></a>Versions release 9.2
 
 Numéro de version : 9.2.1  
 Publication : 2 mars 2021
@@ -66,29 +66,32 @@ Fichier tar.gz : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid
 Microsoft JDBC Driver 9.2 pour SQL Server est maintenant compatible avec la version 15.0 du Kit de développement Java, en plus des versions 11.0 et 1.8.
 
 ### <a name="added-support-for-azure-active-directory-interactive-authentication"></a>Ajout de la prise en charge de l’authentification interactive Azure Active Directory
+
 | Ajout du type d’authentification | Détails |
 | :---------- | :------ |
 | Microsoft JDBC Driver 9.2 pour SQL Server prend maintenant en charge l’authentification auprès d’Azure Key Vault avec l’authentification interactive. | Consultez [Connexion avec l’authentification Azure Active Directory](../../connect/jdbc/connecting-using-azure-active-directory-authentication.md). |
 | &nbsp; | &nbsp; |
 
 ### <a name="added-support-for-azure-active-directory-service-principal-authentication"></a>Ajout de la prise en charge de l’authentification par principal de service Azure Active Directory
+
 | Ajout du type d’authentification | Détails |
 | :---------- | :------ |
 | Microsoft JDBC Driver 9.2 pour SQL Server prend maintenant en charge l’authentification auprès d’Azure Key Vault en utilisant l’ID et le secret client d’une identité de principal de service. | Consultez [Connexion avec l’authentification Azure Active Directory](../../connect/jdbc/connecting-using-azure-active-directory-authentication.md). |
 | &nbsp; | &nbsp; |
 
 ### <a name="updated-azure-key-vault-library-to-use-modern-azure-key-vault-library"></a>Mise à jour de la bibliothèque Azure Key Vault pour l’utilisation de la bibliothèque Azure Key Vault moderne
+
 | Modifications de la bibliothèque pour Azure Key Vault | Détails |
 | :------------------- | :------ |
 | Microsoft JDBC Driver 9.2 a migré de la bibliothèque Azure Key Vault de la génération précédente et des bibliothèques ADAL vers les équivalents modernes d’Azure Key Vault et d’Azure Identity. | **MODIFICATION DES DÉPENDANCES** - Veillez à mettre à jour les dépendances de vos applications si vous tirez parti de l’authentification Azure Active Directory ou d’Azure Key Vault. Consultez les exigences de dépendances lors de l’[utilisation du fournisseur Azure Key Vault](feature-dependencies-of-microsoft-jdbc-driver-for-sql-server.md#working-with-the-azure-key-vault-provider) ou de l’[authentification Azure Active Directory](feature-dependencies-of-microsoft-jdbc-driver-for-sql-server.md#working-with-azure-active-directory-authentication) |
 | &nbsp; | &nbsp; |
 
 ### <a name="enabled-usebulkcopyforbatchinsert-for-non-azure-synapse-analytics-servers"></a>useBulkCopyForBatchInsert activé pour les serveurs non-Azure Synapse Analytics
+
 | Modifications de useBulkCopyForBatchInsert pour les serveurs non-Azure Synapse Analytics | Détails |
 | :------------------- | :------ |
 | Microsoft JDBC Driver 9.2 permet maintenant l’utilisation de l’API de copie en bloc pour l’opération d’insertion par lot sur des serveurs non-Azure Synapse Analytics. | Consultez [Utilisation de l’API de copie en bloc pour l’opération d’insertion par lot](../../connect/jdbc/use-bulk-copy-api-batch-insert-operation.md). |
 | &nbsp; | &nbsp; |
-
 
 ## <a name="previous-releases"></a>Versions précédentes
 
@@ -104,7 +107,7 @@ Si vous avez besoin de télécharger le pilote dans une langue autre que celle d
 Pour télécharger le pilote sous forme de fichier zip : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2137600&clcid=0x40a)  
 Pour télécharger le pilote sous forme de fichier tar.gz : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2137502&clcid=0x40a)  
 
-### <a name="compliance"></a>Conformité
+### <a name="84-compliance"></a>Conformité de la version 8.4
 
 | Modification de conformité | Détails |
 | :---------------- | :------ |
@@ -113,7 +116,7 @@ Pour télécharger le pilote sous forme de fichier tar.gz : [Chinois (simplifi�
 | Compatible avec les versions 14.0, 11.0 et 1.8 du Kit de développement Java (JDK). | Microsoft JDBC Driver 8.4 pour SQL Server est maintenant compatible avec la version 14.0 du Kit de développement Java, en plus des versions 11.0 et 1.8. |
 | &nbsp; | &nbsp; |
 
-### <a name="releases"></a>Versions
+### <a name="84-releases"></a>Versions release 8.4
 
 Numéro de version : 8.4.1  
 Publication : 27 août 2020  
@@ -175,7 +178,7 @@ Si vous avez besoin de télécharger le pilote dans une langue autre que celle d
 Pour télécharger le pilote sous forme de fichier zip : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2122433&clcid=0x40a)  
 Pour télécharger le pilote sous forme de fichier tar.gz : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2122536&clcid=0x40a)  
 
-### <a name="compliance"></a>Conformité
+### <a name="82-compliance"></a>Conformité de la version 8.2
 
 | Modification de conformité | Détails |
 | :---------------- | :------ |
@@ -184,7 +187,7 @@ Pour télécharger le pilote sous forme de fichier tar.gz : [Chinois (simplifi�
 | Compatible avec le kit JDK versions 13.0, 11.0 et 1.8. | Microsoft JDBC Driver 8.2 pour SQL Server est désormais compatible avec le JDK version 13.0 en plus des versions 11.0 et 1.8. |
 | &nbsp; | &nbsp; |
 
-### <a name="releases"></a>Versions
+### <a name="82-releases"></a>Versions release 8.2
 
 Numéro de version : 8.2.2  
 Publication : 24 mars 2020  
@@ -231,7 +234,7 @@ Microsoft JDBC Driver 8.2 pour SQL Server est désormais compatible avec le JDK
 | La DLL a également été chargée dans le référentiel Maven pour faciliter son accès. | Consultez [cette page](https://search.maven.org/artifact/com.microsoft.sqlserver/mssql-jdbc_auth). |
 | &nbsp; | &nbsp; |
 
-### <a name="known-issues"></a>Problèmes connus
+### <a name="82-known-issues"></a>Problèmes connus avec 8.2
 
 | Problèmes connus | Détails |
 | :----------- | :------ |
@@ -250,7 +253,7 @@ Si vous avez besoin de télécharger le pilote dans une langue autre que celle d
 Pour télécharger le pilote sous forme de fichier exécutable à extraction automatique : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2122712&clcid=0x40a)  
 Pour télécharger le pilote sous forme de fichier tar.gz : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2122613&clcid=0x40a)  
 
-### <a name="compliance"></a>Conformité
+### <a name="74-compliance"></a>Conformité de la version 7.4
 
 | Modification de conformité | Détails |
 | :---------------- | :------ |
@@ -259,7 +262,7 @@ Pour télécharger le pilote sous forme de fichier tar.gz : [Chinois (simplifi�
 | Compatible avec le kit de développement Java (JDK) versions 12.0, 11.0 et 1.8. | Le pilote JDBC Microsoft 7.4 pour SQL Server est désormais compatible avec JDK (Java Development Kit) version 12.0 en plus de 11.0 et 1.8. |
 | &nbsp; | &nbsp; |
 
-### <a name="releases"></a>Versions
+### <a name="74-releases"></a>Versions release 7.4
 
 Numéro de version : 7.4.1  
 Publication : 2 août 2019  
@@ -299,7 +302,7 @@ Le pilote JDBC Microsoft 7.4 pour SQL Server est désormais compatible avec JDK 
 | Détails supplémentaires. | Consultez [Dépendances de fonctionnalité de Microsoft JDBC Driver pour SQL Server](feature-dependencies-of-microsoft-jdbc-driver-for-sql-server.md). |
 | &nbsp; | &nbsp; |
 
-### <a name="known-issues"></a>Problèmes connus
+### <a name="74-known-issues"></a>Problèmes connus avec 7.4
 
 | Problèmes connus | Détails |
 | :----------- | :------ |
@@ -319,7 +322,7 @@ Si vous avez besoin de télécharger le pilote dans une langue autre que celle d
 Pour télécharger le pilote sous forme de fichier exécutable à extraction automatique : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2122435&clcid=0x40a)  
 Pour télécharger le pilote sous forme de fichier tar.gz : [Chinois (simplifié)](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x804) | [Chinois (traditionnel)](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x40c) | [Allemand](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x407) | [Italien](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=2122434&clcid=0x40a)  
 
-### <a name="compliance"></a>Conformité
+### <a name="72-compliance"></a>Conformité de la version 7.2
 
 | Modification de conformité | Détails |
 | :---------------- | :------ |
@@ -328,7 +331,7 @@ Pour télécharger le pilote sous forme de fichier tar.gz : [Chinois (simplifi�
 | Compatible avec JDK (Java Development Kit) version 11.0 en plus de JDK 1.8. | Le pilote JDBC Microsoft 7.2 pour SQL Server est désormais compatible avec JDK (Java Development Kit) version 11.0 en plus de JDK 1.8. |
 | &nbsp; | &nbsp; |
 
-### <a name="releases"></a>Versions
+### <a name="72-releases"></a>Versions release 7.2
 
 Numéro de version : 7.2.2  
 Publication : Avril 16, 2019  
@@ -387,7 +390,7 @@ Publication : 31 janvier 2019
 | Détails supplémentaires. | Consultez [Dépendances de fonctionnalité de Microsoft JDBC Driver pour SQL Server](feature-dependencies-of-microsoft-jdbc-driver-for-sql-server.md). |
 | &nbsp; | &nbsp; |
 
-### <a name="known-issues"></a>Problèmes connus
+### <a name="72-known-issues"></a>Problèmes connus avec 7.2
 
 | Problèmes connus | Détails |
 | :----------- | :------ |
@@ -504,7 +507,7 @@ Le pilote prend désormais en charge les types de données `datetime` et `smallD
 
 Le pilote JDBC prend désormais en charge les types de données `sql_variant` à utiliser avec SQL Server. Le type de données `sql_variant` est également pris en charge avec des fonctionnalités telles que les paramètres table et de copie en bloc, avec les limitations suivantes :
 
-* **Pour les valeurs de date** :
+- **Pour les valeurs de date** :
 
   Lorsque vous utilisez un paramètre de table (TVP) pour remplir une table qui contient des valeurs `datetime`, `smalldatetime` ou `date` stockées dans une colonne `sql_variant`, l’appel de la méthode `getDateTime()`, `getSmallDateTime()` ou `getDate()` ne fonctionne pas sur le jeu de résultats et lève l’exception suivante :
 
@@ -512,7 +515,7 @@ Le pilote JDBC prend désormais en charge les types de données `sql_variant` à
 
   Pour contourner ce problème, utilisez la méthode `getString()` ou `getObject()` à la place.
 
-* **Utilisation d’un paramètre table (TVP) avec sql_variant pour les valeurs null** :
+- **Utilisation d’un paramètre table (TVP) avec sql_variant pour les valeurs null** :
   
   Si vous utilisez un TVP pour remplir une table et envoyez une valeur NULL au type de colonne `sql_variant`, vous rencontrez une exception. L’insertion d’une valeur NULL avec le type de colonne `sql_variant` dans un TVP n’est actuellement pas prise en charge.
 
@@ -542,7 +545,7 @@ Pour télécharger le pilote sous forme de fichier tar.gz : [Chinois (simplifi�
 
 Le pilote JDBC 6.2 Microsoft pour SQL Server est parfaitement conforme aux spécifications JDBC 4.1. et 4.2. Les fichiers JAR dans le package 6.2 sont nommés en fonction de la compatibilité avec les versions de Java. Par exemple, l’utilisation du fichier mssql-jdbc-6.2.2.jre8.jar du package 6.2 est recommandée avec Java 8.
 
-### <a name="releases"></a>Versions
+### <a name="62-releases"></a>Versions release 6.2
 
 Numéro de version : 6.2.2  
 Publication : 3 octobre 2017  
@@ -578,16 +581,16 @@ Le pilote JDBC peut désormais être utilisé sur des machines virtuelles Java e
 
 Le pilote JDBC prend désormais en charge ce qui suit :
 
-* Méthode par principal/mot de passe pour les applications où la configuration de Kerberos ne peut pas être modifiée ou ne peut pas récupérer un jeton ou un fichier Keytab nouveau. Cette méthode peut être utilisée pour l’authentification auprès d’une instance SQL Server autorisant uniquement l’authentification Kerberos.
-* Authentification interdomaine qui utilise l’authentification intégrée Kerberos sans définir explicitement le SPN du serveur. Le pilote calcule maintenant automatiquement le domaine, même s’il n’y en a pas.
-* Délégation contrainte Kerberos par acceptation d’informations d'identification d’utilisateurs impersonnés en tant qu’objet d’informations d’identification GSS via la source de données. Ces informations d’identification avec emprunt d’identité sont ensuite utilisées pour établir une connexion Kerberos.
+- Méthode par principal/mot de passe pour les applications où la configuration de Kerberos ne peut pas être modifiée ou ne peut pas récupérer un jeton ou un fichier Keytab nouveau. Cette méthode peut être utilisée pour l’authentification auprès d’une instance SQL Server autorisant uniquement l’authentification Kerberos.
+- Authentification interdomaine qui utilise l’authentification intégrée Kerberos sans définir explicitement le SPN du serveur. Le pilote calcule maintenant automatiquement le domaine, même s’il n’y en a pas.
+- Délégation contrainte Kerberos par acceptation d’informations d'identification d’utilisateurs impersonnés en tant qu’objet d’informations d’identification GSS via la source de données. Ces informations d’identification avec emprunt d’identité sont ensuite utilisées pour établir une connexion Kerberos.
 
 ### <a name="added-timeouts"></a>Ajout de délais d’expiration
 
 Le pilote JDBC prend désormais en charge les délais d’expiration configurables suivants. Vous pouvez les modifier selon les besoins de votre application.
 
-* Délai d’expiration de requête pour contrôler le nombre de secondes à attendre avant un délai d’expiration lorsque vous exécutez une requête.
-* Délai d’expiration de socket pour spécifier le nombre de millisecondes à attendre avant un délai d’expiration d’un socket lu ou accepté.
+- Délai d’expiration de requête pour contrôler le nombre de secondes à attendre avant un délai d’expiration lorsque vous exécutez une requête.
+- Délai d’expiration de socket pour spécifier le nombre de millisecondes à attendre avant un délai d’expiration d’un socket lu ou accepté.
 
 ## <a name="61"></a>6.1
 

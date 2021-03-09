@@ -2,7 +2,7 @@
 description: CREATE QUEUE (Transact-SQL)
 title: CREATE QUEUE (Transact-SQL) | Microsoft Docs
 ms.custom: ''
-ms.date: 09/25/2019
+ms.date: 03/06/2021
 ms.prod: sql
 ms.prod_service: sql-database
 ms.reviewer: ''
@@ -26,12 +26,12 @@ helpviewer_keywords:
 ms.assetid: fce80faf-2bdc-475d-8ca1-31438ed41fb0
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 42b5b42ee88c6d562f1ebf8c03f92a1bd4be54f4
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 12bedec8dcd525767bc54eb3b1af221a17c658fa
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99188533"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464942"
 ---
 # <a name="create-queue-transact-sql"></a>CREATE QUEUE (Transact-SQL)
 
@@ -147,7 +147,7 @@ Le tableau suivant donne la liste des colonnes d'une file d'attente.
 |message_type_id|**int**|Identificateur d'objet [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] du type de message décrivant le message.|
 |validation|**nchar(2)**|Validation utilisée pour le message.<br /><br /> E=Vide<br /><br /> N=Aucune<br /><br /> X=XML|
 |message_body|**varbinary(max)**|Contenu du message.|
-|message_id|**uniqueidentifier**|Identificateur unique du message.|
+|message_enqueue_time|**datetime**|Heure à laquelle le message a été mis en file d’attente.|
 
 ## <a name="permissions"></a>Autorisations
 

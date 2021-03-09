@@ -18,12 +18,12 @@ ms.author: vanto
 ms.reviewer: ''
 ms.custom: ''
 ms.date: 06/10/2020
-ms.openlocfilehash: 95bfeb321f43fb860bbbeecb32ac18ec221e5067
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 86513345502531da670b870b5ecf70de9270f18f
+ms.sourcegitcommit: ece104654ac14e10d32e59f45916fa944665f4df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99194683"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102474903"
 ---
 # <a name="add-signature-transact-sql"></a>ADD SIGNATURE (Transact-SQL)
 
@@ -93,15 +93,15 @@ Le module signé ou contresigné et le certificat ou la clé asymétrique utilis
 ## <a name="countersignatures"></a>Contre-signatures  
  Lors de l’exécution d’un module signé, les signatures sont ajoutées temporairement au jeton SQL, mais elles sont perdues si le module exécute un autre module ou si l’exécution du module se termine. Une contre-signature est une forme spéciale de signature. Une contre-signature seule n'accorde pas d'autorisations, mais elle permet de conserver les signatures effectuées par le même certificat ou la même clé asymétrique pendant la durée de l'appel passé à l'objet contresigné.  
   
- Par exemple, supposons que l'utilisateur Alice appelle la procédure ProcSelectT1ForAlice, qui appelle la procédure procSelectT1, qui effectue une sélection dans la table T1. Alice a l'autorisation EXECUTE sur ProcSelectT1ForAlice et procSelectT1, mais elle n'a pas d'autorisation SELECT sur T1, et aucun chaînage de propriétés n'est impliqué dans cette chaîne entière. Alice ne peut pas accéder à la table T1, que ce soit directement ou via l'utilisation de ProcSelectT1ForAlice et procSelectT1. Dans la mesure où nous voulons qu’Alice utilise toujours ProcSelectT1ForAlice pour l’accès, nous ne souhaitons pas lui accorder l’autorisation d’exécuter procSelectT1. Comment pouvons-nous effectuer cette opération ?  
+ Par exemple, supposons que l’utilisatrice Alice appelle la procédure ProcForAlice, qui appelle à son tour la procédure ProcSelectT1, laquelle effectue une sélection dans la table T1. Alice a l’autorisation EXECUTE sur ProcForAlice et ProcSelectT1, mais elle n’a pas l’autorisation SELECT sur T1, et aucun chaînage de propriétés n’est impliqué dans cette chaîne entière. Alice ne peut pas accéder à la table T1, que ce soit directement ou via l’utilisation de ProcForAlice et ProcSelectT1. Dans la mesure où nous voulons qu’Alice utilise toujours ProcForAlice pour l’accès, nous ne souhaitons pas lui accorder l’autorisation d’exécuter ProcSelectT1. Comment pouvons-nous effectuer cette opération ?  
   
--   Si nous signons procSelectT1, afin que procSelectT1 puisse accéder à T1, Alice peut appeler procSelectT1 directement et elle n'a pas à appeler ProcSelectT1ForAlice.  
+-   Si nous signons ProcSelectT1, afin que ProcSelectT1 puisse accéder à T1, Alice peut appeler ProcSelectT1 directement et elle n’a pas à appeler ProcForAlice.  
   
--   Nous pouvons refuser l'autorisation EXECUTE sur procSelectT1 à Alice, mais elle ne serait alors pas en mesure d'appeler procSelectT1 via ProcSelectT1ForAlice.
+-   Nous pourrions refuser l’autorisation EXECUTE sur ProcSelectT1 à Alice, mais Alice ne serait alors pas en mesure d’appeler ProcSelectT1 via ProcForAlice.
   
--   La signature de ProcSelectT1ForAlice ne fonctionne pas seule, parce qu'elle est perdue dans l'appel à procSelectT1.  
+-   La signature de ProcForAlice n’est pas suffisante à elle seule, car elle est perdue dans l’appel de ProcSelectT1.  
   
-Toutefois, en contresignant procSelectT1 avec le même certificat que celui utilisé pour signer ProcSelectT1ForAlice, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] conserve la signature sur la chaîne d’appel et autorise l’accès à T1. Si Alice essaie d'appeler procSelectT1 directement, elle ne peut pas accéder à T1, parce que la contre-signature n'accorde pas de droits. L'exemple C ci-dessous affiche le code [!INCLUDE[tsql](../../includes/tsql-md.md)] pour cet exemple.  
+Toutefois, en contresignant ProcSelectT1 avec le même certificat que celui utilisé pour signer ProcForAlice, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] conserve la signature sur la chaîne d’appels et autorise l’accès à T1. Si Alice essaie d’appeler ProcSelectT1 directement, elle ne peut pas accéder à T1 parce que la contresignature n’accorde pas de droits. L'exemple C ci-dessous affiche le code [!INCLUDE[tsql](../../includes/tsql-md.md)] pour cet exemple.  
   
 ## <a name="permissions"></a>Autorisations  
 
@@ -211,42 +211,42 @@ BEGIN
     SELECT * FROM T1;  
 END;  
 GO  
-GRANT EXECUTE ON procSelectT1 to public;  
+GRANT EXECUTE ON ProcSelectT1 to public;  
   
 -- Create special procedure for accessing T1  
-CREATE PROCEDURE  procSelectT1ForAlice AS  
+CREATE PROCEDURE  ProcForAlice AS  
 BEGIN  
    IF USER_ID() <> USER_ID('Alice')  
     BEGIN  
         PRINT 'Only Alice can use this.';  
         RETURN  
     END  
-   EXEC procSelectT1;  
+   EXEC ProcSelectT1;  
 END;  
 GO;  
-GRANT EXECUTE ON procSelectT1ForAlice TO PUBLIC;  
+GRANT EXECUTE ON ProcForAlice TO PUBLIC;  
   
 -- Verify procedure works for a sysadmin user  
-EXEC procSelectT1ForAlice;  
+EXEC ProcForAlice;  
   
 -- Alice still can't use the procedure yet  
 EXECUTE AS LOGIN = 'Alice';  
-    EXEC procSelectT1ForAlice;  
+    EXEC ProcForAlice;  
 REVERT;  
   
 -- Sign procedure to grant it SELECT permission  
-ADD SIGNATURE TO procSelectT1ForAlice BY CERTIFICATE csSelectT   
+ADD SIGNATURE TO ProcForAlice BY CERTIFICATE csSelectT   
 WITH PASSWORD = 'SimplePwd01';  
   
--- Counter sign proc_select_t, to make this work  
-ADD COUNTER SIGNATURE TO procSelectT1 BY CERTIFICATE csSelectT   
+-- Counter sign ProcSelectT1, to make this work  
+ADD COUNTER SIGNATURE TO ProcSelectT1 BY CERTIFICATE csSelectT   
 WITH PASSWORD = 'SimplePwd01';  
   
 -- Now the proc works.   
--- Note that calling procSelectT1 directly still doesn't work  
+-- Note that calling ProcSelectT1 directly still doesn't work  
 EXECUTE AS LOGIN = 'Alice';  
-    EXEC procSelectT1ForAlice;  
-    EXEC procSelectT1;  
+    EXEC ProcForAlice;  
+    EXEC ProcSelectT1;  
 REVERT;  
   
 -- Cleanup  

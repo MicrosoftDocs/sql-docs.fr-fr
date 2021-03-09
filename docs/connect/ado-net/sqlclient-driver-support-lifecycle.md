@@ -1,7 +1,7 @@
 ---
 title: Cycle de vie de prise en charge du pilote SqlClient
 description: Page contenant des informations sur le cycle de vie du support technique.
-ms.date: 02/26/2021
+ms.date: 03/03/2021
 dev_langs:
 - csharp
 - vb
@@ -13,12 +13,12 @@ ms.topic: conceptual
 author: David-Engel
 ms.author: v-daenge
 ms.reviewer: v-jizho2
-ms.openlocfilehash: d0fc4a58dbd8375bd988fbee851cab68368b28d1
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 998fc5eecfa0e8840111b1ee9bf1d9e653ac5687
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101836986"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464730"
 ---
 # <a name="sqlclient-driver-support-lifecycle"></a>Cycle de vie de prise en charge du pilote SqlClient
 
@@ -36,7 +36,7 @@ Les nouvelles versions stables (GA) seront publiées tous les six mois sur une c
 
 | Version | Date de publication officielle | Dernière version du correctif | Date de publication du correctif | Niveau de prise en charge  | Fin du support |
 | -- | -- | -- | -- | -- | -- |
-| 2.1 | 19 novembre 2020 | 2.1.1 | 18 décembre 2020 | LTS | 20 novembre 2023 |
+| 2.1 | 19 novembre 2020 | 2.1.2 | 3 mars 2021 | LTS | 20 novembre 2023 |
 | 1.1 | 20 novembre 2019 | 1.1.3 | 15 mai 2020 | LTS | 21 novembre 2022 |
 
 ### <a name="out-of-support-releases"></a>Mises en production non prises en charge
@@ -46,13 +46,27 @@ Les nouvelles versions stables (GA) seront publiées tous les six mois sur une c
 | 2.0 | 16 juin 2020 | 2.0.1 | 25 août 2020 |
 | 1.0 | 26 septembre 2019 | 1.0.19269.1 | 20 février 2020 |
 
-### <a name="long-term-support-lts-releases"></a>Mises en production de la prise en charge à long terme (LTS)
+
+## <a name="azure-key-vault-provider-release-cadence"></a>Cadence des versions release d’Azure Key Vault Provider
+
+De nouvelles versions en disponibilité générale stables de `Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider` sont publiées à la demande quand de nouvelles fonctionnalités sont ajoutées. Les versions avec prise en charge à long terme (LTS) seront choisies par les parties prenantes et les responsables de maintenance en fonction de quelques qualifications et de la réponse des clients.
+
+### <a name="actively-supported-releases"></a>Mises en production activement prises en charge
+
+| Version | Date de publication officielle | Dernière version du correctif | Date de publication du correctif | Niveau de prise en charge  | Fin du support |
+| -- | -- | -- | -- | -- | -- |
+| 2.x | 3 mars 2021 | 2.0.0 | 3 mars 2021 | LTS | 4 mars 2024 |
+| 1.x | 19 novembre 2019 | 1.2.0 | 1er décembre 2020 | LTS | 21 novembre 2022 |
+
+
+## <a name="long-term-support-lts-releases"></a>Mises en production de la prise en charge à long terme (LTS)
 
 Les versions LTS sont prises en charge pendant trois ans après la version initiale.
 
-### <a name="current-releases"></a>Versions actuelles
+## <a name="current-releases"></a>Versions actuelles
 
 Les versions actuelles sont prises en charge pendant trois mois après la publication d’une version actuelle ou LTS postérieure.
+
 
 ## <a name="sql-version-compatibility-with-microsoftdatasqlclient"></a>Compatibilité des versions SQL avec Microsoft.Data.SqlClient
 
