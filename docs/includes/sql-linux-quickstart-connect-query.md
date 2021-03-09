@@ -135,7 +135,7 @@ Pour connaître les autres scénarios d’installation, consultez les ressources
 * [Installation hors connexion](../linux/sql-server-linux-setup.md#offline) : Apprenez à télécharger manuellement les packages d’installation hors connexion
 
 > [!TIP]
-> Pour obtenir des réponses aux questions fréquemment posées, consultez la [FAQ de SQL Server sur Linux](../linux/sql-server-linux-faq.md).
+> Pour obtenir des réponses aux questions fréquemment posées, consultez la [FAQ de SQL Server sur Linux](../linux/sql-server-linux-faq.yml).
 
 ## <a name="next-steps"></a>Étapes suivantes
 
