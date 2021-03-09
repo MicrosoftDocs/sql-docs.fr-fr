@@ -9,12 +9,12 @@ ms.date: 06/22/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: big-data-cluster
-ms.openlocfilehash: 5bcff7203d3bf9e224d6557c4c2af6a47fb0af12
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 92cca7d688f954fc8e832f4bc0e68f105c024202
+ms.sourcegitcommit: ece104654ac14e10d32e59f45916fa944665f4df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100047269"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102474883"
 ---
 # <a name="deploy-big-data-clusters-2019-on-openshift-on-premises-and-azure-red-hat-openshift"></a>Déploiement de [!INCLUDE[big-data-clusters-2019](../includes/ssbigdataclusters-ss-nover.md)] sur OpenShift en local et sur Azure Red Hat OpenShift
 
@@ -73,7 +73,7 @@ Cet article décrit la procédure de déploiement propre à la plateforme OpenSh
 4. Affectez la contrainte de contexte de sécurité personnalisée aux comptes de service pour les utilisateurs de l’espace de noms dans lequel le cluster Big Data est déployé :
 
    ```console
-   oc adm policy add-scc-to-group bdc-scc system:serviceaccounts:<namespaceName>
+  oc create rolebinding bdc-rbac --clusterrole=system:scc:bdc-scc --group=system:serviceaccounts:<namespace>
    ```
 
 5. Attribuez l’autorisation appropriée à l’utilisateur qui déploie le cluster Big Data. Procédez de l'une des manières suivantes : 
