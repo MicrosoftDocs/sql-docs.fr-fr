@@ -11,12 +11,12 @@ ms.topic: conceptual
 ms.assetid: 939a8773-2583-49a4-bf00-6b892fbe39dc
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 5455169782503939330c32829a89bf0701aac25a
-ms.sourcegitcommit: e8f6c51d4702c0046aec1394109bc0503ca182f0
+ms.openlocfilehash: 531dca0f328f5f587d2da545bcae182f228bdee5
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "87943611"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464754"
 ---
 # <a name="overview-of-the-jdbc-driver"></a>Présentation du pilote JDBC
 
@@ -44,7 +44,7 @@ Les rubriques de cette section présentent de manière générale le pilote JDBC
 |[Déploiement du pilote JDBC](../../connect/jdbc/deploying-the-jdbc-driver.md)|Décrit la redistribution et le déploiement du pilote Microsoft JDBC sur les systèmes d’exploitation Windows et Unix.|  
 |[Recherche d'informations supplémentaires sur le pilote JDBC](../../connect/jdbc/finding-additional-jdbc-driver-information.md)|Indique où trouver des ressources supplémentaires sur le pilote Microsoft JDBC, en fournissant notamment des liens vers des ressources externes.|  
 |[Matrice de prise en charge de Microsoft JDBC Driver pour SQL Server](../../connect/jdbc/microsoft-jdbc-driver-for-sql-server-support-matrix.md)|Matrice de support et politique de support pour Microsoft JDBC Driver pour SQL Server.|  
-|[Questions fréquentes &#40;FAQ&#41; sur le pilote JDBC](../../connect/jdbc/frequently-asked-questions-faq-for-jdbc-driver.md)|Forum aux questions sur le pilote Microsoft JDBC.|  
+|[Questions fréquentes &#40;FAQ&#41; sur le pilote JDBC](../../connect/jdbc/frequently-asked-questions-faq-for-jdbc-driver.yml)|Forum aux questions sur le pilote Microsoft JDBC.|  
 |[Dépendances de fonctionnalité de Microsoft JDBC Driver pour SQL Server](../../connect/jdbc/feature-dependencies-of-microsoft-jdbc-driver-for-sql-server.md)|Dépendances de fonctionnalité de Microsoft JDBC Driver pour SQL Server.|
 | &nbsp; | &nbsp; |
 

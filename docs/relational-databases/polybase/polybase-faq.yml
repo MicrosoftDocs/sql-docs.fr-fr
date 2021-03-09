@@ -1,0 +1,29 @@
+### YamlMime:FAQ
+metadata:
+  title: Questions fréquentes (FAQ) sur PolyBase | Microsoft Docs
+  description: Comparez PolyBase et les serveurs liés, et comparez PolyBase dans Clusters Big Data et PolyBase dans des instances autonomes. Découvrez les nouveautés de PolyBase 2019.
+  ms.date: 12/02/2020
+  ms.prod: sql
+  ms.technology: polybase
+  ms.topic: conceptual
+  author: MikeRayMSFT
+  ms.author: mikeray
+  ms.reviewer: mikeray
+  ms.openlocfilehash: ad8a61554bf76ae318f33df6d50a59795448fff4
+  ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
+  ms.translationtype: HT
+  ms.contentlocale: fr-FR
+  ms.lasthandoff: 03/08/2021
+  ms.locfileid: "102466193"
+title: Forum aux questions
+summary: >
+  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
+sections:
+- name: Ignoré
+  questions:
+  - question: PolyBase et les serveurs liés
+    answer: "Le tableau suivant présente les différences de fonctionnalités entre PolyBase et les serveurs liés :\n\n|PolyBase | Serveurs liés|\n|--------------------------|--------------------------|  \n|Objet inclus dans l’étendue de la base de données|Objet inclus dans l’étendue de l’instance|\n|Utilise des pilotes ODBC|Utilise des fournisseurs OLEDB|\n|Prend en charge les opérations en lecture seule pour toutes les sources de données et l’opération d’insertion pour Hadoop et la source de données pool de données uniquement|Prend en charge les opérations de lecture et d’écriture|\n|Possibilité de monter en charge les requêtes effectuées sur une source de données distante en une seule connexion |Impossibilité de monter en charge les requêtes effectuées sur une source de données distante en une seule connexion|\n|Pushdown de prédicats pris en charge|Pushdown de prédicats pris en charge|\n|Pas de configuration distincte nécessaire pour le groupe de disponibilité|Configuration distincte nécessaire pour chaque instance du groupe de disponibilité|\n|Authentification de base uniquement|Authentification de base et intégrée|\n|Adapté aux requêtes analytiques qui traitent un grand nombre de lignes|Adapté aux requêtes OLTP qui retournent peu de lignes ou une seule|\n|Impossibilité de faire participer les requêtes utilisant une table externe aux transactions distribuées|Possibilité de faire participer les requêtes distribuées aux transactions distribuées|\n"
+  - question: Nouveautés de PolyBase 2019
+    answer: "PolyBase dans [!INCLUDE[sssql19](../../includes/sssql19-md.md)] peut maintenant lire des données provenant d’un plus large éventail de sources de données. Les données de ces sources de données externes peuvent être stockées sous la forme de tables externes sur votre serveur SQL. PolyBase prend également en charge le calcul pushdown sur ces sources de données externes, à l’exception de types génériques ODBC.\n\n**Sources de données compatibles**\n\n- SQL Server\n- Oracle\n- Teradata\n- MongoDB\n- Types génériques ODBC compatibles\n  \n> [!NOTE]\n> PolyBase peut autoriser la connexion à des sources de données externes à l’aide de pilotes ODBC tiers. Ces pilotes ne sont pas fournis avec PolyBase et risquent de ne pas fonctionner comme prévu. Pour plus d’informations, voir notre [guide](../../relational-databases/polybase/polybase-configure-odbc-generic.md) relatif à la configuration générique ODBC de PolyBase.  \n"
+  - question: Comparaison entre PolyBase dans Clusters Big Data et PolyBase dans les instances autonomes
+    answer: "Le tableau suivant présente les fonctionnalités de PolyBase disponibles dans l’installation autonome de [!INCLUDE[sssql19](../../includes/sssql19-md.md)] et le cluster Big Data de [!INCLUDE[sssql19](../../includes/sssql19-md.md)] :\n\n|Fonctionnalité |Clusters Big Data|Instance autonome|\n|--------------------------|--------------------------|---------|   \n|Créer une source de données externe pour SQL Server, Oracle, Teradata et Mongo DB |X|X|\n|Créer une source de données externe à l’aide d’un pilote ODBC tiers compatible | | X|\n|Créer une source de données externe pour la source de données Hadoop | X| X|\n|Créer une source de données externe pour le Stockage Blob Azure | X| X|\n|Créer une table externe sur un pool de données SQL Server | X| |\n|Créer une table externe sur un pool de stockage SQL Server | X| |\n|Monter en charge l’exécution des requêtes | X| X (Windows uniquement) |\n\n> [!NOTE]\n> Le tableau ne décrit pas les fonctionnalités disponibles dans la dernière version de [!INCLUDE[sssql19](../../includes/sssql19-md.md)] CTP. Pour les connaître, voir les notes de publication. Pour plus d’informations sur les connexions établies avec le connecteur générique ODBC, voir notre [Guide pratique de la configuration des types génériques ODBC](polybase-configure-odbc-generic.md).\n"

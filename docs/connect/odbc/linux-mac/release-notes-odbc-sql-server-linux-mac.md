@@ -11,12 +11,12 @@ ms.topic: conceptual
 author: v-chojas
 ms.author: v-chojas
 manager: kenvh
-ms.openlocfilehash: 2c178b7afd7bf46003b689ef56af67f12609e0a9
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 83f8dbb834af379e02635130e23c0f5fd7299f3b
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101837338"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464284"
 ---
 # <a name="release-notes-for-the-microsoft-odbc-driver-for-sql-server-on-linux-and-macos"></a>Notes de publication pour Microsoft ODBC Driver for SQL Server sur Linux et macOS
 
@@ -101,7 +101,7 @@ Lors de l’utilisation d’Always Encrypted avec des enclaves sécurisées et A
 
 | Fonctionnalité ajoutée | Détails |
 | :------------ | :------ |
-| Always Encrypted avec les enclaves sécurisées. | Voir [Utilisation d’Always Encrypted avec ODBC Driver](../using-always-encrypted-with-the-odbc-driver.md). |
+| Always Encrypted avec enclaves sécurisées. | Voir [Utilisation d’Always Encrypted avec ODBC Driver](../using-always-encrypted-with-the-odbc-driver.md). |
 | Chargement dynamique d’OpenSSL | Voir [Instructions de programmation](programming-guidelines.md#bkmk-openssl). |
 | Paramètres TCP Keep Alive configurables. | Voir [Connexion à SQL Server](connection-string-keywords-and-data-source-names-dsns.md). |
 | Résolution des bogues. | Consultez [Correctifs de bogues](../bug-fixes.md). |
@@ -141,7 +141,7 @@ Lors de l’utilisation d’Always Encrypted avec des enclaves sécurisées et A
 
 ## <a name="17"></a>17
 
-**Nouvelles distributions prises en charge** : macOS High Sierra et Ubuntu 17.10 
+**Nouvelles distributions prises en charge** : macOS High Sierra et Ubuntu 17.10
 
 **Amélioration des performances** : Les performances sont plus que décuplées quand le pilote convertit vers/depuis UTF-8/16.
 
@@ -151,19 +151,21 @@ Prise en charge d’Always Encrypted pour l’API BCP
 
 Le nouvel attribut de chaîne de connexion UseFMTOnly conduit le pilote à utiliser les métadonnées héritées dans les cas spéciaux nécessitant des tables temporaires.
 
-Prise en charge d’Azure SQL Managed Instance. 
+Prise en charge d’Azure SQL Managed Instance.
+
 > [!NOTE]
 > Il existe plusieurs différences lors de l’utilisation de Managed Instance :
-> -   FILESTREAM n’est pas pris en charge. 
-> -   L’accès au système de fichiers local n’est pas pris en charge, mais est nécessaire pour certaines choses telles que les fichiers de trace 
-> -   La création d’un UDT depuis le chemin local n’est pas prise en charge 
-> -   L’authentification intégrée de Windows n’est pas prise en charge 
-> -   DTC n’est pas pris en charge 
-> -   Le compte « sa » n’est pas présent (le compte par défaut est appelé « cloudSA »).
-> -   L’erreur de jeton TDS (0xAA) retourne un nom de serveur incorrect
-> -   Les caractères spéciaux dans les noms de base de données ne sont pas pris en charge 
-> -   ALTER DATABASE [nom_bd_1] MODIFY NAME = [nom_bd_2] n’est pas pris en charge
-> -   Les messages d’erreur sont toujours affichés en anglais, quels que soient les paramètres de langue (à l’image d’Azure) 
+>
+> - FILESTREAM n’est pas pris en charge.
+> - L’accès au système de fichiers local n’est pas pris en charge, mais est nécessaire pour certaines choses telles que les fichiers de trace
+> - La création d’un UDT depuis le chemin local n’est pas prise en charge
+> - L’authentification intégrée de Windows n’est pas prise en charge
+> - DTC n’est pas pris en charge
+> - Le compte « sa » n’est pas présent (le compte par défaut est appelé « cloudSA »).
+> - L’erreur de jeton TDS (0xAA) retourne un nom de serveur incorrect
+> - Les caractères spéciaux dans les noms de base de données ne sont pas pris en charge
+> - ALTER DATABASE [nom_bd_1] MODIFY NAME = [nom_bd_2] n’est pas pris en charge
+> - Les messages d’erreur sont toujours affichés en anglais, quels que soient les paramètres de langue (à l’image d’Azure)
 
 ## <a name="131-for-ssnoversion-on-linux-and-macos-may-2017"></a>13.1, pour [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sur Linux et macOS, mai 2017
 

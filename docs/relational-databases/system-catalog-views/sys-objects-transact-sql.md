@@ -23,12 +23,12 @@ helpviewer_keywords:
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 094f3799beb1f8524d7c66679ba98d916c51c716
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 2b622fc53dce99f624299c9c7fc6e0bede6fade3
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99237622"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465045"
 ---
 # <a name="sysobjects-transact-sql"></a>sys.objects (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "99237622"
 |is_published|**bit**|L'objet est publié.|  
 |is_schema_published|**bit**|Seul le schéma de l'objet est publié.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  Vous pouvez appliquer les fonctions intégrées [object_id](../../t-sql/functions/object-id-transact-sql.md), [object_name](../../t-sql/functions/object-name-transact-sql.md)et [OBJECTPROPERTY](../../t-sql/functions/objectproperty-transact-sql.md)() aux objets affichés dans sys. Objects.  
   
  Il existe une version de cette vue avec le même schéma, appelé [sys.system_objects](../../relational-databases/system-catalog-views/sys-system-objects-transact-sql.md), qui affiche des objets système. Il existe une autre vue appelée [sys.ALL_OBJECTS](../../relational-databases/system-catalog-views/sys-all-objects-transact-sql.md) qui affiche les objets système et utilisateur. Ces trois affichages catalogue ont la même structure.  
@@ -166,7 +166,7 @@ GO
  [sys.system_objects &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-system-objects-transact-sql.md)   
  [sys.triggers &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-triggers-transact-sql.md)   
  [Vues de catalogue d’objets &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/object-catalog-views-transact-sql.md)   
- [Interrogation du SQL Server FAQ du catalogue système](../../relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.md)   
+ [Interrogation du SQL Server FAQ du catalogue système](../../relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.yml)   
  [sys.internal_tables &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-internal-tables-transact-sql.md)  
   
   

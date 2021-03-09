@@ -8,12 +8,12 @@ ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
 ms.assetid: 99636ee8-2ba6-4316-88e0-121988eebcf9S
-ms.openlocfilehash: 56961a0dd9f57085ebe2d937668fe32c7e28dc73
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 1f2df7f7cb0660cb879334a1099f6b7ce639d211
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100346226"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464635"
 ---
 # <a name="troubleshoot-sql-server-on-linux"></a>Détecter un problème sur SQL Server sur Linux
 
@@ -22,7 +22,7 @@ ms.locfileid: "100346226"
 Ce document décrit comment détecter un problème sur Microsoft SQL Server s’exécutant sur Linux ou dans un conteneur Docker. Lorsque vous détectez un problème sur SQL Server sur Linux, n’oubliez pas de consulter les fonctionnalités prises en charge et les limitations connues dans les [Notes de publication de SQL Server sur Linux](sql-server-linux-release-notes.md).
 
 > [!TIP]
-> Pour obtenir des réponses aux questions fréquemment posées, consultez la [FAQ de SQL Server sur Linux](sql-server-linux-faq.md).
+> Pour obtenir des réponses aux questions fréquemment posées, consultez la [FAQ de SQL Server sur Linux](sql-server-linux-faq.yml).
 
 ## <a name="troubleshoot-connection-failures"></a><a id="connection"></a> Détecter un problème relatif aux échecs de connexion
 Si vous avez des difficultés à vous connecter à votre SQL Server Linux, vous devez vérifier quelques points.

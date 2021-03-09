@@ -7,12 +7,12 @@ ms.date: 02/11/2021
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: 1a17ddc3f94f23203ec0a7d56edd63fe2cff4fa1
-ms.sourcegitcommit: 8dc7e0ececf15f3438c05ef2c9daccaac1bbff78
+ms.openlocfilehash: c81ca4cb8d531626c7f5ae51f8b4e264d907d2ce
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2021
-ms.locfileid: "100338255"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464695"
 ---
 # <a name="release-notes-for-sql-server-2019-on-linux"></a>Notes de publication pour SQL Server 2019 sur Linux
 
@@ -408,4 +408,4 @@ Pour démarrer, consultez les guides de démarrage rapide suivants :
 - [Approvisionner une machine virtuelle SQL dans Azure](/azure/virtual-machines/linux/sql/provision-sql-server-linux-virtual-machine?toc=/sql/toc/toc.json)
 - [Exécuter et connecter - Cloud](quickstart-install-connect-clouds.md)
 
-Pour obtenir des réponses aux questions fréquemment posées, consultez la [FAQ de SQL Server sur Linux](sql-server-linux-faq.md).
+Pour obtenir des réponses aux questions fréquemment posées, consultez la [FAQ de SQL Server sur Linux](sql-server-linux-faq.yml).

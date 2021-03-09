@@ -14,12 +14,12 @@ ms.assetid: 0262df2b-5ba7-4715-b17b-3d9ce470a38e
 author: ronortloff
 ms.author: rortloff
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: 46eb4bf2855cf6f5f8121d1480776c83703a5fcc
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: c5d43d8923a7e12a8389a9b3bd8a0801b989a560
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100341349"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464829"
 ---
 # <a name="sysinternal_partitions-transact-sql"></a>sys.internal_partitions (Transact-SQL)
 
@@ -64,6 +64,6 @@ WHERE p.object_id = OBJECT_ID ( '<table name' ) ;
 ## <a name="see-also"></a>Voir aussi  
  [Vues de catalogue d’objets &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/object-catalog-views-transact-sql.md)   
  [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)   
- [Questions fréquentes sur l'interrogation des catalogues système de SQL Server](../../relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.md)  
+ [Questions fréquentes sur l'interrogation des catalogues système de SQL Server](../../relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.yml)  
   
   

@@ -7,12 +7,12 @@ ms.date: 03/12/2020
 ms.topic: conceptual
 ms.prod: sql
 ms.technology: linux
-ms.openlocfilehash: d6978bfa68d3a9b922e46454481618e448e91b96
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 8cc766248f4dd2776a0367b2c0ac6e12f385433e
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100346207"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464651"
 ---
 # <a name="whats-new-for-sql-server-2019-on-linux"></a>Nouveautés de SQL Server 2019 sur Linux
 
@@ -54,6 +54,6 @@ Pour installer SQL Server sur Linux, utilisez l’un des didacticiels suivants 
 - [Exécuter sur Docker](quickstart-install-connect-docker.md?view=sql-server-linux-ver15&preserve-view=true)
 - [Approvisionner une machine virtuelle SQL dans Azure](/azure/virtual-machines/linux/sql/provision-sql-server-linux-virtual-machine?toc=/sql/toc/toc.json)
 
-Pour obtenir des réponses aux questions fréquemment posées, consultez la [FAQ de SQL Server sur Linux](sql-server-linux-faq.md). Pour voir d’autres améliorations introduites dans SQL Server 2019, consultez [Nouveautés de SQL Server 2019](../sql-server/what-s-new-in-sql-server-ver15.md?view=sql-server-ver15&preserve-view=true).
+Pour obtenir des réponses aux questions fréquemment posées, consultez la [FAQ de SQL Server sur Linux](sql-server-linux-faq.yml). Pour voir d’autres améliorations introduites dans SQL Server 2019, consultez [Nouveautés de SQL Server 2019](../sql-server/what-s-new-in-sql-server-ver15.md?view=sql-server-ver15&preserve-view=true).
 
 [!INCLUDE[get-help-options](../includes/paragraph-content/get-help-options.md)]

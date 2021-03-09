@@ -10,12 +10,12 @@ ms.prod: sql
 ms.custom: sqlfreshmay19
 ms.technology: linux
 ms.assetid: 565156c3-7256-4e63-aaf0-884522ef2a52
-ms.openlocfilehash: eacd871674d15bfa96cd77dd290ff9640520b58a
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 01417fa9f7f790229e073964133396f87f144d45
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100346422"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465157"
 ---
 # <a name="installation-guidance-for-sql-server-on-linux"></a>Conseils d’installation pour SQL Server sur Linux
 
@@ -36,7 +36,7 @@ Pour d’autres scénarios de déploiement, consultez :
 > - [Démarrage rapide Ubuntu](quickstart-install-connect-ubuntu.md)
 > - [Démarrage rapide Docker](quickstart-install-connect-docker.md)
 
-Pour obtenir des réponses aux questions fréquemment posées, consultez la [FAQ de SQL Server sur Linux](../linux/sql-server-linux-faq.md).
+Pour obtenir des réponses aux questions fréquemment posées, consultez la [FAQ de SQL Server sur Linux](../linux/sql-server-linux-faq.yml).
 
 ## <a name="supported-platforms"></a><a id="supportedplatforms"></a> Plateformes prises en charge
 
@@ -239,4 +239,4 @@ Après l’installation, vous pouvez également installer ou activer des fonctio
 [!INCLUDE[Get Help Options](../includes/paragraph-content/get-help-options.md)]
 
 > [!TIP]
-> Pour obtenir des réponses aux questions fréquemment posées, consultez la [FAQ de SQL Server sur Linux](sql-server-linux-faq.md).
+> Pour obtenir des réponses aux questions fréquemment posées, consultez la [FAQ de SQL Server sur Linux](sql-server-linux-faq.yml).

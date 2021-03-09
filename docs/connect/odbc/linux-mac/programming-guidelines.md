@@ -10,12 +10,12 @@ ms.technology: connectivity
 ms.topic: conceptual
 author: v-makouz
 ms.author: v-daenge
-ms.openlocfilehash: 8843bf303f20a7d8aa0baac5be3d9da4e7c54e01
-ms.sourcegitcommit: fb1430aedbb91b55b92f07934e9b9bdfbbd2b0c5
+ms.openlocfilehash: 6d602db9c189b6e7fce8b767b60204253ccb7f67
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "82886364"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102464391"
 ---
 # <a name="programming-guidelines"></a>Instructions de programmation
 
@@ -148,7 +148,7 @@ Au moment de la rédaction de cet article, la taille de la pile par défaut dans
 3.  Lorsque le pilote est utilisé avec des applications fortement multithread, la validation du descripteur d’unixODBC peut devenir un goulot d’étranglement de performances. Dans de tels scénarios, il est possible d’accroître significativement la performance en compilant unixODBC avec l’option `--enable-fastvalidate`. Toutefois, n’oubliez pas que ceci peut entraîner le blocage des applications qui transmettent des descripteurs non valides aux API ODBC au lieu de retourner des erreurs `SQL_INVALID_HANDLE`.
 
 ## <a name="see-also"></a>Voir aussi  
-[Questions fréquentes (FAQ)](frequently-asked-questions-faq-for-odbc-linux.md)
+[Questions fréquentes (FAQ)](frequently-asked-questions-faq-for-odbc-linux.yml)
 
 [Problèmes connus dans cette version du pilote](known-issues-in-this-version-of-the-driver.md)
 

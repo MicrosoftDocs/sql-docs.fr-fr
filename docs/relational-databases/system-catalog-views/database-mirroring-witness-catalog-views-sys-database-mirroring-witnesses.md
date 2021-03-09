@@ -22,12 +22,12 @@ helpviewer_keywords:
 ms.assetid: 0dd5b794-733b-4a3c-b5a4-62f9f1f0f22d
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: 864391a4719b9db0b55574a6c9bff5dd20a6f9a2
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 63599e8dfbeafc6136e2d4904a546e5ebbd5dd96
+ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99194664"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465097"
 ---
 # <a name="database-mirroring-witness-catalog-views---sysdatabase_mirroring_witnesses"></a>Affichages catalogue du témoin de mise en miroir de bases de données-sys.database_mirroring_witnesses
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -59,6 +59,6 @@ ms.locfileid: "99194664"
  [Témoin de mise en miroir de base de données](../../database-engine/database-mirroring/database-mirroring-witness.md)   
  [sys.database_mirroring &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-mirroring-transact-sql.md)   
  [sys.database_mirroring_endpoints &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-mirroring-endpoints-transact-sql.md)   
- [Questions fréquentes sur l'interrogation des catalogues système de SQL Server](../../relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.md)  
+ [Questions fréquentes sur l'interrogation des catalogues système de SQL Server](../../relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.yml)  
   
   

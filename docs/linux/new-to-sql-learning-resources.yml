@@ -9,12 +9,12 @@ metadata:
   author: MashaMSFT
   ms.author: mathoma
   ms.date: 07/25/2020
-  ms.openlocfilehash: fcab56382250151c1ebb57724e4f117a69d6ab5c
-  ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+  ms.openlocfilehash: 3a79891d540ac53aade033084e0d80b40a69b930
+  ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
   ms.translationtype: HT
   ms.contentlocale: fr-FR
-  ms.lasthandoff: 02/10/2021
-  ms.locfileid: "100078720"
+  ms.lasthandoff: 03/08/2021
+  ms.locfileid: "102464658"
 landingContent:
 - title: 'Module 1 : Notions de base de SQL Server'
   linkLists:
@@ -39,7 +39,7 @@ landingContent:
     - text: Plateformes prises en charge
       url: sql-server-linux-release-notes-2019.md
     - text: Forum aux questions
-      url: sql-server-linux-faq.md
+      url: sql-server-linux-faq.yml
 - title: 'Module 3 : Installer/déployer et connecter'
   linkLists:
   - linkListType: learn
