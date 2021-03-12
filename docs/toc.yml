@@ -7,7 +7,7 @@ items:
     href: sql-server/previous-versions-sql-server.md
   - name: Vue d’ensemble
     items:
-      - name: Nouveautés
+      - name: What's New
         items:
           - name: "SQL Server\_2019"
             href: sql-server/what-s-new-in-sql-server-ver15.md
@@ -565,7 +565,7 @@ items:
         items:
           - name: Vue d’ensemble
             items:
-              - name: Vue d’ensemble
+              - name: Vue d'ensemble
                 href: relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases.md
               - name: Stockage Blob Azure
                 href: relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service.md
@@ -9849,6 +9849,8 @@ items:
                 href: tools/sqlpackage/sqlpackage-script.md
           - name: SqlPackage dans les pipelines de développement
             href: tools/sqlpackage/sqlpackage-pipelines.md
+          - name: SqlPackage pour Azure Synapse Analytics
+            href: tools/sqlpackage/sqlpackage-for-azure-synapse-analytics.md
       - name: SQL Server Profiler
         href: tools/sql-server-profiler/sql-server-profiler.md
         items:
