@@ -8,15 +8,17 @@ author: markingmyname
 ms.author: maghan
 ms.reviewer: ''
 ms.custom: ''
-ms.date: 3/5/2021
-ms.openlocfilehash: 37e31834df74bf91fcf31004973c1556b8f34552
-ms.sourcegitcommit: 0bcda4ce24de716f158a3b652c9c84c8f801677a
+ms.date: 3/10/2021
+ms.openlocfilehash: 34a7ff8c9380a88bb285a6d2e51e57e652f0310d
+ms.sourcegitcommit: 81ee3cd57526d255de93afb84186074a3fb9885f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102247466"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622817"
 ---
 # <a name="sql-assessment-api"></a>API d’évaluation SQL
+
+[!INCLUDE [SQL Server 2012, ASMI, SQL Server on Azure VM, SQL on Linux](../../includes/applies-to-version/sql-asmi-sqlavm-sql-linux.md)]
 
 L’API SQL Assessment fournit un mécanisme permettant de déterminer si votre configuration de SQL Server est conforme aux bonnes pratiques. L’API est fournie avec un ensemble de règles contenant les règles de bonnes pratiques suggérées par l’équipe de SQL Server. Bien que nous améliorions cet ensemble de règles à chaque publication d’une nouvelle version, l’API est en même temps conçue comme une solution hautement personnalisable et extensible. Les utilisateurs peuvent donc paramétrer les règles par défaut et créer leurs propres règles.
 

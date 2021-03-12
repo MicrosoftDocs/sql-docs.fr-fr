@@ -2,7 +2,7 @@
 title: Configuration système requise pour les pilotes Microsoft SQL Server pour PHP
 description: Les pilotes Microsoft pour PHP pour SQL Server prennent en charge un large éventail de versions de PHP, de systèmes d’exploitation et de versions de SQL Server.
 ms.custom: ''
-ms.date: 01/29/2021
+ms.date: 03/09/2021
 ms.prod: sql
 ms.prod_service: connectivity
 ms.technology: connectivity
@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 5db4b75f-c605-4785-9560-399a533c0fc9
 author: David-Engel
 ms.author: v-daenge
-ms.openlocfilehash: 06824f62740653eddeee6d3484e7eb8914404110
-ms.sourcegitcommit: f30b5f61c514437ea58acc5769359c33255b85b5
+ms.openlocfilehash: b52bb4597b76ca831b94899e040a814b11b2a903
+ms.sourcegitcommit: 81ee3cd57526d255de93afb84186074a3fb9885f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "99076441"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622665"
 ---
 # <a name="system-requirements-for-the-microsoft-drivers-for-php-for-sql-server"></a>Configuration système requise pour Microsoft Drivers for PHP for SQL Server
 
@@ -51,7 +51,7 @@ Si vous téléchargez la version Windows du pilote sur une version 64 bits de W
 |ODBC Driver 17+ |Oui|Oui|Oui|Oui|Oui|   |   |   |
 |ODBC Driver 13.1|Oui|Oui|Oui|Oui|Oui|Oui|Oui|   |
 |ODBC Driver 13  |   |   |   |   |   |   |Oui|   |
-|ODBC Driver 11  |Oui|Oui|Oui|Oui|Oui|Oui|Oui|Oui|
+|ODBC Driver 11  |   |Oui|Oui|Oui|Oui|Oui|Oui|Oui|
 
 Si vous utilisez le pilote SQLSRV, [sqlsrv_client_info](sqlsrv-client-info.md) retourne des informations sur la version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Microsoft ODBC Driver pour SQL Server utilisée par [!INCLUDE[ssDriverPHP](../../includes/ssdriverphp_md.md)]. Si vous utilisez le pilote PDO_SQLSRV, vous pouvez utiliser [PDO::getAttribute](pdo-getattribute.md) pour découvrir la version.
 
