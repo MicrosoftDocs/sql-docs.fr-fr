@@ -21,12 +21,12 @@ helpviewer_keywords:
 ms.assetid: b971b540-1ac2-435b-b191-24399eb88265
 author: pmasl
 ms.author: pelopes
-ms.openlocfilehash: 4d3d5cb280f20deb3d683d962be986d7df38ed61
-ms.sourcegitcommit: 8bdb5a51f87a6ff3b94360555973ca0cd0b6223f
+ms.openlocfilehash: e2c384a012603af0fd8875071b33813050218c65
+ms.sourcegitcommit: 81ee3cd57526d255de93afb84186074a3fb9885f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "100549375"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622735"
 ---
 # <a name="dbcc-traceon---trace-flags-transact-sql"></a>DBCC TRACEON - Indicateurs de trace (Transact-SQL)
 
@@ -207,7 +207,7 @@ Le tableau ci-dessous répertorie et décrit les indicateurs de trace disponible
 |**11068**|Utilise la valeur configurée indiquant le degré maximal de parallélisme (MAXDOP) du serveur, de la base de données ou de la liste de ressources partagées pour les opérations d’insertion d’index columnstore. Pour plus d’informations sur le remplacement des degrés de parallélisme, consultez le [Guide d’architecture de traitement des requêtes](../../relational-databases/query-processing-architecture-guide.md#overriding-degrees-of-parallelism).<br /><br />**Important :** Cet indicateur de trace est effectif uniquement si l’indicateur de trace 11064 est également activé.<br /><br />**Important :** Utilisez cet indicateur de trace quand des chargements de données plus rapides sont préférés au maintien de la qualité de [segment columnstore](../../relational-databases/indexes/columnstore-indexes-overview.md#column-segment). Par exemple, l’utilisation de cet indicateur de trace lors du chargement de 1 048 577 lignes dans un columnstore peut générer plusieurs rowgroups compressés, si l’opération d’insertion s’exécute en mode parallèle. Sans cet indicateur de trace, l’opération d’insertion produirait un rowgroup compressé.<br /><br />**Remarque :** Cet indicateur de trace s’applique à [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] et aux builds ultérieures.<br /><br />**Étendue** : globale uniquement|
 |**11631**| Un 'ALTER INDEX ... REORGANIZE nettoie les lignes supprimées d’un rowgroup d’un index columnstore seulement si un certain seuil de lignes a été supprimé de ce rowgroup. Le seuil par défaut est de 10 % de la limite maximale de lignes (1 million), soit 100 000 lignes. Cet indicateur de trace change le seuil à 10 % du total des lignes actuelles d’un rowgroup dolumnstore. Par exemple, si un rowgroup contient 20 000 lignes, le seuil est de 2 000 lignes supprimées avant que REORGANIZE considère ce rowgroup à nettoyer. Pour plus d’informations, consultez [l’article du Support Microsoft](https://support.microsoft.com/help/5000895)<br /><br />**Remarque :** Cet indicateur de trace s’applique à [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU9 et aux builds ultérieures.<br /><br />**Étendue** : globale uniquement|
 |**11634**| Un 'ALTER INDEX ... REORGANIZE nettoie les lignes supprimées d’un rowgroup d’un index columnstore seulement si un certain seuil de lignes a été supprimé de ce rowgroup. Le seuil par défaut est de 10 % de la limite maximale de lignes (1 million), soit 100 000 lignes. Cet indicateur de trace change le seuil à 1 % des lignes d’un rowgroup dolumnstore. S’il est activé avec l’indicateur de trace 11631, il est alors de 1 % du nombre actuel de lignes d’un rowgroup, au lieu de 1 % de 1 million de lignes. Pour plus d’informations, consultez [l’article du Support Microsoft](https://support.microsoft.com/help/5000895)<br /><br />**Remarque :** Cet indicateur de trace s’applique à [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)] CU9 et aux builds ultérieures.<br /><br />**Étendue** : globale uniquement|
-
+|**13116**|Désactive le correctif pour le bogue [13685819](https://support.microsoft.com/en-us/topic/kb5000645-cumulative-update-16-for-sql-server-2016-sp2-a3997fa9-ec49-4df0-bcc3-12dd58b78265#bkmk_13685819). Utilisez cet indicateur de trace si, après avoir appliqué [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 CU16, vous rencontrez un problème qui empêche les requêtes DML (insertion/mise à jour/suppression) utilisant des plans parallèles de terminer l’exécution avec des attentes HP_SPOOL_BARRIER. <br /><br />**Remarque :** Cet indicateur de trace s’applique à [!INCLUDE[sssql16-md](../../includes/sssql16-md.md)] SP2 CU16.<br /><br />**Étendue** : globale uniquement| 
   
 ## <a name="examples"></a>Exemples  
  L’exemple suivant définit l’indicateur de trace 3205 pour toutes les sessions au niveau du serveur à l’aide de DBCC TRACEON.  

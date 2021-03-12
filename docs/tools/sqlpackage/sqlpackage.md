@@ -9,13 +9,13 @@ ms.assetid: 198198e2-7cf4-4a21-bda4-51b36cb4284b
 author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
-ms.date: 11/4/2020
-ms.openlocfilehash: 4c24670e4bdc5603b824d4e5c5c00f7a101933b6
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.date: 3/10/2021
+ms.openlocfilehash: fda6b222d5c3ab84a153825c6e8f6e56c187375a
+ms.sourcegitcommit: 81ee3cd57526d255de93afb84186074a3fb9885f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100081440"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622615"
 ---
 # <a name="sqlpackageexe"></a>SqlPackage.exe
 
@@ -106,7 +106,7 @@ Certains paramètres sont partagés entre les actions SqlPackage. Voici un table
 |**/Properties:**|**/p**| x | x | x | x | x | | x |
 |**/Quiet:**|**/q**| x | x | x | x | x | x | x |
 |**/Secret:**|**/secr**| | x | | | | | |
-|**/SourceConnectionString:**|**/scs**| x | x | x | | x | | x | x |
+|**/SourceConnectionString:**|**/scs**| x | x | x | | x | | x |
 |**/SourceDatabaseName:**|**/sdn**| x | x | x | | x | | x |
 |**/SourceEncryptConnection:**|**/sec**| x | x | x | | x | | x |
 |**/SourceFile:**|**/sf**| | x | | x | x | | x |
@@ -139,6 +139,11 @@ Certaines propriétés sont partagées entre les actions SqlPackage.  Voici un t
 |AllowDropBlockingAssemblies=(BOOLEAN)| | x | | | x | x |
 |AllowIncompatiblePlatform=(BOOLEAN)| | x | | | x | x |
 |AllowUnsafeRowLevelSecurityDataMovement=(BOOLEAN)| | x | | | x | x |
+|AzureSharedAccessSignatureToken=(STRING)| | x | | | | |
+|AzureStorageBlobEndpoint=(STRING)| x | x | | | | |
+|AzureStorageContainer=(STRING)| x | x | | | | |
+|AzureStorageKey=(STRING)| x | x | | | | |
+|AzureStorageRootPath=(STRING)| x | x | | | | |
 |BackupDatabaseBeforeChanges=(BOOLEAN)| | x | | | x | x |
 |BlockOnPossibleDataLoss=(BOOLEAN 'True')| | x | | | x | x |
 |BlockWhenDriftDetected=(BOOLEAN 'True')| | x | | | x | x |
@@ -156,6 +161,7 @@ Certaines propriétés sont partagées entre les actions SqlPackage.  Voici un t
 |DatabaseServiceObjective=(STRING)| | x | | x | x | x |
 |DeployDatabaseInSingleUserMode=(BOOLEAN)| | x | | | x | x |
 |DisableAndReenableDdlTriggers=(BOOLEAN 'True')| | x | | | x | x |
+|DisableIndexesForDataPhase=(BOOLEAN 'True')| | | | x | | |
 |DoNotAlterChangeDataCaptureObjects=(BOOLEAN 'True')| | x | | | x | x |
 |DoNotAlterReplicatedObjects=(BOOLEAN 'True')| | x | | | x | x |
 |DoNotDropObjectType=(STRING)| | x | | | x | x |
@@ -222,6 +228,7 @@ Certaines propriétés sont partagées entre les actions SqlPackage.  Voici un t
 |LongRunningCommandTimeout=(INT32)| x | x | x | x | x | x |
 |NoAlterStatementsToChangeClrTypes=(BOOLEAN)| | x | | | x | x |
 |PopulateFilesOnFileGroups=(BOOLEAN 'True')| | x | | | x | x |
+|RebuildIndexesOfflineForDataPhase=(BOOLEAN 'False')| | | | x | | |
 |RegisterDataTierApplication=(BOOLEAN)| | x | | | x | x |
 |RunDeploymentPlanExecutors=(BOOLEAN)| | x | | | x | x |
 |ScriptDatabaseCollation=(BOOLEAN)| | x | | | x | x |

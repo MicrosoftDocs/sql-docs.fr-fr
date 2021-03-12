@@ -25,12 +25,12 @@ ms.assetid: 32a48e36-0aa4-4260-9fe9-cae9197d16c5
 author: julieMSFT
 ms.author: jrasnick
 monikerRange: '>=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current'
-ms.openlocfilehash: 3b41bf1941bb12bf7560563d0b00fad7b88a75f8
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 8ba376927810521381a3c1a838e7438cdd7acdac
+ms.sourcegitcommit: 81ee3cd57526d255de93afb84186074a3fb9885f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99208852"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622877"
 ---
 # <a name="switchoffset-transact-sql"></a>SWITCHOFFSET (Transact-SQL)
 [!INCLUDE [sql-asdb-asdbmi-asa-pdw](../../includes/applies-to-version/sql-asdb-asdbmi-asa-pdw.md)]
@@ -44,20 +44,20 @@ ms.locfileid: "99208852"
 ## <a name="syntax"></a>Syntaxe  
   
 ```syntaxsql
-SWITCHOFFSET ( DATETIMEOFFSET, time_zone )   
+SWITCHOFFSET ( datetimeoffset_expression, timezoneoffset_expression )   
 ```  
   
 [!INCLUDE[sql-server-tsql-previous-offline-documentation](../../includes/sql-server-tsql-previous-offline-documentation.md)]
 
 ## <a name="arguments"></a>Arguments
- *DATETIMEOFFSET*  
+ *datetimeoffset_expression*  
  Expression qui peut être résolue en une valeur **datetimeoffset(n)**.  
   
- *time_zone*  
- Chaîne de caractères au format [+|-]TZH:TZM ou entier signé (de minutes) qui représente le décalage de fuseau horaire, et qui est supposée être réglée et prendre en charge l'heure d'été.  
+ *timezoneoffset_expression*  
+ Expression au format [+|-]TZH:TZM ou entier signé (de minutes) qui représente le décalage de fuseau horaire et qui est supposée être réglée et prendre en charge l’heure d’été.  
   
 ## <a name="return-type"></a>Type de retour  
- **datetimeoffset** avec la précision fractionnelle de l’argument *DATETIMEOFFSET*.  
+ **datetimeoffset** avec la précision fractionnelle de l’argument *datetimeoffset_expression*.  
   
 ## <a name="remarks"></a>Remarques  
  Utilisez SWITCHOFFSET pour sélectionner une valeur **datetimeoffset** dans un décalage de fuseau horaire qui est différent du décalage de fuseau horaire stocké à l’origine. SWITCHOFFSET ne met pas à jour la valeur *time_zone* stockée.  

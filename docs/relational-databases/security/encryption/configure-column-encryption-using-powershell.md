@@ -12,12 +12,12 @@ ms.assetid: 074c012b-cf14-4230-bf0d-55e23d24f9c8
 author: jaszymas
 ms.author: jaszymas
 monikerRange: =azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current
-ms.openlocfilehash: a5568667a9618046556b5bc586ae241093603c35
-ms.sourcegitcommit: b1cec968b919cfd6f4a438024bfdad00cf8e7080
+ms.openlocfilehash: 286a5590fea6ccd96351f8d9ad558cb92a7317af
+ms.sourcegitcommit: 81ee3cd57526d255de93afb84186074a3fb9885f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99237319"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622775"
 ---
 # <a name="configure-column-encryption-using-always-encrypted-with-powershell"></a>Configurer le chiffrement de colonne à l’aide d’Always Encrypted avec PowerShell
 [!INCLUDE [SQL Server Azure SQL Database](../../../includes/applies-to-version/sql-asdb.md)]
@@ -46,7 +46,7 @@ L’applet de commande **Set-SqlColumnEncryption** prend en charge deux approche
 
 Avec l’approche hors connexion, les tables cibles (et toutes les tables liées aux tables cibles, par exemple toutes les tables avec lesquelles une table cible a des relations de clés étrangères) ne sont pas disponibles pour l’écriture des transactions pendant toute la durée de l’opération. La sémantique des contraintes de clé étrangère (**CHECK** ou **NOCHECK**) est toujours conservée quand vous utilisez l’approche hors connexion.
 
-Avec l’approche en ligne (nécessite le module SqlServer PowerShell 21.x ou version ultérieure), l’opération de copie et de chiffrement, de déchiffrement ou de rechiffrement des données est effectuée de manière incrémentielle. Les applications peuvent lire et écrire des données à partir et à destination des tables cibles tout au long de l’opération de déplacement des données, à l’exception de la dernière itération, dont la durée est limitée par le paramètre **MaxDownTimeInSeconds** (que vous pouvez définir). Pour détecter et traiter les changements que les applications peuvent effectuer pendant la copie des données, l’applet de commande active le [suivi des changements](../../track-changes/enable-and-disable-change-tracking-sql-server.md) dans la base de données cible. Par conséquent, l’approche en ligne consomme plus de ressources sur le serveur que l’approche hors connexion. L’opération peut également prendre beaucoup plus de temps avec l’approche en ligne, en particulier si une charge de travail avec d’importantes opérations d’écriture ne s’exécute sur la base de données. L’approche en ligne peut être utilisée pour chiffrer une table à la fois et la table doit avoir une clé primaire. Par défaut, les contraintes de clé étrangère sont recréées avec l’option **NOCHECK** afin de minimiser l’impact sur les applications. Vous pouvez forcer la conservation de la sémantique des contraintes de clé étrangère en spécifiant l’option **KeepCheckForeignKeyConstraints**. 
+Avec l’approche en ligne (nécessite le module SqlServer PowerShell 21.x ou version ultérieure), l’opération de copie et de chiffrement, de déchiffrement ou de rechiffrement des données est effectuée de manière incrémentielle. Les applications peuvent lire et écrire des données à partir et à destination des tables cibles tout au long de l’opération de déplacement des données, à l’exception de la dernière itération, dont la durée est limitée par le paramètre **MaxDownTimeInSeconds** (que vous pouvez définir). Pour détecter et traiter les changements que les applications peuvent effectuer pendant la copie des données, l’applet de commande active le [suivi des changements](../../track-changes/enable-and-disable-change-tracking-sql-server.md) dans la base de données cible. De ce fait, l’approche en ligne est censée consommer plus de ressources côté serveur que l’approche hors connexion. L’opération peut également prendre beaucoup plus de temps avec l’approche en ligne, en particulier si une charge de travail avec d’importantes opérations d’écriture ne s’exécute sur la base de données. L’approche en ligne peut être utilisée pour chiffrer une table à la fois et la table doit avoir une clé primaire. Par défaut, les contraintes de clé étrangère sont recréées avec l’option **NOCHECK** afin de minimiser l’impact sur les applications. Vous pouvez forcer la conservation de la sémantique des contraintes de clé étrangère en spécifiant l’option **KeepCheckForeignKeyConstraints**. 
 
 Vous trouverez ici des recommandations pour choisir entre l’approche en ligne ou l’approche hors connexion :
 

@@ -7,13 +7,13 @@ ms.prod: reporting-services
 ms.prod_service: reporting-services-native
 ms.technology: report-server
 ms.topic: conceptual
-ms.date: 12/11/2019
-ms.openlocfilehash: 9e7a7b0dce01b21fcb746fdfdcbd5adfa7c7483d
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.date: 03/09/2021
+ms.openlocfilehash: 8d56f26c6661587cb13ff2962221a4a41c7da2ba
+ms.sourcegitcommit: 81ee3cd57526d255de93afb84186074a3fb9885f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100067205"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622675"
 ---
 # <a name="configure-a-report-server-on-a-network-load-balancing-cluster"></a>Configurer un serveur de rapports sur un cluster avec équilibrage de la charge réseau
 
@@ -55,7 +55,7 @@ Pour exécuter un déploiement avec montée en puissance parallèle sur un clust
   
  Pour contourner ce problème, vous pouvez générer une clé de validation arbitraire pour prendre en charge la validation de l'état d'affichage, puis configurer manuellement chaque nœud de serveur de rapports de manière à ce qu'il utilise la même clé. Vous pouvez utiliser n'importe quelle séquence hexadécimale générée de façon aléatoire. L'algorithme de validation (tel que SHA1) détermine la longueur que doit avoir la séquence hexadécimale.  
 
-::: moniker range="=sql-server-2016"
+**[!INCLUDE[ssrs-appliesto](../../includes/ssrs-appliesto.md)]** [!INCLUDE[ssrs-appliesto-2016](../../includes/ssrs-appliesto-2016.md)]
 
 1. Générez une clé de validation et clé de déchiffrement en utilisant les fonctionnalités de création automatique fourni par le [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]. À la fin, vous devez avoir une entrée <`machineKey`> unique que vous pouvez coller dans le fichier Web.config pour chaque instance du serveur de rapports dans le déploiement scale-out.  
   
@@ -65,17 +65,16 @@ Pour exécuter un déploiement avec montée en puissance parallèle sur un clust
     <machineKey ValidationKey="123455555" DecryptionKey="678999999" Validation="SHA1" Decryption="AES"/>  
     ```  
   
-2. Ouvrez le fichier Web.config pour Reportserver, puis, dans la section <`system.web`>, collez l'élément <`machineKey`> que vous avez généré. Par défaut, le fichier Web.config du Gestionnaire de rapports se trouve dans \Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\Reportserver\Web.config.  
+2. Ouvrez le fichier Web.config pour Reportserver, puis, dans la section <`system.web`>, collez l'élément <`machineKey`> que vous avez généré. Par défaut, le fichier Web.config se trouve dans \Program Files\Microsoft SQL Server\MSRS13.MSSQLSERVER\Reporting Services\Reportserver\Web.config.  
   
 3. Enregistrez le fichier .  
   
 4. Répétez l'étape précédente pour chaque serveur de rapports impliqué dans le déploiement avec montée en puissance parallèle.  
   
-5. Vérifiez que tous les fichiers Web.Config des dossiers \Reporting Services\Reportserver contiennent des éléments <`machineKey`> identiques dans la section <`system.web`>.  
+5. Vérifiez que les fichiers Web.Config de tous les serveurs de rapports concernés par le déploiement avec scale-out contiennent tous des éléments <`machineKey`> identiques dans la section <`system.web`>.  
 
-::: moniker-end
+**[!INCLUDE[ssrs-appliesto](../../includes/ssrs-appliesto.md)]** [!INCLUDE[ssrs-appliesto-2017-and-later](../../includes/ssrs-appliesto-2017-and-later.md)] [!INCLUDE[ssrs-appliesto-pbirsi](../../includes/ssrs-appliesto-pbirs.md)]
 
-::: moniker range=">=sql-server-2017"
 
 1. Générez une clé de validation et clé de déchiffrement en utilisant les fonctionnalités de création automatique fourni par le [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)]. À la fin, vous devez avoir une seule entrée \<**MachineKey**> que vous pouvez coller dans le fichier RSReportServer.config pour chaque instance du serveur de rapports dans le déploiement scale-out.
 
@@ -85,13 +84,13 @@ Pour exécuter un déploiement avec montée en puissance parallèle sur un clust
     <MachineKey ValidationKey="123455555" DecryptionKey="678999999" Validation="SHA1" Decryption="AES"/>
     ```
 
-2. Enregistrez le fichier .
+2. Ouvrez le fichier RSReportServer.config pour Reportserver puis, dans la section <`Configuration`>, collez l’élément \<**MachineKey**> que vous avez généré. Par défaut, le fichier RSReportServer.config se trouve dans \Program Files\Microsoft SQL Server Reporting Services\SSRS\ReportServer\RSReportServer.config pour Reporting Services et \Program Files\Microsoft Power BI Report Server\PBIRS\ReportServer\RSReportServer.config pour Power BI Report Server.  
 
-3. Répétez l'étape précédente pour chaque serveur de rapports impliqué dans le déploiement avec montée en puissance parallèle.  
+3. Enregistrez le fichier .
 
-4. Vérifiez que tous les fichiers RSReportServer.config des dossiers \Reporting Services\Report Server contiennent des éléments \<**MachineKey**> identiques.
+4. Répétez l'étape précédente pour chaque serveur de rapports impliqué dans le déploiement avec montée en puissance parallèle.  
 
-::: moniker-end
+5. Vérifiez que les fichiers RSReportServer.Config de tous les serveurs de rapports concernés par le déploiement avec scale-out contiennent tous des éléments \<**MachineKey**> identiques dans la section <`Configuration`>.
 
 ## <a name="how-to-configure-hostname-and-urlroot"></a><a name="SpecifyingVirtualServerName"></a> Comment configurer Hostname et UrlRoot
 

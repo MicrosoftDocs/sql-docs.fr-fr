@@ -9,12 +9,12 @@ ms.prod: sql
 ms.technology: tools-other
 monikerRange: =azure-sqldw-latest
 ms.custom: template-overview
-ms.openlocfilehash: 8352fb6a70c54ede61d544a147f970237404c9f5
-ms.sourcegitcommit: ca81fc9e45fccb26934580f6d299feb0b8ec44b7
+ms.openlocfilehash: e97425f682a3f6b9f2f4e955d8476d40d6cf4312
+ms.sourcegitcommit: f10f0d604be1dce6c600a92aec4c095e7b52e19c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102186321"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102770507"
 ---
 # <a name="azure-synapse-pathway-preview-faq"></a>Forum aux questions d’Azure Synapse Pathway Preview
 [!INCLUDE [Azure Synapse Analytics](../../includes/applies-to-version/asa.md)]
@@ -44,8 +44,15 @@ R. Dans cette préversion de Synapse Pathway, les entrepôts de données suivant
 
 ### <a name="q-what-is-included-as-part-of-the-code-conversion"></a>Q. Qu’est-ce qui est inclus dans la conversion du code ?
 
-R. Synapse Pathway prend en charge la traduction du code des tables, des schémas, des vues et des procédures stockées.
+R. La préversion de Synapse Pathway prend en charge la traduction de code des tables, schémas et vues.
 
+| Plateforme source| Types d’instructions pris en charge | 
+|:-------------------:|:------------------|
+| IBM Netezza  | Create/Alter/Drop Database<br /> Create/Alter/Drop Schema <br /> Create/Alter/Drop Table |
+|Microsoft SQL Server  | Create/Alter/Drop Database<br /> Create/Alter/Drop Schema <br /> Create/Alter/Drop Table | 
+| Snowflake |  Create/Alter/Drop Database<br /> Create/Alter/Drop Schema <br /> Create/Alter/Drop Table |                       
+
+  
 ### <a name="q-can-it-also-scan-my-environment-and-provide-an-assessment-report-of-all-the-objects-that-need-to-be-convertedtranslated"></a>Q. Peut-il également analyser mon environnement et fournir un rapport d’évaluation de tous les objets qui doivent être convertis/traduits ?
 
 R. Dans cette préversion de Synapse Pathway, vous devrez fournir le lien vers les scripts DDL/DML qui doivent être traduits. Synapse Pathway n’analyse pas votre environnement actuel pour identifier les objets qui doivent être traduits.

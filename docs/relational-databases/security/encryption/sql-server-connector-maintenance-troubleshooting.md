@@ -12,12 +12,12 @@ helpviewer_keywords:
 ms.assetid: 7f5b73fc-e699-49ac-a22d-f4adcfae62b1
 author: jaszymas
 ms.author: jaszymas
-ms.openlocfilehash: fa78eb8ef2da01514e161c58b05146b1699c93f7
-ms.sourcegitcommit: e40e75055c1435c5e3f9b6e3246be55526807b4c
+ms.openlocfilehash: 7bbd8aee97ccd31649661032c76729ad89b7fe5a
+ms.sourcegitcommit: 81ee3cd57526d255de93afb84186074a3fb9885f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98151265"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622745"
 ---
 # <a name="sql-server-connector-maintenance--troubleshooting"></a>Résolution des problèmes et maintenance du connecteur SQL Server
 
@@ -176,6 +176,12 @@ Le connecteur communique avec deux points de terminaison, qui doivent être auto
 
 **Comment se connecter à Azure Key Vault par le biais d’un serveur proxy HTTP(S) ?**
 Le connecteur utilise les paramètres de configuration de proxy d’Internet Explorer. Ces paramètres peuvent être contrôlés par le biais d’une [stratégie de groupe](/archive/blogs/askie/how-to-configure-proxy-settings-for-ie10-and-ie11-as-iem-is-not-available) ou du Registre, mais il est important de noter qu’ils ne s’appliquent pas à l’ensemble du système et qu’ils doivent cibler le compte de service exécutant l’instance [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Si un administrateur de base de données examine ou modifie les paramètres dans Internet Explorer, seul le compte de l’administrateur de base de données est affecté (le moteur [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ne l’est pas). La connexion interactive au serveur à l’aide du compte de service n’est pas recommandée et est bloquée dans de nombreux environnements sécurisés. Les modifications apportées aux paramètres de proxy configurés peuvent nécessiter le redémarrage de l’instance [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] pour entrer en vigueur. En effet, elles sont mises en cache quand le connecteur tente pour la première fois de se connecter à un coffre de clés.
+
+**Quelles tailles de clé Azure Key Vault le connecteur SQL Server prend-il en charge ?**
+La dernière build du connecteur SQL Server prend en charge les tailles de clés Azure Key Vault 2048 et 3072.
+  
+ > [!NOTE] 
+ > La vue « sys.asymmetric_keys » indique la taille de clé 2048 même si la taille de clé 3072 est utilisée. Il s’agit d’une lacune connue de cette vue que l’équipe produit SQL Server tâchera de résoudre dans une version ultérieure.
 
 **Quels sont les niveaux d’autorisation minimaux exigés pour chaque étape de configuration dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]?**  
  Même si vous pouvez effectuer toutes les étapes de configuration comme membre du rôle serveur fixe sysadmin, [!INCLUDE[msCoName](../../../includes/msconame-md.md)] vous encourage à réduire les autorisations que vous utilisez. La liste suivante définit le niveau d’autorisation minimal pour chaque action.  

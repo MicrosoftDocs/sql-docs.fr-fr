@@ -9,13 +9,13 @@ ms.assetid: 198198e2-7cf4-4a21-bda4-51b36cb4284b
 author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
-ms.date: 12/11/2020
-ms.openlocfilehash: 84fdd99b00de38b88b1a21963c4565e5c3b27ea7
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.date: 3/10/2021
+ms.openlocfilehash: 364849c03150839ce38c4764c788bb8b813b9d53
+ms.sourcegitcommit: 81ee3cd57526d255de93afb84186074a3fb9885f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100081450"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622605"
 ---
 # <a name="sqlpackage-publish-parameters-properties-and-sqlcmd-variables"></a>Paramètres, propriétés et variables SQLCMD de l’action Publish de SqlPackage
 L’opération Publish de SqlPackage.exe procède à une mise à jour incrémentielle du schéma d’une base de données cible afin qu’il corresponde à la structure d’une base de données source. La publication d’un package de déploiement qui contient des données utilisateur pour toutes les tables ou pour un sous-ensemble de tables met à jour les données des tables en plus du schéma. Le déploiement de données remplace le schéma et les données des tables existantes de la base de données cible. Le déploiement de données ne modifie pas le schéma existant ni les données de la base de données cible pour les tables qui ne sont pas comprises dans le package de déploiement.  
@@ -81,6 +81,11 @@ SqlPackage {parameters}{properties}{SQLCMD Variables}
 |**/p:**|AllowDropBlockingAssemblies=(BOOLEAN)|Cette propriété est utilisée par le déploiement SqlClr afin de supprimer les assemblys bloquants dans le cadre du plan de déploiement. Par défaut, les assemblys bloquants/de référence bloquent la mise à jour d'assembly si l'assembly de référence doit être supprimé.|
 |**/p:**|AllowIncompatiblePlatform=(BOOLEAN)|Spécifie s'il faut tenter l'action, en dépit de la possibilité d'une incompatibilité avec les plateformes SQL Server.|
 |**/p:**|AllowUnsafeRowLevelSecurityDataMovement=(BOOLEAN)|Ne pas bloquer le déplacement des données sur une table qui a une sécurité au niveau des lignes si cette propriété a la valeur true. La valeur par défaut est false.|
+|**/p:**|AzureSharedAccessSignatureToken=(STRING)|Jeton de signature d’accès partagé (SAS) Azure, consultez [SqlPackage pour Azure Synapse Analytics](sqlpackage-for-azure-synapse-analytics.md#publish).|
+|**/p:**|AzureStorageBlobEndpoint=(STRING)|Point de terminaison de stockage d’objets blob Azure, consultez [SqlPackage pour Azure Synapse Analytics](sqlpackage-for-azure-synapse-analytics.md#publish).|
+|**/p:**|AzureStorageContainer=(STRING)|Conteneur de stockage d’objets blob Azure, consultez [SqlPackage pour Azure Synapse Analytics](sqlpackage-for-azure-synapse-analytics.md#publish).|
+|**/p:**|AzureStorageKey=(STRING)|Clé de compte de stockage Azure, consultez [SqlPackage pour Azure Synapse Analytics](sqlpackage-for-azure-synapse-analytics.md#publish).|
+|**/p:**|AzureStorageRootPath=(STRING)|Chemin racine de stockage dans le conteneur. Sans cette propriété, le chemin par défaut est `servername/databasename/timestamp/`. Consultez [SqlPackage pour Azure Synapse Analytics](sqlpackage-for-azure-synapse-analytics.md#publish).|
 |**/p:**|BackupDatabaseBeforeChanges=(BOOLEAN)|Sauvegarde la base de données avant le déploiement des modifications.|
 |**/p:**|BlockOnPossibleDataLoss=(BOOLEAN 'True')| Spécifie que l’opération doit s’arrêter durant l’étape de validation du schéma si les modifications de schéma résultantes risquent de provoquer une perte de données, notamment à la suite d’une réduction de la précision des données ou d’une modification du type de données nécessitant une opération de cast. La valeur par défaut (`True`) provoque l’arrêt de l’opération, que la base de données cible contienne des données ou non.  Une exécution avec la valeur `False` affectée à BlockOnPossibleDataLoss peut toujours échouer durant l’exécution du plan de déploiement si la conversion des données présentes sur la cible ne prend pas en charge le nouveau type de colonne. |
 |**/p:**|BlockWhenDriftDetected=(BOOLEAN 'True')|Spécifie s'il faut bloquer la mise à jour d'une base de données dont le schéma ne correspond plus à son inscription ou qui est désinscrite.|

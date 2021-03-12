@@ -2,25 +2,72 @@
 title: Notes de publication de DacFx et de SqlPackage
 description: Notes de publication de Microsoft SqlPackage.
 ms.custom: tools|sos
-ms.date: 02/02/2019
+ms.date: 03/10/2021
 ms.prod: sql
-ms.reviewer: alayu; sstein
+ms.reviewer: llali; sstein
 ms.prod_service: sql-tools
 ms.topic: conceptual
 author: dzsquared
 ms.author: drskwier
-ms.openlocfilehash: 1b93c290596cf9af23e4963912efff652e9c80ee
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.openlocfilehash: 3a5d63b5c727508473fe83c1de3668b5b3df85c0
+ms.sourcegitcommit: 81ee3cd57526d255de93afb84186074a3fb9885f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100061044"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622545"
 ---
 # <a name="release-notes-for-sqlpackageexe"></a>Notes de version de SqlPackage.exe
 
 **[Télécharger la version la plus récente](sqlpackage-download.md)**
 
 Cet article présente les fonctionnalités et les correctifs fournis par les versions commerciales de SqlPackage.exe.
+
+## <a name="187-sqlpackage"></a>sqlpackage 18.7
+
+|Plateforme|Téléchargement|Date de publication|Version|Build
+|:---|:---|:---|:---|:---|
+| Windows|[Programme d’installation MSI](https://go.microsoft.com/fwlink/?linkid=2157201)|10 mars 2021|18,7|15.0.5084.2|
+|macOS .NET Core |[Fichier zip](https://go.microsoft.com/fwlink/?linkid=2157203)|10 mars 2021| 18,7|15.0.5084.2|
+|Linux .NET Core |[Fichier zip](https://go.microsoft.com/fwlink/?linkid=2157202)|10 mars 2021| 18,7|15.0.5084.2|
+|Windows .NET Core |[Fichier zip](https://go.microsoft.com/fwlink/?linkid=2157302)|10 mars 2021| 18,7|15.0.5084.2|
+
+### <a name="features"></a>Fonctionnalités
+| Fonctionnalité | Détails |
+| :------ | :------ |
+| Déploiement | Extrayez/publiez des données Big Data vers/à partir de Stockage Azure. Pour plus d’informations, consultez [SqlPackage pour le Big Data](sqlpackage-for-azure-synapse-analytics.md) |
+| Azure Synapse Analytics | Prise en charge de la sécurité au niveau des lignes (fonction table inline, stratégie de sécurité, prédicat de sécurité)  |
+| Azure Synapse Analytics | Prise en charge de la classification des charges de travail |
+| Azure SQL Edge | Prise en charge des travaux de streaming externe |
+| Azure SQL Edge | Ajout d’options de table et de base de données pour la conservation des données. |
+| Importer | Ajout de deux nouvelles propriétés d’option d’index pour les opérations d’importation. *DisableIndexesForDataPhase* (Désactiver les index avant l’importation de données dans SQL Server, true par défaut) et *RebuildIndexesOfflineForDataPhase* (Reconstruire les index en mode hors connexion après l’importation de données dans SQL Server, false par défaut) |
+| Journalisation | Ajout d’une propriété pour toutes les opérations (HashObjectNamesInLogs) qui transforment tous les noms d’objets en chaîne de hachage dans les messages du journal. |
+| Performances | Améliorations apportées aux performances d’importation et d’exportation, avec notamment une journalisation complémentaire pour faciliter l’identification des goulots d’étranglement supplémentaires. |
+| SQLCMD | Ajout d’une propriété pour le déploiement et la comparaison de schémas (DoNotEvaluateSqlCmdVariables) qui indique si les variables SQLCMD seront remplacées par des valeurs. |
+
+
+
+### <a name="fixes"></a>Correctifs
+| Fonctionnalité | Détails |
+| :------ | :------ | 
+| Déploiement | Valeur par défaut de MAXDOP passée de 0 à 8 pour [Azure SQL](https://techcommunity.microsoft.com/t5/azure-sql/changing-default-maxdop-in-azure-sql-database/ba-p/1538528), mettant à jour la valeur par défaut du modèle de schéma dans DacFx | 
+| Comparaison de schémas | Procédures stockées utilisant les mots clés OUT et OUTPUT à ignorer comme différence |
+| Déploiement | Validation supplémentaire pour les jetons Big Data |
+| Build/Déploiement | Nettoyage complet du modèle de schéma des tables externes temporaires pour la cohérence dacpac finale.  |
+| Build/Déploiement | Ajout de la gestion des erreurs et correction de l’erreur « non-Edge 150 RE ». |
+| Importation/déploiement | Valeur de séquence restaurée pendant le déploiement |
+| Déploiement | Résolution d’un problème où la modification de l’option de compression sur un index cluster provoquait la recréation de la table et non la modification de l’index. |
+| Déploiement | Correction d’un problème qui entraînait la suppression et la recréation d’un index cluster columnstore si une colonne de table était modifiée. |
+| Déploiement | Correction de la suppression et de la recréation des utilisateurs externes pendant le déploiement. |
+| Comparaison de schémas | Correction du problème de comparaison de schémas avec les travaux de streaming externe. |
+| Importer | Exception de référence null levée quand le paramètre ambiant ReliableDdlEnabled est activé pendant la création du script d’un rapport de déploiement.|
+| Déploiement | Correction d’un problème où les étapes de déploiement contenant le contrôle de version système étaient créées dans le mauvais ordre. |
+| Déploiement | Correction d’un problème où la mise à jour de la comparaison de schémas ou le déploiement dacpac échouait en raison de la présence de tables temporelles dans la cible. |
+| Déploiement | Réamorce la valeur d’identité après le déploiement sur la base de la dernière valeur précédente de la cible. |
+
+### <a name="known-issues"></a>Problèmes connus
+| Fonctionnalité | Détails |
+| :------ | :------ |
+| Déploiement | La fonctionnalité de gestion des charges de travail Azure Synapse Analytics (groupes de charge de travail et classifieurs de charges de travail) n’est pas encore prise en charge | 
 
 ## <a name="186-sqlpackage"></a>18.6 sqlpackage
 
@@ -275,7 +322,7 @@ Cette version inclut les versions d’évaluation multiplateformes de SqlPackage
 | :---------- | :------ |
 | Déploiement | Pour .NET Core, les collaborateurs de build et de déploiement ne sont pas pris en charge. | 
 | Déploiement | Pour .NET Core, les anciens fichiers .dacpac et .bacpac qui utilisent la sérialisation de données JSON ne sont pas pris en charge. | 
-| Déploiement | Pour .NET Core, il peut arriver que les fichiers .dacpac référencés (par exemple, master.dacpac) ne se résolvent pas en raison de problèmes avec les systèmes de fichiers sensibles à la casse. | Pour contourner le problème, il suffit de mettre en majuscules le nom du fichier de référence (par exemple, MASTER.BACPAC). |
+| Déploiement | Pour .NET Core, il peut arriver que les fichiers .dacpac référencés (par exemple, master.dacpac) ne se résolvent pas en raison de problèmes avec les systèmes de fichiers sensibles à la casse. Pour contourner le problème, il suffit de mettre en majuscules le nom du fichier de référence (par exemple, MASTER.BACPAC). |
 | &nbsp; | &nbsp; |
 
 ## <a name="180-sqlpackage"></a>SqlPackage 18.0

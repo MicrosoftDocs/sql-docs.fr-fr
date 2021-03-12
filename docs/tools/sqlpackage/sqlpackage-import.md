@@ -9,13 +9,13 @@ ms.assetid: 198198e2-7cf4-4a21-bda4-51b36cb4284b
 author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
-ms.date: 12/11/2020
-ms.openlocfilehash: cecc6de89a9e8f82a64942acb08af7ddee48c5be
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.date: 3/10/2021
+ms.openlocfilehash: 94ddccc0789f01f3d7d6ac6675ec9c54405972a1
+ms.sourcegitcommit: 81ee3cd57526d255de93afb84186074a3fb9885f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100081460"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622625"
 ---
 # <a name="sqlpackage-import-parameters-and-properties"></a>Paramètres et propriétés de l’action Import de SqlPackage
 L’action Import de SqlPackage.exe importe le schéma et les données de table d’un package BACPAC (fichier .bacpac) dans une base de données nouvelle ou vide dans SQL Server ou Azure SQL Database. Au moment de l’opération d’importation dans une base de données existante, la base de données cible ne peut pas contenir d’objets de schéma définis par l’utilisateur.  
@@ -60,10 +60,12 @@ SqlPackage {parameters}{properties}{SQLCMD Variables}
 |**/p:**|DatabaseLockTimeout=(INT32 '60')| Spécifie le délai d’expiration (en secondes) du verrouillage de la base de données lors de l'exécution de requêtes dans SQL Server. Utilisez -1 pour attendre indéfiniment.|
 |**/p:**|DatabaseMaximumSize=(INT32)|Définit la taille maximale, en Go, d’une base de données Azure SQL Database.|
 |**/p:**|DatabaseServiceObjective=(STRING)|Définit le niveau de performances d’une base de données Azure SQL Database, par exemple « P0 » ou « S1 ».|
+|**/p:**|DisableIndexesForDataPhase=(BOOLEAN TRUE)|Désactivez les index avant d’importer des données dans SQL Server.|
 |**/p:**|ImportContributorArguments=(STRING)|Spécifie des arguments de collaborateur de déploiement pour les collaborateurs de déploiement. Il doit s'agir d'une liste de valeurs délimitée par des points-virgules.|
 |**/p:**|ImportContributors=(STRING)|Spécifie les collaborateurs de déploiement qui doivent être en cours d’exécution quand le fichier bacpac est importé. Il doit s'agir d'une liste d'ID ou de noms de collaborateurs de build complets délimitée par des points-virgules.|
 |**/p:**|ImportContributorPaths=(STRING)|Spécifie les chemins d’accès pour charger des contributeurs de déploiement supplémentaires. Il doit s'agir d'une liste de valeurs délimitée par des points-virgules. |
 |**/p:**|LongRunningCommandTimeout=(INT32)| Spécifie le délai d'expiration (en secondes) de la commande longue lors de l'exécution de requêtes dans SQL Server. Utilisez 0 pour attendre indéfiniment.|
+|**/p:**|RebuildIndexesOfflineForDataPhase=(BOOLEAN FALSE)|Reconstruisez les index hors connexion après avoir importé des données dans SQL Server.|
 |**/p:**|Storage=({File&#124;Memory})|Spécifie comment les éléments sont stockés lors de l'élaboration du modèle de base de données. Pour des raisons de performance, la valeur par défaut est InMemory. Pour les bases de données très volumineuses, un stockage sauvegardé de fichiers (File) est exigé.|
   
 

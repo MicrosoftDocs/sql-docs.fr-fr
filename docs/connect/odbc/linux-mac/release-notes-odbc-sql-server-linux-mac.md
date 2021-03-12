@@ -11,12 +11,12 @@ ms.topic: conceptual
 author: v-chojas
 ms.author: v-chojas
 manager: kenvh
-ms.openlocfilehash: 83f8dbb834af379e02635130e23c0f5fd7299f3b
-ms.sourcegitcommit: 15c7cd187dcff9fc91f2daf0056b12ed3f0403f0
+ms.openlocfilehash: 655e35042c8b9cfd4d99f88fe8caea98ffbc7978
+ms.sourcegitcommit: f10f0d604be1dce6c600a92aec4c095e7b52e19c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102464284"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102770525"
 ---
 # <a name="release-notes-for-the-microsoft-odbc-driver-for-sql-server-on-linux-and-macos"></a>Notes de publication pour Microsoft ODBC Driver for SQL Server sur Linux et macOS
 
@@ -36,6 +36,13 @@ NOW NEW FILE NAME:    linux-mac/release-notes-odbc-sql-server-linux-mac.md
 Thank you.
 GeneMi.  2019/04/03.
 -->
+
+## <a name="1772-march-2021"></a>17.7.2, mars 2021
+
+| Nouvel élément | Détails |
+| :------- | :------ |
+| Résolution des bogues. | [Correctifs de bogues](../bug-fixes.md). |
+| &nbsp; | &nbsp; |
 
 ## <a name="177-january-2021"></a>17.7 - Janvier 2021
 

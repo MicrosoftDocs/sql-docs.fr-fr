@@ -9,13 +9,13 @@ ms.assetid: 198198e2-7cf4-4a21-bda4-51b36cb4284b
 author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan; sstein
-ms.date: 12/11/2020
-ms.openlocfilehash: 1303473c79558629ee0009f9c07bf8d28ffbd704
-ms.sourcegitcommit: 917df4ffd22e4a229af7dc481dcce3ebba0aa4d7
+ms.date: 3/10/2021
+ms.openlocfilehash: 84405eb4d5ac63f287f2696dcef0a1e3ddc09cc4
+ms.sourcegitcommit: 81ee3cd57526d255de93afb84186074a3fb9885f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "100060974"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102622657"
 ---
 # <a name="sqlpackage-extract-parameters-and-properties"></a>Paramètres et propriétés de l’action Extract de SqlPackage
 L’action Extract de SqlPackage.exe crée un schéma d’une base de données connectée dans un fichier DACPAC (.dacpac). Par défaut, les données ne sont pas incluses dans le fichier .dacpac. Pour inclure les données, utilisez l’[action Export](sqlpackage-export.md) ou utilisez les propriétés *ExtractAllTableData*/*TableData* d’Extract. 
@@ -59,6 +59,10 @@ SqlPackage {parameters}{properties}{SQLCMD Variables}
 
 |Propriété|Valeur|Description|
 |---|---|---|
+|**/p:**|AzureStorageBlobEndpoint=(STRING)|Point de terminaison de stockage d’objets blob Azure, consultez [SqlPackage pour Azure Synapse Analytics](sqlpackage-for-azure-synapse-analytics.md#extract).|
+|**/p:**|AzureStorageContainer=(STRING)|Conteneur de stockage d’objets blob Azure, consultez [SqlPackage pour Azure Synapse Analytics](sqlpackage-for-azure-synapse-analytics.md#extract).|
+|**/p:**|AzureStorageKey=(STRING)|Clé de compte de stockage Azure, consultez [SqlPackage pour Azure Synapse Analytics](sqlpackage-for-azure-synapse-analytics.md#extract).|
+|**/p:**|AzureStorageRootPath=(STRING)|Chemin racine de stockage dans le conteneur. Sans cette propriété, le chemin par défaut est `servername/databasename/timestamp/`. Consultez [SqlPackage pour Azure Synapse Analytics](sqlpackage-for-azure-synapse-analytics.md#extract).|
 |**/p:**|CommandTimeout=(INT32 '60')|Spécifie le délai d'expiration de la commande (en secondes) lors de l'exécution de requêtes SQL Server.|
 |**/p:**|DacApplicationDescription=(STRING)|Définit la description de l'application à stocker dans les métadonnées DACPAC.|
 |**/p:**|DacApplicationName=(STRING)|Définit le nom de l'application à stocker dans les métadonnées DACPAC. La valeur par défaut est le nom de la base de données.|

@@ -14,16 +14,22 @@ ms.assetid: f78b81ed-5214-43ec-a600-9bfe51c5745a
 author: v-chojas
 ms.author: v-jizho2
 manager: kenvh
-ms.openlocfilehash: 6f1072f51349952be373a69a04ac556b38e3f25f
-ms.sourcegitcommit: 9413ddd8071da8861715c721b923e52669a921d8
+ms.openlocfilehash: 1816f1a8255041d6211931ffc41963acc460e15d
+ms.sourcegitcommit: f10f0d604be1dce6c600a92aec4c095e7b52e19c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101837486"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102770470"
 ---
 # <a name="list-of-bugs-fixed"></a>Liste des bogues corrigés
 
 Cette page contient la liste des bogues résolus dans chaque version, à partir du pilote [!INCLUDE[msCoName](../../includes/msconame_md.md)] ODBC 17 pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].
+
+### <a name="bug-fixes-in-the-msconame-odbc-driver-1772-for-ssnoversion"></a>Correctifs de bogues dans la version 17.7.2 de [!INCLUDE[msCoName](../../includes/msconame_md.md)] ODBC Driver for [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]
+
+- Correction du problème lié aux erreurs 404 Introuvable qui apparaissent quand l’authentification Managed Service Identity est utilisée
+- Correction des erreurs intermittentes de type Chiffrement non pris en charge sous des charges multithread élevées
+- Correction des incidents intermittents sous des charges multithread élevées
 
 ### <a name="bug-fixes-in-the-msconame-odbc-driver-177-for-ssnoversion"></a>Correctifs de bogues dans la version 17.7 de [!INCLUDE[msCoName](../../includes/msconame_md.md)] ODBC Driver pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]
 
