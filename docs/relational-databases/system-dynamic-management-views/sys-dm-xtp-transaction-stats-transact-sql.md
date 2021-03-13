@@ -1,8 +1,8 @@
 ---
 description: sys.dm_xtp_transaction_stats (Transact-SQL)
-title: sys.dm_xtp_transaction_stats (Transact-SQL) | Microsoft Docs
+title: sys.dm_xtp_transaction_stats (Transact-SQL)
 ms.custom: ''
-ms.date: 08/09/2016
+ms.date: 03/12/2021
 ms.prod: sql
 ms.reviewer: ''
 ms.technology: system-objects
@@ -16,15 +16,14 @@ dev_langs:
 - TSQL
 helpviewer_keywords:
 - sys.dm_xtp_transaction_stats dynamic management view
-ms.assetid: 9389f48d-0de5-47bd-9821-4db8f04504e4
 author: WilliamDAssafMSFT
 ms.author: wiassaf
-ms.openlocfilehash: e5216c988f93d2186bc36964b086f82e1995c176
-ms.sourcegitcommit: 33f0f190f962059826e002be165a2bef4f9e350c
+ms.openlocfilehash: 37a98ee4a73e7bcc0ce06cef44d3a142e7fba772
+ms.sourcegitcommit: be74dc0966930f28b03d0429aed22b1f0a296d3b
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99126424"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103421861"
 ---
 # <a name="sysdm_xtp_transaction_stats-transact-sql"></a>sys.dm_xtp_transaction_stats (Transact-SQL)
 [!INCLUDE [SQL Server Azure SQL Database](../../includes/applies-to-version/sql-asdb.md)]
@@ -38,7 +37,7 @@ ms.locfileid: "99126424"
 |total_count|**bigint**|Nombre total de transactions qui ont été exécutées dans le moteur de base de données de l'OLTP en mémoire.|  
 |read_only_count|**bigint**|Nombre de transactions en lecture seule.|  
 |total_aborts|**bigint**|Nombre total de transactions qui ont été interrompues, via un abandon du système ou de l'utilisateur.|  
-|user_aborts|**bigint**|Nombre d'abandons initiés par le système. Par exemple, en raison de conflits d'écriture, d'échecs de validation ou de défaillances de dépendance.|  
+|system_aborts|**bigint**|Nombre d'abandons initiés par le système. Par exemple, en raison de conflits d'écriture, d'échecs de validation ou de défaillances de dépendance.|  
 |validation_failures|**bigint**|Nombre de fois qu'une transaction est interrompue en raison d'un problème de validation.|  
 |dependencies_taken|**bigint**|À usage interne uniquement|  
 |dependencies_failed|**bigint**|Nombre de fois qu'une transaction s'interrompt car une transaction de laquelle elle dépend s'interrompt.|  

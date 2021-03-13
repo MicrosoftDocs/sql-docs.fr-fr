@@ -15,12 +15,12 @@ helpviewer_keywords:
 ms.assetid: 4e4f739b-fd27-4dce-8be6-3d808040d8d7
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: 01d5e44a93776560b5e89c0dc03a36b780f7ab8d
-ms.sourcegitcommit: 370cab80fba17c15fb0bceed9f80cb099017e000
+ms.openlocfilehash: 9ef6744fa152bfb5c66cc82ba71de62bc5bfb1a9
+ms.sourcegitcommit: be74dc0966930f28b03d0429aed22b1f0a296d3b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97637736"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103421971"
 ---
 # <a name="model-database"></a>model, base de données
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -90,37 +90,23 @@ En ce qui concerne SQL Server 2014, consultez [Base de données model](/previou
 ## <a name="restrictions"></a>Restrictions  
  Les opérations suivantes ne peuvent pas être effectuées sur la base de données **model** :  
   
--   ajout de groupes de fichiers ou de fichiers ;  
-  
--   Modification du classement. Le classement par défaut est le classement du serveur.  
-  
--   Modification du propriétaire de la base de données. La base de données **model** appartient à **sa**.  
-  
--   Suppression de la base de données  
-  
--   Suppression de l'utilisateur **Invité** de la base de données  
-  
--   Activation de la capture des données modifiées.  
-  
--   Participation à la mise en miroir de bases de données  
-  
--   Suppression du groupe de fichiers primaire, du fichier de données primaire ou du fichier journal  
-  
--   Changement du nom de la base de données ou du groupe de fichiers primaire  
-  
--   Affectation de la valeur OFFLINE à la base de données.  
-  
--   Affectation de la valeur READ_ONLY au groupe de fichiers primaire.  
-  
--   Création de procédures, de vues ou de déclencheurs à l'aide de l'option WITH ENCRYPTION. La clé de chiffrement est liée à la base de données dans laquelle l'objet est créé. Les objets chiffrés créés dans la base de données **model** peuvent être utilisés uniquement dans **model**.  
+- ajout de groupes de fichiers ou de fichiers ;  
+- Modification du classement. Le classement par défaut est le classement du serveur.  
+- Modification du propriétaire de la base de données. La base de données **model** appartient à **sa**.  
+- Suppression de la base de données  
+- Suppression de l'utilisateur **Invité** de la base de données  
+- Activation de la capture des données modifiées.  
+- Participation à la mise en miroir de bases de données  
+- Suppression du groupe de fichiers primaire, du fichier de données primaire ou du fichier journal  
+- Changement du nom de la base de données ou du groupe de fichiers primaire  
+- Affectation de la valeur OFFLINE à la base de données.  
+- Affectation de la valeur READ_ONLY au groupe de fichiers primaire.  
+- Création de procédures, de vues ou de déclencheurs à l'aide de l'option WITH ENCRYPTION. La clé de chiffrement est liée à la base de données dans laquelle l'objet est créé. Les objets chiffrés créés dans la base de données **model** peuvent être utilisés uniquement dans **model**.  
   
 ## <a name="related-content"></a>Contenu associé  
- [Bases de données système](../../relational-databases/databases/system-databases.md)  
-  
- [sys.databases &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md)  
-  
- [sys.master_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-master-files-transact-sql.md)  
-  
- [Déplacer des fichiers de bases de données](../../relational-databases/databases/move-database-files.md)  
+- [Bases de données système](../../relational-databases/databases/system-databases.md)  
+- [sys.databases &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md)  
+- [sys.master_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-master-files-transact-sql.md)  
+- [Déplacer des fichiers de bases de données](../../relational-databases/databases/move-database-files.md)  
   
   

@@ -16,12 +16,12 @@ helpviewer_keywords:
 ms.assetid: 5032cb2d-65a0-40dd-b569-4dcecdd58ceb
 author: stevestein
 ms.author: sstein
-ms.openlocfilehash: 02632ce64dbd7b10571e559daf8fde4475a4e37b
-ms.sourcegitcommit: c5078791a07330a87a92abb19b791e950672e198
+ms.openlocfilehash: 80ada8fcce7fe1480dca5e22d4a5b8be3e73b617
+ms.sourcegitcommit: be74dc0966930f28b03d0429aed22b1f0a296d3b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "88471191"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "103421983"
 ---
 # <a name="msdb-database"></a>Base de données msdb
  [!INCLUDE [SQL Server](../../includes/applies-to-version/sqlserver.md)]
@@ -86,34 +86,21 @@ ms.locfileid: "88471191"
  Les opérations suivantes ne peuvent pas être effectuées sur la base de données **msdb** :  
   
 -   Modification du classement. Le classement par défaut est le classement du serveur.  
-  
 -   Suppression de la base de données  
-  
 -   Suppression de l'utilisateur **Invité** de la base de données  
-  
 -   Activation de la capture des données modifiées.  
-  
 -   Participation à la mise en miroir de bases de données  
-  
 -   Suppression du groupe de fichiers primaire, du fichier de données primaire ou du fichier journal  
-  
 -   Changement du nom de la base de données ou du groupe de fichiers primaire  
-  
 -   Affectation de la valeur OFFLINE à la base de données.  
-  
 -   Affectation de la valeur READ_ONLY au groupe de fichiers primaire.  
   
 ## <a name="related-content"></a>Contenu associé  
- [Bases de données système](../../relational-databases/databases/system-databases.md)  
-  
- [sys.databases &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md)  
-  
- [sys.master_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-master-files-transact-sql.md)  
-  
- [Déplacer des fichiers de bases de données](../../relational-databases/databases/move-database-files.md)  
-  
- [Messagerie de base de données](../../relational-databases/database-mail/database-mail.md)  
-  
- [SQL Server Service Broker](../../database-engine/configure-windows/sql-server-service-broker.md)  
+- [Bases de données système](../../relational-databases/databases/system-databases.md)  
+- [sys.databases &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md)  
+- [sys.master_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-master-files-transact-sql.md)  
+- [Déplacer des fichiers de bases de données](../../relational-databases/databases/move-database-files.md)  
+- [Messagerie de base de données](../../relational-databases/database-mail/database-mail.md)  
+- [SQL Server Service Broker](../../database-engine/configure-windows/sql-server-service-broker.md)  
   
   
